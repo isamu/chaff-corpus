@@ -1,0 +1,63 @@
+id: mhlw-pubcomment-rodohoken
+chaff: 0.33.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 27年9月
+    message: 半角の「27」と書いています（この文書はふつう全角の「２７」。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 9月
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。6 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 3
+    text: 平成27年9月
+    message: 「厚生労働省労働基準局労働保険徴収課」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: preamble-length
+    line: 6
+    text: 厚生労働省では、競争の導入による公共サービスの改革に関する法律（平成１８年法律第
+    message: 最初の見出しまでに 4 段落あります（2 段落まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 14
+    text: "### 【記載要領等】"
+    message: 見出し「【記載要領等】」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: unjudged
+  - rule: broken-link
+    line: 20
+    text: "[Excel:28KB][PDF:47KB]により提出して下さい。（実施要項案の"
+    message: 「[Excel:28KB][PDF:47KB]」は参照の形ですが、名前の定義がありません（字のまま表示されます）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 20
+    text: の際の整理等のため、別紙様式によるご意見の提出にご協力をお願いします。）
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 22
+    text: 実施要項の決定後は、実施要項に従って入札等を行うこととなりますが、入札参加を検討
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 28
+    text: 厚生労働省労働基準局労働保険徴収課
+    message: 「厚生労働省労働基準局労働保険徴収課」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 30
+    text: 100-8916　東京都千代田区霞が関１－２－２
+    message: 半角の「100」と書いています（この文書はふつう全角の「１００」。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 30
+    text: 8916　東京都千代田区霞が関１－２－２
+    message: 半角の「8916」と書いています（この文書はふつう全角の「８９１６」。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 33
+    text: ※電話によるご意見はお受けできかねますので、あらかじめご了承ください。
+    message: 「※電話によるご意見はお受けできかねますので、あらかじめご了承ください。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: unjudged

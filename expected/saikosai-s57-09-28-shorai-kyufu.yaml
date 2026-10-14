@@ -1,0 +1,13 @@
+id: saikosai-s57-09-28-shorai-kyufu
+chaff: 0.33.0
+findings:
+  - rule: hiragana-fukushi
+    line: 10
+    text: そして、本件におけるごとく、損害賠償請求権者が、同一訴訟手続で、被保険者に対する
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 10
+    text: 原審が適法に確定したところによれば、本件普通保険約款第四章一七条には、被保険者の
+    message: 「は」で出した主題から述語まで 291 字あります（200 字まで）
+    verdict: unjudged

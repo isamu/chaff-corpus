@@ -1,0 +1,298 @@
+id: bls-glossary
+chaff: 0.33.0
+findings:
+  - rule: max-paragraph-length
+    line: 57
+    text: "Note: The Bureau of Labor Statistics (BL"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: "Note: All individuals who, during the Cu"
+    message: This sentence runs 61 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 221
+    text: "Note: The National Compensation Survey ("
+    message: This sentence runs 75 words (limit 50)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 379
+    text: "Note: These studies typically aim to rev"
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 385
+    text: The individual is responsible for any ch
+    message: '"in excess of" can be said in fewer words'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 445
+    text: ” usually refers to the entire range of
+    message: '"”" closes nothing that was opened'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 515
+    text: (1) All members of a particular househol
+    message: This sentence runs 74 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 659
+    text: Cases in which, as a result of a work-re
+    message: This sentence runs 54 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 881
+    text: (The employment–population ratio represe
+    message: This sentence runs 52 words (limit 50)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 955
+    text: "Note: A single establishment generally p"
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 955
+    text: All establishments in an enterprise may
+    message: This sentence runs 56 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1077
+    text: The FMLA provides eligible workers with
+    message: This sentence runs 53 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1109
+    text: "Note: Because prices for food and energy"
+    message: This sentence runs 56 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1179
+    text: "Note: The code permits companies providi"
+    message: This sentence runs 68 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1243
+    text: ECEC, full-time and part-time statuses a
+    message: '"ECEC" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1281
+    text: "Note: State employment includes counts o"
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1285
+    text: Legal entity created by the government i
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1315
+    text: "Note: For example, in the Bureau of Labo"
+    message: This sentence runs 93 words (limit 50)
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 1329
+    text: which classifies traded goods based on p
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1399
+    text: "Note: Includes new and rehired employees"
+    message: This sentence runs 65 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1507
+    text: "Note: The Survey of Injuries and Illness"
+    message: This sentence runs 54 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1511
+    text: Total money earnings and selected money
+    message: This sentence runs 73 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1525
+    text: "Note: Workers identified as self-employe"
+    message: This sentence runs 62 words (limit 50)
+    verdict: unjudged
+  - rule: acronym-expansion-conflict
+    line: 1531
+    text: (ECI).
+    message: '"ECI" is expanded as "Employer Cost Index" here and as "Employment cost index" on line 921'
+    verdict: unjudged
+  - rule: acronym-expansion-conflict
+    line: 1537
+    text: (NAICS).
+    message: '"NAICS" is expanded as "North American Industrial Classification System" here and as "North American Industry Classification System" on line 955'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1717
+    text: The annuity payable for the life of the
+    message: This sentence runs 61 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1727
+    text: KLEMS
+    message: '"KLEMS" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1793
+    text: "Note: Includes involuntary separations i"
+    message: This sentence runs 65 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1907
+    text: People not in the labor force who want a
+    message: This sentence runs 63 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1915
+    text: "Note: Terms used to define the marital s"
+    message: This sentence runs 120 words (limit 50)
+    verdict: unjudged
+  - rule: person-consistency
+    line: 1915
+    text: one may be temporarily absent on busines
+    message: '"one may" here, where the document usually says "you" (1 of 6)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1941
+    text: 'Note: "Text taken from D. Kasprzyk, “Cha'
+    message: This sentence runs 170 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1955
+    text: NECTA divisions
+    message: '"NECTA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 1959
+    text: Plano–Irving, TX, Metropolitan Division
+    message: '"Plano" is one letter away from "Plans", which the document uses more than once'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1993
+    text: Full or partial elimination of hazardous
+    message: '"by means of" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2055
+    text: "Note: Asset changes include changes in s"
+    message: This sentence runs 125 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2061
+    text: "Note: Liability changes include changes"
+    message: This sentence runs 77 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2067
+    text: "Note: Before 1994, new entrants were def"
+    message: This sentence runs 58 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2173
+    text: 'Note: "Employees who perform essentially'
+    message: This sentence runs 64 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2205
+    text: "Note: This category includes workers who"
+    message: This sentence runs 55 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2205
+    text: ON-CALL workers. Were you an ON-CALL wor
+    message: '"ON-CALL" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2269
+    text: Amount paid in interest on mortgages, in
+    message: This sentence runs 63 words (limit 50)
+    verdict: unjudged
+  - rule: name-variant
+    line: 2377
+    text: Personas
+    message: '"Personas" is one letter away from "Personal", which the document uses more than once'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2421
+    text: "Note: Developed by the U.S Census Bureau"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2581
+    text: Iterative process by which trained staff
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2589
+    text: "Note: The lowest quintile ranges from th"
+    message: This sentence runs 62 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2645
+    text: Additional criteria that can result in a
+    message: This sentence runs 78 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2661
+    text: 'Note: "The CPS reference week is the spe'
+    message: This sentence runs 56 words (limit 50)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2681
+    text: "Note: When a sample rather than the enti"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2811
+    text: Statistical modification designed to rem
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2925
+    text: System used by federal statistical agenc
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 3023
+    text: Parsing of texts in order to extract mac
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3165
+    text: "Note: For the 2010 census, the Census Bu"
+    message: This sentence runs 60 words (limit 50)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 3181
+    text: Process of learning about the goals and
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3205
+    text: "Note: Usual weekly earnings include any"
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3213
+    text: ” a job must meet all three of the follo
+    message: '"”" closes nothing that was opened'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3277
+    text: 'Note: "Straight-time wage and salary rat'
+    message: This sentence runs 52 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3281
+    text: OES survey)
+    message: '"OES" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3357
+    text: "Note: The requirements of usually workin"
+    message: This sentence runs 52 words (limit 50)
+    verdict: unjudged

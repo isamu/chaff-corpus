@@ -1,0 +1,313 @@
+id: uk-dpa2018
+chaff: 0.33.0
+findings:
+  - rule: no-em-dash
+    line: 14
+    text: —
+    message: 11 dashes per 1000 words (limit 8)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 20
+    text: Section 3 Terms relating to the processi
+    message: This paragraph runs 24 sentences (limit 12)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 43
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 48
+    text: JHA.
+    message: '"JHA" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 191
+    text: FOI public authority, see Chapter 3 of t
+    message: '"FOI" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 202
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 251
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 546
+    text: lawfulness of processing), and
+    message: section 35 is called "lawfulness of processing" here, but its heading is "The first data protection principle"
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 605
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 625
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 642
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 657
+    text: ’s right to make a request to the Commis
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 658
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 659
+    text: ’s right to lodge a complaint with the C
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 660
+    text: ’s right to apply to a court under secti
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 689
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 704
+    text: ’s right to make a complaint to the cont
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 741
+    text: ’s rights, freedoms and legitimate inter
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 810
+    text: ’s right to lodge a complaint with the C
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: unused-definition
+    line: 883
+    text: (“a sub-processor”) without the prior wr
+    message: '"a sub-processor" is defined but never used'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1079
+    text: ’s opinion, the body has the knowledge a
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 1108
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: sentence-initial-conjunction-run
+    line: 1181
+    text: and international organisations, and the
+    message: 4 sentences in a row open with a conjunction (limit 2)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1289
+    text: ’s notices and powers of entry and inspe
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1303
+    text: "Section 79 National security: certificat"
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1428
+    text: ’s name,
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1576
+    text: Section 94 Right of access
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1955
+    text: ’s duties under—
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1955
+    text: ’s functions under the data protection l
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2072
+    text: ’s selection.
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2215
+    text: ’s tasks generally to be free of charge
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 2219
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2275
+    text: ’s functions under the data protection l
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2288
+    text: ’s performance using key performance ind
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2290
+    text: ’s performance can be measured most effe
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 2333
+    text: appeals etc).
+    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2385
+    text: Section 146 Assessment notices
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 2410
+    text: appeals etc).
+    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2427
+    text: ’s remuneration and expenses under the a
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 2460
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 2488
+    text: appeals etc).
+    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2492
+    text: ’s opinion, it is necessary for the indi
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2493
+    text: ’s reasons for reaching that opinion,
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2500
+    text: ’s client, and
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2503
+    text: ’s client or between such an adviser or
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2515
+    text: ’s behalf.
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 2564
+    text: appeals etc).
+    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 2618
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 2667
+    text: ",... 75, 76, 77 or 78, the higher maximu"
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2701
+    text: Section 160 Guidance about regulatory ac
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2784
+    text: ’s enforcement powers as described in su
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 3058
+    text: sisted on the making of a claim, the cla
+    message: '"sisted" is not in the dictionary; did you mean "listed"?'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 3139
+    text: ’s favour, the court may not require the
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 3139
+    text: ’s representatives, whether by discovery
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3155
+    text: Section 182 Regulations and consultation
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 3259
+    text: ’s rights
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 3277
+    text: "’s rights: further provision"
+    message: The quote mark ’ here, where the document usually writes ' (32 of 172)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 3292
+    text: complaints to the Commissioner);
+    message: section 165 is called "complaints to the Commissioner" here, but its heading is "Complaints by data subjects to the Commissioner"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3463
+    text: PACE codes of practice
+    message: '"PACE" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 3508
+    text: ;...
+    message: 'Punctuation is doubled: ";..."'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3525
+    text: NHS foundation trust;
+    message: '"NHS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 3544
+    text: ",... an enactment comprised in, or in an"
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged

@@ -1,0 +1,38 @@
+id: us-scotus-gideon-v-wainwright
+chaff: 0.33.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 9
+    text: "  To give this problem another review he"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 47)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 21
+    text: "  Betts argued that this right is extend"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 47)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 31
+    text: ‘fundamental principles of liberty and j
+    message: The quote mark ‘ here, where the document usually writes ' (1 of 20)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 31
+    text: "  For the same reason, though not always"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 47)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 31
+    text: "  On the other hand, this Court in Palko"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 47)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 49
+    text: Johnson v. Zerbst, 304 U.S. 458, 462 (19
+    message: This paragraph runs 15 sentences (limit 12)
+    verdict: unjudged
+  - rule: empty-section
+    line: 59
+    text: "### Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged

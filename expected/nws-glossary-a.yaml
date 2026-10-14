@@ -1,0 +1,238 @@
+id: nws-glossary-a
+chaff: 0.33.0
+findings:
+  - rule: name-variant
+    line: 5
+    text: Abbrevation for hail in weather observat
+    message: '"Abbrevation" is one letter away from "Abbreviation", which the document uses more than once'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 7
+    text: CPC to indicate areas that are likely to
+    message: '"CPC" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: article-sound
+    line: 9
+    text: A AMS
+    message: '"A AMS" takes "An" before that sound'
+    verdict: unjudged
+  - rule: article-sound
+    line: 13
+    text: A Index
+    message: '"A Index" takes "An" before that sound'
+    verdict: unjudged
+  - rule: article-sound
+    line: 15
+    text: a indices.
+    message: '"a indices" takes "an" before that sound'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 63
+    text: " - a cloud of a class characterized by g"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 69
+    text: " - AltoCumulus CAStellanus; mid-level cl"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 69
+    text: AltoCumulus CAStellanus; mid-level cloud
+    message: '"AltoCumulus" here, where the document usually writes "Altocumulus" (1 of 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    text: ACK-kis) - AltoCumulus CAStellanus; mid-
+    message: '"ACK" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 157
+    text: " - A large-scale circulation of winds ar"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 205
+    text: GOES and Himawari family of satellites.
+    message: '"GOES" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 225
+    text: hydrograph theory to estimate streamflow
+    message: '"hydrograph" is not in the dictionary; did you mean "hydrography"?'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 237
+    text: " - Highlights special weather conditions"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 261
+    text: " - This National Weather Service product"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 261
+    text: Area Forecast Discussion - This National
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 301
+    text: disperison model used for treating the t
+    message: '"disperison" is not in the dictionary; did you mean "dispersion"?'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 333
+    text: " - Satellite"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 337
+    text: " - Telephone"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 411
+    text: VHF radio link when precipitation occurs
+    message: '"VHF" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 423
+    text: instensity in this area. It is most acti
+    message: '"instensity" is not in the dictionary; did you mean "intensity"?'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 435
+    text: VIL, accumulated rainfall, and several o
+    message: '"VIL" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 471
+    text: 8000 to 20,000 ft (2400-6100 m).
+    message: '"8000" here, where the document usually writes large numbers like "326,851" (2 of 6)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 495
+    text: " - a body of air covering a relatively w"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 509
+    text: VOS reports as part of a cooperative eff
+    message: '"VOS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 531
+    text: frazil ice attached or anchored to the r
+    message: '"frazil" is not in the dictionary; did you mean "frail"?'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 575
+    text: " - an index of moisture stored within a"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 615
+    text: MCS.
+    message: '"MCS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 631
+    text: " - the Arctic Oscillation is a pattern i"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 631
+    text: Arctic Oscillation - the Arctic Oscillat
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: weasel-word
+    line: 631
+    text: In recent years research has shown, the
+    message: '"research has shown" does not say who'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 647
+    text: nonstandard propagation of the radar bea
+    message: '"nonstandard" here, where the document usually writes "Non-standard" (1 of 3)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 727
+    text: (abbrev. AO)- The Arctic Oscillation is
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: weasel-word
+    line: 727
+    text: In recent years research has shown, the
+    message: '"research has shown" does not say who'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 739
+    text: This National Weather Service product is
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 755
+    text: " - A computer system which automatically"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 805
+    text: 8000 to 20,000 ft (2400-6100 m).
+    message: '"8000" here, where the document usually writes large numbers like "326,851" (2 of 6)'
+    verdict: unjudged
+  - rule: doubled-word
+    line: 839
+    text: a four character identifier assigned to
+    message: '"an a" doubles a word; one of the two is left over'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 845
+    text: ASSOCIATED PRINCIPAL USER
+    message: '"ASSOCIATED PRINCIPAL USER" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 859
+    text: AU)- The mean earth-sun distance, equal
+    message: '"AU" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 867
+    text: " - Data collection system where cooperat"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 875
+    text: " - in general, a layer of air adjacent t"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 915
+    text: centred around the earth's magnetic pole
+    message: '"centred" here, where the document usually spells it "centered" (2 of 23)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 919
+    text: centred around the earth's magnetic pole
+    message: '"centred" here, where the document usually spells it "centered" (2 of 23)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 927
+    text: IFLOWS pressure transducer type gages ca
+    message: '"IFLOWS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 937
+    text: AUTOMATIC GAIN CONTROL
+    message: '"AUTOMATIC GAIN CONTROL" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 971
+    text: GFS model.
+    message: '"GFS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1007
+    text: " - a semi-permanent, subtropical area of"
+    message: '"-" stands in for a dash'
+    verdict: unjudged

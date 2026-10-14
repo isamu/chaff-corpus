@@ -1,0 +1,253 @@
+id: mext-heatstroke-after-holidays
+chaff: 0.33.0
+findings:
+  - rule: preamble-length
+    line: 3
+    text: 今年の夏は全国的に気温の高い日が続いており、この先も気温の高い日が続く見込みです
+    message: 最初の見出しまでに 11 段落あります（2 段落まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 4
+    text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中
+    message: 「ようお願いします」が 9 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 4
+    text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 4
+    text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中
+    message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 4
+    text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 9
+    text: 各都道府県・指定都市教育委員会学校安全主管課
+    message: 「各都道府県教育委員会専修学校主管課」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 9
+    text: 各都道府県・指定都市教育委員会学校安全主管課
+    message: この文は 210 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 11
+    text: 置く各国立大学法人担当課
+    message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 12
+    text: 置く各公立大学法人担当課
+    message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 18
+    text: 置く各国立大学法人担当課
+    message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 22
+    text: 文部科学省総合教育政策局男女共同参画共生社会学習・安全課
+    message: 「文部科学省総合教育政策局男女共同参画共生社会学習」は漢字が 24 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 30
+    text: 7月～8月にかけては休業日を設定している学校も多いと思いますが、休業日明けの時期
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 30
+    text: 7月～8月にかけては休業日を設定している学校も多いと思いますが、休業日明けの時期
+    message: 「は」で出した主題から述語まで 108 字あります（80 字まで）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 31
+    text: ついては、各学校や学校設置者等において御留意いただきたい点を改めて周知しますので
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 31
+    text: ついては、各学校や学校設置者等において御留意いただきたい点を改めて周知しますので
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 32
+    text: また、本事務連絡には「学校における熱中症対策ガイドライン作成の手引き（令和6年4
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 34
+    text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 34
+    text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
+    message: 「各文部科学大臣所轄学校法人担当課」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 34
+    text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
+    message: この文は 280 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 34
+    text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
+    message: 一文に読点が 12 個あります（6 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 35
+    text: なお、学校における働き方改革の観点から、別添2のチェックリストを効果的に周知・活
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 35
+    text: なお、学校における働き方改革の観点から、別添2のチェックリストを効果的に周知・活
+    message: 「必要に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: ・　休業日明け等の子供たちの体がまだ暑さや学校における様々な活動等に慣れていない
+    message: この段落は 13 文あります（5 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 41
+    text: ・　休業日明け等の子供たちの体がまだ暑さや学校における様々な活動等に慣れていない
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 41
+    text: ・　休業日明け等の子供たちの体がまだ暑さや学校における様々な活動等に慣れていない
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 42
+    text: なれるまでの順化期間を設ける等、適切に取り入れること。（暑熱順化を含むスポーツ活
+    message: 「なれる」と書いています（この文書はふつう「慣れる」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 42
+    text: ・　熱中症対策には、暑熱順化（暑さに徐々にならしていくこと）も有効であることから
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 43
+    text: （暑さ指数に応じた活動実施の目安の例は別添4を参照）
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 46
+    text: ・　学校施設の空調設備を適切に活用すること。
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 48
+    text: ・　室内環境の向上を図る上では、空調、建物の断熱・気密性能の向上、必要な換気を組
+    message: 「状況に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 56
+    text: 熱中症防止のためには、暑熱環境において各種活動を中止することを想定し、その判断基
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 56
+    text: 熱中症防止のためには、暑熱環境において各種活動を中止することを想定し、その判断基
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: また、同サイトでは、環境省による熱中症警戒アラート（暑さ指数予測値に基づき、前日
+    message: この文は 197 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 58
+    text: なお、域内の暑さ指数の実況値・予測値、熱中症警戒アラート・熱中症特別警戒アラート
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 59
+    text: 手引きの追補版を令和6年4月に共同で作成しています。これらの資料の詳細は後述（5
+    message: 「手引き」を、88 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 61
+    text: これらの資料を活用するなどし、各種活動の実施等に関して適切に判断いただくようお願
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 66
+    text: 熱中症を防止するためには、登下校時を含め、児童生徒等が自ら体調管理等を行うことが
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 67
+    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 67
+    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    message: この文は 525 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 67
+    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    message: 「は」で出した主題から述語まで 486 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 67
+    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 67
+    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    message: 「なるべく」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 71
+    text: 置くようにすること（詳細は別添1のとおり）
+    message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 79
+    text: ５の関連規定等を踏まえ、次の（1）及び（2）を参考として、適切に御対応いただくよ
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。34 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 79
+    text: 休業日等については、別添５の関連規定等を踏まえ、次の（1）及び（2）を参考として
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: （1）各設置者及び学校等におかれては、気象状況等や学校施設（普通教室、特別教室、
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 81
+    text: （1）各設置者及び学校等におかれては、気象状況等や学校施設（普通教室、特別教室、
+    message: 「必要に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 88
+    text: 環境省・文部科学省は、教育委員会等の学校設置者が作成する熱中症対策に係る学校向け
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 90
+    text: 追補版は、気候変動適応法等の一部を改正する法律の施行による制度の概要や最近の事故
+    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 97
+    text: ○文部科学省・スポーツ庁
+    message: この文は 271 文字あります（140 文字まで）
+    verdict: unjudged

@@ -1,0 +1,13 @@
+id: kimino-oishi-kogen-traffic
+chaff: 0.33.0
+findings:
+  - rule: preamble-length
+    line: 5
+    text: 平素は生石高原の観光振興にご理解とご協力をいただき、誠にありがとうございます。
+    message: 最初の見出しまでに 9 段落あります（2 段落まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 25
+    text: " 予定よりも大幅に時間がかかる場合がありますので、スケジュールには十分なゆとりを"
+    message: 助詞「を」と「予定」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。59 箇所のうち 1 箇所が空いている）
+    verdict: unjudged

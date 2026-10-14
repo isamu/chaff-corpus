@@ -1,0 +1,43 @@
+id: da-agile-review-4
+chaff: 0.33.0
+findings:
+  - rule: no-mixed-desumasu
+    line: 5
+    text: 本検討会の概要は、アジャイル開発に関する有識者検討会をご覧ください。
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 41
+    text: 東京都の「アジャイル型開発プレイブック（以下「プレイブック」という。）」に記載の
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 43
+    text: 一方、POは仕様決定や、ステークホルダー調整等を実施する想定のため、デジタル庁に
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 44
+    text: ただ、各スクラムチームが自律的にコストやスケジュールを判断する能力が不足している
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    text: アジャイル開発の実績等を有するベンダーを整理したデジタル庁内のデータベースである
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: 1つ目は、委託先ベンダーの入れ替え時の引継ぎについては、単年度調達の場合でも、年
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: 2つ目は、行政機関の事例ではないが、委託先ベンダーが契約した開発環境で開発を進め
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 71
+    text: 引き継ぐことはない。
+    message: 「引き継ぐ」と書いています（この文書はふつう「引継ぐ」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged

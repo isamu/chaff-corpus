@@ -1,0 +1,100 @@
+id: fr-2026-16371-nvd-rfi
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: Document Headings
+    message: Section "Document Headings" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: undefined-acronym
+    line: 6
+    text: CFR title and the number of each part th
+    message: '"CFR" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 8
+    text: RIN which identifies each regulatory act
+    message: '"RIN" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 15
+    text: XRIN 0693-XC139
+    message: '"XRIN" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: an identifier label in the Federal Register header (XRIN 0693-XC139), not prose
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: Section "SUMMARY:" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: all-caps-shouting
+    line: 43
+    text: FOR FURTHER INFORMATION CONTACT section
+    message: '"FOR FURTHER INFORMATION CONTACT" is written in capitals'
+    verdict: false-positive
+    note: Federal Register captions (FOR FURTHER INFORMATION CONTACT:) are written in capitals by convention
+  - rule: invisible-character
+    line: 43
+    text: ​faq. If you require an accommodation or
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 59
+    text: Several trends present both challenges a
+    message: This sentence runs 70 words (limit 45)
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 71
+    text: ""
+    message: Section "(1) Vulnerability Management Process" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: concrete-evidence-density
+    line: 81
+    text: ""
+    message: Section "(2) Vulnerability Information Dissemination" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: max-sentence-length
+    line: 97
+    text: How can the NVD improve interoperability
+    message: This sentence runs 46 words (limit 45)
+    verdict: false-positive
+    note: the page marker of the Federal Register rendering (( printed page 52050)) is counted into the sentence; without it the sentence is under the limit
+  - rule: concrete-evidence-density
+    line: 101
+    text: ""
+    message: Section "(4) Remediation Development, Deployment, and Monitoring" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: concrete-evidence-density
+    line: 115
+    text: ""
+    message: Section "(5) Vulnerability Data and Standards" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: concrete-evidence-density
+    line: 129
+    text: ""
+    message: Section "(6) Development Processes" has no number, code or link (7 of 13 sections)
+    verdict: false-positive
+    note: "Federal Register boilerplate and RFI question sections: no number, code or link is expected"
+  - rule: heading-end-punctuation-mix
+    line: 151
+    text: "# Footnotes"
+    message: The heading "Footnotes" ends bare, while 7 other headings end with a mark ("AGENCY:")
+    verdict: false-positive
+    note: run-in captions (AGENCY:, SUMMARY:) compared with a structural heading (Footnotes)
+  - rule: invisible-character
+    line: 153
+    text: ​Downloads.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 155
+    text: FR Doc. 2026-16371 Filed 8-11-26; 8:45 a
+    message: '"FR" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: a citation label ([FR Doc. 2026-16371 …]) at the end of a Federal Register document, not prose

@@ -1,0 +1,233 @@
+id: da-annual-report-2024
+chaff: 0.33.0
+findings:
+  - rule: topic-predicate-distance
+    line: 24
+    text: デジタル庁は、誰一人取り残されることなく、多様な幸せが実現できる社会を目指し、国
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: invisible-character
+    line: 26
+    text: ​、過去1年間（2023年9月から2024年8月まで）において、デジタル庁が取り
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 26
+    text: 本資料は、国民や関係者の皆様に、社会のデジタル化の現在地と、最新のデータに基づき
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: invisible-character
+    line: 41
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 94
+    text: ""
+    message: 「生活者・事業者・職員に​やさしいサービスの提供​」の節に数値もコードもリンクもありません（そういう節が 3/9）
+    verdict: unjudged
+  - rule: invisible-character
+    line: 94
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 94
+    text: ​やさしいサービスの提供​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 96
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 97
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 98
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 99
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 100
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 101
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 102
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 103
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 104
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 105
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 106
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 107
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 108
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 113
+    text: ""
+    message: 「デジタル基盤の整備による​成長戦略の推進」の節に数値もコードもリンクもありません（そういう節が 3/9）
+    verdict: unjudged
+  - rule: invisible-character
+    line: 113
+    text: ​成長戦略の推進
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 115
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 117
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 118
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 119
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 121
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 122
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 123
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 124
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 125
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 126
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 127
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 128
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 129
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 130
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 132
+    text: ​成長戦略の推進
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 134
+    text: ""
+    message: 「安全・安心で強靱なデジタル基盤の実現」の節に数値もコードもリンクもありません（そういう節が 3/9）
+    verdict: unjudged
+  - rule: invisible-character
+    line: 136
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 137
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 138
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 139
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: invisible-character
+    line: 140
+    text: ​
+    message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: heading-echo
+    line: 147
+    text: 詳細：デジタル庁の組織づくり
+    message: 見出し「デジタル庁の組織づくり」を直後の文がほぼそのまま繰り返しています
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 159
+    text: 5ページ、利用満足度の凡例に誤りがありましたので修正しました（正：Bどちらともい
+    message: 「修正しました（正」が 10 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 167
+    text: 30ページ、プロジェクト管理と評価における3つの取組について補足を追記しました（
+    message: 「30ページ、プロジェクト管理と評価における3つの取組について補足を追記しました（追記：【プロジェクト管理における取組】）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
+    verdict: unjudged

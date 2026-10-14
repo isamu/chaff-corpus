@@ -1,7 +1,261 @@
 # Email addresses and phone numbers that may stay in a committed text, because they are published on purpose
-# (an organisation's press or contact address, a public hotline). One entry per document and string, with the reason:
-#
-# - id: <document id>
-#   match: <the string as validate prints it>
-#   reason: <why it is public>
-[]
+# (an organisation's press or contact address, a public hotline). One entry per document and string, with the reason.
+
+- id: acas-letter-disciplinary-hearing-warning
+  match: "digital@acas.org.uk"
+  reason: a government office's role address, published in the document for the public to write to
+- id: gsa-press-pif-2026
+  match: "press@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nasa-advisory-crew-13-coverage
+  match: "ksc-newsroom@mail.nasa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nasa-advisory-crew-13-coverage
+  match: "ksc-media-accreditat@mail.nasa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nasa-advisory-crew-13-coverage
+  match: "321-867-2468"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nasa-advisory-crew-13-coverage
+  match: "202-358-1100"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nasa-advisory-crew-13-coverage
+  match: "joshua.a.finch@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: nasa-advisory-crew-13-coverage
+  match: "james.j.russell@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: nasa-advisory-crew-13-coverage
+  match: "steven.p.siceloff@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: nasa-advisory-crew-13-coverage
+  match: "281-483-5111"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nasa-advisory-crew-13-coverage
+  match: "sandra.p.jones@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: nasa-advisory-crew-13-coverage
+  match: "joseph.a.zakrzewski@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: nasa-press-prima-new-mission-class
+  match: "202-358-2546"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nasa-press-prima-new-mission-class
+  match: "alise.m.fisher@nasa.gov"
+  reason: a named NASA public-affairs officer's work address, published in the release as its media contact
+- id: noaa-press-flood-mapping
+  match: "nws.pa@noaa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-16371-nvd-rfi
+  match: "NVD-RFI@nist.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-16371-nvd-rfi
+  match: "(301) 975-2762"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: govuk-cddo-roadmap-2022-2025
+  match: "psi@nationalarchives.gov.uk"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "reu.dmr@nsf.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "nsfpubs@nsf.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "(703) 292-7827"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nsf-19-582-reu-solicitation
+  match: "fastlane@nsf.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "rgov@nsf.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "support@grants.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: nsf-19-582-reu-solicitation
+  match: "(703) 292-5090"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nsf-19-582-reu-solicitation
+  match: "(800) 281-8749"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nsf-19-582-reu-solicitation
+  match: "(800) 877-8339"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nsf-19-582-reu-solicitation
+  match: "(703) 292-5111"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: cfpb-blog-imposter-scams
+  match: "(855) 411-2372"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: cloudgov-security-ir-guide
+  match: "gsa-ir@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: cloudgov-security-ir-guide
+  match: "fedramp_security@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: cloudgov-security-ir-guide
+  match: "cloud-gov-compliance@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: cloudgov-security-ir-guide
+  match: "devops@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: ftc-phishing-scams
+  match: "reportphishing@apwg.org"
+  reason: the Anti-Phishing Working Group's public reporting address
+- id: govuk-guidance-academy-senior-pay
+  match: "RegionsGroup.COMPLAINTS@education.gov.uk"
+  reason: a government office's role address, published in the document for the public to write to
+- id: govuk-style-guide-a-to-z
+  match: "+44 (0)29 2018 0542"
+  reason: an example of how to write an international number, from the style guide itself
+- id: govuk-style-guide-a-to-z
+  match: "+39 1 33 45 70 90"
+  reason: an example of how to write an international number, from the style guide itself
+- id: usajobs-va-it-specialist-customer-support
+  match: "vaoitopshr-randpteam1d@va.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: 18f-handbook-travel-faq
+  match: "tts-travel@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: 18f-handbook-travel-faq
+  match: "(877) 472-6716"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: 18f-handbook-travel-faq
+  match: "kc-travel.finance@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: irs-online-account-faq
+  match: "866-897-0177"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: irs-online-account-faq
+  match: "866-897-0161"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: irs-online-account-faq
+  match: "877-777-4778"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nps-yellowstone-faqs
+  match: "307-344-7381"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: 18f-handbook-travel
+  match: "tts-travel@gsa.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: github-terms-of-service
+  match: "copyright@github.com"
+  reason: GitHub's published copyright-notice address, part of the terms
+- id: ecfr-16-cfr-310-telemarketing
+  match: "Library@ftc.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: ecfr-16-cfr-310-telemarketing
+  match: "fr.inspection@nara.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: ecfr-16-cfr-310-telemarketing
+  match: "+41 22 730 5852"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ecfr-16-cfr-310-telemarketing
+  match: "(202) 326-2395"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ecfr-16-cfr-310-telemarketing
+  match: "tsrnotice@ftc.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: apidatagov-developer-manual
+  match: "YOUR_KEY_HERE@developer.nrel.gov"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: openapi-spec-3-1-0
+  match: "support@example.com"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: pep-0020-zen-of-python
+  match: "python-list@python.org"
+  reason: the public python-list mailing list address, named as where the text was first posted
+- id: jma-press-hot-2026-07
+  match: "03-6758-3900"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-cleanup-notice
+  match: "073-489-5903"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-cleanup-notice
+  match: "073-495-3463"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-cleanup-notice
+  match: "073-489-5909"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-cleanup-notice
+  match: "073-489-2510"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-oishi-kogen-traffic
+  match: "073-489-5901"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-oishi-kogen-traffic
+  match: "073-489-2510"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: meti-keiryoshi-exam-correction
+  match: "03-3501-1511"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: meti-press-level4-bus
+  match: "03-3501-1511"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: mhlw-pubcomment-rodohoken
+  match: "choshu-pubc@mhlw.go.jp"
+  reason: a government office's role address, published in the document for the public to write to
+- id: mlit-press-planned-suspension
+  match: "03-5253-8111"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: mlit-press-planned-suspension
+  match: "03-5253-8542"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: mlit-press-planned-suspension
+  match: "03-5253-1633"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nstac-microdata-forum
+  match: "03-5273-1257"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: da-gss-incident
+  match: "0120-360-036"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: da-gss-incident
+  match: "03-6866-0151"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-staff-exam-guide
+  match: "073-489-5912"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-staff-exam-guide
+  match: "073-489-2510"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: mext-heatstroke-after-holidays
+  match: "03-6734-2966"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-opendata-site
+  match: "073-489-5913"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: kimino-opendata-site
+  match: "073-489-2510"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ndl-digital-transmission-individuals
+  match: "03-3581-2331"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ndl-digital-transmission-individuals
+  match: "03-3506-5293"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ndl-digital-transmission-individuals
+  match: "0774-98-1313"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: da-copyright-policy
+  match: "03-4477-6775"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: ppc-guidelines-tsusoku
+  match: "kojin_ichiro@example.com"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: da-area-data-model
+  match: "XXXX@ooo.co.jp"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: da-area-data-model
+  match: "000-3456-7890"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: da-area-data-model
+  match: "XXXX@ooo.lg.jp"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: da-area-data-model
+  match: "028-9999-9999"
+  reason: a placeholder in the document's own example, not a real address or number
+- id: da-area-data-model
+  match: "XXXX@ooo.or.jp"
+  reason: a placeholder in the document's own example, not a real address or number

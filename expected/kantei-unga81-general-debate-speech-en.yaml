@@ -1,0 +1,278 @@
+id: kantei-unga81-general-debate-speech-en
+chaff: 0.33.0
+findings:
+  - rule: max-sentence-length
+    line: 13
+    text: The distribution of goods is stagnating,
+    message: This sentence runs 37 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 15
+    text: Against this backdrop, has the United Na
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: Despite these concerns, the United Natio
+    message: This sentence runs 35 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: In this milestone year, I would first li
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Japan, in cooperation with the internati
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: The situation in the Middle East has bee
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 35
+    text: For many years, we have engaged in dynam
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 35
+    text: To that end, exactly ten years ago, form
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: However, due to the recent intensificati
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 39
+    text: There I appealed that it is essential fo
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: For global energy security, it is crucia
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: Japan has launched the Partnership On Wi
+    message: This sentence runs 38 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 47
+    text: Through this initiative, we will work to
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: which encompasses not only the developme
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: In June, to help develop the infrastruct
+    message: This sentence runs 39 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 55
+    text: At the very heart of our aspiration for
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: Furthermore, Japan will persistently adv
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: It is Japan’s mission, as the only count
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: Japan strongly calls for solidarity with
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: The advancement of North Korea’s nuclear
+    message: This sentence runs 44 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: For the sake of the future of both Japan
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: Any attempts to unilaterally change the
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: A permanent member of the Security Counc
+    message: This sentence runs 35 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: Since the end of the Second World War, J
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: This is demonstrated by Japan’s consiste
+    message: This sentence runs 42 words (limit 25)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 73
+    text: This is demonstrated by Japan’s consiste
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 77
+    text: Ensuring free and safe navigation throug
+    message: '"extremely important" emphasises without saying anything'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: Ensuring free and safe navigation throug
+    message: This sentence runs 44 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: Japan will continue to work closely with
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 85
+    text: Since becoming a Member State of the Uni
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: To date, Japan has provided ODA totaling
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: TICAD has served as a platform for refle
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 91
+    text: Furthermore, next year, I will host the
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 91
+    text: Japan aims to further deepen our collabo
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 93
+    text: To share Japan’s expertise and technolog
+    message: This sentence runs 37 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: I myself, in 2015, as Minister for Inter
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 99
+    text: Such capabilities include establishing t
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: Furthermore, Japan will contribute to gl
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: We will enhance these efforts with a vie
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 101
+    text: Furthermore, Japan will contribute to gl
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 103
+    text: Next year, Japan will host the World Hor
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 105
+    text: There are also challenges arising from t
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: In parallel, Japan has been working with
+    message: This sentence runs 38 words (limit 25)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 105
+    text: '" establishing the world’s first interna'
+    message: The quote mark " here, where the document usually writes “” (2 of 22)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 105
+    text: '"Hiroshima AI Process," establishing the'
+    message: The quote mark " here, where the document usually writes “” (2 of 22)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: Since the end of the Second World War, J
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 111
+    text: Now, more than ever, the flag of the Uni
+    message: This sentence runs 38 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: Rather than lamenting the institutional
+    message: This sentence runs 41 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 115
+    text: I would like to strongly emphasize this
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 115
+    text: Regarding the so-called “enemy States” c
+    message: This sentence runs 43 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 117
+    text: To this end, it is essential to expand t
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 125
+    text: In light of this history, Japan feels a
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 125
+    text: In the 70 years since we became a UN Mem
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: Now, at a time when the world is in turm
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: Together with this more resilient and ef
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged

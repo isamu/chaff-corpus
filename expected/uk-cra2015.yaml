@@ -1,0 +1,128 @@
+id: uk-cra2015
+chaff: 0.33.0
+findings:
+  - rule: no-em-dash
+    line: 8
+    text: —
+    message: 9 dashes per 1000 words (limit 8)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 15
+    text: goods and installation);
+    message: section 15 is called "goods and installation" here, but its heading is "Installation as part of conformity of the goods with the contract"
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 16
+    text: goods and digital content).
+    message: section 16 is called "goods and digital content" here, but its heading is "Goods not conforming to contract if digital content does not conform"
+    verdict: unjudged
+  - rule: name-variant
+    line: 61
+    text: Sales contracts
+    message: '"Sales" is one letter away from "Wales", which the document uses more than once'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 134
+    text: SI 2013/3134) (main characteristics of g
+    message: '"SI" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 163
+    text: section 19 for the effect of goods not c
+    message: "\"effect\" does not appear in section 19 (Consumer's rights to enforce terms about goods)"
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 169
+    text: section 19 for the effect of goods not c
+    message: "\"effect\" does not appear in section 19 (Consumer's rights to enforce terms about goods)"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 197
+    text: Section 19 Consumer's rights to enforce
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 211
+    text: section 20 for provisions about that rig
+    message: '"provisions about that" does not appear in section 20 (Right to reject)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 235
+    text: Section 20 Right to reject
+    message: This paragraph runs 19 sentences (limit 12)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 328
+    text: Section 24 Right to price reduction or f
+    message: This paragraph runs 15 sentences (limit 12)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 356
+    text: NI 18)) (see Parts I and V of that Order
+    message: '"NI" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 397
+    text: Section 28 Delivery of goods
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 576
+    text: description).
+    message: section 36 is called "description" here, but its heading is "Digital content to be as described"
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 583
+    text: description).
+    message: section 36 is called "description" here, but its heading is "Digital content to be as described"
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 602
+    text: section 45 for provisions about that rig
+    message: '"provisions about that" does not appear in section 45 (Right to a refund)'
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 746
+    text: section 56 for provisions about that rig
+    message: '"provisions about that" does not appear in section 56 (Right to price reduction)'
+    verdict: unjudged
+  - rule: reference-topic-missing
+    line: 747
+    text: section 56 for provisions about that rig
+    message: '"provisions about that" does not appear in section 56 (Right to price reduction)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 810
+    text: EEC and Directive 1999/44/EC of the Euro
+    message: '"EEC" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 810
+    text: “Consumer Rights Directive” means Direct
+    message: '"Consumer Rights Directive" is defined but never used'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 972
+    text: SR 2011/331), Schedule 5 (application to
+    message: '"SR" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 986
+    text: OFCOM of conditions under section 120) i
+    message: '"OFCOM" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1070
+    text: Section 87 Enforcement of the duty
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1111
+    text: ’s total share (within the meaning given
+    message: The quote mark ’ here, where the document usually writes ' (1 of 79)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 1155
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged

@@ -1,0 +1,93 @@
+id: soumu-kokumin-cyber-phishing
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: 「フィッシング詐欺とは？」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: unjudged
+  - rule: weasel-word
+    line: 3
+    text: なお、フィッシングはphishingという綴りで、魚釣り（fishing）と洗練
+    message: 「といわれている」は、誰が言ったのかを言っていません
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 23
+    text: (アイ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちま
+    message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 23
+    text: ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。14 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 23
+    text: " にしたりして、閲覧者が見間違えるのを待ちます。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 23
+    text: " を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 23
+    text: " を数字の 0 にしたり、アルファベットの大文字の(アイ) I を小文字の（エル"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 27
+    text: ""
+    message: 「正しいURLや正規のアプリケーションを用いてアクセスする」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 29
+    text: " AppStore）から入手してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 29
+    text: " や AppStore）から入手してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 29
+    text: 金融機関のID・パスワードなどを入力するWebページにアクセスする場合は、金融機
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 33
+    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 33
+    text: ブラウザーの上部または下部に表示されている WebサイトのURL のドメイン名が
+    message: 「ブラウザー」と「ブラウザ」が混ざっています（この語は 4 回のうち 1 回が「ブラウザー」）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " WebサイトのURL のドメイン名が一致しているかどうかを確認します。ドメイン"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " のドメイン名が一致しているかどうかを確認します。ドメイン名は「https://"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
+    message: この文は 194 文字あります（160 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 33
+    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
+    message: 「は」で出した主題から述語まで 186 字あります（80 字まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 36
+    text: ""
+    message: 「なりすましメールに注意する」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: unjudged

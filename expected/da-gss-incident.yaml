@@ -1,0 +1,18 @@
+id: da-gss-incident
+chaff: 0.33.0
+findings:
+  - rule: ngram-repetition
+    line: 7
+    text: 今般、デジタル庁が運用するガバメントソリューションサービス（以下、「GSS」とい
+    message: 「漏えいした可能性」が 11 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: preamble-length
+    line: 7
+    text: 今般、デジタル庁が運用するガバメントソリューションサービス（以下、「GSS」とい
+    message: 最初の見出しまでに 3 段落あります（2 段落まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 72
+    text: " を掲載しました"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
+    verdict: unjudged

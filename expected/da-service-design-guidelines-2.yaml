@@ -1,0 +1,228 @@
+id: da-service-design-guidelines-2
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 17
+    text: ""
+    message: 「議事次第」の節に数値もコードもリンクもありません（そういう節が 4/12）
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 33
+    text: ⼈間拡張研究センター主任研究員）
+    message: 「⼈」（U+2F08）は部首の字です。ふつうの「人」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼤学 先進⼯学部知能メディア⼯学科/先進⼯学研究科知能メディア⼯学専攻教授）
+    message: 「⼤」（U+2F24）は部首の字です。ふつうの「大」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼯学専攻教授）
+    message: 「⼯」（U+2F2F）は部首の字です。ふつうの「工」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼯学研究科知能メディア⼯学専攻教授）
+    message: 「⼯」（U+2F2F）は部首の字です。ふつうの「工」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼯学科/先進⼯学研究科知能メディア⼯学専攻教授）
+    message: 「⼯」（U+2F2F）は部首の字です。ふつうの「工」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼯学部知能メディア⼯学科/先進⼯学研究科知能メディア⼯学専攻教授）
+    message: 「⼯」（U+2F2F）は部首の字です。ふつうの「工」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 34
+    text: ⼯業⼤学 先進⼯学部知能メディア⼯学科/先進⼯学研究科知能メディア⼯学専攻教授）
+    message: 「⼯」（U+2F2F）は部首の字です。ふつうの「工」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 35
+    text: ⼈インフォメーションギャップバスター 理事⻑）
+    message: 「⼈」（U+2F08）は部首の字です。ふつうの「人」と書きます
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 35
+    text: NPO法⼈インフォメーションギャップバスター 理事⻑）
+    message: 「NPO」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 36
+    text: ⼠通株式会社 デザインセンター⻑）
+    message: 「⼠」（U+2F20）は部首の字です。ふつうの「士」と書きます
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 38
+    text: HCD推進グループ）
+    message: 「HCD」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 39
+    text: NTTコミュニケーションズ株式会社 イノベーションセンター（KOEL） Head
+    message: 「NTT」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 40
+    text: 長谷川 敦士（武蔵野美術大学造形構想学部 教授、株式会社コンセント 代表取締役）
+    message: 「武蔵野美術大学造形構想学部」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 41
+    text: ⼤学　社会情報学科教授）
+    message: 「⼤」（U+2F24）は部首の字です。ふつうの「大」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 41
+    text: ⼩樽商科⼤学　社会情報学科教授）
+    message: 「⼩」（U+2F29）は部首の字です。ふつうの「小」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 42
+    text: ⼈理化学研究所　⾰新知能統合研究センター副チームリーダー）
+    message: 「⼈」（U+2F08）は部首の字です。ふつうの「人」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 42
+    text: ⽴研究開発法⼈理化学研究所　⾰新知能統合研究センター副チームリーダー）
+    message: 「⽴」（U+2F74）は部首の字です。ふつうの「立」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 42
+    text: ⾰新知能統合研究センター副チームリーダー）
+    message: 「⾰」（U+2FB0）は部首の字です。ふつうの「革」と書きます
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 72
+    text: PJMOやPMOの上にデジタル庁で一括管理するチームを置き、サービスデザインやユ
+    message: 「PJMO」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 72
+    text: PMOの上にデジタル庁で一括管理するチームを置き、サービスデザインやユーザビリテ
+    message: 「PMO」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 79
+    text: ""
+    message: 「ガイドライン全体」の節に数値もコードもリンクもありません（そういう節が 4/12）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 94
+    text: ほうが良い。専門用語が出てくると用語がわからないではなく、全体的に難しくてわから
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 100
+    text: ほうが良い。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 106
+    text: 5章で説明した方がまとまっていて理解しやすのではないかと感じる。
+    message: 「5章」（番地 ch5）はこの文書にありません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 114
+    text: よい。
+    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。34 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 115
+    text: の3点の改善の余地がある。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 121
+    text: " リサーチのあたりに記載すべき内容ではないか。"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。14 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 121
+    text: " 用語/2.3 リサーチのあたりに記載すべき内容ではないか。"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。14 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 122
+    text: あげられている3つについて、倫理原則の3つと1対1で紐づくのであれば紐づけて書い
+    message: 「あげる」と書いています（この文書はふつう「挙げる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 128
+    text: ほうが良い。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 141
+    text: ほうが良い。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 145
+    text: 例えばイラストや事例を増やす、全部読まずとも必要に応じて読めるようにする、最低限
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 146
+    text: より深い情報を求める人向けに出典をつけたほうが良い。
+    message: 「より深い」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 146
+    text: ほうが良い。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 147
+    text: 行政において悪意を持ったダークパターンが入ることは前提としていないと思うが、意図
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 150
+    text: IEC 250xx）について言及されているが、ウェブ系の出自の人間からすると慣れ
+    message: 「IEC」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 152
+    text: ""
+    message: 「アクセシビリティ全般」の節に数値もコードもリンクもありません（そういう節が 4/12）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 174
+    text: よいかが分かりづらいと感じた。なぜ困っているか等の具体例をもう少し説明した方が良
+    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。34 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 175
+    text: ほうが良い。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 176
+    text: ほうが良い
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。30 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 189
+    text: これはアクセシビリティと地続きの話で、普段スクリーンリーダーや拡張機能を入れてウ
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 190
+    text: 過ぎてしまい全部読まれない、どこに情報があるか発見できなくなってしまうという問題
+    message: 「過ぎる」と書いています（この文書はふつう「すぎる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 193
+    text: ""
+    message: 「ウェブサイト等による行政情報の提供・利用促進に関するガイドライン」の節に数値もコードもリンクもありません（そういう節が 4/12）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 195
+    text: 本ガイドラインは行政情報の維持管理や開示を行うためのものだが、国民の利用が促進さ
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged

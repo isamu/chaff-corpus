@@ -1,0 +1,158 @@
+id: crs-rl32781-salt
+chaff: 0.33.0
+findings:
+  - rule: use-before-definition
+    line: 7
+    text: SALT deduction) shifts the burden for pa
+    message: '"SALT deduction" is used here, before it is defined on line 19'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 11
+    text: P.L. 119-21, the FY2025 reconciliation t
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 15
+    text: Recent Congresses and Administrations ha
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 31
+    text: Generally, through the SALT deduction, t
+    message: '"and local taxes paid" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 35
+    text: The SALT deduction could allow state and
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 39
+    text: The deduction from federal income for st
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: Before the 1964 act, a deduction was all
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 43
+    text: TRA 1986; P.L. 99-514). One of the prima
+    message: '"TRA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 50
+    text: The American Jobs Creation Act of 2004 (
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: The AJCA 2004 sales tax deductibility pr
+    message: This sentence runs 97 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 50
+    text: AJCA 2004; P.L. 108-357) reinstated dedu
+    message: '"AJCA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 52
+    text: The TCJA established a temporary limit,
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 52
+    text: "CRS Report R46246, The SALT Cap: Overvie"
+    message: '"CRS" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: Certain state governments have adjusted
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: The SALT cap does not limit SALT deducti
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 76
+    text: Table 1 tracks the percentage of returns
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: This shift was caused both by an increas
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: The estimated revenue loss attributable
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 124
+    text: The deduction for state and local sales
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 126
+    text: The American Recovery and Reinvestment A
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 150
+    text: While SALT deduction claims are generall
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 172
+    text: More specifically, the $40,000 SALT cap
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 174
+    text: The average claim amount actually increa
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 193
+    text: 1326 from the 118th Congress, which woul
+    message: This sentence runs 60 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 203
+    text: Extending the SALT cap at a raised value
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 222
+    text: The effect of such a proposal would like
+    message: This sentence runs 53 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 226
+    text: President Obama's FY2016 budget plan pro
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 240
+    text: GPO, 1987), pp. 47-48.
+    message: '"GPO" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 266
+    text: See IRS Publication 600.
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 268
+    text: NBER Working Paper 12307, 2006, https://
+    message: '"NBER" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 270
+    text: SALT' Cap," The New York Times, November
+    message: "\"SALT' Cap\" is written \"SALT Cap\" elsewhere in the document (case, width or punctuation)"
+    verdict: unjudged

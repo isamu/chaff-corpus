@@ -1,0 +1,13 @@
+id: da-copyright-policy
+chaff: 0.33.0
+findings:
+  - rule: latin-spacing
+    line: 8
+    text: " のうち、本サイト独自の出典記載例や本ルールの適用を受けないコンテンツ等サイトに"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 27
+    text: "### 1.4 本利用ルールが適用されないコンテンツについて"
+    message: 「1.1」の次が「1.4」です（2 番目のはず）
+    verdict: unjudged

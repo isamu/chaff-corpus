@@ -1,0 +1,33 @@
+id: docusaurus-admonitions-mdx
+chaff: 0.33.0
+findings:
+  - rule: title-case-consistency
+    line: 86
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 110
+    text: You may also specify an optional title.
+    message: The first sentence repeats the heading "Specifying title"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 182
+    text: Admonitions can be nested. Use more colo
+    message: The first sentence repeats the heading "Nested admonitions"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 230
+    text: You can use MDX inside admonitions too!
+    message: The first sentence repeats the heading "Admonitions with MDX"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 352
+    text: By default, the theme doesn't know what
+    message: "\"doesn't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 376
+    text: You can provide the corresponding React
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged

@@ -1,0 +1,299 @@
+# An Overview of Small Business Subcontracting: In Brief
+
+Updated March 26, 2026 (R47585)
+
+## Summary
+
+For small businesses, participating in federal contracts as subcontractors can offer an important pathway to government contracting work and is one of the ways that the federal government can help maintain a diversity of suppliers. Congress may be interested in the policies and regulations surrounding small business subcontracting because the Small Business Act requires certain contractors to provide subcontracting opportunities for small businesses and because subcontracts are an access point for small firms seeking to provide goods and services to the government.
+
+The federal government maintains a policy of "maximum practicable" subcontracting opportunities for small businesses via prime contracts above $350,000, a value known as the simplified acquisition threshold. Regulations outline the details of agency and contractor obligations when subcontracts are awarded, and are implemented by agency purchasing officials across the government such as contracting officers, as well as SBA personnel that specialize in contracting support for small businesses.
+
+Other federal policies that foster small business subcontracting include monetary incentives to encourage prime contractors to subcontract with small businesses; legal protections for subcontractors such as assurances of timely payments; and "limitations on subcontracting" to prevent contracts intended for small businesses from being subcontracted to larger firms. This report discusses major components of small business subcontracting policy and select issues of congressional concern: contractor compliance with subcontracting regulations, and subcontracting reporting and data availability. It also provides recent legislative proposals that would affect subcontracting policy.
+
+## Introduction
+
+For small businesses, participating in federal contracts as subcontractors can offer an important pathway to government contracting work. Subcontracting also helps the federal government maintain a diversity of suppliers. Congress may be interested in the policies and regulations surrounding small business subcontracting because the Small Business Act requires certain contractors to provide subcontracting opportunities for small businesses.
+
+Agency purchasing officials, including contracting officers, implement federal subcontracting policy across the government, and Small Business Administration (SBA) personnel specialize in contracting support for small businesses. While there is not a statutorily required subcontracting goal for small businesses, the Small Business Act requires that 5% of federal subcontract award dollars each fiscal year go to small disadvantaged businesses and 5% go to women-owned small businesses; 5% of federal subcontract award dollars each fiscal year must go to service-disabled veteran-owned small businesses and 3% must go to Historically Underutilized Business Zone (HUB Zone) small businesses.
+
+In addition to regulations designed to enable subcontracting with small businesses, federal policies supporting small business subcontracting include monetary incentives for prime contractors to subcontract with small businesses; legal protections for subcontractors; and "limitations on subcontracting" that prevent contracts intended for small businesses from being subcontracted to larger firms. This report discusses major components of small business subcontracting policy and select topics of congressional concern: contractor compliance with subcontracting regulations, subcontracting data availability, and issues facing small business subcontractors. It also provides recent legislative proposals that would affect subcontracting policy.
+
+## Subcontracting Opportunities for Small Businesses
+
+Small businesses may have the opportunity to sell goods and services to the federal government through "prime" contracting as well as through subcontracting. While prime contractors contract directly with agencies that procure goods and services, subcontractors may work for other government contractors and further subcontract with other businesses. For small firms, working directly with the federal government as a prime contractor can require prohibitive amounts of staff, capital, and in-depth technical knowledge of contracting policies and regulations. Preparation of an offer in response to a prime contract solicitation can be a complex and lengthy process, making it costly and time-intensive for a firm, regardless of the potential contract award's value. For a small business, the payoff from a prime contract award might not justify the level of investment required to secure the contract. Prime contract solicitations may also weight the importance of a firm's experience and performance record as a contractor, which might present a particular challenge for a small business, especially a start-up business.
+
+By participating in the federal marketplace as subcontractors, small businesses can benefit from federal procurement, and potentially expand and position themselves to become prime contractors. Subcontracts can offer less burdensome opportunities to sell to the government. They also offer exposure to federal agency requirements and give firms a chance to establish their qualifications, necessary to prepare for future prime contract proposals.
+
+To help foster small business subcontracting, agencies directly support prospective and current subcontractors, and indirectly support them through regulations affecting procurement personnel and prime contractors (see the section "Subcontracting Regulations"). Direct subcontractor assistance includes directories and databases of subcontracting opportunities (as described below), as well as technical assistance provided by the Small Business Administration (SBA) and Department of Defense (DOD).
+
+Since FY2019, government-wide subcontracting to small businesses has remained in the range of 31-36% of subcontract award dollars, which in FY2024 approximated over $90 billion (prime dollars to small businesses was $183.5 billion, roughly 29% of prime award dollars).
+
+### Directories and Databases
+
+For prospective subcontractors, the SBA and many other agencies provide databases and directories of subcontracting work. The SBA hosts an online Subcontracting Network website, "SubNet," where prime contractors post subcontracting opportunities, by geographic location, and list their contact information and industry.
+
+Although many agencies offer prime contractor directories for prospective small business subcontractors, those provided by the General Services Administration (GSA), Department of Transportation (DOT), and Department of Defense (DOD) are extensive:
+
+- GSA offers a Subcontracting Directory using information from its Federal Procurement Data System, which small businesses can search by state and North American Industry Classification System (NAICS) code.
+- DOT updates its Subcontracting Directory each fiscal year and includes "major DOT prime contractors" that have approved subcontracting plans along with their address, a company subcontracting liaison, and descriptions of the work or products needed.
+- DOD's Prime Contractor Directory lists the department's prime contractors required to have subcontracting plans and goals, including phone numbers and emails for company points of contact as well as industry NAICS codes.
+
+### Assistance for Subcontractors
+
+The SBA and DOD have programs dedicated to individually assisting federal contractors; these services may serve prospective subcontractors as well. SBA advertises online courses as well as a Subcontracting Assistance Program that are available by contacting the SBA directly. SBA's offerings also include its standard suite of "technical assistance," which can assist small businesses with federal contracting as well as other kinds of counseling and training. Small Business Development Centers, dispersed across the country and U.S. territories, are the SBA's flagship technical assistance resource for small businesses. In addition, the SBA's Procurement Center Representatives "conduct market research, assist small businesses with payment issues, provide counseling on the contracting process, and more."
+
+DOD's Under Secretary of Defense for Acquisition and Sustainment oversees the APEX Accelerators program for contractors. Formerly known as Procurement Technical Assistance Centers, APEX Accelerators help small businesses "determine whether they are ready for government opportunities," complete necessary registration processes, network with procurement staff and other contractors, "navigate solicitations," and even "resolve [contract] performance issues." The program "focuses on building a [sic] strong, sustainable, and resilient U.S. supply chains by assisting a wide range of businesses that pursue and perform under contracts with the DoD, other federal agencies, state and local governments and with government prime contractors."
+
+## Federal Subcontracting Policy
+
+The federal government implements subcontracting policies through agency regulations. These policies are executed through acquisition regulations, directed towards procurement officials as well as prime contractors. Described below, such regulations aim to create opportunities for small businesses to participate in procurement and support them once employed by prime contractors (see "Subcontracting Regulations"). They are also designed to help agencies reach subcontracting goals, including those established by legislation (see "Government-wide Subcontracting Goals").
+
+When the Small Business Act of 1953 authorized the SBA, Congress declared its policy to promote the interests of small businesses, in order to "preserve free competitive enterprise." Congress specified that one of the ways to do this was to ensure that small businesses received a "fair proportion" of federal contracts and subcontracts. The Small Business Act currently requires contractors with contracts greater than $350,000 (the "simplified acquisition threshold") to provide the "maximum practicable opportunity" for small businesses to participate in contracts as subcontractors.
+
+Furthermore, all non-small contractors and subcontractors performing contracts with a value of more than $950,000—or $2 million for construction contracts—must submit what is known as a small business subcontracting plan. Further discussion of the regulations surrounding subcontracting plans can be found under "Subcontracting Plans."
+
+Those implementing federal subcontracting policy include agency purchasing officials across the government such as contracting officers, as well as SBA personnel that specialize in contracting support for small businesses.
+
+In addition to government-wide subcontracting policy, there is a unique Department of Defense (DOD) subcontracting policy, the Indian Incentive Program. Under that program, DOD "encourages prime contractors with a subcontract worth at least $500,000 to subcontract with qualified Indian tribes, Native American-owned and -controlled businesses, and Native Hawaiian small businesses by providing a 5% rebate on the amount subcontracted to these businesses."
+
+### Government-wide Subcontracting Goals
+
+The statutory small business procurement goals reflect a government-wide commitment to helping small firms compete as both prime contractors and subcontractors, shown in Table 1. Various pieces of legislation established these goals, the earliest of which were created in 1988. Although prime contracting goals receive the majority of the attention in small business policy discussions, subcontracting goals direct agency buyers to consider the indirect participation of small businesses in prime contracts as well.
+
+There is no statutorily required subcontracting goal for small businesses generally, as there is for "socioeconomic" small businesses, such as small disadvantaged businesses, women-owned small businesses, service-disabled veteran-owned small businesses, and Historically Underutilized Business Zone (HUB Zone) small businesses. Table 1, below, shows the statutorily required small business prime contracting and subcontracting goals.
+
+Table 1. Statutory Contracting Goals
+
+Source: 15 U.S.C. §644(g)(1)(A).
+
+Notes: For reporting purposes, the "amount" annually contracted to businesses is measured by the dollars obligated in a fiscal year, although contracts may span multiple years.
+
+The SBA oversees small business procurement goal-making for individual federal agencies, and currently sets agency goals for SDBs, HUBZone businesses, WOSBs, and SDVOSBs at the statutory level; it bases subcontracting goals on recent achievement levels. In the past, SBA has had a policy of consulting with agencies to establish annual goals for small business participation in contracting that collectively add up to the statutory, government-wide goals shown above. There are no punitive consequences for failure to meet goals but agencies that fail to meet them must submit a corrective action report to the SBA and propose a corrective action plan.
+
+### Subcontracting Regulations
+
+The origins of regulations surrounding small business subcontracting can be found in a 1978 law amending the Small Business Act and the Small Business Investment Act of 1958, P.L. 95-507. That legislation directed the SBA to encourage major businesses to subcontract with specified categories of small businesses, required some contractors to submit a "subcontracting plan" along with their offers, and required certain information to be included in these subcontracting plans. The law also authorized agencies to provide incentives to encourage subcontracting opportunities for small businesses owned or controlled by disadvantaged individuals.
+
+Today, the federal government maintains a policy of "maximum practicable" subcontracting opportunities for small businesses and socioeconomic small businesses via prime contracts above $350,000, the simplified acquisition threshold. For contracts of this size, prime contractors must agree to maximize participation by small businesses, veteran-owned small businesses, service-disabled veteran-owned small businesses, HUBZone small businesses, small disadvantaged businesses, and women-owned small businesses, "consistent with its [the contract's] efficient performance." Acquisition regulations outline the details of agency and contractor obligations when subcontracts are awarded, including those surrounding the "subcontracting plans" submitted by prime contractors (see "Subcontracting Plans").
+
+In order to incentivize the creation of small business subcontracting opportunities, regulations also permit contracting officers to encourage prime contractors financially. Monetary incentives may include "payments based on the actual subcontracting achievement" where a contractor exceeds their subcontracting plan goals, as long as the goals are "realistic" and the "rewards for exceeding the goals are commensurate with the efforts the contractor would not have otherwise expended." Incentives are "negotiated after [a contracting officer has] reach[ed] final agreement with the contractor on the subcontracting plan."
+
+Federal subcontracting policy also aims to provide some legal protections to subcontractors, as well as to prevent large firms from effectively performing contracts intended for small businesses.
+
+Because subcontractors do not have a direct contractual relationship with federal purchasing agencies the way that prime contractors do, they lack some of the legal protections that benefit prime contractors. For example, prime contractors benefit from payment terms related to payment timeliness and interest on late payments. To provide some protections to subcontractors, Congress enacted laws such as the Miller Act and the 1988 amendments to Prompt Payment Act of 1982. The Miller Act helps ensure payment to subcontractors working on federal construction contracts, while the 1988 amendments to Prompt Payment Act extended certain timely payment requirements to subcontractors on federal construction contracts. Because construction projects typically involve subcontracting, Congress recognized that "Subcontractors play a very substantial role in the accomplishment of federal construction projects," and believed that certain guarantees for these subcontractors would benefit the government by controlling project costs and avoiding project delays.
+
+To limit the amount of small business contracting dollars flowing through small firms to larger ones, prime contractors that receive a small business preference typically may not pay more than 50% of the federal dollars they receive to firms that are "not similarly situated," i.e., firms that are not a small business or the specific type of small business that received the contract. A small business that receives a contracting preference and subcontracts some of the work out to a "similarly situated" firm however, does not need to count that work as subcontracted so long as the subcontractor is using its own employees. These regulations, known as the "limitations on subcontracting," seek to maintain the integrity of contracting preferences intended for small and socioeconomic small businesses, including contract set-asides and sole-source awards. They do not apply to contracts that are set-aside for small businesses and fall between the micro-purchase ($15,000) and simplified acquisition ($350,000) thresholds. They also do not apply to subcontractors, unless a prime contractor is "relying on a similarly situated entity" to adhere to the limitations.
+
+#### Subcontracting Plans
+
+Certain prime contractors must submit a subcontracting plan to their purchasing agency, in which they describe their subcontracts and subcontractors. In general, offerors must submit subcontracting plans to an agency when a contract value is greater than $950,000 (or $2 million for construction contracts) and subcontracting possibilities exist. Per acquisition regulations, these subcontracting plans must include the following:
+
+- small business subcontracting goals, expressed as a percentage of subcontracted award dollars;
+- the total number of dollars to be subcontracted;
+- the number of dollars to be subcontracted to small businesses, as well as to each type of socioeconomic small business;
+- descriptions of methods used to develop subcontracting goals; and
+- a description of methods used to identify possible subcontractors.
+
+There are two types of subcontracting plans: "individual" and "commercial." Individual subcontracting plans apply to a specific contract whereas a commercial subcontracting plan applies "to the entire production" of products or services sold by a firm. The type of plan used depends on the particular contractor and its contracts; if a contractor sells commercial products and services, commercial subcontracting plans are preferred. In general, commercial products and services are those customarily used by the general public for nongovernmental purposes. DOD contracts may use a third type of subcontracting plan, known as a "comprehensive small business subcontracting plan," under what is referred to as the "Test Program for Negotiation of Comprehensive Small Business Subcontracting Plans." This test program is intended to "reduce administrative burdens while enhancing subcontracting opportunities for small and small disadvantaged business concerns," by allowing plans to be submitted "on a corporate, division, or plant-wide basis." The Test Program expires on December 31, 2027.
+
+Contracting officers have a few obligations regarding subcontracting plans. They determine whether a contract requires a subcontracting plan, depending on the contract value thresholds mentioned above and analysis of the possibilities for subcontracts. In addition, they review subcontracting plans during the pre-award process, determine whether a subcontracting plan is "acceptable," and may assess small business subcontracting plans as one evaluation factor when choosing a contractor during the "source selection" process. Finally, contracting officers provide SBA Procurement Center Representatives (PCRs) an opportunity to review a contract solicitation that will require a subcontracting plan. According to the SBA, PCRs "view many federal acquisition and procurement strategies before they're announced." This enables the PCRs to "influence opportunities that should be set aside for small businesses."
+
+Following an award, contracting officers must monitor a prime contractor's compliance with its subcontracting plan, including ensuring that contractors submit the required subcontracting reports (see "Subcontracting Data Reporting"). Officers can either accept or reject a report, where a rejection requires a contractor to make report corrections. Officers use the Contractor Performance Assessment Reporting System (CPARS), a tool for recording contractor performance that includes information about subcontractor payment issues. Relatedly, contracting officers can also require prime contractors to show their compliance with the "limitations on subcontracting" (see "Subcontracting Regulations," above), demonstrating that they did not subcontract too large of a share of a contract award to entities that are not similarly situated.
+
+## Issues for Congress
+
+### Contractor Compliance
+
+As part of its oversight functions, Congress may be interested in how well prime contractors comply with existing subcontracting policy and how well agencies are implementing the applicable acquisition and small business regulations. A study conducted by the Government Accountability Office (GAO) in May 2020 found that "selected agencies did not consistently follow all required procedures for oversight of small business subcontracting plans, both before and after contracts were awarded." Specifically, GAO found that "agency contracting officers did not ensure contractors met their reporting requirements" for "more than half" of 26 reviewed contracts. GAO made 10 recommendations for ensuring procedures for PCR reviews are followed, most of which have now been closed as a result of agency implementation actions.
+
+While contracting officers at purchasing agencies have the most responsibilities for prime contractor compliance, SBA personnel also play "a key role" in helping to oversee prime and subcontracting with small businesses by conducting "regulatory compliance reviews." Congress may be interested to know that in recent fiscal years, the SBA has conducted "targeted" reviews of "large" prime contractors for subcontracting regulation compliance, although the precise number of reviews and their findings are not publicly available. In addition, the SBA's Commercial Market Representatives train federal agency personnel and contractors on subcontracting plans and reporting requirements. Trainings cover such topics as the Contracting Officer's duty to coordinate with the SBA, subcontracting regulations and the elements of subcontracting plans, and subcontracting goals for prime contractors.
+
+### Subcontracting Data Reporting
+
+Related to the issue of compliance is the availability of data on subcontract awards and subcontractor firms. Although there are reporting requirements in place for contractors regarding their subcontracting plans (if applicable), limited data on the destination of federal contract award dollars could pose a barrier to understanding contractor compliance and accountability issues. Subcontracting plans spur reporting requirements for contractors required to have such plans, but these reports and the data contained in them is limited in scope and availability.
+
+Prime contractors with subcontracting plans submit their regularly required reports through the Electronic Subcontracting Reporting System (eSRS), which is available through SAM.gov. While eSRS is a tool for the transmittal of subcontract information between contractors and contracting officials, it is not a portal of accessible data and can only be viewed by the contractor and contracting officer. Two types of subcontracting reports are required: the Individual Subcontract Report (ISR) and the Summary Subcontract Report (SSR); the ISR provides actual subcontract award dollars for the six-month reporting period and the SSR provides the actual subcontract award dollars for the fiscal year.
+
+Similar to eSRS, CPARs, the existing web-based tool for recording contractor performance, is designed for use by purchasing officials and the information it contains is not releasable.
+
+The SBA's Procurement Scorecard data on subcontracts to small businesses, along with the GSA's Subcontracting Report by North American Industry Classification System, offer the most comprehensive data on the flow of subcontract dollars. The SBA issues a Procurement Scorecard for the 24 CFO Act agencies every fiscal year, including agency subcontracting "achievement data," aggregated by the type of small business awardee (e.g., Small Disadvantaged Business, service-disabled veteran-owned small business). It excludes some contracts/subcontracts, however, and cannot be disaggregated and analyzed at a level other than agency-wide (e.g., by location of performance, contract type, or contract preference). This is in contrast to the data on prime contract awards available through the SAM.gov data bank. The GSA report is a static report provided each fiscal year that aggregates subcontract awards by industry NAICS code and socioeconomic small business goal category (i.e., small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged business, and women-owned small business).
+
+### Issues for Subcontractors
+
+Legal and payment protections for federal subcontractors may interest Congress because they may prevent potential subcontractors from entering the federal contracting market, or negatively affect subcontractor performance on federal contracts. In the case of preventing entry into the federal market, Congress might examine the diversity and robustness of the government's supplier base. Where subcontractor performance is impacted, Congress might look at the burdens and costs to purchasing agencies.
+
+As mentioned, subcontractors working on federal construction contracts are protected through certain required subcontract clauses as a result of the Miller Act and 1988 amendments to the Prompt Payment Act. Other subcontractors, however, lack such beneficial protections. Subcontractors, particularly small businesses, may also not have access to contract financing, to ensure adequate cash flow while they complete contract work.
+
+In April 2023, DOD published a study assessing the financing and payment policy impacts on subcontractors because "ensuring the financial health" of the department's supply base, including subcontractors, it said, "is vital to accomplishment of the acquisition mission of DoD." After reviewing its policies, DOD found that "Defense subcontractors and suppliers generally do not receive the favorable cash flow benefits to the same extent enjoyed by defense prime contractors," while it has been estimated that 60% to 70% of contracted defense work might be completed by subcontractors. According to the study's conclusions, "one of the major advantages of doing business with DoD as a prime contractor is more robust cash flow in comparison to what is common in the commercial marketplaces." This may be because for prime contractors, there is "the availability of contract financing, favorable payment terms, and the Government's commitment to pay its bills on time, or pay interest when missing a due date."
+
+Where small business subcontractors are disadvantaged by the lack of payment protections and other contract terms, agencies may be impacted by the reduction in potential suppliers able to fulfill subcontracted work. Furthermore, where contract financing is unavailable or difficult to obtain, agencies may face fewer suppliers and/or costs associated with the need for suppliers to resort to debt financing. Section 862 of the National Defense Authorization Act for Fiscal Year 2024 (P.L. 118-31) includes provisions seeking to improve payment timeliness for subcontractors. Specifically, it directs contractors to notify contracting officers when payment to a subcontractor is more than 30 days past due, where this deadline was previously 90 days past due; it also requires cooperation between a contractor, contracting officer, and agency Office of Small and Disadvantaged Business Utilization (OSDBU), to correct or mitigate "unjustified failure to make a full or timely payment to a subcontractor."
+
+### Selected Legislative Proposals
+
+Congressional interest in small business subcontracting has been reflected in a variety of bills introduced in recent congresses. A selection of the bills includes the following:
+
+- H.R. 10563, Ensuring Efficiency and Fairness in Federal Subcontracting Act of 2024 (118th Congress), was introduced and referred to the House Committee on Oversight and Accountability and House Committee on Small Business. Among other provisions, the bill would create penalties for prime contractors failing to meet the small business utilization goals in their subcontracting plans.
+- H.R. 7694, Strengthening Subcontracting for Small Business Act of 2022 (117th Congress), was passed by the House, received in the Senate, and referred to the Committee on Small Business and Entrepreneurship. The bill would have made the extent to which a prime contract "offeror" proposes to use small businesses as subcontractors a significant factor for the purposes of evaluating offers, for any contract that requires a subcontracting plan.
+- H.R. 7628, IMPROVE the SBA Act (117th Congress), was introduced and referred to the Committee on Small Business. Section 403 of the bill would have created questionnaires for first-tier subcontractors regarding prime contractor engagement, usable as part of a prime contractor's performance record. It also would have included the timeliness of report submissions in the performance evaluations of contractors by agencies.
+- H.R. 6764, Put Our Neighbors to Work Act of 2020 (116th Congress), was introduced and referred to the Small Business and Armed Services committees. Among other provisions, it would have created a "local hire" preference for contractors on military construction projects that hire employees (including a subcontractor's employees) from the same state or within 60 miles of the contract work location.
+- S. 2138, Small Business Subcontracting Transparency Act of 2015 (114th Congress), was introduced, referred to the Committee on Small Business and Entrepreneurship, and reported out of the committee with amendments. It would have revised the SBA's review and acceptance of subcontracting plans. Among other provisions, it would have allowed an agency to delay the acceptance of a subcontracting plan if it determined that the plan failed to provide the maximum practicable opportunity for small businesses to participate in a contract.
+
+## Conclusion
+
+To ensure a "fair proportion" of small business contracting and subcontracting as mandated in the Small Business Act, federal agencies strive to reach four statutorily required subcontracting goals for small disadvantaged businesses, women-owned small businesses, service-disabled veteran-owned small businesses, and Historically Underutilized Business Zone (HUB Zone) small businesses. Purchasing officials and prime contractors follow acquisition regulations designed to support subcontracting to small businesses, which include subcontracting plans and reports, legal protections for subcontractors, and limitations on subcontracting to non-small businesses. In some instances, agencies may provide monetary incentives to prime contractors, to encourage subcontracting to small firms.
+
+Issues of congressional concern might include agency implementation and prime contractor compliance with subcontracting policies as well as subcontract reporting data accessibility. Some subcontracting data is available in select formats, including through the annual SBA Procurement Scorecard and GSA Subcontracting Report by NAICS code. However, this static data is aggregated at certain levels and cannot be analyzed the same ways that prime contract award data can be analyzed. Additionally, payment and financing issues for small business subcontractors may interest Congress, as they can create barriers to entering the federal contracting market or impact subcontractor cash flows. The effects could reduce the number of suppliers and might also increase business costs that are passed on to prime contractors and borne by the government.
+
+Additional, related information on federal contracting policy is available in the following products: CRS Report RS22536, Overview of the Federal Procurement Process and Resources, by Dominick A. Fiorentino; CRS Report R45576, An Overview of Small Business Contracting, by R. Corinne Blackford; and CRS Insight IN12018, Federal Small Business Contracting Goals, by R. Corinne Blackford.
+
+## Footnotes
+
+15 U.S.C. §644(g)(1).
+
+It is also possible for a firm to perform as a prime contractor on one federal contract and as a subcontractor on another.
+
+SBA, FY2024 Small Business Procurement Scorecard, at https://www.sba.gov/federal-contracting/contracting-data/small-business-procurement-scorecard/scorecard-details. This is the most recent scorecard currently available.
+
+SubNet is available at https://www.sba.gov/federal-contracting/contracting-guide/prime-subcontracting/subcontracting-opportunities.
+
+This directory is available at https://www.gsa.gov/small-business/register-your-business/subcontracting-and-other-partnerships.
+
+This directory is available at https://www.transportation.gov/osdbu/procurement-assistance/dot-subcontracting-directory.
+
+This directory is available at https://business.defense.gov/Acquisition/Subcontracting/.
+
+Ibid.
+
+SBA, "Counseling and Help," https://www.sba.gov/federal-contracting/counseling-help.
+
+APEX Accelerators, "What We Do," https://www.apexaccelerators.us/#/about-us.
+
+Ibid.
+
+Ibid.
+
+48 C.F.R. §2.101, "Simplified Acquisition Threshold."
+
+"Any contractor receiving a contract with a value greater than the simplified acquisition threshold must agree in the contract that small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged business, and women-owned small business concerns will have the maximum practicable opportunity to participate in contract performance consistent with its efficient performance. It is further the policy of the United States that its prime contractors establish procedures to ensure the timely payment of amounts due pursuant to the terms of their subcontracts with small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged business, and women-owned small business concerns." 48 C.F.R. §19.702.
+
+Non-small entities would be those that do not meet the SBA size standards for small businesses.
+
+48 C.F.R. §19.702(a)(1).
+
+Defense Federal Acquisition Regulation Supplement (DFARS) Subpart 252.226-700. Information from DOD on this program is available at https://business.defense.gov/Programs/Indian-Incentive-Program.
+
+P.L. 100-656, the Business Opportunity Development Reform Act of 1988. The government-wide minimum participation goal for small businesses was increased from 20% to 23% by P.L. 105-135, the Small Business Reauthorization Act of 1997.
+
+Small Business Administration Office of Policy, Planning and Liaison, FY2024 Goaling Guidelines, p. 9, https://www.sba.gov/document/report-sba-goaling-guidelines.
+
+Ibid; Small Business Administration Office of Policy, Planning and Liaison, FY2025 Goaling Guidelines, p. 5, https://www.sba.gov/document/report-sba-goaling-guidelines. Additional information on small business contracting goals is available in CRS Insight IN12018, Federal Small Business Contracting Goals, by R. Corinne Blackford.
+
+P.L. 95-507.
+
+48 C.F.R. §2.101. The simplified acquisition threshold means $350,000.
+
+48 C.F.R. §19.702.
+
+48 C.F.R. §19.705-1(a).
+
+Ibid.
+
+CRS Report R41230, Legal Protections for Subcontractors on Federal Prime Contracts: In Brief, by Kate M. Manuel. This report is nondistributable but available to congressional clients upon request.
+
+The 1988 amendments "require that every construction contract awarded by a federal agency contain clauses obligating the prime contractor to (1) pay the subcontractor for 'satisfactory performance' under the subcontract within seven days of receiving payment from the agency and (2) pay interest on any amounts that are not paid within the proper time frame. The contract must also obligate the prime contractor to include similar payment and interest penalty terms in its subcontracts, as well as require its subcontractors to impose these terms on their subcontractors." CRS Report R41230, Legal Protections for Subcontractors on Federal Prime Contracts: In Brief, by Kate M. Manuel (available to congressional clients upon request).
+
+A Senate report during deliberations over the amendments to the Prompt Payment Act included the following statement from the testimony of a representative of the American Subcontractors Association: "[construction] Contractors, of necessity, must recoup a portion of the negative cash flow created by late payments by increasing their prices to the government." U.S. Congress, Senate Committee on Governmental Affairs, Prompt Payment Act Amendments of 1987, To Amend Chapter 39 of Title 31, United States Code, To Clarify and Strengthen the Prompt Payment Act of 1982, 100th Cong., 2nd sess., June 19, 1987, pp. 21-23.
+
+48 C.F.R. §52.219-14. This preference refers to partial or full contract set-asides and sole-source contract awards, as well as to orders under multiple-award contracts that are set aside or issued directly to small businesses.
+
+Per 13 C.F.R. §125.6(a)(3), this percentage rises to 85% in the case of construction contracts. Per 13 C.F.R. 125.6(a)(4), this percentage is 75% for special trade contractors.
+
+13 C.F.R. §125.6 and 13 C.F.R. §125.1. Similarly situated "means a subcontractor that has the same small business program status as the prime contractor. This means that: For a HUBZone contract, a subcontractor that is a certified HUBZone small business concern; for a small business set-aside, partial set-aside, or reserve, a subcontractor that is a small business concern; for a SDVOSB contract, a subcontractor that is a certified SDVOSB; for a VOSB contract, a subcontractor that is a certified VOSB; for an 8(a) contract, a subcontractor that is a certified 8(a) BD Program Participant; for a WOSB or EDWOSB contract, a subcontractor that is a certified WOSB or EDWOSB. In addition to sharing the same small business program status as the prime contractor, a similarly situated entity must also be small for the NAICS code that the prime contractor assigned to the subcontract the subcontractor will perform."
+
+13 C.F.R. §125.6(c).
+
+Set-aside is a commonly used term to refer to a contract competition in which only small businesses, or specific types of small businesses, may compete. Set-asides can be total or partial, depending on whether the entire procurement, or just a segment of it, is restricted. Sole source awards are noncompetitive procurements made after soliciting and negotiating with one source.
+
+13 C.F.R. §125.6(e)(1).
+
+13 C.F.R. §125.6(e)(2).
+
+48 C.F.R. §19.704. Per 48 C.F.R. §19.702(b), prime contractors exempt from the requirement to submit a subcontracting plan include small business concerns, personal service contractors, contractors performing work entirely outside of the United States or its outlying areas. Per 48 C.F.R. §19.705 2(b), contracting officers determine whether subcontracting possibilities exist by "considering relevant factors," such as "whether firms engaged in the business of furnishing the types of items to be acquired customarily contract for performance of part of the work or maintain sufficient in-house capability to perform the work; whether there are likely to be product prequalification requirements; and whether the firm can acquire any portion of the work with minimal or no disruption to performance."
+
+48 C.F.R. §19.704(a). In some cases, a contracting officer may require goals to be expressed as a percentage of total contract dollars (in addition to as a percentage of subcontract dollars). Per 48 C.F.R. §19.705-2(e), although a contract does not have more than one subcontracting plan, "a contracting officer may establish separate subcontracting goals for each order under an indefinite-delivery, indefinite-quantity contract."
+
+48 C.F.R. §19.704(a)(2).
+
+48 C.F.R. §19.704(a)(4-5).
+
+48 C.F.R. §19.701.
+
+Generally speaking, commercial products are those that are "customarily used by the general public or by nongovernmental entities for purposes other than governmental purposes." Commercial services are those procured to support commercial products. 48 C.F.R. §2.101, "Commercial product," and 48 C.F.R. §2.101, "Commercial service."
+
+Commercial subcontracting plans can cover multiple contracts. 48 C.F.R. §19.704(d)).
+
+DFARS Subpart 219.702-70. Eligibility requirements apply for firms wishing to participate in the test program. An eligible firm must have "furnished supplies or services (including construction) under at least three DoD contracts during the preceding fiscal year, having an aggregate value of at least $100 million."
+
+Ibid.
+
+48 C.F.R. §19.705-2. Per 48 C.F.R. §19.705-2(b), contracting officers determine whether subcontracting possibilities exist by "considering relevant factors," such as "whether firms engaged in the business of furnishing the types of items to be acquired customarily contract for performance of part of the work or maintain sufficient in-house capability to perform the work; whether there are likely to be product prequalification requirements; and whether the firm can acquire any portion of the work with minimal or no disruption to performance." Contracting officers also may determine that subcontracting possibilities do not exist, in which case a "detailed rationale" is required and must be approved "at a level above the contracting officer" (48 C.F.R. §19.705-2(c)).
+
+48 C.F.R. §19.705-4.
+
+48 C.F.R. §19.705-4(d). Evaluation of plan acceptability includes ensuring subcontracting goals are attainable and advising a contract offeror about potential small business subcontractors and information sources on "potential small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged business, and women-owned small business subcontractors."
+
+Source selection is the process through which contracting officials make decisions about which firms will receive a contract. In a negotiated contracting process where a contract is not a set-aside for small businesses and that involves consolidation or bundling of contract requirements, if there is a "significant opportunity" for subcontracting, contracting officers must consider proposed subcontractor participation when evaluating a contract offer. 48 C.F.R. §15.304(c)(4).
+
+48 C.F.R. §19.705-3 and SBA, "Federal Contracting: Counseling and Help," at https://www.sba.gov/federal-contracting/counseling-help.
+
+48 C.F.R. §19.705-6(f).
+
+48 C.F.R. §19.705-6(f)(3).
+
+48 C.F.R. §19.704(a)(10)(iv)(B).
+
+CPARS is available at https://www.cpars.gov.
+
+"Evidence of compliance includes, but is not limited to, invoices, copies of subcontracts, or a list of the value of tasks performed." 13 C.F.R. §125.6(e)(4).
+
+U.S. Government Accountability Office, Small Business Subcontracting: Oversight of Contractor Compliance with Subcontracting Plans Needs Improvement, GAO-20-464, May 28, 2020, p. Summary.
+
+Ibid., p. 19.
+
+The status of each of GAO's "recommendations for executive action" are available at https://www.gao.gov/products/gao-20-464.
+
+According to SBA standard operating procedures (SOP 60 03 7), "it is the responsibility of the Federal Agency who awarded the contract to monitor and enforce subcontract compliance throughout the life of the contract," although "SBA has oversight to monitor the compliance of both the Federal Government agency and contractors for contracts governed by the Subcontracting Program regulations." SBA's evaluations of subcontracting plan performance are completed as a supplement to a contracting agency's review of a prime contractor's subcontracting plan performance. Small Business Administration, "Small Business Government Contracting and National Defense Authorization Act of 2013 Amendments," 81 Federal Register 34243, May 31, 2016.
+
+SBA, FY 2024 Congressional Budget Justification and FY 2022 Annual Performance Report, p. 70.
+
+Ibid.
+
+Ibid. The SBA reports that it provided "more than 500 individual training sessions, across 23 agencies, educating more than 18,000 federal contracting and acquisition leaders."
+
+For example, one training on subcontracting plans offered detailed recommendations on how to determine "realistic" subcontracting goals and advised against negotiating goals upward if higher goals would "significantly increase the Government's cost or seriously impeded the attainment of acquisition objectives." Stephanie Lewis, Understanding Small Business Subcontracting Plans, Office of Government Contracting, Small Business Administration, 2016.
+
+48 C.F.R. §19.704(a)(10)(iv). eSRS is available at available at https://sam.gov/esrs.
+
+48 C.F.R. §19.704(a)(10)(iv). Regulations require the ISR to be submitted semi-annually and the SSR to be submitted annually, by October 30 for the twelve-month period ending September 30. Both reports cover information for a specific contract, with a specific federal agency, so if a contractor has more than one contract, it would file more than one report.
+
+48 C.F.R. §42.1503(d). According to acquisition regulations, "The completed evaluation [of a contractor] shall not be released to other than Government personnel and the contractor whose performance is being evaluated during the period the information may be used to provide source selection information. Disclosure of such information could cause harm both to the commercial interest of the Government and to the competitive position of the contractor being evaluated as well as impede the efficiency of Government operations."
+
+The Chief Financial Officers Act (1990) gave the Office of Management and Budget new authorities and responsibilities to improve financial management across 24 federal agencies. The list of agencies is available at https://www.cio.gov/handbook/it-laws/cfo-act/.
+
+SBA, Small Business Procurement Scorecard, available at https://www.sba.gov/federal-contracting/contracting-data/small-business-procurement-scorecard. GSA, Subcontracting Report by North American Industry Classification System, available at https://www.gsa.gov/policy-regulations/policy/acquisition-policy/small-business-reports.
+
+SBA excludes certain contracts when procurement data is unavailable or because the work cannot realistically be performed by small businesses. According to the SBA's FY2025 Goaling Guidelines, excluded contracts include acquisitions on behalf of foreign governments; contracts awarded to mandatory sources (which include Federal Prison Industries contracts that use penal labor from the Federal Bureau of Prisons and those with nonprofit agencies employing persons who are blind or have other significant disabilities); contracts funded with non-appropriated, agency-generated funds; Tricare health care program contracts; Department of Veterans Affairs Community Care Network contracts. Purchases valued at less than $15,000 are also excluded because they are not tracked in the Federal Procurement Data System. The value of contracts with these exclusions is referred to as the "small business eligible" value.
+
+GSA, Subcontracting Report by North American Industry Classification System, available at https://www.gsa.gov/policy-regulations/policy/acquisition-policy/small-business-reports. This report is required by Section 15(h)(3)(A)(ii) of the Small Business Act.
+
+Department of Defense, Office of the Under Secretary of Defense for Acquisition and Sustainment Defense Pricing and Contracting, Contract Finance Study Report, April 2023, p. 73, https://www.acq.osd.mil/asda/dpc/pcf/finance-study.html.
+
+Ibid., p. 53.
+
+Ibid., pp. 5-6.
+
+Ibid., p. 53.
+
+Ibid., p. 72. According to the DOD study, "When small businesses are unable to obtain working capital to perform their contracts and pay their bills through contract cash flow, the stakes can be so high that a small business may have to resort to debt (vice equity) and leverage personal assets, such as a house or car."
+
+For additional information on the role and duties of agency OSDBUs in contracting, see CRS Report R47851, Offices of Small and Disadvantaged Business Utilization: An Overview, by R. Corinne Blackford.

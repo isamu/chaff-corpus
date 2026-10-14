@@ -1,0 +1,53 @@
+id: textlint-preset-ja-technical-writing-readme
+chaff: 0.33.0
+findings:
+  - rule: code-fence-language-mix
+    line: 52
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 25 個）
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 78
+    text: "* [1文の長さは100文字以下とする](#1%E6%96%87%E3%81%A"
+    message: このリストだけ箇条書きの記号が「*」です（同じ深さのリストは 11 個が「-」）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 108
+    text: （`。`）などで区切ってください。
+    message: 丸括弧を、全角で 16 箇所、半角で 19 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 111
+    text: デフォルト設定は次の通りです。
+    message: 「設定は次の通りで」が 23 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 357
+    text: https://github.com/asciidwango/js-primer
+    message: URL「https://github.com/asciidwango/js-primer/pull/1598#discussion_r1110939474」がそのまま書かれています（言葉のリンクが 45 個ある文書）
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 361
+    text: https://github.com/asciidwango/js-primer
+    message: URL「https://github.com/asciidwango/js-primer/pull/1594#discussion_r1110973573」がそのまま書かれています（言葉のリンクが 45 個ある文書）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 391
+    text: " 濁点は使用しないようにします。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。36 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 602
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。36 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 607
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。36 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 611
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。36 箇所のうち 4 箇所が違う）
+    verdict: unjudged

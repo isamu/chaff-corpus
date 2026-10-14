@@ -1,0 +1,373 @@
+id: nsf-19-582-reu-solicitation
+chaff: 0.33.0
+findings:
+  - rule: heading-numbering-mix
+    line: 23
+    text: "### Important Information And Revision N"
+    message: The heading "Important Information And Revision Notes" has no number, while 9 of its siblings do ("I. Introduction")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Those web pages may describe characteris
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 31
+    text: "### Summary Of Program Requirements"
+    message: The heading "Summary Of Program Requirements" has no number, while 9 of its siblings do ("I. Introduction")
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 42
+    text: The Research Experiences for Undergradua
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 76
+    text: ""
+    message: Section "Eligibility Information" has no number, code or link (3 of 27 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 88
+    text: There are no restrictions or limits on t
+    message: '"There is ..." appears 4 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 88
+    text: There are no restrictions or limits on t
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 92
+    text: There are no restrictions or limits.
+    message: '"There is ..." appears 4 times (limit 3)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 96
+    text: A. Proposal Preparation Instructions
+    message: The first sentence repeats the heading "Proposal Preparation and Submission Instructions"
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 104
+    text: "Full Proposals submitted via FastLane: N"
+    message: '"Full Proposals submitted" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 132
+    text: ""
+    message: Section "Proposal Review Information Criteria" has no number, code or link (3 of 27 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 138
+    text: ""
+    message: Section "Award Administration Information" has no number, code or link (3 of 27 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 152
+    text: --both disciplinary and interdisciplinar
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 152
+    text: --encompassing efforts by individual inv
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 162
+    text: --students who have typically already co
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 170
+    text: (Although interdisciplinary or multi-dep
+    message: This sentence runs 57 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 174
+    text: They should also encourage continued int
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 182
+    text: High-quality mentoring is important in R
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 184
+    text: Investigators are reminded that support
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 202
+    text: Proposals should include a description o
+    message: This sentence runs 57 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 208
+    text: NSF encourages research experiences for
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 216
+    text: The REU experience is a research trainin
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 230
+    text: There are no restrictions or limits on t
+    message: '"There is ..." appears 4 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 230
+    text: There are no restrictions or limits on t
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 234
+    text: There are no restrictions or limits.
+    message: '"There is ..." appears 4 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 256
+    text: To obtain copies of the Application Guid
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 266
+    text: PROPOSAL FOR REU SITE
+    message: '"PROPOSAL FOR REU SITE" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 272
+    text: If the proposal has an interdisciplinary
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 287
+    text: "Submitting organization:"
+    message: '"Submitting organization:" opens with a verb; the other items in this list open with a noun phrase (2 of 10)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 294
+    text: Does the project include an internationa
+    message: '"Does the project include an international component or an RET component?" opens with a verb; the other items in this list open with a noun phrase (2 of 10)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 309
+    text: ten students per year. Proposals involvi
+    message: '"ten" here, where the document usually writes ten to twelve like "12" (1 of 7)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 313
+    text: This subsection should describe (1) plan
+    message: This sentence runs 66 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 315
+    text: Proposers should provide an orientation
+    message: This sentence runs 62 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 318
+    text: If the proposal is requesting renewal of
+    message: This sentence runs 62 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 318
+    text: Valuable information typically includes
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 326
+    text: Budget. The focus of REU Sites is the st
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 326
+    text: For example, for summer REU Sites, many
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 332
+    text: --are generally expected not to exceed $
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 332
+    text: --including all direct costs and indirec
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 338
+    text: --not, for example, in a lump sum at the
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 338
+    text: So as not to create a financial hardship
+    message: '"on a regular basis" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 340
+    text: Although the informal seminars, field tr
+    message: This sentence runs 68 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 346
+    text: --are not permitted.
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 346
+    text: --for example, letters of endorsement--a
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 350
+    text: REQUEST FOR REU SUPPLEMENT
+    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 354
+    text: Investigators are reminded that support
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 358
+    text: Regardless of which mechanism is used to
+    message: This sentence runs 82 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 364
+    text: --are generally expected not to exceed $
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 364
+    text: --including all direct costs and indirec
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 368
+    text: REQUEST FOR REU SUPPLEMENT") in the sect
+    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 368
+    text: A request for an REU Supplement as part
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 372
+    text: REQUEST FOR REU SUPPLEMENT"; limit your
+    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 372
+    text: A request for an REU Supplement to an ex
+    message: This paragraph runs 12 sentences (limit 5)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 386
+    text: --including all direct costs and indirec
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 386
+    text: --is generally expected not to exceed $1
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 400
+    text: To prepare and submit a proposal via Fas
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 404
+    text: Before using Grants.gov for the first ti
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 404
+    text: "email: support@grants.gov. The Grants.go"
+    message: '"email" here, where the document usually writes "e-mail" (1 of 15)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 412
+    text: Proposals received by NSF are assigned t
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 412
+    text: All proposals are carefully reviewed by
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 412
+    text: acknowledgement and, if they meet NSF re
+    message: '"acknowledgement" here, where the document usually spells it "acknowledgment" (1 of 13)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 416
+    text: " - NSF Strategic Plan for Fiscal Years ("
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 424
+    text: To identify which projects to support, N
+    message: This sentence runs 59 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 461
+    text: Such outcomes include, but are not limit
+    message: This sentence runs 83 words (limit 45)
+    verdict: unjudged
+  - rule: article-sound
+    line: 484
+    text: a NSF Program Officer. A Principal Inves
+    message: '"a NSF" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 496
+    text: "An NSF award consists of: (1) the award"
+    message: This sentence runs 95 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 508
+    text: PIs are required to use NSF's electronic
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 548
+    text: "6 February 2015); DOI: 10.1126/science.1"
+    message: The date "6 February 2015" is written differently from 4 other dates in the document (such as "May 17, 2019")
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 551
+    text: "27 April 2007); DOI: 10.1126/science.114"
+    message: The date "27 April 2007" is written differently from 4 other dates in the document (such as "May 17, 2019")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 567
+    text: "### About The National Science Foundatio"
+    message: The heading "About The National Science Foundation" has no number, while 9 of its siblings do ("I. Introduction")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 581
+    text: "### Privacy Act And Public Burden Statem"
+    message: The heading "Privacy Act And Public Burden Statements" has no number, while 9 of its siblings do ("I. Introduction")
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 583
+    text: The information requested on proposal fo
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 583
+    text: The information requested may be disclos
+    message: This sentence runs 104 words (limit 45)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 583
+    text: The information requested may be disclos
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged

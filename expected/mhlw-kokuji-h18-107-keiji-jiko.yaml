@@ -1,0 +1,278 @@
+id: mhlw-kokuji-h18-107-keiji-jiko
+chaff: 0.33.0
+findings:
+  - rule: duplicate-heading
+    line: 7
+    text: "#### 添付一覧"
+    message: 見出し「添付一覧」は、同じ親の下の 3 行目の見出しと同じです
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 11
+    text: 療担基準に基づき厚生労働大臣が定める掲示事項等
+    message: 「療担基準」を、21 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 21
+    text: 第二条の六の厚生労働大臣が定める掲示事項
+    message: 「第二条の六」（番地 2-6）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 21
+    text: 第二条の六及び高齢者の医療の確保に関する法律の規定による療養の給付等の取扱い及び
+    message: 「第二条の六」（番地 2-6）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 23
+    text: 第1章第2部第1節に規定する入院基本料に関する事項
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 23
+    text: 第1章第2部第1節に規定する入院基本料及び別表第二歯科診療報酬点数表(以下「歯科
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 41
+    text: 同号に規定する新医薬品等(以下「先発医薬品」という。)の薬価から当該先発医薬品の
+    message: 「同号」（番地 2.1.15）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 41
+    text: 第二条第十五号に規定する後発医薬品(以下「後発医薬品」という。)のある同号に規定
+    message: 「第二条第十五号」（番地 2.1.15）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 45
+    text: 第二条第四号及び第五号に掲げるもの
+    message: 「第二条第四号」（番地 2.1.4）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 45
+    text: 第五号に掲げるもの
+    message: 「第五号」（番地 2.1.5）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 49
+    text: 第二条第四号の初診に係る厚生労働大臣が定める金額
+    message: 「第二条第四号」（番地 2.1.4）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 55
+    text: 第二条第五号の再診に係る厚生労働大臣が定める金額
+    message: 「第二条第五号」（番地 2.1.5）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 63
+    text: 第二条第四号の初診にあっては、他の病院又は診療所からの文書による紹介がない患者に
+    message: 「第二条第四号」（番地 2.1.4）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 65
+    text: 第二条第五号の再診にあっては、他の病院(療担規則第五条第三項及び療担基準第五条第
+    message: 「第二条第五号」（番地 2.1.5）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 69
+    text: 第三条の二の規定に基づき光ディスク等を用いた請求を行っている保険医療機関(同令附
+    message: 「第三条の二」（番地 3-2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 69
+    text: 第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書面による請求を行う
+    message: 「第三条の五第一項」（番地 3-5.1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 69
+    text: 第三条の四第一項、第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書
+    message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 69
+    text: 第二項の規定に基づき書面による請求を行うことができる保険医療機関を除く。)
+    message: 「第二項」（番地 4.2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 69
+    text: 第四条第一項若しくは第二項の規定に基づき書面による請求を行うことができる保険医療
+    message: 「第四条第一項」（番地 4.1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 123
+    text: 第1章第2部第1節に規定する急性期一般入院基本料、七対一入院基本料及び十対一入院
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 123
+    text: 第1章第2部第1節又は歯科点数表第1章第2部第1節に規定する急性期一般入院基本料
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 145
+    text: 第1章区分番号A000の注7、区分番号A001の注5及び区分番号A002の注8並
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 145
+    text: 第1章区分番号A000の注7及び注8並びに区分番号A002の注5及び注6に規定す
+    message: 「第1章」（番地 ch1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 201
+    text: 第2章区分番号C150の注3に規定する患者以外の患者が、間歇スキャン式持続血糖測
+    message: 「第2章」（番地 ch2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 239
+    text: 第2章第1部区分番号B001―2に掲げる歯科衛生実地指導料に関する事項
+    message: 「第2章」（番地 ch2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 247
+    text: 第一条の二に規定する患者申出療養
+    message: 「第一条の二」（番地 1-2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 255
+    text: 第一条第四号に掲げる療養に係る医薬品を使用する場合
+    message: 「第一条第四号」（番地 1.1.4）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 271
+    text: 第一条第五号に掲げる療養に係る歯科材料を使用する場合
+    message: 「第一条第五号」（番地 1.1.5）はこの文書にありません
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 279
+    text: インスリン製剤、ヒト成長ホルモン剤、遺伝子組換え活性型血液凝固第Ⅶ因子製剤、乾燥
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 283
+    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量又は投与量が十四日分を限度とされる
+    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 283
+    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
+    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 291
+    text: HD、グラアルファ配合点眼液、ゾキンヴィカプセル五〇mg、ゾキンヴィカプセル七五
+    message: 「HD」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 291
+    text: LD、リバゼブ配合錠HD、グラアルファ配合点眼液、ゾキンヴィカプセル五〇mg、ゾ
+    message: 「LD」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 291
+    text: ODフィルム二五mg、バイアグラODフィルム五〇mg、ガニレスト皮下注〇・二五m
+    message: 「OD」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 293
+    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量又は投与量が三十日分を限度とされる
+    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 293
+    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
+    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 307
+    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量が九十日分を限度とされる内服薬
+    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 307
+    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
+    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 317
+    text: 第2章第13部区分番号N000に掲げる歯科矯正診断料の規定により別に厚生労働大臣
+    message: 「第2章」（番地 ch2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 319
+    text: 第2章第13部区分番号N000に掲げる歯科矯正診断料の規定により別に厚生労働大臣
+    message: 「第2章」（番地 ch2）はこの文書にありません
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 319
+    text: 二　歯科点数表の第2章第13部区分番号N000に掲げる歯科矯正診断料の規定により
+    message: この文に中黒が 18 個あります（5 個まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    text: CHARGE症候群、マーシャル症候群、成長ホルモン分泌不全性低身長症、ポリエック
+    message: 「CHARGE」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    text: XXXXX症候群を含む。)、リング18症候群、リンパ管腫、全前脳胞症、クラインフ
+    message: 「XXXXX」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    text: XXXX症候群及びXXXXX症候群を含む。)、リング18症候群、リンパ管腫、全前
+    message: 「XXXX」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    text: XXX症候群、XXXX症候群及びXXXXX症候群を含む。)、リング18症候群、リ
+    message: 「XXX」が説明なしで使われています（説明のない略語 7 個）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 321
+    text: 第2章第13部区分番号N001に掲げる顎口腔機能診断料の規定により別に厚生労働大
+    message: 「第2章」（番地 ch2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 367
+    text: 第三条の二の規定に基づき光ディスク等を用いた請求を行っている保険薬局(同令附則第
+    message: 「第三条の二」（番地 3-2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 367
+    text: 第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書面による請求を行う
+    message: 「第三条の五第一項」（番地 3-5.1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 367
+    text: 第三条の四第一項、第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書
+    message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 367
+    text: 第二項の規定に基づき書面による請求を行うことができる保険薬局を除く。)
+    message: 「第二項」（番地 4.2）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 367
+    text: 第四条第一項若しくは第二項の規定に基づき書面による請求を行うことができる保険薬局
+    message: 「第四条第一項」（番地 4.1）はこの文書にありません
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 381
+    text: (平一八厚労告五〇一・平一八厚労告六四七・平一九厚労告三八・平一九厚労告四四・平
+    message: この文に中黒が 138 個あります（5 個まで）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 891
+    text: 第四条までの規定　令和六年四月一日
+    message: 「第四条」（番地 4）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 907
+    text: 第三条及び第五条の規定は、令和六年十月一日から適用する。
+    message: 「第三条」（番地 3）はこの文書にありません
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 907
+    text: 第五条の規定は、令和六年十月一日から適用する。
+    message: 「第五条」（番地 5）はこの文書にありません
+    verdict: unjudged

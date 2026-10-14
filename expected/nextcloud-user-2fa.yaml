@@ -1,0 +1,13 @@
+id: nextcloud-user-2fa
+chaff: 0.33.0
+findings:
+  - rule: contraction-consistency
+    line: 15
+    text: If your 2nd factor device gets stolen or
+    message: '"is not" is written differently from the rest of the document'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 47
+    text: As this would mean you are again only us
+    message: '"you are" is written differently from the rest of the document'
+    verdict: unjudged

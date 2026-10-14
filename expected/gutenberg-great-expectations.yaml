@@ -1,0 +1,53 @@
+id: gutenberg-great-expectations
+chaff: 0.33.0
+findings:
+  - rule: demonstrative-opener-run
+    line: 227
+    text: That young man hears the words I speak.
+    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 4511
+    text: It was not because I was faithful, but
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 7474
+    text: This I would not hear of, so he took the
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: unjudged
+  - rule: name-variant
+    line: 8349
+    text: Bailey.” In the
+    message: '"Bailey" is one letter away from "Barley", which the document uses more than once'
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 10655
+    text: It was this, I conceive, which led
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: name-variant
+    line: 11025
+    text: Coiner, a very good workman. The
+    message: '"Coiner" is one letter away from "Coiler", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 12972
+    text: Whereupon I made him the extreme reply t
+    message: '"Whereupon" is one letter away from "Thereupon", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 13025
+    text: Blandley to
+    message: '"Blandley" is one letter away from "Brandley", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 13462
+    text: Look’ee here, Pip. I’m your second fathe
+    message: '"Look’ee" is written "Lookee" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 19286
+    text: Thank’ee dear boy, thank’ee. God bless y
+    message: '"Thank’ee" is written "Thankee" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged

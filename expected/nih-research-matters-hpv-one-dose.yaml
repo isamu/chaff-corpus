@@ -1,0 +1,28 @@
+id: nih-research-matters-hpv-one-dose
+chaff: 0.33.0
+findings:
+  - rule: proper-noun-density
+    line: 1
+    text: January 13, 2026
+    message: 212 proper nouns per 1000 words (limit 200)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 5
+    text: "### At a Glance"
+    message: Heading "At a Glance" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 16
+    text: Vaccination against HPV could prevent ma
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 20
+    text: Participants were randomly assigned to r
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 30
+    text: Kreimer AR, Porras C, Liu D, Hildesheim
+    message: This sentence runs 65 words (limit 40)
+    verdict: unjudged

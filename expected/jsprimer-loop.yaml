@@ -1,0 +1,13 @@
+id: jsprimer-loop
+chaff: 0.33.0
+findings:
+  - rule: comparative-without-baseline
+    line: 54
+    text: より安全な反復処理の書き方があるため、while文は使う場面が限られています。
+    message: 「より安全」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 330
+    text: ３回繰り返されます
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。15 箇所のうち 1 箇所が違う）
+    verdict: unjudged

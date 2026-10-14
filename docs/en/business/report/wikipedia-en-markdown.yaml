@@ -1,0 +1,15 @@
+id: wikipedia-en-markdown
+title: "English Wikipedia: Markdown"
+language: en
+genre: business/report
+format: markdown
+source:
+  url: https://en.wikipedia.org/w/index.php?oldid=1376168863&action=raw
+  fetched: 2026-10-06
+license:
+  name: CC-BY-SA-4.0
+  url: https://creativecommons.org/licenses/by-sa/4.0/
+  note: CC-BY-SA-4.0 (URL only)
+redistribute: false
+sha256: 9e2b868f3f704005366f90a55e7926ae9477ec3bdc30433a48919cfb98caf9c2
+notes: Imported from isamu/lab text/corpus (manifest id wikipedia-en-markdown). The source is wikitext; lab's corpus fetch stored it converted (sha256 is of the stored text).

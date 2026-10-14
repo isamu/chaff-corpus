@@ -1,0 +1,53 @@
+id: crec-2024-03-07-s2256-reca
+chaff: 0.33.0
+findings:
+  - rule: empty-section
+    line: 1
+    text: "## LEGISLATIVE SESSION"
+    message: Nothing under the heading "LEGISLATIVE SESSION"
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 101
+    text: This is one of the most urgent catastrop
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 145
+    text: It is frayed. It is fractious. It is hur
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 269
+    text: It is a large-scale cattle and sheep ope
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 441
+    text: Yesterday, the President of the United S
+    message: '"each and every" says the same thing twice'
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 453
+    text: This particular legislation is not just
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 483
+    text: That is what we are here for today on th
+    message: 4 sentences in a row open with a word that points back, such as "That" (limit 2)
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 519
+    text: It is a cause. It is a cause of justice.
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: empty-section
+    line: 555
+    text: "## [Rollcall Vote No. 75 Leg.]"
+    message: Nothing under the heading "[Rollcall Vote No. 75 Leg.]"
+    verdict: unjudged
+  - rule: name-variant
+    line: 626
+    text: Whitehouse
+    message: '"Whitehouse" is written "White House" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged

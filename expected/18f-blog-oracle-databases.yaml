@@ -1,0 +1,163 @@
+id: 18f-blog-oracle-databases
+chaff: 0.33.0
+findings:
+  - rule: quote-style-consistency
+    line: 26
+    text: "'s first technical tutorial blog post [s"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 30
+    text: "'re already familiar with [using the com"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 32
+    text: "'ll have a working Oracle database runni"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 32
+    text: "'ll have everything fully imported — it"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 32
+    text: "'t guarantee you'll have everything full"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 36
+    text: During a recent project, we were develop
+    message: This sentence runs 44 words (limit 40)
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 38
+    text: So, we needing realistic data, and we re
+    message: 1 sentence opens with "So," (1 needed)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 55
+    text: "'t discern any meaningful differences be"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 57
+    text: "'s container registry, container-registr"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 67
+    text: "'t use this), and you see a block like"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 67
+    text: "\" (don't use this), and you see a block"
+    message: The quote mark " here, where the document usually writes “” (4 of 9)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 67
+    text: "\"my-secure-password\" (don't use this), a"
+    message: The quote mark " here, where the document usually writes “” (4 of 9)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 81
+    text: "'ll start importing data in Part 2 below"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 85
+    text: "'s think through the setup before we run"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 138
+    text: "'re not using the format `host_path:cont"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 138
+    text: "'t really need to know about. This is fi"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 140
+    text: We won’t be doing anything with that in
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: shell-prompt-mix
+    line: 158
+    text: "```sh"
+    message: This block writes its commands with a prompt ($) differently from the other 3 blocks
+    verdict: unjudged
+  - rule: shell-prompt-mix
+    line: 170
+    text: "```sh"
+    message: This block writes its commands with a prompt ($) differently from the other 3 blocks
+    verdict: unjudged
+  - rule: unknown-word
+    line: 180
+    text: dition <strong>P</strong>luggable <stron
+    message: '"dition" is not in the dictionary; did you mean "didion"?'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 181
+    text: “high-level administrative tasks — see [
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 192
+    text: "## Part 2: Importing data into your Orac"
+    message: 'The heading "Part 2: Importing data into your Oracle database" is numbered, while 4 of its siblings are not ("Introduction")'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 217
+    text: "'ll try to import, see what kinds of err"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 217
+    text: "'re ready to start importing data, in it"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 217
+    text: "'t expect this to work the first time. W"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 221
+    text: "'s add a command to our Docker Compose f"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 253
+    text: '". (See the `profiles:` key there?) Prof'
+    message: The quote mark " here, where the document usually writes “” (4 of 9)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 253
+    text: '"profiled command". (See the `profiles:`'
+    message: The quote mark " here, where the document usually writes “” (4 of 9)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 266
+    text: "'re ready to import! Go ahead and run:"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 315
+    text: "'s under `services`. The command will ru"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 381
+    text: "'ve set up an Oracle database and import"
+    message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 477
+    text: Special thanks to Eleni Chappen for work
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged

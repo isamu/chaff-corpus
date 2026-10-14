@@ -1,0 +1,23 @@
+id: 18f-engineering-on-call
+chaff: 0.33.0
+findings:
+  - rule: contraction-consistency
+    line: 86
+    text: While we don’t often live in an ideal wo
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 156
+    text: could possibly occur in production,
+    message: This sentence stacks 2 hedges ("could, possibly")
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 167
+    text: "[here](https://docs.google.com/presentat"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 167
+    text: "[here](https://drive.google.com/file/d/1"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged

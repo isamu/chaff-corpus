@@ -1,0 +1,28 @@
+id: 18f-engineering-code-review
+chaff: 0.33.0
+findings:
+  - rule: quote-style-consistency
+    line: 29
+    text: ’s code more strongly;
+    message: The quote mark ’ here, where the document usually writes ' (1 of 25)
+    verdict: correct
+  - rule: cliche
+    line: 35
+    text: Discussing these expectations explicitly
+    message: '"on the same page" is a cliché'
+    verdict: correct
+  - rule: cliche
+    line: 69
+    text: For a code review to be successful, we a
+    message: '"on the same page" is a cliché'
+    verdict: correct
+  - rule: list-item-form-mix
+    line: 76
+    text: There is often more than one way to appr
+    message: '"There is often more than one way to approach a solution." opens with a noun phrase; the other items in this list open with a verb (1 of 13)'
+    verdict: correct
+  - rule: list-item-form-mix
+    line: 152
+    text: Passes all existing automated tests
+    message: '"Passes all existing automated tests" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: correct

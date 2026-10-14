@@ -1,0 +1,43 @@
+id: da-machine-readability-limitations
+chaff: 0.33.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 32
+    text: １等）はエンコーディングによらず `info` レベルの参考報告として検出されま
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 32
+    text: Ａ、１等）はエンコーディングによらず `info` レベルの参考報告として検出さ
+    message: 全角の「Ａ」と書いています（この文書はふつう半角の「A」。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 42
+    text: より正確に確認する補完チェックを実行します。AI が無効な場合は、決定論的チェッ
+    message: 「より正確」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 42
+    text: 決定論的チェック（フォント色・背景色・太字・斜体の複数使用検出）は AI の有無
+    message: 「〜します」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 70
+    text: なども `region_type` にかかわらず NG となるため、それらを許容
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 82
+    text: AIも見逃す方向（誤検出より見逃しを優先）で設計されています
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。47 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 82
+    text: も見逃す方向（誤検出より見逃しを優先）で設計されています
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。47 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 92
+    text: 有効時は誤検知が減少します
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。47 箇所のうち 3 箇所が違う）
+    verdict: unjudged

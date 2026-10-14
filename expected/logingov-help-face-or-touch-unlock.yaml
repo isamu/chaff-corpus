@@ -1,0 +1,18 @@
+id: logingov-help-face-or-touch-unlock
+chaff: 0.33.0
+findings:
+  - rule: contraction-consistency
+    line: 5
+    text: This credential will be saved to your de
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 31
+    text: This could be face or touch, such as wit
+    message: '"PIN number" says the same thing twice'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 42
+    text: Scanning this QR code with the Camera ap
+    message: '"Scanning this QR code with the Camera app on your Android or iOS device will allow you to use your phone as a passkey instead of your face or fingerprint scan." opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: unjudged

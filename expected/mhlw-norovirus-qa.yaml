@@ -1,0 +1,408 @@
+id: mhlw-norovirus-qa
+chaff: 0.33.0
+findings:
+  - rule: tari-unpaired
+    line: 18
+    text: たり、吐ぶつを誤って気道に詰まらせて死亡することがあります。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 26
+    text: )食事の前やトイレの後などには、必ず手を洗いましょう。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 28
+    text: )下痢やおう吐等の症状がある方は、食品を直接取り扱う作業をしないようにしましょう
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 30
+    text: )胃腸炎患者に接する方は、患者のふん便や吐ぶつを適切に処理し、感染を広げないよう
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 33
+    text: ，ページ内リンクQ17をご覧下さい）
+    message: 読点を「，」と書いています（この文書はふつう「、」。350 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " Q15，ページ内リンクQ17をご覧下さい）"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。45 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 41
+    text: その後、非細菌性急性胃腸炎の患者からノーウォークウイルスに似た小型球形ウイルスが
+    message: 「非細菌性急性胃腸炎」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 43
+    text: ウイルスの遺伝子が詳しく調べられると、非細菌性急性胃腸炎をおこす「小型球形ウイル
+    message: 「非細菌性急性胃腸炎」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 43
+    text: おこす「小型球形ウイルス」には2種類あることが分かりました。ほとんどが、ノーウォ
+    message: 「おこす」と書いています（この文書はふつう「起こす」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 45
+    text: もつ構造蛋白で覆われ、内部にプラス1本鎖RNAを遺伝子として持っています。ノロウ
+    message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 45
+    text: 事が困難です。特に食品中に含まれるウイルスを検出することが難しく、食中毒の原因究
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。47 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 45
+    text: RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があること、ま
+    message: 「RNA」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 53
+    text: )患者のノロウイルスが大量に含まれるふん便や吐ぶつから人の手などを介して二次感染
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 54
+    text: )家庭や共同生活施設などヒト同士の接触する機会が多いところでヒトからヒトへ飛沫感
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 54
+    text: (2)家庭や共同生活施設などヒト同士の接触する機会が多いところでヒトからヒトへ飛
+    message: 「飛沫感染等直接感染」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 55
+    text: )食品取扱者（食品の製造等に従事する者、飲食店における調理従事者、家庭で調理を行
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 56
+    text: )汚染されていた二枚貝を、生あるいは十分に加熱調理しないで食べた場合
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 56
+    text: 二枚貝を、生あるいは十分に加熱調理しないで食べた場合
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 57
+    text: )ノロウイルスに汚染された井戸水や簡易水道を消毒不十分で摂取した場合
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 65
+    text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
+    message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 71
+    text: 厚生労働省では平成９年からノロウイルスによる食中毒については、小型球形ウイルス食
+    message: 「食品衛生法施行規則」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 91
+    text: このノロウイルス感染症は、５類感染症に位置づけられた「感染性胃腸炎」の一部として
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 93
+    text: ここでは、感染症発生動向調査に基づき調査が実施されている『ノロウイルスが原因の一
+    message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 102
+    text: 資料：報告数は「感染症発生動向調査事業」に基づく全国約3,000の小児科医療機関
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 103
+    text: 一方、死亡数は厚生労働省統計情報部「人口動態統計」によるもので、死亡数は定点報告
+    message: 「厚生労働省統計情報部」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 105
+    text: 参考：人口動態統計とは出生、死亡、婚姻等に関する統計であり、死亡については、死亡
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 107
+    text: 過去10年の定点当たり報告数の週別推移（感染症発生動向調査（IDWR））
+    message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 113
+    text: ノロウイルスは世界中に広く分布しているとされ、アメリカ、イギリス、ニュージーラン
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 119
+    text: GII）、さらにGIは9種類（GI.1～GI.9）、GIIは22種類（GII.1
+    message: 「GII」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 119
+    text: GIとGII）、さらにGIは9種類（GI.1～GI.9）、GIIは22種類（GI
+    message: 「GI」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 121
+    text: とくに、GII.4は、2006年以降、ノロウイルスによる胃腸炎患者の大半から検出
+    message: 「とくに」と書いています（この文書はふつう「特に」と書く語です。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 149
+    text: 物を喉に詰まらせて窒息する場合など、ノロウイルスが関係したと思われる場合であって
+    message: 「物」と書いています（この文書はふつう「もの」と書く語です。13 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 149
+    text: 物を誤嚥することによる誤嚥性肺炎や吐いた物を喉に詰まらせて窒息する場合など、ノロ
+    message: 「物」と書いています（この文書はふつう「もの」と書く語です。13 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 167
+    text: PCR法などの遺伝子を検出する方法でウイルスの検出を行い、診断します（リアルタイ
+    message: 「PCR」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 167
+    text: RT-PCR法、リアルタイムPCR法などの遺伝子を検出する方法でウイルスの検出を
+    message: 「RT-PCR」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 175
+    text: 二枚貝があります。二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 175
+    text: 二枚貝による食中毒は生や加熱不足のもので発生しており、十分に加熱すれば、食べても
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 175
+    text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 175
+    text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 183
+    text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
+    message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 195
+    text: の汚染のおそれのある二枚貝などの食品の場合は、中心部が85℃～90℃で90秒以上
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 195
+    text: 二枚貝などの食品の場合は、中心部が85℃～90℃で90秒以上の加熱が望まれます。
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 201
+    text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
+    message: 括弧が 4 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 201
+    text: )が設立した、食品の国際基準を作る国際機関であるコーデックス委員会が2012年に
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 201
+    text: )と世界保健機関（WHO)が設立した、食品の国際基準を作る国際機関であるコーデッ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 201
+    text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
+    message: 「国際連合食糧農業機関」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 201
+    text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
+    message: この文は 190 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 201
+    text: 二枚貝の加熱調理でウイルスを失活させるには中心部が85～90℃で少なくとも90秒
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 201
+    text: )が設立した、食品の国際基準を作る国際機関であるコーデックス委員会が2012年に
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 201
+    text: )と世界保健機関（WHO)が設立した、食品の国際基準を作る国際機関であるコーデッ
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 207
+    text: オムツ交換等を行った後（手袋をして直接触れないようにしていても）には必ず行いまし
+    message: 「オムツ」と書いています（この文書はふつう「おむつ」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 207
+    text: 又はペーパータオルで拭きます。石けん自体にはノロウイルスを直接失活化する効果はあ
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 209
+    text: 出来ないような場合、あくまで一般的な感染症対策の観点から手洗いの補助として用いて
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。17 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 215
+    text: 石鹸（塩化ベンザルコニウム）が用いられることがありますが、ノロウイルスを完全に失
+    message: 「石鹸」と書いています（この文書はふつう「石けん」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 217
+    text: 調理器具等は洗剤などを使用し十分に洗浄した後、次亜塩素酸ナトリウム※（塩素濃度約
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 221
+    text: 二枚貝などを取り扱うときは、専用の調理器具（まな板、包丁等）を使用するか、調理器
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 221
+    text: なお、二枚貝などを取り扱うときは、専用の調理器具（まな板、包丁等）を使用するか、
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 223
+    text: （使用に当たっては「使用上の注意」を確認しましょう。）
+    message: 「の注意」を確認し」が 7 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 231
+    text: そして調理施設等の責任者は、下痢やおう吐等の症状がある方を、食品を直接取り扱う作
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 233
+    text: また、このウイルスは下痢等の症状がなくなっても、通常では１週間程度長いときには１
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 237
+    text: のノブ等の手指の触れる場所等の洗浄・消毒等の対策を取ることが大切です。消毒液を保
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 237
+    text: たり、調理従事者間の相互汚染を防止するためにまかない食の衛生的な調理、ドアのノブ
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 237
+    text: 調理施設等の責任者は、外部からの汚染を防ぐために客用とは別に従事者専用のトイレを
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 245
+    text: ２３の通りです。
+    message: 全角の「２３」と書いています（この文書はふつう半角の「23」。81 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 251
+    text: 物とともにウイルスが逆流して、吐ぶつとともに排泄されます。このため、ふん便と同様
+    message: 「物」と書いています（この文書はふつう「ぶつ」と書く語です。20 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 255
+    text: 拭き取った後は、次亜塩素酸ナトリウム※（塩素濃度約200 ppm）や亜塩素酸水（
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 257
+    text: （この際、ビニール袋に廃棄物が充分に浸る量の次亜塩素酸ナトリウム※（塩素濃度約1
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 257
+    text: （この際、ビニール袋に廃棄物が充分に浸る量の次亜塩素酸ナトリウム※（塩素濃度約1
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 257
+    text: 物が充分に浸る量の次亜塩素酸ナトリウム※（塩素濃度約1,000 ppm）や亜塩素
+    message: 「物」と書いています（この文書はふつう「ぶつ」と書く語です。20 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 259
+    text: また、ノロウイルスは乾燥すると容易に空中に漂い、これが口に入って感染することがあ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 259
+    text: また、ノロウイルスは乾燥すると容易に空中に漂い、これが口に入って感染することがあ
+    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 265
+    text: "### Q21　吐ぶつやふん便が布団などのリネン類に付着した場合はどのように処理"
+    message: 見出し「Q21　吐ぶつやふん便が布団などのリネン類に付着した場合はどのように処理をすればよいですか。」だけ「。」で終わっています（ほかの見出しは「Q１　ノロウイルスによる胃腸炎はどのようなものですか？」など 24 個が「：」「。」なしで終わる）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 269
+    text: リネン等は、付着した汚物中のウイルスが飛び散らないように処理した後、洗剤を入れた
+    message: この段落は 9 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 269
+    text: しぶきを吸い込まないよう注意してください。下洗いしたリネン類の消毒は85℃・１分
+    message: 「しぶき」と書いています（この文書はふつう「飛沫」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 277
+    text: の厨房等多人数の食事の調理、配食等をする部署へ感染者の使用した食器類や吐ぶつが付
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 295
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。12 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 297
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。12 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 299
+    text: 社会福祉施設等においては、「社会福祉施設等における感染症発生時に係る報告について
+    message: 「付厚生労働省健康局長」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 299
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。12 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 312
+    text: 上間　匡　　先生（国立医薬品食品衛生研究所食品衛生管理部第四室長＊＊＊＊＊）
+    message: 「国立医薬品食品衛生研究所食品衛生管理部第四室長」は漢字が 23 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 312
+    text: 上間　匡　　先生（国立医薬品食品衛生研究所食品衛生管理部第四室長＊＊＊＊＊）
+    message: この文は 308 文字あります（140 文字まで）
+    verdict: unjudged

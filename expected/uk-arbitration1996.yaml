@@ -1,0 +1,28 @@
+id: uk-arbitration1996
+chaff: 0.33.0
+findings:
+  - rule: reference-title-mismatch
+    line: 13
+    text: stay of legal proceedings, &c.), and
+    message: 11 is called "stay of legal proceedings, &c." here, but its heading is "Retention of security where Admiralty proceedings stayed."
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 14
+    text: enforcement of arbitral awards).
+    message: section 66 is called "enforcement of arbitral awards" here, but its heading is "Enforcement of the award."
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 217
+    text: ",..."
+    message: 'Punctuation is doubled: ",..."'
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 598
+    text: general duty of tribunal);
+    message: section 33 is called "general duty of tribunal" here, but its heading is "General duty of the tribunal."
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 824
+    text: ;...
+    message: 'Punctuation is doubled: ";..."'
+    verdict: unjudged

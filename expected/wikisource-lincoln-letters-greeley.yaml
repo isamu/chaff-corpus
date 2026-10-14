@@ -1,0 +1,193 @@
+id: wikisource-lincoln-letters-greeley
+chaff: 0.33.0
+findings:
+  - rule: email-greeting-closing
+    line: 1
+    text: Letters of June 27, 1848, on the boundar
+    message: The email does not open with a greeting
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: Letters of June 27, 1848, on the boundar
+    message: This sentence runs 63 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 7
+    text: 'Friend Greeley: In the "Tribune" of yest'
+    message: This sentence runs 44 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 7
+    text: Since I have been here, I know a large m
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 7
+    text: The "stupendous desert" between the vall
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 7
+    text: Their position, and in my opinion the tr
+    message: This sentence runs 57 words (limit 18)
+    verdict: unjudged
+  - rule: invisible-character
+    line: 9
+    text: ​examine what I said on this very point
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 9
+    text: By putting us in the position of insisti
+    message: This sentence runs 37 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 9
+    text: If the degree of arrogance is not too gr
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: If there be in it any inferences which I
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: If there be in it any statements or assu
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: If there be perceptible in it an impatie
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: As to the policy I "seem to be pursuing,
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: invisible-character
+    line: 23
+    text: ​do it; and if I could save it by freein
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 23
+    text: I would save the Union. I would save it
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: I shall do less whenever I shall believe
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: I shall try to correct errors when shown
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: If I could save the Union without freein
+    message: This sentence runs 47 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: If there be those who would not save the
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: If there be those who would not save the
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: My paramount object in this struggle is
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: The sooner the national authority can be
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: What I do about slavery and the colored
+    message: This sentence runs 38 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: I have here stated my purpose according
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: If you can find any person, anywhere, pr
+    message: This sentence runs 77 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: I not only intend a sincere effort for p
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: "My dear Sir: Yours of the 13th is just r"
+    message: This sentence runs 41 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: Show that and this to them, and if they
+    message: This sentence runs 20 words (limit 18)
+    verdict: unjudged
+  - rule: invisible-character
+    line: 71
+    text: ​of a few passages in your letters in re
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: With the suppression ​of a few passages
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: "Dear Sir: Herewith is a full copy of the"
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: The parts of your letters which I wish s
+    message: This sentence runs 37 words (limit 18)
+    verdict: unjudged
+  - rule: invisible-character
+    line: 84
+    text: ​contain nothing worse than a questionin
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: As to the Alexander H. Stephens matter,
+    message: This sentence runs 66 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: I thought we could not afford to give th
+    message: This sentence runs 31 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: Nor has he at any time since pretended t
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: On the contrary, Jefferson Davis has, in
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: Still, as the parts of your letters rela
+    message: This sentence runs 28 words (limit 18)
+    verdict: unjudged

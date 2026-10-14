@@ -1,0 +1,63 @@
+id: saikosai-h26-09-02-nagano
+chaff: 0.33.0
+findings:
+  - rule: empty-section
+    line: 7
+    text: "## 裁判要旨"
+    message: 見出し「裁判要旨」の下に中身がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 18
+    text: 弁護人宮田桂子，同大槻展子の上告趣意のうち，裁判員の参加する刑事裁判に関
+    message: 「は」で出した主題から述語まで 333 字あります（200 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 27
+    text: ４月６日大法廷判決・刑集9巻4号663頁，最高裁昭和32年（あ）第22
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。23 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 27
+    text: ６日大法廷判決・刑集9巻4号663頁，最高裁昭和32年（あ）第22
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。23 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 37
+    text: 付言すると，本件は，高利貸しを本体とし，建設，水道設備工事業等を経営する
+    message: 一文に節が 10 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 37
+    text: 付言すると，本件は，高利貸しを本体とし，建設，水道設備工事業等を経営する
+    message: 「は」で出した主題から述語まで 313 字あります（200 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 47
+    text: 被告人は，会長親子の支配下に入り，前記事業グループの従業員として長年会長
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 47
+    text: 被告人は，会長親子の支配下に入り，前記事業グループの従業員として長年会長
+    message: 一文に節が 12 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 47
+    text: 被告人は，会長親子の支配下に入り，前記事業グループの従業員として長年会長
+    message: 「は」で出した主題から述語まで 249 字あります（200 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 63
+    text: Ｂと異なり，準備段階の当初からA
+    message: 全角の「Ｂ」と書いています（この文書はふつう半角の「B」。12 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 79
+    text: (裁判長裁判官 大橋正春 裁判官 岡部喜代子 裁判官 大谷剛彦 裁判官 木内道祥
+    message: 括弧を「(」と書いています（この文書はふつう「（」。24 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 79
+    text: ）
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged

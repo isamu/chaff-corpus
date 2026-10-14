@@ -1,0 +1,243 @@
+id: us-4683202-nucleic-acid-amplification
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 13
+    text: RNA in amounts which are large compared
+    message: '"RNA" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 93
+    text: that are randomly distributed throughout
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 99
+    text: DNA-RNA hybrid which contains one strand
+    message: '"DNA-RNA" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 107
+    text: The specific nucleic acid sequence is pr
+    message: This paragraph runs 11 sentences (limit 8)
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 109
+    text: that may then be separated into single s
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 115
+    text: TTP are also added to the synthesis mixt
+    message: '"TTP" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 127
+    text: The present invention can be performed i
+    message: This paragraph runs 15 sentences (limit 8)
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 193
+    text: " ."
+    message: A space before "."
+    verdict: unjudged
+  - rule: unknown-word
+    line: 253
+    text: hydridize to the sequence sufficiently w
+    message: '"hydridize" is not in the dictionary; did you mean "hybridize"?'
+    verdict: unjudged
+  - rule: article-sound
+    line: 261
+    text: a RFLP-like analysis following amplifica
+    message: '"a RFLP" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 269
+    text: A practical application of this techniqu
+    message: This paragraph runs 14 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 273
+    text: EP 63,879 to Ward. In this procedure bio
+    message: '"EP" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: numeral-sentence-start
+    line: 287
+    text: 12.5 pmoles of α-P32 -deoxycytidine trip
+    message: The sentence opens with the numeral "12.5"
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 293
+    text: "### I. Synthesis of Primers"
+    message: The heading "I. Synthesis of Primers" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 307
+    text: HPLC column and a 10% acetonitrile, 1% a
+    message: '"HPLC" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 307
+    text: quantitation of the derived nucleosides
+    message: '"quantitation" is not in the dictionary; did you mean "quantisation"?'
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 309
+    text: "### II. Source of DNA"
+    message: The heading "II. Source of DNA" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 327
+    text: "### III. Polymerase Chain Reaction"
+    message: The heading "III. Polymerase Chain Reaction" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 345
+    text: II removed before the first cycle and af
+    message: '"II" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 349
+    text: SSPE, 5×Denhardt's, 5% sodium dodecyl su
+    message: '"SSPE" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 411
+    text: indiciates the cycle number in which a p
+    message: '"indiciates" is not in the dictionary; did you mean "indicates"?'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 445
+    text: The two primers were prepared by the tec
+    message: This paragraph runs 13 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 481
+    text: BIS, Bio-Rad) in Tris-boric acid-EDTA (T
+    message: '"BIS" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 481
+    text: TCA precipitation of the reaction produc
+    message: '"TCA" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 489
+    text: EBV-transformed B cell line homozygous f
+    message: '"EBV" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 489
+    text: persistance of fetal hemoglobin (HPFH) a
+    message: '"persistance" is not in the dictionary; did you mean "persistence"?'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 493
+    text: buffy coat fraction, which is composed p
+    message: '"buffy" is not in the dictionary; did you mean "buff"?'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 499
+    text: SDS, and incubated overnight at 37° C. S
+    message: '"SDS" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 517
+    text: Forty-five microliters of the amplified
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 533
+    text: cylces was easily visualized on gels sta
+    message: '"cylces" is not in the dictionary; did you mean "cycles"?'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 539
+    text: A. A total of 100 fmoles pBR328 containi
+    message: This paragraph runs 9 sentences (limit 8)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 539
+    text: fregment of E. coli DNA polymerase I and
+    message: '"fregment" is not in the dictionary; did you mean "fragment"?'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 543
+    text: PAGE was performed as described above.
+    message: '"PAGE" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: article-sound
+    line: 553
+    text: an MstII digest of pBR328 containing a 1
+    message: '"an MstII" takes "a" before that sound'
+    verdict: unjudged
+  - rule: article-sound
+    line: 561
+    text: an NruI digest of pBR322 was used as tem
+    message: '"an NruI" takes "a" before that sound'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 595
+    text: singlestranded RNA.
+    message: '"singlestranded" here, where the document usually writes "single-stranded" (1 of 14)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 621
+    text: betaglobin allele was subjected to twent
+    message: '"betaglobin" here, where the document usually writes "beta-globin" (3 of 9)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 633
+    text: FMC Corp.) agarose gel and visuallized u
+    message: '"FMC" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 633
+    text: visuallized using ethidium bromide.
+    message: '"visuallized" is not in the dictionary; did you mean "visualized"?'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 651
+    text: betaglobin allele was treated with DdeI
+    message: '"betaglobin" here, where the document usually writes "beta-globin" (3 of 9)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 669
+    text: Detection of a 58-bp fragment representa
+    message: This paragraph runs 12 sentences (limit 8)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 669
+    text: betaglobin locus without resorting to ei
+    message: '"betaglobin" here, where the document usually writes "beta-globin" (3 of 9)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 673
+    text: CHO group, R" is --H, x is a number from
+    message: '"CHO" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 677
+    text: CFR §122 and the Commissioner's rules pu
+    message: '"CFR" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 677
+    text: CRL#8756, The deposit of SC-1 was made p
+    message: '"CRL" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 677
+    text: "CTCC #0082) was deposited on Mar. 19, 19"
+    message: '"CTCC" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 677
+    text: OG 638). The assignee of the present app
+    message: '"OG" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 727
+    text: noncomplementary nucleotides.
+    message: '"noncomplementary" here, where the document usually writes "non-complementary" (1 of 6)'
+    verdict: unjudged

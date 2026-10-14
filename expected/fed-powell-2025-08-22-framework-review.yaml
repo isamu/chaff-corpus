@@ -1,0 +1,398 @@
+id: fed-powell-2025-08-22-framework-review
+chaff: 0.33.0
+findings:
+  - rule: quote-style-consistency
+    line: 11
+    text: ” an economic symposium sponsored by the
+    message: The quote mark ” here, where the document usually writes " (2 of 67)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 11
+    text: "“Labor Markets in Transition: Demographi"
+    message: The quote mark “ here, where the document usually writes " (2 of 67)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 15
+    text: In terms of the Fed's dual-mandate goals
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: I will then turn to the results of our s
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 21
+    text: formerly overheated state. Upside risks
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 21
+    text: When I appeared at this podium one year
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: Over the subsequent three Federal Open M
+    message: This sentence runs 35 words (limit 25)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 23
+    text: There is significant uncertainty about w
+    message: '"There is ..." appears 5 times (limit 3)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 27
+    text: The labor market is a case in point. The
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: But it does not appear that the slowdown
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Indeed, labor force growth has slowed co
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Other indicators of labor market conditi
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The July employment report released earl
+    message: This sentence runs 37 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The unemployment rate, while edging up i
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: Overall, while the labor market appears
+    message: This sentence runs 32 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: At the same time, GDP growth has slowed
+    message: This sentence runs 32 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: In contrast, housing services inflation
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: Within core, prices of goods increased 1
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 35
+    text: The effects of tariffs on consumer price
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 37
+    text: It is also possible, however, that the u
+    message: '"It is ..." appears 5 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: It is also possible, however, that the u
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: One possibility is that workers, who see
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 39
+    text: Measures of longer-term inflation expect
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 43
+    text: Our policy rate is now 100 basis points
+    message: This sentence runs 42 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: FOMC members will make these decisions,
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 49
+    text: It is designed to give the public a clea
+    message: '"It is ..." appears 5 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: It is designed to give the public a clea
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: Turning to my second topic, our monetary
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: We remain fully committed to fulfilling
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: This year's review included three elemen
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    text: The Great Depression presented different
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 55
+    text: At the time of the last review, we were
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 55
+    text: At the time of the last review, we were
+    message: This sentence runs 50 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 55
+    text: It appeared highly likely that if the ec
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 55
+    text: To me, a statistic that captures that er
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: Drawing on an extensive literature on st
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: In particular, we said that, following p
+    message: This sentence runs 32 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: The economic conditions that brought the
+    message: This sentence runs 43 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: Like most other central banks and privat
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: That action, combined with the unwinding
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 63
+    text: This year's review considered how econom
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: We cannot say for certain where rates wi
+    message: This sentence runs 46 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: We concluded that the emphasis on an ove
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: The revised statement reiterates that th
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 67
+    text: There was nothing intentional or moderat
+    message: '"There is ..." appears 5 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 67
+    text: There was nothing intentional or moderat
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    text: Well-anchored inflation expectations wer
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: Our revised statement emphasizes our com
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: The past five years have been a painful
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: In the absence of inflationary pressures
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: The later years of the post-GFC recovery
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: Instead, the revised document now states
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 75
+    text: The revised statement also notes that ma
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: These principles guide our policy decisi
+    message: This sentence runs 27 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: We take into account the extent of depar
+    message: This sentence runs 32 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: The document continues to explain how we
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: We continue to believe that setting a nu
+    message: This sentence runs 33 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: Experience has shown that 2 percent infl
+    message: This sentence runs 39 words (limit 25)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 83
+    text: There is nothing magic about a five-year
+    message: '"There is ..." appears 5 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: That frequency allows policymakers to re
+    message: This sentence runs 26 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: The Kansas City Fed was wise to lure Cha
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: For example, after the July 2024 employm
+    message: This sentence runs 31 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: For more information, see Claudia Sahm (
+    message: This sentence runs 43 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 91
+    text: In early September, the Bureau of Labor
+    message: This sentence runs 37 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 93
+    text: The total downward revision of 258,000 b
+    message: This sentence runs 39 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: In contrast, the contribution of core go
+    message: This sentence runs 28 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: Using the consumer price index and other
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 99
+    text: See Jerome H. Powell (2019), "Challenges
+    message: This sentence runs 34 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: See François Gourio, Benjamin K. Johanns
+    message: This sentence runs 42 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 103
+    text: A 2020 paper by Caldara and others discu
+    message: This sentence runs 75 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: 32 (November), pp. 936–66; Michael T. Ki
+    message: This sentence runs 51 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: Finance and Economics Discussion Series
+    message: This sentence runs 40 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: On average inflation targeting, see Thom
+    message: This sentence runs 29 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 107
+    text: See Ekaterina Peneva, Daniel Villar, and
+    message: This sentence runs 35 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: See Ina Hajdini, Adam Shapiro, A. Lee Sm
+    message: This sentence runs 35 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: See Hess Chung, Callum Jones, Antoine Le
+    message: This sentence runs 36 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 115
+    text: For additional information, see the repo
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 117
+    text: See Christopher Foote, Shigeru Fujita, A
+    message: This sentence runs 30 words (limit 25)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 119
+    text: See Brent Bundick, Isabel Cairó, and Nic
+    message: This sentence runs 39 words (limit 25)
+    verdict: unjudged

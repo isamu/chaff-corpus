@@ -1,0 +1,31 @@
+id: entaku-rb-5
+chaff: 0.33.0
+findings:
+  - rule: tari-unpaired
+    line: 25
+    text: たりできる
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 57
+    text: (そういう空気作りがすごい)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 57
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: "the same pair as the ( on this line: one inconsistency reported twice"
+  - rule: no-mixed-desumasu
+    line: 71
+    text: 他の本もあります。
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
+    verdict: false-positive
+    note: a parenthetical aside inside a list item (（今はもう無い。）) read as a sentence of the list
+  - rule: orthographic-variant
+    line: 71
+    text: 無い。）<br>[大坊珈琲の時間 | |本 | 通販 | Amazon](htt
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 無い and ない (引数がない) are the same adjective here

@@ -1,0 +1,15 @@
+id: jma-yougo-kaze
+title: "気象庁: 予報用語 風"
+language: ja
+genre: docs/glossary
+format: markdown
+source:
+  url: https://web.archive.org/web/20260928131406id_/https://www.jma.go.jp/jma/kishou/know/yougo_hp/kaze.html
+  fetched: 2026-09-30
+license:
+  name: PDL-1.0
+  url: https://www.digital.go.jp/resources/open_data/public_data_license_v1.0
+  note: "公共データ利用規約（第1.0版）(PDL1.0, compatible with CC BY 4.0; 気象庁ホームページについて https://www.jma.go.jp/jma/kishou/info/coment.html); 出典: 気象庁ホームページ (https://www.jma.go.jp/jma/kishou/know/yougo_hp/kaze.html); Markdown に変換（加工して作成）; the glossary table is read one cell per paragraph"
+redistribute: true
+sha256: 90cac65fd685502797baea91db6ac67ca817a3ba4be520369c66442e1483e97b
+notes: Imported from isamu/lab text/corpus (manifest id jma-yougo-kaze). The source is html; lab's corpus fetch stored it converted (sha256 is of the stored text).

@@ -1,0 +1,128 @@
+id: crs-r47235-budget-timeline
+chaff: 0.33.0
+findings:
+  - rule: ngram-repetition
+    line: 11
+    text: The annual submission of the President's
+    message: '"the beginning of the" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: It has been common in recent practice fo
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 19
+    text: CR in late September that provides budge
+    message: '"CR" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: This report does not cover budgetary mea
+    message: This sentence runs 53 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: The act created the budget resolution to
+    message: This sentence runs 57 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: Prohibits the consideration of legislati
+    message: This sentence runs 58 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 103
+    text: CRS Report R47413, Points of Order in th
+    message: '"CRS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 107
+    text: a. This point of order can be waived in
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 107
+    text: In the House, the point of order does no
+    message: This sentence runs 74 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 107
+    text: Section302(g) of the Budget Act (known a
+    message: This sentence runs 75 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 115
+    text: Most of the target and enabling dates es
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 139
+    text: The Budget Act sets a target date of Apr
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 157
+    text: Since the first reconciliation legislati
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 163
+    text: Congress also typically develops and con
+    message: This sentence runs 60 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 201
+    text: "Notes: Each segment of a fiscal year's b"
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 201
+    text: These measures are considered full-year
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: repeated-sentence-head
+    line: 217
+    text: For more on the budget resolution, see C
+    message: 6 sentences in a row open with "For more on" (limit 3)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 243
+    text: Two reconciliation bills for a given fis
+    message: This sentence runs 90 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 243
+    text: Two reconciliation bills were enacted in
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 247
+    text: CBO, "Supplemental Appropriations Enacte
+    message: '"CBO" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 259
+    text: For the purpose of this report, "total p
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 265
+    text: HHS-Education appropriations bill) and D
+    message: '"HHS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 267
+    text: The Senate considered no regular appropr
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 279
+    text: Full-year CRs have been enacted on four
+    message: This sentence runs 60 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 281
+    text: From FY1998 to FY2025, the final full-ye
+    message: This sentence runs 78 words (limit 45)
+    verdict: unjudged

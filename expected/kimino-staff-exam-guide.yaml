@@ -1,0 +1,8 @@
+id: kimino-staff-exam-guide
+chaff: 0.33.0
+findings:
+  - rule: bracket-width-consistency
+    line: 17
+    text: （金曜日） 15時 00 分まで
+    message: 丸括弧を、全角で 6 箇所、半角で 7 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged

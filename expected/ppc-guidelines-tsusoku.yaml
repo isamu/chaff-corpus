@@ -1,0 +1,758 @@
+id: ppc-guidelines-tsusoku
+chaff: 0.33.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 2
+    text: ６月一部改正）
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 2
+    text: ８年６月一部改正）
+    message: 全角の「８」と書いています（この文書はふつう半角の「8」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 36
+    text: 利用目的（法第17条・第18条、第21条第3項関係）
+    message: 「利用目的」を、873 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 58
+    text: 委託先の監督（法第25条関係）
+    message: 「委託先」を、1317 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 60
+    text: 漏えい等の報告等（法第26条関係）
+    message: 「漏えい等」を、1290 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 63
+    text: 漏えい等事案が発覚した場合に講ずべき措置
+    message: 「漏えい等事案」を、1409 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 85
+    text: 利用停止等（法第32条～第39条関係）
+    message: 「利用停止等」を、3145 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 85
+    text: 訂正等・利用停止等（法第32条～第39条関係）
+    message: 「訂正等」を、3119 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 93
+    text: 開示等の請求等に応じる手続（法第37条関係）
+    message: 「開示等」を、555 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 93
+    text: 開示等の請求等に応じる手続（法第37条関係）
+    message: 「開示等の請求等」を、3250 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: toc-heading-mismatch
+    line: 121
+    text: 【付録】
+    message: 目次の「【付録】」に合う見出しがありません
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 149
+    text: ４条、第９条及び第131条に基づき具体的な指針として定めるものである。
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 149
+    text: ９条及び第131条に基づき具体的な指針として定めるものである。
+    message: 全角の「９」と書いています（この文書はふつう半角の「9」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 155
+    text: 一方、「努めなければならない」、「望ましい」等と記述している事項については、これ
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 170
+    text: この法律は、デジタル社会の進展に伴い個人情報の利用が著しく拡大していることに鑑み
+    message: 「は」で出した主題から述語まで 312 字あります（200 字まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 186
+    text: 個人情報取扱事業者等」という。）の個人情報、仮名加工情報又は匿名加工情報（以下こ
+    message: 「個人情報取扱事業者等」を、206 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 202
+    text: 委員会は、行政機関等の事務及び事業の適正かつ円滑な運営を図り、並びに個人情報の適
+    message: 括弧が 4 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 202
+    text: 委員会は、行政機関等の事務及び事業の適正かつ円滑な運営を図り、並びに個人情報の適
+    message: 「は」で出した主題から述語まで 267 字あります（200 字まで）
+    verdict: unjudged
+  - rule: unused-definition
+    line: 202
+    text: 以下「番号利用法」という。）第12条に規定する個人番号利用事務等実施者をいう。）
+    message: 「番号利用法」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 216
+    text: （1）当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 216
+    text: （1）当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 219
+    text: 「個人情報」（※1）とは、生存する「個人に関する情報」（※2）（※3）であって、
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 263
+    text: １項に規定する被保険者記号・番号等
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 267
+    text: １項に規定する被保険者番号等
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 268
+    text: １項に規定する被保険者番号等
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 268
+    text: ２第１項に規定する被保険者番号等
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 268
+    text: ９年法律第123号）第201条の２第１項に規定する被保険者番号等
+    message: 全角の「９」と書いています（この文書はふつう半角の「9」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 294
+    text: 「個人識別符号」とは、当該情報単体から特定の個人を識別できるものとして政令に定め
+    message: 「個人識別符号」は 243 行目でも定義されています
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 330
+    text: 組合せ
+    message: 「組合せ」と書いています（この文書はふつう「組み合わせ」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 361
+    text: 「要配慮個人情報」とは、不当な差別や偏見その他の不利益が生じないようにその取扱い
+    message: 「要配慮個人情報」は 340 行目でも定義されています
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 389
+    text: 身体的被害、精神的被害及び金銭的被害の別を問わず、犯罪の被害を受けた事実を意味す
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 406
+    text: ③ 「精神保健及び精神障害者福祉に関する法律（昭和25年法律第123号）にいう精
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 419
+    text: かかりやすさに該当する結果等も含まれる。なお、健康診断等を受診したという事実は該
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。136 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 581
+    text: 関わる場合には、契約等の実態によって、どの個人情報取扱事業者が開示等に応じる権限
+    message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。33 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 591
+    text: 「個人に関する情報」とは、ある個人の身体、財産、職種、肩書等の属性に関して、事実
+    message: 「個人に関する情報」は 221 行目でも定義されています
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 615
+    text: 「個人関連情報取扱事業者」とは、個人関連情報データベース等を事業の用に供している
+    message: 「個人関連情報取扱事業者」は 609 行目でも定義されています
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 619
+    text: 「事業」とは、一定の目的をもって反復継続して遂行される同種の行為であって、かつ社
+    message: 「事業」は 515 行目でも定義されています
+    verdict: unjudged
+  - rule: unused-definition
+    line: 769
+    text: 「本人の同意を得（る）」とは、本人の承諾する旨の意思表示を当該個人情報取扱事業者
+    message: 「本人の同意を得（る）」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 786
+    text: 「保有個人データ」とは、個人情報取扱事業者が、開示、内容の訂正、追加又は削除、利
+    message: 「保有個人データ」は 544 行目でも定義されています
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 875
+    text: 個人情報取扱事業者は、個人情報を取り扱うに当たっては、利用目的をできる限り具体的
+    message: 一文に「〜的」が 7 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 888
+    text: 持ち、できるだけ具体的に明確にすることにより、個人情報が取り扱われる範囲を確定す
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。19 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 901
+    text: また、単に「事業活動」、「お客様のサービスの向上」等のように抽象的、一般的な内容
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 929
+    text: ただし、当該同意を得るために個人情報を利用すること（メールの送信や電話をかけるこ
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 945
+    text: なお、事業の承継後に、承継前の利用目的の達成に必要な範囲を超えて、個人情報を取り
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 1124
+    text: 事例3）児童虐待のおそれのある家庭情報のうち被害を被った事実に係る情報を、児童相
+    message: 「被害を被る」は同じ意味の語を重ねています
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1290
+    text: 個人情報取扱事業者は、その取り扱う個人データの漏えい、滅失又は毀損（以下「漏えい
+    message: 「は」で出した主題から述語まで 207 字あります（200 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1324
+    text: 委託先の選定に当たっては、委託先の安全管理措置が、少なくとも法第23条及び本ガイ
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unused-definition
+    line: 1343
+    text: 「個人データの取扱いの委託」とは、契約の形態・種類を問わず、個人情報取扱事業者が
+    message: 「個人データの取扱いの委託」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 1498
+    text: " の略。サブドメイン名及びドメイン名からなる文字列であり、ネットワーク上のコンピ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。59 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1498
+    text: C&Cサーバ）が使用しているものとして知られているIPアドレス・FQDN（Ful
+    message: 「C&C」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1508
+    text: ただし、規則第7条第3号に定める事態について漏えい等報告の義務を負う主体は、漏え
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1512
+    text: Ａ）の取扱いを委託している場合であって、別の個人データ（個人データＢ）の取扱いを
+    message: 全角の「Ａ」と書いています（この文書はふつう半角の「A」。9 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1512
+    text: Ｂ）の取扱いを委託していないときには、個人データＢについて、委託元において報告対
+    message: 全角の「Ｂ」と書いています（この文書はふつう半角の「B」。9 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1512
+    text: Ｂについて、委託元において報告対象事態が発生した場合であっても、委託先は報告義務
+    message: 全角の「Ｂ」と書いています（この文書はふつう半角の「B」。9 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1613
+    text: ただし、規則第7条第3号に定める事態について本人への通知の義務を負う主体は、漏え
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 1689
+    text: なお、あらかじめ、個人情報を第三者に提供することを想定している場合には、利用目的
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1756
+    text: おくこと。
+    message: 「おく」と書いています（この文書はふつう「置く」と書く語です。58 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: unused-definition
+    line: 1762
+    text: 以下「光ディスク等」という。）を提出する方法
+    message: 「光ディスク等」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 1784
+    text: なお、法第27条第2項の規定により個人データを第三者に提供しようとする別表第二法
+    message: 接続詞で始まる段落が 4 続いています（2 まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1843
+    text: おいていないと判断され得る 。
+    message: 「おく」と書いています（この文書はふつう「置く」と書く語です。58 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1843
+    text: おかなければならない（規則第11条第1項第1号）ため、本人に通知し又は本人が容易
+    message: 「おく」と書いています（この文書はふつう「置く」と書く語です。58 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 1847
+    text: い
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。518 段落のうち 1 段落）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 1851
+    text: 「本人が容易に知り得る状態」とは、事業所の窓口等への書面の掲示・備付けやホームペ
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1938
+    text: 見て、当該個人データを当初提供した事業者と一体のものとして取り扱われることに合理
+    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。15 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 1940
+    text: なお、法第27条第5項第3号の規定により本人に通知し、又は本人が容易に知り得る状
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1956
+    text: 見て、当該個人データを提供する事業者と一体のものとして取り扱われることに合理性が
+    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。15 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 2032
+    text: １　個人情報取扱事業者は、外国（本邦の域外にある国又は地域をいう。以下この条及び
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2032
+    text: １　個人情報取扱事業者は、外国（本邦の域外にある国又は地域をいう。以下この条及び
+    message: 「は」で出した主題から述語まで 364 字あります（200 字まで）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 2203
+    text: 「個人関連情報」とは、生存する個人に関する情報であって、個人情報、仮名加工情報及
+    message: 「個人関連情報」は 587 行目でも定義されています
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 2211
+    text: 「個人関連情報取扱事業者」とは、個人関連情報を含む情報の集合物であって、特定の個
+    message: 「個人関連情報取扱事業者」は 609 行目でも定義されています
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2221
+    text: 取扱い等を踏まえた上で、それに基づいて法第31条第1項の適用の有無を判断する。
+    message: 「取扱い」と書いています（この文書はふつう「取扱」と書く語です。575 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 2233
+    text: 「想定される」とは、提供元の個人関連情報取扱事業者において、提供先の第三者が「個
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 2264
+    text: また、本人の同意は、必ずしも第三者提供のたびに取得しなければならないものではなく
+    message: 接続詞で始まる段落が 4 続いています（2 まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2274
+    text: 持ち、情報を利用する主体となる提供先の第三者であるが、同等の本人の権利利益の保護
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。19 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2309
+    text: (略)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2309
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2343
+    text: (略)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2343
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2386
+    text: (ア) 当該第三者による相当措置の実施状況並びに当該相当措置の実施に影響を及ぼす
+    message: 括弧を「(」と書いています（この文書はふつう「（」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2386
+    text: ) 当該第三者による相当措置の実施状況並びに当該相当措置の実施に影響を及ぼすおそ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2387
+    text: (イ) 当該第三者による相当措置の実施に支障が生じたときは、必要かつ適切な措置を
+    message: 括弧を「(」と書いています（この文書はふつう「（」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2387
+    text: ) 当該第三者による相当措置の実施に支障が生じたときは、必要かつ適切な措置を講ず
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2424
+    text: 複数回にわたって同一「本人」の個人関連情報を提供する場合において、同一の内容であ
+    message: 「は」で出した主題から述語まで 217 字あります（200 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 2453
+    text: 個人関連情報取扱事業者は、記録を、文書、電磁的記録（電磁的方式（電子的方式、磁気
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 2851
+    text: 管理区域の入退室管理方法
+    message: 「管理区域」を、3854 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 2893
+    text: (※1）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2893
+    text: ）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」とは、
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2903
+    text: ）個人情報取扱事業者が外国に所在する場合は、当該外国（本邦の域外にある国又は地域
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2904
+    text: )利用目的に第三者提供が含まれる場合は、その旨も明らかにしなければならない。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2912
+    text: )手数料の額を定める場合は、実費を勘案して合理的であると認められる範囲内において
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2913
+    text: )法第32条第1項第4号及び政令第10条第1号の規定により本人の知り得る状態に置
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2917
+    text: )外国（本邦の域外にある国又は地域）の名称については、必ずしも正式名称を求めるも
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2918
+    text: )例えば、【安全管理のために講じた措置として本人の知り得る状態に置く内容の事例】
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2920
+    text: )中小規模事業者における安全管理措置の事例についても、詳細は「10（別添）講ずべ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2942
+    text: ）「本人に通知」については、2-14（本人に通知）を参照のこと。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2962
+    text: 個人情報取扱事業者は、本人から、当該本人が識別される保有個人データの開示（存在し
+    message: 「は」で出した主題から述語まで 224 字あります（200 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 2964
+    text: 電磁的記録の提供による方法については、個人情報取扱事業者がファイル形式や記録媒体
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2968
+    text: )電磁的記録をCD-ROM等の媒体に保存して、当該媒体を郵送する方法
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2968
+    text: CD-ROM等の媒体に保存して、当該媒体を郵送する方法
+    message: 「CD-ROM」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2969
+    text: )電磁的記録を電子メールに添付して送信する方法
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2970
+    text: )会員専用サイト等のウェブサイト上で電磁的記録をダウンロードしてもらう方法
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2974
+    text: )個人情報取扱事業者が指定した場所における音声データの視聴
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2975
+    text: )個人情報取扱事業者が指定した場所における文書の閲覧
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2979
+    text: )本人が電磁的記録の提供による開示を請求した場合であって、個人情報取扱事業者が当
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 2980
+    text: )本人が電磁的記録の提供による開示を請求した場合であって、書面で個人情報や帳簿等
+    message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3010
+    text: ）開示の請求を行った者から開示の方法について特に指定がなく、個人情報取扱事業者が
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3011
+    text: ）本人が請求する方法による開示が困難な場合に、直ちに書面の交付による開示を行うの
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3012
+    text: ）消費者等、本人の権利利益保護の観点からは、事業活動の特性、規模及び実態を考慮し
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3013
+    text: ）「本人に通知」については、2-14（本人に通知）を参照のこと。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3068
+    text: 個人情報取扱事業者は、本人から、当該本人が識別される個人データに係る第三者提供記
+    message: 「は」で出した主題から述語まで 240 字あります（200 字まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 3121
+    text: なお、個人情報取扱事業者は、法第34条第2項の規定に基づき請求に係る保有個人デー
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3149
+    text: 個人情報取扱事業者は、本人から、当該本人が識別される保有個人データが、法第18条
+    message: 「は」で出した主題から述語まで 232 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3232
+    text: 刷り直し及び回収作業に多額の費用を要するとして、名簿の増刷時の訂正を約束する場合
+    message: 「刷る」と書いています（この文書はふつう「する」と書く語です。3290 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3252
+    text: ）「本人に通知」については、2-14（本人に通知）を参照のこと。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 3292
+    text: ただし、開示等の請求等を受け付ける方法を定めるに当たっては、当該手続が、事業の性
+    message: 接続詞で始まる段落が 4 続いています（2 まで）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 3294
+    text: 「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」とは、本
+    message: 「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」は 2893 行目でも定義されています
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3302
+    text: (※1）「開示等の請求等」とは、保有個人データの利用目的の通知の求め（3-8-1
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 3302
+    text: 「開示等の請求等」とは、保有個人データの利用目的の通知の求め（3-8-1（保有個
+    message: 「開示等の請求等」は 3250 行目でも定義されています
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3302
+    text: ）「開示等の請求等」とは、保有個人データの利用目的の通知の求め（3-8-1（保有
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3303
+    text: ）確認の方法としては、次のような事例が考えられるが、事業の性質、保有個人データの
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3312
+    text: ）開示等の請求等を受け付ける方法を定めない場合には、自由な申請を認めることとなる
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3327
+    text: (※）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」に
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3327
+    text: ）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」につい
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3341
+    text: ）保有個人データの開示については、3-8-2（保有個人データの開示）を参照のこと
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3342
+    text: (※2）保有個人データの訂正等とは、保有個人データの訂正、追加又は削除のことをい
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3342
+    text: ）保有個人データの訂正等とは、保有個人データの訂正、追加又は削除のことをいう（3
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3343
+    text: (※3）保有個人データの利用停止等とは、保有個人データの利用の停止又は消去のこと
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3343
+    text: ）保有個人データの利用停止等とは、保有個人データの利用の停止又は消去のことをいう
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3344
+    text: ）保有個人データの第三者提供の停止については、3-8-5（保有個人データの利用停
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3345
+    text: ）第三者提供記録の開示については、3-8-3（第三者提供記録の開示）を参照のこと
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3346
+    text: ）例えば、本人から個人情報取扱事業者に対する保有個人データの開示請求が4月1日に
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3347
+    text: ）自己が識別される保有個人データの開示、訂正等、利用停止等若しくは第三者提供の停
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3348
+    text: ）「当該裁判外の請求を拒んだとき」とは、法第33条第3項（同条第5項において準用
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3363
+    text: (※1）消費者等本人との信頼関係を構築し事業活動に対する社会の信頼を確保するため
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3363
+    text: 見やすい場所への掲示等により公表し、あらかじめ、対外的に分かりやすく説明すること
+    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。15 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3363
+    text: ）消費者等本人との信頼関係を構築し事業活動に対する社会の信頼を確保するためには、
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3364
+    text: (※2）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 3364
+    text: ）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」につい
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3390
+    text: ２　個人情報取扱事業者は、仮名加工情報を作成したとき、又は仮名加工情報及び当該仮
+    message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3442
+    text: ８　仮名加工情報取扱事業者は、仮名加工情報を取り扱うに当たっては、電話をかけ、郵
+    message: 「は」で出した主題から述語まで 262 字あります（200 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3543
+    text: １　委員会は、個人情報取扱事業者が第18条から第20条まで、第21条（第1項、第
+    message: 一文に節が 11 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3543
+    text: １　委員会は、個人情報取扱事業者が第18条から第20条まで、第21条（第1項、第
+    message: 「は」で出した主題から述語まで 710 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3545
+    text: ３　委員会は、前二項の規定にかかわらず、個人情報取扱事業者が第18条から第20条
+    message: 「は」で出した主題から述語まで 405 字あります（200 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3563
+    text: すなわち、本ガイドラインの中で、「しなければならない」及び「してはならない」と記
+    message: 一文に節が 11 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 3595
+    text: ただし、上記に定める各主体は、安全管理措置、苦情処理等、個人情報等の適正な取扱い
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 3605
+    text: 「これに付随する活動」とは、労働運動の支援等、それ自体が政治活動とはいえないもの
+    message: 「これに付随する活動」は 3601 行目でも定義されています
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 3625
+    text: １　第58条第2項各号に掲げる者が行う当該各号に定める業務における個人情報、仮名
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 3665
+    text: １項）、利用目的の通知（法第21条）及びデータ内容の正確性の確保（法第22条）に
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。2170 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 3744
+    text: なお、具体的に定める事項については、以降に記述する組織的安全管理措置、人的安全管
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3875
+    text: ICカード、ナンバーキー等による入退室管理システムの設置等が考えられる。
+    message: 「IC」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 3969
+    text: " 2.が前後する場合等もある。"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。308 箇所のうち 1 箇所が違う）
+    verdict: unjudged

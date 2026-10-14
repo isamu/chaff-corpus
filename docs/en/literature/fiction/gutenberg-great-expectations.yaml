@@ -1,0 +1,15 @@
+id: gutenberg-great-expectations
+title: "Charles Dickens, Great Expectations (Project Gutenberg #1400)"
+language: en
+genre: literature/fiction
+format: text
+source:
+  url: https://web.archive.org/web/20260630214721id_/https://www.gutenberg.org/cache/epub/1400/pg1400.txt
+  fetched: 2026-09-30
+license:
+  name: Public domain
+  url: https://web.archive.org/web/20260630214721id_/https://www.gutenberg.org/cache/epub/1400/pg1400.txt
+  note: "Public domain in the United States (first published 1861); Project Gutenberg eBook #1400, stored without Project Gutenberg's header and licence, which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: b8ed36381a778163bb64691e827e629dbccead1f978f66a2d033e1a018a5a3cf
+notes: Imported from isamu/lab text/corpus (manifest id gutenberg-great-expectations). The source is gutenberg; lab's corpus fetch stored it converted (sha256 is of the stored text).

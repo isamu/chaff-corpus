@@ -1,0 +1,15 @@
+id: etax-oshirase-mail-templates
+title: "e-Tax: 「税務署からのお知らせ」等のメールが届いた方へ（送信メールの定型文）"
+language: ja
+genre: business/email
+format: markdown
+source:
+  url: https://web.archive.org/web/20260730142456id_/https://www.e-tax.nta.go.jp/topics/topics_oshirase_mail.htm
+  fetched: 2026-09-30
+license:
+  name: PDL-1.0
+  url: https://www.digital.go.jp/resources/open_data/public_data_license_v1.0
+  note: 国税庁ホームページ利用規約 (公共データ利用規約（第1.0版）準拠) unless a rights notice says otherwise, and each template carries "Copyright (C) NATIONAL TAX AGENCY ALL Rights Reserved."; URL only
+redistribute: false
+sha256: 64add0ea8219a9a6202c4c6a49a65862209859f2332ea79ae344f4fb8b2794d0
+notes: Imported from isamu/lab text/corpus (manifest id etax-oshirase-mail-templates). The source is html; lab's corpus fetch stored it converted (sha256 is of the stored text).

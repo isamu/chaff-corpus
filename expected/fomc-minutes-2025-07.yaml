@@ -1,0 +1,148 @@
+id: fomc-minutes-2025-07
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    text: FOMC Minutes
+    message: '"FOMC" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 21
+    text: The median modal path of the federal fun
+    message: '"federal funds rate" appears 15 times (limit 5)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: S&P 500 index continued to move above lo
+    message: '"S&P" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: The manager observed that two factors co
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 31
+    text: The manager also discussed the projected
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Market indicators continued to suggest t
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: Recent data indicated that labor market
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 57
+    text: VIX—a forward-looking measure of near-te
+    message: '"VIX" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    text: In the second quarter, credit performanc
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 91
+    text: With regard to the outlook for inflation
+    message: This paragraph runs 12 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 95
+    text: In their discussion of the labor market,
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: Some participants remarked, however, tha
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 97
+    text: Participants observed that growth of eco
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 99
+    text: In addition to tariff-induced risks, pot
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 101
+    text: In their discussion of financial stabili
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: A couple of participants discussed forei
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 101
+    text: GENIUS Act (Guiding and Establishing Nat
+    message: '"GENIUS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 103
+    text: In their consideration of monetary polic
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 105
+    text: In considering the outlook for monetary
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: Even so, some participants emphasized th
+    message: This sentence runs 69 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: Several participants commented that the
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 107
+    text: In discussing risk-management considerat
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 107
+    text: Participants noted that, if this year's
+    message: This sentence runs 57 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 109
+    text: Several participants remarked on issues
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 115
+    text: In support of the Committee's goals, alm
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 115
+    text: Furthermore, they assessed that downside
+    message: This sentence runs 63 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: Reinvest the amount of principal payment
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 146
+    text: Governor Bowman preferred at this meetin
+    message: This sentence runs 60 words (limit 45)
+    verdict: unjudged
+  - rule: name-variant
+    line: 292
+    text: Walker,3 Senior Associate Director, Divi
+    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
+    verdict: unjudged

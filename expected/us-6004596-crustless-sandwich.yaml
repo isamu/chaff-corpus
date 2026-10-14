@@ -1,0 +1,8 @@
+id: us-6004596-crustless-sandwich
+chaff: 0.33.0
+findings:
+  - rule: unknown-word
+    line: 87
+    text: fillng
+    message: '"fillng" is not in the dictionary; did you mean "filing"?'
+    verdict: unjudged

@@ -1,0 +1,553 @@
+id: govuk-style-guide-a-to-z
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "A to Z" has no number, code or link (5 of 5 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 5
+    text: There’s a new version of this content in
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 7
+    text: ""
+    message: Section "About the A to Z" has no number, code or link (5 of 5 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 28
+    text: ""
+    message: Section "Before you suggest a change" has no number, code or link (5 of 5 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 40
+    text: ""
+    message: Section "How to suggest a change" has no number, code or link (5 of 5 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 49
+    text: " - for example, user insights or researc"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 51
+    text: ""
+    message: Section "What happens next" has no number, code or link (5 of 5 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 58
+    text: " - you’ll be given more information abou"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 77
+    text: BBC, not B.B.C.
+    message: '"BBC" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 82
+    text: CCTV
+    message: '"CCTV" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 84
+    text: DVLA
+    message: '"DVLA" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 86
+    text: GP
+    message: '"GP" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 87
+    text: HM, when part of an organisation’s name
+    message: '"HM" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 92
+    text: MOT
+    message: '"MOT" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 93
+    text: MP
+    message: '"MP" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 94
+    text: NHS
+    message: '"NHS" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 95
+    text: PAYE
+    message: '"PAYE" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 96
+    text: SORN
+    message: '"SORN" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 101
+    text: VAT
+    message: '"VAT" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 106
+    text: JPG, PDF or PNG
+    message: '"JPG" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 107
+    text: BA, GCSE or PhD
+    message: '"BA" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 107
+    text: GCSE or PhD
+    message: '"GCSE" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 108
+    text: KC or OBE
+    message: '"KC" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 108
+    text: OBE
+    message: '"OBE" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 110
+    text: There are other abbreviations you do not
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 120
+    text: Only use upper case when referring to th
+    message: '"when referring to the" appears 15 times (limit 5)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 156
+    text: Use the active rather than passive voice
+    message: The first sentence repeats the heading "Active voice"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 169
+    text: " - Child Benefit Office"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 170
+    text: PO Box 1
+    message: '"PO" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 177
+    text: HMRC by phone and email’ or ‘Pay your ca
+    message: '"HMRC" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 187
+    text: For example, special adviser. Not adviso
+    message: The first sentence repeats the heading "adviser"
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 213
+    text: For example, use ‘organise’ not ‘organiz
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 271
+    text: " - use bullet points and a lead-in line"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 281
+    text: " - The Public Trustee"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: name-variant
+    line: 285
+    text: Words to avoid
+    message: '"Words" is one letter away from "Lords", which the document uses more than once'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 323
+    text: DFT’s management board.
+    message: '"DFT" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 334
+    text: " - using too much will make it difficult"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 346
+    text: Use (round brackets).
+    message: The first sentence repeats the heading "Brackets"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 368
+    text: See Great Britain
+    message: The first sentence repeats the heading "Britain"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 396
+    text: " - use commas or dashes to expand on an"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 400
+    text: there is no full stop after the last bul
+    message: '"there is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 407
+    text: which apply to the most users and removi
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 441
+    text: The cabinet is lower case.
+    message: The first sentence repeats the heading "cabinet"
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 449
+    text: DO NOT USE BLOCK CAPITALS FOR LARGE AMOU
+    message: '"DO NOT USE BLOCK CAPITALS FOR LARGE AMOUNTS OF TEXT AS IT" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 449
+    text: S QUITE HARD TO READ.
+    message: '"S QUITE HARD TO READ" is written in capitals'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 453
+    text: " - see below)"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 473
+    text: " - see government"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 475
+    text: " - never Department or Ministry, unless"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 477
+    text: " - for example, “2016 Budget”"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 483
+    text: " - see above)"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 488
+    text: Use the following conventions for govern
+    message: The first sentence repeats the heading "Capitals for government departments"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 522
+    text: See change notes in the content design m
+    message: The first sentence repeats the heading "Change notes"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 652
+    text: Avoid negative contractions like can’t a
+    message: The first sentence repeats the heading "contractions"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 738
+    text: Not curricula.
+    message: The first sentence repeats the heading "curriculums"
+    verdict: unjudged
+  - rule: invisible-character
+    line: 821
+    text: ​
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 905
+    text: ECSL.
+    message: '"ECSL" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 913
+    text: EHCP.
+    message: '"EHCP" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 921
+    text: " - is not always well understood. Try (r"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 921
+    text: " - used to clarify a sentence - is not a"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 983
+    text: EC should be used when it’s EC directive
+    message: '"EC" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1027
+    text: " - you’ll get points on your licence, go"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 1111
+    text: So, the south-west (compass direction),
+    message: 1 sentence opens with "So," (1 needed)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1175
+    text: This is GOV.UK One Login’s main identity
+    message: The first sentence repeats the heading "The GOV.UK One Login app"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1219
+    text: "Lower case: national recovery guidance."
+    message: The first sentence repeats the heading "guidance"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1379
+    text: Do not use italics. Use ‘single quotatio
+    message: The first sentence repeats the heading "Italics"
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1431
+    text: It’s important that users understand con
+    message: '"It is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1472
+    text: LA.
+    message: '"LA" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1552
+    text: " - you do not need to spell it out."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1638
+    text: MLA.
+    message: '"MLA" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1668
+    text: MS.
+    message: '"MS" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1672
+    text: MSP.
+    message: '"MSP" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1717
+    text: " - use ‘Ms’ for women without another ti"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1741
+    text: NINO.
+    message: '"NINO" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 1838
+    text: Use a 0 where there’s no digit before th
+    message: 7 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1872
+    text: "There are 4 Ofsted grades:"
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 1876
+    text: requires improvement (or grade 3)
+    message: '"requires improvement (or grade 3)" opens with a verb; the other items in this list open with a noun phrase (1 of 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1918
+    text: DVSA if…’
+    message: '"DVSA" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 1945
+    text: ‘You’ll need to come back to this page l
+    message: '"‘You’ll need to come back to this page later’" opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2023
+    text: Use per cent not percent. Percentage is
+    message: The first sentence repeats the heading "Per cent"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2049
+    text: " - check which words you should avoid."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2057
+    text: There’s usually no need to say ‘please’
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2109
+    text: " - say what it is in plain English: a te"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2180
+    text: RTI’ or use the abbreviation, for exampl
+    message: '"RTI" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2328
+    text: XXX is upper case whether or not it’s us
+    message: '"XXX" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 2330
+    text: section 2
+    message: '"section 2" (address 2) is not in this document'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2410
+    text: A settler of trusts.
+    message: The first sentence repeats the heading "settlor"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2426
+    text: " - say what the user actually needs to e"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2442
+    text: SME for the singular.
+    message: '"SME" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2458
+    text: See junk and spam emails.
+    message: The first sentence repeats the heading "Spam emails"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2510
+    text: ONS to find out how to write about stati
+    message: '"ONS" is used without an expansion (32 such acronyms)'
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 2601
+    text: better.
+    message: '"better" does not say what it is compared with'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2633
+    text: Use technical terms where you need to. T
+    message: The first sentence repeats the heading "technical terms"
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 2670
+    text: two ways (the end of Monday 13, or end o
+    message: '"two" here, where the document usually writes numbers below ten like "2" (1 of 4)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2693
+    text: " - so tablet not iPAD."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2733
+    text: Never HM government.
+    message: The first sentence repeats the heading "UK government"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2821
+    text: " - a vehicle walkaround."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2845
+    text: See Senedd Cymru (Welsh Parliament).
+    message: The first sentence repeats the heading "Welsh Parliament"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2857
+    text: Use ‘WhatsApp’ with an upper case A. Do
+    message: The first sentence repeats the heading "WhatsApp"
+    verdict: unjudged
+  - rule: name-variant
+    line: 2857
+    text: Whatsapp’.
+    message: '"Whatsapp" is written "WhatsApp" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2880
+    text: " - for example, if they were living in a"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 2880
+    text: which allow a user to understand which g
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 2892
+    text: agenda (unless it’s for a meeting), use
+    message: '"agenda (unless it’s for a meeting), use ‘plan’ instead" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 2896
+    text: commit/pledge, use ‘plan to x’, or ‘we’r
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2898
+    text: " - not abstract concepts like improvemen"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 2900
+    text: dialogue, use ‘spoke to’ or ‘discussion’
+    message: '"dialogue, use ‘spoke to’ or ‘discussion’" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2903
+    text: " - for example, use ‘run’ if talking abo"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 2909
+    text: key (unless it unlocks something), usual
+    message: '"key (unless it unlocks something), usually not needed but can use ‘important’ or ‘significant’" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 2916
+    text: robust (unless talking about a sturdy ob
+    message: '"robust (unless talking about a sturdy object), depending on context, use ‘well thought out’ or ‘comprehensive’" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2924
+    text: " - they do not say what you actually mea"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2930
+    text: " - do not use it"
+    message: '"-" stands in for a dash'
+    verdict: unjudged

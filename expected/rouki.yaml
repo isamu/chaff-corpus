@@ -1,0 +1,193 @@
+id: rouki
+chaff: 0.33.0
+findings:
+  - rule: orthographic-variant
+    line: 26
+    text: 但し、権利の行使又は公の職務の執行に妨げがない限り、請求された時刻を変更すること
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。28 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 42
+    text: かかり療養のために休業した期間
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。21 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 44
+    text: 責めに帰すべき事由によつて休業した期間
+    message: 「責め」と書いています（この文書はふつう「責」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 60
+    text: 一　専門的な知識、技術又は経験（以下この号及び第四十一条の二第一項第一号において
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 86
+    text: かかり療養のために休業する期間及びその後三十日間並びに産前産後の女性が第六十五条
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。21 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 90
+    text: 但し、天災事変その他やむを得ない事由のために事業の継続が不可能となつた場合又は労
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。28 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 94
+    text: 但し、第一号に該当する者が一箇月を超えて引き続き使用されるに至つた場合、第二号若
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。28 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 136
+    text: 第三十二条の二　使用者は、当該事業場に、労働者の過半数で組織する労働組合がある場
+    message: 「は」で出した主題から述語まで 237 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 139
+    text: 第三十二条の三　使用者は、就業規則その他これに準ずるものにより、その労働者に係る
+    message: 「は」で出した主題から述語まで 292 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 150
+    text: 第三十二条の四　使用者は、当該事業場に、労働者の過半数で組織する労働組合がある場
+    message: 「は」で出した主題から述語まで 280 字あります（200 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 151
+    text: 一　この条の規定による労働時間により労働させることができることとされる労働者の範
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 151
+    text: 一　この条の規定による労働時間により労働させることができることとされる労働者の範
+    message: 「は」で出した主題から述語まで 266 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 162
+    text: 第三十二条の五　使用者は、日ごとの業務に著しい繁閑の差が生ずることが多く、かつ、
+    message: 「は」で出した主題から述語まで 272 字あります（200 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 180
+    text: （時間外及び休日の労働）
+    message: この段落は 16 文あります（12 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 181
+    text: 第三十六条　使用者は、当該事業場に、労働者の過半数で組織する労働組合がある場合に
+    message: 「は」で出した主題から述語まで 248 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 204
+    text: 使用者が、当該事業場に、労働者の過半数で組織する労働組合があるときはその労働組合
+    message: 「は」で出した主題から述語まで 286 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 210
+    text: 但し、この場合においては、第三十四条第二項及び第三項の休憩に関する規定は適用しな
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。28 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 217
+    text: ゆだねる必要があるため、当該業務の遂行の手段及び時間配分の決定等に関し使用者が具
+    message: 「ゆだねる」と書いています（この文書はふつう「委ねる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 225
+    text: 決議をし、かつ、使用者が、厚生労働省令で定めるところにより当該決議を行政官庁に届
+    message: 「決議」を、239 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 239
+    text: 第一項の委員会においてその委員の五分の四以上の多数による議決により第三十二条の二
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 239
+    text: 第一項の委員会においてその委員の五分の四以上の多数による議決により第三十二条の二
+    message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 245
+    text: 少ないものとして厚生労働省令で定める日数以下の労働者
+    message: 「少ない」と書いています（この文書はふつう「少い」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 245
+    text: 一　一週間の所定労働日数が通常の労働者の週所定労働日数に比し相当程度少ないものと
+    message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 253
+    text: 使用者は、第一項から第三項までの規定による有給休暇（これらの規定により使用者が与
+    message: 「は」で出した主題から述語まで 220 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 256
+    text: かかり療養のために休業した期間及び育児休業、介護休業等育児又は家族介護を行う労働
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。21 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 268
+    text: 第四十一条の二　賃金、労働時間その他の当該事業場における労働条件に関する事項を調
+    message: この段落は 18 文あります（12 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 335
+    text: 責めに帰すべき事由に基づいて解雇され、使用者がその事由について行政官庁の認定を受
+    message: 「責め」と書いています（この文書はふつう「責」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 390
+    text: こえ、又は百分の八十を下るに至つた場合においては、使用者は、その上昇し又は低下し
+    message: 「こえる」と書いています（この文書はふつう「超える」と書く語です。48 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 390
+    text: 使用者は、前項の規定により休業補償を行つている労働者と同一の事業場における同種の
+    message: 「は」で出した主題から述語まで 447 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 394
+    text: かかり、治つた場合において、その身体に障害が存するときは、使用者は、その障害の程
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。21 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 397
+    text: かかり、且つ使用者がその過失について行政官庁の認定を受けた場合においては、休業補
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。21 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 416
+    text: 行なわれるべきものである場合においては、使用者は、補償の責を免れる。
+    message: 「行なう」と書いています（この文書はふつう「行う」と書く語です。31 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 431
+    text: 但し、二以上の下請負人に、同一の事業について重複して補償を引き受けさせてはならな
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。28 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 543
+    text: 第百六条　使用者は、この法律及びこれに基づく命令の要旨、就業規則、第十八条第二項
+    message: 「は」で出した主題から述語まで 312 字あります（200 字まで）
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 588
+    text: 第七項を除く。）、第六十一条、第六十二条、第六十四条の三から第六十七条まで、第七
+    message: 第三十九条に「第七項を除く。」と添えていますが、第三十九条の見出しは「年次有給休暇」です
+    verdict: unjudged
+  - rule: clause-chain
+    line: 594
+    text: 一　第十四条、第十五条第一項若しくは第三項、第十八条第七項、第二十二条第一項から
+    message: 一文に節が 10 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 594
+    text: 第百条第三項において準用する場合を含む。）又は第百六条から第百九条までの規定に違
+    message: 第百五条に「第百条第三項において準用する場合を含む。」と添えていますが、第百五条の見出しは「労働基準監督官の義務」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 597
+    text: 第百条第三項において準用する場合を含む。）の規定による労働基準監督官又は女性主管
+    message: 第百一条に「第百条第三項において準用する場合を含む。」と添えていますが、第百一条の見出しは「労働基準監督官の権限」です
+    verdict: unjudged
