@@ -1,0 +1,7 @@
+# Email addresses and phone numbers that may stay in a committed text, because they are published on purpose
+# (an organisation's press or contact address, a public hotline). One entry per document and string, with the reason:
+#
+# - id: <document id>
+#   match: <the string as validate prints it>
+#   reason: <why it is public>
+[]

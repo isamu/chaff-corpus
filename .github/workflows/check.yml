@@ -1,0 +1,45 @@
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - name: validate
+        run: yarn validate
+
+      - name: typecheck
+        run: yarn typecheck
+
+      - name: test
+        run: yarn test
+
+      # Fails only when a correct finding is lost, a fully judged document gets a new finding, or a meta is invalid.
+      - name: run chaff over the corpus
+        run: yarn run-corpus
