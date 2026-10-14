@@ -1,0 +1,8 @@
+id: kimino-opendata-site
+chaff: 0.33.0
+findings:
+  - rule: max-kanji-continuous
+    line: 7
+    text: 公益財団法人九州先端科学技術研究所（ISIT）が運営するBODIK ODCSで構
+    message: 「公益財団法人九州先端科学技術研究所」は漢字が 17 字続いています（8 字まで）
+    verdict: unjudged

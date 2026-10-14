@@ -1,0 +1,28 @@
+id: aozora-soseki-yume-juya
+chaff: 0.33.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "#### 第一夜"
+    message: 見出し「第一夜」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 128
+    text: 運慶が護国寺の山門で仁王を刻んでいると云う評判だから、散歩ながら行って見ると、自
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 164
+    text: 自分はどこへ行くんだか判らない船でも、やっぱり乗っている方がよかったと始めて悟り
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 189
+    text: 夜になって、四隣が静まると、母は帯を締め直して、鮫鞘の短刀を帯の間へ差して、子供
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 193
+    text: 一通り夫の身の上を祈ってしまうと、今度は細帯を解いて、背中の子を摺りおろすように
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged

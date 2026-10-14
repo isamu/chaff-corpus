@@ -1,0 +1,233 @@
+id: kojin
+chaff: 0.33.0
+findings:
+  - rule: topic-predicate-distance
+    line: 6
+    text: 第一条　この法律は、デジタル社会の進展に伴い個人情報の利用が著しく拡大しているこ
+    message: 「は」で出した主題から述語まで 312 字あります（200 字まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 6
+    text: 基本方針の作成その他の個人情報の保護に関する施策の基本となる事項を定め、国及び地
+    message: 「基本方針」を、57 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 8
+    text: （定義）
+    message: この段落は 17 文あります（12 文まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 10
+    text: 一　当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記録
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 10
+    text: 一　当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記録
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 59
+    text: 一　個人情報の保護に関する施策の推進に関する基本的な方向
+    message: 一文に「〜的」が 5 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 181
+    text: （第三者提供の制限）
+    message: この段落は 18 文あります（12 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 202
+    text: 一　個人情報取扱事業者が利用目的の達成に必要な範囲内において個人データの取扱いの
+    message: 一文に節が 9 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 208
+    text: 第二十八条　個人情報取扱事業者は、外国（本邦の域外にある国又は地域をいう。以下こ
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 208
+    text: 第二十八条　個人情報取扱事業者は、外国（本邦の域外にある国又は地域をいう。以下こ
+    message: 「は」で出した主題から述語まで 365 字あります（200 字まで）
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 213
+    text: 第三十一条第三項において読み替えて準用する場合を含む。）において同じ。）に提供し
+    message: 次条に「第三十一条第三項において読み替えて準用する場合を含む。」と添えていますが、次条の見出しは「第三者提供を受ける際の確認等」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 235
+    text: 同条第五項において準用する場合を含む。）、第三十四条第一項若しくは第三十五条第一
+    message: 次条第一項に「同条第五項において準用する場合を含む。」と添えていますが、次条第一項の見出しは「開示」です
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 292
+    text: ２　個人情報取扱事業者は、仮名加工情報を作成したとき、又は仮名加工情報及び当該仮
+    message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 298
+    text: ８　仮名加工情報取扱事業者は、仮名加工情報を取り扱うに当たっては、電話をかけ、郵
+    message: 「は」で出した主題から述語まで 263 字あります（200 字まで）
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 320
+    text: 同条第二項において準用する場合を含む。）の規定により行われた加工の方法に関する情
+    message: 第百十六条第一項に「同条第二項において準用する場合を含む。」と添えていますが、第百十六条第一項の見出しは「行政機関等匿名加工情報の作成等」です
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 368
+    text: 第五十四条　認定個人情報保護団体は、対象事業者の個人情報等の適正な取扱いの確保の
+    message: 「は」で出した主題から述語まで 204 字あります（200 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 406
+    text: ただし、行政文書（行政機関の保有する情報の公開に関する法律（平成十一年法律第四十
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 476
+    text: 第七十一条　行政機関の長等は、外国（本邦の域外にある国又は地域をいう。以下この条
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 476
+    text: 第七十一条　行政機関の長等は、外国（本邦の域外にある国又は地域をいう。以下この条
+    message: 「は」で出した主題から述語まで 395 字あります（200 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 487
+    text: ４　行政機関の長等は、仮名加工情報を取り扱うに当たっては、法令に基づく場合を除き
+    message: 一文に節が 9 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 487
+    text: ４　行政機関の長等は、仮名加工情報を取り扱うに当たっては、法令に基づく場合を除き
+    message: 「は」で出した主題から述語まで 261 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 494
+    text: 一　個人情報ファイルの名称
+    message: 「は」で出した主題から述語まで 287 字あります（200 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 552
+    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
+    message: 括弧が 4 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 552
+    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
+    message: 一文に節が 12 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 552
+    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
+    message: 「は」で出した主題から述語まで 959 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 605
+    text: 申し出なければならない。
+    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 701
+    text: ２　行政機関の長等に対する開示決定等、訂正決定等、利用停止決定等又は開示請求、訂
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 717
+    text: 読替えは、政令で定める。
+    message: 「読替える」と書いています（この文書はふつう「読み替える」と書く語です。26 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 764
+    text: 一　未成年者
+    message: 一文に節が 10 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 841
+    text: 第百二十五条　第五十八条第二項各号に掲げる者が行う当該各号に定める業務における個
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 866
+    text: 第百三十一条　委員会は、行政機関等の事務及び事業の適正かつ円滑な運営を図り、並び
+    message: 括弧が 4 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 866
+    text: 第百三十一条　委員会は、行政機関等の事務及び事業の適正かつ円滑な運営を図り、並び
+    message: 「は」で出した主題から述語まで 269 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 871
+    text: 取扱い、個人情報取扱事業者及び仮名加工情報取扱事業者における仮名加工情報の取扱い
+    message: 「取扱う」と書いています（この文書はふつう「取り扱う」と書く語です。33 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 871
+    text: 取扱い、個人情報取扱事業者及び匿名加工情報取扱事業者における匿名加工情報の取扱い
+    message: 「取扱う」と書いています（この文書はふつう「取り扱う」と書く語です。33 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 946
+    text: 第百四十六条　委員会は、第四章（第五節を除く。次条及び第百五十一条において同じ。
+    message: 「は」で出した主題から述語まで 281 字あります（200 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 954
+    text: 第百四十八条　委員会は、個人情報取扱事業者が第十八条から第二十条まで、第二十一条
+    message: 一文に節が 11 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 954
+    text: 第一項、第三項及び第五項を除く。）、第三十八条第二項、第四十一条（第四項及び第五
+    message: 第三十五条に「第一項、第三項及び第五項を除く。」と添えていますが、第三十五条の見出しは「利用停止等」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 954
+    text: 第一項（第五項において準用する場合を含む。）を除く。）、第三十四条第二項若しくは
+    message: 第三十三条に「第一項（第五項において準用する場合を含む。」と添えていますが、第三十三条の見出しは「開示」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 954
+    text: 第五項において準用する場合を含む。）を除く。）、第三十四条第二項若しくは第三項、
+    message: 第一項に「第五項において準用する場合を含む。」と添えていますが、第一項の見出しは「開示」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 954
+    text: 第六項を除く。）の規定に違反した場合、個人関連情報取扱事業者が第三十一条第一項、
+    message: 第四十三条に「第六項を除く。」と添えていますが、第四十三条の見出しは「匿名加工情報の作成等」です
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 954
+    text: 第四項及び第五項を除く。）若しくは第四十三条（第六項を除く。）の規定に違反した場
+    message: 第四十一条に「第四項及び第五項を除く。」と添えていますが、第四十一条の見出しは「仮名加工情報の作成等」です
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 954
+    text: 第百四十八条　委員会は、個人情報取扱事業者が第十八条から第二十条まで、第二十一条
+    message: 「は」で出した主題から述語まで 738 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 956
+    text: ３　委員会は、前二項の規定にかかわらず、個人情報取扱事業者が第十八条から第二十条
+    message: 「は」で出した主題から述語まで 418 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 964
+    text: 第百五十条　委員会は、緊急かつ重点的に個人情報等の適正な取扱いの確保を図る必要が
+    message: 「は」で出した主題から述語まで 273 字あります（200 字まで）
+    verdict: unjudged
+  - rule: defined-name-repeated
+    line: 1023
+    text: 個人情報保護委員会」と、同法第百一条第一項中「執行官」とあるのは「個人情報保護委
+    message: 「個人情報保護委員会」は 862 行目で「委員会」と呼ぶと定めた名前です
+    verdict: unjudged
+  - rule: defined-name-repeated
+    line: 1023
+    text: 個人情報保護委員会の職員」と読み替えるものとする。
+    message: 「個人情報保護委員会」は 862 行目で「委員会」と呼ぶと定めた名前です
+    verdict: unjudged

@@ -1,0 +1,8 @@
+id: da-recruitment-career-faq
+chaff: 0.33.0
+findings:
+  - rule: orthographic-variant
+    line: 69
+    text: ごとの応募条件を満たす方であれば、どなたでもご応募いただくことが可能です。
+    message: 「ごと」と書いています（この文書はふつう「毎」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged

@@ -1,0 +1,23 @@
+id: aozora-kishida-kamifusen
+chaff: 0.33.0
+findings:
+  - rule: clause-chain
+    line: 100
+    text: さうしたら、かう云ふの――実は、あんまり行きたくもないんだけれど、うちでぶらぶら
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 100
+    text: さうしたら、かう云ふの――実は、あんまり行きたくもないんだけれど、うちでぶらぶら
+    message: 一文に読点が 11 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 212
+    text: あたし、何時でもさう思ふの、日曜なんか、それや余裕がある時は、お芝居を見に行くな
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 212
+    text: あたし、何時でもさう思ふの、日曜なんか、それや余裕がある時は、お芝居を見に行くな
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged

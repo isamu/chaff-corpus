@@ -1,0 +1,43 @@
+id: jma-tokubetsu-keiho
+chaff: 0.33.0
+findings:
+  - rule: max-sentence-length
+    line: 6
+    text: 特別警報が対象とする現象は、18,000人以上の死者・行方不明者を出した東日本大
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 6
+    text: 特別警報が対象とする現象は、18,000人以上の死者・行方不明者を出した東日本大
+    message: 「は」で出した主題から述語まで 141 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ５に相当します。
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。12 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 34
+    text: 警戒が必要な範囲からの避難や避難の準備をしてください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 46
+    text: "#### 関連報道発表"
+    message: 見出し「関連報道発表」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 48
+    text: ３０日運用開始広報キャンペーン～
+    message: 全角の「３０」と書いています（この文書はふつう半角の「30」。17 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 48
+    text: ８月３０日運用開始広報キャンペーン～
+    message: 全角の「８」と書いています（この文書はふつう半角の「8」。12 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 50
+    text: 平成25年8月2日防災講演会『特別警報、命を守るために知って欲しい』を開催します
+    message: 「平成25年8月2日防災講演会『特別警報、命を守るために知って欲しい』を開催します」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: unjudged

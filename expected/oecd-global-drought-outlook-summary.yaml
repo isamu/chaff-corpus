@@ -1,0 +1,23 @@
+id: oecd-global-drought-outlook-summary
+chaff: 0.33.0
+findings:
+  - rule: heading-level-skip
+    line: 7
+    text: "#### More info"
+    message: Heading "More info" goes from level 1 to level 4 (expected 2)
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 37
+    text: increasingly frequent and severe worldwi
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 47
+    text: New OECD analysis highlights a sharp ris
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 57
+    text: Beyond water policy, effective drought m
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged

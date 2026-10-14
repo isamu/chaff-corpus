@@ -1,0 +1,25 @@
+id: kimino-mayor-2022-09
+chaff: 0.33.0
+findings:
+  - rule: max-kanji-continuous
+    line: 13
+    text: また、8月28日には、美里中学校と下神野地区自主防災組織の共催による総合防災訓練
+    message: 「下神野地区自主防災組織」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
+  - rule: max-paragraph-length
+    line: 13
+    text: また、8月28日には、美里中学校と下神野地区自主防災組織の共催による総合防災訓練
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+  - rule: no-doubled-joshi
+    line: 13
+    text: の新型コロナウイルス感染症対策のトップである福祉保健部の野尻技監が大変忙しい中、
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 13
+    text: まちづくりに繋がるものであるとの思いを強くいたしました。午後の部では和歌山県の新
+    message: 「まち」と書いています（この文書はふつう「町」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: まちづくり is a set term written in kana; 町 in 紀美野町 is part of a place name, not the same word use

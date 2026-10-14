@@ -1,0 +1,13 @@
+id: nta-tsutatsu-shohi-05-01
+chaff: 0.33.0
+findings:
+  - rule: bracket-width-consistency
+    line: 9
+    text: (注)
+    message: 丸括弧を、全角で 16 箇所、半角で 10 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: unused-definition
+    line: 27
+    text: 「代物弁済による資産の譲渡」とは、債務者が債権者の承諾を得て、約定されていた弁済
+    message: 「代物弁済による資産の譲渡」を定義していますが、本文で使っていません
+    verdict: unjudged

@@ -1,0 +1,49 @@
+id: meti-press-level4-bus
+chaff: 0.33.0
+findings:
+  - rule: bracket-nesting
+    line: 14
+    text: 2021年度より経済産業省と国土交通省が共同で進めてきた「自動運転レベル4等先進
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+    note: follows from the unclosed 「 on the same line
+  - rule: max-sentence-length
+    line: 14
+    text: 2021年度より経済産業省と国土交通省が共同で進めてきた「自動運転レベル4等先進
+    message: この文は 172 文字あります（140 文字まで）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 14
+    text: 「自動運転レベル4等先進モビリティサービス研究開発・社会実装プロジェクト（以下「
+    message: 「「」が閉じていません
+    verdict: correct
+    note: the 「 before 自動運転レベル4 is never closed in the source
+  - rule: max-kanji-continuous
+    line: 19
+    text: 経済産業省と国土交通省では、自動運転の実現に向けて、国立研究開発法人産業技術総合
+    message: 「国立研究開発法人産業技術総合研究所」は漢字が 17 字続いています（10 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
+  - rule: max-paragraph-length
+    line: 19
+    text: 経済産業省と国土交通省では、自動運転の実現に向けて、国立研究開発法人産業技術総合
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+  - rule: latin-spacing
+    line: 37
+    text: " 40km/h"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。8 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: a label and its value in a spec line (最高速度 40km/h), separated by a space on purpose
+  - rule: heading-numbering-mix
+    line: 39
+    text: "## 担当"
+    message: 見出し「担当」だけ番号がありません（兄弟の見出しは「1．概要」など 3 個が番号付き）
+    verdict: false-positive
+    note: a closing contact block (## 担当) after numbered body sections is unnumbered by convention
+  - rule: latin-spacing
+    line: 43
+    text: " 3839～40）"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。8 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: a label and its value in a contact line (内線 3839～40), separated by a space on purpose

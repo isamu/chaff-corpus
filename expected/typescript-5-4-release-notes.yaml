@@ -1,0 +1,48 @@
+id: typescript-5-4-release-notes
+chaff: 0.33.0
+findings:
+  - rule: max-sentence-length
+    line: 41
+    text: Here, TypeScript decided that it wasn't
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 179
+    text: " - not just keys that can be used as pro"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 179
+    text: This might be more desirable if you need
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 218
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 291
+    text: Import attributes and assertions are now
+    message: The first sentence repeats the heading "Checked Import Attributes and Assertions"
+    verdict: unjudged
+  - rule: unknown-word
+    line: 322
+    text: courtsey of [Oleksandr Tarasiuk](https:/
+    message: '"courtsey" is not in the dictionary; did you mean "courtesy"?'
+    verdict: unjudged
+  - rule: name-variant
+    line: 343
+    text: TypScript 5.4 will be the last version i
+    message: '"TypScript" is one letter away from "TypeScript", which the document uses more than once'
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 422
+    text: more desirable, but may cause breaks in
+    message: '"more desirable" does not say what it is compared with'
+    verdict: unjudged
+  - rule: code-fence-language-mix
+    line: 439
+    text: "```"
+    message: This code block names no language, unlike the others (28 blocks name one)
+    verdict: unjudged

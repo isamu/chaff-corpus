@@ -1,0 +1,56 @@
+id: noaa-press-flood-mapping
+chaff: 0.33.0
+findings:
+  - rule: quote-style-consistency
+    line: 17
+    text: "'s flood inundation map (left) depicting"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 17
+    text: NOAA's flood inundation map (left) depic
+    message: '"NOAA" is used without an expansion (3 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 17
+    text: NWS)
+    message: '"NWS" is used without an expansion (3 such acronyms)'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 23
+    text: It’s a tool for forecasters, emergency m
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: the only contraction in the document, written with the curly apostrophe the document mostly uses
+  - rule: quote-style-consistency
+    line: 25
+    text: "'s mission to protect lives, safeguard p"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 39
+    text: '"FIM has been a game changer when briefi'
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 39
+    text: '" said National Weather Service Director'
+    message: The quote mark " here, where the document usually writes “” (2 of 12)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 39
+    text: '"FIM has been a game changer when briefi'
+    message: The quote mark " here, where the document usually writes “” (2 of 12)
+    verdict: correct
+    note: the closing " of the same quotation as the finding before
+  - rule: title-case-consistency
+    line: 41
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: false-positive
+    note: the capitals come from a product name (Flood Inundation Mapping), not title case
+  - rule: undefined-acronym
+    line: 43
+    text: GIS applications available in multiple f
+    message: '"GIS" is used without an expansion (3 such acronyms)'
+    verdict: correct

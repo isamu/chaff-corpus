@@ -1,0 +1,78 @@
+id: nws-heat-wave-safety
+chaff: 0.33.0
+findings:
+  - rule: preamble-length
+    line: 9
+    text: What is a heat wave? A heat wave is a pe
+    message: 3 paragraphs before the first heading (limit 2)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 11
+    text: " - from transportation to utilities to c"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 11
+    text: Extreme heat also impacts our infrastruc
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 15
+    text: "### +  How to Stay Safe During Extreme H"
+    message: Heading "+  How to Stay Safe During Extreme Heat Events" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 17
+    text: ""
+    message: Section "Outdoor Activities" has no number, code or link (4 of 8 sections)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 17
+    text: "###### Outdoor Activities"
+    message: Heading "Outdoor Activities" goes from level 3 to level 6 (expected 4)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 23
+    text: ""
+    message: Section "Eating and Drinking" has no number, code or link (4 of 8 sections)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 25
+    text: Don't leave it sitting in the sun. Meats
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 26
+    text: Drink plenty of water, non-alcoholic and
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 36
+    text: ""
+    message: Section "Check on Others" has no number, code or link (4 of 8 sections)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 51
+    text: "###### Heat Safety in Vehicles"
+    message: Heading "Heat Safety in Vehicles" goes from level 3 to level 6 (expected 4)
+    verdict: unjudged
+  - rule: weasel-word
+    line: 53
+    text: Even on mild days in the 70s, studies ha
+    message: '"studies have shown" does not say who'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 55
+    text: Touch a child's safety seat and safety b
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 59
+    text: Don't leave sleeping infants in the car.
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 61
+    text: ""
+    message: Section "+ Heat Safety for Outdoor Workers" has no number, code or link (4 of 8 sections)
+    verdict: unjudged

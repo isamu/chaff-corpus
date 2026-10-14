@@ -1,0 +1,288 @@
+id: usajobs-va-it-specialist-customer-support
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "IT Specialist (System Analyst/Customer Support)" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: name-variant
+    line: 7
+    text: Information & Technology (OIT) End User
+    message: '"Information & Technology" is written "Information Technology" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 15
+    text: "## Summary"
+    message: The heading "Summary" repeats the one on line 11 under the same parent
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 53
+    text: GS 11 - 12
+    message: '"GS" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 69
+    text: " - You may be expected to travel for thi"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 135
+    text: ALL US CITIZENS
+    message: '"ALL US CITIZENS" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 137
+    text: "DIRECT HIRE AUTHORITY: This position is"
+    message: '"DIRECT HIRE AUTHORITY" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 137
+    text: CFR 337.205) for this occupation.
+    message: '"CFR" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 147
+    text: This position is established to perform
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 155
+    text: Tests and optimizes the functionality of
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 157
+    text: The incumbent is responsible for resolvi
+    message: '"The incumbent is responsible for resolving user trouble tickets, and for providing consulting services to the network administrator, database analyst, for specifically difficult problems." opens with a noun phrase; the other items in this list open with a verb (1 of 6)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 158
+    text: ESD policies and procedures. The trouble
+    message: '"ESD" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 165
+    text: NICE Cybersecurity Workforce Framework w
+    message: '"NICE" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 169
+    text: "PD#: IT Specialist (System Analyst/Custo"
+    message: '"PD" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 197
+    text: Selected applicants will be required to
+    message: '"applicants will be" appears 7 times (limit 5)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 197
+    text: REAL ID compliant cannot be utilized as
+    message: '"REAL" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 221
+    text: " - Is thorough when performing work and"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 222
+    text: " - Works with clients and customers (tha"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 222
+    text: Customer Service - Works with clients an
+    message: This sentence runs 71 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 223
+    text: " - Expresses information (for example, i"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 223
+    text: Oral Communication - Expresses informati
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 224
+    text: " - Identifies problems; determines accur"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 258
+    text: Albany, NY
+    message: This sentence runs 81 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 301
+    text: HRA/OSP) at The Fair Chance Act.
+    message: '"HRA" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 301
+    text: OSP) at The Fair Chance Act.
+    message: '"OSP" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 305
+    text: ""
+    message: Section "Benefits" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 309
+    text: "  Learn more about federal benefits."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 126)
+    verdict: unjudged
+  - rule: name-variant
+    line: 321
+    text: USA Hire Assessment includes a cut score
+    message: '"USA Hire Assessment" is written "USAHire Assessment" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 323
+    text: IN DESCRIBING YOUR EXPERIENCE, PLEASE BE
+    message: '"IN DESCRIBING YOUR EXPERIENCE, PLEASE BE CLEAR AND SPECIFIC" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 323
+    text: WE WILL NOT MAKE ASSUMPTIONS REGARDING Y
+    message: '"WE WILL NOT MAKE ASSUMPTIONS REGARDING YOUR EXPERIENCE" is written in capitals'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 329
+    text: Resumes must be legible so they can be r
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: missing-space-after-comma
+    line: 329
+    text: ",and must be 5MB or less. We recommend s"
+    message: No space after the comma in "address,and"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: DOC or DOCX). We do not accept PDF portf
+    message: '"DOC" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: DOCX). We do not accept PDF portfolio fi
+    message: '"DOCX" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: JPG, JPEG, PNG, RTF, TXT, PDF, ODT or Wo
+    message: '"JPG" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: ODT or Word (DOC or DOCX). We do not acc
+    message: '"ODT" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: RTF, TXT, PDF, ODT or Word (DOC or DOCX)
+    message: '"RTF" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 329
+    text: TXT, PDF, ODT or Word (DOC or DOCX). We
+    message: '"TXT" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 337
+    text: ""
+    message: Section "Benefits" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 337
+    text: "# Benefits"
+    message: The heading "Benefits" repeats the one on line 305 under the same parent
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 341
+    text: "  Learn more about federal benefits."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 126)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 383
+    text: To be qualified you must submit appropri
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 383
+    text: OPM's Career Transition Resources websit
+    message: '"OPM" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 397
+    text: JOBS account or log in to your existing
+    message: '"JOBS" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 421
+    text: "### Agency contact information"
+    message: Heading "Agency contact information" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 431
+    text: DAS for Information Technology - 103
+    message: '"DAS" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 432
+    text: NW
+    message: '"NW" is used without an expansion (18 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 436
+    text: ""
+    message: Section "Next steps" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 442
+    text: The Department of Veterans Affairs perfo
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 446
+    text: ""
+    message: Section "Fair and transparent" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 486
+    text: To be qualified you must submit appropri
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 539
+    text: ""
+    message: Section "Next steps" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 545
+    text: The Department of Veterans Affairs perfo
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 549
+    text: ""
+    message: Section "Fair and transparent" has no number, code or link (7 of 22 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 559
+    text: " - we have built a team whose primary mo"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 565
+    text: "DIRECT HIRE AUTHORITY: This position is"
+    message: '"DIRECT HIRE AUTHORITY" is written in capitals'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 584
+    text: Learn more about what it's like to work
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged

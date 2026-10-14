@@ -1,0 +1,208 @@
+id: crs-r47585-subcontracting
+chaff: 0.33.0
+findings:
+  - rule: max-sentence-length
+    line: 7
+    text: Congress may be interested in the polici
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 7
+    text: Congress may be interested in the polici
+    message: '"small business subcontracting" appears 19 times (limit 5)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 11
+    text: Other federal policies that foster small
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: While there is not a statutorily require
+    message: This sentence runs 68 words (limit 45)
+    verdict: unjudged
+  - rule: name-variant
+    line: 17
+    text: HUB Zone) small businesses.
+    message: '"HUB Zone" is written "HUBZone" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: In addition to regulations designed to e
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 23
+    text: Small businesses may have the opportunit
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 45
+    text: APEX Accelerators program for contractor
+    message: '"APEX" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 51
+    text: When the Small Business Act of 1953 auth
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 79
+    text: In order to incentivize the creation of
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 85
+    text: To limit the amount of small business co
+    message: This sentence runs 63 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 97
+    text: There are two types of subcontracting pl
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 99
+    text: According to the SBA, PCRs "view many fe
+    message: "\"they're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 99
+    text: Contracting officers have a few obligati
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 107
+    text: PCR reviews are followed, most of which
+    message: '"PCR" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 119
+    text: awardee (e.g., Small Disadvantaged Busin
+    message: '"awardee" is not in the dictionary; did you mean "awarded"?'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: After reviewing its policies, DOD found
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 129
+    text: Specifically, it directs contractors to
+    message: This sentence runs 64 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 143
+    text: To ensure a "fair proportion" of small b
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: CRS Report RS22536, Overview of the Fede
+    message: '"CRS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 151
+    text: 15 U.S.C. §644(g)(1).
+    message: 16 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 177
+    text: '"Any contractor receiving a contract wit'
+    message: This sentence runs 110 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 203
+    text: The 1988 amendments "require that every
+    message: This sentence runs 87 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 205
+    text: A Senate report during deliberations ove
+    message: This sentence runs 52 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 211
+    text: Similarly situated "means a subcontracto
+    message: This sentence runs 140 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 211
+    text: BD Program Participant; for a WOSB or ED
+    message: '"BD" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 211
+    text: EDWOSB contract, a subcontractor that is
+    message: '"EDWOSB" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 211
+    text: SDVOSB contract, a subcontractor that is
+    message: '"SDVOSB" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 211
+    text: VOSB contract, a subcontractor that is a
+    message: '"VOSB" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 211
+    text: WOSB or EDWOSB contract, a subcontractor
+    message: '"WOSB" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 221
+    text: Per 48 C.F.R. §19.705 2(b), contracting
+    message: This sentence runs 78 words (limit 45)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 233
+    text: ).
+    message: '")" closes nothing that was opened'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 239
+    text: Per 48 C.F.R. §19.705-2(b), contracting
+    message: This sentence runs 77 words (limit 45)
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 247
+    text: 48 C.F.R. §19.705-3 and SBA, "Federal Co
+    message: 6 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 265
+    text: According to SBA standard operating proc
+    message: This sentence runs 58 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 265
+    text: SOP 60 03 7), "it is the responsibility
+    message: '"SOP" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 267
+    text: FY 2024 Congressional Budget Justificati
+    message: '"FY" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 279
+    text: According to acquisition regulations, "T
+    message: This sentence runs 74 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 285
+    text: According to the SBA's FY2025 Goaling Gu
+    message: This sentence runs 71 words (limit 45)
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 287
+    text: GSA, Subcontracting Report by North Amer
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 297
+    text: According to the DOD study, "When small
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged

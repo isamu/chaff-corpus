@@ -1,0 +1,73 @@
+id: arxiv-2609-27842-genai-assessment
+chaff: 0.33.0
+findings:
+  - rule: all-caps-shouting
+    line: 7
+    text: WORKING GROUP MEMBERS
+    message: '"WORKING GROUP MEMBERS" is written in capitals'
+    verdict: unjudged
+  - rule: abstract-length
+    line: 55
+    text: "### Introduction"
+    message: This paper has sections but no abstract
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 99
+    text: 2 rooms that were cross-cutting by desig
+    message: '"2" here, where the document usually writes numbers below ten like "two" (1 of 18)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 211
+    text: Several emphasized asking students to ex
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 263
+    text: centred on whether students must first l
+    message: '"centred" here, where the document usually spells it "centered" (5 of 15)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 265
+    text: analyse and improve. Unless in a control
+    message: '"analyse" here, where the document usually spells it "analyze" (5 of 15)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 265
+    text: recognised that AI often produces good-q
+    message: '"recognised" here, where the document usually spells it "recognized" (3 of 26)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 267
+    text: recognising that AI tools are becoming p
+    message: '"recognising" here, where the document usually spells it "recognizing" (3 of 26)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 269
+    text: analysing outputs and AI-generated unit
+    message: '"analysing" here, where the document usually spells it "analyzing" (5 of 15)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 269
+    text: recognised that scaling assessment remai
+    message: '"recognised" here, where the document usually spells it "recognized" (3 of 26)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 419
+    text: But the balance is genuinely hard to str
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 605
+    text: signalling that cheating was expected.
+    message: '"signalling" here, where the document usually spells it "signaling" (5 of 15)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 651
+    text: "#### Do students still need the fundamen"
+    message: Heading "Do students still need the fundamentals, and what are they now?" goes from level 2 to level 4 (expected 3)
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 723
+    text: catalogued here are not the output of a
+    message: '"catalogued" here, where the document usually spells it "cataloged" (5 of 15)'
+    verdict: unjudged

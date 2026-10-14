@@ -1,0 +1,318 @@
+id: 18f-handbook-travel-faq
+chaff: 0.33.0
+findings:
+  - rule: hyphen-as-dash
+    line: 24
+    text: " - New"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 41
+    text: TDY Per Diem Location’.
+    message: '"TDY" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 68
+    text: TTS travel team
+    message: '"TTS" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: If any part of the fare that you chose i
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: step-statement-mix
+    line: 107
+    text: This will take you to the **Trip Overvie
+    message: This step is a statement that opens with its subject, unlike the other 2 instructions
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 127
+    text: GSA
+    message: '"GSA" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 145
+    text: \*Note:** if you are coming back to this
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 161
+    text: "[here](https://www.gsa.gov/travel/plan-b"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: step-statement-mix
+    line: 173
+    text: You will now be taken back to your trip
+    message: This step is a statement that opens with its subject, unlike the other 6 instructions
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 186
+    text: When you are attending a conference wher
+    message: This sentence runs 52 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 192
+    text: TMS or ETS (Concur).
+    message: '"TMS" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 209
+    text: Before booking a rental car** ensure tha
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 214
+    text: "[here](https://docs.google.com/document/"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 231
+    text: FTR §301-10.450(c)](https://www.gsa.gov/
+    message: '"FTR" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 240
+    text: Rental car companies participating in th
+    message: This sentence runs 73 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 250
+    text: CONUS will not be reimbursed for
+    message: '"CONUS" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 265
+    text: On the **Trip Booking Information** page
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 266
+    text: and/or budget.
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: name-variant
+    line: 268
+    text: Ad Trav to book travel, you'll need to o
+    message: '"Ad Trav" is written "AdTrav" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 283
+    text: PIF
+    message: '"PIF" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 286
+    text: (a list of options for the division/orga
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 348
+    text: Mileage:** You must [add this in as an e
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 352
+    text: Mileage from your home to the airport (p
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 374
+    text: FAIL_ or a
+    message: '"FAIL" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 378
+    text: "[here](https://docs.google.com/document/"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 405
+    text: "[here](#issues-with-reimbursement)"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 413
+    text: You must formally request your authorizi
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 415
+    text: IRL" or large team gathering, in which
+    message: '"IRL" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 475
+    text: If more than one authorizing official
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 483
+    text: two
+    message: '"two" here, where the document usually writes numbers below ten like "6" (1 of 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 504
+    text: However, if you will be [extending your
+    message: This sentence runs 56 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 550
+    text: If you'd like to schedule personal trave
+    message: This sentence runs 58 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 556
+    text: \*Note that while GSA travel policy does
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 565
+    text: Please reach out to
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: article-sound
+    line: 574
+    text: an reasonable
+    message: '"an reasonable" takes "a" before that sound'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 579
+    text: diems.
+    message: '"diems" is not in the dictionary; did you mean "deems"?'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 583
+    text: '#### How do I create a "Voucher from aut'
+    message: Heading "How do I create a "Voucher from authorization"?" goes from level 2 to level 4 (expected 3)
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 606
+    text: "[here](#when-are-receipts-or-further-jus"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 611
+    text: If you changed your trip such that trip
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 643
+    text: CASH. Do not use your travel card.
+    message: '"CASH" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 664
+    text: IBA** for anything paid for on the trave
+    message: '"IBA" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 668
+    text: CBA** is only used for air and rail expe
+    message: '"CBA" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 673
+    text: (looks like a slip of paper with a check
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 693
+    text: POV mileage or rental car is pre-approve
+    message: '"POV" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 705
+    text: (also requires
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 712
+    text: "##### Expenses requiring further justifi"
+    message: The heading "Expenses requiring further justification:" ends with ":", while 11 other headings end bare ("What if I can't find my authorization listed here?")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 728
+    text: DC, and is 75% of $69 ($51.75) on the fi
+    message: '"DC" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: person-consistency
+    line: 736
+    text: One can create a new M&IE expense with e
+    message: '"One can" here, where the document usually says "you" (3 of 306)'
+    verdict: unjudged
+  - rule: person-consistency
+    line: 741
+    text: One can change the payment method of M&I
+    message: '"One can" here, where the document usually says "you" (3 of 306)'
+    verdict: unjudged
+  - rule: person-consistency
+    line: 746
+    text: One can leave the payment method of M&IE
+    message: '"One can" here, where the document usually says "you" (3 of 306)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 758
+    text: Click on the **View Per Diem Conditions*
+    message: '"Click on the   View Per Diem Conditions  ." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 764
+    text: If it didn't work, just go
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 798
+    text: If you are seeking reimbursement for per
+    message: This sentence runs 53 words (limit 40)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 799
+    text: " - Miscellaneous** as the expense"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 807
+    text: HRM](https://insite.gsa.gov/directives-l
+    message: '"HRM" is used without an expansion (16 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 807
+    text: In order to claim reimbursement, get an
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 821
+    text: (this threshold is $25 for
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 824
+    text: Any local transit expense other than pub
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 836
+    text: "[here](#how-to-justify-rental-cars-and-p"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 845
+    text: "A: First, verify that your most recent v"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 889
+    text: Note:** Vouchers should NOT be amended i
+    message: This sentence runs 54 words (limit 40)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 890
+    text: ([IBA to CASH](#positive-balance-on-trav
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 896
+    text: USDA-OCFO Financial Operations & Disburs
+    message: '"USDA-OCFO" is used without an expansion (16 such acronyms)'
+    verdict: unjudged

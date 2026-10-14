@@ -1,0 +1,83 @@
+id: gutenberg-whitman-leaves-of-grass
+chaff: 0.33.0
+findings:
+  - rule: name-variant
+    line: 1492
+    text: Texan ranch,
+    message: '"Texan" is one letter away from "Texas", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 3301
+    text: Flakes of breast-muscle, pliant backbone
+    message: '"Flakes" is one letter away from "Flames", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 4148
+    text: Stain every page, stain every song I sin
+    message: '"Stain" is one letter away from "Spain", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 4798
+    text: Rhine, the Elbe, or the Weser! you worki
+    message: '"Rhine" is one letter away from "Thine", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 5747
+    text: Arkansaw, the Rio Grande,
+    message: '"Arkansaw" is one letter away from "Arkansas", which the document uses more than once'
+    verdict: unjudged
+  - rule: name-variant
+    line: 6467
+    text: Virgil and Dante, nor myriad memories, p
+    message: '"Virgil" is one letter away from "Vigil", which the document uses more than once'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 7724
+    text: "[the 18th Year of these States"
+    message: '"[" is never closed'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 7832
+    text: "[1859-60"
+    message: '"[" is never closed'
+    verdict: unjudged
+  - rule: name-variant
+    line: 9135
+    text: Congressmen? are those the great Judges?
+    message: '"Congressmen" is one letter away from "Congressman", which the document uses more than once'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 11029
+    text: "[May 4, 1865"
+    message: '"[" is never closed'
+    verdict: unjudged
+  - rule: name-variant
+    line: 13144
+    text: Paradiso,
+    message: '"Paradiso" is one letter away from "Paradise", which the document uses more than once'
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 16889
+    text: My science-friend, my noblest woman-frie
+    message: Brackets nested 6 deep (limit 2)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 16891
+    text: “The sum, concluding all we know of old
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 16893
+    text: “Of all Geologies--Histories--of all Ast
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 16895
+    text: “Is, that we all are onward, onward, spe
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: name-variant
+    line: 17574
+    text: New-England’s farms, from fertile Pennsy
+    message: '"New-England" is written "New England" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged

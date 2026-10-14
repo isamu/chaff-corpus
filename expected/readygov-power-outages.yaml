@@ -1,0 +1,32 @@
+id: readygov-power-outages
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "Power Outages" has no number, code or link (3 of 7 sections)
+    verdict: false-positive
+    note: "a public safety-tips page (filed as business/report): advice sections need no number, code or link"
+  - rule: concrete-evidence-density
+    line: 12
+    text: ""
+    message: Section "Power Outage Tips" has no number, code or link (3 of 7 sections)
+    verdict: false-positive
+    note: "a public safety-tips page (filed as business/report): advice sections need no number, code or link"
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: Section "Preparing for a Power Outage" has no number, code or link (3 of 7 sections)
+    verdict: false-positive
+    note: "a public safety-tips page (filed as business/report): advice sections need no number, code or link"
+  - rule: oxford-comma-consistency
+    line: 35
+    text: Turn off or disconnect appliances, equip
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "appliances, equipment, or electronics: the one Oxford comma"
+  - rule: list-item-form-mix
+    line: 45
+    text: Generators and fuel should always be use
+    message: '"Generators and fuel should always be used outdoors and at least 20 feet away from windows, doors and attached garages." opens with a noun phrase; the other items in this list open with a verb (1 of 5)'
+    verdict: correct

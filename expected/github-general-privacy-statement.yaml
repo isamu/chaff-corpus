@@ -1,0 +1,128 @@
+id: github-general-privacy-statement
+chaff: 0.33.0
+findings:
+  - rule: vague-link-text
+    line: 61
+    text: "[this](#what-are-your-cookie-choices-and"
+    message: The link text "this" does not say where it goes
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 104
+    text: VS Code website](https://code.visualstud
+    message: '"VS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 114
+    text: GDPR, ensuring a lawful basis for each p
+    message: '"GDPR" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 133
+    text: github[dot]com and follow the instructio
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 133
+    text: github[dot]com for any feedback or conce
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 133
+    text: ’s Office website.
+    message: Quote marks are written two ways in this document (9 curly, 10 straight)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 143
+    text: GitHub also complies with the EU-U.S. Da
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 149
+    text: github[dot]com.
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 169
+    text: github[dot]com.
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 253
+    text: which set non-essential cookies.
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 254
+    text: which may limit the types of cookies you
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 257
+    text: GPC) to communicate your privacy prefere
+    message: '"GPC" is used here, before it is defined on line 289'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 259
+    text: DAA](http://optout.aboutads.info/)
+    message: '"DAA" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 259
+    text: NAI](http://optout.networkadvertising.or
+    message: '"NAI" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 281
+    text: '" which includes GitHub applications, so'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 281
+    text: '"Services" which includes GitHub applica'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 287
+    text: github[dot]com and follow the instructio
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 289
+    text: '" link on the footer of our Websites or'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 289
+    text: '") if available. Authorized agents can a'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 289
+    text: '"Do Not Share My Personal Information" l'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 289
+    text: '"GPC") if available. Authorized agents c'
+    message: The quote mark " here, where the document usually writes “” (6 of 46)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 307
+    text: github[dot]com). Please note that busine
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 311
+    text: github[dot]com.
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 313
+    text: github[dot]com.
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 324
+    text: github[dot]com.
+    message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged

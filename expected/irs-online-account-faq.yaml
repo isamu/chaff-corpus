@@ -1,0 +1,78 @@
+id: irs-online-account-faq
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 11
+    text: IRS customer service representatives can
+    message: '"IRS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 92
+    text: If the amount shown is zero, then this i
+    message: This sentence runs 51 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 96
+    text: You can make a payment toward an amount
+    message: This sentence runs 62 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 128
+    text: ACH debit from your checking or savings
+    message: '"ACH" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 132
+    text: “Payment Activity" tab.
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 158
+    text: EIP page on IRS.gov. For more informatio
+    message: '"EIP" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 207
+    text: Payment applied incorrectly
+    message: '"Payment applied incorrectly" opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 234
+    text: CP number and subject under the “Notices
+    message: '"CP" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 264
+    text: Your online account will show all inform
+    message: '"with the exception of" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 304
+    text: If you had coverage from a Healthcare Ex
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 312
+    text: VOID” box checked at the top, it general
+    message: '"VOID" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 328
+    text: Tax-related identity theft occurs when s
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 328
+    text: SSN. Or, the IRS may send you a letter s
+    message: '"SSN" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 340
+    text: If the tax you owe is because of an audi
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 394
+    text: In order to qualify for assistance from
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged

@@ -1,0 +1,53 @@
+id: us-6285999-node-ranking
+chaff: 0.33.0
+findings:
+  - rule: max-paragraph-length
+    line: 21
+    text: Due to the developments in computer tech
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: CERN, Geneva, May 25-27, 1994). The Hype
+    message: '"CERN" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: "GENVL and WWWW: Tools for Taming the Web"
+    message: '"GENVL" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: IDD Information Services, (http://rankde
+    message: '"IDD" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: "WWWW: Tools for Taming the Web, First In"
+    message: '"WWWW" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 67
+    text: where B1, . . . , Bn are the backlink pa
+    message: This paragraph runs 9 sentences (limit 8)
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 99
+    text: Because the rank of various different do
+    message: '"various different" says the same thing twice'
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 99
+    text: Those skilled in the art will appreciate
+    message: '"various different" says the same thing twice'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 125
+    text: Consistent with the present invention, t
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 143
+    text: The search engine is used to locate docu
+    message: This paragraph runs 9 sentences (limit 8)
+    verdict: unjudged

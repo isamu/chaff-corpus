@@ -1,0 +1,131 @@
+id: 18f-handbook-projects-in-distress
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 45
+    text: TTS consultants.
+    message: '"TTS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 88
+    text: README](https://github.com/18F/staffing/
+    message: '"README" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 99
+    text: Pivoting a project is appropriate when b
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 117
+    text: BD
+    message: '"BD" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 117
+    text: Note:** If we wouldn’t accept a proposed
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 127
+    text: As soon as you realize, go back as far a
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 153
+    text: While it’s an undesirable option, it can
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 161
+    text: "PO: Partner PO cannot regularly meet or"
+    message: '"PO" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 180
+    text: "NB:"
+    message: '"NB" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 189
+    text: Teams should consider _pausing_ a projec
+    message: '"in a timely manner" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 189
+    text: Teams should consider _pausing_ a projec
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 191
+    text: If the partner is unable to address the
+    message: '"in a timely manner" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 191
+    text: If the partner is unable to address the
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 198
+    text: When partners are unable to address bloc
+    message: '"in a timely manner" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 198
+    text: When partners are unable to address bloc
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 208
+    text: " - what must change before a future 18F"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 222
+    text: re-start time.
+    message: '"re-start" here, where the document usually writes "restart" (1 of 5)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 240
+    text: " - each team member’s opportunity cost t"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 265
+    text: Teams or individuals are driven to hold
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 268
+    text: Project scope is inappropriate:** The pa
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 272
+    text: COTS software), etc.
+    message: '"COTS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 301
+    text: Maintain a good rapport** – ideally, 18F
+    message: |-
+      "Maintain a good rapport   – ideally, 18F and the agency maintain a good
+        relationship so if there is an appropriate project in the future, we can
+        partner with the agency again." opens with a verb; the other items in this list open with a noun phrase (1 of 4)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 301
+    text: Maintain a good rapport** – ideally, 18F
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 304
+    text: Return funding in a timely manner** - so
+    message: '"in a timely manner" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 304
+    text: Return funding in a timely manner** - so
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged

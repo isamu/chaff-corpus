@@ -1,0 +1,28 @@
+id: nasa-press-prima-new-mission-class
+chaff: 0.33.0
+findings:
+  - rule: heading-level-skip
+    line: 11
+    text: "### NASA Headquarters"
+    message: Heading "NASA Headquarters" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: This includes the origins of planets out
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: NASA selected PRIMA for development afte
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 27
+    text: NASA selected PRIMA for development afte
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: The PRIMA mission also will have contrib
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged

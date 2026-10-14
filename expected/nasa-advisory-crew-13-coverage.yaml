@@ -1,0 +1,58 @@
+id: nasa-advisory-crew-13-coverage
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 9
+    text: MEDIA ADVISORYM26-071
+    message: '"MEDIA" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 11
+    text: "### Kennedy Space Center"
+    message: Heading "Kennedy Space Center" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 13
+    text: NASA’s SpaceX Crew-13 mission to the Int
+    message: '"NASA" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: EDT, Thursday, Oct. 1, from Space Launch
+    message: '"EDT" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 57
+    text: Julianna Scheiman, director, NASA Scienc
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 85
+    text: FM mode, heard within Brevard County on
+    message: '"FM" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 85
+    text: KSC Amateur Radio Club’s UHF radio frequ
+    message: '"KSC" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 85
+    text: UHF radio frequency 444.925 MHz, FM mode
+    message: '"UHF" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 85
+    text: VHF radio frequency 146.940 MHz and KSC
+    message: '"VHF" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 101
+    text: ISS National Lab, @SpaceX
+    message: '"ISS" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 103
+    text: NASAKennedy, ISS, ISS National Lab
+    message: '"NASAKennedy" is written "NASA Kennedy" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged

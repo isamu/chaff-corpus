@@ -1,0 +1,113 @@
+id: ecfr-16-cfr-310-telemarketing
+chaff: 0.33.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "#### Authority:"
+    message: Heading "Authority:" goes from level 1 to level 4 (expected 2)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: FR 48516, Aug. 10, 2010, unless otherwis
+    message: '"FR" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 27
+    text: (f) Cash-to-cash money transfer means th
+    message: Brackets nested 3 deep (limit 2)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 27
+    text: (as defined in section 106(2) of the Ele
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: CFR 1005.20, pertaining to gift cards; o
+    message: '"CFR" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 35
+    text: (g) Cash reload mechanism is a device, a
+    message: Brackets nested 3 deep (limit 2)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 35
+    text: (as defined in section 106(2) of the Ele
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 89
+    text: CC, Availability of Funds and Collection
+    message: '"CC" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 209
+    text: "###### Footnotes - 310.3"
+    message: Heading "Footnotes - 310.3" goes from level 4 to level 6 (expected 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 345
+    text: HIPAA Privacy Rule, 45 CFR 160.103.
+    message: '"HIPAA" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 393
+    text: "###### Footnotes - 310.4"
+    message: Heading "Footnotes - 310.4" goes from level 4 to level 6 (expected 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 399
+    text: TCPA, 47 U.S.C. 227, and 47 CFR part 64.
+    message: '"TCPA" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 471
+    text: "ITU-T E.164: Series E: Overall Network O"
+    message: '"ITU" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 493
+    text: NW, Washington, DC 20580, or by email at
+    message: '"NW" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 501
+    text: "###### Footnotes - 310.5"
+    message: Heading "Footnotes - 310.5" goes from level 4 to level 6 (expected 5)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 553
+    text: "###### Cross Reference"
+    message: Heading "Cross Reference" goes from level 4 to level 6 (expected 5)
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 553
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 557
+    text: (ii), and the seller does not access the
+    message: '"(ii)" (address 310.4.b.1.iii.B.ii) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 557
+    text: § 310.4(b)(1)(iii)(B)(i) or (ii), and th
+    message: '"§ 310.4(b)(1)(iii)(B)(i)" (address 310.4.b.1.iii.B.i) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 559
+    text: (ii), and the seller does not access the
+    message: '"(ii)" (address 310.4.b.1.iii.B.ii) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 559
+    text: § 310.4(b)(1)(iii)(B)(i) or (ii), and th
+    message: '"§ 310.4(b)(1)(iii)(B)(i)" (address 310.4.b.1.iii.B.i) is not in this document'
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 569
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: unjudged

@@ -1,0 +1,13 @@
+id: cfpb-blog-imposter-scams
+chaff: 0.33.0
+findings:
+  - rule: preamble-length
+    line: 5
+    text: This week we confirmed that scammers are
+    message: 4 paragraphs before the first heading (limit 2)
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 34
+    text: " ."
+    message: A space before "."
+    verdict: unjudged

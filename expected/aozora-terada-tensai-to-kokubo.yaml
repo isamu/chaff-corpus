@@ -1,0 +1,88 @@
+id: aozora-terada-tensai-to-kokubo
+chaff: 0.33.0
+findings:
+  - rule: topic-predicate-distance
+    line: 5
+    text: 「非常時」というなんとなく不気味なしかしはっきりした意味のわかりにくい言葉がはや
+    message: 「は」で出した主題から述語まで 122 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 7
+    text: しかし統計に関する数理から考えてみると、一家なり一国なりにある年は災禍が重畳しま
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 7
+    text: 悪い年回りはむしろいつかは回って来るのが自然の鉄則であると覚悟を定めて、良い年回
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 8
+    text: 日本はその地理的の位置がきわめて特殊であるために国際的にも特殊な関係が生じいろい
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 8
+    text: 日本はその地理的の位置がきわめて特殊であるために国際的にも特殊な関係が生じいろい
+    message: 「は」で出した主題から述語まで 159 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 9
+    text: わが国のようにこういう災禍の頻繁であるということは一面から見ればわが国の国民性の
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 11
+    text: もう少し文化が進んで小屋を作るようになっても、テントか掘っ立て小屋のようなもので
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 11
+    text: 人類がまだ草昧の時代を脱しなかったころ、がんじょうな岩山の洞窟の中に住まっていた
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 13
+    text: それは人間の団体、なかんずくいわゆる国家あるいは国民と称するものの有機的結合が進
+    message: 「は」で出した主題から述語まで 148 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 18
+    text: もっとも、送電線にしても工学者の計算によって相当な風圧を考慮し若干の安全係数をか
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 20
+    text: 大震後横浜から鎌倉へかけて被害の状況を見学に行ったとき、かの地方の丘陵のふもとを
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 23
+    text: 旧村落は「自然淘汰」という時の試練に堪えた場所に「適者」として「生存」しているの
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: そうして付け焼き刃の文明に陶酔した人間はもうすっかり天然の支配に成功したとのみ思
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: もっともこれは単なる想像であるが、しかし自分が最近に中央線の鉄道を通過した機会に
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: 旧村落は「自然淘汰」という時の試練に堪えた場所に「適者」として「生存」しているの
+    message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 27
+    text: 国家の安全を脅かす敵国に対する国防策は現に政府当局の間で熱心に研究されているであ
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 28
+    text: わが国の地震学者や気象学者は従来かかる国難を予想してしばしば当局と国民とに警告を
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged

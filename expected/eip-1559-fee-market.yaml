@@ -1,0 +1,98 @@
+id: eip-1559-fee-market
+chaff: 0.33.0
+findings:
+  - rule: max-paragraph-length
+    line: 19
+    text: There is a base fee per gas in protocol,
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 19
+    text: There is a base fee per gas in protocol,
+    message: This sentence runs 44 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 24
+    text: Senders will always pay the base fee per
+    message: "\"doesn't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 24
+    text: Senders will always pay the base fee per
+    message: This sentence runs 48 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 29
+    text: It's absurd to suggest that the cost inc
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: It's absurd to suggest that the cost inc
+    message: This sentence runs 55 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 30
+    text: "Needless delays for users**: because of"
+    message: This sentence runs 66 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 34
+    text: The proposal in this EIP is to start wit
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 36
+    text: Finally, ensuring the miner of a block d
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 42
+    text: As of `FORK_BLOCK_NUMBER`, a new [EIP-27
+    message: 6 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 305
+    text: "  This is due to the fact that upgrading"
+    message: Sentences are spaced two ways in this document (14 with two spaces, 14 with one)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 305
+    text: This is due to the fact that upgrading f
+    message: '"due to the fact that" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 308
+    text: If you only take the block header bytes
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 308
+    text: The datastructure that is passed into ke
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 315
+    text: It is possible that one or more clients
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 318
+    text: It is recommended that transactions with
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 318
+    text: It is recommended that transactions with
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 321
+    text: It is possible that miners will mine emp
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 321
+    text: It is possible that miners will mine emp
+    message: '"until such time as" can be said in fewer words'
+    verdict: unjudged

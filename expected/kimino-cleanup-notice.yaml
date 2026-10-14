@@ -1,0 +1,31 @@
+id: kimino-cleanup-notice
+chaff: 0.33.0
+findings:
+  - rule: max-kanji-continuous
+    line: 7
+    text: 町民一斉清掃は、紀美野町青少年育成町民会議が提唱し、毎年2回（5月・10月の第3
+    message: 「紀美野町青少年育成町民会議」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
+  - rule: bracket-width-consistency
+    line: 48
+    text: )へご連絡をお願いします。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。18 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 48
+    text: )へご連絡をお願いします。
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: "the same ) as bracket-width-consistency on this line: one mistake reported by two rules"
+  - rule: max-kanji-continuous
+    line: 74
+    text: 紀美野町青少年育成町民会議
+    message: 「紀美野町青少年育成町民会議」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (here the signature line)
+  - rule: invisible-character
+    line: 84
+    text: ​​​​​​​
+    message: ゼロ幅の字（U+200B）が 7 字あります。検索やコピーで語が切れます
+    verdict: correct

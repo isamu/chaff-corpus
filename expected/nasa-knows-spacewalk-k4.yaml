@@ -1,0 +1,13 @@
+id: nasa-knows-spacewalk-k4
+chaff: 0.33.0
+findings:
+  - rule: heading-echo
+    line: 27
+    text: Astronauts go on spacewalks for many rea
+    message: The first sentence repeats the heading "Why Do Astronauts Go on Spacewalks?"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 37
+    text: If they didn’t get rid of the nitrogen,
+    message: "\"didn't\" is written differently from the rest of the document"
+    verdict: unjudged

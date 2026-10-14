@@ -42,4 +42,4 @@ jobs:
 
       # Fails only when a correct finding is lost, a fully judged document gets a new finding, or a meta is invalid.
       - name: run chaff over the corpus
-        run: yarn run-corpus
+        run: yarn run-corpus --jobs 4

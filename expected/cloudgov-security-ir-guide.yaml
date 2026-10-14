@@ -1,0 +1,158 @@
+id: cloudgov-security-ir-guide
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 12
+    text: ""
+    message: Section "Cloud.gov" has no number, code or link (4 of 17 sections)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 17
+    text: ’s Technology Transformation Service por
+    message: The quote mark ’ here, where the document usually writes ' (2 of 33)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 23
+    text: TTS Incident Response Process](https://h
+    message: '"TTS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: (If you're a member of the public who ha
+    message: This sentence runs 69 words (limit 45)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 25
+    text: ’ve discovered, as set out in that polic
+    message: The quote mark ’ here, where the document usually writes ' (2 of 33)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 60
+    text: GSA, TTS, and cloud.gov coordinate on no
+    message: '"GSA" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 70
+    text: GitHub (PII, etc.).
+    message: '"GitHub" is written "Github" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 70
+    text: GitHub (PII, etc.).
+    message: '"GitHub" here, where the document usually writes "Github" (1 of 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 78
+    text: NIST SP 800-61](https://nvlpubs.nist.gov
+    message: '"NIST" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 102
+    text: So, we should actually refer to this as
+    message: 2 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 108
+    text: "Exception: cloud.gov does not directly n"
+    message: '"does not" is written differently from the rest of the document'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 108
+    text: US-CERT. That is handled by
+    message: '"US-CERT" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 128
+    text: JAB TR reps)][FedRAMP ISSO TRR reps], cc
+    message: '"JAB" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 128
+    text: "TR reps)][FedRAMP ISSO TRR reps], cc: fe"
+    message: '"TR" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 145
+    text: DM'ing people in Slack. The response tea
+    message: '"DM" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 192
+    text: which should be completed before the inc
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 193
+    text: If the incident involved exposure of inf
+    message: This sentence runs 62 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 195
+    text: AWS instances, you can leave the instanc
+    message: '"AWS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 197
+    text: For example, if there's a
+    message: '"they are" is written differently from the rest of the document'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 215
+    text: So, the IC should likely hand off duties
+    message: 2 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 228
+    text: GSA-IT, US-CERT, and [FedRAMP ISSO (JAB
+    message: '"GSA-IT" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 243
+    text: " -- e.g. phishing, password attacks, etc"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 243
+    text: " -- were taken by the actor)?"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 243
+    text: )?
+    message: '")" closes nothing that was opened'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 245
+    text: ""
+    message: Section "Incident Severities" has no number, code or link (4 of 17 sections)
+    verdict: unjudged
+  - rule: latin-abbreviation-form
+    line: 257
+    text: ie. CryptoLocker) targeting TTS staff
+    message: '"ie." has some of its periods but not all'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 267
+    text: ""
+    message: Section "2 - Medium Severity" has no number, code or link (4 of 17 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 282
+    text: ""
+    message: Section "3 - Low Severity" has no number, code or link (4 of 17 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 323
+    text: "VPC Flow Logs: from the Amazon AWS conso"
+    message: '"VPC" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 329
+    text: If we've leaked secrets in Github, _once
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 335
+    text: "* Last modified on: {% last_modified_at"
+    message: This list uses the bullet "*", while 25 lists at the same depth use "-"
+    verdict: unjudged

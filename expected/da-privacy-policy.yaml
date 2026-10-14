@@ -1,0 +1,8 @@
+id: da-privacy-policy
+chaff: 0.33.0
+findings:
+  - rule: heading-numbering-mix
+    line: 81
+    text: "## お問合せ先"
+    message: 見出し「お問合せ先」だけ番号がありません（兄弟の見出しは「1. 基本的考え方」など 8 個が番号付き）
+    verdict: unjudged

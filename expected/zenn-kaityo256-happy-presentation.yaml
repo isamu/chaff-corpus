@@ -1,0 +1,118 @@
+id: zenn-kaityo256-happy-presentation
+chaff: 0.33.0
+findings:
+  - rule: number-style-consistency
+    line: 20
+    text: 二点です。研究発表の目的は自分の研究のオリジナリティを主張することですが、オリジ
+    message: 数え方の数を「二点」と書いています（この文書はふつう「10枚」の書き方。10 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 22
+    text: その中で、「大きな一歩」を踏み出すのは極めて難しく、多くの場合、その研究発表は「
+    message: 「その」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 22
+    text: その「小さな一歩」をしっかり説明するためには、研究の目的、背景をしっかり説明する
+    message: 「る必要があります」が 7 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 22
+    text: 中で、「大きな一歩」を踏み出すのは極めて難しく、多くの場合、その研究発表は「小さ
+    message: 「中」と書いています（この文書はふつう「なか」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 47
+    text: ""
+    message: 「研究背景」の節に数値もコードもリンクもありません（そういう節が 5/14）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 51
+    text: 燃料電池であればいきなり「高効率な燃料電池を開発します」といってもそれなりに通じ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 55
+    text: この不満点の解決/軽減を目指すのが発表の主要なテーマとなるので、不満の共有は非常
+    message: 「非常に重要」は、中身を言わずに強調だけしています
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 61
+    text: ""
+    message: 「手法」の節に数値もコードもリンクもありません（そういう節が 5/14）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 63
+    text: 自分の発表しようとしている研究分野の重要性と、現状の問題点について聴衆と共有でき
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: 例えば「昔は計算能力が足りなかったが、いまなら使える」「致命的な問題があったが、
+    message: この文は 170 文字あります（160 文字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 65
+    text: さらに、発表で重要なのは「オリジナリティの主張」であって、「自分の苦労を主張」す
+    message: この段落は 12 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 65
+    text: つかった)箇所は一般に一致しません。つい「自分が最も苦労したところ」を重視して説
+    message: 「つかう」と書いています（この文書はふつう「使う」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 69
+    text: 二枚のスライドにまとめるのではなく「結果A, 考察A」「結果B, 考察B」とまと
+    message: 数え方の数を「二枚」と書いています（この文書はふつう「10枚」の書き方。10 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 69
+    text: よいでしょう。二つの実験結果A, Bがある時、「結果 A,B」「考察 A,B」の
+    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。9 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 89
+    text: よくない発表でよくあるのが、実験サンプルに「サンプル1、サンプル2」などと名前を
+    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。9 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 91
+    text: ときにどのように振る舞いが変わるかを説明しようとして「A=1の場合は〇〇ですが、
+    message: 「とき」と書いています（この文書はふつう「時」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 91
+    text: 分かりやすいように話しましょう。スライドもグラフに「A=1」「A=10」と書くの
+    message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 103
+    text: ""
+    message: 「発表練習について」の節に数値もコードもリンクもありません（そういう節が 5/14）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 109
+    text: 分かりやすいものになります。少なくとも、重要事項がスライドに記載されていない、と
+    message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 117
+    text: ""
+    message: 「審査員の心構え」の節に数値もコードもリンクもありません（そういう節が 5/14）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 125
+    text: たとえば「面白いね」「すごいね」といったものだけです。審査員がネガティブな感情を
+    message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 129
+    text: ""
+    message: 「発表者の心構え」の節に数値もコードもリンクもありません（そういう節が 5/14）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 139
+    text: 見ました。言うまでもないことですが、本稿も筆者のバックグラウンドに依存する価値観
+    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged

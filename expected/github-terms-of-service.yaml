@@ -1,0 +1,43 @@
+id: github-terms-of-service
+chaff: 0.33.0
+findings:
+  - rule: use-before-definition
+    line: 17
+    text: Terms of Service agreement carefully bef
+    message: '"Terms of Service" is used here, before it is defined on line 52'
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 19
+    text: "## Summary"
+    message: The heading "Summary" has no number, while 19 of its siblings do ("A. Definitions")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 43
+    text: "## The GitHub Terms of Service"
+    message: The heading "The GitHub Terms of Service" has no number, while 19 of its siblings do ("A. Definitions")
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 51
+    text: ’s authorization to log in to and use th
+    message: Quote marks are written two ways in this document (17 curly, 33 straight)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 51
+    text: '"Account" represents your legal relation'
+    message: Quote marks are written two ways in this document (40 curly, 32 straight)
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 96
+    text: promptly notify GitHub by contacting us
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 163
+    text: affiliates).
+    message: '"Affiliate" is defined with a capital on line 55, but written in lower case here'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 211
+    text: https://github.com/logos.
+    message: The URL "https://github.com/logos" is written bare (60 worded links in this document)
+    verdict: unjudged

@@ -1,0 +1,18 @@
+id: da-machine-readability-ai-configuration
+chaff: 0.33.0
+findings:
+  - rule: latin-spacing
+    line: 7
+    text: " 等の複数AIプロバイダーに対応しています。`AIClient`（統一クライアン"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。51 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 103
+    text: " プロジェクトの認証を設定:"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。51 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 134
+    text: "### 3. AI機能の確認"
+    message: 見出し「3. AI機能の確認」だけ番号があります（兄弟の見出しは「環境変数一覧」など 2 個が番号なし）
+    verdict: unjudged

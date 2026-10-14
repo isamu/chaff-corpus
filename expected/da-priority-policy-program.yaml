@@ -1,0 +1,23 @@
+id: da-priority-policy-program
+chaff: 0.33.0
+findings:
+  - rule: undefined-acronym
+    line: 27
+    text: DX基盤強化
+    message: 「DX」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 40
+    text: AX/DX基盤の高度化・強靱化
+    message: 「AX」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    text: の取組の課題の把握・検証
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 72
+    text: DFFT具体化・ガバメントAIの国際展開を見据えた国際戦略
+    message: 「DFFT」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged

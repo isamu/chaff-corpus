@@ -1,0 +1,123 @@
+id: da-area-data-model
+chaff: 0.33.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# エリアデータ活用のためのデータモデル ～地域データの連携・相互利用を見据えた"
+    message: 題「エリアデータ活用のためのデータモデル ～地域データの連携・相互利用を見据えた標準データモデル～（実践ガイドライン）」は 56 文字あります（50 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 60
+    text: 又は分野横断的に活用できる基盤として整備・共同利用することが重要とされています。
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 68
+    text: しかし、これらのデータは分野・自治体ごとに異なる形式で保有されているため、せっか
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    text: 本ガイドブックは、地域で利用頻度の高い分野を対象に、データの相互運用性やサービス
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    text: 記載対象は、防災分野、行政サービス分野、住民サービス分野、観光・地域活性化分野、
+    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 80
+    text: 各分野のデータモデルは、サービス側とデータアセット側の双方の視点から整理しており
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 171
+    text: 有り | 文字列 | 必須 | 任意 | 全角 | | |
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。80 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 171
+    text: 貸し出し有り | 文字列 | 必須 | 任意 | 全角 | | |
+    message: 「貸し出し」と書いています（この文書はふつう「貸出」と書く語です。11 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 191
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 243
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 266
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 305
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 386
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 436
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 492
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: url-run-on
+    line: 572
+    text: https://www.xxx-hanabi.com/abc.htmlの応募フォ
+    message: URL「https://www.xxx-hanabi.com/abc.html」の直後に「の」が続いています。リンクがそこまで伸びます
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 596
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 603
+    text: "| | 文字列 | 必須 | 任意 | 全角 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 675
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 768
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 818
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 860
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 934
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged
+  - rule: empty-table-cell
+    line: 979
+    text: "| | 文字列 | 必須 | 任意 | 半全 | | |"
+    message: 表の「入力例」の列で、この行だけが空欄です
+    verdict: unjudged

@@ -1,0 +1,193 @@
+id: 18f-handbook-one-on-ones
+chaff: 0.33.0
+findings:
+  - rule: preamble-length
+    line: 8
+    text: One-to-ones are a foundational managemen
+    message: 5 paragraphs before the first heading (limit 2)
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 10
+    text: possibly
+    message: 21 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 10
+    text: " -- supervisors, facilitators, and possi"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 11
+    text: " -- but likely could be applied, with tw"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 16
+    text: TTS, 1:1s help managers fulfill our
+    message: '"TTS" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 20
+    text: There are many ways of holding 1:1s. As
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 44
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 46
+    text: "There are many ways you could conduct 1:"
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 54
+    text: " -- it’s fine to reschedule --"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 56
+    text: " -- it’s the most important -- so once"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 56
+    text: " -- so once"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 75
+    text: So, the less frequently you
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 80
+    text: could possibly go between
+    message: This sentence stacks 2 hedges ("could, possibly")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: (In fact, if you’re really getting into
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 99
+    text: " -- and, more importantly, it’s not a"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 102
+    text: There are probably many different
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 102
+    text: So, effective 1:1s should have an agenda
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 111
+    text: "There’s a delicate push-pull here: you w"
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 146
+    text: " -- it’d be weird to say “OK, your ten m"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 152
+    text: " -- and"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 160
+    text: " -- long"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 161
+    text: So, most weeks,
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 186
+    text: Finally, be aware of the difference betw
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 191
+    text: " -- and in practice"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 192
+    text: " -- and you’ll get better with"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 198
+    text: " -- or even most weeks!"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 234
+    text: There
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 245
+    text: " -- so it’s rare for there to be much"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 289
+    text: " -- in order to be really"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 289
+    text: " -- somewhat counterintuitively -- in or"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 289
+    text: day-today. So -- somewhat counterintuiti
+    message: '"day-today" here, where the document usually writes "day-to-day" (1 of 3)'
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 319
+    text: This is a shared document (e.g. a Google
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 332
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 334
+    text: There is a **ton** of material out there
+    message: '"There is ..." appears 6 times (limit 3)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 337
+    text: "'s 1:1 guide_](https://docs.google.com/d"
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 121)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 340
+    text: XD chapter developed for 1:1s. It covers
+    message: '"XD" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 389
+    text: VP at a manufacturing plant. She doesn’t
+    message: '"VP" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 397
+    text: it seems likely that a similar model cou
+    message: This sentence stacks 2 hedges ("it seems, could")
+    verdict: unjudged

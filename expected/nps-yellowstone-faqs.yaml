@@ -1,0 +1,18 @@
+id: nps-yellowstone-faqs
+chaff: 0.33.0
+findings:
+  - rule: max-paragraph-length
+    line: 13
+    text: Yellowstone National Park is named after
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: name-variant
+    line: 13
+    text: Yellow Stone.” Lewis and Clark called th
+    message: '"Yellow Stone" is written "Yellowstone" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 13
+    text: “Yellowstone.
+    message: '"“" is never closed'
+    verdict: unjudged

@@ -1,0 +1,18 @@
+id: pep-0020-zen-of-python
+chaff: 0.33.0
+findings:
+  - rule: quote-style-consistency
+    line: 27
+    text: ’s design into 20 aphorisms, only 19 of
+    message: The quote mark ’ here, where the document usually writes ' (2 of 6)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 27
+    text: ’s guiding principles for Python’s desig
+    message: The quote mark ’ here, where the document usually writes ' (2 of 6)
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 31
+    text: Beautiful is better than ugly.
+    message: 19 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged

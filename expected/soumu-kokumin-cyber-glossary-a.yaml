@@ -1,0 +1,48 @@
+id: soumu-kokumin-cyber-glossary-a
+chaff: 0.33.0
+findings:
+  - rule: katakana-density
+    line: 7
+    text: コンピュータやソフトウェア、ネットワークなどを使用するための権利や資格のこと。
+    message: カタカナ語が 1000 字あたり 57 語あります（55 語まで）。多いのは「ウイルス、データ、コンピュータ」です
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: たとえば、機密情報を含むファイルについては、アクセス権限を必要な利用者のみに適切
+    message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 17
+    text: たり、有線LANなど他のネットワークに接続するための機器です。「親機」、「基地局
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: FTPサーバなどにファイルを保存すること。
+    message: 「FTP」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 96
+    text: たり、個人情報などを盗むこともあります。また感染経路として、ウイルスは、インター
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 96
+    text: CDメディアや、USBメモリ、電子メールの添付ファイル、ホームページの閲覧など媒
+    message: 「CD」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 139
+    text: あて先アドレスとなるTo（エンベロープTo）と、送信者アドレスとなるFrom（エ
+    message: 「あて先」と書いています（この文書はふつう「宛先」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: SMTPを使って通信する際に使用されます。あて先アドレスとなるTo（エンベロープ
+    message: 「SMTP」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 150
+    text: たり、オートコンプリート機能自身を使わないように設定できます。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged

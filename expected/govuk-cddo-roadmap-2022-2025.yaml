@@ -1,0 +1,158 @@
+id: govuk-cddo-roadmap-2022-2025
+chaff: 0.33.0
+findings:
+  - rule: title-length
+    line: 3
+    text: "# Transforming for a digital future: 202"
+    message: 'The title "Transforming for a digital future: 2022 to 2025 roadmap for digital and data - updated September 2023" runs 16 words (limit 14)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 19
+    text: HMG’s collaborative next steps in digita
+    message: '"HMG" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 23
+    text: " - most notably in generative artificial"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 23
+    text: " - presenting us with new challenges and"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 29
+    text: ""
+    message: Section "Message from Paul Willmott, Executive Chair, Central Digital and Data Office" has no number, code or link (3 of 32 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 65
+    text: HM Revenue and Customs is working with a
+    message: '"HM" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    text: However, in many areas, the UK governmen
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: 15 services have now reached the ‘great’
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 82
+    text: MOT test results.
+    message: '"MOT" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 89
+    text: " - including those without a passport or"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 89
+    text: " - will be able to access services onlin"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 96
+    text: " - all departments have agreed to run an"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 103
+    text: roll-out of the common Legacy IT Framewo
+    message: '"roll-out" here, where the document usually writes "rollout" (1 of 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 118
+    text: For example, the Home Office’s Product L
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 130
+    text: more efficient, fit for the digital age,
+    message: '"more efficient" does not say what it is compared with'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 134
+    text: ""
+    message: Section "What does this mean for the public?" has no number, code or link (3 of 32 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 140
+    text: ""
+    message: Section "What does this mean for the government?" has no number, code or link (3 of 32 sections)
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 144
+    text: better, data-driven decisions. It will f
+    message: '"better" does not say what it is compared with'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 163
+    text: " - Transformed public services that achi"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 164
+    text: " - GOV.UK One Login"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 165
+    text: " - Better data to power decision making"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 166
+    text: " - Efficient, secure and sustainable tec"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 167
+    text: " - Digital skills at scale"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 168
+    text: " - A system that unlocks digital transfo"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 182
+    text: All departments will confirm an adoption
+    message: '"All departments will" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 190
+    text: GDX and IDS.
+    message: '"GDX" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 190
+    text: IDS.
+    message: '"IDS" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 212
+    text: GDS, and departments will provide a join
+    message: '"GDS" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 242
+    text: HMT will work together to develop and tr
+    message: '"HMT" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 400
+    text: PAYE repayment from HMRC
+    message: '"PAYE" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 422
+    text: DBS check
+    message: '"DBS" is used without an expansion (9 such acronyms)'
+    verdict: unjudged

@@ -1,0 +1,28 @@
+id: 18f-content-voice-and-tone
+chaff: 0.33.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ---
+    message: Section "If you’re like many…" has no number, code or link (3 of 7 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 19
+    text: ""
+    message: Section "The difference between voice and tone" has no number, code or link (3 of 7 sections)
+    verdict: unjudged
+  - rule: no-em-dash
+    line: 23
+    text: — it’s a distilled representation of an
+    message: 10 dashes per 1000 words (limit 8)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 51
+    text: ""
+    message: Section "Establishing your own voice" has no number, code or link (3 of 7 sections)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 57
+    text: "**What are my core values?** Your voice"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged

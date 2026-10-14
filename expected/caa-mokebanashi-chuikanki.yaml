@@ -1,0 +1,8 @@
+id: caa-mokebanashi-chuikanki
+chaff: 0.33.0
+findings:
+  - rule: max-sentence-length
+    line: 19
+    text: スマートフォン用のアプリケーションを販売するとともに、当該アプリケーションを第三
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged

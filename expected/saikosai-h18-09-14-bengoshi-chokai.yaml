@@ -1,0 +1,53 @@
+id: saikosai-h18-09-14-bengoshi-chokai
+chaff: 0.33.0
+findings:
+  - rule: heading-level-skip
+    line: 9
+    text: "##### 上告代理人浜辺陽一郎，同上妻英一郎の上告受理申立て理由 (ただし，排"
+    message: 見出し「上告代理人浜辺陽一郎，同上妻英一郎の上告受理申立て理由 (ただし，排除されたものを除く。) について」の深さが 3 から 5 へ飛んでいます（4 のはず）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 11
+    text: 1　本件は，第二東京弁護士会所属の弁護士である被上告人が，同弁護士会から業務停止
+    message: 「は」で出した主題から述語まで 227 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: 被上告人は，Eから交渉の方針等の連絡を受け，同人に交渉経緯を報告して意思決定を求
+    message: 「は」で出した主題から述語まで 204 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 29
+    text: そこで，被上告人はG弁護士に対し，本件建物の売却についての疑問等を指摘し，造作買
+    message: 「は」で出した主題から述語まで 208 字あります（200 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 39
+    text: カ　被上告人は，Dから，同6年12月28日午前，あて先不明のため本件建物に返送さ
+    message: 「は」で出した主題から述語まで 213 字あります（200 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 69
+    text: 被上告人は，Eにも，Dにも，その主張に係る前記2 (2) コ記載の意図を説明する
+    message: 一文に節が 9 つつながっています（8 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 69
+    text: 被上告人は，Eにも，Dにも，その主張に係る前記2 (2) コ記載の意図を説明する
+    message: 「は」で出した主題から述語まで 252 字あります（200 字まで）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 82
+    text: かがわれない。
+    message: 「かか」で語が重なっています。どちらかが余分です
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 88
+    text: また，被上告人は，第二東京弁護士会綱紀委員会において変更後の事由 (すなわち本件
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 88
+    text: また，被上告人は，第二東京弁護士会綱紀委員会において変更後の事由 (すなわち本件
+    message: 「は」で出した主題から述語まで 399 字あります（200 字まで）
+    verdict: unjudged
