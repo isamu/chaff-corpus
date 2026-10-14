@@ -5,9 +5,11 @@
 //   --only <id,...>   run these documents only
 //   --jobs <n>        how many documents run at once
 //   --offline         use .cache/ only for the documents that may not be redistributed
-import { appendFileSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+//   --shard <i/n>     run only shard i of n (CI runs the shards in parallel; scripts/merge.ts joins them)
+//   --json <path>     write this run's results there for scripts/merge.ts, and leave the exit decision to it
+import { appendFileSync, mkdirSync, mkdtempSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { availableParallelism, tmpdir } from "node:os";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 import { parseArgs } from "node:util";
 import { chaffPackage, knownGenres, prepareWorkDir, runChaff, type ChaffPackage } from "./lib/chaff.ts";
 import { committedText, documentFiles, EXPECTED, expectedPath, readExpected, readMeta, type DocumentFiles } from "./lib/corpus.ts";
@@ -18,6 +20,8 @@ import type { Finding } from "./lib/finding.ts";
 import { matchDocument } from "./lib/match.ts";
 import { LANGUAGES, type Meta } from "./lib/meta.ts";
 import { renderReport, type RunContext } from "./lib/report.ts";
+import { idsInShard, parseShard, type Shard } from "./lib/shard.ts";
+import { shardJson, type ShardResult } from "./lib/shard-result.ts";
 import { failuresOf, type DocumentResult } from "./lib/tally.ts";
 import { updatedExpected } from "./lib/update.ts";
 
@@ -28,6 +32,8 @@ const { values: options } = parseArgs({
     only: { type: "string" },
     jobs: { type: "string" },
     offline: { type: "boolean", default: false },
+    shard: { type: "string" },
+    json: { type: "string" },
   },
 });
 
@@ -40,6 +46,25 @@ type Ran = { readonly meta: Meta; readonly findings: readonly Finding[] } | { re
 const DEFAULT_JOBS = Math.max(1, Math.floor(availableParallelism() / 2));
 const jobs = Math.max(1, Number(options.jobs ?? DEFAULT_JOBS) || DEFAULT_JOBS);
 const only = options.only === undefined ? undefined : new Set(options.only.split(","));
+
+const shardOption = (): Shard | undefined => {
+  if (options.shard === undefined) return undefined;
+  const shard = parseShard(options.shard);
+  if (shard === undefined) throw new Error(`--shard ${options.shard}: expected i/n with 1 <= i <= n`);
+  return shard;
+};
+const shard = shardOption();
+
+/** About what chaff's start-up costs, in bytes of text: a small document takes about as long as this much more text. */
+const START_UP_WEIGHT_BYTES = 70_000;
+
+const weightOf = (file: DocumentFiles): number => START_UP_WEIGHT_BYTES + file.textPaths.reduce((sum, path) => sum + statSync(path).size, 0);
+
+const inShard = (files: DocumentFiles[]): DocumentFiles[] => {
+  if (shard === undefined) return files;
+  const ids = idsInShard(files.map((file) => ({ id: file.place.id, weight: weightOf(file) })), shard);
+  return files.filter((file) => ids.has(file.place.id));
+};
 
 const textOf = async (files: DocumentFiles, meta: Meta): Promise<Available> => {
   const committed = committedText(files);
@@ -102,7 +127,7 @@ const writeUpdate = (meta: Meta, findings: readonly Finding[], expected: Expecte
 const main = async (): Promise<void> => {
   const chaff = chaffPackage(options.chaff);
   const genres = knownGenres(chaff);
-  const files = documentFiles().filter((file) => only === undefined || only.has(file.place.id));
+  const files = inShard(documentFiles().filter((file) => only === undefined || only.has(file.place.id)));
   const prepared = await pooled(files, jobs, (file) => prepare(file, genres));
   const workDir = mkdtempSync(join(tmpdir(), "chaff-corpus-"));
   prepareWorkDir(workDir, LANGUAGES);
@@ -117,8 +142,15 @@ const main = async (): Promise<void> => {
     return [resultOf(item.meta, item.findings, expected)];
   });
   const context: RunContext = { chaffVersion: chaff.version, notRun: prepared.flatMap((item) => ("notRun" in item ? [{ id: item.id, reason: item.notRun }] : [])), problems };
+  if (options.json !== undefined) return writeShard(options.json, { ...context, results }, renderReport(results, context));
   report(renderReport(results, context));
   if (problems.length > 0 || (!options.update && failuresOf(results).length > 0)) process.exitCode = 1;
+};
+
+const writeShard = (path: string, result: ShardResult, markdown: string): void => {
+  console.log(markdown);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, shardJson(result));
 };
 
 const report = (markdown: string): void => {

@@ -1,0 +1,123 @@
+# Runs the corpus against chaff as it is on isamu/lab's main, not yet released: which cases main fixes, which correct
+# findings it loses. Report only: it never fails, so it never makes a pull request here red.
+name: against lab main
+
+on:
+  pull_request:
+  schedule:
+    - cron: "47 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lab-main-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # The length of the corpus job's matrix, as in check.yml.
+  SHARDS: 6
+
+jobs:
+  # One commit of lab's main for every shard, even if main moves while they run.
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      sha: ${{ steps.main.outputs.sha }}
+    steps:
+      - id: main
+        run: echo "sha=$(git ls-remote https://github.com/isamu/lab.git refs/heads/main | cut -f1)" >> "$GITHUB_OUTPUT"
+
+  corpus:
+    name: corpus against lab main (${{ matrix.shard }}/${{ strategy.job-total }})
+    needs: lab
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5, 6]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/checkout@v7
+        with:
+          repository: isamu/lab
+          ref: ${{ needs.lab.outputs.sha }}
+          path: .lab
+          sparse-checkout: text
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+          cache-dependency-path: |
+            yarn.lock
+            .lab/text/yarn.lock
+
+      - run: yarn install --frozen-lockfile
+
+      # A broken main is reported by corpus-report as a missing shard, not as a red check here.
+      - name: build lab's chaff
+        id: build
+        continue-on-error: true
+        working-directory: .lab/text
+        run: yarn install --frozen-lockfile && yarn build
+
+      - name: key the fetched texts
+        id: texts
+        run: echo "key=$(grep -rl --include='*.yaml' '^redistribute: false' docs | sort | xargs grep -h '^sha256:' | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+
+      # The same cache check.yml keeps; restored only, so the two workflows never race to save it.
+      - uses: actions/cache/restore@v6
+        with:
+          path: .cache
+          key: corpus-texts-${{ matrix.shard }}-${{ steps.texts.outputs.key }}
+          restore-keys: corpus-texts-${{ matrix.shard }}-
+
+      - name: run lab main's chaff over this shard
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: yarn run-corpus --chaff .lab/text --jobs 4 --shard ${{ matrix.shard }}/${{ strategy.job-total }} --json shard/${{ matrix.shard }}.json
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: lab-main-shard-${{ matrix.shard }}
+          path: shard/${{ matrix.shard }}.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+  corpus-report:
+    needs: [lab, corpus]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - uses: actions/download-artifact@v8
+        continue-on-error: true
+        with:
+          pattern: lab-main-shard-*
+          path: shard
+          merge-multiple: true
+
+      - name: merge the shards
+        continue-on-error: true
+        env:
+          LAB_SHA: ${{ needs.lab.outputs.sha }}
+        run: node scripts/merge.ts --shards "$SHARDS" --against "lab main ${LAB_SHA:0:7}" shard/*.json
