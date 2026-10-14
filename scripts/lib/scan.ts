@@ -25,8 +25,11 @@ const PATTERNS: readonly { readonly kind: PersonalDataKind; readonly pattern: Re
 /** NFKC folds full-width digits and hyphens (０３－１２３４) into the ASCII the patterns read; dashes that look like hyphens are folded too. */
 const normalised = (line: string): string => line.normalize("NFKC").replace(/[‐‑‒–—―−ー]/g, "-");
 
-const hitsInLine = (line: string, lineNumber: number): Hit[] =>
-  PATTERNS.flatMap(({ kind, pattern }) => [...normalised(line).matchAll(pattern)].map((found) => ({ kind, match: found[0], line: lineNumber })));
+/** Each string once per line: a number two patterns read (073-489-5903 is also North American in shape) is one hit. */
+const hitsInLine = (line: string, lineNumber: number): Hit[] => {
+  const found = PATTERNS.flatMap(({ kind, pattern }) => [...normalised(line).matchAll(pattern)].map((match) => ({ kind, match: match[0], line: lineNumber })));
+  return found.filter((hit, index) => found.findIndex((other) => other.match === hit.match) === index);
+};
 
 /** Every email address and phone number in the text, by line, as it reads after folding full-width characters. */
 export const personalDataHits = (text: string): Hit[] => text.split(/\r?\n/).flatMap((line, index) => hitsInLine(line, index + 1));

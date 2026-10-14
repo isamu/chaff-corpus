@@ -19,6 +19,11 @@ describe("personalDataHits", () => {
     assert.deepEqual(matches("Call (202) 555-0143 or 202-555-0143."), ["phone:(202) 555-0143", "phone:202-555-0143"]);
   });
 
+  it("gives a string once per line, however many patterns or times it matches", () => {
+    assert.deepEqual(matches("TEL 073-489-5903, 073-489-5903"), ["phone:073-489-5903"]);
+    assert.deepEqual(matches("a@b.org\na@b.org"), ["email:a@b.org", "email:a@b.org"]);
+  });
+
   it("gives the line of each hit", () => {
     assert.deepEqual(
       personalDataHits("a\nb a@b.org\n").map((hit) => hit.line),
