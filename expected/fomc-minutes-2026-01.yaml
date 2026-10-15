@@ -1,0 +1,127 @@
+id: fomc-minutes-2026-01
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 32
+    text: By unanimous vote, the Committee selecte
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 36
+    text: By unanimous vote, the Committee approve
+    message: This sentence runs 54 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 38
+    text: All participants indicated support for,
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 44
+    text: Market-based measures of policy rate exp
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 44
+    text: Respondents to the Open Market Desk Surv
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+  - rule: ngram-repetition
+    line: 44
+    text: Market-based measures of policy rate exp
+    message: '"federal funds rate" appears 15 times (limit 5)'
+    verdict: false-positive
+    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
+  - rule: max-paragraph-length
+    line: 46
+    text: The manager turned next to Treasury mark
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 50
+    text: better.
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: "the baseline is in the same sentence: 'performed even better' than the S&P 500 excluding the largest technology companies"
+  - rule: max-sentence-length
+    line: 54
+    text: Money market contacts attributed the bet
+    message: This sentence runs 60 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 66
+    text: The average monthly change in total payr
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 68
+    text: Total consumer price inflation—as measur
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 70
+    text: Real private domestic final purchases (P
+    message: This sentence runs 61 words (limit 45)
+    verdict: correct
+  - rule: wordy-phrase
+    line: 94
+    text: The financing of AI investment will like
+    message: '"have the capacity to" can be said in fewer words'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 98
+    text: The amount of total short-run funding in
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 112
+    text: Regarding the outlook for inflation, par
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 118
+    text: In particular, some participants pointed
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 124
+    text: In their discussion of financial stabili
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 124
+    text: Some participants discussed potential vu
+    message: '"a small number of" can be said in fewer words'
+    verdict: false-positive
+    note: "'a small number of' is one of the FOMC minutes' fixed quantifiers for how many participants held a view (a few / some / several / many); shortening it changes the count it reports"
+  - rule: max-paragraph-length
+    line: 126
+    text: In their consideration of monetary polic
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: They commented that maintaining the curr
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 126
+    text: Those who preferred to lower the target
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 128
+    text: Some participants commented that it woul
+    message: This sentence runs 55 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 130
+    text: In discussing risk-management considerat
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: name-variant
+    line: 317
+    text: Walker, Senior Associate Director, Divis
+    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
+    verdict: false-positive
+    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt

@@ -280,3 +280,27 @@
 - id: gitlab-travel-expense-policy
   match: "AP@gitlab.com"
   reason: a company's accounts-payable role address, published in the policy
+- id: 18f-handbook-leave
+  match: "TTS-peopleops@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-leave
+  match: "kc-payroll.finance@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-purchase-requests
+  match: "tts-purchasers@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-travel-book-travel
+  match: "tts-travel@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-travel-book-travel
+  match: "tts-travelauths@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-travel-reimbursement
+  match: "tts-travel@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-travel-reimbursement
+  match: "tts-travelauths@gsa.gov"
+  reason: a government office's role address, published in the handbook for staff to write to
+- id: 18f-handbook-travel-book-travel
+  match: "(877) 472-6716"
+  reason: the government's contracted travel agency (AdTrav) booking line, published in the document

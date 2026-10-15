@@ -1,0 +1,65 @@
+id: 18f-handbook-overtime
+chaff: 0.34.0
+findings:
+  - rule: contraction-consistency
+    line: 12
+    text: Generally, do not expect to work extra h
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 14
+    text: HR Links]({% page "/tools/hrlinks/#enter
+    message: '"HR" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: FLSA exemption status]({% page "/tools/h
+    message: '"FLSA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: GS- level and [FLSA exemption status]({%
+    message: '"GS" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: OPM’s [Overtime Fact Sheet](https://www.
+    message: '"OPM" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 35
+    text: However, if the end of the leave year is
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 37
+    text: Comp time expires one year (26 pay perio
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 57
+    text: Your supervisor will need to approve thi
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: name-variant
+    line: 57
+    text: Additional Time Requests" on your Self-s
+    message: '"Additional Time Requests" is written "Request Additional Time", with the words in another order, elsewhere in the document'
+    verdict: false-positive
+    note: two different menu labels in HR Links ('Request Additional Time' on the timecard, 'Additional Time Requests' on the Self-service page) are read as one name in another word order
+  - rule: contraction-consistency
+    line: 61
+    text: You're not required to stay late, but if
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 61
+    text: You're on a [Gliding schedule]({% page "
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 71
+    text: TDY” travel, _not_ local travel or commu
+    message: '"TDY" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: TDY is expanded in the same sentence (“temporary duty,” also known as “TDY”), a form the expansion check does not read

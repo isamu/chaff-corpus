@@ -1,0 +1,70 @@
+id: 18f-handbook-procurements-over-10000
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 25
+    text: FAC-COR](https://docs.google.com/documen
+    message: '"FAC-COR" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: GSA IT asks technical and security quest
+    message: '"GSA" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 30
+    text: POC to answer them. The steps to find or
+    message: '"POC" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: TTS
+    message: '"TTS" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 57
+    text: IGCE
+    message: '"IGCE" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 91
+    text: ITSS, to make the contract
+    message: '"ITSS" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 92
+    text: ) with
+    message: '")" closes nothing that was opened'
+    verdict: correct
+    note: the source closes a bracket it never opened ('… contractor) with')
+  - rule: contraction-consistency
+    line: 116
+    text: Once your contract is awarded, it’s poss
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
+  - rule: latin-abbreviation-form
+    line: 123
+    text: ie. New CO or COR)
+    message: '"ie." has some of its periods but not all'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 126
+    text: CLIN
+    message: '"CLIN" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 140
+    text: CPARS form and route it to you to evalua
+    message: '"CPARS" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 153
+    text: After all work under a contract has been
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 156
+    text: OCFO that all payment has been made
+    message: '"OCFO" is used without an expansion (9 such acronyms)'
+    verdict: correct
