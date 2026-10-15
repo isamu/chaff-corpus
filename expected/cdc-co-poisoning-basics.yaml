@@ -16,11 +16,6 @@ findings:
     text: ""
     message: Section "Reducing risk" has no number, code or link (5 of 9 sections)
     verdict: unjudged
-  - rule: heading-echo
-    line: 34
-    text: Replace your CO detector following manuf
-    message: The first sentence repeats the heading "CO detectors"
-    verdict: unjudged
   - rule: contraction-consistency
     line: 38
     text: Check CO detector batteries when you cha

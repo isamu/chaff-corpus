@@ -41,6 +41,11 @@ findings:
     text: "[here](https://www.gsa.gov/travel/plan-b"
     message: The link text "here" does not say where it goes
     verdict: unjudged
+  - rule: list-item-form-mix
+    line: 173
+    text: You will now be taken back to your trip
+    message: '"You will now be taken back to your trip itinerary." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
+    verdict: unjudged
   - rule: step-statement-mix
     line: 173
     text: You will now be taken back to your trip
@@ -250,11 +255,6 @@ findings:
     line: 746
     text: One can leave the payment method of M&IE
     message: '"One can" here, where the document usually says "you" (3 of 306)'
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 758
-    text: Click on the **View Per Diem Conditions*
-    message: '"Click on the   View Per Diem Conditions  ." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 764

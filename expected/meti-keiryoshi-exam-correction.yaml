@@ -11,8 +11,3 @@ findings:
     text: "## 担当"
     message: 見出し「担当」だけ番号がありません（兄弟の見出しは「1．概要」など 2 個が番号付き）
     verdict: unjudged
-  - rule: latin-spacing
-    line: 41
-    text: " 3461～4）"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。6 箇所のうち 1 箇所が違う）
-    verdict: unjudged

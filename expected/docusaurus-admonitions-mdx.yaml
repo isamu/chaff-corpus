@@ -16,11 +16,6 @@ findings:
     text: Admonitions can be nested. Use more colo
     message: The first sentence repeats the heading "Nested admonitions"
     verdict: unjudged
-  - rule: heading-echo
-    line: 230
-    text: You can use MDX inside admonitions too!
-    message: The first sentence repeats the heading "Admonitions with MDX"
-    verdict: unjudged
   - rule: contraction-consistency
     line: 352
     text: By default, the theme doesn't know what

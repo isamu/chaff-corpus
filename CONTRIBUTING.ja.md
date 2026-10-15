@@ -62,8 +62,8 @@ findings:
 - **PR には lab の main での結果も出ます**。isamu/lab の main にある chaff で実行する報告専用の
   ワークフローが、その事例が main では直っていて、まだ公開されていないだけかどうかを示します。
 - **lab にイシューが開かれます。** 事例がここの main に入ると、isamu/lab で毎日動く同期が、未解決の事例を持つ文書ごとに
-  `corpus-case` ラベルのイシューを一つ開き、内容を最新に保ちます（isamu/lab#1219 のマージ後）。chaff を直す lab の PR は
-  このコーパスに対して実行され、どの事例を解決するかが報告されます（isamu/lab#1218 のマージ後）。
+  `corpus-case` ラベルのイシューを一つ開き、内容を最新に保ちます。chaff を直す lab の PR は
+  このコーパスに対して実行され、どの事例を解決するかが報告されます。
 - **chaff の公開で閉じます。** npm に新しい chaffjs が出ると、ここで毎日動くワークフローが、固定版を上げて
   `yarn run-corpus --resolve` を実行する PR を開きます。出なくなった `false-positive` は消え、
   出るようになった `missed` は `correct` になって、`note` に `found by chaffjs <version>` が足されます。その PR が
