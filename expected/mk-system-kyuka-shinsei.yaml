@@ -1,0 +1,8 @@
+id: mk-system-kyuka-shinsei
+chaff: 0.34.0
+findings:
+  - rule: orthographic-variant
+    line: 29
+    text: 事(申請用紙に記入)
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: correct

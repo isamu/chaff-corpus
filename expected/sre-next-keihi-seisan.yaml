@@ -1,0 +1,8 @@
+id: sre-next-keihi-seisan
+chaff: 0.34.0
+findings:
+  - rule: yori-as-from
+    line: 22
+    text: より施行します。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

@@ -1,0 +1,19 @@
+id: mk-system-invoice
+chaff: 0.34.0
+findings:
+  - rule: vague-word-density
+    line: 6
+    text: インボイスに登録してあるお店をできる限り使用してください。
+    message: 「できる限り」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 22
+    text: ）買手は、自らが作成した仕入明細書等のうち、一定の事項（インボイスに記載が必要な
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: vague-word-density
+    line: 22
+    text: (※）買手は、自らが作成した仕入明細書等のうち、一定の事項（インボイスに記載が必
+    message: 「一定の」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: false-positive
+    note: 「一定の事項」 is pinned down by the parenthesis right after it (インボイスに記載が必要な事項)

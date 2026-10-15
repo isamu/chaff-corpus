@@ -1,0 +1,101 @@
+id: mk-system-kaigo-kyugyo
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 3
+    text: （目的）
+    message: 丸括弧を、全角で 11 箇所、半角で 25 箇所書いています。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 8
+    text: ３項に該当する場合は適用する。
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 12
+    text: ８週間以内に雇用関係が終了することが明らかな従業員
+    message: 全角の「８」と書いています（この文書はふつう半角の「8」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 13
+    text: ２日以下の従業員
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 18
+    text: ､孫（同居・扶養は問わない）
+    message: 半角の片仮名「､」があります（全角は「、」）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ２週間以上の期間にわたり常時介護を必要とする状態をいう。
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 21
+    text: または身体上もしくは精神上の障害により、２週間以上の期間にわたり常時介護を必要と
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 24
+    text: ２週間前までに、介護休業申出書を上司経由にて担当部署に申請することにより申出する
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 28
+    text: ２回までの範囲で利用可能とする。短時間勤務制度を利用する場合は、就業規則に定める
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 28
+    text: ３年の間で２回までの範囲で利用可能とする。短時間勤務制度を利用する場合は、就業規
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 28
+    text: ６時間まで短縮することができる。
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 39
+    text: )
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 44
+    text: ２週間前までに申出することにより可能とする。
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 47
+    text: 申し出た場合、就業規則第26条にかかわらず、事業の正常な運営を妨げる場合を除き、
+    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。9 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    text: ６時間まで短縮することができる。
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 50
+    text: 申し出た場合、対象家族1人当たり通算1年間の範囲内において、就業規則に定める所定
+    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。9 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)
+  - rule: fullwidth-alnum-consistency
+    line: 55
+    text: ２週間以内であって、会社と本人が話し合いの上決定した日とする。）
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 58
+    text: １号の事由が生じた場合には、申出者は原則として当該事由が生じた日に担当部門に上司
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: numbering-gap
+    line: 58
+    text: 2　前項１号の事由が生じた場合には、申出者は原則として当該事由が生じた日に担当部
+    message: 「（2）」の次が「2」です（3 番目のはず）
+    verdict: false-positive
+    note: item numbers (1)(2) and the paragraph number 2 are two sequences; (2) followed by paragraph 2 is not a gap
