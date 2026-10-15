@@ -1,0 +1,25 @@
+id: gitlab-related-party-transactions-policy
+chaff: 0.34.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 16
+    text: Although our Code of Business Conduct an
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: the same paragraph has 'ethical behavior, accountability and transparency' and 'identification, review, and consideration'
+  - rule: use-before-definition
+    line: 16
+    text: Board of Directors (the "***Audit Commit
+    message: '"Board" is used here, before it is defined on line 16'
+    verdict: false-positive
+    note: the full name 'Board of Directors' used before the short form ("Board") is defined is not a use of the defined term
+  - rule: known-misspelling
+    line: 30
+    text: begining of our last fiscal year was, a
+    message: '"begining" is a misspelling of "beginning"'
+    verdict: correct
+  - rule: unused-definition
+    line: 61
+    text: ("***SEC***") (to the extent such inform
+    message: '"SEC" is defined but never used'
+    verdict: correct

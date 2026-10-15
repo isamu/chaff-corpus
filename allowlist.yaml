@@ -259,3 +259,12 @@
 - id: da-area-data-model
   match: "XXXX@ooo.or.jp"
   reason: a placeholder in the document's own example, not a real address or number
+- id: gitlab-acceptable-use-policy
+  match: "panic@gitlab.com"
+  reason: a company's role address for reporting lost devices, published in the policy for every team member to use
+- id: gitlab-travel-expense-policy
+  match: "payroll@savvy-group.eu"
+  reason: a payroll provider's role address, published in the policy for team members to send claims to
+- id: gitlab-travel-expense-policy
+  match: "AP@gitlab.com"
+  reason: a company's accounts-payable role address, published in the policy

@@ -1,0 +1,583 @@
+id: gitlab-promotions-transfers
+chaff: 0.34.0
+findings:
+  - rule: wordy-phrase
+    line: 63
+    text: In order for promotions through internal
+    message: '"in order for" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 90
+    text: URG](/handbook/total-rewards/compensatio
+    message: '"URG" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 102
+    text: The Sales Development organization revie
+    message: '"on a monthly basis" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 112
+    text: Sales Development promotions will be rev
+    message: '"on a monthly basis" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 115
+    text: HRIS by the 5th day of each effective mo
+    message: '"HRIS" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 120
+    text: In order to have insight into upcoming p
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 129
+    text: May 1)
+    message: "\"May 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 133
+    text: PROMOTION NOMINATION PREPARATION & SUBMI
+    message: '"PROMOTION NOMINATION PREPARATION" is written in capitals'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 135
+    text: "Jan 12-30**: Managers and team members m"
+    message: "\"Jan 12\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 135
+    text: Jan 30
+    message: "\"Jan 30\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 136
+    text: "Jan 30**: DEADLINE - All manager promoti"
+    message: "\"Jan 30\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 136
+    text: " - All manager promotion nominations mus"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 137
+    text: "Feb 2-27**: Promotion calibration sessio"
+    message: "\"Feb 2\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 141
+    text: "Mar 23**:  ACR opens to planners (promot"
+    message: "\"Mar 23\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 141
+    text: ACR opens to planners (promotion approva
+    message: '"ACR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 142
+    text: "April 3**: Planners enters compensation"
+    message: "\"April 3\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 142
+    text: "Mar 23 - April 3**: Planners enters comp"
+    message: "\"Mar 23\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 143
+    text: "April 9-13**: eGroup / PBP comp approval"
+    message: "\"April 9\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 143
+    text: eGroup / PBP comp approvals
+    message: '"eGroup" here, where the document usually writes "E-group" (1 of 16)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 144
+    text: "April 21**: Statement generation in Work"
+    message: "\"April 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 145
+    text: "April 21-30**: Team member communication"
+    message: "\"April 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 146
+    text: "May 1**: Promotions go live!"
+    message: "\"May 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 150
+    text: Nov 1)
+    message: "\"Nov 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 152
+    text: "  Check back!"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 213)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 158
+    text: Once the Calibration phase by Division i
+    message: '"have the ability to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 164
+    text: As the audience are other GitLab team me
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 188
+    text: OKR? a key investment theme? etc.).
+    message: '"OKR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 194
+    text: DRI for the global cross functional team
+    message: '"DRI" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 196
+    text: CREDIT values in their work on this acco
+    message: '"CREDIT" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 198
+    text: GTM motions for the product launch while
+    message: '"GTM" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 208
+    text: XYZ business reason.
+    message: '"XYZ" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 214
+    text: behaviours](/handbook/values/#values-com
+    message: '"behaviours" here, where the document usually spells it "behaviors" (1 of 8)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 214
+    text: DIB behaviours](/handbook/values/#values
+    message: '"DIB" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 214
+    text: which provides examples of how to demons
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 223
+    text: Please be sure that the promotion docume
+    message: "\"Please be sure that the promotion document has \"comment\" access enabled to 'GitLab' to ensure the review and approval process is not delayed.\" opens with a verb; the other items in this list open with a noun phrase (1 of 3)"
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 260
+    text: All three of the business results highli
+    message: '"business results highlighted" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 264
+    text: The reason we require feedback providers
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 270
+    text: HPT Pillars
+    message: '"HPT" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 272
+    text: off-site date*.
+    message: '"off-site" here, where the document usually writes "offsite" (1 of 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 272
+    text: VP+ leadership level, as opposed to at t
+    message: '"VP" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 274
+    text: If external candidates have been conside
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 290
+    text: FP&A tracks budget impact by Department/
+    message: '"FP&A" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 318
+    text: E-Group approval, and off-cycle promotio
+    message: '"E-Group" is written "eGroup" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 342
+    text: IC Career Matrix](/handbook/engineering/
+    message: '"IC" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 344
+    text: What work will they stop doing in order
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 346
+    text: This has improved the quality of her wor
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 360
+    text: In an effort to continue to foster a fee
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 360
+    text: In an effort to continue to foster a fee
+    message: '"in an effort to" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 364
+    text: CISO Directs calibration session.**
+    message: '"CISO" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 381
+    text: The reason we require feedback providers
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 382
+    text: You can reference our [job levels](https
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 387
+    text: "[insert due date]. You can read more abo"
+    message: '"[insert due date]" was never filled in'
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 387
+    text: "[name business result]. Please complete"
+    message: '"[name business result]" was never filled in'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 390
+    text: Please submit promotion nominations for
+    message: '"despite the fact that" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 434
+    text: In order to ensure a consistent level of
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: person-consistency
+    line: 456
+    text: one must be created and shared on the `#
+    message: '"one must" here, where the document usually says "you" (2 of 123)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 474
+    text: "  This includes team members receiving a"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 213)
+    verdict: unjudged
+  - rule: article-sound
+    line: 485
+    text: a Organization Change Checklist Issue.
+    message: '"a Organization" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 489
+    text: If the request is approved through Workd
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 489
+    text: CES team and signed.
+    message: '"CES" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 499
+    text: July 1 since this is after the payroll c
+    message: "\"July 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 499
+    text: June 25, the effective date should be Ju
+    message: "\"June 25\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 501
+    text: June 20 cut off date is June 21 so June
+    message: "\"June 20\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 501
+    text: June 21 should be the effective date.
+    message: "\"June 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 501
+    text: June 21 so June 21 should be the effecti
+    message: "\"June 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: name-variant
+    line: 503
+    text: GitLab Ltd team member has a change bein
+    message: '"GitLab Ltd" is written "GitLab Inc", with another company form, elsewhere in the document'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 504
+    text: July 1.
+    message: "\"July 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 504
+    text: June 15, this would be effective July 1.
+    message: "\"June 15\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 505
+    text: RSU information is included with the job
+    message: '"RSU" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 509
+    text: Add radio button (Delete the additional
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 531
+    text: SSOT for tracking interim start and end
+    message: '"SSOT" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 532
+    text: "Current Manager*: In the instance that t"
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 532
+    text: The philosophy here is that if a team me
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 532
+    text: EQ and discretion to have direct reports
+    message: '"EQ" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 539
+    text: " ."
+    message: A space before "."
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 555
+    text: " - Access changed (if required)"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 576
+    text: In the event that a team member is worki
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 576
+    text: In the event that a team member is worki
+    message: '"in the event that" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 581
+    text: Note:** If the Hiring Manager and acting
+    message: This sentence runs 57 words (limit 40)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 586
+    text: "  It may be an opportunity for a team me"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 213)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 600
+    text: If any changes are required to a team me
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 645
+    text: " - EMEA, Content Marketing (John Smith),"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 645
+    text: " - Ruby). Please reach out to the People"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 645
+    text: "[This job aid](https://docs.google.com/d"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 645
+    text: "  Even if their management level shows “"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 213)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 645
+    text: EMEA, Content Marketing (John Smith), Ba
+    message: '"EMEA" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 647
+    text: "[here](/handbook/people-group/promotions"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 654
+    text: EBA to update senior leadership:**
+    message: '"EBA" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 665
+    text: If not, check whether the `Job Specialit
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 680
+    text: BDR 12 months in role
+    message: '"BDR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 680
+    text: SDR/BDR 12 months in role
+    message: '"SDR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 691
+    text: "  If you have any questions about the ro"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 213)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 694
+    text: GHP ID](/handbook/finance/financial-plan
+    message: '"GHP" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: person-consistency
+    line: 714
+    text: one must be created and shared in the `#
+    message: '"one must" here, where the document usually says "you" (2 of 123)'
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 724
+    text: It is important to note that it is typic
+    message: '"it is important to note that" emphasises without saying anything'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 726
+    text: Delaying transfers should be avoided to
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: article-sound
+    line: 738
+    text: an Senior Frontend Engineer), the team m
+    message: '"an Senior" takes "a" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 738
+    text: If a team member sees a vacancy posted t
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 740
+    text: It is the manager's responsibility to be
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 744
+    text: If the role is in a completely different
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 747
+    text: Internal and external candidates will fo
+    message: '"with the exception of" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 750
+    text: If after that conversation you do not fe
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 773
+    text: "NOTE: Although the Total Rewards and Peo"
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 788
+    text: AR process documented [here](/handbook/e
+    message: '"AR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 788
+    text: "[here](/handbook/eta/corporate-it/end-us"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: article-sound
+    line: 803
+    text: a Organization Change Checklist when an
+    message: '"a Organization" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 807
+    text: The [Organization Change Checklist](http
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 823
+    text: All migration tasks by the applicable te
+    message: '"All migration tasks by the applicable team members need to be completed within 2 weeks of the migration start date." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 849
+    text: Create a monthly issue to notify the Sal
+    message: '"Create a monthly issue to notify the Sales Strategy and Analytics team of headcount changes." opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 853
+    text: When a new sales employee joins, their A
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 853
+    text: ASM assigns them a territory (at which p
+    message: '"ASM" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 861
+    text: Sharing your most recent 360 feedback re
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 870
+    text: If your new direct report is potentially
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 882
+    text: README, and other static title entries,
+    message: '"README" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 888
+    text: CV for speaking engagements (Sessionize,
+    message: '"CV" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: empty-section
+    line: 891
+    text: "## Footnotes"
+    message: Nothing under the heading "Footnotes"
+    verdict: unjudged
