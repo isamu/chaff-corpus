@@ -1,0 +1,15 @@
+id: maud-cnh-raven
+title: "Agreement and Plan of Merger: Raven Industries, CNH Industrial and CNH Industrial South Dakota (2021)"
+language: en
+genre: legal/contract
+format: text
+source:
+  url: https://huggingface.co/datasets/theatticusproject/maud/resolve/37d5c3b95d18dcd8404cc5ce3fd5069be062392f/MAUD_v1/contracts/contract_119.txt
+  fetched: 2026-10-15
+license:
+  name: CC-BY-4.0
+  url: https://huggingface.co/datasets/theatticusproject/maud
+  note: "From MAUD v1 (Merger Agreement Understanding Dataset) by The Atticus Project, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The agreement is an exhibit filed with the U.S. SEC on EDGAR. Text unchanged from the dataset."
+redistribute: false
+sha256: 1f925f212c8ef6f8d898c77fbc9b07c597576d09e0bba24a9bc21c2cec9f2d46
+notes: "Text extracted from the filed HTML/PDF by the dataset authors: lines run together, headings are spaced out, the table of contents and page numbers appear in the text. Findings caused by these extraction artefacts are not chaff's fault. The notices clause names counsel and officers with their e-mail addresses, so the text is not committed (redistribute: false) although the licence allows it."

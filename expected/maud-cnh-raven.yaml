@@ -1,0 +1,1527 @@
+id: maud-cnh-raven
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 19
+    sha256: 2e892b3abe8d6ba3407d022faefaa94b819dbbd0a29ce0bcf3a4211d749cfe87
+    verdict: false-positive
+    note: INC is a legal-entity suffix
+  - rule: dangling-reference
+    line: 40
+    sha256: 564d0e8525ef01a14970d5ff6458b8c045fa28a208009dc6875d84952218bec2
+    verdict: false-positive
+    note: a table-of-contents entry; the section is in the text as a plain-text 'Section N.NN. Title.' heading
+  - rule: dangling-reference
+    line: 40
+    sha256: 682a1c33b8488056130a9f9f7c767b6516ed47b5aef476627df6c34cda8023d8
+    verdict: false-positive
+    note: a table-of-contents entry; the section is in the text as a plain-text 'Section N.NN. Title.' heading
+  - rule: dangling-reference
+    line: 40
+    sha256: 9eb1a640c21246817ca11fb4174d54122e90e8d898a2496204dd3ea9896bb152
+    verdict: false-positive
+    note: a table-of-contents entry; the section is in the text as a plain-text 'Section N.NN. Title.' heading
+  - rule: max-paragraph-length
+    line: 40
+    sha256: 6c3786ff9b2a268951df16b141201b67780b8982eba7a8e2ba699b3333c7a64a
+    verdict: correct
+    note: "extraction artefact: the table of contents is one line in the extracted text; chaff is right about the text as extracted"
+  - rule: undefined-acronym
+    line: 40
+    sha256: fa48c2910ee50832b924b5b5080848f3962bb4c6ce85f3a8003e7319584febd1
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 40
+    sha256: 8bea0cfd0edad386ffa41b113838433e928a276f0b821ec0a3a9e3f91ba8fecc
+    verdict: false-positive
+    note: a table-of-contents entry uses the term before the body defines it
+  - rule: use-before-definition
+    line: 40
+    sha256: f2e528e2c536c8d30a8ee5ed48b4d8d220fea3f11fdcff6307451ea3c9c60cdb
+    verdict: false-positive
+    note: a table-of-contents entry uses the term before the body defines it
+  - rule: dangling-reference
+    line: 52
+    sha256: 806b53914137f322e19beeb563f4ec79ea9e932210aea2956e96ba5c1ad7a7d2
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 52
+    sha256: 67551d6b629090904c214f866eab03b729b32064f63416f596e5c6162934e861
+    verdict: correct
+    note: "extraction artefact: the table of contents is one line in the extracted text; chaff is right about the text as extracted"
+  - rule: use-before-definition
+    line: 52
+    sha256: 0126967b9e8902035fa872d6b1ce1ce4999b48d856d7419b735aba3d34c62399
+    verdict: false-positive
+    note: a table-of-contents entry uses the term before the body defines it
+  - rule: use-before-definition
+    line: 52
+    sha256: 22ee66891820c5d8b9ad88342fa8319ab36b935641ada5e07aeca80dc28ece13
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 52
+    sha256: 2af81533c0e8dae7241414feb4a6d3ed5ec9a313eed047e7e6e0a114ecaddbbe
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 52
+    sha256: 92a832184314e60d0717fee62c66f8cac236ca41749419e3cae39ccad6e4fb99
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 52
+    sha256: c8488a455a20da79da6f6e4b466c07a18da6e3bc70283c18e54d14e0b28f6e17
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 64
+    sha256: 7cf8719d87175a597d8f29a6c9b46a44b84a8982853e1db36093492171d791f1
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 64
+    sha256: 3897be73cce4212a300e00097982859cb4d5b8b171a03e71264a9dd36a172286
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 64
+    sha256: 3897be73cce4212a300e00097982859cb4d5b8b171a03e71264a9dd36a172286
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 64
+    sha256: 4e55b5d8762f3e2bd468b58345845a22b3d587e35ac172e1a4d920da59440011
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 64
+    sha256: cec63580947494c950dea199e2cabacd95145f7f8aa89498d816843f633bbbd9
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 79
+    sha256: 62809f7f6aa877745a571c9120c4e8374b6b38026a06ace975ab07e553ef2e04
+    verdict: unjudged
+  - rule: undefined-term
+    line: 79
+    sha256: 5b217d9b803cdd94664a14e415e5daa713171819fd5e5e7d09423656ca24255d
+    verdict: false-positive
+    note: the company's own name, labelled as a party right there
+  - rule: undefined-acronym
+    line: 91
+    sha256: f57b32ebfad9bb32dcbf95a4e0c456d0c989123b6e451bc7b221983a371cfbff
+    verdict: unjudged
+  - rule: undefined-term
+    line: 127
+    sha256: f48f4b4a1fd9d0713d36eec181e21a4b7a3c5c15559a11eed5b20cbc7effa238
+    verdict: false-positive
+    note: a city name, not a defined term
+  - rule: use-before-definition
+    line: 127
+    sha256: 7cd1076e3daa2a192c58bc1394fe242d796f4a1560118303325b0860d762ffe3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 130
+    sha256: b6619f2140de312304990eb33998ab76683871ec9c80d070c71c2d7f18f2a33a
+    verdict: unjudged
+  - rule: undefined-term
+    line: 130
+    sha256: 17537b4ccbc1be80f45d1a13f9b3b0a640d3802844f9b7ee234488d51ad8a130
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 133
+    sha256: 956648ea711e3dfd0ea138846e954d5e138c06023e8661a42ec8fe279a783df7
+    verdict: unjudged
+  - rule: undefined-term
+    line: 133
+    sha256: 210db0e9abef9766b253da907c5c7ee062dbfe35ffa412d901b16223699d0592
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 175
+    sha256: 8ada99783b0801ea872de1e1f7c003db8d0d8eea4be4fae93f3ed58111133476
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 199
+    sha256: d22e9e042fb7ec0550af6da6a5e32bdc1a3b61a4a76a50aaa93bc94bf02da5ae
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 208
+    sha256: abcaa58efbe0540aa8c6d14a6d8692d1b766569c7c8a5eb74adb95723232b65a
+    verdict: unjudged
+  - rule: undefined-term
+    line: 208
+    sha256: b66d295927b3b58a917d2410c46e844a27bd2f8bffcc580c799b0eb581c33be6
+    verdict: unjudged
+  - rule: undefined-term
+    line: 211
+    sha256: 2265c4680bf6177e765b52bd3c7d1e2a7c169b72b63b407281147966b2bdb41b
+    verdict: unjudged
+  - rule: undefined-term
+    line: 211
+    sha256: 3b4e70bd671ef247bcad698f60d0ed5e74d42f6f23cf4908ec85198fdcfcbcc3
+    verdict: unjudged
+  - rule: undefined-term
+    line: 211
+    sha256: 8257b4295b3bb0e12d4bda621d1d3936972775ab653764f9fde1424614be11af
+    verdict: unjudged
+  - rule: undefined-term
+    line: 214
+    sha256: 87aaac42f3437b13b620bbadde2200b5e36731ef3ffcf274002cbe86c7395427
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 214
+    sha256: 1e0e4a2f365875fbc09526a73082649482fb1a529d5e833b3bf6d02c90fc0e84
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 226
+    sha256: 48765fbc79d670d65621171f18ee4715b2601b91eb1e4e970c9df29c46c1a1fd
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 229
+    sha256: cc2f9e578b9410d2e46a701c96b5988c256a5593d15878ef742af9c4dd9af0aa
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 241
+    sha256: e88c5a2c19a3b905e1ba77c16f0d61bfabafe79e706ab78341fc8058e0467aee
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 247
+    sha256: 3ee913d380aa942f1b47036e29dd3d6f1f5d41ef9473c4355405e943ed909698
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 256
+    sha256: f87ddbe7c98c4261395d6b401b1ab21bc2ba3005989f264dea79c5b21496109e
+    verdict: unjudged
+  - rule: undefined-term
+    line: 274
+    sha256: 6e03b0cc483de6a03369dde1b46121ca005565abe207b5a94e1c48eb551a0e54
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 274
+    sha256: a10288e4d636ad61a7e426e536672d6a077ea76e5c91c2693d69d9ef3b73f4e2
+    verdict: unjudged
+  - rule: undefined-term
+    line: 280
+    sha256: 5c46b1426724a06056f73dc4f3eea8dd5d61c5ab5e9c6ba443775f11c1d6b638
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 292
+    sha256: 232bdd673c764904cd1a46acbfc25070ff8c56fe9d16422f37ee424d9d188306
+    verdict: false-positive
+    note: the term is mentioned in quotes as the name of a definition, not used
+  - rule: defined-term-form
+    line: 292
+    sha256: 232bdd673c764904cd1a46acbfc25070ff8c56fe9d16422f37ee424d9d188306
+    verdict: false-positive
+    note: the term is mentioned in quotes as the name of a definition, not used; reported twice
+  - rule: requirement-smell
+    line: 292
+    sha256: 5acbc390fc22ca0bdee3ba799f7d150e1d525aa716b3fe1199cabe1423a9e7ff
+    verdict: correct
+  - rule: vague-word-density
+    line: 292
+    sha256: ecb3162381e916eb3791b7d185f310b3d4601e53814b8054a07156ba49eb1317
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 298
+    sha256: 8d2db7e1e7525fa0e5b37c45a3f7ad5953745e9f534bbf7466f86b8cf218eb59
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 334
+    sha256: 6a3b51266d2b5dd3d98efe38dbc54e8377c3cdbe3921ef9f82a06a7822229c61
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 337
+    sha256: cde1fb455bf391181d6283d9bc863aca4bc2d4950a3fd536d2ff1b7871614a7b
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 343
+    sha256: 9fb7202797258c0f1c778ce914a753f7f1eeebca75db9e64b39f916c4f5a0719
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 358
+    sha256: 307d84132bc7f28f4df5b1ab03c8dc626293ac6b378e3cd02a8ac8305b918fac
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 358
+    sha256: 4bfb076d3f224cfebc67c22c5e4283b28b35426dfc070086ad0358e0544c88b7
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 358
+    sha256: 66659711ce4ae74e75ea76a45d19480898b6e6bc3539e6a12da2e4d44ec639b4
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 358
+    sha256: bce48cee32b37ab0b36d3fce4d75ae2e827d4a4860b87370e28c73836120d0db
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 08232bce21283cbee3cf16fc3d8db9196308575b6925f9e3b63cdbe2ce15e9fc
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 16694361239f5dbdc521855ee6644c679bba92e7824892b70c753d72bd14a690
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 33f4b29a4f927f82f42e36402258eb8a497b7631830c7e0ad44829e6664f5016
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 4080606010d7ef880f061b71d1b69851c83ea21d1c8177011ab7c328500b7625
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 4805f1c32d88b084e086212aff9e6f7c9d71397842ef348dcef186d8bb880690
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 4bfb076d3f224cfebc67c22c5e4283b28b35426dfc070086ad0358e0544c88b7
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 4d838ae3351345c5971117883472e270593dadeb4dfb413551f701cce39315aa
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 502a7846f98b2587ecaa160ca86d3bf32950edddc2163951baf45b6b7ff8beb8
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 552528ad604a15e6e1e02029faa813e8dfae2c6a67fc5c3f90e178c9178963ed
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: 77bdc112c39df92c45d597719c19637da6935204723c6ec92cbde93dde539490
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: ab49d2013aa8fa6f7846d928afb6cc364e270ea61398e43b7cdb765976c15406
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: b03d35afc4d5919e11ead7dd3418603c459710a62dba1b1b4f0651dcb5f71d41
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: c1e0422c0741db67620131566e3d75c82110d4c1329b9757b3612e9229032247
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: dacb2d047c8ac06550d0fa75ea73dd12b204a380fe96434a240ed382c18cab9f
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: e237208a80dc4ccaffc7bcedf5b7f691f6021c84cf3528963f1ee213ee39b18c
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: e7418ade5e5fac8d3a1ea5d2d072d1b7dffb0def7fd29bf32eb0e3edf7d508a4
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 358
+    sha256: f2432aca4aabdaa687b02ba8a76490e7235312ac80b0db5175219d4ce1ae9c74
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: 11381cbc71bbf38813d20ec84e407e2bb300b5ee81696cd6c1cd9cff0709fc0c
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: 3ed579fa8b658140a9f479a9e6169f661b7c0602b5b3802f5e87809e6a178948
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: 734984612a9498d0c0fb26fafaf219ca69f81b687b91c1be8325ab7dccbf9b12
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: 76f412094031b34460af1f3ab9dbed703bef5484b2da0cbf215dedced3cb67d7
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: 937c7680cc79619bdeed37442071caaa451d1d081c79feed6286da20e3b0b018
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: a1be8df76da2a80684b5cb3b1e0b3d059b3ab5bbc2b4511cd0f7d42662bd2989
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: cd85da8a99198c4fb00a0653e242d11047d84954f98d582bd128e91a219210da
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: ee590dbabc615336b66e56dab2158277379b3e4adb77aa2b575890153c874d37
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 370
+    sha256: f268412594b0510813ed3041aadb767b0320b640cbdb0937fadd3a189e956f45
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 373
+    sha256: 36bfebd02243b41663ca491fbd2b7baf73cd41f3738168b88289e36b4f2afc0b
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 373
+    sha256: 0d6e842c5b08bea0777a7a1679c3e1ca6765f05f67c571dc82feed510f54df58
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 373
+    sha256: b6f81c978ac46f0335e3cc05cb8e7217b75092b0e80723484bd006db815c79c3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 388
+    sha256: 9e33bd527375d241e5facb2306db9d25de7e2b245ac83728f855605b239463a6
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 391
+    sha256: 712a374e149e6439dec5957001dadeaeedb38801c712363d4b17461becb2871e
+    verdict: false-positive
+    note: a hard deadline follows in the same sentence
+  - rule: undefined-acronym
+    line: 391
+    sha256: 744648cc48f5606448ec0082b87e673652a7108baae26d8881d81efbf48288dc
+    verdict: unjudged
+  - rule: undefined-term
+    line: 391
+    sha256: d6ae35c4a09100042a1fad880623295c40c7b9ecedf31ea3b81e782d039a00b2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 391
+    sha256: 4e01e60da461510fd98a29f7cc17f2a5903b1b8f7411151761620c1b936a1783
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 403
+    sha256: 3e4f30b72ab9b8b8506359a60655f75709301ec91f2acc50600ee521efeea9c2
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 403
+    sha256: 59e03e4d210fc98597cf787149ce9972e6d3839e8384af0293a2e3ff2299d976
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 403
+    sha256: bc8aa839f69f8ebf5fff0974bb09fdcdcef1caf92eb104620c48c71c531189f9
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 406
+    sha256: 34601d4e5c91af47e414f5926af45395a6909a0b8447a364fb83d6ef824c28d4
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 406
+    sha256: cd2319452684729208a765966fb76819937cf174ae76550cc291af3165dc36e1
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 418
+    sha256: 756c0f0ea21448bcd82631b08de4f828d2da9a1a31f0d654f6acd523ac0da2e0
+    verdict: unjudged
+  - rule: undefined-term
+    line: 418
+    sha256: 86cb121b486e584d1e91a44f0944cac07f9e1a4c8576af5cedd5da026f9d92f2
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 418
+    sha256: 88a6bc5d71f3003f038c0626efda195ba89aac10e17101e680164ca3d3e03f50
+    verdict: false-positive
+    note: the deadline is given right after, in brackets
+  - rule: vague-word-density
+    line: 418
+    sha256: 2e98b7a8541edb5fde1b6f0b797507aa6db589bd7597b40b23627332bb4925c1
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 418
+    sha256: 88a6bc5d71f3003f038c0626efda195ba89aac10e17101e680164ca3d3e03f50
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 418
+    sha256: 88a6bc5d71f3003f038c0626efda195ba89aac10e17101e680164ca3d3e03f50
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 418
+    sha256: 88a6bc5d71f3003f038c0626efda195ba89aac10e17101e680164ca3d3e03f50
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 430
+    sha256: a7118ac0e4ca06f95ae08b410062e55116da4cf93f839ed6e1b03462a05156a6
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 430
+    sha256: ce4483807de28618322bcdb4a51cd334c1ba20d51649153993542cd9ed95c19f
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 430
+    sha256: e3ecdc7b53c34c1a075e0acf16a73595d89a31552fa2a926747ee84934138f32
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 430
+    sha256: 25409dde5a17f5e2c67890ac616854b9ccbeb6294d192bf51c6f00598ac6b19b
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 430
+    sha256: 72546725bbdbc48c1184e0cf9fab3aa12b8b4cbb0374689cca783c0de3c58499
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 445
+    sha256: f7ce91ac5402df56b0e81858778a5c9b15fb435e9026a7b412c23f4d7e6ef30d
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 445
+    sha256: f7ce91ac5402df56b0e81858778a5c9b15fb435e9026a7b412c23f4d7e6ef30d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 445
+    sha256: 665f2fa1d1717959882e90e372369d95d4729179d667ef48780ce680e5268ae2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 445
+    sha256: 690884e701f6a2989681a9ec8c00fed457fe0ecb8f5dee6b91315c27b66985d6
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 457
+    sha256: b0301b5e219f9ce346dd67d9894429356f651dca87933ff873f032d66b0cf77f
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 457
+    sha256: 1ee0ddcabb8162308fb1abac81b864d8d15a7239e0d0f63a5bf4af0a42333bc0
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 457
+    sha256: 1ee0ddcabb8162308fb1abac81b864d8d15a7239e0d0f63a5bf4af0a42333bc0
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 457
+    sha256: fa03cbbffb9b165669ac4535c5fb3898581ddc769005a787250d73713803b8a2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 460
+    sha256: 9c4e31759575f08674fca80c498e9bda83a31342ba94d72e87a73d7187566d32
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 463
+    sha256: 8c4e973b6a6a5edb4152f48d42ff377e068e0842ee434f2b9478431ae32bd33c
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 478
+    sha256: 7069a4b52a42d2b8eb4a72ff2c565effb15d07eb15a1486df5ea822e71911604
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 481
+    sha256: 7069a4b52a42d2b8eb4a72ff2c565effb15d07eb15a1486df5ea822e71911604
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 493
+    sha256: cca28caac0787b001a36a499a80a900e9b3ac9cf2d4ba1ff46cef0139252876b
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 511
+    sha256: 3d2582be212494a5b10811f0b497247172e4482546b327057e49d5b313d58887
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 511
+    sha256: 3d2582be212494a5b10811f0b497247172e4482546b327057e49d5b313d58887
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 526
+    sha256: 10c00fd9254a66aeaa76738e5394cec51afe08ddae2dfe0264efbd2ed6571914
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 529
+    sha256: c2744a3403f71b2001d44cc9a085e6f6c3f138474bc7c459e3680522d7b6c412
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 529
+    sha256: de254f9a6599b4a49006c0c1e28e9e790c4f02f504e40ee6e9fefd8edd0f2443
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 529
+    sha256: 7d87167a829620005bb74e83c2361abbad6600e6a87a075b2a6d52b5174e25a1
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 544
+    sha256: aea5b19371da091f65730ff9bddeffce21b660665870d13e4574617f6f1be0ca
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 544
+    sha256: aea5b19371da091f65730ff9bddeffce21b660665870d13e4574617f6f1be0ca
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 559
+    sha256: 9f4510dabd14cfa6239f09a76b80cc33e067df7074de7a1763212c1dce9aae6b
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 559
+    sha256: ded6954f63adf7b630ae4ef1f597d3f8a8233543cf5724acfec03db13d62d462
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 571
+    sha256: b627cd2e29c3397fa786ec6a2278884c423dbfc9f97be232d5a551827c842e7f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 571
+    sha256: 2b6e8dde5c09e98d70396f11c0b24de36d10bbc5f376b0a33425a2277ff14b57
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 571
+    sha256: 2b6e8dde5c09e98d70396f11c0b24de36d10bbc5f376b0a33425a2277ff14b57
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 571
+    sha256: 2b6e8dde5c09e98d70396f11c0b24de36d10bbc5f376b0a33425a2277ff14b57
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 586
+    sha256: ced442864a1242f89360f7a66f0b9a2836019d94b4262a06ebfefc15f21fe0dd
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 589
+    sha256: ff8e7db52331bd03621506dbec1640d2a55fe4907c32765838f969bfaa261b82
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 604
+    sha256: 682a1c33b8488056130a9f9f7c767b6516ed47b5aef476627df6c34cda8023d8
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 604
+    sha256: 416d0637752d95c06f557f81c016c4726f0917d49fde94c7a76139c010945876
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 604
+    sha256: 634afa110ca1cb6db0fa5bce7e29c584a2a99f947f9200652d0b2cd064618a6a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: 4527da909cba95d31c9e056d8e6df7bdc440a2151211a228617c2c720f4772c1
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: 55e91fe968b5e7c9249ab2dfaf0074af19e29b419c89ecb22384cb8b753430d5
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: 634afa110ca1cb6db0fa5bce7e29c584a2a99f947f9200652d0b2cd064618a6a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: b39df971474c3a1ab73529427134435d9d68ef04b1520d632be3fd42b7c66429
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: bea1f1f6d7873e560b5b15537ac07f0c448d6ed17da35b18c39c8598e10594d2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 604
+    sha256: ff885c487fb26c2736c502f2006b582836a8748055cc702c704c97b654b5530e
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 604
+    sha256: 5f7b7b0d616c3e1b34ee3118213b51ad040137eded09744fed42636d28ec3f74
+    verdict: correct
+  - rule: dangling-reference
+    line: 616
+    sha256: 4c56c7ec288c9a366840063fa550ec518ceacf02aa1d355dd0ef45070a45b1ad
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 616
+    sha256: c205349bcb7a371b4b1280ac8fb82c95049d9819079ccf3322186f41ac5b7332
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 616
+    sha256: 93a72a89b8ecb71bed4ed360153a958824161544ebe7da9d6d2ff14c3d4397ed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 616
+    sha256: 10f5d76a271385fa4b0203680c8c0ed3b77afece64c4040c5f70d3c4bde1dba2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 616
+    sha256: 93a72a89b8ecb71bed4ed360153a958824161544ebe7da9d6d2ff14c3d4397ed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 616
+    sha256: ae9c869d1ac6165f374173a204f0bf3f1d09c7358a37a9074a1981d36560e9fa
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 616
+    sha256: c4c8cdbeda487b097fe5a3c9a481ed2f908a547ad83f7a8d3b0668354d2111bb
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 616
+    sha256: e8c2dcff70b58bf4aeec3e5f68bb878f089b02c006a241dc819b2e90b277f176
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 628
+    sha256: 499fcba15ad8385dfb8a4857707b80a5ed451b20a3d9a4503c464e21b28fb9e6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 628
+    sha256: 499fcba15ad8385dfb8a4857707b80a5ed451b20a3d9a4503c464e21b28fb9e6
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 631
+    sha256: f41afb1ccc9a0f0478540e11e9f56a7b5dc0e6f13396f205d1e594f78d840206
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 631
+    sha256: 499fcba15ad8385dfb8a4857707b80a5ed451b20a3d9a4503c464e21b28fb9e6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 631
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 631
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: 546ebae6035dab604f6afd904852e7f8fa97d5eebed569cbf1612700e2e34093
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: 93a72a89b8ecb71bed4ed360153a958824161544ebe7da9d6d2ff14c3d4397ed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: 93a72a89b8ecb71bed4ed360153a958824161544ebe7da9d6d2ff14c3d4397ed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: a1fecddb1d73c053f94aadb1f1bfa33584fdfcf5296cf3b1bd3972f634984d93
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: a1fecddb1d73c053f94aadb1f1bfa33584fdfcf5296cf3b1bd3972f634984d93
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 643
+    sha256: a3f164f8899ba3d38b0896dee3923fdb984da71c644e5d6d2f3bca1705e8e525
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 655
+    sha256: 2e9eeca59733de5f07123e1bb6306b4219f6e5cbd1c6d528eb5b0d31f421bd33
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 655
+    sha256: f4215294b17465ed9e782675eeb0787f0464832c97c6cff2972f1f755ff5052f
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 655
+    sha256: e11af9017ce6de19f7dd1bcacb3b86126e5e156273b18ce0258a65142cb1374a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 655
+    sha256: 442a0ea68260ee4b2a2e2b18c3cd4d5bfc45c4c35e88c18338730eefcfa16cbd
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 655
+    sha256: 442a0ea68260ee4b2a2e2b18c3cd4d5bfc45c4c35e88c18338730eefcfa16cbd
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 667
+    sha256: c57bd959ded2be6198ec6ff70154099cd71bbac4fc7428ba2769b3a836cc00c1
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 670
+    sha256: fcb6fd71ef12f3c6a119f3b119f139f5f4e6e9c5af9fbea388e8e0d27f83e128
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 670
+    sha256: 499fcba15ad8385dfb8a4857707b80a5ed451b20a3d9a4503c464e21b28fb9e6
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 682
+    sha256: b2893d9fbf4f355ddf44131350c6e0bbc5fb1b9bf4fa590f837b53558f282d0f
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 682
+    sha256: cd3a7654d3577499eb5ea8b469ed49a5debcf2dea558cad5c61af91f8a58a0cd
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 682
+    sha256: cf37a65f2be1169fd795f9525d582a8d7430de827ff04e9ba58639c970f88a60
+    verdict: unjudged
+  - rule: undefined-term
+    line: 682
+    sha256: e395490b87db3f722c4af746459f9dcd9426c6eda684a580ce717922618ee3c6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 682
+    sha256: 55fe945dd5ac61f7b00c65185dff7b26f85d0239b713389ccd0c33ef50871576
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 682
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 694
+    sha256: 9d6a94853699ec398da6e14e4f6f5fd310469effe3e02180ea15554efd4c233c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 694
+    sha256: 39547d295876926272f76cc5f3b1930a25e1f05127b96f3987671bbba569eb21
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 694
+    sha256: 9d6a94853699ec398da6e14e4f6f5fd310469effe3e02180ea15554efd4c233c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 697
+    sha256: e8c2dcff70b58bf4aeec3e5f68bb878f089b02c006a241dc819b2e90b277f176
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 709
+    sha256: 9422abfb72531f17f4dbb624e4090d8e855cadd96952ae5b7ca181322a864c21
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 724
+    sha256: 35ea9f9e8c81029db52671fafb56e5cdbe26c725a002dee7f5ee7175094ead7a
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 724
+    sha256: 1c9aa32b2d44e9a710cfbb5f72d076d47b33b3e63698352c01fbaf75b3e56dbd
+    verdict: correct
+  - rule: vague-word-density
+    line: 736
+    sha256: 26cf0436da7cce2dde5fe9b4845183828cb9fd933946a1719b9354a5f76c29eb
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 739
+    sha256: 087bcc1d49f245b144efebb06b3be4fa56d96b03240a6f8da785cdf6632adb94
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 739
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 742
+    sha256: cd18e1e1e313836bff7071293664bee5e0460127f46e7dd7727c8363a957e1ba
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 760
+    sha256: 6e5587b745c99ade21016ee87e9265e961cf076ee6fb6bf37b47c2eb44e52a86
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 760
+    sha256: 70f3b09757bf0a8d5b3796e69206f649b7982479cf053946e78240cc0e3d64bc
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 760
+    sha256: 7dbc7217816de6fa6c80d6a8c850ff03ffd5d775cfe96f52e0cca6c59057cede
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 760
+    sha256: a13574349a1c583b9537698c4336a57046439be0fd96befc900f758cbc9fe233
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 760
+    sha256: ac58ba412708ccc140392dabd0ec8b24a3ae26bff9ba6cd82c654bd998923538
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 769
+    sha256: 806b53914137f322e19beeb563f4ec79ea9e932210aea2956e96ba5c1ad7a7d2
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 769
+    sha256: d82fccc4b6b4d4519dd00b848464a8041c7aa45cbfacca75c11ab41ce3f24e05
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 784
+    sha256: 3d2582be212494a5b10811f0b497247172e4482546b327057e49d5b313d58887
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 784
+    sha256: 3d2582be212494a5b10811f0b497247172e4482546b327057e49d5b313d58887
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 787
+    sha256: 3d2582be212494a5b10811f0b497247172e4482546b327057e49d5b313d58887
+    verdict: unjudged
+  - rule: undefined-term
+    line: 802
+    sha256: 0d3a16c6f9501dd095513072d4c024d3d63cbee42254e667d0e582622fb34b3f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 805
+    sha256: aaa1b85337f173d54ffe46117780c1053f63085ebdee12009dadcf084788293e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 808
+    sha256: 4dbd15639a5daa193a5ef61c9488b0deb36316fc61e8ef6641e3c77340ddea3f
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 826
+    sha256: f21b214c365c2975b858bd8e9721ea49ac68bb87746dec4c4adbc2e03651008f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 832
+    sha256: c9d497e4b2eab6a4089f9bd15d2d7f25c3662c17c7f43ac8813c2a1cc1105421
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 844
+    sha256: 82ff6af2a147ba80b8fa70c6b2b27aa0e35822d475b65839b816ec26470240db
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 844
+    sha256: 4c5d85b95a4ce1c2894d2d5597f776222b44b2116d89183bab5dd639cf622c85
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 844
+    sha256: 74ece9742e7e7de4aab44c48cca57cd2db2d9814de9abcee9262423fa6cecbb6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 844
+    sha256: 74ece9742e7e7de4aab44c48cca57cd2db2d9814de9abcee9262423fa6cecbb6
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 856
+    sha256: a99d60c12902cfbea1d3c9f158f56554d9076d1a9c27fedba57e5493e6ee65ea
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 856
+    sha256: b319703d20ddcc2df815d171294f90cb3c507686179462b29fe63dbbdae09d94
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 856
+    sha256: b319703d20ddcc2df815d171294f90cb3c507686179462b29fe63dbbdae09d94
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 868
+    sha256: af0ea12b4e424e13f10b81efb6feabab6ff01bb4c89e638393098c35312b7a9c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 868
+    sha256: af0ea12b4e424e13f10b81efb6feabab6ff01bb4c89e638393098c35312b7a9c
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 880
+    sha256: 8a46bfbf7bf50117f2308e48b18c023304e233538856e5b7e1811e046bc04a90
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 883
+    sha256: 7d13db128733a72d4e83ba7e1a35d502f230c2aee5aca6e725ea31d1e05c6546
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 883
+    sha256: 5605455404371c52ee4cf4968eb77b4af2a08f568f6a8c450e7584929b56a77c
+    verdict: correct
+  - rule: vague-deadline
+    line: 883
+    sha256: a8f7033ef89b716040a7074075d4766c0a1eb376908b30f6f0f2b96434e8923e
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 883
+    sha256: d3114aa17c1620654459dbcf8323cfd361868be3c35db7d816a2b922f29ff947
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 1d5c2b2e2dcece8366bfc8f1cf8fbc036a0d93070142b0b397dbabe89b25c3c9
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 1d5c2b2e2dcece8366bfc8f1cf8fbc036a0d93070142b0b397dbabe89b25c3c9
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 1d5c2b2e2dcece8366bfc8f1cf8fbc036a0d93070142b0b397dbabe89b25c3c9
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 1d5c2b2e2dcece8366bfc8f1cf8fbc036a0d93070142b0b397dbabe89b25c3c9
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 5a11e6aef6b16de24757a34139dc30d17328c7c03f31c2316d2cfd6955edc46e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 5a11e6aef6b16de24757a34139dc30d17328c7c03f31c2316d2cfd6955edc46e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: 5a11e6aef6b16de24757a34139dc30d17328c7c03f31c2316d2cfd6955edc46e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 883
+    sha256: f084c87a9757cd2e6bd64a57a9aaea6bb1d67cd2c04e41f36b783b72a086115c
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 895
+    sha256: 2c5578f8a58fbc564066b9d81653bb45c10ae7fadd961dd9c254ddcb5d2f4c11
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 895
+    sha256: 5febeb5779fbb86a26fd136aea92cb774cbdf34844ee740f13b3fdf9f6960553
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 895
+    sha256: f7276dadff7d4c1098b43d40bf1848c0a425356721a8f104e69737d3259d8f7b
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 895
+    sha256: 46f2aad5ea100ea33cbe3d62a940293d3a0b86c89e37be6ac93228b94f1e3471
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 895
+    sha256: f7a7ecfbcc2b59c7213f39bd6e42b44686ec92c01d90051543cb6c7f45f4caf6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 895
+    sha256: 2f8af4bd253dc22a11b366170459036bdf8fe06e635a54ad4287dd2985d323ab
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 895
+    sha256: 8adbe0f83152cd9da8c39be7b9f347f27815802dc92ee6d82df873c8f2316561
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 895
+    sha256: c9223d518f13dfea94c51143cff7f6a2645329cdc49ecb9315c366a8378537da
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 907
+    sha256: 7c5aea7b9313748aee32105ac5b8f0529abac12bf5adea9a369685663627c2fe
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 907
+    sha256: c30eb990e26873057183aa71379567b1a81bcfd33bcb30de2aa1ce91ef7f90cb
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 907
+    sha256: 0d3cbe280bcdd38a81be483627063b22b7db540b8faf9ef852f58016c941ff04
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 907
+    sha256: 6eb35a581e650d1ab26c30fc978835064ac7edbf0a9beb94ffad5e9436456af7
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 907
+    sha256: 1c2b80605c0193e8de6715f8fc3da943319f610c75632a3ad0378de2cae310d2
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 907
+    sha256: 1f0f4a2b698794bf9791589a6c7c6c9674de634d1f74570c0284587735d0d171
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 907
+    sha256: 1f0f4a2b698794bf9791589a6c7c6c9674de634d1f74570c0284587735d0d171
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 907
+    sha256: 7c56625c1cd325fca67b2cf69da1b9b3aa7555c203f2d840ec7db4fe66108bd0
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 907
+    sha256: fa03ce25e7313fe62369691cf68f789a2b67c6fe5350bac35d119f4eab54307a
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 919
+    sha256: a7690d10393a42d5f5df6ff0acaa93613d16199d260488fff3bb7276f307f61a
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 919
+    sha256: c6c59c479b902869b653d1b5b8135befa4045a51d69325b0277861270ec9fb7e
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 919
+    sha256: 7d9cfb93be49f5bcdfe847826a050aa3a9150a77879304ff8592ec3ef0cc0a7e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 919
+    sha256: f8e242ffb3424975f9b9d47c1bf032932650382096ae9e275f45a320a0f92fa8
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 919
+    sha256: f8e242ffb3424975f9b9d47c1bf032932650382096ae9e275f45a320a0f92fa8
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 931
+    sha256: bbef3becb473d2fe9d5cc4988c68a12bcd5c56b6e7777d92beeace227ed49b75
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 934
+    sha256: ac892f14d11f5d3880a7c8955bbc071d1b47bc30a33f6f95a970fb826ead347f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 934
+    sha256: ac892f14d11f5d3880a7c8955bbc071d1b47bc30a33f6f95a970fb826ead347f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 946
+    sha256: a82f8e6eaf66fd8b9c07202d56aeb4ca99b3528cac579d02aa7e35b7daddfa7c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 946
+    sha256: a82f8e6eaf66fd8b9c07202d56aeb4ca99b3528cac579d02aa7e35b7daddfa7c
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 949
+    sha256: fcb21e486a8198b7cd8c39e156860caef393b47418624c348b0a12a04d51115a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 949
+    sha256: 615771dbb695ad6f9355d64a831e7d53e5a205631e8832b086c0b957caf2770c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 949
+    sha256: 615771dbb695ad6f9355d64a831e7d53e5a205631e8832b086c0b957caf2770c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 949
+    sha256: 615771dbb695ad6f9355d64a831e7d53e5a205631e8832b086c0b957caf2770c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 949
+    sha256: 615771dbb695ad6f9355d64a831e7d53e5a205631e8832b086c0b957caf2770c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: e2b1fdbaf7c0b53d5829b4c577a461eab6809e42eb6d8346bd2db0c94e393379
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: e2b1fdbaf7c0b53d5829b4c577a461eab6809e42eb6d8346bd2db0c94e393379
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: e2b1fdbaf7c0b53d5829b4c577a461eab6809e42eb6d8346bd2db0c94e393379
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: faee3916baeba3894c4af216afbfb37d54b81a637755a175e354cf6837b5275a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: faee3916baeba3894c4af216afbfb37d54b81a637755a175e354cf6837b5275a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 952
+    sha256: faee3916baeba3894c4af216afbfb37d54b81a637755a175e354cf6837b5275a
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 1000
+    sha256: 8f08b395a86d90ae83c5477c71756782c8376d1520145d2976b1a6ad7603d14b
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1003
+    sha256: 42821bef0974d820c6b12184d16cc51b8e4f5e237684a078382a04e59c8c3fa5
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 1003
+    sha256: 2ec24d5aba320e60b6562432b88c06f5bcc2ef28de47482462171bc4ad6e891d
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1015
+    sha256: 49e48db7a89b385f3fc3f65dfba282e93e9f7952f69b0cdc9bf52f9b4fa9fc60
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1015
+    sha256: 048342bec796e60752d7239c5ee7db35d69163fa8f5e7e4d109788320098531c
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1015
+    sha256: a035ee8e510b764c02d044015e20a12335391db8c788514769c1363cc158ce3f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1015
+    sha256: a035ee8e510b764c02d044015e20a12335391db8c788514769c1363cc158ce3f
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1015
+    sha256: e74af793d4b8c6376c28ceab4eb7a97f0c8cd24bcec94cc7a34b3af0218e5439
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1015
+    sha256: e74af793d4b8c6376c28ceab4eb7a97f0c8cd24bcec94cc7a34b3af0218e5439
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1027
+    sha256: 2c222b09968e17e0242d208c8cb81343f7c9d02adf6e7ffbd1a5cea297a9b25c
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1027
+    sha256: e7ca0ef677604d0e5a3288c1c4d4582a2a5121d0f981d931a00ccbeaf78a9cfd
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 1027
+    sha256: e7ca0ef677604d0e5a3288c1c4d4582a2a5121d0f981d931a00ccbeaf78a9cfd
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1027
+    sha256: 3a9890e2fd31ed39fcc87a0a7d10619672b56db2ec7ef62ef6e5950be9bf3877
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1027
+    sha256: 99080dfe35be19ea195c3d879f37ddeb845390a39d3fe70ac4026335a8c13dab
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 1042
+    sha256: f88a7131f2cfc3af35389d12aef340e2c9c08708c38cccc6b39b0a929a7179de
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 1042
+    sha256: f88a7131f2cfc3af35389d12aef340e2c9c08708c38cccc6b39b0a929a7179de
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1042
+    sha256: cf31dd46cf34d2998def9faabaa66bc4f8f99fe1e57021280801ca845888dfd0
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 585f6c0f3f19ae410b714d28cee2767ea548c9098b5b47b3c2dc67cab4039fed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 585f6c0f3f19ae410b714d28cee2767ea548c9098b5b47b3c2dc67cab4039fed
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 6450ca5c7a92fb9090ea0639150c9b48be7f6d5dc04388a9d562a14110c26ea6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 6450ca5c7a92fb9090ea0639150c9b48be7f6d5dc04388a9d562a14110c26ea6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 6450ca5c7a92fb9090ea0639150c9b48be7f6d5dc04388a9d562a14110c26ea6
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: 9fc8753666e7d1429e2a9bb79d82d3d6efc8eb5cac1064d21389419329750d0a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: aaec0214fb4c410598d6f4c3ae2d608866a18df15fcc9d194bb6ce1a5d87961e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: aaec0214fb4c410598d6f4c3ae2d608866a18df15fcc9d194bb6ce1a5d87961e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1042
+    sha256: aaec0214fb4c410598d6f4c3ae2d608866a18df15fcc9d194bb6ce1a5d87961e
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1054
+    sha256: d9dddda89ab973fefb73367978967771c5ca57316584ac7fab6e3176315dd68d
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 1054
+    sha256: 4dab69ac0b574ee9276057e07d30b95a2ec3f73676de73fbd64879e0aa3aca54
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1054
+    sha256: 6f4f95aa03efb289610226abdaa9e9ffde43c3000808f9095189e7c5aa33ba92
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1054
+    sha256: 86b228484ee9b9e86dd2f23d2747c5de6ec6808eed2b550997142e9495aa7fd3
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1054
+    sha256: ddb3440dcd140597e20e7bb32f77e55257691dff9c03a3dfc39f9209f2a5d648
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 06fd7768af515221815e74e9a85d0b7f10b8ab01994a81a384b1f901e38dd3ec
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 1a5284238852ef9db00ea5157970490bbbdb7b49312905ff37beba2f35497442
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 22ab089579c14ff53313fa0c356cf4b367a1ef1aab5dceee27325074d709ed0d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 22ab089579c14ff53313fa0c356cf4b367a1ef1aab5dceee27325074d709ed0d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 22ab089579c14ff53313fa0c356cf4b367a1ef1aab5dceee27325074d709ed0d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 22ab089579c14ff53313fa0c356cf4b367a1ef1aab5dceee27325074d709ed0d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: 8f4713048cefb63f460c86d57d10197aff6355025a9ede2306725c8be475585b
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1054
+    sha256: ab1a2cdb7d2d4043cecfe37ec14c48c585cb38f43ff2da517bedc5b203821c38
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1066
+    sha256: b3911aba03613034069e898f97baa68e50b58fb6946992ebe47111ef2e98b102
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1066
+    sha256: eb89c4b5cd4c9c55e094e7fb27aa27fe2276ad26c5bb235361e26b64e94511f2
+    verdict: false-positive
+    note: thereat is a standard legal word missing from the dictionary
+  - rule: vague-deadline
+    line: 1066
+    sha256: 54455e1b7c84316fba4a7feaf67b7ece11cd5b61ec179230a566fab2903af29e
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1066
+    sha256: 0b49dd004fb1b915061dfd9c936cba95c42ee6be2a9fdb3e24995bc637b574bc
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1066
+    sha256: 0b49dd004fb1b915061dfd9c936cba95c42ee6be2a9fdb3e24995bc637b574bc
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1066
+    sha256: f0a9f18bc787a87cce7e33173c047bb2516bac5633eeaf95f39c9c31ae7ddc6c
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1078
+    sha256: eabb643abd9cc821e92a07bd7df6680b0aec6f2497e7446425327a548678e9bf
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: 027bd0afd23a966dd5de88fb9a4846d1ab4ed5bc64a3bc58cd10623736e7c0be
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: 027bd0afd23a966dd5de88fb9a4846d1ab4ed5bc64a3bc58cd10623736e7c0be
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: 027bd0afd23a966dd5de88fb9a4846d1ab4ed5bc64a3bc58cd10623736e7c0be
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: 0962d9af29be8b9c6f611bf743cd1495d0e7317da4401f3d1e7ef4ee2e45760d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: 0962d9af29be8b9c6f611bf743cd1495d0e7317da4401f3d1e7ef4ee2e45760d
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1078
+    sha256: dcdd8456ad0c19c16ebedb493d19a12be2c99f932f96e168749165786b015f94
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1096
+    sha256: 38dbaa8469d75fac55219c6053eaf3ca1010bc8e9e68c38e5cee8ca381eb6ace
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1096
+    sha256: 38dbaa8469d75fac55219c6053eaf3ca1010bc8e9e68c38e5cee8ca381eb6ace
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1102
+    sha256: 91cc34f5e2e0a0b519f797cab19091e4d58bb40a5ac5edc42d8ba6155b7250fb
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1102
+    sha256: 7107648ecbfb5cbcec089e92337a7d07aa0b7511780af814de6b69f3f2c8084a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1102
+    sha256: 7107648ecbfb5cbcec089e92337a7d07aa0b7511780af814de6b69f3f2c8084a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1102
+    sha256: 7107648ecbfb5cbcec089e92337a7d07aa0b7511780af814de6b69f3f2c8084a
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1102
+    sha256: 7107648ecbfb5cbcec089e92337a7d07aa0b7511780af814de6b69f3f2c8084a
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1105
+    sha256: 5004896bf93dfc21378b1982c3ea7785b0d97cd97c175e3539613202e9d282c0
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1105
+    sha256: 7a20fef6f68e1ab886897df523f11195109e06c074f87070146ed13f64b17df3
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1117
+    sha256: 35566d7f9185386e740decd6b0f67aaa98b83cbf9b3921b6209adb6e712c6eb1
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1126
+    sha256: 3f0face8ca2a2e4ca3dbb67b9fe32e47c0c93b777fe831b910a73a93f8b5559b
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1126
+    sha256: 5c619a1b31fe1367d1a12f58d42a0eb0d755b228d289af4647c8f2dee56d6d40
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1126
+    sha256: 727eddcf3eca6fba88d0dcd2ef6ec120639fe2b4084c2f4a86dd9bea8de4e104
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1138
+    sha256: 818bcd5190ef94f90abaf2ce2013fddd1a9b3db511698f584dec97d974dd0c2d
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1138
+    sha256: 938046c4c2581522f5e1e20f5c73c63cfab60ca171739063565e8de3d8682ca8
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1138
+    sha256: edcf17bc236154be93094b531a09a58395ef6fe6b6ed0ae155566e51fb542977
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1138
+    sha256: 8cec16ac19a9febd2607c32dcec166bafa8c7f40077fc3a3a30896a75d64e702
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1141
+    sha256: 5ec930091543455e78e0b15c32614b416e1095304815b58b8ce1eccf5630e3b3
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1141
+    sha256: 76eb09372647d8c3c774a6bf3058d2d0513005607f6fd60f56acc401c2b3e735
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1141
+    sha256: a61c7561ac0c15f574f2ddaa3545316b3e86c90927bb4976e453d01eefa18854
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1156
+    sha256: 1248bce8cc44ce1bb98b6bb69d1f2c9c15b99527b392ce52a814079ab097aca0
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1156
+    sha256: 3f905362f9eca6cf38ab3108fcf601d2bec040a7f497ce42e06257282a94fd52
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1156
+    sha256: 823dfdd47e6f1218ec00b098fd9f04703117f3a8dfa440ec2591d99a2f0b712e
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1168
+    sha256: 645781760f1db50d834d35c357398c1bca33c6bc27fc393547e1e148bd202260
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1168
+    sha256: d3af47ef380ab707056c899f5667f40e717b1ac1d47f7b10c713f1477c99ad2c
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1171
+    sha256: b6925bd096ada5f2eafc8a702d0fecc6ddd97b66e4d9e9d68b5deb4f54f317e6
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 1189
+    sha256: a63b5108386c4a2ed6d1511508406bd028e59a2ac97a1f38014565bf05302cd1
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1192
+    sha256: 3a92b5e1576c3bdfe85794d31c9db1ce4818e6c82235adcd6c7611cd2ae9a2f9
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 1204
+    sha256: 2301da35294eb0180e8cd5a31f57f8bca93a096fc92fcb2c2a76627de9f2d23e
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 1204
+    sha256: 5e72c1b92e8267df95f7a0b81744791d2f72011cded4c0fc5ea7a98be5d2c5f9
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1210
+    sha256: 2374d46231db45b404c9687352cc08b62fd21de5b9f62f66accb5697f3a23ddf
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1213
+    sha256: dc60c617ce1b1cfe79e98b4ea9ff8ee6ae77c263f234db5ec804bc5056a14b4c
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1213
+    sha256: f05a54e360230b212976477c1cfbf6c9807ee9eae19894a021b417f49792731f
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 03b8a55811f53636ef696710e4720cb8cc64b21868062befc26b94a01607075a
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 1214d65145af9760714d2dfd1f91bcaf56edf00dc0aa58e2a6d77c45e8618bd4
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 1776e53d7cadcf74c38952312195a4d6f778add72b4205f42689ee6ea08504ae
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 1c69cc7ff49e8a2b080be2faf8e38a625ef69878ca1695100b8c806e8625a158
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 218876ad90c55292060934091e5e5fef6c3ec0fbfa8d1b901ae9a68530604aa9
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 667c4887ac621cca7162205f17ed46cf1d0f104dcb0e21f3f274e5e2abbd8b7b
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: 98636ae21261be5c6e55fee6d3df66dfce85eb8e7c7d3268c625de4e6f0076e6
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: b007f7d0bb4c1d85b6595c3cc75b5bdebad3943a1977842e803857d3bf3db1d5
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: b3711112ac280d16dc5c9f1b2bca020aac3bbbb9a67b236b549dcdc647717ffd
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: b6781859fb9773359d20db8d130d47c9e3220a280f6713b330c5e01e1c0e2b41
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: c2bdf3777feac343e4286312488d233cf62faf2aa1c06eb944d6a13c8c8f387e
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1225
+    sha256: f2a809868e9acec5ad5ab55b2a9ccc2f2967af974a67416ab5c4b4192c3deb7f
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 1225
+    sha256: 41a79c35dec64bed3d3d94ab3be66d459e1419ed93c9ebbec2230562613fb4ca
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1225
+    sha256: fb2be9bb483dbe6c2d34ffcd659c2bc9baeff81d78c9887c2809e568f055f588
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 1225
+    sha256: 92bc80f112df1503f4e37ffbde54b5b68a5b35e29ac66dc037133c6cf3148546
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1225
+    sha256: 3153535671e4a85ec4ec952da35ca0debe9a52d35f40e11acd65d42585c5e96d
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1237
+    sha256: 4d902d08247b882cf55cbf3f7353d4e8a93f58808dfa4e698a7fad3e3f6d79a1
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 1237
+    sha256: a82fce001b2d6c3d16d508ee7b93a0e0d4afa275f72c1b242bc188bad0ae42eb
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 1240
+    sha256: 10d14ba727795a22d2a795b1eaf86a0ddf5445dc9f01f45babf661b10630fda9
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 1240
+    sha256: 984c688c6790554b2f294c7cad06aceb3942f5262884069532396c945dbbd5ea
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1240
+    sha256: 654f193db5a0be6ca44e8d10d1dc5fd951f4e7709fe186ffd4007a12786f9d68
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1240
+    sha256: 83da125560444b3768099774f99cf2fef115274f7b9f4f3de5ed74f14cf16228
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 1258
+    sha256: 295229b5a7c3e0421d1d57b1905a7886ad61aad0755654cc7d586beec630d70e
+    verdict: unjudged
