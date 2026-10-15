@@ -1,0 +1,135 @@
+id: gitlab-meetings
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 17
+    sha256: 8594d89c6c0680abeadbab6e1b3717621cf1a90eb8fdce2af38b53f776d650a3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    sha256: d86b9d652dace620de536f742f55b630cd7ee109135e5f80eecf44a36ecc250d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    sha256: f6edafef78142a64e106b342a7298f9fd79ecc86fc9bdee6340d9681da7b4454
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 18
+    sha256: 45f3b8d610dafb5c46bfec41f06dc85a6cb9adf9bed92dbcfc4cf94f8da3b030
+    verdict: unjudged
+  - rule: weasel-word
+    line: 24
+    sha256: a404f752d7de453cb760cc55c533144ce43d7e6b6f2aed808d621aad17ec1e33
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 28
+    sha256: 2c0327c71f8f52dea921d5bac60a8050893543232a227b3463c1ca79124825fe
+    verdict: unjudged
+  - rule: person-consistency
+    line: 36
+    sha256: b19c0102afa6d1d8fcb3119289499995fd4766d15fa74a437261e84e8fe5a396
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 43
+    sha256: 946f6a42a313980d6e9c29ec041b8faa7992ec6f2a630c5ebb935c0b30786957
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 49
+    sha256: fed071104a4cc84c0ab93a0ed5c69afe0484c38c62921ee446d08627eb68cf42
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 51
+    sha256: 0f24c41508ba543afe9ad1582fc195f061e4b2488609a74d79338a24c94480e2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 52
+    sha256: 6ae388be888b11961bb9834b66592ae76bded0fb5c8f023c969b49b6ac3d8f6d
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 56
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 117
+    sha256: fda7e791919557b68189fe8fe413aa353a3494842bfebe9d14027ebda3ffc0ab
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 121
+    sha256: 93d75b52e507bf258bd46e5ea164c30f1f79a34464faeaef27689c5cbf41ff05
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 121
+    sha256: e75f4721c7db9f21181d5e4364879c8340006bf3833e8e95bca4d7ffcbb0ee65
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 123
+    sha256: c5ae81d889e5c8acff2e75e4b6071ca85bd23b19958b5212c3a8602665da36c5
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 123
+    sha256: 04a61f585e6a4050ae712d592d278b91dad7b54c4249ecab0051f52a93cdabc2
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 123
+    sha256: fc9d7ee852b3e80832d50d521b3572092590995a964e347e394e3267f473b74f
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 127
+    sha256: 69c58c3dabcbc64480cb7b87c22cf2ba1a593e3ec1f40a16868254cdc3311662
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 129
+    sha256: 72ded3de153ce826e363f65309814a066c944a2184ebbb6fe693e58c84f2d48f
+    verdict: unjudged
+  - rule: unknown-word
+    line: 133
+    sha256: 2d90aac891e26c9bd809733345da2549be5bb728444392b5336d098b164e7e19
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 137
+    sha256: a9be2a9d187cf7d805ec813003bd31cb3766a0bacee8a5788b3a2bc73faadb28
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 140
+    sha256: d01912063c0a75fb51040726106148daf86979b52dd0bf6fc81f02fe2ea3143b
+    verdict: unjudged
+  - rule: latin-abbreviation-form
+    line: 163
+    sha256: d2cda714f2770d939b1a144e350dfe4225189c20f62ccb64f7fc50d50f5842f3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 164
+    sha256: 8a503c85a6a7cd35a73e9c32832bab4fdb2c4ba731957205f239eb0375f5e625
+    verdict: unjudged
+  - rule: cliche
+    line: 184
+    sha256: 603f1194ea0ccc41449e69abed39f8493f8822fc39cc0d3c73aacb72e2173f0f
+    verdict: unjudged
+  - rule: double-negative
+    line: 206
+    sha256: e633c536e34b0f72e39f1780e0a6fd630a43d68136ffceabaad6b911abd97a8b
+    verdict: unjudged
+  - rule: person-consistency
+    line: 247
+    sha256: 9e182718eea8643f4db2d00820422d5a13f98692d63a209221ad536ceec4f266
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 249
+    sha256: 1b27654063dbe01c89a0161534f8d4981b99c5d652b7ff9e377c9c0504b077b9
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 299
+    sha256: e67a7460f6215aa172005b6a6026c3170826ea9e21bc43f154a3b6e4946c5999
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 325
+    sha256: 1d13b7e5836819918827eeda93a189f7583d3304372987c53af07f737b5648f9
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 337
+    sha256: 0104961aced0d15313287a4b87e128ff5c19d8c3255fb1ded7e442f13e4a61a0
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 352
+    sha256: 8207d840e935a16df9424a27266157f05b9597c69f99d75acb9c108ae7fb6ba5
+    verdict: unjudged

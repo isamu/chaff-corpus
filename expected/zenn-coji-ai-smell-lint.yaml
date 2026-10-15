@@ -1,0 +1,23 @@
+id: zenn-coji-ai-smell-lint
+chaff: 0.34.0
+findings:
+  - rule: taigen-dome-in-prose
+    line: 79
+    sha256: 8ff9a9f65beac857362a7993d74ef850e1c0855d2b55d99ddd863198308a3f43
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 115
+    sha256: 0dedbd9f6368754cc9003b438d737fa1a476b612f86d40b93a27af747df2aab5
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 156
+    sha256: 6fdb0515ee97f7547046f162a6f6385c2104439f058499028f91bbed5cff13eb
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 158
+    sha256: 65c2fe7a9e96551a55f5324db6e44f56eb3fa88d425fd0e7568854b5a4c6b3be
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 193
+    sha256: 0673ea393b08a7830406750c4327cc58c79492a0a5b192caa2b6d31f3191cb90
+    verdict: unjudged

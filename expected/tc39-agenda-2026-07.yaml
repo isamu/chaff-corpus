@@ -1,0 +1,39 @@
+id: tc39-agenda-2026-07
+chaff: 0.34.0
+findings:
+  - rule: bare-url-mix
+    line: 12
+    sha256: 801f671b05963d7cb87e91555a5395f6c757054179e056905a3b8e683254a7be
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 44
+    sha256: 132dc86f1b6f9d3b776125edf4b2ae9e92f08bb2f768ddcd6d16176582ccb08e
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 44
+    sha256: 132dc86f1b6f9d3b776125edf4b2ae9e92f08bb2f768ddcd6d16176582ccb08e
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    sha256: 190913b81072aff8d81763c3d906b485c7386cd5704f98dd94b04dbdf8e2e0ba
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 54
+    sha256: ab54f8871f5b188ef278fb17ac811ffcb368db706c29da2a667fbf767bb234b8
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 74
+    sha256: 0b742e595be356d9662ef331d059e23d42077b10c1b7483a67a9007c034255ce
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 88
+    sha256: fbdec51184054b81bae4e854895d129dccc6759203ec1b596bd09bf90abbf372
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 166
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 174
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged

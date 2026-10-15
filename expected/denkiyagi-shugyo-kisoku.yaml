@@ -1,0 +1,87 @@
+id: denkiyagi-shugyo-kisoku
+chaff: 0.34.0
+findings:
+  - rule: tari-unpaired
+    line: 43
+    sha256: 01f9f4c2ce9f2422cb2036d873cbfc9d84a74fd2507f838ef6b32bf07f56cb77
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 48
+    sha256: 3f760929f170eb7b7bb29c3ccda0b7f134bfe6cddea3d801186aa60b5ab095a8
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 51
+    sha256: 183d9c833b6efb039df3edfe619a847b8970cd3b9f996a9918b89a30958c1517
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 137
+    sha256: 7168b6650b283f0358aca535018d1faa7cd0d662f6a83ab3d178bff72dba6951
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 149
+    sha256: b4d3804f6a58321e10e134185f49bbcfe45bce26149a948df34fded79b190838
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 154
+    sha256: 68206f7bf644209bc2a1d65555af4de2940c37b54b8df8bc4b6f1a44d05f0c45
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 161
+    sha256: 08c15114205f22d028c06dff92d58f88da7c3a2a9008798f25f377fc7aee32a8
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 213
+    sha256: 65f0f9920afaffefefc8bb2db8baa7276fa413825cd2a75a3a23f710c692648c
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 214
+    sha256: 65f0f9920afaffefefc8bb2db8baa7276fa413825cd2a75a3a23f710c692648c
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 245
+    sha256: 63ad55a32ecdb7b52554c96722d4640f641637be56570a7a1f1137453fb8a239
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 247
+    sha256: cf4708d7da07ce9aefb27397f313527389a670d531dc0275c5924f6ae283b99b
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 356
+    sha256: 124056fb42783894b5e087d9ea7d8de97e5280c98f1bb4328795f67812b523ec
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 371
+    sha256: 991e46e86aa21089ade121bdd5a6d3813ba410cfec73275ddd7c2a0fc72f1b37
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 388
+    sha256: 90d71a0317fdc8705b369a5e7945702aaadddf7e6e56969b2abaf189ffad1b63
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 536
+    sha256: 4db32c6d2da175802a77fcf0badff05c1c488cd773dd6f8e35886d0d77a934c8
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 537
+    sha256: 8e35d953c5d4cf13810d386483b8b5fc79ebd05942af46dd3d30bf4cfc6a88fa
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 649
+    sha256: 5ee7d305e0bb4f1f15fc1518c37c3bd857bd020ba1dc34ee3bbb9bfb55293073
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 670
+    sha256: 6593fa976a5c18e303ea256310ac53aec80285a03b9847da5989c52b5285036c
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 670
+    sha256: 6b257f9a8ee4c02897530691cb31cc0b4636002b6af73f90e5a3f02f7f759dc4
+    verdict: unjudged
+  - rule: toki-as-condition
+    line: 739
+    sha256: ae8573c71afae40b243f9e601d0974203d6453d9df306e294c31d43503777c4c
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 825
+    sha256: 33606706005cfe89d3ac18ba5c9fdad5b16b34618c2392844bcd768e1e5bf85f
+    verdict: unjudged

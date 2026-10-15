@@ -1,0 +1,31 @@
+id: mdn-using-fetch-ja
+chaff: 0.34.0
+findings:
+  - rule: no-doubled-joshi
+    line: 12
+    sha256: e47d5b57dc71459d16c4cdd73d1cfbd768a0ab622788e9ad6d7fcfcb0e73ffdb
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 16
+    sha256: 07a5702026c4181db3ab28809225f8bf3b442e716ee7c74fc29e63fdca560b7c
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 16
+    sha256: 96278dfbd2ab23d001ca3e3d2533ea32499e75ea71794da191e6a32a1dfeccf1
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 43
+    sha256: 6f1cddb44ae424e712d6e08bdf24c2657f6169ccb611a40c92d792ca0e4dc6f8
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 72
+    sha256: 52c99acd21899585d50c1501bf750a1821f80546ef62d593c40ee7def17ca463
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 198
+    sha256: 3fd10c1777225a2cb4c39155da4fdb6050e1585f3179c64bd70daa22d09644ed
+    verdict: unjudged
+  - rule: stray-space
+    line: 214
+    sha256: bfcf5964065e4f1a3a0053cbb8e23f038f9816a6453195b2403135331e695e17
+    verdict: unjudged

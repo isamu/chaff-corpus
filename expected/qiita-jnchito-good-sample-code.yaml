@@ -1,0 +1,95 @@
+id: qiita-jnchito-good-sample-code
+chaff: 0.34.0
+findings:
+  - rule: concrete-evidence-density
+    line: 7
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 16
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 22
+    sha256: 8bf78195f57087c6b4279a40d9324356adfecd5c1b52d2511c59eae84cb453c3
+    verdict: unjudged
+  - rule: image-file-name-alt
+    line: 235
+    sha256: f1eb3192c1cccaf4a4fcb3e7eaba3823204b43d15a2a944248d90031c1909278
+    verdict: unjudged
+  - rule: image-file-name-alt
+    line: 240
+    sha256: 961339c30168c8877478049138b6ef60244fdbea9101a4b07085ddfa6b19cc3d
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 271
+    sha256: 1f0951d1d9433886d1821663389abb1a82968450b87e8d6bd71394579eef5d12
+    verdict: unjudged
+  - rule: image-file-name-alt
+    line: 313
+    sha256: 1a9b6a0c39a330bd784b5063a926e80c24d61a7cb1dd939b95c22df87599bd51
+    verdict: unjudged
+  - rule: image-file-name-alt
+    line: 330
+    sha256: 81f5f287cbdcd37bb3b59de808fe309bed7d11c31009458d32a75c352cece015
+    verdict: unjudged
+  - rule: heading-echo
+    line: 364
+    sha256: ae158cedf2ca7b58bfb098d82944093a22a89cbda7ecf2b643720f97def1d649
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 427
+    sha256: 63a9b9dfed446bc15aa25adfb96cb3ec60822ac92c958986bca9b51cb64b23b1
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 429
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 444
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: name-variant
+    line: 450
+    sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 450
+    sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 451
+    sha256: be51da0bad1f88e334f3c74f694573547446974057108be63ebdce37c2c727e0
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 526
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 658
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 661
+    sha256: 2af02582e6b55e0aa5d04ba632bcd584e77909ec7e14d32dd00e12b3e786cc9d
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 667
+    sha256: f28f706bbd0ce4b5ab011a360e18ced5b8d4e65207a048d0ee2136e4411993da
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 671
+    sha256: 59ff4fc4909e3e38944e00ad24beb4854db7829033d0cfb8d9e49fb2ab5d94fc
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 671
+    sha256: 59ff4fc4909e3e38944e00ad24beb4854db7829033d0cfb8d9e49fb2ab5d94fc
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 787
+    sha256: 7db1fc20eb7e22bd75b1509596f429eb002da5ce1e55eae7f23f45938d92c0f4
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 832
+    sha256: f918af3677ed8412cbb63420e3febbb1b679355781b15bc57d53ece71d1ef742
+    verdict: unjudged

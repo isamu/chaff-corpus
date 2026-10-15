@@ -1,0 +1,43 @@
+id: rust-lang-minutes-2022-11-22
+chaff: 0.34.0
+findings:
+  - rule: empty-list-item
+    line: 17
+    sha256: 48a139c5da2f7c0c1d40efbe860d1642068907ef546248f94e87a9eeda220b1d
+    verdict: unjudged
+  - rule: empty-section
+    line: 25
+    sha256: 7ef7cf8e19937783c3f78e0c47efc1d60db28f3d0982090eb3622af5c6fd0244
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 83
+    sha256: bad91b9c3d2eb8e129b15a8018a1e71eda03c51f6dc1cbb8dde6d980562d5e1e
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 91
+    sha256: b24b1963a70119a32144f6c63ada7e414ff04cd2326fbe4b116931138a5b084a
+    verdict: unjudged
+  - rule: unknown-word
+    line: 270
+    sha256: 85193849df69d7ee68ef8e12a59c4b832adf1265579a3db3fa8eb53b68667e1f
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 274
+    sha256: 8f614278e95abfb8ad4911346c868b6a92e79dae6ec0641942f3754b62b33e0d
+    verdict: unjudged
+  - rule: agreement-slip
+    line: 292
+    sha256: c087acc53c0ccd2c1ca7db50f29c3ff3e706e847c1d69f0e851fdb2d22716d63
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 300
+    sha256: 4e9f1b03f86cc8fcc90c27d48a06d28569a1eabcd70fa06a35613f397d7a0ab4
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 330
+    sha256: 0ed740aa4e6f065d3317ff6a198439460216e0cfd2d92988a33862307799f776
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 330
+    sha256: d0b67637ad895dd58e108c4d6ac4a469dd29597f6d18527daffbe0c43c77e015
+    verdict: unjudged
