@@ -15,10 +15,14 @@ concurrency:
   group: check-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  # The length of the corpus job's matrix: corpus-report counts a missing shard as a problem. Add shards when the slowest one nears 10 minutes.
+  SHARDS: 6
+
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
         with:
@@ -40,6 +44,73 @@ jobs:
       - name: test
         run: yarn test
 
-      # Fails only when a correct finding is lost, a fully judged document gets a new finding, or a meta is invalid.
-      - name: run chaff over the corpus
-        run: yarn run-corpus --jobs 4
+  corpus:
+    name: corpus (${{ matrix.shard }}/${{ strategy.job-total }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5, 6]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      # The texts that may not be redistributed are fetched at run time; keep them between runs. Keyed by their sha256s,
+      # so a changed or added text starts a new cache (run.ts uses a cached text only when its sha256 matches).
+      - name: key the fetched texts
+        id: texts
+        run: |
+          key=$(grep -rl --include='*.yaml' '^redistribute: false' docs | sort | xargs grep -h '^sha256:' | sha256sum | cut -c1-16)
+          echo "key=$key" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v6
+        with:
+          path: .cache
+          key: corpus-texts-${{ matrix.shard }}-${{ steps.texts.outputs.key }}
+          restore-keys: corpus-texts-${{ matrix.shard }}-
+
+      # Writes this shard's results; the corpus-report job decides pass or fail over all of them.
+      - name: run chaff over this shard
+        run: yarn run-corpus --jobs 4 --shard ${{ matrix.shard }}/${{ strategy.job-total }} --json shard/${{ matrix.shard }}.json
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: corpus-shard-${{ matrix.shard }}
+          path: shard/${{ matrix.shard }}.json
+          retention-days: 7
+
+  # Fails only when a correct finding is lost, a fully judged document gets a new finding, a meta is invalid, or a shard gave no result.
+  corpus-report:
+    needs: corpus
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile
+
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: corpus-shard-*
+          path: shard
+          merge-multiple: true
+
+      - name: merge the shards
+        run: node scripts/merge.ts --shards "$SHARDS" shard/*.json
