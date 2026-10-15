@@ -1,0 +1,273 @@
+id: govuk-vat-notice-700-21-record-keeping
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    text: VAT.
+    message: '"VAT" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: HM Revenue & Customs
+    message: '"HM" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 60
+    text: CC/FS1a.
+    message: '"CC" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: documentation relating to dispatches and
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 99
+    text: HMRC when you’re asked.
+    message: '"HMRC" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 172
+    text: AN Other LTD57 North Road, London N12 5N
+    message: '"AN" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 184
+    text: £250 or less (including VAT), then you c
+    message: This sentence runs 67 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 193
+    text: £250 or less (including VAT), then you i
+    message: This sentence runs 66 words (limit 40)
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 290
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 294
+    text: "### Example 2"
+    message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 312
+    text: If this is the case, this mixed supply s
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 314
+    text: "### Example 3"
+    message: The heading "Example 3" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: fact-conflict
+    line: 332
+    text: £1.20.
+    message: '"The value (net value excluding VAT)" is £1.20 here, but £1.50 earlier in the same section'
+    verdict: false-positive
+    note: two elements of one worked example (standard-rated £1.50, zero-rated £1.20) are read as one fact stated twice
+  - rule: wordy-phrase
+    line: 351
+    text: Where the information is received as a s
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 357
+    text: "### Example 1"
+    message: The heading "Example 1" repeats the one on line 290 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 357
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 387
+    text: "### Example 1"
+    message: The heading "Example 1" repeats the one on line 290 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 387
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 391
+    text: If a business pays the actual cost (or a
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 401
+    text: This generally occurs when a business re
+    message: '"a large number of" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 409
+    text: Where a supplier issues a statement for
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 427
+    text: Where the information is received as a s
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 439
+    text: Where supplies are made or received duri
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 443
+    text: "### Example 1"
+    message: The heading "Example 1" repeats the one on line 290 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 443
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 471
+    text: "### Example 1"
+    message: The heading "Example 1" repeats the one on line 290 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 471
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 475
+    text: "### Example 2"
+    message: The heading "Example 2" repeats the one on line 294 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 475
+    text: "### Example 2"
+    message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 491
+    text: "### Example 1"
+    message: The heading "Example 1" repeats the one on line 290 under the same parent
+    verdict: false-positive
+    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
+  - rule: heading-numbering-mix
+    line: 491
+    text: "### Example 1"
+    message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 514
+    text: If your software does not include a Flat
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 520
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: false-positive
+    note: "'Gold Special Accounting Scheme' is the scheme's proper name, capitalised as a name"
+  - rule: ngram-repetition
+    line: 569
+    text: provide HMRC information and returns fro
+    message: '"using the API platform" appears 22 times (limit 5)'
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 596
+    text: XML, CSV import and export, and download
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 692
+    text: The digital link requirement for sales d
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 702
+    text: although only summaries of weekly VAT da
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 712
+    text: At the end of the week, the daily taking
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 831
+    text: standardized reports to support VAT retu
+    message: '"standardized" here, where the document usually spells it "standardised" (1 of 8)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 838
+    text: For sales, the requirement starts at the
+    message: This sentence runs 48 words (limit 40)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 838
+    text: (where the data is held in line with par
+    message: '"(" is never closed'
+    verdict: correct
+    note: the source itself never closes the bracket (… in line with paragraph 7. For purchases …)
+  - rule: max-sentence-length
+    line: 872
+    text: Because the VAT engine cannot convert fo
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 874
+    text: The digital link requirement starts from
+    message: This sentence runs 73 words (limit 40)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 874
+    text: (data required under paragraph 7, and is
+    message: '"(" is never closed'
+    verdict: correct
+    note: the source itself never closes the bracket (… under paragraph 7, and is …)
+  - rule: wordy-phrase
+    line: 874
+    text: The digital link requirement starts from
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 881
+    text: digital link requirements only start at
+    message: This sentence runs 55 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 906
+    text: believe you should be exempt because you
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 907
+    text: consider yourself to be a practising mem
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 952
+    text: "## Your rights and obligations"
+    message: The heading "Your rights and obligations" has no number, while 15 of its siblings do ("1. Overview")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 956
+    text: "## Help us improve this notice"
+    message: The heading "Help us improve this notice" has no number, while 15 of its siblings do ("1. Overview")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 964
+    text: "## Putting things right"
+    message: The heading "Putting things right" has no number, while 15 of its siblings do ("1. Overview")
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 970
+    text: "## How we use your information"
+    message: The heading "How we use your information" has no number, while 15 of its siblings do ("1. Overview")
+    verdict: unjudged

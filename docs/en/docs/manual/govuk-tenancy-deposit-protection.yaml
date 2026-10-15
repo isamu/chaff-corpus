@@ -1,0 +1,16 @@
+id: govuk-tenancy-deposit-protection
+title: "GOV.UK: Tenancy deposit protection"
+language: en
+genre: docs/manual
+format: markdown
+source:
+  url: https://www.gov.uk/tenancy-deposit-protection/print
+  fetched: 2026-10-15
+  format: html
+license:
+  name: OGL-UK-3.0
+  url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+  note: "Open Government Licence v3.0 (contains public sector information licensed under the OGL v3.0, from GOV.UK, https://www.gov.uk/tenancy-deposit-protection/print), converted to Markdown"
+redistribute: true
+sha256: f52bb6d18351d0fe64994ebeb846ec32a630adbf29c2480723a0d3ecc6d5e5a9
+notes: "The source is GOV.UK html; the text is source.format html converted by scripts/lib/source-format.ts."

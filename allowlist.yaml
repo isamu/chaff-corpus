@@ -259,3 +259,15 @@
 - id: da-area-data-model
   match: "XXXX@ooo.or.jp"
   reason: a placeholder in the document's own example, not a real address or number
+- id: govuk-how-to-rent-checklist
+  match: "psi@nationalarchives.gov.uk"
+  reason: a government office's role address, published in the document's Open Government Licence notice
+- id: govuk-tenancy-deposit-protection
+  match: "deposits@tenancydepositscheme.com"
+  reason: a government-approved deposit scheme's role address, published in the guide for tenants to write to
+- id: govuk-vat-notice-700-21-record-keeping
+  match: "customerexperience.indirecttaxes@hmrc.gov.uk"
+  reason: a government office's role address, published in the notice for feedback on it
+- id: govuk-vat-notice-700-63-electronic-invoicing
+  match: "customerexperience.indirecttaxes@hmrc.gov.uk"
+  reason: a government office's role address, published in the notice for feedback on it
