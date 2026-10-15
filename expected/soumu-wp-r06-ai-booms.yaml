@@ -1,0 +1,19 @@
+id: soumu-wp-r06-ai-booms
+chaff: 0.34.0
+findings:
+  - rule: katakana-long-vowel
+    line: 19
+    sha256: 8065e79890abd49e07089bc8714b3f4a9bd4f8b2f94463fc69e516deb91aaf0e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 21
+    sha256: 5f4c1b6f62f2fb882c47b64e082e44d0cf2170e0f0de624d5a0980a1072dd3ec
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 21
+    sha256: bf89c9d8e38af9d2092101474ea7b0163ec7c67a90a984dd95ba09e4cffb3e6c
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 21
+    sha256: ee24317fa2232971a0e1734df2f4fb041348c0725c50bd5a50fba16c79c9c6c6
+    verdict: unjudged

@@ -1,0 +1,23 @@
+id: maff-kyodo-ryori-okaisan-en
+chaff: 0.34.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 15
+    sha256: 29e988cff83ae8c85c3ec35a9516110162d62e06137f609f9a3c6db67fa699d8
+    verdict: unjudged
+  - rule: unknown-word
+    line: 19
+    sha256: d4777d0e0b3bfd178095dd6e6897a47ad636921f79d2b34c45b27ddca3eb16b5
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 27
+    sha256: 4eff4f1d5e1dc4603aa0361644fcd929ec445fab1fec9e09f1221f6daeb57af0
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    sha256: e6b14bacb5527b519ae3d9de98784013d99927a5847d7ce5a39a816e3b9e0c3d
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 53
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged

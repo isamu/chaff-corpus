@@ -35,6 +35,7 @@ format: markdown            # markdown (<id>.md, the default) | text (<id>.txt)
 source:
   url: https://example.gov/reports/q3
   fetched: 2026-10-14
+  format: html              # optional: what source.url serves when it is not the text itself
 license:
   name: CC-BY-4.0
   url: https://creativecommons.org/licenses/by/4.0/   # where the licence is stated
@@ -46,8 +47,9 @@ notes: optional free text
 
 A document whose licence does not allow redistribution has only its `.yaml`. At run time its text is fetched from
 `source.url` into the git-ignored `.cache/` and used only when its sha256 matches; otherwise the report lists it under
-"Not run" with the reason. (A text that was converted to Markdown when it was judged cannot be fetched as it is: put the
-converted text in `.cache/<id>.md` by hand.)
+"Not run" with the reason. When `source.url` serves something other than the text, `source.format` names the conversion
+that produced the judged text from it (isamu/lab's names: `wikitext`, `html`, `google-patents`, `kokkai`); the run
+converts the fetched source the same way before comparing the sha256.
 
 ### `expected/<id>.yaml` and verdicts
 

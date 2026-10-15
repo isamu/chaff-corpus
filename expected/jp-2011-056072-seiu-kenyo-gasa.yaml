@@ -1,0 +1,39 @@
+id: jp-2011-056072-seiu-kenyo-gasa
+chaff: 0.34.0
+findings:
+  - rule: url-run-on
+    line: 31
+    sha256: b9cbfc928d5019c0561093f909ff2a26b30ca1ce4fb58395053ef49ef02491f8
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 45
+    sha256: e949acabfddee1b11e67824afb70715dc2d9191f12be1ec1a9e38e01c84df589
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 49
+    sha256: 8c878599753d960052520b4d9623ee1d31a36561a3f661e8eead68acd8946402
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 61
+    sha256: 5ff3ed2079d26489ad5a7b6b2ba4b1c7ef3ed6ed20baeff99558eb8b2b8896c2
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 63
+    sha256: f6e44ced54bd6dc1adc8f06a41fdcbbf9af52e966c912294341f396201eb7316
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 90
+    sha256: 49152b60735440ac0a3fa71fd1c8257a75ec28c25086d75e54a116abe2f2135f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 90
+    sha256: d1a8197fe0458916432154d68032d1aa9f5efd2633a89dd49548820256cffe67
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 92
+    sha256: 86c7fb2be309e8f8f7111c95e4f7e47db71ab998f6a1f7bc7e3d978e3a035949
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 109
+    sha256: 8cee62dfa0630a16e5bf8978202bf5d60846fc1f87f9fdea17077f64290c3c1c
+    verdict: unjudged

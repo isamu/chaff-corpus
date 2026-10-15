@@ -1,0 +1,127 @@
+id: tcu-rishu-toroku-2026-kouki
+chaff: 0.34.0
+findings:
+  - rule: request-without-deadline
+    line: 28
+    sha256: 325479fda2ed10a880f1abdea38cf4278821fcc58fa4810c37191d57e0a36256
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 32
+    sha256: 9c05c6a61c6b0c61d5322956a4d700866c2d70aa9ec02fe9715767d122d7e7eb
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 33
+    sha256: 4ada0ec99fb4aaeced3ca9ecabfdefe185337efc700af25fa31263ebc4a0153b
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 34
+    sha256: bb16bc7f209d0adf4106f67c5df1ef964ddb1ee73487df564bd1ed819796ffb8
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 38
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 40
+    sha256: 4a95c2e9ae1cfb305bd74247f11985e65db918db4dce761fc206e4367bd3eb61
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 50
+    sha256: 30a1f2ce0dd27f7c190750d84864eec513764f7f547121e5196ea3b4e4f73e0d
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 50
+    sha256: b121bd29a2280d04b79da11d24ec6948dbb7c0988b04c106b01a21e97f23e228
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 58
+    sha256: 1069645e5b0dfa38746f4155ba5968940ec19762bb6935caa687a4f7b4ad9103
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 66
+    sha256: 73e3ffa2af6beac9cb2dedcc73891c0841b8d3f44f39592ccff70badf4eebfbf
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 75
+    sha256: a817a848efb6d257e6059fcee67c200c011bff9bbdb7ac0a1d673be62adea37e
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 82
+    sha256: 486973c8be452c7eabe295cce52bcb1ec13ee1798748eddb5ce703e6de507cf5
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 82
+    sha256: 04046926bf4ca5c50b66c0a8240771989f20c3ad2a0ed54ef688c4190af8b788
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 82
+    sha256: 68f78cb5fd218fca715c920f30d0dd0bd59ec0c572b39869fa2d8b8452abc692
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 82
+    sha256: 04046926bf4ca5c50b66c0a8240771989f20c3ad2a0ed54ef688c4190af8b788
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 83
+    sha256: 6b9658e32ffcd8024911b0d290890c62f1c436246565184b2842734667e6a4ec
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 83
+    sha256: ab5653bc5f3f75a4ff780059731892f9f18479dc4f9df280684ec6abd1736c73
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 83
+    sha256: 867e0ba67e5c10344207ec4125ede656ee399bf6a638d487d308a6e7c42ff9f5
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 100
+    sha256: 397b7449cf84c51d3a6d7d38934ec3f1cc9f6b42b0f7962ec962a583cd624467
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 134
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 136
+    sha256: 701e8fc08364025eac696a7d79c60bc0f4b40d8bd278a941dd3d1427a40b203d
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 136
+    sha256: e29890c258021aed290b375959bb8eada3bcc734cb953b302447643851da5422
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 143
+    sha256: 701e8fc08364025eac696a7d79c60bc0f4b40d8bd278a941dd3d1427a40b203d
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 143
+    sha256: e29890c258021aed290b375959bb8eada3bcc734cb953b302447643851da5422
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 146
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 148
+    sha256: 18a7e6fb72c3e50583526396bcd4462aad52652c84a68712142316913b5bcd0b
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 164
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 166
+    sha256: fa7c2a339908c6cc1191b9b67c3f3adc245e828b0cfb41d3f18857c6f32d3684
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 170
+    sha256: b9d09d2f0ade9317805f8f1d307738d571813703a1bf95b31d824e7670ec5ee0
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 176
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 178
+    sha256: de81b643e90f9c8fcb37c63ea285fd0653faa479ca75ee78f9ab491ed3a53db3
+    verdict: unjudged

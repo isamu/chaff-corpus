@@ -34,6 +34,7 @@ format: markdown            # markdown（<id>.md、既定） | text（<id>.txt�
 source:
   url: https://example.go.jp/reports/q3
   fetched: 2026-10-14
+  format: html              # 任意: source.url が本文そのものでないとき、その形式
 license:
   name: CC-BY-4.0
   url: https://creativecommons.org/licenses/by/4.0/   # ライセンスが書かれている場所
@@ -44,8 +45,9 @@ notes: 自由記述（任意）
 ```
 
 再配布できない文書は `.yaml` だけを置きます。実行時に本文を `source.url` から git 管理外の `.cache/` に取得し、sha256 が
-一致したときだけ使います。一致しなければ、レポートの「Not run」に理由とともに載ります（判定時に Markdown に変換した本文は
-そのままでは取得できないので、変換済みの本文を手で `.cache/<id>.md` に置いてください）。
+一致したときだけ使います。一致しなければ、レポートの「Not run」に理由とともに載ります。`source.url` が本文そのものでない
+ときは、`source.format` に判定した本文を作った変換の名前（isamu/lab と同じ `wikitext`・`html`・`google-patents`・`kokkai`）を
+書きます。実行時は取得したものを同じ変換にかけてから sha256 を比べます。
 
 ### `expected/<id>.yaml` と判定
 

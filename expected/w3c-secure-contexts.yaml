@@ -1,0 +1,75 @@
+id: w3c-secure-contexts
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    sha256: 2aead6b44fcd6bf171e3449bf05127f798e703b2ec6b34585059aef6de93472f
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 15
+    sha256: b03df883e3c474cc5d0c260c981aaa3a9ecb765622fdb287b15efca4ed4b8579
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 99
+    sha256: eaf4061b802c3b0a11eac6f612f7650e82e67a5e05a7b8ed445289e89a5ac69d
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 121
+    sha256: 72ae502cef3da5f9d5c13d409acccb44684cb261e6d0fef3653c5d3164202c53
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 137
+    sha256: 9d62bc306f749c5945f5deadc15203e951eafa26d678a35a0bb1833fe8a83475
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 183
+    sha256: 0f230b5a60228b077725b2b9b1156ed2b0c41574e273176b5ee05c4bd4af5570
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 187
+    sha256: c24a3544f64e7eb196245b7605e466cd2679262b3acf4d10c222c739ed178eab
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 187
+    sha256: ff41655fb85601cbd1e5da4c1db7369e659dbc009c1ebf8505e836d7383b67ab
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 191
+    sha256: 4efe753f50d7eae8e926e0515ea892f269c700ee5ec4dc6061424baa49a37e89
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 195
+    sha256: 324511e1f7cc56a07374781f739cceb537a34ea7f947cc4450822cf4878e6799
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 199
+    sha256: 0cc6a4d61d38889f2efb0090053df5fb4b452f7f89cb89492351822d1d0f154d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 204
+    sha256: 8ba757a14442db0f861ffce2a91b71bd5ea39e872c235a160729f1e38d0f613d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 223
+    sha256: 770978f12878eb0370b97e38545a3894b112f537b5425587f96d444e15f4052a
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 239
+    sha256: 517804b09b7a36cde07a40c58ff5461cda116e8799b5769e3f0a5c85f5bb7cd0
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 249
+    sha256: 85714d44e96a9f5cccdb9e663176cb17c408638ff2beed827bf3179276ab6a19
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 277
+    sha256: dc1a45d4f3d66ebdc8ed80aa180731d793064fec57dfc1a80f954bf1815601eb
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 279
+    sha256: 484d519f912faf61194617e6d8b2013db7db1aa372ab88fe88decdcfbd34daea
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 283
+    sha256: 0e69a8bc9c2907614d8b7a8cbc19f84389fecb01a6eaa051d650c50d74321daa
+    verdict: unjudged

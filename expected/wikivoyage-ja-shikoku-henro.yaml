@@ -1,0 +1,31 @@
+id: wikivoyage-ja-shikoku-henro
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 1
+    sha256: 64d4a294742b416e8abc66b5ce4c1da5db99ce2748c9280dfc6a8afd1406d167
+    verdict: unjudged
+  - rule: weasel-word
+    line: 4
+    sha256: 6a4dc42fc9ff0948d79967e2ba2515807dd9e88d9053c3690deff3677846c016
+    verdict: unjudged
+  - rule: weasel-word
+    line: 4
+    sha256: 7f718bdd5ec82da4af973a0e7ecfc9db7cd18526ada0e224e40a08625c81b6f3
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 6
+    sha256: 59e088e9807c61bcbc8b854200c43dd4904e79c4b011499a55a2c04b89ebd3ff
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 16
+    sha256: 42ed88f70548074883b19b235b09d6ba3cc0acf5d1d6d937caaedddebf3e2dd9
+    verdict: unjudged
+  - rule: empty-section
+    line: 32
+    sha256: c4cc63dfca907fa6a68f5aa3953b7fd374fbc0fcbbca2866117f2da8ff18b278
+    verdict: unjudged
+  - rule: stray-space
+    line: 57
+    sha256: 30fd7325d93aee16256f867399700ab4a6b5d1e71730c3dfede9b2781fe4d10b
+    verdict: unjudged

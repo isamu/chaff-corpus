@@ -1,0 +1,55 @@
+id: wikivoyage-magnificent-mile
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    sha256: 8c903b3eece8985f2b9779021baecf49f79faf106e9d6a52833755c57a1843b7
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 19
+    sha256: 0c52b3168b2ed85589310209baa68e1a1afc1f2f81eb06e7297dc182bbe81bc5
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    sha256: 473bd54700bff6b431e46a81db40834e47c3acfa6f31800d1b27407e505afe67
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 23
+    sha256: bcc8fad625b5d32025cd5aa00ccb8b6dde1410dbaad88f6b2812e8547133840a
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 23
+    sha256: a776324b114eea7bd7b64db87317c56e173c7b1801952249a813c23a7dec4154
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 25
+    sha256: 94c71204c0a9a5f328d28cca56c9c955c53756306612890243a4f91de6649040
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    sha256: 94c71204c0a9a5f328d28cca56c9c955c53756306612890243a4f91de6649040
+    verdict: unjudged
+  - rule: name-variant
+    line: 29
+    sha256: 6e581970f4c676fa64b14accb9ef5d3b22af1429f4169a5aab231d162312730b
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 35
+    sha256: 8b54d47b3cec42b872974c04f26bba53351d63fed49d294f72826d49ace08d4d
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 35
+    sha256: b0b3ef5d3b42efe380ac2032eec0cafbc65f875e9cbae3e44a38dcd81c7d92aa
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 43
+    sha256: e02418c27ae69a7c9606535e58bf821838e6305ae58508b6a1567cfcc8e3fbc0
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 49
+    sha256: 7875e9e72d21205e344d467852a555fc879d184fbf5cdec7551e50a8de988418
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 58
+    sha256: 3e68d07d24666648385e10b5869061903eb918f499b33ddcee895c66c75c9fd6
+    verdict: unjudged

@@ -1,0 +1,55 @@
+id: wikivoyage-ja-shimoda
+chaff: 0.34.0
+findings:
+  - rule: empty-section
+    line: 22
+    sha256: c823cca4ecb22581333d49210861256a16f9a09f17b26470e6627307965cdcd3
+    verdict: unjudged
+  - rule: empty-section
+    line: 24
+    sha256: 9b47696fbb435d000db626546b040e49f71fe36084049284adad1ff2a4d9cd03
+    verdict: unjudged
+  - rule: empty-section
+    line: 26
+    sha256: caaee3f0b8b9267195fdf4e42b7a641b14d12e57c5c3768631d481dc16459bd5
+    verdict: unjudged
+  - rule: currency-notation-consistency
+    line: 30
+    sha256: 1b90b76df7cc920df637bf9fde77b21814a172e5b6db1f3651cc4aae203572fe
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 31
+    sha256: d0b3dd2d062473e6bc31c58b681778a3cb68c69ecf2109e66a4ef97c336bde41
+    verdict: unjudged
+  - rule: empty-section
+    line: 34
+    sha256: 9e08cfffe2ebfb0c124b785741fb9a90dd0a1fa46d7df587c3832e747c6a0a76
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 39
+    sha256: e4e3b74d35625e748f886124bea4828a8a462c4e3b39e7265fa91c2540570d08
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 43
+    sha256: 85e51a5e5c514c10135ce4edb5ccf14f223cb269ec82cb82f19e5a52738b3c4b
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 45
+    sha256: 50024ac64eb47ae0b06aaade2c2d7820c5a9530e075fe81e666f6dfc5b0f595a
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 47
+    sha256: edc6987ba567841d0dc79da1bb9f277cfaa2e230dda0912c58517a4e29331ba6
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 47
+    sha256: 90693bd6e80fedd17d5fafd220b930c21b8c98cdfdd9b5b12e78c87ebacc9d72
+    verdict: unjudged
+  - rule: empty-section
+    line: 52
+    sha256: 279f723410e8363bce1fe72452b62eacabb865ea9e11226d482e8b4bd1352dae
+    verdict: unjudged
+  - rule: empty-section
+    line: 54
+    sha256: d651600df75812dfd3bf27a8c09a14fa04823df35fcedaf5c324f9e3f4746368
+    verdict: unjudged

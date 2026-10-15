@@ -1,0 +1,27 @@
+id: mhlw-kikan-gyomu-shokuin-boshu
+chaff: 0.34.0
+findings:
+  - rule: unbalanced-bracket
+    line: 53
+    sha256: 3a20f9d30578b17158d80dd6b57de9a421ae34016c8b40b20afe27de2607f3e2
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 62
+    sha256: 16d328f6e4e4bca0c85a75381ab33a51254ddc5b2a60ff85ee5ba99b9fac60fb
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 62
+    sha256: 8742db7e2a1d87653a9ea8cc1e9698aa029c2fae1de41bbd684beebd0dadc2ac
+    verdict: unjudged
+  - rule: footnote-mismatch
+    line: 64
+    sha256: 9db348f29424e2d3cb252b049827cb4188539e0a60f678096ccdc352d22c3091
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 76
+    sha256: c57b76011946299858fc34be5128e3f2eae42e77c3b75dc2523782eeec8a1150
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 85
+    sha256: fd41b11b7ff9bcadd81c97e5abbdb5285fcd1ee9fac2731e0161880dbbeaced6
+    verdict: unjudged

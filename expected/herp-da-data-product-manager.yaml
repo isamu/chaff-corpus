@@ -1,0 +1,55 @@
+id: herp-da-data-product-manager
+chaff: 0.34.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 13
+    sha256: bcc8c60c87820ae29f2dcf3d4c71a3b0951608267748f71ac88138cb40559e6a
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 15
+    sha256: ce60900741468221d00011804ecd23f60b48fcd23115c24d83c58b25e6a02f77
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 42
+    sha256: 7ce92a978a71e7c9b21f1ae7fc897355f50a2cbffaf9df3685c6fb36b3c7c015
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 48
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 50
+    sha256: f555a0dfca91964b16710dc404eb8f49db6f29472d3a0ba3fc6aee1a30d59f4f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 62
+    sha256: 9a881d9fab47c62404bd27d055019939ce13168bb123a1f0e793d0557e3d4646
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 64
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 68
+    sha256: 3a737ef5a4b6551e119ea7893b29ed77ccd9c02d0dc2aa88e824f8aa5ec3de12
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 79
+    sha256: 5016cd523c738cf40fc1d513eabcc4ec1acafe96f86e8c9a1e387fb5c64b5188
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 94
+    sha256: 52df459dfbec6ca75b79223173853e1c799644b168ac5337024909c46bc8c9f6
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 101
+    sha256: 1ed061f00fb6e08d9569200e9cb23e7de7a1c38b4987bf15645c392bd88f42a9
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 144
+    sha256: 9765104fbe7c72356a32172ec8115684439c34ce36be455609fc75a288879d41
+    verdict: unjudged
