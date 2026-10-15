@@ -1,0 +1,163 @@
+id: cuad-fusemedical-distributor
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 11
+    text: CPM Medical Consultants LLC
+    message: '"CPM" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: CPM is part of a company name, not an acronym to expand
+  - rule: undefined-acronym
+    line: 11
+    text: LLC
+    message: '"LLC" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: LLC is a legal-entity suffix
+  - rule: undefined-acronym
+    line: 13
+    text: INC., 10-K, 3/21/2019
+    message: '"INC" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: INC is a legal-entity suffix, in the EDGAR source line
+  - rule: undefined-acronym
+    line: 23
+    text: ACN 106 702 416) , 7 Sirius Road, Lane C
+    message: '"ACN" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 25
+    text: CPM Medical Consultants, LLC of 1565N. C
+    message: '"CPM Medical Consultants, LLC" is written "CPM Medical Consultants LLC" elsewhere in the document (case, width or punctuation)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 53
+    text: "GST: goods and services tax chargeable u"
+    message: '"GST" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: "the acronym is expanded right after it (GST: goods and services tax), in a definitions list"
+  - rule: unknown-word
+    line: 123
+    text: monies of the Supplier except on a trust
+    message: '"monies" is not in the dictionary; did you mean "movies"?'
+    verdict: false-positive
+    note: monies is a standard legal spelling missing from the dictionary
+  - rule: number-word-figure-mismatch
+    line: 197
+    text: thirty (45) days of the date of invoice.
+    message: '"thirty (45)" says 30 in words and 45 in figures'
+    verdict: correct
+    note: "a real error: thirty in words, 45 in figures"
+  - rule: undefined-acronym
+    line: 197
+    text: USD$'s within thirty (45) days of the da
+    message: '"USD" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: USD is an ISO currency code
+  - rule: oxford-comma-consistency
+    line: 199
+    text: 5.4 Neither party may withhold payment o
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 261
+    text: " ."
+    message: A space before "."
+    verdict: correct
+  - rule: vague-deadline
+    line: 269
+    text: promptly give notice in writing to the o
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 319
+    text: AU$10 million for any one occurrence for
+    message: '"AU" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: AU$ is a currency prefix
+  - rule: oxford-comma-consistency
+    line: 357
+    text: (f) a petition is filed, a notice is giv
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 407
+    text: pendency of such challenge.
+    message: '"pendency" is not in the dictionary; did you mean "tendency"?'
+    verdict: false-positive
+    note: pendency is a standard legal word missing from the dictionary
+  - rule: undefined-acronym
+    line: 587
+    text: CR Femoral Component $550
+    message: '"CR" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 587
+    text: PS / CR Femoral Component $550
+    message: '"PS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 603
+    text: SIGNED by Signature Orthopaedics Pty Ltd
+    message: '"SIGNED" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: SIGNED is an all-caps execution-block word, not an acronym
+  - rule: unbalanced-bracket
+    line: 605
+    text: )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 605
+    text: ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 605
+    text: ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 605
+    text: ) ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 605
+    text: ) ) ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 619
+    text: )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 619
+    text: ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 619
+    text: ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 619
+    text: ) ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+  - rule: unbalanced-bracket
+    line: 619
+    text: ) ) ) ) )
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"

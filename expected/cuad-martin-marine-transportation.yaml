@@ -1,0 +1,107 @@
+id: cuad-martin-marine-transportation
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    text: LLC, an Alabama limited liability compan
+    message: '"LLC" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: LLC is a legal-entity suffix
+  - rule: vague-word-density
+    line: 23
+    text: Owner shall at all times provide suffici
+    message: '"sufficient" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 23
+    text: The master and crew of said vessels shal
+    message: '"where necessary" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 27
+    text: In connection with its use of any vessel
+    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: from time to time is a standard contract idiom, not a vague word
+  - rule: vague-word-density
+    line: 47
+    text: In the event the Consumer Price Index sh
+    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: undefined-acronym
+    line: 51
+    text: FOB Refinery Offtake in the U.S. Gulf of
+    message: '"FOB" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 91
+    text: The Master of an applicable vessel, alth
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 93
+    text: Owner will, in the case of an escape or
+    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 93
+    text: Owner will, in the case of an escape or
+    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 95
+    text: Owner covenants and agrees to fully defe
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+  - rule: vague-word-density
+    line: 95
+    text: Owner covenants and agrees to fully defe
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: redundant-expression
+    line: 97
+    text: Charterer covenants and agrees to fully
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+  - rule: vague-word-density
+    line: 97
+    text: Charterer covenants and agrees to fully
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: oxford-comma-consistency
+    line: 111
+    text: "CHARTERER'S REPRESENTATIVES: Charterer's"
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 115
+    text: "CONDITION OF EQUIPMENT: Owner shall, bef"
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word
+  - rule: undefined-acronym
+    line: 117
+    text: "SUBLET: Charterer shall not be permitted"
+    message: '"SUBLET" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: SUBLET is an all-caps clause heading word, not an acronym
+  - rule: oxford-comma-consistency
+    line: 119
+    text: And neither the vessels, their captains
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 119
+    text: promptly furnished to release such vesse
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: vague-word-density
+    line: 119
+    text: And neither the vessels, their captains
+    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged

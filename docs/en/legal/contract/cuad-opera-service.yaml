@@ -1,0 +1,15 @@
+id: cuad-opera-service
+title: "Service Agreement (Opera, EX-4.14)"
+language: en
+genre: legal/contract
+format: text
+source:
+  url: https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_txt/Part_II/OPERALTD_04_30_2020-EX-4.14-SERVICE%20AGREEMENT.txt
+  fetched: 2026-10-15
+license:
+  name: CC-BY-4.0
+  url: https://huggingface.co/datasets/theatticusproject/cuad
+  note: "From CUAD v1 (Contract Understanding Atticus Dataset) by The Atticus Project, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The contract is an exhibit filed with the U.S. SEC on EDGAR. Text unchanged from the dataset."
+redistribute: true
+sha256: 579818d20eb50a9cb9893ff4dea109b70d2e74094c06489a994506b2079414fa
+notes: "Text extracted from the filed PDF/HTML by the dataset authors: lines are broken or run together, page headers and numbers appear in the text, and confidential terms are redacted as [***] or [ * * * ]. Findings caused by these extraction artefacts are not chaff's fault. Signatories named are company officers signing in an official capacity."

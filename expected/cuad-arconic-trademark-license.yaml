@@ -1,0 +1,159 @@
+id: cuad-arconic-trademark-license
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 1
+    text: NOW, THEREFORE, in consideration of the
+    message: '"NOW" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the all-caps recital lead-in NOW, THEREFORE read as an acronym
+  - rule: name-variant
+    line: 11
+    text: Affliates hereby grants to Licensee the
+    message: '"Affliates" is one letter away from "Affiliates", which the document uses more than once'
+    verdict: correct
+    note: a real typo (Affliates) in the source
+  - rule: name-variant
+    line: 11
+    text: License. Licensor on behalf of itself an
+    message: '"License" is one letter away from "Licensee", which the document uses more than once'
+    verdict: false-positive
+    note: License and Licensee are two different words, not a variant of one name
+  - rule: requirement-smell
+    line: 11
+    text: and/or Confidential Information. To the
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: correct
+  - rule: vague-word-density
+    line: 11
+    text: At Licensor's reasonable request during
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: If the quality of a class of the License
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: In the event that Licensee has not taken
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 11
+    text: Licensee agrees to reasonably cooperate
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: Licensee shall execute any and all docum
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: Licensor, as owner of the Licensed Mark,
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: No more frequently than once per year, a
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 11
+    text: The Licensed Products, as well as all pr
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 11
+    text: The Licensed Products, as well as all pr
+    message: '"as required" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 11
+    text: To the extent reasonably practicable, al
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: max-paragraph-length
+    line: 21
+    text: 1.6 Compliance with Trademark Usage Guid
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: false-positive
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+  - rule: vague-word-density
+    line: 21
+    text: If legally able and without breaching an
+    message: '"promptly" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 21
+    text: If Licensor elects to exercise such righ
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 21
+    text: Licensee shall defend, indemnify and hol
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: vague-word-density
+    line: 21
+    text: The Licensor Indemnitees agree to cooper
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
+  - rule: max-paragraph-length
+    line: 31
+    text: 4.4 Survival of Obligations; Return of C
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: false-positive
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+  - rule: vague-word-density
+    line: 31
+    text: Upon any expiration or termination of th
+    message: '"promptly" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: 6.3 Waiver. The waiver by one party of a
+    message: This paragraph runs 16 sentences (limit 8)
+    verdict: false-positive
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+  - rule: undefined-acronym
+    line: 41
+    text: DHL). All such notices and other communi
+    message: '"DHL" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: DHL is a carrier brand name, not an acronym to expand
+  - rule: undefined-acronym
+    line: 41
+    text: UPS, DHL). All such notices and other co
+    message: '"UPS" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: UPS is a carrier brand name, not an acronym to expand
+  - rule: max-paragraph-length
+    line: 51
+    text: 6.9 Severability. In the event that any
+    message: This paragraph runs 12 sentences (limit 8)
+    verdict: false-positive
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+  - rule: unknown-word
+    line: 51
+    text: herefrom. 6.10 Assignment. This Agreemen
+    message: '"herefrom" is not in the dictionary; did you mean "therefrom"?'
+    verdict: false-positive
+    note: herefrom is a standard legal word missing from the dictionary
+  - rule: vague-word-density
+    line: 51
+    text: Notwithstanding the foregoing, no such c
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable/reasonably is a legal standard in a contract, not a vague word; counted once per sentence
