@@ -176,11 +176,6 @@ findings:
     text: ""
     message: Section "c) relevant supporting benchmarking data:" has no number, code or link (16 of 22 sections)
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 163
-    text: benchmarking information
-    message: '"benchmarking information" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 168
     text: ""

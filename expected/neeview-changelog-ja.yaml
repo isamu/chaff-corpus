@@ -1,0 +1,568 @@
+id: neeview-changelog-ja
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 6
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 8
+    text: NowLoading が表示されないことがある不具合修正 (#1987)
+    message: 「ことがある不具合」が 61 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 9
+    text: OFFにしたときにゴミ箱に移動しない不具合修正 (#1986)
+    message: 日本語と英字のあいだを、空ける所が 136 箇所、詰める所が 105 箇所あります。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: OFFにしたときにゴミ箱に移動しない不具合修正 (#1986)
+    message: 「OFF」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 15
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 26
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 37
+    text: "#### エフェクト"
+    message: 見出し「エフェクト」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 43
+    text: ブック設定にエフェクトプロファイルを記録できるようにした。既定は「継続」でこれま
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 77
+    text: ON/OFF設定可能
+    message: 「ON」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 80
+    text: 本棚のコンテキストメニューからそのタグのブックマークフォルダーを開けるようにした
+    message: 「本棚のコンテキストメニューからそのタグのブックマークフォルダーを開けるようにした」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（5 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 85
+    text: DPIの異なるマルチモニターでは正常に動作しません
+    message: 「DPI」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 99
+    text: た
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。13 段落のうち 1 段落）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 105
+    text: 「ブックを保存」コマンドを追加。現在のブックをフォルダーやファイルに出力します
+    message: 「「ブックを保存」コマンドを追加。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 106
+    text: 「ブックの名前を変更」コマンド追加。 現在のブックのファイル名を変更します (#
+    message: 「「ブックの名前を変更」コマンド追加。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 137
+    text: フォルダ―の場所を復元する設定を追加 (#1919)
+    message: 「フォルダ」と「フォルダー」が混ざっています（この語は 28 回のうち 2 回が「フォルダ」）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 159
+    text: UI：スクロールバーの自動非表示設定追加 (#1901)
+    message: 「自動非表示設定追加」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 161
+    text: ESCキーで閉じる (#1924)
+    message: 「ESC」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 171
+    text: すでにフォルダーツリーにフォーカスがあるときは選択項目を変更しないようにした (
+    message: 「すでに」と書いています（この文書はふつう「既に」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 177
+    text: ブックマークフォルダ―に更新日時を追加 (#1928)
+    message: 「ブックマークフォルダ」と「ブックマークフォルダー」が混ざっています（この語は 8 回のうち 3 回が「ブックマークフォルダ」）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 192
+    text: の項目メニューの移動先プレイリスト名の "_" が省略されてしまう不具合修正 (
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 199
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 209
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 217
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 219
+    text: TAB移動を修正 (#1880)
+    message: 「TAB」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 227
+    text: "#### 重要な変更"
+    message: 見出し「重要な変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 233
+    text: 為エクスポートによるバックアップをお勧めします。
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 239
+    text: システム：ブックマーク等のリンクが切れても同じNTFSローカルドライブであれば自
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 239
+    text: NTFSローカルドライブであれば自動追従するようにした。アプリ非起動時の変更にも
+    message: 「NTFS」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 255
+    text: NET 10 ベースに変更 (#1839)
+    message: 「NET」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 256
+    text: UNCパスの大文字小文字の違いで履歴等に重複登録されないようにした (#1778
+    message: 「UNC」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 263
+    text: EXIF Orientation を適用 (#1813)
+    message: 「EXIF」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 263
+    text: RAW画像の EXIF Orientation を適用 (#1813)
+    message: 「RAW」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 268
+    text: ページだけのブックの場合、ページを超えて移動しようとしたときに履歴登録するように
+    message: 日本語と前の数字のあいだを詰めています（この文書はふつう空ける。24 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 283
+    text: ENDキーの挙動を修正 (#1817)
+    message: 「END」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 283
+    text: HOME/ENDキーの挙動を修正 (#1817)
+    message: 「HOME」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 304
+    text: "#### 追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 311
+    text: ブックマークフォルダ―を指定できるようにした
+    message: 「ブックマークフォルダ」と「ブックマークフォルダー」が混ざっています（この語は 8 回のうち 3 回が「ブックマークフォルダ」）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 335
+    text: AOT化。.NET Runtime x86 のインストールが不要になりました。
+    message: 「AOT」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 354
+    text: ブックマークフォルダ―を含まないようにした
+    message: 「ブックマークフォルダ」と「ブックマークフォルダー」が混ざっています（この語は 8 回のうち 3 回が「ブックマークフォルダ」）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 365
+    text: 秒に制限
+    message: 日本語と前の数字のあいだを詰めています（この文書はふつう空ける。24 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 382
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 393
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 402
+    text: BR 更新
+    message: 「BR」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 408
+    text: "#### 不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 416
+    text: "#### ウェルカムダイアログ"
+    message: 見出し「ウェルカムダイアログ」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 435
+    text: 時のページリセット設定を追加 (設定 > 移動 > 次のブックのページを初期化す
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。70 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 464
+    text: 時のフォーカス調整。まず本棚を、次にメインビューへのフォーカスを試す
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。70 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 491
+    text: "####  更新"
+    message: 見出し「更新」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 500
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 508
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 516
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 528
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 532
+    text: の自動回転の挙動の不具合修正
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 534
+    text: のサイズのないページの Width, Height を 0 にした
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 545
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 554
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 567
+    text: の各ページのサイズの揃え方の設定を追加 (設定 > ブック)
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 583
+    text: スクリプトフォルダにあるファイルを指定できるようにした
+    message: 「スクリプトフォルダ」と「スクリプトフォルダー」が混ざっています（この語は 3 回のうち 1 回が「スクリプトフォルダ」）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 616
+    text: もどすようにした
+    message: 「もどす」と書いています（この文書はふつう「戻す」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 624
+    text: の日時の値の型を string から Date に変更
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 650
+    text: "####  変更"
+    message: 見出し「変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 666
+    text: "####  変更"
+    message: 見出し「変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 680
+    text: "####  変更"
+    message: 見出し「変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 694
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 698
+    text: オート スクロール実装。長押しにも対応。既定ではホイール ボタンでモードを切り替
+    message: 「オート スクロール実装。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 701
+    text: ページの準備ができてから表示を切り替える機能を追加。ページ切り替えでの仮表示を抑
+    message: 「ページの準備ができてから表示を切り替える機能を追加。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 705
+    text: DLL ファイルを Libraries フォルダーに配置するようにした
+    message: 「DLL」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 715
+    text: 時に不正なページが作られることがある不具合修正
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。70 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 729
+    text: "####  セキュリティ更新"
+    message: 見出し「セキュリティ更新」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 731
+    text: 為.NET 8.0.4 に更新。この脆弱性に関する詳細は [.NET Blog]
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 739
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 748
+    text: "####  変更"
+    message: 見出し「変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 758
+    text: パラメータがページリスト等のコピーに反映されていなかった不具合修正
+    message: 「パラメータ」と「パラメーター」が混ざっています（この語は 19 回のうち 4 回が「パラメータ」）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 771
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 780
+    text: ページモードを設定するマウスジェスチャーの既定を専用コマンドにし、以前と同じ挙動
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 2 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 781
+    text: ストレッチモード指定コマンドで同じストレッチモードを指定したときも切り替え処理を
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 2 文）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 788
+    text: VLC動画でのコマ落ち軽減
+    message: 「VLC」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 799
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 805
+    text: ZIP ファイルに UTF-8 フラグが設定されているときに UTF-8 で読み
+    message: 「ZIP ファイルに UTF-8 フラグが設定されているときに UTF-8 で読み込むようにした」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 817
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 829
+    text: 時の表示ページ数の不具合修正
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。70 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 837
+    text: "####  追加"
+    message: 見出し「追加」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 857
+    text: "####  不具合修正"
+    message: 見出し「不具合修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 868
+    text: "####  重要な変更"
+    message: 見出し「重要な変更」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 884
+    text: ページをつなげて表示する「パノラマ」モードを追加。
+    message: 「ページをつなげて表示する「パノラマ」モードを追加。」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 895
+    text: メインビュー ウィンドウ自動非表示設定追加。 (設定 > メインビュー)
+    message: 「自動非表示設定追加」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 896
+    text: メインビュー ウィンドウの閉じるボタンでは最小化するように挙動を変更。
+    message: 「メインビュー ウィンドウの閉じるボタンでは最小化するように挙動を変更。」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（7 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 912
+    text: のコントロール バーをナビゲーター パネルに追加。 (ナビゲーター パネル >
+    message: 「のの」で語が重なっています。どちらかが余分です
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 914
+    text: PNGアニメーション再生に対応。
+    message: 「PNGアニメーション再生に対応。」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 933
+    text: フォルダを相対パスで指定可能にした。
+    message: 「フォルダ」と「フォルダー」が混ざっています（この語は 28 回のうち 2 回が「フォルダ」）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 953
+    text: パラメータ名変更等の動作に影響しない変更はコンソール通知だけになるようにした。
+    message: 「パラメータ」と「パラメーター」が混ざっています（この語は 19 回のうち 4 回が「パラメータ」）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 962
+    text: "####  修正"
+    message: 見出し「修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 964
+    text: アプリ終了時にエラーになる現象を軽減するためにSQLiteライブラリを以前のもの
+    message: 「アプリ終了時にエラーになる現象を軽減するためにSQLiteライブラリを以前のものに戻した」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（4 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 967
+    text: TW)
+    message: 「TW」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 974
+    text: "####  新着"
+    message: 見出し「新着」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 991
+    text: リサイズフィルター適用時に明るさが変化することがある問題が解消しました
+    message: 「リサイズフィルター適用時に明るさが変化することがある問題が解消しました」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（15 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 1005
+    text: "####  新着"
+    message: 見出し「新着」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1015
+    text: クイックアクセスのリネーム時の初期選択範囲不具合修正
+    message: 「初期選択範囲不具合修正」は漢字が 11 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 1028
+    text: "####  修正"
+    message: 見出し「修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 1039
+    text: "####  修正"
+    message: 見出し「修正」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1043
+    text: READMEファイルが開けなくなる不具合修正
+    message: 「README」が説明なしで使われています（説明のない略語 18 個）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 1050
+    text: "####  重要：ページマークをプレイリストに統合"
+    message: 見出し「重要：ページマークをプレイリストに統合」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 1062
+    text: "[こちら](https://neelabo.github.io/NeeView/"
+    message: リンクの言葉「こちら」は、行き先を言っていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 1069
+    text: ページ表示の場合に表示情報を切り替えられるようにしました。
+    message: 日本語と前の数字のあいだを詰めています（この文書はふつう空ける。24 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 1076
+    text: コマンド： コマンドを複製できるようにした。設定のコマンドリストでコマンドを右ク
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 3 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 1082
+    text: クイックアクセス：名前を変更できるようにした。クイックアクセスのプロパティから参
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 3 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 1084
+    text: ナビゲータパネルのプッシュピンボタンのコンテキストメニューから変更する。
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 3 文）
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 1095
+    text: "[こちら](https://github.com/neelabo/NeeView"
+    message: リンクの言葉「こちら」は、行き先を言っていません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1104
+    text: 時にパネルも非表示になることがある不具合修正。
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。70 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 1118
+    text: パラメータ追加。
+    message: 「パラメータ」と「パラメーター」が混ざっています（この語は 19 回のうち 4 回が「パラメータ」）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 1122
+    text: パラメータ追加。
+    message: 「パラメータ」と「パラメーター」が混ざっています（この語は 19 回のうち 4 回が「パラメータ」）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1124
+    text: ウィンドウ：サイドパネルとメニューやスライダーの重なり部分の自動表示判定設定追加
+    message: 「自動表示判定設定追加」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 1151
+    text: さらに古いバージョンの変更履歴はこちらをご覧ください。](changelog-o
+    message: 「さらに古い」は、何と比べているかが書かれていません
+    verdict: unjudged

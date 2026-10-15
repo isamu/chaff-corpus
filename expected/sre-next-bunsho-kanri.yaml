@@ -1,0 +1,13 @@
+id: sre-next-bunsho-kanri
+chaff: 0.34.0
+findings:
+  - rule: use-before-definition
+    line: 11
+    text: 諸規程の制定、公布、改正および廃止に当たって遵守すべき事項を定め、諸規程を体系的
+    message: 「諸規程」を、17 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 42
+    text: 持つ。規程の優先順位は、規定番号順に従う。つまり、番号が若い規程（上位規程）が優
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged

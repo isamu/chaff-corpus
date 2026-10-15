@@ -1,0 +1,33 @@
+id: fprime-buffermanager-sdd
+chaff: 0.34.0
+findings:
+  - rule: broken-link
+    line: 76
+    text: "[*bufferGetCallee*](#bufferGetCallee), i"
+    message: The link "[*bufferGetCallee*](#bufferGetCallee)" points to "#bufferGetCallee", which is not a heading on this page
+    verdict: unjudged
+  - rule: broken-link
+    line: 87
+    text: "[*bufferSendIn*](#bufferSendIn), it carr"
+    message: The link "[*bufferSendIn*](#bufferSendIn)" points to "#bufferSendIn", which is not a heading on this page
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 96
+    text: It doesn't need to be connected for `Buf
+    message: "\"doesn't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: broken-link
+    line: 104
+    text: "[`bufferGetCallee`](#bufferGetCallee) po"
+    message: The link "[`bufferGetCallee`](#bufferGetCallee)" points to "#bufferGetCallee", which is not a heading on this page
+    verdict: unjudged
+  - rule: broken-link
+    line: 110
+    text: "[`bufferSendIn`](#bufferSendIn) port of"
+    message: The link "[`bufferSendIn`](#bufferSendIn)" points to "#bufferSendIn", which is not a heading on this page
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 131
+    text: A returned buffer is returned with a cor
+    message: "\"isn't\" is written differently from the rest of the document"
+    verdict: unjudged

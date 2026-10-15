@@ -1,0 +1,686 @@
+id: rfc9293-tcp
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: MTI Systems
+    message: '"MTI" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 6
+    text: "STD: 7"
+    message: '"STD" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 19
+    text: This document specifies the Transmission
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 23
+    text: RFC 793, though these have only been
+    message: '"RFC" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 53
+    text: BCP 78 and the IETF Trust's Legal
+    message: '"BCP" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 59
+    text: BSD License text as described in Section
+    message: '"BSD" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 64
+    text: November
+    message: |-
+      The date "November
+         10, 2008" is written differently from 5 other dates in the document (such as "29
+                    March 2012")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 68
+    text: Without obtaining an adequate license fr
+    message: This sentence runs 57 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 101
+    text: MTU Discovery
+    message: '"MTU" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 126
+    text: IANA Considerations
+    message: '"IANA" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 159
+    text: The purpose of this document is to bring
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 168
+    text: This
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 175
+    text: In addition to the protocol specificatio
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 208
+    text: As one example, implementing
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 221
+    text: The key words "MUST", "MUST NOT", "REQUI
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 221
+    text: The key words "MUST", "MUST NOT", "REQUI
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 235
+    text: SHLD-X", "MAY"
+    message: '"SHLD" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 236
+    text: REC-X".
+    message: '"REC" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 356
+    text: CWR, ECE, URG, ACK,
+    message: '"CWR" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 356
+    text: ECE, URG, ACK,
+    message: '"ECE" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 356
+    text: URG, ACK,
+    message: '"URG" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 357
+    text: FIN.
+    message: '"FIN" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 357
+    text: PSH, RST, SYN, and FIN.
+    message: '"PSH" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 629
+    text: Among
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 726
+    text: LISTEN, SYN-SENT, SYN-RECEIVED,
+    message: '"LISTEN" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 726
+    text: SYN-SENT, SYN-RECEIVED,
+    message: '"SYN-SENT" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 727
+    text: WAIT, CLOSING, LAST-ACK,
+    message: '"WAIT, CLOSING, LAST" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 727
+    text: LAST-ACK,
+    message: '"LAST-ACK" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 746
+    text: FIN-WAIT-1 -  represents waiting for a c
+    message: 7 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 759
+    text: LAST-ACK -  represents waiting for an ac
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 773
+    text: OPEN, SEND, RECEIVE, CLOSE,
+    message: '"OPEN, SEND, RECEIVE, CLOSE" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 792
+    text: "BENE:  This diagram is only a summary an"
+    message: '"BENE" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 792
+    text: "NOTA BENE:  This diagram is only a summa"
+    message: '"NOTA" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 943
+    text: The first part of this test checks to se
+    message: This sentence runs 53 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 979
+    text: We have taken advantage of the numbering
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 988
+    text: For sequence number purposes, the SYN is
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 998
+    text: A connection is defined by a pair of soc
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1078
+    text: The receiver of the first SYN has
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1096
+    text: Reasons why it is now negligible include
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: nonstandard-word
+    line: 1100
+    text: anyways.
+    message: '"anyways" is nonstandard in formal writing; write "anyway"'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1102
+    text: To be sure that a TCP implementation doe
+    message: This sentence runs 59 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1109
+    text: Note that if a TCP endpoint is reinitial
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1116
+    text: Hosts that for any reason lose knowledge
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1127
+    text: The duplicate detection and sequencing a
+    message: This sentence runs 61 words (limit 40)
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 1133
+    text: could conceivably be assigned the same o
+    message: This sentence stacks 2 hedges ("could, conceivably")
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1139
+    text: Under normal conditions, TCP implementat
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1156
+    text: For
+    message: This sentence runs 61 words (limit 40)
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 1158
+    text: might re-
+    message: This sentence stacks 2 hedges ("might, possibly")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1162
+    text: In the absence of
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1169
+    text: Even hosts that can remember the time of
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1175
+    text: Suppose that this connection is not used
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1206
+    text: If a new
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1223
+    text: The "three-way handshake" is the procedu
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1233
+    text: Although these
+    message: This sentence runs 63 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1243
+    text: The simplest 3WHS is shown in Figure 6.
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 1283
+    text: more complex, as is shown in
+    message: '"more complex" does not say what it is compared with'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1318
+    text: WAIT, CLOSING, LAST-ACK, TIME-WAIT), it
+    message: '"WAIT, CLOSING, LAST" is written in capitals'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1342
+    text: As a simple example of recovery from old
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1346
+    text: SEQ field selected to
+    message: '"SEQ" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1355
+    text: An established connection is said to be
+    message: This sentence runs 52 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1369
+    text: Assume that two user processes A and B a
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1473
+    text: If the incoming segment has the ACK bit
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1479
+    text: If the connection is in any non-synchron
+    message: This sentence runs 57 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1480
+    text: SENT, SYN-RECEIVED), and the incoming se
+    message: '"SENT" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1486
+    text: If the incoming segment has an ACK field
+    message: This sentence runs 48 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1492
+    text: If the connection is in a synchronized s
+    message: This sentence runs 65 words (limit 40)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1493
+    text: WAIT, CLOSING, LAST-ACK, TIME-WAIT),
+    message: '"WAIT, CLOSING, LAST" is written in capitals'
+    verdict: unjudged
+  - rule: weasel-word
+    line: 1524
+    text: It has been suggested that a RST segment
+    message: '"it has been suggested" does not say who'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1530
+    text: CLOSE is an operation meaning "I have no
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1540
+    text: A TCP
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1639
+    text: Since the two directions of a TCP connec
+    message: This sentence runs 44 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1647
+    text: If such a host issues a CLOSE call while
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1665
+    text: When the TCP Timestamp Options are avail
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1682
+    text: In some specific protocols, such
+    message: This sentence runs 69 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1684
+    text: PDU Aligned Framing (MPA) [34], there ar
+    message: '"PDU" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1716
+    text: ICMP messages related to fragmentation.
+    message: '"ICMP" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1718
+    text: Preventing delays to the application dat
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1745
+    text: The maximum size of a segment that a TCP
+    message: This sentence runs 51 words (limit 40)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1751
+    text: " - IPoptionsize"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1751
+    text: " - TCPhdrsize - IPoptionsize"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1776
+    text: By ignoring both
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1793
+    text: When TCP is used in a situation where ei
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1807
+    text: Instead, implementation of Path MTU Disc
+    message: '"in order for" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1813
+    text: PMTUD for IPv4 [2] or IPv6 [14] is imple
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1817
+    text: Several
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1860
+    text: If there is unacknowledged data (i.e., S
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1878
+    text: In order to support TCP over IPv6 Jumbog
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1907
+    text: When the sender creates a segment and tr
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1927
+    text: RTT samples (MUST-18).
+    message: '"RTT" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1930
+    text: IEN 177 [71].  This was then replaced by
+    message: '"IEN" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1934
+    text: RFC 1122 allows that if a retransmitted
+    message: This sentence runs 50 words (limit 40)
+    verdict: unjudged
+  - rule: nonstandard-word
+    line: 1939
+    text: anyways since it is only meaningful when
+    message: '"anyways" is nonstandard in formal writing; write "anyway"'
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 2052
+    text: It is extremely important to remember th
+    message: '"extremely important" emphasises without saying anything'
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 2058
+    text: it MAY be configurable to send a keep-al
+    message: This sentence stacks 2 hedges ("it MAY be, MAY")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2071
+    text: The objective of the TCP urgent mechanis
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2078
+    text: Whenever this point is in advance of
+    message: This sentence runs 52 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2166
+    text: The sending TCP peer must regularly tran
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2328
+    text: An ACK SHOULD be generated for at
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2329
+    text: RMSS bytes of new data
+    message: '"RMSS" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2333
+    text: More complete discussion of
+    message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2333
+    text: More complete discussion of
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2458
+    text: If an application on a multihomed host d
+    message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2476
+    text: URGENT flag [, PUSH flag] [, timeout])
+    message: '"URGENT" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2486
+    text: If
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2529
+    text: If no remote socket was specified in the
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2556
+    text: We have implicitly assumed an asynchrono
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2557
+    text: SIGNAL or pseudo-interrupt from the
+    message: '"SIGNAL" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2567
+    text: In order for the process to distinguish
+    message: '"in order for" can be said in fewer words'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2613
+    text: To distinguish among several outstanding
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2626
+    text: This command causes the connection speci
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2707
+    text: FLUSH call, which will empty
+    message: '"FLUSH" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 2875
+    text: Section 3.2.1.3).
+    message: '"Section 3.2.1.3" (address 3.2.1.3) is not in this document'
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 2938
+    text: '"=<" means less than'
+    message: '"=<" is also defined on line 878'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2941
+    text: A natural way to think about processing
+    message: This sentence runs 52 words (limit 40)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 2956
+    text: CLOSED STATE (i.e., TCB does not exist)
+    message: '"i.e., TCB does not" appears 7 times (limit 5)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2971
+    text: CTL=SYN> is sent.  Set SND.UNA to ISS, S
+    message: '"CTL" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 3953
+    text: ACK
+    message: 6 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 4162
+    text: socket (or socket number, or socket addr
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4191
+    text: URG
+    message: This sentence runs 44 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4219
+    text: The collection of applicable RFC errata
+    message: This sentence runs 63 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4232
+    text: The discussion of the RTO from RFC 793 w
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 4356
+    text: In order to fully provide confidentialit
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4412
+    text: QUIC [60].
+    message: '"QUIC" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4413
+    text: Additionally, based partly on experience
+    message: This sentence runs 43 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4416
+    text: IAB recommendations in RFC
+    message: '"IAB" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4421
+    text: These collect observations of several as
+    message: This sentence runs 58 words (limit 40)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 4760
+    text: )90053-3>.
+    message: '")" closes nothing that was opened'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 4767
+    text: '[71]       Postel, J., "Comments on Acti'
+    message: 30 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4886
+    text: Resetting connections when incoming pack
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 4919
+    text: The IP Security Option (IPSO) and compar
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4922
+    text: NIST in 2015) and is supported by some v
+    message: '"NIST" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: fact-conflict
+    line: 5156
+    text: 1220 |         |      |        |     |
+    message: '"default" is 1220 here, but 536 earlier in the same section'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5522
+    text: ALP" means Application-Layer Program.
+    message: '"ALP" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 5522
+    text: '"ALP" means Application-Layer Program.'
+    message: '"ALP" is defined but never used'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5533
+    text: TCPM working group
+    message: '"TCPM" is used without an expansion (35 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 5548
+    text: During the discussions of this work on t
+    message: This sentence runs 108 words (limit 40)
+    verdict: unjudged

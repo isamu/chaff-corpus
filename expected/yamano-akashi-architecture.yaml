@@ -1,0 +1,28 @@
+id: yamano-akashi-architecture
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 72
+    text: OIDCによりIDトークンを発行
+    message: 「OIDC」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 73
+    text: BEはIDトークンを検証してリクエストを認可
+    message: 「BE」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 75
+    text: AWS KMSベースで暗号化（暗号化処理は抽象化インターフェース経由）
+    message: 「AWS」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 75
+    text: KMSベースで暗号化（暗号化処理は抽象化インターフェース経由）
+    message: 「KMS」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 76
+    text: DB認証情報・外部APIキーを管理
+    message: 「DB」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged

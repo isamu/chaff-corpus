@@ -21,11 +21,6 @@ findings:
     text: and/or in each of the Path Item's [Opera
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
-  - rule: heading-echo
-    line: 82
-    text: Media type definitions are spread across
-    message: The first sentence repeats the heading "Media Types"
-    verdict: unjudged
   - rule: wordy-phrase
     line: 130
     text: In order to preserve the ability to roun
@@ -55,11 +50,6 @@ findings:
     line: 658
     text: The path is appended to the URL from the
     message: '"in order to" can be said in fewer words'
-    verdict: unjudged
-  - rule: heading-echo
-    line: 980
-    text: Allows referencing an external resource
-    message: The first sentence repeats the heading "External Documentation Object"
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 1013

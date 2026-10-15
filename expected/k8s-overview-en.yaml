@@ -1,0 +1,21 @@
+id: k8s-overview-en
+chaff: 0.34.0
+findings:
+  - rule: list-item-form-mix
+    line: 53
+    text: Automated rollouts and rollbacks**
+    message: |-
+      "Automated rollouts and rollbacks  
+        You can describe the desired state for your deployed containers using Kubernetes,
+        and it can change the actual state to the desired state at a controlled rate." opens with a verb; the other items in this list open with a noun phrase (1 of 5)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 56
+    text: For example, you can automate Kubernetes
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 62
+    text: Self-healing**
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged

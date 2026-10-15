@@ -187,11 +187,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: unjudged
   - rule: heading-echo
-    line: 346
-    text: Use (round brackets).
-    message: The first sentence repeats the heading "Brackets"
-    verdict: unjudged
-  - rule: heading-echo
     line: 368
     text: See Great Britain
     message: The first sentence repeats the heading "Britain"
@@ -210,11 +205,6 @@ findings:
     line: 407
     text: which apply to the most users and removi
     message: This restrictive clause opens with "which"; the document mostly uses "that"
-    verdict: unjudged
-  - rule: heading-echo
-    line: 441
-    text: The cabinet is lower case.
-    message: The first sentence repeats the heading "cabinet"
     verdict: unjudged
   - rule: all-caps-shouting
     line: 449
@@ -261,16 +251,6 @@ findings:
     text: See change notes in the content design m
     message: The first sentence repeats the heading "Change notes"
     verdict: unjudged
-  - rule: heading-echo
-    line: 652
-    text: Avoid negative contractions like can’t a
-    message: The first sentence repeats the heading "contractions"
-    verdict: unjudged
-  - rule: heading-echo
-    line: 738
-    text: Not curricula.
-    message: The first sentence repeats the heading "curriculums"
-    verdict: unjudged
   - rule: invisible-character
     line: 821
     text: ​
@@ -315,16 +295,6 @@ findings:
     line: 1175
     text: This is GOV.UK One Login’s main identity
     message: The first sentence repeats the heading "The GOV.UK One Login app"
-    verdict: unjudged
-  - rule: heading-echo
-    line: 1219
-    text: "Lower case: national recovery guidance."
-    message: The first sentence repeats the heading "guidance"
-    verdict: unjudged
-  - rule: heading-echo
-    line: 1379
-    text: Do not use italics. Use ‘single quotatio
-    message: The first sentence repeats the heading "Italics"
     verdict: unjudged
   - rule: expletive-construction
     line: 1431
@@ -455,11 +425,6 @@ findings:
     line: 2601
     text: better.
     message: '"better" does not say what it is compared with'
-    verdict: unjudged
-  - rule: heading-echo
-    line: 2633
-    text: Use technical terms where you need to. T
-    message: The first sentence repeats the heading "technical terms"
     verdict: unjudged
   - rule: number-style-consistency
     line: 2670

@@ -221,6 +221,11 @@ findings:
     text: JOBS account or log in to your existing
     message: '"JOBS" is used without an expansion (18 such acronyms)'
     verdict: unjudged
+  - rule: list-item-form-mix
+    line: 405
+    text: Your responses to the USA Hire Assessmen
+    message: '"Your responses to the USA Hire Assessments will be reused for one year (in most cases) from the date you complete an assessment." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+    verdict: unjudged
   - rule: heading-level-skip
     line: 421
     text: "### Agency contact information"
@@ -255,6 +260,11 @@ findings:
     line: 486
     text: To be qualified you must submit appropri
     message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 508
+    text: Your responses to the USA Hire Assessmen
+    message: '"Your responses to the USA Hire Assessments will be reused for one year (in most cases) from the date you complete an assessment." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 539

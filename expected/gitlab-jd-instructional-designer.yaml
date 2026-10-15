@@ -1,0 +1,43 @@
+id: gitlab-jd-instructional-designer
+chaff: 0.34.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ---
+    message: Section "The Learning & Development…" has no number, code or link (4 of 9 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 7
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (4 of 9 sections)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 15
+    text: Creation of eLearning that is Handbook f
+    message: '"Creation of eLearning that is Handbook first for our LXP" opens with a noun phrase; the other items in this list open with a verb (1 of 9)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 66
+    text: ""
+    message: Section "Instructional Designer (Intermediate) Responsibilities" has no number, code or link (4 of 9 sections)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 71
+    text: Develop, maintain, and track courses, ma
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 89
+    text: ""
+    message: Section "Senior Instructional Designer Responsibilities" has no number, code or link (4 of 9 sections)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 98
+    text: Extends the Instructional Designer (Inte
+    message: '"Extends the Instructional Designer (Intermediate) requirements" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 126
+    text: which is not yet defined at GitLab. Curr
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged

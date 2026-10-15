@@ -1,0 +1,58 @@
+id: react-ja-thinking
+chaff: 0.34.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 7
+    text: React でユーザインターフェースを構築する際には、まず UI を*コンポーネ
+    message: 「〜します」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 11
+    text: "## モックアップから始めよう {/*start-with-the-mockup"
+    message: 見出し「モックアップから始めよう」だけ番号がありません（兄弟の見出しは「ステップ 1：UI をコンポーネントの階層に分割する」など 5 個が番号付き）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 66
+    text: モックアップ内にあるコンポーネントを特定したら、それらを階層構造に整理します。モ
+    message: 「にあるコンポーネ」が 6 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 76
+    text: 分かりやすいアプローチは、インタラクティブな要素はまだ加えず、単にデータモデルか
+    message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    text: （もし [state](/learn/state-a-components-me
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 212
+    text: の最小限のセットのことである、と考えましょう。state の構造を考える上で最も
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 240
+    text: "#### props と state {/*props-vs-state*/}"
+    message: 見出し「props と state」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 253
+    text: 分からないかもしれません。この概念が初めてであれば難しいかもしれませんが、以下の
+    message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 262
+    text: の親コンポーネントの階層の上のどこかに追加する。
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 448
+    text: たとえば、`SearchBar` は以下のようにしてインプットの value を
+    message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 661
+    text: "## 次に向かう場所 {/*where-to-go-from-here*/}"
+    message: 見出し「次に向かう場所」だけ番号がありません（兄弟の見出しは「ステップ 1：UI をコンポーネントの階層に分割する」など 5 個が番号付き）
+    verdict: unjudged

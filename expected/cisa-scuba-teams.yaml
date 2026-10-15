@@ -1,0 +1,378 @@
+id: cisa-scuba-teams
+chaff: 0.34.0
+findings:
+  - rule: max-paragraph-length
+    line: 6
+    text: Many admin controls for Teams are found
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 16
+    text: The Secure Cloud Business Applications (
+    message: This sentence runs 46 words (limit 40)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 16
+    text: ’ cloud business application environment
+    message: The quote mark ’ here, where the document usually writes ' (2 of 22)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 18
+    text: ’s threats and risk tolerance with the k
+    message: The quote mark ’ here, where the document usually writes ' (2 of 22)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 20
+    text: INFORMATIONAL PURPOSES ONLY. CISA does n
+    message: '"INFORMATIONAL PURPOSES ONLY" is written in capitals'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 20
+    text: For non-Federal users, the information i
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 20
+    text: "  Accordingly, these SCuBA SCBs for M365"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 78)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: RFC 2119](https://datatracker.ietf.org/d
+    message: '"RFC" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: "Anonymous users**: Teams users joining c"
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 57
+    text: "BOD 25-01 Requirement**: This indicator"
+    message: '"BOD" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 82
+    text: NIST SP 800-53 Rev. 5 FedRAMP High Basel
+    message: '"NIST" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 190
+    text: To help ensure external participants do
+    message: '"have the ability to" can be said in fewer words'
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 201
+    text: Select **Save** (if applicable).
+    message: '"Save (if applicable" appears 13 times (limit 5)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 201
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 203
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 217
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 219
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 223
+    text: To configure settings for anonymous user
+    message: 12 bold spans in 551 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 235
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 237
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 241
+    text: To configure settings so that internal u
+    message: 10 bold spans in 452 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 253
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 255
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 269
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 271
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 275
+    text: To configure the settings that control m
+    message: 8 bold spans in 366 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 285
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 287
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 291
+    text: To configure the settings that control "
+    message: 8 bold spans in 351 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 301
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 303
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 323
+    text: MA site for a list of .gov domains for s
+    message: '"MA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 375
+    text: " - Manage external meetings and chat wit"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 411
+    text: NOTE:** Domains will need to be added in
+    message: '"in order for" can be said in fewer words'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 415
+    text: NOTE:** You'll receive a pop-up at this
+    message: "\"can't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 415
+    text: " - Changes to External access will have"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: ui-label-variant
+    line: 425
+    text: Global (Org-wide Default)**.
+    message: '"Global (Org-wide Default)" is written as "Global (Org-wide default)" elsewhere'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 435
+    text: NOTE:** You'll receive a pop-up at this
+    message: "\"can't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 435
+    text: " - Changes to Global (Org-wide default)"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 437
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: ui-label-variant
+    line: 447
+    text: Global (Org-wide Default)**.
+    message: '"Global (Org-wide Default)" is written as "Global (Org-wide default)" elsewhere'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 453
+    text: NOTE:** You'll receive a pop-up at this
+    message: "\"can't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 453
+    text: " - Changes to Global (Org-wide default)"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 455
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 459
+    text: "## 4. Teams Email Integration"
+    message: '"4" follows "2" (expected number 3)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 460
+    text: If this is not appropriately restricted,
+    message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 492
+    text: To ensure users cannot send emails and t
+    message: 8 bold spans in 369 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 500
+    text: SMTP domains** field has no domains ente
+    message: '"SMTP" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 502
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 508
+    text: Apps can introduce additional access to
+    message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 575
+    text: "  However, there a limitation in the API"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 78)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 591
+    text: Click **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 593
+    text: Additionally, previously configured avai
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 605
+    text: Ensure the correct app is reflecting on
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 607
+    text: Click **Apply** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 625
+    text: Click **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 627
+    text: Additionally, previously configured avai
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 639
+    text: Ensure the correct app is reflecting on
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 641
+    text: Click **Apply** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 659
+    text: Click **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 661
+    text: Additionally, previously configured avai
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 673
+    text: Ensure the correct app is reflecting on
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 675
+    text: Click **Apply** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 689
+    text: Give this new policy a name and an appro
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 693
+    text: Select **Save** (if applicable).
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 695
+    text: After selecting **Save**, you're returne
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 704
+    text: "### Legacy Policy Implementation"
+    message: Heading "Legacy Policy Implementation" goes from level 1 to level 3 (expected 2)
+    verdict: unjudged
+  - rule: bold-density
+    line: 710
+    text: Sign in to the **Microsoft Teams admin c
+    message: 9 bold spans in 331 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 729
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 733
+    text: Sign in to the **Microsoft Teams admin c
+    message: 11 bold spans in 378 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: bold-density
+    line: 747
+    text: Confirm the dropdown in the **Third-part
+    message: 8 bold spans in 319 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 749
+    text: Click **Save** (if applicable). Your pol
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 764
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: bold-density
+    line: 768
+    text: Sign in to the **Microsoft Teams admin c
+    message: 11 bold spans in 383 characters (limit 20 per 1000)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 797
+    text: If custom policies exist on the tenant,
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged

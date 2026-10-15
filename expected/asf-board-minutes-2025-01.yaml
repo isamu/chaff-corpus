@@ -1,0 +1,1818 @@
+id: asf-board-minutes-2025-01
+chaff: 0.34.0
+findings:
+  - rule: hyphen-as-dash
+    line: 32
+    text: " - joined :02"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 62
+    text: " - joined :02"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 72
+    text: December 18, 2024
+    message: The date "December 18, 2024" is written differently from 324 other dates in the document (such as "2024-06-19")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 82
+    text: ASF projects, our volunteer
+    message: '"ASF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 87
+    text: ECMA Relations, and we will be
+    message: '"ECMA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 87
+    text: VP of ECMA Relations, and we will be
+    message: '"VP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 89
+    text: "  Our VP,"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 91
+    text: DOD proposed rule for federal vendors th
+    message: '"DOD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 92
+    text: "  Our comments [1] make clear the"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 135
+    text: CCLA, and one
+    message: '"CCLA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 150
+    text: JB]
+    message: '"JB" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 198
+    text: APISIX Project [Ming Wen / Kanchana]
+    message: '"APISIX" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 244
+    text: CXF Project [Andriy Redko / Shane]
+    message: '"CXF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 254
+    text: DB Project [Bryan Pendleton / Shane]
+    message: '"DB" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 293
+    text: AA. Apache Griffin Project [William Guo
+    message: '"AA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 299
+    text: AB. Apache Hadoop Project [Xiaoqiao He /
+    message: '"AB" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 303
+    text: AC. Apache HBase Project [Duo Zhang / Ka
+    message: '"AC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 307
+    text: AD. Apache Incubator Project [Justin Mcl
+    message: '"AD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 311
+    text: IPMC is helping with board reports
+    message: '"IPMC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 313
+    text: AE. Apache InLong Project [Charles Zhang
+    message: '"AE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 317
+    text: AF. Apache James Project [Benoit Tellier
+    message: '"AF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 321
+    text: AG. Apache jclouds Project [Andrew Gaul
+    message: '"AG" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 325
+    text: AH. Apache Jena Project [Andy Seaborne /
+    message: '"AH" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 333
+    text: AJ. Apache Johnzon Project [Jean-Louis M
+    message: '"AJ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 337
+    text: AK. Apache JSPWiki Project [Juan Pablo S
+    message: '"AK" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 341
+    text: AL. Apache Kudu Project [Andrew Wong / S
+    message: '"AL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 345
+    text: AM. Apache Libcloud Project [Tomaž Murau
+    message: '"AM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 349
+    text: AN. Apache Logo Development Project [Dan
+    message: '"AN" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 353
+    text: AO. Apache MADlib Project [Ed Espino / J
+    message: '"AO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 357
+    text: AP. Apache Mahout Project [Andrew Mussel
+    message: '"AP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 361
+    text: AQ. Apache Maven Project [Karl Heinz Mar
+    message: '"AQ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 367
+    text: AR. Apache Mesos Project [Qian Zhang / C
+    message: '"AR" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 373
+    text: AS. Apache MINA Project [Guillaume Nodet
+    message: '"AS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 373
+    text: MINA Project [Guillaume Nodet / Rich]
+    message: '"MINA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 377
+    text: AT. Apache Mnemonic Project [Gordon King
+    message: '"AT" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 381
+    text: AU. Apache MyFaces Project [Bernd Bohman
+    message: '"AU" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 385
+    text: AV. Apache NiFi Project [Joe Witt / Just
+    message: '"AV" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 389
+    text: AW. Apache Nutch Project [Sebastian Nage
+    message: '"AW" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 393
+    text: AX. Apache NuttX Project [Alin Jerpelea
+    message: '"AX" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 397
+    text: AY. Apache OpenJPA Project [Mark Struber
+    message: '"AY" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 401
+    text: AZ. Apache OpenMeetings Project [Maxim S
+    message: '"AZ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 405
+    text: BA. Apache OpenOffice Project [Dave Fish
+    message: '"BA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 409
+    text: BB. Apache OpenWebBeans Project [Mark St
+    message: '"BB" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 413
+    text: BC. Apache ORC Project [William Hyun / S
+    message: '"BC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 413
+    text: ORC Project [William Hyun / Sander]
+    message: '"ORC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 417
+    text: BD. Apache Parquet Project [Julien Le De
+    message: '"BD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 421
+    text: BE. Apache PDFBox Project [Andreas Lehmk
+    message: '"BE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 425
+    text: BF. Apache Petri Project [Dave Fisher /
+    message: '"BF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 429
+    text: BG. Apache Pig Project [Koji Noguchi / R
+    message: '"BG" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 433
+    text: BH. Apache Pivot Project [Roger Lee Whit
+    message: '"BH" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 437
+    text: BI. Apache Ranger Project [Selvamohan Ne
+    message: '"BI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 441
+    text: BJ. Apache Ratis Project [Tsz-wo Sze / C
+    message: '"BJ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 445
+    text: BK. Apache Rya Project [Adina Crainicean
+    message: '"BK" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 449
+    text: BL. Apache Samza Project [Jagadish Venka
+    message: '"BL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 453
+    text: BM. Apache SeaTunnel Project [Jun Gao /
+    message: '"BM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 457
+    text: BN. Apache SkyWalking Project [Sheng Wu
+    message: '"BN" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 461
+    text: BO. Apache Steve Project [Daniel Gruno /
+    message: '"BO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 465
+    text: BP. Apache Struts Project [René Gielen /
+    message: '"BP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 469
+    text: BQ. Apache Synapse Project [Isuru Udana
+    message: '"BQ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 473
+    text: BR. Apache Tapestry Project [Thiago Henr
+    message: '"BR" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 477
+    text: BS. Apache Tcl Project [Georgios Petasis
+    message: '"BS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 481
+    text: BT. Apache Tez Project [László Bodor / J
+    message: '"BT" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 485
+    text: BU. Apache Thrift Project [Jens Geyer /
+    message: '"BU" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 489
+    text: BV. Apache Tika Project [Tim Allison / K
+    message: '"BV" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 493
+    text: BW. Apache TinkerPop Project [Kelvin Law
+    message: '"BW" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 497
+    text: BX. Apache Traffic Server Project [Bryan
+    message: '"BX" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 501
+    text: BY. Apache Web Services Project [Daniel
+    message: '"BY" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 505
+    text: BZ. Apache Zeppelin Project [Jongyoul Le
+    message: '"BZ" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 515
+    text: WHEREAS, the Board of Directors deems it
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 522
+    text: NOW, THEREFORE, BE IT RESOLVED, that a P
+    message: '"NOW, THEREFORE, BE IT RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 531
+    text: RESOLVED, that the office of "Vice Presi
+    message: This sentence runs 61 words (limit 45)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 555
+    text: NOW, THEREFORE, BE IT FURTHER RESOLVED,
+    message: '"NOW, THEREFORE, BE IT FURTHER RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 555
+    text: NOW, THEREFORE, BE IT FURTHER RESOLVED,
+    message: This sentence runs 53 words (limit 45)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 581
+    text: NOW, THEREFORE, BE IT RESOLVED, that the
+    message: '"NOW, THEREFORE, BE IT RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 605
+    text: gstein) as the successor to
+    message: '"gstein" is not in the dictionary; did you mean "stein"?'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 608
+    text: NOW, THEREFORE, BE IT RESOLVED, that Dav
+    message: '"NOW, THEREFORE, BE IT RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 612
+    text: BE IT FURTHER RESOLVED, that Greg Stein
+    message: '"BE IT FURTHER RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 612
+    text: BE IT FURTHER RESOLVED, that Greg Stein
+    message: This sentence runs 54 words (limit 45)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 627
+    text: NOW, THEREFORE, BE IT RESOLVED, that the
+    message: '"NOW, THEREFORE, BE IT RESOLVED" is written in capitals'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 693
+    text: " . used email-template ---> <The Board"
+    message: A space before "."
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 694
+    text: Just answering here is sufficient, if
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 697
+    text: " -- Not"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 720
+    text: PLEASE DON'T COPY THESE METRICS INTO THE
+    message: "\"PLEASE DON'T COPY THESE METRICS INTO THE REPORT ALONE\" is written in capitals"
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 731
+    text: " , will get to this"
+    message: A space before ","
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 767
+    text: ISSUES FOR THE BOARD
+    message: '"ISSUES FOR THE BOARD" is written in capitals'
+    verdict: unjudged
+  - rule: preamble-length
+    line: 769
+    text: None.
+    message: 30 paragraphs before the first heading (limit 2)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 773
+    text: HUNTER as a podling name
+    message: '"HUNTER" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 777
+    text: DORIS PMC addressed some vendor independ
+    message: '"DORIS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 779
+    text: NIFI trademark
+    message: '"NIFI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 781
+    text: OTAVA name search
+    message: '"OTAVA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 788
+    text: APACHE registration in India is now comp
+    message: '"APACHE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 795
+    text: HBASE PMC to try and progress a minor is
+    message: '"HBASE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 834
+    text: " ."
+    message: A space before "."
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 870
+    text: “CISA Tabletop Exercise Tests Open Sourc
+    message: The quote mark “ here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 870
+    text: CISA Tabletop Exercise Tests Open Source
+    message: '"CISA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 871
+    text: ” on ASF blog and promoted across social
+    message: The quote mark ” here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: name-variant
+    line: 875
+    text: Committee on Digital Affairs
+    message: '"Committee" is one letter away from "Committer", which the document uses more than once'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 875
+    text: ’s Committee on Digital Affairs
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 879
+    text: M&P wiki (updating email
+    message: '"M&P" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 893
+    text: 8 followers.
+    message: '"8" here, where the document usually writes numbers below ten like "Two" (2 of 10)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 952
+    text: CI
+    message: '"CI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 961
+    text: February 1st (brownout), going into full
+    message: "\"February 1st\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 969
+    text: January 19th (opt-in for a week, full ro
+    message: "\"January 19th\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 970
+    text: Jan 26th). A roundtable session was held
+    message: "\"Jan 26th\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 970
+    text: January 8th to inform
+    message: "\"January 8th\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 981
+    text: " - Senior"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 988
+    text: ""
+    message: Section "Bootstrap" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 992
+    text: "There is a slack channel: #tooling-discu"
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 1008
+    text: January 28, with the CFP
+    message: "\"January 28\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1008
+    text: CFP
+    message: '"CFP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 1011
+    text: January 25-27, so we
+    message: "\"January 25\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1011
+    text: NA will be happening January 25-27, so w
+    message: '"NA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1017
+    text: There are many
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1043
+    text: " - with key people a bit"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1051
+    text: CRA, PLD, DSA, NIS2, DORA, etc; the impa
+    message: '"CRA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1051
+    text: DORA, etc; the impact/actual creation of
+    message: '"DORA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1051
+    text: DSA, NIS2, DORA, etc; the impact/actual
+    message: '"DSA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1051
+    text: PLD, DSA, NIS2, DORA, etc; the impact/ac
+    message: '"PLD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1053
+    text: " - there is now the first guidance open"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1056
+    text: LF) is part.
+    message: '"LF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1058
+    text: There is some talk about the software li
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1062
+    text: " -- actual useful work is"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1062
+    text: ORWGC Open Regulatory Working Group at E
+    message: '"ORWGC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1063
+    text: IETF/Apache style) openness/accessibilit
+    message: '"IETF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1065
+    text: PAS processes.
+    message: '"PAS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1068
+    text: FOSDEM to allay the first order concerns
+    message: '"FOSDEM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1070
+    text: " - the FSFE has been given the right to"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1070
+    text: FSFE has been given the right to interve
+    message: '"FSFE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1093
+    text: LEGAL issues, we are flat at
+    message: '"LEGAL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1096
+    text: " -- no action required from the"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1097
+    text: " -- since we're handling everything in a"
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1099
+    text: DMCA takedown notice for a small amount
+    message: '"DMCA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 1132
+    text: "Stats for December 2024:"
+    message: '"Stats" is one letter away from "Status", which the document uses more than once'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 1152
+    text: 1st January 2025, we're tracking 179 (la
+    message: The date "1st January 2025" is written differently from 324 other dates in the document (such as "2024-06-19")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1154
+    text: CVE names assigned.  15
+    message: '"CVE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1179
+    text: "openoffice (Health amber): Three issues"
+    message: '"openoffice" here, where the document usually writes "OpenOffice" (1 of 4)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1196
+    text: "Current project status: Ongoing with hig"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 1200
+    text: Apache Accumulo was founded 2012-03-20 (
+    message: '"There are currently" appears 56 times (limit 5)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1222
+    text: traget date has been set.
+    message: '"traget" is not in the dictionary; did you mean "target"?'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1228
+    text: ""
+    message: Section "Notable Work:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1233
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1269
+    text: JMS 2/3 operations support.
+    message: '"JMS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1279
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1312
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 1341
+    text: Nov 22, 2024, Apache Answer v1.4.1 was r
+    message: The date "Nov 22, 2024" is written differently from 324 other dates in the document (such as "2024-06-19")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1344
+    text: SEO template.
+    message: '"SEO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1357
+    text: There are also some new features under d
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1401
+    text: dev@apisix.apache.org had a 36% increase
+    message: This sentence runs 85 words (limit 45)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1443
+    text: mbean server
+    message: '"mbean" is not in the dictionary; did you mean "mean"?'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1497
+    text: ’ve added a new experimental standard fo
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1502
+    text: ’ve released a new version from the spli
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 1503
+    text: ’ll be able to maintain the Go implement
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1513
+    text: IPC Stream Format was added.
+    message: '"IPC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 1550
+    text: 10460 emails compared to 14773)
+    message: '"10460" here, where the document usually writes large numbers like "678,614" (1 of 11)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1557
+    text: Given that the number of commits is down
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1557
+    text: github@
+    message: '"github" here, where the document usually writes "GitHub" (5 of 42)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1605
+    text: UPDATE statement) had some good discussi
+    message: '"UPDATE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1651
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1668
+    text: " - Kind was added to the PMC on 2024-08-"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1673
+    text: There was no release this quarter. The l
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1690
+    text: "JIRA:"
+    message: '"JIRA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1709
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1713
+    text: RPC framework for building reliable and
+    message: '"RPC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1719
+    text: "Current project status: Ongoing"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1727
+    text: There are currently 21 committers and 13
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1733
+    text: LOC, was added as a new
+    message: '"LOC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 1740
+    text: October 27th with the following new feat
+    message: "\"October 27th\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1756
+    text: rwlock for bthread
+    message: '"rwlock" is not in the dictionary; did you mean "rowlock"?'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 1764
+    text: Committers take turns responding user em
+    message: '"on a weekly basis" can be said in fewer words'
+    verdict: unjudged
+  - rule: numeral-sentence-start
+    line: 1768
+    text: 103 commits were made in the past quarte
+    message: The sentence opens with the numeral "103"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1774
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1781
+    text: JDBC and ODBC database drivers. Avatica
+    message: '"JDBC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1781
+    text: ODBC database drivers. Avatica has an in
+    message: '"ODBC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1799
+    text: The main features of this
+    message: This sentence runs 50 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1801
+    text: ASOF join, the EXCLUDE clause in window
+    message: '"ASOF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1806
+    text: There was no release for Apache Avatica
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1816
+    text: meailing list, or 16% / 10% decrease on
+    message: '"meailing" is not in the dictionary; did you mean "mailing"?'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1849
+    text: The situation with PR reviewing and the
+    message: This sentence runs 51 words (limit 45)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1871
+    text: There are no issues requiring board atte
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 1887
+    text: "  Dan"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1927
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1929
+    text: MQTT was added
+    message: '"MQTT" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1935
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1944
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1946
+    text: JAX-RS.
+    message: '"JAX-RS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1946
+    text: JAX-WS and JAX-RS.
+    message: '"JAX-WS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1947
+    text: SOAP, XML/HTTP,
+    message: '"SOAP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1948
+    text: CORBA and work over a variety of transpo
+    message: '"CORBA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1949
+    text: JBI.
+    message: '"JBI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1951
+    text: There is also a sub-project that leverag
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1953
+    text: " - Fediz helps you to secure your web ap"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1954
+    text: WS-Federation Passive Requestor Profile.
+    message: '"WS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1971
+    text: EE 10 platform (it has been constant ask
+    message: '"EE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1996
+    text: TCK tests that we haven't
+    message: '"TCK" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2008
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2013
+    text: TLP consists of the following subproject
+    message: '"TLP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2015
+    text: "JDO      : focused on building the API a"
+    message: '"JDO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: latin-abbreviation-form
+    line: 2043
+    text: e.g TORQUE-368) and an ongoing discussio
+    message: '"e.g" has some of its periods but not all'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2047
+    text: SBOM files for improved security
+    message: '"SBOM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2049
+    text: JDK 11 as the lowest supported version.
+    message: '"JDK" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2054
+    text: There was some discussion about the chal
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2071
+    text: "LDAP API: An ongoing effort to provide a"
+    message: '"LDAP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2072
+    text: JNDI and the existing LDAP API (jLdap an
+    message: '"JNDI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2073
+    text: ” API with some convenient ways to acces
+    message: The quote mark ” here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2073
+    text: ” API with some convenient ways to acces
+    message: '"”" closes nothing that was opened'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2078
+    text: RCP application, composed of several Ecl
+    message: '"RCP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2086
+    text: KDC and various
+    message: '"KDC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2087
+    text: OTP and token (OAuth2) as desired in mod
+    message: '"OTP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2087
+    text: PKI, OTP and token (OAuth2) as desired i
+    message: '"PKI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2093
+    text: SCIM v2.0 specification.
+    message: '"SCIM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2103
+    text: There are four members who are
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2103
+    text: "Answer: 'Yes', but, there aren't 3 for e"
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: name-variant
+    line: 2105
+    text: Scimple) and myself (Fortress). We'll
+    message: '"Scimple" is written "SCIMple" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 2108
+    text: So, by
+    message: 1 sentence opens with "So," (1 needed)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2119
+    text: We're open to / requesting suggestions f
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2139
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2151
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: date-without-year
+    line: 2180
+    text: Jul 18.
+    message: "\"Jul 18\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2216
+    text: "Current project status: Stable. Issues f"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 2237
+    text: "Dec 31st, 2-24:"
+    message: "\"Dec 31st\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2240
+    text: " - at least 65 million end users, and by"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: weasel-word
+    line: 2240
+    text: according to some vendors - at least 65
+    message: '"according to some" does not say who'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2241
+    text: "  I suspect this under-counts"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2245
+    text: "  We continue to see a lot of downloads"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 2247
+    text: Dec 31st, 2024.
+    message: The date "Dec 31st, 2024" is written differently from 324 other dates in the document (such as "2024-06-19")
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2253
+    text: "  If you want"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2268
+    text: “what is
+    message: The quote mark “ here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2269
+    text: ” And discuss.
+    message: The quote mark ” here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2269
+    text: ” Or “what would you like to add?” And d
+    message: The quote mark ” here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2269
+    text: “what would you like to add?” And discus
+    message: The quote mark “ here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2280
+    text: '"You get what you develop, you get what'
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2281
+    text: "  In terms of patterns, as has been poin"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2287
+    text: "  More"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2288
+    text: "  Subscribe to the feed and start"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2289
+    text: "  In 2025, we should clear out old jira"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2305
+    text: --it remains a worked example in the rep
+    message: '"--" stands in for a dash'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2317
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2318
+    text: There is
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2320
+    text: ’ve seen some minor development. Most no
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2323
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2326
+    text: ’s Open telemetry project. Open telemetr
+    message: The quote mark ’ here, where the document usually writes ' (6 of 91)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2326
+    text: CNCF’s Open telemetry project. Open tele
+    message: '"CNCF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2359
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2363
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2435
+    text: HDFS new feature "Asynchronous Router RP
+    message: '"HDFS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2439
+    text: HDFS new feature "NameNode Fine-Grained
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2444
+    text: YARN Cgroup V2[7] is still under active
+    message: '"YARN" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 2450
+    text: more robust.
+    message: '"more robust" does not say what it is compared with'
+    verdict: unjudged
+  - rule: name-variant
+    line: 2452
+    text: Github
+    message: '"Github" is written "GitHub" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2468
+    text: Apache HBase is an open-source, distribu
+    message: This paragraph runs 11 sentences (limit 5)
+    verdict: unjudged
+  - rule: name-variant
+    line: 2488
+    text: Hbase' instead of 'Apache HBase'. But we
+    message: '"Hbase" is written "HBase" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2488
+    text: Hbase' instead of 'Apache HBase'. But we
+    message: '"Hbase" here, where the document usually writes "HBase" (1 of 11)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 2489
+    text: Linkedin but there is no
+    message: '"Linkedin" is written "LinkedIn" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2489
+    text: Linkedin but there is no
+    message: '"Linkedin" here, where the document usually writes "LinkedIn" (1 of 4)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 2525
+    text: 8 emails sent to list(17 in the previous
+    message: '"8" here, where the document usually writes numbers below ten like "Two" (2 of 10)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 2536
+    text: quartar. We plan to make new 2.6.x and 2
+    message: '"quartar" is not in the dictionary; did you mean "quarter"?'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2556
+    text: "Current project status: Ongoing, with mo"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2584
+    text: There were no meetups during the past qu
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2610
+    text: There are no issues requiring board atte
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2628
+    text: The Attic discussion is a perfect exampl
+    message: This sentence runs 76 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2677
+    text: SPARQL query
+    message: '"SPARQL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2678
+    text: RDF community, . The
+    message: '"RDF" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2690
+    text: There is no significant change in the co
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2703
+    text: "Current project status: Ongoing, with lo"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2712
+    text: There are currently 13 committers and 8
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2737
+    text: ""
+    message: Section "Project Status:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2738
+    text: "Current project status: nothing happenin"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2755
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2768
+    text: JEE components (Java, servlets, JSP).
+    message: '"JEE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2768
+    text: JSP).
+    message: '"JSP" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2771
+    text: "Current project status: Ongoing, with lo"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2791
+    text: REST API. Or perhaps 2) and then later o
+    message: '"REST" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: calendar-name-case
+    line: 2799
+    text: december.
+    message: Write "december" as "December"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2869
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2872
+    text: There are some technical issues to
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2876
+    text: It is my personal expectation that the c
+    message: '"It is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2879
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2892
+    text: ""
+    message: Section "Project Status:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2902
+    text: PPMC. I will formalize the
+    message: '"PPMC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2920
+    text: ""
+    message: Section "Plan forward (proposal)" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2956
+    text: CD, websites, mailing lists)
+    message: '"CD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2981
+    text: DSL designed to let mathematicians, stat
+    message: '"DSL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 3004
+    text: “Introducing Qumat! (An Apache Mahout Jo
+    message: The quote mark “ here, where the document usually writes " (8 of 55)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3015
+    text: "Current project status: ongoing with hig"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3029
+    text: "Recent releases:"
+    message: This paragraph runs 38 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3033
+    text: JAR 3.2.0 was released on 2024-12-30.
+    message: '"JAR" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3052
+    text: PMD Plugin 3.26.0 was released on 2024-1
+    message: '"PMD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3057
+    text: JXR 3.6.0 was released on 2024-10-22.
+    message: '"JXR" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 3070
+    text: We're having discussions about Maven Cen
+    message: '"future plans" says the same thing twice'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 3077
+    text: descreasing emails on the mailing lists.
+    message: '"descreasing" is not in the dictionary; did you mean "decreasing"?'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3080
+    text: Github issues.
+    message: '"Github" here, where the document usually writes "GitHub" (5 of 42)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3084
+    text: github issues is the way the community w
+    message: '"github" here, where the document usually writes "GitHub" (5 of 42)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3148
+    text: SSHD 2.12.1 was released on 2024-02-14.
+    message: '"SSHD" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3154
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3204
+    text: Myfaces Tomahawk is in maintenance mode.
+    message: '"Myfaces" here, where the document usually writes "MyFaces" (2 of 15)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3212
+    text: CODI is in maintenance mode.
+    message: '"CODI" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3214
+    text: "  Last commit March 2014."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3224
+    text: Myfaces Core).
+    message: '"Myfaces" here, where the document usually writes "MyFaces" (2 of 15)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3231
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3237
+    text: There are both
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 3247
+    text: Apache NiFi Flow Design System is a them
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3251
+    text: ""
+    message: Section "Project Status:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3252
+    text: "Current project status: Ongoing. High."
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3268
+    text: "  It brings a host of important improvem"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: name-variant
+    line: 3271
+    text: Jython.  All of
+    message: '"Jython" is one letter away from "Python", which the document uses more than once'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 3281
+    text: JIRA and Mailing list activity remains c
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: unjudged
+  - rule: numeral-sentence-start
+    line: 3319
+    text: 1.20 was released on 2024-04-24.
+    message: The sentence opens with the numeral "1.20"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3350
+    text: SPDX headers)
+    message: '"SPDX" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3357
+    text: The community is active on the dev maili
+    message: This sentence runs 66 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3370
+    text: "JPA: Object Relational Mapping for Java"
+    message: '"JPA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3373
+    text: There are no issues requiring board atte
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3423
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3442
+    text: MR), JSR-365 (CDI-2.0) and
+    message: '"MR" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3445
+    text: OWB community also maintains a small ser
+    message: '"OWB" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3446
+    text: subproject. Meecrowave bundles latest re
+    message: '"subproject" here, where the document usually writes "sub-project" (1 of 5)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3450
+    text: There are no issues requiring board atte
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3483
+    text: There are no issues requiring board atte
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3519
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3530
+    text: ""
+    message: Section "Project Status:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3531
+    text: "Current project status: Ongoing"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3563
+    text: POC
+    message: '"POC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3574
+    text: ""
+    message: 'Section "Community Health: Healthy community. Regular discussions are held:" has no number, code or link (36 of 178 sections)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3575
+    text: github
+    message: '"github" here, where the document usually writes "GitHub" (5 of 42)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3608
+    text: there is a steady stream of contribution
+    message: '"there is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3641
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: name-variant
+    line: 3687
+    text: Ratis Thirdparty 1.0.6 respectively on 2
+    message: '"Ratis Thirdparty" is written "Ratis-Thirdparty" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3691
+    text: "  In this quarter, we have less email tr"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (13 of 286)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3723
+    text: There is no current activity in the proj
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3724
+    text: 'The project is in "dormant" state:'
+    message: This sentence runs 56 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3768
+    text: GA.
+    message: '"GA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 3768
+    text: subporject is moving forward to GA.
+    message: '"subporject" is not in the dictionary; did you mean "subproject"?'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3776
+    text: GH Discussion.
+    message: '"GH" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3790
+    text: MVC framework is a solution stack for cr
+    message: '"MVC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 3791
+    text: favours convention over
+    message: '"favours" here, where the document usually spells it "favors" (1 of 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3793
+    text: AJAX and JSON.
+    message: '"AJAX" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3821
+    text: POM and plugin upgrades (2024-04-06)
+    message: '"POM" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: date-without-year
+    line: 3830
+    text: December 12, the team released security
+    message: "\"December 12\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: date-without-year
+    line: 3838
+    text: December 20 [3]. Among other things
+    message: "\"December 20\" has no year, and the document's dates run from 1998 to 2025, so the year is unclear"
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3879
+    text: There are currently 36 committers and 27
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3886
+    text: ""
+    message: Section "Project Activity:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3888
+    text: GO lang, leading to the creation of a ne
+    message: '"GO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 3931
+    text: javax, making documentation more straigh
+    message: '"javax" is not in the dictionary; did you mean "javan"?'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3949
+    text: There were 24 commits last quarter on th
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3965
+    text: ""
+    message: Section "Description:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3967
+    text: TCL. Apache Tcl is home to the Tcl-Apach
+    message: '"TCL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3989
+    text: DBMS access abstraction
+    message: '"DBMS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3989
+    text: DIO, an Itcl based DBMS access abstracti
+    message: '"DIO" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3990
+    text: TDBC series of connectors (all
+    message: '"TDBC" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3991
+    text: There is a discussion whether
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3995
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4029
+    text: ""
+    message: Section "Community Health:" has no number, code or link (36 of 178 sections)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4031
+    text: Github). Steady flow of incoming contrib
+    message: '"Github" here, where the document usually writes "GitHub" (5 of 42)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4040
+    text: It allows a user to understand, and leve
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4042
+    text: MS Office, PDF, Text, Images, Video, Cod
+    message: '"MS" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4043
+    text: IANA and other standards bodies.
+    message: '"IANA" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4059
+    text: JRE 11) in October 2024, and started a 4
+    message: '"JRE" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4060
+    text: EOL for 2.x (JRE 8) in April 2025. We ha
+    message: '"EOL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4124
+    text: GQL to Gremlin transpiler, a
+    message: '"GQL" is used without an expansion (153 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4158
+    text: There are at least 3 PMC members can
+    message: '"There is ..." appears 28 times (limit 3)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 4158
+    text: "Current project status: Dormant. There a"
+    message: The first sentence repeats the heading "Project Status:"
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4176
+    text: comunity upgraded some interpreters with
+    message: '"comunity" is not in the dictionary; did you mean "community"?'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4180
+    text: compoenents, it will release 1.0.0.
+    message: '"compoenents" is not in the dictionary; did you mean "components"?'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 4189
+    text: January 15, 2025 board meeting.
+    message: The date "January 15, 2025" is written differently from 324 other dates in the document (such as "2024-06-19")
+    verdict: unjudged

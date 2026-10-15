@@ -142,11 +142,6 @@ findings:
     message: This sentence runs 51 words (limit 45)
     verdict: unjudged
   - rule: list-item-form-mix
-    line: 287
-    text: "Submitting organization:"
-    message: '"Submitting organization:" opens with a verb; the other items in this list open with a noun phrase (2 of 10)'
-    verdict: unjudged
-  - rule: list-item-form-mix
     line: 294
     text: Does the project include an internationa
     message: '"Does the project include an international component or an RET component?" opens with a verb; the other items in this list open with a noun phrase (2 of 10)'

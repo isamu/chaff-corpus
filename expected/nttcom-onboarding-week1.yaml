@@ -1,0 +1,93 @@
+id: nttcom-onboarding-week1
+chaff: 0.34.0
+findings:
+  - rule: concrete-evidence-density
+    line: 14
+    text: ""
+    message: 「状況」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 20
+    text: ""
+    message: 「解決策」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 22
+    text: 達成すべき組織目標は何なのか、その中でチームはどのような役割を担っているのか、そ
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 32
+    text: OKRを設定している場合、合わせて説明するのが効果的です。
+    message: 「OKR」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 36
+    text: ""
+    message: 「状況」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 38
+    text: （達成すべき成果）を理解できていない場合、業務を自律的に進めるのが困難になります
+    message: 丸括弧を、全角で 6 箇所、半角で 9 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: range-notation-consistency
+    line: 60
+    text: 4～5人に1人)でした。トレーナー・メンターが存在していたとしても、それだけで質
+    message: 範囲を「4～5」と書いています（この文書はふつう「1-3」のように書きます。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 60
+    text: NTT Comグループの新メンバーに入社4ヶ月後に実施したアンケート(N=222
+    message: 「NTT」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 64
+    text: 質問すること自体の心理的ハードルも下げるのも効果的ですが、トレーナー・メンター側
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 68
+    text: 高い頻度でポーリングして、困りごとの有無を確認するだけでなく、1on1形式で20
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 72
+    text: ""
+    message: 「状況」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 76
+    text: ""
+    message: 「解決策」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 88
+    text: ""
+    message: 「状況」の節に数値もコードもリンクもありません（そういう節が 6/12）
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 96
+    text: もし、オンボーディング時期の1ヶ月がチームとして繁忙期で、どうしてもイベントを実
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 123
+    text: の自分自身の学びや成長の機会
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 128
+    text: より早く理解できます。
+    message: 「より早く」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 132
+    text: " イノベーションセンターのデザイン部門であるKOELでは、 [mixin(ミキシ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。16 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 132
+    text: KOELでは、 [mixin(ミキシン)](https://note.com/k
+    message: 「KOEL」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged

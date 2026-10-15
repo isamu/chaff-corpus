@@ -1,0 +1,68 @@
+id: commonpaper-csa
+chaff: 0.34.0
+findings:
+  - rule: vague-deadline
+    line: 6
+    text: promptly notify <span class="coverpage_l
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    text: DPA</span>, each party will comply with
+    message: '"DPA" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    text: GDPR, <span class="coverpage_link">Custo
+    message: '"GDPR" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 22
+    text: GST, or withholding, that <span class="c
+    message: '"GST" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 22
+    text: VAT, GST, or withholding, that <span cla
+    message: '"VAT" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 36
+    text: return or destroy Discloser’s Confidenti
+    message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 55
+    text: "'s liability to the extent prohibited by"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 61)
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 63
+    text: promptly notifying the Indemnifying Part
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 64
+    text: pro-rated refund of prepaid Fees for the
+    message: '"pro-rated" here, where the document usually writes "prorated" (1 of 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 92
+    text: OFAC, or any other United States or fore
+    message: '"OFAC" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 93
+    text: DFAR section 227.7202, and the Documenta
+    message: '"DFAR" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 93
+    text: FAR section 12.212 and DFAR section 227.
+    message: '"FAR" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 120
+    text: "'s Office of Foreign Assets Control."
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 61)
+    verdict: unjudged

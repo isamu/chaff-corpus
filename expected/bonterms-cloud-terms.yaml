@@ -1,0 +1,53 @@
+id: bonterms-cloud-terms
+chaff: 0.34.0
+findings:
+  - rule: vague-deadline
+    line: 7
+    text: promptly notify Provider upon learning o
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 43
+    text: (“**Claim Period**”). These procedures a
+    message: '"Claim Period" is defined but never used'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 43
+    text: (“**Fix Period**”), then either party ma
+    message: '"Fix Period" is defined but never used'
+    verdict: unjudged
+  - rule: name-variant
+    line: 45
+    text: Third Party Platforms or misuse or unaut
+    message: '"Third Party Platforms" is written "Third-Party Platforms" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    text: GST, value-added, withholding or similar
+    message: '"GST" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 73
+    text: promptly restore Customer’s access to th
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 195
+    text: DFARS 227.7202. Use, reproduction, relea
+    message: '"DFARS" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 195
+    text: FAR 12.212 for and DFARS 227.7202. Use,
+    message: '"FAR" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 237
+    text: “**Personal Data**” means Customer Data
+    message: '"Personal Data" is defined but never used'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 245
+    text: (“**HIPAA**”), (b) credit, debit, bank a
+    message: '"HIPAA" is defined but never used'
+    verdict: unjudged

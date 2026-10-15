@@ -1,0 +1,8 @@
+id: cloudgov-changelog-2023-11-27
+chaff: 0.34.0
+findings:
+  - rule: unknown-word
+    line: 75
+    text: diego sync to not fetch every bit of eve
+    message: '"diego" is not in the dictionary; did you mean "dingo"?'
+    verdict: unjudged

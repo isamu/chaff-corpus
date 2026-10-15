@@ -1,0 +1,23 @@
+id: genai-web-api
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 444
+    text: Base64エンコードされた文字列です。
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。43 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 444
+    text: エンコードされた文字列です。
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。43 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 521
+    text: Base64エンコードされています。
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。43 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 521
+    text: エンコードされています。
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。43 箇所のうち 4 箇所が違う）
+    verdict: unjudged
