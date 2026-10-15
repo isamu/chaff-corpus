@@ -21,8 +21,8 @@ findings:
     line: 71
     text: 他の本もあります。
     message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
-    verdict: false-positive
-    note: a parenthetical aside inside a list item (（今はもう無い。）) read as a sentence of the list
+    verdict: correct
+    note: a real register mix in one list — plain 知る。/美味しい。 beside polite 他の本もあります。
   - rule: orthographic-variant
     line: 71
     text: 無い。）<br>[大坊珈琲の時間 | |本 | 通販 | Amazon](htt
