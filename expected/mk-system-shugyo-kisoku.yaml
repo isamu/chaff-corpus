@@ -1,0 +1,731 @@
+id: mk-system-shugyo-kisoku
+chaff: 0.34.0
+findings:
+  - rule: use-before-definition
+    line: 3
+    text: 会社エムケイシステム
+    message: 「会社」を、32 行目の定義より前で使っています
+    verdict: false-positive
+    note: 「会社」 inside the company name 株式会社エムケイシステム on the title line, before 第1条 defines 会社
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: 1節	勤務時間、休憩・休日、出張
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 10
+    text: 2節	休暇
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 11
+    text: 3節	休職、復職、定年及び退職
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: use-before-definition
+    line: 27
+    text: 規則は、会社と従業員が相互信頼の上に立ち、従業員の福祉の向上と社業の発展を目的と
+    message: 「規則」を、32 行目の定義より前で使っています
+    verdict: false-positive
+    note: the preamble's 「この規則」 names the document itself; 第1条 only abbreviates この就業規則 to 規則
+  - rule: orthographic-variant
+    line: 39
+    text: 全ての従業員に適用する。但し、契約社員、パートタイマー、嘱託及びアルバイト等就業
+    message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 49
+    text: 手続を行った者を従業員として採用する。
+    message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 52
+    text: ただし、会社が認めた場合は、書類の一部の提出を省略することがある。
+    message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 57
+    text: 見込）証明書
+    message: 「見込」と書いています（この文書はふつう「見込み」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 卒業（見込）証明書 is the name of a certificate
+  - rule: dangling-reference
+    line: 67
+    text: 第６条第２項に定める内定通知書の交付時には予想できなかった会社の経営環境の悪化、
+    message: 「第６条第２項」（番地 6.2）はこの文書にありません
+    verdict: false-positive
+    note: "第６条第２項 exists: its 「２．」 starts at column 0 after the ①–⑥ items, unlike the indented 「１．」"
+  - rule: max-paragraph-length
+    line: 70
+    text: 第８条（採用決定時の提出書類）
+    message: この段落は 13 文あります（12 文まで）
+    verdict: false-positive
+    note: an article whose items ①–⑨ are on consecutive lines (no blank line) counted as one 13-sentence paragraph
+  - rule: orthographic-variant
+    line: 75
+    text: またはロのいずれかを添付すること）
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 78
+    text: ただし、会社が認めた場合は原本提示することにより写しの提出を省略できる。
+    message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 78
+    text: 写しの提出を省略できる。
+    message: 「写し」と書いています（この文書はふつう「写」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 111
+    text: および扶養家族の個人番号について、第７項の事務手続を委託する税理士または社会保険
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。43 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 111
+    text: または社会保険労務士等に提供することができる。なお、委託先への個人番号の提供にあ
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 111
+    text: 手続を委託する税理士または社会保険労務士等に提供することができる。なお、委託先へ
+    message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: no-nakaguro-parallel
+    line: 119
+    text: ①　就業の場所、従事すべき業務
+    message: この文に中黒が 6 個あります（5 個まで）
+    verdict: false-positive
+    note: list items ①–④ on consecutive lines without 。 joined into one sentence; no single item has more than four 中黒
+  - rule: orthographic-variant
+    line: 154
+    text: 事がある。尚、事前に振り替えるべき日を特定して行うが、この場合でも休日日数は４週
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。99 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: hiragana-fukushi
+    line: 161
+    text: 但し、所属長が予め別段の指示をした場合はこの限りではない。
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: correct
+  - rule: orthographic-variant
+    line: 165
+    text: カ月単位の変形労働時間制を採用することがある。
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 166
+    text: (１ヵ月以内)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 166
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 178
+    text: カ月以上の期間ごとに区分する場合は、最初の期間における労働日その他所定の事項を明
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 191
+    text: 並びに深夜労働については所定の割増賃金を支給する。
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 208
+    text: カ月間はその期間の出勤率に基づき６ヵ月経過した日に年次有給休暇１０日を支給する。
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 211
+    text: かかわらず、週所定労働時間が３０時間未満で、週所定労働日数が４日以下又は年間所定
+    message: 「かかわる」と書いています（この文書はふつう「拘る」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 1 年6ｶ月	2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 5 年6ｶ月	6 年
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	1 年6ｶ月	2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	5 年6ｶ月	6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 217
+    text: 6ｶ月	6 年
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	1 年6ｶ月	2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	2 年6ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	3 年6ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	4 年6ｶ月	5 年6ｶ月	6 年
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	5 年6ｶ月	6 年
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 217
+    text: ｶ月	6 年
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年6ｶ月\t2 年6ｶ月\t3 年6ｶ月\t4 年6ｶ月\t5 年6ｶ月\t6 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年6ｶ月\t3 年6ｶ月\t4 年6ｶ月\t5 年6ｶ月\t6 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年6ｶ月\t4 年6ｶ月\t5 年6ｶ月\t6 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年6ｶ月\t5 年6ｶ月\t6 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 217
+    text: " 年6ｶ月\t6 年"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。55 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 218
+    text: 6ｶ月以上
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 218
+    text: ｶ月以上
+    message: 半角の片仮名「ｶ」があります（全角は「カ」）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 219
+    text: 7日	8日	9日	10日	12日	13日	15日
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 219
+    text: 8日	9日	10日	12日	13日	15日
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 219
+    text: 9日	10日	12日	13日	15日
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 220
+    text: 5日	6日	6日	8日	9日	10日	11日
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 220
+    text: 6日	6日	8日	9日	10日	11日
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 220
+    text: 6日	8日	9日	10日	11日
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 220
+    text: 8日	9日	10日	11日
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 220
+    text: 9日	10日	11日
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 3日	4日	4日	5日	6日	6日	7日
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 4日	4日	5日	6日	6日	7日
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 4日	5日	6日	6日	7日
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 5日	6日	6日	7日
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 6日	6日	7日
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 6日	7日
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 221
+    text: 7日
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 1日	2日	2日	2日	3日	3日	3日
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 2日	2日	2日	3日	3日	3日
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 2日	2日	3日	3日	3日
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 2日	3日	3日	3日
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 3日
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 3日	3日
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 3日	3日	3日
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 223
+    text: 4時間、午後休は所定就業終了時刻前4時間の勤務を出勤したものとして取り扱う。
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 223
+    text: 4時間の勤務を出勤したものとして取り扱う。
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 225
+    text: 申出の日に休暇を与えることが、事業の正常な運営に支障があるときは、その期日を変更
+    message: 「申出る」と書いています（この文書はふつう「申し出る」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the noun 申出 (申出の日) counted as a variant of the verb 申し出る
+  - rule: orthographic-variant
+    line: 227
+    text: うち５日を超える日数について、あらかじめ時期を指定して与えることが出来る。
+    message: 「うち」と書いています（この文書はふつう「内」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 238
+    text: 1人につき１年間で５日間、１年間で１０日を限度
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 241
+    text: 1人につき１年間で５日間、１年間で１０日を限度
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: no-nakaguro-parallel
+    line: 262
+    text: 第27条（適用除外）
+    message: この文に中黒が 6 個あります（5 個まで）
+    verdict: correct
+    note: the sentence is on L263; reported at the paragraph's first line (the article heading)
+  - rule: orthographic-variant
+    line: 272
+    text: カ月
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 273
+    text: カ月
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 274
+    text: カ月
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 275
+    text: カ月
+    message: 「カ月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 318
+    text: 又、業務に関係のない私物（携帯電話を含む）を持ちこまないこと。
+    message: 「又」と書いています（この文書はふつう「また」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 320
+    text: たり、職場の秩序を乱すような行為をしないこと。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: tari-unpaired
+    line: 326
+    text: たり、授受しないこと。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 327
+    text: 又、車輌事故、機械の損傷、その他の事故を隠さないこと。
+    message: 「又」と書いています（この文書はふつう「また」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 330
+    text: たり、掲示しようとする場合はあらかじめ会社の許可を受けること。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 331
+    text: 持って対応すること。その他会社の内外を問わず、会社の名誉、信用を傷つけるような言
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 337
+    text: 2年間にわたり下記の行為を行わないこと。但し、事前に会社の許可を受けた場合はこの
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 348
+    text: うえ退社するものとする。
+    message: 「うえ」と書いています（この文書はふつう「上」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 351
+    text: および外出）
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。43 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 352
+    text: または早退しようとする者は、事前に所属長へ届け出し、許可を得なければならない。事
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 352
+    text: 届け出し、許可を得なければならない。事前に届け出ることが不可能な場合は事後に届け
+    message: 「届け出」と書いています（この文書はふつう「届出」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 届け出る (届け出し) counted against the noun 届出; 公用文 writes the verb with okurigana and the noun without
+  - rule: orthographic-variant
+    line: 356
+    text: 届け出し、許可を得なければならない。
+    message: 「届け出」と書いています（この文書はふつう「届出」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 届け出る (届け出し) counted against the noun 届出
+  - rule: toki-as-condition
+    line: 357
+    text: 時は、始業時刻までに連絡し、事後直ちに理由を記入した勤怠届を提出する（この届出が
+    message: 条件を言うなら「時」は「とき」と書きます
+    verdict: correct
+  - rule: orthographic-variant
+    line: 365
+    text: ただし、本人からの請求により、会社が承認した場合にはこの限りではない。
+    message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 379
+    text: (わいせつ)な行為を行ったり、猥褻図画の配布掲示など職場の環境を悪くすること。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 379
+    text: )な行為を行ったり、猥褻図画の配布掲示など職場の環境を悪くすること。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 379
+    text: たり、猥褻図画の配布掲示など職場の環境を悪くすること。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: tari-unpaired
+    line: 381
+    text: たり、性的関係を強要すること。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: tari-unpaired
+    line: 402
+    text: だり、非常の事態に際して功労があったとき。
+    message: 「だり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 411
+    text: (いまし)める
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 411
+    text: (さと)し戒(いまし)める
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 411
+    text: )し戒(いまし)める
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 411
+    text: )める
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 413
+    text: (けん)　　責(せき)    始末書をとり将来を戒める
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 413
+    text: (せき)    始末書をとり将来を戒める
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 413
+    text: )    始末書をとり将来を戒める
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 413
+    text: )　　責(せき)    始末書をとり将来を戒める
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 414
+    text: 箇月の賃金総額の１０分の１の範囲で行う
+    message: 「箇月」と書いています（この文書はふつう「ヵ月」と書く語です。25 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 418
+    text: (たいしょく)    諭旨に基づき退職願いを提出させるが、これに応じないときは解
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 418
+    text: (ゆし)退職(たいしょく)    諭旨に基づき退職願いを提出させるが、これに応じ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 418
+    text: )    諭旨に基づき退職願いを提出させるが、これに応じないときは解雇とする
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 418
+    text: )退職(たいしょく)    諭旨に基づき退職願いを提出させるが、これに応じないと
+    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 424
+    text: 或いは素行不良で会社の秩序又は風紀を乱したとき。
+    message: 「或いは」と書いています（この文書はふつう「あるいは」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: stray-space
+    line: 430
+    text: 　る不都合な行為があったとき。
+    message: 「準ず」と「る」は一続きの語句ですが、あいだに空白があります（2789 箇所のうち 2 箇所が空いている）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 431
+    text: または特定個人情報ファイルを含む）を外部に漏えいし、または私的に利用したとき（未
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 431
+    text: または私的に利用したとき（未遂の場合を含む、なお、会社に損害を与えたり、もしくは
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 432
+    text: または別に定める「特定個人情報取扱規程」に違反する行為があったとき（未遂の場合を
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 445
+    text: または特定個人情報ファイルを含む）を外部に漏えいし、または私的に利用して、会社に
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 445
+    text: または私的に利用して、会社に損害を与えたとき、もしくは業務の正常な運営を阻害した
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 445
+    text: または過失により、第35条に定める会社の業務上重要な秘密情報（社員、その扶養家族
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 449
+    text: ただし、損害賠償を行ったことによって懲戒を免れることはできない。
+    message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: toki-as-condition
+    line: 449
+    text: 時は、懲戒若しくは懲戒解雇処分とするほか、損害賠償を求めることがある。ただし、損
+    message: 条件を言うなら「時」は「とき」と書きます
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 451
+    text: 8章　解　雇
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 486
+    text: 9章　安全衛生
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: stray-space
+    line: 504
+    text: 　　は、労働基準法に基づいて会社が平均賃金の６０％以上の休業補償を行う。
+    message: 「について」と「は」は一続きの語句ですが、あいだに空白があります（2789 箇所のうち 2 箇所が空いている）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 511
+    text: かかわらず機会均等に教育訓練の場を与えることとする。但し、必要に応じて年齢・職位
+    message: 「かかわる」と書いています（この文書はふつう「拘る」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: numbering-gap
+    line: 513
+    text: 第59条（目的）
+    message: 「第57条」の次が「第59条」です（58 番目のはず）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 517
+    text: または講習を受講させることがある。
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 520
+    text: 5条乃至6条に定めるところにより
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 520
+    text: 6条に定めるところにより
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。186 箇所のうち 48 箇所が違う）
+    verdict: correct
+  - rule: duplicate-definition
+    line: 550
+    text: 「会社」とは、派遣元事業所のみならず派遣先事業所も含めるも
+    message: 「会社」は 32 行目でも定義されています
+    verdict: correct
+    note: 「会社」 redefined for the 派遣 section with a different scope
+  - rule: connective-hierarchy
+    line: 553
+    text: 若しくは休日労働として賃金を支給する。
+    message: 「若しくは」の文に、段の組になる語がありません（一段なら「又は」）
+    verdict: correct
+  - rule: ime-residue
+    line: 556
+    text: eラーニングに必要とされる時間数に見合った手当の支給を行うこととする。
+    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
+    verdict: false-positive
+    note: eラーニング is a standard loanword, not an unconverted letter
+  - rule: ime-residue
+    line: 556
+    text: eラーニングの活用等により、教育訓練を行う場合がある。会社の事業所外で行う教育訓
+    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
+    verdict: false-positive
+    note: eラーニング is a standard loanword, not an unconverted letter
+  - rule: orthographic-variant
+    line: 556
+    text: またはeラーニングに必要とされる時間数に見合った手当の支給を行うこととする。
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 556
+    text: またはeラーニングの活用等により、教育訓練を行う場合がある。会社の事業所外で行う
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 573
+    text: 1日から実施する。
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。186 箇所のうち 48 箇所が違う）
+    verdict: correct

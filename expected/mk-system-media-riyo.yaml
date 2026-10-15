@@ -1,0 +1,8 @@
+id: mk-system-media-riyo
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 2
+    text: "### 第1条 目的"
+    message: 見出し「第1条 目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
