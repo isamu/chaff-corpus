@@ -1,0 +1,113 @@
+id: govuk-vat-notice-700-63-electronic-invoicing
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    text: VAT invoices in an electronic format.
+    message: '"VAT" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: VAT is never expanded in UK tax guidance; a household acronym
+  - rule: undefined-acronym
+    line: 9
+    text: HM Revenue & Customs
+    message: '"HM" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: "'HM' in the department name HM Revenue & Customs is part of a proper name, not an acronym to expand"
+  - rule: list-item-form-mix
+    line: 58
+    text: decreased reliance on paper reducing sto
+    message: '"decreased reliance on paper reducing storage and handling costs" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: false-positive
+    note: "'decreased' is a participle used as an adjective (decreased reliance), read as a verb"
+  - rule: undefined-acronym
+    line: 77
+    text: HMRC that you’re intending to issue elec
+    message: '"HMRC" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: HMRC's expansion, HM Revenue & Customs, is the publisher line at the top, not written as 'HM Revenue & Customs (HMRC)'
+  - rule: which-that-consistency
+    line: 144
+    text: that are common to the individual invoic
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 146
+    text: For example, instead of repeating the fu
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 175
+    text: You are free to choose a method of ensur
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: wordy-phrase
+    line: 193
+    text: created by means of a secure signature c
+    message: '"by means of" can be said in fewer words'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 199
+    text: EC provides a model EDI interchange agre
+    message: '"EC" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: EC is the suffix of an EU instrument's citation (Commission Recommendation 94/820/EC), not an acronym in running text
+  - rule: wordy-phrase
+    line: 228
+    text: In order to use a supporting document to
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 275
+    text: EANCOM and ODETTE
+    message: '"EANCOM" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 275
+    text: ODETTE
+    message: '"ODETTE" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 288
+    text: FTP.
+    message: '"FTP" is used without an expansion (7 such acronyms)'
+    verdict: correct
+  - rule: wordy-phrase
+    line: 300
+    text: In order to establish the authenticity a
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 306
+    text: " - for example, margin scheme invoices"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: wordy-phrase
+    line: 382
+    text: In order to assure electronic systems, H
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 444
+    text: "## Your rights and obligations"
+    message: The heading "Your rights and obligations" has no number, while 9 of its siblings do ("1. Overview")
+    verdict: false-positive
+    note: HMRC's standard back-matter sections after the numbered body are unnumbered by design
+  - rule: heading-numbering-mix
+    line: 448
+    text: "## Help us improve this notice"
+    message: The heading "Help us improve this notice" has no number, while 9 of its siblings do ("1. Overview")
+    verdict: false-positive
+    note: HMRC's standard back-matter sections after the numbered body are unnumbered by design
+  - rule: heading-numbering-mix
+    line: 456
+    text: "## Putting things right"
+    message: The heading "Putting things right" has no number, while 9 of its siblings do ("1. Overview")
+    verdict: false-positive
+    note: HMRC's standard back-matter sections after the numbered body are unnumbered by design
+  - rule: heading-numbering-mix
+    line: 462
+    text: "## How HMRC uses your information"
+    message: The heading "How HMRC uses your information" has no number, while 9 of its siblings do ("1. Overview")
+    verdict: false-positive
+    note: HMRC's standard back-matter sections after the numbered body are unnumbered by design
