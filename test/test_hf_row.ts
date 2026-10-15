@@ -129,6 +129,7 @@ describe("edinetBenchMarkdown", () => {
     }),
     bs: JSON.stringify({ 流動資産: { Prior1Year: "100", CurrentYear: "120" }, "その他|注": { CurrentYear: "－" } }),
     pl: "",
+    summary: JSON.stringify({ 自己資本比率: { Prior1Year: "0.577", CurrentYear: "0.605" } }),
   };
 
   it("gives the sections in order, older periods first, leaving out omitted and empty ones, then the tables", () => {
@@ -140,6 +141,8 @@ describe("edinetBenchMarkdown", () => {
         "## 連結貸借対照表",
         "前期の表",
         "当期の表",
+        "## 主要な経営指標等の推移",
+        "| 科目 | 前期 | 当期 |\n| --- | ---: | ---: |\n| 自己資本比率 | 0.577 | 0.605 |",
         "## 貸借対照表（単位：円）",
         "| 科目 | 前期 | 当期 |\n| --- | ---: | ---: |\n| 流動資産 | 100 | 120 |\n| その他\\|注 |  | － |",
       ].join("\n\n") + "\n",

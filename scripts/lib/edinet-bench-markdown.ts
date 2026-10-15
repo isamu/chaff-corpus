@@ -14,11 +14,12 @@ const PERIODS: readonly (readonly [string, string])[] = [
   ["FilingDate", "提出日"],
 ];
 
+/** The summary mixes amounts, ratios and head counts; the statements hold amounts in yen only. */
 const TABLES: readonly (readonly [string, string])[] = [
   ["summary", "主要な経営指標等の推移"],
-  ["bs", "貸借対照表"],
-  ["pl", "損益計算書"],
-  ["cf", "キャッシュ・フロー計算書"],
+  ["bs", "貸借対照表（単位：円）"],
+  ["pl", "損益計算書（単位：円）"],
+  ["cf", "キャッシュ・フロー計算書（単位：円）"],
 ];
 
 type Nested = Readonly<Record<string, Readonly<Record<string, string>>>>;
@@ -65,7 +66,7 @@ const tableMarkdown = (heading: string, items: Nested): string[] => {
   const rows = Object.entries(items).map(([item, values]) => `| ${[item, ...periods.map(([period]) => values[period] ?? "")].map(cell).join(" | ")} |`);
   const head = `| 科目 | ${periods.map(([, label]) => label).join(" | ")} |`;
   const rule = `| --- | ${periods.map(() => "---:").join(" | ")} |`;
-  return [`## ${heading}（単位：円）`, [head, rule, ...rows].join("\n")];
+  return [`## ${heading}`, [head, rule, ...rows].join("\n")];
 };
 
 const titleOf = (record: UnknownRecord): string => {
