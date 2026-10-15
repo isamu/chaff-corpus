@@ -1,0 +1,360 @@
+id: gitlab-jd-backend-engineer
+chaff: 0.34.0
+findings:
+  - rule: heading-echo
+    line: 10
+    text: Backend Engineers at GitLab work on our
+    message: The first sentence repeats the heading "Backend Engineering Roles at GitLab"
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 21
+    text: largely asynchronous work environment
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 37
+    text: ""
+    message: Section "Nice-to-haves" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 67
+    text: At GitLab, due to the pace we're moving,
+    message: "\"we're\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 78
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 92
+    text: MR Review Time (OMRT)](/handbook/enginee
+    message: '"MR" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 145
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: comparative-without-baseline
+    line: 152
+    text: faster
+    message: '"faster" does not say what it is compared with'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 174
+    text: ""
+    message: Section "Distribution:Build" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 180
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: undefined-acronym
+    line: 183
+    text: RHEL based systems
+    message: '"RHEL" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 189
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: undefined-acronym
+    line: 192
+    text: CVE patches
+    message: '"CVE" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 197
+    text: Build and own the infrastructure used fo
+    message: '"Build and own the infrastructure used for creating the various installation methods" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 200
+    text: ""
+    message: Section "Distribution:Deploy" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 209
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: concrete-evidence-density
+    line: 217
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: list-item-form-mix
+    line: 224
+    text: Secure configuration & communication
+    message: '"Secure configuration & communication" opens with a verb; the other items in this list open with a noun phrase (1 of 4)'
+    verdict: false-positive
+    note: "'Secure' is an adjective here (secure configuration), read as a verb"
+  - rule: undefined-acronym
+    line: 235
+    text: APT and similar. Additionally, the Packa
+    message: '"APT" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 238
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: concrete-evidence-density
+    line: 249
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: false-positive
+    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
+  - rule: undefined-acronym
+    line: 253
+    text: OSI network model and common network pro
+    message: '"OSI" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 254
+    text: AWS/GCP/Azure).
+    message: '"AWS" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 254
+    text: GCP/Azure).
+    message: '"GCP" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 263
+    text: Develop security components from proposa
+    message: '"end result" says the same thing twice'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 266
+    text: ""
+    message: Section "Secure" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: heading-echo
+    line: 268
+    text: Focus on security features for GitLab. T
+    message: The first sentence repeats the heading "Secure"
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 270
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 278
+    text: Develop security tools from proposal to
+    message: '"end result" says the same thing twice'
+    verdict: correct
+  - rule: list-item-form-mix
+    line: 282
+    text: Key aspects of this role are focused on
+    message: '"Key aspects of this role are focused on security tools and features." opens with a noun phrase; the other items in this list open with a verb (2 of 6)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 283
+    text: The complexity of this role will increas
+    message: '"The complexity of this role will increase over time." opens with a noun phrase; the other items in this list open with a verb (2 of 6)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 290
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 297
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 300
+    text: PM team to execute on the roadmap.
+    message: '"PM" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 313
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 375
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 390
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 396
+    text: ""
+    message: Section "Application Performance" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 400
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 410
+    text: Partner with the Quality team to maintai
+    message: |-
+      "Partner with the Quality team to maintain effective performance reporting and
+        monitoring through instrumentation and testing." opens with a noun phrase; the other items in this list open with a verb (1 of 4)
+    verdict: false-positive
+    note: an imperative verb that is also a noun (Partner, Scope, Instrument) is read as a noun phrase
+  - rule: undefined-acronym
+    line: 426
+    text: OOP languages (e.g. Python, C++, Java, C
+    message: '"OOP" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 427
+    text: OR proficient in one or more of the foll
+    message: '"OR" is used without an expansion (13 such acronyms)'
+    verdict: false-positive
+    note: "'OR' in 'AND/OR' is a capitalised conjunction, not an acronym"
+  - rule: undefined-acronym
+    line: 429
+    text: DB principles and optimization mechanism
+    message: '"DB" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 430
+    text: " - For reference and apply with due dili"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: list-item-form-mix
+    line: 434
+    text: Tuning up performance from architecture/
+    message: '"Tuning up performance from architecture/design perspective." opens with a verb; the other items in this list open with a noun phrase (2 of 6)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 436
+    text: Optimizing full stack implementation, e.
+    message: '"Optimizing full stack implementation, e.g." opens with a verb; the other items in this list open with a noun phrase (2 of 6)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 452
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 454
+    text: REST and/or GraphQL APIs using a variety
+    message: '"REST" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 466
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 469
+    text: RPC interfaces for the Gitaly service.
+    message: '"RPC" is used without an expansion (13 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 470
+    text: Scope, estimate and describe tasks to re
+    message: "\"Scope, estimate and describe tasks to reach the team's goals.\" opens with a noun phrase; the other items in this list open with a verb (2 of 6)"
+    verdict: false-positive
+    note: an imperative verb that is also a noun (Partner, Scope, Instrument) is read as a noun phrase
+  - rule: list-item-form-mix
+    line: 472
+    text: Instrument, monitor and profile Gitaly i
+    message: '"Instrument, monitor and profile Gitaly in the production environment." opens with a noun phrase; the other items in this list open with a verb (2 of 6)'
+    verdict: false-positive
+    note: an imperative verb that is also a noun (Partner, Scope, Instrument) is read as a noun phrase
+  - rule: spelling-consistency
+    line: 479
+    text: optimising software in large-scale, high
+    message: '"optimising" here, where the document usually spells it "optimizing" (4 of 23)'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 494
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 497
+    text: opensource community with GitLab.
+    message: '"opensource" here, where the document usually writes "open-source" (1 of 3)'
+    verdict: correct
+  - rule: list-item-form-mix
+    line: 498
+    text: Scope, estimate and describe tasks to re
+    message: "\"Scope, estimate and describe tasks to reach the team's goals.\" opens with a noun phrase; the other items in this list open with a verb (1 of 6)"
+    verdict: false-positive
+    note: an imperative verb that is also a noun (Partner, Scope, Instrument) is read as a noun phrase
+  - rule: spelling-consistency
+    line: 512
+    text: optimising software in large-scale, high
+    message: '"optimising" here, where the document usually spells it "optimizing" (4 of 23)'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 525
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 537
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: name-variant
+    line: 539
+    text: Golang experience required
+    message: '"Golang" is written "GoLang" elsewhere in the document (case, width or punctuation)'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 545
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 573
+    text: optimising GitLab.com
+    message: '"optimising" here, where the document usually spells it "optimizing" (4 of 23)'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 583
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 596
+    text: optimisation mechanisms.
+    message: '"optimisation" here, where the document usually spells it "optimization" (4 of 23)'
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 600
+    text: "  They are experienced Ruby/GoLang devel"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 36)
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 602
+    text: ""
+    message: Section "Requirements" has no number, code or link (28 of 52 sections)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 604
+    text: " - modeling, processing, nodes and index"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: concrete-evidence-density
+    line: 609
+    text: ""
+    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
+    verdict: unjudged

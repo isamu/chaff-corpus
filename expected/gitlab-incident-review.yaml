@@ -1,0 +1,87 @@
+id: gitlab-incident-review
+chaff: 0.34.0
+findings:
+  - rule: bare-url-mix
+    line: 20
+    text: https://app.incident.io/gitlab/settings/
+    message: The URL "https://app.incident.io/gitlab/settings/post-mortem" is written bare (17 worded links in this document)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 24
+    text: DRI** who drives it to completion, and t
+    message: '"DRI" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 24
+    text: RCA, corrective actions, and incident de
+    message: '"RCA" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 38
+    text: " - there are no exceptions. The Engineer"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: undefined-acronym
+    line: 38
+    text: EM ultimately owns the review and is res
+    message: '"EM" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 46
+    text: Engage people that were involved in the
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 46
+    text: CMOC, other engineers and stakeholders)
+    message: '"CMOC" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 46
+    text: EOC, IMOC, CMOC, other engineers and sta
+    message: '"EOC" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 46
+    text: IMOC, CMOC, other engineers and stakehol
+    message: '"IMOC" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 64
+    text: SLO. That is the responsibility of the D
+    message: '"SLO" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 108
+    text: " - the same person or team that owns the"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: undefined-acronym
+    line: 110
+    text: RED data, customer identifying informati
+    message: '"RED" is used without an expansion (9 such acronyms)'
+    verdict: false-positive
+    note: RED is a data-classification level written in capitals (a colour label), not an acronym
+  - rule: unknown-word
+    line: 114
+    text: comms approvals before release to the cu
+    message: '"comms" is not in the dictionary; did you mean "comes"?'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: Where Operational Excellence reviews a s
+    message: This sentence runs 42 words (limit 40)
+    verdict: correct
+  - rule: footnote-mismatch
+    line: 141
+    text: "[^1]: Google SRE Chapter 15 - Postmortem"
+    message: Nothing in the text points to the note "[^1]"
+    verdict: false-positive
+    note: the reference [^1] is on line 5 inside a blockquote ('> … recurrence.[^1]'); a footnote reference in a blockquote is not seen
+  - rule: undefined-acronym
+    line: 141
+    text: "SRE Chapter 15 - Postmortem Culture: Lea"
+    message: '"SRE" is used without an expansion (9 such acronyms)'
+    verdict: unjudged

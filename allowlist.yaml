@@ -271,3 +271,12 @@
 - id: govuk-vat-notice-700-63-electronic-invoicing
   match: "customerexperience.indirecttaxes@hmrc.gov.uk"
   reason: a government office's role address, published in the notice for feedback on it
+- id: gitlab-acceptable-use-policy
+  match: "panic@gitlab.com"
+  reason: a company's role address for reporting lost devices, published in the policy for every team member to use
+- id: gitlab-travel-expense-policy
+  match: "payroll@savvy-group.eu"
+  reason: a payroll provider's role address, published in the policy for team members to send claims to
+- id: gitlab-travel-expense-policy
+  match: "AP@gitlab.com"
+  reason: a company's accounts-payable role address, published in the policy
