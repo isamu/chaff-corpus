@@ -1,0 +1,15 @@
+id: cuad-inmode-manufacturing
+title: "Turn-Key Manufacturing Agreement (InMode, EX-10.9)"
+language: en
+genre: legal/contract
+format: text
+source:
+  url: https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_txt/Part_I/InmodeLtd_20190729_F-1A_EX-10.9_11743243_EX-10.9_Manufacturing%20Agreement.txt
+  fetched: 2026-10-15
+license:
+  name: CC-BY-4.0
+  url: https://huggingface.co/datasets/theatticusproject/cuad
+  note: "From CUAD v1 (Contract Understanding Atticus Dataset) by The Atticus Project, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The contract is an exhibit filed with the U.S. SEC on EDGAR. Text unchanged from the dataset."
+redistribute: true
+sha256: 93e278dfb01b1994b76f58b0c46d679979030e7ed3149e212ecc502b50ac7c10
+notes: "Text extracted from the filed PDF/HTML by the dataset authors: lines are broken or run together, page headers and numbers appear in the text, and confidential terms are redacted as [***] or [ * * * ]. Findings caused by these extraction artefacts are not chaff's fault. Signatories named are company officers signing in an official capacity."

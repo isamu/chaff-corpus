@@ -1,0 +1,98 @@
+id: govuk-charge-reclaim-record-vat
+chaff: 0.34.0
+findings:
+  - rule: hyphen-as-dash
+    line: 16
+    text: " - invoices must include your VAT number"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 17
+    text: " - a summary of your VAT"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: number-style-consistency
+    line: 22
+    text: 3 rates of VAT (standard, reduced and ze
+    message: '"3" here, where the document usually writes numbers below ten like "two" (1 of 3)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 36
+    text: mobility aids if they’re for someone ove
+    message: "\"they're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: contraction-consistency
+    line: 42
+    text: You charge zero rate on goods and servic
+    message: "\"they're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: hyphen-as-dash
+    line: 50
+    text: " - you can check if the VAT number is va"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: contraction-consistency
+    line: 64
+    text: You’re selling a chair for £60 and need
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: contraction-consistency
+    line: 74
+    text: You’re selling a child’s car seat for £2
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: fact-conflict
+    line: 78
+    text: £210.
+    message: '"The price including VAT" is £210 here, but £72 earlier in the same section'
+    verdict: false-positive
+    note: two separate worked examples in one section (a chair at 20%, a car seat at 5%) are read as one fact stated twice
+  - rule: fact-conflict
+    line: 100
+    text: £460. The amount you can claim back is t
+    message: '"The price excluding VAT" is £460 here, but £150 earlier in the same section'
+    verdict: false-positive
+    note: two separate worked examples in one section (a chair at 20%, a car seat at 5%) are read as one fact stated twice
+  - rule: contraction-consistency
+    line: 108
+    text: Follow these steps if you're moving good
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: numbering-gap
+    line: 119
+    text: "### 3     Get your business ready to exp"
+    message: '"3" follows "1" (expected number 2)'
+    verdict: false-positive
+    note: a GOV.UK step-by-step navigation labels a parallel step 'and' instead of 2; the converted step list is read as a numbered sequence with a gap
+  - rule: contraction-consistency
+    line: 142
+    text: You must find the right commodity code t
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: contraction-consistency
+    line: 150
+    text: If you're not selling the goods, use the
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: contraction-consistency
+    line: 150
+    text: When filling in the value of your goods
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority
+  - rule: contraction-consistency
+    line: 166
+    text: If you're VAT registered, record the goo
+    message: "\"you're\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose; the finding points at you’re (7) though you are (4) is the minority

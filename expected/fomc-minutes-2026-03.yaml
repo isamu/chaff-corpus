@@ -1,0 +1,121 @@
+id: fomc-minutes-2026-03
+chaff: 0.34.0
+findings:
+  - rule: max-paragraph-length
+    line: 19
+    text: The manager then turned to policy rate e
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 23
+    text: more stable. There were also notable inc
+    message: '"more stable" does not say what it is compared with'
+    verdict: false-positive
+    note: "the baseline is in the same sentence: other sectors were more stable than software firms' leveraged loan prices, which 'declined sharply'"
+  - rule: max-paragraph-length
+    line: 23
+    text: Broad equity prices fell about 5 percent
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: With elevated energy prices causing glob
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 27
+    text: The manager observed that money market c
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The manager saw this development, togeth
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 29
+    text: Finally, the manager discussed the expec
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 37
+    text: Total consumer price inflation—as measur
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: Real GDP growth was solid last year, alt
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 49
+    text: Over the intermeeting period, the market
+    message: '"the federal funds rate" appears 13 times (limit 5)'
+    verdict: false-positive
+    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
+  - rule: max-paragraph-length
+    line: 61
+    text: The credit performance of corporate bond
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 79
+    text: Participants anticipated that, under app
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: Most participants judged that the recent
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: Several other participants, however, hig
+    message: This sentence runs 56 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 83
+    text: With respect to the outlook for the labo
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: Many participants cited evidence from bu
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: They pointed to the possibility that a f
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 89
+    text: In their consideration of monetary polic
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 91
+    text: Some participants judged that there was
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 93
+    text: In discussing risk-management considerat
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 93
+    text: In particular, most participants raised
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 93
+    text: With upside risks to inflation and downs
+    message: This sentence runs 68 words (limit 45)
+    verdict: correct
+  - rule: name-variant
+    line: 271
+    text: Walker,2 Senior Associate Director, Divi
+    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
+    verdict: false-positive
+    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt

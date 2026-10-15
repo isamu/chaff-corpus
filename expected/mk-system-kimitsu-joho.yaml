@@ -1,0 +1,23 @@
+id: mk-system-kimitsu-joho
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 2
+    text: "### 第1条 目的"
+    message: 見出し「第1条 目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
+  - rule: vague-word-density
+    line: 12
+    text: 管理責任者を置き、管理責任者の指示により、外部からのサーバ侵入等への適切な対策を
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+  - rule: vague-word-density
+    line: 30
+    text: 機密情報の扱いに関しては、適切なセキュリティ対策を講じること。
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+  - rule: numbering-gap
+    line: 35
+    text: "### 第6条 罰則"
+    message: 「第6条」の次が「第6条」です（7 番目のはず）
+    verdict: correct

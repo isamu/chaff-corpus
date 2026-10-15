@@ -1,0 +1,135 @@
+id: jstage-jniph-74-2-119-wbgt
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 27
+    sha256: 34a7c1ab1a0f779b706c83bf53008c2791620173ffcac3130f834f87cb0d64bb
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 31
+    sha256: ff917a2e542c6a9593fd1857f0ea30720286febfce032a1788c1a41e0282d9b3
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 35
+    sha256: ff917a2e542c6a9593fd1857f0ea30720286febfce032a1788c1a41e0282d9b3
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 39
+    sha256: c75b150063084cda185f2b470985af5449bdb36c8267ed131825b23c2a3238d9
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 43
+    sha256: ff917a2e542c6a9593fd1857f0ea30720286febfce032a1788c1a41e0282d9b3
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 49
+    sha256: 5416dfbdab080a92e6e074ea9b85e31ead4c7d1ea8be6d9e8ed40b1f166abf8c
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 51
+    sha256: 0e2abe2af6a6266429fdcbb71d0ebd21b0adf32e609744eb32f1c24af0944d05
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 51
+    sha256: 6cce367da858cdf5d4e453062947d2cf20a9c79564697db6dbe875bd98096048
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 51
+    sha256: 70a44002f6619cbb7b901f938788e3a03b0ba7eae6b06e8081142d7d84ade982
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 57
+    sha256: 3a215b0f337cad0f855a1bba0deffa7ba34a806f5e8b118f9b5fa6cac3266603
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 57
+    sha256: 686c828fba5cba86ccb28e1473b15c2ac706950b276d6875663ad0125aae8650
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 57
+    sha256: a6cce4087b4853dc39d1241cb29383aae756ef23c2efa5d652f8bd1cc794d45e
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 61
+    sha256: 1dcd28a8abb4e731a1e93303d1fb6f0332202572bb41052d66af7ecd3effe4a2
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 63
+    sha256: ba5ec51d07a4ac0e951608704431d59a02b21a4e951acc10505a8dc407c501ee
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 63
+    sha256: 096a2064c0c656122fa75a79d1189b94598b5f393c1fb89eb5c0f68865a29a65
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 63
+    sha256: 6a8db9c02588c5e7bf38cf09810aa3629e5c03aafb91f886cee6c43e9142d05e
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 63
+    sha256: b09c665a82fdba517697a07c2faa6210155ecaab5d218b7c36ef925c79f44083
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 67
+    sha256: ba5ec51d07a4ac0e951608704431d59a02b21a4e951acc10505a8dc407c501ee
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 67
+    sha256: ea25bd8d7bf66a8ba43ee82e60df5778fdfb451462f78a86150ec53319b99c25
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 77
+    sha256: 64dc02a41dea838f69a3c21510bf3c1857176ffb88cf7a16a578de966d833001
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 77
+    sha256: 6857d337880e4c8f83abf0d67178338c30084b848f01601523cf29005b0f7b01
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 77
+    sha256: 002cec7d2a612c338c6cc45e4467c41b4677c5b4940a37b21da8299445b4067a
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 77
+    sha256: 7c11e1720fbb98a385d2e94fff1bb3ecf4349320b87924347a2ca38f6e0c3d3f
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 77
+    sha256: a7b789a1bc7481ca0af7555cff386924ad1cc3f2a9b8e85c4179608f581cbbe9
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 77
+    sha256: 7c11e1720fbb98a385d2e94fff1bb3ecf4349320b87924347a2ca38f6e0c3d3f
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 77
+    sha256: 1eedcb71d8a3c914b2f1b16645da0a931eb61c1a4f06c2424b03e4156970c97c
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 77
+    sha256: a7b789a1bc7481ca0af7555cff386924ad1cc3f2a9b8e85c4179608f581cbbe9
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    sha256: 7c11e1720fbb98a385d2e94fff1bb3ecf4349320b87924347a2ca38f6e0c3d3f
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 81
+    sha256: 55d13cc7292679009b6888945108f582348141cc33693c2a63a3631bd1ba427a
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 105
+    sha256: af56087a10763c44d2aa508eb1d99b1d2e64445e2715d541156bd7b70ab97ef9
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 137
+    sha256: fc3cd9655c6acb74c22ce0871c9414a5b596d6820aee5c5f801b56f53236d558
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 139
+    sha256: 7436fb82e86e431cd7f16c758ae36cc8bcb854cb9cd75f388ed3fe14887c3de9
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 155
+    sha256: bbb765c4f25b17578e7c92242feb786eef12b3a0c3ccc88686c82357be0778d5
+    verdict: unjudged

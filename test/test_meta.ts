@@ -49,6 +49,22 @@ describe("parseMeta", () => {
     });
   });
 
+  it("accepts a source.hf record address and keeps it", () => {
+    const hf = { dataset: "numad/yuho-text-2024", config: "default", split: "train", offset: 3, field: "text", revision: "2993206922ead839ce003e2faa65cd5d2ff07607", file: "yuho-202401.jsonl" };
+    const parsed = parseMeta({ ...valid(), source: { url: "https://huggingface.co/datasets/numad/yuho-text-2024", fetched: "2026-10-15", hf } }, PLACE, GENRES, TEXT);
+    assert.ok("value" in parsed);
+    assert.deepEqual(parsed.value.source.hf, hf);
+  });
+
+  it("rejects a source.hf that is incomplete, and one beside a source.format", () => {
+    const source = { url: "https://huggingface.co/datasets/numad/yuho-text-2024", fetched: "2026-10-15" };
+    assert.deepEqual(problemsOf({ ...valid(), source: { ...source, hf: { dataset: "numad/yuho-text-2024", config: "default", split: "train", offset: 3, field: "text", revision: "main" } } }, TEXT), [
+      "source.hf.revision must be the dataset's 40-digit commit sha",
+    ]);
+    assert.deepEqual(problemsOf({ ...valid(), source: { ...source, hf: [] } }, TEXT), ["source.hf must be a mapping (dataset, config, split, offset, field, revision)"]);
+    assert.deepEqual(problemsOf({ ...valid(), source: { ...source, format: "html", hf: {} } }, TEXT), ["source.format and source.hf cannot both be set (source.hf.render renders a record)"]);
+  });
+
   it("accepts license unknown without a url, for a person to establish", () => {
     assert.deepEqual(problemsOf({ ...valid(), license: { name: "unknown" } }, TEXT), []);
   });

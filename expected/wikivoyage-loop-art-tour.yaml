@@ -1,0 +1,47 @@
+id: wikivoyage-loop-art-tour
+chaff: 0.34.0
+findings:
+  - rule: max-paragraph-length
+    line: 11
+    sha256: 34200278de1b23d563d76633585ebbfb190b65ad7c67443077d357539f8ad566
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 11
+    sha256: dd9a93fa482d966bcb67e8f7ca0b582daffc1740eb06680bd00ac66a5fbf6010
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 13
+    sha256: 43f4b22a4cf5260c1d0c1cb30fa8445653874354ae008128dc1573e41f4b892a
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 17
+    sha256: 3ffc630cb941c93c28d1ca5ec66e80f3a000a91393731ccdf58e72eb836de835
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    sha256: 3ffc630cb941c93c28d1ca5ec66e80f3a000a91393731ccdf58e72eb836de835
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 29
+    sha256: 8fcc456c05f117aef3365e0312f382627b0f68d16ec3375ba3f206f061e8a2cd
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 33
+    sha256: fede7bff4d070b3dbc5c475afd4f99cce228611a853fb16658f9c5b1304a8454
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 35
+    sha256: c596db6b865d3560b12556a5f905d5ab534b7729de21c3a59f00a51117fca72a
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 57
+    sha256: 5b655eb0d96eef6b1f2fbea1a714b9378a50cf5c21bf1cfb255424a957909eed
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 65
+    sha256: 1a17a27a28d087a3bdf0dbea43fac3c3a7eca3a217b05f1b477257e36841db7b
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 75
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged

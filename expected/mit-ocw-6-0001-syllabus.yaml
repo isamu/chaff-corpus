@@ -1,0 +1,15 @@
+id: mit-ocw-6-0001-syllabus
+chaff: 0.34.0
+findings:
+  - rule: number-style-consistency
+    line: 3
+    sha256: f52a161de5de3a5988370aeb99c5ba0659d930f8583605603c6c1983d9ff274a
+    verdict: unjudged
+  - rule: latin-abbreviation-form
+    line: 47
+    sha256: 935092654fb1f14524e3409cce6205f74a2adfed34815826f0311f7736301c6b
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 47
+    sha256: d7b840f25fb8faab375e9f85a1c55772ba9e7b80eabe980eb00f8619ac9a5a5a
+    verdict: unjudged

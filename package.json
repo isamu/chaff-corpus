@@ -12,7 +12,8 @@
     "typecheck": "tsc -p tsconfig.json",
     "test": "node --test 'test/test_*.ts'",
     "validate": "node scripts/validate.ts",
-    "run-corpus": "node scripts/run.ts"
+    "run-corpus": "node scripts/run.ts",
+    "judge": "node scripts/judge.ts"
   },
   "dependencies": {
     "chaffjs": "0.34.0",

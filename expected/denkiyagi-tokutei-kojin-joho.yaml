@@ -1,0 +1,104 @@
+id: denkiyagi-tokutei-kojin-joho
+chaff: 0.34.0
+findings:
+  - rule: orthographic-variant
+    line: 7
+    text: 取扱い方法及び会社の役員や会社に使用されている従業員（以下「従業員等」という。派
+    message: 「取扱い」と書いています（この文書はふつう「取扱」と書く語です。16 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 18
+    text: または本規程に基づき選任された、特定個人情報を管理し、事務取扱担当者を監督する責
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。20 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 20
+    text: または本規程に基づき選任された、個人番号関係事務及び特定個人情報の事務に携わる従
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。20 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 42
+    text: 並びに個人番号関係事務の実施に関すること。
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 85
+    text: および従業員等は、特定個人情報について次に掲げる事項を遵守しなければならない。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 115
+    text: 事とする。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 118
+    text: および通知カードを現認するのみで足り、複写の保管は要しない。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 124
+    text: または、変更があった場合、会社に対し訂正を申し出る事ができる。会社は、直ちにこれ
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。20 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 124
+    text: 事ができる。会社は、直ちにこれを訂正するものとする。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 128
+    text: およびデータ等については、保存期間が経過した日の属する事業年度の末日までに廃棄お
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 128
+    text: および削除を実施すれば足る。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 129
+    text: および削除は、個人番号部分のみに対して行う事が出来る。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 129
+    text: 事が出来る。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 129
+    text: 出来る。
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。14 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 130
+    text: および削除は、当該個人番号が復元できないように行わなければならない。個人番号部分
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 130
+    text: および削除も同様とする。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 145
+    text: および従業員等は、情報漏えい等の事案の発生又は兆候を把握した場合は、直ちに特定個
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。26 箇所のうち 8 箇所が違う）
+    verdict: correct
+  - rule: numbering-gap
+    line: 150
+    text: 3. 漏えいした個人情報が個人番号を含むものであるときは、特定個人情報保護委員会
+    message: 「3.」の次が「3.」です（4 番目のはず）
+    verdict: correct
+    note: sub-item 3 is followed by a second sub-item 3
+  - rule: orthographic-variant
+    line: 162
+    text: または社内規程に違反し、情報漏えい等を招いた従業員等に対し、会社が受けた損害に基
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。20 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: yori-as-from
+    line: 179
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

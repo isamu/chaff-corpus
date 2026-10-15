@@ -1,0 +1,25 @@
+id: mediprime-zaitaku-kinmu
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### 第1条　目的"
+    message: 見出し「第1条　目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
+  - rule: dangling-reference
+    line: 34
+    text: 第25条 所定労働時間を満たない場合は、満たなかった時間を労働したものとみなす。
+    message: 「第25条」（番地 25）はこの文書にありません
+    verdict: false-positive
+    note: 「就業規則 第25条」 cites another regulation by name; not an article of this document
+  - rule: dangling-reference
+    line: 38
+    text: 第44条 賃金・賞与の定めるところによる。
+    message: 「第44条」（番地 44）はこの文書にありません
+    verdict: false-positive
+    note: 「就業規則 第44条」 cites another regulation by name; not an article of this document
+  - rule: yori-as-from
+    line: 46
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

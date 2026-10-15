@@ -1,0 +1,28 @@
+id: 18f-handbook-paid-parental-leave
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: TTS has paid parental leave (PPL) for th
+    message: '"TTS" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 12
+    text: You need to have been a federal employee
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 16
+    text: GSA implements PPL via [Family and Medic
+    message: '"GSA" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 28
+    text: HR Specialist](https://docs.google.com/d
+    message: '"HR" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 66
+    text: Your Workforce Relations HR Specialist c
+    message: '"in order to" can be said in fewer words'
+    verdict: correct

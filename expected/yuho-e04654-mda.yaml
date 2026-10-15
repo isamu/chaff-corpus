@@ -1,0 +1,217 @@
+id: yuho-e04654-mda
+chaff: 0.34.0
+findings:
+  - rule: bracket-nesting
+    line: 1
+    text: (2）キャッシュ・フローの状況当期末における現金及び現金同等物（以下「資金」とい
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
+  - rule: bracket-nesting
+    line: 1
+    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
+  - rule: bracket-width-consistency
+    line: 1
+    text: (前期比2,300千円増)となりました。これは主に税引前当期純利益の計上及び減価
+    message: 括弧を「(」と書いています（この文書はふつう「（」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (前期比90,628千円増)となりました。これは有形固定資産の取得によるものであ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (同101.6％)、営業損失は4,082千円（前期は営業損失3,887千円）とな
+    message: 括弧を「(」と書いています（この文書はふつう「（」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )、営業利益は0円（前期と同額）となりました。②財政状態（流動資産）当期末におけ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )、営業損失は4,082千円（前期は営業損失3,887千円）となりました。索道事
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )となりました。これは主に税引前当期純利益の計上及び減価償却費が93,459千円
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )となりました。これは有形固定資産の取得によるものであります。(3）販売の実績当
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )経営者の視点による経営成績等の状況に関する分析・検討内容（経営成績）賃貸事業に
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )重要な会計上の見積り及び当該見積りに用いた仮定当社の財務諸表は、わが国において
+    message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: １日至令和５年10月31日）前年同期比（％）賃貸事業（千円）281,70099.
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ２事業年度の主な相手先別の販売実績及び総販売実績に対する割合は次のとおりでありま
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ３年11月1日至令和４年10月31日）第64期（自令和４年11月1日至令和５年1
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４年10月31日）第64期（自令和４年11月1日至令和５年10月31日）金額（千
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４年11月１日至令和５年10月31日）前年同期比（％）賃貸事業（千円）281,7
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４年11月1日至令和５年10月31日）金額（千円）割合（％）金額（千円）割合（％
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４月以降荘川高原カントリー倶楽部のスキー場賃貸料を減額したことによります。分譲地
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ５年10月31日）前年同期比（％）賃貸事業（千円）281,70099.6分譲地関
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ５年10月31日）金額（千円）割合（％）金額（千円）割合（％）三好カントリー倶楽
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ５番ホールのコース改修工事、東17番ホールのカート道新設工事等を実施いたしました
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ５番修繕工事が発生したことにより、前期より増加しました。その結果、セグメント利益
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ５類移行により社会経済活動の正常化が進み、景気は緩やかに回復してまいりました。一
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。43 箇所のうち 13 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: この段落は 30 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: (2）キャッシュ・フローの状況当期末における現金及び現金同等物（以下「資金」とい
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: (3）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セ
+    message: この文は 388 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: この文は 913 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
+    message: この文は 199 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 一文に読点が 16 個あります（6 個まで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: max-ten
+    line: 1
+    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: ngram-repetition
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 「）となりました。」が 6 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 「〜なりました」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: (3）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セ
+    message: 「は」で出した主題から述語まで 196 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    message: 「は」で出した主題から述語まで 848 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
+    message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: )、営業利益は0円（前期と同額）となりました。②財政状態（流動資産）当期末におけ
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）キャッシュ・フローの状況当期末における現金及び現金同等物（以下「資金」という。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）財務諸表注記事項（重要な会計方針）」に記載のとおりであります。なお、財務諸表の
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）財政状態及び経営成績の状況当期における我が国経済は、新型コロナウイルス感染症の
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セグメ
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged

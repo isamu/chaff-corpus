@@ -1,0 +1,15 @@
+id: maud-traton-navistar
+title: "Agreement and Plan of Merger: Navistar International, TRATON and Dusk (2020)"
+language: en
+genre: legal/contract
+format: text
+source:
+  url: https://huggingface.co/datasets/theatticusproject/maud/resolve/37d5c3b95d18dcd8404cc5ce3fd5069be062392f/MAUD_v1/contracts/contract_97.txt
+  fetched: 2026-10-15
+license:
+  name: CC-BY-4.0
+  url: https://huggingface.co/datasets/theatticusproject/maud
+  note: "From MAUD v1 (Merger Agreement Understanding Dataset) by The Atticus Project, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The agreement is an exhibit filed with the U.S. SEC on EDGAR. Text unchanged from the dataset."
+redistribute: false
+sha256: 6ae4dd91ec4c475164737af3d50d0f9f31cd7bef1e0f0f97cd82cc6f36945c39
+notes: "Text extracted from the filed HTML/PDF by the dataset authors: lines run together, headings are spaced out, the table of contents and page numbers appear in the text. Findings caused by these extraction artefacts are not chaff's fault. The notices clause names counsel and officers with their e-mail addresses and phone numbers, so the text is not committed (redistribute: false) although the licence allows it."

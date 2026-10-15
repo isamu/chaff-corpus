@@ -1,0 +1,105 @@
+id: mediprime-shugyo-kisoku
+chaff: 0.34.0
+findings:
+  - rule: orthographic-variant
+    line: 23
+    text: および従業員は、本規則及びその他諸規程を遵守し、その義務を履行し、互いに協力して
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。44 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 40
+    text: たり、就業環境を悪くすると判断されることを行ってはならないこと
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 45
+    text: および布教活動を行わないこと
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。44 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 139
+    text: ヶ月を試用期間とする。
+    message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。17 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 156
+    text: ヶ月以上雇用される有期労働契約の従業員で、本人が希望する場合には、正社員に転換さ
+    message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。17 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 182
+    text: 事がある。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。103 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 183
+    text: 事がある。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。103 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 208
+    text: 毎に会社に状況報告を行わなければならない。
+    message: 「毎」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 258
+    text: ヶ月を超えない者
+    message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。17 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 259
+    text: ヶ月以内の期間を定めて雇用した者
+    message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。17 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 299
+    text: 届け出をし、承認を得なければならない。
+    message: 「届け出」と書いています（この文書はふつう「届出」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: the noun 届け出 where the document writes the noun 届出
+  - rule: orthographic-variant
+    line: 330
+    text: および時間外労働時間数についての許可を得なければならない。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。44 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 453
+    text: １年を経過しない女性従業員から、所定労働時間内に、母子保健法に基づく保健指導又は
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: １割を超えることはない。
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: １回の額が平均賃金の１日分の５割を超えることはなく、又、総額が１賃金支払期におけ
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: １日分の５割を超えることはなく、又、総額が１賃金支払期における賃金総額の１割を超
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: １賃金支払期における賃金総額の１割を超えることはない。
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: ５割を超えることはなく、又、総額が１賃金支払期における賃金総額の１割を超えること
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。124 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: toki-as-condition
+    line: 538
+    text: 時は、労働基準法第20条に規程する予告手当は支給しない。但し、平素の勤務態度その
+    message: 条件を言うなら「時」は「とき」と書きます
+    verdict: correct
+  - rule: yori-as-from
+    line: 616
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+    note: the next line writes から改定施行

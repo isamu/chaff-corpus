@@ -1,0 +1,393 @@
+id: cuad-gpaq-license
+chaff: 0.34.0
+findings:
+  - rule: dangling-reference
+    line: 1
+    text: Section 4.5, HOFV; each a "Party" and co
+    message: '"Section 4.5" (address 4.5) is not in this document'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 1
+    text: December 11, 2018, as amended of even da
+    message: The date "December 11, 2018" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1
+    text: " - (i) the Chief Executive Officer of HO"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: HOF Village Media Group, LLC (the "Villa
+    message: '"HOF" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1
+    text: Chief Executive Officer of the Village M
+    message: '"Chief Executive Officer" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1
+    text: Closing (as defined in the Merger Agreem
+    message: '"Closing" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1
+    text: Executive Director of the HOF Media Comp
+    message: '"Executive Director" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 1
+    text: Pro Football Hall of Fame ("PFHOF"), HOF
+    message: '"Pro Football Hall of Fame" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 1
+    text: Village Media Group, LLC (the "Village M
+    message: '"Village" is used here, before it is defined on line 1'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 9
+    text: September 16, 2019, by and among GPAQ Ac
+    message: The date "September 16, 2019" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: GPAQ Acquisition Holdings, Inc., a Delaw
+    message: '"GPAQ" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: IVOD, pay per view, OTT, theatrical prof
+    message: '"IVOD" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: OTT, theatrical professional/non-profess
+    message: '"OTT" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: SVOD, IVOD, pay per view, OTT, theatrica
+    message: '"SVOD" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 9
+    text: '"Person" means an individual, corporatio'
+    message: '"Person" is defined but never used'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 9
+    text: Youth Sports Management, LLC; HOF Villag
+    message: '"Youth Sports" is used here, before it is defined on line 89'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 19
+    text: Section 2.3; provided that the length of
+    message: '"Section 2.3" (address 2.3) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 19
+    text: Section 2.3. 2.2 In addition to any righ
+    message: '"Section 2.3" (address 2.3) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 19
+    text: Section 2.5 and (ii) the Village Media C
+    message: '"Section 2.5" (address 2.5) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 19
+    text: Sections 2.3, 2.4, 2.6 and 5 below), PFH
+    message: '"Sections 2.3" (address 2.3) is not in this document'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 19
+    text: Exploited by the Village Media Company,
+    message: '"Exploited" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 29
+    text: June 25, 2013 among NFL Enterprises LLC,
+    message: The date "June 25, 2013" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 29
+    text: 2.4 The Village Media Company shall have
+    message: '"2.4" follows "1.2" (expected number 3)'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 29
+    text: and/or licensors of PFHOF Works that may
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 29
+    text: Pro Football Hall of Fame Enterprisers (
+    message: '"Pro Football Hall of Fame Enterprisers" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 29
+    text: designee. Notwithstanding the foregoing,
+    message: '"designee" is not in the dictionary; did you mean "designed"?'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 29
+    text: Annual Guarantee for the calendar year i
+    message: '"Annual Guarantee" is used here, before it is defined on line 79'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 29
+    text: NFL Enterprises LLC, PFHOF and PFHOF Ens
+    message: '"NFL" is used here, before it is defined on line 69'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 29
+    text: NFLN Agreement") (any and all such restr
+    message: '"NFLN" is used here, before it is defined on line 145'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 39
+    text: 2.7 PFHOF agrees not to grant licenses t
+    message: This paragraph runs 14 sentences (limit 8)
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 39
+    text: 2.7 PFHOF agrees not to grant licenses t
+    message: '"2.7" follows "2.4" (expected number 5)'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 39
+    text: License Fee (as defined below) for such
+    message: '"License Fee" is used here, before it is defined on line 89'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 39
+    text: promptly communicate such offer, includi
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 39
+    text: promptly notify the Village Media Compan
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 49
+    text: 2.10 PFHOF represents and warrants to th
+    message: '"2.10" follows "2.7" (expected number 8)'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 49
+    text: ) or (f) any failure of the Village Medi
+    message: '")" closes nothing that was opened'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 59
+    text: Section 3.5, nothing in this Agreement s
+    message: '"Section 3.5" (address 3.5) is not in this document'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 59
+    text: 2.14 Except for Section 3.5, nothing in
+    message: This paragraph runs 11 sentences (limit 8)
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 59
+    text: 2.14 Except for Section 3.5, nothing in
+    message: '"2.14" follows "2.10" (expected number 11)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 59
+    text: Manager of the Village Media Company. 3.
+    message: '"Manager" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 69
+    text: December 31, 2034 (such period, includin
+    message: The date "December 31, 2034" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    text: 3.4 The Advisory Board shall meet regula
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 69
+    text: 3.4 The Advisory Board shall meet regula
+    message: '"3.4" follows "2.14" (expected number 15)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 69
+    text: National Football League (the "NFL"), it
+    message: '"National Football League" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 79
+    text: Section 2.6, the Village Media Company s
+    message: '"Section 2.6" (address 2.6) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 79
+    text: Section 4, the rights and obligations of
+    message: '"Section 4" (address 4) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 79
+    text: Section 4.2. 4.6 Notwithstanding anythin
+    message: '"Section 4.2" (address 4.2) is not in this document'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 79
+    text: Section 5.1 and such failure is not cure
+    message: '"Section 5.1" (address 5.1) is not in this document'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 79
+    text: September 16, 2019 between PFHOF and HOF
+    message: The date "September 16, 2019" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 79
+    text: 4.4 In addition to and without limiting
+    message: '"4.4" follows "3.4" (expected number 5)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 79
+    text: FEES 5.1 Subject to Section 2.6, the Vil
+    message: '"FEES" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 79
+    text: Closing Date during the Term.
+    message: '"Closing Date" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 89
+    text: license agreement to be entered into on
+    message: '"License Agreement" is defined with a capital on line 79, but written in lower case here'
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 89
+    text: 5.2 In consideration of any license gran
+    message: '"5.2" follows "4.4" (expected number 5)'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 99
+    text: return to the Disclosing Party (or at th
+    message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 109
+    text: Section 7.1 on its part shall result in
+    message: '"Section 7.1" (address 7.1) is not in this document'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 109
+    text: (e) Each Party acknowledges that a breac
+    message: This paragraph runs 16 sentences (limit 8)
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 109
+    text: (e) Each Party acknowledges that a breac
+    message: '"(e)" follows "(b)" (expected number 3)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 109
+    text: Canton, Ohio, and shall be before a pane
+    message: '"Canton" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 109
+    text: telecopy or facsimile transmission upon
+    message: '"telecopy" is not in the dictionary; did you mean "telescopy"?'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 119
+    text: (c) In any action, suit, proceeding, cla
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 119
+    text: (c) In any action, suit, proceeding, cla
+    message: '"(c)" follows "(e)" (expected number 6)'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 119
+    text: but not limited to, the reasonable costs
+    message: '"but not limited to" in a requirement does not say what else it covers'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 129
+    text: Section 4.5) and the Village Media Compa
+    message: '"Section 4.5" (address 4.5) is not in this document'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 129
+    text: NW Canton, Ohio 44708 HOF VILLAGE MEDIA
+    message: '"NW" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 137
+    text: "Section 4.5: HOF VILLAGE, LLC By: Name:"
+    message: '"Section 4.5" (address 4.5) is not in this document'
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 145
+    text: September 1st 2021 (and any extension, r
+    message: The date "September 1st 2021" is written differently from 17 other dates in the document (such as "1/23/2020")
+    verdict: unjudged
+  - rule: quantity-range-reversed
+    line: 145
+    text: 2019 - 2 hours co-copyright NFLN PFHOF)
+    message: The range "2019 - 2 hours" ends below where it starts
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 145
+    text: etc.). 4. Any content or properties util
+    message: '"etc." in a requirement does not say what else it covers'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 145
+    text: Door (Trademarked sold to social media c
+    message: '"Door" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 145
+    text: Enshrinement Ceremony or the Enshrinemen
+    message: '"Enshrinement Ceremony" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 145
+    text: Enshrinement Selection Process For the a
+    message: '"Enshrinement Selection Process For" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 145
+    text: Five One Hour Gold Jacket Contender Show
+    message: '"Five One Hour Gold Jacket Contender Shows" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 145
+    text: Gold Jacket Show one hour (2019 - 2 hour
+    message: '"Gold Jacket Show" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 155
+    text: EA Sports (or its successor) with respec
+    message: '"EA" is used without an expansion (8 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 155
+    text: Greatness · Inspiration Project · The Mi
+    message: '"Greatness" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 155
+    text: Hall · Super Bowl Luncheon · Salute to G
+    message: '"Hall" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 155
+    text: Hall of Famer 9. Any licenses or sponsor
+    message: '"Hall of Famer" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged

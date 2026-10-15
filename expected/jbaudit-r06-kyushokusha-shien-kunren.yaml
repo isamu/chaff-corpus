@@ -1,0 +1,157 @@
+id: jbaudit-r06-kyushokusha-shien-kunren
+chaff: 0.34.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# 求職者支援制度における職業訓練の認定が適正でなかったため、雇用保険の認定職業"
+    message: 題「求職者支援制度における職業訓練の認定が適正でなかったため、雇用保険の認定職業訓練実施奨励金の支給が適正でなかったもの［厚生労働本省、2労働局、独立行政法人高齢・障害・求職者雇用支援機構］(83)」は 98 文字あります（50 文字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 17
+    text: 認定職業訓練実施奨励金の支給額の合計
+    message: 「認定職業訓練実施奨励金」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a subsidy (認定職業訓練実施奨励金), defined by statute; it cannot be split
+  - rule: max-sentence-length
+    line: 29
+    text: 求職者支援制度は、雇用保険で行う事業のうち能力開発事業の一環として、「職業訓練の
+    message: この文は 226 文字あります（140 文字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 29
+    text: 求職者支援制度は、雇用保険で行う事業のうち能力開発事業の一環として、「職業訓練の
+    message: 「は」で出した主題から述語まで 176 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: 求職者支援法によれば、厚生労働大臣は、職業訓練を行う者（以下「訓練実施機関」とい
+    message: この文は 187 文字あります（140 文字まで）
+    verdict: correct
+  - rule: nominalization
+    line: 35
+    text: 訓練を行う者（以下「訓練実施機関」という。）の申請に基づき、訓練実施機関が行う職
+    message: 「訓練を行う」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: false-positive
+    note: 職業訓練を行う者 is the statute's own wording, quoted as it defines 訓練実施機関
+  - rule: topic-predicate-distance
+    line: 35
+    text: 求職者支援法によれば、厚生労働大臣は、職業訓練を行う者（以下「訓練実施機関」とい
+    message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 37
+    text: また、厚生労働大臣は、職業訓練の認定に関する事務を独立行政法人高齢・障害・求職者
+    message: この文は 248 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 37
+    text: また、厚生労働大臣は、職業訓練の認定に関する事務を独立行政法人高齢・障害・求職者
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 37
+    text: また、厚生労働大臣は、職業訓練の認定に関する事務を独立行政法人高齢・障害・求職者
+    message: 「は」で出した主題から述語まで 166 字あります（80 字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 41
+    text: そして、認定職業訓練実施奨励金支給要領（平成23年職発0930第18号、能発09
+    message: 「認定職業訓練実施奨励金支給要領」は漢字が 15 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official title of a ministry 要領 cited with its number (proper noun)
+  - rule: max-kanji-continuous
+    line: 41
+    text: 求職者支援法等によれば、国は、認定職業訓練が円滑かつ効果的に行われることを奨励す
+    message: 「認定職業訓練実施奨励金」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a subsidy (認定職業訓練実施奨励金), defined by statute; it cannot be split
+  - rule: nominalization
+    line: 41
+    text: 訓練を行う訓練実施機関に対して、認定職業訓練実施奨励金（以下「奨励金」という。）
+    message: 「訓練を行う」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 41
+    text: 求職者支援法等によれば、国は、認定職業訓練が円滑かつ効果的に行われることを奨励す
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 53
+    text: 本院は、合規性等の観点から、職業訓練の認定が適正に行われ、奨励金が適正に支給され
+    message: この文は 236 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 53
+    text: 本院は、合規性等の観点から、職業訓練の認定が適正に行われ、奨励金が適正に支給され
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: correct
+  - rule: nominalization
+    line: 53
+    text: 審査を行い、令和元年度から6年度までの間に奨励金が支給された4,323認定職業訓
+    message: 「審査を行う」は「審査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: nominalization
+    line: 53
+    text: 検査を行った。
+    message: 「検査を行う」は「検査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 53
+    text: 本院は、合規性等の観点から、職業訓練の認定が適正に行われ、奨励金が適正に支給され
+    message: 「は」で出した主題から述語まで 231 字あります（80 字まで）
+    verdict: correct
+  - rule: nominalization
+    line: 55
+    text: 検査を行い、適正でないと思われる事態があった場合には、更に機構及び厚生労働省に調
+    message: 「検査を行う」は「検査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 61
+    text: 訓練実施機関Aは、平成31年4月から令和6年9月までの間に東京都内又は大阪府内で
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: correct
+  - rule: nominalization
+    line: 61
+    text: 認定を行い、認定通知書を訓練実施機関Aに送付していた。そして、訓練実施機関Aは、
+    message: 「認定を行う」は「認定する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 61
+    text: 訓練実施機関Aは、平成31年4月から令和6年9月までの間に東京都内又は大阪府内で
+    message: 「〜いた」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: sentence-initial-conjunction-run
+    line: 61
+    text: また、機構の東京、大阪両支部は職業訓練認定申請書等を審査し、審査結果を機構本部に
+    message: 接続詞で始まる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 61
+    text: そして、訓練実施機関Aは、195認定職業訓練について、東京労働局又は大阪労働局に
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 61
+    text: また、機構の東京、大阪両支部は職業訓練認定申請書等を審査し、審査結果を機構本部に
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 61
+    text: 訓練実施機関Aは、平成31年4月から令和6年9月までの間に東京都内又は大阪府内で
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 63
+    text: しかし、講師の実際の経歴を確認したところ、訓練実施機関Aは、上記の講師115名の
+    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
+    verdict: correct
+  - rule: nominalization
+    line: 67
+    text: 認定を行っていたことなどによると認められる。
+    message: 「認定を行う」は「認定する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 67
+    text: このような事態が生じていたのは、訓練実施機関Aが誠実でなかったため、経歴確認書等
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: correct

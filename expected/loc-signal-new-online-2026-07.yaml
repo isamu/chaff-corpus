@@ -1,0 +1,43 @@
+id: loc-signal-new-online-2026-07
+chaff: 0.34.0
+findings:
+  - rule: quote-style-consistency
+    line: 1
+    sha256: 40746ecf8ea3145c64449aae77ff56d7cb6304209e6c53f58ddb3de122653c29
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 3
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 9
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 11
+    sha256: 0633572e44efe772444711b6f086b20472ca05a1036b7f46a10ed3585e526b6f
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    sha256: 96f53d4ec3370fa14fc7aee481affb91b12a6613549d890dd54f9647f92f6ab4
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    sha256: 20fd89cf15cbaf5b85d9fe7692bd40537ccc794624ca0a25d8ff59e6231f5c4d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    sha256: 48ed130a83d106e35734b8ca3431269bff06cfc34a35e92ac7db05c3da8aee9b
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 35
+    sha256: 5cf83f82a6104ebdf40901450fdd252c674253764774deabc77648008dd9e6a6
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    sha256: 7bf4b0ddea35d9d71c592f15f8bb02f74252573f22904fd688d9c1bc207c21ab
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 89
+    sha256: a251087c2bb95c8db4a04aaf2a2712ec1855ddcff1c1e5592ada36df62ea9679
+    verdict: unjudged

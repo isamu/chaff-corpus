@@ -1,0 +1,55 @@
+id: dailymed-advil-otc-label
+chaff: 0.34.0
+findings:
+  - rule: title-case-consistency
+    line: 13
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 19
+    sha256: 21c3a945395154a823b5a4aad82e7192b87c0b81e3003695340751e97db74f5c
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 48
+    sha256: 15badf76b3540c704e26e08df14309088bf3354f985709ba3c2f5883a767ee12
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 62
+    sha256: 996db02b1f2d107197c2120dbbc8b62c07c4ffc8ad9d94a197eddd96ce9979c9
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 104
+    sha256: 34f9ef88099d47d4ca25b63d85c085f2777c21d04dede791f6dc214238f53125
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 106
+    sha256: bfaa5886090652a5eea365982c7d70028c72dbf034ba0772ba58ce4c43969561
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 107
+    sha256: d7d5dcc369426e2e5f8dcb89af4308b0daed6e55910d53395ce38bd6dd1a9456
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 107
+    sha256: 438bcbbdd596522071751c5724e0d992fab1ba94f41630f48e5ca45e9ee807a5
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 114
+    sha256: 1c9594a508588fcd1f80fd862e1eb39a7b111215e4dba8cd84e2c4ebf436c19a
+    verdict: unjudged
+  - rule: missing-space-after-comma
+    line: 122
+    sha256: 0bc257c0e08cdce8d4e8d1160213c0faf6680fdf89b8748bb497b45351c42ce1
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 129
+    sha256: 87e29169707c669cde636984c46ea6a6437f0f449eb88f70f7ae93817950a1b0
+    verdict: unjudged
+  - rule: unknown-word
+    line: 144
+    sha256: 9c28b72e24e65f5b3b31c586986b52288ee0b5692df4764c54e6a0c75cc92b98
+    verdict: unjudged
+  - rule: article-sound
+    line: 228
+    sha256: 4ed9abfb972f7a86cfcd2d9ce1ed3fc639971c91dbd16e046df0a78e12dbb0cb
+    verdict: unjudged

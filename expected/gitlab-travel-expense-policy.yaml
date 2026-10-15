@@ -1,0 +1,420 @@
+id: gitlab-travel-expense-policy
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 27
+    text: AP team if they haven't approved your ex
+    message: '"AP" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: currency-notation-consistency
+    line: 53
+    text: 50 USD.  Receipts must contain vendor na
+    message: '"50 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: space-before-punctuation
+    line: 59
+    text: " , we ask for you to enter details of th"
+    message: A space before ","
+    verdict: correct
+  - rule: latin-abbreviation-form
+    line: 61
+    text: eg. Field Marketing), but the increase r
+    message: '"eg." has some of its periods but not all'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 61
+    text: VP or higher in the Accounting Organizat
+    message: '"VP" is used without an expansion (15 such acronyms)'
+    verdict: unjudged
+  - rule: latin-abbreviation-form
+    line: 63
+    text: eg. Although you paid for a year upfront
+    message: '"eg." has some of its periods but not all'
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 69
+    text: "  Please request this monthly by submitt"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 117)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 69
+    text: FX rates from Netsuite on the day this e
+    message: '"FX" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 69
+    text: PEO's, as you are aware with Navan, the
+    message: '"PEO" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: space-before-punctuation
+    line: 77
+    text: " , and adding any other additional docum"
+    message: A space before ","
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 83
+    text: " - any travel for internal meetings or e"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 84
+    text: " - any travel for meetings or events whe"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 85
+    text: " - any travel for meetings or events whe"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 86
+    text: " - these will be visible in the trip pur"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 98
+    text: " - air, hotel, car or rail (where applic"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: heading-numbering-mix
+    line: 103
+    text: "### 4.1 TRAVEL RELATED EXPENSES"
+    message: The heading "4.1 TRAVEL RELATED EXPENSES" is numbered, while 9 of its siblings are not ("Car Rental")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: hyphen-as-dash
+    line: 175
+    text: " - Collision Damage Waiver**"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 183
+    text: " - Collision Damage Waiver"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 194
+    text: " - the same way the company handles flig"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 199
+    text: " - approval required by Manager and AP A"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: currency-notation-consistency
+    line: 200
+    text: 300 USD (or equivalent local currency) i
+    message: '"300 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: currency-notation-consistency
+    line: 201
+    text: 300 USD limit is really not applicable t
+    message: '"300 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: quote-style-consistency
+    line: 201
+    text: ” which calculates a fair market price f
+    message: The quote mark ” here, where the document usually writes " (2 of 46)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 201
+    text: “Dynamic Policy” which calculates a fair
+    message: The quote mark “ here, where the document usually writes " (2 of 46)
+    verdict: correct
+  - rule: currency-notation-consistency
+    line: 204
+    text: 300USD/night and in the event it is over
+    message: '"300USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: undefined-acronym
+    line: 217
+    text: AIRBNB platform. Same restrictions in am
+    message: '"AIRBNB" is used without an expansion (15 such acronyms)'
+    verdict: false-positive
+    note: AIRBNB is a brand name written in capitals, not an acronym
+  - rule: currency-notation-consistency
+    line: 231
+    text: 120 USD (or local equivalent currency) p
+    message: '"120 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: sentence-spacing-consistency
+    line: 272
+    text: "  Also note that anything booked outside"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 117)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 284
+    text: EV charging fees and mileage.
+    message: '"EV" is used without an expansion (15 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 286
+    text: ubers) at $300 limit per round trip and
+    message: '"ubers" is not in the dictionary; did you mean "users"?'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 298
+    text: SKO, President's Club, Team Off-site), p
+    message: '"SKO" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: currency-notation-consistency
+    line: 306
+    text: 50 USD (or local equivalent currency) pe
+    message: '"50 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: undefined-acronym
+    line: 336
+    text: GL Code NON-COGS:** 6080 - Other Travel-
+    message: '"GL" is used without an expansion (15 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 336
+    text: NON-COGS:** 6080 - Other Travel- Visas,
+    message: '"NON-COGS" is used without an expansion (15 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 337
+    text: COGS:** 5080 - Other Travel- Visas, Perm
+    message: '"COGS" is used without an expansion (15 such acronyms)'
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 346
+    text: "### 4.1 NON-TRAVEL RELATED EXPENSES"
+    message: The heading "4.1 NON-TRAVEL RELATED EXPENSES" is numbered, while 9 of its siblings are not ("Car Rental")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: numbering-gap
+    line: 346
+    what: section 4.1 is numbered twice (4.1 TRAVEL RELATED EXPENSES on line 103, 4.1 NON-TRAVEL RELATED EXPENSES here), and 4.3 follows; this one should be 4.2
+    verdict: missed
+  - rule: orthographic-variant
+    line: 370
+    text: Coworking space is reimbursable for mont
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 374
+    text: Coworking space is not reimbursable whil
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 385
+    text: " - Monthly"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
+  - rule: orthographic-variant
+    line: 386
+    text: Coworking Space
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 387
+    text: Coworking Space COGS
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 398
+    text: " - Daily Office Pass"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
+  - rule: orthographic-variant
+    line: 399
+    text: Coworking Space
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 400
+    text: Coworking Space COGS
+    message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
+    verdict: correct
+  - rule: currency-notation-consistency
+    line: 417
+    text: 1,500 USD (or equivalent local currency)
+    message: '"1,500 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: currency-notation-consistency
+    line: 418
+    text: 500 USD (or equivalent local currency) t
+    message: '"500 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: hyphen-as-dash
+    line: 418
+    text: " - please connect with the IT team if yo"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 420
+    text: " - Essential items which you will need t"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: date-without-year
+    line: 434
+    text: December 31).
+    message: '"December 31" has no year, and the dates around it cross the turn of a year'
+    verdict: false-positive
+    note: "'January 1 to December 31' names every calendar year, a recurring period that takes no year"
+  - rule: heading-numbering-mix
+    line: 441
+    text: "## Approved WFH Equipment List"
+    message: The heading "Approved WFH Equipment List" has no number, while 7 of its siblings do ("1. POLICY")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: currency-notation-consistency
+    line: 490
+    text: 125 USD (including shipping) per gift.
+    message: '"125 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: hyphen-as-dash
+    line: 497
+    text: " - internal"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
+  - rule: hyphen-as-dash
+    line: 506
+    text: " - these will be rejected."
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: name-variant
+    line: 514
+    text: GitLab GmbH (Germany) should refer to th
+    message: '"GitLab GmbH" is written "GitLab Ltd", with another company form, elsewhere in the document'
+    verdict: false-positive
+    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
+  - rule: currency-notation-consistency
+    line: 542
+    text: 5,000 USD and which cannot be paid throu
+    message: '"5,000 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: heading-numbering-mix
+    line: 572
+    text: "## Approved Office Supplies List"
+    message: The heading "Approved Office Supplies List" has no number, while 7 of its siblings do ("1. POLICY")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: undefined-acronym
+    line: 631
+    text: TMRG's, etc., are not to be expensed.
+    message: '"TMRG" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 638
+    text: T&E accounts for their own individual ex
+    message: '"T&E" is used without an expansion (15 such acronyms)'
+    verdict: correct
+  - rule: date-format-consistency
+    line: 669
+    text: July 15, 2026, GitLab no longer reimburs
+    message: The date "July 15, 2026" is written differently from 2 other dates in the document (such as "2023-05-10")
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 687
+    text: "### 4.3 Missing Receipt Affidavit"
+    message: The heading "4.3 Missing Receipt Affidavit" is numbered, while 11 of its siblings are not ("Office Supplies")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: vague-link-text
+    line: 689
+    text: "[here](https://docs.google.com/spreadshe"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 691
+    text: "### 4.4 Reimbursement Payout Timelines"
+    message: The heading "4.4 Reimbursement Payout Timelines" is numbered, while 11 of its siblings are not ("Office Supplies")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: name-variant
+    line: 698
+    text: GitLab Inc, GitLab Federal, GitLab Ltd (
+    message: '"GitLab Inc" is written "GitLab Ltd", with another company form, elsewhere in the document'
+    verdict: false-positive
+    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
+  - rule: name-variant
+    line: 698
+    text: GitLab LTD (Ireland), GitLab Israel Ltd.
+    message: '"GitLab LTD" is written "GitLab Ltd" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
+  - rule: undefined-acronym
+    line: 698
+    text: PTE. LTD. are reimbursed via Navan withi
+    message: '"PTE" is used without an expansion (15 such acronyms)'
+    verdict: false-positive
+    note: PTE / PTY are company-form suffixes in a legal entity name, not acronyms to expand
+  - rule: undefined-acronym
+    line: 698
+    text: PTY Ltd (Australia and New Zealand), Git
+    message: '"PTY" is used without an expansion (15 such acronyms)'
+    verdict: false-positive
+    note: PTE / PTY are company-form suffixes in a legal entity name, not acronyms to expand
+  - rule: quote-style-consistency
+    line: 701
+    text: ’s bank accounts on Tuesday or Wednesday
+    message: The quote mark ’ here, where the document usually writes ' (1 of 61)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 731
+    text: CXC Global**
+    message: '"CXC" is used without an expansion (15 such acronyms)'
+    verdict: false-positive
+    note: CXC Global is a company's name, not an acronym to expand
+  - rule: vague-link-text
+    line: 733
+    text: "[here](/handbook/people-group/employment"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 739
+    text: "### 4.5 Submitting Expenses on Behalf (o"
+    message: The heading "4.5 Submitting Expenses on Behalf (or Requested By) Team Member's Manager" is numbered, while 11 of its siblings are not ("Office Supplies")
+    verdict: correct
+    note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: vague-link-text
+    line: 747
+    text: "[here](/handbook/finance/accounts-payabl"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: currency-notation-consistency
+    line: 753
+    text: 1,500 USD (or local currency equivalent)
+    message: '"1,500 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
+    verdict: correct
+    note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: hyphen-as-dash
+    line: 775
+    text: " - they can pay partially with loyalty p"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 813
+    text: " - If more information is required pleas"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash

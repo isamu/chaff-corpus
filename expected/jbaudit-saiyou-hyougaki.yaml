@@ -1,0 +1,61 @@
+id: jbaudit-saiyou-hyougaki
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 3
+    text: 会計検査院では、国家公務員中途採用者選考試験（就職氷河期世代）を活用し、令和８年
+    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a national examination (proper noun); the kanji run is the name itself
+  - rule: stray-space
+    line: 9
+    text: " をご確認ください。（別ウィンドウで開きます。）"
+    message: 「ウェブサイト」と「を」は一続きの語句ですが、あいだに空白があります（86 箇所のうち 1 箇所が空いている）
+    verdict: correct
+  - rule: stray-space
+    line: 9
+    text: " 内閣官房ウェブサイト をご確認ください。（別ウィンドウで開きます。）"
+    message: 助詞「は」と「内閣」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。46 箇所のうち 1 箇所が空いている）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 17
+    text: (就職永河期世代)事務·技術区分第2次選考の実施について(本文)（別ウィンドウで
+    message: 丸括弧を、全角で 23 箇所、半角で 8 箇所書いています。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 17
+    text: 2次選考の実施について(本文)（別ウィンドウで開きます。）
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 17
+    text: 国家公務員中途採用者選考試験(就職永河期世代)事務·技術区分第2次選考の実施につ
+    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a national examination (proper noun); the kanji run is the name itself
+  - rule: fullwidth-alnum-consistency
+    line: 18
+    text: 2次選考の実施について(概要)（別ウィンドウで開きます。）
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 18
+    text: 国家公務員中途採用者選考試験(就職永河期世代)事務·技術区分第2次選考の実施につ
+    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a national examination (proper noun); the kanji run is the name itself
+  - rule: bracket-nesting
+    line: 35
+    text: ※第２次選考試験面接カードをダウンロードする際は、「開く」ボタンを押さずに、『名
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: the inner brackets are a file name quoted literally (【…】（氏名）); they cannot be flattened
+  - rule: orthographic-variant
+    line: 17
+    what: 就職永河期世代 is a typo for 就職氷河期世代, which the page writes elsewhere (lines 3, 35)
+    verdict: missed
+    note: "永 for 氷: one kanji differs from the term the document uses everywhere else"
+  - rule: orthographic-variant
+    line: 18
+    what: 就職永河期世代 is a typo for 就職氷河期世代 (same as line 17)
+    verdict: missed

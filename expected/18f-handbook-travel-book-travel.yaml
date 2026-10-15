@@ -1,0 +1,26 @@
+id: 18f-handbook-travel-book-travel
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 30
+    text: If you have been [set up in
+    message: This sentence runs 72 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 56
+    text: Note:** _If you don't have your GSA trav
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
+  - rule: contraction-consistency
+    line: 62
+    text: If you don't yet have a travel card and
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: false-positive
+    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
+  - rule: all-caps-shouting
+    line: 79
+    text: SUBMIT TO APPROVER status.\
+    message: '"SUBMIT TO APPROVER" is written in capitals'
+    verdict: false-positive
+    note: "'SUBMIT TO APPROVER' quotes a status label as the Concur screen shows it, in capitals"

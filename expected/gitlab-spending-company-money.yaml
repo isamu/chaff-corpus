@@ -1,0 +1,18 @@
+id: gitlab-spending-company-money
+chaff: 0.34.0
+findings:
+  - rule: vague-word-density
+    line: 12
+    text: File your expense report in a timely man
+    message: '"in a timely manner" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 12
+    text: File your expense report in a timely man
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 17
+    text: This includes information of when to use
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct

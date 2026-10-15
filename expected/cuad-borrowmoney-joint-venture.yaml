@@ -1,0 +1,289 @@
+id: cuad-borrowmoney-joint-venture
+chaff: 0.34.0
+findings:
+  - rule: max-paragraph-length
+    line: 3
+    text: JOINT VENTURE AGREEMENT THIS JOINT VENTU
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: undefined-acronym
+    line: 3
+    text: DR, suite 201 Fort Lauderdale FL 33304,
+    message: '"DR" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: DR (Drive) is a postal abbreviation in an address
+  - rule: undefined-acronym
+    line: 3
+    text: FL 33304, and JVLS, LLC dba Vaccines 2Go
+    message: '"FL" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: FL is a US state postal code in an address
+  - rule: undefined-acronym
+    line: 3
+    text: JVLS, LLC dba Vaccines 2Go of 4060 Johns
+    message: '"JVLS" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: JVLS is a company name, not an acronym to expand
+  - rule: undefined-acronym
+    line: 3
+    text: LLC dba Vaccines 2Go of 4060 Johns Creek
+    message: '"LLC" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: LLC is a legal-entity suffix
+  - rule: undefined-term
+    line: 3
+    text: Vaccines 2Go of 4060 Johns Creek Parkway
+    message: '"Vaccines" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: Vaccines is part of a trade name (Vaccines 2Go), not a defined term
+  - rule: unused-definition
+    line: 3
+    text: '(the "Execution Date"), BETWEEN: BorrowM'
+    message: '"Execution Date" is defined but never used'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 9
+    text: Purpose 3. The exclusive purpose of the
+    message: This paragraph runs 22 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: orthographic-variant
+    line: 9
+    text: PIscitello ● Jody Stewart 8. Except as o
+    message: '"PIscitello" here, where the document usually writes "Piscitello" (1 of 3)'
+    verdict: correct
+    note: a real typo of a manager's surname (PIscitello)
+  - rule: undefined-term
+    line: 9
+    text: Maintenance And Deployment of medical Se
+    message: '"Maintenance And Deployment" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: a Title Case phrase in free description, not written as a defined term
+  - rule: vague-word-density
+    line: 9
+    text: The principal office of the business of
+    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: from time to time is a standard contract idiom, not a vague word
+  - rule: name-variant
+    line: 27
+    text: Borrowmoney.com, inc. employees/personal
+    message: '"Borrowmoney" is written "BorrowMoney" elsewhere in the document (case, width or punctuation)'
+    verdict: correct
+  - rule: undefined-term
+    line: 27
+    text: Borrowmoney.com, inc. employees/personal
+    message: '"Borrowmoney" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: Borrowmoney is a misspelt company name (name-variant already reports it), not a defined term
+  - rule: vague-word-density
+    line: 27
+    text: "*HTML code, build, deploy and maintain a"
+    message: '"as needed" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 31
+    text: " , City And State, And Or Private Awarde"
+    message: A space before ","
+    verdict: correct
+  - rule: undefined-term
+    line: 31
+    text: The Total Contributions. 14. Duties of M
+    message: '"The Total Contributions" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 31
+    text: Duties of Members may be amended, from t
+    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: from time to time is a standard contract idiom, not a vague word
+  - rule: undefined-term
+    line: 33
+    text: Leased/rent office Space Includingspecif
+    message: '"Leased" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: Leased opens a table-cell text; capitalised, not a defined term
+  - rule: undefined-term
+    line: 33
+    text: Space Includingspecified Description of
+    message: '"Space Includingspecified Description" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: "extraction artefact: table cells merged and spaces lost (Includingspecified)"
+  - rule: space-before-punctuation
+    line: 37
+    text: " , City And State, And Or Private Awarde"
+    message: A space before ","
+    verdict: correct
+  - rule: defined-term-form
+    line: 49
+    text: capital contribution without the express
+    message: '"Capital Contribution" is defined with a capital on line 31, but written in lower case here'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 49
+    text: Withdrawal of Capital 17. No Member will
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: unused-definition
+    line: 49
+    text: (the "Additional Capital Contributions")
+    message: '"Additional Capital Contributions" is defined but never used'
+    verdict: correct
+  - rule: vague-word-density
+    line: 49
+    text: Capital Contributions may be amended fro
+    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: from time to time is a standard contract idiom, not a vague word
+  - rule: vague-word-density
+    line: 49
+    text: No borrowing charge or loan interest wil
+    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: from time to time is a standard contract idiom, not a vague word
+  - rule: max-paragraph-length
+    line: 55
+    text: Books of Account 23. Accurate and comple
+    message: This paragraph runs 25 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 55
+    text: Accurate and complete books of account o
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 55
+    text: All meetings will be held at a time and
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 55
+    text: The books and records of the Venture wil
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: "appropriately maintained books: an ordinary accounting standard, not vagueness worth flagging"
+  - rule: vague-word-density
+    line: 55
+    text: The books and records of the Venture wil
+    message: '"adequate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 55
+    text: When calling a special meeting, all Memb
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: max-paragraph-length
+    line: 61
+    text: Dissociation of a Member 31. Where a Mem
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: undefined-term
+    line: 61
+    text: Valuation of Interest or as otherwise ma
+    message: '"Valuation of Interest" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 61
+    text: Where a Member is in breach of this Agre
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: max-paragraph-length
+    line: 67
+    text: Liquidation 37. On dissolution, the Vent
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 67
+    text: An appraiser will be appointed within a
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 67
+    text: On dissolution, the Venture will be liqu
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: vague-word-density
+    line: 67
+    text: On dissolution, the Venture will be liqu
+    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 73
+    text: Management Voting 42. Any management vot
+    message: This paragraph runs 17 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 73
+    text: A Member will be free of liability to th
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 79
+    text: Insurance 48. The Venture will insure al
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 79
+    text: Members will use their best efforts, fai
+    message: '"best efforts" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: best efforts is a legal term of art in a contract
+  - rule: vague-word-density
+    line: 79
+    text: The Venture will insure all its assets a
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: defined-term-form
+    line: 85
+    text: capital contribution to the Venture actu
+    message: '"Capital Contribution" is defined with a capital on line 31, but written in lower case here'
+    verdict: false-positive
+    note: the lower-case words are the definition's own body (the Definitions clause), not a use of the term
+  - rule: defined-term-form
+    line: 85
+    text: Capital Contributions" The capital contr
+    message: '"Capital Contribution" is defined on line 31; after that it is used without quotes'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 85
+    text: Mediation and Arbitration 55. In the eve
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 85
+    text: If the dispute is not resolved within a
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: max-paragraph-length
+    line: 91
+    text: Miscellaneous 60. This Venture is termed
+    message: This paragraph runs 29 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: vague-word-density
+    line: 91
+    text: If any term, covenant, condition or prov
+    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: reasonable is a legal standard in a contract, not a vague word
+  - rule: which-that-consistency
+    line: 91
+    text: which may have been made by any Member i
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct

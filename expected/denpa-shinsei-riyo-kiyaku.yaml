@@ -1,0 +1,67 @@
+id: denpa-shinsei-riyo-kiyaku
+chaff: 0.34.0
+findings:
+  - rule: nado-closed-list
+    line: 16
+    sha256: ca4490ecbfea15f112cbcd3405d3344018b320689d660facb9169afbb26d8e1d
+    verdict: unjudged
+  - rule: unused-definition
+    line: 32
+    sha256: 198963d227092d38ac78d1013af7f0781b4bdee1753a3f0f74e0d5d9e4469f59
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 34
+    sha256: 26891ca2e501f6b0b547656805680204d684a5ee4bad07d79d2f93cd6f647af8
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 62
+    sha256: 5171f10a443624741b1ed35f19ea6869bb4e3540e217c2599422971840614187
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 66
+    sha256: b27714d751b1f81b1061b587626c2d55d7ed59b9803fe8ffafcfb578a25aa7f5
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 73
+    sha256: 363335093a877145f87ae3eff03d0908a4a5878ecc998376e2288bf82b02101b
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 77
+    sha256: 9aa6ad1dcc9344f44baf846a8cba1b9df2fc42c7443f87ddbb56f0dedb262de4
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 79
+    sha256: a7c2a13b5a4b9e357f521ecf3cc85f81e81c2516fc909099966ab5a37f22be28
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 99
+    sha256: 0e0f770faec8ec73293be69b9bb1323f0f2a6abb039417c00aaab6d9077d0df9
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 121
+    sha256: 7ef36177b6ffa18f70b0475fdf954891fb74c8547f10320138e932f54975836e
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 128
+    sha256: 7376533aca18fdb973e0099fb2a10440c6c10330125af379cbdb1352c19ea448
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 144
+    sha256: dfe8efbff9f4bdfc22244d27107cd93c352b00ac11eed4ca94ef6484578aae7b
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 168
+    sha256: afa5cfaf8fe01e5d1cc0a3b80ceab53efbd97cc2501c9e5bdb3b2563e8c9415d
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 178
+    sha256: 4ce0752c777b67e2ff820581fcaf7f7671e273672ad586e5f1c685932faf592b
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 202
+    sha256: fe5b86681be93d1fc5b12cd8d31df7b0f4a322f25749c1a5725034dd8a5ee4c5
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 212
+    sha256: 2c9feab7366480fa1c544410a01ececc1b9e0a82599912057288299595196d9a
+    verdict: unjudged

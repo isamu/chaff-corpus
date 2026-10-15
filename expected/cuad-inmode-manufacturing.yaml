@@ -1,0 +1,428 @@
+id: cuad-inmode-manufacturing
+chaff: 0.34.0
+findings:
+  - rule: hyphen-as-dash
+    line: 1
+    text: ' - Key Manufacturing Agreement (the "Agr'
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1
+    text: " - KEY MANUFACTURING AGREEMENT This Turn"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1
+    text: " - Key projects; Whereas Customer acknow"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: Exhibit 10.9 TURN - KEY MANUFACTURING AG
+    message: This paragraph runs 13 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: POB 533, Yokneam 20692, Israel. Hereinaf
+    message: '"POB" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3
+    text: INMODE LTD., F-1/A, 7/29/2019
+    message: '"INMODE" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3
+    text: LTD., F-1/A, 7/29/2019
+    message: '"LTD" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Any additional information reasonably"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Approved Vendors list - Gerber data,"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Assembly of printed circuit boards &"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Bill of Materials - Approved Vendors"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Drawings - Bill of Materials - Approv"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Final assembly & integration of the P"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Functional test - Packaging and deliv"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Gerber data, CAD files - Quality requ"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - In Circuit test - Functional test - P"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Incoming Inspection - Assembly of pri"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Material procurement - Incoming Inspe"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Packaging and delivery 4.2 Customer's"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Quality requirements - Technical supp"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Standard Operation Procedures - Drawi"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 9
+    text: " - Technical support, as required - Any"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 9
+    text: " . During the term of this Agreement, th"
+    message: A space before "."
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: ABC buy policy and long lead time compon
+    message: '"ABC" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 9
+    text: CAD files - Quality requirements - Techn
+    message: '"CAD" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 19
+    text: 6.5 In the event of termination of this
+    message: Brackets nested 3 deep (limit 2)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 19
+    text: 6.2 Economic Order Quantity ("EOQ") for
+    message: This paragraph runs 17 sentences (limit 8)
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 19
+    text: pay in advance the same amount it is obl
+    message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 19
+    text: and/or discontinuance of a Product, or e
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 19
+    text: (unless the charge was approved by Custo
+    message: '"(" is never closed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 19
+    text: LLI's to be approved by the Customer. Co
+    message: '"LLI" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: FGI, in a minimum level of two (2) weeks
+    message: '"FGI" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 29
+    text: promptly so inform Customer by written n
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 39
+    text: 7.5 Customer tooling, etc. All Customers
+    message: This paragraph runs 15 sentences (limit 8)
+    verdict: unjudged
+  - rule: numeral-sentence-start
+    line: 39
+    text: 30 days before the lapse of the 6 month
+    message: The sentence opens with the numeral "30"
+    verdict: unjudged
+  - rule: numeral-sentence-start
+    line: 39
+    text: 30 days before the lapse of the 6 month
+    message: The sentence opens with the numeral "30"
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 39
+    text: pay Contractor all direct costs in conne
+    message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 39
+    text: and/or raw materials shall be limited to
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 39
+    text: but not limited to "purchase orders," "f
+    message: '"but not limited to" in a requirement does not say what else it covers'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 49
+    text: and/or with Products not covered under t
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 49
+    text: ATP then Contractor will send the Produc
+    message: '"ATP" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 49
+    text: promptly repair or replace such Product
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 59
+    text: " - if requested by Customer and subject"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 59
+    text: Customer will not pass through to end us
+    message: This paragraph runs 18 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 59
+    text: QA/QC certificate). Upon delivery to Cus
+    message: '"QA" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 59
+    text: QC certificate). Upon delivery to Custom
+    message: '"QC" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    text: 12.6 Subject to the above limitations, t
+    message: This paragraph runs 21 sentences (limit 8)
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 69
+    text: and /or pre-payments in an amount equal
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    text: BS and Cash Flow statements). Contractor
+    message: '"BS" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    text: P&L, BS and Cash Flow statements). Contr
+    message: '"P&L" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 79
+    text: promptly return to the other party, all.
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 79
+    text: promptly through good faith negotiations
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 89
+    text: "notify Customer and either: (1) procure"
+    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 89
+    text: and/or actual infringement or other viol
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 89
+    text: and/or actual infringement or other viol
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 99
+    text: 18.3 THE FOREGOING STATES THE ENTIRE LIA
+    message: This paragraph runs 14 sentences (limit 8)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 99
+    text: Contractor shall keep in confidence all
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 109
+    text: 20.2 During the Term, of this Agreement
+    message: This paragraph runs 23 sentences (limit 8)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 119
+    text: The parties agree that this Agreement an
+    message: This paragraph runs 11 sentences (limit 8)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: AC Filter Card Assy
+    message: '"AC" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: DLP Controller Card Assy Distribution Ca
+    message: '"DLP" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: HP Fractora Firm Harness Harness for Der
+    message: '"HP" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: IPL Card Reworked FootSwitch Preliminary
+    message: '"IPL" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: LCD Adaptor Card AC Filter Card Assy
+    message: '"LCD" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: PCB Card A InMode RF HPS Set InMode Lase
+    message: '"PCB" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: PS Shelf Assy Pump Assy Heat Exchanger A
+    message: '"PS" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 131
+    text: RF Connector Assy Touch Screen Assy Touc
+    message: '"RF" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 139
+    text: " - Shell Sample Fractora 5pcs Box Set 24"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: II Controller Card As Fan Rework Assy Fr
+    message: '"II" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: PRO InMode System 2 Color 2 Triton Fract
+    message: '"PRO" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: PSU Card Assy. Gear Pump Assy. Heat Exch
+    message: '"PSU" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: RFAL Grey Platform BodyTite II Controlle
+    message: '"RFAL" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: BODY TITE (AS601206A) BODY TITE (AS60120
+    message: '"BODY" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: DUMMY Heat Exchanger washing Jig Diolaze
+    message: '"DUMMY" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: EARTH Continuity tester TOS6210 Tester c
+    message: '"EARTH" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: FX Programmer Tite FX TESTER Hi-POT CLIP
+    message: '"FX" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: HI-POT tester Blue wave-50(UV) RF tester
+    message: '"HI-POT" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: JIG InMode2 Pump Burn-in JIG Screen LOGO
+    message: '"JIG" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: LOGO Placement Jig Side Label Placement
+    message: '"LOGO" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: MAG tos5052(Hi-POT) Load RF Load Burn-in
+    message: '"MAG" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: POT) Load RF Load Burn-in Test Barcode r
+    message: '"POT" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: TEK P5000100(PROB_) PP016 ADAPTOR Cable
+    message: '"TEK" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: "TESTER Laboratory DC POWER SUPPLY Model:"
+    message: '"TESTER" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    text: TORC-GEDORE In Mode TESTER Laboratory DC
+    message: '"TORC-GEDORE" is used without an expansion (36 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 147
+    text: clening FRACTORA TIPS Thermistor tester(
+    message: '"clening" is not in the dictionary; did you mean "cloning"?'
+    verdict: unjudged

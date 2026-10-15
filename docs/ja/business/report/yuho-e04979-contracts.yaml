@@ -1,0 +1,23 @@
+id: yuho-e04979-contracts
+title: "パーク二四株式会社（定款上の商号　パーク２４株式会社） 有価証券報告書（2022-11-01〜2023-10-31）: 経営上の重要な契約等"
+language: ja
+genre: business/report
+format: text
+source:
+  url: https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SNVV,,
+  fetched: 2026-10-15
+  hf:
+    dataset: numad/yuho-text-2024
+    config: default
+    split: train
+    offset: 70
+    field: text
+    revision: 2993206922ead839ce003e2faa65cd5d2ff07607
+    file: yuho-202401.jsonl
+license:
+  name: PDL-1.0
+  url: https://disclosure2dl.edinet-fsa.go.jp/guide/static/disclosure/WZEK0030.html
+  note: 出典：EDINET閲覧（提出）サイト（https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SNVV,,）、PDL1.0（https://www.digital.go.jp/resources/open_data/public_data_license_v1.0）。EDINET閲覧（提出）サイト（https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SNVV,,）より抜粋して作成（抜粋：numad/yuho-text-2024（Apache-2.0）、収録：chaff-corpus。本文は同データセットの text 欄のまま）
+redistribute: true
+notes: 有価証券報告書の一節（XBRL タグ CriticalContractsForOperationTextBlock、書類管理番号 S100SNVV、提出日 2024-01-26）。データセットが改行と表の区切りを落としているため、本文は一行で、表は文字が続いたままになっている。
+sha256: 77d3b2f0ab39664e9b00cd392496e6be13e66a5ca7c396270a536a11ee1d4ddd

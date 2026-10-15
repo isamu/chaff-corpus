@@ -105,6 +105,24 @@ Do not change `text` or `line`: they are how the run finds the finding again.
 A document is fully judged once no entry is `unjudged`. From then on a new finding on it fails CI until someone judges
 it, so judge a whole document before relying on it.
 
+### A document that may not be redistributed
+
+Its expected file keeps no text: each finding is known by `rule`, `line` and the `sha256` of its text, so the repository
+alone does not show what a finding points at. To read the findings, run
+
+```sh
+yarn judge <id>
+```
+
+It reads `expected/<id>.yaml` and the document's text (fetched into the git-ignored `.cache/` as `yarn run-corpus`
+does; `--offline` uses the cache only), runs no chaff, and prints each entry's verdict, rule and line with the text the
+finding points at, recovered from your copy of the document. When no text on that line has the entry's `sha256`, it
+says so: the document changed or the line moved. It only prints; it writes nothing to the repository.
+
+Then edit `verdict` and `note` in `expected/<id>.yaml` as above, and leave `sha256` and `line` as they are. **Never
+paste the document's text into a `note`**: describe the mistake in your own words ("a defined term used before its
+definition"), not by quoting the line.
+
 ## When chaff changes
 
 A new chaffjs is a pull request that bumps the pinned version (`yarn add --exact chaffjs@<version>`). Its CI shows what

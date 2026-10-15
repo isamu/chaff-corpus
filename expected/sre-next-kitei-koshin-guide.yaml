@@ -1,0 +1,8 @@
+id: sre-next-kitei-koshin-guide
+chaff: 0.34.0
+findings:
+  - rule: katakana-density
+    line: 7
+    text: このガイドラインは、規程・ガイドライン集の各種ドキュメント類および[公開サイト]
+    message: カタカナ語が 1000 字あたり 65 語あります（55 語まで）。多いのは「ブランチ、サイト、ドキュメント」です
+    verdict: unjudged

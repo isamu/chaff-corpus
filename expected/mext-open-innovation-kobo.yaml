@@ -1,0 +1,14 @@
+id: mext-open-innovation-kobo
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 13
+    text: (火曜日)  公募開始
+    message: 丸括弧を、全角で 10 箇所、半角で 6 箇所書いています。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 37
+    text: "## お問合せ先"
+    message: 見出し「お問合せ先」だけ番号がありません（兄弟の見出しは「1.事業概要」など 5 個が番号付き）
+    verdict: false-positive
+    note: the closing contact block (お問合せ先) after the numbered sections; notices leave it unnumbered by convention

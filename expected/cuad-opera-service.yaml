@@ -1,0 +1,114 @@
+id: cuad-opera-service
+chaff: 0.34.0
+findings:
+  - rule: article-sound
+    line: 1
+    text: a India company with an address at Build
+    message: '"a India" takes "an" before that sound'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 1
+    text: Exhibit 4.14 SERVICE AGREEMENT This Serv
+    message: This paragraph runs 14 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: the PDF text joins a whole page into one line, so chaff sees one long paragraph; chaff is right about the text as extracted"
+  - rule: undefined-acronym
+    line: 1
+    text: HDFC Bank, New Delhi ("PC Financial"), a
+    message: '"HDFC" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: HDFC is part of a bank's proper name (HDFC Bank), not an acronym the document should expand
+  - rule: max-paragraph-length
+    line: 7
+    text: 2.2 Mobimagic will provide the system /
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: numeral-sentence-start
+    line: 7
+    text: 2.3 where required, Mobimagic may assign
+    message: The sentence opens with the numeral "2.3"
+    verdict: correct
+    note: "extraction artefact: the clause number 2.3 starts a new clause in the source; extraction ran it into the previous sentence; chaff is right about the text as extracted"
+  - rule: max-paragraph-length
+    line: 13
+    text: 3.4 Except as set forth in this Section
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: requirement-smell
+    line: 13
+    text: and/or authorities as required by law to
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: correct
+  - rule: space-before-punctuation
+    line: 13
+    text: " . 4.5 According to this Agreement, the"
+    message: A space before "."
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 19
+    text: 4.7 Data protection. Each Party agrees t
+    message: This paragraph runs 20 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: orthographic-variant
+    line: 19
+    text: cooperate with Mobimagic to obtain refun
+    message: '"cooperate" here, where the document usually writes "co-operate" (1 of 4)'
+    verdict: correct
+  - rule: vague-deadline
+    line: 19
+    text: within a reasonable time. 5. INTELLECTUA
+    message: '"within a reasonable time" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 25
+    text: 6.5 In case of any complaint about using
+    message: This paragraph runs 23 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: name-variant
+    line: 25
+    text: Mobimaigc's invoice. Both Parties shall
+    message: '"Mobimaigc" is one letter away from "Mobimagic", which the document uses more than once'
+    verdict: correct
+    note: a real typo of the party name in the source
+  - rule: spelling-consistency
+    line: 25
+    text: fulfillment of this Agreement. Each Part
+    message: '"fulfillment" here, where the document usually spells it "fulfilment" (1 of 3)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 25
+    text: PCF Indemnified Parties") against any co
+    message: '"PCF" is used without an expansion (3 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: TERM & TERMINATION 9.1 The Agreement sha
+    message: '"TERM" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: an all-caps clause heading (9. TERM & TERMINATION) read as an acronym; the heading was run into the text by extraction
+  - rule: vague-deadline
+    line: 25
+    text: promptly inform Mobimagic in writing of
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: vague-deadline
+    line: 25
+    text: promptly inform PC Financial in writing
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 31
+    text: 9.4 Upon termination or expiration of th
+    message: This paragraph runs 19 sentences (limit 8)
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
+  - rule: unknown-word
+    line: 31
+    text: thereunder in force as on that date. The
+    message: '"thereunder" is not in the dictionary; did you mean "hereunder"?'
+    verdict: false-positive
+    note: thereunder is a standard legal word missing from the dictionary

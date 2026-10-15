@@ -1,0 +1,158 @@
+id: osaka-kodomo-katei-jidou-soudanin
+chaff: 0.34.0
+findings:
+  - rule: date-format-consistency
+    line: 3
+    text: 2026年10月13日
+    message: 日付「2026年10月13日」の書き方が、この文書のほかの日付（「令和9年1月1日」など 3 箇所）と違います
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 33
+    text: ""
+    message: 「業務内容」の節に数値もコードもリンクもありません（そういう節が 3/14）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 37
+    text: また、児童虐待防止に関する業務（緊急対応含む）、要保護児童等の調査・評価（アセス
+    message: 「要保護児童対策地域協議会関係業務」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 41
+    text: うけることができます。
+    message: 「うける」と書いています（この文書はふつう「受ける」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 42
+    text: （1）以下のいずれかに該当する者
+    message: この文は 250 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 43
+    text: 若しくは社会学を専修する学科又はこれらに相当する課程を修めて卒業した者
+    message: 「若しくは」と書いています（この文書はふつう「もしくは」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 47
+    text: " に準ずる者であって、家庭児童相談員として必要な学識経験を有する者"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。41 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: range-notation-consistency
+    line: 47
+    text: 1～4 に準ずる者であって、家庭児童相談員として必要な学識経験を有する者
+    message: 範囲を「1～4」と書いています（この文書はふつう「530-8201」のように書きます。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 64
+    text: (注)日本国籍を有しない方も受験できます。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 64
+    text: )日本国籍を有しない方も受験できます。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 96
+    text: 内いずれかに配置されます。
+    message: 「内」と書いています（この文書はふつう「うち」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 110
+    text: の間の報酬額の例示です。今後、給与改定等により変更される場合があります。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 120
+    text: ""
+    message: 「服務」の節に数値もコードもリンクもありません（そういう節が 3/14）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 160
+    text: (会計年度任用職員)任用候補者登録試験採用申込書
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 160
+    text: )任用候補者登録試験採用申込書
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 160
+    text: ア 大阪市家庭児童相談員(会計年度任用職員)任用候補者登録試験採用申込書
+    message: 「任用候補者登録試験採用申込書」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 164
+    text: 任用区について、配慮事項がある方は「配慮事項」欄にご記入ください。ただし、ご記入
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 183
+    text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 183
+    text: " をダウンロード（無償）してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 183
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 185
+    text: （「家庭児童相談員（会計年度任用職員）任用候補者登録試験採用申込書請求」と明記）
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 185
+    text: " 円分を貼付し、受験者のあて先を明記した返信用封筒（長形3号）を同封のうえ、後掲"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。41 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 185
+    text: （「家庭児童相談員（会計年度任用職員）任用候補者登録試験採用申込書請求」と明記）
+    message: 「任用候補者登録試験採用申込書請求」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 185
+    text: ※ ダウンロードできない場合、後掲「申込書受付場所（申込書送付先）」にて受付期間
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 193
+    text: (申込書送付先)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 193
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 193
+    text: 2 . 申込書受付場所(申込書送付先)
+    message: 「支援部管理課児童支援対策」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 197
+    text: 前掲「提出書類」のア～エを、持参または郵便等で送付してください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 199
+    text: 郵便等の場合は「家庭児童相談員（会計年度任用職員）任用候補者登録試験採用申込書等
+    message: 「任用候補者登録試験採用申込書等在中」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 211
+    text: ""
+    message: 「その他」の節に数値もコードもリンクもありません（そういう節が 3/14）
+    verdict: unjudged
+  - rule: heading-echo
+    line: 252
+    text: 「皆さんの声をお寄せください」一覧
+    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
+    verdict: unjudged

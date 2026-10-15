@@ -1,0 +1,15 @@
+id: maff-kyodo-ryori-okaisan-ja
+chaff: 0.34.0
+findings:
+  - rule: stray-space
+    line: 9
+    sha256: 967516858471143d1b4d4f5e9ff2b862cbed62e98003f8560dfa5eb8764f3062
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    sha256: a02d6f68b42370cfe02e98932bfc126c8851cc82dfbd3b938f640ccc8645c530
+    verdict: unjudged
+  - rule: title-length
+    line: 31
+    sha256: 97ccb33e2dc588f4d81288f410acc79a31bda1ac2d085498fb1196c2508e5f2a
+    verdict: unjudged

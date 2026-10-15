@@ -1,0 +1,38 @@
+id: yuho-e04979-contracts
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 1
+    text: )プット・オプション期間2025年11月１日から2026年２月28日まで(2)コ
+    message: 丸括弧を、全角で 10 箇所、半角で 5 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
+    message: 「株式会社日本政策投資銀行」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
+    message: この段落は 11 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
+    message: この文は 176 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: また、相互に協力してNCPの発展に向けた事業体制を構築し、NCP、当社及びDBJ
+    message: この文は 153 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 1
+    text: の純粋持株会社であるMEIFIICPHoldings2Limitedの発行済株式
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 買取価額は、DBJの当初投資金額の円換算額を基礎として、NCPグループのEBIT
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged

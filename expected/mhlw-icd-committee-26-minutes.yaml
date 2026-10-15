@@ -1,0 +1,343 @@
+id: mhlw-icd-committee-26-minutes
+chaff: 0.34.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 5
+    sha256: c26a53e4cb7f90381816d06d3bc7d3c5f320fb793abbf8c581ef13ea7261b154
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 5
+    sha256: f91ad02cc1b73e49af09f2b07d669d58af00233f7e88ae5ea78253cca4d7acd8
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 15
+    sha256: 2098181f56aca84724ab0b0bc0680f5e5f703f92cc4df8bf495d4c1135dab478
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 20
+    sha256: 4522464af3ec351b821ac92e3bd7af7c13d713c4799816e2c758d311bd3e1de5
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 29
+    sha256: cb3f1bf298fa0b7c835ee2190067a99e024a5683787cd0ced11b7f1801a70111
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 31
+    sha256: 2038715c87f61e10e96cc77665fa5d7d9fd6e93c7882b3847980ec939a0ec61f
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 32
+    sha256: 0918163764b0b91960f5fc86499ba7c0028bb6d703f49226e80fb790e8d8e627
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 33
+    sha256: 7ffd1c0506734240a2d9539de2fc8c0792f523fe03468786cac094b75b414b68
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 33
+    sha256: 83ae69251f3e508cedb1505ceff0a2fb02e9933c03aed460b4c60f216e7f65d4
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 38
+    sha256: 25dfbe86e17429bc6a5c15b325ad467e18cafe85bbc1f821b2bc3254cec9c61e
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 40
+    sha256: c67f966ec7675c934d5b209b179411eed397142c912bf837ad87fd9de995993d
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 46
+    sha256: ee3f792f9dd9c11e9541763a70eba0bbada4832d640086b94513c0601eb3c472
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 51
+    sha256: 34de7aafe3efc92a73cc8a9e62dfe0afca96e4c9688ce61b9be63c387fdac5a9
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 54
+    sha256: 9f58b6e4e6226bfd6912fa6c5f5aaa3df32ff42e1d69e9f489c103617388ffb5
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 56
+    sha256: dbd43c1ea05d1773b4467c37190f92062b8a8f11ef39188472bc07a9b6dc181c
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 59
+    sha256: b8039796615fde978bdac82dde19f60ebc25f26b118c954d771fc4413e05b068
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 65
+    sha256: ef2a1a471d615aa432c9e3b5db0c5f09843988fa37ce87c99c8ca9ebd138c77d
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 70
+    sha256: 6e67f47d79b848a9bbb488f555a7e35be3412f78cabe50b5dc8f12a8a49e406c
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 75
+    sha256: 138e697caf14a5a3f133bd0e048a57f14d2f54c6ac1fc30951c58a9be2b4b360
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 85
+    sha256: 9f8139b4414e594de281baa895ab41a660b40153604833fd144d2854dfb20fe5
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 90
+    sha256: 9fbd6915204ede56fa6a40a1843897116f647e8f8acf5400a4971c6a4db07c14
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 90
+    sha256: 934304801f0d64f896b20a4d42cba5c2fe421324d5f002dee3ba6c8b6158a587
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 105
+    sha256: 6390cdfba2807293f5188fdd7591a1ec98f0ceaffa03b3d18986f374be8b277e
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 105
+    sha256: 9d3363fb38f71cd5f913dc3d45db200699a58f01b80cb95d42eb73335e344ee1
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 110
+    sha256: 672ef632e5f1740198a1a781fe81f97204b02eade70bfbe157f5b1948646d518
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 115
+    sha256: 67227a3af5f71161f219c5e0855d9ae85adce2a58cd9e19330e9a956438e96f4
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 115
+    sha256: f55c6b675b936a6bfb16337837b75c634c9c27e4ab4418c1c6448cf573f133f6
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 120
+    sha256: 27a928a1579934698b5281c81b7affc4792246a61862f753569259347c120538
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 130
+    sha256: fd14e3a65a2d7c57855a893adc5fa1e85d7c14bc55fb4c3c18878802dca7fc16
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 140
+    sha256: 4930852da452a590a7491b92155c9b011b2f0915520b76d80a6a617a579e0bbc
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 150
+    sha256: 925df65cd47b9639795f43f20789d530e55d29439b4371f6782424b04f13cd2d
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 160
+    sha256: 359ac02746d0a1af282573376fc5ae3378c4252502c0a18ae36491d3059c4766
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 175
+    sha256: 136a5601b6a2ea6df2e7c7f88ad5af6ff1ea570483a2d9583ee783540c646c7a
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 180
+    sha256: ab337d9eaf225e500afb37721f0404a97e205154df2622b581da9994c1bd53c5
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 198
+    sha256: ba67ffbadb94d79af24c2713a1534161bbdc7e8029029213f6318c9937d0e216
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 200
+    sha256: 3637589f29c5f295b964cc7ee1d8ee86964cbe4aaf23bce17ea5cfb10be5971f
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 200
+    sha256: 4f395cfa155fc2a403a015bd5642489fb9d841d4005136faa7f83afe32adaf0c
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 205
+    sha256: aae84620f2738e92e4feb005e3041d025fbd277813f4685d67ef1d0076f95699
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 208
+    sha256: b08a64bf68308bec1de934b3a6140d1386249fc2bf4d81f501323fa8b5aea060
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 213
+    sha256: ef2565e48a51f21330bd823d56cc0a9f64c993a2c70fda195f8c7e7cffba353e
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 213
+    sha256: 23eb34442debab60101f3ba6d327f65fea6d7d79406934b199456b5b83f7d800
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 214
+    sha256: 6b0a3f13d366c282b063a94ae1062b2f6410dee3f753ff0262d20d4a0c1f13d2
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 216
+    sha256: a1769e589194b41b926a2b8fa0c7e82f8572e3ed8b3ac4bcb0affc2a3852472e
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 216
+    sha256: a1769e589194b41b926a2b8fa0c7e82f8572e3ed8b3ac4bcb0affc2a3852472e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 222
+    sha256: a771ed7a2f78101a0d917561aa8ff0e4249719fc9c3e45d523a39e2956367e56
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 226
+    sha256: 046e0a565ca89594cef750f5cdc205ec073604958b605e11293f4a5ef1167cf6
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 226
+    sha256: d93a835d0f2787bcb1a759ad3a1b8fbea56d742d0b99720dbbb9ea8ace1926f8
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 230
+    sha256: 9d7a141027213dce2e5ee626a07a8200ae043f7e757aedd2146af835a3c43512
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 231
+    sha256: 8abec6dc7fa29b8a37a073b989ca539ad040d9314618f4b5d4f0c7c85efb6550
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 260
+    sha256: d20803f709f73bd62c0e0fed8e897dec431e6f2a93ee334acef389e5e14edd09
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 266
+    sha256: 07cc5e413560128f6557e03059b2b06f7ea121b62e02b9a5c28a1a34fe79ea7c
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 266
+    sha256: 1277403b04534a2c8aee8f5d7a66a07b6bda16395855ae96460c769d103c79ca
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 268
+    sha256: faa8475839e90eb4e915bff195d9592df705754a3fc06a52227b0a6423c49fbc
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 277
+    sha256: 94825093d5932f8f16e4c7aee6a62ddce11dffd2608da4194a66d8eb72c2633e
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 278
+    sha256: 756538c2e9a7cfead3846e1eac443c880d31cc7db9bf7e8e52c4124216220362
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 282
+    sha256: 5df653ebab9bdb29a924b8dbfb078559fd17e7afa83c08ffc97a8e938930b23e
+    verdict: unjudged
+  - rule: max-ten
+    line: 282
+    sha256: ef4057184ad36d1f3482091ecd0088d058c94e586733890918408acb36713f4d
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 282
+    sha256: ef4057184ad36d1f3482091ecd0088d058c94e586733890918408acb36713f4d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 284
+    sha256: 3e0150f015ef58e81f26b8be7f0a38378ceb89f80394b9e0bd67bbaa7a170447
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 286
+    sha256: 24e5c482dcf64d912b679991606d023b43297503890f70d59626da9ae9e83439
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 287
+    sha256: 1fe57c75fd8631d00607868bf5867e14ad5c8e92c85f6ee59f1266eeb05429ac
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 290
+    sha256: 1e649829557d701dfefa1207634dcbe782c3d1bf992d081f66f326897e7a8963
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 297
+    sha256: 8c9da5942c6ec9a8b404b6d2d13e06555f836e654fba8219ab25c6118f2e31cb
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 300
+    sha256: ed96940f918846f3f714aa5889c1635064acfb36f06baf2cf3857738d09212ee
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 302
+    sha256: 45db580efc995673feb243973c33db4fe67d7f1181f6eb60ba96c933d5605852
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 305
+    sha256: ea0393d8441cbef0d54713ae1c72a7ad49221a4a47fa255521ff1199fb3fa3d1
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 307
+    sha256: ce87f2ed9154b96f7ed3c78e1ed2fcc62cf044fcd6ae9285ae01529a06a4a989
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 307
+    sha256: ce87f2ed9154b96f7ed3c78e1ed2fcc62cf044fcd6ae9285ae01529a06a4a989
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 313
+    sha256: edd62e48ef59ad7763827a355265ae17093893d513f26bdc24d5e25c8baf789e
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 313
+    sha256: 7ed7b5f35295ea58c4124c6b7527f638529846f4968526d3b197245347392350
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 315
+    sha256: 2f5ffd266b3332ab7725c73d059f91843e46272b69b82432cfa95c5aec0d5fd6
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 315
+    sha256: be1e58dae98b3e3d04f4c8596257823fdece18da987b9a4eaa99eac2204784fb
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 316
+    sha256: 8aca0ce0e1397e8ffafec44402e441eec22cd58292eb5fa92a4a0f238e5522c2
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 316
+    sha256: 925f7e717edf24d3676a9c75324e82f1c2b534efaafdbafcd3d01af3c73e7aea
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 318
+    sha256: 1fe9728bb84bcacab78990b1742a30ec4811c54cedd8aaf0e7355f1f5fc0e33d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    sha256: a42afbe654b32d2a7e4cc194f46bea7f3d6978a3dce697e1e90ee6d93cb97757
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 320
+    sha256: 0c6e9ed8c3197f953ca16cdddea4776360bfc93239e5ac0e515b607dc27be781
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 328
+    sha256: 4998fa9e6db2b09997bb1cca8b8422e7c80e8a2b96fa457fb36f0607fe4c3711
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 328
+    sha256: b07c3f41dbe906c05b48fef38fdafe7e3d8a8e0b7c79a961ddb0bd88d3c489ec
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 333
+    sha256: 6920dbc1a7d4e10afe280a5f377515e36c09c2cea8d2a9395a5e65f2cced5899
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 333
+    sha256: 6920dbc1a7d4e10afe280a5f377515e36c09c2cea8d2a9395a5e65f2cced5899
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 346
+    sha256: 112d3227db43d857ec5de04ece91129021c1c008544dc480b8ac8140c8eb30cf
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 349
+    sha256: 0be2d4c540232b2e72010adf7ee10c4de1503f2be58beda77b34c8f825f3c359
+    verdict: unjudged
+  - rule: sasete-itadaku
+    line: 349
+    sha256: 0be2d4c540232b2e72010adf7ee10c4de1503f2be58beda77b34c8f825f3c359
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 354
+    sha256: c55dab9a5659692f82844b97fc3e6d8a0c0525c9181c4e8645dc414395155de8
+    verdict: unjudged

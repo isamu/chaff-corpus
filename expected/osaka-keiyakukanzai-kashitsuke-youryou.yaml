@@ -1,0 +1,20 @@
+id: osaka-keiyakukanzai-kashitsuke-youryou
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 52
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 11 箇所あります。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: request-without-deadline
+    line: 73
+    text: ※入札物件は、すべて現状有姿で貸付けますので、お申込み前に現況及び物件の近隣周辺
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: the timing is given in the sentence (before applying), and the application period is stated in the notice
+  - rule: heading-echo
+    line: 120
+    text: 「皆さんの声をお寄せください」一覧
+    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
+    verdict: false-positive
+    note: the site footer's feedback block (a heading and its link list) the converter kept, not a sentence restating the heading

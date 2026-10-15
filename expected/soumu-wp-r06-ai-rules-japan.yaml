@@ -1,0 +1,47 @@
+id: soumu-wp-r06-ai-rules-japan
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 7
+    sha256: 4e6b361b857abe7927c4d49a0f8daca1fab3b1dd23469f2e34299b75d3ccc84d
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 7
+    sha256: 4e6b361b857abe7927c4d49a0f8daca1fab3b1dd23469f2e34299b75d3ccc84d
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 9
+    sha256: b2004b0a5509792ddf91b527a4a460a62252e54b9e79833fd443f028b80b9c50
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 9
+    sha256: 9e4f5ef674a69f457aea1fc0948a7ac897f1d93a8de132f1e8a451b7f757a386
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 11
+    sha256: 05b510b5fa2eb59f3256ac86ba77138ab5b940c6f9288e72457a14d433fffeeb
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 11
+    sha256: 51795a3e163777817f89d4819ea167e5bc5fe52b9fbeb69698d87b1b68637036
+    verdict: unjudged
+  - rule: max-ten
+    line: 11
+    sha256: 51795a3e163777817f89d4819ea167e5bc5fe52b9fbeb69698d87b1b68637036
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 11
+    sha256: 8c99f862459287d0d4e6a77587ccbc6d63eeeb741ec02c55e8da7593f4d26e87
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 11
+    sha256: 45c59aa293cedcec5ca730fa66e23cdb72513520933017ff291fa6a093614706
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 11
+    sha256: 51795a3e163777817f89d4819ea167e5bc5fe52b9fbeb69698d87b1b68637036
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 21
+    sha256: 0c5a76bf4e5460eff052b0b8848113aa5ace34900e1fff4f3c04a53d9806ccad
+    verdict: unjudged
