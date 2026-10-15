@@ -1,0 +1,8 @@
+id: denkiyagi-taishokukin-kitei
+chaff: 0.34.0
+findings:
+  - rule: yori-as-from
+    line: 54
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

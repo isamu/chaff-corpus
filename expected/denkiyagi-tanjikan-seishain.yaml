@@ -1,0 +1,32 @@
+id: denkiyagi-tanjikan-seishain
+chaff: 0.34.0
+findings:
+  - rule: numbering-gap
+    line: 19
+    text: 2. 第1項の規定により短時間正社員勤務を希望する従業員は、原則30日前までに会
+    message: 「3.」の次が「2.」です（4 番目のはず）
+    verdict: false-positive
+    note: the sub-items 1–3 are indented under item 1; the top-level 2. continues the outer list
+  - rule: orthographic-variant
+    line: 21
+    text: 申し出ること。
+    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 申し出る counted against the noun 申出 (申出日, 申出); 公用文 writes the verb with okurigana and the noun without
+  - rule: orthographic-variant
+    line: 29
+    text: 申し出なければならかない。
+    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the verb 申し出る counted against the noun 申出 (申出日, 申出); 公用文 writes the verb with okurigana and the noun without
+  - rule: numbering-gap
+    line: 63
+    text: "### 第14条　退職金"
+    message: 「第12条」の次が「第14条」です（13 番目のはず）
+    verdict: correct
+    note: 第13条 is missing
+  - rule: yori-as-from
+    line: 75
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

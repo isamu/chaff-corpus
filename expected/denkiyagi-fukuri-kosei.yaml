@@ -1,0 +1,41 @@
+id: denkiyagi-fukuri-kosei
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### 第1条　目的"
+    message: 見出し「第1条　目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
+  - rule: nado-closed-list
+    line: 37
+    text: 等）のみを対象とする。
+    message: 「等」で一覧を開いたまま、「のみ」で限っています
+    verdict: false-positive
+    note: 「等」 closes an example list in a parenthesis (エンジニア、デザイナー等); 「のみ」 limits 技能職, not the examples
+  - rule: nado-closed-list
+    line: 45
+    text: 等）のみを対象とする。
+    message: 「等」で一覧を開いたまま、「のみ」で限っています
+    verdict: false-positive
+    note: 「等」 closes an example list in a parenthesis (エンジニア、デザイナー等); 「のみ」 limits 技能職, not the examples
+  - rule: numbering-gap
+    line: 56
+    text: 6. 補助額は、原則として1月につき5,000円を上限とし、その額は都度会社が決
+    message: 「6.」の次が「6.」です（7 番目のはず）
+    verdict: correct
+    note: item 6 is followed by a second item 6
+  - rule: orthographic-variant
+    line: 66
+    text: ただし、本人から申請があり、会社が認めた場合は、この限りではない。
+    message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 67
+    text: 事を指す。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: yori-as-from
+    line: 72
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
