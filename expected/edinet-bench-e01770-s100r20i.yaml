@@ -1,0 +1,699 @@
+id: edinet-bench-e01770-s100r20i
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 5
+    text: （現　京三エレコス株式会社）を設立。1964年４月京三興業株式会社を設立。197
+    message: 丸括弧を、全角で 127 箇所、半角で 237 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 1949年５月東京証券取引所市場第一部に上場。1961年９月京三金属工業株式会社
+    message: 「月東京証券取引所市場第一部」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 1961年９月京三金属工業株式会社を設立。 大阪証券取引所市場第一部に上場。19
+    message: 「月京三金属工業株式会社」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 1962年12月京三電設工業株式会社（現　京三エレコス株式会社）を設立。1964
+    message: 「月京三電設工業株式会社」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 1971年３月台湾京三股份有限公司を設立。1972年５月京三エンジニアリングサー
+    message: 「月台湾京三股份有限公司」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 2018年４月京三金属工業株式会社を吸収合併する。2020年２月Kyosan E
+    message: 「月京三金属工業株式会社」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: 大阪証券取引所市場第一部に上場。1962年12月京三電設工業株式会社（現　京三エ
+    message: 「大阪証券取引所市場第一部」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 5
+    text: ２ 【沿革】1917年９月商号を東京電機工業株式会社と称し、東京神田淡路町に創立
+    message: この段落は 27 文あります（5 文まで）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 5
+    text: 1921年信号装置の製作販売を開始し、漸次この事業に転換する。1926年９月商号
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: a 沿革 chronology (date + event per row) is read as prose; its entries are noun-ended by form
+  - rule: no-mixed-desumasu
+    line: 5
+    text: 2014年７月京三精機株式会社と京三化工株式会社の合併により、京三精機株式会社が
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 5
+    text: 2018年４月京三金属工業株式会社を吸収合併する。2020年２月Kyosan E
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: taigen-dome-in-prose
+    line: 5
+    text: ２ 【沿革】1917年９月商号を東京電機工業株式会社と称し、東京神田淡路町に創立
+    message: 本文に体言止めが 24 文あります（4 文まで）
+    verdict: false-positive
+    note: a 沿革 chronology (date + event per row) is read as prose; its entries are noun-ended by form
+  - rule: katakana-long-vowel
+    line: 13
+    text: パワ－エレクトロニクス事業100―02なし信号保安装置の設計施工・委託加工なしK
+    message: 「パワ」と「パワー」が混ざっています（この語は 18 回のうち 1 回が「パワ」）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 13
+    text: ４ 【関係会社の状況】　名称住所資本金(百万円)主要な事業の内容議決権の所有(被
+    message: 「台湾京三股份有限公司中華民国台中市潭子区」は漢字が 20 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 13
+    text: ５　安徽三聯京三智能科技有限公司は2022年12月13日に清算を結了いたしました
+    message: 「安徽三聯京三智能科技有限公司」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 13
+    text: ４ 【関係会社の状況】　名称住所資本金(百万円)主要な事業の内容議決権の所有(被
+    message: この文は 867 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 13
+    text: の内容議決権の所有(被所有)割合関係内容役員の兼任等資金援助営業上の取引設備の賃
+    message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 13
+    text: ３　京三システム株式会社2022年10月25日に清算を結了いたしました。
+    message: 「〜いたしました」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 13
+    text: TVM Signallingand　Transportation　Systems
+    message: 「TVM」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 1,004 ［79］パワーエレクトロニクス事業　　229 ［33］全社(共通)"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。204 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 1,404 ［138］  （３）労働組合の状況当社および連結子会社の労働組合の"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。204 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 1,513 ［129］パワーエレクトロニクス事業　　293 ［47］全社(共通"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。204 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 2,098 ［223］ (注) １　従業員数は就業人員であります。２　従業員数"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。204 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 3.1－67.775.416.5－ (注) １　「女性の職業生活における活躍の"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。204 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 17
+    text: （２）提出会社の状況2023年３月31日現在従業員数(名)平均年齢平均勤続年数平
+    message: 「平均年齢平均勤続年数平均年間給与」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 17
+    text: （４）管理職に占める女性労働者の割合、男性労働者の割合、男性労働者の育児休業取得
+    message: 「現在当事業年度補足説明管理職」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 17
+    text: ② 連結子会社2023年３月31日現在 当事業年度補足説明名称管理職に占める女性
+    message: 「当事業年度補足説明名称管理職」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 17
+    text: ③ 提出会社および国内連結子会社の合計2023年３月31日現在当事業年度補足説明
+    message: 「現在当事業年度補足説明管理職」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 17
+    text: ５ 【従業員の状況】（１）連結会社の状況2023年３月31日現在セグメントの名称
+    message: この段落は 15 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: （４）管理職に占める女性労働者の割合、男性労働者の割合、男性労働者の育児休業取得
+    message: この文は 244 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ２　「育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関する法律」（平成
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ② 連結子会社2023年３月31日現在 当事業年度補足説明名称管理職に占める女性
+    message: この文は 198 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: 2023年３月31日現在セグメントの名称従業員数(名)信号システム事業 1,00
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ３　「育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関する法律」（平成
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ③ 提出会社および国内連結子会社の合計2023年３月31日現在当事業年度補足説明
+    message: この文は 185 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の労働組合の2023年３月31日現在の組合員数は1,401人であります。　なお、
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の男女の賃金の差異（％）（注１）全労働者うち正規雇用労働者うちパート・有期労働者
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の男女の賃金の差異（％）（注１）全労働者うち正規雇用労働者うちパート・有期労働者
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の男女の賃金の差異（％）（注２）全労働者うち正規雇用労働者うちパート・有期労働者
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 17
+    text: （４）管理職に占める女性労働者の割合、男性労働者の割合、男性労働者の育児休業取得
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 17
+    text: ３　従業員数欄の〔外書〕は、臨時従業員の年間平均雇用人員であります。４　前連結会
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 17
+    text: ③ 提出会社および国内連結子会社の合計2023年３月31日現在当事業年度補足説明
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 17
+    text: ５ 【従業員の状況】（１）連結会社の状況2023年３月31日現在セグメントの名称
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 17
+    text: 　　　の差異  ① 提出会社2023年３月31日現在当事業年度補足説明管理職に占
+    message: 「賃金」と「の」は一続きの語句ですが、あいだに空白があります（1736 箇所のうち 1 箇所が空いている）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: ［成長戦略］『信号システムの海外事業拡大』『パワーエレクトロニクス事業の拡大』『
+    message: この文は 271 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: １ 【経営方針、経営環境及び対処すべき課題等】当社グループは、企業に求められる経
+    message: この文は 184 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: 中期経営計画の２年目となる第159期（2024年３月期）は、初年度で取り組んでき
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: 今後も当社グループは、企業ビジョン《KYOSAN VISION》の理念を象徴する
+    message: この文は 157 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 21
+    text: のための基盤の確立に取り組むとともに、サステナビリティ基本方針を掲げマテリアリテ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: ［成長戦略］『信号システムの海外事業拡大』『パワーエレクトロニクス事業の拡大』『
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: １ 【経営方針、経営環境及び対処すべき課題等】当社グループは、企業に求められる経
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: 今後も当社グループは、企業ビジョン《KYOSAN VISION》の理念を象徴する
+    message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 21
+    text: KYOSAN VISION》の理念を象徴するコーポレート・スローガン、“Crea
+    message: 「KYOSAN」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 21
+    text: VISION》の理念を象徴するコーポレート・スローガン、“Create for
+    message: 「VISION」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 25
+    text: 可能性があると考えられる主なリスク要因につきましては、以下のようなものがあります
+    message: この文は逃げの表現を 2 つ重ねています（「可能性がある、と考えられる」）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＦＰＤ業界の需要動向等による影響　当社グループのパワーエレクトロニクス事業におけ
+    message: 全角の「ＦＰＤ」と書いています（この文書はふつう半角の「FPD」。19 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＦＰＤ製造装置用電源装置について、顧客要求への対応力強化や高付加価値製品の開発等
+    message: 全角の「ＦＰＤ」と書いています（この文書はふつう半角の「FPD」。19 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＩＴ環境の整備等に努めておりますが、サイバー攻撃の脅威は年々強大化しており、シス
+    message: 全角の「ＩＴ」と書いています（この文書はふつう半角の「IT」。19 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 25
+    text: ３ 【事業等のリスク】当社グループの事業、経営成績、財政状態、株価等に影響を及ぼ
+    message: この段落は 34 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: （１） 事業環境に関するリスク① 信号システム業界の需要動向等による影響当社グル
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: （５） 情報セキュリティに関するリスク当社グループは公共性、公益性、安全性に深く
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: （６） その他のリスク当社グループは、常に新しい会計基準等に基づき会計処理を行い
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: ② 半導体、ＦＰＤ業界の需要動向等による影響　当社グループのパワーエレクトロニク
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: また、気候変動対応については、2022年度から気候関連財務情報開示タスクフォース
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: また、現地従業員のための安全マニュアル等の整備を図っておりますが、当該国・地域の
+    message: この文は 167 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: 本社については免震構造、工場については耐震構造の建屋としており、大型の地震発生に
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: 特に、鉄道信号・道路交通システム等の製品につきましては、交通インフラを支える公共
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 25
+    text: のための安全マニュアル等の整備を図っておりますが、当該国・地域の社会・政治・経済
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 25
+    text: の課題である気候変動の緩和のための取り組みを推進しリスクの低減を図るとともに、脱
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: person-consistency
+    line: 25
+    text: 本社・工場を拠点としております。本社については免震構造、工場については耐震構造の
+    message: 「本社」と書いています（この文書はふつう「当社」。16 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: 本社 here is the head-office site (本社（東京都江東区）), not the company referring to itself
+  - rule: person-consistency
+    line: 25
+    text: 本社については免震構造、工場については耐震構造の建屋としており、大型の地震発生に
+    message: 「本社」と書いています（この文書はふつう「当社」。16 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: また、現地従業員のための安全マニュアル等の整備を図っておりますが、当該国・地域の
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 今後も引き続き事業継続計画の定期的な見直し、改善を図ってまいります。 ② 新型コ
+    message: 「〜まいります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 当社グループは、情報システム部門の強化やＩＴ環境の整備等に努めておりますが、サイ
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: （１） 事業環境に関するリスク① 信号システム業界の需要動向等による影響当社グル
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: （５） 情報セキュリティに関するリスク当社グループは公共性、公益性、安全性に深く
+    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: （６） その他のリスク当社グループは、常に新しい会計基準等に基づき会計処理を行い
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: また、当社の売上の多くは、顧客からの個別案件であり、顧客の設備投資計画や更新時期
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは、安全対策とセキュリティを一段と強化し、重要な財産である人的資源と
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは、情報システム部門の強化やＩＴ環境の整備等に努めておりますが、サイ
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 25
+    text: )のフレームワークをもとに、様々なリスクと機会の把握に努めると共に、「脱炭素社会
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: TCFD：Task Force on Climate-relatedFinanc
+    message: 「TCFD」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: total-mismatch
+    line: 29
+    text: 6,655百万円であります。研究開発につきましては、事業戦略の上で急務となってお
+    message: 合計「6,655百万円」が、内訳の金額の和（6,654,000,000円）と合いません
+    verdict: false-positive
+    note: each figure is rounded to 百万円, so the parts can miss the total by one unit
+  - rule: max-kanji-continuous
+    line: 33
+    text: その主なものは経常的な更新、現在の経済環境に対応する省力化・合理化投資および本社
+    message: 「本社工場生産拠点再構築」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: （２）国内子会社2023年３月31日現在会社名事業所名(所在地)セグメントの名称
+    message: この文は 248 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: ２ 【主要な設備の状況】（１）提出会社2023年３月31日現在事業所名(所在地)
+    message: この文は 326 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 41
+    text: ３ 【設備の新設、除却等の計画】（１）重要な設備の新設等 会社名セグメントの名称
+    message: 「予定総額既支払額着手完了株式会社京三製作所信号」は漢字が 23 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: ３ 【設備の新設、除却等の計画】（１）重要な設備の新設等 会社名セグメントの名称
+    message: この文は 162 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 41
+    text: ３ 【設備の新設、除却等の計画】（１）重要な設備の新設等 会社名セグメントの名称
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: max-kanji-continuous
+    line: 49
+    text: ② 【発行済株式】 種類事業年度末現在発行数(株)(2023年３月31日)提出日
+    message: 「登録認可金融商品取引業協会名内容普通株式」は漢字が 20 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: ② 【発行済株式】 種類事業年度末現在発行数(株)(2023年３月31日)提出日
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 49
+    text: または登録認可金融商品取引業協会名内容普通株式62,844,25162,844,
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。8 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 53
+    text: （４）【発行済株式総数、資本金等の推移】 年月日発行済株式総数増減数(株)発行済
+    message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    text: （４）【発行済株式総数、資本金等の推移】 年月日発行済株式総数増減数(株)発行済
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: ① 【発行済株式】   2023年３月31日現在区分株式数(株)議決権の数(個)
+    message: この文は 297 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 61
+    text: ② 【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住
+    message: 「株式会社京三製作所横浜市鶴見区平安町二丁目」は漢字が 21 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: ② 【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住
+    message: この文は 220 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: （３）【株主総会決議又は取締役会決議に基づかないものの内容】 区分株式数(株)価
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 73
+    text: （４）【取得自己株式の処理状況及び保有状況】 区分当事業年度当期間株式数(株)処
+    message: 「区分当事業年度当期間株式数」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: （４）【取得自己株式の処理状況及び保有状況】 区分当事業年度当期間株式数(株)処
+    message: この文は 247 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 73
+    text: の総額(百万円)株式数(株)処分価額の総額(百万円)引き受ける者の募集を行った取
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 77
+    text: ３ 【配当政策】 当社グループは、「鉄道や道路交通の信号システム事業」をはじめと
+    message: この段落は 11 文あります（5 文まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 77
+    text: ３ 【配当政策】 当社グループは、「鉄道や道路交通の信号システム事業」をはじめと
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    text: ３ 【配当政策】 当社グループは、「鉄道や道路交通の信号システム事業」をはじめと
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unused-definition
+    line: 81
+    text: 以下「連結財務諸表規則」という。)に基づいて作成しております。
+    message: 「連結財務諸表規則」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: unused-definition
+    line: 85
+    text: 以下「財務諸表等規則」という。)に基づいて作成しております。
+    message: 「財務諸表等規則」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 89
+    text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度(2022
+    message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 93
+    text: 当社は、連結財務諸表等の適正性を確保するために公益財団法人財務会計基準機構へ加入
+    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 97
+    text: " 固定資産    有形固定資産     建物及び構築物（純額）10,41510,"
+    message: 日本語と前の数字のあいだを、空ける所が 40 箇所、詰める所が 141 箇所あります。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 97
+    text: ①【連結貸借対照表】           (単位：百万円)          前
+    message: この文は 1041 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 101
+    text: 【連結損益計算書】           (単位：百万円)          前連
+    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: 【連結損益計算書】           (単位：百万円)          前連
+    message: この文は 773 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: 【連結包括利益計算書】           (単位：百万円)
+    message: この文は 250 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 109
+    text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高6,2704,62520
+    message: 「資本資本」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: doubled-word
+    line: 109
+    text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高6,2704,62529
+    message: 「資本資本」で語が重なっています。どちらかが余分です
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 109
+    text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
+    message: 「株主資本資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 32 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
+    message: この文は 1153 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 109
+    text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 113
+    text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
+    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
+    message: この文は 967 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 113
+    text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
+    message: この文に中黒が 7 個あります（5 個まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 117
+    text: (ハ)受注損失引当金受注契約に係る損失に備えるため、当連結会計年度末において将来
+    message: 「受注損失引当金受注契約」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 117
+    text: ２　持分法の適用に関する事項持分法適用関連会社数は2社であります。非連結子会社の
+    message: 「事項持分法適用関連会社数」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 117
+    text: 持分法適用会社である安徽三聯京三智能科技有限公司は、2021年10月27日開催の
+    message: 「安徽三聯京三智能科技有限公司」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 117
+    text: (連結財務諸表作成のための基本となる重要な事項)１　連結の範囲に関する事項連結子
+    message: この段落は 37 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 117
+    text: ４　会計方針に関する事項（１）重要な資産の評価基準および評価方法(イ)有価証券そ
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 117
+    text: ４　会計方針に関する事項（１）重要な資産の評価基準および評価方法(イ)有価証券そ
+    message: 「によっております」が 10 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 117
+    text: の平均残存勤務期間以内の一定の年数（５年）による定額法により按分した額をそれぞれ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 117
+    text: または定率法によっております。建物(建物付属設備は除く)a 1998年３月31日
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。8 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 117
+    text: 事会において解散および清算することを決議し、清算手続を進めてまいりましたが、20
+    message: 「事」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 117
+    text: 手続を進めてまいりましたが、2022年12月13日に清算を結了いたしましたので、
+    message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 117
+    text: （６）重要なヘッジ会計の処理(イ)ヘッジ会計の方法金利スワップについては、特例処
+    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 117
+    text: ４　会計方針に関する事項（１）重要な資産の評価基準および評価方法(イ)有価証券そ
+    message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 117
+    text: 建物及び構築物  ３～50年その他          ２～20年　(ロ)無形固定
+    message: 「〜おります」で終わる文が 8 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 117
+    text: 当社グループは、信号システム事業においては鉄道信号システム、道路交通管制システム
+    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 117
+    text: ４　会計方針に関する事項（１）重要な資産の評価基準および評価方法(イ)有価証券そ
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 117
+    text: 当社グループは、信号システム事業においては鉄道信号システム、道路交通管制システム
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 117
+    text: 持分法適用会社である安徽三聯京三智能科技有限公司は、2021年10月27日開催の
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged

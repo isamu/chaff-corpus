@@ -1,0 +1,68 @@
+id: yuho-e31918-policy
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 1
+    text: )経営方針当社グループは、「弊社を取り巻く全ての『困った』を解決することで社会に
+    message: 丸括弧を、全角で 6 箇所、半角で 5 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ３Ｒ活動を中心とした取り組みを進めて参ります。(5)優先的に対処すべき事業上及び
+    message: 全角の「３Ｒ」と書いています（この文書はふつう半角の「3R」。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
+    message: この段落は 28 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: 現在の受注システムを基本に、生産から販売まで、当社サプライチェーンに側した機能を
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 1
+    text: (4)経営戦略等当社グループは経営基盤の強化と持続的な成長を続けていくため、以下
+    message: 「してまいります。」が 6 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 1
+    text: の１件当たりの単価の下落など市場規模が微減の傾向にあり、当社グループの経営環境は
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1
+    text: 参ります。(5)優先的に対処すべき事業上及び財務上の課題①収益基盤の強化当社は胡
+    message: 「参る」と書いています（この文書はふつう「まいる」と書く語です。17 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1
+    text: 始めとする、新たな周辺事業の立ち上げに取り組んでいくことで、複数にわたる新たな収
+    message: 「始め」と書いています（この文書はふつう「はじめ」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: このような状況下、当社グループは主力のフラワービジネス支援事業を中心に既存事業の
+    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: したがって、優秀な人材の確保に努めるとともに、人材育成の強化、人材の適正配置を行
+    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 一方で、既に取り組んでおります緑化事業や子会社である日本プリザーブドフラワー協会
+    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: (1)経営方針当社グループは、「弊社を取り巻く全ての『困った』を解決することで社
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: ④ナーセリー支援事業の強化当社は胡蝶蘭農園との業務提携を通じて、農園事業に進出し
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged

@@ -1,0 +1,148 @@
+id: yuho-e27761-mda
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 1
+    text: (営業活動によるキャッシュ・フロー)営業活動の結果得られた資金は、35億14百万
+    message: 括弧を「(」と書いています（この文書はふつう「（」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (投資活動によるキャッシュ・フロー)投資活動の結果使用した資金は、11億76百万
+    message: 括弧を「(」と書いています（この文書はふつう「（」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (財務活動によるキャッシュ・フロー)財務活動の結果使用した資金は、12億95百万
+    message: 括弧を「(」と書いています（この文書はふつう「（」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )営業活動の結果得られた資金は、35億14百万円（前事業年度は42億29百万円）
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )投資活動の結果使用した資金は、11億76百万円（前事業年度は８億38百万円）と
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )生産、受注及び販売の実績①生産実績当社は生産活動を行っておりませんので、該当事
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )経営成績等の概要①経営成績の状況当事業年度におけるわが国経済は、新型コロナウイ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )経営者の視点による経営成績等の状況に関する分析・検討内容文中の将来に関する事項
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )財務活動の結果使用した資金は、12億95百万円（前事業年度は31億59百万円）
+    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 1報告セグメント計16,513116.2館外飲食事業お祭り一番館等394134.
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 1飲食部門3,736116.7その他301112.1報告セグメント計16,513
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 2館外飲食事業お祭り一番館等394134.3合計16,907116.5（注）主な
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 3,736116.7その他301112.1報告セグメント計16,513116.2
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 3合計16,907116.5（注）主な相手先別の売上実績及び当該売上実績の総売上
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 5（注）主な相手先別の売上実績及び当該売上実績の総売上実績に対する割合は、当該割
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 7その他301112.1報告セグメント計16,513116.2館外飲食事業お祭り
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。34 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(１)経営
+    message: この段落は 43 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ③資本の財源及び資金の流動性についての分析ａ．資金調達の方針当社は、原則として、
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(１)経営
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: これは、売上高が増加した一方で、原材料価格の高騰により売上原価19億81百万円（
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: セグメントの名称事業部門の名称金額（百万円）前年同期比（％）ホテル宿泊事業宿泊部
+    message: この文は 202 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 1
+    text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
+    message: 「百万円）となりま」が 13 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 1
+    text: の状況の分析】(１)経営成績等の概要①経営成績の状況当事業年度におけるわが国経済
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: ③資本の財源及び資金の流動性についての分析ａ．資金調達の方針当社は、原則として、
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これは、主に短期借入金の純減額１億20百万円（前事業年度は20億円）、長期借入金
+    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これは、主に税引前当期純利益36億53百万円（前事業年度は27億43百万円）、減
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これは、売上高が増加した一方で、原材料価格の高騰により売上原価19億81百万円（
+    message: 「は」で出した主題から述語まで 162 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
+    message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
+    verdict: unjudged

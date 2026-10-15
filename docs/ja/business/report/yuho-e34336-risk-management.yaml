@@ -1,0 +1,23 @@
+id: yuho-e34336-risk-management
+title: "株式会社ギフトホールディングス 有価証券報告書（2022-11-01〜2023-10-31）: リスク管理（サステナビリティ）"
+language: ja
+genre: business/report
+format: text
+source:
+  url: https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SP8Q,,
+  fetched: 2026-10-15
+  hf:
+    dataset: numad/yuho-text-2024
+    config: default
+    split: train
+    offset: 532
+    field: text
+    revision: 2993206922ead839ce003e2faa65cd5d2ff07607
+    file: yuho-202401.jsonl
+license:
+  name: PDL-1.0
+  url: https://disclosure2dl.edinet-fsa.go.jp/guide/static/disclosure/WZEK0030.html
+  note: 出典：EDINET閲覧（提出）サイト（https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SP8Q,,）、PDL1.0（https://www.digital.go.jp/resources/open_data/public_data_license_v1.0）。EDINET閲覧（提出）サイト（https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SP8Q,,）より抜粋して作成（抜粋：numad/yuho-text-2024（Apache-2.0）、収録：chaff-corpus。本文は同データセットの text 欄のまま）
+redistribute: true
+notes: 有価証券報告書の一節（XBRL タグ RiskManagementTextBlock、書類管理番号 S100SP8Q、提出日 2024-01-31）。データセットが改行と表の区切りを落としているため、本文は一行で、表は文字が続いたままになっている。
+sha256: 326923830310c5f3566b609482685bbd90bd2301e5a7793a27b8083235e0bfa3

@@ -1,0 +1,84 @@
+id: yuho-e00555-contracts
+chaff: 0.34.0
+findings:
+  - rule: bracket-nesting
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: 括弧が 5 重になっています（2 重まで）
+    verdict: false-positive
+    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
+  - rule: bracket-width-consistency
+    line: 1
+    text: (2）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 1
+    text: (3）当社は遊休不動産の有効活用を検討し、ヤマト運輸株式会社との間に1998年６
+    message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 1
+    text: (4）当社は賃貸中の店舗建替に伴い関東三菱自動車販売株式会社（現・東日本三菱自動
+    message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 1
+    text: (5）当社は再開発事業として建設した新館店舗を株式会社アイリスプラザとの間で20
+    message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: max-kanji-continuous
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: 「東日本三菱自動車販売株式会社」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: the kanji run is a company's registered name
+  - rule: max-sentence-length
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: この文は 653 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: max-ten
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: topic-predicate-distance
+    line: 1
+    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
+    message: 「は」で出した主題から述語まで 621 字あります（80 字まで）
+    verdict: false-positive
+    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）1992年９月１日、当社はイタリアのゼニア・バルファー社との間に業務提携契約を
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）当社は再開発事業として建設した新館店舗を株式会社アイリスプラザとの間で2015
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビング
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）当社は賃貸中の店舗建替に伴い関東三菱自動車販売株式会社（現・東日本三菱自動車販
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: ）当社は遊休不動産の有効活用を検討し、ヤマト運輸株式会社との間に1998年６月1
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
