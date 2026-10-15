@@ -19,7 +19,7 @@ docs/<lang>/<genre>/<id>.md     the text (or <id>.txt for plain text, read by ch
 docs/<lang>/<genre>/<id>.yaml   what the document is: source, licence, language, genre, sha256 of the text
 expected/<id>.yaml              every finding chaff gives on it, each with a verdict
 allowlist.yaml                  published contact addresses and numbers that may stay in a text
-scripts/                        validate.ts, run.ts and the pure functions they use
+scripts/                        the scripts behind the yarn commands; scripts/lib/ holds the pure functions they use
 ```
 
 `<genre>` is a chaff genre such as `business/report` or `legal/statute` (`npx chaff genres` lists them).
@@ -116,6 +116,10 @@ on the pull request, a maintainer runs `check` from the Actions tab on that bran
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). In short: add the text and its `.yaml`, run `yarn validate` and
 `yarn run-corpus --update`, judge what you can, and open a pull request.
+
+If chaff got a document wrong, a wrong finding or one it should give and does not, send it as a case: see
+[Report a case where chaff is wrong](CONTRIBUTING.md#report-a-case-where-chaff-is-wrong). CI accepts it as an open case,
+isamu/lab tracks it in an issue labelled `corpus-case`, and a chaff release that fixes it settles it here.
 
 ## Licences
 
