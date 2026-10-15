@@ -2,6 +2,7 @@
 import { createHash } from "node:crypto";
 import { isHttpUrl, isNonEmptyString, isRecord, optionalString, type UnknownRecord } from "./guards.ts";
 import type { Parsed } from "./expected.ts";
+import { isSourceFormat, SOURCE_FORMATS, type SourceFormat } from "./source-format.ts";
 
 export const LANGUAGES = ["ja", "en"] as const;
 export type Language = (typeof LANGUAGES)[number];
@@ -24,7 +25,8 @@ export type Meta = {
   readonly language: Language;
   readonly genre: string;
   readonly format: Format;
-  readonly source: { readonly url: string; readonly fetched: string };
+  /** format: what source.url serves when it is not the text itself (the text is that, converted). */
+  readonly source: { readonly url: string; readonly fetched: string; readonly format?: SourceFormat };
   readonly license: { readonly name: string; readonly url?: string; readonly note?: string };
   readonly redistribute: boolean;
   readonly sha256: string;
@@ -59,6 +61,7 @@ const sourceProblems = (source: unknown): string[] => {
   return [
     ...(isHttpUrl(source["url"]) ? [] : ["source.url must be an http(s) URL"]),
     ...(typeof source["fetched"] === "string" && DATE_PATTERN.test(source["fetched"]) ? [] : ["source.fetched must be a date (YYYY-MM-DD)"]),
+    ...(source["format"] === undefined || isSourceFormat(source["format"]) ? [] : [`source.format must be one of ${SOURCE_FORMATS.join(", ")}`]),
   ];
 };
 
@@ -88,7 +91,7 @@ const metaOf = (raw: UnknownRecord): Meta => {
     language: isLanguage(raw["language"]) ? raw["language"] : "en",
     genre: String(raw["genre"]),
     format: isFormat(raw["format"]) ? raw["format"] : "markdown",
-    source: { url: String(source["url"]), fetched: String(source["fetched"]) },
+    source: { url: String(source["url"]), fetched: String(source["fetched"]), ...(isSourceFormat(source["format"]) ? { format: source["format"] } : {}) },
     license: { name: String(license["name"]), ...(url === undefined ? {} : { url }), ...(note === undefined ? {} : { note }) },
     redistribute: raw["redistribute"] === true,
     sha256: String(raw["sha256"]),
