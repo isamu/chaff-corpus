@@ -1,8 +1,0 @@
-id: yamano-akashi-api
-chaff: 0.34.0
-findings:
-  - rule: latin-spacing
-    line: 4
-    text: " バックエンド"
-    message: 日本語と英字のあいだを、空ける所が 13 箇所、詰める所が 20 箇所あります。この文書には書き方が二通りあります
-    verdict: unjudged

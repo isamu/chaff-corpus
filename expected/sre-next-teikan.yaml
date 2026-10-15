@@ -1,8 +1,0 @@
-id: sre-next-teikan
-chaff: 0.34.0
-findings:
-  - rule: no-mixed-desumasu
-    line: 7
-    text: ※ 本ドキュメントは法人の正式な定款と全く同じ内容となっていますが、理事・社員の
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: unjudged
