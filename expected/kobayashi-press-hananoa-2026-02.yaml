@@ -1,0 +1,67 @@
+id: kobayashi-press-hananoa-2026-02
+chaff: 0.34.0
+findings:
+  - rule: preamble-length
+    line: 5
+    sha256: e797d9b0b7070ae558a71690cb66d94a20766e85dfd1c0a318cbce7a0b2e166f
+    verdict: unjudged
+  - rule: date-without-year
+    line: 12
+    sha256: 367b683d9f0c1895e01cc298f37366985f7ba97dc499a258d9e74ef7439a28d1
+    verdict: unjudged
+  - rule: date-without-year
+    line: 12
+    sha256: 843de66071c3af40a461cf5a011d787ad47eaec8298fd87bc82245a7c3b5e36d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 12
+    sha256: 871592d40811e4d7e271edb4f6800f841536df96074c026e606d5a203ca8dafc
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 12
+    sha256: ca9558e38c840e5b9ce93d67d4e84fa84f9fd4cf02400b47ddc3e7e9cfc08f3b
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 12
+    sha256: 00087d8d96e89f9a7091be00a6e04089b46f3a8c1cc5943cd52f6d74b47c9b83
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 14
+    sha256: 1307c779c87ce62ed86e13ea8cc5ee7b884e1752804bcf9555e0092105070705
+    verdict: unjudged
+  - rule: url-run-on
+    line: 14
+    sha256: aa9fa2a5ad01c1a4cc62e90a138bb45a56f2b0762548734a6001daea2211624c
+    verdict: unjudged
+  - rule: url-run-on
+    line: 15
+    sha256: f431635f3ccfd747c61ec6be8e529d9349250c6531ae2cbb982b908c7fd9e34f
+    verdict: unjudged
+  - rule: name-variant
+    line: 33
+    sha256: 79558846675df88696ae5f6ee7f1b6ff6b3c56f2aec9b1025e7f05880f95606e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 36
+    sha256: 5c8b6fb53b16e8fa3a365890bfa3c687cea37df7574a5a51394bf2a1fa343845
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    sha256: a11fd82358cd3a95d943ebddc8ee914cb2d7aa2e360dc2280d20e8c477978718
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    sha256: a6c6c8a63d497b9f8347519e7ad0bb2d644f03562c7cafc08e8cbe317c9bbb87
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 41
+    sha256: 9dccead19e7a8b5f64f0d0b5d07b518eb21159919e7d2e50134ec1f5ac1124ec
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 42
+    sha256: e166f5f5adfa38518e5341c7c5e18b5ffe0609dda129bb456ba677c0c769a4b0
+    verdict: unjudged
+  - rule: url-run-on
+    line: 48
+    sha256: 6432a4e3183435951930f87b5d6d8094bb0ae4649371c21110c84b99b814920b
+    verdict: unjudged

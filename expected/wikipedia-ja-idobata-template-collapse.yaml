@@ -1,0 +1,39 @@
+id: wikipedia-ja-idobata-template-collapse
+chaff: 0.34.0
+findings:
+  - rule: orthographic-variant
+    line: 2
+    sha256: 3b3d93f1883ab757885cc391cfb69a5e1cb875df27466351db2efea90507354d
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 4
+    sha256: 3d36d23943d51422287c667fa78867ac812fe29a39ebe4c25533f73d9eafc0ff
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 4
+    sha256: 64aff5d0e69d5c3e06dd928004a19880bdfeb090c696d52e65f25249bb6d6962
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 4
+    sha256: ad8ea63f82be2cacf3cf9c5ca7f0a94210f02870e4dba4d6825dd678a27bc1f2
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 4
+    sha256: b2525bcf218479905360f0081169add403283f25186bbeac0dd8b38dca3f1fb7
+    verdict: unjudged
+  - rule: exclamation-width-consistency
+    line: 4
+    sha256: 46111d6e2a40a0b86420ace25545c22aad7eca1504d66a390d94081b0b593b8a
+    verdict: unjudged
+  - rule: stray-space
+    line: 6
+    sha256: 2227c3b52abdf6a32922cbcfc8054bfa610bacaf48e90ebb37f17f5a1200f586
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 14
+    sha256: f3b6f905267fc0372ed513641703f9fc7922440b2cdc7fa19b5fdeb852864a46
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 14
+    sha256: 9b0fe5fa075fc9c34fbb548e9ce8f5e549a6dfd0917dc9eac6b2a195c5a0ba35
+    verdict: unjudged

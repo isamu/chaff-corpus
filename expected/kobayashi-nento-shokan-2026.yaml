@@ -1,0 +1,11 @@
+id: kobayashi-nento-shokan-2026
+chaff: 0.34.0
+findings:
+  - rule: title-length
+    line: 7
+    sha256: 1d4a80e23b301d7b4c821a92cbd86d22f21d9f8a803b75d65cca8d6b429497ca
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 20
+    sha256: 60357a5b6c4699d8f419b0a4429aa11ea673667088738272e7256a0d7f7fbe54
+    verdict: unjudged

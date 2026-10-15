@@ -1,0 +1,19 @@
+id: chrome-blog-pwa-origin-migration
+chaff: 0.34.0
+findings:
+  - rule: date-format-consistency
+    line: 9
+    sha256: 4fc9ba7e34bcc493a3e209cc36445fd1278a2861de87fed315fcfb530438e300
+    verdict: unjudged
+  - rule: heading-echo
+    line: 28
+    sha256: 3507e2edab388529fdc78f6dc83fdecf98721ccc7d5d8b64eaa259d0c6484b0a
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 35
+    sha256: fe7d708af0452049cd5c77ccdc403d9e897135d3197ee3510cee9c46fe981ebc
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 139
+    sha256: 5d0aafb2274c3f356b0c2a9a4406f6eb7983ae05880a774f887e5192767ee8b1
+    verdict: unjudged

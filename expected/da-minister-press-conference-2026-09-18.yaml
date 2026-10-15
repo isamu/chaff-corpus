@@ -1,0 +1,155 @@
+id: da-minister-press-conference-2026-09-18
+chaff: 0.34.0
+findings:
+  - rule: topic-predicate-distance
+    line: 14
+    sha256: 2d418a16f34671c51ce3e1f3e3142fb4aff4d17a8e05dc0e135962d699ef1991
+    verdict: unjudged
+  - rule: clause-chain
+    line: 15
+    sha256: 80131d22de61dbd11b3bcb10d1a34ad37b7582d6fdb8c6b77dbca8f3e4de6238
+    verdict: unjudged
+  - rule: clause-chain
+    line: 22
+    sha256: 7894a37fbdf53f59970481de90d263db2746e122eb7f31bf493d50e45cb9e490
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 27
+    sha256: 18bf180e75ca2f0b19a841885692ccfd5448107c1ec96ca72e02fb33489fd0fd
+    verdict: unjudged
+  - rule: max-ten
+    line: 29
+    sha256: 57a3f63c36d1f2741759ffe6ddb37a729359798a8b41bb8c9a1aa061b92c984f
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 29
+    sha256: 57a3f63c36d1f2741759ffe6ddb37a729359798a8b41bb8c9a1aa061b92c984f
+    verdict: unjudged
+  - rule: max-ten
+    line: 33
+    sha256: f6f0de3323ab2aafefb114922cdc0b5d835438c928772b36847255e5b448c6e2
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 33
+    sha256: f879f16211e7ec254ce2b1bc183f9fe046d4af656b25f5d3e8cdb3bf0b891f36
+    verdict: unjudged
+  - rule: clause-chain
+    line: 37
+    sha256: e57b623044ad48975e58c21911e560573d58bed099381afcbdbbc9bbd660addf
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 37
+    sha256: e57b623044ad48975e58c21911e560573d58bed099381afcbdbbc9bbd660addf
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 37
+    sha256: e57b623044ad48975e58c21911e560573d58bed099381afcbdbbc9bbd660addf
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 41
+    sha256: 7a98673cd795d438dc79c08e84fe34893b9df97edb3426f2849cc7fc831e5059
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 41
+    sha256: 5aa0885203d8c81affc63f955538372e5885067cff0a7eb86816625dc5f43d7e
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 41
+    sha256: 5f1fa19e306ff928ff2a86ec2bed4e506f321216c8f98fda1aa8c67a6cb5cd08
+    verdict: unjudged
+  - rule: clause-chain
+    line: 45
+    sha256: 265f933c7c7205bc91177f900125164fe3ad20cd2decd338594b14b1376e59b8
+    verdict: unjudged
+  - rule: clause-chain
+    line: 45
+    sha256: 93847c011e164e6d3ad5e6300e9a31e97a786058ad9003c37f475a9ae20e748d
+    verdict: unjudged
+  - rule: clause-chain
+    line: 45
+    sha256: b037def88ba89bfc51ba4541a99ae93aac3f581b9d5842ee49ee49b2c50a33ff
+    verdict: unjudged
+  - rule: max-ten
+    line: 45
+    sha256: 93847c011e164e6d3ad5e6300e9a31e97a786058ad9003c37f475a9ae20e748d
+    verdict: unjudged
+  - rule: max-ten
+    line: 45
+    sha256: b037def88ba89bfc51ba4541a99ae93aac3f581b9d5842ee49ee49b2c50a33ff
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 45
+    sha256: 1207c7db822cf4becebb209d0627e13fdcbab73c7ce318ec9cd5c37d8d7a341f
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 45
+    sha256: 93847c011e164e6d3ad5e6300e9a31e97a786058ad9003c37f475a9ae20e748d
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 45
+    sha256: b037def88ba89bfc51ba4541a99ae93aac3f581b9d5842ee49ee49b2c50a33ff
+    verdict: unjudged
+  - rule: clause-chain
+    line: 49
+    sha256: 0c77d0d72ee4f1f7ff4b32c38291e56f33f9a5ea473a185736646b076850cb82
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 49
+    sha256: 43cfc9bb7af9ccb96bf9c376767138f4c74bd8d2153f7affb9f8ee54fa5e7c73
+    verdict: unjudged
+  - rule: max-ten
+    line: 53
+    sha256: 8bb535592e3b8faf970395c41340ff2d32a22ac1a577d9073755355bc30b270e
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 53
+    sha256: 31ded571dd346672c4a59408e23837fc58daf998fc294ffcc8892a4fce3a0a15
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 53
+    sha256: 31ded571dd346672c4a59408e23837fc58daf998fc294ffcc8892a4fce3a0a15
+    verdict: unjudged
+  - rule: clause-chain
+    line: 57
+    sha256: 6d58f5f2d2b152bf97c6e2abcf18438a368c845239cdb950b93d71c8708470a6
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 57
+    sha256: 6d58f5f2d2b152bf97c6e2abcf18438a368c845239cdb950b93d71c8708470a6
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 57
+    sha256: a74f2d6089c6c98aefe232b8acfacbc86107ddf6b9e3fc286ef526d1b5cf96fa
+    verdict: unjudged
+  - rule: clause-chain
+    line: 61
+    sha256: 185b67f70b64405dec2e840831e3f88c88a4255b092d83183b940ab1b2136720
+    verdict: unjudged
+  - rule: clause-chain
+    line: 61
+    sha256: 7ed4a193af09e845fbaf72dcdc475cfaf650ffceefa97e61e0fe513773b369d8
+    verdict: unjudged
+  - rule: clause-chain
+    line: 61
+    sha256: 9b867fb0e8d38b0a01b23869791b19cc4af45dc5ac4aa1ac5769d45bcd3fe0b0
+    verdict: unjudged
+  - rule: max-ten
+    line: 61
+    sha256: 185b67f70b64405dec2e840831e3f88c88a4255b092d83183b940ab1b2136720
+    verdict: unjudged
+  - rule: max-ten
+    line: 61
+    sha256: 7ed4a193af09e845fbaf72dcdc475cfaf650ffceefa97e61e0fe513773b369d8
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 61
+    sha256: 7ed4a193af09e845fbaf72dcdc475cfaf650ffceefa97e61e0fe513773b369d8
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 61
+    sha256: 9b867fb0e8d38b0a01b23869791b19cc4af45dc5ac4aa1ac5769d45bcd3fe0b0
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 63
+    sha256: 53ee9619052e968c3e750c8bd96e807efe2b8afffd24d179dc9e20b041311eb3
+    verdict: unjudged

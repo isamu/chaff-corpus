@@ -1,0 +1,59 @@
+id: moriguchi-satsuki-gakuen-ijime-houshin
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    sha256: 550d52da9ce26c646487d9611acee9869c56a085f35c538b8cbcbc6ac2cae04a
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 9
+    sha256: 556df6dc509012edcfe71665c9df5ff400697e4496d1120b276a79a4d97e0807
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 11
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 20
+    sha256: f6bbd1e95664244337eab01e7ef4b3e8362cf6841d523400b0813f8dad0dac5c
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 30
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 46
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    sha256: c2afe2536fea2fb75e78b3d4caff763ab1125ff680f45e29f10c2c179e230f32
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 60
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 69
+    sha256: 23c267654d30f44a59972d5a7c1d0bae601fcb80cbedaa38cd5bc9a233b4c44b
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 78
+    sha256: 778beca4860625335feb1b8a4303211f57daf6c8bf1b79f07ebadf410daec083
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 80
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 90
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 92
+    sha256: 0387a79aa54b627050c9fcb1714dfc5f6c3a2d91634467ecdca91a06bec3f7da
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 104
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged

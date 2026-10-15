@@ -1,0 +1,147 @@
+id: wikipedia-ja-talk-oden
+chaff: 0.34.0
+findings:
+  - rule: exclamation-width-consistency
+    line: 5
+    sha256: 7ed1e1d60a0b4a9b85cf893ce941f093336514708509c90343d5bc2c66f3186a
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 7
+    sha256: 623d0dcf9bfb4369c5b99254d8b835b6898b4808b84c1f31c9f469ba3602345f
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 12
+    sha256: a9015a21695366a843e17d589398274ef60429473cf8bcda5cc4f1044f9e6056
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 12
+    sha256: 2a61e863c236857c40ab82140137766084a6f21c51526486823d49dc29811af7
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 14
+    sha256: e2cc7f810392cbdc9661e2f5235a348c4a921dec5b2ae70b8b0b5da6e5f5722e
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 14
+    sha256: e2cc7f810392cbdc9661e2f5235a348c4a921dec5b2ae70b8b0b5da6e5f5722e
+    verdict: unjudged
+  - rule: exclamation-width-consistency
+    line: 17
+    sha256: 05b165dc6382dd73db36f0f13c168355ec05e7470fa81b99fd4363e8bd69c425
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 20
+    sha256: 9a5f7b212343e38b40ee921db2e3a96f75421523ae964815ff65650806ac12d3
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 31
+    sha256: 1456a528632580055cb87c8cee631d66e8dc6734d4b18d79671ca715a8c58879
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 31
+    sha256: c66fa4ae74c70469a53065b330f97d2d04847b6cb3d1e81f401675088d15eb98
+    verdict: unjudged
+  - rule: clause-chain
+    line: 32
+    sha256: c4a6798c4818c3a088c0547e7b690001176bb19aafe5898f6745f210869759d2
+    verdict: unjudged
+  - rule: date-without-year
+    line: 32
+    sha256: 2f3611fb952fd5fb4c934bc29094b38eaf5f8f47d0df6d64dfe5f7fd386b2ca9
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 32
+    sha256: 1cea58c4afd68d9fcc4ef36da694149810231c4820e3e2faf292ca813b3f54d5
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 32
+    sha256: 9372d3640dee539da1e963abdc28f231873c43fab796d620c895c4242c6eb2b0
+    verdict: unjudged
+  - rule: nonstandard-word
+    line: 34
+    sha256: 26e165585f3be47f5b35f04bea307386f90f8bbb92a68750174169f7fe27ca07
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 34
+    sha256: fbfbcc267360e0c39dc3616afa5614a7db1639f71dae16b86b38cd7b854dab33
+    verdict: unjudged
+  - rule: clause-chain
+    line: 38
+    sha256: fbe8f0526e7452806c9311bcf9b2e843bb5d1f02e2d0029c5cc69aeaaa1cb914
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 38
+    sha256: fbe8f0526e7452806c9311bcf9b2e843bb5d1f02e2d0029c5cc69aeaaa1cb914
+    verdict: unjudged
+  - rule: sentence-initial-conjunction-run
+    line: 38
+    sha256: 40cd6d28a0ba0ce45742c46688bae304002f1651e586ee15bb697978ca98f5d1
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 38
+    sha256: 1eb4a2a782c194c417904a4e9249e847f813bc17386ee46645800de36d76be21
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 40
+    sha256: a495dc90deefd62e9164ba2a283350b01a1a9b9143b64505e1283d676e78dab1
+    verdict: unjudged
+  - rule: stray-space
+    line: 40
+    sha256: dd0d55f94241fd92883a2b57564faad6c1f2badc3f37b188d45b9a24b5cc8ca1
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 40
+    sha256: d50e496aa8d89e421e57dbdbb164508b4d8f720cb581b9ea49fc344c2115d3d1
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 44
+    sha256: 3354593f21a2ad57248f01af0f9b6b32a1b0fb721696f1f2f03e82a9935d0038
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 46
+    sha256: d96e61a49cb821710cd0411e8b1dfaaf317bf874b370d8b07283220b2239edee
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 48
+    sha256: 42a453f8e1edf82df3249885890d0d0635a84be82237d7a1f14da62e489a9353
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 51
+    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 51
+    sha256: e25eaba90e65cd21339afd5f53ba0b0f76ee64c5e3d5ddad27ad08ad0f8692b2
+    verdict: unjudged
+  - rule: clause-chain
+    line: 51
+    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    sha256: fd0339c25112da9aeb444812ba88463587db768863d6d5c8fc39f92db2d21b15
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 51
+    sha256: 17bccbcc2dac69d452abc20796340e6f8c16857621e1e8dd685cbff93a64578f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 51
+    sha256: 93805e1632d2cfdcb01234cf7d4a85f27b7113c48dd54eb8afd652692b359069
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 51
+    sha256: cd261f7a8b63a38bab5a0f8a83018e76d51823523f599771e3be7f752eb1d3ce
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 51
+    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 68
+    sha256: c067fcd3bd697b42f37a32387ec8ffc0872f297f8582427444b4251735b24304
+    verdict: unjudged
