@@ -1,11 +1,13 @@
 // Checks what the repository holds: each document's meta (licence, genre chaff knows, language, sha256 of the text),
 // no email address or phone number in a committed text unless allowlist.yaml names it with a reason, the size cap,
-// and expected files that belong to a document. Exits 1 on any problem.
+// and expected files that belong to a document and, for one that may not be redistributed, quote none of its text.
+// Exits 1 on any problem.
 import { existsSync, statSync } from "node:fs";
 import { relative } from "node:path";
 import { parseArgs } from "node:util";
 import { chaffPackage, knownGenres } from "./lib/chaff.ts";
 import { ALLOWLIST, committedText, documentFiles, expectedIds, readExpected, readMeta, readYaml, ROOT, strayFiles, type DocumentFiles } from "./lib/corpus.ts";
+import { quotingProblems } from "./lib/expected.ts";
 import { MAX_TEXT_BYTES, UNKNOWN_LICENSE } from "./lib/meta.ts";
 import { parseAllowList, personalDataHits, unallowedHits, type Allowed } from "./lib/scan.ts";
 
@@ -30,13 +32,17 @@ const personalDataProblems = (files: DocumentFiles, allowed: readonly Allowed[])
   );
 };
 
-const documentProblems = (files: DocumentFiles, genres: ReadonlySet<string>, allowed: readonly Allowed[]): { problems: string[]; notes: string[] } => {
+/** One document checked: its problems, notes, and whether its meta says it may not be redistributed. */
+type Checked = { readonly id: string; readonly problems: string[]; readonly notes: string[]; readonly sealed: boolean };
+
+const documentProblems = (files: DocumentFiles, genres: ReadonlySet<string>, allowed: readonly Allowed[]): Checked => {
+  const id = files.place.id;
   const tooLarge = sizeProblems(files);
-  if (tooLarge.length > 0) return { problems: tooLarge, notes: [] };
+  if (tooLarge.length > 0) return { id, problems: tooLarge, notes: [], sealed: false };
   const meta = readMeta(files, genres);
-  if ("problems" in meta) return { problems: meta.problems.map((problem) => `${shown(files.metaPath)}: ${problem}`), notes: [] };
+  if ("problems" in meta) return { id, problems: meta.problems.map((problem) => `${shown(files.metaPath)}: ${problem}`), notes: [], sealed: false };
   const notes = meta.value.license.name === UNKNOWN_LICENSE ? [`${shown(files.metaPath)}: license is unknown, to be established`] : [];
-  return { problems: personalDataProblems(files, allowed), notes };
+  return { id, problems: personalDataProblems(files, allowed), notes, sealed: !meta.value.redistribute };
 };
 
 const duplicateIds = (documents: readonly DocumentFiles[]): string[] => {
@@ -44,12 +50,14 @@ const duplicateIds = (documents: readonly DocumentFiles[]): string[] => {
   return [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))].map((id) => `id ${id} is used by more than one document`);
 };
 
-const expectedProblems = (documents: readonly DocumentFiles[]): string[] => {
+const expectedProblems = (documents: readonly DocumentFiles[], sealed: ReadonlySet<string>): string[] => {
   const ids = new Set(documents.map((files) => files.place.id));
   return expectedIds().flatMap((id) => {
     if (!ids.has(id)) return [`expected/${id}.yaml: no document ${id} under docs/`];
     const read = readExpected(id);
-    return read === undefined || "value" in read ? [] : read.problems.map((problem) => `expected/${id}.yaml: ${problem}`);
+    if (read === undefined) return [];
+    const problems = "value" in read ? (sealed.has(id) ? quotingProblems(read.value) : []) : read.problems;
+    return problems.map((problem) => `expected/${id}.yaml: ${problem}`);
   });
 };
 
@@ -72,7 +80,7 @@ const main = (): void => {
     ...checked.flatMap((result) => result.problems),
     ...duplicateIds(documents),
     ...strayFiles(documents).map((path) => `${shown(path)}: not a document's .yaml, .md or .txt`),
-    ...expectedProblems(documents),
+    ...expectedProblems(documents, new Set(checked.filter((result) => result.sealed).map((result) => result.id))),
     ...staleAllowed(documents, allowed),
   ];
   checked.flatMap((result) => result.notes).forEach((note) => console.log(`note: ${note}`));

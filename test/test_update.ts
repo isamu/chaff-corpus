@@ -19,7 +19,7 @@ const previous: Expected = {
 
 describe("updatedExpected", () => {
   it("writes every finding of a new document as unjudged, with the version it ran", () => {
-    const written = updatedExpected(undefined, "doc", "0.33.0", [finding("b", 2, "y"), finding("a", 1, "x")]);
+    const written = updatedExpected(undefined, "doc", "0.33.0", [finding("b", 2, "y"), finding("a", 1, "x")], true);
     assert.equal(written.chaff, "0.33.0");
     assert.deepEqual(
       written.findings.map((entry) => [entry.verdict, entry.rule, entry.line]),
@@ -31,7 +31,7 @@ describe("updatedExpected", () => {
   });
 
   it("keeps every verdict a person gave, even when chaff no longer gives the finding", () => {
-    const written = updatedExpected(previous, "doc", "0.33.0", []);
+    const written = updatedExpected(previous, "doc", "0.33.0", [], true);
     assert.equal(written.chaff, "0.30.0");
     assert.deepEqual(
       written.findings.map((entry) => entry.verdict),
@@ -41,7 +41,7 @@ describe("updatedExpected", () => {
   });
 
   it("adds a new finding as unjudged and keeps an unjudged one chaff still gives", () => {
-    const written = updatedExpected(previous, "doc", "0.33.0", [finding("a", 1, "x"), finding("c", 3, "z"), finding("e", 9, "w")]);
+    const written = updatedExpected(previous, "doc", "0.33.0", [finding("a", 1, "x"), finding("c", 3, "z"), finding("e", 9, "w")], true);
     assert.deepEqual(
       written.findings.map((entry) => [entry.verdict, entry.rule]),
       [
@@ -63,13 +63,13 @@ describe("updatedExpected", () => {
         { verdict: "unjudged", rule: "c", line: 3, text: "z" },
       ],
     };
-    assert.equal(updatedExpected(twice, "doc", "0.33.0", [finding("c", 3, "z")]).findings.length, 1);
-    assert.equal(updatedExpected(twice, "doc", "0.33.0", []).findings.length, 0);
+    assert.equal(updatedExpected(twice, "doc", "0.33.0", [finding("c", 3, "z")], true).findings.length, 1);
+    assert.equal(updatedExpected(twice, "doc", "0.33.0", [], true).findings.length, 0);
   });
 
   it("is stable: updating twice with the same findings changes nothing", () => {
     const findings = [finding("a", 1, "x"), finding("e", 9, "w")];
-    const once = updatedExpected(previous, "doc", "0.33.0", findings);
-    assert.deepEqual(updatedExpected(once, "doc", "0.34.0", findings), once);
+    const once = updatedExpected(previous, "doc", "0.33.0", findings, true);
+    assert.deepEqual(updatedExpected(once, "doc", "0.34.0", findings, true), once);
   });
 });

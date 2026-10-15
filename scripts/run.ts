@@ -20,7 +20,7 @@ import { isFullyJudged, type Expected } from "./lib/expected.ts";
 import { expectedYaml } from "./lib/expected-write.ts";
 import { uncommittedText, type Available } from "./lib/fetch.ts";
 import type { Finding } from "./lib/finding.ts";
-import { matchDocument } from "./lib/match.ts";
+import { matchDocument, withoutText } from "./lib/match.ts";
 import { LANGUAGES, type Meta } from "./lib/meta.ts";
 import { renderReport, type RunContext } from "./lib/report.ts";
 import { idsInShard, parseShard, type Shard } from "./lib/shard.ts";
@@ -122,7 +122,7 @@ const resultOf = (meta: Meta, findings: readonly Finding[], expected: Expected |
   genre: meta.genre,
   language: meta.language,
   fullyJudged: isFullyJudged(expected),
-  outcomes: matchDocument(expected?.findings ?? [], findings),
+  outcomes: matchDocument(expected?.findings ?? [], findings).map((outcome) => (meta.redistribute ? outcome : withoutText(outcome))),
 });
 
 const writeExpected = (id: string, expected: Expected): void => {
@@ -131,11 +131,11 @@ const writeExpected = (id: string, expected: Expected): void => {
 };
 
 const writeUpdate = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): void =>
-  writeExpected(meta.id, updatedExpected(expected, meta.id, chaffVersion, findings));
+  writeExpected(meta.id, updatedExpected(expected, meta.id, chaffVersion, findings, meta.redistribute));
 
 /** Writes the resolved expected file and returns what it settled. */
 const writeResolve = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): readonly ResolveChange[] => {
-  const resolved = resolvedExpected(expected, meta.id, chaffVersion, findings);
+  const resolved = resolvedExpected(expected, meta.id, chaffVersion, findings, meta.redistribute);
   writeExpected(meta.id, resolved.expected);
   return resolved.changes;
 };

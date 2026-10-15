@@ -81,6 +81,11 @@ findings:
 A finding is the same finding when its rule, line and text are the same. A document is **fully judged** when its file
 has no `unjudged` entry; a new finding there makes CI fail, because someone has to judge it.
 
+On a document with `redistribute: false`, an entry quotes nothing: in place of `text` it keeps `sha256:` (the sha256 of
+the text at the finding's position), and it has no `message`. `--update` writes such entries, the run matches a finding by
+the hash of its text, the report shows only `id:line` and the rule, and `yarn validate` rejects a `text` or `message` in
+that document's expected file. Judge one by running chaff on your own copy of the text and reading the finding there.
+
 ## Running it
 
 Node 24 and Yarn 1.

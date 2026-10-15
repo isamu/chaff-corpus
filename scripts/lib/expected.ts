@@ -4,15 +4,15 @@ import { isNonEmptyString, isPositiveInteger, isRecord, optionalString, type Unk
 export const JUDGED_VERDICTS = ["correct", "false-positive", "unjudged"] as const;
 export type JudgedVerdict = (typeof JUDGED_VERDICTS)[number];
 
+type JudgedFields = { readonly verdict: JudgedVerdict; readonly rule: string; readonly line: number; readonly note?: string };
+
 /** A finding chaff gives, identified by rule, line and the text at its position. */
-export type JudgedEntry = {
-  readonly verdict: JudgedVerdict;
-  readonly rule: string;
-  readonly line: number;
-  readonly text: string;
-  readonly message?: string;
-  readonly note?: string;
-};
+export type TextEntry = JudgedFields & { readonly text: string; readonly message?: string };
+
+/** The same on a document that may not be redistributed: the text is known only by its sha256, and no message is kept. */
+export type HashedEntry = JudgedFields & { readonly sha256: string };
+
+export type JudgedEntry = TextEntry | HashedEntry;
 
 /** A finding chaff should give and does not: what a reader expects on that line. */
 export type MissedEntry = {
@@ -47,10 +47,21 @@ const missedEntryOf = (raw: UnknownRecord, rule: string, line: number): MissedEn
   return withNote(entry, raw);
 };
 
+const SHA256_PATTERN = /^[0-9a-f]{64}$/;
+
+const hashedEntryOf = (raw: UnknownRecord, fields: JudgedFields): HashedEntry | string => {
+  if (typeof raw["sha256"] !== "string" || !SHA256_PATTERN.test(raw["sha256"])) return "sha256 must be 64 lowercase hex digits";
+  if (raw["message"] !== undefined) return "a finding known by `sha256` keeps no `message`";
+  return withNote({ ...fields, sha256: raw["sha256"] }, raw);
+};
+
 const judgedEntryOf = (raw: UnknownRecord, rule: string, line: number): JudgedEntry | string => {
   const verdict = raw["verdict"];
   if (!isJudgedVerdict(verdict)) return `verdict must be one of ${[...JUDGED_VERDICTS, "missed"].join(", ")}`;
-  if (typeof raw["text"] !== "string") return "a finding needs `text`";
+  const hasText = raw["text"] !== undefined;
+  if (hasText === (raw["sha256"] !== undefined)) return "a finding needs exactly one of `text` and `sha256`";
+  if (!hasText) return hashedEntryOf(raw, { verdict, rule, line });
+  if (typeof raw["text"] !== "string") return "`text` must be a string";
   const message = optionalString(raw["message"]);
   const entry = { verdict, rule, line, text: raw["text"] };
   return withNote(message === undefined ? entry : { ...entry, message }, raw);
@@ -96,7 +107,16 @@ export const isFullyJudged = (expected: Expected | undefined): boolean =>
 const entryOrder = (left: ExpectedEntry, right: ExpectedEntry): number =>
   left.line - right.line || left.rule.localeCompare(right.rule) || keyText(left).localeCompare(keyText(right));
 
-const keyText = (entry: ExpectedEntry): string => (entry.verdict === "missed" ? entry.what : entry.text);
+const keyText = (entry: ExpectedEntry): string => {
+  if (entry.verdict === "missed") return entry.what;
+  return "sha256" in entry ? entry.sha256 : entry.text;
+};
 
-/** The entries in the order the file keeps them: by line, then rule, then text. */
+/** What is wrong with the file of a document that may not be redistributed: every entry that quotes its text. */
+export const quotingProblems = (expected: Expected): string[] =>
+  expected.findings.flatMap((entry, index) =>
+    "text" in entry ? [`findings[${String(index)}] (${entry.rule}, line ${String(entry.line)}): the document may not be redistributed, so keep \`sha256\`, not \`text\` or \`message\``] : [],
+  );
+
+/** The entries in the order the file keeps them: by line, then rule, then text (or its sha256). */
 export const sortedEntries = (entries: readonly ExpectedEntry[]): ExpectedEntry[] => entries.toSorted(entryOrder);
