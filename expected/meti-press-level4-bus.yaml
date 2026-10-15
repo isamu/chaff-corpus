@@ -41,9 +41,3 @@ findings:
     message: 見出し「担当」だけ番号がありません（兄弟の見出しは「1．概要」など 3 個が番号付き）
     verdict: false-positive
     note: a closing contact block (## 担当) after numbered body sections is unnumbered by convention
-  - rule: latin-spacing
-    line: 43
-    text: " 3839～40）"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。8 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: a label and its value in a contact line (内線 3839～40), separated by a space on purpose
