@@ -65,9 +65,8 @@ findings:
 - **The pull request also shows lab's main**: a second, report-only run against chaff as it is on
   isamu/lab's main says whether the case is already fixed there but not yet released.
 - **A lab issue is opened for it.** Once the case is on main here, isamu/lab's daily sync opens one issue per document
-  with open cases, labelled `corpus-case`, and keeps it up to date (after isamu/lab#1219 is merged). A lab pull request
-  that fixes chaff is run against this corpus, and its report says which cases it resolves (after isamu/lab#1218 is
-  merged).
+  with open cases, labelled `corpus-case`, and keeps it up to date. A lab pull request that fixes chaff
+  is run against this corpus, and its report says which cases it resolves.
 - **A chaff release closes it.** When a new chaffjs is on npm, a daily workflow here opens a pull request that bumps the
   pin and runs `yarn run-corpus --resolve`: a false positive chaff no longer gives is
   removed, and a miss chaff now gives becomes `correct`, with `found by chaffjs <version>` added to its note. Once that
