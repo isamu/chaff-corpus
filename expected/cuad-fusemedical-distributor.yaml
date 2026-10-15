@@ -105,59 +105,59 @@ findings:
     line: 605
     text: )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 605
     text: ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 605
     text: ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 605
     text: ) ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 605
     text: ) ) ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 619
     text: )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 619
     text: ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 619
     text: ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 619
     text: ) ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"
   - rule: unbalanced-bracket
     line: 619
     text: ) ) ) ) )
     message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line"
+    verdict: correct
+    note: "extraction artefact: the right-hand brackets of a two-column signature block, laid out in the PDF, end up on one line; chaff is right about the text as extracted"

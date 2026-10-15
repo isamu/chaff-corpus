@@ -96,7 +96,7 @@ findings:
     text: eGAIN COMMUNICATIONS CORPORATION
     message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
     verdict: false-positive
-    note: "extraction artefact: a running page header repeats the caps company name"
+    note: "eGAIN is the company name in a caps running header (repeated by extraction); not an inconsistency"
   - rule: unused-definition
     line: 37
     text: '"Normal Business Hours" shall mean betwe'
@@ -219,7 +219,7 @@ findings:
     text: eGAIN COMMUNICATIONS CORPORATION
     message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
     verdict: false-positive
-    note: "extraction artefact: a running page header repeats the caps company name"
+    note: "eGAIN is the company name in a caps running header (repeated by extraction); not an inconsistency"
   - rule: dangling-figure-reference
     line: 69
     text: Exhibit A (as to amounts accrued but unp

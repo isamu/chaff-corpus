@@ -10,8 +10,8 @@ findings:
     line: 1
     text: Exhibit 4.14 SERVICE AGREEMENT This Serv
     message: This paragraph runs 14 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: the PDF text joins a whole page into one line, so chaff sees one long paragraph"
+    verdict: correct
+    note: "extraction artefact: the PDF text joins a whole page into one line, so chaff sees one long paragraph; chaff is right about the text as extracted"
   - rule: undefined-acronym
     line: 1
     text: HDFC Bank, New Delhi ("PC Financial"), a
@@ -22,20 +22,20 @@ findings:
     line: 7
     text: 2.2 Mobimagic will provide the system /
     message: This paragraph runs 10 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: numeral-sentence-start
     line: 7
     text: 2.3 where required, Mobimagic may assign
     message: The sentence opens with the numeral "2.3"
-    verdict: false-positive
-    note: "extraction artefact: the clause number 2.3 starts a new clause in the source; extraction ran it into the previous sentence"
+    verdict: correct
+    note: "extraction artefact: the clause number 2.3 starts a new clause in the source; extraction ran it into the previous sentence; chaff is right about the text as extracted"
   - rule: max-paragraph-length
     line: 13
     text: 3.4 Except as set forth in this Section
     message: This paragraph runs 19 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: requirement-smell
     line: 13
     text: and/or authorities as required by law to
@@ -50,8 +50,8 @@ findings:
     line: 19
     text: 4.7 Data protection. Each Party agrees t
     message: This paragraph runs 20 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: orthographic-variant
     line: 19
     text: cooperate with Mobimagic to obtain refun
@@ -66,8 +66,8 @@ findings:
     line: 25
     text: 6.5 In case of any complaint about using
     message: This paragraph runs 23 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: name-variant
     line: 25
     text: Mobimaigc's invoice. Both Parties shall
@@ -104,8 +104,8 @@ findings:
     line: 31
     text: 9.4 Upon termination or expiration of th
     message: This paragraph runs 19 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: unknown-word
     line: 31
     text: thereunder in force as on that date. The

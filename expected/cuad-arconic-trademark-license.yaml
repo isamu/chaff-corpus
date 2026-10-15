@@ -85,8 +85,8 @@ findings:
     line: 21
     text: 1.6 Compliance with Trademark Usage Guid
     message: This paragraph runs 19 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 21
     text: If legally able and without breaching an
@@ -114,8 +114,8 @@ findings:
     line: 31
     text: 4.4 Survival of Obligations; Return of C
     message: This paragraph runs 19 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 31
     text: Upon any expiration or termination of th
@@ -125,8 +125,8 @@ findings:
     line: 41
     text: 6.3 Waiver. The waiver by one party of a
     message: This paragraph runs 16 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: undefined-acronym
     line: 41
     text: DHL). All such notices and other communi
@@ -143,8 +143,8 @@ findings:
     line: 51
     text: 6.9 Severability. In the event that any
     message: This paragraph runs 12 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: unknown-word
     line: 51
     text: herefrom. 6.10 Assignment. This Agreemen

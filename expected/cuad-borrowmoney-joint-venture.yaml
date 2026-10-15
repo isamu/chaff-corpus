@@ -5,8 +5,8 @@ findings:
     line: 3
     text: JOINT VENTURE AGREEMENT THIS JOINT VENTU
     message: This paragraph runs 10 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: undefined-acronym
     line: 3
     text: DR, suite 201 Fort Lauderdale FL 33304,
@@ -46,8 +46,8 @@ findings:
     line: 9
     text: Purpose 3. The exclusive purpose of the
     message: This paragraph runs 22 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: orthographic-variant
     line: 9
     text: PIscitello ● Jody Stewart 8. Except as o
@@ -124,8 +124,8 @@ findings:
     line: 49
     text: Withdrawal of Capital 17. No Member will
     message: This paragraph runs 18 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: unused-definition
     line: 49
     text: (the "Additional Capital Contributions")
@@ -147,8 +147,8 @@ findings:
     line: 55
     text: Books of Account 23. Accurate and comple
     message: This paragraph runs 25 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 55
     text: Accurate and complete books of account o
@@ -182,8 +182,8 @@ findings:
     line: 61
     text: Dissociation of a Member 31. Where a Mem
     message: This paragraph runs 19 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: undefined-term
     line: 61
     text: Valuation of Interest or as otherwise ma
@@ -199,8 +199,8 @@ findings:
     line: 67
     text: Liquidation 37. On dissolution, the Vent
     message: This paragraph runs 18 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 67
     text: An appraiser will be appointed within a
@@ -222,8 +222,8 @@ findings:
     line: 73
     text: Management Voting 42. Any management vot
     message: This paragraph runs 17 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 73
     text: A Member will be free of liability to th
@@ -233,8 +233,8 @@ findings:
     line: 79
     text: Insurance 48. The Venture will insure al
     message: This paragraph runs 18 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 79
     text: Members will use their best efforts, fai
@@ -262,8 +262,8 @@ findings:
     line: 85
     text: Mediation and Arbitration 55. In the eve
     message: This paragraph runs 18 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 85
     text: If the dispute is not resolved within a
@@ -274,8 +274,8 @@ findings:
     line: 91
     text: Miscellaneous 60. This Venture is termed
     message: This paragraph runs 29 sentences (limit 8)
-    verdict: false-positive
-    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph"
+    verdict: correct
+    note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
   - rule: vague-word-density
     line: 91
     text: If any term, covenant, condition or prov
