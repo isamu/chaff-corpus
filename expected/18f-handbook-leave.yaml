@@ -1,0 +1,108 @@
+id: 18f-handbook-leave
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 16
+    text: HR Specialist](https://docs.google.com/d
+    message: '"HR" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 16
+    text: TTS has leave types for the following sc
+    message: '"TTS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 41
+    text: For **religious observances**, you can [
+    message: 6 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: a run of one-sentence paragraphs, one per leave scenario (religious observances, voting, …), which is a list in all but markup
+  - rule: max-sentence-length
+    line: 43
+    text: To [**vote**](#voting-and-poll-volunteer
+    message: This sentence runs 55 words (limit 40)
+    verdict: unjudged
+  - rule: range-band-mismatch
+    line: 67
+    text: "15+ years: 8 hours per pay period"
+    message: The bands "Between 3 and 15 years" and "15+ years" overlap
+    verdict: correct
+    note: "'Between 3 and 15 years' and '15+ years' both take exactly 15 years"
+  - rule: name-variant
+    line: 77
+    text: HRLinks and see "182 Hours (96 Hours Use
+    message: '"HRLinks" is written "HR Links" elsewhere in the document (case, width or punctuation)'
+    verdict: correct
+  - rule: numeral-sentence-start
+    line: 79
+    text: 182 current hours \+ 154 more hours accr
+    message: The sentence opens with the numeral "182"
+    verdict: false-positive
+    note: a worked calculation line (182 current hours + 154 … = 336 hours) is read as a sentence opening with a numeral
+  - rule: numeral-sentence-start
+    line: 81
+    text: 336 hours \- 240 hour cap \= 96 Use or L
+    message: The sentence opens with the numeral "336"
+    verdict: false-positive
+    note: a worked calculation line (182 current hours + 154 … = 336 hours) is read as a sentence opening with a numeral
+  - rule: undefined-acronym
+    line: 96
+    text: "OPM Policy:"
+    message: '"OPM" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 106
+    text: Recovering from illness, for you or a fa
+    message: '"Recovering from illness, for you or a family member" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: false-positive
+    note: a gerund ('Recovering from illness') used as a noun is read as a verb
+  - rule: oxford-comma-consistency
+    line: 167
+    text: You are entitled to 12 weeks of paid tim
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 167
+    text: PPL]({% page "travel-and-leave/paid-pare
+    message: '"PPL" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 189
+    text: FAS Benefits Specialist](https://docs.go
+    message: '"FAS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 189
+    text: GSA’s [Checklist for Employees Entering
+    message: '"GSA" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 219
+    text: GSA employees who wish to vote on electi
+    message: This sentence runs 58 words (limit 40)
+    verdict: correct
+  - rule: requirement-smell
+    line: 219
+    text: and/or volunteer at polling places, gene
+    message: '"and/or" does not say whether both are meant or either is enough'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 221
+    text: Any such request should be directed by t
+    message: This sentence runs 76 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 221
+    text: In rare circumstances, authorized agency
+    message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 223
+    text: If granted, paid leave for voting is lim
+    message: This sentence runs 48 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 257
+    text: If a supervisor doesn’t hear from you, a
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged

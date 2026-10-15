@@ -1,0 +1,115 @@
+id: fomc-minutes-2026-04
+chaff: 0.34.0
+findings:
+  - rule: max-sentence-length
+    line: 21
+    text: In the Desk survey, the median of the mo
+    message: This sentence runs 54 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: On monetary policy expectations, the man
+    message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 21
+    text: On monetary policy expectations, the man
+    message: '"federal funds rate" appears 14 times (limit 5)'
+    verdict: false-positive
+    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
+  - rule: max-sentence-length
+    line: 23
+    text: A model-based decomposition of changes s
+    message: This sentence runs 55 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 33
+    text: The manager observed that money market c
+    message: This paragraph runs 11 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: As this meeting was the usual time to re
+    message: This sentence runs 56 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: Real private domestic final purchases—wh
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 63
+    text: Asset prices in foreign financial market
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 73
+    text: Credit performance remained solid in mos
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 79
+    text: Vulnerabilities associated with leverage
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 85
+    text: Real GDP was projected to slightly outpa
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 87
+    text: Inflation was projected to slow after th
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: Risks to the inflation projection were s
+    message: This sentence runs 77 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 93
+    text: Participants observed that overall infla
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 97
+    text: Participants anticipated that high energ
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 103
+    text: Participants generally observed that eco
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: Several participants remarked that the e
+    message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 107
+    text: In their discussion of financial stabili
+    message: This paragraph runs 12 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 109
+    text: In their consideration of monetary polic
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: Participants generally judged that the c
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 147
+    text: "Voting against this action: Stephen I. M"
+    message: This sentence runs 62 words (limit 45)
+    verdict: correct
+  - rule: name-variant
+    line: 313
+    text: Walker,3 Senior Associate Director, Divi
+    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
+    verdict: false-positive
+    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt

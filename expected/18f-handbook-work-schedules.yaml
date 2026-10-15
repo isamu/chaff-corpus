@@ -1,0 +1,130 @@
+id: 18f-handbook-work-schedules
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: GSA expects us to be working. This page
+    message: '"GSA" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 10
+    text: HR Specialist](https://docs.google.com/d
+    message: '"HR" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: name-variant
+    line: 19
+    text: HRLinks and is associated with you. You
+    message: '"HRLinks" is written "HR Links" elsewhere in the document (case, width or punctuation)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 25
+    text: " - Friday as possible workdays."
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 25
+    text: " - Friday schedule, so for the purposes"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: undefined-acronym
+    line: 25
+    text: TTS works a Monday - Friday schedule, so
+    message: '"TTS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 35
+    text: " - Can be approved for working more than"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 36
+    text: " - You receive 8 hours of holiday pay fo"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 37
+    text: " - Not available with this schedule"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 43
+    text: " - Can only be approved for any hours th"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 44
+    text: " - You will receive holiday pay for the"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 45
+    text: " - Not available with this schedule"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 47
+    text: " - in a 2 week pay period:"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: undefined-acronym
+    line: 56
+    text: OR
+    message: '"OR" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: "'OR' in 'AND/OR' is a capitalised conjunction, not an acronym"
+  - rule: hyphen-as-dash
+    line: 63
+    text: " - you receive 8 hours of holiday pay fo"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen standing in for a dash
+  - rule: contraction-consistency
+    line: 72
+    text: Once set, the times are fixed (i.e. your
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: correct
+    note: the page writes 'do not' three times and 'don’t' once
+  - rule: doubled-word
+    line: 87
+    text: work can be slightly longer or shorter t
+    message: '"work work" doubles a word; one of the two is left over'
+    verdict: correct
+    note: "'Each day in the work work' is a real doubled word in the source"
+  - rule: fact-conflict
+    line: 112
+    text: 10 |
+    message: '"Monday Hours" is 10 here, but 5 earlier in the same section'
+    verdict: false-positive
+    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
+  - rule: fact-conflict
+    line: 113
+    text: 10 |
+    message: '"Tuesday Hours" is 10 here, but 9 earlier in the same section'
+    verdict: false-positive
+    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
+  - rule: fact-conflict
+    line: 128
+    text: 6 |
+    message: '"Wednesday Hours" is 6 here, but 11 earlier in the same section'
+    verdict: false-positive
+    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
+  - rule: fact-conflict
+    line: 129
+    text: 9 |
+    message: '"Thursday Hours" is 9 here, but 11 earlier in the same section'
+    verdict: false-positive
+    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
+  - rule: fact-conflict
+    line: 130
+    text: 8 |
+    message: '"Friday Hours" is 8 here, but 6 earlier in the same section'
+    verdict: false-positive
+    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
