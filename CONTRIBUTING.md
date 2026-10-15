@@ -62,14 +62,14 @@ findings:
   they do not fail the build. `check` fails only when a `correct` finding is lost, when a document with no `unjudged`
   entry gets a new finding, or when the metadata is invalid. If you change the text after running `--update`, run it
   again.
-- **The pull request also shows lab's main** (after #6 is merged): a second, report-only run against chaff as it is on
+- **The pull request also shows lab's main**: a second, report-only run against chaff as it is on
   isamu/lab's main says whether the case is already fixed there but not yet released.
 - **A lab issue is opened for it.** Once the case is on main here, isamu/lab's daily sync opens one issue per document
   with open cases, labelled `corpus-case`, and keeps it up to date (after isamu/lab#1219 is merged). A lab pull request
   that fixes chaff is run against this corpus, and its report says which cases it resolves (after isamu/lab#1218 is
   merged).
 - **A chaff release closes it.** When a new chaffjs is on npm, a daily workflow here opens a pull request that bumps the
-  pin and runs `yarn run-corpus --resolve` (after #4 and #7 are merged): a false positive chaff no longer gives is
+  pin and runs `yarn run-corpus --resolve`: a false positive chaff no longer gives is
   removed, and a miss chaff now gives becomes `correct`, with `found by chaffjs <version>` added to its note. Once that
   pull request is merged, the document has no open case left, and the next sync closes the lab issue.
 
