@@ -1,0 +1,258 @@
+id: cuad-webhelp-hosting
+chaff: 0.34.0
+findings:
+  - rule: orthographic-variant
+    line: 3
+    text: eGAIN COMMUNICATIONS CORPORATION
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: dangling-figure-reference
+    line: 7
+    text: Exhibit A and all other documents refere
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: dangling-figure-reference
+    line: 7
+    text: Exhibit A, including any updates, upgrad
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: name-variant
+    line: 7
+    text: eGain Communications Corporation ("eGain
+    message: '"eGain Communications Corporation" is written "eGAIN COMMUNICATIONS CORPORATION" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: undefined-term
+    line: 7
+    text: Web-based access to eGain's software spe
+    message: '"Web" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: Web (as in Web-based) is a capitalised common noun, not a defined term
+  - rule: dangling-figure-reference
+    line: 9
+    text: Exhibit A, do not include any deployment
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: defined-name-repeated
+    line: 9
+    text: Web site made available by eGain. Custom
+    message: '"Web site" was given the short name "Users" on line 7'
+    verdict: false-positive
+    note: the label ("Users") names the customers and users of the Web site, not the Web site
+  - rule: dangling-reference
+    line: 13
+    text: Section 11, it will not rent, lease, sub
+    message: '"Section 11" (address 11) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: dangling-figure-reference
+    line: 17
+    text: Exhibit A. All amounts payable hereunder
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: dangling-figure-reference
+    line: 17
+    text: Exhibit A), eGain will invoice Customer
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: undefined-term
+    line: 17
+    text: Additional Fees (as defined in Exhibit A
+    message: '"Additional Fees" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: the text says the term is defined in Exhibit A (not filed); dangling-figure-reference already covers the missing exhibit
+  - rule: dangling-reference
+    line: 25
+    text: Section 2. In the event of Downtime (as
+    message: '"Section 2" (address 2) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: dangling-reference
+    line: 25
+    text: Section 6.1 below), as Customer's sole a
+    message: '"Section 6.1" (address 6.1) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: numeral-sentence-start
+    line: 25
+    text: 6.1 eGain warrants and represents to Cus
+    message: The sentence opens with the numeral "6.1"
+    verdict: false-positive
+    note: a clause number at the start of a numbered paragraph read as a sentence opening with a numeral
+  - rule: undefined-term
+    line: 27
+    text: Normal Business       Hours or the first
+    message: '"Normal Business" is written like a defined term, but the document defines it nowhere'
+    verdict: false-positive
+    note: "extraction artefact: a run of spaces splits Normal Business Hours, so the defined term is not recognised"
+  - rule: orthographic-variant
+    line: 33
+    text: eGAIN COMMUNICATIONS CORPORATION
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: "eGAIN is the company name in a caps running header (repeated by extraction); not an inconsistency"
+  - rule: unused-definition
+    line: 37
+    text: '"Normal Business Hours" shall mean betwe'
+    message: '"Normal Business Hours" is defined but never used'
+    verdict: false-positive
+    note: "extraction artefact: the uses are split by a run of spaces (Normal Business       Hours), so the definition looks unused"
+  - rule: dangling-reference
+    line: 39
+    text: Section 6.1(i) above, Customer's sole an
+    message: '"Section 6.1(i)" (address 6.1.i) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: name-variant
+    line: 41
+    text: eGAIN'S ENTIRE LIABILITY, FOR DOWNTIME A
+    message: '"eGAIN" is written "eGain" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: orthographic-variant
+    line: 41
+    text: eGAIN'S ENTIRE LIABILITY, FOR DOWNTIME A
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: vague-deadline
+    line: 43
+    text: promptly modify the Software or the eGai
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: name-variant
+    line: 45
+    text: eGAIN SYSTEM ARE MADE AVAILABLE, BY eGAI
+    message: '"eGAIN SYSTEM" is written "eGain System" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: numbering-gap
+    line: 45
+    text: 6.3 EXCEPT AS PROVIDED IN SECTIONS 6.1-6
+    message: '"6.3" follows "2.1" (expected number 2)'
+    verdict: false-positive
+    note: the numbered paragraphs 3-6 are plain text that chaff does not count, so 6.3 seems to follow 2.1
+  - rule: orthographic-variant
+    line: 45
+    text: eGAIN AND ITS SUPPLIERS MAKE NO WARRANTY
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: orthographic-variant
+    line: 45
+    text: eGAIN SYSTEM ARE MADE AVAILABLE, BY eGAI
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: orthographic-variant
+    line: 45
+    text: eGAIN SYSTEM, AND SPECIFICALLY DISCLAIM
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: orthographic-variant
+    line: 45
+    text: eGAIN TO CUSTOMER "AS IS," AND (B) eGAIN
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: dangling-reference
+    line: 47
+    text: Section 6.1) or that Customer's access t
+    message: '"Section 6.1" (address 6.1) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: orthographic-variant
+    line: 49
+    text: eGAIN BE LIABLE TO CUSTOMER FOR CONSEQUE
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: orthographic-variant
+    line: 49
+    text: eGAIN HAS BEEN ADVISED OF THE POSSIBILIT
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: obligation-without-deadline
+    line: 55
+    text: return to the other party all confidenti
+    message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 57
+    text: "Section 9 are contingent upon: (i) Custo"
+    message: '"Section 9" (address 9) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: dangling-reference
+    line: 57
+    text: Section 9, eGain will defend any third-p
+    message: '"Section 9" (address 9) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: obligation-without-deadline
+    line: 57
+    text: pay those damages and costs finally awar
+    message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 57
+    text: eGAIN'S ENTIRE LIABILITY FOR INFRINGEMEN
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: eGAIN is the company name inside ALL-CAPS text or a caps title; not an inconsistency
+  - rule: undefined-term
+    line: 61
+    text: Effective Date for a one (1) year period
+    message: '"Effective Date" is written like a defined term, but the document defines it nowhere'
+    verdict: correct
+    note: Effective Date is used but never defined
+  - rule: orthographic-variant
+    line: 63
+    text: eGAIN COMMUNICATIONS CORPORATION
+    message: '"eGAIN" here, where the document usually writes "eGain" (11 of 99)'
+    verdict: false-positive
+    note: "eGAIN is the company name in a caps running header (repeated by extraction); not an inconsistency"
+  - rule: dangling-figure-reference
+    line: 69
+    text: Exhibit A (as to amounts accrued but unp
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
+  - rule: dangling-reference
+    line: 69
+    text: 5 (as to amounts accrued but unpaid), 7,
+    message: '"5" (address 5) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: dangling-reference
+    line: 69
+    text: Section 4. Within fifteen (15) days of a
+    message: '"Section 4" (address 4) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: dangling-reference
+    line: 69
+    text: Sections 4, 5 (as to amounts accrued but
+    message: '"Sections 4" (address 4) is not in this document'
+    verdict: false-positive
+    note: the section exists as a numbered plain-text paragraph (e.g. '9. Indemnification.'), which chaff does not take as an address
+  - rule: defined-name-repeated
+    line: 71
+    text: Web site and in collateral marketing mat
+    message: '"Web site" was given the short name "Users" on line 7'
+    verdict: false-positive
+    note: the label ("Users") names the customers and users of the Web site, not the Web site
+  - rule: dangling-figure-reference
+    line: 73
+    text: Exhibit A and any other exhibits hereto,
+    message: Exhibit A is referred to, but the document has no Exhibit A
+    verdict: correct
+    note: Exhibit A is not in the filed text
