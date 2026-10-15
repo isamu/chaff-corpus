@@ -91,6 +91,9 @@ yarn validate                 # metadata, licence, personal data, size
 yarn typecheck && yarn test
 yarn run-corpus               # run chaff, compare with expected/, print the report
 yarn run-corpus --update      # add new findings to expected/ as unjudged (verdicts are never touched)
+yarn run-corpus --resolve     # --update, and settle what the run decides: a gone false positive is removed, a found
+                              # miss becomes correct ("found by chaffjs <version>" added to its note), a lost correct
+                              # finding stays; prints the resolved/found/regressed list (--resolve-out <file> saves it)
 yarn run-corpus --chaff ../lab/text   # run a local chaff (a lab checkout after `yarn build`) instead of the pinned one
 yarn run-corpus --only q3-report,rouki --jobs 2 --offline
 ```

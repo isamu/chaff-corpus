@@ -89,6 +89,9 @@ yarn validate                 # メタデータ、ライセンス、個人情報
 yarn typecheck && yarn test
 yarn run-corpus               # chaff をかけて expected/ と比べ、レポートを出す
 yarn run-corpus --update      # 新しい指摘を unjudged として expected/ に足す（判定には触れない）
+yarn run-corpus --resolve     # --update に加え、実行結果で決まる判定を確定する: 出なくなった false-positive は消し、
+                              # 出るようになった missed は correct に（note に「found by chaffjs <version>」を足す）、
+                              # 出なくなった correct は残す。resolved / found / regressed の一覧を出す（--resolve-out <file> で保存）
 yarn run-corpus --chaff ../lab/text   # 固定版の代わりに手元の chaff（`yarn build` 済みの lab）を使う
 yarn run-corpus --only q3-report,rouki --jobs 2 --offline
 ```

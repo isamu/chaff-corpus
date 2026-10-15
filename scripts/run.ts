@@ -1,6 +1,9 @@
 // Runs chaff over every document and compares its findings with expected/. Fails only when a correct finding is lost,
 // a fully judged document gets a new finding, a document's meta is invalid, or chaff cannot run.
 //   --update          write new findings into expected/ as unjudged (verdicts are never touched)
+//   --resolve         --update, and settle what the run decides: a gone false positive is removed, a found miss becomes
+//                     correct, a lost correct finding stays (a regression); prints the resolved/found/regressed list
+//   --resolve-out <f> also write that list to <f> (Markdown, for a pull request body)
 //   --chaff <path>    run a local chaffjs (a lab checkout after `yarn build`, or the package folder) instead of the pinned one
 //   --only <id,...>   run these documents only
 //   --jobs <n>        how many documents run at once
@@ -19,11 +22,14 @@ import { matchDocument } from "./lib/match.ts";
 import { LANGUAGES, type Meta } from "./lib/meta.ts";
 import { renderReport, type RunContext } from "./lib/report.ts";
 import { failuresOf, type DocumentResult } from "./lib/tally.ts";
+import { renderResolveSummary, resolvedExpected, type ResolveChange } from "./lib/resolve.ts";
 import { updatedExpected } from "./lib/update.ts";
 
 const { values: options } = parseArgs({
   options: {
     update: { type: "boolean", default: false },
+    resolve: { type: "boolean", default: false },
+    "resolve-out": { type: "string" },
     chaff: { type: "string" },
     only: { type: "string" },
     jobs: { type: "string" },
@@ -94,9 +100,34 @@ const resultOf = (meta: Meta, findings: readonly Finding[], expected: Expected |
   outcomes: matchDocument(expected?.findings ?? [], findings),
 });
 
-const writeUpdate = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): void => {
+const writeExpected = (id: string, expected: Expected): void => {
   mkdirSync(EXPECTED, { recursive: true });
-  writeFileSync(expectedPath(meta.id), expectedYaml(updatedExpected(expected, meta.id, chaffVersion, findings)));
+  writeFileSync(expectedPath(id), expectedYaml(expected));
+};
+
+const writeUpdate = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): void =>
+  writeExpected(meta.id, updatedExpected(expected, meta.id, chaffVersion, findings));
+
+/** Writes the resolved expected file and returns what it settled. */
+const writeResolve = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): readonly ResolveChange[] => {
+  const resolved = resolvedExpected(expected, meta.id, chaffVersion, findings);
+  writeExpected(meta.id, resolved.expected);
+  return resolved.changes;
+};
+
+const resolveChanges: { id: string; changes: readonly ResolveChange[] }[] = [];
+
+const writeRun = (meta: Meta, findings: readonly Finding[], expected: Expected | undefined, chaffVersion: string): void => {
+  if (options.resolve) resolveChanges.push({ id: meta.id, changes: writeResolve(meta, findings, expected, chaffVersion) });
+  else if (options.update) writeUpdate(meta, findings, expected, chaffVersion);
+};
+
+const reportResolve = (chaffVersion: string): void => {
+  if (!options.resolve) return;
+  const summary = renderResolveSummary(chaffVersion, resolveChanges);
+  report(summary);
+  const out = options["resolve-out"];
+  if (out !== undefined) writeFileSync(out, `${summary}\n`);
 };
 
 const main = async (): Promise<void> => {
@@ -113,12 +144,14 @@ const main = async (): Promise<void> => {
   const results = ran.flatMap((item) => {
     if (!("meta" in item)) return [];
     const expected = expectedOf(item.meta.id, problems);
-    if (options.update) writeUpdate(item.meta, item.findings, expected, chaff.version);
+    writeRun(item.meta, item.findings, expected, chaff.version);
     return [resultOf(item.meta, item.findings, expected)];
   });
   const context: RunContext = { chaffVersion: chaff.version, notRun: prepared.flatMap((item) => ("notRun" in item ? [{ id: item.id, reason: item.notRun }] : [])), problems };
   report(renderReport(results, context));
-  if (problems.length > 0 || (!options.update && failuresOf(results).length > 0)) process.exitCode = 1;
+  reportResolve(chaff.version);
+  const writing = options.update || options.resolve;
+  if (problems.length > 0 || (!writing && failuresOf(results).length > 0)) process.exitCode = 1;
 };
 
 const report = (markdown: string): void => {
