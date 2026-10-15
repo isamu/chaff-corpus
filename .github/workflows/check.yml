@@ -68,7 +68,9 @@ jobs:
       # so a changed or added text starts a new cache (run.ts uses a cached text only when its sha256 matches).
       - name: key the fetched texts
         id: texts
-        run: echo "key=$(grep -rl --include='*.yaml' '^redistribute: false' docs | sort | xargs grep -h '^sha256:' | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+        run: |
+          key=$(grep -rl --include='*.yaml' '^redistribute: false' docs | sort | xargs grep -h '^sha256:' | sha256sum | cut -c1-16)
+          echo "key=$key" >> "$GITHUB_OUTPUT"
 
       - uses: actions/cache@v6
         with:
