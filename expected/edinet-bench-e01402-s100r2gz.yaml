@@ -1,0 +1,1210 @@
+id: edinet-bench-e01402-s100r2gz
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 5
+    text: " SUNCALL SANKO CORP.を設立1989年６月米国に合弁会社 SA"
+    message: 日本語と英字のあいだを、空ける所が 16 箇所、詰める所が 52 箇所あります。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 5
+    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
+    message: 「月大阪証券取引所第一部」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: the run counts the 月 of a date glued to the event (1964年10月大阪証券取引所…); the compound itself is within the limit
+  - rule: max-sentence-length
+    line: 5
+    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
+    message: この文は 2165 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: max-ten
+    line: 5
+    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: no-nakaguro-parallel
+    line: 5
+    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
+    message: この文に中黒が 7 個あります（5 個まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: orthographic-variant
+    line: 5
+    text: および京都証券取引所に株式を上場1967年10月愛知県豊田市に豊田工場を建設し、
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。109 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 5
+    text: CO.,LTD.（現連結子会社）を設立2009年４月子会社 広瀬テクノロジー株式
+    message: 「CO」が説明なしで使われています（説明のない略語 14 個）
+    verdict: false-positive
+    note: part of a company's registered name (ADEKA, CO.,LTD.), not an acronym to expand
+  - rule: undefined-acronym
+    line: 5
+    text: EV製品シャントバスバー量産開始2020年４月京都市南区に京都南工場を開設202
+    message: 「EV」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5
+    text: INC.（米国、マサチューセッツ州）を買収1991年４月会社名を『サンコール株式
+    message: 「INC」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5
+    text: LTD.（現連結子会社）を設立1992年11月広瀬工場を子会社 広瀬テクノロジー
+    message: 「LTD」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: ＡＢＳ用アクチュエーター、バルブコッター、ブーツクランプ、各種異形ばね、異形リン
+    message: 全角の「ＡＢＳ」と書いています（この文書はふつう半角の「ABS」。197 箇所のうち 23 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: ＡＢＳ用センサーリング、ＡＢＳ用アクチュエーター、バルブコッター、ブーツクランプ
+    message: 全角の「ＡＢＳ」と書いています（この文書はふつう半角の「ABS」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: ＡＴ部品、自動車用安全装置機能部品、ＡＢＳ用センサーリング、ＡＢＳ用アクチュエー
+    message: 全角の「ＡＴ」と書いています（この文書はふつう半角の「AT」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: ＨＤＤ用サスペンション］（日本）　ハードディスク・ドライブ用サスペンションの製造
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: ＬＥＤ関連、バスバー、シャントバスバー、電流センサー等の製造・販売を行っておりま
+    message: 全角の「ＬＥＤ」と書いています（この文書はふつう半角の「LED」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 9
+    text: ［自動車関連製品］（日本、北米、アジア）　自動車エンジン用弁ばね、ＡＴ部品、自動
+    message: 「自動車用安全装置機能部品」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 9
+    text: ３【事業の内容】　当社の企業集団は、サンコール株式会社（当社）と子会社11社及び
+    message: この段落は 11 文あります（5 文まで）
+    verdict: false-positive
+    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
+  - rule: max-sentence-length
+    line: 9
+    text: ［自動車関連製品］（日本、北米、アジア）　自動車エンジン用弁ばね、ＡＴ部品、自動
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 9
+    text: 物ピアノ線等の製造・販売を行っております。 ［自動車関連製品］（日本、北米、アジ
+    message: 「物」と書いています（この文書はふつう「もの」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 9
+    text: ［ＨＤＤ用サスペンション］（日本）　ハードディスク・ドライブ用サスペンションの製
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: parallel list entries (one per segment) that end alike by design
+  - rule: bracket-width-consistency
+    line: 13
+    text: )プリンター関連及び通信関連の一部を製造・販売しております。当社より債務の保証を
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 13
+    text: 並びに債務の保証を受けております。役員の兼任等…有りSUNCALL（Tianji
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 13
+    text: ＨＤＤ用サスペンション関連製品の生産設備設計・製造及び製造受託41.5主にＨＤＤ
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 13
+    text: ＨＤＤ用サスペンション関連製品の生産設備設計・製造及び製造受託を行っております。
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 13
+    text: 役員の兼任等…無しサンコール菊池株式会社熊本県菊池市70自動車関連製品の製造及び
+    message: 「菊池株式会社熊本県菊池市」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 13
+    text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
+    message: この段落は 25 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSUNCALL CO.,（H.K.）LTD.中国香港特別行政区4,050千香
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSUNCALL HIGH PRECISION（THAILAND）LTD.タイ
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSUNCALL TECHNOLOGIES MEXICO,S.A.DE C.V
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSUNCALL TECHNOLOGY VIETNAMCO.,LTD.
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSuncall（Guangzhou）Trading Co.,Ltd.中国広州
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 13
+    text: 有りSUNCALL（Tianjin）Co.,Ltd.中国天津340自動車関連製品
+    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 13
+    text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
+    message: 「〜おります」で終わる文が 23 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-head
+    line: 13
+    text: 役員の兼任等…有りSUNCALL CO.,（H.K.）LTD.中国香港特別行政区
+    message: 「役員の兼任等」で始まる文が 5 続いています（3 まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: bracket-width-consistency
+    line: 17
+    text: )管理職に占める女性労働者の割合、男性労働者の育児休業取得率及び労働者の男女の賃
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 17
+    text: ＨＤＤ用サスペンション140　　プリンター関連3　　通信関連14全社共通174合
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 17
+    text: ＨＤＤ用サスペンション日本140（ 4）　　プリンター関連日本、アジア685（5
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 2,262（79）（注）１　従業員数は、当社グループから当社グループ外への出向"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 515名組織の状況　　　単一組合（上部団体には加盟しておりません。）  (4)"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 製品区分の名称従業員数（人）自動車分野 　　材料関連製品110　　自動車関連製"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 17
+    text: 組合の名称　　　サンコール労働組合　　　組合員数 515名組織の状況　　　単一組
+    message: 「提出会社当事業年度補足説明管理職」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 17
+    text: ５【従業員の状況】　(1) 連結会社の状況2023年３月31日現在 製品区分の名
+    message: この段落は 13 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: (2) 提出会社の状況   2023年３月31日現在従業員（人）平均年齢（歳）平
+    message: この文は 197 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ２.「育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関する法律」（平成
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: ５【従業員の状況】　(1) 連結会社の状況2023年３月31日現在 製品区分の名
+    message: この文は 243 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: 組合の名称　　　サンコール労働組合　　　組合員数 515名組織の状況　　　単一組
+    message: この文は 279 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の男女の賃金の差異（％）（注）１.全労働者うち正規雇用労働者うちパート・有期労働
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: 「労働者の男女の賃金の差異」 is the statutory item name, quoted as the law has it
+  - rule: no-doubled-joshi
+    line: 17
+    text: の男女の賃金の差異①提出会社当事業年度補足説明管理職に占める女性労働者の割合（％
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 17
+    text: 　　はないため、記載を省略しております。
+    message: 「で」と「は」は一続きの語句ですが、あいだに空白があります（2501 箇所のうち 1 箇所が空いている）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 21
+    text: )会社の経営の基本方針　当社グループは「技翔創変」を経営理念とし、技術集約型精密
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 21
+    text: )優先的に対処すべき事業上及び財務上の課題ア　事業上の対処すべき課題① 　ＥＶ等
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 21
+    text: )経営上の目標の達成状況を判断するための客観的な指標等　新中期経営計画GGP24
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 21
+    text: )経営環境　世界経済は、新型コロナウイルス感染症からの回復が一巡する一方で、ロシ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ５Ｇ・ＩoＴ・デジタル社会進展によるクラウドストレージ需要の爆発的な伸びは、今後
+    message: 全角の「５Ｇ」と書いています（この文書はふつう半角の「5G」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ５Ｇ・ＩoＴ関連の強い需要により、今後も拡大していく見通しです。これに対して当社
+    message: 全角の「５Ｇ」と書いています（この文書はふつう半角の「5G」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ＥＶおよびＨＶやＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電
+    message: 全角の「ＥＶ」と書いています（この文書はふつう半角の「EV」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ＥＶ等電動化製品の欧州・中国・米国での拡販の展開 ②　 電子情報通信関連成長事業
+    message: 全角の「ＥＶ」と書いています（この文書はふつう半角の「EV」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ＥＶ等電動化関連成長事業（グローバルに売上拡大・次世代主力事業へ）　ＥＶおよびＨ
+    message: 全角の「ＥＶ」と書いています（この文書はふつう半角の「EV」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ＨＶやＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電流を検出す
+    message: 全角の「ＨＶ」と書いています（この文書はふつう半角の「HV」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: ＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電流を検出するニー
+    message: 全角の「ＰＨＶ」と書いています（この文書はふつう半角の「PHV」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 21
+    text: ・電動車ニーズに応えるべく「バスバー」、「シャントバスバー」の量産拡大・ＥＶ等電
+    message: 「電子情報通信関連成長事業」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 21
+    text: なお、事業ポートフォリオ改革に関しては、「ＥＶ等電動化関連成長事業および電子情報
+    message: 「電子情報通信関連成長事業」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 21
+    text: １【経営方針、経営環境及び対処すべき課題等】　文中の将来に関する事項は、当連結会
+    message: この段落は 25 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: ・製品別に市場成長性と収益性を検証・徹底的な製品別採算管理により、既存案件の収益
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: ・電動車ニーズに応えるべく「バスバー」、「シャントバスバー」の量産拡大・ＥＶ等電
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: ・顧客需要への対応に向けた設備投資継続と生産効率向上・大容量ハードディスクドライ
+    message: この文は 203 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: (2)経営上の目標の達成状況を判断するための客観的な指標等　新中期経営計画GGP
+    message: この文は 167 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 21
+    text: のより付加価値の高い微粒子炭の用途開発に挑戦してまいります。 イ　財務上の対処す
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 21
+    text: およびＨＶやＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電流を
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。109 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 21
+    text: 為には事業収益性の改善とともに、自己資本の積み増しを抑制しレバレッジを有効活用す
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 21
+    text: 新中期経営計画では「2030年の事業ポートフォリオ確立に向けた実効的な戦略の加速
+    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: ・顧客需要への対応に向けた設備投資継続と生産効率向上・大容量ハードディスクドライ
+    message: 「は」で出した主題から述語まで 122 字あります（80 字まで）
+    verdict: false-positive
+    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
+  - rule: topic-predicate-distance
+    line: 21
+    text: (3)経営環境　世界経済は、新型コロナウイルス感染症からの回復が一巡する一方で、
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 25
+    text: また災害の発生を防ぎ、万が一災害が発生した場合の被害を最小限に抑えるために、防災
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+  - rule: empty-intensifier
+    line: 25
+    text: 対応策として、当社グループは法令遵守を極めて重要な企業の責務と認識しており、経営
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: １２拠点で生産活動を行っており、地震等大規模な自然災害や感染症によるパンデミック
+    message: 全角の「１２」と書いています（この文書はふつう半角の「12」。705 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＢＣＰ（事業継続計画）を作成し、被災時でも重要な事業を継続し、早期に事業復旧でき
+    message: 全角の「ＢＣＰ」と書いています（この文書はふつう半角の「BCP」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＨＤＤはＳＳＤ（Solid State Drive）への置き換えが進むリスクがあ
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＨＤＤ用サスペンション、プリンター関連部品もそれぞれ大きな比率となっております。
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 25
+    text: ＳＳＤ（Solid State Drive）への置き換えが進むリスクがあり、その
+    message: 全角の「ＳＳＤ」と書いています（この文書はふつう半角の「SSD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 25
+    text: エネルギ－）拡大への取り組みを加速させてまいります。 (2) 競争の激化　当社グ
+    message: 「エネルギ」と「エネルギー」が混ざっています（この語は 4 回のうち 1 回が「エネルギ」）
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 25
+    text: ３【事業等のリスク】　当社グループは、リスク管理委員会を設置し、年４回の定期的開
+    message: この段落は 44 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: 具体的には、　　　・人事関連の各種コンプライアンス違反（ハラスメント、雇用関連、
+    message: この文は 269 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 25
+    text: これら最終製品の国際的市場動向の変化や業界再編は当社製品の生産販売量の変動につな
+    message: 「可能性があります」が 17 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 25
+    text: 具体的には、　　　・人事関連の各種コンプライアンス違反（ハラスメント、雇用関連、
+    message: この文に中黒が 8 個あります（5 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: うえで、訴訟等を提起されることがあり、その結果、予期せぬ多額の損害賠償を命じられ
+    message: 「うえ」と書いています（この文書はふつう「上」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: または悪意を持った第三者によるサイバー攻撃、ハッキング、その他不正アクセスなどに
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: 出来なくなる可能性があります。・顧客の生産動向に関するリスク　当社グループが販売
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。9 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: 為の適切な人材確保と育成が重要な課題であると認識しております。しかし、少子高齢化
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: (6) コンプライアンス等に関するリスク　当社グループの事業活動を行う上で、各国
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 対応策として、当社グループは、非常時の初期対応他災害発生の際に適切な対応が取れる
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 対応策として契約審査等を通じて、訴訟その他法的手続きの発生を未然に防止するよう努
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 当社グループ（委託先の関係者を含みます。）の故意・過失、または悪意を持った第三者
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 新型コロナウイルス感染から回復が一巡する一方で、今後世界各地、又は当社グル－プが
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 25
+    text: " 競合会社による競争力のある新製品の発売、価格競争の激化、低価格品などへの需要シ"
+    message: 助詞「は」と「競合」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。1528 箇所のうち 1 箇所が空いている）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 25
+    text: たり、損害賠償やセキュリティシステム改修のために多額の費用負担が発生する可能性が
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: tari-unpaired
+    line: 25
+    text: たり、材料等調達先や物流面の問題により生産継続が出来なくなる可能性があります。・
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 対応策として、当社グループはすべての役員、従業員等に対し、情報の取扱いに関する管
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 対応策として、当社グループはニアライン向けデータストレージに関する技術動向につい
+    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 29
+    text: (トンネル磁気抵抗効果)ICチップを搭載した磁気式電流センサーをラインナップに加
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 29
+    text: )ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 29
+    text: 自動車の電動化が加速し、電子化製品の需要増加と素材転換が進む中、当社は得意とする
+    message: 「電子情報通信部品製造技術」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 29
+    text: ６【研究開発活動】　当社は、Fine Precision Products（超精
+    message: この段落は 26 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: (3) 通信関連◎光通信用コネクター　発展する情報通信分野における送受信情報トラ
+    message: この文は 164 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 29
+    text: のファイバーの商用化の拡大による調芯機能を有した製品の需要増加が見込まれており、
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: さらにワイヤー加工技術の開発を進めると共に、より信頼性向上が図れる新規材料開発を
+    message: 「さらに」と書いています（この文書はふつう「更に」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: 参ります。　また、携帯端末機器との情報通信の高周波化に伴うEMI対策を施した製品
+    message: 「参る」と書いています（この文書はふつう「まいる」と書く語です。22 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: 参ります。今後はロボットリハビリテーションの普及に向け、更なる新機能を追加し多様
+    message: 「参る」と書いています（この文書はふつう「まいる」と書く語です。22 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: 為、また、高速通信においても光データを支障なく送受信する為に、高密度化と高密度実
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: 為に、高密度化と高密度実装環境での利便性の高い製品、及び防塵性・耐環境性の優れた
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: 無く活用するサーマルリサイクルに力を入れながら、カーボンニュートラル・SDG's
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 29
+    text: 自動車の電動化が加速し、電子化製品の需要増加と素材転換が進む中、当社は得意とする
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: BOX用の電源供給ターミナルとして需要が増加傾向にあり、仕様の多様化も加速してお
+    message: 「BOX」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: CROCUS社より供給されるTMR(トンネル磁気抵抗効果)ICチップを搭載した磁
+    message: 「CROCUS」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: EMI対策を施した製品の需要増加や、多芯型のファイバーの商用化の拡大による調芯機
+    message: 「EMI」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: HEV・EV関連の車載用バッテリーユニット、インバーター、ジャンクションBOX用
+    message: 「HEV」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野へ
+    message: 「IC」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: SDG'sを意識した環境配慮型の竹ならではの特徴を活かした素材・複合材の開発を目
+    message: 「SDG」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 29
+    text: UPと付属部品の仕様及びAssy技術・自動加工技術を導入し、市場価格の先端を走り
+    message: 「UP」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 33
+    text: ＨＤＤ用サスペンション2,210 ＨＤＤ用サスペンションの製造設備の新設及び増強
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 33
+    text: ＨＤＤ用サスペンションの製造設備の新設及び増強その他211 新規製品開発用の製造
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " プリンター関連の製造設備の増強通信関連95 通信関連の製造設備の増強"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 新規製品開発用の製造設備の新設等　北米材料関連製品68 材料関連製品の製造設備"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 材料関連製品の製造設備の増強自動車関連製品209 自動車関連製品の製造設備の増"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 材料関連製品の製造設備の新設及び増強自動車関連製品641 自動車関連製品の製造"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 自動車関連製品の製造設備の増強　アジア自動車関連製品189 自動車関連製品の製"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 自動車関連製品の製造設備の増強プリンター関連67 プリンター関連の製造設備の増"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 自動車関連製品の製造設備の新設及び増強ＨＤＤ用サスペンション2,210 ＨＤＤ"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 33
+    text: " 通信関連の製造設備の増強"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: セグメントの名称製品区分の名称投資金額（百万円）主な投資目的　日本材料関連製品8
+    message: この文は 267 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: )サンコール菊池株式会社（熊本県菊池市）（注）１日本自動車関連製品40*4591
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: )広瀬工場（愛知県豊田市）日本自動車関連製品5648631,054(47)183
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: )豊田工場（愛知県豊田市）日本自動車関連製品33367811(16)24611,
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 37
+    text: ＨＤＤ用サスペンションプリンター関連通信関連その他製品1,7275,633183
+    message: 全角の「ＨＤＤ」と書いています（この文書はふつう半角の「HDD」。197 箇所のうち 23 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 37
+    text: (1) 提出会社2023年３月31日現在事業所名（所在地）セグメントの名称製品区
+    message: 「日本材料関連製品自動車関連製品」は漢字が 15 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: (1) 提出会社2023年３月31日現在事業所名（所在地）セグメントの名称製品区
+    message: この文は 1125 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 37
+    text: ２【主要な設備の状況】　当社グループにおける主要な設備は、次のとおりであります。
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 41
+    text: (1) 重要な設備の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資
+    message: 「内容投資予定額資金調達方法着手年月完了予定年月完成後」は漢字が 26 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: (1) 重要な設備の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資
+    message: この文は 648 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 41
+    text: の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資予定額資金調達方法
+    message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 41
+    text: の設備の新設のセグメント別計画は、次のとおりであります。(1) 重要な設備の新設
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 41
+    text: HDD用サスペンション生産設備5,409-自己資金及び借入金-2024年3月-プ
+    message: 「HDD」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 49
+    text: ②【発行済株式】種類事業年度末現在発行数（株）（2023年３月31日）提出日現在
+    message: 「登録認可金融商品取引業協会名内容普通株式」は漢字が 20 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 53
+    text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
+    message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
+    message: この文は 175 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 57
+    text: (株)議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 57
+    text: )議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－－議
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 57
+    text: ．「完全議決権株式（その他）」における普通株式には、業績連動型株式報酬制度の信託
+    message: 句点を「．」と書いています（この文書はふつう「。」。201 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: 「イ．」「ロ．」「１．」 are list markers, not full stops
+  - rule: latin-spacing
+    line: 57
+    text: " 10株が含まれております。"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 57
+    text: " 34,057,923－－総株主の議決権 －303,605－（注）１．「完全議決"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 57
+    text: " 342,200株が含まれております。２．「単元未満株式」における普通株式には、"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 57
+    text: ①【発行済株式】    2023年３月31日現在区分株式数(株)議決権の数（個）
+    message: 「業績連動型株式報酬制度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 57
+    text: ２．「単元未満株式」における普通株式には、業績連動型株式報酬制度の信託財産として
+    message: 「業績連動型株式報酬制度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: ①【発行済株式】    2023年３月31日現在区分株式数(株)議決権の数（個）
+    message: この文は 287 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: (株)他人名義所有株式数(株)所有株式数の合計(株)発行済株式総数に対する所有株
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: (株)所有株式数の合計(株)発行済株式総数に対する所有株式数の割合（％）サンコー
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: (株)発行済株式総数に対する所有株式数の割合（％）サンコール株式会社京都市右京区
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: )他人名義所有株式数(株)所有株式数の合計(株)発行済株式総数に対する所有株式数
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: )所有株式数の合計(株)発行済株式総数に対する所有株式数の割合（％）サンコール株
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 61
+    text: )発行済株式総数に対する所有株式数の割合（％）サンコール株式会社京都市右京区梅津
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 61
+    text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
+    message: 「株式会社京都市右京区梅津西浦町」は漢字が 15 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
+    message: この文は 224 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 69
+    text: １０（注）　当期間における取得自己株式には、2023年６月１日からこの有価証券報
+    message: 全角の「１０」と書いています（この文書はふつう半角の「10」。705 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: (3) 【株主総会決議又は取締役会決議に基づかないものの内容】　会社法第155条
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 73
+    text: (4) 【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数（株）処
+    message: 「区分当事業年度当期間株式数」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: (4) 【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数（株）処
+    message: この文は 277 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 77
+    text: )を公表しておりますが、当社の配当政策は、業績連動型配当の継続実施であり、ROE
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 77
+    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 77
+    text: ３【配当政策】　利益配分につきましては、長期的な視野に立った経営体質の強化、事業
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
+    message: この文は 449 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 77
+    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
+    message: 一文に読点が 13 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 77
+    text: の剰余金の配当の決定機関は、期末配当については株主総会、中間配当については取締役
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 77
+    text: の年２回の剰余金の配当を行なうことを基本方針としております。これらの剰余金の配当
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 77
+    text: かかる剰余金の配当は、以下のとおりであります。決議年月日配当金の総額（百万円）１
+    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。20 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 77
+    text: 参ります。当社は、中間配当と期末配当の年２回の剰余金の配当を行なうことを基本方針
+    message: 「参る」と書いています（この文書はふつう「まいる」と書く語です。22 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 77
+    text: 行なうことを基本方針としております。これらの剰余金の配当の決定機関は、期末配当に
+    message: 「行なう」と書いています（この文書はふつう「行う」と書く語です。34 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
+    message: 「は」で出した主題から述語まで 416 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 77
+    text: )を公表しておりますが、当社の配当政策は、業績連動型配当の継続実施であり、ROE
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 77
+    text: GLOBAL GROWTH PLAN2024」（GGP24)を公表しておりますが
+    message: 「GLOBAL」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 77
+    text: GROWTH PLAN2024」（GGP24)を公表しておりますが、当社の配当政
+    message: 「GROWTH」が説明なしで使われています（説明のない略語 14 個）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 93
+    text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2022
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 97
+    text: 具体的には、会計基準等の内容を適切に把握し、かつ、会計基準等の変更等について的確
+    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: (2022年３月31日)当連結会計年度(2023年３月31日)負債の部  流動負
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: (2022年３月31日)当連結会計年度(2023年３月31日)資産の部  流動資
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: (2023年３月31日)負債の部  流動負債  支払手形及び買掛金7,2787,
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: (2023年３月31日)資産の部  流動資産  現金及び預金7,5107,707
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: )当連結会計年度(2023年３月31日)負債の部  流動負債  支払手形及び買掛
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: )当連結会計年度(2023年３月31日)資産の部  流動資産  現金及び預金7,
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: )負債の部  流動負債  支払手形及び買掛金7,2787,103短期借入金5,3
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 101
+    text: )資産の部  流動資産  現金及び預金7,5107,707受取手形224258売
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: ①【連結貸借対照表】  （単位：百万円） 前連結会計年度(2022年３月31日)
+    message: この文は 1005 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 105
+    text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 105
+    text: (自　2022年４月１日　至　2023年３月31日)売上高47,43853,39
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 105
+    text: )売上高47,43853,399売上原価※１ 41,567※１ 47,642売上
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 105
+    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)売上高47,
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 105
+    text: 【連結損益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１日
+    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 105
+    text: 【連結損益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１日
+    message: この文は 661 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 109
+    text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 109
+    text: (自　2022年４月１日　至　2023年３月31日)当期純利益904557その他
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 109
+    text: )当期純利益904557その他の包括利益  その他有価証券評価差額金36△218
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 109
+    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)当期純利益9
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: 【連結包括利益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１
+    message: この文は 261 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 113
+    text: " 3 1115株主資本以外の項目の当期変動額（純額）     当期変動額合計－3"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 113
+    text: " 5 1621株主資本以外の項目の当期変動額（純額）     当期変動額合計－5"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 113
+    text: " 当連結会計年度（自　2022年４月１日　至　2023年３月31日）    （単"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 113
+    text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
+    message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
+    message: この文は 1133 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 117
+    text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 117
+    text: (自　2022年４月１日　至　2023年３月31日)営業活動によるキャッシュ・フ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 117
+    text: )営業活動によるキャッシュ・フロー  税金等調整前当期純利益1,431934減価
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 117
+    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)営業活動によ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 117
+    text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
+    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 117
+    text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
+    message: この文は 932 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 117
+    text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
+    message: この文に中黒が 7 個あります（5 個まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 121
+    text: (1) 持分法適用の関連会社の数　3社持分法適用会社の名称KOBELCO SPR
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 121
+    text: (1) 重要な資産の評価基準及び評価方法① 有価証券　その他有価証券　　市場価格
+    message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 121
+    text: 12月31日であります。　連結財務諸表の作成に当たっては、決算日現在の財務諸表を
+    message: 「12月31日」には年がありません。この文書の日付は 1998年から2023年にわたるので、どの年か決まりません
+    verdict: false-positive
+    note: a fiscal year-end (決算日は12月31日) recurs every year and takes no year
+  - rule: date-without-year
+    line: 121
+    text: ３月31日であります。SUNCALL AMERICA INC.SUNCALL C
+    message: 「３月31日」には年がありません。この文書の日付は 1998年から2023年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 121
+    text: ．連結の範囲に関する事項連結子会社の数　11社連結子会社の名称サンコールエンジニ
+    message: 句点を「．」と書いています（この文書はふつう「。」。201 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 121
+    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
+    message: この段落は 27 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: (3) 持分法を適用しない非連結子会社及び関連会社　関連会社（沢根スプリング株式
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: (5) 重要な収益及び費用の計上基準　　当社グループは、主として自動車分野、電子
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
+    message: この文は 530 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: ４．会計方針に関する事項(1) 重要な資産の評価基準及び評価方法① 有価証券　そ
+    message: この文は 303 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: SUNCALL AMERICA INC.SUNCALL CO.,(H.K.) L
+    message: この文は 273 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 121
+    text: の平均残存勤務期間以内の一定の年数（10年）による定額法により費用処理しておりま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 121
+    text: の平均残存勤務期間以内の一定の年数（15年）による定額法により按分した額をそれぞ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 121
+    text: または検収時点で収益を認識しております。ただし、製品の国内の販売については、出荷
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 121
+    text: または検収時点において顧客が当該製品に対する支配を獲得し、履行義務が充足されると
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 121
+    text: 手続について特に記載する必要があると認められる事項　持分法適用会社は、決算日が連
+    message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: (6) 重要な外貨建の資産及び負債の本邦通貨への換算基準　外貨建金銭債権債務は、
+    message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 建物及び構築物　　　　15～38年　機械装置及び運搬具　　８～12年 ② 無形固
+    message: 「〜おります」で終わる文が 11 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 121
+    text: (3) 持分法を適用しない非連結子会社及び関連会社　関連会社（沢根スプリング株式
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 121
+    text: (5) 重要な収益及び費用の計上基準　　当社グループは、主として自動車分野、電子
+    message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 121
+    text: ４．会計方針に関する事項(1) 重要な資産の評価基準及び評価方法① 有価証券　そ
+    message: 「は」で出した主題から述語まで 233 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 125
+    text: １．連結の範囲に関する事項連結子会社の数　11社連結子会社の名称サンコールエンジ
+    message: この文は 314 文字あります（140 文字まで）
+    verdict: unjudged

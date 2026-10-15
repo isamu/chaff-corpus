@@ -1,0 +1,197 @@
+id: yuho-e02395-mda
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 1
+    text: )経営成績（経営成績に関する分析）当連結会計年度におきましては、世界的な物価高と
+    message: 丸括弧を、全角で 37 箇所、半角で 26 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: currency-notation-consistency
+    line: 1
+    what: 「連結売上高83,494百万(前期比1.2%増)」 drops 円; every other amount in the section is 百万円
+    verdict: missed
+    note: no rule covers a dropped currency unit in prose; this is the closest
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ３ヵ年計画『SHIFT』で掲げた2023年目標連結売上高83,500百万円、連結
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。94 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ３ヵ年計画『SHIFT』をスタートしました。『SHIFT』では、ドメイン・シフト
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。94 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】当連結会計
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。94 箇所のうち 4 箇所が違う）
+    verdict: false-positive
+    note: the full-width 「４【…】」 is the fixed section-number form of an annual securities report
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: ４つの重点課題を掲げ、具体的施策の実行に向けて取り組んでまいりました。その結果、
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。94 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
+    message: 「地域別製品区分別売上高」は漢字が 11 字続いています（10 字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 1
+    text: (2)財政状態当連結会計年度末の財政状態は、前連結会計年度末と比較して総資産が1
+    message: 「財政状態当連結会計年度末」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ①生産実績当連結会計年度における生産実績は次のとおりであります。製品区分生産高(
+    message: 「生産実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ①調理家電製品調理家電製品の売上高は、58,631百万円（前連結会計年度比0.6
+    message: 「調理家電製品調理家電製品」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ③生活家電製品生活家電製品の売上高は、5,009百万円（前連結会計年度比10.5
+    message: 「生活家電製品生活家電製品」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ③繰延税金資産の回収可能性繰延税金資産の回収可能性は、将来減算一時差異が将来の税
+    message: 「回収可能性繰延税金資産」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ③販売実績当連結会計年度における販売実績は次のとおりであります。製品区分販売高(
+    message: 「販売実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: これは主に、税金等調整前当期純利益6,442百万円、減価償却費2,258百万円、
+    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】当連結会計
+    message: この段落は 63 文あります（5 文まで）
+    verdict: false-positive
+    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
+  - rule: max-sentence-length
+    line: 1
+    text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
+    message: この文は 363 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: max-sentence-length
+    line: 1
+    text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
+    message: この文は 157 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: （重要な経営指標に関する分析）中期３ヵ年計画『SHIFT』で掲げた2023年目標
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: 『SHIFT』では、ドメイン・シフト「新規領域の拡大と既存領域の深化」、グローバ
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】当連結会計
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: ④固定資産の減損固定資産の減損は、固定資産のうち減損の兆候がある資産又は資産グル
+    message: この文は 148 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: 減損の兆候の把握、減損損失の認識及び測定を行うにあたっては、過年度の実績や事業計
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 1
+    text: 文中における将来に関する事項は、当連結会計年度末現在において判断したものでありま
+    message: 「ものであります。」が 11 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: これは主に、配当金の支払額2,300百万円により資金が減少したことによるものであ
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 総資産の増加1,233百万円は、流動資産の減少1,315百万円及び固定資産の増加
+    message: 「〜であります」で終わる文が 7 文続いています（2 文まで）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 連結財務諸表の作成に当たって用いた会計上の見積り及び仮定のうち、重要なものは以下
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: false-positive
+    note: a table the dataset ran together (cells without separators) is read as prose
+  - rule: topic-predicate-distance
+    line: 1
+    text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
+    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: ④固定資産の減損固定資産の減損は、固定資産のうち減損の兆候がある資産又は資産グル
+    message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: このような経営環境の中で、当社グループは2022年11月21日より、暮らしの課題
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これは主に、定期預金の預入による支出4,061百万円、有形固定資産の取得による支
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これは主に、税金等調整前当期純利益6,442百万円、減価償却費2,258百万円、
+    message: 「は」で出した主題から述語まで 118 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: これらの判断は、将来の利益計画に基づく課税所得、一時差異等の解消見込年度等の見積
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: また、固定資産2,548百万円の増加は主に、建物及び構築物143百万円、工具、器
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 流動資産1,315百万円の減少は主に、原材料及び貯蔵品407百万円が増加した一方
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 純資産4,020百万円の増加は主に、親会社株主に帰属する当期純利益の計上4,44
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 経常利益は6,496百万円（同11.7％増）となり、グループ内の各社の利益構成比
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1
+    text: )は、前連結会計年度末と比較して134百万円増加し、31,211百万円となりまし
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged

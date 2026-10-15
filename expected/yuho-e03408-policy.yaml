@@ -1,0 +1,28 @@
+id: yuho-e03408-policy
+chaff: 0.34.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: EV（電気自動車）の販売や家庭、車とエネルギーをつなぐ新たなサービスの創造に取り
+    message: 半角の「EV」と書いています（この文書はふつう全角の「ＥＶ」。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 1
+    text: ・2024年の完成を予定する豊橋駅前大通二丁目地区再開発事業のｅｍＣＡＭＰＵＳ（
+    message: 「豊橋駅前大通二丁目地区再開発事業」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: １【経営方針、経営環境及び対処すべき課題等】（1）中長期的な経営戦略及び優先的に
+    message: この段落は 21 文あります（5 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 同ビジョンにおいて、社会が大きく変化するなかでもお客さまの暮らしやすさを徹底して
+    message: 「〜います」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: （ハウジング）・住宅販売部門は、お客さま視点の商品・サービス開発に継続して取り組
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged

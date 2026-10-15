@@ -1,0 +1,33 @@
+id: yuho-e25969-research
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 1
+    text: 野菜苗・苗関連事業当連結会計年度の野菜苗・苗関連事業に係る研究開発費は、102,
+    message: 「苗関連事業当連結会計年度」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1
+    text: ６【研究開発活動】当社グループは、野菜苗メーカーとして、最先端の育苗技術の開発及
+    message: この段落は 14 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1
+    text: 苗の生産性向上、品質向上、付加価値化を最大の研究テーマとし未来に向けて持続可能な
+    message: この文は 183 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 大学・公立研究機関・民間企業等とも協力体制を構築し、共同研究及び受託研究に積極的
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 当事業部門では、「苗」「育種」「ワクチン」の３セグメントへ研究開発を集中して行っ
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 植物ワクチンは、化学農薬に依存しない効果的な防除対策の実現と環境に配慮した生産及
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged

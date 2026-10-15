@@ -1,0 +1,44 @@
+id: yuho-e01603-research
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 1
+    text: )その他の事業マテリアルでは、材料の面から不二越全社の新商品開発を後押しすべく、
+    message: 括弧を「)」と書いています（この文書はふつう「）」。7 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )機械工具事業ロボットでは、主に電機・電子分野での人手不足の解消・省人化のニーズ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。7 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: )部品事業ベアリングでは、産業機械分野では、多点接触玉軸受や薄肉軸受の展開により
+    message: 括弧を「)」と書いています（この文書はふつう「）」。7 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: katakana-long-vowel
+    line: 1
+    text: ユーザの要望に応えた工作機械の開発を進めてまいります。(2)部品事業ベアリングで
+    message: 「ユーザ」と「ユーザー」が混ざっています（この語は 2 回のうち 1 回が「ユーザ」）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 1
+    text: 2023年は当社の油圧・材料・熱制御の要素技術を融合したフッ素樹脂用小型射出成形
+    message: 「素樹脂用小型射出成形機」は漢字が 11 字続いています（10 字まで）
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 1
+    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
+    message: この段落は 29 文あります（5 文まで）
+    verdict: false-positive
+    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
+  - rule: max-sentence-length
+    line: 1
+    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
+    message: この文は 157 文字あります（140 文字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 1
+    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: correct
