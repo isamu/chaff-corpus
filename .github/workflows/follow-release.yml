@@ -1,0 +1,94 @@
+name: follow-release
+
+# When npm has a chaffjs newer than the pin, open a PR that bumps it and records what moved (`run-corpus --resolve`).
+# A PR opened with GITHUB_TOKEN starts no other workflow, so the checks `check` would run are run here and put in the
+# PR body; a maintainer starts `check` on the PR by workflow_dispatch or by pushing an empty commit.
+
+on:
+  schedule:
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: follow-release
+  cancel-in-progress: false
+
+jobs:
+  follow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+
+      - name: decide
+        id: decide
+        run: |
+          info="$(yarn info chaffjs version --json 2>/dev/null || true)"
+          node scripts/follow-release.ts decide "$info" | tee -a "$GITHUB_OUTPUT"
+
+      - name: skip when the branch or its PR already exists
+        id: open
+        if: steps.decide.outputs.follow == 'true'
+        env:
+          BRANCH: ${{ steps.decide.outputs.branch }}
+        run: |
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null; then
+            echo "branch $BRANCH already exists"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          prs="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --state all --json number --jq length)"
+          if [ "$prs" != "0" ]; then
+            echo "a PR from $BRANCH already exists"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "go=true" >> "$GITHUB_OUTPUT"
+
+      - name: bump, resolve and check
+        id: run
+        if: steps.open.outputs.go == 'true'
+        env:
+          VERSION: ${{ steps.decide.outputs.version }}
+          BRANCH: ${{ steps.decide.outputs.branch }}
+          PINNED: ${{ steps.decide.outputs.pinned }}
+        run: |
+          git switch -c "$BRANCH"
+          yarn install --frozen-lockfile
+          yarn add "chaffjs@$VERSION" --exact
+          checks=()
+          check() { local name="$1"; shift; if "$@"; then checks+=("$name=pass"); else checks+=("$name=fail"); fi; }
+          check validate yarn validate
+          check typecheck yarn typecheck
+          check test yarn test
+          check resolve yarn run-corpus --jobs 4 --resolve --resolve-out "$RUNNER_TEMP/resolve.md"
+          touch "$RUNNER_TEMP/resolve.md"
+          # The same run `check` does, now against the resolved expected files.
+          check corpus yarn run-corpus --jobs 4
+          node scripts/follow-release.ts body "$PINNED" "$VERSION" "$RUNNER_TEMP/resolve.md" "${checks[@]}" > "$RUNNER_TEMP/body.md"
+          cat "$RUNNER_TEMP/body.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: commit, push and open the PR
+        if: steps.open.outputs.go == 'true'
+        env:
+          VERSION: ${{ steps.decide.outputs.version }}
+          BRANCH: ${{ steps.decide.outputs.branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- package.json yarn.lock
+          git ls-files --modified --others --exclude-standard -- expected/ | while IFS= read -r file; do git add -- "$file"; done
+          git commit -m "chore: follow chaffjs $VERSION"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BRANCH"
+          gh pr create --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --title "chore: follow chaffjs $VERSION" --body-file "$RUNNER_TEMP/body.md"

@@ -101,6 +101,17 @@ yarn run-corpus --only q3-report,rouki --jobs 2 --offline
 The pinned chaffjs is the exact version in `package.json`. chaff runs each document as a user would: the command line,
 with the document's genre (`--genre`), the experimental rules on, and its language given in a `chaff.yaml`.
 
+## Following chaff releases
+
+The `follow-release` workflow runs daily (and by workflow_dispatch). When npm's latest `chaffjs` is newer than the pin
+and neither the branch `chore/chaffjs-<version>` nor a pull request from it exists, it bumps the pin
+(`yarn add chaffjs@<version> --exact`), runs `yarn run-corpus --resolve`, and opens a pull request whose body lists what
+was resolved (false positives gone), found (misses now given, marked correct) and regressed (correct findings lost).
+
+A pull request opened with the workflow's token starts no other workflow, so `check` does not run on it by itself. The
+job runs validate, typecheck, test and the corpus on the bumped commit and puts the results in the body. To get `check`
+on the pull request, a maintainer runs `check` from the Actions tab on that branch, or pushes an empty commit to it.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). In short: add the text and its `.yaml`, run `yarn validate` and
