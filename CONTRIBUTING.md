@@ -2,8 +2,76 @@
 
 [日本語](CONTRIBUTING.ja.md)
 
-Two kinds of contribution are welcome: a **document** (with its findings judged, or left as unjudged for someone
-else), and a **verdict** on findings already listed.
+Three kinds of contribution are welcome: a **case** where chaff got a document wrong, a **document** (with its findings
+judged, or left as unjudged for someone else), and a **verdict** on findings already listed.
+
+## Report a case where chaff is wrong
+
+When chaff gives a wrong finding on a document, or does not give one it should, send the document here as a **case**.
+A case is a document you may share plus its expected file, in which the wrong finding is marked `false-positive` and the
+missing one is marked `missed`. A case is the most useful report chaff can get: the fix in chaff is made against your
+text, and the case stays here, so the same mistake cannot come back unnoticed.
+
+1. **Make sure you may share the text.** The licence rules of [Adding a document](#adding-a-document) apply: the text
+   must be under a licence that allows redistribution, or, when it is public but may not be copied, you commit only its
+   `.yaml` with `redistribute: false`. A text you wrote yourself is fine when you put it under a licence such as CC0 or
+   CC BY 4.0 and name it in the `.yaml`. A confidential document cannot be a case, nor can an excerpt of it: write a
+   short text of your own that shows the same mistake instead.
+2. **Make sure it holds no personal data**: no private person's name, email address or phone number. `yarn validate`
+   scans for email addresses and phone numbers; it cannot see names, so check those yourself.
+3. **Add the document** as in steps 3 to 5 of [Adding a document](#adding-a-document): the text at
+   `docs/<lang>/<genre>/<id>.md`, its `.yaml` beside it, and the text's `sha256`.
+4. **Get chaff's findings.** Run `yarn validate`, then
+
+   ```sh
+   yarn run-corpus --update --only <id>
+   ```
+
+   This writes `expected/<id>.yaml` with every finding chaff gives, each one `unjudged`. The corpus runs the chaffjs
+   pinned in `package.json`, with the document's genre and the experimental rules on, so its findings can differ from
+   your own run of chaff. What the corpus finds is what the case is judged against.
+5. **Mark the wrong finding**: change its `verdict` to `false-positive` and add a one-line `note` saying why. Leave
+   `rule`, `line` and `text` as they are; they are how the run finds the finding again.
+6. **Add the missing finding**: a new entry with `rule`, `line`, `what` and `verdict: missed` (and a `note` if it
+   helps). `rule` is the chaff rule that should report it (`npx chaff rules` lists them, `npx chaff explain <rule>` says
+   what one is for), and `line` is the line in the document file. The miss counts as found when that rule gives a
+   finding on that line.
+7. **Judge the rest if you can** (see [Judging findings](#judging-findings)) and leave the others `unjudged`. Then open
+   a pull request; the template has a checklist for a case.
+
+For example, in `expected/lease-notice.yaml` (the entries `--update` wrote also carry a `message`, which you keep):
+
+```yaml
+id: lease-notice
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 12
+    text: HVAC
+    verdict: false-positive
+    note: HVAC is spelled out in the table above, which chaff does not connect to this line
+  - rule: numbering-gap
+    line: 40
+    what: clause 4 is followed by clause 6
+    verdict: missed
+```
+
+### What happens next
+
+- **CI accepts the case.** `false-positive` and `missed` entries are open cases: the report lists them as work, and
+  they do not fail the build. `check` fails only when a `correct` finding is lost, when a document with no `unjudged`
+  entry gets a new finding, or when the metadata is invalid. If you change the text after running `--update`, run it
+  again.
+- **The pull request also shows lab's main**: a second, report-only run against chaff as it is on
+  isamu/lab's main says whether the case is already fixed there but not yet released.
+- **A lab issue is opened for it.** Once the case is on main here, isamu/lab's daily sync opens one issue per document
+  with open cases, labelled `corpus-case`, and keeps it up to date (after isamu/lab#1219 is merged). A lab pull request
+  that fixes chaff is run against this corpus, and its report says which cases it resolves (after isamu/lab#1218 is
+  merged).
+- **A chaff release closes it.** When a new chaffjs is on npm, a daily workflow here opens a pull request that bumps the
+  pin and runs `yarn run-corpus --resolve`: a false positive chaff no longer gives is
+  removed, and a miss chaff now gives becomes `correct`, with `found by chaffjs <version>` added to its note. Once that
+  pull request is merged, the document has no open case left, and the next sync closes the lab issue.
 
 ## Adding a document
 

@@ -19,7 +19,7 @@ docs/<lang>/<genre>/<id>.md     the text (or <id>.txt for plain text, read by ch
 docs/<lang>/<genre>/<id>.yaml   what the document is: source, licence, language, genre, sha256 of the text
 expected/<id>.yaml              every finding chaff gives on it, each with a verdict
 allowlist.yaml                  published contact addresses and numbers that may stay in a text
-scripts/                        validate.ts, run.ts and the pure functions they use
+scripts/                        the scripts behind the yarn commands; scripts/lib/ holds the pure functions they use
 ```
 
 `<genre>` is a chaff genre such as `business/report` or `legal/statute` (`npx chaff genres` lists them).
@@ -101,10 +101,25 @@ yarn run-corpus --only q3-report,rouki --jobs 2 --offline
 The pinned chaffjs is the exact version in `package.json`. chaff runs each document as a user would: the command line,
 with the document's genre (`--genre`), the experimental rules on, and its language given in a `chaff.yaml`.
 
+## Following chaff releases
+
+The `follow-release` workflow runs daily (and by workflow_dispatch). When npm's latest `chaffjs` is newer than the pin
+and neither the branch `chore/chaffjs-<version>` nor a pull request from it exists, it bumps the pin
+(`yarn add chaffjs@<version> --exact`), runs `yarn run-corpus --resolve`, and opens a pull request whose body lists what
+was resolved (false positives gone), found (misses now given, marked correct) and regressed (correct findings lost).
+
+A pull request opened with the workflow's token starts no other workflow, so `check` does not run on it by itself. The
+job runs validate, typecheck, test and the corpus on the bumped commit and puts the results in the body. To get `check`
+on the pull request, a maintainer runs `check` from the Actions tab on that branch, or pushes an empty commit to it.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). In short: add the text and its `.yaml`, run `yarn validate` and
 `yarn run-corpus --update`, judge what you can, and open a pull request.
+
+If chaff got a document wrong, a wrong finding or one it should give and does not, send it as a case: see
+[Report a case where chaff is wrong](CONTRIBUTING.md#report-a-case-where-chaff-is-wrong). CI accepts it as an open case,
+isamu/lab tracks it in an issue labelled `corpus-case`, and a chaff release that fixes it settles it here.
 
 ## Licences
 

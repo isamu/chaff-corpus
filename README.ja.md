@@ -18,7 +18,7 @@ docs/<lang>/<genre>/<id>.md     本文（プレーンテキストなら <id>.txt
 docs/<lang>/<genre>/<id>.yaml   文書の情報: 出典、ライセンス、言語、ジャンル、本文の sha256
 expected/<id>.yaml              chaff が出す指摘すべてと、それぞれの判定
 allowlist.yaml                  本文に残してよい、公開済みの連絡先アドレス・電話番号
-scripts/                        validate.ts と run.ts、それらが使う純粋関数
+scripts/                        yarn のコマンドが実行するスクリプト。それらが使う純粋関数は scripts/lib/
 ```
 
 `<genre>` は chaff のジャンル（`business/report`、`legal/statute` など。一覧は `npx chaff genres`）です。
@@ -99,10 +99,25 @@ yarn run-corpus --only q3-report,rouki --jobs 2 --offline
 固定版の chaffjs は `package.json` に書いた版そのものです。chaff は利用者と同じくコマンドラインで、文書のジャンル
 （`--genre`）を指定し、実験的なルールも有効にし、言語は `chaff.yaml` で指定して実行します。
 
+## chaff のリリースへの追従
+
+`follow-release` ワークフローは毎日（と workflow_dispatch で）動きます。npm の最新 `chaffjs` が固定版より新しく、
+ブランチ `chore/chaffjs-<version>` もそこからの PR もまだ無ければ、固定版を上げ（`yarn add chaffjs@<version> --exact`）、
+`yarn run-corpus --resolve` を実行して PR を出します。PR 本文には resolved（出なくなった false-positive）、
+found（出るようになった missed。correct にした）、regressed（出なくなった correct）の一覧が載ります。
+
+ワークフローのトークンで開いた PR は他のワークフローを起動しないので、`check` はその PR で自動では走りません。
+このジョブが上げた版で validate・typecheck・test・コーパス実行を行い、結果を本文に載せます。PR に `check` を付けるには、
+メンテナが Actions タブからそのブランチで `check` を実行するか、空コミットを push します。
+
 ## 文書の追加
 
 [CONTRIBUTING.ja.md](CONTRIBUTING.ja.md) を見てください。要するに、本文と `.yaml` を置き、`yarn validate` と
 `yarn run-corpus --update` を実行し、判定できるものを判定して PR を出します。
+
+chaff が文書を間違えた（誤った指摘を出した、または出すべき指摘を出さなかった）ときは、事例として投稿してください。
+手順は [chaff が間違えた文書を投稿する](CONTRIBUTING.ja.md#chaff-が間違えた文書を投稿する) にあります。CI は未解決の事例として
+受け入れ、isamu/lab が `corpus-case` ラベルのイシューで追い、それを直した chaff が公開されるとここで解決済みになります。
 
 ## ライセンス
 
