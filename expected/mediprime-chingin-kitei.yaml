@@ -1,0 +1,51 @@
+id: mediprime-chingin-kitei
+chaff: 0.34.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 34
+    text: １ヶ月分の賃金を翌月10日に支払う。
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。19 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: toki-as-condition
+    line: 39
+    text: 時はいずれもその端数を切り上げる。
+    message: 条件を言うなら「時」は「とき」と書きます
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 96
+    text: ５時）に労働した時間
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。19 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 127
+    text: １項2号から5号により算出した手当額の総計
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。19 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: hankaku-kana
+    line: 128
+    text: ｡
+    message: 半角の片仮名「｡」があります（全角は「。」）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 145
+    text: )　+ 減額対象外の賃金
+    message: 括弧を「)」と書いています（この文書はふつう「）」。13 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (1 - …))
+  - rule: bracket-width-consistency
+    line: 147
+    text: (労働時間 ÷ 月平均所定労働時間)　+ 減額対象外の賃金
+    message: 括弧を「(」と書いています（この文書はふつう「（」。13 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (…))
+  - rule: bracket-width-consistency
+    line: 147
+    text: )　+ 減額対象外の賃金
+    message: 括弧を「)」と書いています（この文書はふつう「）」。13 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (…))
+  - rule: yori-as-from
+    line: 151
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct

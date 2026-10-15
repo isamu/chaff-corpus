@@ -1,0 +1,48 @@
+id: denkiyagi-chingin-kitei
+chaff: 0.34.0
+findings:
+  - rule: toki-as-condition
+    line: 41
+    text: 時はいずれもその端数を切り上げる。
+    message: 条件を言うなら「時」は「とき」と書きます
+    verdict: correct
+  - rule: orthographic-variant
+    line: 98
+    text: および関連法令で定められた非課税限度額を上限額とする。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。15 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 243
+    text: および関連法令で定められた非課税限度額を上限額とする。
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。15 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: yori-as-from
+    line: 299
+    text: より施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: yori-as-from
+    line: 300
+    text: より改定施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: yori-as-from
+    line: 302
+    text: より改定施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: yori-as-from
+    line: 303
+    text: より改定施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: yori-as-from
+    line: 304
+    text: より改訂施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: yori-as-from
+    line: 305
+    text: より改訂施行する。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
