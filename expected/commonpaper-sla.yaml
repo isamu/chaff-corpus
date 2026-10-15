@@ -1,0 +1,8 @@
+id: commonpaper-sla
+chaff: 0.34.0
+findings:
+  - rule: obligation-without-deadline
+    line: 17
+    text: pay to <span class="coverpage_link">Cust
+    message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged

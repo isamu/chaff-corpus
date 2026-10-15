@@ -1,0 +1,158 @@
+id: commonpaper-dpa
+chaff: 0.34.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 15
+    text: If <span class="keyterms_link">Provider<
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 15
+    text: If <span class="keyterms_link">Provider<
+    message: '"as needed" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 19
+    text: Customer</span> has complied with and wi
+    message: '"adequate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 27
+    text: GDPR applies to the Processing of Custom
+    message: '"GDPR" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
+  - rule: vague-word-density
+    line: 27
+    text: If the GDPR applies to the Processing of
+    message: '"if applicable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 29
+    text: notify Customer of any failure by its Su
+    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 33
+    text: EEA, the United Kingdom, or other releva
+    message: '"EEA" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
+  - rule: vague-word-density
+    line: 33
+    text: Customer</span> agrees that <span class=
+    message: '"as necessary" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 33
+    text: If <span class="keyterms_link">Provider<
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 39
+    text: Sub-Processor) of the EEA SCCs apply whe
+    message: '"Sub-Processor" here, where the document usually writes "Subprocessor" (1 of 19)'
+    verdict: false-positive
+    note: the official title of an SCC module (Processor to Sub-Processor), quoted from the Commission's clauses
+  - rule: invisible-character
+    line: 61
+    text: ‎18 of the UK Addendum, the parties will
+    message: "1 direction mark (U+200E): the order a reader sees can differ from the order a machine reads"
+    verdict: correct
+    note: a stray left-to-right mark inside a section number
+  - rule: undefined-acronym
+    line: 61
+    text: ICO issues a revised Approved Addendum u
+    message: '"ICO" is used without an expansion (3 such acronyms)'
+    verdict: correct
+    note: ICO is never expanded in the document
+  - rule: vague-word-density
+    line: 69
+    text: Provider’s</span> notification of or res
+    message: '"as required" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 69
+    text: Upon becoming aware of any Security Inci
+    message: '"timely" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 69
+    text: Upon becoming aware of any Security Inci
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 69
+    text: Upon becoming aware of any Security Inci
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 69
+    text: Upon becoming aware of any Security Inci
+    message: '"promptly" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 73
+    text: Provider</span> will give <span class="k
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 77
+    text: In addition to the Report, <span class="
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 81
+    text: notify <span class="keyterms_link">Custo
+    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 81
+    text: If allowed by Applicable Law, <span clas
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 81
+    text: If allowed by Applicable Law, <span clas
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 81
+    text: Provider</span> will cooperate with and
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 83
+    text: If required by Applicable Data Protectio
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 87
+    text: as soon as reasonably practicable except
+    message: '"as soon as reasonably practicable" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: correct
+  - rule: vague-word-density
+    line: 87
+    text: Provider</span> will comply with this in
+    message: '"reasonably" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 91
+    text: return or delete Customer Personal Data
+    message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 91
+    text: If return or destruction is impracticabl
+    message: '"reasonable" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 125
+    text: "'s Implementing Decision 2021/914 of 4 J"
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 24)
+    verdict: correct
+  - rule: which-that-consistency
+    line: 139
+    text: which is not subject to adequacy regulat
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
