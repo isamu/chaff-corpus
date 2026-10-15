@@ -34,7 +34,9 @@ const table = (heading: string, tally: ReadonlyMap<string, Counts>): string[] =>
   row(["**all**", ...COLUMNS.map((column) => column.value(total(tally)))]),
 ];
 
-const place = (id: string, outcome: Outcome): string => `\`${id}:${String(outcome.line)}\` ${outcome.rule} — ${outcome.text}`;
+/** Where an outcome is, for a reader: id:line and rule, and the text when the report may show it. */
+export const place = (id: string, outcome: Outcome): string =>
+  `\`${id}:${String(outcome.line)}\` ${outcome.rule}${outcome.text === undefined ? "" : ` — ${outcome.text}`}`;
 
 const FAILURE_TITLE: Readonly<Record<Failure["reason"], string>> = {
   "correct-lost": "a correct finding chaff no longer gives",

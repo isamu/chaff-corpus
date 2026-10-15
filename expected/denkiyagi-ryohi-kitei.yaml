@@ -1,0 +1,15 @@
+id: denkiyagi-ryohi-kitei
+chaff: 0.34.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    sha256: 87366cb22cc6688ff3d75c1e85f84994d6e5028fc9f67a68238a846dc1a77a6f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 58
+    sha256: 44733c32b2d4b7a800b3eba442611318f5bb07179cd13c2c5d75773195ff7286
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 142
+    sha256: 33606706005cfe89d3ac18ba5c9fdad5b16b34618c2392844bcd768e1e5bf85f
+    verdict: unjudged

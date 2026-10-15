@@ -1,0 +1,47 @@
+id: react-ja-thinking
+chaff: 0.34.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 7
+    sha256: 581290f124b26b899d236735fb92394ea7bc16d927b1bf293aa9526d3e813402
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 11
+    sha256: 9c88dd28c698a3c9df0a545b649df8bcb6d4ad8a76ccb031279568ac086c6348
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 66
+    sha256: 08c216eae7d3dcd20a9722001af5822685c0d538a25eb5e5454a774d23c1ba56
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 76
+    sha256: aa3b4a30e2e75ffe53b58bb5b46b61076f4e1981c1666f51d8d8ebf019c5144e
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    sha256: aaa8988b1aa215058c7c572d7ee1ce9ace1443f48aacb9cf2466042e6256ce07
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 212
+    sha256: b636a990ba568b6f0b8470d4f8507ab2a0c7282e5c2f85171da00beca2d4e571
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 240
+    sha256: 4305aef2ef3d31211741da57e615bd17cae7d087dd67d2ce1f7f2fc321289f73
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 253
+    sha256: c5b6fd75e69be02ad521b2a4cec0a96c28676fe057ff8842a3579f4a11799173
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 262
+    sha256: daf77cd4851154a65dd9a83a8c962d44828f1878f476152d7bbb78a4f33eeff4
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 448
+    sha256: fd06375e093fff74fb4a6c8e6f5a5f10b81d7451fcb55a8088afd880cb907361
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 661
+    sha256: 40ac655085a618783aa0867dd1d3238d7dd23b0576ef0baacb6b9385d1e0180a
+    verdict: unjudged

@@ -1,0 +1,35 @@
+id: commonpaper-mutual-nda
+chaff: 0.34.0
+findings:
+  - rule: use-before-definition
+    line: 3
+    sha256: dd3b9f3f95477a12fdc423e6f74270623947cbe2403f86f7cbaac090b529fe63
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 3
+    sha256: e1790029a00d2685b85a6722c1cee95997553dcd1e4982bbb149ede32df67fce
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 5
+    sha256: 37b261d6ce6c1f727fb807d92e3d17571ccd75c70a5c0148160840e4957a8ba3
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 9
+    sha256: 50c05ea553781cb18feb716a1112885fb7555ed6070a0428405bf57b1f1fe0eb
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 9
+    sha256: 50c05ea553781cb18feb716a1112885fb7555ed6070a0428405bf57b1f1fe0eb
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 13
+    sha256: 3f452956089fc15ede54af6baa47856f5e2016f436c64de64a6e247e24ad1046
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 13
+    sha256: e3e0b579e913af3e5dd66a01f96d11eda2437a2a4cae811a41a2f7b7eb1b49be
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 21
+    sha256: e2e819489f6cd091963157526542afef45540f2d1235e672ea54f862889a0beb
+    verdict: unjudged

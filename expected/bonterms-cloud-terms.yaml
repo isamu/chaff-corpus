@@ -1,0 +1,43 @@
+id: bonterms-cloud-terms
+chaff: 0.34.0
+findings:
+  - rule: vague-deadline
+    line: 7
+    sha256: 7bb806ee5d7c058cde842838b99f972e05afc3b54242f43399949c7c93902ecd
+    verdict: unjudged
+  - rule: unused-definition
+    line: 43
+    sha256: 325689c32c8d4e0aad4abb1e5f7ee9f441d1cdcabbeda4b2b4d8190434a6072a
+    verdict: unjudged
+  - rule: unused-definition
+    line: 43
+    sha256: 9bff504efccbb9ccb28306647a81d0437887b2557192afa8344165240223d31f
+    verdict: unjudged
+  - rule: name-variant
+    line: 45
+    sha256: e8fee4b7f0dee2f286665a8c38f2a0eeeb015112b6850e0984707b3f18975995
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    sha256: 9334e170a2a0590d1c6376e2c0e62ff96a5b0a3704f0b6cfd876da118c3c94e8
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 73
+    sha256: 9efd496c881c667d57c136db832c6e93c6aefddaa8ca57e54f08b53691b1b3a5
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 195
+    sha256: 16aba69d0802b4dac6ee50af531b2791ef9bf6a5888f51f95669172fef66eee3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 195
+    sha256: 3f2bace95de1cf3c938f02ecf3d98d274359818ee317c87eae7e6b6c9976a5cf
+    verdict: unjudged
+  - rule: unused-definition
+    line: 237
+    sha256: e56b29cefa1ea144d579c784133e6e4ad7f7c66e3c9099c9b3d0675d3c2f603f
+    verdict: unjudged
+  - rule: unused-definition
+    line: 245
+    sha256: 311e4c982850ffda87d97cdf585afc8cdb80da7edcc2f038fa48e35737606f58
+    verdict: unjudged

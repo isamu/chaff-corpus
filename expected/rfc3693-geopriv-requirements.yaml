@@ -1,0 +1,211 @@
+id: rfc3693-geopriv-requirements
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 8
+    sha256: 9af9eef31e66682c7a4c3053e2f28007fd5f6ea4f2b668263ed2716fe4c793d8
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 124
+    sha256: 88c85da54a1cd0bda6db448ca8f0111e5cce3d08bb5cb89b9db64167454f03a1
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 132
+    sha256: afb48b3060ac3962d272d57bca65649de2fd15ceb03d3a15b399e1d5ada254c4
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 175
+    sha256: c6cfed486c1ee5aa468f896cfbc51549d97ba06abdb5f01833bbb4152b03c2f6
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 179
+    sha256: 44eed6b4ce2781effbb488dd0220ecacb3944b0f648166e26b77ab18f5880785
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 188
+    sha256: bd1fe33439a90566ee44173f3b477b89b0744c65db8d3bdb575bbbc505e54830
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 287
+    sha256: 9339a6c2a25f51294896b526bc93041b0402509ac68f2d862489a6113f26833d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 293
+    sha256: 5184dfe26dbf826bb74aabb1303793cd72c9e05148afdd863aa7e48f02ee55ae
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 355
+    sha256: becd1c3a16248a33333396d0c6edd3e153d97a27cfeab7b70c4836cd5ba40394
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 358
+    sha256: a56018ecceef05991abda60efbde52fdbc8562dc7a3f4f0b431f565816ddfd18
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 380
+    sha256: f53f51a8d6b8017b0654f38d9f9feb382f4088229cac9eaef94494fce28aeb2d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 402
+    sha256: 5cf4ffd37b6779f409594976d3b18b0be6b3676f2fc713b47450d445a69642c7
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 408
+    sha256: 74393a6aadf3af80251ebd1ccca33829f563b54e65b0b86aa927bac5853591ce
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 414
+    sha256: 455f7fc5b225bd2f510894611416e4045b311afec12404cfe0c88014b9819c11
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 419
+    sha256: 8f2d5b1d9e4584c21f1455fc5174d1ded72eda2ecb748df45bbd91abf7f52e1e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 659
+    sha256: 0d6fdabfa6dd88c9b5665869d76f49f14daf23887311a547df8e436b41fc16a6
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 701
+    sha256: e607b750c80d5de83da297c24dd39505640d797132fb22af3506dcd7004a34d4
+    verdict: unjudged
+  - rule: acronym-expansion-conflict
+    line: 801
+    sha256: df5467d63dd48a25405902c0f335e0fd2897d1a23e46165e1f34b0d4c6266964
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 849
+    sha256: b6e14f52b3a52ea7088f4999dd825d3b309855a128d91456355a82ed442dfcf3
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 853
+    sha256: db31449be5e5447b53289c4f23ab46f4514c1b6533aca887130e530a601d6661
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 946
+    sha256: a331d55c8a3b1c9da61b76b4598113d1727a40c865d8a23ca2d4f9e471e1f21d
+    verdict: unjudged
+  - rule: article-sound
+    line: 1026
+    sha256: ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1195
+    sha256: 199ba83558b8c09ebeb16e93f466f3ab0e0a54e80e95b9c298b457f6b7b1a438
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1221
+    sha256: 98af1ed61831e6ab92bbb2a4d429344c8d0581c77d5c85311c5ed8a3207d2eea
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1302
+    sha256: 125c04eb5696bb9edd6850689fc7b0767f8eb4ef5daa7afe0d8279a408fa9cb2
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1312
+    sha256: ee5477c0b32ef5335e8c4200ed3448f386c2ebc41f681910bc96cd0e2f856bba
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1321
+    sha256: d031433fb6c0916802328de65b738ac7356ba22524c1b8cfc72e04c070bc99a2
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1375
+    sha256: 9e37ffeeefed63c08144edd989008f54445b87cc6e11b2126d3ed5d6d311a75f
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1382
+    sha256: d81b58c263acff0f8c24d189f2473682a9bef1c962f5f2beff0ae85b0c0728f2
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1432
+    sha256: 90b17c44ed2bcfe21d688fafdda3537ccb4ab52c24ea33b244a5c701257661e9
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1440
+    sha256: ebf184d6e5eeb0fdcf683d9f8122ae1f025b3c330fc012435579657fa2072660
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1521
+    sha256: f0258e8716a041fb56542ee4c6f2647edab6b8a1e817fe79e444ee79dc301944
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1531
+    sha256: 929821829f4eac118e885318aad6cf96828c4545836189925659b73306e80d21
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1531
+    sha256: b8755d4f3ee4f6f4ad76906c4d30138230c32a5bed9b7b7127d6afe9e1b78dd6
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1536
+    sha256: c4f656abba69f639f4498ab0b2ea97db042b546edccc3dc8b6cd7f885c6f62a7
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1541
+    sha256: dd097bb0200bdce1ff6422d47422005d8a211b9b1bb7e6847cc89ca81031a68f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1545
+    sha256: 64d4ace27703b7e0e4226678fbbf9993d49369980e7dae98fc92ecbc77184849
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1551
+    sha256: f16ca14804232b2022318665f1201863c8d3ecc89747436cbee82d022e19dce9
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1554
+    sha256: f68f73aafb31c930408694717a68ceca14328475b94e5bfa5b228fa2c7fba07f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1580
+    sha256: 3230c519ff2f97d00bc4c023ac8b503aba7e38f19cd11155f4f18237a069e7ea
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1580
+    sha256: 65460597668e7953e724a6b79c83557065071cd9a9173379d870142977767dd0
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1589
+    sha256: 6e7255e0950edebdded543e7ba5c505326bfea2b54fb4a4490cf98abfe3d2d42
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1637
+    sha256: 28e914e818f004ee495aeb61bf3e6491f323537a3ff3579cf6eaa35d02bad28b
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1638
+    sha256: 7c608857864835871c36e7a990549d9fd34841bc4130f6debdfcba366d3f20da
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1639
+    sha256: 48a09c4419f116f0399de36ec0190198251a9ce8e404eba75ef7d0d5971d3532
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1639
+    sha256: 53e63e3b601e55bf870bbb8a94c77dec39ead0d0d0bb64a9e52bb0eb1d023718
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1641
+    sha256: 0967630b4695a0253a0e068b8be22be0060dd4aff416e26a067d14ab45a2fb20
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1642
+    sha256: 4b2884676078ee11a86b64a5d0f419c9c719cd6b22f85ab03a1bce4461771dff
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 1643
+    sha256: e39aca566b2037404e67ba933f6006bbda62239d07d5dc0e936b075e94999296
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1647
+    sha256: 3218e55a4ac34d4536058a15c36b59ae72a78ad357d54d5522cd62c210a7fa2d
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1656
+    sha256: 5d866db83e762c53a0cbd7e65e74b7c2cfe4e8697c8b3d3938f593c0667a98ee
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1656
+    sha256: db237822c1ba79f35a5f4306c8235ff9beb7f4c9a8eadc012ae91a08a0bb076a
+    verdict: unjudged

@@ -1,0 +1,15 @@
+id: zenn-coji-xstate-api-reference
+chaff: 0.34.0
+findings:
+  - rule: bold-label-list
+    line: 18
+    sha256: 6174e0127fc1cd50cc4fa53e2541d36bd53985683205fa8d68e0aa1fe1c9c2ee
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 125
+    sha256: 52d912c16d784b7be0889a47fccf14ca3c9ef431b4cb4b21c85e97a3b948e47e
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 368
+    sha256: 560faa9623523b072b97316f7b4e4567488d01f0bb986f1fca7b4580f5fd0ecc
+    verdict: unjudged

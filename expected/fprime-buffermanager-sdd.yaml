@@ -1,0 +1,27 @@
+id: fprime-buffermanager-sdd
+chaff: 0.34.0
+findings:
+  - rule: broken-link
+    line: 76
+    sha256: c1d8698ad66a971d0a2d02f395794335420bfe22b8a7fb16b625fb104d069c90
+    verdict: unjudged
+  - rule: broken-link
+    line: 87
+    sha256: a5f7afadccf2d38dcd0f7b89117f27b9ec460e6ccb48cac88edfefe4d805b4d7
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 96
+    sha256: a606886795e9803da53122d4e3138ef6675a1415a9a7ef6fdd949dce4b9ddf5e
+    verdict: unjudged
+  - rule: broken-link
+    line: 104
+    sha256: 595fa5a510b6b112d9ff4e06bfd4dcdf94e8e27c544438377bb4af38a81d2d08
+    verdict: unjudged
+  - rule: broken-link
+    line: 110
+    sha256: f20be7a9e03ebff0d00a9eb08ee7314eeb85fe803540f1828ba2af5d7329c9c8
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 131
+    sha256: 01c587a3c40fcd33a4b227ff63ecea2635f292ae4dad0791955800c9a124aa16
+    verdict: unjudged

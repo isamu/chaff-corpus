@@ -1,0 +1,71 @@
+id: nodejs-tsc-minutes-2026-05-06
+chaff: 0.34.0
+findings:
+  - rule: undefined-acronym
+    line: 25
+    sha256: a16c7fc9dc9f1724d3398dbc80836e00e1cdf7896c025894df8cc5183ae12a21
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    sha256: ad3267ec131e132ba764029856609bfbc0b9f6c8278cd89a01ceb632b05dda57
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 27
+    sha256: 367a9a3044af7794df01f75eaea2b3d3eff75d55b2dfcfc920ee386012b7bdde
+    verdict: unjudged
+  - rule: unknown-word
+    line: 27
+    sha256: e1f39de0c951e53d2b40dc5dc494e7c5d410808a1e44dda5dfa563845dea7055
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 40
+    sha256: f78b64df382747acb657fc1c7f48e34c6c3919c438b6d7197e99c6da1a363735
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 44
+    sha256: ea8974105eafa7f2dfac8827e623f305e36f679db9c64088cc1225ba1dfce93b
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 48
+    sha256: 3bc067600f2fc2562935722f27013dc5fbb506d3aeacd16ba9596e517cb87268
+    verdict: unjudged
+  - rule: name-variant
+    line: 48
+    sha256: 5f3e2cff52f18a8ca3d7d21cc5e5d767fae06e98446c9fe08cdf73ac9e87a538
+    verdict: unjudged
+  - rule: unknown-word
+    line: 53
+    sha256: ea7af48981e73c15d2d980f0e22b122222637404d79c694283058ae8a8be3601
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 54
+    sha256: 5ec1f7e700f37c3d0b2981d04855fc34b94aaa15457b05ca571817442d228f81
+    verdict: unjudged
+  - rule: unknown-word
+    line: 55
+    sha256: dbc946fe8918e6081f0dc4699413200f1f907850c0aa71c09f4a21f72526809b
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 58
+    sha256: 3d7a7b3bdca0b858ac47382997097cb310a4009155a5a6bf928fb317cbb5af7d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 75
+    sha256: f92293beb46d2f2fbbb96b2ddfa31dff2d16e31d88cb7cfe69933234c0d9fbf7
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 80
+    sha256: 58fe3a0052f6bc747ea22c89511b3e4e35589287f653e026ac0d694fbc1c6004
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 80
+    sha256: 71d629a40e82ae66ed6ba7920beced351d117f284b072f22b6d95d2793de7201
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 82
+    sha256: 56cd7699d5f53200a977c179207f15196b0c80934be9073bb028be68ca44bb85
+    verdict: unjudged
+  - rule: empty-section
+    line: 92
+    sha256: a32c31748c70c6676f40da51f759b3f3247f4f77d76d1c2df9d7f934bf2fb6aa
+    verdict: unjudged

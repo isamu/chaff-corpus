@@ -1,0 +1,151 @@
+id: ruby-3-4-0-released-ja
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 11
+    sha256: 595e07782668561ca625a16c518aa800da774a20e611dc9dd0639ae7c4d68798
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 12
+    sha256: 91bc5cef321883ec0827ac87bef9a6affa448b1b1be428fb7f48793ed72328bd
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 12
+    sha256: b5cac27affbab47b31f41df3f8c9261ce6d6698e01b42ddfa237510febcac7c2
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 12
+    sha256: bba08cb71b2b663455544713a363597aba8a65d67d4b85d0dd3d1a1a99b19479
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 12
+    sha256: 2ebc74a4e230a978e660494f6a302ea39a09cfd8242ff72bd234183ebb2791d8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 12
+    sha256: b10979fe276c1199209dd744e637f120e4126e73748497a9d57fcf1f35fb6a13
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 13
+    sha256: ff1c9ed64ba22fa1b2e5340922f9e58f48556658964ce9d47b299a350fe8d123
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 39
+    sha256: 74492481d7d328db86ab9c667db62bd65a4a89c8f8bb28aff05c25232caf9a30
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 41
+    sha256: 345e9cb81c12475f24285d345d46488059f5a10c83e989a2961b8d4dafc7a35e
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 41
+    sha256: 6b5adcda98929452dd53123d29d497bbfc0751a20c45b55b842e63c7ccd8fee2
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 41
+    sha256: c57c259d58b6f6c62c4848d1446a753994eb53d7e4b4d06f51c9e3246c3a45d4
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 42
+    sha256: 7395db794925c9c9c2045e506c69d8a9b1b70657bbedeb4902e4bb393f036369
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 42
+    sha256: 8693944b801ca8c2a9a0a70624805befa8305c27c883240ae769dc771c3b6845
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 42
+    sha256: dc1601b8fa4ffe462aeaa31aeef9f701f04c6c0841a59edd23b15e1f94905be5
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 42
+    sha256: fb532b78e0620b96b60bc9a97f1ea90efd0c5f5d20f65b7a3b1d373d4d63bd05
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 45
+    sha256: 5b226bf7f59ca430e123abf25f748ddc62eff918cfd066007b6400c14301f312
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 55
+    sha256: 6c0e5127eab84c18ba1b2f65cac529c71a4f40c1c35f07805d94009294e996ee
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 62
+    sha256: e0b985df2a1be3b0b544d50fb14e82e81204faa31eb3e2d67d84789d1df72044
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 71
+    sha256: 657e1da34475486aace5f5c202e0ec15822ae8688612c0edd561b5b88e37ab88
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 71
+    sha256: e9f9f50474cfce366f0ff955fd8df2b285d882ba3d0cbf164e3cd8b8c4a914a7
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 71
+    sha256: 657e1da34475486aace5f5c202e0ec15822ae8688612c0edd561b5b88e37ab88
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 73
+    sha256: 196bd43ed86f857693839f01b4ecbc6d035c514fa756203c00ed2d24b54c16df
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 74
+    sha256: 6248517aa5428cb2a99a9c3d55b67579bd23c87c2b0014d78546c92b7a07f683
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 115
+    sha256: 3303addf472660d3c33c63f8651e559920dc2c0d3beb7ddbd58f45f3752ba8de
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 115
+    sha256: 64be15fc6f56762f9936e9e834c06a0b910950f813a2fe106c430076f125718a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 165
+    sha256: 19aaaf733f9404ebec708b9212d87e9c1ff951abb42c778ad0767dafa1da52ac
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 169
+    sha256: 3c2fee66967d374d026c51ad999e535b6f1fcace7e46827824b98ca9743ed5fe
+    verdict: unjudged
+  - rule: code-fence-language-mix
+    line: 192
+    sha256: f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 259
+    sha256: 25d6eaaab04ffb0e2d0d686496a9cb159130f0eec9ea5cf35208c3a4af3c9f64
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 261
+    sha256: f6af97a480d7a574bec3488b18e68f5b90e799538850316c9a4ee997f082c174
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 263
+    sha256: 4ae250d668aa73fdee8e229d991328354aba929c8feaaf18dbcb1a40609d6774
+    verdict: unjudged
+  - rule: exclamation-width-consistency
+    line: 269
+    sha256: 631157c15452e8cefd925437a26f1d016b1a5d7575f9234fd0bf7aff0369e63d
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 269
+    sha256: c2ac16d8931616e0b5de34f142fac2915eb2c361616f03f0861f93b4b633466f
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 296
+    sha256: 75fd3320202d2328c7b90a7eeccf641ca0b68fe970ae6c9f0f420d07af6a13be
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 296
+    sha256: 7860c906163eb4538d7f665a7bf095373388cad1514c0006ea75b57c73a4cfe8
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 296
+    sha256: 8498fde96f8863da1efcdf751792a1696884a2ccf6b424a87b971e963f4b4c87
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 296
+    sha256: dbdf0fe219c53db393b6cab4459343b602fe93910a85f45ce552824f5e75322e
+    verdict: unjudged

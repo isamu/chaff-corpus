@@ -1,0 +1,59 @@
+id: koenote-requirements
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 13
+    sha256: a8eafaae80f74f81fdc8bb7f7b9703c3ee866be2ffaa25999c7b8eb0ad0bff65
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 107
+    sha256: dafef66c0a5947537f75176d95629f1338e43dcf5bdfa452acb16dcb80baad49
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 116
+    sha256: ee29fb000959e1e2d22c1c601accb4cde91bd41723d6336f7860f3b603596c0f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 181
+    sha256: 38e89d3f30125f60e68208caad1cc18046e37271f348319be8c43a75f842859a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 260
+    sha256: b6800be9e92fe2badcfa149c57a6f25f2649b721acd7066cd089e4d5285a202b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 470
+    sha256: ad8fdbda553fa69ccc9063cf83bf3594f5ad18ad996456ce1eb07e5da813fdc9
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 526
+    sha256: 11eb418184b5e2d7e66c207be1ed30a6f6532881c75760a4301c9e9c60d602f8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 528
+    sha256: 143bc4c638a55dada2d4176802ac201fa46732679bb79cf8056ef01d43b36bf9
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 546
+    sha256: 5f4c23e3502c279f899cc46cd2a96c1537d0e4b3b9009bc86c7c35dbde7d68f7
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 565
+    sha256: 75cbe6fadc5e2c5a8d6c5900859d177c841440663aa8700e1fc3578d8010ac2b
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 610
+    sha256: da34573f13a5822036692b84453ad51d68fe2964d9db88bd119e4a7738b3dd0d
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 620
+    sha256: eba5fa60a48d04b1e0a8c1bae882c2f51b84395c6c760a5ceeeeacb1cad928a7
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 676
+    sha256: d62cb9cea9e84306ada04ad27f5b3fee2c914816bd0168e077f56d556475e4f9
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 681
+    sha256: bfbe22b8512356bccb39846c3ea5a5484d1aeb84c822dc0f06dc7426861bf0ec
+    verdict: unjudged

@@ -1,0 +1,55 @@
+id: commonpaper-csa
+chaff: 0.34.0
+findings:
+  - rule: vague-deadline
+    line: 6
+    sha256: 3fab53f83a079e994500972153f1bbe6df959609e9e386a56b550f8e0133ed83
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    sha256: 12e355f75338e7d82fd714585d52cfdda60423207b71f3e189c8319388e7d901
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 17
+    sha256: 6b31f2d38f385e326e83ecd2dcf9ab186950e27e751db6576e002f99be2b7f60
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 22
+    sha256: 86b2bd47d3d9acafed57b313904ba51e566311748e6b0dad4f2da0eb2a349f5e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 22
+    sha256: f8d31a33dc9af73791d47515e4eb89e60166e55d4f7e0218d641991841d6eb00
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 36
+    sha256: 20dab0c4e1f2af5c5c1daaeb7ae9b05fd3fa45e4cfe77b0c835893c98ffba820
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 55
+    sha256: 2efeb24c71d1e9312a24448b73cc76dc09292208f0ef545a7f95d425ea734d37
+    verdict: unjudged
+  - rule: vague-deadline
+    line: 63
+    sha256: 142210d3884bf6f17918d117c4c75e680402d69a37ffd4e2fe5497d5fd09f514
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 64
+    sha256: 25d61896fcbcf504e5783851ce5d65dd39f6412e1e6af21c5e7b6a59ef3566b2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 92
+    sha256: d091fad138edb7fa782745ac87cea8f9ef2f934dd47386d38fdd2de9af117621
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 93
+    sha256: 23ce28b809bb79d86845946a1e81c0863ef32453827c8d61a5ea19b924b70702
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 93
+    sha256: 9506415fed38522677bc3caf95e1345a5aeb64724aa1b50043681a63db5272e8
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 120
+    sha256: 6e692ecf7f6e94db84ca9359670d71bb9f9ccc3e9ba746e988ede16b8701e836
+    verdict: unjudged

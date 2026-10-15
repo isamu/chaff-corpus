@@ -7,17 +7,22 @@ import type { DocumentResult } from "./tally.ts";
 /** One shard's run: the documents it ran, the ones it could not, and its problems. */
 export type ShardResult = RunContext & { readonly results: readonly DocumentResult[] };
 
-const outcomeOf = (outcome: Outcome): Outcome => ({ kind: outcome.kind, rule: outcome.rule, line: outcome.line, text: outcome.text });
+const optionalFields = (value: { readonly text?: unknown; readonly sha256?: unknown }): { text?: string; sha256?: string } => ({
+  ...(typeof value.text === "string" ? { text: value.text } : {}),
+  ...(typeof value.sha256 === "string" ? { sha256: value.sha256 } : {}),
+});
 
-/** The shard's result as JSON. A finding's details are left out: the report needs only rule, line and text. */
+const outcomeOf = (outcome: Outcome): Outcome => ({ kind: outcome.kind, rule: outcome.rule, line: outcome.line, ...optionalFields(outcome) });
+
+/** The shard's result as JSON. A finding's details are left out: the report needs only rule, line and text (or sha256). */
 export const shardJson = (shard: ShardResult): string =>
   `${JSON.stringify({ ...shard, results: shard.results.map((result) => ({ ...result, outcomes: result.outcomes.map(outcomeOf) })) }, undefined, 2)}\n`;
 
 const isOutcomeKind = (value: unknown): value is OutcomeKind => OUTCOMES.some((kind) => kind === value);
 
 const parseOutcome = (value: unknown): Outcome | undefined =>
-  isRecord(value) && isOutcomeKind(value["kind"]) && isNonEmptyString(value["rule"]) && isPositiveInteger(value["line"]) && typeof value["text"] === "string"
-    ? { kind: value["kind"], rule: value["rule"], line: value["line"], text: value["text"] }
+  isRecord(value) && isOutcomeKind(value["kind"]) && isNonEmptyString(value["rule"]) && isPositiveInteger(value["line"])
+    ? { kind: value["kind"], rule: value["rule"], line: value["line"], ...optionalFields({ text: value["text"], sha256: value["sha256"] }) }
     : undefined;
 
 const parseResult = (value: unknown): DocumentResult | undefined => {

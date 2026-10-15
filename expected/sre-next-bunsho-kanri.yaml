@@ -1,0 +1,11 @@
+id: sre-next-bunsho-kanri
+chaff: 0.34.0
+findings:
+  - rule: use-before-definition
+    line: 11
+    sha256: 14954b9997523460b380479aaff17464be52942590bf703efab73df897546aeb
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 42
+    sha256: 4b82449cbc5baa36814d62e824e4f0917aa84dc26c8c08ae51aa32dd86c12feb
+    verdict: unjudged
