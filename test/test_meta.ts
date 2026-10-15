@@ -34,6 +34,21 @@ describe("parseMeta", () => {
     assert.deepEqual(problemsOf({ ...valid(), redistribute: false }, undefined), []);
   });
 
+  it("accepts a source.format lab converted the source from, and keeps it", () => {
+    const parsed = parseMeta({ ...valid(), redistribute: false, source: { url: "https://example.gov/q3", fetched: "2026-10-14", format: "html" } }, PLACE, GENRES, undefined);
+    assert.ok("value" in parsed);
+    assert.equal(parsed.value.source.format, "html");
+    const plain = parseMeta(valid(), PLACE, GENRES, TEXT);
+    assert.ok("value" in plain);
+    assert.equal(plain.value.source.format, undefined);
+  });
+
+  it("rejects a source.format lab has no conversion for", () => {
+    ["markdown", "HTML", "pdf", 1].forEach((format) => {
+      assert.match(problemsOf({ ...valid(), source: { url: "https://example.gov/q3", fetched: "2026-10-14", format } }, TEXT).join("\n"), /source.format must be one of wikitext, html, google-patents, kokkai/);
+    });
+  });
+
   it("accepts license unknown without a url, for a person to establish", () => {
     assert.deepEqual(problemsOf({ ...valid(), license: { name: "unknown" } }, TEXT), []);
   });
