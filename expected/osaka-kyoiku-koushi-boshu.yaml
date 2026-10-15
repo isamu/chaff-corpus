@@ -1,0 +1,344 @@
+id: osaka-kyoiku-koushi-boshu
+chaff: 0.34.0
+findings:
+  - rule: date-format-consistency
+    line: 3
+    text: 2026年10月7日
+    message: 日付「2026年10月7日」の書き方が、この文書のほかの日付（「令和8年10月25日」など 4 箇所）と違います
+    verdict: false-positive
+    note: the CMS's page-date stamp (西暦) under the title, not the author's dates; the body is consistently 和暦
+  - rule: date-without-year
+    line: 21
+    text: 10月25日を除く）は事前予約なしの当日参加も可能です。大阪市の講師に興味があり
+    message: 「10月25日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 21
+    text: 下さい。（※ご予約いただいていない場合は、ご案内にお時間をいただく場合があります
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。16 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: request-without-deadline
+    line: 25
+    text: にてご確認ください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: the end of a sentence split off at a link (the page title quoted on the line before); a pointer to read more, not a task
+  - rule: heading-echo
+    line: 29
+    text: インターネットから講師登録（仮登録）ができます。
+    message: 見出し「インターネットから講師登録(仮登録)ができます」を直後の文がほぼそのまま繰り返しています
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 31
+    text: (仮登録)についてをご覧ください。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。183 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 31
+    text: )についてをご覧ください。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。183 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 35
+    text: 大阪市教育委員会は、教員免許を取得している方（取得見込みの方を含む）で、学校で講
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 37
+    text: または教職経験はあるがしばらく教職を離れている方
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: missing-final-period
+    line: 41
+    text: す
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。62 段落のうち 1 段落）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 47
+    text: この度、国会において「教育公務員特例法及び教育職員免許法の一部を改正する法律」が
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 47
+    text: より施行されました。
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+  - rule: max-sentence-length
+    line: 48
+    text: 今回の改正により、教員免許状を有効期限の定めのないものとし、教員免許更新制にかか
+    message: この文は 164 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 48
+    text: 今回の改正により、教員免許状を有効期限の定めのないものとし、教員免許更新制にかか
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 52
+    text: 7月1日以降の教員免許状の取り扱いの詳細につきましては文部科学省ホームページや大
+    message: 「7月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 52
+    text: の教員免許状の取り扱いの詳細につきましては文部科学省ホームページや大阪府ホームペ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 56
+    text: ""
+    message: 「大阪市立学校・幼稚園の講師登録のご案内」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 62
+    text: ""
+    message: 「＜令和8年度学校園の採用情報＞」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 70
+    text: 上記以外でも受け付けておりますので、是非講師登録をしにお越しください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: an open invitation (お越しください), not a task that needs a deadline
+  - rule: orthographic-variant
+    line: 71
+    text: または高等学校の免許状をお持ちで小学校の講師として勤務を希望する方も登録可能です
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: request-without-deadline
+    line: 73
+    text: 講師になりたい方は、まずは講師登録をお願いします。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: an open invitation to register, not a task that needs a deadline
+  - rule: concrete-evidence-density
+    line: 77
+    text: ""
+    message: 「募集職種」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: no-nakaguro-parallel
+    line: 79
+    text: 幼稚園：常勤講師（臨時的任用・任期付採用）
+    message: この文に中黒が 7 個あります（5 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 79
+    text: 幼稚園：常勤講師（臨時的任用・任期付採用）
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 94
+    text: または採用までに取得見込みの方
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: request-without-deadline
+    line: 104
+    text: （注）身体に障がいを有する方も登録できますのでご相談ください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: an offer to consult (ご相談ください), not a task that needs a deadline
+  - rule: no-doubled-joshi
+    line: 110
+    text: の防止等のための措置に関する法律）｜こども家庭庁
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 110
+    text: こども性暴力防止法（学校設置者等及び民間教育保育等事業者による児童対象性暴力等の
+    message: 「こども性暴力防止法」を、114 行目の定義より前で使っています
+    verdict: false-positive
+    note: the use already carries the law's full name in brackets on the same line; the later line is a second gloss, not the first definition
+  - rule: max-sentence-length
+    line: 114
+    text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
+    message: この文は 148 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 114
+    text: の防止等のための措置に関する法律（令和6年法律第69号。以下「こども性暴力防止法
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 114
+    text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
+    message: 一文だけの段落が 5 個続いています（4 個まで）
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 136
+    text: 第六十三条までに規定する罪を犯し刑に処せられた者
+    message: 「第六十三条」（番地 63）はこの文書にありません
+    verdict: false-positive
+    note: a quoted article of 地方公務員法 citing its own articles (第六十条から第六十三条); they are in that statute, not this page
+  - rule: dangling-reference
+    line: 136
+    text: 第六十条から第六十三条までに規定する罪を犯し刑に処せられた者
+    message: 「第六十条」（番地 60）はこの文書にありません
+    verdict: false-positive
+    note: a quoted article of 地方公務員法 citing its own articles (第六十条から第六十三条); they are in that statute, not this page
+  - rule: number-style-consistency
+    line: 136
+    text: 三　人事委員会又は公平委員会の委員の職にあつて、第六十条から第六十三条までに規定
+    message: 数え方の数を「三　人」と書いています（この文書はふつう「1か月」の書き方。24 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 三 is the item number (号) of the quoted article, followed by 人事委員会; it was read as the count 三人
+  - rule: max-kanji-continuous
+    line: 146
+    text: 二　教育職員免許法第十条第一項第二号又は第三号に該当することにより免許状がその効
+    message: 「教育職員免許法第十条第一項第二号又」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 148
+    text: 三　教育職員免許法第十一条第一項から第三項までの規定により免許状取上げの処分を受
+    message: 「教育職員免許法第十一条第一項」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 158
+    text: (PDF形式, 134.37KB)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。183 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 159
+    text: (PDF形式, 201.80KB)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。183 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 168
+    text: 12月29日から1月3日を除く。）
+    message: 「12月29日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: date-without-year
+    line: 168
+    text: 1月3日を除く。）
+    message: 「1月3日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 168
+    text: および12月29日から1月3日を除く。）
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 178
+    text: 大阪市教育委員会事務局教務部教職員人事担当（大阪市役所3階）
+    message: 「大阪市教育委員会事務局教務部教職員人事担当」は漢字が 21 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 192
+    text: 受付窓口で健康診断の写し（1年以内に発行されたもの）を提出
+    message: |-
+      「受付窓口で健康診断の写し（1年以内に発行されたもの）を提出
+      （注）当日、教育委員会が指定する検査機関で受診することもできます。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 200
+    text: ""
+    message: 「常勤講師（臨時的任用・任期付採用）」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 204
+    text: 教諭（養護教諭）が産前産後休暇や育児休業を取得する期間に任用する産休補助臨時講師
+    message: 「育児休業任期付養護助教諭」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 204
+    text: 教諭（養護教諭）が産前産後休暇や育児休業を取得する期間に任用する産休補助臨時講師
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 220
+    text: （注）上記の給与額は、教職調整額・地域手当・義務教育等教員特別手当が含まれていま
+    message: 「義務教育等教員特別手当」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 224
+    text: 12月1日）に在職した場合に期末・勤勉手当が支給されます。
+    message: 「12月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: date-without-year
+    line: 224
+    text: 6月1日、12月1日）に在職した場合に期末・勤勉手当が支給されます。
+    message: 「6月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 226
+    text: ヶ月（日単位）以上の期間を勤務した場合は、一般の退職手当が支給されます。
+    message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 238
+    text: （注）75歳以上の方は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合
+    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 254
+    text: 12月1日）に在職し、当年度6月以上の任期があり、勤務時間が週あたり15時間30
+    message: 「12月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: date-without-year
+    line: 254
+    text: 6月1日、12月1日）に在職し、当年度6月以上の任期があり、勤務時間が週あたり1
+    message: 「6月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: unused-definition
+    line: 256
+    text: 「勤務時間が週あたり15時間30分以上のもの」とは、任用期間全期間を平均した週当
+    message: 「勤務時間が週あたり15時間30分以上のもの」を定義していますが、本文で使っていません
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 266
+    text: （注）75歳以上は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合の短
+    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 292
+    text: （注）75歳以上は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合の短
+    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 300
+    text: ""
+    message: 「教員免許状取得見込みの場合の登録について」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: date-without-year
+    line: 310
+    text: 3月31日に決まる場合もあります。また、新年度の始業式の日からの採用も多数見込ま
+    message: 「3月31日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: date-without-year
+    line: 310
+    text: 4月1日からの仕事が3月31日に決まる場合もあります。また、新年度の始業式の日か
+    message: 「4月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 312
+    text: ""
+    message: 「給与について」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 318
+    text: ""
+    message: 「大阪市公立学校・幼稚園教員採用選考テストでの特例について」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 324
+    text: ""
+    message: 「講師登録に関する書類」の節に数値もコードもリンクもありません（そういう節が 8/26）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 330
+    text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 330
+    text: " をダウンロード（無償）してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 330
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: heading-echo
+    line: 384
+    text: 「皆さんの声をお寄せください」一覧
+    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
+    verdict: unjudged
