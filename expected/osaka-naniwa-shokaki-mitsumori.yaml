@@ -1,0 +1,48 @@
+id: osaka-naniwa-shokaki-mitsumori
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 15
+    text: 【浪速区役所公募型比較見積】令和8年度庁舎管理用　消火器　買入
+    message: 「浪速区役所公募型比較見積」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: the office name and the procedure name (公募型比較見積), both fixed terms, as the notice's label
+  - rule: latin-spacing
+    line: 22
+    text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 22
+    text: " をダウンロード（無償）してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 22
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 43
+    text: 【浪速区役所公募型比較見積】令和8年度庁舎管理用　消火器　買入
+    message: 「浪速区役所公募型比較見積」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: the page title repeated in the trailing breadcrumb (navigation the converter kept); a fixed label
+  - rule: max-kanji-continuous
+    line: 51
+    text: 【浪速区役所公募型比較見積】令和8年度庁舎管理用　消火器　買入
+    message: 「浪速区役所公募型比較見積」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: the page title repeated in the trailing breadcrumb (navigation the converter kept); a fixed label
+  - rule: max-kanji-continuous
+    line: 57
+    text: 物品供給等公募型比較見積等発注案件
+    message: 「物品供給等公募型比較見積等発注案件」は漢字が 17 字続いています（10 字まで）
+    verdict: false-positive
+    note: the site's category name in the trailing breadcrumb; a fixed name
+  - rule: max-kanji-continuous
+    line: 58
+    text: 【浪速区役所公募型比較見積】令和8年度庁舎管理用　消火器　買入
+    message: 「浪速区役所公募型比較見積」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: the page title repeated in the trailing breadcrumb (navigation the converter kept); a fixed label

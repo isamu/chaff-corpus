@@ -1,0 +1,295 @@
+id: jbaudit-r06-itaku-jinkenhi
+chaff: 0.34.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# 国の委託事業の委託先及び国庫補助事業の補助事業者となっている会社において、虚"
+    message: 題「国の委託事業の委託先及び国庫補助事業の補助事業者となっている会社において、虚偽の業務日誌を作成して実際には委託事業等の業務に全く従事していない者を従事したこととするなどして人件費が算定されていたため、委託費の支払額及び国庫補助金の交付額が過大となっていたもの［内閣府本府、こども家庭庁、文化庁、厚生労働本省、農林水産本省、水産庁、経済産業本省、資源エネルギー庁、特許庁、中小企業庁、北海道経済産業局、東北経済産業局、近畿経済産業局、四国経済産業局、九州経済産業局、国土交通本省、観光庁、環境本省、北海道地方環境事務所］（1）（17）（57）（78）（163）（164）（178）―（186）（210）（211）（218）（219）」は 308 文字あります（50 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 5
+    text: (1)　内閣府所管
+    message: 「国際観光旅客税財源観光振興費」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 5
+    text: (1)　内閣府所管
+    message: この文は 459 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 39
+    text: 会社ジェイアール東日本企画
+    message: 「会社」を、73 行目の定義より前で使っています
+    verdict: false-positive
+    note: 会社 here is part of a company's name (株式会社…), not the term the report defines later as 会社
+  - rule: ngram-repetition
+    line: 73
+    text: これら54委託事業の委託契約書等によれば、会社は、委託費の対象となる経費として、
+    message: 「等の業務に従事し」が 8 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 75
+    text: 16部局等は、委託事業の終了後、委託契約書に基づき会社から提出された委託事業の実
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 75
+    text: 16部局等は、委託事業の終了後、委託契約書に基づき会社から提出された委託事業の実
+    message: 「は」で出した主題から述語まで 137 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 81
+    text: (注)　経済産業省からの支出委任分を含む。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 81
+    text: )　経済産業省からの支出委任分を含む。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: 7部局等は、補助事業の終了後、補助金の交付要綱に基づき会社から提出された補助事業
+    message: この文は 156 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 87
+    text: 7部局等は、補助事業の終了後、補助金の交付要綱に基づき会社から提出された補助事業
+    message: 「は」で出した主題から述語まで 148 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 95
+    text: (1)及び(2)のとおり、16部局等から委託を受けて54委託事業を、また、7部局
+    message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 95
+    text: (2)のとおり、16部局等から委託を受けて54委託事業を、また、7部局等から国庫
+    message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 95
+    text: )のとおり、16部局等から委託を受けて54委託事業を、また、7部局等から国庫補助
+    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 95
+    text: )及び(2)のとおり、16部局等から委託を受けて54委託事業を、また、7部局等か
+    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: そして、会社は、委託事業等に要した経費として実績報告書等に記載している実支出額の
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 95
+    text: 会社は、(1)及び(2)のとおり、16部局等から委託を受けて54委託事業を、また
+    message: この文は 173 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 95
+    text: そして、会社は、委託事業等に要した経費として実績報告書等に記載している実支出額の
+    message: 「は」で出した主題から述語まで 151 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 95
+    text: 会社は、(1)及び(2)のとおり、16部局等から委託を受けて54委託事業を、また
+    message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 97
+    text: 19部局等は、83委託事業等に係る委託費の支払額又は国庫補助金の交付額の確定に当
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 111
+    text: 本院は、合規性等の観点から、委託事業等に係る人件費の算定が社員の実際の従事状況に
+    message: この文は 182 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 111
+    text: 本院は、合規性等の観点から、委託事業等に係る人件費の算定が社員の実際の従事状況に
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 111
+    text: 本院は、合規性等の観点から、委託事業等に係る人件費の算定が社員の実際の従事状況に
+    message: 「は」で出した主題から述語まで 177 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: 会社は、83委託事業等に係る人件費について、延べ1,524人（委託事業延べ816
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 121
+    text: 会社は、83委託事業等に係る人件費について、延べ1,524人（委託事業延べ816
+    message: 「は」で出した主題から述語まで 154 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 123
+    text: しかし、資源エネルギー庁が実施した「災害時に備えた社会的重要インフラへの自衛的な
+    message: 「自家用発電設備等利用促進対策事業」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 123
+    text: しかし、資源エネルギー庁が実施した「災害時に備えた社会的重要インフラへの自衛的な
+    message: この文は 311 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 123
+    text: そこで、会社が国から委託等を受けた他の委託事業等についても同様の事態がないか確認
+    message: この文は 189 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 123
+    text: そこで、会社が国から委託等を受けた他の委託事業等についても同様の事態がないか確認
+    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 127
+    text: 会社に対する本院の検査により本件事態が判明したことを受けて、会社は、令和6年12
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 127
+    text: 会社に対する本院の検査により本件事態が判明したことを受けて、会社は、令和6年12
+    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 131
+    text: 会社は、委託事業等に係る人件費の算定に当たり、83委託事業等のうち、防災インフラ
+    message: この文は 196 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 131
+    text: 表（以下「想定人件費一覧表」という。）を人件費の算定根拠となる証ひょうとは別に作
+    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
+    verdict: false-positive
+    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
+  - rule: topic-predicate-distance
+    line: 131
+    text: 会社は、委託事業等に係る人件費の算定に当たり、83委託事業等のうち、防災インフラ
+    message: 「は」で出した主題から述語まで 183 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 133
+    text: 会社によると、想定人件費一覧表に記載された各社員の従事時間数は、各委託事業等の委
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 133
+    text: 表において割り振った時間数について従事したこととして、事実と異なる従事時間等を記
+    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
+    verdict: false-positive
+    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
+  - rule: orthographic-variant
+    line: 133
+    text: 表における各委託事業等の人件費の合計額ができるだけ近くなるようにするために、これ
+    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
+    verdict: false-positive
+    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
+  - rule: orthographic-variant
+    line: 133
+    text: 表に記載された各社員の従事時間数は、各委託事業等の委託費の限度額又は国庫補助金の
+    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
+    verdict: false-positive
+    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
+  - rule: topic-predicate-distance
+    line: 133
+    text: 会社によると、想定人件費一覧表に記載された各社員の従事時間数は、各委託事業等の委
+    message: 「は」で出した主題から述語まで 135 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 137
+    text: 83委託事業等のうち12委託事業等について、会社は、想定人件費一覧表を作成してい
+    message: この文は 170 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 137
+    text: 表を作成していなかったものの、71委託事業等と同様に、実際には委託事業等の業務に
+    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
+    verdict: false-positive
+    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
+  - rule: topic-predicate-distance
+    line: 137
+    text: 83委託事業等のうち12委託事業等について、会社は、想定人件費一覧表を作成してい
+    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 139
+    text: さらに、会社は、アの71委託事業等及びイの12委託事業等において人件費の算定対象
+    message: この文は 164 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 139
+    text: さらに、会社は、アの71委託事業等及びイの12委託事業等において人件費の算定対象
+    message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 141
+    text: その一方で、83委託事業等において、事業の実施状況等を踏まえれば、業務に従事して
+    message: この文は 170 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: paragraph-restatement
+    line: 141
+    text: このように、会社において、虚偽の証ひょうが作成されており、これらの証ひょうからは
+    message: 「このように、」で始まるこの段落は、内容語の 50% が前の段落の繰り返しです
+    verdict: false-positive
+    note: a このように summary sentence, then new content (the follow-up request for evidence); summing up before the next step is the report's form
+  - rule: max-sentence-length
+    line: 143
+    text: その結果、実績報告書等の作成に当たり従事したこととされていた延べ1,524人のう
+    message: この文は 191 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 151
+    text: このため、委託事業等の業務に従事していたことが確認できた社員延べ371人（345
+    message: この文は 188 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 151
+    text: したがって、委託費の支払額6,828,403,747円及び国庫補助金交付額14,
+    message: この文は 201 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 151
+    text: このため、委託事業等の業務に従事していたことが確認できた社員延べ371人（345
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 153
+    text: このような事態が生じていたのは、会社において人件費の算定は社員の実際の従事状況の
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 153
+    text: の実際の従事状況の事実に基づき適正に行う必要があるという基本的な認識が著しく欠け
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 153
+    text: このような事態が生じていたのは、会社において人件費の算定は社員の実際の従事状況の
+    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 159
+    text: (注)　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際
+    message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 159
+    text: )　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際には
+    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 159
+    text: (注)　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際
+    message: 「経済産業省近畿経済産業局」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 159
+    text: (注)　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際
+    message: この文は 206 文字あります（140 文字まで）
+    verdict: unjudged

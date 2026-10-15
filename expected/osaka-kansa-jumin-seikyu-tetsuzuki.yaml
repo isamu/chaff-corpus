@@ -1,0 +1,104 @@
+id: osaka-kansa-jumin-seikyu-tetsuzuki
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 9
+    text: 大阪市行政委員会事務局監査部監査課特別監査担当　06-6208-8582
+    message: 「大阪市行政委員会事務局監査部監査課特別監査担当」は漢字が 23 字続いています（8 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (the contact line)
+  - rule: bracket-width-consistency
+    line: 31
+    text: (概要)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 31
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 37
+    text: (様式1【監査委員監査】・様式2【外部監査人による監査】)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 63
+    text: 手続に関する連絡は代表者宛てにさせていただきます。
+    message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: ngram-repetition
+    line: 67
+    text: 大阪市長や市職員等に、違法又は不当な財務会計上の行為又は怠る事実があり、市の財政
+    message: 「の行為又は怠る事」が 7 回出てきます（5 回まで）
+    verdict: false-positive
+    note: the statutory term 財務会計上の行為又は怠る事実 (地方自治法 242条), repeated because it is what the page is about; it has no shorter form
+  - rule: requirement-smell
+    line: 89
+    text: など、どのような措置を必要と考え、求めるのかを記載する必要があります。
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: など ends the statute's examples of measures the requester may ask for; the choice is the requester's, so the list is open by design
+  - rule: bracket-width-consistency
+    line: 93
+    text: (1)違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった
+    message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 93
+    text: )違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった日か
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 97
+    text: )違法又は不当に怠る事実には、原則として請求期間の制限はありません。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: heading-end-punctuation-mix
+    line: 111
+    text: "#### 監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があり"
+    message: 見出し「監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があります。」だけ「。」で終わっています（ほかの見出しは「①　請求対象の特定」など 6 個が「：」「。」なしで終わる）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 113
+    text: ・　参考作成例は様式1のとおりです（地方自治法施行令第172条及び同施行規則第1
+    message: 「地方自治法施行令第」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: a statute's name in a citation (地方自治法施行令第172条); the run is the name and the article mark
+  - rule: max-kanji-continuous
+    line: 113
+    text: また、外部監査人による監査を求める場合は様式2のとおりです（地方自治法施行令第1
+    message: 「地方自治法施行令第」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: a statute's name in a citation (地方自治法施行令第174条の49の41); the run is the name and the article mark
+  - rule: max-kanji-continuous
+    line: 127
+    text: （大阪市行政委員会事務局監査部監査課特別監査担当　06-6208-8582）
+    message: 「大阪市行政委員会事務局監査部監査課特別監査担当」は漢字が 23 字続いています（8 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (the contact line)
+  - rule: heading-end-punctuation-mix
+    line: 141
+    text: "#### 職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は"
+    message: 見出し「職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は怠る事実を証する書面（事実証明書）を添付することが必要です。」だけ「。」で終わっています（ほかの見出しは「①　請求対象の特定」など 6 個が「：」「。」なしで終わる）
+    verdict: correct
+  - rule: title-length
+    line: 141
+    text: "#### 職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は"
+    message: 見出し「職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は怠る事実を証する書面（事実証明書）を添付することが必要です。」は 65 文字あります（40 文字まで）
+    verdict: correct
+  - rule: latin-spacing
+    line: 200
+    text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 200
+    text: " をダウンロード（無償）してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 200
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
+    verdict: correct

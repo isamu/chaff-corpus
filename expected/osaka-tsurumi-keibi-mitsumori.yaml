@@ -1,0 +1,60 @@
+id: osaka-tsurumi-keibi-mitsumori
+chaff: 0.34.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# 鶴見区役所市民協働課（教育）　業務委託公募型比較見積案件について（「令和9年"
+    message: 題「鶴見区役所市民協働課（教育）　業務委託公募型比較見積案件について（「令和9年 鶴見区二十歳のつどい」事業に係る警備業務委託）」は 61 文字あります（50 文字まで）
+    verdict: correct
+  - rule: latin-spacing
+    line: 18
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 9 箇所あります。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: heading-echo
+    line: 22
+    text: 大阪市鶴見区役所公募型比較見積実施要綱
+    message: 見出し「大阪市鶴見区役所公募型比較見積実施要綱について」を直後の文がほぼそのまま繰り返しています
+    verdict: false-positive
+    note: the line after the heading is the link to the document the heading names, not a sentence restating it
+  - rule: max-kanji-continuous
+    line: 22
+    text: 大阪市鶴見区役所公募型比較見積実施要綱
+    message: 「大阪市鶴見区役所公募型比較見積実施要綱」は漢字が 19 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official title of a 要綱 (proper noun); the kanji run is the name itself
+  - rule: bracket-width-consistency
+    line: 24
+    text: (PDF形式, 327.89KB)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。25 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 24
+    text: 大阪市鶴見区公募型比較見積実施要綱(PDF形式, 327.89KB)
+    message: 「大阪市鶴見区公募型比較見積実施要綱」は漢字が 17 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official title of a 要綱 (proper noun) as an attachment's link text
+  - rule: max-kanji-continuous
+    line: 26
+    text: 大阪市鶴見区公募型比較見積実施要綱
+    message: 「大阪市鶴見区公募型比較見積実施要綱」は漢字が 17 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official title of a 要綱 (proper noun)
+  - rule: max-kanji-continuous
+    line: 54
+    text: 鶴見区役所市民協働課（教育）　業務委託公募型比較見積案件について（「令和9年 鶴
+    message: 「業務委託公募型比較見積案件」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: the page title repeated in the trailing breadcrumb; the run is the procedure's fixed name
+  - rule: max-kanji-continuous
+    line: 62
+    text: 業務委託公募型比較見積等発注案件
+    message: 「業務委託公募型比較見積等発注案件」は漢字が 16 字続いています（10 字まで）
+    verdict: false-positive
+    note: the site's category name in the trailing breadcrumb; a fixed name
+  - rule: max-kanji-continuous
+    line: 63
+    text: 鶴見区役所市民協働課（教育）　業務委託公募型比較見積案件について（「令和9年 鶴
+    message: 「業務委託公募型比較見積案件」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: the page title repeated in the trailing breadcrumb; the run is the procedure's fixed name

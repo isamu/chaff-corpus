@@ -1,0 +1,30 @@
+id: osaka-kodomo-youchien-shigan
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 24
+    text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 24
+    text: " をダウンロード（無償）してください。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: latin-spacing
+    line: 24
+    text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 32
+    text: 大阪市こども青少年局幼保施策部幼保企画課幼稚園運営企画グループ
+    message: 「青少年局幼保施策部幼保企画課幼稚園運営企画」は漢字が 21 字続いています（10 字まで）
+    verdict: false-positive
+    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (the page's contact block)
+  - rule: heading-echo
+    line: 64
+    text: 「皆さんの声をお寄せください」一覧
+    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
+    verdict: false-positive
+    note: the site footer's feedback block (a heading and its link list) the converter kept, not a sentence restating the heading

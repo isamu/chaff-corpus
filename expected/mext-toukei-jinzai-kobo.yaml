@@ -1,0 +1,95 @@
+id: mext-toukei-jinzai-kobo
+chaff: 0.34.0
+findings:
+  - rule: max-kanji-continuous
+    line: 5
+    text: 「令和8年度高度統計人材育成強化拠点形成事業」について、公募を開始します。
+    message: 「高度統計人材育成強化拠点形成事業」は漢字が 16 字続いています（10 字まで）
+    verdict: false-positive
+    note: the official name of a ministry programme (proper noun), quoted
+  - rule: bracket-width-consistency
+    line: 13
+    text: (DX)の鍵となるといわれてきました。昨今では、加速度的に進化する生成AIをはじ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 13
+    text: )の鍵となるといわれてきました。昨今では、加速度的に進化する生成AIをはじめとす
+    message: 括弧を「)」と書いています（この文書はふつう「）」。26 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 13
+    text: ポストコロナ社会においては、データの利活用が研究のデジタル・トランスフォーメーシ
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 13
+    text: 昨今では、加速度的に進化する生成AIをはじめとするAI技術の急速な普及に伴い、教
+    message: 「〜います」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 14
+    text: このような中、統計的手法を駆使して大量のデータを分析・解析するための人材はこれま
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 14
+    text: このような中、統計的手法を駆使して大量のデータを分析・解析するための人材はこれま
+    message: 一文に「〜的」が 5 個あります（2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 14
+    text: このような中、統計的手法を駆使して大量のデータを分析・解析するための人材はこれま
+    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: これらのことからも、大学等において、データサイエンス、AIの基盤である「統計学」
+    message: この文は 225 文字あります（140 文字まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 17
+    text: これらのことからも、大学等において、データサイエンス、AIの基盤である「統計学」
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 17
+    text: これらのことからも、大学等において、データサイエンス、AIの基盤である「統計学」
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: 本事業では、機関の長等のリーダーシップの下、様々な研究分野におけるAI・データ駆
+    message: この文は 237 文字あります（140 文字まで）
+    verdict: correct
+  - rule: no-doubled-joshi
+    line: 19
+    text: の長等のリーダーシップの下、様々な研究分野におけるAI・データ駆動型研究に必要な
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 19
+    text: 本事業では、機関の長等のリーダーシップの下、様々な研究分野におけるAI・データ駆
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 22
+    text: (ⅰ)高度統計人材の中心となる統計学を指導・教育できる研究者である統計学教員を年
+    message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 22
+    text: )高度統計人材の中心となる統計学を指導・教育できる研究者である統計学教員を年間2
+    message: 括弧を「)」と書いています（この文書はふつう「）」。26 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 22
+    text: 本事業を通じ、(ⅰ)高度統計人材の中心となる統計学を指導・教育できる研究者である
+    message: この文は 177 文字あります（140 文字まで）
+    verdict: correct
+  - rule: heading-numbering-mix
+    line: 48
+    text: "## お問合せ先"
+    message: 見出し「お問合せ先」だけ番号がありません（兄弟の見出しは「1.公募期間」など 5 個が番号付き）
+    verdict: false-positive
+    note: the closing contact block (お問合せ先) after the numbered sections; notices leave it unnumbered by convention

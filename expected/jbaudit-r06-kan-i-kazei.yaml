@@ -1,0 +1,363 @@
+id: jbaudit-r06-kan-i-kazei
+chaff: 0.34.0
+findings:
+  - rule: bracket-width-consistency
+    line: 16
+    text: (1)
+    message: 丸括弧を、全角で 155 箇所、半角で 63 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 20
+    text: 消費税差額(2)
+    message: 「消費税差額」を、108 行目の定義より前で使っています
+    verdict: correct
+  - rule: use-before-definition
+    line: 24
+    text: 判定対象者の基準期間に相当する期間における課税売上高があって、かつ、本則課税に比
+    message: 「判定対象者」を、276 行目の定義より前で使っています
+    verdict: correct
+  - rule: use-before-definition
+    line: 60
+    text: 吸収合併法人、新設合併法人及び吸収分割承継法人における簡易課税制度の適用について
+    message: 「吸収合併法人」を、150 行目の定義より前で使っています
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 78
+    text: 消費税は、消費税法（昭和63年法律第108号）に基づき、製造、卸売、小売等の各取
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 80
+    text: 消費税の納税義務者は、国内において課税資産の譲渡等を行った事業者（注1）等とされ
+    message: この文は 147 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 80
+    text: 消費税の納税義務者は、国内において課税資産の譲渡等を行った事業者（注1）等とされ
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 82
+    text: 事業者は、(4)で後述する一部の場合等を除いて、基準期間（注2）における課税売上
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 82
+    text: 事業者は、(4)で後述する一部の場合等を除いて、基準期間（注2）における課税売上
+    message: 「税制度を選択して」が 23 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 82
+    text: 事業者は、(4)で後述する一部の場合等を除いて、基準期間（注2）における課税売上
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 118
+    text: の事業の課税売上高の割合が全体の課税売上高の90％超となっている事業者を対象とし
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 122
+    text: また、消費税率は、26年4月に4％（消費税及び地方消費税（注4）の税率5％）から
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 132
+    text: 一方、法人の新設分割があった場合には、次のとおり、基準期間における課税売上高以外
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 138
+    text: そして、新設分割承継法人は、分割があった日の属する事業年度及びその翌事業年度にお
+    message: 「は」で出した主題から述語まで 114 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 142
+    text: の事業年度開始の日の2年前の日の前日から同日以後1年を経過する日までの間に終了し
+    message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 146
+    text: また、分割があった日の属する事業年度の翌々事業年度以降においては、新設分割承継法
+    message: この文は 238 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 146
+    text: また、分割があった日の属する事業年度の翌々事業年度以降においては、新設分割承継法
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 152
+    text: また、新設合併とは、2以上の法人がする合併であって、被合併法人の事業の全部を合併
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 164
+    text: このように、新設分割があった場合には、分割法人の基準期間に対応する期間における課
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 164
+    text: の適用の可否の判定を行うこととなっている一方、吸収合併、新設合併又は吸収分割があ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 172
+    text: そして、消費税差額は、課税売上げに係る消費税の額に、みなし仕入率と課税仕入率の差
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 172
+    text: そして、消費税差額は、課税売上げに係る消費税の額に、みなし仕入率と課税仕入率の差
+    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 174
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: この文は 172 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 174
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 174
+    text: の適用の可否の判定は、引き続き、原則として基準期間における課税売上高により行うこ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 174
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: 「は」で出した主題から述語まで 150 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 176
+    text: の適用の可否の判定においては、基準期間における課税売上高以外の指標も用いられてい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 178
+    text: そこで、本院は、消費税に関する国民の関心が高い中で、簡易課税制度を適用している法
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 178
+    text: の適用の可否の判定方法が有効かつ公平に機能しているか、基準期間における課税売上高
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 178
+    text: そこで、本院は、消費税に関する国民の関心が高い中で、簡易課税制度を適用している法
+    message: 「は」で出した主題から述語まで 162 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 184
+    text: そして、国税庁から消費税申告データ、法人税申告データ等の提出を受けて、消費税差額
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 200
+    text: 一方、吸収合併法人、新設合併法人又は吸収分割承継法人については、被合併法人又は分
+    message: この文は 150 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 202
+    text: したがって、例えば、簡易課税制度を適用できる規模の小さな法人が、吸収合併、新設合
+    message: この文は 157 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 204
+    text: そこで、延べ4,796法人のうち、元年度から4年度までの間に合併又は分割を行って
+    message: この文は 288 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 204
+    text: そこで、延べ4,796法人のうち、元年度から4年度までの間に合併又は分割を行って
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 204
+    text: の適用の可否の判定を行うこととした場合、簡易課税制度を選択して適用することができ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 210
+    text: そして、延べ141法人のうち、推計消費税差額を算出可能（注8）な延べ116法人に
+    message: この文は 218 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 238
+    text: 吸収分割により事業を承継した吸収分割承継法人であるB法人の吸収分割後最初の課税期
+    message: この文は 162 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 240
+    text: そして、B法人は分割1期目には基準期間がなく、また分割2期目における基準期間は4
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 242
+    text: 一方、仮にA法人が4年4月に事業の一部を分割してB法人を設立していた場合、B法人
+    message: この文は 191 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 242
+    text: このため、B法人は分割1期目及び分割2期目において簡易課税制度を選択して適用する
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 242
+    text: 一方、仮にA法人が4年4月に事業の一部を分割してB法人を設立していた場合、B法人
+    message: 「は」で出した主題から述語まで 146 字あります（80 字まで）
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 248
+    text: しかし、これらの吸収合併法人及び吸収分割承継法人は、現行制度においては、基準期間
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+  - rule: max-sentence-length
+    line: 252
+    text: すなわち、設立の日よりも後に事業を承継した法人は、吸収分割承継法人に該当すること
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 252
+    text: すなわち、設立の日よりも後に事業を承継した法人は、吸収分割承継法人に該当すること
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 254
+    text: そこで、分割法人の基準期間に対応する期間における課税売上高等が5000万円を超え
+    message: この文は 224 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 254
+    text: これらの法人は、分割法人の基準期間に対応する期間における課税売上高等が5000万
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 254
+    text: これらの法人は、分割法人の基準期間に対応する期間における課税売上高等が5000万
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+  - rule: max-sentence-length
+    line: 266
+    text: 簡易課税制度の適用については、原則として、基準期間における課税売上高により適用の
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 280
+    text: の日の2年前の日の前日から同日以後1年を経過する日までに終了した判定対象者の事業
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 288
+    text: の前事業年度開始の日以後6か月の期間等をいう。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: title-length
+    line: 292
+    text: "#### ア　基準期間がない法人について、判定対象者の基準期間に相当する期間にお"
+    message: 見出し「ア　基準期間がない法人について、判定対象者の基準期間に相当する期間における課税売上高を用いた場合の簡易課税制度の適用」は 57 文字あります（50 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 294
+    text: 延べ4,796法人のうち、基準期間がない延べ243法人について、①の指標である判
+    message: この文は 211 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 302
+    text: そして、延べ75法人のうち、推計消費税差額を算出可能な延べ62法人の3、4両年度
+    message: この文は 166 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: sentence-initial-conjunction-run
+    line: 302
+    text: そして、延べ75法人のうち、推計消費税差額を算出可能な延べ62法人の3、4両年度
+    message: 接続詞で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 308
+    text: また、簡易課税制度を選択して適用したことにより本則課税に比べて納付消費税額が低額
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 312
+    text: 延べ4,796法人について、簡易課税制度においては、適用の可否の判定に用いられて
+    message: この文は 206 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 314
+    text: そして、延べ48法人のうち、推計消費税差額を算出可能な延べ31法人における3、4
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 318
+    text: 延べ48法人　　特定期間における課税売上高が5000万円を超えているかどうかにつ
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 328
+    text: 簡易課税制度で用いるみなし仕入率については、個々の事業者においては、みなし仕入率
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 328
+    text: 簡易課税制度で用いるみなし仕入率については、個々の事業者においては、みなし仕入率
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 330
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: この文は 172 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 330
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 330
+    text: の適用の可否の判定は、引き続き、原則として基準期間における課税売上高により行うこ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 330
+    text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の
+    message: 「は」で出した主題から述語まで 150 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 332
+    text: の適用の可否の判定においては、基準期間における課税売上高以外の指標が用いられてお
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 334
+    text: そこで、本院は、消費税に関する国民の関心が高い中で、簡易課税制度を適用している法
+    message: この文は 188 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 334
+    text: の適用の可否の判定方法が有効かつ公平に機能しているか、基準期間における課税売上高
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 334
+    text: そこで、本院は、消費税に関する国民の関心が高い中で、簡易課税制度を適用している法
+    message: 「は」で出した主題から述語まで 179 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 338
+    text: そして、判定対象者の基準期間に相当する期間における課税売上高があることを把握でき
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 340
+    text: 特定期間における課税売上高等の状況をみたところ、特定期間における課税売上高等が5
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 342
+    text: ついては、本院の検査によって明らかになった状況を踏まえて、今後、財務省において、
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: unjudged
