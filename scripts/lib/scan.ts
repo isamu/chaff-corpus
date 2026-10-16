@@ -25,9 +25,24 @@ const PATTERNS: readonly { readonly kind: PersonalDataKind; readonly pattern: Re
 /** NFKC folds full-width digits and hyphens (０３－１２３４) into the ASCII the patterns read; dashes that look like hyphens are folded too. */
 const normalised = (line: string): string => line.normalize("NFKC").replace(/[‐‑‒–—―−ー]/g, "-");
 
+/** A section number with a dot before its hyphen (252.227-7014): a phone number keeps one separator throughout. */
+const DOTTED_SECTION = /^\d+\.\d+-\d+$/;
+
+/** A regulation's acronym or a section sign just before the number: "DFARS 252.227-7014", "48 CFR § 252-227-7014". */
+const REGULATION_BEFORE = /(?:\b(?:FAR|DFARS?|AFARS|DEARS?|GSAR|HSAR|NFS|CFR|U\.?\s?S\.?\s?C)\.?|§)\s*(?:§\s*)?$/;
+
+/** A citation of a regulation's section that has the shape of a phone number. */
+export const isCitation = (line: string, match: string, index: number): boolean =>
+  DOTTED_SECTION.test(match) || REGULATION_BEFORE.test(line.slice(0, index));
+
+const phoneOrEmail = (kind: PersonalDataKind, line: string, match: RegExpExecArray): boolean => kind === "email" || !isCitation(line, match[0], match.index);
+
 /** Each string once per line: a number two patterns read (073-489-5903 is also North American in shape) is one hit. */
 const hitsInLine = (line: string, lineNumber: number): Hit[] => {
-  const found = PATTERNS.flatMap(({ kind, pattern }) => [...normalised(line).matchAll(pattern)].map((match) => ({ kind, match: match[0], line: lineNumber })));
+  const text = normalised(line);
+  const found = PATTERNS.flatMap(({ kind, pattern }) =>
+    [...text.matchAll(pattern)].filter((match) => phoneOrEmail(kind, text, match)).map((match) => ({ kind, match: match[0], line: lineNumber })),
+  );
   return found.filter((hit, index) => found.findIndex((other) => other.match === hit.match) === index);
 };
 
