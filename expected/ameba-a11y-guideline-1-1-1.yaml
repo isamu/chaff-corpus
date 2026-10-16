@@ -1,0 +1,13 @@
+id: ameba-a11y-guideline-1-1-1
+chaff: 0.35.0
+findings:
+  - rule: code-fence-language-mix
+    line: 173
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 9 個）
+    verdict: correct
+  - rule: code-fence-language-mix
+    line: 181
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 9 個）
+    verdict: correct

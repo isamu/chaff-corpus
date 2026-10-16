@@ -1,0 +1,192 @@
+---
+layout: single
+title: 画像に代替テキストを提供する
+number: 1.1.1
+level: A
+tags: sc
+permalink: "{{ number | scNumberToPath }}/"
+---
+
+# 1.1.1 画像に代替テキストを提供する
+
+{% include "partials/level.njk" %}
+
+## 概要
+
+装飾ではない画像やアイコンは、代替テキストで説明する。
+
+<details>
+  <summary>代替テキストとは</summary>
+  代替テキストとは、Webサイト内に含まれている画像や動画が何らかの原因で表示されなかったときや、スクリーンリーダーを使用するときに、画像の代わりに表示する文字・文章を指す。
+</details>
+
+代替テキストを提供する主な目的は、以下の通りである。
+
+- スクリーンリーダーなどの支援技術を用いているユーザーにも、等しくコンテンツを提供する
+- 通信エラー時など、画像を表示できない場合に、内容を説明する
+- 検索botにコンテンツを提供し、広くコンテンツを見られるようにする
+
+そのため、装飾目的の画像やアイコンには代替テキストは不要である。
+
+テキストで説明できれば、上記の方法などでコンテンツを変換・再利用することが可能になる。また、代替テキストは企画の段階で検討し、画像がなくても意味が伝わる構成となっていることを確認する。
+
+代替テキストの考え方について、[altはつけるだけじゃなくて | 実践アクセシブルHTML 第一回](http://yuugop.com/articles/practicalaccessiblehtml/pah01.html)という記事が参考になる。
+
+<details>
+  <summary>広告の代替テキストについて</summary>
+  既存の広告システムの場合、代替テキストを設定するために必要なテキストの入力欄が設けられていないことがある。可能であれば入稿ツールなどの広告システム、またはメディア側のシステム改修が望ましい。
+
+  画像のみの広告、かつ代替テキストが画面に表示される状況（ネットワークエラー時や画像の非表示時など）では、クライアントの意図しない見た目となる。広告画像の代わりに代替テキストの「[AD] クライアント名」と表示されてしまうことが契約上問題になることがある。
+
+  そういった場合、最低限操作に支障をきたさないことを目的とし、「広告であること」を伝えることが望ましい。具体的には、代替テキストに「AD」「PR」と設定するなどが考えられる。
+</details>
+
+## テスト・チェック方法
+
+1. 企画時、デザイナー・エンジニアによるレビュー
+2. 実装時、ESlintによるテスト
+  - [eslint-plugin-jsx-a11y/alt-text](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md)
+  - [eslint-plugin-jsx-a11y/accessible-emoji](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/accessible-emoji.md)
+  - [eslint-plugin-jsx-a11y/iframe-has-title](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md)
+3. コードレビュー
+
+## 実装方法
+
+### Web
+
+#### `<img>` 要素の `alt` 属性に、画像を説明するテキストを設定する
+
+##### 悪い実装例
+
+`<img>` 要素に `alt` 属性がない。
+
+```html
+<img src="ameblo.png" width="100" height="50">
+```
+
+- 画像ファイル名が表示・読み上げられてしまう
+- 特に、リンク要素の中にこういった画像があると、ユーザーはクリックで何が起きるかが想定できない
+- 代替テキストが不要で装飾的な画像の場合には、空の `alt` 属性を設定する
+
+##### 良い実装例
+
+`<img>` 要素の `alt` 属性に、画像を説明するテキストを設定する。
+
+```html
+<img src="ameblo.png" alt="アメブロ" width="100" height="50">
+```
+
+#### ラベルのないアイコンに、代替テキストを設定する
+
+##### 悪い実装例
+
+ラベルや代替テキストがないアイコンの場合、アイコンの意味が理解できない。
+
+```html
+<i class="icon icon-pen"></i>
+```
+
+##### 良い実装例
+
+###### 【推奨】 不可視のテキスト要素を用意し、支援技術にはアイコン自体を無視させる方法
+
+
+```html
+<button>
+  <span class="icon-close" aria-hidden="true"></span>
+  <span class="visually-hidden">閉じる</span>
+</button>
+
+<style>
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+</style>
+```
+
+`.visually-hidden` クラスを使用する目的としては、以下の実装を推奨とする。
+
+- 機械翻訳されやすい
+- 対応している支援技術が多い
+
+###### 実装上の都合で推奨例の実装が困難な場合
+
+<details>
+  <summary>親要素にラベルを設定する方法</summary>
+
+  ```html
+  <button aria-label="閉じる">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  ```
+</details>
+
+
+<details>
+  <summary>roleをimgにした上で、ラベルを設定する方法</summary>
+
+  ```html
+  <button>
+    <span class="icon-close" role="img" aria-label="閉じる"></span>
+  </button>
+  ```
+</details>
+
+#### 意味のある画像を背景画像にしない
+
+##### 悪い実装例
+
+```html
+<div style="background-image: url(ameblo.png)"></div>
+```
+
+- 印刷時に背景画像は表示されないことがある（ブラウザの初期設定では、背景画像は印刷しない）
+- ハイコントラストモードで、背景画像は表示されなくなることもある
+
+##### 良い実装例
+
+```html
+<img src="ameblo.png" alt="アメブロ" width="100" height="50">
+```
+
+##### 困ったとき
+
+WAI-ARIAの `aria-label` 属性、`role` 属性を設定する。
+
+```html
+<div
+  style="background-image: url(ameblo.png)"
+  aria-label="アメブロ"
+  role="img">
+</div>
+```
+
+### Android
+
+#### contentDescription属性に読み上げテキストを設定する
+
+```
+<ImageView android:contentDescription="hoge" />
+```
+
+### iOS
+
+#### accessibilityLabelプロパティに読み上げテキストを設定する
+
+```
+imageView.accessibilityLabel = "hoge"
+```
+
+
+## 参考文献
+
+- [達成基準 1.1.1: 非テキストコンテンツを理解する](https://waic.jp/docs/WCAG21/Understanding/non-text-content.html)
+- [H37: img 要素の alt 属性を使用する | WCAG 2.1 達成方法集](https://waic.jp/docs/WCAG21/Techniques/html/H37)
+- [H36: 送信 / 実行ボタンとして用いる画像の alt 属性を使用する | WCAG 2.1 達成方法集](https://waic.jp/docs/WCAG21/Techniques/html/H36)
+- [ARIA15: 画像の説明を提供するために aria-describedby を使用する | WCAG 2.1 達成方法集](https://waic.jp/docs/WCAG21/Techniques/aria/ARIA15)
+- [H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる | WCAG 2.1 達成方法集](https://waic.jp/docs/WCAG21/Techniques/html/H2)

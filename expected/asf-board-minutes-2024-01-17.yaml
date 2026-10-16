@@ -1,0 +1,1545 @@
+id: asf-board-minutes-2024-01-17
+chaff: 0.35.0
+findings:
+  - rule: date-format-consistency
+    line: 62
+    sha256: 66842b6df4ae49dd8525f2d33f2c6c5efc944f96a448015342eacbaf84df2599
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 73
+    sha256: ccf1e4a49ca25e20a0f164f2ef631339b08d32cfc04cde948abc2a618194c6c0
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 76
+    sha256: 775be6ffeef4cbee203ac8c54452a11cc2e36c17f7987bc922201f8860c95044
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 80
+    sha256: 024ea5b153219560ef1a73614ee95e49deb32004049e58d5f50f0cc3ad6bf373
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 85
+    sha256: 930993d6c6b1f6a7692041d408e5845f4db36fceadee690f8e7caa74280c4c13
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 85
+    sha256: 70659117037906b8bd97cca0563b876750bbb9e67b993f98ac275b97693138fa
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 87
+    sha256: 6df7a7fd68b5a5ebc5e4ccf9ed0a14f920acbf32df4caae5aee872a46bb73d68
+    verdict: unjudged
+  - rule: date-without-year
+    line: 91
+    sha256: 7f9300e1becd384621aa3814bbab7017d202e14936d922a49443179679090bd6
+    verdict: false-positive
+    note: a day and month in a report inside dated board minutes; the year is the meeting's
+  - rule: sentence-spacing-consistency
+    line: 93
+    sha256: f84c6c881cd582081673930dd63b360b6f1e56841ef095bced26c912f574ad63
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 109
+    sha256: 163ac873766a7e764eddaddc2ab06a6099012ed925fcda812e40dc6526097b36
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 134
+    sha256: 6306ba43ee968e9837b83b4dbcc328dc3caff6ee7be991f3a826b90d3ba16189
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 188
+    sha256: eec0d1ca9ae0c041ffa29cb47834b1d1d293b5c32325fc5ba428a92f5a0171f6
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 264
+    sha256: 8fd087ff8d47ef4925bed7c0d3e7cc816b5cb188639656ce9e782be31f40865e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 325
+    sha256: b43a34fbab07f004f7e42947d09529dcb3c03f779b3276cd42f496941d43abea
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 403
+    sha256: 0b8f90f2fbb3682993823e0e142e1ccd94c0d84f0e6f69e596b90d601f42f2d4
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 449
+    sha256: bc0a730c0186ff5ba778eb7c1d6f429cf9e8832747fccd6c9317565de18f6e9f
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 589
+    sha256: 9939b2919bd0651b77e6746f3d4caa5e089059b111133d6676304185867d018b
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: all-caps-shouting
+    line: 593
+    sha256: a2bf264fd7b94f2c145ed70475776d43426aa2ab51f40a9beafe36815eb60f87
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: max-sentence-length
+    line: 593
+    sha256: a2bf264fd7b94f2c145ed70475776d43426aa2ab51f40a9beafe36815eb60f87
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 604
+    sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 612
+    sha256: 74eb6fad17bb16c8f785bd08af6813179b0187693ee6a4f068b97c23452e1da9
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: max-sentence-length
+    line: 621
+    sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 647
+    sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: max-sentence-length
+    line: 647
+    sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 676
+    sha256: 3d1effdec09b5eaa835d62b865fad4d1d6ad6cbfd6343cf1b73c999c4e9727f4
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: all-caps-shouting
+    line: 680
+    sha256: de3bc3b4d77501f19312f6fc3ea1b83965f7694dc582fdeefde87f166f566f58
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: max-sentence-length
+    line: 680
+    sha256: de3bc3b4d77501f19312f6fc3ea1b83965f7694dc582fdeefde87f166f566f58
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 695
+    sha256: 4855960682710981dcdcc176ef19454ea9c53359761840136bc7dbab9b935c99
+    verdict: false-positive
+    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
+  - rule: undefined-acronym
+    line: 745
+    sha256: 13206c86bda7a59173745eeb804150dedddbc2df3ea0162a92832efad3464583
+    verdict: unjudged
+  - rule: preamble-length
+    line: 822
+    sha256: 903ea500e7ccf842c1312b6c2f964e3e98ff146456cecec717e9a0e122bf735f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 842
+    sha256: 9ab514d2d4dfd4f61386aa6e4ce4406688634961597977cd599f0b2c4b8efef6
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 843
+    sha256: aa9319880056e6e5252a32a0d1686107c5be7ca6e0a861a5fb5bf89e2c98bc72
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 844
+    sha256: 44857b488489ad558cc8a139adef442b7db6c2865d3e029ec9041584c5b408b2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 844
+    sha256: 5175e6b02bf3706356c1d68d2e4f6aada1041c3cd21aee7cd0f88130e3004b77
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 844
+    sha256: c758b69758c15570355f81619669094a5ee33c6cc59ed9f2c4a4d6bf960fe703
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 876
+    sha256: c48639100b61dc3d1e70ae3a53ce0cf01178fad0b481eb3444abd0324f0fdc21
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 896
+    sha256: 6d426763bf6b6b503749d47812a8aa73d653ec50968f8b1ebbb40e785036ab5b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 899
+    sha256: 10ad42259af038154830d82b7ca56d0d1c5f06d5e5e1cbd7b4937ff4213ff943
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 910
+    sha256: 4eda4eee7b290545a17a23f33bc54ec0a2c3c9c909663f712b988e7921b69263
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 923
+    sha256: 15238fd72e5e165a0db4c133f7ce0f8318997eee2bf0d629a9c6325554d04c1b
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 923
+    sha256: 955b0e95c8cfca134667dbedcff8118c8810e10f96602e93d0b6bb1266457e0e
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 960
+    sha256: ba5ec51d07a4ac0e951608704431d59a02b21a4e951acc10505a8dc407c501ee
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 980
+    sha256: f720fb1555f8cea785b8286caba59f02da06bc92ddda2711c5211d63baa9ee6f
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 981
+    sha256: db91212ba91e5d4f0c3137ca12288b89a1c7e4509717b49a9f416e44bf1215a3
+    verdict: unjudged
+  - rule: date-without-year
+    line: 982
+    sha256: 7d1f0861d7beb3df544e81c5d0a4591b8a993079734447ec2113cda9f9c57170
+    verdict: false-positive
+    note: a day and month in a report inside dated board minutes; the year is the meeting's
+  - rule: undefined-acronym
+    line: 989
+    sha256: b51e91a3c23d8188f2bbec81286016118baa4c2caf3c3c42da5575956e3ad14f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1001
+    sha256: 30ab053c392e35a54edb93abcbe30e100ae1357ec215741de54714975718e01e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1006
+    sha256: 6dca3809089d5df75f0047d84c4755123be8a69386f2587c6d3aba785422ed61
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 1012
+    sha256: 54c37d33425924ca5cc81a127a9da748aab275be4ab15015ba3dce24bf65e34e
+    verdict: correct
+  - rule: date-without-year
+    line: 1013
+    sha256: f3df74c1c4271a6441ca75968e49627d8e42ce14f943e6594eb7a2250a405c10
+    verdict: false-positive
+    note: a day and month in a report inside dated board minutes; the year is the meeting's
+  - rule: concrete-evidence-density
+    line: 1042
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1055
+    sha256: 58c847ba87fe99c8e861802f5e50de51c8e3a75e32414beb65ce5d0339a6925d
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1063
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1076
+    sha256: 30c3e887fd370a071d56eeb81b54a5ddef458845d106ba20d557607e15ce17bb
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1088
+    sha256: 6a0e100b9bcee00decf20963598dab49b8ecf4848f43afd18ca50f8e766b8ac4
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1090
+    sha256: 3ceb25e5e32664ae81e3514bcecd5850765325322680478bb1f125c32de1b30d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1105
+    sha256: 2dc371ade3296d6620b28d8a188b7cf18dfedd782bbfa416a4b04162a4bba4d0
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1105
+    sha256: 42953021c2769f9f97c67eaa40ba6105032d92c2ff7eda9a02dff2792bd137ea
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 1113
+    sha256: ad215c0d25173f5ef645a5d46c24f3e3a4574105f60543ff9bdaad9dab480f48
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1114
+    sha256: 25cdcc951682f1cf95432e49cd9469281614a423266d67e8a1de8df9494162e2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1114
+    sha256: 8d55158f564585beb1a460f5470429c0570c64aaa50cf82390b25cfff01ad414
+    verdict: unjudged
+  - rule: known-misspelling
+    line: 1116
+    sha256: db087f943eae6b978dceb7a7a2acd2085810f402aab3ca12d57f08fdd59d89ad
+    verdict: correct
+  - rule: max-sentence-length
+    line: 1116
+    sha256: 514ce1eacd87703ad5648a1f97030c92c0842c2a1ff5ae70f4925b183f027801
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 1117
+    sha256: 3730c0f8a6e08fd19bf2c7c9f02e58565383e7865d73725a52726a773c81905d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1119
+    sha256: 57e61dfb556e58774e0ea638e061504f94b793065de6b3c15da1a729da5f414d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1119
+    sha256: b3b50d826fe8558f57ee7b32d79e8eb8833d2f7fa1563320a92f6dcd3c710c44
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1122
+    sha256: dd384c16aff40940a3a02b8d43b8a8aaf5b199f836663882d7e2755e87ff3b88
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 1124
+    sha256: 0254fd7742cf97e43fdc035fb1fd4652f9700f81e1d54d881a977b0f5dbcbe59
+    verdict: unjudged
+  - rule: name-variant
+    line: 1154
+    sha256: 400416ee835c8f896bdf81f062c36c9477d4a778bb8b7fe196d9e260bb04ac27
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1200
+    sha256: 130654ddd7679225ad19c93d2411df8d010dec2318c023f510db0a247752cfcb
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: ngram-repetition
+    line: 1209
+    sha256: 6c3e9ed1ff84ef3c8cd95ec63555556195fbe7f859a0165731c92386514b7e5f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 1230
+    sha256: f42e3e798976eb533ad8050b7ead0f4c049d05e32f5e7f1e502c6b7121799ea2
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1232
+    sha256: dbceba42e4e31284786b01251609679db86a98efc3f5c4d3c8ff055a1329e2fc
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 1237
+    sha256: 0537ba4c67004e01a2286ed6bfb91f4e4bdb77a17a2e371a748a32054acb6cfc
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1246
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 1251
+    sha256: bfe489d2899b20c7d881e880bb55bbd903a50701e8244c2d0e339bec611b29a9
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 1252
+    sha256: ef7045e06cd6404184c8f4302990bec0a1d6aa2ad8a5679d814a7ecf140567fd
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1268
+    sha256: 09256752bb96f3eb52c3bbdcc1bf327a0744b581ffd9c82049734a13bcad70fe
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1268
+    sha256: 46195e547b1650ceac79b4c2b18d98ad466c2d028659f044084562d7dc866095
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1268
+    sha256: d298c9477571e199e5965f79ced3d0e8b7da6a959f25c6b9e41d4545c20d852a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1291
+    sha256: b204aa0e6ad640db3c432e3c69eb6657b77deaa8de59512c29f5e5a9c4f5d02b
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1298
+    sha256: 887b48c45ceadd60faf6b11e370d493e737ffb2263c219c8ad47cca96015270a
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 1305
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1339
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1367
+    sha256: 90f95cef32e33d091285c276873864182149f0f93875e879c625b0398df8668a
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1410
+    sha256: 0023d18dcb9be301105487c8b32958940fb2adf1733df75dd76f9325ed1ed6b7
+    verdict: unjudged
+  - rule: summary-fact-mismatch
+    line: 1416
+    sha256: 30365193ff7a32d30480267ea8d201612f2c02d959ccab428c0fa972c3822d11
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1454
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 1469
+    sha256: 2a59dd660bc7fffc7d1d12e4b2a06a1654cc031b09a3c240a9237d1ac124140b
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: date-format-consistency
+    line: 1493
+    sha256: b579216508c4b7e46582b2d1e7382d2cc8d975622e0dbb0ec469fd1c9b530b55
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1493
+    sha256: 4ee07e2ca88d56651a81244a6a94d6ae4cdd23feb20348cf902dbeb93387f985
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 1495
+    sha256: a966f3654b643d49a4c477709010aa39c76f5275c0578957126d34427a5243ee
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1495
+    sha256: 56bd2ff5c73d81d9e2a43f264059421c1d0082ec3a026b41fce46c7a683ff603
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1497
+    sha256: dd54c1f3258ce0158487062302211cc4382b3d41e0247eddc7d5391376756aa5
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1502
+    sha256: 0f88009f198fdc70809f7ccf60e23fa2888c927f6ec6766cd412d2d244e8db93
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1511
+    sha256: a67326048bbb8151ca51ebea1f45c723f6fcedfc03d16fafba0801e975020adf
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1511
+    sha256: b1d9739d5d7977d760436955d9cfb9d6265a07791086e0db146267605c9c31ef
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1520
+    sha256: d703b1be16f2881c3352a89f65587b5db84943d28f11605ab21ef204ed755568
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 1521
+    sha256: ffb210aa15eb4fe68ba418317ba9179012655450aa3b4390772359320c56d82e
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 1521
+    sha256: 106ed1809ba786f761704956c3d6beef14f6d2ca66d62cf4081c0321d029eeb4
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1523
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1526
+    sha256: 3b5dad8f8b9d2907ffc7e94c73cb43c158bcaba3063b704795152975fed4c9ed
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1526
+    sha256: 3ce04a9f3cf1905ddfad990e38e4328ab8bcea66ab825a67304b9a824d90414c
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1527
+    sha256: 027fa19a60df16f71a81249235a1b7f703df949b6f7d434edb151ef33d30e00b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1570
+    sha256: 00f219c249ca15328c29e7ec56dff66c345ca500b2f488b4a70f5ab6951d1752
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1570
+    sha256: 403ccb2ae26c3736f65af6ec50ffc9f978350965301ca4c7d7c418f26126b1dd
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1570
+    sha256: 7d21b747532eeb97c017ad073f455c09ffef4ea4612f2f87f10b3344b989842e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1588
+    sha256: 46f14c24ff47d48d472bea896777f53d173627c563901a54728ffe88e79fda5a
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 1604
+    sha256: db9a0c329dd0b8e674416bdaf323e6d4a82e81979faec070289eeacf0ef7d2fa
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1610
+    sha256: 8f57e47cd7941bc9c25f7887652941b39d74d5348d363142fb53d499fa76b491
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1614
+    sha256: dfbdd0caffb79916aa7405704675e9ceaa0b508a3edb6fca5ee5b1c97b8ac806
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1626
+    sha256: a962a28e9ca95750024d2ac840e8827cca9080659ab6e86a0ed3bb3e286da2e4
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1627
+    sha256: 56208ddf5af5d80e40938c3487b2a58518efad5a891e15a42ba902cccb8a87ae
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1635
+    sha256: 16e3a4dca816decba35fd2b39f50d982af124b11489a100c1c881ba694ca0658
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1639
+    sha256: 143cae8b20aa3b48c072578746f43e40a9dcdbefb38226a04600f6f089b53717
+    verdict: unjudged
+  - rule: name-variant
+    line: 1690
+    sha256: e324a615a3b2c377c9528a7c62137ead4bccfb5ae2c712e564b0f26cac550c56
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 1696
+    sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1696
+    sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1702
+    sha256: 17264c4e0b5f7a54474bd0787dbb6242476215dd4d7ba9e01e2ecefba2a25bc1
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1708
+    sha256: 79abff3ee4abf49fc3f4cc875a3ef73b00e06c788870e80b778c17bcf63ca02d
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1739
+    sha256: abffa88dada009ff7487e4ac23dff20bdc071e257828c383c8ca6a5af6697b2f
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1748
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1769
+    sha256: 2b47ae15b86e5e41ffd425e0538f30859e6d4ebb23fd5436182d5b9e504774c1
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 1808
+    sha256: 45dce1a89d45dbd7aab79d9a866c8ebf33524cc3f60c94592761b3aa6334cf5b
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 1809
+    sha256: 0d581e7ec0307ced070675e2cecdfed978673453598e9d2c799a311a29ad240b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1864
+    sha256: 008c6a0555ef269cce7e2c8591ef76e914f2fee2b08d9259702cff99ff0318bb
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1866
+    sha256: 355239d9fc8b8fb42aa0e1ef8442cfae397f6e15982743136d7ffad7ea1fca5d
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: date-format-consistency
+    line: 1870
+    sha256: d3a2477efc8dbeb7f461f086514975642e34b096705f8628bae6ac6e4e3ade11
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 1870
+    sha256: d32ea7f91e4654ab0431ea9276c1cde3ed35c9bdb6720c3778a63b85447e391d
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 1891
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1917
+    sha256: 4632b47daa79408c3cfd13653f7b7cf3b13c0cd655bf4a2f8f5d2086eb5ccae8
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: expletive-construction
+    line: 1947
+    sha256: 74b70152de87acc40ca9f80186c6def19982988b6ee3904cd4675e92bf0e4899
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 1955
+    sha256: 4cd7ce363e1df3889fc4b968553b63d39f5609a1daff38adeb5d6eb603f8428d
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 1960
+    sha256: 32d0914ab91010d47cdabe2ea3eee63adfb791d1942740d72615a713587632ab
+    verdict: unjudged
+  - rule: unknown-word
+    line: 1965
+    sha256: 281031b3735b4bcbcedb2c86b7680f40f8680f1c4206d7a61e75ae87aa66fd10
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: concrete-evidence-density
+    line: 1968
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1980
+    sha256: fc5e5cd07914b152a03382bfc3b208eb1b4e2a113faacac97ddbb5cdf32f569d
+    verdict: unjudged
+  - rule: date-without-year
+    line: 1997
+    sha256: 3e15f29a6abab38f4fd2bfc779e5c9290c1829c592f7254df4f1219f2b96e30d
+    verdict: false-positive
+    note: a day and month in a report inside dated board minutes; the year is the meeting's
+  - rule: unknown-word
+    line: 1998
+    sha256: ff7919f37f22bc985bcec9fe83169e70aa9f4463f3dc62a8e05d20c3a8739830
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: unknown-word
+    line: 2002
+    sha256: c957eb3e19570962c4409eb19e94d45dac2a0325b5564b4d10dc0fa4af2646e6
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: undefined-acronym
+    line: 2003
+    sha256: d6a87aa2a2699f344a85a463d1684898fefc4006c08f995476ea65394dcd3c08
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2006
+    sha256: daf223d74280e81572dd706f66f334d9e5ff59eb052c595ac3aa5679594d94d4
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 2017
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2030
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2050
+    sha256: e609cef206ea5ab1967b71c8fb567814e45ecbda575455b35e42f5727cd3e0c1
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2054
+    sha256: 41920a1b4d77b6c8424b0277d84b8dff1dd892080163a43ddd769abc0c6d6083
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2113
+    sha256: a4cbafb031cfe1734bd552ff7be71f267eabee19ff9df925fbbbde3381a34309
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2121
+    sha256: 02d04e3f6e1f4a0c0d871004e1e46e25a783107db274bd1117c2e522e64fe5b7
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2130
+    sha256: 836453ccb08ec9e3e569167eda8463624bee7c67bfa566241e79337122d55705
+    verdict: unjudged
+  - rule: name-variant
+    line: 2132
+    sha256: d18b2aee8b95f8f197a72ab6ed725abb88608a85ca82808c72b6e6ee9a2acb60
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2132
+    sha256: d18b2aee8b95f8f197a72ab6ed725abb88608a85ca82808c72b6e6ee9a2acb60
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2148
+    sha256: c84515b826f8ae03752e22a9f497346ca26a2e848eadb4fbb6a9d27eabcd417d
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2178
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2183
+    sha256: 92cd0c2aee82ed2521e88ae5201069a9ed16149078fdb17c6f3459c3bb151715
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2203
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2283
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 2284
+    sha256: 7f98bab99e9229b7e4639937a6f051c69d7051d1ebfa71c935d06be120926cb3
+    verdict: correct
+  - rule: expletive-construction
+    line: 2290
+    sha256: 8b33fc90720f6df0329e15774a396a9209a456896f162068d43165b66e0a4766
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2297
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2304
+    sha256: 8548bb25fb879a5088eca4109cd716927f23f3b6242bcad520b541dd2a4326d0
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2304
+    sha256: cc59be810f7e8aae5d962246650f278d9c8b7333fc0a4efb1bcd0248d9571b55
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2327
+    sha256: c1d25bb98cec89f15d00adb8b3b8f5b547e4721c698863932cf0c294a2ba1728
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2350
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2361
+    sha256: d8dd376a1773dd528ce464d672bfe61e74e3aa1af4d31dd1ab547ca154630472
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2367
+    sha256: 255b7a051813d5a99ec85fec474e18645a2e764b0e41d38cd0770b2c0a48179c
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2368
+    sha256: 6788f928eeca45f060c67d172684ab4d43bb600e2ae7bb2e1f0db6b9fef9c6be
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2368
+    sha256: 6788f928eeca45f060c67d172684ab4d43bb600e2ae7bb2e1f0db6b9fef9c6be
+    verdict: correct
+  - rule: undefined-acronym
+    line: 2373
+    sha256: 8590d8af8e8051a49bd28a32c598a77dd45d1f1f60101c3e1dd35ba83c03a45f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2381
+    sha256: 59ce88acc364cec52f259efffb9409c3aeff156dd9d4f7f23dbbe2f938211bc5
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2382
+    sha256: 57bca808d810b2096b1f2ec9ab48dd4b2a821721fe2ef2bd37d0240841aaec1b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2382
+    sha256: ba5ec8de226c365d9573c4aa73f5cdda8aebe8d9ee62b6ff062bf50ac1bfae7e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2388
+    sha256: 9e27901133013ec64c1e456cde2a257a7edcdd31956e9cdc017d48eac7fbc95c
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2390
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2393
+    sha256: 5b6fba6f90958833c8dc27dadd4493dbd72f331b0d0d222518eefceff8087eb8
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2398
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: name-variant
+    line: 2413
+    sha256: f5ae0cbfdb3ace80d65d188b37e5e102836b87f5f3d010b7434ebcbb6dfdd8f1
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2413
+    sha256: 427485878c031905d430cb13fc7045bcc8d9fbc17cd1cb22ace0ea71ebc1a03e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2435
+    sha256: 894716a3de535eeca0da35446104749d550799606f7973f8cd4a28b80b6732ee
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 2465
+    sha256: aab071f0815373a9b1b579d620429a386dbe50d7bf2f77bb51b6a1b195fb7ac0
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2485
+    sha256: fc036c776b7adab9294cf1a5f717272e0ffe61c3d333970f931e67e2688f23d3
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: cliche
+    line: 2493
+    sha256: b2cdd27f8cb524de1eee547786a7f6be7f68ec60f49ca76e96ebf01301b1faef
+    verdict: false-positive
+    note: the phrase is mentioned as a term under discussion, not used
+  - rule: undefined-acronym
+    line: 2500
+    sha256: 93db46684d15a6f89856cacd0b404b02be52f4f2b696f4144100366cf128aacc
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2521
+    sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
+    verdict: unjudged
+  - rule: unknown-word
+    line: 2521
+    sha256: 376d0b06e2b2216c651bc27c25f3f8697cac3046c7a321b1c2f5dcec66a25860
+    verdict: correct
+  - rule: expletive-construction
+    line: 2533
+    sha256: 10e9d8ff2d1771610562e01bce76ce98ff5f833a0032423dbfbe8a29b6a6dd51
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2566
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 2585
+    sha256: 046559c8d0a3bcc9129aa0ceae89a96e5e2ec672e3dd8ff7871f5fe3619516a4
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 2591
+    sha256: 94d56a73d765e90613c8721795f534d97bc26e4bce0f37bf586485d8c3714d64
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 2597
+    sha256: 0b6839106f0cc77af2beaef0980865dd2b30cb32df549ca9fa307e742aa6dc83
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2615
+    sha256: 1e66942f55a9761bbb7434396aa5578af8d81ef925f1ad6a0b6e7f1b1f421976
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2615
+    sha256: 635323fd1fab2e7b9c39452ced08ea13d65a1cf3f322305b3c13c82085f25dfd
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2615
+    sha256: 864e8be25ab460c7902b36fd8004c5b73d85d33bc1900536eb97450521403362
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 2615
+    sha256: f02798c47f49ec5b3ff86335d32be247b6d4d60383352fce1f8a9577932dff43
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2615
+    sha256: b39a94233d4151b0e444f1996f9cfcac3c8fe8406b3b70d6fc4e23bce8c7db01
+    verdict: unjudged
+  - rule: article-sound
+    line: 2616
+    sha256: b3290dfa0b532d9a2107e0a497f4f4941f3d09e2355ee3665100c0682ed421da
+    verdict: correct
+  - rule: undefined-acronym
+    line: 2621
+    sha256: 9fc4508238942e7cf40354d962db0c18c5ceec7320e0a3b9f69a0a7836efa50c
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2631
+    sha256: 8224acf83623f9e3d511411ecc4654766a90dabc42b2d667512a8cdc50ab4b48
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2637
+    sha256: 565d8c861fde928abb2e674a28df5a4cb23aee4a47871b139f6a1eca4782e217
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2639
+    sha256: 741b1eed68b6a56d5ec9228758c7236564659a5f1443ace00288c7e08eb0cc1a
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2640
+    sha256: 594df303bc5034623d6ab32179893a894f289bfb4213583787a4b051a51811e6
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 2640
+    sha256: 9958674d42dc252b6cd22bf2763b51a0e09ee36ff18dc29c7779ab7ff832528c
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2641
+    sha256: dbf082b261dd3036e1497c72730dbabcaba2b7fde9a60b17deee4810bb162230
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2645
+    sha256: 0bb9e5ba344844a0db4131f7fe5cba5fd705d7bd26fe4692bc250f761dc5ad92
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2646
+    sha256: e948d191e4036c7bf18f30b8ea693b812e3ea4c2735bf09bb106478e45d5938f
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 2687
+    sha256: 43a80fbdfde161d3afe2681f6b3fcd6e8fce51da6bd13c1bbc4533df8f836d5b
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2689
+    sha256: 72734d0d199c98de2c184107511df347af7147ce4da87685e6221f56096b1140
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2689
+    sha256: f80f7e809032a1f969a843b3b59246353cc04cb1903a4cc5a5accc08371407c4
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2691
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 2692
+    sha256: f97737eff3cc4750301c35ffa26bd4f9a3261f036adcc86b13e0c7c9cb406482
+    verdict: unjudged
+  - rule: unknown-word
+    line: 2713
+    sha256: 0a0f419fd8a80e48dedbf4f2e9b0d3d47810ae6f7a5b4a260407aa6556afaf3d
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 2732
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2735
+    sha256: 9137186150fddf339dd90643dde94465b1d2fb9b7e1e0872563d0db4a95a8faf
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 2764
+    sha256: 05e237382fe4908c067e3f4ab1b8301bbffe27004549de451350248fc96f2de3
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2768
+    sha256: 46354a4b57b5508b60563b0fc414e670b5742e64e286a108b3cbb8dfa46f813e
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 2776
+    sha256: 4bacd92252966e57077827f113cc6d5e0e61afbc3f8c244ccfd7727c039d5b9b
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2787
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 2815
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: name-variant
+    line: 2816
+    sha256: ffdc2e76a704d257324b9f51024ad59546118446cad82f871181c590f2cb6a42
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2816
+    sha256: ffdc2e76a704d257324b9f51024ad59546118446cad82f871181c590f2cb6a42
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2834
+    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: max-sentence-length
+    line: 2887
+    sha256: 3379fbc0f358d9a68c648c5573ea40e36c8d4ffbf07fecbb04033fabdbac2cf8
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 2891
+    sha256: 5402e8279557df8b57898af6693d32ab3ac055d5629dea8db1a3ca69f2d2533a
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 2895
+    sha256: 9d0486dfed435a51afe13b88cb0ed83f84c56a88d43aa84b69a2687289ba6c39
+    verdict: unjudged
+  - rule: heading-echo
+    line: 2956
+    sha256: 32207fb2dc8463e7bc5e10d5116317cc23cf3878518c50dd227f006869bd0b92
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: undefined-acronym
+    line: 2959
+    sha256: ad1ac69252fdab132a1b9283148a9f67c7fee33a72735d9c9e6228c85208b556
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2978
+    sha256: ffa287ecb1356c8e69f37941441c51c648382eb304cfd927850b2a07a4845b4f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 2985
+    sha256: 1bfaf75fa9380d5c9ac4fdb814ce84d8b933be92e3d5791544b4ae86fab5a19a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3057
+    sha256: 2c822d27e2cd4bbc3e6b4e1c7d45835b7e422a2ab0a80c2a88f7847a2d64c344
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3057
+    sha256: 6fec984755dc89e854995c84a478ce48f3ba31ea3bdf850ce5c12d261f8864d7
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3073
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3108
+    sha256: 267512473b214423bf5c39e56978cc5977bcc3ebc47cb844c2ac0c8b543a5e89
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3119
+    sha256: ce5f1bc1d063bfea99e2da836e90fc45d1300c7a77934f6a67b85628b1c75ee2
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 3119
+    sha256: 01d78b03afe83a553e24ff929cc7e3b4f9e6e33265df4efdac821f46447f57cc
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3138
+    sha256: 3d56f635108508a4009b4eda172721aff14b2416b116843318db424041e8c509
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: undefined-acronym
+    line: 3186
+    sha256: 187af304bbcca8d704c7a8554590b8a87bb3e4f830b72aa7f3fd04bbae6247d4
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3186
+    sha256: e04805c9f8a6ae66339466418943ac0de71e2742cbcaf3b26ffb81293706e60a
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3201
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3213
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3235
+    sha256: 9957f8e6188e026be6a7e5f111662cc5fdadbcad53ea8b3b6800b99d97bf8054
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3275
+    sha256: eccd626547f88e7eb5c2eb13d104d95086fe41e0de0031068bd2ad349ecc63f1
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3279
+    sha256: 2af2081547142e685cf0aa49ae14211b820acaf8a55af242140ea812d6ea2a6f
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: unknown-word
+    line: 3298
+    sha256: ab574857713fddf89c12a198abc4f61f3d217a17a6ab27dd23a175e61652d40b
+    verdict: correct
+  - rule: doubled-word
+    line: 3310
+    sha256: bea586f1560b93d166fe0f29faffb48ad928a4b2ff51636b760f12781383d475
+    verdict: correct
+  - rule: expletive-construction
+    line: 3321
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3339
+    sha256: 9019bc0a3695e43d4fbd3196d5272690bf1662e056f83758173020d44bc1e4a6
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3387
+    sha256: a16d1aeb2ffd1b127e443eb0271ee1fee18e286bc2771b86cef44d831d5e889f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3399
+    sha256: c8491a17517372b1f9f0689298e73d93e7de821b5679657adcdd72d8086ac88f
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3399
+    sha256: 872b711565ecd4f3c945b74b705040204d0d67eefffcfba516373b46746f5c9e
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3412
+    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: expletive-construction
+    line: 3421
+    sha256: bdcfbd13d708def14a52a81b5e9c97219c5ec53930c903fc4c89fe63e9b08032
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3452
+    sha256: cda5aa76200537c847032e48dc56fb289c7f16c7b674a5e9342568762d19e5a9
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: undefined-acronym
+    line: 3486
+    sha256: d067ffff463a134994b9a3ef1fdcb646f9fd79d36fd51aa7a217819997aa800c
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3486
+    sha256: dc2c07a449150474616a54368e6798d309f4f14584a049e80b24bca4f8ba94d9
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3489
+    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: concrete-evidence-density
+    line: 3587
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3589
+    sha256: c66173944c65047915d7f35faefe042c4d616ee333ca2f2ca829ff0eb4a0f50e
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3594
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 3596
+    sha256: d2365bdd17fe084284b29d1822aebcb313d77ceb8c0f7ae9d8b2e2bd82fd92e4
+    verdict: correct
+  - rule: expletive-construction
+    line: 3610
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3615
+    sha256: abde6587ad2b66935d5a1596dc11946b1d38047601724ab2a53ae84bebd84747
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3669
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3681
+    sha256: 5c8c27c186d205e354be47324c4566c27ffa3a8bfad5b560b60d68edc0a79a36
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3681
+    sha256: 18987a526219e42be8f954a5b2934f7e6d92bcea21d044327117f345836c59d5
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3702
+    sha256: 80f310fc6e0310ef5d1c259e4497d0055ec3f51894440fc97762123e3b0fb4b8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3709
+    sha256: 81762763e4ffa37118db58cd1f126717ff1579a7f910294171698785980c6a35
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 3713
+    sha256: 11a8c79b098fd9d9433dae6a8e2b549859db8aa62b7cb813d4a221438adfbdfd
+    verdict: unjudged
+  - rule: unknown-word
+    line: 3735
+    sha256: 1989b5279b6d15aa1d4ca5f00c0db6ad0d05533057ee75f047ca0170b8470cba
+    verdict: correct
+  - rule: spelling-consistency
+    line: 3736
+    sha256: 2caebf1ca900229092b655816faf16ef53fd2ae37173311a9595e1209f844be3
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3739
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3777
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3806
+    sha256: a9d71bc9234cb34ee5332055b0681962b9cc1a6fc78b2fbd1b665c02e376aca6
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3810
+    sha256: 84e5de6e1fb182d50ef7166ec9a9f2f6d83dd7ea837e364e6de8a8a86cf61d81
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3829
+    sha256: bbeab5e64785129af93f77b745a9f154ca2c4c7c66d8a6646e2eb7c0dc652386
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3837
+    sha256: af3624eba2897ced12f20217f2fd4968da2fc8b1697734ac39cd3694a108f98c
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3839
+    sha256: e48c8f2b01894b859c5124719a087c701441ac7dbb4a940bfc4385a9d7e1aa24
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3841
+    sha256: 0f0281c30d6362fa10e80e24e47fd3b2036049eae112bf11ddd43e32580c7f16
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3849
+    sha256: 3c6a5f457385010f064738d75aa6dcc955ea63d7178c5fe25970be78fde24ffa
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3862
+    sha256: 4f59d935469d356226518628f08e33947bf128443a2fcf48091d1fa498e76b8e
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: unbalanced-bracket
+    line: 3887
+    sha256: 384f0df917624a39807d4350212723017e57ba12a82c53fbe161de873c33c011
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3895
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 3901
+    sha256: 1e0f018e0c3afbb8bd88f919a605194423887ca54541bea1a62da0aaa9f34ecc
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 3911
+    sha256: 01bb4ba2743ff5c076c26cf3782bde0576c4bcb58af937cc8785d8be7efff04b
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 3915
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: heading-echo
+    line: 3916
+    sha256: ee01946e7884ec50fb122151bf4879023764df344e791bb3c98c41f83d46a355
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: sentence-spacing-consistency
+    line: 3926
+    sha256: 288bdc871834707c9eec818d8fa27d4f07c1dde2326bd5ca157dc6cc8b5f42c6
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3929
+    sha256: 4995f7cfc9133cd099c7fac64a837f85bd63401840e31901d1b67b31cf73a509
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3939
+    sha256: ec593074bc18437023470159b5e06be6caa01b8246b0a7c60ee1bb123a5bb0cd
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 3952
+    sha256: cade61bd6337ec2037a06ddce8d9cb2ed7dc0a85d16055ae8abbe0e6037b25f1
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3952
+    sha256: f02e599107d76b0c6d07324baa3bafb312501454f7913b77d7e23784dad7755c
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3954
+    sha256: 37418559fcb024aaebd0aac8709558329e4d86931d42d8997403e5691fea06cd
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 3956
+    sha256: a340d59c39852bb4dcb3bf323ed874f53dc81693bf258733f2fe15ac4b78424a
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 3957
+    sha256: dcf4cde184e70843c7994c199cce833ef3e4fcf528443824dd9c7a752785cfc6
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 3961
+    sha256: 5ec1f7e700f37c3d0b2981d04855fc34b94aaa15457b05ca571817442d228f81
+    verdict: correct
+  - rule: orthographic-variant
+    line: 4017
+    sha256: 4e5d66174a9bd5636b0d29862c95f7113e89824f84a44ce1111735b69f8f6d54
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4028
+    sha256: a656107e99c71dea1ba101ea816e3886370b68ca9f9ac8e5b2d79c6ffddd70a1
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4094
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4160
+    sha256: 73db84a4a98fe60cebcd15b42b891b5ea749b80860766ca74ba44f4a245c4dfd
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4197
+    sha256: 1c59e261ceb7015cd4aa6542cfd1e16cb4aab595186ec4671ed8910f55cb0b11
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 4216
+    sha256: 9ee5fa0de0a8e20da48e007f918009c7f49c64456b172f99d8a1775f5f420483
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4238
+    sha256: 0d130617c58db5f8555ebe7a776c9a1901be5fab2227c77943dc4212015337cf
+    verdict: unjudged
+  - rule: heading-echo
+    line: 4255
+    sha256: 94e30b03b2d4d57d4326ff31e0be53ae48cb7a141018ea43bff104be5d1fc6f4
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: sentence-spacing-consistency
+    line: 4270
+    sha256: 96a05856781d74fcd7e88b6b317bb9b06b9e3b06cf7b3379e03e67b7c5cd0867
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4272
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4307
+    sha256: 100b54d3a4c7522268783474caa04973e4d56883aea52499252dd319236c3f60
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4321
+    sha256: 27701f3222a52cfb88af87396297cc8a57fcc1eed33b70b18409c71cc1d7a8f0
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4330
+    sha256: 585cae6b7ea289b351563d925b699750b6ed30ac190331d9fbc8f2ac905acc53
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4331
+    sha256: 102b0a4cc1b2843e359a731af8491d2f6109a0d603264560034577e393a69209
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4340
+    sha256: cd046f2f1229df84621a2dd642a0f039275889d85dd0cedce866e3b49620cd09
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4391
+    sha256: 08fd44741fac8f69142136b879245f970c7c0ad21062f27ea8a5da40695c7721
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4395
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4439
+    sha256: 1ec2daa988955996db6c2cb52c8e82692f1d6c11b0e3282adca57a3a7a6d266b
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 4452
+    sha256: d5b9026bac342ae0c0759824db3ab258821fd3895c33210b635e792d93f7e83a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4454
+    sha256: ba6ea5f0e4a733a27c4e5e4e20ba503f90fd0d655a3dc5edea69434f8d9119cf
+    verdict: unjudged
+  - rule: heading-echo
+    line: 4467
+    sha256: 3d56f635108508a4009b4eda172721aff14b2416b116843318db424041e8c509
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: name-variant
+    line: 4521
+    sha256: af880c079161749364eb9a01378e41fa1bef91322fb66fa62012ab72d36925c8
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4521
+    sha256: af880c079161749364eb9a01378e41fa1bef91322fb66fa62012ab72d36925c8
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 4526
+    sha256: 993c1c1dac568b5d93a140e61764b65fddda4941141d642b0e1d44d7d94e2e9e
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 4539
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4542
+    sha256: 5608ef13bc209d8e85b553d5a174f540737cd737d6ea2c49238af7f16b0068df
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4544
+    sha256: 9771d9e1385f2c1fe571272d26b61a0d5e69fc0d5952d372c9411b33b2c4ef4e
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4548
+    sha256: a16d1aeb2ffd1b127e443eb0271ee1fee18e286bc2771b86cef44d831d5e889f
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 4562
+    sha256: cf1a4f098c3af53cc09a50043c652245210458236fd4f8119a8bb95ead90f1c8
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4566
+    sha256: de523a044d0f1930daa6fbf294006692e8c2494a604083e5bf92a06455af35e8
+    verdict: unjudged
+  - rule: cliche
+    line: 4568
+    sha256: 44b8dd9e83e9f81c5581fa5da0f42ee1e762566b260a89443e69a4ccb3138e02
+    verdict: correct
+  - rule: unknown-word
+    line: 4573
+    sha256: 5e305212b2b1ee0cc166fafc7898b1c07517944bd376046a7737ff6aea9fd3bd
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4573
+    sha256: fe17938d116af73c7978c60237f5b4a56adddf1fb0be442b0383386486b3b5a7
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4578
+    sha256: 1e5774c97b695a723c7f6ff09310880a5f4936225504c90cc6eeff4f9f67330e
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4587
+    sha256: d32683be88c944984f3658440f09bdc24f49e4edbf16502cd4038ed9661dc092
+    verdict: unjudged
+  - rule: spelling-consistency
+    line: 4588
+    sha256: ab52046d0b9e6d9cadb5db84567dd3d0de2c6e827c79183b00e868c518352249
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4590
+    sha256: 99aef94811f08444c7803dc4a4740162682c499a2ec6f93fe511efa62cba8ca8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4618
+    sha256: bad1a33b72b3ea77d74df323cbf92aef664e5daa7e873590cf53f6409dee42b1
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4630
+    sha256: 8a2b2989c952833372f6b021386ae83cc9e4e90d75d5a4fc8299e16fef23a4e0
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: unknown-word
+    line: 4637
+    sha256: 3c958b8570e27bd0b740aceb9cda2e4f4759a6c7ae88f08b8f3408504934345d
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: concrete-evidence-density
+    line: 4685
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4687
+    sha256: b7ad63e2bc8b86e511781242534ed50ecbe594f2cf6e3b91a2fb1b229f60cfd4
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4694
+    sha256: 7421da2e604f8bd1eba21987ff65ba8c15fa2116434bfdc74ae38679d08a05dd
+    verdict: unjudged
+  - rule: heading-echo
+    line: 4708
+    sha256: 8075cfd96f9b65f44dd0cfbe4e3528ba4a251dffce95aa1ac44c537d3f56ebe5
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: concrete-evidence-density
+    line: 4720
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4722
+    sha256: bf13d79f61fd1470bfb11cbe0c80a41faf36ce0a8ccb082b6e2f7bf01e0fb422
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4730
+    sha256: 56b47b38834541b2f9a8ab13d697c38a6748fb69e55f96c5c9b74600c90827ff
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4743
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4745
+    sha256: a3c0c2418f9c92b4920ac1dba69f285f010f9ce1284854bc55df97f15edfc052
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 4765
+    sha256: 87aae55d126a6701be060a956b1c6bec22eeba4b6ca6ed01bd18dddfb880698c
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4804
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 4833
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4834
+    sha256: ae94aa52142b67562f1abaac86f2d052002351b348b8bd90141399cac6f818a4
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4836
+    sha256: ba3ae2a95bf515e018f197a03081a79577ee9b23289d4b7218537898e013739a
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 4845
+    sha256: b9dea5053748c6bce5d946d2a1fe501ac4a7997c3de8b193dce6554bd3a5fc3f
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4847
+    sha256: 6c887ae6055825cb309ee81f79310d59762641830eca42a50bb5378424159c9d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4848
+    sha256: 6fd938dbf67665fac3dd8036ed35f46995cf5838d63b8da1099b27921b669943
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4884
+    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 4898
+    sha256: 068aa5721cc1829b5e434c33f57cb242af7bd8d5c35fa4115bf6823dd583476b
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4914
+    sha256: 9c31bba3138d7e7242d23dac90edc3807d5dacd6f925096ae10cb53a8424dd99
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: name-variant
+    line: 4917
+    sha256: 4a9ac66dfb4b186e0460808f8deb572588e79d0abb2b49bea300c46b9d8d6ceb
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 4917
+    sha256: 4a9ac66dfb4b186e0460808f8deb572588e79d0abb2b49bea300c46b9d8d6ceb
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 4919
+    sha256: b8b2e6af6245f98531ac0880caea6aa1e859daa6fe45654122bc008662ae25a6
+    verdict: unjudged
+  - rule: heading-echo
+    line: 4932
+    sha256: a32e3be9ff9236f0f0de0ad3441cde711df36316f566c05f513505ca32c3bf1e
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 4943
+    sha256: bf54ffbaa8e0f7747068df16982ae8cf244bb19b29d10656082a6a1191a7bafb
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4994
+    sha256: 4fe61c83fd0c89277550156dc62853aaf7adc4e6468799d93f75f9f4389428d7
+    verdict: unjudged
+  - rule: unknown-word
+    line: 4994
+    sha256: e0dda36173086a23444ffc86f7aed52f0af13a05b7f1b103926d890af418d439
+    verdict: false-positive
+    note: a name (a person's account handle, a product or a tool), not a misspelling
+  - rule: date-without-year
+    line: 4998
+    sha256: 9eaf89ac7a4fe6c71156c450344dcf011b3b957583ba94f59a483601eb23b729
+    verdict: false-positive
+    note: a day and month in a report inside dated board minutes; the year is the meeting's
+  - rule: undefined-acronym
+    line: 4998
+    sha256: ad5bffd0a68ad22c89e6567060b71028d09ed8bd9a4a9d4846b1853952355bbf
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 4999
+    sha256: e24ed747867d58c66ab64cdd952c236e6c8677a7310447a0866bd18185d750fa
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 5003
+    sha256: 5326558701f93a55c6bed83a4a98ccebbe42adfd4696576e33cd1819f13858d8
+    verdict: unjudged
+  - rule: heading-echo
+    line: 5020
+    sha256: 130654ddd7679225ad19c93d2411df8d010dec2318c023f510db0a247752cfcb
+    verdict: false-positive
+    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
+  - rule: orthographic-variant
+    line: 5040
+    sha256: 4423c3b0a42e02d458e8f3814d93421e2775198740bdf0a93a65cf5480b43bfc
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 5041
+    sha256: 03926e385dd049edb89206696be930f141fb7b38328ad14086f40b7ccab29980
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 5041
+    sha256: f6a9c4ea15eaf265118f23b7d21a06a71ca0b6f18749b776b1a17ffef1362edb
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 5044
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5058
+    sha256: 5a718345483067720365d29196c9cb5b1f1b32d1ec34fb8d2de9d1dd2f7b7d3f
+    verdict: unjudged
+  - rule: name-variant
+    line: 5077
+    sha256: 895c312c6c409dbf533402ed6659bb174a1237be26f0e93b5ba38881d38dd363
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 5086
+    sha256: d5bff4de13019ae470ada4c7f7f1e6497af73b86ac00048366e0dade09b43852
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 5087
+    sha256: bb69edfeb716184dc39dabedc23be0004dc71fea27df2e45214c9a93ad6fa4fb
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 5100
+    sha256: eea4b8cce3a7786512d602151434a704c9f706e6db4d22131674bbf1c21acc8a
+    verdict: unjudged
+  - rule: unknown-word
+    line: 5136
+    sha256: 9e305447079c5fc60d57942177ce8afa147a009e7a0c2005473a5402f1671d4e
+    verdict: correct
+  - rule: date-format-consistency
+    line: 5190
+    sha256: b8a3a3c74dde07e3483bddd774189ce3d14c78f503c566db221356b17150780d
+    verdict: unjudged

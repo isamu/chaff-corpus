@@ -1,0 +1,35 @@
+id: vimconf2019-individual-sponsor-option
+chaff: 0.35.0
+findings:
+  - rule: sasete-itadaku
+    line: 14
+    text: 下記サイトから「個人スポンサーオプション」を購入頂く事でドネーションの送付とさせ
+    message: 「させて頂く」が文書内に 5 回あります（3 回まで）
+    verdict: correct
+  - rule: latin-spacing
+    line: 30
+    text: " or 任意の一言メッセージとアイコン画像(以下「申請アイコン」)"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: spaces around the English conjunction "or" used inside a Japanese phrase
+  - rule: latin-spacing
+    line: 30
+    text: " 任意の一言メッセージとアイコン画像(以下「申請アイコン」)"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: spaces around the English conjunction "or" used inside a Japanese phrase
+  - rule: sasete-itadaku
+    line: 38
+    text: 著作権・肖像権への配慮のため、VimConf2019に参加される皆様および個人ス
+    message: 「させて頂く」が文書内に 5 回あります（3 回まで）
+    verdict: correct
+  - rule: sasete-itadaku
+    line: 40
+    text: その際にアイコンに問題があると思われる旨の連絡させて頂き、アイコンの差し替えを依
+    message: 「させて頂く」が文書内に 5 回あります（3 回まで）
+    verdict: correct
+  - rule: sasete-itadaku
+    line: 40
+    text: なお連絡が取れなかった場合には、共通アイコンに変更させて頂く予定です。
+    message: 「させて頂く」が文書内に 5 回あります（3 回まで）
+    verdict: correct
