@@ -6,31 +6,25 @@ findings:
     text: ページの先頭です。 メニューを飛ばして本文へ
     message: 最初の見出しまでに 6 段落あります（2 段落まで）
     verdict: false-positive
-    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
-  - rule: latin-spacing
-    line: 9
-    text: " PDF"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。5 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
+    note: site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose
   - rule: max-sentence-length
-    line: 37
+    line: 21
     text: ・インターネットへ接続する機器のソフトウェアの更新
     message: この文は 288 文字あります（140 文字まで）
     verdict: false-positive
-    note: "bulleted lines with no 。 are joined into one 288-character 'sentence'"
+    note: bulleted lines with no 。 are joined into one 288-character 'sentence'
   - rule: missing-final-period
-    line: 58
+    line: 42
     text: す
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。4 段落のうち 1 段落）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 62
+    line: 46
     text: (代表)
     message: 括弧を「(」と書いています（この文書はふつう「（」。8 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 62
+    line: 46
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。8 箇所のうち 2 箇所が違う）
     verdict: correct

@@ -2,58 +2,58 @@ id: jstage-jkg-72-4-133
 chaff: 0.34.0
 findings:
   - rule: max-kanji-continuous
-    line: 26
+    line: 18
     sha256: 473fbb7e015300684a9722d1833570ea5aaef2d4843550aca45e2db2866db7ef
     verdict: unjudged
   - rule: latin-spacing
-    line: 34
+    line: 26
     sha256: 7929655fc940b80cf5e02f0d2b6712fea1355288d284c5ce90e20a3bd2296e04
     verdict: unjudged
   - rule: latin-spacing
-    line: 44
+    line: 36
     sha256: 1dcd28a8abb4e731a1e93303d1fb6f0332202572bb41052d66af7ecd3effe4a2
     verdict: unjudged
   - rule: kutoten-consistency
-    line: 46
+    line: 38
     sha256: 096a2064c0c656122fa75a79d1189b94598b5f393c1fb89eb5c0f68865a29a65
     verdict: unjudged
   - rule: kutoten-consistency
-    line: 46
+    line: 38
     sha256: 6a8db9c02588c5e7bf38cf09810aa3629e5c03aafb91f886cee6c43e9142d05e
     verdict: unjudged
   - rule: kutoten-consistency
-    line: 46
+    line: 38
     sha256: b09c665a82fdba517697a07c2faa6210155ecaab5d218b7c36ef925c79f44083
     verdict: unjudged
   - rule: kutoten-consistency
-    line: 50
+    line: 42
     sha256: ea25bd8d7bf66a8ba43ee82e60df5778fdfb451462f78a86150ec53319b99c25
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 60
+    line: 52
     sha256: 967905834aa0ace1c7a896093347445afb6af8ddbad6abe7c1d4ba46668c9bc9
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 60
+    line: 52
     sha256: fa6609f752db56330351a6ece4e6d68c5fb105d32ebf71dc6bb4f2de1e147f01
     verdict: unjudged
   - rule: latin-spacing
-    line: 60
+    line: 52
     sha256: 20c22b6e45774198db727009808f18845a7adfcb7fd282660285ec28bd7e576d
     verdict: unjudged
   - rule: latin-spacing
-    line: 60
+    line: 52
     sha256: 4832d175dc95fa91a1900d05b0b082515d7befde3fc2f48e1aeb45a703dc1efe
     verdict: unjudged
   - rule: latin-spacing
-    line: 60
+    line: 52
     sha256: dcbb3b6b0d3495aa07a05c925d66cccab18e20012d988bb444a96f51939b2e87
     verdict: unjudged
   - rule: latin-spacing
-    line: 60
+    line: 52
     sha256: e102d37db70bc3b738b9cb1a7891503633f7a6697955ebe7b30ac0ac38183d59
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 76
+    line: 68
     sha256: 7be6d0c8ad1d600a35a48e40ce0ea2c0d623f93452ddeb4308927557c6f3ada3
     verdict: unjudged

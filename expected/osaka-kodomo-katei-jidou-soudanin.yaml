@@ -36,11 +36,6 @@ findings:
     text: " に準ずる者であって、家庭児童相談員として必要な学識経験を有する者"
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。41 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: range-notation-consistency
-    line: 47
-    text: 1～4 に準ずる者であって、家庭児童相談員として必要な学識経験を有する者
-    message: 範囲を「1～4」と書いています（この文書はふつう「530-8201」のように書きます。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 64
     text: (注)日本国籍を有しない方も受験できます。
@@ -150,9 +145,4 @@ findings:
     line: 211
     text: ""
     message: 「その他」の節に数値もコードもリンクもありません（そういう節が 3/14）
-    verdict: unjudged
-  - rule: heading-echo
-    line: 252
-    text: 「皆さんの声をお寄せください」一覧
-    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
     verdict: unjudged

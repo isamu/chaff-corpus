@@ -2,13 +2,7 @@ id: osaka-shikai-kessan-zaimu
 chaff: 0.34.0
 findings:
   - rule: topic-predicate-distance
-    line: 17
+    line: 15
     text: 財務諸表は、財務諸表作成基準で定めた様式の貸借対照表、行政コスト計算書、純資産変
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
-  - rule: list-item-form-mix
-    line: 43
-    text: 組織から探す
-    message: 「組織から探す」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
-    verdict: false-positive
-    note: a site navigation list (search by organisation) the converter kept; its items are links, not a list of parallel points

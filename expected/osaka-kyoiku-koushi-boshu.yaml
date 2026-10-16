@@ -17,12 +17,6 @@ findings:
     text: 下さい。（※ご予約いただいていない場合は、ご案内にお時間をいただく場合があります
     message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。16 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 25
-    text: にてご確認ください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: the end of a sentence split off at a link (the page title quoted on the line before); a pointer to read more, not a task
   - rule: heading-echo
     line: 29
     text: インターネットから講師登録（仮登録）ができます。
@@ -93,23 +87,11 @@ findings:
     text: ""
     message: 「＜令和8年度学校園の採用情報＞」の節に数値もコードもリンクもありません（そういう節が 8/26）
     verdict: unjudged
-  - rule: request-without-deadline
-    line: 70
-    text: 上記以外でも受け付けておりますので、是非講師登録をしにお越しください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an open invitation (お越しください), not a task that needs a deadline
   - rule: orthographic-variant
     line: 71
     text: または高等学校の免許状をお持ちで小学校の講師として勤務を希望する方も登録可能です
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 73
-    text: 講師になりたい方は、まずは講師登録をお願いします。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an open invitation to register, not a task that needs a deadline
   - rule: concrete-evidence-density
     line: 77
     text: ""
@@ -130,12 +112,6 @@ findings:
     text: または採用までに取得見込みの方
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 104
-    text: （注）身体に障がいを有する方も登録できますのでご相談ください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an offer to consult (ご相談ください), not a task that needs a deadline
   - rule: no-doubled-joshi
     line: 110
     text: の防止等のための措置に関する法律）｜こども家庭庁
@@ -162,18 +138,6 @@ findings:
     text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
     message: 一文だけの段落が 5 個続いています（4 個まで）
     verdict: unjudged
-  - rule: dangling-reference
-    line: 136
-    text: 第六十三条までに規定する罪を犯し刑に処せられた者
-    message: 「第六十三条」（番地 63）はこの文書にありません
-    verdict: false-positive
-    note: a quoted article of 地方公務員法 citing its own articles (第六十条から第六十三条); they are in that statute, not this page
-  - rule: dangling-reference
-    line: 136
-    text: 第六十条から第六十三条までに規定する罪を犯し刑に処せられた者
-    message: 「第六十条」（番地 60）はこの文書にありません
-    verdict: false-positive
-    note: a quoted article of 地方公務員法 citing its own articles (第六十条から第六十三条); they are in that statute, not this page
   - rule: number-style-consistency
     line: 136
     text: 三　人事委員会又は公平委員会の委員の職にあつて、第六十条から第六十三条までに規定
@@ -215,11 +179,6 @@ findings:
     text: および12月29日から1月3日を除く。）
     message: 「および」と書いています（この文書はふつう「及び」と書く語です。8 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 178
-    text: 大阪市教育委員会事務局教務部教職員人事担当（大阪市役所3階）
-    message: 「大阪市教育委員会事務局教務部教職員人事担当」は漢字が 21 字続いています（10 字まで）
-    verdict: unjudged
   - rule: list-item-form-mix
     line: 192
     text: 受付窓口で健康診断の写し（1年以内に発行されたもの）を提出
@@ -246,16 +205,6 @@ findings:
     line: 220
     text: （注）上記の給与額は、教職調整額・地域手当・義務教育等教員特別手当が含まれていま
     message: 「義務教育等教員特別手当」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 224
-    text: 12月1日）に在職した場合に期末・勤勉手当が支給されます。
-    message: 「12月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 224
-    text: 6月1日、12月1日）に在職した場合に期末・勤勉手当が支給されます。
-    message: 「6月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: orthographic-variant
     line: 226
@@ -292,36 +241,6 @@ findings:
     text: （注）75歳以上は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合の短
     message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 300
-    text: ""
-    message: 「教員免許状取得見込みの場合の登録について」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 310
-    text: 3月31日に決まる場合もあります。また、新年度の始業式の日からの採用も多数見込ま
-    message: 「3月31日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 310
-    text: 4月1日からの仕事が3月31日に決まる場合もあります。また、新年度の始業式の日か
-    message: 「4月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 312
-    text: ""
-    message: 「給与について」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 318
-    text: ""
-    message: 「大阪市公立学校・幼稚園教員採用選考テストでの特例について」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 324
-    text: ""
-    message: 「講師登録に関する書類」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
   - rule: latin-spacing
     line: 330
     text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
@@ -336,9 +255,4 @@ findings:
     line: 330
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: heading-echo
-    line: 384
-    text: 「皆さんの声をお寄せください」一覧
-    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
     verdict: unjudged
