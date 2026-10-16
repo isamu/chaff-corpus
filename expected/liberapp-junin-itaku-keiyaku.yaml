@@ -22,11 +22,6 @@ findings:
     sha256: eb6ff6a9ddc07c2586021540e65f3645328cc3897be0df0d327b47139af9e623
     verdict: correct
     note: "the two parties are named in both orders within one sentence"
-  - rule: bracket-nesting
-    line: 36
-    sha256: 1aea86a4e49070cf271c78b89425314987f85762dbd1ac1583492efa14293ff7
-    verdict: correct
-    note: "a half-width opening bracket closed by a full-width one"
   - rule: bracket-width-consistency
     line: 36
     sha256: 324c124d3ca97180767625309fed1ef75c5e4105344756730c990b06e8246def
