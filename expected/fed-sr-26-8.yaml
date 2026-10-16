@@ -1,0 +1,283 @@
+id: fed-sr-26-8
+chaff: 0.34.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: By topic
+    message: The email does not open with a greeting
+    verdict: unjudged
+  - rule: title-length
+    line: 5
+    text: "### SR 26-8: Updates to the Expanded Exa"
+    message: 'The heading "SR 26-8: Updates to the Expanded Examination Cycle for Certain State Member Banks and U.S. Branches and Agencies of Foreign Banking Organizations" runs 22 words (limit 14)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: '"BOARD OF GOVERNORS" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 8
+    text: OF THE FEDERAL RESERVE SYSTEM
+    message: '"OF THE FEDERAL RESERVE SYSTEM" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 12
+    text: SUPERVISION AND REGULATION
+    message: '"SUPERVISION AND REGULATION" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 14
+    text: SR 26-8
+    message: '"SR" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 17
+    text: TO THE OFFICER IN CHARGE OF SUPERVISION
+    message: '"TO THE OFFICER IN CHARGE OF SUPERVISION AT EACH FEDERAL RESERVE BANK" is written in capitals'
+    verdict: unjudged
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject line is empty
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The Federal Reserve is issuing this lett
+    message: This sentence runs 45 words (limit 18)
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 31
+    text: Section 903 of the 21st Century ROAD to
+    message: '"Section 903" (address 903) is not in this document'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Section 10(d) of the Federal Deposit Ins
+    message: This sentence runs 65 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Section 903 of the 21st Century ROAD to
+    message: This sentence runs 39 words (limit 18)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: ROAD to Housing Act amends section 10(d)
+    message: '"ROAD" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 31
+    text: Section 10(d) of the Federal Deposit Ins
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 33
+    text: section 7(c)(1)(C) of the International
+    message: '"section 7(c)(1)" (address 7.c.1) is not in this document'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: On September 14, 2026, the Board publish
+    message: This sentence runs 51 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: The interim final rule also made paralle
+    message: This sentence runs 37 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: The interim final rule was made effectiv
+    message: This sentence runs 40 words (limit 18)
+    verdict: unjudged
+  - rule: article-sound
+    line: 35
+    text: a SMB may be eligible for an 18‑month ex
+    message: '"a SMB" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: A management component rating of "1" or
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 41
+    text: CAMELS) and
+    message: '"CAMELS" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 44
+    text: The SMB is currently not subject to a fo
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: No person acquired control of the bank d
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 47
+    text: A U.S. branch or agency of a foreign ban
+    message: This sentence runs 49 words (limit 18)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 47
+    text: ROCA composite condition rating of "1" o
+    message: '"ROCA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: "Either: (a) the foreign bank's most rece"
+    message: This sentence runs 92 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 49
+    text: "Either: (a) the foreign bank's most rece"
+    message: '"sufficient" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: The branch or agency is not subject to a
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: The branch or agency has not experienced
+    message: This sentence runs 34 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 53
+    text: The Federal Reserve may consider additio
+    message: This sentence runs 114 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 55
+    text: The Federal Reserve maintains the author
+    message: This sentence runs 33 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 55
+    text: The Federal Reserve maintains the author
+    message: '"as appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 55
+    text: The Federal Reserve maintains the author
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: The expanded 18-month examination cycle
+    message: This sentence runs 54 words (limit 18)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 59
+    text: CFR 208.64 or 211.26(c), as applicable,
+    message: '"CFR" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: article-sound
+    line: 61
+    text: a SMB or U.S. branch or agency of a fore
+    message: '"a SMB" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: Reserve Banks should conduct a BSA/AML c
+    message: This sentence runs 37 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: The Federal Reserve is required to compl
+    message: This sentence runs 36 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: Accordingly, Reserve Banks should review
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: As noted above, the Board is permitted t
+    message: This sentence runs 47 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 63
+    text: Accordingly, Reserve Banks should review
+    message: '"as appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 63
+    text: Accordingly, Reserve Banks should review
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 63
+    text: For example, existing AEP agreements sho
+    message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 36 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 65
+    text: Reserve Banks are asked to distribute th
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 75
+    text: ”
+    message: The quote mark ” here, where the document usually writes " (4 of 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 75
+    text: “Updates to the Expanded Examination Cyc
+    message: The quote mark “ here, where the document usually writes " (4 of 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 79
+    text: ”
+    message: The quote mark ” here, where the document usually writes " (4 of 12)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 79
+    text: “Enhancements to the Interagency Program
+    message: The quote mark “ here, where the document usually writes " (4 of 12)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 81
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 84
+    text: See 91 *Fed. Reg.* 58009 (Sept. 14, 2026
+    message: '"See 91  Fed." opens with a verb; the other items in this list open with a noun phrase (1 of 11)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 86
+    text: The term "well capitalized" has the mean
+    message: This sentence runs 31 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: The Board is permitted to conduct on-sit
+    message: This sentence runs 44 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: See Attachment to SR Letter 00-14 (SUP),
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 91
+    text: See Attachment to SR Letter 00-14, "Enha
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 97
+    text: "Last Update: October 14, 2026"
+    message: The email does not end with a closing
+    verdict: unjudged

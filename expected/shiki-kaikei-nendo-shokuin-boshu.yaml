@@ -1,0 +1,34 @@
+id: shiki-kaikei-nendo-shokuin-boshu
+chaff: 0.34.0
+findings:
+  - rule: latin-spacing
+    line: 9
+    text: " PDF"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
+  - rule: latin-spacing
+    line: 29
+    text: " 1人"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 59
+    text: 随時募集（採用が決定次第、終了します。応募の前に電話にてご確認ください。）
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: "a rolling recruitment (随時募集) has no deadline by design; the request is to call before applying"
+  - rule: max-kanji-continuous
+    line: 63
+    text: 令和8年度会計年度任用職員登録申込書 [PDFファイル／333KB]
+    message: 「会計年度任用職員登録申込書」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: "the run of kanji is the name of a form"
+  - rule: list-item-form-mix
+    line: 65
+    text: 普通自動車運転免許証（写し）
+    message: |-
+      「普通自動車運転免許証（写し）
+      ※応募の際に提出した書類は返却できません。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: false-positive
+    note: "a ※ note under the last item is read as part of that item, which then looks like a sentence"

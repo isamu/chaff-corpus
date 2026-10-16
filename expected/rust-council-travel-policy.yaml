@@ -1,0 +1,23 @@
+id: rust-council-travel-policy
+chaff: 0.34.0
+findings:
+  - rule: currency-notation-consistency
+    line: 14
+    text: $2000 per person (per year) (as long as
+    message: '"$2000" here, where the document usually writes this currency like "100,000 USD" (1 of 5)'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 15
+    text: You don't have an employer that can pay
+    message: "\"don't\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 37
+    text: ’s annual report. The list of recipients
+    message: The quote mark ’ here, where the document usually writes ' (2 of 5)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 37
+    text: ’s grants programs, the Foundation will
+    message: The quote mark ’ here, where the document usually writes ' (2 of 5)
+    verdict: correct

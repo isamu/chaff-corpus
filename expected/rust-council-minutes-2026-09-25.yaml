@@ -1,0 +1,127 @@
+id: rust-council-minutes-2026-09-25
+chaff: 0.34.0
+findings:
+  - rule: max-paragraph-length
+    line: 51
+    sha256: 4250eaecde5fc7ecc605b43b1341ed6374ae414e3fbe9065e263d5b84afd32b0
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 69
+    sha256: 8548639020653bd7d2a7b55542652710d82afdeb3c271efde22de67e5cbc7516
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    sha256: 6f9d7e623ff27043ab6ce9a162fa1cd0364621f01a9d9178a5343b763aacda18
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 69
+    sha256: fe30aa632b720ca5d910b2e0a84f21c05e8b86f9698e6133c6426900bce57955
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 95
+    sha256: 81915829a615559b063220918ceb1032ba37c7428c0d79f9fc0f71e1fbad2a61
+    verdict: unjudged
+  - rule: unknown-word
+    line: 143
+    sha256: ff57070c60be223f8be65231c85eb1dc2e42b65de4d6df884ca1d839f2bfbcd2
+    verdict: correct
+    note: "a misspelling"
+  - rule: article-sound
+    line: 147
+    sha256: 8848e7f9410451aa7a2e7461325d7e2413c6c24f56bde60d6934a58abe451f4e
+    verdict: correct
+    note: "the article before an initialism read letter by letter"
+  - rule: expletive-construction
+    line: 147
+    sha256: 93b25ba70524bf0b5ab95f6ca03e9ba14559e89f353329aa3d34b4b5bae20366
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 147
+    sha256: c0092b1cad1bd7cfea5d3e0ae30b1a8899950cb1a1efd08d69d2fe1dd07584f8
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 147
+    sha256: 227e0a1dbb147b908b9e2354316e2bbc9f1fe102306867c8655afb48f4d226db
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 147
+    sha256: 997cf17f738bea2d245bb2b2b83fd7fe0283972f9603fee21529df19f3455324
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 149
+    sha256: 7412deeadb03e75a942c20071db1a042d193f893cab81ca33c9bbf5b043402b2
+    verdict: unjudged
+  - rule: unknown-word
+    line: 149
+    sha256: f227606f276bff10363668f7c2e660845e5c3c0e92ab053db642be6aba1383df
+    verdict: correct
+    note: "a misspelling"
+  - rule: max-sentence-length
+    line: 153
+    sha256: c55757bb9d860935edd199759344015b67ef26071a113c8fd7ef523197c7c6c8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 153
+    sha256: f9705bbeee06e2e9f173afa19aef55d42e3d6f859849cc9bbe158eeb3b76a86b
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 157
+    sha256: dd9dbf8c942cca1ce2bf8482c19a6258d59873d91864a0412ce3314b928bed6b
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 159
+    sha256: c855f8246e5494e90b82d5bb2cb7c6b21a63184c63fdf0b6db886a835ae99c95
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 163
+    sha256: 0c34fed53de75d085d36fe3a975f41c6159a65170401063912a398ac1a1ea6a2
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 165
+    sha256: 4c0591c1d89c52caf206dcaf8b90436f9619ae245b8ed927d94aa47514d4d3fe
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 167
+    sha256: ea2cd633a42795fee0c1bfa335d7b9d219b72ed4cc4ba40f7f7b74537ca6c2a4
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 175
+    sha256: 2aa52c3b6c1eea941893ec095c47136070d5d38ba98d2c1928facff508cc914d
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 175
+    sha256: cfad7a852f2efb50d5a77c528a35b3a5c91e0aa5c8829cb51c1b20f1a22fe663
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 177
+    sha256: b4273840ea65d925605404d48d89df37226968bdf3d105622f0d33cfdebeb039
+    verdict: unjudged
+  - rule: unknown-word
+    line: 177
+    sha256: f0731912d9c90e8430a27fc428ca8c5aa76ef57b4057525006f1b19bf61859d2
+    verdict: correct
+    note: "a misspelling"
+  - rule: max-paragraph-length
+    line: 179
+    sha256: a3665fd8f6ffc9c649688f0524803a16241ff739d2163dca08d7f3b8b83a4ed1
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 179
+    sha256: 7b408acb2234656d86200e8d94ba6a5d18443163aa785d7e7f57bfa59fa638f5
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 181
+    sha256: 2b5e5f3923f8fbf40222864cd190ba534f8e62358c2bb0918405f9005f44bc61
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 187
+    sha256: d73d99e8429caec30cf0cee0f8cac1b313cfb9d286f27368515edc3631eb96e6
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 187
+    sha256: 3aedeb7dbfb290256c769add7c836a2b4332846c23169aaa6ab190a7402d8694
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 187
+    sha256: 3ec86ea15464f2a8c309ce94b308f2ffa8e132402810b33c89f82b830b585284
+    verdict: unjudged

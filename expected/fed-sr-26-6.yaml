@@ -1,0 +1,101 @@
+id: fed-sr-26-6
+chaff: 0.34.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: By topic
+    message: The email does not open with a greeting
+    verdict: false-positive
+    note: "a supervisory letter in memorandum form (TO / SUBJECT / signed by), which takes no greeting; the flagged line is page navigation"
+  - rule: title-length
+    line: 5
+    text: "### SR 26-6: Frequently Asked Questions"
+    message: 'The heading "SR 26-6: Frequently Asked Questions Regarding Treatment of Verifiable Digital Credentials Under the Customer Identification Program Rule" runs 17 words (limit 14)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: '"BOARD OF GOVERNORS" is written in capitals'
+    verdict: false-positive
+    note: "the letterhead block, set in capitals by convention"
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 362 proper nouns per 1000 words (limit 200)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 8
+    text: OF THE FEDERAL RESERVE SYSTEM
+    message: '"OF THE FEDERAL RESERVE SYSTEM" is written in capitals'
+    verdict: false-positive
+    note: "the letterhead block, set in capitals by convention"
+  - rule: all-caps-shouting
+    line: 12
+    text: SUPERVISION AND REGULATION
+    message: '"SUPERVISION AND REGULATION" is written in capitals'
+    verdict: false-positive
+    note: "the letterhead block (issuing division), set in capitals by convention"
+  - rule: all-caps-shouting
+    line: 17
+    text: TO THE OFFICER IN CHARGE OF SUPERVISION
+    message: '"TO THE OFFICER IN CHARGE OF SUPERVISION AT EACH FEDERAL RESERVE BANK" is written in capitals'
+    verdict: false-positive
+    note: "the memorandum's addressee line, set in capitals by convention"
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject line is empty
+    verdict: false-positive
+    note: "the subject is on the line after the SUBJECT: label (a two-column layout converted to lines)"
+  - rule: adverb-overuse
+    line: 21
+    text: Frequently Asked Questions Regarding Tre
+    message: 23 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: This guidance applies to all financial i
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: Department of the Treasury’s Financial C
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: The answers to these FAQs do not alter e
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The Agencies are also amending a previou
+    message: This sentence runs 35 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: The FAQs provide additional guidance on
+    message: This sentence runs 35 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 45
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: "the page really jumps from h3 to h5 for its notes"
+  - rule: email-greeting-closing
+    line: 49
+    text: "Last Update: September 11, 2026"
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: "the letter ends with a 'signed by' signature block; the flagged line is the page's update stamp"

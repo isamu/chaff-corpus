@@ -1,0 +1,107 @@
+id: openjs-cpc-minutes-2025-09-30
+chaff: 0.34.0
+findings:
+  - rule: empty-list-item
+    line: 5
+    sha256: d350c9167555752871315d040939826d433283b49b062fa037c36e16b2a05426
+    verdict: correct
+    note: "the recording link was never filled in"
+  - rule: bare-url-mix
+    line: 6
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: empty-section
+    line: 24
+    sha256: 72fabd8d339bf79cd634987065e3730d428df3319b420d581b578996b19bea15
+    verdict: correct
+    note: "a template heading left empty"
+  - rule: bare-url-mix
+    line: 28
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 33
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 34
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 35
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 42
+    sha256: 6a16bd3920476df30b67d4786e917f621530fcae10ba9ad1fb512332fc52baac
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 42
+    sha256: ec6da7416be9b58b983aa182dd03deee7a0f64e2f8d9feb54f3934983bd902e4
+    verdict: unjudged
+  - rule: article-sound
+    line: 52
+    sha256: 2b1498d627076c4aa8b14a59b5a6f988911ce530502e04f1bd278c54af11bea5
+    verdict: correct
+  - rule: contraction-consistency
+    line: 59
+    sha256: d783850829969abde3b776f64f5cb804a28343a716a37b4db6233c08c47d93b0
+    verdict: unjudged
+  - rule: name-variant
+    line: 61
+    sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
+    verdict: correct
+    note: "the conference is spelled two ways in the minutes"
+  - rule: undefined-acronym
+    line: 61
+    sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 62
+    sha256: 76ef35c3978b44a76cb8721d0e2affc5bc7b2e222fb9fb24e3e085b2ea0f8082
+    verdict: correct
+  - rule: undefined-acronym
+    line: 67
+    sha256: 8d2a7a991d91d5221ad819983486d3c251f990344f3ecb84032388c7a1c36dc7
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 70
+    sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 80
+    sha256: 31723f7bfabd6e380e3c17093ef6b70b03dbe17b41ae717f0f9db2584879b756
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 83
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 90
+    sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 93
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 95
+    sha256: 59a0da40c843206a1ef89f95516cbd86de923d573b312244e4806a08c706170f
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 97
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 98
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 99
+    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
+    verdict: unjudged
+  - rule: empty-section
+    line: 101
+    sha256: b8735d0876cfb0662b63e72050c3f5e0fad762433ddab1a7674976eb9985fc89
+    verdict: correct
+    note: "a template heading left empty"
