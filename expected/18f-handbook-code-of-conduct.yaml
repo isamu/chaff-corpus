@@ -1,18 +1,6 @@
 id: 18f-handbook-code-of-conduct
 chaff: 0.34.0
 findings:
-  - rule: contraction-consistency
-    line: 51
-    text: To help colleagues understand the kinds
-    message: "\"we've\" is written differently from the rest of the document"
-    verdict: correct
-    note: the page writes 'we have' three times and 'we’ve' twice
-  - rule: contraction-consistency
-    line: 53
-    text: We've also included steps to take if you
-    message: "\"we've\" is written differently from the rest of the document"
-    verdict: correct
-    note: the page writes 'we have' three times and 'we’ve' twice
   - rule: unknown-word
     line: 98
     text: neuro(a)typicality, physical appearance,

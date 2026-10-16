@@ -24,6 +24,11 @@ findings:
     verdict: correct
   - rule: use-before-definition
     line: 27
+    what: the preamble uses 会社 before 第1条 defines it (株式会社エムケイシステム（以下「会社」という）)
+    verdict: missed
+    note: chaffjs 0.35.0 does not give it; isamu/lab#1262 does
+  - rule: use-before-definition
+    line: 27
     text: 規則は、会社と従業員が相互信頼の上に立ち、従業員の福祉の向上と社業の発展を目的と
     message: 「規則」を、32 行目の定義より前で使っています
     verdict: false-positive
@@ -49,12 +54,6 @@ findings:
     message: 「見込」と書いています（この文書はふつう「見込み」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: 卒業（見込）証明書 is the name of a certificate
-  - rule: dangling-reference
-    line: 67
-    text: 第６条第２項に定める内定通知書の交付時には予想できなかった会社の経営環境の悪化、
-    message: 「第６条第２項」（番地 6.2）はこの文書にありません
-    verdict: false-positive
-    note: "第６条第２項 exists: its 「２．」 starts at column 0 after the ①–⑥ items, unlike the indented 「１．」"
   - rule: max-paragraph-length
     line: 70
     text: 第８条（採用決定時の提出書類）
@@ -392,12 +391,6 @@ findings:
     text: 4時間の勤務を出勤したものとして取り扱う。
     message: 半角の「4」と書いています（この文書はふつう全角の「４」。186 箇所のうち 48 箇所が違う）
     verdict: correct
-  - rule: orthographic-variant
-    line: 225
-    text: 申出の日に休暇を与えることが、事業の正常な運営に支障があるときは、その期日を変更
-    message: 「申出る」と書いています（この文書はふつう「申し出る」と書く語です。8 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the noun 申出 (申出の日) counted as a variant of the verb 申し出る
   - rule: orthographic-variant
     line: 227
     text: うち５日を超える日数について、あらかじめ時期を指定して与えることが出来る。

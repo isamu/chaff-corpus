@@ -1,33 +1,9 @@
 id: govuk-invoicing-taking-payment
 chaff: 0.34.0
 findings:
-  - rule: heading-numbering-mix
-    line: 1
-    text: "# Invoicing and taking payment from cust"
-    message: The heading "Invoicing and taking payment from customers" has no number, while 3 of its siblings do ("1. Overview")
-    verdict: false-positive
-    note: the page title (h1) is read as a sibling of the guide's numbered part headings (1. Overview)
   - rule: contraction-consistency
-    line: 22
-    text: the company name and address of the cust
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 23
-    text: a clear description of what you’re charg
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 32
-    text: If you’re a sole trader, the invoice mus
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 57
-    text: You can use a statutory demand to formal
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
+    line: 35
+    text: an address where any legal documents can
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct
+    note: "'you are' here; the page writes 'you’re' four times (lines 22, 23, 32, 57)"

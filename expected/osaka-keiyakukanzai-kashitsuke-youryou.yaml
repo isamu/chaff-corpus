@@ -1,17 +1,17 @@
 id: osaka-keiyakukanzai-kashitsuke-youryou
 chaff: 0.34.0
 findings:
+  - rule: orthographic-variant
+    line: 13
+    text: 申込は、大阪市行政オンラインシステムにより行ってください。
+    message: 「申込」と書いています（この文書はふつう「申込み」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 入札参加申込 here, 入札参加申込み in the procedure name (line 19); the page writes the noun 申込み (お申込み, 参加申込み)
   - rule: latin-spacing
     line: 52
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 11 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: request-without-deadline
-    line: 73
-    text: ※入札物件は、すべて現状有姿で貸付けますので、お申込み前に現況及び物件の近隣周辺
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: the timing is given in the sentence (before applying), and the application period is stated in the notice
   - rule: heading-echo
     line: 120
     text: 「皆さんの声をお寄せください」一覧

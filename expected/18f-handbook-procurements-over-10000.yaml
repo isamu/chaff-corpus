@@ -41,8 +41,8 @@ findings:
     line: 116
     text: Once your contract is awarded, it’s poss
     message: "\"it's\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
+    verdict: correct
+    note: the page writes 'it is' five times (lines 27, 44, 45, 99, 153) and 'it’s' only here
   - rule: latin-abbreviation-form
     line: 123
     text: ie. New CO or COR)
@@ -53,6 +53,11 @@ findings:
     text: CLIN
     message: '"CLIN" is used without an expansion (9 such acronyms)'
     verdict: correct
+  - rule: title-case-consistency
+    line: 135
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged
   - rule: undefined-acronym
     line: 140
     text: CPARS form and route it to you to evalua

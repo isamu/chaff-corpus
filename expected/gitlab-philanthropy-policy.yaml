@@ -1,3 +1,15 @@
 id: gitlab-philanthropy-policy
 chaff: 0.34.0
-findings: []
+findings:
+  - rule: title-case-consistency
+    line: 10
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+    note: Overview and Purpose in Title Case; the other section headings are sentence case (Who we support, In-kind product donation)
+  - rule: title-case-consistency
+    line: 14
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+    note: Oversight Responsibility in Title Case; the other section headings are sentence case
