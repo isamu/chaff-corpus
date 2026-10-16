@@ -454,3 +454,66 @@
 - id: osaka-kyoiku-tsugaku-tetsuzuki
   match: "06-6208-8181"
   reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: fr-2026-19328-faa-fct-nofo
+  match: "IIJA.Airports@faa.gov"
+  reason: a government office's or foundation's role address, published in the document for the public to write to
+- id: fr-2026-19328-faa-fct-nofo
+  match: "(202) 267-9590"
+  reason: a government office's published phone number, given in the notice as its contact
+- id: rust-council-travel-policy
+  match: "grants@rustfoundation.org"
+  reason: a government office's or foundation's role address, published in the document for the public to write to
+- id: shiki-banner-koukoku-boshu
+  match: "048-473-1110"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-banner-koukoku-boshu
+  match: "048-472-3766"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-banner-koukoku-boshu
+  match: "048-473-1111"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-joho-ryushutsu-chuui
+  match: "048-832-0110"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-joho-ryushutsu-chuui
+  match: "048-473-1111"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-shicho-comment-nobel
+  match: "048-473-1116"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-shicho-comment-nobel
+  match: "048-474-9674"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-shicho-comment-nobel
+  match: "048-473-1111"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-471-0049"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-423-0410"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-711-2222"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-476-4600"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-475-7360"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-474-4462"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-sogyo-shien-keikaku
+  match: "048-473-1111"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-kaikei-nendo-shokuin-boshu
+  match: "048-473-1395"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-kaikei-nendo-shokuin-boshu
+  match: "048-471-7092"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: shiki-kaikei-nendo-shokuin-boshu
+  match: "048-473-1111"
+  reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document

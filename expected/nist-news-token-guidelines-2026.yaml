@@ -1,0 +1,26 @@
+id: nist-news-token-guidelines-2026
+chaff: 0.34.0
+findings:
+  - rule: adverb-overuse
+    line: 11
+    text: safely connected to the .gov website. Sh
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: "the -ly adverbs counted are in the .gov site banner that the conversion kept"
+  - rule: title-case-consistency
+    line: 15
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: false-positive
+    note: "the article title is in Title Case; the other headings are site chrome (banner, Share)"
+  - rule: contraction-consistency
+    line: 27
+    text: Keeping these tokens safe is critical fo
+    message: "\"it's\" is written differently from the rest of the document"
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 29
+    text: The publication, whose full title is Pro
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: "the serial comma is inside a quoted publication title, which keeps the publisher's punctuation"

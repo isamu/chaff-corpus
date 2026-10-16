@@ -1,0 +1,15 @@
+id: shiki-shicho-comment-nobel
+chaff: 0.34.0
+findings:
+  - rule: preamble-length
+    line: 1
+    text: ページの先頭です。 メニューを飛ばして本文へ
+    message: 最初の見出しまでに 3 段落あります（2 段落まで）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
+  - rule: latin-spacing
+    line: 9
+    text: " PDF"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。5 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"

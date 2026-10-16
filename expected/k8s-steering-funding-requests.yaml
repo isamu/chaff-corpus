@@ -1,0 +1,18 @@
+id: k8s-steering-funding-requests
+chaff: 0.34.0
+findings:
+  - rule: title-case-consistency
+    line: 12
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+  - rule: vague-word-density
+    line: 14
+    text: Open a funding request issue using the m
+    message: '"appropriate" and other vague words: 9 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 22
+    text: Please provide links to show the appropr
+    message: '"appropriate" and other vague words: 9 per 1000 words (limit 4)'
+    verdict: unjudged

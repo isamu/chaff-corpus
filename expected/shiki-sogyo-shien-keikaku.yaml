@@ -1,0 +1,122 @@
+id: shiki-sogyo-shien-keikaku
+chaff: 0.34.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ページの先頭です。 メニューを飛ばして本文へ
+    message: 「ページの先頭です。」の節に数値もコードもリンクもありません（そういう節が 5/15）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
+  - rule: latin-spacing
+    line: 9
+    text: " PDF"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose"
+  - rule: max-kanji-continuous
+    line: 17
+    text: 現在地 トップページ  >  分類でさがす  >  しごと・産業  >  産業振
+    message: 「志木市創業支援等事業計画」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose; the run is also the plan's proper name"
+  - rule: max-kanji-continuous
+    line: 19
+    text: 現在地 トップページ  >  分類でさがす  >  市政情報  >  市政運営
+    message: 「志木市創業支援等事業計画」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose; the run is also the plan's proper name"
+  - rule: max-kanji-continuous
+    line: 31
+    text: 創業マインドの掘り起こしや啓発をより推進するため、市、商工会、一般社団法人地域連
+    message: 「公共財団法人埼玉県産業振興公社」は漢字が 15 字続いています（10 字まで）
+    verdict: false-positive
+    note: "a run of kanji that is one organisation's legal name, which cannot be split"
+  - rule: max-sentence-length
+    line: 31
+    text: 創業マインドの掘り起こしや啓発をより推進するため、市、商工会、一般社団法人地域連
+    message: この文は 156 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 33
+    text: 志木市創業支援等事業計画の概要 [PDFファイル／269KB]
+    message: 「志木市創業支援等事業計画」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "the run of kanji is the plan's proper name"
+  - rule: ngram-repetition
+    line: 37
+    text: 特定創業支援等事業とは、1か月以上にわたる4回以上の継続的な支援で、創業に必要な
+    message: 「創業に必要な4つ」が 7 回出てきます（5 回まで）
+    verdict: correct
+    note: "the same certification sentence is repeated under seven items; one statement above the list would do"
+  - rule: bracket-width-consistency
+    line: 63
+    text: (電話：048-711-2222)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。19 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 68
+    text: (電話：048-711-2222)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。19 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 85
+    text: ""
+    message: 「申請方法」の節に数値もコードもリンクもありません（そういう節が 5/15）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 93
+    text: 会社設立時の登録免許税の軽減措置
+    message: この文は 151 文字あります（140 文字まで）
+    verdict: false-positive
+    note: "label lines with no 。 (a benefit's name, then its description) are joined with the following lines into one 'sentence'"
+  - rule: topic-predicate-distance
+    line: 93
+    text: 会社設立時の登録免許税の軽減措置
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: false-positive
+    note: "label lines with no 。 are joined with the following lines into one 'sentence', so the topic and predicate look far apart"
+  - rule: max-kanji-continuous
+    line: 107
+    text: 小規模事業者持続化補助金＜創業型＞
+    message: 「小規模事業者持続化補助金」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "the run of kanji is an official subsidy's name"
+  - rule: no-mixed-desumasu
+    line: 107
+    text: 小規模事業者持続化補助金＜創業型＞
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: correct
+    note: "the sentence that ends on the next line (〜対象になる。) is in plain form in a です/ます page"
+  - rule: no-doubled-joshi
+    line: 108
+    text: の小規模事業者の販路開拓等の取組を支援する小規模事業者持続化補助金＜創業型＞の申
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 109
+    text: 小規模事業者持続化補助金の詳細につきましては、中小企業庁のホームページ＜外部リン
+    message: 「小規模事業者持続化補助金」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "the run of kanji is an official subsidy's name"
+  - rule: request-without-deadline
+    line: 114
+    text: 特定創業支援事業により支援を受けたことの証明に関する注意事項 [PDFファイル／
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: "a link label to an attached PDF read as a request; the request on the next line applies only to applicants and needs no deadline"
+  - rule: concrete-evidence-density
+    line: 117
+    text: ""
+    message: 「その他の支援等創業支援関連リンク」の節に数値もコードもリンクもありません（そういう節が 5/15）
+    verdict: false-positive
+    note: "a section of links whose addresses the conversion dropped (＜外部リンク＞ labels); it is a link list"
+  - rule: concrete-evidence-density
+    line: 128
+    text: ""
+    message: 「概要」の節に数値もコードもリンクもありません（そういう節が 5/15）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 134
+    text: ""
+    message: 「特徴」の節に数値もコードもリンクもありません（そういう節が 5/15）
+    verdict: unjudged

@@ -1,0 +1,32 @@
+id: soumu-hokuriku-260mhz-kentokai-4
+chaff: 0.34.0
+findings:
+  - rule: proper-noun-density
+    line: 2
+    sha256: 25fe2f93168980034ea561221ee537165e5e97115fbc9b837a582c15fdf90cd2
+    verdict: false-positive
+    note: "site navigation (language menu) that the html conversion kept"
+  - rule: bracket-width-consistency
+    line: 37
+    sha256: bafb9adac1d93116987ecf122f650b7655103f4aa5f042d1560d8a0403de60f8
+    verdict: false-positive
+    note: "a half-width (1) item marker referred to in prose, matching the page's enumerators"
+  - rule: no-mixed-desumasu
+    line: 56
+    sha256: bd912226841f888834a4705e5f53f7f3033f39d9052e8e66d42e5b9eb06e3141
+    verdict: false-positive
+    note: "an attachment list entry (document name and file size) read as a plain-form sentence"
+  - rule: no-mixed-desumasu
+    line: 58
+    sha256: 19aa9e5c7a51c662ca20bf2fc82dd77a4bed4eae445bc38920a8dfc1025d773c
+    verdict: false-positive
+    note: "an attachment list entry (document name and file size) read as a plain-form sentence"
+  - rule: no-mixed-desumasu
+    line: 59
+    sha256: 95d84ea86898a46dc649b96316bc9a65c63bec017ebbbd2c7fe608e0c1dd392e
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 63
+    sha256: 319a4900554f2ea23c52511820119d479e0eca350560b3d0cf48408f113fec56
+    verdict: false-positive
+    note: "a half-width item reference (4(2)) matching the page's enumerators"
