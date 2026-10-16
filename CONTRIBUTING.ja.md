@@ -82,6 +82,7 @@ findings:
    Markdown に変換するのはよく、書き換えはしません。2 MiB 以下にします。
 5. **`.yaml` を書く**（README 参照）。出典の URL と取得日、ライセンス名とそれが書かれている URL、`license.note` に
    ライセンスが求める出典表示。`sha256` は `shasum -a 256 <file>`（または `sha256sum`）の値です。
+   Hugging Face のデータセットの1件なら、`source.format` ではなく `source.hf` を書きます（[README](README.ja.md#hugging-face-のデータセットの1件-sourcehf) 参照）。
 6. **実行する。** `yarn validate`、続けて `yarn run-corpus --update --only <id>`。指摘がすべて `unjudged` として
    `expected/<id>.yaml` に書かれます。
 7. **判定できるものを判定し**（下記）、PR を出します。テンプレートに上の確認項目があります。

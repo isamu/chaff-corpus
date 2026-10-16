@@ -85,6 +85,8 @@ findings:
    source has it; converting HTML to Markdown is fine, rewriting is not. Under 2 MiB.
 5. **Fill in the `.yaml`** (see the README): source URL and fetch date, licence name, the URL where it is stated, and in
    `license.note` the attribution the licence asks for. `sha256` is `shasum -a 256 <file>` (or `sha256sum`).
+   For a record of a Hugging Face dataset, add `source.hf` instead of `source.format`: see
+   [the README](README.md#a-record-of-a-hugging-face-dataset-sourcehf).
 6. **Run** `yarn validate`, then `yarn run-corpus --update --only <id>`. This writes `expected/<id>.yaml` with every
    finding as `unjudged`.
 7. **Judge what you can** (below), and open a pull request. The template asks for the checks above.

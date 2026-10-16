@@ -51,6 +51,46 @@ A document whose licence does not allow redistribution has only its `.yaml`. At 
 that produced the judged text from it (isamu/lab's names: `wikitext`, `html`, `google-patents`, `kokkai`); the run
 converts the fetched source the same way before comparing the sha256.
 
+### A record of a Hugging Face dataset: `source.hf`
+
+When the text is one record of a dataset on Hugging Face, `source.hf` says which record, and `source.url` is where a
+reader sees the document (the filing, the dataset page). `source.hf` cannot be set together with `source.format`.
+
+```yaml
+source:
+  url: https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SXUQ,,
+  fetched: 2026-10-15
+  hf:
+    dataset: numad/yuho-text-2024                         # <owner>/<name>
+    config: default
+    split: train
+    offset: 98                                            # the row in the split, or the line in file; from 0
+    field: text                                           # the field that holds the text
+    revision: 2993206922ead839ce003e2faa65cd5d2ff07607    # the dataset's 40-digit commit sha when the text was taken
+    file: yuho-202402.jsonl                               # optional: a JSONL data file of the dataset at revision
+```
+
+| field | |
+| --- | --- |
+| `dataset`, `config`, `split` | which dataset and which of its splits; all required |
+| `offset` | a whole number from 0: the row in the split, or, with `file`, the line in that file |
+| `field` | the record's field that is the text; with `render`, the field the renderer reads |
+| `revision` | required: the commit sha of the dataset the text was taken at |
+| `file` | optional: a `.jsonl` path in the dataset. The record is then read from `https://huggingface.co/datasets/<dataset>/resolve/<revision>/<file>`, so it is pinned to `revision` |
+| `render` | optional: render the whole record instead of taking `field` as it is. The one renderer is `edinet-bench` (a SakanaAI/EDINET-Bench record as Markdown: title, the sections in `field`, then the summary and the financial statements as tables) |
+| `omit` | optional, only with `render`: the parts the renderer leaves out, such as sections that name people |
+
+Without `file`, the record is read from the datasets-server rows API
+(`https://datasets-server.huggingface.co/rows?dataset=…&config=…&split=…&offset=…&length=1`), which serves only the
+dataset's latest commit. `revision` is recorded but cannot be enforced, so give `file` whenever the dataset has JSONL
+files. A data file whose `Content-Length` is over 64 MiB is not read.
+
+The record is fetched only when the document has no committed text (`redistribute: false`), at run time or by
+`yarn judge`, and is used only when its sha256 matches. When it does not match, "Not run" gives the reason: the record
+at that file and line, or at that row (with a note that the rows API serves the latest commit, not `revision`). For a
+document whose text is committed, `source.hf` records where it came from: `yarn validate` checks its fields, and the
+sha256 is of the committed file.
+
 ### `expected/<id>.yaml` and verdicts
 
 ```yaml
