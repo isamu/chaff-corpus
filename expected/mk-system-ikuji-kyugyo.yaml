@@ -2,17 +2,10 @@ id: mk-system-ikuji-kyugyo
 chaff: 0.34.0
 findings:
   - rule: orthographic-variant
-    line: 21
-    text: 申し出るものとする。
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者); 公用文 writes the verb with okurigana and the noun without
-  - rule: orthographic-variant
     line: 22
-    text: 申し出期限とする。
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: correct
-    note: 申し出期限 is a noun compound; the document writes the noun 申出 elsewhere
+    what: 申し出期限 writes the noun 申し出 in a compound, where the document writes the noun 申出 (申出書, 申出者, 申出の撤回)
+    verdict: missed
+    note: correct in chaffjs 0.34.0, lost in 0.35.0 (stem form before a noun read as the verb); isamu/lab#1285 brings it back
   - rule: bracket-width-consistency
     line: 25
     text: (申し出の撤回等)
@@ -24,16 +17,16 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。40 箇所のうち 4 箇所が違う）
     verdict: correct
   - rule: orthographic-variant
+    line: 25
+    text: 申し出の撤回等)
+    message: 「申し出」と書いています（この文書はふつう「申出」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: the noun 申し出 where the document writes the noun 申出 (申出書, 申出者, 申出の撤回)
+  - rule: orthographic-variant
     line: 34
     text: および延長を申し出ることができる。当会社は、育児休業変更申出書が提出されたときに
     message: 「および」と書いています（この文書はふつう「及び」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: orthographic-variant
-    line: 34
-    text: 申し出ることができる。当会社は、育児休業変更申出書が提出されたときには、速やかに
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)
   - rule: fullwidth-alnum-consistency
     line: 38
     text: ２８日）を限度として休業することができる。
@@ -54,21 +47,3 @@ findings:
     text: )の被保険者負担分は所定の手続きにより免除される。
     message: 括弧を「)」と書いています（この文書はふつう「）」。40 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: orthographic-variant
-    line: 58
-    text: 申し出た場合、所定外労働の免除をさせることはない。
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)
-  - rule: orthographic-variant
-    line: 59
-    text: 申し出た場合、事業の正常な運営に支障がある場合を除き、１ヶ月について２４時間、１
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)
-  - rule: orthographic-variant
-    line: 62
-    text: 申し出ることにより、就業規則に定める所定労働時間を６時間まで短縮することができる
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。21 箇所のうち 6 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出書, 申出者)

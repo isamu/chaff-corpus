@@ -17,17 +17,11 @@ findings:
     message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: orthographic-variant
-    line: 19
-    text: 申し出た場合、その月の始まる2週間前までに承認または不承認を決定し、従業員に通知
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the verb 申し出る counted against the noun 申出 (申出日, 申出); 公用文 writes the verb with okurigana and the noun without
-  - rule: dangling-reference
-    line: 20
-    text: 第3条第3項の規定により承認を撤回する場合は、当該選択公休日の前日までに通知する
-    message: 「第3条第3項」（番地 3.3）はこの文書にありません
-    verdict: false-positive
-    note: "第3条 has a paragraph 3 (the list item 3. right under the ### 第3条 heading, no blank line between)"
+    line: 18
+    text: 申し出をしなければならない。
+    message: 「申し出」と書いています（この文書はふつう「申出」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: the noun 申し出 where the document writes the noun 申出 (前項の申出, その申出, 利用の申出)
   - rule: yori-as-from
     line: 26
     text: より施行する。

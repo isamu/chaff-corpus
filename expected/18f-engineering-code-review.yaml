@@ -11,6 +11,12 @@ findings:
     text: Discussing these expectations explicitly
     message: '"on the same page" is a cliché'
     verdict: correct
+  - rule: contraction-consistency
+    line: 54
+    text: Are there any automated tools that you a
+    message: "\"are not\" is written \"aren't\" elsewhere in the document"
+    verdict: correct
+    note: "'are not' here; the page writes 'aren't' twice"
   - rule: cliche
     line: 69
     text: For a code review to be successful, we a
@@ -21,6 +27,12 @@ findings:
     text: There is often more than one way to appr
     message: '"There is often more than one way to approach a solution." opens with a noun phrase; the other items in this list open with a verb (1 of 13)'
     verdict: correct
+  - rule: contraction-consistency
+    line: 109
+    text: Do not squash until the branch is ready
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: correct
+    note: "'Do not' here; the page writes 'don't' everywhere else"
   - rule: list-item-form-mix
     line: 152
     text: Passes all existing automated tests
