@@ -1,0 +1,25 @@
+id: ocaml-jp-code-of-conduct
+chaff: 0.35.0
+findings:
+  - rule: orthographic-variant
+    line: 4
+    text: すべての参加者が本会から歓迎され、楽しんでいただくことを目指しています。
+    message: 「すべて」と書いています（この文書はふつう「全て」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 5
+    text: 皆様は、本行動規範に則って他の参加者に対して敬意と礼儀をもって参加いただくように
+    message: 「皆様」と書いています（この文書はふつう「皆さま」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: translationese-density
+    line: 8
+    text: あなたの何気ない発言や行動で悲しむ人がいるかもしれません。注意深く、優しく振る舞
+    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 3 個あります（1 個まで）
+    verdict: false-positive
+    note: a code of conduct speaks to the participant directly; 「あなた」 is the natural register here, not translationese
+  - rule: translationese-density
+    line: 11
+    text: お知らせ頂いた内容は法的な情報開示の必要性がある場合を除いて、あなたの同意がない
+    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 3 個あります（1 個まで）
+    verdict: false-positive
+    note: a code of conduct speaks to the participant directly; 「あなた」 is the natural register here, not translationese

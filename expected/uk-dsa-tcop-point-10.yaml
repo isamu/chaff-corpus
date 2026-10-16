@@ -1,0 +1,58 @@
+id: uk-dsa-tcop-point-10
+chaff: 0.35.0
+findings:
+  - rule: heading-end-punctuation-mix
+    line: 19
+    text: "## Use data more effectively by improvin"
+    message: The heading "Use data more effectively by improving your technology, infrastructure and processes." ends with ".", while 4 other headings end bare ("How making better use of data use will help your programme")
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 81
+    text: which considers the total cost of a tech
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 89
+    text: Highlight technical debt and data proces
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 93
+    text: When you are using a supplier, you shoul
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 98
+    text: If you are agreeing a contract of over £
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 102
+    text: Where possible and appropriate, you shou
+    message: '"where possible" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 118
+    text: keep back up copies of data if appropria
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 127
+    text: Where possible you should [work in the o
+    message: '"where possible" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 137
+    text: using [Open Standards](https://www.gov.u
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 147
+    text: You should only keep data for as long as
+    message: '"as necessary" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 165
+    text: " - better use of data](https://www.gov.u"
+    message: '"-" stands in for a dash'
+    verdict: unjudged

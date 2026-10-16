@@ -1,0 +1,43 @@
+id: gc-open-source-definitions
+chaff: 0.35.0
+findings:
+  - rule: wordy-phrase
+    line: 12
+    text: In order for source code to potentially
+    message: '"in order for" can be said in fewer words'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 24
+    text: Information about testing procedures, te
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: wordy-phrase
+    line: 54
+    text: The license may restrict source-code fro
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 86
+    text: A Business Requirement is defined as a s
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 90
+    text: A Concept Case means the creation of a c
+    message: This sentence runs 62 words (limit 50)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 90
+    text: "  A concept case is an examination of a"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 21)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 90
+    text: "  As such, it must take into account all"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 21)
+    verdict: correct
+  - rule: wordy-phrase
+    line: 94
+    text: A Functional Requirement is defined as a
+    message: '"in order to" can be said in fewer words'
+    verdict: correct

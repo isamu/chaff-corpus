@@ -1,0 +1,49 @@
+id: uk-dsa-reference-architecture
+chaff: 0.35.0
+findings:
+  - rule: empty-section
+    line: 13
+    text: "## The most recent version of this docum"
+    message: Nothing under the heading "The most recent version of this document is published on GOV.UK"
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 17
+    text: This guidance is a reference architectur
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: false-positive
+    note: "'It' continuing the same subject as the sentence before is ordinary cohesion, not a run of demonstrative openers"
+  - rule: vague-word-density
+    line: 46
+    text: let external users access the system whe
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 128
+    text: users outside of government are able to
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 139
+    text: Where possible, you should make use of s
+    message: '"where possible" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 145
+    text: Where appropriate, all your code should
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 159
+    text: For example, the database storing the in
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: vague-word-density
+    line: 161
+    text: Your organisation should follow a model
+    message: '"as soon as possible" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 163
+    text: This model should create a record of all
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: unjudged

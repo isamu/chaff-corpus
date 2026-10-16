@@ -1,0 +1,259 @@
+id: tokyo-oss-publication-guideline
+chaff: 0.35.0
+findings:
+  - rule: comparative-without-baseline
+    line: 14
+    text: より良い社会を実現する好機ととらえることもできる。
+    message: 「より良い」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: 「より良い」 here is the set phrase for 'better' (a better society, make it better), not a comparison that lacks a baseline
+  - rule: demonstrative-opener-run
+    line: 14
+    text: こうした、社会の大きな変化、変革は、より良い社会を実現する好機ととらえることもで
+    message: 「こうした」など、指示語で始まる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 15
+    text: (デジタル・トランスフォーメーション)の推進を梃子として、都政のQOSを向上させ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 15
+    text: )の推進を梃子として、都政のQOSを向上させることで、都民のQOL（クオリティ・
+    message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 16
+    text: NPOなど多様なプレイヤーとのコラボレーションにより社会課題を解決し、明るい未来
+    message: 「NPO」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: NPO is an everyday loanword in Japanese, not jargon that needs an expansion
+  - rule: orthographic-variant
+    line: 17
+    text: 行くこととしている。（OSSとは、機械ではなく人間にとって解釈や編集がしやすい形
+    message: 「行く」と書いています（この文書はふつう「いく」と書く語です。30 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: bracket-nesting
+    line: 24
+    text: 都は前述したOSS化がもたらす社会的効果を最大限活用していくことを目指し、 都が
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 26
+    text: ”として公開するものについては、以下の要素を持つものとする。
+    message: 「”」に対応する開きがありません
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 26
+    text: ”東京都OSS”として公開するものについては、以下の要素を持つものとする。
+    message: 「”」に対応する開きがありません
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 27
+    text: )のオープンソースの定義（The Open Source Definition）
+    message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 29
+    text: "**(1)　再配布の自由**"
+    message: この段落は 15 文あります（12 文まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 35
+    text: (integrity)**
+    message: 括弧を「(」と書いています（この文書はふつう「（」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 55
+    text: よくデジタル化していくうえで、簡易なソフトウェアについては、ローコード・ツールや
+    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 66
+    text: １の3に記載されている“社会的効果及びOSSとして公開することの価値の有無”を検
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 66
+    text: もってシステムを開発し運用する各局（以下「OSS所管局」という。）は、開発案件発
+    message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 「目的をもって」 is a different sense from 「持つ」 (possess); kana is the standard spelling for it
+  - rule: bracket-width-consistency
+    line: 72
+    text: (「第５　公開時のライセンス」参照）
+    message: 括弧を「(」と書いています（この文書はふつう「（」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 72
+    text: なお、都が公開するOSSは、多くの人々にその利益を享受してもらうことのできる、広
+    message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 72
+    text: ）
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+  - rule: comparative-without-baseline
+    line: 77
+    text: より良いものにするため、OSS公開後、運用フェーズにおいてOSS化したことの意義
+    message: 「より良い」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: 「より良い」 here is the set phrase for 'better' (a better society, make it better), not a comparison that lacks a baseline
+  - rule: unbalanced-bracket
+    line: 80
+    text: ”として公開する場合は、そのOSSは以下のとおり管理する。
+    message: 「”」に対応する開きがありません
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 80
+    text: ”東京都OSS”として公開する場合は、そのOSSは以下のとおり管理する。
+    message: 「”」に対応する開きがありません
+    verdict: correct
+  - rule: table-header-variant
+    line: 97
+    text: '<div style="text-align: center;">役割 </di'
+    message: '表の見出しを「<div style="text-align: center;">役割 </div>」と書いています（この文書のほかの表は「<div style="text-align: center;">役割</div>」。4 箇所のうち 1 箇所が違う）'
+    verdict: false-positive
+    note: the header cells differ only by a space inside inline HTML; the rendered headers are the same
+  - rule: table-header-variant
+    line: 97
+    text: '<div style="text-align: center;">組織</div'
+    message: '表の見出しを「<div style="text-align: center;">組織</div>」と書いています（この文書のほかの表は「<div style="text-align: center;"> 組織</div>」。4 箇所のうち 1 箇所が違う）'
+    verdict: false-positive
+    note: the header cells differ only by a space inside inline HTML; the rendered headers are the same
+  - rule: image-alt-text
+    line: 115
+    text: "![](https://i.imgur.com/RL5RkVg.jpg)"
+    message: 画像「![](https://i.imgur.com/RL5RkVg.jpg)」に代替テキストがありません
+    verdict: correct
+  - rule: image-alt-text
+    line: 132
+    text: "![](https://i.imgur.com/z2aN0l7.jpg)"
+    message: 画像「![](https://i.imgur.com/z2aN0l7.jpg)」に代替テキストがありません
+    verdict: correct
+  - rule: image-alt-text
+    line: 150
+    text: "![](https://i.imgur.com/pTKTcYF.png)"
+    message: 画像「![](https://i.imgur.com/pTKTcYF.png)」に代替テキストがありません
+    verdict: correct
+  - rule: image-alt-text
+    line: 190
+    text: "![](https://i.imgur.com/HRujf0P.jpg)"
+    message: 画像「![](https://i.imgur.com/HRujf0P.jpg)」に代替テキストがありません
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 205
+    text: １年間を保守期間として定めるものとし、本保守期間においては改善（脆弱性対応、機能
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 206
+    text: １年経過後、1年毎に、OSS所管局において延長するか否かの判断を行うものとする。
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 208
+    text: ５　OSS開発保守案件の終了</b>
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: image-alt-text
+    line: 212
+    text: "![](https://i.imgur.com/OpDDvn8.jpg)"
+    message: 画像「![](https://i.imgur.com/OpDDvn8.jpg)」に代替テキストがありません
+    verdict: correct
+  - rule: undefined-acronym
+    line: 249
+    text: MIT Licenseの形態を取った。ただし、コピーレフト型のライセンスと互換性
+    message: 「MIT」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: part of a licence's proper name (MIT License)
+  - rule: fullwidth-alnum-consistency
+    line: 251
+    text: ３つの型式に分類すると下記の表となる。
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: vague-figure-reference
+    line: 251
+    text: 下記の表となる。
+    message: 「下記の表」ではなく、番号で指してください（この文書は表に番号を付けています）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 268
+    text: MPLライセンスへと変更した。準コピーレフトのライセンスを選択することで、企業が
+    message: 「MPL」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 282
+    text: １つのライセンスでは、OSS化の趣旨や運用の際の実態と適合できない場合には、複数
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。30 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 283
+    text: GPLと不整合となるライセンスを選定した際に、GPLを用いる関連ソースコードとの
+    message: 「GPL」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: image-alt-text
+    line: 294
+    text: "![](https://i.imgur.com/qqLEMet.png)"
+    message: 画像「![](https://i.imgur.com/qqLEMet.png)」に代替テキストがありません
+    verdict: correct
+  - rule: image-alt-text
+    line: 302
+    text: "![](https://i.imgur.com/GNZKtiZ.jpg)"
+    message: 画像「![](https://i.imgur.com/GNZKtiZ.jpg)」に代替テキストがありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 312
+    text: 上では、セキュリティやコンプライアンス、事業内容やサービス内容に対して留意する必
+    message: 「上」と書いています（この文書はふつう「うえ」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 312
+    text: README”ファイルに、以下の事項を参考に必要事項を明記するものとする。
+    message: 「README」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: README is a file name, not an acronym
+  - rule: orthographic-variant
+    line: 313
+    text: 上、事前に各局の法務担当と連携のうえ、確定していくようにすること。
+    message: 「上」と書いています（この文書はふつう「うえ」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 317
+    text: )**
+    message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 319
+    text: GDPR等）が含まれる場合は、利用者に責任があるものとし、都は一切の責任を負わな
+    message: 「GDPR」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 320
+    text: 又は利用不可となる可能性がありますので、あらかじめご了承願います。
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: table-header-variant
+    line: 329
+    text: '<div style="text-align: center;"> 意味</di'
+    message: '表の見出しを「<div style="text-align: center;"> 意味</div>」と書いています（この文書のほかの表は「<div style="text-align: center;">意味</div>」。2 箇所のうち 1 箇所が違う）'
+    verdict: false-positive
+    note: the header cells differ only by a space inside inline HTML; the rendered headers are the same
+  - rule: table-header-variant
+    line: 329
+    text: '<div style="text-align: center;"> 用語</di'
+    message: '表の見出しを「<div style="text-align: center;"> 用語</div>」と書いています（この文書のほかの表は「<div style="text-align: center;">用語</div>」。2 箇所のうち 1 箇所が違う）'
+    verdict: false-positive
+    note: the header cells differ only by a space inside inline HTML; the rendered headers are the same
+  - rule: orthographic-variant
+    line: 331
+    text: 上で、その提供理念等を明確にし、参加者や貢献者に対して期待する振る舞い等を定めた
+    message: 「上」と書いています（この文書はふつう「うえ」と書く語です。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 339
+    text: あわせて、都として、他自治体等が公開するOSSを利活用するという観点での必要なル
+    message: 「あわせる」と書いています（この文書はふつう「合わせる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the conjunction あわせて (併せて, 'in addition') is a different word from 合わせる

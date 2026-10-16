@@ -1,0 +1,13 @@
+id: govuk-publishing-ask-exemption
+chaff: 0.35.0
+findings:
+  - rule: hyphen-as-dash
+    line: 49
+    text: " - for example, being assessed against t"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 62
+    text: If you already created a website before
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct

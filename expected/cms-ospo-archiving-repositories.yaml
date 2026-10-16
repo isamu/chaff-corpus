@@ -1,0 +1,58 @@
+id: cms-ospo-archiving-repositories
+chaff: 0.35.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 17
+    text: When a repository is archived, we conver
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 19
+    text: Archival of a repository is not a failur
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 51
+    text: "* Number of Forks"
+    message: This list uses the bullet "*", while 7 lists at the same depth use "-"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 72
+    text: OSPO created a GitHub Action to scan you
+    message: '"OSPO" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 110
+    text: CMS OSPO created the archival-identifier
+    message: '"CMS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 120
+    text: "[here](https://github.com/DSACMS/repo-su"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 139
+    text: README that the project has been depreca
+    message: '"README" is used without an expansion (4 such acronyms)'
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 176
+    text: "[ ] If distributed via package managers"
+    message: '"[ ] If distributed via package managers (e.g., npm, PyPI, RubyGems): update with a deprecation warning that clearly states that the project is no longer being maintained or updated." is a sentence; the other items in this list are phrases (1 of 3)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 221
+    text: "#### CMSgov"
+    message: Heading "CMSgov" goes from level 2 to level 4 (expected 3)
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 232
+    text: "* [Practitioner Guide: Getting Started w"
+    message: This list uses the bullet "*", while 11 lists at the same depth use "-"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 232
+    text: CHAOSS](https://chaoss.community/practit
+    message: '"CHAOSS" is used without an expansion (4 such acronyms)'
+    verdict: unjudged

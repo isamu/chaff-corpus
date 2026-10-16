@@ -1,0 +1,89 @@
+id: miskiyaku-terms-template
+chaff: 0.35.0
+findings:
+  - rule: orthographic-variant
+    line: 11
+    text: 及び内容を問わず本規約の一部を構成するものとします。
+    message: 「及び」と書いています（この文書はふつう「および」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 27
+    text: 並びに特定の宗教団体の活動を目的として申請した場合
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: requirement-smell
+    line: 113
+    text: 等を消去し、ユーザーに対して本サービスの全部もしくは一部の利用を制限、またユーザ
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: orthographic-variant
+    line: 131
+    text: できるものとします。
+    message: 「できる」と書いています（この文書はふつう「出来る」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 137
+    text: 事が出来るものとします。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。16 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: requirement-smell
+    line: 137
+    text: などの必要な知的財産権を有するか、または必要な権利者の許諾を得た文章、メディアフ
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: connective-hierarchy
+    line: 139
+    text: 並びにその他既存の権利者に留保されるものとします。但し管理者は本サービスを利用し
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 139
+    text: 並びに本サービスの周知宣伝等に必要な範囲で利用できるものとし、ユーザーは当該利用
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 139
+    text: できるものとし、ユーザーは当該利用に必要な範囲に限り著作者人格権を行使しないもの
+    message: 「できる」と書いています（この文書はふつう「出来る」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: requirement-smell
+    line: 139
+    text: 等について本サービスの改良、品質向上、不備の是正、管理行為、並びに本サービスの周
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: requirement-smell
+    line: 139
+    text: 等の著作権は当該ユーザー並びにその他既存の権利者に留保されるものとします。但し管
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: requirement-smell
+    line: 141
+    text: 等をしてはならないものとします。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: orthographic-variant
+    line: 146
+    text: 事を明示、黙示的に保証しません。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。16 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: obligation-without-deadline
+    line: 164
+    text: 通知します。
+    message: 「通知」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
+    verdict: false-positive
+    note: 「事前に」 in the same sentence sets when the notice is due
+  - rule: bracket-width-consistency
+    line: 200
+    text: (必ず連絡がつく情報を記載)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。24 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 200
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。24 箇所のうち 2 箇所が違う）
+    verdict: correct

@@ -1,0 +1,41 @@
+id: dwango-performance-handbook-measure
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 27
+    text: IE/Edge/Firefox/Chrome/Safari
+    message: 「IE」が説明なしで使われています（説明のない略語 4 個）
+    verdict: false-positive
+    note: IE is the common name of a browser, listed with other browser names
+  - rule: undefined-acronym
+    line: 33
+    text: JSデバッグ術 - Mercari Engineering Blog](http
+    message: 「JS」が説明なしで使われています（説明のない略語 4 個）
+    verdict: false-positive
+    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
+  - rule: undefined-acronym
+    line: 42
+    text: VMのWindowsでは再現しないが、実機では再現するといった違いなどが発生しま
+    message: 「VM」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 57
+    text: MDN](https://developer.mozilla.org/en-US
+    message: 「MDN」が説明なしで使われています（説明のない略語 4 個）
+    verdict: false-positive
+    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
+  - rule: ra-nuki
+    line: 161
+    text: 見れます。
+    message: 「見れ」は「ら」の抜けた形です
+    verdict: correct
+  - rule: image-file-name-alt
+    line: 164
+    text: "![timeline.png](img/timeline.png)"
+    message: 画像の代替テキスト「timeline.png」はファイルの名前です
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 173
+    text: 大げさな仕組み化をしなければ既存の機能を乗っ取ったりしてログを得ることはできるは
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: correct

@@ -1,0 +1,117 @@
+id: kubernetes-community-governance
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: CLA, below.
+    message: '"CLA" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 8
+    text: SIG governance, below.
+    message: '"SIG" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: expanded at line 42 as 'Special Interest Groups, or SIGs' (the expansion wraps across lines)
+  - rule: nonstandard-word
+    line: 32
+    text: is comprised of the following types of s
+    message: '"is comprised of" is nonstandard in formal writing; write "comprises"'
+    verdict: correct
+  - rule: nonstandard-word
+    line: 43
+    text: is comprised of members from multiple
+    message: '"is comprised of" is nonstandard in formal writing; write "comprises"'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 59
+    text: PM, Contributor Experience
+    message: '"PM" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 67
+    text: Each SIG must have a charter that specif
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+  - rule: article-sound
+    line: 77
+    text: a SIG should stay local within that SIG.
+    message: '"a SIG" takes "an" before that sound'
+    verdict: false-positive
+    note: SIG is read as a word ('sig'), so 'a SIG' is right
+  - rule: quote-style-consistency
+    line: 97
+    text: "’s technical leaders: responsible for vi"
+    message: The quote mark ’ here, where the document usually writes ' (2 of 4)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 102
+    text: CNI, etc.), Service (incl. kube-proxy),
+    message: '"CNI" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: which-that-consistency
+    line: 127
+    text: which operate in the open and anyone can
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 130
+    text: "  Membership of a committee is decided b"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 18)
+    verdict: correct
+  - rule: article-sound
+    line: 131
+    text: a SIG, a
+    message: '"a SIG" takes "an" before that sound'
+    verdict: false-positive
+    note: SIG is read as a word ('sig'), so 'a SIG' is right
+  - rule: title-case-consistency
+    line: 135
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: title-case-consistency
+    line: 143
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 145
+    text: ’t require expensive coordination with o
+    message: The quote mark ’ here, where the document usually writes ' (2 of 4)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 147
+    text: "  In this case, it is expected that the"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 18)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 149
+    text: "  Cross-SIG"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 18)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 151
+    text: "  This is intentional to encourage chang"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 18)
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 166
+    text: The [KEP process] facilitates definition
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+  - rule: article-sound
+    line: 168
+    text: a SIG.
+    message: '"a SIG" takes "an" before that sound'
+    verdict: false-positive
+    note: SIG is read as a word ('sig'), so 'a SIG' is right
+  - rule: undefined-acronym
+    line: 178
+    text: CNCF CLA, as described [here](CLA.md).
+    message: '"CNCF" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: vague-link-text
+    line: 178
+    text: "[here](CLA.md)."
+    message: The link text "here" does not say where it goes
+    verdict: correct
