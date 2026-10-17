@@ -1,0 +1,18 @@
+id: wikimedia-incident-2024-07-21-s4-x1-write-overload
+chaff: 0.35.0
+findings:
+  - rule: hyphen-as-dash
+    line: 29
+    sha256: f08a1e87e421b1946eb36a69b8d886c72ea2821a0785004946872e57331f4c37
+    verdict: false-positive
+    note: a separator inside alert output copied verbatim from a bot, not a dash in prose
+  - rule: name-variant
+    line: 29
+    sha256: 859bbd771497ed4a5d55e4a8c4c7194075f6fd6f36b63466aac717a9cf74c9cd
+    verdict: false-positive
+    note: two different service identifiers, not variants of one name
+  - rule: empty-section
+    line: 37
+    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
+    verdict: false-positive
+    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty

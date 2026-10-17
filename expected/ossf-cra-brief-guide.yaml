@@ -1,0 +1,44 @@
+id: ossf-cra-brief-guide
+chaff: 0.35.0
+findings:
+  - rule: max-sentence-length
+    line: 11
+    text: In short, if you are contributing to oth
+    message: This sentence runs 42 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: "Examples of such typical activities are:"
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 35
+    text: If you’re putting a PDE on the market in
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 39
+    text: Manufacturers may integrate OSS componen
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 39
+    text: "  These manufacturer requirements may ge"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 27)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: Stewards have fewer obligations than man
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 43
+    text: FOSDEM 2024, time 18:10](https://fosdem.
+    message: '"FOSDEM" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: FOSDEM is the proper name of a conference, inside a link to its talk page
+  - rule: max-paragraph-length
+    line: 51
+    text: The CRA is part of a broader set of prod
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct

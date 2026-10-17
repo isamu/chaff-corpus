@@ -1,0 +1,77 @@
+id: rust-goal-2025h1-all-hands
+chaff: 0.35.0
+findings:
+  - rule: very-adjective
+    line: 21
+    text: very useful and successful, but after th
+    message: '"very useful" and other "very" + adjective: 6 per 1000 words (limit 2)'
+    verdict: correct
+  - rule: bare-url-mix
+    line: 28
+    text: https://blog.rust-lang.org/inside-rust/2
+    message: The URL "https://blog.rust-lang.org/inside-rust/2024/09/02/all-hands.html" is written bare (3 worded links in this document)
+    verdict: correct
+  - rule: unknown-word
+    line: 33
+    text: "birtday: May 15, 2025."
+    message: '"birtday" is not in the dictionary; did you mean "birthday"?'
+    verdict: correct
+  - rule: very-adjective
+    line: 39
+    text: very successful and productive Rust All-
+    message: '"very successful" and other "very" + adjective: 6 per 1000 words (limit 2)'
+    verdict: correct
+  - rule: broken-link
+    line: 59
+    text: "![Complete][]"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 60
+    text: "![Complete][] for event"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 60
+    text: "![Team][] [leadership-council] | ![Compl"
+    message: '"![Team][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 61
+    text: "![Complete][] for travel"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 62
+    text: "![Complete][]"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 63
+    text: "![Complete][]"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 72
+    text: "![Team][] [leadership-council] | Prepare"
+    message: '"![Team][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 83
+    text: "![Team][] [leadership-council] | Decide"
+    message: '"![Team][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: broken-link
+    line: 101
+    text: "![Complete][]"
+    message: '"![Complete][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page

@@ -1,0 +1,38 @@
+id: go-design-x-repo-go-directive
+chaff: 0.35.0
+findings:
+  - rule: bare-url-mix
+    line: 9
+    text: https://go.dev/issue/69095.
+    message: The URL "https://go.dev/issue/69095" is written bare (9 worded links in this document)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 21
+    text: In the beginning, there was the GOPATH m
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 26
+    text: This meant that a bug fix or a new featu
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: On the other hand, golang.org/x/image ha
+    message: This sentence runs 49 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 81
+    text: If a `toolchain` directive is present an
+    message: This sentence runs 43 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 150
+    text: Just as we want to allow users to use th
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 168
+    text: This can be revisited in the future, whe
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct

@@ -1,0 +1,49 @@
+id: wikimedia-incident-2022-12-18-world-cup
+chaff: 0.35.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    sha256: 3a3cbcc55417150caf98ab11e299b0534b9a7eb7c6161ab7aaf7c6177313b7c9
+    verdict: correct
+  - rule: numbering-gap
+    line: 15
+    sha256: 3db8ac65ba2bce39d81f9753a19a02a2ed8f40d020bda968ed7f5ae6aedf3107
+    verdict: false-positive
+    note: date subheadings in a timeline (8 December, 18 December) read as a numbered sequence
+  - rule: all-caps-shouting
+    line: 17
+    sha256: 956a8ea2016f317286aaac4997d51772e74fdc029d6de44229fe73d88c38f2da
+    verdict: false-positive
+    note: the incident template's conventional outage marker in a timeline
+  - rule: hyphen-as-dash
+    line: 20
+    sha256: 95412f15fc95b14ec09340c3c7b091231b79b9fdf114c1acfd99bafb1abe631f
+    verdict: false-positive
+    note: a separator inside a log line copied verbatim, not a dash in prose
+  - rule: number-style-consistency
+    line: 31
+    sha256: 866e77c5b1fb80787000fb5666dbf1cd036f503572f30127452fe3cc6a099d90
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 50
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 73
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: the section held a wiki link that the wikitext converter drops
+  - rule: concrete-evidence-density
+    line: 79
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: the section held Phabricator task links that the wikitext converter drops
+  - rule: empty-section
+    line: 85
+    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
+    verdict: false-positive
+    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty
+  - rule: unfilled-placeholder
+    line: 48
+    what: the incident template's instruction line, marked optional, is left in the published report under Conclusions (and again at lines 55, 64, 71 and 77)
+    verdict: missed

@@ -1,0 +1,44 @@
+id: wikimedia-incident-2024-03-27-elasticsearch-omega
+chaff: 0.35.0
+findings:
+  - rule: empty-section
+    line: 1
+    sha256: 30ac03ff33731529441be8fbe52a3bd0d4c5ec830e806d54692168ebb7f98ada
+    verdict: false-positive
+    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty
+  - rule: undefined-acronym
+    line: 6
+    sha256: 513c07dec1f61fd9cc11f3071216eda53fbd2ca1ba21e12162de6611ef54970a
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 8
+    sha256: 3e1901c7ffa096b73aef541369b38640fbf5f0158dbdd680b64f139c83febcff
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 10
+    sha256: 1fc759690dac307ae42a724aaaf67ecf2e3f7cf4e44733ef55b5f512c537fc39
+    verdict: unjudged
+  - rule: date-without-year
+    line: 11
+    sha256: ca8a371fc4999d6617b1fd2e29b797daa630db0f4aa54157cbee97186b3e5457
+    verdict: false-positive
+    note: the year is given after the time in a ctime-style date
+  - rule: date-weekday-mismatch
+    line: 12
+    sha256: d025eb70071949523a8132176c11a0ee2b1035d9defa1891c12fe50e73d65487
+    verdict: false-positive
+    note: the weekday is right for the year of the timeline (2024); the line itself has no year
+  - rule: undefined-acronym
+    line: 13
+    sha256: cee34158c5204abf2b6d3074340d24accf8237527983c88bbeac7b7bf5906081
+    verdict: false-positive
+    note: a common abbreviation for to be announced, used as a placeholder time
+  - rule: adverb-overuse
+    line: 16
+    sha256: c6616784b59e8612af116bf4227da09642b9af68e761afae58978d2c9e2a8492
+    verdict: unjudged
+  - rule: empty-section
+    line: 45
+    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
+    verdict: false-positive
+    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty

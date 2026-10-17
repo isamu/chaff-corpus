@@ -1,0 +1,90 @@
+id: rust-goal-2025h1-vision-doc
+chaff: 0.35.0
+findings:
+  - rule: concrete-evidence-density
+    line: 10
+    text: ""
+    message: Section "Summary" has no number, code or link (5 of 11 sections)
+    verdict: unjudged
+  - rule: cliche
+    line: 19
+    text: The document will help us focus our ener
+    message: '"move the needle" is a cliché'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: Section "It's time for us to think beyond "adoption"" has no number, code or link (5 of 11 sections)
+    verdict: unjudged
+  - rule: doubled-word
+    line: 35
+    text: the little tips and tricks that can get
+    message: '"the the" doubles a word; one of the two is left over'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 35
+    text: Writing the "status quo" stories helped
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 45
+    text: ""
+    message: Section "Gathering stories from both individuals and groups" has no number, code or link (5 of 11 sections)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 57
+    text: After the Status Quo story gathering, th
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 57
+    text: The design of new features in complex do
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 61
+    text: For each of those, we'll make recommenda
+    message: "\"we'll\" is written \"we will\" elsewhere in the document"
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 91
+    text: ""
+    message: Section "The "shiny future" we are working towards" has no number, code or link (5 of 11 sections)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 93
+    text: Assuming this vision doc is successful,
+    message: '"on a regular basis" can be said in fewer words'
+    verdict: correct
+  - rule: broken-link
+    line: 107
+    text: "![Team][] [leadership-council] | Create"
+    message: '"![Team][]" is a reference-style link with no definition (it shows as plain text)'
+    verdict: false-positive
+    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
+  - rule: list-item-form-mix
+    line: 123
+    text: Prioritized nominations* refers to prior
+    message: '"Prioritized nominations  refers to prioritized lang-team response to nominated issues, with the expectation that there will be  some  response from the next weekly triage meeting." opens with a verb; the other items in this list open with a noun phrase (1 of 6)'
+    verdict: false-positive
+    note: an item that starts with an italic defined term (a past participle used as an adjective) read as a verb
+  - rule: list-item-form-mix
+    line: 125
+    text: "Other kinds of decisions:"
+    message: '"Other kinds of decisions:" is a phrase; the other items in this list are sentences (1 of 11)'
+    verdict: false-positive
+    note: a lead-in item that introduces a nested list
+  - rule: concrete-evidence-density
+    line: 132
+    text: ""
+    message: Section "Why are you creating a support team? Should it be a working group?" has no number, code or link (5 of 11 sections)
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 134
+    text: I think this is a time-limited team crea
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: correct
+  - rule: unknown-word
+    line: 93
+    what: '"completement" is a misspelling of "complement"'
+    verdict: missed
