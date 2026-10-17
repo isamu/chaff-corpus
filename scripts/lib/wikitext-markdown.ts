@@ -9,6 +9,7 @@
 import { decodeEntities, tidyLines } from "./html/markup-text.ts";
 import { splitOutside } from "./wikitext-split.ts";
 import { tableMarkdown, tableRanges } from "./wikitext-table.ts";
+import { withoutMarkupTags } from "./wikitext-tags.ts";
 
 type Params = { readonly named: ReadonlyMap<string, string>; readonly positional: readonly string[] };
 
@@ -245,10 +246,9 @@ const tablesSetAside = (lines: readonly string[]): { readonly lines: string[]; r
  */
 const inlineText = (text: string, inCell = false): string =>
   decodeEntities(
-    replaceBalanced(expandTemplates(text, inCell), "[[", "]]", renderLink)
+    withoutMarkupTags(replaceBalanced(expandTemplates(text, inCell), "[[", "]]", renderLink)
       .replace(/\[(?:https?:)?\/\/[^\s\]]+(?: ([^\]]*))?\]/giu, (_whole: string, label: string | undefined) => (label === undefined ? DROPPED : label.trim()))
-      .replace(/<br\s*\/?>/giu, " ")
-      .replace(/<\/?[a-z][^>]*>/giu, "")
+      .replace(/<br\s*\/?>/giu, " "))
       .replace(/'{2,5}/gu, ""),
   )
     .replace(DROPPED_SPACED, "")
