@@ -1,0 +1,156 @@
+id: uk-dsa-api-standards-v3
+chaff: 0.35.0
+findings:
+  - rule: hyphen-as-dash
+    line: 15
+    text: " - The current version of the standards"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: heading-end-punctuation-mix
+    line: 17
+    text: "## This is the beginning of the DSA's up"
+    message: The heading "This is the beginning of the DSA's update to the API Standards. We will begin to mark passages for deletion, as well as note where new sections will be added. Please use the links below to add your feedback to the process." ends with ".", while 33 other headings end bare ("Follow the Technology Code of Practice")
+    verdict: correct
+  - rule: undefined-acronym
+    line: 33
+    text: TCOP security guidance](https://www.gov.
+    message: '"TCOP" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: TCoP is expanded on line 25 (Technology Code of Practice (TCoP)); this use differs only in capitalisation (TCOP)
+  - rule: bare-url-mix
+    line: 72
+    text: https://your.api/company/bobscompany\";
+    message: The URL "https://your.api/company/bobscompany\" is written bare (49 worded links in this document)
+    verdict: false-positive
+    note: a URL inside an example JSON payload written unfenced with escaped quotes, not a link in prose
+  - rule: undefined-acronym
+    line: 76
+    text: CURIES](https://www.w3.org/TR/curie/), [
+    message: '"CURIES" is used without an expansion (10 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 76
+    text: HAL](https://en.wikipedia.org/wiki/Hyper
+    message: '"HAL" is used without an expansion (10 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 76
+    text: JSON-LD](https://json-ld.org/) or [HAL](
+    message: '"JSON-LD" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 86
+    text: SAML](http://saml.xml.org/))
+    message: '"SAML" is used without an expansion (10 such acronyms)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 90
+    text: " - arrays can limit the ability to inclu"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 96
+    text: " - choose snake_case or camelCase and be"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 106
+    text: CRS coordinate systems for European loca
+    message: '"CRS" is used without an expansion (10 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 106
+    text: WGS 84 or other CRS coordinate systems f
+    message: '"WGS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 152
+    text: the abbreviation DOB makes sense or whet
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 152
+    text: DOB makes sense or whether it's better t
+    message: '"DOB" is used without an expansion (10 such acronyms)'
+    verdict: false-positive
+    note: the line is about the abbreviation itself and spells it out (date of birth) in the same sentence
+  - rule: contraction-consistency
+    line: 216
+    text: There isn't a recommended standard for t
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 218
+    text: RSS](https://en.wikipedia.org/wiki/Atom_
+    message: '"RSS" is used without an expansion (10 such acronyms)'
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 232
+    text: This will help you meet your requirement
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 287
+    text: " - failure to refresh access tokens regu"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 307
+    text: "[[choosing an API domain name](https://w"
+    message: '"[" is never closed'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 359
+    text: " - specify parsers ignore properties the"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 389
+    text: Set clear API deprecation policies so yo
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 391
+    text: GDS, we usually contact developers direc
+    message: '"GDS" is used without an expansion (10 such acronyms)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 403
+    text: " - ask your API consumers what a suffici"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 436
+    text: " - what the API does, who it might be us"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 438
+    text: " - under what circumstances is data avai"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 440
+    text: " - including error codes and messages"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 440
+    text: " - preconditions and outcomes - includin"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 442
+    text: " - how to use it and how to simulate the"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 444
+    text: " - give examples of valid values"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 448
+    text: method of [authentication](https://www.n
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct

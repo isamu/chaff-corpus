@@ -454,3 +454,15 @@
 - id: shiki-kaikei-nendo-shokuin-boshu
   match: "048-471-7092"
   reason: a public office's or support organisation's published phone number (city hall, police, business-support desk), part of the document
+- id: smarthr-oss-guideline
+  match: "oss@smarthr.co.jp"
+  reason: the company's published OSS desk (a role address, also given in the repository's README), named in the guideline as the place employees ask
+- id: uk-dsa-api-standards-v3
+  match: "api-standards-request@digital.cabinet-office.gov.uk"
+  reason: a government office's role address, published in the document for the public to write to
+- id: tts-vulnerability-disclosure-policy
+  match: "tts-vulnerability-reports@gsa.gov"
+  reason: a government office's role address, published in the policy as the place to report vulnerabilities
+- id: yamano-akashi-vc-attribute-spec
+  match: "090-0000-0000"
+  reason: a clearly fake example value (all zeros) in the attribute table and the JSON sample

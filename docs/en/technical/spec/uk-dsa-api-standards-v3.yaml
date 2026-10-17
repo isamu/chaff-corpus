@@ -1,0 +1,15 @@
+id: uk-dsa-api-standards-v3
+title: "API Standards v3 (DSA draft)"
+language: en
+genre: technical/spec
+format: markdown
+source:
+  url: https://raw.githubusercontent.com/alphagov/data-standards-authority/e207e81a0d2a77db45a1ffb3dbb99fa80f852166/content/guidance/apistandardsv3/index.html.md
+  fetched: 2026-10-17
+license:
+  name: "OGL-UK-3.0"
+  url: https://github.com/alphagov/data-standards-authority/blob/e207e81a0d2a77db45a1ffb3dbb99fa80f852166/LICENCE.md
+  note: "Contains public sector information licensed under the Open Government Licence v3.0 (Data Standards Authority, per the repository's LICENCE.md); the Markdown source as published, unmodified"
+redistribute: true
+sha256: 0684f38b2a48421d718415fbc8491970fe602d53701dfddea5eb5a9aecd63a5b
+notes: "A draft (it opens with a DRAFT notice and a sentence-long heading). Front matter kept as in the source. The api-standards-request address is the DSA's published role address (allowlist.yaml)."
