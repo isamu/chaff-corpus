@@ -1,41 +1,11 @@
 id: osaka-joto-bouhan-camera-mitsumori
 chaff: 0.34.0
 findings:
-  - rule: request-without-deadline
-    line: 9
-    text: 見積書をご提出いただく前に、公告文や仕様書などの内容を必ず確認してください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: the timing is given in the same sentence (before submitting the quote), and the deadline is the page's own heading
-  - rule: request-without-deadline
-    line: 11
-    text: 見積書提出時、納品予定の製品名及び品番と納品数、金額内訳がわかる明細を提出してく
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: the timing is given (when the quote is submitted); the deadline is the heading 見積提出期限
-  - rule: request-without-deadline
-    line: 22
-    text: ファックス番号：050-3535-8685
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: "a fax number line, not a request: the ※ note on the next line was read into it"
-  - rule: request-without-deadline
-    line: 33
-    text: はじめに必ずご確認ください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an instruction under an attachment link (read this first), not a task that needs a deadline
   - rule: bracket-width-consistency
     line: 35
     text: (PDF形式, 217.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 41
-    text: はじめに必ずご確認ください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an instruction under an attachment link (read this first), not a task that needs a deadline
   - rule: latin-spacing
     line: 52
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
@@ -46,15 +16,3 @@ findings:
     text: (DOCX形式, 44.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 58
-    text: 入力用にご使用ください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: a usage note on an attachment (use it for input), not a request that needs a deadline
-  - rule: max-kanji-continuous
-    line: 99
-    text: 物品供給等公募型比較見積等発注案件
-    message: 「物品供給等公募型比較見積等発注案件」は漢字が 17 字続いています（10 字まで）
-    verdict: false-positive
-    note: the site's category name in the trailing breadcrumb; a fixed name, and navigation the converter kept

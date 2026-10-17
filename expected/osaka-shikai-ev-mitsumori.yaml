@@ -2,54 +2,18 @@ id: osaka-shikai-ev-mitsumori
 chaff: 0.34.0
 findings:
   - rule: title-length
-    line: 3
+    line: 1
     text: "# 市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事"
     message: 題「市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事務局］EV用充電コンセント設置業務委託）」は 57 文字あります（50 文字まで）
     verdict: correct
   - rule: latin-spacing
-    line: 20
+    line: 18
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 13 箇所あります。この文書には書き方が二通りあります
     verdict: correct
   - rule: heading-echo
-    line: 24
+    line: 22
     text: 市会事務局公募型比較見積実施要綱
     message: 見出し「市会事務局公募型比較見積実施要綱について」を直後の文がほぼそのまま繰り返しています
     verdict: false-positive
     note: the line after the heading is the link to the document the heading names, not a sentence restating it
-  - rule: max-kanji-continuous
-    line: 24
-    text: 市会事務局公募型比較見積実施要綱
-    message: 「市会事務局公募型比較見積実施要綱」は漢字が 16 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official title of a 要綱 (proper noun); the kanji run is the name itself
-  - rule: list-item-form-mix
-    line: 53
-    text: 組織から探す
-    message: 「組織から探す」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（7 項目のうち 1 項目）
-    verdict: false-positive
-    note: a site navigation list (search by organisation) the converter kept; its items are links, not a list of parallel points
-  - rule: max-kanji-continuous
-    line: 59
-    text: 公募型比較見積発注案件
-    message: 「公募型比較見積発注案件」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: the site's category name in the trailing breadcrumb; a fixed name
-  - rule: max-kanji-continuous
-    line: 60
-    text: 市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事務局
-    message: 「業務委託公募型比較見積案件」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: the page title repeated in the trailing breadcrumb; the run is the procedure's fixed name
-  - rule: max-kanji-continuous
-    line: 68
-    text: 業務委託公募型比較見積等発注案件
-    message: 「業務委託公募型比較見積等発注案件」は漢字が 16 字続いています（10 字まで）
-    verdict: false-positive
-    note: the site's category name in the trailing breadcrumb; a fixed name
-  - rule: max-kanji-continuous
-    line: 69
-    text: 市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事務局
-    message: 「業務委託公募型比較見積案件」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: the page title repeated in the trailing breadcrumb; the run is the procedure's fixed name

@@ -57,19 +57,9 @@ findings:
     message: URL「https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home」の直後に「）」が続いています。リンクがそこまで伸びます
     verdict: correct
   - rule: orthographic-variant
-    line: 91
-    text: 申し込んでください。
-    message: 「申し込む」と書いています（この文書はふつう「申込む」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 95
-    text: 令和8年11月12日（木曜日）までに受験票等がダウンロードできない場合は、大阪市
-    message: 「大阪市健康局総務部総務課」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
     line: 103
-    text: メール通知がない場合は、申込みが完了していない可能性がありますので、必ず大阪市健
-    message: 「大阪市健康局総務部総務課」は漢字が 12 字続いています（10 字まで）
+    text: 申込の申請を受け付けた旨のメール通知がありますので、削除せずに保管してください。
+    message: 「申込」と書いています（この文書はふつう「申込み」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 105
@@ -80,17 +70,6 @@ findings:
     line: 105
     text: )までに大阪市健康局総務部総務課までご連絡ください。
     message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 105
-    text: 障がい等により、インターネットによる申込みが困難な方は、令和8年10月21日(水
-    message: 「大阪市健康局総務部総務課」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an instruction for filling in a form field; it is done with the application, whose period the page states
-  - rule: max-kanji-continuous
-    line: 106
-    text: 車いすを使用されているなど、身体等の事情により試験会場等に配慮を必要とされる方は
-    message: 「大阪市健康局総務部総務課」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: date-without-year
     line: 110
@@ -171,14 +150,4 @@ findings:
     line: 202
     text: 2　職員倫理規則には、服務規律の確保及び市民の疑惑や不信を招くような行為の防止の
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 219
-    text: 令和8年度　大阪市職員（栄養士）を募集します
-    message: 「令和8年度　大阪市職員（栄養士）を募集します」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
-    verdict: unjudged
-  - rule: heading-echo
-    line: 231
-    text: 「皆さんの声をお寄せください」一覧
-    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
     verdict: unjudged
