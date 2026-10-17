@@ -1,0 +1,208 @@
+id: kep-1498-kubernetes-yearly-support-period
+chaff: 0.35.0
+findings:
+  - rule: list-marker-mix
+    line: 7
+    text: "- [Goals](#goals)"
+    message: This list uses the bullet "-", while 15 lists at the same depth use "*"
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 11
+    text: "- [Component changes](#component-changes"
+    message: This list uses the bullet "-", while 15 lists at the same depth use "*"
+    verdict: unjudged
+  - rule: list-marker-mix
+    line: 13
+    text: "- [Additional Version Test Coverage](#ad"
+    message: This list uses the bullet "-", while 15 lists at the same depth use "*"
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 31
+    text: ACTION REQUIRED:** In order to merge cod
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 36
+    text: " These checklist items _must_ be updated"
+    message: Sentences are spaced two ways in this document (23 with two spaces, 6 with one)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 43
+    text: '"Implementation History" section is up-t'
+    message: Quote marks are written two ways in this document (21 curly, 6 straight)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 59
+    text: The primary motivation is to address an
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 59
+    text: HR and others) are overwhelmingly annual
+    message: '"HR" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 84
+    text: LTS showed that a significant subset of
+    message: '"LTS" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 84
+    text: WG LTS showed that a significant subset
+    message: '"WG" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 98
+    text: There are many unknowns about changing t
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 98
+    text: There are many unknowns about changing t
+    message: This sentence runs 46 words (limit 45)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 98
+    text: There are many unknowns about changing t
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 120
+    text: CI for 6-7 weeks beyond the 9 months int
+    message: '"CI" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: article-sound
+    line: 136
+    text: an n-1 kubectl to work against all suppo
+    message: '"an n" takes "a" before that sound'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 143
+    text: In order to support the additional versi
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 158
+    text: It is currently specified that oldest re
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 158
+    text: CVE or upgrade issue is encountered and
+    message: '"CVE" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 170
+    text: bazel fixes.
+    message: '"bazel" is not in the dictionary; did you mean "bezel"?'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 180
+    text: https://git.k8s.io/community/contributor
+    message: The URL "https://git.k8s.io/community/contributors/devel/sig-release/cherry-picks.md#what…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 190
+    text: "'s lifecycle)"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 13)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 197
+    text: There is discussion beyond this KEP for
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 205
+    text: It is recognized that this is currently
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: heading-echo
+    line: 213
+    text: Unchanged from existing Kubernetes proje
+    message: The first sentence repeats the heading "Deprecation policy"
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 235
+    text: "'s implemented state,"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 13)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 246
+    text: There is a risk this KEP is a slippery s
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 247
+    text: There is a finite limit to the resources
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 249
+    text: There is already active community resist
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 260
+    text: https://kubernetes.io/docs/concepts/over
+    message: The URL "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-versioning" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 261
+    text: https://kubernetes.io/docs/reference/usi
+    message: The URL "https://kubernetes.io/docs/reference/using-api/deprecation-policy/" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 262
+    text: https://kubernetes.io/docs/setup/release
+    message: The URL "https://kubernetes.io/docs/setup/release/version-skew-policy/" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 263
+    text: https://github.com/kubernetes/enhancemen
+    message: The URL "https://github.com/kubernetes/enhancements/pull/1332" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 278
+    text: https://github.com/kubernetes/community/
+    message: The URL "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-archi…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 279
+    text: https://kubernetes.io/docs/reference/usi
+    message: The URL "https://kubernetes.io/docs/reference/using-api/deprecation-policy/#deprecating-p…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: doubled-word
+    line: 282
+    text: is accomplished in not less than 4 relea
+    message: '"is is" doubles a word; one of the two is left over'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 284
+    text: https://kcsna2019.sched.com/event/VvMK/r
+    message: The URL "https://kcsna2019.sched.com/event/VvMK/raising-the-bar-production-readiness-in-k…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 285
+    text: https://github.com/kubernetes/community/
+    message: The URL "https://github.com/kubernetes/community/issues/4000" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 296
+    text: https://docs.google.com/document/d/1R31U
+    message: The URL "https://docs.google.com/document/d/1R31UmXJGsmb4fT3xZc5qQNf5LVOMOiNaQ0Sou7W6U50/…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 296
+    text: devel branches, with a stable release on
+    message: '"devel" is not in the dictionary; did you mean "level"?'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 299
+    text: https://docs.google.com/document/d/1o6Ov
+    message: The URL "https://docs.google.com/document/d/1o6OvJ1XAc-n9to-8YVYoSiEx95yqldQfdE3qplyy0CY/…" is written bare (37 worded links in this document)
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 313
+    text: It is possible that the cadence is slowe
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: unjudged

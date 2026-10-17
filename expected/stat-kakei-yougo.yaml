@@ -1,0 +1,101 @@
+id: stat-kakei-yougo
+chaff: 0.35.0
+findings:
+  - rule: one-sentence-paragraph-run
+    line: 27
+    text: （1）実支出……「消費支出」と「非消費支出」を合計した支出である。
+    message: 一文だけの段落が 6 個続いています（4 個まで）
+    verdict: false-positive
+    note: glossary definition items are one sentence each by design
+  - rule: no-doubled-joshi
+    line: 111
+    text: の企業の従業者数の大きさによって分類している。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 135
+    text: 「五分位階級」とは、全ての世帯を毎月の実収入（現金収入）、世帯主の定期収入、世帯
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 135
+    text: 「五分位階級」とは、全ての世帯を毎月の実収入（現金収入）、世帯主の定期収入、世帯
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: the commas of an enumeration of class names (第I、第II、…) are counted as clause breaks
+  - rule: no-doubled-joshi
+    line: 137
+    text: の十のグループのことである。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: numbering-gap
+    line: 139
+    text: "###  10　住居の所有関係"
+    message: 「8」の次が「10」です（9 番目のはず）
+    verdict: false-positive
+    note: section 9 is there (line 131); the heading "8 購入頻度（100世帯当たり）、購入世帯数（10,000分比）" seems to be read as a different number
+  - rule: unused-definition
+    line: 145
+    text: 「民営借家」とは、居住している世帯がその住宅を借りている場合で、次の「公営借家」
+    message: 「民営借家」を定義していますが、本文で使っていません
+    verdict: false-positive
+    note: a glossary defines terms for other documents; an unused definition is its purpose
+  - rule: no-doubled-joshi
+    line: 153
+    text: の内訳の各項目の対前年実質増減率は、次式により求めている。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: no-doubled-joshi
+    line: 161
+    text: の世帯の1世帯当たりの「支出金額」を除して「購入数量」を求めている。このため、内
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 167
+    text: すなわち、調整係数を用いて地域間の補正を行った後、調査世帯の属性分布の偏りを、労
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: correct
+  - rule: comparative-without-baseline
+    line: 177
+    text: より的確に把握することができる。 月々の1世帯当たりの世帯人員、世帯主の年齢階級
+    message: 「より的確」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: the baseline (consumption spending before adjustment) is named at the start of the same sentence
+  - rule: max-kanji-continuous
+    line: 177
+    text: 月々の1世帯当たりの世帯人員、世帯主の年齢階級別消費支出額を基準年の世帯分布で加
+    message: 「年齢階級別消費支出額」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: a fixed statistical term (年齢階級別消費支出額) that cannot be split
+  - rule: no-doubled-joshi
+    line: 185
+    text: の季節調整値の計算の際に、当該年の12月までのデータから計算される季節指数を用い
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 189
+    text: ※　季節調整法の変更について（PDF：277KB）（家計調査の結果を見る際のポイ
+    message: この文は 184 文字あります（140 文字まで）
+    verdict: false-positive
+    note: link lines without 。 are joined to the following lines and counted as one long sentence
+  - rule: max-sentence-length
+    line: 196
+    text: 家計消費指数は、家計消費の動向をより安定的に把握するため、家計調査結果のうち購入
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 196
+    text: 家計消費指数は、家計消費の動向をより安定的に把握するため、家計調査結果のうち購入
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 200
+    text: "※　家計消費指数は、2018年1月分から公表している消費動向指数（CTI: Co"
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 202
+    text: 持ちでない方は、バナーのリンク先から無料ダウンロードしてください。
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: site chrome (the Adobe Reader notice); the honorific お持ち and 持ち越した/手持ち are not the verb もつ written differently

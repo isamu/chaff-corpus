@@ -1,0 +1,15 @@
+id: kep-2572-release-cadence
+title: "KEP-2572: Defining the Kubernetes Release Cadence"
+language: en
+genre: business/proposal
+format: markdown
+source:
+  url: https://raw.githubusercontent.com/kubernetes/enhancements/6ebe0a94771723b3f27cb4a757f0cc22f29e38a2/keps/sig-release/2572-release-cadence/README.md
+  fetched: 2026-10-17
+license:
+  name: Apache-2.0
+  url: https://github.com/kubernetes/enhancements/blob/6ebe0a94771723b3f27cb4a757f0cc22f29e38a2/LICENSE
+  note: © The Kubernetes Authors; Apache-2.0 (repository LICENSE at the pinned commit); unchanged
+redistribute: true
+sha256: e0f91b325515ca93811c40fc79941021c8305c96d41934eff784b5577bfba550
+notes: A release-policy proposal (cadence), not a code design; GitHub handles only.

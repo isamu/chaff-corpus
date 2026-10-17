@@ -1,0 +1,69 @@
+id: nta-tsutatsu-kabushiki-joto-2020
+chaff: 0.35.0
+findings:
+  - rule: email-greeting-closing
+    line: 1
+    text: 課資3-7
+    message: 書き出しに挨拶がありません
+    verdict: false-positive
+    note: an official directive (document number, 宛名 殿, issuer) opens without a greeting by design
+  - rule: title-length
+    line: 12
+    text: "# 「租税特別措置法（株式等に係る譲渡所得等関係）の取扱いについて」等の一部改正"
+    message: 題「「租税特別措置法（株式等に係る譲渡所得等関係）の取扱いについて」等の一部改正について（法令解釈通達）」は 50 文字あります（40 文字まで）
+    verdict: false-positive
+    note: an official directive title that quotes the title of the directive it amends
+  - rule: bracket-width-consistency
+    line: 14
+    text: (所)30「所得税基本通達の制定について」（法令解釈通達）の一部を下記のとおり改
+    message: 丸括弧を、全角で 11 箇所、半角で 6 箇所書いています。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: max-sentence-length
+    line: 14
+    text: 平成14年6月24日付課資3－1ほか3課共同「租税特別措置法（株式等に係る譲渡所
+    message: この文は 192 文字あります（70 文字まで）
+    verdict: correct
+  - rule: range-notation-consistency
+    line: 14
+    text: 4－5ほか2課共同「租税特別措置法(山林所得・譲渡所得関係)の取扱いについて」（
+    message: 範囲を「4－5」と書いています（この文書はふつう「3-7」のように書きます。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: a document number (直資4－5) is read as a numeric range
+  - rule: max-sentence-length
+    line: 23
+    text: (注)　別紙には、この改正により新たに取扱いを定めたものについてはその全文を掲げ
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 25
+    text: ※PDFファイルが開けない、印刷できないなどの場合はこちらをご覧ください。
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: a web-page note about PDFs, not part of the letter, is compared with the letter's である style
+  - rule: fullwidth-alnum-consistency
+    line: 33
+    text: ４年3月18日まで掲載した一部改正通達に係るものです。現在の上記の一部改正通達本
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。26 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: 正誤表（PDF/250KB）（令和４年3月18日まで掲載した一部改正通達に係るも
+    message: この文は 76 文字あります（70 文字まで）
+    verdict: correct
+  - rule: email-greeting-closing
+    line: 35
+    text: なお、当該正誤表は、一部改正通達本文のみを訂正したものであり、「租税特別措置法（
+    message: 終わりに結びの言葉がありません
+    verdict: false-positive
+    note: an official directive ends without a closing phrase by design
+  - rule: max-sentence-length
+    line: 35
+    text: なお、当該正誤表は、一部改正通達本文のみを訂正したものであり、「租税特別措置法（
+    message: この文は 106 文字あります（70 文字まで）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 35
+    text: なお、当該正誤表は、一部改正通達本文のみを訂正したものであり、「租税特別措置法（
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: a web-page note about the errata, not part of the letter, is compared with the letter's である style

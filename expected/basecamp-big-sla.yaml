@@ -1,0 +1,28 @@
+id: basecamp-big-sla
+chaff: 0.35.0
+findings:
+  - rule: quote-style-consistency
+    line: 11
+    text: "'s lifeline. It’s where we make decision"
+    message: The quote mark ' here, where the document usually writes ’‘ (4 of 10)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 11
+    text: "'s why we guarantee 99.99% monthly uptim"
+    message: The quote mark ' here, where the document usually writes ’‘ (4 of 10)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 11
+    text: "'s working on. That's why we guarantee 9"
+    message: The quote mark ' here, where the document usually writes ’‘ (4 of 10)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 20
+    text: But stuff happens, so if our uptime drop
+    message: "\"we will\" is written \"we'll\" elsewhere in the document"
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 23
+    text: "'s uptime are immediately shown on our ["
+    message: The quote mark ' here, where the document usually writes ’‘ (4 of 10)
+    verdict: correct

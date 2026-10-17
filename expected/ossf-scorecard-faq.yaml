@@ -1,0 +1,52 @@
+id: ossf-scorecard-faq
+chaff: 0.35.0
+findings:
+  - rule: title-case-consistency
+    line: 10
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: duplicate-heading
+    line: 22
+    text: "## Installation / Usage"
+    message: The heading "Installation / Usage" repeats the one on line 5 under the same parent
+    verdict: false-positive
+    note: the first "Installation / Usage" is the table-of-contents section whose headings the body repeats on purpose
+  - rule: bare-url-mix
+    line: 28
+    text: https://scorecard.dev/viewer/?uri=<githu
+    message: The URL "https://scorecard.dev/viewer/?uri=" is written bare (23 worded links in this document)
+    verdict: false-positive
+    note: a URL template with placeholders (<github_or_gitlab>…) cannot be written as a worded link
+  - rule: max-paragraph-length
+    line: 46
+    text: Yes, kind of. The project was initially
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: person-consistency
+    line: 46
+    text: One should therefore refer to this proje
+    message: '"One should" here, where the document usually says "you" (1 of 21)'
+    verdict: correct
+  - rule: duplicate-heading
+    line: 48
+    text: "## Check-specific Questions"
+    message: The heading "Check-specific Questions" repeats the one on line 10 under the same parent
+    verdict: false-positive
+    note: the heading repeats the table-of-contents section heading on purpose (differs only in case, which title-case-consistency reports)
+  - rule: title-case-consistency
+    line: 48
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 94
+    text: For example, the OpenSSF is working on [
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: correct
+  - rule: fact-conflict
+    line: 119
+    text: 4    |
+    message: '"Require a pull request before merging > Require Approvals Tier" is 4 here, but 2 earlier in the same section'
+    verdict: false-positive
+    note: table rows for different settings ("Enabled" vs "Enabled with at least 2") carry different tiers; the label match ignores the value column

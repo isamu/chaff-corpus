@@ -1,0 +1,428 @@
+id: postgresql-18-glossary-ja
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 7
+    text: ACID
+    message: 「ACID」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 9
+    text: 及び電源障害などによるエラーの際にも正当性を保証することを意図しています。
+    message: 「及び」と書いています（この文書はふつう「および」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 61
+    text: 及びアナライズ操作を定期的に実行する一連のバックグラウンドプロセス。 作業を調整
+    message: 「及び」と書いています（この文書はふつう「および」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 67
+    text: WALアーカイバ、WAL受信（WAL送信ではありません）、WAL要約処理、WAL
+    message: 「WAL」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 99
+    text: の許可された権限の発生元のロールでもあります。 これらのことから、このロールは削
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 109
+    text: バッファアクセスストラテジは、大きなテーブルのシーケンシャルスキャン、VACUU
+    message: 「は」で出した主題から述語まで 113 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 115
+    text: CASTを参照してください。
+    message: 「CAST」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 115
+    text: CREATE CASTを参照してください。
+    message: 「CREATE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 127
+    text: のリレーションの別の行は参照できません。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 165
+    text: COMMITを参照してください。
+    message: 「COMMIT」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 169
+    text: (multiversion concurrency control機構によって制
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 169
+    text: (multiversion concurrency control機構によって制
+    message: 「(」が閉じていません
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 179
+    text: (integrity constraints)に従う性質。 トランザクションは、
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 179
+    text: )に従う性質。 トランザクションは、コミット前には一時的に制約の一部に違反する可
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 205
+    text: (cluster)として参照されます。 データベースクラスタは、initdbプロ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 205
+    text: )として参照されます。 データベースクラスタは、initdbプログラムを使用して
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 207
+    text: (cluster)という用語も使用されることがあります。 （この用語を、SQLコ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 207
+    text: )という用語も使用されることがあります。 （この用語を、SQLコマンドのCLUS
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 209
+    text: (bootstrap superuser)、クラスタのPostgreSQL所有者
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 209
+    text: (cluster owner)、クラスタのオペレーティングシステム所有者、および
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 209
+    text: )、クラスタのPostgreSQL所有者も参照してください。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 209
+    text: )、クラスタのオペレーティングシステム所有者、およびブートストラップスーパーユー
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 223
+    text: PGDATAは、通常データディレクトリを参照するために使用されます。
+    message: 「PGDATA」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 231
+    text: (clean)になります。 最初はメモリ上にのみ存在したページも書き出されるまで
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 231
+    text: (dirty)となります。 それらはディスクに書き出されたときにきれい(clea
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 231
+    text: )となります。 それらはディスクに書き出されたときにきれい(clean)になりま
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 231
+    text: )になります。 最初はメモリ上にのみ存在したページも書き出されるまでは変更済みで
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 231
+    text: データページはそれぞれ特定のファイルに置かれ、典型的にはディスク上に格納され、共
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 235
+    text: １つの値の内部表現。
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。78 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 235
+    text: の１つの値の内部表現。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 285
+    text: SERVERを参照してください。
+    message: 「SERVER」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 295
+    text: (init fork)もあります。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 295
+    text: )もあります。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 295
+    text: のための2つの二次フォークが存在します。 空き領域マップと可視性マップです。 u
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 299
+    text: のメインフォークの個々のデータページ関するメタデータを保持する格納構造。 個々の
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 305
+    text: SELECTクエリの一部として起動されます。 ある関数は集合を返すことができます
+    message: 「SELECT」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 319
+    text: GRANTを参照してください。
+    message: 「GRANT」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 323
+    text: のメインフォークの一つ以上のファイルセグメントとして実現されています。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 333
+    text: INDEXを参照してください。
+    message: 「INDEX」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 353
+    text: INSERTを参照してください。
+    message: 「INSERT」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 359
+    text: のDBMSのすべての重要な機能を管理します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 359
+    text: インスタンスは、ファイルと共有メモリからの読み出しおよび書き込みアクセス、ACI
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 359
+    text: DBMSのすべての重要な機能を管理します。
+    message: 「DBMS」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 387
+    text: ALTER TABLEコマンドでunloggedとテーブルを指定することができま
+    message: 「ALTER」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 387
+    text: TABLEコマンドでunloggedとテーブルを指定することができます。
+    message: 「TABLE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 423
+    text: またこの用語は、与えられたステップを実行した結果のデータをメモリに格納し（ディス
+    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 427
+    text: MERGEの操作では変更できません。
+    message: 「MERGE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 427
+    text: UPDATE、DELETE、MERGEの操作では変更できません。
+    message: 「UPDATE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 457
+    text: (parent)であるパーティション化テーブルの一部のデータを持つテーブルを意味
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 457
+    text: )であるパーティション化テーブルの一部のデータを持つテーブルを意味します。 パー
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 473
+    text: NULLにならない属性を持つ複数の一意性制約を持つことも可能です。
+    message: 「NULL」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 481
+    text: CALLコマンドを通じて呼び出されます。
+    message: 「CALL」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 507
+    text: の全てのオブジェクトの総称。 テーブル、シーケンス、ビュー、外部テーブル、マテリ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 507
+    text: 全てのオブジェクトの総称。 テーブル、シーケンス、ビュー、外部テーブル、マテリア
+    message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。35 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 509
+    text: 例えば問い合わせの結果もリレーションです。
+    message: 「例えば」と書いています（この文書はふつう「たとえば」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 519
+    text: ２つの形式が可能です。
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。78 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 537
+    text: REVOKEを参照してください。
+    message: 「REVOKE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 543
+    text: ROLEを参照してください。
+    message: 「ROLE」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 553
+    text: データベースシステムに格納され、実行するために起動可能な予め定義された操作の集合
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 563
+    text: の一連のステップ中の特別な印。 セーブポイント時点以降のデータ変更は、この時点ま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 573
+    text: のすべてのデータの記述（テーブル定義、制約、コメントなど）の意味で用いられます。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 605
+    text: (dirty page)と呼ばれます。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 605
+    text: )と呼ばれます。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 613
+    text: の同じ種類の中のそうしたオブジェクト同士は、名前がユニークであることが強制されま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 615
+    text: の同じ種類の中のそうしたオブジェクト同士は、名前がユニークであることが強制されま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 617
+    text: の同じ種類の中のそうしたオブジェクト同士は、名前がユニークであることが強制されま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 641
+    text: より便利なアクセスを提供しています。 一方標準SQLによって管理されているものと
+    message: 「より便利」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 641
+    text: のすべてのSQLオブジェクトの構造を記述するテーブルの集まり。 システムカタログ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 653
+    text: 全てのSQLオブジェクトでデフォルトとして使用されます。
+    message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。35 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 663
+    text: TOAST
+    message: 「TOAST」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 677
+    text: ときにはエポックとxidの値を組み合わせて、単一の64ビット値として扱うこともあ
+    message: 「ときには」と書いています（この文書はふつう「時には」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 683
+    text: １秒あたりに実行されたトランザクションの平均数。 測定された実行中にアクティブな
+    message: 全角の「１」と書いています（この文書はふつう半角の「1」。78 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 683
+    text: 全てのセッションで合計されます。 これはインスタンスのパフォーマンス特性の指標と
+    message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。35 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 687
+    text: (INSERT、UPDATE、DELETE、TRUNCATE)がリレーションに適
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 687
+    text: )がリレーションに適用されるたびに実行することを定義できる関数。 トリガは、トリ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 697
+    text: の複数の列の組み合わせで許可される値を制限して、各値または組み合わせの値がリレー
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 717
+    text: LOGIN権限を持つロール。 （21.2を参照）。
+    message: 「LOGIN」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 731
+    text: おこなうプロセス。 これはVACUUMコマンドを使用して開始できますが、自動バキ
+    message: 「おこなう」と書いています（この文書はふつう「行う」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 731
+    text: VACUUMコマンドを使用して開始できますが、自動バキュームプロセスを介して自動
+    message: 「VACUUM」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 739
+    text: VIEWを参照してください。
+    message: 「VIEW」が説明なしで使われています（説明のない略語 24 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 743
+    text: (all-frozen)は、ページ内のすべてのタプルが凍結とマークされていること
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 743
+    text: (all-visible)は、ページ内のすべてのタプルがすべてのトランザクション
+    message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 743
+    text: )は、ページ内のすべてのタプルがすべてのトランザクションに対して可視であることを
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 743
+    text: )は、ページ内のすべてのタプルが凍結とマークされていることを示します。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 799
+    text: 例えば、パーティション内の各行にランク付けすることもできます。 分析関数とも呼ば
+    message: 「例えば」と書いています（この文書はふつう「たとえば」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: unjudged

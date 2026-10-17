@@ -1,0 +1,36 @@
+id: da-faq-koukin-account-overview
+chaff: 0.35.0
+findings:
+  - rule: no-doubled-joshi
+    line: 13
+    text: の受取のための口座として、国（デジタル庁）に登録していただく制度です。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: 「のための」 is one compound particle; counting its の makes a natural phrase read as a chain of three の
+  - rule: no-doubled-joshi
+    line: 22
+    text: の還付金等の幅広い給付金等の受取に利用できます。受け取ることができる給付金の詳細
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: デジタル庁としては、給付主体に対して公金受取口座の情報を連携することで給付主体の
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 43
+    text: また、登録等手続きや審査・登録処理に関する情報（申請手続きの方法、申請手続きの年
+    message: 「公的給付等口座登録簿」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the official name of a statutory register (公的給付等口座登録簿), a proper noun that cannot be split
+  - rule: heading-end-punctuation-mix
+    line: 76
+    text: "### A7"
+    message: 見出し「A7」だけ「：」「。」なしで終わっています（ほかの見出しは「Q1 公金受取口座登録制度とは何ですか。」など 10 個が記号で終わる）
+    verdict: correct
+    note: the source has A7 at the question level (h3) instead of h4; note the HTML converter also dropped the Q7 heading before it
+  - rule: max-sentence-length
+    line: 118
+    text: 金融機関にある口座にマイナンバーを紐づけ、様々な金融機関にある預貯金口座を1つの
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: correct

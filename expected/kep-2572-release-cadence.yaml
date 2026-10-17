@@ -1,0 +1,136 @@
+id: kep-2572-release-cadence
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 45
+    text: KEP dir in [kubernetes/enhancements] (no
+    message: '"KEP" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 48
+    text: SIG Architecture and SIG Testing input (
+    message: '"SIG" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 75
+    text: As a result, SIG Release received severa
+    message: This sentence runs 49 words (limit 45)
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 87
+    text: Going
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 131
+    text: ""
+    message: Section "Changing enhancements graduation" has no number, code or link (3 of 21 sections)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 133
+    text: It's
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 140
+    text: " - not on adding more features. These de"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: vague-link-text
+    line: 175
+    text: "[here](https://github.com/kubernetes/sig"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: vague-link-text
+    line: 182
+    text: "[here](https://github.com/kubernetes/sig"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: bare-url-mix
+    line: 197
+    text: https://github.com/kubernetes/sig-releas
+    message: The URL "https://github.com/kubernetes/sig-release/issues/1494" is written bare (52 worded links in this document)
+    verdict: correct
+  - rule: name-variant
+    line: 247
+    text: Kubernetes Release Schedule 2021 (Propos
+    message: '"Kubernetes Release Schedule" is one letter away from "Kubernetes Release Sechedule", which the document uses more than once'
+    verdict: false-positive
+    note: points at the correct spelling "Schedule"; the misspelling "Sechedule" (lines 218, 231, 258) is the one to flag, because it occurs more often
+  - rule: orthographic-variant
+    line: 256
+    text: Kubecon Break (Oct 12-15) |
+    message: '"Kubecon" here, where the document usually writes "KubeCon" (1 of 10)'
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 295
+    text: " - only 3 releases per year will relax t"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 297
+    text: ""
+    message: Section "Distributors and downstream projects" has no number, code or link (3 of 21 sections)
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 303
+    text: ""
+    message: Section "Contributors" has no number, code or link (3 of 21 sections)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 332
+    text: It's the responsibility of SIG Release,
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 341
+    text: CI signal role. If we speak
+    message: '"CI" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 354
+    text: GA in the minimum 3 releases. However, t
+    message: '"GA" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 363
+    text: At the start of the Kubernetes 1.21 rele
+    message: This sentence runs 61 words (limit 45)
+    verdict: correct
+  - rule: list-marker-mix
+    line: 374
+    text: "* Once this KEP has merged, an email wil"
+    message: This list uses the bullet "*", while 3 lists at the same depth use "-"
+    verdict: correct
+  - rule: bare-url-mix
+    line: 377
+    text: https://kubernetes.io/blog/ that fully e
+    message: The URL "https://kubernetes.io/blog/" is written bare (52 worded links in this document)
+    verdict: correct
+  - rule: doubled-word
+    line: 406
+    text: of ~15 weeks.
+    message: '"of of" doubles a word; one of the two is left over'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 423
+    text: SIG Release will draft an experience sur
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 441
+    text: "[here](https://docs.google.com/document/"
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: unknown-word
+    line: 218
+    what: '"Sechedule" is a misspelling of "Schedule" (also on lines 231 and 258)'
+    verdict: missed
+  - rule: unknown-word
+    line: 231
+    what: '"Sechedule" is a misspelling of "Schedule"'
+    verdict: missed
+  - rule: unknown-word
+    line: 258
+    what: '"Sechedule" is a misspelling of "Schedule"'
+    verdict: missed

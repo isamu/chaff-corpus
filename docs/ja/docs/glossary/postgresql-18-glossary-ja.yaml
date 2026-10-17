@@ -1,0 +1,16 @@
+id: postgresql-18-glossary-ja
+title: PostgreSQL 18.0 文書 付録M 用語集（日本PostgreSQLユーザ会 翻訳）
+language: ja
+genre: docs/glossary
+format: markdown
+source:
+  url: https://www.postgresql.jp/document/18/html/glossary.html
+  fetched: 2026-10-17
+  format: html
+license:
+  name: PostgreSQL
+  url: https://github.com/pgsql-jp/jpug-doc/blob/bdb4c32efbb2ae2c243c07b8de5ab751b8c1caaa/COPYRIGHT
+  note: "PostgreSQL Licence (COPYRIGHT of pgsql-jp/jpug-doc, the translation's source repository, at the pinned commit; the same notice is the translated document's 法的告知): PostgreSQL Licence. PostgreSQL Database Management System (also known as Postgres, formerly known as Postgres95). Portions Copyright (c) 1996-2026, PostgreSQL Global Development Group. Portions Copyright (c) 1994, The Regents of the University of California. Permission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies. IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS. Converted to Markdown."
+redistribute: true
+sha256: cfbdcd848c9e15def3d3ed8c1282a84e6097257080a2fffe17366885277ebff2
+notes: Built from pgsql-jp/jpug-doc branch doc_ja_18 (bdb4c32efbb2ae2c243c07b8de5ab751b8c1caaa when fetched). The converter keeps the version links line at the top.
