@@ -1,0 +1,44 @@
+id: nodejs-governance
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 92
+    text: README](./README.md#current-project-team
+    message: '"README" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: README is a file name, not an acronym
+  - rule: title-case-consistency
+    line: 178
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 191
+    text: Collaborators should be people volunteer
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 193
+    text: People should get collaborator status be
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 207
+    text: ’s contributions, or even their
+    message: The quote mark ’ here, where the document usually writes ' (1 of 15)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 252
+    text: Do not skip those steps unless you're ab
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: correct
+  - rule: person-consistency
+    line: 285
+    text: one would review a PR
+    message: '"one would" here, where the document usually says "you" (1 of 10)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 289
+    text: If you are neutral, or feel you don't kn
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: unjudged

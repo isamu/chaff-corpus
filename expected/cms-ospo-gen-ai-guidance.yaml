@@ -1,0 +1,46 @@
+id: cms-ospo-gen-ai-guidance
+chaff: 0.35.0
+findings:
+  - rule: quote-style-consistency
+    line: 20
+    text: "'t change who's responsible for the code"
+    message: Quote marks are written two ways in this document (14 curly, 6 straight)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 20
+    text: DSACMS, AI tools *(LLMs, coding assistan
+    message: '"DSACMS" is used without an expansion (4 such acronyms)'
+    verdict: correct
+  - rule: title-case-consistency
+    line: 56
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: title-case-consistency
+    line: 90
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 104
+    text: Test suite, linters, style guides ensure
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 112
+    text: "CMS Technical Review Architecture: AI Co"
+    message: '"CMS" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
+  - rule: undefined-acronym
+    line: 113
+    text: NASA Fprime AI Policy](https://fprime.jp
+    message: '"NASA" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
+  - rule: undefined-acronym
+    line: 114
+    text: "LLM-backed Generative AI Systems](https:"
+    message: '"LLM" is used without an expansion (4 such acronyms)'
+    verdict: false-positive
+    note: the acronym is part of a linked external page's title, which the document quotes and cannot change

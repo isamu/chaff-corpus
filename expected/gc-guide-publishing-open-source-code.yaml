@@ -1,0 +1,149 @@
+id: gc-guide-publishing-open-source-code
+chaff: 0.35.0
+findings:
+  - rule: max-sentence-length
+    line: 3
+    text: The [Directive on Management of Informat
+    message: This sentence runs 61 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 3
+    text: GC acts as a single enterprise and to en
+    message: '"GC" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 5
+    text: These align with the [Digital Standards]
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 7
+    text: As such it is recommended that where the
+    message: This sentence runs 53 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 7
+    text: OSS; (ii) developed in-house by GC emplo
+    message: '"OSS" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 42
+    text: ISED [Policy on Title to Intellectual Pr
+    message: '"ISED" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 45
+    text: As part of the discussion with the insti
+    message: This sentence runs 78 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 45
+    text: PSPC  [Standard Acquisition Clauses and
+    message: '"PSPC" is used without an expansion (9 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: The procurement contract could also requ
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 65
+    text: When the project is started by the GC it
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 65
+    text: When the project is started by the GC it
+    message: This sentence runs 46 words (limit 40)
+    verdict: correct
+  - rule: bare-url-mix
+    line: 73
+    text: https://opensource.org/licenses/MIT
+    message: The URL "https://opensource.org/licenses/MIT" is written bare (32 worded links in this document)
+    verdict: false-positive
+    note: "a field whose value is the URL itself (Licence text: <url>); a bare URL is right there"
+  - rule: bare-url-mix
+    line: 79
+    text: http://www.apache.org/licenses/LICENSE-2
+    message: The URL "http://www.apache.org/licenses/LICENSE-2.0.txt" is written bare (32 worded links in this document)
+    verdict: false-positive
+    note: "a field whose value is the URL itself (Licence text: <url>); a bare URL is right there"
+  - rule: undefined-acronym
+    line: 83
+    text: AGPL 3.0 or later' refer to version 3 of
+    message: '"AGPL" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 83
+    text: GPL 3.0 or later', 'LGPL 3.0 or later' a
+    message: '"GPL" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 83
+    text: LGPL 3.0 or later' and 'AGPL 3.0 or late
+    message: '"LGPL" is used without an expansion (9 such acronyms)'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 89
+    text: https://www.gnu.org/licenses/gpl-3.0.txt
+    message: The URL "https://www.gnu.org/licenses/gpl-3.0.txt" is written bare (32 worded links in this document)
+    verdict: false-positive
+    note: "a field whose value is the URL itself (Licence text: <url>); a bare URL is right there"
+  - rule: bare-url-mix
+    line: 95
+    text: https://www.gnu.org/licenses/lgpl-3.0.tx
+    message: The URL "https://www.gnu.org/licenses/lgpl-3.0.txt" is written bare (32 worded links in this document)
+    verdict: false-positive
+    note: "a field whose value is the URL itself (Licence text: <url>); a bare URL is right there"
+  - rule: bare-url-mix
+    line: 101
+    text: https://www.gnu.org/licenses/agpl-3.0.tx
+    message: The URL "https://www.gnu.org/licenses/agpl-3.0.txt" is written bare (32 worded links in this document)
+    verdict: false-positive
+    note: "a field whose value is the URL itself (Licence text: <url>); a bare URL is right there"
+  - rule: max-sentence-length
+    line: 105
+    text: You could also just add the licence text
+    message: This sentence runs 50 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 115
+    text: MIT).
+    message: '"MIT" is used without an expansion (9 such acronyms)'
+    verdict: false-positive
+    note: MIT as the name of a licence
+  - rule: empty-section
+    line: 143
+    text: "##### Derivative work, but only links to"
+    message: Nothing under the heading "Derivative work, but only links to original"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 165
+    text: You should always make sure that the out
+    message: This sentence runs 56 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 169
+    text: The [Canadian Copyright Act (section 12)
+    message: This sentence runs 49 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 172
+    text: However, Government of Canada employees
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 246
+    text: The latest code version may not necessar
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 262
+    text: However, the same rules on OL as any oth
+    message: This sentence runs 43 words (limit 40)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 262
+    text: OL as any other applications developed b
+    message: '"OL" is used without an expansion (9 such acronyms)'
+    verdict: correct

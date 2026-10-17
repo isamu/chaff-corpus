@@ -1,0 +1,106 @@
+id: cncf-charter
+chaff: 0.35.0
+findings:
+  - rule: defined-name-repeated
+    line: 15
+    text: Cloud Native Computing Foundation seeks
+    message: '"Cloud Native Computing Foundation" was given the short name "CNCF" on line 1'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 33
+    text: SEM, direct marketing), training courses
+    message: '"SEM" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 72
+    text: TAB.
+    message: '"TAB" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: TAB is defined in the heading of section 8 (End User Technical Advisory Board, “End User TAB”), after its first use
+  - rule: undefined-acronym
+    line: 129
+    text: IRV method.
+    message: '"IRV" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: defined-name-repeated
+    line: 157
+    text: Cloud Native Computing Foundation,
+    message: '"Cloud Native Computing Foundation" was given the short name "CNCF" on line 1'
+    verdict: correct
+  - rule: dangling-reference
+    line: 191
+    text: Section 9(b)(i),
+    message: '"Section 9(b)(i)" (address 9.b.i) is not in this document'
+    verdict: false-positive
+    note: "the section exists: a '#### N.' heading with list items '(b)' and nested 'i.'-style items (tab-indented) that chaff does not read as addresses"
+  - rule: quote-style-consistency
+    line: 223
+    text: "'s name, contact information and support"
+    message: Quote marks are written two ways in this document (15 curly, 5 straight)
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 259
+    text: “End User Participant) may participate.
+    message: '"“" is never closed'
+    verdict: correct
+  - rule: dangling-reference
+    line: 299
+    text: Section 8(b)(iv) of this charter.
+    message: '"Section 8(b)(iv)" (address 8.b.iv) is not in this document'
+    verdict: false-positive
+    note: "the section exists: a '#### N.' heading with list items '(b)' and nested 'i.'-style items (tab-indented) that chaff does not read as addresses"
+  - rule: unused-definition
+    line: 310
+    text: (“SIGs”), or subcommittees to address in
+    message: '"SIGs" is defined but never used'
+    verdict: correct
+  - rule: unknown-word
+    line: 326
+    text: incuding as a CNCF project.
+    message: '"incuding" is not in the dictionary; did you mean "including"?'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 344
+    text: OSI-approved open source license and is
+    message: '"OSI" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 372
+    text: '") template options; and'
+    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 372
+    text: '"), or (2) one of the Joint Development'
+    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 372
+    text: '"CSL"), or (2) one of the Joint Developm'
+    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 372
+    text: '"JDF") template options; and'
+    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    verdict: correct
+  - rule: unused-definition
+    line: 372
+    text: ("CSL"), or (2) one of the Joint Develop
+    message: '"CSL" is defined but never used'
+    verdict: correct
+  - rule: unused-definition
+    line: 372
+    text: ("JDF") template options; and
+    message: '"JDF" is defined but never used'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 378
+    text: CLA. For projects that select to use a C
+    message: '"CLA" is used without an expansion (5 such acronyms)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 418
+    text: nonprofit mission of The Linux Foundatio
+    message: '"nonprofit" here, where the document usually writes "Non-Profit" (1 of 6)'
+    verdict: correct

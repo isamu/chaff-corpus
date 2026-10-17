@@ -1,0 +1,108 @@
+id: miskiyaku-terms-writing-points
+chaff: 0.35.0
+findings:
+  - rule: missing-final-period
+    line: 10
+    text: る
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。55 段落のうち 2 段落）
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 12
+    text: い
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。55 段落のうち 2 段落）
+    verdict: unjudged
+  - rule: connective-hierarchy
+    line: 17
+    text: 並びに利用者に即した規約はどういったものかを再考していきたいと思い
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 36
+    text: 個人サーバーや村サーバーは所謂小規模コミュニティであるため、自ずから見知った人間
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 42
+    text: Misskey は分散型の SNS
+    message: 一文だけの段落が 8 個続いています（4 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: 利用規約が存在することによって得られるメリットは、不特定多数の人間に対して一律か
+    message: この文は 201 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 45
+    text: 利用規約が存在することによって得られるメリットは、不特定多数の人間に対して一律か
+    message: 「は」で出した主題から述語まで 174 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 49
+    text: ・規模に問わず不特定多数の利用者が登録する。
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 51
+    text: ・自身で自治行為を行うのではなく、利用者には比較的自由な利用を想定したい。
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 53
+    text: ・ローカルコミュニティサーバーでない。
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: connective-hierarchy
+    line: 65
+    text: 並びに既存の利用者に求められることとなります。
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 65
+    text: 事が新規並びに既存の利用者に求められることとなります。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。25 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 75
+    text: 事が求められるでしょう。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。25 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 75
+    text: また、そういった面でのトラブルは法的紛争に発展しやすい点からも、自身がどのように
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 84
+    text: ほうがいいでしょう。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 96
+    text: 物になるでしょう。
+    message: 「物」と書いています（この文書はふつう「もの」と書く語です。12 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 107
+    text: 修正、改善が必要な箇所、誤謬、誤表現等がございましたら PR（プルリクエスト）に
+    message: 一文だけの段落が 6 個続いています（4 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 116
+    text: 事になるため非常に危険です。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。25 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 130
+    text: 事から、利用者が継続して契約を続け利用を行うかに関してもその規約に従って判断され
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。25 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 134
+    text: など、適切な形で通知に関する要件を整備しておく必要があります。
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 150
+    text: 前回記載した利用規約テンプレートが、有難いことに一部の方にご覧いただけたというこ
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged

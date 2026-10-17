@@ -1,0 +1,135 @@
+id: miskiyaku-simple-terms
+chaff: 0.35.0
+findings:
+  - rule: tari-unpaired
+    line: 4
+    text: たり、より厳格に運営される場合は通常版のテンプレートをご参照ください。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 8
+    text: (以下、本規約)は △△ による皆さんが ○○○○ を利用する上での規約を定める
+    message: 括弧を「(」と書いています（この文書はふつう「（」。10 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 8
+    text: )は △△ による皆さんが ○○○○ を利用する上での規約を定めるものです。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 9
+    text: OOOO を利用するにあたり本規約に同意して頂く必要がございます。
+    message: 「OOOO」が説明なしで使われています（説明のない略語 3 個）
+    verdict: false-positive
+    note: a template placeholder (OOOO, XX), not an acronym
+  - rule: orthographic-variant
+    line: 13
+    text: 事に関して適用されます。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。14 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: doubled-word
+    line: 15
+    text: が矛盾する場合には、個別規定を優先するものとします。
+    message: 「がが」で語が重なっています。どちらかが余分です
+    verdict: correct
+  - rule: connective-hierarchy
+    line: 28
+    text: 並びに特定の宗教団体の活動を目的として申請した場合
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 51
+    text: たり、妨害することを目的とした行為、なりすまし行為
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: requirement-smell
+    line: 109
+    text: などにより利用者の方々や第三者が被った不利益、損害について、△△ は自己の故意ま
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: requirement-smell
+    line: 113
+    text: 等を消去し、利用者に対して ○○○○ の全部もしくは一部の利用を制限、もしくは登
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: orthographic-variant
+    line: 130
+    text: 事が出来るものとします。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。14 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: requirement-smell
+    line: 130
+    text: などの必要な知的財産権を有するか、必要な権利者の許諾を得た文章、メディアの情報に
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: connective-hierarchy
+    line: 131
+    text: 並びに本サービスの周知宣伝等に必要な範囲で利用できるものとし、ユーザーは当該利用
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 131
+    text: ならびにその他既存の権利者に留保されるものとします。ただし管理者はこれらについて
+    message: 「ならびに」と書いています（この文書はふつう「並びに」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: requirement-smell
+    line: 131
+    text: 等に必要な範囲で利用できるものとし、ユーザーは当該利用に必要な範囲に限り著作者人
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: requirement-smell
+    line: 131
+    text: 等の著作権は利用者ならびにその他既存の権利者に留保されるものとします。ただし管理
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: requirement-smell
+    line: 132
+    text: 等をしてはならないものとします。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
+  - rule: orthographic-variant
+    line: 136
+    text: 事も保証しません。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。14 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 136
+    text: 無い事も保証しません。
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 170
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 180
+    text: GDPR 圏、EU 圏その他国外に居住する利用者に関しては、適用される法令がある
+    message: 「GDPR」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 186
+    text: XX 月 XX 日　初版発行
+    message: 「XX」が説明なしで使われています（説明のない略語 3 個）
+    verdict: false-positive
+    note: a template placeholder (OOOO, XX), not an acronym
+  - rule: bracket-width-consistency
+    line: 188
+    text: (必ず連絡がつく情報を記載)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。10 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 188
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: no-doubled-joshi
+    line: 8
+    what: the topic particle は appears twice around the definition parenthesis (本利用規約は…本規約)は), a typo for one は
+    verdict: missed
