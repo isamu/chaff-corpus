@@ -3,39 +3,32 @@ chaff: 0.35.0
 findings:
   - rule: undefined-acronym
     line: 27
-    text: IE/Edge/Firefox/Chrome/Safari
-    message: 「IE」が説明なしで使われています（説明のない略語 4 個）
+    sha256: 7c59dc306beb28c6acf3f07a0740207953c744bac75262bfd81678bbe74161e3
     verdict: false-positive
-    note: IE is the common name of a browser, listed with other browser names
+    note: the common short name of a browser, listed with other browser names
   - rule: undefined-acronym
     line: 33
-    text: JSデバッグ術 - Mercari Engineering Blog](http
-    message: 「JS」が説明なしで使われています（説明のない略語 4 個）
+    sha256: 9a85cfe70944cad4e7e3f3240fbebfe0e481d60f43aad2529a543fa4b7b0ade1
     verdict: false-positive
     note: the acronym is part of a linked external page's title, which the document quotes and cannot change
   - rule: undefined-acronym
     line: 42
-    text: VMのWindowsでは再現しないが、実機では再現するといった違いなどが発生しま
-    message: 「VM」が説明なしで使われています（説明のない略語 4 個）
+    sha256: 307c79bd0a4e1f403ecabaa7a703017152616b3d78d9abc763631b57cc0369cc
     verdict: unjudged
   - rule: undefined-acronym
     line: 57
-    text: MDN](https://developer.mozilla.org/en-US
-    message: 「MDN」が説明なしで使われています（説明のない略語 4 個）
+    sha256: d6157cb2a4b511e36ac0020d4324fdcd1c851edd83d9650a33f9afe7a1c14ed6
     verdict: false-positive
     note: the acronym is part of a linked external page's title, which the document quotes and cannot change
   - rule: ra-nuki
     line: 161
-    text: 見れます。
-    message: 「見れ」は「ら」の抜けた形です
+    sha256: 5845782ebe51dc1b8149bb5a3f755fc7b4c84f67d2a559b176890bf904f32daf
     verdict: correct
   - rule: image-file-name-alt
     line: 164
-    text: "![timeline.png](img/timeline.png)"
-    message: 画像の代替テキスト「timeline.png」はファイルの名前です
+    sha256: 0c7dbce18f722570b1a418d9af94d4e77ad8a38f379887bb83ec10a9f5cec1b0
     verdict: correct
   - rule: no-mixed-desumasu
     line: 173
-    text: 大げさな仕組み化をしなければ既存の機能を乗っ取ったりしてログを得ることはできるは
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    sha256: 63ff3ad321b77a632bc468d1db6fca54728238760bfac7f3dcf8081a3af59720
     verdict: correct

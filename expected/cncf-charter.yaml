@@ -3,104 +3,84 @@ chaff: 0.35.0
 findings:
   - rule: defined-name-repeated
     line: 15
-    text: Cloud Native Computing Foundation seeks
-    message: '"Cloud Native Computing Foundation" was given the short name "CNCF" on line 1'
+    sha256: 9173caebb449f769cbcca36eb5e72f2623d2adb27e92bd2b3b8fd9255d48261f
     verdict: correct
   - rule: undefined-acronym
     line: 33
-    text: SEM, direct marketing), training courses
-    message: '"SEM" is used without an expansion (5 such acronyms)'
+    sha256: 030fcea124bf2bf8088cd0a3b7650c4f09d412dda14d7fbbd3cf9e965a496fed
     verdict: correct
   - rule: undefined-acronym
     line: 72
-    text: TAB.
-    message: '"TAB" is used without an expansion (5 such acronyms)'
+    sha256: 69f51f9b174b24c57d08ed09ac17508eb648754f4bca23137671a1c5ff0b6276
     verdict: false-positive
-    note: TAB is defined in the heading of section 8 (End User Technical Advisory Board, “End User TAB”), after its first use
+    note: the acronym is expanded in a later section heading, after its first use
   - rule: undefined-acronym
     line: 129
-    text: IRV method.
-    message: '"IRV" is used without an expansion (5 such acronyms)'
+    sha256: ae1f36ae152b45c51dc07b97b8170ec5960e4ae48db9b685d7edfd6c8a5083ee
     verdict: correct
   - rule: defined-name-repeated
     line: 157
-    text: Cloud Native Computing Foundation,
-    message: '"Cloud Native Computing Foundation" was given the short name "CNCF" on line 1'
+    sha256: 67bc823266f191e9b863601ca59b79fe8a09b69e3acb127dd403f22bbb910dc8
     verdict: correct
   - rule: dangling-reference
     line: 191
-    text: Section 9(b)(i),
-    message: '"Section 9(b)(i)" (address 9.b.i) is not in this document'
+    sha256: 879c7f389f52a7c5a3a8b496268251d32e7a27a7b3b673eccd40b0358ee7e24c
     verdict: false-positive
-    note: "the section exists: a '#### N.' heading with list items '(b)' and nested 'i.'-style items (tab-indented) that chaff does not read as addresses"
+    note: the section exists, as a numbered Markdown heading with lettered list items and tab-indented roman-numeral sub-items that chaff does not read as addresses
   - rule: quote-style-consistency
     line: 223
-    text: "'s name, contact information and support"
-    message: Quote marks are written two ways in this document (15 curly, 5 straight)
+    sha256: 894d929c3772a898ceed6910a4c2310d83371358ab66dc939400108189e2b372
     verdict: correct
   - rule: unbalanced-bracket
     line: 259
-    text: “End User Participant) may participate.
-    message: '"“" is never closed'
+    sha256: 88a292f6f9ebe1855ac0015fcb9c5827b480edd6d43f96a011bc91d64371903a
     verdict: correct
   - rule: dangling-reference
     line: 299
-    text: Section 8(b)(iv) of this charter.
-    message: '"Section 8(b)(iv)" (address 8.b.iv) is not in this document'
+    sha256: fefbf6292cb1a7c1818609f6a7a32e31aadeb153792a199e1e0542e49c9b35c3
     verdict: false-positive
-    note: "the section exists: a '#### N.' heading with list items '(b)' and nested 'i.'-style items (tab-indented) that chaff does not read as addresses"
+    note: the section exists, as a numbered Markdown heading with lettered list items and tab-indented roman-numeral sub-items that chaff does not read as addresses
   - rule: unused-definition
     line: 310
-    text: (“SIGs”), or subcommittees to address in
-    message: '"SIGs" is defined but never used'
+    sha256: f3621b7e11edde5a2fcc0a79cb892267eddfbe7b107dcf23c3db9a49e63e1c5c
     verdict: correct
   - rule: unknown-word
     line: 326
-    text: incuding as a CNCF project.
-    message: '"incuding" is not in the dictionary; did you mean "including"?'
+    sha256: 5e438fd894d00956fab8ddaf4b91b5b6fbec947884f60c638270b130e35dee2a
     verdict: correct
   - rule: undefined-acronym
     line: 344
-    text: OSI-approved open source license and is
-    message: '"OSI" is used without an expansion (5 such acronyms)'
+    sha256: 9bf393d5d29b660ead850923a908578fe9e893e9d8dc6e4c417fb0e81e1debf9
     verdict: correct
   - rule: quote-style-consistency
     line: 372
-    text: '") template options; and'
-    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    sha256: 0baab2359e4759866c968360b2ec8d27834ced3d6dbdba8b18fab003d9030184
     verdict: correct
   - rule: quote-style-consistency
     line: 372
-    text: '"), or (2) one of the Joint Development'
-    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    sha256: 379fd0fbade1f956ec3ca63b8e62d8f8c6a7199f0846d4276c179bd35dfae55f
     verdict: correct
   - rule: quote-style-consistency
     line: 372
-    text: '"CSL"), or (2) one of the Joint Developm'
-    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    sha256: 5ca9b58c04d76f1c171ee7f6b1bf38dbf6fb385629e74aa9050e667f3d48c9a9
     verdict: correct
   - rule: quote-style-consistency
     line: 372
-    text: '"JDF") template options; and'
-    message: The quote mark " here, where the document usually writes “” (4 of 19)
+    sha256: ca53759aaa6e571b6fd8e524c9578494e0ff9458ea7d0895e1d76292f7d8c834
     verdict: correct
   - rule: unused-definition
     line: 372
-    text: ("CSL"), or (2) one of the Joint Develop
-    message: '"CSL" is defined but never used'
+    sha256: 1988a2dff7e78ebfef2ae80c2106a90b2d1d420729cbb71ad867b8417d22ada6
     verdict: correct
   - rule: unused-definition
     line: 372
-    text: ("JDF") template options; and
-    message: '"JDF" is defined but never used'
+    sha256: 851dc2f1691ab717d4476fd4c7725000f2df9ac26fb54cd21987b838c3b8e618
     verdict: correct
   - rule: undefined-acronym
     line: 378
-    text: CLA. For projects that select to use a C
-    message: '"CLA" is used without an expansion (5 such acronyms)'
+    sha256: 52da892e0e83ff052a435f5271dc7c33929798837b5f483e99e75baf812370d1
     verdict: correct
   - rule: orthographic-variant
     line: 418
-    text: nonprofit mission of The Linux Foundatio
-    message: '"nonprofit" here, where the document usually writes "Non-Profit" (1 of 6)'
+    sha256: aebf8820775a84708804d0e08386885e906bb6738f7385f23460f841bc699b73
     verdict: correct

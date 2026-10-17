@@ -7,8 +7,8 @@ source:
   url: https://raw.githubusercontent.com/cncf/foundation/aa6902dc4ecdf29f339899de05c7c6dca6aaad6a/charter.md
   fetched: 2026-10-17
 license:
-  name: CC-BY-4.0
-  url: https://github.com/cncf/foundation/blob/aa6902dc4ecdf29f339899de05c7c6dca6aaad6a/LICENSE
-  note: "CC-BY-4.0 per the repository's LICENSE (documentation under CC BY 4.0 per section 11 of the charter); © The Linux Foundation / CNCF; the Markdown source as published, unmodified"
-redistribute: true
+  name: See note (not redistributed)
+  url: https://www.linuxfoundation.org/legal/terms
+  note: "No licence covers the charter itself: cncf/foundation has no LICENSE file (GitHub reports NOASSERTION), charter.md carries no SPDX or licence notice (unlike license-notices.md and copyright-notices.md in the same repo, which carry CC-BY-4.0), and charter section 11 puts project documentation, not the charter, under CC BY 4.0. cncf.io/about/charter redirects to the GitHub file; the cncf.io footer reads \"Copyright © The Linux Foundation. All rights reserved.\" and links the Linux Foundation Terms of Use, whose CC BY 3.0 grant is for content on its own web sites. Not clearly redistributable, so URL and sha256 only"
+redistribute: false
 sha256: 68871a91622874118fe11f04300be3a052d3282b8b421aa490125bee7efddcf7
