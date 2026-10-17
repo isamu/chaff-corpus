@@ -171,23 +171,8 @@ findings:
     text: 第百六条　使用者は、この法律及びこれに基づく命令の要旨、就業規則、第十八条第二項
     message: 「は」で出した主題から述語まで 312 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 588
-    text: 第七項を除く。）、第六十一条、第六十二条、第六十四条の三から第六十七条まで、第七
-    message: 第三十九条に「第七項を除く。」と添えていますが、第三十九条の見出しは「年次有給休暇」です
-    verdict: unjudged
   - rule: clause-chain
     line: 594
     text: 一　第十四条、第十五条第一項若しくは第三項、第十八条第七項、第二十二条第一項から
     message: 一文に節が 10 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 594
-    text: 第百条第三項において準用する場合を含む。）又は第百六条から第百九条までの規定に違
-    message: 第百五条に「第百条第三項において準用する場合を含む。」と添えていますが、第百五条の見出しは「労働基準監督官の義務」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 597
-    text: 第百条第三項において準用する場合を含む。）の規定による労働基準監督官又は女性主管
-    message: 第百一条に「第百条第三項において準用する場合を含む。」と添えていますが、第百一条の見出しは「労働基準監督官の権限」です
     verdict: unjudged

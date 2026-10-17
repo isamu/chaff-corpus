@@ -6,16 +6,6 @@ findings:
     text: 申込みを拒絶し、遺贈を放棄し、負担付贈与の申込みを承諾し、又は負担付遺贈を承認す
     message: 「申込み」を、2453 行目の定義より前で使っています
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 145
-    text: 在った者その他死亡の原因となるべき危難に遭遇した者の生死が、それぞれ、戦争が止や
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 151
-    text: 取消し前に善意でした行為の効力に影響を及ぼさない。
-    message: 「取消し」と書いています（この文書はふつう「取消」と書く語です。41 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: teki-overuse
     line: 498
     text: ４　第一項の合意がその内容を記録した電磁的記録（電子的方式、磁気的方式その他人の
@@ -36,45 +26,15 @@ findings:
     text: ２　所有者不明建物管理命令の効力は、当該所有者不明建物管理命令の対象とされた建物
     message: 「は」で出した主題から述語まで 248 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 1235
-    text: 在るその宿泊客の手荷物について存在する。
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
   - rule: use-before-definition
     line: 1429
     text: 詐害行為取消請求をすることができる場合は、この限りでない。
     message: 「詐害行為取消請求」を、1786 行目の定義より前で使っています
     verdict: unjudged
   - rule: orthographic-variant
-    line: 1479
-    text: 取り下げたとき。
-    message: 「取り下げる」と書いています（この文書はふつう「取下げる」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1500
-    text: 買受け）
-    message: 「買受ける」と書いています（この文書はふつう「買い受ける」と書く語です。9 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1518
-    text: 買受けの時から六箇月を経過するまでは、その建物を買受人に引き渡すことを要しない。
-    message: 「買受ける」と書いています（この文書はふつう「買い受ける」と書く語です。9 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1521
-    text: 買受けの時より後に同項の建物の使用をしたことの対価について、買受人が抵当建物使用
-    message: 「買受ける」と書いています（この文書はふつう「買い受ける」と書く語です。9 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
     line: 1564
     text: 引受けがあったときは、根抵当権者は、引受人の債務について、その根抵当権を行使する
     message: 「引受け」と書いています（この文書はふつう「引受」と書く語です。24 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1771
-    text: 取立てその他の処分をすることを妨げられない。この場合においては、相手方も、被代位
-    message: 「取立てる」と書いています（この文書はふつう「取り立てる」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: use-before-definition
     line: 2023
@@ -86,70 +46,10 @@ findings:
     text: 引受け
     message: 「引受け」と書いています（この文書はふつう「引受」と書く語です。24 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2668
-    text: 第五百六十五条において準用する場合を含む。）の規定により、債務者に対し、契約の解
-    message: 第五百六十三条に「第五百六十五条において準用する場合を含む。」と添えていますが、第五百六十三条の見出しは「買主の代金減額請求権」です
-    verdict: unjudged
   - rule: orthographic-variant
-    line: 2772
-    text: 受取り前の貸主による使用貸借の解除）
-    message: 「受取る」と書いています（この文書はふつう「受け取る」と書く語です。27 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3068
-    text: 受取り前の寄託者による寄託の解除等）
-    message: 「受取る」と書いています（この文書はふつう「受け取る」と書く語です。27 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3431
-    text: 在る日本人間の婚姻の方式）
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3432
-    text: 在る日本人間で婚姻をしようとするときは、その国に駐在する日本の大使、公使又は領事
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3618
-    text: 第二号に係る部分に限る。）又は前条（第二号に係る部分に限る。）の期間の満了前六箇
-    message: 第七百七十七条に「第二号に係る部分に限る。」と添えていますが、第七百七十七条の見出しは「嫡出否認の訴えの出訴期間」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3619
-    text: 第二号に係る部分に限る。）及び前条（第二号に係る部分に限る。）の規定にかかわらず
-    message: 第七百七十七条に「第二号に係る部分に限る。」と添えていますが、第七百七十七条の見出しは「嫡出否認の訴えの出訴期間」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3621
-    text: 第四号に係る部分に限る。）及び前条（第四号に係る部分に限る。）に掲げる否認権の行
-    message: 第七百七十七条に「第四号に係る部分に限る。」と添えていますが、第七百七十七条の見出しは「嫡出否認の訴えの出訴期間」です
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3643
-    text: 在る子でも、認知することができる。この場合においては、母の承諾を得なければならな
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3658
-    text: 第一号に係る部分に限る。）の規定にかかわらず、二十一歳に達するまでの間、認知の無
-    message: 前項に「第一号に係る部分に限る。」と添えていますが、前項の見出しは「認知の無効の訴え」です
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3717
-    text: 在る日本人間の縁組の方式）
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3718
-    text: 在る日本人間で縁組をしようとするときは、その国に駐在する日本の大使、公使又は領事
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3752
-    text: 取消し等の規定の準用）
-    message: 「取消し」と書いています（この文書はふつう「取消」と書く語です。41 箇所のうち 2 箇所が違う）
+    line: 4036
+    text: 申出義務）
+    message: 「申出る」と書いています（この文書はふつう「申し出る」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: clause-chain
     line: 4249
@@ -160,41 +60,6 @@ findings:
     line: 4249
     text: 取り消し、又は変更することを妨げた者
     message: 「取り消し」と書いています（この文書はふつう「取消し」と書く語です。80 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4622
-    text: 立ち会った医師は、遺言者が遺言をする時において精神上の障害により事理を弁識する能
-    message: 「立ち会う」と書いています（この文書はふつう「立会う」と書く語です。11 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4643
-    text: 在る者は、警察官一人及び証人一人以上の立会いをもって遺言書を作ることができる。
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4646
-    text: 在る者は、船長又は事務員一人及び証人二人以上の立会いをもって遺言書を作ることがで
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4649
-    text: 在って死亡の危急に迫った者は、証人二人以上の立会いをもって口頭で遺言をすることが
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4666
-    text: 在る日本人の遺言の方式）
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4667
-    text: 在る日本人が公正証書又は秘密証書によって遺言をしようとするときは、公証人の職務は
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4725
-    text: 在るときは、その物を遺贈の目的としたものと推定する。
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。464 箇所のうち 13 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 4877
