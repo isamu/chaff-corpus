@@ -49,6 +49,45 @@ notes: 自由記述（任意）
 ときは、`source.format` に判定した本文を作った変換の名前（isamu/lab と同じ `wikitext`・`html`・`google-patents`・`kokkai`）を
 書きます。実行時は取得したものを同じ変換にかけてから sha256 を比べます。
 
+### Hugging Face のデータセットの1件: `source.hf`
+
+本文が Hugging Face のデータセットの1件（1行）のときは、`source.hf` にどの1件かを書きます。`source.url` には読む人が文書を
+見る場所（開示書類、データセットのページ）を書きます。`source.hf` と `source.format` は同時に書けません。
+
+```yaml
+source:
+  url: https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SXUQ,,
+  fetched: 2026-10-15
+  hf:
+    dataset: numad/yuho-text-2024                         # <owner>/<name>
+    config: default
+    split: train
+    offset: 98                                            # split の行、または file の行（0 から）
+    field: text                                           # 本文が入っているフィールド
+    revision: 2993206922ead839ce003e2faa65cd5d2ff07607    # 本文を取ったときのデータセットのコミット（40 桁の sha）
+    file: yuho-202402.jsonl                               # 任意: revision の時点のデータセットの JSONL ファイル
+```
+
+| フィールド | |
+| --- | --- |
+| `dataset`・`config`・`split` | どのデータセットのどの split か。すべて必須 |
+| `offset` | 0 以上の整数。split の中の行。`file` があればそのファイルの行 |
+| `field` | 本文にあたるフィールド。`render` があるときは、レンダラーが読むフィールド |
+| `revision` | 必須。本文を取ったときのデータセットのコミット sha |
+| `file` | 任意。データセット内の `.jsonl` のパス。`https://huggingface.co/datasets/<dataset>/resolve/<revision>/<file>` から読むので、`revision` に固定されます |
+| `render` | 任意。`field` をそのまま使わず、1件全体を描画します。レンダラーは `edinet-bench` だけです（SakanaAI/EDINET-Bench の1件を Markdown に: 表題、`field` の各節、続いて主要な経営指標と財務諸表を表で） |
+| `omit` | 任意。`render` と一緒にだけ使えます。レンダラーが省く部分（人名が載る節など） |
+
+`file` がないときは datasets-server の rows API
+（`https://datasets-server.huggingface.co/rows?dataset=…&config=…&split=…&offset=…&length=1`）から読みます。rows API は
+データセットの最新コミットしか返さないので、`revision` は記録されても守られません。データセットに JSONL ファイルがあれば
+`file` を書きます。`Content-Length` が 64 MiB を超えるデータファイルは読みません。
+
+取得するのは本文がコミットされていない文書（`redistribute: false`）だけです。実行時か `yarn judge` で取得し、sha256 が
+一致したときだけ使います。一致しなければ、その理由が「Not run」に載ります（どのファイルの何行目、または rows API の何行目か。
+rows API のときは、`revision` ではなく最新コミットを返したことも書かれます）。本文をコミットしている文書では、`source.hf` は
+どこから取ったかの記録です。`yarn validate` がフィールドを確かめ、sha256 はコミットしたファイルの値です。
+
 ### `expected/<id>.yaml` と判定
 
 ```yaml

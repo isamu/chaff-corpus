@@ -88,6 +88,8 @@ findings:
    A committed text is hashed byte for byte as the file is, so save it as UTF-8 without a byte-order mark. A text
    fetched at run time (`redistribute: false`) is hashed as decoded, and decoding drops a leading BOM: if your
    downloaded copy starts with one, remove it before running `shasum`, or the hash will not match the run's.
+   For a record of a Hugging Face dataset, add `source.hf` instead of `source.format`: see
+   [the README](README.md#a-record-of-a-hugging-face-dataset-sourcehf).
 6. **Run** `yarn validate`, then `yarn run-corpus --update --only <id>`. This writes `expected/<id>.yaml` with every
    finding as `unjudged`.
 7. **Judge what you can** (below), and open a pull request. The template asks for the checks above.

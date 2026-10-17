@@ -85,6 +85,7 @@ findings:
    コミットする本文はファイルのバイト列そのままで計算されるので、BOM なしの UTF-8 で保存します。実行時に取得する本文
    （`redistribute: false`）は文字列に読み込んだ後で計算され、その読み込みで先頭の BOM は落ちます。手元に保存した
    コピーが BOM で始まっていたら、取り除いてから `shasum` を実行します（そのままでは実行時の値と一致しません）。
+   Hugging Face のデータセットの1件なら、`source.format` ではなく `source.hf` を書きます（[README](README.ja.md#hugging-face-のデータセットの1件-sourcehf) 参照）。
 6. **実行する。** `yarn validate`、続けて `yarn run-corpus --update --only <id>`。指摘がすべて `unjudged` として
    `expected/<id>.yaml` に書かれます。
 7. **判定できるものを判定し**（下記）、PR を出します。テンプレートに上の確認項目があります。
