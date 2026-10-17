@@ -1,4 +1,5 @@
 // Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// The one change from lab: the site's chrome (html-site-chrome.ts) is dropped before the page's content is chosen.
 // An HTML page (a CRS report as EveryCRSReport serves it, a ministry's page) as plain Markdown: headings, paragraphs,
 // list items and the text of links; ruby keeps its base text and loses its reading. Only the <main> element (else the
 // role="main" element, else a sole <article>, else the block holding the title and nearly every sentence) is read when
@@ -38,6 +39,7 @@ import { withoutFootnoteMarks } from "./html-footnote-marks.ts";
 import { withoutHeadingSelfLinks } from "./html-heading-links.ts";
 import { withLostParagraphTagsRestored } from "./html-lost-tags.ts";
 import { withoutReaderOnlyText } from "./html-reader-only.ts";
+import { withoutSiteChrome } from "./html-site-chrome.ts";
 import { withRunInHeadingsRead } from "./html-run-in-headings.ts";
 import { withoutWidgets } from "./html-widgets.ts";
 import { withPreformattedRestored, withPreformattedStashed } from "./html-preformatted.ts";
@@ -466,7 +468,7 @@ export const htmlToMarkdown = (html: string): string => {
   const uncommented = withLostParagraphTagsRestored(withAttributeMarkupEscaped(html).replace(/<!--[\s\S]*?-->|<\?[\s\S]*?\?>/gu, ""));
   const preformatted = withPreformattedStashed(withTablesRead(DROPPED.reduce(withoutElement, withoutRubyText(uncommented))));
   const kept = withoutFootnoteMarks(
-    withoutHeadingSelfLinks(withoutWidgets(withoutButtons(withoutReaderOnlyText(withoutHiddenElements(mainContent(preformatted.html)))))),
+    withoutHeadingSelfLinks(withoutWidgets(withoutButtons(withoutReaderOnlyText(withoutHiddenElements(mainContent(withoutSiteChrome(preformatted.html))))))),
   ).replace(MARKUP_SPACE, " ");
   const content = withoutClosingLinks(
     withoutLinkGroups(withoutNavigation(withoutIconMenus(withoutSiteHeader(withoutNavigationLandmarks(withoutClosingAddress(kept)))))),

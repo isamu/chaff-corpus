@@ -1,12 +1,6 @@
 id: osaka-kansa-jumin-seikyu-tetsuzuki
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 9
-    text: 大阪市行政委員会事務局監査部監査課特別監査担当　06-6208-8582
-    message: 「大阪市行政委員会事務局監査部監査課特別監査担当」は漢字が 23 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (the contact line)
   - rule: bracket-width-consistency
     line: 31
     text: (概要)
@@ -59,24 +53,6 @@ findings:
     text: "#### 監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があり"
     message: 見出し「監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があります。」だけ「。」で終わっています（ほかの見出しは「①　請求対象の特定」など 6 個が「：」「。」なしで終わる）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 113
-    text: ・　参考作成例は様式1のとおりです（地方自治法施行令第172条及び同施行規則第1
-    message: 「地方自治法施行令第」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: a statute's name in a citation (地方自治法施行令第172条); the run is the name and the article mark
-  - rule: max-kanji-continuous
-    line: 113
-    text: また、外部監査人による監査を求める場合は様式2のとおりです（地方自治法施行令第1
-    message: 「地方自治法施行令第」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: a statute's name in a citation (地方自治法施行令第174条の49の41); the run is the name and the article mark
-  - rule: max-kanji-continuous
-    line: 127
-    text: （大阪市行政委員会事務局監査部監査課特別監査担当　06-6208-8582）
-    message: 「大阪市行政委員会事務局監査部監査課特別監査担当」は漢字が 23 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself (the contact line)
   - rule: heading-end-punctuation-mix
     line: 141
     text: "#### 職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は"

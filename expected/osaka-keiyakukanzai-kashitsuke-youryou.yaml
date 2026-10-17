@@ -12,9 +12,3 @@ findings:
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 11 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: heading-echo
-    line: 120
-    text: 「皆さんの声をお寄せください」一覧
-    message: 見出し「皆さんの声をお寄せください」を直後の文がほぼそのまま繰り返しています
-    verdict: false-positive
-    note: the site footer's feedback block (a heading and its link list) the converter kept, not a sentence restating the heading
