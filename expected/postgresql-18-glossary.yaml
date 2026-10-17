@@ -1,0 +1,133 @@
+id: postgresql-18-glossary
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 1
+    text: RC 1 Released!
+    message: '"RC" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: unknown-word
+    line: 5
+    text: devel
+    message: '"devel" is not in the dictionary; did you mean "level"?'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 27
+    text: Interfaces which PostgreSQL use in order
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 73
+    text: WAL archiver, the WAL receiver (but not
+    message: '"WAL" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 89
+    text: It wakes up periodically, but works only
+    message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 111
+    text: Some operations will access a large numb
+    message: '"a large number of" can be said in fewer words'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 115
+    text: VACUUM, COPY, CREATE TABLE AS SELECT, AL
+    message: '"VACUUM, COPY, CREATE TABLE AS SELECT, ALTER TABLE, CREATE DATABASE, CREATE INDEX" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 229
+    text: PGDATA is commonly used to refer to the
+    message: '"PGDATA" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 229
+    text: The base directory on the file system of
+    message: '"with the exception of" can be said in fewer words'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 281
+    text: CREATE FOREIGN DATA WRAPPER.
+    message: '"CREATE FOREIGN DATA WRAPPER" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 291
+    text: SERVER.
+    message: '"SERVER" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 297
+    text: CREATE FOREIGN TABLE.
+    message: '"CREATE FOREIGN TABLE" is written in capitals'
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 311
+    text: A type of routine that receives zero or
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 365
+    text: "DBMS: read and write access to files and"
+    message: '"DBMS" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 433
+    text: INSERT, UPDATE, DELETE, or MERGE operati
+    message: '"INSERT, UPDATE, DELETE" is written in capitals'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 435
+    text: CREATE MATERIALIZED VIEW.
+    message: '"CREATE MATERIALIZED VIEW" is written in capitals'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 521
+    text: The foremost reasons for doing this are
+    message: '"in the event that" can be said in fewer words'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 535
+    text: INSERT, UPDATE, DELETE, or MERGE command
+    message: '"INSERT, UPDATE, DELETE" is written in capitals'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 543
+    text: REVOKE.
+    message: '"REVOKE" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 589
+    text: it is possible that functions invoked wi
+    message: This sentence stacks 2 hedges ("it is possible that, could")
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 647
+    text: These tables contain data in internal re
+    message: This sentence runs 61 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 669
+    text: TOAST
+    message: '"TOAST" is used without an expansion (7 such acronyms)'
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 693
+    text: INSERT, UPDATE, DELETE, TRUNCATE) is app
+    message: '"INSERT, UPDATE, DELETE, TRUNCATE" is written in capitals'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 703
+    text: A type of constraint defined on a relati
+    message: This sentence runs 51 words (limit 50)
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 729
+    text: CREATE USER MAPPING.
+    message: '"CREATE USER MAPPING" is written in capitals'
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 757
+    text: An auxiliary process which, if enabled,
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: unjudged

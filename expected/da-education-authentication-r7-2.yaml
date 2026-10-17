@@ -1,0 +1,95 @@
+id: da-education-authentication-r7-2
+chaff: 0.35.0
+findings:
+  - rule: taigen-dome-in-prose
+    line: 31
+    text: 第1回有識者会議の取りまとめ状況について事務局より、資料に基づき以下のとおり説明
+    message: 本文に体言止めが 7 文あります（4 文まで）
+    verdict: false-positive
+    note: minutes conventionally end a summary line with a noun (…説明。)
+  - rule: empty-intensifier
+    line: 55
+    text: デジタル庁が示している「デジタルファースト」「ワンスオンリー」「コネクテッド・ワ
+    message: 「非常に重要」は、中身を言わずに強調だけしています
+    verdict: correct
+  - rule: empty-intensifier
+    line: 57
+    text: 段階的な構想は必要であるが、実際に実装する際には一気に統一的に進めることが極めて
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+  - rule: ngram-repetition
+    line: 62
+    text: 今回の業務に合わせた有効期限を持つ署名を採用すべきであると考える。ガイドライン自
+    message: 「であると考える。」が 8 回出てきます（5 回まで）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 68
+    text: LGBTQ+への配慮として性別情報を不要とするなど、データ項目の見直しが進められ
+    message: 「LGBTQ」が説明なしで使われています（説明のない略語 7 個）
+    verdict: false-positive
+    note: LGBTQ+ is a widely known abbreviation
+  - rule: undefined-acronym
+    line: 69
+    text: APPLIC標準が十分に対応しているのかを確認する必要がある。単にAPPLIC標
+    message: 「APPLIC」が説明なしで使われています（説明のない略語 7 個）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 71
+    text: RDFで明確に定義できる。また、XMLやRDFのタグをAPPLIC標準中心で議論
+    message: 「RDF」が説明なしで使われています（説明のない略語 7 個）
+    verdict: correct
+  - rule: teki-overuse
+    line: 72
+    text: 最終的なあるべき姿を明確に示し、その実現に向けて条件を整えることに重点を置く方が
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 74
+    text: WEBを挟むことにより、個人に対してGビズIDのアカウントを付与する必要が生じる
+    message: 「WEB」が説明なしで使われています（説明のない略語 7 個）
+    verdict: false-positive
+    note: WEB is an everyday word written in capitals, not an acronym
+  - rule: empty-intensifier
+    line: 99
+    text: 日本としてどのように対応するかを検討することは極めて重要である。
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+  - rule: teki-overuse
+    line: 99
+    text: オープンバッジやeIDAS等でのマイクロクレデンシャルの領域では、受取先（検証者
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: ime-residue
+    line: 101
+    text: eシールを進めることは良いが、その先の将来を見据えて調査研究をまとめることが望ま
+    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
+    verdict: false-positive
+    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
+  - rule: ime-residue
+    line: 102
+    text: eシールを利用するという提案があるように聞こえた。しかし、NIADのNICセンタ
+    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
+    verdict: false-positive
+    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
+  - rule: ime-residue
+    line: 102
+    text: eシールを各大学が個別に取得するのではなく、文部科学省の管轄で運営されている機関
+    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
+    verdict: false-positive
+    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
+  - rule: undefined-acronym
+    line: 102
+    text: NIADのNICセンターはUNESCOの規約を批准しており、高等教育機関（大学）
+    message: 「NIAD」が説明なしで使われています（説明のない略語 7 個）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 102
+    text: NICセンターはUNESCOの規約を批准しており、高等教育機関（大学）のリストを
+    message: 「NIC」が説明なしで使われています（説明のない略語 7 個）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 102
+    text: UNESCOの規約を批准しており、高等教育機関（大学）のリストを運営していると認
+    message: 「UNESCO」が説明なしで使われています（説明のない略語 7 個）
+    verdict: false-positive
+    note: UNESCO is a widely known abbreviation

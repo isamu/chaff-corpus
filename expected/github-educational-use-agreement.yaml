@@ -1,0 +1,103 @@
+id: github-educational-use-agreement
+chaff: 0.35.0
+findings:
+  - rule: use-before-definition
+    line: 10
+    text: Agreement is related to the GitHub Campu
+    message: '"Agreement" is used here, before it is defined on line 14'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 10
+    text: GitHub Campus Program Partner Schools, a
+    message: '"GitHub" is used here, before it is defined on line 14'
+    verdict: unjudged
+  - rule: vague-link-text
+    line: 10
+    text: "[here](https://education.github.com/scho"
+    message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 14
+    text: '"Agreement") is a legal agreement betwee'
+    message: Quote marks are written two ways in this document (35 curly, 17 straight)
+    verdict: unjudged
+  - rule: undefined-term
+    line: 20
+    text: Order Form solely for their non-commerci
+    message: '"Order Form" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 22
+    text: "## 1. Definitions"
+    message: The heading "1. Definitions" ends bare, while 7 other headings end with a mark ("2. Program Benefits and Conditions.")
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 30
+    text: "”: means the GitHub program setting fort"
+    message: '"”" closes nothing that was opened'
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 38
+    text: " ."
+    message: A space before "."
+    verdict: unjudged
+  - rule: unused-definition
+    line: 40
+    text: '"_Request Effective Date_" means the dat'
+    message: '"Request Effective Date" is defined but never used'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 44
+    text: Updates to the Software that GitHub prov
+    message: '"Updates" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 58
+    text: Agreement Effective Date, Qualified User
+    message: '"Agreement Effective Date" is used here, before it is defined on line 124'
+    verdict: unjudged
+  - rule: bare-url-mix
+    line: 62
+    text: https://support.github.com/contact/campu
+    message: The URL "https://support.github.com/contact/campus-program" is written bare (4 worded links in this document)
+    verdict: unjudged
+  - rule: space-before-punctuation
+    line: 78
+    text: " ."
+    message: A space before "."
+    verdict: unjudged
+  - rule: reference-title-mismatch
+    line: 82
+    text: “Trademark Release”). All Partner Materi
+    message: Section 5 is called "“Trademark Release”" here, but its heading is "Term and Termination."
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 86
+    text: GitHub products and services to Qualifie
+    message: '"GitHub Products" is defined with a capital on line 32, but written in lower case here'
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 96
+    text: ",; and (v) only your Designated Admin sh"
+    message: 'Punctuation is doubled: ",;"'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 96
+    text: "' use of the GitHub Products, including,"
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 19)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 96
+    text: "' use of the GitHub Products; and (iii)"
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 19)
+    verdict: unjudged
+  - rule: doubled-punctuation
+    line: 136
+    text: .. Sections 1 and 3 through 9 will survi
+    message: 'Punctuation is doubled: ".."'
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 184
+    text: "'s Privacy Statement, and Order Forms re"
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 19)
+    verdict: unjudged

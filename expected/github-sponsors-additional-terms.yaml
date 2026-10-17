@@ -1,0 +1,533 @@
+id: github-sponsors-additional-terms
+chaff: 0.35.0
+findings:
+  - rule: duplicate-definition
+    line: 14
+    text: (the "Program"); and 2) set forth the te
+    message: '"Program" is also defined on line 12'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 18
+    text: which is signed by a duly authorized off
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 24
+    text: Sponsored Developer Payments while parti
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 24
+    text: Sponsored Developer**" means the individ
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 26
+    text: Sponsored Developer Account**" means the
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 26
+    text: Sponsored Developer establishes through
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 26
+    text: Stripe that a Sponsored Developer establ
+    message: '"Stripe" is used here, before it is defined on line 42'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 28
+    text: Sponsored Developer Account.
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 28
+    text: Sponsored Developer Content**" means all
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 28
+    text: Sponsored Developer Marks**"); and data
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 28
+    text: Sponsored Developer submits to GitHub in
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 28
+    text: Sponsored Developer's brand names, trade
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 28
+    text: User-Generated Content and Your Content;
+    message: '"User-Generated Content and Your Content" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 28
+    text: ("**Sponsored Developer Marks**"); and d
+    message: '"Sponsored Developer Marks" is defined but never used'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 30
+    text: Sponsored Developer through the Program
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 32
+    text: Sponsored Developer provides to Sponsors
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 34
+    text: Sponsored Developer Account, and other E
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 34
+    text: Sponsored Developer Accounts, plus any a
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 34
+    text: Sponsored Developer elects to use, as ap
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 34
+    text: Sponsored Developer Payment**" means the
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 34
+    text: Exclusions as outlined in Section 4.
+    message: '"Exclusions" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 36
+    text: USD**" means United States Dollar.
+    message: '"USD" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 42
+    text: Sponsored Developers.
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 46
+    text: Sponsored Developer, you enter into a di
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 46
+    text: Sponsored Developers.
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 48
+    text: Sponsored Developers established and mai
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 48
+    text: FBO Sponsored Developers established and
+    message: '"FBO" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 57
+    text: Sponsored Developer acknowledges that us
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 63
+    text: Sponsored Developers for funding;
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 72
+    text: Sponsored Developer funds
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 80
+    text: "### 1.1. GitHub Sponsors Program"
+    message: The heading "1.1. GitHub Sponsors Program" ends bare, while 32 other headings end with a mark ("1A.1 Stripe as Payment Processor.")
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 90
+    text: Misrepresentation or deception related t
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 102
+    text: "### 1.2. GitHub Sponsors Matching Fund"
+    message: The heading "1.2. GitHub Sponsors Matching Fund" ends bare, while 32 other headings end with a mark ("1A.1 Stripe as Payment Processor.")
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 104
+    text: Sponsored Developer Account will not be
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 104
+    text: Sponsored Developer Accounts will receiv
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 104
+    text: Sponsored Developer Accounts. All indivi
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 104
+    text: Open Source Software (OSS) ecosystem to
+    message: '"Open Source Software" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 112
+    text: Sponsored Developer Account must be, bas
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 116
+    text: projects that GitHub determines are offe
+    message: '"Projects" is defined with a capital on line 14, but written in lower case here'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 120
+    text: Sponsored Developer Account eligible for
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 120
+    text: Sponsored Developer Account into GitHub
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 120
+    text: Sponsored Developer Account's first 12 m
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 122
+    text: Sponsored Developer Payment date are not
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 134
+    text: Sponsored Developer Account and Sponsore
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 134
+    text: Sponsored Developer Account; (B) make Sp
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 134
+    text: Sponsored Developer Content available vi
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 134
+    text: Sponsored Developer Content, and any com
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 142
+    text: Sponsored Developer Account. In addition
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 142
+    text: Sponsored Developer Content. Some option
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 146
+    text: pay you the Subscription Sponsorship as
+    message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 150
+    text: Sponsored Developer Payments. You agree
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 154
+    text: Sponsored Developer Content should not b
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 154
+    text: Sponsored Developer Content, you are sol
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 154
+    text: Endorsements and Testimonials.
+    message: '"Endorsements and Testimonials" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 160
+    text: Sponsored Developers are processed and d
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 160
+    text: Sponsored Developers. All payment timing
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 164
+    text: Sponsored Developer Payments, or may be
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 172
+    text: IRS Forms W-8, W-9, or other information
+    message: '"IRS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 172
+    text: which are subject to tax information rep
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 176
+    text: Sponsored Developer and the Sponsor can
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 176
+    text: Sponsored Developer is in breach of thes
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 176
+    text: Sponsored Developer under these Addition
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 176
+    text: Sponsored Developer.
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 176
+    text: Sponsored Developer's breach, or suspect
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 180
+    text: Sponsored Developer Payment because of i
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 180
+    text: Sponsored Developer Payments received in
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 182
+    text: program. Payments thereafter will be rem
+    message: '"Program" is defined with a capital on line 12, but written in lower case here'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 182
+    text: Sponsored Developer Accounts and helps e
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 182
+    text: Sponsored Developer Payments 60 days aft
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 186
+    text: ACH transfer or wire transfer, you will
+    message: '"ACH" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 188
+    text: Sponsored Developers participating in a
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 188
+    text: Sponsored Developers. All payment proces
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 188
+    text: SOSS Fund or similar pooled funding mech
+    message: '"SOSS" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 188
+    text: "Fund Profile: The allocation will draw f"
+    message: '"Fund Profile" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 190
+    text: Sponsored Developer Payments received an
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 194
+    text: Sponsored Developer Payment with any oth
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 194
+    text: Sponsored Developer Payments by ACH/SEPA
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 194
+    text: Sponsored Developer Payments that may be
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 194
+    text: SEPA or wire to an account that you spec
+    message: '"SEPA" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 206
+    text: Sponsored Developer Payment any related
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 206
+    text: Sponsored Developer Payments owed to you
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 206
+    text: Sponsored Developer Payments, you must p
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 206
+    text: notify you, by any means of communicatio
+    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: unjudged
+  - rule: heading-end-punctuation-mix
+    line: 208
+    text: "### 3.8. Stripe Connect"
+    message: The heading "3.8. Stripe Connect" ends bare, while 32 other headings end with a mark ("1A.1 Stripe as Payment Processor.")
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 214
+    text: Sponsored Developer Accounts registered
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 216
+    text: Sponsored Developer Account on GitHub Sp
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 216
+    text: Sponsored Developer Accounts on GitHub S
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: party-role-name
+    line: 218
+    text: Recipient service agreement**
+    message: '"Recipient" is not a name this contract gave a party (Stripe)'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 220
+    text: Sponsored Developer Accounts in all othe
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 222
+    text: Sponsored Developer Accounts. The [Strip
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 232
+    text: Sponsored Developer Payments;
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 244
+    text: Sponsored Developers
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 265
+    text: Sponsored Developer Content does not inf
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 267
+    text: Sponsored Developer Content is not illeg
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 281
+    text: Sponsored Developer Account immediately
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 281
+    text: Sponsored Developer Account.
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 285
+    text: Sponsored Developer Account at any time
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 289
+    text: Sponsored Developer Payment accrued up u
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 289
+    text: Sponsored Developer the amount of the Sp
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 309
+    text: Feedback to GitHub regarding the Program
+    message: '"Feedback" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
+  - rule: unused-definition
+    line: 319
+    text: ("Service Fee") of 3% per transaction wi
+    message: '"Service Fee" is defined but never used'
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 341
+    text: "### 4.1A. Payment Processing Disclaimer."
+    message: The heading "4.1A. Payment Processing Disclaimer." has no number, while 2 of its siblings do ("4.1. Disclaimer.")
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 359
+    text: Sponsored Developers acknowledge that th
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 371
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged
+  - rule: defined-term-form
+    line: 379
+    text: Sponsored Developer's participation in t
+    message: '"Sponsor" is defined on line 22, but written "Sponsored" here, longer with a word of its definition'
+    verdict: unjudged
+  - rule: undefined-term
+    line: 403
+    text: Website. Your continued participation in
+    message: '"Website" is written like a defined term, but the document defines it nowhere'
+    verdict: unjudged
