@@ -51,16 +51,6 @@ findings:
     text: 第二十八条　個人情報取扱事業者は、外国（本邦の域外にある国又は地域をいう。以下こ
     message: 「は」で出した主題から述語まで 365 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 213
-    text: 第三十一条第三項において読み替えて準用する場合を含む。）において同じ。）に提供し
-    message: 次条に「第三十一条第三項において読み替えて準用する場合を含む。」と添えていますが、次条の見出しは「第三者提供を受ける際の確認等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 235
-    text: 同条第五項において準用する場合を含む。）、第三十四条第一項若しくは第三十五条第一
-    message: 次条第一項に「同条第五項において準用する場合を含む。」と添えていますが、次条第一項の見出しは「開示」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 292
     text: ２　個人情報取扱事業者は、仮名加工情報を作成したとき、又は仮名加工情報及び当該仮
@@ -70,11 +60,6 @@ findings:
     line: 298
     text: ８　仮名加工情報取扱事業者は、仮名加工情報を取り扱うに当たっては、電話をかけ、郵
     message: 「は」で出した主題から述語まで 263 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 320
-    text: 同条第二項において準用する場合を含む。）の規定により行われた加工の方法に関する情
-    message: 第百十六条第一項に「同条第二項において準用する場合を含む。」と添えていますが、第百十六条第一項の見出しは「行政機関等匿名加工情報の作成等」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 368
@@ -126,20 +111,10 @@ findings:
     text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
     message: 「は」で出した主題から述語まで 959 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 605
-    text: 申し出なければならない。
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。7 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 701
     text: ２　行政機関の長等に対する開示決定等、訂正決定等、利用停止決定等又は開示請求、訂
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 717
-    text: 読替えは、政令で定める。
-    message: 「読替える」と書いています（この文書はふつう「読み替える」と書く語です。26 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: clause-chain
     line: 764
@@ -180,31 +155,6 @@ findings:
     line: 954
     text: 第百四十八条　委員会は、個人情報取扱事業者が第十八条から第二十条まで、第二十一条
     message: 一文に節が 11 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 954
-    text: 第一項、第三項及び第五項を除く。）、第三十八条第二項、第四十一条（第四項及び第五
-    message: 第三十五条に「第一項、第三項及び第五項を除く。」と添えていますが、第三十五条の見出しは「利用停止等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 954
-    text: 第一項（第五項において準用する場合を含む。）を除く。）、第三十四条第二項若しくは
-    message: 第三十三条に「第一項（第五項において準用する場合を含む。」と添えていますが、第三十三条の見出しは「開示」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 954
-    text: 第五項において準用する場合を含む。）を除く。）、第三十四条第二項若しくは第三項、
-    message: 第一項に「第五項において準用する場合を含む。」と添えていますが、第一項の見出しは「開示」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 954
-    text: 第六項を除く。）の規定に違反した場合、個人関連情報取扱事業者が第三十一条第一項、
-    message: 第四十三条に「第六項を除く。」と添えていますが、第四十三条の見出しは「匿名加工情報の作成等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 954
-    text: 第四項及び第五項を除く。）若しくは第四十三条（第六項を除く。）の規定に違反した場
-    message: 第四十一条に「第四項及び第五項を除く。」と添えていますが、第四十一条の見出しは「仮名加工情報の作成等」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 954

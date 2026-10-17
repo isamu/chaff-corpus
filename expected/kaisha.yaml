@@ -11,11 +11,6 @@ findings:
     text: 公告方法のうち、電磁的方法（電子情報処理組織を使用する方法その他の情報通信の技術
     message: 「公告公告」で語が重なっています。どちらかが余分です
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 122
-    text: 在る物品の販売等をする権限を有するものとみなす。ただし、相手方が悪意であったとき
-    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。1773 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: teki-overuse
     line: 186
     text: ２　前項の定款は、電磁的記録（電子的方式、磁気的方式その他人の知覚によっては認識
@@ -31,11 +26,6 @@ findings:
     text: 一　定款が書面をもって作成されているときは、当該書面の閲覧の請求
     message: 「は」で出した主題から述語まで 302 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 223
-    text: 払い込む金銭の額
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 227
     text: （定款の記載又は記録事項に関する検査役の選任）
@@ -46,25 +36,10 @@ findings:
     text: 一　第二十八条第一号及び第二号の財産（以下この章において「現物出資財産等」という
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 249
-    text: 引受け後遅滞なく、その引き受けた設立時発行株式につき、その出資に係る金銭の全額を
-    message: 「引受け」と書いています（この文書はふつう「引受」と書く語です。52 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 249
-    text: 払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。ただし
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 250
     text: ２　前項の規定による払込みは、発起人が定めた銀行等（銀行（銀行法（昭和五十六年法
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 279
-    text: 第三百三十五条第一項において準用する場合を含む。）、第三百三十三条第一項若しくは
-    message: 第三百三十一条第一項に「第三百三十五条第一項において準用する場合を含む。」と添えていますが、第三百三十一条第一項の見出しは「取締役の資格等」です
     verdict: unjudged
   - rule: use-before-definition
     line: 306
@@ -80,26 +55,6 @@ findings:
     line: 342
     text: 報酬委員会の委員となる者
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 403
-    text: 払い込む金銭の額をいう。以下この款において同じ。）
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 443
-    text: 払い込まれた金額に相当する金銭の保管に関する証明書の交付を請求することができる。
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 444
-    text: 払い込まれた金銭の返還に関する制限があることをもって成立後の株式会社に対抗するこ
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 559
-    text: 同条第二項において準用する場合を含む。）、第九十二条第一項（同条第四項において準
-    message: 第九十条第一項に「同条第二項において準用する場合を含む。」と添えていますが、第九十条第一項の見出しは「種類創立総会の決議による設立時取締役等の選任」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 687
@@ -120,11 +75,6 @@ findings:
     line: 866
     text: 登録株式質権者について準用する。
     message: 「登録株式質権者」を、1022 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 886
-    text: 第三百二十五条において準用する場合を含む。）の通知に際して株主に書面を交付し、又
-    message: 第二百九十九条第一項に「第三百二十五条において準用する場合を含む。」と添えていますが、第二百九十九条第一項の見出しは「株主総会の招集の通知」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1201
@@ -181,31 +131,6 @@ findings:
     text: 一　前項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 1543
-    text: 同条第三項において準用する場合を含む。）の規定は、第一項の規定による催告について
-    message: 第百九十六条第一項に「同条第三項において準用する場合を含む。」と添えていますが、第百九十六条第一項の見出しは「株主に対する通知の省略」です
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1553
-    text: 払い込む金銭又は給付する金銭以外の財産の額をいう。以下この節において同じ。）又は
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1633
-    text: 割当て等の特則）
-    message: 「割当て」と書いています（この文書はふつう「割当」と書く語です。12 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1667
-    text: 払い込まなければならない。
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1743
-    text: 申し出ることができる。
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。11 箇所のうち 3 箇所が違う）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 1855
     text: 割当て当該株式会社の株主
@@ -221,40 +146,15 @@ findings:
     text: 一　募集新株予約権の内容及び数
     message: 「は」で出した主題から述語まで 201 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 1920
-    text: 払い込む金銭の額をいう。以下この章において同じ。）又はその算定方法
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1998
-    text: 割当て等の特則）
-    message: 「割当て」と書いています（この文書はふつう「割当」と書く語です。12 箇所のうち 3 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 1999
     text: 第二百四十四条の二　公開会社は、募集新株予約権の割当てを受けた申込者又は前条第一
     message: 「は」で出した主題から述語まで 211 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 2016
-    text: 払い込まなければならない。
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 2236
     text: 一　株主に割り当てる新株予約権の内容及び数又はその算定方法
     message: 「は」で出した主題から述語まで 262 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 2263
-    text: 払い込まなければならない。
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 2264
-    text: 払い込まなければならない。
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
     verdict: unjudged
   - rule: clause-chain
     line: 2323
@@ -291,11 +191,6 @@ findings:
     text: ２　取締役は、第三百二十五条の三第一項の規定により電子提供措置をとる場合には、第
     message: 「は」で出した主題から述語まで 215 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2685
-    text: 第五号及び第六号に係る部分に限る。）及び第三項並びに第三百二十五条の五第一項及び
-    message: 第三百二十五条の三第一項に「第五号及び第六号に係る部分に限る。」と添えていますが、第三百二十五条の三第一項の見出しは「電子提供措置」です
-    verdict: unjudged
   - rule: connective-hierarchy
     line: 2731
     text: 若しくは執行役を兼ねることができない。
@@ -330,11 +225,6 @@ findings:
     line: 3046
     text: この場合における第三百六十六条第一項本文及び第三百六十八条の規定の適用については
     message: 「は」で出した主題から述語まで 216 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3048
-    text: 第一項本文を除く。）、第三百六十七条、第三百六十九条第一項、第三百七十条及び第三
-    message: 第三百六十六条に「第一項本文を除く。」と添えていますが、第三百六十六条の見出しは「招集権者」です
     verdict: unjudged
   - rule: use-before-definition
     line: 3053
@@ -386,16 +276,6 @@ findings:
     text: 報酬委員会は、次の各号に掲げるものを執行役等の個人別の報酬等とする場合には、その
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3492
-    text: 第四百十九条第二項において読み替えて準用する場合を含む。）の承認
-    message: 第三百五十六条第一項に「第四百十九条第二項において読み替えて準用する場合を含む。」と添えていますが、第三百五十六条第一項の見出しは「競業及び利益相反取引の制限」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 3548
-    text: 第四百十九条第二項において準用する場合を含む。）の取締役又は執行役
-    message: 第三百五十六条第一項に「第四百十九条第二項において準用する場合を含む。」と添えていますが、第三百五十六条第一項の見出しは「競業及び利益相反取引の制限」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 3557
     text: 第四百二十五条　前条の規定にかかわらず、第四百二十三条第一項の責任は、当該役員等
@@ -446,10 +326,30 @@ findings:
     text: 第四百六十五条　株式会社が次の各号に掲げる行為をした場合において、当該行為をした
     message: 「は」で出した主題から述語まで 227 字あります（200 字まで）
     verdict: unjudged
+  - rule: orthographic-variant
+    line: 3932
+    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
+    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
+    verdict: unjudged
   - rule: topic-predicate-distance
     line: 3932
     text: 一　第百三十八条第一号ハ又は第二号ハの請求に応じて行う当該株式会社の株式の買取り
     message: 「は」で出した主題から述語まで 284 字あります（200 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3938
+    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
+    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3939
+    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
+    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 3940
+    text: 買取り当該株式の買取りにより当該イ又はロに定める者に対して交付した金銭等の帳簿価
+    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 3970
@@ -460,11 +360,6 @@ findings:
     line: 3984
     text: 全ての株主（前条第一項に規定する場合における当該特別支配会社を除く。）
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 4106
-    text: 第三項を除く。）まで、第三百六十条並びに第三百六十一条第一項及び第四項の規定は、
-    message: 第三百五十七条に「第三項を除く。」と添えていますが、第三百五十七条の見出しは「取締役の報告義務」です
     verdict: unjudged
   - rule: bracket-nesting
     line: 4166
@@ -501,11 +396,6 @@ findings:
     text: 一　貸借対照表等が書面をもって作成されているときは、当該書面の閲覧の請求
     message: 「は」で出した主題から述語まで 249 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 4223
-    text: 申し出るべき旨を官報に公告し、かつ、知れている債権者には、各別にこれを催告しなけ
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。11 箇所のうち 3 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 4250
     text: 一　ある種類の株式の株主に対して残余財産の割当てをしないこととするときは、その旨
@@ -536,80 +426,20 @@ findings:
     text: 第五百五十条　招集者は、前条第一項の通知に際しては、法務省令で定めるところにより
     message: 「は」で出した主題から述語まで 205 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 4573
-    text: 第四項を除く。）及び第五百四十九条の規定は、適用しない。
-    message: 第五百四十八条に「第四項を除く。」と添えていますが、第五百四十八条の見出しは「債権者集会の招集等の決定」です
-    verdict: unjudged
   - rule: nado-closed-list
     line: 4662
     text: 等に限る。）及びその価額又は評価の標準
     message: 「等」で一覧を開いたまま、「に限る」で限っています
     verdict: unjudged
   - rule: orthographic-variant
-    line: 4670
-    text: 払い込み、又はその出資に係る金銭以外の財産の全部を給付しなければならない。ただし
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
     line: 4895
     text: てん補のために、その資本金の額を減少することができる。
     message: 「てん」と書いています（この文書はふつう「転」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 5127
-    text: 申し出るべき旨を官報に公告し、かつ、知れている債権者には、各別にこれを催告しなけ
-    message: 「申し出る」と書いています（この文書はふつう「申出る」と書く語です。11 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5201
-    text: 第三号及び第四号を除く。）及び第六百九条
-    message: 第六百七条第一項に「第三号及び第四号を除く。」と添えていますが、第六百七条第一項の見出しは「法定退社」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 5214
     text: 一　募集社債の総額
     message: 「は」で出した主題から述語まで 350 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 5224
-    text: 払い込む金銭の額をいう。以下この章において同じ。）若しくはその最低金額又はこれら
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 5260
-    text: 払い込まれた金銭の額及び払込みの日
-    message: 「払い込む」と書いています（この文書はふつう「払込む」と書く語です。99 箇所のうち 14 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5552
-    text: 第七百十四条の七において準用する場合を含む。）の特別代理人の選任について招集され
-    message: 第七百七条に「第七百十四条の七において準用する場合を含む。」と添えていますが、第七百七条の見出しは「特別代理人の選任」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5611
-    text: 第七百九十三条第二項において準用する場合を含む。）、第七百九十九条（第八百二条第
-    message: 第七百八十九条に「第七百九十三条第二項において準用する場合を含む。」と添えていますが、第七百八十九条の見出しは「債権者の異議」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5611
-    text: 第七百八十一条第二項において準用する場合を含む。）、第七百八十九条（第七百九十三
-    message: 第七百七十九条に「第七百八十一条第二項において準用する場合を含む。」と添えていますが、第七百七十九条の見出しは「債権者の異議」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5611
-    text: 第八百二条第二項において準用する場合を含む。）、第八百十条（第八百十三条第二項に
-    message: 第七百九十九条に「第八百二条第二項において準用する場合を含む。」と添えていますが、第七百九十九条の見出しは「債権者の異議」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5611
-    text: 第八百十三条第二項において準用する場合を含む。）又は第八百十六条の八の規定により
-    message: 第八百十条に「第八百十三条第二項において準用する場合を含む。」と添えていますが、第八百十条の見出しは「債権者の異議」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5618
-    text: 第七百三十七条第二項において準用する場合を含む。）又は第七百十四条の四第二項第一
-    message: 第七百五条第一項に「第七百三十七条第二項において準用する場合を含む。」と添えていますが、第七百五条第一項の見出しは「社債管理者の権限等」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 5637
@@ -620,11 +450,6 @@ findings:
     line: 5667
     text: 一　組織変更後の株式会社（以下この条において「組織変更後株式会社」という。）の目
     message: 「は」で出した主題から述語まで 471 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5693
-    text: 第二項第二号を除く。）の規定による手続が終了していない場合又は組織変更を中止した
-    message: 第七百七十九条に「第二項第二号を除く。」と添えていますが、第七百七十九条の見出しは「債権者の異議」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 5708
@@ -645,11 +470,6 @@ findings:
     line: 5756
     text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
     message: 「は」で出した主題から述語まで 247 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5766
-    text: 第二項第三号を除く。）の規定による手続が終了していない場合又は吸収合併を中止した
-    message: 第七百九十九条に「第二項第三号を除く。」と添えていますが、第七百九十九条の見出しは「債権者の異議」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 5774
@@ -685,11 +505,6 @@ findings:
     line: 5889
     text: 一　吸収分割会社及び持分会社である吸収分割承継会社（以下この節において「吸収分割
     message: 「は」で出した主題から述語まで 635 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 5914
-    text: 第二項第三号を除く。）の規定による手続が終了していない場合又は吸収分割を中止した
-    message: 第七百九十九条に「第二項第三号を除く。」と添えていますが、第七百九十九条の見出しは「債権者の異議」です
     verdict: unjudged
   - rule: bracket-nesting
     line: 5928
@@ -731,11 +546,6 @@ findings:
     text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
     message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6067
-    text: 第二項第三号を除く。）の規定による手続が終了していない場合又は株式交換を中止した
-    message: 第七百九十九条に「第二項第三号を除く。」と添えていますが、第七百九十九条の見出しは「債権者の異議」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 6077
     text: 一　株式移転により設立する株式会社（以下この編において「株式移転設立完全親会社」
@@ -756,20 +566,10 @@ findings:
     text: 一　ある種類の株式の譲渡人に対して株式交付親会社の株式の割当てをしないこととする
     message: 「は」で出した主題から述語まで 255 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6182
-    text: 第一項第二号に係る部分を除く。）（これらの規定を前条において準用する場合を含む。
-    message: 第七百七十四条の七に「第一項第二号に係る部分を除く。」と添えていますが、第七百七十四条の七の見出しは「株式交付子会社の株式の譲渡し」です
-    verdict: unjudged
   - rule: teki-overuse
     line: 6216
     text: 一　第一項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6266
-    text: 第二項第二号を除く。）及び前条の規定は、組織変更をする持分会社について準用する。
-    message: 第七百七十九条に「第二項第二号を除く。」と添えていますが、第七百七十九条の見出しは「債権者の異議」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 6280
@@ -801,11 +601,6 @@ findings:
     text: 一　前項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6413
-    text: 第一項第三号及び第二項第三号を除く。）及び第七百九十条の規定は、吸収合併消滅持分
-    message: 第七百八十九条に「第一項第三号及び第二項第三号を除く。」と添えていますが、第七百八十九条の見出しは「債権者の異議」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 6422
     text: 一　吸収合併契約等について株主総会（種類株主総会を含む。）の決議によってその承認
@@ -836,11 +631,6 @@ findings:
     text: この場合において、同項中「株主及び債権者」とあるのは「株主及び債権者（株式交換完
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6523
-    text: 第二項第三号を除く。）及び第八百条の規定は、存続持分会社等について準用する。この
-    message: 第七百九十九条に「第二項第三号を除く。」と添えていますが、第七百九十九条の見出しは「債権者の異議」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 6537
     text: 一　新設合併契約等について株主総会（種類株主総会を含む。）の決議によってその承認
@@ -865,16 +655,6 @@ findings:
     line: 6641
     text: 一　前項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6657
-    text: 第一項第三号及び第二項第三号を除く。）の規定は、新設合併消滅持分会社又は合同会社
-    message: 第八百十条に「第一項第三号及び第二項第三号を除く。」と添えていますが、第八百十条の見出しは「債権者の異議」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6664
-    text: 第四号及び第五号を除く。）、第二十九条、第三十一条、第三十七条第三項、第三十九条
-    message: 第二十七条に「第四号及び第五号を除く。」と添えていますが、第二十七条の見出しは「定款の記載又は記録事項」です
     verdict: unjudged
   - rule: teki-overuse
     line: 6671
@@ -901,65 +681,20 @@ findings:
     text: 全ての株主
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6762
-    text: 第七百七十四条の三第一項第十一号を除く。）の規定を適用する。
-    message: 前章に「第七百七十四条の三第一項第十一号を除く。」と添えていますが、前章の見出しは「株式交換及び株式移転」です
-    verdict: unjudged
   - rule: teki-overuse
     line: 6770
     text: 一　前項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6894
-    text: 第四百七十九条第四項において準用する場合を含む。）の規定により取締役、監査役又は
-    message: 第三百四十六条第一項に「第四百七十九条第四項において準用する場合を含む。」と添えていますが、第三百四十六条第一項の見出しは「役員等に欠員を生じた場合の措置」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 6944
-    text: 前項において準用する場合を含む。）の申立てをするには、原告の訴えの提起が悪意によ
-    message: 第一項に「前項において準用する場合を含む。」と添えていますが、第一項の見出しは「担保提供命令」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7050
-    text: 第四百八十六条第四項において準用する場合を含む。）、第四百六十二条第三項ただし書
-    message: 第四百二十四条に「第四百八十六条第四項において準用する場合を含む。」と添えていますが、第四百二十四条の見出しは「株式会社に対する損害賠償責任の免除」です
     verdict: unjudged
   - rule: max-paragraph-length
     line: 7052
     text: （最終完全親会社等の株主による特定責任追及の訴え）
     message: この段落は 13 文あります（12 文まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7066
-    text: 第四百八十六条第四項において準用する場合を含む。）、第四百六十二条第三項ただし書
-    message: 第四百二十四条に「第四百八十六条第四項において準用する場合を含む。」と添えていますが、第四百二十四条の見出しは「株式会社に対する損害賠償責任の免除」です
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 7076
     text: （訴訟参加）
     message: この段落は 14 文あります（12 文まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7105
-    text: 第四百八十六条第四項において準用する場合を含む。）、第四百六十二条第三項（同項た
-    message: 第四百二十四条に「第四百八十六条第四項において準用する場合を含む。」と添えていますが、第四百二十四条の見出しは「株式会社に対する損害賠償責任の免除」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7111
-    text: この項又は次項において準用する場合を含む。）中「当該株式会社」とあるのは、「当該
-    message: 同項に「この項又は次項において準用する場合を含む。」と添えていますが、同項の見出しは「株主でなくなった者の訴訟追行」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7112
-    text: 前項又はこの項において準用する場合を含む。）中「当該株式会社」とあるのは、「合併
-    message: 同項に「前項又はこの項において準用する場合を含む。」と添えていますが、同項の見出しは「株主でなくなった者の訴訟追行」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7164
-    text: 第五百九十八条第二項において準用する場合を含む。）の規定に違反したこと。
-    message: 第五百九十四条第一項に「第五百九十八条第二項において準用する場合を含む。」と添えていますが、第五百九十四条第一項の見出しは「競業の禁止」です
     verdict: unjudged
   - rule: defined-name-repeated
     line: 7226
@@ -971,45 +706,10 @@ findings:
     text: 一　この法律の規定により株式会社が作成し、又は備え置いた書面又は電磁的記録につい
     message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7262
-    text: 第八百二十七条第二項において準用する場合を含む。）の規定による保全処分についての
-    message: 第八百二十五条第一項に「第八百二十七条第二項において準用する場合を含む。」と添えていますが、第八百二十五条第一項の見出しは「会社の財産に関する保全処分」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7277
-    text: 第八百二十二条第三項において準用する場合を含む。）若しくは第六百六十二条第一項の
-    message: 第五百一条第一項に「第八百二十二条第三項において準用する場合を含む。」と添えていますが、第五百一条第一項の見出しは「条件付債権等に係る債務の弁済」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7315
-    text: 同条第二項において準用する場合を含む。）及び第五百三十二条第一項（第五百三十四条
-    message: 第五百二十六条第一項に「同条第二項において準用する場合を含む。」と添えていますが、第五百二十六条第一項の見出しは「清算人の報酬等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7315
-    text: 第五百三十四条において準用する場合を含む。）の規定による決定については、この限り
-    message: 第五百三十二条第一項に「第五百三十四条において準用する場合を含む。」と添えていますが、第五百三十二条第一項の見出しは「監督委員の報酬等」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 7331
     text: 第八百八十六条　利害関係人は、裁判所書記官に対し、第二編第九章第二節若しくはこの
     message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7389
-    text: 同条第二項において準用する場合を含む。）の規定による決定に対しては、即時抗告をす
-    message: 第五百二十六条第一項に「同条第二項において準用する場合を含む。」と添えていますが、第五百二十六条第一項の見出しは「清算人の報酬等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7456
-    text: 第八百二十七条第二項において準用する場合を含む。）の保全処分をした場合には、非訟
-    message: 第八百二十五条第一項に「第八百二十七条第二項において準用する場合を含む。」と添えていますが、第八百二十五条第一項の見出しは「会社の財産に関する保全処分」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7457
-    text: 第八百二十七条第二項において準用する場合を含む。）の規定による申立てを却下する裁
-    message: 第八百二十五条第一項に「第八百二十七条第二項において準用する場合を含む。」と添えていますが、第八百二十五条第一項の見出しは「会社の財産に関する保全処分」です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7495
@@ -1076,45 +776,15 @@ findings:
     text: 一　財務諸表等が書面をもって作成されているときは、当該書面の閲覧又は謄写の請求
     message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 7901
-    text: 取消し等）
-    message: 「取消し」と書いています（この文書はふつう「取消」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7904
-    text: 電子公告関係規定において準用する場合を含む。）から第九百五十条まで、第九百五十一
-    message: 第九百四十七条に「電子公告関係規定において準用する場合を含む。」と添えていますが、第九百四十七条の見出しは「電子公告調査を行うことができない場合」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7904
-    text: 電子公告関係規定において準用する場合を含む。）の規定に違反したとき。
-    message: 次条第一項に「電子公告関係規定において準用する場合を含む。」と添えていますが、次条第一項の見出しは「調査記録簿等の記載等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7906
-    text: 電子公告関係規定において準用する場合を含む。）の命令に違反したとき。
-    message: 前条に「電子公告関係規定において準用する場合を含む。」と添えていますが、前条の見出しは「改善命令」です
-    verdict: unjudged
   - rule: teki-overuse
     line: 7912
     text: 一　調査記録簿等が書面をもって作成されているときは、当該書面の写しの交付の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 7916
-    text: 電子公告関係規定において準用する場合を含む。）の調査記録簿等を他の調査機関に引き
-    message: 前条第一項に「電子公告関係規定において準用する場合を含む。」と添えていますが、前条第一項の見出しは「調査記録簿等の記載等」です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 7920
     text: 第九百五十七条　法務大臣は、登録を受ける者がないとき、第九百五十条の規定による電
     message: 「は」で出した主題から述語まで 209 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 7921
-    text: 引継ぎその他の必要な事項については、法務省令で定める。
-    message: 「引継ぐ」と書いています（この文書はふつう「引き継ぐ」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: defined-name-repeated
     line: 7945
@@ -1135,21 +805,6 @@ findings:
     line: 8043
     text: 四　この法律の規定に違反して、正当な理由がないのに、書類若しくは電磁的記録に記録
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 8047
-    text: 第四百九十条第五項において準用する場合を含む。）、第三百七十八条第一項、第三百九
-    message: 第三百七十一条第一項に「第四百九十条第五項において準用する場合を含む。」と添えていますが、第三百七十一条第一項の見出しは「議事録等」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 8059
-    text: 第三百二十五条の七において準用する場合を含む。）の規定に違反して、電子提供措置を
-    message: 第三百二十五条の三第一項に「第三百二十五条の七において準用する場合を含む。」と添えていますが、第三百二十五条の三第一項の見出しは「電子提供措置」です
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 8075
-    text: 第七百十四条の七において準用する場合を含む。）の規定に違反して事務を承継する社債
-    message: 第七百十四条第一項に「第七百十四条の七において準用する場合を含む。」と添えていますが、第七百十四条第一項の見出しは「社債管理者の事務の承継」です
     verdict: unjudged
   - rule: clause-chain
     line: 8080
