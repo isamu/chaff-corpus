@@ -37,8 +37,8 @@ findings:
     line: 16
     sha256: c6616784b59e8612af116bf4227da09642b9af68e761afae58978d2c9e2a8492
     verdict: unjudged
-  - rule: empty-section
-    line: 45
-    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
+  - rule: empty-table-cell
+    line: 66
+    sha256: ad145ece3faf0aa27f895335139744b11d1f21ca6ba605cd7f45a74a425c9e16
     verdict: false-positive
-    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty
+    note: the label cell spans two columns in the source; a Markdown table has no column span, so the converter leaves the second column empty

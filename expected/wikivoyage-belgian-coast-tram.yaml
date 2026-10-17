@@ -17,215 +17,231 @@ findings:
     line: 14
     sha256: e75b50c3a0f62d6ab42b62800f34bbf48ce42791ab805528828c9db266e6e263
     verdict: unjudged
+  - rule: empty-table-cell
+    line: 25
+    sha256: 21b69ef4e687afe917b766ca452f1a3a8245e4b241d923e859730591ed9fc29c
+    verdict: unjudged
   - rule: expletive-construction
-    line: 19
+    line: 31
     sha256: d573c56567095ca48e44d3642e8f7614a1e0b7e112e07b4ecd255d94a6af895a
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 19
+    line: 31
     sha256: 680e9eaaa02c3a561ca6fd55a5875cd8c0dcce9d0ab7357f3525055dd6704fe7
     verdict: unjudged
   - rule: date-without-year
-    line: 33
+    line: 45
     sha256: 42b6efa09705cb60915e3c226b52d773271939956cab65c99bad61773a82499f
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 33
+    line: 45
     sha256: d93953e927d0218be9242e64dabd9e5d4b6a691c6c1db1b1675522e64a0fa085
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 50
+    sha256: 2ddb152c38380eb36eacb099d726348dff718589aae3173cf8f2a4c02a5c07bd
+    verdict: unjudged
   - rule: name-variant
-    line: 41
+    line: 53
     sha256: 5548ed812b0cc530e02d23edb4401fb5c8c442240d54a3e732184d57ed6a046a
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 50
+    line: 62
     sha256: 0391bc6df7f74189d1c5a0e8998b3b1667beb530fa0973cd797c67d8a853dd90
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 50
+    line: 62
     sha256: 913a78b7ee200f3f926e8bc81dd43129f464ffdc2a690f66e8c90e2fdb17a797
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 50
+    line: 62
     sha256: d71a6ae9a43bb828d01630446b18d6a673d138f8c22f75f160ad75bb52646380
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 50
+    line: 62
     sha256: f2edb71a1d129a42ed971e86420956aaa91d5bda28130a8f5c2f5f999c54d83a
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 66
+    sha256: 729a15f3244095c0318e53ef14c71b893653cac4d48eb0a649c475ce971f1b68
+    verdict: unjudged
   - rule: hyphen-as-dash
-    line: 67
+    line: 79
     sha256: 0eec4f85622c031b70f8aa297d6877a85ce7d77f64049c14f4ddfabc3ff46857
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 71
+    line: 83
     sha256: 0eec4f85622c031b70f8aa297d6877a85ce7d77f64049c14f4ddfabc3ff46857
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 96
+    line: 108
     sha256: 265632ca6cb5797821c55a1dcbef601fdb3b0313fa4552e46e9fd7509a35d5bc
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 98
+    line: 110
     sha256: c7f34e724bdcdc72f84c9f1a1551111738ade92a1ae4e9d0143d25f4bfa6d24d
     verdict: unjudged
   - rule: expletive-construction
-    line: 100
+    line: 112
     sha256: 15efcf719195ee12587f90d2c98429d6e5cc3b0bd570a06fb3dae739a7a13d59
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 100
+    line: 112
     sha256: 7f285db380f2d9ee8f367a6a1ae74fc444a044b604cf046a62457ec3f2545b72
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 106
+    line: 118
     sha256: 50f1b16e1e7e9d9389ec53aff192799163c593c8a659fb2adab19826f213dc45
     verdict: unjudged
   - rule: numeral-sentence-start
-    line: 106
+    line: 118
     sha256: 146701dcfb0a231c13867c1dc7c9c2a3db9f25e6ab2d7d909f2735177e18c40c
     verdict: unjudged
   - rule: person-consistency
-    line: 106
+    line: 118
     sha256: 3e34109efe65305427a4275139bf727acc7edf7e40039af6d9eec652c6ae6905
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 112
+    line: 124
     sha256: cb022fb334a33a9913950d952a3f0cddf8af96e82e0f84caad557a924d108599
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 120
+    line: 132
     sha256: 6bd319ef5331e7083c281cc102f52938690c474a22543a76cb6a612be7e7692a
     verdict: unjudged
   - rule: expletive-construction
-    line: 137
+    line: 149
     sha256: ab797031763b1d8a7eaa6437169192c225a328e9ee090bd1cfd4aa421c524609
     verdict: unjudged
   - rule: max-sentence-length
-    line: 137
+    line: 149
     sha256: ab797031763b1d8a7eaa6437169192c225a328e9ee090bd1cfd4aa421c524609
     verdict: unjudged
   - rule: max-sentence-length
-    line: 143
+    line: 155
     sha256: 6c2a2b4b034c78639ad0bc650e657f7cf1d773c74cb0b2b7bb979b6c53453f71
     verdict: unjudged
   - rule: unknown-word
-    line: 143
+    line: 155
     sha256: ebda7d1c34b7b4a44fe1d3e1cda88fbca37c033133b145aab81c29273666e0df
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 151
+    line: 163
     sha256: 1185c5418edef7a67d26f5822bc0ed7c64b05361b94f21f1ead6075a6484245d
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 155
+    line: 167
     sha256: 42d5d7baea319f9c51639d7501666d74b694a6d33e8abbc04c8172de0b145349
     verdict: unjudged
   - rule: max-sentence-length
-    line: 159
+    line: 171
     sha256: ced7025a125465c9b9d0abf64e24d9083f69e9b6e8803129d4e5cea282e2fad3
     verdict: unjudged
   - rule: wordy-phrase
-    line: 159
+    line: 171
     sha256: ea1b2b5cf0e5531fc269dc97e966cbd20dca1505ab8870e7cdbd61e2b082f8c8
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 163
+    line: 175
     sha256: 9cd89cc95b11c852dba1d1147a514d1e1abad96a873e1d709932336f56495a9f
     verdict: unjudged
   - rule: expletive-construction
-    line: 165
+    line: 177
     sha256: 4ecc5ec9ea83a2851a4743a6562aaa1bd88576620538f4b370cdca65ed0db3e2
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 165
+    line: 177
     sha256: 67108342e93288f342d635d96d1b3802b168bed52a62f876d8a9173e15f46887
     verdict: unjudged
   - rule: max-sentence-length
-    line: 167
+    line: 179
     sha256: c0bda2942afcbe5b6801d2a0e63e6ef71f2c2409d677e43c893bffe8b345df9f
     verdict: unjudged
   - rule: unknown-word
-    line: 167
+    line: 179
     sha256: 97fe5927c5b48d215a8d92cc674c65dad666d14818ec6711080172d7c9e7dabb
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 171
+    line: 183
     sha256: a93553f2473dd89428b13483f01e4a2f587c8b3c411977130e2dcd6bcdbd4223
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 180
+    line: 192
     sha256: 9f39cbe26f3a43b15a546926da9133ca7b720ba099f739ca89e10cd62cb0f879
     verdict: unjudged
   - rule: unknown-word
-    line: 189
+    line: 201
     sha256: a9833179892f75533cb5ca501b5fb7e459a2186b2466ac2471e0027f7d507a80
     verdict: unjudged
   - rule: double-negative
-    line: 194
+    line: 206
     sha256: 5299822c2d25f7b810453fd8f39fa38fb76d005a7715361fae34bc06a307f215
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 200
+    line: 212
     sha256: c1d9c51b54b731111616eab9bd73be3819a860efbb58cb11f1223ea2f6898c54
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 206
+    line: 218
     sha256: ebfe012e6c62d46766819e02eaad34d8dad5956c5c4bc697a2c0e80881b93ce9
     verdict: unjudged
   - rule: wordy-phrase
-    line: 206
+    line: 218
     sha256: 46c59ad1357543475139f732259c7aa1d89e778436022527a7d9c0270ef949e0
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 208
+    line: 220
     sha256: afc848360f9cde69ab82a576d49a8ade04b4ccb263e860620372c0a3b4bf3f36
     verdict: unjudged
   - rule: name-variant
-    line: 212
+    line: 224
     sha256: 316b05070b878e7314c895d02d17150363ba316222360547f436623a8aa81184
     verdict: unjudged
   - rule: max-sentence-length
-    line: 214
+    line: 226
     sha256: b2841a9048bc9be4baf7dfb19aece6fca0b066e75960b98c5eb4624e44b16bb2
     verdict: unjudged
   - rule: name-variant
-    line: 216
+    line: 228
     sha256: 8cfb021420f756d522c6ccec0b53997794a30806706abe5602e717ad40fdeca3
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 236
+    sha256: 354567b27797948d755590efaf48267552b4747a1999493919f2715d398ddc8d
+    verdict: unjudged
   - rule: max-paragraph-length
-    line: 226
+    line: 238
     sha256: 58a0b961b87fc82181afdd6e608b64c5d7bf0f7bf8724c3987dbc8c95f6891d5
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 232
+    line: 244
     sha256: 95219b3f97bb8f1610e88ef59d0d865970c0bf5df492195493e02a53409d7433
     verdict: unjudged
   - rule: name-variant
-    line: 234
+    line: 246
     sha256: 832b41733d5195c2d482057481ef1ae57a74eea30e59c4b0ddc89e65a923a444
     verdict: unjudged
   - rule: expletive-construction
-    line: 238
+    line: 250
     sha256: f2ab381fad2d12568d64c7740c1be64a6408a7336caf88fe273e9c9f61451dc6
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 254
+    line: 266
     sha256: c0387170914dfcc0d7620441afba1973a280cb39990248b6e00d35dd346f49eb
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 258
+    line: 270
     sha256: 5e351faae9b3cd5ba30ac4761aa4abe5013837ba6e521f7de28fd42f1c964281
     verdict: unjudged
   - rule: expletive-construction
-    line: 264
+    line: 276
     sha256: 5e6d7a801565f2ccd8530a9b57a56b749491e221b449f478849f72c2e0396c0e
     verdict: unjudged
   - rule: hyphen-as-dash
-    line: 278
+    line: 290
     sha256: 196c89ca424d5b3ecf239fc65f2815afc57f26178a79c0c380c08fdc3105800d
     verdict: unjudged
   - rule: max-sentence-length
-    line: 278
+    line: 290
     sha256: b71ba3370fe847fcb36a1fd9341dde4e13ca2f9d18bb1ae43cb3e072dd8f04db
     verdict: unjudged

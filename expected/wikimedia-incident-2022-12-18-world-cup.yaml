@@ -24,26 +24,12 @@ findings:
     line: 31
     sha256: 866e77c5b1fb80787000fb5666dbf1cd036f503572f30127452fe3cc6a099d90
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 50
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 73
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: false-positive
-    note: the section held a wiki link that the wikitext converter drops
-  - rule: concrete-evidence-density
-    line: 79
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: false-positive
-    note: the section held Phabricator task links that the wikitext converter drops
-  - rule: empty-section
-    line: 85
-    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
-    verdict: false-positive
-    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty
   - rule: unfilled-placeholder
     line: 48
     what: the incident template's instruction line, marked optional, is left in the published report under Conclusions (and again at lines 55, 64, 71 and 77)
     verdict: missed
+  - rule: empty-table-cell
+    line: 107
+    sha256: a7261420561c2458c73c6bb9468cd465d79716c52735b876322e8023ecdba21c
+    verdict: false-positive
+    note: the label cell spans two columns in the source; a Markdown table has no column span, so the converter leaves the second column empty

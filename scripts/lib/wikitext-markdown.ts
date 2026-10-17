@@ -1,9 +1,14 @@
-// Copied from isamu/lab text/scripts/wikitext-markdown.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Based on isamu/lab text/scripts/wikitext-markdown.ts (9013b5fb), extended here to keep what lab's version dropped:
+// a table's cells, and the text of an unknown inline template.
 // MediaWiki wikitext (a Wikivoyage or Wikisource page, as action=raw returns it) as plain Markdown: headings,
-// paragraphs, lists and the text of links. Templates are dropped except the few that carry the prose's own words (a
-// map marker's name, a listing's name and description, a converted quantity, a price, a phone number, the text a layout
-// template or a quotation wraps); tables, files, references and comments are dropped. Pure.
+// paragraphs, lists, tables and the text of links. A template the converter knows shows the words it carries (a map
+// marker's name, a listing's name and description, a converted quantity, a price, a phone number, the text a layout
+// template or a quotation wraps); any other template written inside a line of text shows its one value ({{phab|T123}}
+// is "T123"), and is dropped when it stands on a line of its own (an infobox, a navigation box, a banner), has named
+// or several values, or is a reference. Files, references and comments are dropped. Pure.
 import { decodeEntities, tidyLines } from "./html/markup-text.ts";
+import { splitOutside } from "./wikitext-split.ts";
+import { tableMarkdown, tableRanges } from "./wikitext-table.ts";
 
 type Params = { readonly named: ReadonlyMap<string, string>; readonly positional: readonly string[] };
 
@@ -17,30 +22,38 @@ const closingOf = (text: string, open: string, close: string, from: number, dept
   return closingOf(text, open, close, nextClose + close.length, depth - 1);
 };
 
-/** Every outermost `open … close` replaced by render(inside). An unclosed opener is left as written, and what follows it is still read. */
-const replaceBalanced = (text: string, open: string, close: string, render: (inside: string) => string): string => {
-  const start = text.indexOf(open);
-  if (start === -1) return text;
-  const end = closingOf(text, open, close, start + open.length, 1);
-  if (end === -1) return [text.slice(0, start + open.length), replaceBalanced(text.slice(start + open.length), open, close, render)].join("");
-  const rest = replaceBalanced(text.slice(end), open, close, render);
-  return [text.slice(0, start), render(text.slice(start + open.length, end - close.length)), rest].join("");
+/** Whether text[start, end) has nothing but spaces beside it on its line. */
+const standsAlone = (text: string, start: number, end: number): boolean => {
+  const lineStart = text.lastIndexOf("\n", start - 1) + 1;
+  const newline = text.indexOf("\n", end);
+  return /^[ \t]*$/u.test(text.slice(lineStart, start)) && /^[ \t]*$/u.test(text.slice(end, newline === -1 ? text.length : newline));
 };
 
-const DEPTH_CHANGE: Readonly<Record<string, number>> = { "{": 1, "[": 1, "}": -1, "]": -1 };
+type Render = (inside: string, alone: boolean) => string;
+
+const replaceBalancedFrom = (text: string, open: string, close: string, render: Render, from: number, out: string[]): string[] => {
+  const start = text.indexOf(open, from);
+  if (start === -1) {
+    out.push(text.slice(from));
+    return out;
+  }
+  const end = closingOf(text, open, close, start + open.length, 1);
+  if (end === -1) {
+    out.push(text.slice(from, start + open.length));
+    return replaceBalancedFrom(text, open, close, render, start + open.length, out);
+  }
+  out.push(text.slice(from, start), render(text.slice(start + open.length, end - close.length), standsAlone(text, start, end)));
+  return replaceBalancedFrom(text, open, close, render, end, out);
+};
+
+/**
+ * Every outermost `open … close` replaced by render(inside, alone), alone when nothing else is on its line. An unclosed
+ * opener is left as written, and what follows it is still read.
+ */
+const replaceBalanced = (text: string, open: string, close: string, render: Render): string => replaceBalancedFrom(text, open, close, render, 0, []).join("");
 
 /** Split at the `|`s that are not inside a nested template or link. */
-const splitTopLevel = (inside: string): string[] => {
-  const split = Array.from(inside).reduce<{ readonly depth: number; readonly parts: string[][] }>(
-    (state, char) => {
-      if (char === "|" && state.depth === 0) return { depth: 0, parts: [...state.parts, []] };
-      state.parts[state.parts.length - 1]?.push(char);
-      return { depth: state.depth + (DEPTH_CHANGE[char] ?? 0), parts: state.parts };
-    },
-    { depth: 0, parts: [[]] },
-  );
-  return split.parts.map((chars) => chars.join(""));
-};
+const splitTopLevel = (inside: string): string[] => splitOutside(inside, "|");
 
 const paramsOf = (args: readonly string[], valueOf: (raw: string) => string): Params => {
   const named = new Map<string, string>();
@@ -104,8 +117,8 @@ const RENDERERS: Readonly<Record<string, (params: Params) => string>> = {
 };
 
 /**
- * What the converter drops leaves this mark, so only its gap is closed: "Airport {{IATA|OST}}, but" becomes
- * "Airport, but", and "a {{x}} b" becomes "a b". Spaces the writer typed ("Wait ... then") are left as they are.
+ * What the converter drops leaves this mark, so only its gap is closed: "Knokke {{rint|be|rail}}, then" becomes
+ * "Knokke, then", and "a {{x}} b" becomes "a b". Spaces the writer typed ("Wait ... then") are left as they are.
  */
 const DROPPED = "\uE000";
 /** Drops next to each other, with or without spaces between, are one drop. */
@@ -152,20 +165,39 @@ const WRAPPERS: Readonly<Record<string, (params: Params) => string>> = {
 };
 
 /** Each value with its own templates expanded and its spaces made one, so a dropped icon leaves no gap. */
-const inlineValue = (raw: string): string => expandTemplates(raw).replace(/\s+/gu, " ").trim();
+const inlineValue = (raw: string): string => expandTemplates(raw, true).replace(/\s+/gu, " ").trim();
 
 /** Each value with its own templates expanded and its lines kept. */
-const textBlockValue = (raw: string): string => expandTemplates(raw).trim();
+const textBlockValue = (raw: string): string => expandTemplates(raw, true).trim();
 
-const expandTemplates = (text: string): string => replaceBalanced(text, "{{", "}}", renderTemplate);
+/** A template inside a value is part of the text around it, even when it fills the value. */
+const expandTemplates = (text: string, nested = false): string => replaceBalanced(text, "{{", "}}", (inside, alone) => renderTemplate(inside, alone && !nested));
 
-function renderTemplate(inside: string): string {
+/**
+ * Templates that never carry the sentence's words, whatever they are given: a reference or a footnote, and the boxes and
+ * links that a page shows apart from its text (navigation, an infobox, a hatnote, a banner, a map, a sort key).
+ */
+const NOT_TEXT = /^(?:r|ref\b.*|refn|efn|sfn.*|harv.*|cite\b.*|citation\b.*|note\b.*|infobox\b.*|navbox\b.*|sidebar\b.*|toc\b.*|main|see ?also|further|related|about|for|distinguish|redirect|is ?part ?of|part ?of.*|page ?banner|geo|mapframe|mapsources|defaultsort.*|デフォルトソート.*)$/u;
+
+/**
+ * A template the converter does not know shows its value only where that is the text the page shows in its place: it is
+ * written inside a line of text, on one line, with exactly one value and no named one ({{phab|T123}}, {{code|x}}). With
+ * several values the last is as often an icon or a date part ({{rint|be|rail}}, {{start date|2004|03|09}}) as text.
+ */
+const unknownTemplateText = (name: string, args: readonly string[], alone: boolean): string => {
+  if (alone || NOT_TEXT.test(name) || args.length !== 1 || args.some((arg) => arg.includes("\n"))) return DROPPED;
+  const params = paramsOf(args, inlineValue);
+  const value = params.named.size === 0 ? (params.positional[0] ?? "") : "";
+  return value === "" ? DROPPED : value;
+};
+
+function renderTemplate(inside: string, alone: boolean): string {
   const [head = "", ...args] = splitTopLevel(inside);
   const name = head.trim().toLowerCase().replace(/_/gu, " ");
   const wrapper = Object.hasOwn(WRAPPERS, name) ? WRAPPERS[name] : undefined;
   if (wrapper !== undefined) return wrapper(paramsOf(args, textBlockValue));
   const render = Object.hasOwn(RENDERERS, name) ? RENDERERS[name] : undefined;
-  return render === undefined ? DROPPED : render(paramsOf(args, inlineValue));
+  return render === undefined ? unknownTemplateText(name, args, alone) : render(paramsOf(args, inlineValue));
 }
 
 /** A heading, a list item, an indented line or a definition: one line that a paragraph break would cut in two. */
@@ -192,21 +224,28 @@ const renderLink = (inside: string): string => {
   return (parts.length > 1 ? parts.slice(1).join("|") : target).trim();
 };
 
-/** Tables (`{| … |}`, nested or not) are removed line by line. */
-const withoutTables = (lines: readonly string[]): string[] =>
-  lines.reduce<{ readonly depth: number; readonly kept: string[] }>(
-    (state, line) => {
-      const trimmed = line.trim();
-      if (trimmed.startsWith("{|")) return { depth: state.depth + 1, kept: state.kept };
-      if (state.depth > 0) return { depth: trimmed.startsWith("|}") ? state.depth - 1 : state.depth, kept: state.kept };
-      return { depth: 0, kept: [...state.kept, line] };
-    },
-    { depth: 0, kept: [] },
-  ).kept;
+/** Where a table stood while the text around it is converted: its index between two marks, on a line of its own. */
+const TABLE_MARK = /\uE002(\d+)\uE003/gu;
 
-const inlineText = (text: string): string =>
+/** Each top-level table replaced by its mark, and the table's own lines kept aside. */
+const tablesSetAside = (lines: readonly string[]): { readonly lines: string[]; readonly tables: string[][] } => {
+  const ranges = tableRanges(lines);
+  const tables = ranges.map((range) => lines.slice(range.start, range.end + 1));
+  const kept = lines.flatMap((line, index) => {
+    const table = ranges.findIndex((range) => index >= range.start && index <= range.end);
+    if (table === -1) return [line];
+    return ranges[table]?.start === index ? [`\uE002${table}\uE003`] : [];
+  });
+  return { lines: kept, tables };
+};
+
+/**
+ * The text of the given wikitext, with templates written in it read as text rather than as lines of their own
+ * (a table cell's text), or not (a page's text).
+ */
+const inlineText = (text: string, inCell = false): string =>
   decodeEntities(
-    replaceBalanced(expandTemplates(text), "[[", "]]", renderLink)
+    replaceBalanced(expandTemplates(text, inCell), "[[", "]]", renderLink)
       .replace(/\[(?:https?:)?\/\/[^\s\]]+(?: ([^\]]*))?\]/giu, (_whole: string, label: string | undefined) => (label === undefined ? DROPPED : label.trim()))
       .replace(/<br\s*\/?>/giu, " ")
       .replace(/<\/?[a-z][^>]*>/giu, "")
@@ -216,6 +255,13 @@ const inlineText = (text: string): string =>
     .replace(DROPPED_RUN, DROPPED)
     .replace(DROPPED_GAP, (_gap: string, after: string | undefined) => after ?? " ")
     .replace(/\uE000/gu, "");
+
+/** A cell's text on one line, with a `|` in it escaped so that it does not end the cell. */
+const cellText = (wikitext: string): string => inlineText(wikitext, true).replaceAll(BLOCK_EDGE, " ").replace(/\s+/gu, " ").trim().replaceAll("|", "\\|");
+
+/** Each table's mark replaced by the table, as a block apart from the text around it. */
+const withTables = (text: string, tables: readonly (readonly string[])[]): string =>
+  text.replace(TABLE_MARK, (_mark: string, index: string) => ["", "", ...tableMarkdown(tables[Number(index)] ?? [], cellText), "", ""].join("\n"));
 
 const LIST_MARK: Readonly<Record<string, string>> = { "*": "- ", "#": "1. " };
 
@@ -257,6 +303,7 @@ export const wikitextToMarkdown = (source: string): string => {
     .replace(/<ref\b[^>]*\/>/giu, "")
     .replace(/<(ref|gallery)\b[^>]*>[\s\S]*?<\/\1\s*>/giu, "")
     .replace(/__[A-Z]+__/gu, "");
-  const text = withBlocksApart(inlineText(withoutTables(cleaned.split("\n")).join("\n")));
+  const { lines, tables } = tablesSetAside(cleaned.split("\n"));
+  const text = withTables(withBlocksApart(inlineText(lines.join("\n"))), tables);
   return tidyLines(text.split("\n").flatMap((line) => markdownLines(line.trim())));
 };
