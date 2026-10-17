@@ -6,11 +6,6 @@ findings:
     text: （定義）
     message: この段落は 52 文あります（12 文まで）
     verdict: unjudged
-  - rule: doubled-word
-    line: 67
-    text: 公告方法のうち、電磁的方法（電子情報処理組織を使用する方法その他の情報通信の技術
-    message: 「公告公告」で語が重なっています。どちらかが余分です
-    verdict: unjudged
   - rule: teki-overuse
     line: 186
     text: ２　前項の定款は、電磁的記録（電子的方式、磁気的方式その他人の知覚によっては認識
@@ -58,12 +53,12 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 687
-    text: 一　譲渡による当該株式の取得について当該株式会社の承認を要すること次に掲げる事項
+    text: 一　譲渡による当該株式の取得について当該株式会社の承認を要すること　次に掲げる事
     message: 「は」で出した主題から述語まで 1117 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 718
-    text: 一　剰余金の配当当該種類の株主に交付する配当財産の価額の決定の方法、剰余金の配当
+    text: 一　剰余金の配当　当該種類の株主に交付する配当財産の価額の決定の方法、剰余金の配
     message: 「は」で出した主題から述語まで 1155 字あります（200 字まで）
     verdict: unjudged
   - rule: max-paragraph-length
@@ -130,11 +125,6 @@ findings:
     line: 1423
     text: 一　前項の書面の閲覧の請求
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 1855
-    text: 割当て当該株式会社の株主
-    message: 「割当て」と書いています（この文書はふつう「割当」と書く語です。12 箇所のうち 3 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1879
@@ -326,30 +316,10 @@ findings:
     text: 第四百六十五条　株式会社が次の各号に掲げる行為をした場合において、当該行為をした
     message: 「は」で出した主題から述語まで 227 字あります（200 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 3932
-    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
-    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 3932
     text: 一　第百三十八条第一号ハ又は第二号ハの請求に応じて行う当該株式会社の株式の買取り
     message: 「は」で出した主題から述語まで 284 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3938
-    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
-    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3939
-    text: 買取り当該株式の買取りにより株主に対して交付した金銭等の帳簿価額の総額
-    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3940
-    text: 買取り当該株式の買取りにより当該イ又はロに定める者に対して交付した金銭等の帳簿価
-    message: 「買取る」と書いています（この文書はふつう「買い取る」と書く語です。32 箇所のうち 4 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 3970
@@ -593,7 +563,7 @@ findings:
     verdict: unjudged
   - rule: teki-overuse
     line: 6393
-    text: 一　吸収分割株式会社吸収分割により吸収分割承継会社が承継した吸収分割株式会社の権
+    text: 一　吸収分割株式会社　吸収分割により吸収分割承継会社が承継した吸収分割株式会社の
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: teki-overuse
@@ -618,7 +588,7 @@ findings:
     verdict: unjudged
   - rule: teki-overuse
     line: 6506
-    text: 一　吸収合併存続株式会社第一項の書面又は電磁的記録
+    text: 一　吸収合併存続株式会社　第一項の書面又は電磁的記録
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: teki-overuse
@@ -648,7 +618,7 @@ findings:
     verdict: unjudged
   - rule: teki-overuse
     line: 6637
-    text: 一　新設分割株式会社新設分割により新設分割設立会社が承継した新設分割株式会社の権
+    text: 一　新設分割株式会社　新設分割により新設分割設立会社が承継した新設分割株式会社の
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: teki-overuse
@@ -658,7 +628,7 @@ findings:
     verdict: unjudged
   - rule: teki-overuse
     line: 6671
-    text: 一　新設合併設立株式会社第一項の書面又は電磁的記録及び新設合併契約の内容その他法
+    text: 一　新設合併設立株式会社　第一項の書面又は電磁的記録及び新設合併契約の内容その他
     message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: unjudged
   - rule: teki-overuse
@@ -738,22 +708,22 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7628
-    text: 一　新設合併により消滅する会社が株式会社のみである場合次に掲げる日のいずれか遅い
+    text: 一　新設合併により消滅する会社が株式会社のみである場合　次に掲げる日のいずれか遅
     message: 「は」で出した主題から述語まで 522 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7641
-    text: 一　新設合併により消滅する会社が株式会社のみである場合次に掲げる日のいずれか遅い
+    text: 一　新設合併により消滅する会社が株式会社のみである場合　次に掲げる日のいずれか遅
     message: 「は」で出した主題から述語まで 290 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7657
-    text: 一　新設分割をする会社が株式会社のみである場合次に掲げる日のいずれか遅い日
+    text: 一　新設分割をする会社が株式会社のみである場合　次に掲げる日のいずれか遅い日
     message: 「は」で出した主題から述語まで 672 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7670
-    text: 一　新設分割をする会社が株式会社のみである場合次に掲げる日のいずれか遅い日
+    text: 一　新設分割をする会社が株式会社のみである場合　次に掲げる日のいずれか遅い日
     message: 「は」で出した主題から述語まで 441 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
