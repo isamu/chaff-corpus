@@ -1,0 +1,19 @@
+id: cncf-membership-engagement-guide
+chaff: 0.35.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    sha256: d50aff338da64e920ba99325a3b71b603fbc3aa393142fb5632631d5e82f852d
+    verdict: correct
+  - rule: undefined-acronym
+    line: 159
+    sha256: 48798e47adfa9178efb8390be49212c057fa17481c6509803e5fa6ca38fb91a8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 177
+    sha256: 5e1f454fc71063d91c18e7a5ce63b082883a5a8491ddd2e0851470a5328ead43
+    verdict: correct
+  - rule: undefined-acronym
+    line: 177
+    sha256: bbed1d5a95953bd5f3cba817266b086c2ac7a6a6f2bdb7af23de73d7bdb401cb
+    verdict: correct
