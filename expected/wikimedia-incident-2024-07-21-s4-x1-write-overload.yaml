@@ -11,8 +11,13 @@ findings:
     sha256: 859bbd771497ed4a5d55e4a8c4c7194075f6fd6f36b63466aac717a9cf74c9cd
     verdict: false-positive
     note: two different service identifiers, not variants of one name
-  - rule: empty-section
-    line: 37
-    sha256: 0604869ba4a42e0ab1074023a2680a31e8502eac770826ed6751fb1f8db40333
+  - rule: empty-table-cell
+    line: 51
+    sha256: e51e5401aa081feb6919b91c347c135e28d732dac0e5c703480bb19a613b9429
+    verdict: correct
+    note: the scorecard leaves this question's answer blank in the source
+  - rule: empty-table-cell
+    line: 58
+    sha256: 88da06ca99e26a3397b7f22217e9b3f59d9c35d346fafb00311c0a0249bf10ed
     verdict: false-positive
-    note: the section's content was a wikitext template or table that the wikitext converter drops; the source section is not empty
+    note: the label cell spans two columns in the source; a Markdown table has no column span, so the converter leaves the second column empty

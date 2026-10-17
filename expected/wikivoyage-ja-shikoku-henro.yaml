@@ -21,11 +21,15 @@ findings:
     line: 16
     sha256: 42ed88f70548074883b19b235b09d6ba3cc0acf5d1d6d937caaedddebf3e2dd9
     verdict: unjudged
-  - rule: empty-section
-    line: 32
-    sha256: c4cc63dfca907fa6a68f5aa3953b7fd374fbc0fcbbca2866117f2da8ff18b278
+  - rule: orthographic-variant
+    line: 28
+    sha256: 65db7206a899dbea5c9c66a4d42d4a9779e7088f86639af394f41a13a829470d
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 34
+    sha256: 488181b6a736cdbc793e5ffba0ffa46e8a94f2b39fc1ac5f5a1dfb791470cb98
     verdict: unjudged
   - rule: stray-space
-    line: 57
+    line: 150
     sha256: 30fd7325d93aee16256f867399700ab4a6b5d1e71730c3dfede9b2781fe4d10b
     verdict: unjudged
