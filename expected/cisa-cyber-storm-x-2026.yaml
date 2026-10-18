@@ -1,0 +1,14 @@
+id: cisa-cyber-storm-x-2026
+chaff: 0.36.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 13
+    text: Washington, DC – The Cybersecurity and I
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: a dateline (city, state, dash) followed by an agency name containing "and" is read as a list without the serial comma
+  - rule: sentence-spacing-consistency
+    line: 15
+    text: "  As a nation, we need the ability to re"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 8)
+    verdict: correct

@@ -1,0 +1,573 @@
+id: bunka-tsuchi-nihongo-kyoiku-suishin-2019
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: 元文庁第397号
+    message: 書き出しに挨拶がありません
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 10
+    text: 各都道府県教育委員会教育長
+    message: 「各都道府県教育委員会教育長」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 12
+    text: 各指定都市教育委員会教育長
+    message: 「各指定都市教育委員会教育長」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 16
+    text: 各国公私立高等専門学校長
+    message: 「各国公私立高等専門学校長」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 21
+    text: 各大学共同利用機関法人機構長
+    message: 「各大学共同利用機関法人機構長」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 29
+    text: 文部科学省関係各独立行政法人の長
+    message: 「文部科学省関係各独立行政法人」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: preamble-length
+    line: 38
+    text: この度，「日本語教育の推進に関する法律（令和元年法律第48号）」が，令和元年6月
+    message: 最初の見出しまでに 3 段落あります（2 段落まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 42
+    text: また，各都道府県教育委員会におかれては所管の学校（専修学校・各種学校を含む。以下
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 42
+    text: また，各都道府県教育委員会におかれては所管の学校（専修学校・各種学校を含む。以下
+    message: この文は 221 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 52
+    text: この法律は，日本語教育の推進が，我が国に居住する外国人が日常生活及び社会生活を国
+    message: この文は 296 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 52
+    text: この法律は，日本語教育の推進が，我が国に居住する外国人が日常生活及び社会生活を国
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 52
+    text: この法律は，日本語教育の推進が，我が国に居住する外国人が日常生活及び社会生活を国
+    message: 「は」で出した主題から述語まで 288 字あります（80 字まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 52
+    text: 基本方針の策定その他日本語教育の推進に関する施策の基本となる事項を定めることによ
+    message: 「基本方針」を、98 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 52
+    text: 基本理念を定め，並びに国，地方公共団体及び事業主の責務を明らかにするとともに，基
+    message: 「基本理念」を、71 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: "[2]この法律において「日本語教育」とは，外国人等が日本語を習得するために行われ"
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: "[1]日本語教育の推進は，日本語教育を受けることを希望する外国人等に対し，その希"
+    message: この文は 95 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 63
+    text: "[3]日本語教育の推進は，外国人等に係る教育及び労働，出入国管理その他の関連施策"
+    message: この文は 78 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: "[5]日本語教育の推進は，海外における日本語教育を通じて我が国に対する諸外国の理"
+    message: この文は 107 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: "[5]日本語教育の推進は，海外における日本語教育を通じて我が国に対する諸外国の理"
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 67
+    text: "[7]日本語教育の推進は，我が国に居住する幼児期及び学齢期にある外国人等の家庭に"
+    message: この文は 80 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: 国は，1の（3）の基本理念（以下「基本理念」という。）にのっとり，日本語教育の推
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 75
+    text: 地方公共団体は，基本理念にのっとり，日本語教育の推進に関し，国との適切な役割分担
+    message: この文は 86 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: 外国人等を雇用する事業主は，基本理念にのっとり，国又は地方公共団体が実施する日本
+    message: この文は 120 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 79
+    text: 外国人等を雇用する事業主は，基本理念にのっとり，国又は地方公共団体が実施する日本
+    message: 「ものとすること。」が 30 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 79
+    text: の機会の提供その他の日本語学習に対する支援に努めるものとすること。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 79
+    text: 外国人等を雇用する事業主は，基本理念にのっとり，国又は地方公共団体が実施する日本
+    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 83
+    text: "[1]国及び地方公共団体は，国内における日本語教育が適切に行われるよう，関係省庁"
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: "[1]国及び地方公共団体は，国内における日本語教育が適切に行われるよう，関係省庁"
+    message: この文は 219 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 83
+    text: の関係者相互間の連携の強化その他必要な体制の整備に努めるものとすること。
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 83
+    text: 支援を行う団体等の関係者相互間の連携の強化その他必要な体制の整備に努めるものとす
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 83
+    text: 教育を行う学校（学校教育法（昭和22年法律第26号）第1条に規定する学校，同法第
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 83
+    text: 教育を行う機関（日本語教育を行う学校（学校教育法（昭和22年法律第26号）第1条
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 83
+    text: "[1]国及び地方公共団体は，国内における日本語教育が適切に行われるよう，関係省庁"
+    message: 「は」で出した主題から述語まで 203 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: "[2]国は，海外における日本語教育が持続的かつ適切に行われるよう，独立行政法人国"
+    message: この文は 102 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 84
+    text: の連携の強化その他必要な体制の整備に努めるものとすること。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 84
+    text: 教育を行う機関，諸外国の行政機関及び教育機関等との連携の強化その他必要な体制の整
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 84
+    text: "[2]国は，海外における日本語教育が持続的かつ適切に行われるよう，独立行政法人国"
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 88
+    text: 施策を実施するため必要な法制上又は財政上の措置その他の措置を講じなければならない
+    message: 「施策を実施する」は「施策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 98
+    text: "[1]政府は，日本語教育の推進に関する施策を総合的かつ効果的に推進するための基本"
+    message: この文は 72 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 98
+    text: "[1]政府は，日本語教育の推進に関する施策を総合的かつ効果的に推進するための基本"
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 106
+    text: 関係行政機関の長に協議しなければならないこと。
+    message: 「関係行政機関」を、195 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 107
+    text: の[3]の閣議の決定があったときは，遅滞なく，基本方針を公表しなければならないこ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 108
+    text: "[6]政府は，日本語教育を取り巻く環境の変化を勘案し，並びに日本語教育に関する施"
+    message: この文は 114 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 108
+    text: "[6]政府は，日本語教育を取り巻く環境の変化を勘案し，並びに日本語教育に関する施"
+    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: 地方公共団体は，基本方針を参酌し，その地域の実情に応じ，当該地方公共団体における
+    message: この文は 94 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 113
+    text: 地方公共団体は，基本方針を参酌し，その地域の実情に応じ，当該地方公共団体における
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 113
+    text: 地方公共団体は，基本方針を参酌し，その地域の実情に応じ，当該地方公共団体における
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: ア国は，外国人等である幼児，児童，生徒等に対する生活に必要な日本語及び教科の指導
+    message: この文は 158 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 121
+    text: の指導等の充実その他の日本語教育の充実を図るため，これらの指導等の充実を可能とす
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 121
+    text: 支援を行う者をいう。）の配置に係る制度の整備，教員等の養成及び研修の充実，就学の
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 121
+    text: ア国は，外国人等である幼児，児童，生徒等に対する生活に必要な日本語及び教科の指導
+    message: 「は」で出した主題から述語まで 152 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 122
+    text: イ国は，外国人等である幼児，児童，生徒等が生活に必要な日本語を習得することの重要
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 122
+    text: 活動を行うよう努めるものとすること。
+    message: 「活動を行う」は「活動する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 122
+    text: イ国は，外国人等である幼児，児童，生徒等が生活に必要な日本語を習得することの重要
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: ア国は，大学及び大学院に在学する外国人留学生等であって日本語を理解し，使用する能
+    message: この文は 153 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 126
+    text: 研究を行うこと等を希望するものに対して就業，教育研究等に必要な日本語を習得させる
+    message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 126
+    text: ア国は，大学及び大学院に在学する外国人留学生等であって日本語を理解し，使用する能
+    message: 「は」で出した主題から述語まで 142 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: イ国は，外国人留学生等（大学及び大学院に在学する者を除く。）であって日本語能力を
+    message: この文は 131 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 127
+    text: イ国は，外国人留学生等（大学及び大学院に在学する者を除く。）であって日本語能力を
+    message: 「は」で出した主題から述語まで 125 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 131
+    text: ア国は，事業主がその雇用する外国人等（次のイの技能実習生を除く。）に対して，日本
+    message: この文は 106 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 131
+    text: 支援を行うものとすること。
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 131
+    text: ア国は，事業主がその雇用する外国人等（次のイの技能実習生を除く。）に対して，日本
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 132
+    text: イ国は，事業主等が技能実習生に対して日本語能力の更なる向上の機会を提供することが
+    message: この文は 80 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 132
+    text: 支援を行うものとすること。
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 137
+    text: (ひ)護されていた外国人であって政府の方針により国際的動向を踏まえ我が国に受け入
+    message: 括弧を「(」と書いています（この文書はふつう「（」。105 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 137
+    text: )護されていた外国人であって政府の方針により国際的動向を踏まえ我が国に受け入れた
+    message: 括弧を「)」と書いています（この文書はふつう「）」。105 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 137
+    text: 国は，難民の認定を受けている外国人及びその家族並びに外国において一時的に庇(ひ)
+    message: この文は 150 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 137
+    text: の機会の提供その他の必要な施策を講ずるものとすること。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 137
+    text: 国は，難民の認定を受けている外国人及びその家族並びに外国において一時的に庇(ひ)
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 137
+    text: 国は，難民の認定を受けている外国人及びその家族並びに外国において一時的に庇(ひ)
+    message: 「は」で出した主題から述語まで 145 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 141
+    text: 国は，地域における日本語教育の機会の拡充を図るため，日本語教室の開始及び運営の支
+    message: この文は 134 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 141
+    text: 国は，地域における日本語教育の機会の拡充を図るため，日本語教室の開始及び運営の支
+    message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 145
+    text: 国は，国内における日本語教育が外国人等の日本語能力を向上させるとともに，共生社会
+    message: この文は 124 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 145
+    text: 国は，国内における日本語教育が外国人等の日本語能力を向上させるとともに，共生社会
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 151
+    text: ア国は，海外における日本語教育が外国人等の我が国に対する理解と関心の増進，我が国
+    message: この文は 242 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 151
+    text: 教育を行う教育機関の活動及び日本語を学習する者の支援その他の必要な施策を講ずるよ
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 151
+    text: ア国は，海外における日本語教育が外国人等の我が国に対する理解と関心の増進，我が国
+    message: 「は」で出した主題から述語まで 236 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 152
+    text: イ国は，外国人等であって我が国への留学を希望するものが我が国の大学等で教育を受け
+    message: この文は 84 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 156
+    text: 国は，海外に在留する邦人の子，海外に移住した邦人の子孫等に対する日本語教育の充実
+    message: この文は 91 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 156
+    text: 国は，海外に在留する邦人の子，海外に移住した邦人の子孫等に対する日本語教育の充実
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 160
+    text: 教育を行う機関における日本語教育の水準の維持向上（第20条関係）
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 162
+    text: 国は，日本語教育を行う機関における日本語教育の水準の維持向上を図るため，日本語教
+    message: この文は 98 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 162
+    text: の機会の確保の促進その他の必要な施策を講ずるものとすること。
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 162
+    text: 教育を行う機関における日本語教育の水準の維持向上を図るため，日本語教育を行う機関
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 162
+    text: 教育を行う機関によるその日本語教育に従事する者に対する研修の機会の確保の促進その
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 162
+    text: 国は，日本語教育を行う機関における日本語教育の水準の維持向上を図るため，日本語教
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 166
+    text: ア国は，日本語教育に従事する者の能力及び資質の向上並びに処遇の改善が図られるよう
+    message: この文は 145 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 166
+    text: ア国は，日本語教育に従事する者の能力及び資質の向上並びに処遇の改善が図られるよう
+    message: 「は」で出した主題から述語まで 139 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 167
+    text: イ国は，海外における日本語教育の水準の維持向上を図るため，外国人である日本語教師
+    message: この文は 79 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 171
+    text: 国は，日本語教育を受ける者の日本語能力に応じた効果的かつ適切な教育が行われるよう
+    message: この文は 100 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 171
+    text: 国は，日本語教育を受ける者の日本語能力に応じた効果的かつ適切な教育が行われるよう
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 175
+    text: の評価方法の開発その他の必要な施策を講ずるものとすること。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 181
+    text: 国は，日本語教育の推進に関する施策を適正に策定し，及び実施するため，日本語教育の
+    message: この文は 130 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 181
+    text: 国は，日本語教育の推進に関する施策を適正に策定し，及び実施するため，日本語教育の
+    message: 「は」で出した主題から述語まで 125 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 185
+    text: 国は，外国人等が日本語教育に関して必要な情報を得られるよう，外国人等のために日本
+    message: この文は 129 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 185
+    text: 国は，外国人等が日本語教育に関して必要な情報を得られるよう，外国人等のために日本
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 189
+    text: 地方公共団体は，3（（2）を除く。）の国の施策を勘案し，その地方公共団体の地域の
+    message: この文は 81 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 189
+    text: 施策を実施するよう努めるものとすること。
+    message: 「施策を実施する」は「施策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 195
+    text: "[1]政府は，文部科学省，外務省その他の関係行政機関（以下「関係行政機関」という"
+    message: この文は 104 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 195
+    text: 調整を行うことにより，日本語教育の総合的，一体的かつ効果的な推進を図るため，日本
+    message: 「調整を行う」は「調整する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 195
+    text: "[1]政府は，文部科学省，外務省その他の関係行政機関（以下「関係行政機関」という"
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 195
+    text: "[1]政府は，文部科学省，外務省その他の関係行政機関（以下「関係行政機関」という"
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 196
+    text: "[2]関係行政機関は，日本語教育に関し専門的知識を有する者，日本語教育に従事する"
+    message: 「日本語教育推進関係者会議」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 196
+    text: "[2]関係行政機関は，日本語教育に関し専門的知識を有する者，日本語教育に従事する"
+    message: この文は 118 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 196
+    text: 調整を行うに際しては，その意見を聴くものとすること。
+    message: 「調整を行う」は「調整する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 196
+    text: "[2]関係行政機関は，日本語教育に関し専門的知識を有する者，日本語教育に従事する"
+    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 200
+    text: 地方公共団体に，2の（2）の基本的な方針その他の日本語教育の推進に関する重要事項
+    message: この文は 89 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 200
+    text: の基本的な方針その他の日本語教育の推進に関する重要事項を調査審議させるため，条例
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 210
+    text: 国は，次に掲げる事項その他日本語教育を行う機関であって日本語教育の水準の維持向上
+    message: この文は 120 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 210
+    text: 教育を行う機関であって日本語教育の水準の維持向上を図るために必要な適格性を有する
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 210
+    text: 国は，次に掲げる事項その他日本語教育を行う機関であって日本語教育の水準の維持向上
+    message: 「は」で出した主題から述語まで 108 字あります（80 字まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 212
+    text: 教育を行う機関のうち当該制度の対象となる機関の類型及びその範囲
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 214
+    text: の水準の維持向上のための評価制度等の在り方
+    message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 221
+    text: 電話:03-5253-4111（内線2840）
+    message: 終わりに結びの言葉がありません
+    verdict: unjudged

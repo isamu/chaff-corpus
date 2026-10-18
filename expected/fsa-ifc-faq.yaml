@@ -1,0 +1,193 @@
+id: fsa-ifc-faq
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 3
+    text: HOME
+    message: 「HOME」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 17
+    text: (iv) 実例）をご参照ください。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 17
+    text: " 登録審査手続及び登録要件（2）各金融商品取引業の登録要件②人的構成要件(iv)"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。27 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 19
+    text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録
+    message: 「適格機関投資家等特例業務」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 19
+    text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録
+    message: 「る必要があります」が 8 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 19
+    text: 等特例業務などの届出業者での経験は含まない。）があり、かつ日本に居住する常勤の役
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 19
+    text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録
+    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 25
+    text: 等を踏まえ、代表者が的確に業務を遂行できると当局が判断した場合は、日本国外から業
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: ただし、各事業者の人的構成、業務の内容及び方法等を踏まえ、日本の法律事務所等のサ
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 41
+    text: (a)(b)(c)の投資運用関係業務（コンプライアンスのための業務）をいずれも投
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 41
+    text: (監督者)を確保することで足りることになります。詳しくは、拠点開設サポートオフィ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 41
+    text: )の投資運用関係業務（コンプライアンスのための業務）をいずれも投資運用関係業務受
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 41
+    text: )を確保することで足りることになります。詳しくは、拠点開設サポートオフィスにご相
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 41
+    text: この場合、投資運用業者は、コンプライアンス担当者に代わり、当該投資運用関係業務の
+    message: 「当該投資運用関係業務」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 41
+    text: 投資運用業者においては、以下の(a)(b)(c)の投資運用関係業務（コンプライア
+    message: 「投資運用関係業務受託業者」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: これら以外の場合には、コンプライアンス担当者を自社（登録申請者）に置くことなく、
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 49
+    text: 等に即して、自社（登録申請者）にコンプライアンス担当者を置き、適切なコンプライア
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: requirement-smell
+    line: 55
+    text: 等にも留意する必要があります。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 61
+    text: HPもご参照ください。
+    message: 「HP」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 89
+    text: 運用業務に関する第二種金融商品取引業
+    message: 「第二種金融商品取引業」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 90
+    text: 外国の法令に準拠し、当該外国において第一種金融商品取引業と同種類の業務を行ってい
+    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 90
+    text: 又は関連会社等を含む）等であって、特定投資家を相手方とし、外国投資の一定の有価証
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。18 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 91
+    text: 投資運用関係業務受託業
+    message: 「投資運用関係業務受託業」は漢字が 11 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 100
+    text: ただし、日本で何らかの事業を行う海外の事業者に対しては、できる限りのサポートを行
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 104
+    text: VCの場合もサポートプログラムの対象になりえます。詳細については個別のビジネス形
+    message: 「VC」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 136
+    text: " 国債、地方債、上場公社債などの一定の公社債"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。27 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 137
+    text: " 一定の場合には、申告不要を選択可能。"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。27 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 141
+    text: 又は免除を受けた場合は、下記の税率とは異なる。）
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。18 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 152
+    text: 外国の投資家（LP）が、GPが日本に所在する組合型のファンド（投資事業有限責任組
+    message: 「投資事業有限責任組合」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 152
+    text: ただし、各LPのファンドの持分割合が25%未満（投資組合に諮問委員会を設置する場
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 152
+    text: および申告書を提出した日の翌日から5年を経過した場合にも当該申告書の提出が必要と
+    message: 「および」と書いています（この文書はふつう「及び」と書く語です。14 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 152
+    text: PEとみなされ、LPはそのPEに帰属する所得に対して日本で課税される。ただし、各
+    message: 「PE」が説明なしで使われています（説明のない略語 4 個）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 165
+    text: ただし、ファンドのLPの投資先である内国法人に対する出資割合が25%未満である等
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 169
+    text: 個人であるファンドマネージャーが組合員として運用する組合事業から出資割合を超えて
+    message: この文は 162 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 175
+    text: 出来るのか教えてください。
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。14 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 195
+    text: 出入国在留管理庁は、高度外国人材に関する入国手続（在留資格認定証明書交付申請）に
+    message: 「在留資格認定証明書交付申請」は漢字が 13 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 195
+    text: 出入国在留管理庁は、高度外国人材に関する入国手続（在留資格認定証明書交付申請）に
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 215
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
+    verdict: unjudged

@@ -1,0 +1,48 @@
+id: clef-working-remotely
+chaff: 0.36.0
+findings:
+  - rule: wordy-phrase
+    line: 5
+    text: Specifically, this document addresses wo
+    message: '"on a regular basis" can be said in fewer words'
+    verdict: correct
+  - rule: doubled-word
+    line: 11
+    text: as a co-located employee of Clef working
+    message: '"as as" doubles a word; one of the two is left over'
+    verdict: correct
+  - rule: wordy-phrase
+    line: 11
+    text: For the purpose of this document, we int
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 44
+    text: Even more than standard remote work, wor
+    message: This sentence runs 41 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 44
+    text: If you're planning to work remotely for
+    message: This sentence runs 41 words (limit 40)
+    verdict: correct
+  - rule: wordy-phrase
+    line: 48
+    text: In order for an employee to work remotel
+    message: '"in order for" can be said in fewer words'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 58
+    text: Update your calendar to mark which days
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct
+  - rule: contraction-consistency
+    line: 62
+    text: It's your responsibility to both make su
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 81
+    text: This is a time where employees can voice
+    message: This sentence runs 49 words (limit 40)
+    verdict: correct
