@@ -11,35 +11,10 @@ findings:
     text: 基本方針の作成その他の個人情報の保護に関する施策の基本となる事項を定め、国及び地
     message: 「基本方針」を、57 行目の定義より前で使っています
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 8
-    text: （定義）
-    message: この段落は 17 文あります（12 文まで）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 10
     text: 一　当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記録
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 10
-    text: 一　当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記録
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 59
-    text: 一　個人情報の保護に関する施策の推進に関する基本的な方向
-    message: 一文に「〜的」が 5 個あります（2 個まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 181
-    text: （第三者提供の制限）
-    message: この段落は 18 文あります（12 文まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 202
-    text: 一　個人情報取扱事業者が利用目的の達成に必要な範囲内において個人データの取扱いの
-    message: 一文に節が 9 つつながっています（8 つまで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 208
@@ -91,35 +66,15 @@ findings:
     text: ４　行政機関の長等は、仮名加工情報を取り扱うに当たっては、法令に基づく場合を除き
     message: 「は」で出した主題から述語まで 261 字あります（200 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 494
-    text: 一　個人情報ファイルの名称
-    message: 「は」で出した主題から述語まで 287 字あります（200 字まで）
-    verdict: unjudged
   - rule: bracket-nesting
-    line: 552
-    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
+    line: 565
+    text: ２　地方公共団体の機関又は地方独立行政法人についての前項の規定の適用については、
     message: 括弧が 4 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 552
-    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
-    message: 一文に節が 12 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 552
-    text: イ　開示することにより、当該法人等又は当該個人の権利、競争上の地位その他正当な利
-    message: 「は」で出した主題から述語まで 959 字あります（200 字まで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 701
     text: ２　行政機関の長等に対する開示決定等、訂正決定等、利用停止決定等又は開示請求、訂
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 764
-    text: 一　未成年者
-    message: 一文に節が 10 つつながっています（8 つまで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 841
@@ -135,16 +90,6 @@ findings:
     line: 866
     text: 第百三十一条　委員会は、行政機関等の事務及び事業の適正かつ円滑な運営を図り、並び
     message: 「は」で出した主題から述語まで 269 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 871
-    text: 取扱い、個人情報取扱事業者及び仮名加工情報取扱事業者における仮名加工情報の取扱い
-    message: 「取扱う」と書いています（この文書はふつう「取り扱う」と書く語です。33 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 871
-    text: 取扱い、個人情報取扱事業者及び匿名加工情報取扱事業者における匿名加工情報の取扱い
-    message: 「取扱う」と書いています（この文書はふつう「取り扱う」と書く語です。33 箇所のうち 2 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 946

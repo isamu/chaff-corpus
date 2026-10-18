@@ -61,8 +61,3 @@ findings:
     text: GDS
     message: '"GDS" is used without an expansion (3 such acronyms)'
     verdict: unjudged
-  - rule: title-case-consistency
-    line: 74
-    text: ""
-    message: This heading's capitalisation differs from the rest (2 in this document)
-    verdict: unjudged

@@ -8,9 +8,9 @@ findings:
     verdict: correct
   - rule: undefined-acronym
     line: 13
-    text: ASN 等を記録させて頂きます。
-    message: 「ASN」が説明なしで使われています（説明のない略語 3 個）
-    verdict: correct
+    what: ASN is used without being spelled out
+    verdict: missed
+    note: correct in chaffjs 0.35.0, lost in 0.36.0; why not established
   - rule: orthographic-variant
     line: 39
     text: 持ってウェブサイト上で公表するものとします。
@@ -21,11 +21,6 @@ findings:
     text: 事
     message: 「事」と書いています（この文書はふつう「こと」と書く語です。13 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: undefined-acronym
-    line: 71
-    text: DM やメールなどにより通知をして一定期間が経過した場合を準用する）
-    message: 「DM」が説明なしで使われています（説明のない略語 3 個）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 87
     text: 出来ます。
@@ -37,28 +32,10 @@ findings:
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。23 段落のうち 1 段落）
     verdict: correct
   - rule: requirement-smell
-    line: 91
-    text: 等を行った際に、パスワード変更とアカウント消去の場合にのみ通知を送付するものとし
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
-  - rule: requirement-smell
     line: 95
     text: 可能な限り迅速な対応を以て調査を行うものとします。
     message: 「可能な限り」は、どこまでしたら満たしたことになるのかを決めていません
     verdict: unjudged
-  - rule: requirement-smell
-    line: 99
-    text: などを行った場合、または対処を行わない旨の決定をしたときは請求者に対し通知を行う
-    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
-  - rule: requirement-smell
-    line: 101
-    text: などが困難であると判断される場合であり、ユーザーの権利利益を保護するために必要な
-    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
   - rule: orthographic-variant
     line: 111
     text: 事が不適切であると判断されるコンテンツに関しましては、必要に応じてモザイク処理な
@@ -74,9 +51,3 @@ findings:
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: undefined-acronym
-    line: 123
-    text: XX 日　初版発行
-    message: 「XX」が説明なしで使われています（説明のない略語 3 個）
-    verdict: false-positive
-    note: a template placeholder (XX in a date), not an acronym

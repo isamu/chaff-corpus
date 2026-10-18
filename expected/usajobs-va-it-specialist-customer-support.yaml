@@ -26,21 +26,6 @@ findings:
     text: " - You may be expected to travel for thi"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 135
-    text: ALL US CITIZENS
-    message: '"ALL US CITIZENS" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 137
-    text: "DIRECT HIRE AUTHORITY: This position is"
-    message: '"DIRECT HIRE AUTHORITY" is written in capitals'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 137
-    text: CFR 337.205) for this occupation.
-    message: '"CFR" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 147
     text: This position is established to perform
@@ -62,11 +47,6 @@ findings:
     message: '"ESD" is used without an expansion (18 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 165
-    text: NICE Cybersecurity Workforce Framework w
-    message: '"NICE" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 169
     text: "PD#: IT Specialist (System Analyst/Custo"
     message: '"PD" is used without an expansion (18 such acronyms)'
@@ -75,11 +55,6 @@ findings:
     line: 197
     text: Selected applicants will be required to
     message: '"applicants will be" appears 7 times (limit 5)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 197
-    text: REAL ID compliant cannot be utilized as
-    message: '"REAL" is used without an expansion (18 such acronyms)'
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 221
@@ -125,11 +100,6 @@ findings:
     line: 301
     text: OSP) at The Fair Chance Act.
     message: '"OSP" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 305
-    text: ""
-    message: Section "Benefits" has no number, code or link (7 of 22 sections)
     verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 309
@@ -191,11 +161,6 @@ findings:
     text: TXT, PDF, ODT or Word (DOC or DOCX). We
     message: '"TXT" is used without an expansion (18 such acronyms)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 337
-    text: ""
-    message: Section "Benefits" has no number, code or link (7 of 22 sections)
-    verdict: unjudged
   - rule: duplicate-heading
     line: 337
     text: "# Benefits"
@@ -215,11 +180,6 @@ findings:
     line: 383
     text: OPM's Career Transition Resources websit
     message: '"OPM" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 397
-    text: JOBS account or log in to your existing
-    message: '"JOBS" is used without an expansion (18 such acronyms)'
     verdict: unjudged
   - rule: list-item-form-mix
     line: 405
@@ -285,11 +245,6 @@ findings:
     line: 559
     text: " - we have built a team whose primary mo"
     message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 565
-    text: "DIRECT HIRE AUTHORITY: This position is"
-    message: '"DIRECT HIRE AUTHORITY" is written in capitals'
     verdict: unjudged
   - rule: contraction-consistency
     line: 584

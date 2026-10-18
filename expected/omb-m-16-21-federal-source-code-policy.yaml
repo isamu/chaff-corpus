@@ -1,12 +1,6 @@
 id: omb-m-16-21-federal-source-code-policy
 chaff: 0.35.0
 findings:
-  - rule: email-greeting-closing
-    line: 17
-    text: When Federal agencies are unable to iden
-    message: The email does not open with a greeting
-    verdict: false-positive
-    note: a formal government memorandum (MEMORANDUM FOR / FROM / SUBJECT) has no greeting or closing by convention
   - rule: max-paragraph-length
     line: 17
     text: When Federal agencies are unable to iden
@@ -112,12 +106,6 @@ findings:
     text: "The Department of Defense (DOD): This ag"
     message: This sentence runs 36 words (limit 18)
     verdict: correct
-  - rule: email-greeting-closing
-    line: 34
-    text: The Administration made a commitment, as
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: a formal government memorandum (MEMORANDUM FOR / FROM / SUBJECT) has no greeting or closing by convention
   - rule: max-sentence-length
     line: 34
     text: The Administration made a commitment, as

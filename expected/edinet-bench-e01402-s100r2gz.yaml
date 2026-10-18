@@ -6,12 +6,6 @@ findings:
     text: " SUNCALL SANKO CORP.を設立1989年６月米国に合弁会社 SA"
     message: 日本語と英字のあいだを、空ける所が 16 箇所、詰める所が 52 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 5
-    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
-    message: 「月大阪証券取引所第一部」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: the run counts the 月 of a date glued to the event (1964年10月大阪証券取引所…); the compound itself is within the limit
   - rule: max-sentence-length
     line: 5
     text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
@@ -37,24 +31,8 @@ findings:
     verdict: correct
   - rule: undefined-acronym
     line: 5
-    text: CO.,LTD.（現連結子会社）を設立2009年４月子会社 広瀬テクノロジー株式
-    message: 「CO」が説明なしで使われています（説明のない略語 14 個）
-    verdict: false-positive
-    note: part of a company's registered name (ADEKA, CO.,LTD.), not an acronym to expand
-  - rule: undefined-acronym
-    line: 5
     text: EV製品シャントバスバー量産開始2020年４月京都市南区に京都南工場を開設202
     message: 「EV」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 5
-    text: INC.（米国、マサチューセッツ州）を買収1991年４月会社名を『サンコール株式
-    message: 「INC」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 5
-    text: LTD.（現連結子会社）を設立1992年11月広瀬工場を子会社 広瀬テクノロジー
-    message: 「LTD」が説明なしで使われています（説明のない略語 14 個）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 9
@@ -137,36 +115,6 @@ findings:
     line: 13
     text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
     message: この段落は 25 文あります（5 文まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSUNCALL CO.,（H.K.）LTD.中国香港特別行政区4,050千香
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSUNCALL HIGH PRECISION（THAILAND）LTD.タイ
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSUNCALL TECHNOLOGIES MEXICO,S.A.DE C.V
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSUNCALL TECHNOLOGY VIETNAMCO.,LTD.
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSuncall（Guangzhou）Trading Co.,Ltd.中国広州
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 13
-    text: 有りSUNCALL（Tianjin）Co.,Ltd.中国天津340自動車関連製品
-    message: 「有る」と書いています（この文書はふつう「ある」と書く語です。35 箇所のうち 6 箇所が違う）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 13
@@ -310,16 +258,6 @@ findings:
     text: ＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電流を検出するニー
     message: 全角の「ＰＨＶ」と書いています（この文書はふつう半角の「PHV」。197 箇所のうち 23 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 21
-    text: ・電動車ニーズに応えるべく「バスバー」、「シャントバスバー」の量産拡大・ＥＶ等電
-    message: 「電子情報通信関連成長事業」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 21
-    text: なお、事業ポートフォリオ改革に関しては、「ＥＶ等電動化関連成長事業および電子情報
-    message: 「電子情報通信関連成長事業」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 21
     text: １【経営方針、経営環境及び対処すべき課題等】　文中の将来に関する事項は、当連結会
@@ -455,6 +393,11 @@ findings:
     line: 25
     text: 出来なくなる可能性があります。・顧客の生産動向に関するリスク　当社グループが販売
     message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。9 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: 取組んでいます。 (8) 訴訟に関するリスク　当社グループは、事業を遂行するうえ
+    message: 「取組む」と書いています（この文書はふつう「取り組む」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 25
@@ -673,6 +616,11 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 37
+    text: (1) 提出会社2023年３月31日現在事業所名（所在地）セグメントの名称製品区
+    message: 括弧を「(」と書いています（この文書はふつう「（」。447 箇所のうち 44 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
     text: )サンコール菊池株式会社（熊本県菊池市）（注）１日本自動車関連製品40*4591
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
@@ -705,6 +653,11 @@ findings:
     line: 37
     text: ２【主要な設備の状況】　当社グループにおける主要な設備は、次のとおりであります。
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 41
+    text: (1) 重要な設備の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資
+    message: 括弧を「(」と書いています（この文書はふつう「（」。447 箇所のうち 44 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 41
@@ -756,12 +709,6 @@ findings:
     text: )議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－－議
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 57
-    text: ．「完全議決権株式（その他）」における普通株式には、業績連動型株式報酬制度の信託
-    message: 句点を「．」と書いています（この文書はふつう「。」。201 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: 「イ．」「ロ．」「１．」 are list markers, not full stops
   - rule: latin-spacing
     line: 57
     text: " 10株が含まれております。"
@@ -857,11 +804,6 @@ findings:
     text: )を公表しておりますが、当社の配当政策は、業績連動型配当の継続実施であり、ROE
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
-    line: 77
-    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
-    message: 一文に節が 7 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 77
     text: ３【配当政策】　利益配分につきましては、長期的な視野に立った経営体質の強化、事業
@@ -872,11 +814,6 @@ findings:
     text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
     message: この文は 449 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
-    line: 77
-    text: また、当社は2022～2024年度の「中期経営計画GLOBAL GROWTH P
-    message: 一文に読点が 13 個あります（6 個まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 77
     text: の剰余金の配当の決定機関は、期末配当については株主総会、中間配当については取締役
@@ -886,11 +823,6 @@ findings:
     line: 77
     text: の年２回の剰余金の配当を行なうことを基本方針としております。これらの剰余金の配当
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 77
-    text: かかる剰余金の配当は、以下のとおりであります。決議年月日配当金の総額（百万円）１
-    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。20 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 77
@@ -926,11 +858,6 @@ findings:
     line: 93
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2022
     message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 97
-    text: 具体的には、会計基準等の内容を適切に把握し、かつ、会計基準等の変更等について的確
-    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 101
@@ -1087,11 +1014,6 @@ findings:
     text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
     message: この文は 932 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
-    message: この文に中黒が 7 個あります（5 個まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 121
     text: (1) 持分法適用の関連会社の数　3社持分法適用会社の名称KOBELCO SPR
@@ -1101,22 +1023,6 @@ findings:
     line: 121
     text: (1) 重要な資産の評価基準及び評価方法① 有価証券　その他有価証券　　市場価格
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 121
-    text: 12月31日であります。　連結財務諸表の作成に当たっては、決算日現在の財務諸表を
-    message: 「12月31日」には年がありません。この文書の日付は 1998年から2023年にわたるので、どの年か決まりません
-    verdict: false-positive
-    note: a fiscal year-end (決算日は12月31日) recurs every year and takes no year
-  - rule: date-without-year
-    line: 121
-    text: ３月31日であります。SUNCALL AMERICA INC.SUNCALL C
-    message: 「３月31日」には年がありません。この文書の日付は 1998年から2023年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 121
-    text: ．連結の範囲に関する事項連結子会社の数　11社連結子会社の名称サンコールエンジニ
-    message: 句点を「．」と書いています（この文書はふつう「。」。201 箇所のうち 2 箇所が違う）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 121

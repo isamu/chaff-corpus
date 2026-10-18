@@ -11,23 +11,11 @@ findings:
     text: 2000年１月１日からアジア名を用いることとなりました。台風の名前については、台
     message: 半角の「2000」と書いています（この文書はふつう全角の「２０００」。10 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: ngram-repetition
-    line: 9
-    text: 台風の名前については、台風の番号とアジア名の付け方をご覧ください。
-    message: 「をご覧ください。」が 9 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a link pointer (〜をご覧ください。) repeated across FAQ answers, each of which stands alone
   - rule: orthographic-variant
     line: 33
     text: および南シナ海に存在する熱帯低気圧のうち、最大風速が約１７m/s以上になったもの
     message: 「および」と書いています（この文書はふつう「及び」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: repeated-sentence-ending
-    line: 33
-    text: 台風は、東経１８０度より西の北西太平洋および南シナ海に存在する熱帯低気圧のうち、
-    message: 「〜指します」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: three deliberately parallel definitions (台風 / ハリケーン / サイクロン は…を指します)
   - rule: max-paragraph-length
     line: 47
     text: 台風の進路に影響を及ぼすような「偏西風」の実況や予想は、気象庁ホームページに最新

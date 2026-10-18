@@ -1,46 +1,17 @@
 id: fed-sr-26-8
 chaff: 0.34.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: By topic
-    message: The email does not open with a greeting
-    verdict: unjudged
   - rule: title-length
     line: 5
     text: "### SR 26-8: Updates to the Expanded Exa"
     message: 'The heading "SR 26-8: Updates to the Expanded Examination Cycle for Certain State Member Banks and U.S. Branches and Agencies of Foreign Banking Organizations" runs 22 words (limit 14)'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: '"BOARD OF GOVERNORS" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 8
-    text: OF THE FEDERAL RESERVE SYSTEM
-    message: '"OF THE FEDERAL RESERVE SYSTEM" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 12
-    text: SUPERVISION AND REGULATION
-    message: '"SUPERVISION AND REGULATION" is written in capitals'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 14
-    text: SR 26-8
-    message: '"SR" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 17
-    text: TO THE OFFICER IN CHARGE OF SUPERVISION
-    message: '"TO THE OFFICER IN CHARGE OF SUPERVISION AT EACH FEDERAL RESERVE BANK" is written in capitals'
-    verdict: unjudged
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
-    message: The subject line is empty
-    verdict: unjudged
+    message: The subject has 136 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label runs 136 characters"
   - rule: max-sentence-length
     line: 27
     text: The Federal Reserve is issuing this lett
@@ -60,16 +31,6 @@ findings:
     line: 31
     text: Section 903 of the 21st Century ROAD to
     message: This sentence runs 39 words (limit 18)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 31
-    text: ROAD to Housing Act amends section 10(d)
-    message: '"ROAD" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 31
-    text: Section 10(d) of the Federal Deposit Ins
-    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: dangling-reference
     line: 33
@@ -121,20 +82,10 @@ findings:
     text: A U.S. branch or agency of a foreign ban
     message: This sentence runs 49 words (limit 18)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 47
-    text: ROCA composite condition rating of "1" o
-    message: '"ROCA" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 49
     text: "Either: (a) the foreign bank's most rece"
     message: This sentence runs 92 words (limit 18)
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 49
-    text: "Either: (a) the foreign bank's most rece"
-    message: '"sufficient" and other vague words: 6 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 50
@@ -156,25 +107,10 @@ findings:
     text: The Federal Reserve maintains the author
     message: This sentence runs 33 words (limit 18)
     verdict: unjudged
-  - rule: vague-word-density
-    line: 55
-    text: The Federal Reserve maintains the author
-    message: '"as appropriate" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 55
-    text: The Federal Reserve maintains the author
-    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 59
     text: The expanded 18-month examination cycle
     message: This sentence runs 54 words (limit 18)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 59
-    text: CFR 208.64 or 211.26(c), as applicable,
-    message: '"CFR" is used without an expansion (5 such acronyms)'
     verdict: unjudged
   - rule: article-sound
     line: 61
@@ -201,30 +137,10 @@ findings:
     text: As noted above, the Board is permitted t
     message: This sentence runs 47 words (limit 18)
     verdict: unjudged
-  - rule: vague-word-density
-    line: 63
-    text: Accordingly, Reserve Banks should review
-    message: '"as appropriate" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 63
-    text: Accordingly, Reserve Banks should review
-    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 63
-    text: For example, existing AEP agreements sho
-    message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 65
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 36 words (limit 18)
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 65
-    text: Reserve Banks are asked to distribute th
-    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: quote-style-consistency
     line: 75
@@ -275,9 +191,4 @@ findings:
     line: 91
     text: See Attachment to SR Letter 00-14, "Enha
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
-  - rule: email-greeting-closing
-    line: 97
-    text: "Last Update: October 14, 2026"
-    message: The email does not end with a closing
     verdict: unjudged

@@ -45,10 +45,6 @@ findings:
     line: 29
     sha256: c0a314cc89fdcb4e2225fbd5a3a6edba9cdb2481219093b8c4cd5c587ef86966
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 33
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 34
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -70,8 +66,8 @@ findings:
     sha256: 7a4c9f4113e7ab03e7e14f928b2c7af4b6ced4f0e935cb97e14150a16b1b1601
     verdict: unjudged
   - rule: max-sentence-length
-    line: 56
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 57
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 57
@@ -82,8 +78,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 78
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 79
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 79
@@ -94,8 +90,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 101
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 102
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 102
@@ -105,17 +101,9 @@ findings:
     line: 110
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 140
-    sha256: c76e0462f5aa9fd3b3175b8bb210024efc138dbde904e00d78c297d3708c2d09
-    verdict: unjudged
   - rule: max-sentence-length
-    line: 144
-    sha256: 3ff7b2c4a51f79e477312f9fcd6f21f2df2b07765080348675b9ebe0bd24bbb8
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 148
-    sha256: 8a6ec6cdcb0343f193bd80504d4d26f1f646dd7d67694ae831080e3b19c49d9b
+    line: 149
+    sha256: 216fcf3509e247d62ab3124ccae5192f1f77d55e4810bf9fd48cb0ccfc549d4d
     verdict: unjudged
   - rule: orthographic-variant
     line: 149
@@ -254,10 +242,6 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 696
-    sha256: f6f395f7f604d19de966199b4cdc929538f6a2bdf1f0d76ff3ef86e2e4e1155c
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 703
     sha256: 57eea3ff7c071ffceae6192f3620e62bd8aabdb6a8a16c6ae9d9dad285c3d404
     verdict: unjudged
@@ -358,8 +342,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 893
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 894
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 894
@@ -370,8 +354,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 913
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 914
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 914
@@ -390,8 +374,8 @@ findings:
     sha256: 8196256e46943fcdaef339f5b8eb3684881945ba8c6090bb6abe31f7a1c41477
     verdict: unjudged
   - rule: max-sentence-length
-    line: 933
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 934
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 934
@@ -402,8 +386,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 953
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 954
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 954
@@ -425,21 +409,13 @@ findings:
     line: 972
     sha256: f230408f3b95a40723fb60be461c029ebdc149cdeaa1f0f792ff0150e36dd284
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 976
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 977
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
     verdict: unjudged
   - rule: max-sentence-length
-    line: 989
-    sha256: 2b32919f6ceab627445d255f2ab892245437e02d255716ad863e765d58aa7156
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1000
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 1001
+    sha256: 33199db3eac03cf39d5ab1ff812cd307612d685a441cc00cea95fca8de2e4e9f
     verdict: unjudged
   - rule: latin-spacing
     line: 1002
@@ -458,16 +434,12 @@ findings:
     sha256: dbfe149bd0a8039ce77b3c7ed5ad0093703c1aaf392a3abf618b46e92c7f7072
     verdict: unjudged
   - rule: max-sentence-length
-    line: 1021
-    sha256: 2d50cbb401b7763e937a3a75e2c950f9f1dc4802fa1f70b891d49cb5afe50a0d
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 1029
     sha256: 0e19bc790c99b232cb3b31f134e0fe9c62f2f0c28f145cadf383720f27ab036d
     verdict: unjudged
   - rule: max-sentence-length
-    line: 1031
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 1032
+    sha256: 33199db3eac03cf39d5ab1ff812cd307612d685a441cc00cea95fca8de2e4e9f
     verdict: unjudged
   - rule: latin-spacing
     line: 1034
@@ -537,10 +509,6 @@ findings:
     line: 1163
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1177
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1178
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -557,10 +525,6 @@ findings:
     line: 1216
     sha256: 8d511c4bc71860a8005475b6ffd93bf039c5a02cda185c4adc56f9ab6e0ba011
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1220
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1221
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -570,8 +534,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 1242
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 1243
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1243
@@ -582,8 +546,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 1264
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 1265
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1265
@@ -601,10 +565,6 @@ findings:
     line: 1284
     sha256: 55684f304890aaad9f8507f84bb2ba19a73383a11dc7631f6413918955be5004
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1287
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1288
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -614,8 +574,8 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
-    line: 1307
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
+    line: 1308
+    sha256: 5d3fdf94ea1a3166b34a5678f3279ee6a7744d4e054bac919d143e2f927c7b59
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1308
@@ -624,10 +584,6 @@ findings:
   - rule: concrete-evidence-density
     line: 1316
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1327
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1328
@@ -641,10 +597,6 @@ findings:
     line: 1343
     sha256: b13c119ca77c05d18ef573605312e3d361c6ceb220b368d932e5d063667d0ecc
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1347
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1348
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -653,10 +605,6 @@ findings:
     line: 1356
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1367
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1368
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -664,10 +612,6 @@ findings:
   - rule: concrete-evidence-density
     line: 1376
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1387
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1388
@@ -685,10 +629,6 @@ findings:
     line: 1407
     sha256: 062a2df4fd9d9550f7bdd7b24e1a96aece8b837ed3e2388460e94142e6160719
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1411
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1412
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a
@@ -704,10 +644,6 @@ findings:
   - rule: max-sentence-length
     line: 1431
     sha256: e947fc5c645f94af4f6ed0cb6a3ab0759cac516dd2cc909739a9eac66f51324b
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1436
-    sha256: 1530f0eb001934f65e96c69219f24d9dee9c1f92eb90bfef263e53e97d2cd1cb
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1437

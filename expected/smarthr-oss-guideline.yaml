@@ -6,23 +6,11 @@ findings:
     text: " ガイドラインは、SmartHRの従業員がよりオープンソースソフトウェアの改善（"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 16
-    text: OSS ガイドラインは、SmartHRの従業員がよりオープンソースソフトウェアの
-    message: 「OSS」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: OSS is expanded in the heading a few lines below (オープンソースソフトウェア（OSS）とは), and the same sentence says オープンソースソフトウェアの改善（以下、OSS活動）
   - rule: demonstrative-opener-run
     line: 20
     text: それは会社との契約の問題であったり、法の問題であったり、また前例がなく判断できな
     message: 「それ」など、指示語で始まる文が 3 文続いています（2 文まで）
     verdict: correct
-  - rule: undefined-acronym
-    line: 33
-    text: MITもしくはApache 2.0です
-    message: 「MIT」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: MIT is a licence name (the MIT License), not an acronym to expand
   - rule: undefined-acronym
     line: 35
     text: CLAの署名は、個人で署名する場合は自身で判断し、企業として署名する場合は許可リ
@@ -38,18 +26,6 @@ findings:
     text: たり、CLAへの署名を求められたときに、あなたは自らの意思でそれらを選択してくだ
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-  - rule: undefined-acronym
-    line: 82
-    text: READMEやusageが古くなっているので更新する
-    message: 「README」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: README is a file name, not an acronym
-  - rule: comparative-without-baseline
-    line: 86
-    text: より良くする活動があればそれはすべてOSSへの貢献です。もし迷った場合は、OSS
-    message: 「より良く」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: より良くする / より簡単にする mean improve / simplify; no baseline is needed
   - rule: latin-spacing
     line: 90
     text: " とは、行動規範のことです。OSSのプロジェクトの中には、行動規範を定めているも"
@@ -86,12 +62,6 @@ findings:
     message: 「GPL」が説明なしで使われています（説明のない略語 13 個）
     verdict: false-positive
     note: a licence list item whose next line links the full name (GNU (Lesser) General Public License)
-  - rule: undefined-acronym
-    line: 329
-    text: GNU General Public License version 3 | O
-    message: 「GNU」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: GNU is a project name, never expanded (a recursive acronym)
   - rule: undefined-acronym
     line: 331
     text: LGPL
@@ -131,23 +101,11 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
     verdict: false-positive
     note: the space ends a Slack channel name (#pj_oss-team); packing it would merge the name with the following Japanese
-  - rule: undefined-acronym
-    line: 366
-    text: COM｜システム・ソフトウェア・ネットビジネスに関するご相談なら弁護士法人内田・
-    message: 「COM」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: part of a linked external site's title (IT法務.COM), which the document quotes and cannot change
   - rule: katakana-long-vowel
     line: 386
     text: マネージャを利用するOSSの場合は、以下の内容が設定されていることを確認する
     message: 「マネージャ」と「マネージャー」が混ざっています（この語は 2 回のうち 1 回が「マネージャ」）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 398
-    text: より簡単にするための手順を示します。
-    message: 「より簡単」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: より良くする / より簡単にする mean improve / simplify; no baseline is needed
   - rule: latin-spacing
     line: 402
     text: " でOSSチームに依頼してください。"
@@ -184,18 +142,6 @@ findings:
     text: 無くても構いません。用意できたとしたら、最良のオプションというような認識で大丈夫
     message: 「無い」と書いています（この文書はふつう「ない」と書く語です。13 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: latin-spacing
-    line: 457
-    text: " or パッチを送る際のガイドラインのリンクを紹介します。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the English word "or" between two Japanese nouns; the spaces keep it a separate word
-  - rule: latin-spacing
-    line: 457
-    text: " パッチを送る際のガイドラインのリンクを紹介します。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the English word "or" between two Japanese nouns; the spaces keep it a separate word
   - rule: tari-unpaired
     line: 470
     text: たり、専用のバグトラッカーシステムやMLが存在することがあるので、Issueを作

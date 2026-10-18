@@ -3,11 +3,6 @@ chaff: 0.35.0
 findings:
   - rule: use-before-definition
     line: 10
-    text: Agreement is related to the GitHub Campu
-    message: '"Agreement" is used here, before it is defined on line 14'
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 10
     text: GitHub Campus Program Partner Schools, a
     message: '"GitHub" is used here, before it is defined on line 14'
     verdict: unjudged

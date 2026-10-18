@@ -1,10 +1,6 @@
 id: go-1-23-release-notes
 chaff: 0.34.0
 findings:
-  - rule: title-case-consistency
-    line: 15
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: max-sentence-length
     line: 130
     sha256: 46520738e67cf90dfca8a15f4a6d70139d0f1da1f369e004df9e570fc80df053

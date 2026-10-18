@@ -6,12 +6,6 @@ findings:
     text: "# 求職者支援制度における職業訓練の認定が適正でなかったため、雇用保険の認定職業"
     message: 題「求職者支援制度における職業訓練の認定が適正でなかったため、雇用保険の認定職業訓練実施奨励金の支給が適正でなかったもの［厚生労働本省、2労働局、独立行政法人高齢・障害・求職者雇用支援機構］(83)」は 98 文字あります（50 文字まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 17
-    text: 認定職業訓練実施奨励金の支給額の合計
-    message: 「認定職業訓練実施奨励金」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a subsidy (認定職業訓練実施奨励金), defined by statute; it cannot be split
   - rule: max-sentence-length
     line: 29
     text: 求職者支援制度は、雇用保険で行う事業のうち能力開発事業の一環として、「職業訓練の
@@ -53,18 +47,6 @@ findings:
     text: また、厚生労働大臣は、職業訓練の認定に関する事務を独立行政法人高齢・障害・求職者
     message: 「は」で出した主題から述語まで 166 字あります（80 字まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 41
-    text: そして、認定職業訓練実施奨励金支給要領（平成23年職発0930第18号、能発09
-    message: 「認定職業訓練実施奨励金支給要領」は漢字が 15 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official title of a ministry 要領 cited with its number (proper noun)
-  - rule: max-kanji-continuous
-    line: 41
-    text: 求職者支援法等によれば、国は、認定職業訓練が円滑かつ効果的に行われることを奨励す
-    message: 「認定職業訓練実施奨励金」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a subsidy (認定職業訓練実施奨励金), defined by statute; it cannot be split
   - rule: nominalization
     line: 41
     text: 訓練を行う訓練実施機関に対して、認定職業訓練実施奨励金（以下「奨励金」という。）

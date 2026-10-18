@@ -6,12 +6,6 @@ findings:
     text: The manager then turned to policy rate e
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 23
-    text: more stable. There were also notable inc
-    message: '"more stable" does not say what it is compared with'
-    verdict: false-positive
-    note: "the baseline is in the same sentence: other sectors were more stable than software firms' leveraged loan prices, which 'declined sharply'"
   - rule: max-paragraph-length
     line: 23
     text: Broad equity prices fell about 5 percent
@@ -47,12 +41,11 @@ findings:
     text: Real GDP growth was solid last year, alt
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 49
-    text: Over the intermeeting period, the market
-    message: '"the federal funds rate" appears 13 times (limit 5)'
-    verdict: false-positive
-    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
+  - rule: undefined-acronym
+    line: 51
+    text: S&P 500 index increased notably, as conc
+    message: '"S&P" is used without an expansion (1 such acronym)'
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 61
     text: The credit performance of corporate bond
@@ -113,9 +106,3 @@ findings:
     text: With upside risks to inflation and downs
     message: This sentence runs 68 words (limit 45)
     verdict: correct
-  - rule: name-variant
-    line: 271
-    text: Walker,2 Senior Associate Director, Divi
-    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
-    verdict: false-positive
-    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt

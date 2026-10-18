@@ -1,12 +1,6 @@
 id: mk-system-shugyo-kisoku
 chaff: 0.34.0
 findings:
-  - rule: use-before-definition
-    line: 3
-    text: 会社エムケイシステム
-    message: 「会社」を、32 行目の定義より前で使っています
-    verdict: false-positive
-    note: 「会社」 inside the company name 株式会社エムケイシステム on the title line, before 第1条 defines 会社
   - rule: fullwidth-alnum-consistency
     line: 9
     text: 1節	勤務時間、休憩・休日、出張
@@ -24,15 +18,10 @@ findings:
     verdict: correct
   - rule: use-before-definition
     line: 27
-    what: the preamble uses 会社 before 第1条 defines it (株式会社エムケイシステム（以下「会社」という）)
-    verdict: missed
-    note: chaffjs 0.35.0 does not give it; isamu/lab#1262 does
-  - rule: use-before-definition
-    line: 27
-    text: 規則は、会社と従業員が相互信頼の上に立ち、従業員の福祉の向上と社業の発展を目的と
-    message: 「規則」を、32 行目の定義より前で使っています
-    verdict: false-positive
-    note: the preamble's 「この規則」 names the document itself; 第1条 only abbreviates この就業規則 to 規則
+    text: 会社と従業員が相互信頼の上に立ち、従業員の福祉の向上と社業の発展を目的として制定
+    message: 「会社」を、32 行目の定義より前で使っています
+    verdict: correct
+    note: chaffjs 0.35.0 does not give it; isamu/lab#1262 does; found by chaffjs 0.36.0
   - rule: orthographic-variant
     line: 39
     text: 全ての従業員に適用する。但し、契約社員、パートタイマー、嘱託及びアルバイト等就業
@@ -43,23 +32,16 @@ findings:
     text: 手続を行った者を従業員として採用する。
     message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
+  - rule: misconversion
+    line: 52
+    text: 各号に揚げる書類を提出するものとし、会社は、書類選考、面接試験を行い、入社を希望
+    message: 「各号に揚げる」は「各号に掲げる」の変換の誤りです
+    verdict: correct
   - rule: orthographic-variant
     line: 52
     text: ただし、会社が認めた場合は、書類の一部の提出を省略することがある。
     message: 「ただし」と書いています（この文書はふつう「但し」と書く語です。21 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: orthographic-variant
-    line: 57
-    text: 見込）証明書
-    message: 「見込」と書いています（この文書はふつう「見込み」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 卒業（見込）証明書 is the name of a certificate
-  - rule: max-paragraph-length
-    line: 70
-    text: 第８条（採用決定時の提出書類）
-    message: この段落は 13 文あります（12 文まで）
-    verdict: false-positive
-    note: an article whose items ①–⑨ are on consecutive lines (no blank line) counted as one 13-sentence paragraph
   - rule: orthographic-variant
     line: 75
     text: またはロのいずれかを添付すること）
@@ -90,12 +72,6 @@ findings:
     text: 手続を委託する税理士または社会保険労務士等に提供することができる。なお、委託先へ
     message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: no-nakaguro-parallel
-    line: 119
-    text: ①　就業の場所、従事すべき業務
-    message: この文に中黒が 6 個あります（5 個まで）
-    verdict: false-positive
-    note: list items ①–④ on consecutive lines without 。 joined into one sentence; no single item has more than four 中黒
   - rule: orthographic-variant
     line: 154
     text: 事がある。尚、事前に振り替えるべき日を特定して行うが、この場合でも休日日数は４週
@@ -614,10 +590,20 @@ findings:
     text: または私的に利用したとき（未遂の場合を含む、なお、会社に損害を与えたり、もしくは
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
     verdict: correct
+  - rule: tari-unpaired
+    line: 431
+    text: たり、もしくは業務に支障をきたした場合は、懲戒解雇となることがある）
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
   - rule: orthographic-variant
     line: 432
     text: または別に定める「特定個人情報取扱規程」に違反する行為があったとき（未遂の場合を
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。69 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 432
+    text: たり、もしくは業務に支障をきたした場合は、懲戒解雇となることがある）
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
   - rule: orthographic-variant
     line: 445
@@ -695,18 +681,6 @@ findings:
     text: 若しくは休日労働として賃金を支給する。
     message: 「若しくは」の文に、段の組になる語がありません（一段なら「又は」）
     verdict: correct
-  - rule: ime-residue
-    line: 556
-    text: eラーニングに必要とされる時間数に見合った手当の支給を行うこととする。
-    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
-    verdict: false-positive
-    note: eラーニング is a standard loanword, not an unconverted letter
-  - rule: ime-residue
-    line: 556
-    text: eラーニングの活用等により、教育訓練を行う場合がある。会社の事業所外で行う教育訓
-    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
-    verdict: false-positive
-    note: eラーニング is a standard loanword, not an unconverted letter
   - rule: orthographic-variant
     line: 556
     text: またはeラーニングに必要とされる時間数に見合った手当の支給を行うこととする。

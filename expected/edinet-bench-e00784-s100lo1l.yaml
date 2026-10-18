@@ -31,102 +31,17 @@ findings:
     text: 2003年４月大阪証券取引所上場廃止。2004年３月バライト工業㈱を清算結了。2
     message: 「月大阪証券取引所上場廃止」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 2017年３月雲南盤橋燐電有限公司を清算結了。2017年８月タイ王国にJCI(T
-    message: 「月雲南盤橋燐電有限公司」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 5
     text: ２【沿革】1893年９月創立者棚橋寅五郎は個人経営の棚橋製薬所を東京麻布において
     message: この段落は 55 文あります（5 文まで）
     verdict: false-positive
     note: the dataset dropped the report's line breaks, so a whole section is one paragraph
-  - rule: taigen-dome-in-prose
-    line: 5
-    text: ２【沿革】1893年９月創立者棚橋寅五郎は個人経営の棚橋製薬所を東京麻布において
-    message: 本文に体言止めが 47 文あります（4 文まで）
-    verdict: false-positive
-    note: a 沿革 chronology (date + event per row) is read as prose; its entries are noun-ended by form
-  - rule: undefined-acronym
-    line: 5
-    text: ADEKA）との共同出資により鹿島臨海工業地帯に関東珪曹硝子㈱を設立。1970年
-    message: 「ADEKA」が説明なしで使われています（説明のない略語 6 個）
-    verdict: false-positive
-    note: part of a company's registered name (ADEKA, CO.,LTD.), not an acronym to expand
-  - rule: undefined-acronym
-    line: 5
-    text: CO.,LTD.を設立。2018年７月日本ピュアテック㈱がロックゲート㈱の全株式
-    message: 「CO」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 5
-    text: DOWAホールディングス㈱）との共同出資によりバリウム塩製造のバライト工業㈱を設
-    message: 「DOWA」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 5
-    text: LTD.を設立。2018年７月日本ピュアテック㈱がロックゲート㈱の全株式を取得。
-    message: 「LTD」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .，LTD.、関連会社シンライ化成㈱が販売しております。なお、原材料の一部につい
-    message: 「.，」と句読点が重なっています
-    verdict: false-positive
-    note: the punctuation is inside a company's romanised name (CO.，LTD.)
-  - rule: doubled-punctuation
-    line: 9
-    text: .，LTD.が販売するほか、子会社東邦顔料工業㈱、関連会社関東珪曹硝子㈱、京葉ケ
-    message: 「.，」と句読点が重なっています
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .、捷希艾(上海)貿易有限公司、JCI(THAILAND)CO.，LTD.、関連
-    message: 「.、」と句読点が重なっています
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .、捷希艾(上海)貿易有限公司、JCI(THAILAND)CO.，LTD.が販売
-    message: 「.、」と句読点が重なっています
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .、捷希艾(上海)貿易有限公司、関連会社シンライ化成㈱から仕入れております。 賃
-    message: 「.、」と句読点が重なっています
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .、捷希艾(上海)貿易有限公司、関連会社関東珪曹硝子㈱、シンライ化成㈱から仕入れ
-    message: 「.、」と句読点が重なっています
-    verdict: unjudged
-  - rule: doubled-punctuation
-    line: 9
-    text: .、関連会社シンライ化成㈱が販売しております。なお、原材料の一部については、子会
-    message: 「.、」と句読点が重なっています
-    verdict: unjudged
-  - rule: ellipsis-consistency
-    line: 9
-    text: …　　子会社日本ピュアテック㈱がケミカルフィルタの製造販売、空調設備機器の設計・
-    message: 省略の記号を「…」と書いています（この文書はふつう「……」。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: dot leaders of varying length in a list (事業名……説明), not an ellipsis
   - rule: katakana-long-vowel
     line: 9
     text: フィルタの製造販売、空調設備機器の設計・施工及び販売するほか、子会社ロックゲート
     message: 「フィルタ」と「フィルター」が混ざっています（この語は 3 回のうち 1 回が「フィルタ」）
     verdict: correct
-  - rule: kutoten-consistency
-    line: 9
-    text: ，LTD.、関連会社シンライ化成㈱が販売しております。なお、原材料の一部について
-    message: 読点を「，」と書いています（この文書はふつう「、」。473 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the punctuation is inside a company's romanised name (CO.，LTD.)
-  - rule: kutoten-consistency
-    line: 9
-    text: ，LTD.が販売するほか、子会社東邦顔料工業㈱、関連会社関東珪曹硝子㈱、京葉ケミ
-    message: 読点を「，」と書いています（この文書はふつう「、」。473 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 9
     text: ３【事業の内容】　当社グループは、当社、子会社８社及び関連会社４社で構成され、化
@@ -148,25 +63,10 @@ findings:
     message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
     verdict: false-positive
     note: parallel list entries (one per segment) that end alike by design
-  - rule: kutoten-consistency
-    line: 13
-    text: ．特定子会社に該当する会社はありません。２．有価証券届出書又は有価証券報告書を提
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 13
     text: ４【関係会社の状況】名称住所資本金(百万円)主要な事業の内容議決権の所有割合（％
     message: この段落は 32 文あります（5 文まで）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数は就業人員で記載しております。２．全社（共通）として記載されている従業
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数は就業人員で記載しております。２．平均年間給与は税込で、基準外賃金及び
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 17
@@ -178,14 +78,14 @@ findings:
     text: (2）提出会社の状況   2021年３月31日現在従業員数（人）平均年齢（歳）平
     message: この文は 165 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 17
-    text: (3）労働組合の状況　当社の労働組合は日本化学工業労働組合と称し、本社及び工場ご
-    message: この文は 164 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 17
     text: ３．賃貸事業につきましては、その他及び全社（共通）の従業員が兼務しております。
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 17
+    text: ４．賃貸事業につきましては、全社（共通）の従業員が兼務しております。 (3）労働
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: topic-predicate-distance
@@ -208,46 +108,41 @@ findings:
     text: ）連結会社の状況 2021年３月31日現在セグメントの名称従業員数（人）化学品事
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: adversative-ga-repeat
-    line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
-  - rule: bracket-nesting
-    line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 括弧が 5 重になっています（2 重まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
-  - rule: clause-chain
-    line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 一文に節が 43 つつながっています（5 つまで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
   - rule: max-kanji-continuous
     line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
+    text: (2）中期経営計画前中期経営計画は2020年３月期が最終年度で、通常では当連結会
     message: 「中期経営計画前中期経営計画」は漢字が 13 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 21
+    text: 2021年３月期実績新規中期経営計画2024年３月期(最終年度)目標売上高（億円
+    message: 「期実績新規中期経営計画」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 21
+    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
+    message: この段落は 39 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: この文は 2914 文字あります（140 文字まで）
+    text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202
+    message: この文は 145 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: max-sentence-length
     line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 一文に読点が 75 個あります（6 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
-  - rule: orthographic-variant
+    text: ①多様化する顧客ニーズを満たし、差別化出来る製品を提供し、既存事業のシェア維持と
+    message: この文は 197 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
     line: 21
-    text: ガラスの製造を中心に事業を展開してまいりました。しかしながら、情報の電子化に伴う
-    message: 「ガラス」と書いています（この文書はふつう「硝子」と書く語です。8 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the usual spelling is counted from a company name (関東珪曹硝子); ガラス is the material
+    text: 2021年３月期目標2021年３月期実績売上高（億円）330346営業利益（億円
+    message: この文は 182 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: この問題が長期化し、当社グループの販売先である電子部品業界や自動車業界の生産活動
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: unjudged
   - rule: orthographic-variant
     line: 21
     text: すすめます。 (2）中期経営計画前中期経営計画は2020年３月期が最終年度で、通
@@ -263,16 +158,45 @@ findings:
     text: 様な状況のもと、2021年度を初年度とする新規中期経営計画（2021～2023）
     message: 「様」と書いています（この文書はふつう「よう」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 21
+    text: また、生産効率化による収益拡大や差別化できる製品ラインアップの充実化を図ります。
+    message: 「〜図ります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 21
+    text: 当社グループにおいては、シリカ製品と燐製品の一般工業用途が第２四半期で売上を落と
+    message: 「〜しました」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: sentence-initial-conjunction-run
+    line: 21
+    text: また、シリカ製品に関しては、関連会社である関東珪曹硝子株式会社での珪酸ソーダガラ
+    message: 接続詞で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
   - rule: teki-overuse
     line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 一文に「〜的」が 19 個あります（2 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
+    text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
   - rule: topic-predicate-distance
     line: 21
-    text: (1）経営方針当社は「人を大切に、技を大切に」を企業理念として、株主、顧客、従業
-    message: 「は」で出した主題から述語まで 2849 字あります（80 字まで）
+    text: (2）中期経営計画前中期経営計画は2020年３月期が最終年度で、通常では当連結会
+    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: その結果、当連結会計年度の売上高は346億4千2百万円となり、前連結会計年度の売
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: なお、当社グループは持続的安定収益の実現に向け、以下の表に示す売上高と営業利益を
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 21
@@ -334,11 +258,6 @@ findings:
     text: ①経済状況の変動に係るリスク当社グループは、クロム製品（自動車部品等のめっき、顔
     message: 「は」で出した主題から述語まで 202 字あります（80 字まで）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 25
-    text: BCP体制から原材料調達先を複数化することにより、災害発生時の原料調達難のリスク
-    message: 「BCP」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 29
     text: ５【研究開発活動】当連結会計年度における研究開発活動は、電子・電池材料、高機能性
@@ -359,11 +278,6 @@ findings:
     text: ５【研究開発活動】当連結会計年度における研究開発活動は、電子・電池材料、高機能性
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 37
-    text: (1）提出会社2021年３月31日現在 事業所名（所在地）セグメントの名称設備の
-    message: 括弧が 4 重になっています（2 重まで）
-    verdict: unjudged
   - rule: doubled-word
     line: 37
     text: 賃貸用不動産1,367－97(125,515)－1,464－賃貸物件（大阪府大阪
@@ -375,32 +289,26 @@ findings:
     text: 賃貸用不動産2,085－502（36,621)22,591－(注)１．帳簿価額の
     message: 「賃貸賃貸」で語が重なっています。どちらかが余分です
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 37
-    text: ．「賃貸物件」は、当社グループ以外の企業に賃貸しております。(2）国内子会社20
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 37
-    text: ．帳簿価額のうち「その他」は、工具、器具及び備品、リース資産及び建設仮勘定であり
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 37
-    text: (1）提出会社2021年３月31日現在 事業所名（所在地）セグメントの名称設備の
+    text: (2）国内子会社2021年３月31日現在 会社名事業所名（所在地）セグメントの名
     message: 「空調関連空調設備機器設計」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 37
+    text: ２【主要な設備の状況】　　当社グループにおける主要な設備は、次の通りであります。
+    message: この段落は 7 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 37
     text: (1）提出会社2021年３月31日現在 事業所名（所在地）セグメントの名称設備の
     message: この文は 857 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: person-consistency
+  - rule: max-sentence-length
     line: 37
-    text: 本社（東京都江東区）全社全般的管理業務3695136(9,999)7558679
-    message: 「本社」と書いています（この文書はふつう「当社」。22 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 本社 here is the head-office site (本社（東京都江東区）), not the company referring to itself
+    text: (2）国内子会社2021年３月31日現在 会社名事業所名（所在地）セグメントの名
+    message: この文は 196 文字あります（140 文字まで）
+    verdict: unjudged
   - rule: unbalanced-bracket
     line: 37
     text: )22,591－(注)１．帳簿価額のうち「その他」は、工具、器具及び備品、リース
@@ -512,11 +420,6 @@ findings:
     text: ）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 85
-    text: (2）当社の財務諸表は、「財務諸表等の用語、様式及び作成方法に関する規則」（昭和
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 85
     text: ）当社の財務諸表は、「財務諸表等の用語、様式及び作成方法に関する規則」（昭和38
@@ -527,25 +430,10 @@ findings:
     text: 　　ます。
     message: 「おり」と「ます」は一続きの語句ですが、あいだに空白があります（1929 箇所のうち 1 箇所が空いている）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 93
-    text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2020
-    message: 「新日本有限責任監査法人」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 93
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2020
     message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 93
-    text: EY新日本有限責任監査法人により監査を受けております。
-    message: 「EY」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 97
-    text: 具体的には、会計基準等の内容を適切に把握するだけでなく、会計基準等の変更等につい
-    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 101
@@ -592,52 +480,10 @@ findings:
     text: ④【連結キャッシュ・フロー計算書】  (単位：百万円) 前連結会計年度(自　20
     message: この文は 981 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  (単位：百万円) 前連結会計年度(自　20
-    message: この文に中黒が 8 個あります（5 個まで）
-    verdict: false-positive
-    note: the 中黒 are inside the compound キャッシュ・フロー, not a parallel list
-  - rule: bracket-nesting
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法①有価証券その他有
-    message: 括弧が 9 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法①有価証券その他有
-    message: 一文に節が 10 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 121
-    text: 12月31日であり、同社の事業年度に係る財務諸表を使用して、連結決算日との間に生
-    message: 「12月31日」には年がありません。この文書の日付は 2017年から2021年にわたるので、どの年か決まりません
-    verdict: false-positive
-    note: a fiscal year-end (決算日は12月31日) recurs every year and takes no year
-  - rule: date-without-year
-    line: 121
-    text: ３月31日であります。 ４．会計方針に関する事項(1）重要な資産の評価基準及び評
-    message: 「３月31日」には年がありません。この文書の日付は 2017年から2021年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 121
-    text: ．連結の範囲に関する事項　子会社のうち東邦顔料工業㈱、㈱日本化学環境センター、㈱
-    message: 句点を「．」と書いています（この文書はふつう「。」。287 箇所のうち 6 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 121
     text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項　子会
     message: この段落は 8 文あります（5 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法①有価証券その他有
-    message: この文は 1708 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法①有価証券その他有
-    message: 一文に読点が 30 個あります（6 個まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
@@ -654,10 +500,15 @@ findings:
     text: の平均残存勤務期間以内の一定の年数（10年）による定額法により費用処理しておりま
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
+  - rule: repeated-sentence-ending
     line: 121
     text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法①有価証券その他有
-    message: 「は」で出した主題から述語まで 1631 字あります（80 字まで）
+    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 建物及び構築物　　　　　　　　　　５～50年機械装置及び運搬具　　　　　　　　４
+    message: 「〜おります」で終わる文が 18 文続いています（2 文まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 121

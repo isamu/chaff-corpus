@@ -1,25 +1,15 @@
 id: yuho-e34336-risk-management
 chaff: 0.34.0
 findings:
-  - rule: bracket-nesting
-    line: 1
-    text: (3）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出さ
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 1
-    text: (3）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出さ
-    message: 一文に節が 9 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: (3）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出さ
     message: この文は 445 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: repeated-sentence-ending
     line: 1
-    text: (3）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出さ
-    message: 一文に読点が 14 個あります（6 個まで）
+    text: また、サステナビリティに関連するリスクについては、実務委員会において経営環境や他
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 1

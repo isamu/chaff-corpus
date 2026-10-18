@@ -1,12 +1,6 @@
 id: edinet-bench-e35466-s100lp1h
 chaff: 0.34.0
 findings:
-  - rule: bracket-nesting
-    line: 5
-    text: ２【沿革】昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立
-    message: 括弧が 6 重になっています（2 重まで）
-    verdict: false-positive
-    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
   - rule: bracket-width-consistency
     line: 5
     text: )に係る認証取得平成17年11月東京本社を東京都港区に移転平成19年８月高松出張
@@ -32,11 +26,6 @@ findings:
     text: ＪＡＳＤＡＱ（スタンダード）に株式を上場令和２年６月東京開発センターを東京都千代
     message: 全角の「ＪＡＳＤＡＱ」と書いています（この文書はふつう半角の「JASDAQ」。90 箇所のうち 3 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 5
-    text: ．システムインテグレーター（Sier）とは、企業情報システム構築において、顧客企
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 5
     text: ２．プライバシーマーク制度とは、日本産業規格「JIS Q 15001個人情報保護
@@ -51,11 +40,6 @@ findings:
     line: 5
     text: ２【沿革】昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立
     message: 一文に読点が 8 個あります（6 個まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 5
-    text: マネージメント株式会社を大阪市西区に設立（資本金300万円）事務処理用のソフト開
-    message: 「マネージメント」と書いています（この文書はふつう「マネジメント」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 5
@@ -96,11 +80,6 @@ findings:
     line: 5
     text: JIS Q 15001個人情報保護マネジメントシステム－要求事項」に適合して、個
     message: 「JIS」が説明なしで使われています（説明のない略語 9 個）
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 9
-    text: (3）ERPソリューションサービスERPソリューションサービスは、SAPジャパン
-    message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 9
@@ -147,11 +126,6 @@ findings:
     text: )連結子会社
     message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
-    line: 9
-    text: (2）インフラソリューションサービスインフラソリューションサービスは、特定の業種
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: latin-spacing
     line: 9
     text: " SAP ERPの３大ラインアップを展開し、導入支援、アドオン開発、保守、運用、"
@@ -161,11 +135,6 @@ findings:
     line: 9
     text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
     message: この段落は 12 文あります（5 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 9
-    text: (1）ゼネラルソリューションサービスゼネラルソリューションサービスは、当社事業に
-    message: この文は 534 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 9
@@ -182,10 +151,10 @@ findings:
     text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
     message: この文は 183 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: max-sentence-length
     line: 9
-    text: (1）ゼネラルソリューションサービスゼネラルソリューションサービスは、当社事業に
-    message: 一文に読点が 9 個あります（6 個まで）
+    text: また、近年BPOセンター（Business Process Outsourcin
+    message: この文は 201 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 9
@@ -197,25 +166,15 @@ findings:
     text: の工程の一括したサービス)のBPO業務にも注力しております。 (2）インフラソリ
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 9
-    text: (1）ゼネラルソリューションサービスゼネラルソリューションサービスは、当社事業に
-    message: この文に中黒が 6 個あります（5 個まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 9
-    text: (1）ゼネラルソリューションサービスゼネラルソリューションサービスは、当社事業に
-    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 9
     text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
+  - rule: repeated-sentence-ending
     line: 9
-    text: (1）ゼネラルソリューションサービスゼネラルソリューションサービスは、当社事業に
-    message: 「は」で出した主題から述語まで 497 字あります（80 字まで）
+    text: 金融業（銀行・保険・証券）、産業・流通業、公共分野、医療分野、教育分野等の幅広い
+    message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 9
@@ -269,7 +228,7 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 9
-    text: SAPジャパン株式会社（注)からパッケージの提供を受け、大企業向けSAP S/4
+    text: SAP S/4HANA、中堅企業向けSAP Business ByDesign及
     message: 「SAP」が説明なしで使われています（説明のない略語 9 個）
     verdict: unjudged
   - rule: doubled-word
@@ -297,71 +256,15 @@ findings:
     text: の一部委託経営管理運営管理管理業務の一部受託役員の兼任 ３名（注）「主要な事業の
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: adversative-ga-repeat
+  - rule: max-paragraph-length
     line: 17
     text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: 一文に逆接の「が」が 3 個あります（1 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
-  - rule: bracket-nesting
-    line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: 括弧が 3 重になっています（2 重まで）
+    message: この段落は 8 文あります（5 文まで）
     verdict: unjudged
-  - rule: clause-chain
+  - rule: repeated-sentence-ending
     line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: 一文に節が 7 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．平均年間給与は、賞与及び基準外賃金を含んでおります。４．従業員数が当期中におい
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．当社グループは、システムソリューションサービスの単一セグメントであるため、セグ
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．当社は、システムソリューションサービスの単一セグメントであるため、セグメント別
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数が当期中において31人増加しておりますが、これは業容拡大に伴う人員の増
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数が当連結会計年度中において32人増加しておりますが、これは業容拡大に伴
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数は就業人員であり、臨時雇用者数は、従業員数の100分の10未満であるた
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 17
-    text: ．従業員数は就業人員であり、臨時雇用者数は、従業員数の100分の10未満であるた
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: この文は 565 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: 一文に読点が 11 個あります（6 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: 「は」で出した主題から述語まで 484 字あります（80 字まで）
+    text: (2）提出会社の状況   令和３年３月31日現在従業員数（人）平均年齢（歳）平均
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 17
@@ -378,41 +281,25 @@ findings:
     text: ）連結会社の状況 令和３年３月31日現在事業部門の名称従業員数（人）開発部門59
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 括弧が 6 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 一文に節が 53 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 21
     text: 2％と同業他社に比較して低く、プロパー従業員に頼る構造となっており固定費率の上昇
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
+  - rule: max-paragraph-length
+    line: 21
+    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
+    message: この段落は 39 文あります（5 文まで）
+    verdict: unjudged
   - rule: max-sentence-length
     line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: この文は 3318 文字あります（140 文字まで）
+    text: (2）経営戦略等① 当社グループの経営上の強み　当社グループは、独立系であるため
+    message: この文は 224 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: max-sentence-length
     line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 一文に読点が 99 個あります（6 個まで）
-    verdict: unjudged
-  - rule: nado-closed-list
-    line: 21
-    text: 等に限定されることなく、パソコンから汎用大型コンピューターまで幅広い提案・対応が
-    message: 「等」で一覧を開いたまま、「に限定」で限っています
-    verdict: false-positive
-    note: 「等に限定されることなく」 says the list is not limited, the opposite of closing it
-  - rule: ngram-repetition
-    line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 「ります。当社グル」が 14 回出てきます（5 回まで）
+    text: (4）経営環境当社グループが属する情報サービス産業は、新型コロナウイルス感染症の
+    message: この文は 172 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 21
@@ -424,11 +311,6 @@ findings:
     text: の確保当社グループの業容拡大策の柱は動員力の強化であり、優秀な人材確保が今後の重
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: この文に中黒が 8 個あります（5 個まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 21
     text: さらには日本を代表する企業となるため、社員一人ひとりが率先して経営を考えます。一
@@ -439,15 +321,45 @@ findings:
     text: めざし、現状に甘えず、チャレンジしていく精神が人格を高め、良い商品を世に送り出す
     message: 「めざす」と書いています（この文書はふつう「目指す」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 21
+    text: また、エンドユーザーへの売上比率は大手Sierと遜色ない関西圏に比べ、首都圏では
+    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 21
+    text: 従業員個々のプロジェクトマネジメント能力向上のため、当社グループではプロジェクト
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
   - rule: teki-overuse
     line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 一文に「〜的」が 17 個あります（2 個まで）
+    text: (5）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下
+    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 21
-    text: (1）経営方針　当社グループは、ソフトウエアという無形の財産を世に送り出している
-    message: 「は」で出した主題から述語まで 3283 字あります（80 字まで）
+    text: (2）経営戦略等① 当社グループの経営上の強み　当社グループは、独立系であるため
+    message: 「は」で出した主題から述語まで 192 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: (4）経営環境当社グループが属する情報サービス産業は、新型コロナウイルス感染症の
+    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: (5）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: ② 当社グループの経営上の弱み　当社グループは中堅独立系ITトータルソリューショ
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 21
+    text: なお、新型コロナウイルス感染症の拡大による当社グループの業績への影響は、令和３年
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 21
@@ -479,60 +391,85 @@ findings:
     text: PMP資格（Project Management Professional）の取
     message: 「PMP」が説明なしで使われています（説明のない略語 9 個）
     verdict: unjudged
-  - rule: bracket-nesting
+  - rule: max-paragraph-length
     line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: 括弧が 10 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: 一文に節が 44 つつながっています（5 つまで）
+    text: ２【事業等のリスク】　本書に記載した事業の状況、経理の状況等に関する事項のうち、
+    message: この段落は 45 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: この文は 3634 文字あります（140 文字まで）
+    text: (2）技術革新によるリスク当社グループが属する情報サービス産業においては、技術革
+    message: この文は 151 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: max-sentence-length
     line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: 一文に読点が 86 個あります（6 個まで）
+    text: (4）システム開発における品質や納期遅延の問題に関するリスクシステム開発において
+    message: この文は 173 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: nado-closed-list
+  - rule: max-sentence-length
     line: 25
-    text: 等に限定されることなく、パソコンから汎用大型コンピューターまで幅広い提案・対応が
-    message: 「等」で一覧を開いたまま、「に限定」で限っています
+    text: 当社においては、ISO27001やプライバシーマークの認証取得を行い、各部所担当
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 25
+    text: 国内外の経済情勢や景気動向等の理由による、顧客企業におけるシステム投資の縮小や製
+    message: 「可能性があります」が 13 回出てきます（5 回まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 25
     text: のアクセス証跡の記録等各種の情報セキュリティ対策を講じ個人情報を含む重要な情報資
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
+  - rule: repeated-sentence-ending
     line: 25
     text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: この文に中黒が 9 個あります（5 個まで）
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 当社グループは、従業員の定着率を向上させることが第一であると考えており、従業員満
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 当社グループは、知的財産管理規程に基づき、サービス等の提供前に管理部が事前に開発
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 25
+    text: 当社グループは、自然災害等に備え、事業継続のためのインフラ・人員計画や対応策の優
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: tari-unpaired
     line: 25
     text: たり、損害賠償請求を受ける等、当社グループの業績や財政状態に影響を及ぼす可能性が
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-  - rule: teki-overuse
-    line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
-    message: 「は」で出した主題から述語まで 3582 字あります（80 字まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは、これらのリスク発生の可能性を十分に認識した上で、発生の回避及び発
     message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは、独立系であるためメーカーの系列、機種・OS等に限定されることなく
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは、知的財産管理規程に基づき、サービス等の提供前に管理部が事前に開発
+    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは、請負契約（成果物あり）で受注金額１百万円以上又は１人月以上の案件
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 従いまして、優秀な技術者やシステムエンジニア、管理者等、必要とする人材を採用、育
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 25
@@ -674,16 +611,6 @@ findings:
     text: 7,146千円であります。
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 37
-    text: ．上記の金額には消費税等は含まれておりません。２．事務所は全て賃借しており、年間
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 37
-    text: ．上記の金額には消費税等は含まれておりません。２．事務所は賃借しており、年間の賃
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 37
     text: ２【主要な設備の状況】当社グループにおける主要な設備は、以下のとおりであります。
@@ -709,20 +636,15 @@ findings:
     text: 8,477－増資資金令和３年３月令和３年10月（注）１当社大阪本社大阪市北区本社
     message: 半角の「8」と書いています（この文書はふつう全角の「８」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 41
-    text: ．上記の金額には消費税等は含まれておりません。 (2）重要な設備等の除却等該当事
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 41
-    text: ．完成後の増加能力については、計数的把握が困難であるため、記載を省略しております
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 41
     text: (1）重要な設備の新設等 会社名事業所名所在地設備の内容投資予定金額資金調達方法
     message: 「内容投資予定金額資金調達方法着手及」は漢字が 17 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: ３【設備の新設、除却等の計画】当社グループの設備投資については、景気予測、業界動
+    message: この段落は 7 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 41
@@ -824,26 +746,6 @@ findings:
     text: ＳＭＢＣ日興証券株式会社５．新株予約権の行使による増加であります。
     message: 全角の「ＳＭＢＣ」と書いています（この文書はふつう半角の「SMBC」。90 箇所のうち 3 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 53
-    text: ．新株予約権の行使による増加であります。
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 53
-    text: ．有償第三者割当　　　　　　 10,000株　　　　　　　発行価格　　　6,26
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 53
-    text: ．有償第三者割当（オーバーアロットメントによる売出しに関連した第三者割当）発行価
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 53
-    text: ．株式分割（１：３）によるものであります。３．有償一般募集（ブックビルディング方
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 53
     text: （４）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
@@ -899,11 +801,6 @@ findings:
     text: （３）【株主総会決議又は取締役会決議に基づかないものの内容】区分株式数（株）価額
     message: この文は 152 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 73
-    text: ．当期間における処理自己株式には、令和３年６月１日からこの有価証券報告書提出日ま
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 73
     text: （４）【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数（株）処分
@@ -924,11 +821,6 @@ findings:
     text: ）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 85
-    text: (2）当社の財務諸表は、「財務諸表等の用語、様式及び作成方法に関する規則」（昭和
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 85
     text: ）当社の財務諸表は、「財務諸表等の用語、様式及び作成方法に関する規則」（昭和38
@@ -938,11 +830,6 @@ findings:
     line: 93
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（令和２年
     message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 97
-    text: 取組みを行っております。具体的には、会計基準等の内容を適切に把握し、連結財務諸表
-    message: 「取組む」と書いています（この文書はふつう「取り組む」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 101
@@ -1339,16 +1226,6 @@ findings:
     text: の受取額7,785－助成金の受取額2,26310,359法人税等の支払額△115
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  （単位：千円）  前連結会計年度(自　平成
-    message: この文に中黒が 7 個あります（5 個まで）
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
-    message: 括弧が 6 重になっています（2 重まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 121
     text: (1）重要な資産の評価基準及び評価方法イ　有価証券その他有価証券時価のあるもの期
@@ -1364,35 +1241,40 @@ findings:
     text: )は、手許現金、随時引き出し可能な預金及び容易に換金可能であり、かつ、価値の変動
     message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
+  - rule: connective-hierarchy
     line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
-    message: 一文に節が 6 つつながっています（5 つまで）
+    text: 並びに平成28年４月１日以降に取得した建物附属設備については定額法を採用しており
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 121
     text: 1社連結子会社の名称　ノックス株式会社 ２．持分法の適用に関する事項該当事項はあ
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: kutoten-consistency
+  - rule: max-kanji-continuous
     line: 121
-    text: ．連結の範囲に関する事項全ての子会社を連結対象としており、内容は以下のとおりであ
-    message: 句点を「．」と書いています（この文書はふつう「。」。194 箇所のうち 18 箇所が違う）
+    text: イ　退職給付見込額の期間帰属方法退職給付債務の算定にあたり、退職給付見込額を当連
+    message: 「期間帰属方法退職給付債務」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
+    text: ロ　数理計算上の差異及び過去勤務費用の費用処理方法数理計算上の差異は、各期の発生
+    message: 「費用処理方法数理計算上」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 121
+    text: 建物　　　　　　　　８年～15年工具、器具及び備品　３年～15年 ロ　無形固定資
     message: 「無形固定資産自社利用目的」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 121
+    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項全ての
+    message: この段落は 20 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
-    message: この文は 1160 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
-    message: 一文に読点が 18 個あります（6 個まで）
+    text: (5）連結キャッシュ・フロー計算書における資金の範囲連結キャッシュ・フロー計算書
+    message: この文は 144 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
@@ -1409,6 +1291,11 @@ findings:
     text: ３．連結子会社の事業年度等に関する事項連結子会社の事業年度の末日は、連結決算日と
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 建物　　　　　　　　８年～15年工具、器具及び備品　３年～15年 ロ　無形固定資
+    message: 「〜おります」で終わる文が 11 文続いています（2 文まで）
+    verdict: unjudged
   - rule: stray-space
     line: 121
     text: 　たな卸資産商品個別法による原価法（収益性の低下による簿価切り下げ方法）を採用し
@@ -1416,8 +1303,8 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 121
-    text: ４．会計方針に関する事項(1）重要な資産の評価基準及び評価方法イ　有価証券その他
-    message: 「は」で出した主題から述語まで 1085 字あります（80 字まで）
+    text: (5）連結キャッシュ・フロー計算書における資金の範囲連結キャッシュ・フロー計算書
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 121

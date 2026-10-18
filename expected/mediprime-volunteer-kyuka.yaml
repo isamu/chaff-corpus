@@ -6,12 +6,6 @@ findings:
     text: "### 第1条　目的"
     message: 見出し「第1条　目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
-  - rule: numbering-gap
-    line: 18
-    text: 5. 災害地域復興支援活動
-    message: 「1.」の次が「5.」です（2 番目のはず）
-    verdict: false-positive
-    note: items 1–6 are complete; 5 and 6 are indented with two spaces where 1–4 use a tab (a real indentation slip, but not a numbering gap)
   - rule: fullwidth-alnum-consistency
     line: 23
     text: １日から翌年3月31日までの1年間につき3日を限度とする。

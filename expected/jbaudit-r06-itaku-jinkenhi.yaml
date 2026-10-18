@@ -7,21 +7,20 @@ findings:
     message: 題「国の委託事業の委託先及び国庫補助事業の補助事業者となっている会社において、虚偽の業務日誌を作成して実際には委託事業等の業務に全く従事していない者を従事したこととするなどして人件費が算定されていたため、委託費の支払額及び国庫補助金の交付額が過大となっていたもの［内閣府本府、こども家庭庁、文化庁、厚生労働本省、農林水産本省、水産庁、経済産業本省、資源エネルギー庁、特許庁、中小企業庁、北海道経済産業局、東北経済産業局、近畿経済産業局、四国経済産業局、九州経済産業局、国土交通本省、観光庁、環境本省、北海道地方環境事務所］（1）（17）（57）（78）（163）（164）（178）―（186）（210）（211）（218）（219）」は 308 文字あります（50 文字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
-    line: 5
-    text: (1)　内閣府所管
+    line: 9
+    text: 一般会計　（組織）文化庁　（項）国際観光旅客税財源観光振興費
     message: 「国際観光旅客税財源観光振興費」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 5
-    text: (1)　内閣府所管
-    message: この文は 459 文字あります（140 文字まで）
+  - rule: max-kanji-continuous
+    line: 13
+    text: 一般会計　（組織）農林水産本省　（項）国産農産物消費拡大対策費　等
+    message: 「国産農産物消費拡大対策費」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 39
-    text: 会社ジェイアール東日本企画
-    message: 「会社」を、73 行目の定義より前で使っています
-    verdict: false-positive
-    note: 会社 here is part of a company's name (株式会社…), not the term the report defines later as 会社
+  - rule: max-kanji-continuous
+    line: 16
+    text: 一般会計　（組織）経済産業本省　（項）クールジャパン推進費　等
+    message: 「東日本大震災復興特別会計」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
   - rule: ngram-repetition
     line: 73
     text: これら54委託事業の委託契約書等によれば、会社は、委託費の対象となる経費として、
@@ -162,12 +161,6 @@ findings:
     text: 会社は、委託事業等に係る人件費の算定に当たり、83委託事業等のうち、防災インフラ
     message: この文は 196 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 131
-    text: 表（以下「想定人件費一覧表」という。）を人件費の算定根拠となる証ひょうとは別に作
-    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
   - rule: topic-predicate-distance
     line: 131
     text: 会社は、委託事業等に係る人件費の算定に当たり、83委託事業等のうち、防災インフラ
@@ -178,24 +171,6 @@ findings:
     text: 会社によると、想定人件費一覧表に記載された各社員の従事時間数は、各委託事業等の委
     message: この文は 168 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 133
-    text: 表において割り振った時間数について従事したこととして、事実と異なる従事時間等を記
-    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
-  - rule: orthographic-variant
-    line: 133
-    text: 表における各委託事業等の人件費の合計額ができるだけ近くなるようにするために、これ
-    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
-  - rule: orthographic-variant
-    line: 133
-    text: 表に記載された各社員の従事時間数は、各委託事業等の委託費の限度額又は国庫補助金の
-    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
   - rule: topic-predicate-distance
     line: 133
     text: 会社によると、想定人件費一覧表に記載された各社員の従事時間数は、各委託事業等の委
@@ -206,12 +181,6 @@ findings:
     text: 83委託事業等のうち12委託事業等について、会社は、想定人件費一覧表を作成してい
     message: この文は 170 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 137
-    text: 表を作成していなかったものの、71委託事業等と同様に、実際には委託事業等の業務に
-    message: 「表」と書いています（この文書はふつう「ひょう」と書く語です。16 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: 表 in 一覧表 is a different word from the ひょう of 証ひょう (証憑); two words, not one written two ways
   - rule: topic-predicate-distance
     line: 137
     text: 83委託事業等のうち12委託事業等について、会社は、想定人件費一覧表を作成してい
@@ -282,11 +251,6 @@ findings:
     line: 159
     text: )　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際には
     message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 159
-    text: (注)　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際
-    message: 「経済産業省近畿経済産業局」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 159

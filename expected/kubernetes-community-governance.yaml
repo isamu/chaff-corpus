@@ -6,12 +6,6 @@ findings:
     text: CLA, below.
     message: '"CLA" is used without an expansion (5 such acronyms)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 8
-    text: SIG governance, below.
-    message: '"SIG" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: expanded at line 42 as 'Special Interest Groups, or SIGs' (the expansion wraps across lines)
   - rule: nonstandard-word
     line: 32
     text: is comprised of the following types of s
@@ -32,12 +26,6 @@ findings:
     text: Each SIG must have a charter that specif
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-  - rule: article-sound
-    line: 77
-    text: a SIG should stay local within that SIG.
-    message: '"a SIG" takes "an" before that sound'
-    verdict: false-positive
-    note: SIG is read as a word ('sig'), so 'a SIG' is right
   - rule: quote-style-consistency
     line: 97
     text: "’s technical leaders: responsible for vi"
@@ -58,12 +46,6 @@ findings:
     text: "  Membership of a committee is decided b"
     message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 18)
     verdict: correct
-  - rule: article-sound
-    line: 131
-    text: a SIG, a
-    message: '"a SIG" takes "an" before that sound'
-    verdict: false-positive
-    note: SIG is read as a word ('sig'), so 'a SIG' is right
   - rule: title-case-consistency
     line: 135
     text: ""
@@ -99,12 +81,6 @@ findings:
     text: The [KEP process] facilitates definition
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-  - rule: article-sound
-    line: 168
-    text: a SIG.
-    message: '"a SIG" takes "an" before that sound'
-    verdict: false-positive
-    note: SIG is read as a word ('sig'), so 'a SIG' is right
   - rule: undefined-acronym
     line: 178
     text: CNCF CLA, as described [here](CLA.md).

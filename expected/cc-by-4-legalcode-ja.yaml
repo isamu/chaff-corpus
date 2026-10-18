@@ -36,26 +36,6 @@ findings:
     text: 下で、ライセンスされたマテリアルの利用を許諾します。たとえば、著作権法上の例外や
     message: 「下」と書いています（この文書はふつう「もと」と書く語です。9 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: translationese-density
-    line: 29
-    text: クリエイティブ・コモンズ・ライセンスにより必要とされるものではありませんが、あな
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 33
-    text: ライセンスされた権利（定義は後述します）の行使により、あなたは、クリエイティブ・
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 33
-    text: 本パブリック・ライセンスが契約と解釈されるであろう範囲において、あなたはこれらの
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 38
-    text: 「翻案者のライセンス」 とは、翻案物に対してあなたが寄与した部分に生じる、あなた
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 39
     text: (b)(1)および(2)において規定される権利は、著作権およびそれに類する権利で
@@ -66,70 +46,20 @@ findings:
     text: 下で、正当な権限なしに回避されてはならないものとされる諸手段をいいます。
     message: 「下」と書いています（この文書はふつう「もと」と書く語です。9 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: translationese-density
-    line: 47
-    text: 「あなたの」もそれに対応した意味となります。
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 58
-    text: 例外および権利制限誤解を避けるために記すと、例外および権利制限があなたの利用に適
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 58
-    text: 例外および権利制限誤解を避けるために記すと、例外および権利制限があなたの利用に適
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
   - rule: teki-overuse
     line: 60
     text: 許諾者は、あなたが、ライセンスされた権利を行使するために必要とされる技術的な改変
     message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 64
-    text: ダウンストリーム（下流側）への制限の禁止あなたは、ライセンス対象物の受領者がライ
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 94
-    text: 許諾者からリクエストされれば、あなたは第3条(a)(1)(A)に掲げるいかなる情
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 99
-    text: ライセンスされた権利にデータベース権が含まれており、ライセンス対象物のあなたの利
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 103
-    text: あなたは、データベースのコンテンツの全てまたは実質的な部分を共有する場合は、第3
-    message: 「あなたは」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
     verdict: unjudged
   - rule: stray-space
     line: 105
     text: " は、ライセンスされた権利が他の著作権およびそれに類する権利を含む場合の本パブリ"
     message: 「条」と「は」は一続きの語句ですが、あいだに空白があります（1460 箇所のうち 2 箇所が空いている）
     verdict: unjudged
-  - rule: translationese-density
-    line: 105
-    text: 誤解を避けるために記すと、 本第4条 は、ライセンスされた権利が他の著作権および
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 115
-    text: しかし、もしあなたが本パブリック・ライセンスに違反すると、本パブリック・ライセン
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
-    verdict: unjudged
   - rule: latin-spacing
     line: 119
     text: 30日以内に違反を是正した場合に限り、違反を是正したその日に、自動的に復活します
     message: 日本語と後ろの数字のあいだを詰めています（この文書はふつう空ける。4 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: translationese-density
-    line: 122
-    text: 誤解を避けるために記すと、本第6条(b)は、許諾者が、あなたの本パブリック・ライ
-    message: 「あなたの」など、翻訳調の言い回しが 1000 字あたり 2 個あります（1 個まで）
     verdict: unjudged
   - rule: tari-unpaired
     line: 124

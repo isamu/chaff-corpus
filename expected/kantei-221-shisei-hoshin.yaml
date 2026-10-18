@@ -21,11 +21,6 @@ findings:
     text: "#### 第２２１回国会における高市内閣総理大臣施政方針演説（令和８年２月２０日"
     message: 見出し「第２２１回国会における高市内閣総理大臣施政方針演説（令和８年２月２０日閣議決定）」の深さが 1 から 4 へ飛んでいます（2 のはず）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 16
-    text: 合わせて取り組んでいきたい。様々なお声に耳を傾け、謙虚に、しかし、大胆に、政権運
-    message: 「合わせる」と書いています（この文書はふつう「あわせる」と書く語です。7 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 24
     text: 電気・ガス料金の支援や重点支援地方交付金による支援も、国民の皆様に届き始めていま
@@ -175,11 +170,6 @@ findings:
     line: 228
     text: すみ分けを図ります。
     message: 「すむ」と書いています（この文書はふつう「住む」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 235
-    text: みしめながら、国会において、皇室典範の改正に向け、安定的な皇位継承等の在り方に関
-    message: 「みる」と書いています（この文書はふつう「診る」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 237

@@ -86,6 +86,11 @@ findings:
     text: "![](000_github_pullrequest/15.png)"
     message: 画像「![](000_github_pullrequest/15.png)」に代替テキストがありません
     verdict: correct
+  - rule: known-misspelling
+    line: 93
+    text: Denger Zone のDelete this repository をクリッ
+    message: 「Denger」は「Danger」の書き誤りです
+    verdict: correct
   - rule: image-alt-text
     line: 95
     text: "![](000_github_pullrequest/16.png)"

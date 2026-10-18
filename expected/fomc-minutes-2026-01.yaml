@@ -26,23 +26,16 @@ findings:
     text: Respondents to the Open Market Desk Surv
     message: This sentence runs 51 words (limit 45)
     verdict: correct
-  - rule: ngram-repetition
-    line: 44
-    text: Market-based measures of policy rate exp
-    message: '"federal funds rate" appears 15 times (limit 5)'
-    verdict: false-positive
-    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
   - rule: max-paragraph-length
     line: 46
     text: The manager turned next to Treasury mark
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: comparative-without-baseline
+  - rule: undefined-acronym
     line: 50
-    text: better.
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: "the baseline is in the same sentence: 'performed even better' than the S&P 500 excluding the largest technology companies"
+    text: S&P 500 was up nearly 3 percent over the
+    message: '"S&P" is used without an expansion (1 such acronym)'
+    verdict: unjudged
   - rule: max-sentence-length
     line: 54
     text: Money market contacts attributed the bet
@@ -65,9 +58,9 @@ findings:
     verdict: correct
   - rule: wordy-phrase
     line: 94
-    text: The financing of AI investment will like
-    message: '"have the capacity to" can be said in fewer words'
-    verdict: correct
+    what: '"have the capacity to" can be said in fewer words'
+    verdict: missed
+    note: "correct in chaffjs 0.35.0, lost in 0.36.0: the sentence holds one wordy phrase and the rule now reports a sentence only from two"
   - rule: max-sentence-length
     line: 98
     text: The amount of total short-run funding in
@@ -88,12 +81,6 @@ findings:
     text: In their discussion of financial stabili
     message: This paragraph runs 7 sentences (limit 5)
     verdict: unjudged
-  - rule: wordy-phrase
-    line: 124
-    text: Some participants discussed potential vu
-    message: '"a small number of" can be said in fewer words'
-    verdict: false-positive
-    note: "'a small number of' is one of the FOMC minutes' fixed quantifiers for how many participants held a view (a few / some / several / many); shortening it changes the count it reports"
   - rule: max-paragraph-length
     line: 126
     text: In their consideration of monetary polic
@@ -119,9 +106,8 @@ findings:
     text: In discussing risk-management considerat
     message: This sentence runs 48 words (limit 45)
     verdict: unjudged
-  - rule: name-variant
-    line: 317
-    text: Walker, Senior Associate Director, Divis
-    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
-    verdict: false-positive
-    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt
+  - rule: ngram-repetition
+    line: 134
+    text: In their discussions of monetary policy
+    message: '"members agreed that" appears 7 times (limit 5)'
+    verdict: correct

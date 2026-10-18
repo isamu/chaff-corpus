@@ -1,33 +1,9 @@
 id: govuk-late-commercial-payments
 chaff: 0.34.0
 findings:
-  - rule: heading-numbering-mix
-    line: 1
-    text: "# Late commercial payments: charging int"
-    message: 'The heading "Late commercial payments: charging interest and debt recovery" has no number, while 3 of its siblings do ("1. When a payment becomes late")'
-    verdict: false-positive
-    note: the page title (h1) is read as a sibling of the guide's numbered part headings (1. Overview)
   - rule: hyphen-as-dash
     line: 11
     text: " - but it must be fair to both businesse"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: contraction-consistency
-    line: 34
-    text: Send a new invoice if you decide to add
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 40
-    text: The amount you’re allowed to charge depe
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 44
-    text: If you’re a supplier, you can also claim
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose

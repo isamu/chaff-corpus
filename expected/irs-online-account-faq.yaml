@@ -6,6 +6,16 @@ findings:
     text: IRS customer service representatives can
     message: '"IRS" is used without an expansion (6 such acronyms)'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 36
+    text: If you're a business, or an individual w
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 45
+    text: The Payment Activity tab currently links
+    message: "\"aren't\" is written \"are not\" elsewhere in the document"
+    verdict: unjudged
   - rule: max-sentence-length
     line: 92
     text: If the amount shown is zero, then this i
@@ -31,10 +41,15 @@ findings:
     text: EIP page on IRS.gov. For more informatio
     message: '"EIP" is used without an expansion (6 such acronyms)'
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 207
-    text: Payment applied incorrectly
-    message: '"Payment applied incorrectly" opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+  - rule: contraction-consistency
+    line: 196
+    text: If you received a notice in the mail or
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 234
+    text: If you couldn’t find what you’re looking
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: unjudged
   - rule: undefined-acronym
     line: 234
@@ -45,6 +60,16 @@ findings:
     line: 264
     text: Your online account will show all inform
     message: '"with the exception of" can be said in fewer words'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 274
+    text: Generally, an amount included in your in
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 274
+    text: Income that is nontaxable may have to be
+    message: "\"is not\" is written \"isn't\" elsewhere in the document"
     verdict: unjudged
   - rule: max-sentence-length
     line: 304

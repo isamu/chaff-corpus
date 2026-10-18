@@ -1,15 +1,3 @@
 id: 18f-handbook-purchase-requests
 chaff: 0.34.0
-findings:
-  - rule: contraction-consistency
-    line: 28
-    text: However, if
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
-  - rule: contraction-consistency
-    line: 42
-    text: Once you are on the final step of the or
-    message: "\"it's\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"
+findings: []

@@ -11,46 +11,6 @@ findings:
     text: ８年６月一部改正）
     message: 全角の「８」と書いています（この文書はふつう半角の「8」。2170 箇所のうち 10 箇所が違う）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 36
-    text: 利用目的（法第17条・第18条、第21条第3項関係）
-    message: 「利用目的」を、873 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 58
-    text: 委託先の監督（法第25条関係）
-    message: 「委託先」を、1317 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 60
-    text: 漏えい等の報告等（法第26条関係）
-    message: 「漏えい等」を、1290 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 63
-    text: 漏えい等事案が発覚した場合に講ずべき措置
-    message: 「漏えい等事案」を、1409 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 85
-    text: 利用停止等（法第32条～第39条関係）
-    message: 「利用停止等」を、3145 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 85
-    text: 訂正等・利用停止等（法第32条～第39条関係）
-    message: 「訂正等」を、3119 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 93
-    text: 開示等の請求等に応じる手続（法第37条関係）
-    message: 「開示等」を、555 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 93
-    text: 開示等の請求等に応じる手続（法第37条関係）
-    message: 「開示等の請求等」を、3250 行目の定義より前で使っています
-    verdict: unjudged
   - rule: toc-heading-mismatch
     line: 121
     text: 【付録】
@@ -101,11 +61,6 @@ findings:
     text: （1）当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 216
-    text: （1）当該情報に含まれる氏名、生年月日その他の記述等（文書、図画若しくは電磁的記
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 219
     text: 「個人情報」（※1）とは、生存する「個人に関する情報」（※2）（※3）であって、
@@ -151,6 +106,11 @@ findings:
     text: 「要配慮個人情報」とは、不当な差別や偏見その他の不利益が生じないようにその取扱い
     message: 「要配慮個人情報」は 340 行目でも定義されています
     verdict: unjudged
+  - rule: use-before-definition
+    line: 363
+    text: 漏えい等が発生し、又は発生したおそれがある事態が生じた場合には、個人情報保護委員
+    message: 「漏えい等」を、1290 行目の定義より前で使っています
+    verdict: unjudged
   - rule: teki-overuse
     line: 389
     text: 身体的被害、精神的被害及び金銭的被害の別を問わず、犯罪の被害を受けた事実を意味す
@@ -160,11 +120,6 @@ findings:
     line: 406
     text: ③ 「精神保健及び精神障害者福祉に関する法律（昭和25年法律第123号）にいう精
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 419
-    text: かかりやすさに該当する結果等も含まれる。なお、健康診断等を受診したという事実は該
-    message: 「かかる」と書いています（この文書はふつう「係る」と書く語です。136 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 581
@@ -185,6 +140,26 @@ findings:
     line: 619
     text: 「事業」とは、一定の目的をもって反復継続して遂行される同種の行為であって、かつ社
     message: 「事業」は 515 行目でも定義されています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 679
+    text: 利用目的を公表している場合を除き、速やかに、その利用目的を、本人に通知し、又は公
+    message: 「利用目的」を、873 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 699
+    text: 開示等の請求等に関するもの
+    message: 「開示等の請求等」を、3250 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 701
+    text: 利用停止等）参照）
+    message: 「利用停止等」を、3145 行目の定義より前で使っています
+    verdict: unjudged
+  - rule: use-before-definition
+    line: 701
+    text: 訂正等）、3-8-5（保有個人データの利用停止等）参照）
+    message: 「訂正等」を、3119 行目の定義より前で使っています
     verdict: unjudged
   - rule: unused-definition
     line: 769
@@ -351,11 +326,6 @@ findings:
     text: 「個人関連情報取扱事業者」とは、個人関連情報を含む情報の集合物であって、特定の個
     message: 「個人関連情報取扱事業者」は 609 行目でも定義されています
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 2221
-    text: 取扱い等を踏まえた上で、それに基づいて法第31条第1項の適用の有無を判断する。
-    message: 「取扱い」と書いています（この文書はふつう「取扱」と書く語です。575 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 2233
     text: 「想定される」とは、提供元の個人関連情報取扱事業者において、提供先の第三者が「個
@@ -416,20 +386,10 @@ findings:
     text: 複数回にわたって同一「本人」の個人関連情報を提供する場合において、同一の内容であ
     message: 「は」で出した主題から述語まで 217 字あります（200 字まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 2453
-    text: 個人関連情報取扱事業者は、記録を、文書、電磁的記録（電磁的方式（電子的方式、磁気
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
   - rule: use-before-definition
     line: 2851
     text: 管理区域の入退室管理方法
     message: 「管理区域」を、3854 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 2893
-    text: (※1）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」
-    message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 2893
@@ -480,11 +440,6 @@ findings:
     line: 2962
     text: 個人情報取扱事業者は、本人から、当該本人が識別される保有個人データの開示（存在し
     message: 「は」で出した主題から述語まで 224 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 2964
-    text: 電磁的記録の提供による方法については、個人情報取扱事業者がファイル形式や記録媒体
-    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 2968
@@ -581,11 +536,6 @@ findings:
     text: 「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」とは、本
     message: 「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」は 2893 行目でも定義されています
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 3302
-    text: (※1）「開示等の請求等」とは、保有個人データの利用目的の通知の求め（3-8-1
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: duplicate-definition
     line: 3302
     text: 「開示等の請求等」とは、保有個人データの利用目的の通知の求め（3-8-1（保有個
@@ -606,11 +556,6 @@ findings:
     text: ）開示等の請求等を受け付ける方法を定めない場合には、自由な申請を認めることとなる
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 3327
-    text: (※）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」に
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 3327
     text: ）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」につい
@@ -621,20 +566,10 @@ findings:
     text: ）保有個人データの開示については、3-8-2（保有個人データの開示）を参照のこと
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 3342
-    text: (※2）保有個人データの訂正等とは、保有個人データの訂正、追加又は削除のことをい
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 3342
     text: ）保有個人データの訂正等とは、保有個人データの訂正、追加又は削除のことをいう（3
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 3343
-    text: (※3）保有個人データの利用停止等とは、保有個人データの利用の停止又は消去のこと
-    message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 3343
@@ -666,11 +601,6 @@ findings:
     text: ）「当該裁判外の請求を拒んだとき」とは、法第33条第3項（同条第5項において準用
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 3363
-    text: (※1）消費者等本人との信頼関係を構築し事業活動に対する社会の信頼を確保するため
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 3363
     text: 見やすい場所への掲示等により公表し、あらかじめ、対外的に分かりやすく説明すること
@@ -680,11 +610,6 @@ findings:
     line: 3363
     text: ）消費者等本人との信頼関係を構築し事業活動に対する社会の信頼を確保するためには、
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 3364
-    text: (※2）「本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）」
-    message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 3364

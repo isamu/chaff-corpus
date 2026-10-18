@@ -1,29 +1,6 @@
 id: commonpaper-baa
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 4
-    text: BAA, as permitted under the Privacy Rule
-    message: '"BAA" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
-  - rule: undefined-acronym
-    line: 4
-    text: PHI other than as described in this BAA,
-    message: '"PHI" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
-  - rule: vague-word-density
-    line: 5
-    text: Except as otherwise permitted or require
-    message: '"reasonably" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 6
-    text: HIPAA.
-    message: '"HIPAA" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
   - rule: vague-word-density
     line: 6
     text: This includes giving training to <span c
@@ -39,21 +16,10 @@ findings:
     text: Provider</span> will maintain appropriat
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: vague-word-density
-    line: 8
-    text: Provider</span> will make available a su
-    message: '"reasonable" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: oxford-comma-consistency
     line: 9
     text: Provider</span> agrees to mitigate, to t
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 9
-    text: Provider</span> agrees to mitigate, to t
-    message: '"promptly" and other vague words: 16 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: vague-word-density
     line: 9
@@ -70,29 +36,11 @@ findings:
     text: Provider</span> will conduct appropriate
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 11
-    text: HHS.</span>  Upon request, <span class="
-    message: '"HHS" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
-  - rule: vague-word-density
-    line: 12
-    text: Upon reasonable request, <span class="ke
-    message: '"reasonable" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: quote-style-consistency
     line: 13
     text: ’ rights under HIPAA as related to the S
     message: The quote mark ’ here, where the document usually writes ' (3 of 17)
     verdict: correct
-  - rule: undefined-acronym
-    line: 13
-    text: CFR §164.524, amend PHI pursuant to 45 C
-    message: '"CFR" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: CFR is a standard legal-citation abbreviation (Code of Federal Regulations)
   - rule: vague-word-density
     line: 13
     text: If relevant to the Services, <span class
@@ -103,18 +51,6 @@ findings:
     text: Provider</span> will take reasonable eff
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
     verdict: correct
-  - rule: vague-word-density
-    line: 13
-    text: Provider</span> will take reasonable eff
-    message: '"timely" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: timely counted again inside in a timely manner, already reported for the same phrase
-  - rule: vague-word-density
-    line: 13
-    text: Provider</span> will take reasonable eff
-    message: '"reasonable" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: quote-style-consistency
     line: 14
     text: ’s Obligations.</span>  To the extent th
@@ -136,22 +72,10 @@ findings:
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 17
-    text: Company</span> will notify <span class="
-    message: '"timely" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: timely counted again inside in a timely manner, already reported for the same phrase
-  - rule: vague-word-density
     line: 18
     text: Company</span> will notify <span class="
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
     verdict: correct
-  - rule: vague-word-density
-    line: 18
-    text: Company</span> will notify <span class="
-    message: '"timely" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: timely counted again inside in a timely manner, already reported for the same phrase
   - rule: vague-word-density
     line: 25
     text: Provider</span> will report to <span cla
@@ -160,33 +84,10 @@ findings:
   - rule: vague-word-density
     line: 26
     text: Company</span> agrees that this section
-    message: '"sufficient" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 26
-    text: Company</span> agrees that this section
     message: '"periodically" and other vague words: 16 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: vague-word-density
-    line: 27
-    text: Provider</span> will reimburse <span cla
-    message: '"reasonably" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: vague-word-density
     line: 28
     text: Provider</span> will not disclose inform
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: unknown-word
-    line: 45
-    text: thereunder, as amended from time to time
-    message: '"thereunder" is not in the dictionary; did you mean "hereunder"?'
-    verdict: false-positive
-    note: thereunder is a standard legal word missing from the dictionary
-  - rule: vague-word-density
-    line: 45
-    text: '"HIPAA"** means the Health Insurance Por'
-    message: '"from time to time" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: from time to time is a standard contract idiom, not a vague word

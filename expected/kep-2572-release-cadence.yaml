@@ -51,6 +51,14 @@ findings:
     text: https://github.com/kubernetes/sig-releas
     message: The URL "https://github.com/kubernetes/sig-release/issues/1494" is written bare (52 worded links in this document)
     verdict: correct
+  - rule: unknown-word
+    line: 218
+    what: '"Sechedule" is a misspelling of "Schedule" (also on lines 231 and 258)'
+    verdict: missed
+  - rule: unknown-word
+    line: 231
+    what: '"Sechedule" is a misspelling of "Schedule"'
+    verdict: missed
   - rule: name-variant
     line: 247
     text: Kubernetes Release Schedule 2021 (Propos
@@ -62,6 +70,10 @@ findings:
     text: Kubecon Break (Oct 12-15) |
     message: '"Kubecon" here, where the document usually writes "KubeCon" (1 of 10)'
     verdict: correct
+  - rule: unknown-word
+    line: 258
+    what: '"Sechedule" is a misspelling of "Schedule"'
+    verdict: missed
   - rule: hyphen-as-dash
     line: 295
     text: " - only 3 releases per year will relax t"
@@ -122,15 +134,3 @@ findings:
     text: "[here](https://docs.google.com/document/"
     message: The link text "here" does not say where it goes
     verdict: correct
-  - rule: unknown-word
-    line: 218
-    what: '"Sechedule" is a misspelling of "Schedule" (also on lines 231 and 258)'
-    verdict: missed
-  - rule: unknown-word
-    line: 231
-    what: '"Sechedule" is a misspelling of "Schedule"'
-    verdict: missed
-  - rule: unknown-word
-    line: 258
-    what: '"Sechedule" is a misspelling of "Schedule"'
-    verdict: missed

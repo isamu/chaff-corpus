@@ -1,34 +1,9 @@
 id: kaisha
 chaff: 0.33.0
 findings:
-  - rule: max-paragraph-length
-    line: 10
-    text: （定義）
-    message: この段落は 52 文あります（12 文まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 186
-    text: ２　前項の定款は、電磁的記録（電子的方式、磁気的方式その他人の知覚によっては認識
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 211
-    text: 一　定款が書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 211
-    text: 一　定款が書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 「は」で出した主題から述語まで 302 字あります（200 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 227
-    text: （定款の記載又は記録事項に関する検査役の選任）
-    message: この段落は 13 文あります（12 文まで）
-    verdict: unjudged
   - rule: bracket-nesting
-    line: 238
-    text: 一　第二十八条第一号及び第二号の財産（以下この章において「現物出資財産等」という
+    line: 240
+    text: 三　現物出資財産等について定款に記載され、又は記録された価額が相当であることにつ
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: bracket-nesting
@@ -51,40 +26,10 @@ findings:
     text: 報酬委員会の委員となる者
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 687
-    text: 一　譲渡による当該株式の取得について当該株式会社の承認を要すること　次に掲げる事
-    message: 「は」で出した主題から述語まで 1117 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 718
-    text: 一　剰余金の配当　当該種類の株主に交付する配当財産の価額の決定の方法、剰余金の配
-    message: 「は」で出した主題から述語まで 1155 字あります（200 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 812
-    text: （新株予約権買取請求）
-    message: この段落は 14 文あります（12 文まで）
-    verdict: unjudged
   - rule: use-before-definition
     line: 866
     text: 登録株式質権者について準用する。
     message: 「登録株式質権者」を、1022 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1201
-    text: 一　全部取得条項付種類株式を取得するのと引換えに金銭等を交付するときは、当該金銭
-    message: 「は」で出した主題から述語まで 541 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 1217
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 1246
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: use-before-definition
     line: 1279
@@ -96,65 +41,15 @@ findings:
     text: 第百七十九条　株式会社の特別支配株主（株式会社の総株主の議決権の十分の九（これを
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1288
-    text: 一　特別支配株主完全子法人に対して株式売渡請求をしないこととするときは、その旨及
-    message: 「は」で出した主題から述語まで 733 字あります（200 字まで）
-    verdict: unjudged
   - rule: use-before-definition
     line: 1309
     text: 登録新株予約権質権者（第二百七十条第一項に規定する登録新株予約権質権者をいう。）
     message: 「登録新株予約権質権者」を、2163 行目の定義より前で使っています
     verdict: unjudged
-  - rule: teki-overuse
-    line: 1321
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 1359
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 1391
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 1423
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1879
-    text: 一　当該新株予約権の目的である株式の数（種類株式発行会社にあっては、株式の種類及
-    message: 「は」で出した主題から述語まで 1360 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1918
-    text: 一　募集新株予約権の内容及び数
-    message: 「は」で出した主題から述語まで 201 字あります（200 字まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 1999
     text: 第二百四十四条の二　公開会社は、募集新株予約権の割当てを受けた申込者又は前条第一
     message: 「は」で出した主題から述語まで 211 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 2236
-    text: 一　株主に割り当てる新株予約権の内容及び数又はその算定方法
-    message: 「は」で出した主題から述語まで 262 字あります（200 字まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 2323
-    text: 一　第二百四十六条第一項の規定による払込み（同条第二項の規定により当該払込みに代
-    message: 一文に節が 11 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 2420
-    text: 一　株主総会の日時及び場所
-    message: 「は」で出した主題から述語まで 235 字あります（200 字まで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 2638
@@ -165,11 +60,6 @@ findings:
     line: 2643
     text: 第三百二十五条の二　株式会社は、取締役が株主総会（種類株主総会を含む。）の招集の
     message: 「は」で出した主題から述語まで 218 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 2651
-    text: 一　第二百九十八条第一項各号に掲げる事項
-    message: 「は」で出した主題から述語まで 257 字あります（200 字まで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 2662
@@ -220,16 +110,6 @@ findings:
     line: 3053
     text: 臨時計算書類（第四百四十一条第一項に規定する臨時計算書類をいう。以下この章におい
     message: 「臨時計算書類」を、3703 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 3082
-    text: 一　前項各号に掲げるものが書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 3082
-    text: 一　前項各号に掲げるものが書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 「は」で出した主題から述語まで 260 字あります（200 字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 3234
@@ -286,16 +166,6 @@ findings:
     text: 第四百二十七条　第四百二十四条の規定にかかわらず、株式会社は、取締役（業務執行取
     message: 「は」で出した主題から述語まで 213 字あります（200 字まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 3721
-    text: 一　計算書類等が書面をもって作成されているときは、当該書面又は当該書面の写しの閲
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 3721
-    text: 一　計算書類等が書面をもって作成されているときは、当該書面又は当該書面の写しの閲
-    message: 「は」で出した主題から述語まで 250 字あります（200 字まで）
-    verdict: unjudged
   - rule: defined-name-repeated
     line: 3752
     text: 報酬委員会による第四百九条第三項第三号、第四号若しくは第五号ロに定める事項につい
@@ -307,19 +177,9 @@ findings:
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 3839
-    text: 一　ある種類の株式の株主に対して配当財産の割当てをしないこととするときは、その旨
-    message: 「は」で出した主題から述語まで 210 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 3931
     text: 第四百六十五条　株式会社が次の各号に掲げる行為をした場合において、当該行為をした
     message: 「は」で出した主題から述語まで 227 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 3932
-    text: 一　第百三十八条第一号ハ又は第二号ハの請求に応じて行う当該株式会社の株式の買取り
-    message: 「は」で出した主題から述語まで 284 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 3970
@@ -356,24 +216,9 @@ findings:
     text: この場合において、第三百六十七条第一項中「監査役設置会社、監査等委員会設置会社及
     message: 「は」で出した主題から述語まで 448 字あります（200 字まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 4203
-    text: 一　貸借対照表等が書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 4203
-    text: 一　貸借対照表等が書面をもって作成されているときは、当該書面の閲覧の請求
-    message: 「は」で出した主題から述語まで 249 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 4250
-    text: 一　ある種類の株式の株主に対して残余財産の割当てをしないこととするときは、その旨
-    message: 「は」で出した主題から述語まで 212 字あります（200 字まで）
-    verdict: unjudged
   - rule: bracket-nesting
-    line: 4304
-    text: 一　清算株式会社についての破産手続
+    line: 4306
+    text: 三　清算株式会社の財産に対して既にされている共助対象外国租税（租税条約等の実施に
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
   - rule: topic-predicate-distance
@@ -401,270 +246,35 @@ findings:
     text: 等に限る。）及びその価額又は評価の標準
     message: 「等」で一覧を開いたまま、「に限る」で限っています
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 4895
-    text: てん補のために、その資本金の額を減少することができる。
-    message: 「てん」と書いています（この文書はふつう「転」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5214
-    text: 一　募集社債の総額
-    message: 「は」で出した主題から述語まで 350 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5637
-    text: 一　組織変更後の持分会社（以下この編において「組織変更後持分会社」という。）が合
-    message: 「は」で出した主題から述語まで 480 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5667
-    text: 一　組織変更後の株式会社（以下この条において「組織変更後株式会社」という。）の目
-    message: 「は」で出した主題から述語まで 471 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5708
-    text: 一　株式会社である吸収合併存続会社（以下この編において「吸収合併存続株式会社」と
-    message: 「は」で出した主題から述語まで 1135 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5723
-    text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
-    message: 「は」で出した主題から述語まで 247 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5743
-    text: 一　持分会社である吸収合併存続会社（以下この節において「吸収合併存続持分会社」と
-    message: 「は」で出した主題から述語まで 769 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5756
-    text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
-    message: 「は」で出した主題から述語まで 247 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5774
-    text: 一　新設合併により消滅する会社（以下この編において「新設合併消滅会社」という。）
-    message: 「は」で出した主題から述語まで 880 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5796
-    text: 一　ある種類の株式の株主に対して新設合併設立株式会社の株式の割当てをしないことと
-    message: 「は」で出した主題から述語まで 252 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5815
-    text: 一　新設合併消滅会社の商号及び住所
-    message: 「は」で出した主題から述語まで 322 字あります（200 字まで）
-    verdict: unjudged
   - rule: bracket-nesting
-    line: 5850
-    text: 一　吸収分割をする会社（以下この編において「吸収分割会社」という。）及び株式会社
+    line: 5851
+    text: 二　吸収分割承継株式会社が吸収分割により吸収分割会社から承継する資産、債務、雇用
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5850
-    text: 一　吸収分割をする会社（以下この編において「吸収分割会社」という。）及び株式会社
-    message: 「は」で出した主題から述語まで 1149 字あります（200 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 5869
-    text: （株式会社に権利義務を承継させる吸収分割の効力の発生等）
-    message: この段落は 13 文あります（12 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5889
-    text: 一　吸収分割会社及び持分会社である吸収分割承継会社（以下この節において「吸収分割
-    message: 「は」で出した主題から述語まで 635 字あります（200 字まで）
-    verdict: unjudged
   - rule: bracket-nesting
-    line: 5928
-    text: 一　株式会社である新設分割設立会社（以下この編において「新設分割設立株式会社」と
+    line: 5935
+    text: 五　新設分割設立株式会社が新設分割により新設分割をする会社（以下この編において「
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5928
-    text: 一　株式会社である新設分割設立会社（以下この編において「新設分割設立株式会社」と
-    message: 「は」で出した主題から述語まで 1117 字あります（200 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 5953
-    text: （株式会社を設立する新設分割の効力の発生等）
-    message: この段落は 13 文あります（12 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 5973
-    text: 一　持分会社である新設分割設立会社（以下この編において「新設分割設立持分会社」と
-    message: 「は」で出した主題から述語まで 347 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6015
-    text: 一　株式交換をする株式会社（以下この編において「株式交換完全子会社」という。）及
-    message: 「は」で出した主題から述語まで 1065 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6030
-    text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
-    message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6050
-    text: 一　株式交換完全子会社及び合同会社である株式交換完全親会社（以下この編において「
-    message: 「は」で出した主題から述語まで 426 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6058
-    text: 一　ある種類の株式の株主に対して金銭等の割当てをしないこととするときは、その旨及
-    message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6077
-    text: 一　株式移転により設立する株式会社（以下この編において「株式移転設立完全親会社」
-    message: 「は」で出した主題から述語まで 820 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6098
-    text: 一　ある種類の株式の株主に対して株式移転設立完全親会社の株式の割当てをしないこと
-    message: 「は」で出した主題から述語まで 243 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6120
-    text: 一　株式交付子会社（株式交付親会社（株式交付をする株式会社をいう。以下同じ。）が
-    message: 「は」で出した主題から述語まで 1156 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6142
-    text: 一　ある種類の株式の譲渡人に対して株式交付親会社の株式の割当てをしないこととする
-    message: 「は」で出した主題から述語まで 255 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6216
-    text: 一　第一項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6280
-    text: 一　吸収合併契約等について株主総会（種類株主総会を含む。）の決議によってその承認
-    message: 「は」で出した主題から述語まで 382 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6286
-    text: 一　第一項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 6316
     text: 全ての株主（第七百八十四条第一項本文に規定する場合における当該特別支配会社を除く
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 6336
-    text: （新株予約権買取請求）
-    message: この段落は 14 文あります（12 文まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6393
-    text: 一　吸収分割株式会社　吸収分割により吸収分割承継会社が承継した吸収分割株式会社の
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6397
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6422
-    text: 一　吸収合併契約等について株主総会（種類株主総会を含む。）の決議によってその承認
-    message: 「は」で出した主題から述語まで 317 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6426
-    text: 一　第一項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 6464
     text: 全ての株主（第七百九十六条第一項本文に規定する場合における当該特別支配会社を除く
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6506
-    text: 一　吸収合併存続株式会社　第一項の書面又は電磁的記録
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6510
-    text: 一　前項第一号の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: bracket-nesting
     line: 6515
     text: この場合において、同項中「株主及び債権者」とあるのは「株主及び債権者（株式交換完
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6537
-    text: 一　新設合併契約等について株主総会（種類株主総会を含む。）の決議によってその承認
-    message: 「は」で出した主題から述語まで 368 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6543
-    text: 一　第一項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 6585
-    text: （新株予約権買取請求）
-    message: この段落は 14 文あります（12 文まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6637
-    text: 一　新設分割株式会社　新設分割により新設分割設立会社が承継した新設分割株式会社の
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6641
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6671
-    text: 一　新設合併設立株式会社　第一項の書面又は電磁的記録及び新設合併契約の内容その他
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6675
-    text: 一　前項第一号の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 6693
-    text: 一　株式交付計画について株主総会（種類株主総会を含む。）の決議によってその承認を
-    message: 「は」で出した主題から述語まで 322 字あります（200 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6697
-    text: 一　第一項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 6727
     text: 全ての株主
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 6770
-    text: 一　前項の書面の閲覧の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 7052
-    text: （最終完全親会社等の株主による特定責任追及の訴え）
-    message: この段落は 13 文あります（12 文まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 7076
-    text: （訴訟参加）
-    message: この段落は 14 文あります（12 文まで）
     verdict: unjudged
   - rule: defined-name-repeated
     line: 7226
@@ -672,84 +282,19 @@ findings:
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 7238
-    text: 一　この法律の規定により株式会社が作成し、又は備え置いた書面又は電磁的記録につい
-    message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 7331
     text: 第八百八十六条　利害関係人は、裁判所書記官に対し、第二編第九章第二節若しくはこの
     message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7495
-    text: 一　目的
-    message: 「は」で出した主題から述語まで 1809 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7547
-    text: 一　目的
-    message: 「は」で出した主題から述語まで 332 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7562
-    text: 一　目的
-    message: 「は」で出した主題から述語まで 395 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7579
-    text: 一　目的
-    message: 「は」で出した主題から述語まで 328 字あります（200 字まで）
     verdict: unjudged
   - rule: defined-name-repeated
     line: 7609
     text: 報酬委員会の委員をいう。）、執行役又は代表執行役
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7628
-    text: 一　新設合併により消滅する会社が株式会社のみである場合　次に掲げる日のいずれか遅
-    message: 「は」で出した主題から述語まで 522 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7641
-    text: 一　新設合併により消滅する会社が株式会社のみである場合　次に掲げる日のいずれか遅
-    message: 「は」で出した主題から述語まで 290 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7657
-    text: 一　新設分割をする会社が株式会社のみである場合　次に掲げる日のいずれか遅い日
-    message: 「は」で出した主題から述語まで 672 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7670
-    text: 一　新設分割をする会社が株式会社のみである場合　次に掲げる日のいずれか遅い日
-    message: 「は」で出した主題から述語まで 441 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7684
-    text: 一　第八百四条第一項の株主総会の決議の日
-    message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 7724
-    text: 一　外国会社の設立の準拠法
-    message: 「は」で出した主題から述語まで 448 字あります（200 字まで）
-    verdict: unjudged
   - rule: defined-name-repeated
     line: 7769
     text: 報酬委員会の委員をいう。）、執行役又は代表執行役の職務を行うべき者の選任の裁判
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 7890
-    text: 一　財務諸表等が書面をもって作成されているときは、当該書面の閲覧又は謄写の請求
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 7912
-    text: 一　調査記録簿等が書面をもって作成されているときは、当該書面の写しの交付の請求
-    message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 7920
@@ -760,24 +305,4 @@ findings:
     line: 7945
     text: 報酬委員会の委員をいう。）、執行役又は代表執行役の職務を行うべき者
     message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: clause-chain
-    line: 8031
-    text: 一　第九百五十条の規定による届出をせず、又は虚偽の届出をした者
-    message: 一文に節が 11 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 8038
-    text: （過料に処すべき行為）
-    message: この段落は 41 文あります（12 文まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 8043
-    text: 四　この法律の規定に違反して、正当な理由がないのに、書類若しくは電磁的記録に記録
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 8080
-    text: 一　第九百四十六条第三項の規定に違反して、報告をせず、又は虚偽の報告をした者
-    message: 一文に節が 9 つつながっています（8 つまで）
     verdict: unjudged

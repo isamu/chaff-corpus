@@ -6,12 +6,6 @@ findings:
     text: "## The most recent version of this docum"
     message: Nothing under the heading "The most recent version of this document is published on GOV.UK"
     verdict: correct
-  - rule: demonstrative-opener-run
-    line: 17
-    text: This guidance is a reference architectur
-    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
-    verdict: false-positive
-    note: "'It' continuing the same subject as the sentence before is ordinary cohesion, not a run of demonstrative openers"
   - rule: vague-word-density
     line: 46
     text: let external users access the system whe

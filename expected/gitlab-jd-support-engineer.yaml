@@ -12,12 +12,6 @@ findings:
     text: ""
     message: Section "You've got the personality" has no number, code or link (3 of 18 sections)
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 77
-    text: you're a natural communicator and deligh
-    message: "\"you're a natural communicator and delight in using those skills to help others.\" opens with a verb; the other items in this list open with a noun phrase (1 of 3)"
-    verdict: false-positive
-    note: every item opens with 'you' and a verb (you're, you love, you enjoy); the contraction is read as a verb and the others as noun phrases
   - rule: name-variant
     line: 88
     text: ZenDesk and Salesforce.
@@ -101,12 +95,6 @@ findings:
     text: CMOC rotation who will engage ASE during
     message: '"CMOC" is used without an expansion (11 such acronyms)'
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 134
-    text: Partner with CSM (where allocated) in sc
-    message: '"Partner with CSM (where allocated) in scheduled review calls to discuss ticket priorities and progression" opens with a noun phrase; the other items in this list open with a verb (1 of 12)'
-    verdict: false-positive
-    note: an imperative verb that is also a noun (Partner) is read as a noun phrase
   - rule: undefined-acronym
     line: 144
     text: OR, Skip to the topics of interest to yo
@@ -147,4 +135,9 @@ findings:
     line: 189
     text: ""
     message: Section "Senior Support Engineer" has no number, code or link (3 of 18 sections)
+    verdict: unjudged
+  - rule: title-case-consistency
+    line: 241
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: unjudged

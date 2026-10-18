@@ -5,11 +5,6 @@ findings:
     line: 5
     sha256: 3a3cbcc55417150caf98ab11e299b0534b9a7eb7c6161ab7aaf7c6177313b7c9
     verdict: correct
-  - rule: numbering-gap
-    line: 15
-    sha256: 3db8ac65ba2bce39d81f9753a19a02a2ed8f40d020bda968ed7f5ae6aedf3107
-    verdict: false-positive
-    note: date subheadings in a timeline (8 December, 18 December) read as a numbered sequence
   - rule: all-caps-shouting
     line: 17
     sha256: 956a8ea2016f317286aaac4997d51772e74fdc029d6de44229fe73d88c38f2da
@@ -26,10 +21,18 @@ findings:
     verdict: unjudged
   - rule: unfilled-placeholder
     line: 48
-    what: the incident template's instruction line, marked optional, is left in the published report under Conclusions (and again at lines 55, 64, 71 and 77)
-    verdict: missed
-  - rule: empty-table-cell
-    line: 107
-    sha256: a7261420561c2458c73c6bb9468cd465d79716c52735b876322e8023ecdba21c
-    verdict: false-positive
-    note: the label cell spans two columns in the source; a Markdown table has no column span, so the converter leaves the second column empty
+    sha256: 0452b5d647c35e0416d975b254dcb8fc92aed22bf89ddd105ed7362bfe666833
+    verdict: correct
+    note: the incident template's instruction line, marked optional, is left in the published report under Conclusions (and again at lines 55, 64, 71 and 77); found by chaffjs 0.36.0
+  - rule: unfilled-placeholder
+    line: 55
+    sha256: eea6904c565d400018cac7f054ac825e73080be63f174aec58c093985bad4e52
+    verdict: correct
+  - rule: unfilled-placeholder
+    line: 64
+    sha256: eea6904c565d400018cac7f054ac825e73080be63f174aec58c093985bad4e52
+    verdict: correct
+  - rule: unfilled-placeholder
+    line: 71
+    sha256: eea6904c565d400018cac7f054ac825e73080be63f174aec58c093985bad4e52
+    verdict: correct

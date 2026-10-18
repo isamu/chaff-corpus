@@ -117,12 +117,6 @@ findings:
     text: の防止等のための措置に関する法律）｜こども家庭庁
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 110
-    text: こども性暴力防止法（学校設置者等及び民間教育保育等事業者による児童対象性暴力等の
-    message: 「こども性暴力防止法」を、114 行目の定義より前で使っています
-    verdict: false-positive
-    note: the use already carries the law's full name in brackets on the same line; the later line is a second gloss, not the first definition
   - rule: max-sentence-length
     line: 114
     text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
@@ -138,12 +132,6 @@ findings:
     text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
     message: 一文だけの段落が 5 個続いています（4 個まで）
     verdict: unjudged
-  - rule: number-style-consistency
-    line: 136
-    text: 三　人事委員会又は公平委員会の委員の職にあつて、第六十条から第六十三条までに規定
-    message: 数え方の数を「三　人」と書いています（この文書はふつう「1か月」の書き方。24 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 三 is the item number (号) of the quoted article, followed by 人事委員会; it was read as the count 三人
   - rule: max-kanji-continuous
     line: 146
     text: 二　教育職員免許法第十条第一項第二号又は第三号に該当することにより免許状がその効
@@ -163,16 +151,6 @@ findings:
     line: 159
     text: (PDF形式, 201.80KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。183 箇所のうち 4 箇所が違う）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 168
-    text: 12月29日から1月3日を除く。）
-    message: 「12月29日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 168
-    text: 1月3日を除く。）
-    message: 「1月3日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: orthographic-variant
     line: 168

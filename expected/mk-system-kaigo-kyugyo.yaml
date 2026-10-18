@@ -18,9 +18,10 @@ findings:
     verdict: correct
   - rule: orthographic-variant
     line: 12
-    what: 申し出の日 writes the noun 申し出, where the document writes the noun 申出 (休業の申出, 申出者)
-    verdict: missed
-    note: chaffjs 0.35.0 does not give it; isamu/lab#1285 does
+    text: 申し出の日から８週間以内に雇用関係が終了することが明らかな従業員
+    message: 「申し出」と書いています（この文書はふつう「申出」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: chaffjs 0.35.0 does not give it; isamu/lab#1285 does; found by chaffjs 0.36.0
   - rule: fullwidth-alnum-consistency
     line: 13
     text: ２日以下の従業員
@@ -85,4 +86,9 @@ findings:
     line: 58
     text: １号の事由が生じた場合には、申出者は原則として当該事由が生じた日に担当部門に上司
     message: 全角の「１」と書いています（この文書はふつう半角の「1」。37 箇所のうち 12 箇所が違う）
+    verdict: correct
+  - rule: known-misspelling
+    line: 59
+    text: 次の名号による。
+    message: 「次の名号」は「次の各号」の書き誤りです
     verdict: correct

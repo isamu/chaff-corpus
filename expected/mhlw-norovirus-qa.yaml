@@ -6,21 +6,6 @@ findings:
     text: たり、吐ぶつを誤って気道に詰まらせて死亡することがあります。
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 26
-    text: )食事の前やトイレの後などには、必ず手を洗いましょう。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 28
-    text: )下痢やおう吐等の症状がある方は、食品を直接取り扱う作業をしないようにしましょう
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 30
-    text: )胃腸炎患者に接する方は、患者のふん便や吐ぶつを適切に処理し、感染を広げないよう
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
   - rule: kutoten-consistency
     line: 33
     text: ，ページ内リンクQ17をご覧下さい）
@@ -61,40 +46,15 @@ findings:
     text: RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があること、ま
     message: 「RNA」が説明なしで使われています（説明のない略語 5 個）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 53
-    text: )患者のノロウイルスが大量に含まれるふん便や吐ぶつから人の手などを介して二次感染
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 54
-    text: )家庭や共同生活施設などヒト同士の接触する機会が多いところでヒトからヒトへ飛沫感
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 54
     text: (2)家庭や共同生活施設などヒト同士の接触する機会が多いところでヒトからヒトへ飛
     message: 「飛沫感染等直接感染」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 55
-    text: )食品取扱者（食品の製造等に従事する者、飲食店における調理従事者、家庭で調理を行
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 56
-    text: )汚染されていた二枚貝を、生あるいは十分に加熱調理しないで食べた場合
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
   - rule: number-style-consistency
     line: 56
     text: 二枚貝を、生あるいは十分に加熱調理しないで食べた場合
     message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 57
-    text: )ノロウイルスに汚染された井戸水や簡易水道を消毒不十分で摂取した場合
-    message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 65
@@ -120,11 +80,6 @@ findings:
     line: 102
     text: 資料：報告数は「感染症発生動向調査事業」に基づく全国約3,000の小児科医療機関
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 103
-    text: 一方、死亡数は厚生労働省統計情報部「人口動態統計」によるもので、死亡数は定点報告
-    message: 「厚生労働省統計情報部」は漢字が 10 字続いています（8 字まで）
     verdict: unjudged
   - rule: no-mixed-desumasu
     line: 105
@@ -211,11 +166,6 @@ findings:
     text: 二枚貝などの食品の場合は、中心部が85℃～90℃で90秒以上の加熱が望まれます。
     message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 201
-    text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
-    message: 括弧が 4 重になっています（2 重まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 201
     text: )が設立した、食品の国際基準を作る国際機関であるコーデックス委員会が2012年に
@@ -225,11 +175,6 @@ findings:
     line: 201
     text: )と世界保健機関（WHO)が設立した、食品の国際基準を作る国際機関であるコーデッ
     message: 括弧を「)」と書いています（この文書はふつう「）」。156 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 201
-    text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
-    message: 「国際連合食糧農業機関」は漢字が 10 字続いています（8 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 201
@@ -285,11 +230,6 @@ findings:
     line: 221
     text: なお、二枚貝などを取り扱うときは、専用の調理器具（まな板、包丁等）を使用するか、
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 223
-    text: （使用に当たっては「使用上の注意」を確認しましょう。）
-    message: 「の注意」を確認し」が 7 回出てきます（5 回まで）
     verdict: unjudged
   - rule: repeated-conjunction
     line: 231

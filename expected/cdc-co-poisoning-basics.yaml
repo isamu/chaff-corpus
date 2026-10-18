@@ -16,20 +16,10 @@ findings:
     text: ""
     message: Section "Reducing risk" has no number, code or link (5 of 9 sections)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 38
-    text: Check CO detector batteries when you cha
-    message: '"they are" is written differently from the rest of the document'
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 44
     text: ""
     message: Section "Oil and gas furnaces and other household appliances" has no number, code or link (5 of 9 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 60
-    text: ""
-    message: Section "Chimneys, charcoal, and portable appliances" has no number, code or link (5 of 9 sections)
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 64
@@ -40,9 +30,4 @@ findings:
     line: 64
     text: " - red, gray, black, or white - gives of"
     message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 66
-    text: Do not use portable flameless chemical h
-    message: '"do not" is written differently from the rest of the document'
     verdict: unjudged

@@ -1,20 +1,15 @@
 id: github-terms-of-service
 chaff: 0.33.0
 findings:
+  - rule: contraction-consistency
+    line: 17
+    text: We're happy you're here. Please read thi
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
   - rule: use-before-definition
     line: 17
     text: Terms of Service agreement carefully bef
     message: '"Terms of Service" is used here, before it is defined on line 52'
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 19
-    text: "## Summary"
-    message: The heading "Summary" has no number, while 19 of its siblings do ("A. Definitions")
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 43
-    text: "## The GitHub Terms of Service"
-    message: The heading "The GitHub Terms of Service" has no number, while 19 of its siblings do ("A. Definitions")
     verdict: unjudged
   - rule: quote-style-consistency
     line: 51
@@ -31,6 +26,11 @@ findings:
     text: promptly notify GitHub by contacting us
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 153
+    text: To the extent this agreement is not enfo
+    message: "\"is not\" is written \"isn't\" elsewhere in the document"
+    verdict: unjudged
   - rule: defined-term-form
     line: 163
     text: affiliates).
@@ -40,4 +40,19 @@ findings:
     line: 211
     text: https://github.com/logos.
     message: The URL "https://github.com/logos" is written bare (60 worded links in this document)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 284
+    text: You promise not to disclose, publish, or
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 325
+    text: If you do, we'll treat your information
+    message: "\"we'll\" is written \"we will\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 402
+    text: Short version:** _We want our users to b
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: unjudged

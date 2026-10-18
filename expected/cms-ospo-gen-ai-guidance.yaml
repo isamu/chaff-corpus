@@ -26,21 +26,3 @@ findings:
     text: Test suite, linters, style guides ensure
     message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: correct
-  - rule: undefined-acronym
-    line: 112
-    text: "CMS Technical Review Architecture: AI Co"
-    message: '"CMS" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
-  - rule: undefined-acronym
-    line: 113
-    text: NASA Fprime AI Policy](https://fprime.jp
-    message: '"NASA" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
-  - rule: undefined-acronym
-    line: 114
-    text: "LLM-backed Generative AI Systems](https:"
-    message: '"LLM" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the acronym is part of a linked external page's title, which the document quotes and cannot change

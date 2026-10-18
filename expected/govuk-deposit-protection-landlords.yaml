@@ -1,12 +1,6 @@
 id: govuk-deposit-protection-landlords
 chaff: 0.34.0
 findings:
-  - rule: heading-numbering-mix
-    line: 1
-    text: "# Deposit protection schemes and landlor"
-    message: The heading "Deposit protection schemes and landlords" has no number, while 4 of its siblings do ("1. Overview")
-    verdict: false-positive
-    note: the page title (h1) is read as a sibling of the guide's numbered part headings (1. Overview)
   - rule: hyphen-as-dash
     line: 29
     text: " - known as a ‘custodial’ scheme"
@@ -19,12 +13,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: contraction-consistency
-    line: 40
-    text: If you’re in an ‘insured’ scheme, you or
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
   - rule: hyphen-as-dash
     line: 60
     text: " - for example, because your tenants dam"

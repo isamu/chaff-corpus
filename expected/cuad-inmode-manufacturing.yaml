@@ -26,16 +26,6 @@ findings:
     text: POB 533, Yokneam 20692, Israel. Hereinaf
     message: '"POB" is used without an expansion (36 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 3
-    text: INMODE LTD., F-1/A, 7/29/2019
-    message: '"INMODE" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 3
-    text: LTD., F-1/A, 7/29/2019
-    message: '"LTD" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 9
     text: " - Any additional information reasonably"
@@ -150,16 +140,6 @@ findings:
     line: 19
     text: (unless the charge was approved by Custo
     message: '"(" is never closed'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 19
-    text: LLI's to be approved by the Customer. Co
-    message: '"LLI" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 29
-    text: FGI, in a minimum level of two (2) weeks
-    message: '"FGI" is used without an expansion (36 such acronyms)'
     verdict: unjudged
   - rule: vague-deadline
     line: 29
@@ -343,11 +323,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 139
-    text: II Controller Card As Fan Rework Assy Fr
-    message: '"II" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 139
     text: PRO InMode System 2 Color 2 Triton Fract
     message: '"PRO" is used without an expansion (36 such acronyms)'
     verdict: unjudged
@@ -363,18 +338,8 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 147
-    text: BODY TITE (AS601206A) BODY TITE (AS60120
-    message: '"BODY" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 147
     text: DUMMY Heat Exchanger washing Jig Diolaze
     message: '"DUMMY" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 147
-    text: EARTH Continuity tester TOS6210 Tester c
-    message: '"EARTH" is used without an expansion (36 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 147

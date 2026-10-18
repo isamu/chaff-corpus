@@ -61,11 +61,6 @@ findings:
     text: https://weatherattributioncenter.jp/anal
     message: URL「https://weatherattributioncenter.jp/analyses/extreme-heat-July2026/」の直後に「）」が続いています。リンクがそこまで伸びます
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 48
-    text: 気象庁大気海洋部気候情報課　藤川、経田
-    message: 「気象庁大気海洋部気候情報課」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 53
     text: 7月中旬～下旬の顕著な高温と今後の見通しについて[PDF形式:500KB]

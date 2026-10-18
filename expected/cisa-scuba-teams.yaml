@@ -137,10 +137,6 @@ findings:
     line: 411
     sha256: 802c2d6ae95463f615e9d60a4ced9301542a515dacfaff93fbc800893325c9b5
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 415
-    sha256: b5a82ca0d2592d27a29c1c2cd54f874762be51553d3be40c921e2069175b903d
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 415
     sha256: 4e30c0ffeec7d9c22413bbc3d7c81bb53936fdab0cd3be64d12cf91f2475329a
@@ -148,10 +144,6 @@ findings:
   - rule: ui-label-variant
     line: 425
     sha256: 27bc2765a72a948a500470348cf1cfd367215a2983326afb15040ab3162c724e
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 435
-    sha256: b5a82ca0d2592d27a29c1c2cd54f874762be51553d3be40c921e2069175b903d
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 435
@@ -164,10 +156,6 @@ findings:
   - rule: ui-label-variant
     line: 447
     sha256: 27bc2765a72a948a500470348cf1cfd367215a2983326afb15040ab3162c724e
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 453
-    sha256: b5a82ca0d2592d27a29c1c2cd54f874762be51553d3be40c921e2069175b903d
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 453
@@ -260,10 +248,6 @@ findings:
   - rule: vague-word-density
     line: 693
     sha256: c211536cf87a64c51485f933bcf5f1641073bf30c1236f6340ee67c1c884006b
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 695
-    sha256: 74fd7660806eacb3aa85cc03fdff0b63655cad323a794ae7493c3238ef8605c0
     verdict: unjudged
   - rule: heading-level-skip
     line: 704

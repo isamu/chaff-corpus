@@ -161,11 +161,6 @@ findings:
     text: 'Note: "Text taken from D. Kasprzyk, “Cha'
     message: This sentence runs 170 words (limit 50)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1955
-    text: NECTA divisions
-    message: '"NECTA" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: name-variant
     line: 1959
     text: Plano–Irving, TX, Metropolitan Division

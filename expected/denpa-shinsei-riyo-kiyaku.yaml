@@ -23,15 +23,11 @@ findings:
     verdict: unjudged
   - rule: requirement-smell
     line: 73
-    sha256: 363335093a877145f87ae3eff03d0908a4a5878ecc998376e2288bf82b02101b
+    sha256: a479a500cf150b1a41d26bcc1f99d16093288bdbe578ced5e3feb98de9022062
     verdict: unjudged
   - rule: requirement-smell
     line: 77
     sha256: 9aa6ad1dcc9344f44baf846a8cba1b9df2fc42c7443f87ddbb56f0dedb262de4
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 79
-    sha256: a7c2a13b5a4b9e357f521ecf3cc85f81e81c2516fc909099966ab5a37f22be28
     verdict: unjudged
   - rule: requirement-smell
     line: 99
@@ -50,18 +46,6 @@ findings:
     sha256: dfe8efbff9f4bdfc22244d27107cd93c352b00ac11eed4ca94ef6484578aae7b
     verdict: unjudged
   - rule: requirement-smell
-    line: 168
-    sha256: afa5cfaf8fe01e5d1cc0a3b80ceab53efbd97cc2501c9e5bdb3b2563e8c9415d
-    verdict: unjudged
-  - rule: requirement-smell
     line: 178
     sha256: 4ce0752c777b67e2ff820581fcaf7f7671e273672ad586e5f1c685932faf592b
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 202
-    sha256: fe5b86681be93d1fc5b12cd8d31df7b0f4a322f25749c1a5725034dd8a5ee4c5
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 212
-    sha256: 2c9feab7366480fa1c544410a01ececc1b9e0a82599912057288299595196d9a
     verdict: unjudged

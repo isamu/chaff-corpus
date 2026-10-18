@@ -7,17 +7,16 @@ findings:
     message: 最初の見出しまでに 6 段落あります（2 段落まで）
     verdict: false-positive
     note: site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose
-  - rule: max-sentence-length
-    line: 21
-    text: ・インターネットへ接続する機器のソフトウェアの更新
-    message: この文は 288 文字あります（140 文字まで）
-    verdict: false-positive
-    note: bulleted lines with no 。 are joined into one 288-character 'sentence'
+  - rule: request-without-deadline
+    line: 28
+    text: 不審なメールには対応せず、社内で確認をお願いします
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
   - rule: missing-final-period
     line: 42
-    text: す
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。4 段落のうち 1 段落）
-    verdict: correct
+    what: the paragraph ends without 。 where the document's paragraphs usually end with 。
+    verdict: missed
+    note: correct in chaffjs 0.35.0, lost in 0.36.0; why not established (likely the new one-list-item-per-paragraph reading)
   - rule: bracket-width-consistency
     line: 46
     text: (代表)

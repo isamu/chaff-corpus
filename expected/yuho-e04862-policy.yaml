@@ -42,12 +42,6 @@ findings:
     text: めざしてまいります。（３）経営上の目標の達成状況を判断するための客観的な指標等当
     message: 「めざす」と書いています（この文書はふつう「目指す」と書く語です。6 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: orthographic-variant
-    line: 1
-    text: 取組みを実施してまいります。⑤海外事業海外各拠点におけるパートナー戦略を含めた営
-    message: 「取組む」と書いています（この文書はふつう「取り組む」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the noun 取組み and the verb 取り組む take different okurigana by the official rules
   - rule: teki-overuse
     line: 1
     text: また、企業価値の持続的な向上には、環境や社会のサステナビリティに関する課題に対し

@@ -11,68 +11,8 @@ findings:
     text: promptly notify <span class="orderform_l
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: correct
-  - rule: vague-word-density
-    line: 6
-    text: Customer</span> will promptly notify <sp
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 7
-    text: Provider</span> may copy, display, modif
-    message: '"as needed" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: obligation-without-deadline
     line: 20
     text: return or destroy Discloser’s Confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 23
-    text: Each Recipient may retain Discloser’s Co
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 33
-    text: Except as otherwise authorized in the Ag
-    message: '"as needed" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 33
-    text: In addition, Recipient will protect Disc
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 35
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 35
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 41
-    text: As a result, upon the actual or threaten
-    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 41
-    text: Despite Section 7.3 (Governing Law and C
-    message: '"adequately" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 55
-    text: '"Confidential Information"** means infor'
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 62
-    text: '"Force Majeure Event"** means an unfores'
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 63
-    text: '"High Risk Activity"** means any situati'
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged

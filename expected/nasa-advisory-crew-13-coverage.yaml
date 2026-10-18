@@ -1,11 +1,6 @@
 id: nasa-advisory-crew-13-coverage
 chaff: 0.33.0
 findings:
-  - rule: undefined-acronym
-    line: 9
-    text: MEDIA ADVISORYM26-071
-    message: '"MEDIA" is used without an expansion (8 such acronyms)'
-    verdict: unjudged
   - rule: heading-level-skip
     line: 11
     text: "### Kennedy Space Center"

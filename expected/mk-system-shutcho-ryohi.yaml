@@ -16,17 +16,23 @@ findings:
     text: 及び航空機の利用は、他の交通手段が存在せず利用せざるを得ない、又は、利用した方が
     message: 「及び」と書いています（この文書はふつう「および」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
+  - rule: known-misspelling
+    line: 36
+    text: 自家用車自動車を利用した出張は原則として認めない。事情により自動車による出張を行
+    message: 「自家用車」は「自家用」の書き誤りです
+    verdict: correct
+    note: 自家用車自動車 is a slip for 自家用自動車, the form the next item uses
   - rule: connective-hierarchy
     line: 37
     text: 並びにカーシェアを利用した出張を行った際、その運転者に対して日当を支給する。
     message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
     verdict: correct
+  - rule: kutoten-consistency
+    line: 37
+    what: an ASCII comma between Japanese words (自家用自動車,社用車) where the document writes 、
+    verdict: missed
   - rule: yori-as-from
     line: 65
     text: より施行する。
     message: 起点の「より」は「から」と書けます
     verdict: correct
-  - rule: kutoten-consistency
-    line: 37
-    what: an ASCII comma between Japanese words (自家用自動車,社用車) where the document writes 、
-    verdict: missed

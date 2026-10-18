@@ -241,11 +241,6 @@ findings:
     text: の状況の分析】(1)経営成績等の状況の概要当連結会計年度における当社グループの財
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 1
-    text: 見込み通り発生しない場合には、繰延税金資産の回収可能性について再度検討する必要が
-    message: 「見込み」と書いています（この文書はふつう「見込」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: padded-intro
     line: 1
     text: こうした中で、当社グループを取り巻く市場環境としては、近年は気候変動の影響もあり

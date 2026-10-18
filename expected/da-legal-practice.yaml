@@ -41,8 +41,3 @@ findings:
     text: " の高度化の一環で、法令APIの機能拡張のプロトタイプ（法令APIプロトタイプ）"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。28 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 71
-    text: デジタル臨時行政調査会作業部会 法制事務のデジタル化検討チーム（廃止）
-    message: 「臨時行政調査会作業部会」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged

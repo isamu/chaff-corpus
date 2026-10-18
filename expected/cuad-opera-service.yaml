@@ -12,12 +12,6 @@ findings:
     message: This paragraph runs 14 sentences (limit 8)
     verdict: correct
     note: "extraction artefact: the PDF text joins a whole page into one line, so chaff sees one long paragraph; chaff is right about the text as extracted"
-  - rule: undefined-acronym
-    line: 1
-    text: HDFC Bank, New Delhi ("PC Financial"), a
-    message: '"HDFC" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: HDFC is part of a bank's proper name (HDFC Bank), not an acronym the document should expand
   - rule: max-paragraph-length
     line: 7
     text: 2.2 Mobimagic will provide the system /
@@ -79,17 +73,6 @@ findings:
     text: fulfillment of this Agreement. Each Part
     message: '"fulfillment" here, where the document usually spells it "fulfilment" (1 of 3)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 25
-    text: PCF Indemnified Parties") against any co
-    message: '"PCF" is used without an expansion (3 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 25
-    text: TERM & TERMINATION 9.1 The Agreement sha
-    message: '"TERM" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: an all-caps clause heading (9. TERM & TERMINATION) read as an acronym; the heading was run into the text by extraction
   - rule: vague-deadline
     line: 25
     text: promptly inform Mobimagic in writing of
@@ -106,9 +89,3 @@ findings:
     message: This paragraph runs 19 sentences (limit 8)
     verdict: correct
     note: "extraction artefact: numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
-  - rule: unknown-word
-    line: 31
-    text: thereunder in force as on that date. The
-    message: '"thereunder" is not in the dictionary; did you mean "hereunder"?'
-    verdict: false-positive
-    note: thereunder is a standard legal word missing from the dictionary

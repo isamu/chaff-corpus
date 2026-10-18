@@ -46,11 +46,6 @@ findings:
     text: ⼈インフォメーションギャップバスター 理事⻑）
     message: 「⼈」（U+2F08）は部首の字です。ふつうの「人」と書きます
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 35
-    text: NPO法⼈インフォメーションギャップバスター 理事⻑）
-    message: 「NPO」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
   - rule: lookalike-character
     line: 36
     text: ⼠通株式会社 デザインセンター⻑）
@@ -60,16 +55,6 @@ findings:
     line: 38
     text: HCD推進グループ）
     message: 「HCD」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 39
-    text: NTTコミュニケーションズ株式会社 イノベーションセンター（KOEL） Head
-    message: 「NTT」が説明なしで使われています（説明のない略語 6 個）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 40
-    text: 長谷川 敦士（武蔵野美術大学造形構想学部 教授、株式会社コンセント 代表取締役）
-    message: 「武蔵野美術大学造形構想学部」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
   - rule: lookalike-character
     line: 41

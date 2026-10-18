@@ -25,6 +25,10 @@ findings:
     line: 4
     sha256: 46111d6e2a40a0b86420ace25545c22aad7eca1504d66a390d94081b0b593b8a
     verdict: unjudged
+  - rule: orthographic-variant
+    line: 4
+    sha256: 1bf75128410579f2331e674fae4bcd2b636b2ec67be5b69f1430bd4ef94436cc
+    verdict: unjudged
   - rule: stray-space
     line: 6
     sha256: 2227c3b52abdf6a32922cbcfc8054bfa610bacaf48e90ebb37f17f5a1200f586

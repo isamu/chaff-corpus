@@ -13,6 +13,14 @@ findings:
     line: 49
     sha256: 6cb1d0d161f31553fe912a1e33b8bb6784f783b7c83c4cdc5b79214256840e3a
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 91
+    sha256: 84ba103a8105c3a56aa4491cb76e456dfaeeeda8f0b948ff71bad5d024543797
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 126
+    sha256: 24b9d2e4ca2ff3b8d820ec6c44050e19376ea22566e0978438b2275e62bb0cde
+    verdict: unjudged
   - rule: list-marker-mix
     line: 211
     sha256: 432e112f47309176ca85d33e977b7cebf07c08a970ff195b9ac9477f96f37e01
@@ -20,6 +28,10 @@ findings:
   - rule: undefined-acronym
     line: 256
     sha256: 763e1e6165d2bd2f9fa93a26d75f408fe6c15bf36a58c13e9594549e26d5a054
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 333
+    sha256: 67e0e9d50b71eab8e8c934bcb52ad294f1aa607885596323882d8101bdf51b90
     verdict: unjudged
   - rule: which-that-consistency
     line: 372
@@ -33,9 +45,17 @@ findings:
     line: 413
     sha256: f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 425
+    sha256: 1839dddb92b2d747915232132aec337f560dbd3d2db8c16f9ce9f82e17af9837
+    verdict: unjudged
   - rule: undefined-acronym
     line: 472
     sha256: 10c58a90ab1e370603e7829f8dc27e0f71219d56a330b8bfbacda54ebcb6d955
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 499
+    sha256: ab77b95579f7fb2b563cc9e82b431e3d18d40b1d4233e143694143d3d90a003c
     verdict: unjudged
   - rule: heading-level-skip
     line: 513
@@ -52,10 +72,6 @@ findings:
   - rule: empty-list-item
     line: 584
     sha256: 7cfbbb94acc9c5b7f92afbd7097ef34502b016e84823da3af78ed0065c552787
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 592
-    sha256: 915af240985c4b7c298b0fe3ceb8c62bf9d32c5ac7abc3fd6116e4f89da5bc6c
     verdict: unjudged
   - rule: heading-level-skip
     line: 610

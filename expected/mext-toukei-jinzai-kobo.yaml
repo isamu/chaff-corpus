@@ -1,12 +1,6 @@
 id: mext-toukei-jinzai-kobo
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 5
-    text: 「令和8年度高度統計人材育成強化拠点形成事業」について、公募を開始します。
-    message: 「高度統計人材育成強化拠点形成事業」は漢字が 16 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a ministry programme (proper noun), quoted
   - rule: bracket-width-consistency
     line: 13
     text: (DX)の鍵となるといわれてきました。昨今では、加速度的に進化する生成AIをはじ
@@ -87,9 +81,3 @@ findings:
     text: 本事業を通じ、(ⅰ)高度統計人材の中心となる統計学を指導・教育できる研究者である
     message: この文は 177 文字あります（140 文字まで）
     verdict: correct
-  - rule: heading-numbering-mix
-    line: 48
-    text: "## お問合せ先"
-    message: 見出し「お問合せ先」だけ番号がありません（兄弟の見出しは「1.公募期間」など 5 個が番号付き）
-    verdict: false-positive
-    note: the closing contact block (お問合せ先) after the numbered sections; notices leave it unnumbered by convention

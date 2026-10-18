@@ -11,13 +11,13 @@ findings:
     text: CFR title and the number of each part th
     message: '"CFR" is used without an expansion (3 such acronyms)'
     verdict: false-positive
-    note: "the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice"
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: undefined-acronym
     line: 8
     text: RIN which identifies each regulatory act
     message: '"RIN" is used without an expansion (3 such acronyms)'
     verdict: false-positive
-    note: "the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice"
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: max-sentence-length
     line: 26
     text: The Department of Transportation (DOT),
@@ -28,27 +28,21 @@ findings:
     text: ​airport-infrastructure/​fct by followin
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
-    note: "the source puts zero-width spaces inside the URL; copying it gives a broken address"
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
     line: 34
     text: ​bil/​airport-infrastructure/​fct by fol
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
-    note: "the source puts zero-width spaces inside the URL; copying it gives a broken address"
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
     line: 34
     text: ​fct by following the instructions under
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
-    note: "the source puts zero-width spaces inside the URL; copying it gives a broken address"
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: max-sentence-length
     line: 42
     text: The IIJA established the FCT Competitive
     message: This sentence runs 74 words (limit 45)
     verdict: correct
-  - rule: undefined-acronym
-    line: 52
-    text: FR Doc. 2026-19328 Filed 9-21-26; 8:45 a
-    message: '"FR" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: "the Federal Register's fixed filing stamp ([FR Doc. ... Filed ...]); FR is the publication itself"

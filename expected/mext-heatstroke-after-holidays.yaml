@@ -26,11 +26,6 @@ findings:
     text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中
     message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 9
-    text: 各都道府県・指定都市教育委員会学校安全主管課
-    message: 「各都道府県教育委員会専修学校主管課」は漢字が 17 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 9
     text: 各都道府県・指定都市教育委員会学校安全主管課
@@ -86,11 +81,6 @@ findings:
     text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 34
-    text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
-    message: 「各文部科学大臣所轄学校法人担当課」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 34
     text: 各都道府県・指定都市教育委員会におかれては、所管の学校（専修学校を含む。以下同じ
@@ -104,17 +94,7 @@ findings:
   - rule: vague-word-density
     line: 35
     text: なお、学校における働き方改革の観点から、別添2のチェックリストを効果的に周知・活
-    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 35
-    text: なお、学校における働き方改革の観点から、別添2のチェックリストを効果的に周知・活
     message: 「必要に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 41
-    text: ・　休業日明け等の子供たちの体がまだ暑さや学校における様々な活動等に慣れていない
-    message: この段落は 13 文あります（5 文まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 41
@@ -137,8 +117,8 @@ findings:
     message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
   - rule: vague-word-density
-    line: 43
-    text: （暑さ指数に応じた活動実施の目安の例は別添4を参照）
+    line: 44
+    text: ・　活動中やその前後に適切な水分・塩分補給や休憩ができる環境を整えること。
     message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
   - rule: vague-word-density
@@ -186,35 +166,35 @@ findings:
     text: 熱中症を防止するためには、登下校時を含め、児童生徒等が自ら体調管理等を行うことが
     message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: clause-chain
-    line: 67
-    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
-    message: 一文に節が 7 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: max-sentence-length
-    line: 67
-    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
-    message: この文は 525 文字あります（140 文字まで）
+    line: 69
+    text: ・　運動するときはその前後も含めて適切に水分を補給し休憩をとること、汗をかく際に
+    message: この文は 143 文字あります（140 文字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 67
-    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
-    message: 「は」で出した主題から述語まで 486 字あります（80 字まで）
+    line: 69
+    text: ・　運動するときはその前後も含めて適切に水分を補給し休憩をとること、汗をかく際に
+    message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
     verdict: unjudged
   - rule: vague-word-density
-    line: 67
-    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
+    line: 69
+    text: ・　運動するときはその前後も含めて適切に水分を補給し休憩をとること、汗をかく際に
     message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: vague-word-density
-    line: 67
-    text: ・　休業日明け等の体がまだ暑さや学校における様々な活動等に慣れていない時期は熱中
-    message: 「なるべく」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+  - rule: max-sentence-length
+    line: 71
+    text: ・　児童生徒等の腹部に水筒がある状態で転倒した場合、内臓を損傷する等重篤な事故が
+    message: この文は 143 文字あります（140 文字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 71
     text: 置くようにすること（詳細は別添1のとおり）
     message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 71
+    text: ・　児童生徒等の腹部に水筒がある状態で転倒した場合、内臓を損傷する等重篤な事故が
+    message: 「なるべく」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 79
@@ -245,9 +225,4 @@ findings:
     line: 90
     text: 追補版は、気候変動適応法等の一部を改正する法律の施行による制度の概要や最近の事故
     message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 97
-    text: ○文部科学省・スポーツ庁
-    message: この文は 271 文字あります（140 文字まで）
     verdict: unjudged

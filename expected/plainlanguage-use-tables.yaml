@@ -6,11 +6,6 @@ findings:
     text: You can shorten and clarify complex mate
     message: 4 paragraphs before the first heading (limit 2)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 31
-    text: And for most readers, it's not necessary
-    message: "\"it's\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: dangling-reference
     line: 51
     text: § 163.25(e) of this part, the amount of

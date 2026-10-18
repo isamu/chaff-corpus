@@ -51,11 +51,6 @@ findings:
     text: So, we should actually refer to this as
     message: 2 sentences open with "So," (1 needed)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 108
-    text: "Exception: cloud.gov does not directly n"
-    message: '"does not" is written differently from the rest of the document'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 108
     text: US-CERT. That is handled by
@@ -85,11 +80,6 @@ findings:
     line: 193
     text: If the incident involved exposure of inf
     message: This sentence runs 62 words (limit 45)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 195
-    text: AWS instances, you can leave the instanc
-    message: '"AWS" is used without an expansion (10 such acronyms)'
     verdict: unjudged
   - rule: contraction-consistency
     line: 197

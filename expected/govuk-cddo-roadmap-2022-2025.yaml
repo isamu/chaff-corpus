@@ -21,15 +21,15 @@ findings:
     text: " - presenting us with new challenges and"
     message: '"-" stands in for a dash'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 25
+    text: I also believe it is essential we stay a
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: unjudged
   - rule: concrete-evidence-density
     line: 29
     text: ""
     message: Section "Message from Paul Willmott, Executive Chair, Central Digital and Data Office" has no number, code or link (3 of 32 sections)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 65
-    text: HM Revenue and Customs is working with a
-    message: '"HM" is used without an expansion (9 such acronyms)'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 69

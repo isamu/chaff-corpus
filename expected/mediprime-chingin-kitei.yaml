@@ -26,24 +26,6 @@ findings:
     text: ｡
     message: 半角の片仮名「｡」があります（全角は「。」）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 145
-    text: )　+ 減額対象外の賃金
-    message: 括弧を「)」と書いています（この文書はふつう「）」。13 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (1 - …))
-  - rule: bracket-width-consistency
-    line: 147
-    text: (労働時間 ÷ 月平均所定労働時間)　+ 減額対象外の賃金
-    message: 括弧を「(」と書いています（この文書はふつう「（」。13 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (…))
-  - rule: bracket-width-consistency
-    line: 147
-    text: )　+ 減額対象外の賃金
-    message: 括弧を「)」と書いています（この文書はふつう「）」。13 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: half-width parentheses inside an arithmetic formula (減額対象の賃金 × (…))
   - rule: yori-as-from
     line: 151
     text: より施行する。

@@ -8,61 +8,14 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 5
-    text: 1949年５月東京証券取引所市場第一部に上場。1961年９月京三金属工業株式会社
-    message: 「月東京証券取引所市場第一部」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 1961年９月京三金属工業株式会社を設立。 大阪証券取引所市場第一部に上場。19
-    message: 「月京三金属工業株式会社」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
     text: 1962年12月京三電設工業株式会社（現　京三エレコス株式会社）を設立。1964
     message: 「月京三電設工業株式会社」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 1971年３月台湾京三股份有限公司を設立。1972年５月京三エンジニアリングサー
-    message: 「月台湾京三股份有限公司」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 2018年４月京三金属工業株式会社を吸収合併する。2020年２月Kyosan E
-    message: 「月京三金属工業株式会社」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 大阪証券取引所市場第一部に上場。1962年12月京三電設工業株式会社（現　京三エ
-    message: 「大阪証券取引所市場第一部」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 5
     text: ２ 【沿革】1917年９月商号を東京電機工業株式会社と称し、東京神田淡路町に創立
     message: この段落は 27 文あります（5 文まで）
     verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 5
-    text: 1921年信号装置の製作販売を開始し、漸次この事業に転換する。1926年９月商号
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: a 沿革 chronology (date + event per row) is read as prose; its entries are noun-ended by form
-  - rule: no-mixed-desumasu
-    line: 5
-    text: 2014年７月京三精機株式会社と京三化工株式会社の合併により、京三精機株式会社が
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 5
-    text: 2018年４月京三金属工業株式会社を吸収合併する。2020年２月Kyosan E
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: taigen-dome-in-prose
-    line: 5
-    text: ２ 【沿革】1917年９月商号を東京電機工業株式会社と称し、東京神田淡路町に創立
-    message: 本文に体言止めが 24 文あります（4 文まで）
-    verdict: false-positive
-    note: a 沿革 chronology (date + event per row) is read as prose; its entries are noun-ended by form
   - rule: katakana-long-vowel
     line: 13
     text: パワ－エレクトロニクス事業100―02なし信号保安装置の設計施工・委託加工なしK
@@ -348,17 +301,6 @@ findings:
     text: の課題である気候変動の緩和のための取り組みを推進しリスクの低減を図るとともに、脱
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: unjudged
-  - rule: person-consistency
-    line: 25
-    text: 本社・工場を拠点としております。本社については免震構造、工場については耐震構造の
-    message: 「本社」と書いています（この文書はふつう「当社」。16 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: 本社 here is the head-office site (本社（東京都江東区）), not the company referring to itself
-  - rule: person-consistency
-    line: 25
-    text: 本社については免震構造、工場については耐震構造の建屋としており、大型の地震発生に
-    message: 「本社」と書いています（この文書はふつう「当社」。16 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
     text: また、現地従業員のための安全マニュアル等の整備を図っておりますが、当該国・地域の
@@ -414,12 +356,6 @@ findings:
     text: TCFD：Task Force on Climate-relatedFinanc
     message: 「TCFD」が説明なしで使われています（説明のない略語 4 個）
     verdict: unjudged
-  - rule: total-mismatch
-    line: 29
-    text: 6,655百万円であります。研究開発につきましては、事業戦略の上で急務となってお
-    message: 合計「6,655百万円」が、内訳の金額の和（6,654,000,000円）と合いません
-    verdict: false-positive
-    note: each figure is rounded to 百万円, so the parts can miss the total by one unit
   - rule: max-kanji-continuous
     line: 33
     text: その主なものは経常的な更新、現在の経済環境に対応する省力化・合理化投資および本社
@@ -541,11 +477,6 @@ findings:
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度(2022
     message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 93
-    text: 当社は、連結財務諸表等の適正性を確保するために公益財団法人財務会計基準機構へ加入
-    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
-    verdict: unjudged
   - rule: latin-spacing
     line: 97
     text: " 固定資産    有形固定資産     建物及び構築物（純額）10,41510,"
@@ -606,11 +537,6 @@ findings:
     line: 113
     text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
     message: この文は 967 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 113
-    text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
-    message: この文に中黒が 7 個あります（5 個まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 117

@@ -1,12 +1,6 @@
 id: nodejs-governance
 chaff: 0.35.0
 findings:
-  - rule: undefined-acronym
-    line: 92
-    text: README](./README.md#current-project-team
-    message: '"README" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: README is a file name, not an acronym
   - rule: title-case-consistency
     line: 178
     text: ""

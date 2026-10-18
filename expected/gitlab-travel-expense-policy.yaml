@@ -52,6 +52,11 @@ findings:
     text: " , and adding any other additional docum"
     message: A space before ","
     verdict: correct
+  - rule: contraction-consistency
+    line: 81
+    text: When booking travel in Navan, it's impor
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 83
     text: " - any travel for internal meetings or e"
@@ -88,6 +93,11 @@ findings:
     message: The heading "4.1 TRAVEL RELATED EXPENSES" is numbered, while 9 of its siblings are not ("Car Rental")
     verdict: correct
     note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
+  - rule: contraction-consistency
+    line: 142
+    text: If the Team Member knows they won't be a
+    message: "\"won't\" is written \"will not\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 175
     text: " - Collision Damage Waiver**"
@@ -201,8 +211,10 @@ findings:
     note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
   - rule: numbering-gap
     line: 346
-    what: section 4.1 is numbered twice (4.1 TRAVEL RELATED EXPENSES on line 103, 4.1 NON-TRAVEL RELATED EXPENSES here), and 4.3 follows; this one should be 4.2
-    verdict: missed
+    text: "### 4.1 NON-TRAVEL RELATED EXPENSES"
+    message: '"4.1" appears twice and the next number skips; the second is probably "4.2"'
+    verdict: correct
+    note: section 4.1 is numbered twice (4.1 TRAVEL RELATED EXPENSES on line 103, 4.1 NON-TRAVEL RELATED EXPENSES here), and 4.3 follows; this one should be 4.2; found by chaffjs 0.36.0
   - rule: orthographic-variant
     line: 370
     text: Coworking space is reimbursable for mont
@@ -263,18 +275,17 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: contraction-consistency
+    line: 419
+    text: Although we don't want to put any restri
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 420
     text: " - Essential items which you will need t"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: date-without-year
-    line: 434
-    text: December 31).
-    message: '"December 31" has no year, and the dates around it cross the turn of a year'
-    verdict: false-positive
-    note: "'January 1 to December 31' names every calendar year, a recurring period that takes no year"
   - rule: heading-numbering-mix
     line: 441
     text: "## Approved WFH Equipment List"
@@ -299,12 +310,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: name-variant
-    line: 514
-    text: GitLab GmbH (Germany) should refer to th
-    message: '"GitLab GmbH" is written "GitLab Ltd", with another company form, elsewhere in the document'
-    verdict: false-positive
-    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
   - rule: currency-notation-consistency
     line: 542
     text: 5,000 USD and which cannot be paid throu
@@ -349,30 +354,6 @@ findings:
     message: The heading "4.4 Reimbursement Payout Timelines" is numbered, while 11 of its siblings are not ("Office Supplies")
     verdict: correct
     note: numbered and unnumbered headings are mixed at one level (4.1/4.3/4.4/4.5 beside Car Rental, Hotels …; 'Approved WFH Equipment List' beside '1. POLICY')
-  - rule: name-variant
-    line: 698
-    text: GitLab Inc, GitLab Federal, GitLab Ltd (
-    message: '"GitLab Inc" is written "GitLab Ltd", with another company form, elsewhere in the document'
-    verdict: false-positive
-    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
-  - rule: name-variant
-    line: 698
-    text: GitLab LTD (Ireland), GitLab Israel Ltd.
-    message: '"GitLab LTD" is written "GitLab Ltd" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: different subsidiaries (GitLab GmbH, GitLab Inc, GitLab Ltd (UK), GitLab LTD (Ireland)) are read as variants of one company name
-  - rule: undefined-acronym
-    line: 698
-    text: PTE. LTD. are reimbursed via Navan withi
-    message: '"PTE" is used without an expansion (15 such acronyms)'
-    verdict: false-positive
-    note: PTE / PTY are company-form suffixes in a legal entity name, not acronyms to expand
-  - rule: undefined-acronym
-    line: 698
-    text: PTY Ltd (Australia and New Zealand), Git
-    message: '"PTY" is used without an expansion (15 such acronyms)'
-    verdict: false-positive
-    note: PTE / PTY are company-form suffixes in a legal entity name, not acronyms to expand
   - rule: quote-style-consistency
     line: 701
     text: ’s bank accounts on Tuesday or Wednesday
@@ -406,6 +387,11 @@ findings:
     message: '"1,500 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
     verdict: correct
     note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: contraction-consistency
+    line: 775
+    text: Users can redeem as little or as many lo
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 775
     text: " - they can pay partially with loyalty p"

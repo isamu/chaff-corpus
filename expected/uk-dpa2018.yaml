@@ -6,11 +6,6 @@ findings:
     text: —
     message: 11 dashes per 1000 words (limit 8)
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 20
-    text: Section 3 Terms relating to the processi
-    message: This paragraph runs 24 sentences (limit 12)
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 43
     text: ",..."
@@ -111,30 +106,15 @@ findings:
     text: ",..."
     message: 'Punctuation is doubled: ",..."'
     verdict: unjudged
-  - rule: sentence-initial-conjunction-run
-    line: 1181
-    text: and international organisations, and the
-    message: 4 sentences in a row open with a conjunction (limit 2)
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 1289
     text: ’s notices and powers of entry and inspe
     message: The quote mark ’ here, where the document usually writes ' (32 of 172)
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1303
-    text: "Section 79 National security: certificat"
-    message: This paragraph runs 14 sentences (limit 12)
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 1428
     text: ’s name,
     message: The quote mark ’ here, where the document usually writes ' (32 of 172)
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1576
-    text: Section 94 Right of access
-    message: This paragraph runs 18 sentences (limit 12)
     verdict: unjudged
   - rule: quote-style-consistency
     line: 1955
@@ -176,21 +156,6 @@ findings:
     text: ’s performance can be measured most effe
     message: The quote mark ’ here, where the document usually writes ' (32 of 172)
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2333
-    text: appeals etc).
-    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 2385
-    text: Section 146 Assessment notices
-    message: This paragraph runs 14 sentences (limit 12)
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2410
-    text: appeals etc).
-    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 2427
     text: ’s remuneration and expenses under the a
@@ -200,11 +165,6 @@ findings:
     line: 2460
     text: ",..."
     message: 'Punctuation is doubled: ",..."'
-    verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2488
-    text: appeals etc).
-    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
     verdict: unjudged
   - rule: quote-style-consistency
     line: 2492
@@ -231,11 +191,6 @@ findings:
     text: ’s behalf.
     message: The quote mark ’ here, where the document usually writes ' (32 of 172)
     verdict: unjudged
-  - rule: reference-title-mismatch
-    line: 2564
-    text: appeals etc).
-    message: 164 is called "appeals etc" here, but its heading is "Applications in respect of urgent notices"
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 2618
     text: ",..."
@@ -245,11 +200,6 @@ findings:
     line: 2667
     text: ",... 75, 76, 77 or 78, the higher maximu"
     message: 'Punctuation is doubled: ",..."'
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 2701
-    text: Section 160 Guidance about regulatory ac
-    message: This paragraph runs 14 sentences (limit 12)
     verdict: unjudged
   - rule: quote-style-consistency
     line: 2784
@@ -271,11 +221,6 @@ findings:
     text: ’s representatives, whether by discovery
     message: The quote mark ’ here, where the document usually writes ' (32 of 172)
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 3155
-    text: Section 182 Regulations and consultation
-    message: This paragraph runs 14 sentences (limit 12)
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 3259
     text: ’s rights
@@ -290,11 +235,6 @@ findings:
     line: 3292
     text: complaints to the Commissioner);
     message: section 165 is called "complaints to the Commissioner" here, but its heading is "Complaints by data subjects to the Commissioner"
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 3463
-    text: PACE codes of practice
-    message: '"PACE" is used without an expansion (4 such acronyms)'
     verdict: unjudged
   - rule: doubled-punctuation
     line: 3508

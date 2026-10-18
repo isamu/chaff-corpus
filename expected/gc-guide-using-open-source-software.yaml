@@ -77,11 +77,6 @@ findings:
     message: '"ISC" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 96
-    text: MIT license
-    message: '"MIT" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 102
     text: GNU General Public Licenses (GPL, LGPL a
     message: '"GNU" is used without an expansion (7 such acronyms)'

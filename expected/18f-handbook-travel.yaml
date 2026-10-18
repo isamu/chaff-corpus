@@ -26,11 +26,6 @@ findings:
     text: IBA".
     message: '"IBA" is used without an expansion (4 such acronyms)'
     verdict: unjudged
-  - rule: title-case-consistency
-    line: 55
-    text: ""
-    message: This heading's capitalisation differs from the rest (2 in this document)
-    verdict: unjudged
   - rule: max-sentence-length
     line: 88
     text: You may use your travel card to get a
@@ -42,14 +37,24 @@ findings:
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: unjudged
   - rule: undefined-acronym
-    line: 132
-    text: POV mileage rates](https://www.gsa.gov/t
+    line: 133
+    text: POV mileage is
     message: '"POV" is used without an expansion (4 such acronyms)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 138
     text: For example, it is typically advantageou
     message: This sentence runs 45 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 162
+    text: When working from somewhere that isn't y
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 181
+    text: On the other side, when travel expenses
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: unjudged
   - rule: max-sentence-length
     line: 181

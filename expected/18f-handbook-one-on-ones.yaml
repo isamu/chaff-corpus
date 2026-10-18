@@ -46,6 +46,11 @@ findings:
     text: " -- it’s fine to reschedule --"
     message: '"--" stands in for a dash'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 56
+    text: It is important -- it’s the most importa
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 56
     text: " -- it’s the most important -- so once"
@@ -56,10 +61,20 @@ findings:
     text: " -- so once"
     message: '"--" stands in for a dash'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 75
+    text: So, the less frequently you
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: unjudged
   - rule: sentence-initial-so
     line: 75
     text: So, the less frequently you
     message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 79
+    text: If you are trying to work with someone o
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
     verdict: unjudged
   - rule: excessive-hedging
     line: 80
@@ -161,20 +176,10 @@ findings:
     text: This is a shared document (e.g. a Google
     message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
     verdict: unjudged
-  - rule: title-case-consistency
-    line: 332
-    text: ""
-    message: This heading's capitalisation differs from the rest (2 in this document)
-    verdict: unjudged
   - rule: expletive-construction
     line: 334
     text: There is a **ton** of material out there
     message: '"There is ..." appears 6 times (limit 3)'
-    verdict: unjudged
-  - rule: quote-style-consistency
-    line: 337
-    text: "'s 1:1 guide_](https://docs.google.com/d"
-    message: The quote mark ' here, where the document usually writes ’‘ (1 of 121)
     verdict: unjudged
   - rule: undefined-acronym
     line: 340

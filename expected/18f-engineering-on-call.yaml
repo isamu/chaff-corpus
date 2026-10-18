@@ -1,11 +1,6 @@
 id: 18f-engineering-on-call
 chaff: 0.33.0
 findings:
-  - rule: contraction-consistency
-    line: 86
-    text: While we don’t often live in an ideal wo
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: excessive-hedging
     line: 156
     text: could possibly occur in production,

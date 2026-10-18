@@ -6,12 +6,6 @@ findings:
     text: newly finalized report can help cloud se
     message: 16 -ly adverbs per 1000 words (limit 15)
     verdict: unjudged
-  - rule: oxford-comma-consistency
-    line: 15
-    text: The publication, whose full title is Pro
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: the serial comma is inside a quoted publication title, which keeps the publisher's punctuation
   - rule: undefined-acronym
     line: 15
     text: IR 8587), provides implementation guidel

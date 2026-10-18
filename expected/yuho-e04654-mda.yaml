@@ -1,18 +1,21 @@
 id: yuho-e04654-mda
 chaff: 0.34.0
 findings:
-  - rule: bracket-nesting
+  - rule: bracket-width-consistency
     line: 1
     text: (2）キャッシュ・フローの状況当期末における現金及び現金同等物（以下「資金」とい
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
-  - rule: bracket-nesting
+    message: 括弧を「(」と書いています（この文書はふつう「（」。88 箇所のうち 12 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
     line: 1
-    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: nesting is counted up by numbering markers "(n）" whose half-width opener chaff never sees closed
+    text: (3）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。88 箇所のうち 12 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (5)重要な会計上の見積り及び当該見積りに用いた仮定当社の財務諸表は、わが国にお
+    message: 括弧を「(」と書いています（この文書はふつう「（」。88 箇所のうち 12 箇所が違う）
+    verdict: unjudged
   - rule: bracket-width-consistency
     line: 1
     text: (前期比2,300千円増)となりました。これは主に税引前当期純利益の計上及び減価
@@ -57,11 +60,6 @@ findings:
     line: 1
     text: )重要な会計上の見積り及び当該見積りに用いた仮定当社の財務諸表は、わが国において
     message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
-    message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 1
@@ -135,60 +133,33 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: (2）キャッシュ・フローの状況当期末における現金及び現金同等物（以下「資金」とい
-    message: この文は 169 文字あります（140 文字まで）
+    text: セグメントの名称第64期（自令和４年11月１日至令和５年10月31日）前年同期比
+    message: この文は 161 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: (3）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セ
-    message: この文は 388 文字あります（140 文字まで）
+    text: 相手先第63期（自令和３年11月1日至令和４年10月31日）第64期（自令和４年
+    message: この文は 188 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
-    message: この文は 913 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
-    message: この文は 199 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
-    message: 一文に読点が 16 個あります（6 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
-  - rule: max-ten
-    line: 1
-    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
-    message: 一文に読点が 7 個あります（6 個まで）
-    verdict: false-positive
-    note: a numbering marker "(1）" opens half-width and closes full-width; chaff keeps the bracket open, so the rest of the section is one sentence
   - rule: ngram-repetition
     line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上
     message: 「）となりました。」が 6 回出てきます（5 回まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
+    text: これは有形固定資産の取得によるものであります。(3）販売の実績当期の販売実績をセ
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上
     message: 「〜なりました」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
+  - rule: repeated-sentence-ending
     line: 1
-    text: (3）販売の実績当期の販売実績をセグメントごとに示すと、次のとおりであります。セ
-    message: 「は」で出した主題から述語まで 196 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
-    message: 「は」で出した主題から述語まで 848 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: この財務諸表の作成にあたって、当社が採用している重要な会計方針は、「第５経理の状
-    message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
+    text: 賃貸事業におきましては、売上高は281,700千円（前期比99.6％）、営業利益
+    message: 「〜なりました」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 1

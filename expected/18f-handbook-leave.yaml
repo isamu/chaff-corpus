@@ -22,6 +22,11 @@ findings:
     text: To [**vote**](#voting-and-poll-volunteer
     message: This sentence runs 55 words (limit 40)
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 47
+    text: If you can’t work or stay in your home f
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: unjudged
   - rule: range-band-mismatch
     line: 67
     text: "15+ years: 8 hours per pay period"
@@ -50,12 +55,6 @@ findings:
     text: "OPM Policy:"
     message: '"OPM" is used without an expansion (6 such acronyms)'
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 106
-    text: Recovering from illness, for you or a fa
-    message: '"Recovering from illness, for you or a family member" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
-    verdict: false-positive
-    note: a gerund ('Recovering from illness') used as a noun is read as a verb
   - rule: oxford-comma-consistency
     line: 167
     text: You are entitled to 12 weeks of paid tim
@@ -65,6 +64,11 @@ findings:
     line: 167
     text: PPL]({% page "travel-and-leave/paid-pare
     message: '"PPL" is used without an expansion (6 such acronyms)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 185
+    text: You and your supervisor won’t see an ava
+    message: "\"won't\" is written \"will not\" elsewhere in the document"
     verdict: unjudged
   - rule: undefined-acronym
     line: 189
@@ -100,6 +104,16 @@ findings:
     line: 223
     text: If granted, paid leave for voting is lim
     message: This sentence runs 48 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 255
+    text: It is expected that when possible, you’l
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 257
+    text: If a supervisor doesn’t hear from you, a
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
     verdict: unjudged
   - rule: max-sentence-length
     line: 257

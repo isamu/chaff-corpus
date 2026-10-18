@@ -36,11 +36,6 @@ findings:
     text: の際の振替輸送のあり方、
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 14
-    text: 【最終取りまとめの概要】
-    message: この段落は 7 文あります（5 文まで）
-    verdict: unjudged
   - rule: nominalization
     line: 15
     text: 提供を行う。
@@ -65,9 +60,4 @@ findings:
     line: 19
     text: 提供を行う。
     message: 「提供を行う」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 37
-    text: 国土交通省鉄道局総務課　鉄道サービス政策室　後藤、岡村、佐藤
-    message: 「国土交通省鉄道局総務課」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged

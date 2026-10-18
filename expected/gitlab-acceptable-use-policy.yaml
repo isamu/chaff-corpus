@@ -1,12 +1,6 @@
 id: gitlab-acceptable-use-policy
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 57
-    text: RED data on non-approved systems is gene
-    message: '"RED" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: RED is a data-classification level written in capitals (a colour label), not an acronym
   - rule: title-case-consistency
     line: 68
     text: ""
@@ -18,40 +12,11 @@ findings:
     text: Individual-Use Software](https://interna
     message: '"Individual-Use Software" is written "Individual Use Software" elsewhere in the document (case, width or punctuation)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 81
-    text: SAFE Framework](/handbook/legal/safe-fra
-    message: '"SAFE" is used without an expansion (3 such acronyms)'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 98
-    text: botnet control, etc.).
-    message: '"botnet" is not in the dictionary; did you mean "bonnet"?'
-    verdict: false-positive
-    note: "'botnet' is a common technical word missing from the dictionary"
-  - rule: undefined-acronym
-    line: 110
-    text: WINE](https://www.winehq.org/)
-    message: '"WINE" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: WINE is a product name written in capitals, linked to its site
   - rule: sentence-spacing-consistency
     line: 123
     text: "  Notwithstanding anything contrary in t"
     message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 35)
     verdict: correct
-  - rule: name-variant
-    line: 127
-    text: GitLab Data Classification Standard](/ha
-    message: '"GitLab Data Classification Standard" is written "GitLab [Data Classification Standard" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a link's opening bracket inside the name ('GitLab [Data Classification Standard](…)') is read as a different spelling of the same name
-  - rule: unknown-word
-    line: 151
-    text: requestors to determine the most suitabl
-    message: '"requestors" is not in the dictionary; did you mean "requesters"?'
-    verdict: false-positive
-    note: "'requestors' is a standard variant spelling (also in Merriam-Webster), not an unknown word"
   - rule: vague-link-text
     line: 151
     text: "[here](https://gitlab.com/gitlab-com/gl-"

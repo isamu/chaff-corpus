@@ -1,16 +1,15 @@
 id: gitlab-time-away-philosophy
 chaff: 0.34.0
 findings:
-  - rule: unknown-word
-    line: 12
-    text: burnout
-    message: '"burnout" is not in the dictionary; did you mean "burnous"?'
-    verdict: false-positive
-    note: "'burnout' is a common word missing from the dictionary"
   - rule: oxford-comma-consistency
     line: 16
     text: Demonstrating our commitment to sustaina
     message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 42
+    text: Health and wellbeing** come first – We e
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: unjudged
   - rule: quote-style-consistency
     line: 43
@@ -28,6 +27,11 @@ findings:
     message: '"FYI" is used without an expansion (7 such acronyms)'
     verdict: false-positive
     note: FYI is an everyday abbreviation that is never expanded
+  - rule: contraction-consistency
+    line: 83
+    text: Schedule reminder messages](https://slac
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
   - rule: undefined-acronym
     line: 84
     text: MR reviews on your last working day befo
@@ -68,12 +72,11 @@ findings:
     text: PEO and independent contractors) must lo
     message: '"PEO" is used without an expansion (7 such acronyms)'
     verdict: correct
-  - rule: list-item-form-mix
-    line: 230
-    text: Open Time Off by Deel in Slack
-    message: '"Open Time Off by Deel in Slack" opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
-    verdict: false-positive
-    note: "'Open' is the imperative verb here (open the app), read as an adjective starting a noun phrase"
+  - rule: contraction-consistency
+    line: 213
+    text: "Automatic Status Updates**: Sets OOO sta"
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: unjudged
   - rule: vague-link-text
     line: 240
     text: "[here](https://docs.google.com/document/"

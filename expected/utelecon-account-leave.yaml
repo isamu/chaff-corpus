@@ -1,10 +1,6 @@
 id: utelecon-account-leave
 chaff: 0.34.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: ngram-repetition
     line: 3
     sha256: f86c40d917e61bfaf5b6f4a4650657dba97bdc69ff0cbdda14ca83cc40814bd0
@@ -21,17 +17,9 @@ findings:
     line: 22
     sha256: eb0d5884569b398e475b89e77a068c6c575a0064ff6a72fafc173102c4cfcd57
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 24
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: latin-spacing
     line: 34
     sha256: edc65e3facc103e02ce9da7541fca1400c270f1860ffdf2e748da5e71e1fba65
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 36
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 38

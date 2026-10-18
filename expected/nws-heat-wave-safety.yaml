@@ -37,14 +37,14 @@ findings:
     message: Section "Eating and Drinking" has no number, code or link (4 of 8 sections)
     verdict: unjudged
   - rule: contraction-consistency
-    line: 25
-    text: Don't leave it sitting in the sun. Meats
-    message: "\"don't\" is written differently from the rest of the document"
+    line: 27
+    text: Do not take salt tablets unless specifie
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: unjudged
   - rule: contraction-consistency
-    line: 26
-    text: Drink plenty of water, non-alcoholic and
-    message: "\"don't\" is written differently from the rest of the document"
+    line: 33
+    text: Do not direct the flow of portable elect
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 36
@@ -60,16 +60,6 @@ findings:
     line: 53
     text: Even on mild days in the 70s, studies ha
     message: '"studies have shown" does not say who'
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 55
-    text: Touch a child's safety seat and safety b
-    message: "\"it's\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 59
-    text: Don't leave sleeping infants in the car.
-    message: "\"don't\" is written differently from the rest of the document"
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 61

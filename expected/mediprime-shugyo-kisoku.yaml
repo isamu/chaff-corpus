@@ -92,6 +92,11 @@ findings:
     text: ５割を超えることはなく、又、総額が１賃金支払期における賃金総額の１割を超えること
     message: 全角の「５」と書いています（この文書はふつう半角の「5」。124 箇所のうち 6 箇所が違う）
     verdict: correct
+  - rule: known-misspelling
+    line: 538
+    text: に該当場合は、諭旨解雇又は懲戒解雇とする。懲戒解雇の場合において、労働基準監督署
+    message: 「に該当」は「に該当する」の書き誤りです
+    verdict: correct
   - rule: toki-as-condition
     line: 538
     text: 時は、労働基準法第20条に規程する予告手当は支給しない。但し、平素の勤務態度その

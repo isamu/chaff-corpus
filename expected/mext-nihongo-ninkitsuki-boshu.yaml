@@ -2,12 +2,6 @@ id: mext-nihongo-ninkitsuki-boshu
 chaff: 0.34.0
 findings:
   - rule: max-kanji-continuous
-    line: 5
-    text: 総合教育政策局日本語教育課
-    message: 「総合教育政策局日本語教育課」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
-  - rule: max-kanji-continuous
     line: 19
     text: 文部科学事務官（総合教育政策局日本語教育課教員活用第一係長）
     message: 「総合教育政策局日本語教育課教員活用第一係長」は漢字が 21 字続いています（10 字まで）
@@ -28,74 +22,28 @@ findings:
     text: 以下「日本語教育認定法」という。）に基づき、政策の企画立案から制度運用、予算の要
     message: 「日本語教育認定法」を定義していますが、本文で使っていません
     verdict: correct
-  - rule: max-sentence-length
-    line: 26
-    text: ・日本語教育機関認定法ポータルにおける登録日本語教員の登録審査及びその関連業務
-    message: この文は 146 文字あります（140 文字まで）
-    verdict: false-positive
-    note: consecutive lines (each its own line in the page, a <br> list) read as one sentence; no line is that long
   - rule: bracket-width-consistency
     line: 34
-    text: )公務に対する強い関心と、全体の奉仕者として働く熱意を有する者
-    message: 丸括弧を、全角で 53 箇所、半角で 15 箇所書いています。この文書には書き方が二通りあります
-    verdict: correct
-  - rule: max-sentence-length
-    line: 34
-    text: (1)公務に対する強い関心と、全体の奉仕者として働く熱意を有する者
-    message: この文は 151 文字あります（140 文字まで）
-    verdict: false-positive
-    note: consecutive lines (each its own line in the page, a <br> list) read as one sentence; no line is that long
-  - rule: max-sentence-length
-    line: 41
-    text: (1)学歴：大学（学士課程）卒業以上の者（又は同等の学力を有する者）
-    message: この文は 489 文字あります（140 文字まで）
-    verdict: false-positive
-    note: consecutive lines (each its own line in the page, a <br> list) read as one sentence; no line is that long
-  - rule: topic-predicate-distance
-    line: 41
-    text: (1)学歴：大学（学士課程）卒業以上の者（又は同等の学力を有する者）
-    message: 「は」で出した主題から述語まで 423 字あります（80 字まで）
-    verdict: false-positive
-    note: consecutive lines (each its own line in the page, a <br> list) read as one sentence; no line is that long (the topic and predicate are on different list lines)
-  - rule: max-kanji-continuous
-    line: 67
-    text: 文部科学省総合教育政策局（東京都千代田区霞が関3-2-2）
-    message: 「文部科学省総合教育政策局」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
-  - rule: duration-mismatch
-    line: 71
-    text: 1月3日）、年次有給休暇、夏季休暇等の特別休暇があります。
-    message: 12月29日から2日なら、終わりは12月30日ごろのはずですが、1月3日と書かれています
-    verdict: false-positive
-    note: 年末年始 12月29日～1月3日 runs across the new year (6 days); the period is right, the rule did not wrap the year
-  - rule: max-paragraph-length
+    what: the list numbers (1) to (4) use half-width brackets in a document that mostly writes full-width （）
+    verdict: missed
+    note: "correct in chaffjs 0.35.0, lost in 0.36.0: half-width numbers at the start of a list line are no longer counted (the same doc's in-prose (1)及び(2) on line 87 is still found)"
+  - rule: bracket-width-consistency
     line: 87
-    text: 次の(1)及び(2)の応募書類を提出期限までに電子メールにて送付してください。
-    message: この段落は 9 文あります（5 文まで）
-    verdict: false-positive
-    note: the application instructions are separate lines (a <br> list of numbered items and ※ notes), not one 9-sentence paragraph
-  - rule: bracket-nesting
-    line: 88
-    text: （電子メールの件名に「任期付職員採用応募（日本語教育課）」と記載してください。）
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: the innermost brackets are the literal e-mail subject to type (「任期付職員採用応募（日本語教育課）」); they cannot be flattened
-  - rule: max-sentence-length
-    line: 88
-    text: （電子メールの件名に「任期付職員採用応募（日本語教育課）」と記載してください。）
-    message: この文は 166 文字あります（140 文字まで）
-    verdict: false-positive
-    note: consecutive lines (each its own line in the page, a <br> list) read as one sentence; no line is that long
-  - rule: max-kanji-continuous
-    line: 102
-    text: 文部科学省総合教育政策局日本語教育課　管理係
-    message: 「文部科学省総合教育政策局日本語教育課」は漢字が 18 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
-  - rule: heading-numbering-mix
-    line: 105
-    text: "## お問合せ先"
-    message: 見出し「お問合せ先」だけ番号がありません（兄弟の見出しは「1．採用期間」など 10 個が番号付き）
-    verdict: false-positive
-    note: the closing contact block (お問合せ先) after the numbered sections; notices leave it unnumbered by convention
+    text: (1)及び(2)の応募書類を提出期限までに電子メールにて送付してください。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。57 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 87
+    text: (2)の応募書類を提出期限までに電子メールにて送付してください。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。57 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 87
+    text: )の応募書類を提出期限までに電子メールにて送付してください。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。57 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 87
+    text: )及び(2)の応募書類を提出期限までに電子メールにて送付してください。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。57 箇所のうち 4 箇所が違う）
+    verdict: correct

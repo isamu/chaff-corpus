@@ -92,11 +92,6 @@ findings:
     message: '"SORN" is used without an expansion (32 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 101
-    text: VAT
-    message: '"VAT" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 106
     text: JPG, PDF or PNG
     message: '"JPG" is used without an expansion (32 such acronyms)'
@@ -251,6 +246,21 @@ findings:
     text: See change notes in the content design m
     message: The first sentence repeats the heading "Change notes"
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 586
+    text: Don’t use “click” when talking about use
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 652
+    text: Avoid negative contractions like can’t a
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 652
+    text: Use cannot, instead of can’t.
+    message: "\"cannot\" is written \"can't\" elsewhere in the document"
+    verdict: unjudged
   - rule: invisible-character
     line: 821
     text: ​
@@ -386,11 +396,6 @@ findings:
     text: RTI’ or use the abbreviation, for exampl
     message: '"RTI" is used without an expansion (32 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 2328
-    text: XXX is upper case whether or not it’s us
-    message: '"XXX" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
   - rule: dangling-reference
     line: 2330
     text: section 2
@@ -475,6 +480,11 @@ findings:
     line: 2892
     text: agenda (unless it’s for a meeting), use
     message: '"agenda (unless it’s for a meeting), use ‘plan’ instead" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 2896
+    text: commit/pledge, use ‘plan to x’, or ‘we’r
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
     verdict: unjudged
   - rule: oxford-comma-consistency
     line: 2896

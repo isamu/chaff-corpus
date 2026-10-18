@@ -25,6 +25,10 @@ findings:
     line: 305
     sha256: 87d89d73a8a1bb7b5ad2a2ecba51b9b5bd9788c8dc5dac02eda88eca6828062f
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 393
+    sha256: 4f34d5a8adba79f2e9f47f085a1b336773755ada4cf636556e25fc1d6cbe97b6
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 438
     sha256: 2a55bdb4de22bf161c7fbd8ceb0f819333c03347a63bcae8e33f3c2db7945ded
@@ -117,45 +121,25 @@ findings:
     line: 1058
     sha256: 887503855a284178d08cf7f308fc135024d14d55a89af2da1072773ea6fac458
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1091
-    sha256: 27b40c205b395ce8388f22bd90aa9de3384f0131def4f84e10d2b52cdde63b65
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1098
     sha256: 157855508d3e97d527c52d14196282042978d4e858df4783b940a5c1d7ad1236
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1099
-    sha256: e29e930f239fb8ecab7b518fd179d7f8241e0e1aa8b00e619aecb8162d26a87c
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1160
-    sha256: 42455d658f94e7f508c4ffc5c53cbd5bd783f8c56d4bc899c0753294c5510d3c
     verdict: unjudged
   - rule: max-paragraph-length
     line: 1165
     sha256: 13fa110c776e9f2cb4f7e1558f8650ce7ba93bd154a7d85649e738f45ace8700
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 1168
+    sha256: 15f2270066dc33a733bd1a47d912095a6716a6218e82c973b5f6055ffddd3208
+    verdict: unjudged
   - rule: undefined-acronym
     line: 1209
     sha256: b574981d6240ebe8134ef5a18fd71c89aaac81faf10fd6cc60c5e65f00412d71
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1290
-    sha256: 05b2fe378248d572012ea9656a62ab2012e47c7b9125e736de8aba94c7b6c0be
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1290
-    sha256: 1d9629ebf2e01325e6b15d5bb0bcd5910dcf4ce7c15d0606083b45df61141c13
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1346
     sha256: ec731a8cefc9d7b125ac34ada400bf64408f669246b0fbd8071caa9ffe8c1552
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1466
-    sha256: ea05a1b671733a897121b60e87c9ffac9179a77506cecd74bf3cffd7100f4124
     verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 1471
@@ -180,22 +164,6 @@ findings:
   - rule: sentence-spacing-consistency
     line: 1629
     sha256: 06bed83ebe5ce55baa3f4ceb5189d398066914920ad0abb5733cebd1d7c571de
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1633
-    sha256: 50a00009f9880d311e73ea8c47f12c059685014b00b59b4d4328c50db384ea63
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1636
-    sha256: a413ac17f82a0b7b40eaa995f5894030da220642f1dc99aba4b8a24f06c9aae1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1644
-    sha256: 6b24d7d8e5035f5c79f0813523c5fbbc160cb015a8761aecbfca6726af54a313
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1644
-    sha256: e800c6ee56b6fdefdc110c0d5a54c98f0dd242be4ec421f0dd4e7048cd3f9beb
     verdict: unjudged
   - rule: doubled-punctuation
     line: 1681
@@ -260,6 +228,10 @@ findings:
   - rule: max-sentence-length
     line: 2079
     sha256: 2d202fad7e259f6c2e7e0da30046e30425ce61a3032914a041c7d80439930733
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 2124
+    sha256: fa21851f73a21e38d4cf764e0fe6be8464abf36e99a20b2ed704b682974f2cc9
     verdict: unjudged
   - rule: max-sentence-length
     line: 2124

@@ -71,11 +71,6 @@ findings:
     text: "[here](https://docs.google.com/document/"
     message: The link text "here" does not say where it goes
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 231
-    text: FTR §301-10.450(c)](https://www.gsa.gov/
-    message: '"FTR" is used without an expansion (16 such acronyms)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 240
     text: Rental car companies participating in th
@@ -111,6 +106,11 @@ findings:
     text: (a list of options for the division/orga
     message: '"(" is never closed'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 320
+    text: \*Note:** If you did not book a hotel fr
+    message: "\"did not\" is written \"didn't\" elsewhere in the document"
+    verdict: unjudged
   - rule: max-sentence-length
     line: 348
     text: Mileage:** You must [add this in as an e
@@ -121,15 +121,15 @@ findings:
     text: Mileage from your home to the airport (p
     message: This sentence runs 50 words (limit 40)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 374
-    text: FAIL_ or a
-    message: '"FAIL" is used without an expansion (16 such acronyms)'
-    verdict: unjudged
   - rule: vague-link-text
     line: 378
     text: "[here](https://docs.google.com/document/"
     message: The link text "here" does not say where it goes
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 397
+    text: Please note that in most cases, **govern
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
     verdict: unjudged
   - rule: vague-link-text
     line: 405
@@ -201,10 +201,10 @@ findings:
     text: If you changed your trip such that trip
     message: This sentence runs 47 words (limit 40)
     verdict: unjudged
-  - rule: undefined-acronym
+  - rule: contraction-consistency
     line: 643
-    text: CASH. Do not use your travel card.
-    message: '"CASH" is used without an expansion (16 such acronyms)'
+    text: Do not use your travel card.
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: unjudged
   - rule: undefined-acronym
     line: 664
