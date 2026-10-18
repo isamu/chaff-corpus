@@ -466,3 +466,15 @@
 - id: yamano-akashi-vc-attribute-spec
   match: "090-0000-0000"
   reason: a clearly fake example value (all zeros) in the attribute table and the JSON sample
+- id: bunka-tsuchi-kaigai-bijutsu-koukai-2011
+  match: "03-5253-4111"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: bunka-tsuchi-kaigai-bijutsu-koukai-2011
+  match: "03-6734-3821"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: bunka-tsuchi-nihongo-kyoiku-suishin-2019
+  match: "03-5253-4111"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: fsa-ifc-faq
+  match: "03-6667-0551"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document

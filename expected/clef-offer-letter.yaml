@@ -1,0 +1,101 @@
+id: clef-offer-letter
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 1
+    text: Welcome to Clef, **FIRST_NAME**!
+    message: The email does not open with a greeting
+    verdict: false-positive
+    note: "\"Welcome to Clef, NAME!\" is the letter's greeting; an exclamatory welcome line is not recognised as one"
+  - rule: preamble-length
+    line: 1
+    text: Welcome to Clef, **FIRST_NAME**!
+    message: 11 paragraphs before the first heading (limit 2)
+    verdict: false-positive
+    note: a letter has no headings until the acceptance block; the preamble limit does not fit a letter body
+  - rule: max-sentence-length
+    line: 3
+    text: This offer letter will go over the basic
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 3
+    text: We are excited to extend an official off
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 5
+    text: In our conversation, you said you wanted
+    message: This sentence runs 38 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 5
+    text: There are **OUTSTANDING SHARES** shares
+    message: This sentence runs 23 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 7
+    text: Equity at startups is complicated, so we
+    message: This sentence runs 30 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 9
+    text: The best perk of working at Clef is your
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: The benefits we offer will adapt to the
+    message: This sentence runs 26 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: It’s also important that you avoid any w
+    message: This sentence runs 46 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: Clef is an "at-will" employer, which mea
+    message: This sentence runs 35 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: We also reserve the right to modify the
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: This letter is specific to you and it su
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 35
+    text: And before this takes legal effect, you’
+    message: This sentence runs 28 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 37
+    text: The whole Clef team is convinced that yo
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 50
+    text: I accept this offer to work for Clef und
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: the sign-off (company and signatory) comes before an acceptance block the recipient signs; the closing is not the last paragraph
+  - rule: max-sentence-length
+    line: 50
+    text: I acknowledge that this letter is the co
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: I sign this letter voluntarily and not i
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: I understand that the terms of this lett
+    message: This sentence runs 20 words (limit 18)
+    verdict: unjudged

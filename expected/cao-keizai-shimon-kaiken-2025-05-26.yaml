@@ -1,0 +1,180 @@
+id: cao-keizai-shimon-kaiken-2025-05-26
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 13
+    text: PDCAを回すため、経済・財政一体改革推進委員会において取りまとめたものでござい
+    message: 半角の「PDCA」と書いています（この文書はふつう全角の「ＰＤＣＡ」。23 箇所のうち 7 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 23
+    text: たり、今後のスケジュールについて、教えていただけますでしょうか。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 30
+    text: また、石破総理大臣は、昨日25日に、アメリカ軍の艦船の日本での修理や、砕氷船に関
+    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 32
+    text: （答）今般の協議の内容の詳細については外交上のやり取りなので、つまびらかにするこ
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 34
+    text: ただ、米国の関税措置に関する日米協議の今後の対応についても、具体的な検討状況をつ
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 37
+    text: USスチールの買収計画について、「アメリカによって支配されることになるだろう」と
+    message: 半角の「US」と書いています（この文書はふつう全角の「ＵＳ」。23 箇所のうち 7 箇所が違う）
+    verdict: correct
+  - rule: max-ten
+    line: 40
+    text: いずれにせよ、日米協議において、自動車、自動車部品、あるいは鉄鋼・アルミ、そして
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: adversative-ga-repeat
+    line: 41
+    text: ご指摘のトランプ大統領の発言などについては、繰り返しになりますが、承知しておりま
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: the first が (繰り返しになりますが) is a prefatory が, not a contrast
+  - rule: fullwidth-alnum-consistency
+    line: 52
+    text: G7サミットの機会のあり得べき日米首脳間の接点も視野に、閣僚間で緊密に協議してい
+    message: 半角の「G7」と書いています（この文書はふつう全角の「Ｇ７」。23 箇所のうち 7 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 53
+    text: SNSで担当交渉者として直接指名のあった人物でありますので、必ず次回はお目にかか
+    message: 半角の「SNS」と書いています（この文書はふつう全角の「ＳＮＳ」。23 箇所のうち 7 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 53
+    text: ３回目の今回、ベッセント財務長官はご都合によりお会いできませんでしたが、私自身は
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 55
+    text: F47を披露していたという一部の報道がありました。まずは電話会談の事実関係と、大
+    message: 半角の「F47」と書いています（この文書はふつう全角の「Ｆ４７」。23 箇所のうち 7 箇所が違う）
+    verdict: correct
+  - rule: adversative-ga-repeat
+    line: 58
+    text: （答）まず、総理とトランプ大統領の電話会談の内容でありますが、プレスに向けて、あ
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: a topic-introducing が (〜でありますが、) is prefatory, not a contrast
+  - rule: orthographic-variant
+    line: 61
+    text: ほうが負けであるということをおっしゃっていて、そのとおりかと思うのですが、あえて
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "ほう (comparative: …ほうが負け) and 方 (かた, a person) are different words"
+  - rule: clause-chain
+    line: 63
+    text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 63
+    text: 答えから申し上げれば、よろしくないというふうに思います。いつも基本的に申し上げて
+    message: 「答え」と書いています（この文書はふつう「答」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the （答） speaker label of the Q&A is counted as the word 答え
+  - rule: topic-predicate-distance
+    line: 63
+    text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
+    message: 「は」で出した主題から述語まで 139 字あります（80 字まで）
+    verdict: correct
+  - rule: clause-chain
+    line: 64
+    text: むしろ、期限を切ってそこまでにまとめなければいけなければ、最後は相手が納得しなけ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 64
+    text: むしろ、期限を切ってそこまでにまとめなければいけなければ、最後は相手が納得しなけ
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: 最後まで大事なのは「ゆっくり急ぐ」と申し上げたことに尽きておりまして、国益を毀損
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 77
+    text: 2,500億円の科研費を倍増する大胆な措置を講ずるべき。厳しい状況に置かれている
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。97 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: teki-overuse
+    line: 90
+    text: そして、今を生きるこども・若者が身体的・精神的・社会的にウェルビーイングで生活を
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 103
+    text: ２ページ目に関して、地方で活躍する人材の育成とそれを支える基盤の整備として郷土に
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 104
+    text: for Scienceや情報基盤の強化、優れた研究者が世界から日本に集う国際的な
+    message: 半角の「for」と書いています（この文書はふつう全角の「ｆｏｒ」。23 箇所のうち 7 箇所が違う）
+    verdict: false-positive
+    note: the English words of a programme's proper name (AI for Science) are written half-width as names are; not a digit or acronym that the document writes full-width
+  - rule: fullwidth-alnum-consistency
+    line: 104
+    text: Scienceや情報基盤の強化、優れた研究者が世界から日本に集う国際的な頭脳循環
+    message: 半角の「Science」と書いています（この文書はふつう全角の「Ｓｃｉｅｎｃｅ」。23 箇所のうち 7 箇所が違う）
+    verdict: false-positive
+    note: the English words of a programme's proper name (AI for Science) are written half-width as names are; not a digit or acronym that the document writes full-width
+  - rule: clause-chain
+    line: 109
+    text: 社会の変化に応じて必要なサービスが必要な方に提供され、保険料を抑制せず、公平な負
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 114
+    text: 不確実性というと、目の前に霧があって霧が晴れるまで待っているイメージがあるが、実
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 114
+    text: 不確実性というと、目の前に霧があって霧が晴れるまで待っているイメージがあるが、実
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 117
+    text: 今現在の政策はネガティブなものではなく、賃金も上がり、世の中の明るい構造も見えて
+    message: 「今現在」は同じ意味の語を重ねています
+    verdict: correct
+  - rule: orthographic-variant
+    line: 123
+    text: いま一度リスクとして肝に銘じていただきたい。パラダイムシフトの話が上がる中で、米
+    message: 「いま」と書いています（この文書はふつう「今」と書く語です。10 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 123
+    text: みられる。ピンチをチャンスに変えていくという心意気を骨太の方針においても示してい
+    message: 「みる」と書いています（この文書はふつう「見る」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: みられる in the sense "is seen as / appears" is conventionally written in kana; it is not the verb 見る
+  - rule: demonstrative-opener-run
+    line: 132
+    text: この中では、地方歳出について物価の上昇、人件費の増加、金利の上昇など歳出増加圧力
+    message: 「この」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 139
+    text: 1,000兆円が達成される。この実現に向け必要な政策の方向性は３つ。
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。97 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 145
+    text: 本来は３年連続で賃金が上がっており、ボーナスを見越して消費が拡大していってもおか
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged

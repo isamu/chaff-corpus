@@ -1,0 +1,213 @@
+id: fsa-soudansitu-advice-toushi
+chaff: 0.36.0
+findings:
+  - rule: tari-unpaired
+    line: 7
+    text: たり、長時間の説明を聞かなくてはいけないと聞きましたが、本当ですか。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 11
+    text: 金融機関は、株式、債券、投資信託等の金融商品を勧誘する場合には、顧客の知識、経験
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 12
+    text: 為に必要な方法・程度による説明をしなければなりません。
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 13
+    text: たり、必要な説明を受けることがありますが、これは、顧客の属性や状況に応じたきめ細
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 14
+    text: しかし、例えば、取引の都度、顧客の財産状況を把握しなければ一切の金融商品を販売し
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: weasel-word
+    line: 26
+    text: なお、投資信託の中には、元本確保型と言われている商品もありますが、あくまで元本を
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 27
+    text: 投資信託をはじめとする投資商品は、取引によって損失を被ったとしても、投資家自らの
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: (注)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。33 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 37
+    text: 外国為替証拠金取引を取扱うには金融商品取引業（旧金融先物取引法上の金融先物取引業
+    message: 「外国為替証拠金取引」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 38
+    text: 外国為替取引を行う際は、金融庁ウェブサイトの「外国為替証拠金取引について」をご参
+    message: 「外国為替証拠金取引」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 40
+    text: (注)　取引所を介する外国為替証拠金取引については、この規制はありません。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。33 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 40
+    text: )　取引所を介する外国為替証拠金取引については、この規制はありません。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 40
+    text: (注)　取引所を介する外国為替証拠金取引については、この規制はありません。
+    message: 「外国為替証拠金取引」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 42
+    text: ＊　登録を受けている業者を確認したい方は、「免許・許可・登録等を受けている業者一
+    message: 「を受けている業者」が 7 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 48
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 35 行目の見出しと同じです
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 51
+    text: FINMAC（フィンマック））（*）に相談してください（ただし、加入第１種金融商
+    message: 半角の「FINMAC」と書いています（この文書はふつう全角の「ＦＩＮＭＡＣ」。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 51
+    text: 外国為替証拠金取引に関する個別の取引に関するトラブルについては、会社とよく話し合
+    message: 「外国為替証拠金取引」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: 外国為替証拠金取引に関する個別の取引に関するトラブルについては、会社とよく話し合
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 51
+    text: 外国為替証拠金取引に関する個別の取引に関するトラブルについては、会社とよく話し合
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 63
+    text: 未公開株の販売は、金融商品取引業者（証券会社）のほか当該未公開株の発行会社でも可
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 73
+    text: ○投資事業有限責任組合から出資を勧められていますが、迷っています。注意点があれば
+    message: 「投資事業有限責任組合」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 75
+    text: ○投資ファンドや未公開株等に投資する投資事業有限責任組合から執拗な勧誘を受けてい
+    message: 「投資事業有限責任組合」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 79
+    text: )コードであり、登録番号ではありません。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 79
+    text: いわゆるファンドについて、金商法施行以降自己募集を行う際には、当局への登録が必要
+    message: 「金商法施行以降自己募集」は漢字が 11 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 100
+    text: たり、画面上で利用しているサービスが突然中断されてしまう可能性があります。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 100
+    text: ネット経由での取引は、業者やインターネットサービスプロバイダー、通信回線の障害等
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 107
+    text: ○取引がある金融商品取引業者の登録を確認するため、金融商品取引業者登録一覧を見て
+    message: 「金融商品取引業者登録一覧」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 111
+    text: いずれの業であっても、金融商品取引業として一つの登録制で一つの登録手続を受ければ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 111
+    text: 金融商品取引法では、金融商品取引業について、第一種金融商品取引業、第二種金融商品
+    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 111
+    text: いずれの業であっても、金融商品取引業として一つの登録制で一つの登録手続を受ければ
+    message: この文は 147 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 112
+    text: 例えば、第一種金融商品取引業の登録のみを受けている者にあっては、第二種金融商品取
+    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 122
+    text: 金融商品取引業者は、金融商品取引法第四十三条の二において、自己の固有財産と顧客か
+    message: 「金融商品取引法第四十三条」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 123
+    text: 1,000万円を限度に補償することになっています。
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。6 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 125
+    text: 金融商品取引業者は、金融商品取引法第七十九条の二十七において、金融商品取引業の登
+    message: 「金融商品取引法第七十九条」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 126
+    text: 補償の対象となる顧客は、金融商品取引法第七十九条の二十第一項で規定されている「一
+    message: 「金融商品取引法第七十九条」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 126
+    text: 補償の対象となる顧客は、金融商品取引法第七十九条の二十第一項で規定されている「一
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 134
+    text: 良い会社である等の説明を受けた。信用できるでしょうか。
+    message: 「良い」と書いています（この文書はふつう「よい」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 142
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。20 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 151
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。20 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: numbering-gap
+    line: 153
+    text: "## 10.  高齢者に対する投資勧誘に関する相談等"
+    message: 「3」の次が「10」です（4 番目のはず）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 161
+    text: うえで、慎重な勧誘による販売を行うことがルール化されています。例えば、80歳以上
+    message: 「うえ」と書いています（この文書はふつう「上」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged

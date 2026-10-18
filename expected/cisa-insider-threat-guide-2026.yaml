@@ -1,0 +1,8 @@
+id: cisa-insider-threat-guide-2026
+chaff: 0.36.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 15
+    text: First published in 2020, the Insider Thr
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged

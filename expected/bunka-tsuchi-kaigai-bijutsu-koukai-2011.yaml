@@ -1,0 +1,254 @@
+id: bunka-tsuchi-kaigai-bijutsu-koukai-2011
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: 23庁房第246号
+    message: 書き出しに挨拶がありません
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 6
+    text: 各都道府県教育委員会教育長
+    message: 「独立行政法人国立文化財機構理事長」は漢字が 16 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 6
+    text: 各都道府県教育委員会教育長
+    message: この文は 152 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 26
+    text: このたび，第177回国会（常会）において成立した「海外の美術品等の我が国における
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 26
+    text: このたび，第177回国会（常会）において成立した「海外の美術品等の我が国における
+    message: この文は 163 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 26
+    text: このたび，第177回国会（常会）において成立した「海外の美術品等の我が国における
+    message: 一文だけの段落が 5 個続いています（4 個まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 28
+    text: また，法の施行に伴い，「海外の美術品等の我が国における公開の促進に関する法律施行
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 28
+    text: また，法の施行に伴い，「海外の美術品等の我が国における公開の促進に関する法律施行
+    message: この文は 154 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 30
+    text: 法は，海外の美術品等の我が国における公開の促進を図るため，海外の美術品等に対する
+    message: この文は 181 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 30
+    text: の美術館等の施設の整備及び充実等について定めることにより，国民が世界の多様な文化
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 30
+    text: 法は，海外の美術品等の我が国における公開の促進を図るため，海外の美術品等に対する
+    message: 「は」で出した主題から述語まで 171 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 32
+    text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
+    message: 「域内市町村教育委員会及」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 32
+    text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
+    message: この文は 127 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 32
+    text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
+    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
+    verdict: unjudged
+  - rule: attachment-not-attached
+    line: 34
+    text: なお，法，施行期日政令，施行令及び施行規則は別添のとおりであり，これらを含む関係
+    message: 添付に触れていますが、添付の欄やファイル名がありません
+    verdict: unjudged
+  - rule: url-run-on
+    line: 34
+    text: https://www.bunka.go.jp/seisaku/bunka_gy
+    message: URL「https://www.bunka.go.jp/seisaku/bunka_gyosei/shokan_horei/bunkazai/kaigaibijutsu…」の直後に「）」が続いています。リンクがそこまで伸びます
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 46
+    text: この法律は，海外の美術品等の我が国における公開の促進を図るため，海外の美術品等に
+    message: この文は 163 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 46
+    text: の美術館等の施設の整備及び充実等について定めることにより，国民が世界の多様な文化
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 46
+    text: この法律は，海外の美術品等の我が国における公開の促進を図るため，海外の美術品等に
+    message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 50
+    text: 在る絵画，彫刻，工芸品その他の有形の文化的所産である動産等と定義することとしたこ
+    message: 「在る」と書いています（この文書はふつう「ある」と書く語です。11 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 52
+    text: の美術品等の公開の促進を図るための措置等
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 56
+    text: ただし，当該指定に係る海外の美術品等を公開するため貸与した者の申立てにより強制執
+    message: この文は 76 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 56
+    text: 我が国において公開される海外の美術品等のうち，国際文化交流の振興の観点から我が国
+    message: この文は 131 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 56
+    text: 我が国において公開される海外の美術品等のうち，国際文化交流の振興の観点から我が国
+    message: 「ものとしたこと。」が 15 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 60
+    text: 文部科学大臣は，指定に係る海外の美術品等が[1]の政令で定める要件に該当しなくな
+    message: この文は 79 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 63
+    text: の美術館等の施設の整備及び充実その他の措置等
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: 国は，海外の美術品等の我が国における公開を促進するため，国の美術館等の施設の整備
+    message: この文は 84 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 65
+    text: の機会の充実のために必要な施策を講ずるものとしたこと。（法第4条）
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 65
+    text: の美術館等の施設の整備及び充実並びに当該施設における鑑賞の機会の充実のために必要
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 66
+    text: 国は，海外の美術品等の我が国における公開を促進するため，海外の美術品等に関する専
+    message: この文は 121 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 66
+    text: 国は，海外の美術品等の我が国における公開を促進するため，海外の美術品等に関する専
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 69
+    text: 施行期日等
+    message: 「施行期日等」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 79
+    text: 学術上優れた価値を有する動産で政令で定めるもの
+    message: |-
+      「学術上優れた価値を有する動産で政令で定めるもの
+      法第2条第2号の政令で定める動産は，次に掲げるものとしたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 86
+    text: 指定の要件
+    message: |-
+      「指定の要件
+      法第3条第1項本文の政令で定める要件は，次のいずれにも該当するものであることとしたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 93
+    text: 強制執行等をすることができる場合
+    message: |-
+      「強制執行等をすることができる場合
+      法第3条第1項ただし書の政令で定める場合は，次に掲げる場合としたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 111
+    text: 法第3条第2項の申請をしようとする者（以下「申請者」という。）は，次に掲げる事項
+    message: この文は 75 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 114
+    text: の美術品等の所有者の氏名又は名称及び法人にあっては，その代表者の氏名
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 124
+    text: "[1]の申請書には，指定を受けようとする美術品等に係る使用貸借又は賃貸借に関する"
+    message: この文は 103 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: duplicate-definition
+    line: 129
+    text: 以下「指定美術品等」という。）の名称並びに所有者の氏名又は名称及び法人にあっては
+    message: 「指定美術品等」は 96 行目でも定義されています
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 152
+    text: 〔参考〕文化庁ホームページアドレス
+    message: 「海外美術品等公開促進法等」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 158
+    text: 第二の2の[2]のとおり，申請者から提出された指定を受けようとする海外の美術品等
+    message: この文は 130 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 158
+    text: の2の[2]のとおり，申請者から提出された指定を受けようとする海外の美術品等に関
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 165
+    text: 指定を受けようとする海外の美術品等の画像情報（写真）については，当該海外の美術品
+    message: この文は 120 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: connective-hierarchy
+    line: 175
+    text: 並びに法人にあっては，その代表者の氏名
+    message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 180
+    text: 指定美術品等は，強制執行等の措置が禁止されることとなるため，指定美術品等が強制執
+    message: この文は 257 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 180
+    text: 指定美術品等は，強制執行等の措置が禁止されることとなるため，指定美術品等が強制執
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 180
+    text: または，文化庁から最高裁判所に対して通知するとともに，最高裁判所から管下の各裁判
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。14 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 180
+    text: 指定美術品等は，強制執行等の措置が禁止されることとなるため，指定美術品等が強制執
+    message: 「は」で出した主題から述語まで 247 字あります（80 字まで）
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 195
+    text: FAX：03-6734-3821
+    message: 終わりに結びの言葉がありません
+    verdict: unjudged

@@ -1,0 +1,69 @@
+id: clef-guide-to-your-equity
+chaff: 0.36.0
+findings:
+  - rule: vague-link-text
+    line: 5
+    text: "[here](https://drive.google.com/open?id="
+    message: The link text "here" does not say where it goes
+    verdict: correct
+  - rule: max-sentence-length
+    line: 13
+    text: So if a share of Clef stock is worth $1
+    message: This sentence runs 41 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 23
+    text: This works out so that employees always
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: If we get a fair valuation for the compa
+    message: This sentence runs 43 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 35
+    text: This means that you will not be diluted
+    message: "\"will not\" is written \"won't\" elsewhere in the document"
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 35
+    text: You can also be diluted as we give equit
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: unused-definition
+    line: 41
+    text: '"Exercising your options" means buying t'
+    message: '"Exercising your options" is defined but never used'
+    verdict: false-positive
+    note: the defined phrase is used in inflected forms (exercise, exercised, exercising) that the rule does not count
+  - rule: contraction-consistency
+    line: 43
+    text: You will usually only want to exercise t
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: At Clef, we want our employees to keep t
+    message: This sentence runs 43 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: However, this means that many cannot aff
+    message: This sentence runs 46 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 55
+    text: Traditionally, companies would divide th
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 71
+    text: "**Liquidation preferences:** In a liquid"
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 79
+    text: "  The debt converts to stock at whicheve"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 46)
+    verdict: correct
