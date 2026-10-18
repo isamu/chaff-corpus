@@ -26,18 +26,6 @@ findings:
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。51 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: requirement-smell
-    line: 59
-    text: 等）も必ず付与すること
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 等 inside a parenthetical example of when the rule applies, not the scope of the requirement
-  - rule: undefined-acronym
-    line: 59
-    text: SELECT 等）も必ず付与すること
-    message: 「SELECT」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (SELECT) written in capitals, not an acronym
   - rule: heading-echo
     line: 69
     text: 不要な空白文字（スペース）は除去すること。
@@ -54,41 +42,11 @@ findings:
     text: DB 分析作業に支障があるため禁止とする。
     message: 「DB」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 96
-    text: WHERE 句の`=`、`!=`、`is`（`is null`の`is`）の縦位
-    message: 「WHERE」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (WHERE) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 185
-    text: CASE 式は下記のように記載すること。
-    message: 「CASE」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (CASE) written in capitals, not an acronym
   - rule: requirement-smell
     line: 214
     text: 等は最初に出現するカラムとカラムの区切りのカンマ前に改行を入れること。
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: correct
-  - rule: undefined-acronym
-    line: 275
-    text: LIMIT、OFFSET の前に改行を挿入すること
-    message: 「LIMIT」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (LIMIT) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 275
-    text: OFFSET の前に改行を挿入すること
-    message: 「OFFSET」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (OFFSET) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 292
-    text: HINT 句は独立した行で記載すること
-    message: 「HINT」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (HINT) written in capitals, not an acronym
   - rule: orthographic-variant
     line: 314
     text: つける。
@@ -105,36 +63,16 @@ findings:
     message: 「ERD」が説明なしで使われています（説明のない略語 19 個）
     verdict: correct
     note: ERD is not expanded anywhere in the standard
-  - rule: undefined-acronym
-    line: 378
-    text: EXISTS 句を記載する際、サブクエリになる SELECT 句の指定は定数「`
-    message: 「EXISTS」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (EXISTS) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 399
-    text: AS 句を付与する。
-    message: 「AS」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (AS) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 418
-    text: FROM 句に記述した順序に準ずること。
-    message: 「FROM」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (FROM) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 448
-    text: COUNT 文の記述は`count(*)`と記述する。
-    message: 「COUNT」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL function name (COUNT) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 549
-    text: UPDATE は原則行わない。外部キーがあればエラーになる。
-    message: 「UPDATE」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (UPDATE) written in capitals, not an acronym
+  - rule: no-mixed-desumasu
+    line: 460
+    text: （デフォルト無効）
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 460
+    text: ※PostgreSQL は設定によって円マーク（バックスラッシュ）によるエスケー
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: unjudged
   - rule: orthographic-variant
     line: 550
     text: 無い場合でも、事実上、主キーの値を利用して、検索、更新する場合は、リンクが切れて
@@ -146,12 +84,6 @@ findings:
     message: 「VIEW」が説明なしで使われています（説明のない略語 19 個）
     verdict: false-positive
     note: SQL keyword (VIEW) written in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 600
-    text: IN 句は最大 1000 個まで指定できるが、200 個程度でも ORA エラー
-    message: 「IN」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: SQL keyword (IN) written in capitals, not an acronym
   - rule: undefined-acronym
     line: 600
     text: ORA エラーが発生するケースがある。

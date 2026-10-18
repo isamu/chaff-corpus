@@ -1,23 +1,11 @@
 id: vimconf2024-sponsor-solicitation
 chaff: 0.35.0
 findings:
-  - rule: latin-spacing
-    line: 27
-    text: 版は[こちら](https://drive.google.com/file/d/
-    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。25 箇所のうち 5 箇所が違う）
-    verdict: false-positive
-    note: PDF版 is one compound word; no space is expected inside it
   - rule: vague-link-text
     line: 27
     text: "[こちら](https://drive.google.com/file/d/1s"
     message: リンクの言葉「こちら」は、行き先を言っていません
     verdict: correct
-  - rule: latin-spacing
-    line: 29
-    text: " 10万円 (税込 11万円)**"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a space separating the plan name from its price in a list item, used as a column separator
   - rule: latin-spacing
     line: 29
     text: プラン 10万円 (税込 11万円)**
@@ -26,34 +14,16 @@ findings:
     note: the plan names are written without a space here and with one (Bronze プラン) in the benefit lines
   - rule: latin-spacing
     line: 32
-    text: " 25万円 (税込 27万5000円)**"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a space separating the plan name from its price in a list item, used as a column separator
-  - rule: latin-spacing
-    line: 32
     text: プラン 25万円 (税込 27万5000円)**
     message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。25 箇所のうち 5 箇所が違う）
     verdict: correct
     note: the plan names are written without a space here and with one (Bronze プラン) in the benefit lines
   - rule: latin-spacing
     line: 38
-    text: " 50万円 (税込 55万円)**"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a space separating the plan name from its price in a list item, used as a column separator
-  - rule: latin-spacing
-    line: 38
     text: プラン 50万円 (税込 55万円)**
     message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。25 箇所のうち 5 箇所が違う）
     verdict: correct
     note: the plan names are written without a space here and with one (Bronze プラン) in the benefit lines
-  - rule: latin-spacing
-    line: 45
-    text: " 100万円 (税込 110万円)**"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a space separating the plan name from its price in a list item, used as a column separator
   - rule: latin-spacing
     line: 45
     text: プラン 100万円 (税込 110万円)**

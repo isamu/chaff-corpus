@@ -6,12 +6,6 @@ findings:
     text: Because we don’t know every one of our c
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
-  - rule: use-before-definition
-    line: 10
-    text: Terms of Service to help keep the ship a
-    message: '"Terms" is used here, before it is defined on line 18'
-    verdict: false-positive
-    note: the full name "Terms of Service" is used before the short form "Terms" is defined; the full name needs no definition
   - rule: undefined-acronym
     line: 12
     text: LLC](https://world.hey.com/jason/37signa
@@ -67,12 +61,6 @@ findings:
     text: Not all reported bugs will get fixed and
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
-  - rule: defined-term-form
-    line: 83
-    text: "terms:"
-    message: '"Terms" is defined with a capital on line 18, but written in lower case here'
-    verdict: false-positive
-    note: lower-case "the following terms" means conditions in general, not the defined term
   - rule: oxford-comma-consistency
     line: 95
     text: You expressly understand and agree that

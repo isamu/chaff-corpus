@@ -11,9 +11,3 @@ findings:
     text: ）を保証の対象とする
     message: 括弧を「）」と書いています（この文書はふつう「)」。4 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: footnote-mismatch
-    line: 35
-    text: ※1st Party の修理先の見積もりは正とするが、それがない場合は個々に判断
-    message: 注「※1」を本文のどこも指していません
-    verdict: false-positive
-    note: '"※1st Party" is a ※ note followed by the English ordinal "1st", not a numbered note ※1'

@@ -29,29 +29,29 @@ findings:
     line: 36
     sha256: b19c0102afa6d1d8fcb3119289499995fd4766d15fa74a437261e84e8fe5a396
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 42
+    sha256: 866bf2bcaba259350f446ca9807d38fdfcb379b6055ffddc676b377ed729b61f
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 43
     sha256: 946f6a42a313980d6e9c29ec041b8faa7992ec6f2a630c5ebb935c0b30786957
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 49
-    sha256: fed071104a4cc84c0ab93a0ed5c69afe0484c38c62921ee446d08627eb68cf42
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 51
-    sha256: 0f24c41508ba543afe9ad1582fc195f061e4b2488609a74d79338a24c94480e2
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 52
-    sha256: 6ae388be888b11961bb9834b66592ae76bded0fb5c8f023c969b49b6ac3d8f6d
     verdict: unjudged
   - rule: title-case-consistency
     line: 56
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 115
+    sha256: 50a093c968cc07b8d9a57a91926c425bf30c32c8c5903c13464a9c13d584957e
+    verdict: unjudged
   - rule: wordy-phrase
     line: 117
     sha256: fda7e791919557b68189fe8fe413aa353a3494842bfebe9d14027ebda3ffc0ab
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 121
+    sha256: fe014ab7481276f41d86993e009072e0627bfa616871d06d4a26c06968d6a80a
     verdict: unjudged
   - rule: spelling-consistency
     line: 121
@@ -60,6 +60,10 @@ findings:
   - rule: spelling-consistency
     line: 121
     sha256: e75f4721c7db9f21181d5e4364879c8340006bf3833e8e95bca4d7ffcbb0ee65
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 123
+    sha256: fc9d7ee852b3e80832d50d521b3572092590995a964e347e394e3267f473b74f
     verdict: unjudged
   - rule: max-paragraph-length
     line: 123
@@ -128,6 +132,10 @@ findings:
   - rule: wordy-phrase
     line: 337
     sha256: 0104961aced0d15313287a4b87e128ff5c19d8c3255fb1ded7e442f13e4a61a0
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 343
+    sha256: d88e26103996febb3b5fecd085507a26424ba55f28c755cf12ca13d411b5c2ef
     verdict: unjudged
   - rule: undefined-acronym
     line: 352

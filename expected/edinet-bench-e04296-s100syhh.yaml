@@ -18,16 +18,6 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 5
-    text: 1970年５月宮城県仙台市宮城野区に仙台営業所開設。1971年１月埼玉県入間郡三
-    message: 「月宮城県仙台市宮城野区」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 1981年11月東北丸八運輸株式会社(宮城県・仙台市若林区)現・連結子会社を設立
-    message: 「月東北丸八運輸株式会社」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
     text: 1981年６月仙台営業所鶴代倉庫開設。1981年11月東北丸八運輸株式会社(宮城
     message: 「月仙台営業所鶴代倉庫開設」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
@@ -55,11 +45,6 @@ findings:
     line: 5
     text: ２ 【沿革】1934年３月資本金300,000円をもって創立。1938年６月三菱
     message: この段落は 37 文あります（5 文まで）
-    verdict: unjudged
-  - rule: taigen-dome-in-prose
-    line: 5
-    text: ２ 【沿革】1934年３月資本金300,000円をもって創立。1938年６月三菱
-    message: 本文に体言止めが 31 文あります（4 文まで）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 9
@@ -206,11 +191,6 @@ findings:
     text: (1) 経営方針ならびに経営戦略について当社は、新型コロナウイルス感染症拡大の影
     message: 「は」で出した主題から述語まで 183 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 25
-    text: (8) 顧客等の情報管理当社グループでは、物流事業を運営する上で、個人情報をはじ
-    message: 「一般財団法人日本情報経済社会推進協会」は漢字が 18 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 25
     text: ３ 【事業等のリスク】有価証券報告書に記載した事業の状況、経理の状況等に関する事
@@ -251,12 +231,6 @@ findings:
     text: しかしながら、景気の変動や取引先の物流合理化ならびに他業態からの物流業への参画等
     message: 「〜あります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
-  - rule: total-mismatch
-    line: 33
-    text: 190百万円の投資を実施いたしました。なお、有形固定資産の他、無形固定資産への投
-    message: 合計「190百万円」が、内訳の金額の和（134,000,000円）と合いません
-    verdict: false-positive
-    note: the parts are introduced as 主な (the main items only), so they need not add up to the total
   - rule: latin-spacing
     line: 37
     text: " 若州営業所(東京都江東区)物流事業倉庫302,1787,7371,421,46"
@@ -347,11 +321,6 @@ findings:
     text: 並びに財政状態等を総合的に勘案して利益還元を行なう方針であります。一方で企業体質
     message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 77
-    text: ．株主総会決議による期末配当（会社法第454条第１項）なお、当事業年度の配当につ
-    message: 句点を「．」と書いています（この文書はふつう「。」。149 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 77
     text: ３ 【配当政策】当社の利益配分に対する考え方は、安定配当維持を基本に、業績の推移
@@ -371,11 +340,6 @@ findings:
     line: 93
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2022
     message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 97
-    text: 具体的には、会計基準等の内容を適切に把握し、その変更等について的確に対応すること
-    message: 「公益財団法人財務会計基準機構」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 101
@@ -426,11 +390,6 @@ findings:
     line: 117
     text: ④【連結キャッシュ・フロー計算書】           (単位：千円)
     message: この文は 1068 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】           (単位：千円)
-    message: この文に中黒が 7 個あります（5 個まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 121

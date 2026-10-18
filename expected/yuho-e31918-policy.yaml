@@ -3,8 +3,8 @@ chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
     line: 1
-    text: )経営方針当社グループは、「弊社を取り巻く全ての『困った』を解決することで社会に
-    message: 丸括弧を、全角で 6 箇所、半角で 5 箇所書いています。この文書には書き方が二通りあります
+    text: （フラワービジネス支援事業）フラワービジネス支援事業においては、引き続き収益の柱
+    message: 丸括弧を、全角で 6 箇所、半角で 10 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 1

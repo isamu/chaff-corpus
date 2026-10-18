@@ -5,13 +5,25 @@ findings:
     line: 5
     sha256: 2aead6b44fcd6bf171e3449bf05127f798e703b2ec6b34585059aef6de93472f
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 9
+    sha256: 394e8f0639da70ff59381229ce5dc540eed47a16c284384db8ee560273b4edab
+    verdict: unjudged
   - rule: ngram-repetition
     line: 15
     sha256: b03df883e3c474cc5d0c260c981aaa3a9ecb765622fdb287b15efca4ed4b8579
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 25
+    sha256: 942963fd4dd2260019a370f19925884b37a9f68e8c5cabda3dccb18da68ae829
+    verdict: unjudged
   - rule: max-sentence-length
     line: 99
     sha256: eaf4061b802c3b0a11eac6f612f7650e82e67a5e05a7b8ed445289e89a5ac69d
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 103
+    sha256: 9c0e0828950c2102b8355a66e60e44d785a0cfde29b650a6fe0ecdc0a62e0a34
     verdict: unjudged
   - rule: one-sentence-paragraph-run
     line: 121
@@ -44,6 +56,10 @@ findings:
   - rule: wordy-phrase
     line: 199
     sha256: 0cc6a4d61d38889f2efb0090053df5fb4b452f7f89cb89492351822d1d0f154d
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 204
+    sha256: 8ba757a14442db0f861ffce2a91b71bd5ea39e872c235a160729f1e38d0f613d
     verdict: unjudged
   - rule: max-sentence-length
     line: 204

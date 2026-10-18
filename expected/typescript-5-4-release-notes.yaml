@@ -6,6 +6,11 @@ findings:
     text: Here, TypeScript decided that it wasn't
     message: This sentence runs 46 words (limit 40)
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 92
+    text: One challenge, however, is that it is no
+    message: "\"is not\" is written \"isn't\" elsewhere in the document"
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 179
     text: " - not just keys that can be used as pro"
@@ -45,4 +50,14 @@ findings:
     line: 439
     text: "```"
     message: This code block names no language, unlike the others (28 blocks name one)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 487
+    text: Additionally, there are new restrictions
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 488
+    text: In these cases, the other enum must at l
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: unjudged

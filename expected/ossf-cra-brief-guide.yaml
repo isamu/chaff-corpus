@@ -31,12 +31,6 @@ findings:
     text: Stewards have fewer obligations than man
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-  - rule: undefined-acronym
-    line: 43
-    text: FOSDEM 2024, time 18:10](https://fosdem.
-    message: '"FOSDEM" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: FOSDEM is the proper name of a conference, inside a link to its talk page
   - rule: max-paragraph-length
     line: 51
     text: The CRA is part of a broader set of prod

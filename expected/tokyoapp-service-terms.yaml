@@ -53,29 +53,17 @@ findings:
     line: 205
     sha256: a981fb17d5f8f8e11a19180203b0afc9a088def985bc824f9ec151502b5ee6ee
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 215
-    sha256: 803825b9c383b963999c6e08ad7636f4177fd775ce785065092b0eb261d9fad2
-    verdict: unjudged
   - rule: absolute-exception
     line: 217
     sha256: 2c4371904fa4e4c9d15dec4729f5650ab900063d9f2c22c2288bea34abc1d45f
     verdict: unjudged
   - rule: requirement-smell
-    line: 217
-    sha256: 9c269e3d6b56d3633a38ec6ed6377de558ce291277fdf536460451e1ee525aab
-    verdict: unjudged
-  - rule: requirement-smell
     line: 219
-    sha256: 4ab962d31e13bc70079754056591e7f7cc3cc10e6306302c8d9cc290755e6f28
+    sha256: e8cd1878fde9e4f7ab16fa19808de30160e374b227a26d8ae742e4ca8b2eadb5
     verdict: unjudged
   - rule: absolute-exception
     line: 258
     sha256: df30db09791006ebea90aec24bf63ab7b727b8b0bf5d0bc65b65d5d68e80e874
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 260
-    sha256: 439e1a551ec28e2d3b91ca7066f0a2a315d423962a9eb7b5efc9de83002c0c1b
     verdict: unjudged
   - rule: use-before-definition
     line: 277
@@ -120,10 +108,6 @@ findings:
   - rule: requirement-smell
     line: 334
     sha256: 1c07bd1038b548010d88a286be74703428abaa3d0fb5de4637e1eab48f520a26
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 340
-    sha256: cbf1d1357aa8e561d39faacda27668a69648105e646bea3ac414c9f276ac9ea7
     verdict: unjudged
   - rule: duplicate-definition
     line: 380

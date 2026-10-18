@@ -51,29 +51,16 @@ findings:
     text: ""
     message: Section "The "shiny future" we are working towards" has no number, code or link (5 of 11 sections)
     verdict: unjudged
+  - rule: known-misspelling
+    line: 93
+    text: completement to the Rust Project Goal sy
+    message: '"completement" is a misspelling of "complement"'
+    verdict: correct
   - rule: wordy-phrase
     line: 93
     text: Assuming this vision doc is successful,
     message: '"on a regular basis" can be said in fewer words'
     verdict: correct
-  - rule: broken-link
-    line: 107
-    text: "![Team][] [leadership-council] | Create"
-    message: '"![Team][]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a reference-style image (status badge) defined by the site's mdBook preprocessor, not in the page
-  - rule: list-item-form-mix
-    line: 123
-    text: Prioritized nominations* refers to prior
-    message: '"Prioritized nominations  refers to prioritized lang-team response to nominated issues, with the expectation that there will be  some  response from the next weekly triage meeting." opens with a verb; the other items in this list open with a noun phrase (1 of 6)'
-    verdict: false-positive
-    note: an item that starts with an italic defined term (a past participle used as an adjective) read as a verb
-  - rule: list-item-form-mix
-    line: 125
-    text: "Other kinds of decisions:"
-    message: '"Other kinds of decisions:" is a phrase; the other items in this list are sentences (1 of 11)'
-    verdict: false-positive
-    note: a lead-in item that introduces a nested list
   - rule: concrete-evidence-density
     line: 132
     text: ""
@@ -84,7 +71,3 @@ findings:
     text: I think this is a time-limited team crea
     message: '"for the purpose of" can be said in fewer words'
     verdict: correct
-  - rule: unknown-word
-    line: 93
-    what: '"completement" is a misspelling of "complement"'
-    verdict: missed

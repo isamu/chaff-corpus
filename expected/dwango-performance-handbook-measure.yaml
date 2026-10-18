@@ -2,24 +2,9 @@ id: dwango-performance-handbook-measure
 chaff: 0.35.0
 findings:
   - rule: undefined-acronym
-    line: 27
-    sha256: 7c59dc306beb28c6acf3f07a0740207953c744bac75262bfd81678bbe74161e3
-    verdict: false-positive
-    note: the common short name of a browser, listed with other browser names
-  - rule: undefined-acronym
-    line: 33
-    sha256: 9a85cfe70944cad4e7e3f3240fbebfe0e481d60f43aad2529a543fa4b7b0ade1
-    verdict: false-positive
-    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
-  - rule: undefined-acronym
     line: 42
     sha256: 307c79bd0a4e1f403ecabaa7a703017152616b3d78d9abc763631b57cc0369cc
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 57
-    sha256: d6157cb2a4b511e36ac0020d4324fdcd1c851edd83d9650a33f9afe7a1c14ed6
-    verdict: false-positive
-    note: the acronym is part of a linked external page's title, which the document quotes and cannot change
   - rule: ra-nuki
     line: 161
     sha256: 5845782ebe51dc1b8149bb5a3f755fc7b4c84f67d2a559b176890bf904f32daf

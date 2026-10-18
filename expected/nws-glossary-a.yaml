@@ -51,11 +51,6 @@ findings:
     text: " - A large-scale circulation of winds ar"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 205
-    text: GOES and Himawari family of satellites.
-    message: '"GOES" is used without an expansion (10 such acronyms)'
-    verdict: unjudged
   - rule: unknown-word
     line: 225
     text: hydrograph theory to estimate streamflow
@@ -186,11 +181,6 @@ findings:
     text: a four character identifier assigned to
     message: '"an a" doubles a word; one of the two is left over'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 845
-    text: ASSOCIATED PRINCIPAL USER
-    message: '"ASSOCIATED PRINCIPAL USER" is written in capitals'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 859
     text: AU)- The mean earth-sun distance, equal
@@ -220,11 +210,6 @@ findings:
     line: 927
     text: IFLOWS pressure transducer type gages ca
     message: '"IFLOWS" is used without an expansion (10 such acronyms)'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 937
-    text: AUTOMATIC GAIN CONTROL
-    message: '"AUTOMATIC GAIN CONTROL" is written in capitals'
     verdict: unjudged
   - rule: undefined-acronym
     line: 971

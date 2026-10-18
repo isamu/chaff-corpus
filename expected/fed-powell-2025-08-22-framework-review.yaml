@@ -91,6 +91,11 @@ findings:
     text: Within core, prices of goods increased 1
     message: This sentence runs 26 words (limit 25)
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 33
+    text: PCE prices rose 2.6 percent over the 12
+    message: '"PCE" is used without an expansion (1 such acronym)'
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 35
     text: The effects of tariffs on consumer price

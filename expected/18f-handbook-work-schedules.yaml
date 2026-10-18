@@ -74,12 +74,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: undefined-acronym
-    line: 56
-    text: OR
-    message: '"OR" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: "'OR' in 'AND/OR' is a capitalised conjunction, not an acronym"
   - rule: hyphen-as-dash
     line: 63
     text: " - you receive 8 hours of holiday pay fo"
@@ -98,33 +92,8 @@ findings:
     message: '"work work" doubles a word; one of the two is left over'
     verdict: correct
     note: "'Each day in the work work' is a real doubled word in the source"
-  - rule: fact-conflict
-    line: 112
-    text: 10 |
-    message: '"Monday Hours" is 10 here, but 5 earlier in the same section'
-    verdict: false-positive
-    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
-  - rule: fact-conflict
-    line: 113
-    text: 10 |
-    message: '"Tuesday Hours" is 10 here, but 9 earlier in the same section'
-    verdict: false-positive
-    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
-  - rule: fact-conflict
-    line: 128
-    text: 6 |
-    message: '"Wednesday Hours" is 6 here, but 11 earlier in the same section'
-    verdict: false-positive
-    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
-  - rule: fact-conflict
-    line: 129
-    text: 9 |
-    message: '"Thursday Hours" is 9 here, but 11 earlier in the same section'
-    verdict: false-positive
-    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
-  - rule: fact-conflict
-    line: 130
-    text: 8 |
-    message: '"Friday Hours" is 8 here, but 6 earlier in the same section'
-    verdict: false-positive
-    note: a two-week schedule table (week 1 and week 2 side by side, Day | Hours | Day | Hours) is read as one fact stated twice per weekday
+  - rule: title-case-consistency
+    line: 153
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: unjudged

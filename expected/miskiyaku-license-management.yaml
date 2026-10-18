@@ -26,11 +26,6 @@ findings:
     text: 私の運営するサーバーは趣味用だから、特定のコミュニティー、ローカル向けだからとい
     message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
     verdict: unjudged
-  - rule: requirement-smell
-    line: 32
-    text: などのクリエイティブコモンズライセンスが付与されている場合が多いですが、これらの
-    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 41
     text: こちらの機能は数回の操作で欲しい絵文字が手に入る点から非常に便利な機能ではあるの

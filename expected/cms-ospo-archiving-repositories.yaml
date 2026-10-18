@@ -31,11 +31,6 @@ findings:
     text: "[here](https://github.com/DSACMS/repo-su"
     message: The link text "here" does not say where it goes
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 139
-    text: README that the project has been depreca
-    message: '"README" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
   - rule: list-item-form-mix
     line: 176
     text: "[ ] If distributed via package managers"
@@ -50,9 +45,4 @@ findings:
     line: 232
     text: "* [Practitioner Guide: Getting Started w"
     message: This list uses the bullet "*", while 11 lists at the same depth use "-"
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 232
-    text: CHAOSS](https://chaoss.community/practit
-    message: '"CHAOSS" is used without an expansion (4 such acronyms)'
     verdict: unjudged

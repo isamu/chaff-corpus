@@ -6,16 +6,6 @@ findings:
     text: the platform, they
     message: '"our the" doubles a word; one of the two is left over'
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 47
-    text: Review the scripts and ensure you're usi
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: title-case-consistency
-    line: 56
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: unjudged
   - rule: request-without-deadline
     line: 75
     text: We will schedule brownouts to accommodat

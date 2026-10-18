@@ -92,11 +92,6 @@ findings:
     message: The heading "III. Polymerase Chain Reaction" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
     verdict: unjudged
   - rule: undefined-acronym
-    line: 345
-    text: II removed before the first cycle and af
-    message: '"II" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 349
     text: SSPE, 5×Denhardt's, 5% sodium dodecyl su
     message: '"SSPE" is used without an expansion (18 such acronyms)'
@@ -161,11 +156,6 @@ findings:
     text: fregment of E. coli DNA polymerase I and
     message: '"fregment" is not in the dictionary; did you mean "fragment"?'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 543
-    text: PAGE was performed as described above.
-    message: '"PAGE" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
   - rule: article-sound
     line: 553
     text: an MstII digest of pBR328 containing a 1
@@ -215,11 +205,6 @@ findings:
     line: 673
     text: CHO group, R" is --H, x is a number from
     message: '"CHO" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 677
-    text: CFR §122 and the Commissioner's rules pu
-    message: '"CFR" is used without an expansion (18 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 677

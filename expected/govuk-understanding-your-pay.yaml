@@ -1,54 +1,6 @@
 id: govuk-understanding-your-pay
 chaff: 0.34.0
 findings:
-  - rule: heading-numbering-mix
-    line: 1
-    text: "# Understanding your pay"
-    message: The heading "Understanding your pay" has no number, while 5 of its siblings do ("1. Overview")
-    verdict: false-positive
-    note: the page title (h1) is read as a sibling of the guide's numbered part headings (1. Overview)
-  - rule: contraction-consistency
-    line: 12
-    text: If you’re an employee or worker (not a c
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 12
-    text: You can check your employment status if
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 15
-    text: the amount of any deductions that may ch
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 22
-    text: If you’re a part-time worker, you must g
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 26
-    text: Knowing how to work out your weekly pay
-    message: "\"it's\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 28
-    text: redundancy pay and pay during time off f
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: list-item-form-mix
-    line: 29
-    text: pay during your notice period when leavi
-    message: '"pay during your notice period when leaving a job" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
-    verdict: false-positive
-    note: the noun 'pay' opening a list item is read as a verb
   - rule: hyphen-as-dash
     line: 31
     text: " - you get this if your employer cannot"
@@ -60,48 +12,6 @@ findings:
     text: guarantee pay for work - you get this if
     message: '"your contract says" appears 6 times (limit 5)'
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 34
-    text: What you’re entitled to depends on your
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 36
-    text: You do not need to calculate your weekly
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 38
-    text: If your pay varies or you’re not paid we
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 42
-    text: The particular 12 weeks you use varies d
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 75
-    text: You can include pay for work done for a
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 91
-    text: ‘piece work’ - you’re paid by the amount
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 153
-    text: You’re paid £11 per hour at weekends. At
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
   - rule: numeral-sentence-start
     line: 159
     text: 30 shifts x 9 hours = 270 hours. Multipl
@@ -118,18 +28,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: contraction-consistency
-    line: 184
-    text: If you do not get a bonus or commission
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 194
-    text: unlawful deductions from wages - for exa
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
   - rule: hyphen-as-dash
     line: 194
     text: " - for example, you’re entitled to payme"
@@ -142,33 +40,3 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: contraction-consistency
-    line: 207
-    text: it’s required or allowed by law, for exa
-    message: "\"it's\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
-  - rule: contraction-consistency
-    line: 218
-    text: something you’ve done and your contract
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 233
-    text: You’re paid £250 gross per week. Your em
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 253
-    text: Normally you’re entitled to be paid ever
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)
-  - rule: contraction-consistency
-    line: 255
-    text: If you’re forced to resign because your
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose (you’re 18 times, you are never)

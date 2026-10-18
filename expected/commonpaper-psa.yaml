@@ -1,74 +1,11 @@
 id: commonpaper-psa
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 4
-    text: SOW. Each SOW together with the Key Term
-    message: '"SOW" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the acronym is defined in the Definitions section at the end (**"X"** means ...), which chaff does not take as an expansion
   - rule: quote-style-consistency
     line: 5
     text: "'s</span> failure to cooperate as reason"
     message: Quote marks are written two ways in this document (26 curly, 20 straight)
     verdict: correct
-  - rule: vague-word-density
-    line: 5
-    text: Customer</span> will reasonably cooperat
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 5
-    text: Provider</span> is not responsible for a
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 6
-    text: If a party requests a Change Order, the
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 7
-    text: If <span class="keyterms_link">Customer<
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 12
-    text: Provider</span> may copy, display, modif
-    message: '"as needed" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 13
-    text: To the extent <span class="keyterms_link
-    message: '"as necessary" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 17
-    text: Provider</span> will reasonably assist <
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: undefined-acronym
-    line: 21
-    text: DPA</span>, each party will comply with
-    message: '"DPA" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 26
-    text: GST, or withholding, that <span class="k
-    message: '"GST" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: GST is a common tax abbreviation listed beside VAT and sales tax
-  - rule: undefined-acronym
-    line: 26
-    text: VAT, GST, or withholding, that <span cla
-    message: '"VAT" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: VAT is a common tax abbreviation
   - rule: obligation-without-deadline
     line: 34
     text: notify the other of its reason for termi
@@ -79,95 +16,16 @@ findings:
     text: return or destroy Discloser’s Confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: unjudged
-  - rule: vague-word-density
-    line: 43
-    text: Each Recipient may retain Discloser’s Co
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 47
-    text: Provider</span> represents and warrants
-    message: '"timely" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 48
-    text: Within 45 days of receiving sufficient d
-    message: '"sufficient" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 56
-    text: Provider</span> will indemnify, defend,
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 57
-    text: Customer</span> will indemnify, defend,
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: vague-deadline
     line: 58
     text: promptly notifying the Indemnifying Part
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: correct
-  - rule: vague-word-density
-    line: 58
-    text: The Indemnifying Party’s obligations in
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 58
-    text: The Indemnifying Party’s obligations in
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 63
-    text: In addition, Recipient will protect Disc
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 65
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 65
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
-  - rule: vague-word-density
-    line: 71
-    text: As a result, upon the actual or threaten
-    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: Despite Section 12.3 (Governing Law and
-    message: '"adequately" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: damages that cannot adequately compensate is the legal test for injunctive relief, not vagueness
-  - rule: vague-word-density
-    line: 88
-    text: '"Confidential Information"** means infor'
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: article-sound
     line: 89
     text: a SOW, Key Terms, or both.
     message: '"a SOW" takes "an" before that sound'
     verdict: unjudged
-  - rule: vague-word-density
-    line: 94
-    text: '"Force Majeure Event"** means an unfores'
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: reasonable/reasonably is a legal standard in a contract, not a vague word
   - rule: article-sound
     line: 100
     text: a SOW, including the creation of <span c

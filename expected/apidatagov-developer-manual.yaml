@@ -1,16 +1,6 @@
 id: apidatagov-developer-manual
 chaff: 0.33.0
 findings:
-  - rule: contraction-consistency
-    line: 51
-    text: If you need higher rate limits, please c
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 55
-    text: This API key can be used for initially e
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: max-sentence-length
     line: 55
     text: This API key can be used for initially e
@@ -20,14 +10,4 @@ findings:
     line: 62
     text: Your can check your current rate limit a
     message: '"Your can" puts a possessive where the subject belongs'
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 83
-    text: If you’re building an application that n
-    message: "\"you're\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 123
-    text: The descriptions are subject to change,
-    message: "\"it's\" is written differently from the rest of the document"
     verdict: unjudged

@@ -1,48 +1,18 @@
 id: fed-sr-26-7
 chaff: 0.34.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: By topic
-    message: The email does not open with a greeting
-    verdict: false-positive
-    note: "a supervisory letter in memorandum form (TO / SUBJECT / signed by), which takes no greeting; the flagged line is page navigation"
-  - rule: all-caps-shouting
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: '"BOARD OF GOVERNORS" is written in capitals'
-    verdict: false-positive
-    note: "the letterhead block, set in capitals by convention"
   - rule: proper-noun-density
     line: 7
     text: BOARD OF GOVERNORS
     message: 336 proper nouns per 1000 words (limit 200)
     verdict: false-positive
-    note: "a short regulatory letter whose subject is the agencies themselves; the letterhead and agency names make the density"
-  - rule: all-caps-shouting
-    line: 8
-    text: OF THE FEDERAL RESERVE SYSTEM
-    message: '"OF THE FEDERAL RESERVE SYSTEM" is written in capitals'
-    verdict: false-positive
-    note: "the letterhead block, set in capitals by convention"
-  - rule: all-caps-shouting
-    line: 12
-    text: SUPERVISION AND REGULATION
-    message: '"SUPERVISION AND REGULATION" is written in capitals'
-    verdict: false-positive
-    note: "the letterhead block (issuing division), set in capitals by convention"
-  - rule: all-caps-shouting
-    line: 17
-    text: TO THE OFFICER IN CHARGE OF SUPERVISION
-    message: '"TO THE OFFICER IN CHARGE OF SUPERVISION AT EACH FEDERAL RESERVE BANK" is written in capitals'
-    verdict: false-positive
-    note: "the memorandum's addressee line, set in capitals by convention"
+    note: a short regulatory letter whose subject is the agencies themselves; the letterhead and agency names make the density
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
-    message: The subject line is empty
-    verdict: false-positive
-    note: "the subject is on the line after the SUBJECT: label (a two-column layout converted to lines)"
+    message: The subject has 74 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label runs 74 characters"
   - rule: max-sentence-length
     line: 23
     text: "Applicability:  This guidance generally"
@@ -73,16 +43,10 @@ findings:
     text: Joint Statement on Community Banks' Enga
     message: This sentence runs 19 words (limit 18)
     verdict: false-positive
-    note: "the attachment's title with a parenthetical cross-reference, not a sentence of the letter"
+    note: the attachment's title with a parenthetical cross-reference, not a sentence of the letter
   - rule: heading-level-skip
     line: 39
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: correct
-    note: "the page really jumps from h3 to h5 for its notes"
-  - rule: email-greeting-closing
-    line: 43
-    text: "Last Update: October 05, 2026"
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: "the letter ends with a 'signed by' signature block; the flagged line is the page's update stamp"
+    note: the page really jumps from h3 to h5 for its notes

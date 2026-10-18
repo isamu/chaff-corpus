@@ -1,6 +1,11 @@
 id: denkiyagi-tanjikan-seishain
 chaff: 0.34.0
 findings:
+  - rule: known-misspelling
+    line: 29
+    text: ばならかない。
+    message: 「ばならか」は「ばなら」の書き誤りです
+    verdict: correct
   - rule: orthographic-variant
     line: 30
     text: 申し出があった場合、会社は原則申出日より2か月以内で期日を指定して当該従業員をフ

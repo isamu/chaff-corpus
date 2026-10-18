@@ -1,10 +1,6 @@
 id: tc39-agenda-2026-07
 chaff: 0.34.0
 findings:
-  - rule: bare-url-mix
-    line: 12
-    sha256: 801f671b05963d7cb87e91555a5395f6c757054179e056905a3b8e683254a7be
-    verdict: unjudged
   - rule: adverb-overuse
     line: 44
     sha256: 132dc86f1b6f9d3b776125edf4b2ae9e92f08bb2f768ddcd6d16176582ccb08e
@@ -24,6 +20,10 @@ findings:
   - rule: oxford-comma-consistency
     line: 74
     sha256: 0b742e595be356d9662ef331d059e23d42077b10c1b7483a67a9007c034255ce
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 79
+    sha256: c906efa635fd0ff38a1622b34754a58ee1119039d7b955164b008c80e41928db
     verdict: unjudged
   - rule: quote-style-consistency
     line: 88

@@ -6,9 +6,3 @@ findings:
     text: You may be reimbursed for your expenses
     message: This sentence runs 41 words (limit 40)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 68
-    text: Finally, don't forget to [stamp and subm
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: false-positive
-    note: "'don't' / 'it's' are the only forms of those words on the page; they are counted against other words left in full (will not, you are)"

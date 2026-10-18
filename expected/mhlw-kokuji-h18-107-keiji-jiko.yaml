@@ -211,21 +211,6 @@ findings:
     text: CHARGE症候群、マーシャル症候群、成長ホルモン分泌不全性低身長症、ポリエック
     message: 「CHARGE」が説明なしで使われています（説明のない略語 7 個）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 319
-    text: XXXXX症候群を含む。)、リング18症候群、リンパ管腫、全前脳胞症、クラインフ
-    message: 「XXXXX」が説明なしで使われています（説明のない略語 7 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 319
-    text: XXXX症候群及びXXXXX症候群を含む。)、リング18症候群、リンパ管腫、全前
-    message: 「XXXX」が説明なしで使われています（説明のない略語 7 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 319
-    text: XXX症候群、XXXX症候群及びXXXXX症候群を含む。)、リング18症候群、リ
-    message: 「XXX」が説明なしで使われています（説明のない略語 7 個）
-    verdict: unjudged
   - rule: dangling-reference
     line: 321
     text: 第2章第13部区分番号N001に掲げる顎口腔機能診断料の規定により別に厚生労働大

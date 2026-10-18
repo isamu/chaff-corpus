@@ -1,10 +1,30 @@
 id: gitlab-promotions-transfers
 chaff: 0.34.0
 findings:
+  - rule: contraction-consistency
+    line: 42
+    text: These types of changes are specified as
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 51
+    text: Whether you're a team member preparing t
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 53
+    text: Throughout this process, remember that p
+    message: "\"they're\" is written \"they are\" elsewhere in the document"
+    verdict: unjudged
   - rule: wordy-phrase
     line: 63
     text: In order for promotions through internal
     message: '"in order for" can be said in fewer words'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 78
+    text: This applies whether you're seeking vert
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: unjudged
   - rule: undefined-acronym
     line: 90
@@ -31,104 +51,26 @@ findings:
     text: In order to have insight into upcoming p
     message: '"in order to" can be said in fewer words'
     verdict: unjudged
-  - rule: date-without-year
-    line: 129
-    text: May 1)
-    message: "\"May 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
   - rule: all-caps-shouting
     line: 133
     text: PROMOTION NOMINATION PREPARATION & SUBMI
     message: '"PROMOTION NOMINATION PREPARATION" is written in capitals'
     verdict: unjudged
-  - rule: date-without-year
-    line: 135
-    text: "Jan 12-30**: Managers and team members m"
-    message: "\"Jan 12\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 135
-    text: Jan 30
-    message: "\"Jan 30\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 136
-    text: "Jan 30**: DEADLINE - All manager promoti"
-    message: "\"Jan 30\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
   - rule: hyphen-as-dash
     line: 136
     text: " - All manager promotion nominations mus"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: date-without-year
-    line: 137
-    text: "Feb 2-27**: Promotion calibration sessio"
-    message: "\"Feb 2\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 141
-    text: "Mar 23**:  ACR opens to planners (promot"
-    message: "\"Mar 23\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
   - rule: undefined-acronym
     line: 141
     text: ACR opens to planners (promotion approva
     message: '"ACR" is used without an expansion (27 such acronyms)'
     verdict: unjudged
-  - rule: date-without-year
-    line: 142
-    text: "April 3**: Planners enters compensation"
-    message: "\"April 3\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 142
-    text: "Mar 23 - April 3**: Planners enters comp"
-    message: "\"Mar 23\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 143
-    text: "April 9-13**: eGroup / PBP comp approval"
-    message: "\"April 9\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
   - rule: orthographic-variant
     line: 143
     text: eGroup / PBP comp approvals
     message: '"eGroup" here, where the document usually writes "E-group" (1 of 16)'
     verdict: unjudged
-  - rule: date-without-year
-    line: 144
-    text: "April 21**: Statement generation in Work"
-    message: "\"April 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 145
-    text: "April 21-30**: Team member communication"
-    message: "\"April 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 146
-    text: "May 1**: Promotions go live!"
-    message: "\"May 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
-  - rule: date-without-year
-    line: 150
-    text: Nov 1)
-    message: "\"Nov 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: "a schedule under a fiscal-quarter heading (### FY27-Q2 (May 1), ### FY27-Q4 (Nov 1)) takes its year from that heading"
   - rule: sentence-spacing-consistency
     line: 152
     text: "  Check back!"
@@ -153,11 +95,6 @@ findings:
     line: 194
     text: DRI for the global cross functional team
     message: '"DRI" is used without an expansion (27 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 196
-    text: CREDIT values in their work on this acco
-    message: '"CREDIT" is used without an expansion (27 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 198
@@ -314,53 +251,11 @@ findings:
     text: CES team and signed.
     message: '"CES" is used without an expansion (27 such acronyms)'
     verdict: unjudged
-  - rule: date-without-year
-    line: 499
-    text: July 1 since this is after the payroll c
-    message: "\"July 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
-  - rule: date-without-year
-    line: 499
-    text: June 25, the effective date should be Ju
-    message: "\"June 25\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
-  - rule: date-without-year
-    line: 501
-    text: June 20 cut off date is June 21 so June
-    message: "\"June 20\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
-  - rule: date-without-year
-    line: 501
-    text: June 21 should be the effective date.
-    message: "\"June 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
-  - rule: date-without-year
-    line: 501
-    text: June 21 so June 21 should be the effecti
-    message: "\"June 21\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
   - rule: name-variant
     line: 503
     text: GitLab Ltd team member has a change bein
     message: '"GitLab Ltd" is written "GitLab Inc", with another company form, elsewhere in the document'
     verdict: unjudged
-  - rule: date-without-year
-    line: 504
-    text: July 1.
-    message: "\"July 1\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
-  - rule: date-without-year
-    line: 504
-    text: June 15, this would be effective July 1.
-    message: "\"June 15\" has no year, and the document's dates run from 2024 to 2026, so the year is unclear"
-    verdict: false-positive
-    note: hypothetical dates in a worked example ('For example, if the change is being processed on June 22 …') take no year
   - rule: undefined-acronym
     line: 505
     text: RSU information is included with the job
@@ -401,6 +296,11 @@ findings:
     text: " - Access changed (if required)"
     message: '"-" stands in for a dash'
     verdict: unjudged
+  - rule: list-item-form-mix
+    line: 570
+    text: Please make sure that the department hea
+    message: '"Please make sure that the department head is in the loop and supportive of the acting period and candidate selected before moving forward." opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
+    verdict: unjudged
   - rule: max-sentence-length
     line: 576
     text: In the event that a team member is worki
@@ -425,6 +325,11 @@ findings:
     line: 600
     text: If any changes are required to a team me
     message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 618
+    text: If they don't, please connect with your
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 645
@@ -557,11 +462,6 @@ findings:
     message: This sentence runs 46 words (limit 40)
     verdict: unjudged
   - rule: list-item-form-mix
-    line: 823
-    text: All migration tasks by the applicable te
-    message: '"All migration tasks by the applicable team members need to be completed within 2 weeks of the migration start date." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
-    verdict: unjudged
-  - rule: list-item-form-mix
     line: 849
     text: Create a monthly issue to notify the Sal
     message: '"Create a monthly issue to notify the Sales Strategy and Analytics team of headcount changes." opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
@@ -585,11 +485,6 @@ findings:
     line: 870
     text: If your new direct report is potentially
     message: This sentence runs 50 words (limit 40)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 882
-    text: README, and other static title entries,
-    message: '"README" is used without an expansion (27 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 888

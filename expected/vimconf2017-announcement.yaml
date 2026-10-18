@@ -1,12 +1,17 @@
 id: vimconf2017-announcement
 chaff: 0.35.0
 findings:
+  - rule: announced-count-mismatch
+    line: 10
+    text: 3行要約
+    message: 「3行要約」と予告していますが、すぐ下の箇条書きは4項目です
+    verdict: correct
+    note: 3行要約 (a three-line summary) is followed by a list of four items
   - rule: list-item-form-mix
-    line: 12
-    text: 日時と場所が決まりました
-    message: 「日時と場所が決まりました」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: three of the four items are sentences; the flagged item is with the majority (the item with a footnote marker seems not counted)
+    line: 15
+    text: 参加チケットの発売はまだ先 [^1]
+    message: 「参加チケットの発売はまだ先  ^1」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
+    verdict: unjudged
   - rule: unqualified-superlative
     line: 18
     text: これは世界初かつ世界で唯一の、コミュニティによって定期運営されているVimの国際
@@ -22,18 +27,6 @@ findings:
     text: 年度ごとに国際化度のブレあり。完全英語の2013とベストエフォートのそれ以降
     message: 「年度ごとに国際化度のブレあり。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
     verdict: correct
-  - rule: list-item-form-mix
-    line: 36
-    text: 英語発表は日本語に、日本語発表は英語に翻訳あり
-    message: 「英語発表は日本語に、日本語発表は英語に翻訳あり」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（4 項目のうち 1 項目）
-    verdict: false-positive
-    note: 〜あり is a noun-style ending like its siblings (登壇, Vim熱)
-  - rule: latin-spacing
-    line: 46
-    text: " 開場)"
-    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the space follows the Latin time suffix AM (9:30AM 開場), not a digit
   - rule: orthographic-variant
     line: 54
     text: vimconf](https://twitter.com/search?f=tw
@@ -51,7 +44,3 @@ findings:
     message: 「vimconf」と書いています（この文書はふつう「VimConf」と書く語です。10 箇所のうち 2 箇所が違う）
     verdict: false-positive
     note: a Twitter hashtag (#vimconf) written as it is used, not the event name
-  - rule: announced-count-mismatch
-    line: 9
-    what: "3行要約 (a three-line summary) is followed by a list of four items"
-    verdict: missed

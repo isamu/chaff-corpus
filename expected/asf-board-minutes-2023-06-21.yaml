@@ -81,35 +81,10 @@ findings:
     line: 507
     sha256: 6308194c94b8c714a78f2d901adf0121913716b9912d036ecd927e298acc2b90
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 540
-    sha256: 4855960682710981dcdcc176ef19454ea9c53359761840136bc7dbab9b935c99
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
-  - rule: all-caps-shouting
-    line: 565
-    sha256: 71e1f0ec0e43e0691beb35535202fed04d5a491829c25788b03035c8c3af3366
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
-  - rule: all-caps-shouting
-    line: 569
-    sha256: 268dd24054eaab143d00ae52f9fb68e8bce965da87a3b39d4efec928c48192e6
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 569
     sha256: 268dd24054eaab143d00ae52f9fb68e8bce965da87a3b39d4efec928c48192e6
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 590
-    sha256: 418aba905c30f9c509c420a7a03bfc0fedcd3587fb878d489c91bbb064d325c7
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
-  - rule: all-caps-shouting
-    line: 594
-    sha256: a8c588f02b4d8a02da1f47f818123ae3242478153d30d42bec854653335ba07e
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 594
     sha256: a8c588f02b4d8a02da1f47f818123ae3242478153d30d42bec854653335ba07e
@@ -118,20 +93,10 @@ findings:
     line: 605
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 612
-    sha256: 74eb6fad17bb16c8f785bd08af6813179b0187693ee6a4f068b97c23452e1da9
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 621
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 643
-    sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 643
     sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
@@ -141,16 +106,6 @@ findings:
     sha256: 853539a66954e8de9b0892fb749c83e3d54bdef29bc2ca35217801c826ed422a
     verdict: false-positive
     note: a name (a person's account handle, a product or a technical term), not a misspelling
-  - rule: all-caps-shouting
-    line: 673
-    sha256: 80fd2f1bd537c12234b157ae59c2e56d8985f3ed42497761e3e5757b8ead70a0
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
-  - rule: all-caps-shouting
-    line: 677
-    sha256: ee39f7cce9e86566d7041a1b81fdcc78c5d4a5b9680da29059239aa9eb17c081
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 677
     sha256: ee39f7cce9e86566d7041a1b81fdcc78c5d4a5b9680da29059239aa9eb17c081
@@ -159,20 +114,10 @@ findings:
     line: 688
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 695
-    sha256: c676ad247e376f14c6aaf48731fb8b1facb3d59dff963492dd36b2b0cbb8c867
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 695
     sha256: c676ad247e376f14c6aaf48731fb8b1facb3d59dff963492dd36b2b0cbb8c867
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 704
-    sha256: 882a698c942b957fed315f5172cd53ced8a8de190037bd691daf066e9ae8b6e5
-    verdict: false-positive
-    note: formal resolution wording (NOW, THEREFORE, BE IT RESOLVED) is set in capitals by convention, not shouting
   - rule: max-sentence-length
     line: 704
     sha256: 882a698c942b957fed315f5172cd53ced8a8de190037bd691daf066e9ae8b6e5
@@ -453,10 +398,6 @@ findings:
     line: 1352
     sha256: b1e8a3ae783f743fa04139567b38675bf0b8825a11baba11f61b5ca0e0abc9fc
     verdict: unjudged
-  - rule: date-without-year
-    line: 1355
-    sha256: da096da498d61066a0fa5fa1025f1bbe669b65024b3ff31f014e4d5088211f97
-    verdict: unjudged
   - rule: number-style-consistency
     line: 1358
     sha256: 12a1df03e6e4c90424d5295d86e96a16111f8a4dc99fdb4d153d4cad6cc1bbf3
@@ -468,10 +409,6 @@ findings:
   - rule: space-before-punctuation
     line: 1361
     sha256: 2ff67e11f64ee702946b56fdb185488cd1e31c143c2e5ed63ea14dca5339a7df
-    verdict: unjudged
-  - rule: date-without-year
-    line: 1367
-    sha256: 76b788aacd311e54d13fc44085592cc30f1e7912929fc95ff64b9aca2aee767e
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 1374
@@ -565,10 +502,6 @@ findings:
     line: 1656
     sha256: 1b1ffc9d989a24811a904f4d474f8a22deece15fffc024c06b7a8600aa94e531
     verdict: correct
-  - rule: date-without-year
-    line: 1690
-    sha256: 604166c73222a2f49c68394e841d0573b5d39c40707e73e9a21a5cff77ccbbc9
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 1718
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -717,11 +650,6 @@ findings:
     line: 2101
     sha256: 5673a7f89a5db711d1504e06637c0d23e61da7badf96489d5c165784f6890e2c
     verdict: unjudged
-  - rule: heading-echo
-    line: 2112
-    sha256: 54f56413510b2910e0565cae1d6f343b2858f948a243f431676b21df73301eca
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: concrete-evidence-density
     line: 2135
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -750,11 +678,6 @@ findings:
     line: 2246
     sha256: 2aa6875075bfda96f32b39f83f21304f39933ad8e16cc3b245927a9125440e1d
     verdict: unjudged
-  - rule: heading-echo
-    line: 2266
-    sha256: 54f56413510b2910e0565cae1d6f343b2858f948a243f431676b21df73301eca
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: date-format-consistency
     line: 2283
     sha256: 88ae3fbe98f46f9a932962110ab08f915773ea7cae555d95a210027172d4d4eb
@@ -831,11 +754,6 @@ findings:
     line: 2490
     sha256: 513050fef0bc83b6df4e8ffb7d407a56c8576715e10999d20a923356cb940f3b
     verdict: unjudged
-  - rule: heading-echo
-    line: 2515
-    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: concrete-evidence-density
     line: 2538
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -895,10 +813,6 @@ findings:
   - rule: expletive-construction
     line: 2678
     sha256: c58d9460a75dc9e025131e1257daaf158e8a6115aa0c656acd2ee65c06d8c5a4
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 2681
-    sha256: 9c43e20a0aeda5b446ce517b573095b87e21247dcce3e4db36e553c94333742e
     verdict: unjudged
   - rule: dangling-participle
     line: 2689
@@ -1183,11 +1097,6 @@ findings:
     line: 3808
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: heading-echo
-    line: 3830
-    sha256: 130654ddd7679225ad19c93d2411df8d010dec2318c023f510db0a247752cfcb
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: ordinal-suffix-mismatch
     line: 3861
     sha256: be8251cd5a68c7a5fe4108c5b6531f71a9171299c106bfa9d602d4648d73f394
@@ -1224,11 +1133,6 @@ findings:
     line: 3973
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: heading-echo
-    line: 3988
-    sha256: bb38f5c21cdfa47fb09a4a1c7f623278de030c6ffa7985347e5ed3893395115f
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: concrete-evidence-density
     line: 4052
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -1237,17 +1141,9 @@ findings:
     line: 4055
     sha256: be80af4bf958982086b69e4eb662540fde7271ca0dba226bd95e9503e432d832
     verdict: unjudged
-  - rule: date-without-year
-    line: 4092
-    sha256: c0f52ef4504e18b6b04b16e51fde27a87b53a9a1744f7e2ae74036a2638c9d4d
-    verdict: unjudged
   - rule: undefined-acronym
     line: 4108
     sha256: b88a3459a9cb394f95d10cd7412ff4ada091fe2e70899a89091eb4f2eb2e3947
-    verdict: unjudged
-  - rule: date-without-year
-    line: 4112
-    sha256: b9942cc08541cf0c69c7176aa78669167ec88dde78e31b3b76417ae287e168e4
     verdict: unjudged
   - rule: numbering-gap
     line: 4146
@@ -1309,11 +1205,6 @@ findings:
     line: 4300
     sha256: ae94aa52142b67562f1abaac86f2d052002351b348b8bd90141399cac6f818a4
     verdict: unjudged
-  - rule: heading-echo
-    line: 4312
-    sha256: f68aaf9577173201d0d53f954a30311f7388470dba7c860a1e3680560d92fb61
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: max-sentence-length
     line: 4331
     sha256: b94eecb7f25de3326bba075a65d5b7761d3e29145bed70d9dcbda44f06629fdb
@@ -1386,11 +1277,6 @@ findings:
     line: 4616
     sha256: 5373221ac7c6bff16710cb40b61c12430d21dceeb537e11957ab9519c62fb96a
     verdict: unjudged
-  - rule: heading-echo
-    line: 4621
-    sha256: 8075cfd96f9b65f44dd0cfbe4e3528ba4a251dffce95aa1ac44c537d3f56ebe5
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: concrete-evidence-density
     line: 4638
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -1479,11 +1365,6 @@ findings:
     line: 4793
     sha256: a168af3f25e239c81ca66c2d6f78b0b431ff677f39a76aa7fac2eadf99601282
     verdict: unjudged
-  - rule: heading-echo
-    line: 4796
-    sha256: bfc7a3b85893d768f0be557bb1b3da92cf1cb445555de7cf3b33e483307b2cdd
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: date-format-consistency
     line: 4802
     sha256: 0334c91561e15178349f0a62c5a787e59fd7ac0df9d43184497a8440db0f5e54
@@ -1508,11 +1389,6 @@ findings:
     line: 4899
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: heading-echo
-    line: 4917
-    sha256: fcca79f5e2e5df10248be03fc3d045af50261da896133c99b5440941fb595444
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: concrete-evidence-density
     line: 4936
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -1525,11 +1401,6 @@ findings:
     line: 4979
     sha256: f672065cd95562a3d3809a69008776a662745d0dbec98212c4d07802d475f413
     verdict: unjudged
-  - rule: heading-echo
-    line: 4992
-    sha256: 3d56f635108508a4009b4eda172721aff14b2416b116843318db424041e8c509
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: date-format-consistency
     line: 5005
     sha256: 9d95a2cf0d7180b5089691163b188a7203b0cde179346b8cfaa8ab6c2c3e6414
@@ -1710,11 +1581,6 @@ findings:
     line: 5278
     sha256: c6f6ec7ad32d9ba2067b70d36ca102b1c3ee5ae88692255fb354439d3afe357c
     verdict: unjudged
-  - rule: heading-echo
-    line: 5290
-    sha256: b09f5ee5b99f9587841da294d3374f174794282b9b46a406e3d4c17bcd77e092
-    verdict: false-positive
-    note: the field label of the project report template repeats the section heading; it is a form field, not an echo
   - rule: date-order
     line: 5302
     sha256: 59206c1cda5a3120063c1d0eeb5aae3396c9529f15d12a1818d2103f3c0f2af3

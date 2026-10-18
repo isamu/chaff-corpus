@@ -5,12 +5,11 @@ findings:
     line: 5
     sha256: 988123b3e90197792ab1679d688249d2edd5d011b85a8c96a44cbb5a66e0ed37
     verdict: false-positive
-    note: "a minutes page that lists its attendees by name; the names make the density"
+    note: a minutes page that lists its attendees by name; the names make the density
   - rule: bracket-width-consistency
-    line: 20
-    sha256: 3def278b5b90fc1692a68d957d63d3917de6d23480a92fb125cf9aed02be0d93
-    verdict: false-positive
-    note: "half-width (1) list markers used consistently as enumerators; the full-width brackets elsewhere are prose brackets"
+    line: 29
+    sha256: f1ba8703f1c13636d36f991a02ebac3cc7f51c73f33e367695844f1b41acf243
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 41
     sha256: 7095502b2515c0cee98cf7303961bbde35bca99dc18d808d78b4508e808b02e7
@@ -19,12 +18,7 @@ findings:
     line: 42
     sha256: 1c91cc3e9c72e34147cd6ae74e31be14062de45578fa18a00170c48f50da5095
     verdict: correct
-  - rule: max-sentence-length
-    line: 55
-    sha256: ccceb5220ce6626f1e7140a40a8cf3812d59e84536c7f55f3967fee96b24a213
-    verdict: false-positive
-    note: "attachment list lines with no 。 are joined into one 'sentence'"
   - rule: no-doubled-joshi
     line: 44
-    what: "one short phrase repeats the same case particle twice (a garbled duplicated phrase about the manufacturers)"
+    what: one short phrase repeats the same case particle twice (a garbled duplicated phrase about the manufacturers)
     verdict: missed

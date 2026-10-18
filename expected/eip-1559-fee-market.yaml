@@ -11,11 +11,6 @@ findings:
     text: There is a base fee per gas in protocol,
     message: This sentence runs 44 words (limit 40)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 24
-    text: Senders will always pay the base fee per
-    message: "\"doesn't\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: max-sentence-length
     line: 24
     text: Senders will always pay the base fee per

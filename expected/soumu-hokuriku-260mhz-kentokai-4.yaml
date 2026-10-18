@@ -5,24 +5,17 @@ findings:
     line: 5
     sha256: eaadf2f6efb20d1cb03b6c5f04fce3a4f5cdf4bf742817fe0fef6383b4fd44a6
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 24
-    sha256: bafb9adac1d93116987ecf122f650b7655103f4aa5f042d1560d8a0403de60f8
-    verdict: false-positive
-    note: a half-width (1) item marker referred to in prose, matching the page's enumerators
   - rule: no-mixed-desumasu
-    line: 43
-    sha256: bd912226841f888834a4705e5f53f7f3033f39d9052e8e66d42e5b9eb06e3141
-    verdict: false-positive
-    note: an attachment list entry (document name and file size) read as a plain-form sentence
-  - rule: no-mixed-desumasu
-    line: 45
-    sha256: 19aa9e5c7a51c662ca20bf2fc82dd77a4bed4eae445bc38920a8dfc1025d773c
-    verdict: false-positive
-    note: an attachment list entry (document name and file size) read as a plain-form sentence
+    line: 44
+    sha256: 0cf610476339b5c9cdf1ec234c0a6e47e3daccada206d72070230ab015c137cf
+    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 46
     sha256: 95d84ea86898a46dc649b96316bc9a65c63bec017ebbbd2c7fe608e0c1dd392e
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 46
+    sha256: dc714396b75bea7ade302df1f66ff4c78c21d4ab8b90fec018920f9d771c080e
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 50

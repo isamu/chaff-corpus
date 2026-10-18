@@ -1,29 +1,13 @@
 id: gitlab-jd-instructional-designer
 chaff: 0.34.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    sha256: cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 7
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: list-item-form-mix
     line: 15
     sha256: 4d369779576798fce69462571ee6deca770271ddd4aab74986434bd84650b830
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 66
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: oxford-comma-consistency
     line: 71
     sha256: d601d9da6f2f0df6464357f4edace8ac7461baa381d7b93e3d219cd03e531578
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 89
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: list-item-form-mix
     line: 98

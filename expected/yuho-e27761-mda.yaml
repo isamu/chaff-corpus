@@ -3,6 +3,16 @@ chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
     line: 1
+    text: (２)生産、受注及び販売の実績①生産実績当社は生産活動を行っておりませんので、該
+    message: 括弧を「(」と書いています（この文書はふつう「（」。83 箇所のうち 11 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
+    text: (３)経営者の視点による経営成績等の状況に関する分析・検討内容文中の将来に関する
+    message: 括弧を「(」と書いています（この文書はふつう「（」。83 箇所のうち 11 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
     text: (営業活動によるキャッシュ・フロー)営業活動の結果得られた資金は、35億14百万
     message: 括弧を「(」と書いています（この文書はふつう「（」。81 箇所のうち 9 箇所が違う）
     verdict: unjudged

@@ -1,6 +1,11 @@
 id: 18f-blog-oracle-databases
 chaff: 0.33.0
 findings:
+  - rule: contraction-consistency
+    line: 18
+    text: Reference to any non-federal entity does
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: unjudged
   - rule: quote-style-consistency
     line: 26
     text: "'s first technical tutorial blog post [s"
@@ -10,6 +15,11 @@ findings:
     line: 30
     text: "'re already familiar with [using the com"
     message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 32
+    text: We will provide guidance on importing da
+    message: "\"we will\" is written \"we'll\" elsewhere in the document"
     verdict: unjudged
   - rule: quote-style-consistency
     line: 32
@@ -71,6 +81,11 @@ findings:
     text: "'s think through the setup before we run"
     message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 138
+    text: This is the volume that holds all the Or
+    message: "\"we will\" is written \"we'll\" elsewhere in the document"
+    verdict: unjudged
   - rule: quote-style-consistency
     line: 138
     text: "'re not using the format `host_path:cont"
@@ -85,6 +100,11 @@ findings:
     line: 140
     text: We won’t be doing anything with that in
     message: This sentence runs 47 words (limit 40)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 142
+    text: Lastly, the environment-setting block on
+    message: "\"we are\" is written \"we're\" elsewhere in the document"
     verdict: unjudged
   - rule: shell-prompt-mix
     line: 158
@@ -130,6 +150,11 @@ findings:
     line: 221
     text: "'s add a command to our Docker Compose f"
     message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 253
+    text: So we are in control of when this runs.
+    message: "\"we are\" is written \"we're\" elsewhere in the document"
     verdict: unjudged
   - rule: quote-style-consistency
     line: 253

@@ -6,8 +6,3 @@ findings:
     text: の余白のトリミングの程度によって、資料本体に重なることもあります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 149
-    text: 関西館文献提供課複写貸出係
-    message: 「関西館文献提供課複写貸出係」は漢字が 13 字続いています（8 字まで）
-    verdict: unjudged

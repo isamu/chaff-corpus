@@ -3,6 +3,11 @@ chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
     line: 1
+    text: (2)経営者の視点による経営成績等の状況に関する分析・検討内容経営者の視点による
+    message: 括弧を「(」と書いています（この文書はふつう「（」。82 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 1
     text: )経営成績等の状況の概要当連結会計年度における当社グループ（当社及び連結子会社）
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 2 箇所が違う）
     verdict: unjudged

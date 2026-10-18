@@ -2,11 +2,6 @@ id: 18f-handbook-procurements-over-10000
 chaff: 0.34.0
 findings:
   - rule: undefined-acronym
-    line: 25
-    text: FAC-COR](https://docs.google.com/documen
-    message: '"FAC-COR" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 29
     text: GSA IT asks technical and security quest
     message: '"GSA" is used without an expansion (9 such acronyms)'

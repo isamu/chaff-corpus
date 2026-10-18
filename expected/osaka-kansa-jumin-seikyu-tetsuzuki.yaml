@@ -21,18 +21,6 @@ findings:
     text: 手続に関する連絡は代表者宛てにさせていただきます。
     message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: ngram-repetition
-    line: 67
-    text: 大阪市長や市職員等に、違法又は不当な財務会計上の行為又は怠る事実があり、市の財政
-    message: 「の行為又は怠る事」が 7 回出てきます（5 回まで）
-    verdict: false-positive
-    note: the statutory term 財務会計上の行為又は怠る事実 (地方自治法 242条), repeated because it is what the page is about; it has no shorter form
-  - rule: requirement-smell
-    line: 89
-    text: など、どのような措置を必要と考え、求めるのかを記載する必要があります。
-    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: など ends the statute's examples of measures the requester may ask for; the choice is the requester's, so the list is open by design
   - rule: bracket-width-consistency
     line: 93
     text: (1)違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった

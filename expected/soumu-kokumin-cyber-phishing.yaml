@@ -1,11 +1,6 @@
 id: soumu-kokumin-cyber-phishing
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    text: ""
-    message: 「フィッシング詐欺とは？」の節に数値もコードもリンクもありません（そういう節が 3/4）
-    verdict: unjudged
   - rule: weasel-word
     line: 3
     text: なお、フィッシングはphishingという綴りで、魚釣り（fishing）と洗練
@@ -35,11 +30,6 @@ findings:
     line: 23
     text: " を数字の 0 にしたり、アルファベットの大文字の(アイ) I を小文字の（エル"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 27
-    text: ""
-    message: 「正しいURLや正規のアプリケーションを用いてアクセスする」の節に数値もコードもリンクもありません（そういう節が 3/4）
     verdict: unjudged
   - rule: latin-spacing
     line: 29
@@ -85,9 +75,4 @@ findings:
     line: 33
     text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
     message: 「は」で出した主題から述語まで 186 字あります（80 字まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 36
-    text: ""
-    message: 「なりすましメールに注意する」の節に数値もコードもリンクもありません（そういう節が 3/4）
     verdict: unjudged

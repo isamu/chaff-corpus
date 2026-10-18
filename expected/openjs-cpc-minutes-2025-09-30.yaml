@@ -5,16 +5,12 @@ findings:
     line: 5
     sha256: d350c9167555752871315d040939826d433283b49b062fa037c36e16b2a05426
     verdict: correct
-    note: "the recording link was never filled in"
-  - rule: bare-url-mix
-    line: 6
-    sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    note: the recording link was never filled in
   - rule: empty-section
     line: 24
     sha256: 72fabd8d339bf79cd634987065e3730d428df3319b420d581b578996b19bea15
     verdict: correct
-    note: "a template heading left empty"
+    note: a template heading left empty
   - rule: bare-url-mix
     line: 28
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
@@ -43,15 +39,11 @@ findings:
     line: 52
     sha256: 2b1498d627076c4aa8b14a59b5a6f988911ce530502e04f1bd278c54af11bea5
     verdict: correct
-  - rule: contraction-consistency
-    line: 59
-    sha256: d783850829969abde3b776f64f5cb804a28343a716a37b4db6233c08c47d93b0
-    verdict: unjudged
   - rule: name-variant
     line: 61
     sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
     verdict: correct
-    note: "the conference is spelled two ways in the minutes"
+    note: the conference is spelled two ways in the minutes
   - rule: undefined-acronym
     line: 61
     sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
@@ -80,10 +72,6 @@ findings:
     line: 90
     sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
     verdict: unjudged
-  - rule: title-case-consistency
-    line: 93
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: request-without-deadline
     line: 95
     sha256: 59a0da40c843206a1ef89f95516cbd86de923d573b312244e4806a08c706170f
@@ -104,4 +92,4 @@ findings:
     line: 101
     sha256: b8735d0876cfb0662b63e72050c3f5e0fad762433ddab1a7674976eb9985fc89
     verdict: correct
-    note: "a template heading left empty"
+    note: a template heading left empty

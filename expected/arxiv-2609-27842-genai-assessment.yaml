@@ -1,11 +1,6 @@
 id: arxiv-2609-27842-genai-assessment
 chaff: 0.33.0
 findings:
-  - rule: all-caps-shouting
-    line: 7
-    text: WORKING GROUP MEMBERS
-    message: '"WORKING GROUP MEMBERS" is written in capitals'
-    verdict: unjudged
   - rule: abstract-length
     line: 55
     text: "### Introduction"
@@ -15,6 +10,16 @@ findings:
     line: 99
     text: 2 rooms that were cross-cutting by desig
     message: '"2" here, where the document usually writes numbers below ten like "two" (1 of 18)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 125
+    text: How do we make a task specific enough th
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 183
+    text: How do we design a project that requires
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: unjudged
   - rule: wordy-phrase
     line: 211
@@ -51,10 +56,20 @@ findings:
     text: recognised that scaling assessment remai
     message: '"recognised" here, where the document usually spells it "recognized" (3 of 26)'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 399
+    text: How do we know process documentation, or
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: unjudged
   - rule: wordy-phrase
     line: 419
     text: But the balance is genuinely hard to str
     message: '"in order to" can be said in fewer words'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 535
+    text: How do we run oral exams that aren’t jus
+    message: "\"aren't\" is written \"are not\" elsewhere in the document"
     verdict: unjudged
   - rule: spelling-consistency
     line: 605

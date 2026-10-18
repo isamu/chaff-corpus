@@ -73,10 +73,6 @@ findings:
     line: 152
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 168
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: unqualified-superlative
     line: 172
     sha256: 98595fada453e013d5dca8e0b7766cc3d8263174d352bad3bc0e38b5e3e9efe5
@@ -197,10 +193,6 @@ findings:
     line: 338
     sha256: 134938dff8a58f14c04378b553daa871ad8b8b17a65ad20f6000f1909dd7d00b
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 368
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 390
     sha256: 0fdf8c85861066b0b1588e93bd2fb7976196c9a8789adc5a2a3a50962ea0ae4a
@@ -248,6 +240,10 @@ findings:
   - rule: concrete-evidence-density
     line: 450
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 456
+    sha256: 9f45715b30e74867d0e56d474889a41519050f8d8783c41a3f57e6e411d575d9
     verdict: unjudged
   - rule: expletive-construction
     line: 467
@@ -341,10 +337,6 @@ findings:
     line: 574
     sha256: 6165ae7abe139b19333b6837759169b6e75c0c2ceb549d1ec87fdac7e9082ad3
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 574
-    sha256: a912274a84f1f8b15696f28d11e5d68c6cedc03e9c4cb0444d1a59800dec1a5c
-    verdict: unjudged
   - rule: emoji-heading
     line: 584
     sha256: c3582b916a42171a1bf759180902cc3b572d591bf4f4465f58020ac0ef3300fa
@@ -437,14 +429,6 @@ findings:
     line: 757
     sha256: c88737cf430a357719171796c2c33f7004150a4f00fcd3c1598e977ed77ab240
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 770
-    sha256: 216bc4c6bcfdb5472a0890462fd3312680686f3640e528564b492e1690e64484
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 773
-    sha256: 772b4f1c942c9cdb1f4b51849882cecf9a5aff04217afbf4340284ddf582f86a
-    verdict: unjudged
   - rule: emoji-heading
     line: 780
     sha256: 7a0e8d8cec4fcc97fc69324f1183eaf8149f4d2f1070eac58637a69848e706b3
@@ -473,13 +457,17 @@ findings:
     line: 794
     sha256: f490d661385a8bfe0b0c319cac6f60560c44cbe184e3ddc942e8fecfcfbbe2ff
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 799
-    sha256: 179a153a9f5afe45efd2ee371f1464e37723225434ede10ccb80f5d94c0cfc77
+  - rule: contraction-consistency
+    line: 810
+    sha256: 9ce2b4f9cf2db49843ccbe3038f32ee362e00920f0e635a803980c187d47ae79
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 825
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 835
+    sha256: bae1fd4285e4c016a02f8087dd428b50b302a3cc1181bbbf2d49f24a93b323e3
     verdict: unjudged
   - rule: wordy-phrase
     line: 845

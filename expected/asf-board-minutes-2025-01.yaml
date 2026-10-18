@@ -37,6 +37,10 @@ findings:
     line: 92
     sha256: d3551381849b4fceaf5a605574ebc1572338992e582a675f00941f97801a1107
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 122
+    sha256: d3d52d28d0f23b1bc2b226c686ad9bd5fed3a2c094c86f021d34777d586e6d74
+    verdict: unjudged
   - rule: undefined-acronym
     line: 135
     sha256: e5d1693a1200338a6ea2b278af688d2a4e502765d6fb32e404220d7c3f5763f6
@@ -58,264 +62,36 @@ findings:
     sha256: 0e760de31058341b424968a269470287343a3e0200b01442d96873c9ccdbebe4
     verdict: unjudged
   - rule: undefined-acronym
-    line: 293
-    sha256: c6b800f3a9ae686cdc023ffdeee192f381d449427ececa2b478806592922803b
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 299
-    sha256: 26e7acc238ac2340e94c247cb2d791038fc2f4d8c8415f3d63d8388c0aaecca1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 303
-    sha256: 6e47ea91263c69b312f95822d53208c3d36fa6dc7ecab88a1375300c03542cbd
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 307
-    sha256: 647cc782ec6519cb1b29f08108c6f5c36ddfcd2454cb7634f00f7e84a17e3994
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 311
     sha256: 1c8611331d80369864d65c2e13a1993652c8c377b5d817c57bf91a58b6e17f96
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 313
-    sha256: 2328ba7c5a78d876614da93a382a5039193fc8ce1b3c7c101ef575c21b151ed1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 317
-    sha256: 11953b32809b37cc69e72a05c255e254ffe2b115ae5e815d5657d86e453975a3
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 321
-    sha256: 7c8fe262f4e5613c14a894beb2ad32fda2a4b8f84e15c509691b2b23532208d1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 325
-    sha256: 42046d5af119e5d55fe64b27a6c110158cd288a1bfec29268fc3f5bc33b57ad2
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 333
-    sha256: b12b4c16f9a8f68837762c5eecbd8b4344676cc9b3dec78060addec3c4350140
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 337
-    sha256: 526c1e3117ef12e1654542aeb2189f47ff231f8eedd51990f2e591c0a8c3c1c3
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 341
-    sha256: bdabca9b4dbf885bdc2bcd6c3d4b6b7accd3debe49d4e58ed26d85fa870aad44
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 345
-    sha256: a66c96f774b6e0552db6a32eafb84712a738282e9a3dbb91ec6f3708b8227494
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 349
-    sha256: 5fcded1244a15c621f9c54976c354d99fdedede93bed289e175ce585e7f59819
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 353
-    sha256: b7e410ad4ed59ac770fa7185dd40c3b532c88b1805ca65555e6839efee4ddbe1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 357
-    sha256: f3e5bc90120c90f75a28d471dcc271e90155603bb96777e55cc27165006b36e3
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 361
-    sha256: 0373f113af66df0c0a3b902ff10185a01adb429863e1ac827cd57c4e0552d32a
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 367
-    sha256: 3a153edcdcda71ae915bac4f23f10ab07e7d981848e0174039c9cde963b5e7fd
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 373
-    sha256: 14b4b40676432c14d7c6a79f14a9f0abea15c5403dce591fdd32b6e69d623023
     verdict: unjudged
   - rule: undefined-acronym
     line: 373
     sha256: 43cc4437992854d7e1be22134c869f37328ffff50558e95d13e0a9409910862c
     verdict: unjudged
   - rule: undefined-acronym
-    line: 377
-    sha256: bf3613c62f96f4ada2d0e423f03a39f8f30e4b23d8e2bbe1bb20266fddad041e
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 381
-    sha256: febc7241664c649f7650732e3f78eca770c6548dda08accafcf9563c1d32e329
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 385
-    sha256: ded399844fa8fab88fdc003d6bdece69d0b933cb3b9783693f2beb3963410b04
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 389
-    sha256: 68546844259554b26645582fc8dd6a4f609b4a27b36cd714860ab4cc1157a45d
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 393
-    sha256: bb695e086eed20210a7978bf9e637d0b3508b1957b37f362fba576c2fd1c2e33
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 397
-    sha256: a9df089a03b054a49bddb22d7b507aa91da31332ab6a4dae578cca86ff1ab205
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 401
-    sha256: baa0e10c53b1235ff9e88e3a083c55c6abd4dc4b051274438283b6f25c726ffe
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 405
-    sha256: 04bfba3a45c646b7299f70d79447fe72c221f0d7705dd91675112745fbed8e49
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 409
-    sha256: cafb3a16f383c3f59835e4b7bb6a0129698fd9c1a6b84bbfd5d95ea414275155
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 413
     sha256: bc0a730c0186ff5ba778eb7c1d6f429cf9e8832747fccd6c9317565de18f6e9f
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 413
-    sha256: ecf933ddf08a06e292b7496385ba98375af75acbae1302499386ac50f1e07749
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 417
-    sha256: 3d2d50c660def6ad9d103fb44f5083bfab8129e302c6a34a0fa22bbe3f8cd725
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 421
-    sha256: 6b384547137506892f88d893003dd989621457a2b7a315389cd7537d1ff4670e
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 425
-    sha256: ef9c773f61bf2a617a277521c5347aa8fb4da55a61515393128b83d6bf79b506
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 429
-    sha256: 19fa6fee2e4afaff02d3b41991e931e8df744c9e181b919dea8490fd4548f813
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 433
-    sha256: 8e376486561f30b0ecc3cbb5e86d8d3ca5e745a354d46eef6ea113105a4742f1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 437
-    sha256: 2a403016eae6da15f84629a4bb5af3d8f9671d4642e3ad31c7228f1f44c707ea
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 441
-    sha256: 165cace68655d6f4a7d01960296fd73db7c5d8ba1b74f3c368abfddd1017db23
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 445
-    sha256: 36dcea313e794ea0c39d1b034befa1b90f1017d90bb2ead3bcdd13d7ebd21e4b
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 449
-    sha256: f57f51d77117d0a75554c93fd59023bc3f88d2e930ac6ac282d02a3ed042ee3c
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 453
-    sha256: 0c309d4304d3eeadca2435cae14c21a0d2bb962477ad71bcf37f68588050ec92
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 457
-    sha256: 5c2b9d6cbf07c0524cb0ba5ffb3134e67893a6d018163868d1f962c7672c175b
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 461
-    sha256: 22688528177e6f15f3176b6f311da8bf6d9ac5539fb87b0c138ab1ac115391f7
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 465
-    sha256: 1535e3bd6bba119bc007e3cd8af6419cb3dc300fa319d622684c4ad9411fc71e
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 469
-    sha256: 77456d0cb47282fe36cee9d7e24dbd01c42f361edfb63971a43d7e2dd4e24590
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 473
-    sha256: 2c0201f9e16bbababb3ee1702ecad5de45a17528729347d0d866e9cf7fdfc8b0
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 477
-    sha256: c98a058363160895981c2ae70260b26904930a388171225e18f2e200a2f921f2
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 481
-    sha256: 403f0065954b4605dcd176e0b2b4a9f8138ffeda9538300192972a0ebffed87d
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 485
-    sha256: 93be8fb2d11ecafe3b8798a76a430a341fd306c16efd597e3b651cb3ae155623
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 489
-    sha256: 4ab18126f0e75237ed4064fcdd5381b30f1378a448df6590a59136310e766e41
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 493
-    sha256: e3574806d29d3470a7eaf803eafe91094d9e42692a96200b90f56ca8cddcff0c
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 497
-    sha256: a971b28587b4626bb2d2d5fde07ac523e3d1380b6d1f072ec6026bc05e0786a8
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 501
-    sha256: d444e649652667ab1350b3db0f8a1ec116aa820dbbb9cc2b58d1c4e0e6bcc197
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 505
-    sha256: efaa27f52ce37e27d1811f8887d4a3e8b61267fb3073cbd27dadb57644fdfed1
     verdict: unjudged
   - rule: max-sentence-length
     line: 515
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 522
-    sha256: 74eb6fad17bb16c8f785bd08af6813179b0187693ee6a4f068b97c23452e1da9
-    verdict: unjudged
   - rule: max-sentence-length
     line: 531
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 555
-    sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
-    verdict: unjudged
   - rule: max-sentence-length
     line: 555
     sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 581
-    sha256: 4855960682710981dcdcc176ef19454ea9c53359761840136bc7dbab9b935c99
     verdict: unjudged
   - rule: unknown-word
     line: 605
     sha256: b916571a528dacde498c811e4b31a14e500b5a7fd25ed2cbdf7b5b61d0565dd2
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 608
-    sha256: 81e55e33b58b56150c2bc895c54c7da19cc5c8f885425663a9e41f1faffe558c
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 612
-    sha256: 9fac185fb200112fce87ff6311f284e930611f44d51a77f012a12b72b5933c51
-    verdict: unjudged
   - rule: max-sentence-length
     line: 612
     sha256: 9fac185fb200112fce87ff6311f284e930611f44d51a77f012a12b72b5933c51
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 627
-    sha256: 4855960682710981dcdcc176ef19454ea9c53359761840136bc7dbab9b935c99
     verdict: unjudged
   - rule: space-before-punctuation
     line: 693
@@ -337,17 +113,9 @@ findings:
     line: 731
     sha256: a3b9f9bc8c3cb4c1161dc92730db2b9274dc9f38fe394bbaf8f0dda4c4df623c
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 767
-    sha256: 9bc7e95ecf0f1862e98ee00f38af6ff2bc036b7e085aa866e2d0240e8f08f8e2
-    verdict: unjudged
   - rule: preamble-length
     line: 769
     sha256: 903ea500e7ccf842c1312b6c2f964e3e98ff146456cecec717e9a0e122bf735f
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 773
-    sha256: 47bc0fc58d280164d6bf632e73c4d0b703e318d34591ad7b3015df169cc88853
     verdict: unjudged
   - rule: undefined-acronym
     line: 777
@@ -405,22 +173,6 @@ findings:
     line: 952
     sha256: fe8ee15bb86d27a77f2a62bd71bc65936156c99fe5b58537b347cbad1761fd95
     verdict: unjudged
-  - rule: date-without-year
-    line: 961
-    sha256: 04b0a33d5cd97384a99ef7892944cb1584e7d66b2a7cc6db394a934311846a50
-    verdict: unjudged
-  - rule: date-without-year
-    line: 969
-    sha256: 9e58e2db4c5935c37e788f6d3ecee79a10616793dbe068bd3cd4dcab79c8284a
-    verdict: unjudged
-  - rule: date-without-year
-    line: 970
-    sha256: 0c007e916ad1919ef2538edd8c0733cfd438da6b96f88ce805b4f346bf4641b7
-    verdict: unjudged
-  - rule: date-without-year
-    line: 970
-    sha256: ee738b9fd2f7109ff0628b936fd8de3dd1cb633869777f32e38cf92066aa63a6
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 981
     sha256: ccd5cec655584456ab9f6f23ff832ec3d566db95e305fae81bde37dcd9353437
@@ -433,17 +185,9 @@ findings:
     line: 992
     sha256: 0286436069876b7ddcb4e0873579ce0550b814f0c688f814f1453ba810d0d058
     verdict: unjudged
-  - rule: date-without-year
-    line: 1008
-    sha256: d8efd23ae07886e9ff2e6b17f9ba384faf5a537b558de90b0ce3b9171ac4d5ba
-    verdict: unjudged
   - rule: undefined-acronym
     line: 1008
     sha256: 2dfed35cb9d679c47f8431cc67ea546f3dfabfa6d44c084739f5e04733f568a0
-    verdict: unjudged
-  - rule: date-without-year
-    line: 1011
-    sha256: 0035002263ece9dab7ea5e0237157421f758d38d2986083dfb68e9888e8956b7
     verdict: unjudged
   - rule: undefined-acronym
     line: 1011
@@ -513,10 +257,6 @@ findings:
     line: 1070
     sha256: a4e920c59d79b05ec2fa022d047ae1729efb532813d49e52e98231d4945b5c2e
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1093
-    sha256: 054753027146e03d76a166a98b405cff81c2526da988a5f963e46b212c5c6e32
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 1096
     sha256: 35a89894abafeed85ca9c759ea741e8ffb0518ba51aba388a44009abb77dc3d5
@@ -544,10 +284,6 @@ findings:
   - rule: orthographic-variant
     line: 1179
     sha256: 9958eb5218d1da9b875cde2f25b79581f314cc4723c38ae87c10298a3dbb0769
-    verdict: unjudged
-  - rule: heading-echo
-    line: 1196
-    sha256: 130654ddd7679225ad19c93d2411df8d010dec2318c023f510db0a247752cfcb
     verdict: unjudged
   - rule: ngram-repetition
     line: 1200
@@ -625,10 +361,6 @@ findings:
     line: 1557
     sha256: 3a42d91fa748ebbf4e335c18a84323c5b4d1ec627e8aa5a6cdd45bc9f6079980
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1605
-    sha256: 0c4a0fed2eb78c3528dc0d40f5181f44bdcb372c9109131264b55470575d61d6
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 1651
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -653,10 +385,6 @@ findings:
     line: 1713
     sha256: fc5e5cd07914b152a03382bfc3b208eb1b4e2a113faacac97ddbb5cdf32f569d
     verdict: unjudged
-  - rule: heading-echo
-    line: 1719
-    sha256: 32207fb2dc8463e7bc5e10d5116317cc23cf3878518c50dd227f006869bd0b92
-    verdict: unjudged
   - rule: expletive-construction
     line: 1727
     sha256: 81743b20e9d0b7767e3c5981d763c30c56ddaed591c908d34852d100e4fe748d
@@ -664,10 +392,6 @@ findings:
   - rule: undefined-acronym
     line: 1733
     sha256: 2ff04307da2ede65ef14c45c779c0543171285ddad480eecf8f2189c4ed32277
-    verdict: unjudged
-  - rule: date-without-year
-    line: 1740
-    sha256: 89b626d5b7d69a42549b873ea9f088b24c4f1e26321ac44e995c71f9fc421108
     verdict: unjudged
   - rule: unknown-word
     line: 1756
@@ -744,10 +468,6 @@ findings:
   - rule: undefined-acronym
     line: 1946
     sha256: 91aac5aa9b2ed9bc32dd2365c449978912aeef6cc84a0eb6155405f8e6092afa
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1947
-    sha256: 4407ab35d13f364d4494d1c65a82d429f5964253937c60eabfdf182aa787b4e1
     verdict: unjudged
   - rule: undefined-acronym
     line: 1948
@@ -861,6 +581,10 @@ findings:
     line: 2119
     sha256: 22fef39c24ab05d0e7f2a7ca397e03788f937629bc7b51cf37bb3c37bb63c061
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 2126
+    sha256: da15a89ca746e7d76d95ac8b80f70a59f45dc8874ec9b0ebd5ceb5a21c692be6
+    verdict: unjudged
   - rule: concrete-evidence-density
     line: 2139
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -872,14 +596,6 @@ findings:
   - rule: date-without-year
     line: 2180
     sha256: 89e7fe90c718b2e07ee27cdbeef526a3f9ab1b268b787e148b320ad8859c98af
-    verdict: unjudged
-  - rule: heading-echo
-    line: 2216
-    sha256: 1d00d2088b75b4368a05112d7b63518cd2233463f8b48d2619e31d197cf2f982
-    verdict: unjudged
-  - rule: date-without-year
-    line: 2237
-    sha256: 64c718d6a3d33afde922dc650e719f3b8342234c3912b0ebbfc45833e5e1f28e
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 2240
@@ -1025,10 +741,6 @@ findings:
     line: 2536
     sha256: fe065b939da48fc47535f0a4ee0e6b100d663b331af3d0be507cd7abc17b1894
     verdict: unjudged
-  - rule: heading-echo
-    line: 2556
-    sha256: 3d56f635108508a4009b4eda172721aff14b2416b116843318db424041e8c509
-    verdict: unjudged
   - rule: expletive-construction
     line: 2584
     sha256: 1317b7011d0e163fd28e6f67d4115019d2a99fc8ef5d2558365b330d4cc840ae
@@ -1053,10 +765,6 @@ findings:
     line: 2690
     sha256: b35f87f10eb892da72041322b770127833018f67527764822e10be5e9dbd0bb9
     verdict: unjudged
-  - rule: heading-echo
-    line: 2703
-    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
-    verdict: unjudged
   - rule: expletive-construction
     line: 2712
     sha256: bdcfbd13d708def14a52a81b5e9c97219c5ec53930c903fc4c89fe63e9b08032
@@ -1064,10 +772,6 @@ findings:
   - rule: concrete-evidence-density
     line: 2737
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: heading-echo
-    line: 2738
-    sha256: f8f05ecb410a99d606f43fa8d8ca6057b7bb77cf2a66d3ea0afe27a00e80636d
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 2755
@@ -1080,14 +784,6 @@ findings:
   - rule: undefined-acronym
     line: 2768
     sha256: dc2c07a449150474616a54368e6798d309f4f14584a049e80b24bca4f8ba94d9
-    verdict: unjudged
-  - rule: heading-echo
-    line: 2771
-    sha256: e96598868894ab4061fbf9bd7f455d9b045296171e9396fa5810ba7311598b06
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 2791
-    sha256: ad425546ba825e287d43bd48b258f18b3bfd4a0de3d83aa50f6e2e726a904155
     verdict: unjudged
   - rule: calendar-name-case
     line: 2799
@@ -1132,10 +828,6 @@ findings:
   - rule: quote-style-consistency
     line: 3004
     sha256: bdf4051ad9b38681ea0e466cf2fd8e5da24077a48793e5be173432683d508100
-    verdict: unjudged
-  - rule: heading-echo
-    line: 3015
-    sha256: b6f80dce2c3d0afd98b73e2059e7106bd5a16e53a54a7422e4ebb06ce4c12a45
     verdict: unjudged
   - rule: max-paragraph-length
     line: 3029
@@ -1209,10 +901,6 @@ findings:
     line: 3251
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: heading-echo
-    line: 3252
-    sha256: ee01946e7884ec50fb122151bf4879023764df344e791bb3c98c41f83d46a355
-    verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 3268
     sha256: 6e0bed96c6b65e0e5ebf696b766f118072e1fd853de04c74e82a00641b5ab7ef
@@ -1272,14 +960,6 @@ findings:
   - rule: concrete-evidence-density
     line: 3519
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3530
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: heading-echo
-    line: 3531
-    sha256: 32207fb2dc8463e7bc5e10d5116317cc23cf3878518c50dd227f006869bd0b92
     verdict: unjudged
   - rule: undefined-acronym
     line: 3563
@@ -1344,14 +1024,6 @@ findings:
   - rule: undefined-acronym
     line: 3821
     sha256: 67889dd315c9f68a9c6e2b4c42c6c82fd0695930f4914ae86127d24b4ffece22
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3830
-    sha256: 5fa7a841564c27a8c7f85a1921f97c3ad980ceb0bd3f50a89fb276dbfcdd43cb
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3838
-    sha256: f93971f17fdd3ba99ae39d93d45e345dfce826c6a2a9d106cfe4e780295cd062
     verdict: unjudged
   - rule: expletive-construction
     line: 3879
@@ -1436,10 +1108,6 @@ findings:
   - rule: expletive-construction
     line: 4158
     sha256: b41f841a406828a1676bc6e361c76f974faca8a346691c34ec7d61465e746715
-    verdict: unjudged
-  - rule: heading-echo
-    line: 4158
-    sha256: d6e4849549bb369df662b16c9a268717d5e2c53b0302da3f028d8cb365d338fb
     verdict: unjudged
   - rule: unknown-word
     line: 4176

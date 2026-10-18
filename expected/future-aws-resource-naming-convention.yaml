@@ -1,30 +1,6 @@
 id: future-aws-resource-naming-convention
 chaff: 0.35.0
 findings:
-  - rule: no-mixed-desumasu
-    line: 13
-    text: 本コーディング規約は、世の中のシステム開発プロジェクトのために無償で提供致します
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: a boilerplate disclaimer paragraph in polite form at the top, deliberately in a different voice from the rules
-  - rule: no-mixed-desumasu
-    line: 14
-    text: ただし、掲載内容および利用に際して発生した問題、それに伴う損害については、フュー
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: a boilerplate disclaimer paragraph in polite form at the top, deliberately in a different voice from the rules
-  - rule: no-mixed-desumasu
-    line: 15
-    text: また、掲載している情報は予告なく変更することがございますので、あらかじめご了承下
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: a boilerplate disclaimer paragraph in polite form at the top, deliberately in a different voice from the rules
-  - rule: undefined-acronym
-    line: 30
-    text: AWS の構成はマネージドサービスを活用するベストプラクティスに従うものとする
-    message: 「AWS」が説明なしで使われています（説明のない略語 19 個）
-    verdict: false-positive
-    note: AWS is the vendor's brand name and the subject of the whole document, not an acronym to expand
   - rule: orthographic-variant
     line: 64
     text: 事で、誤った環境のリソースを操作してしまうミスを低減する
@@ -35,12 +11,6 @@ findings:
     text: ELB は最大 32 文字である)
     message: 「ELB」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 115
-    text: もとにバックグラウンドの処理（バッチ処理など）を行う |
-    message: 「もと」と書いています（この文書はふつう「元」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: をもとに (based on) is conventionally kana; the 元 elsewhere is a different use (元となる)
   - rule: undefined-acronym
     line: 121
     text: CD サーバに `jenkins` といった名称を使っても良い。
@@ -57,11 +27,6 @@ findings:
     message: 括弧を「）」と書いています（この文書はふつう「)」。25 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: undefined-acronym
-    line: 148
-    text: AZ 名にはリージョンコードを含めず、末尾のアルファベットだけとする。
-    message: 「AZ」が説明なしで使われています（説明のない略語 19 個）
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 160
     text: VPC のサブネットは、パブリックサブネットの場合インターネットに直接アクセスで
     message: 「VPC」が説明なしで使われています（説明のない略語 19 個）
@@ -71,11 +36,6 @@ findings:
     text: リソース名に AWS サービス名を含めない。
     message: 見出し「AWS サービス名を含めない」を直後の文がほぼそのまま繰り返しています
     verdict: correct
-  - rule: undefined-acronym
-    line: 232
-    text: GCP などを組み合わせたマルチクラウド運用を行っている、あるいは行う予定がある
-    message: 「GCP」が説明なしで使われています（説明のない略語 19 個）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 239
     text: DWH のみ Google BigQuery を利用するようなケース) だけの使
@@ -87,12 +47,6 @@ findings:
     text: REST, HTTP) が存在するが、命名には含めない
     message: 「REST」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 286
-    text: の制限=タグの制限のため、名前は [Amazon EC2 リソースのタグ付け](
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the third の is inside a link that quotes an external page title
   - rule: undefined-acronym
     line: 304
     text: ALB と NLB のセット内で一意である必要がある
@@ -103,12 +57,6 @@ findings:
     text: NLB のセット内で一意である必要がある
     message: 「NLB」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 305
-    text: 付ける](https://docs.aws.amazon.com/ja_jp/e
-    message: 「付ける」と書いています（この文書はふつう「つける」と書く語です。6 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: 付ける is inside a link that quotes the title of an AWS documentation page
   - rule: undefined-acronym
     line: 309
     text: CLB などの種類があるが、いずれも以下の命名規約に従う。また、Internal
@@ -129,12 +77,6 @@ findings:
     text: ECS の命名規約は以下のとおりである
     message: 「ECS」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 374
-    text: CreateFunction](https://docs.aws.amazon.
-    message: 「以下の制約である」が 7 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a fixed formula introducing the constraints, repeated once per resource section of a reference document
   - rule: undefined-acronym
     line: 426
     text: RDS の命名に関する制約](https://docs.aws.amazon.c
@@ -165,11 +107,6 @@ findings:
     text: 毎に分離することもあるため、デバイス名やセンサー名などの発生源の名前を持たせる。
     message: 「毎」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: undefined-acronym
-    line: 576
-    text: SQS キューとメッセージの識別子](https://docs.aws.amaz
-    message: 「SQS」が説明なしで使われています（説明のない略語 19 個）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 580
     text: FIFO キューの場合には `.fifo` のサフィックスで終わる必要がある

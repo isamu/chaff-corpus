@@ -11,11 +11,6 @@ findings:
     text: 9月
     message: 半角の「9」と書いています（この文書はふつう全角の「９」。6 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 3
-    text: 平成27年9月
-    message: 「厚生労働省労働基準局労働保険徴収課」は漢字が 17 字続いています（10 字まで）
-    verdict: unjudged
   - rule: preamble-length
     line: 6
     text: 厚生労働省では、競争の導入による公共サービスの改革に関する法律（平成１８年法律第
@@ -40,11 +35,6 @@ findings:
     line: 22
     text: 実施要項の決定後は、実施要項に従って入札等を行うこととなりますが、入札参加を検討
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 28
-    text: 厚生労働省労働基準局労働保険徴収課
-    message: 「厚生労働省労働基準局労働保険徴収課」は漢字が 17 字続いています（10 字まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 30

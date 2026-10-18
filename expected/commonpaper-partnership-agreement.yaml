@@ -6,125 +6,33 @@ findings:
     text: pay the other party its applicable Fees
     message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 10
-    text: GST, or withholding. However, the paying
-    message: '"GST" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: GST is a common tax abbreviation listed beside VAT and sales tax
-  - rule: undefined-acronym
-    line: 10
-    text: VAT, GST, or withholding. However, the p
-    message: '"VAT" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: VAT is a common tax abbreviation
   - rule: oxford-comma-consistency
     line: 12
     text: Licensor grants to Licensee during the t
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 12
-    text: Licensor grants to Licensee during the t
-    message: '"as necessary" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: quote-style-consistency
     line: 14
     text: "'s prior written permission: (a) alter o"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
-  - rule: vague-word-density
-    line: 14
-    text: In addition, each Licensee will promptly
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 14
-    text: Licensee will not (and will not allow an
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: obligation-without-deadline
     line: 15
     text: submit samples of its proposed uses of t
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 17
-    text: DPA</span>, each party will comply with
-    message: '"DPA" is used without an expansion (3 such acronyms)'
     verdict: unjudged
   - rule: quote-style-consistency
     line: 28
     text: "'s Brand Elements."
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
-  - rule: vague-word-density
-    line: 29
-    text: However, each Recipient may retain Discl
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 41
     text: "'s liability to the extent prohibited by"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
-  - rule: vague-word-density
-    line: 43
-    text: Company</span> will indemnify, defend, a
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 44
-    text: Partner</span> will indemnify, defend, a
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 45
-    text: The Indemnifying Party’s obligations in
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 45
-    text: The Indemnifying Party’s obligations in
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 48
-    text: In addition, Recipient will protect Disc
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 50
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 50
-    text: Recipient may disclose Discloser’s Confi
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 56
-    text: As a result, upon the actual or threaten
-    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 56
-    text: Despite Section 5 (Escalation Procedure)
-    message: '"adequately" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 72
-    text: '"Confidential Information"** means infor'
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 76
     text: "'s products, services, or related offeri"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
-  - rule: vague-word-density
-    line: 78
-    text: '"Force Majeure Event"** means an unfores'
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged

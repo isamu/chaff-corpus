@@ -18,33 +18,8 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 1
-    text: HOF Village Media Group, LLC (the "Villa
-    message: '"HOF" is used without an expansion (8 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 1
-    text: Chief Executive Officer of the Village M
-    message: '"Chief Executive Officer" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 1
-    text: Closing (as defined in the Merger Agreem
-    message: '"Closing" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 1
-    text: Executive Director of the HOF Media Comp
-    message: '"Executive Director" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 1
-    text: Pro Football Hall of Fame ("PFHOF"), HOF
-    message: '"Pro Football Hall of Fame" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 1
-    text: Village Media Group, LLC (the "Village M
-    message: '"Village" is used here, before it is defined on line 1'
+    text: HOF Media Company"). AGREEMENT NOW THERE
+    message: '"HOF" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: date-format-consistency
     line: 9
@@ -75,11 +50,6 @@ findings:
     line: 9
     text: '"Person" means an individual, corporatio'
     message: '"Person" is defined but never used'
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 9
-    text: Youth Sports Management, LLC; HOF Villag
-    message: '"Youth Sports" is used here, before it is defined on line 89'
     verdict: unjudged
   - rule: dangling-reference
     line: 19
@@ -121,30 +91,10 @@ findings:
     text: and/or licensors of PFHOF Works that may
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
-  - rule: undefined-term
-    line: 29
-    text: Pro Football Hall of Fame Enterprisers (
-    message: '"Pro Football Hall of Fame Enterprisers" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 29
-    text: designee. Notwithstanding the foregoing,
-    message: '"designee" is not in the dictionary; did you mean "designed"?'
-    verdict: unjudged
   - rule: use-before-definition
     line: 29
     text: Annual Guarantee for the calendar year i
     message: '"Annual Guarantee" is used here, before it is defined on line 79'
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 29
-    text: NFL Enterprises LLC, PFHOF and PFHOF Ens
-    message: '"NFL" is used here, before it is defined on line 69'
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 29
-    text: NFLN Agreement") (any and all such restr
-    message: '"NFLN" is used here, before it is defined on line 145'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 39
@@ -216,11 +166,6 @@ findings:
     text: 3.4 The Advisory Board shall meet regula
     message: '"3.4" follows "2.14" (expected number 15)'
     verdict: unjudged
-  - rule: undefined-term
-    line: 69
-    text: National Football League (the "NFL"), it
-    message: '"National Football League" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
   - rule: dangling-reference
     line: 79
     text: Section 2.6, the Village Media Company s
@@ -250,11 +195,6 @@ findings:
     line: 79
     text: 4.4 In addition to and without limiting
     message: '"4.4" follows "3.4" (expected number 5)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 79
-    text: FEES 5.1 Subject to Section 2.6, the Vil
-    message: '"FEES" is used without an expansion (8 such acronyms)'
     verdict: unjudged
   - rule: undefined-term
     line: 79
@@ -290,16 +230,6 @@ findings:
     line: 109
     text: (e) Each Party acknowledges that a breac
     message: '"(e)" follows "(b)" (expected number 3)'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 109
-    text: Canton, Ohio, and shall be before a pane
-    message: '"Canton" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 109
-    text: telecopy or facsimile transmission upon
-    message: '"telecopy" is not in the dictionary; did you mean "telescopy"?'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 119
@@ -385,9 +315,4 @@ findings:
     line: 155
     text: Hall · Super Bowl Luncheon · Salute to G
     message: '"Hall" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 155
-    text: Hall of Famer 9. Any licenses or sponsor
-    message: '"Hall of Famer" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged

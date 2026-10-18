@@ -18,16 +18,6 @@ findings:
     line: 10
     sha256: 1fc759690dac307ae42a724aaaf67ecf2e3f7cf4e44733ef55b5f512c537fc39
     verdict: unjudged
-  - rule: date-without-year
-    line: 11
-    sha256: ca8a371fc4999d6617b1fd2e29b797daa630db0f4aa54157cbee97186b3e5457
-    verdict: false-positive
-    note: the year is given after the time in a ctime-style date
-  - rule: date-weekday-mismatch
-    line: 12
-    sha256: d025eb70071949523a8132176c11a0ee2b1035d9defa1891c12fe50e73d65487
-    verdict: false-positive
-    note: the weekday is right for the year of the timeline (2024); the line itself has no year
   - rule: undefined-acronym
     line: 13
     sha256: cee34158c5204abf2b6d3074340d24accf8237527983c88bbeac7b7bf5906081
@@ -37,8 +27,3 @@ findings:
     line: 16
     sha256: c6616784b59e8612af116bf4227da09642b9af68e761afae58978d2c9e2a8492
     verdict: unjudged
-  - rule: empty-table-cell
-    line: 66
-    sha256: ad145ece3faf0aa27f895335139744b11d1f21ca6ba605cd7f45a74a425c9e16
-    verdict: false-positive
-    note: the label cell spans two columns in the source; a Markdown table has no column span, so the converter leaves the second column empty

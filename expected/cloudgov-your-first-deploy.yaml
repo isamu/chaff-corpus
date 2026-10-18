@@ -11,11 +11,6 @@ findings:
     text: You'll see a series of messages noting t
     message: This step is a statement that opens with its subject, unlike the other 6 instructions
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 57
-    text: cloud.gov is not Git-aware – it simply d
-    message: '"is not" is written differently from the rest of the document'
-    verdict: unjudged
   - rule: doubled-word
     line: 71
     text: the Cloud Foundry documentation](http://

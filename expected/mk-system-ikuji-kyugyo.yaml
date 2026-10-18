@@ -3,9 +3,10 @@ chaff: 0.34.0
 findings:
   - rule: orthographic-variant
     line: 22
-    what: 申し出期限 writes the noun 申し出 in a compound, where the document writes the noun 申出 (申出書, 申出者, 申出の撤回)
-    verdict: missed
-    note: correct in chaffjs 0.34.0, lost in 0.35.0 (stem form before a noun read as the verb); isamu/lab#1285 brings it back
+    text: 申し出期限とする。
+    message: 「申し出」と書いています（この文書はふつう「申出」と書く語です。11 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: correct in chaffjs 0.34.0, lost in 0.35.0 (stem form before a noun read as the verb); isamu/lab#1285 brings it back; found by chaffjs 0.36.0
   - rule: bracket-width-consistency
     line: 25
     text: (申し出の撤回等)

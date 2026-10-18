@@ -7,6 +7,11 @@ findings:
     message: 「ページの先頭です。」の節に数値もコードもリンクもありません（そういう節が 5/15）
     verdict: false-positive
     note: site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose
+  - rule: known-misspelling
+    line: 13
+    text: 公共財団法人埼玉県産業振興公社、志木街づくり株式会社の5者連携により、ワンストッ
+    message: 「公共」は「公益」の書き誤りです
+    verdict: unjudged
   - rule: max-sentence-length
     line: 13
     text: 創業マインドの掘り起こしや啓発をより推進するため、市、商工会、一般社団法人地域連
@@ -40,12 +45,11 @@ findings:
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: false-positive
     note: label lines with no 。 are joined with the following lines into one 'sentence', so the topic and predicate look far apart
-  - rule: max-kanji-continuous
-    line: 89
-    text: 小規模事業者持続化補助金＜創業型＞
-    message: 「小規模事業者持続化補助金」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: the run of kanji is an official subsidy's name
+  - rule: known-misspelling
+    line: 82
+    text: 第三保証人なしの創業関連保証が、事業開始の6か月前から利用可能
+    message: 「第三」は「第三者」の書き誤りです
+    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 89
     text: 小規模事業者持続化補助金＜創業型＞
@@ -57,18 +61,6 @@ findings:
     text: の小規模事業者の販路開拓等の取組を支援する小規模事業者持続化補助金＜創業型＞の申
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 91
-    text: 小規模事業者持続化補助金の詳細につきましては、中小企業庁のホームページ＜外部リン
-    message: 「小規模事業者持続化補助金」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: the run of kanji is an official subsidy's name
-  - rule: request-without-deadline
-    line: 96
-    text: 特定創業支援事業により支援を受けたことの証明に関する注意事項 [PDFファイル／
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: a link label to an attached PDF read as a request; the request on the next line applies only to applicants and needs no deadline
   - rule: concrete-evidence-density
     line: 99
     text: ""

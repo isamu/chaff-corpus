@@ -3,14 +3,9 @@ chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
     line: 1
-    text: )経営成績（経営成績に関する分析）当連結会計年度におきましては、世界的な物価高と
-    message: 丸括弧を、全角で 37 箇所、半角で 26 箇所書いています。この文書には書き方が二通りあります
+    text: (1)経営成績（経営成績に関する分析）当連結会計年度におきましては、世界的な物価
+    message: 丸括弧を、全角で 37 箇所、半角で 30 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
-  - rule: currency-notation-consistency
-    line: 1
-    what: 「連結売上高83,494百万(前期比1.2%増)」 drops 円; every other amount in the section is 百万円
-    verdict: missed
-    note: no rule covers a dropped currency unit in prose; this is the closest
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ３ヵ年計画『SHIFT』で掲げた2023年目標連結売上高83,500百万円、連結
@@ -119,6 +114,12 @@ findings:
     text: 文中における将来に関する事項は、当連結会計年度末現在において判断したものでありま
     message: 「ものであります。」が 11 回出てきます（5 回まで）
     verdict: unjudged
+  - rule: number-without-unit
+    line: 1
+    text: 83,494百万(前期比1.2%増)、連結営業利益5,000百万円(前期比7.2
+    message: 「83,494百万」に単位がありません（この文書は「百万」の付いたほかの数に「円」を付けています）
+    verdict: correct
+    note: 83,494百万 drops 円; every other amount in the section is 百万円
   - rule: repeated-sentence-ending
     line: 1
     text: これは主に、配当金の支払額2,300百万円により資金が減少したことによるものであ

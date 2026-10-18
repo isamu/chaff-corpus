@@ -21,11 +21,6 @@ findings:
     text: (as defined in section 106(2) of the Ele
     message: '"(" is never closed'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 31
-    text: CFR 1005.20, pertaining to gift cards; o
-    message: '"CFR" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
   - rule: bracket-nesting
     line: 35
     text: (g) Cash reload mechanism is a device, a
@@ -75,6 +70,11 @@ findings:
     line: 501
     text: "###### Footnotes - 310.5"
     message: Heading "Footnotes - 310.5" goes from level 4 to level 6 (expected 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 503
+    text: CFR pt. 226, compliance with the recordk
+    message: '"CFR" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: heading-level-skip
     line: 553

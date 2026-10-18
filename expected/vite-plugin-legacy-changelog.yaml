@@ -1,30 +1,15 @@
 id: vite-plugin-legacy-changelog
 chaff: 0.33.0
 findings:
-  - rule: sentence-rhythm
-    line: 4
-    text: build:** make client chunkImportMap work
-    message: Sentence length varies by only 25% (want 30%)
-    verdict: unjudged
   - rule: ngram-repetition
     line: 5
     text: deps:** update all non-major dependencie
     message: '"deps: update all non-major" appears 129 times (limit 5)'
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 17
-    text: legacy:** don't use newer syntax when mi
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 24
-    text: legacy:** don't use newer syntax when mi
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 187
-    text: legacy:** don't lower CSS if legacy chun
-    message: "\"don't\" is written differently from the rest of the document"
+  - rule: sentence-rhythm
+    line: 64
+    text: See [8.1.0-beta.0 changelog](https://git
+    message: Sentence length varies by only 1% (want 30%)
     verdict: unjudged
   - rule: bold-density
     line: 276
@@ -41,11 +26,6 @@ findings:
     text: udpate vite and plugins to stable ([#112
     message: '"udpate" is not in the dictionary; did you mean "update"?'
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 666
-    text: legacy:** don't force set `build.target`
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: empty-section
     line: 683
     text: "## [2.1.0](https://github.com/vitejs/vit"
@@ -55,21 +35,6 @@ findings:
     line: 705
     text: systemjs ([#9635](https://github.com/vit
     message: '"systemjs" is not in the dictionary; did you mean "systems"?'
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 763
-    text: plugin-legacy:** don't include SystemJS
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 865
-    text: don't force terser on non-legacy (fix [#
-    message: "\"don't\" is written differently from the rest of the document"
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 963
-    text: don't force polyfillDynamicImport if ren
-    message: "\"don't\" is written differently from the rest of the document"
     verdict: unjudged
   - rule: heading-level-skip
     line: 1114

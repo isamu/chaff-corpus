@@ -1,12 +1,6 @@
 id: jbaudit-saiyou-hyougaki
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 3
-    text: 会計検査院では、国家公務員中途採用者選考試験（就職氷河期世代）を活用し、令和８年
-    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a national examination (proper noun); the kanji run is the name itself
   - rule: stray-space
     line: 9
     text: " をご確認ください。（別ウィンドウで開きます。）"
@@ -27,34 +21,26 @@ findings:
     text: 2次選考の実施について(本文)（別ウィンドウで開きます。）
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
+  - rule: kanji-compound-slip
     line: 17
-    text: 国家公務員中途採用者選考試験(就職永河期世代)事務·技術区分第2次選考の実施につ
-    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a national examination (proper noun); the kanji run is the name itself
-  - rule: fullwidth-alnum-consistency
-    line: 18
-    text: 2次選考の実施について(概要)（別ウィンドウで開きます。）
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
+    text: 就職永河期世代)事務·技術区分第2次選考の実施について(本文)（別ウィンドウで開
+    message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 18
-    text: 国家公務員中途採用者選考試験(就職永河期世代)事務·技術区分第2次選考の実施につ
-    message: 「国家公務員中途採用者選考試験」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: the official name of a national examination (proper noun); the kanji run is the name itself
-  - rule: bracket-nesting
-    line: 35
-    text: ※第２次選考試験面接カードをダウンロードする際は、「開く」ボタンを押さずに、『名
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: the inner brackets are a file name quoted literally (【…】（氏名）); they cannot be flattened
   - rule: orthographic-variant
     line: 17
     what: 就職永河期世代 is a typo for 就職氷河期世代, which the page writes elsewhere (lines 3, 35)
     verdict: missed
     note: "永 for 氷: one kanji differs from the term the document uses everywhere else"
+  - rule: fullwidth-alnum-consistency
+    line: 18
+    text: 2次選考の実施について(概要)（別ウィンドウで開きます。）
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: kanji-compound-slip
+    line: 18
+    text: 就職永河期世代)事務·技術区分第2次選考の実施について(概要)（別ウィンドウで開
+    message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
+    verdict: correct
   - rule: orthographic-variant
     line: 18
     what: 就職永河期世代 is a typo for 就職氷河期世代 (same as line 17)

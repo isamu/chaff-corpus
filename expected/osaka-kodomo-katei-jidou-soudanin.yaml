@@ -22,9 +22,9 @@ findings:
     message: 「うける」と書いています（この文書はふつう「受ける」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 42
-    text: （1）以下のいずれかに該当する者
-    message: この文は 250 文字あります（140 文字まで）
+    line: 43
+    text: 1 . 学校教育法（昭和2 2年法律第2 6号）に基づく大学において、児童福祉、
+    message: この文は 234 文字あります（140 文字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 43
@@ -76,11 +76,6 @@ findings:
     text: ア 大阪市家庭児童相談員(会計年度任用職員)任用候補者登録試験採用申込書
     message: 「任用候補者登録試験採用申込書」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
-  - rule: request-without-deadline
-    line: 164
-    text: 任用区について、配慮事項がある方は「配慮事項」欄にご記入ください。ただし、ご記入
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: unjudged
   - rule: latin-spacing
     line: 183
     text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
@@ -96,11 +91,6 @@ findings:
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 3 箇所が違う）
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 185
-    text: （「家庭児童相談員（会計年度任用職員）任用候補者登録試験採用申込書請求」と明記）
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
   - rule: latin-spacing
     line: 185
     text: " 円分を貼付し、受験者のあて先を明記した返信用封筒（長形3号）を同封のうえ、後掲"
@@ -115,6 +105,11 @@ findings:
     line: 185
     text: ※ ダウンロードできない場合、後掲「申込書受付場所（申込書送付先）」にて受付期間
     message: この文は 178 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 189
+    text: 申込み期間：
+    message: 「申込み」と書いています（この文書はふつう「申込」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 193

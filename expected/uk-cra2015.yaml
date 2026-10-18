@@ -36,35 +36,15 @@ findings:
     text: section 19 for the effect of goods not c
     message: "\"effect\" does not appear in section 19 (Consumer's rights to enforce terms about goods)"
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 197
-    text: Section 19 Consumer's rights to enforce
-    message: This paragraph runs 14 sentences (limit 12)
-    verdict: unjudged
   - rule: reference-topic-missing
     line: 211
     text: section 20 for provisions about that rig
     message: '"provisions about that" does not appear in section 20 (Right to reject)'
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 235
-    text: Section 20 Right to reject
-    message: This paragraph runs 19 sentences (limit 12)
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 328
-    text: Section 24 Right to price reduction or f
-    message: This paragraph runs 15 sentences (limit 12)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 356
     text: NI 18)) (see Parts I and V of that Order
     message: '"NI" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 397
-    text: Section 28 Delivery of goods
-    message: This paragraph runs 14 sentences (limit 12)
     verdict: unjudged
   - rule: reference-title-mismatch
     line: 576
@@ -110,11 +90,6 @@ findings:
     line: 986
     text: OFCOM of conditions under section 120) i
     message: '"OFCOM" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1070
-    text: Section 87 Enforcement of the duty
-    message: This paragraph runs 14 sentences (limit 12)
     verdict: unjudged
   - rule: quote-style-consistency
     line: 1111

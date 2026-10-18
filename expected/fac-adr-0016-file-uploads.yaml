@@ -11,33 +11,8 @@ findings:
     text: Because the Civil Rights Portal backend
     message: This sentence runs 46 words (limit 40)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 15
-    text: DOJ Civil Rights Portal](https://github.
-    message: '"DOJ" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 15
-    text: DRF, PostgreSQL, Cloud.gov), we expect f
-    message: '"DRF" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 24
-    text: AWS.
-    message: '"AWS" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 29
-    text: USWDS file upload component
-    message: '"USWDS" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: unknown-word
     line: 41
     text: succcessful upload needs to be confirmed
     message: '"succcessful" is not in the dictionary; did you mean "successful"?'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 44
-    text: ADR 0010; renamed/renumbered when PDRs a
-    message: '"ADR" is used without an expansion (5 such acronyms)'
     verdict: unjudged

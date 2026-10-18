@@ -6,18 +6,6 @@ findings:
     text: "### 第1条　目的"
     message: 見出し「第1条　目的」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
-  - rule: nado-closed-list
-    line: 37
-    text: 等）のみを対象とする。
-    message: 「等」で一覧を開いたまま、「のみ」で限っています
-    verdict: false-positive
-    note: 「等」 closes an example list in a parenthesis (エンジニア、デザイナー等); 「のみ」 limits 技能職, not the examples
-  - rule: nado-closed-list
-    line: 45
-    text: 等）のみを対象とする。
-    message: 「等」で一覧を開いたまま、「のみ」で限っています
-    verdict: false-positive
-    note: 「等」 closes an example list in a parenthesis (エンジニア、デザイナー等); 「のみ」 limits 技能職, not the examples
   - rule: orthographic-variant
     line: 66
     text: ただし、本人から申請があり、会社が認めた場合は、この限りではない。

@@ -6,11 +6,6 @@ findings:
     text: Congress may be interested in the polici
     message: This sentence runs 47 words (limit 45)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 7
-    text: Congress may be interested in the polici
-    message: '"small business subcontracting" appears 19 times (limit 5)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 11
     text: Other federal policies that foster small
@@ -70,11 +65,6 @@ findings:
     line: 99
     text: Contracting officers have a few obligati
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 107
-    text: PCR reviews are followed, most of which
-    message: '"PCR" is used without an expansion (10 such acronyms)'
     verdict: unjudged
   - rule: unknown-word
     line: 119

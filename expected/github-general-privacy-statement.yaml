@@ -16,6 +16,11 @@ findings:
     text: GDPR, ensuring a lawful basis for each p
     message: '"GDPR" is used without an expansion (4 such acronyms)'
     verdict: unjudged
+  - rule: contraction-consistency
+    line: 117
+    text: "Legal Obligation: We process data when i"
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: unjudged
   - rule: orthographic-variant
     line: 133
     text: github[dot]com and follow the instructio
@@ -40,6 +45,11 @@ findings:
     line: 149
     text: github[dot]com.
     message: '"github" here, where the document usually writes "GitHub" (9 of 80)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 161
+    text: We’ll retain your Personal Data as long
+    message: "\"we'll\" is written \"we will\" elsewhere in the document"
     verdict: unjudged
   - rule: orthographic-variant
     line: 169

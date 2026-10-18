@@ -93,11 +93,6 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 40
-    text: その仙台で来年１０月にアジア太平洋防災閣僚級会議を開催します。
-    message: 「太平洋防災閣僚級会議」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 40
     text: 日本の防災の知見や技術を共有し、世界の防災対策に貢献するべく、先週に内閣改造を行
     message: 「国際防災協力担当大臣」は漢字が 10 字続いています（8 字まで）
     verdict: unjudged

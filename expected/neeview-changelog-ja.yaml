@@ -401,10 +401,6 @@ findings:
     line: 1039
     sha256: 31fd049e622730fde5537489c0d12234fd6e7ca2588ff50d88efb77b358db4e5
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1043
-    sha256: 06c5ec70206930b1fca1642f966604fa88010aa69f0e46f5784c5d14f07a9964
-    verdict: unjudged
   - rule: heading-level-skip
     line: 1050
     sha256: 8f681e914a94832a7e35456e5e5b709f6fe795b9316f12a01a2eddbd381b8691
@@ -448,8 +444,4 @@ findings:
   - rule: max-kanji-continuous
     line: 1124
     sha256: 5755340d17fca7cef7797585f9f57a78cead537bdc4a89daae7cebe2a497c494
-    verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 1151
-    sha256: f0400e89906013b4d73df9d160a782a3b59ec222d8df082fc0febac39b4e60b2
     verdict: unjudged

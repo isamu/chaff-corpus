@@ -7,10 +7,10 @@ findings:
     message: '"FOMC" is used without an expansion (4 such acronyms)'
     verdict: unjudged
   - rule: ngram-repetition
-    line: 21
-    text: The median modal path of the federal fun
-    message: '"federal funds rate" appears 15 times (limit 5)'
-    verdict: unjudged
+    line: 19
+    text: Over the intermeeting period, the expect
+    message: '"were little changed" appears 6 times (limit 5)'
+    verdict: correct
   - rule: undefined-acronym
     line: 25
     text: S&P 500 index continued to move above lo
@@ -81,11 +81,6 @@ findings:
     text: A couple of participants discussed forei
     message: This sentence runs 46 words (limit 45)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 101
-    text: GENIUS Act (Guiding and Establishing Nat
-    message: '"GENIUS" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 103
     text: In their consideration of monetary polic
@@ -140,9 +135,4 @@ findings:
     line: 146
     text: Governor Bowman preferred at this meetin
     message: This sentence runs 60 words (limit 45)
-    verdict: unjudged
-  - rule: name-variant
-    line: 292
-    text: Walker,3 Senior Associate Director, Divi
-    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
     verdict: unjudged

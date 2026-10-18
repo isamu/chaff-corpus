@@ -11,9 +11,3 @@ findings:
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 13 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: heading-echo
-    line: 22
-    text: 市会事務局公募型比較見積実施要綱
-    message: 見出し「市会事務局公募型比較見積実施要綱について」を直後の文がほぼそのまま繰り返しています
-    verdict: false-positive
-    note: the line after the heading is the link to the document the heading names, not a sentence restating it

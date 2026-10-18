@@ -59,24 +59,6 @@ findings:
     text: オープンバッジやeIDAS等でのマイクロクレデンシャルの領域では、受取先（検証者
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-  - rule: ime-residue
-    line: 101
-    text: eシールを進めることは良いが、その先の将来を見据えて調査研究をまとめることが望ま
-    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
-    verdict: false-positive
-    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
-  - rule: ime-residue
-    line: 102
-    text: eシールを利用するという提案があるように聞こえた。しかし、NIADのNICセンタ
-    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
-    verdict: false-positive
-    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
-  - rule: ime-residue
-    line: 102
-    text: eシールを各大学が個別に取得するのではなく、文部科学省の管轄で運営されている機関
-    message: 日本語の語の中に英字「e」が一字だけあります（変換し損ねた跡）
-    verdict: false-positive
-    note: 「eシール」 (electronic seal) is a standard term, not a stray letter left by the IME
   - rule: undefined-acronym
     line: 102
     text: NIADのNICセンターはUNESCOの規約を批准しており、高等教育機関（大学）

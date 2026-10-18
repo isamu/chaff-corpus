@@ -147,21 +147,6 @@ findings:
     message: The URL "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-versioning" is written bare (37 worded links in this document)
     verdict: unjudged
   - rule: bare-url-mix
-    line: 261
-    text: https://kubernetes.io/docs/reference/usi
-    message: The URL "https://kubernetes.io/docs/reference/using-api/deprecation-policy/" is written bare (37 worded links in this document)
-    verdict: unjudged
-  - rule: bare-url-mix
-    line: 262
-    text: https://kubernetes.io/docs/setup/release
-    message: The URL "https://kubernetes.io/docs/setup/release/version-skew-policy/" is written bare (37 worded links in this document)
-    verdict: unjudged
-  - rule: bare-url-mix
-    line: 263
-    text: https://github.com/kubernetes/enhancemen
-    message: The URL "https://github.com/kubernetes/enhancements/pull/1332" is written bare (37 worded links in this document)
-    verdict: unjudged
-  - rule: bare-url-mix
     line: 278
     text: https://github.com/kubernetes/community/
     message: The URL "https://github.com/kubernetes/community/blob/master/contributors/devel/sig-archi…" is written bare (37 worded links in this document)
@@ -195,11 +180,6 @@ findings:
     line: 296
     text: devel branches, with a stable release on
     message: '"devel" is not in the dictionary; did you mean "level"?'
-    verdict: unjudged
-  - rule: bare-url-mix
-    line: 299
-    text: https://docs.google.com/document/d/1o6Ov
-    message: The URL "https://docs.google.com/document/d/1o6OvJ1XAc-n9to-8YVYoSiEx95yqldQfdE3qplyy0CY/…" is written bare (37 worded links in this document)
     verdict: unjudged
   - rule: expletive-construction
     line: 313

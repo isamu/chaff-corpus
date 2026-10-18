@@ -1,30 +1,6 @@
 id: govuk-how-to-rent-checklist
 chaff: 0.34.0
 findings:
-  - rule: heading-numbering-mix
-    line: 7
-    text: "## This guidance was withdrawn on 1 May"
-    message: The heading "This guidance was withdrawn on 1 May 2026" has no number, while 7 of its siblings do ("1. Before you start")
-    verdict: false-positive
-    note: front-matter banners (withdrawn notice, 'Applies to England') before the numbered body are unnumbered by design
-  - rule: heading-numbering-mix
-    line: 11
-    text: "## Applies to England"
-    message: The heading "Applies to England" has no number, while 7 of its siblings do ("1. Before you start")
-    verdict: false-positive
-    note: front-matter banners (withdrawn notice, 'Applies to England') before the numbered body are unnumbered by design
-  - rule: title-case-consistency
-    line: 11
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: "'Applies to England' is sentence case; the proper noun England is read as title case"
-  - rule: oxford-comma-consistency
-    line: 15
-    text: To view this licence, visit nationalarch
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a postal address (Team, The National Archives, Kew, London TW9 4DU, or email) is read as a list for the serial-comma check
   - rule: max-sentence-length
     line: 29
     text: The guide does not cover lodgers (people
@@ -45,10 +21,30 @@ findings:
     text: 35% of your take-home pay is the most th
     message: The sentence opens with the numeral "35%"
     verdict: correct
+  - rule: contraction-consistency
+    line: 49
+    text: Your landlord can’t insist which option
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 81
+    text: Check that the tenancy deposit you’re be
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: unjudged
   - rule: ngram-repetition
     line: 97
     text: Be aware that you may have to leave the
     message: '"to leave the property" appears 7 times (limit 5)'
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 167
+    text: It’s worth getting contents insurance to
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 176
+    text: The landlord will usually have insurance
+    message: "\"will not\" is written \"won't\" elsewhere in the document"
     verdict: unjudged
   - rule: duration-mismatch
     line: 189
@@ -56,24 +52,6 @@ findings:
     message: 1 July 2020 plus 5 years ends around 30 June 2025, but the end is given as 1 April 2021
     verdict: false-positive
     note: two start dates for two groups (new tenancies from 1 July 2020, existing ones from 1 April 2021) are read as the start and end of the 5-year period
-  - rule: dangling-reference
-    line: 222
-    text: section 21 evictions by changing existin
-    message: '"section 21" (address 21) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
-  - rule: dangling-reference
-    line: 222
-    text: section 21 notice from your landlord, se
-    message: '"section 21" (address 21) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
-  - rule: dangling-reference
-    line: 222
-    text: section 21 notice until new legislation
-    message: '"section 21" (address 21) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
   - rule: max-sentence-length
     line: 230
     text: If you are unsure how to respond or worr
@@ -89,29 +67,11 @@ findings:
     text: Unless or until a suitable replacement t
     message: This sentence runs 41 words (limit 40)
     verdict: correct
-  - rule: dangling-reference
-    line: 276
-    text: section 21 notice (no-fault eviction) fo
-    message: '"section 21" (address 21) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
-  - rule: dangling-reference
-    line: 276
-    text: section 8 notice if you break the terms
-    message: '"section 8" (address 8) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
   - rule: max-sentence-length
     line: 276
     text: If you have a serious complaint about th
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-  - rule: dangling-reference
-    line: 278
-    text: section 21 to obtain a possession order
-    message: '"section 21" (address 21) is not in this document'
-    verdict: false-positive
-    note: "'section 21 notice' / 'section 8 notice' name sections of the Housing Act 1988, an external statute, by convention; not an internal cross-reference"
   - rule: one-sentence-paragraph-run
     line: 342
     text: The government’s ‘How to rent a safe hom

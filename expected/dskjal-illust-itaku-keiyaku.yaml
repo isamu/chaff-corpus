@@ -16,18 +16,17 @@ findings:
     text: うえ、本契約および個別契約の全部または一部を解除できる。
     message: 「うえ」と書いています（この文書はふつう「上」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
+  - rule: orthographic-variant
+    line: 57
+    text: 支払後、本契約による本著作物を下記２の目的で利用できる。
+    message: 「支払」と書いています（この文書はふつう「支払い」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: hiragana-fukushi
     line: 70
     text: 甲は、乙が本著作物を利用するにあたり、その利用態様に応じて本著作物のサイズの変更
     message: 「予め」は ひらがなで書くのが読みやすいです
     verdict: correct
     note: the same document writes あらかじめ in 第１１条
-  - rule: requirement-smell
-    line: 77
-    text: 等、二次的に利用される場合、乙はその利用に関し、甲に書面または電磁的方法で通知し
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「印刷等」 is an example of the category named right after it (二次的に利用される場合), not an open requirement list
   - rule: requirement-smell
     line: 105
     text: 等を乙に申し出て、乙の指示を受けなければならない。
@@ -44,39 +43,3 @@ findings:
     message: 「検査期間」を定義していますが、本文で使っていません
     verdict: correct
     note: 第１２条 2 says 前項の期間 instead of 検査期間
-  - rule: numbering-gap
-    line: 120
-    text: 第１３条（代金支払方法）
-    message: 「第１０条」の次が「第１３条」です（11 番目のはず）
-    verdict: false-positive
-    note: 第１１条 and 第１２条 are on the line right after a <br/>, so they sit inside a CommonMark HTML block and chaff does not see them
-  - rule: obligation-without-deadline
-    line: 122
-    text: 支払う。
-    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
-    verdict: false-positive
-    note: the deadline is the 支払期日 the same article names in its third paragraph (a template with blanks)
-  - rule: obligation-without-deadline
-    line: 123
-    text: 支払う。なお、その際の振込手数料は、乙の負担とする。
-    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
-    verdict: false-positive
-    note: the deadline is the 支払期日 the same article names in its third paragraph (a template with blanks)
-  - rule: teki-overuse
-    line: 135
-    text: 甲が、前項の承諾に関して、乙に対して再委託開始時期の＿日前までに当該再委託先の名
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: two of the three 〜的 are the fixed legal term 電磁的方法
-  - rule: numbering-gap
-    line: 152
-    text: 第１６条（権利義務の譲渡）
-    message: 「第１３条」の次が「第１６条」です（14 番目のはず）
-    verdict: false-positive
-    note: 第１４条 and 第１５条 are on the line right after a <br/>, inside a CommonMark HTML block, so chaff does not see them
-  - rule: nado-closed-list
-    line: 192
-    text: 等に限り、この限りではない。
-    message: 「等」で一覧を開いたまま、「に限り」で限っています
-    verdict: false-positive
-    note: 「指示等」 refers back to the 「指示等」 earlier in the sentence; not an open list

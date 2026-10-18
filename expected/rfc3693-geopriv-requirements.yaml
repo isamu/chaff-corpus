@@ -1,10 +1,6 @@
 id: rfc3693-geopriv-requirements
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 8
-    sha256: 9af9eef31e66682c7a4c3053e2f28007fd5f6ea4f2b668263ed2716fe4c793d8
-    verdict: unjudged
   - rule: max-sentence-length
     line: 124
     sha256: 88c85da54a1cd0bda6db448ca8f0111e5cce3d08bb5cb89b9db64167454f03a1
@@ -136,10 +132,6 @@ findings:
   - rule: undefined-acronym
     line: 1531
     sha256: b8755d4f3ee4f6f4ad76906c4d30138230c32a5bed9b7b7127d6afe9e1b78dd6
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1536
-    sha256: c4f656abba69f639f4498ab0b2ea97db042b546edccc3dc8b6cd7f885c6f62a7
     verdict: unjudged
   - rule: undefined-acronym
     line: 1541

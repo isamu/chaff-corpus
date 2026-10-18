@@ -1,20 +1,10 @@
 id: nsf-19-582-reu-solicitation
 chaff: 0.33.0
 findings:
-  - rule: heading-numbering-mix
-    line: 23
-    text: "### Important Information And Revision N"
-    message: The heading "Important Information And Revision Notes" has no number, while 9 of its siblings do ("I. Introduction")
-    verdict: unjudged
   - rule: max-sentence-length
     line: 27
     text: Those web pages may describe characteris
     message: This sentence runs 46 words (limit 45)
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 31
-    text: "### Summary Of Program Requirements"
-    message: The heading "Summary Of Program Requirements" has no number, while 9 of its siblings do ("I. Introduction")
     verdict: unjudged
   - rule: max-paragraph-length
     line: 42
@@ -131,11 +121,6 @@ findings:
     text: To obtain copies of the Application Guid
     message: This sentence runs 56 words (limit 45)
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 266
-    text: PROPOSAL FOR REU SITE
-    message: '"PROPOSAL FOR REU SITE" is written in capitals'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 272
     text: If the proposal has an interdisciplinary
@@ -216,11 +201,6 @@ findings:
     text: --for example, letters of endorsement--a
     message: '"--" stands in for a dash'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 350
-    text: REQUEST FOR REU SUPPLEMENT
-    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 354
     text: Investigators are reminded that support
@@ -241,20 +221,10 @@ findings:
     text: --including all direct costs and indirec
     message: '"--" stands in for a dash'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 368
-    text: REQUEST FOR REU SUPPLEMENT") in the sect
-    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 368
     text: A request for an REU Supplement as part
     message: This paragraph runs 7 sentences (limit 5)
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 372
-    text: REQUEST FOR REU SUPPLEMENT"; limit your
-    message: '"REQUEST FOR REU SUPPLEMENT" is written in capitals'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 372
@@ -330,16 +300,6 @@ findings:
     line: 508
     text: PIs are required to use NSF's electronic
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 548
-    text: "6 February 2015); DOI: 10.1126/science.1"
-    message: The date "6 February 2015" is written differently from 4 other dates in the document (such as "May 17, 2019")
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 551
-    text: "27 April 2007); DOI: 10.1126/science.114"
-    message: The date "27 April 2007" is written differently from 4 other dates in the document (such as "May 17, 2019")
     verdict: unjudged
   - rule: heading-numbering-mix
     line: 567

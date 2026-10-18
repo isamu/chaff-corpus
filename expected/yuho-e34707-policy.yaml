@@ -1,15 +1,10 @@
 id: yuho-e34707-policy
 chaff: 0.34.0
 findings:
-  - rule: bracket-nesting
+  - rule: bracket-width-consistency
     line: 1
     text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 括弧が 3 重になっています（2 重まで）
+    message: 括弧を「(」と書いています（この文書はふつう「（」。33 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 1
@@ -31,34 +26,11 @@ findings:
     text: )経営戦略等当社グループは、新たに中期経営計画「FindtheValue2026
     message: 括弧を「)」と書いています（この文書はふつう「）」。32 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
+  - rule: comparative-without-baseline
     line: 1
-    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
-    message: 一文に節が 10 つつながっています（5 つまで）
+    text: よりよい価値を創出してまいります。今後も企業成長を通じた社会課題の解決や持続可能
+    message: 「よりよい」は、何と比べているかが書かれていません
     verdict: unjudged
-  - rule: clause-chain
-    line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 一文に節が 19 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 1
-    text: ．企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部
-    message: 句点を「．」と書いています（この文書はふつう「。」。27 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: 「イ．」「ロ．」「１．」 are list markers, not full stops
-  - rule: kutoten-consistency
-    line: 1
-    text: ．企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益
-    message: 句点を「．」と書いています（この文書はふつう「。」。27 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: 「イ．」「ロ．」「１．」 are list markers, not full stops
-  - rule: kutoten-consistency
-    line: 1
-    text: ．対象期間2024年11月期から2026年11月期まで（３カ年）ロ．企業価値の最
-    message: 句点を「．」と書いています（この文書はふつう「。」。27 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: 「イ．」「ロ．」「１．」 are list markers, not full stops
   - rule: max-kanji-continuous
     line: 1
     text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
@@ -71,11 +43,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
-    message: この文は 508 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
     text: 企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部シ
     message: この文は 156 文字あります（140 文字まで）
     verdict: unjudged
@@ -84,15 +51,10 @@ findings:
     text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
     message: この文は 1640 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-ten
+  - rule: max-sentence-length
     line: 1
-    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
-    message: 一文に読点が 16 個あります（6 個まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 一文に読点が 37 個あります（6 個まで）
+    text: 当社グループの属するリノベーションマンション業界におきましては、公益財団法人東日
+    message: この文は 179 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-nakaguro-parallel
     line: 1
@@ -106,12 +68,16 @@ findings:
     message: この文に中黒が 21 個あります（5 個まで）
     verdict: false-positive
     note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
-  - rule: teki-overuse
+  - rule: repeated-sentence-ending
     line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 一文に「〜的」が 8 個あります（2 個まで）
-    verdict: false-positive
-    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
+    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 具体的には、ストック収入である賃貸総利益の維持に加え、フロー収入である販売総利益
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
     text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
@@ -119,8 +85,28 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 「は」で出した主題から述語まで 1465 字あります（80 字まで）
+    text: これは、中古マンションという今あるものに目を向け、眠っていた価値に光を当てること
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: なお、首都圏中古マンションの在庫件数は、2021年６月（33,641件）以降復調
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社グループの属するリノベーションマンション業界におきましては、公益財団法人東日
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社グループは、様々な課題を抱えた中古マンションの取得・リノベーション・販売活動
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 翌連結会計年度以降は、物価上昇による家計負担の増加や、金融政策の見直しによる金利
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 1
@@ -136,4 +122,14 @@ findings:
     line: 1
     text: ）経営環境当連結会計年度における我が国経済は、雇用・所得環境が改善する下で、景気
     message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 1
+    text: ③コンプライアンスの強化当社グループは、常に法令等を遵守し、高い倫理観と社会的良
+    message: 「最も」に比べる相手がありません（そういう言い方が 2 箇所）
+    verdict: unjudged
+  - rule: unqualified-superlative
+    line: 1
+    text: 企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部シ
+    message: 「最大」に比べる相手がありません（そういう言い方が 2 箇所）
     verdict: unjudged

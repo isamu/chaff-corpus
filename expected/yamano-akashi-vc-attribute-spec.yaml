@@ -11,9 +11,3 @@ findings:
     text: "**に従う。"
     message: 「**」が太字にならず、そのまま表示されます
     verdict: correct
-  - rule: code-fence-language-mix
-    line: 140
-    text: "```"
-    message: このコードブロックだけ言語名がありません（言語名のあるブロック 4 個）
-    verdict: false-positive
-    note: a version-format template (<MAJOR>.<MINOR>.<PATCH>), not code in any language

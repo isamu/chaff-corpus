@@ -1,10 +1,6 @@
 id: k8s-overview-en
 chaff: 0.34.0
 findings:
-  - rule: list-item-form-mix
-    line: 53
-    sha256: 4476389539e9d3acf6830fb5af26547d2e4416b24fed1eb87c627de5a17b1791
-    verdict: unjudged
   - rule: oxford-comma-consistency
     line: 56
     sha256: 4ab21881df2a1a3b2c16e71e83c48f3b31ee239f4a59e1526fb73dc6746e1a92

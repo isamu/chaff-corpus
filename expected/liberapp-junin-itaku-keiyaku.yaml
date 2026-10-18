@@ -17,11 +17,15 @@ findings:
     line: 13
     sha256: 7e25158b215a13afcf8ffa660819c796662df77b91440106e828ba4dcc817411
     verdict: correct
+  - rule: obligation-without-deadline
+    line: 24
+    sha256: d29f8166314e3b130d9d89975d13c72d86d9482b36acd3ae664be909b73f4f51
+    verdict: unjudged
   - rule: party-order
     line: 27
     sha256: eb6ff6a9ddc07c2586021540e65f3645328cc3897be0df0d327b47139af9e623
     verdict: correct
-    note: "the two parties are named in both orders within one sentence"
+    note: the two parties are named in both orders within one sentence
   - rule: bracket-width-consistency
     line: 36
     sha256: 324c124d3ca97180767625309fed1ef75c5e4105344756730c990b06e8246def
@@ -38,12 +42,12 @@ findings:
     line: 36
     sha256: 1e95712383606d4aecd344d31879d75f962a59ea9909b2fb95f54a4a1009d43d
     verdict: correct
-    note: "the contract mixes the kanji and kana spellings of the same conjunction"
+    note: the contract mixes the kanji and kana spellings of the same conjunction
   - rule: orthographic-variant
     line: 36
     sha256: 7aaf547e3e917442be0da62c45324cecade728602c15fb8f17f534bdfce9f3fb
     verdict: correct
-    note: "the contract mixes the kanji and kana spellings of the same conjunction"
+    note: the contract mixes the kanji and kana spellings of the same conjunction
   - rule: stray-space
     line: 36
     sha256: f32c86f81012e6b4555da206d4e7d4e23f324a29c17a60289b54d59ec3d50757
@@ -96,15 +100,11 @@ findings:
     line: 54
     sha256: 07171b20d8ed4bc016b4c9a35492e1d1932700160575d79c915213795c233e3e
     verdict: unjudged
-  - rule: requirement-smell
-    line: 54
-    sha256: 3723f9b99fff0d13c12be9f3b7de029b30483ca27606b7a82ed1a58e41d5ba2e
-    verdict: unjudged
   - rule: redundant-expression
     line: 55
     sha256: 6d18ad45da8e9c9aa20618a8997a9c979153f61fb9a670f32bcfaa44bcf30750
     verdict: correct
-    note: "a redundant expression (the noun and verb share the same kanji)"
+    note: a redundant expression (the noun and verb share the same kanji)
   - rule: requirement-smell
     line: 76
     sha256: 26ef6b320284b45cd47c5c1826006cfd22eb1724e0f730fbdda06600586a84aa
@@ -112,6 +112,14 @@ findings:
   - rule: orthographic-variant
     line: 78
     sha256: e54647fbf4c46aa8ab4f6bbbcae7f69b1248bf5dd3b0b7ba83825695629daaee
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 79
+    sha256: a8e9e28f1853576fc52eabe077fb36bf9f82ca754b48c60c5339618cdef3488b
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 80
+    sha256: 860d1991e5ba23416c1544249ea13ca97721427a1bc5a2e09d2d76e38df8df97
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 81
@@ -121,11 +129,18 @@ findings:
     line: 81
     sha256: 6897cf735c1f35377b0e41f409b520c282f1739954fd0f3cec73d530fff6905a
     verdict: correct
-  - rule: orthographic-variant
+  - rule: obligation-without-deadline
+    line: 81
+    sha256: 41af424275a1191bc0738df6ab824e032ae720719b96d8af9b0c9f245d6ad26c
+    verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 81
+    sha256: 8dda9ec783b8d961ba58a3e3c020f14e20177cd8f3c2111dd31e3e1756785983
+    verdict: unjudged
+  - rule: obligation-without-deadline
     line: 99
-    sha256: 130006bfd9f8f0eed84af6c390db8ae12be4afb9b68eb975c90e0b7ce8349d10
-    verdict: false-positive
-    note: "two different words: the kanji form means 'concerning', the kana form here means 'to be incurred'"
+    sha256: ddbef4fbc2c51df80aaab63d8124f8d2290eaaf2eb2de15a54150d4a25d0dc21
+    verdict: unjudged
   - rule: orthographic-variant
     line: 99
     sha256: 9c8a713ed5465ba08f5f2345723126bef20a79761b03be174513635f548663cc
@@ -154,19 +169,6 @@ findings:
     line: 115
     sha256: 02f1c88b306a220464fecca0960e6371ad00ec056f82d0be28f17c4aaebb7dea
     verdict: unjudged
-  - rule: dangling-reference
-    line: 117
-    sha256: 8c8feeb41e09748b8c9844c2dc2bc26e1c45c2e9bc811292ed355697bde54e5a
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 121
-    sha256: 1afdd05751b40c063314246da43d715321647c37a80780f99bed1a0351f3fe41
-    verdict: false-positive
-    note: "article 14's heading lacks the space after ## so it is not parsed as a heading; the article numbering itself has no gap"
-  - rule: requirement-smell
-    line: 123
-    sha256: 002a19d45e022b5986abab96b1327cc5be53c45e411e55ccecdcbae70705cdde
-    verdict: unjudged
   - rule: orthographic-variant
     line: 131
     sha256: 9935c44b1df971cd421efd51d28770b854f91bf2ea4f6bb854e9d1c93a01790c
@@ -175,4 +177,4 @@ findings:
     line: 135
     sha256: 529df6c4dd85178cbca9c92b4aaa4be203a3fde8d0d8d10876c513f1502f177a
     verdict: correct
-    note: "the two parties are named in the opposite order to the rest of the contract"
+    note: the two parties are named in the opposite order to the rest of the contract

@@ -117,10 +117,6 @@ findings:
     line: 130
     sha256: fd14e3a65a2d7c57855a893adc5fa1e85d7c14bc55fb4c3c18878802dca7fc16
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 140
-    sha256: 4930852da452a590a7491b92155c9b011b2f0915520b76d80a6a617a579e0bbc
-    verdict: unjudged
   - rule: sasete-itadaku
     line: 150
     sha256: 925df65cd47b9639795f43f20789d530e55d29439b4371f6782424b04f13cd2d
@@ -153,10 +149,6 @@ findings:
     line: 205
     sha256: aae84620f2738e92e4feb005e3041d025fbd277813f4685d67ef1d0076f95699
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 208
-    sha256: b08a64bf68308bec1de934b3a6140d1386249fc2bf4d81f501323fa8b5aea060
-    verdict: unjudged
   - rule: orthographic-variant
     line: 213
     sha256: ef2565e48a51f21330bd823d56cc0a9f64c993a2c70fda195f8c7e7cffba353e
@@ -180,10 +172,6 @@ findings:
   - rule: undefined-acronym
     line: 222
     sha256: a771ed7a2f78101a0d917561aa8ff0e4249719fc9c3e45d523a39e2956367e56
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 226
-    sha256: 046e0a565ca89594cef750f5cdc205ec073604958b605e11293f4a5ef1167cf6
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 226
@@ -220,10 +208,6 @@ findings:
   - rule: sasete-itadaku
     line: 278
     sha256: 756538c2e9a7cfead3846e1eac443c880d31cc7db9bf7e8e52c4124216220362
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 282
-    sha256: 5df653ebab9bdb29a924b8dbfb078559fd17e7afa83c08ffc97a8e938930b23e
     verdict: unjudged
   - rule: max-ten
     line: 282
@@ -336,8 +320,4 @@ findings:
   - rule: sasete-itadaku
     line: 349
     sha256: 0be2d4c540232b2e72010adf7ee10c4de1503f2be58beda77b34c8f825f3c359
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 354
-    sha256: c55dab9a5659692f82844b97fc3e6d8a0c0525c9181c4e8645dc414395155de8
     verdict: unjudged

@@ -29,11 +29,6 @@ findings:
   - rule: vague-word-density
     line: 43
     text: The requirements aim to ensure appropria
-    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 43
-    text: The requirements aim to ensure appropria
     message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: concrete-evidence-density
@@ -195,9 +190,4 @@ findings:
     line: 202
     text: ""
     message: Section "Reconsideration process" has no number, code or link (16 of 22 sections)
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 219
-    text: say which regional director you’re refer
-    message: "\"you're\" is written differently from the rest of the document"
     verdict: unjudged

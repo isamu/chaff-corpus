@@ -11,12 +11,6 @@ findings:
     text: On monetary policy expectations, the man
     message: This sentence runs 48 words (limit 45)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 21
-    text: On monetary policy expectations, the man
-    message: '"federal funds rate" appears 14 times (limit 5)'
-    verdict: false-positive
-    note: "'federal funds rate' is the term of art the minutes are about; it has no shorter synonym to vary with"
   - rule: max-sentence-length
     line: 23
     text: A model-based decomposition of changes s
@@ -36,6 +30,11 @@ findings:
     line: 51
     text: Real private domestic final purchases—wh
     message: This sentence runs 49 words (limit 45)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 61
+    text: S&P 500 index declined moderately to end
+    message: '"S&P" is used without an expansion (1 such acronym)'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 63
@@ -107,9 +106,3 @@ findings:
     text: "Voting against this action: Stephen I. M"
     message: This sentence runs 62 words (limit 45)
     verdict: correct
-  - rule: name-variant
-    line: 313
-    text: Walker,3 Senior Associate Director, Divi
-    message: '"Walker" is one letter away from "Waller", which the document uses more than once'
-    verdict: false-positive
-    note: two different people in the attendance list (Jeffrey D. Walker, Governor Christopher J. Waller) are read as one name misspelt

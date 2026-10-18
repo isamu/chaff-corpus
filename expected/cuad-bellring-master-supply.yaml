@@ -1,42 +1,15 @@
 id: cuad-bellring-master-supply
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 7
-    text: LLC, a Delaware limited liability compan
-    message: '"LLC" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 7
-    text: PNC"), and Fonterra (USA) Inc., a Califo
-    message: '"PNC" is used without an expansion (9 such acronyms)'
-    verdict: false-positive
-    note: PNC is the party's quoted label ("Buyer" or "PNC"), defined right there
-  - rule: use-before-definition
-    line: 15
-    text: Ingredients
-    message: '"Ingredients" is used here, before it is defined on line 17'
-    verdict: false-positive
-    note: a clause heading (1 Supply of Ingredients) uses the term before the body defines it
   - rule: undefined-term
     line: 17
     text: Master Purchase Commitment or any other
     message: '"Master Purchase Commitment" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: vague-word-density
-    line: 17
-    text: 1.1 Supplier will provide such materials
-    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: undefined-term
     line: 21
     text: Commitments shall be subject exclusively
     message: '"Commitments" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 21
-    text: 1.3 PNC and Supplier may enter certain M
-    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 23
@@ -48,48 +21,6 @@ findings:
     text: and/or term adjustments despite their be
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: correct
-  - rule: vague-word-density
-    line: 33
-    text: A Specification may be updated from time
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 33
-    text: A Specification may be updated from time
-    message: '"from time to time" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 33
-    text: Within [***] the Parties will discuss th
-    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 33
-    text: Within [***] the Parties will discuss th
-    message: '"best efforts" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 35
-    text: Certificate of Analysis ("COA") complete
-    message: '"Certificate of Analysis" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: the phrase is introduced with its abbreviation ("COA") right there; it is a name, not an undefined term
-  - rule: vague-word-density
-    line: 41
-    text: "[***] Metric targets will be established"
-    message: '"as needed" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 41
-    text: 1.9 Supplier Performance metrics will be
-    message: '"periodically" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 43
-    text: Electronic Data Interface ("EDI") if and
-    message: '"Electronic Data Interface" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: the phrase is introduced with its abbreviation ("EDI") right there; it is a name, not an undefined term
   - rule: unused-definition
     line: 43
     text: ("ASN") with bar-coded pallet labels; In
@@ -100,30 +31,6 @@ findings:
     text: as applicable.
     message: '"as applicable" does not say how much is enough to meet the requirement'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 53
-    text: CCR §§ 12701 et seq. and 22 CCR §§ 12801
-    message: '"CCR" is used without an expansion (9 such acronyms)'
-    verdict: false-positive
-    note: CCR is a standard legal-citation abbreviation (California Code of Regulations)
-  - rule: undefined-term
-    line: 53
-    text: Federal Food, Drug, and Cosmetic Act (th
-    message: '"Federal Food" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: the name of a statute (Federal Food, Drug, and Cosmetic Act), not a defined term
-  - rule: undefined-term
-    line: 53
-    text: Food and Drug Administration (the "FDA")
-    message: '"Food and Drug Administration" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: the name of a federal agency, introduced with its abbreviation ("FDA")
-  - rule: undefined-term
-    line: 53
-    text: Proposition 65 (California Safe Drinking
-    message: '"Proposition" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: Proposition 65 is the name of a law, not a defined term
   - rule: unused-definition
     line: 53
     text: (the "FDA"), the United States Departmen
@@ -149,41 +56,10 @@ findings:
     text: GMA SAFE. Supplier will submit summaries
     message: '"GMA" is used without an expansion (9 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 55
-    text: SAFE. Supplier will submit summaries of
-    message: '"SAFE" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 55
-    text: USC §301 et seq and shall submit a copy
-    message: '"USC" is used without an expansion (9 such acronyms)'
-    verdict: false-positive
-    note: USC is a standard legal-citation abbreviation (United States Code)
-  - rule: vague-word-density
-    line: 55
-    text: 2.2 Supplier shall develop and maintain
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 57
-    text: 2.3 Supplier will notify PNC immediately
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: requirement-smell
     line: 59
     text: and/or test such Ingredients to confirm
     message: '"and/or" does not say whether both are meant or either is enough'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 59
-    text: If after any reasonable, good faith insp
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 59
-    text: Supplier shall be given an opportunity t
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 71
@@ -195,58 +71,11 @@ findings:
     text: as soon as possible. If correction of th
     message: '"as soon as possible" does not say how much is enough to meet the requirement'
     verdict: correct
-  - rule: undefined-acronym
-    line: 71
-    text: CFR Part 117 Current Good Manufacturing
-    message: '"CFR" is used without an expansion (9 such acronyms)'
-    verdict: false-positive
-    note: CFR is a standard legal-citation abbreviation (Code of Federal Regulations)
-  - rule: vague-word-density
-    line: 71
-    text: For routine visits and audits, PNC will
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: If correction of the deficiency cannot b
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: If PNC or its representatives find that
-    message: '"as soon as possible" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: If PNC or its representatives find that
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: If PNC or its representatives find that
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: In the event of an actual or suspected f
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 71
-    text: Supplier will notify Buyer immediately v
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
   - rule: obligation-without-deadline
     line: 73
     text: submit the business continuity plan to P
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: unjudged
-  - rule: dangling-reference
-    line: 75
-    text: Section 4, the term "Intellectual Proper
-    message: '"Section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: the section exists as a numbered plain-text paragraph ('4. ...'), which chaff does not take as an address
   - rule: requirement-smell
     line: 75
     text: and/or modifications to the Ingredients
@@ -256,47 +85,6 @@ findings:
     line: 85
     text: supplier information, and information re
     message: '"Supplier" is defined with a capital on line 7, but written in lower case here'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 85
-    text: Confidential Information includes that w
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 87
-    text: The Parties will use at least the same d
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 89
-    text: Each Party shall not make any copies or
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 89
-    text: When a Party no longer has need thereof
-    message: '"promptly" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 95
-    text: A Party shall not be in breach hereof if
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 103
-    text: In any such event, the Party (i) shall t
-    message: '"timely" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: undefined-term
-    line: 107
-    text: Post Holdings, Inc. from purchasing or s
-    message: '"Post Holdings" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: Post Holdings, Inc. is a company name
-  - rule: vague-word-density
-    line: 107
-    text: Supplier acknowledges that it is aware,
-    message: '"reasonably" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: which-that-consistency
     line: 107
@@ -308,21 +96,10 @@ findings:
     text: Further, each Party understands and ackn
     message: '"future plans" says the same thing twice'
     verdict: unjudged
-  - rule: undefined-term
-    line: 111
-    text: Warranty. Except as expressly set forth
-    message: '"Warranty" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: Warranty is a word in a clause caption (No Representation or Warranty)
   - rule: dangling-reference
     line: 131
     text: Section 7.1, "Third Party" means any ind
     message: '"Section 7.1" (address 7.1) is not in this document'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 131
-    text: 7.1 Each Party will defend and hold harm
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: numbering-gap
     line: 133
@@ -346,38 +123,13 @@ findings:
     verdict: unjudged
   - rule: dangling-reference
     line: 163
-    text: Section 5, and/or (2) indemnification ob
-    message: '"Section 5" (address 5) is not in this document'
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 163
     text: Section 7.1. 9.1.2 The Liability Cap wil
     message: '"Section 7.1" (address 7.1) is not in this document'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 165
-    text: 9.2 For the purpose of this Section, "li
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 169
-    text: 10.1 Neither Party will be liable for an
-    message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 169
-    text: Notwithstanding anything herein to the c
-    message: '"best efforts" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
   - rule: undefined-term
     line: 173
     text: Minimum Purchase Commitment. PNC will no
     message: '"Minimum Purchase Commitment" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 187
-    text: conveniens.
-    message: '"conveniens" is not in the dictionary; did you mean "convenient"?'
     verdict: unjudged
   - rule: which-that-consistency
     line: 189
@@ -393,9 +145,4 @@ findings:
     line: 195
     text: purchase order issued hereunder, the Sup
     message: '"Purchase Order" is defined with a capital on line 19, but written in lower case here'
-    verdict: unjudged
-  - rule: vague-word-density
-    line: 195
-    text: During the performance of this contract
-    message: '"as required" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged

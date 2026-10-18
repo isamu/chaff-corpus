@@ -1,9 +1,3 @@
 id: govuk-payslips
 chaff: 0.34.0
-findings:
-  - rule: contraction-consistency
-    line: 5
-    text: "They do not have to do this if you’re:"
-    message: '"do not" is written differently from the rest of the document'
-    verdict: false-positive
-    note: positive contractions (you’re, it’s) are counted against negatives kept in full (do not, cannot), which GOV.UK style keeps apart on purpose
+findings: []

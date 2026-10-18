@@ -10,11 +10,6 @@ findings:
     sha256: 030fcea124bf2bf8088cd0a3b7650c4f09d412dda14d7fbbd3cf9e965a496fed
     verdict: correct
   - rule: undefined-acronym
-    line: 72
-    sha256: 69f51f9b174b24c57d08ed09ac17508eb648754f4bca23137671a1c5ff0b6276
-    verdict: false-positive
-    note: the acronym is expanded in a later section heading, after its first use
-  - rule: undefined-acronym
     line: 129
     sha256: ae1f36ae152b45c51dc07b97b8170ec5960e4ae48db9b685d7edfd6c8a5083ee
     verdict: correct
@@ -22,11 +17,6 @@ findings:
     line: 157
     sha256: 67bc823266f191e9b863601ca59b79fe8a09b69e3acb127dd403f22bbb910dc8
     verdict: correct
-  - rule: dangling-reference
-    line: 191
-    sha256: 879c7f389f52a7c5a3a8b496268251d32e7a27a7b3b673eccd40b0358ee7e24c
-    verdict: false-positive
-    note: the section exists, as a numbered Markdown heading with lettered list items and tab-indented roman-numeral sub-items that chaff does not read as addresses
   - rule: quote-style-consistency
     line: 223
     sha256: 894d929c3772a898ceed6910a4c2310d83371358ab66dc939400108189e2b372
@@ -35,11 +25,6 @@ findings:
     line: 259
     sha256: 88a292f6f9ebe1855ac0015fcb9c5827b480edd6d43f96a011bc91d64371903a
     verdict: correct
-  - rule: dangling-reference
-    line: 299
-    sha256: fefbf6292cb1a7c1818609f6a7a32e31aadeb153792a199e1e0542e49c9b35c3
-    verdict: false-positive
-    note: the section exists, as a numbered Markdown heading with lettered list items and tab-indented roman-numeral sub-items that chaff does not read as addresses
   - rule: unused-definition
     line: 310
     sha256: f3621b7e11edde5a2fcc0a79cb892267eddfbe7b107dcf23c3db9a49e63e1c5c

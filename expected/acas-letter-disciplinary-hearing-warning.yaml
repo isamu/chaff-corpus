@@ -1,31 +1,13 @@
 id: acas-letter-disciplinary-hearing-warning
 chaff: 0.33.0
 findings:
-  - rule: unfilled-placeholder
-    line: 11
-    text: "[name of worker]"
-    message: '"[name of worker]" was never filled in'
-    verdict: false-positive
-    note: "the document is a published letter template: its placeholders are the point"
   - rule: max-sentence-length
     line: 13
     text: I am writing to tell you that you are re
     message: This sentence runs 31 words (limit 18)
     verdict: correct
-  - rule: unfilled-placeholder
-    line: 13
-    text: "[date] at [time] [am / pm] which is to b"
-    message: '"[date]" was never filled in'
-    verdict: false-positive
-    note: "the document is a published letter template: its placeholders are the point"
   - rule: max-sentence-length
     line: 27
     text: If you would like to be accompanied, ple
     message: This sentence runs 25 words (limit 18)
     verdict: correct
-  - rule: unfilled-placeholder
-    line: 33
-    text: "[name of manager]"
-    message: '"[name of manager]" was never filled in'
-    verdict: false-positive
-    note: "the document is a published letter template: its placeholders are the point"

@@ -25,12 +25,12 @@ findings:
     line: 143
     sha256: ff57070c60be223f8be65231c85eb1dc2e42b65de4d6df884ca1d839f2bfbcd2
     verdict: correct
-    note: "a misspelling"
+    note: a misspelling
   - rule: article-sound
     line: 147
     sha256: 8848e7f9410451aa7a2e7461325d7e2413c6c24f56bde60d6934a58abe451f4e
     verdict: correct
-    note: "the article before an initialism read letter by letter"
+    note: the article before an initialism read letter by letter
   - rule: expletive-construction
     line: 147
     sha256: 93b25ba70524bf0b5ab95f6ca03e9ba14559e89f353329aa3d34b4b5bae20366
@@ -55,7 +55,7 @@ findings:
     line: 149
     sha256: f227606f276bff10363668f7c2e660845e5c3c0e92ab053db642be6aba1383df
     verdict: correct
-    note: "a misspelling"
+    note: a misspelling
   - rule: max-sentence-length
     line: 153
     sha256: c55757bb9d860935edd199759344015b67ef26071a113c8fd7ef523197c7c6c8
@@ -100,7 +100,7 @@ findings:
     line: 177
     sha256: f0731912d9c90e8430a27fc428ca8c5aa76ef57b4057525006f1b19bf61859d2
     verdict: correct
-    note: "a misspelling"
+    note: a misspelling
   - rule: max-paragraph-length
     line: 179
     sha256: a3665fd8f6ffc9c649688f0524803a16241ff739d2163dca08d7f3b8b83a4ed1

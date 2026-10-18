@@ -6,11 +6,6 @@ findings:
     text: 申込みを拒絶し、遺贈を放棄し、負担付贈与の申込みを承諾し、又は負担付遺贈を承認す
     message: 「申込み」を、2453 行目の定義より前で使っています
     verdict: unjudged
-  - rule: teki-overuse
-    line: 498
-    text: ４　第一項の合意がその内容を記録した電磁的記録（電子的方式、磁気的方式その他人の
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 958
     text: 第二百六十四条の二　裁判所は、所有者を知ることができず、又はその所在を知ることが
@@ -36,25 +31,10 @@ findings:
     text: 引受けがあったときは、根抵当権者は、引受人の債務について、その根抵当権を行使する
     message: 「引受け」と書いています（この文書はふつう「引受」と書く語です。24 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 2023
-    text: 根保証契約
-    message: 「根保証契約」を、2026 行目の定義より前で使っています
-    verdict: unjudged
   - rule: orthographic-variant
     line: 2133
     text: 引受け
     message: 「引受け」と書いています（この文書はふつう「引受」と書く語です。24 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 4036
-    text: 申出義務）
-    message: 「申出る」と書いています（この文書はふつう「申し出る」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 4249
-    text: 三　詐欺又は強迫によって、被相続人が相続に関する遺言をし、撤回し、取り消し、又は
-    message: 一文に節が 9 つつながっています（8 つまで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 4249
