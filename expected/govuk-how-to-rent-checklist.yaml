@@ -30,7 +30,8 @@ findings:
     line: 81
     text: Check that the tenancy deposit you’re be
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: ngram-repetition
     line: 97
     text: Be aware that you may have to leave the
@@ -40,12 +41,14 @@ findings:
     line: 167
     text: It’s worth getting contents insurance to
     message: "\"it's\" is written \"it is\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 176
     text: The landlord will usually have insurance
     message: "\"will not\" is written \"won't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: duration-mismatch
     line: 189
     text: 1 April 2021).

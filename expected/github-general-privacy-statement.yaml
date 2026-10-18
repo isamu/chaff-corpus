@@ -20,7 +20,8 @@ findings:
     line: 117
     text: "Legal Obligation: We process data when i"
     message: "\"it's\" is written \"it is\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: orthographic-variant
     line: 133
     text: github[dot]com and follow the instructio
@@ -50,7 +51,8 @@ findings:
     line: 161
     text: We’ll retain your Personal Data as long
     message: "\"we'll\" is written \"we will\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: orthographic-variant
     line: 169
     text: github[dot]com.

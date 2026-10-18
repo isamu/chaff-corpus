@@ -26,7 +26,8 @@ findings:
     line: 47
     text: If you can’t work or stay in your home f
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: range-band-mismatch
     line: 67
     text: "15+ years: 8 hours per pay period"
@@ -69,7 +70,8 @@ findings:
     line: 185
     text: You and your supervisor won’t see an ava
     message: "\"won't\" is written \"will not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: undefined-acronym
     line: 189
     text: FAS Benefits Specialist](https://docs.go
@@ -109,12 +111,14 @@ findings:
     line: 255
     text: It is expected that when possible, you’l
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 257
     text: If a supervisor doesn’t hear from you, a
     message: "\"doesn't\" is written \"does not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: max-sentence-length
     line: 257
     text: If a supervisor doesn’t hear from you, a

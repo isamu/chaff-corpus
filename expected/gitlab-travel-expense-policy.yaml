@@ -56,7 +56,8 @@ findings:
     line: 81
     text: When booking travel in Navan, it's impor
     message: "\"it's\" is written \"it is\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: hyphen-as-dash
     line: 83
     text: " - any travel for internal meetings or e"
@@ -97,7 +98,8 @@ findings:
     line: 142
     text: If the Team Member knows they won't be a
     message: "\"won't\" is written \"will not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: hyphen-as-dash
     line: 175
     text: " - Collision Damage Waiver**"
@@ -279,7 +281,8 @@ findings:
     line: 419
     text: Although we don't want to put any restri
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: hyphen-as-dash
     line: 420
     text: " - Essential items which you will need t"

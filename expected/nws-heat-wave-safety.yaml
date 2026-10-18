@@ -40,12 +40,14 @@ findings:
     line: 27
     text: Do not take salt tablets unless specifie
     message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 33
     text: Do not direct the flow of portable elect
     message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: concrete-evidence-density
     line: 36
     text: ""

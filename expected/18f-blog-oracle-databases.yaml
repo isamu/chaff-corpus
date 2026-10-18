@@ -20,7 +20,8 @@ findings:
     line: 32
     text: We will provide guidance on importing da
     message: "\"we will\" is written \"we'll\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: quote-style-consistency
     line: 32
     text: "'ll have a working Oracle database runni"
@@ -105,7 +106,8 @@ findings:
     line: 142
     text: Lastly, the environment-setting block on
     message: "\"we are\" is written \"we're\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: shell-prompt-mix
     line: 158
     text: "```sh"
@@ -155,7 +157,8 @@ findings:
     line: 253
     text: So we are in control of when this runs.
     message: "\"we are\" is written \"we're\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: quote-style-consistency
     line: 253
     text: '". (See the `profiles:` key there?) Prof'

@@ -10,7 +10,8 @@ findings:
     line: 92
     text: One challenge, however, is that it is no
     message: "\"is not\" is written \"isn't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: hyphen-as-dash
     line: 179
     text: " - not just keys that can be used as pro"
@@ -55,9 +56,11 @@ findings:
     line: 487
     text: Additionally, there are new restrictions
     message: "\"does not\" is written \"doesn't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 488
     text: In these cases, the other enum must at l
     message: "\"it is\" is written \"it's\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
