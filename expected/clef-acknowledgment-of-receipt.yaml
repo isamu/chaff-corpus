@@ -1,0 +1,13 @@
+id: clef-acknowledgment-of-receipt
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 31
+    text: " The *Clef Employee Handbook* consists o"
+    message: 1 space after this sentence, where the document usually leaves 2 (1 of 4)
+    verdict: correct
+  - rule: link-text-url-mismatch
+    line: 31
+    what: the link text shows github.com/clef/handbook but the link goes to github.com/handbook, a different repository on the same host
+    verdict: missed
+    note: the rule skips a same-host link, but here the path names a different page, not a shortened display of the same one

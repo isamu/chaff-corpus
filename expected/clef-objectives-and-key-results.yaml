@@ -1,0 +1,8 @@
+id: clef-objectives-and-key-results
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 51
+    text: "% completion** -- if the goal is to do s"
+    message: This sentence runs 41 words (limit 40)
+    verdict: correct

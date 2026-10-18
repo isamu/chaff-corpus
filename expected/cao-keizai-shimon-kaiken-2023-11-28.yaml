@@ -1,0 +1,158 @@
+id: cao-keizai-shimon-kaiken-2023-11-28
+chaff: 0.36.0
+findings:
+  - rule: max-ten
+    line: 12
+    text: まず、１つ目の議題である「令和６年度予算編成の基本方針」に関する議論では、来春の
+    message: 一文に読点が 13 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 12
+    text: まず、１つ目の議題である「令和６年度予算編成の基本方針」に関する議論では、来春の
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 14
+    text: サービス水準を維持しつつ、歳出を効率化するためには、デジタル技術の実装を通じた政
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: correct
+  - rule: max-ten
+    line: 15
+    text: 総理からの締めくくり発言は、お聞きいただいたとおりでございますが、河野大臣に対し
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 15
+    text: 総理からの締めくくり発言は、お聞きいただいたとおりでございますが、河野大臣に対し
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic 締めくくり発言は has its predicate at once (とおりでございますが); the rest of the sentence is a new clause
+  - rule: orthographic-variant
+    line: 16
+    text: ほうにもご指示があります。
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 「私のほう」 (side/direction) is a different word from 方 read かた (お持ちの方) and from compounds such as 方針・事務方
+  - rule: clause-chain
+    line: 28
+    text: 短期的に目の前の物価高から国民の暮らしを守ることと併せて、構造的な日本経済の変化
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 29
+    text: 経済活動を平時化していくというのは、そういう意味ではこれまでのコロナ禍における本
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 31
+    text: そして、今回の補正予算と併せて、来年度予算において、一体的に切れ目なく、デフレか
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: max-ten
+    line: 36
+    text: しかし、そういう中で、総理も、また私も、給付金と減税は可処分所得の向上を目指すも
+    message: 一文に読点が 11 個あります（6 個まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 36
+    text: しかし、そういう中で、総理も、また私も、給付金と減税は可処分所得の向上を目指すも
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 36
+    text: しかし、そういう中で、総理も、また私も、給付金と減税は可処分所得の向上を目指すも
+    message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 37
+    text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: correct
+  - rule: max-ten
+    line: 37
+    text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 37
+    text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
+    message: 「は」で出した主題から述語まで 149 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    text: 5,000億円をまた増額したわけですが、これに加えて更に上乗せ給付をしようという
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。56 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 53
+    text: そういうことのないように、今回は補正予算が成立次第、12月の地方議会にすぐに対処
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: correct
+  - rule: clause-chain
+    line: 61
+    text: あるいは、申請書をいただいて、それを今度は自治体から、あなたはこういうものを受け
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+  - rule: max-ten
+    line: 61
+    text: あるいは、申請書をいただいて、それを今度は自治体から、あなたはこういうものを受け
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 61
+    text: もって申請する、そういうことで選べば、これも手紙のやり取りよりは早くなります。
+    message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。9 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 「電子でもって」 is the particle-like もって (以て, by means of), not the verb 持つ
+  - rule: orthographic-variant
+    line: 61
+    text: 手続きをしたいというならば紙でおやりになってもいいと思います。あるいは、申請書を
+    message: 「手続き」と書いています（この文書はふつう「手続」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 61
+    text: あるいは、申請書をいただいて、それを今度は自治体から、あなたはこういうものを受け
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 62
+    text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: correct
+  - rule: max-ten
+    line: 62
+    text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 62
+    text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 65
+    text: 答えの中で、ポイントで給付することも可能だというようなお話をされていたのですけれ
+    message: 「答え」と書いています（この文書はふつう「答」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the other 「答」 are the Q&A labels （答）, not the noun 答え in running text
+  - rule: fullwidth-alnum-consistency
+    line: 98
+    text: 1,500円では年収換算にすると低いので、2,000円を目指していくべき。人手不
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。56 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 98
+    text: 2,000円を目指していくべき。人手不足の影響をマクロ経済モデルでも分析すべき。
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。56 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 122
+    text: 頂いた。
+    message: 「頂く」と書いています（この文書はふつう「いただく」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 本動詞 「ご指示を頂いた」 (receive) is written in kanji by the 公用文 rule; the others are the auxiliary 〜いただく
+  - rule: orthographic-variant
+    line: 128
+    text: ときに、議論されていたことがしっかり実行されているか確認をして、期待する政策効果
+    message: 「とき」と書いています（この文書はふつう「時」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct

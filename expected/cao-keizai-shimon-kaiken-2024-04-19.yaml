@@ -1,0 +1,34 @@
+id: cao-keizai-shimon-kaiken-2024-04-19
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 22
+    text: これらの内容は2050年のカーボンニュートラルに向けた我が国の取組、強靱なエネル
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead
+  - rule: orthographic-variant
+    line: 27
+    text: さまざまな状況の中で適切に判断していきたいと考えています。
+    message: 「さまざま」と書いています（この文書はふつう「様々」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: redundant-expression
+    line: 27
+    text: （答）靖国神社への参拝につきましては、私人としての私的な行為であると思っています
+    message: 「従来から」は同じ意味の語を重ねています
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 60
+    text: 9％減となった。2050年ネットゼロに向けた順調な減少傾向、いわゆるオントラック
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。35 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 106
+    text: 3,000人未満の小規模過疎自治体の約４割が社会増をしているというデータもある。
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。35 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 129
+    text: また、地域資源を活用した再エネ導入に取り組む地域エネルギー会社は、エネルギーの地
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: correct

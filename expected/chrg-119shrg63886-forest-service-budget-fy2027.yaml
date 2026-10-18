@@ -1,0 +1,75 @@
+id: chrg-119shrg63886-forest-service-budget-fy2027
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 65
+    text: CATHERINE CORTEZ MASTO, Nevada
+    message: '"CATHERINE CORTEZ MASTO" is written in capitals'
+    verdict: false-positive
+    note: a committee roster sets members' names in capitals by GPO convention
+  - rule: all-caps-shouting
+    line: 155
+    text: OPENING STATEMENT OF HON. MIKE LEE,
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 157
+    text: SENATOR FROM UTAH
+    message: '"SENATOR FROM UTAH" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: unknown-word
+    line: 183
+    text: intel.
+    message: '"intel" is not in the dictionary; did you mean "inter"?'
+    verdict: false-positive
+    note: a real English word (intel, aridification, doozy, permittee) missing from the dictionary
+  - rule: all-caps-shouting
+    line: 375
+    text: OPENING STATEMENT OF HON. MARTIN HEINRIC
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 377
+    text: SENATOR FROM NEW MEXICO
+    message: '"SENATOR FROM NEW MEXICO" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: unknown-word
+    line: 465
+    text: aridification is
+    message: '"aridification" is not in the dictionary; did you mean "acidification"?'
+    verdict: false-positive
+    note: a real English word (intel, aridification, doozy, permittee) missing from the dictionary
+  - rule: unknown-word
+    line: 513
+    text: doozy. When we're willing to lose
+    message: '"doozy" is not in the dictionary; did you mean "dozy"?'
+    verdict: false-positive
+    note: a real English word (intel, aridification, doozy, permittee) missing from the dictionary
+  - rule: all-caps-shouting
+    line: 571
+    text: OPENING STATEMENT OF HON. TOM SCHULTZ, C
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 571
+    text: TOM SCHULTZ, CHIEF, U.S. FOREST
+    message: '"TOM SCHULTZ, CHIEF, U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 573
+    text: DEPARTMENT OF AGRICULTURE
+    message: '"DEPARTMENT OF AGRICULTURE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: unknown-word
+    line: 3495
+    text: permittee, advising and as a liaison to
+    message: '"permittee" is not in the dictionary; did you mean "permitted"?'
+    verdict: false-positive
+    note: a real English word (intel, aridification, doozy, permittee) missing from the dictionary
