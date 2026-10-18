@@ -1,0 +1,397 @@
+id: fsa-soudansitu-advice-kashikin
+chaff: 0.36.0
+findings:
+  - rule: list-item-form-mix
+    line: 13
+    text: 相談窓口はこちら
+    message: 「相談窓口はこちら」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
+    verdict: false-positive
+    note: a link label (相談窓口はこちら) in a list of sentences; the source page links it
+  - rule: duplicate-heading
+    line: 16
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 5 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: no-mixed-desumasu
+    line: 18
+    text: ○　どこにいくらお金を借りているかわからなくなった。確認する方法はありますか。
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: a consultation case quoted in the asker's plain voice, set apart by ○ from the advice text
+  - rule: duplicate-heading
+    line: 20
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 9 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: max-kanji-continuous
+    line: 33
+    text: ③一般社団法人 全国銀行個人信用情報センター
+    message: 「全国銀行個人信用情報」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
+  - rule: no-mixed-desumasu
+    line: 41
+    text: ○　ファクタリング業者と名乗る者から、「借金をしないで資金調達が可能」との内容の
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: a consultation case quoted in the asker's plain voice, set apart by ○ from the advice text
+  - rule: max-sentence-length
+    line: 48
+    text: しかしながら、この「ファクタリング」とみせかけて、実際には、高金利で金銭を貸し付
+    message: この文は 212 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 48
+    text: しかしながら、この「ファクタリング」とみせかけて、実際には、高金利で金銭を貸し付
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 48
+    text: たり、売主自身の資金によりファクタリング業者に支払いをしなければならないこととさ
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 49
+    text: ファクタリングは、当庁が所掌している事業ではなく、ファクタリング全般を規制する法
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead (〜事業ではなく)
+  - rule: duplicate-heading
+    line: 51
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: one-sentence-paragraph-run
+    line: 53
+    text: ○ダイレクトメールで融資勧誘をしてきた業者に借入れを申し込んだところ、「金融庁か
+    message: 一文だけの段落が 5 個続いています（4 個まで）
+    verdict: false-positive
+    note: a run of consultation cases, each one line marked ○; a list, not prose paragraphs
+  - rule: orthographic-variant
+    line: 53
+    text: 借入前にお金を振り込みましたが融資が実行されません。
+    message: 「借入」と書いています（この文書はふつう「借入れ」と書く語です。32 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 55
+    text: 借入前に振り込みましたが融資が実行されません。
+    message: 「借入」と書いています（この文書はふつう「借入れ」と書く語です。32 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 57
+    text: 借入前に振り込みましたが融資が実行されません。
+    message: 「借入」と書いています（この文書はふつう「借入れ」と書く語です。32 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 59
+    text: 借入前にお金を振り込みましたが融資が実行されません。
+    message: 「借入」と書いています（この文書はふつう「借入れ」と書く語です。32 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 63
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: max-kanji-continuous
+    line: 68
+    text: ＊　登録の確認は、「登録貸金業者情報検索入力ページ」をご利用ください。
+    message: 「登録貸金業者情報検索入力」は漢字が 12 字続いています（8 字まで）
+    verdict: false-positive
+    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
+  - rule: duplicate-heading
+    line: 78
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: weasel-word
+    line: 80
+    text: ○おまとめローンを申し込んだら、「金融庁にあるデータが借入れできない状態になって
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: false-positive
+    note: "a quoted consultation case: the sayer is the lender just named (おまとめローンを申し込んだら…と言われています)"
+  - rule: duplicate-heading
+    line: 82
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: tari-unpaired
+    line: 84
+    text: たり、個別の貸付けに関与することはありません。金融庁を理由に金銭を請求してきた場
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: duplicate-heading
+    line: 88
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 92
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 97
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 101
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: tari-unpaired
+    line: 105
+    text: たり、ネット上でさらされるなど、トラブルや犯罪被害に巻き込まれる危険性もあります
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: duplicate-heading
+    line: 109
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 113
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: tari-unpaired
+    line: 115
+    text: たり、ネット上でさらされるなど、トラブルや犯罪被害に巻き込まれる危険性もあります
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: duplicate-heading
+    line: 119
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 39 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 123
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 43 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: requirement-smell
+    line: 125
+    text: などを通じて見知らぬ人同士が知り合い、金銭の貸し借りを行う個人間融資は、たとえ個
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: など is in the description of the activity (SNSなどを通じて), not in the scope of the obligation
+  - rule: tari-unpaired
+    line: 125
+    text: たり、ネット上でさらされるなど、トラブルや犯罪被害に巻き込まれる危険性があるため
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 136
+    text: 無く、勤務先や夜９時以降に督促の電話をすることは法律で禁じられています。貸金業者
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: requirement-smell
+    line: 146
+    text: などの取引履歴を含む内容を記載した帳簿を保存することが義務付けられており、債務者
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 146
+    text: 貸金業者は、貸金業法により貸付けの金額や受領金額などの取引履歴を含む内容を記載し
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 147
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 158
+    text: 分からない場合は、契約関係書類を持って消費生活センター等に相談してください。
+    message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 168
+    text: 6月18日から実施されています。ただし、金利の引下げが実施されても、過去の契約に
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。26 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 172
+    text: (注) 将来金利の引下げが実施されても、過去の契約に遡って適用されるわけではあり
+    message: 括弧を「(」と書いています（この文書はふつう「（」。42 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 172
+    text: ) 将来金利の引下げが実施されても、過去の契約に遡って適用されるわけではありませ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。42 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: excessive-hedging
+    line: 182
+    text: かと思われますが、これは、改正貸金業法の完全施行日となる平成22年6月18日から
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と思われます」）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 182
+    text: 6月18日から実施されています。
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。26 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: ngram-repetition
+    line: 182
+    text: 借り手の年収等を基準にその３分の１を超える貸付けを原則禁止する、いわゆる総量規制
+    message: 「の３分の１を超え」が 7 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 183
+    text: ただし、総量規制に抵触していない場合でも、いわゆる過剰貸付けは法律で禁止されてお
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 184
+    text: 借入前に十分検討する必要があります。
+    message: 「借入」と書いています（この文書はふつう「借入れ」と書く語です。32 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 186
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 176 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: adversative-ga-repeat
+    line: 188
+    text: ○10年以上、貸金業者で借入れと返済を繰り返していますが、最近新たに借入れをしよ
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 192
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 180 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: max-sentence-length
+    line: 194
+    text: ○ある貸金業者から50万円を超えて借りる場合（又は50万円を超える借入枠のリボル
+    message: この文は 153 文字あります（140 文字まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 195
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 195
+    text: 無い場合であっても、「年収を証明する書類」を提出しない場合、個々の貸金業者の判断
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 198
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 176 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 202
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 180 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: excessive-hedging
+    line: 205
+    text: かと考えられます。
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と考えられます」）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 207
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 176 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 211
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 180 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 216
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 176 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: duplicate-heading
+    line: 220
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 180 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: fullwidth-alnum-consistency
+    line: 222
+    text: 6月18日から実施されています。
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。26 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 224
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 228
+    text: "### 【相談事例等】"
+    message: 見出し「【相談事例等】」は、同じ親の下の 176 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: orthographic-variant
+    line: 230
+    text: 出来なくなるのですか。
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: duplicate-heading
+    line: 232
+    text: "### 【アドバイス等】"
+    message: 見出し「【アドバイス等】」は、同じ親の下の 180 行目の見出しと同じです
+    verdict: false-positive
+    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
+  - rule: fullwidth-alnum-consistency
+    line: 234
+    text: 1まで借入れを行うことができます。なお、当該同意が真正なものであるか否かについて
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。26 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 234
+    text: 3分の1まで借入れを行うことができます。なお、当該同意が真正なものであるか否かに
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。26 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 234
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。23 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 234
+    text: 無い専業主婦については、配偶者の年収・借入残高と合わせて考えた場合、当該配偶者の
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 255
+    text: または全部）を受けた際には、その都度一定事項を記載した受取証書を交付することにな
+    message: 「または」と書いています（この文書はふつう「又は」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 256
+    text: さらに法第22条において、「貸金業者は、貸付けの契約に基づく債権についてその全部
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 263
+    text: ○クレジットカード会社とのショッピングクレジットでトラブルが発生したので相談した
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: a consultation case quoted in the asker's plain voice, set apart by ○ from the advice text

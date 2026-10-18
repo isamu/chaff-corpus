@@ -1,0 +1,74 @@
+id: cao-keizai-shimon-kaiken-2024-09-03
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 15
+    text: GDP600兆円が実現されるなど、大きな成果を挙げることができたのではないかと考
+    message: 半角の「GDP600」と書いています（この文書はふつう全角の「ＧＤＰ６００」。19 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: clause-chain
+    line: 18
+    text: 私どもは、人口減少・少子高齢化にあっても成長していく、長い人生を皆さんが享受する
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 18
+    text: 私どもは、人口減少・少子高齢化にあっても成長していく、長い人生を皆さんが享受する
+    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 23
+    text: 今も説明いただきましたけれども、改めて総理が事実上の退陣表明をされてからの開催と
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 23
+    text: マクロ経済運営、この直近の１年間は閣僚としてお支えされた大臣として、改めて岸田政
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 26
+    text: そして、これまでの流れを総括しつつ、やはり今後、更に、引き続き重点強化していかな
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 27
+    text: そこから実需をつくっていく。こうしたことをやらなければならないと思いますし、この
+    message: 「そこ」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 27
+    text: 安定的な物価上昇のもとで、賃上げが持続的に、また構造的に行われていく。その賃上げ
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 29
+    text: GDP600兆円の目標を掲げ、そして、ついにここで600兆円を超えたということで
+    message: 半角の「GDP600」と書いています（この文書はふつう全角の「ＧＤＰ６００」。19 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 49
+    text: 1,500円を早期に達成するために、ロードマップを示してほしい。また、年収の壁に
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。29 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 59
+    text: 岸田政権における経済財政運営については、まず、少子化対策や防衛力の抜本的な強化と
+    message: 「〜きた」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: max-ten
+    line: 61
+    text: 引き続き、経済の「新たなステージ」への移行を進めるとともに、「金利のある世界」を
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 70
+    text: さらには物価上昇を反映した賃金の引き上げといった、我が国経済がデフレに陥った19
+    message: 「さらに」と書いています（この文書はふつう「更に」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 70
+    text: こうした緩和の成果もあって、我が国の景気は緩やかな回復を続けており、コスト上昇の
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead

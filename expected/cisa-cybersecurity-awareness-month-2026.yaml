@@ -1,0 +1,8 @@
+id: cisa-cybersecurity-awareness-month-2026
+chaff: 0.36.0
+findings:
+  - rule: quote-style-consistency
+    line: 17
+    text: "'s infrastructure against cyber threats."
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 13)
+    verdict: correct

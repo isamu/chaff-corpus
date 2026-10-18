@@ -1,0 +1,23 @@
+id: clef-employee-privacy
+chaff: 0.36.0
+findings:
+  - rule: wordy-phrase
+    line: 5
+    text: However, in order to ensure the safety a
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: wordy-phrase
+    line: 11
+    text: The company has both the ability and the
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 31
+    text: To avoid email viruses, phishing for acc
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: To avoid email viruses, phishing for acc
+    message: This sentence runs 43 words (limit 40)
+    verdict: correct

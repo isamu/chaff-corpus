@@ -1,0 +1,13 @@
+id: cisa-logging-reference-architecture-2026
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 11
+    text: WASHINGTON – Today, the Cybersecurity an
+    message: This sentence runs 48 words (limit 45)
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 11
+    text: WASHINGTON – Today, the Cybersecurity an
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct

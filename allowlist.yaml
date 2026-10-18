@@ -478,3 +478,18 @@
 - id: fsa-ifc-faq
   match: "03-6667-0551"
   reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: fsa-soudansitu-advice-kashikin
+  match: "0570-666-414"
+  reason: a credit bureau's (信用情報機関) published phone number for disclosure requests, listed by the FSA page as a contact
+- id: fsa-soudansitu-advice-kashikin
+  match: "0570-055-955"
+  reason: a credit bureau's (信用情報機関) published phone number for disclosure requests, listed by the FSA page as a contact
+- id: fsa-soudansitu-advice-kashikin
+  match: "0120-540-558"
+  reason: a credit bureau's (信用情報機関) published phone number for disclosure requests, listed by the FSA page as a contact
+- id: fsa-soudansitu-advice-kashikin
+  match: "03-3214-5020"
+  reason: a credit bureau's (信用情報機関) published phone number for disclosure requests, listed by the FSA page as a contact
+- id: fsa-soudansitu-advice-angoshisan
+  match: "03-3222-1061"
+  reason: a self-regulatory industry association's (日本暗号資産等取引業協会) published complaint hotline, listed by the FSA page as a contact

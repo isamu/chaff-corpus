@@ -1,0 +1,28 @@
+id: clef-sourcing-candidates
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 3
+    text: "  We should keep all three channels open"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 14)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 9
+    text: Open positions should be posted on getcl
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: This starts with writing the job descrip
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 19
+    text: It is critical that we find talent pools
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: correct
+  - rule: contraction-consistency
+    line: 25
+    text: Because of the light filter, it can be t
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
