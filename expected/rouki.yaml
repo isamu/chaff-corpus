@@ -50,7 +50,8 @@ findings:
     line: 156
     text: 使用者は、前項の協定で同項第四号の区分をし当該区分による各期間のうち最初の期間を
     message: 「は」で出した主題から述語まで 266 字あります（200 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 162
     text: 第三十二条の五　使用者は、日ごとの業務に著しい繁閑の差が生ずることが多く、かつ、
@@ -100,7 +101,8 @@ findings:
     line: 247
     text: 使用者は、当該事業場に、労働者の過半数で組織する労働組合があるときはその労働組合
     message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 253
     text: 使用者は、第一項から第三項までの規定による有給休暇（これらの規定により使用者が与

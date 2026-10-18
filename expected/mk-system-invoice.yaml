@@ -1,11 +1,6 @@
 id: mk-system-invoice
 chaff: 0.34.0
 findings:
-  - rule: vague-word-density
-    line: 6
-    what: vague words (できる限り and others) above the density limit
-    verdict: missed
-    note: correct in chaffjs 0.35.0, lost in 0.36.0; why not established (0.36.0 narrowed vague-word-density for lists and pinned words)
   - rule: unbalanced-bracket
     line: 22
     text: ）買手は、自らが作成した仕入明細書等のうち、一定の事項（インボイスに記載が必要な

@@ -10,7 +10,8 @@ findings:
     line: 42
     text: Health and wellbeing** come first – We e
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: quote-style-consistency
     line: 43
     text: ’s important to them.
@@ -31,7 +32,8 @@ findings:
     line: 83
     text: Schedule reminder messages](https://slac
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: undefined-acronym
     line: 84
     text: MR reviews on your last working day befo
@@ -76,7 +78,8 @@ findings:
     line: 213
     text: "Automatic Status Updates**: Sets OOO sta"
     message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: the full form is part of a setting's name in quotation marks, not the writer's own use
   - rule: vague-link-text
     line: 240
     text: "[here](https://docs.google.com/document/"

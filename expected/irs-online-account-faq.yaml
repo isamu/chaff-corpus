@@ -10,7 +10,8 @@ findings:
     line: 36
     text: If you're a business, or an individual w
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 45
     text: The Payment Activity tab currently links
@@ -45,7 +46,8 @@ findings:
     line: 196
     text: If you received a notice in the mail or
     message: "\"it is\" is written \"it's\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 234
     text: If you couldn’t find what you’re looking
@@ -65,12 +67,14 @@ findings:
     line: 274
     text: Generally, an amount included in your in
     message: "\"it is\" is written \"it's\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 274
     text: Income that is nontaxable may have to be
     message: "\"is not\" is written \"isn't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: max-sentence-length
     line: 304
     text: If you had coverage from a Healthcare Ex

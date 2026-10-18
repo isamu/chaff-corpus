@@ -182,22 +182,26 @@ findings:
     line: 21
     text: (2）中期経営計画前中期経営計画は2020年３月期が最終年度で、通常では当連結会
     message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202
     message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: その結果、当連結会計年度の売上高は346億4千2百万円となり、前連結会計年度の売
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 21
     text: なお、当社グループは持続的安定収益の実現に向け、以下の表に示す売上高と営業利益を
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: unbalanced-bracket
     line: 21
     text: ）中期経営計画前中期経営計画は2020年３月期が最終年度で、通常では当連結会計年

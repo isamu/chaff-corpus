@@ -87,27 +87,32 @@ findings:
     line: 1
     text: これは、中古マンションという今あるものに目を向け、眠っていた価値に光を当てること
     message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 1
     text: なお、首都圏中古マンションの在庫件数は、2021年６月（33,641件）以降復調
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当社グループの属するリノベーションマンション業界におきましては、公益財団法人東日
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当社グループは、様々な課題を抱えた中古マンションの取得・リノベーション・販売活動
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 1
     text: 翌連結会計年度以降は、物価上昇による家計負担の増加や、金融政策の見直しによる金利
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: unbalanced-bracket
     line: 1
     text: ）優先的に対処すべき事業上及び財務上の課題上記の経営方針・経営戦略等を実現するた

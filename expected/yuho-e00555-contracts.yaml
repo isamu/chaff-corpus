@@ -35,12 +35,14 @@ findings:
     line: 1
     text: (2）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビ
     message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 1
     text: (4）当社は賃貸中の店舗建替に伴い関東三菱自動車販売株式会社（現・東日本三菱自動
     message: 「は」で出した主題から述語まで 114 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: unbalanced-bracket
     line: 1
     text: ）1992年９月１日、当社はイタリアのゼニア・バルファー社との間に業務提携契約を

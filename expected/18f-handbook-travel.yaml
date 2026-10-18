@@ -50,12 +50,14 @@ findings:
     line: 162
     text: When working from somewhere that isn't y
     message: "\"isn't\" is written \"is not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 181
     text: On the other side, when travel expenses
     message: "\"it's\" is written \"it is\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: max-sentence-length
     line: 181
     text: On the other side, when travel expenses

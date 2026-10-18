@@ -5,17 +5,20 @@ findings:
     line: 42
     text: These types of changes are specified as
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 51
     text: Whether you're a team member preparing t
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
     line: 53
     text: Throughout this process, remember that p
     message: "\"they're\" is written \"they are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: wordy-phrase
     line: 63
     text: In order for promotions through internal
@@ -25,7 +28,8 @@ findings:
     line: 78
     text: This applies whether you're seeking vert
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: undefined-acronym
     line: 90
     text: URG](/handbook/total-rewards/compensatio
@@ -330,7 +334,8 @@ findings:
     line: 618
     text: If they don't, please connect with your
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: hyphen-as-dash
     line: 645
     text: " - EMEA, Content Marketing (John Smith),"

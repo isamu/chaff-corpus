@@ -12,11 +12,6 @@ findings:
     text: 不審なメールには対応せず、社内で確認をお願いします
     message: この依頼には、いつまでに・誰がするかが書かれていません
     verdict: unjudged
-  - rule: missing-final-period
-    line: 42
-    what: the paragraph ends without 。 where the document's paragraphs usually end with 。
-    verdict: missed
-    note: correct in chaffjs 0.35.0, lost in 0.36.0; why not established (likely the new one-list-item-per-paragraph reading)
   - rule: bracket-width-consistency
     line: 46
     text: (代表)

@@ -250,17 +250,20 @@ findings:
     line: 586
     text: Don’t use “click” when talking about use
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: a contracted negative in the writer's own prose; the guide otherwise writes the full form
   - rule: contraction-consistency
     line: 652
     text: Avoid negative contractions like can’t a
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: the contractions are named as examples of what to avoid, mentioned rather than used
   - rule: contraction-consistency
     line: 652
     text: Use cannot, instead of can’t.
     message: "\"cannot\" is written \"can't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: the full form is named as the advised replacement, mentioned rather than used
   - rule: invisible-character
     line: 821
     text: ​
@@ -485,7 +488,8 @@ findings:
     line: 2896
     text: commit/pledge, use ‘plan to x’, or ‘we’r
     message: "\"we're\" is written \"we are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: the contraction is a quoted example of wording, mentioned rather than used
   - rule: oxford-comma-consistency
     line: 2896
     text: commit/pledge, use ‘plan to x’, or ‘we’r

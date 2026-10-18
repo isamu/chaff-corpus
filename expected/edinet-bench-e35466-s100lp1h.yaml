@@ -340,27 +340,32 @@ findings:
     line: 21
     text: (2）経営戦略等① 当社グループの経営上の強み　当社グループは、独立系であるため
     message: 「は」で出した主題から述語まで 192 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: (4）経営環境当社グループが属する情報サービス産業は、新型コロナウイルス感染症の
     message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: (5）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: ② 当社グループの経営上の弱み　当社グループは中堅独立系ITトータルソリューショ
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: なお、新型コロナウイルス感染症の拡大による当社グループの業績への影響は、令和３年
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: unbalanced-bracket
     line: 21
     text: ）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下、更
@@ -455,22 +460,26 @@ findings:
     line: 25
     text: 当社グループは、独立系であるためメーカーの系列、機種・OS等に限定されることなく
     message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは、知的財産管理規程に基づき、サービス等の提供前に管理部が事前に開発
     message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは、請負契約（成果物あり）で受注金額１百万円以上又は１人月以上の案件
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 25
     text: 従いまして、優秀な技術者やシステムエンジニア、管理者等、必要とする人材を採用、育
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: unbalanced-bracket
     line: 25
     text: ）システム開発における品質や納期遅延の問題に関するリスクシステム開発においては、
@@ -1305,7 +1314,8 @@ findings:
     line: 121
     text: (5）連結キャッシュ・フロー計算書における資金の範囲連結キャッシュ・フロー計算書
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: unbalanced-bracket
     line: 121
     text: ）その他連結財務諸表作成のための重要な事項イ　繰延資産の処理方法株式交付費は、支

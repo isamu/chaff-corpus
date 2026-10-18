@@ -25,7 +25,8 @@ findings:
     line: 25
     text: I also believe it is essential we stay a
     message: "\"it is\" is written \"it's\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: concrete-evidence-density
     line: 29
     text: ""
