@@ -1,0 +1,15 @@
+id: aozora-kishida-chiroru-no-aki
+title: 岸田國士「チロルの秋（一幕）」（青空文庫）
+language: ja
+genre: literature/play
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/001154/files/52088_45846.html
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1954, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 7691a2e94c2d6ddea425f1279aac6fe69b6e6095ed7d44200e4d2dc7a34d34ec
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."

@@ -1,0 +1,43 @@
+id: aozora-ogai-takasebune
+chaff: 0.36.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 5
+    text: それから罪人は高瀬舟に載せられて、大阪へ回されることであった。それを護送するのは
+    message: 「〜であった」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 8
+    text: 同心を勤める人にも、いろいろの性質があるから、この時ただうるさいと思って、耳をお
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 15
+    text: その日は暮れ方から風がやんで、空一面をおおった薄い雲が、月の輪郭をかすませ、よう
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 17
+    text: それは喜助の顔が縦から見ても、横から見ても、いかにも楽しそうで、もし役人に対する
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 26
+    text: 庄兵衛は五節句だと言っては、里方から物をもらい、子供の七五三の祝いだと言っては、
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 26
+    text: 庄兵衛は五節句だと言っては、里方から物をもらい、子供の七五三の祝いだと言っては、
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 30
+    text: しかし心の奥には、こうして暮らしていて、ふいとお役が御免になったらどうしよう、大
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 41
+    text: 庄兵衛はその場の様子を目のあたり見るような思いをして聞いていたが、これがはたして
+    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
+    verdict: unjudged

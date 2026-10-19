@@ -1,0 +1,58 @@
+id: aozora-dazai-hashire-merosu
+chaff: 0.36.0
+findings:
+  - rule: clause-chain
+    line: 34
+    text: 「うれしいか。綺麗な衣裳も買って来た。さあ、これから行って、村の人たちに知らせて
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 36
+    text: 祝宴に列席していた村人たちは、何か不吉なものを感じたが、それでも、めいめい気持を
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 42
+    text: 村を出て、野を横切り、森をくぐり抜け、隣村に着いた頃には、雨も止み、日は高く昇っ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 42
+    text: 殺される為に走るのだ。身代りの友を救う為に走るのだ。王の奸佞邪智を打ち破る為に走
+    message: 「〜だ」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 50
+    text: メロスはひょいと、からだを折り曲げ、飛鳥の如く身近かの一人に襲いかかり、その棍棒
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 50
+    text: メロスはひょいと、からだを折り曲げ、飛鳥の如く身近かの一人に襲いかかり、その棍棒
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 50
+    text: メロスはひょいと、からだを折り曲げ、飛鳥の如く身近かの一人に襲いかかり、その棍棒
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 51
+    text: 一気に峠を駈け降りたが、流石に疲労し、折から午後の灼熱の太陽がまともに、かっと照
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 51
+    text: 一気に峠を駈け降りたが、流石に疲労し、折から午後の灼熱の太陽がまともに、かっと照
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 65
+    text: メロスはそれを目撃して最後の勇、先刻、濁流を泳いだように群衆を掻きわけ、掻きわけ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: メロスはそれを目撃して最後の勇、先刻、濁流を泳いだように群衆を掻きわけ、掻きわけ
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged

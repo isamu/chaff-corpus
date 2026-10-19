@@ -1,0 +1,926 @@
+id: aozora-soseki-watakushi-no-kojinshugi
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 5
+    text: ――大正三年十一月二十五日学習院輔仁会において述――
+    message: 「大正三年十一月二十五日学習院輔仁会」は漢字が 17 字続いています（8 字まで）
+    verdict: false-positive
+    note: "a kanji-numeral date followed by an institution's name, read as one run of kanji"
+  - rule: adversative-ga-repeat
+    line: 8
+    text: さきほど岡田さんが紹介かたがたちょっとお話になった通りこの春何か講演をというご注
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 8
+    text: その時念のためこの次はいつごろになりますかと岡田さんに伺いましたら、此年の十月だ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 8
+    text: さきほど岡田さんが紹介かたがたちょっとお話になった通りこの春何か講演をというご注
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 8
+    text: さきほど岡田さんが紹介かたがたちょっとお話になった通りこの春何か講演をというご注
+    message: この文は 147 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 8
+    text: その時念のためこの次はいつごろになりますかと岡田さんに伺いましたら、此年の十月だ
+    message: この文は 142 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 8
+    text: さきほど岡田さんが紹介かたがたちょっとお話になった通りこの春何か講演をというご注
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 8
+    text: その時念のためこの次はいつごろになりますかと岡田さんに伺いましたら、此年の十月だ
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 9
+    text: そのうちひょろひょろもついに癒ってしまったけれども、こちらからは十月末まで何のご
+    message: この段落は 7 文あります（5 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 9
+    text: 私は無論病気の事をご通知はしておきませんでしたが、二三の新聞にちょっと出たという
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 10
+    text: 右の次第で、この春から十月に至るまで、十月末からまた十一月二十五日に至るまでの間
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 10
+    text: 右の次第で、この春から十月に至るまで、十月末からまた十一月二十五日に至るまでの間
+    message: この文は 108 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 10
+    text: いよいよと時日が逼った二三日前になって、何か考えなければならないという気が少しし
+    message: 「なければならない」が 14 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 10
+    text: えらいものが描けるように聞えるかも知れませんが、実は他愛もないものを描いて、それ
+    message: 「えらい」と書いています（この文書はふつう「偉い」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: adversative-ga-repeat
+    line: 12
+    text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
+    message: 一文に逆接の「が」が 3 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 12
+    text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 12
+    text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
+    message: この文は 166 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 12
+    text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
+    message: 「は」で出した主題から述語まで 159 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 13
+    text: ――昔しあるお大名が二人目黒辺へ鷹狩に行って、所々方々を馳け廻った末、大変空腹に
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 13
+    text: しかし主命ですから反抗する訳にも行きませんので、料理人に命じて秋刀魚の細い骨を毛
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 13
+    text: かと思われるのです。
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と思われる」）
+    verdict: false-positive
+    note: "「ではないかと思われる」 is one hedge; the と of かと is the と of と思われる, counted twice"
+  - rule: max-paragraph-length
+    line: 13
+    text: 私が落語家から聞いた話の中にこんな諷刺的のがあります。――昔しあるお大名が二人目
+    message: この段落は 9 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 13
+    text: ――昔しあるお大名が二人目黒辺へ鷹狩に行って、所々方々を馳け廻った末、大変空腹に
+    message: この文は 133 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 13
+    text: そこで二人が顔を見合せて、どうも秋刀魚は目黒に限るねといったような変な言葉を発し
+    message: この文は 192 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 13
+    text: そこで二人が顔を見合せて、どうも秋刀魚は目黒に限るねといったような変な言葉を発し
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 13
+    text: そこで二人が顔を見合せて、どうも秋刀魚は目黒に限るねといったような変な言葉を発し
+    message: 「は」で出した主題から述語まで 169 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 14
+    text: この席におられる大森教授は私と同年かまたは前後して大学を出られた方ですが、その大
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 14
+    text: この席におられる大森教授は私と同年かまたは前後して大学を出られた方ですが、その大
+    message: この文は 110 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 14
+    text: おられる大森教授は私と同年かまたは前後して大学を出られた方ですが、その大森さんが
+    message: 「おる」と書いています（この文書はふつう「折る」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "おられる is the honorific of おる (居る), not 折る"
+  - rule: topic-predicate-distance
+    line: 14
+    text: この席におられる大森教授は私と同年かまたは前後して大学を出られた方ですが、その大
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 15
+    text: もっとも私の主意はその時の大森君には通じていなかったかも知れませんから、この機会
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 15
+    text: ここで繰り返していうのもお恥ずかしい訳ですが、私はその時、君などの講義をありがた
+    message: この段落は 8 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 15
+    text: もっとも私の主意はその時の大森君には通じていなかったかも知れませんから、この機会
+    message: この文は 149 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 15
+    text: もっとも私の主意はその時の大森君には通じていなかったかも知れませんから、この機会
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 15
+    text: もちろんこれは私や私の周囲のものを本位として述べるのでありますから、圏外にいたも
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 15
+    text: もっとも私の主意はその時の大森君には通じていなかったかも知れませんから、この機会
+    message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 17
+    text: それだのに私みたようなものを、ことさらによそから連れて来て、講演を聴こうとなされ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: それだのに私みたようなものを、ことさらによそから連れて来て、講演を聴こうとなされ
+    message: この文は 115 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: たとい私にしたところで、もしこの学校の教授にでもなっていたならば、単に新らしい刺
+    message: この文は 107 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 17
+    text: の先生のお話の方がよほど有益でもあり、かつまた面白かろうとも思われるのです。たと
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 17
+    text: ことさらによそから連れて来て、講演を聴こうとなされるのは、ちょうど先刻お話したお
+    message: 「こと」と書いています（この文書はふつう「事」と書く語です。97 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "ことさらに is its own adverb, not 事"
+  - rule: orthographic-variant
+    line: 17
+    text: みたようなものを、ことさらによそから連れて来て、講演を聴こうとなされるのは、ちょ
+    message: 「みる」と書いています（この文書はふつう「見る」と書く語です。14 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "みたような is みたい (like), not 見る"
+  - rule: clause-chain
+    line: 18
+    text: その時分の私は卒業する間際まで何をして衣食の道を講じていいか知らなかったほどの迂
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 18
+    text: 私がなぜそんな仮定をするかというと、この私は現に昔しこの学習院の教師になろうとし
+    message: この段落は 14 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 18
+    text: ――それで、もしその時にその米国帰りの人が採用されずに、この私がまぐれ当りに学習
+    message: この文は 116 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 18
+    text: その時分の私は卒業する間際まで何をして衣食の道を講じていいか知らなかったほどの迂
+    message: この文は 165 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 18
+    text: えてしまったのです。そのくせ学習院とはどこにある学校かよく知らなかったのだから、
+    message: 「える」と書いています（この文書はふつう「得る」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the okurigana of 誂らえる read as the verb 得る"
+  - rule: orthographic-variant
+    line: 18
+    text: 出来上ってみると、あに計らんやせっかく頼みにしていた学習院の方は落第と事がきまっ
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。26 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "出来上る is a compound verb written in kanji; the document's できる is the potential verb"
+  - rule: repeated-sentence-ending
+    line: 18
+    text: しかし私の知人は私に向ってしきりに大丈夫らしい事をいうので、私の方でも、もう任命
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 18
+    text: その時分の私は卒業する間際まで何をして衣食の道を講じていいか知らなかったほどの迂
+    message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 20
+    text: するとある日当時の高等学校長、今ではたしか京都の理科大学長をしている久原さんから
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 20
+    text: それよりほかに着るべき洋服は持っていなかったのだから仕方がありません。そのモーニ
+    message: 「それ」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 20
+    text: 私は学習院は落第したが、モーニングだけは着ていました。それよりほかに着るべき洋服
+    message: この段落は 18 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 20
+    text: するとある日当時の高等学校長、今ではたしか京都の理科大学長をしている久原さんから
+    message: この文は 161 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 20
+    text: の先輩なる高等学校の古参の教授の所へ呼びつけられて、こっちへ来るような事を云いな
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 20
+    text: 持っていなかったのだから仕方がありません。そのモーニングを着てどこへ行ったと思い
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。17 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 20
+    text: 要らざる手数をかけた後、とうとう高等師範の方へ行く事になりました。
+    message: 「要る」と書いています（この文書はふつう「いる」と書く語です。15 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "要る (need) and いる (be) are different words"
+  - rule: orthographic-variant
+    line: 20
+    text: 要らないから高等師範の方へ行ったら好かろうという忠告です。私は行がかり上否だとは
+    message: 「要る」と書いています（この文書はふつう「いる」と書く語です。15 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "要る (need) and いる (be) are different words"
+  - rule: orthographic-variant
+    line: 21
+    text: よかったのかも知れません。しかしどうあっても私には不向な所だとしか思われませんで
+    message: 「よい」と書いています（この文書はふつう「好い」と書く語です。14 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 22
+    text: 誰の事だって、当時その中学に文学士と云ったら私一人なのですから、もし「坊ちゃん」
+    message: この文は 120 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 24
+    text: しかるに文部省の内意を取次いでくれた教頭が、それは先方の見込みなのだから、君の方
+    message: この文は 104 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 26
+    text: 私は大学で英文学という専門をやりました。その英文学というものはどんなものかとお尋
+    message: この段落は 11 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 26
+    text: 措いて第一文学とはどういうものだか、これではとうてい解るはずがありません。それな
+    message: 「措く」と書いています（この文書はふつう「おく」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 27
+    text: 私は始終中腰で隙があったら、自分の本領へ飛び移ろう飛び移ろうとのみ思っていたので
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 27
+    text: 私はそんなあやふやな態度で世の中へ出てとうとう教師になったというより教師にされて
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 27
+    text: よかったかも知れませんが、何だか不愉快な煮え切らない漠然たるものが、至る所に潜ん
+    message: 「よい」と書いています（この文書はふつう「好い」と書く語です。14 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 27
+    text: 済んでいましたが、腹の中は常に空虚でした。空虚ならいっそ思い切りがよかったかも知
+    message: 「済む」と書いています（この文書はふつう「すむ」と書く語です。8 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 27
+    text: 無いようで、どこを向いても、思い切ってやっと飛び移れないのです。
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。73 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 27
+    text: 私は始終中腰で隙があったら、自分の本領へ飛び移ろう飛び移ろうとのみ思っていたので
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 28
+    text: 私は私の手にただ一本の錐さえあればどこか一カ所突き破って見せるのだがと、焦燥り抜
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 28
+    text: 私は私の手にただ一本の錐さえあればどこか一カ所突き破って見せるのだがと、焦燥り抜
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 28
+    text: 私はこの世に生れた以上何かしなければならん、といって何をして好いか少しも見当がつ
+    message: この段落は 7 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 28
+    text: 私は私の手にただ一本の錐さえあればどこか一カ所突き破って見せるのだがと、焦燥り抜
+    message: この文は 128 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 28
+    text: ところが不幸にしてどちらの方角を眺めてもぼんやりしているのです。ぼうっとしている
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 28
+    text: 私は私の手にただ一本の錐さえあればどこか一カ所突き破って見せるのだがと、焦燥り抜
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 29
+    text: 私はこうした不安を抱いて大学を卒業し、同じ不安を連れて松山から熊本へ引越し、また
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 30
+    text: つまり鵜呑と云ってもよし、また機械的の知識と云ってもよし、とうていわが所有とも血
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 30
+    text: この時私は始めて文学とはどんなものであるか、その概念を根本的に自力で作り上げるよ
+    message: この段落は 12 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 30
+    text: よし、とうていわが所有とも血とも肉とも云われない、よそよそしいものを我物顔にしゃ
+    message: 「よい」と書いています（この文書はふつう「好い」と書く語です。14 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 30
+    text: よし、また機械的の知識と云ってもよし、とうていわが所有とも血とも肉とも云われない
+    message: 「よい」と書いています（この文書はふつう「好い」と書く語です。14 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 30
+    text: こういう私が現にそれだったのです。たとえばある西洋人が甲という同じ西洋人の作物を
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 30
+    text: この時私は始めて文学とはどんなものであるか、その概念を根本的に自力で作り上げるよ
+    message: 「〜です」で終わる文が 6 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 32
+    text: 私が独立した一個の日本人であって、けっして英国人の奴婢でない以上はこれくらいの見
+    message: この文は 109 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 32
+    text: たとえば西洋人がこれは立派な詩だとか、口調が大変好いとか云っても、それはその西洋
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 33
+    text: しかし私は英文学を専攻する。その本場の批評家のいうところと私の考と矛盾してはどう
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 34
+    text: 今は時勢が違いますから、この辺の事は多少頭のある人にはよく解せられているはずです
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 36
+    text: そうして今のようにただ人の尻馬にばかり乗って空騒ぎをしているようでははなはだ心元
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 36
+    text: そうして今のようにただ人の尻馬にばかり乗って空騒ぎをしているようでははなはだ心元
+    message: この文は 157 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 37
+    text: 私は軽快な心をもって陰欝な倫敦を眺めたのです。比喩で申すと、私は多年の間懊悩した
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 39
+    text: 私の著わした文学論はその記念というよりもむしろ失敗の亡骸です。しかも畸形児の亡骸
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 41
+    text: しかし私自身がそれがため、自信と安心をもっているからといって、同じ径路があなたが
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 41
+    text: もしあなたがたのうちですでに自力で切り開いた道を持っている方は例外であり、また他
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 41
+    text: 以上はただ私の経験だけをざっとお話ししたのでありますけれども、そのお話しを致した
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: それにはまだ大分時間のかかる方もございましょうし、またはおっつけ実社界に活動なさ
+    message: この文は 103 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: もしあなたがたのうちですでに自力で切り開いた道を持っている方は例外であり、また他
+    message: この文は 169 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 41
+    text: もしあなたがたのうちですでに自力で切り開いた道を持っている方は例外であり、また他
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 41
+    text: あてる事ができなかったなら、その人は生涯不愉快で、始終中腰になって世の中にまごま
+    message: 「あてる」と書いています（この文書はふつう「当てる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 41
+    text: 持っている方は例外であり、また他の後に従って、それで満足して、在来の古い道を進ん
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。17 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 41
+    text: いけないというのは、もし掘りあてる事ができなかったなら、その人は生涯不愉快で、始
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 41
+    text: もしあなたがたのうちですでに自力で切り開いた道を持っている方は例外であり、また他
+    message: 「は」で出した主題から述語まで 136 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 42
+    text: 腹の中の煮え切らない、徹底しない、ああでもありこうでもあるというような海鼠のよう
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 42
+    text: それはとにかく、私の経験したような煩悶があなたがたの場合にもしばしば起るに違いな
+    message: この段落は 20 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 42
+    text: すでにその域に達している方も多数のうちにはあるかも知れませんが、もし途中で霧か靄
+    message: この文は 105 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 42
+    text: 三十以上まで通り越せなかったのです。その苦痛は無論鈍痛ではありましたが、年々歳々
+    message: 「三」と書いています（この文書はふつう「さん」と書く語です。18 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the numeral 三 in 三十, read as the honorific さん"
+  - rule: repeated-sentence-ending
+    line: 42
+    text: ――もっとも進んだってどう進んで好いか解らないのだから、何かにぶつかる所まで行く
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 43
+    text: 前申した、仕事をして何かに掘りあてるまで進んで行くという事は、つまりあなた方の幸
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 43
+    text: 今まで申し上げた事はこの講演の第一篇に相当するものですが、私はこれからその第二篇
+    message: この段落は 8 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 43
+    text: 前申した、仕事をして何かに掘りあてるまで進んで行くという事は、つまりあなた方の幸
+    message: この文は 119 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 43
+    text: の幸福のため安心のためには相違ありませんが、なぜそれが幸福と安心とをもたらすかと
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 43
+    text: あてるまで進んで行くという事は、つまりあなた方の幸福のため安心のためには相違あり
+    message: 「あてる」と書いています（この文書はふつう「当てる」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 43
+    text: 前申した、仕事をして何かに掘りあてるまで進んで行くという事は、つまりあなた方の幸
+    message: 「〜でしょう」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 43
+    text: 前申した、仕事をして何かに掘りあてるまで進んで行くという事は、つまりあなた方の幸
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 46
+    text: 弟はまたそれが不愉快でたまらないのだけれども、兄が高圧的に釣竿を担がしたり、魚籃
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 46
+    text: してみると権力と金力とは自分の個性を貧乏人より余計に、他人の上に押し被せるとか、
+    message: この段落は 13 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 46
+    text: 先刻申した個性はおもに学問とか文芸とか趣味とかについて自己の落ちつくべき所まで行
+    message: この文は 101 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 46
+    text: 弟はまたそれが不愉快でたまらないのだけれども、兄が高圧的に釣竿を担がしたり、魚籃
+    message: この文は 106 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 46
+    text: えて、兄はまた釣道楽に憂身をやつしているのがあります。するとこの兄が自分の弟の引
+    message: 「える」と書いています（この文書はふつう「得る」と書く語です。15 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the okurigana of 引き易える read as the verb 得る"
+  - rule: orthographic-variant
+    line: 46
+    text: 例えば授業を受ける時とか、兵隊になった時とか、また寄宿舎でも軍隊生活を主位におく
+    message: 「例えば」と書いています（この文書はふつう「たとえば」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 46
+    text: するとこの兄が自分の弟の引込思案でただ家にばかり引籠っているのを非常に忌まわしい
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 46
+    text: 先刻申した個性はおもに学問とか文芸とか趣味とかについて自己の落ちつくべき所まで行
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 46
+    text: 弟はまたそれが不愉快でたまらないのだけれども、兄が高圧的に釣竿を担がしたり、魚籃
+    message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 47
+    text: そこで前申した通り自分が好いと思った事、好きな事、自分と性の合う事、幸にそこにぶ
+    message: この文は 103 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 47
+    text: 出来上るし、また金力があると、それをふりまいて、他を自分のようなものに仕立上げよ
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。26 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 48
+    text: もっとも複雑な分子の寄って出来上った善悪とか邪正とかいう問題になると、少々込み入
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: humble-for-others
+    line: 48
+    text: もっとも複雑な分子の寄って出来上った善悪とか邪正とかいう問題になると、少々込み入
+    message: 「申される」は謙譲語を相手の動作に使っています
+    verdict: false-positive
+    note: "何とも申されません is the speaker's own act (申す + potential), not an honorific for another"
+  - rule: max-paragraph-length
+    line: 48
+    text: それで私は常からこう考えています。第一にあなたがたは自分の個性が発展できるような
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 48
+    text: もっとも複雑な分子の寄って出来上った善悪とか邪正とかいう問題になると、少々込み入
+    message: この文は 164 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 49
+    text: 近頃自我とか自覚とか唱えていくら自分の勝手な真似をしても構わないという符徴に使う
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 50
+    text: ただ私はお客である、あなたがたは主人である、だからおとなしくしなくてはならない、
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 50
+    text: 元来をいうなら、義務の附着しておらない権力というものが世の中にあろうはずがないの
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: ただ私はお客である、あなたがたは主人である、だからおとなしくしなくてはならない、
+    message: この文は 126 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: 私がこうやって、高い壇の上からあなた方を見下して、一時間なり二時間なり私の云う事
+    message: この文は 101 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 50
+    text: ただ私はお客である、あなたがたは主人である、だからおとなしくしなくてはならない、
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 51
+    text: たとえば今私がここで、相場をして十万円儲けたとすると、その十万円で家屋を立てる事
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 51
+    text: 自分は今これだけの富の所有者であるが、それをこういう方面にこう使えば、こういう結
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 51
+    text: かと思われます。思われるのですけれども、実際その通りに金が活動する以上は致し方が
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と思われます」）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 51
+    text: 金力についても同じ事であります。私の考によると、責任を解しない金力家は、世の中に
+    message: この段落は 13 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: 自分は今これだけの富の所有者であるが、それをこういう方面にこう使えば、こういう結
+    message: この文は 132 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 51
+    text: 自分は今これだけの富の所有者であるが、それをこういう方面にこう使えば、こういう結
+    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 53
+    text: もし人格のないものがむやみに個性を発展しようとすると、他を妨害する、権力を用いよ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 53
+    text: 最も接近しやすいものであるから、あなたがたはどうしても人格のある立派な人間になっ
+    message: 「最も」と書いています（この文書はふつう「もっとも」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "最も (most) and もっとも (though) are different words"
+  - rule: max-paragraph-length
+    line: 54
+    text: 話が少し横へそれますが、ご存じの通り英吉利という国は大変自由を尊ぶ国であります。
+    message: この段落は 11 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 55
+    text: 彼らは不平があるとよく示威運動をやります。しかし政府はけっして干渉がましい事をし
+    message: この段落は 11 文あります（5 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 55
+    text: 黙って放っておくのです。その代り示威運動をやる方でもちゃんと心得ていて、むやみに
+    message: 「〜です」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 56
+    text: 持っていない自由は本当の自由ではないと考えます。と云うものは、そうしたわがままな
+    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。17 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 57
+    text: 時間が逼っているからなるべく単簡に説明致しますが、個人の自由は先刻お話した個性の
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 57
+    text: かと考えられます。それがとりも直さず私のいう個人主義なのです。金力権力の点におい
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と考えられます」）
+    verdict: false-positive
+    note: "「かと考えられます」 is one hedge; the と of かと is counted twice"
+  - rule: max-paragraph-length
+    line: 57
+    text: この個人主義という意味に誤解があってはいけません。ことにあなたがたのようなお若い
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: 時間が逼っているからなるべく単簡に説明致しますが、個人の自由は先刻お話した個性の
+    message: この文は 163 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 57
+    text: 時間が逼っているからなるべく単簡に説明致しますが、個人の自由は先刻お話した個性の
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 57
+    text: 俺の好かないやつだから畳んでしまえとか、気に喰わない者だからやっつけてしまえとか
+    message: 「俺」と書いています（この文書はふつう「おれ」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: person-consistency
+    line: 57
+    text: 僕は左を向く、君は右を向いても差支ないくらいの自由は、自分でも把持し、他人にも附
+    message: 「僕」と書いています（この文書はふつう「私」。189 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "僕 is the speaker in an illustrative quoted line, not the lecturer"
+  - rule: topic-predicate-distance
+    line: 57
+    text: 時間が逼っているからなるべく単簡に説明致しますが、個人の自由は先刻お話した個性の
+    message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: だから個人主義、私のここに述べる個人主義というものは、けっして俗人の考えているよ
+    message: この文は 122 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 58
+    text: だから個人主義、私のここに述べる個人主義というものは、けっして俗人の考えているよ
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 59
+    text: 出たのはいつごろでしたか、私は担任者であったけれども病気をしたからあるいはその病
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 59
+    text: もっと解りやすく云えば、党派心がなくって理非がある主義なのです。朋党を結び団隊を
+    message: この段落は 30 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: 当時私は私の作物をわるく評したものさえ、自分の担任している文芸欄へ載せたくらいで
+    message: この文は 108 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: 私は意見の相違はいかに親しい間柄でもどうする事もできないと思っていましたから、私
+    message: この文は 112 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 59
+    text: の人間の団隊のようにも考えました。しかしそう考えた私はついに一種の淋しさを脱却す
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 59
+    text: だれであったか、三宅雪嶺さんの悪口を書いた事がありました。もちろん人身攻撃ではな
+    message: 「だれ」と書いています（この文書はふつう「誰」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 59
+    text: わるく評したものさえ、自分の担任している文芸欄へ載せたくらいですから、彼らのいわ
+    message: 「わるい」と書いています（この文書はふつう「悪い」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 59
+    text: しかしそう考えた私はついに一種の淋しさを脱却する訳に行かなかったのです。私は意見
+    message: 「〜です」で終わる文が 7 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 59
+    text: もっと解りやすく云えば、党派心がなくって理非がある主義なのです。朋党を結び団隊を
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 59
+    text: 当時私は私の作物をわるく評したものさえ、自分の担任している文芸欄へ載せたくらいで
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 59
+    text: 私は意見の相違はいかに親しい間柄でもどうする事もできないと思っていましたから、私
+    message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 60
+    text: それからもう一つ誤解を防ぐために一言しておきたいのですが、何だか個人主義というと
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 60
+    text: それからもう一つ誤解を防ぐために一言しておきたいのですが、何だか個人主義というと
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 60
+    text: いったい何々主義という事は私のあまり好まないところで、人間がそう一つ主義に片づけ
+    message: この文は 103 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 60
+    text: いったい何々主義という事は私のあまり好まないところで、人間がそう一つ主義に片づけ
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 61
+    text: 国家と云ってあたかも国家に取りつかれたような真似はとうてい我々にできる話でない。
+    message: 「国家国家」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: "国家国家 is a deliberate reduplication (a quoted chant)"
+  - rule: max-paragraph-length
+    line: 61
+    text: 個人の幸福の基礎となるべき個人主義は個人の自由がその内容になっているには相違あり
+    message: この段落は 31 文あります（5 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 61
+    text: あるくのは、けっして国家のために売って歩くのではない。根本的の主意は自分の衣食の
+    message: 「あるく」と書いています（この文書はふつう「歩く」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 61
+    text: 済んでもまだ火事頭巾が必要だと云って、用もないのに窮屈がる人に対する忠告も含まれ
+    message: 「済む」と書いています（この文書はふつう「すむ」と書く語です。8 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 61
+    text: 個人の幸福の基礎となるべき個人主義は個人の自由がその内容になっているには相違あり
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 62
+    text: 国家と騒ぎ廻る必要はないはずです。火事の起らない先に火事装束をつけて窮屈な思いを
+    message: 「国家国家」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: "国家国家 is a deliberate reduplication (a quoted chant)"
+  - rule: max-paragraph-length
+    line: 62
+    text: いったい国家というものが危くなれば誰だって国家の安否を考えないものは一人もない。
+    message: この段落は 17 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 62
+    text: 必竟ずるにこういう事は実際程度問題で、いよいよ戦争が起った時とか、危急存亡の場合
+    message: この文は 151 文字あります（100 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 62
+    text: 必竟ずるにこういう事は実際程度問題で、いよいよ戦争が起った時とか、危急存亡の場合
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 62
+    text: あうとかいう国柄でない以上は、そう国家国家と騒ぎ廻る必要はないはずです。火事の起
+    message: 「あう」と書いています（この文書はふつう「合う」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "憂目にあう is 遭う, not 合う"
+  - rule: topic-predicate-distance
+    line: 62
+    text: 必竟ずるにこういう事は実際程度問題で、いよいよ戦争が起った時とか、危急存亡の場合
+    message: 「は」で出した主題から述語まで 137 字あります（80 字まで）
+    verdict: unjudged

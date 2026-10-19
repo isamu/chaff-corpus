@@ -1,0 +1,15 @@
+id: aozora-sakaguchi-daraku-ron
+title: 坂口安吾「堕落論」（青空文庫）
+language: ja
+genre: literature/essay
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/001095/files/42620_21407.html
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1955, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 86db07bfb30949f475d9f61853d5f7da14f5ec4185d606ca043986f68aa2b183
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."

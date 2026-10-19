@@ -1,0 +1,15 @@
+id: aozora-nakahara-yagi-no-uta
+title: 中原中也「山羊の歌」（青空文庫）
+language: ja
+genre: literature/poetry
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000026/files/894_28272.html
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1937, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: da646d3e224244cc3c331d10cb68de8288376652af757681daf040a1c33a07db
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."

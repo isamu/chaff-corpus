@@ -1,0 +1,29 @@
+id: aozora-nakajima-sangetsuki
+chaff: 0.36.0
+findings:
+  - rule: clause-chain
+    line: 10
+    text: そうすれば、しまいに己は自分の過去を忘れ果て、一匹の虎として狂い廻り、今日のよう
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 24
+    text: 己の珠に非ざることを惧れるが故に、敢て刻苦して磨こうともせず、又、己の珠なるべき
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: "「が故に」 is causal, not the adversative が"
+  - rule: clause-chain
+    line: 24
+    text: これが己を損い、妻子を苦しめ、友人を傷つけ、果ては、己の外形をかくの如く、内心に
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 24
+    text: 虎だったのだ。これが己を損い、妻子を苦しめ、友人を傷つけ、果ては、己の外形をかく
+    message: 「〜だ」で終わる文が 5 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 24
+    text: 人生は何事をも為さぬには余りに長いが、何事かを為すには余りに短いなどと口先ばかり
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged

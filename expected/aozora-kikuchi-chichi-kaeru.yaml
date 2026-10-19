@@ -1,0 +1,30 @@
+id: aozora-kikuchi-chichi-kaeru
+chaff: 0.36.0
+findings:
+  - rule: demonstrative-opener-run
+    line: 100
+    text: その時は金時計を帯にさげたり、絹物ずくめでえらい勢いであったいうとった。それから
+    message: 「その」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 104
+    text: 若い時から家の学問はせんで、山師のようなことが好きであったんや。あんなに借金がで
+    message: 「〜や」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's dialect speech in a play; the ending is the character's voice"
+  - rule: repeated-sentence-ending
+    line: 248
+    text: その揚げ句に不義理な借金をこさえ情婦を連れて出奔したのじゃ。女房と子供三人の愛を
+    message: 「〜じゃ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's dialect speech in a play; the ending is the character's voice"
+  - rule: clause-chain
+    line: 290
+    text: （まったく悄沈として腰をかけたまま）のたれ死するには家は要らんからのう……（独言
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 290
+    text: 一文なしで帰って来ては誰にやってばかにされる……俺も五十の声がかかると国が恋しく
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
