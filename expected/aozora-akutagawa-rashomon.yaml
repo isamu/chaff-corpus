@@ -1,0 +1,23 @@
+id: aozora-akutagawa-rashomon
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 9
+    text: そこで、下人は、何をおいても差当り明日の暮しをどうにかしようとして――云わばどう
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: demonstrative-opener-run
+    line: 14
+    text: それが、梯子を二三段上って見ると、上では誰か火をとぼして、しかもその火をそこここ
+    message: 「それ」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 19
+    text: すると老婆は、松の木片を、床板の間に挿して、それから、今まで眺めていた死骸の首に
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 20
+    text: この時、誰かがこの下人に、さっき門の下でこの男が考えていた、饑死をするか盗人にな
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged

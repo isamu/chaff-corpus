@@ -1,0 +1,762 @@
+id: aozora-miyazawa-haru-to-shura
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 15
+    text: わたくしといふ現象は
+    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: topic-predicate-distance
+    line: 26
+    text: これらは二十二箇月の
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: topic-predicate-distance
+    line: 35
+    text: これらについて人や銀河や修羅や海胆は
+    message: 「は」で出した主題から述語まで 169 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: topic-predicate-distance
+    line: 46
+    text: けれどもこれら新生代沖積世の
+    message: 「は」で出した主題から述語まで 291 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: topic-predicate-distance
+    line: 107
+    text: たよりになるのは
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: topic-predicate-distance
+    line: 161
+    text: まちなみのなつかしい灯とおもつて
+    message: 「は」で出した主題から述語まで 114 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
+  - rule: clause-chain
+    line: 219
+    text: 心象のはひいろはがねから
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 219
+    text: 心象のはひいろはがねから
+    message: 「は」で出した主題から述語まで 534 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 279
+    text: いつたいそいつはなんのざまだ
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 350
+    text: あゝいゝな　せいせいするな
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 350
+    text: あゝいゝな　せいせいするな
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 369
+    text: 雲はたよりないカルボン酸
+    message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 387
+    text: キンキン光る
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 387
+    text: キンキン光る
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 387
+    text: キンキン光る
+    message: 「は」で出した主題から述語まで 213 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 423
+    text: そのきらびやかな空間の
+    message: 一文に節が 12 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 423
+    text: そのきらびやかな空間の
+    message: 「は」で出した主題から述語まで 220 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 453
+    text: 風はそらを吹き
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 486
+    text: 融銅はまだ眩めかず
+    message: 一文に節が 12 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 486
+    text: 融銅はまだ眩めかず
+    message: 「は」で出した主題から述語まで 584 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 529
+    text: （どちらへ　ごさんぽですか
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 529
+    text: （どちらへ　ごさんぽですか
+    message: 「は」で出した主題から述語まで 301 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 559
+    text: （いや　あれは高価いのです
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 559
+    text: （いや　あれは高価いのです
+    message: 「は」で出した主題から述語まで 559 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 607
+    text: （臨終にさういつてゐましたがね
+    message: 一文に節が 14 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 607
+    text: （臨終にさういつてゐましたがね
+    message: 「は」で出した主題から述語まで 1259 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 720
+    text: （使へますとも　どうです
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 741
+    text: （えゝ　水ゾルですよ
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 741
+    text: （えゝ　水ゾルですよ
+    message: 「は」で出した主題から述語まで 637 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 811
+    text: わたくしはずゐぶんすばやく汽車からおりた
+    message: 一文に逆接の「が」が 3 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 811
+    text: わたくしはずゐぶんすばやく汽車からおりた
+    message: 一文に節が 22 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 811
+    text: わたくしはずゐぶんすばやく汽車からおりた
+    message: 「は」で出した主題から述語まで 1294 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 921
+    text: たむぼりんも遠くのそらで鳴つてるし
+    message: 一文に節が 19 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 921
+    text: たむぼりんも遠くのそらで鳴つてるし
+    message: 「は」で出した主題から述語まで 506 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 973
+    text: 〔禁猟区〕　ふん　いつものとほりだ
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 973
+    text: 〔禁猟区〕　ふん　いつものとほりだ
+    message: 「は」で出した主題から述語まで 494 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1018
+    text: この荷馬車にはひとがついてゐない
+    message: 一文に節が 14 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1018
+    text: この荷馬車にはひとがついてゐない
+    message: 「は」で出した主題から述語まで 393 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1046
+    text: 本部の気取つた建物が
+    message: 一文に節が 34 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1046
+    text: 本部の気取つた建物が
+    message: 「は」で出した主題から述語まで 1814 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1190
+    text: とびいろのはたけがゆるやかに傾斜して
+    message: 一文に節が 22 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1190
+    text: とびいろのはたけがゆるやかに傾斜して
+    message: 「は」で出した主題から述語まで 587 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1238
+    text: この爺さんはなにか向ふを畏れてゐる
+    message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1250
+    text: この人はわたくしとはなすのを
+    message: 「は」で出した主題から述語まで 205 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1274
+    text: 過燐酸石灰のヅツク袋
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1274
+    text: 過燐酸石灰のヅツク袋
+    message: 「は」で出した主題から述語まで 303 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1299
+    text: 火をたいてゐる
+    message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1325
+    text: すきとほつてゆれてゐるのは
+    message: 一文に節が 28 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1325
+    text: すきとほつてゆれてゐるのは
+    message: 「は」で出した主題から述語まで 1444 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1448
+    text: 霧のなかからにはかにあかく燃えたのは
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1477
+    text: 雲は来るくる南の地平
+    message: 一文に節が 14 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1477
+    text: 雲は来るくる南の地平
+    message: 「は」で出した主題から述語まで 414 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 1528
+    text: あの林は
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1535
+    text: ああ何といふいい精神だ
+    message: 「は」で出した主題から述語まで 134 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1578
+    text: ラリツクスの青いのは
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1592
+    text: こいつはもう
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1592
+    text: こいつはもう
+    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1676
+    text: むかし達谷の悪路王
+    message: 「は」で出した主題から述語まで 333 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1807
+    text: 光波測定の誤差から
+    message: 「は」で出した主題から述語まで 169 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1835
+    text: 月は水銀　後夜の喪主
+    message: 「は」で出した主題から述語まで 144 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1849
+    text: 向ふのは御室火口です
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1849
+    text: 向ふのは御室火口です
+    message: 「は」で出した主題から述語まで 174 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 1872
+    text: あれですか
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1872
+    text: あれですか
+    message: 一文に節が 14 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1872
+    text: あれですか
+    message: 「は」で出した主題から述語まで 978 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1960
+    text: 三つの提灯は夢の火口原の
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1960
+    text: 三つの提灯は夢の火口原の
+    message: 「は」で出した主題から述語まで 326 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 1987
+    text: この石標は
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1987
+    text: この石標は
+    message: 「は」で出した主題から述語まで 337 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2026
+    text: かすかに光る火山塊の一つの面
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2026
+    text: かすかに光る火山塊の一つの面
+    message: 「は」で出した主題から述語まで 330 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2064
+    text: なぜ吠えるのだ　二疋とも
+    message: 「は」で出した主題から述語まで 255 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2095
+    text: 城のすすきの波の上には
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2095
+    text: 城のすすきの波の上には
+    message: 「は」で出した主題から述語まで 311 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2137
+    text: 樺の向ふで日はけむる
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2137
+    text: 樺の向ふで日はけむる
+    message: 「は」で出した主題から述語まで 262 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2172
+    text: けふのうちに
+    message: 一文に節が 16 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2172
+    text: けふのうちに
+    message: 「は」で出した主題から述語まで 186 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2235
+    text: さつきのみぞれをとつてきた
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2235
+    text: さつきのみぞれをとつてきた
+    message: 「は」で出した主題から述語まで 358 字あります（80 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 2264
+    text: の匂もするだらう
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。32 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2272
+    text: こんなにみんなにみまもられながら
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 2288
+    text: 　ずゐぶん立派だぢやい
+    message: 「や」と「ず」は一続きの語句ですが、あいだに空白があります（907 箇所のうち 2 箇所が空いている）
+    verdict: false-positive
+    note: "an ideographic space used as a pause inside a verse line"
+  - rule: clause-chain
+    line: 2296
+    text: うんにや　いつかう
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2296
+    text: うんにや　いつかう
+    message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2309
+    text: 註
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2324
+    text: （かしはのなかには鳥の巣がない
+    message: 一文に節が 19 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2324
+    text: （かしはのなかには鳥の巣がない
+    message: 「は」で出した主題から述語まで 707 字あります（80 字まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 2348
+    text: 　しやつつ何枚　三枚着たの
+    message: 「さん」と「し」は一続きの語句ですが、あいだに空白があります（907 箇所のうち 2 箇所が空いている）
+    verdict: false-positive
+    note: "an ideographic space used as a pause inside a verse line"
+  - rule: topic-predicate-distance
+    line: 2375
+    text: 俊夫ゆぐ凍えるな
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 2392
+    text: みんなサラーブレツドだ
+    message: 一文に逆接の「が」が 4 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2392
+    text: みんなサラーブレツドだ
+    message: 一文に節が 24 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2392
+    text: みんなサラーブレツドだ
+    message: 「は」で出した主題から述語まで 681 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2461
+    text: こんなやみよののはらのなかをゆくときは
+    message: 一文に節が 30 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2461
+    text: こんなやみよののはらのなかをゆくときは
+    message: 「は」で出した主題から述語まで 1658 字あります（80 字まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 2470
+    text: 　よるのしじまの　寒天凝膠）
+    message: 助詞「の」と「よる」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。460 箇所のうち 3 箇所が空いている）
+    verdict: false-positive
+    note: "an ideographic space used as a pause inside a verse line"
+  - rule: stray-space
+    line: 2470
+    text: 　寒天凝膠）
+    message: 助詞「の」と「寒天」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。460 箇所のうち 3 箇所が空いている）
+    verdict: false-positive
+    note: "an ideographic space used as a pause inside a verse line"
+  - rule: stray-space
+    line: 2506
+    text: 　せはしいみちづれよ
+    message: 助詞「へ」と「せ」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。460 箇所のうち 3 箇所が空いている）
+    verdict: false-positive
+    note: "an ideographic space used as a pause inside a verse line"
+  - rule: adversative-ga-repeat
+    line: 2570
+    text: わたくしがそのありがたい証明の
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2570
+    text: わたくしがそのありがたい証明の
+    message: 一文に節が 43 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2570
+    text: わたくしがそのありがたい証明の
+    message: 「は」で出した主題から述語まで 2153 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 2602
+    text: I'estudiantina を風にききながら
+    message: 半角の「I」と書いています（この文書はふつう全角の「Ｉ」。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "a letter inside a Latin-script word (a French phrase), compared with lone full-width letters"
+  - rule: clause-chain
+    line: 2720
+    text: 海面は朝の炭酸のためにすつかり銹びた
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2720
+    text: 海面は朝の炭酸のためにすつかり銹びた
+    message: 「は」で出した主題から述語まで 603 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2762
+    text: 白い片岩類の小砂利に倒れ
+    message: 「は」で出した主題から述語まで 213 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2781
+    text: わびしい草穂やひかりのもや
+    message: 一文に節が 19 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2781
+    text: わびしい草穂やひかりのもや
+    message: 「は」で出した主題から述語まで 844 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2848
+    text: やなぎらんやあかつめくさの群落
+    message: 「は」で出した主題から述語まで 169 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 2861
+    text: t Hoff の雲の白髪の崇高さ
+    message: 半角の「t」と書いています（この文書はふつう全角の「ｔ」。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "a letter inside a Latin-script name (Van't Hoff), compared with lone full-width letters"
+  - rule: bracket-nesting
+    line: 2864
+    text: 青びかり野はらをよぎる細流
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: "the line has no bracket; the depth is carried over from earlier lines"
+  - rule: clause-chain
+    line: 2864
+    text: 青びかり野はらをよぎる細流
+    message: 一文に節が 13 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2864
+    text: 青びかり野はらをよぎる細流
+    message: 「は」で出した主題から述語まで 776 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 2906
+    text: ［＃「もえるほど」は底本では「もえるほど）」］
+    message: 「［」が閉じていません
+    verdict: false-positive
+    note: "a 青空文庫 note quotes the source text's stray ） inside 「」, and the quoted ） breaks the pairing"
+  - rule: unbalanced-bracket
+    line: 2906
+    text: ］
+    message: 「］」に対応する開きがありません
+    verdict: false-positive
+    note: "a 青空文庫 note quotes the source text's stray ） inside 「」, and the quoted ） breaks the pairing"
+  - rule: unbalanced-bracket
+    line: 2906
+    text: 「もえるほど）」］
+    message: 「「」が閉じていません
+    verdict: false-positive
+    note: "a 青空文庫 note quotes the source text's stray ） inside 「」, and the quoted ） breaks the pairing"
+  - rule: unbalanced-bracket
+    line: 2906
+    text: 」］
+    message: 「」」に対応する開きがありません
+    verdict: false-positive
+    note: "a 青空文庫 note quotes the source text's stray ） inside 「」, and the quoted ） breaks the pairing"
+  - rule: unbalanced-bracket
+    line: 2907
+    text: ）
+    message: 「）」に対応する開きがありません
+    verdict: false-positive
+    note: "the （ opens on the line before; a parenthesis spanning two verse lines"
+  - rule: clause-chain
+    line: 2928
+    text: 蜂が一ぴき飛んで行く
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2928
+    text: 蜂が一ぴき飛んで行く
+    message: 「は」で出した主題から述語まで 560 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 2978
+    text: 稚いゑんどうの澱粉や緑金が
+    message: 一文に節が 22 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 2978
+    text: 稚いゑんどうの澱粉や緑金が
+    message: 「は」で出した主題から述語まで 774 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 3048
+    text: 油紙を着てぬれた馬に乗り
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3048
+    text: 油紙を着てぬれた馬に乗り
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3048
+    text: 油紙を着てぬれた馬に乗り
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3075
+    text: 雲は羊毛とちぢれ
+    message: 「は」で出した主題から述語まで 433 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3126
+    text: がさがさした稲もやさしい油緑に熟し
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3126
+    text: がさがさした稲もやさしい油緑に熟し
+    message: 「は」で出した主題から述語まで 375 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3159
+    text: 爽かなくだもののにほひに充ち
+    message: 一文に節が 13 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3159
+    text: 爽かなくだもののにほひに充ち
+    message: 「は」で出した主題から述語まで 460 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 3196
+    text: 風が口笛をはんぶんちぎつて持つてくれば
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3196
+    text: 風が口笛をはんぶんちぎつて持つてくれば
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3196
+    text: 風が口笛をはんぶんちぎつて持つてくれば
+    message: 「は」で出した主題から述語まで 316 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3228
+    text: 風が偏倚して過ぎたあとでは
+    message: 一文に節が 15 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3228
+    text: 風が偏倚して過ぎたあとでは
+    message: 「は」で出した主題から述語まで 833 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3290
+    text: 沈んだ月夜の楊の木の梢に
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3290
+    text: 沈んだ月夜の楊の木の梢に
+    message: 「は」で出した主題から述語まで 480 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3334
+    text: 青い抱擁衝動や
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3334
+    text: 青い抱擁衝動や
+    message: 「は」で出した主題から述語まで 560 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3391
+    text: 萱の穂は赤くならび
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3391
+    text: 萱の穂は赤くならび
+    message: 「は」で出した主題から述語まで 536 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3438
+    text: 截られた根から青じろい樹液がにじみ
+    message: 一文に節が 15 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3438
+    text: 截られた根から青じろい樹液がにじみ
+    message: 「は」で出した主題から述語まで 424 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3476
+    text: 松がいきなり明るくなつて
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3476
+    text: 松がいきなり明るくなつて
+    message: 「は」で出した主題から述語まで 472 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3519
+    text: 喪神のしろいかがみが
+    message: 一文に節が 13 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3519
+    text: 喪神のしろいかがみが
+    message: 「は」で出した主題から述語まで 595 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 3579
+    text: そらにはちりのやうに小鳥がとび
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 3579
+    text: そらにはちりのやうに小鳥がとび
+    message: 「は」で出した主題から述語まで 412 字あります（80 字まで）
+    verdict: unjudged

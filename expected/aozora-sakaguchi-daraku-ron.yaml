@@ -1,0 +1,103 @@
+id: aozora-sakaguchi-daraku-ron
+chaff: 0.36.0
+findings:
+  - rule: adversative-ga-repeat
+    line: 9
+    text: 生きて捕虜の恥を受けるべからず、というが、こういう規定がないと日本人を戦闘にかり
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 9
+    text: 生きて捕虜の恥を受けるべからず、というが、こういう規定がないと日本人を戦闘にかり
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 10
+    text: そして武士道は人性や本能に対する禁止条項である為に非人間的反人性的なものであるが
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 10
+    text: 政治家の大多数は常にそうであるけれども、少数の天才は管理や支配の方法に独創をもち
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 11
+    text: 社会的に忘れた時にすら政治的に担ぎだされてくるのであって、その存立の政治的理由は
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 11
+    text: 私は天皇制に就ても、極めて日本的な（従って或いは独創的な）政治的作品を見るのであ
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 11
+    text: 天皇は時に自ら陰謀を起したこともあるけれども、概して何もしておらず、その陰謀は常
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 13
+    text: 宮本武蔵は一乗寺下り松の果し場へ急ぐ途中、八幡様の前を通りかかって思わず拝みかけ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 13
+    text: 宮本武蔵は一乗寺下り松の果し場へ急ぐ途中、八幡様の前を通りかかって思わず拝みかけ
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 13
+    text: 我々は靖国神社の下を電車が曲るたびに頭を下げさせられる馬鹿らしさには閉口したが、
+    message: 「は」で出した主題から述語まで 130 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 15
+    text: 要するに天皇制というものも武士道と同種のもので、女心は変り易いから「節婦は二夫に
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 15
+    text: 要するに天皇制というものも武士道と同種のもので、女心は変り易いから「節婦は二夫に
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 15
+    text: 要するに天皇制というものも武士道と同種のもので、女心は変り易いから「節婦は二夫に
+    message: 一文に「〜的」が 5 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 15
+    text: 要するに天皇制というものも武士道と同種のもので、女心は変り易いから「節婦は二夫に
+    message: 「は」で出した主題から述語まで 137 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 19
+    text: そのくせ私は臆病で、昭和二十年の四月四日という日、私は始めて四周に二時間にわたる
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 19
+    text: そのくせ私は臆病で、昭和二十年の四月四日という日、私は始めて四周に二時間にわたる
+    message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 19
+    text: 大井広介の焼跡の防空壕を、最後の拠点にするつもりで、そして九州へ疎開する大井広介
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 23
+    text: 節婦は二夫に見えず、忠臣は二君に仕えず、と規約を制定してみても人間の転落は防ぎ得
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: 徳川幕府の思想は四十七士を殺すことによって永遠の義士たらしめようとしたのだが、四
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 23
+    text: 節婦は二夫に見えず、忠臣は二君に仕えず、と規約を制定してみても人間の転落は防ぎ得
+    message: 「は」で出した主題から述語まで 160 字あります（80 字まで）
+    verdict: unjudged

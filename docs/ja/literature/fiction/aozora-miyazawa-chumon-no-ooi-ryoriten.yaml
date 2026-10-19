@@ -1,0 +1,15 @@
+id: aozora-miyazawa-chumon-no-ooi-ryoriten
+title: 宮沢賢治「注文の多い料理店」（青空文庫）
+language: ja
+genre: literature/fiction
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000081/files/43754_17659.html
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1933, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 00ff453ed44ac91b3d94ff19ef6b0092c8611cf6c1a90034fd7b44edbbf6bee1
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."

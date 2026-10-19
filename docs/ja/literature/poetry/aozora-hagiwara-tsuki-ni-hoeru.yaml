@@ -1,0 +1,15 @@
+id: aozora-hagiwara-tsuki-ni-hoeru
+title: 萩原朔太郎「月に吠える」（青空文庫）
+language: ja
+genre: literature/poetry
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000067/files/859_21656.html
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1942, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 818dc757fc1fc0291a94909e0ff04d70fc5eba81ae6d13e34e8edd8a3179e510
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."
