@@ -9,8 +9,8 @@ Your landlord must put your deposit in a government-approved tenancy deposit sch
 In England and Wales your deposit can be registered with:
 
 - Deposit Protection Service
--  MyDeposits - including deposits that were held by Capita
--  Tenancy Deposit Scheme
+- MyDeposits - including deposits that were held by Capita
+- Tenancy Deposit Scheme
 
 If you do not rent your home on an APT, your landlord can accept valuable items (for example a car or watch) as a deposit instead of money. The items will not be protected by a scheme.
 
@@ -115,9 +115,9 @@ You do not have to use the service but if you do, both you and the landlord have
 
 You can ‘raise a dispute’ to get your deposit back if you cannot contact your landlord and your deposit is held by one of the approved TDP schemes:
 
--  Tenancy Deposit Scheme
+- Tenancy Deposit Scheme
 - Deposit Protection Service
--  MyDeposits - including deposits that were held by Capita
+- MyDeposits - including deposits that were held by Capita
 
 The TDP scheme will refund your deposit if the dispute resolution service agrees.
 
@@ -135,4 +135,4 @@ You can get more help and advice from:
 
 - your local Citizens Advice office
 - a solicitor or advice agency
--  Shelter in England or Shelter in Wales
+- Shelter in England or Shelter in Wales

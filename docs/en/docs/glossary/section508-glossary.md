@@ -1116,4 +1116,4 @@ Website (web site)
 
 A website, and web-based application, consists of many web pages linked together under a common domain name such as “[agency-name].gov.”
 
-Reviewed/Updated:  August 2026
+Reviewed/Updated: August 2026

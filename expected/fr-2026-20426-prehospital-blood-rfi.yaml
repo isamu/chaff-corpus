@@ -20,7 +20,7 @@ findings:
     note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: invisible-character
     line: 42
-    text: ​privacy. ( printed page 63651)   Anyone
+    text: ​privacy. ( printed page 63651) Anyone i
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address

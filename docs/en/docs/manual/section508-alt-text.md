@@ -221,4 +221,4 @@ Many people who write alt text for images make these common errors:
 
 Refer to the following for additional guidance on writing meaningful alt text.
 
-Reviewed/Updated:  May 2025
+Reviewed/Updated: May 2025

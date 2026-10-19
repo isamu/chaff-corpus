@@ -29,31 +29,31 @@ This separate statement must be sent out before the first payslip. Employers mus
 
 Read more about deductions that can be taken from your pay.
 
-## Part of  Start a new job: step by step
+## Part of Start a new job: step by step
 
-### 1     Get your National Insurance number
+### 1 Get your National Insurance number
 
 You'll usually need your National Insurance number when you start your new job.
 
-### 2     Accept the job offer
+### 2 Accept the job offer
 
 The offer might be ‘conditional’ or ‘provisional’, which means you may need to give further details to your new employer or pass pre-employment checks.
 
-### 3     Share your details for any employer checks
+### 3 Share your details for any employer checks
 
 Give your new employer what they need to complete any pre-employment checks.
 
-### 4     Review your employment contract
+### 4 Review your employment contract
 
 Your new employer should give you an employment contract. Check the terms before you agree to it.
 
-### and     If you're leaving a job, hand in your notice
+### and If you're leaving a job, hand in your notice
 
 Tell your current employer that you’re going to leave and when your last day will be. This is known as handing in your notice.
 
 When you hand in your notice, ask your employer when you’ll get your P45.
 
-### 5     Prepare your personal information for your first day
+### 5 Prepare your personal information for your first day
 
 To get paid, you’ll need to give your new employer:
 
@@ -63,15 +63,15 @@ To get paid, you’ll need to give your new employer:
 - what student loan repayment plan you’re on, if you have one
 - details of what benefits you get, if any
 
-### 6     Give your P45 to your new employer
+### 6 Give your P45 to your new employer
 
 Your new employer will use your P45 to work out how much tax to take from your pay.
 
-### or     If you do not have a P45, fill in the starter checklist
+### or If you do not have a P45, fill in the starter checklist
 
 Use the starter checklist to give your employer details they need to work out your pay and tax.
 
-### 7     Check your first payslip
+### 7 Check your first payslip
 
 Your employer must give you a payslip on or before payday.
 

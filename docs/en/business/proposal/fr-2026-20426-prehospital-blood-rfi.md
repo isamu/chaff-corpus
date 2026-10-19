@@ -2,12 +2,12 @@ Document Headings
 
 Document headings vary by document type but may contain the following:
 
--  the agency or agencies that issued and signed a document
--  the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
--  the agency docket number / agency internal file number
--  the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
+- the agency or agencies that issued and signed a document
+- the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
+- the agency docket number / agency internal file number
+- the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
 
-See the  Document Drafting Handbook  for more details.
+See the Document Drafting Handbook for more details.
 
 ###### National Highway Traffic Safety Administration
 
@@ -39,7 +39,7 @@ You may submit comments, identified by Docket No. NHTSA-2026-2113, by any of the
 
 Instructions: Regardless of how you submit your comments, you must include the docket number identified in the heading of this document. Note that all comments received, including any personal information provided, will be posted without change to http://www.regulations.gov. Please see the Privacy Act heading below.
 
-Privacy Act: In accordance with 5 U.S.C. 553(c), DOT solicits comments from the public to inform its decision-making process. DOT posts these comments, without editing, including any personal information the commenter provides, to http://www.regulations.gov, as described in the system of records notice (DOT/ALL-14 FDMS), which can be reviewed at https://www.transportation.gov/​privacy. ( printed page 63651)   Anyone is able to search the electronic form of all comments received into any of our dockets by the name of the individual submitting the comment (or signing the comment, if submitted on behalf of an association, business, labor union, etc.). You may review DOT's complete Privacy Act Statement in the Federal Register published on April 11, 2000 (65 FR 19477-78).
+Privacy Act: In accordance with 5 U.S.C. 553(c), DOT solicits comments from the public to inform its decision-making process. DOT posts these comments, without editing, including any personal information the commenter provides, to http://www.regulations.gov, as described in the system of records notice (DOT/ALL-14 FDMS), which can be reviewed at https://www.transportation.gov/​privacy. ( printed page 63651) Anyone is able to search the electronic form of all comments received into any of our dockets by the name of the individual submitting the comment (or signing the comment, if submitted on behalf of an association, business, labor union, etc.). You may review DOT's complete Privacy Act Statement in the Federal Register published on April 11, 2000 (65 FR 19477-78).
 
 # FOR FURTHER INFORMATION CONTACT:
 

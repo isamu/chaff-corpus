@@ -80,18 +80,18 @@ SR Letter 00-14,“Enhancements to the Interagency Program for Supervising the U
 
 ##### Notes:
 
--  12 U.S.C. 1820(d).  Return to text.
--  See 91 *Fed. Reg.* 58009 (Sept. 14, 2026).  Return to text.
--  12 U.S.C. 3105(c)(1)(C).  Return to text.
--  The term "well capitalized" has the meaning given that term in the prompt corrective action framework in section 38(b) of the FDI Act and subpart D of the Board's Regulation H. 12 U.S.C. 1831o(b)(1)(A); 12 CFR 208.43(b)(1).  Return to text.
--  The Board is permitted to conduct on-site examinations of SMBs on alternating 12-month or 18-month periods with the institution's State supervisor if the Board determines that the alternating examination conducted by the State carries out the purposes of section 10(d) of the FDI Act. 12 U.S.C. 1820(d)(3).  Return to text.
--  12 CFR 208.64(b).  Return to text.
--  "ROCA" refers to the rating system for U.S. branches, agencies and commercial lending companies of foreign banking organizations. See Attachment to SR Letter 00-14 (SUP), "Enhancements to the Interagency Program for Supervising the U.S. Operations of Foreign Banking Organizations" (October 23, 2000).  Return to text.
--  12 CFR 211.26(c)(2).  Return to text.
--  The individual components of the ROCA rating system are risk management, operational controls, compliance, and asset quality. See Attachment to SR Letter 00-14, "Enhancements to the Interagency Program for Supervising the U.S. Operations of Foreign Banking Organizations" (October 23, 2000).  Return to text.
--  12 CFR 211.26(c)(2)(ii).  Return to text.
--  12 CFR 208.64(c); 12 CFR 211.26(c)(3).  Return to text.
--  12 U.S.C. 1818(s)(2) and 12 U.S.C. 1818(b)(4).  Return to text.
--  See http://www.federalreserve.gov/apps/contactus/feedback.aspx.  Return to text.
+- 12 U.S.C. 1820(d).  Return to text.
+- See 91 *Fed. Reg.* 58009 (Sept. 14, 2026).  Return to text.
+- 12 U.S.C. 3105(c)(1)(C).  Return to text.
+- The term "well capitalized" has the meaning given that term in the prompt corrective action framework in section 38(b) of the FDI Act and subpart D of the Board's Regulation H. 12 U.S.C. 1831o(b)(1)(A); 12 CFR 208.43(b)(1).  Return to text.
+- The Board is permitted to conduct on-site examinations of SMBs on alternating 12-month or 18-month periods with the institution's State supervisor if the Board determines that the alternating examination conducted by the State carries out the purposes of section 10(d) of the FDI Act. 12 U.S.C. 1820(d)(3).  Return to text.
+- 12 CFR 208.64(b).  Return to text.
+- "ROCA" refers to the rating system for U.S. branches, agencies and commercial lending companies of foreign banking organizations. See Attachment to SR Letter 00-14 (SUP), "Enhancements to the Interagency Program for Supervising the U.S. Operations of Foreign Banking Organizations" (October 23, 2000).  Return to text.
+- 12 CFR 211.26(c)(2).  Return to text.
+- The individual components of the ROCA rating system are risk management, operational controls, compliance, and asset quality. See Attachment to SR Letter 00-14, "Enhancements to the Interagency Program for Supervising the U.S. Operations of Foreign Banking Organizations" (October 23, 2000).  Return to text.
+- 12 CFR 211.26(c)(2)(ii).  Return to text.
+- 12 CFR 208.64(c); 12 CFR 211.26(c)(3).  Return to text.
+- 12 U.S.C. 1818(s)(2) and 12 U.S.C. 1818(b)(4).  Return to text.
+- See http://www.federalreserve.gov/apps/contactus/feedback.aspx.  Return to text.
 
 Last Update: October 14, 2026

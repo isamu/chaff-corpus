@@ -18,19 +18,19 @@ Last updated:
 
 Show all updates
 
--  18 March 2024
+- 18 March 2024
 
 The reason for any zero rate or exemption has been removed from the list of details you must include on a VAT invoice.
 
--  2 November 2022
+- 2 November 2022
 
 Guidance has been updated to make it clear that you must keep digital records and submit returns using software.
 
--  31 December 2020
+- 31 December 2020
 
 This page has been updated because the Brexit transition period has ended.
 
--  26 September 2013
+- 26 September 2013
 
 First published.
 

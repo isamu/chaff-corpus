@@ -78,17 +78,17 @@ Watch out for scams! Be clear who you are handing money over to, and why.
 
 ### Things to check
 
--  Deposit cap. Check that the tenancy deposit you’re being asked for is not more than 5 weeks’ rent where annual rent is less than £50,000, or 6 weeks’ rent where annual rent is more than £50,000.
--  Deposit protection. If the landlord asks for a deposit, check that it will be protected in a government-approved scheme. Some schemes hold the money, and some insure it. You may be able to access a bond or guarantee scheme that will help you put the deposit together. Contact your local council for advice.
--  You may be offered a deposit replacement product as an alternative to a cash deposit. A landlord or agent cannot require you to use a deposit replacement product but may allow it as an option without breaking the Tenant Fees Act. There are several different deposit replacement products available. Depending on the product, you may need to pay a non-refundable fee up- front (often equivalent to one week’s rent) and/or a monthly payment for the duration of your tenancy. With most products, you will still be responsible for the costs of any damages incurred at the end of the tenancy or required to pay an excess on any claim for damages or unpaid rent. It is strongly advised to always check the terms and conditions and to see if it is regulated by the Financial Conduct Authority.
--  Length of tenancy. There is usually a fixed period of 6 or 12 months. If you want more security, it may be worth asking whether the landlord is willing to agree to a longer fixed period. Alternatively, you may be offered a weekly or monthly assured shorthold tenancy which does not last for a fixed period. Even with those tenancies, the landlord must allow you to stay for a minimum of 6 months.
--  Smoking and pets. Check if there are any rules about them, as well as for other things such as keeping a bike, dealing with refuse and recycling.
--  Bills. Check who is responsible for bills such as electricity, gas, water and council tax. Usually, the tenant pays for these bills. See advice on paying bills.
--  Fixtures and fittings. Check you are happy with them, as it is unlikely that you will be able to get them changed once you have moved in.
--  Smoke alarms and carbon monoxide detectors. Landlords must make sure there is at least one smoke alarm on every floor used as living accommodation, and carbon monoxide alarms in all rooms that have a fixed combustion appliance and are used as living accommodation.
--  Safety. Check that the property is safe to live in, and use the ‘How to rent a safe home’ guide to help you identify possible hazards.
--  Fitness for human habitation. Your property must be safe, healthy and free from things that could cause serious harm. If not, you can take your landlord to court. For more information, see the Homes (Fitness for Human Habitation) Act 2018 guide for tenants. You should also check whether your tenancy agreement excuses you from paying rent if the building becomes unfit to live in due to, for example, a fire or flood.
--  Flood risk. Your area may be at risk of flooding. Check the long-term flood risk to find out.
+- Deposit cap. Check that the tenancy deposit you’re being asked for is not more than 5 weeks’ rent where annual rent is less than £50,000, or 6 weeks’ rent where annual rent is more than £50,000.
+- Deposit protection. If the landlord asks for a deposit, check that it will be protected in a government-approved scheme. Some schemes hold the money, and some insure it. You may be able to access a bond or guarantee scheme that will help you put the deposit together. Contact your local council for advice.
+- You may be offered a deposit replacement product as an alternative to a cash deposit. A landlord or agent cannot require you to use a deposit replacement product but may allow it as an option without breaking the Tenant Fees Act. There are several different deposit replacement products available. Depending on the product, you may need to pay a non-refundable fee up- front (often equivalent to one week’s rent) and/or a monthly payment for the duration of your tenancy. With most products, you will still be responsible for the costs of any damages incurred at the end of the tenancy or required to pay an excess on any claim for damages or unpaid rent. It is strongly advised to always check the terms and conditions and to see if it is regulated by the Financial Conduct Authority.
+- Length of tenancy. There is usually a fixed period of 6 or 12 months. If you want more security, it may be worth asking whether the landlord is willing to agree to a longer fixed period. Alternatively, you may be offered a weekly or monthly assured shorthold tenancy which does not last for a fixed period. Even with those tenancies, the landlord must allow you to stay for a minimum of 6 months.
+- Smoking and pets. Check if there are any rules about them, as well as for other things such as keeping a bike, dealing with refuse and recycling.
+- Bills. Check who is responsible for bills such as electricity, gas, water and council tax. Usually, the tenant pays for these bills. See advice on paying bills.
+- Fixtures and fittings. Check you are happy with them, as it is unlikely that you will be able to get them changed once you have moved in.
+- Smoke alarms and carbon monoxide detectors. Landlords must make sure there is at least one smoke alarm on every floor used as living accommodation, and carbon monoxide alarms in all rooms that have a fixed combustion appliance and are used as living accommodation.
+- Safety. Check that the property is safe to live in, and use the ‘How to rent a safe home’ guide to help you identify possible hazards.
+- Fitness for human habitation. Your property must be safe, healthy and free from things that could cause serious harm. If not, you can take your landlord to court. For more information, see the Homes (Fitness for Human Habitation) Act 2018 guide for tenants. You should also check whether your tenancy agreement excuses you from paying rent if the building becomes unfit to live in due to, for example, a fire or flood.
+- Flood risk. Your area may be at risk of flooding. Check the long-term flood risk to find out.
 
 ### Check who your landlord is
 
@@ -137,24 +137,24 @@ Some single-family dwellings may also need to be licensed. Check with your local
 
 ### Check the paperwork
 
--  Tenancy agreement. Make sure you have a written tenancy agreement and read it carefully to understand your rights and responsibilities before you sign it. The landlord or agent usually provides one, but you can ask them to consider using a different version instead. The government has published a model tenancy agreement which can be downloaded for free. If you have any concerns about the agreement, seek advice before you sign. If you are unhappy with the tenancy agreement, the Tenant Fees Act allows tenants to walk away from unfair terms without forfeiting the holding deposit.
--  Inventory. Agree an inventory (or check-in report) with your landlord before you move in and, as an extra safeguard, make sure that you take photos. This will make things easier if there is a dispute about the deposit at the end of the tenancy. If you are happy with the inventory, sign it and keep a copy. From 1 June 2019, landlords or letting agents cannot charge certain fees. See the government’s guidance on the Tenant Fees Act for more information.
--  Meter readings. Remember to take meter readings when you move in. Take a photo showing the meter reading and the date and time, if possible. This will help make sure you don’t pay for the previous tenant’s bills.
--  Contact details. Make sure that you have the correct contact details for the landlord or agent, including a telephone number you can use in case of an emergency. You are legally entitled to know the name and address of your landlord.
--  Code of practice. Ask whether your landlord or agent has signed a code of practice, which may give you additional assurance about their conduct and practices.
+- Tenancy agreement. Make sure you have a written tenancy agreement and read it carefully to understand your rights and responsibilities before you sign it. The landlord or agent usually provides one, but you can ask them to consider using a different version instead. The government has published a model tenancy agreement which can be downloaded for free. If you have any concerns about the agreement, seek advice before you sign. If you are unhappy with the tenancy agreement, the Tenant Fees Act allows tenants to walk away from unfair terms without forfeiting the holding deposit.
+- Inventory. Agree an inventory (or check-in report) with your landlord before you move in and, as an extra safeguard, make sure that you take photos. This will make things easier if there is a dispute about the deposit at the end of the tenancy. If you are happy with the inventory, sign it and keep a copy. From 1 June 2019, landlords or letting agents cannot charge certain fees. See the government’s guidance on the Tenant Fees Act for more information.
+- Meter readings. Remember to take meter readings when you move in. Take a photo showing the meter reading and the date and time, if possible. This will help make sure you don’t pay for the previous tenant’s bills.
+- Contact details. Make sure that you have the correct contact details for the landlord or agent, including a telephone number you can use in case of an emergency. You are legally entitled to know the name and address of your landlord.
+- Code of practice. Ask whether your landlord or agent has signed a code of practice, which may give you additional assurance about their conduct and practices.
 
 ### Things the landlord must provide you with
 
--  A copy of the guide, ‘How to rent: the checklist for renting in England’, either as a hard copy or, with your agreement, via email as a PDF attachment.
--  A gas safety certificate before you occupy the property. They must also give you a copy of the new certificate after each annual gas safety check, if there is a gas installation or appliance.
--  Deposit paperwork. If you have provided a deposit, the landlord must protect it in a government-approved scheme within 30 days and give you prescribed information about it. Make sure you get the official information from your landlord, and that you understand how to get your money back at the end of the tenancy. Keep this information safe as you will need it later.
--  The energy performance certificate, which contains the energy performance rating of the property you are renting, free of charge at the onset of your tenancy. As of April 2020, all privately rented properties must have an energy performance rating of E or above (unless a valid exemption applies) before being let out. You can also search online for the energy performance certificate and check its rating.
--  A report that shows the condition of the property’s electrical installations. The landlord also has to give this to the local council if they ask for it. The electrical wiring, sockets, consumer units (fuse boxes) and other fixed electrical parts in rented homes must be inspected and tested every 5 years, or more often if the inspector thinks necessary. Throughout the whole time a tenant is living at the property, national electrical safety standards must be met.
--  Evidence that smoke and carbon monoxide alarms are in working order at the start of the tenancy. Tenants should then regularly check they are working.
+- A copy of the guide, ‘How to rent: the checklist for renting in England’, either as a hard copy or, with your agreement, via email as a PDF attachment.
+- A gas safety certificate before you occupy the property. They must also give you a copy of the new certificate after each annual gas safety check, if there is a gas installation or appliance.
+- Deposit paperwork. If you have provided a deposit, the landlord must protect it in a government-approved scheme within 30 days and give you prescribed information about it. Make sure you get the official information from your landlord, and that you understand how to get your money back at the end of the tenancy. Keep this information safe as you will need it later.
+- The energy performance certificate, which contains the energy performance rating of the property you are renting, free of charge at the onset of your tenancy. As of April 2020, all privately rented properties must have an energy performance rating of E or above (unless a valid exemption applies) before being let out. You can also search online for the energy performance certificate and check its rating.
+- A report that shows the condition of the property’s electrical installations. The landlord also has to give this to the local council if they ask for it. The electrical wiring, sockets, consumer units (fuse boxes) and other fixed electrical parts in rented homes must be inspected and tested every 5 years, or more often if the inspector thinks necessary. Throughout the whole time a tenant is living at the property, national electrical safety standards must be met.
+- Evidence that smoke and carbon monoxide alarms are in working order at the start of the tenancy. Tenants should then regularly check they are working.
 
 ### Check if the property is suitable for your needs if you are disabled
 
--  Accessibility. If you are disabled or have a long-term condition, you can request reasonable adjustments from your landlord or agent. This could include changes to the terms of your agreement, or home adaptations and adjustments to common parts of a building to make your home accessible to you. Your landlord or agent should respond in a reasonable timeframe and if they refuse a request, they should explain why they do not consider it reasonable. Your landlord can ask you to pay for the changes you asked for.
+- Accessibility. If you are disabled or have a long-term condition, you can request reasonable adjustments from your landlord or agent. This could include changes to the terms of your agreement, or home adaptations and adjustments to common parts of a building to make your home accessible to you. Your landlord or agent should respond in a reasonable timeframe and if they refuse a request, they should explain why they do not consider it reasonable. Your landlord can ask you to pay for the changes you asked for.
 
 However, you can check to see if you are eligible and apply for a Disabled Facilities Grant to help with the cost of adaptations. Your landlord can also apply for funding on your behalf.
 
@@ -162,11 +162,11 @@ However, you can check to see if you are eligible and apply for a Disabled Facil
 
 ### Things the tenant must do
 
--  Pay the rent on time. If your rent is more than 14 days late, you could be liable for a default fee. This is limited by the Tenant Fees Act to interest on the outstanding amount, capped at 3% above Bank of England base rates. The landlord or agent cannot charge any other fees. For more information, please read the government’s guidance on the Tenant Fees Act. Further, you could lose your home because you have breached your tenancy agreement. If you have problems, GOV.UK has links to further advice on rent arrears. Also check out these practical steps for paying your rent on time.
--  Pay any other bills that you are responsible for on time, such as council tax, gas, electricity and water bills. If you pay the gas or electricity bills, you can choose your own energy supplier.
--  Look after the property. Get your landlord’s permission before attempting repairs or decorating. It’s worth getting contents insurance to cover your possessions too, because the landlord’s insurance won’t cover your things.
--  Be considerate to the neighbours. Anti-social behaviour may be a reason for your landlord to evict you.
--  Don’t take in a lodger or sub-let without checking whether you need permission from your landlord.
+- Pay the rent on time. If your rent is more than 14 days late, you could be liable for a default fee. This is limited by the Tenant Fees Act to interest on the outstanding amount, capped at 3% above Bank of England base rates. The landlord or agent cannot charge any other fees. For more information, please read the government’s guidance on the Tenant Fees Act. Further, you could lose your home because you have breached your tenancy agreement. If you have problems, GOV.UK has links to further advice on rent arrears. Also check out these practical steps for paying your rent on time.
+- Pay any other bills that you are responsible for on time, such as council tax, gas, electricity and water bills. If you pay the gas or electricity bills, you can choose your own energy supplier.
+- Look after the property. Get your landlord’s permission before attempting repairs or decorating. It’s worth getting contents insurance to cover your possessions too, because the landlord’s insurance won’t cover your things.
+- Be considerate to the neighbours. Anti-social behaviour may be a reason for your landlord to evict you.
+- Don’t take in a lodger or sub-let without checking whether you need permission from your landlord.
 
 ### Things the tenant should do
 
@@ -325,17 +325,17 @@ Every letting agent must belong to a government approved redress scheme. Use the
 
 ### Help and advice
 
--  Citizens Advice – free, independent, confidential and impartial advice to everyone on their rights and responsibilities.
--  Shelter – housing and homelessness charity who offer advice and support.
--  Crisis – advice and support for people who are homeless or facing homelessness.
--  Your local council – to make a complaint about your landlord or the condition of your property.
--  Housing Loss Prevention Advice Service – free legal advice if you are at risk of losing your home
--  MoneyHelper – free and impartial money advice
--  The Law Society – to find a lawyer.
--  Gas Safe Register – for help and advice on gas safety issues.
--  Electrical Safety First – for help and advice on electrical safety issues.
--  Foundations – a national organisation that can provide advice and help disabled people apply for funding to make adaptations to their home
--  Smart Energy GB – for help and advice on installing a smart meter and tips on energy efficiency
+- Citizens Advice – free, independent, confidential and impartial advice to everyone on their rights and responsibilities.
+- Shelter – housing and homelessness charity who offer advice and support.
+- Crisis – advice and support for people who are homeless or facing homelessness.
+- Your local council – to make a complaint about your landlord or the condition of your property.
+- Housing Loss Prevention Advice Service – free legal advice if you are at risk of losing your home
+- MoneyHelper – free and impartial money advice
+- The Law Society – to find a lawyer.
+- Gas Safe Register – for help and advice on gas safety issues.
+- Electrical Safety First – for help and advice on electrical safety issues.
+- Foundations – a national organisation that can provide advice and help disabled people apply for funding to make adaptations to their home
+- Smart Energy GB – for help and advice on installing a smart meter and tips on energy efficiency
 
 ### Also in this series
 

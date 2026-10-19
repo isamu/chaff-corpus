@@ -66,13 +66,13 @@ findings:
     verdict: unjudged
   - rule: fact-conflict
     line: 131
-    text: "ISBN , Document  Cited by: §1, §5.1."
+    text: "ISBN , Document Cited by: §1, §5.1."
     message: '"External Links" is ISBN here, but Document earlier in the same section'
     verdict: false-positive
     note: "reference-list metadata ('External Links: ISBN, Document') read as conflicting facts"
   - rule: space-before-punctuation
     line: 131
-    text: " , Document  Cited by: §1, §5.1."
+    text: " , Document Cited by: §1, §5.1."
     message: A space before ","
     verdict: false-positive
     note: the arXiv HTML leaves 'ISBN ,' where the bibliography style's ISBN value is empty; a conversion gap, not the authors' typing
@@ -90,7 +90,7 @@ findings:
     note: "'k12' inside a cited work's (lower-cased) title"
   - rule: spelling-consistency
     line: 133
-    text: modeling.  Science & Education 28 (8), p
+    text: modeling. Science & Education 28 (8), pp
     message: '"modeling" here, where the document usually spells it "modelling" (3 of 13)'
     verdict: false-positive
     note: US spelling inside a cited work's title
@@ -102,19 +102,19 @@ findings:
     note: US spelling inside a cited work's title
   - rule: name-variant
     line: 142
-    text: Tsang  Evaluating an artificial intellig
+    text: Tsang Evaluating an artificial intellige
     message: '"Tsang" is one letter away from "Tseng", which the document uses more than once'
     verdict: false-positive
     note: Tsang and Tseng are different authors in the reference list
   - rule: unknown-word
     line: 144
-    text: mythos of model interpretability.  Commu
+    text: mythos of model interpretability. Commun
     message: '"mythos" is not in the dictionary; did you mean "mythoi"?'
     verdict: false-positive
     note: "'mythos' is an English word (in a cited title)"
   - rule: unknown-word
     line: 147
-    text: "medica 22 (3), pp. 276–282.  Cited by: §"
+    text: "medica 22 (3), pp. 276–282. Cited by: §3"
     message: '"medica" is not in the dictionary; did you mean "medina"?'
     verdict: false-positive
     note: "'medica' is part of a Latin journal name (Biochemia medica)"
@@ -192,7 +192,7 @@ findings:
     note: cited as 'Zhang et al., 2023' in a parenthetical list
   - rule: name-variant
     line: 170
-    text: Cheng, and C. Breazeal  Integrating ethi
+    text: Cheng, and C. Breazeal Integrating ethic
     message: '"Cheng" is one letter away from "Cheung", which the document uses more than once'
     verdict: false-positive
     note: Cheng and Cheung are different people

@@ -60,11 +60,6 @@ findings:
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: false-positive
     note: a zero-width space from the MathML-to-text conversion of an inline formula, not in the paper's prose
-  - rule: invisible-character
-    line: 113
-    text: ​D=10.9SD{=}10.9, range 18–65), 56 male
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
   - rule: numeral-sentence-start
     line: 113
     text: 104 annotators were recruited via Prolif
@@ -128,7 +123,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: cliche
     line: 221
-    text: "Talat  The perspectivist paradigm shift:"
+    text: "Talat The perspectivist paradigm shift:"
     message: '"paradigm shift" is a cliché'
     verdict: false-positive
     note: "'paradigm shift' inside a cited work's title"
@@ -175,7 +170,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: doubled-punctuation
     line: 227
-    text: "..  External Links: Document  Cited by:"
+    text: ".. External Links: Document Cited by: §2"
     message: 'Punctuation is doubled: ".."'
     verdict: correct
     note: "'Interact..': the journal abbreviation's period and the entry's period both print"
@@ -205,7 +200,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: name-variant
     line: 231
-    text: Sage Publications, Thousand Oaks, CA.  C
+    text: Sage Publications, Thousand Oaks, CA. Ci
     message: '"Sage Publications" is written "SAGE Publications" elsewhere in the document (case, width or punctuation)'
     verdict: correct
     note: the publisher is 'Sage Publications' here and 'SAGE Publications' in another entry
@@ -222,7 +217,7 @@ findings:
     verdict: unjudged
   - rule: doubled-punctuation
     line: 233
-    text: "..  External Links: Document  Cited by:"
+    text: ".. External Links: Document Cited by: §1"
     message: 'Punctuation is doubled: ".."'
     verdict: unjudged
   - rule: sentence-spacing-consistency
@@ -287,7 +282,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: spelling-consistency
     line: 241
-    text: modeling and evaluation.  In Proceedings
+    text: modeling and evaluation. In Proceedings
     message: '"modeling" here, where the document usually spells it "modelling" (4 of 17)'
     verdict: unjudged
   - rule: sentence-spacing-consistency
@@ -298,13 +293,13 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: citation-reference-mismatch
     line: 243
-    text: "- Qwen Team (2024) Qwen Team  Qwen2.5 te"
+    text: "- Qwen Team (2024) Qwen Team Qwen2.5 tec"
     message: This entry of the reference list is never cited in the text
     verdict: false-positive
     note: cited as '(Qwen Team, 2024; Qwen Team, 2025)'; a corporate author is not matched
   - rule: citation-reference-mismatch
     line: 244
-    text: "- Qwen Team (2025) Qwen Team  Qwen3 tech"
+    text: "- Qwen Team (2025) Qwen Team Qwen3 techn"
     message: This entry of the reference list is never cited in the text
     verdict: false-positive
     note: cited as '(Qwen Team, 2024; Qwen Team, 2025)'; a corporate author is not matched
