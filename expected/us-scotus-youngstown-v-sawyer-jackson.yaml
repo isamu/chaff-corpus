@@ -1,0 +1,79 @@
+id: us-scotus-youngstown-v-sawyer-jackson
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 5
+    text: "  And court decisions are indecisive bec"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 9
+    text: "  In these circumstances, and in these o"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 13
+    text: "  Presidential claim to a power at once"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 13
+    text: equilibruim established by our constitut
+    message: '"equilibruim" is not in the dictionary; did you mean "equilibrium"?'
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 31
+    text: "  I do not, however, find it necessary o"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 37
+    text: "  On the other hand, Congress has forbid"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 41
+    text: breanch is a representative Congress. Th
+    message: '"breanch" is not in the dictionary; did you mean "branch"?'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 43
+    text: That authority must be matched against w
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: the list (life, liberty, or property) is inside a quotation of the Fifth Amendment
+  - rule: sentence-spacing-consistency
+    line: 53
+    text: "  I do not think we rightfully may so am"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 55
+    text: distrubed or endangered. This proved a t
+    message: '"distrubed" is not in the dictionary; did you mean "disturbed"?'
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 59
+    text: "  As Parliament is not bound by written"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 59
+    text: "  Thus, parliamentary control made emerg"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 63
+    text: "  They were invoked from time to time as"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 71
+    text: "  I cannot be brought to believe that th"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (10 of 107)
+    verdict: unjudged
+  - rule: empty-section
+    line: 79
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged

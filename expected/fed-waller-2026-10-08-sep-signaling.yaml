@@ -1,0 +1,228 @@
+id: fed-waller-2026-10-08-sep-signaling
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 15
+    text: I look forward today to hearing perspect
+    message: This sentence runs 53 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: And I promise that I will do my best to
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: As you know, in September the Federal Op
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: But I am also asking about what changed
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: I am obviously asking what changed in th
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: While it might seem to some that monetar
+    message: This sentence runs 46 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: At the same time, there was significant
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: Though the picture was less sharp after
+    message: This sentence runs 43 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: When the FOMC cut rates from September t
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: But then, over the course of the first h
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: I supported no change in the policy rate
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: While headline inflation seesawed based
+    message: This sentence runs 47 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 25
+    text: But other forces were undermining my fai
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: First, hopes for a quick ending to the M
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: When the first inflation reading for Aug
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 27
+    text: While some suggested that monetary polic
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: But I am concerned that the recent accel
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: For me, this led to the judgment that th
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: Instead, it was a preponderance of evide
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: While some suggested that monetary polic
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: With evidence that economic activity is
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 29
+    text: Based on some key data released last wee
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: Based on some key data released last wee
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: The unemployment rate remains relatively
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 31
+    text: For the remainder of my remarks, I want
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: For the remainder of my remarks, I want
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: Suppose that a majority of FOMC voters d
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: To explain, let's assume the number of h
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 37
+    text: The point is that if too few or too many
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 39
+    text: Indeed, locking in a policy path over su
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 39
+    text: Second, policymakers could use a strong
+    message: This sentence runs 41 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 39
+    text: While this eliminates any uncertainty ab
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 41
+    text: Finally, there is something in between t
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: And we could emphasize that the course o
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: Simply put, policymakers could signal wh
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: This approach provides some information
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: What I have in mind is that policymakers
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 43
+    text: I see Federal Reserve policymakers' comm
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: It gets a little complicated reading the
+    message: This sentence runs 51 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: The projections submitted at the Septemb
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 45
+    text: According to futures market prices for t
+    message: This sentence runs 40 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 45
+    text: And, by the March 2027 meeting, markets
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 45
+    text: Between the SEP and policymakers' outloo
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: If the economic data continue to come in
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: The views expressed here are my own and
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct

@@ -1,0 +1,53 @@
+id: us-scotus-mcculloch-v-maryland
+chaff: 0.36.0
+findings:
+  - rule: spelling-consistency
+    line: 7
+    text: recognised by many successive legislatur
+    message: '"recognised" here, where the document usually spells it "recognized" (1 of 3)'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 35
+    text: Although, among the enumerated powers of
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 39
+    text: The creation of a corporation, it is sai
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: doubled-word
+    line: 51
+    text: their rigorous sense, would convey a mea
+    message: '"a their" doubles a word; one of the two is left over'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 51
+    text: Is it true that this is the sense in whi
+    message: This paragraph runs 16 sentences (limit 12)
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 53
+    text: It must have been the intention of those
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: correct
+  - rule: doubled-word
+    line: 67
+    text: it is associated. Congress shall have po
+    message: '"it it" doubles a word; one of the two is left over'
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 109
+    text: It is of the very essence of supremacy t
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 139
+    text: that may be necessary for carrying into
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: unjudged
+  - rule: empty-section
+    line: 157
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged

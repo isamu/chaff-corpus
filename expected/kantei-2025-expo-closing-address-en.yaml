@@ -1,0 +1,58 @@
+id: kantei-2025-expo-closing-address-en
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 7
+    text: Today, in the presence of Your Imperial
+    message: This sentence runs 42 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 9
+    text: Since its opening under the theme of “De
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 11
+    text: We are able to celebrate this splendid c
+    message: This sentence runs 53 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 13
+    text: At the opening ceremony of the Expo half
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 13
+    text: '" to the rest of the world.”'
+    message: The quote mark " here, where the document usually writes “” (2 of 16)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 13
+    text: '"New Japan" to the rest of the world.”'
+    message: The quote mark " here, where the document usually writes “” (2 of 16)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 15
+    text: Throughout the 184-day period, the Expo
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: Exhibitions and events at the various pa
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: Keeping in mind the concept of “Solidari
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: With heartfelt appreciation for leading
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: I would like to conclude my address by o
+    message: This sentence runs 47 words (limit 25)
+    verdict: correct

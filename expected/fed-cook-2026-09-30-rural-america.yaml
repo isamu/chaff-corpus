@@ -1,0 +1,246 @@
+id: fed-cook-2026-09-30-rural-america
+chaff: 0.36.0
+findings:
+  - rule: max-paragraph-length
+    line: 13
+    text: Thank you, President Barkin, for that ki
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 13
+    text: And thank you to the Federal Reserve Ban
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 13
+    text: And the people of Asheville and the rest
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 13
+    text: In fact, the summer after the TV series
+    message: This sentence runs 41 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 15
+    text: As a Fed Governor, my charge is to set p
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 15
+    text: I care about those communities as a poli
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 15
+    text: I know firsthand how hard people in rura
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 15
+    text: In turn, it is only appropriate that we
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: Rural communities also play vital roles
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: These communities are the source of crit
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: Today, I will take the opportunity to tr
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 27
+    text: The roughly 20 million workers in rural
+    message: This paragraph runs 13 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: As you can see in Figure 1, the unemploy
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: That changed considerably during the ear
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 33
+    text: In terms of housing costs, during and in
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: Another outcome from the pandemic that m
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: In terms of housing costs, during and in
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: Research from Harvard's Joint Center for
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: Research shows that between March 2020 a
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 35
+    text: FOMC to raise rates 25 basis points at t
+    message: '"FOMC" is used without an expansion (3 such acronyms)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: Both research and my firsthand experienc
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: That speaks as well to the entrepreneuri
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: In 2023, the most recent year for which
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: Both at the Board and at each Reserve Ba
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: I pay careful attention to this work, no
+    message: This sentence runs 41 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: Now that I have discussed the economy in
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 49
+    text: I would not be able to cite all of their
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 49
+    text: Of course, every Fed District includes r
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 51
+    text: Since we are in western North Carolina,
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: CDFIs have long been of interest to me,
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: Since we are in western North Carolina,
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: Staff there have conducted research expl
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 53
+    text: At a more grassroots level, in November
+    message: This sentence runs 42 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 53
+    text: In April of this year, the Board and six
+    message: This sentence runs 49 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 55
+    text: The Richmond Fed recently welcomed the t
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 59
+    text: It is encouraging that they will do so w
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 61
+    text: Thank you for the work you do every day
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 65
+    text: The views expressed here are my own and
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 67
+    text: For example, between 2001 and 2021, 53 p
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 69
+    text: "FEDS Notes (Washington: Board of Governo"
+    message: '"FEDS" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: FEDS Notes is the title of a Board publication series, not an acronym to expand
+  - rule: max-sentence-length
+    line: 73
+    text: See Alexander Hermann and Peyton Whitney
+    message: This sentence runs 31 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 75
+    text: See Alexander Hermann and Peyton Whitney
+    message: This sentence runs 28 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: undefined-acronym
+    line: 77
+    text: SBA, August). An "establishment" is defi
+    message: '"SBA" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: "the publisher's short name after its full name in the same citation (U.S. Small Business Administration … Washington: SBA)"
+  - rule: max-sentence-length
+    line: 79
+    text: Brian Thiede, Lillie Greiman, Stephan We
+    message: This sentence runs 28 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 83
+    text: Tim Wojan and Timothy Parker (2017), "In
+    message: This sentence runs 31 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 85
+    text: Bethany Greene, Anthony Tringali, and Ri
+    message: This sentence runs 35 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 87
+    text: For example, see Lisa D. Cook (2024), "G
+    message: This sentence runs 39 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence

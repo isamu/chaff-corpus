@@ -1,0 +1,79 @@
+id: kantei-2025-kaiho-gakko-shukuji
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 27日 総理の演説・記者会見など
+    message: 半角の「27」と書いています（この文書はふつう全角の「２７」。6 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 7年9月27日 総理の演説・記者会見など
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。8 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 9月27日 総理の演説・記者会見など
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。8 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: max-sentence-length
+    line: 21
+    text: 領海警備をめぐっては、海上保安庁の任務・権限の在り方や、巡視船に搭載すべき装備な
+    message: この文は 110 文字あります（100 文字まで）
+    verdict: correct
+  - rule: doubled-word
+    line: 23
+    text: り）しい仲間たちのことを。互いに助け合い、高め合いながら難局を乗り越え、自らの使
+    message: 「りり」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: a reading in parentheses (凛々（りり）しい) is not a doubled word
+  - rule: repeated-sentence-ending
+    line: 26
+    text: 御家族各位に申し上げます。この喜ばしき日を迎えられたことにつき、心よりお祝いを申
+    message: 「〜申し上げます」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 30
+    text: 史上初めて海上警備行動が発令をされた。海上保安庁の能力を超える場合は海上自衛隊に
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 30
+    text: 海上保安庁の能力を超える場合は海上自衛隊に海上警備行動が発令される。初めての事例
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: 領海を守るのは海上保安庁の仕事であるということであるならば、それは、海上保安庁法
+    message: この文は 153 文字あります（100 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 31
+    text: 領海を守るのは海上保安庁の仕事であるということであるならば、それは、海上保安庁法
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 31
+    text: 領海を守るのは海上保安庁の仕事であるということであるならば、それは、海上保安庁法
+    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
+  - rule: max-sentence-length
+    line: 32
+    text: 諸君が任務を全うされ、我が国の独立、そして主権、国民の生命、財産、そして公の秩序
+    message: この文は 108 文字あります（100 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 32
+    text: 諸君が任務を全うされ、我が国の独立、そして主権、国民の生命、財産、そして公の秩序
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 33
+    text: 諸官の前途は揚々たるものであり、その努力によって我が国の平安が保たれ、そして世界
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
