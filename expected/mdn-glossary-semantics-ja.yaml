@@ -1,0 +1,44 @@
+id: mdn-glossary-semantics-ja
+chaff: 0.37.0
+findings:
+  - rule: bracket-width-consistency
+    line: 26
+    text: （とはいえ、お好みで自由にスタイル設定を変更することも可能ですが）。
+    message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width parentheses in a page that otherwise uses half-width ones
+  - rule: bracket-width-consistency
+    line: 26
+    text: ）。
+    message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width parentheses in a page that otherwise uses half-width ones
+  - rule: doubled-word
+    line: 28
+    text: のことを想像してみてください。
+    message: 「のの」で語が重なっています。どちらかが余分です
+    verdict: correct
+    note: "a real typo: the particle no is doubled"
+  - rule: no-mixed-desumasu
+    line: 48
+    text: 定義の一覧になっているか？キャプションを必要としている図または画像か？サイト内で
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: example questions the reader asks themself, quoted inside a desu/masu sentence, not plain-style sentences of the text
+  - rule: no-mixed-desumasu
+    line: 48
+    text: 順序付きか順序なしか？これは節と関連情報の補足から成る記事か？定義の一覧になって
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: example questions the reader asks themself, quoted inside a desu/masu sentence, not plain-style sentences of the text
+  - rule: orthographic-variant
+    line: 48
+    text: 例えば、これはデータのリストか？順序付きか順序なしか？これは節と関連情報の補足か
+    message: 「例えば」と書いています（この文書はふつう「たとえば」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 48
+    text: 例えば、これはデータのリストか？順序付きか順序なしか？これは節と関連情報の補足か
+    message: 「〜か」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a run of example questions ending in ka, written as a list inside one sentence

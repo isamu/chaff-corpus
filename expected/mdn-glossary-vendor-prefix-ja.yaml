@@ -1,0 +1,21 @@
+id: mdn-glossary-vendor-prefix-ja
+chaff: 0.37.0
+findings:
+  - rule: comparative-without-baseline
+    line: 10
+    text: より困難になりました。また、接頭辞付きの機能を含むことは、小規模なブラウザーベン
+    message: 「より困難」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: '"became more difficult": a change over time, the baseline is the earlier state'
+  - rule: bracket-width-consistency
+    line: 41
+    text: （しかし、その中のプロパティやメソッドには付きません）。標準化されたインターフェ
+    message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width parentheses here, half-width in the rest of the entry
+  - rule: bracket-width-consistency
+    line: 41
+    text: ）。標準化されたインターフェイスに実験的なプロパティやメソッドが追加された場合は
+    message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width parentheses here, half-width in the rest of the entry

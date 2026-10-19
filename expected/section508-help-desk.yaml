@@ -1,0 +1,97 @@
+id: section508-help-desk
+chaff: 0.37.0
+findings:
+  - rule: max-paragraph-length
+    line: 1
+    text: Federal agencies often depend on a forma
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: vague-word-density
+    line: 1
+    text: Accessibility inquiries often intersect
+    message: '"reasonable" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: '"reasonable accommodation" is a legal term of art, not a vague word'
+  - rule: vague-word-density
+    line: 1
+    text: Agencies should establish clear routing
+    message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 7
+    text: Providing a centralized point of contact
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: list items (USWDS icon list) that the html conversion writes as paragraphs
+  - rule: vague-word-density
+    line: 11
+    text: Facilitating timely resolution of access
+    message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 39
+    text: Scope Definition – Distinguish Section 5
+    message: This sentence runs 45 words (limit 40)
+    verdict: correct
+  - rule: vague-word-density
+    line: 39
+    text: Scope Definition – Distinguish Section 5
+    message: '"reasonable" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: false-positive
+    note: '"reasonable accommodation" is a legal term of art, not a vague word'
+  - rule: vague-word-density
+    line: 43
+    text: Documentation and Reporting – Collect su
+    message: '"sufficient" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 53
+    text: Oversees intake and case management, tra
+    message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 71
+    text: Agencies should establish and publish se
+    message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 71
+    text: Ensure clear, timely, and transparent co
+    message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 117
+    text: A mature Section 508 help desk should ma
+    message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 131
+    text: Establishing and maintaining standard op
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: vague-word-density
+    line: 158
+    text: Agencies should establish prioritization
+    message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 165
+    text: Define and document a structured tiered
+    message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: redundant-expression
+    line: 176
+    text: Document steps for investigating and res
+    message: '"final outcome" says the same thing twice'
+    verdict: correct
+  - rule: title-case-consistency
+    line: 183
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+    note: '"Follow up" in sentence case among title-case headings'
+  - rule: vague-word-density
+    line: 185
+    text: Confirm user satisfaction when appropria
+    message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
+    verdict: correct

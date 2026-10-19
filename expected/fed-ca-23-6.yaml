@@ -1,0 +1,69 @@
+id: fed-ca-23-6
+chaff: 0.37.0
+findings:
+  - rule: title-length
+    line: 3
+    text: "### CA 23-6:  Second extension of CRA co"
+    message: 'The heading "CA 23-6:  Second extension of CRA consideration for community development activities in Puerto Rico and the U.S. Virgin Islands in response to Hurricane Maria" runs 24 words (limit 14)'
+    verdict: correct
+  - rule: proper-noun-density
+    line: 5
+    text: BOARD OF GOVERNORS
+    message: 451 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead and agency names make the density in a short regulatory letter
+  - rule: email-subject-length
+    line: 17
+    text: "SUBJECT:"
+    message: The subject has 148 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label runs 148 characters"
+  - rule: max-sentence-length
+    line: 21
+    text: Applicability to Community Banking Organ
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 59 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: The agencies are granting a second 36-mo
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: This extension follows the original peri
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: Virgin Islands and Puerto Rico Following
+    message: This sentence runs 46 words (limit 18)
+    verdict: correct
+    note: the sentence is long, though chaff starts it after the U.S. inside a quoted title
+  - rule: max-sentence-length
+    line: 27
+    text: If supervised financial institutions hav
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: "Interagency Statement: Agencies Extend P"
+    message: This sentence runs 24 words (limit 18)
+    verdict: false-positive
+    note: the title of the attached statement in the attachments list, not a sentence
+  - rule: heading-level-skip
+    line: 45
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
+  - rule: undefined-acronym
+    line: 47
+    text: DR 4339), https://www.fema.gov/disaster/
+    message: '"DR" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: DR is part of FEMA's disaster declaration numbers (DR 4339), an identifier

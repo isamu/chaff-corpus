@@ -1,0 +1,77 @@
+id: section508-accessible-meetings
+chaff: 0.37.0
+findings:
+  - rule: title-case-consistency
+    line: 5
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+    note: question headings in sentence case among title-case headings
+  - rule: title-case-consistency
+    line: 51
+    text: ""
+    message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: correct
+    note: question headings in sentence case among title-case headings
+  - rule: ngram-repetition
+    line: 69
+    text: Follow these guidelines to ensure your m
+    message: '"Follow these guidelines" appears 7 times (limit 5)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 81
+    text: Realtime Translation (CART) or an Americ
+    message: '"Realtime" here, where the document usually writes "Real-time" (1 of 5)'
+    verdict: false-positive
+    note: Communication Access Realtime Translation (CART) is a proper name spelled Realtime
+  - rule: unbalanced-bracket
+    line: 81
+    text: (commonly referred to as Communication A
+    message: '"(" is never closed'
+    verdict: correct
+    note: the parenthesis opened before "commonly referred to as" is never closed
+  - rule: unused-definition
+    line: 85
+    text: “Audio content” refers to the voices of
+    message: '"Audio content" is defined but never used'
+    verdict: false-positive
+    note: the defined term is the heading of its own section, which the definition introduces
+  - rule: one-sentence-paragraph-run
+    line: 103
+    text: Provide attendees with an accessible cop
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: list items (USWDS icon list) that the html conversion writes as paragraphs
+  - rule: max-sentence-length
+    line: 127
+    text: In addition, you will likely need to wor
+    message: This sentence runs 42 words (limit 40)
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 169
+    text: " - only use one audio connection method"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 185
+    text: Establish communication with support tea
+    message: 9 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: list items (USWDS icon list) that the html conversion writes as paragraphs
+  - rule: one-sentence-paragraph-run
+    line: 205
+    text: Ask whether all attendees have what they
+    message: 6 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: list items (USWDS icon list) that the html conversion writes as paragraphs
+  - rule: one-sentence-paragraph-run
+    line: 221
+    text: Confirm access to the meeting platform a
+    message: 7 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: list items (USWDS icon list) that the html conversion writes as paragraphs
+  - rule: max-sentence-length
+    line: 264
+    text: "*Disclaimer: Reference in this site to a"
+    message: This sentence runs 42 words (limit 40)
+    verdict: correct

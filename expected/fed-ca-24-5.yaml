@@ -1,0 +1,69 @@
+id: fed-ca-24-5
+chaff: 0.37.0
+findings:
+  - rule: title-length
+    line: 3
+    text: "### CA 24-5: Joint Statement on Banks’ A"
+    message: 'The heading "CA 24-5: Joint Statement on Banks’ Arrangements with Third Parties to Deliver Bank Deposit Products and Services" runs 17 words (limit 14)'
+    verdict: correct
+  - rule: proper-noun-density
+    line: 5
+    text: BOARD OF GOVERNORS
+    message: 452 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead and agency names make the density in a short regulatory letter
+  - rule: email-subject-length
+    line: 17
+    text: "SUBJECT:"
+    message: The subject has 103 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label runs 103 characters"
+  - rule: max-sentence-length
+    line: 21
+    text: "Applicability: This letter is relevant t"
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: On July 25, 2024, the Board of Governors
+    message: This sentence runs 51 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: The agencies issued the statement to not
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: The statement also highlights examples o
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 50
+    text: SR 16-11, “Supervisory Guidance for Asse
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
+  - rule: max-sentence-length
+    line: 51
+    text: SR 16-7, “Interagency Guidance to Issuin
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
+  - rule: max-sentence-length
+    line: 56
+    text: SR 05-8, “Interagency Interpretive Guida
+    message: This sentence runs 20 words (limit 18)
+    verdict: false-positive
+    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
+  - rule: heading-level-skip
+    line: 60
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes

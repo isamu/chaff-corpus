@@ -1,0 +1,60 @@
+id: section508-alt-text
+chaff: 0.37.0
+findings:
+  - rule: contraction-consistency
+    line: 3
+    text: It’s designed to make visual content acc
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: contraction-consistency
+    line: 13
+    text: It’s designed to make visual content acc
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: title-case-consistency
+    line: 46
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+    note: '"that" is lower-case here; AP and Chicago both capitalise it in a title-case heading'
+  - rule: hyphen-as-dash
+    line: 50
+    text: " - Jan 29th-Feb 9th. 1:00 PM - 2:00 PM E"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: inside a quoted alt-text example that reproduces the text printed on an image
+  - rule: hyphen-as-dash
+    line: 50
+    text: " - Register today.”"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: inside a quoted alt-text example that reproduces the text printed on an image
+  - rule: unbalanced-bracket
+    line: 90
+    text: ”
+    message: '"”" closes nothing that was opened'
+    verdict: correct
+    note: curly closing quotes on both sides of an HTML attribute value, a real typographic slip
+  - rule: unbalanced-bracket
+    line: 90
+    text: ”a white keyboard”
+    message: '"”" closes nothing that was opened'
+    verdict: correct
+    note: curly closing quotes on both sides of an HTML attribute value, a real typographic slip
+  - rule: unknown-word
+    line: 124
+    text: toolbar and unordered list element respe
+    message: '"toolbar" is not in the dictionary; did you mean "tollbar"?'
+    verdict: false-positive
+    note: '"toolbar" is an ordinary word'
+  - rule: unfilled-placeholder
+    line: 175
+    text: "[insert link name] below the image for a"
+    message: '"[insert link name]" was never filled in'
+    verdict: false-positive
+    note: a template example that tells the reader what to write there, not a leftover
+  - rule: contraction-consistency
+    line: 212
+    text: The text is too short and doesn’t descri
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
+    verdict: correct

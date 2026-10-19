@@ -1,0 +1,34 @@
+id: mdn-http-conditional-requests-ja
+chaff: 0.37.0
+findings:
+  - rule: tari-unpaired
+    line: 11
+    text: たり、サーバー上の文書をアップロードまたは変更する際に更新が失われるのを防ぐため
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: orthographic-variant
+    line: 48
+    text: 見なされるという点で、強い検証と異なります。例えばフッターの日付だけ、あるいは広
+    message: 「見なす」と書いています（この文書はふつう「みなす」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 73
+    text: (すべてのヘッダーのように) キャッシュへ保存され、キャッシュが陳腐化したときに
+    message: 丸括弧を、全角で 14 箇所、半角で 6 箇所書いています。この文書には書き方が二通りあります
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 112
+    text: リモートの文書の*更新*は、ウェブアプリケーションで一般的な操作です。これはファ
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 118
+    text: 残念ながら、並行処理を考慮すると若干の間違いが出てきます。あるクライアントがリソ
+    message: この段落は 8 文あります（5 文まで）
+    verdict: correct
+  - rule: missing-final-period
+    line: 140
+    text: ん
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。20 段落のうち 1 段落）
+    verdict: correct
+    note: the closing paragraph really lacks its final period

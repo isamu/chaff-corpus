@@ -1,0 +1,230 @@
+id: section508-glossary
+chaff: 0.37.0
+findings:
+  - rule: undefined-acronym
+    line: 13
+    text: VPAT®) template created by the IT Indust
+    message: '"VPAT" is used without an expansion (11 such acronyms)'
+    verdict: false-positive
+    note: expanded just before as Voluntary Product Accessibility Template (VPAT®); the ® inside the parentheses hides the expansion
+  - rule: bracket-nesting
+    line: 33
+    text: The statement on the reporting entity’s
+    message: Brackets nested 3 deep (limit 2)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 33
+    text: “ (M-24-08), including contact informati
+    message: '"“" is never closed'
+    verdict: correct
+    note: the quoted title is closed with an opening quote mark
+  - rule: unbalanced-bracket
+    line: 33
+    text: “Strengthening Digital Accessibility and
+    message: '"“" is never closed'
+    verdict: correct
+    note: the quoted title is closed with an opening quote mark
+  - rule: spelling-consistency
+    line: 59
+    text: acknowledgement of receipt;
+    message: '"acknowledgement" here, where the document usually spells it "acknowledgment" (1 of 3)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 137
+    text: RSA tokens.
+    message: '"RSA" is used without an expansion (11 such acronyms)'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 165
+    text: --external">FY24-Data-Dictionary-(XLSX)<
+    message: '"--" stands in for a dash'
+    verdict: false-positive
+    note: the double hyphen is inside raw HTML markup that the page shows as text (a page defect, but not a dash)
+  - rule: unbalanced-bracket
+    line: 185
+    text: “Completely Automated Public Turing Test
+    message: '"“" is never closed'
+    verdict: correct
+    note: a curly opening quote closed with a straight one
+  - rule: max-sentence-length
+    line: 197
+    text: CSS enables presentation and content to
+    message: This sentence runs 54 words (limit 50)
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 201
+    text: " - Low and so on."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 209
+    text: OMB new authority and responsibility for
+    message: '"OMB" is used without an expansion (11 such acronyms)'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 252
+    text: Realtime Translation (CART)
+    message: '"Realtime" here, where the document usually writes "Real-Time" (2 of 8)'
+    verdict: false-positive
+    note: Communication Access Realtime Translation (CART) is a proper name spelled Realtime
+  - rule: orthographic-variant
+    line: 254
+    text: realtime software. For CART services, se
+    message: '"realtime" here, where the document usually writes "Real-Time" (2 of 8)'
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 262
+    text: Section 504/501 complaints process and m
+    message: '"Section 504" (address 504) is not in this document'
+    verdict: false-positive
+    note: Section 504 of the Rehabilitation Act, a law outside this page
+  - rule: dangling-reference
+    line: 262
+    text: section 794 of this title for resolving
+    message: '"section 794" (address 794) is not in this document'
+    verdict: false-positive
+    note: section 794 of title 29 of the US Code, outside this page
+  - rule: max-paragraph-length
+    line: 262
+    text: An alleged Section 508 non-compliance vi
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 262
+    text: DOJ Civil Rights Division iii. Administr
+    message: '"DOJ" is used without an expansion (11 such acronyms)'
+    verdict: correct
+  - rule: undefined-acronym
+    line: 284
+    text: AA Success Criteria incorporated by refe
+    message: '"AA" is used without an expansion (11 such acronyms)'
+    verdict: false-positive
+    note: A, AA and AAA are WCAG conformance level names, not acronyms
+  - rule: max-sentence-length
+    line: 539
+    text: Information and Communication Technology
+    message: This sentence runs 75 words (limit 50)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 539
+    text: “[i]nformation technology and other equi
+    message: '"“" is never closed'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 545
+    text: With respect to an executive agency mean
+    message: This sentence runs 69 words (limit 50)
+    verdict: unjudged
+  - rule: contraction-consistency
+    line: 555
+    text: A group that reviews research involving
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: contraction-consistency
+    line: 593
+    text: A quantifiable metric used to measure th
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 593
+    text: A quantifiable metric used to measure th
+    message: This sentence runs 53 words (limit 50)
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 633
+    text: 9 dimensions, including various aspects
+    message: '"9" here, where the document usually writes numbers below ten like "two" (1 of 3)'
+    verdict: correct
+  - rule: contraction-consistency
+    line: 715
+    text: They make videos accessible for people w
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: correct
+  - rule: undefined-acronym
+    line: 723
+    text: USC. 3502 (20).
+    message: '"USC" is used without an expansion (11 such acronyms)'
+    verdict: false-positive
+    note: USC in a statute citation (44 USC 3502), a standard citation form
+  - rule: hyphen-as-dash
+    line: 731
+    text: " - Low, and so on."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 739
+    text: These include the Department of Agricult
+    message: This sentence runs 53 words (limit 50)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 741
+    text: HQ whereas a "component" would be Transp
+    message: '"HQ" is used without an expansion (11 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 745
+    text: OPM in position description development
+    message: '"OPM" is used without an expansion (11 such acronyms)'
+    verdict: correct
+  - rule: unknown-word
+    line: 749
+    text: congnitive, or sensory impairment that,
+    message: '"congnitive" is not in the dictionary; did you mean "cognitive"?'
+    verdict: correct
+    note: a real typo for "cognitive"
+  - rule: which-that-consistency
+    line: 765
+    text: which support macros or scripting.
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 769
+    text: MOV), the browser will automatically vie
+    message: '"MOV" is used without an expansion (11 such acronyms)'
+    verdict: false-positive
+    note: WAV and MOV are file extensions listed as such, not acronyms to expand
+  - rule: undefined-acronym
+    line: 769
+    text: WAV, MOV), the browser will automaticall
+    message: '"WAV" is used without an expansion (11 such acronyms)'
+    verdict: false-positive
+    note: WAV and MOV are file extensions listed as such, not acronyms to expand
+  - rule: dangling-reference
+    line: 833
+    text: Section 504, this is a workplace modific
+    message: '"Section 504" (address 504) is not in this document'
+    verdict: false-positive
+    note: Section 504 of the Rehabilitation Act, a law outside this page
+  - rule: dangling-reference
+    line: 881
+    text: Section 504 also prohibits disability-ba
+    message: '"Section 504" (address 504) is not in this document'
+    verdict: false-positive
+    note: Section 504 of the Rehabilitation Act, a law outside this page
+  - rule: numbering-gap
+    line: 891
+    text: Section 508 Program or equivalent
+    message: '"Section 508" follows "Section 508" (expected number 509)'
+    verdict: false-positive
+    note: glossary headwords that begin with "Section 508", not a numbered sequence
+  - rule: numbering-gap
+    line: 895
+    text: Section 508 Program Manager
+    message: '"Section 508" follows "Section 508" (expected number 509)'
+    verdict: false-positive
+    note: glossary headwords that begin with "Section 508", not a numbered sequence
+  - rule: undefined-acronym
+    line: 897
+    text: CIO whose duties include developing and
+    message: '"CIO" is used without an expansion (11 such acronyms)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 979
+    text: In a complex data table, a column header
+    message: This sentence runs 52 words (limit 50)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 1055
+    text: As per W3.org definition, "[a] user agen
+    message: This sentence runs 75 words (limit 50)
+    verdict: unjudged

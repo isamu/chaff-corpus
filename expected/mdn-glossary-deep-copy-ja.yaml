@@ -1,0 +1,26 @@
+id: mdn-glossary-deep-copy-ja
+chaff: 0.37.0
+findings:
+  - rule: katakana-density
+    line: 10
+    text: オブジェクトの **ディープコピー** とは、コピー先のオブジェクトのプロパティ
+    message: カタカナ語が 1000 字あたり 56 語あります（55 語まで）。多いのは「オブジェクト、コピー、ディープコピー」です
+    verdict: false-positive
+    note: the katakana words are the technical subject itself (object, copy, deep copy) and have no Japanese equivalent in use
+  - rule: bracket-width-consistency
+    line: 18
+    text: )、コピーであるか (`o1 !== o2`) のどちらかになります。等価なプリ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。17 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: half-width parentheses around code here, full-width elsewhere in the entry
+  - rule: stray-space
+    line: 27
+    text: " 持つこともあれば持たないこともあります（持たないことも多い）。しかし、構造的に"
+    message: 助詞「を」と「持つ」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。139 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: a stray space inside a phrase between particle and verb
+  - rule: repeated-sentence-ending
+    line: 52
+    text: シリアライズ可能_ なオブジェクトであれば、代わりに [`structuredC
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
