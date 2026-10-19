@@ -1,0 +1,107 @@
+id: ndl-ca2064-transformative-agreements
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### 国内の大学における電子ジャーナルの転換契約をめぐる動向"
+    message: 見出し「国内の大学における電子ジャーナルの転換契約をめぐる動向」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: false-positive
+    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
+  - rule: no-doubled-joshi
+    line: 12
+    text: のJUSTICE提案外の転換契約の締結状況を紹介する。最後に、今後の課題について
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "「大学・出版社間のJUSTICE提案外の転換契約の締結状況」: a chain of の"
+  - rule: latin-spacing
+    line: 25
+    text: " 出版できる権利を追加したRead＆Publish（RAP）契約の他に、購読額に"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。160 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: "a stray space in 「OA 出版」; the article writes OA出版 everywhere else"
+  - rule: no-doubled-joshi
+    line: 25
+    text: のためのバウチャーの発行、APC単価の割引、OA出版量に応じた購読額の割引等、O
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "「OA出版のためのバウチャーの発行」 after 「購読額に応じた」: a chain of の"
+  - rule: orthographic-variant
+    line: 27
+    text: 行っている。
+    message: 「行く」と書いています（この文書はふつう「いく」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "「行っている」 is おこなっている, a different word from いく"
+  - rule: topic-predicate-distance
+    line: 37
+    text: RAPモデルを選択した機関は、フルタイム換算値（FTE）の階層毎に定められた購読
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 55
+    text: " に転換契約の提案がない出版社との間で独自に転換契約を締結する大学等が現れた状況"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。160 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: "「JUSTICE に」 with a space, where the article writes JUSTICEに elsewhere"
+  - rule: max-kanji-continuous
+    line: 62
+    text: 2023年5月のG7仙台科学技術大臣会合、およびG7広島サミットのコミュニケでオ
+    message: 「仙台科学技術大臣会合」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: "the proper name of a G7 ministers' meeting"
+  - rule: demonstrative-opener-run
+    line: 67
+    text: これは、オプトインコンソーシアムであるJUSTICEでは一定数の大学が確実に契約
+    message: 「これ」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 67
+    text: これは2024年12月までのパイロットプロジェクトとして開始され、その後JUST
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: taigen-dome-in-prose
+    line: 83
+    text: (1)JUSTICE. 購読モデルからOA出版モデルへの転換をめざして：JUST
+    message: 本文に体言止めが 14 文あります（4 文まで）
+    verdict: false-positive
+    note: "entries of the notes and references list counted as prose sentences"
+  - rule: bracket-width-consistency
+    line: 84
+    text: (参照 2024-03-20).
+    message: 丸括弧を、全角で 64 箇所、半角で 19 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 113
+    text: (11)科学技術・イノベーション推進事務局. “G7仙台科学技術大臣会合（概要）
+    message: 「仙台科学技術大臣会合」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: "the proper name of a G7 ministers' meeting, in a cited title"
+  - rule: date-format-consistency
+    line: 116
+    text: 2023年5月20日）. 首相官邸, 39p. https://www.kant
+    message: 日付「2023年5月20日」の書き方が、この文書のほかの日付（「2024-03-20」など 26 箇所）と違います
+    verdict: false-positive
+    note: "a date inside the title of a cited document"
+  - rule: latin-spacing
+    line: 138
+    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。20 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: latin-spacing
+    line: 138
+    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。23 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: no-mixed-desumasu
+    line: 138
+    text: ライセンスの内容を知りたい方は https://creativecommons.
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
+  - rule: no-mixed-desumasu
+    line: 138
+    text: 本著作（CA2064）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"

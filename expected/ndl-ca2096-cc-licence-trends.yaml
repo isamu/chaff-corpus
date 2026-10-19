@@ -1,0 +1,212 @@
+id: ndl-ca2096-cc-licence-trends
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### CCライセンスを付与する際の主な留意事項と最近の動向：「PD BY」と「"
+    message: 見出し「CCライセンスを付与する際の主な留意事項と最近の動向：「PD BY」と「CCシグナル」」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: false-positive
+    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
+  - rule: abstract-length
+    line: 7
+    text: "#### 1. はじめに"
+    message: 節を立てた論文ですが、要旨がありません
+    verdict: false-positive
+    note: "カレントアウェアネス articles carry no abstract; the journal's format, not an omission"
+  - rule: heading-numbering-mix
+    line: 7
+    text: "#### 1. はじめに"
+    message: 見出し「1. はじめに」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
+    verdict: false-positive
+    note: "sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent"
+  - rule: topic-predicate-distance
+    line: 13
+    text: CCライセンスは、クリエイティブ・コモンズが提供している著作権者の意思表示ツール
+    message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 15
+    text: " 6種類のCCライセンス"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。25 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: "a table caption: the label 表 set off from the caption by a space"
+  - rule: acronym-expansion-conflict
+    line: 32
+    text: SA
+    message: 「SA」をここでは「表示-非営利-継承」と、27 行目では「表示-継承」と展開しています
+    verdict: false-positive
+    note: "the parenthesis names the whole licence (表示-非営利-継承), not the expansion of SA alone"
+  - rule: acronym-expansion-conflict
+    line: 42
+    text: ND
+    message: 「ND」をここでは「表示-非営利-改変禁止」と、37 行目では「表示-改変禁止」と展開しています
+    verdict: false-positive
+    note: "the parenthesis names the whole licence (表示-非営利-改変禁止), not the expansion of ND alone"
+  - rule: topic-predicate-distance
+    line: 47
+    text: CCライセンスは、誰にでも分かるように書かれた「コモンズ証」、法律の専門家向けに
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 51
+    text: CCライセンスを付与することにより、利用許諾に関する個別のやり取りが基本的に不要
+    message: 「センスを付与する」が 6 回出てきます（5 回まで）
+    verdict: false-positive
+    note: "「CCライセンスを付与する」 is the article's subject and in its title; repetition is expected"
+  - rule: heading-numbering-mix
+    line: 55
+    text: "#### 2. CCライセンスを付与する際の主な留意事項"
+    message: 見出し「2. CCライセンスを付与する際の主な留意事項」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
+    verdict: false-positive
+    note: "sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent"
+  - rule: empty-section
+    line: 77
+    text: "#### 3. CCライセンスを巡る最近の動向"
+    message: 見出し「3. CCライセンスを巡る最近の動向」の下に中身がありません
+    verdict: false-positive
+    note: "a section whose subsections sit at the same heading level (3. then 3.1); not empty"
+  - rule: heading-numbering-mix
+    line: 77
+    text: "#### 3. CCライセンスを巡る最近の動向"
+    message: 見出し「3. CCライセンスを巡る最近の動向」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
+    verdict: false-positive
+    note: "sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent"
+  - rule: max-ten
+    line: 81
+    text: こうしたCCライセンスの使われ方について、クリエイティブ・コモンズは、「功績を認
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 81
+    text: PD BYは、パブリックドメインの文化遺産資料のデータだけでなく、著作権が認めら
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 85
+    text: の分野固有のCCシグナルの検討も進めているとされている。CCシグナルは、基本的に
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "「分野固有のCCシグナルの検討」 after another の: a chain of の"
+  - rule: topic-predicate-distance
+    line: 85
+    text: CCシグナルは、基本的には「お願い」にとどまるものと考えられるが、国際的に統一さ
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 85
+    text: また、クリエイティブ・コモンズは、所蔵機関のクレジット表記を求めたいのであれば、
+    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 91
+    text: CCシグナルの具体的な設計として、①Credit：適切なクレジット表示、②Dir
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: false-positive
+    note: "a list of the four defined signal elements; 具体的 and 金銭的 twice are in parallel items"
+  - rule: wordy-phrase
+    line: 93
+    text: CCシグナルは、著作権をベースとするCCライセンスとは異なり、基本的には法的拘束
+    message: 「であると言える」は、もっと短く言えます
+    verdict: correct
+    note: "「であると言える」 hedges a plain statement"
+  - rule: wordy-phrase
+    line: 95
+    text: RSL1.0では、「Compensation Terms」として、クレジット表記
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+    note: "「することが可能」 can be 「できる」"
+  - rule: wordy-phrase
+    line: 95
+    text: ここでの「支援」（Contribution）は、AIの学習済みモデルをオープンな
+    message: 「であると言える」は、もっと短く言えます
+    verdict: correct
+    note: "「であると言える」 hedges a plain statement"
+  - rule: heading-numbering-mix
+    line: 97
+    text: "#### 4. おわりに"
+    message: 見出し「4. おわりに」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
+    verdict: false-positive
+    note: "sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent"
+  - rule: teki-overuse
+    line: 101
+    text: 最新動向の理解に限らず、CCライセンスの理解にあたっては、著作権法の基本的な知識
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: "「基本的な知識」 three times in one sentence"
+  - rule: bracket-width-consistency
+    line: 105
+    text: (参照 2026-01-22).
+    message: 丸括弧を、全角で 50 箇所、半角で 16 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: taigen-dome-in-prose
+    line: 106
+    text: 「特によくある質問」の「クリエイティブ・コモンズとはなんですか？」を参照。
+    message: 本文に体言止めが 20 文あります（4 文まで）
+    verdict: false-positive
+    note: "entries of the notes and references list counted as prose sentences"
+  - rule: date-format-consistency
+    line: 121
+    text: 令和3年10月12日（令和3年（ワ）第5285号）がある。
+    message: 日付「令和3年10月12日」の書き方が、この文書のほかの日付（「2026-01-22」など 34 箇所）と違います
+    verdict: false-positive
+    note: "a court decision cited in the style of Japanese case citations (東京地判令和3年…), not a style slip"
+  - rule: stray-space
+    line: 127
+    text: " のリーガル・コードにも同様の条項がある。"
+    message: 「ライセンス」と「の」は一続きの語句ですが、あいだに空白があります（1139 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: "a stray space in 「CCライセンス の」"
+  - rule: kutoten-consistency
+    line: 149
+    text: ．「メタデータ」のパースペクティブ. 池内有為, 木村麻衣子責任編集. 勉誠社,
+    message: 句点を「．」と書いています（この文書はふつう「。」。95 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "a full-width 「．」 in one citation where the others use 「.」"
+  - rule: max-kanji-continuous
+    line: 149
+    text: (11)鈴木康平. “メタデータの二次利用条件とクリエイティブ・コモンズ”．「メ
+    message: 「木村麻衣子責任編集」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "an editor's name followed by 責任編集, a bibliographic role"
+  - rule: latin-spacing
+    line: 159
+    text: " 1.0 全世界コモンズ証”. Creative Commons."
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。25 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the Public Domain Mark 1.0 deed, written with spaces"
+  - rule: latin-spacing
+    line: 159
+    text: " 全世界コモンズ証”. Creative Commons."
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the Public Domain Mark 1.0 deed, written with spaces"
+  - rule: quote-without-source
+    line: 208
+    text: CCライセンスが付与された著作物をAI学習に使用する場合、CCライセンスの条件を
+    message: 「CCライセンスが付与された著作物をAI学習に使用する場合、CCライセンスの条件を遵守する必要がないシナリオは数多く存在する」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
+    verdict: false-positive
+    note: "the quotation's source is the document cited on the line above, in the same note"
+  - rule: latin-spacing
+    line: 220
+    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。25 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: latin-spacing
+    line: 220
+    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: no-mixed-desumasu
+    line: 220
+    text: ライセンスの内容を知りたい方は https://creativecommons.
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
+  - rule: no-mixed-desumasu
+    line: 220
+    text: 本著作（CA2096）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"

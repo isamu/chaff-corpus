@@ -1,0 +1,397 @@
+id: mext-chukyo-kyoiku-katei-shimon-2014
+chaff: 0.36.0
+findings:
+  - rule: preamble-length
+    line: 7
+    text: 次に掲げる事項について，別添理由を添えて諮問します。
+    message: 最初の見出しまでに 34 段落あります（2 段落まで）
+    verdict: false-positive
+    note: "a letter-form 諮問 with no sections; the only heading is the page's contact box"
+  - rule: hankaku-kana
+    line: 19
+    text: ｢生きる力｣の育成をより一層重視する観点から見直しが行われました。特に学力につい
+    message: 半角の片仮名「｢」があります（全角は「「」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 19
+    text: ｢確かな学力｣をバランス良く育てることを目指し，教育目標や内容が見直されるととも
+    message: 半角の片仮名「｢」があります（全角は「「」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 19
+    text: ｣の育成をより一層重視する観点から見直しが行われました。特に学力については，学校
+    message: 半角の片仮名「｣」があります（全角は「」」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 19
+    text: ｣をバランス良く育てることを目指し，教育目標や内容が見直されるとともに，学級やグ
+    message: 半角の片仮名「｣」があります（全角は「」」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: max-kanji-continuous
+    line: 19
+    text: 特に学力については，学校教育法第三十条第二項に示された「基礎的な知識及び技能」，
+    message: 「学校教育法第三十条第二項」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: "a statute citation (学校教育法第三十条第二項), which cannot be split"
+  - rule: max-sentence-length
+    line: 19
+    text: 特に学力については，学校教育法第三十条第二項に示された「基礎的な知識及び技能」，
+    message: この文は 218 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 21
+    text: その一方で，我が国の子供たちについては，判断の根拠や理由を示しながら自分の考えを
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: hankaku-kana
+    line: 22
+    text: ･能力を確実に育んでいくことを目指し，未来に向けて学習指導要領等の改善を図る必要
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 24
+    text: ･コンピテンシーの育成に関する取組や，論理的思考力や表現力，探究心等を備えた人間
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 24
+    text: ･能力の育成に関連して，これまでも，例えば，OECDが提唱するキー･コンピテンシ
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: max-sentence-length
+    line: 24
+    text: 新しい時代に必要となる資質･能力の育成に関連して，これまでも，例えば，OECDが
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: clause-chain
+    line: 25
+    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 25
+    text: ･協働的に探究し，学びの成果等を表現し，更に実践に生かしていけるようにすることが
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 25
+    text: ･技能を習得するとともに，実社会や実生活の中でそれらを活用しながら，自ら課題を発
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: max-sentence-length
+    line: 25
+    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
+    message: この文は 196 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 25
+    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    text: 更に実践に生かしていけるようにすることが重要であるという視点です。
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「更に」 where the text writes 「さらに」 elsewhere"
+  - rule: teki-overuse
+    line: 25
+    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
+    message: 「は」で出した主題から述語まで 178 字あります（80 字まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 26
+    text: ･協働的に学ぶ学習（いわゆる「アクティブ・ラーニング」）や，そのための指導の方法
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 26
+    text: ･技能を定着させる上でも，また，子供たちの学習意欲を高める上でも効果的であること
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 26
+    text: ｢何を教えるか｣という知識の質や量の改善はもちろんのこと，「どのように学ぶか」と
+    message: 半角の片仮名「｢」があります（全角は「「」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 26
+    text: ｣という知識の質や量の改善はもちろんのこと，「どのように学ぶか」という，学びの質
+    message: 半角の片仮名「｣」があります（全角は「」」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: max-sentence-length
+    line: 26
+    text: そのために必要な力を子供たちに育むためには，｢何を教えるか｣という知識の質や量の
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 26
+    text: そのために必要な力を子供たちに育むためには，｢何を教えるか｣という知識の質や量の
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 32
+    text: ･内容と学習･指導方法，学習評価の在り方を一体として捉えた，新しい時代にふさわし
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 32
+    text: ･指導方法，学習評価の在り方を一体として捉えた，新しい時代にふさわしい学習指導要
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 33
+    text: ･指導方法と学習評価の充実を一体的に進めていくために求められる学習指導要領等の在
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 33
+    text: ･指導方法や，学習の成果を検証し指導改善を図るための学習評価を充実させていく観点
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 33
+    text: ･能力を子供たちに確実に育む観点から，そのために必要な学習･指導方法や，学習の成
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: request-without-deadline
+    line: 33
+    text: このように，教育内容，学習･指導方法と学習評価の充実を一体的に進めていくために求
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: "a 諮問 asks the council named at its head to deliberate; it carries no deadline by its nature"
+  - rule: hankaku-kana
+    line: 35
+    text: ･能力と，各教科等の役割や相互の関係はどのように構造化されるべきか。
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 35
+    text: ･能力をどのように捉えるか。その際，我が国の子供たちにとって今後特に重要と考えら
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: max-sentence-length
+    line: 35
+    text: その際，我が国の子供たちにとって今後特に重要と考えられる，何事にも主体的に取り組
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: ngram-repetition
+    line: 35
+    text: その際，我が国の子供たちにとって今後特に重要と考えられる，何事にも主体的に取り組
+    message: 「どのように考える」が 7 回出てきます（5 回まで）
+    verdict: false-positive
+    note: "a 諮問 lists questions for the council; 「どのように考える」 is its form"
+  - rule: hankaku-kana
+    line: 36
+    text: ･指導方法はどうあるべきか。その際，特に，現行学習指導要領で示されている言語活動
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 36
+    text: ･指導方法をどのように教育内容と関連付けて示していくべきか。
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 36
+    text: ･能力を確実に育むための学習･指導方法はどうあるべきか。その際，特に，現行学習指
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: teki-overuse
+    line: 36
+    text: その際，特に，現行学習指導要領で示されている言語活動や探究的な学習活動，社会との
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 37
+    text: ･能力を子供たちに確実に育む観点から，学習評価の在り方についてどのような改善が必
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: taigen-dome-in-prose
+    line: 37
+    text: ○　育成すべき資質･能力を子供たちに確実に育む観点から，学習評価の在り方について
+    message: 本文に体言止めが 6 文あります（4 文まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 39
+    text: ･内容の見直しについてであります。中でも特に以下の事項について，御検討をお願いし
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 39
+    text: ･科目等の在り方や，既存の教科･科目等の目標･内容の見直しについてであります。中
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 39
+    text: ･科目等の目標･内容の見直しについてであります。中でも特に以下の事項について，御
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 39
+    text: ･能力を踏まえた，新たな教科･科目等の在り方や，既存の教科･科目等の目標･内容の
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: no-doubled-joshi
+    line: 39
+    text: の教科･科目等の目標･内容の見直しについてであります。中でも特に以下の事項につい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: hankaku-kana
+    line: 42
+    text: ｢英語を使って何ができるようになるか」という観点から，四技能に係る一貫した具体的
+    message: 半角の片仮名「｢」があります（全角は「「」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: unbalanced-bracket
+    line: 42
+    text: 」という観点から，四技能に係る一貫した具体的な指標の形式で示すこと
+    message: 「」」に対応する開きがありません
+    verdict: false-positive
+    note: "the quotation opens with half-width ｢ and closes with full-width 」; the pair is there, only the widths differ (hankaku-kana flags the ｢)"
+  - rule: max-sentence-length
+    line: 47
+    text: ・今後，国民投票の投票権年齢が満18歳以上となることや，選挙権年齢についても同様
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: hankaku-kana
+    line: 49
+    text: ･判断力･表現力等を育成するための新たな教科･科目の在り方
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 49
+    text: ･科目の在り方
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 49
+    text: ･表現力等を育成するための新たな教科･科目の在り方
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: no-doubled-joshi
+    line: 50
+    text: の「総合的な学習の時間」の改善の在り方
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: "の around a quoted subject name (「総合的な学習の時間」)"
+  - rule: hankaku-kana
+    line: 52
+    text: ･科目等の在り方
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: comparative-without-baseline
+    line: 53
+    text: より円滑に接続させていくためには，どのような見直しが必要か。
+    message: 「より円滑」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: "「より円滑に」 means more smoothly than now; the baseline is the present state"
+  - rule: max-sentence-length
+    line: 54
+    text: ○　子供の体力等の現状を踏まえつつ，2020年の東京オリンピック競技大会・東京パ
+    message: この文は 158 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 54
+    text: ○　子供の体力等の現状を踏まえつつ，2020年の東京オリンピック競技大会・東京パ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 56
+    text: のある児童生徒のための各教科の改善などについて，どのように考えるべきか。
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: no-doubled-joshi
+    line: 57
+    text: の教育の充実のための方策について，関係する会議等におけるこれまでの議論の状況等を
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: no-doubled-joshi
+    line: 58
+    text: の教育課程の接続の改善を図ることについて，現在中央教育審議会で御議論いただいてい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: hankaku-kana
+    line: 60
+    text: ･マネジメントや，学習･指導方法及び評価方法の改善を支援する方策についてでありま
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 60
+    text: ･指導方法及び評価方法の改善を支援する方策についてであります。特に以下のような視
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 61
+    text: ･マネジメントを普及させていくためには，どのような支援が必要か。
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 61
+    text: ･能力を踏まえた教育課程を編成していく上で，どのような取組が求められるか。また，
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: hankaku-kana
+    line: 62
+    text: ･指導方法や，このような新しい学びに対応した教材や評価手法の今後の在り方について
+    message: 半角の片仮名「･」があります（全角は「・」）
+    verdict: correct
+    note: "a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒"
+  - rule: request-without-deadline
+    line: 64
+    text: 以上が中心的に御審議をお願いしたい事項でありますが，審議に当たっては，学校と家庭
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: "a 諮問 asks the council named at its head to deliberate; it carries no deadline by its nature"
