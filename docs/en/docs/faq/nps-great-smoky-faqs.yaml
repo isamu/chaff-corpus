@@ -1,0 +1,16 @@
+id: nps-great-smoky-faqs
+title: "National Park Service: Great Smoky Mountains National Park, Frequently Asked Questions"
+language: en
+genre: docs/faq
+format: markdown
+source:
+  url: https://www.nps.gov/grsm/faqs.htm
+  fetched: 2026-10-19
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/grsm/faqs.htm); converted to Markdown'
+redistribute: true
+sha256: 3be8bfe6a648039693130fa871ae6b64c076e26ae0361e8e9003daa3b064dac0
+notes: A park's FAQ page. The park's published contact details at the end are kept (allowlist.yaml). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

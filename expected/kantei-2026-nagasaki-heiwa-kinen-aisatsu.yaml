@@ -1,0 +1,25 @@
+id: kantei-2026-nagasaki-heiwa-kinen-aisatsu
+chaff: 0.36.0
+findings:
+  - rule: max-paragraph-length
+    line: 5
+    text: ８１年前の今日、長崎の地に投下された一発の原子爆弾により、多くの方々の貴い命が失
+    message: この段落は 20 文あります（5 文まで）
+    verdict: false-positive
+    note: 官邸のページは 1 文ごとに改行（<br>）しており、Markdown では挨拶全体が 1 段落になる
+  - rule: max-sentence-length
+    line: 13
+    text: 先般の『核兵器不拡散条約（ＮＰＴ）運用検討会議』は、厳しい国際安全保障環境の下で
+    message: この文は 101 文字あります（100 文字まで）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 16
+    text: 世界中の指導者や未来のリーダーに被爆地訪問を呼びかけ、被爆の実相に触れていただく
+    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 23
+    text: の皆様の不断のご努力により、「国際文化都市」として今日の姿を築かれた長崎市におい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: 「市民の皆様」は決まった言い方で、の の連なりを重く感じさせない
