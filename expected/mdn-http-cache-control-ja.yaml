@@ -1,0 +1,114 @@
+id: mdn-http-cache-control-ja
+chaff: 0.36.0
+findings:
+  - rule: broken-link
+    line: 51
+    text: "[`max-age`](#max-age_2)               |"
+    message: リンク「[`max-age`](#max-age_2)」が指す「#max-age_2」の見出しがこの文書にありません
+    verdict: false-positive
+    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
+  - rule: broken-link
+    line: 55
+    text: "[`no-cache`](#no-cache_2)             |"
+    message: リンク「[`no-cache`](#no-cache_2)」が指す「#no-cache_2」の見出しがこの文書にありません
+    verdict: false-positive
+    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
+  - rule: broken-link
+    line: 56
+    text: "[`no-store`](#no-store_2)             |"
+    message: リンク「[`no-store`](#no-store_2)」が指す「#no-store_2」の見出しがこの文書にありません
+    verdict: false-positive
+    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
+  - rule: broken-link
+    line: 57
+    text: "[`no-transform`](#no-transform_2)     |"
+    message: リンク「[`no-transform`](#no-transform_2)」が指す「#no-transform_2」の見出しがこの文書にありません
+    verdict: false-positive
+    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
+  - rule: broken-link
+    line: 66
+    text: "[`stale-if-error`](#stale-if-error_2) |"
+    message: リンク「[`stale-if-error`](#stale-if-error_2)」が指す「#stale-if-error_2」の見出しがこの文書にありません
+    verdict: false-positive
+    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
+  - rule: repeated-sentence-ending
+    line: 72
+    text: この節では、この記事で使用する用語を定義しています。次の用語が使用されています。
+    message: 「〜います」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: three sentences in a row end in 〜います
+  - rule: ngram-repetition
+    line: 87
+    text: ": レスポンスが[新鮮](/ja/docs/Web/HTTP/Guides/Ca"
+    message: 「ことを示します。」が 14 回出てきます（5 回まで）
+    verdict: false-positive
+    note: a reference page's directive definitions share one formula ('〜ことを示します。') by design
+  - rule: bracket-width-consistency
+    line: 121
+    text: (`max-age` に似ています)。しかし、これは共有キャッシュ特有のもので、
+    message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: bracket-width-consistency
+    line: 121
+    text: )。しかし、これは共有キャッシュ特有のもので、共有キャッシュは `s-maxag
+    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: bracket-width-consistency
+    line: 143
+    text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
+    message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 143
+    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
+    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 161
+    text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
+    message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 161
+    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
+    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 235
+    text: 静的なリソースに対する最近のベストプラクティスは、バージョン/ハッシュを URL
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 311
+    text: ) キャッシュの実装は `no-cache` に対応していないからです。最近のブ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: bracket-width-consistency
+    line: 319
+    text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
+    message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 319
+    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
+    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
+    verdict: unjudged
+  - rule: broken-link
+    line: 361
+    text: "[ブラウザーの互換性](#browser_compatibility)を参照）。"
+    message: リンク「[ブラウザーの互換性](#browser_compatibility)」が指す「#browser_compatibility」の見出しがこの文書にありません
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 403
+    text: の番号のついたバージョンのライブラリーを使用し、画像の URL にハッシュを含め
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 451
+    text: 既に中間サーバーのキャッシュに保存されているレスポンスを、クリアするためのキャッ
+    message: 「既に」と書いています（この文書はふつう「すでに」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「既に」 once where the page writes 「すでに」 three times

@@ -1,0 +1,15 @@
+id: gutenberg-blake-songs
+title: "William Blake, Songs of Innocence and of Experience (Project Gutenberg #1934)"
+language: en
+genre: literature/poetry
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/1934/pg1934.txt
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1789–1794); Project Gutenberg eBook #1934, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: 205e094b29e97c098b039f0300c374136e1f8f8125c524b3372ee8196aa05336
+notes: "The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it. The eBook's [Picture: …] placeholders for Blake's plates are kept."

@@ -1,0 +1,62 @@
+id: fr-2026-20426-prehospital-blood-rfi
+chaff: 0.36.0
+findings:
+  - rule: proper-noun-density
+    line: 1
+    text: Headings
+    message: 240 proper nouns per 1000 words (limit 200)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 6
+    text: CFR title and the number of each part th
+    message: '"CFR" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: undefined-acronym
+    line: 8
+    text: RIN which identifies each regulatory act
+    message: '"RIN" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: invisible-character
+    line: 42
+    text: ​privacy. ( printed page 63651)   Anyone
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: max-sentence-length
+    line: 42
+    text: DOT posts these comments, without editin
+    message: This sentence runs 70 words (limit 45)
+    verdict: correct
+    note: a 70-word sentence in the Privacy Act paragraph
+  - rule: undefined-acronym
+    line: 42
+    text: FDMS), which can be reviewed at https://
+    message: '"FDMS" is used without an expansion (3 such acronyms)'
+    verdict: correct
+    note: FDMS is never expanded in the notice
+  - rule: max-sentence-length
+    line: 52
+    text: FICEMS includes representatives from the
+    message: This sentence runs 98 words (limit 45)
+    verdict: correct
+    note: a 98-word sentence listing FICEMS's statutory roles
+  - rule: request-without-deadline
+    line: 60
+    text: Please provide references as appropriate
+    message: This request says neither who should do it nor by when
+    verdict: false-positive
+    note: a request for comments whose deadline is given once in the notice's DATES section
+  - rule: numbering-gap
+    line: 86
+    text: 3. What mechanisms, technical standards,
+    message: '"3." follows "3." (expected number 4)'
+    verdict: correct
+    note: "the questions are numbered 1, 2, 3, 3, 4: question 3 appears twice"
+  - rule: list-item-form-mix
+    line: 92
+    text: Do you have any additional comments rega
+    message: '"Do you have any additional comments regarding the nationwide implementation of prehospital blood transfusion programs?" opens with a verb; the other items in this list open with a noun phrase (1 of 5)'
+    verdict: false-positive
+    note: every item of the list is a question; 'Do you have ...?' is the same form as 'What ...?'

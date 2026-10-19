@@ -493,3 +493,15 @@
 - id: fsa-soudansitu-advice-angoshisan
   match: "03-3222-1061"
   reason: a self-regulatory industry association's (日本暗号資産等取引業協会) published complaint hotline, listed by the FSA page as a contact
+- id: fr-2026-19271-public-health-data-rfi
+  match: "OPHDSTPolicy@cdc.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "MadeInAmerica@omb.eop.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "202-395-1390"
+  reason: a government office's published phone number, given in the notice as its contact
+- id: fr-2026-20426-prehospital-blood-rfi
+  match: "FICEMS@dot.gov"
+  reason: a government office's role address, published in the document for the public to write to

@@ -1,0 +1,135 @@
+id: mdn-http-cookies-ja
+chaff: 0.36.0
+findings:
+  - rule: ngram-repetition
+    line: 8
+    text: ブラウザーは Cookie を保存したり、新しい Cookie を作成したり、既
+    message: 「ことができます。」が 14 回出てきます（5 回まで）
+    verdict: correct
+    note: 「ことができます。」 fourteen times in a prose guide
+  - rule: topic-predicate-distance
+    line: 8
+    text: ブラウザーは Cookie を保存したり、新しい Cookie を作成したり、既
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: stray-space
+    line: 14
+    text: " 使用して、さまざまなリクエストが同じブラウザー/ユーザーから送られたものかどう"
+    message: 助詞「を」と「使用」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。727 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: a stray space between 「を」 and 「使用して」
+  - rule: topic-predicate-distance
+    line: 14
+    text: 通常、サーバーは HTTP Cookie のコンテンツを 使用して、さまざまなリ
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 35
+    text: は 、より大量のデータを格納することができます。
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: bracket-width-consistency
+    line: 39
+    text: (およびウェブページが使用できる他のストレージ) を確認するには、Firefox
+    message: 括弧を「(」と書いています（この文書はふつう「（」。37 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: bracket-width-consistency
+    line: 39
+    text: ) を確認するには、Firefox 開発ツールの[ストレージインスペクター](h
+    message: 括弧を「)」と書いています（この文書はふつう「）」。37 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: latin-spacing
+    line: 93
+    text: Cookieも含めて、再生成して再送信する必要があります。この手法は、サードパー
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 93
+    text: も含めて、再生成して再送信する必要があります。この手法は、サードパーティがユーザ
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 128
+    text: 値を変更できません。JavaScript で Cookie を変更しない方がよい
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: orthographic-variant
+    line: 128
+    text: 方がよい理由がまだあります。例えば、Cookie を作成する際に `HttpOn
+    message: 「方」と書いています（この文書はふつう「ほう」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「方がよい」 where the page writes 「ほうが」 elsewhere
+  - rule: latin-spacing
+    line: 132
+    text: Cookieを設定し、その過程で銀行口座や e コマースのアカウントを制御できる
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 132
+    text: IDを盗み、それを他人になりすましてログインしているように見せかけるCookie
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 132
+    text: を盗み、それを他人になりすましてログインしているように見せかけるCookieを設
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 132
+    text: を設定し、その過程で銀行口座や e コマースのアカウントを制御できる可能性があり
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: broken-link
+    line: 191
+    text: '[プライバシー](#プライバシーと追跡)を保護し、{{Glossary("CSR'
+    message: リンク「[プライバシー](#プライバシーと追跡)」が指す「#プライバシーと追跡」の見出しがこの文書にありません
+    verdict: correct
+    note: "the heading is 「プライバシーとトラッキング」; the anchor #プライバシーと追跡 matches no heading"
+  - rule: topic-predicate-distance
+    line: 208
+    text: これは、例えば広告技術や分析ツールのプロバイダーなど、他のサイトに埋め込まれたサ
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 227
+    text: アプリケーションサーバーは、ユーザーが認証されているか、あるいは CSRF トー
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 236
+    text: プライバシーは、ウェブサイトを構築する上で非常に重要な考慮事項です。正しく行えば
+    message: 「非常に重要」は、中身を言わずに強調だけしています
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 242
+    text: ブラウザーのベンダーは、ユーザーがこのような動作を好まないことを知っており、その
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 257
+    text: これらの規制は、これらの管轄区域（EU とカリフォルニア州、特にカリフォルニア州
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: correct
+    note: 123 characters from 〜は to the predicate
+  - rule: latin-spacing
+    line: 268
+    text: Cookieの種類を、透明性を高めるため、また規制を遵守するために開示すべきです
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
+  - rule: latin-spacing
+    line: 268
+    text: の種類を、透明性を高めるため、また規制を遵守するために開示すべきです。例えば、[
+    message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。235 箇所のうち 10 箇所が違う）
+    verdict: correct
+    note: no space between Japanese and Latin text where the page mostly leaves one
