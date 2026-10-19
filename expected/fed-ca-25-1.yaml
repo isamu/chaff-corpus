@@ -1,0 +1,46 @@
+id: fed-ca-25-1
+chaff: 0.37.0
+findings:
+  - rule: proper-noun-density
+    line: 5
+    text: BOARD OF GOVERNORS
+    message: 307 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead and agency names make the density in a short regulatory letter
+  - rule: email-subject-length
+    line: 17
+    text: "SUBJECT:"
+    message: The subject has 83 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label runs 83 characters"
+  - rule: max-sentence-length
+    line: 21
+    text: Consistent with past practice, DCCA will
+    message: This sentence runs 32 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: The Federal Reserve Board’s Division of
+    message: This sentence runs 32 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: If supervised financial institutions hav
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 31
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
+  - rule: max-sentence-length
+    line: 34
+    text: "See November 18, 2025 press release: “Fe"
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged

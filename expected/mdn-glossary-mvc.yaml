@@ -1,0 +1,18 @@
+id: mdn-glossary-mvc
+chaff: 0.37.0
+findings:
+  - rule: vague-word-density
+    line: 24
+    text: If the state of this data changes, then
+    message: '"as needed" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 38
+    text: These actions require the model to be up
+    message: '"as appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: vague-word-density
+    line: 46
+    text: However, these days, more of the logic i
+    message: '"as required" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: correct

@@ -1,0 +1,177 @@
+id: jma-yougo-kion
+chaff: 0.37.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### 気温に関する用語"
+    message: 見出し「気温に関する用語」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: the page itself goes from h1 to h3
+  - rule: fullwidth-alnum-consistency
+    line: 7
+    text: 1.25～2.0mの大気の温度を摂氏（℃）単位で表す。度の単位に丸めるときは十分
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 7
+    text: 2.0mの大気の温度を摂氏（℃）単位で表す。度の単位に丸めるときは十分位を四捨五
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: bracket-width-consistency
+    line: 49
+    text: (高)め
+    message: 括弧を「(」と書いています（この文書はふつう「（」。96 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 49
+    text: )め
+    message: 括弧を「)」と書いています（この文書はふつう「）」。96 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 65
+    text: 5,500mの気温。
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 69
+    text: 5,000mまたは6,000mに言い換える。
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 69
+    text: 6,000mに言い換える。
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 70
+    text: 3,000、9,000mとする。
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 70
+    text: 9,000mとする。
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: hankaku-kana
+    line: 70
+    text: ､300hPaについてはそれぞれ約1500、3,000、9,000mとする。
+    message: 半角の片仮名「､」があります（全角は「、」）
+    verdict: correct
+    note: half-width ideographic commas
+  - rule: hankaku-kana
+    line: 70
+    text: ､700､300hPaについてはそれぞれ約1500、3,000、9,000mとす
+    message: 半角の片仮名「､」があります（全角は「、」）
+    verdict: correct
+    note: half-width ideographic commas
+  - rule: number-style-consistency
+    line: 70
+    what: 1500 written without a comma beside 3,000 and 9,000 in the same sentence; the page groups digits elsewhere (5,000, 5,500, 6,000)
+    verdict: missed
+  - rule: bracket-width-consistency
+    line: 79
+    text: )。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。96 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 79
+    text: )。
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: a full-width parenthesis closed by a half-width one
+  - rule: fullwidth-alnum-consistency
+    line: 83
+    text: 0時～15時、最低気温は前日21時～当日９時を対象とした値を掲載していることが多
+    message: 半角の「0」と書いています（この文書はふつう全角の「０」。55 箇所のうち 11 箇所が違う）
+    verdict: correct
+    note: a one-digit 0 half-width beside a full-width ９ in the same sentence
+  - rule: no-doubled-joshi
+    line: 87
+    text: の毎正時24回の観測値の平均。月（年）平均気温は毎日（月）の平均気温の月（年）間
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 101
+    text: 0.5～１度下がる。
+    message: 半角の「0」と書いています（この文書はふつう全角の「０」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: fullwidth-alnum-consistency
+    line: 101
+    text: 5～１度下がる。
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: unbalanced-bracket
+    line: 134
+    text: )さ」と混同して用いないこと。
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: a full-width parenthesis closed by a half-width one
+  - rule: fullwidth-alnum-consistency
+    line: 155
+    text: 5,000mには氷点下40度以下の寒気がある。
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
+    verdict: false-positive
+    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
+  - rule: tari-unpaired
+    line: 159
+    text: たり大気の状態が不安定になる。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: hankaku-kana
+    line: 179
+    text: ･････。
+    message: 半角の片仮名「･････」があります（全角は「・・・・・」）
+    verdict: correct
+    note: half-width middle dots used as an ellipsis
+  - rule: orthographic-variant
+    line: 214
+    text: 時に雨を降らせ、その後山を吹き降りて、乾燥し気温が高くなる現象。または、上空の高
+    message: 「時」と書いています（この文書はふつう「とき」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: tari-unpaired
+    line: 218
+    text: だり、下層に暖かく湿った空気が入った場合に生じることが多い。
+    message: 「だり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 268
+    text: (℃）を０度(Ｋ）とした温度体系。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。96 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: bracket-width-consistency
+    line: 268
+    text: (Ｋ）とした温度体系。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。96 箇所のうち 5 箇所が違う）
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 268
+    text: ）とした温度体系。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: half-width parentheses closed by full-width ones
+  - rule: unbalanced-bracket
+    line: 268
+    text: ）を０度(Ｋ）とした温度体系。
+    message: 「(」を「）」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: half-width parentheses closed by full-width ones
+  - rule: no-doubled-joshi
+    line: 384
+    text: の24回の観測値の平均。月（年）平均湿度は毎日（月）の平均湿度の月（年）間の平均
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 414
+    text: ･････。
+    message: 半角の片仮名「･････」があります（全角は「・・・・・」）
+    verdict: correct
+    note: half-width middle dots used as an ellipsis

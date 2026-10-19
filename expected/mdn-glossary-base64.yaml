@@ -1,0 +1,21 @@
+id: mdn-glossary-base64
+chaff: 0.37.0
+findings:
+  - rule: sentence-initial-so
+    line: 33
+    text: So, three 8-bit bytes of the input strin
+    message: 1 sentence opens with "So," (1 needed)
+    verdict: correct
+    note: a sentence opening with "So," in reference prose
+  - rule: name-variant
+    line: 54
+    text: ASCII to binary").
+    message: '"ASCII to binary" is written "binary to ASCII", with the words in another order, elsewhere in the document'
+    verdict: false-positive
+    note: '"ASCII to binary" and "binary to ASCII" are the two inverse functions (atob, btoa), not one name in two orders'
+  - rule: title-case-consistency
+    line: 61
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+    note: '"See Also" is title case; the other headings are sentence case'

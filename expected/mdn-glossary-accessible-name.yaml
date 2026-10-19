@@ -1,0 +1,14 @@
+id: mdn-glossary-accessible-name
+chaff: 0.37.0
+findings:
+  - rule: contraction-consistency
+    line: 24
+    text: While many elements don't need an access
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+    note: "\"it's\" and \"don't\" here; \"it is\" on lines 8 and 14"
+  - rule: max-paragraph-length
+    line: 24
+    text: Assistive technologies provide users wit
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct

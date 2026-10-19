@@ -1,0 +1,71 @@
+id: mdn-http-overview-ja
+chaff: 0.37.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 20
+    text: HTTP は、 {{Glossary("TCP")}} または {{Glossa
+    message: 「〜できます」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 27
+    text: ほとんどの場合、ユーザーエージェントはウェブブラウザーですが、例えば検索エンジン
+    message: 「ことができます。」が 7 回出てきます（5 回まで）
+    verdict: correct
+  - rule: orthographic-variant
+    line: 30
+    text: 様々な操作を行う、まとめて{{Glossary("Proxy_server",
+    message: 「様々」と書いています（この文書はふつう「さまざま」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 47
+    text: ウェブページを表示するため、ブラウザーはページを表す HTML 文書を読み込むた
+    message: 「〜します」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 48
+    text: )、ページに含まれるサブリソース（通常、画像や動画）に対応する追加のリクエストを
+    message: 括弧を「)」と書いています（この文書はふつう「）」。50 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 53
+    text: これは表示されているコンテンツの一部が新たなウェブページの取り込みを（通常、マウ
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: correct
+  - rule: teki-overuse
+    line: 59
+    text: サーバーは、仮想的には 1 台だけのマシンとしてしか見えませんが、実際には負荷を
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 59
+    text: サーバーは、仮想的には 1 台だけのマシンとしてしか見えませんが、実際には負荷を
+    message: 「は」で出した主題から述語まで 130 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 67
+    text: ウェブスタックは階層構造であるため、これらの処理のほとんどはトランスポート層、ネ
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: false-positive
+    note: the wa is inside a tame clause whose own predicate follows at once; the main clause has its own wa-topic
+  - rule: topic-predicate-distance
+    line: 69
+    text: これらは透過的である場合、すなわち受信したリクエストをいかなる場合も変更せずに転
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: correct
+  - rule: comparative-without-baseline
+    line: 137
+    text: より低い層で動作します。
+    message: 「より低い」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: '"a lower layer" than HTTP proxies, named in the sentence before'
+  - rule: list-item-form-mix
+    line: 215
+    text: ステータスメッセージ。ステータスコードの簡単な説明ですが、権威はありません。
+    message: 「ステータスメッセージ。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: false-positive
+    note: the item before has the same shape (a noun, then a sentence), so the list is not mixed as described
+  - rule: repeated-sentence-ending
+    line: 224
+    text: インターフェイスを使用して、クライアントは接続を開いてイベントハンドラーを確立し
+    message: 「〜します」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged

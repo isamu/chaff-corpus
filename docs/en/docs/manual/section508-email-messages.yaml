@@ -1,0 +1,16 @@
+id: section508-email-messages
+title: "Section508.gov: Accessible Email Messages"
+language: en
+genre: docs/manual
+format: markdown
+source:
+  url: https://www.section508.gov/create/email-messages/
+  fetched: 2026-10-19
+  format: html
+license:
+  name: CC0-1.0
+  url: https://github.com/GSA/Section508.gov/blob/cfc700f1a866a18a19dc0826d5961e63fee87bca/LICENSE.md
+  note: "Work of the US federal government (GSA), public domain in the US (17 U.S.C. 105) and dedicated worldwide under CC0 1.0 (LICENSE.md of GSA/Section508.gov, the site's source, at the pinned commit); Source: Section508.gov (https://www.section508.gov/create/email-messages/); converted to Markdown"
+redistribute: true
+sha256: 45b4c50563f60ec6a3a71df2c0b4158ba9ce04a34e1360cf5c4c20797191f441
+notes: The source is html; the text is source.format html converted by scripts/lib/source-format.ts, which drops the page title (in the site banner) and link-only lists.
