@@ -1,0 +1,520 @@
+id: kantei-214-policy-speech-en
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 15
+    text: In stating my determination in this rega
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 17
+    text: In dealing with the political funding is
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 19
+    text: Moreover, the three years of the Kishida
+    message: This sentence runs 43 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 21
+    text: Based on that mindset and those achievem
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 23
+    text: As we restore the trust in politics that
+    message: This sentence runs 54 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: Towards that end, we will shape Japan’s
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 25
+    text: ’s future and safeguard that future on t
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 33
+    text: As for the problem of omissions within p
+    message: This sentence runs 51 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: I give my firm pledge that in order to h
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: We must establish having each politician
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: redundant-expression
+    line: 35
+    text: We must establish having each politician
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 43
+    text: With the situation there coupling with t
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 45
+    text: alliance at the core, we will increase t
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 47
+    text: When doing so, consistent with the visio
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 49
+    text: alliance is the cornerstone of Japanese
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 51
+    text: The other day I held telephone conversat
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 53
+    text: Although challenges exist between Japan
+    message: This sentence runs 53 words (limit 25)
+    verdict: correct
+  - rule: unknown-word
+    line: 53
+    text: amidst the current strategic environment
+    message: '"amidst" is not in the dictionary; did you mean "midst"?'
+    verdict: false-positive
+    note: a real English word (amidst) missing from the dictionary
+  - rule: max-sentence-length
+    line: 55
+    text: At the same time, China is day by day in
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 55
+    text: With China, we will comprehensively prom
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 57
+    text: In this relationship, we will say to Chi
+    message: This sentence runs 41 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 59
+    text: It grieves me deeply that despite more t
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 59
+    text: The abduction of Japanese nationals, an
+    message: This sentence runs 46 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 61
+    text: In addition to returning to the starting
+    message: This sentence runs 54 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 63
+    text: While the circumstance surrounding Japan
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 65
+    text: ASEAN. We will strengthen our relations
+    message: '"ASEAN" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: ASEAN is the established name of the organisation, used as a name in speeches
+  - rule: max-paragraph-length
+    line: 67
+    text: Japan now faces the most severe and comp
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 67
+    text: This is a violation of relevant United N
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 67
+    text: ’s sovereignty. North Korea continues it
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 71
+    text: With a view to improving the living and
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 73
+    text: I will never forget that, during the las
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: empty-intensifier
+    line: 75
+    text: If we are to ensure the smooth stationin
+    message: '"absolutely critical" emphasises without saying anything'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 75
+    text: If we are to ensure the smooth stationin
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 75
+    text: We will press ahead with the constructio
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 77
+    text: We must ask if the effects of promoting
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 81
+    text: “silent emergency,” affecting the very f
+    message: Quote marks are written two ways in this document (10 curly, 10 straight)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 83
+    text: We are committed to steadily implementin
+    message: This sentence runs 48 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 83
+    text: We will listen closely to the opinions o
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 83
+    text: ’s Future Strategy and vigorously promot
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 85
+    text: It’s a stark reality that prefectures wi
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+  - rule: max-sentence-length
+    line: 85
+    text: If we look at population movement by mem
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 85
+    text: ’s a stark reality that prefectures with
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 89
+    text: To prioritize overcoming deflation, we w
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 89
+    text: We will bring about a growth-oriented ec
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 91
+    text: Our goal is to restore personal consumpt
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 93
+    text: From the perspective of economic securit
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 93
+    text: To achieve this, while transitioning fro
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 93
+    text: We aim to restructure a flexible social
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 95
+    text: My goal is to achieve an economy that pr
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 95
+    text: To this end, we will have the public and
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 101
+    text: ’s economy and our citizens' daily lives
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 103
+    text: We must ensure that wage increases that
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 105
+    text: Having experienced the 'lost three decad
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 107
+    text: In this context, we will aim for a virtu
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 107
+    text: To achieve this, the government will bol
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 107
+    text: We will steadily raise the minimum wage
+    message: This sentence runs 45 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 109
+    text: We will strengthen the competitiveness o
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 111
+    text: In addition to these measures to address
+    message: This sentence runs 52 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 111
+    text: Until we establish a positive cycle of g
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 113
+    text: Developing new regional revitalization i
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 115
+    text: This will include recovery and reconstru
+    message: This sentence runs 43 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 119
+    text: This includes rigorous energy conservati
+    message: This sentence runs 44 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 119
+    text: Towards that end, we will accelerate our
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 123
+    text: To accelerate the revitalization and gro
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 127
+    text: We aim to establish a steady flow from s
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 131
+    text: By alleviating anxiety about the future
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 133
+    text: Considering the challenges of a declinin
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 133
+    text: In doing so, we will transition to a soc
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 137
+    text: We will promote crime prevention measure
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 143
+    text: Shortly after, the earthquake-affected a
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 143
+    text: When it finally became possible to visit
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 143
+    text: ’s Day. I extend my heartfelt condolence
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 145
+    text: In Japan, one of the world's most disast
+    message: This sentence runs 42 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 147
+    text: Additionally, we will advance our prepar
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 147
+    text: To ensure thorough disaster preparedness
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 149
+    text: In the case of the Kumamoto Earthquake o
+    message: This sentence runs 42 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 149
+    text: It is essential to reach out to those su
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 151
+    text: To eliminate deaths related to, but not
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 151
+    text: We will establish a public-private partn
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 153
+    text: In response to the import restrictions o
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 153
+    text: Without the reconstruction of Fukushima,
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 159
+    text: I worked diligently on initiatives such
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 161
+    text: By pooling their collective wisdom, thes
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 161
+    text: Former Prime Minister Takeshita once sta
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 161
+    text: This involves various stakeholders, incl
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 163
+    text: We will learn from the achievements made
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 165
+    text: To further strengthen support for initia
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 167
+    text: In response to the declining birthrate,
+    message: This sentence runs 42 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 167
+    text: We will also explore the effective utili
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 169
+    text: Insofar as the agricultural, forestry, a
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 169
+    text: Under a new basic law, we will implement
+    message: This sentence runs 52 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 171
+    text: We will build a resilient forestry indus
+    message: This sentence runs 58 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 173
+    text: We will promote adding value within the
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 175
+    text: With the national government, local gove
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 179
+    text: It aims to attract many visitors, allowi
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 193
+    text: To dramatically change the decision-maki
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 193
+    text: To ensure that more women can continue p
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 197
+    text: Suicides among women increased during th
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 203
+    text: Moving forward, I look forward to constr
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 209
+    text: In 1985, a year before I became a member
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 209
+    text: By speaking the truth with courage and s
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 209
+    text: In 1985, a year before I became a member
+    message: This sentence runs 46 words (limit 25)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 213
+    text: ’s faces. Somehow, we have transformed i
+    message: The quote mark ’ here, where the document usually writes ' (7 of 39)
+    verdict: correct

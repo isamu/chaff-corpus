@@ -1,0 +1,35 @@
+id: kantei-2026-nento-shokan
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 20
+    text: 昨年十月の内閣総理大臣就任以来、高市内閣では、今の暮らしや未来への不安を希望に変
+    message: 「内閣総理大臣就任以来」は漢字が 10 字続いています（8 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 20
+    text: 昨年十月の内閣総理大臣就任以来、高市内閣では、今の暮らしや未来への不安を希望に変
+    message: この文は 127 文字あります（100 文字まで）
+    verdict: correct
+  - rule: sentence-initial-conjunction-run
+    line: 22
+    text: そして、「責任ある積極財政」に基づき、強い経済、強い外交・安全保障の実現について
+    message: 接続詞で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 24
+    text: また、ＡＳＥＡＮ関連首脳会議、ＡＺＥＣ首脳会合、日米首脳会談、ＡＰＥＣ首脳会議、
+    message: この文は 114 文字あります（100 文字まで）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 34
+    text: 「希望」を抱いてほしい。今の時代をお預かりしている私達には、「日本列島を、強く豊
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: wishes set in plain form on purpose (信じてほしい。抱いてほしい。) inside a です/ます message
+  - rule: no-mixed-desumasu
+    line: 34
+    text: 彼らに、日本の未来を信じてほしい。「希望」を抱いてほしい。今の時代をお預かりして
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: wishes set in plain form on purpose (信じてほしい。抱いてほしい。) inside a です/ます message

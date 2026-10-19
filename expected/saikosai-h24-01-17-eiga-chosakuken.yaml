@@ -1,0 +1,34 @@
+id: saikosai-h24-01-17-eiga-chosakuken
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 20
+    text: ３条が適用される結果著作権が存続している場合において，次の（1），（2）など判示
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。48 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 22
+    text: ６条が適用され，興行の時点を基準に著作権の存続期間が定まるとの解釈を示す公的見解
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。48 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: relative-date-mismatch
+    line: 43
+    text: 平成41年12月31日まで存続する。本件映画3の著作権は，平成15年法律第85号
+    message: 平成57年12月31日の38年後なら2083年12月31日のはずですが、平成41年12月31日と書かれています
+    verdict: false-positive
+    note: two parallel computations (38 years from each director's death); the second 38年後 is counted from the first result instead of its own start year
+  - rule: fullwidth-alnum-consistency
+    line: 47
+    text: ６条の適用のある団体名義の著作物に当たる。
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。48 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 48
+    text: ６条が適用される。
+    message: 全角の「６」と書いています（この文書はふつう半角の「6」。48 箇所のうち 4 箇所が違う）
+    verdict: correct
+  - rule: teki-overuse
+    line: 50
+    text: 旧法下の映画の著作者については，その全体的形成に創作的に寄与した者が誰であるかを
+    message: 一文に「〜的」が 7 個あります（2 個まで）
+    verdict: unjudged

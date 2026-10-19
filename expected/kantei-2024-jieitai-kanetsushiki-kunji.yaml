@@ -1,0 +1,49 @@
+id: kantei-2024-jieitai-kanetsushiki-kunji
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 11月9日 総理の演説・記者会見など
+    message: 半角の「11」と書いています（この文書はふつう全角の「１１」。8 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 6年11月9日 総理の演説・記者会見など
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 9日 総理の演説・記者会見など
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。7 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
+  - rule: topic-predicate-distance
+    line: 7
+    text: 冷戦の時代、自衛隊は、装備や人員の充実など防衛力の整備に努めるとともに、厳しい教
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 19
+    text: これらの取組を、国家安全保障戦略等に基づき、着実に実現をいたしてまいります。
+    message: 「国家安全保障戦略等」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
+  - rule: max-sentence-length
+    line: 21
+    text: このため、生活・勤務環境や処遇の改善のほか、若くして定年退職を迎える自衛官が、現
+    message: この文は 132 文字あります（100 文字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 24
+    text: 「事に臨んでは危険を顧みず、身をもって責務の完遂に務め、もって国民の負託にこたえ
+    message: この文は 102 文字あります（100 文字まで）
+    verdict: false-positive
+    note: a quoted line ending 。」 is not closed as a sentence, so it is counted together with the next line
+  - rule: max-sentence-length
+    line: 27
+    text: 「この服務の宣誓に、自分は今日一日、忠実であっただろうか。」
+    message: この文は 114 文字あります（100 文字まで）
+    verdict: false-positive
+    note: a quoted line ending 。」 is not closed as a sentence, so it is counted together with the next line

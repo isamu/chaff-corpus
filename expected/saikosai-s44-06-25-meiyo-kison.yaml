@@ -1,0 +1,14 @@
+id: saikosai-s44-06-25-meiyo-kison
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 17
+    text: しかし、刑法二三〇条ノ二の規定は、人格権としての個人の名誉の保護と、憲法二一条に
+    message: 「は」で出した主題から述語まで 201 字あります（200 字まで）
+    verdict: false-positive
+    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
+  - rule: fullwidth-alnum-consistency
+    line: 21
+    text: Eを申請し、第一審が、立証趣旨になんらの制限を加えることなく、同証人を採用してい
+    message: 半角の「E」と書いています（この文書はふつう全角の「Ｅ」。4 箇所のうち 1 箇所が違う）
+    verdict: correct

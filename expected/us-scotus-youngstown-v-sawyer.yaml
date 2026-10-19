@@ -1,0 +1,81 @@
+id: us-scotus-youngstown-v-sawyer
+chaff: 0.36.0
+findings:
+  - rule: max-paragraph-length
+    line: 3
+    text: In the latter part of 1951, a dispute ar
+    message: This paragraph runs 19 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 3
+    text: operationg managers for the United State
+    message: '"operationg" is not in the dictionary; did you mean "operation"?'
+    verdict: correct
+  - rule: unknown-word
+    line: 3
+    text: possessory orders, calling upon the pres
+    message: '"possessory" is not in the dictionary; did you mean "possessor"?'
+    verdict: false-positive
+    note: a real legal word (possessory) missing from the dictionary
+  - rule: date-without-year
+    line: 5
+    text: April 30 issued a preliminary injunction
+    message: "\"April 30\" has no year, and the document's dates run from 1950 to 1952, so the year is unclear"
+    verdict: false-positive
+    note: a dated sequence within one account; the year (1952) is set by the dates just before (April 4, 1952, April 8)
+  - rule: date-without-year
+    line: 5
+    text: May 12. 343 U.S. 937, 72 S.Ct. 775.
+    message: "\"May 12\" has no year, and the document's dates run from 1950 to 1952, so the year is unclear"
+    verdict: false-positive
+    note: a dated sequence within one account; the year (1952) is set by the dates just before (April 4, 1952, April 8)
+  - rule: date-without-year
+    line: 5
+    text: May 3 and set the cause for argument on
+    message: "\"May 3\" has no year, and the document's dates run from 1950 to 1952, so the year is unclear"
+    verdict: false-positive
+    note: a dated sequence within one account; the year (1952) is set by the dates just before (April 4, 1952, April 8)
+  - rule: max-paragraph-length
+    line: 9
+    text: It is urged that there were nonconstitut
+    message: This paragraph runs 17 sentences (limit 12)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 11
+    text: "  However, the Government admits that th"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (3 of 50)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 13
+    text: "  Apparently it was thought that the tec"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (3 of 50)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 13
+    text: "  Consequently, the plan Congress adopte"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (3 of 50)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 19
+    text: tninks wise and the vetoing of laws he t
+    message: '"tninks" is not in the dictionary; did you mean "thinks"?'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 21
+    text: law-making power of Congress to presiden
+    message: '"law-making" here, where the document usually writes "lawmaking" (1 of 3)'
+    verdict: correct
+  - rule: oxford-comma-consistency
+    line: 25
+    text: It would do no good to recall the histor
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+  - rule: empty-section
+    line: 77
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 25
+    what: '"law making" (two words) where the opinion writes "lawmaking" twice and "law-making" once; the spaced form is not compared'
+    verdict: missed
