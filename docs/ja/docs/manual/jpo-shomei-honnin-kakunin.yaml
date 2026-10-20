@@ -1,0 +1,16 @@
+id: jpo-shomei-honnin-kakunin
+title: "特許庁: 署名の本人確認措置について"
+language: ja
+genre: docs/manual
+format: markdown
+source:
+  url: https://web.archive.org/web/20250917184630id_/https://www.jpo.go.jp/system/process/shutugan/madoguchi/info/shomei_kakunin.html
+  fetched: 2026-10-20
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.jpo.go.jp/toppage/about/index.html
+  note: "特許庁ウェブサイトのコンテンツは公共データ利用規約（第1.0版）（PDL1.0）による（「このサイトについて」https://www.jpo.go.jp/toppage/about/index.html）; 出典：特許庁ウェブサイト（https://www.jpo.go.jp/system/process/shutugan/madoguchi/info/shomei_kakunin.html）を加工して作成 (converted to Markdown)"
+redistribute: true
+sha256: 71eb950745811f1d91b84532dca66767372f9a93f2b369c0332d2ede74e12296
+notes: "The text is source.format html converted with the corpus converter as amended by isamu/chaff-corpus#53 (isamu/lab#1658, #1663). www.jpo.go.jp answers curl with an AWS WAF JavaScript challenge, so the Wayback snapshot is pinned. "

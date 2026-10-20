@@ -1,0 +1,91 @@
+id: fomc-minutes-2026-07
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 5
+    text: FOMC Minutes
+    message: '"FOMC" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the page's heading "Federal Open Market Committee" spells out FOMC two lines above; a site label
+  - rule: adverb-overuse
+    line: 11
+    text: July 28, 2026, at 10:00 a.m. and continu
+    message: 18 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
+    text: Market outreach and written responses to
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 21
+    text: S&P 500 was down marginally over the int
+    message: '"S&P" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: S&P 500 is the name of an index, not an acronym to expand
+  - rule: max-paragraph-length
+    line: 35
+    text: Total consumer price inflation—as measur
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: Based on data from the consumer and prod
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: Both total and core inflation were highe
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 39
+    text: Available indicators suggested that real
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 47
+    text: Over the intermeeting period, both the m
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 49
+    text: VIX—a forward-looking measure of near-te
+    message: '"VIX" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the VIX is explained by the apposition that follows the dash
+  - rule: max-paragraph-length
+    line: 79
+    text: Participants acknowledged that inflation
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 83
+    text: A couple of participants reported that t
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 85
+    text: Some participants noted that productivit
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 89
+    text: Participants assessed that labor market
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 93
+    text: Participants generally observed that eco
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 97
+    text: In their discussion of financial stabili
+    message: This paragraph runs 11 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 99
+    text: In their consideration of monetary polic
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct

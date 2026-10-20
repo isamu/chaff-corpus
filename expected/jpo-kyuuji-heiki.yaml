@@ -1,0 +1,201 @@
+id: jpo-kyuuji-heiki
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 10
+    text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
+    message: この文は 202 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-ten
+    line: 10
+    text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 10
+    text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
+    message: 「は」で出した主題から述語まで 187 字あります（80 字まで）
+    verdict: correct
+  - rule: wordy-phrase
+    line: 16
+    text: 特許庁に提出する全ての書類を対象に、発明者、出願人、審判当事者等の氏名欄において
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 17
+    text: 併記可能な旧氏とは、住民基本台帳法施行令第30条の13に規定する旧氏です。
+    message: 「住民基本台帳法施行令」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the title of a cabinet order (住民基本台帳法施行令)
+  - rule: list-item-form-mix
+    line: 19
+    text: 記載例（願書）
+    message: |-
+      「記載例（願書）
+      【特許出願人】
+      【住所又は居所】　東京都千代田区霞が関3-4-3
+      【氏名又は名称】　特許（実用）　太郎」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
+    verdict: false-positive
+    note: a label item (記載例) that introduces a form example, not a sentence item
+  - rule: use-before-definition
+    line: 19
+    text: 願書）
+    message: 「願書」を、28 行目の定義より前で使っています
+    verdict: correct
+    note: 「願書」 is used in a label at line 19 and defined at line 28
+  - rule: bracket-nesting
+    line: 28
+    text: 発明者等の氏名について旧氏を併記したい場合は、特許願（実用新案登録願、意匠登録願
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+  - rule: ngram-repetition
+    line: 28
+    text: 発明者等の氏名について旧氏を併記したい場合は、特許願（実用新案登録願、意匠登録願
+    message: 「旧氏を併記した氏」が 6 回出てきます（5 回まで）
+    verdict: false-positive
+    note: the page's subject phrase (旧氏を併記した氏名), repeated because it is what the page is about
+  - rule: unfilled-placeholder
+    line: 28
+    text: 【氏名】に旧氏を併記した氏名を記載してください。
+    message: 「【氏名】」が埋まっていません
+    verdict: false-positive
+    note: 【氏名】 is the name of a form field in a filing (【】 is the filing format), not a placeholder
+  - rule: bracket-nesting
+    line: 34
+    text: （当該氏名（名称）変更届の届出と同時に願書等を提出する場合には、なるべく、願書等
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 35
+    text: ＨＰサイト「出願の事前手続様式一覧 」）
+    message: 全角の「ＨＰ」と書いています（この文書はふつう半角の「HP」。25 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: full-width ＨＰ once against half-width elsewhere
+  - rule: list-item-form-mix
+    line: 35
+    text: 氏名（名称）変更届様式（特許庁ＨＰサイト「出願の事前手続様式一覧 」）
+    message: 「氏名（名称）変更届様式（特許庁ＨＰサイト「出願の事前手続様式一覧 」）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
+    verdict: false-positive
+    note: a link item (a form's name) in a list of instructions
+  - rule: max-kanji-continuous
+    line: 42
+    text: 特許（登録）原簿の権利者の氏名について旧氏を併記したい場合は、各特許（登録）原簿
+    message: 「特許登録令施行規則」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: the title of a cabinet order (特許登録令施行規則)
+  - rule: max-kanji-continuous
+    line: 44
+    text: ［当事者系審判請求人］［異議申立人］
+    message: 「当事者系審判請求人」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: a fixed legal term for a party (当事者系審判請求人)
+  - rule: max-kanji-continuous
+    line: 46
+    text: 当事者系審判請求人等の氏名について旧氏を併記したい場合は、審判請求書の「氏名又は
+    message: 「当事者系審判請求人等」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: a fixed legal term for a party (当事者系審判請求人) with 等
+  - rule: orthographic-variant
+    line: 48
+    text: 毎に「氏名（名称）変更届」（特許法施行規則　様式第6）の手続をしてください。
+    message: 「毎」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「毎」 once against 「ごと」 elsewhere
+  - rule: max-kanji-continuous
+    line: 50
+    text: ［当事者系審判被請求人］［異議被申立人（権利者）］
+    message: 「当事者系審判被請求人」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: a fixed legal term for a party (当事者系審判被請求人)
+  - rule: max-kanji-continuous
+    line: 52
+    text: 無効審判（異議申立）等の被請求人（権利者）が、審判事件（異議申立）の書類において
+    message: 「特許登録令施行規則」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: the title of a cabinet order (特許登録令施行規則)
+  - rule: list-item-form-mix
+    line: 69
+    text: 記載例（手続補正書）
+    message: 「記載例（手続補正書）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
+    verdict: false-positive
+    note: a label item (記載例) that introduces a form example, not a sentence item
+  - rule: unfilled-placeholder
+    line: 77
+    text: 【氏名】　特許（実用）　太郎
+    message: 「【氏名】」が埋まっていません
+    verdict: false-positive
+    note: 【氏名】 is a form field in a filing example with its value filled in
+  - rule: title-length
+    line: 84
+    text: "### Q3-2：出願した後に、婚姻により発明者等の氏名が変更になりましたが、旧"
+    message: 見出し「Q3-2：出願した後に、婚姻により発明者等の氏名が変更になりましたが、旧氏併記した氏名へ補正することはできますか。」は 55 文字あります（40 文字まで）
+    verdict: false-positive
+    note: an FAQ question used as a heading
+  - rule: title-length
+    line: 88
+    text: "### Q4：書類の氏名欄に旧氏併記の記載を行うために旧氏を証明する書類をあわせ"
+    message: 見出し「Q4：書類の氏名欄に旧氏併記の記載を行うために旧氏を証明する書類をあわせて提出する必要がありますか。」は 50 文字あります（40 文字まで）
+    verdict: false-positive
+    note: an FAQ question used as a heading
+  - rule: max-kanji-continuous
+    line: 94
+    text: A５：住民票の写し、マイナンバーカード、運転免許証のような公的証明書において記載
+    message: 「住民基本台帳法施行令」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the title of a cabinet order (住民基本台帳法施行令)
+  - rule: no-doubled-joshi
+    line: 107
+    text: の代表者の氏名の記載も、同様に扱われます。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: title-length
+    line: 117
+    text: "### Q9-2：PCT国際出願にスペースを使用して旧氏を併記した場合、当該出願"
+    message: 見出し「Q9-2：PCT国際出願にスペースを使用して旧氏を併記した場合、当該出願の日本への国内移行の際、国内書面にはどのように記載しますか。」は 63 文字あります（40 文字まで）
+    verdict: false-positive
+    note: an FAQ question used as a heading
+  - rule: wordy-phrase
+    line: 119
+    text: A9-2：国内書面には、戸籍上の氏名又は旧氏を併記した氏名について記載することが
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 121
+    text: 例：発明者○○（○○）　○○の氏名について、国際段階においては戸籍上の氏名を記載
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: an example of what to write in the 【その他】 field, in the plain style a filing uses
+  - rule: title-length
+    line: 123
+    text: "### Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出"
+    message: 見出し「Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出願）についても旧氏を併記することは可能ですか。」は 58 文字あります（40 文字まで）
+    verdict: false-positive
+    note: an FAQ question used as a heading
+  - rule: max-kanji-continuous
+    line: 138
+    text: 【特許】出願手続に関すること
+    message: 「方式審査室第三担当」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: the name of a JPO office (方式審査室第三担当)
+  - rule: latin-spacing
+    line: 184
+    text: " 2715"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。12 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「内線 2715」 with a space against 「内線2764」 elsewhere
+  - rule: date-format-consistency
+    line: 192
+    text: 2021年10月1日]
+    message: 日付「2021年10月1日」の書き方が、この文書のほかの日付（「令和3年9月30日」など 3 箇所）と違います
+    verdict: false-positive
+    note: the site footer's update date is in the Western calendar by the site's convention; the body's dates are 令和
+  - rule: unbalanced-bracket
+    line: 192
+    text: "]"
+    message: 「［」を「]」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: ［ closed by a half-width ]
+  - rule: fullwidth-alnum-consistency
+    line: 92
+    what: "Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same"
+    verdict: missed

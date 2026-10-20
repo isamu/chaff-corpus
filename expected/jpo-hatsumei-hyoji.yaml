@@ -1,0 +1,28 @@
+id: jpo-hatsumei-hyoji
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 10
+    text: 発明者の表示については、特許法第36条第1項（同法第184条の5第1項）において
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+  - rule: no-doubled-joshi
+    line: 12
+    text: の次の規定の内容とも整合します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 18
+    text: すなわち、発明者は特許を受ける権利を発明の完成と同時に有する主体であり、特許を受
+    message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 20
+    text: 以上のような解釈及び上記各規定の内容との整合性の観点から、発明者の表示は、自然人
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 26
+    text: 願書等の記載事項に不備があるものとして、手続に方式上の違反がある場合に該当するこ
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct

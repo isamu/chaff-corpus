@@ -1,0 +1,99 @@
+id: usc-44-3502-paperwork-definitions
+chaff: 0.36.0
+findings:
+  - rule: hyphen-as-dash
+    line: 5
+    text: " - FEDERAL INFORMATION POLICY"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: a spaced hyphen separating a Code division label from its name (PART I - TITLE), the citation header's own convention
+  - rule: no-em-dash
+    line: 11
+    text: —
+    message: 9 dashes per 1000 words (limit 8)
+    verdict: false-positive
+    note: statutory drafting introduces each enumeration with an em dash ("shall—"); the dashes are the form, not a style choice
+  - rule: unused-definition
+    line: 53
+    text: '"information resources management" means'
+    message: '"information resources management" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 55
+    text: '"information system" means a discrete se'
+    message: '"information system" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 61
+    text: '"practical utility" means the ability of'
+    message: '"practical utility" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 63
+    text: '"public information" means any informati'
+    message: '"public information" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 77
+    text: '"comprehensive data inventory" means the'
+    message: '"comprehensive data inventory" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 85
+    text: '"metadata" means structural or descripti'
+    message: '"metadata" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 87
+    text: '"open Government data asset" means a pub'
+    message: '"open Government data asset" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 97
+    text: '"open license" means a legal guarantee t'
+    message: '"open license" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: unused-definition
+    line: 105
+    text: '"statistical laws" means subchapter III'
+    message: '"statistical laws" is defined but never used'
+    verdict: false-positive
+    note: a definitions section that serves the whole subchapter (44 U.S.C. 3501–3521); the term is used in other sections, outside this document
+  - rule: undefined-acronym
+    line: 107
+    text: LVI, §5605(a), Feb. 10, 1996, 110 Stat.
+    message: '"LVI" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
+  - rule: undefined-acronym
+    line: 107
+    text: VI, §604(e), Dec. 20, 2006, 120 Stat. 32
+    message: '"VI" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
+  - rule: undefined-acronym
+    line: 111
+    text: VII, §744(e), Aug. 9, 1989, 103 Stat. 43
+    message: '"VII" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
+  - rule: undefined-acronym
+    line: 111
+    text: VIII, §812], Oct. 18, 1986, 100 Stat. 17
+    message: '"VIII" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
+  - rule: undefined-acronym
+    line: 113
+    text: IV, §409(a), Nov. 16, 1973, 87 Stat. 593
+    message: '"IV" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym

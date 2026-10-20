@@ -520,3 +520,36 @@
 - id: mext-chukyo-koto-kyoiku-shimon-2023
   match: "03-6734-3332"
   reason: the published direct line of a MEXT office (高等教育局高等教育企画課高等教育政策室), the page's お問合せ先
+- id: jpo-denshika-tesuryo
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-hatsumei-hyoji
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-kyuuji-heiki
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-shomei-honnin-kakunin
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1120@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1200@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1300@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1360@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1670@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA6B00@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-yuusou-tetsuzuki
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
