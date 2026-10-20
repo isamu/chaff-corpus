@@ -1,0 +1,57 @@
+id: aozora-kishida-renai-kyofubyo
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "#### 第一場"
+    message: 見出し「第一場」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: false-positive
+    note: 青空文庫's markup puts the author as h2 and each scene heading (中見出し) as h4; the work has no level between
+  - rule: repeated-sentence-ending
+    line: 68
+    text: あれは向うが悪いんです。僕に手を持つて泳がせてくれつて云ふから手を持つて泳がせて
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's spoken excuse; the んです ending is the character's voice
+  - rule: clause-chain
+    line: 112
+    text: それで、どうかして、自分も男であることを忘れ、対手も女であることを忘れて、しかも
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's hesitant explanation in one breath; clause count is the author's choice in dialogue
+  - rule: max-ten
+    line: 112
+    text: それで、どうかして、自分も男であることを忘れ、対手も女であることを忘れて、しかも
+    message: 一文に読点が 12 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's hesitant explanation in one breath; commas are the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 148
+    text: 独身が冒険だと云はれゝばしかたがないが、少くとも独身を利用することは慎しんでゐる
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's argued speech; the のです/んです ending is the character's voice
+  - rule: repeated-sentence-ending
+    line: 234
+    text: さういふ意味ぢやないんです。僕達二人のことについては、もうこれ以上いろんな問題に
+    message: 「〜です」で終わる文が 6 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's long excuse; the んです/のです ending is the character's voice
+  - rule: clause-chain
+    line: 368
+    text: 僕も昨夜迄は知らずにゐたんだが、今迄、自分を愛してゐると口に出して云つた男には、
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's spoken account; clause count is the author's choice in dialogue
+  - rule: clause-chain
+    line: 388
+    text: （間）見ると、女が一人、ハンカチを眼にあて、啜り泣きをしてゐる、轟く胸を押し鎮め
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's narrated scene in one breath; clause count is the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 502
+    text: 僕だつたら、もう少し、彼女の玩具になつてゐてやるよ。初めから逃げるかはりに、見事
+    message: 「〜やるよ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a deliberate triplet (…てやるよ ×3) in a character's taunt

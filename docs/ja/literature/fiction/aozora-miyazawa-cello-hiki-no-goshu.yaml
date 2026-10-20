@@ -1,0 +1,15 @@
+id: aozora-miyazawa-cello-hiki-no-goshu
+title: "宮沢賢治「セロ弾きのゴーシュ」（青空文庫）"
+language: ja
+genre: literature/fiction
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000081/files/470_15407.html
+  fetched: 2026-10-20
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1933, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 80b923f6380ff9d8281d3db1a5c91a53b7fc995c3672c8817984485f21fff322
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (4baffd590), which drops 青空文庫's colophon (底本, input and proofreading credits) and the transcriber's ［＃…］ notes. The work has no ［＃…］ input notes."

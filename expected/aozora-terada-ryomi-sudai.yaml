@@ -1,0 +1,51 @@
+id: aozora-terada-ryomi-sudai
+chaff: 0.36.0
+findings:
+  - rule: demonstrative-opener-run
+    line: 5
+    text: そのせいでもあろうか、暑さや寒さの記憶に比べて涼しさの記憶はどうもいったいに希薄
+    message: 「その」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: それはとにかく is a connective (be that as it may), not a pointer back; the run is the essayist's style
+  - rule: repeated-sentence-ending
+    line: 6
+    text: 宿屋の二階の縁側にその時代にはまだ珍しい白いペンキ塗りの欄干があって、その下は中
+    message: 「〜いた」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a remembered scene described in the past progressive (…ていた); the endings are the essayist's choice
+  - rule: demonstrative-opener-run
+    line: 9
+    text: この結果によると、太平洋岸や瀬戸内海沿岸の多くの場所では、いわゆる陸軟風と季節的
+    message: 「この」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: それはとにかく is a connective (be that as it may), not a pointer back; the run is the essayist's style
+  - rule: repeated-sentence-ending
+    line: 12
+    text: これだけの条件をそのままに全部具備した国土は日本のほかにはどこにもないはずである
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: an essay written in the である style; the endings are the essayist's choice
+  - rule: teki-overuse
+    line: 12
+    text: しかし「涼しさは暑さとつめたさとが適当なる時間的空間的週期をもって交代する時に生
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: false-positive
+    note: 時間的空間的 is one paired technical term in a physicist's essay; the 的 count is the author's choice
+  - rule: clause-chain
+    line: 25
+    text: 自分なども時々だいじな会議の日を忘れて遊びに出たり、受け持ちの講義の時間を忘れて
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: an essayist's self-deprecating list (…忘れて遊びに出たり、…没頭していたり); clause count is the author's choice
+  - rule: repeated-sentence-ending
+    line: 25
+    text: たとえば収賄の嫌疑で予審中でありながら○○議員の候補に立つ人や、それをまた最も優
+    message: 「〜である」で終わる文が 5 文続いています（2 文まで）
+    verdict: false-positive
+    note: an essay written in the である style; the endings are the essayist's choice
+  - rule: clause-chain
+    line: 26
+    text: 友人の話であるが、百貨店の食堂へはいって食卓を見回し、だれかの食い残した皿が見つ
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: false-positive
+    note: an anecdote told in one sentence; clause count is the essayist's choice

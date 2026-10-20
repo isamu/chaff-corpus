@@ -1,0 +1,15 @@
+id: aozora-dazai-kakekomi-uttae
+title: "太宰治「駈込み訴え」（青空文庫）"
+language: ja
+genre: literature/fiction
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000035/files/277_33098.html
+  fetched: 2026-10-20
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1948, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: f288459e9df60fb4a8576e8a0a8019483e9b77f32a5f7a86f3735dc4e6e81185
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (4baffd590), which drops 青空文庫's colophon (底本, input and proofreading credits) and the transcriber's ［＃…］ notes. The work has no ［＃…］ input notes."

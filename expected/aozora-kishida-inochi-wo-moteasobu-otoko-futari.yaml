@@ -1,0 +1,117 @@
+id: aozora-kishida-inochi-wo-moteasobu-otoko-futari
+chaff: 0.36.0
+findings:
+  - rule: max-ten
+    line: 48
+    text: 君の云はれることは、どうもよくわかりませんが、さういふ意味でなく、僕は、死といふ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's comma-paced speech in a play; sentence length is the author's choice in dialogue
+  - rule: topic-predicate-distance
+    line: 48
+    text: 君の云はれることは、どうもよくわかりませんが、さういふ意味でなく、僕は、死といふ
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic 君の云はれることは has its predicate (わかりません) at once; the distance is taken to a later clause's predicate
+  - rule: repeated-sentence-ending
+    line: 50
+    text: どうせ自分は意気地なしだ。人生の敗残者だ。運命の犠牲者だ。さう思へばこそ……。
+    message: 「〜だ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a deliberate triplet of self-description (意気地なしだ。敗残者だ。犠牲者だ。) in a character's speech
+  - rule: repeated-sentence-ending
+    line: 84
+    text: 僕は商売人ぢやないんです。応用化学の研究をしてゐる、つまり、学者なんです。人造ダ
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's spoken explanation; the んです ending is the character's voice
+  - rule: adversative-ga-repeat
+    line: 128
+    text: 八歳の時に両親を失くして、伯父にあたる――これも名前を云へば御承知かも知れません
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: both が are prefatory (御承知かも知れませんが、引取られたのですが、そこに…), not adversative
+  - rule: repeated-sentence-ending
+    line: 128
+    text: 僕も、かう見えて、人一倍、物事を考へるたちなんです。僕は俳優です、まあ名前を云へ
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's deliberate repetition (俳優です … 俳優なんです … 俳優なんです) in a play
+  - rule: clause-chain
+    line: 144
+    text: 今から考へると、なぜ、その時、すぐに、役者なんか止して、これ御覧と云つてやらなか
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's long confession in one breath; clause count is the author's choice in dialogue
+  - rule: max-ten
+    line: 144
+    text: その女優が、一座の座頭と、名を云へば御承知でせう、然し、それは云ひますまい、その
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's comma-paced speech in a play; sentence length is the author's choice in dialogue
+  - rule: max-ten
+    line: 144
+    text: 今から考へると、なぜ、その時、すぐに、役者なんか止して、これ御覧と云つてやらなか
+    message: 一文に読点が 18 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's confession run on through ……; sentence length is the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 144
+    text: そんなことは絶対にないんです。それを苦にして、つまり、ほんとだと思つて、日夜煩悶
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's spoken account; the んです/のです ending is the character's voice
+  - rule: repeated-sentence-ending
+    line: 183
+    text: 殊に、芸術家と云へば、仕事そのものが恋人ぢやないんですか。まあ、さう云つたやうな
+    message: 「〜ですか」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character pressing with rhetorical questions (…ぢやないんですか) on purpose
+  - rule: repeated-sentence-ending
+    line: 219
+    text: やつたさ、やつたけれど、早すぎたんだ。正確に云へば、勢をつけ過ぎたんだ。線路の向
+    message: 「〜だ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's breathless report (…たんだ。…たんだ。…だんだ。) in a play
+  - rule: max-ten
+    line: 307
+    text: いゝえ、それが、僕の手を握つたんです（声をあげて泣く）か、か、堪忍、堪忍、して頂
+    message: 一文に読点が 11 個あります（6 個まで）
+    verdict: false-positive
+    note: commas mark a sobbing character's stammer (か、か、堪忍、堪忍); a stage direction without 。 is read into the same sentence
+  - rule: max-ten
+    line: 313
+    text: 僕が、許嫁の心持を忖度するにしても、考へやうによつては、もつと、積極的に、有利に
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's comma-paced speech in a play; sentence length is the author's choice in dialogue
+  - rule: max-ten
+    line: 327
+    text: 一度或る女の、温い心に触れたら、その女が、どんなに冷酷な態度を示さうと、男の心は
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's comma-paced speech in a play; sentence length is the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 337
+    text: あの苺一つで、口が一杯になるらしいんです。『サンキユー』が、時とすると『チヤンピ
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's spoken reminiscence; the んです ending is the character's voice
+  - rule: max-ten
+    line: 357
+    text: 今夜は、偶然、君といふ人に会つて、いろいろ話をしたが、兎に角、死ぬといふことは理
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's comma-paced speech in a play; sentence length is the author's choice in dialogue
+  - rule: topic-predicate-distance
+    line: 357
+    text: 今夜は、偶然、君といふ人に会つて、いろいろ話をしたが、兎に角、死ぬといふことは理
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: false-positive
+    note: the topic 今夜は has its predicate (話をした) close by; the distance is taken to a later clause's predicate
+  - rule: clause-chain
+    line: 401
+    text: （相手の手を振りはらつて、後ろへ廻り、腰に手をかけて土手の上に押し上げながら）愚
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: the clauses are in the stage direction in （） that opens the line, read as one sentence with the dialogue

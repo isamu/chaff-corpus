@@ -1,0 +1,15 @@
+id: gutenberg-frost-north-of-boston
+title: "Robert Frost, North of Boston (Project Gutenberg #3026)"
+language: en
+genre: literature/poetry
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/3026/pg3026.txt
+  fetched: 2026-10-20
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1914); Project Gutenberg eBook #3026, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: d9c4892eb5ed5fd57fb909fb31cf6923ca473a986736cd37482422b6e3638db8
+notes: "The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it."
