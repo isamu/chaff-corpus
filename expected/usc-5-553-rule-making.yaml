@@ -1,0 +1,57 @@
+id: usc-5-553-rule-making
+chaff: 0.36.0
+findings:
+  - rule: hyphen-as-dash
+    line: 4
+    text: " - THE AGENCIES GENERALLY"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: a spaced hyphen separating a Code division label from its name (PART I - TITLE), the citation header's own convention
+  - rule: hyphen-as-dash
+    line: 6
+    text: " - ADMINISTRATIVE PROCEDURE"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: a spaced hyphen separating a Code division label from its name (PART I - TITLE), the citation header's own convention
+  - rule: dangling-reference
+    line: 34
+    text: 557 of this title apply instead of this
+    message: '"557" (address 557) is not in this document'
+    verdict: false-positive
+    note: a section of a Public Law in a source credit or amendment note, outside this one-section document
+  - rule: dangling-reference
+    line: 34
+    text: sections 556 and 557 of this title apply
+    message: '"sections 556" (address 556) is not in this document'
+    verdict: false-positive
+    note: a section of another part of the U.S. Code or of another Act, outside this one-section document
+  - rule: dangling-reference
+    line: 46
+    text: §2, July 25, 2023, 137 Stat. 55.)
+    message: '"§2" (address 2) is not in this document'
+    verdict: false-positive
+    note: a section of a Public Law in a source credit or amendment note, outside this one-section document
+  - rule: dangling-reference
+    line: 52
+    text: §4, 60 Stat. 238.
+    message: '"§4" (address 4) is not in this document'
+    verdict: false-positive
+    note: a section of a Public Law in a source credit or amendment note, outside this one-section document
+  - rule: dangling-reference
+    line: 58
+    text: 557 of this title apply instead of this
+    message: '"557" (address 557) is not in this document'
+    verdict: false-positive
+    note: a section of a Public Law in a source credit or amendment note, outside this one-section document
+  - rule: dangling-reference
+    line: 58
+    text: sections 556 and 557 of this title apply
+    message: '"sections 556" (address 556) is not in this document'
+    verdict: false-positive
+    note: a section of another part of the U.S. Code or of another Act, outside this one-section document
+  - rule: dangling-reference
+    line: 76
+    text: section 601 of this title.
+    message: '"section 601" (address 601) is not in this document'
+    verdict: false-positive
+    note: a section of another part of the U.S. Code or of another Act, outside this one-section document
