@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/scripts/kokkai-markdown.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/scripts/kokkai-markdown.ts (d9cff282); a fetched text must convert exactly as when it was judged.
 // A meeting of the Diet as the 国会会議録検索システム API serves it (kokkai.ndl.go.jp/api/meeting?issueID=…&
 // recordPacking=json) as plain Markdown: the meeting's name as a heading, then every speech in order, each line of a
 // speech a paragraph, as the printed minutes set them. The "会議録情報" record (the roster of members present and the
@@ -31,8 +31,11 @@ const isMeeting = (value: unknown): value is Meeting =>
 
 const meetingsOf = (data: unknown): Meeting[] => (isRecord(data) && Array.isArray(data["meetingRecord"]) ? data["meetingRecord"].filter(isMeeting) : []);
 
-/** A line of box-drawing characters only (─────), the minutes' divider between items. */
-const RULE_LINE = new RegExp(String.raw`^[─-╿]+$`, "u");
+/**
+ * A line of box-drawing characters only (─────), or of horizontal bars (―――――, U+2015; ———, U+2014): the minutes'
+ * divider between items. One bar alone is left, as it may be a speech's own line.
+ */
+const RULE_LINE = new RegExp(String.raw`^(?:[─-╿]+|[―—]{3,})$`, "u");
 
 const isRuleLine = (line: string): boolean => RULE_LINE.test(line);
 

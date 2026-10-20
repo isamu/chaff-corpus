@@ -12,5 +12,5 @@ license:
   url: https://kokkai.ndl.go.jp/api/meeting?issueID=122103895X00320260629&recordPacking=json
   note: Each speech's copyright belongs to its speaker (国会会議録検索システム 利用条件); URL only
 redistribute: false
-sha256: 0c916e0259367374136ecf16c814cc654b1f185a546e9cce874d73ceee41ded0
+sha256: dee3366f36b4b301312fd3bf470035270914fc7ec4fb9c8777e51b0fd2e7c50d
 notes: Speakers are members of the Diet and government officials only (the chair, members, the Minister of State and two ministry officials); no 参考人, 公述人 or 証人 (checked on every speechRecord's speakerRole). The source is kokkai; the text is source.format kokkai converted by scripts/lib/source-format.ts.
