@@ -147,7 +147,7 @@ Establishing and maintaining standard operating procedures (SOPs) ensures that S
 - Determine the channels through which users can submit accessibility inquiries—for example: email, web form, phone call, chat, or an internal ticketing system.
 - Document all relevant details for the requestor to provide so staff can assess and respond effectively; this may include user contact information, platform details, any assistive technology used, issue description, and criticality of issue.
 - Set a standard timeline and template for confirmation of issue submission.
--  Sample notification template:
+- Sample notification template:
 
 Subject: Accessibility Request Received
 
@@ -202,4 +202,4 @@ Body: Thank you for contacting the Section 508 Help Desk. Your request [#12345] 
 
 ## Resources
 
-Reviewed/Updated:  June 2026
+Reviewed/Updated: June 2026

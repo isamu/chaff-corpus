@@ -18,15 +18,15 @@ Last updated:
 
 Show all updates
 
--  26 May 2022
+- 26 May 2022
 
 The table at paragraph 3.2 has been updated to remove the 'Further information' on 'The total amount of VAT chargeable, expressed in sterling' as it is no longer relevant.
 
--  31 December 2020
+- 31 December 2020
 
 This page has been updated because the Brexit transition period has ended.
 
--  19 May 2015
+- 19 May 2015
 
 First published.
 

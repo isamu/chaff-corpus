@@ -128,7 +128,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: spelling-consistency
     line: 246
-    text: organizations.  Business Ethics Quarterl
+    text: organizations. Business Ethics Quarterly
     message: '"organizations" here, where the document usually spells it "organisations" (1 of 36)'
     verdict: false-positive
     note: US spelling inside a cited work's title; the paper's own prose is consistent
@@ -253,7 +253,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: dangling-reference
     line: 279
-    text: "Article 81.  External Links: Document  C"
+    text: "Article 81. External Links: Document Cit"
     message: '"Article 81" (address 81) is not in this document'
     verdict: false-positive
     note: "'Article 81' is a cited journal article number, not an address in this paper"

@@ -25,7 +25,7 @@ If you’re a part-time worker, you must get at least the same hourly pay rate a
 
 Knowing how to work out your weekly pay is important because it’s used to calculate how much you should get for:
 
--  redundancy pay and pay during time off for job-hunting if you’re made redundant
+- redundancy pay and pay during time off for job-hunting if you’re made redundant
 - pay during your notice period when leaving a job
 - holiday pay
 - guarantee pay for work - you get this if your employer cannot provide you with work but your contract says they have to pay you anyway
@@ -191,8 +191,8 @@ If a bonus or commission is included in your contract, non-payment is a breach o
 
 Non-payment of bonuses may also be covered legally under:
 
--  unlawful deductions from wages - for example, you’re entitled to payment but it has not been given
--  unlawful discrimination - your employer must not discriminate against particular groups, for example giving smaller bonuses to women
+- unlawful deductions from wages - for example, you’re entitled to payment but it has not been given
+- unlawful discrimination - your employer must not discriminate against particular groups, for example giving smaller bonuses to women
 
 If you need help, you can:
 

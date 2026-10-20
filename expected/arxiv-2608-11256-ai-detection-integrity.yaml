@@ -140,13 +140,13 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 135
-    text: arxiv.  arXiv preprint arXiv:2601.17036.
+    text: arxiv. arXiv preprint arXiv:2601.17036.
     message: '"arxiv" here, where the document usually writes "arXiv" (1 of 9)'
     verdict: correct
     note: "'arxiv' lower-cased by the bibliography style (missing braces)"
   - rule: orthographic-variant
     line: 136
-    text: ai-generated text classifier.  arXiv pre
+    text: ai-generated text classifier. arXiv prep
     message: '"ai-generated" here, where the document usually writes "AI-generated" (3 of 11)'
     verdict: correct
     note: "'ai-generated' lower-cased by the bibliography style (missing braces)"
@@ -217,7 +217,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 152
-    text: ai-generated content.  Authorea Preprint
+    text: ai-generated content. Authorea Preprints
     message: '"ai-generated" here, where the document usually writes "AI-generated" (3 of 11)'
     verdict: unjudged
   - rule: sentence-spacing-consistency
@@ -245,7 +245,7 @@ findings:
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: contraction-consistency
     line: 155
-    text: Kondrak  Don’t trust chatgpt when your q
+    text: Kondrak Don’t trust chatgpt when your qu
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: false-positive
     note: "'Don't' is part of a cited work's title"
@@ -259,11 +259,6 @@ findings:
     line: 175
     text: "#### Reading A: proxy-AI labeling."
     message: 'Heading "Reading A: proxy-AI labeling." goes from level 2 to level 4 (expected 3)'
-    verdict: unjudged
-  - rule: invisible-character
-    line: 181
-    text: ⁡(y^=1∣refine abs. only)P(\hat{y}=1\mid\
-    message: "1 zero-width character (U+2061): search and copy break the word here"
     verdict: unjudged
   - rule: broken-link
     line: 195
@@ -312,120 +307,20 @@ findings:
     verdict: unjudged
   - rule: unknown-word
     line: 201
-    text: nboot=2,000n_{\mathrm{boot}}=2{,}000; se
+    text: nboot=2,000; seed 42) at τ=0.50.
     message: '"nboot" is not in the dictionary; did you mean "boot"?'
     verdict: false-positive
     note: "'nboot' is the text form of the formula n_boot"
-  - rule: invisible-character
-    line: 295
-    text: ⁡(t)=(τ1,…,τn)T(t)=(\tau_{1},\ldots,\tau
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
   - rule: broken-link
     line: 297
     text: "[A-Za-z0-9][A-Za-z0-9\\-\\+\\./]*"
     message: '"[A-Za-z0-9][A-Za-z0-9\-\+\./]" is a reference-style link with no definition (it shows as plain text)'
     verdict: false-positive
     note: a regular-expression character class '[A-Za-z0-9]' read as a reference-style link
-  - rule: invisible-character
-    line: 299
-    text: ⁡(t)|n=|T(t)|. For convenience, we use a
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 299
-    text: ​{⋅}\mathbb{I}\{\cdot\} that equals 1 wh
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
   - rule: heading-level-skip
     line: 301
     text: "#### Numeric token ratio."
     message: Heading "Numeric token ratio." goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c∈{0,…,9}}
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​_​token​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c∈
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c∈{0,…,9}}.\mathrm
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ⁡{∃c∈τi:c∈{0,…,9}}.\mathrm{numeric\_toke
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​∑i=1n𝕀⁡{∃c∈τi:c∈{0,…,9}}.\mathrm{numeri
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c∈{0,…,9}}.\
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 303
-    text: ​token​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c∈{0
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​ is not a letter}.\mathrm{nonalpha\_tok
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c​ is not
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​_​token​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c​
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c​ is not a letter
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ⁡{∃c∈τi:c​ is not a letter}.\mathrm{nona
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​∑i=1n𝕀⁡{∃c∈τi:c​ is not a letter}.\math
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c​ is not a
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 307
-    text: ​token​_​ratio​(t)=1n​∑i=1n𝕀⁡{∃c∈τi:c​ i
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 321
-    text: ⁡(A)S(A) be the set of Porter stems of t
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 321
-    text: ⁡(τ)\mathrm{alpha}(\tau) by removing non
-    message: "1 zero-width character (U+2061): search and copy break the word here"
     verdict: unjudged
   - rule: spelling-consistency
     line: 321
@@ -433,41 +328,6 @@ findings:
     message: '"analyse" here, where the document usually spells it "analyze" (1 of 29)'
     verdict: false-positive
     note: "'analyse/analyze' names the spelling pair itself as an example"
-  - rule: invisible-character
-    line: 327
-    text: ⁡(t)}V(t)=\{\mathrm{lower}(\tau):\tau\in
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 327
-    text: ⁡(t)={lower⁡(τ):τ∈T⁡(t)}V(t)=\{\mathrm{l
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 327
-    text: ⁡(τ):τ∈T⁡(t)}V(t)=\{\mathrm{lower}(\tau)
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 329
-    text: ⁡(t)=|V⁡(t)|n.\mathrm{ttr}(t)=\frac{|V(t
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 329
-    text: ⁡(t)|n.\mathrm{ttr}(t)=\frac{|V(t)|}{n}.
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 333
-    text: ⁡(t)=|split⁡(t)|\mathrm{words}(t)=|\math
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
-  - rule: invisible-character
-    line: 333
-    text: ⁡(t)|\mathrm{words}(t)=|\mathrm{split}(t
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
   - rule: figure-reference-order
     line: 355
     text: Table 14. Pangram score summaries before
@@ -504,14 +364,34 @@ findings:
     message: Table 21 is never referred to in the text
     verdict: false-positive
     note: referred to as 'Tables 20 and 21'; a plural reference is not counted
-  - rule: invisible-character
-    line: 381
-    text: ⁡(1+word count)\log(1+\text{word count})
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 389
     text: " - the pattern behind proxy false-positi"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen stands in for a dash
+  - rule: number-style-consistency
+    line: 479
+    text: 3 detectors (Pangram, GPTZero, LLM-assis
+    message: '"3" here, where the document usually writes numbers below ten like "four" (5 of 23)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 479
+    text: 4 variants × 3 detectors (Pangram, GPTZe
+    message: '"4" here, where the document usually writes numbers below ten like "four" (5 of 23)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 483
+    text: 4 variants × 1 Undetectable pass (paid c
+    message: '"4" here, where the document usually writes numbers below ten like "four" (5 of 23)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 487
+    text: 3 detectors (Pangram, GPTZero, and LLM-a
+    message: '"3" here, where the document usually writes numbers below ten like "four" (5 of 23)'
+    verdict: unjudged
+  - rule: number-style-consistency
+    line: 487
+    text: 4 variants × 3 detectors (Pangram, GPTZe
+    message: '"4" here, where the document usually writes numbers below ten like "four" (5 of 23)'
+    verdict: unjudged

@@ -18,15 +18,15 @@ Last updated:
 
 Show all updates
 
--  16 May 2025
+- 16 May 2025
 
 The section 'Qualifying new resident' has been added.
 
--  24 June 2024
+- 24 June 2024
 
 The entry for 'P87' has been updated to remove mention of form P810.
 
--  28 March 2014
+- 28 March 2014
 
 First published.
 

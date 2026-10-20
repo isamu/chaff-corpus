@@ -15,7 +15,7 @@ findings:
     note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: preamble-length
     line: 10
-    text: See the  Document Drafting Handbook  for
+    text: See the Document Drafting Handbook for m
     message: 10 paragraphs before the first heading (limit 2)
     verdict: false-positive
     note: the paragraphs before the first heading are the Federal Register page's help box, kept by the conversion

@@ -2,12 +2,12 @@ Document Headings
 
 Document headings vary by document type but may contain the following:
 
--  the agency or agencies that issued and signed a document
--  the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
--  the agency docket number / agency internal file number
--  the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
+- the agency or agencies that issued and signed a document
+- the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
+- the agency docket number / agency internal file number
+- the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
 
-See the  Document Drafting Handbook  for more details.
+See the Document Drafting Handbook for more details.
 
 # AGENCY:
 
@@ -85,7 +85,7 @@ i. Identifier: Molecule name, description, national drug code.
 
 ii. Manufacturing site: Location of existing site.
 
-iii. Available capacity: Amount of current production, amount of unused capacity and estimated timeline to reach full operational capacity.  ( printed page 60985)
+iii. Available capacity: Amount of current production, amount of unused capacity and estimated timeline to reach full operational capacity. ( printed page 60985)
 
 iv. Regulatory compliance: Current FDA registration status for each molecule/NDC.
 

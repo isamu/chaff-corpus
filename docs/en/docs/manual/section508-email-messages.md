@@ -178,6 +178,6 @@ Urgency and lack of planning are not sufficient reasons for sending or distribut
 
 ## Additional Resources
 
-Reviewed/Updated:  July 2026
+Reviewed/Updated: July 2026
 
-Content Contributors:    Contributing Organizations
+Content Contributors: Contributing Organizations

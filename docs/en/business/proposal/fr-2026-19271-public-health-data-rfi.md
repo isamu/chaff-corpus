@@ -2,12 +2,12 @@ Document Headings
 
 Document headings vary by document type but may contain the following:
 
--  the agency or agencies that issued and signed a document
--  the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
--  the agency docket number / agency internal file number
--  the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
+- the agency or agencies that issued and signed a document
+- the number of the CFR title and the number of each part the document amends, proposes to amend, or is directly related to
+- the agency docket number / agency internal file number
+- the RIN which identifies each regulatory action listed in the Unified Agenda of Federal Regulatory and Deregulatory Actions
 
-See the  Document Drafting Handbook  for more details.
+See the Document Drafting Handbook for more details.
 
 ###### Centers for Disease Control and Prevention
 
@@ -62,7 +62,7 @@ CDC is evaluating how data intermediaries can support secure, scalable, standard
 
 We encourage interested parties to respond to as many of the questions below as possible. The questions are intended to solicit input from multiple individuals and groups. To support CDC's review of responses, please prioritize clarity and conciseness and identify the applicable question label(s) (for example, XX-1).
 
-Please note that comments received, including attachments and other supporting materials, are part of the public record and are subject to public disclosure. Comments will be posted on https://www.regulations.gov. Therefore, do not include any information in your comment or supporting materials that you consider confidential or inappropriate for public disclosure. If you include your name, contact information, or other information that identifies you in the body of your comments, that information will be on public display. CDC will review all submissions and may choose to redact, or withhold, submissions containing private or proprietary information such as Social Security numbers, medical information, inappropriate language, or duplicate/near duplicate examples of a mass-mail campaign. Do not submit comments by email.  ( printed page 59778)
+Please note that comments received, including attachments and other supporting materials, are part of the public record and are subject to public disclosure. Comments will be posted on https://www.regulations.gov. Therefore, do not include any information in your comment or supporting materials that you consider confidential or inappropriate for public disclosure. If you include your name, contact information, or other information that identifies you in the body of your comments, that information will be on public display. CDC will review all submissions and may choose to redact, or withhold, submissions containing private or proprietary information such as Social Security numbers, medical information, inappropriate language, or duplicate/near duplicate examples of a mass-mail campaign. Do not submit comments by email. ( printed page 59778)
 
 ### A. Definition of Public Health Data Intermediary
 
@@ -100,7 +100,7 @@ Question II.C-1: What funding and revenue sources do data intermediaries current
 
 Question II.C-2: What funding models are most likely to sustain and scale data intermediary services for public health over time? What factors most affect data intermediary costs and technical burden, and how should shared funding models account for differences in use, cost, and benefits across participants? Please provide examples from current practice where available.
 
-Question II.C-3: How could funding models, fee structures, contract terms, or onboarding processes reduce financial barriers for rural providers, small laboratories, under-resourced public  ( printed page 59779)   health jurisdictions, tribal entities, safety-net providers, and community-based organizations? Please provide examples from current practice where available.
+Question II.C-3: How could funding models, fee structures, contract terms, or onboarding processes reduce financial barriers for rural providers, small laboratories, under-resourced public ( printed page 59779) health jurisdictions, tribal entities, safety-net providers, and community-based organizations? Please provide examples from current practice where available.
 
 Question II.C-4: What funding and contracting approaches could CDC or other public-sector funders use to promote portability, competition, open standards, and sustainable market participation while avoiding unintended market distortion or vendor lock-in? (See also Section II.D for the broader governance section about this issue.)
 
@@ -142,7 +142,7 @@ Question II.F-1: Where can CDC add the greatest value as an evaluator ( e.g., in
 
 Question II.F-2: What frameworks, benchmarks, and measures should CDC use to evaluate the intermediary framework, including impacts on workflows, workforce burden, user experience, data usability, situational awareness, and response capacity? What data sources and methods could support feasible measurement and assess the contribution of intermediary-enabled exchange to observed changes and, where feasible, support causal attribution?
 
-Question II.F-3: How should CDC and STLT public health partners assess value and cost efficiency, including startup and recurring costs, costs borne by different parties, avoided costs, and monetary and non-monetary benefits to public health, healthcare, and other ecosystem participants? How should  ( printed page 59780)   evaluation account for the distribution of costs and benefits and unintended consequences such as added burden, cost shifting, reduced flexibility, inequitable distribution of benefits, or vendor dependency?
+Question II.F-3: How should CDC and STLT public health partners assess value and cost efficiency, including startup and recurring costs, costs borne by different parties, avoided costs, and monetary and non-monetary benefits to public health, healthcare, and other ecosystem participants? How should ( printed page 59780) evaluation account for the distribution of costs and benefits and unintended consequences such as added burden, cost shifting, reduced flexibility, inequitable distribution of benefits, or vendor dependency?
 
 (Authority: 42 U.S.C. 241 and 42 U.S.C. 247d-4)
 
