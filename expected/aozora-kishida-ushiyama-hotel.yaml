@@ -1,0 +1,140 @@
+id: aozora-kishida-ushiyama-hotel
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 25
+    text: "#### 一"
+    message: 見出し「一」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 144
+    text: ところが、さういうとつて、みんな撮つてますよだ、お花さんが、先月キヤビネを撮つた
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 144
+    text: ところが、さういうとつて、みんな撮つてますよだ、お花さんが、先月キヤビネを撮つた
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 472
+    text: 国へ帰つたら、おとなしい、よく働くお婿さんを早く見つけるやうにするのはいいが、わ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 472
+    text: 今迄、お前も訊かうとしなかつたから、おれは云はなかつたが、おれと、あの女とは、抑
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 472
+    text: 国へ帰つたら、おとなしい、よく働くお婿さんを早く見つけるやうにするのはいいが、わ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 602
+    text: そけえ行くと、八号のおつ母さんどまあ、うはべは親切で、気のつくごたるばツてん、頼
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 604
+    text: ああして、身寄のない子を養女にしてゐると云へば人聞はいいが、また、実際、幾分の義
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: correct
+    note: "two adversative が in one sentence of dialogue (人聞はいいが … ゐるんだらうが)"
+  - rule: clause-chain
+    line: 604
+    text: ああして、身寄のない子を養女にしてゐると云へば人聞はいいが、また、実際、幾分の義
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 604
+    text: ああして、身寄のない子を養女にしてゐると云へば人聞はいいが、また、実際、幾分の義
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 650
+    text: 然るに、これらの日本農夫は、その技術に於てこそ、誇るに足るべきものでありましたが
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 650
+    text: 因循にして気概なき此の地方の青年は、悲しい哉、わが剣道の精神を解せず、私の素志は
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 650
+    text: 然るに、これらの日本農夫は、その技術に於てこそ、誇るに足るべきものでありましたが
+    message: 一文に読点が 15 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 650
+    text: 因循にして気概なき此の地方の青年は、悲しい哉、わが剣道の精神を解せず、私の素志は
+    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 650
+    text: 然るに、これらの日本農夫は、その技術に於てこそ、誇るに足るべきものでありましたが
+    message: 「は」で出した主題から述語まで 156 字あります（80 字まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 708
+    text: 僕の云つたのは、さういふ意味ぢやないんだが――さうおつしやるあなたにしても、失礼
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: correct
+    note: "two adversative が in one sentence of dialogue"
+  - rule: repeated-sentence-ending
+    line: 742
+    text: （二人の手を振り払ひ）誰が今迄、その人間の屑をこき使つたんだ。一と晩中、荷役の見
+    message: 「〜だ」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: "deliberate parallel questions (…のは誰だ) in a character's outburst"
+  - rule: clause-chain
+    line: 855
+    text: 病気のなほるまでや、戻つて来るなていふとだるけん、早う病気ばなほすとよかぢやなか
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 957
+    text: さつきからも、おつ母さんと話したこツだるが、あんたしやが、そん気になれば、ずつと
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: "the second が follows a noun (あんたしやが): the subject particle in dialect speech, not an adversative"
+  - rule: repeated-sentence-ending
+    line: 985
+    text: 男は狼のごつ餓え、女は牝犬のごつ恥知らずたい。そん上、自然はと云へば、黄色か熱と
+    message: 「〜たい」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's dialect speech in a play; the たい ending is the character's voice"
+  - rule: clause-chain
+    line: 1063
+    text: わしなんぞは、学校もろくに行つとりまつせんばツてんが、年配が年配だるけん、若い女
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 1129
+    text: あの女が何んと云つたか知りませんが、僕は、自分のリベラルな行為を反省して、今更そ
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's spoken explanation; the んです ending is the character's voice"
+  - rule: demonstrative-opener-run
+    line: 1149
+    text: ――あの女が、若しこの土地にゐるやうになつたら、なにくれと、相談相手になつてやつ
+    message: 「あの」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 1159
+    text: ――ですがねえ、奥さん、さつきから、あなたのお顔を見てると、なにか知ら、僕の後暗
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: "the second が ends the sentence as a softener (思へるんですが……), not an adversative joining two clauses"
+  - rule: clause-chain
+    line: 1221
+    text: いくら訊いても、はつきりしたこたあ云はんし、昨夜でん、己あ、もう面倒臭うなつたけ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 1221
+    text: いくら訊いても、はつきりしたこたあ云はんし、昨夜でん、己あ、もう面倒臭うなつたけ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged

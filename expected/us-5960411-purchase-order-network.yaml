@@ -1,0 +1,55 @@
+id: us-5960411-purchase-order-network
+chaff: 0.36.0
+findings:
+  - rule: use-before-definition
+    line: 3
+    text: HTML document identifying the item and i
+    message: '"HTML" is used here, before it is defined on line 15'
+    verdict: false-positive
+    note: "the abstract is a standalone summary printed before the description, where the term is spelled out; a patent's abstract is not read as the start of the description"
+  - rule: max-paragraph-length
+    line: 13
+    text: The Internet comprises a vast number of
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 21
+    text: The selection of the various items from
+    message: This paragraph runs 14 sentences (limit 8)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 49
+    text: The present invention provides a method
+    message: This paragraph runs 16 sentences (limit 8)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 267
+    text: FIG. 7 is a flow diagram of a routine th
+    message: This paragraph runs 12 sentences (limit 8)
+    verdict: correct
+  - rule: which-that-consistency
+    line: 309
+    text: which still express the same essential a
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "a restrictive which (combinations … which still express) where the patent otherwise uses that"
+  - rule: max-paragraph-length
+    line: 311
+    text: FIGS. 8A-8C illustrate a hierarchical da
+    message: This paragraph runs 24 sentences (limit 8)
+    verdict: correct
+  - rule: redundant-expression
+    line: 311
+    text: At any time during the data entry, if an
+    message: '"close proximity" says the same thing twice'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 313
+    text: Although the present invention has been
+    message: This paragraph runs 10 sentences (limit 8)
+    verdict: correct
+  - rule: redundant-expression
+    line: 313
+    text: Also, various different single actions c
+    message: '"various different" says the same thing twice'
+    verdict: correct

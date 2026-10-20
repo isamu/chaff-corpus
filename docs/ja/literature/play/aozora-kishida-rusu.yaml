@@ -1,0 +1,15 @@
+id: aozora-kishida-rusu
+title: 岸田國士「留守（一幕）」（青空文庫）
+language: ja
+genre: literature/play
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/001154/files/52312_47175.html
+  fetched: 2026-10-20
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1954, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 90859bf325ab078e45e7ef3d8149d059d60c57b6fc92e53619ad898b4f074d3d
+notes: Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. The work has no ［＃…］ input notes, so the conversion of isamu/lab#1572 gives the same text.

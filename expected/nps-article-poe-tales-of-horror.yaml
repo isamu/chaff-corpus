@@ -1,0 +1,65 @@
+id: nps-article-poe-tales-of-horror
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 3
+    text: ""
+    message: Section "Edgar Allan Poe and His Tales of Horror" has no number, code or link (4 of 4 sections)
+    verdict: false-positive
+    note: "a literary essay on Poe's technique; a section of prose about stories needs no number, code or link"
+  - rule: quote-style-consistency
+    line: 5
+    text: '"Louder it became, and louder. Why did t'
+    message: Quote marks are written two ways in this document (7 curly, 6 straight)
+    verdict: correct
+    note: "the epigraph quotes Poe in straight quotes while the body quotes him in curly ones"
+  - rule: concrete-evidence-density
+    line: 9
+    text: ""
+    message: Section "Gothic Tales" has no number, code or link (4 of 4 sections)
+    verdict: false-positive
+    note: "a literary essay section; no number, code or link is expected"
+  - rule: heading-level-skip
+    line: 9
+    text: "#### Gothic Tales"
+    message: Heading "Gothic Tales" goes from level 1 to level 4 (expected 2)
+    verdict: correct
+    note: "the page goes from the title (h1) straight to h4 section headings"
+  - rule: concrete-evidence-density
+    line: 13
+    text: ""
+    message: Section "The Narrator" has no number, code or link (4 of 4 sections)
+    verdict: false-positive
+    note: "a literary essay section; no number, code or link is expected"
+  - rule: unbalanced-bracket
+    line: 19
+    text: “I talked still faster and louder. And t
+    message: '"“" is never closed'
+    verdict: correct
+    note: "the quotation from The Tell-Tale Heart opens with a curly quote and is never closed"
+  - rule: max-sentence-length
+    line: 21
+    text: The reader does not know whether to beli
+    message: This sentence runs 45 words (limit 40)
+    verdict: correct
+  - rule: concrete-evidence-density
+    line: 23
+    text: ""
+    message: Section "Title, Symbolism, and Descriptive Language" has no number, code or link (4 of 4 sections)
+    verdict: false-positive
+    note: "a literary essay section; no number, code or link is expected"
+  - rule: quote-style-consistency
+    line: 27
+    text: "'s ghastly grip."
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 12)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 27
+    text: "'s tales continue to hold us in the mast"
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 12)
+    verdict: correct
+  - rule: quote-style-consistency
+    line: 27
+    text: "'s tales still stand as some of the fine"
+    message: The quote mark ' here, where the document usually writes ’‘ (3 of 12)
+    verdict: correct

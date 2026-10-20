@@ -1,0 +1,28 @@
+id: nps-article-history-of-acadia
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 19
+    text: In 1688, Antoine Laumet, an ambitious yo
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: In the aftermath of the war, Bernard los
+    message: This sentence runs 48 words (limit 40)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 31
+    text: It was the outsiders—artists and journal
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 33
+    text: For a select handful of Americans, the 1
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 39
+    text: In 1901, disturbed by the growing develo
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
