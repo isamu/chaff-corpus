@@ -18,6 +18,8 @@ Ann Lee, the founder and later leader of the American Shakers, and her parents w
 
 Ann Lee was born the daughter of a blacksmith in Manchester in 1736. She worked in a cotton factory, and in 1762 she married blacksmith Abraham Standerin. They had four children, all of whom died in childhood. Ann joined the Shakers in 1758, and 12 years later had "a special manifestation of Divine light." After this experience she became the leader of the Shakers. In 1774 she received a revelation directing her to establish a Shaker Church in America. Ann Lee, her husband, and seven members set sail for America on May 10, 1774. By late 1776 she and some followers were located northwest of Albany, New York, by which point she and her husband had separated. She gathered followers in New York until her death in 1784.
 
+<!-- http://www.nps.gov/people/ann-lee.htm http://www.nps.gov/articles/shakerism-in-america.htm -->
+
 ## Shaker Beliefs
 
 The Shakers practiced communal living, where all property was shared. They didn’t believe in procreation, and therefore had to adopt children and recruit converts into their community. For those that were adopted, they were given a choice to either stay within the community or leave when they turned 21.
@@ -28,6 +30,8 @@ Eventually there were 19 Shaker communities in the Northeast, Ohio, and Kentucky
 
 The community meeting-house was the center of Shaker worship services on Sunday. Spontaneous dancing was part of Shaker worship until the early 1800s, when it was replaced by choreographed dancing. Spontaneous dancing returned around the 1840s, but by the end of the 19th century dancing ceased during worship. Services consisted of singing hymns, testimonials, a short homily, and silence.
 
+<!-- http://www.nps.gov/articles/utopias-in-america.htm -->
+
 ## Sources
 
 - The Shaker Experience in America by Stephen J. Stein
@@ -37,10 +41,8 @@ The community meeting-house was the center of Shaker worship services on Sunday.
 - The Shaker Legacy Perspectives on an Enduring Furniture Style by Christian Becksvoort
 - The Architecture of the Shakers by Julie Nicoletta
 
-## You Might Also Like
-
-Loading results...
-
 Tags: shakers, american utopias, massachusetts, maine, new hampshire, ohio, kentucky, new york, travel itineraries, travel shaker trail
 
 Last updated: October 6, 2026
+
+<!-- http://www.passtheword.org/SHAKER-MANUSCRIPTS/Shakers-Compendium/shaker1x.htm http://maineshakers.com/beliefs/ https://www.nps.gov/media/article-search.htm#q=Shakers https://www.nps.gov/media/article-search.htm#q=American+Utopias https://www.nps.gov/media/article-search.htm#q=Massachusetts https://www.nps.gov/media/article-search.htm#q=Maine https://www.nps.gov/media/article-search.htm#q=New+Hampshire https://www.nps.gov/media/article-search.htm#q=Ohio https://www.nps.gov/media/article-search.htm#q=Kentucky https://www.nps.gov/media/article-search.htm#q=New+York https://www.nps.gov/media/article-search.htm#q=travel+itineraries https://www.nps.gov/media/article-search.htm#q=travel+shaker+trail -->

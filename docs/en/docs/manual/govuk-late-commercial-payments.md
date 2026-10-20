@@ -33,6 +33,8 @@ If your business were owed £1,000 and the Bank of England base rate were 0.5%:
 
 Send a new invoice if you decide to add interest to the money you’re owed.
 
+<!-- http://www.bankofengland.co.uk/boeapps/iadb/Repo.asp -->
+
 # 3. Claim debt recovery costs on late payments
 
 You can also charge a business a fixed sum for the cost of recovering a late commercial payment on top of claiming interest from it.

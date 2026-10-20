@@ -148,6 +148,8 @@ Automatic Speech Recognition (ASR)
 
 The use of computer hardware- and software-based procedures to identify and process words a person has spoken into a system.
 
+<!-- https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/ https://www.govinfo.gov/content/pkg/USCODE-2019-title44/html/USCODE-2019-title44-chap35-subchapI-sec3502.htm https://www.access-board.gov/ict/#E205.4 https://www.ssa.gov/accessibility/andi/help/install.html -->
+
 ## B
 
 Table B. Terms and definitions
@@ -325,6 +327,8 @@ Cure Notice
 
 A formal written notification, used within the Federal Acquisition Regulation (FAR), to inform a contractor that their failure to perform or lack of progress, is jeopardizing contract performance and gives the contractor an opportunity to correct the issue before the government proceeds with termination for default.
 
+<!-- https://www.w3.org/Style/CSS/ https://www.w3.org/ https://www.govinfo.gov/content/pkg/USCODE-2021-title29/html/USCODE-2021-title29-chap16-subchapV-sec794d.htm https://www.govinfo.gov/content/pkg/USCODE-2021-title29/html/USCODE-2021-title29-chap16-subchapV-sec794d.htm https://www.govinfo.gov/content/pkg/USCODE-2021-title29/html/USCODE-2021-title29-chap16-subchapV-sec794d.htm https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/ http://www.CPARS.gov -->
+
 ## D
 
 Table D. Terms and definitions
@@ -417,6 +421,8 @@ Extranet
 
 A network restricted to authorized individuals. For the purposes of the annual Section 508 Assessment, extranet is included in questions related to internet web pages.
 
+<!-- https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2004/m04-08.pdf https://www.access-board.gov/ict/#E205-content https://www.govinfo.gov/content/pkg/USCODE-2011-title5/pdf/USCODE-2011-title5-partI-chap1-sec105.pdf -->
+
 ## F
 
 Table F. Terms and definitions
@@ -469,6 +475,8 @@ Functional Performance Criteria (FPC)
 
 The overall product evaluation criteria for technologies or components for which there is no applicable specific requirement(s) under the technical standards. These criteria ensure that the individual accessible components work together to create an accessible product. The FPC covers operation (including input and control functions) of mechanical mechanisms, and access to visual and audible information (the design functions of the webpage). These provisions allow people with sensory or physical disabilities to locate, identify, and operate the input, control, and mechanical functions of technologies and components. These provisions also allow access to the information provided, including text, static or dynamic images, icons, labels, sounds or incidental operating cues.
 
+<!-- https://pra.digital.gov/do-i-need-clearance/ -->
+
 ## G
 
 Table G. Terms and definitions
@@ -488,6 +496,8 @@ Product that is developed with funding and specificity from another government a
 Governance, risk, and compliance (GRC) tools
 
 Refers to a set of tools or processes used by an agency to manage and monitor its governance (the framework of rules and processes that ensure the organization operates effectively), risk (identifying, assessing, and mitigating risks), and compliance (ensuring adherence to laws, regulations, and internal policies).
+
+<!-- https://www.access-board.gov/ict/#E202-general-exceptions -->
 
 ## H
 
@@ -608,6 +618,8 @@ Intranet
 
 A private or internal network within an organization used for but not limited to: a central repository, collaboration, communication, access to information, social networking, project management, and streamlining of everyday activities and operations.
 
+<!-- https://section508coordinators.github.io/ICTTestingBaseline/ https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines https://www.access-board.gov/ict/#E103.4 -->
+
 ## J
 
 Table J. Terms and definitions
@@ -672,6 +684,8 @@ Low
 
 Suggests the maturity or conformance is below the desired standard but not as far from it as “Very Low.” There’s room for improvement in multiple areas and improvements most likely will be multifaceted.
 
+<!-- https://digital.gov/communities/manage-your-subscription/ -->
+
 ## M
 
 Table 1. Terms and definitions
@@ -729,6 +743,8 @@ Signifies the maturity or conformance is average. It meets some standards but st
 Multimedia (synchronized media)
 
 The combined use of several media, such as audio and visual (e.g., video or animation) to convey information or a live event, such as a television broadcast.
+
+<!-- https://www.acquisition.gov/far/part-2/#FAR_2_101__d75e1694 -->
 
 ## N
 
@@ -789,6 +805,8 @@ Operational Conformance, or simply “Conformance” in the annual Section 508 A
 Overall performance
 
 See also Category, which is used interchangeably. Used to describe groupings of reporting entities that fall within each pairing of the Maturity and Conformance bracket. As there are five maturity brackets ranging from Very Low to Very High and five conformance brackets, also ranging from Very Low to Very High, there are 25 total Overall Performance Categories. These categories are always titled by Maturity first and Conformance second, i.e., Very Low-Very Low, Moderate - Low, and so on.
+
+<!-- https://www.govinfo.gov/content/pkg/USCODE-2021-title44/html/USCODE-2021-title44-chap35-subchapI-sec3502.htm -->
 
 ## P
 
@@ -859,6 +877,8 @@ Methods for distributing content, including website posting or newsletters. More
 Program Manager
 
 See Section 508 Program Manager.
+
+<!-- https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/ -->
 
 ## Q
 
@@ -1042,6 +1062,8 @@ Synchronized media (multimedia)
 
 The combined use of several media, such as audio and visual, to convey information.
 
+<!-- https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/#_ftn16 https://www.acquisition.gov/far/part-2 -->
+
 ## T
 
 Table T. Terms and definitions
@@ -1110,6 +1132,8 @@ TTY
 
 Equipment that enables interactive text based communications through the transmission of frequency-shift-keying audio tones across the public switched telephone network, such as a computer with TTY emulating software and modem. TTYs include devices for real-time text communications and voice, and text intermixed communications, such as voice or hearing carry-over.
 
+<!-- https://www.fcc.gov/trs https://section508coordinators.github.io/ICTTestingBaseline/introduction.html -->
+
 ## U
 
 Table U. Terms and definitions
@@ -1149,6 +1173,8 @@ Elements of an application that convey information.
 Universal design
 
 The design and composition of an environment so it can be accessed, understood, and used to the greatest extent possible by all people, regardless of their age, size, ability or disability. Universal design is also referred to as inclusive design.
+
+<!-- https://www.access-board.gov/ https://www.w3.org/WAI/UA/work/wiki/Definition_of_User_Agent -->
 
 ## V
 
@@ -1209,3 +1235,5 @@ Website (web site)
 A website, and web-based application, consists of many web pages linked together under a common domain name such as “[agency-name].gov.”
 
 Reviewed/Updated: August 2026
+
+<!-- https://www.w3.org/WAI/standards-guidelines/wcag/ https://www.w3.org/ https://www.w3.org/WAI/about/ https://www.w3.org/TR/WCAG20/ -->

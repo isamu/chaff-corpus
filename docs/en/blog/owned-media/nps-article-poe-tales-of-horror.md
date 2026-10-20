@@ -26,10 +26,6 @@ In “The Fall of the House of Usher,” Poe uses the title’s double meaning (
 
 Today, Edgar Allan Poe's tales still stand as some of the finest examples of the horror genre. From "The Pit and the Pendulum" to "The Black Cat," Poe's tales continue to hold us in the master's ghastly grip.
 
-## You Might Also Like
-
-Loading results...
-
 ## Tags
 
 Edgar Allan Poe National Historic Site

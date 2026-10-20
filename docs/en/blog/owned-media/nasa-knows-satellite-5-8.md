@@ -71,3 +71,5 @@ Satellites that face toward space have a variety of jobs. Some watch for dangero
 ## More About Satellites
 
 Read What Is a Satellite? (Grades K-4)
+
+<!-- https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-satellite-grades-k-4/ -->

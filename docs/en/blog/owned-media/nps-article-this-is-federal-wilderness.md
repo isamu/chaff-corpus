@@ -14,6 +14,8 @@ People take a closer look at the petroglyphs in the Petrified Forest National Wi
 
 NPS
 
+<!-- https://umontana.maps.arcgis.com/apps/MapJournal/index.html?appid=a2c9b7caa19b45eab9f16907caf76500&section=2 -->
+
 ### Wilderness is not a pristine and untouched landscape.
 
 Federal wilderness areas are the homelands of many Indigenous peoples. The rich cultural traditions of Indigenous people, and later immigrants, have existed on and with the landscape long before the establishment of national parks and federal wilderness areas.
@@ -25,6 +27,8 @@ Want to learn more about some of these connections? Read about different wildern
 A person using a wheelchair hikes in the Rocky Mountain National Park Wilderness.
 
 Dave Gillespie
+
+<!-- https://www.nps.gov/subjects/wilderness/wilderness-heritage.htm https://www.nps.gov/articles/000/glacier-bay-wilderness-as-homeland.htm -->
 
 ### Yes, people are allowed to go into wilderness.
 
@@ -38,6 +42,8 @@ Friends take a water break while exploring the Death Valley Wilderness.
 
 NPS
 
+<!-- https://www.nps.gov/media/video/view.htm?id=A1940F19-ECEB-4E27-BF62-19D8D5914B35 https://www.nps.gov/media/video/view.htm?id=5F50C6D3-38F0-4E28-8853-9F4CFA6AFC19 -->
+
 ### You don't have to be a mountaineer to enjoy wilderness.
 
 Mountaineering is welcome, but not required to enjoy the wilderness! Opportunities for exploring wilderness are as diverse as the landscapes and the people of our country. From walking, hiking, climbing, and paddling to horseback riding, fishing, hunting, skiing, and snowshoeing, wilderness is a place to make unforgettable memories with family and friends or find solitude for yourself. In these activities, wilderness provides space to seek personal fulfillment like mental and physical health, artistic inspiration, and adventure. Your choice. Your style. You're ready!
@@ -50,6 +56,8 @@ Visitors enjoy the ocean views of the wilderness at Fire Island National Seashor
 
 NPS
 
+<!-- https://www.nps.gov/subjects/wilderness/recreation.htm https://www.nps.gov/subjects/healthandsafety/trip-planning-guide.htm https://www.nps.gov/articles/hiking-safety.htm https://www.nps.gov/media/video/view.htm?id=615BF560-0792-4DDE-89ED-D79465089945 https://www.nps.gov/subjects/camping/backcountry-camping.htm -->
+
 ### Wilderness is closer than you might think.
 
 Enjoying wilderness doesn’t have to mean a long road trip to a distant, rugged place. From Miami to Denver, Los Angeles to Tulsa, many NPS wilderness areas are within a few hours drive of America’s largest cities. New York City is only two hours from the wilderness in Fire Island National Seashore.
@@ -58,9 +66,7 @@ Wilderness is a place to rejuvenate and awaken your senses. Visiting wilderness 
 
 Is it possible to feel connected to a wilderness area that many other people love too? Yes! Think about your favorite wilderness area: what do you appreciate most about it? Chances are you enjoy seeing and hearing nature uninterrupted - plants, animals, sounds. Perhaps you like knowing that you may not see many people on the trail or other signs of heavy human use. Or maybe you enjoy a focused sense of connection with nature and your loved ones while out in wilderness. These things are made possible, in part, by visitors that make conscientious choices to enjoy wilderness while minimizing their personal impact on the area. Leave No Trace helps promote these behaviors and offers ways for visitors to be informed, thoughtful wilderness stewards.
 
-## You Might Also Like
-
-Loading results...
+<!-- https://www.nps.gov/media/video/view.htm?id=9ADED234-1DD8-B71B-0B235ABF7DD3AFC7 https://lnt.org/ -->
 
 ## Tags
 

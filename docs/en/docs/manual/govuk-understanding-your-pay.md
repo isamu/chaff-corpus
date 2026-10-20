@@ -200,6 +200,8 @@ If you need help, you can:
 - contact your nearest Citizens Advice
 - talk to your trade union representative
 
+<!-- http://www.acas.org.uk/ https://www.citizensadvice.org.uk/about-us/how-we-provide-advice/advice/search-for-your-local-citizens-advice/#searchbox -->
+
 # 5. Deductions from your pay
 
 Your employer is not allowed to make deductions unless:
@@ -247,6 +249,8 @@ If this does not work, you can:
 - talk to your trade union representative
 
 You have the right to go to an Employment Tribunal to get your money.
+
+<!-- https://www.acas.org.uk/dispute-resolution https://www.citizensadvice.org.uk/about-us/how-we-provide-advice/advice/search-for-your-local-citizens-advice/#searchbox https://www.gov.uk/join-trade-union/role-of-your-trade-union-rep -->
 
 ## If you leave your job
 

@@ -9,6 +9,8 @@ Document headings vary by document type but may contain the following:
 
 See the Document Drafting Handbook for more details.
 
+<!-- https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf#page=9 -->
+
 ###### Centers for Disease Control and Prevention
 
 - [Docket CDC-2026-1519]
@@ -40,6 +42,8 @@ You may submit comments, identified by docket number CDC-2026-1519, by any of th
 
 Instructions: All submissions received must include the agency name and Docket Number. All relevant comments received will be posted without change to http://regulations.gov, including any personal information provided. For access to the docket to read background documents or comments received, go to http://www.regulations.gov.
 
+<!-- http://www.regulations.gov http://regulations.gov http://www.regulations.gov -->
+
 # FOR FURTHER INFORMATION CONTACT:
 
 Abigail Viall, Acting Lead, Technology Implementation Office Centers for Disease Control and Prevention, 1600 Clifton Road NE, MS H21-8, Atlanta, GA 30329. Phone: 1-800-232-4636. Email: OPHDSTPolicy@cdc.gov.
@@ -56,6 +60,8 @@ Despite this progress, data inconsistency, siloing, and interoperability challen
 
 Given these developments, CDC is evaluating how data intermediaries can be used to support secure, scalable, standards-based public health data exchange, while protecting privacy.
 
+<!-- http://www.cdc.gov/Ph.D.s https://www.cdc.gov/data-modernization/php/one-cdc-data-platform -->
+
 ## II. Solicitation of Public Comments
 
 CDC is evaluating how data intermediaries can support secure, scalable, standards-based public health data exchange. CDC invites public comment to inform that evaluation and to explore how data intermediaries can advance broader goals to prevent disease, detect emerging threats, drive state-of-the-art solutions that empower communities, and strengthen public health systems for a safer, healthier nation.
@@ -63,6 +69,8 @@ CDC is evaluating how data intermediaries can support secure, scalable, standard
 We encourage interested parties to respond to as many of the questions below as possible. The questions are intended to solicit input from multiple individuals and groups. To support CDC's review of responses, please prioritize clarity and conciseness and identify the applicable question label(s) (for example, XX-1).
 
 Please note that comments received, including attachments and other supporting materials, are part of the public record and are subject to public disclosure. Comments will be posted on https://www.regulations.gov. Therefore, do not include any information in your comment or supporting materials that you consider confidential or inappropriate for public disclosure. If you include your name, contact information, or other information that identifies you in the body of your comments, that information will be on public display. CDC will review all submissions and may choose to redact, or withhold, submissions containing private or proprietary information such as Social Security numbers, medical information, inappropriate language, or duplicate/near duplicate examples of a mass-mail campaign. Do not submit comments by email. ( printed page 59778)
+
+<!-- https://www.regulations.gov -->
 
 ### A. Definition of Public Health Data Intermediary
 
@@ -91,6 +99,8 @@ Question II.B-3: How should data intermediaries be assessed to determine whether
 Question II.B-4: How can a maturity model be useful for advancing data intermediary capabilities over time? If used, in what ways should a maturity model distinguish progression from minimum viable participation to repeatable production and advanced or adaptive capabilities? What capabilities or performance thresholds should characterize each maturity level, and what evidence, including attestation methods, should be required for progression?
 
 Question II.B-5: How might artificial intelligence (AI) capabilities affect data intermediaries' technical, governance, and operational roles—including accelerating, replacing, or distributing functions?
+
+<!-- https://cdn.ymaws.com/www.cste.org/resource/resmgr/logo/identi_2__1_.pdf -->
 
 ### C. Shared Infrastructure: Funding and Sustainability
 
@@ -153,3 +163,5 @@ Chief Regulatory Officer, Centers for Disease Control and Prevention.
 [FR Doc. 2026-19271 Filed 9-18-26; 8:45 am]
 
 BILLING CODE 4163-18-P
+
+<!-- https://www.govinfo.gov/link/uscode/42/241 https://www.govinfo.gov/link/uscode/42/247d-4 -->

@@ -12,5 +12,5 @@ license:
   url: https://www.nps.gov/aboutus/disclaimer.htm
   note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/articles/poe-horror.htm); converted to Markdown; images are not included, only their captions and credit lines'
 redistribute: true
-sha256: 567ba3921db8fe439aa64bca9596979ec82a87f3601875c2c26b2408dc0d3bc1
-notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", "You Might Also Like", "Loading results...", the tags) are kept as the converter gives them. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.
+sha256: 13d7e56282ce0ed0b6693f484131f8948b0b0224db44bd0ce5159cf71a86ac3d
+notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", the tags) are kept as the converter gives them; the "You Might Also Like" box, which a script fills in, is dropped (isamu/lab#1714). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

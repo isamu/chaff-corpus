@@ -8,6 +8,8 @@
 
 浪速区役所における公募型比較見積については「浪速区役所公募型比較見積実施要綱」に基づき行いますので、見積書をご提出いただく前にご確認ください。
 
+<!-- https://www.city.osaka.lg.jp/naniwa/cmsfiles/contents/0000668/668915/23_koubogatahikakumitumorijissiyoukou.pdf -->
+
 ### 令和8年10月13日公告
 
 #### 見積提出期限：令和8年10月23日　午後5時
@@ -20,6 +22,8 @@
 Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
+
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
 
 ## 探している情報が見つからない
 

@@ -19,30 +19,30 @@ findings:
     verdict: false-positive
     note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: max-sentence-length
-    line: 26
+    line: 28
     text: The Department of Transportation (DOT),
     message: This sentence runs 52 words (limit 45)
     verdict: correct
   - rule: invisible-character
-    line: 34
+    line: 38
     text: ​airport-infrastructure/​fct by followin
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
-    line: 34
+    line: 38
     text: ​bil/​airport-infrastructure/​fct by fol
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
-    line: 34
+    line: 38
     text: ​fct by following the instructions under
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: max-sentence-length
-    line: 42
+    line: 48
     text: The IIJA established the FCT Competitive
     message: This sentence runs 74 words (limit 45)
     verdict: correct

@@ -6,52 +6,52 @@ findings:
     text: ""
     message: 「POINT」の節に数値もコードもリンクもありません（そういう節が 4/10）
     verdict: false-positive
-    note: "the POINT box is the article's summary; no number, code or link is expected"
+    note: the POINT box is the article's summary; no number, code or link is expected
   - rule: padded-intro
     line: 7
     text: その背景には、近年の気候変動による気温の上昇があります。農作業の経験が長い人でも
     message: 「近年」は、どの記事にも当てはまる書き出しです
     verdict: false-positive
-    note: "「近年の気候変動」 is the cause the article names, in the second sentence, not a stock opening"
+    note: 「近年の気候変動」 is the cause the article names, in the second sentence, not a stock opening
   - rule: topic-predicate-distance
     line: 19
     text: 熱中症は、高温多湿な環境下において、体温調節機能などがうまく働かなくなり、手足の
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: correct
-    note: "just over the limit"
+    note: just over the limit
   - rule: concrete-evidence-density
     line: 39
     text: ""
     message: 「体温上昇を防ぐアイテム」の節に数値もコードもリンクもありません（そういう節が 4/10）
     verdict: false-positive
-    note: "advice on cooling items; no number, code or link is expected"
+    note: advice on cooling items; no number, code or link is expected
   - rule: concrete-evidence-density
     line: 65
     text: ""
     message: 「時間や手順を工夫する」の節に数値もコードもリンクもありません（そういう節が 4/10）
     verdict: false-positive
-    note: "advice on working hours and steps; no number, code or link is expected"
+    note: advice on working hours and steps; no number, code or link is expected
   - rule: missing-final-period
     line: 81
     text: う
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。30 段落のうち 2 段落）
     verdict: false-positive
-    note: "a ●-marked line is a run-in heading of the advice below it, not a paragraph"
+    note: a ●-marked line is a run-in heading of the advice below it, not a paragraph
   - rule: missing-final-period
     line: 85
     text: る
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。30 段落のうち 2 段落）
     verdict: false-positive
-    note: "a ●-marked line is a run-in heading of the advice below it, not a paragraph"
+    note: a ●-marked line is a run-in heading of the advice below it, not a paragraph
   - rule: comparative-without-baseline
     line: 87
     text: より軽い作業への変更を検討したり、変更が難しい場合は、時間帯を朝夕にずらしたり、
     message: 「より軽い」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "the baseline is in the same sentence (負荷の大きい作業)"
+    note: the baseline is in the same sentence (負荷の大きい作業)
   - rule: concrete-evidence-density
-    line: 123
+    line: 129
     text: ""
     message: 「まとめ」の節に数値もコードもリンクもありません（そういう節が 4/10）
     verdict: false-positive
-    note: "the closing summary; no number, code or link is expected"
+    note: the closing summary; no number, code or link is expected

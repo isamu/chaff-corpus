@@ -6,63 +6,63 @@ findings:
     text: ""
     message: 「POINT」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "the POINT box is the article's summary; a public-information article's summary needs no number, code or link"
+    note: the POINT box is the article's summary; a public-information article's summary needs no number, code or link
   - rule: padded-intro
     line: 7
     text: 近年、クマが市街地など、私たちの生活圏に出没し、人身被害が発生するケースが増えて
     message: 「近年」は、どの記事にも当てはまる書き出しです
     verdict: correct
-    note: "「近年、…増えています」 is the stock opening of such articles"
+    note: 「近年、…増えています」 is the stock opening of such articles
   - rule: concrete-evidence-density
     line: 9
     text: ""
     message: 「1クマに出会わないための対策」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "advice in a public-information article (how to avoid bears); no number, code or link is expected"
+    note: advice in a public-information article (how to avoid bears); no number, code or link is expected
   - rule: rule-of-three
     line: 19
     text: "- 収穫しない果実は早めに取り除く"
     message: 箇条書き 4 個のうち 4 個が 3 項目です（70% まで）
     verdict: false-positive
-    note: "each list gives the three measures the text names; a human-written government article, not a padding pattern"
+    note: each list gives the three measures the text names; a human-written government article, not a padding pattern
   - rule: concrete-evidence-density
     line: 29
     text: ""
     message: 「対策2：人の存在を知らせる」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "advice in a public-information article; no number, code or link is expected"
+    note: advice in a public-information article; no number, code or link is expected
   - rule: concrete-evidence-density
-    line: 41
+    line: 43
     text: ""
     message: 「「いつもの道」でも油断は禁物」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "advice in a public-information article; no number, code or link is expected"
+    note: advice in a public-information article; no number, code or link is expected
   - rule: concrete-evidence-density
-    line: 51
+    line: 53
     text: ""
     message: 「静かにゆっくり移動する」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "advice in a public-information article; no number, code or link is expected"
+    note: advice in a public-information article; no number, code or link is expected
   - rule: max-kanji-continuous
-    line: 75
+    line: 77
     text: 独立行政法人国民生活センター「クマ撃退スプレーの備え方－事前の確認・準備が必須で
     message: 「独立行政法人国民生活」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
-    note: "the official name of an organisation (独立行政法人国民生活センター); it cannot be split"
+    note: the official name of an organisation (独立行政法人国民生活センター); it cannot be split
   - rule: concrete-evidence-density
-    line: 81
+    line: 85
     text: ""
     message: 「コラム：クマに襲われそうになった場合の最終手段「防御姿勢」」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "a column of advice (the defensive posture); no number, code or link is expected"
+    note: a column of advice (the defensive posture); no number, code or link is expected
   - rule: topic-predicate-distance
-    line: 93
+    line: 97
     text: 国は都道府県と連携し、地域個体群ごとの適正な個体数や、捕獲の目標数を精緻化するた
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: correct
   - rule: concrete-evidence-density
-    line: 103
+    line: 107
     text: ""
     message: 「まとめ」の節に数値もコードもリンクもありません（そういう節が 7/10）
     verdict: false-positive
-    note: "the closing summary of a public-information article; no number, code or link is expected"
+    note: the closing summary of a public-information article; no number, code or link is expected

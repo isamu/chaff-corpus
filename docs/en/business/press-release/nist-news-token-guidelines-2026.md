@@ -37,3 +37,5 @@ Galluzzo highlighted the critical support NIST and CISA received from industry p
 Information technology, Cloud computing and virtualization, Cybersecurity and privacy and Identity and access management
 
 Released September 15, 2026
+
+<!-- https://csrc.nist.gov/pubs/ir/8587/final https://www.whitehouse.gov/presidential-actions/2025/06/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694-and-executive-order-14144/ https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final https://www.microsoft.com/en-us/security/blog/2023/07/14/analysis-of-storm-0558-techniques-for-unauthorized-email-access/ https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8587.ipd.pdf https://www.nccoe.nist.gov/ https://www.nccoe.nist.gov/projects/software-and-ai-agent-identity-and-authorization https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc -->

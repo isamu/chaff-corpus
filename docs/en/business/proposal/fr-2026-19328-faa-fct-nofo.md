@@ -9,6 +9,8 @@ Document headings vary by document type but may contain the following:
 
 See the Document Drafting Handbook for more details.
 
+<!-- https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf#page=9 -->
+
 ###### Federal Aviation Administration
 
 - [Docket # FAA-2026-6240]
@@ -25,6 +27,8 @@ Notice of funding opportunity.
 
 The Department of Transportation (DOT), Federal Aviation Administration (FAA) announces the opportunity to apply for up to $100 million in Fiscal Year (FY) 2027 Airport Infrastructure Grant funds for the FAA Contract Tower (FCT) Competitive Grant Program, made available under the Infrastructure Investment and Jobs Act of 2021 (IIJA), Public Law 117-58. The purpose of the FCT Competitive Grant Program is to make annual grants available to eligible airports for airport-owned airport traffic control tower (ATCT) projects that address the aging infrastructure of our nation's airports.
 
+<!-- https://www.govinfo.gov/link/plaw/117/public/58 -->
+
 # DATES:
 
 Airport sponsors seeking consideration for FY 2027 FCT Competitive Grant Program funding should submit FAA Form 5100-144 as soon as possible, but no later than 5:00 p.m. Eastern Time on October 19, 2026.
@@ -32,6 +36,8 @@ Airport sponsors seeking consideration for FY 2027 FCT Competitive Grant Program
 # ADDRESSES:
 
 Submit applications electronically at https://www.faa.gov/​bil/​airport-infrastructure/​fct by following the instructions under Frequently Asked Questions, “How to apply.”
+
+<!-- https://www.faa.gov/bil/airport-infrastructure/fct -->
 
 # FOR FURTHER INFORMATION CONTACT:
 

@@ -2,202 +2,202 @@ id: section508-email-messages
 chaff: 0.37.0
 findings:
   - rule: contraction-consistency
-    line: 15
+    line: 19
     text: Don’t write for an eighth-grade class if
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
   - rule: hyphen-as-dash
-    line: 23
+    line: 27
     text: " - Acronyms often confuse readers. Avoid"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 24
+    line: 28
     text: " - Our writing should be concise and dir"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 25
+    line: 29
     text: " - Follow a consistent capitalization sc"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 26
+    line: 30
     text: " - The words we use make the difference"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 27
+    line: 31
     text: " - Use full names on first reference. On"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: undefined-acronym
-    line: 27
+    line: 31
     text: AP style (which is to mostly use last na
     message: '"AP" is used without an expansion (7 such acronyms)'
     verdict: false-positive
     note: AP style, the name of a style guide everyone writes as AP
   - rule: hyphen-as-dash
-    line: 28
+    line: 32
     text: " - In body copy, spell out numbers one t"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: contraction-consistency
-    line: 29
+    line: 33
     text: Don’t use semicolons after points in a b
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
   - rule: hyphen-as-dash
-    line: 29
+    line: 33
     text: " - Capitalize the first word of every bu"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 30
+    line: 34
     text: " - As with other style rules, we use rul"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 31
+    line: 35
     text: " - In most cases, it’s safe to say the r"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: contraction-consistency
-    line: 32
+    line: 36
     text: Trademarks and brands - Avoid using a tr
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
   - rule: hyphen-as-dash
-    line: 32
+    line: 36
     text: " - Avoid using a trademark unless you’re"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 33
+    line: 37
     text: " - It’s important to remember users of s"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: hyphen-as-dash
-    line: 34
+    line: 38
     text: " - Our voice is our unique personality."
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: list-item-form-mix
-    line: 43
+    line: 49
     text: Run-on sentences, long paragraphs, and m
     message: '"Run-on sentences, long paragraphs, and meaningless filler phrases" opens with a verb; the other items in this list open with a noun phrase (1 of 5)'
     verdict: false-positive
     note: '"Run-on" is a compound adjective; the item opens with a noun phrase like the others'
   - rule: list-item-form-mix
-    line: 45
+    line: 51
     text: Abbreviating the month or using numbers
     message: '"Abbreviating the month or using numbers as in 10/22/2005." is a sentence; the other items in this list are phrases (1 of 3)'
     verdict: correct
     note: the one item that runs on into a second sentence among noun phrases
   - rule: unknown-word
-    line: 64
+    line: 70
     text: toolbar, click more actions, which is vi
     message: '"toolbar" is not in the dictionary; did you mean "tollbar"?'
     verdict: false-positive
     note: '"toolbar" is an ordinary word'
   - rule: undefined-acronym
-    line: 71
+    line: 79
     text: AA criteria. All government emails, docu
     message: '"AA" is used without an expansion (7 such acronyms)'
     verdict: false-positive
     note: A, AA and AAA are WCAG conformance level names, not acronyms
   - rule: undefined-acronym
-    line: 71
+    line: 79
     text: AAA wherever possible.
     message: '"AAA" is used without an expansion (7 such acronyms)'
     verdict: false-positive
     note: A, AA and AAA are WCAG conformance level names, not acronyms
   - rule: list-item-form-mix
-    line: 87
+    line: 97
     text: All images must have alt text or be mark
     message: '"All images must have alt text or be marked as decorative." opens with a noun phrase; the other items in this list open with a verb (2 of 6)'
     verdict: correct
   - rule: list-item-form-mix
-    line: 88
+    line: 98
     text: Images intended to convey meaning must h
     message: '"Images intended to convey meaning must have a textual equivalent available." opens with a noun phrase; the other items in this list open with a verb (2 of 6)'
     verdict: correct
   - rule: list-item-form-mix
-    line: 109
+    line: 119
     text: The link text should make sense out of c
     message: '"The link text should make sense out of context." opens with a noun phrase; the other items in this list open with a verb (1 of 7)'
     verdict: correct
   - rule: contraction-consistency
-    line: 112
+    line: 122
     text: For example, if you’re linking to a PDF,
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
   - rule: list-item-form-mix
-    line: 122
+    line: 132
     text: Standard sans-serif fonts such as Public
     message: '"Standard sans-serif fonts such as Public Sans, Segoe UI, Roboto, Verdana, Arial, Tahoma, or Helvetica" is a phrase; the other items in this list are sentences (1 of 3)'
     verdict: false-positive
     note: all three items are noun phrases completing "we recommend:"; none is a sentence
   - rule: unbalanced-bracket
-    line: 141
+    line: 151
     text: ” for the alt text to describe the OIT s
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: a closing curly quote used to open the quotation
   - rule: unbalanced-bracket
-    line: 141
+    line: 151
     text: ”Department of Veterans Affairs Office o
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: a closing curly quote used to open the quotation
   - rule: undefined-acronym
-    line: 141
+    line: 151
     text: OIT signature logo, use alt text to conv
     message: '"OIT" is used without an expansion (7 such acronyms)'
     verdict: correct
     note: OIT is never expanded in the (OIT) form; the full name appears only inside the alt-text example
   - rule: unbalanced-bracket
-    line: 143
+    line: 153
     text: ”
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: a closing curly quote used to open the quotation
   - rule: unbalanced-bracket
-    line: 143
+    line: 153
     text: ”Visit the VA Facebook page.”
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: a closing curly quote used to open the quotation
   - rule: undefined-acronym
-    line: 143
+    line: 153
     text: VA Facebook page.”
     message: '"VA" is used without an expansion (7 such acronyms)'
     verdict: correct
   - rule: contraction-consistency
-    line: 166
+    line: 178
     text: As these types of files are accessible,
     message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: correct
   - rule: undefined-acronym
-    line: 166
+    line: 178
     text: DC® and similar software to add necessar
     message: '"DC" is used without an expansion (7 such acronyms)'
     verdict: false-positive
     note: DC is part of the product name Acrobat DC
   - rule: undefined-acronym
-    line: 166
+    line: 178
     text: OCR program—if the user has OCR software
     message: '"OCR" is used without an expansion (7 such acronyms)'
     verdict: correct

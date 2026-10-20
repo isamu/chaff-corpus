@@ -52,6 +52,6 @@ http://mobile.city.shiki.lg.jp/jump.cgi?p=5&n=4323
 
 Tweet＜外部リンク＞
 
-## このページを見ている人はこんなページも見ています
-
 Tweets by Shiki_City＜外部リンク＞
+
+<!-- https://twitter.com/share https://twitter.com/Shiki_City?ref_src=twsrc%5Etfw -->

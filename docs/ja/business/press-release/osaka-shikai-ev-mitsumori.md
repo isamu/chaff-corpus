@@ -17,6 +17,8 @@ Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
 
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
+
 ### 市会事務局公募型比較見積実施要綱について
 
 市会事務局公募型比較見積実施要綱
@@ -28,12 +30,16 @@ Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
 
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
+
 ## 探している情報が見つからない
 
 情報が見つからないときは
 
 - CC（クリエイティブコモンズ）ライセンスにおけるCC-BY4.0で提供いたします。
 - オープンデータを探す大阪市オープンデータポータルサイト
+
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ -->
 
 ## このページの作成者・問合せ先
 

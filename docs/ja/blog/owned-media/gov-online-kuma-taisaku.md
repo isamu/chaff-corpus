@@ -38,6 +38,8 @@
 
 クマの出没情報は、環境省「国民向けのクマに関する情報」から確認できます。
 
+<!-- https://www.env.go.jp/nature/choju/effort/effort12/kuma-info-citizen.html -->
+
 ### 「いつもの道」でも油断は禁物
 
 近年はクマの出没範囲が広がっているため、散歩道や通勤・通学経路など、これまで安全だと思っていた場所でも、クマの出没情報が報告されている場合があります。
@@ -73,6 +75,8 @@
 環境省「クマ撃退スプレーの性能に係る推奨要件（令和８年８月）」
 
 独立行政法人国民生活センター「クマ撃退スプレーの備え方－事前の確認・準備が必須です－」
+
+<!-- https://www.env.go.jp/nature/choju/effort/effort12/kuma-oshirase-r080825.html https://www.kokusen.go.jp/news/data/n-20260825_1.html -->
 
 ### クマの目撃・遭遇の際は自治体や警察へ連絡
 

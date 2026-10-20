@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/fetched-text.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/fetched-text.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // The text of a fetched body in the encoding it declares: the Content-Type header first, then a <meta charset> or an
 // XML declaration near the top of an HTML or XML body, otherwise UTF-8. Many Japanese government pages are still
 // Shift_JIS. Pure.

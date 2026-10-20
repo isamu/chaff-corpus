@@ -32,6 +32,8 @@
 
 これらの主な入手方法については「緊急地震速報の入手方法について」にて解説しています。
 
+<!-- https://www.nttdocomo.co.jp/service/safety/areamail/ https://www.au.com/mobile/anti-disaster/kinkyu-sokuho/jishin-sokuho/ https://www.softbank.jp/mobile/service/urgent_news/about/eew/ https://www.ymobile.jp/service/urgent_mail/ https://network.mobile.rakuten.co.jp/service/emergency-alert-mail/ -->
+
 ## 緊急地震速報の報知音とは？
 
 テレビやラジオなどのニュース速報では、特定の音を発した後、文字や音声で内容を伝えることで、視聴者が放送内容を理解できるようにしています。このことから、緊急地震速報についても、ニュース速報と同様に、緊急地震速報を放送等する前に、特定の音を放送しています。この特定の音のことを報知音と呼んでいます。この報知音は、誰もが、どこでも、即座に理解できるように統一されていることが重要です。このことから、気象庁では、テレビやラジオ、防災行政無線等で使われているＮＨＫのチャイム音を緊急地震速報の報知音として強く推奨しています。

@@ -6,6 +6,10 @@ findings:
     text: visiting in all the different seasons.
     message: '"visiting visiting" doubles a word; one of the two is left over'
     verdict: correct
+  - rule: agreement-slip
+    line: 44
+    what: "two determiners in a row: 'the some roads' (an edit left over; 'that some roads' was meant)"
+    verdict: missed
   - rule: doubled-word
     line: 46
     text: to the high country and Tuolumne Meadows
@@ -26,7 +30,3 @@ findings:
     text: The park strives for full and equal part
     message: This list punctuates differently from the rest (1 in this document)
     verdict: correct
-  - rule: agreement-slip
-    line: 44
-    what: "two determiners in a row: 'the some roads' (an edit left over; 'that some roads' was meant)"
-    verdict: missed

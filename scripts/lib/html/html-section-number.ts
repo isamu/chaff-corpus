@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-section-number.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-section-number.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // A numbered heading followed by its own first subsection ("3. Results" then "3.1 Data", or "4. Issues" then "(1) Cost").
 // A page may set both with the same tag (<h4>3. …</h4><h4>3.1 …</h4>), so the level alone says nothing about which
 // holds which. Pure.

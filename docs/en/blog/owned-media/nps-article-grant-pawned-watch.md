@@ -39,10 +39,6 @@ Restad, Penne L., Christmas in America: A History. New York: Oxford University P
 
 John Y. Simon, ed. The Papers of Ulysses S. Grant, Volume 1: 1837-1861. Carbondale: Southern Illinois University Press, 1967, 339-340.
 
-## You Might Also Like
-
-Loading results...
-
 ## Tags
 
 Ulysses S Grant National Historic Site

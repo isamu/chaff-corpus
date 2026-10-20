@@ -6,25 +6,25 @@ findings:
     text: 第93号 2026/1/14
     message: 書き出しに挨拶がありません
     verdict: false-positive
-    note: "a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design"
+    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
   - rule: fullwidth-alnum-consistency
     line: 3
     text: 1/14
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。20 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "the issue date 2026/1/14 is in half-width digits while the body writes 令和８年１月１４日"
+    note: the issue date 2026/1/14 is in half-width digits while the body writes 令和８年１月１４日
   - rule: preamble-length
     line: 5
     text: ■リーディングDXスクールの事例からギガスタチームの推し実践を紹介します！
     message: 最初の見出しまでに 11 段落あります（2 段落まで）
     verdict: false-positive
-    note: "a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block"
+    note: a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block
   - rule: comparative-without-baseline
     line: 16
     text: より可能になります。
     message: 「より可能」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "the baseline (teaching without the shared whiteboard) is the subject of the paragraph"
+    note: the baseline (teaching without the shared whiteboard) is the subject of the paragraph
   - rule: max-sentence-length
     line: 20
     text: また、教師は子供が自分で学びを進めることができるようにと、自分の考えの説明の仕方
@@ -45,7 +45,7 @@ findings:
     text: " 推進チーム）（再掲）"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。15 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "GIGA StuDX 推進チーム here, GIGA StuDX推進チーム elsewhere"
+    note: GIGA StuDX 推進チーム here, GIGA StuDX推進チーム elsewhere
   - rule: max-paragraph-length
     line: 28
     text: ■第４回プチ学習会を開催します！
@@ -86,7 +86,7 @@ findings:
     text: 7年度 生成AIの利用に関する冬季公開学習会を開催します！
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。20 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "令和7年度 beside 令和８年 in the same item"
+    note: 令和7年度 beside 令和８年 in the same item
   - rule: max-sentence-length
     line: 47
     text: 令和８年２月２日（月）12:30～16:30 に、生成AIパイロット校によるポス
@@ -97,7 +97,7 @@ findings:
     text: よりよい「GIGA StuDXメールマガジン」を発信していくために、ご意見やご感
     message: 「よりよい」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is"
+    note: 「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is
   - rule: max-paragraph-length
     line: 64
     text: ■GIGA StuDX推進チームの独り言
@@ -124,8 +124,8 @@ findings:
     message: 全角の「４０」と書いています（この文書はふつう半角の「40」。19 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 76
+    line: 78
     text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。15 箇所のうち 2 箇所が違う）
     verdict: false-positive
-    note: "the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose"
+    note: the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose

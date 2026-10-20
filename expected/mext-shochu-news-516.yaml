@@ -1,6 +1,10 @@
 id: mext-shochu-news-516
 chaff: 0.36.0
 findings:
+  - rule: lookalike-character
+    line: 1
+    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
+    verdict: missed
   - rule: title-length
     line: 1
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27"
@@ -47,126 +51,122 @@ findings:
     message: この文は 115 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 48
+    line: 50
     text: 初等中等教育局 初等中等教育企画課 地方教育行政係
     message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 54
+    line: 58
     text: 特集は「学習指導要領改訂に向けて～各教科等別ワーキンググループにおける審議状況①
     message: この文は 120 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 56
+    line: 60
     text: 第1号となる本号では、教育課程企画特別部会の論点整理の内容（R7.9月）を解説す
     message: この文は 84 文字あります（70 文字まで）
     verdict: unjudged
   - rule: undefined-acronym
-    line: 56
+    line: 60
     text: WG及び社会・地理歴史・公民WGにおける審議の状況について解説します。
     message: 「WG」が説明なしで使われています（説明のない略語 3 個）
     verdict: unjudged
   - rule: max-kanji-continuous
-    line: 74
+    line: 80
     text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
     message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 74
+    line: 80
     text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
     message: この文は 87 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 79
+    line: 85
     text: 高等教育局 高等教育企画課高等教育政策室 政策総括係
     message: この文は 74 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 90
+    line: 98
     text: 一般社団法人授業目的公衆送信補償金等管理協会（SARTRAS）「さあとらす」編集
     message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 101
+    line: 111
     text: このたび、掲載中の動画シリーズ「ともにキヅク社会」をより活用いただくため、小学校
     message: この文は 82 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 117
+    line: 129
     text: 法務省HP上のQ＆A形式の解説資料には、学校教育に関してはどのようなものが「監護
     message: この文は 137 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 126
+    line: 140
     text: 文部科学省では、図書館・学校図書館の現状や課題を把握・分析し、運営の充実に向けた
     message: この文は 106 文字あります（70 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 136
+    line: 152
     text: )を記念し、文部科学省及び当機構の主催により開催します。国民の間に広く子供の読書
     message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 137
+    line: 153
     text: ４本立てで、ポスターセッションでは表彰者の中から選ばれた団体をはじめ、本年度から
     message: 全角の「４」と書いています（この文書はふつう半角の「4」。35 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 137
+    line: 153
     text: 当日は、式典・特別講演・ポスターセッション・表彰式の４本立てで、ポスターセッショ
     message: この文は 82 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 146
+    line: 162
     text: 総合教育政策局 地域学習推進課 図書館・学校図書館振興室
     message: この文は 73 文字あります（70 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 154
+    line: 172
     text: (日)に科学技術週間を実施します！
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 154
+    line: 172
     text: (月)～4月19日(日)に科学技術週間を実施します！
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 154
+    line: 172
     text: )～4月19日(日)に科学技術週間を実施します！
     message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 154
+    line: 172
     text: )に科学技術週間を実施します！
     message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
-    line: 156
+    line: 174
     text: あわせて、学習資料「一家に1枚 地球」を制作しました。
     message: 「あわせる」と書いています（この文書はふつう「併せる」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 167
+    line: 187
     text: 法科大学院協会では、2026年4月18日（土）に法科大学院の魅力を伝える合同説明
     message: この文は 85 文字あります（70 文字まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
-    line: 167
+    line: 187
     text: 法科大学院協会では、2026年4月18日（土）に法科大学院の魅力を伝える合同説明
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 176
+    line: 196
     text: 高等教育局 専門教育課 専門職大学院室 法科大学院係
     message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 184
+    line: 206
     text: 文部科学省では、映画その他の映像作品及び紙芝居について、教育上価値が高く、学校教
     message: この文は 133 文字あります（70 文字まで）
     verdict: unjudged
-  - rule: lookalike-character
-    line: 1
-    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
-    verdict: missed

@@ -12,5 +12,5 @@ license:
   url: https://github.com/GSA/Section508.gov/blob/cfc700f1a866a18a19dc0826d5961e63fee87bca/LICENSE.md
   note: "Work of the US federal government (GSA), public domain in the US (17 U.S.C. 105) and dedicated worldwide under CC0 1.0 (LICENSE.md of GSA/Section508.gov, the site's source, at the pinned commit); Source: Section508.gov (https://www.section508.gov/create/accessible-meetings/); converted to Markdown"
 redistribute: true
-sha256: 7bd4b33dff047bc45d3bc2b499f2c94588d575afb47f125380f6473a1f9a5b1e
+sha256: 7bd7113df7471cc5114cd5313901cc4c4dd3c462ea825e5ff88eece06cb6c662
 notes: The source is html; the text is source.format html converted by scripts/lib/source-format.ts, which drops the page title (in the site banner) and link-only lists.

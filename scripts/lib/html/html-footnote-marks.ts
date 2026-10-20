@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-footnote-marks.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-footnote-marks.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // A footnote's reference mark: a superscript that is a link (<sup><a …>1</a></sup>), or a link to a place on the same
 // page holding nothing but a superscript (<a href="#fn1"><sup>1</sup></a>). Read as text the number sticks to the
 // sentence it follows ("recessions.1 Over"), so the mark is dropped; the note itself stays where the page has it. A

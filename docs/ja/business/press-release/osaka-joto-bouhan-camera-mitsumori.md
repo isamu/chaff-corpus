@@ -17,6 +17,8 @@
 城東区役所3階33番　市民協働課（防災・防犯）
 電話：06-6930-9045
 
+<!-- https://www.mapnavi.city.osaka.lg.jp/osakacity/Map?mid=1&mps=5000&mpy=34.703138&mpx=135.54466&mtl=1001&fid=5176-1001 -->
+
 ### ファックスで提出される場合
 
 ファックス番号：050-3535-8685
@@ -63,6 +65,8 @@ Word形式
 Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
+
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
 
 ## 物品供給見積案件に関する質問回答
 

@@ -42,10 +42,6 @@ Today the park protects more than 47,000 acres, and the simple pleasures of "oce
 
 The requested video is no longer available.
 
-## You Might Also Like
-
-Loading results...
-
 ## Tags
 
 Acadia National Park

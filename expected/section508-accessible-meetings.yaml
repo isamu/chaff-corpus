@@ -48,30 +48,30 @@ findings:
     message: This sentence runs 42 words (limit 40)
     verdict: correct
   - rule: hyphen-as-dash
-    line: 169
+    line: 171
     text: " - only use one audio connection method"
     message: '"-" stands in for a dash'
     verdict: correct
   - rule: one-sentence-paragraph-run
-    line: 185
+    line: 187
     text: Establish communication with support tea
     message: 9 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
     note: list items (USWDS icon list) that the html conversion writes as paragraphs
   - rule: one-sentence-paragraph-run
-    line: 205
+    line: 207
     text: Ask whether all attendees have what they
     message: 6 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
     note: list items (USWDS icon list) that the html conversion writes as paragraphs
   - rule: one-sentence-paragraph-run
-    line: 221
+    line: 223
     text: Confirm access to the meeting platform a
     message: 7 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
     note: list items (USWDS icon list) that the html conversion writes as paragraphs
   - rule: max-sentence-length
-    line: 264
+    line: 268
     text: "*Disclaimer: Reference in this site to a"
     message: This sentence runs 42 words (limit 40)
     verdict: correct

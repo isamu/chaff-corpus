@@ -35,147 +35,147 @@ findings:
     message: 「ともなう」と書いています（この文書はふつう「伴う」と書く語です。12 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: no-mixed-desumasu
-    line: 257
+    line: 259
     text: ○○地方では５時から６時までの１時間に20mmの強い雨が降っています。
     message: この文だけ他と文末の調子が違います（本文の中で 2 文）
     verdict: false-positive
     note: an example of a weather bulletin's wording, quoted under the term
   - rule: no-mixed-desumasu
-    line: 265
+    line: 267
     text: ○○市付近では１時間におよそ40mmの激しい雨となっています。
     message: この文だけ他と文末の調子が違います（本文の中で 2 文）
     verdict: false-positive
     note: an example of a weather bulletin's wording, quoted under the term
   - rule: fullwidth-alnum-consistency
-    line: 269
+    line: 271
     text: 1時間に50mm以上80mm未満の雨。
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。13 箇所のうち 3 箇所が違う）
     verdict: correct
     note: a one-digit 1 half-width where the page writes １時間 elsewhere
   - rule: fullwidth-alnum-consistency
-    line: 273
+    line: 275
     text: 1時間に80mm以上の雨。
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。13 箇所のうち 3 箇所が違う）
     verdict: correct
     note: a one-digit 1 half-width where the page writes １時間 elsewhere
   - rule: no-doubled-joshi
-    line: 281
+    line: 283
     text: の過去の気象データ検索の天気概況については、該当期間に30ｍｍ以上の雨の場合に記
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 301
+    line: 303
     text: (雪)
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 301
+    line: 303
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 339
+    line: 341
     text: (雨)
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 339
+    line: 341
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: kutoten-consistency
-    line: 425
+    line: 427
     text: ，吹雪や降雪時において、視程より近い距離に雪以外に識別できる地物が無い状況。
     message: 読点を「，」と書いています（この文書はふつう「、」。100 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: orthographic-variant
-    line: 425
+    line: 427
     text: 無い状況。
     message: 「無い」と書いています（この文書はふつう「ない」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 459
+    line: 461
     text: (船体着氷)
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 459
+    line: 461
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: hankaku-kana
-    line: 477
+    line: 479
     text: ｢屋根からの落雪にも注意してください｣等の表現で使用する。
     message: 半角の片仮名「｢」があります（全角は「「」）
     verdict: correct
     note: half-width corner brackets
   - rule: hankaku-kana
-    line: 477
+    line: 479
     text: ｣等の表現で使用する。
     message: 半角の片仮名「｣」があります（全角は「」」）
     verdict: correct
     note: half-width corner brackets
   - rule: max-kanji-continuous
-    line: 541
+    line: 543
     text: 大雪注意報基準以上の雪。季節予報および天候情報においては、数日以上にわたる降雪に
     message: 「大雪注意報基準以上」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
-    line: 545
+    line: 547
     text: の過去の気象データ検索の天気概況については、該当期間に北海道内の気象官署と青森、
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 619
+    line: 621
     text: １０ｍｍ以上の日数を「雨日数」としている。
     message: 全角の「１０ｍｍ」と書いています（この文書はふつう半角の「10mm」。26 箇所のうち 1 箇所が違う）
     verdict: correct
     note: a two-digit number in full-width letters
   - rule: no-doubled-joshi
-    line: 644
+    line: 646
     text: の正の値の合計を「降雪の深さ」として用いる。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 666
+    line: 668
     text: (観測を行う場所)の地面の半ば以上を雪が覆う現象。「積雪なし」とは、露場の地面に
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 666
+    line: 668
     text: )の地面の半ば以上を雪が覆う現象。「積雪なし」とは、露場の地面に雪が全くないか、
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: unused-definition
-    line: 666
+    line: 668
     text: 「積雪０cm」とは、露場(観測を行う場所)の地面の半ば以上を雪が覆う現象。「積雪
     message: 「積雪０cm」を定義していますが、本文で使っていません
     verdict: false-positive
     note: a glossary defines its terms; they are not meant to be used again
   - rule: unused-definition
-    line: 666
+    line: 668
     text: 「積雪なし」とは、露場の地面に雪が全くないか、または半ば以上を覆っていない状態。
     message: 「積雪なし」を定義していますが、本文で使っていません
     verdict: false-positive
     note: a glossary defines its terms; they are not meant to be used again
   - rule: bracket-width-consistency
-    line: 722
+    line: 724
     text: (雪)が繰り返すような現象に対しては「にわか雨(雪)」は用いない。
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 722
+    line: 724
     text: )が繰り返すような現象に対しては「にわか雨(雪)」は用いない。
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: hankaku-kana
-    line: 722
+    line: 724
     text: ､対流雲が次々と通り､晴れとしゅう雨(雪)が繰り返すような現象に対しては「にわか
     message: 半角の片仮名「､」があります（全角は「、」）
     verdict: correct
     note: half-width ideographic commas
   - rule: hankaku-kana
-    line: 722
+    line: 724
     text: ､晴れとしゅう雨(雪)が繰り返すような現象に対しては「にわか雨(雪)」は用いない
     message: 半角の片仮名「､」があります（全角は「、」）
     verdict: correct

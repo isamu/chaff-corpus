@@ -117,6 +117,8 @@ The park strives for full and equal participation for all visitors and continual
 
 Citizens and legal residents with permanent disabilities are entitled to a free Access Pass that provides the holder free entrance to federal fee areas. The pass is available at all park entrances stations and information centers.
 
+<!-- https://store.usgs.gov/access-pass -->
+
 ### How can I get an educational fee waiver?
 
 Educational fee waivers are available to educational groups that meet certain criteria.

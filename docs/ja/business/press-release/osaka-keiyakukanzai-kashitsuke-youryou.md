@@ -28,6 +28,8 @@
 
 システム利用にあたってのよくある質問
 
+<!-- https://lgpos.task-asp.net/cu/271004/ea/residents/procedures/apply/7ef06468-1f2a-4d32-b9e1-907c9f630bd6/start https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home https://lgpos.task-asp.net/cu/271004/ea/residents/manual/index https://lgpos.task-asp.net/cu/271004/ea/residents/portal/faq -->
+
 ## 1　入札のスケジュール
 
 入札等スケジュール
@@ -72,6 +74,8 @@ PDFファイルを閲覧できない場合には、Adobe 社のサイトから A
 
 ※入札物件は、すべて現状有姿で貸付けますので、お申込み前に現況及び物件の近隣周辺環境を必ず確認してください。土壌汚染や埋設物について、本市は調査、対策を行いません。ガレキ、土砂、雑草等が残置していても本市は処分等を行いません。必要に応じて落札者の負担で対応してください。また、本市は、本物件について、種類、性質又は数量に関して本契約の内容に適合しない場合でも、その一切の責任を負いません。なお、申込時と契約時において、現況に変更があった場合においても、契約時の現況が優先します。如何なる場合も本市は責任を負いません。
 
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
+
 ## 3　現地見学会
 
 下記のとおり、現地見学会を開催します。現地見学会の参加は、入札参加の条件にはしておりませんが、物件は現状有姿のまま引渡しますので、できる限りご参加ください。
@@ -83,6 +87,8 @@ PDFファイルを閲覧できない場合には、Adobe 社のサイトから A
 申込受付期間：令和8年10月15日（木曜日）から令和8年10月23日（金曜日）17時30分まで
 
 ＜QRコード＞
+
+<!-- https://lgpos.task-asp.net/cu/271004/ea/residents/procedures/apply/6f102637-5f92-48f2-ac81-6c61fd612c54/start -->
 
 ## 探している情報が見つからない
 

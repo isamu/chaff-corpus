@@ -8,13 +8,13 @@ findings:
     verdict: correct
     note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
-    line: 62
+    line: 64
     text: " - including deposits that were held by"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
-    line: 120
+    line: 124
     text: " - including deposits that were held by"
     message: '"-" stands in for a dash'
     verdict: correct

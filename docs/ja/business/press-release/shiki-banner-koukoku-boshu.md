@@ -57,6 +57,8 @@
 
 申込みフォームはこちら＜外部リンク＞
 
+<!-- https://logoform.jp/form/oyr6/1672054 -->
+
 #### その他
 
 有料広告の詳しい情報、市で行っているその他の広告については、下記ページをご覧ください。
@@ -78,6 +80,6 @@ Adobe Readerをお持ちでない方は、バナーのリンク先からダウ�
 
 Tweet＜外部リンク＞
 
-## このページを見ている人はこんなページも見ています
-
 Tweets by Shiki_City＜外部リンク＞
+
+<!-- https://twitter.com/share https://twitter.com/Shiki_City?ref_src=twsrc%5Etfw -->

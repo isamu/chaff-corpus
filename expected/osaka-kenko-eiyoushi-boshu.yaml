@@ -22,132 +22,132 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 3 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 45
+    line: 47
     text: (日曜日)
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 45
+    line: 47
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 55
+    line: 57
     text: (日曜日)
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 55
+    line: 57
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: dangling-reference
-    line: 83
+    line: 85
     text: 第60条から第63条までに規定する罪を犯し、刑に処せられた者
     message: 「第60条」（番地 60）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
-    line: 83
+    line: 85
     text: 第63条までに規定する罪を犯し、刑に処せられた者
     message: 「第63条」（番地 63）はこの文書にありません
     verdict: unjudged
   - rule: url-run-on
-    line: 95
+    line: 97
     text: https://lgpos.task-asp.net/cu/271004/ea/
     message: URL「https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home」の直後に「）」が続いています。リンクがそこまで伸びます
     verdict: correct
   - rule: orthographic-variant
-    line: 111
+    line: 115
     text: 申込の申請を受け付けた旨のメール通知がありますので、削除せずに保管してください。
     message: 「申込」と書いています（この文書はふつう「申込み」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 113
+    line: 117
     text: (水曜日)までに大阪市健康局総務部総務課までご連絡ください。
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 113
+    line: 117
     text: )までに大阪市健康局総務部総務課までご連絡ください。
     message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: date-without-year
-    line: 118
+    line: 122
     text: 10月1日から11月1日まで
     message: 「10月1日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: date-without-year
-    line: 118
+    line: 122
     text: 11月1日まで
     message: 「11月1日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: date-without-year
-    line: 123
+    line: 127
     text: 11月12日まで
     message: 「11月12日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: date-without-year
-    line: 123
+    line: 127
     text: 11月7日から11月12日まで
     message: 「11月7日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: date-without-year
-    line: 127
+    line: 131
     text: 11月15日
     message: 「11月15日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 162
+    line: 166
     text: (木曜日）
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: unbalanced-bracket
-    line: 162
+    line: 166
     text: ）
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 170
+    line: 174
     text: (火曜日)
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 170
+    line: 174
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 178
+    line: 182
     text: 「採用候補者名簿」の登載は令和9年4月1日までとなり、採用決定者の採用辞退や退職
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 189
+    line: 193
     text: 学校設置者等及び民間教育保育等事業者による児童対象性暴力等の防止等のための措置に
     message: この文は 143 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
-    line: 189
+    line: 193
     text: の防止等のための措置に関する法律（以下「こども性暴力防止法」という。）の施行（令
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 216
+    line: 222
     text: 第4条　職員は、自らの行動が市政に対する市民の信用に大きな影響を与えることを深く
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 219
+    line: 225
     text: 第8条　市長は、倫理原則を踏まえ、職員の倫理意識の高揚を図るために必要な事項に関
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged
   - rule: numbering-gap
-    line: 219
+    line: 225
     text: 第8条　市長は、倫理原則を踏まえ、職員の倫理意識の高揚を図るために必要な事項に関
     message: 「第4条」の次が「第8条」です（5 番目のはず）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 220
+    line: 226
     text: 2　職員倫理規則には、服務規律の確保及び市民の疑惑や不信を招くような行為の防止の
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged

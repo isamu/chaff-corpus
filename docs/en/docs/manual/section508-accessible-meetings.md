@@ -128,6 +128,8 @@ In addition, you will likely need to work carefully with your space to ensure al
 
 For further guidance on making in-person spaces accessible, visit the U.S. Access Board website.
 
+<!-- https://www.access-board.gov/ -->
+
 ## Running Accessible Meetings
 
 ### Before Your Meeting
@@ -250,6 +252,8 @@ Reach out to your agency's Section 508 Program Manager
 
 By making your meetings accessible, you are contributing to the ongoing effort to have agencies that are inclusive and open to all.
 
+<!-- https://www.access-board.gov/ict/ -->
+
 ## Additional Resources
 
 - Create Accessible Digital Products
@@ -264,3 +268,5 @@ By making your meetings accessible, you are contributing to the ongoing effort t
 *Disclaimer: Reference in this site to any specific commercial product, process, or service, or the use of any trade, firm or corporation name is for the information and convenience of the public, and does not constitute endorsement, recommendation, or favoring by GSA. GSA does not guarantee that outside websites or products comply with Section 508 (accessibility requirements) of the Rehabilitation Act.
 
 Reviewed/Updated: July 2026
+
+<!-- https://www.cdc.gov/radiation-emergencies/media/pdfs/2025/01/Facilitator-Resources-508.pdf https://www.w3.org/TR/remote-meetings/#creating-accessible-content-for-remote-meetings https://www.w3.org/WAI/people-use-web/ https://www.w3.org/WAI/teach-advocate/accessible-presentations/ https://www1.nyc.gov/assets/mopd/downloads/pdf/virtual-meetings-accessibility-guide.pdf -->

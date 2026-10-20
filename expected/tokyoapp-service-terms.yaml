@@ -38,138 +38,138 @@ findings:
     sha256: fb0448eeab2726d9bd942692c4abe86cee0a61b3cb2dec332fbbcf8d313452de
     verdict: unjudged
   - rule: undefined-term
-    line: 153
+    line: 155
     sha256: 27eb78c861eb1aafc85d37dd39385ee5de08f7c53858c5ac41bb132a8998c3b5
     verdict: unjudged
   - rule: requirement-smell
-    line: 166
+    line: 168
     sha256: ecaee0e2198e7ffea748a116c4010451034379ff0db3259f92273832d5ab1a8f
     verdict: unjudged
   - rule: hankaku-kana
-    line: 183
+    line: 185
     sha256: 6f2a5f7002c525017fa5ac0bf6132b33f68cc6bf8681c58ddf7db299fa3f323b
     verdict: unjudged
   - rule: absolute-exception
-    line: 205
+    line: 207
     sha256: a981fb17d5f8f8e11a19180203b0afc9a088def985bc824f9ec151502b5ee6ee
     verdict: unjudged
   - rule: absolute-exception
-    line: 217
+    line: 219
     sha256: 2c4371904fa4e4c9d15dec4729f5650ab900063d9f2c22c2288bea34abc1d45f
     verdict: unjudged
   - rule: requirement-smell
-    line: 219
+    line: 221
     sha256: e8cd1878fde9e4f7ab16fa19808de30160e374b227a26d8ae742e4ca8b2eadb5
     verdict: unjudged
   - rule: absolute-exception
-    line: 258
+    line: 260
     sha256: df30db09791006ebea90aec24bf63ab7b727b8b0bf5d0bc65b65d5d68e80e874
     verdict: unjudged
   - rule: use-before-definition
-    line: 277
+    line: 279
     sha256: ec037ed43a328cf7c5fcda027049b332c94fd965665e0945bc2d6962153ffb52
     verdict: unjudged
   - rule: requirement-smell
-    line: 289
+    line: 291
     sha256: 464109ed511593a21a9472c774dc79218d9b2c9f55fe2c8a4093afe89c83db79
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 311
+    line: 313
     sha256: 4a8b66697487a5ca4fb8461de1d0d5d7d79a6c5f8293c441c9bb18231f3a5cad
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 311
+    line: 313
     sha256: 4ad82a0020dba79d3f306b599a819eaaccbc3b744ef5a14b19d0b3a5fcde035b
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 311
+    line: 313
     sha256: 5d93ff0020cf2118b00ec412364ba6f24826a1897d372a7ea95bba86f6df0695
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 312
+    line: 314
     sha256: 95318bbd52f15dbe674191810fca23f46ea41bac1f1717dc7cf9b2375a74e6a3
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 312
+    line: 314
     sha256: b60ab6bf48056f66c27fe92c74e82d9456b2dd713eb7d97f892900eeb3d55012
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 312
+    line: 314
     sha256: f8731f5f6565857087c3530ce1b01f03183855eb19779a380ace5bd29e0121d0
     verdict: unjudged
   - rule: katakana-long-vowel
-    line: 330
+    line: 332
     sha256: 20a4765d2d4a37f5678e8b230a914fa56ff6a80611878c2ab144422c1cbac4f1
     verdict: unjudged
   - rule: requirement-smell
-    line: 330
+    line: 332
     sha256: 1c07bd1038b548010d88a286be74703428abaa3d0fb5de4637e1eab48f520a26
     verdict: unjudged
   - rule: requirement-smell
-    line: 334
+    line: 336
     sha256: 1c07bd1038b548010d88a286be74703428abaa3d0fb5de4637e1eab48f520a26
     verdict: unjudged
   - rule: duplicate-definition
-    line: 380
+    line: 382
     sha256: 6d82aeab1ac15ee5abdcc06dfae2c7121577d5a58a0b68848efd210e62471296
     verdict: unjudged
   - rule: duplicate-definition
-    line: 380
+    line: 382
     sha256: 7f124af51234a5af470df5f4306f37abe89c2cc3358230a471dc2734840e0264
     verdict: unjudged
   - rule: duplicate-definition
-    line: 380
+    line: 382
     sha256: c15e5a0447613e4d76fc3fdddb203ad1f5c2eeb0a50ca08a5497dfb08f596138
     verdict: unjudged
   - rule: defined-term-form
-    line: 386
+    line: 388
     sha256: 5ce8db836578ed523abbbfee66911fda46f38e379ff4a7a0d1c0e9ccc8f23a05
     verdict: unjudged
   - rule: duplicate-definition
-    line: 386
+    line: 388
     sha256: 528d49d090659d18d5fd40f9c2fb6bfea582d80262dcee218105a50ca7c61e2f
     verdict: unjudged
   - rule: duplicate-definition
-    line: 387
+    line: 389
     sha256: 1bba271d644a76d85fc4c4284af7b34a83464f97d095290e591870b35b00c8ac
     verdict: unjudged
   - rule: duplicate-definition
-    line: 388
+    line: 390
     sha256: 71a32d58c7c769d6e73863351db9ab38a4f43dafab544a890f0cd86b39abf8c1
     verdict: unjudged
   - rule: duplicate-definition
-    line: 389
+    line: 391
     sha256: 4f011c7932023fed5665a15fbf302b182ec8125740924e976aaa3521132e5bce
     verdict: unjudged
   - rule: duplicate-definition
-    line: 389
+    line: 391
     sha256: ce1206a22d9200135ce282db4953a5ff3af012a6688dbe16205abca602329f72
     verdict: unjudged
   - rule: duplicate-definition
-    line: 390
+    line: 392
     sha256: 5f7f204a0da4099548f338fc3d4b6e4e73ca9b990681361a4f93a727084cf7f6
     verdict: unjudged
   - rule: duplicate-definition
-    line: 391
+    line: 393
     sha256: 87bf4a8631353eea786f4f4d363d52a67eef47506da6eb9b239e66c0486be83c
     verdict: unjudged
   - rule: duplicate-definition
-    line: 392
+    line: 394
     sha256: 66e940c3f1514998a71ad356b7bb2be84425d439aafaf657ad3df00cea1ee2c7
     verdict: unjudged
   - rule: katakana-long-vowel
-    line: 474
+    line: 476
     sha256: c4c6b8ff3a6225c3a79d6ea530f0d4bdd326e82e2bf3e7831fc837a438a145ba
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 476
+    line: 478
     sha256: 03eb2d4f6b95aabedf5a749345086c95877504f28e446ffdb74a75630e4207de
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 494
+    line: 496
     sha256: f871589538408f2ec56d5e7f1aa83f0b0bd01fe942c126e1b95ca1b9a5f4a4a3
     verdict: unjudged
   - rule: unbalanced-bracket
-    line: 494
+    line: 496
     sha256: f2e44c6c9545f08ba725de2c18e7dcc548cb28425cf6847278b68c3f03f59819
     verdict: unjudged

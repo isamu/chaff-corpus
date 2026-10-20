@@ -12,5 +12,5 @@ license:
   url: https://www.govinfo.gov/about/policies
   note: "Public domain: a work of the United States Government (17 U.S.C. 105; govinfo \"Public Domain & Copyright Notice\", https://www.govinfo.gov/about/policies). Source: United States Code, 2023 Edition, 5 U.S.C. 551, U.S. Government Publishing Office (govinfo); converted to Markdown"
 redistribute: true
-sha256: f4579efa0857f7f479696b105b831afbdee96fcd93a3d6734f7197016f962c96
-notes: "The text is source.format html converted with the corpus converter as it is on isamu/lab main at 4baffd59 (isamu/lab#1658, #1663, #1667, #1670). The converter drops the group headings \"Editorial Notes\" / \"Statutory Notes and Related Subsidiaries\" / \"Executive Documents\" (each an h4 with nothing under it before the next h4; isamu/lab#1667 keeps only a numbered heading followed by its own subsection, so these stay dropped); nothing was restored by hand."
+sha256: 1f00922a8eff5b295582fd681185fa43fc299704fac0dfd411a638c1cfb527ff
+notes: "The text is source.format html converted with the corpus converter as it is on isamu/lab main at b87ecc66 (isamu/lab#1658, #1663, #1667, #1670, #1711, #1713, #1714). The converter drops the group headings \"Editorial Notes\" / \"Statutory Notes and Related Subsidiaries\" / \"Executive Documents\" (each an h4 with nothing under it before the next h4; isamu/lab#1667 keeps only a numbered heading followed by its own subsection, so these stay dropped); nothing was restored by hand."

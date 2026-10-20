@@ -6,31 +6,31 @@ findings:
     text: '" An odd cartoon underneath titled "Ulys'
     message: The quote mark " here, where the document usually writes “” (4 of 24)
     verdict: correct
-    note: "straight quotes in the photo caption, where the article writes curly ones"
+    note: straight quotes in the photo caption, where the article writes curly ones
   - rule: quote-style-consistency
     line: 5
     text: '" shows Grant on a stage alongside the h'
     message: The quote mark " here, where the document usually writes “” (4 of 24)
     verdict: correct
-    note: "straight quotes in the photo caption, where the article writes curly ones"
+    note: straight quotes in the photo caption, where the article writes curly ones
   - rule: quote-style-consistency
     line: 5
     text: '"Merry Christmas to All." An odd cartoon'
     message: The quote mark " here, where the document usually writes “” (4 of 24)
     verdict: correct
-    note: "straight quotes in the photo caption, where the article writes curly ones"
+    note: straight quotes in the photo caption, where the article writes curly ones
   - rule: quote-style-consistency
     line: 5
     text: '"Ulysses the Giant Killer" shows Grant o'
     message: The quote mark " here, where the document usually writes “” (4 of 24)
     verdict: correct
-    note: "straight quotes in the photo caption, where the article writes curly ones"
+    note: straight quotes in the photo caption, where the article writes curly ones
   - rule: quote-style-consistency
     line: 7
     text: "'s Weekly"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 18)
     verdict: correct
-    note: "a straight apostrophe in the image credit, where the article writes curly ones"
+    note: a straight apostrophe in the image credit, where the article writes curly ones
   - rule: max-paragraph-length
     line: 9
     text: Ulysses S. Grant struggled financially d
@@ -46,19 +46,19 @@ findings:
     text: Jan 23/58. U.S. Grant
     message: "\"Jan 23\" has no year, and the document's dates run from 1857 to 2023, so the year is unclear"
     verdict: false-positive
-    note: "the year is written after the slash (Jan 23/58 is 23 January 1858), the old short form in a quoted receipt"
+    note: the year is written after the slash (Jan 23/58 is 23 January 1858), the old short form in a quoted receipt
   - rule: max-sentence-length
     line: 20
     text: And I hereby fully authorize and empower
     message: This sentence runs 44 words (limit 40)
     verdict: false-positive
-    note: "the sentence is a 1857 receipt quoted verbatim; the article cannot shorten it"
+    note: the sentence is a 1857 receipt quoted verbatim; the article cannot shorten it
   - rule: oxford-comma-consistency
     line: 20
     text: And I hereby fully authorize and empower
     message: This list punctuates differently from the rest (1 in this document)
     verdict: false-positive
-    note: "a list inside a receipt quoted verbatim; its punctuation is the receipt's, not the article's"
+    note: a list inside a receipt quoted verbatim; its punctuation is the receipt's, not the article's
   - rule: max-paragraph-length
     line: 26
     text: Yet another consideration is that gift g
@@ -79,10 +79,10 @@ findings:
     text: "'s fourth and last child, Jesse Root Gra"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 18)
     verdict: correct
-    note: "Grant family's with a straight apostrophe in a paragraph that otherwise writes curly ones"
+    note: Grant family's with a straight apostrophe in a paragraph that otherwise writes curly ones
   - rule: heading-level-skip
     line: 34
     text: "### Further Reading"
     message: Heading "Further Reading" goes from level 1 to level 3 (expected 2)
     verdict: correct
-    note: "the page goes from the title (h1) to an h3 for Further Reading"
+    note: the page goes from the title (h1) to an h3 for Further Reading

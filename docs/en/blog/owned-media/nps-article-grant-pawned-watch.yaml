@@ -12,5 +12,5 @@ license:
   url: https://www.nps.gov/aboutus/disclaimer.htm
   note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/articles/000/did-ulysses-s-grant-pawn-his-watch-to-purchase-christmas-gifts-for-his-children.htm); converted to Markdown; images are not included, only their captions and credit lines'
 redistribute: true
-sha256: 0230eff1ab9e363fa9945232a6bb6ee94807cfe32afb6797ae611b84c7399ae3
-notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", "You Might Also Like", "Loading results...", the tags) are kept as the converter gives them. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.
+sha256: 274c2d5e9fb2c6223305547a48678358aac82b319a326c6879a131007dbd5320
+notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", the tags) are kept as the converter gives them; the "You Might Also Like" box, which a script fills in, is dropped (isamu/lab#1714). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

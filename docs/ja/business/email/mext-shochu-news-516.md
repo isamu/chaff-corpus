@@ -37,6 +37,8 @@ https://www.toyokan.co.jp/pages/shotokyoiku
 初等中等教育局 教育課程課 教育課程第一係
 E-mail：kyoikuichikakari@mext.go.jp
 
+<!-- https://www.toyokan.co.jp/pages/shotokyoiku -->
+
 ### （2）【発行】教育委員会月報3月号を文科省HPに掲載しました！
 
 3月号は、「シリーズ 地方発！我が教育委員会の取組」をはじめ、読み応えのある記事を掲載しております。
@@ -49,6 +51,8 @@ https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm
 電話：03-5253-4111（内線：4676）
 E-mail：iinkai@mext.go.jp
 
+<!-- https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm -->
+
 ### （3）「中等教育資料」4月号（3月27日刊行！）
 
 特集は「学習指導要領改訂に向けて～各教科等別ワーキンググループにおける審議状況①」
@@ -59,6 +63,8 @@ https://www.gakuji.co.jp/chuutoukyouiku
 （文部科学省窓口）
 初等中等教育局 教育課程課 教育課程第三係
 E-mail：chuto@mext.go.jp
+
+<!-- https://www.gakuji.co.jp/chuutoukyouiku -->
 
 ## 【教職員向け】
 
@@ -80,6 +86,8 @@ E-mail：portraits-jim@niad.ac.jp
 電話：03-5253-4111（内線：3772）
 E-mail：koukyoik@mext.go.jp
 
+<!-- https://portraits.niad.ac.jp/foruser/forteacher.html -->
+
 ### （2）教育現場のための著作権情報誌「さあとらす」第8号発行
 
 第8号は4月中旬に全国の学校等にお届け予定です。本誌は、令和8年度より年間4回（4、7、10、1月）の発行となります。より誌面の充実を図っていきますので、皆様からのご意見、ご感想を心よりお待ちしております。
@@ -94,6 +102,8 @@ E-mail：magazine@sartras.or.jp
 文化庁 著作権課 著作物流通推進室管理係
 電話：03-5253-4111（内線：4843）
 E-mail：ckanri@mext.go.jp
+
+<!-- https://sartras.or.jp/chosakukenjohoshi/ -->
 
 ### （3）JST「サイエンスティーム」STEAM教育支援補助教材を公開
 
@@ -110,6 +120,8 @@ E-mail：scienceteam@jst.go.jp
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
 
+<!-- https://scienceteam.jst.go.jp/starter/ -->
+
 ## 【学校・教育行政関係者向け】
 
 ### （1）民法等の一部を改正する法律が本年4月1日に施行されます
@@ -121,6 +133,8 @@ https://www.moj.go.jp/MINJI/minji07_00357.html
 初等中等教育局 初等中等教育企画課 教育制度改革室戦略企画係
 E-mail：syokyo@mext.go.jp
 
+<!-- https://www.moj.go.jp/MINJI/minji07_00357.html -->
+
 ### （2）「図書館が拓く未来の学びと地域社会（報告書）」を公表しました
 
 文部科学省では、図書館・学校図書館の現状や課題を把握・分析し、運営の充実に向けた検討を行うため、「図書館・学校図書館の運営の充実に関する有識者会議」を設置し、令和6年12月より10回にわたり議論を進めてきました。
@@ -130,6 +144,8 @@ https://www.mext.go.jp/b_menu/shingi/chousa/shougai/050/index.html
 （文部科学省窓口）
 総合教育政策局 地域学習推進課 図書館・学校図書館振興室
 E-mail：tosyo@mext.go.jp
+
+<!-- https://www.mext.go.jp/b_menu/shingi/chousa/shougai/050/index.html -->
 
 ### （3）令和8年度「子どもの読書活動推進フォーラム」の開催について
 
@@ -147,6 +163,8 @@ E-mail：honbu-jigyoukakari@niye.go.jp
 電話：03-5253-4111（内線：2093）
 E-mail：tosyo@mext.go.jp
 
+<!-- https://www.niye.go.jp/services/dokusho.html -->
+
 ## 【児童・生徒向け】
 
 ### （1）令和8年度（第67回）科学技術週間が始まります！
@@ -161,6 +179,8 @@ https://www.mext.go.jp/stw/
 （文部科学省窓口）
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
+
+<!-- https://www.mext.go.jp/stw/ -->
 
 ### （2）ロースクールへ行こう！！ 2026年度
 
@@ -177,6 +197,8 @@ E-mail：jals+caravan2026@jimu-kyoku.net
 電話：03-5253-4111（内線：3349）
 E-mail：sen-ps@mext.go.jp
 
+<!-- https://www.lskyokai.jp/caravan/ -->
+
 ## 【その他】
 
 ### （1）2026年2月の文部科学省選定作品等の紹介
@@ -189,6 +211,8 @@ https://www.mext.go.jp/content/20260304-mxt_jogai01-000042368_11.pdf
 （文部科学省窓口）
 初等中等教育局 学校情報基盤・教材課 映像等審査担当
 E-mail：emedia@mext.go.jp
+
+<!-- https://www.mext.go.jp/content/20260304-mxt_jogai01-000042368_11.pdf -->
 
 ## お問合せ先
 

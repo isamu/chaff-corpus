@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-lost-tags.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-lost-tags.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // A paragraph's start tag that lost its "<" upstream and so reached the page as text: the eCFR serves 16 CFR 310.4(b)
 // with "… 45 CFR 160.103. P&gt;(2) It is an abusive …", where "P>" is what is left of the <P> that opened paragraph (2).
 // Read as text it glues the paragraph to the one before and leaves "P>" in the sentence. Only a P and a ">" standing

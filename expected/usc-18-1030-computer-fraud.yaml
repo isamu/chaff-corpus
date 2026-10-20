@@ -8,665 +8,665 @@ findings:
     verdict: false-positive
     note: a spaced hyphen separating a Code division label from its name (PART I - TITLE), the citation header's own convention
   - rule: title-case-consistency
-    line: 9
+    line: 11
     text: ""
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: false-positive
     note: "the section catchline is in sentence case, the notes' headings in title case: two kinds of heading"
   - rule: numbering-gap
-    line: 33
+    line: 35
     text: (6) knowingly and with intent to defraud
     message: '"(6)" follows "(4)" (expected number 5)'
     verdict: false-positive
     note: a nested statutory enumeration ((A)(i), (ii) …) printed as flat paragraphs, or a combined label like "(c)(1)", read as one broken list
   - rule: bracket-nesting
-    line: 121
+    line: 123
     text: (2) The Federal Bureau of Investigation
     message: Brackets nested 3 deep (limit 2)
     verdict: unjudged
   - rule: unbalanced-bracket
-    line: 121
+    line: 123
     text: (as that term is defined in section 11y
     message: '"(" is never closed'
     verdict: correct
     note: the parenthesis opened before "as that term is defined" is never closed in the enacted text
   - rule: numbering-gap
-    line: 125
+    line: 127
     text: (e) As used in this section—
     message: '"(e)" follows "(c)" (expected number 4)'
     verdict: false-positive
     note: a nested statutory enumeration ((A)(i), (ii) …) printed as flat paragraphs, or a combined label like "(c)(1)", read as one broken list
   - rule: dangling-reference
-    line: 163
+    line: 165
     text: section 25 or section 25(a)  of the Fede
     message: '"section 25" (address 25) is not in this document'
     verdict: false-positive
     note: a section of another part of the U.S. Code or of another Act, outside this one-section document
   - rule: dangling-reference
-    line: 163
+    line: 165
     text: section 25(a)  of the Federal Reserve Ac
     message: '"section 25(a)" (address 25.a) is not in this document'
     verdict: false-positive
     note: a section of another part of the U.S. Code or of another Act, outside this one-section document
   - rule: dangling-reference
-    line: 169
+    line: 171
     text: section 101 of title 5;
     message: '"section 101" (address 101) is not in this document'
     verdict: false-positive
     note: a section of another part of the U.S. Code or of another Act, outside this one-section document
   - rule: unused-definition
-    line: 169
+    line: 171
     text: '"department of the United States" means'
     message: '"department of the United States" is defined but never used'
     verdict: correct
     note: the defined term "department of the United States" appears nowhere else in the section
   - rule: bracket-nesting
-    line: 181
+    line: 183
     text: (13) the term "Federal election" means a
     message: Brackets nested 3 deep (limit 2)
     verdict: unjudged
   - rule: numbering-gap
-    line: 199
+    line: 201
     text: (j) For purposes of subsection (i), the
     message: '"(j)" follows "(h)" (expected number 9)'
     verdict: false-positive
     note: a nested statutory enumeration ((A)(i), (ii) …) printed as flat paragraphs, or a combined label like "(c)(1)", read as one broken list
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §2, Oct. 16, 1986, 100 Stat. 1213; Pub.
     message: '"§2" (address 2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §2, Oct. 20, 2020, 134 Stat. 855.)
     message: '"§2" (address 2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §2(g)(2)(I), Nov. 16, 2018, 132 Stat. 41
     message: '"§2(g)(2)" (address 2.g.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §201, title VI, §604(b)(36), Oct. 11, 19
     message: '"§201" (address 201) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §203, 204(a), 205–208, Sept. 26, 2008, 1
     message: '"§203" (address 203) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §225(g), Nov. 25, 2002, 116 Stat. 2158,
     message: '"§225(g)" (address 225.g) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §506(a), title VIII, §814(a)–(e), Oct. 2
     message: '"§506(a)" (address 506.a) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §604(b)(36), Oct. 11, 1996, 110 Stat. 34
     message: '"§604(b)(36)" (address 604.b.36) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §814(a)–(e), Oct. 26, 2001, 115 Stat. 36
     message: '"§814(a)" (address 814.a) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: §962(a)(5), Aug. 9, 1989, 103 Stat. 502;
     message: '"§962(a)(5)" (address 962.a.5) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 205
+    line: 207
     text: 204(a), 205–208, Sept. 26, 2008, 122 Sta
     message: '"204(a)" (address 204.a) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: IX, §962(a)(5), Aug. 9, 1989, 103 Stat.
     message: '"IX" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: VII, §7065, Nov. 18, 1988, 102 Stat. 440
     message: '"VII" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: VIII, §814(a)–(e), Oct. 26, 2001, 115 St
     message: '"VIII" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: XII, §1205(e), title XXV, §2597(j), titl
     message: '"XII" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: XXII, §2207(g), formerly title II, §225(
     message: '"XXII" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: XXIX, §290001(b)–(f), Sept. 13, 1994, 10
     message: '"XXIX" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: XXV, §2597(j), title XXXV, §3533, Nov. 2
     message: '"XXV" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: undefined-acronym
-    line: 205
+    line: 207
     text: XXXV, §3533, Nov. 29, 1990, 104 Stat. 48
     message: '"XXXV" is used without an expansion (8 such acronyms)'
     verdict: false-positive
     note: a Roman numeral naming a title or division of a Public Law (title IX, div. VI) read as an acronym
   - rule: dangling-reference
-    line: 213
+    line: 215
     text: §601, Oct. 26, 1970, 84 Stat. 1127, whic
     message: '"§601" (address 601) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 221
+    line: 223
     text: §142(e)(2), Dec. 19, 1991, 105 Stat. 228
     message: '"§142(e)(2)" (address 142.e.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 227
+    line: 229
     text: §2(1), added subpar. (C).
     message: '"§2(1)" (address 2.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 229
+    line: 231
     text: §2(2)–(4), added pars. (13) and (14).
     message: '"§2(2)" (address 2.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 231
+    line: 233
     text: §203, struck out "if the conduct involve
     message: '"§203" (address 203) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 233
+    line: 235
     text: §204(a)(1), redesignated cls. (i) to (ii
     message: '"§204(a)(1)" (address 204.a.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 247
+    line: 249
     text: §205, amended par. (7) generally. Prior
     message: '"§205" (address 205) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 249
+    line: 251
     text: §206, inserted "conspires to commit or"
     message: '"§206" (address 206) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 251
+    line: 253
     text: §204(a)(2)(A), struck out "(a)(5)(A)(iii
     message: '"§204(a)(2)" (address 204.a.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 253
+    line: 255
     text: §204(a)(2)(B), struck out "(a)(5)(A)(iii
     message: '"§204(a)(2)" (address 204.a.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 255
+    line: 257
     text: §204(a)(2)(C), amended par. (4) generall
     message: '"§204(a)(2)" (address 204.a.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 257
+    line: 259
     text: §204(a)(2)(D), struck out par. (5) which
     message: '"§204(a)(2)" (address 204.a.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 259
+    line: 261
     text: §207, inserted "or affecting" after "whi
     message: '"§207" (address 207) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 261
+    line: 263
     text: §204(a)(3)(B), in the third sentence, su
     message: '"§204(a)(3)" (address 204.a.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 263
+    line: 265
     text: §204(a)(3)(A), which directed substituti
     message: '"§204(a)(3)" (address 204.a.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 265
+    line: 267
     text: §208, added subsecs. (i) and (j).
     message: '"§208" (address 208) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 275
+    line: 277
     text: §2(g)(2)(I), inserted "except as provide
     message: '"§2(g)(2)" (address 2.g.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 275
+    line: 277
     text: §225(g)(2), as renumbered by Pub. L. 115
     message: '"§225(g)(2)" (address 225.g.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 277
+    line: 279
     text: (3), (4), as renumbered by Pub. L. 115–2
     message: '"(3)" (address 225.g.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 277
+    line: 279
     text: (4), as renumbered by Pub. L. 115–278, §
     message: '"(4)" (address 225.g.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 277
+    line: 279
     text: §2(g)(2)(I), added par. (5).
     message: '"§2(g)(2)" (address 2.g.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 277
+    line: 279
     text: §225(g)(1), (3), (4), as renumbered by P
     message: '"§225(g)(1)" (address 225.g.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 281
+    line: 283
     text: §814(a)(1)–(3), designated existing prov
     message: '"§814(a)(1)" (address 814.a.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 283
+    line: 285
     text: §814(a)(4), added subpar. (B). Former su
     message: '"§814(a)(4)" (address 814.a.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 285
+    line: 287
     text: §814(a)(2), redesignated subpar. (C) as
     message: '"§814(a)(2)" (address 814.a.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 287
+    line: 289
     text: §814(b), struck out ", firm, association
     message: '"§814(b)" (address 814.b) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 289
+    line: 291
     text: §814(c)(1)(A), inserted "except as provi
     message: '"§814(c)(1)" (address 814.c.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 291
+    line: 293
     text: §814(c)(1)(B), inserted "or an attempt t
     message: '"§814(c)(1)" (address 814.c.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 293
+    line: 295
     text: §814(c)(1)(C), struck out "and" at end.
     message: '"§814(c)(1)" (address 814.c.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 295
+    line: 297
     text: §814(c)(2), struck out ", (a)(5)(A), (a)
     message: '"§814(c)(2)" (address 814.c.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 297
+    line: 299
     text: §814(c)(3), added par. (4).
     message: '"§814(c)(3)" (address 814.c.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 299
+    line: 301
     text: §506(a), amended subsec. (d) generally.
     message: '"§506(a)" (address 506.a) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 301
+    line: 303
     text: §814(d)(1), inserted ", including a comp
     message: '"§814(d)(1)" (address 814.d.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 303
+    line: 305
     text: §814(d)(2), struck out "and" at end.
     message: '"§814(d)(2)" (address 814.d.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 305
+    line: 307
     text: §814(d)(3), added par. (8) and struck ou
     message: '"§814(d)(3)" (address 814.d.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 315
+    line: 317
     text: (5), added pars. (10) to (12).
     message: '"(5)" (address 814.d.5) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 315
+    line: 317
     text: §814(d)(4), (5), added pars. (10) to (12
     message: '"§814(d)(4)" (address 814.d.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 317
+    line: 319
     text: §814(e), substituted "A civil action for
     message: '"§814(e)" (address 814.e) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 319
+    line: 321
     text: §201(1)(A), substituted "having knowingl
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 321
+    line: 323
     text: §201(1)(B), inserted dash after "thereby
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 323
+    line: 325
     text: §201(1)(C), inserted "nonpublic" before
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 325
+    line: 327
     text: §201(1)(D), substituted "protected compu
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 327
+    line: 329
     text: §201(1)(E), inserted par. (5) and struck
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 329
+    line: 331
     text: §201(1)(E). See above.
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 329
+    line: 331
     text: §604(b)(36)(A), which directed insertion
     message: '"§604(b)(36)" (address 604.b.36) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 331
+    line: 333
     text: §201(1)(F), added par. (7).
     message: '"§201(1)" (address 201.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 333
+    line: 335
     text: §201(2)(A), substituted "under this sect
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 335
+    line: 337
     text: §604(b)(36)(B), struck out "and" after s
     message: '"§604(b)(36)" (address 604.b.36) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 337
+    line: 339
     text: §201(2)(B)(i), inserted ", (a)(5)(C)," a
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 339
+    line: 341
     text: §201(2)(B)(iii), added subpar. (B). Form
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 341
+    line: 343
     text: §201(2)(B)(iv), substituted "under this
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 343
+    line: 345
     text: §201(2)(B)(ii), redesignated subpar. (B)
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 345
+    line: 347
     text: §201(2)(C)(i), substituted "(a)(4), (a)(
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 347
+    line: 349
     text: §201(2)(C)(ii), substituted "(a)(4), (a)
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 349
+    line: 351
     text: §201(2)(D), struck out par. (4) which re
     message: '"§201(2)" (address 201.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 351
+    line: 353
     text: §201(3), inserted "subsections (a)(2)(A)
     message: '"§201(3)" (address 201.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 353
+    line: 355
     text: §201(4)(A)(i), substituted "protected" f
     message: '"§201(4)" (address 201.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 355
+    line: 357
     text: §201(4)(A)(ii), substituted "that use by
     message: '"§201(4)" (address 201.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 357
+    line: 359
     text: §201(4)(A)(iii), added subpar. (B) and s
     message: '"§201(4)" (address 201.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 359
+    line: 361
     text: §201(4)(B)–(D), added pars. (8) and (9).
     message: '"§201(4)" (address 201.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 361
+    line: 363
     text: §604(b)(36)(C), substituted "violation o
     message: '"§604(b)(36)" (address 604.b.36) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 363
+    line: 365
     text: §201(5), struck out ", other than a viol
     message: '"§201(5)" (address 201.5) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 365
+    line: 367
     text: §604(b)(36)(D), substituted "subsection
     message: '"§604(b)(36)" (address 604.b.36) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 391
+    line: 393
     text: §962(a)(5)(A), substituted "an instituti
     message: '"§962(a)(5)" (address 962.a.5) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 393
+    line: 395
     text: §962(a)(5)(B), (C), redesignated subpars
     message: '"§962(a)(5)" (address 962.a.5) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 397
+    line: 399
     text: §2(b)(2), struck out last sentence which
     message: '"§2(b)(2)" (address 2.b.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 399
+    line: 401
     text: §2(c), substituted "or exceeds authorize
     message: '"§2(c)" (address 2.c) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 401
+    line: 403
     text: (c), substituted "intentionally" for "kn
     message: '"(c)" (address 2.c) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 401
+    line: 403
     text: §2(a), (c), substituted "intentionally"
     message: '"§2(a)" (address 2.a) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 403
+    line: 405
     text: §2(b)(1), amended par. (3) generally. Pr
     message: '"§2(b)(1)" (address 2.b.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 405
+    line: 407
     text: §2(d), added pars. (4) to (6).
     message: '"§2(d)" (address 2.d) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 407
+    line: 409
     text: §2(e), struck out par. (1) designation a
     message: '"§2(e)" (address 2.e) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 409
+    line: 411
     text: §2(f)(9), substituted "(b)" for "(b)(1)"
     message: '"§2(f)(9)" (address 2.f.9) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 411
+    line: 413
     text: §2(f)(1), substituted "under this title"
     message: '"§2(f)(1)" (address 2.f.1) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 413
+    line: 415
     text: §2(f)(2), substituted "under this title"
     message: '"§2(f)(2)" (address 2.f.2) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 415
+    line: 417
     text: (4), substituted "under this title" for
     message: '"(4)" (address 2.f.4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 415
+    line: 417
     text: §2(f)(3), (4), substituted "under this t
     message: '"§2(f)(3)" (address 2.f.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 417
+    line: 419
     text: §2(f)(3), (5)–(7), substituted "under th
     message: '"§2(f)(3)" (address 2.f.3) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 419
+    line: 421
     text: §2(f)(8), added par. (3).
     message: '"§2(f)(8)" (address 2.f.8) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 421
+    line: 423
     text: §2(g), substituted a dash for the comma
     message: '"§2(g)" (address 2.g) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 423
+    line: 425
     text: §2(h), added subsec. (f).
     message: '"§2(h)" (address 2.h) is not in this document'
     verdict: false-positive

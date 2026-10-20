@@ -9,6 +9,8 @@ Document headings vary by document type but may contain the following:
 
 See the Document Drafting Handbook for more details.
 
+<!-- https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf#page=9 -->
+
 # AGENCY:
 
 Office of Management and Budget.
@@ -36,6 +38,8 @@ Instructions: Federal eRulemaking Portal: Go to www.regulations.gov search “Do
 Privacy Act Statement: OMB is issuing this request for information (RFI) pursuant to its authorities under 31 U.S.C. 501 et seq. Comments and commenter information are maintained under the OMB Public Input System of Records, OMB/INPUT/01. The system of records notice accessible at 88 FR 20913 ( https://www.federalregister.gov/​documents/​2023/​04/​07/​2023-07452/​privacy-act-of-1974-system-of-records) includes a list of routine uses associated with the collection of this information.
 
 Disclaimer: Participation in this RFI is strictly voluntary. OMB will use your feedback to inform sound decision-making on topics related to this RFI regarding potential government-wide actions to revitalize the domestic manufacturing base, create new opportunities for U.S. firms and workers, and position U.S. businesses to compete and lead globally in strategic industries. This announcement should not be construed as a commitment of any kind by the U.S. Government. The U.S. Government is in no way liable to pay for or reimburse any companies or entities that respond to this announcement. Nothing in this announcement constitutes an obligation on the part of the U.S. Government. A response to this RFI will not be viewed as a binding commitment to develop or pursue the project or ideas discussed.
+
+<!-- http://www.regulations.gov https://www.regulations.gov/faq https://www.govinfo.gov/link/uscode/31/501 https://www.federalregister.gov/documents/2023/04/07/2023-07452/privacy-act-of-1974-system-of-records -->
 
 # FOR FURTHER INFORMATION CONTACT:
 

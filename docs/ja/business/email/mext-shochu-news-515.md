@@ -37,6 +37,8 @@ https://www.toyokan.co.jp/pages/shotokyoiku
 初等中等教育局 教育課程課 教育課程第一係
 E-mail：kyoikuichikakari@mext.go.jp
 
+<!-- https://www.toyokan.co.jp/pages/shotokyoiku -->
+
 ### （2）【発行】教育委員会月報2月号を文科省HPに掲載しました！
 
 2月号は、「シリーズ 地方発！我が教育委員会の取組」をはじめ、読み応えのある記事を掲載しております。
@@ -49,6 +51,8 @@ https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm
 電話：03-5253-4111（内線：4676）
 E-mail：iinkai@mext.go.jp
 
+<!-- https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm -->
+
 ### （3）「中等教育資料」3月号（2月27日刊行！）
 
 特集は「コミュニティ・スクールを活用した教育活動の展開」
@@ -59,6 +63,8 @@ https://www.gakuji.co.jp/chuutoukyouiku
 （文部科学省窓口）
 初等中等教育局 教育課程課 教育課程第三係
 E-mail：chuto@mext.go.jp
+
+<!-- https://www.gakuji.co.jp/chuutoukyouiku -->
 
 ## 【教職員向け】
 
@@ -77,6 +83,8 @@ https://www.miraikan.jst.go.jp/visit/group/planetarium/
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
 
+<!-- https://www.miraikan.jst.go.jp/visit/group/planetarium/ -->
+
 ### （2）JST「サイエンスティーム」探究の成果を発信できる新コーナー
 
 「サイエンスティーム」はJSTが運営する探究学習・STEAM教育のヒント集です。
@@ -93,6 +101,8 @@ E-mail：scienceteam@jst.go.jp
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
 
+<!-- https://scienceteam.jst.go.jp/student/steam-challenge/ -->
+
 ## 【学校・教育行政関係者向け】
 
 ### （1）運動・スポーツにおける安全対策ガイドライン（試行版）の紹介
@@ -106,6 +116,8 @@ https://www.mext.go.jp/sports/b_menu/sports/mcatetop05/list/1372002.htm
 スポーツ庁 健康スポーツ課 庶務係
 電話：03-5253-4111（内線：2684）
 E-mail：kensport@mext.go.jp
+
+<!-- https://www.mext.go.jp/sports/b_menu/sports/mcatetop05/list/1372002.htm -->
 
 ### （2）3月6日ポスコロSIPシンポジウム開催（申込締切3月2日）
 
@@ -121,6 +133,8 @@ E-mail：sip3-ristex@jst.go.jp
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
 
+<!-- https://sip-poscoro.com/ -->
+
 ### （3）3月12日（木）にSIP次世代女性活躍シンポジウム開催
 
 戦略的イノベーション創造プログラム（SIP）第3期課題「ポストコロナ時代の学び方・働き方を実現するプラットフォームの構築」（ポスコロSIP）において、3月12日（木）に大阪女学院大学で、シンポジウム「次世代を拓く女性活躍社会の実現に向けて～ジェンダード・イノベーションによる成長戦略～」を開催します。
@@ -133,6 +147,8 @@ E-mail：sip3-ristex@jst.go.jp
 （文部科学省窓口）
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
+
+<!-- https://www.jri.co.jp/seminar/260312_699/detail/ -->
 
 ### （4）DCC 3年次成果報告シンポジウム開催（3月20日）
 
@@ -147,6 +163,8 @@ E-mail：sipstaff-evri@ml.hiroshima-u.ac.jp
 （文部科学省窓口）
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 E-mail：stw@mext.go.jp
+
+<!-- https://sip-dcc.hiroshima-u.ac.jp/education_column/dccsymposum20260320/ -->
 
 ## 【児童・生徒向け】
 
@@ -164,6 +182,8 @@ https://www.mext.go.jp/kyufu/index.htm
 高等教育局 学生支援課 高等教育修学支援室 企画調整係
 電話：03-5253-4111
 
+<!-- https://www.mext.go.jp/kyufu/index.htm -->
+
 ### （2）南極観測70周年記念事業開催！
 
 国立極地研究所では、昭和基地設立70 周年にあたる令和9年1月29日までを南極観測70周年期間と定めて、「挑戦は、続く。」の合言葉のもと、南極観測70周年記念事業を開始しました。32年ぶりに日本（広島市）で開催される第48回南極条約協議国会議にあわせたイベントや、日本科学未来館での「大南極展」など、これまでの挑戦の歴史と、これからの新たなチャレンジを実感できる企画を計画しています。ぜひ御来場ください！
@@ -177,6 +197,8 @@ https://ws.formzu.net/fgen/S69795492/
 研究開発局 海洋地球課 極域研究振興係
 E-mail：kaiyou@mext.go.jp
 
+<!-- https://www.nipr.ac.jp/antarctic/70th/ https://ws.formzu.net/fgen/S69795492/ -->
+
 ## 【その他】
 
 ### （1）2026年1月の文部科学省選定作品等の紹介
@@ -189,6 +211,8 @@ https://www.mext.go.jp/content/20260202-mxt_jogai01-000042368_10.pdf
 （文部科学省窓口）
 初等中等教育局 学校情報基盤・教材課 映像等審査担当
 E-mail：emedia@mext.go.jp
+
+<!-- https://www.mext.go.jp/content/20260202-mxt_jogai01-000042368_10.pdf -->
 
 ## お問合せ先
 

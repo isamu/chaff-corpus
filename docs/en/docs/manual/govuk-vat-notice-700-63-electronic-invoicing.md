@@ -72,11 +72,15 @@ If you issued electronic and paper invoices for the same supplies, or to the sam
 
 If you have a specific business need to run a dual system, you should contact VAT general enquiries who’ll look at the information you provide and decide whether an exception can be made in your case.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
+
 ### 2.5 Telling HMRC that you’re intending to issue invoices electronically
 
 You do not need to tell HMRC that you’re intending to issue electronic invoices, but you must be satisfied that your system for issuing, receiving and storing electronic invoices complies with our requirements as explained in this notice.
 
 If you have any questions about whether the electronic invoicing methods you have chosen comply with our requirements, you should contact VAT general enquiries.
+
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
 
 ## 3. Contents of electronic invoices
 
@@ -85,6 +89,8 @@ If you have any questions about whether the electronic invoicing methods you hav
 Electronic invoices must contain the same information as paper invoices. You can find general information about VAT invoices in section 16.3.1 of VAT guide (Notice 700).
 
 There are additional rules about the content of your invoices if you are making supplies to the EU. You can find these in paragraph 16.16 of VAT and the single market (Notice 725).
+
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 https://www.gov.uk/guidance/vat-and-the-single-market-notice-725 -->
 
 ### 3.2 Information required on a tax invoice
 
@@ -161,6 +167,8 @@ You can find information about the details you need to include on credit notes y
 If you issue invoices to customers in EU member states, documents which amend those invoices, for example, credit notes or debit notes, must contain the same information as was required on the original invoice.
 
 You will need to take care to post these amending documents correctly in your VAT accounts.
+
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
 
 ### 3.5 Currency on invoices
 
@@ -272,6 +280,8 @@ If you want to invoice electronically but your system is not covered in paragrap
 
 We’ll let you know if any further information is needed.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
+
 ### 4.7 Formats for electronic invoicing
 
 As long as that the relevant invoice messages used contain the required data, we’ll accept a wide variety of electronic invoice message formats. Examples include:
@@ -322,6 +332,8 @@ EU member states are required by law to allow electronic cross border invoicing.
 
 But if you are making supplies of digital services to consumers in other EU member states, then the invoicing rules of the consumer’s member state apply.
 
+<!-- https://www.gov.uk/government/collections/vat-moss-vat-on-sales-of-digital-services-in-the-eu -->
+
 ### 4.12 Cross border electronic invoicing
 
 If you issue an invoice (either paper or electronic) to a customer in an EU member state, the invoice must include the:
@@ -357,6 +369,8 @@ You may store what were originally paper VAT records in an electronic format as 
 ### 5.4 How long to store electronic invoices
 
 The same rules apply to storage of electronic invoices as to paper invoices. You must normally keep copies of all the invoices you issue and all the invoices you receive for 6 years. If the 6-year rule causes you serious storage problems or undue expense, you should contact VAT general enquiries for advice. We may be able to allow you to keep some of the records for a shorter period.
+
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
 
 ### 5.5 Storing electronic invoices in an EU member state
 
@@ -425,6 +439,8 @@ You will need to make sure that any electronic self-billing system can recognise
 
 You can find out about the rules for self-billing in Notice 700/62: self-billing.
 
+<!-- https://www.gov.uk/government/publications/vat-notice-70062-self-billing -->
+
 ### 8.2 Third parties issuing your electronic sales invoices
 
 You may choose to outsource the issuing of your electronic sales invoices to a third party. If you do this, you should bear in mind that all the legal obligations with regard to the contents, storage and production of the invoices issued remain with you.
@@ -439,6 +455,8 @@ Similarly, these principles apply if you choose to outsource processing and stor
 
 If you cannot meet HMRC’s conditions for transmission and storage of electronic invoicing, you will have to issue paper invoices. But if you want advice on what you would have to do to be able to meet the conditions, you should contact VAT general enquiries.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
+
 ### 9.2 Failing to meet the conditions
 
 If you have issued and stored invoices electronically, but have failed to meet HMRC’s conditions, you will have to issue paper invoices until HMRC is satisfied that your system is acceptable.
@@ -449,6 +467,8 @@ If you persistently fail to meet the conditions, you may be liable to a penalty.
 
 Read the HMRC Charter to find out what you can expect from us and what we expect from you.
 
+<!-- https://www.gov.uk/government/publications/hmrc-charter -->
+
 ## Help us improve this notice
 
 If you have any feedback about this notice, email:customerexperience.indirecttaxes@hmrc.gov.uk.
@@ -457,12 +477,18 @@ You’ll need to include the full title of this notice. Do not include any perso
 
 If you need general help with this notice or have another question, phone the VAT Helpline or make a VAT enquiry online.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries https://www.tax.service.gov.uk/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47 -->
+
 ## Putting things right
 
 If you’re unhappy with HMRC’s service, contact the person or office you’ve been dealing with and they’ll try to put things right.
 
 If you’re still unhappy, find out how to complain to HMRC.
 
+<!-- https://www.gov.uk/complain-about-hmrc -->
+
 ## How HMRC uses your information
 
 Find out how HMRC uses the information we hold about you.
+
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/about/personal-information-charter -->

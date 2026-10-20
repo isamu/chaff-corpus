@@ -10,26 +10,26 @@ findings:
     sha256: 3887f5aa60420cd11bb66eb4b09c2dfe930aa861557f6c109f6168ff7c1c4628
     verdict: unjudged
   - rule: empty-list-item
-    line: 32
+    line: 34
     sha256: 21e323801763fab46f22c4a0312d55927a7f5515845724a658554d1a8ed5e376
     verdict: unjudged
   - rule: stray-space
-    line: 39
+    line: 41
     sha256: c958b8b4e68a0f579a4569e1c08a21b678be486356c24478041007ff18025f14
     verdict: unjudged
   - rule: stray-space
-    line: 39
+    line: 41
     sha256: e0e9fb798a138f01b9a2fc8d1c5fcddebe7000ca46952623e9fac84cae80aef7
     verdict: unjudged
   - rule: stray-space
-    line: 111
+    line: 115
     sha256: 61ec0a2dea8622d0e2213012557dfd1e2b711409de53bdfa83719ef1b45a81b2
     verdict: unjudged
   - rule: bracket-nesting
-    line: 141
+    line: 147
     sha256: 1622968071f5d590822852d5d4f27f3391ec5c7d5089289ddddd2905d90efd47
     verdict: unjudged
   - rule: max-sentence-length
-    line: 141
+    line: 147
     sha256: 1622968071f5d590822852d5d4f27f3391ec5c7d5089289ddddd2905d90efd47
     verdict: unjudged

@@ -21,6 +21,8 @@
 - CC（クリエイティブコモンズ）ライセンスにおけるCC-BY4.0で提供いたします。
 - オープンデータを探す大阪市オープンデータポータルサイト
 
+<!-- https://www.city.osaka.lg.jp/kaikei/page/0000661404.html https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ -->
+
 ## 探している情報が見つからない
 
 情報が見つからないときは

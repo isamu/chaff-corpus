@@ -12,7 +12,7 @@ findings:
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 9 箇所あります。この文書には書き方が二通りあります
     verdict: correct
   - rule: bracket-width-consistency
-    line: 24
+    line: 26
     text: (PDF形式, 327.89KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。25 箇所のうち 1 箇所が違う）
     verdict: correct

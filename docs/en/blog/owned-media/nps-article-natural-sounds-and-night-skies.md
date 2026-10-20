@@ -32,9 +32,7 @@ Enjoy spectacular night skies in our national parks.
 
 NPS/Lian Law
 
-## You Might Also Like
-
-Loading results...
+<!-- https://www.nps.gov/orgs/1078/index.htm -->
 
 ## Tags
 
