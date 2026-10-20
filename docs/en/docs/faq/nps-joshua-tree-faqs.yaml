@@ -1,0 +1,16 @@
+id: nps-joshua-tree-faqs
+title: "National Park Service: Joshua Tree National Park, Frequently Asked Questions"
+language: en
+genre: docs/faq
+format: markdown
+source:
+  url: https://www.nps.gov/jotr/faqs.htm
+  fetched: 2026-10-19
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/jotr/faqs.htm); converted to Markdown'
+redistribute: true
+sha256: dd35aeb4a93dfdd77e39d51549db2b5a531e15dd761d3da285aacf7e3fc59f6b
+notes: A park's FAQ page. The park's published contact details at the end are kept (allowlist.yaml). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

@@ -1,0 +1,16 @@
+id: nps-article-history-of-the-shakers
+title: "National Park Service: History of the Shakers"
+language: en
+genre: blog/owned-media
+format: markdown
+source:
+  url: https://www.nps.gov/articles/history-of-the-shakers.htm
+  fetched: 2026-10-20
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/articles/history-of-the-shakers.htm); converted to Markdown; images are not included, only their captions and credit lines'
+redistribute: true
+sha256: 455a4d73d8567fee563d64516fa100c5f71d65a798e2f7b677ee45c8f1142d3d
+notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", "You Might Also Like", "Loading results...", the tags) are kept as the converter gives them. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

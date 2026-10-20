@@ -1,0 +1,82 @@
+id: itabashi-chogi-r7-16-renraku-chosei-16
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list names each official by title; a long official title is one fixed compound"
+  - rule: max-sentence-length
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list (titles separated by commas) has no full stop and is a list, not a sentence"
+  - rule: max-kanji-continuous
+    line: 29
+    sha256: cb021a7574d39946d1e56d04ee7c50564c5508e617895a93fd1db3721a469c75
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 45
+    sha256: 57753e3f092936f17c8ceb0b5a52f8d50c77a90e00e3897b765e7c3eac192716
+    verdict: false-positive
+    note: "an English name of the board of education's plans, in capitals, not an acronym"
+  - rule: undefined-acronym
+    line: 45
+    sha256: eb6def48528cca10b30fc9c76d7167ec6c40321c16f737599b2b3e86bb24c8f8
+    verdict: false-positive
+    note: "an English name of the board of education's plans, in capitals, not an acronym"
+  - rule: max-kanji-continuous
+    line: 59
+    sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 69
+    sha256: 0bdd788039520cb492d2ceb0bfaf12e2896e2a9e992d938b72e364174f5a32f5
+    verdict: false-positive
+    note: "the record's fixed closing line under each report item"
+  - rule: max-kanji-continuous
+    line: 73
+    sha256: 8e970c2935c0a47c48c51f874ad66668ff35a3495f5beeeed4ab5c64dac5c809
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 84
+    sha256: 56f7489662f486cbb138b545018e4212d652e149558f88dd37280b3d5b435768
+    verdict: false-positive
+    note: "the railway companies' abbreviation is everyday Japanese"
+  - rule: title-length
+    line: 119
+    sha256: 87072b6a89bde0c52227ee5c05984e4487afbac699a184ce4d17ec40348bbb5e
+    verdict: correct
+    note: "a 79-character heading"
+  - rule: title-length
+    line: 130
+    sha256: 1e042c5748510b2df844c57c25b97d847da4dd5558ea49a6d3a2b0a1953a6ed8
+    verdict: unjudged
+  - rule: title-length
+    line: 162
+    sha256: d2fdf701fac71d7734999e42a1838a01b4ac1809759ad3958d09ac02c8709a26
+    verdict: correct
+    note: "five agenda items (10) to (14) run together in one 172-character heading"
+  - rule: max-sentence-length
+    line: 166
+    sha256: 1877db5f15c0135c6ad49d99ebfd20a7b317e1b764ebc28b0c2b476a21cd109a
+    verdict: correct
+    note: "a 192-character sentence listing five plans"
+  - rule: numbering-gap
+    line: 178
+    sha256: 33ca4f7e2eb1d8968ece37f2b16e1f87069182dab3d5fe9a65a3f83c4403280a
+    verdict: false-positive
+    note: "items 11 to 14 are written inside the heading of item 10, so item 15 does follow item 14"
+  - rule: max-kanji-continuous
+    line: 194
+    sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 203
+    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
+    verdict: false-positive
+    note: "the page's contact block (department and section on one line) is an address, not a sentence"
+  - rule: unbalanced-bracket
+    line: 162
+    what: a closing corner bracket with no opening one, in the title of agenda item 11 inside the merged heading
+    verdict: missed

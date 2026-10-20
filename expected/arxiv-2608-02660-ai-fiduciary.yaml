@@ -1,0 +1,349 @@
+id: arxiv-2608-02660-ai-fiduciary
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "###### Abstract"
+    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
+    verdict: false-positive
+    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
+  - rule: ngram-repetition
+    line: 7
+    text: Drawing on business ethics and legal sch
+    message: '"extended AI assistant" appears 10 times (limit 5)'
+    verdict: false-positive
+    note: "'extended AI assistant' is the paper's defined term of art, repeated on purpose"
+  - rule: number-style-consistency
+    line: 42
+    text: 4 flags for subsequent work.
+    message: '"4" here, where the document usually writes numbers below ten like "four" (1 of 24)'
+    verdict: false-positive
+    note: "'§4' is a section number, not a count to spell out"
+  - rule: citation-reference-mismatch
+    line: 60
+    text: (Smith 2002; Frankel 2011; Sitkoff 2011;
+    message: The citation "(Smith 2002; Frankel 2011; Sitkoff 2011; Miller 2014; Gold and Miller 2014)" names gold 2014, which is not in the reference list
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 62
+    text: which involve discretionary control, vul
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 68
+    text: To clarify, fiduciary status itself is b
+    message: This paragraph runs 12 sentences (limit 9)
+    verdict: correct
+    note: a twelve-sentence paragraph
+  - rule: citation-reference-mismatch
+    line: 76
+    text: (Weinrib 1975; Smith 2014; Gold and Mill
+    message: The citation "(Weinrib 1975; Smith 2014; Gold and Miller 2014)" names gold 2014, which is not in the reference list
+    verdict: unjudged
+  - rule: which-that-consistency
+    line: 82
+    text: which requires the fiduciary to develop
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "'an investigative component which requires ...' is restrictive; the paper mostly uses 'that'"
+  - rule: oxford-comma-consistency
+    line: 130
+    text: By “risk” I refer to the exposure of use
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: an asyndetic list between dashes (no 'and' before the last item), so there is no serial-comma choice to compare
+  - rule: max-paragraph-length
+    line: 150
+    text: Moreover, fiduciary conflict-resolution
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 166
+    text: tanto and will foreseeably interact with
+    message: '"tanto" is not in the dictionary; did you mean "tango"?'
+    verdict: false-positive
+    note: "'pro tanto' is an established Latin phrase in moral philosophy"
+  - rule: sentence-initial-so
+    line: 172
+    text: So, the user invests on the basis of wha
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: sentence-initial-so
+    line: 204
+    text: So, where the protection of vulnerable u
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 204
+    text: paternalist reasons. So, where the prote
+    message: '"paternalist" is not in the dictionary; did you mean "paternalism"?'
+    verdict: false-positive
+    note: "'paternalist' is a standard English adjective"
+  - rule: sentence-initial-so
+    line: 220
+    text: So, the duties demarcate the conditions
+    message: 3 sentences open with "So," (1 needed)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 238
+    text: "  IEEE Transactions on Technology and So"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: unknown-word
+    line: 240
+    text: agentic conversational AI change how we
+    message: '"agentic" is not in the dictionary; did you mean "argentic"?'
+    verdict: false-positive
+    note: "'agentic' is current technical English (in a cited title)"
+  - rule: sentence-spacing-consistency
+    line: 241
+    text: "  UC Davis Law Review 49, pp. 1183–1234."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 242
+    text: "  In Proceedings of the 3rd ACM Conferen"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 244
+    text: "  MIT Case Studies in Social and Ethical"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 245
+    text: "  Human Communication Research 48 (3), p"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 246
+    text: "  Business Ethics Quarterly 6 (4), pp. 4"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: spelling-consistency
+    line: 246
+    text: organizations. Business Ethics Quarterly
+    message: '"organizations" here, where the document usually spells it "organisations" (1 of 36)'
+    verdict: false-positive
+    note: US spelling inside a cited work's title; the paper's own prose is consistent
+  - rule: name-variant
+    line: 248
+    text: Freedman, T. Korbak, D. Lindner, P. Frei
+    message: '"Freedman" is one letter away from "Friedman", which the document uses more than once'
+    verdict: false-positive
+    note: Freedman and Friedman are different authors in the reference list
+  - rule: sentence-spacing-consistency
+    line: 248
+    text: "  Transactions on Machine Learning Resea"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: citation-reference-mismatch
+    line: 249
+    text: "- De Freitas et al. (2024) J. De Freitas"
+    message: This entry of the reference list is never cited in the text
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 249
+    text: "  Working Paper  Technical Report 25-018"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 250
+    text: "  Duke Law Journal 1988 (5), pp. 879–924"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 251
+    text: "  Nature Mental Health 4 (3), pp. 336–34"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 253
+    text: "  Journal of Law and Economics 36, pp. 4"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 257
+    text: "  In The International FLAIRS Conference"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 258
+    text: "  Philosophical Studies 182 (7), pp. 195"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 260
+    text: "  Communications of the ACM 64 (12), pp."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 262
+    text: "  In Proceedings of the 2018 CHI Confere"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 266
+    text: "  Philosophy & Technology 36, pp. 27.  C"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: agreement-slip
+    line: 267
+    text: a conversational ethics of large languag
+    message: '"a conversational ethics" mixes singular and plural'
+    verdict: false-positive
+    note: "'a conversational ethics' (ethics as a theory, singular) in a cited title"
+  - rule: sentence-spacing-consistency
+    line: 267
+    text: "  American Philosophical Quarterly 61 (4"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 269
+    text: "  Harvard Law Review 133, pp. 497–541."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 271
+    text: "  Notre Dame Law Review 101.  Note: Fort"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 275
+    text: "  In The Oxford Handbook of AI Governanc"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 276
+    text: "  Washington University Law Review 86 (3"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 277
+    text: "  In Proceedings of the Seventh AAAI/ACM"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 278
+    text: "  Business Ethics Quarterly 13 (1), pp."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: dangling-reference
+    line: 279
+    text: "Article 81. External Links: Document Cit"
+    message: '"Article 81" (address 81) is not in this document'
+    verdict: false-positive
+    note: "'Article 81' is a cited journal article number, not an address in this paper"
+  - rule: sentence-spacing-consistency
+    line: 279
+    text: "  Proceedings of the ACM on Human-Comput"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 280
+    text: "  In Philosophical Foundations of Fiduci"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 281
+    text: "  In Proceedings of the Conference on Fa"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 283
+    text: "  Information, Communication & Society 2"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 284
+    text: "  Note: https://openai.com/index/sycopha"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: name-variant
+    line: 285
+    text: Heiner, C. Pettit, C. Olsson, S. Kundu,
+    message: '"Heiner" is one letter away from "Reiner", which the document uses more than once'
+    verdict: false-positive
+    note: Heiner and Reiner are different authors in the reference list
+  - rule: sentence-spacing-consistency
+    line: 285
+    text: "  In Findings of the Association for Com"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 286
+    text: "  In Proceedings of the 2020 Conference"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 287
+    text: "  Journal of Corporation Law 46 (1), pp."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 288
+    text: "  In Proceedings of the Twelfth Internat"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 291
+    text: "  Boston University Law Review 91, pp. 1"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 292
+    text: "  International Journal of Human-Compute"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 293
+    text: "  Vanderbilt Law Review 55, pp. 1399–149"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 294
+    text: "  Law Quarterly Review 130, pp. 608–634."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+  - rule: sentence-spacing-consistency
+    line: 297
+    text: "  University of Toronto Law Journal 25 ("
+    message: 2 spaces after this sentence, where the document usually leaves 1 (37 of 287)
+    verdict: false-positive
+    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose

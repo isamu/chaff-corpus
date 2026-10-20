@@ -1,0 +1,120 @@
+id: fr-2026-19646-essential-medicines-rfi
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: CFR title and the number of each part th
+    message: '"CFR" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: undefined-acronym
+    line: 8
+    text: RIN which identifies each regulatory act
+    message: '"RIN" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: preamble-length
+    line: 10
+    text: See the Document Drafting Handbook for m
+    message: 10 paragraphs before the first heading (limit 2)
+    verdict: false-positive
+    note: the paragraphs before the first heading are the Federal Register page's help box, kept by the conversion
+  - rule: max-sentence-length
+    line: 22
+    text: The Office of Management and Budget (OMB
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+    note: a 53-word sentence
+  - rule: invisible-character
+    line: 34
+    text: ​faq). Should you choose to include prop
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​04/​07/​2023-07452/​privacy-act-of-1974
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​07/​2023-07452/​privacy-act-of-1974-sys
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​2023-07452/​privacy-act-of-1974-system-
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​2023/​04/​07/​2023-07452/​privacy-act-o
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​documents/​2023/​04/​07/​2023-07452/​pr
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 36
+    text: ​privacy-act-of-1974-system-of-records)
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: undefined-acronym
+    line: 36
+    text: FR 20913 ( https://www.federalregister.g
+    message: '"FR" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: "'88 FR 20913' is the standard citation form of the Federal Register, not an acronym to expand"
+  - rule: max-paragraph-length
+    line: 38
+    text: "Disclaimer: Participation in this RFI is"
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+    note: an eight-sentence disclaimer paragraph
+  - rule: max-sentence-length
+    line: 42
+    text: Please direct questions regarding this N
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+    note: a 51-word sentence
+  - rule: which-that-consistency
+    line: 48
+    text: "which are not on the ASPR 86 list: Amoxi"
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "'the following antibiotics which are not on the list' is restrictive; the notice uses 'that' elsewhere"
+  - rule: max-sentence-length
+    line: 66
+    text: To facilitate a comprehensive assessment
+    message: This sentence runs 48 words (limit 45)
+    verdict: correct
+    note: a 48-word sentence
+  - rule: title-case-consistency
+    line: 80
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: false-positive
+    note: "'b. Feasibility Feedback—Idle Capacity' is title case like the other section headings; the em-dash compound seems to be read as different"
+  - rule: undefined-acronym
+    line: 90
+    text: FDA registration status for each molecul
+    message: '"FDA" is used without an expansion (5 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 90
+    text: NDC.
+    message: '"NDC" is used without an expansion (5 such acronyms)'
+    verdict: correct
+    note: NDC (National Drug Code) is never expanded
+  - rule: numbering-gap
+    line: 102
+    what: the subsections of section 5 run "a.", "b.", then "4.3." where "c." is meant
+    verdict: missed

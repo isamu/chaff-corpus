@@ -19,11 +19,11 @@ findings:
     verdict: unjudged
   - rule: date-format-consistency
     line: 43
-    sha256: 2d6a34a766813a0aa63bb6cf4e64cdb786502ef40d654580d9fa0277e3a07375
+    sha256: 0933f38d3ed620587f55b5291a96b9f1f402856c62eeb4c2041880cccca468e6
     verdict: unjudged
   - rule: date-format-consistency
     line: 43
-    sha256: f6c764c4e594153c8c8f4b3023743efd25be3317db876bb99cf02c514881fa70
+    sha256: 2f872503b228342ba56fe7092a08116106feaf38cbf90cbdb859569d95b1ecf7
     verdict: unjudged
   - rule: latin-spacing
     line: 47
@@ -100,10 +100,6 @@ findings:
   - rule: orthographic-variant
     line: 105
     sha256: 45e57bf286416a4d279a990a7eb09f073554be64c8ce13a4a9ba35adb514c03e
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 123
-    sha256: fba7d9c331c89e6957579cb533735bf607275daf4c4788ab0e89a80a62480040
     verdict: unjudged
   - rule: teki-overuse
     line: 123

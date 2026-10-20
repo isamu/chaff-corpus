@@ -2,121 +2,121 @@ id: aozora-nakahara-yagi-no-uta
 chaff: 0.36.0
 findings:
   - rule: clause-chain
-    line: 275
+    line: 251
     text: その雨の中を漂ひながら
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 553
+    line: 502
     text: 私は希望を唇に噛みつぶして
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 579
+    line: 526
     text: 厳かで、ゆたかで、それでゐて佗しく
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: adversative-ga-repeat
-    line: 607
+    line: 554
     text: それといふのも私が素直でなかつたからでもあるが、
     message: 一文に逆接の「が」が 3 個あります（1 個まで）
     verdict: false-positive
     note: "deliberate anaphora across verse lines read as one sentence"
   - rule: clause-chain
-    line: 607
+    line: 554
     text: それといふのも私が素直でなかつたからでもあるが、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: adversative-ga-repeat
-    line: 613
+    line: 560
     text: いまさらどうしやうもないことではあるが、
     message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: false-positive
     note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
   - rule: clause-chain
-    line: 647
+    line: 592
     text: 店々に灯がついて、灯がついて、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 841
+    line: 769
     text: しどけなき、なれが頸は虹にして
     message: 一文に節が 11 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 841
+    line: 769
     text: しどけなき、なれが頸は虹にして
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: false-positive
     note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
   - rule: topic-predicate-distance
-    line: 841
+    line: 769
     text: しどけなき、なれが頸は虹にして
     message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 880
+    line: 804
     text: そして
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 894
+    line: 818
     text: 彼女は荒々しく育ち、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 940
+    line: 864
     text: いろんなことが考へられもするが、考へられても
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 969
+    line: 893
     text: 頑なの心は、理解に欠けて、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 969
+    line: 893
     text: 頑なの心は、理解に欠けて、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: false-positive
     note: "verse lines without 。 read as one sentence; each verse line ends a clause in the poem"
   - rule: clause-chain
-    line: 975
+    line: 899
     text: 従ひて、迎へられんとには非ず、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 993
+    line: 915
     text: 随分……今では損はれてはゐるものの
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 1017
+    line: 937
     text: 懶懦にして、とぎれとぎれの仕草をもち、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 1356
+    line: 1256
     text: 私はも早、善い意志をもつては目覚めなかつた
     message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 1493
+    line: 1391
     text: 人は皆、知ると知らぬに拘らず、そのことを希望してをり、
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 1493
+    line: 1391
     text: 人は皆、知ると知らぬに拘らず、そのことを希望してをり、
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 1503
+    line: 1401
     text: だが、それが此の世といふものなんで、
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 1503
+    line: 1401
     text: だが、それが此の世といふものなんで、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: false-positive

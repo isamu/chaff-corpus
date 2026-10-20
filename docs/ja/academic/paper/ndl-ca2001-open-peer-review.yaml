@@ -1,0 +1,16 @@
+id: ndl-ca2001-open-peer-review
+title: "カレントアウェアネス CA2001: 動向レビュー：オープン査読の動向：背景、範囲、その是非"
+language: ja
+genre: academic/paper
+format: markdown
+source:
+  url: https://current.ndl.go.jp/ca2001
+  fetched: 2026-10-20
+  format: html
+license:
+  name: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/legalcode.ja
+  note: "The article page ends with \"本著作（CA2001）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック・ライセンスの下に提供されています\" (the portal's site policy, https://current.ndl.go.jp/sitepolicy, allows use under that licence without application); 出典: 佐藤翔. カレントアウェアネス. 2021, (348), CA2001, https://current.ndl.go.jp/ca2001; converted to Markdown, and the portal's links to neighbouring articles, the posting dates and the \"PDFファイル\" link were removed"
+redistribute: true
+sha256: 5b2b6fb16f1519471ec1ccc1a6d451f017400a36e23b89ee2c6c15eae47a05e0
+notes: "Converted with scripts/lib/source-format.ts (html) from the article page; the lines before the article's title heading (links to neighbouring articles) and the portal's date and PDF-link lines under it were then removed. The text is otherwise as converted. The converter drops a section heading that is followed directly by its first subsection heading at the same HTML level (h4 then h4); those section headings were put back by hand, as #### lines, in the article's order."

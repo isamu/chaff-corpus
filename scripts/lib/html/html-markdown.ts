@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (9013b5fb, with isamu/lab#1658 and #1663); a fetched text must convert exactly as when it was judged.
 // The one change from lab: the site's chrome (html-site-chrome.ts) is dropped before the page's content is chosen.
 // An HTML page (a CRS report as EveryCRSReport serves it, a ministry's page) as plain Markdown: headings, paragraphs,
 // list items and the text of links; ruby keeps its base text and loses its reading. Only the <main> element (else the
@@ -47,6 +47,21 @@ import { withTablesRead } from "./html-tables.ts";
 import { decodeEntities, tidyLines } from "./markup-text.ts";
 
 const DROPPED = ["script", "style", "head", "nav", "aside", "footer", "form", "noscript", "svg"];
+
+// A MathML annotation (the formula's TeX source, as arXiv writes it) is not drawn: the page shows the formula once, with
+// nothing put between it and the next word ("[11.0,16.0];").
+// annotation-xml first, so that an <annotation> inside it goes with it.
+const MATH_ANNOTATIONS = [/<annotation-xml\b[^>]*>[\s\S]*?<\/annotation-xml\s*>/giu, /<annotation(?![\w-])[^>]*>[\s\S]*?<\/annotation\s*>/giu];
+
+const MATH = /<math\b[^>]*>[\s\S]*?<\/math\s*>/giu;
+
+// The invisible operators a formula is written with (function application U+2061, invisible times U+2062, a zero
+// width space between two symbols) draw nothing, so the formula's text is what the reader sees without them.
+const INVISIBLE_OPERATOR = /[\u200b\u2061-\u2064]/gu;
+
+/** A formula as the page draws it: once, without its TeX source, and without its invisible operators. */
+const withMathAsDrawn = (html: string): string =>
+  html.replace(MATH, (math: string) => MATH_ANNOTATIONS.reduce((text, annotation) => text.replace(annotation, ""), math).replace(INVISIBLE_OPERATOR, ""));
 
 const withoutElement = (html: string, tag: string): string => {
   const innermost = new RegExp(`<${tag}\\b[^>]*>(?:(?!<${tag}\\b)[\\s\\S])*?</${tag}\\s*>`, "giu");
@@ -442,6 +457,10 @@ const withoutClosingAddress = (html: string): string => {
 
 const CLOSING_BLOCKS = ["div", "section", "p"];
 
+
+// Spaces either side of a tag ("title.\n</span>\n<span>") are one space on the page, as HTML collapses them across
+// elements; a space written as a character reference (&nbsp;) is decoded afterwards and stays.
+const SPACES_ACROSS_TAGS = / {2,}/gu;
 const isClosingMenu = (text: string, range: ElementRange): boolean =>
   isLinksOnly(range) && !plainLinks(range.inner).some(isFileLink) && textLines(text.slice(range.end)).length === 0;
 
@@ -466,14 +485,16 @@ const UNTITLED_HEADING = /^#{1,6}$/u;
 
 export const htmlToMarkdown = (html: string): string => {
   const uncommented = withLostParagraphTagsRestored(withAttributeMarkupEscaped(html).replace(/<!--[\s\S]*?-->|<\?[\s\S]*?\?>/gu, ""));
-  const preformatted = withPreformattedStashed(withTablesRead(DROPPED.reduce(withoutElement, withoutRubyText(uncommented))));
+  const preformatted = withPreformattedStashed(withTablesRead(DROPPED.reduce(withoutElement, withMathAsDrawn(withoutRubyText(uncommented)))));
   const kept = withoutFootnoteMarks(
     withoutHeadingSelfLinks(withoutWidgets(withoutButtons(withoutReaderOnlyText(withoutHiddenElements(mainContent(withoutSiteChrome(preformatted.html))))))),
   ).replace(MARKUP_SPACE, " ");
   const content = withoutClosingLinks(
     withoutLinkGroups(withoutNavigation(withoutIconMenus(withoutSiteHeader(withoutNavigationLandmarks(withoutClosingAddress(kept)))))),
   );
-  const text = decodeEntities(stripTags(asLines(markChromeLinks(withImageHeadingsRead(withRunInHeadingsRead(content), documentTitle(uncommented))))));
+  const text = decodeEntities(
+    stripTags(asLines(markChromeLinks(withImageHeadingsRead(withRunInHeadingsRead(content), documentTitle(uncommented))))).replace(SPACES_ACROSS_TAGS, " "),
+  );
   const lines = text
     .split("\n")
     .map((line) => (INVISIBLE_ONLY.test(line) ? "" : line.trim()))

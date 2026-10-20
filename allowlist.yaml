@@ -493,3 +493,225 @@
 - id: fsa-soudansitu-advice-angoshisan
   match: "03-3222-1061"
   reason: a self-regulatory industry association's (日本暗号資産等取引業協会) published complaint hotline, listed by the FSA page as a contact
+- id: nps-great-smoky-faqs
+  match: "(865)436-1200"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nps-great-smoky-faqs
+  match: "(865) 429-5704"
+  reason: the reservation line of the park's lodge, published by the park for visitors
+- id: nps-joshua-tree-faqs
+  match: "760-367-3001"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: nps-joshua-tree-faqs
+  match: "760-367-5500"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: fr-2026-19271-public-health-data-rfi
+  match: "OPHDSTPolicy@cdc.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "MadeInAmerica@omb.eop.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "202-395-1390"
+  reason: a government office's published phone number, given in the notice as its contact
+- id: fr-2026-20426-prehospital-blood-rfi
+  match: "FICEMS@dot.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: mext-chukyo-koto-kyoiku-shimon-2023
+  match: "03-6734-3332"
+  reason: the published direct line of a MEXT office (高等教育局高等教育企画課高等教育政策室), the page's お問合せ先
+- id: jpo-denshika-tesuryo
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-hatsumei-hyoji
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-kyuuji-heiki
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-shomei-honnin-kakunin
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1120@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1200@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1300@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1360@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA1670@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-shomei-honnin-kakunin
+  match: "PA6B00@jpo.go.jp"
+  reason: a Japan Patent Office section's published role address (担当窓口), listed as an inquiry contact on the page
+- id: jpo-yuusou-tetsuzuki
+  match: "03-3581-1101"
+  reason: the Japan Patent Office's published main switchboard number (代表), printed on every jpo.go.jp page
+- id: mext-giga-studx-mail-90
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-giga-studx-mail-93
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-giga-studx-mail-95
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "emedia@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "hattatsu@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "hounai@mofa.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "iinkai@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "info-agora2025@tsp-taiyo.co.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "info@esd-place.org"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "jica-edu@j-gift.org"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "kankyo@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "kyoiku@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "kyoikuichikakari@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "kyokasyo@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "mext-oisp@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "mff2025@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "sdgs-award@jst.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "sokan-kyoiku@env.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "somukou@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "stw@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "03-3580-3311"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "03-6432-6580"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-506
+  match: "080-7513-7410"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "chuto@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "emedia@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "iinkai@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "kaiyou@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "kensport@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "kyoikuichikakari@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "scienceteam@jst.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "sip3-ristex@jst.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "sipstaff-evri@ml.hiroshima-u.ac.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "stw@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "03-3570-9151"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-515
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "chuto@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "ckanri@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "emedia@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "honbu-jigyoukakari@niye.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "iinkai@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "jals+caravan2026@jimu-kyoku.net"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "koukyoik@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "kyoikuichikakari@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "magazine@sartras.or.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "portraits-jim@niad.ac.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "scienceteam@jst.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "sen-ps@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "stw@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "syokyo@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "tosyo@mext.go.jp"
+  reason: an office's or event secretariat's role address, published in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "03-5253-4111"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "03-6407-7621"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: mext-shochu-news-516
+  match: "042-307-1686"
+  reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item

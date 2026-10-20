@@ -1,0 +1,127 @@
+id: mext-shochu-news-515
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27"
+    message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27日）」は 41 文字あります（40 文字まで）
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 5
+    text: 【発行】
+    message: 書き出しに挨拶がありません
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 32
+    text: 今月号は、2月号に引き続き 学習指導要領実施状況調査結果を踏まえた学習指導の改善
+    message: 「学習指導要領実施状況調査結果」は漢字が 14 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 32
+    text: 今月号は、2月号に引き続き 学習指導要領実施状況調査結果を踏まえた学習指導の改善
+    message: この文は 103 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 32
+    text: 今月号は、2月号に引き続き 学習指導要領実施状況調査結果を踏まえた学習指導の改善
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 32
+    text: 」をテーマに特集1を掲載しており、生活科、特別の教科 道徳、外国語活動、総合的な
+    message: 「」」に対応する開きがありません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: 特集2では、「図画工作科における地域を生かした授業づくり」をテーマに、その意義や
+    message: この文は 93 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 48
+    text: 初等中等教育局 初等中等教育企画課 地方教育行政係
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 54
+    text: 特集は「コミュニティ・スクールを活用した教育活動の展開」
+    message: この文は 125 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 54
+    text: 特集は「コミュニティ・スクールを活用した教育活動の展開」
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 69
+    text: 是非御活用ください。
+    message: 「是非」と書いています（この文書はふつう「ぜひ」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: yori-as-from
+    line: 69
+    text: より開始しております。校外学習の機会として、是非御活用ください。
+    message: 起点の「より」は「から」と書けます
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 82
+    text: STEAM教育のヒント集です。
+    message: 「STEAM」が説明なしで使われています（説明のない略語 1 個）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 112
+    text: 戦略的イノベーション創造プログラム（SIP）第3期課題「ポストコロナ時代の学び方
+    message: この文は 129 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: 戦略的イノベーション創造プログラム（SIP）第3期課題「ポストコロナ時代の学び方
+    message: この文は 150 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 139
+    text: ３年次の鹿児島県を中心とした研究・実践・実装の成果を報告するとともに、次期学習指
+    message: 全角の「３」と書いています（この文書はふつう半角の「3」。34 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 139
+    text: 本報告会では、デジタル・シティズンシップ・シティ（DCC）の第３年次の鹿児島県を
+    message: この文は 144 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 156
+    text: ２つの支援を実施しています。
+    message: 全角の「２」と書いています（この文書はふつう半角の「2」。34 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: request-without-deadline
+    line: 160
+    text: 学校へ確認してみてください。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 169
+    text: " 周年にあたる令和9年1月29日までを南極観測70周年期間と定めて、「挑戦は、続"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 169
+    text: 32年ぶりに日本（広島市）で開催される第48回南極条約協議国会議にあわせたイベン
+    message: この文は 103 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 169
+    text: 国立極地研究所では、昭和基地設立70 周年にあたる令和9年1月29日までを南極観
+    message: この文は 88 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 184
+    text: 文部科学省では、映画その他の映像作品及び紙芝居について、教育上価値が高く、学校教
+    message: この文は 133 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 197
+    text: 03-5253-4111
+    message: 終わりに結びの言葉がありません
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 1
+    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
+    verdict: missed

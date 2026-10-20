@@ -1,0 +1,15 @@
+id: gutenberg-shaw-pygmalion
+title: "Bernard Shaw, Pygmalion (Project Gutenberg #3825)"
+language: en
+genre: literature/play
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/3825/pg3825.txt
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1913–1916); Project Gutenberg eBook #3825, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: 6fd37cde98b67dae33e4686bd0b7ecb6674013ca08965bbd9e195af1542bde15
+notes: The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it. It opens with the eBook's transcriber's note on restored apostrophes, which is part of the text inside the markers.

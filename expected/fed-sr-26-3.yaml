@@ -1,0 +1,85 @@
+id: fed-sr-26-3
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 5
+    text: "### SR 26-3: Guidance Clarifying Fraud-R"
+    message: 'The heading "SR 26-3: Guidance Clarifying Fraud-Related Information Sharing Under Section 314(b) of the USA PATRIOT Act" runs 15 words (limit 14)'
+    verdict: unjudged
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 256 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: "the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns"
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject has 97 characters (up to 70)
+    verdict: correct
+    note: "a 97-character subject line"
+  - rule: max-sentence-length
+    line: 23
+    text: This guidance applies to all financial i
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: Department of the Treasury’s Financial C
+    message: This sentence runs 38 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: This action taken by FinCEN reflects ind
+    message: This sentence runs 41 words (limit 18)
+    verdict: correct
+  - rule: dangling-reference
+    line: 27
+    text: section 314(b) is voluntary. FinCEN stro
+    message: '"section 314(b)" (address 314.b) is not in this document'
+    verdict: false-positive
+    note: "section 314(b) of the USA PATRIOT Act, cited in the footnotes; it is not a section of this letter"
+  - rule: max-sentence-length
+    line: 27
+    text: FinCEN strongly encourages financial ins
+    message: This sentence runs 39 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: Section 314(b) provides financial instit
+    message: This sentence runs 39 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 30 words (limit 18)
+    verdict: correct
+  - rule: heading-level-skip
+    line: 37
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: unjudged
+  - rule: dangling-reference
+    line: 39
+    text: Section 314(b) Fact Sheet (June 12, 2026
+    message: '"Section 314(b)" (address 314.b) is not in this document'
+    verdict: false-positive
+    note: "the title of FinCEN's fact sheet, an outside document"
+  - rule: quote-style-consistency
+    line: 39
+    text: "'s Section 314(b) Fact Sheet (June 12, 2"
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 3)
+    verdict: correct
+    note: "FinCEN's with a straight apostrophe, where the letter otherwise writes ’"
+  - rule: dangling-reference
+    line: 41
+    text: § 314(b); 31 CFR §§ 1010.540(a), (b)(5).
+    message: '"§ 314(b)" (address 314.b) is not in this document'
+    verdict: false-positive
+    note: "a legal citation of the Act's section 314(b), an outside document"
+  - rule: max-sentence-length
+    line: 41
+    text: See Uniting and Strengthening America by
+    message: This sentence runs 22 words (limit 18)
+    verdict: false-positive
+    note: "a footnote's legal citation, not a sentence"

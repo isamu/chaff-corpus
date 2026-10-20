@@ -1,0 +1,16 @@
+id: kantei-unga80-general-debate-speech
+title: "首相官邸: 第８０回国連総会における石破内閣総理大臣一般討論演説（令和7年9月23日）"
+language: ja
+genre: speech/address
+format: markdown
+source:
+  url: https://www.kantei.go.jp/jp/103/statement/2025/0923enzetsu.html
+  fetched: 2026-10-19
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.digital.go.jp/resources/open_data/public_data_license_v1.0
+  note: "公共データ利用規約（第1.0版）(PDL1.0, compatible with CC BY 4.0), applied by 首相官邸ホームページ コピーライトポリシー (https://www.kantei.go.jp/jp/terms.html); 出典: 首相官邸ホームページ (https://www.kantei.go.jp/jp/103/statement/2025/0923enzetsu.html); Markdown に変換し、動画案内の行を除いて作成（加工して作成）"
+redistribute: true
+sha256: e2ade4790ad3a9b190bfa2c5bc1755d01311f3b35ef172bd1391f635ce8745fb
+notes: The page's video-link lines (動画が再生できない方は…) are left out. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

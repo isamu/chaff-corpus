@@ -1,0 +1,209 @@
+id: ndl-ca1975-alternative-information
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### オルタナティブな情報を保存する：統計不正問題からこれからの図書館を考える"
+    message: 見出し「オルタナティブな情報を保存する：統計不正問題からこれからの図書館を考える」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: false-positive
+    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
+  - rule: max-kanji-continuous
+    line: 5
+    text: 東京大学大学院情報学環：福島幸宏（ふくしまゆきひろ）
+    message: 「東京大学大学院情報学環」は漢字が 11 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: abstract-length
+    line: 7
+    text: "#### はじめに"
+    message: 節を立てた論文ですが、要旨がありません
+    verdict: false-positive
+    note: "カレントアウェアネス articles carry no abstract; the journal's format, not an omission"
+  - rule: orthographic-variant
+    line: 9
+    text: かかわるだけに、大きな波紋があった。非常に多くの検証や報道がなされたなか、明治初
+    message: 「かかわる」と書いています（この文書はふつう「関わる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「かかわる」 where the article writes 「関わる」 twice"
+  - rule: topic-predicate-distance
+    line: 19
+    text: これらは、佐藤も指摘するように、中央政府もまだまだ脆弱で、地域においては近世以来
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 21
+    text: 例えば北海道では、「最近5年間出入船舶輸出入貨物噸数価額」の調査に際し、突然かつ
+    message: 「出入船舶輸出入貨物噸数価額」は漢字が 13 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 21
+    text: の要のはずの海運の状況を直接把握するために作成される港湾統計が、1920（大正9
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 21
+    text: しかし、近代化の要のはずの海運の状況を直接把握するために作成される港湾統計が、1
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 25
+    text: より詳しいものには、〇統計の表に「概数」と「誤差修正」の2つの欄を設け、「概数」
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: quote-without-source
+    line: 35
+    text: そういう意味では、フェイクのアーカイブにも価値はあるのだ」と述べる。この対話は非
+    message: 「そういう意味では、フェイクのアーカイブにも価値はあるのだ」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
+    verdict: unjudged
+  - rule: quote-without-source
+    line: 35
+    text: 急速に技術が進歩する情報社会でデジタルアーカイブがどのような問題に直面しているか
+    message: 「急速に技術が進歩する情報社会でデジタルアーカイブがどのような問題に直面しているかを知ることが重要」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 35
+    text: 「デジタルアーカイブ」という言葉を創ったとされる月尾嘉男は、おそらく今後永遠に続
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 37
+    text: これは、京都府行政文書「近畿地方総監府諸統計調査ニ関スル件併ニ人口調査表各種」（
+    message: 「近畿地方総監府諸統計調査」は漢字が 12 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 37
+    text: の敗戦時の統計操作の挿話と京都府の「真実数」をなぜ我々は認識し得ているのか。これ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: doubled-word
+    line: 39
+    text: 時点の「正確さ」には留意しつつも、後生も含めた多様な眼の検証に耐えるために、オル
+    message: 「時点時点」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: "「時点時点」 is a deliberate reduplication (at each point in time), not a doubled word"
+  - rule: comparative-without-baseline
+    line: 47
+    text: より深い課題解決支援サービスやオープンデータの提供につながることが期待される。そ
+    message: 「より深い」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: taigen-dome-in-prose
+    line: 49
+    text: (1) 厚生労働省. 毎月勤労統計調査において全数調査するとしていたところを一部
+    message: 本文に体言止めが 22 文あります（4 文まで）
+    verdict: false-positive
+    note: "entries of the notes and references list counted as prose sentences"
+  - rule: bracket-width-consistency
+    line: 57
+    text: ) 公立図書館における課題解決支援サービスに関する報告書. 全国公共図書館協議会
+    message: 括弧を「)」と書いています（この文書はふつう「）」。56 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: "「（平成27年度)」 opens full-width and closes half-width"
+  - rule: max-kanji-continuous
+    line: 57
+    text: (4) 全国公共図書館協議会編. 2015年度（平成27年度) 公立図書館におけ
+    message: 「全国公共図書館協議会編」は漢字が 11 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 57
+    text: ) 公立図書館における課題解決支援サービスに関する報告書. 全国公共図書館協議会
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: correct
+    note: "「（平成27年度)」 opens full-width and closes half-width"
+  - rule: bracket-width-consistency
+    line: 63
+    text: ) 図書館はオープンガバメントに貢献できるか？—行政情報提供と行政支援—”. 慶
+    message: 括弧を「)」と書いています（この文書はふつう「）」。56 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 63
+    text: ) 図書館はオープンガバメントに貢献できるか？—行政情報提供と行政支援—”. 慶
+    message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 74
+    text: なおこれらの研究については高島正憲氏（関西学院大学経済学部専任講師）の教示を得た
+    message: 「関西学院大学経済学部専任講師」は漢字が 14 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 77
+    text: 例えば、
+    message: 「地方史研究協議会編」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 81
+    text: (9) 福島幸宏. 占領軍のだまし方. 京都府立総合資料館メールマガジン. 20
+    message: 「京都府立総合資料館」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 84
+    text: (10) “日本の図書館”.諸外国の公共図書館に関する調査報告書. シー・ディー
+    message: 「文部科学省委託事業」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 105
+    text: 第67回日本図書館情報学会研究大会シンポジウム記録:「デジタルアーカイブと図書館
+    message: 「日本図書館情報学会研究大会」は漢字が 13 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: hankaku-kana
+    line: 110
+    text: ｡そのうえで、ユネスコ（UNESCO）と電子情報保存連合（DPC）が組織内でデジ
+    message: 半角の片仮名「｡」があります（全角は「。」）
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 114
+    text: 令和2年5月8日公表分から、データソースを従来の厚生労働省が把握した個票を積み上
+    message: 日付「令和2年5月8日」の書き方が、この文書のほかの日付（「2020-05-24」など 22 箇所）と違います
+    verdict: unjudged
+  - rule: stray-space
+    line: 115
+    text: 　国内の発生状況”. 厚生労働省.
+    message: 助詞「について」と「国内」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。607 箇所のうち 1 箇所が空いている）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 120
+    text: また、
+    message: 「東京都健康安全研究」は漢字が 9 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 121
+    text: ， 2005, (56)， p. 369-374.
+    message: 読点を「，」と書いています（この文書はふつう「、」。165 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 121
+    text: ， p. 369-374.
+    message: 読点を「，」と書いています（この文書はふつう「、」。165 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: colloquial-opener
+    line: 123
+    text: でも分析が行われている。
+    message: 「でも」で始まる文が 1 個あります（1 個から）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 133
+    text: 補記：本稿脱稿後、
+    message: 「東京外国語大学国際日本学研究」は漢字が 14 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 146
+    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。16 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: latin-spacing
+    line: 146
+    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。11 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: no-mixed-desumasu
+    line: 146
+    text: ライセンスの内容を知りたい方は https://creativecommons.
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
+  - rule: no-mixed-desumasu
+    line: 146
+    text: 本著作（CA1975）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"

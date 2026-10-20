@@ -12,5 +12,5 @@ license:
   url: https://github.com/GSA/Section508.gov/blob/cfc700f1a866a18a19dc0826d5961e63fee87bca/LICENSE.md
   note: "Work of the US federal government (GSA), public domain in the US (17 U.S.C. 105) and dedicated worldwide under CC0 1.0 (LICENSE.md of GSA/Section508.gov, the site's source, at the pinned commit); Source: Section508.gov (https://www.section508.gov/tools/glossary/); converted to Markdown"
 redistribute: true
-sha256: 1f22ab9390d7ec28f2d3e93855bc24b8e28d33bf740e3bbcbf984f0114a9ebc4
+sha256: 627107b9a42d5359c3efe14a4a9fb189f4452d30fd965e9aa0a00376ffbe6159
 notes: The source is html; the text is source.format html converted by scripts/lib/source-format.ts, which drops the page title (in the site banner) and link-only lists.

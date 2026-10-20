@@ -1,0 +1,34 @@
+id: cisa-blog-cyber-storm-x-20-years
+chaff: 0.36.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 9
+    text: By Jason Wells, Section Chief for State,
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: a fixed official job title (State, Local, Tribal and Territorial), not the writer's list
+  - rule: max-sentence-length
+    line: 21
+    text: Cyber Storm began with 500 participants
+    message: This sentence runs 42 words (limit 40)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 27
+    text: "'s Cyber Storm IX, a simulated threat ac"
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 8)
+    verdict: correct
+  - rule: quote-without-source
+    line: 33
+    text: Building these relationships and partner
+    message: '"Building these relationships and partnerships now is how Cyber Storm is going to help me in my future." is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 33
+    text: "  A critical infrastructure operator not"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 15)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 41
+    text: As the nation’s cyber defense agency and
+    message: This sentence runs 46 words (limit 40)
+    verdict: correct

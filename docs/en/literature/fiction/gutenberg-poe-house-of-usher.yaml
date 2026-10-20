@@ -1,0 +1,15 @@
+id: gutenberg-poe-house-of-usher
+title: "Edgar Allan Poe, The Fall of the House of Usher (Project Gutenberg #932)"
+language: en
+genre: literature/fiction
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/932/pg932.txt
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1839); Project Gutenberg eBook #932, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: 481964b9f46ee40227d028fdb8b27bf6ebf1933948c7cc7b9fd3c2ed6fb90734
+notes: The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it.

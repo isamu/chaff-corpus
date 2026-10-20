@@ -1,0 +1,21 @@
+id: us-6080436-bread-refreshing
+chaff: 0.36.0
+findings:
+  - rule: oxford-comma-consistency
+    line: 9
+    text: This invention is concerned with the pro
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "a serial comma here, where the next paragraph lists rolls, buns, loaves, muffins and the like without one"
+  - rule: which-that-consistency
+    line: 139
+    text: which is a porous ceramic available as a
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "a descriptive clause (foam which is a porous ceramic) without the comma a nonrestrictive which needs"
+  - rule: unknown-word
+    line: 307
+    text: crunchy surface or toasted face. Also, t
+    message: '"crunchy" is not in the dictionary; did you mean "crunch"?'
+    verdict: false-positive
+    note: "crunchy is an ordinary English word missing from the dictionary"

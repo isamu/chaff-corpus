@@ -1,0 +1,327 @@
+id: ndl-ca2055-immediate-open-access
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# CA2055 – 動向レビュー：即時オープンアクセスを巡る動向：グリーンOA"
+    message: 題「CA2055 – 動向レビュー：即時オープンアクセスを巡る動向：グリーンOAを通じた即時OAと権利保持戦略を中心に / 船守美穂」は 56 文字あります（50 文字まで）
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 3
+    text: "### 動向レビュー：即時オープンアクセスを巡る動向：グリーンOAを通じた即時O"
+    message: 見出し「動向レビュー：即時オープンアクセスを巡る動向：グリーンOAを通じた即時OAと権利保持戦略を中心に」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: false-positive
+    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
+  - rule: max-kanji-continuous
+    line: 5
+    text: 国立情報学研究所情報社会相関研究系／オープンサイエンス基盤研究センター：船守美穂
+    message: 「国立情報学研究所情報社会相関研究系」は漢字が 17 字続いています（8 字まで）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 15
+    text: "#### 1. 即時OA政策の動向"
+    message: 見出し「1. 即時OA政策の動向」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 19
+    text: 即時OA政策は、欧州の研究助成機関の有志団体であるcOAlition Sが201
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 25
+    text: "#### 2. 即時OAの方法"
+    message: 見出し「2. 即時OAの方法」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 27
+    text: 更に、フルOA誌と、ハイブリッド誌へのOA出版に分け、グリーンOAと合わせ、3通
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 29
+    text: かかわらず、その実現に至らないと予想されること、2）契約金額が、大学がそれまでに
+    message: 「かかわる」と書いています（この文書はふつう「関わる」と書く語です。13 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: sentence-initial-conjunction-run
+    line: 29
+    text: しかし、転換契約については、1）当初、当該出版社の学術雑誌が最終的には全てフルO
+    message: 接続詞で始まる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 33
+    text: の研究成果の還元の次に、「国全体の購読料及びオープンアクセス掲載公開料の総額の経
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 35
+    text: "#### 3. グリーンOAを通じた即時OAの問題点と対応策"
+    message: 見出し「3. グリーンOAを通じた即時OAの問題点と対応策」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
+    verdict: unjudged
+  - rule: empty-section
+    line: 39
+    text: "#### 3.1 大学における実施体制上の問題点と解決の方向性"
+    message: 見出し「3.1 大学における実施体制上の問題点と解決の方向性」の下に中身がありません
+    verdict: unjudged
+  - rule: hiragana-fukushi
+    line: 43
+    text: 年間数千報の論文生産のある大規模総合大学は勿論のこと、中小規模の大学においては、
+    message: 「勿論」は ひらがなで書くのが読みやすいです
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 47
+    text: の書誌情報等の入力負担の低減を図っている。フランスでは、国家リポジトリHALに研
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 51
+    text: 出版社は一般に、そのOAポリシーにおいて、論文をOAにできるまでのエンバーゴ期間
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 63
+    text: また、日本の学会出版の一部は、学術雑誌にエンバーゴ期間を設け、学会費を負担した者
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 65
+    text: (CA1990参照)。S2Oとは、一定の数の機関が購読料を負担すると、当該学術雑
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 65
+    text: )。S2Oとは、一定の数の機関が購読料を負担すると、当該学術雑誌のコンテンツがフ
+    message: 括弧を「)」と書いています（この文書はふつう「）」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 65
+    text: 欧州のプランSにおいても、この問題は認識され、中小規模の学術出版に特化して、OA
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: unjudged
+  - rule: weasel-word
+    line: 65
+    text: しかし、これはフリーライダーを常に許容するモデルのため、持続性がないと言われてい
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: unjudged
+  - rule: weasel-word
+    line: 65
+    text: 一般的には、Annual Reviews社などの、OAでアクセス可能であっても図
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: unjudged
+  - rule: empty-section
+    line: 69
+    text: "#### 4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発"
+    message: 見出し「4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発」の下に中身がありません
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 69
+    text: "#### 4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発"
+    message: 見出し「4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 75
+    text: の一般の著作物の利用者と同程度の権利しか有さなくなる。このため、論文著者は、自身
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 75
+    text: かかわらず、機関リポジトリや個人のウェブサイトにおける論文の公開はおろか、学生や
+    message: 「かかわる」と書いています（この文書はふつう「関わる」と書く語です。13 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 75
+    text: 出来なくなる。
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。22 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 75
+    text: このため、論文著者は、自身の著作物であるにもかかわらず、機関リポジトリや個人のウ
+    message: 「は」で出した主題から述語まで 140 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 104
+    text: なお、この要請に対しては9社が回答し、OA誌／購読誌に関わらず、概ね、1）各社が
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: empty-section
+    line: 106
+    text: "#### 4.4 大学による対抗措置：「機関による著者の権利保持ポリシー」"
+    message: 見出し「4.4 大学による対抗措置：「機関による著者の権利保持ポリシー」」の下に中身がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 119
+    text: このような条項は、一般的には、大学のOAポリシーに盛り込まれるが、英・ケンブリッ
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 119
+    text: なお、このようなポリシーは「機関による著者の権利保持ポリシー」（institut
+    message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 123
+    text: (55)。教員が研究助成の条件と出版社との出版契約の条項との間で板挟みとなり、学
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 123
+    text: )。教員が研究助成の条件と出版社との出版契約の条項との間で板挟みとなり、学術出版
+    message: 括弧を「)」と書いています（この文書はふつう「）」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 123
+    text: 事も大きかったようである。
+    message: 「事」と書いています（この文書はふつう「こと」と書く語です。69 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 129
+    text: いたらしめるために、英国の大学は出版社に対し、権利保持ポリシーを採択した旨通告し
+    message: 「いたる」と書いています（この文書はふつう「至る」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 143
+    text: なお、KR21は欧州研究図書館協会（LIBER）やSPARC Europeなど5
+    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 153
+    text: 2023年11月10日に発表した。
+    message: 日付「2023年11月10日」の書き方が、この文書のほかの日付（「2023-10-27」など 97 箇所）と違います
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 153
+    text: また、グリーンOAを通じた即時OAは、金銭的に恵まれない研究者が研究助成の条件を
+    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
+    verdict: unjudged
+  - rule: empty-section
+    line: 155
+    text: "#### 5. 結び"
+    message: 見出し「5. 結び」の下に中身がありません
+    verdict: unjudged
+  - rule: heading-numbering-mix
+    line: 155
+    text: "#### 5. 結び"
+    message: 見出し「5. 結び」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 165
+    text: 無いと言うのはおかしい。紙媒体の印刷物を印刷郵送しなければいけなかった時代であれ
+    message: 「無い」と書いています（この文書はふつう「ない」と書く語です。16 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 171
+    text: ), Katie Steen-James (SPARC), 鈴木康平（人間文化研
+    message: 括弧を「)」と書いています（この文書はふつう「）」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 174
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 175
+    text: " 2023. 2023, 184p."
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。22 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 176
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: taigen-dome-in-prose
+    line: 184
+    text: (4)船守美穂.“米国、即座OAの方針を発表”. NIIオープンサイエンス基盤研
+    message: 本文に体言止めが 14 文あります（4 文まで）
+    verdict: false-positive
+    note: "entries of the notes and references list counted as prose sentences"
+  - rule: bracket-width-consistency
+    line: 185
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 188
+    text: (参照 2023-11-07).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 191
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 194
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 197
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 200
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 219
+    text: 23 May 2023). Council of the EU, 2023, 9
+    message: 日付「23 May 2023」の書き方が、この文書のほかの日付（「2023-10-27」など 97 箇所）と違います
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 228
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 232
+    text: " とRCOSの軽井沢合宿―データガバナンスと即時OAの報告―, 2023, 12"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。356 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 233
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 266
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: name-variant
+    line: 291
+    text: Coalition for Responsible Sharing. 2023-
+    message: 「Coalition」は、ほかの所では「cOAlition」と書いています（字の大小・幅・記号の違い）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 291
+    text: Coalition for Responsible Sharing. 2023-
+    message: 「Coalition」と書いています（この文書はふつう「cOAlition」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 298
+    text: (参照 2023-10-27).
+    message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 348
+    text: 2023年10月20日に筆者がPlan SのアンバサダーであるSally Rum
+    message: 日付「2023年10月20日」の書き方が、この文書のほかの日付（「2023-10-27」など 97 箇所）と違います
+    verdict: unjudged
+  - rule: date-format-consistency
+    line: 363
+    text: 2023年10月20日に筆者がPlan SのアンバサダーであるSally Rum
+    message: 日付「2023年10月20日」の書き方が、この文書のほかの日付（「2023-10-27」など 97 箇所）と違います
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 427
+    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。22 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: latin-spacing
+    line: 427
+    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"

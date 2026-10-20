@@ -1,0 +1,172 @@
+id: mext-shochu-news-516
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27"
+    message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27日）」は 41 文字あります（40 文字まで）
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 5
+    text: 【発行】
+    message: 書き出しに挨拶がありません
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 7
+    text: HPに掲載しました！
+    message: 「HP」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 14
+    text: STEAM教育支援補助教材を公開
+    message: 「STEAM」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 17
+    text: す
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。13 段落のうち 2 段落）
+    verdict: unjudged
+  - rule: missing-final-period
+    line: 18
+    text: た
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。13 段落のうち 2 段落）
+    verdict: unjudged
+  - rule: no-mixed-desumasu
+    line: 23
+    text: （2）ロースクールへ行こう！！ 2026年度
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 32
+    text: 4月号では「国語科」と「社会科」におけるワーキンググループの検討事項を分かりやす
+    message: この文は 84 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 33
+    text: 「国語科」では育成すべき資質・能力を明確にし、自分の考えを重視した授業づくりにつ
+    message: この文は 115 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 48
+    text: 初等中等教育局 初等中等教育企画課 地方教育行政係
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 54
+    text: 特集は「学習指導要領改訂に向けて～各教科等別ワーキンググループにおける審議状況①
+    message: この文は 120 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 56
+    text: 第1号となる本号では、教育課程企画特別部会の論点整理の内容（R7.9月）を解説す
+    message: この文は 84 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 56
+    text: WG及び社会・地理歴史・公民WGにおける審議の状況について解説します。
+    message: 「WG」が説明なしで使われています（説明のない略語 3 個）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 74
+    text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
+    message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 74
+    text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: 高等教育局 高等教育企画課高等教育政策室 政策総括係
+    message: この文は 74 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 90
+    text: 一般社団法人授業目的公衆送信補償金等管理協会（SARTRAS）「さあとらす」編集
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 101
+    text: このたび、掲載中の動画シリーズ「ともにキヅク社会」をより活用いただくため、小学校
+    message: この文は 82 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 117
+    text: 法務省HP上のQ＆A形式の解説資料には、学校教育に関してはどのようなものが「監護
+    message: この文は 137 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: 文部科学省では、図書館・学校図書館の現状や課題を把握・分析し、運営の充実に向けた
+    message: この文は 106 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 136
+    text: )を記念し、文部科学省及び当機構の主催により開催します。国民の間に広く子供の読書
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 137
+    text: ４本立てで、ポスターセッションでは表彰者の中から選ばれた団体をはじめ、本年度から
+    message: 全角の「４」と書いています（この文書はふつう半角の「4」。35 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 137
+    text: 当日は、式典・特別講演・ポスターセッション・表彰式の４本立てで、ポスターセッショ
+    message: この文は 82 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 146
+    text: 総合教育政策局 地域学習推進課 図書館・学校図書館振興室
+    message: この文は 73 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 154
+    text: (日)に科学技術週間を実施します！
+    message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 154
+    text: (月)～4月19日(日)に科学技術週間を実施します！
+    message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 154
+    text: )～4月19日(日)に科学技術週間を実施します！
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 154
+    text: )に科学技術週間を実施します！
+    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 156
+    text: あわせて、学習資料「一家に1枚 地球」を制作しました。
+    message: 「あわせる」と書いています（この文書はふつう「併せる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 167
+    text: 法科大学院協会では、2026年4月18日（土）に法科大学院の魅力を伝える合同説明
+    message: この文は 85 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 167
+    text: 法科大学院協会では、2026年4月18日（土）に法科大学院の魅力を伝える合同説明
+    message: 「〜します」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 176
+    text: 高等教育局 専門教育課 専門職大学院室 法科大学院係
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 184
+    text: 文部科学省では、映画その他の映像作品及び紙芝居について、教育上価値が高く、学校教
+    message: この文は 133 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 1
+    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
+    verdict: missed

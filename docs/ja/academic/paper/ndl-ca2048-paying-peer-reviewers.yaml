@@ -1,0 +1,16 @@
+id: ndl-ca2048-paying-peer-reviewers
+title: "カレントアウェアネス CA2048: 動向レビュー：査読は無償であるべきか？"
+language: ja
+genre: academic/paper
+format: markdown
+source:
+  url: https://current.ndl.go.jp/ca2048
+  fetched: 2026-10-20
+  format: html
+license:
+  name: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/legalcode.ja
+  note: "The article page ends with \"本著作（CA2048）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック・ライセンスの下に提供されています\" (the portal's site policy, https://current.ndl.go.jp/sitepolicy, allows use under that licence without application); 出典: 佐藤翔. カレントアウェアネス. 2023, (357), CA2048, https://current.ndl.go.jp/ca2048; converted to Markdown, and the portal's links to neighbouring articles, the posting dates and the \"PDFファイル\" link were removed"
+redistribute: true
+sha256: 09b0a582c48f189573187d8f07ac1d238a050a7349bd11c609c3777a93e84609
+notes: "Converted with scripts/lib/source-format.ts (html) from the article page; the lines before the article's title heading (links to neighbouring articles) and the portal's date and PDF-link lines under it were then removed. The text is otherwise as converted. The converter drops a section heading that is followed directly by its first subsection heading at the same HTML level (h4 then h4); those section headings were put back by hand, as #### lines, in the article's order."

@@ -1,0 +1,16 @@
+id: jpo-kyuuji-heiki
+title: "特許庁: 特許庁への手続において旧氏（旧姓）併記が可能になります"
+language: ja
+genre: docs/manual
+format: markdown
+source:
+  url: https://web.archive.org/web/20260213230450id_/https://www.jpo.go.jp/system/process/shutugan/madoguchi/info/kyuuji.html
+  fetched: 2026-10-20
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.jpo.go.jp/toppage/about/index.html
+  note: "特許庁ウェブサイトのコンテンツは公共データ利用規約（第1.0版）（PDL1.0）による（「このサイトについて」https://www.jpo.go.jp/toppage/about/index.html）; 出典：特許庁ウェブサイト（https://www.jpo.go.jp/system/process/shutugan/madoguchi/info/kyuuji.html）を加工して作成 (converted to Markdown)"
+redistribute: true
+sha256: 6f1966b8c154facc872bb22d477ed3f3458aef43809ea65dd0def072249dc3f4
+notes: "The text is source.format html converted with the corpus converter as amended by isamu/chaff-corpus#53 (isamu/lab#1658, #1663). www.jpo.go.jp answers curl with an AWS WAF JavaScript challenge, so the Wayback snapshot is pinned. The names in the 記載例 (特許（実用） 太郎, 特許 発明 太郎) are the page's own placeholder names."

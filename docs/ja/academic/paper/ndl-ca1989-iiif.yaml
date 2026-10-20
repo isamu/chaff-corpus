@@ -1,0 +1,16 @@
+id: ndl-ca1989-iiif
+title: "カレントアウェアネス CA1989: 動向レビュー：IIIFの概要と主要APIバージョン3.0の公開"
+language: ja
+genre: academic/paper
+format: markdown
+source:
+  url: https://current.ndl.go.jp/ca1989
+  fetched: 2026-10-20
+  format: html
+license:
+  name: CC-BY-4.0
+  url: https://creativecommons.org/licenses/by/4.0/legalcode.ja
+  note: "The article page ends with \"本著作（CA1989）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック・ライセンスの下に提供されています\" (the portal's site policy, https://current.ndl.go.jp/sitepolicy, allows use under that licence without application); 出典: 永崎研宣. カレントアウェアネス. 2020, (346), CA1989, https://current.ndl.go.jp/ca1989; converted to Markdown, and the portal's links to neighbouring articles, the posting dates and the \"PDFファイル\" link were removed"
+redistribute: true
+sha256: ed67452aa7da508f2e88f7c85703a1ed79bfbb9f0839b5674b906a515c65d6aa
+notes: Converted with scripts/lib/source-format.ts (html) from the article page; the lines before the article's title heading (links to neighbouring articles) and the portal's date and PDF-link lines under it were then removed. The text is otherwise as converted.

@@ -1,0 +1,846 @@
+id: mext-chukyo-shakaijin-ukeire-toushin-2002
+chaff: 0.36.0
+findings:
+  - rule: vague-word-density
+    line: 21
+    text: 1  学生が個人の事情に応じて柔軟に修業年限を超えて履修し学位等を取得する仕組み
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: false-positive
+    note: "「柔軟に」 is part of the name of the mechanism the 答申 proposes, in its heading"
+  - rule: duplicate-heading
+    line: 27
+    text: "## 大学等における社会人受入れの推進方策について（答申）"
+    message: 見出し「大学等における社会人受入れの推進方策について（答申）」は、同じ親の下の 15 行目の見出しと同じです
+    verdict: false-positive
+    note: "the page shows the 答申's title as the page title and again as the document's own heading"
+  - rule: max-sentence-length
+    line: 32
+    text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
+    message: この文は 189 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: ngram-repetition
+    line: 32
+    text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
+    message: 「ると考えられる。」が 11 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 32
+    text: 更に残された制度上の課題として，学生が柔軟に修業年限を超えて履修し学位等を取得す
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: "「更に」 where the text mostly writes 「さらに」"
+  - rule: use-before-definition
+    line: 32
+    text: 1年制コース及び通信制博士課程の導入について検討する必要があると考えられる。
+    message: 「1年制コース」を、86 行目の定義より前で使っています
+    verdict: false-positive
+    note: "the introduction names the proposals that later sections define; a summary before the definition"
+  - rule: use-before-definition
+    line: 32
+    text: 専門大学院1年制コース及び通信制博士課程の導入について検討する必要があると考えら
+    message: 「専門大学院」を、85 行目の定義より前で使っています
+    verdict: false-positive
+    note: "the introduction names the proposals that later sections define; a summary before the definition"
+  - rule: vague-word-density
+    line: 32
+    text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 34
+    text: 審議を行い，これらの制度改正にかかわる課題について結論を得たので，大学等における
+    message: 「審議を行う」は「審議する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 34
+    text: 答申を行うものである。
+    message: 「答申を行う」は「答申する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 34
+    text: 更に審議を行い，これらの制度改正にかかわる課題について結論を得たので，大学等にお
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: "「更に」 where the text mostly writes 「さらに」"
+  - rule: nominalization
+    line: 38
+    text: 学習を行い，高度で多様な職業能力を身に付けることにより，生涯にわたるキャリア形成
+    message: 「学習を行う」は「学習する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 38
+    text: 個人が豊かで充実した人生を送るためには，このような状況に的確に対応して，職業にお
+    message: 「適時」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 38
+    text: 社会全体にとっても，その活力を維持向上させていくためには，時代の変化や困難な状況
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 39
+    text: 以上のような状況を踏まえ，我が国の大学等は，社会に一層開かれた機関として，産学連
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 40
+    text: 例えば，高度で専門的な職業能力の向上を目指して大学院での高度な再学習を求める者，
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: no-doubled-joshi
+    line: 41
+    text: の促進のための当面の具体的な改革方策について成案を得たので，以下のとおり提言を行
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 41
+    text: の受入れ促進のための各般の施策を踏まえ調査検討を行い，その一層の促進のための当面
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 41
+    text: 提言を行うものである。
+    message: 「提言を行う」は「提言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 41
+    text: 検討を行い，その一層の促進のための当面の具体的な改革方策について成案を得たので，
+    message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: title-length
+    line: 45
+    text: "#### 1  学生が個人の事情に応じて柔軟に修業年限を超えて履修し学位等を取得"
+    message: 見出し「1  学生が個人の事情に応じて柔軟に修業年限を超えて履修し学位等を取得する仕組み（長期履修学生）の導入」は 48 文字あります（40 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 47
+    text: 現在，我が国の大学においては，職業等を有しながら学習を希望する人々の様々な学習需
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 47
+    text: 授業を行うことができることとされている。  また，大学等が提供する授業科目等を学
+    message: 「授業を行う」は「授業する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: false-positive
+    note: "「授業を行う」 cannot become 「授業する」 in standard Japanese"
+  - rule: nominalization
+    line: 47
+    text: 教育を行う学部等が設置されているほか，昼夜開講制により授業を行うことができること
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 47
+    text: 教育を行う学部等及び通信による教育を行う学部等が設置されているほか，昼夜開講制に
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 47
+    text: また，大学等が提供する授業科目等を学生が自らの希望に応じて適宜選択し単位を修得す
+    message: 「適宜」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 48
+    text: このように様々な履修形態上の工夫が行われているものの，正規の学生として卒業・修了
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 48
+    text: このように様々な履修形態上の工夫が行われているものの，正規の学生として卒業・修了
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 48
+    text: 履修を行う場合は，現状では一般的に留年や休学として取り扱われている。
+    message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+  - rule: max-sentence-length
+    line: 49
+    text: 一方，諸外国においては，個人の事情に応じて修業年限を超えて履修を行い，学位を取得
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 49
+    text: 履修を行い，学位を取得する正規の学生（いわゆるパートタイム学生）が制度的に存在し
+    message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+  - rule: vague-word-density
+    line: 50
+    text: 学生が留年や休学として取り扱われることなく，個人の事情に応じて柔軟に修業年限を超
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 53
+    text: 履修を行い学位等を取得できる新たな仕組みを，各大学等が各々の判断で導入できること
+    message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+  - rule: vague-word-density
+    line: 53
+    text: 以上のことを踏まえ，職業等に従事しながら大学等で学ぶことを希望する人々の学習機会
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 54
+    text: その際，学生個人の事情に応じて柔軟な履修を可能とする観点から，できる限り弾力的な
+    message: 「できる限り」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 59
+    text: 当該学生は，職業等との兼ね合いにより，通常の修業年限在学する学生よりも1年間又は
+    message: この文は 179 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: no-doubled-joshi
+    line: 59
+    text: の定める単位の修得等の要件を満たして卒業・修了することにより，学位等を取得する正
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 59
+    text: 当該学生は，職業等との兼ね合いにより，通常の修業年限在学する学生よりも1年間又は
+    message: 「は」で出した主題から述語まで 164 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 63
+    text: 人々の多様な学習需要に対応し，高等教育機関における学習機会をできるだけ拡大する観
+    message: 「できるだけ」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: また，大学院においては，職業上必要な高度専門的知識・能力を修得することを目的とし
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: vague-word-density
+    line: 65
+    text: また，大学院においては，職業上必要な高度専門的知識・能力を修得することを目的とし
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: repeated-conjunction
+    line: 67
+    text: また，高等専門学校においても，専攻科については大学と同様に単位制を採用しているこ
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 71
+    text: ""
+    message: 「(3) 在学年限及び年間修得単位数」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: unjudged
+  - rule: nominalization
+    line: 73
+    text: 履修を行い学位等の取得を目指す場であることにかんがみれば，長期履修学生が在学でき
+    message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+  - rule: topic-predicate-distance
+    line: 73
+    text: 大学等は，本来，学生が計画的に履修を行い学位等の取得を目指す場であることにかんが
+    message: 「は」で出した主題から述語まで 113 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 74
+    text: また，長期履修学生の年間修得単位数については，より柔軟に履修できるようにする観点
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 74
+    text: 実習を行う課程においてはある程度継続的な学習が必要であること等を踏まえ，各大学等
+    message: 「実習を行う」は「実習する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 74
+    text: 評価を実施するなど，安易な単位認定や卒業を抑制することにより，教育水準の維持向上
+    message: 「評価を実施する」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 74
+    text: したがって，これらの状況に柔軟に対応できるよう，学生の希望に応じて，通常の修業年
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 74
+    text: その際，実験・実習を行う課程においてはある程度継続的な学習が必要であること等を踏
+    message: 「ある程度」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 74
+    text: ただし，履修形態の変更に当たって相応の理由がないと判断される場合にまで，この取扱
+    message: 「相応の」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 74
+    text: また，長期履修学生の年間修得単位数については，より柔軟に履修できるようにする観点
+    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 78
+    text: 長期履修学生は修業年限を超えて在学することから，その授業料については，通常の修業
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: tari-unpaired
+    line: 78
+    text: たり，単位制授業料制度を導入するなど，設置者の判断により適切な方法で徴収すること
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    text: 長期履修学生は修業年限を超えて在学することから，その授業料については，通常の修業
+    message: 「は」で出した主題から述語まで 152 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 78
+    text: 長期履修学生は修業年限を超えて在学することから，その授業料については，通常の修業
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
+    message: この文は 223 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 79
+    text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 79
+    text: の算定上の収容定員の取扱いについては，長期履修学生は正規の学生として受け入れる以
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 79
+    text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
+    message: 「は」で出した主題から述語まで 181 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 79
+    text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 80
+    text: なお，職業等に従事しながら大学等で学ぶ長期履修学生に対しては，通常の修業年限在学
+    message: この文は 167 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 80
+    text: 配慮を行うことが適当である。
+    message: 「配慮を行う」は「配慮する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 80
+    text: なお，職業等に従事しながら大学等で学ぶ長期履修学生に対しては，通常の修業年限在学
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 84
+    text: 今後，社会，経済の各分野において，世界的規模での競争が激化するとともに，国際的な
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: teki-overuse
+    line: 84
+    text: 今後，社会，経済の各分野において，世界的規模での競争が激化するとともに，国際的な
+    message: 一文に「〜的」が 5 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 85
+    text: 平成13年度現在，4大学4研究科4専攻（一橋大学大学院国際企業戦略研究科経営・金
+    message: 「京都大学大学院医学研究科社会健康医学系専攻」は漢字が 21 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 85
+    text: 高度専門職業人の養成に特化した大学院修士課程（以下「専門大学院」という。）は，こ
+    message: この文は 269 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 85
+    text: 高度専門職業人の養成に特化した大学院修士課程（以下「専門大学院」という。）は，こ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 85
+    text: 教育を行う大学院の設置を促進することを目的として，平成10年の大学審議会答申「2
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 85
+    text: 更に進め，特定の職業等に従事するのに必要な高度の専門的知識・能力の育成に特化した
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 86
+    text: 一方，大学院修士課程における1年以上2年未満の修業年限でも修了することが可能なコ
+    message: この文は 173 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: wordy-phrase
+    line: 86
+    text: 一方，大学院修士課程における1年以上2年未満の修業年限でも修了することが可能なコ
+    message: 「することが可能」は、もっと短く言えます
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: しかしながら，上記答申においては，「修士課程1年制コースを高度専門職業人の養成に
+    message: この文は 195 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: vague-word-density
+    line: 88
+    text: そこで，現在設置されている専門大学院4専攻における在学者の状況を見ると，約8割が
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 89
+    text: 今後，社会，経済の急激な変化に迅速に対応するとともに，社会人の再学習の需要に適切
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: teki-overuse
+    line: 89
+    text: 今後，社会，経済の急激な変化に迅速に対応するとともに，社会人の再学習の需要に適切
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 89
+    text: 今後，社会，経済の急激な変化に迅速に対応するとともに，社会人の再学習の需要に適切
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 94
+    text: 従来の大学院修士課程における1年制コースは，履修形態の工夫とともに，一定の職業経
+    message: この文は 156 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 94
+    text: 指導を行うなどカリキュラムを工夫するならば，1年制でも2年制と同等の教育水準を確
+    message: 「指導を行う」は「指導する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 94
+    text: 教育を行うこととしている（大学院設置基準第3条第3項）。専門大学院1年制コースに
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 94
+    text: 教育を行うこととすることが適当である。
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 94
+    text: 従来の大学院修士課程における1年制コースは，履修形態の工夫とともに，一定の職業経
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 94
+    text: 従来の大学院修士課程における1年制コースは，履修形態の工夫とともに，一定の職業経
+    message: 「一定の」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 94
+    text: 従来の大学院修士課程における1年制コースは，履修形態の工夫とともに，一定の職業経
+    message: 「することが可能」は、もっと短く言えます
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 98
+    text: 専門大学院は，その設置を提言した平成10年の大学審議会答申「21世紀の大学像と今
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 98
+    text: 専門大学院は，その設置を提言した平成10年の大学審議会答申「21世紀の大学像と今
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 100
+    text: したがって，各大学院においては，国際的通用性にも配慮しつつ，分野ごとに学生に身に
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 100
+    text: 教育を行うことが可能かどうかを十分慎重に判断し，適切と考えられる場合にのみ専門大
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 106
+    text: 助言を行っていくことであると考えられ，ケーススタディ，フィールドワークなどを取り
+    message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 106
+    text: 専門大学院における研究指導は，「特定の課題についての研究の成果」の作成・実行の各
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 106
+    text: 専門大学院における研究指導は，「特定の課題についての研究の成果」の作成・実行の各
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 107
+    text: 教育を行うかは，各大学院の主体的な判断にゆだねられるべきであるが，今後，専門大学
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 107
+    text: どのような方針で教育を行うかは，各大学院の主体的な判断にゆだねられるべきであるが
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: excessive-hedging
+    line: 108
+    text: かと考えられる。
+    message: この文は逃げの表現を 2 つ重ねています（「かと、と考えられる」）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 108
+    text: なお，専門大学院においては，高度の専門性を要する職業等に求められる知識や能力を専
+    message: この文は 191 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 108
+    text: なお，専門大学院においては，高度の専門性を要する職業等に求められる知識や能力を専
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 109
+    text: したがって，本審議会においては，今後，各専門大学院における取組状況を踏まえつつ，
+    message: この文は 142 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 109
+    text: 検討を行っていくことが必要である。
+    message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 113
+    text: 工夫を行うことにより，実質的に2年制と同等の教育研究を行い，修士の学位を授与する
+    message: 「工夫を行う」は「工夫する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 113
+    text: 研究を行い，修士の学位を授与するにふさわしい水準を確保している。
+    message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 113
+    text: 従来の大学院修士課程における1年制コースは，主として実務の経験のある者に対し，履
+    message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 113
+    text: 従来の大学院修士課程における1年制コースは，主として実務の経験のある者に対し，履
+    message: 「一定の」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 114
+    text: 専門大学院における1年制コースについても，同様に，主として実務の経験のある者に対
+    message: この文は 253 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 114
+    text: 専門大学院における1年制コースについても，同様に，主として実務の経験のある者に対
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 114
+    text: の設定の仕方の工夫，一定の職業経験等の成果を生かした特定課題についての研究成果の
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 114
+    text: 工夫を行うことにより，実質的に2年制と同等の教育研究を行うことが可能であり，修士
+    message: 「工夫を行う」は「工夫する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 114
+    text: 指導を行うなどの履修形態の工夫や，学期や学習期間の設定の仕方の工夫，一定の職業経
+    message: 「指導を行う」は「指導する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 114
+    text: 研究を行うことが可能であり，修士の学位を授与するにふさわしい水準を確保することが
+    message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 114
+    text: 専門大学院における1年制コースについても，同様に，主として実務の経験のある者に対
+    message: 「一定の」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 115
+    text: 評価を行うことが重要であると考えられる。専門大学院については，大学外の第三者によ
+    message: 「評価を行う」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 115
+    text: 更に，各分野ごとにアクレディテーション（適格認定）・システムを導入することが必要
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 115
+    text: 専門大学院が実質的に高度専門職業人の養成にふさわしい教育研究水準を確保し，国際的
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 115
+    text: 専門大学院が実質的に高度専門職業人の養成にふさわしい教育研究水準を確保し，国際的
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 120
+    text: また，大学における学事暦の在り方などについては，昼間の学部の運営を基本に設定され
+    message: この文は 175 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: no-doubled-joshi
+    line: 120
+    text: のコースの運営の在り方にも配慮して，教員組織，教育研究指導体制等についての大学全
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 120
+    text: の大学全体の運営の在り方を工夫していくことも必要になると考えられる。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 120
+    text: 授業を行うこれらのコースの運営の在り方にも配慮して，教員組織，教育研究指導体制等
+    message: 「授業を行う」は「授業する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 125
+    text: より適切にこたえていくために，授業による比重が高い修士課程について，専攻分野によ
+    message: 「より適切」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 125
+    text: 通信制大学院は，このような学習需要に，より適切にこたえていくために，授業による比
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 125
+    text: 通信制大学院は，このような学習需要に，より適切にこたえていくために，授業による比
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 125
+    text: 通信制大学院は，このような学習需要に，より適切にこたえていくために，授業による比
+    message: 「適切に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 126
+    text: 通信制博士課程の設置については，上記答申において，博士課程は研究課題に即した研究
+    message: この文は 180 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 126
+    text: 通信制博士課程の設置については，上記答申において，博士課程は研究課題に即した研究
+    message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 127
+    text: 平成12年の大学審議会答申「グローバル化時代に求められる高等教育の在り方について
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: bracket-nesting
+    line: 128
+    text: また，大学院における研究指導についても，通学制では「直接の対面指導を行うことが原
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 128
+    text: また，現在通信制修士課程を開設している大学院においては，社会人が主な対象であり，
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 128
+    text: また，大学院における研究指導についても，通学制では「直接の対面指導を行うことが原
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 128
+    text: また，現在通信制修士課程を開設している大学院においては，社会人が主な対象であり，
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 128
+    text: 通信制修士課程を修了した学生が博士課程での学習を行うことを希望する場合，現行制度
+    message: この文は 202 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 128
+    text: 学習を行いたいと考えている。また，現在通信制修士課程を開設している大学院において
+    message: 「学習を行う」は「学習する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 128
+    text: 学習を行うことが困難な状況にある。また，大学院における研究指導についても，通学制
+    message: 「学習を行う」は「学習する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 128
+    text: 学習を行うことを希望する場合，現行制度上，通学制博士課程において学習するほかない
+    message: 「学習を行う」は「学習する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 128
+    text: 指導を行うことが原則であること」（「大学設置基準等の一部を改正する省令等の施行等
+    message: 「指導を行う」は「指導する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 128
+    text: 授業を実施していない場合には，自宅や職場の近くに大学院が存在しない社会人にとって
+    message: 「授業を実施する」は「授業する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 128
+    text: 研究を行う能力を備えていると考えており，通信制博士課程の制度化を望んでいる。通信
+    message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 128
+    text: また，現在通信制修士課程を開設している大学院においては，社会人が主な対象であり，
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 129
+    text: 今後，我が国の大学院においては，社会人の多様な学習需要への対応を積極的に図ってい
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 129
+    text: より高度な研究を行う機会を拡大し，社会の多様な方面で活躍し得る高度の能力と豊かな
+    message: 「より高度」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 129
+    text: 今後，我が国の大学院においては，社会人の多様な学習需要への対応を積極的に図ってい
+    message: この文は 175 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 129
+    text: 今後，我が国の大学院においては，社会人の多様な学習需要への対応を積極的に図ってい
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 129
+    text: 研究を行う機会を拡大し，社会の多様な方面で活躍し得る高度の能力と豊かな学識を有す
+    message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 131
+    text: ""
+    message: 「(1) 分野」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: unjudged
+  - rule: nominalization
+    line: 133
+    text: 教育を行うことができることとされている。
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 134
+    text: 行っている状況にある。
+    message: 「行く」と書いています（この文書はふつう「いく」と書く語です。24 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: nominalization
+    line: 135
+    text: 教育を行うことができることとすることが適当である。
+    message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 135
+    text: これらを踏まえ，通信制博士課程については，各大学院が専攻分野ごとにその学習内容を
+    message: 「必要に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 137
+    text: ""
+    message: 「(2) 教育方法，研究指導」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 139
+    text: 現在設置されている通信制修士課程においては，従来の印刷教材等の郵送による授業や放
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 140
+    text: これらを踏まえ，通信制博士課程においては，研究課題に即した適切な研究指導と学生自
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: nominalization
+    line: 140
+    text: 助言を行うティーチング・アシスタント，チューター，アドバイザー等の適切な配置に努
+    message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 140
+    text: これらを踏まえ，通信制博士課程においては，研究課題に即した適切な研究指導と学生自
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 140
+    text: また，各大学院においては，個々の学生の多様な研究需要に対応するため，研究活動に当
+    message: 「適切な」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: nominalization
+    line: 141
+    text: 交流を行うことは，相互に刺激を与え合い，研究活動にも好ましい影響をもたらし得ると
+    message: 「交流を行う」は「交流する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 143
+    text: ""
+    message: 「(3) 教育研究水準の確保，評価制度」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: unjudged
+  - rule: nominalization
+    line: 145
+    text: 努力を行っている。また，授業や研究指導においては，情報通信技術を積極的に活用する
+    message: 「努力を行う」は「努力する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 146
+    text: このような状況を踏まえ，通信制博士課程についても，きめの細かい入学者選抜や情報通
+    message: この文は 147 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: wordy-phrase
+    line: 146
+    text: このような状況を踏まえ，通信制博士課程についても，きめの細かい入学者選抜や情報通
+    message: 「することが可能」は、もっと短く言えます
+    verdict: unjudged
+  - rule: nominalization
+    line: 147
+    text: 評価を行うことが重要であると考えられる。このため，アクレディテーション（適格認定
+    message: 「評価を行う」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 147
+    text: 一方，実質的に教育研究水準を確保し，国際的通用性に配慮しながら教育研究の質を高め
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged

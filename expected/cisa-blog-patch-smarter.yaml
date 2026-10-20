@@ -1,0 +1,18 @@
+id: cisa-blog-patch-smarter
+chaff: 0.36.0
+findings:
+  - rule: space-before-punctuation
+    line: 9
+    text: " , Senior Technical Advisor"
+    message: A space before ","
+    verdict: correct
+  - rule: adverb-overuse
+    line: 13
+    text: vastly increasing the pace at which new
+    message: 23 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: quote-style-consistency
+    line: 17
+    text: "'s Binding Operational Directive (BOD) 2"
+    message: The quote mark ' here, where the document usually writes ’‘ (1 of 9)
+    verdict: correct

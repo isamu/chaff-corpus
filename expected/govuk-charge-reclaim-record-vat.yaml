@@ -24,3 +24,8 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: numbering-gap
+    line: 119
+    text: "### 3 Get your business ready to export"
+    message: '"3" follows "1" (expected number 2)'
+    verdict: unjudged

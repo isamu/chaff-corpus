@@ -1,0 +1,74 @@
+id: fomc-minutes-2026-09
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 17
+    text: Regarding expectations for U.S. monetary
+    message: This sentence runs 56 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: When reviewing money markets, the manage
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 37
+    text: Based on data from the consumer and prod
+    message: This sentence runs 54 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 37
+    text: Both total and core inflation were highe
+    message: This sentence runs 49 words (limit 45)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 51
+    text: S&P 500 index decreased a touch and ende
+    message: '"S&P" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: S&P 500 is the name of an index, not an acronym to expand
+  - rule: max-paragraph-length
+    line: 57
+    text: Financing conditions in domestic credit
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 59
+    text: Credit continued to be generally availab
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 73
+    text: Participants noted that inflation remain
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 73
+    text: A few participants observed that the 3-m
+    message: This sentence runs 57 words (limit 45)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 77
+    text: Participants generally expected that inf
+    message: This paragraph runs 9 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 85
+    text: Participants generally assessed that eco
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 89
+    text: In their consideration of monetary polic
+    message: This paragraph runs 11 sentences (limit 5)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 123
+    text: Consistent with the Committee's decision
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 293
+    text: The vote also encompassed approval by th
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct

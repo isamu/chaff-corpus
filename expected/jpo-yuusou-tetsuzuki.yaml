@@ -1,0 +1,32 @@
+id: jpo-yuusou-tetsuzuki
+chaff: 0.36.0
+findings:
+  - rule: repeated-sentence-head
+    line: 9
+    text: 〒100-8915
+    message: 「〒100-8」で始まる文が 4 続いています（3 まで）
+    verdict: false-positive
+    note: postal address blocks (〒 line, address, addressee) read as sentences starting the same way
+  - rule: hankaku-kana
+    line: 36
+    text: ､所要額の切手を貼付してください）を同封してください。特許庁で受付スタンプを押印
+    message: 半角の片仮名「､」があります（全角は「、」）
+    verdict: correct
+    note: a half-width ideographic comma (､) among full-width ones
+  - rule: hankaku-kana
+    line: 37
+    text: ､所要額の切手を貼付してください）を同封することも可能です。ハガキに受付スタンプ
+    message: 半角の片仮名「､」があります（全角は「、」）
+    verdict: correct
+    note: a half-width ideographic comma (､) among full-width ones
+  - rule: max-sentence-length
+    line: 43
+    text: また、郵便又は「信書便」以外で送付してしまった場合の他、郵便又は「信書便」で送付
+    message: この文は 158 文字あります（140 文字まで）
+    verdict: correct
+  - rule: requirement-smell
+    line: 43
+    text: 等は、郵便又は「民間事業者による信書の送達に関する法律」に定められる「信書便」で
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「出願書類等」 names a class of documents in procedure guidance; not an open-ended requirement

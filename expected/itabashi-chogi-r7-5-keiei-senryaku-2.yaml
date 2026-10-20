@@ -1,0 +1,27 @@
+id: itabashi-chogi-r7-5-keiei-senryaku-2
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list names each official by title; a long official title is one fixed compound"
+  - rule: max-sentence-length
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list (titles separated by commas) has no full stop and is a list, not a sentence"
+  - rule: topic-predicate-distance
+    line: 41
+    sha256: 1d2f123d3428040259ae32e5ed6523256896962bab2a95454c8f9afbedb76a94
+    verdict: correct
+  - rule: ngram-repetition
+    line: 62
+    sha256: 2b288515eb7b5a169f0b4e83cd170404c6b40a945efa5f7bf94e46b3b7fe319e
+    verdict: false-positive
+    note: "the record's fixed result line, repeated under each agenda item by design"
+  - rule: no-mixed-desumasu
+    line: 162
+    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
+    verdict: false-positive
+    note: "the page's contact block (department and section on one line) is an address, not a sentence"

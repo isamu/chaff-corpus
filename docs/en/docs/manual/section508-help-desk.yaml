@@ -12,5 +12,5 @@ license:
   url: https://github.com/GSA/Section508.gov/blob/cfc700f1a866a18a19dc0826d5961e63fee87bca/LICENSE.md
   note: "Work of the US federal government (GSA), public domain in the US (17 U.S.C. 105) and dedicated worldwide under CC0 1.0 (LICENSE.md of GSA/Section508.gov, the site's source, at the pinned commit); Source: Section508.gov (https://www.section508.gov/manage/section-508-help-desk/); converted to Markdown"
 redistribute: true
-sha256: 9bf5d90dbb80114632348d9b24e258babb8db6068d590be913881ae9053f1993
+sha256: 7cd2270a24af58091b3d586d49f3075fceb47373595d088378b079217e7889bd
 notes: The source is html; the text is source.format html converted by scripts/lib/source-format.ts, which drops the page title (in the site banner) and link-only lists.

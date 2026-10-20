@@ -1,0 +1,108 @@
+id: mdn-http-cors-ja
+chaff: 0.36.0
+findings:
+  - rule: bracket-width-consistency
+    line: 8
+    text: (ドメイン、プロトコル、ポート番号) にあるリソースをリクエストするとき、オリジ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。58 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: bracket-width-consistency
+    line: 8
+    text: ) にあるリソースをリクエストするとき、オリジン間 HTTP リクエストを実行し
+    message: 括弧を「)」と書いています（この文書はふつう「）」。58 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: topic-predicate-distance
+    line: 12
+    text: つまり、これらの API を使用するウェブアプリケーションは、そのアプリケーショ
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 23
+    text: ウェブフォント（CSS の `@font-face` で別ドメインのフォントを利
+    message: 「することができま」が 8 回出てきます（5 回まで）
+    verdict: correct
+    note: 「することができます」 eight times in a prose guide; 「できます」 would do
+  - rule: max-sentence-length
+    line: 32
+    text: 加えて、サーバーのデータに副作用を引き起こす可能性がある HTTP のリクエスト
+    message: この文は 193 文字あります（140 文字まで）
+    verdict: correct
+    note: a 193-character sentence
+  - rule: topic-predicate-distance
+    line: 46
+    text: この仮定の下では、 CSRF の脅威はフォーム送信の脅威よりも悪くないので、サー
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 46
+    text: その動機は、HTML 4.0 からの {{HTMLElement("form")
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: false-positive
+    note: most of the distance is KumaScript macro source ({{HTMLElement(...)}}, {{domxref(...)}}), which renders as a few characters
+  - rule: orthographic-variant
+    line: 59
+    text: 但し、下記の追加の要件に注意してください）
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「但し」 once where the page writes 「ただし」
+  - rule: list-item-form-mix
+    line: 62
+    text: ヘッダーで指定できる{{Glossary("MIME type", "メディア種
+    message: 「ヘッダーで指定できる                                   に許されるタイプ/サブタイプの組み合わせは、以下のもののみです。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: false-positive
+    note: both items of the outer list are sentences; the nested lists of header names are another level
+  - rule: no-doubled-joshi
+    line: 169
+    text: の間のやりとりの全容を見てみましょう。最初のやり取りは*プリフライトリクエスト/
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 169
+    text: やり取りは*プリフライトリクエスト/レスポンス*です。
+    message: 「やり取り」と書いています（この文書はふつう「やりとり」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「やり取り」 beside 「やりとり」 in the same sentence
+  - rule: topic-predicate-distance
+    line: 213
+    text: また、 `Access-Control-Allow-Methods` を返してお
+    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 296
+    text: これは単純な `GET` リクエストなのでプリフライトは行いませんが、ブラウザー
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 300
+    text: の間のやりとりの例です。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 352
+    text: リクエストが資格情報（多くの場合は `Cookie` ヘッダー）を含んでおり、そ
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 360
+    text: 上記の例では、ページは `foo.example` から読み込まれていますが、レ
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 371
+    text: の実際の動作の概要についての説明は、前の節をご覧ください。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 390
+    text: サーバーがワイルドカード `*` ではなく（許可リストの一部としてリクエストする
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: a 143-character sentence
+  - rule: topic-predicate-distance
+    line: 418
+    text: 単純な `GET` リクエストはプリフライトを行いませんので、リソースへのリクエ
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: correct
+    note: 102 characters from 〜は to the predicate

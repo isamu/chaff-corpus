@@ -1,0 +1,78 @@
+id: fed-sr-26-5
+chaff: 0.36.0
+findings:
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 248 proper nouns per 1000 words (limit 200)
+    verdict: unjudged
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject has 116 characters (up to 70)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: "Applicability:  This guidance applies to"
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 25
+    text: collectively, the agencies) are issuing
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 77 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Commenters specifically requested clarif
+    message: This sentence runs 45 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: This action taken by the agencies reflec
+    message: This sentence runs 32 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 27
+    text: Commenters specifically requested clarif
+    message: '"timely" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: article-sound
+    line: 29
+    text: a SAR about potentially fraudulent or ot
+    message: '"a SAR" takes "an" before that sound'
+    verdict: unjudged
+  - rule: article-sound
+    line: 29
+    text: a SAR.
+    message: '"a SAR" takes "an" before that sound'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: SAR confidentiality is a statutory and r
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: The BSA and its implementing regulations
+    message: This sentence runs 69 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 29
+    text: SAR confidentiality is a statutory and r
+    message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 43
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: unjudged

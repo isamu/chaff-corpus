@@ -1,0 +1,16 @@
+id: nps-yosemite-faqs
+title: "National Park Service: Yosemite National Park, Frequently Asked Questions"
+language: en
+genre: docs/faq
+format: markdown
+source:
+  url: https://www.nps.gov/yose/faqs.htm
+  fetched: 2026-10-19
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/yose/faqs.htm); converted to Markdown'
+redistribute: true
+sha256: 6e4f6d38ea9ccd62728448107b23d6ef575e737aa6e02f6ac2fdc67558f2f7af
+notes: A park's FAQ page. The park's published contact details at the end are kept (allowlist.yaml). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

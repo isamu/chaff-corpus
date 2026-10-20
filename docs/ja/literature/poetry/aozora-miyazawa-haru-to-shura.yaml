@@ -11,5 +11,5 @@ license:
   url: https://www.aozora.gr.jp/
   note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1933, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
 redistribute: true
-sha256: 403c2c1543b1a79b87d04960d4a00b73b0a77efb43b8b5cc9a551b42cc81647a
-notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (43d7d5a72), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ annotations are kept as the source has them."
+sha256: 3906625f0a0531ed983aed5918528a86d449bc290687966eeb7cd5d6158cdc46
+notes: "Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (as of isamu/lab#1572), which drops 青空文庫's colophon (底本, input and proofreading credits); the same conversion reproduces the sha256 of aozora-soseki-yume-juya. 青空文庫's ［＃…］ input notes are dropped, except a note naming a character it cannot encode."

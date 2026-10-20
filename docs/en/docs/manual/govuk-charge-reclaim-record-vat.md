@@ -101,9 +101,9 @@ The price excluding VAT is £460. The amount you can claim back is the differenc
 
 View a printable version of the whole guide
 
-## Part of  Export goods from the UK: step by step
+## Part of Export goods from the UK: step by step
 
-### 1     Check if you need to follow this process
+### 1 Check if you need to follow this process
 
 Follow these steps if you're moving goods permanently from:
 
@@ -112,11 +112,11 @@ Follow these steps if you're moving goods permanently from:
 
 What you need to do is different if you are:
 
-### and     Apply for any licences you need to export your goods
+### and Apply for any licences you need to export your goods
 
 There are special rules and you may need to get licences or certificates if you are exporting any of the following:
 
-### 3     Get your business ready to export
+### 3 Get your business ready to export
 
 You need an EORI number that starts with GB to export goods from England, Wales or Scotland.
 
@@ -124,7 +124,7 @@ If you move goods to or from Northern Ireland you may need one that starts with 
 
 There are processes that can make clearing customs quicker and easier to manage if you export goods regularly.
 
-### and     Check whoever's receiving the goods can import them
+### and Check whoever's receiving the goods can import them
 
 The business or person receiving the goods may need:
 
@@ -133,17 +133,17 @@ The business or person receiving the goods may need:
 
 Check whoever you are sending the goods to is able to import them into their country.
 
-### 4     Decide who will make export declarations and transport the goods
+### 4 Decide who will make export declarations and transport the goods
 
 You can hire someone to deal with customs and transport the goods for you, or you can do it yourself.
 
-### 5     Classify your goods
+### 5 Classify your goods
 
 You must find the right commodity code to classify the goods you're exporting.
 
 Your customs agent or transporter might be able to help you with this.
 
-### 6     Prepare the invoice and other documentation for your goods
+### 6 Prepare the invoice and other documentation for your goods
 
 The completed invoice and any licences or certificates must travel with the goods.
 
@@ -153,13 +153,13 @@ You may need proof of origin if exporting to a country where your goods have a r
 
 You might be able to zero rate the goods for VAT. This means you can charge your customers VAT at 0%.
 
-### 7     Get your goods through customs
+### 7 Get your goods through customs
 
 If you've appointed someone to deal with UK customs for you, they'll make the declaration and get your goods through the UK border.
 
 You may need other documentation to get your goods into the destination country. Ask the person or business buying your goods what information you need to provide.
 
-### 8     Keep invoices and records
+### 8 Keep invoices and records
 
 You must keep commercial invoices and any customs paperwork.
 

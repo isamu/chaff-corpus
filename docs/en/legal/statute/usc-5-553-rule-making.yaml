@@ -1,0 +1,16 @@
+id: usc-5-553-rule-making
+title: "5 U.S.C. 553: Rule making, United States Code 2023 Edition"
+language: en
+genre: legal/statute
+format: markdown
+source:
+  url: https://www.govinfo.gov/content/pkg/USCODE-2023-title5/html/USCODE-2023-title5-partI-chap5-subchapII-sec553.htm
+  fetched: 2026-10-20
+  format: html
+license:
+  name: Public domain
+  url: https://www.govinfo.gov/about/policies
+  note: "Public domain: a work of the United States Government (17 U.S.C. 105; govinfo \"Public Domain & Copyright Notice\", https://www.govinfo.gov/about/policies). Source: United States Code, 2023 Edition, 5 U.S.C. 553, U.S. Government Publishing Office (govinfo); converted to Markdown"
+redistribute: true
+sha256: 2e5e8584af4431dfb8546e47110a039874eaa81e7e608b257619e56dea9f99c4
+notes: "The text is source.format html converted with the corpus converter as amended by isamu/chaff-corpus#53 (isamu/lab#1658, #1663). The converter drops the group headings \"Editorial Notes\" / \"Statutory Notes and Related Subsidiaries\" / \"Executive Documents\" (an h3 followed at once by an h4; fixed by isamu/lab#1667, not yet merged); nothing was restored by hand."

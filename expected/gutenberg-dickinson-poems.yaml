@@ -1,0 +1,59 @@
+id: gutenberg-dickinson-poems
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 32
+    text: "  Yet she wrote verses in great"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: the editor's preface leaves two spaces after a few sentences and one after the rest
+  - rule: sentence-spacing-consistency
+    line: 49
+    text: "  For myself, although I had corresponde"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in prose where the preface mostly leaves one
+  - rule: sentence-spacing-consistency
+    line: 67
+    text: "  In other cases, as in the"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in prose where the preface mostly leaves one
+  - rule: sentence-spacing-consistency
+    line: 76
+    text: "  After all, when a thought takes one's"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in prose where the preface mostly leaves one
+  - rule: sentence-spacing-consistency
+    line: 2810
+    text: "  This second volume, while open to the"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in the second series' preface
+  - rule: date-format-consistency
+    line: 2816
+    text: 5th
+    message: |-
+      The date "5th
+      September, 1884" is written differently from 2 other dates in the document (such as "Dec. 10, 1830")
+    verdict: correct
+    note: "'5th September, 1884' beside 'May 15, 1886' in the same editorial prose"
+  - rule: sentence-spacing-consistency
+    line: 2872
+    text: "  The fac-simile given in the present vo"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in the preface
+  - rule: sentence-spacing-consistency
+    line: 2909
+    text: "  She"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: correct
+    note: two spaces after a sentence in the preface
+  - rule: sentence-spacing-consistency
+    line: 2956
+    text: "  Who are you?"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
+    verdict: false-positive
+    note: a mid-line pause inside a verse line ('I'm nobody!  Who are you?'), the eBook's verse layout, not prose sentence spacing
