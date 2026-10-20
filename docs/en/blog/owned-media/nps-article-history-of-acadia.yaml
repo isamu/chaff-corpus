@@ -1,0 +1,16 @@
+id: nps-article-history-of-acadia
+title: "National Park Service: A History of Acadia"
+language: en
+genre: blog/owned-media
+format: markdown
+source:
+  url: https://www.nps.gov/articles/000/acadia-history-brief.htm
+  fetched: 2026-10-20
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/articles/000/acadia-history-brief.htm); converted to Markdown; images are not included, only their captions and credit lines'
+redistribute: true
+sha256: cfd4bda16cb207cbd39939a44f5d1a25eaf32f6f98d8ccaa96dac152e2b58a9f
+notes: An article a park publishes on nps.gov for its visitors. The page's own labels around the article ("Article", "You Might Also Like", "Loading results...", the tags) are kept as the converter gives them. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

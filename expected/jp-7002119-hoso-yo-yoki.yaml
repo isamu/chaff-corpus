@@ -1,0 +1,111 @@
+id: jp-7002119-hoso-yo-yoki
+chaff: 0.36.0
+findings:
+  - rule: missing-final-period
+    line: 16
+    sha256: 1ed061f00fb6e08d9569200e9cb23e7de7a1c38b4987bf15645c392bd88f42a9
+    verdict: correct
+    note: "the sentence ends without 。 before the next paragraph"
+  - rule: clause-chain
+    line: 24
+    sha256: b35c6beb1c5ef3de4a10a597d24343e4aad07f12c91901dcee2b62be11916ee3
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 24
+    sha256: b35c6beb1c5ef3de4a10a597d24343e4aad07f12c91901dcee2b62be11916ee3
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: 438ac3c85857802e4559ebe842514b036c88112e82697a2b054c622d6d54155b
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: 64ab0feae389572f332d625322a74efd679e93c30d1c180cdd5c4b9c8a200963
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: 80857c4ae6268de7c5bd8eeda1ba3f940ca7960eae50fb94aa17abeb8375c37e
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: 9a9d01337a5b9b54d768ec799c64b039ec26d06db72e5a697d701e50c08c45c2
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: ba8cf10c5d9689561714b94b50ccc4b5ed99d92fcf8779b2ffd99d1188e92ba6
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: fullwidth-alnum-consistency
+    line: 50
+    sha256: bb9846da466d46f51391a40614684fd2224237513d3405881d90ca8f54c9eb92
+    verdict: correct
+    note: "half-width Roman numerals (III, IV, V) in figure names, where the gazette writes letters and digits full width"
+  - rule: connective-hierarchy
+    line: 67
+    sha256: debd66dfe681d98fd27d8dd32b5962c720a854c4a6069bd654e54deb9aee7ac8
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 73
+    sha256: 9addccb22c3ae39f16174ace5c09213b02d3e6452b7d360ca4e708c4334edf4b
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: connective-hierarchy
+    line: 74
+    sha256: 36de2031a28ee7f58ee4804280c57289243d8d3077fbeca017f69f05c845097a
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 81
+    sha256: 60b69eae7165b673445c7621f81ff1becc14068196645a151ec49b3ea0fcf05f
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: kutoten-consistency
+    line: 82
+    sha256: efaa8c2edc069501021a95d0704adbb130c37739f052819dfacaf602a049ad95
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: kutoten-consistency
+    line: 83
+    sha256: 3d0c92154503d731ff9b26b5c141bbb072d7ce7149c3e1e12bcd87be3460073b
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: kutoten-consistency
+    line: 83
+    sha256: 906ef474f79658405a237645f649f3386c55c2b6129b82559af989b6d8c5ce7a
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: kutoten-consistency
+    line: 83
+    sha256: f05c787f25d8ca91ed422adaea4f55b80b07e2c0e132cca70a41b3c910fe5881
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: kutoten-consistency
+    line: 100
+    sha256: 1dcb4d4427db23f951337a9784ffce47881d7fe8bc1a5d0c05e144ec0ce86347
+    verdict: false-positive
+    note: "a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+  - rule: bracket-width-consistency
+    line: 110
+    sha256: 6a74209d593749f77944f61b7043cd18485b3e1c113dc1b5ae3768e50dc5e2db
+    verdict: correct
+    note: "half-width parentheses (内箱本体６) in a gazette that otherwise writes full-width ones"
+  - rule: bracket-width-consistency
+    line: 110
+    sha256: b12582dcf530d8ba25a4aaab755fd86a446c78fc59aac254be271aefce0467c1
+    verdict: correct
+    note: "half-width parentheses (内箱本体６) in a gazette that otherwise writes full-width ones"
+  - rule: orthographic-variant
+    line: 128
+    sha256: 90db11fcd08d8687926ffff214ac2c861c3a91b1341dbff3d9b662b972dc40b4
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 134
+    sha256: 8aaf7a33640219b58c712f11e63513ab9b6cdc7f0512b8f17b2f5af6722edf43
+    verdict: unjudged
+  - rule: clause-chain
+    line: 163
+    sha256: e2861d01f1c31fcbf75b32edf06e0d50841a09d5a7859b8d3e18f251978ab907
+    verdict: unjudged

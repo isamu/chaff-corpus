@@ -1,0 +1,134 @@
+id: aozora-kikuchi-tojuro-no-koi
+chaff: 0.36.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 47
+    text: （道化方らしく誇張した身振りで）さればこそ前代未聞の密夫の狂言じゃ。傾城買にかけ
+    message: 「〜じゃ」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's speech in a period play; the じゃ ending is the character's voice"
+  - rule: clause-chain
+    line: 104
+    text: （工夫付かざるごとく、書抜きを投げ出して考え始める。立って女の手を取るごとき形を
+    message: 一文に節が 18 つつながっています（5 つまで）
+    verdict: false-positive
+    note: "stage directions in （） holding several sentences ending in 。 are read as one sentence with the dialogue"
+  - rule: max-ten
+    line: 104
+    text: （工夫付かざるごとく、書抜きを投げ出して考え始める。立って女の手を取るごとき形を
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: false-positive
+    note: "stage directions in （） holding several sentences ending in 。 are read as one sentence with the dialogue"
+  - rule: max-ten
+    line: 106
+    text: （しばらく何事もない。母屋の大広間で打っている鼓の音や、太鼓の音などが、微かに聞
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: topic-predicate-distance
+    line: 106
+    text: （しばらく何事もない。母屋の大広間で打っている鼓の音や、太鼓の音などが、微かに聞
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: topic-predicate-distance
+    line: 114
+    text: （藤十郎はふと、お梶の顔を見る。色のくっきりと白い細面に、眉の跡が美しい。最初は
+    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: adversative-ga-repeat
+    line: 130
+    text: それを今日はぜひにも聴いてもらいたいのじゃ、思い出せば古いことじゃ、そなたが十六
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 130
+    text: それを今日はぜひにも聴いてもらいたいのじゃ、思い出せば古いことじゃ、そなたが十六
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 130
+    text: それを今日はぜひにも聴いてもらいたいのじゃ、思い出せば古いことじゃ、そなたが十六
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 142
+    text: （恋をする男とは、どうしても受取れぬほどの澄んだ冷たい目付きで、顔さえもたげぬ女
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 142
+    text: （恋をする男とは、どうしても受取れぬほどの澄んだ冷たい目付きで、顔さえもたげぬ女
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 146
+    text: （彼は舞台上の演技にも、打ち勝つほどの巧みな所作を見せながら、しかも人妻をかき口
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 146
+    text: （言葉だけは熱情に震えて）人妻になったそなたを、恋い慕うのは、人間の道ではないと
+    message: 「〜じゃ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's speech in a period play; the じゃ ending is the character's voice"
+  - rule: topic-predicate-distance
+    line: 146
+    text: （彼は舞台上の演技にも、打ち勝つほどの巧みな所作を見せながら、しかも人妻をかき口
+    message: 「は」で出した主題から述語まで 151 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 162
+    text: （必死の覚悟を定めたらしいお梶は、火のような瞳で、男の顔を一目見ると、いきなりそ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: max-ten
+    line: 162
+    text: （必死の覚悟を定めたらしいお梶は、火のような瞳で、男の顔を一目見ると、いきなりそ
+    message: 一文に読点が 11 個あります（6 個まで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: topic-predicate-distance
+    line: 162
+    text: （必死の覚悟を定めたらしいお梶は、火のような瞳で、男の顔を一目見ると、いきなりそ
+    message: 「は」で出した主題から述語まで 180 字あります（80 字まで）
+    verdict: false-positive
+    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
+  - rule: max-ten
+    line: 201
+    text: おお一昨年のことじゃ、山下京右衛門が、江戸へ下る暇乞いに藤十郎どのの所へ来て、わ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 245
+    text: 昨日ちょっとある所で、聞いた噂じゃが、藤十郎どのは、今度の狂言の工夫に悩んだ揚げ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 249
+    text: 藤様が、蒼い顔して、息を切らせながら、酒宴の席へ帰って来られると、立てつづけに、
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 249
+    text: 藤様が、蒼い顔して、息を切らせながら、酒宴の席へ帰って来られると、立てつづけに、
+    message: 一文に節が 9 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 249
+    text: 藤様が、蒼い顔して、息を切らせながら、酒宴の席へ帰って来られると、立てつづけに、
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 279
+    text: （快活に笑って）埒もない穿鑿じゃ。いつぞやも、わしが嵐三十郎の手負武者を介抱する
+    message: 「〜じゃ」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: "a character's speech in a period play; the じゃ ending is the character's voice"
+  - rule: clause-chain
+    line: 331
+    text: （つかつかと舞台の上へ急いだが、また引返して死体を一目見、ついに思い決したるごと
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged

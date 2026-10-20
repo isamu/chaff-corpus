@@ -1,0 +1,27 @@
+id: us-6293874-kicking-amusement-apparatus
+chaff: 0.36.0
+findings:
+  - rule: article-sound
+    line: 59
+    text: an side view representation of an altern
+    message: '"an side" takes "a" before that sound'
+    verdict: correct
+    note: "a typo: an side view"
+  - rule: unknown-word
+    line: 143
+    text: asubunits (not shown) that provide addit
+    message: '"asubunits" is not in the dictionary; did you mean "subunits"?'
+    verdict: correct
+    note: "a typo: asubunits for subunits"
+  - rule: article-sound
+    line: 633
+    text: a LCD display can connect to the drive t
+    message: '"a LCD" takes "an" before that sound'
+    verdict: correct
+    note: "an LCD: the letter L is read el"
+  - rule: redundant-expression
+    line: 633
+    text: One skilled in the art will recognize th
+    message: '"LCD display" says the same thing twice'
+    verdict: correct
+    note: "LCD already contains display"
