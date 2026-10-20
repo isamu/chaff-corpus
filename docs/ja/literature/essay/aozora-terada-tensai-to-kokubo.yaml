@@ -11,5 +11,5 @@ license:
   url: https://www.aozora.gr.jp/
   note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1935, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
 redistribute: true
-sha256: bcef75a3e08598d044f70492ef752a575cba58c6aa74f7040d06b2c16d80ac6b
-notes: Imported from isamu/lab text/corpus (manifest id aozora-terada-tensai-to-kokubo). The source is aozora; lab's corpus fetch stored it converted (sha256 is of the stored text).
+sha256: 36ee5cd0b4c528893fecf499363feb0b3f5e81949b003349f3ec080396e5006b
+notes: Imported from isamu/lab text/corpus (manifest id aozora-terada-tensai-to-kokubo). The source is aozora; lab's corpus fetch stored it converted (sha256 is of the stored text). Re-converted after isamu/lab#1572, which drops 青空文庫's ［＃…］ input notes.

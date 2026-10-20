@@ -30,294 +30,294 @@ findings:
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
   - rule: clause-chain
-    line: 127
+    line: 125
     text: 地面の底のくらやみに、
     message: 一文に節が 9 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 127
+    line: 125
     text: 地面の底のくらやみに、
     message: 一文に読点が 13 個あります（6 個まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 157
+    line: 155
     text: ますぐなるもの地面に生え、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 157
+    line: 155
     text: ますぐなるもの地面に生え、
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: unjudged
   - rule: duplicate-heading
-    line: 167
+    line: 165
     text: "#### 竹"
     message: 見出し「竹」は、同じ親の下の 155 行目の見出しと同じです
     verdict: false-positive
     note: "two poems with the same title in the collection"
   - rule: clause-chain
-    line: 169
+    line: 167
     text: 光る地面に竹が生え、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 186
+    line: 184
     text: みよすべての罪はしるされたり、
     message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
     verdict: unjudged
   - rule: max-ten
-    line: 196
+    line: 194
     text: その菊は醋え、
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 196
+    line: 194
     text: その菊は醋え、
     message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 209
+    line: 207
     text: 林あり、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 221
+    line: 219
     text: あふげば高き松が枝に琴かけ鳴らす、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 235
+    line: 233
     text: つみとがのしるし天にあらはれ、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 267
+    line: 265
     text: わが性のせんちめんたる、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 303
+    line: 301
     text: ああ私の探偵は玻璃の衣裳をきて、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 303
+    line: 301
     text: ああ私の探偵は玻璃の衣裳をきて、
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 322
+    line: 320
     text: 春夏すぎて手は琥珀、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 384
+    line: 382
     text: かなしい薄暮になれば、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 384
+    line: 382
     text: かなしい薄暮になれば、
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 403
+    line: 401
     text: たましひが耳をすますと、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 431
+    line: 429
     text: 春になつて、
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 437
+    line: 435
     text: さあ、そろそろ歩きはじめた、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 450
+    line: 448
     text: あふむきに死んでゐる酒精中毒者の、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 450
+    line: 448
     text: あふむきに死んでゐる酒精中毒者の、
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 469
+    line: 467
     text: ああ、いく年もいく年もまへから、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 469
+    line: 467
     text: ああ、いく年もいく年もまへから、
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 480
+    line: 478
     text: 蛙が殺された、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 542
+    line: 540
     text: 浅蜊のやうなもの、
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 603
+    line: 601
     text: ながい疾患のいたみから、
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 603
+    line: 601
     text: ながい疾患のいたみから、
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 603
+    line: 601
     text: ながい疾患のいたみから、
     message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 638
+    line: 636
     text: まつ正直の心をもつて、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 638
+    line: 636
     text: まつ正直の心をもつて、
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 638
+    line: 636
     text: まつ正直の心をもつて、
     message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 656
+    line: 654
     text: ぼんやりした景色のなかで、
     message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 698
+    line: 696
     text: 桜のはなをみてあれば、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 698
+    line: 696
     text: 桜のはなをみてあれば、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 698
+    line: 696
     text: 桜のはなをみてあれば、
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: unjudged
   - rule: max-ten
-    line: 704
+    line: 702
     text: ああ、瞳にもみえざる、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 704
+    line: 702
     text: ああ、瞳にもみえざる、
     message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 798
+    line: 796
     text: 若草の上をあるいてゐるとき、
     message: 一文に節が 10 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 798
+    line: 796
     text: 若草の上をあるいてゐるとき、
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 798
+    line: 796
     text: 若草の上をあるいてゐるとき、
     message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 811
+    line: 809
     text: はげしいむし歯のいたみから、
     message: 一文に節が 12 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 811
+    line: 809
     text: はげしいむし歯のいたみから、
     message: 一文に読点が 15 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 811
+    line: 809
     text: はげしいむし歯のいたみから、
     message: 「は」で出した主題から述語まで 168 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 830
+    line: 828
     text: あいつはいつも歪んだ顔をして、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 830
+    line: 828
     text: あいつはいつも歪んだ顔をして、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 830
+    line: 828
     text: あいつはいつも歪んだ顔をして、
     message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 987
+    line: 985
     text: 蛙よ、
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: clause-chain
-    line: 1043
+    line: 1041
     text: 森の中の小径にそうて、
     message: 一文に節が 9 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 1043
+    line: 1041
     text: 森の中の小径にそうて、
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 1123
+    line: 1121
     text: DELICATE の哀傷が、影のやうに神経の末梢をかすめて行つた。
     message: 半角の「DELICATE」と書いています（この文書はふつう全角の「ＤＥＬＩＣＡＴＥ」。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: "an English word in Latin script, compared with lone full-width letters"
   - rule: clause-chain
-    line: 1321
+    line: 1319
     text: ながい疾患のいたみから、
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-ten
-    line: 1321
+    line: 1319
     text: ながい疾患のいたみから、
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 1321
+    line: 1319
     text: ながい疾患のいたみから、
     message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 1371
+    line: 1369
     text: （この詩集に入した金泥の口絵と、赤地に赤いインキで薄く画いた線画がその形見である
     message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 1372
+    line: 1370
     text: 世にも稀有な鬼才をもちながら、不幸にして現代に認められることが出来ないで、あまつ
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 1385
+    line: 1383
     text: ただ私の限りなく氏を愛敬してその夭折を傷む所以は、勿論、氏の態度や思想や趣味性に
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: unjudged
