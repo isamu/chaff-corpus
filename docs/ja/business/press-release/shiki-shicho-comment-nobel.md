@@ -34,6 +34,6 @@ Tel：048-473-1116 Fax：048-474-9674
 
 Tweet＜外部リンク＞
 
-## このページを見ている人はこんなページも見ています
-
 Tweets by Shiki_City＜外部リンク＞
+
+<!-- https://twitter.com/share https://twitter.com/Shiki_City?ref_src=twsrc%5Etfw -->

@@ -2,46 +2,46 @@ id: jbaudit-saiyou-hyougaki
 chaff: 0.34.0
 findings:
   - rule: stray-space
-    line: 9
+    line: 11
     text: " をご確認ください。（別ウィンドウで開きます。）"
     message: 「ウェブサイト」と「を」は一続きの語句ですが、あいだに空白があります（86 箇所のうち 1 箇所が空いている）
     verdict: correct
   - rule: stray-space
-    line: 9
+    line: 11
     text: " 内閣官房ウェブサイト をご確認ください。（別ウィンドウで開きます。）"
     message: 助詞「は」と「内閣」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。46 箇所のうち 1 箇所が空いている）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 17
+    line: 23
     text: (就職永河期世代)事務·技術区分第2次選考の実施について(本文)（別ウィンドウで
     message: 丸括弧を、全角で 23 箇所、半角で 8 箇所書いています。この文書には書き方が二通りあります
     verdict: correct
   - rule: fullwidth-alnum-consistency
-    line: 17
+    line: 23
     text: 2次選考の実施について(本文)（別ウィンドウで開きます。）
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: kanji-compound-slip
-    line: 17
+    line: 23
     text: 就職永河期世代)事務·技術区分第2次選考の実施について(本文)（別ウィンドウで開
     message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
     verdict: correct
   - rule: orthographic-variant
-    line: 17
+    line: 23
     what: 就職永河期世代 is a typo for 就職氷河期世代, which the page writes elsewhere (lines 3, 35)
     verdict: missed
     note: "永 for 氷: one kanji differs from the term the document uses everywhere else"
   - rule: fullwidth-alnum-consistency
-    line: 18
+    line: 24
     text: 2次選考の実施について(概要)（別ウィンドウで開きます。）
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: kanji-compound-slip
-    line: 18
+    line: 24
     text: 就職永河期世代)事務·技術区分第2次選考の実施について(概要)（別ウィンドウで開
     message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
     verdict: correct
   - rule: orthographic-variant
-    line: 18
+    line: 24
     what: 就職永河期世代 is a typo for 就職氷河期世代 (same as line 17)
     verdict: missed

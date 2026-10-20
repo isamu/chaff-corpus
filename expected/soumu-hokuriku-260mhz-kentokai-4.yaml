@@ -6,19 +6,19 @@ findings:
     sha256: eaadf2f6efb20d1cb03b6c5f04fce3a4f5cdf4bf742817fe0fef6383b4fd44a6
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 44
+    line: 46
     sha256: 0cf610476339b5c9cdf1ec234c0a6e47e3daccada206d72070230ab015c137cf
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 46
+    line: 48
     sha256: 95d84ea86898a46dc649b96316bc9a65c63bec017ebbbd2c7fe608e0c1dd392e
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 46
+    line: 48
     sha256: dc714396b75bea7ade302df1f66ff4c78c21d4ab8b90fec018920f9d771c080e
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 50
+    line: 54
     sha256: 319a4900554f2ea23c52511820119d479e0eca350560b3d0cf48408f113fec56
     verdict: false-positive
     note: a half-width item reference (4(2)) matching the page's enumerators

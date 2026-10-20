@@ -2,17 +2,17 @@ id: osaka-naniwa-shokaki-mitsumori
 chaff: 0.34.0
 findings:
   - rule: latin-spacing
-    line: 22
+    line: 24
     text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 22
+    line: 24
     text: " をダウンロード（無償）してください。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 22
+    line: 24
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
     verdict: correct

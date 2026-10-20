@@ -71,6 +71,8 @@ https://forms.office.com/r/AZBLPQ8x37
 https://leadingdxschool.mext.go.jp/achieve/jirei/
 ──────────────────────
 
+<!-- https://www.mext.go.jp/studxstyle/special/116.html https://leadingdxschool.mext.go.jp/wp/wp-content/uploads/2025/07/C147221100018_format2.pdf https://www.technovation.waffle-waffle.org/?brid=bQTJ0QCoFYqfA3fvezfCvg https://www.mext.go.jp/studxstyle/special/105.html https://www.mext.go.jp/studxstyle/special/p_gaku.html https://forms.office.com/pages/responsepage.aspx?id=sBBYVMs2kEKJJkjbwPnpL1XwyxdQX45FjCDvBFYs4-ZUQzNUOElNQk1ZSzVZMTlWSTRKWjcyR0xBVS4u&route=shorturl https://forms.office.com/r/AZBLPQ8x37 https://leadingdxschool.mext.go.jp/achieve/jirei/ -->
+
 ## お問合せ先
 
 初等中等教育局 GIGA StuDX（ギガ スタディーエックス）推進チーム

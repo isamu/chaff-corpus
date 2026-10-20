@@ -51,3 +51,5 @@ I think I will stop here to make sure there is enough time for our discussion.
 1. The views expressed here are my own and are not necessarily those of my colleagues on the Federal Reserve Board or the Federal Open Market Committee. Return to text
 
 Last Update: October 08, 2026
+
+<!-- https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Live+Webcast -->

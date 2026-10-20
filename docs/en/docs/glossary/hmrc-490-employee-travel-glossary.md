@@ -34,6 +34,8 @@ First published.
 
 This glossary explains words and phrases used in this guide. For more detailed and comprehensive explanations read the legislation or the following HMRC publications.
 
+<!-- https://www.legislation.gov.uk/ -->
+
 ### Approved mileage allowance payments
 
 This is the maximum amount per mile that can be paid tax-free and National Insurance contributions-free to someone who uses their own vehicle for work.
@@ -53,12 +55,16 @@ Any journey:
 
 The measure of the taxable amount where employees are provided with benefits in kind. Read more about Expenses and benefits: A to Z.
 
+<!-- https://www.gov.uk/expenses-and-benefits-a-to-z -->
+
 ### Company car
 
 A car made available (without the transfer of property in it) to:
 
 - an employee
 - a member of an employee’s family or household by reason of the employee’s employment, which is available for private use — read ‘Company cars and vans’ in Business journeys tax relief (490: Chapter 5).
+
+<!-- https://www.gov.uk/guidance/business-journeys-tax-relief-490-chapter-5 -->
 
 ### Credit token
 
@@ -76,6 +82,8 @@ The tasks an employee must carry out in doing their job. The duties of a particu
 
 The income of an individual who holds an office or employment. They include all salaries, fees, wages, profits and incidental benefits of any kind. Read Employment Income Manual — earnings from an office or employment.
 
+<!-- https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim00515 -->
+
 ### Employment income
 
 The part of the Taxes Act under which tax is charged on income from offices or employments. Read section 6(1) ITEPA 2003.
@@ -83,6 +91,8 @@ The part of the Taxes Act under which tax is charged on income from offices or e
 ### Fuel benefit charge
 
 The measure of the taxable benefit where an employee is provided with fuel for a company car. Read ‘Company cars and vans’ in Business journeys tax relief (490: Chapter 5).
+
+<!-- https://www.gov.uk/guidance/business-journeys-tax-relief-490-chapter-5 -->
 
 ### Full cost
 
@@ -96,6 +106,8 @@ A Full Payment Submission (FPS) is the form completed by employers to report PAY
 
 Personal expenses which are incidental to an overnight stay on business or on work-related training. Read ‘Incidental overnight expenses’ in Tax rules on other types of travel and related expenses (490: Chapter 8).
 
+<!-- https://www.gov.uk/guidance/tax-rules-on-other-types-of-travel-and-related-expenses-490-chapter-8 -->
+
 ### ITEPA
 
 Income Tax (Earnings and Pensions) Act 2003.
@@ -103,6 +115,8 @@ Income Tax (Earnings and Pensions) Act 2003.
 ### Ordinary commuting
 
 Travel between an employee’s permanent workplace and home, or any other place where the employee’s attendance is not necessary for the performance of the duties of that employment. Read ‘Ordinary commuting’ in Ordinary commuting and private travel (490: Chapter 3).
+
+<!-- https://www.gov.uk/guidance/ordinary-commuting-and-private-travel-490-chapter-3 -->
 
 ### P11D
 
@@ -128,13 +142,19 @@ A form to help people, who do not get a tax return, to claim tax relief for job 
 
 An annual agreement between an employer and HMRC under which the employer settles in a single annual payment the Income Tax liability on minor or irregular expenses and benefits provided to employees. Read ‘Expenses for paid or reimbursed expenses’ in Expenses exemption and PAYE Settlement Agreements (490: Chapter 10).
 
+<!-- https://www.gov.uk/guidance/expenses-exemption-and-paye-settlement-agreements-490-chapter-10 -->
+
 ### Permanent workplace
 
 Any place which an employee regularly attends in the performance of the duties of the office or employment but which is not a temporary workplace. Read ‘Permanent workplace’ in Ordinary commuting and private travel (490: Chapter 3).
 
+<!-- https://www.gov.uk/guidance/ordinary-commuting-and-private-travel-490-chapter-3 -->
+
 ### Private travel
 
 Travel between an employee’s home and any place that is not a workplace or between any 2 places that are not workplaces. Read ‘Private travel’ in Ordinary commuting and private travel (490: Chapter 3).
+
+<!-- https://www.gov.uk/guidance/ordinary-commuting-and-private-travel-490-chapter-3 -->
 
 ### Private use
 
@@ -156,11 +176,15 @@ For subsequent years an individual is a qualifying new resident for a tax year i
 
 Find out more about qualifying resident in manual RFIG44000.
 
+<!-- https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig44000 -->
+
 ### Resident
 
 An employee must normally be physically present in a country to be resident there. An employee will always be resident in the UK if they’re here for 183 days or more in the relevant tax year.
 
 For more information read the Statutory Residence Test.
+
+<!-- https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt -->
 
 ### Round sum allowance
 
@@ -174,6 +198,8 @@ An allowance paid to employees who make business journeys where the allowance is
 
 Meals or accommodation that are necessary as a result of making a business journey. Subsistence does not include incidental overnight expenses. Read ‘Subsistence’ in Business journeys tax relief (490: Chapter 5).
 
+<!-- https://www.gov.uk/guidance/business-journeys-tax-relief-490-chapter-5 -->
+
 ### Tax year
 
 The tax year runs from 6 April in one year to 5 April in the next.
@@ -181,6 +207,8 @@ The tax year runs from 6 April in one year to 5 April in the next.
 ### Temporary workplace
 
 A place which an employee attends in the performance of the duties of their employment and for the purpose of performing a task of limited duration or for some other temporary purpose. Read ‘Temporary workplace — attendance for a limited duration or temporary purpose’ in Ordinary commuting and private travel (490: Chapter 3).
+
+<!-- https://www.gov.uk/guidance/ordinary-commuting-and-private-travel-490-chapter-3 -->
 
 ### Vouchers
 

@@ -27,308 +27,308 @@ findings:
     message: This sentence runs 37 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 21
+    line: 23
     text: Our economy has experienced a series of
     message: This sentence runs 47 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 23
+    line: 25
     text: Economic growth is strong and the labor
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 23
+    line: 25
     text: Economic growth is strong and the labor
     message: This sentence runs 28 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 27
+    line: 29
     text: By a variety of measures, high rents and
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 29
+    line: 31
     text: The Federal Reserve Bank of Atlanta main
     message: This paragraph runs 10 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 29
+    line: 31
     text: According to the Monitor, homes were, on
     message: This sentence runs 48 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 29
+    line: 31
     text: The Federal Reserve Bank of Atlanta main
     message: This sentence runs 42 words (limit 25)
     verdict: correct
   - rule: contraction-consistency
-    line: 31
+    line: 33
     text: It's true that, on a quality-adjusted ba
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
   - rule: max-sentence-length
-    line: 31
+    line: 33
     text: About 20 percent of rental housing units
     message: This sentence runs 65 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 31
+    line: 33
     text: It's true that, on a quality-adjusted ba
     message: This sentence runs 33 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 33
+    line: 35
     text: One side of the affordability challenge
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 33
+    line: 35
     text: Over the past two decades, inflation-adj
     message: This sentence runs 37 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 33
+    line: 35
     text: Renters face a similar cash flow barrier
     message: This sentence runs 31 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 39
+    line: 41
     text: Against a U.S. housing stock of roughly
     message: This sentence runs 26 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 39
+    line: 41
     text: But estimates put the U.S. housing suppl
     message: This sentence runs 26 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 39
+    line: 41
     text: While relatively small as a share of the
     message: This sentence runs 36 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 45
+    line: 47
     text: The first is that land is a finite resou
     message: This paragraph runs 8 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 45
+    line: 47
     text: Land use regulations mandating lower den
     message: This sentence runs 33 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 45
+    line: 47
     text: Other local regulatory barriers, includi
     message: This sentence runs 28 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 45
+    line: 47
     text: Over several decades, the accumulation o
     message: This sentence runs 34 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 47
+    line: 49
     text: Low construction activity has become mor
     message: This sentence runs 61 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 49
+    line: 51
     text: The second factor—which is, in part, tie
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 49
+    line: 51
     text: Many of the physical processes such as p
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 49
+    line: 51
     text: The second factor—which is, in part, tie
     message: This sentence runs 27 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 51
+    line: 53
     text: Construction has adopted technologies su
     message: This sentence runs 32 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 53
+    line: 55
     text: A third factor that has probably exacerb
     message: This sentence runs 35 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 53
+    line: 55
     text: One remarkable statistic is that after t
     message: This sentence runs 35 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 55
+    line: 57
     text: Labor is a major component of housing co
     message: This sentence runs 32 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 55
+    line: 57
     text: More demand for housing, given work from
     message: This sentence runs 36 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 57
+    line: 59
     text: In addition to the factors that have rai
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 59
+    line: 61
     text: In tight housing markets, the lock-in ef
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 63
+    line: 65
     text: Turning to shelter costs for renters. Th
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 63
+    line: 65
     text: As I noted at the outset, rent-to-income
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 65
+    line: 67
     text: And while increasing housing supply shou
     message: This sentence runs 29 words (limit 25)
     verdict: correct
   - rule: sentence-initial-conjunction-run
-    line: 65
+    line: 67
     text: So far, I've been discussing shelter cos
     message: 3 sentences in a row open with a conjunction (limit 2)
     verdict: false-positive
     note: 「So far」 is an adverbial phrase, not the conjunction so; only two sentences in a row open with a conjunction
   - rule: max-sentence-length
-    line: 69
+    line: 71
     text: The Community Reinvestment Act (CRA), en
     message: This sentence runs 30 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 73
+    line: 75
     text: Similarly, the CRA bolsters the effectiv
     message: This sentence runs 26 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 73
+    line: 75
     text: Together, the CRA creates the expectatio
     message: This sentence runs 32 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 75
+    line: 77
     text: On the demand side, housing vouchers hav
     message: This sentence runs 26 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 77
+    line: 79
     text: Congress recently passed bipartisan legi
     message: This sentence runs 33 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 81
+    line: 83
     text: For those working directly in communitie
     message: This sentence runs 48 words (limit 25)
     verdict: correct
   - rule: max-paragraph-length
-    line: 85
+    line: 87
     text: Progress on housing affordability will r
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
   - rule: max-sentence-length
-    line: 85
+    line: 87
     text: Earlier this year, I attended a Federal
     message: This sentence runs 40 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 87
+    line: 89
     text: The views expressed here are my own and
     message: This sentence runs 27 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 89
+    line: 91
     text: Alternatively, the Monitor allows the us
     message: This sentence runs 52 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 91
+    line: 93
     text: See Benjamin J. Keys and Vincent Reina (
     message: This sentence runs 28 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: undefined-acronym
-    line: 95
+    line: 97
     text: JCHS). Return to text
     message: '"JCHS" is used without an expansion (1 such acronym)'
     verdict: false-positive
     note: the publisher's short name after its full name in the same citation (Joint Center for Housing Studies … JCHS)
   - rule: max-sentence-length
-    line: 97
+    line: 99
     text: See Melissa Kollar and Zach Scherer (202
     message: This sentence runs 47 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 97
+    line: 99
     text: The income series is adjusted using the
     message: This sentence runs 44 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 99
+    line: 101
     text: "Households in 2024, (Washington: Board o"
     message: This sentence runs 33 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 103
+    line: 105
     text: Freddie Mac estimated a 3.7 million unit
     message: This sentence runs 27 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 105
+    line: 107
     text: See U.S. Census Bureau (2026), "Housing
     message: This sentence runs 30 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 111
+    line: 113
     text: See Edward Glaeser and Joseph Gyourko (2
     message: This sentence runs 26 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 113
+    line: 115
     text: See Bureau of Labor Statistics (2025), "
     message: This sentence runs 38 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 121
+    line: 123
     text: The constant-quality price index measure
     message: This sentence runs 46 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 125
+    line: 127
     text: See Joshua Blonz, Mallick Hossain, Benja
     message: This sentence runs 39 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 127
+    line: 129
     text: See also Hannah Jones (2026), "The Slow
     message: This sentence runs 28 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 129
+    line: 131
     text: See Aditya Aladangady, Jacob Krimmel, an
     message: This sentence runs 36 words (limit 25)
     verdict: false-positive
     note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
-    line: 141
+    line: 143
     text: On September 28, 2026, the remarks were
     message: This sentence runs 41 words (limit 25)
     verdict: correct

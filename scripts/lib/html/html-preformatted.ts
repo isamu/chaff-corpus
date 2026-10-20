@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-preformatted.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-preformatted.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // A <pre> block of an HTML page, which the converter otherwise reads as one run of prose: code (a <pre> holding one
 // <code>, or one whose markup declares a language) becomes a fenced code block, and any other preformatted text (a
 // poem, an address, a plain-text notice) keeps its lines, each one a paragraph. Each block is set aside before the

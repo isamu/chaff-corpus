@@ -1,12 +1,6 @@
 id: nps-article-natural-sounds-and-night-skies
 chaff: 0.36.0
 findings:
-  - rule: concrete-evidence-density
-    line: 3
-    text: ""
-    message: Section "Natural Sounds and Night Skies" has no number, code or link (3 of 3 sections)
-    verdict: correct
-    note: the opening section rests on 'studies show' with no study named; a source or a figure belongs here
   - rule: weasel-word
     line: 9
     text: Studies show that most people prefer the

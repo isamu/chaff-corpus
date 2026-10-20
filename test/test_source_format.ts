@@ -44,6 +44,33 @@ describe("convertedText", () => {
     assert.equal(convertedText("html", page(links)), "End.\n");
   });
 
+  it("keeps where a section links in one comment closing it, without changing the text", () => {
+    const page = "<html><body><main><h2>Fees</h2><p>See <a href='https://example.org/fees'>the fee table</a> and <a href='/local'>the form</a>.</p><h2>Contact</h2><p>Write to us.</p></main></body></html>";
+    assert.equal(convertedText("html", page), "## Fees\n\nSee the fee table and the form.\n\n<!-- https://example.org/fees -->\n\n## Contact\n\nWrite to us.\n");
+  });
+
+  it("keeps an accordion panel's title, drawn as links within the page, as a heading", () => {
+    // The panel markup of an NPS article (Stewardship in Recreation, a US Government work): an icon link and a title link.
+    const panel =
+      '<div class="panel"><div class="panel-heading" role="tab"><h4 class="panel-title">' +
+      '<a aria-hidden="true" data-toggle="collapse" href="#collapse1" role="button"><span class="glyphicon"> </span></a> ' +
+      '<a data-toggle="collapse" href="#collapse1" role="button">Principle #1 – Plan Ahead and Prepare</a></h4></div>' +
+      '<div class="panel-collapse collapse" id="collapse1" role="tabpanel"><div class="panel-body"><ul><li>Repackage food to minimize waste.</li></ul></div></div></div>';
+    const page = `<html><body><main><h3>Leave No Trace</h3><p>Practice the seven principles.</p>${panel}</main></body></html>`;
+    assert.equal(
+      convertedText("html", page),
+      "### Leave No Trace\n\nPractice the seven principles.\n\n#### Principle #1 – Plan Ahead and Prepare\n\n- Repackage food to minimize waste.\n",
+    );
+  });
+
+  it("drops a hidden box a script fills in, and keeps a hidden answer with words of its own", () => {
+    const widget = "<div style='display:none'><h2>You Might Also Like</h2><ul class='results'></ul><script>fill()</script></div>";
+    const page = (body: string): string => `<html><body><main><h2>Article</h2><p>The park opens in May.</p>${body}<p>Last updated: May 1.</p></main></body></html>`;
+    assert.equal(convertedText("html", page(widget)), "## Article\n\nThe park opens in May.\n\nLast updated: May 1.\n");
+    const answer = "<div style='display:none'><p>Any resident may apply.</p></div>";
+    assert.equal(convertedText("html", page(answer)), "## Article\n\nThe park opens in May.\n\nAny resident may apply.\n\nLast updated: May 1.\n");
+  });
+
   it("converts wikitext to Markdown, keeping a link's text and dropping a template", () => {
     assert.equal(convertedText("wikitext", "== Getting in ==\nTake the [[Izu Kyuko Line|train]] from Ito.{{citation needed}}\n"), "## Getting in\nTake the train from Ito.\n");
   });

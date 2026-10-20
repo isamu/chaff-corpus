@@ -1,6 +1,10 @@
 id: mext-shochu-news-506
 chaff: 0.36.0
 findings:
+  - rule: lookalike-character
+    line: 1
+    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
+    verdict: missed
   - rule: title-length
     line: 1
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23"
@@ -11,49 +15,49 @@ findings:
     text: 【発行】
     message: 書き出しに挨拶がありません
     verdict: false-positive
-    note: "a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design"
+    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
   - rule: undefined-acronym
     line: 7
     text: HPに掲載しました！
     message: 「HP」が説明なしで使われています（説明のない略語 5 個）
     verdict: false-positive
-    note: "HP (ホームページ) is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+    note: HP (ホームページ) is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
   - rule: undefined-acronym
     line: 13
     text: STI for SDGs」アワード募集
     message: 「STI」が説明なしで使われています（説明のない略語 5 個）
     verdict: correct
-    note: "STI is not spelled out"
+    note: STI is not spelled out
   - rule: latin-spacing
     line: 14
     text: " 国際理解教育/開発教育指導者研修 参加者募集"
     message: 日本語と英字のあいだを、空ける所が 5 箇所、詰める所が 11 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-    note: "the space between Latin and Japanese is used in some items and not others"
+    note: the space between Latin and Japanese is used in some items and not others
   - rule: undefined-acronym
     line: 14
     text: JICA 国際理解教育/開発教育指導者研修 参加者募集
     message: 「JICA」が説明なしで使われています（説明のない略語 5 個）
     verdict: false-positive
-    note: "JICA is the agency's own well-known name, used as such"
+    note: JICA is the agency's own well-known name, used as such
   - rule: missing-final-period
     line: 18
     text: す
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。12 段落のうち 2 段落）
     verdict: false-positive
-    note: "a line of the issue's table of contents, a title rather than a sentence"
+    note: a line of the issue's table of contents, a title rather than a sentence
   - rule: undefined-acronym
     line: 20
     text: ICTを活用した学習障害への支援に関する事業を公募します！
     message: 「ICT」が説明なしで使われています（説明のない略語 5 個）
     verdict: false-positive
-    note: "ICT is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+    note: ICT is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
   - rule: missing-final-period
     line: 26
     text: た
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。12 段落のうち 2 段落）
     verdict: false-positive
-    note: "a line of the issue's table of contents, a title rather than a sentence"
+    note: a line of the issue's table of contents, a title rather than a sentence
   - rule: max-sentence-length
     line: 35
     text: 特集2では、外国語活動・外国語での「デジタル学習基盤の活用による『話すこと』にお
@@ -65,214 +69,210 @@ findings:
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
   - rule: unrendered-emphasis
-    line: 50
+    line: 52
     text: __CAMCID=hzgulsiKBZ-018&adtype=mail
     message: 「__」が太字にならず、そのまま表示されます
     verdict: false-positive
-    note: "the underscores are inside a bare URL's query string, not Markdown emphasis"
+    note: the underscores are inside a bare URL's query string, not Markdown emphasis
   - rule: unrendered-emphasis
-    line: 50
+    line: 52
     text: __CAMSID=kQBiPbGdDE-21&__CAMCID=hzgulsiK
     message: 「__」が太字にならず、そのまま表示されます
     verdict: false-positive
-    note: "the underscores are inside a bare URL's query string, not Markdown emphasis"
+    note: the underscores are inside a bare URL's query string, not Markdown emphasis
   - rule: unrendered-emphasis
-    line: 50
+    line: 52
     text: __CAMVID=BiqbIPbgdDE&_c_d=1&uns_flg=1&__
     message: 「__」が太字にならず、そのまま表示されます
     verdict: false-positive
-    note: "the underscores are inside a bare URL's query string, not Markdown emphasis"
+    note: the underscores are inside a bare URL's query string, not Markdown emphasis
   - rule: unrendered-emphasis
-    line: 50
+    line: 52
     text: __urlmid=10418343&__CAMSID=kQBiPbGdDE-21
     message: 「__」が太字にならず、そのまま表示されます
     verdict: false-positive
-    note: "the underscores are inside a bare URL's query string, not Markdown emphasis"
+    note: the underscores are inside a bare URL's query string, not Markdown emphasis
   - rule: max-sentence-length
-    line: 53
+    line: 55
     text: 初等中等教育局 初等中等教育企画課  地方教育行政係
     message: この文は 71 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the contact block's lines (office, phone, address) have no 。 and are read as one sentence"
+    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
-    line: 61
+    line: 65
     text: 文部科学省では、発達障害等の障害や日本語に通じないことにより通常の教科書の利用が
     message: この文は 73 文字あります（70 文字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 62
+    line: 66
     text: 教育委員会の担当者や指導に携わる教員等の皆様に向け、音声教材の活用方法等を紹介す
     message: この文は 85 文字あります（70 文字まで）
     verdict: correct
   - rule: orthographic-variant
-    line: 62
+    line: 66
     text: ご覧いただける体験会も実施していますので、ぜひ御参加ください！
     message: 「ご覧」と書いています（この文書はふつう「御覧」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "ご覧 here, 御覧 elsewhere in the issue"
+    note: ご覧 here, 御覧 elsewhere in the issue
   - rule: max-kanji-continuous
-    line: 71
+    line: 75
     text: 初等中等教育局 教科書課 教科用特定図書普及促進係
     message: 「教科用特定図書普及促進係」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "an office's official name, one fixed compound"
+    note: an office's official name, one fixed compound
   - rule: max-sentence-length
-    line: 71
+    line: 75
     text: 初等中等教育局 教科書課 教科用特定図書普及促進係
     message: この文は 73 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the contact block's lines (office, phone, address) have no 。 and are read as one sentence"
+    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
-    line: 77
+    line: 83
     text: 環境省では、文部科学省の協力の下、持続可能な社会の構築を目指して、学校や地域で環
     message: この文は 110 文字あります（70 文字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 101
+    line: 109
     text: 国立研究開発法人科学技術振興機構（JST）社会技術研究開発センター（RISTEX
     message: この文は 87 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the contact block's lines (office, phone, address) have no 。 and are read as one sentence"
+    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
-    line: 110
+    line: 120
     text: 本研修は、国際理解教育/開発教育の授業実践経験がある小・中・高校、特別支援学校に
     message: この文は 137 文字あります（70 文字まで）
     verdict: correct
   - rule: orthographic-variant
-    line: 110
+    line: 120
     text: 作りと実践を行うことを目的としています。
     message: 「作り」と書いています（この文書はふつう「づくり」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "授業作り here, づくり elsewhere"
+    note: 授業作り here, づくり elsewhere
   - rule: topic-predicate-distance
-    line: 110
+    line: 120
     text: 本研修は、国際理解教育/開発教育の授業実践経験がある小・中・高校、特別支援学校に
     message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
     verdict: correct
   - rule: comparative-without-baseline
-    line: 127
+    line: 139
     text: より良い多文化共生の実現に向けた場づくりやマインドセットについて学び、多文化共生
     message: 「より良い」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "「より良い〜の実現」 is a set phrase for an aim; there is no omitted baseline"
+    note: 「より良い〜の実現」 is a set phrase for an aim; there is no omitted baseline
   - rule: max-sentence-length
-    line: 127
+    line: 139
     text: 本研修では、多文化共生を意識した学校づくりや、外国につながる児童生徒を受け持った
     message: この文は 132 文字あります（70 文字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 152
+    line: 166
     text: 企業版ふるさと納税を活用した資金調達や大学と自治体が連携するふるさと納税の取組み
     message: この文は 91 文字あります（70 文字まで）
     verdict: correct
   - rule: orthographic-variant
-    line: 152
+    line: 166
     text: 取組み等を紹介するパネルディスカッション、来場者交流会に参加して、新たなつながり
     message: 「取組み」と書いています（この文書はふつう「取組」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "取組み here, 取組 elsewhere"
+    note: 取組み here, 取組 elsewhere
   - rule: max-sentence-length
-    line: 164
+    line: 180
     text: 文部科学省では今年度、幼稚園等における発達障害のある幼児等への支援の充実、小学校
     message: この文は 93 文字あります（70 文字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 175
+    line: 193
     text: 文部科学省では今年度、1人1台端末などを活用した学習上の困難の早期発見や、アクセ
     message: この文は 94 文字あります（70 文字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 198
+    line: 218
     text: サイエンスアゴラ2025運営事務局（TSP太陽（株）内）
     message: この文は 106 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the contact block's lines (office, phone, address) have no 。 and are read as one sentence"
+    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: undefined-acronym
-    line: 198
+    line: 218
     text: TSP太陽（株）内）
     message: 「TSP」が説明なしで使われています（説明のない略語 5 個）
     verdict: false-positive
-    note: "TSP is part of a company's name"
+    note: TSP is part of a company's name
   - rule: orthographic-variant
-    line: 199
+    line: 219
     text: 問合せ時間 9時～17時（平日のみ、土日祝日を除く）
     message: 「問合せ」と書いています（この文書はふつう「問い合わせ」と書く語です。9 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "問合せ here, 問い合わせ elsewhere"
+    note: 問合せ here, 問い合わせ elsewhere
   - rule: fullwidth-alnum-consistency
-    line: 217
+    line: 239
     text: ＮＰＯ法人共存の森ネットワーク内）
     message: 全角の「ＮＰＯ」と書いています（この文書はふつう半角の「NPO」。41 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "full-width ＮＰＯ where the issue otherwise writes NPO"
+    note: full-width ＮＰＯ where the issue otherwise writes NPO
   - rule: max-sentence-length
-    line: 226
+    line: 250
     text: Green Blue Education Forum (GBEF)  実行委員会
     message: この文は 72 文字あります（70 文字まで）
     verdict: unjudged
   - rule: orthographic-variant
-    line: 226
+    line: 250
     text: 下さい！
     message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。11 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "下さい here, ください elsewhere"
+    note: 下さい here, ください elsewhere
   - rule: bracket-width-consistency
-    line: 227
+    line: 251
     text: (日) 10:00-15:00
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 227
+    line: 251
     text: ) 10:00-15:00
     message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 228
+    line: 252
     text: (月) まで
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 228
+    line: 252
     text: (火) ～ 6月30日 (月) まで
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 228
+    line: 252
     text: ) ～ 6月30日 (月) まで
     message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 228
+    line: 252
     text: ) まで
     message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: max-sentence-length
-    line: 233
+    line: 257
     text: Green Blue Education Forum 実行委員会 （石坂産業株式
     message: この文は 80 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the contact block's lines (office, phone, address) have no 。 and are read as one sentence"
+    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-kanji-continuous
-    line: 237
+    line: 261
     text: 総合教育政策局 男女共同参画共生社会学習・安全課 環境教育推進係
     message: 「男女共同参画共生社会学習」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "an office's official name, one fixed compound"
+    note: an office's official name, one fixed compound
   - rule: fullwidth-alnum-consistency
-    line: 243
+    line: 269
     text: ４つのテーマをアニメーションを使ってわかりやすく解説しています。
     message: 全角の「４」と書いています（この文書はふつう半角の「4」。30 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: max-sentence-length
-    line: 265
+    line: 293
     text: 文部科学省では、映画その他の映像作品及び紙芝居について、教育上価値が高く、学校教
     message: この文は 133 文字あります（70 文字まで）
     verdict: correct
-  - rule: lookalike-character
-    line: 1
-    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
-    verdict: missed
   - rule: stray-space
-    line: 265
+    line: 293
     what: a full-width space inside the name of the ministry's review regulations (between 教育 and 映像等審査規程)
     verdict: missed

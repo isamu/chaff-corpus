@@ -8,6 +8,8 @@ Updated 1 May 2026
 
 This guide is not up to date. For current and up to date information there is guidance on assured periodic tenancies.
 
+<!-- https://www.gov.uk/assured-periodic-tenancies-tenants -->
+
 ## Applies to England
 
 © Crown copyright 2026
@@ -22,11 +24,15 @@ If you have downloaded a copy of this guidance, please check you have the most u
 
 The landlord or the letting agent should give the current version of this guide to the tenant when a new assured shorthold tenancy starts. There is no requirement for them to provide the document again if the assured shorthold tenancy is renewed unless the document has been updated.
 
+<!-- https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3 https://www.gov.uk/government/publications/how-to-rent -->
+
 ### Who is this guide for?
 
 This guide is for people who are renting a home privately under an assured shorthold tenancy, either direct from a landlord or through a letting agency. Most of it will also apply if you are in a shared property but in certain cases, your rights and responsibilities will vary.
 
 The guide does not cover lodgers (people who live with their landlord) or people with licences (such as many property guardians – see this specific guidance on property guardians) – nor tenants where the property is not their main or only home.
+
+<!-- http://england.shelter.org.uk/housing_advice/private_renting/houses_in_multiple_occupation_hmo http://england.shelter.org.uk/housing_advice/private_renting/lodgers https://england.shelter.org.uk/housing_advice/private_renting/types_of_renting_agreement https://www.gov.uk/government/publications/property-guardians-fact-sheet/property-guardians-a-fact-sheet-for-current-and-potential-property-guardians -->
 
 ## 1. Before you start
 
@@ -52,6 +58,8 @@ Will you need a rent guarantee? Some landlords might ask someone to guarantee yo
 
 Do you need to make changes to the property? If you are disabled or have a long- term condition and think you may need to make changes to the property to allow you to live independently, discuss these with your landlord or agent.
 
+<!-- https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford?source=mas https://www.gov.uk/government/publications/understanding-local-housing-allowances-rates-broad-rental-market-areas https://www.moneyhelper.org.uk/en/benefits/benefits-to-help-with-housing-costs/universal-credit-and-paying-rent?source=mas https://www.gov.uk/government/publications/right-to-rent-landlords-code-of-practice https://www.gov.uk/government/publications/landlords-guide-to-right-to-rent-checks https://england.shelter.org.uk/professional_resources/legal/costs_of_renting/guarantors_for_tenancy_agreements https://england.shelter.org.uk/housing_advice/private_renting/rent_deposit_bond_and_guarantee_schemes -->
+
 ### Ways to rent a property
 
 #### Direct from the landlord
@@ -61,6 +69,8 @@ Look for landlords who belong to an accreditation scheme. Accreditation schemes 
 The National Residential Landlords Association and the Guild of Residential Landlords run national schemes.
 
 If your landlord lives outside the UK, you may be responsible for paying tax on the rent to HM Revenue and Customs. For advice, call their non-resident landlord scheme helpline on 0300 322 9433.
+
+<!-- https://www.anuk.org.uk/ https://www.nrla.org.uk/training-academy/accreditation/cpd-activities/accreditation-overview https://www.landlordsguild.com/ -->
 
 #### Through a letting agent
 
@@ -73,6 +83,8 @@ Reputable agents are often accredited through a professional body such as the Gu
 If your landlord lives outside the UK, the letting agent will be responsible for paying any tax due on the rent to HM Revenue and Customs.
 
 Watch out for scams! Be clear who you are handing money over to, and why.
+
+<!-- https://england.shelter.org.uk/housing_advice/private_renting/letting_agent_redress_schemes https://www.gov.uk/client-money-protection-scheme-property-agents https://www.guildproperty.co.uk/ https://www.propertymark.co.uk/ https://safeagents.co.uk/ https://www.rics.org/uk/ https://www.ukala.org.uk/ -->
 
 ## 2. Looking for your new home
 
@@ -89,6 +101,8 @@ Watch out for scams! Be clear who you are handing money over to, and why.
 - Safety. Check that the property is safe to live in, and use the ‘How to rent a safe home’ guide to help you identify possible hazards.
 - Fitness for human habitation. Your property must be safe, healthy and free from things that could cause serious harm. If not, you can take your landlord to court. For more information, see the Homes (Fitness for Human Habitation) Act 2018 guide for tenants. You should also check whether your tenancy agreement excuses you from paying rent if the building becomes unfit to live in due to, for example, a fire or flood.
 - Flood risk. Your area may be at risk of flooding. Check the long-term flood risk to find out.
+
+<!-- https://www.gov.uk/tenancy-deposit-protection https://england.shelter.org.uk/housing_advice/private_renting/rent_deposit_bond_and_guarantee_schemes https://www.fca.org.uk/ https://www.moneyhelper.org.uk/en/everyday-money/budgeting/the-best-ways-to-pay-bills?source=mas https://www.gov.uk/government/publications/smoke-and-carbon-monoxide-alarms-explanatory-booklet-for-landlords https://www.hse.gov.uk/gas/domestic/co.htm https://www.gov.uk/government/publications/how-to-rent-a-safe-home https://www.gov.uk/government/publications/homes-fitness-for-human-habitation-act-2018/guide-for-tenants-homes-fitness-for-human-habitation-act-2018 https://www.gov.uk/check-long-term-flood-risk -->
 
 ### Check who your landlord is
 
@@ -121,6 +135,8 @@ All other fees, including the following, are banned:
 - check out fees – any charge for leaving the property
 - third party fees – any charge for actions done by someone other than the landlord or tenant but that the landlord must pay for
 
+<!-- https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance -->
+
 ### Licensing requirements
 
 #### Houses in multiple occupation
@@ -128,6 +144,8 @@ All other fees, including the following, are banned:
 Houses in multiple occupation are usually properties where 3 or more unrelated people share facilities such as a kitchen or bathroom.
 
 Some houses in multiple occupation must be licensed. Check that your landlord has the correct licence. There are extra requirements for landlords of houses in multiple occupation whether they need a licence or not. Go to Private renting: Houses in multiple occupation for more information.
+
+<!-- https://www.gov.uk/house-in-multiple-occupation-licence https://www.gov.uk/private-renting/houses-in-multiple-occupation -->
 
 #### Selective licensing
 
@@ -143,6 +161,8 @@ Some single-family dwellings may also need to be licensed. Check with your local
 - Contact details. Make sure that you have the correct contact details for the landlord or agent, including a telephone number you can use in case of an emergency. You are legally entitled to know the name and address of your landlord.
 - Code of practice. Ask whether your landlord or agent has signed a code of practice, which may give you additional assurance about their conduct and practices.
 
+<!-- https://www.gov.uk/government/publications/model-agreement-for-a-shorthold-assured-tenancy https://england.shelter.org.uk/get_help https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance -->
+
 ### Things the landlord must provide you with
 
 - A copy of the guide, ‘How to rent: the checklist for renting in England’, either as a hard copy or, with your agreement, via email as a PDF attachment.
@@ -152,11 +172,15 @@ Some single-family dwellings may also need to be licensed. Check with your local
 - A report that shows the condition of the property’s electrical installations. The landlord also has to give this to the local council if they ask for it. The electrical wiring, sockets, consumer units (fuse boxes) and other fixed electrical parts in rented homes must be inspected and tested every 5 years, or more often if the inspector thinks necessary. Throughout the whole time a tenant is living at the property, national electrical safety standards must be met.
 - Evidence that smoke and carbon monoxide alarms are in working order at the start of the tenancy. Tenants should then regularly check they are working.
 
+<!-- https://www.gov.uk/find-energy-certificate -->
+
 ### Check if the property is suitable for your needs if you are disabled
 
 - Accessibility. If you are disabled or have a long-term condition, you can request reasonable adjustments from your landlord or agent. This could include changes to the terms of your agreement, or home adaptations and adjustments to common parts of a building to make your home accessible to you. Your landlord or agent should respond in a reasonable timeframe and if they refuse a request, they should explain why they do not consider it reasonable. Your landlord can ask you to pay for the changes you asked for.
 
 However, you can check to see if you are eligible and apply for a Disabled Facilities Grant to help with the cost of adaptations. Your landlord can also apply for funding on your behalf.
+
+<!-- https://www.citizensadvice.org.uk/housing/discrimination-in-housing/taking-action/asking-for-adjustments-to-help-with-your-disability/ https://www.gov.uk/disabled-facilities-grants -->
 
 ## 4. Living in your rented home
 
@@ -168,6 +192,8 @@ However, you can check to see if you are eligible and apply for a Disabled Facil
 - Be considerate to the neighbours. Anti-social behaviour may be a reason for your landlord to evict you.
 - Don’t take in a lodger or sub-let without checking whether you need permission from your landlord.
 
+<!-- https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance https://www.gov.uk/private-renting/rent-arrears https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent?source=mas https://www.ofgem.gov.uk/information-consumers/energy-advice-households/switching-energy-tariff-or-supplier -->
+
 ### Things the tenant should do
 
 - Make sure you know how to operate the boiler and other appliances and know where the stopcock, fuse box and any meters are located.
@@ -176,6 +202,8 @@ However, you can check to see if you are eligible and apply for a Disabled Facil
 - Consider obtaining insurance for your contents and belongings. The landlord will usually have insurance for the property but it will not cover anything that belongs to you. If your area is at risk of flooding, make sure your insurance covers this.
 - Consider having smart meters installed. Smart meters can help you keep an eye on your energy bills and make changes to save money. If the energy bills are in your name or you prepay for your energy, you can choose to have smart meters installed, though you should check your tenancy agreement first and let your landlord know. If your tenancy agreement says you need your landlord’s permission to alter metering at your property, they should not unreasonably prevent it. Smart Energy GB has independent information about the benefits of smart meters for tenants and how to ask your supplier for the installation. If your landlord pays the energy bills, you can ask them to have smart meters installed.
 - Register to vote at your new address.
+
+<!-- https://www.gov.uk/check-long-term-flood-risk https://www.smartenergygb.org/about-smart-meters/smart-meters-renters-landlords https://www.gov.uk/register-to-vote -->
 
 ### Things the landlord must do
 
@@ -193,17 +221,23 @@ However, you can check to see if you are eligible and apply for a Disabled Facil
 - Ensure the property is at a minimum of energy efficiency band E (unless a valid exemption applies).
 - Carry out a Right to Rent check.
 
+<!-- https://england.shelter.org.uk/housing_advice/repairs/landlord_and_tenant_responsibilities_for_repairs https://england.shelter.org.uk/housing_advice/repairs/how_to_report_repairs_to_a_private_landlord https://www.gassaferegister.co.uk/ https://adaptmyhome.org.uk/ https://www.gov.uk/house-in-multiple-occupation-licence https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance -->
+
 ### Things the landlord should do
 
 - Insure the building to cover the costs of any damage from flood or fire.
 - Check regularly to ensure that all products, fixtures and fittings are safe and that there haven’t been any product recalls. Help is available at the Royal Society for the Prevention of Accidents, the Chartered Trading Standards Institute and the Child Accident Prevention Trust.
 - Ensure blinds are safe by design and they do not have looped cords to prevent accidents. This is especially important in a child’s bedroom. More information can be found on the Royal Society for the Prevention of Accidents’ website.
 
+<!-- https://www.rospa.com/campaigns-fundraising/current https://www.tradingstandards.uk/news-policy/campaigns https://capt.org.uk/pages/category/safety-advice-injury-types/ https://www.rospa.com/campaigns-fundraising/current/blind-cord -->
+
 ## 5. At the end of the fixed period
 
 ### If you want to stay
 
 If you want to extend your tenancy after any initial fixed period, there are a number of important issues to consider. Check Shelter’s website for advice.
+
+<!-- https://england.shelter.org.uk/housing_advice/private_renting/options_when_your_fixed_term_tenancy_ends -->
 
 #### Do you want to sign up to a new fixed term?
 
@@ -217,11 +251,15 @@ If your landlord has served you with a notice proposing a new rent, you can make
 
 The deposit cap introduced by the Tenant Fees Act 2019 means you may be entitled to a partial refund of your tenancy deposit. The government’s guidance on the Tenant Fees Act explains whether this affects you.
 
+<!-- https://www.gov.uk/private-renting/rent-increases https://www.gov.uk/private-renting/rent-disputes https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance -->
+
 ### If you or the landlord want to end the tenancy
 
 The government has announced that it plans to put an end to ‘no fault’ section 21 evictions by changing existing legislation. Landlords will still be able to issue you with a section 21 notice until new legislation comes into effect. If you receive a section 21 notice from your landlord, seek advice from Shelter or Citizens Advice. If you are eligible for legal aid, you can also contact Civil Legal Advice for free and confidential advice.
 
 There are things that both landlords and tenants must do at the end of the tenancy:
+
+<!-- https://england.shelter.org.uk/ https://www.citizensadvice.org.uk/ https://www.gov.uk/civil-legal-advice -->
 
 #### Giving notice
 
@@ -234,6 +272,8 @@ If you do not leave at the end of the notice period, your landlord will need to 
 However, if you seek advice and support as early as possible, it is more likely that you will be able to resolve any issues and remain in your home.
 
 For more information about your rights and responsibilities when your landlord wants you to leave your home, see Understanding the possession action process: A guide for private residential tenants in England and Wales.
+
+<!-- https://www.gov.uk/private-renting-tenancy-agreements/your-landlord-wants-to-end-your-tenancy https://www.citizensadvice.org.uk/ https://england.shelter.org.uk/housing_advice https://www.gov.uk/civil-legal-advice https://www.gov.uk/government/publications/understanding-the-possession-action-process-guidance-for-landlords-and-tenants/understanding-the-possession-action-process-a-guide-for-private-residential-tenants-in-england-and-wales -->
 
 #### If you want to end the tenancy
 
@@ -261,6 +301,8 @@ Return all sets of keys that were provided. If you do not, the landlord may char
 
 Try to be present when the property is inspected to check whether any of the tenancy deposit should be deducted to cover damage. If you do not agree with proposed deductions, contact the relevant deposit protection scheme.
 
+<!-- https://england.shelter.org.uk/housing_advice/tenancy_deposits/check_your_tenancy_deposit_is_protected -->
+
 ## 6. If things go wrong
 
 Most problems can be resolved quickly and easily by talking to your landlord or letting agent.
@@ -281,6 +323,8 @@ There are often legal protections in place for the most common problems that you
 - If you live with your partner and you separate, you may have the right to carry on living in your home.
 - If you are concerned about finding another place to live, contact the housing department of your local council straight away. Depending on your circumstances, they may have a legal duty to help you find accommodation and they can also provide advice. The local council should not wait until you are evicted before taking action to help you.
 
+<!-- https://england.shelter.org.uk/housing_advice/private_renting/letting_agent_redress_schemes https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance https://www.citizensadvice.org.uk/about-us/contact-us/contact-us/contact-us/ https://england.shelter.org.uk/ https://www.gov.uk/civil-legal-advice https://www.moneyhelper.org.uk/en/homes/renting/rent-arrears-problems-paying-your-rent?source=mas https://www.gov.uk/find-local-council https://www.gov.uk/government/publications/homes-fitness-for-human-habitation-act-2018/guide-for-tenants-homes-fitness-for-human-habitation-act-2018 https://england.shelter.org.uk/professional_resources/legal/housing_conditions/responsibility_for_repairs/repairing_obligations_implied_terms_in_tenancy_agreements https://england.shelter.org.uk/housing_advice/repairs/revenge_eviction_if_you_ask_for_repairs https://england.shelter.org.uk/housing_advice/eviction/eviction_of_assured_shorthold_tenants https://www.gov.uk/government/publications/banning-orders-for-landlords-and-property-agents-under-the-housing-and-planning-act-2016 https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance https://england.shelter.org.uk/housing_advice/eviction/how_to_deal_with_illegal_eviction https://england.shelter.org.uk/ https://www.gov.uk/civil-legal-advice https://england.shelter.org.uk/housing_advice/eviction/eviction_notices_from_private_landlords -->
+
 ### Protection from eviction
 
 Landlords must follow strict procedures if they want you to leave your home. They may be guilty of harassing or illegally evicting you if they do not follow the correct procedures.
@@ -290,6 +334,8 @@ Landlords must provide you with the correct notice period and they can only lega
 For anyone facing the loss of their home, free government funded legal advice and representation (legal aid) is available through the Housing Loss Prevention Advice Service. If you receive written notice that someone is seeking possession of your home you should make contact with the Housing Loss Prevention Advice Service.
 
 Government funded legal advice is also available for other housing and debt matters. You can have an initial discussion with an adviser to find out about the support available by contacting Civil Legal Advice (CLA) or by visiting find-legal-advice.justice.gov.uk and entering the property post code and tick the category ‘housing’.
+
+<!-- https://www.gov.uk/government/publications/understanding-the-possession-action-process-guidance-for-landlords-and-tenants/understanding-the-possession-action-process-a-guide-for-private-residential-tenants-in-england-and-wales https://www.gov.uk/guidance/legalaid-for-possession-proceedings https://www.gov.uk/civil-legal-advice https://find-legal-advice.justice.gov.uk/ -->
 
 ### Rent repayment orders
 
@@ -301,6 +347,8 @@ More information on how to apply for a rent repayment order is available on GOV.
 
 If you are reading a print version of this guide and need more information on the links, please contact us on 0303 444 0000 or at 2 Marsham Street, London, SW1P 4DF.
 
+<!-- https://www.gov.uk/government/publications/form-rro1-application-by-tenant-or-local-housing-authority-for-a-rent-repayment-order-housing-and-planning-act-2016 -->
+
 ## 7. Further sources of information
 
 Read further information about landlord and tenant rights and responsibilities.
@@ -311,6 +359,8 @@ Read the government’s guidance on the Tenant Fees Act. This includes:
 - when it applies and how it will affect you
 - helpful questions and answers
 
+<!-- https://www.gov.uk/government/publications/landlord-and-tenant-rights-and-responsibilities-in-the-private-rented-sector https://www.gov.uk/government/publications/tenant-fees-act-2019-guidance -->
+
 ### Tenancy deposit protection schemes
 
 Your landlord must protect your deposit with a government-backed tenancy deposit scheme.
@@ -318,6 +368,8 @@ Your landlord must protect your deposit with a government-backed tenancy deposit
 ### Client money protection schemes
 
 Your agent must protect money such as rent payments through membership of a government approved client money protection scheme.
+
+<!-- https://www.gov.uk/client-money-protection-scheme-property-agents -->
 
 ### Letting agent redress schemes
 
@@ -337,6 +389,8 @@ Every letting agent must belong to a government approved redress scheme. Use the
 - Foundations – a national organisation that can provide advice and help disabled people apply for funding to make adaptations to their home
 - Smart Energy GB – for help and advice on installing a smart meter and tips on energy efficiency
 
+<!-- https://www.citizensadvice.org.uk/ https://england.shelter.org.uk/housing_advice https://www.crisis.org.uk/ https://www.gov.uk/find-local-council https://www.gov.uk/guidance/legal-aid-for-possession-proceedings https://www.moneyhelper.org.uk/en?source=mas http://www.lawsociety.org.uk/ https://www.gassaferegister.co.uk/ https://www.electricalsafetyfirst.org.uk/ https://www.foundations.uk.com/how-we-help/adapt-my-home/ https://www.smartenergygb.org/ -->
+
 ### Also in this series
 
 The government’s ‘How to rent a safe home’ guide helps current and prospective tenants ensure that a rented property is safe to live in.
@@ -348,3 +402,5 @@ The government’s ‘How to lease’ guide helps current and prospective leaseh
 The government’s ‘How to buy a home’ guide provides information to home buyers.
 
 The government’s ‘How to sell a home’ guide provides information to those looking to sell their home.
+
+<!-- https://www.gov.uk/government/publications/how-to-rent-a-safe-home/how-to-rent-a-safe-home https://www.gov.uk/government/publications/how-to-let/how-to-let https://www.gov.uk/government/publications/how-to-lease/how-to-lease https://www.gov.uk/government/publications/how-to-buy-a-home/how-to-buy https://www.gov.uk/government/publications/how-to-sell-a-home/how-to-sell-a-home -->

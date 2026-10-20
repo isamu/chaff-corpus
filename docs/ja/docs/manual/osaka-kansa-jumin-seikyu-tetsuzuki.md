@@ -38,6 +38,8 @@
 
 ・住民監査請求　Q＆A
 
+<!-- https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#a1 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#a2 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#a3 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b1 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b2 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b3 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b4 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b5 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#b6 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349356.html#c1 https://www.city.osaka.lg.jp/gyouseiiinkai/page/0000349478.html -->
+
 ## 住民監査請求とは
 
 市民が、市長や市の職員等による違法又は不当な公金の支出、財産の管理、契約の締結など財務会計上の違法・不当な行為があると考えるときに、監査委員に対し監査を求め、必要な措置を請求する制度です。
@@ -236,6 +238,8 @@
 Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
+
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
 
 ## 探している情報が見つからない
 

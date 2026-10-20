@@ -5,22 +5,22 @@ findings:
     line: 23
     sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
     verdict: false-positive
-    note: "the attendee list names each official by title; a long official title is one fixed compound"
+    note: the attendee list names each official by title; a long official title is one fixed compound
   - rule: max-sentence-length
     line: 23
     sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
     verdict: false-positive
-    note: "the attendee list (titles separated by commas) has no full stop and is a list, not a sentence"
+    note: the attendee list (titles separated by commas) has no full stop and is a list, not a sentence
   - rule: orthographic-variant
     line: 44
     sha256: 23b691124bae19da8d3cc35a6c0e9321b2b695a20aaa190750e67a9b00e7fa47
     verdict: false-positive
-    note: "the kana spelling is part of a facility's name; the common noun is spelled the other way"
+    note: the kana spelling is part of a facility's name; the common noun is spelled the other way
   - rule: date-without-year
     line: 46
     sha256: 9ad670901e78847f97e6be364a48f2a7ff1591a4dcc452718654ca5ac8fa8a88
     verdict: false-positive
-    note: "the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025"
+    note: the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025
   - rule: no-doubled-joshi
     line: 46
     sha256: 5478d3b6161a95602e60acb9f59d902d19e6233c1e4fe7a1124f32c0beca650a
@@ -41,24 +41,24 @@ findings:
     line: 52
     sha256: d30ab658c550ac4337a883cc8262857468987ba6624bd4f05a3abc767cb720c4
     verdict: false-positive
-    note: "the kana spelling is part of a facility's name; the common noun is spelled the other way"
+    note: the kana spelling is part of a facility's name; the common noun is spelled the other way
   - rule: orthographic-variant
     line: 66
     sha256: 15bde81bcaafb0905b2c8de18e8b23e11ad81b90da53404eb4a24141f0549ee9
     verdict: correct
-    note: "the conjunction is spelled in kana here and in kanji elsewhere in the same record"
+    note: the conjunction is spelled in kana here and in kanji elsewhere in the same record
   - rule: duplicate-heading
     line: 76
     sha256: 1a9b97afae18a99afbf53d26b00a73b76b9c3206534c38baa6d5a5d2c173c709
     verdict: false-positive
-    note: "the source repeats a committee's label over each agenda item it covers, on purpose"
+    note: the source repeats a committee's label over each agenda item it covers, on purpose
   - rule: title-length
     line: 78
     sha256: 144fe8be7335c65dbd1253af682fe67a9e5d37459275e50b8ca75505ca3eda8f
     verdict: correct
-    note: "two agenda items run together in one 54-character heading"
+    note: two agenda items run together in one 54-character heading
   - rule: no-mixed-desumasu
     line: 153
     sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
     verdict: false-positive
-    note: "the page's contact block (department and section on one line) is an address, not a sentence"
+    note: the page's contact block (department and section on one line) is an address, not a sentence

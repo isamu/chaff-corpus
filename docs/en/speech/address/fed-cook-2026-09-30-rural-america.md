@@ -95,3 +95,5 @@ Thank you again for the opportunity to connect with you today.
 16. For more information, see Federal Reserve Bank of Richmond (2026), "Rural Investment Collaborative," webpage. Return to text
 
 Last Update: September 30, 2026
+
+<!-- https://doi.org/10.17016/2380-7172.3428 https://www.newyorkfed.org/medialibrary/research/interactives/data/economic-heterogeneity-indicators/downloads/04-2026_ehi-national-full.pdf https://www.jchs.harvard.edu/research-areas/working-papers/geography-pandemic-era-home-price-trends-and-implications https://www.jchs.harvard.edu/research-areas/working-papers/rural-housing-shift-vacation-area-home-prices-surge-post-pandemic https://www.ers.usda.gov/publications/85170 https://www.richmondfed.org/region_communities/regional_data_analysis/regional_matters/2026/how_small_businesses_faring_in_aftermath_hurricane_helene https://www.federalreserve.gov/conferences/strengthening-americas-economy-through-rural-investment-forum.htm https://www.philadelphiafed.org/calendar-of-events/rural-community-action-assembly-sustaining-entrepreneurial-ecosystems https://www.richmondfed.org/region_communities/rural/rural_investment_collaborative -->

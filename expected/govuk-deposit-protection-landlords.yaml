@@ -14,7 +14,7 @@ findings:
     verdict: correct
     note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
-    line: 60
+    line: 62
     text: " - for example, because your tenants dam"
     message: '"-" stands in for a dash'
     verdict: correct

@@ -29,6 +29,8 @@ All TDP schemes offer you 2 options:
 - the scheme hold the deposit for free - known as a ‘custodial’ scheme
 - you or the agent holds the deposit and you pay the scheme to insure it - known as an ‘insured’ scheme
 
+<!-- http://www.gov.scot/Topics/Built-Environment/Housing/privaterent/landlords/tenancy-deposit-schemes https://www.nidirect.gov.uk/articles/tenancy-deposit-scheme-information-landlords -->
+
 ## At the end of the tenancy
 
 The deposit must be returned to your tenants within 10 days of you both agreeing how much they’ll get back.
@@ -89,3 +91,5 @@ You can get more help and advice from:
 
 - your local Citizens Advice Bureau
 - a solicitor
+
+<!-- http://www.citizensadvice.org.uk/index/getadvice.htm#txt_search http://www.lawsociety.org.uk/choosingandusing/findasolicitor.law -->

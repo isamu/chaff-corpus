@@ -1,5 +1,7 @@
 Learn how to create accessible email messages—including Microsoft Outlook documents, that conform to the Section 508 Standards.
 
+<!-- https://www.access-board.gov/ict/ -->
+
 ## Creating Accessible Email Messages
 
 Email is a vital communication tool for federal employees to transmit agency official communication. To ensure all federal employees have access to information contained within and attached to email messages, we must ensure the emails meet Section 508 Standards. Below are easy steps to create accessible email messages so all individuals, including those with disabilities, can easily read, understand, and interact with the content.
@@ -9,6 +11,8 @@ It’s important to note that modern email software increasingly offers users th
 ### Step 1: Write your email
 
 The subject and body of email messages should clearly and concisely state the purpose of the message. The author should use plain language appropriate for the intended audience.
+
+<!-- https://www.plainlanguage.gov/ -->
 
 #### Know Your Audience
 
@@ -32,6 +36,8 @@ Plain language improves accessibility and works with whatever style you follow. 
 - Trademarks and brands - Avoid using a trademark unless you’re referring to a specific product.
 - URLs and filenames - It’s important to remember users of screen readers will often skip from one link to another, skipping the text in between, as a way of skimming for the content they need. For filenames, use hyphens to separate words, just as with URLs. Lowercase filenames are better because it’s easier to type and to remember.
 - Voice and tone - Our voice is our unique personality. You should think of your written voice as analogous to your actual tone of voice. Tone is more like attitude—the emotional context of a piece.
+
+<!-- https://digital.gov/style-guide/ https://guides.18f.gov/content-guide/our-style/ https://www.plainlanguage.gov/resources/guides/ http://www.plainlanguage.gov https://guides.18f.gov/content-guide/our-style/abbreviations-and-acronyms/ https://guides.18f.gov/content-guide/our-style/active-voice/ https://guides.18f.gov/content-guide/our-style/capitalization/ https://guides.18f.gov/content-guide/our-style/inclusive-language/ https://guides.18f.gov/content-guide/our-style/names/ https://guides.18f.gov/content-guide/our-style/numbers-and-percentages/ https://guides.18f.gov/content-guide/our-style/punctuation/ https://guides.18f.gov/content-guide/our-style/specific-words-and-phrases/ https://guides.18f.gov/content-guide/our-style/technical-and-interface-writing/ https://guides.18f.gov/content-guide/our-style/trademarks-and-brands/ https://webaim.org/techniques/hypertext/#link_to_link https://webaim.org/techniques/hypertext/#link_to_link https://guides.18f.gov/content-guide/our-style/voice-and-tone/ -->
 
 #### Things to Avoid
 
@@ -64,6 +70,8 @@ Figure 2. Screenshot of the Outlook online message interface.
 - In the main toolbar, click more actions, which is visually represented above with three dots
 - At the bottom of the options, click “Check for accessibility issues.”
 
+<!-- https://support.office.com/en-us/article/customize-the-ribbon-in-office-00f24ca7-6021-48d3-9514-a31a460ecb31 -->
+
 ### Step 3: Ensure Text and Images Provide Sufficient Contrast
 
 An important aspect of color for both low vision and colorblind users is sufficient contrast between the foreground text and the background.
@@ -73,6 +81,8 @@ Federal government electronic content must meet Section 508 Standards, which inc
 By default, email messages use a style of black text on a white background. Unless you have the ability to test for contrast, these settings should be unaltered. If you are able to determine or test for color contrast, make sure that the contrast ratio is 4.5:1 or greater.
 
 Never use color as the only method of meaning or emphasis. If your audience has certain color blindness, they may not be able to see the color you chose. Also make sure to bold text or use text or symbols in addition to color in images and tables to ensure your information and meaning is clear to all.
+
+<!-- https://www.w3.org/WAI/intro/wcag -->
 
 ### Step 4: Add Alternative (alt) Text to Images
 
@@ -141,6 +151,8 @@ Federal agencies typically have a policy regarding staff email signature blocks.
 If you place an image in your signature block, such as the OIT signature logo, use alt text to convey the meaning of the image. For example, enter ”Department of Veterans Affairs Office of Information and Technology” for the alt text to describe the OIT signature logo.
 
 Images with hyperlinks are acceptable as long as the alt text associated with the image describes the meaning or intent of the image so the reader knows what to expect if the link is activated. For example, the alt text for the Facebook logo linked to the Department of Veterans Affairs’s Facebook page is ”Visit the VA Facebook page.”
+
+<!-- https://www.oit.va.gov/design-guide/resources/logos/ -->
 
 #### Things to Avoid Placing in Your Signature Block
 

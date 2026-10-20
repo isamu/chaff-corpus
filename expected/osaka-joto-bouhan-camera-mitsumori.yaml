@@ -2,17 +2,17 @@ id: osaka-joto-bouhan-camera-mitsumori
 chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
-    line: 35
+    line: 37
     text: (PDF形式, 217.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 52
+    line: 54
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 15 箇所あります。この文書には書き方が二通りあります
     verdict: correct
   - rule: bracket-width-consistency
-    line: 56
+    line: 58
     text: (DOCX形式, 44.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct

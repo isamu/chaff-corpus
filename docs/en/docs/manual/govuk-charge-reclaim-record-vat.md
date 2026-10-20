@@ -49,6 +49,8 @@ Charge zero rate on goods you export from:
 - Northern Ireland to somewhere outside the UK and EU
 - goods you supply from Northern Ireland to a VAT registered EU business - you can check if the VAT number is valid
 
+<!-- https://ec.europa.eu/taxation_customs/vies/#/vat-validation -->
+
 ## How to calculate prices with and without VAT
 
 You need to work out the total price including VAT (the ‘VAT-inclusive price’) when you sell goods or services.

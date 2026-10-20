@@ -6,31 +6,31 @@ findings:
     text: 第90号 2025/11/12
     message: 書き出しに挨拶がありません
     verdict: false-positive
-    note: "a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design"
+    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
   - rule: max-sentence-length
     line: 3
     text: 第90号 2025/11/12
     message: この文は 157 文字あります（70 文字まで）
     verdict: false-positive
-    note: "the issue's header lines (number, section label, article title, school) have no 。 and are read as one sentence with the next lines"
+    note: the issue's header lines (number, section label, article title, school) have no 。 and are read as one sentence with the next lines
   - rule: preamble-length
     line: 3
     text: 第90号 2025/11/12
     message: 最初の見出しまでに 12 段落あります（2 段落まで）
     verdict: false-positive
-    note: "a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block"
+    note: a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block
   - rule: teki-overuse
     line: 3
     text: 第90号 2025/11/12
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: false-positive
-    note: "counts 的 across the header lines and the first body sentence, which have no 。 between them"
+    note: counts 的 across the header lines and the first body sentence, which have no 。 between them
   - rule: undefined-acronym
     line: 5
     text: DXで授業デザインの変革へ ～主体的に問題解決に取り組む子供の育成を目指して～
     message: 「DX」が説明なしで使われています（説明のない略語 3 個）
     verdict: false-positive
-    note: "DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+    note: DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
   - rule: max-sentence-length
     line: 7
     text: クラウドを活用し、学びプランを子供と共有したり、個人学習と集団学習を同時並行に進
@@ -41,7 +41,7 @@ findings:
     text: GIGA StuDX推進チーム）
     message: 「GIGA」が説明なしで使われています（説明のない略語 3 個）
     verdict: false-positive
-    note: "GIGA is the name of the programme (GIGAスクール構想), used as a proper name throughout the ministry's magazine"
+    note: GIGA is the name of the programme (GIGAスクール構想), used as a proper name throughout the ministry's magazine
   - rule: max-sentence-length
     line: 21
     text: 生徒は、試合を見ながら「サーブ・レシーブなどの基本技能は出来ているか」「ポジショ
@@ -67,13 +67,13 @@ findings:
     text: WGの第1回～第3回の資料リンクを掲載しました。
     message: 「WG」が説明なしで使われています（説明のない略語 3 個）
     verdict: correct
-    note: "WG (working group) is not spelled out"
+    note: WG (working group) is not spelled out
   - rule: fullwidth-alnum-consistency
     line: 50
     text: ３回プチ学習会を実施します！
     message: 全角の「３」と書いています（この文書はふつう半角の「3」。12 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "第３回 here, 第1回～第3回 two items above"
+    note: 第３回 here, 第1回～第3回 two items above
   - rule: fullwidth-alnum-consistency
     line: 51
     text: １テーマからの参加も可能です。皆様のご参加をお待ちしています。
@@ -89,22 +89,22 @@ findings:
     text: よりよい「GIGA StuDXメールマガジン」を発信していくために、ご意見やご感
     message: 「よりよい」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is"
+    note: 「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is
   - rule: max-sentence-length
     line: 66
     text: 「リーディングDXスクールの報告書は実践の宝庫」
     message: この文は 105 文字あります（70 文字まで）
     verdict: false-positive
-    note: "a quoted title line with no 。 is joined with the hard-wrapped lines after it"
+    note: a quoted title line with no 。 is joined with the hard-wrapped lines after it
   - rule: latin-spacing
-    line: 76
+    line: 78
     text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。21 箇所のうち 1 箇所が違う）
     verdict: false-positive
-    note: "the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose"
+    note: the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose
   - rule: email-greeting-closing
-    line: 78
+    line: 80
     text: 03-5253-4111 （内線4039）
     message: 終わりに結びの言葉がありません
     verdict: false-positive
-    note: "a mail-magazine issue ends with the office's contact block, not a closing line, by design"
+    note: a mail-magazine issue ends with the office's contact block, not a closing line, by design

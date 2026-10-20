@@ -8,23 +8,23 @@ findings:
     verdict: false-positive
     note: 'the parenthetical manual reference "(490: Employee travel)" is counted as title words'
   - rule: undefined-acronym
-    line: 93
+    line: 103
     text: PAYE payments as part of a Real Time Inf
     message: '"PAYE" is used without an expansion (1 such acronym)'
     verdict: correct
   - rule: contraction-consistency
-    line: 161
+    line: 183
     text: An employee will always be resident in t
     message: "\"they're\" is written \"they are\" elsewhere in the document"
     verdict: correct
   - rule: date-without-year
-    line: 179
+    line: 205
     text: 5 April in the next.
     message: "\"5 April\" has no year, and the document's dates run from 2014 to 2025, so the year is unclear"
     verdict: false-positive
     note: a recurring annual date (the tax-year boundary, "6 April in one year to 5 April in the next") needs no year
   - rule: date-without-year
-    line: 179
+    line: 205
     text: 6 April in one year to 5 April in the ne
     message: "\"6 April\" has no year, and the document's dates run from 2014 to 2025, so the year is unclear"
     verdict: false-positive

@@ -146,6 +146,8 @@ b) 平年と同様に天気は数日の周期で変わる。
 平年値からの差を表示した天気図。
 平年値を上回る領域を「正偏差域（場）」、下回る領域を「負偏差域（場）」という。
 
+<!-- https://www.data.jma.go.jp/gmd/cpd/cgi-bin/view/explanation/faq.html https://www.data.jma.go.jp/gmd/cpd/cgi-bin/view/explanation/faq.html https://www.data.jma.go.jp/gmd/cpd/cgi-bin/view/explanation/faq.html -->
+
 ### その他の表現
 
 分類

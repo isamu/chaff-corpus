@@ -83,6 +83,8 @@ Astrophysicist: These scientists study the physics of the universe. They are int
 
 Computer Scientist: These scientists study ways to use computers to solve problems. They might create new software, research theoretical concepts, or develop algorithms. Computer scientists developed algorithms to sort telescope data during the process of capturing the historic first image of a black hole.
 
+<!-- https://science.nasa.gov/astrophysics/ https://www.jpl.nasa.gov/edu/resources/teachable-moment/how-scientists-captured-the-first-image-of-a-black-hole/ -->
+
 ## More About Black Holes
 
 Black Hole Basics
@@ -96,3 +98,5 @@ Black Holes: By the Numbers Slideshow
 Black Hole Travel Postcards
 
 Read What Is a Black Hole? (Grades K-4)
+
+<!-- https://science.nasa.gov/universe/black-holes/ https://svs.gsfc.nasa.gov/13322 https://imagine.gsfc.nasa.gov/ask_astro/black_holes.html https://www.nasa.gov/stem-content/black-holes-by-the-numbers/ https://svs.gsfc.nasa.gov/13323 https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-black-hole-grades-k-4/ -->

@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-elements.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-elements.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
 // The pieces of an HTML page the converters look at: tags, links, attributes and elements matched to their own
 // closing tag. Pure; a regular-expression reading, not a parser.
 import { decodeEntities } from "./markup-text.ts";
@@ -54,7 +54,7 @@ const SCHEME_AND_HOST = /^(?:[a-z][a-z0-9+.-]*:)?\/\/[^/?#]*/iu;
 // A link that opens no page (tel:, mailto:, sms:) carries its own content, a number or an address.
 const OTHER_SCHEME = /^\s*(?!https?:)[a-z][a-z0-9+.-]*:(?!\/\/)/iu;
 
-const hrefOf = (link: string): string => {
+export const hrefOf = (link: string): string => {
   const href = HREF.exec(link);
   return href?.[1] ?? href?.[2] ?? href?.[3] ?? "";
 };

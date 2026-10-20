@@ -46,3 +46,5 @@ Interagency Statement on Special Purpose Credit Programs Under the Equal Credit 
 - See http://www.federalreserve.gov/apps/contactus/feedback.aspx. Return to text.
 
 Last Update: August 25, 2026
+
+<!-- https://www.hud.gov/sites/dfiles/GC/documents/Special_Purpose_Credit_Program_OGC_guidance_1s2-6-2021.pdf http://www.federalreserve.gov/apps/contactus/feedback.aspx. -->

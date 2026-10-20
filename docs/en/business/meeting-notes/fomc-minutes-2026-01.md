@@ -420,3 +420,5 @@ Secretary
 9. Attended the discussion of current monetary policy. Return to text
 
 Last Update: February 18, 2026
+
+<!-- http://www.federalreserve.gov/monetarypolicy/rules_authorizations.htm -->

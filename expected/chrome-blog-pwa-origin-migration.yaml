@@ -2,10 +2,10 @@ id: chrome-blog-pwa-origin-migration
 chaff: 0.34.0
 findings:
   - rule: heading-echo
-    line: 28
+    line: 30
     sha256: 3507e2edab388529fdc78f6dc83fdecf98721ccc7d5d8b64eaa259d0c6484b0a
     verdict: unjudged
   - rule: bracket-nesting
-    line: 139
+    line: 143
     sha256: 5d0aafb2274c3f356b0c2a9a4406f6eb7983ae05880a774f887e5192767ee8b1
     verdict: unjudged

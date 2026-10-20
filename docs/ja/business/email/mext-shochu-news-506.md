@@ -41,6 +41,8 @@ https://www.toyokan.co.jp/pages/shotokyoiku
 初等中等教育局 教育課程課 教育課程第一係
 E-mail：kyoikuichikakari@mext.go.jp
 
+<!-- https://www.toyokan.co.jp/pages/shotokyoiku -->
+
 ### （2）【発行】教育委員会月報5月号を文科省HPに掲載しました！
 
 5月号は、「シリーズ 地方発！我が教育委員会の取組」をはじめ、読み応えのある記事を掲載しております。
@@ -53,6 +55,8 @@ https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm?__CAMVID=BiqbIPbgdDE&_c_d
 初等中等教育局 初等中等教育企画課  地方教育行政係
 電話：03-5253-4111（内線:4676）
 E-mail：iinkai@mext.go.jp
+
+<!-- https://www.mext.go.jp/b_menu/shuppan/geppou/index.htm?__CAMVID=BiqbIPbgdDE&_c_d=1&uns_flg=1&__urlmid=10418343&__CAMSID=kQBiPbGdDE-21&__CAMCID=hzgulsiKBZ-018&adtype=mail -->
 
 ## 【教職員向け】
 
@@ -72,6 +76,8 @@ https://www.mext.go.jp/a_menu/shotou/kyoukasho/1422882_00013.htm
 電話：03-5253-4111（内線:4743）
 E-mail：kyokasyo@mext.go.jp
 
+<!-- https://www.mext.go.jp/a_menu/shotou/kyoukasho/1422882_00013.htm -->
+
 ### （2）教職員等環境教育・学習推進リーダー養成研修を開催します!
 
 環境省では、文部科学省の協力の下、持続可能な社会の構築を目指して、学校や地域で環境教育・学習を実践・推進するリーダーとなる人材を育成することを目的として、教職員等を対象とする研修を全国各地（オンライン含む）で開催します。
@@ -86,6 +92,8 @@ E-mail：sokan-kyoiku@env.go.jp
 （文部科学省窓口）
 初等中等教育局 教育課程課 教育課程第二係
 E-mail：kyoiku@mext.go.jp
+
+<!-- https://www.jeef.or.jp/activities/esd_teacher/ -->
 
 ### （3）「STI for SDGs」アワード募集
 
@@ -105,6 +113,8 @@ E-mail：sdgs-award@jst.go.jp
 科学技術・学術政策局 人材政策課 科学技術社会連携係
 電話：03-5253-4111（内線:4193）
 
+<!-- https://www.jst.go.jp/ristex/sdgs-award/index.html -->
+
 ### （4）JICA 国際理解教育/開発教育指導者研修 参加者募集
 
 本研修は、国際理解教育/開発教育の授業実践経験がある小・中・高校、特別支援学校に勤務する教員を対象に、学習指導要領の「持続可能な社会の創り手」の育成を念頭に、国際理解教育/開発教育に関するこれまでの知見や事例の共有を通じ、効果的な授業作りと実践を行うことを目的としています。
@@ -121,6 +131,8 @@ E-mail：jica-edu@j-gift.org
 大臣官房国際課 海外協力政策係
 電話：03-5253-4111（内線：2604）
 E-mail：mext-oisp@mext.go.jp
+
+<!-- https://j-gift.org/jica-domestic-training-program/ -->
 
 ### （5）JICA教員研修 多文化共生の文化共創プログラム 参加者募集
 
@@ -139,6 +151,8 @@ E-mail：jica-edu@j-gift.org
 大臣官房国際課 海外協力政策係
 電話：03-5253-4111（内線:2604）
 E-mail：mext-oisp@mext.go.jp
+
+<!-- https://j-gift.org/2025jica-tabunka-appform/?%E3%80%80fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExR1BKMzV5QUJkVGNrcnBtWgEefmcHpwuj8Y_ZXM5JZuhinLkCD2uKgFXCtPEAz7D5oIyUx9renkPP7Q2roaI_aem_EAMdzkDrBU0kDZpHcuojHA -->
 
 ## 【学校・教育行政関係者向け】
 
@@ -159,6 +173,8 @@ https://www.mext.go.jp/donation_portal-site/forum_2025/index.html
 電話：03-5253-4111（内線：2963）
 E-mail：mff2025@mext.go.jp
 
+<!-- https://www.mext.go.jp/donation_portal-site/forum_2025/index.html -->
+
 ### （2）幼稚園等における発達障害支援に関する事業を公募します！
 
 文部科学省では今年度、幼稚園等における発達障害のある幼児等への支援の充実、小学校への円滑な引継ぎ、幼稚園教員の特別支援教育の専門性向上等について実践研究を行う委託事業を新たに実施します。事業概要はこちら↓
@@ -170,6 +186,8 @@ https://www.mext.go.jp/content/20250514-mext-tokubetu01-000042498_00.pdf.pdf
 電話：03-5253-4111（内線：3254）
 E-mail：hattatsu@mext.go.jp
 
+<!-- https://www.mext.go.jp/content/20250514-mext-tokubetu01-000042498_00.pdf.pdf -->
+
 ### （3）ICTを活用した学習障害への支援に関する事業を公募します！
 
 文部科学省では今年度、1人1台端末などを活用した学習上の困難の早期発見や、アクセシビリティ機能などを活用した学習上の困難への効果的な支援等について実践研究を行う委託事業を新たに実施します。事業概要はこちら↓
@@ -180,6 +198,8 @@ https://www.mext.go.jp/content/20250514-mext-tokubetu01-000042498_00.pdf.pdf
 初等中等教育局 特別支援教育課 支援総括係
 電話：03-5253-4111（内線:3254）
 E-mail：hattatsu@mext.go.jp
+
+<!-- https://www.mext.go.jp/content/20250514-mext-tokubetu01-000042498_00.pdf.pdf -->
 
 ### （4）サイエンスアゴラ2025開催と企画募集のお知らせ
 
@@ -204,6 +224,8 @@ E-mail：info-agora2025@tsp-taiyo.co.jp
 電話：03-5253-4111（内線:4193）
 E-mail：stw@mext.go.jp
 
+<!-- https://www.jst.go.jp/sis/scienceagora/2025/entry.html -->
+
 ## 【児童・生徒向け】
 
 ### （1）第24回  聞き書き甲子園 参加高校生を募集
@@ -221,6 +243,8 @@ https://www.kikigaki.net
 初等中等教育局 生涯学習推進課 民間教育事業第二係
 電話：03-5253-4111（内線:2092）
 
+<!-- https://www.kikigaki.net -->
+
 ### （2）GBEF   2025参加者6/30まで募集！
 
 Green Blue Education Forum (GBEF)  実行委員会では、「みんなの地球をカラフルに」をテーマに、GBEF2025  を開催します。「守り残したい環境、作りたい未来」に関する活動や提言を3分間の動画にまとめ、御応募下さい！
@@ -236,6 +260,8 @@ E-mail：info@esd-place.org
 （文部科学省窓口）
 総合教育政策局 男女共同参画共生社会学習・安全課 環境教育推進係
 E-mail：kankyo@mext.go.jp
+
+<!-- https://gb-ef.org/ -->
 
 ### （3）「キッズ外務省」に小学生・中学生向けの新作動画を公開しました
 
@@ -258,6 +284,8 @@ E-mail：hounai@mofa.go.jp
 電話：03-5253-4111（内線:3045）
 E-mail：somukou@mext.go.jp
 
+<!-- https://www.mofa.go.jp/mofaj/kids/index.html https://www.mofa.go.jp/mofaj/kids/fujimaru/index.html -->
+
 ## 【その他】
 
 ### （1）2025年4月の文部科学省選定作品等の紹介
@@ -270,6 +298,8 @@ https://www.mext.go.jp/content/20250507-mxt_jogai01-000042368_1.pdf
 （文部科学省窓口）
 初等中等教育局 学校情報基盤・教材課 映像等審査担当
 E-mail：emedia@mext.go.jp
+
+<!-- https://www.mext.go.jp/content/20250507-mxt_jogai01-000042368_1.pdf -->
 
 ## お問合せ先
 

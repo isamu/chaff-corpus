@@ -71,6 +71,8 @@ https://forms.office.com/r/AZBLPQ8x37
 2026年もどうぞよろしくお願いいたします。（小宮山）
 ─────────────────────────────
 
+<!-- https://leadingdxschool.mext.go.jp/wp/wp-content/uploads/2025/07/B119210000946_format2.pdf https://www.mext.go.jp/studxstyle/special/p_gaku.html https://forms.office.com/pages/responsepage.aspx?id=sBBYVMs2kEKJJkjbwPnpL1XwyxdQX45FjCDvBFYs4-ZUMFEwU1NSR1Q5RDdKNlNTVDVRTjhISEFQUS4u&route=shorturl https://nttls-edu.jp/events/2025/ai/touki.pdf https://84ea20da.form.kintoneapp.com/public/b85932bf5e0dbd6a5af06f28624bed58ed63bc323fa8d8d84f0232d7a1c8d8ca?_formAccessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJkb21haW4iOiI4NGVhMjBkYSIsImlhdCI6MTc2NTI0NTgyNiwiZXhwIjoxNzY1MjQ1ODg2fQ.9CWPeF-E-FQK82sMEehfhf3SpfZOujfJlLY6avegPWI&_formRef=https%3A%2F%2Fwww.mext.go.jp%2F https://forms.office.com/r/AZBLPQ8x37 -->
+
 ## お問合せ先
 
 初等中等教育局 GIGA StuDX（ギガ スタディーエックス）推進チーム

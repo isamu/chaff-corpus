@@ -29,9 +29,13 @@ Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
 
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
+
 ## 就学校の変更の手続きについて
 
 保護者の方が、学校の属する区の区役所就学事務担当窓口までご相談のうえ、「指定校変更・区域外就学願書」を提出してください。なお、許可については当該児童生徒についてのみ認めるものとします。
+
+<!-- https://www.city.osaka.lg.jp/kyoiku/page/0000243824.html -->
 
 ## 許可の取り消しについて
 
@@ -40,6 +44,8 @@ PDFファイルを閲覧できない場合には、Adobe 社のサイトから A
 ## お問合せ先
 
 お住まいの区の区役所就学事務担当窓口、教育委員会事務局総務部学事課（電話　06-6208-9114）まで
+
+<!-- https://www.city.osaka.lg.jp/kyoiku/page/0000243824.html -->
 
 ## 似たページを探す
 

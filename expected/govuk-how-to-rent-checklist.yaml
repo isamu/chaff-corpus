@@ -2,87 +2,87 @@ id: govuk-how-to-rent-checklist
 chaff: 0.34.0
 findings:
   - rule: max-sentence-length
-    line: 29
+    line: 33
     text: The guide does not cover lodgers (people
     message: This sentence runs 42 words (limit 40)
     verdict: correct
   - rule: heading-end-punctuation-mix
-    line: 33
+    line: 39
     text: "### Key questions:"
     message: The heading "Key questions:" ends with ":", while 22 other headings end bare ("Who is this guide for?")
     verdict: correct
   - rule: max-paragraph-length
-    line: 37
+    line: 43
     text: How much is the deposit? Since 1 June 20
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
   - rule: numeral-sentence-start
-    line: 41
+    line: 47
     text: 35% of your take-home pay is the most th
     message: The sentence opens with the numeral "35%"
     verdict: correct
   - rule: contraction-consistency
-    line: 49
+    line: 55
     text: Your landlord can’t insist which option
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: unjudged
   - rule: contraction-consistency
-    line: 81
+    line: 93
     text: Check that the tenancy deposit you’re be
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: ngram-repetition
-    line: 97
+    line: 111
     text: Be aware that you may have to leave the
     message: '"to leave the property" appears 7 times (limit 5)'
     verdict: unjudged
   - rule: contraction-consistency
-    line: 167
+    line: 191
     text: It’s worth getting contents insurance to
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: contraction-consistency
-    line: 176
+    line: 202
     text: The landlord will usually have insurance
     message: "\"will not\" is written \"won't\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
   - rule: duration-mismatch
-    line: 189
+    line: 217
     text: 1 April 2021).
     message: 1 July 2020 plus 5 years ends around 30 June 2025, but the end is given as 1 April 2021
     verdict: false-positive
     note: two start dates for two groups (new tenancies from 1 July 2020, existing ones from 1 April 2021) are read as the start and end of the 5-year period
   - rule: max-sentence-length
-    line: 230
+    line: 268
     text: If you are unsure how to respond or worr
     message: This sentence runs 43 words (limit 40)
     verdict: correct
   - rule: max-sentence-length
-    line: 232
+    line: 270
     text: If you do not leave at the end of the no
     message: This sentence runs 51 words (limit 40)
     verdict: correct
   - rule: max-sentence-length
-    line: 272
+    line: 314
     text: Unless or until a suitable replacement t
     message: This sentence runs 41 words (limit 40)
     verdict: correct
   - rule: max-sentence-length
-    line: 276
+    line: 318
     text: If you have a serious complaint about th
     message: This sentence runs 48 words (limit 40)
     verdict: correct
   - rule: one-sentence-paragraph-run
-    line: 342
+    line: 396
     text: The government’s ‘How to rent a safe hom
     message: 5 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
     note: a closing 'Also in this series' run of parallel one-line blurbs, one per sibling guide; the repetition is the list's form
   - rule: repeated-sentence-head
-    line: 342
+    line: 396
     text: The government’s ‘How to rent a safe hom
     message: 5 sentences in a row open with "The government’s ‘How" (limit 3)
     verdict: false-positive

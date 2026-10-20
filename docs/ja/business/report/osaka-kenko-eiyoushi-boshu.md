@@ -15,6 +15,8 @@ Adobe Acrobat Reader DCのダウンロード（無償）
 
 PDFファイルを閲覧できない場合には、Adobe 社のサイトから Adobe Acrobat Reader DC をダウンロード（無償）してください。
 
+<!-- https://creativecommons.jp/licenses/ https://creativecommons.org/licenses/by/4.0/deed.ja https://www.city.osaka.lg.jp/contents/wdu290/opendata/ https://www.adobe.com/jp/acrobat/pdf-reader.html -->
+
 ### 大阪市が求める人材像
 
 高い志を持ち、多様な価値観を理解し、チャレンジ精神あふれる自律的な人材
@@ -103,6 +105,8 @@ PDFファイルを閲覧できない場合には、Adobe 社のサイトから A
 受験票等は、受験資格等を審査の上、PDFファイルで発行します。このPDFファイルは令和8年11月7日（土曜日）ごろダウンロードできる状態になります。令和8年11月12日（木曜日）までに受験票等がダウンロードできない場合は、大阪市健康局総務部総務課まで必ずお問い合わせください。
 
 ※受験票は印刷し、第1次試験日当日に必ず持参してください。
+
+<!-- https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home -->
 
 #### 注意事項
 
@@ -193,6 +197,8 @@ PDFファイルを閲覧できない場合には、Adobe 社のサイトから A
 ### 試験結果の開示
 
 不合格の場合、試験結果の開示を希望する方は、各試験の合格発表日から10日以内に「大阪市行政オンラインシステム」（ https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home ）により請求してください。受験者本人に限り、順位及び総合得点等をお知らせします。なお、対象者は、それぞれの試験で全てを受験した方に限ります。詳細は、受験票の交付時にお知らせします。
+
+<!-- https://lgpos.task-asp.net/cu/271004/ea/residents/portal/home -->
 
 ### その他
 

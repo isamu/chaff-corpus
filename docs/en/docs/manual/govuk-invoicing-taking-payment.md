@@ -86,6 +86,8 @@ If you want to set up a business that takes a sum of money from a customer every
 
 If customers pay you in large amounts of cash, your business may need to be registered for an anti-money laundering scheme.
 
+<!-- https://www.fca.org.uk/firms/authorisation/regulated-activities -->
+
 ## Protecting customer data
 
 You must follow the rules on storing customer data to protect their financial information.

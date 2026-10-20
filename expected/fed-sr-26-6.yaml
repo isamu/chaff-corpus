@@ -58,7 +58,7 @@ findings:
     message: This sentence runs 30 words (limit 18)
     verdict: unjudged
   - rule: heading-level-skip
-    line: 45
+    line: 47
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: correct

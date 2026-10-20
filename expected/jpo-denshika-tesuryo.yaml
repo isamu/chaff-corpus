@@ -58,78 +58,78 @@ findings:
     verdict: false-positive
     note: the legal name of an organisation
   - rule: stray-space
-    line: 45
+    line: 47
     text: 　となります。
     message: 「円」と「と」は一続きの語句ですが、あいだに空白があります（461 箇所のうち 1 箇所が空いている）
     verdict: correct
     note: an ideographic space between the result of a calculation and 「となります」
   - rule: max-kanji-continuous
-    line: 62
+    line: 64
     text: 手続書面を特許庁に提出した後、約2週間程度で手続者のもとへ登録情報処理機関（一般
     message: 「一般財団法人工業所有権電子情報化」は漢字が 16 字続いています（8 字まで）
     verdict: false-positive
     note: the legal name of an organisation
   - rule: max-kanji-continuous
-    line: 64
+    line: 66
     text: 電子化手数料の納付期限は、手続書面の提出から30日以内となりますので、電子化手数
     message: 「電子化手数料納付案内」は漢字が 10 字続いています（8 字まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 83
+    line: 87
     text: 第7条 特定手続のうち特許出願その他の経済産業省令で定めるもの（以下「指定特定手
     message: この文は 157 文字あります（140 文字まで）
     verdict: false-positive
     note: an article of a statute quoted verbatim in an excerpt
   - rule: topic-predicate-distance
-    line: 83
+    line: 87
     text: 第7条 特定手続のうち特許出願その他の経済産業省令で定めるもの（以下「指定特定手
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: false-positive
     note: an article of a statute quoted verbatim in an excerpt
   - rule: dangling-reference
-    line: 87
+    line: 91
     text: 第6条第3項若しくは前条第1項の規定によるファイルへの記録、第7条第1項の規定に
     message: 「第6条第3項」（番地 6.3）はこの文書にありません
     verdict: false-positive
     note: a statute excerpt (抜粋) refers to an article the excerpt leaves out
   - rule: max-sentence-length
-    line: 87
+    line: 91
     text: 第9条 特許庁長官は、その登録を受けた者（以下「登録情報処理機関」という。）に、
     message: この文は 175 文字あります（140 文字まで）
     verdict: false-positive
     note: an article of a statute quoted verbatim in an excerpt
   - rule: numbering-gap
-    line: 87
+    line: 91
     text: 第9条 特許庁長官は、その登録を受けた者（以下「登録情報処理機関」という。）に、
     message: 「第7条」の次が「第9条」です（8 番目のはず）
     verdict: false-positive
     note: a statute excerpt (抜粋) quotes articles 7, 9 and 40 only
   - rule: topic-predicate-distance
-    line: 87
+    line: 91
     text: 第9条 特許庁長官は、その登録を受けた者（以下「登録情報処理機関」という。）に、
     message: 「は」で出した主題から述語まで 148 字あります（80 字まで）
     verdict: false-positive
     note: an article of a statute quoted verbatim in an excerpt
   - rule: numbering-gap
-    line: 95
+    line: 99
     text: 第40条 次に掲げる者は、政令で定める場合を除くほか、実費を勘案して政令で定める
     message: 「第9条」の次が「第40条」です（10 番目のはず）
     verdict: false-positive
     note: a statute excerpt (抜粋) quotes articles 7, 9 and 40 only
   - rule: number-style-consistency
-    line: 117
+    line: 121
     text: 二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額の合計額
     message: 数え方の数を「二件」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive
     note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
   - rule: number-style-consistency
-    line: 117
+    line: 121
     text: 二千四百円に書面一枚につき八百円（二件以上を一の書面でする場合にあっては、一件ご
     message: 数え方の数を「二千四百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive
     note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
   - rule: number-style-consistency
-    line: 117
+    line: 121
     text: 八百円（二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額
     message: 数え方の数を「八百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive

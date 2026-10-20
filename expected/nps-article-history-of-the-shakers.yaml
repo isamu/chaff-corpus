@@ -6,13 +6,13 @@ findings:
     text: " - without need from a Church, priest or"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen stands in for a dash"
+    note: a spaced hyphen stands in for a dash
   - rule: oxford-comma-consistency
     line: 13
     text: Early Quakers taught that direct knowled
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-    note: "no serial comma here, where the article's other lists (Northeast, Ohio, and Kentucky) have one"
+    note: no serial comma here, where the article's other lists (Northeast, Ohio, and Kentucky) have one
   - rule: max-paragraph-length
     line: 19
     text: Ann Lee was born the daughter of a black
@@ -29,29 +29,29 @@ findings:
     message: The quote mark " here, where the document usually writes “” (4 of 8)
     verdict: correct
   - rule: quote-style-consistency
-    line: 27
+    line: 29
     text: '" They allowed contact with outsiders. M'
     message: The quote mark " here, where the document usually writes “” (4 of 8)
     verdict: correct
   - rule: quote-style-consistency
-    line: 27
+    line: 29
     text: '"the World." They allowed contact with o'
     message: The quote mark " here, where the document usually writes “” (4 of 8)
     verdict: correct
   - rule: list-item-form-mix
-    line: 35
+    line: 39
     text: Shakers Compendium of the origin, Histor
     message: "\"Shakers Compendium of the origin, History, principles, Rules and Regulations, Government, and Doctrines of the United Society of Believers in Christ's Second Appearing with Biographies of Ann Lee, William Lee, Jas.\" is a sentence; the other items in this list are phrases (1 of 4)"
     verdict: false-positive
-    note: "a book title in a source list; the abbreviation Jas. (James) is read as the end of a sentence"
+    note: a book title in a source list; the abbreviation Jas. (James) is read as the end of a sentence
   - rule: oxford-comma-consistency
-    line: 35
+    line: 39
     text: Shakers Compendium of the origin, Histor
     message: This list punctuates differently from the rest (2 in this document)
     verdict: false-positive
-    note: "the serial comma belongs to a book title quoted in the source list, not to the article's own prose"
+    note: the serial comma belongs to a book title quoted in the source list, not to the article's own prose
   - rule: quote-style-consistency
-    line: 35
+    line: 39
     text: "'s Second Appearing with Biographies of"
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 3)
     verdict: correct

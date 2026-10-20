@@ -22,6 +22,8 @@ They make sure you’ll get your deposit back if you:
 
 Your landlord or letting agent must put your deposit in the scheme within 30 days of getting it.
 
+<!-- http://www.depositprotection.com/ http://www.mydeposits.co.uk/ https://www.tenancydepositscheme.com/ -->
+
 ## If you’re in Scotland or Northern Ireland
 
 There are separate TDP schemes in Scotland and Northern Ireland. Find out about:
@@ -69,6 +71,8 @@ Find out about call charges.
 
 Deposit Protection Service
 Telephone: 0330 303 0030
+
+<!-- https://www.mydeposits.co.uk/tenant/ https://www.tenancydepositscheme.com/is-my-deposit-protected.html https://www.depositprotection.com/im-a-tenant/id-like-some-renting-guidance/where-s-my-deposit/ -->
 
 ## Getting your deposit back
 
@@ -123,6 +127,8 @@ The TDP scheme will refund your deposit if the dispute resolution service agrees
 
 There may be a limit on the time you have to raise a dispute. Contact the TDP scheme as soon as possible.
 
+<!-- https://www.tenancydepositscheme.com/ http://www.depositprotection.com/ http://www.mydeposits.co.uk/ -->
+
 ## If your deposit is not held by an approved TDP scheme
 
 You may be able to apply to your local county court to get your deposit back if your deposit was not protected by an approved TDP scheme.
@@ -136,3 +142,5 @@ You can get more help and advice from:
 - your local Citizens Advice office
 - a solicitor or advice agency
 - Shelter in England or Shelter in Wales
+
+<!-- http://www.citizensadvice.org.uk/index/getadvice.htm#searchbox/ http://www.lawsociety.org.uk/choosingandusing/findasolicitor.law https://england.shelter.org.uk/housing_advice/tenancy_deposit_protection_rules https://sheltercymru.org.uk/housing-advice/paying-for-housing/security-deposits/security-deposit-protection-schemes/ -->

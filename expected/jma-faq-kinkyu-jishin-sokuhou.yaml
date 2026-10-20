@@ -48,49 +48,49 @@ findings:
     message: 「又は」と書いています（この文書はふつう「または」と書く語です。6 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: demonstrative-opener-run
-    line: 37
+    line: 39
     text: このことから、緊急地震速報についても、ニュース速報と同様に、緊急地震速報を放送等
     message: 「この」など、指示語で始まる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
-    line: 37
+    line: 39
     text: テレビやラジオなどのニュース速報では、特定の音を発した後、文字や音声で内容を伝え
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 39
+    line: 41
     text: なお、本件は、工場等においてこのチャイム音が聞こえにくい等、その施設での対応状況
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: unjudged
   - rule: clause-chain
-    line: 45
+    line: 47
     text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: unjudged
   - rule: max-kanji-continuous
-    line: 45
+    line: 47
     text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
     message: 「東北地方太平洋沖地震」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: 「東北地方太平洋沖地震」は気象庁が定めた地震の名前
   - rule: topic-predicate-distance
-    line: 45
+    line: 47
     text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 51
+    line: 53
     text: 5～10回程度）発表されます。
     message: 半角の「5」と書いています（この文書はふつう全角の「５」。15 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: max-kanji-continuous
-    line: 52
+    line: 54
     text: 「緊急地震速報（警報）」は、特に強い地震が発生した場合（最大震度が５弱以上または
     message: 「最大長周期地震動階級」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: 「最大長周期地震動階級」は気象庁の用語
   - rule: max-kanji-continuous
-    line: 67
+    line: 69
     text: このことから、地震動予報許可事業者には、個々の予測を利用していただく方々との間で
     message: 「地震動予報許可事業者」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive

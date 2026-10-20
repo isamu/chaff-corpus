@@ -6,6 +6,8 @@ CHAPTER 47 - FRAUD AND FALSE STATEMENTS
 Sec. 1030 - Fraud and related activity in connection with computers
 From the U.S. Government Publishing Office, www.gpo.gov
 
+<!-- http://www.gpo.gov -->
+
 ### §1030. Fraud and related activity in connection with computers
 
 (a) Whoever—

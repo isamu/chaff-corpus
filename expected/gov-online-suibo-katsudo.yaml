@@ -11,7 +11,7 @@ findings:
     text: 21.8％）減少しています。また、団員全体に占める60歳以上の比率は、平成15年
     message: 「21.8%」と書いていますが、二つの値からは 78.2% です
     verdict: false-positive
-    note: "21.8% is the rate of the decrease (205,087 of 940,444); chaff compares it with the ratio of the two counts (78.2%)"
+    note: 21.8% is the rate of the decrease (205,087 of 940,444); chaff compares it with the ratio of the two counts (78.2%)
   - rule: repeated-sentence-ending
     line: 32
     text: しかし、水防団（消防団）員の数は年々減少しており、水防技術の伝承や地域の防災力の
@@ -22,34 +22,34 @@ findings:
     text: このため、愛媛県大洲市・西予市・内子町の各水防団と国土交通省が連携し、一般財団法
     message: 「一般財団法人河川情報」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
-    note: "the official name of an organisation (一般財団法人河川情報センター); it cannot be split"
+    note: the official name of an organisation (一般財団法人河川情報センター); it cannot be split
   - rule: max-kanji-continuous
     line: 50
     text: 令和7年（2025年）5月24日に大阪市の淀川河川敷で実施された「淀川水防・大阪
     message: 「大阪府地域防災総合演習」は漢字が 11 字続いています（8 字まで）
     verdict: false-positive
-    note: "the official name of an exercise, quoted in 「」"
+    note: the official name of an exercise, quoted in 「」
   - rule: max-sentence-length
     line: 50
     text: 令和7年（2025年）5月24日に大阪市の淀川河川敷で実施された「淀川水防・大阪
     message: この文は 161 文字あります（160 文字まで）
     verdict: correct
-    note: "one character over the limit"
+    note: one character over the limit
   - rule: max-kanji-continuous
     line: 52
     text: 「令和7年度淀川水防・大阪府地域防災総合演習」で行われた訓練の様子
     message: 「大阪府地域防災総合演習」は漢字が 11 字続いています（8 字まで）
     verdict: false-positive
-    note: "the official name of an exercise, quoted in 「」, in a photo caption"
+    note: the official name of an exercise, quoted in 「」, in a photo caption
   - rule: max-kanji-continuous
-    line: 95
+    line: 97
     text: 令和元年（2019年）に発生した台風19号（令和元年東日本台風）では、堤防が決壊
     message: 「令和元年東日本台風」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
-    note: "the official name of a typhoon (令和元年東日本台風)"
+    note: the official name of a typhoon (令和元年東日本台風)
   - rule: max-kanji-continuous
-    line: 97
+    line: 99
     text: 追加された約15,000河川については、令和7年度（2025年度）末までに、洪水
     message: 「洪水浸水想定区域図」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
-    note: "洪水浸水想定区域図 is a term of the 水防法; it cannot be reworded"
+    note: 洪水浸水想定区域図 is a term of the 水防法; it cannot be reworded

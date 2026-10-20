@@ -12,5 +12,5 @@ license:
   url: https://www.nasa.gov/nasa-brand-center/images-and-media/
   note: "Public domain (work of the US federal government, NASA; NASA Images and Media Usage Guidelines https://www.nasa.gov/nasa-brand-center/images-and-media/: NASA content is generally not subject to copyright in the United States; NASA should be acknowledged as the source); Source: NASA (https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-black-hole-grades-5-8/); converted to Markdown; images are not included"
 redistribute: true
-sha256: 2fa216a294ea641a817680fbe7f51790d4c263f6dd727966ad33201e0d2beccc
-notes: "An explainer in NASA's \"NASA Knows\" series for students, signed by the NASA STEM Team. The source is html; the text is source.format html converted by scripts/lib/source-format.ts (the converter of isamu/chaff-corpus#60). The page's links are not kept by the converter, so the text has none."
+sha256: cfe28fb4fa2016c95e03743906fe75741c228c6b9d2e9da4a4072ec1edce3dfc
+notes: "An explainer in NASA's \"NASA Knows\" series for students, signed by the NASA STEM Team. The source is html; the text is source.format html converted by scripts/lib/source-format.ts. The addresses a section links to are kept in one <!-- … --> comment closing it (isamu/lab#1711); the link texts stay as they read."

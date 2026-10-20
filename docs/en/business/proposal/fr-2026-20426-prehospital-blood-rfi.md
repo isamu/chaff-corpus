@@ -9,6 +9,8 @@ Document headings vary by document type but may contain the following:
 
 See the Document Drafting Handbook for more details.
 
+<!-- https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf#page=9 -->
+
 ###### National Highway Traffic Safety Administration
 
 - [Docket No. NHTSA-2026-2113]
@@ -41,6 +43,8 @@ Instructions: Regardless of how you submit your comments, you must include the d
 
 Privacy Act: In accordance with 5 U.S.C. 553(c), DOT solicits comments from the public to inform its decision-making process. DOT posts these comments, without editing, including any personal information the commenter provides, to http://www.regulations.gov, as described in the system of records notice (DOT/ALL-14 FDMS), which can be reviewed at https://www.transportation.gov/​privacy. ( printed page 63651) Anyone is able to search the electronic form of all comments received into any of our dockets by the name of the individual submitting the comment (or signing the comment, if submitted on behalf of an association, business, labor union, etc.). You may review DOT's complete Privacy Act Statement in the Federal Register published on April 11, 2000 (65 FR 19477-78).
 
+<!-- http://www.regulations.gov http://www.regulations.gov https://www.govinfo.gov/link/uscode/5/553 http://www.regulations.gov https://www.transportation.gov/privacy -->
+
 # FOR FURTHER INFORMATION CONTACT:
 
 Office of Emergency Medical Services, National Highway Traffic Safety Administration, U.S. Department of Transportation, 1200 New Jersey Avenue SE, Washington, DC 20590; email: FICEMS@dot.gov.
@@ -54,6 +58,8 @@ FICEMS was created (42 U.S.C. 300d-4) by the Secretaries of Transportation, Heal
 Severe hemorrhage remains a leading cause of preventable death following traumatic injury. To address systemic challenges and improve clinical outcomes nationwide, FICEMS is prioritizing the implementation of prehospital blood transfusion in its strategic planning process. By focusing national efforts on this critical clinical intervention, FICEMS aims to support EMS systems in preventing up to 10,000 deaths annually and achieving a 5% reduction in overall mortality from severe bleeding by 2028.
 
 On June 11, 2025, FICEMS convened a national Prehospital Blood Transfusion Summit in Washington, DC, bringing together nearly 900 in-person and virtual stakeholders across EMS, 911 dispatch, trauma surgery, blood banking, public health, and regulatory entities.
+
+<!-- https://www.govinfo.gov/link/uscode/42/300d-4 -->
 
 ## II. Questions Regarding Nationwide Implementation of Prehospital Blood Transfusion
 
@@ -102,3 +108,5 @@ Acting Associate Administrator, Research and Program Development.
 [FR Doc. 2026-20426 Filed 10-5-26; 8:45 am]
 
 BILLING CODE 4910-59-P
+
+<!-- https://www.govinfo.gov/link/uscode/42/300d-4 https://www.govinfo.gov/link/uscode/44/3506 https://www.govinfo.gov/link/uscode/23/403 https://www.ecfr.gov/current/title-49/section-1.95 https://www.ecfr.gov/current/title-49/section-501.8 -->

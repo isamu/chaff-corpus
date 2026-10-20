@@ -42,6 +42,8 @@ This notice gives guidance on the records you must keep if you’re registered f
 
 Further information is also available in VAT guide (Notice 700).
 
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
+
 ### 1.2 Changes to this notice
 
 The changes to this notice are to:
@@ -58,6 +60,8 @@ This notice explains the record-keeping rules for VAT. Many records kept for VAT
 From time to time we’ll visit you, usually at your main place of business. We’ll normally specify which records we want to see ahead of a visit and those records must be available.
 
 You can find further information on general compliance checks in factsheet CC/FS1a.
+
+<!-- https://www.gov.uk/government/publications/general-information-about-compliance-checks-ccfs1a -->
 
 ## 2. Record-keeping rules for all VAT-registered businesses
 
@@ -104,6 +108,8 @@ Generally, you must keep all your business records for VAT purposes for at least
 
 If the 6-year rule causes you serious storage problems or undue expense, or you need advice on records for other types of tax, then you should consult VAT general enquiries. We may be able to allow you to keep some records for a shorter period.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries -->
+
 ## 3. VAT invoices — the basics
 
 ### 3.1 Explanation of a VAT invoice
@@ -132,6 +138,8 @@ Electronic invoicing offers many advantages over paper invoicing. Electronic tra
 - security and easier dispute handling
 
 See Electronic invoicing (VAT Notice 700/63) for information on the rules which apply to electronic invoicing.
+
+<!-- https://www.gov.uk/government/publications/vat-notice-70063-electronic-invoicing -->
 
 ## 4. VAT invoices — detailed rules
 
@@ -202,6 +210,8 @@ You do not always have to issue a VAT invoice to a registered person if:
 - you sell goods under one of the VAT second-hand margin schemes — you can find out more about VAT Margin Schemes
 - your invoice is only for exempt or zero-rated sales within the UK
 
+<!-- https://www.gov.uk/guidance/self-billing-notice-70062 https://www.gov.uk/government/publications/vat-notice-708-buildings-and-construction https://www.gov.uk/vat-margin-schemes -->
+
 ### 4.7 Payment in cash when a VAT invoice has been issued
 
 Your customer may need a receipt for the cash payment under the VAT rules that allow cash accounting rather than invoice accounting. If asked, you must give your customer a receipt for the amount and date it.
@@ -241,6 +251,8 @@ You may need to make an adjustment to your VAT account if you:
 - have to make a partial exemption or capital goods scheme adjustment
 - make a claim for bad debt relief
 - correct a net error made on previous returns — see How to correct VAT errors and make adjustments or claims (VAT Notice 700/45)
+
+<!-- https://www.gov.uk/government/publications/vat-notice-70045-how-to-correct-vat-errors-and-make-adjustments-or-claims -->
 
 ## 6. Keeping digital and original records
 
@@ -287,6 +299,8 @@ The time of supply is the date you must declare output tax on. This is generally
 
 Where more than one supply is recorded on an invoice and those supplies are within the same VAT period and are charged at the same rate of VAT, you can record them as a single entry.
 
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
+
 ### Example 1
 
 You sold 10 standard-rated items and 15 zero-rated items on a single invoice. You only need to record the total figures for each of the VAT rates.
@@ -310,6 +324,8 @@ The following rule has the force of law:
 Where you need to apportion the output tax due on a mixed-rate supply with a single inclusive price, you do not need to record these supplies separately. You can record the total value and the total output tax due.
 
 Not all software will allow you to record a rate of VAT other than the standard, reduced, zero or exempt. If this is the case, this mixed supply should be recorded as either one standard-rated supply and one zero-rated supply, or you can record the sale at one rate and correct the VAT through an adjustment at the end of the period. You’ll also need to do this if you’re using a margin scheme or the Flat Rate Scheme.
+
+<!-- https://www.gov.uk/government/publications/vat-notice-70012-filling-in-your-vat-return -->
 
 ### Example 3
 
@@ -354,6 +370,8 @@ This relaxation only varies the requirements on maintaining records using functi
 
 Find more information on supplies made by or through agents in VAT guide (VAT Notice 700).
 
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
+
 ### Example 1
 
 A business uses a letting agent to rent out a number of properties. Each month the letting agent provides a summary of the rents collected and VAT charged. The business can treat all supplies covered in this summary document as if they were covered by a single sales invoice, rather than treating each invoice issued on their behalf separately. They can group transactions together, as long as they’re within the same VAT period and are charged at the same rate of VAT.
@@ -384,6 +402,8 @@ See paragraph 7.10 of this notice for information on adjustments.
 
 Where an invoice includes supplies with different times of supply within the same VAT period, you may record all supplies on the invoice as being at the same date.
 
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
+
 ### Example 1
 
 A business uses cash accounting and has paid the amounts on the invoice over 3 months. Two of the months are in the same VAT period so can be recorded together. The payments relating to the other month must be recorded separately. The precise manner of recording the information in different periods will depend on the software. This could be done by splitting the amounts out, or the software may allow one line to show different periods for the VAT to be recorded.
@@ -395,6 +415,8 @@ The following rule has the force of law:
 Where you’re claiming input tax on an employee’s or volunteer’s expenses, and that individual provides the combined value of more than one purchase, you do not have to record each purchase separately. You can record the total value and the total input tax allowable.
 
 Find more information on subsistence and the effect on input tax claims in VAT guide (VAT Notice 700).
+
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
 
 ### 7.5 Use of supplier statements
 
@@ -429,6 +451,8 @@ Where a third party agent makes purchases on your behalf, those purchases do not
 This only relaxes the requirements on maintaining records using functional compatible software. It does not change any other record keeping requirements set out in VAT legislation.
 
 Find more information about supplies made by or through agents in VAT guide (VAT Notice 700).
+
+<!-- https://www.gov.uk/guidance/vat-guide-notice-700 -->
 
 ### 7.8 Charity fundraising events
 
@@ -488,11 +512,15 @@ The following rule has the force of law:
 
 Where a business makes an error correction using method 2, they’re not required to amend the input tax claimed or output tax charged recorded in the digital record of the supply.
 
+<!-- https://www.gov.uk/government/publications/vat-notice-70045-how-to-correct-vat-errors-and-make-adjustments-or-claims -->
+
 ### Example 1
 
 A business notices an error in its records. The total value of the error is £65,000, so the business must correct it using error correction method 2 (as detailed in paragraph 4.4 in How to correct VAT errors and make adjustments or claims (VAT Notice 700/45)). The business does not have to make any changes in its functional compatible software, but must keep all records as normal.
 
 This only relaxes the requirements on maintaining records using functional compatible software. It does not change any other record keeping requirements set out in VAT legislation.
+
+<!-- https://www.gov.uk/government/publications/vat-notice-70045-how-to-correct-vat-errors-and-make-adjustments-or-claims -->
 
 ### 7.12 Retail schemes
 
@@ -501,6 +529,8 @@ The following rule has the force of law:
 In addition to the records listed in paragraph 7.1, if you account for VAT using a retail scheme, you must keep a digital record of your daily gross takings (DGT). You’re not required to keep a separate record of the supplies that make up your DGT within functional compatible software.
 
 Find more information on retail schemes and DGT in Retail schemes (VAT Notice 727).
+
+<!-- https://www.gov.uk/guidance/retail-schemes-notice-727 -->
 
 ### 7.13 Flat rate Scheme
 
@@ -516,6 +546,8 @@ If your software does not include a Flat Rate Scheme setting, and does not allow
 Alternatively, you can record the sale at one rate and correct the VAT through an adjustment at the end of the period. HMRC also allows you to use this method to correct the VAT on a mixed supply.
 
 Find more information on the Flat Rate Scheme for small businesses (VAT Notice 733).
+
+<!-- https://www.gov.uk/government/publications/vat-notice-733-flat-rate-scheme-for-small-businesses/vat-notice-733-flat-rate-scheme-for-small-businesses -->
 
 ### 7.14 Gold Special Accounting Scheme
 
@@ -538,6 +570,8 @@ These records must still be maintained in some format, but do not need to be in 
 If you do keep a digital record, and your software does not allow you to record the VAT on the margin, you’ll need to record the supply as either one standard-rated supply and one zero-rated supply. Alternatively, you can record the sale at one rate and correct the VAT through an adjustment at the end of the period. HMRC will also allow you to use the same method to correct the VAT on a mixed supply.
 
 Find more information on VAT Margin Schemes.
+
+<!-- https://www.gov.uk/vat-margin-schemes -->
 
 ## 8. Digital record-keeping
 
@@ -576,6 +610,8 @@ Some software programs will not be able to perform all of these functions by the
 The complete set of digital records does not have to be held in one place or in one program. Digital records can be kept in a range of compatible digital formats. Taken together, these form the digital records for the VAT registered entity.
 
 Functional compatible software recognised by HMRC can be found in compatible software for Making Tax Digital for VAT.
+
+<!-- https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-vat -->
 
 ## 10. Digital links
 
@@ -949,9 +985,13 @@ You should continue filing VAT Returns the way you usually do if:
 - you’re waiting for HMRC to make a decision on an exemption request or an appeal after being rejected for exemption
 - HMRC have told you that you’re exempt from Making Tax Digital
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries https://www.gov.uk/tax-appeals/decision -->
+
 ## Your rights and obligations
 
 Read the HMRC Charter to find out what you can expect from us and what we expect from you.
+
+<!-- https://www.gov.uk/government/publications/hmrc-charter -->
 
 ## Help us improve this notice
 
@@ -961,12 +1001,18 @@ You’ll need to include the full title of this notice. Do not include any perso
 
 If you need general help with this notice or have another VAT question you should phone our VAT: general enquires helpline or make a VAT enquiry online.
 
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries https://www.tax.service.gov.uk/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47 -->
+
 ## Putting things right
 
 If you’re unhappy with our service, contact the person or office you have been dealing with. They’ll try to put things right.
 
 If you’re still unhappy, find out how to complain to HMRC.
 
+<!-- https://www.gov.uk/complain-about-hmrc -->
+
 ## How we use your information
 
 Find out how HMRC uses the information we hold about you.
+
+<!-- https://www.gov.uk/government/organisations/hm-revenue-customs/about/personal-information-charter -->

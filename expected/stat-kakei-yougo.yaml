@@ -68,33 +68,33 @@ findings:
     verdict: false-positive
     note: a fixed statistical term (年齢階級別消費支出額) that cannot be split
   - rule: no-doubled-joshi
-    line: 185
+    line: 187
     text: の季節調整値の計算の際に、当該年の12月までのデータから計算される季節指数を用い
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 189
+    line: 191
     text: ※　季節調整法の変更について（PDF：277KB）（家計調査の結果を見る際のポイ
     message: この文は 184 文字あります（140 文字まで）
     verdict: false-positive
     note: link lines without 。 are joined to the following lines and counted as one long sentence
   - rule: max-sentence-length
-    line: 196
+    line: 198
     text: 家計消費指数は、家計消費の動向をより安定的に把握するため、家計調査結果のうち購入
     message: この文は 142 文字あります（140 文字まで）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 196
+    line: 198
     text: 家計消費指数は、家計消費の動向をより安定的に把握するため、家計調査結果のうち購入
     message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 200
+    line: 202
     text: "※　家計消費指数は、2018年1月分から公表している消費動向指数（CTI: Co"
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: correct
   - rule: orthographic-variant
-    line: 202
+    line: 204
     text: 持ちでない方は、バナーのリンク先から無料ダウンロードしてください。
     message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
