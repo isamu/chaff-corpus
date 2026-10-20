@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/markup-text.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/markup-text.ts (4baffd59); a fetched text must convert exactly as when it was judged.
 // What the wikitext and HTML converters share: character references turned back into characters, and the blank
 // lines and trailing spaces a converter leaves behind tidied away. Pure.
 import { characterEntities } from "character-entities";

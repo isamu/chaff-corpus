@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-content-block.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-content-block.ts (4baffd59); a fetched text must convert exactly as when it was judged.
 // The content of a page that marks none (no <main>, no role="main", no sole <article>): the innermost block that
 // holds every heading (the <h1> title among them) and nearly all the text written in sentences. A site's menus, side columns and footer are
 // labels and links, not sentences, so they fall outside; when the sentences are spread over blocks, no block

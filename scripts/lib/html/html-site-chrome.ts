@@ -1,4 +1,5 @@
-// Not in isamu/lab yet: the site's own chrome around a page, read from what the markup says a block is rather than from
+// Copied from isamu/lab text/packages/chaff/src/html/html-site-chrome.ts (4baffd59); a fetched text must convert exactly as when it was judged.
+// The site's own chrome around a page, read from what the markup says a block is rather than from
 // any site's wording. A landmark role (banner, search, contentinfo), a <search> element, a <header> that belongs to the
 // page rather than to a section, and a block named by a convention CMSs share: a breadcrumb trail (breadcrumb, pankuzu,
 // topicpath), a search box, the header or footer block (id or class exactly "header" or "footer"), and the U.S.
