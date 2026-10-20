@@ -1,0 +1,57 @@
+id: zenn-kaityo256-github-lecture-note
+chaff: 0.36.0
+findings:
+  - rule: max-paragraph-length
+    line: 21
+    text: 昔から大学の講義ノートを公開する人は結構多いです。最初期は、LaTeXで書いてP
+    message: この段落は 9 文あります（5 文まで）
+    verdict: correct
+    note: "九文の段落、述べたとおり"
+  - rule: double-negative
+    line: 42
+    text: ただし、LaTeXのように数式に番号をつけて参照したり、図のサイズを指定したりは
+    message: 「なくはありません」は二重否定です
+    verdict: correct
+    note: "「できなくはありませんが」は二重否定で、「できますが」で足りる"
+  - rule: clause-chain
+    line: 69
+    text: GitHub Actionsを使って自動化しても良いのですが、とりあえずローカル
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+    note: "節が六つつながる一文"
+  - rule: no-doubled-joshi
+    line: 73
+    text: の最初の三回分のディレクトリ構造は以下のようになっています。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "「「ゼロから学ぶPython」の最初の三回分の」で「の」が三つ続く"
+  - rule: orthographic-variant
+    line: 96
+    text: 付けています。こんな感じです。
+    message: 「付ける」と書いています（この文書はふつう「つける」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "「貼り付ける」は別の複合語で、「つける」の表記ゆれではない"
+  - rule: topic-predicate-distance
+    line: 196
+    text: オプションは適当にいじって望むPDFが出るようにしましたが、コード部分の背景を灰
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: correct
+    note: "主題から述語まで遠い"
+  - rule: clause-chain
+    line: 232
+    text: さて、教科書を読んでいて誤植を見つけた時、著者を調べ、著者の所属を調べ、著者のメ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: "「著者を調べ、所属を調べ、メールアドレスを調べ」は手順を並べた意図的な列挙で、読みにくい連鎖ではない"
+  - rule: repeated-conjunction
+    line: 234
+    text: 一方、GitHubに講義ノートが公開されていれば、明らかな誤植を見つけた時はさく
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: correct
+    note: "「また、」「さて、」「一方、」と接続詞で始まる段落が三つ続く"
+  - rule: closing-cliche
+    line: 244
+    text: 僕の講義ノートそのものだけでなく、講義ノートを書くノウハウが誰かの参考になれば幸
+    message: 「参考になれば幸いです」で締めています
+    verdict: correct
+    note: "「参考になれば幸いです」で締めている"

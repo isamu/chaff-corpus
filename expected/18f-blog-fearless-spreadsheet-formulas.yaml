@@ -1,0 +1,69 @@
+id: 18f-blog-fearless-spreadsheet-formulas
+chaff: 0.36.0
+findings:
+  - rule: contraction-consistency
+    line: 19
+    text: Reference to any non-federal entity does
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: false-positive
+    note: "the GSA non-endorsement disclaimer at the top is standard boilerplate, not the author's prose, which uses contractions"
+  - rule: unqualified-superlative
+    line: 23
+    text: This would mean that spreadsheets are th
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "the comparison set is named (programming systems in the world)"
+  - rule: unqualified-superlative
+    line: 25
+    text: If spreadsheet formulas are the most pro
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "the set is named (government code), carried over from the sentence before"
+  - rule: empty-table-cell
+    line: 58
+    text: ""
+    message: The "C" column is blank in this row only
+    verdict: false-positive
+    note: "the table pictures a spreadsheet, and row 3 is an empty spreadsheet row on purpose"
+  - rule: empty-table-cell
+    line: 58
+    text: "| |"
+    message: The "B" column is blank in this row only
+    verdict: false-positive
+    note: "the table pictures a spreadsheet, and row 3 is an empty spreadsheet row on purpose"
+  - rule: empty-table-cell
+    line: 58
+    text: "| | |"
+    message: The "A" column is blank in this row only
+    verdict: false-positive
+    note: "the table pictures a spreadsheet, and row 3 is an empty spreadsheet row on purpose"
+  - rule: sentence-initial-so
+    line: 98
+    text: So, let's add a pre-condition that preve
+    message: 2 sentences open with "So," (1 needed)
+    verdict: correct
+    note: "sentences open with 'So,' as stated; a conversational tic"
+  - rule: sentence-initial-so
+    line: 291
+    text: So, on day 3 in the above table, we'd ex
+    message: 2 sentences open with "So," (1 needed)
+    verdict: correct
+    note: "sentences open with 'So,' as stated; a conversational tic"
+  - rule: code-fence-language-mix
+    line: 293
+    text: "```"
+    message: This code block names no language, unlike the others (22 blocks name one)
+    verdict: false-positive
+    note: "the block is the expected output (plain text), not code; no language applies to it"
+  - rule: comparative-without-baseline
+    line: 299
+    text: better. So if you have a complex problem
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: "'simpler is better' is a maxim; the baseline (more complex formulas) is the subject of the passage"
+  - rule: unqualified-superlative
+    line: 345
+    text: We can trust the body of the code to be
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "the set is named (the parts of the formula: the body and the lambdas)"

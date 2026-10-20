@@ -715,3 +715,6 @@
 - id: mext-shochu-news-516
   match: "042-307-1686"
   reason: an office's or event secretariat's published phone number, given in the ministry's mail magazine as the contact for an item
+- id: zenn-kaityo256-objects-of-git
+  match: "kaityo256@example.com"
+  reason: a placeholder in the document's own example (git config user.email in a sample repository), not a real address

@@ -1,0 +1,75 @@
+id: zenn-kaityo256-objects-of-git
+chaff: 0.36.0
+findings:
+  - rule: katakana-density
+    line: 11
+    text: Gitのインデックスの中身](https://zenn.dev/kaityo25
+    message: カタカナ語が 1000 字あたり 58 語あります（55 語まで）。多いのは「オブジェクト、タグ、コミット」です
+    verdict: false-positive
+    note: "カタカナ語は Git の用語そのもの（オブジェクト、タグ、コミット）で、言い換える語がない"
+  - rule: no-mixed-desumasu
+    line: 30
+    text: "[^blob]: [Binary Large OBjectsの略](https:"
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: correct
+    note: "脚注の一文だけ「らしい。」で終わり、本文は です・ます"
+  - rule: ngram-repetition
+    line: 54
+    text: 見てみましょう。
+    message: 「見てみましょう。」が 15 回出てきます（5 回まで）
+    verdict: correct
+    note: "「見てみましょう。」が何度も繰り返される"
+  - rule: image-file-name-alt
+    line: 157
+    text: "![commit.png](https://github.com/kaityo2"
+    message: 画像の代替テキスト「commit.png」はファイルの名前です
+    verdict: correct
+    note: "代替テキストがファイル名（commit.png）のまま"
+  - rule: image-file-name-alt
+    line: 263
+    text: "![tree.png](https://github.com/kaityo256"
+    message: 画像の代替テキスト「tree.png」はファイルの名前です
+    verdict: correct
+    note: "代替テキストがファイル名（tree.png）のまま"
+  - rule: orthographic-variant
+    line: 331
+    text: 付けてみましょう。`git tag`で、タグ名だけを指定すると軽量タグになります
+    message: 「付ける」と書いています（この文書はふつう「つける」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: "「付ける」と「つける」が混ざっている"
+  - rule: orthographic-variant
+    line: 337
+    text: 出来たタグは、直接コミットオブジェクトを指しています。タグの実体は`.git/r
+    message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。17 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「出来た」だけ漢字で、ほかは「できる」と書いている"
+  - rule: orthographic-variant
+    line: 346
+    text: 付けると、注釈付きタグが作られます。
+    message: 「付ける」と書いています（この文書はふつう「つける」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: "「付ける」と「つける」が混ざっている"
+  - rule: orthographic-variant
+    line: 371
+    text: 付けた人の情報やタグをつけた時のメッセージが含まれていることがわかります。
+    message: 「付ける」と書いています（この文書はふつう「つける」と書く語です。11 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: "同じ文に「タグを付けた」と「タグをつけた」がある"
+  - rule: image-file-name-alt
+    line: 373
+    text: "![tag.png](https://github.com/kaityo256/"
+    message: 画像の代替テキスト「tag.png」はファイルの名前です
+    verdict: correct
+    note: "代替テキストがファイル名（tag.png）のまま"
+  - rule: tari-unpaired
+    line: 434
+    text: たり、treeオブジェクトがディレクトリと対応していたりと、非常に素直な実装にな
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: false-positive
+    note: "「…であったり、…対応していたりと」で「たり」は対になっている"
+  - rule: clause-chain
+    line: 436
+    text: 中身が理解できたからといって特にGitの利用に役に立つわけではありませんが、「な
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: correct
+    note: "節が六つつながる一文"

@@ -1,0 +1,88 @@
+id: wikivoyage-ja-seichi-junrei
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    sha256: 294290f291f3acbe76eb6e6055373b000e262160421c4236a864bae43b5885f3
+    verdict: false-positive
+    note: "旅行記事の導入で、数値やリンクを要する主張ではない"
+  - rule: proper-noun-density
+    line: 1
+    sha256: 294290f291f3acbe76eb6e6055373b000e262160421c4236a864bae43b5885f3
+    verdict: false-positive
+    note: "作品名と地名を並べる旅程記事で、固有名詞の多さは内容そのもの"
+  - rule: concrete-evidence-density
+    line: 5
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "「知る」節は聖地という言葉の説明で、数値やリンクは要らない"
+  - rule: concrete-evidence-density
+    line: 8
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "旅の準備の助言で、数値やリンクは要らない"
+  - rule: concrete-evidence-density
+    line: 13
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "extraction artefact: 原文の箇条書きは各作品ページへのリンク（[[...]]）で、wikitext の変換でリンクが外れた"
+  - rule: list-item-form-mix
+    line: 19
+    sha256: 154bd7651af05dbf7480a268044da051f80c1957c2ad898ab6f45c449b24a97b
+    verdict: false-positive
+    note: "作品名（ラブライブ!シリーズ）の「!」は題名の一部で、文の終わりではない"
+  - rule: empty-section
+    line: 25
+    sha256: 35972e6ca23f3deb155162a8cbd57772193e174d6d6d0b3c781ef2d572bac052
+    verdict: correct
+    note: "原文でも見出し「北海道・東北地方」の下に項目がない"
+  - rule: no-em-dash
+    line: 28
+    sha256: 96906fd766beab22dd634209286407b8a3f9d51a2c62e768c3d9844e22cc146f
+    verdict: false-positive
+    note: "「作品名 ― 地名」の区切りとして全項目で使うダッシュで、文中のダッシュの多用ではない"
+  - rule: list-item-form-mix
+    line: 30
+    sha256: d601fb52e82b6f28a67d2a4c53f9f50d81b85eec8087e48d296dcbeaa91d6603
+    verdict: false-positive
+    note: "作品名（やはり俺の青春ラブコメはまちがっている。）の「。」は題名の一部"
+  - rule: list-item-form-mix
+    line: 31
+    sha256: e4b53e4f7a93913c4703e78be9546d9f3e742d3c15644d2529d9d9d3fee2b6d2
+    verdict: false-positive
+    note: "作品名の「!」は題名の一部で、項目はどれも「作品名 ― 地名」"
+  - rule: list-item-form-mix
+    line: 33
+    sha256: 592eed5a0b228291b74a55ddd9fac7cc5269da7319b9db01ee5d0282580cdf08
+    verdict: false-positive
+    note: "作品名（ぼっち・ざ・ろっく!）の「!」は題名の一部"
+  - rule: list-item-form-mix
+    line: 35
+    sha256: 9d40e13ea091b6ac7753edf24b9aca8e5178fc65c9e67aadf77d2a563e196e31
+    verdict: false-positive
+    note: "作品名（Just Because!）の「!」は題名の一部"
+  - rule: concrete-evidence-density
+    line: 64
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "extraction artefact: 地名は原文では各市へのリンク（[[...]]）で、wikitext の変換でリンクが外れた"
+  - rule: concrete-evidence-density
+    line: 69
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "extraction artefact: 地名は原文では各市へのリンク（[[...]]）で、wikitext の変換でリンクが外れた"
+  - rule: concrete-evidence-density
+    line: 75
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "extraction artefact: 地名は原文では各市へのリンク（[[...]]）で、wikitext の変換でリンクが外れた"
+  - rule: list-item-form-mix
+    line: 80
+    sha256: 2e8d0425a856a2fa349fd676b508965e4c042b5618ea894bbbc586712d3e1638
+    verdict: false-positive
+    note: "作品名（男女の友情は成立する?（いや、しないっ!!））の「?」は題名の一部"
+  - rule: concrete-evidence-density
+    line: 91
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    verdict: false-positive
+    note: "旅の締めくくりの助言で、数値やリンクを要する主張ではない"
