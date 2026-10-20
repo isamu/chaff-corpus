@@ -1,0 +1,84 @@
+id: mdn-http-csp-ja
+chaff: 0.36.0
+findings:
+  - rule: ngram-repetition
+    line: 43
+    text: ": [ウェブワーカー](/ja/docs/Web/API/Web_Workers"
+    message: 「の有効なソースを」が 16 回出てきます（5 回まで）
+    verdict: false-positive
+    note: a reference page's directive list repeats one formula ('〜の有効なソースを') by design
+  - rule: no-doubled-joshi
+    line: 43
+    text: の閲覧コンテキストのための有効なソースを定義します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    text: のすべてのフェッチディレクティブの[代替](#代替)となります。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 58
+    text: のコンテンツの閲覧のための有効なソースを指定します。
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 62
+    text: のマニフェストファイルのための有効なソースを指定します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 77
+    text: のインラインイベントハンドラーのための有効なソースを指定します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 96
+    text: のすべてのフェッチディレクティブの代替となります。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 146
+    text: )。
+    message: 丸括弧を、全角で 11 箇所、半角で 5 箇所書いています。この文書には書き方が二通りあります
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 272
+    text: 信頼型は、入力が変換関数を通過することを保証するものであり、その変換によって入力
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: warning-without-action
+    line: 283
+    text: "[!WARNING]"
+    message: この注意書きは危険を述べるだけで、読み手がすることを書いていません
+    verdict: false-positive
+    note: "the warning does say what to do: developers should avoid 'unsafe-eval' (〜を避けるべきです)"
+  - rule: warning-without-action
+    line: 310
+    text: "[!WARNING]"
+    message: この注意書きは危険を述べるだけで、読み手がすることを書いていません
+    verdict: false-positive
+    note: "the warning does say what to do: developers should avoid 'unsafe-inline' (〜を避けるべきです)"
+  - rule: topic-predicate-distance
+    line: 348
+    text: キーワードは、[ノンス](#nonce-ノンス値)または[ハッシュ](#ハッシュ
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 361
+    text: この式がスクリプトやスタイルを制御するディレクティブに含まれ、そのディレクティブ
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+    note: a 146-character sentence
+  - rule: orthographic-variant
+    line: 365
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。17 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 「下さい」 where the page mostly writes 「ください」
+  - rule: orthographic-variant
+    line: 426
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。17 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 「下さい」 where the page mostly writes 「ください」

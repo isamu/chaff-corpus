@@ -1,0 +1,15 @@
+id: gutenberg-dickinson-poems
+title: "Emily Dickinson, Poems: Three Series, Complete (Project Gutenberg #12242)"
+language: en
+genre: literature/poetry
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/12242/pg12242.txt
+  fetched: 2026-10-19
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1890–1896); Project Gutenberg eBook #12242, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: fce8edd840e9407755399807d627e42cbde20eb6960a7a6f1b5da3cfc1e3e8b4
+notes: The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it. Includes the eBook's transcriber's note.

@@ -1,0 +1,165 @@
+id: fr-2026-19271-public-health-data-rfi
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: CFR title and the number of each part th
+    message: '"CFR" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: undefined-acronym
+    line: 8
+    text: RIN which identifies each regulatory act
+    message: '"RIN" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: request-without-deadline
+    line: 36
+    text: Please do not submit comments by email.
+    message: This request says neither who should do it nor by when
+    verdict: false-positive
+    note: a prohibition ('do not submit comments by email'), not a request that needs a deadline
+  - rule: undefined-acronym
+    line: 39
+    text: MS H21-8, Atlanta, GA 30329
+    message: '"MS" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: part of a postal address (mail stop 'MS', street direction 'NE'), not an acronym to expand
+  - rule: undefined-acronym
+    line: 39
+    text: NE, MS H21-8, Atlanta, GA 30329
+    message: '"NE" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: part of a postal address (mail stop 'MS', street direction 'NE'), not an acronym to expand
+  - rule: name-variant
+    line: 45
+    text: Clifton Road NE, MS H21-8, Atlanta, GA 3
+    message: '"Clifton Road" is written "Clifton Rd.", with the place word in another form, elsewhere in the document'
+    verdict: correct
+    note: the same address is written 'Clifton Rd.' in ADDRESSES and 'Clifton Road' here
+  - rule: invisible-character
+    line: 53
+    text: ​data-modernization/​php/​one-cdc-data-p
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 53
+    text: ​one-cdc-data-platform), the agency is c
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 53
+    text: ​Ph.D.s). Through the development of the
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 53
+    text: ​php/​one-cdc-data-platform), the agency
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: max-sentence-length
+    line: 55
+    text: The continued evolution of health inform
+    message: This sentence runs 70 words (limit 45)
+    verdict: correct
+    note: a 70-word sentence
+  - rule: max-paragraph-length
+    line: 65
+    text: Please note that comments received, incl
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: a six-sentence paragraph
+  - rule: max-sentence-length
+    line: 69
+    text: For the purposes of this RFI, CDC define
+    message: This sentence runs 74 words (limit 45)
+    verdict: correct
+    note: a 74-word definition sentence
+  - rule: undefined-acronym
+    line: 69
+    text: RFI, CDC defines a public health data in
+    message: '"RFI" is used without an expansion (5 such acronyms)'
+    verdict: correct
+    note: RFI is never expanded in the notice's prose
+  - rule: max-sentence-length
+    line: 71
+    text: Data intermediaries that already do or p
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence
+  - rule: invisible-character
+    line: 85
+    text: ​_​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​2_​_​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​identi_​2_​_​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​logo/​identi_​2_​_​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​resmgr/​logo/​identi_​2_​_​1_​.pdf).
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​resource/​resmgr/​logo/​identi_​2_​_​1_
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 85
+    text: ​www.cste.org/​resource/​resmgr/​logo/​i
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: max-sentence-length
+    line: 87
+    text: "Question II.B-2: With the proposed layer"
+    message: This sentence runs 62 words (limit 45)
+    verdict: correct
+    note: a 62-word question
+  - rule: request-without-deadline
+    line: 101
+    text: Please provide examples from current pra
+    message: This request says neither who should do it nor by when
+    verdict: false-positive
+    note: a request for comments whose deadline is given once in the notice's DATES section
+  - rule: request-without-deadline
+    line: 103
+    text: Please provide examples from current pra
+    message: This request says neither who should do it nor by when
+    verdict: false-positive
+    note: a request for comments whose deadline is given once in the notice's DATES section

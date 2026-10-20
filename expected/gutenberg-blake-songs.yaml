@@ -1,0 +1,9 @@
+id: gutenberg-blake-songs
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 1021
+    text: "  What can it mean?"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 2)
+    verdict: false-positive
+    note: a mid-line pause inside a verse line, the eBook's verse layout, not prose sentence spacing

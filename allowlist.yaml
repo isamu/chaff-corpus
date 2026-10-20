@@ -505,3 +505,15 @@
 - id: nps-joshua-tree-faqs
   match: "760-367-5500"
   reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: fr-2026-19271-public-health-data-rfi
+  match: "OPHDSTPolicy@cdc.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "MadeInAmerica@omb.eop.gov"
+  reason: a government office's role address, published in the document for the public to write to
+- id: fr-2026-19646-essential-medicines-rfi
+  match: "202-395-1390"
+  reason: a government office's published phone number, given in the notice as its contact
+- id: fr-2026-20426-prehospital-blood-rfi
+  match: "FICEMS@dot.gov"
+  reason: a government office's role address, published in the document for the public to write to
