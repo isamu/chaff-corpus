@@ -1,0 +1,78 @@
+id: wikivoyage-southern-ridges-walk
+chaff: 0.36.0
+findings:
+  - rule: unqualified-superlative
+    line: 4
+    sha256: 92d1b75cb6b4b16c5a839013e5c71b66917978c34965740048f94cc1892ae252
+    verdict: false-positive
+    note: "the comparison set is in the sentence (the results of the country's effort to preserve greenery)"
+  - rule: sentence-spacing-consistency
+    line: 6
+    sha256: ce69cf3729a8a54d3cd7261a418018906425bde9e2b18914b29a1ce3abefa9d1
+    verdict: correct
+    note: "two spaces after a sentence in the source wikitext, where most sentences have one"
+  - rule: unqualified-superlative
+    line: 17
+    sha256: d425c3900528145af03ccb153172ca504dbf1f6c71f3ee2db922cf774ef747a8
+    verdict: false-positive
+    note: "the set is named in the sentence (the access points just mentioned); 'the most common options' is a plain description"
+  - rule: max-sentence-length
+    line: 20
+    sha256: fbfcdaf6d70bac925ab1fecaf931125f03f322d784ce05a466cdcc2f12052269
+    verdict: correct
+    note: "the sentence is over 45 words as stated"
+  - rule: hyphen-as-dash
+    line: 36
+    sha256: 3813df76452ae34bde22e72f8d92a69603e2b50f9cfbaf3b6bdecb18a7b7cc95
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash"
+  - rule: max-sentence-length
+    line: 36
+    sha256: a6b3231acbf9d7964deab6a9a18010595678dd987e8e97344e60204cf839a07c
+    verdict: correct
+    note: "the sentence is over 45 words as stated"
+  - rule: max-sentence-length
+    line: 40
+    sha256: d276a26f0982048c6212e5b78120a3cf625206ffea2d67a0163f9c2f9294c196
+    verdict: correct
+    note: "the sentence is over 45 words as stated"
+  - rule: max-sentence-length
+    line: 42
+    sha256: 994f4210023804946c42b02b3252113c3254908ebb06ff04b03eaa1e231ddf4d
+    verdict: correct
+    note: "the sentence is over 45 words as stated"
+  - rule: spelling-consistency
+    line: 45
+    sha256: 2dccfaf995c6054b9c07c0e3518fa820efc059f045fe08d685c58a2f4906bb4e
+    verdict: correct
+    note: "the page spells harbor/harbour both ways"
+  - rule: heading-echo
+    line: 49
+    sha256: a4220d59a6b83c10b55a43fa4c4b6f5de100c50dbcca9a6b1554d657b8258a8c
+    verdict: correct
+    note: "the first sentence only restates the section heading (Next is Telok Blangah Hill Park.)"
+  - rule: comparative-without-baseline
+    line: 53
+    sha256: b5b9c77f90b4b4d645a4b8b00ec784316cd688c646eddc99d34f436aa38930db
+    verdict: false-positive
+    note: "the baseline is the section before (the Forest Walk), named by 'that follows'"
+  - rule: hyphen-as-dash
+    line: 56
+    sha256: 37f384f824c5ab5b008d822e2e97f0b04065f2646defe65473baefa1c1d816b9
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash (a parenthetical pair)"
+  - rule: hyphen-as-dash
+    line: 56
+    sha256: 3804a4be6f96753a854abdf0918855a31ea47265b07e1bd5d04545e3abc8a1ad
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash (a parenthetical pair)"
+  - rule: hyphen-as-dash
+    line: 62
+    sha256: 9f781ae16b1a0c77e003962088b5a5fc8e551c284d9dba316e35d0e07a6a2d5c
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash"
+  - rule: max-sentence-length
+    line: 62
+    sha256: e2c5ce19466bbc6240b63a022247424bb3eff85d24af54280cd2ffbe77f2eb9a
+    verdict: correct
+    note: "the sentence is over 45 words as stated"

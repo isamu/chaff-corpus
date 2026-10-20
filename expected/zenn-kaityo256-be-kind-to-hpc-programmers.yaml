@@ -1,0 +1,99 @@
+id: zenn-kaityo256-be-kind-to-hpc-programmers
+chaff: 0.36.0
+findings:
+  - rule: no-mixed-desumasu
+    line: 11
+    text: "Q: HPCプログラマの書くコードってなんで古臭いの？"
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: "冒頭の問い（Q: …古臭いの？）は読者の声を口語で引いたもので、本文の調子の混在ではない"
+  - rule: orthographic-variant
+    line: 191
+    text: 様に修正するのは、よほど慣れたプログラマでないと難しいでしょう。そもそもホットス
+    message: 「様」と書いています（この文書はふつう「よう」と書く語です。23 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「上記の様に」だけ漢字で、ほかは「ように」と書いている"
+  - rule: orthographic-variant
+    line: 244
+    text: でません。しかし、ここでVariableクラスの宣言順序を入れ替えてみます。
+    message: 「でる」と書いています（この文書はふつう「出る」と書く語です。11 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「性能がでません」だけ平仮名で、ほかは「出る」と書いている"
+  - rule: orthographic-variant
+    line: 256
+    text: おきないわけで、このような事例を何度も目にしたスパコンプログラマが「なるべくクラ
+    message: 「おきる」と書いています（この文書はふつう「起きる」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「問題はおきない」だけ平仮名で、ほかは「起きる」と書いている"
+  - rule: no-mixed-desumasu
+    line: 347
+    text: しかし、これが数万行もあるコードの一部だったら？性能劣化の原因がranged-b
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: "「…だったら？」は修辞の問いかけで、意図した言い切り"
+  - rule: max-paragraph-length
+    line: 353
+    text: 私が京で最も苦労したのは、「全く同じコードがflat-MPIとハイブリッド実行で
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+    note: "六文の段落、述べたとおり"
+  - rule: no-mixed-desumasu
+    line: 371
+    text: わかるかっ！！！
+    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: false-positive
+    note: "「わかるかっ！！！」は感嘆の独立した一言で、意図した口語"
+  - rule: orthographic-variant
+    line: 379
+    text: ひどい状態だったように思います。ただし、その時には私はすぐに諦めてFortran
+    message: 「ひどい」と書いています（この文書はふつう「酷い」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「ひどい」と「酷い」が混ざっている"
+  - rule: unused-definition
+    line: 381
+    text: 「最近」とは言えませんが、「大昔」とも言えないと思います。にもかかわらず、「なる
+    message: 「最近」を定義していますが、本文で使っていません
+    verdict: false-positive
+    note: "「最近」を鉤括弧で引いて語の意味を論じているだけで、定義ではない"
+  - rule: katakana-long-vowel
+    line: 385
+    text: ベンダは両輪となってHPC環境を良くしていかなければいけません。ユーザは「お客さ
+    message: 「ベンダ」と「ベンダー」が混ざっています（この語は 6 回のうち 1 回が「ベンダ」）
+    verdict: correct
+    note: "「ベンダ」と「ベンダー」が混ざっている"
+  - rule: lookalike-character
+    line: 392
+    text: パイラへの要望について](https://speakerdeck.com/ka
+    message: 「パ」は字と記号が分かれています（U+30CF U+309A）。一字の「パ」と書きます
+    verdict: correct
+    note: "原文の文字が濁点を分けた形（U+3072 U+3099）になっている"
+  - rule: lookalike-character
+    line: 392
+    text: びC++コンパイラへの要望について](https://speakerdeck
+    message: 「び」は字と記号が分かれています（U+3072 U+3099）。一字の「び」と書きます
+    verdict: correct
+    note: "原文の文字が半濁点を分けた形（U+30CF U+309A）になっている"
+  - rule: max-kanji-continuous
+    line: 392
+    text: 短距離古典分子動力学法のSIMD化及びC++コンパイラへの要望について](h
+    message: 「短距離古典分子動力学法」は漢字が 11 字続いています（8 字まで）
+    verdict: false-positive
+    note: "発表資料の題名（リンクの文字列）で、筆者が書き直す地の文ではない"
+  - rule: lookalike-character
+    line: 393
+    text: ドmalloc](https://speakerdeck.com/kaityo
+    message: 「ド」は字と記号が分かれています（U+30C8 U+3099）。一字の「ド」と書きます
+    verdict: correct
+    note: "原文の文字が濁点を分けた形（U+30C8 U+3099）になっている"
+  - rule: orthographic-variant
+    line: 401
+    text: 置かなければなりません。
+    message: 「置く」と書いています（この文書はふつう「おく」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "補助動詞「おく」をここだけ「置く」と書いている"
+  - rule: orthographic-variant
+    line: 403
+    text: なにか処理系に不満があったら、単に遅いとか文句を言うのではなく、「どういう入力に
+    message: 「なに」と書いています（この文書はふつう「何」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「なにか」だけ平仮名で、ほかは「何」と書いている"
