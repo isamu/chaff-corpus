@@ -1,0 +1,67 @@
+id: fed-ca-22-2
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 3
+    text: "### CA 22-2: Interagency Statement on Sp"
+    message: 'The heading "CA 22-2: Interagency Statement on Special Purpose Credit Programs Under the Equal Credit Opportunity Act and Regulation B" runs 18 words (limit 14)'
+    verdict: unjudged
+  - rule: email-greeting-closing
+    line: 5
+    text: BOARD OF GOVERNORS
+    message: The email does not open with a greeting
+    verdict: false-positive
+    note: a memorandum-style regulatory letter with a letterhead, which has no salutation
+  - rule: proper-noun-density
+    line: 5
+    text: BOARD OF GOVERNORS
+    message: 386 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead in capitals (BOARD OF GOVERNORS ...) counted as proper nouns
+  - rule: max-sentence-length
+    line: 16
+    text: "Withdrawn: On August 21, 2026, CA Letter"
+    message: This sentence runs 35 words (limit 18)
+    verdict: unjudged
+  - rule: email-subject-length
+    line: 20
+    text: "SUBJECT:"
+    message: The subject has 112 characters (up to 70)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 26
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 101 words (limit 18)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 26
+    text: CFPB or Bureau), the Department of Housi
+    message: '"CFPB" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: expanded as '(CFPB or Bureau)'; the alias after the acronym hides the expansion
+  - rule: max-sentence-length
+    line: 28
+    text: Accordingly, creditors may consider the
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 28
+    text: On December 7, 2021, HUD released guidan
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 30
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 20 words (limit 18)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 42
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+  - rule: email-greeting-closing
+    line: 48
+    text: "Last Update: August 25, 2026"
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: the page's 'Last Update' line after the signature block is read as the end of the letter

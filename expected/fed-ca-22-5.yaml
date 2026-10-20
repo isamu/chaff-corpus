@@ -1,0 +1,178 @@
+id: fed-ca-22-5
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 13
+    text: July 8, 2022
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 21
+    text: "Applicability: This guidance applies to"
+    message: This sentence runs 31 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: As such, this letter introduces a Standa
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: The purpose of this letter is to reinfor
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 23
+    text: This letter complements and should be re
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: As part of this process, Federal Reserve
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: Effective communication with supervised
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: For institutions covered under CA 13-19,
+    message: This sentence runs 51 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 29
+    text: The SIR Process establishes a standard a
+    message: This sentence runs 31 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: appropriately tailor information request
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 31
+    text: appropriately tailor information request
+    message: '"appropriately" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 35
+    text: Additional requests, if necessary, shoul
+    message: This sentence runs 20 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 35
+    text: Federal Reserve staff will provide bank
+    message: This sentence runs 32 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 35
+    text: Federal Reserve staff will typically sen
+    message: This sentence runs 22 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 35
+    text: Additional requests, if necessary, shoul
+    message: '"if necessary" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 35
+    text: Federal Reserve staff will provide bank
+    message: '"adequate" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: During the scoping process, Federal Rese
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 37
+    text: Information gathered from the SIR proces
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 37
+    text: Information gathered from the SIR proces
+    message: '"as necessary" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: correct
+  - rule: max-sentence-length
+    line: 39
+    text: As such, Federal Reserve staff should, i
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 39
+    text: Effective communications are similarly i
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 39
+    text: The SIR Process enhances communication a
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: Reserve Banks should distribute this let
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 41
+    text: Reserve Banks should distribute this let
+    message: '"appropriate" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 53
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 55
+    text: In coordination with bank management, an
+    message: This sentence runs 30 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 56
+    text: Depending on the circumstances, or as ot
+    message: This sentence runs 34 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 57
+    text: “Available information” may include info
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: Conversely, shortened timelines may be a
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: Extensions may be particularly appropria
+    message: This sentence runs 33 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 58
+    text: The Federal Reserve recognizes that in l
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 58
+    text: Therefore, Federal Reserve staff, in col
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 58
+    text: The Federal Reserve recognizes that in l
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 58
+    text: Conversely, shortened timelines may be a
+    message: '"appropriate" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 58
+    text: Extensions may be particularly appropria
+    message: '"appropriate" and other vague words: 11 per 1000 words (limit 4)'
+    verdict: unjudged

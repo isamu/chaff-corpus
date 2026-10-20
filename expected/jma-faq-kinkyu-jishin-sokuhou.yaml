@@ -1,0 +1,97 @@
+id: jma-faq-kinkyu-jishin-sokuhou
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 5
+    text: 緊急地震速報は地震の発生直後に、震源に近い地震計でとらえた観測データを素早く解析
+    message: 「は」で出した主題から述語まで 108 字あります（80 字まで）
+    verdict: correct
+  - rule: bracket-nesting
+    line: 11
+    text: （詳しくは、「緊急地震速報（警報）の内容・発表条件」をご覧ください。）
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 11
+    text: 気象庁は、最大震度が５弱以上または最大長周期地震動階級が３以上と予想された場合に
+    message: 「最大長周期地震動階級」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: 「最大長周期地震動階級」は気象庁の用語
+  - rule: topic-predicate-distance
+    line: 11
+    text: 気象庁は、最大震度が５弱以上または最大長周期地震動階級が３以上と予想された場合に
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 17
+    text: 様に処理しているかについては、各事業者の判断で行われていますので、事業者にお問い
+    message: 「様」と書いています（この文書はふつう「よう」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 17
+    text: なお、警報に至らない場合でも気象庁は緊急地震速報（予報）を発表しており、それらを
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 27
+    text: NTT ドコモ、ａｕ、ソフトバンク、ワイモバイル、楽天モバイルがあります。他の手
+    message: 半角の「NTT」と書いています（この文書はふつう全角の「ＮＴＴ」。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 27
+    text: テレビやラジオ以外の入手方法としては、まず、携帯端末があります。携帯端末への一斉
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 31
+    text: 又は民間の情報配信会社からも、専用の受信端末を用意することで、各会社、家庭等でも
+    message: 「又は」と書いています（この文書はふつう「または」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 37
+    text: このことから、緊急地震速報についても、ニュース速報と同様に、緊急地震速報を放送等
+    message: 「この」など、指示語で始まる文が 4 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 37
+    text: テレビやラジオなどのニュース速報では、特定の音を発した後、文字や音声で内容を伝え
+    message: 「〜います」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 39
+    text: なお、本件は、工場等においてこのチャイム音が聞こえにくい等、その施設での対応状況
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 45
+    text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 45
+    text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
+    message: 「東北地方太平洋沖地震」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: 「東北地方太平洋沖地震」は気象庁が定めた地震の名前
+  - rule: topic-predicate-distance
+    line: 45
+    text: また、地震による強い揺れは、東北地方太平洋沖地震のように数分続く事例もありますが
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 51
+    text: 5～10回程度）発表されます。
+    message: 半角の「5」と書いています（この文書はふつう全角の「５」。15 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-kanji-continuous
+    line: 52
+    text: 「緊急地震速報（警報）」は、特に強い地震が発生した場合（最大震度が５弱以上または
+    message: 「最大長周期地震動階級」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: 「最大長周期地震動階級」は気象庁の用語
+  - rule: max-kanji-continuous
+    line: 67
+    text: このことから、地震動予報許可事業者には、個々の予測を利用していただく方々との間で
+    message: 「地震動予報許可事業者」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: 「地震動予報許可事業者」は気象業務法の用語

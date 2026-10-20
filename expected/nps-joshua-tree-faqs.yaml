@@ -1,0 +1,134 @@
+id: nps-joshua-tree-faqs
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "#### What time does the park close?"
+    message: Heading "What time does the park close?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 11
+    text: There are four visitor centers. The Josh
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 15
+    text: Temperatures are most comfortable in the
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 35
+    text: RV fill stations are located at Black Ro
+    message: '"RV" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: RV, an everyday word for a park's visitors, needs no expansion
+  - rule: undefined-acronym
+    line: 39
+    text: WIFI can be accessed at the Black Rock V
+    message: '"WIFI" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: WIFI (Wi-Fi) is a trade name, not an acronym with an expansion
+  - rule: heading-level-skip
+    line: 51
+    text: "#### Where can I purchase a pass?"
+    message: Heading "Where can I purchase a pass?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 61
+    text: NPS every kid outdoors webpage before ar
+    message: '"NPS" is used without an expansion (3 such acronyms)'
+    verdict: false-positive
+    note: the full name National Park Service appears in the document, though not as a parenthetical definition
+  - rule: heading-level-skip
+    line: 77
+    text: "#### How do I get campsite reservations?"
+    message: Heading "How do I get campsite reservations?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 132
+    text: Campfires are allowed in the provided ca
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+  - rule: heading-level-skip
+    line: 156
+    text: "#### Are there dump stations?"
+    message: Heading "Are there dump stations?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 166
+    text: If you're searching for a campsite to ac
+    message: "\"you're\" is written \"you are\" elsewhere in the document"
+    verdict: correct
+  - rule: heading-level-skip
+    line: 178
+    text: "#### What are some popular easy hikes to"
+    message: Heading "What are some popular easy hikes to do?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: hyphen-as-dash
+    line: 201
+    text: " - near accessible parking spots. This t"
+    message: '"-" stands in for a dash'
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 207
+    text: Biking is allowed on dirt and paved road
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 211
+    text: "#### Are there any ranger programs going"
+    message: Heading "Are there any ranger programs going on?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: heading-level-skip
+    line: 225
+    text: "#### When and where can I see wildflower"
+    message: Heading "When and where can I see wildflowers?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: contraction-consistency
+    line: 227
+    text: After dry winters, the park doesn't see
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 227
+    text: Spring wildflowers are dependent on wint
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 235
+    text: Antelope ground squirrels, jackrabbits,
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 251
+    text: "#### What Native American tribes are tra"
+    message: Heading "What Native American tribes are traditionally associated with Joshua Tree?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 253
+    text: Today, these communities are comprised o
+    message: This sentence runs 84 words (limit 40)
+    verdict: unjudged
+  - rule: nonstandard-word
+    line: 253
+    text: "are comprised of 15 tribes: Agua Calient"
+    message: '"are comprised of" is nonstandard in formal writing; write "comprise"'
+    verdict: correct
+  - rule: orthographic-variant
+    line: 253
+    text: Twenty-Nine Palms Band of Mission Indian
+    message: '"Twenty-Nine" here, where the document usually writes "Twentynine" (1 of 5)'
+    verdict: false-positive
+    note: Twenty-Nine Palms Band of Mission Indians is a tribe's official name; the city is Twentynine Palms
+  - rule: heading-end-punctuation-mix
+    line: 263
+    text: "#### Mailing Address:"
+    message: The heading "Mailing Address:" ends with ":", while 59 other headings end bare ("What time does the park close?")
+    verdict: false-positive
+    note: labels of the page's contact block (site template), not FAQ question headings
+  - rule: heading-end-punctuation-mix
+    line: 268
+    text: "#### Phone:"
+    message: The heading "Phone:" ends with ":", while 59 other headings end bare ("What time does the park close?")
+    verdict: false-positive
+    note: labels of the page's contact block (site template), not FAQ question headings
