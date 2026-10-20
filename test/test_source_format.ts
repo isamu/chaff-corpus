@@ -28,6 +28,22 @@ describe("convertedText", () => {
     assert.equal(convertedText("html", "<html><body><main><h1>Terms</h1><p>Fees &amp; charges apply.</p></main></body></html>"), "# Terms\n\nFees & charges apply.\n");
   });
 
+  it("keeps a numbered heading whose first subsection follows it with the same tag, and drops an empty unnumbered one", () => {
+    const page = (body: string): string => `<html><body><main>${body}</main></body></html>`;
+    assert.equal(convertedText("html", page("<h4>3. 結果</h4><h4>3.1 データ</h4><p>本文。</p>")), "#### 3. 結果\n\n#### 3.1 データ\n\n本文。\n");
+    assert.equal(convertedText("html", page("<h4>Editorial Notes</h4><h4>Codification</h4><p>Text.</p>")), "#### Codification\n\nText.\n");
+  });
+
+  it("keeps a prose table's header row, and a list of words set as a table, but not a list of links", () => {
+    const page = (body: string): string => `<html><body><main>${body}<p>End.</p></main></body></html>`;
+    const glossary = "<table><tr><th>Term</th><th>Definition</th></tr><tr><td>Alt text</td><td>A short description of an image.</td></tr></table>";
+    assert.equal(convertedText("html", page(glossary)), "Term\n\nDefinition\n\nAlt text\n\nA short description of an image.\n\nEnd.\n");
+    const words = "<table><tr><td>翻刻</td></tr><tr><td>タグ付け</td></tr><tr><td>翻訳</td></tr></table>";
+    assert.equal(convertedText("html", page(words)), "翻刻\n\nタグ付け\n\n翻訳\n\nEnd.\n");
+    const links = "<table><tr><td><a href='/a'>A</a></td></tr><tr><td><a href='/b'>B</a></td></tr><tr><td><a href='/c'>C</a></td></tr></table>";
+    assert.equal(convertedText("html", page(links)), "End.\n");
+  });
+
   it("converts wikitext to Markdown, keeping a link's text and dropping a template", () => {
     assert.equal(convertedText("wikitext", "== Getting in ==\nTake the [[Izu Kyuko Line|train]] from Ito.{{citation needed}}\n"), "## Getting in\nTake the train from Ito.\n");
   });

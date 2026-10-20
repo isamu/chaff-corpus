@@ -27,6 +27,78 @@ Neel Kashkari, President of the Federal Reserve Bank of Minneapolis, with Mary C
 
 By unanimous vote, the following officers of the Committee were selected to serve until the selection of their successors at the first regularly scheduled meeting of the Committee in 2027:
 
+Jerome H. Powell
+
+Chair
+
+John C. Williams
+
+Vice Chair
+
+Joshua Gallin
+
+Secretary
+
+Matthew M. Luecke
+
+Deputy Secretary
+
+Brian J. Bonis
+
+Assistant Secretary
+
+Michelle A. Smith
+
+Assistant Secretary
+
+Mark E. Van Der Weide
+
+General Counsel
+
+Richard Ostrander
+
+Deputy General Counsel
+
+Reena Sahni
+
+Assistant General Counsel
+
+Trevor A. Reeve
+
+Economist
+
+Stacey Tevlin
+
+Economist
+
+Beth Anne Wilson
+
+Economist
+
+Stephanie R. Aaronson
+
+Shaghil Ahmed
+
+Kartik B. Athreya
+
+Brian M. Doyle
+
+Eric M. Engen
+
+Michael T. Kiley
+
+Elizabeth Klee
+
+Edward S. Knotek II
+
+Karel Mertens
+
+Donald Keith Sill
+
+Andrea Raffo
+
+Associate Economists
+
 By unanimous vote, the Committee selected the Federal Reserve Bank of New York to execute transactions for the System Open Market Account (SOMA).
 
 By unanimous vote, the Committee selected Roberto Perli and Julie Ann Remache to serve at the pleasure of the Committee as manager and deputy manager of the SOMA, respectively, on the understanding that these selections were subject to being satisfactory to the Federal Reserve Bank of New York.

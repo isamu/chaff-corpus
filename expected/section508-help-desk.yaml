@@ -29,69 +29,69 @@ findings:
     message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: max-sentence-length
-    line: 39
+    line: 95
     text: Scope Definition – Distinguish Section 5
     message: This sentence runs 45 words (limit 40)
     verdict: correct
   - rule: vague-word-density
-    line: 39
+    line: 95
     text: Scope Definition – Distinguish Section 5
     message: '"reasonable" and other vague words: 8 per 1000 words (limit 4)'
     verdict: false-positive
     note: '"reasonable accommodation" is a legal term of art, not a vague word'
   - rule: vague-word-density
-    line: 43
+    line: 99
     text: Documentation and Reporting – Collect su
     message: '"sufficient" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 53
+    line: 113
     text: Oversees intake and case management, tra
     message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 71
+    line: 131
     text: Agencies should establish and publish se
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 71
+    line: 131
     text: Ensure clear, timely, and transparent co
     message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 117
+    line: 177
     text: A mature Section 508 help desk should ma
     message: '"timely" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: max-sentence-length
-    line: 131
+    line: 191
     text: Establishing and maintaining standard op
     message: This sentence runs 44 words (limit 40)
     verdict: correct
   - rule: vague-word-density
-    line: 158
+    line: 218
     text: Agencies should establish prioritization
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 165
+    line: 225
     text: Define and document a structured tiered
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
   - rule: redundant-expression
-    line: 176
+    line: 236
     text: Document steps for investigating and res
     message: '"final outcome" says the same thing twice'
     verdict: correct
   - rule: title-case-consistency
-    line: 183
+    line: 243
     text: ""
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: correct
     note: '"Follow up" in sentence case among title-case headings'
   - rule: vague-word-density
-    line: 185
+    line: 245
     text: Confirm user satisfaction when appropria
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct

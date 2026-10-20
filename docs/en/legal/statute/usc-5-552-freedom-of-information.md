@@ -488,6 +488,14 @@ the agency may, during only such time as that circumstance continues, treat the 
 Historical and Revision Notes
 1966 Act
 
+Derivation
+
+U.S. Code
+
+Revised Statutes and
+
+Statutes at Large
+
 5 U.S.C. 1002.
 
 June 11, 1946, ch. 324, §3, 60 Stat. 238.

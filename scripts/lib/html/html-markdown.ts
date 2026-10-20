@@ -1,5 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (9013b5fb, with isamu/lab#1658 and #1663); a fetched text must convert exactly as when it was judged.
-// The one change from lab: the site's chrome (html-site-chrome.ts) is dropped before the page's content is chosen.
+// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (4baffd59); a fetched text must convert exactly as when it was judged.
 // An HTML page (a CRS report as EveryCRSReport serves it, a ministry's page) as plain Markdown: headings, paragraphs,
 // list items and the text of links; ruby keeps its base text and loses its reading. Only the <main> element (else the
 // role="main" element, else a sole <article>, else the block holding the title and nearly every sentence) is read when
@@ -44,6 +43,7 @@ import { withRunInHeadingsRead } from "./html-run-in-headings.ts";
 import { withoutWidgets } from "./html-widgets.ts";
 import { withPreformattedRestored, withPreformattedStashed } from "./html-preformatted.ts";
 import { withTablesRead } from "./html-tables.ts";
+import { opensSubsection } from "./html-section-number.ts";
 import { decodeEntities, tidyLines } from "./markup-text.ts";
 
 const DROPPED = ["script", "style", "head", "nav", "aside", "footer", "form", "noscript", "svg"];
@@ -369,16 +369,17 @@ const isDrawnRule = (line: string): boolean => /^(?:([-_*=])\s*)(?:\1\s*){2,}$/u
 
 /**
  * Headings with nothing under them before the next heading of the same or a higher level: what dropped navigation left.
- * A drawn rule under a heading is not something under it.
+ * A drawn rule under a heading is not something under it, and a numbered heading whose first subsection follows it at the
+ * same level ("3." then "3.1", both <h4>) holds that subsection.
  */
 const withoutEmptySections = (lines: readonly string[]): string[] =>
-  lines.reduceRight<{ readonly kept: string[]; readonly nextLevel: number }>(
+  lines.reduceRight<{ readonly kept: string[]; readonly nextLevel: number; readonly nextHeading?: string }>(
     (state, line) => {
-      if (line === "" || isDrawnRule(line)) return { kept: [line, ...state.kept], nextLevel: state.nextLevel };
+      if (line === "" || isDrawnRule(line)) return { ...state, kept: [line, ...state.kept] };
       const level = headingLevel(line) - 1;
       if (level < 0) return { kept: [line, ...state.kept], nextLevel: Number.POSITIVE_INFINITY };
-      if (state.nextLevel <= level) return state;
-      return { kept: [line, ...state.kept], nextLevel: level };
+      if (state.nextLevel < level || (state.nextLevel === level && !opensSubsection(line, state.nextHeading))) return state;
+      return { kept: [line, ...state.kept], nextLevel: level, nextHeading: line };
     },
     { kept: [], nextLevel: 0 },
   ).kept;
@@ -457,10 +458,6 @@ const withoutClosingAddress = (html: string): string => {
 
 const CLOSING_BLOCKS = ["div", "section", "p"];
 
-
-// Spaces either side of a tag ("title.\n</span>\n<span>") are one space on the page, as HTML collapses them across
-// elements; a space written as a character reference (&nbsp;) is decoded afterwards and stays.
-const SPACES_ACROSS_TAGS = / {2,}/gu;
 const isClosingMenu = (text: string, range: ElementRange): boolean =>
   isLinksOnly(range) && !plainLinks(range.inner).some(isFileLink) && textLines(text.slice(range.end)).length === 0;
 
@@ -476,6 +473,10 @@ const withoutClosingLinks = (html: string): string =>
 
 // Markup's own spacing, collapsed as HTML does; U+3000 is a character Japanese text writes (a clause number and its text), so it stays.
 const MARKUP_SPACE = /[^\S\u3000]+/gu;
+
+// Spaces either side of a tag ("title.\n</span>\n<span>") are one space on the page, as HTML collapses them across
+// elements; a space written as a character reference (&nbsp;) is decoded afterwards and stays.
+const SPACES_ACROSS_TAGS = / {2,}/gu;
 
 // A zero-width space or joiner draws nothing, so a line of nothing else is empty (a page-number anchor).
 const INVISIBLE_ONLY = /^[\s\p{Cf}]*$/u;

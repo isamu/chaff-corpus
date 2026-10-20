@@ -2,112 +2,112 @@ id: fomc-minutes-2026-01
 chaff: 0.34.0
 findings:
   - rule: max-sentence-length
-    line: 32
+    line: 104
     text: By unanimous vote, the Committee selecte
     message: This sentence runs 48 words (limit 45)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 36
+    line: 108
     text: By unanimous vote, the Committee approve
     message: This sentence runs 54 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 38
+    line: 110
     text: All participants indicated support for,
     message: This sentence runs 53 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 44
+    line: 116
     text: Market-based measures of policy rate exp
     message: This sentence runs 46 words (limit 45)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 44
+    line: 116
     text: Respondents to the Open Market Desk Surv
     message: This sentence runs 51 words (limit 45)
     verdict: correct
   - rule: max-paragraph-length
-    line: 46
+    line: 118
     text: The manager turned next to Treasury mark
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
   - rule: undefined-acronym
-    line: 50
+    line: 122
     text: S&P 500 was up nearly 3 percent over the
     message: '"S&P" is used without an expansion (1 such acronym)'
     verdict: unjudged
   - rule: max-sentence-length
-    line: 54
+    line: 126
     text: Money market contacts attributed the bet
     message: This sentence runs 60 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 66
+    line: 138
     text: The average monthly change in total payr
     message: This sentence runs 53 words (limit 45)
     verdict: correct
   - rule: max-paragraph-length
-    line: 68
+    line: 140
     text: Total consumer price inflation—as measur
     message: This paragraph runs 7 sentences (limit 5)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 70
+    line: 142
     text: Real private domestic final purchases (P
     message: This sentence runs 61 words (limit 45)
     verdict: correct
   - rule: wordy-phrase
-    line: 94
+    line: 166
     what: '"have the capacity to" can be said in fewer words'
     verdict: missed
     note: "correct in chaffjs 0.35.0, lost in 0.36.0: the sentence holds one wordy phrase and the rule now reports a sentence only from two"
   - rule: max-sentence-length
-    line: 98
+    line: 170
     text: The amount of total short-run funding in
     message: This sentence runs 46 words (limit 45)
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 112
+    line: 184
     text: Regarding the outlook for inflation, par
     message: This paragraph runs 8 sentences (limit 5)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 118
+    line: 190
     text: In particular, some participants pointed
     message: This sentence runs 50 words (limit 45)
     verdict: correct
   - rule: max-paragraph-length
-    line: 124
+    line: 196
     text: In their discussion of financial stabili
     message: This paragraph runs 7 sentences (limit 5)
     verdict: unjudged
   - rule: max-paragraph-length
-    line: 126
+    line: 198
     text: In their consideration of monetary polic
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 126
+    line: 198
     text: They commented that maintaining the curr
     message: This sentence runs 51 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 126
+    line: 198
     text: Those who preferred to lower the target
     message: This sentence runs 46 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 128
+    line: 200
     text: Some participants commented that it woul
     message: This sentence runs 55 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
-    line: 130
+    line: 202
     text: In discussing risk-management considerat
     message: This sentence runs 48 words (limit 45)
     verdict: unjudged
   - rule: ngram-repetition
-    line: 134
+    line: 206
     text: In their discussions of monetary policy
     message: '"members agreed that" appears 7 times (limit 5)'
     verdict: correct

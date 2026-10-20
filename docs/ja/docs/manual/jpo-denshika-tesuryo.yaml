@@ -12,5 +12,5 @@ license:
   url: https://www.jpo.go.jp/toppage/about/index.html
   note: "特許庁ウェブサイトのコンテンツは公共データ利用規約（第1.0版）（PDL1.0）による（「このサイトについて」https://www.jpo.go.jp/toppage/about/index.html）; 出典：特許庁ウェブサイト（https://www.jpo.go.jp/system/process/shutugan/paper/denshika.html）を加工して作成 (converted to Markdown)"
 redistribute: true
-sha256: 70e9850e94f33408eea60e074c4b5989089cbc5a5e24ce93e0119178526a022c
-notes: "The text is source.format html converted with the corpus converter as amended by isamu/chaff-corpus#53 (isamu/lab#1658, #1663). www.jpo.go.jp answers curl with an AWS WAF JavaScript challenge, so the Wayback snapshot is pinned. The 手数料令 table near the end comes out as one paragraph per cell (表 / 一 / …), and the お問い合わせ table is dropped as site chrome; nothing was restored by hand."
+sha256: 7aeb78b9c80b395dfff3c363d4749deed019747ca7371fa2e36ebaa45f704ece
+notes: "The text is source.format html converted with the corpus converter as it is on isamu/lab main at 4baffd59 (isamu/lab#1658, #1663, #1667, #1670). www.jpo.go.jp answers curl with an AWS WAF JavaScript challenge, so the Wayback snapshot is pinned. The 手数料令 table near the end comes out as one paragraph per cell (表 / 一 / …), and the お問い合わせ table is dropped as site chrome; nothing was restored by hand."

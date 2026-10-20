@@ -88,6 +88,10 @@ There are additional rules about the content of your invoices if you are making 
 
 ### 3.2 Information required on a tax invoice
 
+Information required
+
+Further information
+
 An identifying number
 
 A sequential number based on one or more series which uniquely identifies the document.

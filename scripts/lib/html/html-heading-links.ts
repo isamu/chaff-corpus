@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-heading-links.ts (9013b5fb); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-heading-links.ts (4baffd59); a fetched text must convert exactly as when it was judged.
 // A heading's link to its own section (a permalink beside or after the title), taken out of an HTML page. Pure.
 import { ANY_LINK, ATTRIBUTES, elementRanges, hasNoWords, plainText, type ElementRange } from "./html-elements.ts";
 import { decodeEntities } from "./markup-text.ts";
