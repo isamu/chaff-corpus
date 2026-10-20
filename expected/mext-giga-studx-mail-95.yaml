@@ -1,0 +1,159 @@
+id: mext-giga-studx-mail-95
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: 第95号 2026/2/18
+    message: 書き出しに挨拶がありません
+    verdict: false-positive
+    note: "a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design"
+  - rule: no-mixed-desumasu
+    line: 5
+    text: 【新着】（文部科学省）
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the 【新着】 label, the article title and the school name have no 。 and are read as one plain-form sentence"
+  - rule: preamble-length
+    line: 5
+    text: 【新着】（文部科学省）
+    message: 最初の見出しまでに 19 段落あります（2 段落まで）
+    verdict: false-positive
+    note: "a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block"
+  - rule: undefined-acronym
+    line: 6
+    text: DXの実践
+    message: 「DX」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: "DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+  - rule: repeated-sentence-ending
+    line: 10
+    text: 「学ぶ青春 意気高く」の校訓のもと、国際社会・情報社会で活躍する人材の育成を目指
+    message: 「〜います」で終わる文が 4 文続いています（2 文まで）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 11
+    text: ICT活用を推進しています。各教科のDX推進委員を中心に実践を重ね、
+    message: 「ICT」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: "ICT is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+  - rule: kutoten-consistency
+    line: 16
+    text: ，技能の向上を図った。（保健体育科）
+    message: 読点を「，」と書いています（この文書はふつう「、」。54 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: kutoten-consistency
+    line: 16
+    text: ，自分の動作を動画で録画・再生し，技能の向上を図った。（保健体育科）
+    message: 読点を「，」と書いています（この文書はふつう「、」。54 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: no-mixed-desumasu
+    line: 16
+    text: 生徒は生成AIへの相談や，自分の動作を動画で録画・再生し，技能の向上を図った。（
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: correct
+    note: "a plain-form sentence (図った。) among です・ます sentences"
+  - rule: orthographic-variant
+    line: 18
+    text: 取組はこちら
+    message: 「取組」と書いています（この文書はふつう「取り組み」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "取組 here, 取り組み three times in the same issue"
+  - rule: undefined-acronym
+    line: 21
+    text: GIGA StuDX推進チーム）
+    message: 「GIGA」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: "GIGA is the name of the programme (GIGAスクール構想), used as a proper name throughout the ministry's magazine"
+  - rule: max-paragraph-length
+    line: 24
+    text: 文部科学省では、デジタル学習基盤を活用し授業改善を推進するリーディングDXスクー
+    message: この段落は 10 文あります（5 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 26
+    text: 「自分が思う平和について考えをまとめよう」という学習のめあてで、授業が展開されて
+    message: 「〜います」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 28
+    text: クラウドで共有することで、子供は互いにどのような考えを持っているかを明確に理解す
+    message: この文は 95 文字あります（70 文字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 31
+    text: クラウドを活用し、教師は意図的に、より多くの考えに触れさせることで、子供に新たな
+    message: この文は 71 文字あります（70 文字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 32
+    text: ▼【実践報告書】はこちら
+    message: この文は 72 文字あります（70 文字まで）
+    verdict: false-positive
+    note: "a ▼ link label, the URL on the next line and the following line have no 。 and are read as one sentence"
+  - rule: undefined-acronym
+    line: 47
+    text: HP
+    message: 「HP」が説明なしで使われています（説明のない略語 6 個）
+    verdict: false-positive
+    note: "HP (ホームページ) is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd"
+  - rule: undefined-acronym
+    line: 54
+    text: CBT方式での実施に向けた事前検証・事前接続テストを実施しています！
+    message: 「CBT」が説明なしで使われています（説明のない略語 6 個）
+    verdict: correct
+    note: "CBT is not spelled out"
+  - rule: max-sentence-length
+    line: 55
+    text: 令和８年度全国学力・学習状況調査では、中学校においては英語（４技能）を、小学校に
+    message: この文は 77 文字あります（70 文字まで）
+    verdict: correct
+  - rule: undefined-acronym
+    line: 55
+    text: MEXCBTを活用したCBT方式で実施します。
+    message: 「MEXCBT」が説明なしで使われています（説明のない略語 6 個）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: 2月20日（金）15時30分より、「私たちの毎日が、GIGAでこう変わった！ ～
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 76
+    text: ▼概要はこちら
+    message: この文は 73 文字あります（70 文字まで）
+    verdict: false-positive
+    note: "a ▼ link label, the URL on the next line and the following line have no 。 and are read as one sentence"
+  - rule: latin-spacing
+    line: 81
+    text: " 推進チーム）（再掲）"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。42 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: "GIGA StuDX 推進チーム here, GIGA StuDX推進チーム elsewhere"
+  - rule: fullwidth-alnum-consistency
+    line: 84
+    text: １５分）で、【特別企画】「情報モラルのミニ研修シリーズ」をはじめ、
+    message: 全角の「１５」と書いています（この文書はふつう半角の「15」。14 箇所のうち 1 箇所が違う）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 84
+    text: 今後実施する内容として、視聴型（１テーマ約１５分）で、【特別企画】「情報モラルの
+    message: この文は 198 文字あります（70 文字まで）
+    verdict: correct
+  - rule: comparative-without-baseline
+    line: 98
+    text: よりよい「GIGA StuDXメールマガジン」を発信していくために、ご意見やご感
+    message: 「よりよい」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: "「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is"
+  - rule: request-without-deadline
+    line: 106
+    text: まだお申込みでない方も、ぜひ参加をご検討ください。（佐藤）
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: "an invitation to a series whose dates are given in the item above"
+  - rule: latin-spacing
+    line: 111
+    text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。42 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose"

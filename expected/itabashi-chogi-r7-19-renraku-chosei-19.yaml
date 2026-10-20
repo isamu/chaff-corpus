@@ -1,0 +1,57 @@
+id: itabashi-chogi-r7-19-renraku-chosei-19
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list names each official by title; a long official title is one fixed compound"
+  - rule: max-sentence-length
+    line: 23
+    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
+    verdict: false-positive
+    note: "the attendee list (titles separated by commas) has no full stop and is a list, not a sentence"
+  - rule: max-kanji-continuous
+    line: 29
+    sha256: e4def3d2eb6cad4ed6350fcc9768467cae9cc6a8b4f851160c929b150a288346
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 30
+    sha256: 9c6b7ee5f92932197bdc6e2bac20bada08170f1bdaf194ca49a449e1a4bda534
+    verdict: false-positive
+    note: "this abbreviation is everyday vocabulary in local government"
+  - rule: no-mixed-desumasu
+    line: 45
+    sha256: ff1e6b2e68c76a155ed582b25cdd8202da8582ddb1fbb57564a21bca0b3acbf4
+    verdict: false-positive
+    note: "a set polite greeting inside the mayor's plain-form remarks, not a change of style"
+  - rule: undefined-acronym
+    line: 48
+    sha256: 129fe4b3557ab2db688c26990df948997bb0839f9a654405a8ad2bab7abcea0d
+    verdict: false-positive
+    note: "this abbreviation is everyday Japanese"
+  - rule: date-weekday-mismatch
+    line: 52
+    sha256: 331b5c2870665141df28d8b273de8438614adf204490695fa1448b3fc6890af0
+    verdict: false-positive
+    note: "the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025"
+  - rule: date-without-year
+    line: 52
+    sha256: 331b5c2870665141df28d8b273de8438614adf204490695fa1448b3fc6890af0
+    verdict: false-positive
+    note: "the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025"
+  - rule: undefined-acronym
+    line: 69
+    sha256: e24dc422a86514282232db7ce491fc98433731258a731e2a5e0755e50a401fbd
+    verdict: correct
+    note: "a specialist abbreviation that is not spelled out"
+  - rule: undefined-acronym
+    line: 96
+    sha256: 7608132c9acddc45e294c982664eac7632a65aed4241adc890fa9210e76be8d0
+    verdict: correct
+    note: "a facility brand's abbreviation that is not spelled out"
+  - rule: no-mixed-desumasu
+    line: 126
+    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
+    verdict: false-positive
+    note: "the page's contact block (department and section on one line) is an address, not a sentence"

@@ -1,0 +1,100 @@
+id: kokkai-221-sangiin-saigai-fukko-2
+chaff: 0.36.0
+findings:
+  - rule: orthographic-variant
+    line: 3
+    sha256: fc755072cbec0a1066f16fc374dbc4bc5b1f0886f2cea38b158dc26d3ab3fa77
+    verdict: false-positive
+    note: "the chair's set opening phrase in kana is not the noun it is matched with"
+  - rule: orthographic-variant
+    line: 7
+    sha256: a7300f1502264e7323d49b5e8cb7d9e03d6a0c5773daadcc618b572ccbc7420f
+    verdict: false-positive
+    note: "the kanji verb here (to turn one's thoughts to) is a different word from the polite auxiliary written in kana"
+  - rule: topic-predicate-distance
+    line: 7
+    sha256: 6adfcee682a0e99566bd4306fe7c13f75c0827af22977dacd928eb1edf32483e
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 35
+    sha256: 2d92eef40b7aef8239625d14a8a04d735cb51cf4fad3d66f6f514fb106f73063
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: one-sentence-paragraph-run
+    line: 59
+    sha256: 426de2cc40e574c1051f2066455f787695eea184c20bd151cf3ce9b4f7fc4a26
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: clause-chain
+    line: 61
+    sha256: a1620ffd4864db87cee25c7e9adad405557ca5ff7acb0b66011a86be2fb6812c
+    verdict: correct
+  - rule: max-ten
+    line: 61
+    sha256: a1620ffd4864db87cee25c7e9adad405557ca5ff7acb0b66011a86be2fb6812c
+    verdict: correct
+  - rule: orthographic-variant
+    line: 77
+    sha256: 6a2cead36e949633ac2c3d424427bde0b519163869d1f6b9a510aa30f293cbf8
+    verdict: false-positive
+    note: "the kana verb here means time passing, a different word from the kanji verb it is matched with"
+  - rule: one-sentence-paragraph-run
+    line: 79
+    sha256: 5370583ae0cca424fd7111e5799b199aba9c2148e037695d3efc3803867e2811
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: topic-predicate-distance
+    line: 81
+    sha256: f72e15493d1a431a2f6ba8131a56c56327eb7a8335e4c9157023dbb5fb42810c
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 129
+    sha256: e41bf49db0d4cf848461ec4fb40316fac7527f36d870e805355a0ca403a67eb6
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: one-sentence-paragraph-run
+    line: 167
+    sha256: 6e300466fe11c3188e98dda838dff94e310d7de4badfa1c90a4d6f8c8dd54246
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: teki-overuse
+    line: 217
+    sha256: 37139323ccd3f033d445a8caef7939b3705d45283b58404bbbf973d720e0d073
+    verdict: correct
+  - rule: topic-predicate-distance
+    line: 249
+    sha256: 05b5d042d93378d9d9bb802c712a977964213b9bced92a017241cdf4da0abd23
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 255
+    sha256: a4f2aaec4ebfcd85ce7cb705c0e2a70cd05fac491fd32f83eac817e9f7a79632
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: orthographic-variant
+    line: 269
+    sha256: d06e1069ce7c5bde695012920ec3d0cc515ec3bdb2839d7f835571435f0dcd38
+    verdict: false-positive
+    note: "the first kana of a political party's name are read as the word for zero"
+  - rule: max-ten
+    line: 291
+    sha256: 475987e6e64968faa852fbdc488e288c54106bb9d7055c06047623ec423bf4a4
+    verdict: correct
+  - rule: max-ten
+    line: 305
+    sha256: 12de36cf1c1e1d650a530f21ffb5e5ca5bae44b03436576e85bff5ae1b23c7e0
+    verdict: correct
+  - rule: one-sentence-paragraph-run
+    line: 307
+    sha256: b6c766e00b3e32a3c21be7000f34198cf3ba341a826492ebfe34f6e9fcfe460c
+    verdict: false-positive
+    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
+  - rule: orthographic-variant
+    line: 321
+    sha256: d06e1069ce7c5bde695012920ec3d0cc515ec3bdb2839d7f835571435f0dcd38
+    verdict: false-positive
+    note: "the first kana of a political party's name are read as the word for zero"
+  - rule: orthographic-variant
+    line: 349
+    sha256: 28738378562bcc473f6c4287d486ca0607c0e276b7e4b59cb10a5ed563400681
+    verdict: false-positive
+    note: "the kanji forms it counts are a place name; the suffix after a bill is always kana in the minutes"

@@ -1,0 +1,63 @@
+id: chrg-111hhrg55126-intl-affairs-budget-fy2011
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 15
+    text: THE FISCAL YEAR
+    message: '"THE FISCAL YEAR" is written in capitals'
+    verdict: false-positive
+    note: "the printed hearing's title page sets the title in capitals"
+  - rule: name-variant
+    line: 85
+    text: McCAUL, Texas
+    message: '"McCAUL" is written "McCaul" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: "the committee roster sets surnames in capitals; McCAUL is McCaul in that style"
+  - rule: orthographic-variant
+    line: 85
+    text: McCAUL, Texas
+    message: '"McCAUL" here, where the document usually writes "McCaul" (1 of 8)'
+    verdict: false-positive
+    note: "the committee roster sets surnames in capitals; McCAUL is McCaul in that style"
+  - rule: all-caps-shouting
+    line: 87
+    text: SHEILA JACKSON LEE, Texas            TED
+    message: '"SHEILA JACKSON LEE" is written in capitals'
+    verdict: false-positive
+    note: "the committee roster sets members' names in capitals"
+  - rule: one-sentence-paragraph-run
+    line: 115
+    text: Jasmeet Ahuja, Professional Staff Member
+    message: 12 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: "the committee staff roster, one name per line"
+  - rule: all-caps-shouting
+    line: 159
+    text: SUBMITTED FOR THE HEARING
+    message: '"SUBMITTED FOR THE HEARING" is written in capitals'
+    verdict: false-positive
+    note: "a heading of the printed contents in capitals"
+  - rule: all-caps-shouting
+    line: 233
+    text: THE FISCAL YEAR
+    message: '"THE FISCAL YEAR" is written in capitals'
+    verdict: false-positive
+    note: "the printed hearing's title in capitals above the transcript"
+  - rule: all-caps-shouting
+    line: 613
+    text: DEPARTMENT OF STATE
+    message: '"DEPARTMENT OF STATE" is written in capitals'
+    verdict: false-positive
+    note: "the witness heading of the printed hearing, in capitals"
+  - rule: spelling-consistency
+    line: 3845
+    text: acknowledgement of the facts related to
+    message: '"acknowledgement" here, where the document usually spells it "acknowledgment" (1 of 24)'
+    verdict: correct
+    note: "acknowledgement here, acknowledgment elsewhere"
+  - rule: unknown-word
+    line: 4287
+    text: bioterrorist threat, to
+    message: '"bioterrorist" is not in the dictionary; did you mean "bioterrorism"?'
+    verdict: false-positive
+    note: "bioterrorist is an English word (the bioterrorist threat)"
