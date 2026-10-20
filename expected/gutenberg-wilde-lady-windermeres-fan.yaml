@@ -1,0 +1,15 @@
+id: gutenberg-wilde-lady-windermeres-fan
+chaff: 0.36.0
+findings:
+  - rule: outside-announced-list
+    line: 31
+    text: Sixteenth Edition_ (5_s._ _net_)
+    message: '"Sixteenth" is not in the list given on line 30 (Fourteenth, Fifteenth)'
+    verdict: false-positive
+    note: an edition history in the front matter (Fourteenth and Fifteenth Edition … Sixteenth Edition); no list is announced
+  - rule: unbalanced-bracket
+    line: 1926
+    text: "[_Enter_ LORD DARLINGTON, MR. DUMBY, LOR"
+    message: '"[" is never closed'
+    verdict: correct
+    note: the stage direction [Enter LORD DARLINGTON, … MR. CECIL GRAHAM. is never closed, unlike every other one

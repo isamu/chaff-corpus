@@ -1,0 +1,16 @@
+id: nps-article-this-is-federal-wilderness
+title: "National Park Service: This is Federal Wilderness"
+language: en
+genre: blog/owned-media
+format: markdown
+source:
+  url: https://www.nps.gov/articles/federal-wilderness.htm
+  fetched: 2026-10-20
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: "Work of the US federal government (17 U.S.C. 105): \"material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain\" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/articles/federal-wilderness.htm); converted to Markdown; images are not included, only their captions and credit lines"
+redistribute: true
+sha256: fcc08619be9451a3748065842dae13924d08a914af278fb56ba9093020ca8bdb
+notes: "An article a park publishes on nps.gov for its visitors. The page's own labels around the article (\"Article\", \"You Might Also Like\", \"Loading results...\", the tags) are kept as the converter gives them. The source is html; the text is source.format html converted by scripts/lib/source-format.ts (the converter of isamu/chaff-corpus#60). The page's links are not kept by the converter, so the text has none."

@@ -1,0 +1,57 @@
+id: nasa-knows-robotics-5-8
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 17
+    text: ""
+    message: Section "How Does NASA Use Robots?" has no number, code or link (4 of 7 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: very-adjective
+    line: 19
+    text: very large objects in space. Spacecraft
+    message: '"very large" and other "very" + adjective: 2.4 per 1000 words (limit 2)'
+    verdict: false-positive
+    note: two plain uses of very in a students' explainer
+  - rule: max-paragraph-length
+    line: 23
+    text: NASA uses robotic arms to move large obj
+    message: This paragraph runs 14 sentences (limit 5)
+    verdict: correct
+    note: a fourteen-sentence paragraph
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: Section "How Do Robots Explore Other Worlds?" has no number, code or link (4 of 7 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose, naming the spacecraft (Spirit, Cassini, Voyager)
+  - rule: max-paragraph-length
+    line: 27
+    text: Robots help NASA explore the solar syste
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph in a web article
+  - rule: concrete-evidence-density
+    line: 31
+    text: ""
+    message: Section "How Does NASA Use Robotic Airplanes?" has no number, code or link (4 of 7 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: max-paragraph-length
+    line: 33
+    text: NASA uses many airplanes called UAVs. UA
+    message: This paragraph runs 10 sentences (limit 5)
+    verdict: correct
+    note: a ten-sentence paragraph
+  - rule: very-adjective
+    line: 33
+    text: very long time without the need to land.
+    message: '"very long" and other "very" + adjective: 2.4 per 1000 words (limit 2)'
+    verdict: false-positive
+    note: two plain uses of very in a students' explainer
+  - rule: concrete-evidence-density
+    line: 35
+    text: ""
+    message: Section "How Can Robots Help Astronauts?" has no number, code or link (4 of 7 sections)
+    verdict: false-positive
+    note: the source section links to a SPHERES video, which the html conversion drops; it also names Robonaut and SPHERES

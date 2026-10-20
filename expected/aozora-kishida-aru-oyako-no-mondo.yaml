@@ -1,0 +1,63 @@
+id: aozora-kishida-aru-oyako-no-mondo
+chaff: 0.36.0
+findings:
+  - rule: repeated-sentence-ending
+    line: 38
+    text: つまり、お母さんがして下さることは、みんな僕ひとりで出来ることなんです。以前は、
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's spoken explanation; the んです ending is the character's voice
+  - rule: repeated-sentence-ending
+    line: 118
+    text: 駄目です、駄目です。その涙がなんです。僕たちは、今まで、その涙を見るのが怖かつた
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's outburst (駄目です、駄目です。…なんです。…のです。) in a play
+  - rule: repeated-sentence-ending
+    line: 142
+    text: 切りたくても切れないから、こんなことをいふのです。僕は、お母さんを憎みたくても憎
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's mounting confession; the のです ending is the character's voice
+  - rule: clause-chain
+    line: 218
+    text: お前は、わしのいひつけを守らず、勝手に家を出て行つたが、わしが死ぬと、また勝手に
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's reproach in one breath; clause count is the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 236
+    text: 僕は自分の運命について、このごろ、しきりに考へてゐるのですが、親の力といふものを
+    message: 「〜です」で終わる文が 4 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's argued speech; the のです ending is the character's voice
+  - rule: max-ten
+    line: 240
+    text: この調子で、あなたの才能が、あなたの性格全体が、殊に、あなたの意志が、そのまま、
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's enumeration (才能が、性格全体が、意志が) in dialogue; commas are the author's choice
+  - rule: max-ten
+    line: 240
+    text: 僕は自分の眼指や、鼻の形や、顎の尖りかたや、さういふ処が、あなたに似て来たことを
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: false-positive
+    note: a character's enumeration (眼指や、鼻の形や、顎の尖りかたや) in dialogue; commas are the author's choice
+  - rule: repeated-sentence-ending
+    line: 240
+    text: 僕は、あなたに似ないために、世の中で最も下等な人間に似てゐたらと思ふ位です。僕は
+    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's argued speech; the のです ending is the character's voice
+  - rule: topic-predicate-distance
+    line: 240
+    text: 僕は自分の眼指や、鼻の形や、顎の尖りかたや、さういふ処が、あなたに似て来たことを
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: false-positive
+    note: a long sentence of a character's speech; the topic-to-predicate distance is the author's choice in dialogue
+  - rule: repeated-sentence-ending
+    line: 270
+    text: 知りたいわけがあるのだ。光もなく、音もない一つの世界を想像してみろ、そして、そこ
+    message: 「〜だ」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: a character's (a ghost's) solemn speech; the のだ ending is the character's voice

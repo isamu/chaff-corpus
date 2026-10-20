@@ -1,0 +1,51 @@
+id: nasa-knows-black-hole-5-8
+chaff: 0.36.0
+findings:
+  - rule: weasel-word
+    line: 31
+    text: Scientists believe this type of black ho
+    message: '"scientists believe" does not say who'
+    verdict: false-positive
+    note: a students' explainer stating the scientific view; no particular source is being withheld
+  - rule: max-sentence-length
+    line: 35
+    text: The supermassive black hole at the cente
+    message: This sentence runs 41 words (limit 40)
+    verdict: false-positive
+    note: "two sentences joined: 'Sagittarius A.' (the source drops the star of Sagittarius A*) is read as an initial, not a sentence end"
+  - rule: concrete-evidence-density
+    line: 37
+    text: ""
+    message: Section "How Do Black Holes Form?" has no number, code or link (5 of 10 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: concrete-evidence-density
+    line: 45
+    text: ""
+    message: Section "If Black Holes Are “Black,” How Do Scientists Know They Are There?" has no number, code or link (5 of 10 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: concrete-evidence-density
+    line: 53
+    text: ""
+    message: Section "Could a Black Hole Destroy Earth?" has no number, code or link (5 of 10 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: concrete-evidence-density
+    line: 70
+    text: ""
+    message: Section "Will the Sun Ever Turn Into a Black Hole?" has no number, code or link (5 of 10 sections)
+    verdict: false-positive
+    note: a students' explainer section answering its question in prose; nothing concrete is missing
+  - rule: oxford-comma-consistency
+    line: 76
+    text: Spacecraft like these help scientists an
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "'origin, evolution and destiny' has no serial comma while the article's other lists use one"
+  - rule: concrete-evidence-density
+    line: 78
+    text: ""
+    message: Section "Who Studies Black Holes?" has no number, code or link (5 of 10 sections)
+    verdict: false-positive
+    note: the source section links to NASA's Astrophysics Division and the first black-hole image, which the html conversion drops
