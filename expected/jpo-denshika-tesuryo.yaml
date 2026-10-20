@@ -117,19 +117,19 @@ findings:
     verdict: false-positive
     note: a statute excerpt (抜粋) quotes articles 7, 9 and 40 only
   - rule: number-style-consistency
-    line: 113
+    line: 117
     text: 二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額の合計額
     message: 数え方の数を「二件」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive
     note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
   - rule: number-style-consistency
-    line: 113
+    line: 117
     text: 二千四百円に書面一枚につき八百円（二件以上を一の書面でする場合にあっては、一件ご
     message: 数え方の数を「二千四百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive
     note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
   - rule: number-style-consistency
-    line: 113
+    line: 117
     text: 八百円（二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額
     message: 数え方の数を「八百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
     verdict: false-positive

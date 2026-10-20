@@ -4,6 +4,10 @@ These terms appear throughout our website, communications, and reports, includin
 
 Table A. Terms and definitions
 
+Term
+
+Definition
+
 Access Board
 
 See U.S. Access Board (USAB)
@@ -148,6 +152,10 @@ The use of computer hardware- and software-based procedures to identify and proc
 
 Table B. Terms and definitions
 
+Term
+
+Definition
+
 Baseline
 
 A minimum or starting point used for comparisons (See ICT Testing Baseline).
@@ -171,6 +179,10 @@ The necessary requirements, resources, or approaches an organization must identi
 ## C
 
 Table C. Terms and definitions
+
+Term
+
+Definition
 
 C-Index
 
@@ -317,6 +329,10 @@ A formal written notification, used within the Federal Acquisition Regulation (F
 
 Table D. Terms and definitions
 
+Term
+
+Definition
+
 Data table
 
 A table with information organized into categories.
@@ -356,6 +372,10 @@ A physical or mental impairment that substantially limits one or more major life
 ## E
 
 Table E. Terms and definitions
+
+Term
+
+Definition
 
 E-Government line of business
 
@@ -400,6 +420,10 @@ A network restricted to authorized individuals. For the purposes of the annual S
 ## F
 
 Table F. Terms and definitions
+
+Term
+
+Definition
 
 Federal Acquisition Regulation (FAR)
 
@@ -449,6 +473,10 @@ The overall product evaluation criteria for technologies or components for which
 
 Table G. Terms and definitions
 
+Term
+
+Definition
+
 General exceptions
 
 E202 of the Revised 508 Standards specifies which types of ICT are exempt from compliance.
@@ -464,6 +492,10 @@ Refers to a set of tools or processes used by an agency to manage and monitor it
 ## H
 
 Table H. Terms and definitions
+
+Term
+
+Definition
 
 Hardware
 
@@ -502,6 +534,10 @@ A set of tags and rules used to encode and format text, graphics, animation, sou
 ## I
 
 Table I. Terms and definitions
+
+Term
+
+Definition
 
 ICT Deliverables
 
@@ -576,6 +612,10 @@ A private or internal network within an organization used for but not limited to
 
 Table J. Terms and definitions
 
+Term
+
+Definition
+
 Java
 
 A programming language and computing platform first released by Sun Microsystems in 1995.
@@ -587,6 +627,10 @@ A programming language that allows for complex and interactive features on webpa
 ## K
 
 Table K. Terms and definitions
+
+Term
+
+Definition
 
 Key Performance Indicator (KPI)
 
@@ -603,6 +647,10 @@ A closed functionality device providing information or services on a digital scr
 ## L
 
 Table L. Terms and definitions
+
+Term
+
+Definition
 
 Label
 
@@ -627,6 +675,10 @@ Suggests the maturity or conformance is below the desired standard but not as fa
 ## M
 
 Table 1. Terms and definitions
+
+Term
+
+Definition
 
 M-Index
 
@@ -682,6 +734,10 @@ The combined use of several media, such as audio and visual (e.g., video or anim
 
 Table 1. Terms and definitions
 
+Term
+
+Definition
+
 Name
 
 Text used by software to identify a component for the user. A name may be hidden and only exposed by assistive technology, whereas a label is presented to all users. In many cases, the label and the name are the same. Name is unrelated to the name attribute in HTML.
@@ -705,6 +761,10 @@ Software that is not a webpage, not embedded in a webpage, and not used in the r
 ## O
 
 Table O. Terms and definitions
+
+Term
+
+Definition
 
 Often
 
@@ -733,6 +793,10 @@ See also Category, which is used interchangeably. Used to describe groupings of 
 ## P
 
 Table P. Terms and definitions
+
+Term
+
+Definition
 
 Parent agency
 
@@ -800,6 +864,10 @@ See Section 508 Program Manager.
 
 Table Q. Terms and definitions
 
+Term
+
+Definition
+
 Qualified individual with a disability
 
 For purposes of receiving services, education or training, qualified individuals with disabilities meet essential eligibility requirements or qualifications for the job.
@@ -819,6 +887,10 @@ Refers to the Assessment criteria for agency response. Also denoted with “Q”
 ## R
 
 Table R. Terms and definitions
+
+Term
+
+Definition
 
 Rarely
 
@@ -859,6 +931,10 @@ A collection of rules used by automated tools to identify accessibility issues. 
 ## S
 
 Table S. Terms and definitions
+
+Term
+
+Definition
 
 Script
 
@@ -970,6 +1046,10 @@ The combined use of several media, such as audio and visual, to convey informati
 
 Table T. Terms and definitions
 
+Term
+
+Definition
+
 Table
 
 A two-dimensional group of rectangular cells organized into rows and columns. Tables can be used to display information, or used as a method of laying out information.
@@ -1034,6 +1114,10 @@ Equipment that enables interactive text based communications through the transmi
 
 Table U. Terms and definitions
 
+Term
+
+Definition
+
 U.S. Access Board
 
 The U.S. Access Board is a federal agency that promotes equality for people with disabilities through leadership in accessible design and the development of accessibility guidelines and standards for the built environment, transportation, communication, medical diagnostic equipment, and information technology.
@@ -1070,6 +1154,10 @@ The design and composition of an environment so it can be accessed, understood, 
 
 Table V. Terms and definitions
 
+Term
+
+Definition
+
 Variable Message Signs (VMS)
 
 Non-interactive electronic signs with scrolling, streaming, or paging-down capability. An example of a VMS is an electronic message board at a transit station that displays gate and arrival time information.
@@ -1101,6 +1189,10 @@ A document template established by the Information Technology Industry (ITI) Cou
 ## W
 
 Table W. Terms and definitions
+
+Term
+
+Definition
 
 Web Content Accessibility Guidelines (WCAG)
 

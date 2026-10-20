@@ -2,58 +2,58 @@ id: govuk-vat-notice-700-63-electronic-invoicing
 chaff: 0.34.0
 findings:
   - rule: which-that-consistency
-    line: 144
+    line: 148
     text: that are common to the individual invoic
     message: This restrictive clause opens with "that"; the document mostly uses "which"
     verdict: correct
   - rule: max-sentence-length
-    line: 146
+    line: 150
     text: For example, instead of repeating the fu
     message: This sentence runs 44 words (limit 40)
     verdict: correct
   - rule: oxford-comma-consistency
-    line: 175
+    line: 179
     text: You are free to choose a method of ensur
     message: This list punctuates differently from the rest (1 in this document)
     verdict: correct
   - rule: wordy-phrase
-    line: 193
+    line: 197
     text: created by means of a secure signature c
     message: '"by means of" can be said in fewer words'
     verdict: correct
   - rule: wordy-phrase
-    line: 228
+    line: 232
     text: In order to use a supporting document to
     message: '"in order to" can be said in fewer words'
     verdict: correct
   - rule: undefined-acronym
-    line: 275
+    line: 279
     text: EANCOM and ODETTE
     message: '"EANCOM" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 275
+    line: 279
     text: ODETTE
     message: '"ODETTE" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 288
+    line: 292
     text: FTP.
     message: '"FTP" is used without an expansion (7 such acronyms)'
     verdict: correct
   - rule: wordy-phrase
-    line: 300
+    line: 304
     text: In order to establish the authenticity a
     message: '"in order to" can be said in fewer words'
     verdict: correct
   - rule: hyphen-as-dash
-    line: 306
+    line: 310
     text: " - for example, margin scheme invoices"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
   - rule: wordy-phrase
-    line: 382
+    line: 386
     text: In order to assure electronic systems, H
     message: '"in order to" can be said in fewer words'
     verdict: correct

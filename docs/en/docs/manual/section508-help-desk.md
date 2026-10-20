@@ -28,6 +28,62 @@ Expertise availability
 
 Workflow and escalation efficiency
 
+Table 1: Standalone vs. Integrated Help Desk Considerations
+
+Consideration
+
+Standalone
+
+Integrated
+
+Resource Allocation
+
+Dedicated staff, tools, and funding
+
+Leverages existing infrastructure
+
+Visibility
+
+Clearly signals accessibility focus
+
+Users may not immediately recognize Section 508 support as an option
+
+User Experience
+
+Dedicated entry point
+
+Single point for all IT issues, accessibility routed through established processes
+
+Expertise
+
+Specialists handle issues end-to-end
+
+Existing staff trained to triage, escalation to subject matter expert (SME)
+
+Workflow
+
+Direct coordination with IT, acquisition, and program offices
+
+Relies on clear escalation paths
+
+Volume and Complexity
+
+Handles high volume/complex issues
+
+Suitable for low volume/simpler cases
+
+Tracking and Reporting
+
+Specialized metrics and reporting possible
+
+Metrics may be less granular unless configured
+
+Scalability
+
+Scales with program growth
+
+Limited to existing help desk capacity
+
 Tip: Your agency may start with an integrated approach and transition to a dedicated desk if volume, complexity, or user demand grows.
 
 ## Considerations When Establishing a Section 508 Help Desk
@@ -47,6 +103,10 @@ Documentation and Reporting – Collect sufficient data to support trend analysi
 Depending on program size and structure, these roles may be fulfilled by a single staff member or by a team with specialized responsibilities; in all cases, agencies should clearly define ownership and accountability for each function.
 
 Table 2: Roles and Responsibilities
+
+Role
+
+Responsibilities
 
 Help Desk Coordinator
 

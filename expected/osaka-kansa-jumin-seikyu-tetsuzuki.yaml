@@ -22,47 +22,47 @@ findings:
     message: 「手続」と書いています（この文書はふつう「手続き」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 93
+    line: 131
     text: (1)違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 93
+    line: 131
     text: )違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった日か
     message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 97
+    line: 135
     text: )違法又は不当に怠る事実には、原則として請求期間の制限はありません。
     message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: heading-end-punctuation-mix
-    line: 111
+    line: 149
     text: "#### 監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があり"
     message: 見出し「監査請求はその要旨を記載した文書（職員措置請求書）により行う必要があります。」だけ「。」で終わっています（ほかの見出しは「①　請求対象の特定」など 6 個が「：」「。」なしで終わる）
     verdict: correct
   - rule: heading-end-punctuation-mix
-    line: 141
+    line: 179
     text: "#### 職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は"
     message: 見出し「職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は怠る事実を証する書面（事実証明書）を添付することが必要です。」だけ「。」で終わっています（ほかの見出しは「①　請求対象の特定」など 6 個が「：」「。」なしで終わる）
     verdict: correct
   - rule: title-length
-    line: 141
+    line: 179
     text: "#### 職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は"
     message: 見出し「職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は怠る事実を証する書面（事実証明書）を添付することが必要です。」は 65 文字あります（40 文字まで）
     verdict: correct
   - rule: latin-spacing
-    line: 200
+    line: 238
     text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 200
+    line: 238
     text: " をダウンロード（無償）してください。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 200
+    line: 238
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct

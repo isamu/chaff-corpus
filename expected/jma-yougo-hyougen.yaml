@@ -7,65 +7,85 @@ findings:
     message: 見出し「階級表現」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
   - rule: hankaku-kana
-    line: 39
+    line: 47
     text: ･日照時間などの階級表現に用いる。
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
   - rule: hankaku-kana
-    line: 39
+    line: 47
     text: ･降水量･日照時間などの階級表現に用いる。
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
+  - rule: bracket-width-consistency
+    line: 56
+    text: (全体を1とする割合)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。45 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 56
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。45 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 59
+    text: (全体を1とする割合)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。45 箇所のうち 6 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 59
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。45 箇所のうち 6 箇所が違う）
+    verdict: unjudged
   - rule: missing-final-period
-    line: 47
+    line: 65
     text: す
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。29 段落のうち 2 段落）
     verdict: correct
   - rule: missing-final-period
-    line: 53
+    line: 71
     text: す
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。29 段落のうち 2 段落）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 62
+    line: 80
     text: (少ない)｣、「平年並」、「高い（多い）」の３つの階級について、それぞれの予想さ
     message: 括弧を「(」と書いています（この文書はふつう「（」。41 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 62
+    line: 80
     text: )｣、「平年並」、「高い（多い）」の３つの階級について、それぞれの予想される確率
     message: 括弧を「)」と書いています（この文書はふつう「）」。41 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: fullwidth-alnum-consistency
-    line: 62
+    line: 80
     text: ３つの階級について、それぞれの予想される確率を表現している。
     message: 全角の「３」と書いています（この文書はふつう半角の「3」。17 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: 公用文の書き方（1 桁は全角、2 桁以上は半角）に沿った全角の「３」
   - rule: hankaku-kana
-    line: 62
+    line: 80
     text: ｢低い(少ない)｣、「平年並」、「高い（多い）」の３つの階級について、それぞれの
     message: 半角の片仮名「｢」があります（全角は「「」）
     verdict: correct
   - rule: hankaku-kana
-    line: 62
+    line: 80
     text: ｣、「平年並」、「高い（多い）」の３つの階級について、それぞれの予想される確率を
     message: 半角の片仮名「｣」があります（全角は「」」）
     verdict: correct
   - rule: max-kanji-continuous
-    line: 92
+    line: 118
     text: 地域平均気温平年差
     message: 「地域平均気温平年差」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
     note: 用語集の見出し語（統計の専門用語）
   - rule: max-kanji-continuous
-    line: 100
+    line: 126
     text: 地域平均降水量平年比
     message: 「地域平均降水量平年比」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: 用語集の見出し語（統計の専門用語）
   - rule: max-kanji-continuous
-    line: 108
+    line: 134
     text: 地域平均日照時間平年比
     message: 「地域平均日照時間平年比」は漢字が 11 字続いています（8 字まで）
     verdict: false-positive

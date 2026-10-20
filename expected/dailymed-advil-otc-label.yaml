@@ -1,6 +1,18 @@
 id: dailymed-advil-otc-label
 chaff: 0.34.0
 findings:
+  - rule: proper-noun-density
+    line: 3
+    sha256: b5fb9c8d3e21201cb132bb6f2f805280fd6a5a976caffc249e34f530dbae140d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 3
+    sha256: b5fb9c8d3e21201cb132bb6f2f805280fd6a5a976caffc249e34f530dbae140d
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 10
+    sha256: 35e235f1fb214e1a56fb8f002afed7f7f98c311f9680c759a7d55ac7c4e0cbe4
+    verdict: unjudged
   - rule: all-caps-shouting
     line: 19
     sha256: 21c3a945395154a823b5a4aad82e7192b87c0b81e3003695340751e97db74f5c
@@ -41,7 +53,51 @@ findings:
     line: 144
     sha256: 9c28b72e24e65f5b3b31c586986b52288ee0b5692df4764c54e6a0c75cc92b98
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 200
+    sha256: 70b90db7eb44a384502cc649990d3972e7d5b50bfecc1cd5b1351c2d28bf19d3
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 223
+    sha256: a0820ee9ff1f5617a1496b284beb91623904cdd4d0f30677c6c022d1d07535c9
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 233
+    sha256: 58302efb5c744114e2dfea43874e61a64d504ed65c845c768bba9703a03a59e2
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 239
+    sha256: 922ddf04d51037178b1de48cfe8c86fb3f5f5b966ce1f803b1f10ea59ac1b641
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 243
+    sha256: d798ca345dfccd0550d29f2c8eef81745e6e2b944082b33dae061c83e97e3e2f
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 247
+    sha256: ab2f23d06fd217c05e16085c6e85efd8fb365935d33ee3ba1d6420ec940c07a8
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 312
+    sha256: 58302efb5c744114e2dfea43874e61a64d504ed65c845c768bba9703a03a59e2
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 322
+    sha256: d798ca345dfccd0550d29f2c8eef81745e6e2b944082b33dae061c83e97e3e2f
+    verdict: unjudged
+  - rule: all-caps-shouting
+    line: 326
+    sha256: ab2f23d06fd217c05e16085c6e85efd8fb365935d33ee3ba1d6420ec940c07a8
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 344
+    sha256: 03d0815f133cc34f7b0db919c01501d4bc809c1bb6bce11d976daa54479acf8b
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 364
+    sha256: 320291dde8735cda649c81bdc519b54050ec6a18bd02483f3335a6436cd4b51b
+    verdict: unjudged
   - rule: article-sound
-    line: 226
+    line: 384
     sha256: 4ed9abfb972f7a86cfcd2d9ce1ed3fc639971c91dbd16e046df0a78e12dbb0cb
     verdict: unjudged

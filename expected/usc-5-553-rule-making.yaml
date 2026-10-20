@@ -32,25 +32,25 @@ findings:
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 52
+    line: 60
     text: §4, 60 Stat. 238.
     message: '"§4" (address 4) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 58
+    line: 66
     text: 557 of this title apply instead of this
     message: '"557" (address 557) is not in this document'
     verdict: false-positive
     note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: dangling-reference
-    line: 58
+    line: 66
     text: sections 556 and 557 of this title apply
     message: '"sections 556" (address 556) is not in this document'
     verdict: false-positive
     note: a section of another part of the U.S. Code or of another Act, outside this one-section document
   - rule: dangling-reference
-    line: 76
+    line: 84
     text: section 601 of this title.
     message: '"section 601" (address 601) is not in this document'
     verdict: false-positive

@@ -39,6 +39,22 @@ You can also charge a business a fixed sum for the cost of recovering a late com
 
 The amount you’re allowed to charge depends on the amount of debt. You can only charge the business once for each payment.
 
+Amount of debt
+
+What you can charge
+
+Up to £999.99
+
+£40
+
+£1,000 to £9,999.99
+
+£70
+
+£10,000 or more
+
+£100
+
 These amounts are set by late payment legislation.
 
 If you’re a supplier, you can also claim for reasonable costs each time you try to recover the debt.

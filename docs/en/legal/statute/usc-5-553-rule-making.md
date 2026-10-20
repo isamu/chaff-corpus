@@ -47,6 +47,14 @@ Except when notice or hearing is required by statute, this subsection does not a
 
 Historical and Revision Notes
 
+Derivation
+
+U.S. Code
+
+Revised Statutes and
+
+Statutes at Large
+
 5 U.S.C. 1003.
 
 June 11, 1946, ch. 324, §4, 60 Stat. 238.

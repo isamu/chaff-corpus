@@ -12,5 +12,5 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/legalcode.ja
   note: "The article page ends with \"本著作（CA2096）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック・ライセンスの下に提供されています\" (the portal's site policy, https://current.ndl.go.jp/sitepolicy, allows use under that licence without application); 出典: 鈴木康平. カレントアウェアネス. 2026, (367), CA2096, https://current.ndl.go.jp/ca2096; converted to Markdown, and the portal's links to neighbouring articles, the posting dates and the \"PDFファイル\" link were removed"
 redistribute: true
-sha256: 4dc915e8cb5f744d6d38bd85782e5c325006de76ffee57580c7769f5b3ffc90a
-notes: "Converted with scripts/lib/source-format.ts (html) from the article page; the lines before the article's title heading (links to neighbouring articles) and the portal's date and PDF-link lines under it were then removed. The text is otherwise as converted. The converter drops a section heading that is followed directly by its first subsection heading at the same HTML level (h4 then h4); those section headings were put back by hand, as #### lines, in the article's order. The table of the six licences keeps its rows; its header row is lost in conversion."
+sha256: f92bedfa8ce837b2f4d5269cc385a586051d03b8b50836556f46ceabbc9956f2
+notes: "Converted with scripts/lib/source-format.ts (html) from the article page; the lines before the article's title heading (links to neighbouring articles) and the portal's date and PDF-link lines under it were then removed. The text is otherwise as converted. The table of the six licences keeps its rows and its header row."
