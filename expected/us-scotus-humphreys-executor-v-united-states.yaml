@@ -1,0 +1,95 @@
+id: us-scotus-humphreys-executor-v-united-states
+chaff: 0.36.0
+findings:
+  - rule: dangling-reference
+    line: 1
+    text: § 3(a), c. 229, 43 Stat. 936, 939, 28 U.
+    message: '"§ 3(a)" (address 3.a) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 15
+    text: § 1, 2, 15 U.S.C. §§ 41, 42 (15 USCA §§
+    message: '"§ 1" (address 1) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 15
+    text: 2, 15 U.S.C. §§ 41, 42 (15 USCA §§ 41, 4
+    message: '"2" (address 2) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 15
+    text: "section 1 provides: 'Not more than three"
+    message: '"section 1" (address 1) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 17
+    text: Section 5 of the act (15 USCA § 45) in p
+    message: '"Section 5" (address 5) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 29
+    text: Section 12 of the act provided for the a
+    message: '"Section 12" (address 12) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: max-paragraph-length
+    line: 29
+    text: First. The question first to be consider
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 29
+    text: exclusio alterius; but this court held t
+    message: '"exclusio" is not in the dictionary; did you mean "exclusion"?'
+    verdict: false-positive
+    note: part of the Latin maxim expressio unius est exclusio alterius
+  - rule: unknown-word
+    line: 29
+    text: expressio unius est exclusio alterius; b
+    message: '"expressio" is not in the dictionary; did you mean "expression"?'
+    verdict: false-positive
+    note: part of the Latin maxim expressio unius est exclusio alterius
+  - rule: unknown-word
+    line: 29
+    text: unius est exclusio alterius; but this co
+    message: '"unius" is not in the dictionary; did you mean "units"?'
+    verdict: false-positive
+    note: part of the Latin maxim expressio unius est exclusio alterius
+  - rule: which-that-consistency
+    line: 39
+    text: that comes from experience.' The report
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: false-positive
+    note: a quotation from a Senate committee report; the wording cannot be changed
+  - rule: dangling-reference
+    line: 49
+    text: section 1, as we have just construed it,
+    message: '"section 1" (address 1) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: max-paragraph-length
+    line: 49
+    text: Second. To support its contention that t
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: dangling-reference
+    line: 61
+    text: § 530, citing No. 48 of the Federalist,
+    message: '"§ 530" (address 530) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: which-that-consistency
+    line: 61
+    text: that makes one master in his own house p
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: unjudged
+  - rule: empty-section
+    line: 81
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged

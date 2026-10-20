@@ -1,0 +1,39 @@
+id: gutenberg-twain-hadleyburg
+chaff: 0.36.0
+findings:
+  - rule: bracket-nesting
+    line: 1063
+    text: “‘The remark which I made to the unhappy
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: a note quoted inside the Chair's speech, which itself quotes the stranger; the triple nesting is the story's content
+  - rule: bracket-nesting
+    line: 1129
+    text: “And so, if the Chair will examine the t
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: bracketed interruptions with dialogue inside a speaker's speech; the nesting is the story's stage-like form
+  - rule: bracket-nesting
+    line: 1308
+    text: “‘The remark which I made to the strange
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: a note quoted inside the Chair's speech with the audience's bracketed shouts; the nesting is the story's content
+  - rule: unbalanced-bracket
+    line: 1311
+    text: ”
+    message: '"”" closes nothing that was opened'
+    verdict: correct
+    note: "the quotation marks of this reading do not balance: the line before already closes the Chair's speech with a right double quote"
+  - rule: demonstrative-opener-run
+    line: 1485
+    text: It was my purpose when I got up before t
+    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: a character's spoken plea; the 'It was ...' sentences are the speaker's voice
+  - rule: bracket-nesting
+    line: 1654
+    text: “It is another temptation, Edward--I’m a
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: the auctioneer's bracketed shouts inside a character's speech; the nesting is the story's content

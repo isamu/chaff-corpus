@@ -1,0 +1,180 @@
+id: us-scotus-schechter-poultry-v-united-states
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 1
+    text: "  By demurrer to the indictment and appr"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
+    verdict: unjudged
+  - rule: unbalanced-bracket
+    line: 17
+    text: (15 USCA § 707(a). The minimum number of
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: unbalanced-bracket
+    line: 23
+    text: (15 USCA § 703(a)(1, 2); and that the co
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: sentence-spacing-consistency
+    line: 25
+    text: "  The charges in the ten counts, respect"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 29
+    text: "  The Constitution established a nationa"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 31
+    text: co-operative effort by those engaged in
+    message: '"co-operative" here, where the document usually writes "cooperative" (1 of 3)'
+    verdict: false-positive
+    note: "'cooperative' is the statute's spelling inside quotations; the opinion's own prose writes co-operative and co-operation consistently"
+  - rule: max-paragraph-length
+    line: 33
+    text: Second. The Question of the Delegation o
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: space-before-punctuation
+    line: 33
+    text: " . 446. The Constitution provides that '"
+    message: A space before "."
+    verdict: correct
+    note: a stray space before the period in 'L.Ed . 446'
+  - rule: comparative-without-baseline
+    line: 37
+    text: more fundamental. It is whether there is
+    message: '"more fundamental" does not say what it is compared with'
+    verdict: false-positive
+    note: the comparison is with the question in the Panama Refining case, named in the sentence before
+  - rule: max-paragraph-length
+    line: 41
+    text: The act does not define 'fair competitio
+    message: This paragraph runs 23 sentences (limit 12)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 41
+    text: "  Id., 248 U.S. 315, page 258, 39 S.Ct."
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 41
+    text: misrepresenation, to the selling of anot
+    message: '"misrepresenation" is not in the dictionary; did you mean "misrepresentation"?'
+    verdict: correct
+    note: a typo for misrepresentation
+  - rule: unbalanced-bracket
+    line: 43
+    text: (15 USCA § 45  introduced the expression
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: unbalanced-bracket
+    line: 43
+    text: "[section 5 (15 USCA § 45  introduced the"
+    message: '"[" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: sentence-spacing-consistency
+    line: 53
+    text: "  But would it be seriously contended th"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 61
+    text: Such a sweeping delegation of legislativ
+    message: This paragraph runs 21 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 65
+    text: In Hampton, Jr. & Company v. United Stat
+    message: This paragraph runs 16 sentences (limit 12)
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 67
+    text: (15 USCA § 703 is without precedent. It
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: unbalanced-bracket
+    line: 69
+    text: (15 USCA § 703(a) is not in terms limite
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: unbalanced-bracket
+    line: 69
+    text: (15 USCA § 73(f) penalties are confined
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: max-paragraph-length
+    line: 73
+    text: Were these transactions 'in' interstate
+    message: This paragraph runs 16 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 75
+    text: The undisputed facts thus afford no warr
+    message: This paragraph runs 17 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 77
+    text: Did the defendants' transactions directl
+    message: This paragraph runs 25 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 79
+    text: We recently had occasion, in Local 167 V
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 83
+    text: In determining how far the federal gover
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 85
+    text: The distinction between direct and indir
+    message: This paragraph runs 17 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 89
+    text: The question of chief importance relates
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 113
+    text: I have said that there is no standard, d
+    message: This paragraph runs 21 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 121
+    text: regulare commerce with foreign nations,
+    message: '"regulare" is not in the dictionary; did you mean "regulate"?'
+    verdict: correct
+    note: a typo for regulate in a quotation of the Constitution
+  - rule: max-paragraph-length
+    line: 123
+    text: I find no authority in that grant for th
+    message: This paragraph runs 16 sentences (limit 12)
+    verdict: correct
+  - rule: unbalanced-bracket
+    line: 125
+    text: (15 USCA § 707(a), with its explicit dis
+    message: '"(" is never closed'
+    verdict: correct
+    note: the citation's closing parenthesis is missing in the text
+  - rule: empty-section
+    line: 129
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged
+  - rule: name-variant
+    line: 23
+    what: '"National Industrial Recover Act" is one letter away from "National Industrial Recovery Act", the name the opinion uses everywhere else'
+    verdict: missed

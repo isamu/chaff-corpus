@@ -1,0 +1,51 @@
+id: gutenberg-chesterton-tremendous-trifles
+chaff: 0.36.0
+findings:
+  - rule: demonstrative-opener-run
+    line: 1212
+    text: This people has a natural faculty for
+    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: demonstrative-opener-run
+    line: 1751
+    text: That man that talks to me, what is he bu
+    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: name-variant
+    line: 2564
+    text: Crusaders had saved
+    message: '"Crusaders" is one letter away from "Crusades", which the document uses more than once'
+    verdict: false-positive
+    note: Crusaders (the people) and Crusades (the wars) are different words
+  - rule: demonstrative-opener-run
+    line: 2744
+    text: It was a splendid and frantic story, a s
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: demonstrative-opener-run
+    line: 2815
+    text: It is urged against the barber that he b
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: demonstrative-opener-run
+    line: 3066
+    text: It happened a long time
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: demonstrative-opener-run
+    line: 4161
+    text: It could not be the Derby, if only for t
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
+  - rule: demonstrative-opener-run
+    line: 4414
+    text: It happened so long ago
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: narrative and essay prose; the 'It ...' sentences are the author's rhythm, not a reader's puzzle

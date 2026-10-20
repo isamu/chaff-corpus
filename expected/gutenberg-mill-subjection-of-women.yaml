@@ -1,0 +1,27 @@
+id: gutenberg-mill-subjection-of-women
+chaff: 0.36.0
+findings:
+  - rule: demonstrative-opener-run
+    line: 86
+    text: It is
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: expletive 'It is/It could' openers in a literary essay; each refers clearly, the run is the author's rhythm
+  - rule: demonstrative-opener-run
+    line: 312
+    text: It could make kings and nobles resign th
+    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: expletive 'It is/It could' openers in a literary essay; each refers clearly, the run is the author's rhythm
+  - rule: demonstrative-opener-run
+    line: 2362
+    text: It
+    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: expletive 'It is/It could' openers in a literary essay; each refers clearly, the run is the author's rhythm
+  - rule: demonstrative-opener-run
+    line: 2629
+    text: It is scarcely three
+    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: expletive 'It is/It could' openers in a literary essay; each refers clearly, the run is the author's rhythm
