@@ -1,0 +1,143 @@
+id: fed-sr-26-4
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 5
+    text: "### SR 26-4: Guidance on Lending to Indi"
+    message: 'The heading "SR 26-4: Guidance on Lending to Individuals Not Legally Authorized to Work in the United States" runs 16 words (limit 14)'
+    verdict: unjudged
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject has 86 characters (up to 70)
+    verdict: unjudged
+  - rule: adverb-overuse
+    line: 21
+    text: Legally Authorized to Work in the United
+    message: 23 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 21
+    text: Guidance on Lending to Individuals Not L
+    message: '"Authorized to Work" appears 6 times (limit 5)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: This guidance reminds Board supervised b
+    message: This sentence runs 34 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: As with all lending activities, banking
+    message: This sentence runs 38 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: Lending to individuals who are not legal
+    message: This sentence runs 38 words (limit 18)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 29
+    text: "  As with all lending activities, bankin"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 9)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Safe and sound underwriting is a key ris
+    message: This sentence runs 26 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: Such underwriting includes assessing the
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: When lending to borrowers who are not le
+    message: This sentence runs 44 words (limit 18)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 31
+    text: "  When lending to borrowers who are not"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 9)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 45
+    text: Underwriting standards typically conside
+    message: This sentence runs 27 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 47
+    text: When a borrower's income is derived from
+    message: This sentence runs 31 words (limit 18)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 47
+    text: "  When a borrower's income is derived fr"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 9)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 57
+    text: Banking organizations may consider wheth
+    message: This sentence runs 29 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 61
+    text: Banking organizations may face additiona
+    message: This sentence runs 43 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: Banking organizations may consider wheth
+    message: This sentence runs 40 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 65
+    text: Banking organizations may consider, as r
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 65
+    text: Banking organizations may consider wheth
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged
+  - rule: sentence-spacing-consistency
+    line: 65
+    text: "  Banking organizations may consider whe"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (4 of 9)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: As a result, banking organizations may e
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 69
+    text: Banking organizations may face elevated
+    message: This sentence runs 41 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 71
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: heading-level-skip
+    line: 79
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: Additionally, the Underwriting Standards
+    message: This sentence runs 32 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 81
+    text: See "Interagency Guidelines Establishing
+    message: This sentence runs 19 words (limit 18)
+    verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 81
+    text: See "Interagency Guidelines Establishing
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: unjudged

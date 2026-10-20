@@ -1,0 +1,203 @@
+id: kokkai-221-shugiin-okinawa-hoppo-3
+chaff: 0.36.0
+findings:
+  - rule: clause-chain
+    line: 69
+    sha256: 60ea0639655a0063de9c06c646feb2f4b98440b0ce5d500b71bc8f3f823154f9
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 73
+    sha256: 607221d969e2b5372e494703668477f2486699b3138870166f25a87c588c0b43
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 79
+    sha256: 58aeea851df22a62a8f93e61c8a1eb8e94fcd7fe85c9892f5971263070cdceae
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 87
+    sha256: d01d64297351397ecb8824684dd00b105dd3c0ce518b4d3a0ecaaf39ca21f1c2
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 87
+    sha256: a7313504f1962fcc549a43d88754e98adf0a8ee5c1aab5cd2e88e0451bcdfde0
+    verdict: unjudged
+  - rule: adversative-ga-repeat
+    line: 119
+    sha256: 7744041a0383bd6022cd7ffaf490255120e1be1d6748a1907515ebf3650f5576
+    verdict: unjudged
+  - rule: clause-chain
+    line: 127
+    sha256: f8a7e792dd55fc21ca207504e58976a602f20406eecb39996fe527b0c99e3ce8
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 141
+    sha256: 44091076dad023186a5516726c42bd9900d662db09b5c0e9541076d6dedcbc67
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 147
+    sha256: 936c6423dec9bcc082d47e876ad7d0d10922c73889ce78d651f6690b4a779971
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 151
+    sha256: e076accc7780fd8f990950b1c37eafe2f3a996b0f52d2f57ca1533ef20b1aca2
+    verdict: unjudged
+  - rule: clause-chain
+    line: 195
+    sha256: 0c0cc7c5349d3a615a2d174cb6e87d1386e15208f2ea6c55585e67b9a97a23bc
+    verdict: unjudged
+  - rule: max-ten
+    line: 195
+    sha256: 0c0cc7c5349d3a615a2d174cb6e87d1386e15208f2ea6c55585e67b9a97a23bc
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 195
+    sha256: 0c0cc7c5349d3a615a2d174cb6e87d1386e15208f2ea6c55585e67b9a97a23bc
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 199
+    sha256: d55698edf56db1006eb2c54f4f2eca0deff0f7fbcc1d5a9354ce9545bcc8ccd3
+    verdict: unjudged
+  - rule: clause-chain
+    line: 201
+    sha256: 6a8f9f82041ed5a8422a685a0461ee54fe4f68a58794ff453abfae8081c1d347
+    verdict: unjudged
+  - rule: max-ten
+    line: 201
+    sha256: 6a8f9f82041ed5a8422a685a0461ee54fe4f68a58794ff453abfae8081c1d347
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 201
+    sha256: abbc449f66afbf0612a0fc8d86958bb6c055f82f538c233dffdb44809bd558c1
+    verdict: unjudged
+  - rule: clause-chain
+    line: 203
+    sha256: f19b64423ed401e59819f0e499644faa06c180e168e292e9a59934f74ab6637c
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 203
+    sha256: f19b64423ed401e59819f0e499644faa06c180e168e292e9a59934f74ab6637c
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 205
+    sha256: 31a25356cef0f76d4250774fcafd443dfbf4fd89d527baaad5a426fc1ff20593
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 205
+    sha256: ec5eefd7c867c792105eab2b69bfafca1d5f0d6d5e6cf525d796ed233bf825e1
+    verdict: unjudged
+  - rule: clause-chain
+    line: 207
+    sha256: 67786b4927ee37b0830683488982b764f3d40e3239d3dbcd7d59a228c8b9ff3b
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 207
+    sha256: 67786b4927ee37b0830683488982b764f3d40e3239d3dbcd7d59a228c8b9ff3b
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 207
+    sha256: 67786b4927ee37b0830683488982b764f3d40e3239d3dbcd7d59a228c8b9ff3b
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 213
+    sha256: 7219ffd9597b602a43edf552d72f586c89519b21404e1e32d59d5b33993ce620
+    verdict: unjudged
+  - rule: max-ten
+    line: 215
+    sha256: 358b5c4a9b9849751b3787cd3d38b9c4eb19fcaa588edfb226b2d69c701de11f
+    verdict: unjudged
+  - rule: clause-chain
+    line: 221
+    sha256: 71df184d1aa27b45fda1feac1f5b8f23d4297c9f9395b4279a34d01df2edaf0e
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 223
+    sha256: 76e032db442e7107542c31faa7bad264d89d47aaef0be38a934e4cd184f595e0
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 225
+    sha256: 3d7659751352630624be6f764d193779c914d1df8d7a2fe00ff891e3e3ca2759
+    verdict: unjudged
+  - rule: clause-chain
+    line: 227
+    sha256: 3e1eaa4ebc7c2767b92e20fda911cdf94af67ab20d9246ed5fc91a8269baab44
+    verdict: unjudged
+  - rule: max-ten
+    line: 227
+    sha256: 3e1eaa4ebc7c2767b92e20fda911cdf94af67ab20d9246ed5fc91a8269baab44
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 227
+    sha256: 3e1eaa4ebc7c2767b92e20fda911cdf94af67ab20d9246ed5fc91a8269baab44
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 235
+    sha256: 7b5ce48f0c8b69296effea9a2c3af67414503f7bc3725ddf26574fcc29f2174c
+    verdict: unjudged
+  - rule: clause-chain
+    line: 241
+    sha256: 3b596b4100f2851bee8b022fdb16d574db4d92b26b7468fd16fc0bb5a048eed1
+    verdict: unjudged
+  - rule: max-ten
+    line: 241
+    sha256: 3b596b4100f2851bee8b022fdb16d574db4d92b26b7468fd16fc0bb5a048eed1
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 241
+    sha256: 3b596b4100f2851bee8b022fdb16d574db4d92b26b7468fd16fc0bb5a048eed1
+    verdict: unjudged
+  - rule: clause-chain
+    line: 243
+    sha256: 02b95c328e4ddc48db15212ad2e30dae1af00e7b3b18484c59138638dbd3e770
+    verdict: unjudged
+  - rule: max-ten
+    line: 243
+    sha256: 02b95c328e4ddc48db15212ad2e30dae1af00e7b3b18484c59138638dbd3e770
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 243
+    sha256: 02b95c328e4ddc48db15212ad2e30dae1af00e7b3b18484c59138638dbd3e770
+    verdict: unjudged
+  - rule: clause-chain
+    line: 245
+    sha256: 3b9cbe6b510cc7a6521ab9c6027e194053bcb61420dbd2f807d28648992bf08f
+    verdict: unjudged
+  - rule: clause-chain
+    line: 245
+    sha256: 9676f08f9db972cd237a17841d7692a2b47ca96f45f73d0b91119970c418c257
+    verdict: unjudged
+  - rule: max-ten
+    line: 245
+    sha256: 3b9cbe6b510cc7a6521ab9c6027e194053bcb61420dbd2f807d28648992bf08f
+    verdict: unjudged
+  - rule: max-ten
+    line: 245
+    sha256: 9676f08f9db972cd237a17841d7692a2b47ca96f45f73d0b91119970c418c257
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 245
+    sha256: 4169dde463e0c6f7ce413b80df656b2d6a3c5021b7d88f361c929eeb664daa47
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 245
+    sha256: 3b9cbe6b510cc7a6521ab9c6027e194053bcb61420dbd2f807d28648992bf08f
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 245
+    sha256: 9676f08f9db972cd237a17841d7692a2b47ca96f45f73d0b91119970c418c257
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 247
+    sha256: efecda38c582ca9c0f9260bc4236b58f15253ed2a0eb8cd79e4df97b52f111c6
+    verdict: unjudged
+  - rule: clause-chain
+    line: 261
+    sha256: 73de2446e46cc5a1a3dea0ded7d618b0c9f16e3faf685697b33c69c071585f61
+    verdict: unjudged
+  - rule: max-ten
+    line: 261
+    sha256: 73de2446e46cc5a1a3dea0ded7d618b0c9f16e3faf685697b33c69c071585f61
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 273
+    sha256: c4eb8d18c75803e1651f6d622d15d88e271ad521d67a365fcdb759cd11ed1ee3
+    verdict: unjudged

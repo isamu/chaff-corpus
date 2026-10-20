@@ -1,0 +1,60 @@
+id: fed-sr-26-2
+chaff: 0.36.0
+findings:
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 294 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: "the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns"
+  - rule: max-sentence-length
+    line: 23
+    text: "Applicability:  This letter is expected"
+    message: This sentence runs 24 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 25
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 74 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 25
+    text: This revised guidance reflects superviso
+    message: This sentence runs 23 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 27
+    text: Based on supervisory experience and indu
+    message: This sentence runs 56 words (limit 18)
+    verdict: correct
+  - rule: max-sentence-length
+    line: 27
+    text: The revised guidance highlights sound pr
+    message: This sentence runs 32 words (limit 18)
+    verdict: correct
+  - rule: vague-word-density
+    line: 27
+    text: The revised guidance highlights sound pr
+    message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 29
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: vague-word-density
+    line: 29
+    text: Reserve Banks are asked to distribute th
+    message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 41
+    text: SR letter 21-8, "Interagency Statement o
+    message: This sentence runs 21 words (limit 18)
+    verdict: false-positive
+    note: "a footnote citing another letter by number, title and date, not a sentence"
+  - rule: heading-level-skip
+    line: 45
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: unjudged
