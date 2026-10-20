@@ -1,0 +1,9 @@
+id: gutenberg-stevenson-apology-for-idlers
+chaff: 0.36.0
+findings:
+  - rule: name-variant
+    line: 562
+    text: Englishman wishes to have such a feeling
+    message: '"Englishman" is one letter away from "Englishmen", which the document uses more than once'
+    verdict: false-positive
+    note: singular Englishman and plural Englishmen are both right, not a variant spelling

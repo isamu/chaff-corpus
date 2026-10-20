@@ -1,0 +1,82 @@
+id: us-scotus-west-virginia-v-barnette
+chaff: 0.36.0
+findings:
+  - rule: unknown-word
+    line: 9
+    text: superiod to that of laws enacted by temp
+    message: '"superiod" is not in the dictionary; did you mean "superior"?'
+    verdict: correct
+    note: a transcription typo for superior
+  - rule: max-paragraph-length
+    line: 19
+    text: As the present Chief Justice said in dis
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 21
+    text: reiment. Symbols of State often convey p
+    message: '"reiment" is not in the dictionary; did you mean "raiment"?'
+    verdict: correct
+    note: a transcription typo for raiment
+  - rule: demonstrative-opener-run
+    line: 25
+    text: It is also to be noted that the compulso
+    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: false-positive
+    note: expletive 'It is ...' openers (It is also to be noted, It is not clear), not pointers back to something unclear
+  - rule: unknown-word
+    line: 47
+    text: vigilent in calling it to account. The a
+    message: '"vigilent" is not in the dictionary; did you mean "vigilant"?'
+    verdict: correct
+    note: a typo for vigilant
+  - rule: empty-intensifier
+    line: 53
+    text: It is important to note that while it is
+    message: '"it is important to note that" emphasises without saying anything'
+    verdict: correct
+  - rule: unknown-word
+    line: 65
+    text: ecause the principles of its decision ar
+    message: '"ecause" is not in the dictionary; did you mean "cause"?'
+    verdict: correct
+    note: a stray space splits because into 'b ecause'
+  - rule: unknown-word
+    line: 71
+    text: curiam decisions which preceded and fore
+    message: '"curiam" is not in the dictionary; did you mean "curium"?'
+    verdict: false-positive
+    note: part of the Latin phrase per curiam
+  - rule: doubled-word
+    line: 137
+    text: the flagsalute is an allowable portion o
+    message: '"The the" doubles a word; one of the two is left over'
+    verdict: correct
+    note: "'The the' in a quotation from the Gobitis opinion is a transcription slip"
+  - rule: max-paragraph-length
+    line: 137
+    text: The opinion says 'The the flagsalute is
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: dangling-reference
+    line: 139
+    text: § 172, 36 U.S.C.A. § 172, prescribes no
+    message: '"§ 172" (address 172) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 143
+    text: § 305(g), 50 U.S.C.A.Appendix, § 305(g).
+    message: '"§ 305(g)" (address 305.g) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: dangling-reference
+    line: 143
+    text: § 305(g).
+    message: '"§ 305(g)" (address 305.g) is not in this document'
+    verdict: false-positive
+    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: unknown-word
+    line: 137
+    what: '"flagsalute" runs flag-salute together; it is not a word'
+    verdict: missed

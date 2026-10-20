@@ -1,0 +1,15 @@
+id: gutenberg-bacon-essays
+title: "Francis Bacon, The Essays or Counsels, Civil and Moral (Project Gutenberg #575)"
+language: en
+genre: literature/essay
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/575/pg575.txt
+  fetched: 2026-10-20
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1625); Project Gutenberg eBook #575, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: a73a69ff5bb9d4e0f87ad2d6a33d9e09e74a3ad91c103909ac30ef714db1e29f
+notes: The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it.

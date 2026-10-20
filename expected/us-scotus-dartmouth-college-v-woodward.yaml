@@ -1,0 +1,372 @@
+id: us-scotus-dartmouth-college-v-woodward
+chaff: 0.36.0
+findings:
+  - rule: sentence-spacing-consistency
+    line: 15
+    text: "  Those acts enable some tribunals, not"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 563)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 25
+    text: From this brief review of the most essen
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 33
+    text: A corporation is an artificial being, in
+    message: This paragraph runs 15 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 35
+    text: consitutes the consideration, and in mos
+    message: '"consitutes" is not in the dictionary; did you mean "constitutes"?'
+    verdict: correct
+    note: a typo for constitutes
+  - rule: max-paragraph-length
+    line: 47
+    text: The court has bestowed on this argument
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: demonstrative-opener-run
+    line: 51
+    text: This is plainly a contract to which the
+    message: 5 sentences in a row open with a word that points back, such as "This" (limit 2)
+    verdict: false-positive
+    note: deliberate anaphora ('It is a contract ... It is a contract ...') in the opinion's argument
+  - rule: spelling-consistency
+    line: 57
+    text: modelling by the authority of the legisl
+    message: '"modelling" here, where the document usually spells it "modeling" (3 of 17)'
+    verdict: correct
+    note: the opinion spells modeling both ways
+  - rule: unknown-word
+    line: 79
+    text: partieular point, being of opinion, on g
+    message: '"partieular" is not in the dictionary; did you mean "particular"?'
+    verdict: correct
+    note: a transcription typo for particular
+  - rule: which-that-consistency
+    line: 89
+    text: that is the object of the stipulation. H
+    message: This restrictive clause opens with "that"; the document mostly uses "which"
+    verdict: unjudged
+  - rule: redundant-expression
+    line: 91
+    text: On the part of the former, it amounts to
+    message: '"same identical" says the same thing twice'
+    verdict: correct
+    note: "'same identical' is redundant"
+  - rule: undefined-acronym
+    line: 93
+    text: BULLER, in the case of the King v. Pasmo
+    message: '"BULLER" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a judge's surname in capitals (the reporter's small caps), not an acronym
+  - rule: article-sound
+    line: 97
+    text: an hospital, and that there is, in reali
+    message: '"an hospital" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: max-paragraph-length
+    line: 97
+    text: We are informed, by the case of Philips
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 99
+    text: These corporations, civil and eleemosyna
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 101
+    text: substitued in its place; thus disappoint
+    message: '"substitued" is not in the dictionary; did you mean "substituted"?'
+    verdict: correct
+    note: a typo for substituted
+  - rule: redundant-expression
+    line: 103
+    text: Mr. Justice Blackstone lays it down (2 B
+    message: '"same identical" says the same thing twice'
+    verdict: correct
+    note: "'same identical' is redundant"
+  - rule: undefined-acronym
+    line: 103
+    text: KENYON says, that an existing corporatio
+    message: '"KENYON" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a judge's surname in capitals (the reporter's small caps), not an acronym
+  - rule: doubled-punctuation
+    line: 125
+    text: .. 2 T. R. 346; Porter's Case, 1 Co. 22
+    message: 'Punctuation is doubled: ".."'
+    verdict: correct
+    note: "'S.C..' doubles the period of the abbreviation"
+  - rule: max-paragraph-length
+    line: 125
+    text: An aggregate corporation, at common law,
+    message: This paragraph runs 27 sentences (limit 12)
+    verdict: correct
+  - rule: article-sound
+    line: 127
+    text: an hospital created and endowed by the g
+    message: '"an hospital" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: unknown-word
+    line: 127
+    text: repects, they are so, although they invo
+    message: '"repects" is not in the dictionary; did you mean "respects"?'
+    verdict: correct
+    note: a typo for respects
+  - rule: article-sound
+    line: 129
+    text: An hospital, founded by a private benefa
+    message: '"An hospital" takes "A" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: max-paragraph-length
+    line: 133
+    text: It was, indeed, supposed at the argument
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 133
+    text: COKE.
+    message: '"COKE" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a judge's surname in capitals (the reporter's small caps), not an acronym
+  - rule: max-paragraph-length
+    line: 135
+    text: When, then, the argument assumes, that b
+    message: This paragraph runs 21 sentences (limit 12)
+    verdict: correct
+  - rule: undefined-acronym
+    line: 135
+    text: HOLT down to the present day. Rex v. Bur
+    message: '"HOLT" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: a judge's surname in capitals (the reporter's small caps), not an acronym
+  - rule: undefined-acronym
+    line: 135
+    text: MS., in 2 T. R. 346. Nay, more, private
+    message: '"MS" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: MS. is the standard abbreviation for manuscript in a citation
+  - rule: unknown-word
+    line: 135
+    text: munificient gifts of private donors for
+    message: '"munificient" is not in the dictionary; did you mean "munificent"?'
+    verdict: correct
+    note: a typo for munificent
+  - rule: article-sound
+    line: 139
+    text: an hereditament founded in property, and
+    message: '"an hereditament" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: max-paragraph-length
+    line: 139
+    text: To all eleemosynary corporations, a visi
+    message: This paragraph runs 46 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 143
+    text: But an eleemosynary, like every other co
+    message: This paragraph runs 41 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 143
+    text: amotion of them from their corporate cap
+    message: '"amotion" is not in the dictionary; did you mean "motion"?'
+    verdict: false-positive
+    note: amotion is a real legal term (removal from office)
+  - rule: demonstrative-opener-run
+    line: 149
+    text: It further declares, that the trustees,
+    message: 5 sentences in a row open with a word that points back, such as "It" (limit 2)
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 157
+    text: But it is objected, that the charter of
+    message: This paragraph runs 22 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 163
+    text: Now, among these recitals, it appears, t
+    message: This paragraph runs 19 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 165
+    text: This is not all. A charter may be grante
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 165
+    text: fieri. Upon the acceptance, there is an
+    message: '"fieri" is not in the dictionary; did you mean "fiery"?'
+    verdict: false-positive
+    note: part of the Latin phrase in fieri
+  - rule: unknown-word
+    line: 173
+    text: flatu, the charter cannot be construed a
+    message: '"flatu" is not in the dictionary; did you mean "flats"?'
+    verdict: false-positive
+    note: part of a Latin phrase (mero flatu)
+  - rule: unknown-word
+    line: 173
+    text: naturce, with whom it might be made.
+    message: '"naturce" is not in the dictionary; did you mean "nature"?'
+    verdict: correct
+    note: a transcription typo (naturce)
+  - rule: max-paragraph-length
+    line: 175
+    text: Is this, however, a just and legal view
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 177
+    text: It behooves those also, who hold, that a
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+  - rule: agreement-slip
+    line: 181
+    text: its will take away the private property
+    message: '"its will" puts a possessive where the subject belongs'
+    verdict: false-positive
+    note: "'at its will' uses will as a noun; the possessive is right"
+  - rule: max-paragraph-length
+    line: 183
+    text: As to the case of the contract of marria
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: sentence-spacing-consistency
+    line: 183
+    text: "  It may be the only effectual mode of e"
+    message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 563)
+    verdict: unjudged
+  - rule: unknown-word
+    line: 183
+    text: contractus. Titles to land, constituting
+    message: '"contractus" is not in the dictionary; did you mean "contracts"?'
+    verdict: false-positive
+    note: a Latin word (contractus) in a quoted maxim
+  - rule: doubled-punctuation
+    line: 189
+    text: .. 14 Johns. 527; Zebach v. Smith, 3 Bin
+    message: 'Punctuation is doubled: ".."'
+    verdict: correct
+    note: "'S.C..' doubles the period of the abbreviation"
+  - rule: max-paragraph-length
+    line: 189
+    text: Another objection growing out of, and co
+    message: This paragraph runs 39 sentences (limit 12)
+    verdict: correct
+  - rule: numeral-sentence-start
+    line: 189
+    text: 113 a, Harg. & Butler's note 2; Sugden o
+    message: The sentence opens with the numeral "113"
+    verdict: false-positive
+    note: "a citation (Co. Litt. 113 a): the abbreviation's period is not a sentence end"
+  - rule: spelling-consistency
+    line: 189
+    text: pretence to say, that grants of them are
+    message: '"pretence" here, where the document usually spells it "pretense" (3 of 17)'
+    verdict: correct
+    note: the opinion spells pretense both ways
+  - rule: max-paragraph-length
+    line: 191
+    text: In respect to corporate franchises, they
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: doubled-word
+    line: 193
+    text: its own favorites. Could the legislature
+    message: '"its its" doubles a word; one of the two is left over'
+    verdict: correct
+    note: "'its its' doubles a word"
+  - rule: spelling-consistency
+    line: 193
+    text: pretence can it take away or restrain th
+    message: '"pretence" here, where the document usually spells it "pretense" (3 of 17)'
+    verdict: correct
+    note: the opinion spells pretense both ways
+  - rule: article-sound
+    line: 195
+    text: an hereditament, descendible in perpetui
+    message: '"an hereditament" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: article-sound
+    line: 195
+    text: an hereditament, he assigns it in perpet
+    message: '"an hereditament" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: max-paragraph-length
+    line: 195
+    text: Thus far, the rights of the corporation
+    message: This paragraph runs 22 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 197
+    text: It is attempted, however, to establish t
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 197
+    text: absque injurid. Each trustee has a veste
+    message: '"absque" is not in the dictionary; did you mean "basque"?'
+    verdict: false-positive
+    note: part of the Latin phrase absque injuria
+  - rule: unknown-word
+    line: 197
+    text: injurid. Each trustee has a vested right
+    message: '"injurid" is not in the dictionary; did you mean "injured"?'
+    verdict: correct
+    note: a transcription typo for injuria
+  - rule: unknown-word
+    line: 197
+    text: recompence for services performed for th
+    message: '"recompence" is not in the dictionary; did you mean "recompense"?'
+    verdict: false-positive
+    note: recompence is the period's spelling of recompense (1819), not a typo
+  - rule: doubled-punctuation
+    line: 201
+    text: .. 1 Ves. jr. 243. The principal questio
+    message: 'Punctuation is doubled: ".."'
+    verdict: correct
+    note: "'S.C..' doubles the period of the abbreviation"
+  - rule: max-paragraph-length
+    line: 201
+    text: I might now proceed to the discussion of
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: max-paragraph-length
+    line: 203
+    text: The remaining inquiry is, whether the ac
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+  - rule: unknown-word
+    line: 205
+    text: oversers, fifteen of whom shall form a q
+    message: '"oversers" is not in the dictionary; did you mean "overseers"?'
+    verdict: correct
+    note: a typo for overseers
+  - rule: unknown-word
+    line: 207
+    text: trnstees are in future only to nominate,
+    message: '"trnstees" is not in the dictionary; did you mean "trustees"?'
+    verdict: correct
+    note: a transcription typo for trustees
+  - rule: article-sound
+    line: 209
+    text: an hospital, of private foundation, is n
+    message: '"an hospital" takes "a" before that sound'
+    verdict: false-positive
+    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
+  - rule: empty-section
+    line: 221
+    text: "## Notes"
+    message: Nothing under the heading "Notes"
+    verdict: unjudged

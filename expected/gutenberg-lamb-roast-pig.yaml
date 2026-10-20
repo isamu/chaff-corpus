@@ -1,0 +1,9 @@
+id: gutenberg-lamb-roast-pig
+chaff: 0.36.0
+findings:
+  - rule: known-misspelling
+    line: 68
+    text: occured through the negligence of this u
+    message: '"occured" is a misspelling of "occurred"'
+    verdict: correct
+    note: a misspelling in this edition's text
