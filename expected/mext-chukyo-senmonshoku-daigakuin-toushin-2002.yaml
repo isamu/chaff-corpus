@@ -1,0 +1,228 @@
+id: mext-chukyo-senmonshoku-daigakuin-toushin-2002
+chaff: 0.36.0
+findings:
+  - rule: ngram-repetition
+    line: 20
+    text: 高度専門職業人養成に特化した新たな大学院制度の創設の必要性
+    message: 「人養成に特化した」が 7 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 38
+    text: の問題の解決のためには，今まで以上に多様な経験や国際的視野を持ち，高度で専門的な
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 38
+    text: 21世紀は「知」の時代とも言われるが，複雑化・高度化したこれらの問題の解決のため
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 38
+    text: それらの人材は，社会経済の各分野において指導的役割を果たすとともに，国際的にも活
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 40
+    text: （2）このような高度専門職業人養成については，平成10年に大学審議会が「21世紀
+    message: この文は 183 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 43
+    text: （3）しかし，高度専門職業人養成を質量共に充実させることに対する社会的要請が様々
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: one-sentence-paragraph-run
+    line: 43
+    text: （3）しかし，高度専門職業人養成を質量共に充実させることに対する社会的要請が様々
+    message: 一文だけの段落が 6 個続いています（4 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 47
+    text: の大学院の整備の在り方についても検討することが求められている。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: （6）本審議会では，以上のような状況を踏まえ，近年の各般における社会の変化やグロ
+    message: この文は 177 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 49
+    text: （6）本審議会では，以上のような状況を踏まえ，近年の各般における社会の変化やグロ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 53
+    text: （8）本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，高度専門
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 61
+    text: 修士課程は当初，研究者養成という役割を担っており，博士課程の前段階という性格であ
+    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 69
+    text: たり，職業資格を取得する者の養成についてのみならず，既に職業に就いている者や資格
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 69
+    text: このような社会的要請は，特定の職業の実務に就いたり，職業資格を取得する者の養成に
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 71
+    text: （2）我が国におけるこうした高度専門職業人養成に対する課題と期待に適切にこたえて
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 75
+    text: これらの専門大学院においては，国際的に活躍できる高度専門職業人養成のための積極的
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 77
+    text: （2）しかし，今後，社会的なニーズの更なる高まりが予想される高度専門職業人養成を
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 79
+    text: また，従来の大学院修士課程における研究指導，修士論文との関係から，修了要件として
+    message: この文は 167 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 79
+    text: の修士課程の中の一類型として位置付けられているため，その大学院で修得させる職業能
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 79
+    text: の研究の成果の審査に合格することを制度上課し，これについて個別の課題についての研
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 79
+    text: さらに，様々な分野でその求められる能力に適した高度な専門職業人を養成するための実
+    message: 「さらに」と書いています（この文書はふつう「更に」と書く語です。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 83
+    text: 現在検討が進められている法科大学院については，上記2の目的に即した「法曹養成に特
+    message: この文は 206 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 87
+    text: （1）以上のことから，今後，国際的，社会的にも活躍する高度専門職業人の養成を質量
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 87
+    text: （1）以上のことから，今後，国際的，社会的にも活躍する高度専門職業人の養成を質量
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 102
+    text: （4）専門職大学院は，現在の専門大学院の役割を発展させ，修業年限や教育方法，修了
+    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 107
+    text: 専門職大学院は，修業年限，教育方法，修了要件，教員組織等が既存の大学院の課程とは
+    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 111
+    text: （1）工学系や薬学系などの修士課程のように，既存の大学院の課程において技術者等の
+    message: この文は 148 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: comparative-without-baseline
+    line: 117
+    text: より広い分野で多様なニーズが増大していくことも想定されることから，専門職大学院の
+    message: 「より広い」は、何と比べているかが書かれていません
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 123
+    text: （1）各専攻分野における「高度で専門的な職業能力を有する人材の養成」という目的・
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 123
+    text: （1）各専攻分野における「高度で専門的な職業能力を有する人材の養成」という目的・
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 125
+    text: このため，教育方法については，専門職大学院の目的を踏まえ，設置基準上は個別の研究
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 125
+    text: このため，教育方法については，専門職大学院の目的を踏まえ，設置基準上は個別の研究
+    message: この文は 151 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 125
+    text: このため，教育方法については，専門職大学院の目的を踏まえ，設置基準上は個別の研究
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 125
+    text: このため，教育方法については，専門職大学院の目的を踏まえ，設置基準上は個別の研究
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 125
+    text: （2）専門職大学院は，高度専門職業人養成に特化した実践的な教育を行うものであり，
+    message: 「は」で出した主題から述語まで 118 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 125
+    text: このため，教育方法については，専門職大学院の目的を踏まえ，設置基準上は個別の研究
+    message: 「は」で出した主題から述語まで 113 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 139
+    text: （1）既存の大学院の課程の修了者については，「修士（○○）」，「博士（○○）」（
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 139
+    text: の大学院の課程の修了者については，「修士（○○）」，「博士（○○）」（○○は専攻
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 139
+    text: （1）既存の大学院の課程の修了者については，「修士（○○）」，「博士（○○）」（
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 141
+    text: その結果，「○○修士（専門職）」（例えば，経営管理修士（専門職））や「○○修士（
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 145
+    text: （1）本審議会は，別途，大学の質の保証に係るシステム全体の在り方について検討し，
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 145
+    text: （1）本審議会は，別途，大学の質の保証に係るシステム全体の在り方について検討し，
+    message: この文は 254 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 145
+    text: （1）本審議会は，別途，大学の質の保証に係るシステム全体の在り方について検討し，
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 145
+    text: （1）本審議会は，別途，大学の質の保証に係るシステム全体の在り方について検討し，
+    message: 「は」で出した主題から述語まで 218 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 147
+    text: 専門職大学院についてもその目的にかんがみ，外部の客観性のある評価を受け，その質の
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged

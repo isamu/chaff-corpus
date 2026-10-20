@@ -1,0 +1,26 @@
+id: k8s-hello-minikube-en
+chaff: 0.36.0
+findings:
+  - rule: title-case-consistency
+    line: 65
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+    note: "the only Title Case heading; the others are sentence case"
+  - rule: heading-echo
+    line: 67
+    text: Open the Kubernetes dashboard. You can d
+    message: The first sentence repeats the heading "Open the Dashboard"
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 80
+    text: add-on and opens the proxy in the defaul
+    message: '"add-on" here, where the document usually writes "addon" (1 of 3)'
+    verdict: correct
+    note: "「add-on」 in prose where the page writes addon(s) elsewhere"
+  - rule: contraction-consistency
+    line: 198
+    text: Do not run this on an
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: false-positive
+    note: "the full form in a safety warning, for emphasis"

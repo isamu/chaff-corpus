@@ -1,0 +1,408 @@
+id: mext-chukyo-daigaku-shitsu-hosho-toushin-2002
+chaff: 0.36.0
+findings:
+  - rule: no-doubled-joshi
+    line: 18
+    text: の質の保証の必要性
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 19
+    text: の大学の質の保証システムの現状
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 39
+    text: の保証の情報ネットワークの構築等
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: duplicate-heading
+    line: 44
+    text: "## 大学の質の保証に係る新たなシステムの構築について（答申）"
+    message: 見出し「大学の質の保証に係る新たなシステムの構築について（答申）」は、同じ親の下の 6 行目の見出しと同じです
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 48
+    text: (1)  社会・経済・文化のグローバル化が進展し，国際的な競争がますます激しくな
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 48
+    text: (1)  社会・経済・文化のグローバル化が進展し，国際的な競争がますます激しくな
+    message: この文は 156 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 48
+    text: (1)  社会・経済・文化のグローバル化が進展し，国際的な競争がますます激しくな
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 49
+    text: また，設置認可についても，従来度々の弾力化や簡素化が図られてきたが，今後さらに，
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 49
+    text: また，設置認可についても，従来度々の弾力化や簡素化が図られてきたが，今後さらに，
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 49
+    text: の大学設置基準の規定の新設以来10年の間に自己点検・評価が定着してきているものの
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 51
+    text: 大学審議会の平成10年の答申「21世紀の大学像と今後の改革方策について」において
+    message: この文は 310 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    text: の保証のためのシステムが全体としていかにあるべきかという視点に立って，審議を行っ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    text: の整備－，多元的な評価システムの確立－大学の個性化と教育研究の不断の改善－，はい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 51
+    text: の育成－教育研究の質の向上－，教育研究システムの柔構造化－大学の自律性の確保－，
+    message: 「の」が読点を挟まずに 6 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 51
+    text: 大学審議会の平成10年の答申「21世紀の大学像と今後の改革方策について」において
+    message: 「は」で出した主題から述語まで 137 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 52
+    text: (4)  また，この問題は総合規制改革会議等においても議論が行われ，国による規制
+    message: この文は 183 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 52
+    text: (4)  また，この問題は総合規制改革会議等においても議論が行われ，国による規制
+    message: 「は」で出した主題から述語まで 157 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 54
+    text: (6)  本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，この
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 61
+    text: そこで，大学が優れた人材の養成と独創的な学術研究の推進といった，言わば「知の創造
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 61
+    text: そこで，大学が優れた人材の養成と独創的な学術研究の推進といった，言わば「知の創造
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 62
+    text: (2)  我が国においても，諸外国と同様，自己点検・評価の充実や大学評価・学位授
+    message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: max-paragraph-length
+    line: 62
+    text: この中で多くの国の共通の施策としては，大学評価を挙げることができる。先進主要国は
+    message: この段落は 9 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 62
+    text: アメリカでは，伝統的に，大学や専門職団体が組織した様々なアクレディテーション（適
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 62
+    text: の国の共通の施策としては，大学評価を挙げることができる。先進主要国はすべて大学評
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 62
+    text: の質の一層の確保を図るため，これらの団体に対する連邦政府の認定制度が導入された。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 66
+    text: の教育研究の質の保証については，現在，国による厳格な設置認可と各大学における自己
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 70
+    text: (3)  また，大学設置基準等において，大学はその教育研究活動等の状況について自
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 71
+    text: の国公私立大学のうち92％の大学で何らかの形で自己点検・評価を実施し，75％の大
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 73
+    text: (4)  現行の設置認可は，前述のように大学の質の保証の観点で一定の役割を果たし
+    message: この文は 156 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 73
+    text: の質の保証の観点で一定の役割を果たしており，設置認可の際，教育課程，教員組織，校
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 73
+    text: (4)  現行の設置認可は，前述のように大学の質の保証の観点で一定の役割を果たし
+    message: 「は」で出した主題から述語まで 142 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    text: (1)  大学の設置認可制度は，その教育研究の質を保証する上で一定の役割を果たし
+    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 81
+    text: (3)  こうした流れを踏まえ，国の事前規制である設置認可制度を見直し，学問の自
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 86
+    text: の教育研究の質の維持向上を図り，その一層の活性化が可能となるような新たなシステム
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 92
+    text: この場合，国は大学設置基準等を基に，大学設置・学校法人審議会において，教育研究上
+    message: この文は 166 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 92
+    text: この場合，国は大学設置基準等を基に，大学設置・学校法人審議会において，教育研究上
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 92
+    text: この場合，国は大学設置基準等を基に，大学設置・学校法人審議会において，教育研究上
+    message: 「は」で出した主題から述語まで 156 字あります（80 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 93
+    text: (2)  この設置認可の対象を見直すに当たっては，大学の自主性・自律性を尊重し，
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 95
+    text: の設置認可の際の重要な要素であり，大学の設置認可は，学位を授与するためにふさわし
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 96
+    text: (5)  したがって，国の設置認可は，大学，大学院の基本組織である学部，研究科等
+    message: この文は 151 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 96
+    text: (5)  したがって，国の設置認可は，大学，大学院の基本組織である学部，研究科等
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 113
+    text: この場合，大学の学部等において授与している学位を文学関係，教育学関係，法学関係，
+    message: この文は 181 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 113
+    text: この場合，大学の学部等において授与している学位を文学関係，教育学関係，法学関係，
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 114
+    text: また，収容定員が減少する場合については国が事前規制を行う必要性に乏しいことなどか
+    message: この文は 183 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 114
+    text: また，収容定員が減少する場合については国が事前規制を行う必要性に乏しいことなどか
+    message: 「は」で出した主題から述語まで 123 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 115
+    text: (8)  短期大学及び高等専門学校の学科の新設・改廃については，大学の学部に相当
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 118
+    text: 大学，大学院，短期大学及び高等専門学校の設置・廃止
+    message: 「大学，大学院，短期大学及び高等専門学校の設置・廃止」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 119
+    text: 新たな種類・分野の学位を授与する学部等の設置や従来の教育の分野を変更する短期大学
+    message: 「新たな種類・分野の学位を授与する学部等の設置や従来の教育の分野を変更する短期大学及び高等専門学校の学科の設置」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 120
+    text: 設置者の変更
+    message: 「設置者の変更」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 121
+    text: 大学全体の収容定員増に係る学則変更（私立大学等の場合）
+    message: 「大学全体の収容定員増に係る学則変更（私立大学等の場合）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 123
+    text: (10)  なお，以上のような整理の結果，学部等の設置が認可事項となるか届出事項
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 130
+    text: このような規模や分野に関する現在の規制を残すことについては，大学の質の保証のため
+    message: この文は 153 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 130
+    text: なお，医師，歯科医師，獣医師，教員及び船舶職員の養成に係る大学，学部等については
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 130
+    text: の質の保証のために実施するものである設置認可制度の改善の趣旨を徹底する観点からは
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 138
+    text: 今回，これらの基準が設置審査の最低基準であるとの観点に立って，それぞれの規定の必
+    message: 「ことが必要である」が 8 回出てきます（5 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 142
+    text: これらの基準は学生等の多様な活動を可能にするとともに学校法人の資産確保の面で一定
+    message: この文は 150 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 142
+    text: これらの基準は学生等の多様な活動を可能にするとともに学校法人の資産確保の面で一定
+    message: 「は」で出した主題から述語まで 140 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 148
+    text: の教育研究活動の一層の改善に反映させるため，平成12年度に大学評価・学位授与機構
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 148
+    text: より客観的で透明性の高い第三者評価を実施し，その評価結果を大学の教育研究活動の一
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: clause-chain
+    line: 152
+    text: (1)  国による事前規制を最小限のものとし，設置後の大学の組織運営や教育研究活
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 152
+    text: (1)  国による事前規制を最小限のものとし，設置後の大学の組織運営や教育研究活
+    message: この文は 182 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 153
+    text: (2)  このため，大学の教育研究活動等の状況について，様々な第三者評価機関のう
+    message: この文は 168 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 153
+    text: その際，大学の理念や特色は多様であるため，各々の評価機関が個性輝く大学づくりを推
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 154
+    text: (3)  また，大学の質の向上については，大学が自らの教育研究活動や，組織運営の
+    message: この文は 269 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 154
+    text: (3)  また，大学の質の向上については，大学が自らの教育研究活動や，組織運営の
+    message: 一文に読点が 11 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 154
+    text: の改善のための循環過程を自らのうちに構築していくことが当然必要であるが，これに加
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 154
+    text: の教育研究の改善のための循環過程の一環として導入することが必要である。
+    message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 155
+    text: (4)  なお，認証評価機関による評価は，それぞれの評価機関が独自に定める基準に
+    message: この文は 148 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 155
+    text: (4)  なお，認証評価機関による評価は，それぞれの評価機関が独自に定める基準に
+    message: 「は」で出した主題から述語まで 127 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 159
+    text: の質の維持向上のために各大学が自ら定期的に受け，その結果を大学の改善に役立ててい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 160
+    text: 大学は，第三者評価の推進に関する強い社会的要請にかんがみ，自己点検・評価に加えて
+    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 162
+    text: なお，我が国では機関別第三者評価を実施する機関が必ずしも十分育成されておらず，現
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 170
+    text: (1)  国は，認証評価機関の認証に係る一定の基準（機関認証基準）を示し，認証申
+    message: 「(1)  国は，認証評価機関の認証に係る一定の基準（機関認証基準）を示し，認証申請のあった機関のうちこの基準を満たすものを認証する。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（7 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: list-item-form-mix
+    line: 171
+    text: (2)  機関認証基準としては，例えば以下の事項を定めることが考えられる。
+    message: 「(2)  機関認証基準としては，例えば以下の事項を定めることが考えられる。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（7 項目のうち 2 項目）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 181
+    text: 大学評価・学位授与機構は，当分の間，私立大学に係る評価を行わないものとすることと
+    message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 193
+    text: (1)  今後の国公私立大学の教育研究における質の維持向上は，新たに導入する第三
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 194
+    text: (2)  違法状態の大学に対する国の措置としては，行政指導以外には，現行法令上，
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-ten
+    line: 194
+    text: (2)  違法状態の大学に対する国の措置としては，行政指導以外には，現行法令上，
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 197
+    text: の中の一部の学部等における違法状態をもって大学自体が閉鎖されるという事態を招くこ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 203
+    text: また，今回の改革はこれまでの大学の在り方に大きな影響を与えるものであるため，新た
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: unjudged
+  - rule: teki-overuse
+    line: 204
+    text: 大学は公共的な機関であり，今回の改革によって一層大学の自主的・自律的な取組が可能
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: unjudged

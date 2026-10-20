@@ -1,0 +1,147 @@
+id: aozora-yagi-mazushiki-shinto
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "#### 母の瞳"
+    message: 見出し「母の瞳」の深さが 2 から 4 へ飛んでいます（3 のはず）
+    verdict: false-positive
+    note: "青空文庫's markup puts the author as h2 and each poem title as h4; the collection has no level between"
+  - rule: topic-predicate-distance
+    line: 149
+    text: 湯あがりの桃子は赤いねまきを着て
+    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one long sentence"
+  - rule: clause-chain
+    line: 250
+    text: 大山とんぼを　知ってるか
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence with many clauses"
+  - rule: duplicate-heading
+    line: 301
+    text: "#### 春"
+    message: 見出し「春」は、同じ親の下の 295 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 314
+    text: "#### 春"
+    message: 見出し「春」は、同じ親の下の 295 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 352
+    text: "#### 春"
+    message: 見出し「春」は、同じ親の下の 295 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 357
+    text: "#### 春"
+    message: 見出し「春」は、同じ親の下の 295 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 364
+    text: "#### 春"
+    message: 見出し「春」は、同じ親の下の 295 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 382
+    text: "#### 冬"
+    message: 見出し「冬」は、同じ親の下の 183 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 412
+    text: "#### 冬"
+    message: 見出し「冬」は、同じ親の下の 183 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: clause-chain
+    line: 473
+    text: 冬になって
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one sentence with many clauses"
+  - rule: topic-predicate-distance
+    line: 473
+    text: 冬になって
+    message: 「は」で出した主題から述語まで 150 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one long sentence"
+  - rule: duplicate-heading
+    line: 543
+    text: "#### 涙"
+    message: 見出し「涙」は、同じ親の下の 28 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 619
+    text: "#### 夕焼"
+    message: 見出し「夕焼」は、同じ親の下の 400 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 625
+    text: "#### 冬の夜"
+    message: 見出し「冬の夜」は、同じ親の下の 327 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 637
+    text: "#### 冬"
+    message: 見出し「冬」は、同じ親の下の 183 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 659
+    text: "#### 無題"
+    message: 見出し「無題」は、同じ親の下の 655 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 664
+    text: "#### 無題"
+    message: 見出し「無題」は、同じ親の下の 655 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 670
+    text: "#### 梅"
+    message: 見出し「梅」は、同じ親の下の 321 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 679
+    text: "#### 雨"
+    message: 見出し「雨」は、同じ親の下の 426 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 690
+    text: "#### 無題"
+    message: 見出し「無題」は、同じ親の下の 655 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 696
+    text: "#### 無題"
+    message: 見出し「無題」は、同じ親の下の 655 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: duplicate-heading
+    line: 700
+    text: "#### 無題"
+    message: 見出し「無題」は、同じ親の下の 655 行目の見出しと同じです
+    verdict: false-positive
+    note: "poems in a collection that share a title (春, 冬, 無題 ...); not repeated sections"
+  - rule: topic-predicate-distance
+    line: 702
+    text: 夢の中の自分の顔と言うものを始めて見た
+    message: 「は」で出した主題から述語まで 175 字あります（80 字まで）
+    verdict: false-positive
+    note: "verse lines without 。 read as one long sentence"

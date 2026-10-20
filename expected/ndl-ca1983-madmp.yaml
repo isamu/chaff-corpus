@@ -1,0 +1,160 @@
+id: ndl-ca1983-madmp
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "### Machine-actionable DMPs(maDMPs)の動向"
+    message: 見出し「Machine-actionable DMPs(maDMPs)の動向」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: false-positive
+    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
+  - rule: topic-predicate-distance
+    line: 15
+    text: このような情報は、研究助成機関のマネジメントや学術組織のコンプライアンスのためだ
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 17
+    text: DMPは、米国では2003年に米国国立衛生研究所（NIH）が研究データ共有の計画
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 19
+    text: さらに、2020年度からは日本学術振興会（JSPS）が科学研究費助成事業の一部に
+    message: 「科学研究費助成事業」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "the official name of a JSPS programme (科学研究費助成事業)"
+  - rule: quote-without-source
+    line: 29
+    text: 機械またはコンピューターがその構造に従ってプログラミングされることができるように
+    message: 「機械またはコンピューターがその構造に従ってプログラミングされることができるように一貫性のある方法で構造化された情報」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 46
+    text: そのため、DMPに基づく研究データ管理環境を作り出すには、相互運用性（Inter
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: "three sentences in a row end in 〜である"
+  - rule: topic-predicate-distance
+    line: 46
+    text: maDMPsは、単なるメタデータの問題に留まらず、相互運用性を実現するような永続
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: latin-spacing
+    line: 54
+    text: " DMP の作成やデータ登録業務などに集中することができるようになる。その結果と"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " DMP は、研究終了後にデータをいかに公開・保全するかのポリシーを確認する情報"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " によって多大なコミュニケーションコストがかかるようなタスクが自動化されることで"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " の中から登録すべきデータの存在を読み取り、ライブラリアンに対してデータの保全・"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " の作成やデータ登録業務などに集中することができるようになる。その結果として、研"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " は、研究終了後にデータをいかに公開・保全するかのポリシーを確認する情報源となる"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 54
+    text: " を確認することで研究者に改めて質問する必要がなくなる。このように、maDMPs"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: latin-spacing
+    line: 60
+    text: " DMP Common Standardのデータモデルの概略を下図に示す。同規格"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
+    verdict: correct
+    note: "「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere"
+  - rule: no-doubled-joshi
+    line: 60
+    text: のための共通データモデルの策定に取り組んだ。同グループは、まずDMPのユースケー
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: "「maDMPsのための共通データモデルの策定」: の separated by a quoted term, reads naturally"
+  - rule: stray-space
+    line: 60
+    text: " た DMP Common Standardのデータモデルの概略を下図に示す。同"
+    message: 「れ」と「た」は一続きの語句ですが、あいだに空白があります（1065 箇所のうち 2 箇所が空いている）
+    verdict: correct
+    note: "「策定 さ れ た」: spaces inside the word"
+  - rule: stray-space
+    line: 60
+    text: " れ た DMP Common Standardのデータモデルの概略を下図に示す"
+    message: 「さ」と「れ」は一続きの語句ですが、あいだに空白があります（1065 箇所のうち 2 箇所が空いている）
+    verdict: correct
+    note: "「策定 さ れ た」: spaces inside the word"
+  - rule: heading-numbering-mix
+    line: 62
+    text: "#### 図　DMP Common Standardのデータモデル"
+    message: 見出し「図　DMP Common Standardのデータモデル」だけ番号がありません（兄弟の見出しは「1. はじめに」など 7 個が番号付き）
+    verdict: false-positive
+    note: "a figure caption written as a heading by the page; not a section heading"
+  - rule: topic-predicate-distance
+    line: 64
+    text: また、個々の実体の概念や属性は、DataCite（CA1849参照）や、データカ
+    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 88
+    text: 及び計画に記されたデータのオープン化などは依然として推奨される。
+    message: 「及び」と書いています（この文書はふつう「および」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「及び」 in a note where the article writes 「および」 elsewhere"
+  - rule: max-kanji-continuous
+    line: 90
+    text: (5) 国立研究開発法人科学技術振興機構. 戦略的創造研究推進事業におけるデータ
+    message: 「戦略的創造研究推進事業」は漢字が 11 字続いています（8 字まで）
+    verdict: false-positive
+    note: "the official name of a JST programme in a cited title"
+  - rule: bracket-width-consistency
+    line: 145
+    text: )の動向. カレントアウェアネス. 2020, (345), CA1983, p
+    message: 括弧を「)」と書いています（この文書はふつう「）」。49 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the article's own title, (maDMPs) with half-width brackets as in its heading"
+  - rule: latin-spacing
+    line: 153
+    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。5 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: latin-spacing
+    line: 153
+    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
+  - rule: no-mixed-desumasu
+    line: 153
+    text: ライセンスの内容を知りたい方は https://creativecommons.
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
+  - rule: no-mixed-desumasu
+    line: 153
+    text: 本著作（CA1983）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"

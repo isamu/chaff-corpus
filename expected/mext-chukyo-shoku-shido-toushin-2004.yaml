@@ -1,0 +1,412 @@
+id: mext-chukyo-shoku-shido-toushin-2004
+chaff: 0.36.0
+findings:
+  - rule: empty-intensifier
+    line: 8
+    text: 社会の活力の源泉は，言うまでもなく社会を構成する人々の活力である。そして，人々の
+    message: 「言うまでもなく」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "「言うまでもなく」 asserts without saying why"
+  - rule: empty-intensifier
+    line: 12
+    text: このように，子どものころからの望ましい食習慣の確立は極めて重要な社会的課題であり
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+  - rule: max-sentence-length
+    line: 12
+    text: このように，子どものころからの望ましい食習慣の確立は極めて重要な社会的課題であり
+    message: この文は 153 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 12
+    text: このように，子どものころからの望ましい食習慣の確立は極めて重要な社会的課題であり
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 14
+    text: 同諮問に対しては，平成14年9月30日に「子どもの体力向上のための総合的な方策に
+    message: この文は 200 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 18
+    text: なお，栄養教諭制度は義務教育段階を対象とするものであるが，幼児期や高等学校段階に
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: empty-intensifier
+    line: 25
+    text: 特に，成長期にある児童生徒にとって，健全な食生活は健康な心身を育（はぐく）むため
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+  - rule: max-paragraph-length
+    line: 25
+    text: 特に，成長期にある児童生徒にとって，健全な食生活は健康な心身を育（はぐく）むため
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 25
+    text: の120％以上の体重の者）も増加しており，学校保健統計調査によれば，小学6年生男
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: max-sentence-length
+    line: 26
+    text: また，中央教育審議会答申「子どもの体力向上のための総合的な方策について」（平成1
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: empty-intensifier
+    line: 28
+    text: このように，子どもの体力の向上を図るとともに，食に関する自己管理能力の育成を通じ
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+  - rule: empty-intensifier
+    line: 29
+    text: また，健康と体力は今後の教育が目指すべき「生きる力」の基礎となるものであり，食に
+    message: 「非常に重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+  - rule: wordy-phrase
+    line: 29
+    text: また，健康と体力は今後の教育が目指すべき「生きる力」の基礎となるものであり，食に
+    message: 「であるといえる」は、もっと短く言えます
+    verdict: correct
+    note: "「であるといえる」 hedges a plain statement"
+  - rule: bracket-nesting
+    line: 31
+    text: 当審議会としても「『新しい時代を拓（ひら）く心を育てるために』－次世代を育てる心
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: "a reading in parentheses (拓（ひら）く) inside a quoted title counted as a third bracket level"
+  - rule: empty-intensifier
+    line: 31
+    text: 食に関する問題は，言うまでもなく家庭が中心となって担うものである。家族一緒の食事
+    message: 「言うまでもなく」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "「言うまでもなく」 asserts without saying why"
+  - rule: max-paragraph-length
+    line: 31
+    text: 食に関する問題は，言うまでもなく家庭が中心となって担うものである。家族一緒の食事
+    message: この段落は 6 文あります（5 文まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 31
+    text: 当審議会としても「『新しい時代を拓（ひら）く心を育てるために』－次世代を育てる心
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: repeated-sentence-ending
+    line: 31
+    text: 他方，核家族化の進展，共働きの増加などの社会環境の変化や，外食や調理済み食品の利
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: tari-unpaired
+    line: 35
+    text: たり，地域の伝統的な料理を提供することを通じ，地域の文化や伝統に対する理解と関心
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+    note: "「使用したり，…提供することを通じ」: たり without its pair"
+  - rule: topic-predicate-distance
+    line: 35
+    text: 現在，学校における食に関する指導は，学級担任を中心として，給食の時間において学校
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 36
+    text: さらに，保健体育審議会答申「生涯にわたる心身の健康の保持増進のための今後の健康に
+    message: この文は 191 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: repeated-sentence-ending
+    line: 41
+    text: 以上のように，これまでも学校栄養職員の活用を含め，学校における食に関する指導を進
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: bracket-nesting
+    line: 42
+    text: 食に関する指導体制の整備については，これまでも，平成9年9月22日の保健体育審議
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: "the annotation （仮称） inside a quoted term inside a quotation counted as a third bracket level"
+  - rule: max-sentence-length
+    line: 42
+    text: 食に関する指導体制の整備については，これまでも，平成9年9月22日の保健体育審議
+    message: この文は 394 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: no-doubled-joshi
+    line: 42
+    text: の資質向上策の検討の必要性が指摘されているだけでなく，平成14年答申においては，
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: max-sentence-length
+    line: 43
+    text: 食に関する専門性を指導面で十分に生かし，自ら責任を持って指導に当たっていくことが
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: ngram-repetition
+    line: 49
+    text: 栄養教諭は，教育に関する資質と栄養に関する専門性を併せ持つ職員として，学校給食を
+    message: 「ことが期待される」が 8 回出てきます（5 回まで）
+    verdict: correct
+    note: "「ことが期待される」 eight times; monotonous in a recommendation"
+  - rule: no-doubled-joshi
+    line: 55
+    text: の健康の保持増進のために有効であると考えられる。その際，食に関する問題への対応に
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: topic-predicate-distance
+    line: 69
+    text: 食に関する指導は，個別指導以外にも給食の時間や学級活動，教科指導等，学校教育全体
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 70
+    text: 各学級における給食の時間や学級活動における指導は，一般的には学級担任が年間指導計
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 71
+    text: 特に給食の時間は，生きた教材である学校給食を最大限に活用した指導を行うことができ
+    message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 72
+    text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
+    message: この文は 166 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 72
+    text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 72
+    text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
+    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
+    verdict: unjudged
+  - rule: concrete-evidence-density
+    line: 75
+    text: ""
+    message: 「3．食に関する教育指導の連携・調整」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: false-positive
+    note: "a qualitative policy section of a 答申; figures are not expected there"
+  - rule: teki-overuse
+    line: 77
+    text: その中で，栄養教諭は，栄養に関する専門的な教員として，例えば，食に関する指導に係
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    text: その中で，栄養教諭は，栄養に関する専門的な教員として，例えば，食に関する指導に係
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 77
+    text: 学校における食に関する指導は，給食の時間をはじめとして，関連教科等に幅広く関わる
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 78
+    text: 同時に，児童生徒の食の大部分は家庭が担っているという実態を踏まえれば，食に関する
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: unjudged
+  - rule: no-doubled-joshi
+    line: 83
+    text: の主要な職務の柱の一つとして位置付けられるべきである。具体的な職務内容としては，
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: no-doubled-joshi
+    line: 93
+    text: の管理業務の一層の効率化を図り，食に関する指導のために必要な時間を十分に確保でき
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: no-doubled-joshi
+    line: 93
+    text: の衛生管理等の知識の向上を図ることなどにより，学校給食の管理業務の一層の効率化を
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: max-sentence-length
+    line: 94
+    text: なお，学校給食における衛生管理については，平成8年度の腸管出血性大腸菌O157に
+    message: この文は 154 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: orthographic-variant
+    line: 94
+    text: 更に充実強化していくことが大切である。
+    message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「更に」 where the text writes 「さらに」 elsewhere"
+  - rule: concrete-evidence-density
+    line: 96
+    text: ""
+    message: 「（3）食に関する指導と学校給食の管理の一体的な展開」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: false-positive
+    note: "a qualitative policy section of a 答申; figures are not expected there"
+  - rule: tari-unpaired
+    line: 98
+    text: たり，食に関する指導を通じて児童生徒の食の現状を把握し，不足しがちな栄養素を補う
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: correct
+    note: "「実感させたり，…把握し」: たり without its pair"
+  - rule: topic-predicate-distance
+    line: 98
+    text: 栄養教諭は，生きた教材である学校給食の管理と，それを活用した食に関する指導を同時
+    message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
+    verdict: unjudged
+  - rule: wordy-phrase
+    line: 98
+    text: 栄養教諭は，生きた教材である学校給食の管理と，それを活用した食に関する指導を同時
+    message: 「することが可能」は、もっと短く言えます
+    verdict: correct
+    note: "「することが可能」 can be 「できる」"
+  - rule: max-sentence-length
+    line: 111
+    text: 栄養教諭の免許状の種類は，大学院，大学，短期大学等の学校種別，修業年限や修得単位
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 111
+    text: 栄養教諭の免許状の種類は，大学院，大学，短期大学等の学校種別，修業年限や修得単位
+    message: 「は」で出した主題から述語まで 163 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-kanji-continuous
+    line: 117
+    text: 免許状取得のための基礎資格としては，大学における教員養成の基本原則を踏まえ，専修
+    message: 「大学院修士課程修了程度」は漢字が 11 字続いています（10 字まで）
+    verdict: unjudged
+  - rule: kutoten-consistency
+    line: 122
+    text: 、一種免許状を取得するための基礎資格としては，栄養士の免許に加えて管理栄養士免許
+    message: 読点を「、」と書いています（この文書はふつう「，」。523 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "one 「、」 in a text that uses 「，」 everywhere else"
+  - rule: no-doubled-joshi
+    line: 125
+    text: のための教育課程のうち，教職に関する科目との類似等があるものについては，重複して
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: no-doubled-joshi
+    line: 125
+    text: の管理栄養士養成のための教育課程，栄養士養成のための教育課程のうち，教職に関する
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
+  - rule: max-sentence-length
+    line: 129
+    text: 教育の目的・原理，教育の内容・方法，児童生徒の心身の成長・発達等についての深い専
+    message: この文は 191 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: concrete-evidence-density
+    line: 131
+    text: ""
+    message: 「5．養成課程」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: false-positive
+    note: "a qualitative policy section of a 答申; figures are not expected there"
+  - rule: max-sentence-length
+    line: 134
+    text: 一方，現在の管理栄養士，栄養士の養成課程として，大学以外に専門学校等においても，
+    message: この文は 158 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 139
+    text: このため，栄養教諭の二種免許状や一種免許状を有する者が，それぞれ一種免許状や専修
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 141
+    text: その際，栄養教諭は生活習慣病の予防や食物アレルギーへの対応等についての児童生徒に
+    message: 「は」で出した主題から述語まで 125 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 148
+    text: 現在，学校栄養職員である者が栄養教諭の免許状を取得する場合には，職務を行いながら
+    message: この文は 158 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 152
+    text: 他の教諭や養護教諭の免許状を有する学校栄養職員が，栄養教諭の免許状を取得する場合
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: topic-predicate-distance
+    line: 152
+    text: 他の教諭や養護教諭の免許状を有する学校栄養職員が，栄養教諭の免許状を取得する場合
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 156
+    text: 栄養教諭としての資質能力は，その養成・採用・研修の各段階を通じて形成されていくべ
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 162
+    text: ただし，学校給食の実施そのものが義務的なものではないこと，現在の学校栄養職員も学
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 163
+    text: 学校栄養職員から栄養教諭への移行を考えた場合，学校給食実施校を含め，栄養教諭を配
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-sentence-length
+    line: 164
+    text: なお，栄養教諭制度の創設後も，すべての学校栄養職員が一律に栄養教諭に移行するわけ
+    message: この文は 150 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: max-ten
+    line: 164
+    text: なお，栄養教諭制度の創設後も，すべての学校栄養職員が一律に栄養教諭に移行するわけ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 175
+    text: 当審議会としては，「今後の地方教育行政の在り方について」（平成10年9月21日答
+    message: この文は 262 文字あります（140 文字まで）
+    verdict: correct
+    note: "a sentence over the limit that an editor would split"
+  - rule: wordy-phrase
+    line: 175
+    text: 当審議会としては，「今後の地方教育行政の在り方について」（平成10年9月21日答
+    message: 「であるといえる」は、もっと短く言えます
+    verdict: correct
+    note: "「であるといえる」 hedges a plain statement"
+  - rule: concrete-evidence-density
+    line: 184
+    text: ""
+    message: 「3　学校・家庭・地域社会の連携等による総合的取組」の節に数値もコードもリンクもありません（そういう節が 4/17）
+    verdict: false-positive
+    note: "a qualitative policy section of a 答申; figures are not expected there"
+  - rule: empty-intensifier
+    line: 186
+    text: このような現状を踏まえると，子どもに望ましい食習慣を身に付けさせるには，家庭への
+    message: 「非常に重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+  - rule: no-doubled-joshi
+    line: 188
+    text: の改善のための様々な施策を実施している。食に関する指導の実効性を高めるためには，
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "a chain of の an editor would break up"
