@@ -30,7 +30,9 @@ const parseResult = (value: unknown): DocumentResult | undefined => {
   if (typeof value["fullyJudged"] !== "boolean" || !Array.isArray(value["outcomes"])) return undefined;
   const outcomes = value["outcomes"].map(parseOutcome);
   if (outcomes.some((outcome) => outcome === undefined)) return undefined;
-  return { id: value["id"], genre: value["genre"], language: value["language"], fullyJudged: value["fullyJudged"], outcomes: outcomes.flatMap((outcome) => outcome ?? []) };
+  const origin = value["origin"] ?? "human";
+  if (!isNonEmptyString(origin)) return undefined;
+  return { id: value["id"], genre: value["genre"], language: value["language"], origin, fullyJudged: value["fullyJudged"], outcomes: outcomes.flatMap((outcome) => outcome ?? []) };
 };
 
 const parseNotRun = (value: unknown): RunContext["notRun"][number] | undefined =>

@@ -32,17 +32,17 @@ const personalDataProblems = (files: DocumentFiles, allowed: readonly Allowed[])
   );
 };
 
-/** One document checked: its problems, notes, and whether its meta says it may not be redistributed. */
-type Checked = { readonly id: string; readonly problems: string[]; readonly notes: string[]; readonly sealed: boolean };
+/** One document checked: its problems, notes, whether its meta says it may not be redistributed, and whether a model wrote it. */
+type Checked = { readonly id: string; readonly problems: string[]; readonly notes: string[]; readonly sealed: boolean; readonly ai: boolean };
 
 const documentProblems = (files: DocumentFiles, genres: ReadonlySet<string>, allowed: readonly Allowed[]): Checked => {
   const id = files.place.id;
   const tooLarge = sizeProblems(files);
-  if (tooLarge.length > 0) return { id, problems: tooLarge, notes: [], sealed: false };
+  if (tooLarge.length > 0) return { id, problems: tooLarge, notes: [], sealed: false, ai: false };
   const meta = readMeta(files, genres);
-  if ("problems" in meta) return { id, problems: meta.problems.map((problem) => `${shown(files.metaPath)}: ${problem}`), notes: [], sealed: false };
+  if ("problems" in meta) return { id, problems: meta.problems.map((problem) => `${shown(files.metaPath)}: ${problem}`), notes: [], sealed: false, ai: false };
   const notes = meta.value.license.name === UNKNOWN_LICENSE ? [`${shown(files.metaPath)}: license is unknown, to be established`] : [];
-  return { id, problems: personalDataProblems(files, allowed), notes, sealed: !meta.value.redistribute };
+  return { id, problems: personalDataProblems(files, allowed), notes, sealed: !meta.value.redistribute, ai: meta.value.origin === "ai" };
 };
 
 const duplicateIds = (documents: readonly DocumentFiles[]): string[] => {
@@ -85,7 +85,8 @@ const main = (): void => {
   ];
   checked.flatMap((result) => result.notes).forEach((note) => console.log(`note: ${note}`));
   problems.forEach((problem) => console.error(`error: ${problem}`));
-  console.log(`${String(documents.length)} documents, ${String(problems.length)} problems`);
+  const ai = checked.filter((result) => result.ai).length;
+  console.log(`${String(documents.length)} documents (${String(ai)} of origin ai), ${String(problems.length)} problems`);
   if (problems.length > 0) process.exitCode = 1;
 };
 

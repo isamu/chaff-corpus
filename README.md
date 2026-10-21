@@ -51,6 +51,34 @@ A document whose licence does not allow redistribution has only its `.yaml`. At 
 that produced the judged text from it (isamu/lab's names: `wikitext`, `html`, `google-patents`, `kokkai`); the run
 converts the fetched source the same way before comparing the sha256.
 
+### A document written by a model: `origin: ai`
+
+Documents are human-written unless the `.yaml` says `origin: ai`. A text a model wrote for this repository (to measure
+chaff's `ai-tells` rules on generated text, isamu/lab#1918) has no `source`; `generated` says how it was made instead,
+and it is under this repository's licence, so it is always committed:
+
+```yaml
+id: ai-en-report-support-q3
+title: Q3 customer support report
+language: en
+genre: business/report
+origin: ai                  # human (the default) | ai
+generated:
+  model: claude-opus-5-5    # the exact model name
+  date: 2026-10-22          # the day it was generated
+  prompt: "Write an internal report on our Q3 customer support numbers. ..."   # the request, as given
+license:
+  name: MIT                 # the repository's licence (LICENSE); required for origin: ai
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+redistribute: true          # required for origin: ai
+sha256: 3f5a…
+```
+
+The text is the document part of the model's reply, as a user would take it, not edited afterwards. Its findings are
+judged with one question in mind: would a reader take this as a sign that the text was generated? A sign a careful
+reader notices and chaff does not report is a `missed` entry. When a run holds documents of origin ai, the report adds
+a table by origin and one by rule for the ai documents.
+
 ### A record of a Hugging Face dataset: `source.hf`
 
 When the text is one record of a dataset on Hugging Face, `source.hf` says which record, and `source.url` is where a
@@ -171,4 +199,5 @@ isamu/lab tracks it in an issue labelled `corpus-case`, and a chaff release that
 ## Licences
 
 The code in this repository is under the [MIT License](LICENSE). Each document keeps its own licence, named in its
-`.yaml`; the MIT License does not apply to the documents.
+`.yaml`; the MIT License does not apply to the documents, except to those of `origin: ai`, which were written for this
+repository and are under it.

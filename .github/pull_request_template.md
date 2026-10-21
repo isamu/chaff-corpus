@@ -9,11 +9,11 @@
 ## For a new document
 
 - [ ] **Licence**: the licence is named in the `.yaml` (`license.name`, `license.url`), and it allows what `redistribute` says. If the licence does not allow redistribution, only the `.yaml` is committed (`redistribute: false`).
-- [ ] **Source**: `source.url` points at the document as fetched, and `source.fetched` is the date.
+- [ ] **Source**: `source.url` points at the document as fetched, and `source.fetched` is the date. For a text a model wrote (`origin: ai`): `generated` names the exact model, the request as given and the date, in place of `source`.
 - [ ] **No personal data**: the text names no private person and holds no private email address or phone number (`yarn validate` scans for both; a published contact goes in `allowlist.yaml` with a reason).
 - [ ] **Language**: `ja` or `en`, and the folder agrees (`docs/<lang>/…`).
 - [ ] **Genre**: a genre chaff knows (`npx chaff genres`), and the folder agrees (`docs/<lang>/<genre>/`).
-- [ ] **Human-written**: I checked that the text was written by people, not generated.
+- [ ] **Human-written**: I checked that the text was written by people, not generated, or it is marked `origin: ai` (written for this repository, under its licence).
 - [ ] `yarn validate` and `yarn run-corpus --update` ran; the new findings are in `expected/<id>.yaml`.
 
 ## For a case (chaff got it wrong)

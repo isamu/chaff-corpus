@@ -49,6 +49,33 @@ notes: 自由記述（任意）
 ときは、`source.format` に判定した本文を作った変換の名前（isamu/lab と同じ `wikitext`・`html`・`google-patents`・`kokkai`）を
 書きます。実行時は取得したものを同じ変換にかけてから sha256 を比べます。
 
+### モデルが書いた文書: `origin: ai`
+
+文書は、`.yaml` に `origin: ai` と書かない限り人が書いたものとして扱います。このレポジトリのためにモデルが書いた本文
+（chaff の `ai-tells` のルールを生成文で測るためのもの、isamu/lab#1918）には `source` がありません。代わりに `generated` に
+どう作ったかを書きます。ライセンスはこのレポジトリのものなので、本文は必ずコミットします。
+
+```yaml
+id: ai-ja-report-workstyle-survey
+title: 働き方アンケート 結果報告
+language: ja
+genre: business/report
+origin: ai                  # human（既定） | ai
+generated:
+  model: claude-opus-5-5    # モデルの正確な名前
+  date: 2026-10-22          # 生成した日
+  prompt: "社内の働き方アンケートの結果について、社内向けの報告を書いて。…"   # 依頼文そのまま
+license:
+  name: MIT                 # このレポジトリのライセンス（LICENSE）。origin: ai では必須
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+redistribute: true          # origin: ai では必須
+sha256: 3f5a…
+```
+
+本文は、モデルの返事のうち利用者が文書として使う部分で、あとから手を入れません。指摘は「読む人がこれを生成文の
+しるしと受け取るか」という問いで判定します。注意深く読む人なら気づくのに chaff が出さないしるしは `missed` として
+書きます。実行に origin ai の文書が含まれると、レポートに origin ごとの表と、ai の文書だけのルールごとの表が加わります。
+
 ### Hugging Face のデータセットの1件: `source.hf`
 
 本文が Hugging Face のデータセットの1件（1行）のときは、`source.hf` にどの1件かを書きます。`source.url` には読む人が文書を
@@ -168,4 +195,4 @@ chaff が文書を間違えた（誤った指摘を出した、または出す�
 ## ライセンス
 
 このレポジトリのコードは [MIT License](LICENSE) です。各文書はそれぞれのライセンスのままで、`.yaml` に書いてあります。
-文書には MIT License は適用されません。
+文書には MIT License は適用されません。ただし `origin: ai` の文書は、このレポジトリのために書かれたもので、MIT License です。

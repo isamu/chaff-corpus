@@ -20,15 +20,31 @@ export const MAX_TEXT_BYTES = 2 * 1024 * 1024;
 /** The licence a document is under when nobody has established it yet. validate accepts it but lists it. */
 export const UNKNOWN_LICENSE = "unknown";
 
+/** Who wrote the text: people (the default), or a model asked for it, whose text is under this repository's licence. */
+export const ORIGINS = ["human", "ai"] as const;
+export type Origin = (typeof ORIGINS)[number];
+
+/** The licence of this repository (LICENSE), which a text written for it by a model is under. */
+export const REPOSITORY_LICENSE = "MIT";
+
+/** Where a published text came from. */
+export type Source = { readonly url: string; readonly fetched: string; readonly format?: SourceFormat; readonly hf?: HfRow };
+
+/** How a text of origin ai was made: the model, the request it answered, and the day. */
+export type Generated = { readonly model: string; readonly prompt: string; readonly date: string };
+
 export type Meta = {
   readonly id: string;
   readonly title: string;
   readonly language: Language;
   readonly genre: string;
   readonly format: Format;
+  readonly origin: Origin;
   /** format: what source.url serves when it is not the text itself (the text is that, converted). hf: the text is one
-   * record of a Hugging Face dataset, fetched from there (source.url is then where a reader sees it). */
-  readonly source: { readonly url: string; readonly fetched: string; readonly format?: SourceFormat; readonly hf?: HfRow };
+   * record of a Hugging Face dataset, fetched from there (source.url is then where a reader sees it). A text of origin
+   * ai has no source; it has generated instead. */
+  readonly source?: Source;
+  readonly generated?: Generated;
   readonly license: { readonly name: string; readonly url?: string; readonly note?: string };
   readonly redistribute: boolean;
   readonly sha256: string;
@@ -46,6 +62,7 @@ export const sha256Of = (text: string): string => createHash("sha256").update(te
 
 const isLanguage = (value: unknown): value is Language => LANGUAGES.some((language) => language === value);
 const isFormat = (value: unknown): value is Format => FORMATS.some((format) => format === value);
+const isOrigin = (value: unknown): value is Origin => ORIGINS.some((origin) => origin === value);
 
 const identityProblems = (raw: UnknownRecord, place: MetaPlace, genres: ReadonlySet<string>): string[] => [
   ...(raw["id"] === place.id ? [] : [`id must be "${place.id}" (the file name)`]),
@@ -65,6 +82,29 @@ const sourceProblems = (source: unknown): string[] => {
     ...(typeof source["fetched"] === "string" && DATE_PATTERN.test(source["fetched"]) ? [] : ["source.fetched must be a date (YYYY-MM-DD)"]),
     ...(source["format"] === undefined || isSourceFormat(source["format"]) ? [] : [`source.format must be one of ${SOURCE_FORMATS.join(", ")}`]),
     ...hfProblems(source),
+  ];
+};
+
+const generatedProblems = (generated: unknown): string[] => {
+  if (!isRecord(generated)) return ["generated (model, prompt, date) is required for origin: ai"];
+  return [
+    ...(isNonEmptyString(generated["model"]) ? [] : ["generated.model (the exact model name) is required"]),
+    ...(isNonEmptyString(generated["prompt"]) ? [] : ["generated.prompt (the request the text answers) is required"]),
+    ...(typeof generated["date"] === "string" && DATE_PATTERN.test(generated["date"]) ? [] : ["generated.date must be a date (YYYY-MM-DD)"]),
+  ];
+};
+
+/** A human text has a source; a text of origin ai has generated instead, is under this repository's licence and is committed. */
+const originProblems = (raw: UnknownRecord): string[] => {
+  const origin = raw["origin"] ?? "human";
+  if (!isOrigin(origin)) return [`origin must be one of ${ORIGINS.join(", ")}`];
+  if (origin === "human") return [...(raw["generated"] === undefined ? [] : ["generated is only for origin: ai"]), ...sourceProblems(raw["source"])];
+  const license = isRecord(raw["license"]) ? raw["license"]["name"] : undefined;
+  return [
+    ...(raw["source"] === undefined ? [] : ["a document of origin ai has no source (generated says where it came from)"]),
+    ...generatedProblems(raw["generated"]),
+    ...(license === undefined || license === REPOSITORY_LICENSE ? [] : [`a document of origin ai is under the repository's licence (license.name: ${REPOSITORY_LICENSE})`]),
+    ...(raw["redistribute"] === false ? ["a document of origin ai is committed (redistribute: true)"] : []),
   ];
 };
 
@@ -94,8 +134,16 @@ const textProblems = (raw: UnknownRecord, text: string | undefined): string[] =>
   return sha256Of(text) === raw["sha256"] ? [] : ["sha256 does not match the text"];
 };
 
+const sourceOf = (source: UnknownRecord): Source => ({
+  url: String(source["url"]),
+  fetched: String(source["fetched"]),
+  ...(isSourceFormat(source["format"]) ? { format: source["format"] } : {}),
+  ...hfOf(source),
+});
+
+const generatedOf = (generated: UnknownRecord): Generated => ({ model: String(generated["model"]), prompt: String(generated["prompt"]), date: String(generated["date"]) });
+
 const metaOf = (raw: UnknownRecord): Meta => {
-  const source = isRecord(raw["source"]) ? raw["source"] : {};
   const license = isRecord(raw["license"]) ? raw["license"] : {};
   const url = optionalString(license["url"]);
   const note = optionalString(license["note"]);
@@ -106,7 +154,9 @@ const metaOf = (raw: UnknownRecord): Meta => {
     language: isLanguage(raw["language"]) ? raw["language"] : "en",
     genre: String(raw["genre"]),
     format: isFormat(raw["format"]) ? raw["format"] : "markdown",
-    source: { url: String(source["url"]), fetched: String(source["fetched"]), ...(isSourceFormat(source["format"]) ? { format: source["format"] } : {}), ...hfOf(source) },
+    origin: isOrigin(raw["origin"]) ? raw["origin"] : "human",
+    ...(isRecord(raw["source"]) ? { source: sourceOf(raw["source"]) } : {}),
+    ...(isRecord(raw["generated"]) ? { generated: generatedOf(raw["generated"]) } : {}),
     license: { name: String(license["name"]), ...(url === undefined ? {} : { url }), ...(note === undefined ? {} : { note }) },
     redistribute: raw["redistribute"] === true,
     sha256: String(raw["sha256"]),
@@ -117,6 +167,6 @@ const metaOf = (raw: UnknownRecord): Meta => {
 /** The meta of the document at `place`, given the committed text (undefined when there is none), or what is wrong with it. */
 export const parseMeta = (raw: unknown, place: MetaPlace, genres: ReadonlySet<string>, text: string | undefined): Parsed<Meta> => {
   if (!isRecord(raw)) return { problems: ["the file must be a mapping"] };
-  const problems = [...identityProblems(raw, place, genres), ...sourceProblems(raw["source"]), ...licenseProblems(raw["license"]), ...textProblems(raw, text)];
+  const problems = [...identityProblems(raw, place, genres), ...originProblems(raw), ...licenseProblems(raw["license"]), ...textProblems(raw, text)];
   return problems.length > 0 ? { problems } : { value: metaOf(raw) };
 };
