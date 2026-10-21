@@ -37,13 +37,8 @@ findings:
     line: 25
     text: This extension follows the original peri
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
-    text: Virgin Islands and Puerto Rico Following
-    message: This sentence runs 46 words (limit 18)
     verdict: correct
-    note: the sentence is long, though chaff starts it after the U.S. inside a quoted title
+    note: the sentence is long either way (chaffjs 0.36.0 ends it at the U.S. inside the quoted title; lab main reads it whole)
   - rule: max-sentence-length
     line: 27
     text: If supervised financial institutions hav

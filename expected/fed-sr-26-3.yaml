@@ -25,9 +25,9 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    text: Department of the Treasury’s Financial C
-    message: This sentence runs 38 words (limit 18)
-    verdict: correct
+    what: the first sentence ("This letter highlights guidance issued on June 12, 2026, by the U.S. Department of the Treasury's ...") runs about 50 words
+    verdict: missed
+    note: 'rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main reads it whole from "This letter"'
   - rule: max-sentence-length
     line: 25
     text: This action taken by FinCEN reflects ind

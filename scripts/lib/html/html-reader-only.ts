@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-reader-only.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-reader-only.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
 // Text a page writes for a screen reader alone, which a sighted reader never sees: an element whose class follows a
 // visually-hidden convention, and the anchor a skip link moves focus to. Pure; a regular-expression reading.
 import {

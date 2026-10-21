@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-markdown.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
 // An HTML page (a CRS report as EveryCRSReport serves it, a ministry's page) as plain Markdown: headings, paragraphs,
 // list items and the text of links, with where each section links in a closing comment (html-links.ts); ruby keeps its base text and loses its reading. Only the <main> element (else the
 // role="main" element, else a sole <article>, else the block holding the title and nearly every sentence) is read when

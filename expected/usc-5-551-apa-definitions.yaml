@@ -25,6 +25,11 @@ findings:
     message: '"section 552" (address 552) is not in this document'
     verdict: false-positive
     note: a section of another part of the U.S. Code or of another Act, outside this one-section document
+  - rule: oxford-comma-consistency
+    line: 48
+    what: the list of permits in (8) "license" ends "statutory exemption or other form of permission" without the serial comma, where the document's other lists use it
+    verdict: missed
+    note: found by lab main after isamu/lab#1741, not by the pinned chaffjs
   - rule: unused-definition
     line: 80
     text: '"ex parte communication" means an oral o'
@@ -157,3 +162,9 @@ findings:
     message: '"(b)" follows "(i)" (expected number 10)'
     verdict: false-positive
     note: '"(b)" follows "(a)" with clauses "(i)" and "(ii)" between them; the Roman clause (i) is read as the letter i'
+  - rule: oxford-comma-consistency
+    line: 306
+    text: (c) This order is not intended to, and d
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: false-positive
+    note: '"its departments, agencies, or entities, its officers, employees, or agents, or any other person" uses the serial comma; the nested lists are read as one list without it'

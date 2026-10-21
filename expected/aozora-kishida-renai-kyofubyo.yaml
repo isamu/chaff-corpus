@@ -49,6 +49,12 @@ findings:
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: false-positive
     note: a character's narrated scene in one breath; clause count is the author's choice in dialogue
+  - rule: clause-chain
+    line: 388
+    text: 見ると、女が一人、ハンカチを眼にあて、啜り泣きをしてゐる、轟く胸を押し鎮めて、女
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: a character's narrated scene in one breath; clause count is the author's choice in dialogue (lab main starts it after （間）)
   - rule: repeated-sentence-ending
     line: 502
     text: 僕だつたら、もう少し、彼女の玩具になつてゐてやるよ。初めから逃げるかはりに、見事

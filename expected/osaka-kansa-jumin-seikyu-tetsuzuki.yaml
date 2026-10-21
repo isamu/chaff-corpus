@@ -52,17 +52,17 @@ findings:
     message: 見出し「職員措置請求書には、請求の対象とする違法又は不当な財務会計上の行為又は怠る事実を証する書面（事実証明書）を添付することが必要です。」は 65 文字あります（40 文字まで）
     verdict: correct
   - rule: latin-spacing
-    line: 240
+    line: 244
     text: " Adobe Acrobat Reader DC をダウンロード（無償）してくだ"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 240
+    line: 244
     text: " をダウンロード（無償）してください。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct
   - rule: latin-spacing
-    line: 240
+    line: 244
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 3 箇所が違う）
     verdict: correct

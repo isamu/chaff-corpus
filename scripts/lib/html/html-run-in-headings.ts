@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-run-in-headings.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-run-in-headings.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
 // A section title drawn as a bold first line of its paragraph: <p><strong>Conclusion</strong><br />In closing, …</p>.
 // Read as text the title runs into the paragraph as one line. The bold run becomes a heading one level below the
 // heading before it (h2 when none), and the rest stays the paragraph. Only a bold run that opens the paragraph, holds

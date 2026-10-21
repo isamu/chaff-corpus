@@ -66,11 +66,21 @@ findings:
     verdict: false-positive
     note: numbered amendment items (第１, 第２ …) are one-line paragraphs by design
   - rule: max-sentence-length
+    line: 21
+    what: the amendment sentence for 相続税法基本通達 is 76 characters
+    verdict: missed
+    note: found by lab main, which no longer joins the item label 第１ to it
+  - rule: max-sentence-length
     line: 23
     text: 第２
     message: この文は 76 文字あります（70 文字まで）
     verdict: false-positive
     note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
+  - rule: max-sentence-length
+    line: 24
+    what: the amendment sentence for the 租税特別措置法（相続税法の特例関係） directive is 74 characters
+    verdict: missed
+    note: found by lab main, which no longer joins the item label 第２ to it
   - rule: bracket-nesting
     line: 26
     text: １　〔措置法第70条の２((直系尊属から住宅取得等資金の贈与を受けた場合の贈与税
@@ -140,12 +150,32 @@ findings:
     message: この文は 130 文字あります（70 文字まで）
     verdict: false-positive
     note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
+  - rule: bracket-width-consistency
+    line: 33
+    what: the closing bracket of (注) is half-width where the text writes （ ）
+    verdict: missed
+    note: found by lab main, which no longer counts the caption notation ((…))
+  - rule: bracket-width-consistency
+    line: 33
+    what: the opening bracket of (注) is half-width where the text writes （ ）
+    verdict: missed
+    note: found by lab main, which no longer counts the caption notation ((…))
+  - rule: max-sentence-length
+    line: 33
+    what: the amendment sentence for the 措置法第40条 directive is 128 characters
+    verdict: missed
+    note: found by lab main
   - rule: max-sentence-length
     line: 35
     text: 第４
     message: この文は 78 文字あります（70 文字まで）
     verdict: false-positive
     note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
+  - rule: max-sentence-length
+    line: 36
+    what: the sentence on when the amendments apply is 76 characters
+    verdict: missed
+    note: found by lab main
   - rule: no-doubled-joshi
     line: 36
     text: の２の改正後の取扱いについては令和６年３月１日から適用し、それ以外の改正後の取扱

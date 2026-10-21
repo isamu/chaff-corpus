@@ -80,6 +80,12 @@ findings:
     verdict: false-positive
     note: commas mark a sobbing character's stammer (か、か、堪忍、堪忍); a stage direction without 。 is read into the same sentence
   - rule: max-ten
+    line: 307
+    text: か、か、堪忍、堪忍、して頂戴、かう云ひながら、両、両手で、僕の手を、に、握り締め
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: false-positive
+    note: commas mark a sobbing character's stammer (か、か、堪忍、堪忍); lab main starts the sentence after the stage direction
+  - rule: max-ten
     line: 313
     text: 僕が、許嫁の心持を忖度するにしても、考へやうによつては、もつと、積極的に、有利に
     message: 一文に読点が 7 個あります（6 個まで）

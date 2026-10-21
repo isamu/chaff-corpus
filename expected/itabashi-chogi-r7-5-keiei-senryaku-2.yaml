@@ -25,3 +25,8 @@ findings:
     sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
     verdict: false-positive
     note: the page's contact block (department and section on one line) is an address, not a sentence
+  - rule: no-mixed-desumasu
+    line: 165
+    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
+    verdict: false-positive
+    note: the page's contact block (department and section on one line) is an address, not a sentence; lab main reports it on this line
