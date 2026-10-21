@@ -23,8 +23,8 @@ findings:
     line: 17
     text: 供給面では、個人の健康・医療データ等（パーソナル・ヘルス・レコード（以下「PHR
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: 略語の展開の括弧の中に「（以下「PHR」という。）」を置く公用文の決まった形
+    verdict: correct
+    note: 「（以下「PHR」という。）」 inside the expansion's brackets nests them three deep; the same shape is judged correct in jpo-kyuuji-heiki:28 and meti-press-level4-bus:14, and the owner follows that majority.
   - rule: max-paragraph-length
     line: 17
     text: 公的保険外の予防・健康管理サービス等の振興及び社会実装に向け、需要・供給の両面か

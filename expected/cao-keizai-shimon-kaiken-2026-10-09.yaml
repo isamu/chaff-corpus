@@ -119,7 +119,8 @@ findings:
     line: 59
     text: みると日本は３位だが、選択と集中の行き過ぎでその世界に誇る科学の基盤は揺らいでい
     message: 「みる」と書いています（この文書はふつう「見る」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: isamu/lab#1525 counts the observed 見られる (:29 動きが見られる) apart from 見る meaning look. In the look sense the page writes 見て (:49) once and みる (:59) once, 1 vs 1, so there is no minority to point at.
   - rule: clause-chain
     line: 64
     text: 日本経済が成長の好循環の道に踏み出せるかどうかの分岐点に立つ中で、危機管理投資・

@@ -15,7 +15,8 @@ findings:
     line: 10
     text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
     message: 「は」で出した主題から述語まで 187 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: 氏名は gets its predicate at once (…記載するべきところ). What was judged was the sentence's length, which max-sentence-length reports.
   - rule: wordy-phrase
     line: 16
     text: 特許庁に提出する全ての書類を対象に、発明者、出願人、審判当事者等の氏名欄において
@@ -137,6 +138,10 @@ findings:
     message: 見出し「Q4：書類の氏名欄に旧氏併記の記載を行うために旧氏を証明する書類をあわせて提出する必要がありますか。」は 50 文字あります（40 文字まで）
     verdict: false-positive
     note: an FAQ question used as a heading
+  - rule: fullwidth-alnum-consistency
+    line: 92
+    what: Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same
+    verdict: missed
   - rule: max-kanji-continuous
     line: 94
     text: A５：住民票の写し、マイナンバーカード、運転免許証のような公的証明書において記載
@@ -195,7 +200,3 @@ findings:
     message: 「［」を「]」で閉じています（全角と半角が違います）
     verdict: correct
     note: ［ closed by a half-width ]
-  - rule: fullwidth-alnum-consistency
-    line: 92
-    what: "Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same"
-    verdict: missed
