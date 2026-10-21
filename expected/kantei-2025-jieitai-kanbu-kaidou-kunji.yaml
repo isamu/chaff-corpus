@@ -1,0 +1,153 @@
+id: kantei-2025-jieitai-kanbu-kaidou-kunji
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 30日 総理の演説・記者会見など
+    message: 半角の「30」と書いています（この文書はふつう全角の「３０」。12 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 6月30日 総理の演説・記者会見など
+    message: 半角の「6」と書いています（この文書はふつう全角の「６」。6 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 7年6月30日 総理の演説・記者会見など
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。6 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: max-kanji-continuous
+    line: 6
+    text: 本日、自衛隊指揮官幹部会同に出席する機会を得られました。地方に所在する主要部隊指
+    message: 「自衛隊指揮官幹部会同」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: "「自衛隊指揮官幹部会同」は会議の名前"
+  - rule: max-sentence-length
+    line: 6
+    text: このような場において、自衛隊の最高指揮官たる内閣総理大臣として、私の考えを直接諸
+    message: この文は 121 文字あります（100 文字まで）
+    verdict: correct
+    note: "121 字の一文"
+  - rule: unqualified-superlative
+    line: 6
+    text: このような場において、自衛隊の最高指揮官たる内閣総理大臣として、私の考えを直接諸
+    message: 「最高」に比べる相手がありません（そういう言い方が 3 箇所）
+    verdict: false-positive
+    note: "「自衛隊の最高指揮官」は職名"
+  - rule: max-kanji-continuous
+    line: 9
+    text: １８年前、防衛大臣として、ここ市ヶ谷で自衛隊高級幹部会同に出席し、訓示を行いまし
+    message: 「自衛隊高級幹部会同」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "「自衛隊高級幹部会同」は会議の名前"
+  - rule: max-sentence-length
+    line: 12
+    text: 中国による、東シナ海・南シナ海での力による一方的な現状変更の試み、北朝鮮による弾
+    message: この文は 109 文字あります（100 文字まで）
+    verdict: correct
+    note: "109 字の一文（脅威を並べた体言止め）"
+  - rule: max-kanji-continuous
+    line: 14
+    text: これが我々に求められていることであり、国家安全保障戦略等に基づく防衛力の抜本的強
+    message: 「国家安全保障戦略等」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "「国家安全保障戦略」は文書名で、後ろの「等」を足して 9 字になっている"
+  - rule: no-mixed-desumasu
+    line: 15
+    text: 自衛隊の能力が信頼の置ける抑止力として維持・強化されているか、平素から発生する各
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "「〜できているか。」は常体の問いかけを重ねた修辞で、文体の混在ではない"
+  - rule: unqualified-superlative
+    line: 25
+    text: 自衛隊には、最高の規律が求められると同時に、最高の栄誉が与えられなければなりませ
+    message: 「最高」に比べる相手がありません（そういう言い方が 3 箇所）
+    verdict: false-positive
+    note: "「最高の規律」「最高の栄誉」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない"
+  - rule: no-mixed-desumasu
+    line: 29
+    text: 諸官におかれても、各級の隊員が何を求めているかを把握をし、隊員の声を組織としての
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: "「いかしていただきたい」は訓示で使う依頼の言い方で、文体の混在ではない"
+  - rule: max-kanji-continuous
+    line: 30
+    text: 前回、私が自衛隊高級幹部会同に出席した平成１９年は、防衛庁が防衛省に移行した時期
+    message: 「自衛隊高級幹部会同」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "「自衛隊高級幹部会同」は会議の名前"
+  - rule: empty-intensifier
+    line: 31
+    text: 今、安全保障環境が厳しさを増す中、防衛省・自衛隊が果たすべき役割は、先ほど来申し
+    message: 「不可欠です」は、中身を言わずに強調だけしています
+    verdict: false-positive
+    note: "「不可欠です」は何が不可欠か（国民の理解）を言っている"
+  - rule: max-sentence-length
+    line: 31
+    text: 今、安全保障環境が厳しさを増す中、防衛省・自衛隊が果たすべき役割は、先ほど来申し
+    message: この文は 101 文字あります（100 文字まで）
+    verdict: correct
+    note: "101 字の一文"
+  - rule: orthographic-variant
+    line: 32
+    text: 達はただひたすらに任務に邁進（まいしん）し、今や国民の９割は自衛隊に良い印象を持
+    message: 「達」と書いています（この文書はふつう「たち」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「先輩達」と「たち」が一つの訓示に混ざる"
+  - rule: max-sentence-length
+    line: 36
+    text: 「事に臨んでは危険を顧みず、身をもって責務（注）の完遂に務め、もって国民の負託に
+    message: この文は 105 文字あります（100 文字まで）
+    verdict: false-positive
+    note: "引用した服務の宣誓の文言で、書き手が長さを変えられない"
+  - rule: max-kanji-continuous
+    line: 38
+    text: 我が国はイラク復興支援のために自衛隊の部隊を派遣することとし、クリスマスイブの日
+    message: 「小泉純一郎内閣総理大臣臨席」は漢字が 13 字続いています（8 字まで）
+    verdict: false-positive
+    note: "人名と職名（小泉純一郎内閣総理大臣）に「臨席」が付いたもの"
+  - rule: max-paragraph-length
+    line: 38
+    text: 防衛庁長官であった平成１５年。我が国はイラク復興支援のために自衛隊の部隊を派遣す
+    message: この段落は 10 文あります（5 文まで）
+    verdict: correct
+    note: "一段落に 10 文"
+  - rule: max-sentence-length
+    line: 38
+    text: なぜ自分が行かねばならないのか、イラクの人たちが、道路や学校、給水、そういうこと
+    message: この文は 216 文字あります（100 文字まで）
+    verdict: correct
+    note: "216 字の一文"
+  - rule: max-sentence-length
+    line: 38
+    text: 我が国はイラク復興支援のために自衛隊の部隊を派遣することとし、クリスマスイブの日
+    message: この文は 105 文字あります（100 文字まで）
+    verdict: correct
+    note: "105 字の一文"
+  - rule: max-ten
+    line: 38
+    text: なぜ自分が行かねばならないのか、イラクの人たちが、道路や学校、給水、そういうこと
+    message: 一文に読点が 10 個あります（6 個まで）
+    verdict: correct
+    note: "一文に読点 10 個"
+  - rule: topic-predicate-distance
+    line: 38
+    text: なぜ自分が行かねばならないのか、イラクの人たちが、道路や学校、給水、そういうこと
+    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
+    verdict: false-positive
+    note: "この文の「は」の主題はどれも 30 字以内に述語がある（来てほしいのは…日本であった、応えるのは…自衛隊しかない）"
+  - rule: topic-predicate-distance
+    line: 38
+    text: 我が国はイラク復興支援のために自衛隊の部隊を派遣することとし、クリスマスイブの日
+    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
+    verdict: false-positive
+    note: "「我が国は」の述語「派遣することとし」は 30 字ほど後にあり、文末の「行われました」は別の主語（編成完結式が）のもの"
+  - rule: unqualified-superlative
+    line: 38
+    text: 自分にとって今日は最高のクリスマスだった、長官行ってきます、と。このように言って
+    message: 「最高」に比べる相手がありません（そういう言い方が 3 箇所）
+    verdict: false-positive
+    note: "「自分にとって今日は最高のクリスマスだった」は隊員の言葉の引用で、範囲（自分にとって）もある"

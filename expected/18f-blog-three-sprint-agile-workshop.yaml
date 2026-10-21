@@ -1,0 +1,217 @@
+id: 18f-blog-three-sprint-agile-workshop
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 31
+    text: repeatedly tossing a basketball in the h
+    message: 20 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: "many -ly adverbs (repeatedly, particularly, strictly, immediately, constantly ...)"
+  - rule: expletive-construction
+    line: 35
+    text: It is particularly important for executi
+    message: '"It is ..." appears 4 times (limit 3)'
+    verdict: correct
+    note: "\"It is particularly important for executives to appreciate\""
+  - rule: unqualified-superlative
+    line: 35
+    text: It is particularly important for executi
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: correct
+    note: "\"the best way to come to that appreciation is to participate\" is a bare claim"
+  - rule: unqualified-superlative
+    line: 40
+    text: It will convince people that evaluating
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"achieve the best results overall\" is a set phrase"
+  - rule: person-consistency
+    line: 42
+    text: One could even choose goals which are a
+    message: '"One could" here, where the document usually says "you" (4 of 43)'
+    verdict: correct
+    note: "\"One could\" in a post that addresses the reader as \"you\""
+  - rule: which-that-consistency
+    line: 42
+    text: which are a valuable work product for an
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "restrictive \"goals which are a valuable work product\""
+  - rule: nonstandard-word
+    line: 46
+    text: is comprised of three simulated “[sprint
+    message: '"is comprised of" is nonstandard in formal writing; write "comprises"'
+    verdict: correct
+    note: "\"is comprised of\""
+  - rule: wordy-phrase
+    line: 46
+    text: In order to fit the workshop into three
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: "\"In order to\""
+  - rule: person-consistency
+    line: 48
+    text: one can always adjust the agile process
+    message: '"one can" here, where the document usually says "you" (4 of 43)'
+    verdict: correct
+    note: "\"one can always adjust the agile process to suit your needs\" mixes one and you in one sentence"
+  - rule: hyphen-as-dash
+    line: 70
+    text: " -- but if you are running a workshop fo"
+    message: '"--" stands in for a dash'
+    verdict: correct
+    note: "\" -- \" for a dash"
+  - rule: contraction-consistency
+    line: 74
+    text: The customer gets value from using what
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: correct
+    note: "\"does not care\" here, \"doesn't\" elsewhere in the post"
+  - rule: expletive-construction
+    line: 74
+    text: It is critical that to remember that the
+    message: '"It is ..." appears 4 times (limit 3)'
+    verdict: correct
+    note: "\"It is critical that to remember\" (also ungrammatical)"
+  - rule: max-paragraph-length
+    line: 74
+    text: The teams consist of two clearly disting
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: "seven sentences in one paragraph"
+  - rule: concrete-evidence-density
+    line: 90
+    text: ""
+    message: Section "Prepare the participants" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a how-to section whose takeaway is the instruction itself; a number or link is not expected"
+  - rule: quote-style-consistency
+    line: 92
+    text: "'t have one ahead of time, the master of"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
+    verdict: correct
+    note: "straight apostrophe in \"doesn't\" where the post mostly uses curly ones"
+  - rule: concrete-evidence-density
+    line: 112
+    text: ""
+    message: Section "Enforce a rigid schedule" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a how-to section whose takeaway is the instruction itself; a number or link is not expected"
+  - rule: concrete-evidence-density
+    line: 119
+    text: ""
+    message: Section "Coaching during the workshop" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a how-to section whose takeaway is the instruction itself; a number or link is not expected"
+  - rule: oxford-comma-consistency
+    line: 122
+    text: However, even more important is
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: "\"immediately and constantly shown to the customer, who may ...\" has no three-item list"
+  - rule: concrete-evidence-density
+    line: 139
+    text: ""
+    message: Section "The customer" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a section describing a workshop role; a number or link is not expected"
+  - rule: unqualified-superlative
+    line: 141
+    text: The customer is the most important role,
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"the most important role\" of the workshop's two roles, named in the section above"
+  - rule: max-sentence-length
+    line: 145
+    text: An executive who wants to experience agi
+    message: This sentence runs 54 words (limit 40)
+    verdict: correct
+    note: "54-word sentence"
+  - rule: unknown-word
+    line: 145
+    text: auality assurance person is considered a
+    message: '"auality" is not in the dictionary; did you mean "duality"?'
+    verdict: correct
+    note: "\"auality\" is a typo for \"quality\" (the suggestion \"duality\" is wrong, the finding is right)"
+  - rule: wordy-phrase
+    line: 145
+    text: A tester or auality assurance person is
+    message: '"for the purpose of" can be said in fewer words'
+    verdict: correct
+    note: "\"for the purpose of\""
+  - rule: concrete-evidence-density
+    line: 147
+    text: ""
+    message: Section "The developer" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a section describing a workshop role; a number or link is not expected"
+  - rule: doubled-word
+    line: 149
+    text: a monopoly on making things, so they can
+    message: '"a a" doubles a word; one of the two is left over'
+    verdict: correct
+    note: "\"a a monopoly\""
+  - rule: expletive-construction
+    line: 151
+    text: It is, however, the developers’ job to t
+    message: '"It is ..." appears 4 times (limit 3)'
+    verdict: correct
+    note: "\"It is, however, the developers' job to teach\""
+  - rule: hyphen-as-dash
+    line: 151
+    text: " -- they need only be honest."
+    message: '"--" stands in for a dash'
+    verdict: correct
+    note: "\" -- \" for a dash"
+  - rule: person-consistency
+    line: 157
+    text: one can easily imagine a very weak calcu
+    message: '"one can" here, where the document usually says "you" (4 of 43)'
+    verdict: correct
+    note: "\"one can easily imagine\" in a post that addresses the reader as \"you\""
+  - rule: person-consistency
+    line: 159
+    text: one could run an effective five-hour wor
+    message: '"one could" here, where the document usually says "you" (4 of 43)'
+    verdict: correct
+    note: "\"one could run\" in a post that addresses the reader as \"you\""
+  - rule: quote-style-consistency
+    line: 159
+    text: "'s book [Test Driven Development by Exam"
+    message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
+    verdict: correct
+    note: "straight apostrophe in \"Beck's\" where the post mostly uses curly ones"
+  - rule: max-sentence-length
+    line: 163
+    text: In all cases, I would work with the cust
+    message: This sentence runs 45 words (limit 40)
+    verdict: correct
+    note: "45-word sentence"
+  - rule: concrete-evidence-density
+    line: 165
+    text: ""
+    message: Section "The surprise pivot" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a how-to section whose takeaway is the instruction itself; a number or link is not expected"
+  - rule: wordy-phrase
+    line: 167
+    text: In order to demonstrate the value of agi
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: "\"In order to\""
+  - rule: expletive-construction
+    line: 176
+    text: It is important that you coach
+    message: '"It is ..." appears 4 times (limit 3)'
+    verdict: correct
+    note: "\"It is important that you coach\""
+  - rule: concrete-evidence-density
+    line: 180
+    text: ""
+    message: Section "Things that can go wrong" has no number, code or link (7 of 14 sections)
+    verdict: false-positive
+    note: "a list of pitfalls; the takeaway is the advice, a number or link is not expected"
+  - rule: doubled-word
+    line: 121
+    what: "\"make make sure\" doubles a word, as \"a a\" on line 149 does"
+    verdict: missed

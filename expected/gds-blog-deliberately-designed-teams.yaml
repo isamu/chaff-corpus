@@ -1,0 +1,69 @@
+id: gds-blog-deliberately-designed-teams
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 3
+    text: July 2026 - People and skills
+    message: 18 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: "many -ly adverbs (deliberately, simultaneously, constructively, regularly ...) in a short post"
+  - rule: oxford-comma-consistency
+    line: 9
+    text: Government spends a lot of time talking
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "the one list with a serial comma; the others have none"
+  - rule: quote-style-consistency
+    line: 13
+    text: "'ve focused on a simple question: how do"
+    message: Quote marks are written two ways in this document (13 curly, 6 straight)
+    verdict: correct
+    note: "apostrophes written both straight and curly in one post"
+  - rule: unqualified-superlative
+    line: 25
+    text: This allows us to compare different type
+    message: '"the best" has nothing to compare against (2 such claims)'
+    verdict: false-positive
+    note: "\"the best way to bring capability into the team\" chosen among the routes named in the sentence before"
+  - rule: contrast-framing
+    line: 27
+    text: Our aim isn’t just to recruit faster, bu
+    message: "\"isn't just\" and other contrast frames: 3.2 per 1000 words (limit 3)"
+    verdict: correct
+    note: "\"isn't just ... but\" contrast frame; three in a short post"
+  - rule: concrete-evidence-density
+    line: 51
+    text: ""
+    message: Section "Assessing for impact" has no number, code or link (3 of 5 sections)
+    verdict: false-positive
+    note: "a section describing the assessment method; a number is not expected"
+  - rule: contrast-framing
+    line: 59
+    text: The aim is to build a fuller picture of
+    message: '"not only" and other contrast frames: 3.2 per 1000 words (limit 3)'
+    verdict: correct
+    note: "\"not only ... but\" contrast frame; three in a short post"
+  - rule: concrete-evidence-density
+    line: 61
+    text: ""
+    message: Section "Mixed teams are powerful, but not automatically easy" has no number, code or link (3 of 5 sections)
+    verdict: correct
+    note: "claims benefits (\"a reduction in hierarchy\", \"stronger accountability\") with nothing to show them"
+  - rule: concrete-evidence-density
+    line: 69
+    text: ""
+    message: Section "What we’re learning" has no number, code or link (3 of 5 sections)
+    verdict: correct
+    note: "\"What we're learning\" lists lessons with no example, figure or link behind them"
+  - rule: contrast-framing
+    line: 77
+    text: Recruitment is not just a mechanism for
+    message: '"not just" and other contrast frames: 3.2 per 1000 words (limit 3)'
+    verdict: correct
+    note: "\"not just a mechanism ... It's one of\" contrast frame; three in a short post"
+  - rule: unqualified-superlative
+    line: 77
+    text: It’s one of the most important tools for
+    message: '"the most" has nothing to compare against (2 such claims)'
+    verdict: false-positive
+    note: "\"one of the most important tools for creating the culture\" names its set (tools for creating the culture)"

@@ -1,0 +1,39 @@
+id: gds-blog-first-digital-wallet
+chaff: 0.36.0
+findings:
+  - rule: which-that-consistency
+    line: 11
+    text: which can store government credentials
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: "restrictive \"app which can store government credentials\" where the post uses \"that\""
+  - rule: contraction-consistency
+    line: 17
+    text: Let’s look at how we managed to achieve
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+    note: "\"we're\" here, \"we are\" elsewhere in the post"
+  - rule: contraction-consistency
+    line: 31
+    text: This means we’re providing veterans with
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+    note: "\"we're\" here, \"we are\" elsewhere in the post"
+  - rule: contraction-consistency
+    line: 35
+    text: Later this year, the digital driving lic
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct
+    note: "\"you are\" here, \"you're\" elsewhere in the post"
+  - rule: oxford-comma-consistency
+    line: 53
+    text: This means reduced fraud, fewer fake cre
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "the one list with a serial comma; the others (\"test, build and iterate\") have none"
+  - rule: max-sentence-length
+    line: 55
+    text: This year, we’ll enable them to test how
+    message: This sentence runs 52 words (limit 40)
+    verdict: correct
+    note: "52-word sentence"
