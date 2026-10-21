@@ -6,6 +6,11 @@ findings:
     text: Don’t write for an eighth-grade class if
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
+  - rule: max-paragraph-length
+    line: 19
+    what: the paragraph on the plain language myth runs 7 sentences
+    verdict: missed
+    note: found by lab main; it can split before "The first rule of plain language"
   - rule: hyphen-as-dash
     line: 27
     text: " - Acronyms often confuse readers. Avoid"

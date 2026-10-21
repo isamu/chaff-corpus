@@ -6,82 +6,99 @@ findings:
     text: "  Websites intended to help people acces"
     message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 100)
     verdict: correct
-    note: "two spaces after the sentence where the post leaves one elsewhere"
+    note: two spaces after the sentence where the post leaves one elsewhere
   - rule: max-paragraph-length
     line: 26
     text: For example, consider what it’s like for
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
-    note: "seven sentences in one paragraph"
+    note: seven sentences in one paragraph
   - rule: comparative-without-baseline
     line: 56
     text: "more different. It’s not hard to wonder:"
     message: '"more different" does not say what it is compared with'
     verdict: false-positive
-    note: "the idiom \"couldn't be more different\" is not a comparison needing a baseline"
+    note: the idiom "couldn't be more different" is not a comparison needing a baseline
+  - rule: max-sentence-length
+    line: 56
+    what: the sentence listing who joined ("Joining us were visual designers ...") runs 44 words
+    verdict: missed
+    note: found by lab main, which no longer ends it at the U.S.
   - rule: max-paragraph-length
     line: 58
     text: The first question we asked ourselves wa
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-    note: "six sentences in one paragraph"
+    note: six sentences in one paragraph
   - rule: unqualified-superlative
     line: 58
     text: We then looked for patterns, taking note
     message: '"the most" has nothing to compare against (3 such claims)'
     verdict: false-positive
-    note: "\"the most common\" of the ideas the team had just grouped on the wall (scope set by the sentence before)"
+    note: '"the most common" of the ideas the team had just grouped on the wall (scope set by the sentence before)'
   - rule: quote-style-consistency
     line: 71
     text: "'s on a government site. She wants it to"
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 41)
     verdict: correct
-    note: "a straight apostrophe in \"she's\" where the post uses curly ones"
+    note: a straight apostrophe in "she's" where the post uses curly ones
   - rule: max-sentence-length
     line: 119
     text: In order to provide the greatest flexibi
     message: This sentence runs 47 words (limit 40)
     verdict: correct
-    note: "47-word sentence"
+    note: 47-word sentence
   - rule: unqualified-superlative
     line: 121
     text: Then we tested these fonts with governme
     message: '"the most" has nothing to compare against (3 such claims)'
     verdict: false-positive
-    note: "\"which font was the most legible\" names its set in the same sentence (these fonts)"
+    note: '"which font was the most legible" names its set in the same sentence (these fonts)'
+  - rule: oxford-comma-consistency
+    line: 146
+    text: A simple, minimalist palette of cool blu
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: false-positive
+    note: '"simple, minimalist palette" is two adjectives on one noun, not a list'
   - rule: max-sentence-length
     line: 184
     text: By using bright saturated tints of blue
     message: This sentence runs 41 words (limit 40)
     verdict: correct
-    note: "41-word sentence"
+    note: 41-word sentence
+  - rule: oxford-comma-consistency
+    line: 196
+    text: To hold the structure of the content, we
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: false-positive
+    note: '"Neat, a flexible and lightweight Sass grid" is an appositive, not a list'
   - rule: max-paragraph-length
     line: 209
     text: The U.S. Web Design Standards launched i
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
-    note: "seven sentences in one paragraph"
+    note: seven sentences in one paragraph
   - rule: max-sentence-length
     line: 216
     text: By providing designers and developers wi
     message: This sentence runs 50 words (limit 40)
     verdict: correct
-    note: "50-word sentence"
+    note: 50-word sentence
   - rule: unqualified-superlative
     line: 224
     text: What takes the longest or is the most ch
     message: '"the most" has nothing to compare against (3 such claims)'
     verdict: false-positive
-    note: "a question asking readers which of their own tasks takes the longest; the scope is \"when building out websites\""
+    note: a question asking readers which of their own tasks takes the longest; the scope is "when building out websites"
   - rule: cliche
     line: 242
     text: Only when people have a stake in the sys
     message: '"stand the test of time" is a cliché'
     verdict: correct
-    note: "\"stand the test of time\""
+    note: '"stand the test of time"'
   - rule: max-paragraph-length
     line: 242
     text: When building out a large-scale design s
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-    note: "six sentences in one paragraph"
+    note: six sentences in one paragraph

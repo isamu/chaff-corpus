@@ -7,6 +7,11 @@ findings:
     message: This sentence runs 56 words (limit 45)
     verdict: correct
   - rule: max-sentence-length
+    line: 19
+    what: the sentence "Market commentary pointed to geopolitical developments, ..." runs 47 words
+    verdict: missed
+    note: found by lab main, which no longer ends it at the U.S.
+  - rule: max-sentence-length
     line: 27
     text: When reviewing money markets, the manage
     message: This sentence runs 46 words (limit 45)

@@ -6,502 +6,507 @@ findings:
     text: また、65歳を超えても、70代を通じ、またそもそも年齢を判断基準とせず、多くの者
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: correct
-    note: "一文に節が 7 つつながっています"
+    note: 一文に節が 7 つつながっています
   - rule: max-sentence-length
     line: 11
     text: また、65歳を超えても、70代を通じ、またそもそも年齢を判断基準とせず、多くの者
     message: この文は 157 文字あります（140 文字まで）
     verdict: correct
-    note: "157 字の一文"
+    note: 157 字の一文
   - rule: max-ten
     line: 11
     text: また、65歳を超えても、70代を通じ、またそもそも年齢を判断基準とせず、多くの者
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 7 個あります"
+    note: 一文に読点が 7 個あります
   - rule: no-doubled-joshi
     line: 15
     text: の高齢期の所得確保の支援や個人の自助努力にも留意し、企業年金、退職金、個人年金等
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: max-kanji-continuous
     line: 21
     text: 従来の事業主に対する65歳までの雇用確保の義務化に加えて、70歳までの就業確保を
     message: 「改正高年齢者雇用安定法」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "法律の名前（改正高年齢者雇用安定法）"
+    note: 法律の名前（改正高年齢者雇用安定法）
   - rule: max-sentence-length
     line: 21
     text: 従来の事業主に対する65歳までの雇用確保の義務化に加えて、70歳までの就業確保を
     message: この文は 281 文字あります（140 文字まで）
     verdict: correct
-    note: "281 字の一文"
+    note: 281 字の一文
   - rule: max-sentence-length
     line: 25
     text: 定年退職後等の高年齢者の多様な就業ニーズに応じ、就業機会を確保提供し、高年齢者の
     message: この文は 227 文字あります（140 文字まで）
     verdict: correct
-    note: "227 字の一文"
+    note: 227 字の一文
   - rule: nominalization
     line: 25
     text: 支援を行うとともに、少子高齢化が急速に進展する中で、人手不足の悩みを抱える企業を
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: clause-chain
     line: 27
     text: また、雇用形態に関わらない公正な待遇の確保に向け、正規雇用労働者と非正規雇用労働
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: correct
-    note: "一文に節が 8 つつながっています"
+    note: 一文に節が 8 つつながっています
   - rule: max-sentence-length
     line: 27
     text: さらに、令和5年11月に策定された「デフレ完全脱却のための総合経済対策」（令和5
     message: この文は 152 文字あります（140 文字まで）
     verdict: correct
-    note: "152 字の一文"
+    note: 152 字の一文
   - rule: max-sentence-length
     line: 27
     text: また、雇用形態に関わらない公正な待遇の確保に向け、正規雇用労働者と非正規雇用労働
     message: この文は 270 文字あります（140 文字まで）
     verdict: correct
-    note: "270 字の一文"
+    note: 270 字の一文
   - rule: max-ten
     line: 27
     text: また、雇用形態に関わらない公正な待遇の確保に向け、正規雇用労働者と非正規雇用労働
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 8 個あります"
+    note: 一文に読点が 8 個あります
   - rule: no-doubled-joshi
     line: 27
     text: の差の根拠の説明が不十分な企業等について、文書で指導を行い、経営者に対応を求める
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: nominalization
     line: 27
     text: 助言を行いつつ、支援ツール等を活用し、企業の制度等の見直しを検討するように促し、
     message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「助言を行う」は「助言する」で足りる"
+    note: 「助言を行う」は「助言する」で足りる
   - rule: nominalization
     line: 27
     text: 指導を行い、法違反に当たらないものの、改善に向けた取組が望まれる企業に対しては具
     message: 「指導を行う」は「指導する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「指導を行う」は「指導する」で足りる"
+    note: 「指導を行う」は「指導する」で足りる
   - rule: nominalization
     line: 27
     text: 指導を行い、経営者に対応を求めるなど、同一労働同一賃金の更なる遵守の徹底に向けた
     message: 「指導を行う」は「指導する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「指導を行う」は「指導する」で足りる"
+    note: 「指導を行う」は「指導する」で足りる
   - rule: unused-definition
     line: 27
     text: 以下「パートタイム・有期雇用労働法」という。）が令和3年4月1日に全面施行され、
     message: 「パートタイム・有期雇用労働法」を定義していますが、本文で使っていません
     verdict: correct
-    note: "この節で「以下〜という」と定義した略称を、節の中で一度も使っていない"
+    note: この節で「以下〜という」と定義した略称を、節の中で一度も使っていない
   - rule: max-sentence-length
     line: 29
     text: 加えて、企業における非正規雇用労働者の待遇改善等を支援するため、平成30年度より
     message: この文は 161 文字あります（140 文字まで）
     verdict: correct
-    note: "161 字の一文"
+    note: 161 字の一文
   - rule: nominalization
     line: 29
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 33
     text: 普及を行うとともに、実践に必要な取組を見える化し、企業の取組を推進するために策定
     message: 「普及を行う」は「普及する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「普及を行う」は「普及する」で足りる"
+    note: 「普及を行う」は「普及する」で足りる
   - rule: nominalization
     line: 33
     text: 検討を行った。
     message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「検討を行う」は「検討する」で足りる"
+    note: 「検討を行う」は「検討する」で足りる
   - rule: max-sentence-length
     line: 35
     text: 加えて、副業・兼業については、令和4年7月に「副業・兼業の促進に関するガイドライ
     message: この文は 168 文字あります（140 文字まで）
     verdict: correct
-    note: "168 字の一文"
+    note: 168 字の一文
   - rule: nominalization
     line: 35
     text: 周知を行った。
     message: 「周知を行う」は「周知する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「周知を行う」は「周知する」で足りる"
+    note: 「周知を行う」は「周知する」で足りる
   - rule: max-sentence-length
     line: 41
     text: 「デジタル社会の実現に向けた重点計画」（令和5年6月9日閣議決定）においては、「
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-    note: "141 字の一文"
+    note: 141 字の一文
   - rule: max-sentence-length
     line: 41
     text: また、事業主を対象としたセミナー等の開催、中小企業を支援する団体と連携した全国的
     message: この文は 158 文字あります（140 文字まで）
     verdict: correct
-    note: "158 字の一文"
+    note: 158 字の一文
   - rule: max-sentence-length
     line: 41
     text: 具体的には、適正な労務管理下における良質なテレワークの導入・定着支援を図るため、
     message: この文は 167 文字あります（140 文字まで）
     verdict: correct
-    note: "167 字の一文"
+    note: 167 字の一文
   - rule: nominalization
     line: 43
     text: 把握を行った。
     message: 「把握を行う」は「把握する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「把握を行う」は「把握する」で足りる"
+    note: 「把握を行う」は「把握する」で足りる
   - rule: max-sentence-length
     line: 47
     text: 「事業主都合の解雇」又は「継続雇用制度の対象となる高年齢者に係る基準に該当しなか
     message: この文は 197 文字あります（140 文字まで）
     verdict: correct
-    note: "197 字の一文"
+    note: 197 字の一文
   - rule: nominalization
     line: 47
     text: 助言を行った。求職活動支援書の作成に当たってジョブ・カードを活用することが可能と
     message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「助言を行う」は「助言する」で足りる"
+    note: 「助言を行う」は「助言する」で足りる
   - rule: max-kanji-continuous
     line: 51
     text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
     message: 「特定求職者雇用開発助成金」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "助成金の名前"
+    note: 助成金の名前
   - rule: max-sentence-length
     line: 51
     text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
     message: この文は 183 文字あります（140 文字まで）
     verdict: correct
-    note: "183 字の一文"
+    note: 183 字の一文
   - rule: repeated-conjunction
     line: 51
-    text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
-    message: 接続詞で始まる段落が 3 続いています（2 まで）
-    verdict: correct
-    note: "「また」「さらに」などで始まる段落が続く"
-  - rule: max-sentence-length
+    what: 「また、」「さらに、」「また、」で始まる段落が三つ続く（表2－2－1 の題を挟む）
+    verdict: missed
+    note: judged correct before; the table caption the converter now keeps (isamu/lab#1743) sits between the paragraphs and breaks the run chaff counts
+  - rule: max-kanji-continuous
     line: 53
+    text: 表2－2－1　高年齢者雇用関係助成金制度の概要
+    message: 「高年齢者雇用関係助成金制度」は漢字が 13 字続いています（10 字まで）
+    verdict: correct
+    note: 表題の「高年齢者雇用関係助成金制度」は名前ではない一般の複合語で、「高年齢者雇用関係の助成金制度」と分けられる
+  - rule: max-sentence-length
+    line: 55
     text: あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用者の能力評価、
     message: この文は 157 文字あります（140 文字まで）
     verdict: correct
-    note: "157 字の一文"
+    note: 157 字の一文
   - rule: max-sentence-length
-    line: 53
+    line: 55
     text: さらに、再就職が困難である高年齢者等の円滑な労働移動を強化するため、労働移動支援
     message: この文は 167 文字あります（140 文字まで）
     verdict: correct
-    note: "167 字の一文"
+    note: 167 字の一文
   - rule: nominalization
-    line: 53
+    line: 55
     text: 促進を行った。
     message: 「促進を行う」は「促進する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「促進を行う」は「促進する」で足りる"
+    note: 「促進を行う」は「促進する」で足りる
   - rule: nominalization
-    line: 53
+    line: 55
     text: 助成を実施し、賃金上昇を伴う労働移動の支援を行った。あわせて、中途採用等支援助成
     message: 「助成を実施する」は「助成する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「助成を実施する」は「助成する」で足りる"
+    note: 「助成を実施する」は「助成する」で足りる
   - rule: nominalization
-    line: 53
+    line: 55
     text: 措置を実施し、能力開発支援を含めた労働移動の一層の促進を図った。また、高年齢者等
     message: 「措置を実施する」は「措置する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: false-positive
-    note: "「助成措置を実施し」を「助成措置し」とはできない；「助成措置」は一語の名詞"
+    note: 「助成措置を実施し」を「助成措置し」とはできない；「助成措置」は一語の名詞
   - rule: nominalization
-    line: 53
+    line: 55
     text: 支援を行った。あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: max-kanji-continuous
-    line: 55
+    line: 57
     text: また、高年齢退職予定者のキャリア情報等を登録し、その能力の活用を希望する事業者に
     message: 「公益財団法人産業雇用安定」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "法人格と団体の名前（公益財団法人産業雇用安定センター）"
+    note: 法人格と団体の名前（公益財団法人産業雇用安定センター）
   - rule: nominalization
-    line: 59
+    line: 61
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: topic-predicate-distance
-    line: 63
+    line: 65
     text: 高年齢者雇用安定法は、事業主に対して、65歳までの雇用を確保するために継続雇用制
     message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
     verdict: correct
-    note: "「高年齢者雇用安定法は」から述語まで、定義の括弧を挟んで遠い"
+    note: 「高年齢者雇用安定法は」から述語まで、定義の括弧を挟んで遠い
   - rule: max-kanji-continuous
-    line: 65
+    line: 67
     text: さらに、令和3年4月に施行された改正高年齢者雇用安定法において、事業主に対する7
     message: 「改正高年齢者雇用安定法」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "法律の名前（改正高年齢者雇用安定法）"
+    note: 法律の名前（改正高年齢者雇用安定法）
   - rule: max-sentence-length
-    line: 65
+    line: 67
     text: さらに、令和3年4月に施行された改正高年齢者雇用安定法において、事業主に対する7
     message: この文は 169 文字あります（140 文字まで）
     verdict: correct
-    note: "169 字の一文"
+    note: 169 字の一文
   - rule: nominalization
-    line: 65
+    line: 67
     text: 啓発を行うとともに、独立行政法人高齢・障害・求職者雇用支援機構の70歳雇用推進プ
     message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「啓発を行う」は「啓発する」で足りる"
+    note: 「啓発を行う」は「啓発する」で足りる
   - rule: nominalization
-    line: 65
+    line: 67
     text: 援助を行った。
     message: 「援助を行う」は「援助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「援助を行う」は「援助する」で足りる"
+    note: 「援助を行う」は「援助する」で足りる
   - rule: max-sentence-length
-    line: 67
+    line: 69
     text: 「労働施策の総合的な推進並びに労働者の雇用の安定及び職業生活の充実等に関する法律
     message: この文は 153 文字あります（140 文字まで）
     verdict: correct
-    note: "153 字の一文"
+    note: 153 字の一文
   - rule: unused-definition
-    line: 67
+    line: 69
     text: 以下「労働施策総合推進法」という。）第9条に基づき、労働者の一人一人により均等な
     message: 「労働施策総合推進法」を定義していますが、本文で使っていません
     verdict: correct
-    note: "この節で「以下〜という」と定義した略称を、節の中で一度も使っていない"
+    note: この節で「以下〜という」と定義した略称を、節の中で一度も使っていない
   - rule: max-sentence-length
-    line: 69
+    line: 71
     text: また、企業における高年齢者の雇用を推進するため、65歳以上の年齢までの定年延長や
     message: この文は 143 文字あります（140 文字まで）
     verdict: correct
-    note: "143 字の一文"
+    note: 143 字の一文
   - rule: nominalization
-    line: 69
+    line: 71
     text: 導入を行う事業主、高年齢者の雇用管理制度の見直し又は導入等や高年齢の有期雇用労働
     message: 「導入を行う」は「導入する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「導入を行う」は「導入する」で足りる"
+    note: 「導入を行う」は「導入する」で足りる
   - rule: nominalization
-    line: 69
+    line: 71
     text: 提案を実施し、企業への働きかけを行った。
     message: 「提案を実施する」は「提案する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「提案を実施する」は「提案する」で足りる"
+    note: 「提案を実施する」は「提案する」で足りる
   - rule: nominalization
-    line: 69
+    line: 71
     text: 支援を実施した。さらに、継続雇用延長・定年引上げに係る具体的な制度改善提案を実施
     message: 「支援を実施する」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を実施する」は「支援する」で足りる"
+    note: 「支援を実施する」は「支援する」で足りる
   - rule: max-sentence-length
-    line: 71
+    line: 73
     text: 加えて、日本政策金融公庫（中小企業事業）の融資制度（地域活性化・雇用促進資金）に
     message: この文は 150 文字あります（140 文字まで）
     verdict: correct
-    note: "150 字の一文"
+    note: 150 字の一文
   - rule: nominalization
-    line: 73
+    line: 75
     text: 勧奨を行った。また、高年齢労働者の安全・健康確保の取組を行う中小企業等に対し、エ
     message: 「勧奨を行う」は「勧奨する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「勧奨を行う」は「勧奨する」で足りる"
+    note: 「勧奨を行う」は「勧奨する」で足りる
   - rule: nominalization
-    line: 73
+    line: 75
     text: 支援を行い、高年齢労働者の安全衛生対策を推進した。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: unused-definition
-    line: 73
+    line: 75
     text: 以下「エイジフレンドリーガイドライン」という。）の周知及び労働災害防止団体による
     message: 「エイジフレンドリーガイドライン」を定義していますが、本文で使っていません
     verdict: correct
-    note: "この節で「以下〜という」と定義した略称を、節の中で一度も使っていない"
+    note: この節で「以下〜という」と定義した略称を、節の中で一度も使っていない
   - rule: max-kanji-continuous
-    line: 75
+    line: 77
     text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
     message: 「人事管理運営協議会決定」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "会議の名前に「決定」が付いた出典表記（人事管理運営協議会決定）"
+    note: 会議の名前に「決定」が付いた出典表記（人事管理運営協議会決定）
   - rule: max-sentence-length
-    line: 75
+    line: 77
     text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
     message: この文は 211 文字あります（140 文字まで）
     verdict: correct
-    note: "211 字の一文"
+    note: 211 字の一文
   - rule: ngram-repetition
-    line: 75
+    line: 77
     text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
     message: 「の一部を改正する」が 8 回出てきます（5 回まで）
     verdict: false-positive
-    note: "「の一部を改正する」は法律の題名の一部で、言い換えられない"
+    note: 「の一部を改正する」は法律の題名の一部で、言い換えられない
   - rule: teki-overuse
-    line: 75
+    line: 77
     text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「段階的」「具体的」「計画的」"
+    note: 一文に「段階的」「具体的」「計画的」
   - rule: max-sentence-length
-    line: 77
+    line: 79
     text: 地方公務員の定年の引上げについては、「地方公務員法の一部を改正する法律」（令和3
     message: この文は 240 文字あります（140 文字まで）
     verdict: correct
-    note: "240 字の一文"
+    note: 240 字の一文
   - rule: max-ten
-    line: 77
+    line: 79
     text: 地方公務員の定年の引上げについては、「地方公務員法の一部を改正する法律」（令和3
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 8 個あります"
+    note: 一文に読点が 8 個あります
   - rule: one-sentence-paragraph-run
-    line: 81
+    line: 83
     text: 職業訓練の実施や職業能力の「見える化」のみならず、個々人にあった職業生涯を通じた
     message: 一文だけの段落が 5 個続いています（4 個まで）
     verdict: correct
-    note: "一文だけの段落が五つ続く"
+    note: 一文だけの段落が五つ続く
   - rule: nominalization
-    line: 83
+    line: 85
     text: 支援を実施した。
     message: 「支援を実施する」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を実施する」は「支援する」で足りる"
+    note: 「支援を実施する」は「支援する」で足りる
   - rule: repeated-conjunction
-    line: 83
+    line: 85
     text: また、高齢期を見据えたキャリア形成支援を推進するため、労働者のキャリアプラン再設
     message: 接続詞で始まる段落が 3 続いています（2 まで）
     verdict: correct
-    note: "「また」「さらに」などで始まる段落が続く"
+    note: 「また」「さらに」などで始まる段落が続く
   - rule: max-kanji-continuous
-    line: 87
+    line: 89
     text: さらに、労働者個人の自発的な能力開発・キャリア形成を促進するため、教育訓練休暇制
     message: 「教育訓練休暇給付金制度」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "制度の名前"
+    note: 制度の名前
   - rule: no-doubled-joshi
-    line: 87
+    line: 89
     text: の給付率の上限の引上げや教育訓練休暇給付金制度の創設等を内容とする「雇用保険法等
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: max-kanji-continuous
-    line: 89
+    line: 91
     text: 令和4年10月から施行された改正職業能力開発促進法により法定化された都道府県単位
     message: 「改正職業能力開発促進法」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "法律の名前（改正職業能力開発促進法）"
+    note: 法律の名前（改正職業能力開発促進法）
   - rule: max-sentence-length
-    line: 89
+    line: 91
     text: 令和4年10月から施行された改正職業能力開発促進法により法定化された都道府県単位
     message: この文は 163 文字あります（140 文字まで）
     verdict: correct
-    note: "163 字の一文"
+    note: 163 字の一文
   - rule: nominalization
-    line: 89
+    line: 91
     text: 検証を行い、訓練内容の改善に取り組んでいる。
     message: 「検証を行う」は「検証する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「検証を行う」は「検証する」で足りる"
+    note: 「検証を行う」は「検証する」で足りる
   - rule: max-sentence-length
-    line: 95
+    line: 97
     text: この状況を踏まえ、「労働時間等の設定の改善に関する特別措置法」（平成4年法律第9
     message: この文は 150 文字あります（140 文字まで）
     verdict: correct
-    note: "150 字の一文"
+    note: 150 字の一文
   - rule: max-sentence-length
-    line: 97
+    line: 99
     text: 具体的には、労働者の健康の保持や仕事と生活の調和を図るため、10月の「年次有給休
     message: この文は 179 文字あります（140 文字まで）
     verdict: correct
-    note: "179 字の一文"
+    note: 179 字の一文
   - rule: max-sentence-length
-    line: 103
+    line: 105
     text: こうした社会・経済の変化を年金制度に反映し、長期化する高齢期の経済基盤の充実を図
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-    note: "141 字の一文"
+    note: 141 字の一文
   - rule: max-kanji-continuous
-    line: 105
+    line: 107
     text: また、国民年金法等の一部を改正する法律の検討規定等には、被用者保険の更なる適用拡
     message: 「社会保障審議会年金部会等」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "審議会の部会の名前に「等」が付いたもの"
+    note: 審議会の部会の名前に「等」が付いたもの
   - rule: no-doubled-joshi
-    line: 109
+    line: 111
     text: の繰下げ受給の上限年齢の引上げを踏まえた年金額増額のイメージ等について、分かりや
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: no-doubled-joshi
-    line: 109
+    line: 111
     text: の被用者保険の適用拡大の円滑な施行に向けて、制度改正の内容や適用拡大による被保険
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: max-kanji-continuous
-    line: 115
+    line: 117
     text: 勤労者財産形成貯蓄制度の普及等を図ることにより、高齢期に備えた勤労者の自助努力に
     message: 「勤労者財産形成貯蓄制度」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "制度の名前"
+    note: 制度の名前
   - rule: max-kanji-continuous
-    line: 117
+    line: 119
     text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい
     message: 「社会保障審議会企業年金」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "審議会の部会の名前（社会保障審議会企業年金・個人年金部会）"
+    note: 審議会の部会の名前（社会保障審議会企業年金・個人年金部会）
   - rule: max-kanji-continuous
-    line: 117
+    line: 119
     text: 退職金制度については、中小企業における退職金制度の導入を支援するため、中小企業退
     message: 「中小企業退職金共済制度」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "制度の名前"
+    note: 制度の名前
   - rule: max-sentence-length
-    line: 117
+    line: 119
     text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい
     message: この文は 193 文字あります（140 文字まで）
     verdict: correct
-    note: "193 字の一文"
+    note: 193 字の一文
   - rule: no-doubled-joshi
-    line: 117
+    line: 119
     text: の普及促進のための周知等を実施した。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: nominalization
-    line: 117
+    line: 119
     text: 啓発を行った。さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会
     message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「啓発を行う」は「啓発する」で足りる"
+    note: 「啓発を行う」は「啓発する」で足りる
   - rule: nominalization
-    line: 117
+    line: 119
     text: 広報を行った（加入者数は、令和6年3月末時点で328万人）。退職金制度については
     message: 「広報を行う」は「広報する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「広報を行う」は「広報する」で足りる"
+    note: 「広報を行う」は「広報する」で足りる
   - rule: no-doubled-joshi
-    line: 119
+    line: 121
     text: の良いNISAの普及の観点から、NISA特設サイトの利用者目線での抜本的な見直し
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ続く"
+    note: 「の」が読点を挟まず三つ続く
   - rule: max-kanji-continuous
-    line: 125
+    line: 127
     text: また、低所得の高齢者世帯が安定した生活を送れるようにするため、各都道府県社会福祉
     message: 「各都道府県社会福祉協議会」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "団体の名前（都道府県社会福祉協議会）に「各」が付いたもの"
+    note: 団体の名前（都道府県社会福祉協議会）に「各」が付いたもの

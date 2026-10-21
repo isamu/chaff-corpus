@@ -6,145 +6,145 @@ findings:
     text: また、高齢者のニーズを踏まえ将来にわたり活用される良質な住宅の供給を促進し、併せ
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: correct
-    note: "一文に節が 6 つつながっています"
+    note: 一文に節が 6 つつながっています
   - rule: max-sentence-length
     line: 9
     text: また、高齢者のニーズを踏まえ将来にわたり活用される良質な住宅の供給を促進し、併せ
     message: この文は 178 文字あります（140 文字まで）
     verdict: correct
-    note: "178 字の一文"
+    note: 178 字の一文
   - rule: max-ten
     line: 9
     text: また、高齢者のニーズを踏まえ将来にわたり活用される良質な住宅の供給を促進し、併せ
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 8 個あります"
+    note: 一文に読点が 8 個あります
   - rule: max-sentence-length
     line: 19
     text: 「住生活基本計画（全国計画）」（令和3年3月閣議決定）に掲げた目標（〔1〕「新た
     message: この文は 352 文字あります（140 文字まで）
     verdict: correct
-    note: "352 字の一文"
+    note: 352 字の一文
   - rule: max-ten
     line: 19
     text: 「住生活基本計画（全国計画）」（令和3年3月閣議決定）に掲げた目標（〔1〕「新た
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 8 個あります"
+    note: 一文に読点が 8 個あります
   - rule: max-kanji-continuous
     line: 23
     text: 良質な持家の取得・改善を促進するため、勤労者財産形成住宅貯蓄の普及促進等を図ると
     message: 「独立行政法人勤労者退職金共済機構等」は漢字が 17 字続いています（10 字まで）
     verdict: false-positive
-    note: "法人格と法人の名前に「等」が付いたもの"
+    note: 法人格と法人の名前に「等」が付いたもの
   - rule: nominalization
     line: 23
     text: 融資を行っている。
     message: 「融資を行う」は「融資する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「融資を行う」は「融資する」で足りる"
+    note: 「融資を行う」は「融資する」で足りる
   - rule: max-kanji-continuous
     line: 37
     text: 消費者ニーズに対応した既存住宅流通・リフォーム市場の環境整備を図るため、登録講習
     message: 「既存住宅状況調査技術者講習」は漢字が 13 字続いています（10 字まで）
     verdict: false-positive
-    note: "法定の講習の名前"
+    note: 法定の講習の名前
   - rule: max-sentence-length
     line: 41
     text: さらに、住宅リフォーム事業の健全な発達及び消費者が安心してリフォームを行うことが
     message: この文は 148 文字あります（140 文字まで）
     verdict: correct
-    note: "148 字の一文"
+    note: 148 字の一文
   - rule: no-doubled-joshi
     line: 41
     text: の業務の適正な運営の確保及び消費者への情報提供等を行う等、一定の要件を満たす住宅
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: nominalization
     line: 41
     text: リフォームを行うことができる環境の整備を図るため、住宅リフォーム事業者の業務の適
     message: 「リフォームを行う」は「リフォームする」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「リフォームを行う」は「リフォームする」で足りる"
+    note: 「リフォームを行う」は「リフォームする」で足りる
   - rule: nominalization
     line: 51
     text: 緩和を行っている。
     message: 「緩和を行う」は「緩和する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「緩和を行う」は「緩和する」で足りる"
+    note: 「緩和を行う」は「緩和する」で足りる
   - rule: nominalization
     line: 57
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 57
     text: 支援を行った。また、非接触でのサービス提供等を可能とするIoT技術の導入支援を行
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 59
     text: 支援を行った。加えて、高齢者世帯等の住宅確保要配慮者が円滑に入居できる賃貸住宅の
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 65
     text: 引下げを行っている。さらに、住宅融資保険制度を活用し、民間金融機関が提供する住宅
     message: 「引下げを行う」は「引下げする」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「引下げを行う」は「引下げする」で足りる"
+    note: 「引下げを行う」は「引下げする」で足りる
   - rule: nominalization
     line: 65
     text: 融資を実施している。また、証券化支援事業の枠組みを活用したフラット35Sにより、
     message: 「融資を実施する」は「融資する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「融資を実施する」は「融資する」で足りる"
+    note: 「融資を実施する」は「融資する」で足りる
   - rule: nominalization
     line: 67
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 73
     text: 助成を行った。都市再生機構賃貸住宅においても、中高層住宅の供給においてはエレベー
     message: 「助成を行う」は「助成する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「助成を行う」は「助成する」で足りる"
+    note: 「助成を行う」は「助成する」で足りる
   - rule: no-doubled-joshi
     line: 79
     text: の居住の安定確保のための計画を定めることを推進した。また、生活支援サービスが提供
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: nominalization
     line: 79
     text: 提供を実施した。
     message: 「提供を実施する」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「提供を実施する」は「提供する」で足りる"
+    note: 「提供を実施する」は「提供する」で足りる
   - rule: nominalization
     line: 83
     text: 支援を行っている。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: nominalization
     line: 87
     text: 補助を行った。
     message: 「補助を行う」は「補助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「補助を行う」は「補助する」で足りる"
+    note: 「補助を行う」は「補助する」で足りる
   - rule: nominalization
     line: 91
     text: 供給を行った。また、地域の実情を踏まえた地方公共団体の判断により、高齢者世帯の入
     message: 「供給を行う」は「供給する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「供給を行う」は「供給する」で足りる"
+    note: 「供給を行う」は「供給する」で足りる
   - rule: dangling-figure-reference
     line: 93
     text: 表2－2－6）。
@@ -156,658 +156,658 @@ findings:
     text: 措置を行っている（表2－2－6）。
     message: 「措置を行う」は「措置する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: false-positive
-    note: "「〜措置を実施し」の「措置」は前の語と一語の名詞で、「〜措置し」とはできない"
+    note: 「〜措置を実施し」の「措置」は前の語と一語の名詞で、「〜措置し」とはできない
   - rule: nominalization
-    line: 97
+    line: 99
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: max-sentence-length
-    line: 103
+    line: 105
     text: 誰もが暮らしやすい共生社会の実現に向けて、「共生社会ホストタウン」に登録されてい
     message: この文は 150 文字あります（140 文字まで）
     verdict: correct
-    note: "150 字の一文"
+    note: 150 字の一文
   - rule: nominalization
-    line: 103
+    line: 105
     text: 発信を行った。
     message: 「発信を行う」は「発信する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「発信を行う」は「発信する」で足りる"
+    note: 「発信を行う」は「発信する」で足りる
   - rule: orthographic-variant
-    line: 103
+    line: 105
     text: 街づくりや心のバリアフリーに関する取組が進められているところであり、令和5年10
     message: 「街」と書いています（この文書はふつう「まち」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「街づくり」と、ほかの「まちづくり」が混ざる"
+    note: 「街づくり」と、ほかの「まちづくり」が混ざる
   - rule: max-kanji-continuous
-    line: 107
+    line: 109
     text: 高齢者等全ての人が安全・安心に生活し、社会参加できるよう、高齢者に配慮したまちづ
     message: 「移動等円滑化促進方針及」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "計画の名前（移動等円滑化促進方針）に「及び」の「及」が付いたもの"
+    note: 計画の名前（移動等円滑化促進方針）に「及び」の「及」が付いたもの
   - rule: max-sentence-length
-    line: 107
+    line: 109
     text: 高齢者等全ての人が安全・安心に生活し、社会参加できるよう、高齢者に配慮したまちづ
     message: この文は 187 文字あります（140 文字まで）
     verdict: correct
-    note: "187 字の一文"
+    note: 187 字の一文
   - rule: max-kanji-continuous
-    line: 109
+    line: 111
     text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
     message: 「田園都市国家構想総合戦略」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "閣議決定の文書名（デジタル田園都市国家構想総合戦略）"
+    note: 閣議決定の文書名（デジタル田園都市国家構想総合戦略）
   - rule: max-sentence-length
-    line: 109
+    line: 111
     text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
     message: この文は 263 文字あります（140 文字まで）
     verdict: correct
-    note: "263 字の一文"
+    note: 263 字の一文
   - rule: topic-predicate-distance
-    line: 109
+    line: 111
     text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
     message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
     verdict: false-positive
-    note: "「取組は」の述語「資するものであり」はすぐ後にある"
+    note: 「取組は」の述語「資するものであり」はすぐ後にある
   - rule: max-sentence-length
-    line: 115
+    line: 117
     text: 令和2年10月には、SDGs達成への取組を積極的に進める事業者等を「見える化」す
     message: この文は 186 文字あります（140 文字まで）
     verdict: correct
-    note: "186 字の一文"
+    note: 186 字の一文
   - rule: nominalization
-    line: 115
+    line: 117
     text: 表彰を実施した。
     message: 「表彰を実施する」は「表彰する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「表彰を実施する」は「表彰する」で足りる"
+    note: 「表彰を実施する」は「表彰する」で足りる
   - rule: max-sentence-length
-    line: 119
+    line: 121
     text: 地方創生の観点からは、女性、若者、高齢者、障害者など、誰もが居場所と役割を持つコ
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
-    note: "175 字の一文"
+    note: 175 字の一文
   - rule: max-ten
-    line: 119
+    line: 121
     text: 地方創生の観点からは、女性、若者、高齢者、障害者など、誰もが居場所と役割を持つコ
     message: 一文に読点が 10 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 10 個あります"
+    note: 一文に読点が 10 個あります
   - rule: max-sentence-length
-    line: 121
+    line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方
     message: この文は 249 文字あります（140 文字まで）
     verdict: correct
-    note: "249 字の一文"
+    note: 249 字の一文
   - rule: max-ten
-    line: 121
+    line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 7 個あります"
+    note: 一文に読点が 7 個あります
   - rule: no-doubled-joshi
-    line: 121
+    line: 123
     text: のためのマッチングイベント等の実施により、地方公共団体の取組を支援するとともに、
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: nominalization
-    line: 121
+    line: 123
     text: 発信を行っている。これらの取組により、高齢者を含む全ての人に居場所と役割がある地
     message: 「発信を行う」は「発信する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「発信を行う」は「発信する」で足りる"
+    note: 「発信を行う」は「発信する」で足りる
   - rule: nominalization
-    line: 123
+    line: 125
     text: 整備を行っている。
     message: 「整備を行う」は「整備する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「整備を行う」は「整備する」で足りる"
+    note: 「整備を行う」は「整備する」で足りる
   - rule: max-sentence-length
-    line: 127
+    line: 129
     text: 中山間地域等において、各種生活サービス機能が一定のエリアに集約され、集落生活圏内
     message: この文は 151 文字あります（140 文字まで）
     verdict: correct
-    note: "151 字の一文"
+    note: 151 字の一文
   - rule: no-doubled-joshi
-    line: 131
+    line: 133
     text: の新設等の際の「公共交通移動等円滑化基準」への適合義務、既設の旅客施設・車両等に
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: max-sentence-length
-    line: 133
+    line: 135
     text: また、バリアフリー法に基づく「移動等円滑化の促進に関する基本方針」（令和2年国家
     message: この文は 262 文字あります（140 文字まで）
     verdict: correct
-    note: "262 字の一文"
+    note: 262 字の一文
   - rule: comparative-without-baseline
-    line: 139
+    line: 141
     text: より望ましい公共交通機関のバリアフリー化が進むことが期待される。このため、ハード
     message: 「より望ましい」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "「より望ましい」は目安を示す前の今の整備と比べている（文の前半）"
+    note: 「より望ましい」は目安を示す前の今の整備と比べている（文の前半）
   - rule: max-sentence-length
-    line: 139
+    line: 141
     text: このため、ハード対策としては「公共交通機関の旅客施設に関する移動等円滑化整備ガイ
     message: この文は 166 文字あります（140 文字まで）
     verdict: correct
-    note: "166 字の一文"
+    note: 166 字の一文
   - rule: max-sentence-length
-    line: 141
+    line: 143
     text: なお、旅客船については「旅客船バリアフリーガイドライン（令和3年11月）」、ユニ
     message: この文は 210 文字あります（140 文字まで）
     verdict: correct
-    note: "210 字の一文"
+    note: 210 字の一文
   - rule: max-kanji-continuous
-    line: 147
+    line: 149
     text: 表2－2－7　高齢者等のための公共交通機関施設整備等の状況
     message: 「公共交通機関施設整備等」は漢字が 11 字続いています（10 字まで）
     verdict: correct
-    note: "表題の「公共交通機関施設整備等」は名前ではない一般の複合語で、「公共交通機関の施設整備」と分けられる"
+    note: 表題の「公共交通機関施設整備等」は名前ではない一般の複合語で、「公共交通機関の施設整備」と分けられる
   - rule: no-doubled-joshi
-    line: 147
+    line: 149
     text: のための公共交通機関施設整備等の状況
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: max-kanji-continuous
-    line: 160
+    line: 162
     text: （注1）バリアフリー法（高齢者、障害者等の移動等の円滑化の促進に関する法律）に基
     message: 「公共交通移動等円滑化基準」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "法令上の基準の名前"
+    note: 法令上の基準の名前
   - rule: no-doubled-joshi
-    line: 160
+    line: 162
     text: の移動等の円滑化の促進に関する法律）に基づく公共交通移動等円滑化基準への適合をも
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "「の」の連なりは括弧の中の法律の題名（障害者等の移動等の円滑化の促進に関する法律）にある"
+    note: 「の」の連なりは括弧の中の法律の題名（障害者等の移動等の円滑化の促進に関する法律）にある
   - rule: taigen-dome-in-prose
-    line: 160
+    line: 162
     text: （注1）バリアフリー法（高齢者、障害者等の移動等の円滑化の促進に関する法律）に基
     message: 本文に体言止めが 5 文あります（4 文まで）
     verdict: false-positive
-    note: "表の注（〜をもって算定。）を本文として数えている"
+    note: 表の注（〜をもって算定。）を本文として数えている
   - rule: nominalization
-    line: 168
+    line: 170
     text: 措置を実施している。
     message: 「措置を実施する」は「措置する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: false-positive
-    note: "「〜措置を実施し」の「措置」は前の語と一語の名詞で、「〜措置し」とはできない"
+    note: 「〜措置を実施し」の「措置」は前の語と一語の名詞で、「〜措置し」とはできない
   - rule: max-sentence-length
-    line: 174
+    line: 176
     text: 高齢歩行者等の安全な通行を確保するため、①幅の広い歩道等の整備、②歩道の段差・傾
     message: この文は 356 文字あります（140 文字まで）
     verdict: correct
-    note: "356 字の一文"
+    note: 356 字の一文
   - rule: nominalization
-    line: 174
+    line: 176
     text: 対策を実施した。
     message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「対策を実施する」は「対策する」で足りる"
+    note: 「対策を実施する」は「対策する」で足りる
   - rule: undefined-acronym
-    line: 174
+    line: 176
     text: LED化等の対策を実施した。
     message: 「LED」が説明なしで使われています（説明のない略語 4 個）
     verdict: false-positive
-    note: "LED は一般の語として定着していて、白書の読者に説明は要らない"
+    note: LED は一般の語として定着していて、白書の読者に説明は要らない
   - rule: undefined-acronym
-    line: 174
+    line: 176
     text: PICSを含む。）の整備、⑨歩車分離式信号の運用、⑩見やすく分かりやすい道路標識
     message: 「PICS」が説明なしで使われています（説明のない略語 4 個）
     verdict: correct
-    note: "「高度化PICS」は何の略かが書かれていない"
+    note: 「高度化PICS」は何の略かが書かれていない
   - rule: max-kanji-continuous
-    line: 178
+    line: 180
     text: 高齢者等が安心して自動車を運転し外出できるよう、生活道路における交通規制の見直し
     message: 「高齢運転者等専用駐車区間」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "道路交通法上の制度の名前"
+    note: 道路交通法上の制度の名前
   - rule: nominalization
-    line: 178
+    line: 180
     text: 対策を実施した。
     message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「対策を実施する」は「対策する」で足りる"
+    note: 「対策を実施する」は「対策する」で足りる
   - rule: max-sentence-length
-    line: 182
+    line: 184
     text: 国民一人一人がバリアフリーについての理解を深めるとともに、高齢者、障害者等の困難
     message: この文は 176 文字あります（140 文字まで）
     verdict: correct
-    note: "176 字の一文"
+    note: 176 字の一文
   - rule: max-sentence-length
-    line: 184
+    line: 186
     text: 高齢者や障害者等も含め、誰もがストレス無く移動できるユニバーサル社会の構築に向け
     message: この文は 159 文字あります（140 文字まで）
     verdict: correct
-    note: "159 字の一文"
+    note: 159 字の一文
   - rule: nominalization
-    line: 184
+    line: 186
     text: 検討を行った。また、施策の普及・展開を目的として、令和6年1月に第1回「歩行空間
     message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「検討を行う」は「検討する」で足りる"
+    note: 「検討を行う」は「検討する」で足りる
   - rule: max-sentence-length
-    line: 192
+    line: 194
     text: バリアフリー法に基づく認定を受けた優良な建築物（認定特定建築物）等のうち一定のも
     message: この文は 143 文字あります（140 文字まで）
     verdict: correct
-    note: "143 字の一文"
+    note: 143 字の一文
   - rule: no-doubled-joshi
-    line: 192
+    line: 194
     text: のうち一定のものの整備及び不特定多数の者が利用し、又は主として高齢者・障害者等が
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: max-kanji-continuous
-    line: 194
+    line: 196
     text: 窓口業務を行う官署が入居する官庁施設について、バリアフリー法に基づく建築物移動等
     message: 「建築物移動等円滑化誘導基準」は漢字が 13 字続いています（10 字まで）
     verdict: false-positive
-    note: "法令上の基準の名前"
+    note: 法令上の基準の名前
   - rule: max-kanji-continuous
-    line: 196
+    line: 198
     text: 社会資本整備総合交付金等の活用によって、誰もが安心して利用できる都市公園の整備を
     message: 「社会資本整備総合交付金等」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "交付金の名前に「等」が付いたもの"
+    note: 交付金の名前に「等」が付いたもの
   - rule: nominalization
-    line: 206
+    line: 208
     text: 運動を実施した。
     message: 「運動を実施する」は「運動する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「運動を実施する」は「運動する」で足りる"
+    note: 「運動を実施する」は「運動する」で足りる
   - rule: nominalization
-    line: 208
+    line: 210
     text: 整備を実施した。
     message: 「整備を実施する」は「整備する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「整備を実施する」は「整備する」で足りる"
+    note: 「整備を実施する」は「整備する」で足りる
   - rule: unused-definition
-    line: 208
+    line: 210
     text: 以下「漁港漁場整備法」という。）に基づき策定された「漁港漁場整備長期計画」（令和
     message: 「漁港漁場整備法」を定義していますが、本文で使っていません
     verdict: correct
-    note: "この節で「以下〜という」と定義した略称を、節の中で一度も使っていない"
+    note: この節で「以下〜という」と定義した略称を、節の中で一度も使っていない
   - rule: max-sentence-length
-    line: 214
+    line: 216
     text: 近年、交通事故における致死率の高い高齢者の人口の増加が、交通事故死者数を減りにく
     message: この文は 172 文字あります（140 文字まで）
     verdict: correct
-    note: "172 字の一文"
+    note: 172 字の一文
   - rule: no-doubled-joshi
-    line: 214
+    line: 216
     text: の高い高齢者の人口の増加が、交通事故死者数を減りにくくさせる要因の一つとなってお
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: one-sentence-paragraph-run
-    line: 214
+    line: 216
     text: 近年、交通事故における致死率の高い高齢者の人口の増加が、交通事故死者数を減りにく
     message: 一文だけの段落が 7 個続いています（4 個まで）
     verdict: correct
-    note: "一文だけの段落が 7 個続いています"
+    note: 一文だけの段落が 7 個続いています
   - rule: orthographic-variant
-    line: 214
+    line: 216
     text: 更に進むことを踏まえると、高齢者の交通安全対策は重点的に取り組むべき課題であり、
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。14 箇所のうち 1 箇所が違う）
     verdict: false-positive
-    note: "副詞の「更に」（いっそう）は公用文の書き方で漢字、接続詞の「さらに」は仮名；書き分けどおり"
+    note: 副詞の「更に」（いっそう）は公用文の書き方で漢字、接続詞の「さらに」は仮名；書き分けどおり
   - rule: max-sentence-length
-    line: 216
+    line: 218
     text: 高齢者が安全な交通行動を実践することができるよう必要な実践的技術及び交通ルール等
     message: この文は 185 文字あります（140 文字まで）
     verdict: correct
-    note: "185 字の一文"
+    note: 185 字の一文
   - rule: max-sentence-length
-    line: 220
+    line: 222
     text: さらに、歩行中及び自転車乗用中の交通事故死者数に占める高齢者の割合が高いことを踏
     message: この文は 185 文字あります（140 文字まで）
     verdict: correct
-    note: "185 字の一文"
+    note: 185 字の一文
   - rule: max-sentence-length
-    line: 226
+    line: 228
     text: また、安全運転相談については、これまでも運転に不安を持つ運転者及びその家族等から
     message: この文は 221 文字あります（140 文字まで）
     verdict: correct
-    note: "221 字の一文"
+    note: 221 字の一文
   - rule: max-ten
-    line: 226
+    line: 228
     text: また、安全運転相談については、これまでも運転に不安を持つ運転者及びその家族等から
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-    note: "一文に読点が 7 個あります"
+    note: 一文に読点が 7 個あります
   - rule: nominalization
-    line: 226
+    line: 228
     text: 教示を行う等、運転適性に関する相談対応以外の役割も求められるようになっており、全
     message: 「教示を行う」は「教示する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「教示を行う」は「教示する」で足りる"
+    note: 「教示を行う」は「教示する」で足りる
   - rule: topic-predicate-distance
-    line: 226
+    line: 228
     text: また、安全運転相談については、これまでも運転に不安を持つ運転者及びその家族等から
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
     verdict: correct
-    note: "「安全運転相談については」から「向上を図った」まで、経緯の説明を挟んで 150 字"
+    note: 「安全運転相談については」から「向上を図った」まで、経緯の説明を挟んで 150 字
   - rule: footnote-mismatch
-    line: 228
+    line: 230
     text: ※1　シルバーリーダー
     message: 注「※1」を本文のどこも指していません
     verdict: false-positive
     note: "extraction artefact: 本文の「シルバーリーダー<sup><a>※1</a></sup>」の注記号が変換で落ちている"
   - rule: max-sentence-length
-    line: 233
+    line: 235
     text: 高齢者が犯罪や事故に遭わないよう、交番、駐在所の警察官を中心に、巡回連絡等を通じ
     message: この文は 167 文字あります（140 文字まで）
     verdict: correct
-    note: "167 字の一文"
+    note: 167 字の一文
   - rule: nominalization
-    line: 233
+    line: 235
     text: 啓発を行うとともに、必要に応じて関係機関や親族への連絡を行ったほか、認知症等によ
     message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「啓発を行う」は「啓発する」で足りる"
+    note: 「啓発を行う」は「啓発する」で足りる
   - rule: nominalization
-    line: 233
+    line: 235
     text: 連絡を行ったほか、認知症等によって行方不明になる高齢者を発見、保護するための仕組
     message: 「連絡を行う」は「連絡する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「連絡を行う」は「連絡する」で足りる"
+    note: 「連絡を行う」は「連絡する」で足りる
   - rule: one-sentence-paragraph-run
-    line: 233
+    line: 235
     text: 高齢者が犯罪や事故に遭わないよう、交番、駐在所の警察官を中心に、巡回連絡等を通じ
     message: 一文だけの段落が 5 個続いています（4 個まで）
     verdict: correct
-    note: "一文だけの段落が 5 個続いています"
+    note: 一文だけの段落が 5 個続いています
   - rule: orthographic-variant
-    line: 233
+    line: 235
     text: 作りを関係機関等と協力して推進した。
     message: 「作り」と書いています（この文書はふつう「づくり」と書く語です。10 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「仕組み作り」と、ほかの「〜づくり」が混ざる"
+    note: 「仕組み作り」と、ほかの「〜づくり」が混ざる
   - rule: max-sentence-length
-    line: 235
+    line: 237
     text: 高齢者を中心に大きな被害が生じている特殊詐欺については、令和元年6月、犯罪対策閣
     message: この文は 356 文字あります（140 文字まで）
     verdict: correct
-    note: "356 字の一文"
+    note: 356 字の一文
   - rule: undefined-acronym
-    line: 235
+    line: 237
     text: NTTによるナンバー・ディスプレイ及びナンバー・リクエスト契約を無償化する取組の
     message: 「NTT」が説明なしで使われています（説明のない略語 4 個）
     verdict: false-positive
-    note: "NTT は会社の名前"
+    note: NTT は会社の名前
   - rule: nominalization
-    line: 237
+    line: 239
     text: 周知を行った。
     message: 「周知を行う」は「周知する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「周知を行う」は「周知する」で足りる"
+    note: 「周知を行う」は「周知する」で足りる
   - rule: max-sentence-length
-    line: 239
+    line: 241
     text: さらに、特殊詐欺、利殖勧誘事犯及び特定商取引等事犯の犯行グループは、被害者や被害
     message: この文は 187 文字あります（140 文字まで）
     verdict: correct
-    note: "187 字の一文"
+    note: 187 字の一文
   - rule: nominalization
-    line: 239
+    line: 241
     text: 喚起を行う等の被害防止対策を実施した。
     message: 「喚起を行う」は「喚起する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「喚起を行う」は「喚起する」で足りる"
+    note: 「喚起を行う」は「喚起する」で足りる
   - rule: nominalization
-    line: 239
+    line: 241
     text: 対策を実施した。
     message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「対策を実施する」は「対策する」で足りる"
+    note: 「対策を実施する」は「対策する」で足りる
   - rule: topic-predicate-distance
-    line: 239
+    line: 241
     text: さらに、特殊詐欺、利殖勧誘事犯及び特定商取引等事犯の犯行グループは、被害者や被害
     message: 「は」で出した主題から述語まで 152 字あります（80 字まで）
     verdict: false-positive
-    note: "「犯行グループは」の述語「名簿を利用しており」は 40 字ほど後にある"
+    note: 「犯行グループは」の述語「名簿を利用しており」は 40 字ほど後にある
   - rule: max-sentence-length
-    line: 241
+    line: 243
     text: 加えて、今後、認知症高齢者や一人暮らし高齢者が増加していく状況を踏まえ、市民を含
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-    note: "141 字の一文"
+    note: 141 字の一文
   - rule: max-sentence-length
-    line: 245
+    line: 247
     text: 「高齢者虐待の防止、高齢者の養護者に対する支援等に関する法律」（平成17年法律第
     message: この文は 240 文字あります（140 文字まで）
     verdict: correct
-    note: "240 字の一文"
+    note: 240 字の一文
   - rule: nominalization
-    line: 245
+    line: 247
     text: 保護を行う等、高齢者虐待への早期対応が推進されるよう必要な支援を行った。
     message: 「保護を行う」は「保護する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「保護を行う」は「保護する」で足りる"
+    note: 「保護を行う」は「保護する」で足りる
   - rule: nominalization
-    line: 245
+    line: 247
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: unused-definition
-    line: 245
+    line: 247
     text: 以下「高齢者虐待防止法」という。）に基づき、前年度の養介護施設従事者等による虐待
     message: 「高齢者虐待防止法」を定義していますが、本文で使っていません
     verdict: correct
-    note: "この節で「以下〜という」と定義した略称を、節の中で一度も使っていない"
+    note: この節で「以下〜という」と定義した略称を、節の中で一度も使っていない
   - rule: nominalization
-    line: 247
+    line: 249
     text: 調査を行い、その結果を踏まえ、事案に応じた適切な措置を講じる等して、被害の救済及
     message: 「調査を行う」は「調査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「調査を行う」は「調査する」で足りる"
+    note: 「調査を行う」は「調査する」で足りる
   - rule: max-kanji-continuous
-    line: 251
+    line: 253
     text: また、消費者庁新未来創造戦略本部のモデルプロジェクトとして、消費者安全確保地域協
     message: 「消費者安全確保地域協議会」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "法定の協議会の名前"
+    note: 法定の協議会の名前
   - rule: max-kanji-continuous
-    line: 251
+    line: 253
     text: 具体的には、地方消費者行政強化交付金等を通じた支援等に加え、令和5年度地方消費者
     message: 「地方消費者行政強化交付金等」は漢字が 13 字続いています（10 字まで）
     verdict: false-positive
-    note: "交付金の名前に「等」が付いたもの"
+    note: 交付金の名前に「等」が付いたもの
   - rule: max-kanji-continuous
-    line: 251
+    line: 253
     text: 消費者庁では、認知症高齢者等の「配慮を要する消費者」を見守るため、地方公共団体に
     message: 「消費者安全確保地域協議会」は漢字が 12 字続いています（10 字まで）
     verdict: false-positive
-    note: "法定の協議会の名前"
+    note: 法定の協議会の名前
   - rule: no-doubled-joshi
-    line: 251
+    line: 253
     text: のための講座の開催等を行った。また、消費者庁新未来創造戦略本部のモデルプロジェク
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「の」が読点を挟まず三つ以上続く"
+    note: 「の」が読点を挟まず三つ以上続く
   - rule: nominalization
-    line: 251
+    line: 253
     text: 支援を行うとともに、見守り活動の優良事例の収集・横展開や担い手養成のための講座の
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: max-sentence-length
-    line: 253
+    line: 255
     text: 消費者がトラブルに見舞われたとしても、相談窓口の存在に気付かないことや、相談窓口
     message: この文は 161 文字あります（140 文字まで）
     verdict: correct
-    note: "161 字の一文"
+    note: 161 字の一文
   - rule: nominalization
-    line: 253
+    line: 255
     text: 提供を行った。
     message: 「提供を行う」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「提供を行う」は「提供する」で足りる"
+    note: 「提供を行う」は「提供する」で足りる
   - rule: topic-predicate-distance
-    line: 253
+    line: 255
     text: 消費者がトラブルに見舞われたとしても、相談窓口の存在に気付かないことや、相談窓口
     message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
     verdict: false-positive
-    note: "「あることは」の述語「知っていた」はすぐ後にある"
+    note: 「あることは」の述語「知っていた」はすぐ後にある
   - rule: max-sentence-length
-    line: 255
+    line: 257
     text: 令和4年5月に成立した「消費者契約法及び消費者の財産的被害の集団的な回復のための
     message: この文は 172 文字あります（140 文字まで）
     verdict: correct
-    note: "172 字の一文"
+    note: 172 字の一文
   - rule: max-sentence-length
-    line: 257
+    line: 259
     text: 一方、独立行政法人国民生活センターでは、全国の消費生活センター等が行う高齢者の消
     message: この文は 217 文字あります（140 文字まで）
     verdict: correct
-    note: "217 字の一文"
+    note: 217 字の一文
   - rule: max-sentence-length
-    line: 261
+    line: 263
     text: 日本司法支援センター（以下「法テラス」という。）では、法的問題を抱えていることに
     message: この文は 208 文字あります（140 文字まで）
     verdict: correct
-    note: "208 字の一文"
+    note: 208 字の一文
   - rule: max-sentence-length
-    line: 263
+    line: 265
     text: そこで、弁護士会・司法書士会と協議をして出張法律相談等のアウトリーチ活動を担う弁
     message: この文は 152 文字あります（140 文字まで）
     verdict: correct
-    note: "152 字の一文"
+    note: 152 字の一文
   - rule: nominalization
-    line: 269
+    line: 271
     text: 補助を行った。
     message: 「補助を行う」は「補助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「補助を行う」は「補助する」で足りる"
+    note: 「補助を行う」は「補助する」で足りる
   - rule: nominalization
-    line: 269
+    line: 271
     text: 補助を行った。また、水害や震災により被災した医療施設の復旧事業に要する経費の補助
     message: 「補助を行う」は「補助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「補助を行う」は「補助する」で足りる"
+    note: 「補助を行う」は「補助する」で足りる
   - rule: nominalization
-    line: 269
+    line: 271
     text: 補助を行った。また、震災に備えて建物の耐震整備に要する経費の補助や、非常用自家発
     message: 「補助を行う」は「補助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「補助を行う」は「補助する」で足りる"
+    note: 「補助を行う」は「補助する」で足りる
   - rule: repeated-sentence-ending
-    line: 269
+    line: 271
     text: 病院等の医療施設における防災対策を推進するため、医療施設が水害に備えて実施する医
     message: 「〜行った」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-    note: "「〜を行った。」で終わる文が三つ続く"
+    note: 「〜を行った。」で終わる文が三つ続く
   - rule: undefined-acronym
-    line: 271
+    line: 273
     text: BCP策定支援研修を実施した。
     message: 「BCP」が説明なしで使われています（説明のない略語 4 個）
     verdict: correct
-    note: "BCP（事業継続計画）が説明なしで使われている"
+    note: BCP（事業継続計画）が説明なしで使われている
   - rule: max-sentence-length
-    line: 273
+    line: 275
     text: 水害や土砂災害に対して、高齢者等要配慮者の円滑かつ迅速な避難を確保するため、「水
     message: この文は 246 文字あります（140 文字まで）
     verdict: correct
-    note: "246 字の一文"
+    note: 246 字の一文
   - rule: max-sentence-length
-    line: 275
+    line: 277
     text: また、令和3年5月に水防法及び土砂災害防止法が改正され、市町村から要配慮者利用施
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
-    note: "175 字の一文"
+    note: 175 字の一文
   - rule: nominalization
-    line: 275
+    line: 277
     text: 勧告を行うことができるよう全国の市町村職員等を対象とした研修を実施するとともに、
     message: 「勧告を行う」は「勧告する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「勧告を行う」は「勧告する」で足りる"
+    note: 「勧告を行う」は「勧告する」で足りる
   - rule: nominalization
-    line: 275
+    line: 277
     text: 勧告を行うことができる制度が創設されたことを受け、市町村が施設の所有者又は管理者
     message: 「勧告を行う」は「勧告する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「勧告を行う」は「勧告する」で足りる"
+    note: 「勧告を行う」は「勧告する」で足りる
   - rule: nominalization
-    line: 275
+    line: 277
     text: 周知を行った。
     message: 「周知を行う」は「周知する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「周知を行う」は「周知する」で足りる"
+    note: 「周知を行う」は「周知する」で足りる
   - rule: nominalization
-    line: 287
+    line: 289
     text: 助言を行った。
     message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「助言を行う」は「助言する」で足りる"
+    note: 「助言を行う」は「助言する」で足りる
   - rule: nominalization
-    line: 291
+    line: 293
     text: 調整を行った。
     message: 「調整を行う」は「調整する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「調整を行う」は「調整する」で足りる"
+    note: 「調整を行う」は「調整する」で足りる
   - rule: max-kanji-continuous
-    line: 293
+    line: 295
     text: また、地域医療介護総合確保基金等を活用し、日常生活圏域で医療・介護等のサービスを
     message: 「地域医療介護総合確保基金等」は漢字が 13 字続いています（10 字まで）
     verdict: false-positive
-    note: "基金の名前に「等」が付いたもの"
+    note: 基金の名前に「等」が付いたもの
   - rule: nominalization
-    line: 293
+    line: 295
     text: 支援を行った。
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「支援を行う」は「支援する」で足りる"
+    note: 「支援を行う」は「支援する」で足りる
   - rule: max-kanji-continuous
-    line: 295
+    line: 297
     text: あわせて、介護保険制度において、被災者を経済的に支援する観点から、東京電力福島第
     message: 「東京電力福島第一原子力発電所事故」は漢字が 16 字続いています（10 字まで）
     verdict: false-positive
-    note: "固有の事故の名前"
+    note: 固有の事故の名前
   - rule: max-sentence-length
-    line: 295
+    line: 297
     text: あわせて、介護保険制度において、被災者を経済的に支援する観点から、東京電力福島第
     message: この文は 543 文字あります（140 文字まで）
     verdict: correct
-    note: "543 字の一文"
+    note: 543 字の一文
   - rule: ngram-repetition
-    line: 295
+    line: 297
     text: あわせて、介護保険制度において、被災者を経済的に支援する観点から、東京電力福島第
     message: 「に指定が解除され」が 8 回出てきます（5 回まで）
     verdict: false-positive
-    note: "解除の年度ごとに区域を定義する列挙で、「に指定が解除され」の繰り返しは避けられない"
+    note: 解除の年度ごとに区域を定義する列挙で、「に指定が解除され」の繰り返しは避けられない
   - rule: nominalization
-    line: 295
+    line: 297
     text: 減免を行った保険者に対する財政支援を1年間継続した。
     message: 「減免を行う」は「減免する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「減免を行う」は「減免する」で足りる"
+    note: 「減免を行う」は「減免する」で足りる
   - rule: max-sentence-length
-    line: 307
+    line: 309
     text: 法テラスでは、震災により、経済的・精神的に不安定な状況に陥っている被災者を支援す
     message: この文は 164 文字あります（140 文字まで）
     verdict: correct
-    note: "164 字の一文"
+    note: 164 字の一文
   - rule: nominalization
-    line: 307
+    line: 309
     text: 提供を実施した。
     message: 「提供を実施する」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「提供を実施する」は「提供する」で足りる"
+    note: 「提供を実施する」は「提供する」で足りる
   - rule: max-sentence-length
-    line: 337
+    line: 339
     text: 成年後見制度の利用促進に関する施策を総合的・計画的に推進するため、「成年後見制度
     message: この文は 178 文字あります（140 文字まで）
     verdict: correct
-    note: "178 字の一文"
+    note: 178 字の一文
   - rule: teki-overuse
-    line: 337
+    line: 339
     text: 成年後見制度の利用促進に関する施策を総合的・計画的に推進するため、「成年後見制度
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「総合的」「計画的」「総合的」"
+    note: 一文に「総合的」「計画的」「総合的」

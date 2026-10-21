@@ -32,6 +32,11 @@ findings:
     verdict: false-positive
     note: DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
   - rule: max-sentence-length
+    line: 6
+    what: 「令和6年度リーディングDXスクールの指定を受け、…研究・実践を進めています。」 is 78 characters
+    verdict: missed
+    note: "rekeyed: chaffjs 0.36.0 joins the header lines above to it (line 3, false positive); lab main reads it alone"
+  - rule: max-sentence-length
     line: 7
     text: クラウドを活用し、学びプランを子供と共有したり、個人学習と集団学習を同時並行に進
     message: この文は 82 文字あります（70 文字まで）
@@ -96,6 +101,11 @@ findings:
     message: この文は 105 文字あります（70 文字まで）
     verdict: false-positive
     note: a quoted title line with no 。 is joined with the hard-wrapped lines after it
+  - rule: max-sentence-length
+    line: 67
+    what: 「上記の【チームの推し実践】でも…数多くあります。」 is 81 characters, across a hard wrap
+    verdict: missed
+    note: "rekeyed: chaffjs 0.36.0 joins the quoted title above to it (line 66, false positive); lab main reads it alone"
   - rule: latin-spacing
     line: 78
     text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"

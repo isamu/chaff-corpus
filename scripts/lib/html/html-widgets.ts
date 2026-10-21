@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-widgets.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-widgets.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
 // Parts of a page that are controls rather than the document: a tooltip, a media player with its buttons, a block a
 // script runs when clicked, a bar of previous and next links between arrows, and text marked never to be spoken.
 // Each is told by its structure (a role, an <audio> or <video>, an event handler, the arrows), never by a site's class

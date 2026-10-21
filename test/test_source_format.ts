@@ -71,6 +71,30 @@ describe("convertedText", () => {
     assert.equal(convertedText("html", page(answer)), "## Article\n\nThe park opens in May.\n\nAny resident may apply.\n\nLast updated: May 1.\n");
   });
 
+  it("keeps a dropped table's caption, which the text points at, and drops an empty one", () => {
+    // 「令和6年版高齢社会白書」（内閣府）第2章第2節4（https://www8.cao.go.jp/kourei/whitepaper/w-2024/html/zenbun/s2_2_4.html）を加工して作成（PDL-1.0）。
+    const figures =
+      "<p>優遇措置を行っている（表2－2－6）。</p><table><caption id='tb2_2_06'>\n表2－2－6　公営住宅等の高齢者向け住宅供給戸数\n</caption><tbody>" +
+      "<tr><th scope='col' rowspan='2'>年度</th><th scope='col' colspan='2'>優遇措置戸数</th></tr><tr><th>賃貸</th><th>分譲</th></tr>" +
+      "<tr><th scope='row'>平成10年度</th><td>3,143</td><td>571</td></tr><tr><th scope='row'>15</th><td>7,574<br>（3,524）</td><td>45</td></tr></tbody></table><p>以上。</p>";
+    const page = (body: string): string => `<html><body><main>${body}</main></body></html>`;
+    assert.equal(convertedText("html", page(figures)), "優遇措置を行っている（表2－2－6）。\n\n表2－2－6　公営住宅等の高齢者向け住宅供給戸数\n\n以上。\n");
+    assert.equal(convertedText("html", page("<p>Fees.</p><table><caption> </caption><tr><td>A</td><td>100</td></tr></table><p>End.</p>")), "Fees.\n\nEnd.\n");
+  });
+
+  it("keeps a footnote mark written with a sign of its own (※1), and drops a bare number", () => {
+    // 「令和6年版高齢社会白書」（内閣府）第2章第2節4（https://www8.cao.go.jp/kourei/whitepaper/w-2024/html/zenbun/s2_2_4.html）を加工して作成（PDL-1.0）。
+    const marked =
+      '<p>交通安全教育を推進したほか、シルバーリーダー<sup><a href="#fn1">※1</a></sup>等を対象とした講習会を実施した。</p>' +
+      '<div class="footnote" id="fn1">※1　シルバーリーダー<br>高齢者交通安全指導員</div>';
+    const page = (body: string): string => `<html><body><main>${body}</main></body></html>`;
+    assert.equal(
+      convertedText("html", page(marked)),
+      "交通安全教育を推進したほか、シルバーリーダー※1等を対象とした講習会を実施した。\n\n※1　シルバーリーダー\n高齢者交通安全指導員\n",
+    );
+    assert.equal(convertedText("html", page('<p>The rose.<sup><a href="#fn1">1</a></sup> Next.</p>')), "The rose. Next.\n");
+  });
+
   it("converts wikitext to Markdown, keeping a link's text and dropping a template", () => {
     assert.equal(convertedText("wikitext", "== Getting in ==\nTake the [[Izu Kyuko Line|train]] from Ito.{{citation needed}}\n"), "## Getting in\nTake the train from Ito.\n");
   });

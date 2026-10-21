@@ -122,32 +122,32 @@ findings:
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 193
+    line: 195
     text: 学校設置者等及び民間教育保育等事業者による児童対象性暴力等の防止等のための措置に
     message: この文は 143 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
-    line: 193
+    line: 195
     text: の防止等のための措置に関する法律（以下「こども性暴力防止法」という。）の施行（令
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 222
+    line: 224
     text: 第4条　職員は、自らの行動が市政に対する市民の信用に大きな影響を与えることを深く
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 225
+    line: 227
     text: 第8条　市長は、倫理原則を踏まえ、職員の倫理意識の高揚を図るために必要な事項に関
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged
   - rule: numbering-gap
-    line: 225
+    line: 227
     text: 第8条　市長は、倫理原則を踏まえ、職員の倫理意識の高揚を図るために必要な事項に関
     message: 「第4条」の次が「第8条」です（5 番目のはず）
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 226
+    line: 228
     text: 2　職員倫理規則には、服務規律の確保及び市民の疑惑や不信を招くような行為の防止の
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
     verdict: unjudged

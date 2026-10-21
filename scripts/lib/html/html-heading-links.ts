@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-heading-links.ts (b87ecc66); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-heading-links.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
 // A heading's link to its own section (a permalink beside or after the title), taken out of an HTML page, and a
 // heading's other links within the page (an accordion's panel title) read as its words. Pure.
 import { ANY_LINK, ATTRIBUTES, elementRanges, hasNoWords, plainText, type ElementRange } from "./html-elements.ts";
