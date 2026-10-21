@@ -6,8 +6,3 @@ findings:
     what: 差出人の名前が「総務部の〇〇」のまま（22行目の署名も）
     verdict: missed
     note: Japanese 〇〇 blank, not found
-  - rule: unfilled-placeholder
-    line: 5
-    what: 差出人の名前が「総務部の〇〇」のまま（22行目の署名も）
-    verdict: missed
-    note: Japanese 〇〇 blank, not found
