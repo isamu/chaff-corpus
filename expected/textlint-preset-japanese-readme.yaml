@@ -1,0 +1,57 @@
+id: textlint-preset-japanese-readme
+chaff: 0.36.0
+findings:
+  - rule: proper-noun-density
+    line: 3
+    text: textlint rule preset](https://github.com
+    message: 1000 字あたり 46 個の固有名詞があります（40 個まで）
+    verdict: false-positive
+    note: rule and tool names in a preset's README, which lists rules by name
+  - rule: list-item-form-mix
+    line: 9
+    text: 一般的な文書で利用するためのルール集
+    message: 「一般的な文書で利用するためのルール集」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
+    verdict: correct
+    note: one item of the 目的 list ends in a noun (ルール集) while the others end in verbs
+  - rule: lookalike-character
+    line: 50
+    text: シ゛ン のような、Mac OS XでPDFやFinderからのコピペで発生する濁
+    message: 「シ゛」は濁点・半濁点を別の字で書いています（U+30B7 U+309B）。一字の「ジ」と書きます
+    verdict: false-positive
+    note: a deliberate example of decomposed dakuten (NFD), the very thing the listed rule detects
+  - rule: lookalike-character
+    line: 50
+    text: ホ゜ケット エンシ゛ン のような、Mac OS XでPDFやFinderからのコ
+    message: 「ホ゜」は濁点・半濁点を別の字で書いています（U+30DB U+309C）。一字の「ポ」と書きます
+    verdict: false-positive
+    note: a deliberate example of decomposed handakuten (NFD), the very thing the listed rule detects
+  - rule: lookalike-character
+    line: 110
+    text: シ゛ン
+    message: 「シ゛」は濁点・半濁点を別の字で書いています（U+30B7 U+309B）。一字の「ジ」と書きます
+    verdict: false-positive
+    note: a deliberate example of decomposed dakuten (NFD) in a config comment, the thing the rule detects
+  - rule: lookalike-character
+    line: 110
+    text: ホ゜ケット エンシ゛ン
+    message: 「ホ゜」は濁点・半濁点を別の字で書いています（U+30DB U+309C）。一字の「ポ」と書きます
+    verdict: false-positive
+    note: a deliberate example of decomposed handakuten (NFD) in a config comment, the thing the rule detects
+  - rule: latin-spacing
+    line: 131
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: Patch リリース with a space while the README attaches Latin words to Japanese elsewhere
+  - rule: latin-spacing
+    line: 136
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: Minor リリース with a space while the README attaches Latin words to Japanese elsewhere
+  - rule: latin-spacing
+    line: 140
+    text: " リリース"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。20 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: Major リリース with a space while the README attaches Latin words to Japanese elsewhere

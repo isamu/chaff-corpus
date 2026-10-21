@@ -1,0 +1,75 @@
+id: textlint-ja-no-redundant-expression-readme
+chaff: 0.36.0
+findings:
+  - rule: proper-noun-density
+    line: 3
+    text: textlintルールです。
+    message: 1000 字あたり 47 個の固有名詞があります（40 個まで）
+    verdict: false-positive
+    note: tool, rule and option names in a tool's README, not a crowd of proper nouns in prose
+  - rule: ngram-repetition
+    line: 11
+    text: '"すること\[助詞](不)可能"は冗長な表現です。"すること\[助詞]"を省き簡'
+    message: 「"は冗長な表現で」が 6 回出てきます（5 回まで）
+    verdict: false-positive
+    note: each dictionary entry is written with the same formula (…は冗長な表現です), as a reference list is
+  - rule: colon-lead-in
+    line: 13
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: colon-lead-in
+    line: 21
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: colon-lead-in
+    line: 29
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: colon-lead-in
+    line: 37
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: bracket-width-consistency
+    line: 47
+    text: ）「行動（する）」、「プログラム（する）」
+    message: 括弧を「）」と書いています（この文書はふつう「)」。5 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width 例）（する） while the README's other parentheses are half-width
+  - rule: colon-lead-in
+    line: 53
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: bracket-width-consistency
+    line: 63
+    text: ）「行動（する）」、「プログラム（する）」
+    message: 括弧を「）」と書いています（この文書はふつう「)」。5 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width 例）（する） while the README's other parentheses are half-width
+  - rule: colon-lead-in
+    line: 69
+    text: 参考:**
+    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
+    verdict: false-positive
+    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
+  - rule: no-mixed-desumasu
+    line: 110
+    text: 例) [dict1](#dict1)は無効化、[dict5](#dict5)で"
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: an example caption in the options reference, in the plain form of the option list above it
+  - rule: cliche
+    line: 144
+    text: 誰にでも分かるSEのための文章術（6）：読みやすい文章の極意は「修飾語」にあり
+    message: 「極意」は使い古された決まり文句です
+    verdict: false-positive
+    note: 極意 is in the title of a cited article (link text), not the README's own wording

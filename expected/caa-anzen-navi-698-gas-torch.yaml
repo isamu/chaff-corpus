@@ -1,0 +1,57 @@
+id: caa-anzen-navi-698-gas-torch
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: 料理やアウトドアの際に手軽で便利なガストーチ(カセットボンベ等に接続し、液化石油
+    message: 書き出しに挨拶がありません
+    verdict: false-positive
+    note: an issue of a mail magazine opens on its topic; a greeting is not expected
+  - rule: max-sentence-length
+    line: 3
+    text: 料理やアウトドアの際に手軽で便利なガストーチ(カセットボンベ等に接続し、液化石油
+    message: この文は 102 文字あります（70 文字まで）
+    verdict: correct
+    note: a 102-character opening sentence with a long parenthetical definition
+  - rule: list-item-form-mix
+    line: 15
+    text: 使用する際の注意ポイント
+    message: 「使用する際の注意ポイント」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（7 項目のうち 1 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: max-sentence-length
+    line: 25
+    text: 漏れているガスに一度引火してしまうと、水をかけたり、水に浸けたりして消火しようと
+    message: この文は 88 文字あります（70 文字まで）
+    verdict: correct
+    note: an 88-character sentence listing three ways the fire returns; it can be split
+  - rule: list-item-form-mix
+    line: 29
+    text: 購入する際は、製品がリコール対象製品ではないか事前に確認してください。また、使用
+    message: 「購入する際は、製品がリコール対象製品ではないか事前に確認してください。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list and keeps the link-only items, so a paragraph item sits among link labels"
+  - rule: max-sentence-length
+    line: 29
+    text: リコール情報は「消費者庁リコール情報サイト」、独立行政法人製品安全評価技術基盤機
+    message: この文は 110 文字あります（70 文字まで）
+    verdict: correct
+    note: a 110-character sentence naming three recall sites; it can be split
+  - rule: list-item-form-mix
+    line: 34
+    text: なお、2025年2月6日からガストーチに対する新たな規制が始まりました。国の定め
+    message: 「なお、2025年2月6日からガストーチに対する新たな規制が始まりました。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 2 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list and keeps the link-only items, so a paragraph item sits among link labels"
+  - rule: max-sentence-length
+    line: 34
+    text: 国の定める安全に関する基準を満たしたガストーチには下記の「◇(菱形)PSLPGマ
+    message: この文は 76 文字あります（70 文字まで）
+    verdict: correct
+    note: a 76-character sentence over the email limit
+  - rule: max-sentence-length
+    line: 38
+    text: ※事故情報データバンク:消費者庁が関係機関から「事故情報」「危険情報」を広く収集
+    message: この文は 80 文字あります（70 文字まで）
+    verdict: correct
+    note: an 80-character footnote definition over the email limit

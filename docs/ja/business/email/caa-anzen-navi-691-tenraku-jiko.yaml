@@ -1,0 +1,16 @@
+id: caa-anzen-navi-691-tenraku-jiko
+title: 消費者庁 みんなの消費安全ナビ Vol.691 転落事故は「環境づくり」で予防!
+language: ja
+genre: business/email
+format: markdown
+source:
+  url: https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260710/
+  fetched: 2026-10-21
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.digital.go.jp/resources/open_data/public_data_license_v1.0
+  note: "公共データ利用規約（第1.0版）(PDL1.0, compatible with CC BY 4.0; 消費者庁「利用規約・リンク・著作権等」 https://www.caa.go.jp/terms_of_use/ , whose list of excluded content does not include these mails); 出典: 消費者庁ウェブサイト (https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20260710/); Markdown に変換（加工して作成）"
+redistribute: true
+sha256: c7712d5ed36fb7f910444443d72f466e04932c587ff0607c04892626a5031264
+notes: A back issue of 消費者庁's mail magazine 「みんなの消費安全ナビ from 消費者庁」 (formerly 子ども安全メール), as published on the web. The converter drops the link-only lists under （参考） and （過去の関連メール） and the image of the mark. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

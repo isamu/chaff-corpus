@@ -1,0 +1,99 @@
+id: caa-anzen-navi-691-tenraku-jiko
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 1
+    text: "# Vol.691 転落事故は「環境づくり」で予防!―7月13日～19日は「こど"
+    message: 題「Vol.691 転落事故は「環境づくり」で予防!―7月13日～19日は「こどもの事故防止週間」―」は 43 文字あります（40 文字まで）
+    verdict: correct
+    note: a 43-character subject line with a subtitle
+  - rule: email-greeting-closing
+    line: 3
+    text: 消費者庁を含む関係10省庁から成る、「こどもの事故防止に関する関係府省庁連絡会議
+    message: 書き出しに挨拶がありません
+    verdict: false-positive
+    note: an issue of a mail magazine opens on its topic; a greeting is not expected
+  - rule: max-sentence-length
+    line: 3
+    text: 消費者庁を含む関係10省庁から成る、「こどもの事故防止に関する関係府省庁連絡会議
+    message: この文は 120 文字あります（70 文字まで）
+    verdict: correct
+    note: a 120-character opening sentence carrying a committee name and two parentheticals
+  - rule: max-sentence-length
+    line: 5
+    text: 令和8年度の「こどもの事故防止週間」は、7月13日(月)から7月19日(日)まで
+    message: この文は 114 文字あります（70 文字まで）
+    verdict: correct
+    note: a 114-character sentence holding the dates, theme and slogan
+  - rule: max-sentence-length
+    line: 6
+    text: 抱っこ・おんぶの状態、家具、階段、遊具、窓・ベランダから等の様々な場面での転落事
+    message: この文は 100 文字あります（70 文字まで）
+    verdict: correct
+    note: a 100-character sentence over the email limit
+  - rule: max-sentence-length
+    line: 13
+    text: 「保護者がミルクを調整しに離れたところ、高さ約60cmのベッドからフローリングの
+    message: この文は 91 文字あります（70 文字まで）
+    verdict: false-positive
+    note: a quoted incident report of two sentences in 「」, counted as one sentence
+  - rule: max-sentence-length
+    line: 14
+    text: 「自宅2階にいる保護者を追いかけて、こどもが階段を上がってきてしまい、9段目あた
+    message: この文は 123 文字あります（70 文字まで）
+    verdict: false-positive
+    note: a quoted incident report of four sentences in 「」, counted as one sentence
+  - rule: max-sentence-length
+    line: 15
+    text: 「公園で、高さ約3mの円柱ジャングルジムの上に立っていたところ、足が滑ってコンク
+    message: この文は 97 文字あります（70 文字まで）
+    verdict: false-positive
+    note: a quoted incident report of two sentences in 「」, counted as one sentence
+  - rule: max-sentence-length
+    line: 16
+    text: 「自宅でソファーによじ登り、出窓の網戸にもたれかかっていたところ、網戸が外れ、約
+    message: この文は 88 文字あります（70 文字まで）
+    verdict: false-positive
+    note: a quoted incident report of two sentences in 「」, counted as one sentence
+  - rule: list-item-form-mix
+    line: 22
+    text: 抱っこ・おんぶからの転落
+    message: 「抱っこ・おんぶからの転落」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（21 項目のうち 5 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: list-item-form-mix
+    line: 28
+    text: 家具からの転落
+    message: 「家具からの転落」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（21 項目のうち 5 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: no-doubled-joshi
+    line: 33
+    text: の上等の高さのある場所に寝かせない
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "テーブルの上等の高さのある: three の in a row (テーブルの上など高さのある場所 reads better)"
+  - rule: list-item-form-mix
+    line: 35
+    text: 階段からの転落
+    message: 「階段からの転落」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（21 項目のうち 5 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: list-item-form-mix
+    line: 41
+    text: 遊具からの転落
+    message: 「遊具からの転落」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（21 項目のうち 5 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: list-item-form-mix
+    line: 47
+    text: 窓・ベランダからの転落
+    message: 「窓・ベランダからの転落」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（21 項目のうち 5 項目）
+    verdict: false-positive
+    note: "extraction artefact: the converter flattens a nested list, so a group label sits among its items"
+  - rule: max-sentence-length
+    line: 57
+    text: ※3:医療機関ネットワーク事業:消費者庁は(独)国民生活センターと共同で、平成2
+    message: この文は 87 文字あります（70 文字まで）
+    verdict: correct
+    note: an 87-character footnote over the email limit
