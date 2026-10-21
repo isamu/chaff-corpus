@@ -1,0 +1,15 @@
+id: aozora-terada-sainan-zakko
+title: 寺田寅彦「災難雑考」（青空文庫）
+language: ja
+genre: literature/essay
+format: markdown
+source:
+  url: https://www.aozora.gr.jp/cards/000042/files/2500_13848.html
+  fetched: 2026-10-22
+license:
+  name: Public domain
+  url: https://www.aozora.gr.jp/
+  note: "Public domain in Japan (著作権法第51条・第57条: the author died in 1935, and the term of protection has expired); transcription by 青空文庫 (https://www.aozora.gr.jp/), whose 収録ファイルの取り扱い規準 allows free use of works whose copyright has expired; ruby readings dropped, converted to Markdown"
+redistribute: true
+sha256: 1cf83f4d41ddf72eeac5855eca167482eeda03f8946a27181070730952b970a0
+notes: Fetched from 青空文庫 as XHTML (Shift_JIS) and converted with isamu/lab text/scripts/aozora-markdown.ts (c7ca0ad6c), which drops 青空文庫's colophon (底本, input and proofreading credits) and the transcriber's ［＃…］ notes. The work has no ［＃…］ input notes.

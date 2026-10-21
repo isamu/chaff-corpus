@@ -1,0 +1,129 @@
+id: env-wp-r08-kikou-hendou-tekiou
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 9
+    text: 同プラットフォームは、国立研究開発法人国立環境研究所が運営しており、気温、降水量
+    message: この文は 186 文字あります（140 文字まで）
+    verdict: correct
+    note: 186 字の一文
+  - rule: topic-predicate-distance
+    line: 9
+    text: 同プラットフォームは、国立研究開発法人国立環境研究所が運営しており、気温、降水量
+    message: 「は」で出した主題から述語まで 173 字あります（80 字まで）
+    verdict: correct
+    note: 「同プラットフォームは」から述語まで 173 字
+  - rule: max-kanji-continuous
+    line: 13
+    text: 気候変動適応に関する取組については、国、地方公共団体、事業者、国民が適応策の推進
+    message: 「気候変動適応広域協議会」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: 協議会の名称（気候変動適応広域協議会）
+  - rule: max-sentence-length
+    line: 13
+    text: 気候変動適応に関する取組については、国、地方公共団体、事業者、国民が適応策の推進
+    message: この文は 182 文字あります（140 文字まで）
+    verdict: correct
+    note: 182 字の一文
+  - rule: max-kanji-continuous
+    line: 17
+    text: 2023年12月で気候変動適応法の施行後5年を迎えたため、法の規定に基づき、中央
+    message: 「中央環境審議会地球環境部会気候変動影響評価」は漢字が 21 字続いています（10 字まで）
+    verdict: false-positive
+    note: 審議会の部会・小委員会の名称
+  - rule: max-sentence-length
+    line: 23
+    text: 農林水産分野の気候変動への適応策については、持続可能な食料システムの確立を目指す
+    message: この文は 219 文字あります（140 文字まで）
+    verdict: correct
+    note: 219 字の一文
+  - rule: max-kanji-continuous
+    line: 25
+    text: また、気候変動への適応策として重要な熱中症対策については、気候変動適応法及び独立
+    message: 「独立行政法人環境再生保全機構法」は漢字が 15 字続いています（10 字まで）
+    verdict: false-positive
+    note: 法律の題名
+  - rule: max-sentence-length
+    line: 25
+    text: また、気候変動への適応策として重要な熱中症対策については、気候変動適応法及び独立
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: correct
+    note: 165 字の一文
+  - rule: max-sentence-length
+    line: 25
+    text: 環境省では、2021年から開始した「熱中症予防強化キャンペーン」を通じて、国民に
+    message: この文は 175 文字あります（140 文字まで）
+    verdict: correct
+    note: 175 字の一文
+  - rule: max-kanji-continuous
+    line: 29
+    text: 地方公共団体における科学的知見に基づく適応策の立案・実施を支援するため、A-PL
+    message: 「地域気候変動適応計画策定」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: マニュアルの題名（地域気候変動適応計画策定マニュアル）
+  - rule: max-sentence-length
+    line: 29
+    text: そのほか、今後の地球温暖化に伴い、強い台風や大雨の増加が予測され、災害の更なる激
+    message: この文は 227 文字あります（140 文字まで）
+    verdict: correct
+    note: 227 字の一文
+  - rule: max-sentence-length
+    line: 29
+    text: 地方公共団体における科学的知見に基づく適応策の立案・実施を支援するため、A-PL
+    message: この文は 212 文字あります（140 文字まで）
+    verdict: correct
+    note: 212 字の一文
+  - rule: max-sentence-length
+    line: 29
+    text: 気候変動適応法に基づく「気候変動適応広域協議会」（全国7ブロック（北海道、東北、
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: correct
+    note: 152 字の一文
+  - rule: max-ten
+    line: 29
+    text: そのほか、今後の地球温暖化に伴い、強い台風や大雨の増加が予測され、災害の更なる激
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+    note: 一文に読点が 7 個
+  - rule: repeated-sentence-ending
+    line: 29
+    text: 地方公共団体における科学的知見に基づく適応策の立案・実施を支援するため、A-PL
+    message: 「〜しました」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: 「開始しました」「公開しました」「公表しました」と同じ文末が三つ続く
+  - rule: yori-as-from
+    line: 29
+    text: より開始し、2023年7月には令和元年東日本台風及び平成31年台風第21号を、2
+    message: 起点の「より」は「から」と書けます
+    verdict: correct
+    note: 起点の「2020年より開始し」は「から」と書ける
+  - rule: max-paragraph-length
+    line: 31
+    text: 気候変動による影響は事業者にも及ぶ可能性があります。事業者は、気候変動が事業に及
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+    note: 一段落に六文
+  - rule: max-sentence-length
+    line: 31
+    text: また、環境省、文部科学省、国土交通省、金融庁及び国立環境研究所は、気候リスク情報
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: correct
+    note: 169 字の一文
+  - rule: max-sentence-length
+    line: 31
+    text: 環境省では、2019年3月に公開した「民間企業の気候変動適応ガイド －気候リスク
+    message: この文は 205 文字あります（140 文字まで）
+    verdict: correct
+    note: 205 字の一文
+  - rule: topic-predicate-distance
+    line: 31
+    text: また、環境省、文部科学省、国土交通省、金融庁及び国立環境研究所は、気候リスク情報
+    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
+    verdict: correct
+    note: 「…国立環境研究所は」から述語まで 116 字
+  - rule: topic-predicate-distance
+    line: 31
+    text: 事業者は、気候変動が事業に及ぼすリスクやその対応について理解を深め、事業活動の内
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: correct
+    note: 「事業者は」から述語まで 106 字

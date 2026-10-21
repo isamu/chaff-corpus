@@ -1,0 +1,16 @@
+id: bousai-wp-r07-noto-hosei-taio
+title: "内閣府: 令和7年版 防災白書 特集 第2章 第2節 令和6年能登半島地震の経験・教訓を踏まえた法制上の対応"
+language: ja
+genre: business/report
+format: markdown
+source:
+  url: https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/t1_2s_02_00.html
+  fetched: 2026-10-22
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.bousai.go.jp/notice.html
+  note: "内閣府防災情報のページ「このホームページについて」: 利用は内閣府ホームページ利用規約に準拠する（https://www.cao.go.jp/notice/rule.html: 特記されていない限り公共データ利用規約（第1.0版）（PDL1.0、CC BY 4.0 互換）が適用され、防災白書は適用外の一覧にない）; 出典: 「令和7年版 防災白書」（内閣府）(https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/t1_2s_02_00.html) を加工して作成 (converted to Markdown)"
+redistribute: true
+sha256: 8c006a69030389700f012dcba3bff0c983994b3dcd511b72216f2ff290fbfc20
+notes: 特集の一節; a photo caption (保健師による避難所巡回) stands as its own line (令和7年版防災白書 本文). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

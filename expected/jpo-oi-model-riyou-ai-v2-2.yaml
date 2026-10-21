@@ -1,0 +1,212 @@
+id: jpo-oi-model-riyou-ai-v2-2
+chaff: 0.36.0
+findings:
+  - rule: undefined-term
+    line: 3
+    text: 本学習済みモデルを用いたサービスに関する条件等を定めるため、次のとおり契約（以下
+    message: 「本学習済みモデル」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 第1条で本共同研究開発契約の定義を引き継ぐと定めており、その契約で定義された語
+  - rule: undefined-term
+    line: 91
+    text: 本学習モデルに対する追加学習用データセット等を用いた追加学習やアーキテクチャーの
+    message: 「本学習モデル」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: correct
+    note: 「本学習モデル」はどこにもない語で、「本学習済みモデル」の書き誤り
+  - rule: use-before-definition
+    line: 103
+    text: 開示等してはならない。
+    message: 「開示等」を、250 行目の定義より前で使っています
+    verdict: correct
+    note: 「開示等」を第13条の定義（以下「開示等」という）より前の条で使っている
+  - rule: defined-term-form
+    line: 107
+    text: 以下本契約において同じ。）は、乙または第三者が従前から保有していた著作権を除き、
+    message: 「本契約」は 3 行目で定義した語ですが、ここは定義の文の語を足して「以下本契約」と書いています
+    verdict: false-positive
+    note: 「以下本契約において同じ。」は定義語「本契約」をそのまま使う定型句
+  - rule: use-before-definition
+    line: 113
+    text: 特許権等の帰属
+    message: 「特許権等」を、115 行目の定義より前で使っています
+    verdict: false-positive
+    note: 見出しで使い、すぐ次の条文で定義する
+  - rule: reference-title-mismatch
+    line: 125
+    text: 再委託）、同第9条（本契約の変更）は、甲による追加学習サービスによる追加学習済み
+    message: 第8条に「再委託」と添えていますが、第8条の見出しは「サービス利用料」です
+    verdict: false-positive
+    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第8条の見出しと比べるのは筋違い
+  - rule: reference-title-mismatch
+    line: 125
+    text: 各自の義務）、同第8条（再委託）、同第9条（本契約の変更）は、甲による追加学習サ
+    message: 第6条に「各自の義務」と添えていますが、第6条の見出しは「対象データの管理」です
+    verdict: false-positive
+    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第6条の見出しと比べるのは筋違い
+  - rule: reference-title-mismatch
+    line: 125
+    text: 本契約の変更）は、甲による追加学習サービスによる追加学習済みモデルの生成に準用す
+    message: 第9条に「本契約の変更」と添えていますが、第9条の見出しは「監査」です
+    verdict: false-positive
+    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第9条の見出しと比べるのは筋違い
+  - rule: requirement-smell
+    line: 146
+    text: 等が法令に違反するものではないこと。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: orthographic-variant
+    line: 153
+    text: すべて甲が本サービス提供のために利用するサーバ（以下「本サービス用サーバ」という
+    message: 「すべて」と書いています（この文書はふつう「全て」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「すべて」、ほかは「全て」
+  - rule: undefined-term
+    line: 153
+    text: 本サービス提供のために利用するサーバ（以下「本サービス用サーバ」という。）に保存
+    message: 「本サービス提供」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 定義語「本サービス」に「提供」が続いただけ
+  - rule: orthographic-variant
+    line: 159
+    text: 但し、甲が回復作業を行ったにもかかわらず、当該データの全部または一部の回復ができ
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。8 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「但し」、ほかは「ただし」
+  - rule: latin-spacing
+    line: 170
+    text: " 甲は、前項に従って個人情報等が提供される場合には、個人情報保護法を遵守し、個人"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。22 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 項番号の「3」の後だけ半角の空白、ほかの項は全角の空白
+  - rule: requirement-smell
+    line: 170
+    text: 等の管理に必要な措置を講ずるものとする。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: obligation-without-deadline
+    line: 173
+    text: 支払う。
+    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
+    verdict: false-positive
+    note: 支払の期限は同じ条の第3項（期間の末日から●日以内）にある
+  - rule: undefined-term
+    line: 179
+    text: 本連携システムを通じたAPIリクエスト回数1回あたりの単価●円（外税、以下「AP
+    message: 「本連携システム」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 第1条で本共同研究開発契約の定義を引き継ぐと定めており、その契約で定義された語
+  - rule: orthographic-variant
+    line: 181
+    text: 関わらず、本契約締結日より3年間は、前項の計算式におけるAPI単価を下記計算式の
+    message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 「前項に関わらず」は「にかかわらず」、ほかは「かかわらず」
+  - rule: obligation-without-deadline
+    line: 197
+    text: 支払う。これにかかる振込手数料は乙が負担するものとする。
+    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
+    verdict: false-positive
+    note: 支払の期限は前項（第3項）にある。この項は支払方法を定める
+  - rule: orthographic-variant
+    line: 214
+    text: 為をしてはならない。
+    message: 「為」と書いています（この文書はふつう「ため」と書く語です。11 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「おそれのある為」は「行為」の「行」が抜けた原文の誤り（指摘の理由は表記揺れだが、直すべき箇所は同じ）
+  - rule: requirement-smell
+    line: 218
+    text: 等の権利利益を侵害すること
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: requirement-smell
+    line: 224
+    text: などに過度な負担をかけること
+    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: orthographic-variant
+    line: 233
+    text: 責に帰すことができない事由（ただしこれらに限られない）であり、甲は当該事由に起因
+    message: 「責」と書いています（この文書はふつう「責め」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「甲の責に帰す」、ほかは「責めに帰すべき」
+  - rule: orthographic-variant
+    line: 250
+    text: 関わらず、甲または乙が相手方（以下「受領者」という。）に開示等した一切の情報（た
+    message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。7 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 「締結前後に関わらず」は「にかかわらず」
+  - rule: announced-count-mismatch
+    line: 252
+    text: 一つに該当する情報については、秘密情報に該当しない。
+    message: 「一つ」と予告していますが、すぐ下の箇条書きは5項目です
+    verdict: false-positive
+    note: 「いずれか一つに該当する」は該当の条件で、項目の数の予告ではない
+  - rule: requirement-smell
+    line: 266
+    text: 等を、本契約の遂行のために知る必要のある自己の役員および従業員（以下「役員等」と
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: requirement-smell
+    line: 276
+    text: 等（複製物および改変物を含む。）が記録された媒体、ならびに、未使用の素材、機器お
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+  - rule: requirement-smell
+    line: 285
+    text: 等で通知しない限り、1年間の更新期間で、同条件で自動的に更新されるものとする。
+    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
+    verdict: false-positive
+    note: 「書面等」は第1条で定義した語で、あいまいな「等」ではない
+  - rule: missing-final-period
+    line: 305
+    text: い
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。69 段落のうち 1 段落）
+    verdict: correct
+    note: 「停止しなければならない」で終わり、句点がない（原文のまま）
+  - rule: orthographic-variant
+    line: 315
+    text: 取り扱い）、第16条（契約終了後の措置）、第17条（損害賠償）および第19条（準
+    message: 「取り扱い」と書いています（この文書はふつう「取扱い」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 存続条項の「取り扱い」、本文の見出しは「取扱い」
+  - rule: orthographic-variant
+    line: 315
+    text: 手続き）の定めは有効に存続する。ただし個別の条項に期間の定めがある場合には、その
+    message: 「手続き」と書いています（この文書はふつう「手続」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 存続条項の「手続き」、本文は「手続」
+  - rule: reference-title-mismatch
+    line: 315
+    text: 個人情報の取扱い）、第9条（監査）、第10条（対価の不返還）、第12条（非保証）
+    message: 第7条に「個人情報の取扱い」と添えていますが、第7条の見出しは「個人情報の提供」です
+    verdict: correct
+    note: 存続条項は第7条を「個人情報の取扱い」と呼ぶが、第7条の見出しは「個人情報の提供」
+  - rule: reference-title-mismatch
+    line: 315
+    text: 秘密情報の取り扱い）、第16条（契約終了後の措置）、第17条（損害賠償）および第
+    message: 第13条に「秘密情報の取り扱い」と添えていますが、第13条の見出しは「秘密情報の取扱い」です
+    verdict: correct
+    note: 存続条項の「秘密情報の取り扱い」と第13条の見出し「秘密情報の取扱い」の送り仮名が違う
+  - rule: orthographic-variant
+    line: 317
+    text: 手続き）
+    message: 「手続き」と書いています（この文書はふつう「手続」と書く語です。6 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 第19条の見出しの「手続き」、本文は「手続」
+  - rule: orthographic-variant
+    line: 337
+    text: うえで撮影したカメラデータ。当該カメラデータについては撮影対象である被介護者本人
+    message: 「うえ」と書いています（この文書はふつう「上」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 別紙の「設置したうえで」、本文は「上で」
+  - rule: undefined-term
+    line: 125
+    what: 「本共同開発契約」はどこにも定義がない。前文で定義した名前は「本共同研究開発契約」
+    verdict: missed
+    note: neither chaffjs 0.36.0 nor lab main reports it

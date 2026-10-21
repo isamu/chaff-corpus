@@ -739,3 +739,15 @@
 - id: cao-kourei-wp-r06-s2-2-4-seikatsu-kankyo
   match: "0120-210-364"
   reason: the published number of 国際電話不取扱受付センター, a public service centre named in the white paper
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-5253-2111"
+  reason: 内閣府's published switchboard number, given in the press release as the contact for the survey method
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-3581-3351"
+  reason: 環境省's published switchboard number, given in the press release as the contact for the survey results
+- id: fsa-press-2026-10-09-cyber-taisaku
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)
+- id: fsa-press-2026-10-05-delta-wall
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)

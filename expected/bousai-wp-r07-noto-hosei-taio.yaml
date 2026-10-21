@@ -1,0 +1,63 @@
+id: bousai-wp-r07-noto-hosei-taio
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "#### 第2節　令和6年能登半島地震の経験・教訓を踏まえた法制上の対応"
+    message: 見出し「第2節　令和6年能登半島地震の経験・教訓を踏まえた法制上の対応」の深さが 1 から 4 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: ページ自身が h1 から h4 へ飛ぶ
+  - rule: max-sentence-length
+    line: 7
+    text: 同法案は、国による災害対応の強化、福祉的支援等の充実（災害救助法の救助の種類に「
+    message: この文は 184 文字あります（140 文字まで）
+    verdict: correct
+    note: 184 字の一文
+  - rule: topic-predicate-distance
+    line: 7
+    text: 同法案は、国による災害対応の強化、福祉的支援等の充実（災害救助法の救助の種類に「
+    message: 「は」で出した主題から述語まで 172 字あります（80 字まで）
+    verdict: correct
+    note: 「同法案は」から述語「構成され」まで 172 字
+  - rule: no-doubled-joshi
+    line: 18
+    text: の避難所の運営状況の把握
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「ための避難所の運営状況の把握」と「の」が三つ続く
+  - rule: no-doubled-joshi
+    line: 41
+    text: のための土地の立入り等
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「復旧のための土地の立入り」と「の」が三つ続く
+  - rule: max-sentence-length
+    line: 47
+    text: ＜1＞道路啓開計画の法定化、実効性のある計画に基づいた道路啓開の実施、＜2＞地方
+    message: この文は 199 文字あります（140 文字まで）
+    verdict: correct
+    note: 箇条書き一項目が 199 字の一文
+  - rule: max-sentence-length
+    line: 48
+    text: 港湾施設の応急復旧に他人の石材等を活用できるようにする制度の創設、港湾管理者が災
+    message: この文は 185 文字あります（140 文字まで）
+    verdict: correct
+    note: 箇条書き一項目が 185 字の一文
+  - rule: no-doubled-joshi
+    line: 48
+    text: の支援船舶の入港需要等の情報の提供等による、港湾の緊急物資等の輸送拠点機能の確保
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: correct
+    note: 「支援船舶の入港需要等の情報の提供」と「の」が四つ続く
+  - rule: no-doubled-joshi
+    line: 48
+    text: の緊急物資等の輸送拠点機能の確保等を内容とする港湾法等の改正（令和7年4月16日
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「港湾の緊急物資等の輸送拠点機能の確保」と「の」が三つ続く
+  - rule: max-kanji-continuous
+    line: 50
+    text: 株式会社地域経済活性化支援機構（REVIC）の目的・支援基準に被災地域の経済再建
+    message: 「株式会社地域経済活性化支援機構法」は漢字が 16 字続いています（10 字まで）
+    verdict: false-positive
+    note: 法律の題名（株式会社地域経済活性化支援機構法）

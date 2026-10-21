@@ -1,0 +1,63 @@
+id: env-press-2026-10-16-junkan-keizai-yoron
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 6
+    text: "### 本調査について"
+    message: 見出し「本調査について」の深さが 1 から 3 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: ページ題（h1）の次が h3 の「本調査について」で、h2 を飛ばす
+  - rule: fullwidth-alnum-consistency
+    line: 9
+    text: 3,000 人
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。11 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: 一桁を全角、桁区切りのある数を半角で書く公用文の書き分けに沿っている
+  - rule: latin-spacing
+    line: 9
+    text: " 3,000 人"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。8 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「者 3,000 人」だけ数字の前後に空白がある（ほかは「1,474人」と詰める）
+  - rule: latin-spacing
+    line: 9
+    text: " 人"
+    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 同じ箇所の数字と「人」のあいだの空白
+  - rule: fullwidth-alnum-consistency
+    line: 10
+    text: 1,474人（回収率 49.1％）
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。11 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: 四桁の数は半角で書く書き分けに沿っている
+  - rule: fullwidth-alnum-consistency
+    line: 10
+    text: 1％）
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。11 箇所のうち 3 箇所が違う）
+    verdict: false-positive
+    note: 小数（49.1）は半角で書く書き分けに沿っている
+  - rule: no-mixed-desumasu
+    line: 13
+    text: 令和８年８月20日～同年９月27日
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: 調査期間の記入欄の値（日付の範囲）で、文ではない
+  - rule: no-mixed-desumasu
+    line: 20
+    text: 循環経済（サーキュラーエコノミー）に関する国民の意識を把握し、今後の施策の参考と
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: 「■ 調査目的」の記入欄の文で、ですます調の地の文とは別の書式
+  - rule: bracket-width-consistency
+    line: 45
+    text: (％)は、表章単位未満の位で四捨五入しているため、内訳の合計が100にならないこ
+    message: 括弧を「(」と書いています（この文書はふつう「（」。20 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: ここだけ半角の「(％)」、ほかは全角の括弧
+  - rule: bracket-width-consistency
+    line: 45
+    text: )は、表章単位未満の位で四捨五入しているため、内訳の合計が100にならないことも
+    message: 括弧を「)」と書いています（この文書はふつう「）」。20 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: 同じ箇所の閉じ括弧
