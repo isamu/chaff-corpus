@@ -1,0 +1,16 @@
+id: ai-en-essay-handwritten-letters
+title: "Why I still write letters by hand"
+language: en
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a personal essay for my blog about why I still write letters by hand. Make it sound human."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 0eb8c99241f72d8be79631651934c0e5b235c0ce9e5db038ffb0b42ed8446319
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."

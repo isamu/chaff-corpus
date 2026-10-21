@@ -1,0 +1,16 @@
+id: ai-en-report-support-q3
+title: "Q3 customer support report"
+language: en
+genre: business/report
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write an internal report on our Q3 customer support numbers. Tickets: 4,820, up 12% from Q2. Median first response time 3.1 hours (Q2: 4.5). CSAT 87% (Q2: 89%). Top issue: login problems after the September app update, 22% of tickets. A fix shipped in early October."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 3b5ce8916f5b307d13ee8b15e4dc2b7d2fcfd87da69320642817d542426647da
+notes: "pilot of isamu/lab#1918: a plain request. The text is the document part of the reply, without the assistant's lead-in or closing line."

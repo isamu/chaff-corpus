@@ -1,0 +1,20 @@
+id: ai-en-email-office-closed
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 13
+    text: If you've got something on Friday that r
+    message: This sentence runs 26 words (limit 18)
+    verdict: false-positive
+    note: a conversational conditional of 26 words in a casual team email; reads in one breath, not an AI sign
+  - rule: closing-cliche
+    line: 15
+    what: '"enjoy the commute-free Friday!" as the chirpy sign-off'
+    verdict: missed
+    note: mild; the upbeat sign-off of a generated casual email
+  - rule: email-greeting-closing
+    line: 17
+    text: Sam
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: the closing is the last paragraph's "Thanks, ..." just above the name

@@ -1,0 +1,34 @@
+id: ai-ja-essay-morning-walk
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 23% しかありません（35% 以上ほしい）
+    verdict: correct
+    note: an essay cut into three parallel headed benefits of one size plus おわりに; a reader takes the outline as generated
+  - rule: ai-structure
+    line: 7
+    what: エッセイに「〜ようになった」「〜が変わった」と揃えた 3 つの見出しと「おわりに」
+    verdict: missed
+    note: "candidate pattern: an essay with three parallel benefit headings; ai-structure did not count it"
+  - rule: heading-echo
+    line: 9
+    what: 節の最初の文が見出し「季節の変化に気づくようになった」を言い直している（17行目も）
+    verdict: missed
+    note: each section opens by restating its heading
+  - rule: ai-tell
+    line: 13
+    what: どの節も「〜のだと思う。」「〜かもしれない。」「〜と心から思っている。」の総括文で終わる（13・21・27行）
+    verdict: missed
+    note: "candidate pattern: every section ends in a summary sentence; shape-detectable at paragraph ends"
+  - rule: empty-conclusion
+    line: 31
+    what: 「おわりに」が本文の要約（見える景色や一日の過ごし方が変わった）を繰り返す
+    verdict: missed
+    note: an empty closing section
+  - rule: closing-cliche
+    line: 33
+    what: 「一度〜してみてほしい。きっと、いつもの街が少し違って見えるはずだ。」と読者に勧めて締める
+    verdict: missed
+    note: "candidate phrase: きっと〜はずだ as a closing promise to the reader"

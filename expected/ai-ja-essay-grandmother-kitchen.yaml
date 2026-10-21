@@ -1,0 +1,8 @@
+id: ai-ja-essay-grandmother-kitchen
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 21
+    what: 最後の段落が冒頭の「窓の曇りを拭く」に戻って、ほろ苦い救いで閉じる型どおりの結び
+    verdict: missed
+    note: "candidate pattern: a neat callback ending (also ai-en-essay-handwritten-letters); needs judgement. Otherwise the essay reads as human"

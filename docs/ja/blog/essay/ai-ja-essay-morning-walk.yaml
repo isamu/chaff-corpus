@@ -1,0 +1,16 @@
+id: ai-ja-essay-morning-walk
+title: "朝の散歩を始めて変わったこと"
+language: ja
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "朝の散歩を始めて変わったことについて、ブログ用のエッセイを書いて。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: e64f6ebafaa52c1d4e99f11a94bef86f9f67ae6e3d51bcac5d20ca5b869d9f17
+notes: "pilot of isamu/lab#1918: a plain request. The text is the document part of the reply, without the assistant's lead-in or closing line."

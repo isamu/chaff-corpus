@@ -1,0 +1,16 @@
+id: ai-en-essay-learning-to-cook
+title: "Learning to cook as an adult"
+language: en
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a blog essay about learning to cook as an adult."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 260ec78d6645612209e3d354fae3324ddf65260e964c36813c17cbf39f7bb90d
+notes: "pilot of isamu/lab#1918: a plain request. The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,16 @@
+id: ai-ja-proposal-study-group
+title: "社内勉強会の企画書"
+language: ja
+genre: business/proposal
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "開発部（エンジニア15人）で社内勉強会を月1回始めたいので、上司に出す企画書を書いて。AIが書いたっぽくならないように、自然に書いて。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 79754c9f71165e72d6812ba0c6e0f5a00705c5306e26ebf40af3e003d9972a89
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."

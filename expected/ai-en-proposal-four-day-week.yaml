@@ -1,0 +1,14 @@
+id: ai-en-proposal-four-day-week
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 9
+    text: probably have been an email. I don't thi
+    message: 22 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: the conversational register the request asked for (honestly, probably, really); not an AI sign
+  - rule: cliche
+    line: 9
+    what: '"meetings that could probably have been an email"'
+    verdict: missed
+    note: a worn joke; otherwise the proposal reads as human

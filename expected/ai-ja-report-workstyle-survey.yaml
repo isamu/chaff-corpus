@@ -1,0 +1,28 @@
+id: ai-ja-report-workstyle-survey
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 5
+    what: 実施期間が「2026年〇月〇日〜〇月〇日」のまま
+    verdict: missed
+    note: Japanese 〇〇 blank, not found
+  - rule: ai-generated-composite
+    line: 13
+    what: 依頼に無い理由づけと自由記述の声（通勤時間の削減を評価する声、17行目の「他部署の誰に聞けばよいかわからない」）を作っている
+    verdict: missed
+    note: "candidate pattern: invented supporting detail (reasons, quoted comments) not in the brief; needs judgement (chaff test), a reader who ran the survey notices"
+  - rule: paragraph-restatement
+    line: 25
+    what: 考察の最初の文が、結果の節の数字（満足度の上昇、4割の連携課題）を言い直しているだけ
+    verdict: missed
+    note: the discussion opens by restating the results
+  - rule: ai-structure
+    line: 31
+    what: 結果の 3 項目に 1 対 1 で対応する太字の札 3 項目の対策（課題の数に揃えた対策）
+    verdict: missed
+    note: "candidate pattern: one countermeasure per finding, three bold-labelled items mirroring the three results; bold-label-list needs 5 items"
+  - rule: empty-conclusion
+    line: 37
+    what: 「おわりに」が謝辞と「より働きやすい環境づくりを進めていきます」だけで、何も足していない
+    verdict: missed
+    note: an empty closing section, the generated report's last heading

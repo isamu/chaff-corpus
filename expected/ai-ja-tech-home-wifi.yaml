@@ -1,0 +1,38 @@
+id: ai-ja-tech-home-wifi
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 23% しかありません（35% 以上ほしい）
+    verdict: correct
+    note: an experience post still cut into one even headed section per check step
+  - rule: no-mixed-desumasu
+    line: 3
+    text: 動画は途中で止まるし、オンライン会議では自分の声が途切れていると言われる。プロバ
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: a plain-form sentence as narration inside a です・ます post (〜と言われる。); a human device, not a slip
+  - rule: ai-generated-composite
+    line: 5
+    what: 「体験談」が確認手順の一覧と同じ順に進み、どの手順もきれいな数字（200→10→60Mbps）と教訓で終わる
+    verdict: missed
+    note: "candidate pattern: a checklist dressed as an anecdote; needs judgement. The persona's details (8年前の機種, テレビ台の裏) are invented"
+  - rule: no-doubled-joshi
+    line: 21
+    text: のラックの下の段に押し込んでありました。見た目がすっきりするのでそうしていたので
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: 金属のラックの下の段 is a normal noun chain
+  - rule: weasel-word
+    line: 23
+    text: 電子レンジや水槽の近く、壁の角なども電波が弱くなりやすいと言われているので、心当
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: correct
+    note: 「と言われている」 with no source; an editor would ask who says so. A mild AI sign
+  - rule: orthographic-variant
+    line: 46
+    text: 方の参考になればうれしいです。
+    message: 「方」と書いています（この文書はふつう「ほう」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 方 (かた, a person) and comparative ほう are different words

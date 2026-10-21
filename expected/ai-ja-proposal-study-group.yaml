@@ -1,0 +1,20 @@
+id: ai-ja-proposal-study-group
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 11
+    what: 「〇〇さんが」の伏せ字（3行目の「開発部　〇〇」も）
+    verdict: missed
+    note: "Japanese 〇〇 blank; the anecdote around it is also invented (candidate: invented anecdote, needs judgement)"
+  - rule: colloquial-opener
+    line: 32
+    text: なので、参加は自由とし、発表の準備も1〜2時間で済む程度の内容でよいことにするつ
+    message: 「なので」で始まる文が 1 個あります（1 個から）
+    verdict: correct
+    note: 「なので、」 at a sentence head in a proposal to a manager; an editor would change it. Not an AI sign (the opposite)
+  - rule: request-without-deadline
+    line: 36
+    text: ご検討よろしくお願いします。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: the closing courtesy ご検討よろしくお願いします; the start date is given above

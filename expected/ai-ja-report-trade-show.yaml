@@ -1,0 +1,19 @@
+id: ai-ja-report-trade-show
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 13
+    what: 依頼に無い前回比（商談件数は増えている）、聞き取りの工夫、来場者の声「紙とExcelでの管理に限界を感じている」を作っている
+    verdict: missed
+    note: invented detail presented as fact; needs judgement. A colleague who was at the booth would notice
+  - rule: ai-tell
+    line: 19
+    what: 節の最後の文が毎回「〜と感じています」「〜べきだと考えています」「〜ほうがよいと思います」（13・19・25行）の所感で終わる
+    verdict: missed
+    note: "candidate pattern: every section closes on a first-person reflection verb; shape-detectable (sentence-final と感じています／と考えています／と思います at paragraph ends). Mild"
+  - rule: orthographic-variant
+    line: 25
+    text: ほうがよいと思います。ブースの見せ方については、改めて営業部と相談させてください
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: comparative ほう (〜ほうがよい) and 方 (かた, a person) are different words

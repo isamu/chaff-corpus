@@ -1,0 +1,16 @@
+id: ai-ja-proposal-invoice-digital
+title: "請求書処理の電子化に関する提案書"
+language: ja
+genre: business/proposal
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "経理部の請求書処理を電子化する提案書を書いて。今は紙の請求書が月に約600枚届いていて、入力と確認に担当者3人で月合計90時間ほどかかっている。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 82c8cc57bc0e5de4f8c341eaeb12f59e85c0150acc37bae1f1a15989286c46e1
+notes: "pilot of isamu/lab#1918: a plain request. The text is the document part of the reply, without the assistant's lead-in or closing line."

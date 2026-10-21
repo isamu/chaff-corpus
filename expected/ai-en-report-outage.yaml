@@ -1,0 +1,13 @@
+id: ai-en-report-outage
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 23
+    what: an invented loss estimate ("around 40 orders") and weekday ("a normal Tuesday afternoon"; October 21, 2026 is a Wednesday)
+    verdict: missed
+    note: needs judgement; the request gave neither
+  - rule: ai-generated-composite
+    line: 23
+    what: an invented loss estimate ("around 40 orders") and weekday ("a normal Tuesday afternoon"; October 21, 2026 is a Wednesday)
+    verdict: missed
+    note: needs judgement; the request gave neither
