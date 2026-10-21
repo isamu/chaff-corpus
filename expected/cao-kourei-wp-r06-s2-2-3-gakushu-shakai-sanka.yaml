@@ -1,0 +1,104 @@
+id: cao-kourei-wp-r06-s2-2-3-gakushu-shakai-sanka
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 15
+    text: さらに、ボランティア活動やNPO活動等を通じた社会参加の機会は、生きがい、健康維
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: correct
+    note: 「社会参加の機会は」から述語「醸成するものである」まで、列挙を挟んで 100 字余り
+  - rule: max-kanji-continuous
+    line: 29
+    text: さらに、高等教育段階の学習機会の多様な発展に寄与するため、短期大学卒業者、高等専
+    message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: 組織の名前（独立行政法人大学改革支援・学位授与機構）
+  - rule: topic-predicate-distance
+    line: 35
+    text: 学校は地域コミュニティの核となることから、児童生徒が地域住民とともに創造的な活動
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: false-positive
+    note: 「学校は」の述語「核となる」はすぐ後にあり、文末の「周知している」は別の主語（国）のもの
+  - rule: no-doubled-joshi
+    line: 37
+    text: の整備のうち学校以外の公共施設との複合化・集約化を伴う改築及び長寿命化改修につい
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: no-doubled-joshi
+    line: 41
+    text: の実現のための取組を進めた。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: orthographic-variant
+    line: 41
+    text: 作り等、「生涯学習社会」の実現のための取組を進めた。
+    message: 「作り」と書いています（この文書はふつう「づくり」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 「仕組み作り」と、ほかの「〜づくり」が混ざる
+  - rule: max-sentence-length
+    line: 63
+    text: 中学校学習指導要領の社会科や技術・家庭科、高等学校学習指導要領の公民科や家庭科に
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: correct
+    note: 161 字の一文
+  - rule: max-sentence-length
+    line: 75
+    text: このため、関係府省庁や地方公共団体・関連 団体、ボランティア団体等と連携し、デジ
+    message: この文は 169 文字あります（140 文字まで）
+    verdict: correct
+    note: 169 字の一文
+  - rule: no-doubled-joshi
+    line: 81
+    text: の2回目の変更の閣議決定を行った。令和5年度には、高齢者を含む幅広い全世代に対す
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: no-doubled-joshi
+    line: 81
+    text: の有無その他の消費者の特性に配慮した適切な方法で行わなければならない。こうした消
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く（法律の条文をなぞった箇所だが括弧の外）
+  - rule: repeated-conjunction
+    line: 89
+    text: また、地域の社会教育を推進するため、社会教育を行う者に対する専門的・技術的な指導
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: correct
+    note: 「また」「さらに」などで始まる段落が続く
+  - rule: teki-overuse
+    line: 89
+    text: また、地域の社会教育を推進するため、社会教育を行う者に対する専門的・技術的な指導
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 一文に「専門的」「技術的」「専門的」
+  - rule: max-sentence-length
+    line: 91
+    text: さらに、退職教員や企業退職高齢者等を含む幅広い地域住民や企業・団体等の参画により
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: 143 字の一文
+  - rule: max-sentence-length
+    line: 97
+    text: また、高齢者の社会参加や世代間交流の促進、社会活動を推進するリーダーの育成・支援
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: correct
+    note: 152 字の一文
+  - rule: max-sentence-length
+    line: 103
+    text: 令和4年11月から有識者、障害者団体、放送事業者等から構成される「視聴覚障害者等
+    message: この文は 150 文字あります（140 文字まで）
+    verdict: correct
+    note: 150 字の一文
+  - rule: max-sentence-length
+    line: 109
+    text: また、開発途上国からの要請（ニーズ）に見合った技術・知識・経験を持ち、かつ開発途
+    message: この文は 146 文字あります（140 文字まで）
+    verdict: correct
+    note: 146 字の一文
+  - rule: stray-space
+    line: 75
+    what: 「地方公共団体・関連 団体」の語の途中に半角空白が入っている
+    verdict: missed
+    note: neither chaffjs 0.36.0 nor lab main reports it

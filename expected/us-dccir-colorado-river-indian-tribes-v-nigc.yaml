@@ -1,0 +1,105 @@
+id: us-dccir-colorado-river-indian-tribes-v-nigc
+chaff: 0.36.0
+findings:
+  - rule: max-paragraph-length
+    line: 15
+    text: In January 2001, the Commission sought t
+    message: This paragraph runs 19 sentences (limit 12)
+    verdict: correct
+    note: a 19-sentence paragraph of facts and procedural history
+  - rule: undefined-acronym
+    line: 15
+    text: CFA 01-01, 5-6 (Nat'l Indian Gaming Comm
+    message: '"CFA" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: part of an agency docket number in a citation (NOV/CFA 01-01), not an acronym the text should expand
+  - rule: undefined-acronym
+    line: 15
+    text: NIGC Final Order). The Commission locate
+    message: '"NIGC" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: the short citation form the opinion defines for the Commission's order, right after its full citation naming the Commission
+  - rule: undefined-acronym
+    line: 15
+    text: NOV/CFA 01-01, 5-6 (Nat'l Indian Gaming
+    message: '"NOV" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: part of an agency docket number in a citation (NOV/CFA 01-01), not an acronym the text should expand
+  - rule: hyphen-as-dash
+    line: 19
+    text: " - approves (or disapproves) tribal-stat"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 19
+    text: " - contemplates joint tribal-state regul"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 19
+    text: " - rather than the Commission - approves"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: max-paragraph-length
+    line: 19
+    text: Even now the Commission concedes that no
+    message: This paragraph runs 17 sentences (limit 12)
+    verdict: correct
+    note: a 17-sentence paragraph
+  - rule: oxford-comma-consistency
+    line: 19
+    text: A compact may contain provisions relatin
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: a list whose items are quotations each followed by a citation; the comma before 'and' closes the citation, it is not a style choice
+  - rule: hyphen-as-dash
+    line: 21
+    text: ' - many can and will." Id. at 13. In add'
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash (inside a quoted committee report)
+  - rule: undefined-acronym
+    line: 23
+    text: SEC to dictate the details of how Harrah
+    message: '"SEC" is used without an expansion (6 such acronyms)'
+    verdict: correct
+    note: SEC is never expanded; the sentence before names the Securities Exchange Act, not the Commission
+  - rule: hyphen-as-dash
+    line: 25
+    text: " - namely, that its regulations are vali"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 25
+    text: " - regulations promulgated pursuant to s"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 27
+    text: " - what is the statutory basis empowerin"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: max-paragraph-length
+    line: 27
+    text: In arguing that the regulations implemen
+    message: This paragraph runs 16 sentences (limit 12)
+    verdict: correct
+    note: a 16-sentence paragraph
+  - rule: undefined-acronym
+    line: 27
+    text: AT&T, 512 U.S. 218, 231 n.4 (1994). The
+    message: '"AT&T" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: a party's name in a case citation, not an acronym the text should expand
+  - rule: undefined-acronym
+    line: 27
+    text: MCI Telecomms. Corp. v. AT&T, 512 U.S. 2
+    message: '"MCI" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: a party's name in a case citation, not an acronym the text should expand
