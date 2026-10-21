@@ -1,0 +1,75 @@
+id: ts-handbook-more-on-functions
+chaff: 0.36.0
+findings:
+  - rule: hyphen-as-dash
+    line: 66
+    text: " - use `:` between the parameter list an"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 149
+    text: " - by TypeScript."
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: spaced hyphens used as dashes around 'chosen automatically'
+  - rule: return-type-mismatch
+    line: 515
+    text: "function fn(x: string): string;"
+    message: "`fn` is said to return string here, but its signature returns `void`"
+    verdict: false-positive
+    note: "a deliberately wrong overload, shown with its compiler error (// @errors: 2394)"
+  - rule: comparative-without-baseline
+    line: 559
+    text: better!
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: "'much better' than the example just shown, which is the baseline"
+  - rule: redundant-expression
+    line: 560
+    text: Callers can invoke this with either sort
+    message: '"added bonus" says the same thing twice'
+    verdict: correct
+    note: "'added bonus' says the same thing twice"
+  - rule: contraction-consistency
+    line: 579
+    text: The JavaScript specification states that
+    message: "\"cannot\" is written \"can't\" elsewhere in the document"
+    verdict: correct
+    note: "'cannot' where the page mostly writes 'can't'"
+  - rule: which-that-consistency
+    line: 623
+    text: which don't return a value.
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: a restrictive 'which' where the page mostly uses 'that'
+  - rule: contraction-consistency
+    line: 634
+    text: However, `void` and `undefined` are not
+    message: "\"are not\" is written \"aren't\" elsewhere in the document"
+    verdict: correct
+    note: "'are not' where the page mostly writes 'aren't'"
+  - rule: which-that-consistency
+    line: 690
+    text: which are _never_ observed.
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: a restrictive 'which' where the page mostly uses 'that'
+  - rule: contraction-consistency
+    line: 758
+    text: Note that in general, TypeScript does no
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: correct
+    note: "'does not' where the page mostly writes 'doesn't'"
+  - rule: title-case-consistency
+    line: 820
+    text: ""
+    message: This heading's capitalisation differs from the rest (1 in this document)
+    verdict: correct
+    note: "'Return type void' in sentence case among Title Case headings"
+  - rule: contraction-consistency
+    line: 824
+    text: Contextual typing with a return type of
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: false-positive
+    note: "'does **not**' is split to put emphasis on 'not'; a contraction cannot carry it"
