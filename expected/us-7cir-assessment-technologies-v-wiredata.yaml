@@ -1,0 +1,63 @@
+id: us-7cir-assessment-technologies-v-wiredata
+chaff: 0.36.0
+findings:
+  - rule: contraction-consistency
+    line: 17
+    text: AT claims that the data
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: correct
+    note: the opinion mixes contractions (can't) with full forms (cannot); the contractions are the minority
+  - rule: max-paragraph-length
+    line: 22
+    text: WIREdata, owned by Multiple Listing Serv
+    message: This paragraph runs 14 sentences (limit 12)
+    verdict: correct
+    note: a 14-sentence paragraph
+  - rule: contraction-consistency
+    line: 25
+    text: Ordinarily
+    message: "\"they're\" is written \"they are\" elsewhere in the document"
+    verdict: correct
+    note: they're beside 'they are' elsewhere; a minority contraction
+  - rule: contraction-consistency
+    line: 77
+    text: But WIREdata doesn't want the
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
+    verdict: correct
+    note: doesn't beside 'does not' elsewhere; a minority contraction
+  - rule: contraction-consistency
+    line: 78
+    text: It isn't in the business of making tax a
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: correct
+    note: isn't beside 'is not' elsewhere; a minority contraction
+  - rule: max-paragraph-length
+    line: 120
+    text: AT would lose this copyright case even i
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+    note: a 13-sentence paragraph
+  - rule: contraction-consistency
+    line: 145
+    text: AT argues that WIREdata doesn't need to
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
+    verdict: correct
+    note: doesn't beside 'does not' elsewhere; a minority contraction
+  - rule: contraction-consistency
+    line: 175
+    text: But AT is not suing for breach of the te
+    message: "\"can't\" is written \"cannot\" elsewhere in the document"
+    verdict: correct
+    note: can't beside 'cannot' elsewhere; a minority contraction
+  - rule: unknown-word
+    line: 190
+    text: facie, whatever the parties to the contr
+    message: '"facie" is not in the dictionary; did you mean "facia"?'
+    verdict: false-positive
+    note: the Latin legal phrase 'prima facie'
+  - rule: comparative-without-baseline
+    line: 193
+    text: more precise, it created
+    message: '"more precise" does not say what it is compared with'
+    verdict: false-positive
+    note: the set phrase 'to be more precise' corrects the clause before; nothing is compared

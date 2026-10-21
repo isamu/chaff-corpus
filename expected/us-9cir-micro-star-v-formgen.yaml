@@ -1,0 +1,93 @@
+id: us-9cir-micro-star-v-formgen
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 8
+    text: GT Interactive Software Corp. and Apogee
+    message: '"GT" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: part of a company's name (GT Interactive Software Corp.)
+  - rule: undefined-acronym
+    line: 17
+    text: CD, which it then sold commercially as N
+    message: '"CD" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: CD, a common word that needs no expansion
+  - rule: max-paragraph-length
+    line: 40
+    text: FormGen alleges that its copyright is in
+    message: This paragraph runs 13 sentences (limit 12)
+    verdict: correct
+    note: a 13-sentence paragraph (one sentence per line, one paragraph)
+  - rule: undefined-acronym
+    line: 43
+    text: MAP files.
+    message: '"MAP" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: the name of the game's file type (MAP files), not an acronym
+  - rule: doubled-punctuation
+    line: 66
+    text: ..
+    message: 'Punctuation is doubled: ".."'
+    verdict: correct
+    note: "'Id..' doubles the period of the abbreviation"
+  - rule: undefined-acronym
+    line: 77
+    text: CD-ROM.
+    message: '"CD-ROM" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: CD-ROM, a common word that needs no expansion
+  - rule: contraction-consistency
+    line: 80
+    text: Micro Star argues that, because the audi
+    message: "\"didn't\" is written \"did not\" elsewhere in the document"
+    verdict: correct
+    note: didn't beside 'did not' elsewhere; a minority contraction
+  - rule: article-sound
+    line: 101
+    text: a N/I level is played is described—in ex
+    message: '"a N" takes "an" before that sound'
+    verdict: false-positive
+    note: N/I abbreviates the title Nuke It and is read as the words, so 'a' fits
+  - rule: article-sound
+    line: 101
+    text: a N/I MAP file.
+    message: '"a N" takes "an" before that sound'
+    verdict: false-positive
+    note: N/I abbreviates the title Nuke It and is read as the words, so 'a' fits
+  - rule: bracket-nesting
+    line: 106
+    text: See 1 William F. Patry, Copyright Law an
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: an alteration bracket [A] inside a quotation inside a citation parenthetical, the standard legal citation form
+  - rule: undefined-acronym
+    line: 129
+    text: MGM/UA Entertainment Co., 772 F.2d 740 (
+    message: '"MGM" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: a party's name in a case citation
+  - rule: undefined-acronym
+    line: 129
+    text: UA Entertainment Co., 772 F.2d 740 (11th
+    message: '"UA" is used without an expansion (6 such acronyms)'
+    verdict: false-positive
+    note: a party's name in a case citation
+  - rule: max-paragraph-length
+    line: 145
+    text: Our examination of the factors yields st
+    message: This paragraph runs 18 sentences (limit 12)
+    verdict: correct
+    note: an 18-sentence paragraph
+  - rule: contraction-consistency
+    line: 175
+    text: In case FormGen didn’t license away its
+    message: "\"didn't\" is written \"did not\" elsewhere in the document"
+    verdict: correct
+    note: didn't beside 'did not' elsewhere; a minority contraction
+  - rule: contraction-consistency
+    line: 204
+    text: Computer programs don’t actually go anyw
+    message: "\"don't\" is written \"do not\" elsewhere in the document"
+    verdict: correct
+    note: don't beside 'do not' elsewhere; a minority contraction

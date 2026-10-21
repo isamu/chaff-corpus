@@ -1,0 +1,75 @@
+id: chrg-119shrg63288-army-corps-oversight-2025
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 53
+    text: SHELLEY MOORE CAPITO, West Virginia, Cha
+    message: '"SHELLEY MOORE CAPITO" is written in capitals'
+    verdict: false-positive
+    note: the committee roster sets members' names in capitals by GPO convention
+  - rule: all-caps-shouting
+    line: 171
+    text: OPENING STATEMENT OF HON. SHELLEY MOORE
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 171
+    text: SHELLEY MOORE CAPITO,
+    message: '"SHELLEY MOORE CAPITO" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 173
+    text: SENATOR FROM THE STATE OF WEST VIRGINIA
+    message: '"SENATOR FROM THE STATE OF WEST VIRGINIA" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 343
+    text: OPENING STATEMENT OF HON. SHELDON WHITEH
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 345
+    text: SENATOR FROM THE STATE OF RHODE ISLAND
+    message: '"SENATOR FROM THE STATE OF RHODE ISLAND" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: redundant-expression
+    line: 439
+    text: funding from blue states to red States,
+    message: '"completely eliminate" says the same thing twice'
+    verdict: correct
+    note: "'completely eliminating' in a senator's prepared statement; eliminating is already complete"
+  - rule: all-caps-shouting
+    line: 527
+    text: ADAM TELLE, ASSISTANT SECRETARY OF THE A
+    message: '"ADAM TELLE, ASSISTANT SECRETARY OF THE ARMY" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 527
+    text: STATEMENT OF HON. ADAM TELLE, ASSISTANT
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 709
+    text: NOT AVAILABLE IN TIFF FORMAT]
+    message: '"NOT AVAILABLE IN TIFF FORMAT" is written in capitals'
+    verdict: false-positive
+    note: GPO's placeholder for an image left out of the text edition
+  - rule: all-caps-shouting
+    line: 737
+    text: STATEMENT OF LIEUTENANT GENERAL WILLIAM
+    message: '"STATEMENT OF LIEUTENANT GENERAL WILLIAM H" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 891
+    text: NOT AVAILABLE IN TIFF FORMAT]
+    message: '"NOT AVAILABLE IN TIFF FORMAT" is written in capitals'
+    verdict: false-positive
+    note: GPO's placeholder for an image left out of the text edition

@@ -1,0 +1,201 @@
+id: fed-sr-25-3
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 5
+    text: "### SR 25-3: Imposition of Special Measu"
+    message: "The heading \"SR 25-3: Imposition of Special Measures by the U.S. Department of the Treasury's Financial Crimes Enforcement Network (\"FinCEN\")\" runs 18 words (limit 14)"
+    verdict: correct
+    note: the page heading repeats the letter's whole subject, far over the limit
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 207 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead in capitals and agency names make the density in a short regulatory letter
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject has 119 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label is far longer than a subject line should be"
+  - rule: max-sentence-length
+    line: 23
+    text: "Applicability:  This letter on special m"
+    message: This sentence runs 21 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: duplicate-definition
+    line: 25
+    text: ("FinCEN") under section 311 of the USA
+    message: '"FinCEN" is also defined on line 21'
+    verdict: false-positive
+    note: FinCEN is defined in the subject line and again at first use in the body, the normal letter practice
+  - rule: max-sentence-length
+    line: 25
+    text: Department of the Treasury's Financial C
+    message: This sentence runs 66 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 25
+    text: Special measures create legal obligation
+    message: This sentence runs 28 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 25
+    text: The purpose of this letter is to advise
+    message: This sentence runs 20 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 27
+    text: Under section 311 of the USA PATRIOT Act
+    message: This sentence runs 35 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 29
+    text: maintain records, file reports, or both,
+    message: This sentence runs 19 words (limit 18)
+    verdict: correct
+    note: a long list item (a clause of the statute's list of special measures)
+  - rule: max-sentence-length
+    line: 33
+    text: identify and obtain information comparab
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+    note: a long list item (a clause of the statute's list of special measures)
+  - rule: max-sentence-length
+    line: 35
+    text: identify and obtain information comparab
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+    note: a long list item (a clause of the statute's list of special measures)
+  - rule: max-sentence-length
+    line: 37
+    text: prohibit, or impose conditions upon, the
+    message: This sentence runs 24 words (limit 18)
+    verdict: correct
+    note: a long list item (a clause of the statute's list of special measures)
+  - rule: max-sentence-length
+    line: 39
+    text: Congress passed the Combating Russian Mo
+    message: This sentence runs 76 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 39
+    text: The additional special measure provides
+    message: This sentence runs 28 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 39
+    text: The Combating Russian Money Laundering a
+    message: This sentence runs 26 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 39
+    text: The FEND OFF Fentanyl Act, passed in 202
+    message: This sentence runs 39 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 41
+    text: prohibit, or impose conditions upon, cer
+    message: This sentence runs 34 words (limit 18)
+    verdict: correct
+    note: a long list item (a clause of the statute's list of special measures)
+  - rule: oxford-comma-consistency
+    line: 41
+    text: prohibit, or impose conditions upon, cer
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: the list 'institution, class of transaction, or type of account' takes the serial comma like the document's other lists
+  - rule: max-sentence-length
+    line: 43
+    text: Because the specific special measures im
+    message: This sentence runs 42 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 43
+    text: The fifth special measure must be issued
+    message: This sentence runs 39 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 45
+    text: FinCEN maintains a list of the entities
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 47
+    text: Reserve Banks are asked to distribute th
+    message: This sentence runs 25 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: duplicate-definition
+    line: 57
+    text: ("FinCEN")"
+    message: '"FinCEN" is also defined on line 21'
+    verdict: false-positive
+    note: the quoted title of a cross-referenced letter, which carries its own definition
+  - rule: max-sentence-length
+    line: 57
+    text: SR letter 16-13, "Imposition of Special
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: "an item of the list of cross-referenced letters: a number and a quoted title, not a sentence"
+  - rule: heading-level-skip
+    line: 59
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
+  - rule: max-sentence-length
+    line: 61
+    text: For background information on section 31
+    message: This sentence runs 30 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: article-sound
+    line: 63
+    text: a et seq.), except persons who register
+    message: '"a et" takes "an" before that sound'
+    verdict: false-positive
+    note: the subsection mark (a) before et seq. read as the article a
+  - rule: bracket-nesting
+    line: 63
+    text: FinCEN's special measures rules (e.g. 31
+    message: Brackets nested 4 deep (limit 2)
+    verdict: false-positive
+    note: statute citations with subsection marks (1813(h), 80a-3(a)(1)) inside parenthetical definitions; the legal citation form needs the depth
+  - rule: max-sentence-length
+    line: 63
+    text: FinCEN's special measures rules (e.g. 31
+    message: This sentence runs 257 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: unbalanced-bracket
+    line: 63
+    text: (as defined in section 3(a)(1) of the In
+    message: '"(" is never closed'
+    verdict: correct
+    note: "'((\"Investment Company Act\")' opens one parenthesis too many, so the item's parentheses never balance"
+  - rule: max-sentence-length
+    line: 65
+    text: "See FinCEN, Frequently Asked Questions:"
+    message: This sentence runs 22 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: max-sentence-length
+    line: 67
+    text: The list of FinCEN's rulemakings on Spec
+    message: This sentence runs 26 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes

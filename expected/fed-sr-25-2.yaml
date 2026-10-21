@@ -1,0 +1,177 @@
+id: fed-sr-25-2
+chaff: 0.36.0
+findings:
+  - rule: title-length
+    line: 5
+    text: "### SR 25-2: Order Granting an Exemption"
+    message: 'The heading "SR 25-2: Order Granting an Exemption from the Customer Identification Program Rule Requirement Related to a Bank Obtaining Taxpayer Identification Number Information from the Customer" runs 25 words (limit 14)'
+    verdict: correct
+    note: the page heading repeats the letter's whole subject, far over the limit
+  - rule: proper-noun-density
+    line: 7
+    text: BOARD OF GOVERNORS
+    message: 258 proper nouns per 1000 words (limit 200)
+    verdict: false-positive
+    note: the letterhead in capitals and agency names make the density in a short regulatory letter
+  - rule: email-subject-length
+    line: 19
+    text: "SUBJECT:"
+    message: The subject has 174 characters (up to 70)
+    verdict: correct
+    note: "the subject on the line after the SUBJECT: label is far longer than a subject line should be"
+  - rule: max-sentence-length
+    line: 21
+    text: Order Granting an Exemption from the Cus
+    message: This sentence runs 23 words (limit 18)
+    verdict: false-positive
+    note: the subject line, a title rather than a sentence
+  - rule: max-sentence-length
+    line: 23
+    text: "Applicability:  This Order applies to al"
+    message: This sentence runs 27 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 25
+    text: Department of the Treasury’s Financial C
+    message: This sentence runs 50 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 25
+    text: Effective immediately, banks supervised
+    message: This sentence runs 23 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 27
+    text: The Order permits banks, for all account
+    message: This sentence runs 114 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 27
+    text: The use of this exemption by banks is op
+    message: This sentence runs 22 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 29
+    text: Generally, to fulfill the CIP Rule’s ide
+    message: This sentence runs 25 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 29
+    text: The CIP Rule, implementing section 326 o
+    message: This sentence runs 65 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 29
+    text: The Federal Reserve and FinCEN recognize
+    message: This sentence runs 35 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 29
+    text: The importance of collecting TIN informa
+    message: This sentence runs 62 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 31
+    text: Based on FinCEN’s analysis of Bank Secre
+    message: This sentence runs 59 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 31
+    text: FinCEN and the Federal Reserve therefore
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 31
+    text: Under the CIP Rule, the Federal Reserve,
+    message: This sentence runs 36 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 33
+    text: Questions concerning this SR letter or t
+    message: This sentence runs 20 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 33
+    text: Reserve Banks should distribute this SR
+    message: This sentence runs 21 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's body
+  - rule: heading-level-skip
+    line: 49
+    text: "##### Notes:"
+    message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
+  - rule: max-sentence-length
+    line: 51
+    text: Banks supervised by the Federal Reserve
+    message: This sentence runs 49 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: oxford-comma-consistency
+    line: 51
+    text: Banks supervised by the Federal Reserve
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: correct
+    note: "'branches, agencies and representative offices' has no serial comma inside a list that has one"
+  - rule: max-sentence-length
+    line: 53
+    text: On June 27, 2025, with the concurrence o
+    message: This sentence runs 47 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: max-sentence-length
+    line: 53
+    text: See FinCEN Permits Banks to Use Alternat
+    message: This sentence runs 49 words (limit 18)
+    verdict: false-positive
+    note: a list of the titles of the other agencies' announcements, joined by semicolons, not a sentence
+  - rule: max-sentence-length
+    line: 53
+    text: The Order is applicable to banks, as tha
+    message: This sentence runs 28 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: sentence-spacing-consistency
+    line: 53
+    text: " See FinCEN Permits Banks to Use Alterna"
+    message: 1 space after this sentence, where the document usually leaves 2 (1 of 9)
+    verdict: correct
+    note: one space after a sentence where the letter leaves two
+  - rule: max-sentence-length
+    line: 55
+    text: A TIN is defined by section 6109 of the
+    message: This sentence runs 42 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: max-sentence-length
+    line: 59
+    text: See, e.g., 12 C.F.R. §§ 5.34(e)(3) and 5
+    message: This sentence runs 64 words (limit 18)
+    verdict: false-positive
+    note: a citation string (See, e.g., ... ; see also ...), not a sentence of prose
+  - rule: max-sentence-length
+    line: 61
+    text: See also SR letter 05-9, “Frequently Ask
+    message: This sentence runs 24 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
+  - rule: max-sentence-length
+    line: 63
+    text: Regarding credit card accounts, the CIP
+    message: This sentence runs 25 words (limit 18)
+    verdict: correct
+    note: a long sentence in the letter's notes
