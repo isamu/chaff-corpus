@@ -1,0 +1,110 @@
+id: ts-handbook-everyday-types
+chaff: 0.36.0
+findings:
+  - rule: contraction-consistency
+    line: 24
+    text: JavaScript does not have a special runti
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: correct
+    note: "'does not' where the page mostly writes 'doesn't'"
+  - rule: max-sentence-length
+    line: 41
+    text: When a value is of type `any`, you can a
+    message: This sentence runs 45 words (limit 40)
+    verdict: correct
+    note: a 45-word sentence
+  - rule: hyphen-as-dash
+    line: 86
+    text: " - you might be surprised how few you ne"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: return-type-mismatch
+    line: 139
+    text: "async function getFavoriteNumber(): Prom"
+    message: "`getFavoriteNumber` is said to return Promise<number> here, but its signature returns `number`"
+    verdict: false-positive
+    note: "an async function: returning 26 from a function annotated Promise<number> is right"
+  - rule: hyphen-as-dash
+    line: 269
+    text: " - simply provide a type matching any of"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: contraction-consistency
+    line: 272
+    text: TypeScript will only allow an operation
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: correct
+    note: "'it is' where the page mostly writes 'it's'"
+  - rule: hyphen-as-dash
+    line: 313
+    text: " - if `x` wasn't a `string[]`, then it m"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 337
+    text: " - a _name_ for any _type_."
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: contraction-consistency
+    line: 362
+    text: Note that aliases are _only_ aliases - y
+    message: "\"cannot\" is written \"can't\" elsewhere in the document"
+    verdict: correct
+    note: "'cannot' where the page mostly writes 'can't'"
+  - rule: hyphen-as-dash
+    line: 362
+    text: " - you cannot use type aliases to create"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: contraction-consistency
+    line: 408
+    text: Almost all features of an `interface` ar
+    message: "\"cannot\" is written \"can't\" elsewhere in the document"
+    verdict: correct
+    note: "'cannot' where the page mostly writes 'can't'"
+  - rule: contraction-consistency
+    line: 533
+    text: Both `var` and `let` allow for changing
+    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
+    verdict: correct
+    note: "'does not' where the page mostly writes 'doesn't'"
+  - rule: hyphen-as-dash
+    line: 563
+    text: " - for example, functions that only acce"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: contraction-consistency
+    line: 700
+    text: Because of this, it's a feature which yo
+    message: "\"you are\" is written \"you're\" elsewhere in the document"
+    verdict: correct
+    note: "'you are / is not' where the page mostly writes 'you're / isn't'"
+  - rule: contraction-consistency
+    line: 700
+    text: Unlike most TypeScript features, this is
+    message: "\"is not\" is written \"isn't\" elsewhere in the document"
+    verdict: correct
+    note: "'you are / is not' where the page mostly writes 'you're / isn't'"
+  - rule: contraction-consistency
+    line: 705
+    text: Though we will not go into depth here.
+    message: "\"we will\" is written \"we'll\" elsewhere in the document"
+    verdict: correct
+    note: "'we will' where the page mostly writes 'we'll'"
+  - rule: heading-level-skip
+    line: 707
+    text: "#### `bigint`"
+    message: Heading "`bigint`" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+    note: "'Less Common Primitives' (h2) is followed by h4 subheadings"
+  - rule: hyphen-as-dash
+    line: 24
+    what: "a spaced hyphen used as a dash in a list item: `float` - everything is simply `number`"
+    verdict: missed
+    note: the other spaced hyphens on the page are found; this one sits in a list item. Neither chaffjs 0.36.0 nor lab main reports it
