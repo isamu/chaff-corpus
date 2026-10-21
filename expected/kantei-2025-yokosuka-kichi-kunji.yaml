@@ -1,0 +1,123 @@
+id: kantei-2025-yokosuka-kichi-kunji
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 23日 総理の演説・記者会見など
+    message: 半角の「23」と書いています（この文書はふつう全角の「２３」。13 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 7年8月23日 総理の演説・記者会見など
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。9 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 8月23日 総理の演説・記者会見など
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。9 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: "ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い"
+  - rule: ngram-repetition
+    line: 7
+    text: 今、自衛隊の最高指揮官として再び横須賀を訪れ、改修により進化を遂げた「かが」の現
+    message: 「ものであります。」が 6 回出てきます（5 回まで）
+    verdict: correct
+    note: "「ものであります。」が 6 回"
+  - rule: unqualified-superlative
+    line: 7
+    text: 今、自衛隊の最高指揮官として再び横須賀を訪れ、改修により進化を遂げた「かが」の現
+    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
+    verdict: false-positive
+    note: "「自衛隊の最高指揮官」は職名"
+  - rule: max-paragraph-length
+    line: 8
+    text: 現在、我が国は戦後最も厳しく複雑な安全保障環境に直面しております。中国は東シナ海
+    message: この段落は 7 文あります（5 文まで）
+    verdict: correct
+    note: "一段落に 7 文"
+  - rule: max-kanji-continuous
+    line: 11
+    text: 我が国は、国家安全保障戦略等に基づき、防衛力の抜本的強化に取り組んでまいりました
+    message: 「国家安全保障戦略等」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: "「国家安全保障戦略」は文書名で、後ろの「等」を足して 9 字になっている"
+  - rule: max-sentence-length
+    line: 13
+    text: 海上自衛隊の護衛艦で航空自衛隊の戦闘機を運用することは自衛隊にとって初めての取組
+    message: この文は 118 文字あります（100 文字まで）
+    verdict: correct
+    note: "118 字の一文"
+  - rule: topic-predicate-distance
+    line: 13
+    text: 海上自衛隊の護衛艦で航空自衛隊の戦闘機を運用することは自衛隊にとって初めての取組
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: false-positive
+    note: "「運用することは」の述語「初めての取組であり」は 30 字ほど後で、後半は別の主語（〜ことも）の節"
+  - rule: clause-chain
+    line: 15
+    text: 私はそれなりに安全保障について、防衛についてある程度の勉強はしてまいりましたが、
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: correct
+    note: "「〜ことはない、〜こともない、〜こともない」と節が 7 つながる一文"
+  - rule: clause-chain
+    line: 15
+    text: 装備にしてもそうですし、運用にしてもそうですし、法律にしてもそうですし、それが本
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: correct
+    note: "「〜にしてもそうですし」を三度重ねて節が 7 つながる一文"
+  - rule: person-consistency
+    line: 15
+    text: 私どもは国民に対して責任を負うという立場からそれを判断をいたします。より良い防衛
+    message: 「私ども」と書いています（この文書はふつう「我々」。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "「私ども」と「我々」が一つの訓示に混ざる"
+  - rule: topic-predicate-distance
+    line: 15
+    text: 私はそれなりに安全保障について、防衛についてある程度の勉強はしてまいりましたが、
+    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
+    verdict: false-positive
+    note: "「私は」の述語「勉強はしてまいりました」は 40 字ほど後にある"
+  - rule: max-sentence-length
+    line: 18
+    text: その中で、これに対抗する我が国と各国が連携して、強い意思と能力を示すことは、抑止
+    message: この文は 102 文字あります（100 文字まで）
+    verdict: correct
+    note: "102 字の一文"
+  - rule: unqualified-superlative
+    line: 19
+    text: そうであるだけに、最高の栄誉が与えられてしかるべきものであります。そうであれば、
+    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
+    verdict: false-positive
+    note: "「最高の栄誉が与えられてしかるべき」は訓示の中のあるべき姿の言明で、比べて確かめる主張ではない"
+  - rule: unqualified-superlative
+    line: 19
+    text: そうであれば、同時に最高の栄誉に対応する最高の規律が求められなければなりません。
+    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
+    verdict: false-positive
+    note: "「最高の栄誉に対応する最高の規律」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない"
+  - rule: unqualified-superlative
+    line: 19
+    text: 自衛隊とは最高の栄誉が与えられなければなりません。国家の独立を守る組織であります
+    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
+    verdict: false-positive
+    note: "「最高の栄誉が与えられなければなりません」はあるべき姿の言明で、比べて確かめる主張ではない"
+  - rule: orthographic-variant
+    line: 20
+    text: かくも、枢要な任務に誇りと名誉を持って専念できるよう万全の体制を構築することは、
+    message: 「かく」と書いています（この文書はふつう「核」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: "「かくも」（このように）は「核」とは別の語"
+  - rule: repeated-sentence-ending
+    line: 20
+    text: 国防の最前線に立ち、全身全霊をかけて任務を遂行する諸官の努力が我が国の抑止力であ
+    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: "「〜であります」で終わる文が三つ続く"
+  - rule: repeated-sentence-ending
+    line: 25
+    text: いい船でした。「たかつき」というのもいい船でした。「あまつかぜ」というのもいい船
+    message: 「〜でした」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: "「いい船でした」を三度重ねた意図した反復"

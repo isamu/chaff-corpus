@@ -718,3 +718,24 @@
 - id: zenn-kaityo256-objects-of-git
   match: "kaityo256@example.com"
   reason: a placeholder in the document's own example (git config user.email in a sample repository), not a real address
+- id: gds-blog-deliberately-designed-teams
+  match: "customer.first.talent@dsit.gov.uk"
+  reason: a government team's role address (CustomerFirst Talent team, DSIT), published in the post as its recruitment contact
+- id: 18f-blog-path-analysis-technical-assessments
+  match: "inquiries18F@gsa.gov"
+  reason: 18F's published role address for inquiries (GSA)
+- id: 18f-blog-three-sprint-agile-workshop
+  match: "18f@gsa.gov"
+  reason: 18F's published role address (GSA)
+- id: gov-online-kodomo-seihigai-boshi
+  match: "0120-556-460"
+  reason: a public hotline's published toll-free number (性犯罪・性暴力被害者のための全国共通番号 #8891 from NTT Hikari lines), given by the government's public-relations article
+- id: gov-online-kodomo-seihigai-boshi
+  match: "0120-31-8341"
+  reason: a public hotline's published toll-free number (性犯罪・性暴力被害者のための全国共通番号 #8891 from NTT Hikari lines), given by the government's public-relations article
+- id: gov-online-kodomo-seihigai-boshi
+  match: "0120-835-350"
+  reason: a public hotline's published toll-free number (性犯罪・性暴力被害者のための全国共通番号 #8891 from NTT Hikari lines), given by the government's public-relations article
+- id: cao-kourei-wp-r06-s2-2-4-seikatsu-kankyo
+  match: "0120-210-364"
+  reason: the published number of 国際電話不取扱受付センター, a public service centre named in the white paper

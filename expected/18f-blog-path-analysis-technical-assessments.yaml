@@ -1,0 +1,63 @@
+id: 18f-blog-path-analysis-technical-assessments
+chaff: 0.36.0
+findings:
+  - rule: contraction-consistency
+    line: 14
+    text: They’re ready for a change. They may eve
+    message: "\"they're\" is written \"they are\" elsewhere in the document"
+    verdict: correct
+    note: "\"They're\" here, \"they are\" in the sentence before"
+  - rule: unqualified-superlative
+    line: 16
+    text: Our approach to a technical assessment i
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"the best solution\" to the agency's problem, set against \"the first one that came to mind\" in the same sentence"
+  - rule: contraction-consistency
+    line: 20
+    text: It’s how we assess the best ways an agen
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+    note: "\"It's\" in the same paragraph as \"it is natural\""
+  - rule: max-paragraph-length
+    line: 20
+    text: People are problem solvers, so it is nat
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: "seven sentences in one paragraph"
+  - rule: unqualified-superlative
+    line: 25
+    text: What do we need to learn more about befo
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"the best path forward\" is a set phrase"
+  - rule: redundant-expression
+    line: 34
+    text: We talk to your technical team and stake
+    message: '"connect together" says the same thing twice'
+    verdict: correct
+    note: "\"connect together\""
+  - rule: comparative-without-baseline
+    line: 66
+    text: better. If we make recommendations based
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: "\"meet their needs better\" than the current systems the paragraph is about"
+  - rule: max-sentence-length
+    line: 68
+    text: By speaking to users using techniques li
+    message: This sentence runs 45 words (limit 40)
+    verdict: correct
+    note: "45-word sentence"
+  - rule: unqualified-superlative
+    line: 68
+    text: By speaking to users using techniques li
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"do the most good\" is an idiom"
+  - rule: max-paragraph-length
+    line: 78
+    text: Long term goals and strategies help you
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: "six sentences in one paragraph"
