@@ -1,6 +1,7 @@
 // What one shard of a run hands to the job that merges them, as JSON, and the merge itself. Pure.
 import { isNonEmptyString, isPositiveInteger, isRecord } from "./guards.ts";
 import { OUTCOMES, type Outcome, type OutcomeKind } from "./match.ts";
+import { isOrigin } from "./meta.ts";
 import type { RunContext } from "./report.ts";
 import type { DocumentResult } from "./tally.ts";
 
@@ -30,8 +31,8 @@ const parseResult = (value: unknown): DocumentResult | undefined => {
   if (typeof value["fullyJudged"] !== "boolean" || !Array.isArray(value["outcomes"])) return undefined;
   const outcomes = value["outcomes"].map(parseOutcome);
   if (outcomes.some((outcome) => outcome === undefined)) return undefined;
-  const origin = value["origin"] ?? "human";
-  if (!isNonEmptyString(origin)) return undefined;
+  const origin = value["origin"] === undefined ? "human" : value["origin"];
+  if (!isOrigin(origin)) return undefined;
   return { id: value["id"], genre: value["genre"], language: value["language"], origin, fullyJudged: value["fullyJudged"], outcomes: outcomes.flatMap((outcome) => outcome ?? []) };
 };
 

@@ -57,6 +57,8 @@ describe("shard results as JSON", () => {
       { ...valid, problems: [1] },
       { ...valid, results: [{ ...shardB.results[0], fullyJudged: "yes" }] },
       { ...valid, results: [{ ...shardB.results[0], origin: "" }] },
+      { ...valid, results: [{ ...shardB.results[0], origin: "robot" }] },
+      { ...valid, results: [{ ...shardB.results[0], origin: null }] },
       { ...valid, results: [{ ...shardB.results[0], outcomes: [{ kind: "lost", rule: "a", line: 1, text: "t" }] }] },
       { ...valid, results: [{ ...shardB.results[0], outcomes: [{ kind: "new", rule: "a", line: 0, text: "t" }] }] },
     ].forEach((value, index) => assert.equal(parseShardResult(value), undefined, String(index)));

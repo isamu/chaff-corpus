@@ -62,7 +62,7 @@ export const sha256Of = (text: string): string => createHash("sha256").update(te
 
 const isLanguage = (value: unknown): value is Language => LANGUAGES.some((language) => language === value);
 const isFormat = (value: unknown): value is Format => FORMATS.some((format) => format === value);
-const isOrigin = (value: unknown): value is Origin => ORIGINS.some((origin) => origin === value);
+export const isOrigin = (value: unknown): value is Origin => ORIGINS.some((origin) => origin === value);
 
 const identityProblems = (raw: UnknownRecord, place: MetaPlace, genres: ReadonlySet<string>): string[] => [
   ...(raw["id"] === place.id ? [] : [`id must be "${place.id}" (the file name)`]),
@@ -96,7 +96,7 @@ const generatedProblems = (generated: unknown): string[] => {
 
 /** A human text has a source; a text of origin ai has generated instead, is under this repository's licence and is committed. */
 const originProblems = (raw: UnknownRecord): string[] => {
-  const origin = raw["origin"] ?? "human";
+  const origin = raw["origin"] === undefined ? "human" : raw["origin"];
   if (!isOrigin(origin)) return [`origin must be one of ${ORIGINS.join(", ")}`];
   if (origin === "human") return [...(raw["generated"] === undefined ? [] : ["generated is only for origin: ai"]), ...sourceProblems(raw["source"])];
   const license = isRecord(raw["license"]) ? raw["license"]["name"] : undefined;

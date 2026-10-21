@@ -137,6 +137,7 @@ describe("parseMeta", () => {
 
   it("rejects an unknown origin, and generated on a human document", () => {
     assert.deepEqual(problemsOf({ ...valid(), origin: "mixed" }, TEXT), ["origin must be one of human, ai"]);
+    assert.deepEqual(problemsOf({ ...valid(), origin: null }, TEXT), ["origin must be one of human, ai"]);
     assert.deepEqual(problemsOf({ ...valid(), generated: GENERATED }, TEXT), ["generated is only for origin: ai"]);
   });
 
