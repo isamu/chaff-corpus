@@ -1,0 +1,135 @@
+id: pluralistic-2026-10-13-bundestrojaner
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 5
+    text: unexpectedly powerful way to connect the
+    message: 19 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: the essay leans on -ly adverbs throughout
+  - rule: max-sentence-length
+    line: 11
+    text: In my discussions of this subject, I've
+    message: This sentence runs 62 words (limit 45)
+    verdict: correct
+    note: a 62-word sentence with a colon, semicolon and parenthetical
+  - rule: max-sentence-length
+    line: 13
+    text: This is important context, and context i
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+    note: a 53-word sentence with an a)/b) list
+  - rule: max-sentence-length
+    line: 17
+    text: "Worse: because governments don't know wh"
+    message: This sentence runs 77 words (limit 45)
+    verdict: correct
+    note: a 77-word sentence
+  - rule: wordy-phrase
+    line: 17
+    text: "Worse: because governments don't know wh"
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: '"in order to" can be "to"'
+  - rule: max-sentence-length
+    line: 19
+    text: That was a very hard-fought fight, and i
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+    note: a 47-word sentence
+  - rule: max-sentence-length
+    line: 23
+    text: The fact that the NSA wanted to be able
+    message: This sentence runs 69 words (limit 45)
+    verdict: correct
+    note: a 69-word sentence
+  - rule: contraction-consistency
+    line: 25
+    text: This argument was so indisputable, it's
+    message: "\"cannot\" is written \"can't\" elsewhere in the document"
+    verdict: false-positive
+    note: '"You cannot make..." is a quoted slogan; the quotation keeps its own wording'
+  - rule: max-sentence-length
+    line: 29
+    text: The most spectacular example is unquesti
+    message: This sentence runs 98 words (limit 45)
+    verdict: correct
+    note: a 98-word sentence
+  - rule: max-sentence-length
+    line: 45
+    text: "This isn't a hypothetical: it's somethin"
+    message: This sentence runs 66 words (limit 45)
+    verdict: correct
+    note: a 66-word sentence
+  - rule: max-sentence-length
+    line: 49
+    text: We can't make computer users more secure
+    message: This sentence runs 53 words (limit 45)
+    verdict: correct
+    note: a 53-word sentence
+  - rule: unused-definition
+    line: 55
+    text: '"digital sovereignty" means "making ever'
+    message: '"digital sovereignty" is defined but never used'
+    verdict: false-positive
+    note: a sarcastic gloss of what a slogan has come to mean, not a term the essay defines for later use
+  - rule: unknown-word
+    line: 63
+    text: "doxing whole countries:"
+    message: '"doxing" is not in the dictionary; did you mean "doing"?'
+    verdict: false-positive
+    note: '"doxing" is a standard word (in major dictionaries)'
+  - rule: contraction-consistency
+    line: 67
+    text: "The USA is the worst offender here: it i"
+    message: "\"it is\" is written \"it's\" elsewhere in the document"
+    verdict: correct
+    note: "\"it is\" where the essay otherwise contracts it's"
+  - rule: max-sentence-length
+    line: 75
+    text: From Flock cameras to ICE's use of Googl
+    message: This sentence runs 48 words (limit 45)
+    verdict: correct
+    note: a 48-word sentence
+  - rule: max-sentence-length
+    line: 81
+    text: These arms-dealers practice NOBUS-by-pro
+    message: This sentence runs 69 words (limit 45)
+    verdict: correct
+    note: a 69-word sentence
+  - rule: max-sentence-length
+    line: 87
+    text: Rather than fix these systems, our gover
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+    note: a 47-word sentence
+  - rule: wordy-phrase
+    line: 87
+    text: Rather than fix these systems, our gover
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: '"in order to" can be "to"'
+  - rule: max-sentence-length
+    line: 95
+    text: The way this rootkit did so was depraved
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+    note: a 51-word sentence
+  - rule: max-sentence-length
+    line: 99
+    text: "Even worse: after the scandal broke, sec"
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence
+  - rule: contraction-consistency
+    line: 105
+    text: If you have just a little object permane
+    message: "\"they are\" is written \"they're\" elsewhere in the document"
+    verdict: correct
+    note: "\"they are\" where the essay otherwise writes they're"
+  - rule: max-sentence-length
+    line: 105
+    text: If you have just a little object permane
+    message: This sentence runs 64 words (limit 45)
+    verdict: correct
+    note: a 64-word sentence

@@ -1,0 +1,165 @@
+id: fed-waller-2026-10-01-fred-takes-on-ai
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 15
+    text: In the 17 years that I have spent in dif
+    message: This sentence runs 46 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 15
+    text: Thank you, Keith, and while it is always
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 17
+    text: A crucial reason for that reputation and
+    message: This sentence runs 58 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 19
+    text: The backdrop for our discussion is the t
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 19
+    text: We open a new chapter in that endeavor a
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 21
+    text: A telephone answering machine later fiel
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 21
+    text: In 1961, St. Louis Fed Research Director
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 21
+    text: Technological leaps, in fact, have alway
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 23
+    text: In recognition of this preeminence, and
+    message: This sentence runs 40 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 23
+    text: Through all that time, the core value of
+    message: This sentence runs 53 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-paragraph-length
+    line: 27
+    text: But that is not all we are seeing. Unlik
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: a six-sentence paragraph
+  - rule: unknown-word
+    line: 27
+    text: noire for economists and statisticians—c
+    message: '"noire" is not in the dictionary; did you mean "noise"?'
+    verdict: false-positive
+    note: '"bête noire" is a standard French loan phrase'
+  - rule: max-paragraph-length
+    line: 29
+    text: Another challenge that we are dealing wi
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: a six-sentence paragraph
+  - rule: max-sentence-length
+    line: 29
+    text: Despite occasional problems of misattrib
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 29
+    text: One challenge for us in understanding th
+    message: This sentence runs 36 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-paragraph-length
+    line: 31
+    text: In response to these challenges and oppo
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph
+  - rule: max-sentence-length
+    line: 31
+    text: And that means the FRED team must adapt
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 31
+    text: Using the Model Context Protocol (MCP),
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 33
+    text: For example, when researching data relat
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 33
+    text: In addition to creating that new archite
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 33
+    text: Likewise, while FRED holds current data,
+    message: This sentence runs 47 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 35
+    text: It is an opportunity to explore the "now
+    message: This sentence runs 32 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 35
+    text: Panels today will get into all of this a
+    message: This sentence runs 33 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: oxford-comma-consistency
+    line: 35
+    text: Panels today will get into all of this a
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: false-positive
+    note: '"questions and issues and use cases" is a polysyndeton series with no commas, not a list that drops the serial comma'
+  - rule: max-sentence-length
+    line: 37
+    text: On behalf of the FRED team, we are looki
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 37
+    text: Our market economy depends on informatio
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 37
+    text: With FRED, ALFRED, and FRASER, the St. L
+    message: This sentence runs 37 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)

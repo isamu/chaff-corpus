@@ -1,0 +1,332 @@
+id: arxiv-2610-17068-fact-check-true
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 7
+    text: "###### Abstract"
+    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
+    verdict: false-positive
+    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
+  - rule: max-paragraph-length
+    line: 9
+    text: Misperceptions can run in two directions
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a ten-sentence abstract paragraph
+  - rule: unqualified-superlative
+    line: 13
+    text: Fact-checking has become the most promin
+    message: '"the most" has nothing to compare against (4 such claims)'
+    verdict: false-positive
+    note: '"the most prominent intervention for combating online misinformation" names its set'
+  - rule: quote-style-consistency
+    line: 19
+    text: “not misleading” verdicts but presents n
+    message: Quote marks are written two ways in this document (70 curly, 104 straight)
+    verdict: correct
+    note: "quote marks are mixed: curly and straight double quotes across the text"
+  - rule: redundant-expression
+    line: 19
+    text: Despite these concerns, evidence on the
+    message: '"true fact" says the same thing twice'
+    verdict: false-positive
+    note: "\"true fact-check\" is the paper's term (a fact-check whose verdict is true), not a tautology"
+  - rule: redundant-expression
+    line: 21
+    text: Existing studies of true fact-checks hav
+    message: '"true fact" says the same thing twice'
+    verdict: false-positive
+    note: "\"true fact-check\" is the paper's term (a fact-check whose verdict is true), not a tautology"
+  - rule: unqualified-superlative
+    line: 23
+    text: With this data, we are able to estimate
+    message: '"the most" has nothing to compare against (4 such claims)'
+    verdict: false-positive
+    note: '"the most well-known crowdsourced moderation system" names its set'
+  - rule: contraction-consistency
+    line: 37
+    text: These notes were not always excluded, wi
+    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
+    verdict: false-positive
+    note: the contraction is inside a quoted platform label (Tweet doesn’t need a note)
+  - rule: hyphen-as-dash
+    line: 37
+    text: " - Tweet doesn’t need a note’ ” (X Corp."
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the spaced hyphen is inside a quoted platform label, reproduced verbatim
+  - rule: date-format-consistency
+    line: 43
+    text: 28 February 2026.33 3 The population fro
+    message: The date "28 February 2026" is written differently from 10 other dates in the document (such as "October 3, 2022")
+    verdict: correct
+    note: '"1 January and 28 February 2026" where the paper otherwise writes month-first dates'
+  - rule: max-paragraph-length
+    line: 43
+    text: To assemble our dataset, we collected a
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a ten-sentence paragraph
+  - rule: unbalanced-bracket
+    line: 43
+    text: ”. These replies come from a Sprinklr ex
+    message: '"”" closes nothing that was opened'
+    verdict: correct
+    note: "a stray closing quote after the parenthesised query string: it closes nothing"
+  - rule: ngram-repetition
+    line: 45
+    text: This restriction had a negligible effect
+    message: '"posts Grok judged true" appears 7 times (limit 5)'
+    verdict: false-positive
+    note: "\"posts Grok judged true\" is the paper's measured quantity; repeating it keeps the measure exact"
+  - rule: orthographic-variant
+    line: 49
+    text: crowd-sourced queries and corrections.
+    message: '"crowd-sourced" here, where the document usually writes "crowdsourced" (1 of 6)'
+    verdict: correct
+    note: '"crowd-sourced" once where the paper writes "crowdsourced" elsewhere'
+  - rule: figure-reference-order
+    line: 53
+    text: Table 1 lists each restriction implied b
+    message: Table 1 is first referred to after Table 11
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: contraction-consistency
+    line: 61
+    text: To ensure this isn’t responsible for our
+    message: "\"isn't\" is written \"is not\" elsewhere in the document"
+    verdict: correct
+    note: "\"isn't\" where the paper otherwise writes \"is not\""
+  - rule: max-paragraph-length
+    line: 61
+    text: The LLM Claude (claude-haiku-4-5) was us
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a ten-sentence paragraph
+  - rule: percent-sum-mismatch
+    line: 61
+    text: 51.4% to 53.2% and changes no other resu
+    message: The shares add up to 106.6%, not 100%
+    verdict: false-positive
+    note: '"from 51.4% to 53.2%" is a change of one share, not shares of a whole'
+  - rule: figure-reference-order
+    line: 65
+    text: Table 10). As a check on whether these v
+    message: Table 10 is first referred to after Table 11
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: unqualified-superlative
+    line: 69
+    text: To see whether doubt, verification, and/
+    message: '"the best" has nothing to compare against (4 such claims)'
+    verdict: false-positive
+    note: '"the best-scoring one" names its set (the topics scored)'
+  - rule: unknown-word
+    line: 87
+    text: propositional content. Disputes over a p
+    message: '"propositional" is not in the dictionary; did you mean "prepositional"?'
+    verdict: false-positive
+    note: '"propositional" is a standard word'
+  - rule: max-paragraph-length
+    line: 91
+    text: Every post in the final sample was quest
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a ten-sentence paragraph
+  - rule: figure-reference-order
+    line: 99
+    text: Table 8.
+    message: Table 8 is first referred to after Table 14
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 107
+    text: Table 2). Figure 5 compares the annual c
+    message: Table 2 is first referred to after Table 14
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 109
+    text: Table 7). 1616 16 Across the full releas
+    message: Table 7 is first referred to after Table 14
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 109
+    text: Table 9).
+    message: Table 9 is first referred to after Table 14
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: max-paragraph-length
+    line: 109
+    text: Grok judged 51.4% of the queried posts t
+    message: This paragraph runs 11 sentences (limit 9)
+    verdict: correct
+    note: an eleven-sentence paragraph
+  - rule: figure-reference-order
+    line: 121
+    text: Table 3 divides the queried posts by top
+    message: Table 3 is first referred to after Table 14
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: unqualified-superlative
+    line: 131
+    text: While comparison between Grok and Commun
+    message: '"the most" has nothing to compare against (4 such claims)'
+    verdict: false-positive
+    note: '"the most common form of debunking used at scale" names its set'
+  - rule: orthographic-variant
+    line: 155
+    text: factors behind fact-checkers’ selection
+    message: '"factors" here, where the document usually writes "FACTors" (1 of 10)'
+    verdict: false-positive
+    note: FACTors is a named term elsewhere; here "factors" is an ordinary word in a cited title
+  - rule: date-format-consistency
+    line: 171
+    text: "2026-09-15 Cited by: §2.2, footnote 2."
+    message: The date "2026-09-15" is written differently from 10 other dates in the document (such as "October 3, 2022")
+    verdict: false-positive
+    note: an ISO date in a reference note (commit or access date), not the prose's date style
+  - rule: date-format-consistency
+    line: 172
+    text: "2026-08-20 Cited by: Appendix A."
+    message: The date "2026-08-20" is written differently from 10 other dates in the document (such as "October 3, 2022")
+    verdict: false-positive
+    note: an ISO date in a reference note (commit or access date), not the prose's date style
+  - rule: number-style-consistency
+    line: 172
+    text: "2704b2d. Note: https://github.com/twitte"
+    message: '"2704" here, where the document usually writes large numbers like "47,899" (2 of 29)'
+    verdict: false-positive
+    note: '"2704b2d" is a git commit hash, not a number'
+  - rule: number-style-consistency
+    line: 178
+    text: 2704b2d of the public repository on Augu
+    message: '"2704" here, where the document usually writes large numbers like "47,899" (2 of 29)'
+    verdict: false-positive
+    note: '"2704b2d" is a git commit hash, not a number'
+  - rule: max-paragraph-length
+    line: 190
+    text: You are coding X (Twitter) threads in wh
+    message: This paragraph runs 14 sentences (limit 9)
+    verdict: false-positive
+    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
+  - rule: max-paragraph-length
+    line: 200
+    text: You are a fact-checker. You will be show
+    message: This paragraph runs 15 sentences (limit 9)
+    verdict: false-positive
+    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
+  - rule: max-paragraph-length
+    line: 204
+    text: You are shown a post from X and a Commun
+    message: This paragraph runs 11 sentences (limit 9)
+    verdict: false-positive
+    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
+  - rule: quote-without-source
+    line: 204
+    text: core_claim_false" | "peripheral_detail"
+    message: '"core_claim_false" is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: false-positive
+    note: the quoted strings are the allowed label values of the coding prompt, not quotations
+  - rule: spelling-consistency
+    line: 204
+    text: characterise what the displayed note is
+    message: '"characterise" here, where the document usually spells it "characterize" (1 of 13)'
+    verdict: correct
+    note: the authors' prompt writes "characterise" where the paper writes "characterize"
+  - rule: figure-reference-order
+    line: 208
+    text: Table 4 reports agreement between the tw
+    message: Table 4 is first referred to after Table 16
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 214
+    text: Table 5 cross-tabulates Grok’s verdict w
+    message: Table 5 is first referred to after Table 16
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 226
+    text: Table 6). In 57.3% of cases the note ass
+    message: Table 6 is first referred to after Table 16
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: figure-reference-order
+    line: 254
+    text: Table 13 shows that the share of posts G
+    message: Table 13 is first referred to after Table 16
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: max-paragraph-length
+    line: 254
+    text: Table 12 repeats the main coverage measu
+    message: This paragraph runs 11 sentences (limit 9)
+    verdict: correct
+    note: an eleven-sentence paragraph
+  - rule: figure-reference-order
+    line: 266
+    text: Table 15, and a post that matches no lis
+    message: Table 15 is first referred to after Table 16
+    verdict: false-positive
+    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
+  - rule: unknown-word
+    line: 274
+    text: palestin*, gaza, iran*, china, taiwan, h
+    message: '"palestin" is not in the dictionary; did you mean "palestine"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 274
+    text: russi*, israel*, palestin*, gaza, iran*,
+    message: '"russi" is not in the dictionary; did you mean "russia"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 274
+    text: ukrain*, russi*, israel*, palestin*, gaz
+    message: '"ukrain" is not in the dictionary; did you mean "ukraine"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 278
+    text: biden, government, governor, white house
+    message: '"biden" is not in the dictionary; did you mean "bidet"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 282
+    text: vaccin*, covid, virus, disease, drug, au
+    message: '"vaccin" is not in the dictionary; did you mean "vaccine"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 286
+    text: terroris*, illegal
+    message: '"terroris" is not in the dictionary; did you mean "terrors"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 286
+    text: traffick*, assault, rape, shooting, terr
+    message: '"traffick" is not in the dictionary; did you mean "traffic"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 290
+    text: econom*, inflation, market, stock*, bitc
+    message: '"econom" is not in the dictionary; did you mean "economy"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: unknown-word
+    line: 298
+    text: iphone, android, tesla, internet, comput
+    message: '"iphone" is not in the dictionary; did you mean "phone"?'
+    verdict: false-positive
+    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
+  - rule: agreement-slip
+    line: 23
+    what: '"these flagged post": a plural determiner before a singular noun'
+    verdict: missed
+    note: neither the pinned chaff nor lab main reports it; the adjective between determiner and noun may hide it

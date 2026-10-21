@@ -1,0 +1,129 @@
+id: chrg-119hhrg61765-defense-intelligence-posture-2025
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 57
+    text: DEREK VAN ORDEN, Wisconsin           GIL
+    message: '"DEREK VAN ORDEN" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 145
+    text: OPENING STATEMENT OF HON. RONNY JACKSON,
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 145
+    text: RONNY JACKSON, A REPRESENTATIVE FROM
+    message: '"RONNY JACKSON, A REPRESENTATIVE FROM" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: spelling-consistency
+    line: 167
+    text: cancelled tomorrow so folks are preparin
+    message: '"cancelled" here, where the document usually spells it "canceled" (1 of 42)'
+    verdict: correct
+    note: '"cancelled" once where the transcript writes "canceled" elsewhere'
+  - rule: all-caps-shouting
+    line: 291
+    text: JASON CROW, A REPRESENTATIVE FROM COLORA
+    message: '"JASON CROW, A REPRESENTATIVE FROM COLORADO" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 291
+    text: STATEMENT OF HON. JASON CROW, A REPRESEN
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 425
+    text: STATEMENT OF MR. DUSTIN J. GARD-WEISS, P
+    message: '"STATEMENT OF MR" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 425
+    text: WEISS, PERFORMING THE DUTIES OF
+    message: '"WEISS, PERFORMING THE DUTIES OF" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 589
+    text: STATEMENT OF LIEUTENANT GENERAL WILLIAM
+    message: '"STATEMENT OF LIEUTENANT GENERAL WILLIAM J" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 591
+    text: PERFORMING THE DUTIES OF
+    message: '"PERFORMING THE DUTIES OF" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 719
+    text: STATEMENT OF LIEUTENANT GENERAL JEFFREY
+    message: '"STATEMENT OF LIEUTENANT GENERAL JEFFREY A" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: hyphen-as-dash
+    line: 1977
+    text: " - Khorasan, as being the"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the hyphen joins the group's name (ISIS-Khorasan), not a dash in a sentence
+  - rule: redundant-expression
+    line: 2095
+    text: Congressman, I refer back to my statemen
+    message: '"refer back" says the same thing twice'
+    verdict: correct
+    note: '"refer back" can be "refer"'
+  - rule: redundant-expression
+    line: 2099
+    text: I was referring back to your statement,
+    message: '"refer back" says the same thing twice'
+    verdict: correct
+    note: '"referring back" can be "referring"'
+  - rule: unknown-word
+    line: 2499
+    text: intel
+    message: '"intel" is not in the dictionary; did you mean "inter"?'
+    verdict: false-positive
+    note: '"intel" is a standard short form in intelligence usage'
+  - rule: all-caps-shouting
+    line: 2591
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. M
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 2637
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. K
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: hyphen-as-dash
+    line: 2649
+    text: " - is a vital part"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen closing a dash-delimited aside
+  - rule: hyphen-as-dash
+    line: 2717
+    text: " - is a vital part"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen closing a dash-delimited aside
+  - rule: all-caps-shouting
+    line: 2733
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. H
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
+  - rule: hyphen-as-dash
+    line: 2793
+    text: " - replacing"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
