@@ -1,0 +1,189 @@
+id: chrg-119hhrg62934-strategic-forces-posture-fy2026
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 15
+    text: FOR FISCAL YEAR 2026
+    message: '"FOR FISCAL YEAR" is written in capitals'
+    verdict: false-positive
+    note: the printed hearing's title page sets the title in capitals
+  - rule: all-caps-shouting
+    line: 37
+    text: STRATEGIC FORCES POSTURE HEARING
+    message: '"STRATEGIC FORCES POSTURE HEARING" is written in capitals'
+    verdict: false-positive
+    note: the printed hearing's title in capitals
+  - rule: all-caps-shouting
+    line: 49
+    text: GOVERNMENT PUBLISHING OFFICE
+    message: '"GOVERNMENT PUBLISHING OFFICE" is written in capitals'
+    verdict: false-positive
+    note: the printer's imprint on the title page in capitals
+  - rule: orthographic-variant
+    line: 57
+    text: DesJARLAIS, Tennessee, Chairman
+    message: '"DesJARLAIS" here, where the document usually writes "DesJarlais" (1 of 36)'
+    verdict: false-positive
+    note: the roster's capitals form of the chairman's name (DesJARLAIS), the GPO convention for names; not a variant spelling
+  - rule: all-caps-shouting
+    line: 65
+    text: DERRICK VAN ORDEN, Wisconsin         GAB
+    message: '"DERRICK VAN ORDEN" is written in capitals'
+    verdict: false-positive
+    note: the committee roster sets members' names in capitals by GPO convention
+  - rule: doubled-punctuation
+    line: 103
+    text: ",.....     6"
+    message: 'Punctuation is doubled: ",....."'
+    verdict: false-positive
+    note: the dot leader of a contents line (the comma before it is a stray, but the dots are the leader)
+  - rule: doubled-punctuation
+    line: 105
+    text: ..     7
+    message: 'Punctuation is doubled: ".."'
+    verdict: false-positive
+    note: a short dot leader of a contents line after an abbreviation
+  - rule: all-caps-shouting
+    line: 137
+    text: STRATEGIC FORCES POSTURE HEARING
+    message: '"STRATEGIC FORCES POSTURE HEARING" is written in capitals'
+    verdict: false-positive
+    note: the printed hearing's title in capitals above the transcript
+  - rule: name-variant
+    line: 151
+    text: Scott DesJarlais
+    message: '"Scott DesJarlais" is written "SCOTT DesJARLAIS" elsewhere in the document (case, width or punctuation)'
+    verdict: false-positive
+    note: the same name in the roster's capitals convention; not a variant
+  - rule: all-caps-shouting
+    line: 155
+    text: OPENING STATEMENT OF HON. SCOTT DESJARLA
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 155
+    text: SCOTT DESJARLAIS, A REPRESENTATIVE
+    message: '"SCOTT DESJARLAIS, A REPRESENTATIVE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 309
+    text: SETH MOULTON, A REPRESENTATIVE FROM
+    message: '"SETH MOULTON, A REPRESENTATIVE FROM" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 309
+    text: STATEMENT OF HON. SETH MOULTON, A REPRES
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 587
+    text: JOHN HILL, PERFORMING THE DUTIES OF THE
+    message: '"JOHN HILL, PERFORMING THE DUTIES OF THE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 587
+    text: STATEMENT OF MR. JOHN HILL, PERFORMING T
+    message: '"STATEMENT OF MR" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 675
+    text: COTTON, COMMANDER, UNITED
+    message: '"COTTON, COMMANDER, UNITED" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 675
+    text: STATEMENT OF GENERAL ANTHONY J. COTTON,
+    message: '"STATEMENT OF GENERAL ANTHONY J" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 737
+    text: STATEMENT OF GENERAL STEPHEN N. WHITING,
+    message: '"STATEMENT OF GENERAL STEPHEN N" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 737
+    text: WHITING, COMMANDER, UNITED
+    message: '"WHITING, COMMANDER, UNITED" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 829
+    text: GUILLOT, UNITED STATES NORTHERN
+    message: '"GUILLOT, UNITED STATES NORTHERN" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: all-caps-shouting
+    line: 829
+    text: STATEMENT OF GENERAL GREGORY M. GUILLOT,
+    message: '"STATEMENT OF GENERAL GREGORY M" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing sets statement headings in capitals by convention; a heading, not emphasis
+  - rule: unknown-word
+    line: 1701
+    text: flyout of the B-21. So 145 is what I am
+    message: '"flyout" is not in the dictionary; did you mean "flout"?'
+    verdict: false-positive
+    note: "'flyout', the military term for a fleet's planned production"
+  - rule: name-variant
+    line: 2073
+    text: Commad if those
+    message: '"Commad" is one letter away from "Command", which the document uses more than once'
+    verdict: correct
+    note: "'Commad' is a typo for Command"
+  - rule: redundant-expression
+    line: 2349
+    text: execute those each and every day.
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+    note: "'each and every' says the same thing twice"
+  - rule: unknown-word
+    line: 2713
+    text: stats of the AUKUS Agreement right
+    message: '"stats" is not in the dictionary; did you mean "state"?'
+    verdict: correct
+    note: "'the stats of the AUKUS Agreement' is a slip for 'status'"
+  - rule: redundant-expression
+    line: 2773
+    text: We think this issue is so significant th
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+    note: "'each and every' says the same thing twice"
+  - rule: all-caps-shouting
+    line: 3109
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. W
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a heading for the questions for the record, in capitals by GPO convention
+  - rule: hyphen-as-dash
+    line: 3139
+    text: " - and"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash in a written answer for the record
+  - rule: hyphen-as-dash
+    line: 3141
+    text: " - ambiguous is that we will protect our"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash in a written answer for the record
+  - rule: all-caps-shouting
+    line: 3191
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. M
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a heading for the questions for the record, in capitals by GPO convention
+  - rule: all-caps-shouting
+    line: 3241
+    text: RESPONSE TO QUESTIONS SUBMITTED BY MR. B
+    message: '"RESPONSE TO QUESTIONS SUBMITTED BY MR" is written in capitals'
+    verdict: false-positive
+    note: a heading for the questions for the record, in capitals by GPO convention

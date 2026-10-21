@@ -1,0 +1,345 @@
+id: fr-2026-20427-ibogaine-trials-rfi
+chaff: 0.36.0
+findings:
+  - rule: undefined-acronym
+    line: 6
+    text: CFR title and the number of each part th
+    message: '"CFR" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: undefined-acronym
+    line: 8
+    text: RIN which identifies each regulatory act
+    message: '"RIN" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
+  - rule: max-sentence-length
+    line: 28
+    text: FDA is building on the guidance for indu
+    message: This sentence runs 58 words (limit 45)
+    verdict: correct
+    note: a 58-word sentence
+  - rule: undefined-acronym
+    line: 28
+    text: FDA or the Agency) is describing the app
+    message: '"FDA" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: "expanded in the same sentence: 'The Food and Drug Administration (FDA or the Agency)'"
+  - rule: heading-level-skip
+    line: 40
+    text: "### Electronic Submissions"
+    message: Heading "Electronic Submissions" goes from level 1 to level 3 (expected 2)
+    verdict: correct
+    note: the page really goes from the h1 ADDRESSES to an h3
+  - rule: max-sentence-length
+    line: 44
+    text: Because your comment will be made public
+    message: This sentence runs 54 words (limit 45)
+    verdict: correct
+    note: a 54-word sentence
+  - rule: all-caps-shouting
+    line: 58
+    text: THIS DOCUMENT CONTAINS CONFIDENTIAL INFO
+    message: '"THIS DOCUMENT CONTAINS CONFIDENTIAL INFORMATION" is written in capitals'
+    verdict: false-positive
+    note: a label the notice asks submitters to write in capitals, quoted
+  - rule: invisible-character
+    line: 58
+    text: ​2015-23389.pdf.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 58
+    text: ​content/​pkg/​FR-2015-09-18/​pdf/​2015-
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 58
+    text: ​FR-2015-09-18/​pdf/​2015-23389.pdf.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 58
+    text: ​pdf/​2015-23389.pdf.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 58
+    text: ​pkg/​FR-2015-09-18/​pdf/​2015-23389.pdf
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: undefined-acronym
+    line: 58
+    text: FR 56469, September 18, 2015, or access
+    message: '"FR" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: the standard citation of the Federal Register (80 FR 56469), not an acronym the text should expand
+  - rule: max-sentence-length
+    line: 60
+    text: "Docket: For access to the docket to read"
+    message: This sentence runs 52 words (limit 45)
+    verdict: correct
+    note: a 52-word sentence
+  - rule: max-sentence-length
+    line: 74
+    text: Executive Order 14401 establishes a poli
+    message: This sentence runs 52 words (limit 45)
+    verdict: correct
+    note: a 52-word sentence
+  - rule: undefined-acronym
+    line: 82
+    text: ARPA-H), is funding a program to collect
+    message: '"ARPA" is used without an expansion (7 such acronyms)'
+    verdict: false-positive
+    note: "expanded right before it: 'Advanced Research Projects Agency for Health (ARPA-H)'"
+  - rule: max-sentence-length
+    line: 84
+    text: FDA has identified serious safety risks
+    message: This sentence runs 61 words (limit 45)
+    verdict: correct
+    note: a 61-word sentence
+  - rule: max-sentence-length
+    line: 98
+    text: Through its current research funding, an
+    message: This sentence runs 60 words (limit 45)
+    verdict: correct
+    note: a 60-word sentence
+  - rule: max-paragraph-length
+    line: 102
+    text: Some drugs delay cardiac repolarization,
+    message: This paragraph runs 11 sentences (limit 5)
+    verdict: correct
+    note: an 11-sentence paragraph
+  - rule: max-sentence-length
+    line: 102
+    text: After several drugs were withdrawn from
+    message: This sentence runs 56 words (limit 45)
+    verdict: correct
+    note: a 56-word sentence
+  - rule: max-sentence-length
+    line: 102
+    text: Because TdP occurs in a minority of pati
+    message: This sentence runs 48 words (limit 45)
+    verdict: correct
+    note: a 48-word sentence
+  - rule: max-paragraph-length
+    line: 106
+    text: Under section 505(d) of the FD&C Act (21
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph
+  - rule: max-sentence-length
+    line: 106
+    text: Risks, such as substantial QTc prolongat
+    message: This sentence runs 57 words (limit 45)
+    verdict: correct
+    note: a 57-word sentence
+  - rule: max-sentence-length
+    line: 106
+    text: Under section 505(d) of the FD&C Act (21
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+    note: a 46-word sentence
+  - rule: wordy-phrase
+    line: 106
+    text: The benefit-risk assessment may take int
+    message: '"take into consideration" can be said in fewer words'
+    verdict: correct
+    note: "'take into consideration' for 'consider'"
+  - rule: max-sentence-length
+    line: 120
+    text: However, based on a thorough review of a
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+    note: a 46-word sentence
+  - rule: max-sentence-length
+    line: 122
+    text: Several of the elements described below
+    message: This sentence runs 80 words (limit 45)
+    verdict: correct
+    note: an 80-word sentence
+  - rule: orthographic-variant
+    line: 132
+    text: pretreatment, such as with intravenous m
+    message: '"pretreatment" here, where the document usually writes "pre-treatment" (1 of 4)'
+    verdict: correct
+    note: "'pretreatment' once beside 'pre-treatment' three times"
+  - rule: max-sentence-length
+    line: 138
+    text: In study designs FDA is contemplating, t
+    message: This sentence runs 52 words (limit 45)
+    verdict: correct
+    note: a 52-word sentence
+  - rule: unknown-word
+    line: 146
+    text: paroxetine, sertraline). Any medications
+    message: '"paroxetine" is not in the dictionary; did you mean "paroxetime"?'
+    verdict: false-positive
+    note: paroxetine, a drug name
+  - rule: undefined-acronym
+    line: 164
+    text: ECG without QTc prolongation. Upon physi
+    message: '"ECG" is used without an expansion (7 such acronyms)'
+    verdict: correct
+    note: ECG is never expanded (the notice writes 'electrocardiogram' elsewhere but never ties the two)
+  - rule: heading-level-skip
+    line: 198
+    text: "#### (1) General Study Design Considerat"
+    message: Heading "(1) General Study Design Considerations" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+    note: the page goes from an h2 to an h4 for the numbered question groups
+  - rule: undefined-acronym
+    line: 206
+    text: MTD? Doses ranging from 5 to 20 mg/kg ha
+    message: '"MTD" is used without an expansion (7 such acronyms)'
+    verdict: correct
+    note: MTD (maximum tolerated dose) is never expanded
+  - rule: wordy-phrase
+    line: 208
+    text: What animal pharmacokinetic data, if any
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: "'in order to' for 'to'"
+  - rule: max-sentence-length
+    line: 212
+    text: Given the significant limitations of pub
+    message: This sentence runs 63 words (limit 45)
+    verdict: correct
+    note: a 63-word question
+  - rule: max-sentence-length
+    line: 216
+    text: Potential safety monitoring requirements
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence
+  - rule: max-sentence-length
+    line: 218
+    text: Given cardiac safety requirements ( e.g.
+    message: This sentence runs 51 words (limit 45)
+    verdict: correct
+    note: a 51-word question
+  - rule: unknown-word
+    line: 226
+    text: arrythmia risks?
+    message: '"arrythmia" is not in the dictionary; did you mean "arrhythmia"?'
+    verdict: correct
+    note: "'arrythmia' misspells arrhythmia"
+  - rule: max-sentence-length
+    line: 228
+    text: What enrollment criteria would best mini
+    message: This sentence runs 55 words (limit 45)
+    verdict: correct
+    note: a 55-word question
+  - rule: max-sentence-length
+    line: 230
+    text: Potential safety monitoring requirements
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+    note: a 46-word sentence
+  - rule: max-sentence-length
+    line: 244
+    text: FDA is not seeking comments on the follo
+    message: This sentence runs 107 words (limit 45)
+    verdict: correct
+    note: a 107-word sentence listing what FDA does not seek comment on
+  - rule: invisible-character
+    line: 268
+    text: ​161198/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 268
+    text: ​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 268
+    text: ​media/​161198/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 270
+    text: ​88915/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 270
+    text: ​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 270
+    text: ​media/​88915/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 272
+    text: ​169090/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 272
+    text: ​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 272
+    text: ​media/​169090/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 274
+    text: ​72309/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 274
+    text: ​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 274
+    text: ​media/​72309/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 276
+    text: ​170814/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 276
+    text: ​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: invisible-character
+    line: 276
+    text: ​media/​170814/​download.
+    message: "1 zero-width character (U+200B): search and copy break the word here"
+    verdict: correct
+    note: the source puts zero-width spaces inside the URL; copying it gives a broken address
+  - rule: numbering-gap
+    line: 276
+    text: 11. * U.S. Food and Drug Administration
+    message: '"11." follows "12." (expected number 13)'
+    verdict: correct
+    note: "the references are numbered 9, 10, 11, 12, 11: the last should be 13"

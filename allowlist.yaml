@@ -739,3 +739,15 @@
 - id: cao-kourei-wp-r06-s2-2-4-seikatsu-kankyo
   match: "0120-210-364"
   reason: the published number of 国際電話不取扱受付センター, a public service centre named in the white paper
+- id: fr-2026-19252-emf-rf-exposure-rfi
+  match: "OASH-RFI@hhs.gov"
+  reason: the role address of the HHS Office of the Assistant Secretary for Health for this request for information, published in the Federal Register notice
+- id: fr-2026-20427-ibogaine-trials-rfi
+  match: "240-402-7500"
+  reason: the published number of FDA's Dockets Management Staff, given in the Federal Register notice
+- id: fr-2026-20427-ibogaine-trials-rfi
+  match: "IbogaineRFI@fda.hhs.gov"
+  reason: the role address FDA set up for this request for information, published in the Federal Register notice
+- id: fr-2026-20427-ibogaine-trials-rfi
+  match: "855-543-3784"
+  reason: the published toll-free number of FDA's Center for Drug Evaluation and Research (Division of Drug Information), given in the Federal Register notice

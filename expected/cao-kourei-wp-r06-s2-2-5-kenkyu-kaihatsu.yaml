@@ -1,0 +1,267 @@
+id: cao-kourei-wp-r06-s2-2-5-kenkyu-kaihatsu
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 11
+    text: 科学技術の研究開発は、高齢化に伴う課題の解決に大きく寄与するものであることから、
+    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
+    verdict: false-positive
+    note: 「研究開発は」の述語「寄与するものである」はすぐ後にあり、文末の「図る」は別の主語（国）のもの
+  - rule: comparative-without-baseline
+    line: 13
+    text: より良い高齢社会を作ることに政府のみならず、学術面や産業面からも貢献できるよう環
+    message: 「より良い」は、何と比べているかが書かれていません
+    verdict: false-positive
+    note: 「より良い高齢社会」は今と比べる決まった言い方
+  - rule: nominalization
+    line: 13
+    text: 整備を行う。あわせて、高齢社会の課題を諸外国と共有し、連携して取組を進める。
+    message: 「整備を行う」は「整備する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「整備を行う」は「整備する」で足りる
+  - rule: bracket-nesting
+    line: 17
+    text: 供給面では、個人の健康・医療データ等（パーソナル・ヘルス・レコード（以下「PHR
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: false-positive
+    note: 略語の展開の括弧の中に「（以下「PHR」という。）」を置く公用文の決まった形
+  - rule: max-paragraph-length
+    line: 17
+    text: 公的保険外の予防・健康管理サービス等の振興及び社会実装に向け、需要・供給の両面か
+    message: この段落は 6 文あります（5 文まで）
+    verdict: correct
+    note: 六文の段落
+  - rule: no-doubled-joshi
+    line: 17
+    text: のベンチャー企業等のためのワンストップ相談窓口である「Healthcare In
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: no-doubled-joshi
+    line: 17
+    text: の活用促進等の需要面の支援を行った。供給面では、個人の健康・医療データ等（パーソ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: nominalization
+    line: 17
+    text: 支援を行った。供給面では、個人の健康・医療データ等（パーソナル・ヘルス・レコード
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「支援を行う」は「支援する」で足りる
+  - rule: undefined-acronym
+    line: 17
+    text: PFS／SIBの活用促進等の需要面の支援を行った。供給面では、個人の健康・医療デ
+    message: 「PFS」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: PFS は何の略かが書かれていない
+  - rule: undefined-acronym
+    line: 17
+    text: SIBの活用促進等の需要面の支援を行った。供給面では、個人の健康・医療データ等（
+    message: 「SIB」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: SIB は何の略かが書かれていない
+  - rule: max-sentence-length
+    line: 19
+    text: 高齢者事故対策や移動支援等の諸課題の解決に大きな期待がされている自動車の自動運転
+    message: この文は 150 文字あります（140 文字まで）
+    verdict: correct
+    note: 150 字の一文
+  - rule: nominalization
+    line: 19
+    text: 促進を実施したほか、自動運転の社会実装に向けた取組を行う地方自治体に対して支援を
+    message: 「促進を実施する」は「促進する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「促進を実施する」は「促進する」で足りる
+  - rule: nominalization
+    line: 19
+    text: 支援を行うとともに、自動運転サービスの実証実験における技術的支援を行った。
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「支援を行う」は「支援する」で足りる
+  - rule: nominalization
+    line: 19
+    text: 支援を行った。
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「支援を行う」は「支援する」で足りる
+  - rule: max-sentence-length
+    line: 21
+    text: また、介護ロボットについては、開発・普及の加速化を図るため、①ニーズ側・シーズ側
+    message: この文は 272 文字あります（140 文字まで）
+    verdict: correct
+    note: 272 字の一文（①〜の列挙を含む）
+  - rule: max-ten
+    line: 21
+    text: また、介護ロボットについては、開発・普及の加速化を図るため、①ニーズ側・シーズ側
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+    note: 一文に読点が 7 個
+  - rule: undefined-acronym
+    line: 21
+    text: ICT等の導入費用に対する助成に加え、生産性向上の取組等による職場環境の改善を推
+    message: 「ICT」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: ICT は何の略かが節の中で書かれていない
+  - rule: max-sentence-length
+    line: 29
+    text: がん研究については、「がん対策推進基本計画」に基づき策定された「がん研究10か年
+    message: この文は 180 文字あります（140 文字まで）
+    verdict: correct
+    note: 180 字の一文
+  - rule: max-sentence-length
+    line: 29
+    text: 令和5年3月に閣議決定された第4期がん対策推進基本計画は、「がん予防」、「がん医
+    message: この文は 210 文字あります（140 文字まで）
+    verdict: correct
+    note: 210 字の一文
+  - rule: max-ten
+    line: 29
+    text: 令和5年3月に閣議決定された第4期がん対策推進基本計画は、「がん予防」、「がん医
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: correct
+    note: 一文に読点が 9 個
+  - rule: topic-predicate-distance
+    line: 29
+    text: 令和5年3月に閣議決定された第4期がん対策推進基本計画は、「がん予防」、「がん医
+    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
+    verdict: false-positive
+    note: 「基本計画は」の述語「柱とし」は 30 字ほど後にあり、文末の「進めてきた」は国のもの
+  - rule: nominalization
+    line: 35
+    text: 開発を行う必要がある。
+    message: 「開発を行う」は「開発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「開発を行う」は「開発する」で足りる
+  - rule: max-sentence-length
+    line: 39
+    text: また、関係各省や関連機関、企業、地域支援機関が連携し、開発初期段階から事業化に至
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: correct
+    note: 141 字の一文
+  - rule: repeated-sentence-ending
+    line: 39
+    text: また、関係各省や関連機関、企業、地域支援機関が連携し、開発初期段階から事業化に至
+    message: 「〜した」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: 「〜した。」で終わる文が続く（図った、支援した、支援した、実施した）
+  - rule: max-sentence-length
+    line: 41
+    text: また、国立研究開発法人新エネルギー・産業技術総合開発機構（NEDO）では、「科学
+    message: この文は 200 文字あります（140 文字まで）
+    verdict: correct
+    note: 200 字の一文
+  - rule: nominalization
+    line: 41
+    text: 支援を行っている。
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「支援を行う」は「支援する」で足りる
+  - rule: undefined-acronym
+    line: 41
+    text: SBIR制度の下、高齢者及び障害のある人の自立支援や介護者の負担軽減につながる福
+    message: 「SBIR」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: SBIR は何の略かが書かれていない
+  - rule: nominalization
+    line: 45
+    text: 助成を行った。
+    message: 「助成を行う」は「助成する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「助成を行う」は「助成する」で足りる
+  - rule: nominalization
+    line: 45
+    text: 開発を行う者に対する助成を行った。
+    message: 「開発を行う」は「開発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「開発を行う」は「開発する」で足りる
+  - rule: nominalization
+    line: 55
+    text: 調査を実施した。
+    message: 「調査を実施する」は「調査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「調査を実施する」は「調査する」で足りる
+  - rule: max-sentence-length
+    line: 57
+    text: また、国立研究開発法人科学技術振興機構が実施する社会技術研究開発事業において、高
+    message: この文は 251 文字あります（140 文字まで）
+    verdict: correct
+    note: 251 字の一文
+  - rule: nominalization
+    line: 57
+    text: 検証を行う研究開発を開始した。
+    message: 「検証を行う」は「検証する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「検証を行う」は「検証する」で足りる
+  - rule: max-sentence-length
+    line: 63
+    text: 「統計等データの提供等の判断のためのガイドライン」（平成30年4月27日EBPM
+    message: この文は 192 文字あります（140 文字まで）
+    verdict: correct
+    note: 192 字の一文
+  - rule: nominalization
+    line: 63
+    text: 調整を行うとともに、統計等データの提供等に関するユーザーからの要望・提案募集及び
+    message: 「調整を行う」は「調整する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「調整を行う」は「調整する」で足りる
+  - rule: undefined-acronym
+    line: 63
+    text: EBPM推進委員会決定）に基づき、各府省庁による統計等データの提供等が円滑に行わ
+    message: 「EBPM」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: EBPM は何の略かが書かれていない
+  - rule: max-sentence-length
+    line: 71
+    text: また、我が国は、G7、G20、TICAD、WHO総会、WHO西太平洋地域委員会、
+    message: この文は 148 文字あります（140 文字まで）
+    verdict: correct
+    note: 148 字の一文
+  - rule: teki-overuse
+    line: 71
+    text: また、我が国は、G7、G20、TICAD、WHO総会、WHO西太平洋地域委員会、
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 一文に「国際的」「基礎的」「積極的」
+  - rule: topic-predicate-distance
+    line: 71
+    text: また、我が国は、G7、G20、TICAD、WHO総会、WHO西太平洋地域委員会、
+    message: 「は」で出した主題から述語まで 136 字あります（80 字まで）
+    verdict: correct
+    note: 「我が国は」から述語「主張してきた」まで、会議の列挙と定義を挟んで 136 字
+  - rule: undefined-acronym
+    line: 71
+    text: TICAD、WHO総会、WHO西太平洋地域委員会、国連総会等の国際的な議論の場に
+    message: 「TICAD」が説明なしで使われています（説明のない略語 8 個）
+    verdict: correct
+    note: TICAD は何の略かが書かれていない
+  - rule: undefined-acronym
+    line: 71
+    text: WHO総会、WHO西太平洋地域委員会、国連総会等の国際的な議論の場において、全て
+    message: 「WHO」が説明なしで使われています（説明のない略語 8 個）
+    verdict: false-positive
+    note: WHO は一般に定着した略称で、白書の読者に説明は要らない
+  - rule: max-sentence-length
+    line: 75
+    text: 本会合では、ASEAN各国からの参加者や国内有識者と共に、誰もが生涯にわたり個人
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: correct
+    note: 145 字の一文
+  - rule: no-doubled-joshi
+    line: 75
+    text: の心身の機能の維持・向上のための地域や職域における取組の現状や課題等を共有し、こ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「の」が読点を挟まず三つ続く
+  - rule: nominalization
+    line: 75
+    text: 議論を行った。加えて、令和5年7月に「活力ある老後のための社会参加と健康管理政策
+    message: 「議論を行う」は「議論する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「議論を行う」は「議論する」で足りる
+  - rule: undefined-acronym
+    line: 75
+    text: ASEAN・日本社会保障ハイレベル会合を大分県で開催した。本会合では、ASEAN
+    message: 「ASEAN」が説明なしで使われています（説明のない略語 8 個）
+    verdict: false-positive
+    note: ASEAN は一般に定着した略称で、白書の読者に説明は要らない
