@@ -1,0 +1,171 @@
+id: arxiv-2609-05432-companion-ai-ethics
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "###### Abstract"
+    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
+    verdict: false-positive
+    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
+  - rule: citation-style-mix
+    line: 33
+    text: Parks and Floyd’s (1996) definition of i
+    message: The citation "Parks and Floyd’s (1996)" is written differently from the paper's other citations ("[57]" and others, 71 in all)
+    verdict: correct
+    note: one author-year citation in a paper that otherwise cites by number
+  - rule: max-paragraph-length
+    line: 37
+    text: As LLMs have increased in use, more rece
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a ten-sentence paragraph
+  - rule: orthographic-variant
+    line: 49
+    text: sEntiment Reasoner), a popular, open-sou
+    message: '"sEntiment" here, where the document usually writes "sentiment" (1 of 24)'
+    verdict: false-positive
+    note: '"sEntiment" is the capitalisation of the tool name VADER (Valence Aware Dictionary and sEntiment Reasoner)'
+  - rule: quote-style-consistency
+    line: 49
+    text: '"LOL"), and slang (e.g., "meh") to emoti'
+    message: Quote marks are written two ways in this document (73 curly, 52 straight)
+    verdict: correct
+    note: "quote marks are mixed: curly in most of the text, straight in the methods"
+  - rule: unbalanced-bracket
+    line: 49
+    text: ), acronyms (e.g., "LOL"), and slang (e.
+    message: '")" closes nothing that was opened'
+    verdict: false-positive
+    note: the ")" is part of the emoticon ":-)" quoted inside the parenthesis
+  - rule: wordy-phrase
+    line: 49
+    text: In order to analyse the data we made use
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: '"In order to analyse" can be "To analyse"'
+  - rule: date-format-consistency
+    line: 59
+    text: January 1, 2021. We use this time period
+    message: The date "January 1, 2021" is written differently from 4 other dates in the document (such as "01 January 2021")
+    verdict: correct
+    note: '"January 1, 2021" beside "01 January 2021" elsewhere'
+  - rule: wordy-phrase
+    line: 63
+    text: In order to analyse 14,081 user comments
+    message: '"in order to" can be said in fewer words'
+    verdict: correct
+    note: '"In order to analyse" can be "To analyse"'
+  - rule: contraction-consistency
+    line: 71
+    text: In analysing free-form text from a commu
+    message: "\"did not\" is written \"didn't\" elsewhere in the document"
+    verdict: false-positive
+    note: the contracted forms are only in the appendix keyword lists (search terms), not in the prose
+  - rule: wordy-phrase
+    line: 71
+    text: To address this, we combined quantitativ
+    message: '"take into consideration" can be said in fewer words'
+    verdict: correct
+    note: '"taken into consideration" can be "considered"'
+  - rule: heading-level-skip
+    line: 77
+    text: "##### On descriptive versus inferential"
+    message: Heading "On descriptive versus inferential statistics." goes from level 2 to level 5 (expected 3)
+    verdict: false-positive
+    note: a LaTeX run-in \paragraph heading that arXiv's HTML renders as h5
+  - rule: quote-without-source
+    line: 81
+    text: I’m heartbroken because he/she/they are
+    message: '"I’m heartbroken because he/she/they are broken." is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: false-positive
+    note: a hypothetical illustration of what a user might say, not a quotation of someone
+  - rule: quote-without-source
+    line: 81
+    text: This doesn’t work", an intimate user say
+    message: '"This doesn’t work" is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: false-positive
+    note: a hypothetical illustration of what a user might say, not a quotation of someone
+  - rule: empty-intensifier
+    line: 111
+    text: It is worth noting that corporate respon
+    message: '"it is worth noting that" emphasises without saying anything'
+    verdict: correct
+    note: '"It is worth noting that" adds nothing'
+  - rule: weasel-word
+    line: 183
+    text: While our findings are consistent with p
+    message: '"studies show" does not say who'
+    verdict: false-positive
+    note: '"previous studies showing" is followed by the citations [11, 49]'
+  - rule: acronym-expansion-conflict
+    line: 187
+    text: (FATE), developed largely in response to
+    message: '"FATE" is expanded as "Fairness, Accountability, Transparency and Explainability" here and as "fairness, accountability, transparency, and explainability" on line 7'
+    verdict: correct
+    note: FATE is expanded three different ways in the paper (capitals, serial comma, "explainable AI")
+  - rule: contraction-consistency
+    line: 195
+    text: The relationship between intimacy and tr
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: false-positive
+    note: the contracted forms are only in the appendix keyword lists (search terms), not in the prose
+  - rule: heading-level-skip
+    line: 199
+    text: "#### Corpus"
+    message: Heading "Corpus" goes from level 2 to level 4 (expected 3)
+    verdict: false-positive
+    note: a LaTeX run-in \paragraph heading in the appendix that arXiv's HTML renders as h4
+  - rule: bracket-nesting
+    line: 221
+    text: Let W(r)=max(|words(T(r))|,1) denote the
+    message: Brackets nested 3 deep (limit 2)
+    verdict: false-positive
+    note: nesting in a mathematical formula (max(|words(T(r))|,1))
+  - rule: citation-reference-mismatch
+    line: 225
+    text: "[0,1] and elevated only when a record co"
+    message: The citation "[0,1]" names 0, which is not in the reference list
+    verdict: false-positive
+    note: '"[0,1]" is a numeric interval, not a citation'
+  - rule: citation-reference-mismatch
+    line: 229
+    text: "[0,1] and achieves high values only when"
+    message: The citation "[0,1]" names 0, which is not in the reference list
+    verdict: false-positive
+    note: '"[0,1]" is a numeric interval, not a citation'
+  - rule: one-sentence-paragraph-run
+    line: 235
+    text: "(i) Functional errors (k1=50): error, bu"
+    message: 5 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: the appendix lists keyword sets one per paragraph; they are list items, not prose
+  - rule: unknown-word
+    line: 235
+    text: laggy, lag, slow response, corrupted, do
+    message: '"laggy" is not in the dictionary; did you mean "leggy"?'
+    verdict: false-positive
+    note: '"laggy" is a search term in the keyword list (and an ordinary word)'
+  - rule: spelling-consistency
+    line: 264
+    text: behavior is identical to dialogue with a
+    message: '"behavior" here, where the document usually spells it "behaviour" (2 of 22)'
+    verdict: false-positive
+    note: '"behavior" is in the title of a cited article'
+  - rule: weasel-word
+    line: 288
+    text: Phiddian (2025) AI companion apps such a
+    message: '"experts say" does not say who'
+    verdict: false-positive
+    note: '"experts say" is in the headline of a cited news article'
+  - rule: spelling-consistency
+    line: 292
+    text: Center for the Study of Language and Inf
+    message: '"Center" here, where the document usually spells it "centre" (2 of 22)'
+    verdict: false-positive
+    note: "\"Center\" is part of a publisher's name in a reference"
+  - rule: hyphen-as-dash
+    line: 295
+    text: " - a study of human-chatbot relationship"
+    message: '"-" stands in for a dash'
+    verdict: false-positive
+    note: the hyphen is in the title of a cited article as published

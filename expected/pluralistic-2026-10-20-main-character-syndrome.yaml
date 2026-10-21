@@ -1,0 +1,39 @@
+id: pluralistic-2026-10-20-main-character-syndrome
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: I've had plenty of opportunity to reflec
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+    note: a 47-word sentence listing five roles after a colon
+  - rule: adverb-overuse
+    line: 7
+    text: hardly a day goes by without my having c
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: the essay leans on -ly adverbs (magnificent... really, deliberately, wildly, explicitly)
+  - rule: max-sentence-length
+    line: 7
+    text: My first novel editor was the magnificen
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+    note: a 47-word sentence with two participle chains
+  - rule: max-paragraph-length
+    line: 31
+    text: Contrast this with AI, the money-losinge
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: a six-sentence paragraph
+  - rule: max-sentence-length
+    line: 33
+    text: In Tim Wu's Age of Extraction, Wu lays o
+    message: This sentence runs 57 words (limit 45)
+    verdict: correct
+    note: a 57-word sentence with a dash-delimited aside
+  - rule: max-sentence-length
+    line: 37
+    text: The fact that this gambit might well des
+    message: This sentence runs 49 words (limit 45)
+    verdict: correct
+    note: a 49-word sentence with a dash-delimited aside

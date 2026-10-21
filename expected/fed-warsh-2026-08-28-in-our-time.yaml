@@ -1,0 +1,333 @@
+id: fed-warsh-2026-08-28-in-our-time
+chaff: 0.36.0
+findings:
+  - rule: quote-style-consistency
+    line: 11
+    text: ” an economic policy symposium sponsored
+    message: The quote mark ” here, where the document usually writes " (2 of 40)
+    verdict: correct
+    note: curly quotes in the event line, where the speech writes straight double quotes
+  - rule: quote-style-consistency
+    line: 11
+    text: "“Financial Innovation: Implications for"
+    message: The quote mark “ here, where the document usually writes " (2 of 40)
+    verdict: correct
+    note: curly quotes in the event line, where the speech writes straight double quotes
+  - rule: expletive-construction
+    line: 23
+    text: There's another kind of hike—one I assoc
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: false-positive
+    note: "\"There's another kind of hike\" introduces the second of two items; no tighter wording"
+  - rule: unqualified-superlative
+    line: 27
+    text: The best thing about this gathering is t
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: '"the best thing about this gathering" names its comparison set'
+  - rule: max-sentence-length
+    line: 29
+    text: Innovation is the conference theme, and
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: contraction-consistency
+    line: 33
+    text: First, I'll touch on a few of the longer
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+    note: "\"we're\" where the speech also writes \"we are\""
+  - rule: max-sentence-length
+    line: 33
+    text: First, I'll touch on a few of the longer
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: expletive-construction
+    line: 47
+    text: It was a widely held view that an excess
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: correct
+    note: '"It was a widely held view that..." can be "Many held that..."'
+  - rule: expletive-construction
+    line: 47
+    text: It wasn't so long ago—in the run-up to t
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: correct
+    note: "\"It wasn't so long ago ... when\" is a cleft that can be said directly"
+  - rule: max-sentence-length
+    line: 47
+    text: It was a widely held view that an excess
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 47
+    text: It wasn't so long ago—in the run-up to t
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 51
+    text: To cite the clearest example, progress i
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 57
+    text: We recognize that AI is a new variable—p
+    message: This sentence runs 26 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: unqualified-superlative
+    line: 65
+    text: Might there be a heterogeneity of tokens
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: '"the best models at the frontier" names its set'
+  - rule: max-sentence-length
+    line: 79
+    text: And I believe when policymakers make qua
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 89
+    text: If markets rely materially on the Fed's
+    message: This sentence runs 27 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: unqualified-superlative
+    line: 91
+    text: The most serious harm is likely to befal
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: '"the most serious harm" compares with the costs named in the previous sentence'
+  - rule: max-sentence-length
+    line: 95
+    text: I wish our understanding of the economy
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: contraction-consistency
+    line: 99
+    text: We'll do this knowing that accuracy in e
+    message: "\"we'll\" is written \"we will\" elsewhere in the document"
+    verdict: correct
+    note: "\"We'll\" where the speech also writes \"we will\""
+  - rule: heading-echo
+    line: 107
+    text: Turning to principles . . .
+    message: The first sentence repeats the heading "Key Principles"
+    verdict: correct
+    note: '"Turning to principles . . ." only restates the heading Key Principles'
+  - rule: max-paragraph-length
+    line: 109
+    text: First, I've noticed that, in this line o
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph
+  - rule: max-sentence-length
+    line: 113
+    text: Third, there should be no misunderstandi
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: expletive-construction
+    line: 119
+    text: It's not fashionable these days, but my
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: false-positive
+    note: "\"It's not fashionable these days, but\" is a concessive aside, not filler"
+  - rule: expletive-construction
+    line: 119
+    text: It's true that financial innovations and
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: correct
+    note: "\"It's true that financial innovations...\" is a hedge the sentence can drop"
+  - rule: max-sentence-length
+    line: 127
+    text: A good majority of my colleagues and I t
+    message: This sentence runs 41 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: contraction-consistency
+    line: 135
+    text: We're staying keenly focused on market i
+    message: "\"we're\" is written \"we are\" elsewhere in the document"
+    verdict: correct
+    note: "\"We're\" where the speech also writes \"we are\""
+  - rule: undefined-acronym
+    line: 135
+    text: S&P 500, profits have grown by more than
+    message: '"S&P" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: S&P 500 is an index name, not an acronym to expand
+  - rule: max-sentence-length
+    line: 139
+    text: Credit spreads on corporate bonds and le
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 139
+    text: Looking beyond fixed-income markets to t
+    message: This sentence runs 39 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 147
+    text: In my view, the relatively low turnover
+    message: This sentence runs 31 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: expletive-construction
+    line: 149
+    text: There are always areas of concern in the
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: correct
+    note: '"There are always areas of concern" can be "Some areas always draw concern"'
+  - rule: max-sentence-length
+    line: 159
+    text: This is well below the post-pandemic hig
+    message: This sentence runs 29 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 161
+    text: Looking over just the past six months, t
+    message: This sentence runs 28 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 167
+    text: Especially in light of recent developmen
+    message: This sentence runs 34 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: expletive-construction
+    line: 169
+    text: It's the Fed's job to make sure that inf
+    message: '"It is ..." appears 8 times (limit 3)'
+    verdict: false-positive
+    note: "\"It's the Fed's job to make sure\" puts the stress where the speaker wants it"
+  - rule: expletive-construction
+    line: 171
+    text: "There is one signal nobody can miss: The"
+    message: '"There is ..." appears 8 times (limit 3)'
+    verdict: false-positive
+    note: '"There is one signal nobody can miss:" is a deliberate rhetorical setup'
+  - rule: max-sentence-length
+    line: 185
+    text: 63 (1), pp. 277–80, https://doi.org/10.1
+    message: This sentence runs 33 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 185
+    text: See Lawrence H. Summers (2015), "Have We
+    message: This sentence runs 29 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: undefined-acronym
+    line: 185
+    text: IMF Fourteenth Annual Research Conferenc
+    message: '"IMF" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: IMF inside the title of a cited work
+  - rule: max-sentence-length
+    line: 187
+    text: See Robert J. Gordon (2017), The Rise an
+    message: This sentence runs 26 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 191
+    text: See Sha Sajadieh, Loredana Fattorini, Ra
+    message: This sentence runs 70 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: undefined-acronym
+    line: 193
+    text: BOE, December). Return to text
+    message: '"BOE" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: BOE is the publisher in a citation whose title spells out Bank of England
+  - rule: max-sentence-length
+    line: 195
+    text: While forward guidance became a regular
+    message: This sentence runs 56 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 197
+    text: Consistent with this concern, some evide
+    message: This sentence runs 62 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 199
+    text: See Ben S. Bernanke (2004), "What Policy
+    message: This sentence runs 47 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 203
+    text: Romer and Romer argue that the 2021 infl
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 203
+    text: See Christina D. Romer and David H. Rome
+    message: This sentence runs 36 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 205
+    text: This framing echoes Sherman Kent, who ar
+    message: This sentence runs 35 words (limit 25)
+    verdict: correct
+    note: a long prose sentence for a spoken address (the genre limit is 25 words)
+  - rule: max-sentence-length
+    line: 207
+    text: See N. Gregory Mankiw (2024), "Six Belie
+    message: This sentence runs 29 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: undefined-acronym
+    line: 207
+    text: NBER Conference on 'Inflation in the Cov
+    message: '"NBER" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: NBER inside the title of a cited work
+  - rule: max-sentence-length
+    line: 209
+    text: See Kevin M. Warsh (2022), "Money Matter
+    message: This sentence runs 33 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: max-sentence-length
+    line: 211
+    text: As Ravi Menon, former managing director
+    message: This sentence runs 36 words (limit 25)
+    verdict: false-positive
+    note: most of the length is a verbatim quotation in a footnote
+  - rule: orthographic-variant
+    line: 215
+    text: Decision-Making Beyond the Numbers (New
+    message: '"Decision-Making" here, where the document usually writes "decisionmaking" (1 of 3)'
+    verdict: false-positive
+    note: '"Decision-Making" is in the title of a cited book, which keeps its own spelling'
+  - rule: max-sentence-length
+    line: 219
+    text: See Gadi Barlevy and Luojia Hu (2023), "
+    message: This sentence runs 40 words (limit 25)
+    verdict: false-positive
+    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
+  - rule: undefined-acronym
+    line: 219
+    text: FRBSF Economic Letter 2023-13 (Federal R
+    message: '"FRBSF" is used without an expansion (5 such acronyms)'
+    verdict: false-positive
+    note: FRBSF names a cited series in a citation

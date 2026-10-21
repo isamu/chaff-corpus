@@ -1,0 +1,16 @@
+id: nps-sequoia-kings-canyon-faqs
+title: "National Park Service: Sequoia & Kings Canyon National Parks, Frequently Asked Questions"
+language: en
+genre: docs/faq
+format: markdown
+source:
+  url: https://www.nps.gov/seki/faqs.htm
+  fetched: 2026-10-21
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/seki/faqs.htm); converted to Markdown'
+redistribute: true
+sha256: 674c44924191f297974566cabb68d6f693b17d9dbba1dc163031ee0649aa11bd
+notes: A park's FAQ page. Its first answer begins "equoia" in the source (the S is missing there, not lost in conversion). The park's published phone number is kept. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

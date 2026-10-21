@@ -1,0 +1,16 @@
+id: nps-glacier-faqs
+title: "National Park Service: Glacier National Park, Frequently Asked Questions"
+language: en
+genre: docs/faq
+format: markdown
+source:
+  url: https://www.nps.gov/glac/faqs.htm
+  fetched: 2026-10-21
+  format: html
+license:
+  name: Public domain
+  url: https://www.nps.gov/aboutus/disclaimer.htm
+  note: 'Work of the US federal government (17 U.S.C. 105): "material created by the National Park Service and presented on this website, unless otherwise indicated, is generally considered in the public domain" (https://www.nps.gov/aboutus/disclaimer.htm); Source: National Park Service (https://www.nps.gov/glac/faqs.htm); converted to Markdown'
+redistribute: true
+sha256: 4d379a499793a38769a05defb438ee9d38fac01b6a3aeba64298f04d7f82e9b9
+notes: A park's FAQ page. The published phone numbers (the park, Recreation.gov) are kept; the park number is in allowlist.yaml. The source is html; the text is source.format html converted by scripts/lib/source-format.ts.
