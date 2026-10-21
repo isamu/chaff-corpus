@@ -1,0 +1,39 @@
+id: textlint-no-mix-dearu-desumasu-readme
+chaff: 0.36.0
+findings:
+  - rule: code-fence-language-mix
+    line: 31
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 10 個）
+    verdict: correct
+    note: a code block without a language while the other blocks name one
+  - rule: bold-density
+    line: 69
+    text: "default: `false`"
+    message: このセクションは 275 字に太字が 10 箇所あります（1000 字あたり 20 箇所まで）
+    verdict: false-positive
+    note: bold marks the matched part of each quoted example sentence, as the README does throughout
+  - rule: code-fence-language-mix
+    line: 91
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 10 個）
+    verdict: correct
+    note: a code block without a language while the other blocks name one
+  - rule: stray-space
+    line: 114
+    text: " をそれぞれ別々にカウントします。"
+    message: 「書き」と「を」は一続きの語句ですが、あいだに空白があります（179 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: a stray space before を (箇条書き を)
+  - rule: heading-numbering-mix
+    line: 132
+    text: "### Q. 2.0(以前)と同じ挙動にするにはどうすればよいですか?"
+    message: 見出し「Q. 2.0(以前)と同じ挙動にするにはどうすればよいですか?」だけ番号がありません（兄弟の見出しは「Q. 箇条書きの際に「である」調が混在することもあるのでは?」など 3 個が番号付き）
+    verdict: false-positive
+    note: the Q. headings carry no section numbers; 2.0 is a version number, not a heading number
+  - rule: orthographic-variant
+    line: 173
+    text: 下さい。
+    message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 下さい here and ください elsewhere

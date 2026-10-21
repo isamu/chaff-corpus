@@ -1,0 +1,69 @@
+id: egov-account-toroku
+chaff: 0.36.0
+findings:
+  - rule: katakana-density
+    line: 3
+    text: e-Govアカウントの登録手順をご案内します。
+    message: カタカナ語が 1000 字あたり 58 語あります（55 語まで）。多いのは「アカウント、メールアドレス、メール」です
+    verdict: false-positive
+    note: an account-registration manual cannot avoid アカウント and メールアドレス
+  - rule: latin-spacing
+    line: 4
+    text: " が提供するサービスは、以下のアカウントでもログインできます。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。42 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: e-Gov が with a space here, e-Govが without one everywhere else
+  - rule: bracket-width-consistency
+    line: 16
+    text: (@マークより前)に利用可能な文字は以下の通りです。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。4 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width (@マークより前) while the page's other parentheses are full-width
+  - rule: bracket-width-consistency
+    line: 16
+    text: )に利用可能な文字は以下の通りです。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。4 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: half-width (@マークより前) while the page's other parentheses are full-width
+  - rule: bracket-nesting
+    line: 17
+    text: 「半角英数字」、「-（ハイフン）」、「.（ピリオド」）、「_（アンダーバー）」
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+    note: "points at a real error: 「.（ピリオド」） closes the quote before the parenthesis (should be 「.（ピリオド）」)"
+  - rule: unbalanced-bracket
+    line: 17
+    text: （ピリオド」）、「_（アンダーバー）」
+    message: 「（」が閉じていません
+    verdict: correct
+    note: 「.（ピリオド」） closes the quote before the parenthesis, so （ is left open
+  - rule: unbalanced-bracket
+    line: 17
+    text: ）、「_（アンダーバー）」
+    message: 「）」に対応する開きがありません
+    verdict: correct
+    note: the stray ） after 」 in 「.（ピリオド」）
+  - rule: ngram-repetition
+    line: 47
+    text: e-Govアカウント登録手続における各タイミングにおいて、登録されたメールアドレ
+    message: 「されたメールアド」が 9 回出てきます（5 回まで）
+    verdict: false-positive
+    note: a table of notification mails whose recipient column repeats the same phrase in every row
+  - rule: max-kanji-continuous
+    line: 86
+    text: "[e-Gov]2要素認証・追加認証設定解除完了のお知らせ"
+    message: 「追加認証設定解除完了」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the official subject line of a notification mail, quoted as sent
+  - rule: max-kanji-continuous
+    line: 92
+    text: "[e-Gov]2要素認証・追加認証設定解除本申請のご案内"
+    message: 「追加認証設定解除本申請」は漢字が 11 字続いています（8 字まで）
+    verdict: false-positive
+    note: the official subject line of a notification mail, quoted as sent
+  - rule: max-kanji-continuous
+    line: 98
+    text: "[e-Gov]2要素認証・追加認証設定解除完了のお知らせ"
+    message: 「追加認証設定解除完了」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the official subject line of a notification mail, quoted as sent

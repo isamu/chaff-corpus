@@ -1,0 +1,15 @@
+id: textlint-preset-japanese-readme
+title: textlint-rule-preset-japanese README
+language: ja
+genre: technical/readme
+format: markdown
+source:
+  url: https://raw.githubusercontent.com/textlint-ja/textlint-rule-preset-japanese/c03434f7f51b8d092ee9c00b8d83a6ae0f17d06e/README.md
+  fetched: 2026-10-21
+license:
+  name: MIT
+  url: https://github.com/textlint-ja/textlint-rule-preset-japanese/blob/c03434f7f51b8d092ee9c00b8d83a6ae0f17d06e/LICENSE
+  note: MIT (the repository's LICENSE at the pinned commit covers "this software and associated documentation files"; the README's own "MIT" licence section); © azu; unchanged
+redistribute: true
+sha256: 887a2e6b71d829158f5f0005794e5b5bd4712f4c8e90ae3081e289159db7c17c
+notes: The README quotes wrong sentences as examples of what the rule reports.

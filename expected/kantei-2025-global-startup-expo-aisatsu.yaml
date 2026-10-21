@@ -1,0 +1,63 @@
+id: kantei-2025-global-startup-expo-aisatsu
+chaff: 0.36.0
+findings:
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 17日 総理の演説・記者会見など
+    message: 半角の「17」と書いています（この文書はふつう全角の「１７」。9 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 7年9月17日 総理の演説・記者会見など
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。10 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
+  - rule: fullwidth-alnum-consistency
+    line: 3
+    text: 9月17日 総理の演説・記者会見など
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。10 箇所のうち 2 箇所が違う）
+    verdict: false-positive
+    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
+  - rule: orthographic-variant
+    line: 6
+    text: 見た、ただの石だった。でも、あそこは本当にわくわくするような夢のような場所でした
+    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 見る (to see) and the auxiliary 〜てみる (to try) are different words, not one word spelled two ways
+  - rule: doubled-word
+    line: 7
+    text: 是非、日本を「幸せな日本」にしてもらいたいと思っています。スタートアップとＡＩ（
+    message: 「是非是非」で語が重なっています。どちらかが余分です
+    verdict: false-positive
+    note: 是非是非 is a spoken emphatic reduplication, transcribed as said
+  - rule: max-paragraph-length
+    line: 7
+    text: それから５５年たって、今回この関西万博が行われ、スタートアップの皆様方がお集まり
+    message: この段落は 13 文あります（5 文まで）
+    verdict: correct
+    note: a 13-sentence paragraph; the transcript runs several points together
+  - rule: repeated-sentence-ending
+    line: 7
+    text: 明治以来、日本は「強い日本」というのを目指してきました。歴史の時間に、富国強兵、
+    message: 「〜きました」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: three sentences in a row end in 〜てきました (目指してきました twice and once more)
+  - rule: max-paragraph-length
+    line: 8
+    text: 今日はいろんなスタートアップの皆様、あるいはベンチャーキャピタルの皆様方がおいで
+    message: この段落は 13 文あります（5 文まで）
+    verdict: correct
+    note: a 13-sentence paragraph; the transcript runs several points together
+  - rule: orthographic-variant
+    line: 8
+    text: 作っていくか。そして農業であり、漁業であり、林業であり、それがスタートアップを使
+    message: 「作る」と書いています（この文書はふつう「つくる」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "作っていく here and つくる elsewhere in the same sense (to build/create): an inconsistent spelling"
+  - rule: orthographic-variant
+    line: 10
+    text: ワクワクした。当時、三洋電機という会社があって、今はもうパナソニックになりました
+    message: 「ワクワク」と書いています（この文書はふつう「わくわく」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "ワクワク here and わくわく twice elsewhere: an inconsistent spelling of one word"
