@@ -1,0 +1,33 @@
+id: kantei-2025-okinawa-zenbotsusha-tsuitoshiki-aisatsu
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 5
+    text: 戦後八十年、沖縄全戦没者追悼式が執り行われるに当たり、沖縄戦において、戦場に斃（
+    message: 「沖縄全戦没者追悼式」は漢字が 9 字続いています（8 字まで）
+    verdict: false-positive
+    note: the official name of the ceremony (沖縄全戦没者追悼式), which cannot be split
+  - rule: no-mixed-desumasu
+    line: 14
+    text: 沖縄の負担軽減を、目に見える形で実現する。それが私自身の強い決意であります。
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: a deliberate plain-form sentence stating a resolve inside a polite address, a common rhetorical device
+  - rule: max-kanji-continuous
+    line: 15
+    text: 本年三月、西普天間住宅地区跡地に、高度な医療・研究機能を有する健康医療拠点が誕生
+    message: 「西普天間住宅地区跡地」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: a place name (西普天間住宅地区) plus 跡地, a fixed designation
+  - rule: no-mixed-desumasu
+    line: 21
+    text: 戦争の惨禍（さんか）を二度と繰り返さない。歳月がいかに流れても、この決然たる誓い
+    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
+    verdict: false-positive
+    note: a deliberate plain-form vow (二度と繰り返さない) inside a polite address, a rhetorical device
+  - rule: max-kanji-continuous
+    line: 24
+    text: 令和七年六月二十三日
+    message: 「令和七年六月二十三日」は漢字が 10 字続いています（8 字まで）
+    verdict: false-positive
+    note: the date written in kanji numerals, as a signed address dates itself

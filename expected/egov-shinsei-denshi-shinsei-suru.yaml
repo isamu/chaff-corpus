@@ -1,0 +1,61 @@
+id: egov-shinsei-denshi-shinsei-suru
+chaff: 0.36.0
+findings:
+  - rule: no-lead
+    line: 3
+    text: 電子申請する方法をご案内します。
+    message: 題「電子申請する」の後の段落は、題に無い語を 2 個しか足していません
+    verdict: correct
+    note: the lead only restates the title (電子申請する方法をご案内します)
+  - rule: ngram-repetition
+    line: 24
+    text: Webブラウザを利用して手続を検索して「申請書入力へ」をクリックした場合は、以下
+    message: 「が表示されます。」が 10 回出てきます（5 回まで）
+    verdict: false-positive
+    note: a step-by-step screen manual says が表示されます after each step; the repetition is the genre's formula
+  - rule: bracket-width-consistency
+    line: 61
+    text: （未設定）の場合や変更する場合には、［連絡先情報を設定］をクリックし、連絡先情報
+    message: 括弧を「（」と書いています（この文書はふつう「(」。4 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width （未設定） in prose while the page's other parentheses are half-width
+  - rule: bracket-width-consistency
+    line: 61
+    text: ）の場合や変更する場合には、［連絡先情報を設定］をクリックし、連絡先情報を入力し
+    message: 括弧を「）」と書いています（この文書はふつう「)」。4 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: full-width （未設定） in prose while the page's other parentheses are half-width
+  - rule: missing-final-period
+    line: 80
+    text: す
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。29 段落のうち 1 段落）
+    verdict: false-positive
+    note: the description of a button in a definition list, written without 。 like the other descriptions
+  - rule: unbalanced-bracket
+    line: 84
+    text: 「電子申請に当たって添付書類の提出が必要又は可能な手続の場合、[書類を添付]ボタ
+    message: 「「」が閉じていません
+    verdict: correct
+    note: a stray 「 opens the paragraph and never closes (it is in the source)
+  - rule: unbalanced-bracket
+    line: 89
+    text: ］ボタンをクリックして、提出先を選択します。 入力や設定に関する詳細は、「提出先
+    message: 「］」に対応する開きがありません
+    verdict: correct
+    note: the opening ［ of the button label ［提出先を選択］ is missing in the source
+  - rule: max-kanji-continuous
+    line: 116
+    text: 署名用電子証明書確認画面で[OK]ボタンをクリックすると、「証明書の選択」ウィン
+    message: 「署名用電子証明書確認画面」は漢字が 12 字続いています（8 字まで）
+    verdict: false-positive
+    note: the name of a screen (署名用電子証明書確認画面), which cannot be split
+  - rule: bracket-width-consistency
+    line: 54
+    what: "button labels are bracketed both ways on one page: full-width ［申請者情報を設定］ here, half-width [申請者情報を設定] on the next line"
+    verdict: missed
+    note: bracket-width-consistency compares round parentheses only; square brackets are not counted (neither the pinned chaffjs nor lab main reports it)
+  - rule: bracket-width-consistency
+    line: 84
+    what: half-width [書類を添付] here, full-width ［書類を添付］ for the same button on the next line
+    verdict: missed
+    note: square brackets are not compared (neither the pinned chaffjs nor lab main reports it)
