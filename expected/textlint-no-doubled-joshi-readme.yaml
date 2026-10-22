@@ -1,0 +1,69 @@
+id: textlint-no-doubled-joshi-readme
+chaff: 0.36.0
+findings:
+  - rule: bare-url-mix
+    line: 133
+    text: https://github.com/asciidwango/js-primer
+    message: URL「https://github.com/asciidwango/js-primer/pull/1598#discussion_r1110939474」がそのまま書かれています（言葉のリンクが 22 個ある文書）
+    verdict: correct
+    note: a bare URL as an example link while the README's other links have text
+  - rule: bare-url-mix
+    line: 137
+    text: https://github.com/asciidwango/js-primer
+    message: URL「https://github.com/asciidwango/js-primer/pull/1594#discussion_r1110973573」がそのまま書かれています（言葉のリンクが 22 個ある文書）
+    verdict: correct
+    note: a bare URL as an example link while the README's other links have text
+  - rule: missing-final-period
+    line: 153
+    text: す
+    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。13 段落のうち 1 段落）
+    verdict: correct
+    note: the paragraph lacks the closing 。 the others have
+  - rule: stray-space
+    line: 157
+    text: " は `1` となります。"
+    message: 「値」と「は」は一続きの語句ですが、あいだに空白があります（227 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: a stray space inside 間隔値は
+  - rule: doubled-word
+    line: 158
+    text: なるため、このケースはエラーとして判定されます。
+    message: 「なるなる」で語が重なっています。どちらかが余分です
+    verdict: correct
+    note: "a real typo: となるなるため"
+  - rule: bracket-width-consistency
+    line: 175
+    text: （`、`）が助詞の間にある場合、間隔値は+1されます。
+    message: 括弧を「（」と書いています（この文書はふつう「(」。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: full-width （） in this line while the README mostly uses half-width ()
+  - rule: bracket-width-consistency
+    line: 175
+    text: ）が助詞の間にある場合、間隔値は+1されます。
+    message: 括弧を「）」と書いています（この文書はふつう「)」。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: full-width （） in this line while the README mostly uses half-width ()
+  - rule: bracket-width-consistency
+    line: 184
+    text: （`(`や`)`）が助詞の間にある場合、間隔値は+1されます。
+    message: 括弧を「（」と書いています（この文書はふつう「(」。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: full-width （） in this line while the README mostly uses half-width ()
+  - rule: bracket-width-consistency
+    line: 184
+    text: ）が助詞の間にある場合、間隔値は+1されます。
+    message: 括弧を「）」と書いています（この文書はふつう「)」。21 箇所のうち 4 箇所が違う）
+    verdict: correct
+    note: full-width （） in this line while the README mostly uses half-width ()
+  - rule: tari-unpaired
+    line: 219
+    text: たり**)が連続するのは、意図した助詞の使い方であるため許可します。
+    message: 「たり」が一つだけで、対になる「〜たり」がありません
+    verdict: false-positive
+    note: たり is named as the particle under discussion, not used as a verb ending that needs a pair
+  - rule: no-mixed-desumasu
+    line: 250
+    text: デフォルトでは次の文はエラーとなる。
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: correct
+    note: one plain-form sentence (エラーとなる。) in a desu-masu README
