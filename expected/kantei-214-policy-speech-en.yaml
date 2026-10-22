@@ -63,9 +63,9 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 45
-    text: alliance at the core, we will increase t
-    message: This sentence runs 37 words (limit 25)
-    verdict: correct
+    what: the sentence "With the Japan-U.S. alliance at the core, we will increase ..." runs 40 words
+    verdict: missed
+    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole"
   - rule: max-sentence-length
     line: 47
     text: When doing so, consistent with the visio
@@ -73,9 +73,9 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 49
-    text: alliance is the cornerstone of Japanese
-    message: This sentence runs 28 words (limit 25)
-    verdict: correct
+    what: the sentence "The Japan-U.S. alliance is the cornerstone of Japanese ..." runs 30 words
+    verdict: missed
+    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole"
   - rule: max-sentence-length
     line: 51
     text: The other day I held telephone conversat

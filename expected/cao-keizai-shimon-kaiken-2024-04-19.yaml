@@ -21,7 +21,8 @@ findings:
     line: 60
     text: 9％減となった。2050年ネットゼロに向けた順調な減少傾向、いわゆるオントラック
     message: 半角の「9」と書いています（この文書はふつう全角の「９」。35 箇所のうち 2 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: 22.9 is one decimal number, not a one-digit 9. Official writing (公用文) sets one-digit numbers in full width and decimals in half width, as jma-yougo-kion:7 (1.25) and jma-yougo-kousui:14 (0.5) are judged.
   - rule: fullwidth-alnum-consistency
     line: 106
     text: 3,000人未満の小規模過疎自治体の約４割が社会増をしているというデータもある。

@@ -228,7 +228,8 @@ findings:
     line: 177
     text: It behooves those also, who hold, that a
     message: This paragraph runs 13 sentences (limit 12)
-    verdict: correct
+    verdict: false-positive
+    note: the paragraph runs 12 sentences, within the limit; chaffjs 0.36.0 counts 13 because it ends a sentence after "to A." before the lowercase "for life", which isamu/lab#1892 reads as one sentence
   - rule: agreement-slip
     line: 181
     text: its will take away the private property
