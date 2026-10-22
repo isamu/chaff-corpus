@@ -757,3 +757,6 @@
 - id: egov-account-toroku
   match: "e-Gov.2020@e-gov.go.jp"
   reason: a made-up address in the page's own example of case-insensitive addresses, on the agency's domain, not a real mailbox
+- id: nps-glacier-faqs
+  match: "406-888-7800"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document

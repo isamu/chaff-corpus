@@ -1,0 +1,33 @@
+id: gutenberg-masters-spoon-river
+chaff: 0.36.0
+findings:
+  - rule: ellipsis-consistency
+    line: 746
+    text: …
+    message: The ellipsis "…" here, where the document usually writes ". . ." (1 of 12)
+    verdict: correct
+    note: one Unicode ellipsis where the transcription writes ". . ." eleven other times
+  - rule: unbalanced-bracket
+    line: 1537
+    text: “Those are not leaves,
+    message: '"“" is never closed'
+    verdict: correct
+    note: the epitaph opens a quotation and never closes it before the poem ends
+  - rule: name-variant
+    line: 1787
+    text: Sprang from your delusion that it was wa
+    message: '"Sprang" is one letter away from "Spring", which the document uses more than once'
+    verdict: false-positive
+    note: Sprang (verb) and Spring are different words, not a misspelt name
+  - rule: unbalanced-bracket
+    line: 2093
+    text: “Roll on, thou deep and dark blue Ocean,
+    message: '"“" is never closed'
+    verdict: correct
+    note: the closing mark is an opening curly quote, so the quotation is never properly closed
+  - rule: name-variant
+    line: 3894
+    text: Bandle quarreled
+    message: '"Bandle" is one letter away from "Bindle", which the document uses more than once'
+    verdict: false-positive
+    note: Bandle and Bindle are two different families in the book (Richard Bandle, Nicholas Bindle)

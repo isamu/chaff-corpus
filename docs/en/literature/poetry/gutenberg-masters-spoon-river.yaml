@@ -1,0 +1,15 @@
+id: gutenberg-masters-spoon-river
+title: "Edgar Lee Masters, Spoon River Anthology (Project Gutenberg #1280)"
+language: en
+genre: literature/poetry
+format: text
+source:
+  url: https://www.gutenberg.org/cache/epub/1280/pg1280.txt
+  fetched: 2026-10-21
+license:
+  name: Public domain
+  url: https://www.gutenberg.org/policy/license.html
+  note: "Public domain in the United States (first published 1915); Project Gutenberg eBook #1280, stored without Project Gutenberg's header and licence (lab's gutenberg-text conversion), which the Project Gutenberg License allows for a public-domain work"
+redistribute: true
+sha256: e219d2b2fa1ca2ecc5e3a83fad3e54cb0344abf9b2a826641314424df7e21b46
+notes: The text between Project Gutenberg's START and END markers, as lab's scripts/gutenberg-text.ts keeps it. The epitaphs speak as fictional townspeople.

@@ -1,0 +1,93 @@
+id: pluralistic-2026-10-12-termination-of-transfer
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 3
+    text: If you work in the media, you have doubt
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence
+  - rule: unknown-word
+    line: 11
+    text: synch a song to an advertisement, or the
+    message: '"synch" is not in the dictionary; did you mean "sync"?'
+    verdict: false-positive
+    note: '"synch" is an accepted spelling of sync in licensing usage (synch rights)'
+  - rule: numeral-sentence-start
+    line: 13
+    text: 50 years later, media companies – our bo
+    message: The sentence opens with the numeral "50"
+    verdict: correct
+    note: the sentence opens with the numeral 50, which style guides spell out
+  - rule: max-sentence-length
+    line: 21
+    text: From reader feedback, I can tell you tha
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence
+  - rule: max-sentence-length
+    line: 25
+    text: The point of these chapters is to lay ou
+    message: This sentence runs 50 words (limit 45)
+    verdict: correct
+    note: a 50-word sentence with a dash-delimited aside
+  - rule: numeral-sentence-start
+    line: 27
+    text: 35 years after you sign any copyright co
+    message: The sentence opens with the numeral "35"
+    verdict: correct
+    note: the sentence opens with the numeral 35
+  - rule: max-sentence-length
+    line: 29
+    text: Now, most creative works don't have a co
+    message: This sentence runs 67 words (limit 45)
+    verdict: correct
+    note: a 67-word sentence with a parenthetical
+  - rule: cliche
+    line: 37
+    text: If we want to make creative workers rich
+    message: '"no-brainer" is a cliché'
+    verdict: correct
+    note: '"no-brainer" is a stock phrase'
+  - rule: max-sentence-length
+    line: 57
+    text: On the Techjess podcast, Garriott marvel
+    message: This sentence runs 54 words (limit 45)
+    verdict: false-positive
+    note: most of the sentence's length is a verbatim spoken quotation the author cannot shorten
+  - rule: quote-style-consistency
+    line: 57
+    text: ’s a really weird United States copyrigh
+    message: The quote mark ’ here, where the document usually writes ' (1 of 42)
+    verdict: correct
+    note: the quoted remark uses a curly apostrophe while the essay writes straight ones
+  - rule: max-sentence-length
+    line: 63
+    text: You don't get to move back into the hous
+    message: This sentence runs 46 words (limit 45)
+    verdict: correct
+    note: a 46-word sentence
+  - rule: contraction-consistency
+    line: 69
+    text: It protects artists, and it can only do
+    message: "\"is not\" is written \"isn't\" elsewhere in the document"
+    verdict: false-positive
+    note: the uncontracted "it is not" is emphatic here (the essay's point), not an inconsistency
+  - rule: max-sentence-length
+    line: 71
+    text: This is one of the themes in The Bezzle,
+    message: This sentence runs 55 words (limit 45)
+    verdict: correct
+    note: a 55-word sentence with a long parenthetical
+  - rule: contraction-consistency
+    line: 79
+    text: Some of our most ardent fans are academi
+    message: "\"do not\" is written \"don't\" elsewhere in the document"
+    verdict: correct
+    note: "\"do not pay\" where the essay otherwise writes don't"
+  - rule: max-sentence-length
+    line: 79
+    text: Some of our most ardent fans are academi
+    message: This sentence runs 61 words (limit 45)
+    verdict: correct
+    note: a 61-word sentence
