@@ -1,0 +1,129 @@
+id: bousai-wp-r07-bosai-kunren-kyoiku
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "#### 1－3　防災訓練・防災教育の取組"
+    message: 見出し「1－3　防災訓練・防災教育の取組」の深さが 1 から 4 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: ページ自身が h1（ページ題）から h4（1－3）へ飛ぶ。冊子の階層をそのまま一節のページに載せている
+  - rule: nominalization
+    line: 5
+    text: 訓練を実施することとされている。
+    message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「訓練を実施する」は「訓練する」で足りる
+  - rule: topic-predicate-distance
+    line: 5
+    text: このため、防災関係機関は災害対策基本法（昭和36年法律第223号）、防災基本計画
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: correct
+    note: 「防災関係機関は」から述語「実施することとされている」まで 95 字
+  - rule: nominalization
+    line: 7
+    text: 訓練を実施した。
+    message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「訓練を実施した」は「訓練した」で足りる
+  - rule: max-kanji-continuous
+    line: 11
+    text: 令和6年9月1日の「防災の日」に、首都直下地震発生直後を想定した岸田内閣総理大臣
+    message: 「千島海溝周辺海溝型地震」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: 「日本海溝・千島海溝周辺海溝型地震」は法律（特別措置法）上の地震の名称で、分けられない
+  - rule: max-sentence-length
+    line: 11
+    text: 令和6年9月1日の「防災の日」に、首都直下地震発生直後を想定した岸田内閣総理大臣
+    message: この文は 240 文字あります（140 文字まで）
+    verdict: correct
+    note: 240 字の一文
+  - rule: nominalization
+    line: 11
+    text: 訓練を行い、また、東京都板橋区を主会場とする九都県市合同防災訓練に岸田内閣総理大
+    message: 「訓練を行う」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「運営訓練を行い」は「運営訓練をし」で足りる
+  - rule: max-kanji-continuous
+    line: 15
+    text: 令和6年11月に日本海溝・千島海溝周辺海溝型地震を想定した緊急災害対策本部事務局
+    message: 「緊急災害対策本部事務局運営訓練」は漢字が 15 字続いています（10 字まで）
+    verdict: false-positive
+    note: 「緊急災害対策本部事務局運営訓練」は訓練の名称
+  - rule: nominalization
+    line: 15
+    text: 訓練を実施した。
+    message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「訓練を実施した」の名詞化
+  - rule: max-kanji-continuous
+    line: 17
+    text: 地域ブロックごとの訓練では、被災が想定される都道府県と連携し、日本海溝・千島海溝
+    message: 「緊急災害現地対策本部運営訓練」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: 「緊急災害現地対策本部運営訓練」は訓練の名称
+  - rule: nominalization
+    line: 17
+    text: 訓練を実施した。
+    message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「運営訓練を実施した」の名詞化
+  - rule: nominalization
+    line: 17
+    text: 訓練を実施した。令和6年11月に東北（盛岡市）、同年12月に首都圏（千葉市）、令
+    message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 二つ目の「訓練を実施した」の名詞化
+  - rule: max-kanji-continuous
+    line: 19
+    text: 日本海溝・千島海溝周辺海溝型地震を想定した緊急災害対策本部事務局運営訓練
+    message: 「緊急災害対策本部事務局運営訓練」は漢字が 15 字続いています（10 字まで）
+    verdict: false-positive
+    note: 写真の説明（訓練の名称）
+  - rule: max-kanji-continuous
+    line: 21
+    text: 南海トラフ地震を想定した緊急災害現地対策本部運営訓練（名古屋市）
+    message: 「緊急災害現地対策本部運営訓練」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: 写真の説明（訓練の名称）
+  - rule: empty-intensifier
+    line: 27
+    text: 全ての国民が災害から自らの命を守るためには、災害時に国民一人一人が適切な行動をと
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: 「極めて重要である」は中身を足さない強調
+  - rule: nominalization
+    line: 33
+    text: 啓発を行うためのひな形も含めて幼児向けの教材を作成し、保護者及び幼児に対する防災
+    message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「啓発を行う」は「啓発する」で足りる
+  - rule: teki-overuse
+    line: 35
+    text: 実践的な避難訓練の実施状況や見直しの状況を始めとする全国の学校の防災教育に関する
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 一文に「実践的」「定期的」「具体的」
+  - rule: topic-predicate-distance
+    line: 39
+    text: 令和6年度は、文部科学省において、特別支援教育に関わる教員向けの防災教育の手引き
+    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
+    verdict: correct
+    note: 「令和6年度は」から文末の「行った」まで 89 字、途中に二つの主体が入る
+  - rule: nominalization
+    line: 43
+    text: 支援を行う「防災教育チャレンジプラン」は平成16年度にスタートし、令和6年度まで
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「支援を行う」は「支援する」で足りる
+  - rule: max-sentence-length
+    line: 45
+    text: 次年度の実践団体の募集においては、時代に即した歓迎テーマとして、＜1＞「多様な主
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
+    note: 143 字の一文
+  - rule: url-run-on
+    line: 47
+    text: https://bosaijapan.jp/challenge-plan/）
+    message: URL「https://bosaijapan.jp/challenge-plan/」の直後に「）」が続いています。リンクがそこまで伸びます
+    verdict: correct
+    note: URL の直後に全角の「）」が付き、自動リンクがそこまで伸びる

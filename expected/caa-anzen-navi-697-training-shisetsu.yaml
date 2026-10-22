@@ -1,0 +1,57 @@
+id: caa-anzen-navi-697-training-shisetsu
+chaff: 0.36.0
+findings:
+  - rule: email-greeting-closing
+    line: 3
+    text: 健康・体力の維持等を目的に、トレーニング施設を利用し、日常的に運動する方もいるか
+    message: 書き出しに挨拶がありません
+    verdict: false-positive
+    note: an issue of a mail magazine opens on its topic; a greeting is not expected
+  - rule: max-sentence-length
+    line: 3
+    text: しかし誤った機器・器具の使い方や、自分のペースに合わないトレーニングを行う等によ
+    message: この文は 78 文字あります（70 文字まで）
+    verdict: correct
+    note: a 78-character sentence over the email limit
+  - rule: max-sentence-length
+    line: 3
+    text: トレーニング施設には、スタッフが常駐しない施設、トレーナーが複数人の前で実演・指
+    message: この文は 85 文字あります（70 文字まで）
+    verdict: correct
+    note: an 85-character sentence over the email limit
+  - rule: clause-chain
+    line: 11
+    text: 複数人に対して講師が1名つき、映像を見ながら行うマシンピラティスの教室で、映像を
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: correct
+    note: an incident report that chains seven clauses into one sentence
+  - rule: max-sentence-length
+    line: 11
+    text: 複数人に対して講師が1名つき、映像を見ながら行うマシンピラティスの教室で、映像を
+    message: この文は 99 文字あります（70 文字まで）
+    verdict: correct
+    note: a 99-character sentence over the email limit
+  - rule: max-sentence-length
+    line: 27
+    text: ウォーキングマシン等のようにモーターで動くタイプの機器には、転倒しそうになったと
+    message: この文は 90 文字あります（70 文字まで）
+    verdict: correct
+    note: a 90-character sentence over the email limit
+  - rule: max-sentence-length
+    line: 35
+    text: ※1:医療機関ネットワーク事業:消費者庁は(独)国民生活センターと共同で、平成2
+    message: この文は 88 文字あります（70 文字まで）
+    verdict: correct
+    note: an 88-character footnote over the email limit
+  - rule: max-sentence-length
+    line: 36
+    text: ※2:事故情報データバンク:消費者庁が関係機関から「事故情報」「危険情報」を広く
+    message: この文は 82 文字あります（70 文字まで）
+    verdict: correct
+    note: an 82-character footnote definition over the email limit
+  - rule: email-greeting-closing
+    line: 40
+    text: 担当:消費者安全課
+    message: 終わりに結びの言葉がありません
+    verdict: false-positive
+    note: an issue of a mail magazine ends with the office in charge; a closing phrase is not expected

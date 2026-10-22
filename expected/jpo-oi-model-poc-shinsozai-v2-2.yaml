@@ -1,0 +1,182 @@
+id: jpo-oi-model-poc-shinsozai-v2-2
+chaff: 0.36.0
+findings:
+  - rule: undefined-term
+    line: 34
+    text: 本報告書提供後、乙が甲に対して本報告書を確認した旨を通知した時または乙が甲に対し
+    message: 「本報告書提供後」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 定義語「本報告書」に「提供後」が続いただけで、別の定義語ではない
+  - rule: undefined-term
+    line: 36
+    text: 本報告書提出後1週間以内に前項の異議を述べた場合に限り、本報告書の修正を求めるこ
+    message: 「本報告書提出後1週間以内」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 定義語「本報告書」に「提出後1週間以内」が続いただけ
+  - rule: undefined-term
+    line: 53
+    text: 本報告書確認完了から5ヶ月以内に●万円（税別）支払う。
+    message: 「本報告書確認完了」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: false-positive
+    note: 定義語「本報告書」に「確認完了」が続いただけ
+  - rule: topic-predicate-distance
+    line: 64
+    text: 第8条（秘密情報の取扱い）
+    message: 「は」で出した主題から述語まで 248 字あります（200 字まで）
+    verdict: correct
+    note: 第8条の「甲および乙は」から述語「漏えいしてはならない」まで 248 字
+  - rule: announced-count-mismatch
+    line: 67
+    text: 一つに該当する情報については、秘密情報に該当しない。
+    message: 「一つ」と予告していますが、すぐ下の箇条書きは5項目です
+    verdict: false-positive
+    note: 「いずれか一つに該当する」は該当の条件で、項目の数の予告ではない
+  - rule: doubled-punctuation
+    line: 85
+    text: 。。
+    message: 「。。」と句読点が重なっています
+    verdict: correct
+    note: 「通知する。。」と句点が二つ重なる（原文の誤り）
+  - rule: undefined-term
+    line: 109
+    text: 本報告書等の知的財産権）
+    message: 「本報告書等」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: correct
+    note: 「本報告書等」は見出しと存続条項に出るが、どこにも定義されていない
+  - rule: hiragana-fukushi
+    line: 114
+    text: 追加オプション条項：出願の事前通知
+    message: 「予め」は ひらがなで書くのが読みやすいです
+    verdict: correct
+    note: 「予め」は公用文ではひらがなの「あらかじめ」
+  - rule: orthographic-variant
+    line: 133
+    text: 支払いの停止があった場合または競売、破産手続開始、民事再生手続開始、会社更生手続
+    message: 「支払い」と書いています（この文書はふつう「支払」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「支払い」、ほかは「支払」
+  - rule: reference-title-mismatch
+    line: 149
+    text: 乙が甲に提供する資料等）第2項および第3項、第9条（本報告書等の知的財産権）から
+    message: 第7条に「乙が甲に提供する資料等」と添えていますが、第7条の見出しは「乙の義務」です
+    verdict: correct
+    note: 存続条項は第7条を「乙が甲に提供する資料等」と呼ぶが、第7条の見出しは「乙の義務」（原文の参照の食い違い）
+  - rule: bracket-width-consistency
+    line: 157
+    text: (変更オプション条項1：知財調停)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 157
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: numbering-gap
+    line: 157
+    text: 第16条(変更オプション条項1：知財調停)
+    message: 「第16条」の次が「第16条」です（17 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: bracket-width-consistency
+    line: 165
+    text: (変更オプション条項2：仲裁)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 165
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: numbering-gap
+    line: 165
+    text: 第16条(変更オプション条項2：仲裁)
+    message: 「第16条」の次が「第16条」です（17 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: defined-name-repeated
+    line: 172
+    text: 電磁的記録を作成し、甲乙が合意の後電子署名を施し、各自その電磁的記録を保管する。
+    message: 「電磁的記録」は 65 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: defined-name-repeated
+    line: 172
+    text: 電磁的記録を保管する。
+    message: 「電磁的記録」は 65 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: orthographic-variant
+    line: 172
+    text: 但し、本契約を電子契約により締結する場合には、本契約の成立を証するため、本書の電
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「但し」、ほかは「ただし」
+  - rule: bracket-width-consistency
+    line: 184
+    text: (追加オプション条項：再委託)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 184
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 192
+    text: (追加オプション条項：契約内容の変更)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 192
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: numbering-gap
+    line: 195
+    text: 2　前項の協議に基づき、本契約の内容の全部または一部を変更する場合、甲および乙は
+    message: 「3」の次が「2」です（4 番目のはず）
+    verdict: false-positive
+    note: 「第●条（契約内容の変更）」の第2項。番号のない「第●条」で条が替わるのを数えず、前の条の第3項から続けている
+  - rule: bracket-width-consistency
+    line: 197
+    text: (追加オプション条項：権利義務の譲渡禁止)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 197
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 200
+    text: (追加オプション条項：遅延損害金)
+    message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: bracket-width-consistency
+    line: 200
+    text: )
+    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
+    verdict: correct
+    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
+  - rule: undefined-term
+    line: 208
+    text: 本モデル契約本文が矛盾抵触する場合、本別紙が優先する。
+    message: 「本モデル契約本文」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: correct
+    note: 別紙が「本モデル契約本文」と呼ぶが、契約書の中では「本契約」と定義されている（モデルの書き残し）
+  - rule: hiragana-fukushi
+    line: 115
+    what: 「予め」は公用文ではひらがなの「あらかじめ」
+    verdict: missed
+    note: lab main reports it on this line; chaffjs 0.36.0 reports it on the heading line 114 (judged correct there), because it joins the heading and the clause across the hard line break

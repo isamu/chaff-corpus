@@ -1,0 +1,147 @@
+id: chrg-119hhrg63965-sec-oversight-2026
+chaff: 0.36.0
+findings:
+  - rule: all-caps-shouting
+    line: 249
+    text: FRENCH HILL, CHAIRMAN OF THE
+    message: '"FRENCH HILL, CHAIRMAN OF THE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 249
+    text: OPENING STATEMENT OF HON. FRENCH HILL, C
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 251
+    text: COMMITTEE ON FINANCIAL SERVICES, A U.S.
+    message: '"COMMITTEE ON FINANCIAL SERVICES, A U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 387
+    text: MAXINE WATERS, RANKING MEMBER OF THE
+    message: '"MAXINE WATERS, RANKING MEMBER OF THE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 387
+    text: OPENING STATEMENT OF HON. MAXINE WATERS,
+    message: '"OPENING STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 389
+    text: COMMITTEE ON FINANCIAL SERVICES, A U.S.
+    message: '"COMMITTEE ON FINANCIAL SERVICES, A U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: unknown-word
+    line: 499
+    text: grift and corruption. Chairman
+    message: '"grift" is not in the dictionary; did you mean "graft"?'
+    verdict: false-positive
+    note: '"grift" is a standard word'
+  - rule: all-caps-shouting
+    line: 519
+    text: ANN WAGNER, CHAIRWOMAN OF THE SUBCOMMITT
+    message: '"ANN WAGNER, CHAIRWOMAN OF THE SUBCOMMITTEE ON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 519
+    text: STATEMENT OF HON. ANN WAGNER, CHAIRWOMAN
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 521
+    text: CAPITAL MARKETS, A U.S. REPRESENTATIVE F
+    message: '"CAPITAL MARKETS, A U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 521
+    text: REPRESENTATIVE FROM MISSOURI
+    message: '"REPRESENTATIVE FROM MISSOURI" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 561
+    text: BRAD SHERMAN, RANKING MEMBER OF THE
+    message: '"BRAD SHERMAN, RANKING MEMBER OF THE" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 561
+    text: STATEMENT OF HON. BRAD SHERMAN, RANKING
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 563
+    text: SUBCOMMITTEE ON CAPITAL MARKETS, A U.S.
+    message: '"SUBCOMMITTEE ON CAPITAL MARKETS, A U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: redundant-expression
+    line: 599
+    text: each and every month.
+    message: '"each and every" says the same thing twice'
+    verdict: correct
+    note: '"each and every month" says "every" twice'
+  - rule: all-caps-shouting
+    line: 665
+    text: PAUL ATKINS, CHAIRMAN, U.S. SECURITIES A
+    message: '"PAUL ATKINS, CHAIRMAN, U" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: all-caps-shouting
+    line: 665
+    text: STATEMENT OF HON. PAUL ATKINS, CHAIRMAN,
+    message: '"STATEMENT OF HON" is written in capitals'
+    verdict: false-positive
+    note: a GPO hearing heading set in capitals by print convention, not shouting
+  - rule: redundant-expression
+    line: 855
+    text: we both quoted the exact same quote this
+    message: '"exact same" says the same thing twice'
+    verdict: correct
+    note: '"the exact same quote" can be "the same quote"'
+  - rule: date-without-year
+    line: 1019
+    text: January 15, my colleagues and I sent
+    message: "\"January 15\" has no year, and the document's dates run from 2025 to 2026, so the year is unclear"
+    verdict: false-positive
+    note: spoken at a hearing dated February 11, 2026; a recent date named without a year is clear in context
+  - rule: unknown-word
+    line: 2445
+    text: topsy as far as
+    message: '"topsy" is not in the dictionary; did you mean "tipsy"?'
+    verdict: false-positive
+    note: "\"grown like Topsy\" is an idiom (from a character's name), transcribed in lower case"
+  - rule: unknown-word
+    line: 2491
+    text: rightsized with a goal of
+    message: '"rightsized" is not in the dictionary; did you mean "rightsize"?'
+    verdict: false-positive
+    note: '"rightsized" is a standard word'
+  - rule: duration-mismatch
+    line: 3695
+    text: 43 days and 43 nights--
+    message: 43 nights makes 44 days, but 43 days is written
+    verdict: false-positive
+    note: '"43 days and 43 nights" is a spoken idiom (days and nights), not a duration count'
+  - rule: date-without-year
+    line: 4657
+    text: December 11, the President said that aff
+    message: "\"December 11\" has no year, and the document's dates run from 2025 to 2026, so the year is unclear"
+    verdict: false-positive
+    note: spoken at a hearing dated February 11, 2026; a recent date named without a year is clear in context
+  - rule: date-without-year
+    line: 5721
+    text: January 28--I would like to ask you this
+    message: "\"January 28\" has no year, and the document's dates run from 2025 to 2026, so the year is unclear"
+    verdict: false-positive
+    note: spoken at a hearing dated February 11, 2026; a recent date named without a year is clear in context

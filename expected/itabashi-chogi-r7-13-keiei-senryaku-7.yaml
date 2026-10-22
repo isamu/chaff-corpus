@@ -24,11 +24,13 @@ findings:
   - rule: no-doubled-joshi
     line: 46
     sha256: 5478d3b6161a95602e60acb9f59d902d19e6233c1e4fe7a1124f32c0beca650a
-    verdict: correct
+    verdict: false-positive
+    note: The chain counted the の before 方々 in 区民の方々の… isamu/lab#1643 reads 'X の方々' as one form of address when it goes on with の (国民の皆様の期待). That leaves two links, which is within the limit.
   - rule: topic-predicate-distance
     line: 46
     sha256: c50f74453d738e5d592faf71a424f21e518d6f344e03c2f70350b9bf6ce4e457
-    verdict: correct
+    verdict: false-positive
+    note: The topic gets its predicate within the first clause (…予定であるが). What was judged was the sentence's length, which max-sentence-length reports.
   - rule: clause-chain
     line: 49
     sha256: a30425646a3e034a0a6304f0255278474b6315658fbf7ef68dcd21e3179506be

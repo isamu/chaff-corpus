@@ -1,0 +1,57 @@
+id: aozora-terada-kaji-kyoiku
+chaff: 0.36.0
+findings:
+  - rule: topic-predicate-distance
+    line: 5
+    text: 今度の火災については消防方面の当局者はもちろん、建築家、百貨店経営者等直接利害を
+    message: 「は」で出した主題から述語まで 155 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 7
+    text: それはとにかく、実に幸いなことには事件の発生時刻が朝の開場間ぎわであったために、
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 7
+    text: 火の伝播がいかに迅速であるとしても、発火と同時に全館に警鈴が鳴り渡りかねてから手
+    message: 一文に節が 11 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 7
+    text: それはとにかく、実に幸いなことには事件の発生時刻が朝の開場間ぎわであったために、
+    message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 7
+    text: 火の伝播がいかに迅速であるとしても、発火と同時に全館に警鈴が鳴り渡りかねてから手
+    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 8
+    text: 火がおよそいかなる速度でいかなる方向に燃え広がる傾向があるか、煙がどういうぐあい
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 13
+    text: 絵もなかなかおもしろいが絵とちゃんぽんに印刷されたテキストが、われわれが読んでさ
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 13
+    text: 第二ページはおかあさんの留守に幼少な娘のリエナが禁を犯してペチカのふたを明け、は
+    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: それはとにかく、これだけの、小さな小さな「火事教育」でも、これだけの程度にでもち
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節の連なり）で、直すべき誤りではない

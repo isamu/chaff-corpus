@@ -53,7 +53,8 @@ findings:
     line: 52
     text: Foreign financial market movements were
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: correct
+    verdict: false-positive
+    note: the paragraph runs 5 sentences, within the limit; chaffjs 0.36.0 counts 6 because it ends a sentence after "in the U.K." before the lowercase "over", which isamu/lab#1892 reads as one sentence
   - rule: max-sentence-length
     line: 62
     text: The staff's inflation forecast for this

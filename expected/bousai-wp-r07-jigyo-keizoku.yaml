@@ -1,0 +1,51 @@
+id: bousai-wp-r07-jigyo-keizoku
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "#### 1－9　事業継続体制の構築"
+    message: 見出し「1－9　事業継続体制の構築」の深さが 1 から 4 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: ページ自身が h1 から h4 へ飛ぶ
+  - rule: padded-intro
+    line: 9
+    text: その後、近年の災害の激甚化・頻発化や社会情勢の変化などを踏まえて同ガイドラインの
+    message: 「近年」は、どの記事にも当てはまる書き出しです
+    verdict: false-positive
+    note: 「近年」は書き出しではなく、ガイドライン見直しの理由を言う段落の途中の語
+  - rule: empty-intensifier
+    line: 15
+    text: このため、地方公共団体において業務継続計画を策定し、業務継続体制を構築しておくこ
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: 「極めて重要である」は中身を足さない強調
+  - rule: topic-predicate-distance
+    line: 17
+    text: また、被災地方公共団体は、自らの体制だけで膨大な災害対応業務を行うことは困難であ
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: correct
+    note: 「被災地方公共団体は」から述語まで 106 字
+  - rule: max-sentence-length
+    line: 21
+    text: 内閣府では、「市町村のための業務継続計画作成ガイド」（平成27年5月策定）、「大
+    message: この文は 219 文字あります（140 文字まで）
+    verdict: correct
+    note: 219 字の一文
+  - rule: empty-intensifier
+    line: 25
+    text: そのため、大規模災害等の発生時における企業の事業活動の継続を図ることは、極めて重
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: 「極めて重要である」は中身を足さない強調
+  - rule: max-sentence-length
+    line: 29
+    text: 内閣府では、BCPの策定率を始めとした民間企業の取組に関する実態調査を隔年度で継
+    message: この文は 200 文字あります（140 文字まで）
+    verdict: correct
+    note: 200 字の一文
+  - rule: topic-predicate-distance
+    line: 29
+    text: 内閣府では、BCPの策定率を始めとした民間企業の取組に関する実態調査を隔年度で継
+    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
+    verdict: correct
+    note: 「内閣府では」から述語まで 104 字、途中で調査結果の主語が替わる

@@ -1,0 +1,122 @@
+id: nps-sequoia-kings-canyon-faqs
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "#### Which park do I go to?"
+    message: Heading "Which park do I go to?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+    note: the page's questions are h4 directly under h2 section headings
+  - rule: cliche
+    line: 7
+    text: equoia and Kings Canyon National Parks a
+    message: '"best of both worlds" is a cliché'
+    verdict: correct
+    note: '"the best of both worlds" is a stock phrase'
+  - rule: unknown-word
+    line: 7
+    text: equoia and Kings Canyon National Parks a
+    message: '"equoia" is not in the dictionary; did you mean "sequoia"?'
+    verdict: correct
+    note: the source really drops the S of "Sequoia" at the start of the first answer
+  - rule: contraction-consistency
+    line: 31
+    text: It's also best to use printed maps of th
+    message: "\"it's\" is written \"it is\" elsewhere in the document"
+    verdict: correct
+    note: "\"It's\" where the page otherwise writes \"it is\""
+  - rule: max-paragraph-length
+    line: 55
+    text: Give yourself plenty of time. To drive o
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph
+  - rule: max-paragraph-length
+    line: 61
+    text: Be prepared at any time of year for a wi
+    message: This paragraph runs 8 sentences (limit 5)
+    verdict: correct
+    note: an eight-sentence paragraph
+  - rule: number-style-consistency
+    line: 61
+    text: 2200 m) at Little Baldy. Mineral King Ro
+    message: '"2200" here, where the document usually writes large numbers like "1,400" (1 of 9)'
+    verdict: correct
+    note: '"2200 m" without a comma beside "7,200 feet" and "1,400"'
+  - rule: oxford-comma-consistency
+    line: 91
+    text: Restrictions include limits on campfires
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+    note: '"campfires, barbeques and smoking" without the serial comma the page otherwise uses'
+  - rule: hyphen-as-dash
+    line: 133
+    text: " - they're different in each area."
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen used as a dash
+  - rule: oxford-comma-consistency
+    line: 137
+    text: Weapons (including, but not limited to,
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+    note: a list without the serial comma the page otherwise uses
+  - rule: heading-level-skip
+    line: 147
+    text: "#### Where can I see Mt. Whitney? Can I"
+    message: Heading "Where can I see Mt. Whitney? Can I climb it?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+    note: h4 question directly under an h2 section
+  - rule: max-paragraph-length
+    line: 165
+    text: It is estimated to have a volume of 52,5
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: a seven-sentence paragraph
+  - rule: max-paragraph-length
+    line: 169
+    text: For its first seven decades, the parks t
+    message: This paragraph runs 6 sentences (limit 5)
+    verdict: correct
+    note: a six-sentence paragraph
+  - rule: unknown-word
+    line: 169
+    text: ladnscapes and the safety of people who
+    message: '"ladnscapes" is not in the dictionary; did you mean "landscapes"?'
+    verdict: correct
+    note: '"ladnscapes" is a real typo for landscapes'
+  - rule: weasel-word
+    line: 189
+    text: It is said that, even if there were no s
+    message: '"it is said that" does not say who'
+    verdict: correct
+    note: '"It is said that" without saying who'
+  - rule: unknown-word
+    line: 195
+    text: damge to the access road and the cave ac
+    message: '"damge" is not in the dictionary; did you mean "damage"?'
+    verdict: correct
+    note: '"damge" is a real typo for damage'
+  - rule: heading-level-skip
+    line: 201
+    text: "#### Where can I learn about the General"
+    message: Heading "Where can I learn about the General Management Plan for the parks?" goes from level 2 to level 4 (expected 3)
+    verdict: correct
+    note: h4 question directly under an h2 section
+  - rule: heading-end-punctuation-mix
+    line: 221
+    text: "#### Mailing Address:"
+    message: The heading "Mailing Address:" ends with ":", while 34 other headings end bare ("Which park do I go to?")
+    verdict: false-positive
+    note: the site footer's contact labels (Mailing Address:, Phone:) are a template convention, not the FAQ's headings
+  - rule: heading-end-punctuation-mix
+    line: 226
+    text: "#### Phone:"
+    message: The heading "Phone:" ends with ":", while 34 other headings end bare ("Which park do I go to?")
+    verdict: false-positive
+    note: the site footer's contact labels (Mailing Address:, Phone:) are a template convention, not the FAQ's headings
+  - rule: unknown-word
+    line: 31
+    what: '"thoses" is a typo for "those" (In thoses areas where coverage is found)'
+    verdict: missed
+    note: one letter from "those"; neither the pinned chaff nor lab main reports it

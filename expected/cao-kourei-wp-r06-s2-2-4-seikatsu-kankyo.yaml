@@ -233,8 +233,8 @@ findings:
     line: 121
     text: 地方創生の観点からは、女性、若者、高齢者、障害者など、誰もが居場所と役割を持つコ
     message: 一文に読点が 10 個あります（6 個まで）
-    verdict: correct
-    note: 一文に読点が 10 個あります
+    verdict: false-positive
+    note: Four of the ten commas sit between quoted noun phrases (「交流・居場所」、「活躍・しごと」、「住まい」、「健康」、「人の流れ」), and three between listed nouns (女性、若者、高齢者、障害者). Both are list commas. That leaves six clause commas, which is within the limit (isamu/lab#1506 made quoted items count as a list).
   - rule: max-sentence-length
     line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方
@@ -305,8 +305,8 @@ findings:
     line: 149
     text: 表2－2－7　高齢者等のための公共交通機関施設整備等の状況
     message: 「公共交通機関施設整備等」は漢字が 11 字続いています（10 字まで）
-    verdict: correct
-    note: 表題の「公共交通機関施設整備等」は名前ではない一般の複合語で、「公共交通機関の施設整備」と分けられる
+    verdict: false-positive
+    note: The rule does not count a trailing 等 (its not_flagged says so in both languages). Without 等, 公共交通機関施設整備 is 10 kanji, which is within the limit.
   - rule: no-doubled-joshi
     line: 149
     text: のための公共交通機関施設整備等の状況
@@ -455,8 +455,8 @@ findings:
     line: 216
     text: 更に進むことを踏まえると、高齢者の交通安全対策は重点的に取り組むべき課題であり、
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。14 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 副詞の「更に」（いっそう）は公用文の書き方で漢字、接続詞の「さらに」は仮名；書き分けどおり
+    verdict: correct
+    note: The page writes さらに everywhere else; the owner's decision is that a mix of 更に and さらに is a variant to report, as in the four mext-chukyo findings judged correct.
   - rule: max-sentence-length
     line: 218
     text: 高齢者が安全な交通行動を実践することができるよう必要な実践的技術及び交通ルール等

@@ -751,6 +751,27 @@
 - id: fr-2026-20427-ibogaine-trials-rfi
   match: "855-543-3784"
   reason: the published toll-free number of FDA's Center for Drug Evaluation and Research (Division of Drug Information), given in the Federal Register notice
+- id: egov-account-toroku
+  match: "e-gov.2020@e-gov.go.jp"
+  reason: a made-up address in the page's own example of case-insensitive addresses, on the agency's domain, not a real mailbox
+- id: egov-account-toroku
+  match: "e-Gov.2020@e-gov.go.jp"
+  reason: a made-up address in the page's own example of case-insensitive addresses, on the agency's domain, not a real mailbox
+- id: nps-glacier-faqs
+  match: "406-888-7800"
+  reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-5253-2111"
+  reason: 内閣府's published switchboard number, given in the press release as the contact for the survey method
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-3581-3351"
+  reason: 環境省's published switchboard number, given in the press release as the contact for the survey results
+- id: fsa-press-2026-10-09-cyber-taisaku
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)
+- id: fsa-press-2026-10-05-delta-wall
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)
 - id: ai-en-email-holiday-schedule
   match: "(555) 214-7788"
   reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction

@@ -1,0 +1,363 @@
+id: arxiv-2609-24242-anticipatory-human-oversight
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 5
+    text: "###### Abstract"
+    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
+    verdict: false-positive
+    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
+  - rule: no-em-dash
+    line: 7
+    text: —systems that plan, decompose goals, and
+    message: 10 dashes per 1000 words (limit 8)
+    verdict: correct
+    note: the paper uses em dashes heavily (10 per 1000 words)
+  - rule: orthographic-variant
+    line: 17
+    text: longstanding aspiration of AI research a
+    message: '"longstanding" here, where the document usually writes "long-standing" (1 of 3)'
+    verdict: correct
+    note: '"longstanding" once where the paper writes "long-standing"'
+  - rule: citation-reference-mismatch
+    line: 19
+    text: Union (2024), and most major AI governan
+    message: The citation "Union (2024)" names union 2024, which is not in the reference list
+    verdict: false-positive
+    note: a corporate author (European Parliament and Council of the European Union) read as the surname "Union"
+  - rule: unqualified-superlative
+    line: 47
+    text: The most important divergence is the sec
+    message: '"the most" has nothing to compare against (2 such claims)'
+    verdict: false-positive
+    note: '"the most important divergence" compares the divergences just listed'
+  - rule: citation-reference-mismatch
+    line: 63
+    text: Sio (2020) answer this question by disti
+    message: The citation "Sio (2020)" names sio 2020, which is not in the reference list
+    verdict: false-positive
+    note: '"Santoni de Sio" is a particle surname; the reference is in the list as Mecacci and Santoni de Sio (2020)'
+  - rule: citation-reference-mismatch
+    line: 67
+    text: Sio and Mecacci (2021) articulates four
+    message: The citation "Sio and Mecacci (2021)" names sio 2021, which is not in the reference list
+    verdict: false-positive
+    note: '"Santoni de Sio" is a particle surname; the reference is in the list as Santoni de Sio and Mecacci (2021)'
+  - rule: unknown-word
+    line: 87
+    text: operationalises the agenda in a form the
+    message: '"operationalises" is not in the dictionary; did you mean "operationalise"?'
+    verdict: false-positive
+    note: '"operationalises" is the British spelling of a standard word'
+  - rule: max-paragraph-length
+    line: 91
+    text: An agenda articulated for a real deploym
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a paragraph of ten or more sentences
+  - rule: unknown-word
+    line: 109
+    text: generalism imagines—the holism of reason
+    message: '"generalism" is not in the dictionary; did you mean "generalist"?'
+    verdict: false-positive
+    note: '"generalism" is a term of moral philosophy (the contrast to particularism)'
+  - rule: unknown-word
+    line: 109
+    text: particularist enough to recognise that w
+    message: '"particularist" is not in the dictionary; did you mean "particularism"?'
+    verdict: false-positive
+    note: '"particularist" is a term of moral philosophy'
+  - rule: all-caps-shouting
+    line: 131
+    text: REDACTED FOR REASONS OF ANONYMITY DURING
+    message: '"REDACTED FOR REASONS OF ANONYMITY DURING REVIEW" is written in capitals'
+    verdict: false-positive
+    note: a review-anonymisation placeholder in brackets, not shouting (its survival in the public version is a different slip)
+  - rule: dangling-reference
+    line: 131
+    text: Article 14(4)(a). The second is theoreti
+    message: '"Article 14(4)(a)" (address 14.4.a) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 141
+    text: Article 14 AI Act must remain an open qu
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 141
+    text: Article 14(3) AI Act demands oversight m
+    message: '"Article 14(3)" (address 14.3) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: citation-reference-mismatch
+    line: 149
+    text: Robichaud and Wieland (2017). We argue i
+    message: The citation "Robichaud and Wieland (2017)" names robichaud 2017, which is not in the reference list
+    verdict: correct
+    note: Robichaud and Wieland (2017) is cited but missing from the reference list
+  - rule: citation-reference-mismatch
+    line: 151
+    text: Poel (2011) on forward-looking responsib
+    message: The citation "Poel (2011)" names poel 2011, which is not in the reference list
+    verdict: false-positive
+    note: '"Van de Poel" is a particle surname; the reference is in the list as Van de Poel (2011)'
+  - rule: max-paragraph-length
+    line: 157
+    text: From these three premises the conclusion
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a paragraph of ten or more sentences
+  - rule: max-paragraph-length
+    line: 169
+    text: So understood, the framework distinguish
+    message: This paragraph runs 11 sentences (limit 9)
+    verdict: correct
+    note: a paragraph of ten or more sentences
+  - rule: unqualified-superlative
+    line: 219
+    text: The most immediate objection is that ant
+    message: '"the most" has nothing to compare against (2 such claims)'
+    verdict: false-positive
+    note: '"the most immediate objection" compares the objections the section goes on to list'
+  - rule: max-paragraph-length
+    line: 223
+    text: Institutional and material preconditions
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a paragraph of ten or more sentences
+  - rule: dangling-reference
+    line: 233
+    text: Article 14 AI Act requires human oversig
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14 AI Act. For the reasons laid
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14 AI Act. The architectural des
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14(4) AI Act specifies how our f
+    message: '"Article 14(4)" (address 14.4) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14(4) AI Act. Inspectability cor
+    message: '"Article 14(4)" (address 14.4) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14(4)(a) AI Act, i.e., the abili
+    message: '"Article 14(4)(a)" (address 14.4.a) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14(4)(c) AI Act, the ability “to
+    message: '"Article 14(4)(c)" (address 14.4.c) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 233
+    text: Article 14(4)(d) and (e) AI Act, the abi
+    message: '"Article 14(4)(d)" (address 14.4.d) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: max-paragraph-length
+    line: 233
+    text: Regulatory compliance. For the EU AI Act
+    message: This paragraph runs 10 sentences (limit 9)
+    verdict: correct
+    note: a paragraph of ten or more sentences
+  - rule: dangling-reference
+    line: 235
+    text: Article 14 AI Act establishes obligation
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 14 AI Act obliges providers (tho
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 14 AI Act would still establish
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 14 AI Act, it raises the questio
+    message: '"Article 14" (address 14) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 26 AI Act and be an obligation f
+    message: '"Article 26" (address 26) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 26(1) AI Act obliges the deploye
+    message: '"Article 26(1)" (address 26.1) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 235
+    text: Article 26(2) AI Act requires deployers
+    message: '"Article 26(2)" (address 26.2) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 237
+    text: Article 25 anticipates the dynamic natur
+    message: '"Article 25" (address 25) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 237
+    text: Article 25.
+    message: '"Article 25" (address 25) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 239
+    text: 26(5), and 72 condition the loop between
+    message: '"26(5)" (address 26.5) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 239
+    text: 72 condition the loop between deployment
+    message: '"72" (address 72) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 239
+    text: Article 26 condition the practice by con
+    message: '"Article 26" (address 26) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 239
+    text: Articles 20, 26(5), and 72 condition the
+    message: '"Articles 20" (address 20) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: dangling-reference
+    line: 239
+    text: Articles 8–15 condition the architectura
+    message: '"Articles 8" (address 8) is not in this document'
+    verdict: false-positive
+    note: an article of the EU AI Act (Regulation 2024/1689), an external statute the paper names, not an address inside the paper
+  - rule: article-sound
+    line: 241
+    text: an neuro-symbolic containment architectu
+    message: '"an neuro" takes "a" before that sound'
+    verdict: correct
+    note: '"an neuro-symbolic" should be "a neuro-symbolic"'
+  - rule: reference-topic-missing
+    line: 241
+    text: Section 3.5 formulate a research agenda
+    message: '"mulate" does not appear in Section 3.5 (Three Architectural Desiderata)'
+    verdict: false-positive
+    note: a sentence fragment ("mulate") cut out of "formulate" is read as a topic word
+  - rule: which-that-consistency
+    line: 241
+    text: which instantiates a reason-based, defea
+    message: This restrictive clause opens with "which"; the document mostly uses "that"
+    verdict: correct
+    note: a restrictive "which" (an architecture which instantiates) where the paper otherwise uses "that"
+  - rule: ngram-repetition
+    line: 271
+    text: "Cited by: footnote 2."
+    message: '"Cited by: footnote" appears 26 times (limit 5)'
+    verdict: false-positive
+    note: "\"Cited by: footnote\" is arXiv's back-reference label in each reference entry"
+  - rule: dangling-reference
+    line: 275
+    text: "Article 12 External Links: Document Cite"
+    message: '"Article 12" (address 12) is not in this document'
+    verdict: false-positive
+    note: '"Article 12" is the article number of a journal paper in a reference entry'
+  - rule: citation-reference-mismatch
+    line: 286
+    text: "- Duff (2007) A. Duff Answering for crim"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: citation-reference-mismatch
+    line: 291
+    text: "- European Parliament and Council of the"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: spelling-consistency
+    line: 307
+    text: behavior, agency costs and ownership str
+    message: '"behavior" here, where the document usually spells it "behaviour" (2 of 27)'
+    verdict: false-positive
+    note: '"behavior" is in the title of a cited work'
+  - rule: fact-conflict
+    line: 319
+    text: "2605.27117, Link Cited by: §3.1, footnot"
+    message: '"External Links" is 2605.27117 here, but 2506.01463 earlier in the same section'
+    verdict: false-positive
+    note: two different arXiv identifiers of two different references, not one fact stated twice
+  - rule: citation-reference-mismatch
+    line: 323
+    text: "- Mecacci and Santoni de Sio (2020) G. M"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: spelling-consistency
+    line: 324
+    text: behavior. Oxford University Press, New Y
+    message: '"behavior" here, where the document usually spells it "behaviour" (2 of 27)'
+    verdict: false-positive
+    note: '"behavior" is in the title of a cited work'
+  - rule: citation-reference-mismatch
+    line: 334
+    text: "- Santoni de Sio and Mecacci (2021) F. S"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: citation-reference-mismatch
+    line: 335
+    text: "- Santoni de Sio and van den Hoven (2018"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: citation-reference-mismatch
+    line: 341
+    text: "- Shoemaker (2013) D. Shoemaker On crimi"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: citation-reference-mismatch
+    line: 342
+    text: "- Shoemaker (2015) D. Shoemaker Responsi"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
+  - rule: citation-reference-mismatch
+    line: 348
+    text: "- Van de Poel (2011) I. Van de Poel The"
+    message: This entry of the reference list is never cited in the text
+    verdict: false-positive
+    note: the entry is cited in the text; a multi-word or particle surname (Santoni de Sio, Van de Poel) or a footnote citation is not matched
