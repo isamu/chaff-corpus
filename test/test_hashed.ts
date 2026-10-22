@@ -142,7 +142,7 @@ describe("hashed entries: reports", () => {
       chaffVersion: "0.34.0",
       notRun: [],
       problems: [],
-      results: [{ id: "doc", genre: "g", language: "en", fullyJudged: false, outcomes: [{ kind: "new", rule: "a", line: 1, sha256: hashOfX }] }],
+      results: [{ id: "doc", genre: "g", language: "en", origin: "human", fullyJudged: false, outcomes: [{ kind: "new", rule: "a", line: 1, sha256: hashOfX }] }],
     };
     assert.deepEqual(parseShardResult(JSON.parse(shardJson(shard))), shard);
   });

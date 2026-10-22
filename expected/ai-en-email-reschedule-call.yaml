@@ -1,0 +1,55 @@
+id: ai-en-email-reschedule-call
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    text: "[Client Name],"
+    message: '"[Client Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user; an unfilled bracket is the plainest sign the email came from an assistant
+  - rule: ai-tell
+    line: 5
+    what: "\"I hope you're having a good week.\" as the opener"
+    verdict: missed
+    note: the stock opener of a generated email (I hope this email finds you well family)
+  - rule: max-sentence-length
+    line: 7
+    text: I want our time together to be as produc
+    message: This sentence runs 31 words (limit 18)
+    verdict: correct
+    note: 31 words of padding ("as productive as possible", "a real difference in the quality"); reads as generated filler
+  - rule: max-sentence-length
+    line: 7
+    text: We're still finalizing the draft, and I'
+    message: This sentence runs 21 words (limit 18)
+    verdict: false-positive
+    note: 21 words, one clear point; not an AI sign
+  - rule: max-sentence-length
+    line: 15
+    text: If none of these suit your schedule, jus
+    message: This sentence runs 22 words (limit 18)
+    verdict: false-positive
+    note: 22 words, an ordinary scheduling courtesy
+  - rule: closing-cliche
+    line: 17
+    what: "\"I apologize for any inconvenience this may cause, and I appreciate your flexibility. I'm looking forward to ...\""
+    verdict: missed
+    note: three stock closing courtesies in a row
+  - rule: unfilled-placeholder
+    line: 21
+    text: "[Your Name]"
+    message: '"[Your Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: unfilled-placeholder
+    line: 22
+    text: "[Your Title]"
+    message: '"[Your Title]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: unfilled-placeholder
+    line: 23
+    text: "[Company Name]"
+    message: '"[Company Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user

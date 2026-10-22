@@ -6,7 +6,7 @@ import { join } from "node:path";
 import { CACHE } from "./corpus.ts";
 import { decodeFetched } from "./html/fetched-text.ts";
 import { hfRowUrl, hfText, isPinned, type HfRow } from "./hf-row.ts";
-import { EXTENSION, MAX_TEXT_BYTES, sha256Of, type Meta } from "./meta.ts";
+import { EXTENSION, MAX_TEXT_BYTES, sha256Of, type Meta, type Source } from "./meta.ts";
 import { convertedText } from "./source-format.ts";
 
 const FETCH_TIMEOUT_MS = 30 * 1000;
@@ -43,11 +43,11 @@ const hfMismatchReason = (hf: HfRow): string =>
     ? `the record at ${hf.dataset}@${hf.revision} ${hf.file ?? ""} line ${String(hf.offset)} does not match sha256`
     : `the record at ${hf.dataset} ${hf.config}/${hf.split} row ${String(hf.offset)} does not match sha256 (the rows API serves the latest commit, not ${hf.revision}; the dataset may have changed)`;
 
-const mismatchReason = (meta: Meta): string => {
-  if (meta.source.hf !== undefined) return hfMismatchReason(meta.source.hf);
-  return meta.source.format === undefined
+const mismatchReason = (source: Source): string => {
+  if (source.hf !== undefined) return hfMismatchReason(source.hf);
+  return source.format === undefined
     ? "the text at source.url does not match sha256 (it changed, or it was converted when judged and source.format is missing)"
-    : `the text at source.url, converted from ${meta.source.format}, does not match sha256 (the source changed upstream)`;
+    : `the text at source.url, converted from ${source.format}, does not match sha256 (the source changed upstream)`;
 };
 
 const fetchedHfText = async (hf: HfRow): Promise<string> => {
@@ -56,18 +56,18 @@ const fetchedHfText = async (hf: HfRow): Promise<string> => {
   return text.value;
 };
 
-const fetchedSourceText = async (meta: Meta): Promise<string> =>
-  meta.source.hf === undefined ? convertedText(meta.source.format, await fetchText(meta.source.url)) : fetchedHfText(meta.source.hf);
+const fetchedSourceText = async (source: Source): Promise<string> =>
+  source.hf === undefined ? convertedText(source.format, await fetchText(source.url)) : fetchedHfText(source.hf);
 
-const fromNetwork = async (meta: Meta): Promise<Available> => {
+const fromNetwork = async (meta: Meta, source: Source): Promise<Available> => {
   try {
-    const text = await fetchedSourceText(meta);
-    if (sha256Of(text) !== meta.sha256) return { unavailable: mismatchReason(meta) };
+    const text = await fetchedSourceText(source);
+    if (sha256Of(text) !== meta.sha256) return { unavailable: mismatchReason(source) };
     mkdirSync(CACHE, { recursive: true });
     writeFileSync(cachePath(meta), text);
     return { text };
   } catch (error) {
-    return { unavailable: `cannot fetch ${meta.source.url}: ${error instanceof Error ? error.message : String(error)}` };
+    return { unavailable: `cannot fetch ${source.url}: ${error instanceof Error ? error.message : String(error)}` };
   }
 };
 
@@ -76,5 +76,5 @@ export const uncommittedText = async (meta: Meta, offline: boolean): Promise<Ava
   const cached = fromCache(meta);
   if (cached !== undefined && "text" in cached) return cached;
   if (offline) return cached ?? { unavailable: `not in ${CACHE} (offline)` };
-  return fromNetwork(meta);
+  return meta.source === undefined ? { unavailable: "no source to fetch the text from" } : fromNetwork(meta, meta.source);
 };

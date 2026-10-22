@@ -1,0 +1,16 @@
+id: ai-en-proposal-four-day-week
+title: "Proposal: a four-day week pilot"
+language: en
+genre: business/proposal
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a proposal to my manager for a three-month four-day work week pilot for our 12-person design team. Make it sound natural, not like AI wrote it."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: a77398fbc37a6e3239c732878a7b83d2c03bd90ca40b45ebd8a5cd3158352c37
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."

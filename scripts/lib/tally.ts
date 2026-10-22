@@ -6,6 +6,8 @@ export type DocumentResult = {
   readonly id: string;
   readonly genre: string;
   readonly language: string;
+  /** human or ai (meta.ts ORIGINS). */
+  readonly origin: string;
   readonly fullyJudged: boolean;
   readonly outcomes: readonly Outcome[];
 };
@@ -41,6 +43,12 @@ const tallyBy = (results: readonly DocumentResult[], keyOf: (result: DocumentRes
 export const tallyByRule = (results: readonly DocumentResult[]): Map<string, Counts> => tallyBy(results, (_, outcome) => outcome.rule);
 
 export const tallyByGenre = (results: readonly DocumentResult[]): Map<string, Counts> => tallyBy(results, (result) => result.genre);
+
+export const tallyByOrigin = (results: readonly DocumentResult[]): Map<string, Counts> => tallyBy(results, (result) => result.origin);
+
+/** The origins other than human that the run holds, sorted: each gets its own table by rule. */
+export const otherOrigins = (results: readonly DocumentResult[]): string[] =>
+  [...new Set(results.map((result) => result.origin).filter((origin) => origin !== "human"))].toSorted();
 
 export const total = (table: ReadonlyMap<string, Counts>): Counts =>
   [...table.values()].reduce((sum, counts) => countsFrom((kind) => sum[kind] + counts[kind]), emptyCounts());

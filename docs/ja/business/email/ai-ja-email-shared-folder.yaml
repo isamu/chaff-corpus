@@ -1,0 +1,16 @@
+id: ai-ja-email-shared-folder
+title: "共有フォルダ整理への協力のお願い（社内メール）"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "他部署の人たちに、共有フォルダの整理を手伝ってほしいとお願いするメールを書いて。来月から新しいフォルダ構成に切り替えるので、各部署で不要なファイルを11月14日までに消すか移動してほしい。堅すぎず、自然な文章で。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 6b89674c206bb36b337c809f82920021456adaac67a8f6fa3cda90abacf19acf
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,16 @@
+id: ai-en-email-office-closed
+title: "Office closed Friday (team email)"
+language: en
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write an email to my team letting them know the office will be closed this Friday (November 7) for electrical maintenance and everyone should work from home. Keep it casual."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: c0bb366a1c407ef97db41e390d1be5dafac7eaa51281e95c7a1dd0c9f3d45ae8
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."

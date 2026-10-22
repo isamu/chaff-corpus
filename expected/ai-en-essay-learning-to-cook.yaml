@@ -1,0 +1,48 @@
+id: ai-en-essay-learning-to-cook
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "Learning to Cook as an Adult" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: a personal essay; no claim in it asks for a number or link
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 21% (want at least 35%)
+    verdict: correct
+    note: a short personal essay cut into four headed sections of one size; a reader takes the template outline as generated
+  - rule: concrete-evidence-density
+    line: 13
+    text: ""
+    message: Section "The Slow Shift" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: a personal essay section; no claim asks for a number
+  - rule: contrast-framing
+    line: 15
+    what: "three \"not X, but Y\" frames: \"salt isn't just about making food salty; it makes ...\" (15), \"What surprised me most wasn't the food itself ... It was ...\" (21), \"people don't really come over for the food. They come for ...\" (23)"
+    verdict: missed
+    note: contrast-framing does not match these forms (isn't just about; wasn't X. It was Y; don't X. They Y)
+  - rule: concrete-evidence-density
+    line: 19
+    text: ""
+    message: Section "What It Gave Me" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: a personal essay section; no claim asks for a number
+  - rule: rule-of-three
+    line: 23
+    what: 'inline triads: "the table, the conversation, the feeling of being cared for"; "cooking, a language, or an instrument" (29); "scrambled eggs, roasted vegetables, a basic tomato soup" (11)'
+    verdict: missed
+    note: "candidate pattern: inline triads in prose; rule-of-three counts only lists"
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: Section "It's Never Too Late" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: a personal essay section; no claim asks for a number
+  - rule: closing-cliche
+    line: 29
+    what: the moral for the reader ("I'd gently suggest that it isn't", "one of the quiet joys of life") and the quip "just a really good bowl of soup" (31)
+    verdict: missed
+    note: a lesson-and-callback ending

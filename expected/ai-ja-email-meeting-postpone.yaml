@@ -1,0 +1,13 @@
+id: ai-ja-email-meeting-postpone
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 伏せ字の宛名「株式会社〇〇」「〇〇様」（7行目・20行目の署名も〇〇）が埋まっていない
+    verdict: missed
+    note: the English email's [Client Name] is found; the Japanese 〇〇 blank is not. A reader takes an unfilled 〇〇 as an assistant's template
+  - rule: ai-tell
+    line: 11
+    what: 自分の都合の延期を「〇〇様にとっても有意義な場になる」と相手の利益に言い換えている
+    verdict: missed
+    note: "candidate pattern: a request recast as the recipient's benefit (相手にとっても有意義, so you can get the most out of); also in ai-en-email-reschedule-call"

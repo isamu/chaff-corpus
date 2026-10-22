@@ -7,7 +7,7 @@ import type { DocumentResult } from "../scripts/lib/tally.ts";
 
 const outcome = (kind: OutcomeKind, rule: string, line = 1): Outcome => ({ kind, rule, line, text: "t" });
 
-const doc = (id: string, fullyJudged: boolean, outcomes: readonly Outcome[]): DocumentResult => ({ id, genre: "business/report", language: "en", fullyJudged, outcomes });
+const doc = (id: string, fullyJudged: boolean, outcomes: readonly Outcome[]): DocumentResult => ({ id, genre: "business/report", language: "en", origin: "human", fullyJudged, outcomes });
 
 const shardA: ShardResult = {
   chaffVersion: "0.34.0",
@@ -35,6 +35,13 @@ describe("shard results as JSON", () => {
     assert.deepEqual(parseShardResult(roundTrip(withFinding)), { ...withFinding, results: [doc("b", false, [outcome("new", "a")])] });
   });
 
+  it("keeps a document's origin, and reads a result without one as human", () => {
+    const aiShard: ShardResult = { ...shardA, results: [{ ...doc("b", false, []), origin: "ai" }] };
+    assert.deepEqual(parseShardResult(roundTrip(aiShard)), aiShard);
+    const { origin: _origin, ...withoutOrigin } = doc("b", false, []);
+    assert.deepEqual(parseShardResult({ ...shardA, results: [withoutOrigin] })?.results, [doc("b", false, [])]);
+  });
+
   it("rejects what is not a shard result", () => {
     const valid = roundTrip(shardB);
     assert.ok(typeof valid === "object" && valid !== null);
@@ -49,6 +56,9 @@ describe("shard results as JSON", () => {
       { ...valid, notRun: [{ id: "z" }] },
       { ...valid, problems: [1] },
       { ...valid, results: [{ ...shardB.results[0], fullyJudged: "yes" }] },
+      { ...valid, results: [{ ...shardB.results[0], origin: "" }] },
+      { ...valid, results: [{ ...shardB.results[0], origin: "robot" }] },
+      { ...valid, results: [{ ...shardB.results[0], origin: null }] },
       { ...valid, results: [{ ...shardB.results[0], outcomes: [{ kind: "lost", rule: "a", line: 1, text: "t" }] }] },
       { ...valid, results: [{ ...shardB.results[0], outcomes: [{ kind: "new", rule: "a", line: 0, text: "t" }] }] },
     ].forEach((value, index) => assert.equal(parseShardResult(value), undefined, String(index)));

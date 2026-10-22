@@ -1,0 +1,48 @@
+id: ai-ja-tech-python-venv
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 1
+    what: 題と5行目の「わかりやすく解説」、題頭の【初心者向け】
+    verdict: missed
+    note: the SEO-template title of a generated beginner article; candidate phrase for the ai-tell list (わかりやすく解説)
+  - rule: padded-intro
+    line: 3
+    text: でも、なぜ必要なのか、どうやって使うのかがよくわからないという方も多いのではない
+    message: 「方も多いのではないでしょうか」は、どの記事にも当てはまる書き出しです
+    verdict: correct
+    note: "「〜という方も多いのではないでしょうか」: the stock opening of a generated beginner article"
+  - rule: list-item-form-mix
+    line: 13
+    text: プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBではバ
+    message: 「プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBではバージョン2.0が必要」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
+    verdict: correct
+    note: one item ends in a noun, the others in verbs; an editor would align them. Not an AI sign
+  - rule: latin-spacing
+    line: 101
+    text: " PowerShell では、セキュリティの設定により `Activate.ps"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。23 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: the only place the document spaces Japanese from Latin (Windowsの PowerShell では); a slip, not an AI sign
+  - rule: latin-spacing
+    line: 101
+    text: " では、セキュリティの設定により `Activate.ps1` が実行できないこ"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。23 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: the same slip on the other side of PowerShell
+  - rule: code-fence-language-mix
+    line: 111
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 10 個）
+    verdict: correct
+    note: the one block with no language name (.gitignore content); not an AI sign
+  - rule: empty-conclusion
+    line: 117
+    what: 「まとめ」が本文の3点を箇条書きで言い直すだけ
+    verdict: missed
+    note: the closing restates the body as three bullets
+  - rule: closing-cliche
+    line: 123
+    what: 「〜習慣をつけておきましょう！」（95行目の「ぜひ覚えておきましょう」も）の呼びかけで締める
+    verdict: missed
+    note: "candidate phrase: ぜひ〜しましょう／〜しておきましょう！ as a closing exhortation"

@@ -121,6 +121,7 @@ const resultOf = (meta: Meta, findings: readonly Finding[], expected: Expected |
   id: meta.id,
   genre: meta.genre,
   language: meta.language,
+  origin: meta.origin,
   fullyJudged: isFullyJudged(expected),
   outcomes: matchDocument(expected?.findings ?? [], findings).map((outcome) => (meta.redistribute ? outcome : withoutText(outcome))),
 });

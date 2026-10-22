@@ -1,0 +1,92 @@
+id: ai-en-tech-photo-backup
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "How to Back Up Your Photos (and Why You Should Do It Today)" has no number, code or link (4 of 8 sections)
+    verdict: false-positive
+    note: the introduction needs no number
+  - rule: unqualified-superlative
+    line: 3
+    text: Your photos are some of the most irrepla
+    message: '"the most" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: '"some of the most irreplaceable files you own" compares within your files; the hook is a cliche, not an unbacked superlative'
+  - rule: unqualified-superlative
+    line: 5
+    text: In this guide, we'll walk through the be
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: correct
+    note: "\"we'll walk through the best ways\": the stock unbacked promise of a generated guide"
+  - rule: padded-intro
+    line: 5
+    what: "\"The good news is that ... In this guide, we'll walk through ...\""
+    verdict: missed
+    note: the stock opening of a generated guide
+  - rule: ai-tell
+    line: 9
+    what: '"Before diving into specific tools", "the golden rule of backups"; and "a powerful solution for photography enthusiasts" (49)'
+    verdict: missed
+    note: generated-guide phrasing the ai-tell list does not hold
+  - rule: adverb-overuse
+    line: 15
+    text: perfectly, but the closer you get, the s
+    message: 21 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: filler adverbs (simply, automatically, actually) typical of generated how-to prose
+  - rule: ai-structure
+    line: 17
+    what: Option 1/2/3 sections, each a bold-label list followed by bold **Pros:** / **Cons:** lines
+    verdict: missed
+    note: the templated comparison outline; ai-score counted only the bold labels
+  - rule: colon-lead-in
+    line: 21
+    what: '"Popular options include:" and "a great setup looks like this:" (53) hand over to lists'
+    verdict: missed
+    note: colon-lead-in is a ja-only rule
+  - rule: bold-label-list
+    line: 23
+    what: "bold-label bullets (23-26, 38-39, 55-57) and bold Pros:/Cons: lines"
+    verdict: missed
+    note: bold-label-list is a ja-only rule
+  - rule: concrete-evidence-density
+    line: 45
+    text: ""
+    message: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
+    verdict: correct
+    note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic
+  - rule: article-sound
+    line: 47
+    text: a NAS is a small device that sits on you
+    message: '"a NAS" takes "an" before that sound'
+    verdict: false-positive
+    note: NAS is said as one syllable ("nas"), so "a NAS" is right
+  - rule: concrete-evidence-density
+    line: 61
+    text: ""
+    message: Section "Don't Forget to Test Your Backups" has no number, code or link (4 of 8 sections)
+    verdict: false-positive
+    note: a short how-to step; "every few months" is enough
+  - rule: concrete-evidence-density
+    line: 65
+    text: ""
+    message: Section "Final Thoughts" has no number, code or link (4 of 8 sections)
+    verdict: false-positive
+    note: the closing's fault is the stock wording (recorded as closing-cliche), not a missing number
+  - rule: unqualified-superlative
+    line: 67
+    text: The best backup plan is the one you'll a
+    message: '"the best" has nothing to compare against (3 such claims)'
+    verdict: false-positive
+    note: "\"the best plan is the one you'll stick with\" compares plans; it is a stock aphorism (recorded as cliche), not an unbacked superlative"
+  - rule: closing-cliche
+    line: 67
+    what: "\"Final Thoughts\": \"easy to put off — until it's too late\", \"Your future self will thank you.\""
+    verdict: missed
+    note: stock closing lines of a generated post
+  - rule: cliche
+    line: 67
+    what: "\"The best backup plan is the one you'll actually stick with\""
+    verdict: missed
+    note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39

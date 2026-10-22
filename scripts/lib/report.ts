@@ -1,6 +1,6 @@
 // The run's report as Markdown: for the terminal and for the GitHub job summary. Pure.
 import type { Outcome } from "./match.ts";
-import { failuresOf, precisionOf, tallyByGenre, tallyByRule, total, type Counts, type DocumentResult, type Failure } from "./tally.ts";
+import { failuresOf, otherOrigins, precisionOf, tallyByGenre, tallyByOrigin, tallyByRule, total, type Counts, type DocumentResult, type Failure } from "./tally.ts";
 
 /** What the report says besides the results: the chaff it ran, and the documents it could not run and why. */
 export type RunContext = {
@@ -59,7 +59,15 @@ const changeLines = (results: readonly DocumentResult[]): string[] => {
   return changes.length === 0 ? [] : ["## Improvements", "", ...changes, ""];
 };
 
-/** The whole report: what failed, what improved, and the tables per rule and per genre. */
+/** When the run holds documents not written by people: the table by origin, and one by rule for each such origin. */
+const originLines = (results: readonly DocumentResult[]): string[] => {
+  const origins = otherOrigins(results);
+  if (origins.length === 0) return [];
+  const byRule = origins.flatMap((origin) => [`## By rule, origin ${origin}`, "", ...table("rule", tallyByRule(results.filter((result) => result.origin === origin))), ""]);
+  return ["## By origin", "", ...table("origin", tallyByOrigin(results)), "", ...byRule];
+};
+
+/** The whole report: what failed, what improved, and the tables per rule and per genre (and per origin, when it varies). */
 export const renderReport = (results: readonly DocumentResult[], context: RunContext): string =>
   [
     `# chaff-corpus: chaffjs ${context.chaffVersion}, ${String(results.length)} documents`,
@@ -76,4 +84,5 @@ export const renderReport = (results: readonly DocumentResult[], context: RunCon
     "",
     ...table("genre", tallyByGenre(results)),
     "",
+    ...originLines(results),
   ].join("\n");

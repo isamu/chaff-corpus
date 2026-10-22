@@ -78,6 +78,11 @@ findings:
    CC BY, CC BY-SA, a government open-data licence, MIT, Apache-2.0, …) — or, if it does not, you add only its
    `.yaml` and set `redistribute: false`. Never commit a text whose licence you have not read.
 2. **Check it is human-written and holds no personal data.** No private person's name, email address or phone number.
+   A text a model wrote for this repository is welcome too, as `origin: ai` (see
+   [the README](README.md#a-document-written-by-a-model-origin-ai)): it has `generated` (the exact model name, the
+   request as given, the date) in place of `source`, and since it was written for this repository it is under the
+   repository's licence (`license.name: MIT`) with `redistribute: true`. `yarn validate` checks all three. Commit the
+   document part of the reply unedited.
    A published contact (a press office, a public hotline) may stay; add it to `allowlist.yaml` with the reason.
 3. **Pick the language and genre.** `ja` or `en`; a genre from `npx chaff genres`.
 4. **Add the files**: the text at `docs/<lang>/<genre>/<id>.md` (or `.txt` with `format: text` for plain text), and the
@@ -103,6 +108,9 @@ Open `expected/<id>.yaml` beside the document and read each finding **in context
   read as a sentence", "a defined term used before its definition, which the document allows") is what turns into a
   fix in chaff.
 - Leave `unjudged` what you are not sure of. A partly judged document is fine.
+- On a document of `origin: ai`, also ask of each finding of the `ai-tells` rules whether a reader would take it as a
+  sign the text was generated, and record each sign a careful reader notices and chaff does not report as `missed`,
+  naming it precisely ("every section ends in a summary sentence").
 - `missed`: something chaff should find and does not. Add an entry with `rule`, `line`, `what` and `verdict: missed`.
 
 Do not change `text` or `line`: they are how the run finds the finding again.

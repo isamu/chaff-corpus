@@ -1,0 +1,45 @@
+id: ai-ja-proposal-invoice-digital
+chaff: 0.36.0
+findings:
+  - rule: ai-structure
+    line: 1
+    what: 背景・課題・提案・効果・費用・スケジュール・懸念点・まとめの番号付きひな形に、太字の札の箇条書きを並べた構成
+    verdict: missed
+    note: "the textbook generated proposal outline; ai-structure (ai-score: Structure) did not count it"
+  - rule: colon-lead-in
+    line: 11
+    what: 「主に次のような課題があります。」で箇条書きへ渡している（句点で終わる前置き）
+    verdict: missed
+    note: colon-lead-in counts only a colon; 「次のような〜があります。」「次の 2 つです。」 is the Japanese form of the same lead-in
+  - rule: bold-label-list
+    line: 13
+    text: "- **作業負担が大きい**：入力と確認に月約90時間かかっており、本来注力すべ"
+    message: 「作業負担が大きい」など、太字の札で始まる項目が 9 個あります（5 個から）
+    verdict: correct
+    note: two lists of 「**札**：説明」 items (課題, 効果); the generated proposal shape
+  - rule: paragraph-restatement
+    line: 13
+    what: 「月約90時間」の負担を背景（5行）と課題の1項目めで二度言っている
+    verdict: missed
+    note: a fact restated in the next section
+  - rule: bold-density
+    line: 31
+    text: 作業時間の削減**：入力作業がなくなり、確認作業が中心となるため、月90時間の作
+    message: このセクションは 213 字に太字が 5 箇所あります（1000 字あたり 20 箇所まで）
+    verdict: correct
+    note: five bold labels in one short section, the same list shape
+  - rule: ai-generated-composite
+    line: 31
+    what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
+    verdict: missed
+    note: invented estimate stated as fact; needs judgement
+  - rule: unfilled-placeholder
+    line: 39
+    what: 費用が「月額〇万円」「〇万円」「〇か月」（41行目も）のまま
+    verdict: missed
+    note: Japanese 〇 blanks, not found
+  - rule: empty-conclusion
+    line: 60
+    what: 「まとめ」が期待される効果の項目を一文に並べ直しただけ
+    verdict: missed
+    note: the closing restates the benefits list

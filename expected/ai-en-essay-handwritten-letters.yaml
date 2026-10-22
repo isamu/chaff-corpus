@@ -1,0 +1,31 @@
+id: ai-en-essay-handwritten-letters
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 3
+    text: apparently taught everyone in the 1950s.
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: the -ly adverbs (apparently, obviously, really) carry the essay's spoken voice; not an AI sign
+  - rule: max-paragraph-length
+    line: 13
+    text: My handwriting is bad, by the way. Reall
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: false-positive
+    note: seven short sentences ("Really bad.") that read as one beat in a personal essay
+  - rule: quote-without-source
+    line: 13
+    text: sorry, tea." My friend wrote back that i
+    message: '"sorry, tea." is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: false-positive
+    note: the writer quotes their own note on the page; there is no source to give
+  - rule: contrast-framing
+    line: 19
+    what: "\"It's not really about time. It's about which twenty minutes I want to keep.\"; \"Not because ... It's because ...\" (7)"
+    verdict: missed
+    note: the classic "it's not about X, it's about Y" frame; not matched
+  - rule: ai-generated-composite
+    line: 21
+    what: the last paragraph returns to the Lisbon friend and the drawer for a neat callback
+    verdict: missed
+    note: "candidate pattern: a neat callback ending (also ai-ja-essay-grandmother-kitchen); needs judgement"
