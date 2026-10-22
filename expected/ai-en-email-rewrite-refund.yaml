@@ -1,0 +1,39 @@
+id: ai-en-email-rewrite-refund
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: I'm writing to request a refund for orde
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one fact
+  - rule: attachment-not-attached
+    line: 7
+    text: When I opened the box, I noticed that th
+    message: An attachment is mentioned, but no attachment line or file name is shown
+    verdict: false-positive
+    note: the photos are attached when sending; the body cannot show them
+  - rule: max-sentence-length
+    line: 7
+    text: When I opened the box, I noticed that th
+    message: This sentence runs 23 words (limit 18)
+    verdict: false-positive
+    note: 23 words, one description of the damage
+  - rule: max-sentence-length
+    line: 9
+    text: Could you let me know how to send the bo
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one two-part question
+  - rule: request-without-deadline
+    line: 9
+    text: Could you let me know how to send the bo
+    message: This request says neither who should do it nor by when
+    verdict: false-positive
+    note: a customer asking a shop how to return goods; a deadline is not the customer's to set
+  - rule: max-sentence-length
+    line: 11
+    text: I contacted your support chat on Novembe
+    message: This sentence runs 20 words (limit 18)
+    verdict: false-positive
+    note: 20 words, one fact

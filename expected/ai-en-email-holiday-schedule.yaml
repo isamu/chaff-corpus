@@ -1,0 +1,19 @@
+id: ai-en-email-holiday-schedule
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: As we head into the holiday season, here
+    message: This sentence runs 21 words (limit 18)
+    verdict: correct
+    note: 21 words of seasonal lead-in (As we head into the holiday season, here's a quick overview); a stock generated opener
+  - rule: ai-generated-composite
+    line: 10
+    what: the closure dates beyond Thanksgiving, the reopening day, the expense deadline and the IT on-call number (line 22) are not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): a plain request filled with dates staff would act on"
+  - rule: closing-cliche
+    line: 24
+    what: '"feel free to reach out" and "Wishing you all a restful and happy holiday season!"'
+    verdict: missed
+    note: catalog E35 (stock courtesies) and D (closing cheer)

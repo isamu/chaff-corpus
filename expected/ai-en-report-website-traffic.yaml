@@ -1,0 +1,43 @@
+id: ai-en-report-website-traffic
+chaff: 0.36.0
+findings:
+  - rule: adverb-overuse
+    line: 5
+    text: July site update. We recommend a focused
+    message: 18 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: a short paper where mainly, barely and similar carry the comparisons; nothing to cut
+  - rule: number-without-unit
+    line: 11
+    text: 412,000 | 486,000 | +18% |
+    message: '"412,000" has no unit (the other "Q2" values carry "%")'
+    verdict: false-positive
+    note: a count of visits in a table whose last column is a change in %; a count needs no unit
+  - rule: number-without-unit
+    line: 11
+    text: 486,000 | +18% |
+    message: '"486,000" has no unit (the other "Q3" values carry "%")'
+    verdict: false-positive
+    note: as above
+  - rule: number-without-unit
+    line: 12
+    text: 9,460 | −4% |
+    message: '"9,460" has no unit (the other "Q3" values carry "%")'
+    verdict: false-positive
+    note: a count of orders; as above
+  - rule: number-without-unit
+    line: 12
+    text: 9,850 | 9,460 | −4% |
+    message: '"9,850" has no unit (the other "Q2" values carry "%")'
+    verdict: false-positive
+    note: a count of orders; as above
+  - rule: ai-generated-composite
+    line: 19
+    what: 52,000 new visitors from the campaign, the customer feedback, and the $210,000 recovery estimate (line 29) are not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): figures in a board paper nobody measured"
+  - rule: contrast-framing
+    line: 33
+    what: '"the problem is what happens after they arrive, not how they arrive"'
+    verdict: missed
+    note: catalog E12 (X, not Y)

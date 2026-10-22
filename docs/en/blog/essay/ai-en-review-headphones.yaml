@@ -1,0 +1,16 @@
+id: ai-en-review-headphones
+title: "Review: noise-cancelling headphones after six months"
+language: en
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a review blog post of the noise-cancelling headphones I've used for six months (about $280). Great on trains and planes, comfortable, battery lasts a week. Not great against voices in the office, touch controls too sensitive, calls outside are so-so."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 8d652c699275bf04dd52d7bbcdd0a64e9f7b110450c98e65fd1af167e10bbd26
+notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

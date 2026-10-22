@@ -1,0 +1,26 @@
+id: ai-ja-email-apology-wrong-shipment
+chaff: 0.36.0
+findings:
+  - rule: email-subject-length
+    line: 1
+    text: 件名：【お詫び】ご注文商品の誤配送について（ご注文番号：A-20481）
+    message: 件名が 33 字あります（30 字まで）
+    verdict: false-positive
+    note: 33 characters including 【お詫び】 and the order number the customer needs to find the order; conventional for a shop's apology
+  - rule: ai-generated-composite
+    line: 13
+    what: 原因（出荷時の確認不足）、再発防止（二重確認）、到着予定日、クーポンコード SORRY500 と有効期限、受付時間が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): a cause, a countermeasure and a code stated as fact; judgement, needs the prompt"
+  - rule: max-sentence-length
+    line: 26
+    text: ――――――――――――――――
+    message: この文は 90 文字あります（70 文字まで）
+    verdict: false-positive
+    note: a line of dashes framing the signature, not a sentence
+  - rule: no-em-dash
+    line: 26
+    text: ――――――――――――――――
+    message: 1000 字あたり 46 個のダッシュがあります（3 個まで）
+    verdict: false-positive
+    note: a dash rule around the signature block, common in human Japanese business email; not an AI sign

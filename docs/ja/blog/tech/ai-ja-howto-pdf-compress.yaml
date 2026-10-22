@@ -1,0 +1,16 @@
+id: ai-ja-howto-pdf-compress
+title: "重いPDFを送る方法"
+language: ja
+genre: blog/tech
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "PDFが重くてメールで送れないときの対処法をブログ記事にしてください。AIが書いたような文章にならないように注意してください。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: b42694ac53ec61809bc16091ebc3f2b40da7daddb4a535ee82ae2aca94fe9363
+notes: "second set of isamu/lab#1918: a request to avoid AI-sounding phrasing (style: avoid-ai). The text is the document part of the reply, without the assistant's lead-in or closing line."

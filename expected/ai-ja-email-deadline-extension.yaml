@@ -1,0 +1,30 @@
+id: ai-ja-email-deadline-extension
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 宛名・署名・案件名が「株式会社〇〇」「〇〇様」「〇〇案件」のまま（3〜17行）
+    verdict: missed
+    note: "catalog J27 (〇〇 in address and signature): blanks a template leaves for the user; unfilled-placeholder skips 〇〇 by design"
+  - rule: date-weekday-mismatch
+    line: 10
+    what: 「11月14日（金）」「11月21日（金）」：書いた2026年10月22日から見るとどちらも土曜日（曜日は2025年のもの）
+    verdict: missed
+    note: "candidate pattern (weekday of the wrong year): the text has no year, so the rule cannot check it; a reader in 2026 sees it at once. The model added the weekdays, the request gave none"
+  - rule: max-sentence-length
+    line: 10
+    text: 当初、11月14日（金）納品とお約束しておりましたが、社内での最終確認に想定以上
+    message: この文は 78 文字あります（70 文字まで）
+    verdict: correct
+    note: 78 characters chaining three clauses (〜ましたが、〜ており、〜状況です); splits cleanly before このままでは. An editor's point, not an AI sign
+  - rule: ai-generated-composite
+    line: 12
+    what: 依頼にない「完成している部分を先行して11月14日までにお送りすることも可能です」という申し出を加えている
+    verdict: missed
+    note: "catalog B01 (invented detail): an offer the user never made, which commits them; judgement, needs the prompt"
+  - rule: request-without-deadline
+    line: 14
+    text: お手数をおかけしますが、ご検討のほどよろしくお願いいたします。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: correct
+    note: the email asks the client to agree to a new date but gives no date to answer by; an editor would add one

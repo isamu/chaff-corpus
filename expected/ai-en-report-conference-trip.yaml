@@ -1,0 +1,19 @@
+id: ai-en-report-conference-trip
+chaff: 0.36.0
+findings:
+  - rule: announcing-opener
+    line: 8
+    what: "\"Here's what I came back with.\""
+    verdict: missed
+    note: catalog E33 (more announcing openers)
+  - rule: ai-generated-composite
+    line: 12
+    what: the session titles, the Spokane library system's experience and "two libraries said it doubled" (line 14) are not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): other organisations' results stated as reported fact"
+  - rule: number-style-consistency
+    line: 31
+    text: "2 nights) $410, mileage $96. Total: $826"
+    message: '"2" here, where the document usually writes numbers below ten like "three" (1 of 4)'
+    verdict: false-positive
+    note: a figure in an expense line, where digits are the norm

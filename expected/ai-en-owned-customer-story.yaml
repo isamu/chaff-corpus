@@ -1,0 +1,19 @@
+id: ai-en-owned-customer-story
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 18% (want at least 35%)
+    verdict: correct
+    note: The problem / What they changed / The results / What's next, of one size (18%); the template case study
+  - rule: ai-generated-composite
+    line: 5
+    what: Maria's quotes ("It worked until it didn't", the sixty orders, line 33's pad of paper) are not in the notes
+    verdict: missed
+    note: "catalog B01 (invented detail): words put in a real customer's mouth"
+  - rule: ai-generated-composite
+    line: 33
+    what: the last line returns to her mother's paper by the phone
+    verdict: missed
+    note: catalog B02 (neat callback ending)

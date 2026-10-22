@@ -1,0 +1,16 @@
+id: ai-ja-email-new-member
+title: "新メンバー紹介"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "チームのみんなに新メンバーの高橋誠さんを紹介するメールを書いて。前職はEC会社でSNS運用を5年。うちではまずInstagram担当。趣味はキャンプ。金曜に歓迎ランチをしたい。堅苦しくない感じで。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 6689e99b6aa1242262dcd236bba7492d8d20903402d6e8594aa178d1d6cda81f
+notes: "second set of isamu/lab#1918: a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

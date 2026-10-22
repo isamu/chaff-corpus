@@ -1,0 +1,16 @@
+id: ai-en-email-decline-vendor
+title: "Declining a vendor proposal"
+language: en
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write an email turning down a cleaning company's proposal (contact: Linda). We went with someone else because their quote was about 15% higher than the other two. They were good otherwise. I'm Paul Chen, facilities manager at Harbor Dental Group. Please avoid phrases that sound AI-generated."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: ddaccb8007eb28d0c45485850cf40b3326593f7bed1fd66751d9bbc3bdcb8574
+notes: "second set of isamu/lab#1918: a request to avoid AI-sounding phrasing (style: avoid-ai). The text is the document part of the reply, without the assistant's lead-in or closing line."

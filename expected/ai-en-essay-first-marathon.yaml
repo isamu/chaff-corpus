@@ -1,0 +1,19 @@
+id: ai-en-essay-first-marathon
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 7
+    what: '"How different could six more miles be?" answered by "Pretty different, it turns out."'
+    verdict: missed
+    note: catalog E34 (question answered by a fragment)
+  - rule: quote-without-source
+    line: 15
+    text: YOU PAID FOR THIS." I laughed out loud,
+    message: '"YOU PAID FOR THIS." is given to someone, but no source (a link, a footnote, a reference) is given'
+    verdict: false-positive
+    note: the text of a spectator's sign, not a quotation needing a source
+  - rule: ai-generated-composite
+    line: 19
+    what: "\"says that's what everyone says on Tuesday\" returns to \"I'm writing this on Tuesday\" (line 3)"
+    verdict: missed
+    note: catalog B02 (neat callback ending)

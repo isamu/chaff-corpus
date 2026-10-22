@@ -1,0 +1,16 @@
+id: ai-ja-email-rewrite-invoice
+title: "請求書再発行のお願い"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "このメールをちゃんとしたビジネスメールに書き直して。\n\n「10月分の請求書きたんですけど金額ちがってます。33万になってるけど発注は30万です。追加の3万は11月分で別に請求って話だったはず。30万で出し直してください。11/10までにほしいです」"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 0df3a503b6b20280e9f23ba06a64ffc3e9f51403eb241de3b74d8159beaa0602
+notes: "second set of isamu/lab#1918: a rough draft to rewrite (style: rewrite). The text is the document part of the reply, without the assistant's lead-in or closing line."

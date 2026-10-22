@@ -1,0 +1,13 @@
+id: ai-ja-essay-moving-city
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 15
+    what: 「正直なところ少し重たく感じていた」
+    verdict: missed
+    note: "candidate pattern (honesty marker 正直): under 'write naturally', as AI1 found"
+  - rule: ai-generated-composite
+    line: 19
+    what: 冒頭の「のんびりしていいでしょう」に戻り、答えを言い換えて締める
+    verdict: missed
+    note: catalog B02 (neat callback ending)

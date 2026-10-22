@@ -1,0 +1,16 @@
+id: ai-en-owned-customer-story
+title: "Customer story: a family bakery's online ordering"
+language: en
+genre: blog/owned-media
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a customer story for our company blog (we sell online ordering software for small food businesses) from these interview notes:\n\n- Panaderia Ortega, Fresno, Maria and Luis Ortega took over from her parents in 2019\n- special orders on phone + sticky notes + corkboard\n- ~150 custom orders/month, 400+ in Nov/Dec\n- about 1 in 20 orders wrong before\n- Luis answered phones all morning in holidays\n- started with us March 2025, deposit at order\n- now fewer than 1 in 40 wrong (their own count), ~70% online, fewer no-shows\n- Luis: \"I'm back in the kitchen\"\n- next: catering menu online"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 737401c859b95e17a9706e16facadb09bff2dbf0d86d20742df49456e17995c3
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

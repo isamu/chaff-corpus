@@ -1,0 +1,49 @@
+id: ai-en-howto-clean-inbox
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 17% (want at least 35%)
+    verdict: correct
+    note: five steps of the same size (17%); the template how-to shape
+  - rule: announcing-opener
+    line: 3
+    what: "\"The good news is that\" (after \"you're not alone\")"
+    verdict: missed
+    note: catalog E33 (The good news is)
+  - rule: ai-generated-composite
+    line: 5
+    text: '## Step 1: Declare "inbox bankruptcy" on'
+    message: '"rule-of-three, section-length-uniformity, ai-structure" occur together in this document (3 signals, 3 needed)'
+    verdict: correct
+    note: even steps, three-item lists everywhere and stock headings read as generated
+  - rule: ai-structure
+    line: 5
+    text: '## Step 1: Declare "inbox bankruptcy" on'
+    message: "4 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, headings in a stock form, three-item lists"
+    verdict: correct
+    note: "sections of one or two paragraphs, stock Step N: headings, three-item lists"
+  - rule: rule-of-three
+    line: 9
+    text: 1. Search for all emails older than 30 d
+    message: 5 of 5 lists have exactly three items (70% allowed)
+    verdict: correct
+    note: every list in the post has exactly three items
+  - rule: list-item-form-mix
+    line: 21
+    text: Many email apps now show an **Unsubscrib
+    message: '"Many email apps now show an   Unsubscribe   link at the top of marketing emails, which makes this quicker." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
+    verdict: correct
+    note: a statement among imperative steps; an editor would make it a note under the list
+  - rule: heading-numbering-mix
+    line: 49
+    text: "## Keeping it under control"
+    message: 'The heading "Keeping it under control" has no number, while 5 of its siblings do ("Step 1: Declare "inbox bankruptcy" on old messages")'
+    verdict: false-positive
+    note: the closing section is not one of the five steps
+  - rule: contrast-framing
+    line: 57
+    what: '"The goal is an inbox that shows you what needs your attention, not one that buries it."'
+    verdict: missed
+    note: catalog E12 (X, not Y) as the closing line

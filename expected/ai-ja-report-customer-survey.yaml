@@ -1,0 +1,8 @@
+id: ai-ja-report-customer-survey
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 24
+    what: 「不満と答えた顧客の68%」「想定を約30%上回って」（29行）、代案の「半年程度」（31行）が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): figures in a board paper that nobody measured"

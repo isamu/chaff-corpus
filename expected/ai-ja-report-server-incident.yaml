@@ -1,0 +1,13 @@
+id: ai-ja-report-server-incident
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 4
+    what: 報告者が〇〇のまま
+    verdict: missed
+    note: catalog J27
+  - rule: ai-generated-composite
+    line: 30
+    what: 「検証環境での事前確認を行っていなかったことが…要因」、対象約180名、30分以内の通知目標（41行）が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): a cause and a target stated as fact in a formal report"

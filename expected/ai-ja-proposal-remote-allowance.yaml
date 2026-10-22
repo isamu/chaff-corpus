@@ -1,0 +1,24 @@
+id: ai-ja-proposal-remote-allowance
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 提出日「2026年11月〇日」と提出者が〇のまま（3・4行）
+    verdict: missed
+    note: catalog J27
+  - rule: ai-structure
+    line: 6
+    what: 番号付きの 概要／背景／提案内容／費用／期待される効果／今後のスケジュール
+    verdict: missed
+    note: "catalog E44/J proposal outline (F): the stock proposal outline; ai-structure does not run on business"
+  - rule: ai-generated-composite
+    line: 12
+    what: 約150名・アンケート74%・同業他社の相場・フロア返却で年間約900万円（31行）が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): a plain one-line request filled with facts the company never gave"
+  - rule: request-without-deadline
+    line: 45
+    text: ご検討のほど、よろしくお願いいたします。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: false-positive
+    note: the schedule section asks for approval at the December 2026 management meeting

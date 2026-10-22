@@ -1,0 +1,13 @@
+id: ai-en-proposal-rewrite-newsletter
+chaff: 0.36.0
+findings:
+  - rule: bold-label-list
+    line: 25
+    what: '"**More timely:**", "**More likely to be read:**", "**Less work:**"'
+    verdict: missed
+    note: catalog E18 (bold labels, en); the draft had none
+  - rule: closing-cliche
+    line: 33
+    what: '"We would welcome any feedback on this proposal."'
+    verdict: missed
+    note: catalog E36 (closing offer)

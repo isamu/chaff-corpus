@@ -1,0 +1,31 @@
+id: ai-ja-review-business-book
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 1
+    what: 題の「会議を減らしたい人には刺さる」
+    verdict: missed
+    note: catalog J22 (刺さる)
+  - rule: announcing-opener
+    line: 3
+    what: 「結論から言うと、」
+    verdict: missed
+    note: catalog §3 rank 8 (ja announcing opener 結論から言うと)
+  - rule: sentence-rhythm
+    line: 3
+    text: 上司にすすめられて、会議の進め方についてのビジネス書を読みました。結論から言うと
+    message: 文の長さのばらつきが 23%（30% 以上ほしい）
+    verdict: correct
+    note: even sentence lengths throughout (catalog J13)
+  - rule: no-mixed-desumasu
+    line: 13
+    text: たとえば「来月のキャンペーンの予算配分を決める」と書いて送る。これだけで、資料を
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: 「〜と書いて送る。」 is a plain-form example of the action, deliberate in a です/ます post
+  - rule: quote-without-source
+    line: 13
+    text: 来月のキャンペーンの予算配分を決める」と書いて送る。これだけで、資料を見せるだけ
+    message: 「来月のキャンペーンの予算配分を決める」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
+    verdict: false-positive
+    note: an example of what the writer puts in an invitation, not someone's words

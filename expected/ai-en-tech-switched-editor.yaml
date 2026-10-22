@@ -1,0 +1,41 @@
+id: ai-en-tech-switched-editor
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 23% (want at least 35%)
+    verdict: correct
+    note: the four sections are of one size and follow the before/during/what I missed/where I landed arc; reads as generated
+  - rule: ai-tell
+    line: 3
+    what: "\"if I'm being honest\""
+    verdict: missed
+    note: candidate pattern (honesty marker), under 'make it sound human'
+  - rule: adverb-overuse
+    line: 9
+    text: actually remember what I'd called things
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: conversational adverbs (actually, probably, noticeably) carry the voice the request asked for
+  - rule: bold-label-list
+    line: 25
+    what: '"- **Renaming across files.**", "- **Type errors.**", "- **Debugging.**"'
+    verdict: missed
+    note: catalog E18 (bold labels, en); also exactly three
+  - rule: comparative-without-baseline
+    line: 27
+    text: better, and I'm not going to pretend oth
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: better than print statements, named in the same sentence
+  - rule: ai-generated-composite
+    line: 33
+    what: '"That was worth an afternoon or two of grepping." returns to the grepping of the first week for a neat close'
+    verdict: missed
+    note: catalog B02 (neat callback ending)
+  - rule: contrast-framing
+    line: 33
+    what: "\"The month didn't convince me that plain editors are better. It convinced me that …\""
+    verdict: missed
+    note: catalog E12 (wasn't X. It was Y.)

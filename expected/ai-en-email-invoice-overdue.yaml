@@ -1,0 +1,67 @@
+id: ai-en-email-invoice-overdue
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    text: "[Client Name],"
+    message: '"[Client Name]" was never filled in'
+    verdict: correct
+    note: a template blank left for the user; the plainest sign the email came from an assistant
+  - rule: cushion-phrase
+    line: 5
+    what: '"I hope this message finds you well." as the opener'
+    verdict: missed
+    note: catalog E35 (email stock courtesy); the finds-you-well family is said to be in cushion-phrase, which did not fire
+  - rule: attachment-not-attached
+    line: 9
+    text: I understand that invoices can sometimes
+    message: An attachment is mentioned, but no attachment line or file name is shown
+    verdict: false-positive
+    note: an email body never shows its attachment; the file is added when sending, which chaff cannot see
+  - rule: max-sentence-length
+    line: 9
+    text: I understand that invoices can sometimes
+    message: This sentence runs 19 words (limit 18)
+    verdict: correct
+    note: 19 words of padding around a stock phrase (slip through the cracks); reads as generated filler
+  - rule: max-sentence-length
+    line: 11
+    text: Payment can be made by bank transfer usi
+    message: This sentence runs 24 words (limit 18)
+    verdict: false-positive
+    note: 24 words, one instruction with two payment methods
+  - rule: max-sentence-length
+    line: 13
+    text: If there's an issue with the invoice or
+    message: This sentence runs 25 words (limit 18)
+    verdict: false-positive
+    note: 25 words, one ordinary offer of help
+  - rule: max-sentence-length
+    line: 15
+    text: I'd appreciate it if you could arrange p
+    message: This sentence runs 20 words (limit 18)
+    verdict: false-positive
+    note: 20 words, one clear request with a date
+  - rule: closing-cliche
+    line: 17
+    what: '"Thank you for your prompt attention to this matter." (and "For your convenience", line 9)'
+    verdict: missed
+    note: catalog E35/E36 (stock email courtesies)
+  - rule: unfilled-placeholder
+    line: 21
+    text: "[Your Name]"
+    message: '"[Your Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: unfilled-placeholder
+    line: 22
+    text: "[Your Title]"
+    message: '"[Your Title]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: unfilled-placeholder
+    line: 23
+    text: "[Company Name]"
+    message: '"[Company Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user

@@ -1,0 +1,13 @@
+id: ai-ja-report-new-hire-training
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 報告者が〇〇のまま
+    verdict: missed
+    note: catalog J27
+  - rule: ai-generated-composite
+    line: 11
+    what: アンケートの「12名中10名」、製造部課長の発言、「6月ごろから」（13行）、相談に来た「2名」（19行）が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): the 'human' request answered with made-up numbers and a quoted remark"

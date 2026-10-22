@@ -1,0 +1,16 @@
+id: ai-en-email-onboarding
+title: "First week plan for a new hire"
+language: en
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Turn these notes into a welcome email to our new designer Sam:\n\n- starts mon nov 9, 4th floor front desk 9am, ask for me (Rachel)\n- IT setup 9:30 with Kevin\n- team lunch monday\n- tue-thu shadow Lisa on mobile app redesign, some 1:1s\n- fri design review 3pm (just listen), check-in with me 4pm\n- casual dress, parking garage on Elm St (we validate), bring photo ID\n- my cell 555-382-1190"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: da2d357a00abbad390759d456ccc90a271961cc7d58c29aefac61621d891a9d0
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

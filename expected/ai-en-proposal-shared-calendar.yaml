@@ -1,0 +1,14 @@
+id: ai-en-proposal-shared-calendar
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 9
+    what: '"two of the three people presenting" and "only two days before" are not in the request (it said two presenters, and that the demo was almost scheduled)'
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: no-em-dash
+    line: 13
+    text: – Who's Out." Anyone who's off, at a con
+    message: 9 dashes per 1000 words (limit 8)
+    verdict: false-positive
+    note: the dash is part of the calendar's name, and the other is the sign-off "— Nina"; not an AI sign

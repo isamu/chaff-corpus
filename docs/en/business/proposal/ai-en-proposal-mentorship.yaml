@@ -1,0 +1,16 @@
+id: ai-en-proposal-mentorship
+title: "Proposal for an internal mentorship program"
+language: en
+genre: business/proposal
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a proposal for starting an internal mentorship program at our company."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: e41f71c419947f992cb6f03bdce20db08cc9f7b33a4dc8eba862460b89c78cab
+notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

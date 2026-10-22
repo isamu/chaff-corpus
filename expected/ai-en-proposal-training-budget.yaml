@@ -1,0 +1,8 @@
+id: ai-en-proposal-training-budget
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 19
+    what: '"Some examples, based on what the team has asked about:" claims requests the user did not mention'
+    verdict: missed
+    note: catalog B01 (invented detail)

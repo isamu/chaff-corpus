@@ -1,0 +1,38 @@
+id: ai-en-howto-video-call-setup
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: Section "Look and sound better on video calls with what you already have" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: a how-to of practical advice; figures would not help
+  - rule: concrete-evidence-density
+    line: 5
+    text: ""
+    message: Section "Sound first" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: as line 1
+  - rule: bold-label-list
+    line: 9
+    what: paragraphs open with bold sentences ("**Use headphones with a microphone.**", "**Pick the quietest room you can.**" …)
+    verdict: missed
+    note: catalog E18 (bold labels, en), here as bold lead sentences
+  - rule: concrete-evidence-density
+    line: 15
+    text: ""
+    message: Section "Light" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: as line 1
+  - rule: concrete-evidence-density
+    line: 31
+    text: ""
+    message: Section "Background" has no number, code or link (4 of 5 sections)
+    verdict: false-positive
+    note: as line 1
+  - rule: comparative-without-baseline
+    line: 35
+    text: better.
+    message: '"better" does not say what it is compared with'
+    verdict: false-positive
+    note: better than a virtual background, the previous sentence
