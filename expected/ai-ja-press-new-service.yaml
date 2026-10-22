@@ -1,0 +1,24 @@
+id: ai-ja-press-new-service
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 社名・所在地・代表者・サービス名が〇〇のまま
+    verdict: missed
+    note: catalog J27
+  - rule: yori-as-from
+    line: 3
+    text: より開始いたします。
+    message: 起点の「より」は「から」と書けます
+    verdict: false-positive
+    note: 「〜日より開始いたします」 is the conventional formal wording of a Japanese press release
+  - rule: ai-tell
+    line: 7
+    what: 背景を「働き方の多様化に伴い」で始める
+    verdict: missed
+    note: "candidate phrase: the stock background opener of a generated release (also common in human releases, so low weight)"
+  - rule: ai-generated-composite
+    line: 23
+    what: 機能（給与ソフト連携、法改正への自動対応）、3か月無料キャンペーン（31行）、3,000社の目標（35行）が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): product claims in a press release that the company never made"

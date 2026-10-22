@@ -1,0 +1,14 @@
+id: ai-ja-email-rewrite-invoice
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 宛名と差出人が「株式会社〇〇」「〇〇」のまま（3・6行）
+    verdict: missed
+    note: catalog J27
+  - rule: max-sentence-length
+    line: 10
+    text: 差額の30,000円は、当初のお見積もりに含まれていなかった追加作業分かと思いま
+    message: この文は 85 文字あります（70 文字まで）
+    verdict: correct
+    note: 85 characters with a double hedge (〜かと思いますが、〜かと存じます); splits after 追加作業分です

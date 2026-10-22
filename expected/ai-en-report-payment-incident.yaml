@@ -1,0 +1,14 @@
+id: ai-en-report-payment-incident
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 32
+    what: '"a period of high load at the provider between 14:00 and 15:00" and "211 contacted customer support" (line 13) are not in the request'
+    verdict: missed
+    note: "catalog B01 (invented detail): a cause stated as fact in an incident report"
+  - rule: date-order
+    line: 46
+    text: Nov 13 | Not started |
+    message: November 13 breaks the order of the dates around it (after November 6)
+    verdict: false-positive
+    note: due dates in an action table, listed by action, not by date

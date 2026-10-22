@@ -1,0 +1,14 @@
+id: ai-ja-proposal-rewrite-flex
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 22
+    what: 下書きにない対策（チャットのステータス表示）、解釈（他社より厳しいと受け取られている、13行）、評価指標（残業時間、28行）を加えた
+    verdict: missed
+    note: "catalog B01 (invented detail): a rewrite that adds claims the writer did not make"
+  - rule: request-without-deadline
+    line: 30
+    text: ご検討をよろしくお願いいたします。
+    message: この依頼には、いつまでに・誰がするかが書かれていません
+    verdict: correct
+    note: the proposal asks for a decision but never says by when; neither did the draft, and an editor would ask

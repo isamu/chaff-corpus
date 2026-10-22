@@ -1,0 +1,16 @@
+id: ai-ja-minutes-weekly-team
+title: "週次定例 議事録"
+language: ja
+genre: business/meeting-notes
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "次のメモを議事録の形に整えてください。\n\n10/26 定例 伊藤司会 加藤 吉田 山口 松井(記録)\n・LP デザイン確定 11/4公開予定 加藤\n・メルマガ 10/22配信 開封率28%（前回24）吉田\n・問い合わせフォーム 見積もり予算オーバー 再見積もり中 山口\n・年末セール 12月2週か3週 → 倉庫に確認してから決める（山口確認）\n・インスタ吉田さん一人で大変 → 11月から加藤さんと週替わり\n次回 11/2"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 63ef7fe84bce0412b8bb1f6bbcd76c5ad8f4a6bcf0c207dfd95a73b2477b44e8
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,13 @@
+id: ai-en-report-pilot-results
+chaff: 0.36.0
+findings:
+  - rule: bold-label-list
+    line: 23
+    what: bold-label sentences "**Usage grew each week**:", "**Customers over 65 rarely used it**:", "**Most problems were with weighing produce**:"
+    verdict: missed
+    note: catalog E18 (bold labels, en); bold-label-list is ja-only
+  - rule: ai-generated-composite
+    line: 38
+    what: recommendations 3 (three staffed registers) and 4 (an exit spot-check above 2%, line 39) are not in the notes
+    verdict: missed
+    note: catalog B01 (invented detail)

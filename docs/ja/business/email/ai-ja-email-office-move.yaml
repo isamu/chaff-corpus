@@ -1,0 +1,16 @@
+id: ai-ja-email-office-move
+title: "事務所移転のお知らせ"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "取引先向けの事務所移転のお知らせメールを作ってください。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: d4e923dafbf461151d2f1d08836333035d3050b963d29726876e021a0f0884c0
+notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

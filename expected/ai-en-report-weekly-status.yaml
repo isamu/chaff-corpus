@@ -1,0 +1,30 @@
+id: ai-en-report-weekly-status
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 5
+    text: "[Your Name]"
+    message: '"[Your Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: emoji-heading
+    line: 7
+    what: 'the heading "Overall Status: On Track 🟢"'
+    verdict: missed
+    note: catalog E22 (emoji in a heading); emoji-heading did not fire on a trailing emoji
+  - rule: empty-section
+    line: 7
+    text: "## Overall Status: On Track 🟢"
+    message: 'Nothing under the heading "Overall Status: On Track 🟢"'
+    verdict: correct
+    note: a status stated as a heading with nothing under it; an editor would make it a line of the summary
+  - rule: ai-generated-composite
+    line: 9
+    what: a one-line request answered with a full report of made-up progress, bugs, dates and metrics
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: unfilled-placeholder
+    line: 34
+    what: '"[Name]" in the Owner column (lines 34, 35)'
+    verdict: missed
+    note: the same template blank as [Your Name], not reported

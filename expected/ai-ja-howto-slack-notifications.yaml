@@ -1,0 +1,31 @@
+id: ai-ja-howto-slack-notifications
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 9% しかありません（35% 以上ほしい）
+    verdict: correct
+    note: five settings sections of almost the same size (9%); the template how-to shape
+  - rule: sentence-rhythm
+    line: 3
+    text: Slackを使っていると、通知が鳴りっぱなしで仕事に集中できない、ということがよ
+    message: 文の長さのばらつきが 28%（30% 以上ほしい）
+    verdict: correct
+    note: even sentence lengths throughout (catalog J13)
+  - rule: heading-numbering-mix
+    line: 51
+    text: "## まとめ"
+    message: 見出し「まとめ」だけ番号がありません（兄弟の見出しは「1. 通知の対象を「メンションとDMだけ」にする」など 5 個が番号付き）
+    verdict: false-positive
+    note: the summary is not one of the five numbered settings
+  - rule: closing-cliche
+    line: 53
+    what: 「まずは〜試してみてください。それだけでも、かなり静かになるはずです。」
+    verdict: missed
+    note: catalog J26 (closing promise 〜はず)
+  - rule: contrast-framing
+    line: 53
+    what: 「全部受け取ってから無視する」のではなく、「必要なものだけ受け取る」
+    verdict: missed
+    note: catalog J21 (〜ではなく〜) as the summary's one point

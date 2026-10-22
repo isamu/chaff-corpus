@@ -1,0 +1,20 @@
+id: ai-ja-tech-git-mistake
+chaff: 0.36.0
+findings:
+  - rule: no-mixed-desumasu
+    line: 17
+    text: ここまでは、手元の話なのでまだよかった。
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: one plain-form aside in a です/ます blog post, used for voice; common in human blogs
+  - rule: ai-generated-composite
+    line: 39
+    what: 「いま思うこと」で新人をのぞきこむ側になった今に戻り、「話せる職場だったのは運がよかった」と教訓で締める
+    verdict: missed
+    note: catalog B02 (neat callback / moral ending)
+  - rule: excessive-hedging
+    line: 41
+    text: と思われているかもしれませんが、あの日の自分を思い出すと、聞かずにはいられません
+    message: この文は逃げの表現を 2 つ重ねています（「と思われ、かもしれません」）
+    verdict: false-positive
+    note: と思われている is a passive (being thought of as), not a hedge; one hedge only

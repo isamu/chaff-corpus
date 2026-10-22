@@ -1,0 +1,16 @@
+id: ai-ja-press-new-service
+title: "クラウド勤怠管理サービス提供開始のプレスリリース"
+language: ja
+genre: business/press-release
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "中小企業向けのクラウド勤怠管理サービスを12月1日から始めるので、プレスリリースを書いてください。月額基本料3000円＋1人200円。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: ec941157c217798f7b67aac05cf71e226371953c409e14c3eb8e9ed97017977a
+notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

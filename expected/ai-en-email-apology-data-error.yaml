@@ -1,0 +1,56 @@
+id: ai-en-email-apology-data-error
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: We are writing to inform you of an error
+    message: This sentence runs 31 words (limit 18)
+    verdict: correct
+    note: 31 words of stock opening (we are writing to inform you … apologize for any confusion it may have caused); an editor would cut it to the fact
+  - rule: max-sentence-length
+    line: 7
+    text: Due to a processing error on our part, t
+    message: This sentence runs 24 words (limit 18)
+    verdict: false-positive
+    note: 24 words, one explanation of the error
+  - rule: max-sentence-length
+    line: 7
+    text: Your account balance in our system is co
+    message: This sentence runs 23 words (limit 18)
+    verdict: false-positive
+    note: 23 words, one reassurance
+  - rule: colon-lead-in
+    line: 9
+    what: '"What this means for you:" before the list'
+    verdict: missed
+    note: catalog E19 (colon lead-in, en); colon-lead-in is ja-only
+  - rule: max-sentence-length
+    line: 11
+    text: If you have not yet paid your October st
+    message: This sentence runs 25 words (limit 18)
+    verdict: false-positive
+    note: 25 words, one instruction in a list
+  - rule: max-sentence-length
+    line: 12
+    text: If you have already paid the higher amou
+    message: This sentence runs 21 words (limit 18)
+    verdict: false-positive
+    note: 21 words, one instruction
+  - rule: max-sentence-length
+    line: 13
+    text: If you would prefer a refund rather than
+    message: This sentence runs 22 words (limit 18)
+    verdict: false-positive
+    note: 22 words, one instruction
+  - rule: max-sentence-length
+    line: 15
+    text: We have identified the cause of the erro
+    message: This sentence runs 30 words (limit 18)
+    verdict: correct
+    note: 30 words carrying two points (when it happened, what was changed); splits cleanly
+  - rule: max-sentence-length
+    line: 17
+    text: We understand that you rely on us for ac
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one point

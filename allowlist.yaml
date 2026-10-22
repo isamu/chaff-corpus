@@ -772,3 +772,27 @@
 - id: fsa-press-2026-10-05-delta-wall
   match: "03-5251-6811"
   reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)
+- id: ai-en-email-holiday-schedule
+  match: "(555) 214-7788"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-email-onboarding
+  match: "(555) 382-1190"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-press-partnership
+  match: "(555) 410-2233"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-press-partnership
+  match: "(555) 410-2200"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-press-partnership
+  match: "tbrooks@hillsidelibrary.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-ja-email-apology-wrong-shipment
+  match: "support@example.com"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-ja-press-new-service
+  match: "press@example.co.jp"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-ja-press-store-opening
+  match: "info@example.jp"
+  reason: an address the model invented in an origin ai document, on a reserved example domain

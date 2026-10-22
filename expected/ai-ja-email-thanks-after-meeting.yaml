@@ -1,0 +1,13 @@
+id: ai-ja-email-thanks-after-meeting
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 18
+    what: 木村様の発言「若い人にも手に取ってもらえるものにしたい」と、9行目の「手作業で仕上げている工程」が依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): a quoted remark of the client stated as fact"
+  - rule: closing-cliche
+    line: 18
+    what: 「その思いに応えられるよう、しっかり考えてみます。」で締める
+    verdict: missed
+    note: "catalog J26 (closing pledge): a stock promise before the sign-off"

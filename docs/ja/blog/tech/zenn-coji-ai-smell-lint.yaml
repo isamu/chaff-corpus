@@ -3,6 +3,10 @@ title: "Zenn: AI臭は語彙よりリズムに出る - 自然な日本語を書�
 language: ja
 genre: blog/tech
 format: markdown
+origin: ai
+generated:
+  model: Fable 5
+  statement: "The article's closing section (あとがき) says that the article itself was written by Fable 5 using the natural-japanese skill the article introduces; it also says the skill was built with Fable 5 in Claude Code. The request given to the model and the day it was written are not stated."
 source:
   url: https://raw.githubusercontent.com/coji/zenn-content/91bccf1ed56c8c5045b634159a2e5bb5ec23cc36/articles/natural-japanese-ai-smell-lint.md
   fetched: 2026-10-01
@@ -12,4 +16,4 @@ license:
   note: MIT (the coji/zenn-content repository's LICENSE); URL only
 redistribute: false
 sha256: 43fba7c88e45cd22c6a3d3f4c099f8d6c6022f2884988a8874353bda3ce590b6
-notes: Imported from isamu/lab text/corpus (manifest id zenn-coji-ai-smell-lint).
+notes: "Imported from isamu/lab text/corpus (manifest id zenn-coji-ai-smell-lint). Labelled human until isamu/lab#1918, when its last paragraph was read: the author says a model wrote it, so it is origin ai, with the prompt unknown."

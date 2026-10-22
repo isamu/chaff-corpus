@@ -1,0 +1,30 @@
+id: ai-en-press-app-launch
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 7
+    what: the CEO quote with "an average of 30%", 2,000 testers, 1,500 plants, GreenLeaf Plus at $4.99, founded 2024 are not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): a quote and figures a press release would publish as fact"
+  - rule: colon-lead-in
+    line: 9
+    what: '"**Key features of the GreenLeaf app include:**"'
+    verdict: missed
+    note: catalog E19 (colon lead-in, en)
+  - rule: bold-label-list
+    line: 11
+    what: '"- **Personalized watering schedules** based on …" (four items)'
+    verdict: missed
+    note: catalog E18 (bold labels, en)
+  - rule: unfilled-placeholder
+    line: 25
+    text: "[Name]"
+    message: '"[Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: heading-level-skip
+    line: 30
+    text: "###"
+    message: Heading "" goes from level 1 to level 3 (expected 2)
+    verdict: false-positive
+    note: "### is the end mark of a press release, not a heading"

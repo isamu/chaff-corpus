@@ -1,0 +1,16 @@
+id: ai-ja-essay-reading-habit
+title: "また本を読むようになるまで"
+language: ja
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "社会人になって本を読まなくなったけど、また読むようになった、という話をブログに書きたい。人間らしい文章でお願いします。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 2d0b25574ca493027b18ee54617b66cbabe175dae7702160e41ac7dac81b7bf3
+notes: "second set of isamu/lab#1918: a request to make it sound human (style: human). The text is the document part of the reply, without the assistant's lead-in or closing line."

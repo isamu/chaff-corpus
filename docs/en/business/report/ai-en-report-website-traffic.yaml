@@ -1,0 +1,16 @@
+id: ai-en-report-website-traffic
+title: "Website performance Q3: board summary"
+language: en
+genre: business/report
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a one-page summary of our Q3 website numbers for the board. Visits 486,000 (Q2 412,000), online orders 9,460 (Q2 9,850), mobile checkout completion 37% (Q2 48%). The drop started after the July update that made account creation required at checkout. We want $40k to fix mobile checkout. Board members aren't technical and want the conclusion first."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: df61a571f8ca1248929bf0d8a901d65b9ef82b3a2bac10658a83de0111279761
+notes: "second set of isamu/lab#1918: a request naming the audience and the length (style: audience-length). The text is the document part of the reply, without the assistant's lead-in or closing line."

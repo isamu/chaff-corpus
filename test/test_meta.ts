@@ -19,6 +19,8 @@ const valid = (): Record<string, unknown> => ({
 
 const GENERATED = { model: "claude-opus-5-5", prompt: "Write an internal report on Q3.", date: "2026-10-22" };
 
+const PUBLISHED = { model: "Fable 5", statement: "the last paragraph says the model wrote the article" };
+
 const aiValid = (): Record<string, unknown> => {
   const { source: _source, ...rest } = valid();
   return { ...rest, origin: "ai", generated: GENERATED, license: { name: "MIT", url: "https://github.com/isamu/chaff-corpus/blob/main/LICENSE" } };
@@ -121,18 +123,46 @@ describe("parseMeta", () => {
     assert.deepEqual(parsed.value.generated, GENERATED);
   });
 
-  it("rejects an origin ai document with a source, without generated, or under another licence", () => {
-    assert.deepEqual(problemsOf({ ...aiValid(), source: valid()["source"] }, TEXT), ["a document of origin ai has no source (generated says where it came from)"]);
+  it("rejects an origin ai document written here without generated, or under another licence", () => {
     assert.deepEqual(problemsOf({ ...aiValid(), generated: undefined }, TEXT), ["generated (model, prompt, date) is required for origin: ai"]);
     assert.deepEqual(problemsOf({ ...aiValid(), generated: { model: " ", prompt: "", date: "22 Oct" } }, TEXT), [
       "generated.model (the exact model name) is required",
       "generated.prompt (the request the text answers) is required",
       "generated.date must be a date (YYYY-MM-DD)",
     ]);
+    assert.deepEqual(problemsOf({ ...aiValid(), generated: { ...GENERATED, statement: "the author says so" } }, TEXT), [
+      "generated.statement is only for a published text (one with a source)",
+    ]);
     assert.deepEqual(problemsOf({ ...aiValid(), license: { name: "CC0-1.0", url: "https://creativecommons.org/publicdomain/zero/1.0/" } }, TEXT), [
       "a document of origin ai is under the repository's licence (license.name: MIT)",
     ]);
     assert.deepEqual(problemsOf({ ...aiValid(), redistribute: false }, undefined), ["a document of origin ai is committed (redistribute: true)"]);
+  });
+
+  it("accepts a published text whose author says a model wrote it: a source, its own licence, the request unknown", () => {
+    const published = { ...valid(), origin: "ai", generated: PUBLISHED, redistribute: false };
+    const parsed = parseMeta(published, PLACE, GENRES, undefined);
+    assert.ok("value" in parsed);
+    assert.equal(parsed.value.origin, "ai");
+    assert.equal(parsed.value.source?.url, "https://example.gov/q3");
+    assert.deepEqual(parsed.value.generated, PUBLISHED);
+    assert.deepEqual(problemsOf({ ...published, generated: { ...PUBLISHED, prompt: "Write it.", date: "2026-09-30" } }, undefined), []);
+    assert.deepEqual(problemsOf({ ...valid(), origin: "ai", generated: PUBLISHED }, TEXT), []);
+  });
+
+  it("rejects a published text of origin ai without the author's statement, a model, or a well-formed request and day", () => {
+    const published = { ...valid(), origin: "ai", redistribute: false };
+    assert.deepEqual(problemsOf({ ...published, generated: undefined }, undefined), ["generated (model, statement) is required for a published text of origin ai"]);
+    assert.deepEqual(problemsOf({ ...published, generated: GENERATED }, undefined), [
+      "generated.statement (what the author says about how the text was made) is required",
+    ]);
+    assert.deepEqual(problemsOf({ ...published, generated: { model: "", statement: " ", prompt: 3, date: "Oct 1" } }, undefined), [
+      "generated.model (the exact model name) is required",
+      "generated.statement (what the author says about how the text was made) is required",
+      "generated.prompt (the request the text answers) is required",
+      "generated.date must be a date (YYYY-MM-DD)",
+    ]);
+    assert.match(problemsOf({ ...published, source: { url: "ftp://x", fetched: "1 Oct" }, generated: PUBLISHED }, undefined).join("\n"), /source\.url.*\n.*source\.fetched/);
   });
 
   it("rejects an unknown origin, and generated on a human document", () => {

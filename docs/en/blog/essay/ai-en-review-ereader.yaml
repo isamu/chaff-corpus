@@ -1,0 +1,16 @@
+id: ai-en-review-ereader
+title: "Review: two years with a basic e-reader"
+language: en
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a review of the basic $99 e-reader I've had for two years. I read about 25 books a year on it, it's bad for anything with pictures, I paid $20 to remove lock-screen ads, no page buttons, I only missed waterproofing once. Don't write it like an AI would."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: e7a2b39553de6a034f4bc58d43c994288af033fcb4aef5b31025596e26e35afe
+notes: "second set of isamu/lab#1918: a request to avoid AI-sounding phrasing (style: avoid-ai). The text is the document part of the reply, without the assistant's lead-in or closing line."

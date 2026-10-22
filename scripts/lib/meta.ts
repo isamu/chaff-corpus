@@ -30,8 +30,9 @@ export const REPOSITORY_LICENSE = "MIT";
 /** Where a published text came from. */
 export type Source = { readonly url: string; readonly fetched: string; readonly format?: SourceFormat; readonly hf?: HfRow };
 
-/** How a text of origin ai was made: the model, the request it answered, and the day. */
-export type Generated = { readonly model: string; readonly prompt: string; readonly date: string };
+/** How a text of origin ai was made: the model, the request it answered, and the day. A published text whose author
+ * says a model wrote it carries the author's statement instead, and the request and the day only when they are known. */
+export type Generated = { readonly model: string; readonly prompt?: string; readonly date?: string; readonly statement?: string };
 
 export type Meta = {
   readonly id: string;
@@ -85,27 +86,55 @@ const sourceProblems = (source: unknown): string[] => {
   ];
 };
 
-const generatedProblems = (generated: unknown): string[] => {
+const PROMPT_REQUIRED = "generated.prompt (the request the text answers) is required";
+const DATE_INVALID = "generated.date must be a date (YYYY-MM-DD)";
+
+const isDate = (value: unknown): boolean => typeof value === "string" && DATE_PATTERN.test(value);
+
+const modelProblems = (generated: UnknownRecord): string[] => (isNonEmptyString(generated["model"]) ? [] : ["generated.model (the exact model name) is required"]);
+
+/** A text written for this repository: the model, the request as given and the day are all known. */
+const writtenHereProblems = (generated: unknown): string[] => {
   if (!isRecord(generated)) return ["generated (model, prompt, date) is required for origin: ai"];
   return [
-    ...(isNonEmptyString(generated["model"]) ? [] : ["generated.model (the exact model name) is required"]),
-    ...(isNonEmptyString(generated["prompt"]) ? [] : ["generated.prompt (the request the text answers) is required"]),
-    ...(typeof generated["date"] === "string" && DATE_PATTERN.test(generated["date"]) ? [] : ["generated.date must be a date (YYYY-MM-DD)"]),
+    ...modelProblems(generated),
+    ...(isNonEmptyString(generated["prompt"]) ? [] : [PROMPT_REQUIRED]),
+    ...(isDate(generated["date"]) ? [] : [DATE_INVALID]),
+    ...(generated["statement"] === undefined ? [] : ["generated.statement is only for a published text (one with a source)"]),
   ];
 };
 
-/** A human text has a source; a text of origin ai has generated instead, is under this repository's licence and is committed. */
+/** A published text whose author says a model wrote it: the author's statement is required; the request and the day are
+ * recorded only when they are known. */
+const publishedProblems = (generated: unknown): string[] => {
+  if (!isRecord(generated)) return ["generated (model, statement) is required for a published text of origin ai"];
+  return [
+    ...modelProblems(generated),
+    ...(isNonEmptyString(generated["statement"]) ? [] : ["generated.statement (what the author says about how the text was made) is required"]),
+    ...(generated["prompt"] === undefined || isNonEmptyString(generated["prompt"]) ? [] : [PROMPT_REQUIRED]),
+    ...(generated["date"] === undefined || isDate(generated["date"]) ? [] : [DATE_INVALID]),
+  ];
+};
+
+/** A text of origin ai written for this repository has generated in place of a source, is under this repository's
+ * licence and is committed. */
+const writtenHereOriginProblems = (raw: UnknownRecord): string[] => {
+  const license = isRecord(raw["license"]) ? raw["license"]["name"] : undefined;
+  return [
+    ...writtenHereProblems(raw["generated"]),
+    ...(license === undefined || license === REPOSITORY_LICENSE ? [] : [`a document of origin ai is under the repository's licence (license.name: ${REPOSITORY_LICENSE})`]),
+    ...(raw["redistribute"] === false ? ["a document of origin ai is committed (redistribute: true)"] : []),
+  ];
+};
+
+/** A human text has a source. A text of origin ai is either written for this repository (no source) or published
+ * elsewhere by an author who says a model wrote it (a source, under its own licence, like a human text). */
 const originProblems = (raw: UnknownRecord): string[] => {
   const origin = raw["origin"] === undefined ? "human" : raw["origin"];
   if (!isOrigin(origin)) return [`origin must be one of ${ORIGINS.join(", ")}`];
   if (origin === "human") return [...(raw["generated"] === undefined ? [] : ["generated is only for origin: ai"]), ...sourceProblems(raw["source"])];
-  const license = isRecord(raw["license"]) ? raw["license"]["name"] : undefined;
-  return [
-    ...(raw["source"] === undefined ? [] : ["a document of origin ai has no source (generated says where it came from)"]),
-    ...generatedProblems(raw["generated"]),
-    ...(license === undefined || license === REPOSITORY_LICENSE ? [] : [`a document of origin ai is under the repository's licence (license.name: ${REPOSITORY_LICENSE})`]),
-    ...(raw["redistribute"] === false ? ["a document of origin ai is committed (redistribute: true)"] : []),
-  ];
+  if (raw["source"] === undefined) return writtenHereOriginProblems(raw);
+  return [...sourceProblems(raw["source"]), ...publishedProblems(raw["generated"])];
 };
 
 const hfProblems = (source: UnknownRecord): string[] => {
@@ -141,7 +170,17 @@ const sourceOf = (source: UnknownRecord): Source => ({
   ...hfOf(source),
 });
 
-const generatedOf = (generated: UnknownRecord): Generated => ({ model: String(generated["model"]), prompt: String(generated["prompt"]), date: String(generated["date"]) });
+const generatedOf = (generated: UnknownRecord): Generated => {
+  const prompt = optionalString(generated["prompt"]);
+  const date = optionalString(generated["date"]);
+  const statement = optionalString(generated["statement"]);
+  return {
+    model: String(generated["model"]),
+    ...(prompt === undefined ? {} : { prompt }),
+    ...(date === undefined ? {} : { date }),
+    ...(statement === undefined ? {} : { statement }),
+  };
+};
 
 const metaOf = (raw: UnknownRecord): Meta => {
   const license = isRecord(raw["license"]) ? raw["license"] : {};

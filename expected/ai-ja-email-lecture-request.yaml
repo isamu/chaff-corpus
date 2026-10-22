@@ -1,0 +1,13 @@
+id: ai-ja-email-lecture-request
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 大学名・先生の名前・書名『〇〇』・社名・差出人が〇〇のまま（3〜15行）
+    verdict: missed
+    note: catalog J27
+  - rule: ai-generated-composite
+    line: 8
+    what: 「ご著書『〇〇』を拝読し、…深く共感いたしました」：依頼にない読書歴を差出人に与えている
+    verdict: missed
+    note: "catalog B01 (invented detail): a claim the sender may not be able to stand behind"

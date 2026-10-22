@@ -1,0 +1,32 @@
+id: ai-en-email-team-lunch
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 7
+    text: "When: Friday, 12:30"
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: "the When: and Where: lines were read as one sentence"
+  - rule: ai-generated-composite
+    line: 8
+    what: '"the one with the wood-fired oven, not the one by the station" and the vegetarian and gluten-free options (line 10) are not in the request'
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: max-sentence-length
+    line: 10
+    text: They've got vegetarian and gluten-free o
+    message: This sentence runs 26 words (limit 18)
+    verdict: false-positive
+    note: 26 casual words, easy to follow in a team email
+  - rule: max-sentence-length
+    line: 12
+    text: "Remote folks: I know you can't come, so"
+    message: This sentence runs 26 words (limit 18)
+    verdict: false-positive
+    note: 26 casual words, one instruction
+  - rule: email-greeting-closing
+    line: 15
+    text: Mike
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: '"See you there," is the closing'

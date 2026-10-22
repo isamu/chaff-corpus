@@ -1,0 +1,23 @@
+id: ai-ja-essay-first-job
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 9
+    what: 「正直に言うと」
+    verdict: missed
+    note: candidate pattern (honesty marker 正直)
+  - rule: ai-tell
+    line: 15
+    what: 「それがかえって胸に刺さった」
+    verdict: missed
+    note: catalog J22 (刺さる)
+  - rule: contrast-framing
+    line: 19
+    what: 「上司が困っていたのは資料の出来ではなかった」、15行「怒られたというより、静かに諭されたような」
+    verdict: missed
+    note: catalog J21/E12 (not X but Y), twice in a short essay
+  - rule: ai-generated-composite
+    line: 31
+    what: 「あのひとことがなければ…背筋が伸びる言葉だ」と題の「ひとこと」に戻って締める
+    verdict: missed
+    note: catalog B02 (neat callback ending)

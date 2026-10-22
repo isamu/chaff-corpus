@@ -1,0 +1,13 @@
+id: ai-ja-essay-dog
+chaff: 0.36.0
+findings:
+  - rule: contrast-framing
+    line: 11
+    what: 「嫌なのは「濡れること」ではなく、「上から降ってくるもの」らしい」
+    verdict: missed
+    note: catalog J21 (〜ではなく〜)
+  - rule: ai-generated-composite
+    line: 21
+    what: 「今日も外は雨。こはるは、ソファで寝ている。」と雨の話に戻って締める
+    verdict: missed
+    note: catalog B02 (neat callback ending)
