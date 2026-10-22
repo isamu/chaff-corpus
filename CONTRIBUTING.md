@@ -82,7 +82,8 @@ findings:
    [the README](README.md#a-document-written-by-a-model-origin-ai)): it has `generated` (the exact model name, the
    request as given, the date) in place of `source`, and since it was written for this repository it is under the
    repository's licence (`license.name: MIT`) with `redistribute: true`. `yarn validate` checks all three. Commit the
-   document part of the reply unedited.
+   document part of the reply unedited. A published text whose author says a model wrote it is `origin: ai` too, with
+   its `source` and licence as usual and `generated` holding the model and the author's `statement`.
    A published contact (a press office, a public hotline) may stay; add it to `allowlist.yaml` with the reason.
 3. **Pick the language and genre.** `ja` or `en`; a genre from `npx chaff genres`.
 4. **Add the files**: the text at `docs/<lang>/<genre>/<id>.md` (or `.txt` with `format: text` for plain text), and the

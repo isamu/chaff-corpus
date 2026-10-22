@@ -76,6 +76,23 @@ sha256: 3f5a…
 しるしと受け取るか」という問いで判定します。注意深く読む人なら気づくのに chaff が出さないしるしは `missed` として
 書きます。実行に origin ai の文書が含まれると、レポートに origin ごとの表と、ai の文書だけのルールごとの表が加わります。
 
+生成のあとに許す変更は一つだけです。モデルが作った連絡先が実在するドメインや番号に当たったときは、予約済みのもの
+（`example.*`、555 番号）に替え、`notes` にそう書きます。予約済みの架空の連絡先は `allowlist.yaml` に書きます。
+
+**公開済み**の文書で、書き手がモデルに書かせたと言っているものも `origin: ai` です。ただし、ほかの公開文書と同じく
+`source` と元のライセンス、`redistribute` を持ちます。`generated` には書き手が呼ぶとおりのモデル名と、どう作ったかについて
+書き手が言っていること（`statement`）を書き、`prompt` と `date` はわかるときだけ書きます。
+
+```yaml
+origin: ai
+generated:
+  model: Fable 5
+  statement: "The article's closing section says the article itself was written by Fable 5 …"
+source:
+  url: https://raw.githubusercontent.com/…
+  fetched: 2026-10-01
+```
+
 ### Hugging Face のデータセットの1件: `source.hf`
 
 本文が Hugging Face のデータセットの1件（1行）のときは、`source.hf` にどの1件かを書きます。`source.url` には読む人が文書を

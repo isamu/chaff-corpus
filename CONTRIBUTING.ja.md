@@ -78,7 +78,8 @@ findings:
    このレポジトリのためにモデルが書いた本文も `origin: ai` として受け付けます（[README](README.ja.md#モデルが書いた文書-origin-ai) 参照）。
    `source` の代わりに `generated`（モデルの正確な名前、依頼文そのまま、日付）を書き、このレポジトリのために書かれたので
    ライセンスはレポジトリのもの（`license.name: MIT`）、`redistribute: true` です。`yarn validate` がこの 3 つを確かめます。
-   返事のうち文書の部分を、手を入れずにコミットします。
+   返事のうち文書の部分を、手を入れずにコミットします。公開済みの文書で、書き手がモデルに書かせたと言っているものも
+   `origin: ai` です。`source` とライセンスはふだんどおりで、`generated` にモデル名と書き手の言葉（`statement`）を書きます。
    公開されている連絡先（広報窓口、公的な相談窓口など）は残してよく、理由とともに `allowlist.yaml` に書きます。
 3. **言語とジャンルを決める。** `ja` か `en`。ジャンルは `npx chaff genres` の一覧から選びます。
 4. **ファイルを置く。** 本文は `docs/<lang>/<genre>/<id>.md`（プレーンテキストなら `.txt` にして `format: text`）、

@@ -79,6 +79,23 @@ judged with one question in mind: would a reader take this as a sign that the te
 reader notices and chaff does not report is a `missed` entry. When a run holds documents of origin ai, the report adds
 a table by origin and one by rule for the ai documents.
 
+The only change allowed after generation: a contact the model invented that lands on a real domain or number is changed
+to a reserved one (`example.*`, a 555 number), and `notes` says so; invented reserved contacts go in `allowlist.yaml`.
+
+A **published** text whose author says a model wrote it is also `origin: ai`, but it keeps its `source`, its own licence
+and `redistribute` like any other published text. Its `generated` has the model as the author names it and `statement`,
+what the author says about how it was made; `prompt` and `date` are given only when known:
+
+```yaml
+origin: ai
+generated:
+  model: Fable 5
+  statement: "The article's closing section says the article itself was written by Fable 5 …"
+source:
+  url: https://raw.githubusercontent.com/…
+  fetched: 2026-10-01
+```
+
 ### A record of a Hugging Face dataset: `source.hf`
 
 When the text is one record of a dataset on Hugging Face, `source.hf` says which record, and `source.url` is where a
