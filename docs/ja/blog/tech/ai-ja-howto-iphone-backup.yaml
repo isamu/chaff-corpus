@@ -1,0 +1,16 @@
+id: ai-ja-howto-iphone-backup
+title: "機種変更前のiPhoneバックアップ"
+language: ja
+genre: blog/tech
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "機種変更の前にiPhoneのバックアップをとる方法をブログに書きたい。友だちに教えるくらいのカジュアルな感じでお願い。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 9578594d0d295c3829e90e7dd0a8b28521b95d2dc440b74ef2cd22ea70485220
+notes: "second set of isamu/lab#1918: a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

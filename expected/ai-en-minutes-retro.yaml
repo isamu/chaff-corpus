@@ -1,0 +1,30 @@
+id: ai-en-minutes-retro
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 4
+    text: "[Name]"
+    message: '"[Name]" was never filled in'
+    verdict: correct
+    note: template blank left for the user
+  - rule: adverb-overuse
+    line: 9
+    text: differently next time.
+    message: 18 -ly adverbs per 1000 words (limit 15)
+    verdict: false-positive
+    note: ordinary adverbs (quickly, smoothly) in a short document; nothing to cut
+  - rule: ai-generated-composite
+    line: 13
+    what: "a one-line request answered with a full retro: what went well and badly, 40% late copy, actions and dates"
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: bold-label-list
+    line: 13
+    what: every list item opens with a bold label ("**Clear ownership of each page.**" …)
+    verdict: missed
+    note: catalog E18 (bold labels, en)
+  - rule: empty-conclusion
+    line: 71
+    what: '"Closing Notes" restates the retro ("the relaunch was a success … main lessons are about planning content earlier")'
+    verdict: missed
+    note: catalog C/E45 (closing restates the body)

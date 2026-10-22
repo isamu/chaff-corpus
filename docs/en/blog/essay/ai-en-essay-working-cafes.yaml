@@ -1,0 +1,16 @@
+id: ai-en-essay-working-cafes
+title: "In defense of working from cafés"
+language: en
+genre: blog/essay
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a casual blog post defending people who work from cafés, with some etiquette rules. Keep it light."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 2efbb7210f9d5f1d360310cfb1eb8011cda2d77eaf2f125c4f32a67703d858d2
+notes: "second set of isamu/lab#1918: a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,16 @@
+id: ai-ja-email-lecture-request
+title: "講演のお願い"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "面識のない大学の先生に、社内の管理職向け勉強会での講演をお願いするメールを書いてください。来年2月、60分くらい。相手は大学教授なので失礼のないように、300字程度で。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 1417b90f02717b1e5e0710126072d7bc0b0b932e2c55f97b7830623dfd46805f
+notes: "second set of isamu/lab#1918: a request naming the audience and the length (style: audience-length). The text is the document part of the reply, without the assistant's lead-in or closing line."

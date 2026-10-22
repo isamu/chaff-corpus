@@ -1,0 +1,20 @@
+id: ai-ja-email-office-move
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 15
+    what: 住所・電話番号・社名・代表者名が〇〇のまま（15・16・24・25行）
+    verdict: missed
+    note: catalog J27
+  - rule: date-weekday-mismatch
+    line: 17
+    text: 2026年12月1日（月）
+    message: 「2026年12月1日」は火曜日です（月曜日と書いてあります）
+    verdict: correct
+    note: "2026-12-01 is a Tuesday; the model's weekday is wrong (also a sign of generated text: a confident, wrong weekday)"
+  - rule: date-weekday-mismatch
+    line: 18
+    text: 2026年11月28日（金）まで
+    message: 「2026年11月28日」は土曜日です（金曜日と書いてあります）
+    verdict: correct
+    note: 2026-11-28 is a Saturday; the model's weekday is wrong

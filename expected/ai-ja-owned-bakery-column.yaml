@@ -1,0 +1,45 @@
+id: ai-ja-owned-bakery-column
+chaff: 0.36.0
+findings:
+  - rule: concrete-evidence-density
+    line: 1
+    text: ""
+    message: 「パンをおいしく冷凍・解凍するコツ」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: false-positive
+    note: a shop column for customers; an introduction needs no figures or links
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 28% しかありません（35% 以上ほしい）
+    verdict: false-positive
+    note: 28%, but the sections are of different kinds (a reason, steps, four bread types); a reader does not notice evenness
+  - rule: sentence-rhythm
+    line: 3
+    text: こんにちは、こむぎの木の森です。
+    message: 文の長さのばらつきが 27%（30% 以上ほしい）
+    verdict: correct
+    note: the sentences are of one length from start to end (catalog J13)
+  - rule: concrete-evidence-density
+    line: 7
+    text: ""
+    message: 「2日以上置くなら、冷凍がおすすめ」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: false-positive
+    note: the section explains why with a reason; a figure would not help the reader
+  - rule: concrete-evidence-density
+    line: 39
+    text: ""
+    message: 「さいごに」の節に数値もコードもリンクもありません（そういう節が 3/4）
+    verdict: false-positive
+    note: a closing section
+  - rule: ai-generated-composite
+    line: 41
+    text: まとめ買いのときは、ぜひ試してみてくださいね。
+    message: 「section-length-uniformity、sentence-rhythm、closing-cliche」が同じ文書にそろっています（3 種、3 種から）
+    verdict: correct
+    note: the even rhythm, the tidy outline and the stock closing together read as generated
+  - rule: closing-cliche
+    line: 41
+    text: まとめ買いのときは、ぜひ試してみてくださいね。
+    message: 「ぜひ試してみてください」で締めています
+    verdict: correct
+    note: ぜひ試してみてくださいね closes the column (catalog J26); common in shop blogs too, but stock

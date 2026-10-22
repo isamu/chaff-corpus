@@ -1,0 +1,30 @@
+id: ai-en-essay-working-cafes
+chaff: 0.36.0
+findings:
+  - rule: contrast-framing
+    line: 5
+    what: "\"Moving to a café doesn't make me more productive, exactly. It makes me less bored\""
+    verdict: missed
+    note: catalog E12 (doesn't X. It Y.)
+  - rule: bold-label-list
+    line: 11
+    what: the etiquette rules as "- **Buy something every couple of hours.**" …
+    verdict: missed
+    note: catalog E18 (bold labels, en)
+  - rule: list-item-form-mix
+    line: 12
+    text: No calls.** If I have a call, I go home
+    message: '"No calls." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
+    verdict: false-positive
+    note: a list of house rules; "No calls." is the natural form of a rule
+  - rule: ai-tell
+    line: 18
+    what: '"And honestly?"'
+    verdict: missed
+    note: candidate pattern (honesty marker), in a casual request; also a question answered by itself (E34)
+  - rule: unknown-word
+    line: 18
+    text: barista knows my order, I know about her
+    message: '"barista" is not in the dictionary; did you mean "arista"?'
+    verdict: false-positive
+    note: barista is an ordinary English word

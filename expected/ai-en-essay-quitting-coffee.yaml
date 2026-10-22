@@ -1,0 +1,14 @@
+id: ai-en-essay-quitting-coffee
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 32% (want at least 35%)
+    verdict: correct
+    note: Why I Did It / The First Week Was Hard / What Changed / What I Missed / Where I've Landed, all one size; the stock experiment-post arc
+  - rule: ai-generated-composite
+    line: 35
+    what: "\"The experiment taught me something I didn't expect: …\" then \"Sometimes the only way to see a habit clearly is to step away from it for a while.\""
+    verdict: missed
+    note: catalog B02 (lesson-and-moral close)

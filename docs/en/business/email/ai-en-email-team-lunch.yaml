@@ -1,0 +1,16 @@
+id: ai-en-email-team-lunch
+title: "Team lunch to celebrate a launch"
+language: en
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write a casual email inviting my team to a celebration lunch this Friday at 12:30 at Tony's on 5th, because we shipped the new checkout. Company pays. Remote people can expense lunch up to $25. Keep it casual."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: c97d89815476b2c4f5e18f078aa40e174af5703c73152cfb1524c3539de7c52c
+notes: "second set of isamu/lab#1918: a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

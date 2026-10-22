@@ -1,0 +1,16 @@
+id: ai-ja-email-training-notice
+title: "情報セキュリティ研修のご案内"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "このメモから社内向けの案内メールを作って。\n・情報セキュリティ研修\n・11/20 15-16時 本社3F大会議室、在宅はTeams\n・全員参加\n・標的型メール、パスワードルール変更、社外PC利用\n・講師 情シス\n・11/13までにフォームで参加方法登録\n・出られない人は録画"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 8379ccb39df7b2f63d3ab0ae93359c5d1e6b978da4b446a0d27dfb73338c5530
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

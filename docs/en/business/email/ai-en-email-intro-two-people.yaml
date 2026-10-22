@@ -1,0 +1,16 @@
+id: ai-en-email-intro-two-people
+title: "Introducing two contacts"
+language: en
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write an email introducing two people I know: Jenna, operations lead at Fairfield Foods, who is about to move three warehouses from paper pick lists to a tablet system, and Marcus, who runs operations at a logistics startup in Denver and did exactly that last year. Suggest they have a call. Make it sound human."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: e6b778e92a3840b9c66aedfee3d1c3d6659c9b47550f33b7661833d50f4fd1b6
+notes: "second set of isamu/lab#1918: a request to make it sound human (style: human). The text is the document part of the reply, without the assistant's lead-in or closing line."

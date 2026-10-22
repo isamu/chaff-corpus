@@ -1,0 +1,16 @@
+id: ai-ja-email-thanks-after-meeting
+title: "打ち合わせのお礼"
+language: ja
+genre: business/email
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "今日打ち合わせした取引先（みどり製作所の木村さん）へのお礼メールを書いて。パンフレット制作の件で、工場も見せてもらった。宿題はラフ案2パターンを11月7日までに出すことと、撮影日の候補を来週出すこと。私はサンライズデザインの石井美咲です。人間らしい文章にしてください。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 2a9d0560ce85103ed15b8cf6cd5d9f87c72e70e9aa588e2915be1a9d423fdd84
+notes: "second set of isamu/lab#1918: a request to make it sound human (style: human). The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,16 @@
+id: ai-ja-proposal-office-plants
+title: "オフィスに植物を置く提案"
+language: ja
+genre: business/proposal
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "オフィスに観葉植物を置きたいという社内向けの提案を書いて。レンタルで月1万2千円くらい。総務チームのゆるい提案なので、カジュアルな感じで。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 0e93c301e4d6e6f87ab4fc90678ee7ca97f9f6753e9dbd731357a5a52bd50e15
+notes: "second set of isamu/lab#1918: a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,14 @@
+id: ai-ja-proposal-crm-tool
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 13
+    what: 担当の山下さんが休んだ日の出来事と先方の言葉、約300社・若手2名（29行）が依頼にない
+    verdict: missed
+    note: "catalog B01/S24 (invented anecdote): under 'avoid AI', the model adds a named-colleague story as evidence"
+  - rule: weasel-word
+    line: 13
+    text: 先方からは「担当がいないと何もわからないのか」と言われています。
+    message: 「と言われている」は、誰が言ったのかを言っていません
+    verdict: false-positive
+    note: "the speaker is named: 先方 (the client who called)"

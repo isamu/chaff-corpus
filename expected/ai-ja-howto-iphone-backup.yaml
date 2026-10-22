@@ -1,0 +1,37 @@
+id: ai-ja-howto-iphone-backup
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 32% しかありません（35% 以上ほしい）
+    verdict: false-positive
+    note: "32%: the sections differ in kind (steps, a choice, a checklist); a reader does not notice evenness here"
+  - rule: list-item-form-mix
+    line: 9
+    text: 「設定」アプリを開く
+    message: 「「設定」アプリを開く」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（4 項目のうち 1 項目）
+    verdict: correct
+    note: steps end in 開く and in タップ (a noun) in the same list; an editor would align them
+  - rule: latin-spacing
+    line: 29
+    text: " Finder、Windowsなら「Appleデバイス」アプリ（またはiTune"
+    message: 日本語と英字のあいだを、空ける所が 6 箇所、詰める所が 21 箇所あります。この文書には書き方が二通りあります
+    verdict: correct
+    note: Macなら Finder is spaced, Windowsなら and iTunes are not, in one sentence
+  - rule: list-item-form-mix
+    line: 35
+    text: 「今すぐバックアップ」をクリック
+    message: 「「今すぐバックアップ」をクリック」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
+    verdict: correct
+    note: クリック (a noun) among steps ending in verbs
+  - rule: ai-tell
+    line: 37
+    what: 「地味だけど大事です」
+    verdict: missed
+    note: catalog J22 (地味に family); the casual request produced it
+  - rule: closing-cliche
+    line: 56
+    what: 「新しいiPhone、楽しんでください！」で締める
+    verdict: missed
+    note: catalog D (closing cheer)

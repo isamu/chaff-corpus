@@ -1,0 +1,13 @@
+id: ai-ja-email-decline-offer
+chaff: 0.36.0
+findings:
+  - rule: ai-tell
+    line: 11
+    what: 断りの理由の前に「正直かなり迷いました」
+    verdict: missed
+    note: "candidate pattern (honesty marker 正直): AI1 found it in every 'write naturally' output; here under 'avoid AI phrasing'. Shape: density of 正直 / honestly"
+  - rule: ai-generated-composite
+    line: 13
+    what: 「何度も打ち合わせにお時間をいただいたのに」が依頼にない
+    verdict: missed
+    note: catalog B01 (invented detail)

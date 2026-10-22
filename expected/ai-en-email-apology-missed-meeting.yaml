@@ -1,0 +1,27 @@
+id: ai-en-email-apology-missed-meeting
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: I had it in my calendar for tomorrow, an
+    message: This sentence runs 20 words (limit 18)
+    verdict: false-positive
+    note: 20 words, one plain explanation
+  - rule: max-sentence-length
+    line: 7
+    text: If neither works, send me a couple of ti
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one offer
+  - rule: max-sentence-length
+    line: 9
+    text: I have a few questions about the Q1 trav
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one point
+  - rule: email-greeting-closing
+    line: 13
+    text: Tom
+    message: The email does not end with a closing
+    verdict: false-positive
+    note: '"Sorry again for the wasted morning." is the closing line above the name'

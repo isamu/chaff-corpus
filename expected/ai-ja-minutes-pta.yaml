@@ -1,0 +1,14 @@
+id: ai-ja-minutes-pta
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 10
+    what: 「天気にも恵まれ」「昨年より3万円ほど多く」と副校長の発言（14行）、選考委員会・駐輪場の件（30・31行）が依頼にない
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: no-doubled-joshi
+    line: 31
+    text: の学習発表会の駐輪場整理の担当を、今月中に決めます（会長から連絡があります）。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "11月の学習発表会の駐輪場整理の担当: three の in a row; an editor would rephrase (学習発表会当日の駐輪場整理の係)"

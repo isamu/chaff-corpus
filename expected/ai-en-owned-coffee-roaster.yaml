@@ -1,0 +1,31 @@
+id: ai-en-owned-coffee-roaster
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 29% (want at least 35%)
+    verdict: correct
+    note: five numbered tips of one size; the listicle shape
+  - rule: announcing-opener
+    line: 3
+    what: '"The good news is that"'
+    verdict: missed
+    note: catalog E33 (The good news is)
+  - rule: heading-numbering-mix
+    line: 31
+    text: "## A quick note on our beans"
+    message: The heading "A quick note on our beans" has no number, while 5 of its siblings do ("1. Buy whole beans, and grind just before brewing")
+    verdict: false-positive
+    note: the note on the shop's beans is not one of the five tips
+  - rule: unknown-word
+    line: 33
+    text: roastery, and every bag is marked with i
+    message: '"roastery" is not in the dictionary; did you mean "roaster"?'
+    verdict: false-positive
+    note: roastery is an English word (a place where coffee is roasted)
+  - rule: closing-cliche
+    line: 35
+    what: '"Happy brewing!"'
+    verdict: missed
+    note: catalog D (closing cheer, "Happy X!")

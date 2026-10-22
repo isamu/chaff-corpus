@@ -1,0 +1,26 @@
+id: ai-ja-proposal-office-plants
+chaff: 0.36.0
+findings:
+  - rule: ai-generated-composite
+    line: 12
+    what: 「先月の雑談アンケートでも…という声がいくつか出ていました」が依頼にない
+    verdict: missed
+    note: catalog B01 (invented detail)
+  - rule: colloquial-opener
+    line: 18
+    text: なので、レンタルがいいと思っています。
+    message: 「なので」で始まる文が 1 個あります（1 個から）
+    verdict: false-positive
+    note: the user asked for a casual internal proposal; なので fits the register
+  - rule: list-item-form-mix
+    line: 22
+    text: 置く場所に合わせて種類を選んでくれる
+    message: 「置く場所に合わせて種類を選んでくれる」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: correct
+    note: two items end in a noun (チェック, 交換), this one in a verb; an editor would align them
+  - rule: amount-scale-consistency
+    line: 24
+    text: 12,000円（税別）でした。年間だと約15万円です。
+    message: 「12,000円」と書いています（この文書は同じ桁の金額を「1万2千円」のように書きます）
+    verdict: correct
+    note: the same amount is 1万2千円 in line 7 and 12,000円 here

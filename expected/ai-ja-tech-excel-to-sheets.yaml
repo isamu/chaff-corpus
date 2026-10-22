@@ -1,0 +1,80 @@
+id: ai-ja-tech-excel-to-sheets
+chaff: 0.36.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 28% しかありません（35% 以上ほしい）
+    verdict: correct
+    note: five numbered tips of the same size plus おわりに; the listicle shape a reader takes as generated
+  - rule: no-mixed-desumasu
+    line: 3
+    text: 会社でExcelをやめて、Googleスプレッドシートに切り替えることになった。
+    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
+    verdict: false-positive
+    note: a plain-form scene-setting opener answered by そんな方に向けて; deliberate
+  - rule: paragraph-length-variance
+    line: 3
+    text: 会社でExcelをやめて、Googleスプレッドシートに切り替えることになった。
+    message: 段落の長さのばらつきが 24% しかありません（30% 以上ほしい）
+    verdict: correct
+    note: nearly every paragraph is two or three sentences of the same length; reads as generated
+  - rule: sentence-rhythm
+    line: 3
+    text: 会社でExcelをやめて、Googleスプレッドシートに切り替えることになった。
+    message: 文の長さのばらつきが 27%（30% 以上ほしい）
+    verdict: correct
+    note: sentence lengths barely vary (catalog J13); a reader feels the even rhythm
+  - rule: concrete-evidence-density
+    line: 5
+    text: ""
+    message: 「1. 「保存」ボタンがない」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: a how-to for office staff; the menu paths are the evidence, numbers or links would not help
+  - rule: orthographic-variant
+    line: 9
+    text: ほうに「ドライブに保存しました」と表示されていれば、保存は完了しています。「保存
+    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 上のほう (a direction) and 方 (使い方, a way of doing) are different words
+  - rule: concrete-evidence-density
+    line: 13
+    text: ""
+    message: 「2. 同じファイルを何人も同時に開ける」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: as line 5
+  - rule: concrete-evidence-density
+    line: 19
+    text: ""
+    message: 「3. 関数はだいたい同じ、でも一部ちがう」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: as line 5
+  - rule: concrete-evidence-density
+    line: 25
+    text: ""
+    message: 「4. ファイルの「場所」の考え方がちがう」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: as line 5
+  - rule: concrete-evidence-density
+    line: 31
+    text: ""
+    message: 「5. 印刷はひと手間かかる」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: as line 5
+  - rule: concrete-evidence-density
+    line: 37
+    text: ""
+    message: 「おわりに」の節に数値もコードもリンクもありません（そういう節が 6/7）
+    verdict: false-positive
+    note: a closing section; no evidence expected
+  - rule: heading-numbering-mix
+    line: 37
+    text: "## おわりに"
+    message: 見出し「おわりに」だけ番号がありません（兄弟の見出しは「1. 「保存」ボタンがない」など 5 個が番号付き）
+    verdict: false-positive
+    note: the closing section is not one of the five numbered tips
+  - rule: closing-cliche
+    line: 39
+    what: 「おわりに」で本文をなぞり「ひとりで悩まず、まわりの人に気軽に聞いてみてください」と締める
+    verdict: missed
+    note: "catalog J19/J26: a closing section that restates and exhorts"

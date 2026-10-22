@@ -1,0 +1,25 @@
+id: ai-ja-report-business-trip
+chaff: 0.36.0
+findings:
+  - rule: unfilled-placeholder
+    line: 3
+    what: 氏名と担当が〇〇のまま（3・34〜36行）
+    verdict: missed
+    note: catalog J27
+  - rule: ai-generated-composite
+    line: 28
+    what: 「所感」の評価（大きなチャンス、価格に敏感）と期限 10月23日・11月13日・10月30日がメモにない
+    verdict: missed
+    note: "catalog B01 (invented detail): opinions and dates the notes did not give, written as the reporter's own"
+  - rule: date-outside-period
+    line: 34
+    text: 10月23日 |
+    message: 「10月23日」が、書いた期間「2026年10月15日（木）〜10月16日（金）」の外です
+    verdict: false-positive
+    note: a due date in the follow-up table; follow-up dates fall after the trip by nature
+  - rule: date-outside-period
+    line: 35
+    text: 11月13日 |
+    message: 「11月13日」が、書いた期間「2026年10月15日（木）〜10月16日（金）」の外です
+    verdict: false-positive
+    note: a due date in the follow-up table, as line 34

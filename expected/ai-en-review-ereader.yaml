@@ -1,0 +1,14 @@
+id: ai-en-review-ereader
+chaff: 0.36.0
+findings:
+  - rule: paragraph-length-variance
+    line: 3
+    text: I bought the cheapest e-reader from one
+    message: Paragraph length varies by only 26% (want at least 30%)
+    verdict: false-positive
+    note: 26%, short paragraphs as a review post is written; not noticeable
+  - rule: ai-generated-composite
+    line: 13
+    what: '"a ten-day trip where I forgot the cable", "twenty minutes to work out" and "once, at the beach" (line 29) are not in the request'
+    verdict: missed
+    note: catalog B01 (invented detail)

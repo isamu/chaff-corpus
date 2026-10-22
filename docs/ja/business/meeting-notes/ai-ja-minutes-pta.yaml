@@ -1,0 +1,16 @@
+id: ai-ja-minutes-pta
+title: "PTA運営委員会 議事録"
+language: ja
+genre: business/meeting-notes
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "PTA運営委員会の議事録を書いてください。議題は、秋のバザーの振り返り（売上約18万円、受付が混雑した）と、登下校の見守り当番が足りない問題（月1回朝30分にする、平日無理な家庭は土曜の手伝いで、LINEで当番表共有、12月から試す）。保護者が読むので、かたすぎない自然な文章でお願いします。"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: b087f3d1c9f7666aea2b7e3c6e3137c535cb8c2db48fbb3aeacf48f09c95bd61
+notes: "second set of isamu/lab#1918: a request to write naturally (style: natural). The text is the document part of the reply, without the assistant's lead-in or closing line."

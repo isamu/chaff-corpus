@@ -1,0 +1,16 @@
+id: ai-en-report-pilot-results
+title: "Results of a self-checkout pilot"
+language: en
+genre: business/report
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Write up the results of our self-checkout pilot from these notes:\n\n- Elm St store, Sep 28-Oct 25, 4 self-checkout lanes replaced 2 registers, 1 helper\n- peak wait 6.5 min -> 3.8\n- self-checkout share by week: 14, 22, 27, 31%\n- satisfaction 3.9 -> 4.1\n- shrinkage self-checkout 1.4% vs 0.6% staffed (limit we set was 2%)\n- over-65s 24% of customers but 6% of self-checkout\n- half of help requests = weighing produce\n- 1 helper not enough sat mornings\n- want to roll out to Oak Ave and Riverside in Q1"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: f7143c57c6492fd471eb8ea8d8f38d06d15c80c3324a726930007076366f3413
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

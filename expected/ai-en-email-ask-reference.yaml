@@ -1,0 +1,21 @@
+id: ai-en-email-ask-reference
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 5
+    text: I took your Urban Economics seminar in s
+    message: This sentence runs 19 words (limit 18)
+    verdict: false-positive
+    note: 19 words, one reminder of who the writer is
+  - rule: max-sentence-length
+    line: 7
+    text: I'm applying for a research analyst posi
+    message: This sentence runs 20 words (limit 18)
+    verdict: false-positive
+    note: 20 words, one point
+  - rule: attachment-not-attached
+    line: 9
+    text: I've attached my résumé and the job desc
+    message: An attachment is mentioned, but no attachment line or file name is shown
+    verdict: false-positive
+    note: the files are attached when sending

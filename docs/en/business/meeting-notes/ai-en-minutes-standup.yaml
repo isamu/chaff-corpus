@@ -1,0 +1,16 @@
+id: ai-en-minutes-standup
+title: "Product team weekly sync notes"
+language: en
+genre: business/meeting-notes
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-10-22
+  prompt: "Clean up my notes from today's product sync into proper meeting notes:\n\nnov 4 - leah omar jess victor hana(me)\nomar: search filters backend done, waiting on design for mobile\njess: onboarding emails 1+2 live, email 1 open 54%, email 3 w/ legal\nvictor: bugs 31->23, 2 P1s csv export, fix by thu\ndesign behind bc rebrand - leah asks if they can do mon, else omar does simple version\nv2.6 hold until P1s fixed, prob nov 12 instead of 10\nleah to tell CS about date\nnext wed nov 11"
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 00a748c7ad8767c24fbc6a790916d24c82fb53a06fa647c1fe7098e6df8269fd
+notes: "second set of isamu/lab#1918: bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

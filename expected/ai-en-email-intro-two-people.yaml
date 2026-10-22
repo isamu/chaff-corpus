@@ -1,0 +1,25 @@
+id: ai-en-email-intro-two-people
+chaff: 0.36.0
+findings:
+  - rule: max-sentence-length
+    line: 7
+    text: He spent the last year moving their ware
+    message: This sentence runs 33 words (limit 18)
+    verdict: correct
+    note: 33 words with an inline triad (messy, slow, and ended up working really well); splits after tablet-based system
+  - rule: rule-of-three
+    line: 7
+    what: inline triad "messy, slow, and ended up working really well"
+    verdict: missed
+    note: catalog E13 (inline triad)
+  - rule: max-sentence-length
+    line: 9
+    text: They're about to start the same kind of
+    message: This sentence runs 29 words (limit 18)
+    verdict: false-positive
+    note: 29 words, but one situation told in order; easy to read
+  - rule: ai-generated-composite
+    line: 11
+    what: "\"Marcus, I know you've got opinions about training schedules\" is not in the request"
+    verdict: missed
+    note: "catalog B01 (invented detail): a claim about a real contact the writer may not be able to stand behind"
