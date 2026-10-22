@@ -1,0 +1,16 @@
+id: bousai-wp-r07-jigyo-keizoku
+title: "内閣府: 令和7年版 防災白書 第1部 第1章 第1節 1－9 事業継続体制の構築"
+language: ja
+genre: business/report
+format: markdown
+source:
+  url: https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/1b_1s_01_09.html
+  fetched: 2026-10-22
+  format: html
+license:
+  name: PDL-1.0
+  url: https://www.bousai.go.jp/notice.html
+  note: "内閣府防災情報のページ「このホームページについて」: 利用は内閣府ホームページ利用規約に準拠する（https://www.cao.go.jp/notice/rule.html: 特記されていない限り公共データ利用規約（第1.0版）（PDL1.0、CC BY 4.0 互換）が適用され、防災白書は適用外の一覧にない）; 出典: 「令和7年版 防災白書」（内閣府）(https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/1b_1s_01_09.html) を加工して作成 (converted to Markdown)"
+redistribute: true
+sha256: d16aa272fcf98a9b208ca712406d8145187e05cd93f29717b182a3344ae08241
+notes: 令和6年度に講じた防災施策の一節; the figures (図表1-9-1, 1-9-2) are images, so only their captions are in the text (令和7年版防災白書 本文). The source is html; the text is source.format html converted by scripts/lib/source-format.ts.

@@ -760,3 +760,15 @@
 - id: nps-glacier-faqs
   match: "406-888-7800"
   reason: a government office's published phone number (switchboard, desk or hotline), part of the document
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-5253-2111"
+  reason: 内閣府's published switchboard number, given in the press release as the contact for the survey method
+- id: env-press-2026-10-16-junkan-keizai-yoron
+  match: "03-3581-3351"
+  reason: 環境省's published switchboard number, given in the press release as the contact for the survey results
+- id: fsa-press-2026-10-09-cyber-taisaku
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)
+- id: fsa-press-2026-10-05-delta-wall
+  match: "03-5251-6811"
+  reason: the published number of 金融庁's public enquiry line (the IP-phone alternative to its 0570 number)

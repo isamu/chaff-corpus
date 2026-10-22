@@ -1,0 +1,99 @@
+id: bousai-wp-r07-sangyokai-renkei
+chaff: 0.36.0
+findings:
+  - rule: heading-level-skip
+    line: 3
+    text: "#### 1－10　産業界との連携"
+    message: 見出し「1－10　産業界との連携」の深さが 1 から 4 へ飛んでいます（2 のはず）
+    verdict: correct
+    note: ページ自身が h1 から h4 へ飛ぶ
+  - rule: max-sentence-length
+    line: 9
+    text: 「防災経済コンソーシアム」では、それぞれの業界の特性に応じた創意工夫により、事業
+    message: この文は 152 文字あります（140 文字まで）
+    verdict: correct
+    note: 152 字の一文
+  - rule: no-doubled-joshi
+    line: 9
+    text: の災害リスクマネジメント力向上のための普及・啓発を図る等の「防災経済行動原則」を
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「事業者の…向上のための…図る等の」と「の」が三つ続く
+  - rule: max-sentence-length
+    line: 11
+    text: 令和6年度は、防災・事業継続力強化の課題と考えられる「サプライチェーン、地域連携
+    message: この文は 157 文字あります（140 文字まで）
+    verdict: correct
+    note: 157 字の一文
+  - rule: topic-predicate-distance
+    line: 11
+    text: 令和6年度は、防災・事業継続力強化の課題と考えられる「サプライチェーン、地域連携
+    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
+    verdict: correct
+    note: 「令和6年度は」から述語まで 132 字
+  - rule: url-run-on
+    line: 15
+    text: https://www.bousai.go.jp/kyoiku/consorti
+    message: URL「https://www.bousai.go.jp/kyoiku/consortium/index.html」の直後に「）」が続いています。リンクがそこまで伸びます
+    verdict: correct
+    note: URL の直後に全角の「）」が付き、自動リンクがそこまで伸びる
+  - rule: teki-overuse
+    line: 21
+    text: 近年、激甚化・頻発化する災害に対して、より効果的・効率的に対応していくためには、
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 一文に「効果的」「効率的」「積極的」
+  - rule: max-sentence-length
+    line: 25
+    text: 同プラットフォームでは、常設のウェブサイト（以下「マッチングサイト」という。）を
+    message: この文は 173 文字あります（140 文字まで）
+    verdict: correct
+    note: 173 字の一文
+  - rule: max-sentence-length
+    line: 31
+    text: マッチングセミナーは、令和7年3月末までに計10回開催され、地方公共団体等に実際
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: correct
+    note: 155 字の一文
+  - rule: topic-predicate-distance
+    line: 31
+    text: マッチングセミナーは、令和7年3月末までに計10回開催され、地方公共団体等に実際
+    message: 「は」で出した主題から述語まで 137 字あります（80 字まで）
+    verdict: correct
+    note: 「マッチングセミナーは」から述語まで 137 字
+  - rule: max-sentence-length
+    line: 33
+    text: 第10回セミナーにおいては、国内最大級のオープンイノベーション施設に産官学金が一
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: correct
+    note: 163 字の一文
+  - rule: max-sentence-length
+    line: 40
+    text: 内閣府では、地方公共団体で活用することが有効と考えられる新技術等を「自治体等活用
+    message: この文は 155 文字あります（140 文字まで）
+    verdict: correct
+    note: 155 字の一文
+  - rule: max-sentence-length
+    line: 42
+    text: マッチングピッチイベントでは、災害対応に当たった企業や関係省庁から、現地で活用さ
+    message: この文は 202 文字あります（140 文字まで）
+    verdict: correct
+    note: 202 字の一文
+  - rule: no-nakaguro-parallel
+    line: 42
+    text: マッチングピッチイベントでは、災害対応に当たった企業や関係省庁から、現地で活用さ
+    message: この文に中黒が 8 個あります（5 個まで）
+    verdict: correct
+    note: 一文に中黒が 8 個、並列が読み取りにくい
+  - rule: max-sentence-length
+    line: 48
+    text: 内閣府では、関東大震災から100年の節目を迎える令和5年を巨大災害に対する備えを
+    message: この文は 178 文字あります（140 文字まで）
+    verdict: correct
+    note: 178 字の一文
+  - rule: no-doubled-joshi
+    line: 52
+    text: の内閣府の参画のほか、令和7年1月には内閣府及び有識者と賛同企業等による南海トラ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「イベント等への内閣府の参画のほか」と「の」が三つ続く

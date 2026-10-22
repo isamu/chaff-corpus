@@ -1,0 +1,15 @@
+id: env-press-2026-10-16-junkan-keizai-yoron
+title: "環境省 報道発表: 「循環経済（サーキュラーエコノミー）に関する世論調査」について (2026-10-16)"
+language: ja
+genre: business/press-release
+format: markdown
+source:
+  url: https://www.env.go.jp/press/press_05686.html
+  fetched: 2026-10-22
+license:
+  name: PDL-1.0
+  url: https://www.env.go.jp/mail.html
+  note: "環境省ホームページ「著作権・リンクについて」(https://www.env.go.jp/mail.html): コンテンツは特記されていない限り公共データ利用規約（第1.0版）（PDL1.0、CC BY 4.0 互換）が適用される（適用外はロゴマークと国土地理院の地図）; 出典: 環境省ホームページ (https://www.env.go.jp/press/press_05686.html) を加工して作成 (converted to Markdown; the page header before the title and the 連絡先 block after the body are left out)"
+redistribute: true
+sha256: acfb704cf28e714a1fef7210b1938185f59cb14093fb5507ce075ab85b840c6b
+notes: "Converted with scripts/lib/source-format.ts (html), then cut: from the title (# …) to the line before 「## 連絡先」. The page header (報道発表資料, 印刷 link, date, category) and the 連絡先 block (the office's numbers and its officials' names) are left out. The office's representative number and extensions in the body stay."

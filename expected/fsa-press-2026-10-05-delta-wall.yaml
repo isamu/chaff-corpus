@@ -1,0 +1,15 @@
+id: fsa-press-2026-10-05-delta-wall
+chaff: 0.36.0
+findings:
+  - rule: bracket-nesting
+    line: 7
+    text: このため、金融業界全体のサイバーレジリエンス及びインシデント対応能力の更なる向上
+    message: 括弧が 3 重になっています（2 重まで）
+    verdict: correct
+    note: 「（Delta Wall 2026（※））」を含めて括弧が三重
+  - rule: fullwidth-alnum-consistency
+    line: 28
+    text: ＩＰ電話からは０３－５２５１－６８１１）
+    message: 全角の「ＩＰ」と書いています（この文書はふつう半角の「IP」。6 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 問合せ先の「ＩＰ」「０３－…」は全角、本文の「Delta Wall 2026」「11回目」などは半角

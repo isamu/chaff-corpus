@@ -1,0 +1,21 @@
+id: env-press-2026-10-20-kuma-consulting
+chaff: 0.36.0
+findings:
+  - rule: nominalization
+    line: 15
+    text: 審査を行いました。
+    message: 「審査を行う」は「審査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「審査を行いました」は「審査しました」で足りる
+  - rule: nominalization
+    line: 39
+    text: 打合せを行い、その地域のクマ対策の課題やニーズ等を収集・整理し、最適な対策案を提
+    message: 「打合せを行う」は「打合せする」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「打合せを行い」は「打ち合わせし」で足りる
+  - rule: nominalization
+    line: 44
+    text: 検証を行います。
+    message: 「検証を行う」は「検証する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「効果検証を行います」は「効果を検証します」で足りる

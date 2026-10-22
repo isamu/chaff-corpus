@@ -1,0 +1,75 @@
+id: fsa-press-2026-10-09-cyber-taisaku
+chaff: 0.36.0
+findings:
+  - rule: nominalization
+    line: 3
+    text: 喚起を行いました。
+    message: 「喚起を行う」は「喚起する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「注意喚起を行いました」は「注意喚起しました」で足りる
+  - rule: nominalization
+    line: 9
+    text: 対応を行うことが引き続き重要です。
+    message: 「対応を行う」は「対応する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「対応を行う」は「対応する」で足りる
+  - rule: max-sentence-length
+    line: 11
+    text: なお、金融機関が非対面で顧客の本人確認を行うに際しては、犯罪収益移転防止法等に基
+    message: この文は 171 文字あります（140 文字まで）
+    verdict: correct
+    note: 171 字の一文
+  - rule: max-ten
+    line: 11
+    text: なお、金融機関が非対面で顧客の本人確認を行うに際しては、犯罪収益移転防止法等に基
+    message: 一文に読点が 8 個あります（6 個まで）
+    verdict: correct
+    note: 一文に読点が 8 個
+  - rule: nominalization
+    line: 11
+    text: 確認を行うに際しては、犯罪収益移転防止法等に基づき、本人確認書類の厚みのほか、顧
+    message: 「確認を行う」は「確認する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「本人確認を行う」は「本人確認する」で足りる
+  - rule: list-item-form-mix
+    line: 17
+    text: 各金融機関等において、内閣官房国家サイバー統括室からの注意喚起「不正アクセスによ
+    message: 「各金融機関等において、内閣官房国家サイバー統括室からの注意喚起「不正アクセスによる漏えい等の事案を踏まえた対応について」（令和８年10月９日）や、今後、公表情報等を通じて明らかとなる攻撃の原因・手口等を踏まえ、サードパーティリスク管理やインシデントが起きた場合の対応態勢も含めたサイバーセキュリティ対策について、点検すること。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
+    verdict: false-positive
+    note: 三項目とも「〜こと。」で終わる。一つ目は二文からなるだけで、文末の形は揃っている
+  - rule: max-sentence-length
+    line: 17
+    text: 各金融機関等において、内閣官房国家サイバー統括室からの注意喚起「不正アクセスによ
+    message: この文は 163 文字あります（140 文字まで）
+    verdict: correct
+    note: 箇条書き一項目の最初の文が 163 字
+  - rule: nominalization
+    line: 18
+    text: 確認を行うにあたっては、本人確認書類の画像に不自然な点がないか、また、顧客の容貌
+    message: 「確認を行う」は「確認する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
+    verdict: correct
+    note: 「本人確認を行う」の名詞化
+  - rule: max-kanji-continuous
+    line: 19
+    text: 犯罪収益移転防止法施行規則の改正により、施行日である令和９年４月１日より、本人確
+    message: 「犯罪収益移転防止法施行規則」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: 法令の題名（犯罪収益移転防止法施行規則）
+  - rule: max-sentence-length
+    line: 19
+    text: 犯罪収益移転防止法施行規則の改正により、施行日である令和９年４月１日より、本人確
+    message: この文は 141 文字あります（140 文字まで）
+    verdict: correct
+    note: 141 字の一文
+  - rule: max-ten
+    line: 19
+    text: 犯罪収益移転防止法施行規則の改正により、施行日である令和９年４月１日より、本人確
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: correct
+    note: 一文に読点が 7 個
+  - rule: fullwidth-alnum-consistency
+    line: 35
+    text: ITサイバー・経済安全保障監理官室（内線2217、3850）、
+    message: 半角の「IT」と書いています（この文書はふつう全角の「ＩＴ」。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: 所管課名の「IT」だけ半角、本文の「ＩＣ」「ＩＰ」は全角

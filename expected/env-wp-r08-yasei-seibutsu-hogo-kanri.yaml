@@ -1,0 +1,417 @@
+id: env-wp-r08-yasei-seibutsu-hogo-kanri
+chaff: 0.36.0
+findings:
+  - rule: max-kanji-continuous
+    line: 13
+    text: 2017年5月に成立した絶滅のおそれのある野生動植物の種の保存に関する法律の一部
+    message: 「特定第二種国内希少野生動植物種制度」は漢字が 17 字続いています（10 字まで）
+    verdict: false-positive
+    note: 制度の名称（特定第二種国内希少野生動植物種制度）
+  - rule: no-doubled-joshi
+    line: 13
+    text: のおそれのある野生動植物の種の保存に関する法律の一部を改正する法律（平成29年法
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: false-positive
+    note: 「の」の連なりは法律の題名（絶滅のおそれのある野生動植物の種の保存に関する法律）の中
+  - rule: fact-conflict
+    line: 15
+    text: 5年を経過したことなどを踏まえ、2024年から法律の施行状況評価を実施し、202
+    message: 「野生動植物の種」の保存期間が 5年 と書かれていますが、前の所では 29年 です
+    verdict: false-positive
+    note: 「平成29年法律第51号」の「29年」を期間と読んでいる。5年は改正法の施行からの経過年数で、矛盾はない
+  - rule: no-doubled-joshi
+    line: 15
+    text: の種の保存法の在り方の検討を開始しました。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「今後の種の保存法の在り方の検討」と「の」が三つ続く
+  - rule: nominalization
+    line: 15
+    text: 評価を実施し、2025年6月に「絶滅のおそれのある野生動植物の種の保存に関する法
+    message: 「評価を実施する」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 19
+    text: 規制を行っています。
+    message: 「規制を行う」は「規制する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 31
+    text: 放鳥を行うことを決定しました。
+    message: 「放鳥を行う」は「放鳥する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: one-sentence-paragraph-run
+    line: 35
+    text: これらの保護増殖事業や調査研究、普及啓発を推進するための拠点となる野生生物保護セ
+    message: 一文だけの段落が 5 個続いています（4 個まで）
+    verdict: correct
+    note: 一文の段落が五つ続き、節が細切れになる
+  - rule: ngram-repetition
+    line: 39
+    text: 各種開発事業に際しての保全措置の検討のための考え方と積極的な保全活動を進める際の
+    message: 「を実施しました。」が 9 回出てきます（5 回まで）
+    verdict: correct
+    note: 「を実施しました。」の文末が何度も繰り返される
+  - rule: no-doubled-joshi
+    line: 39
+    text: の保全措置の検討のための考え方と積極的な保全活動を進める際の参考情報をまとめた「
+    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    verdict: correct
+    note: 「保全措置の検討のための考え方」と「の」が四つ続く
+  - rule: nominalization
+    line: 39
+    text: 検討を実施しました。
+    message: 「検討を実施する」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 41
+    text: 保全を行いました。
+    message: 「保全を行う」は「保全する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 47
+    text: 繁殖を実施するなど生息域外保全の取組を進めています。
+    message: 「繁殖を実施する」は「繁殖する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: false-positive
+    note: 「繁殖を実施する」を「繁殖する」にすると主体が動物になり、意味が変わる
+  - rule: name-variant
+    line: 49
+    text: 動物園・水族館ではなく協会全体として取り組んでもらうことで、園館間のネットワーク
+    message: 「動物園・水族館」は、ほかの所では「動物園水族館」と書いています（字の大小・幅・記号の違い）
+    verdict: false-positive
+    note: ここは個々の動物園と水族館を並べる言い方で、協会名と総称の「動物園水族館」とは別の語
+  - rule: nominalization
+    line: 51
+    text: 保存を実施しています。
+    message: 「保存を実施する」は「保存する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: max-kanji-continuous
+    line: 57
+    text: なお、2026年3月末時点で27施設を認定希少種保全動植物園等として認定しており
+    message: 「認定希少種保全動植物園等」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: 制度上の名称（認定希少種保全動植物園等）
+  - rule: max-sentence-length
+    line: 61
+    text: 鳥獣保護管理法では、都道府県における鳥獣保護管理行政の基本的な事項を「鳥獣の保護
+    message: この文は 158 文字あります（140 文字まで）
+    verdict: correct
+    note: 158 字の一文
+  - rule: nominalization
+    line: 63
+    text: 整備を実施しました。
+    message: 「整備を実施する」は「整備する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 65
+    text: 管理を実施しました。また、「えりも地域ゼニガタアザラシ特定希少鳥獣管理計画（第3
+    message: 「管理を実施する」は「管理する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: max-sentence-length
+    line: 67
+    text: 加えて、野生生物保護についての普及啓発を推進するため、愛鳥週間（毎年5月10日～
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: correct
+    note: 159 字の一文
+  - rule: max-sentence-length
+    line: 71
+    text: その後も国内の野鳥、飼養鳥及び家（か）きん等において、高病原性鳥インフルエンザウ
+    message: この文は 153 文字あります（140 文字まで）
+    verdict: correct
+    note: 153 字の一文
+  - rule: repeated-sentence-ending
+    line: 71
+    text: 2004年以降、野鳥、飼養鳥及び家（か）きん等において、高病原性鳥インフルエンザ
+    message: 「〜しました」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
+    note: 「〜しました」で終わる文が三つ続く
+  - rule: no-doubled-joshi
+    line: 73
+    text: の渡り鳥の飛来状況の調査等を実施し、環境省ウェブサイトを通じて情報提供等を行いま
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「渡り鳥の飛来状況の調査」と「の」が三つ続く
+  - rule: max-kanji-continuous
+    line: 75
+    text: また、豚熱の感染拡大防止を図るため、野生イノシシの捕獲強化に向けた取組を指定管理
+    message: 「指定管理鳥獣対策事業交付金」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: 交付金の名称
+  - rule: max-kanji-continuous
+    line: 77
+    text: このリスク評価の結果、対策の優先度が高かった感染症等を対象に、鳥獣における感染症
+    message: 「鳥獣病原体保有状況調査」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: 調査の名称
+  - rule: nominalization
+    line: 77
+    text: 評価を行いました。このリスク評価の結果、対策の優先度が高かった感染症等を対象に、
+    message: 「評価を行う」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: max-kanji-continuous
+    line: 81
+    text: 同パッケージに基づき、例えば、都道府県等による個体数管理を支援するため、指定管理
+    message: 「指定管理鳥獣対策事業交付金」は漢字が 13 字続いています（10 字まで）
+    verdict: false-positive
+    note: 交付金の名称
+  - rule: max-paragraph-length
+    line: 81
+    text: クマは、秋の堅果類の結実量の影響等もあり、数年おきに人里への大量出没を繰り返し、
+    message: この段落は 8 文あります（5 文まで）
+    verdict: correct
+    note: 一段落に八文
+  - rule: no-doubled-joshi
+    line: 81
+    text: のおそれのある四国の個体群を除いたクマを鳥獣保護管理法に基づく指定管理鳥獣に指定
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: false-positive
+    note: 「絶滅のおそれのある」は定型の言い回しで、読みにくい連なりではない
+  - rule: no-doubled-joshi
+    line: 81
+    text: の堅果類の結実量の影響等もあり、数年おきに人里への大量出没を繰り返し、市街地への
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「秋の堅果類の結実量の影響」と「の」が三つ続く
+  - rule: no-doubled-joshi
+    line: 81
+    text: の安全の確保の下での銃猟（緊急銃猟）を可能とする改正鳥獣保護管理法が2025年4
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「安全の確保の下での銃猟」と「の」が三つ続く
+  - rule: nominalization
+    line: 81
+    text: 対策を実施します（写真2-5-1、写真2-5-2）。
+    message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 81
+    text: 拡充を実施しています。さらに、こうした取組の実効性を高めるため、2026年3月に
+    message: 「拡充を実施する」は「拡充する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: topic-predicate-distance
+    line: 83
+    text: その結果、イノシシの推定個体数は減少傾向に転じた一方で、ニホンジカの推定個体数は
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: correct
+    note: 「推定個体数は」から述語まで 87 字
+  - rule: max-kanji-continuous
+    line: 85
+    text: 鳥獣保護管理法においては、都道府県が捕獲等を行う指定管理鳥獣対策事業や捕獲の担い
+    message: 「認定鳥獣捕獲等事業者制度」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: 制度の名称
+  - rule: nominalization
+    line: 87
+    text: 支援を行っています。2025年度においては、51都道府県・協議会で当該事業が実施
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: topic-predicate-distance
+    line: 87
+    text: 指定管理鳥獣対策事業は、集中的かつ広域的に管理を図る必要があるとして環境大臣が指
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: correct
+    note: 「指定管理鳥獣対策事業は」から述語まで 88 字
+  - rule: max-kanji-continuous
+    line: 89
+    text: 認定鳥獣捕獲等事業者制度は、鳥獣保護管理法に基づき、鳥獣の捕獲等に係る安全管理体
+    message: 「認定鳥獣捕獲等事業者制度」は漢字が 12 字続いています（10 字まで）
+    verdict: false-positive
+    note: 制度の名称
+  - rule: max-sentence-length
+    line: 89
+    text: 認定鳥獣捕獲等事業者制度は、鳥獣保護管理法に基づき、鳥獣の捕獲等に係る安全管理体
+    message: この文は 144 文字あります（140 文字まで）
+    verdict: correct
+    note: 144 字の一文
+  - rule: topic-predicate-distance
+    line: 89
+    text: 認定鳥獣捕獲等事業者制度は、鳥獣保護管理法に基づき、鳥獣の捕獲等に係る安全管理体
+    message: 「は」で出した主題から述語まで 127 字あります（80 字まで）
+    verdict: correct
+    note: 「制度は」から述語まで 127 字
+  - rule: no-doubled-joshi
+    line: 95
+    text: の安全の確保の下で銃猟を可能とする緊急銃猟制度は、2025年9月から運用が開始さ
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「安全の確保の下で」と「の」が三つ続く
+  - rule: max-sentence-length
+    line: 107
+    text: 農林水産業への被害防止等の観点から、市町村を中心とした侵入防止柵の設置、捕獲活動
+    message: この文は 147 文字あります（140 文字まで）
+    verdict: correct
+    note: 147 字の一文
+  - rule: no-doubled-joshi
+    line: 109
+    text: の鉛汚染の効果的なモニタリング体制の構築に取り組むとともに、影響評価の方法に関す
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「鉛汚染の効果的なモニタリング体制の構築」と「の」が三つ続く
+  - rule: nominalization
+    line: 109
+    text: 検討を行いました。
+    message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 109
+    text: 検討を行いました。また、科学的かつ計画的な鳥獣管理を進めるために情報システムの整
+    message: 「検討を行う」は「検討する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: teki-overuse
+    line: 113
+    text: 世界的な動植物の絶滅の6割は主に侵略的外来種が要因として引き起こされたものであり
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 一文に「〜的」が三つ
+  - rule: nominalization
+    line: 115
+    text: 対策を実施しています。
+    message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 115
+    text: 調査を行い、発見された個体は速やかに駆除するなど、ヒアリの定着を阻止するための水
+    message: 「調査を行う」は「調査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 119
+    text: 対応を行いました。
+    message: 「対応を行う」は「対応する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 121
+    text: 改定を行っています。
+    message: 「改定を行う」は「改定する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 123
+    text: 啓発を行いました。
+    message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: no-doubled-joshi
+    line: 125
+    text: の在来種の生息状況の回復が見られています。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「在来種の生息状況の回復」と「の」が三つ続く
+  - rule: nominalization
+    line: 125
+    text: 支援を行いました。また、我が国に定着が確認されていない又は分布が局所的である特定
+    message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: topic-predicate-distance
+    line: 129
+    text: この種の被害を受けた木は数年で枯死することがあるため、お花見ができなくなるなど、
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: correct
+    note: 「木は」から述語まで 102 字
+  - rule: max-sentence-length
+    line: 133
+    text: 例えば、栃木県足利市では、「クビアカみっけ隊」による市民参加型の防除、市民からの
+    message: この文は 194 文字あります（140 文字まで）
+    verdict: correct
+    note: 194 字の一文
+  - rule: nominalization
+    line: 133
+    text: 対策を行った上で、「樹勢回復と成虫の繁殖・拡散防止を図る不定根誘導防除法」等、独
+    message: 「対策を行う」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: max-sentence-length
+    line: 139
+    text: 生物の多様性に関する条約のバイオセーフティに関するカルタヘナ議定書（以下「カルタ
+    message: この文は 180 文字あります（140 文字まで）
+    verdict: correct
+    note: 180 字の一文
+  - rule: nominalization
+    line: 139
+    text: 提供を行ったほか、港湾周辺の河川敷において遺伝子組換えナタネの生物多様性への影響
+    message: 「提供を行う」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: unused-definition
+    line: 139
+    text: 以下「カルタヘナ法」という。）に基づき、2026年3月末時点で560件の遺伝子組
+    message: 「カルタヘナ法」を定義していますが、本文で使っていません
+    verdict: correct
+    note: 「以下「カルタヘナ法」という。」と定義したのに、本文で一度も使わない
+  - rule: nominalization
+    line: 143
+    text: 施策を実施することで、動物の愛護と適正な管理の推進に取り組みました。
+    message: 「施策を実施する」は「施策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: false-positive
+    note: 「施策する」という動詞はなく、言い換えが成り立たない
+  - rule: nominalization
+    line: 145
+    text: 調査を実施し、約8割で是正が確認されました。引き続き動物取扱業の適正化に向けて今
+    message: 「調査を実施する」は「調査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: nominalization
+    line: 149
+    text: 補助を行うとともに、自治体職員等を対象にした動物適正譲渡講習会を開催しました。
+    message: 「補助を行う」は「補助する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: max-sentence-length
+    line: 151
+    text: 動物愛護週間（毎年9月20日～26日）には、広く国民に動物の愛護と適正な飼養につ
+    message: この文は 159 文字あります（140 文字まで）
+    verdict: correct
+    note: 159 字の一文
+  - rule: no-doubled-joshi
+    line: 153
+    text: の受入れ体制の整備等の取組を支援しました。「ぼうさいこくたい2025」にブース出
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: 「受入れ体制の整備等の取組」と「の」が三つ続く
+  - rule: orthographic-variant
+    line: 153
+    text: 箇所でのペット同行避難訓練の実施を通じて、自治体の受入れ体制の整備等の取組を支援
+    message: 「箇所」と書いています（この文書はふつう「か所」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「箇所」、ほかは「か所」
+  - rule: nominalization
+    line: 155
+    text: 啓発を行い、ペットフードの正しい扱い方や安全性に関する知識の向上等を図りました。
+    message: 「啓発を行う」は「啓発する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
+    verdict: correct
+    note: 「〜を実施する／行う」は動詞一語で足りる
+  - rule: orthographic-variant
+    line: 155
+    text: 愛がん動物用飼料の安全性の確保に関する法律（ペットフード安全法）（平成20年法律
+    message: 「愛がん」と書いています（この文書はふつう「愛玩」と書く語です。7 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 法律の題名（愛がん動物用飼料の安全性の確保に関する法律）どおりの表記
+  - rule: max-kanji-continuous
+    line: 157
+    text: 2023年から、政府統計として実施している愛玩動物看護師就職状況等調査（愛玩動物
+    message: 「愛玩動物看護師就職状況等調査」は漢字が 14 字続いています（10 字まで）
+    verdict: false-positive
+    note: 政府統計の調査名
+  - rule: max-kanji-continuous
+    line: 157
+    text: 愛玩動物看護師法（令和元年法律第50号）に基づき、2026年2月に第4回愛玩動物
+    message: 「愛玩動物看護師国家試験」は漢字が 11 字続いています（10 字まで）
+    verdict: false-positive
+    note: 国家試験の名称

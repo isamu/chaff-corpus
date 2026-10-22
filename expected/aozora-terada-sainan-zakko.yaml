@@ -1,0 +1,255 @@
+id: aozora-terada-sainan-zakko
+chaff: 0.36.0
+findings:
+  - rule: clause-chain
+    line: 5
+    text: しかし、考えてみると、この先生と同じことをして無事に写真をとって帰って、生徒やそ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 5
+    text: すると、つり橋がぐらぐら揺れだしたのに驚いて生徒が騒ぎ立てたので、振動がますます
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 5
+    text: しかし、考えてみると、この先生と同じことをして無事に写真をとって帰って、生徒やそ
+    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 5
+    text: それで今度のような事件はむしろあるいは落雷の災害などと比較されてもいいようなきわ
+    message: 「は」で出した主題から述語まで 135 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 8
+    text: つり橋はおおぜいでのっからなければ落ちないであろうし、また断えず補強工事を怠らな
+    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: repeated-sentence-ending
+    line: 9
+    text: 現象のほうは人間の力でどうにもならなくても「災害」のほうは注意次第でどんなにでも
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: demonstrative-opener-run
+    line: 10
+    text: これはゴシップではあろうがとかくあすの事はかまわぬがちの現代為政者のしそうなこと
+    message: 「これ」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: max-ten
+    line: 10
+    text: はなはだしい場合になると、なるべくいわゆる「責任者」を出さないように、つまりだれ
+    message: 一文に読点が 7 個あります（6 個まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: repeated-sentence-ending
+    line: 10
+    text: それには問題のつり橋のどの鋼索のどのへんが第一に切れて、それから、どういう順序で
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: repeated-sentence-ending
+    line: 10
+    text: 平均で言えば三年半に一回の割である。それが五年も休止状態にあったのであるから、そ
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 10
+    text: それはとにかく、さし当たってそういう土民に鉄筋コンクリートの家を建ててやるわけに
+    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 10
+    text: 何よりも困難なことには、内地のような木造家屋は地震には比較的安全だが台湾ではすぐ
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 13
+    text: それは、日本航空輸送会社の旅客飛行機白鳩号というのが九州の上空で悪天候のために針
+    message: 一文に節が 10 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: max-ten
+    line: 13
+    text: それは、日本航空輸送会社の旅客飛行機白鳩号というのが九州の上空で悪天候のために針
+    message: 一文に読点が 9 個あります（6 個まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 13
+    text: それは、日本航空輸送会社の旅客飛行機白鳩号というのが九州の上空で悪天候のために針
+    message: 「は」で出した主題から述語まで 295 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 14
+    text: しかし、幸いなことには墜落現場における機体の破片の散乱した位置が詳しく忠実に記録
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: しかし、幸いなことには墜落現場における機体の破片の散乱した位置が詳しく忠実に記録
+    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: しかしそれでは肝心の事故の第一原因はわからないのでいろいろ調べているうちに、片方
+    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: そこで今度は現品と同じ鋼索とタンバックルの組み合わせをいろいろな条件のもとに週期
+    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: そこで今度は飛行機翼の模型を作って風洞で風を送って試験してみたところがある風速以
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 14
+    text: 折れた機材どうしが空中でぶつかったときにできたらしい傷あとも一々たんねんに検査し
+    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 16
+    text: もっとも非常時の陸海軍では民間飛行の場合などとちがって軍機の制約から来るいろいろ
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 16
+    text: もちろん当局でもそのへんに遺漏のあるはずはないが、しかし一般世間ではどうかすると
+    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 16
+    text: もっとも非常時の陸海軍では民間飛行の場合などとちがって軍機の制約から来るいろいろ
+    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 17
+    text: こうは言うもののまたよくよく考えて見ていると災難の原因を徹底的に調べてその真相を
+    message: 一文に節が 7 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: adversative-ga-repeat
+    line: 21
+    text: こういうふうに考えて来ると、あらゆる災難は一見不可抗的のようであるが実は人為的の
+    message: 一文に逆接の「が」が 2 個あります（1 個まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 21
+    text: こういうふうに考えて来ると、あらゆる災難は一見不可抗的のようであるが実は人為的の
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: teki-overuse
+    line: 21
+    text: こういうふうに考えて来ると、あらゆる災難は一見不可抗的のようであるが実は人為的の
+    message: 一文に「〜的」が 4 個あります（2 個まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 21
+    text: こういうふうに考えて来ると、あらゆる災難は一見不可抗的のようであるが実は人為的の
+    message: 「は」で出した主題から述語まで 168 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 22
+    text: 理屈はぬきにして古今東西を通ずる歴史という歴史がほとんどあらゆる災難の歴史である
+    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 23
+    text: 平たく言えば、われわれ人間はこうした災難に養いはぐくまれて育って来たものであって
+    message: 一文に節が 8 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 23
+    text: 平たく言えば、われわれ人間はこうした災難に養いはぐくまれて育って来たものであって
+    message: 「は」で出した主題から述語まで 160 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 24
+    text: 植物でも少しいじめないと花実をつけないものが多いし、ぞうり虫パラメキウムなどでも
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 26
+    text: 植物や動物はたいてい人間よりも年長者で人間時代以前からの教育を忠実に守っているか
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 26
+    text: 植物や動物はたいてい人間よりも年長者で人間時代以前からの教育を忠実に守っているか
+    message: 「は」で出した主題から述語まで 189 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: repeated-sentence-ending
+    line: 27
+    text: たとえば一九三四年の統計によると総計百十四回のトルナドーに見舞われ、その損害額三
+    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: teki-overuse
+    line: 29
+    text: 中華民国には地方によってはまれに大地震もあり大洪水もあるようであるが、しかしあの
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 31
+    text: しかしよく考えてみるとこれは何も神様が人間の役に立つためにこんないろいろの薬草を
+    message: 「は」で出した主題から述語まで 141 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: clause-chain
+    line: 32
+    text: 同じようなわけで、大概の災難でも何かの薬にならないというのはまれなのかもしれない
+    message: 一文に節が 6 つつながっています（5 つまで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 32
+    text: 同じようなわけで、大概の災難でも何かの薬にならないというのはまれなのかもしれない
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: topic-predicate-distance
+    line: 33
+    text: ただそれに対して一つの心配することは、最高水準を下げると同時に最低水準も下がると
+    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+  - rule: demonstrative-opener-run
+    line: 34
+    text: このまとまらない考察の一つの収穫は、今まで自分など机上で考えていたような楽観的な
+    message: 「この」など、指示語で始まる文が 3 文続いています（2 文まで）
+    verdict: false-positive
+    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない

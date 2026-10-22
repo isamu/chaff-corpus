@@ -1,0 +1,141 @@
+id: jpo-oi-model-nda-shinsozai-v2-2
+chaff: 0.36.0
+findings:
+  - rule: dangling-reference
+    line: 6
+    text: 第1条1項（オプション1：秘密情報の範囲：無限定）
+    message: 「第1条」（番地 1）はこの文書にありません
+    verdict: false-positive
+    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
+  - rule: dangling-reference
+    line: 9
+    text: 第1条1項（オプション2：秘密情報の範囲：要秘密指定（口頭開示の事後指定無し））
+    message: 「第1条」（番地 1）はこの文書にありません
+    verdict: false-positive
+    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
+  - rule: duplicate-definition
+    line: 10
+    text: 「秘密情報」とは、本目的のために、書面、口頭、電磁的記録媒体その他開示の方法およ
+    message: 「秘密情報」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: duplicate-definition
+    line: 10
+    text: 以下「受領者」という。）に対して、秘密である旨を明示して開示した情報および当該情
+    message: 「受領者」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: duplicate-definition
+    line: 10
+    text: 以下「開示者」という。）が相手方（以下「受領者」という。）に対して、秘密である旨
+    message: 「開示者」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: dangling-reference
+    line: 12
+    text: 第1条1項（オプション3：秘密情報の範囲：要秘密指定（口頭開示の事後指定有り））
+    message: 「第1条」（番地 1）はこの文書にありません
+    verdict: false-positive
+    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
+  - rule: duplicate-definition
+    line: 13
+    text: 「秘密情報」とは、本目的のために、書面、口頭、電磁的記録媒体その他開示の方法およ
+    message: 「秘密情報」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: duplicate-definition
+    line: 13
+    text: 以下「受領者」という。）に対して開示した情報および当該情報を含む記録媒体、ならび
+    message: 「受領者」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: duplicate-definition
+    line: 13
+    text: 以下「開示者」という。）が相手方（以下「受領者」という。）に対して開示した情報お
+    message: 「開示者」は 7 行目でも定義されています
+    verdict: false-positive
+    note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
+  - rule: dangling-reference
+    line: 15
+    text: 第1条2項（秘密情報の定義・開示の方法）【オプション1～3共通】
+    message: 「第1条」（番地 1）はこの文書にありません
+    verdict: false-positive
+    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
+  - rule: duplicate-definition
+    line: 16
+    text: 以下「書面等」という。）によってその根拠を立証できる場合に限り、以下の情報は秘密
+    message: 「書面等」は 13 行目でも定義されています
+    verdict: false-positive
+    note: オプション3の条文と共通条項がそれぞれ「書面等」を定義する。オプション1・2を選べば共通条項の定義しか残らない
+  - rule: numbering-gap
+    line: 55
+    text: 第4条（変更オプション条項：厳格な複製条件）
+    message: 「第4条」の次が「第4条」です（5 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: obligation-without-deadline
+    line: 67
+    text: 通知する。ただし、正当な理由がある場合には、甲乙協議の上、通知期限を延長すること
+    message: 「通知」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
+    verdict: false-positive
+    note: 同じ文に期限（締結日から2か月、以下「通知期限」）がある
+  - rule: numbering-gap
+    line: 72
+    text: 第8条（変更オプション条項：違約金）
+    message: 「第8条」の次が「第8条」です（9 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: undefined-term
+    line: 73
+    text: 本違約金額を上回る場合には、その超えた部分についても賠償する。
+    message: 「本違約金額」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: correct
+    note: 「本違約金額」は定義されていない（直前の「違約金として1000万円」を指すが、定義の形をとっていない）
+  - rule: numbering-gap
+    line: 87
+    text: 第12条（変更オプション条項1：知財調停）
+    message: 「第12条」の次が「第12条」です（13 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: numbering-gap
+    line: 94
+    text: 第12条（変更オプション条項2：仲裁）
+    message: 「第12条」の次が「第12条」です（13 番目のはず）
+    verdict: false-positive
+    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
+  - rule: defined-name-repeated
+    line: 100
+    text: 電磁的記録を作成し、甲乙が合意の後電子署名を施し、各自その電磁的記録を保管する。
+    message: 「電磁的記録」は 13 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: defined-name-repeated
+    line: 100
+    text: 電磁的記録を作成し、甲乙が合意の後電子署名を施し、各自その電磁的記録を保管する。
+    message: 「電磁的記録」は 16 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: defined-name-repeated
+    line: 100
+    text: 電磁的記録を保管する。
+    message: 「電磁的記録」は 13 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: defined-name-repeated
+    line: 100
+    text: 電磁的記録を保管する。
+    message: 「電磁的記録」は 16 行目で「書面等」と呼ぶと定めた名前です
+    verdict: false-positive
+    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
+  - rule: orthographic-variant
+    line: 100
+    text: 但し、本契約を電子契約により締結する場合には、本契約の成立を証するため、本書の電
+    message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。5 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: ここだけ「但し」、ほかは「ただし」
+  - rule: teki-overuse
+    line: 112
+    text: 第●条（追加オプション条項：立入検査条項）
+    message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: correct
+    note: 条文の一文に「合理的」が三つ（見出しと改行で一段落につながる）

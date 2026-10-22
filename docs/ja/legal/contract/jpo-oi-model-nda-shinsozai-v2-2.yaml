@@ -1,0 +1,15 @@
+id: jpo-oi-model-nda-shinsozai-v2-2
+title: "特許庁: OIモデル契約書 ver2.2（新素材編）秘密保持契約書（逐条解説なし）"
+language: ja
+genre: legal/contract
+format: markdown
+source:
+  url: https://www.jpo.go.jp/support/general/open-innovation-portal/document/index/ma-v2_2-nda_chikujounashi.docx
+  fetched: 2026-10-22
+license:
+  name: PDL-1.0
+  url: https://www.jpo.go.jp/toppage/about/index.html
+  note: 特許庁ウェブサイトのコンテンツは公共データ利用規約（第1.0版）（PDL1.0）による（「このサイトについて」https://www.jpo.go.jp/toppage/about/index.html; OIモデル契約書は別の利用ルールの一覧にない）; 出典：特許庁ウェブサイト「オープンイノベーションポータルサイト」(https://www.jpo.go.jp/support/general/open-innovation-portal/index.html) の OIモデル契約書 ver2.2 (https://www.jpo.go.jp/support/general/open-innovation-portal/document/index/ma-v2_2-nda_chikujounashi.docx) を加工して作成 (Word converted to Markdown)
+redistribute: true
+sha256: 03fa51cbfb2347dac41c9bab42b2434bb1f03b49381b4f1e45ac3d2c4b093f9c
+notes: A model non-disclosure agreement between a start-up and a business company, with alternative clauses (オプション). The Word file (逐条解説なし) converted with pandoc 3.8.3 (`pandoc -f docx -t gfm --wrap=none`); then only pandoc's empty bold markers around spaces (`**　**`, from bold whitespace in the Word file) were removed, and lines left holding only spaces were emptied; nothing else was edited. Word's automatic list numbering (1., ①, (ア)) comes out as Markdown ordered lists (1. 2. …) and its bullets as `-`; a manual line break inside a paragraph is a Markdown hard break (two trailing spaces). The parties are the model's placeholders X社/Y社, and ● marks blanks to fill in.
