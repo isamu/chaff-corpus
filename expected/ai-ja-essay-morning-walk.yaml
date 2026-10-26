@@ -32,3 +32,13 @@ findings:
     what: 「一度〜してみてほしい。きっと、いつもの街が少し違って見えるはずだ。」と読者に勧めて締める
     verdict: missed
     note: "candidate phrase: きっと〜はずだ as a closing promise to the reader"
+  - rule: closing-exhortation
+    line: 33
+    what: "「一度、家の周りを歩いてみてほしい」と読者に勧めて締める"
+    verdict: missed
+    note: "found by lab main"
+  - rule: closing-exhortation
+    line: 33
+    what: "「きっと、いつもの街が少し違って見えるはずだ」と請け合って締める"
+    verdict: missed
+    note: "found by lab main"

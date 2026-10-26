@@ -24,6 +24,11 @@ findings:
     message: "4 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, headings in a stock form, three-item lists"
     verdict: correct
     note: "sections of one or two paragraphs, stock Step N: headings, three-item lists"
+  - rule: colon-lead-in
+    line: 7
+    what: "\"Instead:\" hands over to a list; four of the six sections open their list this way"
+    verdict: missed
+    note: "found by lab main"
   - rule: rule-of-three
     line: 9
     text: 1. Search for all emails older than 30 d
@@ -42,12 +47,27 @@ findings:
     message: '"Many email apps now show an   Unsubscribe   link at the top of marketing emails, which makes this quicker." opens with a noun phrase; the other items in this list open with a verb (1 of 3)'
     verdict: correct
     note: a statement among imperative steps; an editor would make it a note under the list
+  - rule: colon-lead-in
+    line: 27
+    what: "\"Start with two or three:\" hands over to a list; four of the six sections open their list this way"
+    verdict: missed
+    note: "found by lab main"
+  - rule: colon-lead-in
+    line: 37
+    what: "\"When you open a new message, decide right away:\" hands over to a list; four of the six sections open their list this way"
+    verdict: missed
+    note: "found by lab main"
   - rule: heading-numbering-mix
     line: 49
     text: "## Keeping it under control"
     message: 'The heading "Keeping it under control" has no number, while 5 of its siblings do ("Step 1: Declare "inbox bankruptcy" on old messages")'
     verdict: false-positive
     note: the closing section is not one of the five steps
+  - rule: colon-lead-in
+    line: 51
+    what: "\"Once a week, take ten minutes to:\" hands over to a list; four of the six sections open their list this way"
+    verdict: missed
+    note: "found by lab main"
   - rule: contrast-framing
     line: 57
     what: '"The goal is an inbox that shows you what needs your attention, not one that buries it."'

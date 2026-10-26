@@ -1,17 +1,17 @@
 id: ai-en-proposal-project-tool
 chaff: 0.36.0
 findings:
-  - rule: ai-structure
-    line: 1
-    what: the textbook proposal outline (Summary, Current Situation, Proposed Solution, Expected Benefits, Costs, Implementation Plan, Risks and Mitigation, Recommendation) with bold-label lists
-    verdict: missed
-    note: ai-structure did not count it
   - rule: bold-emphasis
     line: 1
     text: "# Proposal: Moving Project Tracking from"
     message: "5 bold spans of emphasis: 9.2 per 1000 words (limit 6)"
     verdict: false-positive
     note: the five bolds are the lead sentences of the drawbacks list (13-17), the bold-label shape with a full stop, not emphasis mid-sentence
+  - rule: ai-structure
+    line: 3
+    what: the textbook proposal outline (Summary, Current Situation, Proposed Solution, Expected Benefits, Costs, Implementation Plan, Risks and Mitigation, Recommendation) with bold-label lists
+    verdict: missed
+    note: "ai-structure did not count it; found by lab main, on the first heading (line 3)"
   - rule: colon-lead-in
     line: 11
     what: '"This setup has several drawbacks:" and "All three offer the core features we need:" (21) hand over to lists'

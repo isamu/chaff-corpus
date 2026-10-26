@@ -1,6 +1,11 @@
 id: ai-en-proposal-rewrite-newsletter
 chaff: 0.36.0
 findings:
+  - rule: ai-structure
+    line: 3
+    what: "the textbook proposal outline (Summary, The current situation, What we propose, ...): sections of one or two paragraphs, stock headings, a bold-label list"
+    verdict: missed
+    note: "found by lab main"
   - rule: bold-label-list
     line: 25
     what: '"**More timely:**", "**More likely to be read:**", "**Less work:**"'

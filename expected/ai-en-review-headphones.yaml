@@ -23,6 +23,18 @@ findings:
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
     verdict: missed
     note: catalog E18 and E14 (bold labels, every list three items)
+  - rule: colon-lead-in
+    line: 7
+    text: Pros:**
+    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
+  - rule: colon-lead-in
+    line: 12
+    text: Cons:**
+    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
   - rule: list-item-form-mix
     line: 15
     text: Call quality is average outdoors
