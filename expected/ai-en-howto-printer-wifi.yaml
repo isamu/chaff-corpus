@@ -28,7 +28,8 @@ findings:
     line: 22
     text: On the printer's screen (or its settings
     message: "6 bold spans of emphasis: 14.1 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: "every bold is the name of a setting or button (**Network**, **WPS**, **Add Printer**) or a Windows:/Mac: label, the usual way to mark what to click"
   - rule: emoji-density
     line: 37
     text: → Bluetooth & devices → Printers & scann

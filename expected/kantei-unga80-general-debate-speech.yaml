@@ -11,11 +11,6 @@ findings:
     text: その主要な責任を負うのが安全保障理事会であり、国連の設立に主導的な役割を果たした
     message: この文は 105 文字あります（100 文字まで）
     verdict: correct
-  - rule: orthographic-variant
-    line: 27
-    text: 揺るがしかねない、極めて深刻で憂慮すべき局面にあります。今般のイスラエル軍による
-    message: 「揺るがす」と書いています（この文書はふつう「ゆるがす」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: correct
   - rule: topic-predicate-distance
     line: 30
     text: 最も重要なことは、パレスチナが持続可能な形で存在をし、イスラエルと共存することで

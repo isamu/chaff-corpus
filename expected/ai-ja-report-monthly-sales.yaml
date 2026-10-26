@@ -15,7 +15,8 @@ findings:
     line: 22
     text: 〇〇様から年間保守契約（240万円）を獲得しました。
     message: 「〇〇様」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: heading-numbering-mix
     line: 29
     text: "## 5. 11月の取り組み"

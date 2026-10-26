@@ -180,12 +180,6 @@ findings:
     what: 「また、」「さらに、」「また、」で始まる段落が三つ続く（表2－2－1 の題を挟む）
     verdict: missed
     note: judged correct before; the table caption the converter now keeps (isamu/lab#1743) sits between the paragraphs and breaks the run chaff counts
-  - rule: max-kanji-continuous
-    line: 53
-    text: 表2－2－1　高年齢者雇用関係助成金制度の概要
-    message: 「高年齢者雇用関係助成金制度」は漢字が 13 字続いています（10 字まで）
-    verdict: correct
-    note: 表題の「高年齢者雇用関係助成金制度」は名前ではない一般の複合語で、「高年齢者雇用関係の助成金制度」と分けられる
   - rule: max-sentence-length
     line: 55
     text: あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用者の能力評価、

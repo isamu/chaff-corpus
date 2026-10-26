@@ -5,7 +5,8 @@ findings:
     line: 1
     text: ---
     message: "12 bold spans of emphasis: 11.3 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: a human post whose bold is only the lead sentence of each tip in its lists (- **Start with the most important tasks.** …); no emphasis mid-sentence
   - rule: adverb-overuse
     line: 16
     text: recently joined an agile team — congratu

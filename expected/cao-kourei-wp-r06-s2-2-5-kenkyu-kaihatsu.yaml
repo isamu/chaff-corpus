@@ -109,12 +109,6 @@ findings:
     message: この文は 210 文字あります（140 文字まで）
     verdict: correct
     note: 210 字の一文
-  - rule: max-ten
-    line: 29
-    text: 令和5年3月に閣議決定された第4期がん対策推進基本計画は、「がん予防」、「がん医
-    message: 一文に読点が 9 個あります（6 個まで）
-    verdict: correct
-    note: 一文に読点が 9 個
   - rule: topic-predicate-distance
     line: 29
     text: 令和5年3月に閣議決定された第4期がん対策推進基本計画は、「がん予防」、「がん医

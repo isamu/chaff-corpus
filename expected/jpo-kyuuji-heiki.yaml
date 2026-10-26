@@ -152,7 +152,8 @@ findings:
     line: 192
     text: "]"
     message: 括弧を「]」と書いています（この文書はふつう「］」。17 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: ［更新日　2021年10月1日] opens full-width and closes half-width
   - rule: date-format-consistency
     line: 192
     text: 2021年10月1日]

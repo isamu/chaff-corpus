@@ -10,7 +10,8 @@ findings:
     line: 19
     text: In the evening, put a lamp behind your l
     message: "8 bold spans of emphasis: 19.7 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: each tip opens its paragraph with a bold instruction, a run-in heading (the bold-label shape outside a list), not emphasis mid-sentence
   - rule: comparative-without-baseline
     line: 35
     text: better.

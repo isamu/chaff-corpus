@@ -27,7 +27,8 @@ findings:
     line: 9
     text: Before diving into specific tools, it he
     message: "11 bold spans of emphasis: 18 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: "mostly labels: the 3-2-1 rule and its list digits, list labels with the colon outside the bold (**Google Photos**:), Pros:/Cons: run-in labels and the numbered steps; little emphasis mid-sentence"
   - rule: adverb-overuse
     line: 15
     text: perfectly, but the closer you get, the s
@@ -54,13 +55,13 @@ findings:
     line: 34
     text: A 2 TB drive is affordable and will be m
     message: '"most people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
-    verdict: unjudged
+    verdict: correct
+    note: "\"more than enough for most people\": generic advice that does not know the reader's library, with line 53 the same"
   - rule: concrete-evidence-density
     line: 45
-    text: ""
-    message: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
-    verdict: correct
-    note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic
+    what: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
+    verdict: missed
+    note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
   - rule: article-sound
     line: 47
     text: a NAS is a small device that sits on you
@@ -71,12 +72,14 @@ findings:
     line: 47
     text: For those with very large photo librarie
     message: '"everyone" and other sweeping claims: 4.9 per 1000 words (limit 3)'
-    verdict: unjudged
+    verdict: false-positive
+    note: '"stores files for everyone" is the family members named in the same sentence, not people in general'
   - rule: over-general-claim
     line: 53
     text: For most people, a great setup looks lik
     message: '"most people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
-    verdict: unjudged
+    verdict: correct
+    note: "\"For most people, a great setup looks like this\": the generated post's sweeping recommendation"
   - rule: cliche
     line: 67
     what: "\"The best backup plan is the one you'll actually stick with\""

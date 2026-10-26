@@ -11,12 +11,14 @@ findings:
     line: 4
     text: 〇〇様
     message: 「〇〇様」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 7
     text: △△の〇〇です。
     message: 「△△」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: ai-tell
     line: 11
     what: 自分の都合の延期を「〇〇様にとっても有意義な場になる」と相手の利益に言い換えている
@@ -26,19 +28,23 @@ findings:
     line: 11
     text: 〇〇様にとっても有意義な場になると考えました。
     message: 「〇〇様」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: unfilled-placeholder
     line: 13
     text: 〇〇様のご都合に合わせて調整いたします。6日のご都合が悪い場合は、ご都合のよい日
     message: 「〇〇様」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: unfilled-placeholder
     line: 19
     text: △△
     message: 「△△」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 20
     text: 〇〇
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

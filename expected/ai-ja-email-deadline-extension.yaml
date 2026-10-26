@@ -11,12 +11,14 @@ findings:
     line: 4
     text: 〇〇様
     message: 「〇〇様」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 6
     text: 〇〇の〇〇です。
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: date-weekday-mismatch
     line: 10
     what: 「11月14日（金）」「11月21日（金）」：書いた2026年10月22日から見るとどちらも土曜日（曜日は2025年のもの）
@@ -43,14 +45,17 @@ findings:
     line: 16
     text: 〇〇
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 17
     text: 〇〇
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 17
     text: 〇〇部　〇〇
     message: 「〇〇部」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

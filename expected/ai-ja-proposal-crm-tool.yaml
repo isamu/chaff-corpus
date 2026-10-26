@@ -5,7 +5,8 @@ findings:
     line: 3
     text: 〇〇
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: ai-generated-composite
     line: 13
     what: 担当の山下さんが休んだ日の出来事と先方の言葉、約300社・若手2名（29行）が依頼にない

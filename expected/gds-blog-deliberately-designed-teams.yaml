@@ -39,16 +39,14 @@ findings:
     note: '"not only ... but" contrast frame; three in a short post'
   - rule: concrete-evidence-density
     line: 61
-    text: ""
-    message: Section "Mixed teams are powerful, but not automatically easy" has no number, code or link (3 of 5 sections)
-    verdict: correct
-    note: claims benefits ("a reduction in hierarchy", "stronger accountability") with nothing to show them
+    what: Section "Mixed teams are powerful, but not automatically easy" has no number, code or link (3 of 5 sections)
+    verdict: missed
+    note: claims benefits ("a reduction in hierarchy", "stronger accountability") with nothing to show them; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
   - rule: concrete-evidence-density
     line: 69
-    text: ""
-    message: Section "What we’re learning" has no number, code or link (3 of 5 sections)
-    verdict: correct
-    note: "\"What we're learning\" lists lessons with no example, figure or link behind them"
+    what: Section "What we’re learning" has no number, code or link (3 of 5 sections)
+    verdict: missed
+    note: "\"What we're learning\" lists lessons with no example, figure or link behind them; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported"
   - rule: contrast-framing
     line: 77
     text: Recruitment is not just a mechanism for

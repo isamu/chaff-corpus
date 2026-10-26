@@ -15,7 +15,8 @@ findings:
     line: 16
     text: The session on **AI tools for cataloguin
     message: "3 bold spans of emphasis: 9.1 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: the three bolds are the titles of the sessions the report goes through, marked the same way each time, not emphasis
   - rule: number-style-consistency
     line: 31
     text: "2 nights) $410, mileage $96. Total: $826"

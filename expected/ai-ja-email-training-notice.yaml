@@ -22,7 +22,8 @@ findings:
     line: 21
     text: 〇〇さん
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: email-greeting-closing
     line: 29
     text: ご不明な点は総務部〇〇までお願いします。
@@ -33,4 +34,5 @@ findings:
     line: 29
     text: 〇〇までお願いします。
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"

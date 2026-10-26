@@ -16,7 +16,8 @@ findings:
     line: 3
     text: Pythonを勉強し始めると、「仮想環境を作りましょう」という説明をよく目にしま
     message: 文の長さのばらつきが 33%（36% 以上ほしい）
-    verdict: unjudged
+    verdict: correct
+    note: every step is one explanatory 〜します sentence of about the same length (catalog J13)
   - rule: list-item-form-mix
     line: 13
     text: プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBではバ

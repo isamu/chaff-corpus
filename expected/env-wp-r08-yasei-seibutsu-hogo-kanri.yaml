@@ -289,12 +289,6 @@ findings:
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「〜を実施する／行う」は動詞一語で足りる
-  - rule: topic-predicate-distance
-    line: 129
-    text: この種の被害を受けた木は数年で枯死することがあるため、お花見ができなくなるなど、
-    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
-    verdict: correct
-    note: 「木は」から述語まで 102 字
   - rule: max-sentence-length
     line: 133
     text: 例えば、栃木県足利市では、「クビアカみっけ隊」による市民参加型の防除、市民からの

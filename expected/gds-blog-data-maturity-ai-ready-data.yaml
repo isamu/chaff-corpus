@@ -15,10 +15,9 @@ findings:
     note: 42-word sentence
   - rule: concrete-evidence-density
     line: 21
-    text: ""
-    message: Section "What we found" has no number, code or link (3 of 6 sections)
-    verdict: correct
-    note: a findings section that asserts "the data quality is high" and "strong data maturity" with no figure, measure or link
+    what: Section "What we found" has no number, code or link (3 of 6 sections)
+    verdict: missed
+    note: a findings section that asserts "the data quality is high" and "strong data maturity" with no figure, measure or link; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
   - rule: unqualified-superlative
     line: 23
     text: The discovery phase produced three main

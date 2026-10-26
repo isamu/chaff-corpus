@@ -34,7 +34,8 @@ findings:
     line: 11
     text: Move them to an archive folder (in Gmail
     message: "8 bold spans of emphasis: 18.3 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: button names (**Archive**, **Unsubscribe**), the labels of one folder list and the bolded conditions leading one list; no emphasis mid-sentence
   - rule: list-item-form-mix
     line: 21
     text: Many email apps now show an **Unsubscrib

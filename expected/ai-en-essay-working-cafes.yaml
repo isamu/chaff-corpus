@@ -5,7 +5,8 @@ findings:
     line: 1
     text: "# In defense of working from cafés (sort"
     message: "4 bold spans of emphasis: 10.7 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: contrast-framing
     line: 5
     what: "\"Moving to a café doesn't make me more productive, exactly. It makes me less bored\""

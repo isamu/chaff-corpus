@@ -85,21 +85,12 @@ findings:
     line: 68
     text: ために必要已むを得ないと認めるに足る充分の根拠が存在する場合には、これに或程度の
     message: 「ため」と書いています（この文書はふつう「為」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "入江 opinion (59-78), compared on its own: ため here against 為 twice on line 70 (名誉回復の為の, 秩序維持の為の)"
   - rule: orthographic-variant
     line: 70
     text: または個人の人格を無視したことにはならず違憲の問題は生じないと思われる。しかし、
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。17 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: orthographic-variant
-    line: 70
-    text: 為の懲戒罰である点において、一般権力関係における本件謝罪広告を求める判決の場合と
-    message: 「為」と書いています（この文書はふつう「ため」と書く語です。9 箇所のうち 2 箇所が違う）
-    verdict: correct
-  - rule: orthographic-variant
-    line: 70
-    text: 為の適当な処分としては他にも種々の方法がありうるのであるから、これらを勘案すれば
-    message: 「為」と書いています（この文書はふつう「ため」と書く語です。9 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: topic-predicate-distance
     line: 70

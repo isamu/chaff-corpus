@@ -23,7 +23,8 @@ findings:
     line: 3
     text: 「添付ファイルが大きすぎます」と言われて、PDFが送れない。そんなときの対処法を
     message: 文の長さのばらつきが 32%（36% 以上ほしい）
-    verdict: unjudged
+    verdict: correct
+    note: the explanations between the steps keep one even pace, most sentences 24 to 44 characters (catalog J13)
   - rule: list-item-form-mix
     line: 17
     text: 「Quartzフィルタ」で「Reduce File Size」を選んで保存

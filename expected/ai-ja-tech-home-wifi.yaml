@@ -17,7 +17,8 @@ findings:
     line: 3
     text: 先月、家のWi-Fiが急に遅くなりました。動画は途中で止まるし、オンライン会議で
     message: 文の長さのばらつきが 32%（36% 以上ほしい）
-    verdict: unjudged
+    verdict: false-positive
+    note: a personal account that mixes one-clause asides (正直、これがいちばん効きました。) with long sentences; at 32% a reader does not hear a drone
   - rule: ai-generated-composite
     line: 5
     what: 「体験談」が確認手順の一覧と同じ順に進み、どの手順もきれいな数字（200→10→60Mbps）と教訓で終わる

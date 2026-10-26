@@ -11,7 +11,8 @@ findings:
     line: 6
     text: 〇〇の〇〇です。
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: max-sentence-length
     line: 10
     text: 差額の30,000円は、当初のお見積もりに含まれていなかった追加作業分かと思いま

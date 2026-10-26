@@ -37,7 +37,8 @@ findings:
     line: 39
     text: 〇万円程度が必要です。
     message: 「〇万円」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: unfilled-placeholder
     line: 39
     text: 〇万円程度を想定しています。初期費用として、設定や会計システムとの連携に〇万円程
@@ -48,12 +49,14 @@ findings:
     line: 41
     text: 〇か月程度で初期費用を回収できる見込みです。
     message: 「〇か月」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: unfilled-placeholder
     line: 41
     text: 〇万円程度となり、〇か月程度で初期費用を回収できる見込みです。
     message: 「〇万円」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: empty-conclusion
     line: 60
     what: 「まとめ」が期待される効果の項目を一文に並べ直しただけ

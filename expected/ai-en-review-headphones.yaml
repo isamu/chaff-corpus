@@ -5,7 +5,8 @@ findings:
     line: 1
     text: "# Noise-Cancelling Headphones Review: Si"
     message: "3 bold spans of emphasis: 7.2 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: "**Pros:**, **Cons:** and **Rating: 4 out of 5** are run-in headings, not emphasis"
   - rule: section-length-uniformity
     line: 1
     text: ""

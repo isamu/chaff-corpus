@@ -10,7 +10,8 @@ findings:
     line: 1
     text: "# Proposal: Moving Project Tracking from"
     message: "5 bold spans of emphasis: 9.2 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: the five bolds are the lead sentences of the drawbacks list (13-17), the bold-label shape with a full stop, not emphasis mid-sentence
   - rule: colon-lead-in
     line: 11
     what: '"This setup has several drawbacks:" and "All three offer the core features we need:" (21) hand over to lists'
@@ -36,7 +37,8 @@ findings:
     line: 33
     text: "- **Up-to-date status:** Changes are vis"
     message: '"Up-to-date status" and other bold labels open 8 list items (5 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: "catalog E18 (bold labels, en): benefits 33-37 and risks 57-59, each item a bold label and a colon"
   - rule: concrete-evidence-density
     line: 55
     text: ""

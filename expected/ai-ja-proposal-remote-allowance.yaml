@@ -11,7 +11,8 @@ findings:
     line: 4
     text: 〇〇
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: ai-structure
     line: 6
     what: 番号付きの 概要／背景／提案内容／費用／期待される効果／今後のスケジュール

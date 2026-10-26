@@ -5,7 +5,8 @@ findings:
     line: 23
     text: "Usage grew each week**: 14% in week 1, 2"
     message: "3 bold spans of emphasis: 10.6 per 1000 words (limit 6)"
-    verdict: unjudged
+    verdict: false-positive
+    note: each finding opens its paragraph with a bold headline and a colon (**Usage grew each week**:), a run-in label, not emphasis mid-sentence
   - rule: bold-label-list
     line: 23
     what: bold-label sentences "**Usage grew each week**:", "**Customers over 65 rarely used it**:", "**Most problems were with weighing produce**:"

@@ -27,14 +27,17 @@ findings:
     line: 39
     text: 〇〇株式会社
     message: 「〇〇株式会社」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 42
     text: 〇月
     message: 「〇月」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 48
     text: 〇〇株式会社 広報担当：〇〇
     message: 「〇〇株式会社」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

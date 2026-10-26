@@ -17,7 +17,8 @@ findings:
     line: 38
     text: ［申請書入力へ］をクリックしてください。
     message: 括弧「［」の類を、全角で 21 箇所、半角で 27 箇所書いています。この文書には書き方が二通りあります
-    verdict: unjudged
+    verdict: correct
+    note: button names are bracketed both ways on one page, even the same button (［申請者情報を設定］ 54, [申請者情報を設定] 55); the same case as the misses at 54 and 84
   - rule: bracket-width-consistency
     line: 54
     what: "button labels are bracketed both ways on one page: full-width ［申請者情報を設定］ here, half-width [申請者情報を設定] on the next line"
