@@ -126,8 +126,8 @@ findings:
     line: 122
     text: 頂いた。
     message: 「頂く」と書いています（この文書はふつう「いただく」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 本動詞 「ご指示を頂いた」 (receive) is written in kanji by the 公用文 rule; the others are the auxiliary 〜いただく
+    verdict: correct
+    note: the main verb (receive) is written both ways in the page, ご指示を頂いた here and 理解をいただける on lines 37 and 43; the rule already compares main-verb uses apart from the auxiliary 〜ていただく and takes no side on which spelling is right
   - rule: orthographic-variant
     line: 128
     text: ときに、議論されていたことがしっかり実行されているか確認をして、期待する政策効果

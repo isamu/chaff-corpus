@@ -125,8 +125,8 @@ findings:
     line: 123
     text: みられる。ピンチをチャンスに変えていくという心意気を骨太の方針においても示してい
     message: 「みる」と書いています（この文書はふつう「見る」と書く語です。6 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: みられる in the sense "is seen as / appears" is conventionally written in kana; it is not the verb 見る
+    verdict: correct
+    note: the same is-seen-as / judge sense is in kanji on line 37 (示唆したと見られます) and line 122 (と見ている) and in kana here (ともみられる); the rule takes no side on which spelling is right
   - rule: demonstrative-opener-run
     line: 132
     text: この中では、地方歳出について物価の上昇、人件費の増加、金利の上昇など歳出増加圧力

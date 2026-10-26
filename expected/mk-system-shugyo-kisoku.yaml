@@ -462,14 +462,14 @@ findings:
     line: 352
     text: 届け出し、許可を得なければならない。事前に届け出ることが不可能な場合は事後に届け
     message: 「届け出」と書いています（この文書はふつう「届出」と書く語です。6 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the verb 届け出る (届け出し) counted against the noun 届出; 公用文 writes the verb with okurigana and the noun without
+    verdict: correct
+    note: 届け出し is the noun 届け出 + する (the verb 届け出る has no form 届け出し), written against the noun 届出 on lines 328, 357, 363 and 425; the rule takes no side on which spelling is right
   - rule: orthographic-variant
     line: 356
     text: 届け出し、許可を得なければならない。
     message: 「届け出」と書いています（この文書はふつう「届出」と書く語です。6 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the verb 届け出る (届け出し) counted against the noun 届出
+    verdict: correct
+    note: 届け出し is the noun 届け出 + する, written against the noun 届出 elsewhere in the page (see line 352)
   - rule: toki-as-condition
     line: 357
     text: 時は、始業時刻までに連絡し、事後直ちに理由を記入した勤怠届を提出する（この届出が
