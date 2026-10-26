@@ -59,7 +59,8 @@ findings:
     line: 47
     text: See the Federal Emergency Management Age
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: false-positive
+    note: a footnote that is "See" plus the cited FEMA declarations and their URLs; by the rule's not_flagged only the writer's words before a citation count, as in fed-sr-26-3:41
   - rule: undefined-acronym
     line: 47
     text: DR 4339), https://www.fema.gov/disaster/

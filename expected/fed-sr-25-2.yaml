@@ -161,8 +161,8 @@ findings:
     line: 61
     text: See also SR letter 05-9, “Frequently Ask
     message: This sentence runs 24 words (limit 18)
-    verdict: correct
-    note: a long sentence in the letter's notes
+    verdict: false-positive
+    note: "\"See also\" plus a cited SR letter number and title, then a purpose clause (for interagency guidance on …); by the rule's not_flagged the citation does not count, and the writer's own words (See also, the purpose clause) stay under the limit, so the same shape as fed-sr-25-3:65 and fed-sr-26-3:41"
   - rule: max-sentence-length
     line: 63
     text: Regarding credit card accounts, the CIP

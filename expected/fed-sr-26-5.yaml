@@ -75,4 +75,5 @@ findings:
     line: 43
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
-    verdict: unjudged
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
