@@ -31,8 +31,8 @@ findings:
   - rule: undefined-acronym
     line: 84
     sha256: 56f7489662f486cbb138b545018e4212d652e149558f88dd37280b3d5b435768
-    verdict: false-positive
-    note: the railway companies' abbreviation is everyday Japanese
+    verdict: correct
+    note: the railway companies' name, an organisation's name, is never expanded and is not an everyday word like those on chaff's common-acronym list; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: title-length
     line: 119
     sha256: 87072b6a89bde0c52227ee5c05984e4487afbac699a184ce4d17ec40348bbb5e
