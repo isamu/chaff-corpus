@@ -1,6 +1,11 @@
 id: ai-en-review-headphones
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# Noise-Cancelling Headphones Review: Si"
+    message: "3 bold spans of emphasis: 7.2 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: section-length-uniformity
     line: 1
     text: ""
@@ -12,12 +17,6 @@ findings:
     what: "\"here's my honest take\""
     verdict: missed
     note: candidate pattern (honesty marker)
-  - rule: concrete-evidence-density
-    line: 5
-    text: ""
-    message: Section "The Short Version" has no number, code or link (4 of 7 sections)
-    verdict: false-positive
-    note: a pros/cons summary of a review; figures are in the sections that need them
   - rule: bold-label-list
     line: 7
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
@@ -29,26 +28,8 @@ findings:
     message: '"Call quality is average outdoors" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
     verdict: correct
     note: a clause among noun phrases in the cons list
-  - rule: concrete-evidence-density
-    line: 17
-    text: ""
-    message: Section "Noise Cancelling" has no number, code or link (4 of 7 sections)
-    verdict: false-positive
-    note: an experience report; no figures expected
   - rule: ai-generated-composite
     line: 19
     what: '"a five-hour flight in June" and "a hot day in August" are experiences the user did not give'
     verdict: missed
     note: "catalog B01 (invented detail): the reviewer's own experience made up"
-  - rule: concrete-evidence-density
-    line: 27
-    text: ""
-    message: Section "Sound Quality" has no number, code or link (4 of 7 sections)
-    verdict: false-positive
-    note: as line 17
-  - rule: concrete-evidence-density
-    line: 35
-    text: ""
-    message: Section "Controls and Calls" has no number, code or link (4 of 7 sections)
-    verdict: false-positive
-    note: as line 17

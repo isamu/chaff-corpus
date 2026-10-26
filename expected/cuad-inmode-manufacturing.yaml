@@ -1,21 +1,6 @@
 id: cuad-inmode-manufacturing
 chaff: 0.34.0
 findings:
-  - rule: hyphen-as-dash
-    line: 1
-    text: ' - Key Manufacturing Agreement (the "Agr'
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1
-    text: " - KEY MANUFACTURING AGREEMENT This Turn"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1
-    text: " - Key projects; Whereas Customer acknow"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 1
     text: Exhibit 10.9 TURN - KEY MANUFACTURING AG
@@ -25,81 +10,6 @@ findings:
     line: 1
     text: POB 533, Yokneam 20692, Israel. Hereinaf
     message: '"POB" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Any additional information reasonably"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Approved Vendors list - Gerber data,"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Assembly of printed circuit boards &"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Bill of Materials - Approved Vendors"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Drawings - Bill of Materials - Approv"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Final assembly & integration of the P"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Functional test - Packaging and deliv"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Gerber data, CAD files - Quality requ"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - In Circuit test - Functional test - P"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Incoming Inspection - Assembly of pri"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Material procurement - Incoming Inspe"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Packaging and delivery 4.2 Customer's"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Quality requirements - Technical supp"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Standard Operation Procedures - Drawi"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 9
-    text: " - Technical support, as required - Any"
-    message: '"-" stands in for a dash'
     verdict: unjudged
   - rule: space-before-punctuation
     line: 9
@@ -172,11 +82,6 @@ findings:
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
   - rule: requirement-smell
-    line: 39
-    text: but not limited to "purchase orders," "f
-    message: '"but not limited to" in a requirement does not say what else it covers'
-    verdict: unjudged
-  - rule: requirement-smell
     line: 49
     text: and/or with Products not covered under t
     message: '"and/or" does not say whether both are meant or either is enough'
@@ -190,11 +95,6 @@ findings:
     line: 49
     text: promptly repair or replace such Product
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 59
-    text: " - if requested by Customer and subject"
-    message: '"-" stands in for a dash'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 59
@@ -316,11 +216,6 @@ findings:
     text: RF Connector Assy Touch Screen Assy Touc
     message: '"RF" is used without an expansion (36 such acronyms)'
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 139
-    text: " - Shell Sample Fractora 5pcs Box Set 24"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 139
     text: PRO InMode System 2 Color 2 Triton Fract
@@ -345,11 +240,6 @@ findings:
     line: 147
     text: FX Programmer Tite FX TESTER Hi-POT CLIP
     message: '"FX" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 147
-    text: HI-POT tester Blue wave-50(UV) RF tester
-    message: '"HI-POT" is used without an expansion (36 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 147

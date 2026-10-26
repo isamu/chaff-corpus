@@ -137,11 +137,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 170
-    text: PO Box 1
-    message: '"PO" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 177
     text: HMRC by phone and email’ or ‘Pay your ca
     message: '"HMRC" is used without an expansion (32 such acronyms)'
@@ -170,11 +165,6 @@ findings:
     line: 285
     text: Words to avoid
     message: '"Words" is one letter away from "Lords", which the document uses more than once'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 323
-    text: DFT’s management board.
-    message: '"DFT" is used without an expansion (32 such acronyms)'
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 334
@@ -484,12 +474,6 @@ findings:
     text: agenda (unless it’s for a meeting), use
     message: '"agenda (unless it’s for a meeting), use ‘plan’ instead" opens with a noun phrase; the other items in this list open with a verb (4 of 16)'
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 2896
-    text: commit/pledge, use ‘plan to x’, or ‘we’r
-    message: "\"we're\" is written \"we are\" elsewhere in the document"
-    verdict: false-positive
-    note: the contraction is a quoted example of wording, mentioned rather than used
   - rule: oxford-comma-consistency
     line: 2896
     text: commit/pledge, use ‘plan to x’, or ‘we’r

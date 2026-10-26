@@ -161,11 +161,6 @@ findings:
     text: 'Note: "Text taken from D. Kasprzyk, “Cha'
     message: This sentence runs 170 words (limit 50)
     verdict: unjudged
-  - rule: name-variant
-    line: 1959
-    text: Plano–Irving, TX, Metropolitan Division
-    message: '"Plano" is one letter away from "Plans", which the document uses more than once'
-    verdict: unjudged
   - rule: wordy-phrase
     line: 1993
     text: Full or partial elimination of hazardous
@@ -205,11 +200,6 @@ findings:
     line: 2269
     text: Amount paid in interest on mortgages, in
     message: This sentence runs 63 words (limit 50)
-    verdict: unjudged
-  - rule: name-variant
-    line: 2377
-    text: Personas
-    message: '"Personas" is one letter away from "Personal", which the document uses more than once'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 2421

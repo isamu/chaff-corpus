@@ -5,7 +5,7 @@ findings:
     line: 3
     sha256: 69cb2bed4da40e66a3980626f8315e12042f3db6b4a49d3023c5b765a3fa0db4
     verdict: false-positive
-    note: "the page writes each paragraph number 【０００ｎ】 and its paragraph on lines joined by single line breaks, so Markdown reads the whole description as one paragraph"
+    note: the page writes each paragraph number 【０００ｎ】 and its paragraph on lines joined by single line breaks, so Markdown reads the whole description as one paragraph
   - rule: clause-chain
     line: 20
     sha256: cce1369bbbf3f344c57ec78ef6edc6f206d81f91c346c7d643cd467feb161796
@@ -22,57 +22,57 @@ findings:
     line: 40
     sha256: 4bb5b3a98ae43467f99085c57ba0f52f4f561d2964608f84f60b07e894cdc7fc
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 40
     sha256: 895c5e07ab83d9671b9861b3c7e979e49eb345dde3aedda47c88d85045fe34b6
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 40
     sha256: f1b9ce29fcbfdc4c69951ce6ee6a9b6f50c6df21812cc53ac3b1b5174cca0de3
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 02b609f26ed08e9d1afb93978ac45d1cd74a6cf1c61c80922d1941dae73c3b82
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 12598611b82f8f3e23838a7ee047e691380843517496f363a3021587a2e3e827
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 2a11be26ec715523e8356e939ddbd6e78bd30281d1f25a10181975b5ec770950
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 3f146c03077c4c3a6dbab28fbced819461325cfb41cd16a55d65eecaa04a898a
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 60b9f5a88b78f0ab16742e50c755cefabd76e6d270a11c4c465c093f9f40a7f7
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 761daf4c97d579f60146da7ac56f425f47388095ec74812a8b387c89876b3f3c
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 889bfacec793005a739eceae41f6e6c7b6ed652b68c1339ce77acd377642f798
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: kutoten-consistency
     line: 42
     sha256: 8b878d3067b54370fbc27c65becd7c8c889a2252f19adeb0bc91eb78d535bf29
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: hiragana-fukushi
     line: 58
     sha256: ca4236575234768f2c4c724b8d8f39586804ded4bae353becc93558da8f0306d
@@ -85,7 +85,7 @@ findings:
     line: 66
     sha256: 12f5eabe9510b66a91848a8c8b69cdd8db168b97a477a8090e11a195f75ce89d
     verdict: false-positive
-    note: "a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、"
+    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: clause-chain
     line: 88
     sha256: 0c40d8ddff7816a8935f7bfe768a991862cbd041f6de25da19564bb7dc8d4c9b

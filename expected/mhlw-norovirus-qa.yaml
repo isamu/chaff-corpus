@@ -21,6 +21,16 @@ findings:
     text: その後、非細菌性急性胃腸炎の患者からノーウォークウイルスに似た小型球形ウイルスが
     message: 「非細菌性急性胃腸炎」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 43
+    text: 2種類あることが分かりました。ほとんどが、ノーウォークウイルスまたはノーウォーク
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 43
+    text: 8月、国際ウイルス分類委員会（ICTV）で、ノロウイルス属、サポウイルス属に分類
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
   - rule: max-kanji-continuous
     line: 43
     text: ウイルスの遺伝子が詳しく調べられると、非細菌性急性胃腸炎をおこす「小型球形ウイル
@@ -30,6 +40,11 @@ findings:
     line: 43
     text: おこす「小型球形ウイルス」には2種類あることが分かりました。ほとんどが、ノーウォ
     message: 「おこす」と書いています（この文書はふつう「起こす」と書く語です。4 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 45
+    text: 1本鎖RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があるこ
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 45
@@ -61,25 +76,35 @@ findings:
     text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
     message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 71
-    text: 厚生労働省では平成９年からノロウイルスによる食中毒については、小型球形ウイルス食
-    message: 「食品衛生法施行規則」は漢字が 9 字続いています（8 字まで）
+  - rule: fullwidth-alnum-consistency
+    line: 73
+    text: 1,172件のうち462件（39.4%）、患者数では総患者数24,727名のうち
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
-  - rule: topic-predicate-distance
+  - rule: fullwidth-alnum-consistency
     line: 91
-    text: このノロウイルス感染症は、５類感染症に位置づけられた「感染性胃腸炎」の一部として
-    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    text: 3,000カ所の小児科の病院または診療所）から報告が求められており、その発生の状
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 93
     text: ここでは、感染症発生動向調査に基づき調査が実施されている『ノロウイルスが原因の一
     message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 102
+    text: 3,000の小児科医療機関からの報告によるもので、すべての患者数を把握するもので
+    message: 半角の「3」と書いています（この文書はふつう全角の「３」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 102
     text: 資料：報告数は「感染症発生動向調査事業」に基づく全国約3,000の小児科医療機関
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 103
+    text: 2,088人÷定点報告数814,793のような死亡率の計算はできないことに注意）
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: no-mixed-desumasu
     line: 105
@@ -96,6 +121,16 @@ findings:
     text: ノロウイルスは世界中に広く分布しているとされ、アメリカ、イギリス、ニュージーラン
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 119
+    text: 2つの遺伝子群（GIとGII）、さらにGIは9種類（GI.1～GI.9）、GII
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 119
+    text: 9種類（GI.1～GI.9）、GIIは22種類（GII.1～GII.22）の遺伝
+    message: 半角の「9」と書いています（この文書はふつう全角の「９」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
   - rule: undefined-acronym
     line: 119
     text: GII）、さらにGIは9種類（GI.1～GI.9）、GIIは22種類（GII.1
@@ -110,6 +145,11 @@ findings:
     line: 121
     text: とくに、GII.4は、2006年以降、ノロウイルスによる胃腸炎患者の大半から検出
     message: 「とくに」と書いています（この文書はふつう「特に」と書く語です。10 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 129
+    text: みると、一年を通して発生はみられますが11月くらいから発生件数は増加しはじめ、1
+    message: 「みる」と書いています（この文書はふつう「見る」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 149
@@ -130,6 +170,11 @@ findings:
     line: 167
     text: RT-PCR法、リアルタイムPCR法などの遺伝子を検出する方法でウイルスの検出を
     message: 「RT-PCR」が説明なしで使われています（説明のない略語 5 個）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 173
+    text: 7割では原因食品が特定できていません。ウイルスに感染した食品取扱者を介して食品が
+    message: 半角の「7」と書いています（この文書はふつう全角の「７」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: number-style-consistency
     line: 175
@@ -275,6 +320,16 @@ findings:
     line: 257
     text: （この際、ビニール袋に廃棄物が充分に浸る量の次亜塩素酸ナトリウム※（塩素濃度約1
     message: 括弧が 3 重になっています（2 重まで）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 257
+    text: 1,000 ppm）や亜塩素酸水（遊離塩素濃度100 ppm（含量 亜塩素酸とし
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。41 箇所のうち 12 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 257
+    text: 2,000 ppm以上））を入れることが望ましい。）
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: no-mixed-desumasu
     line: 257

@@ -25,20 +25,15 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    what: the first sentence ("This letter highlights guidance issued on June 12, 2026, by the U.S. Department of the Treasury's ...") runs about 50 words
-    verdict: missed
-    note: 'rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main reads it whole from "This letter"'
-  - rule: max-sentence-length
-    line: 25
     text: This action taken by FinCEN reflects ind
     message: This sentence runs 41 words (limit 18)
     verdict: correct
-  - rule: dangling-reference
-    line: 27
-    text: section 314(b) is voluntary. FinCEN stro
-    message: '"section 314(b)" (address 314.b) is not in this document'
-    verdict: false-positive
-    note: section 314(b) of the USA PATRIOT Act, cited in the footnotes; it is not a section of this letter
+  - rule: max-sentence-length
+    line: 25
+    text: This letter highlights guidance issued o
+    message: This sentence runs 50 words (limit 18)
+    verdict: correct
+    note: 'rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main reads it whole from "This letter"; found by chaffjs 0.38.0'
   - rule: max-sentence-length
     line: 27
     text: FinCEN strongly encourages financial ins
@@ -59,24 +54,12 @@ findings:
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 39
-    text: Section 314(b) Fact Sheet (June 12, 2026
-    message: '"Section 314(b)" (address 314.b) is not in this document'
-    verdict: false-positive
-    note: the title of FinCEN's fact sheet, an outside document
   - rule: quote-style-consistency
     line: 39
     text: "'s Section 314(b) Fact Sheet (June 12, 2"
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 3)
     verdict: correct
     note: FinCEN's with a straight apostrophe, where the letter otherwise writes ’
-  - rule: dangling-reference
-    line: 41
-    text: § 314(b); 31 CFR §§ 1010.540(a), (b)(5).
-    message: '"§ 314(b)" (address 314.b) is not in this document'
-    verdict: false-positive
-    note: a legal citation of the Act's section 314(b), an outside document
   - rule: max-sentence-length
     line: 41
     text: See Uniting and Strengthening America by

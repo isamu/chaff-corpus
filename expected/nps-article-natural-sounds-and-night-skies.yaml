@@ -7,27 +7,9 @@ findings:
     message: '"studies show" does not say who'
     verdict: correct
     note: studies show, with no study named
-  - rule: concrete-evidence-density
-    line: 11
-    text: ""
-    message: Section "What are natural sounds and night skies?" has no number, code or link (3 of 3 sections)
-    verdict: false-positive
-    note: a section defining two terms in prose; nothing concrete is missing
   - rule: heading-level-skip
     line: 11
     text: "#### What are natural sounds and night s"
     message: Heading "What are natural sounds and night skies?" goes from level 1 to level 4 (expected 2)
     verdict: correct
     note: the article goes from its h1 straight to h4 headings
-  - rule: concrete-evidence-density
-    line: 25
-    text: ""
-    message: Section "Who can benefit from natural sounds and night skies in our parks?" has no number, code or link (3 of 3 sections)
-    verdict: false-positive
-    note: the source section links to the Healthy Parks Healthy People page, which the html conversion drops
-  - rule: title-case-consistency
-    line: 35
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: the page's related-content widget label, not one of the article's headings

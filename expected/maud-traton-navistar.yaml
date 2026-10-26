@@ -21,14 +21,6 @@ findings:
     line: 157
     sha256: 60857bb5a34a4cb05c71ff8299ef1dab5e0962580a9a84f763e107ff6fdce366
     verdict: unjudged
-  - rule: dangling-reference
-    line: 217
-    sha256: 7cc1ca5b8e0ba9d147b029a9ec7e5e765a34afba5fc49ee49fd2130965230a0e
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 217
-    sha256: c40d876d32defd7e8a2806c8bdfa551cbeb23192201d8f148b14a4495c22e2fb
-    verdict: unjudged
   - rule: use-before-definition
     line: 250
     sha256: 76e7315c038b87b96c80302a5f00aa82c2412929868ceae3b0b621d08356d494
@@ -137,10 +129,6 @@ findings:
     line: 442
     sha256: 2a169626a0a574be0be11305d14b48d2aed8930502abd8c081261bf1888ef93a
     verdict: unjudged
-  - rule: dangling-reference
-    line: 466
-    sha256: c9445976d151e70fb7fbc96facf5b0a485dee6bcf9914f800061176ff8460ea9
-    verdict: unjudged
   - rule: unused-definition
     line: 517
     sha256: bbb2fadce5492d97ab1cae679cf65516f18471751c9243e12b79d2e7131186c7
@@ -152,10 +140,6 @@ findings:
   - rule: undefined-acronym
     line: 529
     sha256: b7a7bb526f2e412a885f4285fe7d3c5b372966a37ca67e2a9c187725b44e4818
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 541
-    sha256: f0e76b8e25a8946ad01d0c068f97996e2ee73c8bfb8ceb4199d365d47372c307
     verdict: unjudged
   - rule: undefined-acronym
     line: 541
@@ -181,14 +165,6 @@ findings:
     line: 568
     sha256: b05ab034b6053850a9ad4af52218456dc73301bfc968b63a78b6105a03bcfe5f
     verdict: unjudged
-  - rule: dangling-reference
-    line: 634
-    sha256: a7118ac0e4ca06f95ae08b410062e55116da4cf93f839ed6e1b03462a05156a6
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 649
-    sha256: b6fe59352a99f2cf58a41a6386020d29b6316eac99fd5865db1a8ec9498c2f1a
-    verdict: unjudged
   - rule: obligation-without-deadline
     line: 667
     sha256: adc330b7c0213c423a848b388eeaaff9e6ba5f73c0b7c4cb1d432748a133b162
@@ -202,10 +178,6 @@ findings:
     sha256: 5350b00d7100afb4b7d868ec3a8e5dbee7ab1108aaf76c64c3c2f40818736e54
     verdict: unjudged
   - rule: dangling-reference
-    line: 763
-    sha256: f7ece6af9864292e9dd96f8fb2fef5899ab3feb48147906bc0532abc7dd05d21
-    verdict: unjudged
-  - rule: dangling-reference
     line: 778
     sha256: 4b8880f0db6fe0445d4ec3ca6502ad21e2865e3edf3868b64c59587cca492a64
     verdict: unjudged
@@ -215,15 +187,7 @@ findings:
     verdict: unjudged
   - rule: dangling-reference
     line: 913
-    sha256: 7bfd473e5e7c9937c13f2e4b9ee5bda98352f0d493bc2cdedafb25c0b17e4d7b
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 913
     sha256: a46510c3eba919806649bff5bb9c2bcbeede2786feab455e93cbb1d55816e5f0
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 928
-    sha256: e05f8e188ed89c22140c299656e29e28b98c60f9283ddd7240b8e459371113d7
     verdict: unjudged
   - rule: dangling-reference
     line: 1051
@@ -260,14 +224,6 @@ findings:
   - rule: dangling-reference
     line: 1288
     sha256: 3b6634a67ce966ba8e8acae56ea810f1766d219c8a53cf65888f529f5023b375
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1375
-    sha256: 2b343d59cbf8abb0848e6ac3b76a73c5488682ffa2925e65b744c2fa9f00f8b1
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1375
-    sha256: 49a2518c5f2b15cf2870ae1b8ce7e7e566995fcb8ac328babbc6ecf5baaa3e56
     verdict: unjudged
   - rule: defined-term-form
     line: 1375
@@ -310,32 +266,12 @@ findings:
     sha256: da83ad8503d884010dd2c4e25d7d27dc4fd9aa8e18b9cdf351893ef5fe1dba5d
     verdict: unjudged
   - rule: requirement-smell
-    line: 1567
-    sha256: a8be48bd9ceadb6bf2764126b34f923b38dedc8059bbc7386521bb891f6e6943
-    verdict: unjudged
-  - rule: requirement-smell
     line: 1597
     sha256: 83d73a31e7b533102d96b39218794caa24bbed2f7bec6d894816987219444b81
     verdict: unjudged
   - rule: undefined-term
     line: 1600
     sha256: 6e88fc39fa137b454f13faf99469e99e6394961315484b91957becdf099a8e40
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1615
-    sha256: 333374dd577db2c1a29b63bd8268406f957c7464c6717cf9141c2e45ea5957fd
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1615
-    sha256: 72e7b871b871d6b1687c649f5fcdb31d32de8e87cfbc7c255b5ade1b1e1c0364
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1615
-    sha256: 939dc68205a290e7e607544bbc8653b4e8cebffb673b0387253b544fa58b8467
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 1618
-    sha256: 4dab69ac0b574ee9276057e07d30b95a2ec3f73676de73fbd64879e0aa3aca54
     verdict: unjudged
   - rule: requirement-smell
     line: 1633
@@ -352,10 +288,6 @@ findings:
   - rule: dangling-reference
     line: 1741
     sha256: 585832904f6f41fbd70a781f2d3a7afd1c6b61a1c70c6fb978cb1a498e4c40d0
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1741
-    sha256: 5be23f25209a524e7ac3068f68e098560a71192101966e11dda79f821babfb78
     verdict: unjudged
   - rule: reference-title-mismatch
     line: 1741
@@ -437,10 +369,6 @@ findings:
   - rule: requirement-smell
     line: 1900
     sha256: 10d14ba727795a22d2a795b1eaf86a0ddf5445dc9f01f45babf661b10630fda9
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 1948
-    sha256: 9d726351f4007f321c6e0a569337436dc388056a4757d0974ca5978f6cff353e
     verdict: unjudged
   - rule: undefined-acronym
     line: 2053

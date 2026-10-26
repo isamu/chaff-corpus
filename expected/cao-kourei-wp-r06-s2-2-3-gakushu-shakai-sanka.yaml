@@ -49,6 +49,11 @@ findings:
     message: この文は 169 文字あります（140 文字まで）
     verdict: correct
     note: 169 字の一文
+  - rule: stray-space
+    line: 75
+    what: 「地方公共団体・関連 団体」の語の途中に半角空白が入っている
+    verdict: missed
+    note: neither chaffjs 0.36.0 nor lab main reports it
   - rule: no-doubled-joshi
     line: 81
     text: の2回目の変更の閣議決定を行った。令和5年度には、高齢者を含む幅広い全世代に対す
@@ -97,8 +102,3 @@ findings:
     message: この文は 146 文字あります（140 文字まで）
     verdict: correct
     note: 146 字の一文
-  - rule: stray-space
-    line: 75
-    what: 「地方公共団体・関連 団体」の語の途中に半角空白が入っている
-    verdict: missed
-    note: neither chaffjs 0.36.0 nor lab main reports it

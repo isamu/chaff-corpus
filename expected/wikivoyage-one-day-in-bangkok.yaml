@@ -5,37 +5,37 @@ findings:
     line: 11
     sha256: 2f9e6685473a54d86ce2ad8313696388f43c9dbd80d292a2e91aeeb9a39eee04
     verdict: correct
-    note: "the minority form; the page mostly writes don't"
+    note: the minority form; the page mostly writes don't
   - rule: max-paragraph-length
     line: 11
     sha256: 2f9e6685473a54d86ce2ad8313696388f43c9dbd80d292a2e91aeeb9a39eee04
     verdict: correct
-    note: "six sentences in one paragraph, as stated"
+    note: six sentences in one paragraph, as stated
   - rule: max-paragraph-length
     line: 19
     sha256: b72aca9c14dc1d7801e12a0531cacb66c1b9fb20302deb4c904a413b5698dd0f
     verdict: correct
-    note: "six sentences in one paragraph, as stated"
+    note: six sentences in one paragraph, as stated
   - rule: contraction-consistency
     line: 28
     sha256: d61cac74b5f4ab9cb29d5b8b9ee9d8fb2685566d5ccd58fe8e536eec5453ea95
     verdict: correct
-    note: "the minority form; the page mostly writes it's"
+    note: the minority form; the page mostly writes it's
   - rule: max-paragraph-length
     line: 28
     sha256: 3603aed5022c4a715cb35605bdcc75e92f79e0834ef98cdf7a775fd6e7cb96f7
     verdict: correct
-    note: "fourteen sentences in one paragraph, as stated"
+    note: fourteen sentences in one paragraph, as stated
   - rule: contraction-consistency
     line: 37
     sha256: edeba9112f1b0e0fb421262063e00d5f44147b5e948c0d868aea36a7812dfc1d
     verdict: correct
-    note: "the minority form; the page mostly writes it's"
+    note: the minority form; the page mostly writes it's
   - rule: max-sentence-length
     line: 52
     sha256: b4ec51ebcbedcbb152e61c0e00e9e7ac67d9701523489e977eb1f1fa0e9cff84
     verdict: correct
-    note: "the sentence is over 45 words as stated"
+    note: the sentence is over 45 words as stated
   - rule: oxford-comma-consistency
     line: 52
     sha256: b4ec51ebcbedcbb152e61c0e00e9e7ac67d9701523489e977eb1f1fa0e9cff84

@@ -557,14 +557,6 @@ findings:
     line: 1273
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1280
-    sha256: 13daa2b707b9823a1f2f355dae151087178261828aba60978db1f068c27cb3f8
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1284
-    sha256: 55684f304890aaad9f8507f84bb2ba19a73383a11dc7631f6413918955be5004
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1288
     sha256: 00394d6fb6a69ab318bfa98ca3c6e1e88a032d1150206658414ed4d854644d0a

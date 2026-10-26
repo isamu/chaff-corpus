@@ -1,12 +1,6 @@
 id: shiki-joho-ryushutsu-chuui
 chaff: 0.34.0
 findings:
-  - rule: preamble-length
-    line: 1
-    text: ページの先頭です。 メニューを飛ばして本文へ
-    message: 最初の見出しまでに 6 段落あります（2 段落まで）
-    verdict: false-positive
-    note: site navigation (header, breadcrumb or search box) that the html conversion kept; not the document's prose
   - rule: request-without-deadline
     line: 28
     text: 不審なメールには対応せず、社内で確認をお願いします

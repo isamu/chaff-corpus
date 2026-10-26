@@ -6,100 +6,100 @@ findings:
     text: これはスケールフリーネットワークにおいて、ノードの削除と追加を繰り返した場合、最
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
     verdict: correct
-    note: "「これは」から述語「なっています」まで遠い"
+    note: 「これは」から述語「なっています」まで遠い
   - rule: max-sentence-length
     line: 19
     text: 研究に使われるプログラムは、業界でよく使われるもの(第一原理計算ならVASPやQ
     message: この文は 176 文字あります（160 文字まで）
     verdict: correct
-    note: "長い括弧書きを含む一文で、述べたとおり長い"
+    note: 長い括弧書きを含む一文で、述べたとおり長い
   - rule: topic-predicate-distance
     line: 19
     text: 研究に使われるプログラムは、業界でよく使われるもの(第一原理計算ならVASPやQ
     message: 「は」で出した主題から述語まで 160 字あります（80 字まで）
     verdict: correct
-    note: "主題「プログラムは」から述語まで長い括弧書きを挟んで遠い"
+    note: 主題「プログラムは」から述語まで長い括弧書きを挟んで遠い
   - rule: orthographic-variant
     line: 81
     text: パラメタファイルを共通で使いたい場合はYAMLの方が良い気がします。
     message: 「パラメタ」と書いています（この文書はふつう「パラメータ」と書く語です。22 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「パラメタ」と「パラメータ」が混ざっている"
+    note: 「パラメタ」と「パラメータ」が混ざっている
   - rule: max-paragraph-length
     line: 126
     text: パラメータを与えて実行する系の計算では、パラメータの値によって振る舞いの種類が変
     message: この段落は 6 文あります（5 文まで）
     verdict: correct
-    note: "六文の段落、述べたとおり"
+    note: 六文の段落、述べたとおり
   - rule: number-style-consistency
     line: 126
     text: 二種類のパラメータがあり、それぞれのパラメータについて10種類ずつ計算することに
     message: 数え方の数を「二種類」と書いています（この文書はふつう「10種類」の書き方。10 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "同じ文で「二種類」と「10種類」が混ざっている"
+    note: 同じ文で「二種類」と「10種類」が混ざっている
   - rule: orthographic-variant
     line: 167
     text: たとえば12コアあるマシンで11並列で実行して10時間で終える、というのはちょう
     message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。12 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "「たとえば」と「例えば」が混ざっている"
+    note: 「たとえば」と「例えば」が混ざっている
   - rule: orthographic-variant
     line: 237
     text: たとえばこんな感じになります。
     message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。12 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "「たとえば」と「例えば」が混ざっている"
+    note: 「たとえば」と「例えば」が混ざっている
   - rule: max-kanji-continuous
     line: 250
     text: これは物性研究所共同利用スパコンのシステムBに投入するためのジョブスクリプトです
     message: 「物性研究所共同利用」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
-    note: "「物性研究所共同利用（スパコン）」は施設の利用制度の名称で、分けて書けない"
+    note: 「物性研究所共同利用（スパコン）」は施設の利用制度の名称で、分けて書けない
   - rule: topic-predicate-distance
     line: 277
     text: 現在は計算資源に比べてストレージの方が相対的にコストが高く、大きな計算でも計算結
     message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
     verdict: correct
-    note: "主題から述語まで遠い"
+    note: 主題から述語まで遠い
   - rule: orthographic-variant
     line: 283
     text: よいと思いますが、このコードはこの論文を書くためだけに使われるものなので、出力結
     message: 「よい」と書いています（この文書はふつう「良い」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「よい」と「良い」が混ざっている"
+    note: 「よい」と「良い」が混ざっている
   - rule: clause-chain
     line: 287
     text: というわけで、ソースを管理するディレクトリに`data`とか`phase_dia
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: correct
-    note: "節が八つつながる長い一文"
+    note: 節が八つつながる長い一文
   - rule: paragraph-restatement
     line: 289
     text: つまり`*.cpp`を管理するリポジトリに`*.dat`を吐くディレクトリは用意
     message: 「つまり」で始まるこの段落は、内容語の 59% が前の段落の繰り返しです
     verdict: correct
-    note: "直前の二段落で述べた方針（データはリポジトリで管理しない）を「つまり」でもう一度繰り返している"
+    note: 直前の二段落で述べた方針（データはリポジトリで管理しない）を「つまり」でもう一度繰り返している
   - rule: clause-chain
     line: 297
     text: 理想的にはトップディレクトリで`make`と入力したら、データファイルから必要な
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: correct
-    note: "節が六つつながる一文"
+    note: 節が六つつながる一文
   - rule: topic-predicate-distance
     line: 350
     text: ファイル名の決め方ですが、まずデータからPDFを作るところは物理的な意味を持つよ
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: correct
-    note: "主題から述語まで遠い"
+    note: 主題から述語まで遠い
   - rule: tari-unpaired
     line: 352
     text: たり、論文出版時にこのような名前でのファイルのアップロードを求められる場合がある
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-    note: "「あったり」が一つだけで、対になる「〜たり」がない"
+    note: 「あったり」が一つだけで、対になる「〜たり」がない
   - rule: max-paragraph-length
     line: 358
     text: 昨今、研究のデータをなるべく公開しよう的な流れになっていますが、Data ava
     message: この段落は 7 文あります（5 文まで）
     verdict: correct
-    note: "七文の段落、述べたとおり"
+    note: 七文の段落、述べたとおり

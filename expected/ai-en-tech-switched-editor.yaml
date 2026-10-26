@@ -1,6 +1,11 @@
 id: ai-en-tech-switched-editor
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# I went back to a plain text editor for"
+    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: section-length-uniformity
     line: 1
     text: ""

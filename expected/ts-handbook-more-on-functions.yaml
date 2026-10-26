@@ -13,18 +13,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: spaced hyphens used as dashes around 'chosen automatically'
-  - rule: return-type-mismatch
-    line: 515
-    text: "function fn(x: string): string;"
-    message: "`fn` is said to return string here, but its signature returns `void`"
-    verdict: false-positive
-    note: "a deliberately wrong overload, shown with its compiler error (// @errors: 2394)"
-  - rule: comparative-without-baseline
-    line: 559
-    text: better!
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: "'much better' than the example just shown, which is the baseline"
   - rule: redundant-expression
     line: 560
     text: Callers can invoke this with either sort

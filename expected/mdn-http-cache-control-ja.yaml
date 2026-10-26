@@ -1,36 +1,6 @@
 id: mdn-http-cache-control-ja
 chaff: 0.36.0
 findings:
-  - rule: broken-link
-    line: 51
-    text: "[`max-age`](#max-age_2)               |"
-    message: リンク「[`max-age`](#max-age_2)」が指す「#max-age_2」の見出しがこの文書にありません
-    verdict: false-positive
-    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
-  - rule: broken-link
-    line: 55
-    text: "[`no-cache`](#no-cache_2)             |"
-    message: リンク「[`no-cache`](#no-cache_2)」が指す「#no-cache_2」の見出しがこの文書にありません
-    verdict: false-positive
-    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
-  - rule: broken-link
-    line: 56
-    text: "[`no-store`](#no-store_2)             |"
-    message: リンク「[`no-store`](#no-store_2)」が指す「#no-store_2」の見出しがこの文書にありません
-    verdict: false-positive
-    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
-  - rule: broken-link
-    line: 57
-    text: "[`no-transform`](#no-transform_2)     |"
-    message: リンク「[`no-transform`](#no-transform_2)」が指す「#no-transform_2」の見出しがこの文書にありません
-    verdict: false-positive
-    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
-  - rule: broken-link
-    line: 66
-    text: "[`stale-if-error`](#stale-if-error_2) |"
-    message: リンク「[`stale-if-error`](#stale-if-error_2)」が指す「#stale-if-error_2」の見出しがこの文書にありません
-    verdict: false-positive
-    note: the second heading with the same text gets the anchor '_2' (MDN's rule for duplicate headings); the target exists
   - rule: repeated-sentence-ending
     line: 72
     text: この節では、この記事で使用する用語を定義しています。次の用語が使用されています。

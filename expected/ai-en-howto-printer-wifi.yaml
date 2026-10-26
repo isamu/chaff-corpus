@@ -24,30 +24,17 @@ findings:
     message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, list items opening with a bold label"
     verdict: correct
     note: short even sections and bold-label list items; the template how-to
-  - rule: concrete-evidence-density
-    line: 33
-    text: ""
-    message: Section "4. Remove and re-add the printer on your computer" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: menu paths are the content; numbers or links would not help
+  - rule: bold-emphasis
+    line: 22
+    text: On the printer's screen (or its settings
+    message: "6 bold spans of emphasis: 14.1 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: emoji-density
     line: 37
     text: → Bluetooth & devices → Printers & scann
     message: 16 emoji per 1000 words (limit 8)
     verdict: false-positive
     note: → marks a menu path, not an emoji
-  - rule: concrete-evidence-density
-    line: 40
-    text: ""
-    message: Section "5. Give the printer a fixed address (if it keeps happening)" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: as line 33
-  - rule: concrete-evidence-density
-    line: 44
-    text: ""
-    message: Section "Still not working?" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: a closing section
   - rule: heading-numbering-mix
     line: 44
     text: "## Still not working?"

@@ -1,24 +1,6 @@
 id: kantei-2025-global-startup-expo-aisatsu
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 17日 総理の演説・記者会見など
-    message: 半角の「17」と書いています（この文書はふつう全角の「１７」。9 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 7年9月17日 総理の演説・記者会見など
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。10 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 9月17日 総理の演説・記者会見など
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。10 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
   - rule: orthographic-variant
     line: 6
     text: 見た、ただの石だった。でも、あそこは本当にわくわくするような夢のような場所でした

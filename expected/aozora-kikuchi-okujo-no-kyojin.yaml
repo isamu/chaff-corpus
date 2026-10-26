@@ -1,36 +1,3 @@
 id: aozora-kikuchi-okujo-no-kyojin
 chaff: 0.36.0
-findings:
-  - rule: repeated-sentence-ending
-    line: 62
-    text: 俺もそう思うとんや。俺の心当りは別にあるんや。義の生れる時にな、俺はその時珍しい
-    message: 「〜や」で終わる文が 4 文続いています（2 文まで）
-    verdict: false-positive
-    note: "a character's dialect speech in a play; the ending is the character's voice"
-  - rule: adversative-ga-repeat
-    line: 64
-    text: 足場があろうがあるまいが、どなな所へでも上るんやけにな。梯子乗りの上手な作でも、
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: "「あろうがあるまいが」 is the whether-or-not construction, not two adversative が"
-  - rule: clause-chain
-    line: 166
-    text: 小さい時から高い所へ上りたがって、四つ五つの頃には床の間へ上る、御仏壇へ上る、棚
-    message: 一文に節が 9 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 180
-    text: （巫女呪文を唱え奇怪の身振りをする。義太郎はその間、吉治に肩口を捕えられながら、
-    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: false-positive
-    note: "a stage direction in （） holding several sentences ending in 。 is read as one sentence"
-  - rule: topic-predicate-distance
-    line: 246
-    text: 私はな、ちっとも学問がないもんやけにな、学校でようできるお前のいうことはなんでも
-    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 252
-    text: 二十四にもなって何も知らんし、いろはのいの字も知らんし、ちっとも経験はなし、おま
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
+findings: []

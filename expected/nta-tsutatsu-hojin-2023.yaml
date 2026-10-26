@@ -1,12 +1,6 @@
 id: nta-tsutatsu-hojin-2023
 chaff: 0.35.0
 findings:
-  - rule: email-greeting-closing
-    line: 1
-    text: 課法2-8
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an official directive (document number, 宛名 殿, issuer) opens without a greeting by design
   - rule: max-sentence-length
     line: 13
     text: 昭和44年5月1日付直審（法）25「法人税基本通達の制定について」（法令解釈通達
@@ -45,9 +39,3 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。13 箇所のうち 2 箇所が違う）
     verdict: false-positive
     note: a link's file-type and size label (PDFファイル/333KB)
-  - rule: email-greeting-closing
-    line: 33
-    text: 法人税基本通達等の主要改正項目について(PDFファイル/333KB)
-    message: 終わりに結びの言葉がありません
-    verdict: false-positive
-    note: an official directive ends without a closing phrase by design (the last line is a link label)

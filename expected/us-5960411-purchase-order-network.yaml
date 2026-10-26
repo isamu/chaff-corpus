@@ -1,12 +1,6 @@
 id: us-5960411-purchase-order-network
 chaff: 0.36.0
 findings:
-  - rule: use-before-definition
-    line: 3
-    text: HTML document identifying the item and i
-    message: '"HTML" is used here, before it is defined on line 15'
-    verdict: false-positive
-    note: "the abstract is a standalone summary printed before the description, where the term is spelled out; a patent's abstract is not read as the start of the description"
   - rule: max-paragraph-length
     line: 13
     text: The Internet comprises a vast number of
@@ -32,7 +26,7 @@ findings:
     text: which still express the same essential a
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
-    note: "a restrictive which (combinations … which still express) where the patent otherwise uses that"
+    note: a restrictive which (combinations … which still express) where the patent otherwise uses that
   - rule: max-paragraph-length
     line: 311
     text: FIGS. 8A-8C illustrate a hierarchical da

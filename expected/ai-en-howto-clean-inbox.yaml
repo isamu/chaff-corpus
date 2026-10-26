@@ -30,6 +30,11 @@ findings:
     message: 5 of 5 lists have exactly three items (70% allowed)
     verdict: correct
     note: every list in the post has exactly three items
+  - rule: bold-emphasis
+    line: 11
+    text: Move them to an archive folder (in Gmail
+    message: "8 bold spans of emphasis: 18.3 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: list-item-form-mix
     line: 21
     text: Many email apps now show an **Unsubscrib

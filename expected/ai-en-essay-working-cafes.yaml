@@ -1,6 +1,11 @@
 id: ai-en-essay-working-cafes
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# In defense of working from cafés (sort"
+    message: "4 bold spans of emphasis: 10.7 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: contrast-framing
     line: 5
     what: "\"Moving to a café doesn't make me more productive, exactly. It makes me less bored\""

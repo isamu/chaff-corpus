@@ -63,9 +63,10 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 45
-    what: the sentence "With the Japan-U.S. alliance at the core, we will increase ..." runs 40 words
-    verdict: missed
-    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole"
+    text: With the Japan-U.S. alliance at the core
+    message: This sentence runs 40 words (limit 25)
+    verdict: correct
+    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole; found by chaffjs 0.38.0"
   - rule: max-sentence-length
     line: 47
     text: When doing so, consistent with the visio
@@ -73,9 +74,10 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 49
-    what: the sentence "The Japan-U.S. alliance is the cornerstone of Japanese ..." runs 30 words
-    verdict: missed
-    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole"
+    text: The Japan-U.S. alliance is the cornersto
+    message: This sentence runs 30 words (limit 25)
+    verdict: correct
+    note: "rekeyed: chaffjs 0.36.0 starts this sentence after the U.S. and was judged correct there; lab main (isamu/lab#1892) reads it whole; found by chaffjs 0.38.0"
   - rule: max-sentence-length
     line: 51
     text: The other day I held telephone conversat
@@ -127,12 +129,6 @@ findings:
     text: While the circumstance surrounding Japan
     message: This sentence runs 27 words (limit 25)
     verdict: correct
-  - rule: undefined-acronym
-    line: 65
-    text: ASEAN. We will strengthen our relations
-    message: '"ASEAN" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: ASEAN is the established name of the organisation, used as a name in speeches
   - rule: max-paragraph-length
     line: 67
     text: Japan now faces the most severe and comp

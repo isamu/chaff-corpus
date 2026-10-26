@@ -1,12 +1,6 @@
 id: da-mobility-wg-2
 chaff: 0.35.0
 findings:
-  - rule: concrete-evidence-density
-    line: 33
-    text: ""
-    message: 「議事概要」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: adversative-ga-repeat
     line: 44
     text: 自動運転の社会実装に向けては、様々な課題を同時に、かつ全体的に整合性を取りながら
@@ -17,58 +11,22 @@ findings:
     text: 自動運転の社会実装に向けては、様々な課題を同時に、かつ全体的に整合性を取りながら
     message: この文は 161 文字あります（140 文字まで）
     verdict: correct
-  - rule: max-ten
-    line: 44
-    text: 自動運転の社会実装に向けては、様々な課題を同時に、かつ全体的に整合性を取りながら
-    message: 一文に読点が 8 個あります（6 個まで）
-    verdict: false-positive
-    note: three of the commas separate an enumeration of quoted items (「…」、「…」、「…」), not clauses
   - rule: topic-predicate-distance
     line: 44
     text: 自動運転の社会実装に向けては、様々な課題を同時に、かつ全体的に整合性を取りながら
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 51
-    text: ""
-    message: 「需要の可視化・創出」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: undefined-acronym
     line: 57
     text: ICカード（Suicaなど）を用いた、）見える化ツールで客観的に実際のフローを把
     message: 「IC」が説明なしで使われています（説明のない略語 4 個）
     verdict: false-positive
     note: 「ICカード」 is an everyday word, not an acronym the reader needs expanded
-  - rule: concrete-evidence-density
-    line: 66
-    text: ""
-    message: 「ソーシャルインパクトに対する貢献の評価」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: empty-intensifier
     line: 70
     text: ビジネスモデルの確立というのは非常に重要。初期投資を抑え、複合的なベネフィットや
     message: 「非常に重要」は、中身を言わずに強調だけしています
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 74
-    text: ""
-    message: 「運行経費負担の柔軟化」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
-  - rule: concrete-evidence-density
-    line: 87
-    text: ""
-    message: 「初期費用・運行費用低減」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
-  - rule: concrete-evidence-density
-    line: 101
-    text: ""
-    message: 「学習機会の拡大」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: no-doubled-joshi
     line: 107
     text: の生成AIの活用の仕方について、業界での協調も必要になると思う。
@@ -100,12 +58,6 @@ findings:
     message: 「KPI」が説明なしで使われています（説明のない略語 4 個）
     verdict: false-positive
     note: KPI is a widely known business acronym
-  - rule: concrete-evidence-density
-    line: 162
-    text: ""
-    message: 「その他全般」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: teki-overuse
     line: 166
     text: 自動運転バスを導入しても、時間的、空間的移動手段の空白が出てしまうことについては
@@ -126,12 +78,6 @@ findings:
     text: 自動運転車の安全性を審査する範囲や具体の審査方法は事業形態毎に明確化する必要があ
     message: 「は」で出した主題から述語まで 156 字あります（80 字まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 186
-    text: ""
-    message: 「総括」の節に数値もコードもリンクもありません（そういう節が 8/15）
-    verdict: false-positive
-    note: a minutes section that records opinions has no reason to carry numbers, code or links
   - rule: heading-numbering-mix
     line: 186
     text: "### 総括"

@@ -89,9 +89,3 @@ findings:
     message: 「最大長周期地震動階級」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: 「最大長周期地震動階級」は気象庁の用語
-  - rule: max-kanji-continuous
-    line: 69
-    text: このことから、地震動予報許可事業者には、個々の予測を利用していただく方々との間で
-    message: 「地震動予報許可事業者」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「地震動予報許可事業者」は気象業務法の用語

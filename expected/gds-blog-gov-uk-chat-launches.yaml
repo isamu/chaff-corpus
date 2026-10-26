@@ -6,25 +6,25 @@ findings:
     text: ""
     message: Section length varies by only 30% (want at least 35%)
     verdict: false-positive
-    note: "a human-written news post with sections of similar length; not a defect an editor would raise"
+    note: a human-written news post with sections of similar length; not a defect an editor would raise
   - rule: hyphen-as-dash
     line: 5
     text: " - including their expectations of gover"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "spaced hyphen \" - \" used as a dash"
+    note: spaced hyphen " - " used as a dash
   - rule: max-sentence-length
     line: 5
     text: Recent figures published by Ofcom sugges
     message: This sentence runs 41 words (limit 40)
     verdict: correct
-    note: "41-word sentence"
+    note: 41-word sentence
   - rule: max-sentence-length
     line: 9
     text: Instead of navigating or searching 80,00
     message: This sentence runs 41 words (limit 40)
     verdict: correct
-    note: "41-word sentence"
+    note: 41-word sentence
   - rule: contraction-consistency
     line: 11
     text: This supports the vision set out in the
@@ -36,37 +36,37 @@ findings:
     text: " - we are creating a new generation of p"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "spaced hyphen \" - \" used as a dash"
+    note: spaced hyphen " - " used as a dash
   - rule: max-sentence-length
     line: 11
     text: This supports the vision set out in the
     message: This sentence runs 41 words (limit 40)
     verdict: correct
-    note: "41-word sentence"
+    note: 41-word sentence
   - rule: ai-generated-composite
     line: 15
     text: "## Why we’re launching GOV.UK Chat now"
     message: '"rule-of-three, section-length-uniformity, ai-structure" occur together in this document (3 signals, 3 needed)'
     verdict: false-positive
-    note: "a GDS staff post (2026-05-14); stock headings and lists of three are the blog's house form, not AI signals"
+    note: a GDS staff post (2026-05-14); stock headings and lists of three are the blog's house form, not AI signals
   - rule: ai-structure
     line: 15
     text: "## Why we’re launching GOV.UK Chat now"
     message: "3 structure measures lie past 90% of human articles (3 needed): section length variation, headings in a stock form, three-item lists"
     verdict: false-positive
-    note: "a GDS staff post; question headings and lists of three are the blog's house form"
+    note: a GDS staff post; question headings and lists of three are the blog's house form
   - rule: rule-of-three
     line: 21
     text: "- more than 7,800 people have used GOV.U"
     message: 3 of 4 lists have exactly three items (70% allowed)
     verdict: false-positive
-    note: "lists of three reported facts; the count is the content"
+    note: lists of three reported facts; the count is the content
   - rule: quote-style-consistency
     line: 25
     text: "'re seeing the same level of performance"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 12)
     verdict: correct
-    note: "straight apostrophe in \"we're\" where the post mostly uses curly ones"
+    note: straight apostrophe in "we're" where the post mostly uses curly ones
   - rule: contraction-consistency
     line: 51
     text: The insights we are gaining are shaping
@@ -78,16 +78,16 @@ findings:
     text: " - GOV.UK Chat lets people know they sho"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "spaced hyphen \" - \" used as a dash"
+    note: spaced hyphen " - " used as a dash
   - rule: quote-style-consistency
     line: 63
     text: "'s strength against potential risks. We"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 12)
     verdict: correct
-    note: "straight apostrophe in \"system's\" where the post mostly uses curly ones"
+    note: straight apostrophe in "system's" where the post mostly uses curly ones
   - rule: hyphen-as-dash
     line: 71
     text: " - and using what we learn to make publi"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "spaced hyphen \" - \" used as a dash"
+    note: spaced hyphen " - " used as a dash

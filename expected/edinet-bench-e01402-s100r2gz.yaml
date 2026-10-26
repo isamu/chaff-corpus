@@ -446,11 +446,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
-    text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
-    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 25
     text: 対応策として、当社グループはすべての役員、従業員等に対し、情報の取扱いに関する管
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
     verdict: unjudged
@@ -468,6 +463,11 @@ findings:
     line: 29
     text: )ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 29
+    text: "[　]書きしております。 (1) 開発グループ[日本]◎電流センサー　開発を続け"
+    message: 括弧「[」の類を、全角で 10 箇所、半角で 8 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 29
@@ -723,16 +723,6 @@ findings:
     line: 57
     text: " 342,200株が含まれております。２．「単元未満株式」における普通株式には、"
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 57
-    text: ①【発行済株式】    2023年３月31日現在区分株式数(株)議決権の数（個）
-    message: 「業績連動型株式報酬制度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 57
-    text: ２．「単元未満株式」における普通株式には、業績連動型株式報酬制度の信託財産として
-    message: 「業績連動型株式報酬制度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 57

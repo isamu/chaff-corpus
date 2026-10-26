@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 4
-    what: 報告者が〇〇のまま
-    verdict: missed
-    note: catalog J27
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
   - rule: ai-generated-composite
     line: 30
     what: 「検証環境での事前確認を行っていなかったことが…要因」、対象約180名、30分以内の通知目標（41行）が依頼にない

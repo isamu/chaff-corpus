@@ -22,22 +22,38 @@ findings:
     what: 「月約90時間」の負担を背景（5行）と課題の1項目めで二度言っている
     verdict: missed
     note: a fact restated in the next section
+  - rule: ai-generated-composite
+    line: 31
+    what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
+    verdict: missed
+    note: invented estimate stated as fact; needs judgement
   - rule: bold-density
     line: 31
     text: 作業時間の削減**：入力作業がなくなり、確認作業が中心となるため、月90時間の作
     message: このセクションは 213 字に太字が 5 箇所あります（1000 字あたり 20 箇所まで）
     verdict: correct
     note: five bold labels in one short section, the same list shape
-  - rule: ai-generated-composite
-    line: 31
-    what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
-    verdict: missed
-    note: invented estimate stated as fact; needs judgement
   - rule: unfilled-placeholder
     line: 39
-    what: 費用が「月額〇万円」「〇万円」「〇か月」（41行目も）のまま
-    verdict: missed
-    note: Japanese 〇 blanks, not found
+    text: 〇万円程度が必要です。
+    message: 「〇万円」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 39
+    text: 〇万円程度を想定しています。初期費用として、設定や会計システムとの連携に〇万円程
+    message: 「〇万円」が埋まっていません
+    verdict: correct
+    note: Japanese 〇 blanks, not found; found by chaffjs 0.38.0
+  - rule: unfilled-placeholder
+    line: 41
+    text: 〇か月程度で初期費用を回収できる見込みです。
+    message: 「〇か月」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 41
+    text: 〇万円程度となり、〇か月程度で初期費用を回収できる見込みです。
+    message: 「〇万円」が埋まっていません
+    verdict: unjudged
   - rule: empty-conclusion
     line: 60
     what: 「まとめ」が期待される効果の項目を一文に並べ直しただけ

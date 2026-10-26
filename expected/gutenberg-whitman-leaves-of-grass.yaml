@@ -17,11 +17,6 @@ findings:
     message: '"Stain" is one letter away from "Spain", which the document uses more than once'
     verdict: unjudged
   - rule: name-variant
-    line: 4798
-    text: Rhine, the Elbe, or the Weser! you worki
-    message: '"Rhine" is one letter away from "Thine", which the document uses more than once'
-    verdict: unjudged
-  - rule: name-variant
     line: 5747
     text: Arkansaw, the Rio Grande,
     message: '"Arkansaw" is one letter away from "Arkansas", which the document uses more than once'
@@ -40,11 +35,6 @@ findings:
     line: 7832
     text: "[1859-60"
     message: '"[" is never closed'
-    verdict: unjudged
-  - rule: name-variant
-    line: 9135
-    text: Congressmen? are those the great Judges?
-    message: '"Congressmen" is one letter away from "Congressman", which the document uses more than once'
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 11029

@@ -72,21 +72,3 @@ findings:
     text: ｣、「平年並」、「高い（多い）」の３つの階級について、それぞれの予想される確率を
     message: 半角の片仮名「｣」があります（全角は「」」）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 118
-    text: 地域平均気温平年差
-    message: 「地域平均気温平年差」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 用語集の見出し語（統計の専門用語）
-  - rule: max-kanji-continuous
-    line: 126
-    text: 地域平均降水量平年比
-    message: 「地域平均降水量平年比」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: 用語集の見出し語（統計の専門用語）
-  - rule: max-kanji-continuous
-    line: 134
-    text: 地域平均日照時間平年比
-    message: 「地域平均日照時間平年比」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: 用語集の見出し語（統計の専門用語）

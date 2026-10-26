@@ -9,22 +9,10 @@ findings:
     note: a 19-sentence paragraph of facts and procedural history
   - rule: undefined-acronym
     line: 15
-    text: CFA 01-01, 5-6 (Nat'l Indian Gaming Comm
-    message: '"CFA" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: part of an agency docket number in a citation (NOV/CFA 01-01), not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 15
     text: NIGC Final Order). The Commission locate
     message: '"NIGC" is used without an expansion (6 such acronyms)'
     verdict: false-positive
     note: the short citation form the opinion defines for the Commission's order, right after its full citation naming the Commission
-  - rule: undefined-acronym
-    line: 15
-    text: NOV/CFA 01-01, 5-6 (Nat'l Indian Gaming
-    message: '"NOV" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: part of an agency docket number in a citation (NOV/CFA 01-01), not an acronym the text should expand
   - rule: hyphen-as-dash
     line: 19
     text: " - approves (or disapproves) tribal-stat"
@@ -91,15 +79,3 @@ findings:
     message: This paragraph runs 16 sentences (limit 12)
     verdict: correct
     note: a 16-sentence paragraph
-  - rule: undefined-acronym
-    line: 27
-    text: AT&T, 512 U.S. 218, 231 n.4 (1994). The
-    message: '"AT&T" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: a party's name in a case citation, not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 27
-    text: MCI Telecomms. Corp. v. AT&T, 512 U.S. 2
-    message: '"MCI" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: a party's name in a case citation, not an acronym the text should expand

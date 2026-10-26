@@ -1,36 +1,11 @@
 id: itabashi-chogi-r7-13-keiei-senryaku-7
 chaff: 0.36.0
 findings:
-  - rule: max-kanji-continuous
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list names each official by title; a long official title is one fixed compound
-  - rule: max-sentence-length
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list (titles separated by commas) has no full stop and is a list, not a sentence
   - rule: orthographic-variant
     line: 44
     sha256: 23b691124bae19da8d3cc35a6c0e9321b2b695a20aaa190750e67a9b00e7fa47
     verdict: false-positive
     note: the kana spelling is part of a facility's name; the common noun is spelled the other way
-  - rule: date-without-year
-    line: 46
-    sha256: 9ad670901e78847f97e6be364a48f2a7ff1591a4dcc452718654ca5ac8fa8a88
-    verdict: false-positive
-    note: the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025
-  - rule: no-doubled-joshi
-    line: 46
-    sha256: 5478d3b6161a95602e60acb9f59d902d19e6233c1e4fe7a1124f32c0beca650a
-    verdict: false-positive
-    note: The chain counted the の before 方々 in 区民の方々の… isamu/lab#1643 reads 'X の方々' as one form of address when it goes on with の (国民の皆様の期待). That leaves two links, which is within the limit.
-  - rule: topic-predicate-distance
-    line: 46
-    sha256: c50f74453d738e5d592faf71a424f21e518d6f344e03c2f70350b9bf6ce4e457
-    verdict: false-positive
-    note: The topic gets its predicate within the first clause (…予定であるが). What was judged was the sentence's length, which max-sentence-length reports.
   - rule: clause-chain
     line: 49
     sha256: a30425646a3e034a0a6304f0255278474b6315658fbf7ef68dcd21e3179506be
@@ -59,11 +34,6 @@ findings:
     sha256: 144fe8be7335c65dbd1253af682fe67a9e5d37459275e50b8ca75505ca3eda8f
     verdict: correct
     note: two agenda items run together in one 54-character heading
-  - rule: no-mixed-desumasu
-    line: 153
-    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
-    verdict: false-positive
-    note: the page's contact block (department and section on one line) is an address, not a sentence
   - rule: no-mixed-desumasu
     line: 156
     sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302

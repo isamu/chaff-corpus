@@ -2,16 +2,6 @@ id: itabashi-chogi-r7-19-renraku-chosei-19
 chaff: 0.36.0
 findings:
   - rule: max-kanji-continuous
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list names each official by title; a long official title is one fixed compound
-  - rule: max-sentence-length
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list (titles separated by commas) has no full stop and is a list, not a sentence
-  - rule: max-kanji-continuous
     line: 29
     sha256: e4def3d2eb6cad4ed6350fcc9768467cae9cc6a8b4f851160c929b150a288346
     verdict: unjudged
@@ -30,16 +20,6 @@ findings:
     sha256: 129fe4b3557ab2db688c26990df948997bb0839f9a654405a8ad2bab7abcea0d
     verdict: false-positive
     note: this abbreviation is everyday Japanese
-  - rule: date-weekday-mismatch
-    line: 52
-    sha256: 331b5c2870665141df28d8b273de8438614adf204490695fa1448b3fc6890af0
-    verdict: false-positive
-    note: the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025
-  - rule: date-without-year
-    line: 52
-    sha256: 331b5c2870665141df28d8b273de8438614adf204490695fa1448b3fc6890af0
-    verdict: false-positive
-    note: the year is taken from the page's last-updated date (2026); the meeting and the date it mentions are in 2025
   - rule: undefined-acronym
     line: 69
     sha256: e24dc422a86514282232db7ce491fc98433731258a731e2a5e0755e50a401fbd
@@ -51,7 +31,6 @@ findings:
     verdict: correct
     note: a facility brand's abbreviation that is not spelled out
   - rule: no-mixed-desumasu
-    line: 126
-    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
-    verdict: false-positive
-    note: the page's contact block (department and section on one line) is an address, not a sentence
+    line: 129
+    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
+    verdict: unjudged

@@ -1,6 +1,11 @@
 id: 18f-handbook-projects-in-distress
 chaff: 0.33.0
 findings:
+  - rule: bold-emphasis
+    line: 27
+    text: The **project health tracker** provides
+    message: "22 bold spans of emphasis: 9.2 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: undefined-acronym
     line: 45
     text: TTS consultants.
@@ -15,6 +20,11 @@ findings:
     line: 127
     text: As soon as you realize, go back as far a
     message: This paragraph runs 8 sentences (limit 5)
+    verdict: unjudged
+  - rule: bold-label-list
+    line: 159
+    text: "- **No product owner:** agency won’t pro"
+    message: '"No product owner" and other bold labels open 7 list items (5 needed)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 161

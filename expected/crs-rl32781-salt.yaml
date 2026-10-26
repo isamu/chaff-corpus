@@ -1,11 +1,6 @@
 id: crs-rl32781-salt
 chaff: 0.33.0
 findings:
-  - rule: use-before-definition
-    line: 7
-    text: SALT deduction) shifts the burden for pa
-    message: '"SALT deduction" is used here, before it is defined on line 19'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 11
     text: P.L. 119-21, the FY2025 reconciliation t

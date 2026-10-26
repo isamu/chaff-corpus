@@ -86,11 +86,6 @@ findings:
     text: " - Identifies problems; determines accur"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 258
-    text: Albany, NY
-    message: This sentence runs 81 words (limit 45)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 301
     text: HRA/OSP) at The Fair Chance Act.

@@ -1,25 +1,3 @@
 id: aozora-kishida-chiroru-no-aki
 chaff: 0.36.0
-findings:
-  - rule: clause-chain
-    line: 377
-    text: また握れるかどうか、わからない、さう思ひながら握る手に、旅らしい自由な力が籠るん
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 486
-    text: 道ばたで、あなたの靴を磨いた男です。
-    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: "deliberate parallel lines (anaphora) in a play's dialogue"
-  - rule: max-ten
-    line: 498
-    text: 今夜だけ……
-    message: 一文に読点が 10 個あります（6 個まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 595
-    text: 僕には、ほんたうのあなたが、今、わかつたやうな気がするんです。
-    message: 「〜です」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: "deliberate parallel lines (anaphora) in a play's dialogue"
+findings: []

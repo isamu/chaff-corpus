@@ -8,9 +8,10 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 19
-    what: the sentence "Market commentary pointed to geopolitical developments, ..." runs 47 words
-    verdict: missed
-    note: found by lab main, which no longer ends it at the U.S.
+    text: Market commentary pointed to geopolitica
+    message: This sentence runs 47 words (limit 45)
+    verdict: correct
+    note: found by lab main, which no longer ends it at the U.S.; found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 27
     text: When reviewing money markets, the manage
@@ -26,12 +27,6 @@ findings:
     text: Both total and core inflation were highe
     message: This sentence runs 49 words (limit 45)
     verdict: correct
-  - rule: undefined-acronym
-    line: 51
-    text: S&P 500 index decreased a touch and ende
-    message: '"S&P" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: S&P 500 is the name of an index, not an acronym to expand
   - rule: max-paragraph-length
     line: 57
     text: Financing conditions in domestic credit

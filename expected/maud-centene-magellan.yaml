@@ -408,11 +408,6 @@ findings:
     text: deliver the Merger Consideration to the
     message: '"deliver" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 65
-    text: Parent shall cause the Paying Agent to m
-    message: Brackets nested 3 deep (limit 2)
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 65
     text: (c)          Exchange Procedures.   (i)
@@ -607,11 +602,6 @@ findings:
     text: Affiliate (except for any Company Entity
     message: '"Affiliate" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 161
-    text: No Company Entity is a party to, or has
-    message: Brackets nested 3 deep (limit 2)
-    verdict: unjudged
   - rule: numbering-gap
     line: 161
     text: (g)          No Company Entity has any l
@@ -795,11 +785,6 @@ findings:
     line: 267
     text: as applicable, through contractual oblig
     message: '"as applicable" does not say how much is enough to meet the requirement'
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 267
-    text: but not limited to, the GNU General Publ
-    message: '"but not limited to" in a requirement does not say what else it covers'
     verdict: unjudged
   - rule: undefined-acronym
     line: 267

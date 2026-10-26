@@ -1,13 +1,3 @@
 id: aozora-akutagawa-hana
 chaff: 0.36.0
-findings:
-  - rule: max-ten
-    line: 34
-    text: それのみならず、かつて、内供の鼻を粥の中へ落した事のある中童子なぞは、講堂の外で
-    message: 一文に読点が 7 個あります（6 個まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 39
-    text: ある日、けたたましく犬の吠える声がするので、内供が何気なく外へ出て見ると、中童子
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
+findings: []

@@ -7,18 +7,6 @@ findings:
     message: 見出し「演説全文」の深さが 1 から 4 へ飛んでいます（2 のはず）
     verdict: correct
   - rule: max-kanji-continuous
-    line: 9
-    text: この度、第百二代内閣総理大臣に就任いたしました。
-    message: 「第百二代内閣総理大臣」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: max-kanji-continuous
-    line: 10
-    text: 「すべての人に安心と安全を」
-    message: 「日本国内閣総理大臣」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: max-kanji-continuous
     line: 13
     text: 政治資金問題に際し、岸田総理は、自由民主党内の派閥解消や政治資金規正法改正などに
     message: 「政治資金規正法改正」は漢字が 9 字続いています（8 字まで）
@@ -62,33 +50,9 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 41
-    text: このような中、国家安全保障戦略等に基づき、我が国自身の防衛力を抜本的に強化すべき
-    message: 「国家安全保障戦略等」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: max-kanji-continuous
-    line: 41
     text: これは、国連安保理決議違反であり、我が国のみならず、地域、国際社会の平和と安全を
     message: 「国連安保理決議違反」は漢字が 9 字続いています（8 字まで）
     verdict: correct
-  - rule: empty-intensifier
-    line: 42
-    text: いかに装備品を整備しようとも、防衛力を発揮するためには、人的基盤を強化することが
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
-  - rule: unqualified-superlative
-    line: 42
-    text: 防衛力の最大の基盤は、自衛官です。いかに装備品を整備しようとも、防衛力を発揮する
-    message: 「最大」に比べる相手がありません（そういう言い方が 2 箇所）
-    verdict: false-positive
-    note: the comparison set is named in the same phrase (Ｇ７の中で／〜の最大の課題／〜の最大の基盤)
-  - rule: empty-intensifier
-    line: 43
-    text: 在日米軍の円滑な駐留のためには、地元を含む国民の御理解と御協力を得ることが不可欠
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
   - rule: orthographic-variant
     line: 47
     text: さらに、少子化の原因を分析し、子育て世帯に寄り添った適切な対策を実施します。
@@ -105,12 +69,6 @@ findings:
     text: イノベーションを促進すること等による高付加価値創出や生産性の向上、意欲ある高齢者
     message: この文は 101 文字あります（100 文字まで）
     verdict: correct
-  - rule: unqualified-superlative
-    line: 53
-    text: イノベーションを促進すること等による高付加価値創出や生産性の向上、意欲ある高齢者
-    message: 「最大」に比べる相手がありません（そういう言い方が 2 箇所）
-    verdict: false-positive
-    note: 「最大化する」 is a verb (maximise), not a superlative claim
   - rule: max-kanji-continuous
     line: 54
     text: このため、コストカット型経済から高付加価値創出型経済へ移行しながら、持続可能なエ
@@ -121,12 +79,6 @@ findings:
     text: そのために、政府として、自由に働き方を選択しても不公平にならない職場づくりを目指
     message: この文は 106 文字あります（100 文字まで）
     verdict: correct
-  - rule: orthographic-variant
-    line: 65
-    text: モノとサービスを、グローバル市場において、適正な価格で売ることのできる経済を実現
-    message: 「モノ」と書いています（この文書はふつう「もの」と書く語です。8 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「モノ」 (goods, as in モノとサービス) is a different word from the formal noun もの
   - rule: clause-chain
     line: 70
     text: ＡＩ時代の電力需要の激増も踏まえつつ、脱炭素化を進めながらエネルギー自給率を抜本
@@ -163,12 +115,6 @@ findings:
     message: この文は 134 文字あります（100 文字まで）
     verdict: correct
   - rule: max-kanji-continuous
-    line: 101
-    text: 十年前に私は初代地方創生担当大臣を拝命し、文化庁の京都移転、それまでの補助金とは
-    message: 「初代地方創生担当大臣」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: max-kanji-continuous
     line: 105
     text: 少子高齢化や人口減少に対応するため、デジタル田園都市国家構想実現会議を発展させ、
     message: 「田園都市国家構想実現会議」は漢字が 12 字続いています（8 字まで）
@@ -189,12 +135,6 @@ findings:
     text: 始めとする農山漁村の振興を図ります。国内の生産基盤の維持の観点も踏まえ、農林水産
     message: 「始め」と書いています（この文書はふつう「はじめ」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: empty-intensifier
-    line: 121
-    text: 強靱で持続性ある「稼げる日本」の再構築のためには、教育やリ・スキリングなどの人的
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
   - rule: teki-overuse
     line: 135
     text: 憲法改正について、私が総理に在任している間に発議を実現していただくべく、今後、憲

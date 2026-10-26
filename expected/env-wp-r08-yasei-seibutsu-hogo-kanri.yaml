@@ -1,12 +1,6 @@
 id: env-wp-r08-yasei-seibutsu-hogo-kanri
 chaff: 0.36.0
 findings:
-  - rule: max-kanji-continuous
-    line: 13
-    text: 2017年5月に成立した絶滅のおそれのある野生動植物の種の保存に関する法律の一部
-    message: 「特定第二種国内希少野生動植物種制度」は漢字が 17 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名称（特定第二種国内希少野生動植物種制度）
   - rule: no-doubled-joshi
     line: 13
     text: のおそれのある野生動植物の種の保存に関する法律の一部を改正する法律（平成29年法
@@ -140,12 +134,6 @@ findings:
     verdict: correct
     note: 「渡り鳥の飛来状況の調査」と「の」が三つ続く
   - rule: max-kanji-continuous
-    line: 75
-    text: また、豚熱の感染拡大防止を図るため、野生イノシシの捕獲強化に向けた取組を指定管理
-    message: 「指定管理鳥獣対策事業交付金」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: 交付金の名称
-  - rule: max-kanji-continuous
     line: 77
     text: このリスク評価の結果、対策の優先度が高かった感染症等を対象に、鳥獣における感染症
     message: 「鳥獣病原体保有状況調査」は漢字が 11 字続いています（10 字まで）
@@ -157,12 +145,6 @@ findings:
     message: 「評価を行う」は「評価する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「〜を実施する／行う」は動詞一語で足りる
-  - rule: max-kanji-continuous
-    line: 81
-    text: 同パッケージに基づき、例えば、都道府県等による個体数管理を支援するため、指定管理
-    message: 「指定管理鳥獣対策事業交付金」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: 交付金の名称
   - rule: max-paragraph-length
     line: 81
     text: クマは、秋の堅果類の結実量の影響等もあり、数年おきに人里への大量出没を繰り返し、
@@ -205,12 +187,6 @@ findings:
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
     verdict: correct
     note: 「推定個体数は」から述語まで 87 字
-  - rule: max-kanji-continuous
-    line: 85
-    text: 鳥獣保護管理法においては、都道府県が捕獲等を行う指定管理鳥獣対策事業や捕獲の担い
-    message: 「認定鳥獣捕獲等事業者制度」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名称
   - rule: nominalization
     line: 87
     text: 支援を行っています。2025年度においては、51都道府県・協議会で当該事業が実施
@@ -223,12 +199,6 @@ findings:
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: correct
     note: 「指定管理鳥獣対策事業は」から述語まで 88 字
-  - rule: max-kanji-continuous
-    line: 89
-    text: 認定鳥獣捕獲等事業者制度は、鳥獣保護管理法に基づき、鳥獣の捕獲等に係る安全管理体
-    message: 「認定鳥獣捕獲等事業者制度」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名称
   - rule: max-sentence-length
     line: 89
     text: 認定鳥獣捕獲等事業者制度は、鳥獣保護管理法に基づき、鳥獣の捕獲等に係る安全管理体

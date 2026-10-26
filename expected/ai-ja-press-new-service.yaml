@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 社名・所在地・代表者・サービス名が〇〇のまま
-    verdict: missed
-    note: catalog J27
+    text: 〇〇株式会社（本社：東京都〇〇区、代表取締役：〇〇 〇〇、以下「当社」）は、従業
+    message: 「〇〇株式会社」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
   - rule: yori-as-from
     line: 3
     text: より開始いたします。
@@ -22,3 +23,18 @@ findings:
     what: 機能（給与ソフト連携、法改正への自動対応）、3か月無料キャンペーン（31行）、3,000社の目標（35行）が依頼にない
     verdict: missed
     note: "catalog B01 (invented detail): product claims in a press release that the company never made"
+  - rule: unfilled-placeholder
+    line: 39
+    text: 〇〇株式会社
+    message: 「〇〇株式会社」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 42
+    text: 〇月
+    message: 「〇月」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 48
+    text: 〇〇株式会社 広報担当：〇〇
+    message: 「〇〇株式会社」が埋まっていません
+    verdict: unjudged

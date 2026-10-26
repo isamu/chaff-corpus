@@ -11,12 +11,6 @@ findings:
     text: "  The Special Prosecutor was able to fix"
     message: 2 spaces after this sentence, where the document usually leaves 1 (7 of 141)
     verdict: unjudged
-  - rule: unknown-word
-    line: 11
-    text: facie "demonstration of need sufficientl
-    message: '"facie" is not in the dictionary; did you mean "facia"?'
-    verdict: false-positive
-    note: part of the Latin phrase prima facie
   - rule: hyphen-as-dash
     line: 17
     text: " - JURISDICTION"
@@ -27,24 +21,6 @@ findings:
     text: " - JUSTICIABILITY"
     message: '"-" stands in for a dash'
     verdict: correct
-  - rule: undefined-acronym
-    line: 39
-    text: FMB v. Isbrandtsen Co., 356 U.S. 481, 48
-    message: '"FMB" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 39
-    text: FPC, 345 U.S. 153 (1953); Secretary of A
-    message: '"FPC" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 39
-    text: ICC, 337 U.S. 426 (1949), the Court obse
-    message: '"ICC" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
   - rule: sentence-spacing-consistency
     line: 41
     text: "  The regulation gives the [p695] Specia"
@@ -55,46 +31,16 @@ findings:
     text: "  So long as this regulation remains in"
     message: 2 spaces after this sentence, where the document usually leaves 1 (7 of 141)
     verdict: unjudged
-  - rule: which-that-consistency
-    line: 49
-    text: which sharpens the presentation of issue
-    message: This restrictive clause opens with "which"; the document mostly uses "that"
-    verdict: false-positive
-    note: a block quotation from an earlier opinion; the wording cannot be changed
   - rule: hyphen-as-dash
     line: 55
     text: " - RULE 17(c)"
     message: '"-" stands in for a dash'
     verdict: correct
-  - rule: undefined-acronym
-    line: 57
-    text: TVA, 297 U.S. 288, 346-347 (1936) (Brand
-    message: '"TVA" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 63
-    text: SDNY 1952), as to the required showing.
-    message: '"SDNY" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
   - rule: sentence-spacing-consistency
     line: 67
     text: "  Declarations by one defendant may also"
     message: 2 spaces after this sentence, where the document usually leaves 1 (7 of 141)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 67
-    text: DC 1954). Here, however, there are other
-    message: '"DC" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
-  - rule: undefined-acronym
-    line: 71
-    text: CC Va. 1807). From our examination of th
-    message: '"CC" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
   - rule: hyphen-as-dash
     line: 73
     text: " - THE CLAIM OF PRIVILEGE A"
@@ -110,18 +56,6 @@ findings:
     text: "  The interest in preserving confidentia"
     message: 2 spaces after this sentence, where the document usually leaves 1 (7 of 141)
     verdict: unjudged
-  - rule: which-that-consistency
-    line: 143
-    text: which is to precede their being issued.
-    message: This restrictive clause opens with "which"; the document mostly uses "that"
-    verdict: false-positive
-    note: a block quotation from an earlier opinion; the wording cannot be changed
-  - rule: undefined-acronym
-    line: 155
-    text: MR. JUSTICE REHNQUIST took no part in th
-    message: '"MR" is used without an expansion (8 such acronyms)'
-    verdict: false-positive
-    note: an abbreviation inside a case citation or court designation (case names, reporters, courts), not an acronym the text should expand
   - rule: quote-style-consistency
     line: 163
     text: ‘Executive Privilege' . . . and handl[e]

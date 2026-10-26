@@ -2,16 +2,6 @@ id: itabashi-chogi-r7-16-renraku-chosei-16
 chaff: 0.36.0
 findings:
   - rule: max-kanji-continuous
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list names each official by title; a long official title is one fixed compound
-  - rule: max-sentence-length
-    line: 23
-    sha256: c57ba2b1a81db2d051f982fcae75a435842711df2314982a7ef94a810aabc032
-    verdict: false-positive
-    note: the attendee list (titles separated by commas) has no full stop and is a list, not a sentence
-  - rule: max-kanji-continuous
     line: 29
     sha256: cb021a7574d39946d1e56d04ee7c50564c5508e617895a93fd1db3721a469c75
     verdict: unjudged
@@ -76,7 +66,6 @@ findings:
     sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
     verdict: unjudged
   - rule: no-mixed-desumasu
-    line: 203
-    sha256: 6e709dfc87a325b27071db6d5ea400c1a7e429b7fcfb170282b83e8e3fd1aaff
-    verdict: false-positive
-    note: the page's contact block (department and section on one line) is an address, not a sentence
+    line: 206
+    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
+    verdict: unjudged

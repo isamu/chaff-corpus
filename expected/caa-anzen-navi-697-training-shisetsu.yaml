@@ -1,12 +1,6 @@
 id: caa-anzen-navi-697-training-shisetsu
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 健康・体力の維持等を目的に、トレーニング施設を利用し、日常的に運動する方もいるか
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an issue of a mail magazine opens on its topic; a greeting is not expected
   - rule: max-sentence-length
     line: 3
     text: しかし誤った機器・器具の使い方や、自分のペースに合わないトレーニングを行う等によ
@@ -49,9 +43,3 @@ findings:
     message: この文は 82 文字あります（70 文字まで）
     verdict: correct
     note: an 82-character footnote definition over the email limit
-  - rule: email-greeting-closing
-    line: 40
-    text: 担当:消費者安全課
-    message: 終わりに結びの言葉がありません
-    verdict: false-positive
-    note: an issue of a mail magazine ends with the office in charge; a closing phrase is not expected

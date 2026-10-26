@@ -1,27 +1,3 @@
 id: gutenberg-emerson-nature
 chaff: 0.36.0
-findings:
-  - rule: demonstrative-opener-run
-    line: 595
-    text: This imagery is
-    message: 4 sentences in a row open with a word that points back, such as "This" (limit 2)
-    verdict: false-positive
-    note: deliberate anaphora in a literary essay (Emerson's 'It is ... It is ...'), a style the genre allows
-  - rule: demonstrative-opener-run
-    line: 788
-    text: It is made to
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: deliberate anaphora in a literary essay, a style the genre allows
-  - rule: demonstrative-opener-run
-    line: 1215
-    text: It respects the end too
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: deliberate anaphora in a literary essay, a style the genre allows
-  - rule: demonstrative-opener-run
-    line: 1241
-    text: It always speaks of Spirit. It suggests
-    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: deliberate anaphora in a literary essay, a style the genre allows
+findings: []

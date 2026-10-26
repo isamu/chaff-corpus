@@ -1,6 +1,11 @@
 id: ai-en-report-payment-incident
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 3
+    text: Report date:** November 5, 2026
+    message: "3 bold spans of emphasis: 12 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 32
     what: '"a period of high load at the provider between 14:00 and 15:00" and "211 contacted customer support" (line 13) are not in the request'

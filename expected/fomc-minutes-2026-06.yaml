@@ -1,23 +1,11 @@
 id: fomc-minutes-2026-06
 chaff: 0.36.0
 findings:
-  - rule: undefined-acronym
-    line: 5
-    text: FOMC Minutes
-    message: '"FOMC" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the page's heading "Federal Open Market Committee" spells out FOMC two lines above; a site label
   - rule: max-sentence-length
     line: 14
     text: Optimism around a near-term resolution o
     message: This sentence runs 47 words (limit 45)
     verdict: correct
-  - rule: undefined-acronym
-    line: 22
-    text: S&P 500 index increased by nearly 6 perc
-    message: '"S&P" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: S&P 500 is the name of an index, not an acronym to expand
   - rule: max-sentence-length
     line: 26
     text: With regard to international development
@@ -43,18 +31,6 @@ findings:
     text: Both total and core inflation were highe
     message: This sentence runs 54 words (limit 45)
     verdict: correct
-  - rule: undefined-acronym
-    line: 50
-    text: VIX—a forward-looking measure of near-te
-    message: '"VIX" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the VIX is explained by the apposition that follows the dash
-  - rule: max-paragraph-length
-    line: 52
-    text: Foreign financial market movements were
-    message: This paragraph runs 6 sentences (limit 5)
-    verdict: false-positive
-    note: the paragraph runs 5 sentences, within the limit; chaffjs 0.36.0 counts 6 because it ends a sentence after "in the U.K." before the lowercase "over", which isamu/lab#1892 reads as one sentence
   - rule: max-sentence-length
     line: 62
     text: The staff's inflation forecast for this

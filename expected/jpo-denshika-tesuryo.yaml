@@ -33,42 +33,18 @@ findings:
     message: 「登録情報処理機関」を、87 行目の定義より前で使っています
     verdict: false-positive
     note: the term's definition is in the statute excerpt appended at the end; the page explains it in its own section first
-  - rule: use-before-definition
-    line: 21
-    text: 指定特定手続となっていない手続（例えば、特許料等の納付書、手数料等の返還請求書）
-    message: 「指定特定手続」を、83 行目の定義より前で使っています
-    verdict: false-positive
-    note: the term's definition is in the statute excerpt appended at the end; the page uses it as a legal term
   - rule: max-kanji-continuous
     line: 23
     text: 電子化手数料の納付を必要とする手続については、電子化手数料対象書類一覧（PDF：
     message: 「電子化手数料対象書類一覧」は漢字が 12 字続いています（8 字まで）
     verdict: false-positive
     note: the title of a published list (a PDF), quoted as its name
-  - rule: max-kanji-continuous
-    line: 29
-    text: この登録情報処理機関は、現在のところ「一般財団法人工業所有権電子情報化センター」
-    message: 「一般財団法人工業所有権電子情報化」は漢字が 16 字続いています（8 字まで）
-    verdict: false-positive
-    note: the legal name of an organisation
-  - rule: max-kanji-continuous
-    line: 33
-    text: 一般財団法人工業所有権電子情報化センター（外部サイトへリンク）
-    message: 「一般財団法人工業所有権電子情報化」は漢字が 16 字続いています（8 字まで）
-    verdict: false-positive
-    note: the legal name of an organisation
   - rule: stray-space
     line: 47
     text: 　となります。
     message: 「円」と「と」は一続きの語句ですが、あいだに空白があります（461 箇所のうち 1 箇所が空いている）
     verdict: correct
     note: an ideographic space between the result of a calculation and 「となります」
-  - rule: max-kanji-continuous
-    line: 64
-    text: 手続書面を特許庁に提出した後、約2週間程度で手続者のもとへ登録情報処理機関（一般
-    message: 「一般財団法人工業所有権電子情報化」は漢字が 16 字続いています（8 字まで）
-    verdict: false-positive
-    note: the legal name of an organisation
   - rule: max-kanji-continuous
     line: 66
     text: 電子化手数料の納付期限は、手続書面の提出から30日以内となりますので、電子化手数

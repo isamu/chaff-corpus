@@ -1,6 +1,11 @@
 id: nodejs-governance
 chaff: 0.35.0
 findings:
+  - rule: agreement-slip
+    line: 132
+    text: the
+    message: '"the each" puts two determiners in a row'
+    verdict: unjudged
   - rule: title-case-consistency
     line: 178
     text: ""

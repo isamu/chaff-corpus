@@ -6,7 +6,7 @@ findings:
     text: There are so many
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
-    note: "\"There are so many razor sharp edge cases\" reads better as \"So many ... edge cases\"; five such openers in the post"
+    note: '"There are so many razor sharp edge cases" reads better as "So many ... edge cases"; five such openers in the post'
   - rule: unqualified-superlative
     line: 34
     text: Before diving into the best way to mix a
@@ -18,13 +18,13 @@ findings:
     text: As a large number of developers all work
     message: '"a large number of" can be said in fewer words'
     verdict: correct
-    note: "\"a large number of\""
+    note: '"a large number of"'
   - rule: expletive-construction
     line: 99
     text: There is one significant issue services
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
-    note: "\"There is one significant issue services bring\" (services bring one significant issue)"
+    note: '"There is one significant issue services bring" (services bring one significant issue)'
   - rule: contraction-consistency
     line: 103
     text: Each small system may be perfect at what
@@ -36,7 +36,7 @@ findings:
     text: There is a path through these architectu
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
-    note: "\"There is a path through these architectural choices\"; five such openers in the post"
+    note: '"There is a path through these architectural choices"; five such openers in the post'
   - rule: contraction-consistency
     line: 137
     text: Prioritizing to keep the highest value a
@@ -48,31 +48,31 @@ findings:
     text: There is **more than one user type**, an
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
-    note: "\"There is more than one user type\" (the application has more than one user type)"
+    note: '"There is more than one user type" (the application has more than one user type)'
   - rule: wordy-phrase
     line: 152
     text: In order to get into that section, you h
     message: '"in order to" can be said in fewer words'
     verdict: correct
-    note: "\"In order to\""
+    note: '"In order to"'
   - rule: expletive-construction
     line: 156
     text: There are small functions that can be ex
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
-    note: "\"There are small functions that can be extracted\""
+    note: '"There are small functions that can be extracted"'
   - rule: comparative-without-baseline
     line: 159
     text: faster. More teams can be brought on to
     message: '"faster" does not say what it is compared with'
     verdict: false-positive
-    note: "\"move faster\" than the undivided application the sentence starts from (\"As the application starts dividing\")"
+    note: '"move faster" than the undivided application the sentence starts from ("As the application starts dividing")'
   - rule: max-paragraph-length
     line: 173
     text: In the world of software development, we
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-    note: "six sentences in one paragraph"
+    note: six sentences in one paragraph
   - rule: unqualified-superlative
     line: 186
     text: The best way to build big is to start
@@ -84,4 +84,4 @@ findings:
     text: The best way to scale is to focus on use
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: correct
-    note: "\"The best way to scale is to focus on user needs\" is a bare superlative claim"
+    note: '"The best way to scale is to focus on user needs" is a bare superlative claim'

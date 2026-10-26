@@ -1,12 +1,6 @@
 id: saikosai-s31-07-04-shazai-kokoku
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 11
-    text: 何等憲法二一条に反するものでなく、所論は理由がない。
-    message: 「何等」と書いています（この文書はふつう「何ら」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
   - rule: colloquial-opener
     line: 15
     text: だから、たとえ、それが一面において、公法たる選挙法の規律を受ける性質のものである
@@ -27,35 +21,11 @@ findings:
     text: されば少くともこの種の謝罪広告を新聞紙に掲載すべきことを命ずる原判決は、上告人に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 28
-    text: またはその趣旨に違反するものというにある。ところで多数意見は、憲法一九条にいわゆ
-    message: 「または」と書いています（この文書はふつう「又は」と書く語です。17 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
-  - rule: orthographic-variant
-    line: 30
-    text: または代替行為として処置できるものであるかというようなことは、本件の判決の内容が
-    message: 「または」と書いています（この文書はふつう「又は」と書く語です。17 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
-  - rule: orthographic-variant
-    line: 32
-    text: および学問の自由は大体において重複し合つている。
-    message: 「および」と書いています（この文書はふつう「及び」と書く語です。9 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
   - rule: teki-overuse
     line: 36
     text: 憲法一九条が思想と良心とをならべて掲げているのは、一は保障の対照の客観的内容的方
     message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 38
-    text: さらに一般に法秩序を否定する者に対し法を強制すること自体がその者の良心の自由を侵
-    message: 「さらに一般」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: 「さらに一般に」 means 'more generally, moreover'; it is not a comparison
   - rule: bracket-nesting
     line: 55
     text: そしてこのフリーダム・オブ・コンシャンス（「信仰の自由」）という辞句はキリスト教
@@ -112,6 +82,11 @@ findings:
     message: 「は」で出した主題から述語まで 218 字あります（200 字まで）
     verdict: unjudged
   - rule: orthographic-variant
+    line: 68
+    text: ために必要已むを得ないと認めるに足る充分の根拠が存在する場合には、これに或程度の
+    message: 「ため」と書いています（この文書はふつう「為」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
+  - rule: orthographic-variant
     line: 70
     text: または個人の人格を無視したことにはならず違憲の問題は生じないと思われる。しかし、
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。17 箇所のうち 4 箇所が違う）
@@ -128,20 +103,9 @@ findings:
     verdict: correct
   - rule: topic-predicate-distance
     line: 70
-    text: （以上述べたところは、私見によれば、取消文の掲載又は国会、地方議会における懲罰の
-    message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 70
     text: しかし、本件のような判決は、若し強制執行が許されるものであるとすれば、それはまさ
     message: 「は」で出した主題から述語まで 219 字あります（200 字まで）
     verdict: unjudged
-  - rule: colloquial-opener
-    line: 72
-    text: だからである。）
-    message: 「だから」で始まる文が 2 個あります（1 個から）
-    verdict: false-positive
-    note: the line is the tail of the previous sentence (〜だからである。）) after a line break, not a sentence opening with だから
   - rule: orthographic-variant
     line: 78
     text: のべたごとく、本件判決は強制執行を許さないものであるから、違憲の問題を生ずる余地
@@ -174,18 +138,6 @@ findings:
     message: 「をを」で語が重なっています。どちらかが余分です
     verdict: correct
   - rule: orthographic-variant
-    line: 85
-    text: あたかも、婚姻予約成立の事実は認定せられても、当事者に対して、判決ををもつて、そ
-    message: 「あたかも」と書いています（この文書はふつう「恰も」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
-  - rule: orthographic-variant
-    line: 85
-    text: または表現せざる自由をも保障するものであつて、往昔わが国で行われた「踏絵」のごと
-    message: 「または」と書いています（この文書はふつう「又は」と書く語です。17 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
-  - rule: orthographic-variant
     line: 94
     text: 持つているかは知ることもできないし、調査すべき事柄でもない。本件謝罪広告を命ずる
     message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。23 箇所のうち 1 箇所が違う）
@@ -195,18 +147,6 @@ findings:
     text: しれない「迷信や余りに普遍的妥当性のない考は思想でも信仰でもなく憲法の保障のほか
     message: 「しれる」と書いています（この文書はふつう「知れる」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: defined-term-form
-    line: 100
-    text: 謝罪」の文言を冠し、末尾に「ここに陳謝の意を表します」との文言を用いた部分は本人
-    message: 「謝罪」は 98 行目で定義した語です。定義のあとは、かぎ括弧を付けずに使います
-    verdict: false-positive
-    note: 「謝罪」 quotes the wording of the apology advertisement; it is not a defined term
-  - rule: orthographic-variant
-    line: 104
-    text: すでにこれらの概念は法概念と化していることは私もよく肯定するものである。しかし、
-    message: 「すでに」と書いています（この文書はふつう「既に」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the judgment holds separate opinions by different justices; the variant is consistent within its own opinion and is compared with another justice's text
   - rule: tari-unpaired
     line: 104
     text: たり行為のかような道徳に由来する法律的意味を探究する場合にも、法はあくまで外部行
@@ -217,25 +157,8 @@ findings:
     text: 一説は本件判決は給付判決であつても夫婦同居を命ずる判決と同じく強制執行を許されな
     message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: unjudged
-  - rule: defined-term-form
-    line: 106
-    text: 謝罪」、「陳謝の意を表します」という文言を用いた部分があつてこの点は両当事者が重
-    message: 「謝罪」は 98 行目で定義した語です。定義のあとは、かぎ括弧を付けずに使います
-    verdict: false-positive
-    note: 「謝罪」 quotes the wording of the apology advertisement; it is not a defined term
-  - rule: defined-term-form
-    line: 106
-    text: 謝罪」、「陳謝の意を表します」の文言があるのに、上告人が信条上欲しない場合でもこ
-    message: 「謝罪」は 98 行目で定義した語です。定義のあとは、かぎ括弧を付けずに使います
-    verdict: false-positive
-    note: 「謝罪」 quotes the wording of the apology advertisement; it is not a defined term
   - rule: max-paragraph-length
     line: 106
     text: 四、本件広告の内容謝罪の意思なき者に謝罪広告を命ずる裁判が合憲であるとの理由は出
     message: この段落は 13 文あります（12 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 106
-    text: 一説は本件判決は給付判決であつても夫婦同居を命ずる判決と同じく強制執行を許されな
-    message: 「は」で出した主題から述語まで 234 字あります（200 字まで）
     verdict: unjudged

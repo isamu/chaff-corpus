@@ -13,6 +13,11 @@ findings:
     message: この文だけ他と文末の調子が違います（本文の中で 1 文）
     verdict: false-positive
     note: a plain-form sentence as narration inside a です・ます post (〜と言われる。); a human device, not a slip
+  - rule: sentence-rhythm
+    line: 3
+    text: 先月、家のWi-Fiが急に遅くなりました。動画は途中で止まるし、オンライン会議で
+    message: 文の長さのばらつきが 32%（36% 以上ほしい）
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 5
     what: 「体験談」が確認手順の一覧と同じ順に進み、どの手順もきれいな数字（200→10→60Mbps）と教訓で終わる
@@ -30,9 +35,3 @@ findings:
     message: 「と言われている」は、誰が言ったのかを言っていません
     verdict: correct
     note: 「と言われている」 with no source; an editor would ask who says so. A mild AI sign
-  - rule: orthographic-variant
-    line: 46
-    text: 方の参考になればうれしいです。
-    message: 「方」と書いています（この文書はふつう「ほう」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 方 (かた, a person) and comparative ほう are different words

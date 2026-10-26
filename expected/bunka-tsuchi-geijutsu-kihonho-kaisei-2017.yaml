@@ -1,45 +1,10 @@
 id: bunka-tsuchi-geijutsu-kihonho-kaisei-2017
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 29庁房第125号
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an official notice (公用文の通知) opens with its number, date and addressees; no greeting is expected
-  - rule: max-kanji-continuous
-    line: 16
-    text: 各国公私立高等専門学校長
-    message: 「各国公私立高等専門学校長」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official title in the addressee list (a fixed name, not prose)
-  - rule: max-kanji-continuous
-    line: 18
-    text: 各大学共同利用機関法人機構長
-    message: 「各大学共同利用機関法人機構長」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official title in the addressee list (a fixed name, not prose)
-  - rule: max-kanji-continuous
-    line: 24
-    text: 各文部科学省独立行政法人の長殿
-    message: 「各文部科学省独立行政法人」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official title in the addressee list (a fixed name, not prose)
-  - rule: max-kanji-continuous
-    line: 26
-    text: 公益財団法人日本博物館協会会長
-    message: 「公益財団法人日本博物館協会会長」は漢字が 15 字続いています（10 字まで）
-    verdict: false-positive
-    note: an organisation's name and title in the addressee list (a fixed name, not prose)
   - rule: max-sentence-length
     line: 43
     text: 第193回国会（常会）において成立した「文化芸術振興基本法の一部を改正する法律」
     message: この文は 78 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: preamble-length
-    line: 43
-    text: 第193回国会（常会）において成立した「文化芸術振興基本法の一部を改正する法律」
-    message: 最初の見出しまでに 4 段落あります（2 段落まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 45
@@ -96,12 +61,6 @@ findings:
     text: 国，独立行政法人，地方公共団体，文化芸術団体，民間事業者その他の関係者は，基本理
     message: この文は 80 文字あります（70 文字まで）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 83
-    text: 文化芸術推進基本計画（第7条関係）
-    message: 「文化芸術推進基本計画」を、85 行目の定義より前で使っています
-    verdict: false-positive
-    note: the term appears first in the section heading that introduces its definition on the next lines
   - rule: max-sentence-length
     line: 85
     text: 政府は，文化芸術に関する施策の総合的かつ計画的な推進を図るため，文化芸術に関する
@@ -127,18 +86,6 @@ findings:
     text: 文部科学大臣は，文化芸術推進基本計画の案を作成しようとするときは，あらかじめ，関
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 90
-    text: ．までの規定は，文化芸術推進基本計画の変更について準用すること。
-    message: 句点を「．」と書いています（この文書はふつう「。」。47 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: a full-width period after an item number in a cross-reference (…（1）4．), not a sentence end
-  - rule: use-before-definition
-    line: 92
-    text: 地方文化芸術推進基本計画（第7条の2関係）
-    message: 「地方文化芸術推進基本計画」を、94 行目の定義より前で使っています
-    verdict: false-positive
-    note: the term appears first in the section heading that introduces its definition on the next lines
   - rule: bracket-nesting
     line: 94
     text: 都道府県及び市町村の教育委員会（条例の定めるところによりその長が文化に関する事務
@@ -155,11 +102,10 @@ findings:
     message: この文は 83 文字あります（70 文字まで）
     verdict: unjudged
   - rule: ngram-repetition
-    line: 99
-    text: （1）芸術の振興に係る規定に関する改正（第8条関係）
-    message: 「に係る規定に関す」が 13 回出てきます（5 回まで）
-    verdict: false-positive
-    note: parallel headings in an enumeration of amended articles repeat the same frame by design
+    line: 101
+    text: 芸術の振興に関する必要な施策の例示として「芸術の制作等に係る物品の保存」及び「芸
+    message: 「に関する必要な施」が 10 回出てきます（5 回まで）
+    verdict: unjudged
   - rule: max-sentence-length
     line: 105
     text: メディア芸術の振興に関する必要な施策の例示としてメディア芸術の「展示」，「メディ
@@ -240,12 +186,6 @@ findings:
     text: 1　今回の改正により，地方文化芸術推進基本計画について法律上明記されたこと，文化
     message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: unjudged
-  - rule: email-greeting-closing
-    line: 177
-    text: "- 2　上記1に際し，各地方公共団体においては，第1の2（1）4．の改正の趣旨を"
-    message: 終わりに結びの言葉がありません
-    verdict: false-positive
-    note: an official notice ends with its numbered points after 記; no closing phrase is expected
   - rule: max-sentence-length
     line: 177
     text: 2　上記1に際し，各地方公共団体においては，第1の2（1）4．の改正の趣旨を踏ま

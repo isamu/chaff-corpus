@@ -1,12 +1,6 @@
 id: jpo-shomei-honnin-kakunin
 chaff: 0.36.0
 findings:
-  - rule: max-kanji-continuous
-    line: 8
-    text: 「押印を求める手続の見直し等のための経済産業省関係省令の一部を改正する省令」（令
-    message: 「特許登録令施行規則等」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a ministerial ordinance, quoted as its name
   - rule: max-sentence-length
     line: 8
     text: 「押印を求める手続の見直し等のための経済産業省関係省令の一部を改正する省令」（令
@@ -33,40 +27,16 @@ findings:
     text: 署名の真正性に係る認証（『署名者が公証人の面前で証書に署名をした旨』（目撃認証、
     message: この文は 158 文字あります（140 文字まで）
     verdict: correct
-  - rule: kutoten-consistency
-    line: 38
-    text: ．署名の本人確認措置となりますので、譲渡人等の意思確認を確認した上で、申請書等に
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A1．) is a label separator, not a sentence-ending period
   - rule: requirement-smell
     line: 38
     text: 等の意思確認を確認した上で、申請書等には、その確認が済んでいる旨を記載していただ
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 42
-    text: ．代理人（代理人によらない手続の場合は、手続者本人）による直接の確認又は現地代理
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A2．) is a label separator, not a sentence-ending period
   - rule: topic-predicate-distance
     line: 42
     text: A2．代理人（代理人によらない手続の場合は、手続者本人）による直接の確認又は現地
     message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
     verdict: correct
-  - rule: kutoten-consistency
-    line: 46
-    text: ．「譲渡人等の意思確認をした旨」の記載をもって本人確認措置の確認をいたしますので
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A3．) is a label separator, not a sentence-ending period
-  - rule: kutoten-consistency
-    line: 50
-    text: ． 「譲渡人等の意思確認をした旨」の記載については、弁理士法人の代表者名又は意思
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A4．) is a label separator, not a sentence-ending period
   - rule: max-kanji-continuous
     line: 50
     text: （記載例：承継人代理人弁理士法人□□□□弁理士○○　○○が（現地代理人×××を通
@@ -78,24 +48,6 @@ findings:
     message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「出来ない」 once against 「できる」 elsewhere
-  - rule: kutoten-consistency
-    line: 54
-    text: ．【その他】の欄に記載する「現地代理人の氏名又は名称」及び「譲渡人（及び譲渡人代
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A5．) is a label separator, not a sentence-ending period
-  - rule: kutoten-consistency
-    line: 58
-    text: ．署名の真正性に関する認証が付された譲渡証書になります。
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A6．) is a label separator, not a sentence-ending period
-  - rule: kutoten-consistency
-    line: 66
-    text: ．（1）外国語の署名の真正性に係る認証（面前認証、自認認証等）付譲渡証書等又は（
-    message: 句点を「．」と書いています（この文書はふつう「。」。29 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: 「．」 after a Q&A number (A7．) is a label separator, not a sentence-ending period
   - rule: max-kanji-continuous
     line: 80
     text: 方式審査室第三担当
@@ -108,6 +60,11 @@ findings:
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。6 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「内線 2715」 with a space against 「内線2104」 / 「内線：2616」
+  - rule: bracket-width-consistency
+    line: 128
+    text: "]"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。2 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: date-format-consistency
     line: 128
     text: 2025年4月1日]

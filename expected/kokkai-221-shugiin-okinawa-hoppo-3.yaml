@@ -9,10 +9,6 @@ findings:
     line: 71
     sha256: 607221d969e2b5372e494703668477f2486699b3138870166f25a87c588c0b43
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 77
-    sha256: 58aeea851df22a62a8f93e61c8a1eb8e94fcd7fe85c9892f5971263070cdceae
-    verdict: unjudged
   - rule: tari-unpaired
     line: 85
     sha256: d01d64297351397ecb8824684dd00b105dd3c0ce518b4d3a0ecaaf39ca21f1c2
@@ -29,17 +25,9 @@ findings:
     line: 125
     sha256: f8a7e792dd55fc21ca207504e58976a602f20406eecb39996fe527b0c99e3ce8
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 139
-    sha256: 44091076dad023186a5516726c42bd9900d662db09b5c0e9541076d6dedcbc67
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 145
     sha256: 936c6423dec9bcc082d47e876ad7d0d10922c73889ce78d651f6690b4a779971
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 149
-    sha256: e076accc7780fd8f990950b1c37eafe2f3a996b0f52d2f57ca1533ef20b1aca2
     verdict: unjudged
   - rule: clause-chain
     line: 193
@@ -77,19 +65,7 @@ findings:
     line: 201
     sha256: f19b64423ed401e59819f0e499644faa06c180e168e292e9a59934f74ab6637c
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 203
-    sha256: 31a25356cef0f76d4250774fcafd443dfbf4fd89d527baaad5a426fc1ff20593
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 203
-    sha256: ec5eefd7c867c792105eab2b69bfafca1d5f0d6d5e6cf525d796ed233bf825e1
-    verdict: unjudged
   - rule: clause-chain
-    line: 205
-    sha256: 67786b4927ee37b0830683488982b764f3d40e3239d3dbcd7d59a228c8b9ff3b
-    verdict: unjudged
-  - rule: one-sentence-paragraph-run
     line: 205
     sha256: 67786b4927ee37b0830683488982b764f3d40e3239d3dbcd7d59a228c8b9ff3b
     verdict: unjudged
@@ -108,10 +84,6 @@ findings:
   - rule: clause-chain
     line: 219
     sha256: 71df184d1aa27b45fda1feac1f5b8f23d4297c9f9395b4279a34d01df2edaf0e
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 221
-    sha256: 76e032db442e7107542c31faa7bad264d89d47aaef0be38a934e4cd184f595e0
     verdict: unjudged
   - rule: orthographic-variant
     line: 223
@@ -153,10 +125,6 @@ findings:
     line: 241
     sha256: 02b95c328e4ddc48db15212ad2e30dae1af00e7b3b18484c59138638dbd3e770
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 241
-    sha256: 02b95c328e4ddc48db15212ad2e30dae1af00e7b3b18484c59138638dbd3e770
-    verdict: unjudged
   - rule: clause-chain
     line: 243
     sha256: 3b9cbe6b510cc7a6521ab9c6027e194053bcb61420dbd2f807d28648992bf08f
@@ -172,14 +140,6 @@ findings:
   - rule: max-ten
     line: 243
     sha256: 9676f08f9db972cd237a17841d7692a2b47ca96f45f73d0b91119970c418c257
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 243
-    sha256: 4169dde463e0c6f7ce413b80df656b2d6a3c5021b7d88f361c929eeb664daa47
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 243
-    sha256: 3b9cbe6b510cc7a6521ab9c6027e194053bcb61420dbd2f807d28648992bf08f
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 243

@@ -6,25 +6,10 @@ findings:
     text: "#### Authority:"
     message: Heading "Authority:" goes from level 1 to level 4 (expected 2)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 9
-    text: FR 48516, Aug. 10, 2010, unless otherwis
-    message: '"FR" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 27
-    text: (f) Cash-to-cash money transfer means th
-    message: Brackets nested 3 deep (limit 2)
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 27
     text: (as defined in section 106(2) of the Ele
     message: '"(" is never closed'
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 35
-    text: (g) Cash reload mechanism is a device, a
-    message: Brackets nested 3 deep (limit 2)
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 35

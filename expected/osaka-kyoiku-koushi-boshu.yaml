@@ -92,16 +92,6 @@ findings:
     text: または高等学校の免許状をお持ちで小学校の講師として勤務を希望する方も登録可能です
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: no-nakaguro-parallel
-    line: 87
-    text: 幼稚園：常勤講師（臨時的任用・任期付採用）
-    message: この文に中黒が 7 個あります（5 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 87
-    text: 幼稚園：常勤講師（臨時的任用・任期付採用）
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 104
     text: または採用までに取得見込みの方
@@ -121,11 +111,6 @@ findings:
     line: 124
     text: の防止等のための措置に関する法律（令和6年法律第69号。以下「こども性暴力防止法
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 124
-    text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
-    message: 一文だけの段落が 5 個続いています（4 個まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 158
@@ -152,13 +137,6 @@ findings:
     text: および12月29日から1月3日を除く。）
     message: 「および」と書いています（この文書はふつう「及び」と書く語です。8 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: list-item-form-mix
-    line: 206
-    text: 受付窓口で健康診断の写し（1年以内に発行されたもの）を提出
-    message: |-
-      「受付窓口で健康診断の写し（1年以内に発行されたもの）を提出
-      （注）当日、教育委員会が指定する検査機関で受診することもできます。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 214
     text: ""
@@ -184,11 +162,6 @@ findings:
     text: ヶ月（日単位）以上の期間を勤務した場合は、一般の退職手当が支給されます。
     message: 「ヶ月」と書いています（この文書はふつう「か月」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 252
-    text: （注）75歳以上の方は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合
-    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: date-without-year
     line: 268
     text: 12月1日）に在職し、当年度6月以上の任期があり、勤務時間が週あたり15時間30
@@ -203,16 +176,6 @@ findings:
     line: 270
     text: 「勤務時間が週あたり15時間30分以上のもの」とは、任用期間全期間を平均した週当
     message: 「勤務時間が週あたり15時間30分以上のもの」を定義していますが、本文で使っていません
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 280
-    text: （注）75歳以上は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合の短
-    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 306
-    text: （注）75歳以上は後期高齢者医療保険制度の保険証をお渡しし、公立学校共済組合の短
-    message: 「後期高齢者医療保険制度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: latin-spacing
     line: 350

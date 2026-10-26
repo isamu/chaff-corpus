@@ -6,12 +6,6 @@ findings:
     text: “Company”), and the undersigned individu
     message: Quote marks are written two ways in this document (8 curly, 12 straight)
     verdict: correct
-  - rule: requirement-smell
-    line: 9
-    text: but not limited to, customers of the Com
-    message: '"but not limited to" in a requirement does not say what else it covers'
-    verdict: false-positive
-    note: '"including, but not limited to" in a contract is deliberate non-exhaustive drafting, not a vague requirement'
   - rule: quote-style-consistency
     line: 11
     text: "'s Proprietary Information, other than i"
@@ -22,41 +16,11 @@ findings:
     text: "'s agreement with such third party)."
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 53)
     verdict: correct
-  - rule: requirement-smell
-    line: 17
-    text: but not limited to, all patent rights in
-    message: '"but not limited to" in a requirement does not say what else it covers'
-    verdict: false-positive
-    note: '"including, but not limited to" in a contract is deliberate non-exhaustive drafting, not a vague requirement'
-  - rule: undefined-term
-    line: 35
-    text: Termination Certificate attached hereto
-    message: '"Termination Certificate" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: a capitalised name of an attached form (Schedule B's title), not a defined term
   - rule: quote-style-consistency
     line: 78
     text: "'S DISCLOSURE**"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 53)
     verdict: correct
-  - rule: duplicate-definition
-    line: 82
-    text: (the "Company"), other than information
-    message: '"Company" is also defined on line 5'
-    verdict: false-positive
-    note: a schedule signed as its own instrument restates the party definition; not a second definition in the same body
-  - rule: duplicate-definition
-    line: 130
-    text: (the "Company"), including, without limi
-    message: '"Company" is also defined on line 5'
-    verdict: false-positive
-    note: the termination certificate (Schedule B) is a separate instrument and restates the party definition
-  - rule: duplicate-definition
-    line: 134
-    text: (the "Agreement") signed by me and that
-    message: '"Agreement" is also defined on line 5'
-    verdict: false-positive
-    note: the termination certificate (Schedule B) names the main agreement by its short name; a separate instrument
   - rule: quote-style-consistency
     line: 134
     text: "'s rights under the Agreement."

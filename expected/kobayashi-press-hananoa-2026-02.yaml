@@ -13,14 +13,6 @@ findings:
     line: 12
     sha256: 843de66071c3af40a461cf5a011d787ad47eaec8298fd87bc82245a7c3b5e36d
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 12
-    sha256: 871592d40811e4d7e271edb4f6800f841536df96074c026e606d5a203ca8dafc
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 12
-    sha256: ca9558e38c840e5b9ce93d67d4e84fa84f9fd4cf02400b47ddc3e7e9cfc08f3b
-    verdict: unjudged
   - rule: yori-as-from
     line: 12
     sha256: 00087d8d96e89f9a7091be00a6e04089b46f3a8c1cc5943cd52f6d74b47c9b83
@@ -40,10 +32,6 @@ findings:
   - rule: name-variant
     line: 35
     sha256: 79558846675df88696ae5f6ee7f1b6ff6b3c56f2aec9b1025e7f05880f95606e
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 38
-    sha256: 5c8b6fb53b16e8fa3a365890bfa3c687cea37df7574a5a51394bf2a1fa343845
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 39

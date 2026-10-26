@@ -20,21 +20,9 @@ findings:
     verdict: correct
     note: "the subject on the line after the SUBJECT: label is far longer than a subject line should be"
   - rule: max-sentence-length
-    line: 21
-    text: Order Granting an Exemption from the Cus
-    message: This sentence runs 23 words (limit 18)
-    verdict: false-positive
-    note: the subject line, a title rather than a sentence
-  - rule: max-sentence-length
     line: 23
     text: "Applicability:  This Order applies to al"
     message: This sentence runs 27 words (limit 18)
-    verdict: correct
-    note: a long sentence in the letter's body
-  - rule: max-sentence-length
-    line: 25
-    text: Department of the Treasury’s Financial C
-    message: This sentence runs 50 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's body
   - rule: max-sentence-length
@@ -43,6 +31,12 @@ findings:
     message: This sentence runs 23 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's body
+  - rule: max-sentence-length
+    line: 25
+    text: The Board of Governors of the Federal Re
+    message: This sentence runs 67 words (limit 18)
+    verdict: correct
+    note: "a long sentence in the letter's body (rekeyed: chaffjs 0.36.0 started this sentence after the U.S. and was judged correct there; 0.38.0 reads it whole)"
   - rule: max-sentence-length
     line: 27
     text: The Order permits banks, for all account

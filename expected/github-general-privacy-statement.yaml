@@ -37,10 +37,10 @@ findings:
     text: ’s Office website.
     message: Quote marks are written two ways in this document (9 curly, 10 straight)
     verdict: unjudged
-  - rule: max-paragraph-length
+  - rule: requirement-smell
     line: 143
-    text: GitHub also complies with the EU-U.S. Da
-    message: This paragraph runs 18 sentences (limit 8)
+    text: and/or the Swiss-U.S. DPF Principles, th
+    message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
   - rule: orthographic-variant
     line: 149

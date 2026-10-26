@@ -1,24 +1,6 @@
 id: usc-44-3554-agency-security-responsibilities
 chaff: 0.36.0
 findings:
-  - rule: hyphen-as-dash
-    line: 5
-    text: " - INFORMATION SECURITY"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: a spaced hyphen separating a Code division label from its name (PART I - TITLE), the citation header's own convention
-  - rule: title-case-consistency
-    line: 11
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: "the section catchline is in sentence case, the notes' headings in title case: two kinds of heading"
-  - rule: no-em-dash
-    line: 13
-    text: —The head of each agency shall—
-    message: 17 dashes per 1000 words (limit 8)
-    verdict: false-positive
-    note: statutory drafting introduces each enumeration with an em dash ("shall—"); the dashes are the form, not a style choice
   - rule: orthographic-variant
     line: 61
     text: agencywide information security program

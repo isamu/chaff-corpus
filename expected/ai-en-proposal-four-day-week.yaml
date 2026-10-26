@@ -12,3 +12,8 @@ findings:
     what: '"meetings that could probably have been an email"'
     verdict: missed
     note: a worn joke; otherwise the proposal reads as human
+  - rule: bold-emphasis
+    line: 18
+    text: Fridays off for everyone**, so we're not
+    message: "4 bold spans of emphasis: 7.3 per 1000 words (limit 6)"
+    verdict: unjudged

@@ -3,9 +3,15 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 提出日「2026年11月〇日」と提出者が〇のまま（3・4行）
-    verdict: missed
-    note: catalog J27
+    text: 〇日
+    message: 「〇日」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
+  - rule: unfilled-placeholder
+    line: 4
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: ai-structure
     line: 6
     what: 番号付きの 概要／背景／提案内容／費用／期待される効果／今後のスケジュール

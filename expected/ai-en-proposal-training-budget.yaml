@@ -1,6 +1,11 @@
 id: ai-en-proposal-training-budget
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 3
+    text: From:** Grace Okafor, Customer Support L
+    message: "3 bold spans of emphasis: 10 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 19
     what: '"Some examples, based on what the team has asked about:" claims requests the user did not mention'

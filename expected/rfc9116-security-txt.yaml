@@ -33,49 +33,14 @@ findings:
     line: 119
     sha256: 54d25dde94d2c6375f49cefba232ad06de4d50399b53118f4c085195157fe4a0
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 145
-    sha256: 6c65c12510ff45a095efcf95da2ba3d9ba10f25d9a55294b89eb6e537d1c9734
-    verdict: false-positive
-    note: the BCP 14 key-words boilerplate required in every standards-track RFC
   - rule: ngram-repetition
     line: 182
     sha256: 7337fa7be8cbfb4de69db917b78e379889ddae489fee616f0b732c10e26596e2
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 196
-    sha256: e2a512a577ffeec7d7467aa8e99f9c636a6a8b22d66f3824ee2371918c848246
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 206
-    sha256: 357e57e034e54d4607216954035fe127134c8f2b4d7d7b2a30de5df783a8544d
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 206
-    sha256: df9f629cf0e97fbaecea06f309e528801a95b1a5b1f39763da80a54fb07a08b3
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
   - rule: wordy-phrase
     line: 244
     sha256: 2730183d6b776b400ed491c90b67ecb616fb9b699c2f06c8c41fa74f04bcd7d0
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 259
-    sha256: fcf6ed7047b201e19d752caa17d999aa2bada0f4f4702b50cd4e226b025d3c07
-    verdict: false-positive
-    note: an RFC's plain text is ASCII; a spaced hyphen is how it writes the dash
-  - rule: hyphen-as-dash
-    line: 261
-    sha256: 363907258485f99a98db9cc5ec14097a6254ab5aae98c1a94b18744e0a6a2548
-    verdict: false-positive
-    note: an RFC's plain text is ASCII; a spaced hyphen is how it writes the dash
-  - rule: hyphen-as-dash
-    line: 262
-    sha256: 71203fbbea67caa516c46d82bfa85c8ecdd0e750e055e749d7c3ac0a6411713a
-    verdict: false-positive
-    note: an RFC's plain text is ASCII; a spaced hyphen is how it writes the dash
   - rule: unknown-word
     line: 297
     sha256: 8585dc022909bf9dedf782db856d5c05c9eea92844df06e8a727c7e4e8ce3dd3
@@ -85,21 +50,6 @@ findings:
     line: 303
     sha256: 80a4c29f837a502fa9905f113c86e3772e5d7ef01e989bbbc1c3615242f28f03
     verdict: unjudged
-  - rule: numbering-gap
-    line: 314
-    sha256: f7fd9efa5fdded9f0592599ce78b03cdf4ddc553bfc6636fcf649f76a45d0136
-    verdict: false-positive
-    note: the section numbers run in order (2.5.3, then 2.5.4)
-  - rule: numbering-gap
-    line: 327
-    sha256: f98b53bf5bc066933246f11f155d89d7e14eac67bd80e05d43a358f57607fd6c
-    verdict: false-positive
-    note: a cross-reference (Section 2.3.) wrapped to the start of a line, read as a numbered item
-  - rule: numbering-gap
-    line: 394
-    sha256: ec1e738be3a95a0f1c72ad4498c7567757f889292ea103500f82d24b2e3788ec
-    verdict: false-positive
-    note: the section numbers run in order (2.5.8, then 2.6)
   - rule: unbalanced-bracket
     line: 488
     sha256: 6b0910841dbc7d9bad700639b15788305895353fc312e4d465c24bf6d52013b0
@@ -135,96 +85,6 @@ findings:
     sha256: 81a3c66d7f3dfcf0f1d61e6ffe8b048b8f9eb4ed1467f4c9d8abf37b227f2ff5
     verdict: false-positive
     note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 550
-    sha256: d70366463fc4ca187a5e42634c46698d8e7fc19f3d5b32d46a7e69e1b35ca8e9
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 551
-    sha256: ab6748b3db7545126aa559c09a9a63f765e8bbedada25f47ee0e6e29228f4c24
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 552
-    sha256: f6823757ecab561da9e1a8d82f1ae1d4134a4e10b1bf20414c942a214b8db9ea
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 600
-    sha256: 917282c1950f90530b73ac79278debc2f5b33d51150fae7fbcbd58d29f8f9a5f
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 612
-    sha256: 7dbf029da02ac575ae665d1864c8f05f46ab8ee0b1aaec508c10a7ab6e7f281f
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 624
-    sha256: fe81dcdf1fc53ee1fa109ced98340e964887c603b78e21cedf09b7a4bd3503f6
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 626
-    sha256: 66d49f058aa98724d035e02e2f28013cef2ea74e2be94382699e1dfb5b272296
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 628
-    sha256: c4ba24b76a5c90aed833c9adbc86de9a34266d3015b65e94c703b28357c44e9d
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 630
-    sha256: ae6de1827cfc8111a6e049e80d19a5ca25f0d8e018e879286eab9919ab642f01
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 632
-    sha256: 45f21b93024d410e465138cbd1b16a55a5b6552ce9162184eaac925ba18b73a6
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 638
-    sha256: a8eb45030d862d40f9cbd5055b814aeb842a166c6dcad627121ed3db6932dead
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 644
-    sha256: fe8619444ec7cfa1f7d9a9f4edb2197a9b857b4838d1d9682d65aed90f20db6d
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 647
-    sha256: a4a3127513f1625e69c512b0f46eaad39facc2bf3e99406197c7fe3ba4baba20
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 649
-    sha256: 106d6baecc2d65ca7a37bc54f9da9686ff11e4306590fa522d526051da1be9c7
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 655
-    sha256: 0fb509cac14f0d5ebeadf25cf28cf5e9c3ea1b7eb2659cba2a1410d04ecdd761
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 666
-    sha256: 096aa8510b0dc13190f1f237db8e29ad6ea34e2f779f2088c7826248535fbf6a
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 666
-    sha256: 3f37c863705e0b834d0126c0c7b53c4d5d4f362e4922f63ca436244cedf231dc
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
-  - rule: undefined-acronym
-    line: 671
-    sha256: 4aa341967d6db5ea7d41ef6fad075bfbe8de1f7cc4357ff3e473da263fa95bc7
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
   - rule: max-sentence-length
     line: 693
     sha256: 71c95ba352539dd800ba6b1e377d86440d8b881d12f1e33c716378c857cafb60
@@ -257,10 +117,6 @@ findings:
     line: 1000
     sha256: 0f923c1094c1a8a8269fdad1855160019c042127385edd728bd6f97ce9c1f3da
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1026
-    sha256: 7c8d99a5215aaa8d03439630b59b317fcbabf3f3a683c43661228162765d8180
-    verdict: unjudged
   - rule: undefined-acronym
     line: 1054
     sha256: 21cefb851644ea6c02673715583ea17d447ad24421900b8300a7b29c328c0d4f
@@ -269,33 +125,9 @@ findings:
     line: 1056
     sha256: e8070a8f0f2cc3b41630f2e11aa133c573533b3c8f639a1263f536bc237cfc9a
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1059
-    sha256: 12fafeaadfbd36fc67dd5680296d078da77889bab2227af1ccc6080b0a83e498
-    verdict: unjudged
   - rule: undefined-acronym
     line: 1060
     sha256: 2867d7ff833b7f8396ab2ed3e6eebfae9018f3fc57165133040eed9ec366b0dd
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1064
-    sha256: 5fc13ed9ad33d949cbb272b4da706f385c1dc755b330bfa306582917d84fe5e4
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1065
-    sha256: 5fe51f768f501ff7a02bef6a0e62f883701d9d0b51c527c0ecb1670671bbf8b8
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1069
-    sha256: 5fc13ed9ad33d949cbb272b4da706f385c1dc755b330bfa306582917d84fe5e4
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1070
-    sha256: 4100be91ec746912091aa1c6d1fdbf73ccd6abaee87a9716256c5096d7df927c
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1077
-    sha256: 8b7e6ba9193bb8f2103b03846fa3013c0fd01c3e881ec5f51dc8c6b836c80eda
     verdict: unjudged
   - rule: undefined-acronym
     line: 1092

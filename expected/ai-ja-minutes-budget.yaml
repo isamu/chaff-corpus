@@ -1,6 +1,11 @@
 id: ai-ja-minutes-budget
 chaff: 0.36.0
 findings:
+  - rule: unfilled-placeholder
+    line: 8
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 28
     what: 製造部長の「約15％向上する見込み」と取締役の実績要求（26行）が依頼にない

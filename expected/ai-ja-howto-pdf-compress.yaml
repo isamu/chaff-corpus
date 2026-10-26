@@ -19,6 +19,11 @@ findings:
     message: 「添付ファイルが大きすぎます」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
     verdict: false-positive
     note: an error message the reader sees, not a quoted person
+  - rule: sentence-rhythm
+    line: 3
+    text: 「添付ファイルが大きすぎます」と言われて、PDFが送れない。そんなときの対処法を
+    message: 文の長さのばらつきが 32%（36% 以上ほしい）
+    verdict: unjudged
   - rule: list-item-form-mix
     line: 17
     text: 「Quartzフィルタ」で「Reduce File Size」を選んで保存

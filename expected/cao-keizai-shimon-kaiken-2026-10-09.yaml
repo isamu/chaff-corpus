@@ -1,12 +1,6 @@
 id: cao-keizai-shimon-kaiken-2026-10-09
 chaff: 0.36.0
 findings:
-  - rule: adversative-ga-repeat
-    line: 12
-    text: 次に２点目ですが、REVIC（地域経済活性化支援機構）についてですが、REVIC
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: both が are prefatory (２点目ですが、〜についてですが、), not contrasts
   - rule: fullwidth-alnum-consistency
     line: 12
     text: 8年熊本地震に対してもしっかりと支援を行っていく方針であります。
@@ -32,12 +26,6 @@ findings:
     text: REVICは、令和８年熊本地震で被災した事業者の多重債務対応と復興支援を行うため
     message: 半角の「REVIC」と書いています（この文書はふつう全角の「ＲＥＶＩＣ」。28 箇所のうち 7 箇所が違う）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 12
-    text: REVICは、これまでも地域の金融機関と連携して、被災された事業者の支援に当たっ
-    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead
   - rule: topic-predicate-distance
     line: 12
     text: 本ファンドは、平成28年熊本地震時にREVICが地元の金融機関と連携して組成した
@@ -74,12 +62,6 @@ findings:
     message: 半角の「GDP」と書いています（この文書はふつう全角の「ＧＤＰ」。28 箇所のうち 7 箇所が違う）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 30
-    text: この道行きは安易なものではありませんが、先日９月25日の会見では、いわゆるリフレ
-    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead
-  - rule: topic-predicate-distance
     line: 31
     text: そして、日本経済は今、企業が投資する、賃金が上がる、そしてまた消費が伸びるという
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
@@ -104,23 +86,11 @@ findings:
     text: このほか、多角的な分析や検証を行う際には恣意的だと捉えられないように、一貫性を持
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 50
-    text: 世間では、高市政権はデマンドサイド重視、リフレ政策的だと言われているが、実際は逆
-    message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
-    verdict: false-positive
-    note: 高市政権は is the topic of the quoted clause (〜だと言われているが), closed within it
   - rule: clause-chain
     line: 58
     text: そのためには債務残高対ＧＤＰ比が実際に悪化してから慌てて対応するのではなく、成長
     message: 一文に節が 8 つつながっています（5 つまで）
     verdict: correct
-  - rule: orthographic-variant
-    line: 59
-    text: みると日本は３位だが、選択と集中の行き過ぎでその世界に誇る科学の基盤は揺らいでい
-    message: 「みる」と書いています（この文書はふつう「見る」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: isamu/lab#1525 counts the observed 見られる (:29 動きが見られる) apart from 見る meaning look. In the look sense the page writes 見て (:49) once and みる (:59) once, 1 vs 1, so there is no minority to point at.
   - rule: clause-chain
     line: 64
     text: 日本経済が成長の好循環の道に踏み出せるかどうかの分岐点に立つ中で、危機管理投資・

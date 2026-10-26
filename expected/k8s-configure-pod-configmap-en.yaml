@@ -6,52 +6,52 @@ findings:
     text: which is used during either application
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
-    note: "a restrictive clause with which, where the page uses that"
+    note: a restrictive clause with which, where the page uses that
   - rule: contraction-consistency
     line: 28
     text: If you have a different tool
     message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: correct
-    note: "the page mixes the full and contracted forms; it uses the contraction elsewhere"
+    note: the page mixes the full and contracted forms; it uses the contraction elsewhere
   - rule: contraction-consistency
     line: 54
     text: When you are creating a ConfigMap based
     message: "\"you are\" is written \"you're\" elsewhere in the document"
     verdict: correct
-    note: "the page mixes the full and contracted forms; it uses the contraction elsewhere"
+    note: the page mixes the full and contracted forms; it uses the contraction elsewhere
   - rule: contraction-consistency
     line: 64
     text: When you are creating a ConfigMap based
     message: "\"you are\" is written \"you're\" elsewhere in the document"
     verdict: correct
-    note: "the page mixes the full and contracted forms; it uses the contraction elsewhere"
+    note: the page mixes the full and contracted forms; it uses the contraction elsewhere
   - rule: contraction-consistency
     line: 75
     text: The `kubectl` command does not print an
     message: "\"does not\" is written \"doesn't\" elsewhere in the document"
     verdict: correct
-    note: "the page mixes the full and contracted forms; it uses the contraction elsewhere"
+    note: the page mixes the full and contracted forms; it uses the contraction elsewhere
   - rule: ngram-repetition
     line: 84
     text: Now, download the sample configuration a
     message: '"create the ConfigMap" appears 7 times (limit 5)'
     verdict: false-positive
-    note: "a task page that repeats its action (create the ConfigMap) in each step"
+    note: a task page that repeats its action (create the ConfigMap) in each step
   - rule: max-sentence-length
     line: 750
     text: As a
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-    note: "a 48-word sentence that an editor would split"
+    note: a 48-word sentence that an editor would split
   - rule: list-marker-mix
     line: 873
     text: "- You must create the `ConfigMap` object"
     message: This list uses the bullet "-", while 3 lists at the same depth use "*"
     verdict: correct
-    note: "the page's other lists at this depth use *, this one -"
+    note: the page's other lists at this depth use *, this one -
   - rule: contraction-consistency
     line: 898
     text: You can't use ConfigMaps for
     message: "\"does not\" is written \"doesn't\" elsewhere in the document"
     verdict: correct
-    note: "「can't」 and 「does not」 in the same list item"
+    note: 「can't」 and 「does not」 in the same list item

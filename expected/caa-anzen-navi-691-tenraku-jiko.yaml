@@ -7,12 +7,6 @@ findings:
     message: 題「Vol.691 転落事故は「環境づくり」で予防!―7月13日～19日は「こどもの事故防止週間」―」は 43 文字あります（40 文字まで）
     verdict: correct
     note: a 43-character subject line with a subtitle
-  - rule: email-greeting-closing
-    line: 3
-    text: 消費者庁を含む関係10省庁から成る、「こどもの事故防止に関する関係府省庁連絡会議
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an issue of a mail magazine opens on its topic; a greeting is not expected
   - rule: max-sentence-length
     line: 3
     text: 消費者庁を含む関係10省庁から成る、「こどもの事故防止に関する関係府省庁連絡会議
@@ -31,30 +25,6 @@ findings:
     message: この文は 100 文字あります（70 文字まで）
     verdict: correct
     note: a 100-character sentence over the email limit
-  - rule: max-sentence-length
-    line: 13
-    text: 「保護者がミルクを調整しに離れたところ、高さ約60cmのベッドからフローリングの
-    message: この文は 91 文字あります（70 文字まで）
-    verdict: false-positive
-    note: a quoted incident report of two sentences in 「」, counted as one sentence
-  - rule: max-sentence-length
-    line: 14
-    text: 「自宅2階にいる保護者を追いかけて、こどもが階段を上がってきてしまい、9段目あた
-    message: この文は 123 文字あります（70 文字まで）
-    verdict: false-positive
-    note: a quoted incident report of four sentences in 「」, counted as one sentence
-  - rule: max-sentence-length
-    line: 15
-    text: 「公園で、高さ約3mの円柱ジャングルジムの上に立っていたところ、足が滑ってコンク
-    message: この文は 97 文字あります（70 文字まで）
-    verdict: false-positive
-    note: a quoted incident report of two sentences in 「」, counted as one sentence
-  - rule: max-sentence-length
-    line: 16
-    text: 「自宅でソファーによじ登り、出窓の網戸にもたれかかっていたところ、網戸が外れ、約
-    message: この文は 88 文字あります（70 文字まで）
-    verdict: false-positive
-    note: a quoted incident report of two sentences in 「」, counted as one sentence
   - rule: list-item-form-mix
     line: 22
     text: 抱っこ・おんぶからの転落

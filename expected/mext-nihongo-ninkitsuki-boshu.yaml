@@ -1,12 +1,6 @@
 id: mext-nihongo-ninkitsuki-boshu
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 19
-    text: 文部科学事務官（総合教育政策局日本語教育課教員活用第一係長）
-    message: 「総合教育政策局日本語教育課教員活用第一係長」は漢字が 21 字続いています（10 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself
   - rule: max-sentence-length
     line: 23
     text: 日本語教育課では、外国人等に対する日本語教育を総合的かつ体系的に推進する中核的な

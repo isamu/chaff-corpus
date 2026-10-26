@@ -30,11 +30,6 @@ findings:
     sha256: 327a728cf9618a3aaba5ef30a989da5254bd2f3448518b5916a19e150a2934fb
     verdict: unjudged
   - rule: max-sentence-length
-    line: 130
-    sha256: 6c65c12510ff45a095efcf95da2ba3d9ba10f25d9a55294b89eb6e537d1c9734
-    verdict: false-positive
-    note: the BCP 14 key-words boilerplate required in every standards-track RFC
-  - rule: max-sentence-length
     line: 190
     sha256: 2e35b23d90a7bedb6fe02e45c69c16408a866197f9bd213dd083210e0d08adff
     verdict: unjudged
@@ -43,11 +38,6 @@ findings:
     sha256: 85cd7a4ace510bd00d4cb82eea9b11adee47da2f6ebb2a7276f4ff599bdd5483
     verdict: false-positive
     note: Section 4 is titled Security Considerations; the plain-text RFC's section titles are not Markdown headings
-  - rule: numbering-gap
-    line: 246
-    sha256: d9bb539e78b103621e323a55cd8f9db38645790264f1b14f99c021f2f924ab3c
-    verdict: false-positive
-    note: a cross-reference (Section 3.) wrapped to the start of a line, read as a numbered item
   - rule: max-sentence-length
     line: 300
     sha256: e510cd7e0ed109617139cca7476b2d7d4654a8e684d53d2db239247dd4dc3588
@@ -62,39 +52,14 @@ findings:
     verdict: false-positive
     note: STD in a reference entry (STD 66), a series identifier
   - rule: undefined-acronym
-    line: 528
-    sha256: 2e38d4531a88443654ebe7e40e338a89f15ce32aa690f134acd344c99c90bf5c
-    verdict: false-positive
-    note: WD is part of a W3C document identifier in a reference entry
-  - rule: hyphen-as-dash
-    line: 531
-    sha256: 2936425eb317e445588fa2c239469bad7cb51197feb958ab8dc1edb3e3d70ecd
-    verdict: false-positive
-    note: an RFC's plain text is ASCII; a spaced hyphen is how it writes the dash in a cited title
-  - rule: undefined-acronym
     line: 531
     sha256: ed1b3ccf2d2f496fb260fb35f1b15f22593479b0acd64fe57e14553d08fd57ea
     verdict: false-positive
     note: WHATWG, the publisher's name in a reference entry
-  - rule: hyphen-as-dash
-    line: 534
-    sha256: 2936425eb317e445588fa2c239469bad7cb51197feb958ab8dc1edb3e3d70ecd
-    verdict: false-positive
-    note: an RFC's plain text is ASCII; a spaced hyphen is how it writes the dash in a cited title
   - rule: name-variant
     line: 543
     sha256: 091a465b07b0a9ce8d5f8d5e245dd38276471dfb0aaa6f31876c1d958f675361
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 544
-    sha256: b7c3bd94446970af02f37abe480f30d6e5d902e4ce58e47ebf8fc531939ee596
-    verdict: false-positive
-    note: CR is part of a W3C document identifier in a reference entry
-  - rule: undefined-acronym
-    line: 607
-    sha256: 5d701928b04b8c45e7e671a4563dc0e16ca3ade24f93df10f0921efe0e94a23d
-    verdict: false-positive
-    note: REC is part of a W3C document identifier in a reference entry
   - rule: contraction-consistency
     line: 625
     sha256: 115b8e86350f06caa9f3a022dc26181b66db4ca745dc51da9f0a019f8f85703b

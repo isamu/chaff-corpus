@@ -31,12 +31,6 @@ findings:
     text: You can also be diluted as we give equit
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-  - rule: unused-definition
-    line: 41
-    text: '"Exercising your options" means buying t'
-    message: '"Exercising your options" is defined but never used'
-    verdict: false-positive
-    note: the defined phrase is used in inflected forms (exercise, exercised, exercising) that the rule does not count
   - rule: contraction-consistency
     line: 43
     text: You will usually only want to exercise t

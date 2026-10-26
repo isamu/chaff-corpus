@@ -67,12 +67,6 @@ findings:
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
-  - rule: undefined-acronym
-    line: 38
-    text: FR 20913 ( https://www.federalregister.g
-    message: '"FR" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: "'88 FR 20913' is the standard citation form of the Federal Register, not an acronym to expand"
   - rule: max-paragraph-length
     line: 40
     text: "Disclaimer: Participation in this RFI is"

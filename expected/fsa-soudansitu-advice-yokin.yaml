@@ -16,20 +16,10 @@ findings:
     text: 1,000万円までとその利息等です。決済用預金（無利息、要求払い、決済サービスを
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。24 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 16
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 5 行目の見出しと同じです
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 18
     text: 1,000万円ずつ預金をしていますが、預金保険で保護される金額はどうなるのでしょ
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。24 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 20
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 9 行目の見出しと同じです
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 22
@@ -41,25 +31,10 @@ findings:
     text: 2,000万円までとその利息等が合併後１年間保護されます。なお、１年以内に複数回
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。24 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 25
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 5 行目の見出しと同じです
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 29
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 9 行目の見出しと同じです
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 31
     text: のない外国の銀行の預金口座を開設したり、預金をしたりするには、「外国銀行代理銀行
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 38
-    text: 口座開設や海外への送金の際、追加で確認資料を求められるなど、手続きに時間を要した
-    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
     verdict: unjudged
   - rule: orthographic-variant
     line: 38
@@ -70,11 +45,6 @@ findings:
     line: 43
     text: 出来るよう対策を進めているところです。
     message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。10 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 48
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 36 行目の見出しと同じです
     verdict: unjudged
   - rule: max-sentence-length
     line: 54
@@ -91,16 +61,6 @@ findings:
     text: " の提示等をした上で振込みを行っていただく必要があります。"
     message: 「書類」と「の」は一続きの語句ですが、あいだに空白があります（1018 箇所のうち 1 箇所が空いている）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 58
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 36 行目の見出しと同じです
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 62
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 52 行目の見出しと同じです
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 65
     text: 1項に規定する高等課程及び専門課程に限る。）に対する入学金、授業料その他これらに
@@ -116,35 +76,15 @@ findings:
     text: かかわらず、入学金、授業料と同時に支払われるもの）が対象となります。
     message: 「かかわる」と書いています（この文書はふつう「関わる」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 91
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 81 行目の見出しと同じです
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 95
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 85 行目の見出しと同じです
-    verdict: unjudged
   - rule: orthographic-variant
     line: 97
     text: 振り込みを利用して行われた、オレオレ詐欺、架空請求詐欺、融資保証金詐欺、還付金等
     message: 「振り込み」と書いています（この文書はふつう「振込み」と書く語です。6 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 100
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 81 行目の見出しと同じです
-    verdict: unjudged
   - rule: orthographic-variant
     line: 102
     text: 手続きを行ってから被害金が支払われるまでどれくらいかかりますか。
     message: 「手続き」と書いています（この文書はふつう「手続」と書く語です。8 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 104
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 85 行目の見出しと同じです
     verdict: unjudged
   - rule: heading-numbering-mix
     line: 110
@@ -200,31 +140,6 @@ findings:
     line: 161
     text: 中小企業金融円滑化法（以下、「円滑化法」という。）は、平成25年３月末に期限を迎
     message: この文は 145 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 166
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 155 行目の見出しと同じです
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 168
-    text: 金融庁のＡであると名乗る者から電話があり、100万円入金してもらえれば、金融庁よ
-    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 170
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 159 行目の見出しと同じです
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 174
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 155 行目の見出しと同じです
-    verdict: unjudged
-  - rule: duplicate-heading
-    line: 178
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 159 行目の見出しと同じです
     verdict: unjudged
   - rule: max-sentence-length
     line: 180

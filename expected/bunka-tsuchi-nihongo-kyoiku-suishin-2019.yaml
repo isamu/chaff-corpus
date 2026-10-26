@@ -1,40 +1,10 @@
 id: bunka-tsuchi-nihongo-kyoiku-suishin-2019
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 元文庁第397号
-    message: 書き出しに挨拶がありません
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 10
-    text: 各都道府県教育委員会教育長
-    message: 「各都道府県教育委員会教育長」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 12
-    text: 各指定都市教育委員会教育長
-    message: 「各指定都市教育委員会教育長」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 16
-    text: 各国公私立高等専門学校長
-    message: 「各国公私立高等専門学校長」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 21
-    text: 各大学共同利用機関法人機構長
-    message: 「各大学共同利用機関法人機構長」は漢字が 14 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 29
     text: 文部科学省関係各独立行政法人の長
     message: 「文部科学省関係各独立行政法人」は漢字が 14 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: preamble-length
-    line: 38
-    text: この度，「日本語教育の推進に関する法律（令和元年法律第48号）」が，令和元年6月
-    message: 最初の見出しまでに 3 段落あります（2 段落まで）
     verdict: unjudged
   - rule: clause-chain
     line: 42
@@ -115,11 +85,6 @@ findings:
     line: 79
     text: 外国人等を雇用する事業主は，基本理念にのっとり，国又は地方公共団体が実施する日本
     message: この文は 120 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 79
-    text: 外国人等を雇用する事業主は，基本理念にのっとり，国又は地方公共団体が実施する日本
-    message: 「ものとすること。」が 30 回出てきます（5 回まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 79
@@ -240,6 +205,11 @@ findings:
     line: 121
     text: ア国は，外国人等である幼児，児童，生徒等に対する生活に必要な日本語及び教科の指導
     message: この文は 158 文字あります（70 文字まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 121
+    text: ア国は，外国人等である幼児，児童，生徒等に対する生活に必要な日本語及び教科の指導
+    message: 「必要な施策を講ず」が 17 回出てきます（5 回まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
@@ -565,9 +535,4 @@ findings:
     line: 214
     text: の水準の維持向上のための評価制度等の在り方
     message: 「の」が読点を挟まずに 5 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: email-greeting-closing
-    line: 221
-    text: 電話:03-5253-4111（内線2840）
-    message: 終わりに結びの言葉がありません
     verdict: unjudged

@@ -10,11 +10,6 @@ findings:
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27"
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27日）」は 41 文字あります（40 文字まで）
     verdict: unjudged
-  - rule: email-greeting-closing
-    line: 5
-    text: 【発行】
-    message: 書き出しに挨拶がありません
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 32
     text: 今月号は、2月号に引き続き 学習指導要領実施状況調査結果を踏まえた学習指導の改善
@@ -39,11 +34,6 @@ findings:
     line: 33
     text: 特集2では、「図画工作科における地域を生かした授業づくり」をテーマに、その意義や
     message: この文は 93 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 50
-    text: 初等中等教育局 初等中等教育企画課 地方教育行政係
-    message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 58
@@ -119,9 +109,4 @@ findings:
     line: 206
     text: 文部科学省では、映画その他の映像作品及び紙芝居について、教育上価値が高く、学校教
     message: この文は 133 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: email-greeting-closing
-    line: 221
-    text: 03-5253-4111
-    message: 終わりに結びの言葉がありません
     verdict: unjudged

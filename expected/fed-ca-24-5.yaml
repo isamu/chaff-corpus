@@ -43,24 +43,6 @@ findings:
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 21 words (limit 18)
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 50
-    text: SR 16-11, “Supervisory Guidance for Asse
-    message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
-  - rule: max-sentence-length
-    line: 51
-    text: SR 16-7, “Interagency Guidance to Issuin
-    message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
-  - rule: max-sentence-length
-    line: 56
-    text: SR 05-8, “Interagency Interpretive Guida
-    message: This sentence runs 20 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number and a quoted title, not a sentence"
   - rule: heading-level-skip
     line: 60
     text: "##### Notes:"

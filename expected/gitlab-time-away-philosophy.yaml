@@ -17,17 +17,16 @@ findings:
     text: ’s important to them.
     message: Quote marks are written two ways in this document (7 curly, 15 straight)
     verdict: correct
+  - rule: bold-emphasis
+    line: 69
+    text: When requesting planned time off (i.e. P
+    message: "19 bold spans of emphasis: 8.9 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: undefined-acronym
     line: 69
     text: PTO, Public Holidays, Volunteer time), *
     message: '"PTO" is used without an expansion (7 such acronyms)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 82
-    text: FYI in your team's Slack channel(s), esp
-    message: '"FYI" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: FYI is an everyday abbreviation that is never expanded
   - rule: contraction-consistency
     line: 83
     text: Schedule reminder messages](https://slac
@@ -74,12 +73,6 @@ findings:
     text: PEO and independent contractors) must lo
     message: '"PEO" is used without an expansion (7 such acronyms)'
     verdict: correct
-  - rule: contraction-consistency
-    line: 213
-    text: "Automatic Status Updates**: Sets OOO sta"
-    message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: false-positive
-    note: the full form is part of a setting's name in quotation marks, not the writer's own use
   - rule: vague-link-text
     line: 240
     text: "[here](https://docs.google.com/document/"

@@ -3,9 +3,25 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 5
-    what: 実施期間が「2026年〇月〇日〜〇月〇日」のまま
-    verdict: missed
-    note: Japanese 〇〇 blank, not found
+    text: 〇日
+    message: 「〇日」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 5
+    text: 〇日〜〇月〇日
+    message: 「〇日」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 5
+    text: 〇月〇日
+    message: 「〇月」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 5
+    text: 〇月〇日〜〇月〇日
+    message: 「〇月」が埋まっていません
+    verdict: correct
+    note: Japanese 〇〇 blank, not found; found by chaffjs 0.38.0
   - rule: ai-generated-composite
     line: 13
     what: 依頼に無い理由づけと自由記述の声（通勤時間の削減を評価する声、17行目の「他部署の誰に聞けばよいかわからない」）を作っている

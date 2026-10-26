@@ -7,24 +7,6 @@ findings:
     message: 半角の片仮名「｡」があります（全角は「。」）
     verdict: correct
     note: 「という｡）」の句点だけ半角片仮名の「｡」
-  - rule: undefined-term
-    line: 21
-    text: 本単独発明
-    message: 「本単独発明」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 第2条の定義の項目（語の次の段落が定義）で定義されている
-  - rule: undefined-term
-    line: 25
-    text: 本発明
-    message: 「本発明」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 第2条の定義の項目（語の次の段落が定義）で定義されている
-  - rule: undefined-term
-    line: 39
-    text: 本研究テーマに関する自らのスケジュールをそれぞれ作成し、両社協議の上これを決定す
-    message: 「本研究テーマ」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 定義語「本研究」に語が続いただけで、別の定義語の形ではない
   - rule: vague-deadline
     line: 39
     text: 速やかに、前条に定める役割分担に従い、本研究テーマに関する自らのスケジュールをそ
@@ -37,12 +19,6 @@ findings:
     message: 「速やかに」では期限が決まりません。何日以内かを数で書くと、守ったかどうかを決められます
     verdict: correct
     note: 「速やかに」は期限を数で決めていない
-  - rule: numbering-gap
-    line: 47
-    text: 2　甲および乙は、自らが選任した協議会の委員の変更・追加・削減を行う場合は、その
-    message: 「2」の次が「2」です（3 番目のはず）
-    verdict: false-positive
-    note: オプション条項「第●条（協議会の設置）」の第2項。番号のない「第●条」で条が替わるのを数えず、前の条から続けている
   - rule: use-before-definition
     line: 77
     text: 開示等し、特定しなければならない。
@@ -103,36 +79,12 @@ findings:
     message: 「速やかに」では期限が決まりません。何日以内かを数で書くと、守ったかどうかを決められます
     verdict: correct
     note: 「速やかに」は期限を数で決めていない
-  - rule: undefined-term
-    line: 109
-    text: 本研究担当者等の氏名等（以下「乙名称等」という。）を甲の製品の広告の目的その他の
-    message: 「本研究担当者等」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 「乙の本研究担当者」で、定義語「本研究」に語が続いただけ
   - rule: requirement-smell
     line: 113
     text: 等を毀損する態様で乙名称等を使用しないこと
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: false-positive
     note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
-  - rule: undefined-term
-    line: 119
-    text: 本研究開始の事実として、別紙●●に定める内容を開示等、発表または公開することがで
-    message: 「本研究開始」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 定義語「本研究」に語が続いただけで、別の定義語の形ではない
-  - rule: undefined-term
-    line: 123
-    text: 本研究期間中および本研究終了日から6ヶ月以内に行われる本公表については、以下の各
-    message: 「本研究期間中」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 定義語「本研究」に語が続いただけで、別の定義語の形ではない
-  - rule: undefined-term
-    line: 123
-    text: 本研究終了日から6ヶ月以内に行われる本公表については、以下の各号に規定する事項を
-    message: 「本研究終了日」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 定義語「本研究」に語が続いただけで、別の定義語の形ではない
   - rule: use-before-definition
     line: 129
     text: 秘密情報等が含まれていると判断したときまたは甲が本研究に関して特許出願を行うに際
@@ -151,12 +103,6 @@ findings:
     message: 「は」で出した主題から述語まで 251 字あります（200 字まで）
     verdict: correct
     note: 第11条の「甲および乙は」から述語まで 251 字
-  - rule: announced-count-mismatch
-    line: 149
-    text: 一つに該当する情報については、秘密情報等に該当しない。
-    message: 「一つ」と予告していますが、すぐ下の箇条書きは5項目です
-    verdict: false-positive
-    note: 「いずれか一つに該当する」は該当の条件で、項目の数の予告ではない
   - rule: teki-overuse
     line: 215
     text: 2　乙は、本研究が技術的に見て成功する可能性が低いと合理的に判断されるまたは事業
@@ -175,9 +121,3 @@ findings:
     message: 「すべて」と書いています（この文書はふつう「全て」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: ここだけ「すべて」、ほかは「全て」
-  - rule: numbering-gap
-    line: 235
-    text: 第18条　本契約に関する知的財産権についての紛争については、日本国法を準拠法とし
-    message: 「第18条」の次が「第18条」です（19 番目のはず）
-    verdict: false-positive
-    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない

@@ -1,30 +1,6 @@
 id: mext-giga-studx-mail-90
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 第90号 2025/11/12
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
-  - rule: max-sentence-length
-    line: 3
-    text: 第90号 2025/11/12
-    message: この文は 157 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the issue's header lines (number, section label, article title, school) have no 。 and are read as one sentence with the next lines
-  - rule: preamble-length
-    line: 3
-    text: 第90号 2025/11/12
-    message: 最初の見出しまでに 12 段落あります（2 段落まで）
-    verdict: false-positive
-    note: a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block
-  - rule: teki-overuse
-    line: 3
-    text: 第90号 2025/11/12
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: counts 的 across the header lines and the first body sentence, which have no 。 between them
   - rule: undefined-acronym
     line: 5
     text: DXで授業デザインの変革へ ～主体的に問題解決に取り組む子供の育成を目指して～
@@ -33,9 +9,10 @@ findings:
     note: DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
   - rule: max-sentence-length
     line: 6
-    what: 「令和6年度リーディングDXスクールの指定を受け、…研究・実践を進めています。」 is 78 characters
-    verdict: missed
-    note: "rekeyed: chaffjs 0.36.0 joins the header lines above to it (line 3, false positive); lab main reads it alone"
+    text: 令和6年度リーディングDXスクールの指定を受け、伝統的な「3S学習」を基盤に、子
+    message: この文は 78 文字あります（70 文字まで）
+    verdict: correct
+    note: "rekeyed: chaffjs 0.36.0 joins the header lines above to it (line 3, false positive); lab main reads it alone; found by chaffjs 0.38.0"
   - rule: max-sentence-length
     line: 7
     text: クラウドを活用し、学びプランを子供と共有したり、個人学習と集団学習を同時並行に進
@@ -89,32 +66,15 @@ findings:
     text: １回１テーマからの参加も可能です。皆様のご参加をお待ちしています。
     message: 全角の「１」と書いています（この文書はふつう半角の「1」。12 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 61
-    text: よりよい「GIGA StuDXメールマガジン」を発信していくために、ご意見やご感
-    message: 「よりよい」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: 「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is
-  - rule: max-sentence-length
-    line: 66
-    text: 「リーディングDXスクールの報告書は実践の宝庫」
-    message: この文は 105 文字あります（70 文字まで）
-    verdict: false-positive
-    note: a quoted title line with no 。 is joined with the hard-wrapped lines after it
   - rule: max-sentence-length
     line: 67
-    what: 「上記の【チームの推し実践】でも…数多くあります。」 is 81 characters, across a hard wrap
-    verdict: missed
-    note: "rekeyed: chaffjs 0.36.0 joins the quoted title above to it (line 66, false positive); lab main reads it alone"
+    text: 上記の【チームの推し実践】でもリーディングDXスクール事業指定校の取組をご紹介し
+    message: この文は 81 文字あります（70 文字まで）
+    verdict: correct
+    note: "rekeyed: chaffjs 0.36.0 joins the quoted title above to it (line 66, false positive); lab main reads it alone; found by chaffjs 0.38.0"
   - rule: latin-spacing
     line: 78
     text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。21 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose
-  - rule: email-greeting-closing
-    line: 80
-    text: 03-5253-4111 （内線4039）
-    message: 終わりに結びの言葉がありません
-    verdict: false-positive
-    note: a mail-magazine issue ends with the office's contact block, not a closing line, by design

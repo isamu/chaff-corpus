@@ -30,12 +30,6 @@ findings:
     message: '"(" is never closed'
     verdict: correct
     note: the parenthesis opened before "commonly referred to as" is never closed
-  - rule: unused-definition
-    line: 85
-    text: “Audio content” refers to the voices of
-    message: '"Audio content" is defined but never used'
-    verdict: false-positive
-    note: the defined term is the heading of its own section, which the definition introduces
   - rule: one-sentence-paragraph-run
     line: 103
     text: Provide attendees with an accessible cop

@@ -49,15 +49,3 @@ findings:
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: correct
     note: can't beside 'cannot' elsewhere; a minority contraction
-  - rule: unknown-word
-    line: 190
-    text: facie, whatever the parties to the contr
-    message: '"facie" is not in the dictionary; did you mean "facia"?'
-    verdict: false-positive
-    note: the Latin legal phrase 'prima facie'
-  - rule: comparative-without-baseline
-    line: 193
-    text: more precise, it created
-    message: '"more precise" does not say what it is compared with'
-    verdict: false-positive
-    note: the set phrase 'to be more precise' corrects the clause before; nothing is compared

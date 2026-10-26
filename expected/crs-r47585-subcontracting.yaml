@@ -66,11 +66,6 @@ findings:
     text: Contracting officers have a few obligati
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: unknown-word
-    line: 119
-    text: awardee (e.g., Small Disadvantaged Busin
-    message: '"awardee" is not in the dictionary; did you mean "awarded"?'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 127
     text: After reviewing its policies, DOD found
@@ -85,6 +80,11 @@ findings:
     line: 143
     text: To ensure a "fair proportion" of small b
     message: This sentence runs 48 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 147
+    text: Additional, related information on feder
+    message: This sentence runs 54 words (limit 45)
     verdict: unjudged
   - rule: undefined-acronym
     line: 147

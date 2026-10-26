@@ -31,11 +31,6 @@ findings:
     text: 消費税の納税義務者は、国内において課税資産の譲渡等を行った事業者（注1）等とされ
     message: この文は 147 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 80
-    text: 消費税の納税義務者は、国内において課税資産の譲渡等を行った事業者（注1）等とされ
-    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 82
     text: 事業者は、(4)で後述する一部の場合等を除いて、基準期間（注2）における課税売上
@@ -170,11 +165,6 @@ findings:
     line: 204
     text: そこで、延べ4,796法人のうち、元年度から4年度までの間に合併又は分割を行って
     message: この文は 288 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-ten
-    line: 204
-    text: そこで、延べ4,796法人のうち、元年度から4年度までの間に合併又は分割を行って
-    message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 204

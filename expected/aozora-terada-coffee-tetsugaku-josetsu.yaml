@@ -1,42 +1,15 @@
 id: aozora-terada-coffee-tetsugaku-josetsu
 chaff: 0.36.0
 findings:
-  - rule: repeated-sentence-ending
-    line: 7
-    text: そうして牛乳に入れるための砂糖の壺から随時に歯みがきブラシの柄などでしゃくい出し
-    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: "an essayist's cadence of である endings in literary prose"
-  - rule: clause-chain
-    line: 11
-    text: そのころの給仕人は和服に角帯姿であったが、震災後向かい側に引っ越してからそれがタ
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 11
-    text: そのころの給仕人は和服に角帯姿であったが、震災後向かい側に引っ越してからそれがタ
-    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
-    verdict: unjudged
-  - rule: clause-chain
-    line: 13
-    text: やはり人造でもマーブルか、乳色ガラスのテーブルの上に銀器が光っていて、一輪のカー
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 19
-    text: これによって自分の本然の仕事がいくぶんでも能率を上げることができれば、少なくも自
-    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: "an essayist's cadence of である endings in literary prose"
   - rule: teki-overuse
     line: 19
     text: 芸術でも哲学でも宗教でも、それが人間の人間としての顕在的実践的な活動の原動力とし
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: false-positive
-    note: "1930s literary prose stacking 〜的 adjectives (顕在的実践的), the author's style"
+    note: 1930s literary prose stacking 〜的 adjectives (顕在的実践的), the author's style
   - rule: teki-overuse
     line: 20
     text: 前者は信仰的主観的であるが、後者は懐疑的客観的だからかもしれない。
     message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: false-positive
-    note: "a deliberate parallel (信仰的主観的 / 懐疑的客観的)"
+    note: a deliberate parallel (信仰的主観的 / 懐疑的客観的)

@@ -3,6 +3,12 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 5
-    what: 差出人の名前が「総務部の〇〇」のまま（22行目の署名も）
-    verdict: missed
-    note: Japanese 〇〇 blank, not found
+    text: 〇〇です。
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: Japanese 〇〇 blank, not found; found by chaffjs 0.38.0
+  - rule: unfilled-placeholder
+    line: 22
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged

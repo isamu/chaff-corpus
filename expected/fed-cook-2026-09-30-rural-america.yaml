@@ -197,50 +197,8 @@ findings:
     message: This sentence runs 30 words (limit 25)
     verdict: correct
   - rule: undefined-acronym
-    line: 69
-    text: "FEDS Notes (Washington: Board of Governo"
-    message: '"FEDS" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: FEDS Notes is the title of a Board publication series, not an acronym to expand
-  - rule: max-sentence-length
-    line: 73
-    text: See Alexander Hermann and Peyton Whitney
-    message: This sentence runs 31 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 75
-    text: See Alexander Hermann and Peyton Whitney
-    message: This sentence runs 28 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: undefined-acronym
     line: 77
     text: SBA, August). An "establishment" is defi
     message: '"SBA" is used without an expansion (3 such acronyms)'
     verdict: false-positive
     note: "the publisher's short name after its full name in the same citation (U.S. Small Business Administration … Washington: SBA)"
-  - rule: max-sentence-length
-    line: 79
-    text: Brian Thiede, Lillie Greiman, Stephan We
-    message: This sentence runs 28 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 83
-    text: Tim Wojan and Timothy Parker (2017), "In
-    message: This sentence runs 31 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 85
-    text: Bethany Greene, Anthony Tringali, and Ri
-    message: This sentence runs 35 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 87
-    text: For example, see Lisa D. Cook (2024), "G
-    message: This sentence runs 39 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence

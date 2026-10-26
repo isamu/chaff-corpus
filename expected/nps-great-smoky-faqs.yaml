@@ -2,12 +2,6 @@ id: nps-great-smoky-faqs
 chaff: 0.36.0
 findings:
   - rule: wordy-phrase
-    line: 65
-    text: Pets are allowed in campgrounds, picnic
-    message: '"at all times" can be said in fewer words'
-    verdict: false-positive
-    note: "'at all times' states the scope of a rule (a pet always on a leash), not padding"
-  - rule: wordy-phrase
     line: 91
     text: The park is open year-round, 24/7, with
     message: '"with the exception of" can be said in fewer words'
@@ -22,12 +16,6 @@ findings:
     text: Great Smoky Mountains National Park offe
     message: '"with the exception of" can be said in fewer words'
     verdict: correct
-  - rule: wordy-phrase
-    line: 197
-    text: All food, trash, and any equipment used
-    message: '"at all times" can be said in fewer words'
-    verdict: false-positive
-    note: "'at all times' states the scope of a rule (food always stored), not padding"
   - rule: which-that-consistency
     line: 233
     text: which will be scheduled on our calendar.

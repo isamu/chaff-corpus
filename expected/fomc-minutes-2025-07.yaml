@@ -1,21 +1,11 @@
 id: fomc-minutes-2025-07
 chaff: 0.33.0
 findings:
-  - rule: undefined-acronym
-    line: 5
-    text: FOMC Minutes
-    message: '"FOMC" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
   - rule: ngram-repetition
     line: 19
     text: Over the intermeeting period, the expect
     message: '"were little changed" appears 6 times (limit 5)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 25
-    text: S&P 500 index continued to move above lo
-    message: '"S&P" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 29
     text: The manager observed that two factors co
@@ -35,11 +25,6 @@ findings:
     line: 41
     text: Recent data indicated that labor market
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 57
-    text: VIX—a forward-looking measure of near-te
-    message: '"VIX" is used without an expansion (4 such acronyms)'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 69

@@ -13,54 +13,18 @@ findings:
     message: 「"は冗長な表現で」が 6 回出てきます（5 回まで）
     verdict: false-positive
     note: each dictionary entry is written with the same formula (…は冗長な表現です), as a reference list is
-  - rule: colon-lead-in
-    line: 13
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
-  - rule: colon-lead-in
-    line: 21
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
-  - rule: colon-lead-in
-    line: 29
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
-  - rule: colon-lead-in
-    line: 37
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
   - rule: bracket-width-consistency
     line: 47
     text: ）「行動（する）」、「プログラム（する）」
     message: 括弧を「）」と書いています（この文書はふつう「)」。5 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width 例）（する） while the README's other parentheses are half-width
-  - rule: colon-lead-in
-    line: 53
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
   - rule: bracket-width-consistency
     line: 63
     text: ）「行動（する）」、「プログラム（する）」
     message: 括弧を「）」と書いています（この文書はふつう「)」。5 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width 例）（する） while the README's other parentheses are half-width
-  - rule: colon-lead-in
-    line: 69
-    text: 参考:**
-    message: コロンで箇条書きへ渡す文が 1000 字あたり 4.6 個あります（2 個まで）
-    verdict: false-positive
-    note: "a bold 参考: label before each entry's reference link, the README's per-entry template"
   - rule: no-mixed-desumasu
     line: 110
     text: 例) [dict1](#dict1)は無効化、[dict5](#dict5)で"

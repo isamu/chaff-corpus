@@ -13,12 +13,6 @@ findings:
     message: '"RIN" is used without an expansion (5 such acronyms)'
     verdict: false-positive
     note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
-  - rule: request-without-deadline
-    line: 38
-    text: Please do not submit comments by email.
-    message: This request says neither who should do it nor by when
-    verdict: false-positive
-    note: a prohibition ('do not submit comments by email'), not a request that needs a deadline
   - rule: undefined-acronym
     line: 41
     text: MS H21-8, Atlanta, GA 30329
@@ -151,15 +145,3 @@ findings:
     message: This sentence runs 62 words (limit 45)
     verdict: correct
     note: a 62-word question
-  - rule: request-without-deadline
-    line: 111
-    text: Please provide examples from current pra
-    message: This request says neither who should do it nor by when
-    verdict: false-positive
-    note: a request for comments whose deadline is given once in the notice's DATES section
-  - rule: request-without-deadline
-    line: 113
-    text: Please provide examples from current pra
-    message: This request says neither who should do it nor by when
-    verdict: false-positive
-    note: a request for comments whose deadline is given once in the notice's DATES section

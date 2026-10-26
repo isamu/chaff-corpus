@@ -5,34 +5,34 @@ findings:
     line: 1
     sha256: f7dcf743b34531df8704148600c7c56ad2846c5fb908354a0ffd846525279215
     verdict: correct
-    note: "the page spells kilometer/kilometre both ways"
+    note: the page spells kilometer/kilometre both ways
   - rule: contraction-consistency
     line: 4
     sha256: c8f03629e3b8348415e73feff4b8eeb6d72e1d10bf7012119e7c578cfa86d232
     verdict: correct
-    note: "the minority form; the page mostly writes it is"
+    note: the minority form; the page mostly writes it is
   - rule: max-paragraph-length
     line: 4
     sha256: b2d849e0b8a422751093c6bf7ac6c93215d3335b0801f8f4494be164d30e66a3
     verdict: correct
-    note: "eight sentences in one paragraph, as stated"
+    note: eight sentences in one paragraph, as stated
   - rule: max-paragraph-length
     line: 10
     sha256: a59f2fa9281708245b7378c5553662c0e3e00ec1a43e0a83e9aa378fe39163b6
     verdict: correct
-    note: "nine sentences in one paragraph, as stated"
+    note: nine sentences in one paragraph, as stated
   - rule: max-paragraph-length
     line: 13
     sha256: 6439bcd17fd29e74c7645c0090f63ee3bf309bf9e42e7b24741223d63defd438
     verdict: correct
-    note: "twelve sentences in one paragraph, as stated"
+    note: twelve sentences in one paragraph, as stated
   - rule: spelling-consistency
     line: 13
     sha256: 227887560c06868a0bfbdc0476d84cc280a98be9719042ed6cba03e456fd1a9c
     verdict: correct
-    note: "the page spells center/centre both ways"
+    note: the page spells center/centre both ways
   - rule: spelling-consistency
     line: 13
     sha256: bec402fa15ce268194f11e786028a4e668c01bb62467a3db0399576d2d2a3d2b
     verdict: correct
-    note: "the page spells kilometer/kilometre both ways"
+    note: the page spells kilometer/kilometre both ways

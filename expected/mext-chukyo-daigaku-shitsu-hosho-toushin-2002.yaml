@@ -152,11 +152,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 73
-    text: (4)  現行の設置認可は，前述のように大学の質の保証の観点で一定の役割を果たし
-    message: 「は」で出した主題から述語まで 142 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 77
     text: (1)  大学の設置認可制度は，その教育研究の質を保証する上で一定の役割を果たし
     message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
@@ -200,11 +195,6 @@ findings:
     line: 96
     text: (5)  したがって，国の設置認可は，大学，大学院の基本組織である学部，研究科等
     message: この文は 151 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 96
-    text: (5)  したがって，国の設置認可は，大学，大学院の基本組織である学部，研究科等
-    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 113
@@ -310,11 +300,6 @@ findings:
     line: 153
     text: (2)  このため，大学の教育研究活動等の状況について，様々な第三者評価機関のう
     message: この文は 168 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 153
-    text: その際，大学の理念や特色は多様であるため，各々の評価機関が個性輝く大学づくりを推
-    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 154

@@ -59,12 +59,6 @@ findings:
     line: 231
     what: '"Sechedule" is a misspelling of "Schedule"'
     verdict: missed
-  - rule: name-variant
-    line: 247
-    text: Kubernetes Release Schedule 2021 (Propos
-    message: '"Kubernetes Release Schedule" is one letter away from "Kubernetes Release Sechedule", which the document uses more than once'
-    verdict: false-positive
-    note: points at the correct spelling "Schedule"; the misspelling "Sechedule" (lines 218, 231, 258) is the one to flag, because it occurs more often
   - rule: orthographic-variant
     line: 256
     text: Kubecon Break (Oct 12-15) |

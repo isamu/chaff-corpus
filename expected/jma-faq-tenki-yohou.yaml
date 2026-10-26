@@ -26,12 +26,6 @@ findings:
     text: "## 「降水確率」の意味について教えてください。"
     message: 見出し「「降水確率」の意味について教えてください。」だけ「。」で終わっています（ほかの見出しは「天気は気象衛星で予想しているのですか？」など 21 個が「：」「。」なしで終わる）
     verdict: correct
-  - rule: teki-overuse
-    line: 33
-    text: 降水確率は降水の有無のみについて確率を示すもので、降水が連続的か断続的か、一時的
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: 「連続的」「断続的」「一時的」は雨の降り方を分ける予報用語
   - rule: topic-predicate-distance
     line: 33
     text: 降水確率は降水の有無のみについて確率を示すもので、降水が連続的か断続的か、一時的
@@ -47,24 +41,6 @@ findings:
     text: の大気の状態の要素には地上付近や上空の気温もあります。数値シミュレーションで求め
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 41
-    text: このため、同じ場所の天気予報でも、予報業務許可事業者によって異なった内容になる場
-    message: 「予報業務許可事業者」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「予報業務許可事業者」は気象業務法の用語
-  - rule: max-kanji-continuous
-    line: 41
-    text: テレビ局自身が予報業務許可を得ているところもありますが、多くのテレビ局では、気象
-    message: 「予報業務許可事業者」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「予報業務許可事業者」は気象業務法の用語
-  - rule: max-kanji-continuous
-    line: 43
-    text: なお、予報業務許可事業者には、国家資格である気象予報士を置き、予報は気象予報士に
-    message: 「予報業務許可事業者」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「予報業務許可事業者」は気象業務法の用語
   - rule: no-doubled-joshi
     line: 51
     text: の全国の天気予報の図の右上に、記号の凡例を示しています。これらの記号は、天気変化
@@ -95,18 +71,6 @@ findings:
     text: 地球大気は「流体」であり、コップの水の一部をかき回すと、その動きはやがてコップの
     message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 97
-    text: 数値予報は、ある時点の地球大気全体の状態（気圧、気温、水蒸気量、風）をなるべく正
-    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
-    verdict: unjudged
-    note: chaffjs 0.36.0 gives it and 0.37.0 does not; left unjudged so the version bump does not count a lost correct finding
-  - rule: empty-intensifier
-    line: 105
-    text: 天気図を作成するためには、日本国内だけでなく、近隣の諸外国や航行中の船舶から送信
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 何が不可欠か（各国・船舶からの観測データ）を書いている
   - rule: topic-predicate-distance
     line: 105
     text: このような観測データの送信は国際的な取り決めにより、世界各国で同時に３時間ごとに

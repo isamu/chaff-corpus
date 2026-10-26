@@ -1,21 +1,9 @@
 id: gutenberg-ibsen-dolls-house
 chaff: 0.36.0
 findings:
-  - rule: demonstrative-opener-run
-    line: 546
-    text: It was no easy matter to get away, I can
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: spoken dialogue in a play
   - rule: name-variant
     line: 945
     text: Mrs LINDE starts, trembles, and
     message: '"Mrs LINDE" is written "Mrs Linde" elsewhere in the document (case, width or punctuation)'
     verdict: correct
     note: the stage directions write 'Mrs Linde' everywhere else; two directions capitalise it as 'Mrs LINDE'
-  - rule: demonstrative-opener-run
-    line: 2422
-    text: That isn’t the reason, Torvald. It is fo
-    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
-    verdict: false-positive
-    note: spoken dialogue in a play

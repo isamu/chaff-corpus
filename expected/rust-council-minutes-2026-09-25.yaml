@@ -26,6 +26,10 @@ findings:
     sha256: ff57070c60be223f8be65231c85eb1dc2e42b65de4d6df884ca1d839f2bfbcd2
     verdict: correct
     note: a misspelling
+  - rule: max-paragraph-length
+    line: 145
+    sha256: 4bda9b1f5b39b1daf0285fa501ec53d49a97131950d0023868f3cada8f41b0a6
+    verdict: unjudged
   - rule: article-sound
     line: 147
     sha256: 8848e7f9410451aa7a2e7461325d7e2413c6c24f56bde60d6934a58abe451f4e

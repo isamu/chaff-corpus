@@ -10,11 +10,6 @@ findings:
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27"
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27日）」は 41 文字あります（40 文字まで）
     verdict: unjudged
-  - rule: email-greeting-closing
-    line: 5
-    text: 【発行】
-    message: 書き出しに挨拶がありません
-    verdict: unjudged
   - rule: undefined-acronym
     line: 7
     text: HPに掲載しました！
@@ -51,11 +46,6 @@ findings:
     message: この文は 115 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
-    line: 50
-    text: 初等中等教育局 初等中等教育企画課 地方教育行政係
-    message: この文は 71 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 58
     text: 特集は「学習指導要領改訂に向けて～各教科等別ワーキンググループにおける審議状況①
     message: この文は 120 文字あります（70 文字まで）
@@ -74,21 +64,6 @@ findings:
     line: 80
     text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
     message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 80
-    text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
-    message: この文は 87 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 85
-    text: 高等教育局 高等教育企画課高等教育政策室 政策総括係
-    message: この文は 74 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 98
-    text: 一般社団法人授業目的公衆送信補償金等管理協会（SARTRAS）「さあとらす」編集
-    message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 111
@@ -119,11 +94,6 @@ findings:
     line: 153
     text: 当日は、式典・特別講演・ポスターセッション・表彰式の４本立てで、ポスターセッショ
     message: この文は 82 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 162
-    text: 総合教育政策局 地域学習推進課 図書館・学校図書館振興室
-    message: この文は 73 文字あります（70 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 172
@@ -159,11 +129,6 @@ findings:
     line: 187
     text: 法科大学院協会では、2026年4月18日（土）に法科大学院の魅力を伝える合同説明
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 196
-    text: 高等教育局 専門教育課 専門職大学院室 法科大学院係
-    message: この文は 71 文字あります（70 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 206

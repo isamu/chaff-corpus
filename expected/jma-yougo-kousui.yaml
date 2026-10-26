@@ -7,12 +7,6 @@ findings:
     message: 見出し「雨に関する用語」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page itself goes from h1 to h3
-  - rule: fullwidth-alnum-consistency
-    line: 22
-    text: 0.5mm未満）による弱い雨。
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。13 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers, decimals and fractions half-width"
   - rule: orthographic-variant
     line: 26
     text: ともなう雨。
@@ -23,12 +17,6 @@ findings:
     text: ともなった風。
     message: 「ともなう」と書いています（この文書はふつう「伴う」と書く語です。12 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: unused-definition
-    line: 54
-    text: 「風雨が強い」とはせずに、風と雨について個別に強さを示す。例えば、「～の風が強く
-    message: 「風雨が強い」を定義していますが、本文で使っていません
-    verdict: false-positive
-    note: a phrase quoted as what not to write, not a definition
   - rule: orthographic-variant
     line: 164
     text: ともなう雨域。線状降水帯に関する気象情報についてを参照。
@@ -88,6 +76,11 @@ findings:
     text: ，吹雪や降雪時において、視程より近い距離に雪以外に識別できる地物が無い状況。
     message: 読点を「，」と書いています（この文書はふつう「、」。100 箇所のうち 1 箇所が違う）
     verdict: correct
+  - rule: orthographic-variant
+    line: 427
+    text: 吹雪や降雪時において、視程より近い距離に雪以外に識別できる地物が無い状況。
+    message: 「吹雪」と書いています（この文書はふつう「ふぶき」と書く語です。6 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: orthographic-variant
     line: 427
     text: 無い状況。

@@ -511,16 +511,6 @@ findings:
     text: なお、個人情報取扱事業者は、法第34条第2項の規定に基づき請求に係る保有個人デー
     message: 接続詞で始まる段落が 3 続いています（2 まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 3149
-    text: 個人情報取扱事業者は、本人から、当該本人が識別される保有個人データが、法第18条
-    message: 「は」で出した主題から述語まで 232 字あります（200 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 3232
-    text: 刷り直し及び回収作業に多額の費用を要するとして、名簿の増刷時の訂正を約束する場合
-    message: 「刷る」と書いています（この文書はふつう「する」と書く語です。3290 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 3252
     text: ）「本人に通知」については、2-14（本人に通知）を参照のこと。

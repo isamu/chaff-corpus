@@ -6,11 +6,6 @@ findings:
     text: "#### Version 3.1.0"
     message: Heading "Version 3.1.0" goes from level 1 to level 4 (expected 2)
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 5
-    text: The key words "MUST", "MUST NOT", "REQUI
-    message: This sentence runs 45 words (limit 40)
-    verdict: unjudged
   - rule: heading-level-skip
     line: 71
     text: "##### OpenAPI Document"

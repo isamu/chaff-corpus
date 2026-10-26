@@ -78,6 +78,10 @@ findings:
     sha256: 98595fada453e013d5dca8e0b7766cc3d8263174d352bad3bc0e38b5e3e9efe5
     verdict: unjudged
   - rule: max-paragraph-length
+    line: 186
+    sha256: 0fc1ee30641b85ed4b067b293ae18af7e98897c86f910ce1e16c56d6282949c2
+    verdict: unjudged
+  - rule: max-paragraph-length
     line: 204
     sha256: 57ec2a95cba7f132f7638fe29febbcee6b76e3231066e6546d27b7dda77fadbb
     verdict: unjudged

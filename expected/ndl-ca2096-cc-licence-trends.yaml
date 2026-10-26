@@ -30,18 +30,6 @@ findings:
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。25 箇所のうち 3 箇所が違う）
     verdict: false-positive
     note: "a table caption: the label 表 set off from the caption by a space"
-  - rule: acronym-expansion-conflict
-    line: 38
-    text: SA
-    message: 「SA」をここでは「表示-非営利-継承」と、27 行目では「表示-継承」と展開しています
-    verdict: false-positive
-    note: the parenthesis names the whole licence (表示-非営利-継承), not the expansion of SA alone
-  - rule: acronym-expansion-conflict
-    line: 48
-    text: ND
-    message: 「ND」をここでは「表示-非営利-改変禁止」と、37 行目では「表示-改変禁止」と展開しています
-    verdict: false-positive
-    note: the parenthesis names the whole licence (表示-非営利-改変禁止), not the expansion of ND alone
   - rule: topic-predicate-distance
     line: 53
     text: CCライセンスは、誰にでも分かるように書かれた「コモンズ証」、法律の専門家向けに
@@ -76,11 +64,6 @@ findings:
     text: こうしたCCライセンスの使われ方について、クリエイティブ・コモンズは、「功績を認
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 87
-    text: PD BYは、パブリックドメインの文化遺産資料のデータだけでなく、著作権が認めら
-    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 91
     text: の分野固有のCCシグナルの検討も進めているとされている。CCシグナルは、基本的に
@@ -91,11 +74,6 @@ findings:
     line: 91
     text: CCシグナルは、基本的には「お願い」にとどまるものと考えられるが、国際的に統一さ
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 91
-    text: また、クリエイティブ・コモンズは、所蔵機関のクレジット表記を求めたいのであれば、
-    message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: unjudged
   - rule: teki-overuse
     line: 97
@@ -138,12 +116,6 @@ findings:
     text: (参照 2026-01-22).
     message: 丸括弧を、全角で 50 箇所、半角で 16 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
-  - rule: taigen-dome-in-prose
-    line: 112
-    text: 「特によくある質問」の「クリエイティブ・コモンズとはなんですか？」を参照。
-    message: 本文に体言止めが 20 文あります（4 文まで）
-    verdict: false-positive
-    note: entries of the notes and references list counted as prose sentences
   - rule: date-format-consistency
     line: 127
     text: 令和3年10月12日（令和3年（ワ）第5285号）がある。
@@ -186,27 +158,3 @@ findings:
     message: 「CCライセンスが付与された著作物をAI学習に使用する場合、CCライセンスの条件を遵守する必要がないシナリオは数多く存在する」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
     verdict: false-positive
     note: the quotation's source is the document cited on the line above, in the same note
-  - rule: latin-spacing
-    line: 226
-    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。25 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: the official name of the CC licence, written with spaces as the portal's licence notice writes it
-  - rule: latin-spacing
-    line: 226
-    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
-    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the official name of the CC licence, written with spaces as the portal's licence notice writes it
-  - rule: no-mixed-desumasu
-    line: 226
-    text: ライセンスの内容を知りたい方は https://creativecommons.
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: the portal's licence notice appended to the article, in です/ます; not part of the article's prose
-  - rule: no-mixed-desumasu
-    line: 226
-    text: 本著作（CA2096）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: the portal's licence notice appended to the article, in です/ます; not part of the article's prose

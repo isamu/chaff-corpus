@@ -86,6 +86,11 @@ findings:
     text: (In fact, if you’re really getting into
     message: This sentence runs 47 words (limit 45)
     verdict: unjudged
+  - rule: bold-label-list
+    line: 89
+    text: 4.  **It’s a more effective use of your
+    message: '"It’s a more effective use of your time" and other bold labels open 5 list items (5 needed)'
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 99
     text: " -- and, more importantly, it’s not a"

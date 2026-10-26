@@ -1,24 +1,6 @@
 id: kantei-unga80-general-debate-speech
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 23日 総理の演説・記者会見など
-    message: 半角の「23」と書いています（この文書はふつう全角の「２３」。23 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 7年9月23日 総理の演説・記者会見など
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。17 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 9月23日 総理の演説・記者会見など
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。17 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
   - rule: taigen-dome-in-prose
     line: 8
     text: 歴史上初めての総力戦となった第一次世界大戦。その再来を防ぐべく設立された国際連盟
@@ -29,34 +11,11 @@ findings:
     text: その主要な責任を負うのが安全保障理事会であり、国連の設立に主導的な役割を果たした
     message: この文は 105 文字あります（100 文字まで）
     verdict: correct
-  - rule: unqualified-superlative
-    line: 11
-    text: 国連憲章（注）に規定される国連の最も大事な目的は国際の平和及び安全の維持です。そ
-    message: 「最も」に比べる相手がありません（そういう言い方が 5 箇所）
-    verdict: false-positive
-    note: 「国連の最も大事な目的」は比べる範囲（国連の目的）が書かれている
-  - rule: max-kanji-continuous
-    line: 15
-    text: 湾岸戦争では、安全保障理事会決議により、加盟国による武力行使が容認されることにな
-    message: 「安全保障理事会決議」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「安全保障理事会決議」「安全保障理事会常任理事国」は機関名・用語
-  - rule: max-kanji-continuous
-    line: 18
-    text: 国際の平和と安全に特別な責任を有するはずの安全保障理事会常任理事国が、隣国を侵略
-    message: 「安全保障理事会常任理事国」は漢字が 12 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「安全保障理事会決議」「安全保障理事会常任理事国」は機関名・用語
   - rule: orthographic-variant
     line: 27
     text: 揺るがしかねない、極めて深刻で憂慮すべき局面にあります。今般のイスラエル軍による
     message: 「揺るがす」と書いています（この文書はふつう「ゆるがす」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 28
-    text: の傷病者の方々の日本での治療を始めとする人道支援を通じ、常にガザの人々の命と尊厳
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 30
     text: 最も重要なことは、パレスチナが持続可能な形で存在をし、イスラエルと共存することで
@@ -78,12 +37,6 @@ findings:
     text: の共通の父祖の名前を冠した合意であります。この２年、アブラハム合意の実現に向けた
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 36
-    text: 議長、核による脅しが、今、安全保障理事会常任理事国により平然と行われています。核
-    message: 「安全保障理事会常任理事国」は漢字が 12 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「安全保障理事会決議」「安全保障理事会常任理事国」は機関名・用語
   - rule: unqualified-superlative
     line: 36
     text: 国内外に、世界で唯一の被爆国である我が国に対して、核兵器禁止条約への参加を求める
@@ -125,12 +78,6 @@ findings:
     text: その土台となるのは、過去を直視する勇気と誠実さ、人権意識の涵養（かんよう）、使命
     message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 58
-    text: たちました。これは、我が日本が終戦後初めて参加した本格的な国際会議でありました。
-    message: 「たつ」と書いています（この文書はふつう「立つ」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「（年月が）たつ」（経つ）と「立つ」は別の語
   - rule: no-doubled-joshi
     line: 59
     text: の恒久平和の実現のため、力を尽くしてきました。

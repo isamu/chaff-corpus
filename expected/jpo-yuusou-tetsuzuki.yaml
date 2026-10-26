@@ -1,12 +1,6 @@
 id: jpo-yuusou-tetsuzuki
 chaff: 0.36.0
 findings:
-  - rule: repeated-sentence-head
-    line: 9
-    text: 〒100-8915
-    message: 「〒100-8」で始まる文が 4 続いています（3 まで）
-    verdict: false-positive
-    note: postal address blocks (〒 line, address, addressee) read as sentences starting the same way
   - rule: hankaku-kana
     line: 36
     text: ､所要額の切手を貼付してください）を同封してください。特許庁で受付スタンプを押印

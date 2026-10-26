@@ -58,38 +58,8 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 1
-    text: 1報告セグメント計16,513116.2館外飲食事業お祭り一番館等394134.
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 1飲食部門3,736116.7その他301112.1報告セグメント計16,513
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2館外飲食事業お祭り一番館等394134.3合計16,907116.5（注）主な
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
     text: 3,736116.7その他301112.1報告セグメント計16,513116.2
     message: 半角の「3」と書いています（この文書はふつう全角の「３」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 3合計16,907116.5（注）主な相手先別の売上実績及び当該売上実績の総売上
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 5（注）主な相手先別の売上実績及び当該売上実績の総売上実績に対する割合は、当該割
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 7その他301112.1報告セグメント計16,513116.2館外飲食事業お祭り
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。34 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 1

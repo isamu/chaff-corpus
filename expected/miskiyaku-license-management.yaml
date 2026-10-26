@@ -6,11 +6,6 @@ findings:
     text: 物であればリアクションに使用される絵文字が挙げられますが、それだけでは無く、運営
     message: 「物」と書いています（この文書はふつう「もの」と書く語です。7 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 6
-    text: より良い環境を提供したいという思いにより、製作者のコンテンツに対する配慮が欠けな
-    message: 「より良い」は、何と比べているかが書かれていません
-    verdict: unjudged
   - rule: ngram-repetition
     line: 6
     text: より良い環境を提供したいという思いにより、製作者のコンテンツに対する配慮が欠けな
@@ -25,11 +20,6 @@ findings:
     line: 10
     text: 私の運営するサーバーは趣味用だから、特定のコミュニティー、ローカル向けだからとい
     message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 41
-    text: こちらの機能は数回の操作で欲しい絵文字が手に入る点から非常に便利な機能ではあるの
-    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 57
@@ -50,11 +40,6 @@ findings:
     line: 68
     text: 事が必要です。
     message: 「事」と書いています（この文書はふつう「こと」と書く語です。28 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 74
-    text: 自身が運営するサービス（サーバー）で扱うコンテンツは、どういったライセンス管理を
-    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 76

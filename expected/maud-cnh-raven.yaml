@@ -91,9 +91,9 @@ findings:
     line: 418
     sha256: 756c0f0ea21448bcd82631b08de4f828d2da9a1a31f0d654f6acd523ac0da2e0
     verdict: unjudged
-  - rule: dangling-reference
+  - rule: numbering-gap
     line: 430
-    sha256: a7118ac0e4ca06f95ae08b410062e55116da4cf93f839ed6e1b03462a05156a6
+    sha256: 186d74bc3a814b8afb3417c89b910ed475a36b76b77e585ac3ee5305caa262f0
     verdict: unjudged
   - rule: requirement-smell
     line: 430
@@ -186,10 +186,6 @@ findings:
   - rule: defined-term-form
     line: 682
     sha256: b2893d9fbf4f355ddf44131350c6e0bbc5fb1b9bf4fa590f837b53558f282d0f
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 682
-    sha256: cf37a65f2be1169fd795f9525d582a8d7430de827ff04e9ba58639c970f88a60
     verdict: unjudged
   - rule: numbering-gap
     line: 694
@@ -331,14 +327,6 @@ findings:
     line: 1015
     sha256: 49e48db7a89b385f3fc3f65dfba282e93e9f7952f69b0cdc9bf52f9b4fa9fc60
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 1027
-    sha256: 2c222b09968e17e0242d208c8cb81343f7c9d02adf6e7ffbd1a5cea297a9b25c
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 1027
-    sha256: e7ca0ef677604d0e5a3288c1c4d4582a2a5121d0f981d931a00ccbeaf78a9cfd
-    verdict: unjudged
   - rule: numbering-gap
     line: 1027
     sha256: e7ca0ef677604d0e5a3288c1c4d4582a2a5121d0f981d931a00ccbeaf78a9cfd
@@ -358,10 +346,6 @@ findings:
   - rule: max-paragraph-length
     line: 1054
     sha256: d9dddda89ab973fefb73367978967771c5ca57316584ac7fab6e3176315dd68d
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 1054
-    sha256: 4dab69ac0b574ee9276057e07d30b95a2ec3f73676de73fbd64879e0aa3aca54
     verdict: unjudged
   - rule: vague-deadline
     line: 1054

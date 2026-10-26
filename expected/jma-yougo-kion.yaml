@@ -7,18 +7,6 @@ findings:
     message: 見出し「気温に関する用語」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page itself goes from h1 to h3
-  - rule: fullwidth-alnum-consistency
-    line: 15
-    text: 1.25～2.0mの大気の温度を摂氏（℃）単位で表す。度の単位に丸めるときは十分
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 15
-    text: 2.0mの大気の温度を摂氏（℃）単位で表す。度の単位に丸めるときは十分位を四捨五
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
   - rule: bracket-width-consistency
     line: 57
     text: (高)め
@@ -97,18 +85,6 @@ findings:
     text: の毎正時24回の観測値の平均。月（年）平均気温は毎日（月）の平均気温の月（年）間
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 109
-    text: 0.5～１度下がる。
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 109
-    text: 5～１度下がる。
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
   - rule: unbalanced-bracket
     line: 142
     text: )さ」と混同して用いないこと。

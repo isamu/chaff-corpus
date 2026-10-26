@@ -31,11 +31,6 @@ findings:
     text: 1つ目は、委託先ベンダーの入れ替え時の引継ぎについては、単年度調達の場合でも、年
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 65
-    text: 2つ目は、行政機関の事例ではないが、委託先ベンダーが契約した開発環境で開発を進め
-    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 71
     text: 引き継ぐことはない。

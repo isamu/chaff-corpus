@@ -21,11 +21,6 @@ findings:
     text: ２　所有者不明建物管理命令の効力は、当該所有者不明建物管理命令の対象とされた建物
     message: 「は」で出した主題から述語まで 248 字あります（200 字まで）
     verdict: unjudged
-  - rule: use-before-definition
-    line: 1429
-    text: 詐害行為取消請求をすることができる場合は、この限りでない。
-    message: 「詐害行為取消請求」を、1786 行目の定義より前で使っています
-    verdict: unjudged
   - rule: orthographic-variant
     line: 1564
     text: 引受けがあったときは、根抵当権者は、引受人の債務について、その根抵当権を行使する

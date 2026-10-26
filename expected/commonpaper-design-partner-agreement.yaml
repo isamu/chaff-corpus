@@ -12,12 +12,6 @@ findings:
     message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: unjudged
   - rule: obligation-without-deadline
-    line: 11
-    text: notify the other party about termination
-    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: false-positive
-    note: the deadline is in the same sentence (30 days advance notice)
-  - rule: obligation-without-deadline
     line: 14
     text: return or destroy Discloser’s Confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'

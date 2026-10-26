@@ -1,6 +1,11 @@
 id: ai-en-tech-spreadsheet-formulas
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# Five Spreadsheet Formulas That Will Sa"
+    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: heading-numbering-mix
     line: 69
     text: "## A few tips before you start"

@@ -7,6 +7,11 @@ findings:
     message: "\"does not\" is written \"doesn't\" elsewhere in the document"
     verdict: correct
     note: "'does not' where the page mostly writes 'doesn't'"
+  - rule: hyphen-as-dash
+    line: 24
+    what: "a spaced hyphen used as a dash in a list item: `float` - everything is simply `number`"
+    verdict: missed
+    note: the other spaced hyphens on the page are found; this one sits in a list item. Neither chaffjs 0.36.0 nor lab main reports it
   - rule: max-sentence-length
     line: 41
     text: When a value is of type `any`, you can a
@@ -19,12 +24,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen used as a dash
-  - rule: return-type-mismatch
-    line: 139
-    text: "async function getFavoriteNumber(): Prom"
-    message: "`getFavoriteNumber` is said to return Promise<number> here, but its signature returns `number`"
-    verdict: false-positive
-    note: "an async function: returning 26 from a function annotated Promise<number> is right"
   - rule: hyphen-as-dash
     line: 269
     text: " - simply provide a type matching any of"
@@ -103,8 +102,3 @@ findings:
     message: Heading "`bigint`" goes from level 2 to level 4 (expected 3)
     verdict: correct
     note: "'Less Common Primitives' (h2) is followed by h4 subheadings"
-  - rule: hyphen-as-dash
-    line: 24
-    what: "a spaced hyphen used as a dash in a list item: `float` - everything is simply `number`"
-    verdict: missed
-    note: the other spaced hyphens on the page are found; this one sits in a list item. Neither chaffjs 0.36.0 nor lab main reports it

@@ -1,12 +1,6 @@
 id: caa-anzen-navi-698-gas-torch
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 料理やアウトドアの際に手軽で便利なガストーチ(カセットボンベ等に接続し、液化石油
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an issue of a mail magazine opens on its topic; a greeting is not expected
   - rule: max-sentence-length
     line: 3
     text: 料理やアウトドアの際に手軽で便利なガストーチ(カセットボンベ等に接続し、液化石油

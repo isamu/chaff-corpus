@@ -1,48 +1,41 @@
 id: 18f-blog-agile-approach-to-content
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: ---
+    message: "12 bold spans of emphasis: 11.3 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: adverb-overuse
     line: 16
     text: recently joined an agile team — congratu
     message: 19 -ly adverbs per 1000 words (limit 15)
     verdict: correct
-    note: "many -ly adverbs (really, explicitly, manually, quickly ...) in a short post"
+    note: many -ly adverbs (really, explicitly, manually, quickly ...) in a short post
   - rule: sentence-initial-so
     line: 16
     text: So, you’ve recently joined an agile team
     message: 1 sentence opens with "So," (1 needed)
     verdict: correct
-    note: "the post opens with a filler \"So,\""
-  - rule: concrete-evidence-density
-    line: 26
-    text: ""
-    message: Section "Participate in the process" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: "a tips section whose takeaway is the advice itself; a number or link is not expected"
+    note: the post opens with a filler "So,"
   - rule: max-sentence-length
     line: 28
     text: Though every team is different, most agi
     message: This sentence runs 56 words (limit 40)
     verdict: correct
-    note: "56-word sentence with three parenthetical glosses"
+    note: 56-word sentence with three parenthetical glosses
   - rule: redundant-expression
     line: 39
     text: Depending on your involvement in a proje
     message: '"each and every" says the same thing twice'
     verdict: correct
-    note: "\"each and every\""
+    note: '"each and every"'
   - rule: rule-of-three
     line: 39
     text: "-   **Find out how best to participate.*"
     message: 4 of 4 lists have exactly three items (70% allowed)
     verdict: false-positive
-    note: "each tip list holds three tips; the count is the content, an editor would not ask to change it"
-  - rule: concrete-evidence-density
-    line: 49
-    text: ""
-    message: Section "Break your work into manageable tasks" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: "a tips section whose takeaway is the advice itself; a number or link is not expected"
+    note: each tip list holds three tips; the count is the content, an editor would not ask to change it
   - rule: unqualified-superlative
     line: 55
     text: Pick the most important sections or task
@@ -61,15 +54,9 @@ findings:
     message: This list punctuates differently from the rest (1 in this document)
     verdict: false-positive
     note: "\"If you need help with something, but it's not a priority right now, add it\" is a clause pair, not a list"
-  - rule: concrete-evidence-density
-    line: 60
-    text: ""
-    message: Section "Set squishy deadlines" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: "a tips section whose takeaway is the advice itself; a number or link is not expected"
   - rule: unqualified-superlative
     line: 82
     text: We mentioned it before, but it bears rep
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: correct
-    note: "\"The best content is conversational\" is a bare claim with nothing compared"
+    note: '"The best content is conversational" is a bare claim with nothing compared'

@@ -196,12 +196,6 @@ findings:
     text: And while increasing housing supply shou
     message: This sentence runs 29 words (limit 25)
     verdict: correct
-  - rule: sentence-initial-conjunction-run
-    line: 67
-    text: So far, I've been discussing shelter cos
-    message: 3 sentences in a row open with a conjunction (limit 2)
-    verdict: false-positive
-    note: 「So far」 is an adverbial phrase, not the conjunction so; only two sentences in a row open with a conjunction
   - rule: max-sentence-length
     line: 71
     text: The Community Reinvestment Act (CRA), en
@@ -264,12 +258,6 @@ findings:
     text: Alternatively, the Monitor allows the us
     message: This sentence runs 52 words (limit 25)
     verdict: correct
-  - rule: max-sentence-length
-    line: 93
-    text: See Benjamin J. Keys and Vincent Reina (
-    message: This sentence runs 28 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: undefined-acronym
     line: 97
     text: JCHS). Return to text
@@ -278,67 +266,19 @@ findings:
     note: the publisher's short name after its full name in the same citation (Joint Center for Housing Studies … JCHS)
   - rule: max-sentence-length
     line: 99
-    text: See Melissa Kollar and Zach Scherer (202
-    message: This sentence runs 47 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 99
     text: The income series is adjusted using the
     message: This sentence runs 44 words (limit 25)
     verdict: correct
-  - rule: max-sentence-length
-    line: 101
-    text: "Households in 2024, (Washington: Board o"
-    message: This sentence runs 33 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
     line: 105
     text: Freddie Mac estimated a 3.7 million unit
     message: This sentence runs 27 words (limit 25)
     verdict: correct
   - rule: max-sentence-length
-    line: 107
-    text: See U.S. Census Bureau (2026), "Housing
-    message: This sentence runs 30 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 113
-    text: See Edward Glaeser and Joseph Gyourko (2
-    message: This sentence runs 26 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 115
-    text: See Bureau of Labor Statistics (2025), "
-    message: This sentence runs 38 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
     line: 123
     text: The constant-quality price index measure
     message: This sentence runs 46 words (limit 25)
     verdict: correct
-  - rule: max-sentence-length
-    line: 127
-    text: See Joshua Blonz, Mallick Hossain, Benja
-    message: This sentence runs 39 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 129
-    text: See also Hannah Jones (2026), "The Slow
-    message: This sentence runs 28 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 131
-    text: See Aditya Aladangady, Jacob Krimmel, an
-    message: This sentence runs 36 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
     line: 143
     text: On September 28, 2026, the remarks were

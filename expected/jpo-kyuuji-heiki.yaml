@@ -11,33 +11,11 @@ findings:
     text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
     message: 一文に読点が 9 個あります（6 個まで）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 10
-    text: 手続書類に記載する氏名は、戸籍上の氏名を記載するべきところ、これについては、ユー
-    message: 「は」で出した主題から述語まで 187 字あります（80 字まで）
-    verdict: false-positive
-    note: 氏名は gets its predicate at once (…記載するべきところ). What was judged was the sentence's length, which max-sentence-length reports.
   - rule: wordy-phrase
     line: 16
     text: 特許庁に提出する全ての書類を対象に、発明者、出願人、審判当事者等の氏名欄において
     message: 「することが可能」は、もっと短く言えます
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 17
-    text: 併記可能な旧氏とは、住民基本台帳法施行令第30条の13に規定する旧氏です。
-    message: 「住民基本台帳法施行令」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a cabinet order (住民基本台帳法施行令)
-  - rule: list-item-form-mix
-    line: 19
-    text: 記載例（願書）
-    message: |-
-      「記載例（願書）
-      【特許出願人】
-      【住所又は居所】　東京都千代田区霞が関3-4-3
-      【氏名又は名称】　特許（実用）　太郎」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: a label item (記載例) that introduces a form example, not a sentence item
   - rule: use-before-definition
     line: 19
     text: 願書）
@@ -79,12 +57,6 @@ findings:
     verdict: false-positive
     note: a link item (a form's name) in a list of instructions
   - rule: max-kanji-continuous
-    line: 42
-    text: 特許（登録）原簿の権利者の氏名について旧氏を併記したい場合は、各特許（登録）原簿
-    message: 「特許登録令施行規則」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a cabinet order (特許登録令施行規則)
-  - rule: max-kanji-continuous
     line: 44
     text: ［当事者系審判請求人］［異議申立人］
     message: 「当事者系審判請求人」は漢字が 9 字続いています（8 字まで）
@@ -108,12 +80,6 @@ findings:
     message: 「当事者系審判被請求人」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: a fixed legal term for a party (当事者系審判被請求人)
-  - rule: max-kanji-continuous
-    line: 52
-    text: 無効審判（異議申立）等の被請求人（権利者）が、審判事件（異議申立）の書類において
-    message: 「特許登録令施行規則」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a cabinet order (特許登録令施行規則)
   - rule: list-item-form-mix
     line: 69
     text: 記載例（手続補正書）
@@ -142,12 +108,6 @@ findings:
     line: 92
     what: Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same
     verdict: missed
-  - rule: max-kanji-continuous
-    line: 94
-    text: A５：住民票の写し、マイナンバーカード、運転免許証のような公的証明書において記載
-    message: 「住民基本台帳法施行令」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a cabinet order (住民基本台帳法施行令)
   - rule: no-doubled-joshi
     line: 107
     text: の代表者の氏名の記載も、同様に扱われます。
@@ -188,6 +148,11 @@ findings:
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。12 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「内線 2715」 with a space against 「内線2764」 elsewhere
+  - rule: bracket-width-consistency
+    line: 192
+    text: "]"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。17 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: date-format-consistency
     line: 192
     text: 2021年10月1日]

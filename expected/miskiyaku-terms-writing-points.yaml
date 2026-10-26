@@ -21,11 +21,6 @@ findings:
     text: 個人サーバーや村サーバーは所謂小規模コミュニティであるため、自ずから見知った人間
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 42
-    text: Misskey は分散型の SNS
-    message: 一文だけの段落が 8 個続いています（4 個まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 45
     text: 利用規約が存在することによって得られるメリットは、不特定多数の人間に対して一律か
@@ -70,11 +65,6 @@ findings:
     line: 75
     text: また、そういった面でのトラブルは法的紛争に発展しやすい点からも、自身がどのように
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 84
-    text: ほうがいいでしょう。
-    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。6 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 96

@@ -1,6 +1,11 @@
 id: ai-ja-essay-grandmother-kitchen
 chaff: 0.36.0
 findings:
+  - rule: sentence-rhythm
+    line: 3
+    text: 祖母の家の台所は、北向きで、昼間でも少し薄暗かった。
+    message: 文の長さのばらつきが 35%（36% 以上ほしい）
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 21
     what: 最後の段落が冒頭の「窓の曇りを拭く」に戻って、ほろ苦い救いで閉じる型どおりの結び

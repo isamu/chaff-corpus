@@ -19,24 +19,12 @@ findings:
     message: 9 paragraphs before the first heading (limit 2)
     verdict: false-positive
     note: the paragraphs before the first heading are the Federal Register page's help box, kept by the conversion
-  - rule: undefined-acronym
-    line: 16
-    text: HHS or the Department).
-    message: '"HHS" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: "expanded in the same line: 'U.S. Department of Health and Human Services (HHS or the Department)'"
   - rule: max-sentence-length
     line: 24
     text: Responses will help identify and assess
     message: This sentence runs 52 words (limit 45)
     verdict: correct
     note: a 52-word sentence
-  - rule: undefined-acronym
-    line: 36
-    text: OASH-RFI@hhs.gov.
-    message: '"OASH-RFI" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: part of an email address, not an acronym
   - rule: max-paragraph-length
     line: 56
     text: This RFI should not be construed as a po

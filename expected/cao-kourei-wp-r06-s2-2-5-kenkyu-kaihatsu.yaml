@@ -7,12 +7,6 @@ findings:
     message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
     verdict: false-positive
     note: 「研究開発は」の述語「寄与するものである」はすぐ後にあり、文末の「図る」は別の主語（国）のもの
-  - rule: comparative-without-baseline
-    line: 13
-    text: より良い高齢社会を作ることに政府のみならず、学術面や産業面からも貢献できるよう環
-    message: 「より良い」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: 「より良い高齢社会」は今と比べる決まった言い方
   - rule: nominalization
     line: 13
     text: 整備を行う。あわせて、高齢社会の課題を諸外国と共有し、連携して取組を進める。
@@ -235,12 +229,6 @@ findings:
     message: 「TICAD」が説明なしで使われています（説明のない略語 8 個）
     verdict: correct
     note: TICAD は何の略かが書かれていない
-  - rule: undefined-acronym
-    line: 71
-    text: WHO総会、WHO西太平洋地域委員会、国連総会等の国際的な議論の場において、全て
-    message: 「WHO」が説明なしで使われています（説明のない略語 8 個）
-    verdict: false-positive
-    note: WHO は一般に定着した略称で、白書の読者に説明は要らない
   - rule: max-sentence-length
     line: 75
     text: 本会合では、ASEAN各国からの参加者や国内有識者と共に、誰もが生涯にわたり個人
@@ -259,9 +247,3 @@ findings:
     message: 「議論を行う」は「議論する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「議論を行う」は「議論する」で足りる
-  - rule: undefined-acronym
-    line: 75
-    text: ASEAN・日本社会保障ハイレベル会合を大分県で開催した。本会合では、ASEAN
-    message: 「ASEAN」が説明なしで使われています（説明のない略語 8 個）
-    verdict: false-positive
-    note: ASEAN は一般に定着した略称で、白書の読者に説明は要らない

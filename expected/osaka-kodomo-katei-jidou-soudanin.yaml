@@ -122,9 +122,9 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
-    line: 199
-    text: 2 . 申込書受付場所(申込書送付先)
-    message: 「支援部管理課児童支援対策」は漢字が 12 字続いています（10 字まで）
+    line: 201
+    text: 大阪市こども青少年局子育て支援部管理課児童支援対策グループ（家庭児童相談員任用担
+    message: 「家庭児童相談員任用担当」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: request-without-deadline
     line: 203

@@ -19,12 +19,6 @@ findings:
     message: This sentence runs 58 words (limit 45)
     verdict: correct
     note: a 58-word sentence
-  - rule: undefined-acronym
-    line: 28
-    text: FDA or the Agency) is describing the app
-    message: '"FDA" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: "expanded in the same sentence: 'The Food and Drug Administration (FDA or the Agency)'"
   - rule: heading-level-skip
     line: 40
     text: "### Electronic Submissions"
@@ -73,12 +67,6 @@ findings:
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
-  - rule: undefined-acronym
-    line: 58
-    text: FR 56469, September 18, 2015, or access
-    message: '"FR" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: the standard citation of the Federal Register (80 FR 56469), not an acronym the text should expand
   - rule: max-sentence-length
     line: 60
     text: "Docket: For access to the docket to read"
@@ -91,12 +79,6 @@ findings:
     message: This sentence runs 52 words (limit 45)
     verdict: correct
     note: a 52-word sentence
-  - rule: undefined-acronym
-    line: 82
-    text: ARPA-H), is funding a program to collect
-    message: '"ARPA" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: "expanded right before it: 'Advanced Research Projects Agency for Health (ARPA-H)'"
   - rule: max-sentence-length
     line: 84
     text: FDA has identified serious safety risks

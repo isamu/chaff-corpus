@@ -62,12 +62,6 @@ findings:
     message: '"BULLER" is used without an expansion (5 such acronyms)'
     verdict: false-positive
     note: a judge's surname in capitals (the reporter's small caps), not an acronym
-  - rule: article-sound
-    line: 97
-    text: an hospital, and that there is, in reali
-    message: '"an hospital" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: max-paragraph-length
     line: 97
     text: We are informed, by the case of Philips
@@ -107,24 +101,12 @@ findings:
     text: An aggregate corporation, at common law,
     message: This paragraph runs 27 sentences (limit 12)
     verdict: correct
-  - rule: article-sound
-    line: 127
-    text: an hospital created and endowed by the g
-    message: '"an hospital" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: unknown-word
     line: 127
     text: repects, they are so, although they invo
     message: '"repects" is not in the dictionary; did you mean "respects"?'
     verdict: correct
     note: a typo for respects
-  - rule: article-sound
-    line: 129
-    text: An hospital, founded by a private benefa
-    message: '"An hospital" takes "A" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: max-paragraph-length
     line: 133
     text: It was, indeed, supposed at the argument
@@ -159,12 +141,6 @@ findings:
     message: '"munificient" is not in the dictionary; did you mean "munificent"?'
     verdict: correct
     note: a typo for munificent
-  - rule: article-sound
-    line: 139
-    text: an hereditament founded in property, and
-    message: '"an hereditament" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: max-paragraph-length
     line: 139
     text: To all eleemosynary corporations, a visi
@@ -175,12 +151,6 @@ findings:
     text: But an eleemosynary, like every other co
     message: This paragraph runs 41 sentences (limit 12)
     verdict: correct
-  - rule: unknown-word
-    line: 143
-    text: amotion of them from their corporate cap
-    message: '"amotion" is not in the dictionary; did you mean "motion"?'
-    verdict: false-positive
-    note: amotion is a real legal term (removal from office)
   - rule: demonstrative-opener-run
     line: 149
     text: It further declares, that the trustees,
@@ -202,18 +172,6 @@ findings:
     message: This paragraph runs 13 sentences (limit 12)
     verdict: correct
   - rule: unknown-word
-    line: 165
-    text: fieri. Upon the acceptance, there is an
-    message: '"fieri" is not in the dictionary; did you mean "fiery"?'
-    verdict: false-positive
-    note: part of the Latin phrase in fieri
-  - rule: unknown-word
-    line: 173
-    text: flatu, the charter cannot be construed a
-    message: '"flatu" is not in the dictionary; did you mean "flats"?'
-    verdict: false-positive
-    note: part of a Latin phrase (mero flatu)
-  - rule: unknown-word
     line: 173
     text: naturce, with whom it might be made.
     message: '"naturce" is not in the dictionary; did you mean "nature"?'
@@ -225,18 +183,6 @@ findings:
     message: This paragraph runs 14 sentences (limit 12)
     verdict: correct
   - rule: max-paragraph-length
-    line: 177
-    text: It behooves those also, who hold, that a
-    message: This paragraph runs 13 sentences (limit 12)
-    verdict: false-positive
-    note: the paragraph runs 12 sentences, within the limit; chaffjs 0.36.0 counts 13 because it ends a sentence after "to A." before the lowercase "for life", which isamu/lab#1892 reads as one sentence
-  - rule: agreement-slip
-    line: 181
-    text: its will take away the private property
-    message: '"its will" puts a possessive where the subject belongs'
-    verdict: false-positive
-    note: "'at its will' uses will as a noun; the possessive is right"
-  - rule: max-paragraph-length
     line: 183
     text: As to the case of the contract of marria
     message: This paragraph runs 14 sentences (limit 12)
@@ -246,12 +192,6 @@ findings:
     text: "  It may be the only effectual mode of e"
     message: 2 spaces after this sentence, where the document usually leaves 1 (2 of 563)
     verdict: unjudged
-  - rule: unknown-word
-    line: 183
-    text: contractus. Titles to land, constituting
-    message: '"contractus" is not in the dictionary; did you mean "contracts"?'
-    verdict: false-positive
-    note: a Latin word (contractus) in a quoted maxim
   - rule: doubled-punctuation
     line: 189
     text: .. 14 Johns. 527; Zebach v. Smith, 3 Bin
@@ -263,12 +203,6 @@ findings:
     text: Another objection growing out of, and co
     message: This paragraph runs 39 sentences (limit 12)
     verdict: correct
-  - rule: numeral-sentence-start
-    line: 189
-    text: 113 a, Harg. & Butler's note 2; Sugden o
-    message: The sentence opens with the numeral "113"
-    verdict: false-positive
-    note: "a citation (Co. Litt. 113 a): the abbreviation's period is not a sentence end"
   - rule: spelling-consistency
     line: 189
     text: pretence to say, that grants of them are
@@ -292,18 +226,6 @@ findings:
     message: '"pretence" here, where the document usually spells it "pretense" (3 of 17)'
     verdict: correct
     note: the opinion spells pretense both ways
-  - rule: article-sound
-    line: 195
-    text: an hereditament, descendible in perpetui
-    message: '"an hereditament" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
-  - rule: article-sound
-    line: 195
-    text: an hereditament, he assigns it in perpet
-    message: '"an hereditament" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: max-paragraph-length
     line: 195
     text: Thus far, the rights of the corporation
@@ -314,12 +236,6 @@ findings:
     text: It is attempted, however, to establish t
     message: This paragraph runs 14 sentences (limit 12)
     verdict: correct
-  - rule: unknown-word
-    line: 197
-    text: absque injurid. Each trustee has a veste
-    message: '"absque" is not in the dictionary; did you mean "basque"?'
-    verdict: false-positive
-    note: part of the Latin phrase absque injuria
   - rule: unknown-word
     line: 197
     text: injurid. Each trustee has a vested right
@@ -360,12 +276,6 @@ findings:
     message: '"trnstees" is not in the dictionary; did you mean "trustees"?'
     verdict: correct
     note: a transcription typo for trustees
-  - rule: article-sound
-    line: 209
-    text: an hospital, of private foundation, is n
-    message: '"an hospital" takes "a" before that sound'
-    verdict: false-positive
-    note: "'an' before hospital and hereditament is the usage of the period (1819), not a slip"
   - rule: empty-section
     line: 221
     text: "## Notes"

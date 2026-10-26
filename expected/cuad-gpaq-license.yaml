@@ -11,11 +11,6 @@ findings:
     text: December 11, 2018, as amended of even da
     message: The date "December 11, 2018" is written differently from 17 other dates in the document (such as "1/23/2020")
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 1
-    text: " - (i) the Chief Executive Officer of HO"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 1
     text: HOF Media Company"). AGREEMENT NOW THERE
@@ -240,11 +235,6 @@ findings:
     line: 119
     text: (c) In any action, suit, proceeding, cla
     message: '"(c)" follows "(e)" (expected number 6)'
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 119
-    text: but not limited to, the reasonable costs
-    message: '"but not limited to" in a requirement does not say what else it covers'
     verdict: unjudged
   - rule: dangling-reference
     line: 129

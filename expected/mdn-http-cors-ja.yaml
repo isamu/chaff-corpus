@@ -47,12 +47,6 @@ findings:
     message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「但し」 once where the page writes 「ただし」
-  - rule: list-item-form-mix
-    line: 62
-    text: ヘッダーで指定できる{{Glossary("MIME type", "メディア種
-    message: 「ヘッダーで指定できる                                   に許されるタイプ/サブタイプの組み合わせは、以下のもののみです。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: both items of the outer list are sentences; the nested lists of header names are another level
   - rule: no-doubled-joshi
     line: 169
     text: の間のやりとりの全容を見てみましょう。最初のやり取りは*プリフライトリクエスト/
@@ -78,11 +72,6 @@ findings:
     line: 300
     text: の間のやりとりの例です。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 352
-    text: リクエストが資格情報（多くの場合は `Cookie` ヘッダー）を含んでおり、そ
-    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 360

@@ -3,9 +3,15 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 宛名と差出人が「株式会社〇〇」「〇〇」のまま（3・6行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
+  - rule: unfilled-placeholder
+    line: 6
+    text: 〇〇の〇〇です。
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: max-sentence-length
     line: 10
     text: 差額の30,000円は、当初のお見積もりに含まれていなかった追加作業分かと思いま

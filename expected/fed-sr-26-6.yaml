@@ -29,11 +29,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    text: Department of the Treasury’s Financial C
-    message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
     text: The answers to these FAQs do not alter e
     message: This sentence runs 19 words (limit 18)
     verdict: unjudged

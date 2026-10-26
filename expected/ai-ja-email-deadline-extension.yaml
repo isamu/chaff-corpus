@@ -3,9 +3,20 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 宛名・署名・案件名が「株式会社〇〇」「〇〇様」「〇〇案件」のまま（3〜17行）
-    verdict: missed
-    note: "catalog J27 (〇〇 in address and signature): blanks a template leaves for the user; unfilled-placeholder skips 〇〇 by design"
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27 (〇〇 in address and signature): blanks a template leaves for the user; unfilled-placeholder skips 〇〇 by design; found by chaffjs 0.38.0"
+  - rule: unfilled-placeholder
+    line: 4
+    text: 〇〇様
+    message: 「〇〇様」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 6
+    text: 〇〇の〇〇です。
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: date-weekday-mismatch
     line: 10
     what: 「11月14日（金）」「11月21日（金）」：書いた2026年10月22日から見るとどちらも土曜日（曜日は2025年のもの）
@@ -28,3 +39,18 @@ findings:
     message: この依頼には、いつまでに・誰がするかが書かれていません
     verdict: correct
     note: the email asks the client to agree to a new date but gives no date to answer by; an editor would add one
+  - rule: unfilled-placeholder
+    line: 16
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 17
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 17
+    text: 〇〇部　〇〇
+    message: 「〇〇部」が埋まっていません
+    verdict: unjudged
