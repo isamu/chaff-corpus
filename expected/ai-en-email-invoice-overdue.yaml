@@ -28,20 +28,20 @@ findings:
     line: 11
     text: Payment can be made by bank transfer usi
     message: This sentence runs 24 words (limit 18)
-    verdict: false-positive
-    note: 24 words, one instruction with two payment methods
+    verdict: correct
+    note: 24 words, an instruction with two payment methods (the placeholder adds two of them; without it the sentence is still over); over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 13
     text: If there's an issue with the invoice or
     message: This sentence runs 25 words (limit 18)
-    verdict: false-positive
-    note: 25 words, one ordinary offer of help
+    verdict: correct
+    note: 25 words, an offer of help; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 15
     text: I'd appreciate it if you could arrange p
     message: This sentence runs 20 words (limit 18)
-    verdict: false-positive
-    note: 20 words, one clear request with a date
+    verdict: correct
+    note: 20 words, a request with a date; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: closing-cliche
     line: 17
     what: '"Thank you for your prompt attention to this matter." (and "For your convenience", line 9)'

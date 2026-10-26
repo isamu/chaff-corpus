@@ -5,8 +5,8 @@ findings:
     line: 9
     text: Section 3.16 Data Protection and Privacy
     message: '"Section 3.16" (address 3.16) is not in this document'
-    verdict: false-positive
-    note: a table-of-contents entry; the section it lists is in the text as a plain-text 'Section N.N Title.' heading
+    verdict: correct
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so Section 3.16 is only in the table of contents and in a forward reference, not in the text (the filed agreement has it); chaff is right about the text as given, as for 3.17 and later"
   - rule: undefined-acronym
     line: 9
     text: ERISA 22 Section 3.10 Labor Matters 23 S
@@ -22,181 +22,181 @@ findings:
     text: Section 3.18 Capital or Surplus Maintena
     message: '"Section 3.18" (address 3.18) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 17
     text: Section 3.19 Insurance Business 33 Secti
     message: '"Section 3.19" (address 3.19) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 17
     text: Section 3.20 Insurance 34 Section 3.21 K
     message: '"Section 3.20" (address 3.20) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 17
     text: Section 3.21 Key Customers and Key Vendo
     message: '"Section 3.21" (address 3.21) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 17
     text: Section 3.22 Broker’s Fees 35 Section 3.
     message: '"Section 3.22" (address 3.22) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 17
     text: Section 3.23 Opinion of Company Financia
     message: '"Section 3.23" (address 3.23) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 16 Matters 60 Section 5.12 Emplo
     message: '"Section 16" (address 16) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.2 Operations of Merger Sub 35
     message: '"Section 4.2" (address 4.2) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.3 Authority; Execution and Del
     message: '"Section 4.3" (address 4.3) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.4 Consents and Approvals; No C
     message: '"Section 4.4" (address 4.4) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.5 Actions 37 Section 4.6 Finan
     message: '"Section 4.5" (address 4.5) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.6 Financial Ability 37 Section
     message: '"Section 4.6" (address 4.6) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 4.7 Broker’s Fees 37     ARTICLE
     message: '"Section 4.7" (address 4.7) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.1 Conduct of Company Business
     message: '"Section 5.1" (address 5.1) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.10 Delisting 60 Section 5.11 S
     message: '"Section 5.10" (address 5.10) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.11 Section 16 Matters 60 Secti
     message: '"Section 5.11" (address 5.11) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.12 Employee Benefit Matters 61
     message: '"Section 5.12" (address 5.12) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.13 Company Stockholder Litigat
     message: '"Section 5.13" (address 5.13) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.14 Stock Award Schedule 63 Sec
     message: '"Section 5.14" (address 5.14) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.15 Company Resignations 63 Sec
     message: '"Section 5.15" (address 5.15) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.16 State Takeover Statutes 63
     message: '"Section 5.16" (address 5.16) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.17 Specified Matters 64
     message: '"Section 5.17" (address 5.17) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.2 Conduct of Parent Business P
     message: '"Section 5.2" (address 5.2) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.3 Preparation of the Proxy Sta
     message: '"Section 5.3" (address 5.3) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.4 No Company Solicitation 44 S
     message: '"Section 5.4" (address 5.4) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.5 Notification of Certain Matt
     message: '"Section 5.5" (address 5.5) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.6 Access to Information 51 Sec
     message: '"Section 5.6" (address 5.6) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.7 Consents, Approvals and Fili
     message: '"Section 5.7" (address 5.7) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.8 Indemnification 55 Section 5
     message: '"Section 5.8" (address 5.8) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 19
     text: Section 5.9 Financing Cooperation 57 Sec
     message: '"Section 5.9" (address 5.9) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-figure-reference
     line: 27
     text: Exhibit A Required Filings and Required
@@ -220,127 +220,127 @@ findings:
     text: Section 6.1 Conditions to Obligations of
     message: '"Section 6.1" (address 6.1) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 6.2 Conditions to Obligations of
     message: '"Section 6.2" (address 6.2) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 6.3 Conditions to Obligations of
     message: '"Section 6.3" (address 6.3) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 7.1 Termination 66 Section 7.2 E
     message: '"Section 7.1" (address 7.1) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 7.2 Effect of Termination 68 Sec
     message: '"Section 7.2" (address 7.2) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 7.3 Termination Fees; Expense Re
     message: '"Section 7.3" (address 7.3) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.1 Amendment and Modification 7
     message: '"Section 8.1" (address 8.1) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.10 Remedies 75 Section 8.11 Wa
     message: '"Section 8.10" (address 8.10) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.11 Waiver of Claims Against Fi
     message: '"Section 8.11" (address 8.11) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.12 Publicity 76 Section 8.13 E
     message: '"Section 8.12" (address 8.12) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.13 Expenses 76 Section 8.14 Co
     message: '"Section 8.13" (address 8.13) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.14 Construction 76 Section 8.1
     message: '"Section 8.14" (address 8.14) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.15 Definitions 78     Exhibits
     message: '"Section 8.15" (address 8.15) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.2 Extension; Waiver 71 Section
     message: '"Section 8.2" (address 8.2) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.3 No Other Representations or
     message: '"Section 8.3" (address 8.3) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.4 Notices 72 Section 8.5 Count
     message: '"Section 8.4" (address 8.4) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.5 Counterparts 73 Section 8.6
     message: '"Section 8.5" (address 8.5) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.6 Entire Agreement; Third-Part
     message: '"Section 8.6" (address 8.6) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.7 Severability 73 Section 8.8
     message: '"Section 8.7" (address 8.7) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.8 Assignment 74 Section 8.9 Ap
     message: '"Section 8.8" (address 8.8) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: dangling-reference
     line: 27
     text: Section 8.9 Applicable Law; Jurisdiction
     message: '"Section 8.9" (address 8.9) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: use-before-definition
     line: 35
     text: Merger and the other transactions contem
@@ -367,7 +367,7 @@ findings:
     text: Article VII, the outstanding shares of C
     message: '"Article VII" (address 7) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: undefined-term
     line: 49
     text: Beneficially Owned by Parent, Merger Sub
@@ -491,7 +491,7 @@ findings:
     text: Section 8.14(k)) or (y)(1) the Company’s
     message: '"Section 8.14(k)" (address 8.14.k) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: max-paragraph-length
     line: 105
     text: ARTICLE III   REPRESENTATIONS AND WARRAN
@@ -507,7 +507,7 @@ findings:
     text: Section 5.1, no Equity Securities in the
     message: '"Section 5.1" (address 5.1) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: max-paragraph-length
     line: 113
     text: (d)          Prior to the date hereof, t
@@ -548,7 +548,7 @@ findings:
     text: Section 5.4, the Company Board has not r
     message: '"Section 5.4" (address 5.4) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: max-paragraph-length
     line: 129
     text: (a)          The Company has all necessa
@@ -720,7 +720,7 @@ findings:
     text: Section 3.21 with respect to Contracts w
     message: '"Section 3.21" (address 3.21) is not in this document'
     verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
+    note: "dataset artefact: the dataset's text stops inside Section 3.15, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: defined-term-form
     line: 251
     text: merger, sale of stock, sale of assets or
@@ -755,8 +755,8 @@ findings:
     line: 267
     text: Section 3.16 below), and, since December
     message: '"Section 3.16" (address 3.16) is not in this document'
-    verdict: false-positive
-    note: the section is in the text (a plain-text 'Section N.N Title.' heading), which chaff does not take as an address
+    verdict: correct
+    note: "dataset artefact: \"Section 3.16 below\" points past the end of the dataset's text, which stops inside Section 3.15 (the filed agreement has it); chaff is right about the text as given, as for 3.17 and later"
   - rule: requirement-smell
     line: 267
     text: as applicable, through contractual oblig

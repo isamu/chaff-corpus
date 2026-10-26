@@ -5,20 +5,20 @@ findings:
     line: 5
     text: I had it in my calendar for tomorrow, an
     message: This sentence runs 20 words (limit 18)
-    verdict: false-positive
-    note: 20 words, one plain explanation
+    verdict: correct
+    note: 20 words explaining the miss; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 7
     text: If neither works, send me a couple of ti
     message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: 19 words, one offer
+    verdict: correct
+    note: 19 words, an offer; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 9
     text: I have a few questions about the Q1 trav
     message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: 19 words, one point
+    verdict: correct
+    note: 19 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: email-greeting-closing
     line: 13
     text: Tom
