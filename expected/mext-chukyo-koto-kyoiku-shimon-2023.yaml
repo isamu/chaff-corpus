@@ -41,7 +41,8 @@ findings:
     line: 22
     text: ICT 環境の整備の進展や、高等学校での「総合的な探究の時間」等における問題発見
     message: 「ICT」が説明なしで使われています（説明のない略語 4 個）
-    verdict: unjudged
+    verdict: correct
+    note: ICT is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: teki-overuse
     line: 24
     text: とりわけ、今後の複雑に変化する社会においては、基礎的で普遍的な知識・理解と汎用的

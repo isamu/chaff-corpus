@@ -46,8 +46,8 @@ findings:
     line: 31
     text: AP style (which is to mostly use last na
     message: '"AP" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: AP style, the name of a style guide everyone writes as AP
+    verdict: correct
+    note: AP (Associated Press, the name in AP style) is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: hyphen-as-dash
     line: 32
     text: " - In body copy, spell out numbers one t"

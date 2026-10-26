@@ -5,8 +5,8 @@ findings:
     line: 5
     text: DXで授業デザインの変革へ ～主体的に問題解決に取り組む子供の育成を目指して～
     message: 「DX」が説明なしで使われています（説明のない略語 3 個）
-    verdict: false-positive
-    note: DX is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
+    verdict: correct
+    note: DX is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: max-sentence-length
     line: 6
     text: 令和6年度リーディングDXスクールの指定を受け、伝統的な「3S学習」を基盤に、子

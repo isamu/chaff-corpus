@@ -503,8 +503,8 @@ findings:
     line: 237
     text: NTTによるナンバー・ディスプレイ及びナンバー・リクエスト契約を無償化する取組の
     message: 「NTT」が説明なしで使われています（説明のない略語 4 個）
-    verdict: false-positive
-    note: NTT は会社の名前
+    verdict: correct
+    note: NTT, a company's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: nominalization
     line: 239
     text: 周知を行った。
