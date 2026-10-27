@@ -1,12 +1,6 @@
 id: nps-article-stewardship-in-recreation
 chaff: 0.36.0
 findings:
-  - rule: concrete-evidence-density
-    line: 11
-    text: ""
-    message: Section "Fun Now and Fun Later" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: a short scene-setting section for young readers about a photograph; nothing concrete is missing
   - rule: list-item-form-mix
     line: 36
     text: Durable surfaces include maintained trai
@@ -41,21 +35,3 @@ findings:
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: correct
     note: lower-case "these" where the article's other headings capitalise every main word (Find a TRACK Trail Near You)
-  - rule: concrete-evidence-density
-    line: 108
-    text: ""
-    message: Section "Find a TRACK Trail Near You" has no number, code or link (4 of 8 sections)
-    verdict: false-positive
-    note: the source panel ends with two links to the Kids in Parks site, a link list the html conversion drops
-  - rule: concrete-evidence-density
-    line: 154
-    text: ""
-    message: Section "Kids in Parks" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: the source section's heading and text are links to the Kids in Parks site, which the html conversion drops
-  - rule: concrete-evidence-density
-    line: 162
-    text: ""
-    message: Section "Yoga Hike" has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: the source heading links to the park's yoga-hike page, which the html conversion drops; the section describes an activity

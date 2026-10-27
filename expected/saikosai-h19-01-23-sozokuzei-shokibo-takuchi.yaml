@@ -1,12 +1,6 @@
 id: saikosai-h19-01-23-sozokuzei-shokibo-takuchi
 chaff: 0.36.0
 findings:
-  - rule: use-before-definition
-    line: 2
-    text: 小規模宅地等についての相続税の課税価格の計算の特例の適用があるとされた事例
-    message: 「小規模宅地等」を、17 行目の定義より前で使っています
-    verdict: false-positive
-    note: the 裁判要旨 headnote above the body uses the statutory term (措置法69条の3) before the body restates it
   - rule: topic-predicate-distance
     line: 17
     text: 2 措置法69条の3第1項は，個人が相続により取得した財産のうちに，当該相続の開
@@ -17,43 +11,13 @@ findings:
     text: Ｂの共同相続人である。
     message: 全角の「Ｂ」と書いています（この文書はふつう半角の「B」。29 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: use-before-definition
-    line: 33
-    text: 本件仮換地の指定等
-    message: 「本件仮換地」を、35 行目の定義より前で使っています
-    verdict: false-positive
-    note: a section heading names the term that the paragraph just below defines
   - rule: fullwidth-alnum-consistency
     line: 35
     text: Ｂに対し，土地区画整理法に基づき，平成9年3月18日付けで，① 本件土地の仮換地
     message: 全角の「Ｂ」と書いています（この文書はふつう半角の「B」。29 箇所のうち 2 箇所が違う）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 35
-    text: ア　本件土地は，福岡都市計画事業筥崎土地区画整理事業（以下「本件事業」という。）
-    message: 「は」で出した主題から述語まで 216 字あります（200 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
-  - rule: topic-predicate-distance
     line: 55
     text: イ　被上告人は，上告人らに対し，本件土地ないし本件仮換地につき本件特例の適用は認
     message: 「は」で出した主題から述語まで 244 字あります（200 字まで）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 67
-    text: しかしながら，前記事実関係によれば，Bは，従前，甲土地を現実に居住の用に供してい
-    message: 「は」で出した主題から述語まで 210 字あります（200 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
-  - rule: topic-predicate-distance
-    line: 69
-    text: 以上のとおり，相続開始の直前においては本件土地は更地となり，本件仮換地もいまだ居
-    message: 「は」で出した主題から述語まで 207 字あります（200 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜であり／〜であるが／〜にあるところ); the distance is measured to the end of the sentence instead
-  - rule: defined-term-form
-    line: 71
-    text: 特定居住用宅地等」に該当するか否か，上告人らの納付すべき税額等について審理判断さ
-    message: 「特定居住用宅地等」は 19 行目で定義した語です。定義のあとは、かぎ括弧を付けずに使います
-    verdict: false-positive
-    note: a statutory term quoted with its provision (措置法69条の3第1項1号の「特定居住用宅地等」); the quotation marks cite the statute

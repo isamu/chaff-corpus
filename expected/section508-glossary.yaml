@@ -1,12 +1,6 @@
 id: section508-glossary
 chaff: 0.37.0
 findings:
-  - rule: undefined-acronym
-    line: 17
-    text: VPAT®) template created by the IT Indust
-    message: '"VPAT" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: expanded just before as Voluntary Product Accessibility Template (VPAT®); the ® inside the parentheses hides the expansion
   - rule: bracket-nesting
     line: 37
     text: The statement on the reporting entity’s
@@ -72,18 +66,6 @@ findings:
     text: realtime software. For CART services, se
     message: '"realtime" here, where the document usually writes "Real-Time" (2 of 8)'
     verdict: unjudged
-  - rule: dangling-reference
-    line: 276
-    text: Section 504/501 complaints process and m
-    message: '"Section 504" (address 504) is not in this document'
-    verdict: false-positive
-    note: Section 504 of the Rehabilitation Act, a law outside this page
-  - rule: dangling-reference
-    line: 276
-    text: section 794 of this title for resolving
-    message: '"section 794" (address 794) is not in this document'
-    verdict: false-positive
-    note: section 794 of title 29 of the US Code, outside this page
   - rule: max-paragraph-length
     line: 276
     text: An alleged Section 508 non-compliance vi
@@ -94,12 +76,6 @@ findings:
     text: DOJ Civil Rights Division iii. Administr
     message: '"DOJ" is used without an expansion (11 such acronyms)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 298
-    text: AA Success Criteria incorporated by refe
-    message: '"AA" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: A, AA and AAA are WCAG conformance level names, not acronyms
   - rule: max-sentence-length
     line: 585
     text: Information and Communication Technology
@@ -177,30 +153,6 @@ findings:
     text: which support macros or scripting.
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 851
-    text: MOV), the browser will automatically vie
-    message: '"MOV" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: WAV and MOV are file extensions listed as such, not acronyms to expand
-  - rule: undefined-acronym
-    line: 851
-    text: WAV, MOV), the browser will automaticall
-    message: '"WAV" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: WAV and MOV are file extensions listed as such, not acronyms to expand
-  - rule: dangling-reference
-    line: 925
-    text: Section 504, this is a workplace modific
-    message: '"Section 504" (address 504) is not in this document'
-    verdict: false-positive
-    note: Section 504 of the Rehabilitation Act, a law outside this page
-  - rule: dangling-reference
-    line: 977
-    text: Section 504 also prohibits disability-ba
-    message: '"Section 504" (address 504) is not in this document'
-    verdict: false-positive
-    note: Section 504 of the Rehabilitation Act, a law outside this page
   - rule: numbering-gap
     line: 987
     text: Section 508 Program or equivalent

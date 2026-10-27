@@ -16,11 +16,6 @@ findings:
     text: 3秒間平均した値（測定値12個の平均値）。
     message: 半角の「3」と書いています（この文書はふつう全角の「３」。7 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 102
-    text: 0.3m/s未満）。
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。7 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 331
     text: の近傍の高度の高いところでは、晴天乱気流（ＣＡＴ）が起こることもある。

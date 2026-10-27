@@ -76,11 +76,6 @@ findings:
     text: ＊　登録を受けている業者を確認したい方は、「免許・許可・登録等を受けている業者一
     message: 「を受けている業者」が 7 回出てきます（5 回まで）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 48
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 35 行目の見出しと同じです
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 51
     text: FINMAC（フィンマック））（*）に相談してください（ただし、加入第１種金融商
@@ -99,11 +94,6 @@ findings:
   - rule: topic-predicate-distance
     line: 51
     text: 外国為替証拠金取引に関する個別の取引に関するトラブルについては、会社とよく話し合
-    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 63
-    text: 未公開株の販売は、金融商品取引業者（証券会社）のほか当該未公開株の発行会社でも可
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
@@ -180,11 +170,6 @@ findings:
     line: 126
     text: 補償の対象となる顧客は、金融商品取引法第七十九条の二十第一項で規定されている「一
     message: 「金融商品取引法第七十九条」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 126
-    text: 補償の対象となる顧客は、金融商品取引法第七十九条の二十第一項で規定されている「一
-    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 134

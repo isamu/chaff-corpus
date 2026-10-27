@@ -61,11 +61,6 @@ findings:
     text: You are entitled to 12 weeks of paid tim
     message: This list punctuates differently from the rest (1 in this document)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 167
-    text: PPL]({% page "travel-and-leave/paid-pare
-    message: '"PPL" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
   - rule: contraction-consistency
     line: 185
     text: You and your supervisor won’t see an ava

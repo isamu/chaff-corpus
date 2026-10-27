@@ -26,11 +26,6 @@ findings:
     text: 事ができ、山頂からは壮大な景色が広がる。
     message: 「事」と書いています（この文書はふつう「こと」と書く語です。7 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 41
-    text: 「英国大使館別荘記念公園」や「イタリア大使館別荘記念公園」はその名残。エキゾチッ
-    message: 「大使館別荘記念公園」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
   - rule: quote-without-source
     line: 41
     text: 夏の日光は外務省のロビーのようだった」と言われるほど、多くの外国人が避暑に訪れた

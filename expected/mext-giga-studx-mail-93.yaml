@@ -1,24 +1,12 @@
 id: mext-giga-studx-mail-93
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 第93号 2026/1/14
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
   - rule: fullwidth-alnum-consistency
     line: 3
     text: 1/14
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。20 箇所のうち 2 箇所が違う）
     verdict: correct
     note: the issue date 2026/1/14 is in half-width digits while the body writes 令和８年１月１４日
-  - rule: preamble-length
-    line: 5
-    text: ■リーディングDXスクールの事例からギガスタチームの推し実践を紹介します！
-    message: 最初の見出しまでに 11 段落あります（2 段落まで）
-    verdict: false-positive
-    note: a mail magazine marks its items with ■ and 【】 lines, not Markdown headings; the only heading is the page's contact block
   - rule: comparative-without-baseline
     line: 16
     text: より可能になります。
@@ -92,12 +80,6 @@ findings:
     text: 令和８年２月２日（月）12:30～16:30 に、生成AIパイロット校によるポス
     message: この文は 96 文字あります（70 文字まで）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 60
-    text: よりよい「GIGA StuDXメールマガジン」を発信していくために、ご意見やご感
-    message: 「よりよい」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: 「よりよい〜を発信していく」 is the set phrase for improving the magazine itself; the baseline is the magazine as it is
   - rule: max-paragraph-length
     line: 64
     text: ■GIGA StuDX推進チームの独り言

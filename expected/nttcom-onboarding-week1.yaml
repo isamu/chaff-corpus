@@ -57,6 +57,10 @@ findings:
     line: 96
     sha256: 05b5bab535d3df4bf4b2eb44a8c04cf94b89dff01a25de17187337312a9e1671
     verdict: unjudged
+  - rule: list-item-form-mix
+    line: 122
+    sha256: 316bc8647cb1a54b63f8ade35f27f5b45808beb468cd6c549770875173a69d2a
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 123
     sha256: 92d20920454969f8532bde499c35e031eb2a96fb8773d0e99e55b5b857dc0ca4

@@ -1,45 +1,15 @@
 id: chrg-119shrg60261-fsgg-approps-fy2026
 chaff: 0.36.0
 findings:
-  - rule: all-caps-shouting
-    line: 85
-    text: CHRIS VAN HOLLEN, Maryland
-    message: '"CHRIS VAN HOLLEN" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 113
-    text: CHRIS VAN HOLLEN, Maryland
-    message: '"CHRIS VAN HOLLEN" is written in capitals'
-    verdict: unjudged
   - rule: dangling-reference
     line: 439
     text: Section 713
     message: '"Section 713" (address 713) is not in this document'
     verdict: unjudged
-  - rule: date-without-year
-    line: 449
-    text: March 21st announcement
-    message: "\"March 21st\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 471
-    text: STATEMENT OF HONORABLE KELLY LOEFFLER, A
-    message: '"STATEMENT OF HONORABLE KELLY LOEFFLER, ADMINISTRATOR" is written in capitals'
-    verdict: unjudged
-  - rule: date-without-year
-    line: 545
-    text: January 20th, we've undertaken a sweepin
-    message: "\"January 20th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
   - rule: unknown-word
     line: 687
     text: globalist bureaucrats or partisan
     message: '"globalist" is not in the dictionary; did you mean "globalise"?'
-    verdict: unjudged
-  - rule: date-without-year
-    line: 775
-    text: January 20th, we've undertaken a sweepin
-    message: "\"January 20th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
     verdict: unjudged
   - rule: orthographic-variant
     line: 807
@@ -56,70 +26,10 @@ findings:
     text: SBLCs licenses would be rescinded if the
     message: '"SBLCs" is one letter away from "SBDCs", which the document uses more than once'
     verdict: unjudged
-  - rule: date-without-year
-    line: 2583
-    text: May 28th. I
-    message: "\"May 28th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 2605
-    text: May 21, the
-    message: "\"May 21\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 2899
-    text: STATEMENT OF THE HONORABLE PAUL S. ATKIN
-    message: '"STATEMENT OF THE HONORABLE PAUL S" is written in capitals'
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3075
-    text: April 22, I was sworn in by Secretary of
-    message: "\"April 22\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3241
-    text: May 30, I submitted to Congress the agen
-    message: "\"May 30\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3297
-    text: May 14. The
-    message: "\"May 14\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3481
-    text: Feb. 3. The masking error has
-    message: "\"Feb. 3\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 3483
-    text: May 8,
-    message: "\"May 8\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 3591
-    text: Section 31
-    message: '"Section 31" (address 31) is not in this document'
-    verdict: unjudged
   - rule: currency-notation-consistency
     line: 3879
     text: USD1. He created the Tron blockchain, an
     message: '"USD1" here, where the document usually writes this currency like "$600 million" (1 of 95)'
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 4913
-    text: Section 2(a)(1) of the
-    message: '"Section 2(a)(1)" (address 2.a.1) is not in this document'
-    verdict: unjudged
-  - rule: date-without-year
-    line: 4999
-    text: June 3, the subcommittee
-    message: "\"June 3\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 5025
-    text: DEPARTMENT OF THE TREASURY
-    message: '"DEPARTMENT OF THE TREASURY" is written in capitals'
     verdict: unjudged
   - rule: name-variant
     line: 5065
@@ -130,36 +40,6 @@ findings:
     line: 5593
     text: American-Economic-Prosperity.pdf.
     message: '"American-Economic-Prosperity" is written "American Economic Prosperity" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5869
-    text: January 20th executive order to hold for
-    message: "\"January 20th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5875
-    text: January 28th. And I also believe if that
-    message: "\"January 28th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5917
-    text: January 24th, 4 days. But in fact, payme
-    message: "\"January 24th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5931
-    text: January 28th, none of
-    message: "\"January 28th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5949
-    text: February 3rd, you wrote in
-    message: "\"February 3rd\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
-    verdict: unjudged
-  - rule: date-without-year
-    line: 5955
-    text: February 5th, you
-    message: "\"February 5th\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
     verdict: unjudged
   - rule: dangling-reference
     line: 6939
@@ -175,11 +55,6 @@ findings:
     line: 7257
     text: June 11, the
     message: June 11, 2021 is a Friday, not a Wednesday
-    verdict: unjudged
-  - rule: date-without-year
-    line: 7257
-    text: June 11, the
-    message: "\"June 11\" has no year, and the document's dates run from 2021 to 2026, so the year is unclear"
     verdict: unjudged
   - rule: invisible-character
     line: 7295
@@ -205,9 +80,4 @@ findings:
     line: 7323
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 7373
-    text: DEPARTMENT OF THE TREASURY
-    message: '"DEPARTMENT OF THE TREASURY" is written in capitals'
     verdict: unjudged

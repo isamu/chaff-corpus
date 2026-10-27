@@ -19,24 +19,6 @@ findings:
     verdict: false-positive
     note: 15 個の天気の名前を読点で並べた列挙
   - rule: orthographic-variant
-    line: 152
-    text: 晴）とも書く。
-    message: 「晴」と書いています（この文書はふつう「晴れ」と書く語です。12 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 用語集の「（晴）とも書く。」で、別の書き方そのものが説明の対象
-  - rule: orthographic-variant
-    line: 220
-    text: くもり）、（曇）とも書く。
-    message: 「くもり」と書いています（この文書はふつう「曇り」と書く語です。19 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: 用語集の「（くもり）、（曇）とも書く。」で、別の書き方そのものが説明の対象
-  - rule: orthographic-variant
-    line: 220
-    text: 曇）とも書く。
-    message: 「曇」と書いています（この文書はふつう「曇り」と書く語です。19 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: 用語集の「（くもり）、（曇）とも書く。」で、別の書き方そのものが説明の対象
-  - rule: orthographic-variant
     line: 291
     text: 曇雨天
     message: 「曇」と書いています（この文書はふつう「曇り」と書く語です。3 箇所のうち 1 箇所が違う）

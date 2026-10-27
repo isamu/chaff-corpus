@@ -6,7 +6,7 @@ findings:
     text: BOARD OF GOVERNORS
     message: 294 proper nouns per 1000 words (limit 200)
     verdict: false-positive
-    note: "the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns"
+    note: the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns
   - rule: max-sentence-length
     line: 23
     text: "Applicability:  This letter is expected"
@@ -52,7 +52,7 @@ findings:
     text: SR letter 21-8, "Interagency Statement o
     message: This sentence runs 21 words (limit 18)
     verdict: false-positive
-    note: "a footnote citing another letter by number, title and date, not a sentence"
+    note: a footnote citing another letter by number, title and date, not a sentence
   - rule: heading-level-skip
     line: 45
     text: "##### Notes:"

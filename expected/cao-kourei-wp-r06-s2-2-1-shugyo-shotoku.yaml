@@ -25,12 +25,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「の」が読点を挟まず三つ続く
-  - rule: max-kanji-continuous
-    line: 21
-    text: 従来の事業主に対する65歳までの雇用確保の義務化に加えて、70歳までの就業確保を
-    message: 「改正高年齢者雇用安定法」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法律の名前（改正高年齢者雇用安定法）
   - rule: max-sentence-length
     line: 21
     text: 従来の事業主に対する65歳までの雇用確保の義務化に加えて、70歳までの就業確保を
@@ -175,12 +169,6 @@ findings:
     message: 「助言を行う」は「助言する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「助言を行う」は「助言する」で足りる
-  - rule: max-kanji-continuous
-    line: 51
-    text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
-    message: 「特定求職者雇用開発助成金」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 助成金の名前
   - rule: max-sentence-length
     line: 51
     text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
@@ -192,12 +180,6 @@ findings:
     what: 「また、」「さらに、」「また、」で始まる段落が三つ続く（表2－2－1 の題を挟む）
     verdict: missed
     note: judged correct before; the table caption the converter now keeps (isamu/lab#1743) sits between the paragraphs and breaks the run chaff counts
-  - rule: max-kanji-continuous
-    line: 53
-    text: 表2－2－1　高年齢者雇用関係助成金制度の概要
-    message: 「高年齢者雇用関係助成金制度」は漢字が 13 字続いています（10 字まで）
-    verdict: correct
-    note: 表題の「高年齢者雇用関係助成金制度」は名前ではない一般の複合語で、「高年齢者雇用関係の助成金制度」と分けられる
   - rule: max-sentence-length
     line: 55
     text: あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用者の能力評価、
@@ -234,12 +216,6 @@ findings:
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「支援を行う」は「支援する」で足りる
-  - rule: max-kanji-continuous
-    line: 57
-    text: また、高年齢退職予定者のキャリア情報等を登録し、その能力の活用を希望する事業者に
-    message: 「公益財団法人産業雇用安定」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法人格と団体の名前（公益財団法人産業雇用安定センター）
   - rule: nominalization
     line: 61
     text: 支援を行った。
@@ -252,12 +228,6 @@ findings:
     message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
     verdict: correct
     note: 「高年齢者雇用安定法は」から述語まで、定義の括弧を挟んで遠い
-  - rule: max-kanji-continuous
-    line: 67
-    text: さらに、令和3年4月に施行された改正高年齢者雇用安定法において、事業主に対する7
-    message: 「改正高年齢者雇用安定法」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法律の名前（改正高年齢者雇用安定法）
   - rule: max-sentence-length
     line: 67
     text: さらに、令和3年4月に施行された改正高年齢者雇用安定法において、事業主に対する7
@@ -390,24 +360,12 @@ findings:
     message: 接続詞で始まる段落が 3 続いています（2 まで）
     verdict: correct
     note: 「また」「さらに」などで始まる段落が続く
-  - rule: max-kanji-continuous
-    line: 89
-    text: さらに、労働者個人の自発的な能力開発・キャリア形成を促進するため、教育訓練休暇制
-    message: 「教育訓練休暇給付金制度」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名前
   - rule: no-doubled-joshi
     line: 89
     text: の給付率の上限の引上げや教育訓練休暇給付金制度の創設等を内容とする「雇用保険法等
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「の」が読点を挟まず三つ続く
-  - rule: max-kanji-continuous
-    line: 91
-    text: 令和4年10月から施行された改正職業能力開発促進法により法定化された都道府県単位
-    message: 「改正職業能力開発促進法」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法律の名前（改正職業能力開発促進法）
   - rule: max-sentence-length
     line: 91
     text: 令和4年10月から施行された改正職業能力開発促進法により法定化された都道府県単位
@@ -438,12 +396,6 @@ findings:
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
     note: 141 字の一文
-  - rule: max-kanji-continuous
-    line: 107
-    text: また、国民年金法等の一部を改正する法律の検討規定等には、被用者保険の更なる適用拡
-    message: 「社会保障審議会年金部会等」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 審議会の部会の名前に「等」が付いたもの
   - rule: no-doubled-joshi
     line: 111
     text: の繰下げ受給の上限年齢の引上げを踏まえた年金額増額のイメージ等について、分かりや
@@ -457,23 +409,11 @@ findings:
     verdict: correct
     note: 「の」が読点を挟まず三つ続く
   - rule: max-kanji-continuous
-    line: 117
-    text: 勤労者財産形成貯蓄制度の普及等を図ることにより、高齢期に備えた勤労者の自助努力に
-    message: 「勤労者財産形成貯蓄制度」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名前
-  - rule: max-kanji-continuous
     line: 119
     text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい
     message: 「社会保障審議会企業年金」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
     note: 審議会の部会の名前（社会保障審議会企業年金・個人年金部会）
-  - rule: max-kanji-continuous
-    line: 119
-    text: 退職金制度については、中小企業における退職金制度の導入を支援するため、中小企業退
-    message: 「中小企業退職金共済制度」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度の名前
   - rule: max-sentence-length
     line: 119
     text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい

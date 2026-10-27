@@ -21,11 +21,6 @@ findings:
     text: the little tips and tricks that can get
     message: '"the the" doubles a word; one of the two is left over'
     verdict: correct
-  - rule: oxford-comma-consistency
-    line: 35
-    text: Writing the "status quo" stories helped
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
   - rule: concrete-evidence-density
     line: 45
     text: ""

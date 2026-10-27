@@ -6,49 +6,49 @@ findings:
     text: Each and every value in JavaScript has a
     message: '"each and every" says the same thing twice'
     verdict: correct
-    note: "「Each and every」 says one thing twice"
+    note: 「Each and every」 says one thing twice
   - rule: hyphen-as-dash
     line: 25
     text: " - we can't reliably say what results we"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 52
     text: " - what sorts of behaviors and capabilit"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 53
     text: " - it's saying that the string `\"Hello W"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 70
     text: " - running the code to see what happens."
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: title-case-consistency
     line: 74
     text: ""
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: correct
-    note: "the only sentence-case heading; the others are Title Case"
+    note: the only sentence-case heading; the others are Title Case
   - rule: hyphen-as-dash
     line: 77
     text: " - those are considered bugs!"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 100
     text: " - cases where the JavaScript runtime te"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: which-that-consistency
     line: 220
     text: which was installed for us by the `types
@@ -60,46 +60,46 @@ findings:
     text: " - we got some _file_ output instead."
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: wordy-phrase
     line: 273
     text: That might be a bit surprising given the
     message: '"given the fact that" can be said in fewer words'
     verdict: correct
-    note: "「given the fact that」 can be 「given that」"
+    note: 「given the fact that」 can be 「given that」
   - rule: hyphen-as-dash
     line: 365
     text: " - was converted to plain strings with c"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 369
     text: " - it needs some way to strip out or tra"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: wordy-phrase
     line: 391
     text: TypeScript has the ability to rewrite co
     message: '"has the ability to" can be said in fewer words'
     verdict: correct
-    note: "「has the ability to」 can be 「can」"
+    note: 「has the ability to」 can be 「can」
   - rule: which-that-consistency
     line: 412
     text: which can help validate only some parts
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
-    note: "a restrictive clause with which, where the page uses that"
+    note: a restrictive clause with which, where the page uses that
   - rule: hyphen-as-dash
     line: 430
     text: " - after all, falling back to `any` is j"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 439
     text: " - some consider it a [billion dollar mi"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash

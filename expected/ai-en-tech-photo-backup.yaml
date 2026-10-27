@@ -1,34 +1,34 @@
 id: ai-en-tech-photo-backup
 chaff: 0.36.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    text: ""
-    message: Section "How to Back Up Your Photos (and Why You Should Do It Today)" has no number, code or link (4 of 8 sections)
-    verdict: false-positive
-    note: the introduction needs no number
   - rule: unqualified-superlative
     line: 3
     text: Your photos are some of the most irrepla
     message: '"the most" has nothing to compare against (3 such claims)'
     verdict: false-positive
     note: '"some of the most irreplaceable files you own" compares within your files; the hook is a cliche, not an unbacked superlative'
+  - rule: padded-intro
+    line: 5
+    what: "\"The good news is that ... In this guide, we'll walk through ...\""
+    verdict: missed
+    note: the stock opening of a generated guide
   - rule: unqualified-superlative
     line: 5
     text: In this guide, we'll walk through the be
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: correct
     note: "\"we'll walk through the best ways\": the stock unbacked promise of a generated guide"
-  - rule: padded-intro
-    line: 5
-    what: "\"The good news is that ... In this guide, we'll walk through ...\""
-    verdict: missed
-    note: the stock opening of a generated guide
   - rule: ai-tell
     line: 9
     what: '"Before diving into specific tools", "the golden rule of backups"; and "a powerful solution for photography enthusiasts" (49)'
     verdict: missed
     note: generated-guide phrasing the ai-tell list does not hold
+  - rule: bold-emphasis
+    line: 9
+    text: Before diving into specific tools, it he
+    message: "11 bold spans of emphasis: 18 per 1000 words (limit 6)"
+    verdict: false-positive
+    note: "mostly labels: the 3-2-1 rule and its list digits, list labels with the colon outside the bold (**Google Photos**:), Pros:/Cons: run-in labels and the numbered steps; little emphasis mid-sentence"
   - rule: adverb-overuse
     line: 15
     text: perfectly, but the closer you get, the s
@@ -47,46 +47,52 @@ findings:
     note: colon-lead-in is a ja-only rule
   - rule: bold-label-list
     line: 23
-    what: "bold-label bullets (23-26, 38-39, 55-57) and bold Pros:/Cons: lines"
-    verdict: missed
-    note: bold-label-list is a ja-only rule
+    text: "- **Google Photos**: Works on both Andro"
+    message: '"Google Photos" and other bold labels open 6 list items (5 needed)'
+    verdict: correct
+    note: bold-label-list is a ja-only rule; found by chaffjs 0.38.0
+  - rule: over-general-claim
+    line: 34
+    text: A 2 TB drive is affordable and will be m
+    message: '"most people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
+    verdict: correct
+    note: "\"more than enough for most people\": generic advice that does not know the reader's library, with line 53 the same"
   - rule: concrete-evidence-density
     line: 45
-    text: ""
-    message: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
-    verdict: correct
-    note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic
+    what: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
+    verdict: missed
+    note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
   - rule: article-sound
     line: 47
     text: a NAS is a small device that sits on you
     message: '"a NAS" takes "an" before that sound'
     verdict: false-positive
     note: NAS is said as one syllable ("nas"), so "a NAS" is right
-  - rule: concrete-evidence-density
-    line: 61
-    text: ""
-    message: Section "Don't Forget to Test Your Backups" has no number, code or link (4 of 8 sections)
+  - rule: over-general-claim
+    line: 47
+    text: For those with very large photo librarie
+    message: '"everyone" and other sweeping claims: 4.9 per 1000 words (limit 3)'
     verdict: false-positive
-    note: a short how-to step; "every few months" is enough
-  - rule: concrete-evidence-density
-    line: 65
-    text: ""
-    message: Section "Final Thoughts" has no number, code or link (4 of 8 sections)
-    verdict: false-positive
-    note: the closing's fault is the stock wording (recorded as closing-cliche), not a missing number
+    note: '"stores files for everyone" is the family members named in the same sentence, not people in general'
+  - rule: over-general-claim
+    line: 53
+    text: For most people, a great setup looks lik
+    message: '"most people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
+    verdict: correct
+    note: "\"For most people, a great setup looks like this\": the generated post's sweeping recommendation"
+  - rule: cliche
+    line: 67
+    what: "\"The best backup plan is the one you'll actually stick with\""
+    verdict: missed
+    note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39
+  - rule: closing-cliche
+    line: 67
+    what: "\"Final Thoughts\": \"easy to put off — until it's too late\", \"Your future self will thank you.\""
+    verdict: missed
+    note: stock closing lines of a generated post
   - rule: unqualified-superlative
     line: 67
     text: The best backup plan is the one you'll a
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: false-positive
     note: "\"the best plan is the one you'll stick with\" compares plans; it is a stock aphorism (recorded as cliche), not an unbacked superlative"
-  - rule: closing-cliche
-    line: 67
-    what: "\"Final Thoughts\": \"easy to put off — until it's too late\", \"Your future self will thank you.\""
-    verdict: missed
-    note: stock closing lines of a generated post
-  - rule: cliche
-    line: 67
-    what: "\"The best backup plan is the one you'll actually stick with\""
-    verdict: missed
-    note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39

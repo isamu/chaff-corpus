@@ -10,12 +10,6 @@ findings:
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23"
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23日）」は 41 文字あります（40 文字まで）
     verdict: unjudged
-  - rule: email-greeting-closing
-    line: 5
-    text: 【発行】
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: a mail-magazine issue opens with its issue number and closes with the office's contact block; it has no personal greeting by design
   - rule: undefined-acronym
     line: 7
     text: HPに掲載しました！
@@ -68,36 +62,6 @@ findings:
     text: 今月号は、「豊かな人間性を育む学校同士の連携・交流」をテーマとした特集1を掲載し
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-  - rule: unrendered-emphasis
-    line: 52
-    text: __CAMCID=hzgulsiKBZ-018&adtype=mail
-    message: 「__」が太字にならず、そのまま表示されます
-    verdict: false-positive
-    note: the underscores are inside a bare URL's query string, not Markdown emphasis
-  - rule: unrendered-emphasis
-    line: 52
-    text: __CAMSID=kQBiPbGdDE-21&__CAMCID=hzgulsiK
-    message: 「__」が太字にならず、そのまま表示されます
-    verdict: false-positive
-    note: the underscores are inside a bare URL's query string, not Markdown emphasis
-  - rule: unrendered-emphasis
-    line: 52
-    text: __CAMVID=BiqbIPbgdDE&_c_d=1&uns_flg=1&__
-    message: 「__」が太字にならず、そのまま表示されます
-    verdict: false-positive
-    note: the underscores are inside a bare URL's query string, not Markdown emphasis
-  - rule: unrendered-emphasis
-    line: 52
-    text: __urlmid=10418343&__CAMSID=kQBiPbGdDE-21
-    message: 「__」が太字にならず、そのまま表示されます
-    verdict: false-positive
-    note: the underscores are inside a bare URL's query string, not Markdown emphasis
-  - rule: max-sentence-length
-    line: 55
-    text: 初等中等教育局 初等中等教育企画課  地方教育行政係
-    message: この文は 71 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
     line: 65
     text: 文部科学省では、発達障害等の障害や日本語に通じないことにより通常の教科書の利用が
@@ -114,29 +78,11 @@ findings:
     message: 「ご覧」と書いています（この文書はふつう「御覧」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
     note: ご覧 here, 御覧 elsewhere in the issue
-  - rule: max-kanji-continuous
-    line: 75
-    text: 初等中等教育局 教科書課 教科用特定図書普及促進係
-    message: 「教科用特定図書普及促進係」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an office's official name, one fixed compound
-  - rule: max-sentence-length
-    line: 75
-    text: 初等中等教育局 教科書課 教科用特定図書普及促進係
-    message: この文は 73 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
     line: 83
     text: 環境省では、文部科学省の協力の下、持続可能な社会の構築を目指して、学校や地域で環
     message: この文は 110 文字あります（70 文字まで）
     verdict: correct
-  - rule: max-sentence-length
-    line: 109
-    text: 国立研究開発法人科学技術振興機構（JST）社会技術研究開発センター（RISTEX
-    message: この文は 87 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-sentence-length
     line: 120
     text: 本研修は、国際理解教育/開発教育の授業実践経験がある小・中・高校、特別支援学校に
@@ -185,12 +131,6 @@ findings:
     text: 文部科学省では今年度、1人1台端末などを活用した学習上の困難の早期発見や、アクセ
     message: この文は 94 文字あります（70 文字まで）
     verdict: correct
-  - rule: max-sentence-length
-    line: 218
-    text: サイエンスアゴラ2025運営事務局（TSP太陽（株）内）
-    message: この文は 106 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: undefined-acronym
     line: 218
     text: TSP太陽（株）内）
@@ -250,12 +190,6 @@ findings:
     text: ) まで
     message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
-  - rule: max-sentence-length
-    line: 257
-    text: Green Blue Education Forum 実行委員会 （石坂産業株式
-    message: この文は 80 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the contact block's lines (office, phone, address) have no 。 and are read as one sentence
   - rule: max-kanji-continuous
     line: 261
     text: 総合教育政策局 男女共同参画共生社会学習・安全課 環境教育推進係

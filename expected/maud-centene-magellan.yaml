@@ -380,24 +380,6 @@ findings:
     message: '"Person" is written like a defined term, but the document defines it nowhere'
     verdict: correct
     note: "dataset artefact: the term is defined in Section 8.15, which the dataset's text does not reach; chaff is right about the text as given"
-  - rule: dangling-reference
-    line: 57
-    text: Section 262 for such Appraisal Share, (i
-    message: '"Section 262" (address 262) is not in this document'
-    verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
-  - rule: dangling-reference
-    line: 57
-    text: Section 262; provided, however, that, if
-    message: '"Section 262" (address 262) is not in this document'
-    verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
-  - rule: dangling-reference
-    line: 57
-    text: Section 262. Parent shall have the right
-    message: '"Section 262" (address 262) is not in this document'
-    verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: max-paragraph-length
     line: 57
     text: Section 2.3           Appraisal Shares.
@@ -407,11 +389,6 @@ findings:
     line: 57
     text: deliver the Merger Consideration to the
     message: '"deliver" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
-  - rule: bracket-nesting
-    line: 65
-    text: Parent shall cause the Paying Agent to m
-    message: Brackets nested 3 deep (limit 2)
     verdict: unjudged
   - rule: max-paragraph-length
     line: 65
@@ -607,11 +584,6 @@ findings:
     text: Affiliate (except for any Company Entity
     message: '"Affiliate" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: bracket-nesting
-    line: 161
-    text: No Company Entity is a party to, or has
-    message: Brackets nested 3 deep (limit 2)
-    verdict: unjudged
   - rule: numbering-gap
     line: 161
     text: (g)          No Company Entity has any l
@@ -668,12 +640,6 @@ findings:
     text: Regulated Business (each, a “Company Reg
     message: '"Regulated Business" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: dangling-reference
-    line: 201
-    text: Section 302 or Title IV of ERISA or (ii)
-    message: '"Section 302" (address 302) is not in this document'
-    verdict: correct
-    note: "dataset artefact: the dataset's text stops in Section 3.16, so this later section is not in it (the filed agreement has it); chaff is right about the text as given"
   - rule: max-paragraph-length
     line: 201
     text: Section 3.9          Employee Benefit Pl
@@ -795,11 +761,6 @@ findings:
     line: 267
     text: as applicable, through contractual oblig
     message: '"as applicable" does not say how much is enough to meet the requirement'
-    verdict: unjudged
-  - rule: requirement-smell
-    line: 267
-    text: but not limited to, the GNU General Publ
-    message: '"but not limited to" in a requirement does not say what else it covers'
     verdict: unjudged
   - rule: undefined-acronym
     line: 267

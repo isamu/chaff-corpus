@@ -67,66 +67,18 @@ findings:
     message: 「書面等」は 13 行目でも定義されています
     verdict: false-positive
     note: オプション3の条文と共通条項がそれぞれ「書面等」を定義する。オプション1・2を選べば共通条項の定義しか残らない
-  - rule: numbering-gap
-    line: 55
-    text: 第4条（変更オプション条項：厳格な複製条件）
-    message: 「第4条」の次が「第4条」です（5 番目のはず）
-    verdict: false-positive
-    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
   - rule: obligation-without-deadline
     line: 67
     text: 通知する。ただし、正当な理由がある場合には、甲乙協議の上、通知期限を延長すること
     message: 「通知」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
     verdict: false-positive
     note: 同じ文に期限（締結日から2か月、以下「通知期限」）がある
-  - rule: numbering-gap
-    line: 72
-    text: 第8条（変更オプション条項：違約金）
-    message: 「第8条」の次が「第8条」です（9 番目のはず）
-    verdict: false-positive
-    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
   - rule: undefined-term
     line: 73
     text: 本違約金額を上回る場合には、その超えた部分についても賠償する。
     message: 「本違約金額」は定義した語の形ですが、この文書のどこにも定義がありません
     verdict: correct
     note: 「本違約金額」は定義されていない（直前の「違約金として1000万円」を指すが、定義の形をとっていない）
-  - rule: numbering-gap
-    line: 87
-    text: 第12条（変更オプション条項1：知財調停）
-    message: 「第12条」の次が「第12条」です（13 番目のはず）
-    verdict: false-positive
-    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
-  - rule: numbering-gap
-    line: 94
-    text: 第12条（変更オプション条項2：仲裁）
-    message: 「第12条」の次が「第12条」です（13 番目のはず）
-    verdict: false-positive
-    note: 同じ番号の「変更オプション条項」は本条の代わりに選ぶ別案で、番号の飛びではない
-  - rule: defined-name-repeated
-    line: 100
-    text: 電磁的記録を作成し、甲乙が合意の後電子署名を施し、各自その電磁的記録を保管する。
-    message: 「電磁的記録」は 13 行目で「書面等」と呼ぶと定めた名前です
-    verdict: false-positive
-    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
-  - rule: defined-name-repeated
-    line: 100
-    text: 電磁的記録を作成し、甲乙が合意の後電子署名を施し、各自その電磁的記録を保管する。
-    message: 「電磁的記録」は 16 行目で「書面等」と呼ぶと定めた名前です
-    verdict: false-positive
-    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
-  - rule: defined-name-repeated
-    line: 100
-    text: 電磁的記録を保管する。
-    message: 「電磁的記録」は 13 行目で「書面等」と呼ぶと定めた名前です
-    verdict: false-positive
-    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
-  - rule: defined-name-repeated
-    line: 100
-    text: 電磁的記録を保管する。
-    message: 「電磁的記録」は 16 行目で「書面等」と呼ぶと定めた名前です
-    verdict: false-positive
-    note: 「書面等」は書面と電磁的記録を合わせて呼ぶ語で、電子契約の記録だけを言うここは「電磁的記録」でよい
   - rule: orthographic-variant
     line: 100
     text: 但し、本契約を電子契約により締結する場合には、本契約の成立を証するため、本書の電

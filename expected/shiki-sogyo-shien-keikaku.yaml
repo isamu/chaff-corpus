@@ -33,18 +33,6 @@ findings:
     text: (電話：048-711-2222)
     message: 括弧を「(」と書いています（この文書はふつう「（」。19 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: max-sentence-length
-    line: 91
-    text: 会社設立時の登録免許税の軽減措置
-    message: この文は 151 文字あります（140 文字まで）
-    verdict: false-positive
-    note: label lines with no 。 (a benefit's name, then its description) are joined with the following lines into one 'sentence'
-  - rule: topic-predicate-distance
-    line: 91
-    text: 会社設立時の登録免許税の軽減措置
-    message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
-    verdict: false-positive
-    note: label lines with no 。 are joined with the following lines into one 'sentence', so the topic and predicate look far apart
   - rule: known-misspelling
     line: 98
     text: 第三保証人なしの創業関連保証が、事業開始の6か月前から利用可能
@@ -61,12 +49,6 @@ findings:
     text: の小規模事業者の販路開拓等の取組を支援する小規模事業者持続化補助金＜創業型＞の申
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 117
-    text: ""
-    message: 「その他の支援等創業支援関連リンク」の節に数値もコードもリンクもありません（そういう節が 5/15）
-    verdict: false-positive
-    note: a section of links whose addresses the conversion dropped (＜外部リンク＞ labels); it is a link list
   - rule: concrete-evidence-density
     line: 130
     text: ""

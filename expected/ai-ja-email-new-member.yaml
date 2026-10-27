@@ -1,18 +1,6 @@
 id: ai-ja-email-new-member
 chaff: 0.36.0
 findings:
-  - rule: max-sentence-length
-    line: 8
-    text: 高橋さんからひとこと：
-    message: この文は 92 文字あります（70 文字まで）
-    verdict: false-positive
-    note: the label 高橋さんからひとこと： and a quoted remark of three short sentences counted as one sentence
-  - rule: max-sentence-length
-    line: 9
-    text: 「はじめまして、高橋です。最近はキャンプにハマっていて、週末はだいたい山にいます
-    message: この文は 92 文字あります（70 文字まで）
-    verdict: false-positive
-    note: "lab main only: the quoted remark is three short sentences inside 「」, counted as one"
   - rule: ai-generated-composite
     line: 11
     what: 「席は窓側の、元・山本さんの席です」が依頼にない

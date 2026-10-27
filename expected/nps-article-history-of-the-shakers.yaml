@@ -38,12 +38,6 @@ findings:
     text: '"the World." They allowed contact with o'
     message: The quote mark " here, where the document usually writes “” (4 of 8)
     verdict: correct
-  - rule: list-item-form-mix
-    line: 39
-    text: Shakers Compendium of the origin, Histor
-    message: "\"Shakers Compendium of the origin, History, principles, Rules and Regulations, Government, and Doctrines of the United Society of Believers in Christ's Second Appearing with Biographies of Ann Lee, William Lee, Jas.\" is a sentence; the other items in this list are phrases (1 of 4)"
-    verdict: false-positive
-    note: a book title in a source list; the abbreviation Jas. (James) is read as the end of a sentence
   - rule: oxford-comma-consistency
     line: 39
     text: Shakers Compendium of the origin, Histor

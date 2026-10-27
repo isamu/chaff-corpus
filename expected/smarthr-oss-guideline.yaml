@@ -56,30 +56,6 @@ findings:
     text: Apahce 2.0に変更してください
     message: 「Apahce」は、ほかの所で何度も書いた「Apache」と一字違いです
     verdict: correct
-  - rule: undefined-acronym
-    line: 328
-    text: GPL
-    message: 「GPL」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: a licence list item whose next line links the full name (GNU (Lesser) General Public License)
-  - rule: undefined-acronym
-    line: 331
-    text: LGPL
-    message: 「LGPL」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: a licence list item whose next line links the full name (GNU (Lesser) General Public License)
-  - rule: undefined-acronym
-    line: 339
-    text: CC-BY
-    message: 「CC-BY」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: CC-BY is a licence name; the next line links its full title (Creative Commons 表示 4.0)
-  - rule: undefined-acronym
-    line: 343
-    text: WTFPL
-    message: 「WTFPL」が説明なしで使われています（説明のない略語 13 個）
-    verdict: false-positive
-    note: WTFPL is a licence name in a list of licence names, followed by its own link
   - rule: orthographic-variant
     line: 357
     text: 及びLGPLのOSSを利用して作成したプログラムの機能をネットワーク経由で提供す
@@ -95,23 +71,11 @@ findings:
     text: AGPLというライセンスがあります。このライセンスは、GPLおよびLGPLがネッ
     message: 「AGPL」が説明なしで使われています（説明のない略語 13 個）
     verdict: correct
-  - rule: latin-spacing
-    line: 362
-    text: " チャンネルで相談をしてください。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the space ends a Slack channel name (#pj_oss-team); packing it would merge the name with the following Japanese
   - rule: katakana-long-vowel
     line: 386
     text: マネージャを利用するOSSの場合は、以下の内容が設定されていることを確認する
     message: 「マネージャ」と「マネージャー」が混ざっています（この語は 2 回のうち 1 回が「マネージャ」）
     verdict: correct
-  - rule: latin-spacing
-    line: 402
-    text: " でOSSチームに依頼してください。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。441 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the space ends a Slack channel name (#pj_oss-team); packing it would merge the name with the following Japanese
   - rule: orthographic-variant
     line: 406
     text: 無いため、法務フローの捺印申請をし、自らの判断で署名して構いません。

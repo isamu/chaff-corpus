@@ -96,12 +96,6 @@ findings:
     note: a section of the Agricultural Adjustment Act, its amendment, the Constitution or the Federal Register cited by the opinion, outside this document
   - rule: dangling-reference
     line: 109
-    text: § 1, 2, of the amendment of May 26, 1941
-    message: '"§ 1" (address 1) is not in this document'
-    verdict: false-positive
-    note: a section of the Agricultural Adjustment Act, its amendment, the Constitution or the Federal Register cited by the opinion, outside this document
-  - rule: dangling-reference
-    line: 109
     text: § 728.251, 6 Federal Register 2695, 2701
     message: '"§ 728.251" (address 728.251) is not in this document'
     verdict: false-positive
@@ -171,12 +165,6 @@ findings:
     message: '"Section 301" follows "Section 339" (expected number 340)'
     verdict: false-positive
     note: footnotes cite sections of the Act in the order the opinion needs them; they are not a numbered sequence
-  - rule: dangling-reference
-    line: 153
-    text: § 1, 2, 3 of the amendment of May 26, 19
-    message: '"§ 1" (address 1) is not in this document'
-    verdict: false-positive
-    note: a section of the Agricultural Adjustment Act, its amendment, the Constitution or the Federal Register cited by the opinion, outside this document
   - rule: dangling-reference
     line: 153
     text: 2, 3 of the amendment of May 26, 1941.

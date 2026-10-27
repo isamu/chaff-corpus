@@ -36,12 +36,6 @@ findings:
     text: いずれにせよ、日米協議において、自動車、自動車部品、あるいは鉄鋼・アルミ、そして
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-  - rule: adversative-ga-repeat
-    line: 41
-    text: ご指摘のトランプ大統領の発言などについては、繰り返しになりますが、承知しておりま
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: the first が (繰り返しになりますが) is a prefatory が, not a contrast
   - rule: fullwidth-alnum-consistency
     line: 52
     text: G7サミットの機会のあり得べき日米首脳間の接点も視野に、閣僚間で緊密に協議してい
@@ -62,29 +56,11 @@ findings:
     text: F47を披露していたという一部の報道がありました。まずは電話会談の事実関係と、大
     message: 半角の「F47」と書いています（この文書はふつう全角の「Ｆ４７」。23 箇所のうち 7 箇所が違う）
     verdict: correct
-  - rule: adversative-ga-repeat
-    line: 58
-    text: （答）まず、総理とトランプ大統領の電話会談の内容でありますが、プレスに向けて、あ
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: a topic-introducing が (〜でありますが、) is prefatory, not a contrast
-  - rule: orthographic-variant
-    line: 61
-    text: ほうが負けであるということをおっしゃっていて、そのとおりかと思うのですが、あえて
-    message: 「ほう」と書いています（この文書はふつう「方」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "ほう (comparative: …ほうが負け) and 方 (かた, a person) are different words"
   - rule: clause-chain
     line: 63
     text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 63
-    text: 答えから申し上げれば、よろしくないというふうに思います。いつも基本的に申し上げて
-    message: 「答え」と書いています（この文書はふつう「答」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the （答） speaker label of the Q&A is counted as the word 答え
   - rule: topic-predicate-distance
     line: 63
     text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
@@ -120,18 +96,6 @@ findings:
     text: ２ページ目に関して、地方で活躍する人材の育成とそれを支える基盤の整備として郷土に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 104
-    text: for Scienceや情報基盤の強化、優れた研究者が世界から日本に集う国際的な
-    message: 半角の「for」と書いています（この文書はふつう全角の「ｆｏｒ」。23 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the English words of a programme's proper name (AI for Science) are written half-width as names are; not a digit or acronym that the document writes full-width
-  - rule: fullwidth-alnum-consistency
-    line: 104
-    text: Scienceや情報基盤の強化、優れた研究者が世界から日本に集う国際的な頭脳循環
-    message: 半角の「Science」と書いています（この文書はふつう全角の「Ｓｃｉｅｎｃｅ」。23 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: the English words of a programme's proper name (AI for Science) are written half-width as names are; not a digit or acronym that the document writes full-width
   - rule: clause-chain
     line: 109
     text: 社会の変化に応じて必要なサービスが必要な方に提供され、保険料を抑制せず、公平な負
@@ -173,8 +137,3 @@ findings:
     text: 1,000兆円が達成される。この実現に向け必要な政策の方向性は３つ。
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。97 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 145
-    text: 本来は３年連続で賃金が上がっており、ボーナスを見越して消費が拡大していってもおか
-    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: unjudged

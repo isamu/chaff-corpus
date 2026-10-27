@@ -1,44 +1,12 @@
 id: fed-ca-23-2
 chaff: 0.37.0
 findings:
-  - rule: all-caps-shouting
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: '"BOARD OF GOVERNORS" is written in capitals'
-    verdict: unjudged
-  - rule: email-greeting-closing
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: The email does not open with a greeting
-    verdict: false-positive
-    note: a memorandum-style regulatory letter; the TO THE OFFICERS line is its address, no salutation is expected
   - rule: proper-noun-density
     line: 5
     text: BOARD OF GOVERNORS
     message: 311 proper nouns per 1000 words (limit 200)
     verdict: false-positive
     note: the letterhead and agency names make the density in a short regulatory letter
-  - rule: all-caps-shouting
-    line: 6
-    text: OF THE FEDERAL RESERVE SYSTEM
-    message: '"OF THE FEDERAL RESERVE SYSTEM" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 9
-    text: DIVISION OF CONSUMER
-    message: '"DIVISION OF CONSUMER" is written in capitals'
-    verdict: unjudged
-  - rule: all-caps-shouting
-    line: 10
-    text: AND COMMUNITY AFFAIRS
-    message: '"AND COMMUNITY AFFAIRS" is written in capitals'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 12
-    text: CA 23-2
-    message: '"CA" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: CA is the letter series' number prefix, under the Consumer Affairs Letters heading
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"
@@ -67,11 +35,15 @@ findings:
     verdict: false-positive
     note: "two sentences counted as one: the period after \"Regulation C\" is read as an initial's"
   - rule: max-sentence-length
+    line: 23
+    text: This Guide applies to HMDA data that fin
+    message: This sentence runs 25 words (limit 18)
+    verdict: unjudged
+  - rule: max-sentence-length
     line: 25
-    text: In October 2015, the CFPB issued the 201
-    message: This sentence runs 53 words (limit 18)
-    verdict: false-positive
-    note: "two sentences counted as one: the period after \"Regulation C\" is read as an initial's"
+    text: The 2015 HMDA Rule modified the types of
+    message: This sentence runs 35 words (limit 18)
+    verdict: unjudged
   - rule: max-sentence-length
     line: 25
     text: The Dodd-Frank Act amended HMDA, transfe
@@ -138,45 +110,9 @@ findings:
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 25 words (limit 18)
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 51
-    text: CA 23-1 “Changes to Home Mortgage Disclo
-    message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number, a quoted title and a date, not a sentence"
-  - rule: max-sentence-length
-    line: 54
-    text: CA 18-6 “Statement on the Implementation
-    message: This sentence runs 26 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number, a quoted title and a date, not a sentence"
-  - rule: max-sentence-length
-    line: 58
-    text: CA 93-2 “Guidance on Coverage of the Hom
-    message: This sentence runs 21 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of related letters: a number, a quoted title and a date, not a sentence"
   - rule: heading-level-skip
     line: 60
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: correct
     note: the page really jumps from h3 to h5 for its notes
-  - rule: undefined-acronym
-    line: 66
-    text: FR 66128 (October 28, 2015) (2015 HMDA R
-    message: '"FR" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: FR in a Federal Register citation (80 FR 66128), a standard legal citation form
-  - rule: undefined-acronym
-    line: 72
-    text: WL 4447293 (D.D.C. Sept. 23, 2022). Retu
-    message: '"WL" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: WL in a Westlaw citation (2022 WL 4447293), a standard legal citation form
-  - rule: email-greeting-closing
-    line: 76
-    text: "Last Update: April 18, 2023"
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: the letter ends with its signature block; the page's Last Update line follows the notes

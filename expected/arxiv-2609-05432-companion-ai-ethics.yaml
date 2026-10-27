@@ -115,36 +115,12 @@ findings:
     message: Heading "Corpus" goes from level 2 to level 4 (expected 3)
     verdict: false-positive
     note: a LaTeX run-in \paragraph heading in the appendix that arXiv's HTML renders as h4
-  - rule: bracket-nesting
-    line: 221
-    text: Let W(r)=max(|words(T(r))|,1) denote the
-    message: Brackets nested 3 deep (limit 2)
-    verdict: false-positive
-    note: nesting in a mathematical formula (max(|words(T(r))|,1))
-  - rule: citation-reference-mismatch
-    line: 225
-    text: "[0,1] and elevated only when a record co"
-    message: The citation "[0,1]" names 0, which is not in the reference list
-    verdict: false-positive
-    note: '"[0,1]" is a numeric interval, not a citation'
-  - rule: citation-reference-mismatch
-    line: 229
-    text: "[0,1] and achieves high values only when"
-    message: The citation "[0,1]" names 0, which is not in the reference list
-    verdict: false-positive
-    note: '"[0,1]" is a numeric interval, not a citation'
   - rule: one-sentence-paragraph-run
     line: 235
     text: "(i) Functional errors (k1=50): error, bu"
     message: 5 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
     note: the appendix lists keyword sets one per paragraph; they are list items, not prose
-  - rule: unknown-word
-    line: 235
-    text: laggy, lag, slow response, corrupted, do
-    message: '"laggy" is not in the dictionary; did you mean "leggy"?'
-    verdict: false-positive
-    note: '"laggy" is a search term in the keyword list (and an ordinary word)'
   - rule: spelling-consistency
     line: 264
     text: behavior is identical to dialogue with a

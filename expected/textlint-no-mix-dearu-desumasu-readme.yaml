@@ -25,12 +25,6 @@ findings:
     message: 「書き」と「を」は一続きの語句ですが、あいだに空白があります（179 箇所のうち 1 箇所が空いている）
     verdict: correct
     note: a stray space before を (箇条書き を)
-  - rule: heading-numbering-mix
-    line: 132
-    text: "### Q. 2.0(以前)と同じ挙動にするにはどうすればよいですか?"
-    message: 見出し「Q. 2.0(以前)と同じ挙動にするにはどうすればよいですか?」だけ番号がありません（兄弟の見出しは「Q. 箇条書きの際に「である」調が混在することもあるのでは?」など 3 個が番号付き）
-    verdict: false-positive
-    note: the Q. headings carry no section numbers; 2.0 is a version number, not a heading number
   - rule: orthographic-variant
     line: 173
     text: 下さい。

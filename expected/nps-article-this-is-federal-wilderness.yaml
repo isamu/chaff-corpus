@@ -13,48 +13,24 @@ findings:
     message: The quote mark ' here, where the document usually writes ’‘ (3 of 10)
     verdict: correct
     note: the opening straight quote of the same pair
-  - rule: concrete-evidence-density
-    line: 19
-    text: ""
-    message: Section "Wilderness is not a pristine and untouched landscape." has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: an owned-media section explaining an idea in prose; the source section also links to two NPS pages, which the html conversion drops
   - rule: heading-level-skip
     line: 19
     text: "### Wilderness is not a pristine and unt"
     message: Heading "Wilderness is not a pristine and untouched landscape." goes from level 1 to level 3 (expected 2)
     verdict: correct
     note: the article goes from its h1 straight to h3 headings
-  - rule: concrete-evidence-density
-    line: 33
-    text: ""
-    message: Section "Yes, people are allowed to go into wilderness." has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: an owned-media section explaining an idea in prose; the source section also links to two NPS videos, which the html conversion drops
   - rule: oxford-comma-consistency
     line: 37
     text: Wilderness protects fresh air, clean wat
     message: This list punctuates differently from the rest (1 in this document)
     verdict: correct
     note: no serial comma here while the article's other lists use one
-  - rule: concrete-evidence-density
-    line: 47
-    text: ""
-    message: Section "You don't have to be a mountaineer to enjoy wilderness." has no number, code or link (3 of 5 sections)
-    verdict: false-positive
-    note: an owned-media section of encouragement; the source section also links to the trip-planning guide and a video, which the html conversion drops
   - rule: quote-style-consistency
     line: 49
     text: "'re ready!"
     message: The quote mark ' here, where the document usually writes ’‘ (3 of 10)
     verdict: correct
     note: a straight apostrophe (You're) where the article otherwise writes curly ones
-  - rule: title-case-consistency
-    line: 61
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: the page's related-content widget label, not one of the article's headings
   - rule: excessive-hedging
     line: 67
     text: Perhaps you like knowing that you may no

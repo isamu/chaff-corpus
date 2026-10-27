@@ -31,11 +31,6 @@ findings:
     text: 等特例業務などの届出業者での経験は含まない。）があり、かつ日本に居住する常勤の役
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 19
-    text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録
-    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
-    verdict: unjudged
   - rule: requirement-smell
     line: 25
     text: 等を踏まえ、代表者が的確に業務を遂行できると当局が判断した場合は、日本国外から業
@@ -65,11 +60,6 @@ findings:
     line: 41
     text: )を確保することで足りることになります。詳しくは、拠点開設サポートオフィスにご相
     message: 括弧を「)」と書いています（この文書はふつう「）」。101 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 41
-    text: この場合、投資運用業者は、コンプライアンス担当者に代わり、当該投資運用関係業務の
-    message: 「当該投資運用関係業務」は漢字が 10 字続いています（8 字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 41

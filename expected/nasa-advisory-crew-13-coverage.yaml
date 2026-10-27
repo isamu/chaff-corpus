@@ -28,11 +28,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 85
-    text: KSC Amateur Radio Club’s UHF radio frequ
-    message: '"KSC" is used without an expansion (8 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 85
     text: UHF radio frequency 444.925 MHz, FM mode
     message: '"UHF" is used without an expansion (8 such acronyms)'
     verdict: unjudged

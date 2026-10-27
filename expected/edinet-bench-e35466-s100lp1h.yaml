@@ -236,11 +236,6 @@ findings:
     text: 管理業務の一部受託役員の兼任 ３名（注）「主要な事業の内容」欄には、サービスライ
     message: 「管理管理」で語が重なっています。どちらかが余分です
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 13
-    text: 0当社サービスの一部委託経営管理運営管理管理業務の一部受託役員の兼任 ３名（注）
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 13
     text: ４【関係会社の状況】名称住所資本金（千円）主要な事業の内容議決権の所有割合又は被
@@ -280,11 +275,6 @@ findings:
     line: 17
     text: ）連結会社の状況 令和３年３月31日現在事業部門の名称従業員数（人）開発部門59
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 21
-    text: 2％と同業他社に比較して低く、プロパー従業員に頼る構造となっており固定費率の上昇
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 21
@@ -451,11 +441,6 @@ findings:
     text: たり、損害賠償請求を受ける等、当社グループの業績や財政状態に影響を及ぼす可能性が
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 25
-    text: 当社グループは、これらのリスク発生の可能性を十分に認識した上で、発生の回避及び発
-    message: 「は」で出した主題から述語まで 111 字あります（80 字まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは、独立系であるためメーカーの系列、機種・OS等に限定されることなく
@@ -739,11 +724,6 @@ findings:
     line: 53
     text: 3,132.5円　　　　　　　割当先　　　コンピューターマネージメント社員持株会
     message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 5円　　　　　　　割当先　　　コンピューターマネージメント社員持株会２．株式分割
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 53

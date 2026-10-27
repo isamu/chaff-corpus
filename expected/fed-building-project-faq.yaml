@@ -34,6 +34,11 @@ findings:
     message: This sentence runs 43 words (limit 40)
     verdict: unjudged
   - rule: max-sentence-length
+    line: 91
+    text: The 1951 Constitution Avenue Building wa
+    message: This sentence runs 49 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
     line: 130
     text: At the conference, the two leaders agree
     message: This sentence runs 48 words (limit 40)
@@ -42,6 +47,11 @@ findings:
     line: 141
     text: General George C. Marshall, a key U.S. o
     message: This sentence runs 41 words (limit 40)
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 147
+    text: Constructed during 1931–1933, the 1951 C
+    message: This sentence runs 61 words (limit 40)
     verdict: unjudged
   - rule: undefined-acronym
     line: 153

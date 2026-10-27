@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 5
-    what: 差出人・講師・問い合わせ先が〇〇のまま（5・21・29行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇です。
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
   - rule: date-weekday-mismatch
     line: 9
     what: 「11月20日（木）」と24行「11月13日（木）」：2026年ではどちらも金曜日（曜日は2025年のもの）
@@ -17,9 +18,21 @@ findings:
     message: 日本語と英字のあいだを詰めています（この文書はふつう空ける。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: Teams is spaced from the Japanese around it, URLは is not, in the same line
+  - rule: unfilled-placeholder
+    line: 21
+    text: 〇〇さん
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: email-greeting-closing
     line: 29
     text: ご不明な点は総務部〇〇までお願いします。
     message: 終わりに結びの言葉がありません
     verdict: false-positive
     note: an internal notice that ends on where to ask; no closing formula is expected
+  - rule: unfilled-placeholder
+    line: 29
+    text: 〇〇までお願いします。
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"

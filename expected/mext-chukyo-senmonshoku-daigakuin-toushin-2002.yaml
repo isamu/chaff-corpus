@@ -56,11 +56,6 @@ findings:
     text: （8）本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，高度専門
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 61
-    text: 修士課程は当初，研究者養成という役割を担っており，博士課程の前段階という性格であ
-    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
-    verdict: unjudged
   - rule: tari-unpaired
     line: 69
     text: たり，職業資格を取得する者の養成についてのみならず，既に職業に就いている者や資格

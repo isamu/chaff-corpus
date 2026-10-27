@@ -442,10 +442,6 @@ findings:
     line: 1508
     sha256: 38a5d51af223572741c5449940328ef9b322d5765567e4d7968ec349d6053945
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 1511
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 1543
     sha256: 761aa6f2712978a6285b026f19490ef9aed982bcd6f1ac4391a01a264161938d
@@ -494,25 +490,13 @@ findings:
     line: 1606
     sha256: 66dfbfb96e3ec8307e393d223c8d4000eba4a980f7405c343bed9fac7eae3a7e
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 1652
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: unknown-word
     line: 1656
     sha256: 1b1ffc9d989a24811a904f4d474f8a22deece15fffc024c06b7a8600aa94e531
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 1718
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: expletive-construction
     line: 1722
     sha256: ffa287ecb1356c8e69f37941441c51c648382eb304cfd927850b2a07a4845b4f
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 1733
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: expletive-construction
     line: 1746
@@ -521,10 +505,6 @@ findings:
   - rule: undefined-acronym
     line: 1763
     sha256: 746e1d57c0c661adea5c319f7309346e3864762a182b4d5a8d24015aae32da5b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 1812
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: contraction-consistency
     line: 1860
@@ -650,14 +630,6 @@ findings:
     line: 2101
     sha256: 5673a7f89a5db711d1504e06637c0d23e61da7badf96489d5c165784f6890e2c
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2135
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2153
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: orthographic-variant
     line: 2158
     sha256: 8ce4868f5c119a9dbb9a2af08439b4ce51d5acb24ab6947f73ef4c2a7345882e
@@ -698,10 +670,6 @@ findings:
     line: 2289
     sha256: e4d0ae2c95f8b50e040223f581d68ccd49d02e71464d9f199f3063fa5833709d
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2324
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: doubled-word
     line: 2325
     sha256: 9117b03905db08ccb292b871f8db55e047b928bef2ab876cd80d591bc7b26e70
@@ -713,14 +681,6 @@ findings:
   - rule: contraction-consistency
     line: 2350
     sha256: 626f4e5f72dd87de675004fbd047b2a0faeaed6f900b646a4ecc38bf175c715d
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2366
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2378
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: undefined-acronym
     line: 2388
@@ -746,37 +706,17 @@ findings:
     line: 2410
     sha256: decb3c0fa2e6b2b0bfac51497c1217d2ba65785f80aedb1e44d7d310dad024ce
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2453
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 2490
     sha256: 513050fef0bc83b6df4e8ffb7d407a56c8576715e10999d20a923356cb940f3b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2538
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: expletive-construction
     line: 2540
     sha256: de93b5d0ac11d074b7e20d5bfde8ce5e3d37f2c2f724a609202d9bc2510d454e
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2569
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2574
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 2575
     sha256: 30cd80a677bbbd666e9a034bf2a38d770709d357ef82538a6611e414f33ba629
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2610
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: date-order
     line: 2634
@@ -834,14 +774,6 @@ findings:
     line: 2778
     sha256: bb59de99a0129fb1aa16009ac5067b67380ae46b72faf08075f3da179bcf9be7
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2799
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2830
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: orthographic-variant
     line: 2831
     sha256: 0f1ecc14f92f7a35b233c79ff3ab20c8aade3a2e6161835529587ec208b13809
@@ -849,14 +781,6 @@ findings:
   - rule: orthographic-variant
     line: 2834
     sha256: b2def0bb1d396f52b15c4b11fe499acc89ddaee3ef588023a68f9c5c09c29f8b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2871
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 2880
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 2895
@@ -919,10 +843,6 @@ findings:
     line: 3119
     sha256: 10e1166cab2c2abb2f28e6044b5c34949cecdbd6631c9657de073b3068167ab7
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3140
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 3153
     sha256: d0ded3ac99d80ac3dae2547d48b333fdd9b37ebc81e7619bd936362af58952aa
@@ -939,14 +859,6 @@ findings:
     line: 3223
     sha256: fdf9b19e7fb6ae4801e997e154905f32a95e85200ad65d3bc81830eb10b2039c
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3226
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3255
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 3262
     sha256: 33dcec942c126ffc81d7eb92da56391050a5949ea5800924d2ed0f509b80abaf
@@ -955,29 +867,13 @@ findings:
     line: 3266
     sha256: 4d477ae7c24fb78ff94fc7a3eb54be4bc5c21f0d9c8b779154edcd028dae885d
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3295
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: agreement-slip
     line: 3299
     sha256: 02eee18b773ce723df65f13ab8d8289b852f4b83820a378b5b97ed6b81e11063
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3307
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3328
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: wordy-phrase
     line: 3361
     sha256: 85f7819ae0a84c6e5f165dbb3e60af9dcf89060bb1294d66b02ade1ee0e9687d
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3373
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: date-format-consistency
     line: 3388
@@ -987,10 +883,6 @@ findings:
     line: 3394
     sha256: 39d654c14ca83459a53ef10b4dddbffbd9d2751714242929aae3a6369cac6295
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3396
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 3413
     sha256: 5f6e497e6aea47e18eeada29641d44ad775cc16faadbb078620819cf50678771
@@ -999,17 +891,9 @@ findings:
     line: 3415
     sha256: ba7b2252607be5d5627c015a882cbc862facc1ff71449d9e7da5ed09ed2ab808
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3437
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: impossible-date
     line: 3448
     sha256: f1c338c8d8396b1d212938a8a4eae6dad4e03a939b274ec9eb07d8ca69f0579b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3460
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: orthographic-variant
     line: 3482
@@ -1020,14 +904,6 @@ findings:
     sha256: b736d08fed20bacfba2b775d2eaaebc7466b6ef704b9d4ba6767fe564c37aa6a
     verdict: false-positive
     note: a name (a person's account handle, a product or a technical term), not a misspelling
-  - rule: concrete-evidence-density
-    line: 3504
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3528
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: unknown-word
     line: 3530
     sha256: 70d890620eba1377a3726f01c7d65570d58789131ba9fcf6da72cc236bc83f94
@@ -1049,17 +925,9 @@ findings:
     line: 3575
     sha256: 1cbc18314e8ab33c4af7fd912f41c61f7531486e31e7bebe9b16072d68b1658b
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3579
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: heading-echo
     line: 3598
     sha256: e29f0a6c6af2ae573913bb29ee87b32bec252a6988a4524edd7bbf4fc51014f8
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3604
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: undefined-acronym
     line: 3619
@@ -1069,33 +937,9 @@ findings:
     line: 3634
     sha256: d651e0156389f7162e3095d61c6f59e99dbd97632d1550390fb6fc0b4cb6dc7d
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3653
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3676
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3715
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: contraction-consistency
     line: 3732
     sha256: 39e027a5bf417a5149de018a8aac9dabc359d3319dca609e7dc1e031913c61cf
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3737
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3787
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3808
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: ordinal-suffix-mismatch
     line: 3861
@@ -1117,10 +961,6 @@ findings:
     line: 3887
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3916
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: expletive-construction
     line: 3923
     sha256: b0987a27e4a4d286eff455e4f390cd09178e549c6e28f6f3999643c9dc88a330
@@ -1128,14 +968,6 @@ findings:
   - rule: expletive-construction
     line: 3955
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 3973
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4052
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: comparative-without-baseline
     line: 4055
@@ -1161,10 +993,6 @@ findings:
     line: 4169
     sha256: bf6aaea2ae8551dc0e495909e612101583917e9c7c4500b16ae5682461309790
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4187
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 4189
     sha256: 7eff3683f651a689a3414138dbc691cb99b05f767a3c0b3a5b1258938eb9ca7d
@@ -1176,10 +1004,6 @@ findings:
   - rule: max-sentence-length
     line: 4241
     sha256: 76fb902e7c1ed0848ab330e5985bf7d741a74f91ddbf15cc89dad859b910ab3f
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4287
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: undefined-acronym
     line: 4289
@@ -1196,10 +1020,6 @@ findings:
   - rule: undefined-acronym
     line: 4294
     sha256: f992b22818f54381ed47366d1c059880017ee1fc6081372412835c6d36665ef1
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4296
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: orthographic-variant
     line: 4300
@@ -1225,10 +1045,6 @@ findings:
     line: 4383
     sha256: b8dabb5d11b1cf834c26bc7feedf36a802104885d27d3f9b3913c27b04c595ee
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4394
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 4408
     sha256: 1d848c419b4607459af815b722ff7dcbe16a75ce02ca103ca96516f6a7abacc4
@@ -1253,10 +1069,6 @@ findings:
     line: 4493
     sha256: 0c8533ac2a430ddc09fa49b58b3fab11447ae4760c6c807ea32e2aa1c4d67474
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4524
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: expletive-construction
     line: 4547
     sha256: 8243c4346b6c88eeb2ceaf58d8e5f7695175aeab07ccf0fad54dae30334e3c3d
@@ -1277,17 +1089,9 @@ findings:
     line: 4616
     sha256: 5373221ac7c6bff16710cb40b61c12430d21dceeb537e11957ab9519c62fb96a
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4638
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: undefined-acronym
     line: 4654
     sha256: 76610a265617c7036494198faf1659769cd6dd6e61b8a1a3a72cf7bba2034207
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4676
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: expletive-construction
     line: 4677
@@ -1385,14 +1189,6 @@ findings:
     line: 4876
     sha256: 9d07d09187c9626ba6e83dd5ffa1a5224a98b94a68850333bde08dd22def7862
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4899
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 4936
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: date-format-consistency
     line: 4965
     sha256: 7dc65f6677e16478c2ced4879139aff48708e1af97017c2fd4132498b57bdfda
@@ -1428,10 +1224,6 @@ findings:
   - rule: undefined-acronym
     line: 5075
     sha256: ab7b3643b143fd1f551183ef9a177c2f2863abc85f60f36d736923a47ccfff61
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 5096
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
     line: 5130
@@ -1597,10 +1389,6 @@ findings:
     line: 5328
     sha256: ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 5382
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: number-style-consistency
     line: 5410
     sha256: 8dcc404c04884fecff4237ccd47bb740f020b3e1f53538e296da0b39a2ef1c1d
@@ -1613,10 +1401,6 @@ findings:
     line: 5463
     sha256: 8a2735ab01d77361ab1617e89bd281d422db570b955b5396137dd185b230ae8f
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 5466
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 5468
     sha256: 375d296f0a3e099bbf883209a4f23f3c30570d7b50e33ed582b3ade26067fea4
@@ -1624,10 +1408,6 @@ findings:
   - rule: undefined-acronym
     line: 5493
     sha256: 8779ae6df820ff0a2eb774294936ea0e287b72f1f87de87e7a63f065c942a1b7
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 5496
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: undefined-acronym
     line: 5538

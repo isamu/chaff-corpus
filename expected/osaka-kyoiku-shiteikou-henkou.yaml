@@ -16,15 +16,3 @@ findings:
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。7 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 36
-    text: 保護者の方が、学校の属する区の区役所就学事務担当窓口までご相談のうえ、「指定校変
-    message: 「区役所就学事務担当窓口」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: the name of a ward office's counter (区役所就学事務担当窓口), written as the offices name it
-  - rule: max-kanji-continuous
-    line: 46
-    text: お住まいの区の区役所就学事務担当窓口、教育委員会事務局総務部学事課（電話　06-
-    message: 「教育委員会事務局総務部学事課」は漢字が 14 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official organisation name (proper noun) cannot be shortened; the kanji run is the name itself

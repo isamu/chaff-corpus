@@ -1,11 +1,6 @@
 id: uk-dpa2018
 chaff: 0.33.0
 findings:
-  - rule: no-em-dash
-    line: 14
-    text: —
-    message: 11 dashes per 1000 words (limit 8)
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 43
     text: ",..."

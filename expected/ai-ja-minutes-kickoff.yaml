@@ -2,12 +2,55 @@ id: ai-ja-minutes-kickoff
 chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
+    line: 8
+    text: 〇〇部長、〇〇、〇〇
+    message: 「〇〇部」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 9
+    text: 〇〇課長、〇〇
+    message: 「〇〇課」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 11
+    text: 〇〇）：〇〇様、〇〇様
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 11
+    text: 〇〇様
+    message: 「〇〇様」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 11
+    text: 〇〇様、〇〇様
+    message: 「〇〇様」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
     line: 25
-    what: 出席者・部長名・制作会社が〇〇のまま
-    verdict: missed
-    note: catalog J27
+    text: 〇〇部長より、プロジェクトの目的について説明があった。
+    message: 「〇〇部」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.38.0
   - rule: ai-generated-composite
     line: 27
     what: 一行の依頼から、導入8年・スケジュール・体制・宿題と期限まで、会議の中身をすべて作っている
     verdict: missed
     note: "catalog B01 (invented detail): minutes of a meeting the model did not attend, written as fact"
+  - rule: unfilled-placeholder
+    line: 33
+    text: 〇〇様より、全体スケジュール案が示された。
+    message: 「〇〇様」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
+  - rule: unfilled-placeholder
+    line: 44
+    text: 〇〇部長（情報システム部）
+    message: 「〇〇部」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

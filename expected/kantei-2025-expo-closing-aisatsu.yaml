@@ -1,29 +1,12 @@
 id: kantei-2025-expo-closing-aisatsu
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 10月13日 総理の演説・記者会見など
-    message: 半角の「10」と書いています（この文書はふつう全角の「１０」。7 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 13日 総理の演説・記者会見など
-    message: 半角の「13」と書いています（この文書はふつう全角の「１３」。7 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
   - rule: max-kanji-continuous
     line: 5
     text: 本日、秋篠宮皇嗣同妃両殿下の御臨席の下、２０２５年日本国際博覧会、大阪・関西万博
     message: 「秋篠宮皇嗣同妃両殿下」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: no-doubled-joshi
-    line: 7
-    text: の方々の御尽力の賜物（たまもの）であります。心から御礼を申し上げます。ありがとう
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 13
     text: 個性的で愛くるしい姿で博覧会を成功に導いた「ミャクミャク」に、心からの感謝を込め

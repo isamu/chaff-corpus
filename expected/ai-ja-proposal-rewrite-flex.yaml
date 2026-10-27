@@ -1,6 +1,12 @@
 id: ai-ja-proposal-rewrite-flex
 chaff: 0.36.0
 findings:
+  - rule: unfilled-placeholder
+    line: 3
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: ai-generated-composite
     line: 22
     what: 下書きにない対策（チャットのステータス表示）、解釈（他社より厳しいと受け取られている、13行）、評価指標（残業時間、28行）を加えた

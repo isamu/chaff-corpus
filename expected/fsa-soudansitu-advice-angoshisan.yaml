@@ -26,65 +26,11 @@ findings:
     text: ＩＣＯ（Initial Coin Offering）は、一般に、企業等が電子的に
     message: 全角の「ＩＣＯ」と書いています（この文書はふつう半角の「ICO」。12 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: duplicate-heading
-    line: 20
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 3 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 24
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 7 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: name-variant
     line: 26
     text: 一般社団法人 日本暗号資産等取引業協会にご相談ください（ただし、当該協会会員会社
     message: 「一般社団法人 日本暗号資産等取引業協会」は、ほかの所では「一般社団法人日本暗号資産等取引業協会」と書いています（字の大小・幅・記号の違い）
     verdict: correct
-  - rule: duplicate-heading
-    line: 33
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 3 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 37
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 7 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 41
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 3 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 45
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 7 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: max-kanji-continuous
-    line: 66
-    text: ■上記暗号資産交換業者に登録がない場合
-    message: 「上記暗号資産交換業者」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: 上記 + the statutory term 暗号資産交換業者; the run is a defined term
-  - rule: duplicate-heading
-    line: 70
-    text: "### 【相談事例等】"
-    message: 見出し「【相談事例等】」は、同じ親の下の 3 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 74
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 7 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: requirement-smell
     line: 76
     text: などをしっかり理解した上で、自己責任で取引を行う必要があります。

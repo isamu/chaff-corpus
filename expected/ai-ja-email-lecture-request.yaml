@@ -6,8 +6,38 @@ findings:
     what: 大学名・先生の名前・書名『〇〇』・社名・差出人が〇〇のまま（3〜15行）
     verdict: missed
     note: catalog J27
+  - rule: unfilled-placeholder
+    line: 4
+    text: 〇〇 〇〇 先生
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 6
+    text: 〇〇と申します。
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
+  - rule: unfilled-placeholder
+    line: 6
+    text: 〇〇人事部の〇〇と申します。
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
   - rule: ai-generated-composite
     line: 8
     what: 「ご著書『〇〇』を拝読し、…深く共感いたしました」：依頼にない読書歴を差出人に与えている
     verdict: missed
     note: "catalog B01 (invented detail): a claim the sender may not be able to stand behind"
+  - rule: unfilled-placeholder
+    line: 14
+    text: 〇〇　人事部
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 15
+    text: 〇〇 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

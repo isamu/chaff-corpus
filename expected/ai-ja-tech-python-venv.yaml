@@ -12,6 +12,12 @@ findings:
     message: 「方も多いのではないでしょうか」は、どの記事にも当てはまる書き出しです
     verdict: correct
     note: "「〜という方も多いのではないでしょうか」: the stock opening of a generated beginner article"
+  - rule: sentence-rhythm
+    line: 3
+    text: Pythonを勉強し始めると、「仮想環境を作りましょう」という説明をよく目にしま
+    message: 文の長さのばらつきが 33%（36% 以上ほしい）
+    verdict: correct
+    note: every step is one explanatory 〜します sentence of about the same length (catalog J13)
   - rule: list-item-form-mix
     line: 13
     text: プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBではバ

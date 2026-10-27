@@ -43,6 +43,12 @@ findings:
     message: 「）」に対応する開きがありません
     verdict: correct
     note: the stray ） after 」 in 「.（ピリオド」）
+  - rule: bracket-width-consistency
+    line: 27
+    text: ［内容を確認］をクリックします。
+    message: 括弧「［」の類を、全角で 8 箇所、半角で 11 箇所書いています。この文書には書き方が二通りあります
+    verdict: false-positive
+    note: the half-width brackets are the [e-Gov] tag of the email subjects the page lists verbatim; the button names in the prose are all full-width ［］
   - rule: ngram-repetition
     line: 47
     text: e-Govアカウント登録手続における各タイミングにおいて、登録されたメールアドレ

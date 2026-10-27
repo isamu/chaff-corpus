@@ -56,11 +56,6 @@ findings:
     text: エージェンティックAIについては国際的に確立した定義はまだ存在しないが、実務上の
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 77
-    text: エージェンティックAIについては国際的に確立した定義はまだ存在しないが、実務上の
-    message: 「は」で出した主題から述語まで 98 字あります（80 字まで）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 77
     text: AISIの評価ツールについて、自動レッドチーミングを含むOSSを出した。詳細はG
@@ -240,11 +235,6 @@ findings:
     line: 141
     text: 生田目構成員： 民間の立場としてコメントしたい。私が代表理事を務めているAIガバ
     message: この段落は 7 文あります（5 文まで）
-    verdict: unjudged
-  - rule: adversative-ga-repeat
-    line: 143
-    text: 差止めについては、過失があろうがなかろうが差し止められる。損害賠償に関しては過失
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 143

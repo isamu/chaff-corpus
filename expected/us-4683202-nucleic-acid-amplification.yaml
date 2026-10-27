@@ -126,30 +126,15 @@ findings:
     text: persistance of fetal hemoglobin (HPFH) a
     message: '"persistance" is not in the dictionary; did you mean "persistence"?'
     verdict: unjudged
-  - rule: unknown-word
-    line: 493
-    text: buffy coat fraction, which is composed p
-    message: '"buffy" is not in the dictionary; did you mean "buff"?'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 499
     text: SDS, and incubated overnight at 37° C. S
     message: '"SDS" is used without an expansion (18 such acronyms)'
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 517
-    text: Forty-five microliters of the amplified
-    message: This paragraph runs 10 sentences (limit 8)
-    verdict: unjudged
   - rule: unknown-word
     line: 533
     text: cylces was easily visualized on gels sta
     message: '"cylces" is not in the dictionary; did you mean "cycles"?'
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 539
-    text: A. A total of 100 fmoles pBR328 containi
-    message: This paragraph runs 9 sentences (limit 8)
     verdict: unjudged
   - rule: unknown-word
     line: 539

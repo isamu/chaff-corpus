@@ -136,11 +136,6 @@ findings:
     text: which will not be unreasonably withheld
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: unjudged
-  - rule: dangling-reference
-    line: 195
-    text: §60-741.5(a) to the extent applicable. T
-    message: '"§60" (address 60) is not in this document'
-    verdict: unjudged
   - rule: defined-term-form
     line: 195
     text: purchase order issued hereunder, the Sup

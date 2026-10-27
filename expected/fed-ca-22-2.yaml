@@ -33,12 +33,6 @@ findings:
     text: The Board of Governors of the Federal Re
     message: This sentence runs 101 words (limit 18)
     verdict: correct
-  - rule: undefined-acronym
-    line: 26
-    text: CFPB or Bureau), the Department of Housi
-    message: '"CFPB" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: expanded as '(CFPB or Bureau)'; the alias after the acronym hides the expansion
   - rule: max-sentence-length
     line: 28
     text: Accordingly, creditors may consider the

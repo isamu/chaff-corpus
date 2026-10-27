@@ -195,11 +195,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
-    text: 当中期経営計画は2024年10月期からの経営数値目標でありますが、ご参考として当
-    message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
     text: 流動負債は47,713百万円で仕入債務が増加したことなどにより、前連結会計年度末
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: unjudged

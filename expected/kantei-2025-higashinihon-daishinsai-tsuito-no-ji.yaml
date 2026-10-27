@@ -1,24 +1,6 @@
 id: kantei-2025-higashinihon-daishinsai-tsuito-no-ji
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 11日 総理の演説・記者会見など
-    message: 半角の「11」と書いています（この文書はふつう全角の「１１」。5 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 3月11日 総理の演説・記者会見など
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。7 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 7年3月11日 総理の演説・記者会見など
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。7 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日 line is site chrome set in half-width digits; the address itself uses full-width digits
   - rule: max-kanji-continuous
     line: 7
     text: 巨大地震と大津波、そして、東京電力福島第一原子力発電所の事故は、多くの県民の皆様

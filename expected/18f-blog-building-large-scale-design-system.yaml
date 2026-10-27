@@ -21,9 +21,10 @@ findings:
     note: the idiom "couldn't be more different" is not a comparison needing a baseline
   - rule: max-sentence-length
     line: 56
-    what: the sentence listing who joined ("Joining us were visual designers ...") runs 44 words
-    verdict: missed
-    note: found by lab main, which no longer ends it at the U.S.
+    text: Joining us were visual designers working
+    message: This sentence runs 44 words (limit 40)
+    verdict: correct
+    note: found by lab main, which no longer ends it at the U.S.; found by chaffjs 0.38.0
   - rule: max-paragraph-length
     line: 58
     text: The first question we asked ourselves wa

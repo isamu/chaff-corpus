@@ -6,11 +6,6 @@ findings:
     text: 5,500億ドルの投融資計画で、JBIC（国際協力銀行）など日本の政策金融機関が
     message: 半角の「5」と書いています（この文書はふつう全角の「５」。81 箇所のうち 19 箇所が違う）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 22
-    text: ２つ目は、5,500億ドルの投融資計画で、JBIC（国際協力銀行）など日本の政策
-    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 26
     text: 5,500億ドル規模の出資、融資、融資保証を提供可能にすることで合意しております
@@ -20,26 +15,6 @@ findings:
     line: 32
     text: 私は本年１月の経済演説において、地元鳥取県の若者やシングルマザーの方々からの差し
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 34
-    text: 2％、今年の同期間では平均3.9％ということを踏まえると、働く人々が安心して暮ら
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 34
-    text: 3.2％、今年の同期間では平均3.9％ということを踏まえると、働く人々が安心して
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 34
-    text: 3.9％ということを踏まえると、働く人々が安心して暮らすことができるよう、昨年度
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 34
-    text: 9％ということを踏まえると、働く人々が安心して暮らすことができるよう、昨年度を上
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。81 箇所のうち 19 箇所が違う）
     verdict: unjudged
   - rule: max-ten
     line: 35
@@ -76,11 +51,6 @@ findings:
     text: （答）ご案内のとおり、私は全世代型社会保障構築担当でございますが、数百項目に及ぶ
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 48
-    text: （答）ご案内のとおり、私は全世代型社会保障構築担当でございますが、数百項目に及ぶ
-    message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 71
     text: 1,500円以上の実現をお願いしたい。
@@ -95,56 +65,6 @@ findings:
     line: 82
     text: 政府が掲げる１％程度の実質賃金上昇の定着に向け、生産性向上を通じた賃金引上げ原資
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 112
-    text: 0の実現に向けて、ふるさと住民登録制度の創設については、６月末に関係府省庁から成
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 112
-    text: 2.0の実現に向けて、ふるさと住民登録制度の創設については、６月末に関係府省庁か
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 1.6兆円の増加、他方、歳出面では4.3兆円の不用が見込まれ、特例公債の５兆円の
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 1.8兆円の増加、税外収入が1.6兆円の増加、他方、歳出面では4.3兆円の不用が
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 2.3兆円の決算剰余金が発生する見込み。
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 3兆円の不用が見込まれ、特例公債の５兆円の発行抑制にも努めた結果として、地方交付
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 3兆円の決算剰余金が発生する見込み。
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 4.3兆円の不用が見込まれ、特例公債の５兆円の発行抑制にも努めた結果として、地方
-    message: 半角の「4」と書いています（この文書はふつう全角の「４」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 6兆円の増加、他方、歳出面では4.3兆円の不用が見込まれ、特例公債の５兆円の発行
-    message: 半角の「6」と書いています（この文書はふつう全角の「６」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 116
-    text: 8兆円の増加、税外収入が1.6兆円の増加、他方、歳出面では4.3兆円の不用が見込
-    message: 半角の「8」と書いています（この文書はふつう全角の「８」。81 箇所のうち 19 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 116

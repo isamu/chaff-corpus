@@ -11,63 +11,21 @@ findings:
     text: (*)に相談してください。
     message: 丸括弧を、全角で 34 箇所、半角で 11 箇所書いています。この文書には書き方が二通りあります
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 16
-    text: それでも解決が図られない場合には、生命保険協会生命保険相談所、又は日本損害保険協
-    message: 「生命保険協会生命保険相談所」は漢字が 13 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
   - rule: hiragana-fukushi
     line: 26
     text: 保険会社の業績は悪くないのに、配当金が支払われないのは何故でしょうか。
     message: 「何故」は ひらがなで書くのが読みやすいです
     verdict: correct
-  - rule: duplicate-heading
-    line: 28
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 13 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 37
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 13 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: no-doubled-joshi
     line: 39
     text: の特約の付保の可否について、保険会社に相談してください。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: duplicate-heading
-    line: 45
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 13 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 53
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 13 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: topic-predicate-distance
-    line: 55
-    text: つまり、対人賠償保険・対物賠償保険は、被保険者が加害者となった場合に機能する保険
-    message: 「は」で出した主題から述語まで 114 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead (〜であるため)
   - rule: connective-hierarchy
     line: 56
     text: 若しくは加害者側の保険会社と示談交渉する必要があります。交渉で必要となる法律相談
     message: 「若しくは」の文に、段の組になる語がありません（一段なら「又は」）
     verdict: correct
-  - rule: duplicate-heading
-    line: 62
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 13 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: orthographic-variant
     line: 79
     text: または被保険者は、保険会社が告知を求めたものについて、事実を告知すれば足りること
@@ -98,12 +56,6 @@ findings:
     text: Eメール等）により通知することによって、申し出ていただく必要があり、書面等の発信
     message: 半角の「E」と書いています（この文書はふつう全角の「Ｅ」。4 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: duplicate-heading
-    line: 103
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 87 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: max-sentence-length
     line: 105
     text: 保険業法第186条第１項においては、一部の例外を除き原則として、日本に支店等を設
@@ -114,36 +66,6 @@ findings:
     text: 保険業法第186条第１項においては、一部の例外を除き原則として、日本に支店等を設
     message: 「は」で出した主題から述語まで 122 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 119
-    text: それでも解決が図られない場合には、生命保険協会生命保険相談所、又は日本損害保険協
-    message: 「生命保険協会生命保険相談所」は漢字が 13 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
-  - rule: duplicate-heading
-    line: 123
-    text: "### 【相談事例等（支払認定）】"
-    message: 見出し「【相談事例等（支払認定）】」は、同じ親の下の 111 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 127
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 117 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 135
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 117 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
-  - rule: duplicate-heading
-    line: 145
-    text: "### 【アドバイス等】"
-    message: 見出し「【アドバイス等】」は、同じ親の下の 117 行目の見出しと同じです
-    verdict: false-positive
-    note: an FAQ repeats its fixed labels 【相談事例等】/【アドバイス等】 for every case; the repeat is the page's structure
   - rule: clause-chain
     line: 148
     text: 例えば、「特定疾病保障保険」や「リビング・ニーズ特約」など、被保険者本人が受取人
@@ -174,23 +96,5 @@ findings:
     line: 175
     text: ただし、自動車保険契約以外の保険契約にあっては、個人・所定の小規模法人・いわゆる
     message: 「自動車保険契約以外」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
-  - rule: max-kanji-continuous
-    line: 181
-    text: (注２)いわゆる「共済」、「少額短期保険業者」又は「特定保険業者」の引き受けた保
-    message: 「保険契約者保護機構」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
-  - rule: max-kanji-continuous
-    line: 184
-    text: 保険会社が万が一破綻した場合、補償の対象となる保険契約については、保険契約者保護
-    message: 「保険契約者保護機構」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened
-  - rule: max-kanji-continuous
-    line: 185
-    text: 保険契約者保護機構による補償の対象となる保険契約の範囲は、具体的には以下のとおり
-    message: 「保険契約者保護機構」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
     note: an organisation's official name or a statutory term; the kanji run cannot be shortened

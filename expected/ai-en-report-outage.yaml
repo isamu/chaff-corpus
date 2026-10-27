@@ -1,8 +1,38 @@
 id: ai-en-report-outage
 chaff: 0.36.0
 findings:
+  - rule: over-general-claim
+    line: 3
+    text: Short version:** Our website was down fo
+    message: '"nobody" and other sweeping claims: 10 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: '"nobody caught it" is the team, a fact of the incident, not a claim about people in general'
+  - rule: over-general-claim
+    line: 7
+    text: Most people (sensibly) didn't click thro
+    message: '"most people" and other sweeping claims: 10 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: the one general claim (visitors mostly did not click through) shortens the point; the others counted with it are specific (anyone visiting the site, the address nobody checks, everyone who helped)
+  - rule: over-general-claim
+    line: 15
+    text: The renewal job was still pointing at th
+    message: '"nobody" and other sweeping claims: 10 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: '"an address nobody checks anymore" is a fact about one mailbox, not a sweeping claim'
   - rule: ai-generated-composite
     line: 23
     what: an invented loss estimate ("around 40 orders") and weekday ("a normal Tuesday afternoon"; October 21, 2026 is a Wednesday)
     verdict: missed
     note: needs judgement; the request gave neither
+  - rule: bold-emphasis
+    line: 30
+    text: We added a certificate check to our moni
+    message: "4 bold spans of emphasis: 10 per 1000 words (limit 6)"
+    verdict: false-positive
+    note: the lead phrases of the one list of fixes and the "Short version:" label; no emphasis mid-sentence
+  - rule: over-general-claim
+    line: 33
+    text: Thanks to everyone who jumped in yesterd
+    message: '"everyone" and other sweeping claims: 10 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: '"thanks to everyone who jumped in" thanks the people who helped, not a claim about people'

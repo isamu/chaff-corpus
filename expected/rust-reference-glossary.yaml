@@ -13,22 +13,10 @@ findings:
     message: Heading "Abstract syntax tree" goes from level 1 to level 3 (expected 2)
     verdict: correct
   - rule: undefined-acronym
-    line: 6
-    text: AST’, is an intermediate representation
-    message: '"AST" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: the expansion is in the same sentence, as "‘abstract syntax tree’, or ‘AST’" with curly quotes
-  - rule: undefined-acronym
     line: 18
     text: FFI boundary, while the `"C"` ABI does n
     message: '"FFI" is used without an expansion (2 such acronyms)'
     verdict: correct
-  - rule: unknown-word
-    line: 42
-    text: combinators to provide a result from its
-    message: '"combinators" is not in the dictionary; did you mean "combinatory"?'
-    verdict: false-positive
-    note: '"combinators" is a standard programming term (plural)'
   - rule: broken-link
     line: 50
     text: "[trait objects][type.trait-object]."
@@ -40,12 +28,6 @@ findings:
     text: An expression is a combination of values
     message: This list punctuates differently from the rest (1 in this document)
     verdict: correct
-  - rule: unknown-word
-    line: 74
-    text: const*. Contrast to an [associated item]
-    message: '"const" is not in the dictionary; did you mean "coast"?'
-    verdict: false-positive
-    note: '"const" is a Rust keyword written in italics as a term'
   - rule: hyphen-as-dash
     line: 186
     text: " - mostly traits - that are imported int"

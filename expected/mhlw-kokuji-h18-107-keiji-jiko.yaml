@@ -12,16 +12,6 @@ findings:
     message: 「療担基準」を、21 行目の定義より前で使っています
     verdict: unjudged
   - rule: dangling-reference
-    line: 21
-    text: 第二条の六の厚生労働大臣が定める掲示事項
-    message: 「第二条の六」（番地 2-6）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 21
-    text: 第二条の六及び高齢者の医療の確保に関する法律の規定による療養の給付等の取扱い及び
-    message: 「第二条の六」（番地 2-6）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
     line: 23
     text: 第1章第2部第1節に規定する入院基本料に関する事項
     message: 「第1章」（番地 ch1）はこの文書にありません
@@ -30,16 +20,6 @@ findings:
     line: 23
     text: 第1章第2部第1節に規定する入院基本料及び別表第二歯科診療報酬点数表(以下「歯科
     message: 「第1章」（番地 ch1）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 41
-    text: 同号に規定する新医薬品等(以下「先発医薬品」という。)の薬価から当該先発医薬品の
-    message: 「同号」（番地 2.1.15）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 41
-    text: 第二条第十五号に規定する後発医薬品(以下「後発医薬品」という。)のある同号に規定
-    message: 「第二条第十五号」（番地 2.1.15）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
     line: 45
@@ -85,11 +65,6 @@ findings:
     line: 69
     text: 第三条の四第一項、第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書
     message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 69
-    text: 第二項の規定に基づき書面による請求を行うことができる保険医療機関を除く。)
-    message: 「第二項」（番地 4.2）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
     line: 69
@@ -146,16 +121,6 @@ findings:
     text: インスリン製剤、ヒト成長ホルモン剤、遺伝子組換え活性型血液凝固第Ⅶ因子製剤、乾燥
     message: 括弧が 3 重になっています（2 重まで）
     verdict: unjudged
-  - rule: dangling-reference
-    line: 283
-    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量又は投与量が十四日分を限度とされる
-    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 283
-    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
-    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
-    verdict: unjudged
   - rule: undefined-acronym
     line: 291
     text: HD、グラアルファ配合点眼液、ゾキンヴィカプセル五〇mg、ゾキンヴィカプセル七五
@@ -170,26 +135,6 @@ findings:
     line: 291
     text: ODフィルム二五mg、バイアグラODフィルム五〇mg、ガニレスト皮下注〇・二五m
     message: 「OD」が説明なしで使われています（説明のない略語 7 個）
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 293
-    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量又は投与量が三十日分を限度とされる
-    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 293
-    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
-    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 307
-    text: 第二十一条第三号ヘの厚生労働大臣が定める投薬量が九十日分を限度とされる内服薬
-    message: 「第二十一条第三号」（番地 21.1.3）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 307
-    text: 第二十一条第二号ヘ並びに療担基準第二十条第三号ヘ及びト並びに第二十一条第三号ヘの
-    message: 「第二十一条第二号」（番地 21.1.2）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
     line: 317
@@ -230,11 +175,6 @@ findings:
     line: 367
     text: 第三条の四第一項、第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書
     message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 367
-    text: 第二項の規定に基づき書面による請求を行うことができる保険薬局を除く。)
-    message: 「第二項」（番地 4.2）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
     line: 367

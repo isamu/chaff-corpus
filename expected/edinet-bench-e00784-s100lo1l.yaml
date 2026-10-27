@@ -180,12 +180,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 21
-    text: (2）中期経営計画前中期経営計画は2020年３月期が最終年度で、通常では当連結会
-    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: false-positive
-    note: 前中期経営計画は gets its predicate at once (…が最終年度で、), and a new topic (当連結会計年度は) follows. isamu/lab#1716 ends the topic's clause there. The sentence is long, but sentence length is max-sentence-length's job.
-  - rule: topic-predicate-distance
-    line: 21
     text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202
     message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
     verdict: correct

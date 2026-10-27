@@ -25,18 +25,6 @@ findings:
     message: This sentence runs 21 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's body
-  - rule: duplicate-definition
-    line: 25
-    text: ("FinCEN") under section 311 of the USA
-    message: '"FinCEN" is also defined on line 21'
-    verdict: false-positive
-    note: FinCEN is defined in the subject line and again at first use in the body, the normal letter practice
-  - rule: max-sentence-length
-    line: 25
-    text: Department of the Treasury's Financial C
-    message: This sentence runs 66 words (limit 18)
-    verdict: correct
-    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 25
     text: Special measures create legal obligation
@@ -48,7 +36,7 @@ findings:
     text: The purpose of this letter is to advise
     message: This sentence runs 20 words (limit 18)
     verdict: correct
-    note: a long sentence in the letter's body
+    note: "a long sentence in the letter's body (rekeyed: chaffjs 0.36.0 ended it at the U.S. and reported the rest from \"Department of the Treasury's\" as a second sentence, judged correct; 0.38.0 reads it whole)"
   - rule: max-sentence-length
     line: 27
     text: Under section 311 of the USA PATRIOT Act
@@ -139,18 +127,6 @@ findings:
     message: This sentence runs 25 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's body
-  - rule: duplicate-definition
-    line: 57
-    text: ("FinCEN")"
-    message: '"FinCEN" is also defined on line 21'
-    verdict: false-positive
-    note: the quoted title of a cross-referenced letter, which carries its own definition
-  - rule: max-sentence-length
-    line: 57
-    text: SR letter 16-13, "Imposition of Special
-    message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: "an item of the list of cross-referenced letters: a number and a quoted title, not a sentence"
   - rule: heading-level-skip
     line: 59
     text: "##### Notes:"
@@ -163,12 +139,6 @@ findings:
     message: This sentence runs 30 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's notes
-  - rule: article-sound
-    line: 63
-    text: a et seq.), except persons who register
-    message: '"a et" takes "an" before that sound'
-    verdict: false-positive
-    note: the subsection mark (a) before et seq. read as the article a
   - rule: bracket-nesting
     line: 63
     text: FinCEN's special measures rules (e.g. 31

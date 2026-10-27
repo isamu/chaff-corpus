@@ -87,12 +87,6 @@ findings:
     text: 中東情勢の緊迫、激甚化する自然災害、ＡＩをはじめとする技術革新の急速な進展など、
     message: この文は 138 文字あります（100 文字まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 60
-    text: これを「エネルギー需給構造強靱化総合パッケージ（ＰＯＷＥＲＲ　ＧＸ）」として強力
-    message: 「需給構造強靱化総合」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
   - rule: max-sentence-length
     line: 64
     text: 国家間の産業政策の競争が激化するＡＩ、半導体、量子技術や、コンテンツ、フュージョ
@@ -115,62 +109,21 @@ findings:
     verdict: false-positive
     note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
   - rule: max-kanji-continuous
-    line: 83
-    text: 重点支援地方交付金に基づく措置は、これから地方自治体により執行されるものもあり、
-    message: 「重点支援地方交付金」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: unqualified-superlative
-    line: 84
-    text: こうした政策の効果もあり、物価上昇率は、現在、Ｇ７の中で最も低い水準に落ち着いて
-    message: 「最も」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: the comparison set is named in the same phrase (Ｇ７の中で／〜の最大の課題／〜の最大の基盤)
-  - rule: unqualified-superlative
-    line: 85
-    text: 実質賃金上昇率は、八か月連続してプラスで推移し、Ｇ７の中で最も高い水準にあります
-    message: 「最も」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: the comparison set is named in the same phrase (Ｇ７の中で／〜の最大の課題／〜の最大の基盤)
-  - rule: unqualified-superlative
-    line: 87
-    text: 暮らしに最も近い飲食料品の税負担を軽くし、あわせて、所得に応じた支援金を措置し、
-    message: 「最も」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: unjudged
-  - rule: max-kanji-continuous
     line: 94
     text: 二〇二七年国際園芸博覧会は、日本の魅力を世界に届ける絶好の機会です。花や緑、食と
     message: 「二七年国際園芸博覧会」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: unqualified-superlative
-    line: 98
-    text: 人手不足は、人口減少社会の最大の課題です。医療・介護、物流・公共交通などのエッセ
-    message: 「最大」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: the comparison set is named in the same phrase (Ｇ７の中で／〜の最大の課題／〜の最大の基盤)
   - rule: max-sentence-length
     line: 99
     text: ＡＸ・ＤＸの恩恵が行き渡る社会を構築するため、政府の司令塔機能を強化することで、
     message: この文は 110 文字あります（100 文字まで）
     verdict: correct
-  - rule: empty-intensifier
-    line: 116
-    text: 在日米軍の円滑な駐留のためには、地元を含む国民の皆様の御理解と御協力を得ることが
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
   - rule: repeated-sentence-ending
     line: 120
     text: これを踏まえつつ、「戦略的互恵関係」を包括的に推進していきます。一方で、東シナ海
     message: 「〜いきます」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 129
-    text: 安全保障の観点から、防衛関係施設周辺等の区域や国境離島の区域における、土地の所有
-    message: 「防衛関係施設周辺等」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
   - rule: max-sentence-length
     line: 129
     text: 安全保障の観点から、防衛関係施設周辺等の区域や国境離島の区域における、土地の所有

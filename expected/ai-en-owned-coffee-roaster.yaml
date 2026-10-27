@@ -18,12 +18,6 @@ findings:
     message: The heading "A quick note on our beans" has no number, while 5 of its siblings do ("1. Buy whole beans, and grind just before brewing")
     verdict: false-positive
     note: the note on the shop's beans is not one of the five tips
-  - rule: unknown-word
-    line: 33
-    text: roastery, and every bag is marked with i
-    message: '"roastery" is not in the dictionary; did you mean "roaster"?'
-    verdict: false-positive
-    note: roastery is an English word (a place where coffee is roasted)
   - rule: closing-cliche
     line: 35
     what: '"Happy brewing!"'

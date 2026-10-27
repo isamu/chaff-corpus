@@ -145,12 +145,6 @@ findings:
     message: 「供給を行う」は「供給する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「供給を行う」は「供給する」で足りる
-  - rule: dangling-figure-reference
-    line: 93
-    text: 表2－2－6）。
-    message: 「表2－2－6」を指していますが、この文書に表2－2－6がありません
-    verdict: false-positive
-    note: "extraction artefact: 表2－2－6（<caption> 付きの <table>）はページにあるが、変換で表ごと落ちている"
   - rule: nominalization
     line: 93
     text: 措置を行っている（表2－2－6）。
@@ -193,12 +187,6 @@ findings:
     message: この文は 187 文字あります（140 文字まで）
     verdict: correct
     note: 187 字の一文
-  - rule: max-kanji-continuous
-    line: 111
-    text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
-    message: 「田園都市国家構想総合戦略」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 閣議決定の文書名（デジタル田園都市国家構想総合戦略）
   - rule: max-sentence-length
     line: 111
     text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
@@ -229,12 +217,6 @@ findings:
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
     note: 175 字の一文
-  - rule: max-ten
-    line: 121
-    text: 地方創生の観点からは、女性、若者、高齢者、障害者など、誰もが居場所と役割を持つコ
-    message: 一文に読点が 10 個あります（6 個まで）
-    verdict: false-positive
-    note: Four of the ten commas sit between quoted noun phrases (「交流・居場所」、「活躍・しごと」、「住まい」、「健康」、「人の流れ」), and three between listed nouns (女性、若者、高齢者、障害者). Both are list commas. That leaves six clause commas, which is within the limit (isamu/lab#1506 made quoted items count as a list).
   - rule: max-sentence-length
     line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方
@@ -301,12 +283,6 @@ findings:
     message: この文は 210 文字あります（140 文字まで）
     verdict: correct
     note: 210 字の一文
-  - rule: max-kanji-continuous
-    line: 149
-    text: 表2－2－7　高齢者等のための公共交通機関施設整備等の状況
-    message: 「公共交通機関施設整備等」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: The rule does not count a trailing 等 (its not_flagged says so in both languages). Without 等, 公共交通機関施設整備 is 10 kanji, which is within the limit.
   - rule: no-doubled-joshi
     line: 149
     text: のための公共交通機関施設整備等の状況
@@ -409,12 +385,6 @@ findings:
     message: 「建築物移動等円滑化誘導基準」は漢字が 13 字続いています（10 字まで）
     verdict: false-positive
     note: 法令上の基準の名前
-  - rule: max-kanji-continuous
-    line: 198
-    text: 社会資本整備総合交付金等の活用によって、誰もが安心して利用できる都市公園の整備を
-    message: 「社会資本整備総合交付金等」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 交付金の名前に「等」が付いたもの
   - rule: nominalization
     line: 208
     text: 運動を実施した。
@@ -493,12 +463,6 @@ findings:
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
     verdict: correct
     note: 「安全運転相談については」から「向上を図った」まで、経緯の説明を挟んで 150 字
-  - rule: footnote-mismatch
-    line: 230
-    text: ※1　シルバーリーダー
-    message: 注「※1」を本文のどこも指していません
-    verdict: false-positive
-    note: "extraction artefact: 本文の「シルバーリーダー<sup><a>※1</a></sup>」の注記号が変換で落ちている"
   - rule: max-sentence-length
     line: 235
     text: 高齢者が犯罪や事故に遭わないよう、交番、駐在所の警察官を中心に、巡回連絡等を通じ
@@ -565,12 +529,6 @@ findings:
     message: 「対策を実施する」は「対策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「対策を実施する」は「対策する」で足りる
-  - rule: topic-predicate-distance
-    line: 241
-    text: さらに、特殊詐欺、利殖勧誘事犯及び特定商取引等事犯の犯行グループは、被害者や被害
-    message: 「は」で出した主題から述語まで 152 字あります（80 字まで）
-    verdict: false-positive
-    note: 「犯行グループは」の述語「名簿を利用しており」は 40 字ほど後にある
   - rule: max-sentence-length
     line: 243
     text: 加えて、今後、認知症高齢者や一人暮らし高齢者が増加していく状況を踏まえ、市民を含
@@ -607,24 +565,6 @@ findings:
     message: 「調査を行う」は「調査する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「調査を行う」は「調査する」で足りる
-  - rule: max-kanji-continuous
-    line: 253
-    text: また、消費者庁新未来創造戦略本部のモデルプロジェクトとして、消費者安全確保地域協
-    message: 「消費者安全確保地域協議会」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法定の協議会の名前
-  - rule: max-kanji-continuous
-    line: 253
-    text: 具体的には、地方消費者行政強化交付金等を通じた支援等に加え、令和5年度地方消費者
-    message: 「地方消費者行政強化交付金等」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: 交付金の名前に「等」が付いたもの
-  - rule: max-kanji-continuous
-    line: 253
-    text: 消費者庁では、認知症高齢者等の「配慮を要する消費者」を見守るため、地方公共団体に
-    message: 「消費者安全確保地域協議会」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法定の協議会の名前
   - rule: no-doubled-joshi
     line: 253
     text: のための講座の開催等を行った。また、消費者庁新未来創造戦略本部のモデルプロジェク

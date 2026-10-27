@@ -6,46 +6,16 @@ findings:
     text: これまで、GPS機器を悪用した行為は規制されていましたが、紛失防止タグを悪用した
     message: 「は」で出した主題から述語まで 127 字あります（80 字まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 18
-    text: ""
-    message: 「つきまとい、待ち伏せ、立ちふさがり、見張り、押し掛け、うろつき」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: a list of the kinds of conduct the law covers; a public-information section needs no number, code or link
   - rule: no-doubled-joshi
     line: 25
     text: の旅行先のホテルの付近をみだりにうろつく。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 66
-    text: ""
-    message: 「GPS機器や紛失防止タグを用いて位置情報を取得する」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: a description of conduct the law covers; no number, code or link is expected
-  - rule: concrete-evidence-density
-    line: 74
-    text: ""
-    message: 「まずはお近くの警察に相談を」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: advice to consult the police; no number, code or link is expected
   - rule: no-doubled-joshi
     line: 86
     text: の都道府県の警察本部の総合窓口につながります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 107
-    text: ""
-    message: 「警察へ相談に行くときは」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: advice on what to bring to the police; no number, code or link is expected
-  - rule: concrete-evidence-density
-    line: 118
-    text: ""
-    message: 「コラム1：被害者への援助・被害者情報の保護」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: a column on the law's protection of victims; no number, code or link is expected
   - rule: list-item-form-mix
     line: 124
     text: 被害を受けている従業員の勤務場所や時間の変更など、勤務形態への配慮。
@@ -58,15 +28,3 @@ findings:
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
     verdict: correct
     note: just over the limit
-  - rule: concrete-evidence-density
-    line: 140
-    text: ""
-    message: 「コラム2：被害を未然に防ぐための対策」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: a column of prevention advice; no number, code or link is expected
-  - rule: concrete-evidence-density
-    line: 148
-    text: ""
-    message: 「まとめ」の節に数値もコードもリンクもありません（そういう節が 7/11）
-    verdict: false-positive
-    note: the closing summary; no number, code or link is expected

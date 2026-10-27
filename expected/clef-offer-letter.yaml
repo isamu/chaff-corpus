@@ -1,18 +1,11 @@
 id: clef-offer-letter
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
+  - rule: bold-emphasis
     line: 1
     text: Welcome to Clef, **FIRST_NAME**!
-    message: The email does not open with a greeting
-    verdict: false-positive
-    note: "\"Welcome to Clef, NAME!\" is the letter's greeting; an exclamatory welcome line is not recognised as one"
-  - rule: preamble-length
-    line: 1
-    text: Welcome to Clef, **FIRST_NAME**!
-    message: 11 paragraphs before the first heading (limit 2)
-    verdict: false-positive
-    note: a letter has no headings until the acceptance block; the preamble limit does not fit a letter body
+    message: "6 bold spans of emphasis: 10.3 per 1000 words (limit 6)"
+    verdict: unjudged
   - rule: max-sentence-length
     line: 3
     text: This offer letter will go over the basic
@@ -78,12 +71,6 @@ findings:
     text: The whole Clef team is convinced that yo
     message: This sentence runs 22 words (limit 18)
     verdict: unjudged
-  - rule: email-greeting-closing
-    line: 50
-    text: I accept this offer to work for Clef und
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: the sign-off (company and signatory) comes before an acceptance block the recipient signs; the closing is not the last paragraph
   - rule: max-sentence-length
     line: 50
     text: I acknowledge that this letter is the co

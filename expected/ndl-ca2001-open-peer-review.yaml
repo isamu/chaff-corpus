@@ -6,12 +6,7 @@ findings:
     text: "### オープン査読の動向：背景、範囲、その是非"
     message: 見出し「オープン査読の動向：背景、範囲、その是非」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: false-positive
-    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
-  - rule: max-kanji-continuous
-    line: 5
-    text: 同志社大学免許資格課程センター：佐藤   翔（さとうしょう）
-    message: 「同志社大学免許資格課程」は漢字が 11 字続いています（8 字まで）
-    verdict: unjudged
+    note: the portal page gives its own title as h1 and the article title as h3; a web template, not the article
   - rule: heading-numbering-mix
     line: 15
     text: "#### 1. あらためて「査読」とは？"
@@ -158,16 +153,6 @@ findings:
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 107
-    text: また、当初はコメントの公開も想定されていたほどであり、査読者が誰かは著者はもちろ
-    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 107
-    text: 当初は、投稿論文に対するコメントを2人の研究者が執筆し、それを同協会の発行する別
-    message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 115
     text: この議論の過程で、NSFや公聴会で意見を聞かれた科学者らの多くは、助成対象を審査
     message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
@@ -202,34 +187,11 @@ findings:
     text: このように、アイデンティティや査読レポートが公開されないのは査読者が率直な意見を
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 121
-    text: 我々研究者はつい、査読を代替できるものなどないと思いがちであるが、1970年代ま
-    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 124
     text: (参照 2021-04-30).
     message: 括弧を「(」と書いています（この文書はふつう「（」。138 箇所のうち 7 箇所が違う）
     verdict: unjudged
-  - rule: latin-spacing
-    line: 172
-    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。21 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
-  - rule: latin-spacing
-    line: 172
-    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
-    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。30 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
-  - rule: no-mixed-desumasu
-    line: 172
-    text: 本著作（CA2001）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
   - rule: url-run-on
     line: 172
     text: https://creativecommons.org/licenses/by/

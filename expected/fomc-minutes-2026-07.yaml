@@ -1,12 +1,6 @@
 id: fomc-minutes-2026-07
 chaff: 0.36.0
 findings:
-  - rule: undefined-acronym
-    line: 5
-    text: FOMC Minutes
-    message: '"FOMC" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the page's heading "Federal Open Market Committee" spells out FOMC two lines above; a site label
   - rule: adverb-overuse
     line: 11
     text: July 28, 2026, at 10:00 a.m. and continu
@@ -17,12 +11,6 @@ findings:
     text: Market outreach and written responses to
     message: This sentence runs 51 words (limit 45)
     verdict: correct
-  - rule: undefined-acronym
-    line: 21
-    text: S&P 500 was down marginally over the int
-    message: '"S&P" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: S&P 500 is the name of an index, not an acronym to expand
   - rule: max-paragraph-length
     line: 35
     text: Total consumer price inflation—as measur
@@ -48,12 +36,6 @@ findings:
     text: Over the intermeeting period, both the m
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-  - rule: undefined-acronym
-    line: 49
-    text: VIX—a forward-looking measure of near-te
-    message: '"VIX" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the VIX is explained by the apposition that follows the dash
   - rule: max-paragraph-length
     line: 79
     text: Participants acknowledged that inflation

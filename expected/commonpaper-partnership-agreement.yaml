@@ -16,6 +16,11 @@ findings:
     text: "'s prior written permission: (a) alter o"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
+  - rule: vague-deadline
+    line: 14
+    text: promptly cease any use of the Licensor’s
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
   - rule: obligation-without-deadline
     line: 15
     text: submit samples of its proposed uses of t
@@ -31,6 +36,11 @@ findings:
     text: "'s liability to the extent prohibited by"
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 39)
     verdict: correct
+  - rule: vague-deadline
+    line: 45
+    text: promptly notifying the Indemnifying Part
+    message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
+    verdict: unjudged
   - rule: quote-style-consistency
     line: 76
     text: "'s products, services, or related offeri"

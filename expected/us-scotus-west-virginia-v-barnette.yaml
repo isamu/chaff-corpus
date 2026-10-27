@@ -41,12 +41,6 @@ findings:
     message: '"ecause" is not in the dictionary; did you mean "cause"?'
     verdict: correct
     note: a stray space splits because into 'b ecause'
-  - rule: unknown-word
-    line: 71
-    text: curiam decisions which preceded and fore
-    message: '"curiam" is not in the dictionary; did you mean "curium"?'
-    verdict: false-positive
-    note: part of the Latin phrase per curiam
   - rule: doubled-word
     line: 137
     text: the flagsalute is an allowable portion o
@@ -58,12 +52,10 @@ findings:
     text: The opinion says 'The the flagsalute is
     message: This paragraph runs 13 sentences (limit 12)
     verdict: correct
-  - rule: dangling-reference
-    line: 139
-    text: § 172, 36 U.S.C.A. § 172, prescribes no
-    message: '"§ 172" (address 172) is not in this document'
-    verdict: false-positive
-    note: a section of a statute, code or court report cited by the opinion, outside this document
+  - rule: unknown-word
+    line: 137
+    what: '"flagsalute" runs flag-salute together; it is not a word'
+    verdict: missed
   - rule: dangling-reference
     line: 143
     text: § 305(g), 50 U.S.C.A.Appendix, § 305(g).
@@ -76,7 +68,3 @@ findings:
     message: '"§ 305(g)" (address 305.g) is not in this document'
     verdict: false-positive
     note: a section of a statute, code or court report cited by the opinion, outside this document
-  - rule: unknown-word
-    line: 137
-    what: '"flagsalute" runs flag-salute together; it is not a word'
-    verdict: missed

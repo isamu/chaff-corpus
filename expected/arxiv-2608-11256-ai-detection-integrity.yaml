@@ -29,12 +29,6 @@ findings:
     text: Table 3). This assisted-writing flag rat
     message: Table 3 is first referred to after Table 6
     verdict: unjudged
-  - rule: invisible-character
-    line: 63
-    text: ⁡(1+word count)\log(1+\text{word count})
-    message: "1 zero-width character (U+2061): search and copy break the word here"
-    verdict: false-positive
-    note: U+2061 (function application) from the MathML-to-text conversion of a formula
   - rule: number-style-consistency
     line: 69
     text: 30.5 percent for the baseline.
@@ -109,35 +103,11 @@ findings:
     text: "###### Acknowledgements."
     message: Heading "Acknowledgements." goes from level 2 to level 6 (expected 3)
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 131
-    text: "  External Links: Link  Cited by: §E.1,"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 132
-    text: "  Innovations in education and teaching"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 133
-    text: "  TESOL quarterly 34 (2), pp. 213–238."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 134
     text: gpt-zero’s accuracy in identifying ai vs
     message: '"gpt-zero" here, where the document usually writes "GPTZero" (1 of 71)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 134
-    text: "  Proceedings of International Mathemati"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 135
     text: arxiv. arXiv preprint arXiv:2601.17036.
@@ -150,160 +120,36 @@ findings:
     message: '"ai-generated" here, where the document usually writes "AI-generated" (3 of 11)'
     verdict: correct
     note: "'ai-generated' lower-cased by the bibliography style (missing braces)"
-  - rule: sentence-spacing-consistency
-    line: 137
-    text: "  Cited by: §1, §2.1."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 138
-    text: "  External Links: Link  Cited by: §E.1,"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 139
     text: ChatGPT for good? on opportunities and c
     message: '"ChatGPT" here, where the document usually writes "chatgpt" (1 of 5)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 139
-    text: "  Learning and individual differences 10"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 140
     text: llm-assisted writing in biomedical publi
     message: '"llm-assisted" here, where the document usually writes "LLM-assisted" (1 of 17)'
     verdict: correct
     note: "'llm-assisted' lower-cased by the bibliography style (missing braces)"
-  - rule: sentence-spacing-consistency
-    line: 140
-    text: "  Science Advances 11 (27), pp. eadt3813"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 142
-    text: "  External Links: Link  Cited by: §2.1."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 143
-    text: "  Journal of University Teaching and Lea"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 144
-    text: "  PeerJ Computer Science 11, pp. e2953."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 148
-    text: "  Computers & Education, pp. 105616.  Ci"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 151
-    text: "  In The Pros and Cons of Using Chatbots"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 152
     text: ai-generated content. Authorea Preprints
     message: '"ai-generated" here, where the document usually writes "AI-generated" (3 of 11)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 152
-    text: "  Authorea Preprints.  Cited by: §1."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: orthographic-variant
     line: 153
     text: ai-generated essays in writing assessmen
     message: '"ai-generated" here, where the document usually writes "AI-generated" (3 of 11)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 153
-    text: "  Psychological Test and Assessment Mode"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 154
-    text: "  In Balkan Conference in Informatics,"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: contraction-consistency
     line: 155
-    text: Kondrak Don’t trust chatgpt when your qu
+    text: Zhang, S. Li, B. Hauer, N. Shi, and G. K
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: false-positive
-    note: "'Don't' is part of a cited work's title"
-  - rule: sentence-spacing-consistency
-    line: 155
-    text: "  In Proceedings of the 2023 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+    verdict: unjudged
   - rule: heading-level-skip
     line: 175
     text: "#### Reading A: proxy-AI labeling."
     message: 'Heading "Reading A: proxy-AI labeling." goes from level 2 to level 4 (expected 3)'
-    verdict: unjudged
-  - rule: broken-link
-    line: 195
-    text: "[11.0,16.0][11.0,16.0]; post-humanizatio"
-    message: '"[11.0,16.0][11.0,16.0]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a confidence interval '[11.0,16.0]' doubled by the MathML-to-text conversion reads as a reference-style link
-  - rule: broken-link
-    line: 195
-    text: "[11.0,18.8][11.0,18.8]; refine assisted-"
-    message: '"[11.0,18.8][11.0,18.8]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a confidence interval '[11.0,16.0]' doubled by the MathML-to-text conversion reads as a reference-style link
-  - rule: broken-link
-    line: 195
-    text: "[75.9,84.5][75.9,84.5]; AI-pool FNR 13.5"
-    message: '"[75.9,84.5][75.9,84.5]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a confidence interval '[11.0,16.0]' doubled by the MathML-to-text conversion reads as a reference-style link
-  - rule: broken-link
-    line: 195
-    text: "[95.2,97.8][95.2,97.8]). Clustering wide"
-    message: '"[95.2,97.8][95.2,97.8]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a confidence interval '[11.0,16.0]' doubled by the MathML-to-text conversion reads as a reference-style link
-  - rule: figure-reference-order
-    line: 195
-    text: Table 10 shows paper-clustered 95% inter
-    message: Table 10 is first referred to after Table 13
-    verdict: unjudged
-  - rule: figure-reference-order
-    line: 197
-    text: Table 11 uses one original-abstract scor
-    message: Table 11 is first referred to after Table 13
-    verdict: unjudged
-  - rule: broken-link
-    line: 199
-    text: "[0.298,0.395][0.298,0.395]). Paper-avera"
-    message: '"[0.298,0.395][0.298,0.395]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a confidence interval doubled by the MathML-to-text conversion reads as a reference-style link
-  - rule: figure-reference-order
-    line: 199
-    text: Table 12 retains instance-level Spearman
-    message: Table 12 is first referred to after Table 13
     verdict: unjudged
   - rule: unknown-word
     line: 201
@@ -328,42 +174,6 @@ findings:
     message: '"analyse" here, where the document usually spells it "analyze" (1 of 29)'
     verdict: false-positive
     note: "'analyse/analyze' names the spelling pair itself as an example"
-  - rule: figure-reference-order
-    line: 355
-    text: Table 14. Pangram score summaries before
-    message: Table 14 is never referred to in the text
-    verdict: false-positive
-    note: referred to as 'Tables 14 and 17' and 'Tables 14 through 19'; plural and range references are not counted
-  - rule: figure-reference-order
-    line: 359
-    text: Table 15. Pangram scores before humaniza
-    message: Table 15 is never referred to in the text
-    verdict: false-positive
-    note: covered by 'Tables 15 through 19'; a range reference is not counted
-  - rule: figure-reference-order
-    line: 367
-    text: Table 18. Pangram scores after humanizat
-    message: Table 18 is never referred to in the text
-    verdict: false-positive
-    note: referred to as 'Tables 18 and 19'; a plural reference is not counted
-  - rule: figure-reference-order
-    line: 369
-    text: Table 19. Pangram scores after humanizat
-    message: Table 19 is never referred to in the text
-    verdict: false-positive
-    note: referred to as 'Tables 16 and 19' and 'Tables 18 and 19'
-  - rule: figure-reference-order
-    line: 375
-    text: Table 20. Text-feature correlations (202
-    message: Table 20 is never referred to in the text
-    verdict: false-positive
-    note: referred to as 'Tables 20 and 21'; a plural reference is not counted
-  - rule: figure-reference-order
-    line: 377
-    text: Table 21. Text-feature correlations (201
-    message: Table 21 is never referred to in the text
-    verdict: false-positive
-    note: referred to as 'Tables 20 and 21'; a plural reference is not counted
   - rule: hyphen-as-dash
     line: 389
     text: " - the pattern behind proxy false-positi"

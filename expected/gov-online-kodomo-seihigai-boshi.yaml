@@ -7,12 +7,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
     note: 「性犯罪・性暴力の被害者のためのワンストップ支援センター」は施設の正式な名前
-  - rule: concrete-evidence-density
-    line: 10
-    text: ""
-    message: 「1「性暴力」とは？」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: repeated-sentence-ending
     line: 12
     text: 年齢や性別にかかわらず、性暴力の被害を受けることがあります。女性だけではなく、男
@@ -21,28 +15,10 @@ findings:
     note: 「〜あります」で終わる文が三つ続く
   - rule: orthographic-variant
     line: 14
-    text: いえない年齢のこどもへの性的な行為については、本人の同意の有無にかかわらず、性暴
-    message: 「いえる」と書いています（この文書はふつう「言える」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「といえない」は「と言える」の補助的な使い方で、公用文の書き方どおり仮名にしている；「言えない」（口に出して言う）とは別の使い方
-  - rule: orthographic-variant
-    line: 14
     text: 嫌だと言えない状況であったりしたなら、本当の同意があったことにはなりません。特に
     message: 「嫌」と書いています（この文書はふつう「イヤ」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: こどもに向けた言葉（「イヤだ」）を片仮名にしたのは意図した書き分けで、本文の「嫌だと言えない」とは役割が違う
-  - rule: concrete-evidence-density
-    line: 18
-    text: ""
-    message: 「こどもに対する性暴力の例」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
-  - rule: concrete-evidence-density
-    line: 29
-    text: ""
-    message: 「加害者は知らない人とは限りません」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: no-doubled-joshi
     line: 55
     text: の被害の影響の現れかたはケース・バイ・ケースであるため一概には言えませんが、性被
@@ -55,24 +31,12 @@ findings:
     message: 「といわれている」は、誰が言ったのかを言っていません
     verdict: correct
     note: 「問題行動が見られるといわれています」は誰の知見かを言っていない
-  - rule: concrete-evidence-density
-    line: 68
-    text: ""
-    message: 「こころの変化」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: list-item-form-mix
     line: 71
     text: 過剰に甘えようとする
     message: 「過剰に甘えようとする」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
     verdict: correct
     note: 名詞の項目（無気力、集中力の欠如）の中に「過剰に甘えようとする」
-  - rule: concrete-evidence-density
-    line: 74
-    text: ""
-    message: 「行動面の変化」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: list-item-form-mix
     line: 79
     text: 人との距離が近い、不特定多数の人と安全でない性行動を繰り返す。
@@ -85,18 +49,6 @@ findings:
     message: この文は 216 文字あります（160 文字まで）
     verdict: correct
     note: 216 字の一文
-  - rule: topic-predicate-distance
-    line: 85
-    text: 16歳から24歳までの若年層を対象とした内閣府の調査によると「身体接触を伴う性暴
-    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
-    verdict: false-positive
-    note: The topic 年齢は gets its predicate at …となっており、 and a new subject (割合が…上る) follows (isamu/lab#1538's shape). The rule counts each 「」 quotation as one noun; with the four quoted age bands counted that way, 年齢は to となっており is under 80. The 95 was measured to the end of the sentence.
-  - rule: concrete-evidence-density
-    line: 91
-    text: ""
-    message: 「コラム2：男の子・男性も性暴力の被害者に」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: bracket-width-consistency
     line: 93
     text: (イコール)女の子・女性とは限りません。「男性が性被害に遭うはずがない」、「男性
@@ -109,24 +61,12 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。62 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「(イコール)」だけ半角の括弧
-  - rule: concrete-evidence-density
-    line: 97
-    text: ""
-    message: 「3こどもの性被害に気付いたら、どう対応すべき？」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: empty-intensifier
     line: 99
     text: 被害に遭ったこどもの心の回復には、周囲の大人の適切なサポートが不可欠です。以下の
     message: 「不可欠です」は、中身を言わずに強調だけしています
     verdict: false-positive
     note: 「不可欠です」は何が不可欠か（周囲の大人の適切なサポート）を言っている
-  - rule: concrete-evidence-density
-    line: 105
-    text: ""
-    message: 「根ほり葉ほり聞き過ぎない、「記憶の汚染」を防ぐ」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: topic-predicate-distance
     line: 107
     text: こどもの気持ちはしっかり受け止めつつ、被害の内容や状況などの事実関係については、
@@ -151,12 +91,6 @@ findings:
     message: 「性犯罪被害相談電話」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
     note: 「性犯罪被害相談電話」は相談窓口の名前（番号の見出し）
-  - rule: orthographic-variant
-    line: 140
-    text: はやくワンストップ）（通話料無料）
-    message: 「はやい」と書いています（この文書はふつう「早い」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "「はやくワンストップ」は番号 #8891 の語呂合わせの読みで、「早い」の表記ゆれではない"
   - rule: max-kanji-continuous
     line: 155
     text: 児童相談所虐待対応ダイヤル
@@ -169,12 +103,6 @@ findings:
     message: 「児童相談所虐待対応」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
     note: 「児童相談所虐待対応ダイヤル」は窓口の名前（番号の見出し）
-  - rule: concrete-evidence-density
-    line: 169
-    text: ""
-    message: 「こんなときにはワンストップ支援センターへご相談を！」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: missing-final-period
     line: 179
     text: る
@@ -187,12 +115,6 @@ findings:
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。43 段落のうち 2 段落）
     verdict: false-positive
     note: 相談できる場面を並べた枠の小見出しで、段落ではない（四つとも「。」なし）
-  - rule: concrete-evidence-density
-    line: 191
-    text: ""
-    message: 「5性被害を未然に防ぐために、ふだんからこどもたちに伝えておきたいことは？」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: max-kanji-continuous
     line: 208
     text: 教育・保育などのこどもに接する場での、こどもへの性暴力を防ぎ、こどもの心と身体を
@@ -205,9 +127,3 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
     note: 「の」の連なりは法律の題名（〜の防止等のための措置に関する法律）の中にある
-  - rule: concrete-evidence-density
-    line: 211
-    text: ""
-    message: 「まとめ」の節に数値もコードもリンクもありません（そういう節が 11/18）
-    verdict: false-positive
-    note: 記事のまとめの節で、数値やリンクは本文の節にある

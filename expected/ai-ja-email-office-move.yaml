@@ -18,3 +18,9 @@ findings:
     message: 「2026年11月28日」は土曜日です（金曜日と書いてあります）
     verdict: correct
     note: 2026-11-28 is a Saturday; the model's weekday is wrong
+  - rule: unfilled-placeholder
+    line: 24
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

@@ -1,6 +1,12 @@
 id: ai-en-tech-switched-editor
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# I went back to a plain text editor for"
+    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
+    verdict: false-positive
+    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: section-length-uniformity
     line: 1
     text: ""

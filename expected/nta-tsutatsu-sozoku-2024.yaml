@@ -1,12 +1,6 @@
 id: nta-tsutatsu-sozoku-2024
 chaff: 0.35.0
 findings:
-  - rule: email-greeting-closing
-    line: 1
-    text: 課資2－7
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: an official directive (document number, 宛名 殿, issuer) opens without a greeting by design
   - rule: fullwidth-alnum-consistency
     line: 1
     text: 2－7
@@ -37,12 +31,6 @@ findings:
     text: 6月21日
     message: 半角の「6」と書いています（この文書はふつう全角の「６」。28 箇所のうち 8 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 9
-    text: （官印省略）
-    message: 丸括弧を、全角で 12 箇所、半角で 30 箇所書いています。この文書には書き方が二通りあります
-    verdict: false-positive
-    note: the double half-width parentheses ((…)) are the directive's notation for article captions, a separate convention from （ ）
   - rule: fullwidth-alnum-consistency
     line: 16
     text: 6年法律第8号）等の施行に伴い、所要の整備を行うものである。
@@ -54,131 +42,53 @@ findings:
     message: 半角の「8」と書いています（この文書はふつう全角の「８」。28 箇所のうち 8 箇所が違う）
     verdict: correct
   - rule: max-sentence-length
-    line: 20
-    text: 第１
-    message: この文は 78 文字あります（70 文字まで）
-    verdict: false-positive
-    note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
-  - rule: one-sentence-paragraph-run
-    line: 20
-    text: 第１
-    message: 一文だけの段落が 7 個続いています（4 個まで）
-    verdict: false-positive
-    note: numbered amendment items (第１, 第２ …) are one-line paragraphs by design
-  - rule: max-sentence-length
     line: 21
-    what: the amendment sentence for 相続税法基本通達 is 76 characters
-    verdict: missed
-    note: found by lab main, which no longer joins the item label 第１ to it
-  - rule: max-sentence-length
-    line: 23
-    text: 第２
+    text: 昭和34年１月28日付直資10「相続税法基本通達」（法令解釈通達）について、別紙
     message: この文は 76 文字あります（70 文字まで）
-    verdict: false-positive
-    note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
+    verdict: correct
+    note: found by lab main, which no longer joins the item label 第１ to it; found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 24
-    what: the amendment sentence for the 租税特別措置法（相続税法の特例関係） directive is 74 characters
-    verdict: missed
-    note: found by lab main, which no longer joins the item label 第２ to it
-  - rule: bracket-nesting
-    line: 26
-    text: １　〔措置法第70条の２((直系尊属から住宅取得等資金の贈与を受けた場合の贈与税
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: the caption notation ((…)) inside 〔…〕 is counted as two nesting levels
+    text: 昭和50年11月４日付直資２－224ほか２課共同「租税特別措置法（相続税法の特例
+    message: この文は 74 文字あります（70 文字まで）
+    verdict: correct
+    note: found by lab main, which no longer joins the item label 第２ to it; found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 26
     text: １　〔措置法第70条の２((直系尊属から住宅取得等資金の贈与を受けた場合の贈与税
     message: この文は 142 文字あります（70 文字まで）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 26
-    text: のうち70の２－２((居住の用に供したとき等))及び70の２－８の２((既存住宅
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
-  - rule: bracket-nesting
-    line: 28
-    text: ２　〔措置法第70条の２((直系尊属から住宅取得等資金の贈与を受けた場合の贈与税
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: the caption notation ((…)) inside 〔…〕 is counted as two nesting levels
   - rule: max-sentence-length
     line: 28
     text: ２　〔措置法第70条の２((直系尊属から住宅取得等資金の贈与を受けた場合の贈与税
     message: この文は 225 文字あります（70 文字まで）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 28
-    text: のうち70の２－８の２((既存住宅用家屋等が面積要件及び建築日要件を満たすことの
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
-  - rule: no-doubled-joshi
-    line: 28
-    text: のうち70の３－８の２((既存住宅用家屋等が面積要件及び建築日要件を満たすことの
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
-  - rule: bracket-nesting
-    line: 30
-    text: ３　〔措置法第70条の６の８((個人の事業用資産についての贈与税の納税猶予及び免
-    message: 括弧が 3 重になっています（2 重まで）
-    verdict: false-positive
-    note: the caption notation ((…)) inside 〔…〕 is counted as two nesting levels
   - rule: max-sentence-length
     line: 30
     text: ３　〔措置法第70条の６の８((個人の事業用資産についての贈与税の納税猶予及び免
     message: この文は 116 文字あります（70 文字まで）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 30
-    text: の６の８((個人の事業用資産についての贈与税の納税猶予及び免除))関係〕のうち7
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
-  - rule: no-doubled-joshi
-    line: 30
-    text: のうち70の６の８－20((３年以上事業に従事していたこと))中「平成25年総務
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
-  - rule: max-sentence-length
-    line: 32
-    text: 第３
-    message: この文は 130 文字あります（70 文字まで）
-    verdict: false-positive
-    note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
   - rule: bracket-width-consistency
     line: 33
-    what: the closing bracket of (注) is half-width where the text writes （ ）
-    verdict: missed
-    note: found by lab main, which no longer counts the caption notation ((…))
+    text: (注)中「、国立研究開発法人情報通信研究機構」を削る。
+    message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: found by lab main, which no longer counts the caption notation ((…)); found by chaffjs 0.38.0
   - rule: bracket-width-consistency
     line: 33
-    what: the opening bracket of (注) is half-width where the text writes （ ）
-    verdict: missed
-    note: found by lab main, which no longer counts the caption notation ((…))
+    text: )中「、国立研究開発法人情報通信研究機構」を削る。
+    message: 括弧を「)」と書いています（この文書はふつう「）」。14 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: found by lab main, which no longer counts the caption notation ((…)); found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 33
-    what: the amendment sentence for the 措置法第40条 directive is 128 characters
-    verdict: missed
-    note: found by lab main
-  - rule: max-sentence-length
-    line: 35
-    text: 第４
-    message: この文は 78 文字あります（70 文字まで）
-    verdict: false-positive
-    note: an item label (第１, 第２ …) on its own line is joined to the following lines and counted as one long sentence
+    text: 昭和55年４月23日付直資２－181「租税特別措置法第40条第１項後段の規定によ
+    message: この文は 128 文字あります（70 文字まで）
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 36
-    what: the sentence on when the amendments apply is 76 characters
-    verdict: missed
-    note: found by lab main
-  - rule: no-doubled-joshi
-    line: 36
-    text: の２の改正後の取扱いについては令和６年３月１日から適用し、それ以外の改正後の取扱
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の inside article and item numbers (第70条の２, 70の２－８の２, 第２の２) is counted as a particle
+    text: この法令解釈通達による上記第２の２の改正後の取扱いについては令和６年３月１日から
+    message: この文は 76 文字あります（70 文字まで）
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.38.0

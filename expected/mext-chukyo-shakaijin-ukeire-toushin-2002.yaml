@@ -6,19 +6,19 @@ findings:
     text: 1  学生が個人の事情に応じて柔軟に修業年限を超えて履修し学位等を取得する仕組み
     message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: false-positive
-    note: "「柔軟に」 is part of the name of the mechanism the 答申 proposes, in its heading"
+    note: 「柔軟に」 is part of the name of the mechanism the 答申 proposes, in its heading
   - rule: duplicate-heading
     line: 27
     text: "## 大学等における社会人受入れの推進方策について（答申）"
     message: 見出し「大学等における社会人受入れの推進方策について（答申）」は、同じ親の下の 15 行目の見出しと同じです
     verdict: false-positive
-    note: "the page shows the 答申's title as the page title and again as the document's own heading"
+    note: the page shows the 答申's title as the page title and again as the document's own heading
   - rule: max-sentence-length
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
     message: この文は 189 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: ngram-repetition
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
@@ -29,19 +29,19 @@ findings:
     text: 更に残された制度上の課題として，学生が柔軟に修業年限を超えて履修し学位等を取得す
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
     verdict: correct
-    note: "「更に」 where the text mostly writes 「さらに」"
+    note: 「更に」 where the text mostly writes 「さらに」
   - rule: use-before-definition
     line: 32
     text: 1年制コース及び通信制博士課程の導入について検討する必要があると考えられる。
     message: 「1年制コース」を、86 行目の定義より前で使っています
     verdict: false-positive
-    note: "the introduction names the proposals that later sections define; a summary before the definition"
+    note: the introduction names the proposals that later sections define; a summary before the definition
   - rule: use-before-definition
     line: 32
     text: 専門大学院1年制コース及び通信制博士課程の導入について検討する必要があると考えら
     message: 「専門大学院」を、85 行目の定義より前で使っています
     verdict: false-positive
-    note: "the introduction names the proposals that later sections define; a summary before the definition"
+    note: the introduction names the proposals that later sections define; a summary before the definition
   - rule: vague-word-density
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
@@ -62,7 +62,7 @@ findings:
     text: 更に審議を行い，これらの制度改正にかかわる課題について結論を得たので，大学等にお
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
     verdict: correct
-    note: "「更に」 where the text mostly writes 「さらに」"
+    note: 「更に」 where the text mostly writes 「さらに」
   - rule: nominalization
     line: 38
     text: 学習を行い，高度で多様な職業能力を身に付けることにより，生涯にわたるキャリア形成
@@ -78,17 +78,12 @@ findings:
     text: 社会全体にとっても，その活力を維持向上させていくためには，時代の変化や困難な状況
     message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 39
-    text: 以上のような状況を踏まえ，我が国の大学等は，社会に一層開かれた機関として，産学連
-    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 40
     text: 例えば，高度で専門的な職業能力の向上を目指して大学院での高度な再学習を求める者，
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: no-doubled-joshi
     line: 41
     text: の促進のための当面の具体的な改革方策について成案を得たので，以下のとおり提言を行
@@ -119,13 +114,13 @@ findings:
     text: 現在，我が国の大学においては，職業等を有しながら学習を希望する人々の様々な学習需
     message: この文は 146 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 47
     text: 授業を行うことができることとされている。  また，大学等が提供する授業科目等を学
     message: 「授業を行う」は「授業する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: false-positive
-    note: "「授業を行う」 cannot become 「授業する」 in standard Japanese"
+    note: 「授業を行う」 cannot become 「授業する」 in standard Japanese
   - rule: nominalization
     line: 47
     text: 教育を行う学部等が設置されているほか，昼夜開講制により授業を行うことができること
@@ -151,25 +146,25 @@ findings:
     text: このように様々な履修形態上の工夫が行われているものの，正規の学生として卒業・修了
     message: この文は 144 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 48
     text: 履修を行う場合は，現状では一般的に留年や休学として取り扱われている。
     message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+    note: 「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere
   - rule: max-sentence-length
     line: 49
     text: 一方，諸外国においては，個人の事情に応じて修業年限を超えて履修を行い，学位を取得
     message: この文は 146 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 49
     text: 履修を行い，学位を取得する正規の学生（いわゆるパートタイム学生）が制度的に存在し
     message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+    note: 「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere
   - rule: vague-word-density
     line: 50
     text: 学生が留年や休学として取り扱われることなく，個人の事情に応じて柔軟に修業年限を超
@@ -180,7 +175,7 @@ findings:
     text: 履修を行い学位等を取得できる新たな仕組みを，各大学等が各々の判断で導入できること
     message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+    note: 「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere
   - rule: vague-word-density
     line: 53
     text: 以上のことを踏まえ，職業等に従事しながら大学等で学ぶことを希望する人々の学習機会
@@ -196,7 +191,7 @@ findings:
     text: 当該学生は，職業等との兼ね合いにより，通常の修業年限在学する学生よりも1年間又は
     message: この文は 179 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: no-doubled-joshi
     line: 59
     text: の定める単位の修得等の要件を満たして卒業・修了することにより，学位等を取得する正
@@ -217,7 +212,7 @@ findings:
     text: また，大学院においては，職業上必要な高度専門的知識・能力を修得することを目的とし
     message: この文は 163 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: vague-word-density
     line: 65
     text: また，大学院においては，職業上必要な高度専門的知識・能力を修得することを目的とし
@@ -238,7 +233,7 @@ findings:
     text: 履修を行い学位等の取得を目指す場であることにかんがみれば，長期履修学生が在学でき
     message: 「履修を行う」は「履修する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
-    note: "「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere"
+    note: 「履修を行う」 where 「履修する」 says the same; the text itself writes 履修する elsewhere
   - rule: topic-predicate-distance
     line: 73
     text: 大学等は，本来，学生が計画的に履修を行い学位等の取得を目指す場であることにかんが
@@ -284,7 +279,7 @@ findings:
     text: 長期履修学生は修業年限を超えて在学することから，その授業料については，通常の修業
     message: この文は 163 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: tari-unpaired
     line: 78
     text: たり，単位制授業料制度を導入するなど，設置者の判断により適切な方法で徴収すること
@@ -305,7 +300,7 @@ findings:
     text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
     message: この文は 223 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-ten
     line: 79
     text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
@@ -315,11 +310,6 @@ findings:
     line: 79
     text: の算定上の収容定員の取扱いについては，長期履修学生は正規の学生として受け入れる以
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 79
-    text: 設置基準の適用上や私学助成の算定上の収容定員の取扱いについては，長期履修学生は正
-    message: 「は」で出した主題から述語まで 181 字あります（80 字まで）
     verdict: unjudged
   - rule: vague-word-density
     line: 79
@@ -331,7 +321,7 @@ findings:
     text: なお，職業等に従事しながら大学等で学ぶ長期履修学生に対しては，通常の修業年限在学
     message: この文は 167 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 80
     text: 配慮を行うことが適当である。
@@ -347,7 +337,7 @@ findings:
     text: 今後，社会，経済の各分野において，世界的規模での競争が激化するとともに，国際的な
     message: この文は 152 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: teki-overuse
     line: 84
     text: 今後，社会，経済の各分野において，世界的規模での競争が激化するとともに，国際的な
@@ -363,7 +353,7 @@ findings:
     text: 高度専門職業人の養成に特化した大学院修士課程（以下「専門大学院」という。）は，こ
     message: この文は 269 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-ten
     line: 85
     text: 高度専門職業人の養成に特化した大学院修士課程（以下「専門大学院」という。）は，こ
@@ -384,7 +374,7 @@ findings:
     text: 一方，大学院修士課程における1年以上2年未満の修業年限でも修了することが可能なコ
     message: この文は 173 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: wordy-phrase
     line: 86
     text: 一方，大学院修士課程における1年以上2年未満の修業年限でも修了することが可能なコ
@@ -395,7 +385,7 @@ findings:
     text: しかしながら，上記答申においては，「修士課程1年制コースを高度専門職業人の養成に
     message: この文は 195 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: vague-word-density
     line: 88
     text: そこで，現在設置されている専門大学院4専攻における在学者の状況を見ると，約8割が
@@ -406,7 +396,7 @@ findings:
     text: 今後，社会，経済の急激な変化に迅速に対応するとともに，社会人の再学習の需要に適切
     message: この文は 142 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: teki-overuse
     line: 89
     text: 今後，社会，経済の急激な変化に迅速に対応するとともに，社会人の再学習の需要に適切
@@ -422,7 +412,7 @@ findings:
     text: 従来の大学院修士課程における1年制コースは，履修形態の工夫とともに，一定の職業経
     message: この文は 156 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 94
     text: 指導を行うなどカリキュラムを工夫するならば，1年制でも2年制と同等の教育水準を確
@@ -458,18 +448,13 @@ findings:
     text: 専門大学院は，その設置を提言した平成10年の大学審議会答申「21世紀の大学像と今
     message: この文は 149 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
-  - rule: topic-predicate-distance
-    line: 98
-    text: 専門大学院は，その設置を提言した平成10年の大学審議会答申「21世紀の大学像と今
-    message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
-    verdict: unjudged
+    note: a sentence over the limit that an editor would split
   - rule: max-sentence-length
     line: 100
     text: したがって，各大学院においては，国際的通用性にも配慮しつつ，分野ごとに学生に身に
     message: この文は 178 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 100
     text: 教育を行うことが可能かどうかを十分慎重に判断し，適切と考えられる場合にのみ専門大
@@ -510,7 +495,7 @@ findings:
     text: なお，専門大学院においては，高度の専門性を要する職業等に求められる知識や能力を専
     message: この文は 191 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-ten
     line: 108
     text: なお，専門大学院においては，高度の専門性を要する職業等に求められる知識や能力を専
@@ -521,7 +506,7 @@ findings:
     text: したがって，本審議会においては，今後，各専門大学院における取組状況を踏まえつつ，
     message: この文は 142 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 109
     text: 検討を行っていくことが必要である。
@@ -552,7 +537,7 @@ findings:
     text: 専門大学院における1年制コースについても，同様に，主として実務の経験のある者に対
     message: この文は 253 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-ten
     line: 114
     text: 専門大学院における1年制コースについても，同様に，主として実務の経験のある者に対
@@ -608,7 +593,7 @@ findings:
     text: また，大学における学事暦の在り方などについては，昼間の学部の運営を基本に設定され
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: no-doubled-joshi
     line: 120
     text: のコースの運営の在り方にも配慮して，教員組織，教育研究指導体制等についての大学全
@@ -624,17 +609,12 @@ findings:
     text: 授業を行うこれらのコースの運営の在り方にも配慮して，教員組織，教育研究指導体制等
     message: 「授業を行う」は「授業する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 125
-    text: より適切にこたえていくために，授業による比重が高い修士課程について，専攻分野によ
-    message: 「より適切」は、何と比べているかが書かれていません
-    verdict: unjudged
   - rule: max-sentence-length
     line: 125
     text: 通信制大学院は，このような学習需要に，より適切にこたえていくために，授業による比
     message: この文は 145 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: topic-predicate-distance
     line: 125
     text: 通信制大学院は，このような学習需要に，より適切にこたえていくために，授業による比
@@ -650,7 +630,7 @@ findings:
     text: 通信制博士課程の設置については，上記答申において，博士課程は研究課題に即した研究
     message: この文は 180 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: topic-predicate-distance
     line: 126
     text: 通信制博士課程の設置については，上記答申において，博士課程は研究課題に即した研究
@@ -661,7 +641,7 @@ findings:
     text: 平成12年の大学審議会答申「グローバル化時代に求められる高等教育の在り方について
     message: この文は 165 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: bracket-nesting
     line: 128
     text: また，大学院における研究指導についても，通学制では「直接の対面指導を行うことが原
@@ -677,19 +657,19 @@ findings:
     text: また，大学院における研究指導についても，通学制では「直接の対面指導を行うことが原
     message: この文は 152 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-sentence-length
     line: 128
     text: また，現在通信制修士課程を開設している大学院においては，社会人が主な対象であり，
     message: この文は 145 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-sentence-length
     line: 128
     text: 通信制修士課程を修了した学生が博士課程での学習を行うことを希望する場合，現行制度
     message: この文は 202 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 128
     text: 学習を行いたいと考えている。また，現在通信制修士課程を開設している大学院において
@@ -740,7 +720,7 @@ findings:
     text: 今後，我が国の大学院においては，社会人の多様な学習需要への対応を積極的に図ってい
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-ten
     line: 129
     text: 今後，我が国の大学院においては，社会人の多様な学習需要への対応を積極的に図ってい
@@ -760,11 +740,6 @@ findings:
     line: 133
     text: 教育を行うことができることとされている。
     message: 「教育を行う」は「教育する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 134
-    text: 行っている状況にある。
-    message: 「行く」と書いています（この文書はふつう「いく」と書く語です。24 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: nominalization
     line: 135
@@ -786,13 +761,13 @@ findings:
     text: 現在設置されている通信制修士課程においては，従来の印刷教材等の郵送による授業や放
     message: この文は 145 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-sentence-length
     line: 140
     text: これらを踏まえ，通信制博士課程においては，研究課題に即した適切な研究指導と学生自
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: nominalization
     line: 140
     text: 助言を行うティーチング・アシスタント，チューター，アドバイザー等の適切な配置に努
@@ -828,7 +803,7 @@ findings:
     text: このような状況を踏まえ，通信制博士課程についても，きめの細かい入学者選抜や情報通
     message: この文は 147 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: wordy-phrase
     line: 146
     text: このような状況を踏まえ，通信制博士課程についても，きめの細かい入学者選抜や情報通

@@ -16,50 +16,25 @@ findings:
     text: デジタル化の進展やAI・量子コンピュータ等の先端技術の普及に伴い、データの共有や
     message: この文は 167 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 43
-    text: ASEANをはじめとするグローバルサウス諸国に対するデータの越境移転に関する課題
-    message: 「ASEAN」が説明なしで使われています（説明のない略語 4 個）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 44
     text: の透明性向上のための国際的な各国のデータ法令等のデータベースの構築等のプロジェク
     message: 「の」が読点を挟まずに 7 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 49
-    text: ""
-    message: 「DFFTの実現に向けた取組について」の節に数値もコードもリンクもありません（そういう節が 4/8）
     verdict: unjudged
   - rule: empty-intensifier
     line: 51
     text: IAP等での取組を通じて、日本主導の国際的なルールの策定は、非常に重要かつ意義あ
     message: 「非常に重要」は、中身を言わずに強調だけしています
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 52
-    text: 本来は、データの越境移転の際にDFFTが担保され、世界中のデータが国境を越えても
-    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: unjudged
   - rule: comparative-without-baseline
     line: 55
     text: さらに新たなデータが生じた場合の取り扱いについては、グローバルな競争の公平性にも
     message: 「さらに新た」は、何と比べているかが書かれていません
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 57
-    text: ""
-    message: 「アジア等との連携について」の節に数値もコードもリンクもありません（そういう節が 4/8）
-    verdict: unjudged
   - rule: empty-intensifier
     line: 62
     text: アジアとの連携は、現在主流になりつつある欧州的な価値観や方法に依存しないデータガ
     message: 「非常に重要」は、中身を言わずに強調だけしています
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 64
-    text: ""
-    message: 「データガバナンス・ガイドラインについて」の節に数値もコードもリンクもありません（そういう節が 4/8）
     verdict: unjudged
   - rule: undefined-acronym
     line: 68
@@ -75,11 +50,6 @@ findings:
     line: 76
     text: より明確に示していただけるとよい。これまでの、ボトムアップでの課題整理も有意義だ
     message: 「より明確」は、何と比べているかが書かれていません
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 78
-    text: ""
-    message: 「データガバナンスについて」の節に数値もコードもリンクもありません（そういう節が 4/8）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 81

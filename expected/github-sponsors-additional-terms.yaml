@@ -1,11 +1,6 @@
 id: github-sponsors-additional-terms
 chaff: 0.35.0
 findings:
-  - rule: duplicate-definition
-    line: 14
-    text: (the "Program"); and 2) set forth the te
-    message: '"Program" is also defined on line 12'
-    verdict: unjudged
   - rule: which-that-consistency
     line: 18
     text: which is signed by a duly authorized off

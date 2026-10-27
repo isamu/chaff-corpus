@@ -31,12 +31,6 @@ findings:
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。11 箇所のうち 3 箇所が違う）
     verdict: false-positive
     note: 四桁の数は半角で書く書き分けに沿っている
-  - rule: fullwidth-alnum-consistency
-    line: 10
-    text: 1％）
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。11 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: 小数（49.1）は半角で書く書き分けに沿っている
   - rule: no-mixed-desumasu
     line: 13
     text: 令和８年８月20日～同年９月27日

@@ -13,12 +13,6 @@ findings:
     message: 「は」で出した主題から述語まで 173 字あります（80 字まで）
     verdict: correct
     note: 「同プラットフォームは」から述語まで 173 字
-  - rule: max-kanji-continuous
-    line: 13
-    text: 気候変動適応に関する取組については、国、地方公共団体、事業者、国民が適応策の推進
-    message: 「気候変動適応広域協議会」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 協議会の名称（気候変動適応広域協議会）
   - rule: max-sentence-length
     line: 13
     text: 気候変動適応に関する取組については、国、地方公共団体、事業者、国民が適応策の推進
@@ -37,12 +31,6 @@ findings:
     message: この文は 219 文字あります（140 文字まで）
     verdict: correct
     note: 219 字の一文
-  - rule: max-kanji-continuous
-    line: 25
-    text: また、気候変動への適応策として重要な熱中症対策については、気候変動適応法及び独立
-    message: 「独立行政法人環境再生保全機構法」は漢字が 15 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法律の題名
   - rule: max-sentence-length
     line: 25
     text: また、気候変動への適応策として重要な熱中症対策については、気候変動適応法及び独立
@@ -55,12 +43,6 @@ findings:
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
     note: 175 字の一文
-  - rule: max-kanji-continuous
-    line: 29
-    text: 地方公共団体における科学的知見に基づく適応策の立案・実施を支援するため、A-PL
-    message: 「地域気候変動適応計画策定」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: マニュアルの題名（地域気候変動適応計画策定マニュアル）
   - rule: max-sentence-length
     line: 29
     text: そのほか、今後の地球温暖化に伴い、強い台風や大雨の増加が予測され、災害の更なる激

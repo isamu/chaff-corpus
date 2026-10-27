@@ -5,14 +5,4 @@ findings:
     line: 1
     sha256: 372c0514f81a042c3834bf22790124a9160829e1b535bc4b581c94a570740a85
     verdict: false-positive
-    note: "旅程記事で、訪れる地点名を並べること自体が内容；固有名詞の多さは誤りではない"
-  - rule: unqualified-superlative
-    line: 1
-    sha256: 91da6073991c3eeae34b5e970d1a083b1f159cb01189d52bd107e50d217e68e0
-    verdict: false-positive
-    note: "比べる範囲が同じ句にある（芭蕉の作品のうちで最も有名）"
-  - rule: unqualified-superlative
-    line: 115
-    sha256: ecd8340828adc681357d0af076c998323dbf0afb2c1c8a6e8d4cf91b6fe2515f
-    verdict: false-positive
-    note: "比べる範囲が同じ文にある（この旅行で最も危険なのは）"
+    note: 旅程記事で、訪れる地点名を並べること自体が内容；固有名詞の多さは誤りではない

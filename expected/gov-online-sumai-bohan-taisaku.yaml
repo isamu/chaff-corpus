@@ -1,135 +1,75 @@
 id: gov-online-sumai-bohan-taisaku
 chaff: 0.36.0
 findings:
-  - rule: concrete-evidence-density
-    line: 5
-    text: ""
-    message: 「POINT」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "記事の要約（POINT）の節で、数値やリンクは本文の節にある"
   - rule: repeated-sentence-ending
     line: 7
     text: ニュースなどでも報じられているとおり、近頃、手口が巧妙かつ凶悪化した侵入犯罪が相
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-    note: "「〜ています」で終わる文が三つ続く"
-  - rule: concrete-evidence-density
-    line: 44
-    text: ""
-    message: 「ガラス破り」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "手口の説明の節で、読み手が持ち帰るのは手口の知識そのもの"
-  - rule: concrete-evidence-density
-    line: 74
-    text: ""
-    message: 「【在宅・帰宅時の行動】」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "取るべき行動を並べた節で、数値やリンクが要る内容ではない"
-  - rule: concrete-evidence-density
-    line: 83
-    text: ""
-    message: 「【住宅の防犯対策】」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "取るべき対策を並べた節で、数値やリンクが要る内容ではない"
-  - rule: list-item-form-mix
-    line: 86
-    text: 玄関をツーロックに、窓に補助錠を取り付けるなど、防犯設備を充実させること。建物部
-    message: 「玄関をツーロックに、窓に補助錠を取り付けるなど、防犯設備を充実させること。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（4 項目のうち 1 項目）
-    verdict: false-positive
-    note: "どの項目も「〜こと。」の指示で、指された項目は二文を持つだけ；形が違うのは最後の「〜対応も必要。」のほう"
+    note: 「〜ています」で終わる文が三つ続く
   - rule: tari-unpaired
     line: 88
     text: たり、郵便物・新聞などの配達を止めるなどの対応も必要。
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-    note: "「声を掛け合ったり、〜止めるなど」で「たり」が一つだけ"
+    note: 「声を掛け合ったり、〜止めるなど」で「たり」が一つだけ
   - rule: orthographic-variant
     line: 92
     text: 合鍵の不正作製を防止するため、鍵を家族以外の人には「見せない」「渡さない」、写真
     message: 「合鍵」と書いています（この文書はふつう「合い鍵」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「合鍵」と「合い鍵」が一つの記事に混ざる"
-  - rule: list-item-form-mix
-    line: 95
-    text: 不審を感じた場合には、ためらうことなく110番通報すること。
-    message: 「不審を感じた場合には、ためらうことなく110番通報すること。」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: "「〜こと。」も「写さない。」も同じ指示の言い方で、項目の形の混在ではない"
-  - rule: concrete-evidence-density
-    line: 97
-    text: ""
-    message: 「侵入犯罪は個人の不注意を無くして地域力で防止」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "地域での防犯の考え方を説明する節で、数値やリンクが要る内容ではない"
+    note: 「合鍵」と「合い鍵」が一つの記事に混ざる
   - rule: weasel-word
     line: 99
     text: 空き巣や強盗などの侵入者は、目星をつけた地域や家の下見を行うことが多いといわれて
     message: 「といわれている」は、誰が言ったのかを言っていません
     verdict: correct
-    note: "「多いといわれています」は誰の調べかを言っていない"
-  - rule: concrete-evidence-density
-    line: 104
-    text: ""
-    message: 「地域で意識したい防犯対策」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "取るべき対策を並べた節で、数値やリンクが要る内容ではない"
+    note: 「多いといわれています」は誰の調べかを言っていない
   - rule: list-item-form-mix
     line: 107
     text: 近隣住民との挨拶や声がけの励行
     message: 「近隣住民との挨拶や声がけの励行」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
     verdict: correct
-    note: "「〜を守る」「〜を持つ」の中に一つだけ名詞止め（〜の励行）"
-  - rule: concrete-evidence-density
-    line: 110
-    text: ""
-    message: 「4侵入者が侵入を諦める物理的な防犯対策」の節に数値もコードもリンクもありません（そういう節が 7/17）
-    verdict: false-positive
-    note: "下位の節（CP部品、5分）に数値がある章の導入"
+    note: 「〜を守る」「〜を持つ」の中に一つだけ名詞止め（〜の励行）
   - rule: teki-overuse
     line: 112
     text: このような荒々しい手口に対応するため、CP部品（防犯性能の高い建物部品）を導入し
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「物理的に」「物理的な」「効果的」"
+    note: 一文に「物理的に」「物理的な」「効果的」
   - rule: weasel-word
     line: 116
     text: 建物に侵入する際、「5分以内」に侵入することができなければ、約7割の侵入者は侵入
     message: 「と言われている」は、誰が言ったのかを言っていません
     verdict: correct
-    note: "「約7割の侵入者は侵入を諦めると言われています」は出典を言っていない"
+    note: 「約7割の侵入者は侵入を諦めると言われています」は出典を言っていない
   - rule: no-doubled-joshi
     line: 117
     text: の防犯性能の目安の一つに「5分間、侵入のための人為的破壊行為に耐えられるかどうか
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「建物部品の防犯性能の目安の一つ」で「の」が続く"
+    note: 「建物部品の防犯性能の目安の一つ」で「の」が続く
   - rule: fullwidth-alnum-consistency
     line: 123
     text: ＣＰマーク
     message: 全角の「ＣＰ」と書いています（この文書はふつう半角の「CP」。6 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "図の見出しだけ全角「ＣＰ」で、本文は半角「CP」"
+    note: 図の見出しだけ全角「ＣＰ」で、本文は半角「CP」
   - rule: max-kanji-continuous
     line: 125
     text: CP部品の詳細については、5団体防犯建物部品普及促進協議会「CP部品紹介」で詳し
     message: 「団体防犯建物部品普及促進協議会」は漢字が 15 字続いています（8 字まで）
     verdict: false-positive
-    note: "「5団体防犯建物部品普及促進協議会」は団体の名前"
+    note: 「5団体防犯建物部品普及促進協議会」は団体の名前
   - rule: no-doubled-joshi
     line: 131
     text: のための一つの方法です。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-    note: "「防犯のための一つの方法」で「の」が続く"
+    note: 「防犯のための一つの方法」で「の」が続く
   - rule: heading-level-skip
     line: 139
     text: "#### 一戸建て住宅"
     message: 見出し「一戸建て住宅」の深さが 2 から 4 へ飛んでいます（3 のはず）
     verdict: correct
-    note: "「コラム」（2）の下の見出しが 4 に飛んでいる"
-  - rule: max-kanji-continuous
-    line: 150
-    text: 防犯優良住宅認定制度については、公益社団法人日本防犯設備協会「防犯優良住宅認定制
-    message: 「防犯優良住宅認定制度」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: "「防犯優良住宅認定制度」は制度の名前"
+    note: 「コラム」（2）の下の見出しが 4 に飛んでいる

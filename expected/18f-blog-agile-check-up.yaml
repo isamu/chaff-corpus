@@ -1,42 +1,30 @@
 id: 18f-blog-agile-check-up
 chaff: 0.36.0
 findings:
-  - rule: unqualified-superlative
-    line: 15
-    text: Even on the best teams, things need to b
-    message: '"the best" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: "'even on the best teams' is an idiom, not a claim needing a comparison"
   - rule: max-sentence-length
     line: 38
     text: For example, instead of committing to a
     message: This sentence runs 50 words (limit 40)
     verdict: correct
-    note: "the sentence is over 40 words as stated"
+    note: the sentence is over 40 words as stated
   - rule: max-sentence-length
     line: 38
     text: This way, you are agreeing on a process
     message: This sentence runs 46 words (limit 40)
     verdict: correct
-    note: "the sentence is over 40 words as stated"
+    note: the sentence is over 40 words as stated
   - rule: unknown-word
     line: 38
     text: mockup or prototype of a sign-up process
     message: '"mockup" is not in the dictionary; did you mean "cockup"?'
     verdict: false-positive
     note: "'mockup' is a common design word, not a misspelling"
-  - rule: concrete-evidence-density
-    line: 44
-    text: ""
-    message: Section "Tasks or tickets take multiple sprints, things keep getting pushed to the next sprint" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
   - rule: contraction-consistency
     line: 48
     text: If you do not already have weekly or biw
     message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: correct
-    note: "the minority form; the post mostly writes don't"
+    note: the minority form; the post mostly writes don't
   - rule: doubled-punctuation
     line: 48
     text: ..
@@ -49,30 +37,12 @@ findings:
     message: '"end result" says the same thing twice'
     verdict: correct
     note: "'end result' says result twice"
-  - rule: unused-definition
-    line: 50
-    text: '"done" means.'
-    message: '"done" is defined but never used'
-    verdict: false-positive
-    note: "'a definition of what \"done\" means' asks the team for a definition; the post defines nothing"
-  - rule: concrete-evidence-density
-    line: 60
-    text: ""
-    message: Section "One person makes all the decisions and architecture choices" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
-  - rule: concrete-evidence-density
-    line: 66
-    text: ""
-    message: Section "It is hard to make a change or roll back a change" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
   - rule: comparative-without-baseline
     line: 70
     text: more predictable, and more frequent depl
     message: '"more predictable" does not say what it is compared with'
     verdict: false-positive
-    note: "the baseline is the manual deployment the sentence replaces (a pipeline 'standardizes deployment')"
+    note: the baseline is the manual deployment the sentence replaces (a pipeline 'standardizes deployment')
   - rule: cliche
     line: 76
     text: Last but not least least, use automated
@@ -85,51 +55,15 @@ findings:
     message: '"least least" doubles a word; one of the two is left over'
     verdict: correct
     note: "a real typo: 'least least'"
-  - rule: concrete-evidence-density
-    line: 78
-    text: ""
-    message: Section "Large backlog of bug reports" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
-  - rule: unqualified-superlative
-    line: 82
-    text: In the best case scenario, the project c
-    message: '"the best" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: "'in the best case scenario' is an idiom"
-  - rule: unqualified-superlative
-    line: 84
-    text: If you try to run a large project with t
-    message: '"the best" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: "'even the best prioritization' is a hypothetical, not a claim needing a comparison"
   - rule: contraction-consistency
     line: 103
     text: Reports can be useful, but what you're p
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
-    note: "the minority form; the post mostly writes you are"
-  - rule: concrete-evidence-density
-    line: 110
-    text: ""
-    message: Section "You feel like you are doing the same process, but the meetings were renamed" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
-  - rule: concrete-evidence-density
-    line: 118
-    text: ""
-    message: Section "Change is hard" has no number, code or link (6 of 10 sections)
-    verdict: false-positive
-    note: "advice for a common pitfall; no number, code or link is expected"
+    note: the minority form; the post mostly writes you are
   - rule: max-paragraph-length
     line: 120
     text: It is easy to look at a wall of problems
     message: This paragraph runs 8 sentences (limit 5)
     verdict: correct
-    note: "eight sentences in one paragraph, as stated"
-  - rule: unqualified-superlative
-    line: 120
-    text: It is the best way to win over well-mean
-    message: '"the best" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: "the set is named in the sentence (the ways to win over sceptical people)"
+    note: eight sentences in one paragraph, as stated

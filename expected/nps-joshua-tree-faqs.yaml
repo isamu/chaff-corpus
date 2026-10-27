@@ -120,15 +120,3 @@ findings:
     message: '"Twenty-Nine" here, where the document usually writes "Twentynine" (1 of 5)'
     verdict: false-positive
     note: Twenty-Nine Palms Band of Mission Indians is a tribe's official name; the city is Twentynine Palms
-  - rule: heading-end-punctuation-mix
-    line: 263
-    text: "#### Mailing Address:"
-    message: The heading "Mailing Address:" ends with ":", while 59 other headings end bare ("What time does the park close?")
-    verdict: false-positive
-    note: labels of the page's contact block (site template), not FAQ question headings
-  - rule: heading-end-punctuation-mix
-    line: 268
-    text: "#### Phone:"
-    message: The heading "Phone:" ends with ":", while 59 other headings end bare ("What time does the park close?")
-    verdict: false-positive
-    note: labels of the page's contact block (site template), not FAQ question headings

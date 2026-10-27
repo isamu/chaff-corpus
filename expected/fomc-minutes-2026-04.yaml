@@ -31,10 +31,10 @@ findings:
     text: Real private domestic final purchases—wh
     message: This sentence runs 49 words (limit 45)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 61
-    text: S&P 500 index declined moderately to end
-    message: '"S&P" is used without an expansion (1 such acronym)'
+  - rule: max-sentence-length
+    line: 51
+    text: Trade data through March suggested that
+    message: This sentence runs 47 words (limit 45)
     verdict: unjudged
   - rule: max-paragraph-length
     line: 63

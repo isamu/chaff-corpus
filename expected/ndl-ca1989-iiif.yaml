@@ -6,30 +6,19 @@ findings:
     text: "### IIIFの概要と主要APIバージョン3.0の公開"
     message: 見出し「IIIFの概要と主要APIバージョン3.0の公開」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: false-positive
-    note: "the portal page gives its own title as h1 and the article title as h3; a web template, not the article"
-  - rule: comparative-without-baseline
-    line: 9
-    text: より広く進めることで社会に貢献したい。いわゆる「デジタルアーカイブ」の構築・公開
-    message: 「より広く」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: "「より広く」 means further than now; the baseline is the present state, which needs no mention"
-  - rule: topic-predicate-distance
-    line: 9
-    text: このことは、ユーザにとって不便であるというだけでなく、文化資料を活用してもらいた
-    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
-    verdict: unjudged
+    note: the portal page gives its own title as h1 and the article title as h3; a web template, not the article
   - rule: latin-spacing
     line: 11
     text: " IIIF（International Image Interoperabili"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。223 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "「のが IIIF」 with a space, where the article writes IIIF without spaces elsewhere"
+    note: 「のが IIIF」 with a space, where the article writes IIIF without spaces elsewhere
   - rule: max-kanji-continuous
     line: 11
     text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人
     message: 「東京大学人文情報学拠点」は漢字が 11 字続いています（8 字まで）
     verdict: false-positive
-    note: "the proper name of a University of Tokyo centre"
+    note: the proper name of a University of Tokyo centre
   - rule: topic-predicate-distance
     line: 11
     text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人
@@ -50,7 +39,7 @@ findings:
     text: 中で、大きな画像をタイルに分割する際にタイルのサイズを確認したり、ブラウザ上で必
     message: 「中」と書いています（この文書はふつう「なか」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "「やりとりの中で」 where the article writes 「なかで」 twice"
+    note: 「やりとりの中で」 where the article writes 「なかで」 twice
   - rule: topic-predicate-distance
     line: 23
     text: IIIF Image APIは、ウェブサイトに対して画像を取得するリクエストを送
@@ -93,7 +82,7 @@ findings:
     text: 2020年6月3日にリリースされたIIIF Image APIとIIIF Pre
     message: 日付「2020年6月3日」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
     verdict: false-positive
-    note: "a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes"
+    note: a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes
   - rule: repeated-conjunction
     line: 47
     text: また、非互換の大きな変更もあった。ユーザ側からみて大きなものは、音声や動画を扱う
@@ -104,52 +93,22 @@ findings:
     text: 2020年11月9日に正式リリースされたMirador 3が、Presentat
     message: 日付「2020年11月9日」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
     verdict: false-positive
-    note: "a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes"
+    note: a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes
   - rule: latin-spacing
     line: 61
     text: " コンソーシアムでは、Cookbook of IIIF Recipesというサー"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。223 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "「IIIF コンソーシアム」 with a space, where the article writes IIIFコンソーシアム elsewhere"
-  - rule: taigen-dome-in-prose
-    line: 84
-    text: (8) みんなで翻刻.
-    message: 本文に体言止めが 9 文あります（4 文まで）
-    verdict: false-positive
-    note: "entries of the notes and references list counted as prose sentences"
+    note: 「IIIF コンソーシアム」 with a space, where the article writes IIIFコンソーシアム elsewhere
   - rule: kutoten-consistency
     line: 94
     text: ．
     message: 句点を「．」と書いています（この文書はふつう「。」。94 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "a full-width period 「．」 ends one note where every other note uses 「.」"
+    note: a full-width period 「．」 ends one note where every other note uses 「.」
   - rule: date-format-consistency
     line: 152
     text: 2019/11/14版）”. digitalnagasakiのブログ.
     message: 日付「2019/11/14」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
     verdict: false-positive
-    note: "a date inside a cited blog post's title"
-  - rule: latin-spacing
-    line: 165
-    text: " 4.0 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。31 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
-  - rule: latin-spacing
-    line: 165
-    text: " 国際 パブリック・ライセンスの下に提供されています。ライセンスの内容を知りたい"
-    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。34 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: "the official name of the CC licence, written with spaces as the portal's licence notice writes it"
-  - rule: no-mixed-desumasu
-    line: 165
-    text: ライセンスの内容を知りたい方は https://creativecommons.
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
-  - rule: no-mixed-desumasu
-    line: 165
-    text: 本著作（CA1989）はクリエイティブ・コモンズ 表示 4.0 国際 パブリック
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: "the portal's licence notice appended to the article, in です/ます; not part of the article's prose"
+    note: a date inside a cited blog post's title

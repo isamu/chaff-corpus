@@ -157,12 +157,6 @@ findings:
     message: "\"we're\" is written \"we are\" elsewhere in the document"
     verdict: correct
     note: "\"We're\" where the speech also writes \"we are\""
-  - rule: undefined-acronym
-    line: 135
-    text: S&P 500, profits have grown by more than
-    message: '"S&P" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: S&P 500 is an index name, not an acronym to expand
   - rule: max-sentence-length
     line: 139
     text: Credit spreads on corporate bonds and le
@@ -218,42 +212,6 @@ findings:
     verdict: false-positive
     note: '"There is one signal nobody can miss:" is a deliberate rhetorical setup'
   - rule: max-sentence-length
-    line: 185
-    text: 63 (1), pp. 277–80, https://doi.org/10.1
-    message: This sentence runs 33 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 185
-    text: See Lawrence H. Summers (2015), "Have We
-    message: This sentence runs 29 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: undefined-acronym
-    line: 185
-    text: IMF Fourteenth Annual Research Conferenc
-    message: '"IMF" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: IMF inside the title of a cited work
-  - rule: max-sentence-length
-    line: 187
-    text: See Robert J. Gordon (2017), The Rise an
-    message: This sentence runs 26 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
-    line: 191
-    text: See Sha Sajadieh, Loredana Fattorini, Ra
-    message: This sentence runs 70 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: undefined-acronym
-    line: 193
-    text: BOE, December). Return to text
-    message: '"BOE" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: BOE is the publisher in a citation whose title spells out Bank of England
-  - rule: max-sentence-length
     line: 195
     text: While forward guidance became a regular
     message: This sentence runs 56 words (limit 25)
@@ -266,47 +224,17 @@ findings:
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
   - rule: max-sentence-length
-    line: 199
-    text: See Ben S. Bernanke (2004), "What Policy
-    message: This sentence runs 47 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
     line: 203
     text: Romer and Romer argue that the 2021 infl
     message: This sentence runs 38 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
   - rule: max-sentence-length
-    line: 203
-    text: See Christina D. Romer and David H. Rome
-    message: This sentence runs 36 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: max-sentence-length
     line: 205
     text: This framing echoes Sherman Kent, who ar
     message: This sentence runs 35 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
-  - rule: max-sentence-length
-    line: 207
-    text: See N. Gregory Mankiw (2024), "Six Belie
-    message: This sentence runs 29 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: undefined-acronym
-    line: 207
-    text: NBER Conference on 'Inflation in the Cov
-    message: '"NBER" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: NBER inside the title of a cited work
-  - rule: max-sentence-length
-    line: 209
-    text: See Kevin M. Warsh (2022), "Money Matter
-    message: This sentence runs 33 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
   - rule: max-sentence-length
     line: 211
     text: As Ravi Menon, former managing director
@@ -319,15 +247,3 @@ findings:
     message: '"Decision-Making" here, where the document usually writes "decisionmaking" (1 of 3)'
     verdict: false-positive
     note: '"Decision-Making" is in the title of a cited book, which keeps its own spelling'
-  - rule: max-sentence-length
-    line: 219
-    text: See Gadi Barlevy and Luojia Hu (2023), "
-    message: This sentence runs 40 words (limit 25)
-    verdict: false-positive
-    note: a bibliographic citation in a footnote (authors, title, publisher), not a prose sentence
-  - rule: undefined-acronym
-    line: 219
-    text: FRBSF Economic Letter 2023-13 (Federal R
-    message: '"FRBSF" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: FRBSF names a cited series in a citation

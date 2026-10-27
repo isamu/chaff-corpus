@@ -6,11 +6,6 @@ findings:
     text: "## LEGISLATIVE SESSION"
     message: Nothing under the heading "LEGISLATIVE SESSION"
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 101
-    text: This is one of the most urgent catastrop
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: unjudged
   - rule: demonstrative-opener-run
     line: 145
     text: It is frayed. It is fractious. It is hur

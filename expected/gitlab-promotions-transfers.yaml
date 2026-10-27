@@ -55,11 +55,6 @@ findings:
     text: In order to have insight into upcoming p
     message: '"in order to" can be said in fewer words'
     verdict: unjudged
-  - rule: all-caps-shouting
-    line: 133
-    text: PROMOTION NOMINATION PREPARATION & SUBMI
-    message: '"PROMOTION NOMINATION PREPARATION" is written in capitals'
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 136
     text: " - All manager promotion nominations mus"

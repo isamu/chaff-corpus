@@ -1,14 +1,6 @@
 id: qiita-jnchito-good-sample-code
 chaff: 0.34.0
 findings:
-  - rule: concrete-evidence-density
-    line: 7
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 16
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: ngram-repetition
     line: 22
     sha256: 8bf78195f57087c6b4279a40d9324356adfecd5c1b52d2511c59eae84cb453c3
@@ -41,14 +33,6 @@ findings:
     line: 427
     sha256: 63a9b9dfed446bc15aa25adfb96cb3ec60822ac92c958986bca9b51cb64b23b1
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 429
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 444
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: name-variant
     line: 450
     sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
@@ -60,14 +44,6 @@ findings:
   - rule: orthographic-variant
     line: 451
     sha256: be51da0bad1f88e334f3c74f694573547446974057108be63ebdce37c2c727e0
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 526
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 658
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: unqualified-superlative
     line: 661

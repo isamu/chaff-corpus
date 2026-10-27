@@ -6,7 +6,7 @@ findings:
     text: "2345"
     message: The summary gives "// @errors" as 2345, but the body gives 2322
     verdict: false-positive
-    note: "a twoslash compiler directive (// @errors) in a code fence compared with an error code in another example"
+    note: a twoslash compiler directive (// @errors) in a code fence compared with an error code in another example
   - rule: contraction-consistency
     line: 254
     text: If you're unfamiliar, checking whether s
@@ -17,28 +17,28 @@ findings:
     text: " - is `string | number`, and assignabili"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 543
     text: " - which is appropriate since `radius` m"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: comparative-without-baseline
     line: 584
     text: better.
     message: '"better" does not say what it is compared with'
     verdict: false-positive
-    note: "rhetorical; the baseline is the code shown just above"
+    note: rhetorical; the baseline is the code shown just above
   - rule: hyphen-as-dash
     line: 694
     text: " - that `Circle` and `Square` were reall"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: hyphen-as-dash
     line: 694
     text: " - was crucial."
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash

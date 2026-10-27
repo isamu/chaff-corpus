@@ -7,12 +7,6 @@ findings:
     message: 「気付く」と書いています（この文書はふつう「気づく」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「気付かぬ」と、ほかの「気づく」が混ざる
-  - rule: concrete-evidence-density
-    line: 11
-    text: ""
-    message: 「まもろうよ　こころ～誰も自殺に追い込まれることのない社会へ【字幕付】（3分00秒）」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 動画の題を見出しにした節（動画の埋め込み）で、本文の節ではない
   - rule: title-length
     line: 11
     text: "### まもろうよ　こころ～誰も自殺に追い込まれることのない社会へ【字幕付】（3"
@@ -49,66 +43,24 @@ findings:
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: correct
     note: 「自殺の背景は」から「末のものです」まで要因の列挙を挟んで遠い
-  - rule: concrete-evidence-density
-    line: 49
-    text: ""
-    message: 「元気がない、口数が減った、いつもと様子が違うときは要注意」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
-  - rule: concrete-evidence-density
-    line: 71
-    text: ""
-    message: 「※参考＜うつ病の症状とは？＞」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: list-item-form-mix
     line: 79
     text: 集中したり、物事を決めたりするのが困難
     message: 「集中したり、物事を決めたりするのが困難」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（10 項目のうち 1 項目）
     verdict: correct
     note: 文で終わる症状の中に「〜のが困難」の名詞止め
-  - rule: no-mixed-desumasu
-    line: 88
-    text: もしも、いつも顔を合わせる人が最近元気ないなど、いつもと違っていたら・・・。まず
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: 「いつもと違っていたら・・・。」は言いさしの文で、常体への切り替えではない
-  - rule: concrete-evidence-density
-    line: 113
-    text: ""
-    message: 「「る」　セルフヘルプ」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
-  - rule: concrete-evidence-density
-    line: 122
-    text: ""
-    message: 「特別な資格は不要。その役割は「気づき」「傾聴」「つなぎ」「見守り」の4つ」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: missing-final-period
     line: 130
     text: る
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
     verdict: false-positive
     note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
-  - rule: list-item-form-mix
-    line: 138
-    text: なんか元気ないけど、大丈夫？
-    message: 「なんか元気ないけど、大丈夫？」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
-    verdict: false-positive
-    note: 声かけの例として話し言葉を並べた箇条書きで、項目の形をそろえるものではない
   - rule: missing-final-period
     line: 143
     text: る
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
     verdict: false-positive
     note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
-  - rule: concrete-evidence-density
-    line: 145
-    text: ""
-    message: 「（ポイント）」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: list-item-form-mix
     line: 147
     text: 話せる環境づくり
@@ -121,18 +73,6 @@ findings:
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
     verdict: false-positive
     note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
-  - rule: concrete-evidence-density
-    line: 157
-    text: ""
-    message: 「（ポイント）」の節に数値もコードもリンクもありません（そういう節が 7/12）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
-  - rule: concrete-evidence-density
-    line: 163
-    text: ""
-    message: 「見守り」の節に数値もコードもリンクもありません（そういう節が 8/13）
-    verdict: false-positive
-    note: 説明や行動の目安を並べた節で、数値やリンクが要る内容ではない
   - rule: missing-final-period
     line: 165
     text: る
@@ -145,9 +85,3 @@ findings:
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
     verdict: correct
     note: 「〜も大切です」は文なのに「。」がない（前の行「〜知っておきましょう」も同じ）
-  - rule: orthographic-variant
-    line: 200
-    text: こころの健康相談統一ダイヤル
-    message: 「こころ」と書いています（この文書はふつう「心」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「こころの健康相談統一ダイヤル」は窓口の名前

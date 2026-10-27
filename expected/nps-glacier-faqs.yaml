@@ -31,18 +31,6 @@ findings:
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
     note: the answers write "it is" except this one "It's"
-  - rule: undefined-acronym
-    line: 40
-    text: GNPCGS to 333111 to sign up!
-    message: '"GNPCGS" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: GNPCGS is an SMS keyword to text, not an acronym to expand
-  - rule: undefined-acronym
-    line: 49
-    text: NPS designated storage lockers and bear-
-    message: '"NPS" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: NPS is the publisher's own name on its own website
   - rule: max-paragraph-length
     line: 60
     text: Trail status is unpredictable because tr
@@ -55,9 +43,3 @@ findings:
     message: This sentence runs 94 words (limit 40)
     verdict: false-positive
     note: "extraction artefact: a list of driving times separated by <br> in the source is read as one 94-word sentence"
-  - rule: undefined-acronym
-    line: 99
-    text: PO Box 128
-    message: '"PO" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: PO Box is a standard postal abbreviation

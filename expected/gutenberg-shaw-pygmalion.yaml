@@ -1,33 +1,9 @@
 id: gutenberg-shaw-pygmalion
 chaff: 0.36.0
 findings:
-  - rule: name-variant
-    line: 29
-    text: Englishmen. The reformer England needs t
-    message: '"Englishmen" is one letter away from "Englishman", which the document uses more than once'
-    verdict: false-positive
-    note: "'Englishmen' is the plural of 'Englishman', not a variant spelling of a name"
   - rule: space-before-punctuation
     line: 3466
     text: " ! A—a—a—a—ahowooh! Victory! Victory! [H"
     message: A space before "!"
     verdict: correct
     note: a stray space before '!' in the middle of three identical exclamations
-  - rule: demonstrative-opener-run
-    line: 3831
-    text: That impostor! that humbug! that
-    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
-    verdict: false-positive
-    note: a character's spoken outburst in a play; repetition is the speaker's voice
-  - rule: demonstrative-opener-run
-    line: 3931
-    text: It does not tell her
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: narrative prose of the sequel; the 'It ...' sentences are the author's rhythm, not a reader's puzzle
-  - rule: demonstrative-opener-run
-    line: 4316
-    text: That is all. That is how it has turned o
-    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
-    verdict: false-positive
-    note: "'That is all. That is how it has turned out.' is a deliberate cadence in the sequel's narration"

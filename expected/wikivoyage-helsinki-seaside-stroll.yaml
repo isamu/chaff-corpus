@@ -5,34 +5,24 @@ findings:
     line: 5
     sha256: 8ba1f3573d96b9144b49ce5909bb84807aeb27635de50546494096e0c8b66dd6
     verdict: correct
-    note: "the -ly adverb density over the whole page is above the limit as stated; a style signal, not an error"
+    note: the -ly adverb density over the whole page is above the limit as stated; a style signal, not an error
   - rule: max-sentence-length
     line: 21
     sha256: 511a92bc8f1f330bcbf0fe4fbed3c9df1a7141b031bb22740bb583f866ac3d17
     verdict: correct
-    note: "the sentence is over 45 words as stated"
-  - rule: list-item-form-mix
-    line: 23
-    sha256: 339f68ee759cf61ded7c1dc1501851845aad06e2bf5920db545b22815bfddc1b
-    verdict: false-positive
-    note: "every item of the walk is a prose paragraph of several sentences (a stop on the route); the opening form of a paragraph is not a list-item form"
+    note: the sentence is over 45 words as stated
   - rule: max-sentence-length
     line: 23
     sha256: 262fb8454941a45f6449ed49656d593786aff4872356ce918543d35b32e6445c
     verdict: correct
-    note: "the sentence is over 45 words as stated"
+    note: the sentence is over 45 words as stated
   - rule: max-sentence-length
     line: 33
     sha256: f157894adfc1e67403cfcc70978678baae19d325ebb35154993daacf8d5dfe0d
     verdict: correct
-    note: "the sentence is over 45 words as stated"
-  - rule: list-item-form-mix
-    line: 49
-    sha256: c82e2ec418a94c3610782968e99ecc7aff5432a88971bc94ffe8c39834ef3742
-    verdict: false-positive
-    note: "every item of the walk is a prose paragraph of several sentences (a stop on the route); the opening form of a paragraph is not a list-item form"
+    note: the sentence is over 45 words as stated
   - rule: max-sentence-length
     line: 49
     sha256: 665a7a05b71b265ca17aeda1fb94d5068dc4481a3a6d8a510882dbbd100bcaa2
     verdict: correct
-    note: "a 66-word sentence joined by a semicolon; over the limit as stated"
+    note: a 66-word sentence joined by a semicolon; over the limit as stated

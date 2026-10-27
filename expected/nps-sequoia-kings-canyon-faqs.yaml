@@ -25,6 +25,11 @@ findings:
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
     note: "\"It's\" where the page otherwise writes \"it is\""
+  - rule: unknown-word
+    line: 31
+    what: '"thoses" is a typo for "those" (In thoses areas where coverage is found)'
+    verdict: missed
+    note: one letter from "those"; neither the pinned chaff nor lab main reports it
   - rule: max-paragraph-length
     line: 55
     text: Give yourself plenty of time. To drive o
@@ -103,20 +108,3 @@ findings:
     message: Heading "Where can I learn about the General Management Plan for the parks?" goes from level 2 to level 4 (expected 3)
     verdict: correct
     note: h4 question directly under an h2 section
-  - rule: heading-end-punctuation-mix
-    line: 221
-    text: "#### Mailing Address:"
-    message: The heading "Mailing Address:" ends with ":", while 34 other headings end bare ("Which park do I go to?")
-    verdict: false-positive
-    note: the site footer's contact labels (Mailing Address:, Phone:) are a template convention, not the FAQ's headings
-  - rule: heading-end-punctuation-mix
-    line: 226
-    text: "#### Phone:"
-    message: The heading "Phone:" ends with ":", while 34 other headings end bare ("Which park do I go to?")
-    verdict: false-positive
-    note: the site footer's contact labels (Mailing Address:, Phone:) are a template convention, not the FAQ's headings
-  - rule: unknown-word
-    line: 31
-    what: '"thoses" is a typo for "those" (In thoses areas where coverage is found)'
-    verdict: missed
-    note: one letter from "those"; neither the pinned chaff nor lab main reports it

@@ -12,3 +12,21 @@ findings:
     message: 9 dashes per 1000 words (limit 8)
     verdict: false-positive
     note: the dash is part of the calendar's name, and the other is the sign-off "— Nina"; not an AI sign
+  - rule: over-general-claim
+    line: 13
+    text: Anyone who's off, at a conference, or wo
+    message: '"anyone who" and other sweeping claims: 13 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: "\"anyone who's off\" says who adds an event to the team calendar, a rule for the team, not a claim about people in general"
+  - rule: over-general-claim
+    line: 27
+    text: I'll set the calendar up this week and s
+    message: '"everyone" and other sweeping claims: 13 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: '"share it with everyone" is the team the proposal is addressed to'
+  - rule: over-general-claim
+    line: 27
+    text: If nobody's using it by then, we drop it
+    message: '"nobody" and other sweeping claims: 13 per 1000 words (limit 3)'
+    verdict: false-positive
+    note: "\"if nobody's using it\" is nobody on the team, a test the proposal sets itself"

@@ -6,52 +6,39 @@ findings:
     text: ’ strengths and opportunities before com
     message: The quote mark ’ here, where the document usually writes ' (1 of 8)
     verdict: correct
-    note: "the one curly apostrophe (Archives’) in a post that otherwise writes straight ones"
-  - rule: concrete-evidence-density
-    line: 11
-    text: ""
-    message: Section "What is data maturity, and why does it matter?" has no number, code or link (3 of 6 sections)
-    verdict: false-positive
-    note: "a section defining a term; a number or link is not expected"
+    note: the one curly apostrophe (Archives’) in a post that otherwise writes straight ones
   - rule: max-sentence-length
     line: 19
     text: The purpose of the discovery phase was t
     message: This sentence runs 42 words (limit 40)
     verdict: correct
-    note: "42-word sentence"
+    note: 42-word sentence
   - rule: concrete-evidence-density
     line: 21
-    text: ""
-    message: Section "What we found" has no number, code or link (3 of 6 sections)
-    verdict: correct
-    note: "a findings section that asserts \"the data quality is high\" and \"strong data maturity\" with no figure, measure or link"
+    what: Section "What we found" has no number, code or link (3 of 6 sections)
+    verdict: missed
+    note: a findings section that asserts "the data quality is high" and "strong data maturity" with no figure, measure or link; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
   - rule: unqualified-superlative
     line: 23
     text: The discovery phase produced three main
     message: '"the most" has nothing to compare against (2 such claims)'
     verdict: correct
-    note: "\"the most significant opportunity for government\" with nothing it is compared against"
+    note: '"the most significant opportunity for government" with nothing it is compared against'
   - rule: unqualified-superlative
     line: 27
     text: Third, we believe the most significant o
     message: '"the most" has nothing to compare against (2 such claims)'
     verdict: correct
-    note: "repeats \"the most significant opportunity for government\" with nothing compared"
-  - rule: concrete-evidence-density
-    line: 29
-    text: ""
-    message: Section "Technology moves faster than data projects" has no number, code or link (3 of 6 sections)
-    verdict: false-positive
-    note: "a section explaining the approach taken; it names the standard used (MCP)"
+    note: repeats "the most significant opportunity for government" with nothing compared
   - rule: max-sentence-length
     line: 31
     text: Had the GDS and The National Archives pa
     message: This sentence runs 43 words (limit 40)
     verdict: correct
-    note: "43-word sentence"
+    note: 43-word sentence
   - rule: max-sentence-length
     line: 39
     text: To test how legal data could be exposed
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-    note: "48-word sentence"
+    note: 48-word sentence

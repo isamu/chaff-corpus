@@ -317,11 +317,6 @@ findings:
     message: This sentence runs 31 words (limit 25)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 89
-    text: For more information, see Claudia Sahm (
-    message: This sentence runs 43 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 91
     text: In early September, the Bureau of Labor
     message: This sentence runs 37 words (limit 25)
@@ -342,24 +337,9 @@ findings:
     message: This sentence runs 36 words (limit 25)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 99
-    text: See Jerome H. Powell (2019), "Challenges
-    message: This sentence runs 34 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 101
-    text: See François Gourio, Benjamin K. Johanns
-    message: This sentence runs 42 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 103
     text: A 2020 paper by Caldara and others discu
     message: This sentence runs 75 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 105
-    text: 32 (November), pp. 936–66; Michael T. Ki
-    message: This sentence runs 51 words (limit 25)
     verdict: unjudged
   - rule: max-sentence-length
     line: 105
@@ -367,37 +347,7 @@ findings:
     message: This sentence runs 40 words (limit 25)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 105
-    text: On average inflation targeting, see Thom
-    message: This sentence runs 29 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 107
-    text: See Ekaterina Peneva, Daniel Villar, and
-    message: This sentence runs 35 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 109
-    text: See Ina Hajdini, Adam Shapiro, A. Lee Sm
-    message: This sentence runs 35 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 113
-    text: See Hess Chung, Callum Jones, Antoine Le
-    message: This sentence runs 36 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 115
     text: For additional information, see the repo
     message: This sentence runs 30 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 117
-    text: See Christopher Foote, Shigeru Fujita, A
-    message: This sentence runs 30 words (limit 25)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 119
-    text: See Brent Bundick, Isabel Cairó, and Nic
-    message: This sentence runs 39 words (limit 25)
     verdict: unjudged

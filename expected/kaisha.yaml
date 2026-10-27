@@ -21,16 +21,6 @@ findings:
     text: 設立時代表執行役（第四十八条第一項第三号に規定する設立時代表執行役をいう。）に通
     message: 「設立時代表執行役」を、344 行目の定義より前で使っています
     verdict: unjudged
-  - rule: defined-name-repeated
-    line: 342
-    text: 報酬委員会の委員となる者
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: use-before-definition
-    line: 866
-    text: 登録株式質権者について準用する。
-    message: 「登録株式質権者」を、1022 行目の定義より前で使っています
-    verdict: unjudged
   - rule: use-before-definition
     line: 1279
     text: 株式等売渡請求
@@ -116,35 +106,10 @@ findings:
     text: 全ての監査等委員で組織する。
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3358
-    text: 報酬委員会の各委員会（以下この条、次条及び第九百十一条第三項第二十三号ロにおいて
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
   - rule: connective-hierarchy
     line: 3361
     text: 若しくは支配人その他の使用人を兼ねることができない。
     message: 「若しくは」の文に、段の組になる語がありません（一段なら「又は」）
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3427
-    text: 報酬委員会による報酬の決定の方法等）
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3428
-    text: 報酬委員会は、執行役等の個人別の報酬等の内容に係る決定に関する方針を定めなければ
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3429
-    text: 報酬委員会は、第四百四条第三項の規定による決定をするには、前項の方針に従わなけれ
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3430
-    text: 報酬委員会は、次の各号に掲げるものを執行役等の個人別の報酬等とする場合には、その
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 3557
@@ -166,20 +131,10 @@ findings:
     text: 第四百二十七条　第四百二十四条の規定にかかわらず、株式会社は、取締役（業務執行取
     message: 「は」で出した主題から述語まで 213 字あります（200 字まで）
     verdict: unjudged
-  - rule: defined-name-repeated
-    line: 3752
-    text: 報酬委員会による第四百九条第三項第三号、第四号若しくは第五号ロに定める事項につい
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
   - rule: bracket-nesting
     line: 3802
     text: ５　債権者が第二項第三号の期間内に異議を述べたときは、株式会社は、当該債権者に対
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 3931
-    text: 第四百六十五条　株式会社が次の各号に掲げる行為をした場合において、当該行為をした
-    message: 「は」で出した主題から述語まで 227 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 3970
@@ -220,11 +175,6 @@ findings:
     line: 4306
     text: 三　清算株式会社の財産に対して既にされている共助対象外国租税（租税条約等の実施に
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 4320
-    text: 第五百十五条　特別清算開始の命令があったときは、破産手続開始の申立て、清算株式会
-    message: 「は」で出した主題から述語まで 304 字あります（200 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 4325
@@ -276,33 +226,13 @@ findings:
     text: 全ての株主
     message: 「全て」と書いています（この文書はふつう「すべて」と書く語です。15 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: defined-name-repeated
-    line: 7226
-    text: 報酬委員会の委員をいう。第八百七十四条第一号において同じ。）、執行役若しくは代表
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 7331
     text: 第八百八十六条　利害関係人は、裁判所書記官に対し、第二編第九章第二節若しくはこの
     message: 「は」で出した主題から述語まで 233 字あります（200 字まで）
     verdict: unjudged
-  - rule: defined-name-repeated
-    line: 7609
-    text: 報酬委員会の委員をいう。）、執行役又は代表執行役
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 7769
-    text: 報酬委員会の委員をいう。）、執行役又は代表執行役の職務を行うべき者の選任の裁判
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 7920
     text: 第九百五十七条　法務大臣は、登録を受ける者がないとき、第九百五十条の規定による電
     message: 「は」で出した主題から述語まで 209 字あります（200 字まで）
-    verdict: unjudged
-  - rule: defined-name-repeated
-    line: 7945
-    text: 報酬委員会の委員をいう。）、執行役又は代表執行役の職務を行うべき者
-    message: 「報酬委員会」は 32 行目で「指名委員会等」と呼ぶと定めた名前です
     verdict: unjudged

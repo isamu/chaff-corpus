@@ -21,11 +21,6 @@ findings:
     text: 中で、「大きな一歩」を踏み出すのは極めて難しく、多くの場合、その研究発表は「小さ
     message: 「中」と書いています（この文書はふつう「なか」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 47
-    text: ""
-    message: 「研究背景」の節に数値もコードもリンクもありません（そういう節が 5/14）
-    verdict: unjudged
   - rule: clause-chain
     line: 51
     text: 燃料電池であればいきなり「高効率な燃料電池を開発します」といってもそれなりに通じ
@@ -35,11 +30,6 @@ findings:
     line: 55
     text: この不満点の解決/軽減を目指すのが発表の主要なテーマとなるので、不満の共有は非常
     message: 「非常に重要」は、中身を言わずに強調だけしています
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 61
-    text: ""
-    message: 「手法」の節に数値もコードもリンクもありません（そういう節が 5/14）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 63
@@ -86,30 +76,15 @@ findings:
     text: 分かりやすいように話しましょう。スライドもグラフに「A=1」「A=10」と書くの
     message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 103
-    text: ""
-    message: 「発表練習について」の節に数値もコードもリンクもありません（そういう節が 5/14）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 109
     text: 分かりやすいものになります。少なくとも、重要事項がスライドに記載されていない、と
     message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。6 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 117
-    text: ""
-    message: 「審査員の心構え」の節に数値もコードもリンクもありません（そういう節が 5/14）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 125
     text: たとえば「面白いね」「すごいね」といったものだけです。審査員がネガティブな感情を
     message: 「たとえば」と書いています（この文書はふつう「例えば」と書く語です。10 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 129
-    text: ""
-    message: 「発表者の心構え」の節に数値もコードもリンクもありません（そういう節が 5/14）
     verdict: unjudged
   - rule: orthographic-variant
     line: 139

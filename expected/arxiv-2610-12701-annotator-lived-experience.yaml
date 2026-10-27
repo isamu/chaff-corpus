@@ -48,29 +48,12 @@ findings:
     text: Figure 2. The control arm is the same ap
     message: Figure 2 is first referred to only after the section it appears in
     verdict: unjudged
-  - rule: invisible-character
-    line: 109
-    text: ​D=0.32SD{=}0.32), nearly all running to
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: false-positive
-    note: a zero-width space from the MathML-to-text conversion of an inline formula, not in the paper's prose
-  - rule: invisible-character
-    line: 109
-    text: ​D=54.7SD{=}54.7).
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: false-positive
-    note: a zero-width space from the MathML-to-text conversion of an inline formula, not in the paper's prose
   - rule: numeral-sentence-start
     line: 113
     text: 104 annotators were recruited via Prolif
     message: The sentence opens with the numeral "104"
     verdict: correct
     note: the sentence opens with '104'
-  - rule: figure-reference-order
-    line: 173
-    text: Figure 5, left); claims of group members
-    message: Figure 5 is first referred to after Figure 8
-    verdict: unjudged
   - rule: figure-reference-order
     line: 173
     text: Figure 5, left); claims of group members
@@ -91,125 +74,28 @@ findings:
     text: The study was approved by the authors’ i
     message: This paragraph runs 10 sentences (limit 9)
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 215
-    text: "  In Proceedings of the 2026 ACM Confere"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 216
-    text: "  In Proceedings of the SIGCHI Conferenc"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 217
-    text: "  Social Research Update 25, pp. 1–6.  C"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 218
-    text: "  In Proceedings of the AAAI Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 219
-    text: "  In Proceedings of the 18th Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: cliche
     line: 221
-    text: "Talat The perspectivist paradigm shift:"
+    text: Fleisig, S. L. Blodgett, D. Klein, and Z
     message: '"paradigm shift" is a cliché'
-    verdict: false-positive
-    note: "'paradigm shift' inside a cited work's title"
-  - rule: sentence-spacing-consistency
-    line: 221
-    text: "  In Proceedings of the 2024 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 222
-    text: "  In Proceedings of the 2021 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 223
-    text: "  International Journal of Qualitative M"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 224
-    text: "  External Links: 2508.06849, Document"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
+    verdict: unjudged
   - rule: spelling-consistency
     line: 224
     text: "centered AI: a framework for integrating"
     message: '"centered" here, where the document usually spells it "centred" (4 of 17)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 225
-    text: "  Proceedings of the 2022 CHI Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 226
-    text: "  Proceedings of the 2021 CHI Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: doubled-punctuation
     line: 227
     text: ".. External Links: Document Cited by: §2"
     message: 'Punctuation is doubled: ".."'
     verdict: correct
     note: "'Interact..': the journal abbreviation's period and the entry's period both print"
-  - rule: sentence-spacing-consistency
-    line: 227
-    text: "  Proc. ACM Hum.-Comput. Interact..  Ext"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 228
-    text: "  Feminist Studies 14 (3), pp. 575–599."
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 229
-    text: "  In Proceedings of the 62nd Annual Meet"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 230
-    text: "  The International Journal of Qualitati"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: name-variant
     line: 231
     text: Sage Publications, Thousand Oaks, CA. Ci
     message: '"Sage Publications" is written "SAGE Publications" elsewhere in the document (case, width or punctuation)'
     verdict: correct
     note: the publisher is 'Sage Publications' here and 'SAGE Publications' in another entry
-  - rule: sentence-spacing-consistency
-    line: 232
-    text: "  Proceedings of the 2025 ACM Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: spelling-consistency
     line: 232
     text: labeled dataset and model for transphobi
@@ -220,143 +106,11 @@ findings:
     text: ".. External Links: Document Cited by: §1"
     message: 'Punctuation is doubled: ".."'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 233
-    text: "  Proc. ACM Hum.-Comput. Interact..  Ext"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 234
-    text: "  In Proceedings of the 2024 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: citation-reference-mismatch
-    line: 235
-    text: "- Mostafazadeh Davani et al. (2022) A. M"
-    message: This entry of the reference list is never cited in the text
-    verdict: false-positive
-    note: cited as 'Mostafazadeh Davani et al., 2022'; the two-word surname is not matched
-  - rule: sentence-spacing-consistency
-    line: 235
-    text: "  Transactions of the Association for Co"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 236
-    text: "  In Proceedings of the 2026 ACM Confere"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 237
-    text: "  Proceedings of the 63rd Annual Meeting"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 238
-    text: "  Journal of Behavioral and Experimental"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 239
-    text: "  Transactions of the Association for Co"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 240
-    text: "  Proceedings of the 2025 ACM Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 241
-    text: "  In Proceedings of the 2022 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: spelling-consistency
     line: 241
     text: modeling and evaluation. In Proceedings
     message: '"modeling" here, where the document usually spells it "modelling" (4 of 17)'
     verdict: unjudged
-  - rule: sentence-spacing-consistency
-    line: 242
-    text: "  In Proceedings of the Joint 15th Lingu"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: citation-reference-mismatch
-    line: 243
-    text: "- Qwen Team (2024) Qwen Team Qwen2.5 tec"
-    message: This entry of the reference list is never cited in the text
-    verdict: false-positive
-    note: cited as '(Qwen Team, 2024; Qwen Team, 2025)'; a corporate author is not matched
-  - rule: citation-reference-mismatch
-    line: 244
-    text: "- Qwen Team (2025) Qwen Team Qwen3 techn"
-    message: This entry of the reference list is never cited in the text
-    verdict: false-positive
-    note: cited as '(Qwen Team, 2024; Qwen Team, 2025)'; a corporate author is not matched
-  - rule: sentence-spacing-consistency
-    line: 245
-    text: "  In Proceedings of the 2022 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 246
-    text: "  Proceedings of the 2022 ACM Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 247
-    text: "  Proceedings of the 2021 CHI Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 248
-    text: "  In Proceedings of the 57th Annual Meet"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 249
-    text: "  In Proceedings of the 2022 Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 250
-    text: "  Proceedings of the 2025 CHI Conference"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 251
-    text: "  International Journal of Research & Me"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 252
-    text: "  In Proceedings of the 2026 CHI Confere"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: sentence-spacing-consistency
-    line: 253
-    text: "  Journal of Artificial Intelligence Res"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (35 of 223)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: figure-reference-order
     line: 259
     text: "Table 2: Stratum screeners. All conditio"
@@ -422,17 +176,6 @@ findings:
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: false-positive
     note: a quoted participant response; the quotation keeps the speaker's contraction
-  - rule: invisible-character
-    line: 493
-    text: ​(6)=25.45\chi^{2}(6){=}25.45, p=.0003p{
-    message: "1 zero-width character (U+200B): search and copy break the word here"
-    verdict: false-positive
-    note: a zero-width space from the MathML-to-text conversion of an inline formula
-  - rule: figure-reference-order
-    line: 501
-    text: Figure 6). Resonance gains were largest
-    message: Figure 6 is first referred to after Figure 8
-    verdict: unjudged
   - rule: figure-reference-order
     line: 505
     text: "Figure 7: Projected session time by item"

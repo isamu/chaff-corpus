@@ -25,12 +25,6 @@ findings:
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: "the quotation marks of this reading do not balance: the line before already closes the Chair's speech with a right double quote"
-  - rule: demonstrative-opener-run
-    line: 1485
-    text: It was my purpose when I got up before t
-    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: a character's spoken plea; the 'It was ...' sentences are the speaker's voice
   - rule: bracket-nesting
     line: 1654
     text: “It is another temptation, Edward--I’m a

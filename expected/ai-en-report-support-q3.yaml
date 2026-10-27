@@ -1,22 +1,28 @@
 id: ai-en-report-support-q3
 chaff: 0.36.0
 findings:
+  - rule: bold-emphasis
+    line: 1
+    text: "# Q3 Customer Support Report"
+    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
+    verdict: false-positive
+    note: the bolds are the labels of one list and the lead sentences of the numbered recommendations, not emphasis mid-sentence
   - rule: adverb-overuse
     line: 5
     text: significantly improved its responsivenes
     message: 29 -ly adverbs per 1000 words (limit 15)
     verdict: correct
     note: report-speak intensifiers (significantly improved, largely, closely tracks) a reader hears as generated
-  - rule: bold-label-list
-    line: 23
-    what: bold-label bullets (New triage process:, Expanded coverage:, Saved replies:; and the numbered Recommendations at 39)
-    verdict: missed
-    note: bold-label-list is a ja-only rule; the same shape in English is not counted
   - rule: ai-generated-composite
     line: 23
     what: invented causes for the faster response time (a triage process, an evening shift added in July, saved replies) and an invented customer insight at 29
     verdict: missed
     note: "candidate pattern: invented supporting detail not in the brief; needs judgement"
+  - rule: bold-label-list
+    line: 23
+    what: bold-label bullets (New triage process:, Expanded coverage:, Saved replies:; and the numbered Recommendations at 39)
+    verdict: missed
+    note: bold-label-list is a ja-only rule; the same shape in English is not counted
   - rule: rule-of-three
     line: 39
     what: both lists hold exactly three items (three factors, three recommendations)

@@ -43,36 +43,6 @@ findings:
     message: "\"didn't\" is written \"did not\" elsewhere in the document"
     verdict: correct
     note: didn't beside 'did not' elsewhere; a minority contraction
-  - rule: article-sound
-    line: 101
-    text: a N/I level is played is described—in ex
-    message: '"a N" takes "an" before that sound'
-    verdict: false-positive
-    note: N/I abbreviates the title Nuke It and is read as the words, so 'a' fits
-  - rule: article-sound
-    line: 101
-    text: a N/I MAP file.
-    message: '"a N" takes "an" before that sound'
-    verdict: false-positive
-    note: N/I abbreviates the title Nuke It and is read as the words, so 'a' fits
-  - rule: bracket-nesting
-    line: 106
-    text: See 1 William F. Patry, Copyright Law an
-    message: Brackets nested 3 deep (limit 2)
-    verdict: false-positive
-    note: an alteration bracket [A] inside a quotation inside a citation parenthetical, the standard legal citation form
-  - rule: undefined-acronym
-    line: 129
-    text: MGM/UA Entertainment Co., 772 F.2d 740 (
-    message: '"MGM" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: a party's name in a case citation
-  - rule: undefined-acronym
-    line: 129
-    text: UA Entertainment Co., 772 F.2d 740 (11th
-    message: '"UA" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: a party's name in a case citation
   - rule: max-paragraph-length
     line: 145
     text: Our examination of the factors yields st

@@ -37,6 +37,11 @@ findings:
     message: '"true fact" says the same thing twice'
     verdict: false-positive
     note: "\"true fact-check\" is the paper's term (a fact-check whose verdict is true), not a tautology"
+  - rule: agreement-slip
+    line: 23
+    what: '"these flagged post": a plural determiner before a singular noun'
+    verdict: missed
+    note: neither the pinned chaff nor lab main reports it; the adjective between determiner and noun may hide it
   - rule: unqualified-superlative
     line: 23
     text: With this data, we are able to estimate
@@ -85,12 +90,6 @@ findings:
     message: '"crowd-sourced" here, where the document usually writes "crowdsourced" (1 of 6)'
     verdict: correct
     note: '"crowd-sourced" once where the paper writes "crowdsourced" elsewhere'
-  - rule: figure-reference-order
-    line: 53
-    text: Table 1 lists each restriction implied b
-    message: Table 1 is first referred to after Table 11
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
   - rule: contraction-consistency
     line: 61
     text: To ensure this isn’t responsible for our
@@ -109,12 +108,6 @@ findings:
     message: The shares add up to 106.6%, not 100%
     verdict: false-positive
     note: '"from 51.4% to 53.2%" is a change of one share, not shares of a whole'
-  - rule: figure-reference-order
-    line: 65
-    text: Table 10). As a check on whether these v
-    message: Table 10 is first referred to after Table 11
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
   - rule: unqualified-superlative
     line: 69
     text: To see whether doubt, verification, and/
@@ -133,42 +126,12 @@ findings:
     message: This paragraph runs 10 sentences (limit 9)
     verdict: correct
     note: a ten-sentence paragraph
-  - rule: figure-reference-order
-    line: 99
-    text: Table 8.
-    message: Table 8 is first referred to after Table 14
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 107
-    text: Table 2). Figure 5 compares the annual c
-    message: Table 2 is first referred to after Table 14
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 109
-    text: Table 7). 1616 16 Across the full releas
-    message: Table 7 is first referred to after Table 14
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 109
-    text: Table 9).
-    message: Table 9 is first referred to after Table 14
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
   - rule: max-paragraph-length
     line: 109
     text: Grok judged 51.4% of the queried posts t
     message: This paragraph runs 11 sentences (limit 9)
     verdict: correct
     note: an eleven-sentence paragraph
-  - rule: figure-reference-order
-    line: 121
-    text: Table 3 divides the queried posts by top
-    message: Table 3 is first referred to after Table 14
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
   - rule: unqualified-superlative
     line: 131
     text: While comparison between Grok and Commun
@@ -193,18 +156,6 @@ findings:
     message: The date "2026-08-20" is written differently from 10 other dates in the document (such as "October 3, 2022")
     verdict: false-positive
     note: an ISO date in a reference note (commit or access date), not the prose's date style
-  - rule: number-style-consistency
-    line: 172
-    text: "2704b2d. Note: https://github.com/twitte"
-    message: '"2704" here, where the document usually writes large numbers like "47,899" (2 of 29)'
-    verdict: false-positive
-    note: '"2704b2d" is a git commit hash, not a number'
-  - rule: number-style-consistency
-    line: 178
-    text: 2704b2d of the public repository on Augu
-    message: '"2704" here, where the document usually writes large numbers like "47,899" (2 of 29)'
-    verdict: false-positive
-    note: '"2704b2d" is a git commit hash, not a number'
   - rule: max-paragraph-length
     line: 190
     text: You are coding X (Twitter) threads in wh
@@ -235,88 +186,16 @@ findings:
     message: '"characterise" here, where the document usually spells it "characterize" (1 of 13)'
     verdict: correct
     note: the authors' prompt writes "characterise" where the paper writes "characterize"
-  - rule: figure-reference-order
-    line: 208
-    text: Table 4 reports agreement between the tw
-    message: Table 4 is first referred to after Table 16
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 214
-    text: Table 5 cross-tabulates Grok’s verdict w
-    message: Table 5 is first referred to after Table 16
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 226
-    text: Table 6). In 57.3% of cases the note ass
-    message: Table 6 is first referred to after Table 16
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: figure-reference-order
-    line: 254
-    text: Table 13 shows that the share of posts G
-    message: Table 13 is first referred to after Table 16
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
   - rule: max-paragraph-length
     line: 254
     text: Table 12 repeats the main coverage measu
     message: This paragraph runs 11 sentences (limit 9)
     verdict: correct
     note: an eleven-sentence paragraph
-  - rule: figure-reference-order
-    line: 266
-    text: Table 15, and a post that matches no lis
-    message: Table 15 is first referred to after Table 16
-    verdict: false-positive
-    note: appendix tables are numbered by placement and cited from the main text first; the out-of-order first mentions follow from that, not from a numbering slip
-  - rule: unknown-word
-    line: 274
-    text: palestin*, gaza, iran*, china, taiwan, h
-    message: '"palestin" is not in the dictionary; did you mean "palestine"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 274
-    text: russi*, israel*, palestin*, gaza, iran*,
-    message: '"russi" is not in the dictionary; did you mean "russia"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 274
-    text: ukrain*, russi*, israel*, palestin*, gaz
-    message: '"ukrain" is not in the dictionary; did you mean "ukraine"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
   - rule: unknown-word
     line: 278
     text: biden, government, governor, white house
     message: '"biden" is not in the dictionary; did you mean "bidet"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 282
-    text: vaccin*, covid, virus, disease, drug, au
-    message: '"vaccin" is not in the dictionary; did you mean "vaccine"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 286
-    text: terroris*, illegal
-    message: '"terroris" is not in the dictionary; did you mean "terrors"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 286
-    text: traffick*, assault, rape, shooting, terr
-    message: '"traffick" is not in the dictionary; did you mean "traffic"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 290
-    text: econom*, inflation, market, stock*, bitc
-    message: '"econom" is not in the dictionary; did you mean "economy"?'
     verdict: false-positive
     note: a wildcard search stem or lowercase name in the topic classifier's keyword list
   - rule: unknown-word
@@ -325,8 +204,3 @@ findings:
     message: '"iphone" is not in the dictionary; did you mean "phone"?'
     verdict: false-positive
     note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: agreement-slip
-    line: 23
-    what: '"these flagged post": a plural determiner before a singular noun'
-    verdict: missed
-    note: neither the pinned chaff nor lab main reports it; the adjective between determiner and noun may hide it

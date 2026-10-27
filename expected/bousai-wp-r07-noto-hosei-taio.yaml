@@ -55,9 +55,3 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「港湾の緊急物資等の輸送拠点機能の確保」と「の」が三つ続く
-  - rule: max-kanji-continuous
-    line: 50
-    text: 株式会社地域経済活性化支援機構（REVIC）の目的・支援基準に被災地域の経済再建
-    message: 「株式会社地域経済活性化支援機構法」は漢字が 16 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法律の題名（株式会社地域経済活性化支援機構法）

@@ -8,9 +8,10 @@ findings:
     verdict: correct
   - rule: max-paragraph-length
     line: 19
-    what: the paragraph on the plain language myth runs 7 sentences
-    verdict: missed
-    note: found by lab main; it can split before "The first rule of plain language"
+    text: One of the most popular plain language m
+    message: This paragraph runs 7 sentences (limit 5)
+    verdict: correct
+    note: found by lab main; it can split before "The first rule of plain language"; found by chaffjs 0.38.0
   - rule: hyphen-as-dash
     line: 27
     text: " - Acronyms often confuse readers. Avoid"
@@ -117,18 +118,6 @@ findings:
     message: '"toolbar" is not in the dictionary; did you mean "tollbar"?'
     verdict: false-positive
     note: '"toolbar" is an ordinary word'
-  - rule: undefined-acronym
-    line: 79
-    text: AA criteria. All government emails, docu
-    message: '"AA" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: A, AA and AAA are WCAG conformance level names, not acronyms
-  - rule: undefined-acronym
-    line: 79
-    text: AAA wherever possible.
-    message: '"AAA" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: A, AA and AAA are WCAG conformance level names, not acronyms
   - rule: list-item-form-mix
     line: 97
     text: All images must have alt text or be mark

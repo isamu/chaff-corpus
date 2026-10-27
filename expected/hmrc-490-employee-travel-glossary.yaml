@@ -1,12 +1,6 @@
 id: hmrc-490-employee-travel-glossary
 chaff: 0.35.0
 findings:
-  - rule: title-length
-    line: 3
-    text: "# Glossary of terms for tax and National"
-    message: 'The title "Glossary of terms for tax and National Insurance contributions for employee travel (490: Employee travel)" runs 15 words (limit 14)'
-    verdict: false-positive
-    note: 'the parenthetical manual reference "(490: Employee travel)" is counted as title words'
   - rule: undefined-acronym
     line: 103
     text: PAYE payments as part of a Real Time Inf
@@ -17,15 +11,3 @@ findings:
     text: An employee will always be resident in t
     message: "\"they're\" is written \"they are\" elsewhere in the document"
     verdict: correct
-  - rule: date-without-year
-    line: 205
-    text: 5 April in the next.
-    message: "\"5 April\" has no year, and the document's dates run from 2014 to 2025, so the year is unclear"
-    verdict: false-positive
-    note: a recurring annual date (the tax-year boundary, "6 April in one year to 5 April in the next") needs no year
-  - rule: date-without-year
-    line: 205
-    text: 6 April in one year to 5 April in the ne
-    message: "\"6 April\" has no year, and the document's dates run from 2014 to 2025, so the year is unclear"
-    verdict: false-positive
-    note: a recurring annual date (the tax-year boundary) needs no year

@@ -1,16 +1,6 @@
 id: gutenberg-importance-of-being-earnest
 chaff: 0.33.0
 findings:
-  - rule: demonstrative-opener-run
-    line: 252
-    text: It isn’t. It is a great truth. It accoun
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 749
-    text: It suits you perfectly. It is a divine n
-    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
   - rule: space-before-punctuation
     line: 758
     text: " ."

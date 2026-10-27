@@ -1,30 +1,10 @@
 id: gutenberg-great-expectations
 chaff: 0.33.0
 findings:
-  - rule: demonstrative-opener-run
-    line: 227
-    text: That young man hears the words I speak.
-    message: 3 sentences in a row open with a word that points back, such as "That" (limit 2)
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 4511
-    text: It was not because I was faithful, but
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 7474
-    text: This I would not hear of, so he took the
-    message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
-    verdict: unjudged
   - rule: name-variant
     line: 8349
     text: Bailey.” In the
     message: '"Bailey" is one letter away from "Barley", which the document uses more than once'
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 10655
-    text: It was this, I conceive, which led
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
     verdict: unjudged
   - rule: name-variant
     line: 11025

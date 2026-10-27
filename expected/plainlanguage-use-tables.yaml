@@ -6,11 +6,6 @@ findings:
     text: You can shorten and clarify complex mate
     message: 4 paragraphs before the first heading (limit 2)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 51
-    text: § 163.25(e) of this part, the amount of
-    message: '"§ 163.25(e)" (address 163.25.e) is not in this document'
-    verdict: unjudged
   - rule: empty-table-cell
     line: 70
     text: "| | the percentage in effect on November"

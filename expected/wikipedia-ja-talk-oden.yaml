@@ -9,10 +9,6 @@ findings:
     line: 7
     sha256: 623d0dcf9bfb4369c5b99254d8b835b6898b4808b84c1f31c9f469ba3602345f
     verdict: unjudged
-  - rule: adversative-ga-repeat
-    line: 12
-    sha256: a9015a21695366a843e17d589398274ef60429473cf8bcda5cc4f1044f9e6056
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 12
     sha256: 2a61e863c236857c40ab82140137766084a6f21c51526486823d49dc29811af7
@@ -89,10 +85,6 @@ findings:
     line: 40
     sha256: dd0d55f94241fd92883a2b57564faad6c1f2badc3f37b188d45b9a24b5cc8ca1
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 40
-    sha256: d50e496aa8d89e421e57dbdbb164508b4d8f720cb581b9ea49fc344c2115d3d1
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 44
     sha256: 3354593f21a2ad57248f01af0f9b6b32a1b0fb721696f1f2f03e82a9935d0038
@@ -104,10 +96,6 @@ findings:
   - rule: orthographic-variant
     line: 48
     sha256: 42a453f8e1edf82df3249885890d0d0635a84be82237d7a1f14da62e489a9353
-    verdict: unjudged
-  - rule: adversative-ga-repeat
-    line: 51
-    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
     verdict: unjudged
   - rule: bracket-nesting
     line: 51
@@ -136,10 +124,6 @@ findings:
   - rule: orthographic-variant
     line: 51
     sha256: cd261f7a8b63a38bab5a0f8a83018e76d51823523f599771e3be7f752eb1d3ce
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 51
-    sha256: fb13c22de4990b75dbea8e7ae9e7e0d375f139c9c9c7b2a4cd6c1b4cf7bc6c33
     verdict: unjudged
   - rule: orthographic-variant
     line: 68

@@ -17,23 +17,11 @@ findings:
     text: 「五分位階級」とは、全ての世帯を毎月の実収入（現金収入）、世帯主の定期収入、世帯
     message: この文は 141 文字あります（140 文字まで）
     verdict: correct
-  - rule: max-ten
-    line: 135
-    text: 「五分位階級」とは、全ての世帯を毎月の実収入（現金収入）、世帯主の定期収入、世帯
-    message: 一文に読点が 7 個あります（6 個まで）
-    verdict: false-positive
-    note: the commas of an enumeration of class names (第I、第II、…) are counted as clause breaks
   - rule: no-doubled-joshi
     line: 137
     text: の十のグループのことである。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: numbering-gap
-    line: 139
-    text: "###  10　住居の所有関係"
-    message: 「8」の次が「10」です（9 番目のはず）
-    verdict: false-positive
-    note: section 9 is there (line 131); the heading "8 購入頻度（100世帯当たり）、購入世帯数（10,000分比）" seems to be read as a different number
   - rule: unused-definition
     line: 145
     text: 「民営借家」とは、居住している世帯がその住宅を借りている場合で、次の「公営借家」
@@ -73,12 +61,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
   - rule: max-sentence-length
-    line: 191
-    text: ※　季節調整法の変更について（PDF：277KB）（家計調査の結果を見る際のポイ
-    message: この文は 184 文字あります（140 文字まで）
-    verdict: false-positive
-    note: link lines without 。 are joined to the following lines and counted as one long sentence
-  - rule: max-sentence-length
     line: 198
     text: 家計消費指数は、家計消費の動向をより安定的に把握するため、家計調査結果のうち購入
     message: この文は 142 文字あります（140 文字まで）
@@ -93,9 +75,3 @@ findings:
     text: "※　家計消費指数は、2018年1月分から公表している消費動向指数（CTI: Co"
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: correct
-  - rule: orthographic-variant
-    line: 204
-    text: 持ちでない方は、バナーのリンク先から無料ダウンロードしてください。
-    message: 「持つ」と書いています（この文書はふつう「もつ」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: site chrome (the Adobe Reader notice); the honorific お持ち and 持ち越した/手持ち are not the verb もつ written differently

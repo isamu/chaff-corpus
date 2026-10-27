@@ -1,25 +1,15 @@
 id: kokkai-221-shugiin-zaimu-kinyu-5
 chaff: 0.36.0
 findings:
-  - rule: one-sentence-paragraph-run
-    line: 65
-    sha256: b754eae377498caa922f2f04e1db6b75a1b39561c50957e9413bd3118a9796ea
-    verdict: false-positive
-    note: "the printed minutes set each sentence of a speech as its own paragraph; a verbatim record keeps that layout"
   - rule: orthographic-variant
     line: 75
     sha256: 713840b76020120c18529e25cfa05011d20a20e39207dcde21ce9d7f461990d0
     verdict: false-positive
-    note: "the kanji form here means goods; the kana forms are the abstract noun, a different word"
+    note: the kanji form here means goods; the kana forms are the abstract noun, a different word
   - rule: topic-predicate-distance
     line: 75
     sha256: 627e05dd7869681159e8d11f9c05ab6f96bc521db8d37674a6e876728df0f281
     verdict: correct
-  - rule: one-sentence-paragraph-run
-    line: 137
-    sha256: d0f5d34d241bd0a7b6111a62ca8d55577307a772e50e92a41cef947c71d3ab61
-    verdict: false-positive
-    note: "a resolution's numbered items, each one paragraph, under its lead sentence"
   - rule: clause-chain
     line: 139
     sha256: e4fc1d2d9469b450a4d957bf0a070618dbabcd713728693478247acb85bdd8be
@@ -28,16 +18,6 @@ findings:
     line: 139
     sha256: e4fc1d2d9469b450a4d957bf0a070618dbabcd713728693478247acb85bdd8be
     verdict: correct
-  - rule: one-sentence-paragraph-run
-    line: 187
-    sha256: d0f5d34d241bd0a7b6111a62ca8d55577307a772e50e92a41cef947c71d3ab61
-    verdict: false-positive
-    note: "a resolution's numbered items, each one paragraph, under its lead sentence"
-  - rule: one-sentence-paragraph-run
-    line: 235
-    sha256: d0f5d34d241bd0a7b6111a62ca8d55577307a772e50e92a41cef947c71d3ab61
-    verdict: false-positive
-    note: "a resolution's numbered items, each one paragraph, under its lead sentence"
   - rule: max-ten
     line: 241
     sha256: cfacc15e62c809760e47c8d40eebb18fe634ac193e090f5e237c0772e0c9110e

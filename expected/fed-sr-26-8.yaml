@@ -32,11 +32,6 @@ findings:
     text: Section 903 of the 21st Century ROAD to
     message: This sentence runs 39 words (limit 18)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 33
-    text: section 7(c)(1)(C) of the International
-    message: '"section 7(c)(1)" (address 7.c.1) is not in this document'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 33
     text: On September 14, 2026, the Board publish
@@ -167,11 +162,6 @@ findings:
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 84
-    text: See 91 *Fed. Reg.* 58009 (Sept. 14, 2026
-    message: '"See 91  Fed." opens with a verb; the other items in this list open with a noun phrase (1 of 11)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 86
     text: The term "well capitalized" has the mean
@@ -181,14 +171,4 @@ findings:
     line: 87
     text: The Board is permitted to conduct on-sit
     message: This sentence runs 44 words (limit 18)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 89
-    text: See Attachment to SR Letter 00-14 (SUP),
-    message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 91
-    text: See Attachment to SR Letter 00-14, "Enha
-    message: This sentence runs 23 words (limit 18)
     verdict: unjudged

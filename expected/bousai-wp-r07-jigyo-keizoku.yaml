@@ -43,9 +43,3 @@ findings:
     message: この文は 200 文字あります（140 文字まで）
     verdict: correct
     note: 200 字の一文
-  - rule: topic-predicate-distance
-    line: 29
-    text: 内閣府では、BCPの策定率を始めとした民間企業の取組に関する実態調査を隔年度で継
-    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: correct
-    note: 「内閣府では」から述語まで 104 字、途中で調査結果の主語が替わる

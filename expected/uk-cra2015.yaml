@@ -1,11 +1,6 @@
 id: uk-cra2015
 chaff: 0.33.0
 findings:
-  - rule: no-em-dash
-    line: 8
-    text: —
-    message: 9 dashes per 1000 words (limit 8)
-    verdict: unjudged
   - rule: reference-title-mismatch
     line: 15
     text: goods and installation);

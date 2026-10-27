@@ -1,30 +1,6 @@
 id: kantei-2025-ticad9-keynote
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 20日 総理の演説・記者会見など
-    message: 半角の「20」と書いています（この文書はふつう全角の「２０」。35 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 7年8月20日 総理の演説・記者会見など
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。21 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 8月20日 総理の演説・記者会見など
-    message: 半角の「8」と書いています（この文書はふつう全角の「８」。21 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: ページの更新日の行（サイトの定型部分）と演説本文の書き方の違い
-  - rule: max-kanji-continuous
-    line: 5
-    text: 日本国内閣総理大臣、石破茂であります。アフリカ連合（ＡＵ）議長のロウレンソ・アン
-    message: 「日本国内閣総理大臣」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「日本国内閣総理大臣」は職名
   - rule: max-sentence-length
     line: 5
     text: アフリカ連合（ＡＵ）議長のロウレンソ・アンゴラ共和国大統領閣下、アフリカ各国を代
@@ -55,11 +31,6 @@ findings:
     text: 私は非常に自分の発言を恥ずかしく思ったことであります。我々は相手のことを知り、そ
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 8
-    text: 日本は食料自給率が低いのであると、セネガルも自給率が低いのであると、共にＷＴＯで
-    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 9
     text: つまり、課題解決策を共に創る、共創と言います、課題解決策を共に創るに当たって、今
@@ -80,12 +51,6 @@ findings:
     text: ＡＩ（人工知能）であり、ＤＸ（デジタル・トランスフォーメーション）であり、ＧＸ（
     message: この文は 119 文字あります（100 文字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 12
-    text: たつと日本人は半分になると言われています。人口がどんどん減っていく、この横浜は首
-    message: 「たつ」と書いています（この文書はふつう「立つ」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「（時間が）たつ」（経つ）と「立つ」は別の語
   - rule: demonstrative-opener-run
     line: 13
     text: そのドローンを実験したのは、どこなのかと。この日本の交通が不便な地域で薬をドロー
@@ -121,17 +86,6 @@ findings:
     text: そして、２８万人の雇用を生み、１万８，０００の会社の生産性を高めるために多くの役
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 15
-    text: アフリカの製造業の生産性を向上させるために、日本はチュニジアにおきまして、これは
-    message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
-    verdict: unjudged
-  - rule: unqualified-superlative
-    line: 16
-    text: 金融面におきましては、日本とアフリカ開発銀行の協調枠組みである「アフリカの民間セ
-    message: 「最大」に比べる相手がありません（そういう言い方が 3 箇所）
-    verdict: false-positive
-    note: 「最大５億ドル」は金額の上限で、比べる表現ではない
   - rule: max-paragraph-length
     line: 17
     text: 若い方々と女性について申し上げます。先ほど２５年前にセネガルを訪問したお話をいた
@@ -152,18 +106,6 @@ findings:
     text: の人口の年齢の中央値は１９歳です。アフリカには若い人たちの活力があふれています。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: unqualified-superlative
-    line: 19
-    text: 東北大学で研さんをし、ＴＩＭＥという雑誌がありますが、ＴＩＭＥ誌のＡＩ領域で最も
-    message: 「最も」に比べる相手がありません（そういう言い方が 3 箇所）
-    verdict: false-positive
-    note: 「最も影響力のある１００人」は雑誌の選出名で、比べる範囲が示されている
-  - rule: unqualified-superlative
-    line: 20
-    text: Ｇａｖｉワクチンアライアンスへの今後５年間で最大５．５億ドルの貢献をいたしますが
-    message: 「最大」に比べる相手がありません（そういう言い方が 3 箇所）
-    verdict: false-positive
-    note: 「最大５．５億ドル」は金額の上限で、比べる表現ではない
   - rule: no-doubled-joshi
     line: 22
     text: の一層の成長のためには、産業力強化に加え、国境を越えた地域統合、連結性の強化、こ
@@ -199,11 +141,6 @@ findings:
     line: 28
     text: 野口英世という人がいました。冒頭で御紹介した中南米やガーナで黄熱病の研究に取り組
     message: この段落は 12 文あります（5 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 28
-    text: 「私は皆さんのところに何かを教えに来たのではありません。皆様方から何かを学びに来
-    message: この文は 109 文字あります（100 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 28

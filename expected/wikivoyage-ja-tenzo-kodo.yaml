@@ -5,29 +5,24 @@ findings:
     line: 1
     sha256: aa36aeb1991bdca88a0d2fd9b8ebb1aac2f9590f22c0a8c8238aa07506d960fb
     verdict: false-positive
-    note: "比べる範囲が同じ文にある（雲南省内でも）"
+    note: 比べる範囲が同じ文にある（雲南省内でも）
   - rule: no-doubled-joshi
     line: 3
     sha256: ef347560b12cf8164a57914eeb75d079e2af0d998954da0fcbf26e244d275e7e
     verdict: correct
-    note: "「チベットへの陸の旅の一部」で「の」が三つ続く"
+    note: 「チベットへの陸の旅の一部」で「の」が三つ続く
   - rule: orthographic-variant
     line: 38
     sha256: 50fe31564aaf1aeeabaa3ee97af51176a5f12f9f8287b1c72dbbacc922c0bd64
     verdict: false-positive
-    note: "「ラオカイ」（地名 Lao Cai の音写）と「虎跳峡」の「峡」は別の語で、表記ゆれではない"
-  - rule: unqualified-superlative
-    line: 38
-    sha256: 49d10d44b11904c8093de22da8b2d818daf975a52f8f48c0a3b92c97998d7543
-    verdict: false-positive
-    note: "比べる範囲が同じ句にある（東南アジアの隣国のうち最も近い）"
+    note: 「ラオカイ」（地名 Lao Cai の音写）と「虎跳峡」の「峡」は別の語で、表記ゆれではない
   - rule: list-item-form-mix
     line: 42
     sha256: b19c61f9203d30de987ef93dc0a65ad32bfb34bf66ef8eb964aec9a0b5bb27e3
     verdict: correct
-    note: "この項目だけ体言止め（…と西進。）で、ほかの項目は「…できます」などの文で終わる"
+    note: この項目だけ体言止め（…と西進。）で、ほかの項目は「…できます」などの文で終わる
   - rule: unqualified-superlative
     line: 47
     sha256: 61f6f4eb9e490c73edb17a07078654b765805dd0c88689a398f2a46066e84b21
     verdict: false-positive
-    note: "「圧倒的な棚田」は景観の形容で、比べる相手を要する最上級の主張ではない"
+    note: 「圧倒的な棚田」は景観の形容で、比べる相手を要する最上級の主張ではない

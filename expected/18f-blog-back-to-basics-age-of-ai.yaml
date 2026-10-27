@@ -6,40 +6,40 @@ findings:
     text: ” feature in emails or text messages
     message: The quote mark ” here, where the document usually writes " (2 of 10)
     verdict: correct
-    note: "curly quotes where the post otherwise writes straight double quotes"
+    note: curly quotes where the post otherwise writes straight double quotes
   - rule: quote-style-consistency
     line: 28
     text: “auto-complete” feature in emails or tex
     message: The quote mark “ here, where the document usually writes " (2 of 10)
     verdict: correct
-    note: "curly quotes where the post otherwise writes straight double quotes"
+    note: curly quotes where the post otherwise writes straight double quotes
   - rule: hyphen-as-dash
     line: 55
     text: " - such as those relating to   race, gen"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: sentence-spacing-consistency
     line: 58
     text: "  One of the particular risks of AI is t"
     message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 37)
     verdict: correct
-    note: "two spaces after this sentence, where the post leaves one"
+    note: two spaces after this sentence, where the post leaves one
   - rule: contraction-consistency
     line: 62
     text: Because of the potential scale and impac
     message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: correct
-    note: "the minority form; the post mostly writes it's"
+    note: the minority form; the post mostly writes it's
   - rule: quote-style-consistency
     line: 70
     text: "'s choosing sweet, fatty foods for readi"
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 17)
     verdict: correct
-    note: "a straight apostrophe where the post otherwise writes curly ones"
+    note: a straight apostrophe where the post otherwise writes curly ones
   - rule: contraction-consistency
     line: 92
     text: When you select a link to an outside web
     message: "\"you are\" is written \"you're\" elsewhere in the document"
     verdict: false-positive
-    note: "the footnote is GSA's standard external-link disclaimer, boilerplate rather than the authors' prose"
+    note: the footnote is GSA's standard external-link disclaimer, boilerplate rather than the authors' prose

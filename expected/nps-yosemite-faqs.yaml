@@ -8,8 +8,10 @@ findings:
     verdict: correct
   - rule: agreement-slip
     line: 44
-    what: "two determiners in a row: 'the some roads' (an edit left over; 'that some roads' was meant)"
-    verdict: missed
+    text: the some roads are closed part of the ye
+    message: '"the some" puts two determiners in a row'
+    verdict: correct
+    note: "two determiners in a row: 'the some roads' (an edit left over; 'that some roads' was meant); found by chaffjs 0.38.0"
   - rule: doubled-word
     line: 46
     text: to the high country and Tuolumne Meadows

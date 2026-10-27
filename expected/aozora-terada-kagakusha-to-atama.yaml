@@ -1,13 +1,3 @@
 id: aozora-terada-kagakusha-to-atama
 chaff: 0.36.0
-findings:
-  - rule: topic-predicate-distance
-    line: 21
-    text: 頭のいい学者はまた、何か思いついた仕事があった場合にでも、その仕事が結果の価値と
-    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 22
-    text: 人間の頭の力の限界を自覚して大自然の前に愚かな赤裸の自分を投げ出し、そうしてただ
-    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+findings: []

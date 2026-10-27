@@ -1,48 +1,6 @@
 id: chrg-119hhrg64107-exim-bank-oversight-2026
 chaff: 0.36.0
 findings:
-  - rule: all-caps-shouting
-    line: 271
-    text: OPENING STATEMENT OF HON. WARREN DAVIDSO
-    message: '"OPENING STATEMENT OF HON" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 271
-    text: WARREN DAVIDSON, CHAIRMAN OF THE
-    message: '"WARREN DAVIDSON, CHAIRMAN OF THE" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 275
-    text: INTERNATIONAL FINANCIAL INSTITUTIONS, A
-    message: '"INTERNATIONAL FINANCIAL INSTITUTIONS, A U" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 393
-    text: JOYCE BEATTY, RANKING MEMBER OF THE
-    message: '"JOYCE BEATTY, RANKING MEMBER OF THE" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 393
-    text: OPENING STATEMENT OF HON. JOYCE BEATTY,
-    message: '"OPENING STATEMENT OF HON" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 397
-    text: INTERNATIONAL FINANCIAL INSTITUTIONS, A
-    message: '"INTERNATIONAL FINANCIAL INSTITUTIONS, A U" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
-  - rule: all-caps-shouting
-    line: 529
-    text: STATEMENT OF JOHN JOVANOVIC, PRESIDENT A
-    message: '"STATEMENT OF JOHN JOVANOVIC, PRESIDENT AND CHAIRMAN, EXPORT" is written in capitals'
-    verdict: false-positive
-    note: a GPO hearing heading or member roster set in capitals by print convention, not shouting
   - rule: unknown-word
     line: 1043
     text: ahold of me, so you all

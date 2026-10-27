@@ -25,12 +25,6 @@ findings:
     message: 「本契約」は 3 行目で定義した語ですが、ここは定義の文の語を足して「以下本契約」と書いています
     verdict: false-positive
     note: 「以下本契約において同じ。」は定義語「本契約」をそのまま使う定型句
-  - rule: use-before-definition
-    line: 113
-    text: 特許権等の帰属
-    message: 「特許権等」を、115 行目の定義より前で使っています
-    verdict: false-positive
-    note: 見出しで使い、すぐ次の条文で定義する
   - rule: reference-title-mismatch
     line: 125
     text: 再委託）、同第9条（本契約の変更）は、甲による追加学習サービスによる追加学習済み
@@ -49,6 +43,11 @@ findings:
     message: 第9条に「本契約の変更」と添えていますが、第9条の見出しは「監査」です
     verdict: false-positive
     note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第9条の見出しと比べるのは筋違い
+  - rule: undefined-term
+    line: 125
+    what: 「本共同開発契約」はどこにも定義がない。前文で定義した名前は「本共同研究開発契約」
+    verdict: missed
+    note: neither chaffjs 0.36.0 nor lab main reports it
   - rule: requirement-smell
     line: 146
     text: 等が法令に違反するものではないこと。
@@ -61,12 +60,6 @@ findings:
     message: 「すべて」と書いています（この文書はふつう「全て」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: ここだけ「すべて」、ほかは「全て」
-  - rule: undefined-term
-    line: 153
-    text: 本サービス提供のために利用するサーバ（以下「本サービス用サーバ」という。）に保存
-    message: 「本サービス提供」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 定義語「本サービス」に「提供」が続いただけ
   - rule: orthographic-variant
     line: 159
     text: 但し、甲が回復作業を行ったにもかかわらず、当該データの全部または一部の回復ができ
@@ -79,12 +72,6 @@ findings:
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。22 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 項番号の「3」の後だけ半角の空白、ほかの項は全角の空白
-  - rule: requirement-smell
-    line: 170
-    text: 等の管理に必要な措置を講ずるものとする。
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: obligation-without-deadline
     line: 173
     text: 支払う。
@@ -139,12 +126,6 @@ findings:
     message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「締結前後に関わらず」は「にかかわらず」
-  - rule: announced-count-mismatch
-    line: 252
-    text: 一つに該当する情報については、秘密情報に該当しない。
-    message: 「一つ」と予告していますが、すぐ下の箇条書きは5項目です
-    verdict: false-positive
-    note: 「いずれか一つに該当する」は該当の条件で、項目の数の予告ではない
   - rule: requirement-smell
     line: 266
     text: 等を、本契約の遂行のために知る必要のある自己の役員および従業員（以下「役員等」と
@@ -157,12 +138,6 @@ findings:
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: false-positive
     note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
-  - rule: requirement-smell
-    line: 285
-    text: 等で通知しない限り、1年間の更新期間で、同条件で自動的に更新されるものとする。
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「書面等」は第1条で定義した語で、あいまいな「等」ではない
   - rule: missing-final-period
     line: 305
     text: い
@@ -205,8 +180,3 @@ findings:
     message: 「うえ」と書いています（この文書はふつう「上」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 別紙の「設置したうえで」、本文は「上で」
-  - rule: undefined-term
-    line: 125
-    what: 「本共同開発契約」はどこにも定義がない。前文で定義した名前は「本共同研究開発契約」
-    verdict: missed
-    note: neither chaffjs 0.36.0 nor lab main reports it

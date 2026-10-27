@@ -66,9 +66,3 @@ findings:
     text: さらには物価上昇を反映した賃金の引き上げといった、我が国経済がデフレに陥った19
     message: 「さらに」と書いています（この文書はふつう「更に」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 70
-    text: こうした緩和の成果もあって、我が国の景気は緩やかな回復を続けており、コスト上昇の
-    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's own predicate closes the first clause (〜ではありませんが／〜であって／〜ており); the distance is measured to the end of the sentence instead

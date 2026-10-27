@@ -1,6 +1,11 @@
 id: vite-plugin-legacy-changelog
 chaff: 0.33.0
 findings:
+  - rule: bold-label-list
+    line: 4
+    text: "* **build:** make client chunkImportMap"
+    message: '"build" and other bold labels open 298 list items (5 needed)'
+    verdict: unjudged
   - rule: ngram-repetition
     line: 5
     text: deps:** update all non-major dependencie

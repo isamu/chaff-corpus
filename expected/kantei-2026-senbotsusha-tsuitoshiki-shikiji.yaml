@@ -1,12 +1,6 @@
 id: kantei-2026-senbotsusha-tsuitoshiki-shikiji
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 3
-    text: 15日
-    message: 半角の「15」と書いています（この文書はふつう全角の「１５」。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the page's 更新日／date line is site chrome set in half-width digits; the address itself is in full-width digits
   - rule: no-mixed-desumasu
     line: 10
     text: 戦争の惨禍を、二度と繰り返させない。戦後８１年が経（た）ちますが、歳月がいかに流

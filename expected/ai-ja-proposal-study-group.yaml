@@ -2,6 +2,12 @@ id: ai-ja-proposal-study-group
 chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
+    line: 3
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
     line: 11
     what: 「〇〇さんが」の伏せ字（3行目の「開発部　〇〇」も）
     verdict: missed

@@ -21,20 +21,10 @@ findings:
     text: そこで，被上告人はG弁護士に対し，本件建物の売却についての疑問等を指摘し，造作買
     message: 「は」で出した主題から述語まで 208 字あります（200 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 39
-    text: カ　被上告人は，Dから，同6年12月28日午前，あて先不明のため本件建物に返送さ
-    message: 「は」で出した主題から述語まで 213 字あります（200 字まで）
-    verdict: unjudged
   - rule: clause-chain
     line: 69
     text: 被上告人は，Eにも，Dにも，その主張に係る前記2 (2) コ記載の意図を説明する
     message: 一文に節が 9 つつながっています（8 つまで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 69
-    text: 被上告人は，Eにも，Dにも，その主張に係る前記2 (2) コ記載の意図を説明する
-    message: 「は」で出した主題から述語まで 252 字あります（200 字まで）
     verdict: unjudged
   - rule: doubled-word
     line: 82

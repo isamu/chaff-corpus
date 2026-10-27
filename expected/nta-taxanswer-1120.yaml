@@ -81,11 +81,6 @@ findings:
     text: ロ　医療保険者等の医療費の額を通知する書類に記載すべき事項を記録した電子証明書等
     message: 「電磁的記録印刷書面」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 79
-    text: の10の2の2、所基通73-1～10、平成29年改正法附則7、58、令和2年改正
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 83
     text: ◆動画を見る（「YouTube「国税庁動画チャンネル」」へ）

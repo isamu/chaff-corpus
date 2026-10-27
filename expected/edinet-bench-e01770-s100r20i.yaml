@@ -361,6 +361,36 @@ findings:
     text: その主なものは経常的な更新、現在の経済環境に対応する省力化・合理化投資および本社
     message: 「本社工場生産拠点再構築」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "[外書]は、臨時従業員数であります。"
+    message: 括弧を「[」と書いています（この文書はふつう「［」。18 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "]は、臨時従業員数であります。"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。18 箇所のうち 2 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "]パワーエレクトロニクス事業製造業務1,69852－5333542,638210"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。10 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "]京三精機株式会社本社(横浜市鶴見区)信号システム事業パワーエレクトロニクス事業"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。10 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "]全社(共通)管理業務1,03518143(31,996)761371,4111"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。10 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 37
+    text: "]座間工場(神奈川県座間市)信号システム事業製造業務58026405( 7,93"
+    message: 括弧を「]」と書いています（この文書はふつう「］」。10 箇所のうち 4 箇所が違う）
+    verdict: unjudged
   - rule: max-sentence-length
     line: 37
     text: （２）国内子会社2023年３月31日現在会社名事業所名(所在地)セグメントの名称

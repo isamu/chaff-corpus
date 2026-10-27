@@ -12,6 +12,10 @@ findings:
     message: '"(" is never closed'
     verdict: correct
     note: the citation's closing parenthesis is missing in the text
+  - rule: name-variant
+    line: 23
+    what: '"National Industrial Recover Act" is one letter away from "National Industrial Recovery Act", the name the opinion uses everywhere else'
+    verdict: missed
   - rule: unbalanced-bracket
     line: 23
     text: (15 USCA § 703(a)(1, 2); and that the co
@@ -28,12 +32,6 @@ findings:
     text: "  The Constitution established a nationa"
     message: 2 spaces after this sentence, where the document usually leaves 1 (5 of 220)
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 31
-    text: co-operative effort by those engaged in
-    message: '"co-operative" here, where the document usually writes "cooperative" (1 of 3)'
-    verdict: false-positive
-    note: "'cooperative' is the statute's spelling inside quotations; the opinion's own prose writes co-operative and co-operation consistently"
   - rule: max-paragraph-length
     line: 33
     text: Second. The Question of the Delegation o
@@ -174,7 +172,3 @@ findings:
     text: "## Notes"
     message: Nothing under the heading "Notes"
     verdict: unjudged
-  - rule: name-variant
-    line: 23
-    what: '"National Industrial Recover Act" is one letter away from "National Industrial Recovery Act", the name the opinion uses everywhere else'
-    verdict: missed

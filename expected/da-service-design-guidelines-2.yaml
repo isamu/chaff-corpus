@@ -1,11 +1,6 @@
 id: da-service-design-guidelines-2
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 17
-    text: ""
-    message: 「議事次第」の節に数値もコードもリンクもありません（そういう節が 4/12）
-    verdict: unjudged
   - rule: lookalike-character
     line: 33
     text: ⼈間拡張研究センター主任研究員）
@@ -91,11 +86,6 @@ findings:
     text: PMOの上にデジタル庁で一括管理するチームを置き、サービスデザインやユーザビリテ
     message: 「PMO」が説明なしで使われています（説明のない略語 6 個）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 79
-    text: ""
-    message: 「ガイドライン全体」の節に数値もコードもリンクもありません（そういう節が 4/12）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 94
     text: ほうが良い。専門用語が出てくると用語がわからないではなく、全体的に難しくてわから
@@ -171,11 +161,6 @@ findings:
     text: IEC 250xx）について言及されているが、ウェブ系の出自の人間からすると慣れ
     message: 「IEC」が説明なしで使われています（説明のない略語 6 個）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 152
-    text: ""
-    message: 「アクセシビリティ全般」の節に数値もコードもリンクもありません（そういう節が 4/12）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 174
     text: よいかが分かりづらいと感じた。なぜ困っているか等の具体例をもう少し説明した方が良
@@ -200,11 +185,6 @@ findings:
     line: 190
     text: 過ぎてしまい全部読まれない、どこに情報があるか発見できなくなってしまうという問題
     message: 「過ぎる」と書いています（この文書はふつう「すぎる」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 193
-    text: ""
-    message: 「ウェブサイト等による行政情報の提供・利用促進に関するガイドライン」の節に数値もコードもリンクもありません（そういう節が 4/12）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 195

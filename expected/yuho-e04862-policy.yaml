@@ -1,12 +1,6 @@
 id: yuho-e04862-policy
 chaff: 0.34.0
 findings:
-  - rule: empty-intensifier
-    line: 1
-    text: ③メンテナンスコストの最適化レンタル用資産の価値の維持・向上は建機レンタルビジネ
-    message: 「欠かせません」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「欠かせません」 states a fact (the cost cannot be avoided), not empty emphasis
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ICT工法など国内建設需要の内容が変化しつつあることから、現時点のみならず、将来

@@ -41,11 +41,6 @@ findings:
     text: Real GDP growth was solid last year, alt
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 51
-    text: S&P 500 index increased notably, as conc
-    message: '"S&P" is used without an expansion (1 such acronym)'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 61
     text: The credit performance of corporate bond

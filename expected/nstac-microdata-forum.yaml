@@ -11,11 +11,6 @@ findings:
     text: 令和8年11月19日（木）10:00～16:30
     message: 日付「令和8年11月19日」の書き方が、この文書のほかの日付（「2025/11/20」など 34 箇所）と違います
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 44
-    text: 一橋大学経済研究所附属社会科学統計情報研究センター
-    message: 「一橋大学経済研究所附属社会科学統計情報研究」は漢字が 21 字続いています（10 字まで）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 89
     text: CTIミクロ）の合成方法の改善－家計調査、家計消費状況調査及び家計消費単身モニタ

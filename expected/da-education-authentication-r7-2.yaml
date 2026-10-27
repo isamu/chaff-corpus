@@ -23,12 +23,6 @@ findings:
     message: 「であると考える。」が 8 回出てきます（5 回まで）
     verdict: correct
   - rule: undefined-acronym
-    line: 68
-    text: LGBTQ+への配慮として性別情報を不要とするなど、データ項目の見直しが進められ
-    message: 「LGBTQ」が説明なしで使われています（説明のない略語 7 個）
-    verdict: false-positive
-    note: LGBTQ+ is a widely known abbreviation
-  - rule: undefined-acronym
     line: 69
     text: APPLIC標準が十分に対応しているのかを確認する必要がある。単にAPPLIC標
     message: 「APPLIC」が説明なしで使われています（説明のない略語 7 個）
@@ -43,12 +37,6 @@ findings:
     text: 最終的なあるべき姿を明確に示し、その実現に向けて条件を整えることに重点を置く方が
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-  - rule: undefined-acronym
-    line: 74
-    text: WEBを挟むことにより、個人に対してGビズIDのアカウントを付与する必要が生じる
-    message: 「WEB」が説明なしで使われています（説明のない略語 7 個）
-    verdict: false-positive
-    note: WEB is an everyday word written in capitals, not an acronym
   - rule: empty-intensifier
     line: 99
     text: 日本としてどのように対応するかを検討することは極めて重要である。

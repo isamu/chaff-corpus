@@ -42,12 +42,6 @@ findings:
     message: This sentence runs 98 words (limit 45)
     verdict: correct
     note: a 98-word sentence listing FICEMS's statutory roles
-  - rule: request-without-deadline
-    line: 66
-    text: Please provide references as appropriate
-    message: This request says neither who should do it nor by when
-    verdict: false-positive
-    note: a request for comments whose deadline is given once in the notice's DATES section
   - rule: numbering-gap
     line: 92
     text: 3. What mechanisms, technical standards,

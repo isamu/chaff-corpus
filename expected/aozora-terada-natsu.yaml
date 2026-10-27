@@ -1,21 +1,3 @@
 id: aozora-terada-natsu
 chaff: 0.36.0
-findings:
-  - rule: repeated-sentence-ending
-    line: 7
-    text: こういう意味でデパートメントストアは一つの公園であり民衆の散歩場である。そうして
-    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: an essay written in the である style; the endings are the essayist's choice
-  - rule: repeated-sentence-ending
-    line: 9
-    text: しかし百貨店の可能性がまだどれほど残されているかは未知数である。その一つの可能性
-    message: 「〜である」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: an essay written in the である style; the endings are the essayist's choice
-  - rule: clause-chain
-    line: 37
-    text: ある公衆食堂で昼飯を食ったときに「君、デヴィルド・クラブを食ってみないか」という
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: false-positive
-    note: an anecdote told in one sentence; clause count is the essayist's choice
+findings: []

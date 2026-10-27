@@ -18,42 +18,7 @@ findings:
     verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 1
-    text: 0(注)生産実績の金額は、販売価格で表示しております。ｂ.受注状況セグメントの名
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 0％増）、売上総利益７億９千２百万円（同9.6％増）となりました。（不動産賃貸等
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 0不動産賃貸等事業――――合計2,714,664111.21,199,88511
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 0不動産賃貸等事業――合計2,596,197103.0(注)生産実績の金額は、販
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 0不動産賃貸等事業185,073101.5合計2,781,270102.9(注)
-    message: 半角の「0」と書いています（この文書はふつう全角の「０」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
     text: 1,098,24940.65982,47035.33国土交通省707,12126
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 1.5％増）、売上総利益７千３百万円（同18.8％増）となりました。当連結会計年
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 1.5％増）となり、売上高27億８千１百万円（同2.9％増）、営業利益１億２千４
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。115 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
@@ -85,71 +50,6 @@ findings:
     line: 1
     text: 2,781,270102.9(注)主要相手先別の販売実績は、次のとおりであります
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2.9％増）、営業利益１億２千４百万円（同61.4％増）、経常利益１億８千５百万
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 3.0％増）、売上総利益７億９千２百万円（同9.6％増）となりました。（不動産賃
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 4％増）、経常利益１億８千５百万円（同34.5％増）、親会社株主に帰属する当期純
-    message: 半角の「4」と書いています（この文書はふつう全角の「４」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 4％増）となりました。セグメント別の業績は以下のとおりであります。（建設コンサル
-    message: 半角の「4」と書いています（この文書はふつう全角の「４」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 5％増）、売上総利益７千３百万円（同18.8％増）となりました。当連結会計年度末
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 5％増）、親会社株主に帰属する当期純利益１億７千３百万円（同91.4％増）となり
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 5％増）となり、売上高27億８千１百万円（同2.9％増）、営業利益１億２千４百万
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 5合計2,781,270102.9(注)主要相手先別の販売実績は、次のとおりであ
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 6％増）となりました。（不動産賃貸等事業）不動産賃貸等収入１億８千５百万円（前年
-    message: 半角の「6」と書いています（この文書はふつう全角の「６」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 8％増）となりました。当連結会計年度末の財政状態は以下のとおりであります。（資産
-    message: 半角の「8」と書いています（この文書はふつう全角の「８」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 9.6％増）となりました。（不動産賃貸等事業）不動産賃貸等収入１億８千５百万円（
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 9(注)主要相手先別の販売実績は、次のとおりであります。相手先前連結会計年度(自
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 9％増）、営業利益１億２千４百万円（同61.4％増）、経常利益１億８千５百万円（
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。115 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
@@ -261,11 +161,6 @@ findings:
     line: 1
     text: ①財政状態及び経営成績の状況当連結会計年度における我が国経済は、新型コロナウイル
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: こうした中で、当社グループを取り巻く市場環境としては、近年は気候変動の影響もあり
-    message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1

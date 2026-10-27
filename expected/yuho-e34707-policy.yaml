@@ -31,6 +31,21 @@ findings:
     text: よりよい価値を創出してまいります。今後も企業成長を通じた社会課題の解決や持続可能
     message: 「よりよい」は、何と比べているかが書かれていません
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 1,000億円以上・自己資本比率25.0％以上・総還元性向40.0％・PBR（株
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。13 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 2,900件（前年同月比3.7％増）と６カ月連続、成約㎡単価は74.98万円（同
+    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 3 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 4,731万円（同7.1％増）と42カ月連続でそれぞれ前年同月を上回っております
+    message: 半角の「4」と書いています（この文書はふつう全角の「４」。13 箇所のうち 3 箇所が違う）
+    verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
     text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
@@ -127,14 +142,4 @@ findings:
     line: 1
     text: ）経営環境当連結会計年度における我が国経済は、雇用・所得環境が改善する下で、景気
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
-  - rule: unqualified-superlative
-    line: 1
-    text: ③コンプライアンスの強化当社グループは、常に法令等を遵守し、高い倫理観と社会的良
-    message: 「最も」に比べる相手がありません（そういう言い方が 2 箇所）
-    verdict: unjudged
-  - rule: unqualified-superlative
-    line: 1
-    text: 企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部シ
-    message: 「最大」に比べる相手がありません（そういう言い方が 2 箇所）
     verdict: unjudged
