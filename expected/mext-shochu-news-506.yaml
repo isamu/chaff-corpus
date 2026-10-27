@@ -15,7 +15,7 @@ findings:
     text: HPに掲載しました！
     message: 「HP」が説明なしで使われています（説明のない略語 5 個）
     verdict: false-positive
-    note: HP (ホームページ) is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
+    note: HP (ホームページ) is everyday Japanese for any reader, like the words on chaff's common-acronym list
   - rule: undefined-acronym
     line: 13
     text: STI for SDGs」アワード募集
@@ -32,8 +32,8 @@ findings:
     line: 14
     text: JICA 国際理解教育/開発教育指導者研修 参加者募集
     message: 「JICA」が説明なしで使われています（説明のない略語 5 個）
-    verdict: false-positive
-    note: JICA is the agency's own well-known name, used as such
+    verdict: correct
+    note: JICA is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: missing-final-period
     line: 18
     text: す
@@ -44,8 +44,8 @@ findings:
     line: 20
     text: ICTを活用した学習障害への支援に関する事業を公募します！
     message: 「ICT」が説明なしで使われています（説明のない略語 5 個）
-    verdict: false-positive
-    note: ICT is everyday vocabulary for the magazine's readers (school staff and boards of education); expanding it would be odd
+    verdict: correct
+    note: ICT is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: missing-final-period
     line: 26
     text: た

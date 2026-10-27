@@ -8,8 +8,8 @@ findings:
   - rule: undefined-acronym
     line: 30
     sha256: 9c6b7ee5f92932197bdc6e2bac20bada08170f1bdaf194ca49a449e1a4bda534
-    verdict: false-positive
-    note: this abbreviation is everyday vocabulary in local government
+    verdict: correct
+    note: the abbreviation is never expanded and is not on chaff's common-acronym list; that local government staff know it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: no-mixed-desumasu
     line: 45
     sha256: ff1e6b2e68c76a155ed582b25cdd8202da8582ddb1fbb57564a21bca0b3acbf4

@@ -61,5 +61,5 @@ findings:
     line: 102
     text: UNESCOの規約を批准しており、高等教育機関（大学）のリストを運営していると認
     message: 「UNESCO」が説明なしで使われています（説明のない略語 7 個）
-    verdict: false-positive
-    note: UNESCO is a widely known abbreviation
+    verdict: correct
+    note: UNESCO, an organisation's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff

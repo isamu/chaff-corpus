@@ -5,12 +5,14 @@ findings:
     line: 6
     text: CFR title and the number of each part th
     message: '"CFR" is used without an expansion (4 such acronyms)'
-    verdict: correct
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: undefined-acronym
     line: 8
     text: RIN which identifies each regulatory act
     message: '"RIN" is used without an expansion (4 such acronyms)'
-    verdict: correct
+    verdict: false-positive
+    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: invisible-character
     line: 43
     text: ​faq. If you require an accommodation or

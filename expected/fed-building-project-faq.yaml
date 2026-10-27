@@ -57,8 +57,8 @@ findings:
     line: 153
     text: WWII. Planning meetings were held in a t
     message: '"WWII" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: WWII; the full form World War II is in the document
+    verdict: correct
+    note: WWII is never expanded; the document writes World War II elsewhere but never ties the two, and the rule asks for the expansion in brackets at first use
   - rule: which-that-consistency
     line: 153
     text: which developed the first nuclear weapon

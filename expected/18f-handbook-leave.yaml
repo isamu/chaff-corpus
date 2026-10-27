@@ -55,7 +55,8 @@ findings:
     line: 96
     text: "OPM Policy:"
     message: '"OPM" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: OPM (Office of Personnel Management) is never expanded
   - rule: oxford-comma-consistency
     line: 167
     text: You are entitled to 12 weeks of paid tim
