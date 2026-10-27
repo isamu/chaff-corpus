@@ -31,6 +31,12 @@ findings:
     message: この文は 110 文字あります（70 文字まで）
     verdict: correct
     note: a 110-character sentence naming three recall sites; it can be split
+  - rule: undefined-acronym
+    line: 29
+    text: SAFE-Lite」や経済産業省・事業者のウェブサイトなどで確認することができま
+    message: 「SAFE」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: SAFE is the English word in the site name NITE SAFE-Lite (NITE is spelled out on the same line), not an abbreviation; given by pending lab PRs
   - rule: list-item-form-mix
     line: 34
     text: なお、2025年2月6日からガストーチに対する新たな規制が始まりました。国の定め
@@ -43,6 +49,12 @@ findings:
     message: この文は 76 文字あります（70 文字まで）
     verdict: correct
     note: a 76-character sentence over the email limit
+  - rule: undefined-acronym
+    line: 34
+    text: PSLPGマーク」が表示され、マークが表示されていない製品の販売が禁止されていま
+    message: 「PSLPG」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: PSLPG is never expanded, but with SAFE not an acronym it is the only one, below the business limit of 2, and the document spells out only one other (NITE); by level_meaning the rule does not report it; given by pending lab PRs
   - rule: max-sentence-length
     line: 38
     text: ※事故情報データバンク:消費者庁が関係機関から「事故情報」「危険情報」を広く収集

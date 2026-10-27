@@ -1,6 +1,12 @@
 id: gov-online-kuma-taisaku
 chaff: 0.36.0
 findings:
+  - rule: ai-generated-composite
+    line: 7
+    text: 近年、クマが市街地など、私たちの生活圏に出没し、人身被害が発生するケースが増えて
+    message: 「rule-of-three、padded-intro」が同じ文書にそろっています（2 種、2 種から）
+    verdict: false-positive
+    note: rests on rule-of-three, judged false-positive on line 19; one real signal (padded-intro) is below the limit of 2; given by pending lab PRs
   - rule: padded-intro
     line: 7
     text: 近年、クマが市街地など、私たちの生活圏に出没し、人身被害が発生するケースが増えて

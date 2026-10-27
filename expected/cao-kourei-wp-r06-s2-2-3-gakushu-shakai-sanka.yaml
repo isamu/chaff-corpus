@@ -96,9 +96,19 @@ findings:
     message: この文は 150 文字あります（140 文字まで）
     verdict: correct
     note: 150 字の一文
+  - rule: undefined-acronym
+    line: 103
+    what: NHK, never expanded
+    verdict: missed
+    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
   - rule: max-sentence-length
     line: 109
     text: また、開発途上国からの要請（ニーズ）に見合った技術・知識・経験を持ち、かつ開発途
     message: この文は 146 文字あります（140 文字まで）
     verdict: correct
     note: 146 字の一文
+  - rule: undefined-acronym
+    line: 109
+    what: JICA, never expanded
+    verdict: missed
+    note: the sentence writes 独立行政法人国際協力機構 after JICA but never ties the two (no brackets), and the rule asks for the expansion at first use; JICA stays reported by the maintainer's decision, like mext-shochu-news-506:14; found by pending lab PRs

@@ -6,6 +6,18 @@ findings:
     text: "# 市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事"
     message: 題「市会事務局総務担当　業務委託公募型比較見積案件について（大阪市本庁舎［市会事務局］EV用充電コンセント設置業務委託）」は 57 文字あります（50 文字まで）
     verdict: correct
+  - rule: undefined-acronym
+    line: 11
+    text: EV用充電コンセント設置業務委託
+    message: 「EV」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: with DC a product name, EV is the only unexplained acronym, below the business limit of 2, and the page spells out no others; by level_meaning the rule does not report it; given by pending lab PRs
+  - rule: undefined-acronym
+    line: 16
+    text: DCのダウンロード（無償）
+    message: 「DC」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: DC is part of the product name Adobe Acrobat Reader DC, the same verdict as section508-email-messages:178; given by pending lab PRs
   - rule: latin-spacing
     line: 18
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"

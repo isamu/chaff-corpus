@@ -19,6 +19,16 @@ findings:
     message: The sentence opens with the numeral "50"
     verdict: correct
     note: the sentence opens with the numeral 50, which style guides spell out
+  - rule: oxford-comma-consistency
+    line: 13
+    what: '"last longer, cover more works and restrict more uses" without the serial comma'
+    verdict: missed
+    note: a real three-item list; the post puts the serial comma in three other lists (a novel, … or the right; Big Tech, Big Media, and creative labor markets; groceries …, braces …, and a roof), so this is the minority; found by pending lab PRs
+  - rule: oxford-comma-consistency
+    line: 15
+    what: '"five publishers, four studios, three labels, two app companies and a single ebook/audiobook company" without the serial comma'
+    verdict: missed
+    note: a real list, the second of the two without the serial comma against three with it; found by pending lab PRs
   - rule: max-sentence-length
     line: 21
     text: From reader feedback, I can tell you tha

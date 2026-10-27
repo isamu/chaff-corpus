@@ -217,6 +217,12 @@ findings:
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
     note: 175 字の一文
+  - rule: ngram-repetition
+    line: 121
+    text: 地方創生の観点からは、女性、若者、高齢者、障害者など、誰もが居場所と役割を持つコ
+    message: 「を推進している。」が 6 回出てきます（5 回まで）
+    verdict: false-positive
+    note: 〜を推進している。 closes six measure paragraphs, each about a different measure, in a long white paper; the per-item closing the rule's not_flagged leaves out (〜ものとすること。, が表示されます。); given by pending lab PRs
   - rule: max-sentence-length
     line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方

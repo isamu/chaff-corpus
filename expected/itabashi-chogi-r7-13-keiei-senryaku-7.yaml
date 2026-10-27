@@ -6,6 +6,11 @@ findings:
     sha256: 23b691124bae19da8d3cc35a6c0e9321b2b695a20aaa190750e67a9b00e7fa47
     verdict: false-positive
     note: the kana spelling is part of a facility's name; the common noun is spelled the other way
+  - rule: undefined-acronym
+    line: 45
+    what: a logistics facility's Latin-letter name, never expanded
+    verdict: missed
+    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
   - rule: clause-chain
     line: 49
     sha256: a30425646a3e034a0a6304f0255278474b6315658fbf7ef68dcd21e3179506be
@@ -19,6 +24,11 @@ findings:
     sha256: d30ab658c550ac4337a883cc8262857468987ba6624bd4f05a3abc767cb720c4
     verdict: false-positive
     note: the kana spelling is part of a facility's name; the common noun is spelled the other way
+  - rule: undefined-acronym
+    line: 52
+    what: the railway companies' abbreviation, never expanded
+    verdict: missed
+    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84 (an organisation's name, not an everyday word on the common-acronym list); found by pending lab PRs
   - rule: orthographic-variant
     line: 66
     sha256: 15bde81bcaafb0905b2c8de18e8b23e11ad81b90da53404eb4a24141f0549ee9

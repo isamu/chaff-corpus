@@ -8,6 +8,12 @@ findings:
     verdict: correct
     note: the lead only restates the title (電子申請する方法をご案内します)
   - rule: ngram-repetition
+    line: 20
+    text: 詳しくは、「複数手続まとめて電子申請する（グループ申請）」を確認してください。
+    message: 「を確認してくださ」が 9 回出てきます（5 回まで）
+    verdict: false-positive
+    note: 詳しくは「…」を確認してください。 is the manual's cross-reference line, each pointing to a different page; the fixed closing the rule's not_flagged leaves out, like が表示されます。 on line 24; given by pending lab PRs
+  - rule: ngram-repetition
     line: 24
     text: Webブラウザを利用して手続を検索して「申請書入力へ」をクリックした場合は、以下
     message: 「が表示されます。」が 10 回出てきます（5 回まで）

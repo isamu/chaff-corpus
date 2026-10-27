@@ -25,3 +25,8 @@ findings:
     message: 「ぜひ試してみてください」で締めています
     verdict: correct
     note: ぜひ試してみてくださいね closes the column (catalog J26); common in shop blogs too, but stock
+  - rule: closing-cliche
+    line: 43
+    what: 「気軽に声をかけてください」 as the column's last line
+    verdict: missed
+    note: the stock feel-free send-off in the last paragraph, after the ぜひ試してみてくださいね already judged correct on line 41; found by pending lab PRs

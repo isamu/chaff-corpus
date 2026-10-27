@@ -27,6 +27,11 @@ findings:
     what: 「おわりに」が本文の要約（見える景色や一日の過ごし方が変わった）を繰り返す
     verdict: missed
     note: an empty closing section
+  - rule: ai-generated-composite
+    line: 33
+    what: section-length-uniformity, closing-cliche and closing-exhortation together
+    verdict: missed
+    note: each input is judged correct; found by pending lab PRs
   - rule: closing-cliche
     line: 33
     what: 「一度〜してみてほしい。きっと、いつもの街が少し違って見えるはずだ。」と読者に勧めて締める

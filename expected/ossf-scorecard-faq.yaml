@@ -32,6 +32,11 @@ findings:
     text: For example, the OpenSSF is working on [
     message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: correct
+  - rule: undefined-acronym
+    line: 94
+    what: NPM in link text, never expanded
+    verdict: missed
+    note: NPM (the npm package registry) is never explained to the FAQ's reader; a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
   - rule: fact-conflict
     line: 119
     text: 4    |
