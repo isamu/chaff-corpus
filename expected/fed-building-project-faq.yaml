@@ -80,5 +80,5 @@ findings:
     line: 175
     text: PBS. Return to text
     message: '"PBS" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: a broadcaster's name (PBS) in a citation
+    verdict: correct
+    note: PBS, a broadcaster's name, is never expanded, in the citation or elsewhere; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff

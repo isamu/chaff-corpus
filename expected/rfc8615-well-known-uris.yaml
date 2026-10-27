@@ -20,7 +20,7 @@ findings:
     line: 74
     sha256: 2ada534049735847ec4cb0bac69c710bf8d8b30ef9ddc86e1becfcf177cf9e41
     verdict: false-positive
-    note: IANA in a table-of-contents entry; the registry operator every RFC names
+    note: "IANA in the table of contents of a technical spec, an acronym of the field every RFC reader knows; the rule's by_genre note gives technical documents a higher limit for that reason, and keeping this one needs technical/spec normal 2, which brings back many false positives (lab #2109 measured it)"
   - rule: max-sentence-length
     line: 88
     sha256: 257e8d2b8e5cd23f15efc8754f441aa5a70c87f7df0f1749b358a6ee2b1f6699
@@ -55,7 +55,7 @@ findings:
     line: 531
     sha256: ed1b3ccf2d2f496fb260fb35f1b15f22593479b0acd64fe57e14553d08fd57ea
     verdict: false-positive
-    note: WHATWG, the publisher's name in a reference entry
+    note: "an entry of the RFC's reference list, written in the cited work's words; the rule's not_flagged says a citation's acronyms count towards the limit but are not reported (the reason is the reference entry, not that WHATWG is a name)"
   - rule: name-variant
     line: 543
     sha256: 091a465b07b0a9ce8d5f8d5e245dd38276471dfb0aaa6f31876c1d958f675361

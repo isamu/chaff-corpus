@@ -140,7 +140,7 @@ findings:
     text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
+    note: "the table run into the sentence does not count (no は in it); the count runs from 当社グループは over real prose, but that topic gets its own predicate in the first clause (〜を営んでおりますが、), and the clauses after it have subjects of their own (重要性が, 記載は), so by the rule's why and not_flagged the count stops there; chaff only knows the copula form of that close (〜ではありませんが、)"
   - rule: topic-predicate-distance
     line: 1
     text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と

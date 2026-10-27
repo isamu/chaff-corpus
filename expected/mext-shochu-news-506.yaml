@@ -135,8 +135,8 @@ findings:
     line: 218
     text: TSP太陽（株）内）
     message: 「TSP」が説明なしで使われています（説明のない略語 5 個）
-    verdict: false-positive
-    note: TSP is part of a company's name
+    verdict: correct
+    note: TSP, part of a company's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: orthographic-variant
     line: 219
     text: 問合せ時間 9時～17時（平日のみ、土日祝日を除く）

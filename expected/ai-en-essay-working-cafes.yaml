@@ -9,9 +9,10 @@ findings:
     note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: contrast-framing
     line: 5
-    what: "\"Moving to a café doesn't make me more productive, exactly. It makes me less bored\""
-    verdict: missed
-    note: catalog E12 (doesn't X. It Y.)
+    text: Moving to a café doesn't make me more pr
+    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
+    verdict: false-positive
+    note: "a real doesn't-X-it-Y frame (catalog E12), but the only one: the other two lab main counts (lines 11 and 18) are not frames, so the share is one sentence in forty, and the rule's why and not_flagged say one or two contrasts are not a pile-up and are not reported; given by lab main"
   - rule: bold-label-list
     line: 11
     what: the etiquette rules as "- **Buy something every couple of hours.**" …

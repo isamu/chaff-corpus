@@ -39,8 +39,8 @@ findings:
     line: 46
     text: その動機は、HTML 4.0 からの {{HTMLElement("form")
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: false-positive
-    note: most of the distance is KumaScript macro source ({{HTMLElement(...)}}, {{domxref(...)}}), which renders as a few characters
+    verdict: correct
+    note: "the topic (その動機は) waits for its predicate (〜からです) over real prose: chaff's Markdown reader blanks the {{…}} macros, so the count is the prose alone (the rendered page, with the macros' link texts, is longer still)"
   - rule: orthographic-variant
     line: 59
     text: 但し、下記の追加の要件に注意してください）

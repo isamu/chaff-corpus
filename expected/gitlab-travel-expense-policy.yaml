@@ -366,8 +366,8 @@ findings:
     line: 731
     text: CXC Global**
     message: '"CXC" is used without an expansion (15 such acronyms)'
-    verdict: false-positive
-    note: CXC Global is a company's name, not an acronym to expand
+    verdict: correct
+    note: CXC, the company's name (CXC Global), is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: vague-link-text
     line: 733
     text: "[here](/handbook/people-group/employment"
