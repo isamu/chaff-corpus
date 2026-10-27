@@ -12,6 +12,11 @@ findings:
     what: "\"I hope you're having a good week.\" as the opener"
     verdict: missed
     note: the stock opener of a generated email (I hope this email finds you well family)
+  - rule: email-stock-courtesy
+    line: 5
+    what: "\"I hope you're having a good week.\" as the opener"
+    verdict: missed
+    note: "found by lab main"
   - rule: max-sentence-length
     line: 7
     text: I want our time together to be as produc
@@ -30,11 +35,21 @@ findings:
     message: This sentence runs 22 words (limit 18)
     verdict: correct
     note: 22 words, a scheduling courtesy; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
+  - rule: email-stock-courtesy
+    line: 15
+    what: "\"just let me know what works best and I'll do my best to accommodate it\""
+    verdict: missed
+    note: "found by lab main"
   - rule: closing-cliche
     line: 17
     what: "\"I apologize for any inconvenience this may cause, and I appreciate your flexibility. I'm looking forward to ...\""
     verdict: missed
     note: three stock closing courtesies in a row
+  - rule: email-stock-courtesy
+    line: 17
+    what: "\"I apologize for any inconvenience this may cause\""
+    verdict: missed
+    note: "found by lab main"
   - rule: unfilled-placeholder
     line: 21
     text: "[Your Name]"

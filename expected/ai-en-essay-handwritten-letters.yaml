@@ -7,6 +7,11 @@ findings:
     message: 17 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
     note: the -ly adverbs (apparently, obviously, really) carry the essay's spoken voice; not an AI sign
+  - rule: contrast-framing
+    line: 7
+    what: "\"Not because I think handwriting is morally superior ... It's because I've noticed what I keep\""
+    verdict: missed
+    note: "found by lab main"
   - rule: max-paragraph-length
     line: 13
     text: My handwriting is bad, by the way. Reall
@@ -23,7 +28,13 @@ findings:
     line: 19
     what: "\"It's not really about time. It's about which twenty minutes I want to keep.\"; \"Not because ... It's because ...\" (7)"
     verdict: missed
-    note: the classic "it's not about X, it's about Y" frame; not matched
+    note: "the classic \"it's not about X, it's about Y\" frame; not matched; found by lab main"
+  - rule: contrast-framing
+    line: 19
+    text: I don't always. But it takes about twent
+    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
+    verdict: false-positive
+    note: "a concession to the objection just raised (Fair. I don't always. But ...), not a frame knocking down an X nobody said; given by lab main"
   - rule: ai-generated-composite
     line: 21
     what: the last paragraph returns to the Lisbon friend and the drawer for a neat callback

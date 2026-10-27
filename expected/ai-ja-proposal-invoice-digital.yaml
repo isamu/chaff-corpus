@@ -2,10 +2,10 @@ id: ai-ja-proposal-invoice-digital
 chaff: 0.36.0
 findings:
   - rule: ai-structure
-    line: 1
+    line: 3
     what: 背景・課題・提案・効果・費用・スケジュール・懸念点・まとめの番号付きひな形に、太字の札の箇条書きを並べた構成
     verdict: missed
-    note: "the textbook generated proposal outline; ai-structure (ai-score: Structure) did not count it"
+    note: "the textbook generated proposal outline; ai-structure (ai-score: Structure) did not count it; found by lab main, on the first heading (line 3)"
   - rule: colon-lead-in
     line: 11
     what: 「主に次のような課題があります。」で箇条書きへ渡している（句点で終わる前置き）

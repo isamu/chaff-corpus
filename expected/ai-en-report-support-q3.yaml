@@ -7,6 +7,11 @@ findings:
     message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
     verdict: false-positive
     note: the bolds are the labels of one list and the lead sentences of the numbered recommendations, not emphasis mid-sentence
+  - rule: ai-structure
+    line: 3
+    what: "the textbook report outline (Executive Summary ... Recommendations, Conclusion): sections of one or two paragraphs of one size, bold-label lists"
+    verdict: missed
+    note: "found by lab main"
   - rule: adverb-overuse
     line: 5
     text: significantly improved its responsivenes

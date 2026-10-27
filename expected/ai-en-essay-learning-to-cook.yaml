@@ -16,12 +16,22 @@ findings:
     line: 15
     what: "three \"not X, but Y\" frames: \"salt isn't just about making food salty; it makes ...\" (15), \"What surprised me most wasn't the food itself ... It was ...\" (21), \"people don't really come over for the food. They come for ...\" (23)"
     verdict: missed
-    note: contrast-framing does not match these forms (isn't just about; wasn't X. It was Y; don't X. They Y)
+    note: "contrast-framing does not match these forms (isn't just about; wasn't X. It was Y; don't X. They Y); found by lab main"
+  - rule: contrast-framing
+    line: 21
+    what: "\"What surprised me most wasn't the food itself ... It was how cooking changed the shape of my evenings\""
+    verdict: missed
+    note: "found by lab main"
   - rule: rule-of-three
     line: 23
     what: 'inline triads: "the table, the conversation, the feeling of being cared for"; "cooking, a language, or an instrument" (29); "scrambled eggs, roasted vegetables, a basic tomato soup" (11)'
     verdict: missed
     note: "candidate pattern: inline triads in prose; rule-of-three counts only lists"
+  - rule: contrast-framing
+    line: 23
+    what: "\"people don't really come over for the food. They come for the table ...\""
+    verdict: missed
+    note: "found by lab main"
   - rule: closing-cliche
     line: 29
     what: the moral for the reader ("I'd gently suggest that it isn't", "one of the quiet joys of life") and the quip "just a really good bowl of soup" (31)

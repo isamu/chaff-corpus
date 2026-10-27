@@ -18,6 +18,12 @@ findings:
     what: the etiquette rules as "- **Buy something every couple of hours.**" …
     verdict: missed
     note: catalog E18 (bold labels, en)
+  - rule: contrast-framing
+    line: 11
+    text: Not just one coffee for the whole day. A
+    message: '"not just" and other contrast frames: 7.5% of sentences (limit 6%)'
+    verdict: false-positive
+    note: "the etiquette rule's own clarification (one latte all day is the complaint quoted on line 3), not a frame knocking down an X nobody said; given by lab main"
   - rule: list-item-form-mix
     line: 12
     text: No calls.** If I have a call, I go home
@@ -35,3 +41,9 @@ findings:
     message: '"barista" is not in the dictionary; did you mean "arista"?'
     verdict: false-positive
     note: barista is an ordinary English word
+  - rule: contrast-framing
+    line: 18
+    text: The barista knows my order, I know about
+    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
+    verdict: false-positive
+    note: "a plain negative in narration (when I didn't come in for two weeks), no contrast at all; given by lab main"
