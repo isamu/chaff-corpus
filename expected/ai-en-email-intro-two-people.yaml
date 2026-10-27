@@ -16,8 +16,8 @@ findings:
     line: 9
     text: They're about to start the same kind of
     message: This sentence runs 29 words (limit 18)
-    verdict: false-positive
-    note: 29 words, but one situation told in order; easy to read
+    verdict: correct
+    note: 29 words telling one situation in order; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: ai-generated-composite
     line: 11
     what: "\"Marcus, I know you've got opinions about training schedules\" is not in the request"

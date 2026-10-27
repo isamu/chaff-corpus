@@ -7,6 +7,11 @@ findings:
     message: Section length varies by only 21% (want at least 35%)
     verdict: correct
     note: a short personal essay cut into four headed sections of one size; a reader takes the template outline as generated
+  - rule: ai-generated-composite
+    line: 15
+    what: section-length-uniformity and contrast-framing together
+    verdict: missed
+    note: both inputs are judged correct (1, and 15/21/23 found by lab main); two signals reach the blog limit of 2; found by pending lab PRs
   - rule: contrast-framing
     line: 15
     what: "three \"not X, but Y\" frames: \"salt isn't just about making food salty; it makes ...\" (15), \"What surprised me most wasn't the food itself ... It was ...\" (21), \"people don't really come over for the food. They come for ...\" (23)"

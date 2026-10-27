@@ -65,7 +65,8 @@ findings:
     line: 50
     text: 5,000億円をまた増額したわけですが、これに加えて更に上乗せ給付をしようという
     message: 半角の「5」と書いています（この文書はふつう全角の「５」。56 箇所のうち 3 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (5,000億円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: topic-predicate-distance
     line: 53
     text: そういうことのないように、今回は補正予算が成立次第、12月の地方議会にすぐに対処
@@ -116,18 +117,20 @@ findings:
     line: 98
     text: 1,500円では年収換算にすると低いので、2,000円を目指していくべき。人手不
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。56 箇所のうち 3 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (1,500円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: fullwidth-alnum-consistency
     line: 98
     text: 2,000円を目指していくべき。人手不足の影響をマクロ経済モデルでも分析すべき。
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。56 箇所のうち 3 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (2,000円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: orthographic-variant
     line: 122
     text: 頂いた。
     message: 「頂く」と書いています（この文書はふつう「いただく」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 本動詞 「ご指示を頂いた」 (receive) is written in kanji by the 公用文 rule; the others are the auxiliary 〜いただく
+    verdict: correct
+    note: the main verb (receive) is written both ways in the page, ご指示を頂いた here and 理解をいただける on lines 37 and 43; the rule already compares main-verb uses apart from the auxiliary 〜ていただく and takes no side on which spelling is right
   - rule: orthographic-variant
     line: 128
     text: ときに、議論されていたことがしっかり実行されているか確認をして、期待する政策効果

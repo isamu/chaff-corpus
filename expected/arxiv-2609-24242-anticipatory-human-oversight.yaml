@@ -13,6 +13,12 @@ findings:
     message: 10 dashes per 1000 words (limit 8)
     verdict: correct
     note: the paper uses em dashes heavily (10 per 1000 words)
+  - rule: ngram-repetition
+    line: 11
+    text: In addition, we argue that the proposed
+    message: '"occupying the anticipatory" appears 12 times (limit 5)'
+    verdict: false-positive
+    note: "\"occupying the anticipatory mode\" is the paper's central concept, used as a noun phrase (the subject of its thesis sentences) about a dozen times in some 18,000 words; a term, not phrasing that says nothing new; given by pending lab PRs"
   - rule: orthographic-variant
     line: 17
     text: longstanding aspiration of AI research a

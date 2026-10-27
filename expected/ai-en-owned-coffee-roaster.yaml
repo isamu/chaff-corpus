@@ -18,6 +18,11 @@ findings:
     message: The heading "A quick note on our beans" has no number, while 5 of its siblings do ("1. Buy whole beans, and grind just before brewing")
     verdict: false-positive
     note: the note on the shop's beans is not one of the five tips
+  - rule: ai-generated-composite
+    line: 35
+    what: section-length-uniformity and closing-cliche together
+    verdict: missed
+    note: both inputs are judged correct (1; Happy brewing! on 35); found by pending lab PRs
   - rule: closing-cliche
     line: 35
     what: '"Happy brewing!"'

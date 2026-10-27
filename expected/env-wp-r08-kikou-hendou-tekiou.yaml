@@ -25,6 +25,11 @@ findings:
     message: 「中央環境審議会地球環境部会気候変動影響評価」は漢字が 21 字続いています（10 字まで）
     verdict: false-positive
     note: 審議会の部会・小委員会の名称
+  - rule: undefined-acronym
+    line: 21
+    what: AP-PLAT, never expanded
+    verdict: missed
+    note: AP-PLAT (the Asia-Pacific adaptation information platform) is never spelled out; a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
   - rule: max-sentence-length
     line: 23
     text: 農林水産分野の気候変動への適応策については、持続可能な食料システムの確立を目指す

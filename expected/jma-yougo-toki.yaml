@@ -11,8 +11,8 @@ findings:
     line: 48
     text: ごとに 更新している。
     message: 「ごと」と書いています（この文書はふつう「毎」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: ごと as a suffix (10年ごと) and 毎 as a prefix (毎時) are different words
+    verdict: correct
+    note: the suffix itself is written both ways in the page, 10年ごと here and ５日毎 on lines 844 and 845; the rule takes no side on which spelling is right
   - rule: stray-space
     line: 48
     text: " 更新している。"

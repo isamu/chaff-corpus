@@ -53,7 +53,8 @@ findings:
     line: 37
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
-    verdict: unjudged
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
   - rule: quote-style-consistency
     line: 39
     text: "'s Section 314(b) Fact Sheet (June 12, 2"
@@ -65,4 +66,4 @@ findings:
     text: See Uniting and Strengthening America by
     message: This sentence runs 22 words (limit 18)
     verdict: false-positive
-    note: a footnote's legal citation, not a sentence
+    note: a footnote that is "See" plus one cited Act, Public Law and CFR section; the rule's not_flagged counts only the words the writer puts before a bibliographic citation, so the same shape as fed-sr-25-3:65

@@ -5,7 +5,8 @@ findings:
     line: 3
     text: "### 風向に関する用語"
     message: 見出し「風向に関する用語」の深さが 1 から 3 へ飛んでいます（2 のはず）
-    verdict: unjudged
+    verdict: correct
+    note: the page itself goes from h1 to h3, as in the other jma-yougo-* pages
   - rule: fullwidth-alnum-consistency
     line: 38
     text: ｍ、または×.× m/sと表す。

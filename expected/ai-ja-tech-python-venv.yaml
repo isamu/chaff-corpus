@@ -47,6 +47,11 @@ findings:
     what: 「まとめ」が本文の3点を箇条書きで言い直すだけ
     verdict: missed
     note: the closing restates the body as three bullets
+  - rule: ai-generated-composite
+    line: 123
+    what: sentence-rhythm, padded-intro and closing-cliche together
+    verdict: missed
+    note: each input is judged correct; found by pending lab PRs
   - rule: closing-cliche
     line: 123
     what: 「〜習慣をつけておきましょう！」（95行目の「ぜひ覚えておきましょう」も）の呼びかけで締める

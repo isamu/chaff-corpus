@@ -46,8 +46,8 @@ findings:
     line: 31
     text: AP style (which is to mostly use last na
     message: '"AP" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: AP style, the name of a style guide everyone writes as AP
+    verdict: correct
+    note: AP (Associated Press, the name in AP style) is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: hyphen-as-dash
     line: 32
     text: " - In body copy, spell out numbers one t"
@@ -143,7 +143,12 @@ findings:
     text: Standard sans-serif fonts such as Public
     message: '"Standard sans-serif fonts such as Public Sans, Segoe UI, Roboto, Verdana, Arial, Tahoma, or Helvetica" is a phrase; the other items in this list are sentences (1 of 3)'
     verdict: false-positive
-    note: all three items are noun phrases completing "we recommend:"; none is a sentence
+    note: the flagged item is a noun phrase completing "we recommend:" like the list's other items; the odd one is line 136, a phrase followed by a sentence (Full justification should be avoided.), the shape judged correct at line 51, so chaff points at the wrong item (missed at 136)
+  - rule: list-item-form-mix
+    line: 136
+    what: '"Paragraph text that is left justified. Full justification should be avoided." runs on into a sentence among four noun phrases'
+    verdict: missed
+    note: the same shape as line 51 (a phrase, then a sentence), judged correct there
   - rule: unbalanced-bracket
     line: 151
     text: ” for the alt text to describe the OIT s

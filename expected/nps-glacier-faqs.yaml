@@ -31,6 +31,17 @@ findings:
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
     note: the answers write "it is" except this one "It's"
+  - rule: undefined-acronym
+    line: 40
+    text: GNPCGS to 333111 to sign up!
+    message: '"GNPCGS" is used without an expansion (2 such acronyms)'
+    verdict: false-positive
+    note: GNPCGS is the keyword the reader texts to 333111, a code to type as it stands, not a term to spell out; given by pending lab PRs
+  - rule: undefined-acronym
+    line: 49
+    what: NPS, never expanded
+    verdict: missed
+    note: the same verdict as nps-joshua-tree-faqs:61 (the page never ties NPS to National Park Service); one unexplained acronym reaches the docs/faq limit of 1; found by pending lab PRs
   - rule: max-paragraph-length
     line: 60
     text: Trail status is unpredictable because tr

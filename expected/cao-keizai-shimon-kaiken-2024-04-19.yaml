@@ -15,7 +15,8 @@ findings:
     line: 106
     text: 3,000人未満の小規模過疎自治体の約４割が社会増をしているというデータもある。
     message: 半角の「3」と書いています（この文書はふつう全角の「３」。35 箇所のうち 2 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (3,000人), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: topic-predicate-distance
     line: 129
     text: また、地域資源を活用した再エネ導入に取り組む地域エネルギー会社は、エネルギーの地

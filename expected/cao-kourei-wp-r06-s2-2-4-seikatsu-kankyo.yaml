@@ -217,6 +217,11 @@ findings:
     message: この文は 175 文字あります（140 文字まで）
     verdict: correct
     note: 175 字の一文
+  - rule: ngram-repetition
+    line: 121
+    what: 「を推進している。」 closes six measure paragraphs
+    verdict: missed
+    note: "not a fixed per-item closing in the rule's not_flagged sense (〜ものとすること。, 原案のとおり決定する。, が表示されます。, a formula every item carries): the measure paragraphs here close with many verbs (を行っている。, を図っている。, を実施している。, を支援している。 …), so 推進している is the writer's chosen phrasing repeated, which the rule's why reports; the same reading as env-wp-r08-yasei-seibutsu-hogo-kanri:39 (を実施しました。), judged correct; found by pending lab PRs"
   - rule: max-sentence-length
     line: 123
     text: この点、地方公共団体から、デジタル技術等を活用した「生涯活躍のまち」の具体的な方
@@ -503,8 +508,8 @@ findings:
     line: 237
     text: NTTによるナンバー・ディスプレイ及びナンバー・リクエスト契約を無償化する取組の
     message: 「NTT」が説明なしで使われています（説明のない略語 4 個）
-    verdict: false-positive
-    note: NTT は会社の名前
+    verdict: correct
+    note: NTT, a company's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: nominalization
     line: 239
     text: 周知を行った。

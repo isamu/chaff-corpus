@@ -31,6 +31,11 @@ findings:
     message: 見出し「おわりに」だけ番号がありません（兄弟の見出しは「1. 「保存」ボタンがない」など 5 個が番号付き）
     verdict: false-positive
     note: the closing section is not one of the five numbered tips
+  - rule: ai-generated-composite
+    line: 39
+    what: section-length-uniformity, sentence-rhythm and closing-cliche together
+    verdict: missed
+    note: each input is judged correct; found by pending lab PRs
   - rule: closing-cliche
     line: 39
     what: 「おわりに」で本文をなぞり「ひとりで悩まず、まわりの人に気軽に聞いてみてください」と締める

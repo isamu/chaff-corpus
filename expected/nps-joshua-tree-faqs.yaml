@@ -37,8 +37,8 @@ findings:
     line: 61
     text: NPS every kid outdoors webpage before ar
     message: '"NPS" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the full name National Park Service appears in the document, though not as a parenthetical definition
+    verdict: correct
+    note: NPS is never expanded; the document writes National Park Service elsewhere but never ties the two, and the rule asks for the expansion in brackets at first use
   - rule: heading-level-skip
     line: 77
     text: "#### How do I get campsite reservations?"

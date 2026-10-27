@@ -5,8 +5,8 @@ findings:
     line: 3
     text: "### CCライセンスを付与する際の主な留意事項と最近の動向：「PD BY」と「"
     message: 見出し「CCライセンスを付与する際の主な留意事項と最近の動向：「PD BY」と「CCシグナル」」の深さが 1 から 3 へ飛んでいます（2 のはず）
-    verdict: false-positive
-    note: the portal page gives its own title as h1 and the article title as h3; a web template, not the article
+    verdict: correct
+    note: the page's h1 is its own title for the article (number, title, author) and the next heading, the article title again, is h3, so the committed text goes from h1 to h3; the rule exempts only the first heading, not one after a page or site title, the same shape as bousai-wp-r07-* (h1 then h4) and kantei-214/221
   - rule: abstract-length
     line: 7
     text: "#### 1. はじめに"

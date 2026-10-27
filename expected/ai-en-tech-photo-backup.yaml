@@ -1,6 +1,11 @@
 id: ai-en-tech-photo-backup
 chaff: 0.36.0
 findings:
+  - rule: over-general-claim
+    line: 3
+    what: '"many people keep years of memories on a single phone"'
+    verdict: missed
+    note: a sweeping claim the post never checks, the opener of the pile judged correct on 34 and 53; found by pending lab PRs
   - rule: unqualified-superlative
     line: 3
     text: Your photos are some of the most irrepla
@@ -100,6 +105,11 @@ findings:
     what: "\"Final Thoughts\": \"easy to put off — until it's too late\", \"Your future self will thank you.\""
     verdict: missed
     note: stock closing lines of a generated post
+  - rule: ai-generated-composite
+    line: 67
+    what: closing-cliche, colon-lead-in and over-general-claim together
+    verdict: missed
+    note: each input is judged correct (67; 21/36/53; 34/53); found by pending lab PRs
   - rule: unqualified-superlative
     line: 67
     text: The best backup plan is the one you'll a

@@ -67,3 +67,8 @@ findings:
     message: This paragraph runs 8 sentences (limit 5)
     verdict: correct
     note: eight sentences in one paragraph, as stated
+  - rule: unqualified-superlative
+    line: 120
+    what: '"It is the best way to win over well-meaning people"'
+    verdict: missed
+    note: a claimed best with nothing to compare against, not a sought best or a set phrase; found by pending lab PRs

@@ -1,10 +1,20 @@
 id: itabashi-chogi-r7-5-keiei-senryaku-2
 chaff: 0.36.0
 findings:
+  - rule: undefined-acronym
+    line: 30
+    what: DX in an agenda item, never expanded
+    verdict: missed
+    note: DX is never spelled out; it stays reported by the maintainer's decision (the common-acronym list holds everyday words only); found by pending lab PRs
   - rule: topic-predicate-distance
     line: 41
     sha256: 1d2f123d3428040259ae32e5ed6523256896962bab2a95454c8f9afbedb76a94
     verdict: correct
+  - rule: undefined-acronym
+    line: 41
+    what: the railway companies' abbreviation, never expanded
+    verdict: missed
+    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84; found by pending lab PRs
   - rule: ngram-repetition
     line: 62
     sha256: 2b288515eb7b5a169f0b4e83cd170404c6b40a945efa5f7bf94e46b3b7fe319e

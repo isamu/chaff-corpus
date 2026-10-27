@@ -50,7 +50,8 @@ findings:
     line: 49
     text: 1,500円を早期に達成するために、ロードマップを示してほしい。また、年収の壁に
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。29 箇所のうち 1 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (1,500円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: repeated-sentence-ending
     line: 59
     text: 岸田政権における経済財政運営については、まず、少子化対策や防衛力の抜本的な強化と

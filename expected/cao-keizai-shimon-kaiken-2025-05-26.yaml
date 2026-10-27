@@ -15,7 +15,8 @@ findings:
     line: 30
     text: また、石破総理大臣は、昨日25日に、アメリカ軍の艦船の日本での修理や、砕氷船に関
     message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: 石破総理大臣は gets its own predicate in the first clause (〜を明らかにしましたが、) and a new topic follows (赤澤大臣は…お願いします), so by the rule's why and not_flagged the count stops at that clause, well under 80 characters; the same build as yuho-e02395-mda:1 (〜を営んでおりますが、), judged false-positive
   - rule: topic-predicate-distance
     line: 32
     text: （答）今般の協議の内容の詳細については外交上のやり取りなので、つまびらかにするこ
@@ -85,7 +86,8 @@ findings:
     line: 77
     text: 2,500億円の科研費を倍増する大胆な措置を講ずるべき。厳しい状況に置かれている
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。97 箇所のうち 2 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (2,500億円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: teki-overuse
     line: 90
     text: そして、今を生きるこども・若者が身体的・精神的・社会的にウェルビーイングで生活を
@@ -125,8 +127,8 @@ findings:
     line: 123
     text: みられる。ピンチをチャンスに変えていくという心意気を骨太の方針においても示してい
     message: 「みる」と書いています（この文書はふつう「見る」と書く語です。6 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: みられる in the sense "is seen as / appears" is conventionally written in kana; it is not the verb 見る
+    verdict: correct
+    note: the same is-seen-as / judge sense is in kanji on line 37 (示唆したと見られます) and line 122 (と見ている) and in kana here (ともみられる); the rule takes no side on which spelling is right
   - rule: demonstrative-opener-run
     line: 132
     text: この中では、地方歳出について物価の上昇、人件費の増加、金利の上昇など歳出増加圧力
@@ -136,4 +138,5 @@ findings:
     line: 139
     text: 1,000兆円が達成される。この実現に向け必要な政策の方向性は３つ。
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。97 箇所のうち 2 箇所が違う）
-    verdict: correct
+    verdict: false-positive
+    note: "the digit leads a thousands-grouped number (1,000兆円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"

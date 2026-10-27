@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-tables.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-tables.ts (d189b340); a fetched text must convert exactly as when it was judged.
 // Tables as the HTML converter reads them. A table whose rows are sentences (a glossary of terms and what they mean,
 // a list of routes and how each one works), or whose every cell is a label in words (a one-column list of methods),
 // keeps each cell as a block of its own, its header row first, so its words are read as the page shows them. Any other

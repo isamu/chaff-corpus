@@ -56,8 +56,8 @@ findings:
     line: 139
     text: KPIロジックの検討は今だからこそ必要。
     message: 「KPI」が説明なしで使われています（説明のない略語 4 個）
-    verdict: false-positive
-    note: KPI is a widely known business acronym
+    verdict: correct
+    note: KPI is never expanded and is not on chaff's common-acronym list; that business readers know it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: teki-overuse
     line: 166
     text: 自動運転バスを導入しても、時間的、空間的移動手段の空白が出てしまうことについては

@@ -11,14 +11,14 @@ findings:
     line: 7
     text: Due to a processing error on our part, t
     message: This sentence runs 24 words (limit 18)
-    verdict: false-positive
-    note: 24 words, one explanation of the error
+    verdict: correct
+    note: 24 words explaining the error; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 7
     text: Your account balance in our system is co
     message: This sentence runs 23 words (limit 18)
-    verdict: false-positive
-    note: 23 words, one reassurance
+    verdict: correct
+    note: 23 words of reassurance; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: colon-lead-in
     line: 9
     what: '"What this means for you:" before the list'
@@ -28,20 +28,20 @@ findings:
     line: 11
     text: If you have not yet paid your October st
     message: This sentence runs 25 words (limit 18)
-    verdict: false-positive
-    note: 25 words, one instruction in a list
+    verdict: correct
+    note: 25 words, a list item written as a full sentence; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 12
     text: If you have already paid the higher amou
     message: This sentence runs 21 words (limit 18)
-    verdict: false-positive
-    note: 21 words, one instruction
+    verdict: correct
+    note: 21 words, a list item written as a full sentence; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 13
     text: If you would prefer a refund rather than
     message: This sentence runs 22 words (limit 18)
-    verdict: false-positive
-    note: 22 words, one instruction
+    verdict: correct
+    note: 22 words, a list item written as a full sentence; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 15
     text: We have identified the cause of the erro
@@ -52,5 +52,5 @@ findings:
     line: 17
     text: We understand that you rely on us for ac
     message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: 19 words, one point
+    verdict: correct
+    note: 19 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)

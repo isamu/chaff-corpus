@@ -1,8 +1,19 @@
 id: cisa-cybersecurity-awareness-month-2026
 chaff: 0.36.0
 findings:
+  - rule: undefined-acronym
+    line: 5
+    what: SI in the subtitle, never expanded
+    verdict: missed
+    note: SI is never spelled out (it may be a slip for AI, which the reader cannot tell); the release spells out CISA and SLTT, so the rule reports from the first unexplained one; found by pending lab PRs
   - rule: quote-style-consistency
     line: 17
     text: "'s infrastructure against cyber threats."
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 13)
     verdict: correct
+  - rule: undefined-acronym
+    line: 37
+    text: IR plans for common threat scenarios suc
+    message: '"IR" is used without an expansion (2 such acronyms)'
+    verdict: false-positive
+    note: the item opens "Have an incident response plan and use it:" and the same sentence then says IR plans; the name is written out just before the acronym, the shape the rule's not_flagged leaves out (U.S. Small Business Administration … SBA), here in lower case; given by pending lab PRs

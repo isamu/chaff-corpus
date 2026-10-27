@@ -5,8 +5,8 @@ findings:
     line: 13
     text: If you've got something on Friday that r
     message: This sentence runs 26 words (limit 18)
-    verdict: false-positive
-    note: a conversational conditional of 26 words in a casual team email; reads in one breath, not an AI sign
+    verdict: correct
+    note: 26 words, a conditional request in a casual team email; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: closing-cliche
     line: 15
     what: '"enjoy the commute-free Friday!" as the chirpy sign-off'

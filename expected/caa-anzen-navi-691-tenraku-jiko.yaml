@@ -25,6 +25,16 @@ findings:
     message: この文は 100 文字あります（70 文字まで）
     verdict: correct
     note: a 100-character sentence over the email limit
+  - rule: undefined-acronym
+    line: 15
+    what: ICU, never expanded
+    verdict: missed
+    note: ICU is not spelled out for the newsletter's parents, and in Japan it is also a university's name; two unexplained acronyms (ICU, PICU) reach the business limit of 2; found by pending lab PRs
+  - rule: undefined-acronym
+    line: 16
+    what: PICU, never expanded
+    verdict: missed
+    note: PICU (pediatric intensive care unit) is not spelled out and is not an everyday word; found by pending lab PRs
   - rule: list-item-form-mix
     line: 22
     text: 抱っこ・おんぶからの転落
