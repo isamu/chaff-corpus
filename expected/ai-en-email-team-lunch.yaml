@@ -16,14 +16,14 @@ findings:
     line: 10
     text: They've got vegetarian and gluten-free o
     message: This sentence runs 26 words (limit 18)
-    verdict: false-positive
-    note: 26 casual words, easy to follow in a team email
+    verdict: correct
+    note: 26 casual words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 12
     text: "Remote folks: I know you can't come, so"
     message: This sentence runs 26 words (limit 18)
-    verdict: false-positive
-    note: 26 casual words, one instruction
+    verdict: correct
+    note: 26 casual words after a "Remote folks:" label (without the label still over); over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: email-greeting-closing
     line: 15
     text: Mike

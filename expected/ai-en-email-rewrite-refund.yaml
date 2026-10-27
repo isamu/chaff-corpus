@@ -5,8 +5,8 @@ findings:
     line: 5
     text: I'm writing to request a refund for orde
     message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: 19 words, one fact
+    verdict: correct
+    note: 19 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: attachment-not-attached
     line: 7
     text: When I opened the box, I noticed that th
@@ -17,14 +17,14 @@ findings:
     line: 7
     text: When I opened the box, I noticed that th
     message: This sentence runs 23 words (limit 18)
-    verdict: false-positive
-    note: 23 words, one description of the damage
+    verdict: correct
+    note: 23 words describing the damage; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 9
     text: Could you let me know how to send the bo
     message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: 19 words, one two-part question
+    verdict: correct
+    note: 19 words, a two-part question; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: request-without-deadline
     line: 9
     text: Could you let me know how to send the bo
@@ -35,5 +35,5 @@ findings:
     line: 11
     text: I contacted your support chat on Novembe
     message: This sentence runs 20 words (limit 18)
-    verdict: false-positive
-    note: 20 words, one fact
+    verdict: correct
+    note: 20 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)

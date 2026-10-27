@@ -65,4 +65,4 @@ findings:
     text: See Uniting and Strengthening America by
     message: This sentence runs 22 words (limit 18)
     verdict: false-positive
-    note: a footnote's legal citation, not a sentence
+    note: a footnote that is "See" plus one cited Act, Public Law and CFR section; the rule's not_flagged counts only the words the writer puts before a bibliographic citation, so the same shape as fed-sr-25-3:65

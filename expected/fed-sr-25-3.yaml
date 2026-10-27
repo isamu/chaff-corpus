@@ -161,8 +161,8 @@ findings:
     line: 65
     text: "See FinCEN, Frequently Asked Questions:"
     message: This sentence runs 22 words (limit 18)
-    verdict: correct
-    note: a long sentence in the letter's notes
+    verdict: false-positive
+    note: a footnote that is "See" plus one cited title, date and URL; the rule's not_flagged counts only the words the writer puts before a bibliographic citation, so the same shape as fed-sr-26-3:41
   - rule: max-sentence-length
     line: 67
     text: The list of FinCEN's rulemakings on Spec

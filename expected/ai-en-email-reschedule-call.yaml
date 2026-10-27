@@ -22,14 +22,14 @@ findings:
     line: 7
     text: We're still finalizing the draft, and I'
     message: This sentence runs 21 words (limit 18)
-    verdict: false-positive
-    note: 21 words, one clear point; not an AI sign
+    verdict: correct
+    note: 21 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: max-sentence-length
     line: 15
     text: If none of these suit your schedule, jus
     message: This sentence runs 22 words (limit 18)
-    verdict: false-positive
-    note: 22 words, an ordinary scheduling courtesy
+    verdict: correct
+    note: 22 words, a scheduling courtesy; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
   - rule: closing-cliche
     line: 17
     what: "\"I apologize for any inconvenience this may cause, and I appreciate your flexibility. I'm looking forward to ...\""
