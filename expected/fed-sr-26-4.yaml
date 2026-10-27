@@ -125,7 +125,8 @@ findings:
     line: 79
     text: "##### Notes:"
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
-    verdict: unjudged
+    verdict: correct
+    note: the page really jumps from h3 to h5 for its notes
   - rule: max-sentence-length
     line: 81
     text: Additionally, the Underwriting Standards
@@ -135,7 +136,8 @@ findings:
     line: 81
     text: See "Interagency Guidelines Establishing
     message: This sentence runs 19 words (limit 18)
-    verdict: unjudged
+    verdict: false-positive
+    note: '"See" plus a cited guideline title and CFR part, appendix and sections; by the rule''s not_flagged only the writer''s words before a citation count, as in fed-sr-26-3:41'
   - rule: oxford-comma-consistency
     line: 81
     text: See "Interagency Guidelines Establishing

@@ -10,8 +10,8 @@ findings:
     line: 3
     text: "### 動向レビュー：即時オープンアクセスを巡る動向：グリーンOAを通じた即時O"
     message: 見出し「動向レビュー：即時オープンアクセスを巡る動向：グリーンOAを通じた即時OAと権利保持戦略を中心に」の深さが 1 から 3 へ飛んでいます（2 のはず）
-    verdict: false-positive
-    note: the portal page gives its own title as h1 and the article title as h3; a web template, not the article
+    verdict: correct
+    note: the page's h1 is its own title for the article (number, title, author) and the next heading, the article title again, is h3, so the committed text goes from h1 to h3; the rule exempts only the first heading, not one after a page or site title, the same shape as bousai-wp-r07-* (h1 then h4) and kantei-214/221
   - rule: max-kanji-continuous
     line: 5
     text: 国立情報学研究所情報社会相関研究系／オープンサイエンス基盤研究センター：船守美穂

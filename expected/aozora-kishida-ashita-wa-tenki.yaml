@@ -5,5 +5,5 @@ findings:
     line: 12
     text: "#### 一"
     message: 見出し「一」の深さが 2 から 4 へ飛んでいます（3 のはず）
-    verdict: false-positive
-    note: 青空文庫's markup puts the author as h2 and each scene heading (中見出し) as h4; the work has no level between
+    verdict: correct
+    note: "青空文庫's markup gives each kind of heading a fixed level (the scene heading, 中見出し, is h4), so the page goes from the author line (h2) to h4 with no h3: a level chosen by kind, not depth, which is what the rule's why describes; the rule exempts only the first heading, and the fed-ca/fed-sr letters' h3 to h5 Notes: is judged correct the same way"
