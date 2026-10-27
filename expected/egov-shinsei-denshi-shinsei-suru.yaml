@@ -19,6 +19,12 @@ findings:
     message: 「が表示されます。」が 10 回出てきます（5 回まで）
     verdict: false-positive
     note: a step-by-step screen manual says が表示されます after each step; the repetition is the genre's formula
+  - rule: ngram-repetition
+    line: 26
+    text: "[e-Gov電子申請アプリケーションの起動]をクリックするとe-Gov電子申請ア"
+    message: 「をクリックすると」が 6 回出てきます（5 回まで）
+    verdict: false-positive
+    note: "[ボタン]をクリックすると … が表示されます is the step wording of a screen manual, each use naming a different button and a different result, so nothing reads as said again (the rule's why); the same genre formula as が表示されます on line 24, but mid-sentence, so not_flagged's fixed-closing clause does not cover it and the why decides; given by pending lab PRs"
   - rule: bracket-width-consistency
     line: 38
     text: ［申請書入力へ］をクリックしてください。
