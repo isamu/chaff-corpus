@@ -1,4 +1,4 @@
-// Copied from isamu/lab text/packages/chaff/src/html/html-links.ts (ab9b3385); a fetched text must convert exactly as when it was judged.
+// Copied from isamu/lab text/packages/chaff/src/html/html-links.ts (d189b340); a fetched text must convert exactly as when it was judged.
 // Where a page's links point, kept without changing its text. A link's text stays as it is read; its address, when
 // it is an absolute http(s) one, goes into a comment closing the section the link is in (<!-- https://… -->), so the
 // document still holds what the section links to while the sentences are untouched. A relative address names no page

@@ -1,30 +1,18 @@
 id: fr-2026-16371-nvd-rfi
 chaff: 0.33.0
 findings:
-  - rule: undefined-acronym
-    line: 6
-    text: CFR title and the number of each part th
-    message: '"CFR" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
-  - rule: undefined-acronym
-    line: 8
-    text: RIN which identifies each regulatory act
-    message: '"RIN" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: invisible-character
-    line: 43
+    line: 32
     text: ​faq. If you require an accommodation or
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
   - rule: max-sentence-length
-    line: 59
+    line: 48
     text: Several trends present both challenges a
     message: This sentence runs 70 words (limit 45)
     verdict: correct
   - rule: invisible-character
-    line: 153
+    line: 142
     text: ​Downloads.
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct

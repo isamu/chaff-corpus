@@ -2,47 +2,35 @@ id: fr-2026-19328-faa-fct-nofo
 chaff: 0.34.0
 findings:
   - rule: proper-noun-density
-    line: 1
-    text: Headings
-    message: 301 proper nouns per 1000 words (limit 200)
+    line: 3
+    text: "Docket # FAA-2026-6240]"
+    message: 346 proper nouns per 1000 words (limit 200)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 6
-    text: CFR title and the number of each part th
-    message: '"CFR" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
-  - rule: undefined-acronym
-    line: 8
-    text: RIN which identifies each regulatory act
-    message: '"RIN" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: the Federal Register page's 'Document Headings' help box, which the conversion kept; not the notice
   - rule: max-sentence-length
-    line: 28
+    line: 15
     text: The Department of Transportation (DOT),
     message: This sentence runs 52 words (limit 45)
     verdict: correct
   - rule: invisible-character
-    line: 38
+    line: 25
     text: ​airport-infrastructure/​fct by followin
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
-    line: 38
+    line: 25
     text: ​bil/​airport-infrastructure/​fct by fol
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: invisible-character
-    line: 38
+    line: 25
     text: ​fct by following the instructions under
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
   - rule: max-sentence-length
-    line: 48
+    line: 35
     text: The IIJA established the FCT Competitive
     message: This sentence runs 74 words (limit 45)
     verdict: correct

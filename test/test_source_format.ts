@@ -28,6 +28,18 @@ describe("convertedText", () => {
     assert.equal(convertedText("html", "<html><body><main><h1>Terms</h1><p>Fees &amp; charges apply.</p></main></body></html>"), "# Terms\n\nFees & charges apply.\n");
   });
 
+  it("drops a help box shown on hover, and keeps the heading block beside it and a hover-named block of prose", () => {
+    const page = (body: string): string => `<html><body><main>${body}<p>The office opens at nine.</p></main></body></html>`;
+    const help =
+      `<div class="fr-seal-block with-hover"><span class="h6">Document Headings</span><div class="fr-seal-meta">` +
+      `<ol><li>the CFR title and part</li><li>the RIN of the action</li></ol><p>See the <a href="/handbook">Handbook</a> for more details.</p></div></div>`;
+    const converted = convertedText("html", page(`${help}<div class="content-block"><h6>Example Agency</h6><p>[Docket No. 26-01]</p></div>`));
+    assert.doesNotMatch(converted, /Document Headings|CFR|RIN|Handbook/u);
+    assert.match(converted, /Example Agency[\s\S]*\[Docket No\. 26-01\][\s\S]*The office opens at nine\./u);
+    const card = `<div class="with-hover"><p>The office moved in May. Visitors use the north door.</p></div>`;
+    assert.match(convertedText("html", page(card)), /Visitors use the north door\./u);
+  });
+
   it("keeps a numbered heading whose first subsection follows it with the same tag, and drops an empty unnumbered one", () => {
     const page = (body: string): string => `<html><body><main>${body}</main></body></html>`;
     assert.equal(convertedText("html", page("<h4>3. 結果</h4><h4>3.1 データ</h4><p>本文。</p>")), "#### 3. 結果\n\n#### 3.1 データ\n\n本文。\n");
