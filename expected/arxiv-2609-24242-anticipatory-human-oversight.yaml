@@ -25,6 +25,12 @@ findings:
     message: '"longstanding" here, where the document usually writes "long-standing" (1 of 3)'
     verdict: correct
     note: '"longstanding" once where the paper writes "long-standing"'
+  - rule: ngram-repetition
+    line: 47
+    text: The distal reasons that human delegation
+    message: '"a form the agent can" appears 6 times (limit 5)'
+    verdict: false-positive
+    note: "\"in a form the agent can track\" is the paper's trackability condition, part of its definition of the normative agenda (line 85) and given a technical sense on line 87; each of the six uses in some 18,000 words states a different claim against that fixed condition, so nothing reads as said again (the rule's why); not_flagged does not name a repeated condition clause, so the why decides; given by pending lab PRs"
   - rule: unqualified-superlative
     line: 47
     text: The most important divergence is the sec
