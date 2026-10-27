@@ -35,9 +35,14 @@ jobs:
           node-version: "24"
           cache: yarn
 
+      # decide imports yaml, so the dependencies come first.
+      - run: yarn install --frozen-lockfile
+
       - name: decide
         id: decide
         run: |
+          # Without pipefail the step takes tee's status, and a failing decide passes as "nothing to follow".
+          set -o pipefail
           info="$(yarn info chaffjs version --json 2>/dev/null || true)"
           node scripts/follow-release.ts decide "$info" | tee -a "$GITHUB_OUTPUT"
 
@@ -65,7 +70,6 @@ jobs:
           PINNED: ${{ steps.decide.outputs.pinned }}
         run: |
           git switch -c "$BRANCH"
-          yarn install --frozen-lockfile
           yarn add "chaffjs@$VERSION" --exact
           checks=()
           check() { local name="$1"; shift; if "$@"; then checks+=("$name=pass"); else checks+=("$name=fail"); fi; }
