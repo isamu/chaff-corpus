@@ -30,6 +30,12 @@ findings:
     what: 「地味だけど大事です」
     verdict: missed
     note: catalog J22 (地味に family); the casual request produced it
+  - rule: ai-generated-composite
+    line: 56
+    text: 新しいiPhone、楽しんでください！
+    message: 「section-length-uniformity、closing-cliche」が同じ文書にそろっています（2 種、2 種から）
+    verdict: false-positive
+    note: rests on section-length-uniformity, judged false-positive on line 1; one real signal (closing-cliche) is below the limit of 2; given by pending lab PRs
   - rule: closing-cliche
     line: 56
     what: 「新しいiPhone、楽しんでください！」で締める

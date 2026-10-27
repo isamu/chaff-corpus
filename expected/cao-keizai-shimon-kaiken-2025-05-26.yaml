@@ -15,7 +15,8 @@ findings:
     line: 30
     text: また、石破総理大臣は、昨日25日に、アメリカ軍の艦船の日本での修理や、砕氷船に関
     message: 「は」で出した主題から述語まで 103 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: 石破総理大臣は gets its own predicate in the first clause (〜を明らかにしましたが、) and a new topic follows (赤澤大臣は…お願いします), so by the rule's why and not_flagged the count stops at that clause, well under 80 characters; the same build as yuho-e02395-mda:1 (〜を営んでおりますが、), judged false-positive
   - rule: topic-predicate-distance
     line: 32
     text: （答）今般の協議の内容の詳細については外交上のやり取りなので、つまびらかにするこ

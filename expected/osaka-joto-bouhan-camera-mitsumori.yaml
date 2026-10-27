@@ -6,6 +6,12 @@ findings:
     text: (PDF形式, 217.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct
+  - rule: undefined-acronym
+    line: 52
+    text: DCのダウンロード（無償）
+    message: 「DC」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: DC is part of the product name Adobe Acrobat Reader DC, the same verdict as section508-email-messages:178; given by pending lab PRs
   - rule: latin-spacing
     line: 54
     text: " 社のサイトから Adobe Acrobat Reader DC をダウンロード"
@@ -16,3 +22,9 @@ findings:
     text: (DOCX形式, 44.27KB)
     message: 括弧を「(」と書いています（この文書はふつう「（」。28 箇所のうち 2 箇所が違う）
     verdict: correct
+  - rule: undefined-acronym
+    line: 58
+    text: DOCX形式, 44.27KB)
+    message: 「DOCX」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: DOCX is a file format given as (DOCX形式, 44.27KB) beside the PDF形式 of the other files; a format label of the same kind as PDF on the common-acronym list; given by pending lab PRs

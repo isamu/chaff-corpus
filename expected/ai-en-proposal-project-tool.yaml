@@ -26,8 +26,8 @@ findings:
     line: 31
     text: ""
     message: Section "Expected Benefits" has no number, code or link (3 of 7 sections)
-    verdict: correct
-    note: the benefits are generic claims with no figure, though the document has one (two hours a week) to give; reads as boilerplate
+    verdict: false-positive
+    note: "the section is bare, but it is the only one: Risks and Mitigation (55) and Recommendation (61) are judged false-positive, so one section of seven has nothing concrete, below the limit of 3; by the rule's level_meaning one bare section is not reported (pending lab PRs no longer give it), the same reading as ai-en-essay-working-cafes:5"
   - rule: ai-structure
     line: 33
     what: the benefits list mirrors the drawbacks list item by item (out of date -> up-to-date status, ownership unclear -> clear accountability, ...)
