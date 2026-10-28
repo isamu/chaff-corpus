@@ -1,11 +1,12 @@
 // The release-follow workflow's decisions, so the workflow file holds no logic of its own.
 //   decide <yarn-info-json>                  given `yarn info chaffjs version --json`, prints follow=, version=, branch=, pinned= and reason= lines for $GITHUB_OUTPUT
-//   body <pinned> <version> <summary> <name=pass|fail>...   prints the bump PR's body (summary: the --resolve-out file)
+//   body <pinned> <version> <summary> <name=pass|fail>...      prints the bump PR's full body (summary: the --resolve-out file)
+//   pr-body <pinned> <version> <summary> <name=pass|fail>...   the same, fitted under GitHub's body limit; the run is read from GITHUB_SERVER_URL, GITHUB_REPOSITORY and GITHUB_RUN_ID
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT } from "./lib/corpus.ts";
 import { isRecord } from "./lib/guards.ts";
-import { followDecision, latestFromYarnInfo, parseCheck, releasePullRequestBody, type Check } from "./lib/release.ts";
+import { fittedReleasePullRequestBody, followDecision, latestFromYarnInfo, parseCheck, releasePullRequestBody, type Check } from "./lib/release.ts";
 
 const pinnedChaff = (): unknown => {
   const path = join(ROOT, "package.json");
@@ -34,15 +35,23 @@ const checksOf = (texts: readonly string[]): Check[] =>
     return check;
   });
 
-const body = (pinned: string, version: string, summaryPath: string, checkTexts: readonly string[]): void => {
+const runUrl = (): string | undefined => {
+  const { GITHUB_SERVER_URL: server, GITHUB_REPOSITORY: repository, GITHUB_RUN_ID: runId } = process.env;
+  if (server === undefined || repository === undefined || runId === undefined) return undefined;
+  return `${server}/${repository}/actions/runs/${runId}`;
+};
+
+const body = (fitted: boolean, [pinned, version, summaryPath, ...checkTexts]: readonly string[]): void => {
+  if (pinned === undefined || version === undefined || summaryPath === undefined) throw new Error("body needs <pinned> <version> <summary-file>");
   const summary = readFileSync(summaryPath, "utf8");
-  console.log(releasePullRequestBody(pinned, version, checksOf(checkTexts), summary));
+  const checks = checksOf(checkTexts);
+  console.log(fitted ? fittedReleasePullRequestBody(pinned, version, checks, summary, runUrl()) : releasePullRequestBody(pinned, version, checks, summary));
 };
 
 const [command, ...args] = process.argv.slice(2);
 if (command === "decide" && args[0] !== undefined) decide(args[0]);
-else if (command === "body" && args[0] !== undefined && args[1] !== undefined && args[2] !== undefined) body(args[0], args[1], args[2], args.slice(3));
+else if ((command === "body" || command === "pr-body") && args.length >= 3) body(command === "pr-body", args);
 else {
-  console.error("usage: follow-release.ts decide <yarn-info-json> | body <pinned> <version> <summary-file> <name=pass|fail>...");
+  console.error("usage: follow-release.ts decide <yarn-info-json> | body|pr-body <pinned> <version> <summary-file> <name=pass|fail>...");
   process.exitCode = 2;
 }
