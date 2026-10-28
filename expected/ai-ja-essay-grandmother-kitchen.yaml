@@ -11,12 +11,14 @@ findings:
     line: 13
     text: 子どものころの私は、正直それほど好きではなかった。黒くて地味だし、甘いのかしょっ
     message: 「honesty-marker、sentence-rhythm」が同じ文書にそろっています（2 種、2 種から）
-    verdict: unjudged
+    verdict: false-positive
+    note: one of its two inputs, sentence-rhythm, is judged false-positive here, so only one real signal stands
   - rule: honesty-marker
     line: 13
     text: 子どものころの私は、正直それほど好きではなかった。黒くて地味だし、甘いのかしょっ
     message: 「、正直」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「、正直」: the candour marker generated text adds to sound human"
   - rule: test:moral-ending
     line: 21
     what: 最後の段落が冒頭の「窓の曇りを拭く」に戻って、ほろ苦い救いで閉じる型どおりの結び

@@ -1,16 +1,12 @@
 id: ai-ja-essay-moving-city
 chaff: 0.36.0
 findings:
-  - rule: ai-tell
-    line: 15
-    what: 「正直なところ少し重たく感じていた」
-    verdict: missed
-    note: "candidate pattern (honesty marker 正直): under 'write naturally', as AI1 found"
   - rule: honesty-marker
     line: 15
     text: 最初は、正直なところ少し重たく感じていた。けれど、熱を出して寝込んだとき、そのお
     message: 「、正直」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「正直なところ」: the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it"
   - rule: test:moral-ending
     line: 19
     what: 冒頭の「のんびりしていいでしょう」に戻り、答えを言い換えて締める

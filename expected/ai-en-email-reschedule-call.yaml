@@ -7,11 +7,6 @@ findings:
     message: '"[Client Name]" was never filled in'
     verdict: correct
     note: template blank left for the user; an unfilled bracket is the plainest sign the email came from an assistant
-  - rule: ai-tell
-    line: 5
-    what: "\"I hope you're having a good week.\" as the opener"
-    verdict: missed
-    note: the stock opener of a generated email (I hope this email finds you well family)
   - rule: email-stock-courtesy
     line: 5
     text: I hope you're having a good week.

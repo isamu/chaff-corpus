@@ -21,9 +21,11 @@ findings:
     line: 19
     text: 一方で、「30分以上の会議は原則禁止」「参加者は最大6人まで」といった話は、正直
     message: 「honesty-marker、sentence-rhythm」が同じ文書にそろっています（2 種、2 種から）
-    verdict: unjudged
+    verdict: correct
+    note: both inputs judged correct (honesty-marker 19, sentence-rhythm)
   - rule: honesty-marker
     line: 19
     text: 一方で、「30分以上の会議は原則禁止」「参加者は最大6人まで」といった話は、正直
     message: 「、正直」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「、正直」: the candour marker generated text adds to sound human"

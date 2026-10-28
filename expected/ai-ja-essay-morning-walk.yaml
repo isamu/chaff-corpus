@@ -11,7 +11,8 @@ findings:
     line: 5
     text: 最初の1週間は、正直つらかった。目覚ましを止めて布団から出るのがおっくうで、歩い
     message: 「、正直」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「、正直」: the candour marker generated text adds to sound human"
   - rule: ai-structure
     line: 7
     what: エッセイに「〜ようになった」「〜が変わった」と揃えた 3 つの見出しと「おわりに」

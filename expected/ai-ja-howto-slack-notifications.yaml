@@ -1,11 +1,6 @@
 id: ai-ja-howto-slack-notifications
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
-    line: 1
-    what: section-length-uniformity and sentence-rhythm together
-    verdict: missed
-    note: both inputs are judged correct (1, 3); found by pending lab PRs
   - rule: section-length-uniformity
     line: 1
     text: ""
@@ -22,7 +17,8 @@ findings:
     line: 53
     text: まずは1の基本設定から試してみてください。それだけでも、かなり静かになるはずです
     message: 「section-length-uniformity、sentence-rhythm、closing-cliche」が同じ文書にそろっています（3 種、2 種から）
-    verdict: unjudged
+    verdict: correct
+    note: every input judged correct (section-length-uniformity, sentence-rhythm, closing-cliche); this is the composite the miss filed at line 1 asked for, so that miss is retired
   - rule: closing-cliche
     line: 53
     text: まずは1の基本設定から試してみてください。それだけでも、かなり静かになるはずです

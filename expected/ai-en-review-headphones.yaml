@@ -11,17 +11,14 @@ findings:
     line: 3
     text: After six months of daily use, here's my
     message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
-    verdict: unjudged
-  - rule: ai-tell
-    line: 3
-    what: "\"here's my honest take\""
-    verdict: missed
-    note: candidate pattern (honesty marker)
+    verdict: correct
+    note: both inputs judged correct (honesty-marker 3, section-length-uniformity 1)
   - rule: honesty-marker
     line: 3
     text: After six months of daily use, here's my
     message: '"my honest take" flags this sentence as candid'
-    verdict: unjudged
+    verdict: correct
+    note: '"my honest take": the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it'
   - rule: bold-label-list
     line: 7
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
