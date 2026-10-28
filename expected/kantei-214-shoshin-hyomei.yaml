@@ -51,8 +51,8 @@ findings:
     line: 47
     text: さらに、少子化の原因を分析し、子育て世帯に寄り添った適切な対策を実施します。
     message: 「さらに」と書いています（この文書はふつう「更に」と書く語です。6 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: sentence-initial 「さらに、」 is the conjunction, written in hiragana by the 公用文 rule; 「更に」 elsewhere is the adverb
+    verdict: correct
+    note: "re-judged by isamu/lab#1924: the conjunction さらに、 and the adverb 更に are one word, so the speech's mix of the two is a variant to report"
   - rule: max-sentence-length
     line: 52
     text: その中で、「デフレ脱却」を最優先に実現するため、「経済あっての財政」との考え方に
