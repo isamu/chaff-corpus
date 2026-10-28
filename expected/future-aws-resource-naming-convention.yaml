@@ -13,11 +13,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 121
-    text: CD サーバに `jenkins` といった名称を使っても良い。
-    message: 「CD」が説明なしで使われています（説明のない略語 19 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 121
     text: CI/CD サーバに `jenkins` といった名称を使っても良い。
     message: 「CI」が説明なしで使われています（説明のない略語 19 個）
     verdict: unjudged

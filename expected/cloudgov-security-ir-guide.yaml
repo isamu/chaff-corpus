@@ -165,11 +165,6 @@ findings:
     text: )?
     message: '")" closes nothing that was opened'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 245
-    text: ""
-    message: Section "Incident Severities" has no number, code or link (4 of 17 sections)
-    verdict: unjudged
   - rule: latin-abbreviation-form
     line: 257
     text: ie. CryptoLocker) targeting TTS staff

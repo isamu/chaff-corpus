@@ -1,10 +1,6 @@
 id: jstage-jniph-74-1-2-rehabilitation
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 17
-    sha256: f82d031da53f9c0f6c98b62405c5604ac89641759f1132c78a646cf6d33bfaf7
-    verdict: unjudged
   - rule: latin-spacing
     line: 33
     sha256: 5416dfbdab080a92e6e074ea9b85e31ead4c7d1ea8be6d9e8ed40b1f166abf8c
@@ -16,14 +12,6 @@ findings:
   - rule: latin-spacing
     line: 35
     sha256: c19cf5cd6a256cded23fdfe166b414bd43cffaeda8ca5b17adb7d59139c2bcf0
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 41
-    sha256: 0933f38d3ed620587f55b5291a96b9f1f402856c62eeb4c2041880cccca468e6
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 41
-    sha256: 2f872503b228342ba56fe7092a08116106feaf38cbf90cbdb859569d95b1ecf7
     verdict: unjudged
   - rule: latin-spacing
     line: 45
@@ -93,10 +81,6 @@ findings:
     line: 77
     sha256: d205610c63fec979738e014c3cf9283f62aa02c4c111f3b688768abbc33404af
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 81
-    sha256: acdf4d68b340eb7f4c6e4fae470873eda14206048ae106d9b7759a18790deae5
-    verdict: unjudged
   - rule: orthographic-variant
     line: 103
     sha256: 45e57bf286416a4d279a990a7eb09f073554be64c8ce13a4a9ba35adb514c03e
@@ -104,14 +88,6 @@ findings:
   - rule: teki-overuse
     line: 121
     sha256: 48db74ac5a5189a415ad2b7acbf18022d740dee5a16f36bffe695a12e82ecd24
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 143
-    sha256: 7475267232b7d88efd38daa9e05698dcf6e0d4f93dd17eb9b225c423082bafd4
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 145
-    sha256: 81e583d8086aa1f40e2938246afe1eaf462865967fcd657a7914e395ac7d19fd
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 155

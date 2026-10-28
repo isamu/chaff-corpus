@@ -1,10 +1,6 @@
 id: jstage-jniph-74-2-119-wbgt
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 17
-    sha256: 34a7c1ab1a0f779b706c83bf53008c2791620173ffcac3130f834f87cb0d64bb
-    verdict: unjudged
   - rule: latin-spacing
     line: 37
     sha256: 5416dfbdab080a92e6e074ea9b85e31ead4c7d1ea8be6d9e8ed40b1f166abf8c
@@ -20,14 +16,6 @@ findings:
   - rule: latin-spacing
     line: 39
     sha256: 70a44002f6619cbb7b901f938788e3a03b0ba7eae6b06e8081142d7d84ade982
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 45
-    sha256: 5e1036de421a9e7c0ba9eb024aa16b9d38175e617256e3ddca57b374511deba3
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 45
-    sha256: 668dd39a8ee505e239c6846785cff8145bc990c585a89facfc12a1f2705e936e
     verdict: unjudged
   - rule: latin-spacing
     line: 49
@@ -100,10 +88,6 @@ findings:
   - rule: max-kanji-continuous
     line: 93
     sha256: af56087a10763c44d2aa508eb1d99b1d2e64445e2715d541156bd7b70ab97ef9
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 125
-    sha256: fc3cd9655c6acb74c22ce0871c9414a5b596d6820aee5c5f801b56f53236d558
     verdict: unjudged
   - rule: latin-spacing
     line: 127

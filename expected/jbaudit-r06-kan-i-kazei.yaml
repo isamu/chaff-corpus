@@ -101,11 +101,6 @@ findings:
     text: そして、消費税差額は、課税売上げに係る消費税の額に、みなし仕入率と課税仕入率の差
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 172
-    text: そして、消費税差額は、課税売上げに係る消費税の額に、みなし仕入率と課税仕入率の差
-    message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 174
     text: 24年報告の後、みなし仕入率の見直しは行われているが、簡易課税制度の適用の可否の

@@ -31,15 +31,3 @@ findings:
     message: This code block names no language, unlike the others (22 blocks name one)
     verdict: false-positive
     note: the block is the expected output (plain text), not code; no language applies to it
-  - rule: comparative-without-baseline
-    line: 299
-    text: better. So if you have a complex problem
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: "'simpler is better' is a maxim; the baseline (more complex formulas) is the subject of the passage"
-  - rule: unqualified-superlative
-    line: 345
-    text: We can trust the body of the code to be
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: "the set is named (the parts of the formula: the body and the lambdas)"

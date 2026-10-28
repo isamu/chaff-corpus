@@ -31,30 +31,10 @@ findings:
     text: よりよい価値を創出してまいります。今後も企業成長を通じた社会課題の解決や持続可能
     message: 「よりよい」は、何と比べているかが書かれていません
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 1,000億円以上・自己資本比率25.0％以上・総還元性向40.0％・PBR（株
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。13 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,900件（前年同月比3.7％増）と６カ月連続、成約㎡単価は74.98万円（同
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。13 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 4,731万円（同7.1％増）と42カ月連続でそれぞれ前年同月を上回っております
-    message: 半角の「4」と書いています（この文書はふつう全角の「４」。13 箇所のうち 3 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
     text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
     message: 「公益財団法人東日本不動産流通機構」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
-    message: この段落は 7 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 1

@@ -11,11 +11,6 @@ findings:
     text: largely asynchronous work environment
     message: 16 -ly adverbs per 1000 words (limit 15)
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 37
-    text: ""
-    message: Section "Nice-to-haves" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 92
     text: MR Review Time (OMRT)](/handbook/enginee
@@ -31,23 +26,11 @@ findings:
     text: ""
     message: Section "Distribution:Build" has no number, code or link (28 of 52 sections)
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 180
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: false-positive
-    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
   - rule: undefined-acronym
     line: 183
     text: RHEL based systems
     message: '"RHEL" is used without an expansion (13 such acronyms)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 189
-    text: ""
-    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
-    verdict: false-positive
-    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
   - rule: undefined-acronym
     line: 192
     text: CVE patches
@@ -63,29 +46,11 @@ findings:
     text: ""
     message: Section "Distribution:Deploy" has no number, code or link (28 of 52 sections)
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 209
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: false-positive
-    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
-  - rule: concrete-evidence-density
-    line: 217
-    text: ""
-    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
-    verdict: false-positive
-    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
   - rule: undefined-acronym
     line: 235
     text: APT and similar. Additionally, the Packa
     message: '"APT" is used without an expansion (13 such acronyms)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 249
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: false-positive
-    note: a job description's Requirements / Responsibilities list states duties and skills, not claims that need a number or link
   - rule: undefined-acronym
     line: 253
     text: OSI network model and common network pro
@@ -106,40 +71,15 @@ findings:
     text: Focus on security features for GitLab. T
     message: The first sentence repeats the heading "Secure"
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 270
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: redundant-expression
     line: 278
     text: Develop security tools from proposal to
     message: '"end result" says the same thing twice'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 290
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 300
     text: PM team to execute on the roadmap.
     message: '"PM" is used without an expansion (13 such acronyms)'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 313
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 375
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 390
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 396
@@ -162,11 +102,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: concrete-evidence-density
-    line: 452
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 469
     text: RPC interfaces for the Gitaly service.
@@ -187,16 +122,6 @@ findings:
     text: optimising software in large-scale, high
     message: '"optimising" here, where the document usually spells it "optimizing" (4 of 23)'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 525
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 537
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: name-variant
     line: 539
     text: Golang experience required
@@ -207,11 +132,6 @@ findings:
     text: optimising GitLab.com
     message: '"optimising" here, where the document usually spells it "optimizing" (4 of 23)'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 583
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: spelling-consistency
     line: 596
     text: optimisation mechanisms.
@@ -222,19 +142,9 @@ findings:
     text: "  They are experienced Ruby/GoLang devel"
     message: 2 spaces after this sentence, where the document usually leaves 1 (1 of 36)
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 602
-    text: ""
-    message: Section "Requirements" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 604
     text: " - modeling, processing, nodes and index"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: concrete-evidence-density
-    line: 609
-    text: ""
-    message: Section "Responsibilities" has no number, code or link (28 of 52 sections)
-    verdict: unjudged

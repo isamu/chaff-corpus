@@ -1,26 +1,8 @@
 id: aozora-hagiwara-tsuki-ni-hoeru
 chaff: 0.36.0
 findings:
-  - rule: duplicate-heading
-    line: 44
-    text: "### 序"
-    message: 見出し「序」は、同じ親の下の 7 行目の見出しと同じです
-    verdict: false-positive
-    note: two prefaces by different writers, both titled 序 in the original
   - rule: teki-overuse
     line: 111
     text: 先には反時代的な詩風であり、珍奇な異端的なものであつた私等の詩のスタイルは、今日
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-  - rule: duplicate-heading
-    line: 165
-    text: "#### 竹"
-    message: 見出し「竹」は、同じ親の下の 155 行目の見出しと同じです
-    verdict: false-positive
-    note: two poems with the same title in the collection
-  - rule: fullwidth-alnum-consistency
-    line: 1121
-    text: DELICATE の哀傷が、影のやうに神経の末梢をかすめて行つた。
-    message: 半角の「DELICATE」と書いています（この文書はふつう全角の「ＤＥＬＩＣＡＴＥ」。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: an English word in Latin script, compared with lone full-width letters

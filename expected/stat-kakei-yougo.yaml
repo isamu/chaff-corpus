@@ -1,12 +1,6 @@
 id: stat-kakei-yougo
 chaff: 0.35.0
 findings:
-  - rule: one-sentence-paragraph-run
-    line: 27
-    text: （1）実支出……「消費支出」と「非消費支出」を合計した支出である。
-    message: 一文だけの段落が 6 個続いています（4 個まで）
-    verdict: false-positive
-    note: glossary definition items are one sentence each by design
   - rule: no-doubled-joshi
     line: 111
     text: の企業の従業者数の大きさによって分類している。

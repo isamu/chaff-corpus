@@ -6,15 +6,20 @@ findings:
     text: （フラワービジネス支援事業）フラワービジネス支援事業においては、引き続き収益の柱
     message: 丸括弧を、全角で 6 箇所、半角で 10 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
+  - rule: contrast-framing
+    line: 1
+    text: ④ナーセリー支援事業の強化当社は胡蝶蘭農園との業務提携を通じて、農園事業に進出し
+    message: 「だけではなく」など、対比の枠で書いた文が 7.1% あります（6% まで）
+    verdict: unjudged
+  - rule: contrast-framing
+    line: 1
+    text: 当社がこれまで取り組んでまいりました植物栽培と販売のノウハウを活かしたコンサルテ
+    message: 「だけでなく」など、対比の枠で書いた文が 7.1% あります（6% まで）
+    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ３Ｒ活動を中心とした取り組みを進めて参ります。(5)優先的に対処すべき事業上及び
     message: 全角の「３Ｒ」と書いています（この文書はふつう半角の「3R」。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
-    message: この段落は 28 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 1

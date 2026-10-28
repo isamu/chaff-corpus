@@ -21,20 +21,10 @@ findings:
     text: "### +  How to Stay Safe During Extreme H"
     message: Heading "+  How to Stay Safe During Extreme Heat Events" goes from level 1 to level 3 (expected 2)
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 17
-    text: ""
-    message: Section "Outdoor Activities" has no number, code or link (4 of 8 sections)
-    verdict: unjudged
   - rule: heading-level-skip
     line: 17
     text: "###### Outdoor Activities"
     message: Heading "Outdoor Activities" goes from level 3 to level 6 (expected 4)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 23
-    text: ""
-    message: Section "Eating and Drinking" has no number, code or link (4 of 8 sections)
     verdict: unjudged
   - rule: contraction-consistency
     line: 27
@@ -48,11 +38,6 @@ findings:
     message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
-  - rule: concrete-evidence-density
-    line: 36
-    text: ""
-    message: Section "Check on Others" has no number, code or link (4 of 8 sections)
-    verdict: unjudged
   - rule: heading-level-skip
     line: 51
     text: "###### Heat Safety in Vehicles"
@@ -62,9 +47,4 @@ findings:
     line: 53
     text: Even on mild days in the 70s, studies ha
     message: '"studies have shown" does not say who'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 61
-    text: ""
-    message: Section "+ Heat Safety for Outdoor Workers" has no number, code or link (4 of 8 sections)
     verdict: unjudged

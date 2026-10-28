@@ -1,10 +1,6 @@
 id: soumu-hokuriku-260mhz-kentokai-4
 chaff: 0.34.0
 findings:
-  - rule: proper-noun-density
-    line: 5
-    sha256: eaadf2f6efb20d1cb03b6c5f04fce3a4f5cdf4bf742817fe0fef6383b4fd44a6
-    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 46
     sha256: 0cf610476339b5c9cdf1ec234c0a6e47e3daccada206d72070230ab015c137cf

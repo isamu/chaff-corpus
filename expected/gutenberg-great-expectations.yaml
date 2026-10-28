@@ -2,11 +2,6 @@ id: gutenberg-great-expectations
 chaff: 0.33.0
 findings:
   - rule: name-variant
-    line: 8349
-    text: Bailey.” In the
-    message: '"Bailey" is one letter away from "Barley", which the document uses more than once'
-    verdict: unjudged
-  - rule: name-variant
     line: 11025
     text: Coiner, a very good workman. The
     message: '"Coiner" is one letter away from "Coiler", which the document uses more than once'

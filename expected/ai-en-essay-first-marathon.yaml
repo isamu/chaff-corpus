@@ -6,12 +6,6 @@ findings:
     what: '"How different could six more miles be?" answered by "Pretty different, it turns out."'
     verdict: missed
     note: catalog E34 (question answered by a fragment)
-  - rule: quote-without-source
-    line: 15
-    text: YOU PAID FOR THIS." I laughed out loud,
-    message: '"YOU PAID FOR THIS." is given to someone, but no source (a link, a footnote, a reference) is given'
-    verdict: false-positive
-    note: the text of a spectator's sign, not a quotation needing a source
   - rule: test:moral-ending
     line: 19
     what: "\"says that's what everyone says on Tuesday\" returns to \"I'm writing this on Tuesday\" (line 3)"

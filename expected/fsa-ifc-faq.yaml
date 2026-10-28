@@ -81,21 +81,6 @@ findings:
     text: 等にも留意する必要があります。
     message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 61
-    text: HPもご参照ください。
-    message: 「HP」が説明なしで使われています（説明のない略語 4 個）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 89
-    text: 運用業務に関する第二種金融商品取引業
-    message: 「第二種金融商品取引業」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 90
-    text: 外国の法令に準拠し、当該外国において第一種金融商品取引業と同種類の業務を行ってい
-    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 90
     text: 又は関連会社等を含む）等であって、特定投資家を相手方とし、外国投資の一定の有価証

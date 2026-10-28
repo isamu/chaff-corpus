@@ -1,24 +1,12 @@
 id: gov-online-kuma-taisaku
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
-    line: 7
-    text: 近年、クマが市街地など、私たちの生活圏に出没し、人身被害が発生するケースが増えて
-    message: 「rule-of-three、padded-intro」が同じ文書にそろっています（2 種、2 種から）
-    verdict: false-positive
-    note: rests on rule-of-three, judged false-positive on line 19; one real signal (padded-intro) is below the limit of 2; given by pending lab PRs
   - rule: padded-intro
     line: 7
     text: 近年、クマが市街地など、私たちの生活圏に出没し、人身被害が発生するケースが増えて
     message: 「近年」は、どの記事にも当てはまる書き出しです
     verdict: correct
     note: 「近年、…増えています」 is the stock opening of such articles
-  - rule: rule-of-three
-    line: 19
-    text: "- 収穫しない果実は早めに取り除く"
-    message: 箇条書き 4 個のうち 4 個が 3 項目です（70% まで）
-    verdict: false-positive
-    note: each list gives the three measures the text names; a human-written government article, not a padding pattern
   - rule: topic-predicate-distance
     line: 97
     text: 国は都道府県と連携し、地域個体群ごとの適正な個体数や、捕獲の目標数を精緻化するた

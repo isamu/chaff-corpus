@@ -21,11 +21,6 @@ findings:
     text: (5）当社は再開発事業として建設した新館店舗を株式会社アイリスプラザとの間で20
     message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: ５【経営上の重要な契約等】(1）1992年９月１日、当社はイタリアのゼニア・バル
-    message: この段落は 12 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: (2）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビ

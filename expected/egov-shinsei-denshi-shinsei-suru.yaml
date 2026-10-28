@@ -8,18 +8,6 @@ findings:
     verdict: correct
     note: the lead only restates the title (電子申請する方法をご案内します)
   - rule: ngram-repetition
-    line: 20
-    text: 詳しくは、「複数手続まとめて電子申請する（グループ申請）」を確認してください。
-    message: 「を確認してくださ」が 9 回出てきます（5 回まで）
-    verdict: false-positive
-    note: 詳しくは「…」を確認してください。 is the manual's cross-reference line, each pointing to a different page; the fixed closing the rule's not_flagged leaves out, like が表示されます。 on line 24; given by pending lab PRs
-  - rule: ngram-repetition
-    line: 24
-    text: Webブラウザを利用して手続を検索して「申請書入力へ」をクリックした場合は、以下
-    message: 「が表示されます。」が 10 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a step-by-step screen manual says が表示されます after each step; the repetition is the genre's formula
-  - rule: ngram-repetition
     line: 26
     text: "[e-Gov電子申請アプリケーションの起動]をクリックするとe-Gov電子申請ア"
     message: 「をクリックすると」が 6 回出てきます（5 回まで）
@@ -65,9 +53,3 @@ findings:
     message: 「］」に対応する開きがありません
     verdict: correct
     note: the opening ［ of the button label ［提出先を選択］ is missing in the source
-  - rule: max-kanji-continuous
-    line: 116
-    text: 署名用電子証明書確認画面で[OK]ボタンをクリックすると、「証明書の選択」ウィン
-    message: 「署名用電子証明書確認画面」は漢字が 12 字続いています（8 字まで）
-    verdict: false-positive
-    note: the name of a screen (署名用電子証明書確認画面), which cannot be split

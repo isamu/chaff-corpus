@@ -47,18 +47,6 @@ findings:
     message: "\"Jan 23\" has no year, and the document's dates run from 1857 to 2023, so the year is unclear"
     verdict: false-positive
     note: the year is written after the slash (Jan 23/58 is 23 January 1858), the old short form in a quoted receipt
-  - rule: max-sentence-length
-    line: 20
-    text: And I hereby fully authorize and empower
-    message: This sentence runs 44 words (limit 40)
-    verdict: false-positive
-    note: the sentence is a 1857 receipt quoted verbatim; the article cannot shorten it
-  - rule: oxford-comma-consistency
-    line: 20
-    text: And I hereby fully authorize and empower
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a list inside a receipt quoted verbatim; its punctuation is the receipt's, not the article's
   - rule: max-paragraph-length
     line: 26
     text: Yet another consideration is that gift g

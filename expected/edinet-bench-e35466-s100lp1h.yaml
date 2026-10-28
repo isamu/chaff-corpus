@@ -131,11 +131,6 @@ findings:
     text: " SAP ERPの３大ラインアップを展開し、導入支援、アドオン開発、保守、運用、"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。84 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 9
-    text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
-    message: この段落は 12 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 9
     text: (2）インフラソリューションサービスインフラソリューションサービスは、特定の業種
@@ -160,11 +155,6 @@ findings:
     line: 9
     text: の利活用のための分析ツールの提案といった経営戦略に直結するソリューションをワンス
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 9
-    text: の工程の一括したサービス)のBPO業務にも注力しております。 (2）インフラソリ
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 9
@@ -251,11 +241,6 @@ findings:
     text: の一部委託経営管理運営管理管理業務の一部受託役員の兼任 ３名（注）「主要な事業の
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 17
-    text: ５【従業員の状況】(1）連結会社の状況 令和３年３月31日現在事業部門の名称従業
-    message: この段落は 8 文あります（5 文まで）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 17
     text: (2）提出会社の状況   令和３年３月31日現在従業員数（人）平均年齢（歳）平均
@@ -275,11 +260,6 @@ findings:
     line: 17
     text: ）連結会社の状況 令和３年３月31日現在事業部門の名称従業員数（人）開発部門59
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 21
-    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、当連結会計
-    message: この段落は 39 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 21
@@ -385,11 +365,6 @@ findings:
     line: 21
     text: PMP資格（Project Management Professional）の取
     message: 「PMP」が説明なしで使われています（説明のない略語 9 個）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 25
-    text: ２【事業等のリスク】　本書に記載した事業の状況、経理の状況等に関する事項のうち、
-    message: この段落は 45 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
@@ -520,21 +495,6 @@ findings:
     text: QMS認証部所の部所長又は担当者から技術統括部へ毎月20日にプロジェクトの進捗状
     message: 「QMS」が説明なしで使われています（説明のない略語 9 個）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 33
-    text: 3,267千円であります。なお、当連結会計年度において重要な設備の除却、売却等は
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 33
-    text: 3,984千円、設備の新設6,329千円、本社基幹システムの新設3,267千円で
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 33
-    text: 6,329千円、本社基幹システムの新設3,267千円であります。なお、当連結会計
-    message: 半角の「6」と書いています（この文書はふつう全角の「６」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 37
     text: (仙台市青葉区)事務所設備4104665593231（注）１．上記の金額には消費
@@ -600,21 +560,6 @@ findings:
     text: 4,3752,5354,39411,305260東京本社(東京都千代田区)事務所
     message: 半角の「4」と書いています（この文書はふつう全角の「４」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 37
-    text: 7,146千円であります。
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 37
-    text: ２【主要な設備の状況】当社グループにおける主要な設備は、以下のとおりであります。
-    message: この段落は 6 文あります（5 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 37
-    text: (1）提出会社令和３年３月31日現在 事業所名(所在地)設備の内容帳簿価額（千円
-    message: この文は 204 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 37
     text: ）国内子会社令和３年３月31日現在 会社名事業所名(所在地)設備の内容帳簿価額（
@@ -625,20 +570,10 @@ findings:
     text: ）提出会社令和３年３月31日現在 事業所名(所在地)設備の内容帳簿価額（千円）従
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 41
-    text: 8,477－増資資金令和３年３月令和３年10月（注）１当社大阪本社大阪市北区本社
-    message: 半角の「8」と書いています（この文書はふつう全角の「８」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 41
     text: (1）重要な設備の新設等 会社名事業所名所在地設備の内容投資予定金額資金調達方法
     message: 「内容投資予定金額資金調達方法着手及」は漢字が 17 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 41
-    text: ３【設備の新設、除却等の計画】当社グループの設備投資については、景気予測、業界動
-    message: この段落は 7 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 41
@@ -661,16 +596,6 @@ findings:
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 45
-    text: 3,144,000
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 45
-    text: 3,144,000計3,144,000
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
     line: 49
     text: 1,015,4001,015,400－－（注）「提出日現在発行数」欄には、令和３
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
@@ -690,46 +615,6 @@ findings:
     text: ②【発行済株式】種類事業年度末現在発行数（株）（令和３年３月31日）提出日現在発
     message: 「登録認可金融商品取引業協会名内容普通株式」は漢字が 20 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 49
-    text: ②【発行済株式】種類事業年度末現在発行数（株）（令和３年３月31日）提出日現在発
-    message: この文は 172 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 1,265円　　　　　　　割当先　　　ＳＭＢＣ日興証券株式会社５．新株予約権の行
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 1,265円４．有償第三者割当（オーバーアロットメントによる売出しに関連した第三
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 2,530円資本組入額　　1,265円　　　　　　　割当先　　　ＳＭＢＣ日興証券
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 2,530円資本組入額　　1,265円４．有償第三者割当（オーバーアロットメント
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 2,750円引受価額　　　2,530円資本組入額　　1,265円４．有償第三者割
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 3,132.5円　　　　　　　割当先　　　コンピューターマネージメント社員持株会
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 53
-    text: 6,265円　　　　　　　資本組入額　　3,132.5円　　　　　　　割当先
-    message: 半角の「6」と書いています（この文書はふつう全角の「６」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 53
     text: ＳＭＢＣ日興証券株式会社５．新株予約権の行使による増加であります。
@@ -739,11 +624,6 @@ findings:
     line: 53
     text: （４）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
     message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 53
-    text: （４）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
-    message: この文は 423 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 53
@@ -760,25 +640,10 @@ findings:
     text: 1,014,00010,140権利内容に何ら限定のない当社における標準となる株式
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 57
-    text: 1,015,400－－総株主の議決権 －10,140－（注）自己株式80株は、「
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 57
-    text: 1,400－－発行済株式総数 1,015,400－－総株主の議決権 －10,14
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: latin-spacing
     line: 57
     text: " 1,015,400－－総株主の議決権 －10,140－（注）自己株式80株は、"
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。152 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 57
-    text: ①【発行済株式】    令和３年３月31日現在区分株式数（株）議決権の数（個）内
-    message: この文は 171 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 61
@@ -882,11 +747,6 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 101
-    text: 5,795※１ 9,555その他（純額）※１ 0※１ 0有形固定資産合計25,0
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 101
     text: 6,5174,653その他1,5664,368無形固定資産合計8,0839,02
     message: 半角の「6」と書いています（この文書はふつう全角の「６」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
@@ -894,16 +754,6 @@ findings:
     line: 101
     text: 8,0839,022投資その他の資産  投資有価証券128,162288,731
     message: 半角の「8」と書いています（この文書はふつう全角の「８」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 101
-    text: 9,555その他（純額）※１ 0※１ 0有形固定資産合計25,08729,586
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 101
-    text: ①【連結貸借対照表】  （単位：千円） 前連結会計年度（令和２年３月31日）当連
-    message: この文は 970 文字あります（140 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 105
@@ -927,32 +777,12 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 105
-    text: 1,004,567営業利益327,476385,065営業外収益  受取利息及び
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
-    text: 1,013,231※１ 1,004,567営業利益327,476385,065営
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
     text: 1,340,7081,389,632販売費及び一般管理費※１ 1,013,231
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 105
     text: 1,3491,765受取保険金7,785－助成金収入2,26310,359その他
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
-    text: 1,997特別利益合計－1,999税金等調整前当期純利益330,891399,2
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
-    text: 1,999税金等調整前当期純利益330,891399,227法人税、住民税及び事
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
@@ -964,11 +794,6 @@ findings:
     line: 105
     text: 2投資有価証券売却益－1,997特別利益合計－1,999税金等調整前当期純利益3
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
-    text: 3,807△18,833法人税等合計113,677113,736当期純利益217
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 105
@@ -987,11 +812,6 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 105
-    text: 7,785－助成金収入2,26310,359その他649575営業外収益合計12
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 105
     text: 8,633537経常利益330,891397,228特別利益  固定資産売却益※
     message: 半角の「8」と書いています（この文書はふつう全角の「８」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
@@ -999,11 +819,6 @@ findings:
     line: 105
     text: 【連結損益計算書】  （単位：千円）  前連結会計年度(自　平成31年４月１日
     message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 105
-    text: 【連結損益計算書】  （単位：千円）  前連結会計年度(自　平成31年４月１日
-    message: この文は 557 文字あります（140 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 109
@@ -1030,45 +845,10 @@ findings:
     text: 5,7054,514その他の包括利益合計※１ △13,190※１ 115,217
     message: 半角の「5」と書いています（この文書はふつう全角の「５」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 109
-    text: 【連結包括利益計算書】  （単位：千円）  前連結会計年度(自　平成31年４月１
-    message: この文は 238 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 113
-    text: 1,094,626当期変動額     新株の発行320,377320,377
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 113
-    text: 1,650剰余金の配当   △40,580親会社株主に帰属する当期純利益   2
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 113
-    text: 1,650剰余金の配当  △40,580 △40,580親会社株主に帰属する当期
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 113
-    text: 1,927,647       その他の包括利益累計額純資産合計 その他有価証券
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 113
-    text: 1,927,647当期変動額     新株の発行825825  1,650剰余金
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 113
     text: ③【連結株主資本等変動計算書】前連結会計年度（自　平成31年４月１日　至　令和２
     message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 113
-    text: ③【連結株主資本等変動計算書】前連結会計年度（自　平成31年４月１日　至　令和２
-    message: この文は 1086 文字あります（140 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 117
@@ -1092,17 +872,7 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 117
-    text: 1,128△3,392投資有価証券の取得による支出△1,577△1,710投資有
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
     text: 1,330,6972,090,173現金及び現金同等物の期末残高※１ 2,090
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 1,349△1,765支払利息616207売上債権の増減額（△は増加）△76,3
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
@@ -1112,52 +882,7 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 117
-    text: 1,577△1,710投資有価証券の売却による収入1582,774敷金及び保証金
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 1,710投資有価証券の売却による収入1582,774敷金及び保証金の差入による
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 1,765支払利息616207売上債権の増減額（△は増加）△76,344△163
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,045,720
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,090,173※１ 2,045,720
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,119△11,006無形固定資産の取得による支出△1,128△3,392投資
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,263△10,359その他3,37311,223小計378,937269,4
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
     text: 2,26310,359法人税等の支払額△115,722△123,371営業活動に
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,328その他305△47,576投資活動によるキャッシュ・フロー△24,49
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 2,516未払費用の増減額（△は減少）3,79910,229未払消費税等の増減額
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
@@ -1172,28 +897,8 @@ findings:
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 117
-    text: 3,392投資有価証券の取得による支出△1,577△1,710投資有価証券の売却
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
     text: 3,79910,229未払消費税等の増減額（△は減少）51,868△7,131未
     message: 半角の「3」と書いています（この文書はふつう全角の「３」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 7,131未払法人税等（外形標準課税）の増減額（△は減少）31,698△13,2
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 7,785－助成金の受取額2,26310,359法人税等の支払額△115,722
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 117
-    text: 7,785－助成金収入△2,263△10,359その他3,37311,223小計
-    message: 半角の「7」と書いています（この文書はふつう全角の「７」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 117

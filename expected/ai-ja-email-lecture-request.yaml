@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 大学名・先生の名前・書名『〇〇』・社名・差出人が〇〇のまま（3〜15行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇大学 経営学部
+    message: 「〇〇大学」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.40.0
   - rule: unfilled-placeholder
     line: 4
     text: 〇〇 〇〇 先生
@@ -29,6 +30,11 @@ findings:
     what: 「ご著書『〇〇』を拝読し、…深く共感いたしました」：依頼にない読書歴を差出人に与えている
     verdict: missed
     note: "catalog B01 (invented detail): a claim the sender may not be able to stand behind"
+  - rule: unfilled-placeholder
+    line: 10
+    text: 〇〇市）です。オンラインでのご登壇も可能です。謝礼などの詳細は、改めてご相談させ
+    message: 「〇〇市」が埋まっていません
+    verdict: unjudged
   - rule: unfilled-placeholder
     line: 14
     text: 〇〇　人事部

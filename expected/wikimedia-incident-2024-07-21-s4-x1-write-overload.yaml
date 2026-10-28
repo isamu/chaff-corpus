@@ -3,19 +3,9 @@ chaff: 0.35.0
 findings:
   - rule: undefined-acronym
     line: 10
-    what: the name of the server admin log under Timeline, never expanded
-    verdict: missed
-    note: never spelled out; with the acronym in the pasted alert (27) counting towards the limit, as the rule's not_flagged says of a cited work's acronyms, the business limit of 2 is reached; found by pending lab PRs
-  - rule: undefined-acronym
-    line: 27
-    sha256: 136b3e43f5286b139edc7f80d7044bebbf2161aa94207595126957c9fdd861f3
-    verdict: false-positive
-    note: the acronym is in an alert bot's message pasted into the report, the bot's words and not the writer's; like a note in a cited work's words, it counts towards the limit but is not reported; given by pending lab PRs
-  - rule: hyphen-as-dash
-    line: 29
-    sha256: f08a1e87e421b1946eb36a69b8d886c72ea2821a0785004946872e57331f4c37
-    verdict: false-positive
-    note: a separator inside alert output copied verbatim from a bot, not a dash in prose
+    sha256: 2b1f9e65e6d2f2e2d91d9afbbaf2c112b7b1a828fb46896ab629f3366e0c7676
+    verdict: correct
+    note: never spelled out; with the acronym in the pasted alert (27) counting towards the limit, as the rule's not_flagged says of a cited work's acronyms, the business limit of 2 is reached; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: name-variant
     line: 29
     sha256: 859bbd771497ed4a5d55e4a8c4c7194075f6fd6f36b63466aac717a9cf74c9cd

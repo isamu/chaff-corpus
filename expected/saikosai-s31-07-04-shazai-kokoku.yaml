@@ -21,11 +21,6 @@ findings:
     text: されば少くともこの種の謝罪広告を新聞紙に掲載すべきことを命ずる原判決は、上告人に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 36
-    text: 憲法一九条が思想と良心とをならべて掲げているのは、一は保障の対照の客観的内容的方
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 55
     text: そしてこのフリーダム・オブ・コンシャンス（「信仰の自由」）という辞句はキリスト教

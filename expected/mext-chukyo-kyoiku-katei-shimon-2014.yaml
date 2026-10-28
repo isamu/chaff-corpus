@@ -73,6 +73,11 @@ findings:
     message: この文は 149 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
+  - rule: undefined-acronym
+    line: 24
+    text: OECDが提唱するキー･コンピテンシーの育成に関する取組や，論理的思考力や表現力
+    message: 「OECD」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
   - rule: clause-chain
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
@@ -107,11 +112,6 @@ findings:
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「更に」 where the text writes 「さらに」 elsewhere
-  - rule: teki-overuse
-    line: 25
-    text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
@@ -182,12 +182,11 @@ findings:
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: request-without-deadline
+  - rule: ngram-repetition
     line: 33
-    text: このように，教育内容，学習･指導方法と学習評価の充実を一体的に進めていくために求
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: a 諮問 asks the council named at its head to deliberate; it carries no deadline by its nature
+    text: これからの学習指導要領等については，必要な教育内容を系統的に示すのみならず，育成
+    message: 「育成すべき資質･」が 6 回出てきます（5 回まで）
+    verdict: unjudged
   - rule: hankaku-kana
     line: 35
     text: ･能力と，各教科等の役割や相互の関係はどのように構造化されるべきか。
@@ -206,12 +205,6 @@ findings:
     message: この文は 143 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: ngram-repetition
-    line: 35
-    text: その際，我が国の子供たちにとって今後特に重要と考えられる，何事にも主体的に取り組
-    message: 「どのように考える」が 7 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a 諮問 lists questions for the council; 「どのように考える」 is its form
   - rule: hankaku-kana
     line: 36
     text: ･指導方法はどうあるべきか。その際，特に，現行学習指導要領で示されている言語活動
@@ -234,6 +227,11 @@ findings:
     line: 36
     text: その際，特に，現行学習指導要領で示されている言語活動や探究的な学習活動，社会との
     message: 一文に「〜的」が 3 個あります（2 個まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 36
+    text: ICTを活用した指導の現状等を踏まえつつ，今後の「アクティブ・ラーニング」の具体
+    message: 「ICT」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged
   - rule: hankaku-kana
     line: 37
@@ -383,9 +381,3 @@ findings:
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: request-without-deadline
-    line: 64
-    text: 以上が中心的に御審議をお願いしたい事項でありますが，審議に当たっては，学校と家庭
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: a 諮問 asks the council named at its head to deliberate; it carries no deadline by its nature

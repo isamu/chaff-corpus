@@ -71,16 +71,6 @@ findings:
     text: (注)　取引所を介する外国為替証拠金取引については、この規制はありません。
     message: 「外国為替証拠金取引」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 42
-    text: ＊　登録を受けている業者を確認したい方は、「免許・許可・登録等を受けている業者一
-    message: 「を受けている業者」が 7 回出てきます（5 回まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 51
-    text: FINMAC（フィンマック））（*）に相談してください（ただし、加入第１種金融商
-    message: 半角の「FINMAC」と書いています（この文書はふつう全角の「ＦＩＮＭＡＣ」。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 51
     text: 外国為替証拠金取引に関する個別の取引に関するトラブルについては、会社とよく話し合
@@ -126,50 +116,15 @@ findings:
     text: ネット経由での取引は、業者やインターネットサービスプロバイダー、通信回線の障害等
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 107
-    text: ○取引がある金融商品取引業者の登録を確認するため、金融商品取引業者登録一覧を見て
-    message: 「金融商品取引業者登録一覧」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
   - rule: clause-chain
     line: 111
     text: いずれの業であっても、金融商品取引業として一つの登録制で一つの登録手続を受ければ
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 111
-    text: 金融商品取引法では、金融商品取引業について、第一種金融商品取引業、第二種金融商品
-    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 111
     text: いずれの業であっても、金融商品取引業として一つの登録制で一つの登録手続を受ければ
     message: この文は 147 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 112
-    text: 例えば、第一種金融商品取引業の登録のみを受けている者にあっては、第二種金融商品取
-    message: 「第一種金融商品取引業」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 122
-    text: 金融商品取引業者は、金融商品取引法第四十三条の二において、自己の固有財産と顧客か
-    message: 「金融商品取引法第四十三条」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 123
-    text: 1,000万円を限度に補償することになっています。
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。6 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 125
-    text: 金融商品取引業者は、金融商品取引法第七十九条の二十七において、金融商品取引業の登
-    message: 「金融商品取引法第七十九条」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 126
-    text: 補償の対象となる顧客は、金融商品取引法第七十九条の二十第一項で規定されている「一
-    message: 「金融商品取引法第七十九条」は漢字が 12 字続いています（8 字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 134
@@ -185,11 +140,6 @@ findings:
     line: 151
     text: 下さい。
     message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。20 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 153
-    text: "## 10.  高齢者に対する投資勧誘に関する相談等"
-    message: 「3」の次が「10」です（4 番目のはず）
     verdict: unjudged
   - rule: orthographic-variant
     line: 161

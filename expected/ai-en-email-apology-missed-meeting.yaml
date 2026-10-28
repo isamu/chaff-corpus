@@ -19,9 +19,3 @@ findings:
     message: This sentence runs 19 words (limit 18)
     verdict: correct
     note: 19 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
-  - rule: email-greeting-closing
-    line: 13
-    text: Tom
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: '"Sorry again for the wasted morning." is the closing line above the name'

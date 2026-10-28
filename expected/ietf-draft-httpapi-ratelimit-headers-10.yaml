@@ -1,22 +1,6 @@
 id: ietf-draft-httpapi-ratelimit-headers-10
 chaff: 0.34.0
 findings:
-  - rule: ngram-repetition
-    line: 25
-    sha256: d6d63bc5c0f5c1cb497c5ec6d019643e26976c761630b2d7b938835765f412f6
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 25
-    sha256: 6f9d7e623ff27043ab6ce9a162fa1cd0364621f01a9d9178a5343b763aacda18
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 44
-    sha256: 75061e28ec0846b707a3e605c505e0d70aeddaacdda0cac5caa3759b5e4e2a57
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 78
-    sha256: 402273d99dddd2a5e1d4a608b63f4ceb22d456ed8f9c6917f83fed44d44ca554
-    verdict: unjudged
   - rule: undefined-acronym
     line: 129
     sha256: 2ada534049735847ec4cb0bac69c710bf8d8b30ef9ddc86e1becfcf177cf9e41
@@ -36,6 +20,10 @@ findings:
   - rule: undefined-acronym
     line: 303
     sha256: 57411c3ab1e7a39cc454d0688331cf81b91dac09825ce7588a324f8d54b6564e
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 343
+    sha256: 54b01fff15eb580be2659d59e316242e96295222643c71985ded33c7754c222e
     verdict: unjudged
   - rule: one-sentence-paragraph-run
     line: 347
@@ -81,18 +69,6 @@ findings:
     line: 1036
     sha256: 229dcb09aeec641894e81b8df2cfb64d18ac07c501dc15c74a3f3e24a75a575e
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1079
-    sha256: 2be47cdff43586d07609f38852aba9bc9dfdd4346b09c843dd8978318d60f4e4
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1112
-    sha256: b22812f2083c02d48681717d8a1759351bfd9b184c6e6517f84cc588569c9a31
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1145
-    sha256: 6f508563b318546de93f9ea34da32334cd17cf4066f9cacce67cf94189276def
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 1152
     sha256: d4f663c3ac3c7d6e951e09c23b84548965e5d581adf2714b0646f0a24c04622b
@@ -116,6 +92,10 @@ findings:
   - rule: max-sentence-length
     line: 1546
     sha256: e0e8ebbe6946044c05977070f3b3e66f9abc9b570d5c731afacfcbeb5662c732
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1675
+    sha256: 73f7e967bfd6215f7dad51dde716431ee5ccdf0f38c20dcb902bb3143297d0dd
     verdict: unjudged
   - rule: undefined-acronym
     line: 1821

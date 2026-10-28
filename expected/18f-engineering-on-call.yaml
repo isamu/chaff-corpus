@@ -3,34 +3,40 @@ chaff: 0.33.0
 findings:
   - rule: colon-lead-in
     line: 14
-    what: "\"staffing at least one more engineer ... will better allow:\" hands over a three-item list that is one broken-up sentence (commas, \"and\"); seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: For short, emergent projects, staffing *
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 54
-    what: "\"details that evolve as the system does such as:\" hands over to a list; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: This includes architectural decision rec
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 69
-    what: "\"Questions you should be thinking about from the very first line of code:\" hands over to a list; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: Questions you should be thinking about f
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 102
-    what: "\"This includes (but is not limited to):\" hands over a list written as one broken-up sentence; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: This includes (but
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 117
-    what: "\"These can include:\" hands over to a list; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: "These can include:"
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 137
-    what: "\"The guide should be:\" hands over a list written as one broken-up sentence; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: "The guide should be:"
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: excessive-hedging
     line: 156
     text: could possibly occur in production,
@@ -38,9 +44,10 @@ findings:
     verdict: unjudged
   - rule: colon-lead-in
     line: 159
-    what: "\"These simulations:\" hands over a list that is the rest of the sentence; seven sections of the page open a list this way"
-    verdict: missed
-    note: found by lab main
+    text: "These simulations:"
+    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: vague-link-text
     line: 167
     text: "[here](https://docs.google.com/presentat"

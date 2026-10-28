@@ -6,12 +6,6 @@ findings:
     text: " SUNCALL SANKO CORP.を設立1989年６月米国に合弁会社 SA"
     message: 日本語と英字のあいだを、空ける所が 16 箇所、詰める所が 52 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: max-sentence-length
-    line: 5
-    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
-    message: この文は 2165 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: max-ten
     line: 5
     text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
@@ -64,12 +58,6 @@ findings:
     text: ［自動車関連製品］（日本、北米、アジア）　自動車エンジン用弁ばね、ＡＴ部品、自動
     message: 「自動車用安全装置機能部品」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 9
-    text: ３【事業の内容】　当社の企業集団は、サンコール株式会社（当社）と子会社11社及び
-    message: この段落は 11 文あります（5 文まで）
-    verdict: false-positive
-    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
   - rule: max-sentence-length
     line: 9
     text: ［自動車関連製品］（日本、北米、アジア）　自動車エンジン用弁ばね、ＡＴ部品、自動
@@ -111,11 +99,6 @@ findings:
     text: 役員の兼任等…無しサンコール菊池株式会社熊本県菊池市70自動車関連製品の製造及び
     message: 「菊池株式会社熊本県菊池市」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 13
-    text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
-    message: この段落は 25 文あります（5 文まで）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 13
     text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
@@ -149,11 +132,6 @@ findings:
     verdict: unjudged
   - rule: latin-spacing
     line: 17
-    text: " 515名組織の状況　　　単一組合（上部団体には加盟しておりません。）  (4)"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: latin-spacing
-    line: 17
     text: " 製品区分の名称従業員数（人）自動車分野 　　材料関連製品110　　自動車関連製"
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
     verdict: unjudged
@@ -161,11 +139,6 @@ findings:
     line: 17
     text: 組合の名称　　　サンコール労働組合　　　組合員数 515名組織の状況　　　単一組
     message: 「提出会社当事業年度補足説明管理職」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 17
-    text: ５【従業員の状況】　(1) 連結会社の状況2023年３月31日現在 製品区分の名
-    message: この段落は 13 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 17
@@ -258,11 +231,6 @@ findings:
     text: ＰＨＶ等を含めた電動車の需要が大きく増加することから、高精度に電流を検出するニー
     message: 全角の「ＰＨＶ」と書いています（この文書はふつう半角の「PHV」。197 箇所のうち 23 箇所が違う）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 21
-    text: １【経営方針、経営環境及び対処すべき課題等】　文中の将来に関する事項は、当連結会
-    message: この段落は 25 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 21
     text: ・製品別に市場成長性と収益性を検証・徹底的な製品別採算管理により、既存案件の収益
@@ -303,12 +271,6 @@ findings:
     text: 新中期経営計画では「2030年の事業ポートフォリオ確立に向けた実効的な戦略の加速
     message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 21
-    text: ・顧客需要への対応に向けた設備投資継続と生産効率向上・大容量ハードディスクドライ
-    message: 「は」で出した主題から述語まで 122 字あります（80 字まで）
-    verdict: false-positive
-    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
   - rule: topic-predicate-distance
     line: 21
     text: (3)経営環境　世界経済は、新型コロナウイルス感染症からの回復が一巡する一方で、
@@ -354,11 +316,6 @@ findings:
     text: エネルギ－）拡大への取り組みを加速させてまいります。 (2) 競争の激化　当社グ
     message: 「エネルギ」と「エネルギー」が混ざっています（この語は 4 回のうち 1 回が「エネルギ」）
     verdict: correct
-  - rule: max-paragraph-length
-    line: 25
-    text: ３【事業等のリスク】　当社グループは、リスク管理委員会を設置し、年４回の定期的開
-    message: この段落は 44 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 25
     text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
@@ -474,11 +431,6 @@ findings:
     text: 自動車の電動化が加速し、電子化製品の需要増加と素材転換が進む中、当社は得意とする
     message: 「電子情報通信部品製造技術」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 29
-    text: ６【研究開発活動】　当社は、Fine Precision Products（超精
-    message: この段落は 26 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 29
     text: (3) 通信関連◎光通信用コネクター　発展する情報通信分野における送受信情報トラ
@@ -543,11 +495,6 @@ findings:
     line: 29
     text: HEV・EV関連の車載用バッテリーユニット、インバーター、ジャンクションBOX用
     message: 「HEV」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 29
-    text: ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野へ
-    message: 「IC」が説明なしで使われています（説明のない略語 14 個）
     verdict: unjudged
   - rule: undefined-acronym
     line: 29
@@ -694,11 +641,6 @@ findings:
     text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
     message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 53
-    text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
-    message: この文は 175 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 57
     text: (株)議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－
@@ -712,16 +654,6 @@ findings:
   - rule: latin-spacing
     line: 57
     text: " 10株が含まれております。"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: latin-spacing
-    line: 57
-    text: " 34,057,923－－総株主の議決権 －303,605－（注）１．「完全議決"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: latin-spacing
-    line: 57
-    text: " 342,200株が含まれております。２．「単元未満株式」における普通株式には、"
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
@@ -764,11 +696,6 @@ findings:
     text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
     message: 「株式会社京都市右京区梅津西浦町」は漢字が 15 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 61
-    text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
-    message: この文は 224 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 69
     text: １０（注）　当期間における取得自己株式には、2023年６月１日からこの有価証券報
@@ -793,11 +720,6 @@ findings:
     line: 77
     text: )を公表しておりますが、当社の配当政策は、業績連動型配当の継続実施であり、ROE
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 77
-    text: ３【配当政策】　利益配分につきましては、長期的な視野に立った経営体質の強化、事業
-    message: この段落は 6 文あります（5 文まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 77
@@ -889,11 +811,6 @@ findings:
     text: )資産の部  流動資産  現金及び預金7,5107,707受取手形224258売
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 101
-    text: ①【連結貸借対照表】  （単位：百万円） 前連結会計年度(2022年３月31日)
-    message: この文は 1005 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 105
     text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
@@ -949,30 +866,10 @@ findings:
     text: 【連結包括利益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１
     message: この文は 261 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: latin-spacing
-    line: 113
-    text: " 3 1115株主資本以外の項目の当期変動額（純額）     当期変動額合計－3"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: latin-spacing
-    line: 113
-    text: " 5 1621株主資本以外の項目の当期変動額（純額）     当期変動額合計－5"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。219 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: latin-spacing
-    line: 113
-    text: " 当連結会計年度（自　2022年４月１日　至　2023年３月31日）    （単"
-    message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。239 箇所のうち 10 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 113
     text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
     message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 113
-    text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
-    message: この文は 1133 文字あります（140 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 117

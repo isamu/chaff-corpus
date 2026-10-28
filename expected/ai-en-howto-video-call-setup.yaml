@@ -6,15 +6,3 @@ findings:
     what: paragraphs open with bold sentences ("**Use headphones with a microphone.**", "**Pick the quietest room you can.**" …)
     verdict: missed
     note: catalog E18 (bold labels, en), here as bold lead sentences
-  - rule: bold-emphasis
-    line: 19
-    text: In the evening, put a lamp behind your l
-    message: "8 bold spans of emphasis: 19.7 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: each tip opens its paragraph with a bold instruction, a run-in heading (the bold-label shape outside a list), not emphasis mid-sentence
-  - rule: comparative-without-baseline
-    line: 35
-    text: better.
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: better than a virtual background, the previous sentence

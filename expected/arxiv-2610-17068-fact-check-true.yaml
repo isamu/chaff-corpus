@@ -1,24 +1,12 @@
 id: arxiv-2610-17068-fact-check-true
 chaff: 0.36.0
 findings:
-  - rule: heading-level-skip
-    line: 7
-    text: "###### Abstract"
-    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
   - rule: max-paragraph-length
     line: 9
     text: Misperceptions can run in two directions
     message: This paragraph runs 10 sentences (limit 9)
     verdict: correct
     note: a ten-sentence abstract paragraph
-  - rule: unqualified-superlative
-    line: 13
-    text: Fact-checking has become the most promin
-    message: '"the most" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: '"the most prominent intervention for combating online misinformation" names its set'
   - rule: quote-style-consistency
     line: 19
     text: “not misleading” verdicts but presents n
@@ -48,18 +36,6 @@ findings:
     message: '"the most" has nothing to compare against (4 such claims)'
     verdict: false-positive
     note: '"the most well-known crowdsourced moderation system" names its set'
-  - rule: contraction-consistency
-    line: 37
-    text: These notes were not always excluded, wi
-    message: "\"doesn't\" is written \"does not\" elsewhere in the document"
-    verdict: false-positive
-    note: the contraction is inside a quoted platform label (Tweet doesn’t need a note)
-  - rule: hyphen-as-dash
-    line: 37
-    text: " - Tweet doesn’t need a note’ ” (X Corp."
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the spaced hyphen is inside a quoted platform label, reproduced verbatim
   - rule: date-format-consistency
     line: 43
     text: 28 February 2026.33 3 The population fro
@@ -114,12 +90,6 @@ findings:
     message: '"the best" has nothing to compare against (4 such claims)'
     verdict: false-positive
     note: '"the best-scoring one" names its set (the topics scored)'
-  - rule: unknown-word
-    line: 87
-    text: propositional content. Disputes over a p
-    message: '"propositional" is not in the dictionary; did you mean "prepositional"?'
-    verdict: false-positive
-    note: '"propositional" is a standard word'
   - rule: max-paragraph-length
     line: 91
     text: Every post in the final sample was quest
@@ -132,30 +102,6 @@ findings:
     message: This paragraph runs 11 sentences (limit 9)
     verdict: correct
     note: an eleven-sentence paragraph
-  - rule: unqualified-superlative
-    line: 131
-    text: While comparison between Grok and Commun
-    message: '"the most" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: '"the most common form of debunking used at scale" names its set'
-  - rule: orthographic-variant
-    line: 155
-    text: factors behind fact-checkers’ selection
-    message: '"factors" here, where the document usually writes "FACTors" (1 of 10)'
-    verdict: false-positive
-    note: FACTors is a named term elsewhere; here "factors" is an ordinary word in a cited title
-  - rule: date-format-consistency
-    line: 171
-    text: "2026-09-15 Cited by: §2.2, footnote 2."
-    message: The date "2026-09-15" is written differently from 10 other dates in the document (such as "October 3, 2022")
-    verdict: false-positive
-    note: an ISO date in a reference note (commit or access date), not the prose's date style
-  - rule: date-format-consistency
-    line: 172
-    text: "2026-08-20 Cited by: Appendix A."
-    message: The date "2026-08-20" is written differently from 10 other dates in the document (such as "October 3, 2022")
-    verdict: false-positive
-    note: an ISO date in a reference note (commit or access date), not the prose's date style
   - rule: max-paragraph-length
     line: 190
     text: You are coding X (Twitter) threads in wh
@@ -174,12 +120,6 @@ findings:
     message: This paragraph runs 11 sentences (limit 9)
     verdict: false-positive
     note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
-  - rule: quote-without-source
-    line: 204
-    text: core_claim_false" | "peripheral_detail"
-    message: '"core_claim_false" is given to someone, but no source (a link, a footnote, a reference) is given'
-    verdict: false-positive
-    note: the quoted strings are the allowed label values of the coding prompt, not quotations
   - rule: spelling-consistency
     line: 204
     text: characterise what the displayed note is
@@ -192,15 +132,3 @@ findings:
     message: This paragraph runs 11 sentences (limit 9)
     verdict: correct
     note: an eleven-sentence paragraph
-  - rule: unknown-word
-    line: 278
-    text: biden, government, governor, white house
-    message: '"biden" is not in the dictionary; did you mean "bidet"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list
-  - rule: unknown-word
-    line: 298
-    text: iphone, android, tesla, internet, comput
-    message: '"iphone" is not in the dictionary; did you mean "phone"?'
-    verdict: false-positive
-    note: a wildcard search stem or lowercase name in the topic classifier's keyword list

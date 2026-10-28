@@ -1,12 +1,6 @@
 id: ai-ja-email-apology-late-reply
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 佐藤さん
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: the apology for the late reply opens the email in place of お疲れさまです; natural between colleagues
   - rule: test:invented-detail
     line: 9
     what: 発表テーマ「社内ツールの小さな改善事例」（「前回お話ししていた」）と「資料は11月末までに」が依頼にない

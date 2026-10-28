@@ -1,6 +1,16 @@
 id: yuho-e04862-policy
 chaff: 0.34.0
 findings:
+  - rule: contrast-framing
+    line: 1
+    text: ②資産戦略の深化レンタル用資産の導入においては市場ニーズを最優先させますが、近年
+    message: 「のみならず」など、対比の枠で書いた文が 7.7% あります（6% まで）
+    verdict: unjudged
+  - rule: contrast-framing
+    line: 1
+    text: また、単なる物品賃貸にとどまらず、ワンストップで総合的な顧客サービスを行う「ゼネ
+    message: 「にとどまらず」など、対比の枠で書いた文が 7.7% あります（6% まで）
+    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ICT工法など国内建設需要の内容が変化しつつあることから、現時点のみならず、将来
@@ -10,11 +20,6 @@ findings:
     line: 1
     text: なお、従前から当社で資産効率の重要指標としているＲＯＩ（投下資本回収率）、レンタ
     message: 「減価償却他調整前営業利益」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: １【経営方針、経営環境及び対処すべき課題等】当社グループの経営方針、経営環境及び
-    message: この段落は 26 文あります（5 文まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 1
@@ -50,9 +55,4 @@ findings:
     line: 1
     text: ③メンテナンスコストの最適化レンタル用資産の価値の維持・向上は建機レンタルビジネ
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: 今後も、従来の重点施策「国内営業基盤の拡充」「海外展開」「内部オペレーションの最
-    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: unjudged

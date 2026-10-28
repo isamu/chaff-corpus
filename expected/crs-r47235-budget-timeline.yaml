@@ -2,9 +2,9 @@ id: crs-r47235-budget-timeline
 chaff: 0.33.0
 findings:
   - rule: ngram-repetition
-    line: 11
-    text: The annual submission of the President's
-    message: '"the beginning of the" appears 6 times (limit 5)'
+    line: 13
+    text: In years when Congress has adopted a bud
+    message: '"adopted a budget resolution" appears 6 times (limit 5)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 19

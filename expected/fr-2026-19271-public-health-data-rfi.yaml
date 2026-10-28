@@ -1,18 +1,6 @@
 id: fr-2026-19271-public-health-data-rfi
 chaff: 0.36.0
 findings:
-  - rule: undefined-acronym
-    line: 28
-    text: MS H21-8, Atlanta, GA 30329
-    message: '"MS" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: part of a postal address (mail stop 'MS', street direction 'NE'), not an acronym to expand
-  - rule: undefined-acronym
-    line: 28
-    text: NE, MS H21-8, Atlanta, GA 30329
-    message: '"NE" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: part of a postal address (mail stop 'MS', street direction 'NE'), not an acronym to expand
   - rule: name-variant
     line: 36
     text: Clifton Road NE, MS H21-8, Atlanta, GA 3

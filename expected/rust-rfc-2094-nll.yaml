@@ -1,10 +1,6 @@
 id: rust-rfc-2094-nll
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 3
-    sha256: 42860056e6a70a28a8fe374f1eb92b69303b81a950f9a0ef12f05f2d31e4faec
-    verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 33
     sha256: 07c7c42d61e52ff4f7e2b4738809b8f2fda0db1cc451548a0795492ae84ac170
@@ -48,10 +44,6 @@ findings:
   - rule: undefined-acronym
     line: 509
     sha256: 126d1fe6322b157e9b6e898247514f4c0f43d2db0d44c7af4ed4b6ea7166c0fc
-    verdict: unjudged
-  - rule: unknown-word
-    line: 510
-    sha256: 17f6a737cf9141fabd1c71d4ece2e05c69459a3a5c511e63556b33eb7bfb50b7
     verdict: unjudged
   - rule: undefined-acronym
     line: 517

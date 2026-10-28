@@ -7,6 +7,11 @@ findings:
     message: 節の長さのばらつきが 23% しかありません（35% 以上ほしい）
     verdict: correct
     note: an essay cut into three parallel headed benefits of one size plus おわりに; a reader takes the outline as generated
+  - rule: honesty-marker
+    line: 5
+    text: 最初の1週間は、正直つらかった。目覚ましを止めて布団から出るのがおっくうで、歩い
+    message: 「、正直」と前置きしています
+    verdict: unjudged
   - rule: ai-structure
     line: 7
     what: エッセイに「〜ようになった」「〜が変わった」と揃えた 3 つの見出しと「おわりに」
@@ -29,21 +34,25 @@ findings:
     note: an empty closing section
   - rule: ai-generated-composite
     line: 33
-    what: section-length-uniformity, closing-cliche and closing-exhortation together
-    verdict: missed
-    note: each input is judged correct; found by pending lab PRs
+    text: もし朝の時間をもてあましているなら、一度、家の周りを歩いてみてほしい。きっと、い
+    message: 「honesty-marker、section-length-uniformity、closing-cliche、closing-exhortation」が同じ文書にそろっています（4 種、2 種から）
+    verdict: correct
+    note: each input is judged correct; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: closing-cliche
     line: 33
-    what: 「一度〜してみてほしい。きっと、いつもの街が少し違って見えるはずだ。」と読者に勧めて締める
-    verdict: missed
-    note: "candidate phrase: きっと〜はずだ as a closing promise to the reader"
+    text: もし朝の時間をもてあましているなら、一度、家の周りを歩いてみてほしい。きっと、い
+    message: 「てみてほしい」で締めています
+    verdict: correct
+    note: "candidate phrase: きっと〜はずだ as a closing promise to the reader; found by chaffjs 0.40.0"
   - rule: closing-exhortation
     line: 33
-    what: "「一度、家の周りを歩いてみてほしい」と読者に勧めて締める"
-    verdict: missed
-    note: "found by lab main"
+    text: きっと、いつもの街が少し違って見えるはずだ。
+    message: 「きっと」など、結びで励ます・請け合う文が 2 個あります（2 個から）
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: closing-exhortation
     line: 33
-    what: "「きっと、いつもの街が少し違って見えるはずだ」と請け合って締める"
-    verdict: missed
-    note: "found by lab main"
+    text: もし朝の時間をもてあましているなら、一度、家の周りを歩いてみてほしい。きっと、い
+    message: 「てみてほしい」など、結びで励ます・請け合う文が 2 個あります（2 個から）
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0

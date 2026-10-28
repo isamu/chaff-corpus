@@ -1,11 +1,6 @@
 id: fr-2026-19328-faa-fct-nofo
 chaff: 0.34.0
 findings:
-  - rule: proper-noun-density
-    line: 3
-    text: "Docket # FAA-2026-6240]"
-    message: 346 proper nouns per 1000 words (limit 200)
-    verdict: unjudged
   - rule: max-sentence-length
     line: 15
     text: The Department of Transportation (DOT),

@@ -1,24 +1,6 @@
 id: nps-article-stewardship-in-recreation
 chaff: 0.36.0
 findings:
-  - rule: list-item-form-mix
-    line: 36
-    text: Durable surfaces include maintained trai
-    message: '"Durable surfaces include maintained trails and designated campsites, rock, gravel, sand, dry grasses or snow." opens with a noun phrase; the other items in this list open with a verb (2 of 22)'
-    verdict: false-positive
-    note: "seven separate Leave No Trace lists read as one: the html conversion drops each list's collapsible heading (Principle #1 ...), and a statement item among imperatives is how the official principles are written"
-  - rule: list-item-form-mix
-    line: 38
-    text: Good campsites are found, not made. Alte
-    message: '"Good campsites are found, not made." opens with a noun phrase; the other items in this list open with a verb (2 of 22)'
-    verdict: false-positive
-    note: the same merged list; a statement item among imperatives is how the official principles are written
-  - rule: unknown-word
-    line: 54
-    text: cathole when finished.
-    message: '"cathole" is not in the dictionary; did you mean "cathode"?'
-    verdict: false-positive
-    note: cathole is the standard outdoor term (a small hole dug for human waste)
   - rule: agreement-slip
     line: 94
     what: "'how to safely watch and photography wildlife': the noun photography where the verb photograph is meant"

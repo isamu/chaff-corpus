@@ -16,12 +16,6 @@ findings:
     text: 最も重要なことは、パレスチナが持続可能な形で存在をし、イスラエルと共存することで
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: unjudged
-  - rule: unqualified-superlative
-    line: 30
-    text: 最も重要なことは、パレスチナが持続可能な形で存在をし、イスラエルと共存することで
-    message: 「最も」に比べる相手がありません（そういう言い方が 5 箇所）
-    verdict: false-positive
-    note: 「最も重要なことは」は慣用の言い方
   - rule: max-sentence-length
     line: 32
     text: 我が国が支援して立ち上げたヨルダン川西岸地区のジェリコ農産加工団地では、現在、パ
@@ -32,12 +26,6 @@ findings:
     text: の共通の父祖の名前を冠した合意であります。この２年、アブラハム合意の実現に向けた
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: unqualified-superlative
-    line: 36
-    text: 国内外に、世界で唯一の被爆国である我が国に対して、核兵器禁止条約への参加を求める
-    message: 「唯一の」に比べる相手がありません（そういう言い方が 5 箇所）
-    verdict: false-positive
-    note: 「世界で唯一の被爆国」は比べる範囲（世界）が書かれている
   - rule: unqualified-superlative
     line: 37
     text: そのためには、核の保有国・非保有国、この双方が集うＮＰＴ（核兵器不拡散条約）こそ

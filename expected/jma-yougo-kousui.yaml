@@ -22,18 +22,6 @@ findings:
     text: ともなう雨域。線状降水帯に関する気象情報についてを参照。
     message: 「ともなう」と書いています（この文書はふつう「伴う」と書く語です。12 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 259
-    text: ○○地方では５時から６時までの１時間に20mmの強い雨が降っています。
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: an example of a weather bulletin's wording, quoted under the term
-  - rule: no-mixed-desumasu
-    line: 267
-    text: ○○市付近では１時間におよそ40mmの激しい雨となっています。
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: an example of a weather bulletin's wording, quoted under the term
   - rule: fullwidth-alnum-consistency
     line: 271
     text: 1時間に50mm以上80mm未満の雨。

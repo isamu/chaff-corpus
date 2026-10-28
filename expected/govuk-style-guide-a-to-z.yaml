@@ -17,11 +17,6 @@ findings:
     message: Section "About the A to Z" has no number, code or link (5 of 5 sections)
     verdict: unjudged
   - rule: concrete-evidence-density
-    line: 28
-    text: ""
-    message: Section "Before you suggest a change" has no number, code or link (5 of 5 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
     line: 40
     text: ""
     message: Section "How to suggest a change" has no number, code or link (5 of 5 sections)
@@ -248,12 +243,6 @@ findings:
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: false-positive
     note: the contractions are named as examples of what to avoid, mentioned rather than used
-  - rule: contraction-consistency
-    line: 652
-    text: Use cannot, instead of can’t.
-    message: "\"cannot\" is written \"can't\" elsewhere in the document"
-    verdict: false-positive
-    note: the full form is named as the advised replacement, mentioned rather than used
   - rule: invisible-character
     line: 821
     text: ​
@@ -315,19 +304,9 @@ findings:
     message: '"-" stands in for a dash'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 1638
-    text: MLA.
-    message: '"MLA" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1668
     text: MS.
     message: '"MS" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1672
-    text: MSP.
-    message: '"MSP" is used without an expansion (32 such acronyms)'
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 1717
@@ -353,11 +332,6 @@ findings:
     line: 1876
     text: requires improvement (or grade 3)
     message: '"requires improvement (or grade 3)" opens with a verb; the other items in this list open with a noun phrase (1 of 4)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1918
-    text: DVSA if…’
-    message: '"DVSA" is used without an expansion (32 such acronyms)'
     verdict: unjudged
   - rule: list-item-form-mix
     line: 1945

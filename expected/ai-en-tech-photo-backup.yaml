@@ -3,15 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: over-general-claim
     line: 3
-    what: '"many people keep years of memories on a single phone"'
-    verdict: missed
-    note: a sweeping claim the post never checks, the opener of the pile judged correct on 34 and 53; found by pending lab PRs
-  - rule: unqualified-superlative
-    line: 3
-    text: Your photos are some of the most irrepla
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: '"some of the most irreplaceable files you own" compares within your files; the hook is a cliche, not an unbacked superlative'
+    text: Yet many people keep years of memories o
+    message: '"many people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
+    verdict: correct
+    note: a sweeping claim the post never checks, the opener of the pile judged correct on 34 and 53; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: padded-intro
     line: 5
     what: "\"The good news is that ... In this guide, we'll walk through ...\""
@@ -23,17 +18,17 @@ findings:
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: correct
     note: "\"we'll walk through the best ways\": the stock unbacked promise of a generated guide"
-  - rule: ai-tell
-    line: 9
-    what: '"Before diving into specific tools", "the golden rule of backups"; and "a powerful solution for photography enthusiasts" (49)'
-    verdict: missed
-    note: generated-guide phrasing the ai-tell list does not hold
-  - rule: bold-emphasis
+  - rule: ai-generated-composite
     line: 9
     text: Before diving into specific tools, it he
-    message: "11 bold spans of emphasis: 18 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: "mostly labels: the 3-2-1 rule and its list digits, list labels with the colon outside the bold (**Google Photos**:), Pros:/Cons: run-in labels and the numbered steps; little emphasis mid-sentence"
+    message: '"ai-tell, closing-cliche, colon-lead-in, over-general-claim" occur together in this document (4 signals, 2 needed)'
+    verdict: unjudged
+  - rule: ai-tell
+    line: 9
+    text: Before diving into specific tools, it he
+    message: '"the golden rule of, a powerful solution" appear together (score 7, limit 4)'
+    verdict: correct
+    note: generated-guide phrasing the ai-tell list does not hold; found by chaffjs 0.40.0
   - rule: adverb-overuse
     line: 15
     text: perfectly, but the closer you get, the s
@@ -47,9 +42,10 @@ findings:
     note: the templated comparison outline; ai-score counted only the bold labels
   - rule: colon-lead-in
     line: 21
-    what: '"Popular options include:" and "a great setup looks like this:" (53) hand over to lists'
-    verdict: missed
-    note: "colon-lead-in is a ja-only rule; found by lab main, which runs it for English"
+    text: "Popular options include:"
+    message: 4.9 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: colon-lead-in is a ja-only rule; found by lab main, which runs it for English; found by chaffjs 0.40.0
   - rule: bold-label-list
     line: 23
     text: "- **Google Photos**: Works on both Andro"
@@ -64,9 +60,10 @@ findings:
     note: "\"more than enough for most people\": generic advice that does not know the reader's library, with line 53 the same"
   - rule: colon-lead-in
     line: 36
-    what: "\"use built-in backup software to do it automatically:\" hands over to a list"
-    verdict: missed
-    note: "found by lab main"
+    text: Better yet, use built-in backup software
+    message: 4.9 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: concrete-evidence-density
     line: 45
     what: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
@@ -78,23 +75,23 @@ findings:
     message: '"a NAS" takes "an" before that sound'
     verdict: false-positive
     note: NAS is said as one syllable ("nas"), so "a NAS" is right
-  - rule: over-general-claim
-    line: 47
-    text: For those with very large photo librarie
-    message: '"everyone" and other sweeping claims: 4.9 per 1000 words (limit 3)'
-    verdict: false-positive
-    note: '"stores files for everyone" is the family members named in the same sentence, not people in general'
+  - rule: colon-lead-in
+    line: 53
+    text: For most people, a great setup looks lik
+    message: 4.9 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: over-general-claim
     line: 53
     text: For most people, a great setup looks lik
     message: '"most people" and other sweeping claims: 4.9 per 1000 words (limit 3)'
     verdict: correct
     note: "\"For most people, a great setup looks like this\": the generated post's sweeping recommendation"
-  - rule: colon-lead-in
-    line: 53
-    what: "\"For most people, a great setup looks like this:\" hands over to a list"
+  - rule: ai-generated-composite
+    line: 67
+    what: closing-cliche, colon-lead-in and over-general-claim together
     verdict: missed
-    note: "found by lab main"
+    note: each input is judged correct (67; 21/36/53; 34/53); found by pending lab PRs
   - rule: cliche
     line: 67
     what: "\"The best backup plan is the one you'll actually stick with\""
@@ -102,17 +99,7 @@ findings:
     note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39
   - rule: closing-cliche
     line: 67
-    what: "\"Final Thoughts\": \"easy to put off — until it's too late\", \"Your future self will thank you.\""
-    verdict: missed
-    note: stock closing lines of a generated post
-  - rule: ai-generated-composite
-    line: 67
-    what: closing-cliche, colon-lead-in and over-general-claim together
-    verdict: missed
-    note: each input is judged correct (67; 21/36/53; 34/53); found by pending lab PRs
-  - rule: unqualified-superlative
-    line: 67
-    text: The best backup plan is the one you'll a
-    message: '"the best" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: "\"the best plan is the one you'll stick with\" compares plans; it is a stock aphorism (recorded as cliche), not an unbacked superlative"
+    text: Your future self will thank you.
+    message: Closes with "future self will thank you"
+    verdict: correct
+    note: stock closing lines of a generated post; found by chaffjs 0.40.0

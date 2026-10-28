@@ -50,42 +50,12 @@ findings:
     message: 全角の「ＨＰ」と書いています（この文書はふつう半角の「HP」。25 箇所のうち 1 箇所が違う）
     verdict: correct
     note: full-width ＨＰ once against half-width elsewhere
-  - rule: list-item-form-mix
-    line: 35
-    text: 氏名（名称）変更届様式（特許庁ＨＰサイト「出願の事前手続様式一覧 」）
-    message: 「氏名（名称）変更届様式（特許庁ＨＰサイト「出願の事前手続様式一覧 」）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
-    verdict: false-positive
-    note: a link item (a form's name) in a list of instructions
-  - rule: max-kanji-continuous
-    line: 44
-    text: ［当事者系審判請求人］［異議申立人］
-    message: 「当事者系審判請求人」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: a fixed legal term for a party (当事者系審判請求人)
-  - rule: max-kanji-continuous
-    line: 46
-    text: 当事者系審判請求人等の氏名について旧氏を併記したい場合は、審判請求書の「氏名又は
-    message: 「当事者系審判請求人等」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: a fixed legal term for a party (当事者系審判請求人) with 等
   - rule: orthographic-variant
     line: 48
     text: 毎に「氏名（名称）変更届」（特許法施行規則　様式第6）の手続をしてください。
     message: 「毎」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「毎」 once against 「ごと」 elsewhere
-  - rule: max-kanji-continuous
-    line: 50
-    text: ［当事者系審判被請求人］［異議被申立人（権利者）］
-    message: 「当事者系審判被請求人」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: a fixed legal term for a party (当事者系審判被請求人)
-  - rule: list-item-form-mix
-    line: 69
-    text: 記載例（手続補正書）
-    message: 「記載例（手続補正書）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
-    verdict: false-positive
-    note: a label item (記載例) that introduces a form example, not a sentence item
   - rule: unfilled-placeholder
     line: 77
     text: 【氏名】　特許（実用）　太郎
@@ -124,24 +94,12 @@ findings:
     text: A9-2：国内書面には、戸籍上の氏名又は旧氏を併記した氏名について記載することが
     message: 「することが可能」は、もっと短く言えます
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 121
-    text: 例：発明者○○（○○）　○○の氏名について、国際段階においては戸籍上の氏名を記載
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: an example of what to write in the 【その他】 field, in the plain style a filing uses
   - rule: title-length
     line: 123
     text: "### Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出"
     message: 見出し「Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出願）についても旧氏を併記することは可能ですか。」は 58 文字あります（40 文字まで）
     verdict: false-positive
     note: an FAQ question used as a heading
-  - rule: max-kanji-continuous
-    line: 138
-    text: 【特許】出願手続に関すること
-    message: 「方式審査室第三担当」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the name of a JPO office (方式審査室第三担当)
   - rule: latin-spacing
     line: 184
     text: " 2715"
@@ -154,12 +112,6 @@ findings:
     message: 括弧を「]」と書いています（この文書はふつう「］」。17 箇所のうち 1 箇所が違う）
     verdict: correct
     note: ［更新日　2021年10月1日] opens full-width and closes half-width
-  - rule: date-format-consistency
-    line: 192
-    text: 2021年10月1日]
-    message: 日付「2021年10月1日」の書き方が、この文書のほかの日付（「令和3年9月30日」など 3 箇所）と違います
-    verdict: false-positive
-    note: the site footer's update date is in the Western calendar by the site's convention; the body's dates are 令和
   - rule: unbalanced-bracket
     line: 192
     text: "]"

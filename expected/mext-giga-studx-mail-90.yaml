@@ -72,9 +72,3 @@ findings:
     message: この文は 81 文字あります（70 文字まで）
     verdict: correct
     note: "rekeyed: chaffjs 0.36.0 joins the quoted title above to it (line 66, false positive); lab main reads it alone; found by chaffjs 0.38.0"
-  - rule: latin-spacing
-    line: 78
-    text: " GIGA StuDX（ギガ スタディーエックス）推進チーム"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。21 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the space separates two organisational units (局 and チーム) in the contact block, not a Japanese word and a Latin word in prose

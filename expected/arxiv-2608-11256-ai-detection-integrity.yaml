@@ -7,12 +7,6 @@ findings:
     message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
     verdict: false-positive
     note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
-  - rule: heading-level-skip
-    line: 9
-    text: "###### Abstract."
-    message: Heading "Abstract." goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
   - rule: figure-reference-order
     line: 51
     text: Fig. 1).
@@ -82,11 +76,6 @@ findings:
     text: "#### Practice"
     message: 'The heading "Practice" ends bare, while 13 other headings end with a mark ("Reading A: proxy-AI labeling.")'
     verdict: unjudged
-  - rule: heading-level-skip
-    line: 113
-    text: "#### Practice"
-    message: Heading "Practice" goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 115
     text: ..
@@ -97,11 +86,6 @@ findings:
     line: 117
     text: "#### Limitations"
     message: 'The heading "Limitations" ends bare, while 13 other headings end with a mark ("Reading A: proxy-AI labeling.")'
-    verdict: unjudged
-  - rule: heading-level-skip
-    line: 125
-    text: "###### Acknowledgements."
-    message: Heading "Acknowledgements." goes from level 2 to level 6 (expected 3)
     verdict: unjudged
   - rule: orthographic-variant
     line: 134
@@ -146,34 +130,12 @@ findings:
     text: Zhang, S. Li, B. Hauer, N. Shi, and G. K
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: unjudged
-  - rule: heading-level-skip
-    line: 175
-    text: "#### Reading A: proxy-AI labeling."
-    message: 'Heading "Reading A: proxy-AI labeling." goes from level 2 to level 4 (expected 3)'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 201
-    text: nboot=2,000; seed 42) at τ=0.50.
-    message: '"nboot" is not in the dictionary; did you mean "boot"?'
-    verdict: false-positive
-    note: "'nboot' is the text form of the formula n_boot"
   - rule: broken-link
     line: 297
     text: "[A-Za-z0-9][A-Za-z0-9\\-\\+\\./]*"
     message: '"[A-Za-z0-9][A-Za-z0-9\-\+\./]" is a reference-style link with no definition (it shows as plain text)'
     verdict: false-positive
     note: a regular-expression character class '[A-Za-z0-9]' read as a reference-style link
-  - rule: heading-level-skip
-    line: 301
-    text: "#### Numeric token ratio."
-    message: Heading "Numeric token ratio." goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
-  - rule: spelling-consistency
-    line: 321
-    text: analyse/analyze).
-    message: '"analyse" here, where the document usually spells it "analyze" (1 of 29)'
-    verdict: false-positive
-    note: "'analyse/analyze' names the spelling pair itself as an example"
   - rule: hyphen-as-dash
     line: 389
     text: " - the pattern behind proxy false-positi"

@@ -14,6 +14,11 @@ findings:
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
+    line: 10
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
     line: 11
     text: 〇〇）：〇〇様、〇〇様
     message: 「〇〇」が埋まっていません

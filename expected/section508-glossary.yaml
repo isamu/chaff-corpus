@@ -28,12 +28,6 @@ findings:
     text: RSA tokens.
     message: '"RSA" is used without an expansion (11 such acronyms)'
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 175
-    text: --external">FY24-Data-Dictionary-(XLSX)<
-    message: '"--" stands in for a dash'
-    verdict: false-positive
-    note: the double hyphen is inside raw HTML markup that the page shows as text (a page defect, but not a dash)
   - rule: unbalanced-bracket
     line: 199
     text: “Completely Automated Public Turing Test
@@ -55,12 +49,6 @@ findings:
     text: OMB new authority and responsibility for
     message: '"OMB" is used without an expansion (11 such acronyms)'
     verdict: correct
-  - rule: orthographic-variant
-    line: 266
-    text: Realtime Translation (CART)
-    message: '"Realtime" here, where the document usually writes "Real-Time" (2 of 8)'
-    verdict: false-positive
-    note: Communication Access Realtime Translation (CART) is a proper name spelled Realtime
   - rule: orthographic-variant
     line: 268
     text: realtime software. For CART services, se
@@ -116,12 +104,6 @@ findings:
     text: They make videos accessible for people w
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: correct
-  - rule: undefined-acronym
-    line: 799
-    text: USC. 3502 (20).
-    message: '"USC" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: USC in a statute citation (44 USC 3502), a standard citation form
   - rule: hyphen-as-dash
     line: 807
     text: " - Low, and so on."
@@ -153,18 +135,6 @@ findings:
     text: which support macros or scripting.
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: unjudged
-  - rule: numbering-gap
-    line: 987
-    text: Section 508 Program or equivalent
-    message: '"Section 508" follows "Section 508" (expected number 509)'
-    verdict: false-positive
-    note: glossary headwords that begin with "Section 508", not a numbered sequence
-  - rule: numbering-gap
-    line: 991
-    text: Section 508 Program Manager
-    message: '"Section 508" follows "Section 508" (expected number 509)'
-    verdict: false-positive
-    note: glossary headwords that begin with "Section 508", not a numbered sequence
   - rule: undefined-acronym
     line: 993
     text: CIO whose duties include developing and

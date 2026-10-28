@@ -24,6 +24,11 @@ findings:
     what: 「体験談」が確認手順の一覧と同じ順に進み、どの手順もきれいな数字（200→10→60Mbps）と教訓で終わる
     verdict: missed
     note: "candidate pattern: a checklist dressed as an anecdote; needs judgement. The persona's details (8年前の機種, テレビ台の裏) are invented"
+  - rule: honesty-marker
+    line: 19
+    text: 正直、これがいちばん効きました。
+    message: 「正直、」と前置きしています
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 21
     text: のラックの下の段に押し込んでありました。見た目がすっきりするのでそうしていたので
@@ -38,11 +43,13 @@ findings:
     note: 「と言われている」 with no source; an editor would ask who says so. A mild AI sign
   - rule: ai-generated-composite
     line: 46
-    what: section-length-uniformity and closing-cliche together
-    verdict: missed
-    note: section-length-uniformity (1) and closing-cliche (46) are correct; sentence-rhythm is false-positive (3), which leaves two, the blog limit; found by pending lab PRs
+    text: 同じように困っている方の参考になればうれしいです。
+    message: 「honesty-marker、section-length-uniformity、sentence-rhythm、closing-cliche」が同じ文書にそろっています（4 種、2 種から）
+    verdict: correct
+    note: section-length-uniformity (1) and closing-cliche (46) are correct; sentence-rhythm is false-positive (3), which leaves two, the blog limit; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: closing-cliche
     line: 46
-    what: 「同じように困っている方の参考になればうれしいです」 as the last line
-    verdict: missed
-    note: the Japanese "hope this helps", the rule's own example of a closing that only thanks the reader; found by pending lab PRs
+    text: 同じように困っている方の参考になればうれしいです。
+    message: 「参考になれば」で締めています
+    verdict: correct
+    note: the Japanese "hope this helps", the rule's own example of a closing that only thanks the reader; found by pending lab PRs; found by chaffjs 0.40.0

@@ -19,12 +19,6 @@ findings:
     message: '"There is ..." appears 8 times (limit 3)'
     verdict: false-positive
     note: "\"There's another kind of hike\" introduces the second of two items; no tighter wording"
-  - rule: unqualified-superlative
-    line: 27
-    text: The best thing about this gathering is t
-    message: '"the best" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: '"the best thing about this gathering" names its comparison set'
   - rule: max-sentence-length
     line: 29
     text: Innovation is the conference theme, and
@@ -79,12 +73,6 @@ findings:
     message: This sentence runs 26 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
-  - rule: unqualified-superlative
-    line: 65
-    text: Might there be a heterogeneity of tokens
-    message: '"the best" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: '"the best models at the frontier" names its set'
   - rule: max-sentence-length
     line: 79
     text: And I believe when policymakers make qua
@@ -97,12 +85,6 @@ findings:
     message: This sentence runs 27 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
-  - rule: unqualified-superlative
-    line: 91
-    text: The most serious harm is likely to befal
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: '"the most serious harm" compares with the costs named in the previous sentence'
   - rule: max-sentence-length
     line: 95
     text: I wish our understanding of the economy
@@ -235,15 +217,3 @@ findings:
     message: This sentence runs 35 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
-  - rule: max-sentence-length
-    line: 211
-    text: As Ravi Menon, former managing director
-    message: This sentence runs 36 words (limit 25)
-    verdict: false-positive
-    note: most of the length is a verbatim quotation in a footnote
-  - rule: orthographic-variant
-    line: 215
-    text: Decision-Making Beyond the Numbers (New
-    message: '"Decision-Making" here, where the document usually writes "decisionmaking" (1 of 3)'
-    verdict: false-positive
-    note: '"Decision-Making" is in the title of a cited book, which keeps its own spelling'

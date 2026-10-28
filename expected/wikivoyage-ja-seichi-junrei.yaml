@@ -1,16 +1,6 @@
 id: wikivoyage-ja-seichi-junrei
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 1
-    sha256: 294290f291f3acbe76eb6e6055373b000e262160421c4236a864bae43b5885f3
-    verdict: false-positive
-    note: 作品名と地名を並べる旅程記事で、固有名詞の多さは内容そのもの
-  - rule: list-item-form-mix
-    line: 19
-    sha256: 154bd7651af05dbf7480a268044da051f80c1957c2ad898ab6f45c449b24a97b
-    verdict: false-positive
-    note: 作品名（ラブライブ!シリーズ）の「!」は題名の一部で、文の終わりではない
   - rule: empty-section
     line: 25
     sha256: 35972e6ca23f3deb155162a8cbd57772193e174d6d6d0b3c781ef2d572bac052

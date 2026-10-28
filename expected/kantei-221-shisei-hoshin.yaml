@@ -47,11 +47,6 @@ findings:
     text: の海底のレアアース資源の活用に向け、取組を急ぎます。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 98
-    text: 福島第一原子力発電所の廃炉に向けた取組を着実に進めます。
-    message: 「福島第一原子力発電所」は漢字が 10 字続いています（8 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 99
     text: また、希望される住民の皆様の帰還、営農や森林整備の再開による生活や生業の再建、福

@@ -31,12 +31,6 @@ findings:
     text: 2023年は当社の油圧・材料・熱制御の要素技術を融合したフッ素樹脂用小型射出成形
     message: 「素樹脂用小型射出成形機」は漢字が 11 字続いています（10 字まで）
     verdict: correct
-  - rule: max-paragraph-length
-    line: 1
-    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
-    message: この段落は 29 文あります（5 文まで）
-    verdict: false-positive
-    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
   - rule: max-sentence-length
     line: 1
     text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ

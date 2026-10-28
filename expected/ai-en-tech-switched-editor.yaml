@@ -1,23 +1,27 @@
 id: ai-en-tech-switched-editor
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# I went back to a plain text editor for"
-    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: section-length-uniformity
     line: 1
     text: ""
     message: Section length varies by only 23% (want at least 35%)
     verdict: correct
     note: the four sections are of one size and follow the before/during/what I missed/where I landed arc; reads as generated
+  - rule: ai-generated-composite
+    line: 3
+    text: Code, notes, even grocery lists, if I'm
+    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
+    verdict: unjudged
   - rule: ai-tell
     line: 3
     what: "\"if I'm being honest\""
     verdict: missed
     note: candidate pattern (honesty marker), under 'make it sound human'
+  - rule: honesty-marker
+    line: 3
+    text: Code, notes, even grocery lists, if I'm
+    message: "\"if I'm being honest\" flags this sentence as candid"
+    verdict: unjudged
   - rule: adverb-overuse
     line: 9
     text: actually remember what I'd called things
@@ -29,12 +33,6 @@ findings:
     what: '"- **Renaming across files.**", "- **Type errors.**", "- **Debugging.**"'
     verdict: missed
     note: catalog E18 (bold labels, en); also exactly three
-  - rule: comparative-without-baseline
-    line: 27
-    text: better, and I'm not going to pretend oth
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: better than print statements, named in the same sentence
   - rule: test:moral-ending
     line: 33
     what: '"That was worth an afternoon or two of grepping." returns to the grepping of the first week for a neat close'

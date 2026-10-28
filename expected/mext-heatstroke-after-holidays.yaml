@@ -46,11 +46,6 @@ findings:
     text: 置く各国立大学法人担当課
     message: 「置く」と書いています（この文書はふつう「おく」と書く語です。12 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 22
-    text: 文部科学省総合教育政策局男女共同参画共生社会学習・安全課
-    message: 「文部科学省総合教育政策局男女共同参画共生社会学習」は漢字が 24 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 30
     text: 7月～8月にかけては休業日を設定している学校も多いと思いますが、休業日明けの時期

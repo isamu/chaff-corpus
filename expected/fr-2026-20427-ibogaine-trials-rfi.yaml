@@ -145,12 +145,6 @@ findings:
     message: This sentence runs 52 words (limit 45)
     verdict: correct
     note: a 52-word sentence
-  - rule: unknown-word
-    line: 133
-    text: paroxetine, sertraline). Any medications
-    message: '"paroxetine" is not in the dictionary; did you mean "paroxetime"?'
-    verdict: false-positive
-    note: paroxetine, a drug name
   - rule: undefined-acronym
     line: 151
     text: ECG without QTc prolongation. Upon physi

@@ -1,12 +1,6 @@
 id: mdn-glossary-vendor-prefix-ja
 chaff: 0.37.0
 findings:
-  - rule: comparative-without-baseline
-    line: 10
-    text: より困難になりました。また、接頭辞付きの機能を含むことは、小規模なブラウザーベン
-    message: 「より困難」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: '"became more difficult": a change over time, the baseline is the earlier state'
   - rule: bracket-width-consistency
     line: 41
     text: （しかし、その中のプロパティやメソッドには付きません）。標準化されたインターフェ

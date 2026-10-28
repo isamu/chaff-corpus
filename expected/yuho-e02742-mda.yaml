@@ -16,56 +16,6 @@ findings:
     text: )経営者の視点による経営成績等の状況に関する分析・検討内容経営者の視点による当社
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: １トン当たり期中平均1,232千円と前期平均1,195千円に比べ3.1％上昇いた
-    message: 全角の「１」と書いています（この文書はふつう半角の「1」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: １トン当たり期初1,170千円、高値1,310千円（2023年８月）、安値1,1
-    message: 全角の「１」と書いています（この文書はふつう半角の「1」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: １日至2023年10月31日）前年同期比（％）電線・ケーブル（百万円）124,9
-    message: 全角の「１」と書いています（この文書はふつう半角の「1」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: １月）、期末1,250千円）。また、建設・電販向けの出荷量は、前期に比べおおむね
-    message: 全角の「１」と書いています（この文書はふつう半角の「1」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ２年前倒しで目標を達成したため、新たに2026年10月期を最終年度とする「泉州電
-    message: 全角の「２」と書いています（この文書はふつう半角の「2」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1)経営
-    message: 全角の「４」と書いています（この文書はふつう半角の「4」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ５月に当社北陸支店（石川県金沢市）を開設いたしました。この結果、当連結会計年度の
-    message: 全角の「５」と書いています（この文書はふつう半角の「5」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ７日に公表いたしました。経営数値目標は連結売上高1,500億円、経常利益100億
-    message: 全角の「７」と書いています（この文書はふつう半角の「7」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ８日公表の2025年10月期を最終年度とする「泉州電業グループ中期経営計画」を策
-    message: 全角の「８」と書いています（この文書はふつう半角の「8」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: ８月）、安値1,140千円（2023年１月）、期末1,250千円）。また、建設・
-    message: 全角の「８」と書いています（この文書はふつう半角の「8」。70 箇所のうち 10 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
     text: （親会社株主に帰属する当期純利益）経常利益に特別損益を加えた税金等調整前当期純利
@@ -86,12 +36,6 @@ findings:
     text: 販売実績当連結会計年度における販売実績は、次のとおりであります。セグメントの名称
     message: 「販売実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1)経営
-    message: この段落は 54 文あります（5 文まで）
-    verdict: false-positive
-    note: the dataset dropped the report's line breaks, so a whole section is one paragraph
   - rule: max-sentence-length
     line: 1
     text: （親会社株主に帰属する当期純利益）経常利益に特別損益を加えた税金等調整前当期純利
@@ -137,12 +81,6 @@ findings:
     text: の新設のための設備投資であります。これらの資金需要につきましては、営業活動による
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 1
-    text: の状況の分析】(1)経営成績等の状況の概要当連結会計年度における当社グループ（当
-    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
-    verdict: false-positive
-    note: the report's fixed section heading, run together with the body by the dataset, is read as part of the sentence
   - rule: repeated-sentence-ending
     line: 1
     text: (2)経営者の視点による経営成績等の状況に関する分析・検討内容経営者の視点による

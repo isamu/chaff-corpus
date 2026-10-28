@@ -1,15 +1,3 @@
 id: aozora-terada-coffee-tetsugaku-josetsu
 chaff: 0.36.0
-findings:
-  - rule: teki-overuse
-    line: 19
-    text: 芸術でも哲学でも宗教でも、それが人間の人間としての顕在的実践的な活動の原動力とし
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: 1930s literary prose stacking 〜的 adjectives (顕在的実践的), the author's style
-  - rule: teki-overuse
-    line: 20
-    text: 前者は信仰的主観的であるが、後者は懐疑的客観的だからかもしれない。
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: false-positive
-    note: a deliberate parallel (信仰的主観的 / 懐疑的客観的)
+findings: []

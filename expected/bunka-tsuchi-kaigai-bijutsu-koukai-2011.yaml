@@ -51,11 +51,6 @@ findings:
     text: 法は，海外の美術品等の我が国における公開の促進を図るため，海外の美術品等に対する
     message: 「は」で出した主題から述語まで 171 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 32
-    text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
-    message: 「域内市町村教育委員会及」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 32
     text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
@@ -146,41 +141,10 @@ findings:
     text: 国は，海外の美術品等の我が国における公開を促進するため，海外の美術品等に関する専
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 69
-    text: 施行期日等
-    message: 「施行期日等」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 79
-    text: 学術上優れた価値を有する動産で政令で定めるもの
-    message: |-
-      「学術上優れた価値を有する動産で政令で定めるもの
-      法第2条第2号の政令で定める動産は，次に掲げるものとしたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 86
-    text: 指定の要件
-    message: |-
-      「指定の要件
-      法第3条第1項本文の政令で定める要件は，次のいずれにも該当するものであることとしたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 93
-    text: 強制執行等をすることができる場合
-    message: |-
-      「強制執行等をすることができる場合
-      法第3条第1項ただし書の政令で定める場合は，次に掲げる場合としたこと。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（11 項目のうち 3 項目）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 111
     text: 法第3条第2項の申請をしようとする者（以下「申請者」という。）は，次に掲げる事項
     message: この文は 75 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 114
-    text: 法第3条第1項の指定（以下単に「指定」という。）を受けようとする海外の美術品等の
-    message: 「を受けようとする」が 10 回出てきます（5 回まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 114

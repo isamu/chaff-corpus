@@ -18,11 +18,6 @@ findings:
     line: 10
     sha256: 1fc759690dac307ae42a724aaaf67ecf2e3f7cf4e44733ef55b5f512c537fc39
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 13
-    sha256: cee34158c5204abf2b6d3074340d24accf8237527983c88bbeac7b7bf5906081
-    verdict: false-positive
-    note: a common abbreviation for to be announced, used as a placeholder time
   - rule: adverb-overuse
     line: 16
     sha256: c6616784b59e8612af116bf4227da09642b9af68e761afae58978d2c9e2a8492

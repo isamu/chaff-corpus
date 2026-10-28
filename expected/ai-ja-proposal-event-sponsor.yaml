@@ -3,21 +3,26 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 差出人と大会名・市名が〇〇のまま（3・7・11行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.40.0
   - rule: no-mixed-desumasu
     line: 7
     text: 承認をお願いします。
     message: この文だけ他と文末の調子が違います（本文の中で 1 文）
     verdict: false-positive
     note: a memo in plain form with the request line in polite form; the conventional shape of a short 稟議
-  - rule: request-without-deadline
+  - rule: unfilled-placeholder
     line: 7
-    text: 承認をお願いします。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: the deadline is given at the end (申込締切 12月15日, 12月の経営会議で決めたい)
+    text: 〇〇市民マラソン」に、協賛金30万円で協賛したい。承認をお願いします。
+    message: 「〇〇市」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 11
+    text: 〇〇市で毎年5,000人が参加する大会。地元での知名度向上につながる
+    message: 「〇〇市」が埋まっていません
+    verdict: unjudged
   - rule: test:invented-detail
     line: 18
     what: 採用での効果（14行）と広告宣伝費の残り約120万円が依頼にない

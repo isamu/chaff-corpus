@@ -1,11 +1,6 @@
 id: rust-goal-2025h1-vision-doc
 chaff: 0.35.0
 findings:
-  - rule: concrete-evidence-density
-    line: 10
-    text: ""
-    message: Section "Summary" has no number, code or link (5 of 11 sections)
-    verdict: unjudged
   - rule: cliche
     line: 19
     text: The document will help us focus our ener
@@ -36,16 +31,16 @@ findings:
     text: The design of new features in complex do
     message: This sentence runs 47 words (limit 45)
     verdict: correct
+  - rule: undefined-acronym
+    line: 57
+    text: RFC'd, which meant it did not truly repr
+    message: '"RFC" is used without an expansion (1 such acronym)'
+    verdict: unjudged
   - rule: contraction-consistency
     line: 61
     text: For each of those, we'll make recommenda
     message: "\"we'll\" is written \"we will\" elsewhere in the document"
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 91
-    text: ""
-    message: Section "The "shiny future" we are working towards" has no number, code or link (5 of 11 sections)
-    verdict: unjudged
   - rule: known-misspelling
     line: 93
     text: completement to the Rust Project Goal sy

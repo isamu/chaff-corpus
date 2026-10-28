@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: ai-structure
     line: 3
-    what: 背景・課題・提案・効果・費用・スケジュール・懸念点・まとめの番号付きひな形に、太字の札の箇条書きを並べた構成
-    verdict: missed
-    note: "the textbook generated proposal outline; ai-structure (ai-score: Structure) did not count it; found by lab main, on the first heading (line 3)"
+    text: "## 1. 提案の背景"
+    message: 構成の 3 項目が、人の記事の 9 割を超えています（3 項目から）。節の長さのばらつき、太字の見出しで始まる項目、提案書・報告書の定型の見出し
+    verdict: correct
+    note: "the textbook generated proposal outline; ai-structure (ai-score: Structure) did not count it; found by lab main, on the first heading (line 3); found by chaffjs 0.40.0"
   - rule: colon-lead-in
     line: 11
     what: 「主に次のような課題があります。」で箇条書きへ渡している（句点で終わる前置き）
@@ -22,17 +23,17 @@ findings:
     what: 「月約90時間」の負担を背景（5行）と課題の1項目めで二度言っている
     verdict: missed
     note: a fact restated in the next section
-  - rule: test:invented-detail
-    line: 31
-    what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
-    verdict: missed
-    note: invented estimate stated as fact; needs judgement
   - rule: bold-density
     line: 31
     text: 作業時間の削減**：入力作業がなくなり、確認作業が中心となるため、月90時間の作
     message: このセクションは 213 字に太字が 5 箇所あります（1000 字あたり 20 箇所まで）
     verdict: correct
     note: five bold labels in one short section, the same list shape
+  - rule: test:invented-detail
+    line: 31
+    what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
+    verdict: missed
+    note: invented estimate stated as fact; needs judgement
   - rule: unfilled-placeholder
     line: 39
     text: 〇万円程度が必要です。

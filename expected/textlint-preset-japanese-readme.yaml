@@ -1,12 +1,6 @@
 id: textlint-preset-japanese-readme
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 3
-    text: textlint rule preset](https://github.com
-    message: 1000 字あたり 46 個の固有名詞があります（40 個まで）
-    verdict: false-positive
-    note: rule and tool names in a preset's README, which lists rules by name
   - rule: list-item-form-mix
     line: 9
     text: 一般的な文書で利用するためのルール集

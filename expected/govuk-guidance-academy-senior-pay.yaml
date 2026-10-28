@@ -31,11 +31,6 @@ findings:
     text: The requirements aim to ensure appropria
     message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 47
-    text: ""
-    message: Section "Comparing executive pay and teacher pay increases" has no number, code or link (16 of 22 sections)
-    verdict: unjudged
   - rule: ngram-repetition
     line: 49
     text: For the purposes of these controls, acad
@@ -46,20 +41,10 @@ findings:
     text: Where a proposed increase in executive r
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 63
-    text: ""
-    message: Section "Making an application for approval on senior pay decisions" has no number, code or link (16 of 22 sections)
-    verdict: unjudged
   - rule: vague-word-density
     line: 67
     text: DfE’s financial benchmarking and insight
     message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 71
-    text: ""
-    message: Section "Governance and decision-making" has no number, code or link (16 of 22 sections)
     verdict: unjudged
   - rule: vague-word-density
     line: 73
@@ -145,11 +130,6 @@ findings:
     line: 129
     text: ""
     message: Section "e) labour market considerations and location of the senior employee’s role:" has no number, code or link (16 of 22 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 135
-    text: ""
-    message: Section "Supporting evidence" has no number, code or link (16 of 22 sections)
     verdict: unjudged
   - rule: concrete-evidence-density
     line: 139

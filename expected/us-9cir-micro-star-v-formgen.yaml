@@ -7,12 +7,6 @@ findings:
     message: '"GT" is used without an expansion (6 such acronyms)'
     verdict: correct
     note: GT, part of a company's name (GT Interactive Software Corp.), is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
-  - rule: undefined-acronym
-    line: 17
-    text: CD, which it then sold commercially as N
-    message: '"CD" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: CD, a common word that needs no expansion
   - rule: max-paragraph-length
     line: 40
     text: FormGen alleges that its copyright is in
@@ -31,12 +25,6 @@ findings:
     message: 'Punctuation is doubled: ".."'
     verdict: correct
     note: "'Id..' doubles the period of the abbreviation"
-  - rule: undefined-acronym
-    line: 77
-    text: CD-ROM.
-    message: '"CD-ROM" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: CD-ROM, a common word that needs no expansion
   - rule: contraction-consistency
     line: 80
     text: Micro Star argues that, because the audi

@@ -11,11 +11,6 @@ findings:
     text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
     message: 「株式会社日本政策投資銀行」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
-    message: この段落は 11 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契

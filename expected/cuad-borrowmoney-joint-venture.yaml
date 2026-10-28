@@ -24,23 +24,11 @@ findings:
     message: '"PIscitello" here, where the document usually writes "Piscitello" (1 of 3)'
     verdict: correct
     note: a real typo of a manager's surname (PIscitello)
-  - rule: undefined-term
-    line: 9
-    text: Maintenance And Deployment of medical Se
-    message: '"Maintenance And Deployment" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: a Title Case phrase in free description, not written as a defined term
   - rule: name-variant
     line: 27
     text: Borrowmoney.com, inc. employees/personal
     message: '"Borrowmoney" is written "BorrowMoney" elsewhere in the document (case, width or punctuation)'
     verdict: correct
-  - rule: undefined-term
-    line: 27
-    text: Borrowmoney.com, inc. employees/personal
-    message: '"Borrowmoney" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: Borrowmoney is a misspelt company name (name-variant already reports it), not a defined term
   - rule: space-before-punctuation
     line: 31
     text: " , City And State, And Or Private Awarde"
@@ -51,12 +39,6 @@ findings:
     text: The Total Contributions. 14. Duties of M
     message: '"The Total Contributions" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: undefined-term
-    line: 33
-    text: Leased/rent office Space Includingspecif
-    message: '"Leased" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: Leased opens a table-cell text; capitalised, not a defined term
   - rule: undefined-term
     line: 33
     text: Space Includingspecified Description of

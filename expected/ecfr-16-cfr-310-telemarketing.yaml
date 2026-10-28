@@ -41,25 +41,10 @@ findings:
     text: TCPA, 47 U.S.C. 227, and 47 CFR part 64.
     message: '"TCPA" is used without an expansion (7 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 471
-    text: "ITU-T E.164: Series E: Overall Network O"
-    message: '"ITU" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 493
-    text: NW, Washington, DC 20580, or by email at
-    message: '"NW" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
   - rule: heading-level-skip
     line: 501
     text: "###### Footnotes - 310.5"
     message: Heading "Footnotes - 310.5" goes from level 4 to level 6 (expected 5)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 503
-    text: CFR pt. 226, compliance with the recordk
-    message: '"CFR" is used without an expansion (7 such acronyms)'
     verdict: unjudged
   - rule: heading-level-skip
     line: 553
@@ -95,4 +80,9 @@ findings:
     line: 569
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 571
+    text: CFR Sections Affected, which appears in
+    message: '"CFR" is used without an expansion (4 such acronyms)'
     verdict: unjudged

@@ -89,20 +89,6 @@ findings:
     line: 822
     sha256: 903ea500e7ccf842c1312b6c2f964e3e98ff146456cecec717e9a0e122bf735f
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 827
-    sha256: caf6184df600c160597837c91d855ea62bd38730718469e04a74fec5861d3522
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
-  - rule: colon-lead-in
-    line: 841
-    sha256: 284fb3058fa367fbaadb24f6f7879a99864e83493b1abd0f3f7bad632dfe67f7
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
-  - rule: undefined-acronym
-    line: 842
-    sha256: 9ab514d2d4dfd4f61386aa6e4ce4406688634961597977cd599f0b2c4b8efef6
-    verdict: unjudged
   - rule: undefined-acronym
     line: 843
     sha256: aa9319880056e6e5252a32a0d1686107c5be7ca6e0a861a5fb5bf89e2c98bc72
@@ -119,11 +105,6 @@ findings:
     line: 844
     sha256: c758b69758c15570355f81619669094a5ee33c6cc59ed9f2c4a4d6bf960fe703
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 851
-    sha256: cad88e9aad6c05b1279d37f14dffb83dc5dca968ad48032029939623c37a6ac6
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: quote-style-consistency
     line: 876
     sha256: c48639100b61dc3d1e70ae3a53ce0cf01178fad0b481eb3444abd0324f0fdc21
@@ -240,19 +221,10 @@ findings:
     line: 1124
     sha256: 0254fd7742cf97e43fdc035fb1fd4652f9700f81e1d54d881a977b0f5dbcbe59
     verdict: unjudged
-  - rule: name-variant
-    line: 1154
-    sha256: 400416ee835c8f896bdf81f062c36c9477d4a778bb8b7fe196d9e260bb04ac27
-    verdict: unjudged
   - rule: ngram-repetition
     line: 1209
     sha256: 6c3e9ed1ff84ef3c8cd95ec63555556195fbe7f859a0165731c92386514b7e5f
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1215
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: orthographic-variant
     line: 1230
     sha256: f42e3e798976eb533ad8050b7ead0f4c049d05e32f5e7f1e502c6b7121799ea2
@@ -285,11 +257,6 @@ findings:
     line: 1268
     sha256: d298c9477571e199e5965f79ced3d0e8b7da6a959f25c6b9e41d4545c20d852a
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1280
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 1291
     sha256: b204aa0e6ad640db3c432e3c69eb6657b77deaa8de59512c29f5e5a9c4f5d02b
@@ -298,25 +265,10 @@ findings:
     line: 1298
     sha256: 887b48c45ceadd60faf6b11e370d493e737ffb2263c219c8ad47cca96015270a
     verdict: correct
-  - rule: colon-lead-in
-    line: 1329
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 1362
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 1367
     sha256: 90f95cef32e33d091285c276873864182149f0f93875e879c625b0398df8668a
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1394
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-sentence-length
     line: 1410
     sha256: 0023d18dcb9be301105487c8b32958940fb2adf1733df75dd76f9325ed1ed6b7
@@ -325,16 +277,6 @@ findings:
     line: 1416
     sha256: 30365193ff7a32d30480267ea8d201612f2c02d959ccab428c0fa972c3822d11
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1440
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 1478
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: date-format-consistency
     line: 1493
     sha256: b579216508c4b7e46582b2d1e7382d2cc8d975622e0dbb0ec469fd1c9b530b55
@@ -354,10 +296,6 @@ findings:
   - rule: undefined-acronym
     line: 1497
     sha256: dd54c1f3258ce0158487062302211cc4382b3d41e0247eddc7d5391376756aa5
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1502
-    sha256: 0f88009f198fdc70809f7ccf60e23fa2888c927f6ec6766cd412d2d244e8db93
     verdict: unjudged
   - rule: expletive-construction
     line: 1511
@@ -431,11 +369,6 @@ findings:
     line: 1639
     sha256: 143cae8b20aa3b48c072578746f43e40a9dcdbefb38226a04600f6f089b53717
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1685
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: name-variant
     line: 1690
     sha256: e324a615a3b2c377c9528a7c62137ead4bccfb5ae2c712e564b0f26cac550c56
@@ -445,51 +378,17 @@ findings:
     sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
     verdict: unjudged
   - rule: undefined-acronym
-    line: 1696
-    sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1708
     sha256: 79abff3ee4abf49fc3f4cc875a3ef73b00e06c788870e80b778c17bcf63ca02d
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1734
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 1739
     sha256: abffa88dada009ff7487e4ac23dff20bdc071e257828c383c8ca6a5af6697b2f
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1764
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 1769
     sha256: 2b47ae15b86e5e41ffd425e0538f30859e6d4ebb23fd5436182d5b9e504774c1
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1783
-    sha256: ace2a653020b6aa5e04add936936ea21ac52e842920568ae01d31b34eefab76e
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 1789
-    sha256: 7e2bcbfbd84a3a5c9cc9dce60f7cb3aa845235196c1baccc13d8718efa4fbe9c
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 1793
-    sha256: 22e912d1712cf466163929212d25b59a3411b3f21c11e832bc69416b49588aec
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 1797
-    sha256: b6d0c9bd58c1fca6de9bb7af6c3244f28c50742e037d6179339541bdb23240da
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: contraction-consistency
     line: 1808
     sha256: 45dce1a89d45dbd7aab79d9a866c8ebf33524cc3f60c94592761b3aa6334cf5b
@@ -498,25 +397,10 @@ findings:
     line: 1809
     sha256: 0d581e7ec0307ced070675e2cecdfed978673453598e9d2c799a311a29ad240b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1836
-    sha256: 76894502677f8afc03fbfc4ee4aa817edca408107b6db1e9eafa65dab7397729
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: undefined-acronym
     line: 1864
     sha256: 008c6a0555ef269cce7e2c8591ef76e914f2fee2b08d9259702cff99ff0318bb
     verdict: unjudged
-  - rule: unknown-word
-    line: 1866
-    sha256: 355239d9fc8b8fb42aa0e1ef8442cfae397f6e15982743136d7ffad7ea1fca5d
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
-  - rule: colon-lead-in
-    line: 1868
-    sha256: a884390e30e0265c29a45cc5ae90cba3dd5577feba7550b83b21d246977fbe88
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: date-format-consistency
     line: 1870
     sha256: d3a2477efc8dbeb7f461f086514975642e34b096705f8628bae6ac6e4e3ade11
@@ -525,25 +409,10 @@ findings:
     line: 1870
     sha256: d32ea7f91e4654ab0431ea9276c1cde3ed35c9bdb6720c3778a63b85447e391d
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1909
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: unknown-word
-    line: 1917
-    sha256: 4632b47daa79408c3cfd13653f7b7cf3b13c0cd655bf4a2f8f5d2086eb5ccae8
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: expletive-construction
     line: 1947
     sha256: 74b70152de87acc40ca9f80186c6def19982988b6ee3904cd4675e92bf0e4899
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1952
-    sha256: 461a5d1ce0c8236ef05bb5739908c8dc0aca6477e033ce1ab7663209ada29488
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: date-format-consistency
     line: 1955
     sha256: 4cd7ce363e1df3889fc4b968553b63d39f5609a1daff38adeb5d6eb603f8428d
@@ -552,35 +421,10 @@ findings:
     line: 1960
     sha256: 32d0914ab91010d47cdabe2ea3eee63adfb791d1942740d72615a713587632ab
     verdict: unjudged
-  - rule: unknown-word
-    line: 1965
-    sha256: 281031b3735b4bcbcedb2c86b7680f40f8680f1c4206d7a61e75ae87aa66fd10
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: undefined-acronym
     line: 1980
     sha256: fc5e5cd07914b152a03382bfc3b208eb1b4e2a113faacac97ddbb5cdf32f569d
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 1992
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 1997
-    sha256: 7725b01fc59642596ec3032173bddcfe969fa6b305a5a3257e26fb022282fb1f
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
-  - rule: unknown-word
-    line: 1998
-    sha256: ff7919f37f22bc985bcec9fe83169e70aa9f4463f3dc62a8e05d20c3a8739830
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
-  - rule: unknown-word
-    line: 2002
-    sha256: c957eb3e19570962c4409eb19e94d45dac2a0325b5564b4d10dc0fa4af2646e6
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: undefined-acronym
     line: 2003
     sha256: d6a87aa2a2699f344a85a463d1684898fefc4006c08f995476ea65394dcd3c08
@@ -593,11 +437,6 @@ findings:
     line: 2030
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2037
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: sentence-spacing-consistency
     line: 2050
     sha256: e609cef206ea5ab1967b71c8fb567814e45ecbda575455b35e42f5727cd3e0c1
@@ -638,21 +477,6 @@ findings:
     line: 2183
     sha256: 92cd0c2aee82ed2521e88ae5201069a9ed16149078fdb17c6f3459c3bb151715
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2186
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 2232
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 2275
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: wordy-phrase
     line: 2284
     sha256: 7f98bab99e9229b7e4639937a6f051c69d7051d1ebfa71c935d06be120926cb3
@@ -669,29 +493,10 @@ findings:
     line: 2304
     sha256: cc59be810f7e8aae5d962246650f278d9c8b7333fc0a4efb1bcd0248d9571b55
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2319
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: undefined-acronym
-    line: 2327
-    sha256: c1d25bb98cec89f15d00adb8b3b8f5b547e4721c698863932cf0c294a2ba1728
-    verdict: unjudged
-  - rule: colon-lead-in
-    line: 2341
-    sha256: 3086095e65d4f5dd921de0c9a7157c2c66ab9aa03e1d390d06c86068838d8e65
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: orthographic-variant
     line: 2361
     sha256: d8dd376a1773dd528ce464d672bfe61e74e3aa1af4d31dd1ab547ca154630472
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2361
-    sha256: 68783a01415a1d5cd8bb3a98ab77c3b30d209d9a8a8e09d77a76f6d79e3a1bd1
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: undefined-acronym
     line: 2367
     sha256: 255b7a051813d5a99ec85fec474e18645a2e764b0e41d38cd0770b2c0a48179c
@@ -732,16 +537,6 @@ findings:
     line: 2398
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2405
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 2411
-    sha256: fc3dcc55b4e0c68b41e410699d533b1a5b03e8e891aedd648bc792c358fea83c
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: name-variant
     line: 2413
     sha256: f5ae0cbfdb3ace80d65d188b37e5e102836b87f5f3d010b7434ebcbb6dfdd8f1
@@ -754,11 +549,6 @@ findings:
     line: 2435
     sha256: 894716a3de535eeca0da35446104749d550799606f7973f8cd4a28b80b6732ee
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2446
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-sentence-length
     line: 2465
     sha256: aab071f0815373a9b1b579d620429a386dbe50d7bf2f77bb51b6a1b195fb7ac0
@@ -767,11 +557,6 @@ findings:
     line: 2500
     sha256: 93db46684d15a6f89856cacd0b404b02be52f4f2b696f4144100366cf128aacc
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2512
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 2521
     sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
@@ -780,20 +565,10 @@ findings:
     line: 2521
     sha256: 376d0b06e2b2216c651bc27c25f3f8697cac3046c7a321b1c2f5dcec66a25860
     verdict: correct
-  - rule: colon-lead-in
-    line: 2521
-    sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: expletive-construction
     line: 2533
     sha256: 10e9d8ff2d1771610562e01bce76ce98ff5f833a0032423dbfbe8a29b6a6dd51
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2554
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: space-before-punctuation
     line: 2585
     sha256: 046559c8d0a3bcc9129aa0ceae89a96e5e2ec672e3dd8ff7871f5fe3619516a4
@@ -802,11 +577,6 @@ findings:
     line: 2591
     sha256: 94d56a73d765e90613c8721795f534d97bc26e4bce0f37bf586485d8c3714d64
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2596
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: date-format-consistency
     line: 2597
     sha256: 0b6839106f0cc77af2beaef0980865dd2b30cb32df549ca9fa307e742aa6dc83
@@ -871,11 +641,6 @@ findings:
     line: 2646
     sha256: e948d191e4036c7bf18f30b8ea693b812e3ea4c2735bf09bb106478e45d5938f
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2681
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: date-format-consistency
     line: 2687
     sha256: 43a80fbdfde161d3afe2681f6b3fcd6e8fce51da6bd13c1bbc4533df8f836d5b
@@ -896,20 +661,10 @@ findings:
     line: 2713
     sha256: 0a0f419fd8a80e48dedbf4f2e9b0d3d47810ae6f7a5b4a260407aa6556afaf3d
     verdict: correct
-  - rule: colon-lead-in
-    line: 2721
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 2735
     sha256: 9137186150fddf339dd90643dde94465b1d2fb9b7e1e0872563d0db4a95a8faf
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2755
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 2764
     sha256: 05e237382fe4908c067e3f4ab1b8301bbffe27004549de451350248fc96f2de3
@@ -922,11 +677,6 @@ findings:
     line: 2776
     sha256: 4bacd92252966e57077827f113cc6d5e0e61afbc3f8c244ccfd7727c039d5b9b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2804
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: name-variant
     line: 2816
     sha256: ffdc2e76a704d257324b9f51024ad59546118446cad82f871181c590f2cb6a42
@@ -935,16 +685,6 @@ findings:
     line: 2816
     sha256: ffdc2e76a704d257324b9f51024ad59546118446cad82f871181c590f2cb6a42
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2843
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 2871
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-sentence-length
     line: 2887
     sha256: 3379fbc0f358d9a68c648c5573ea40e36c8d4ffbf07fecbb04033fabdbac2cf8
@@ -961,11 +701,6 @@ findings:
     line: 2959
     sha256: ad1ac69252fdab132a1b9283148a9f67c7fee33a72735d9c9e6228c85208b556
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2969
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 2978
     sha256: ffa287ecb1356c8e69f37941441c51c648382eb304cfd927850b2a07a4845b4f
@@ -974,26 +709,6 @@ findings:
     line: 2985
     sha256: 1bfaf75fa9380d5c9ac4fdb814ce84d8b933be92e3d5791544b4ae86fab5a19a
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3038
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3044
-    sha256: 8d7b2fee81f5ded648658e1f4e07edf9db207ad421c3386da44380514fcc90f8
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 3049
-    sha256: dc93343b565f6491dbb74a4118cdc53d0cea97965ca168e29513f2d278f68a29
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 3054
-    sha256: 414826468185a0b18b7b189cd374f6b5b5b1d084122d53f0b122afedcc3fb12c
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: undefined-acronym
     line: 3057
     sha256: 2c822d27e2cd4bbc3e6b4e1c7d45835b7e422a2ab0a80c2a88f7847a2d64c344
@@ -1002,31 +717,6 @@ findings:
     line: 3057
     sha256: 6fec984755dc89e854995c84a478ce48f3ba31ea3bdf850ce5c12d261f8864d7
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3063
-    sha256: d0bbdbff9459d409a0500d4dbc787763b4f71d78681deca6211ba0bf6b7a8789
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 3066
-    sha256: 07386275b69cae0a79d7a223be0521ea8a24a4ddbdaf2adf3e36ab2f55772a5a
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 3070
-    sha256: 550f30ce417616c4110b7996349710559cd29629dfb8ebe0ca893293b079f47c
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 3097
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3104
-    sha256: 1629b0278f5dc1ece0e1f0d36e4fe56ef2fbc313f34ad665be695c4ba91005aa
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: undefined-acronym
     line: 3108
     sha256: 267512473b214423bf5c39e56978cc5977bcc3ebc47cb844c2ac0c8b543a5e89
@@ -1039,16 +729,6 @@ findings:
     line: 3119
     sha256: 01d78b03afe83a553e24ff929cc7e3b4f9e6e33265df4efdac821f46447f57cc
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3147
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3154
-    sha256: 850ad17696a7979707af215d229f3d3e6e56492730e5d9af11659c86c8ed0045
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: undefined-acronym
     line: 3186
     sha256: 187af304bbcca8d704c7a8554590b8a87bb3e4f830b72aa7f3fd04bbae6247d4
@@ -1061,11 +741,6 @@ findings:
     line: 3201
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3209
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 3235
     sha256: 9957f8e6188e026be6a7e5f111662cc5fdadbcad53ea8b3b6800b99d97bf8054
@@ -1074,29 +749,14 @@ findings:
     line: 3275
     sha256: eccd626547f88e7eb5c2eb13d104d95086fe41e0de0031068bd2ad349ecc63f1
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3288
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: unknown-word
     line: 3298
     sha256: ab574857713fddf89c12a198abc4f61f3d217a17a6ab27dd23a175e61652d40b
     verdict: correct
-  - rule: colon-lead-in
-    line: 3304
-    sha256: 5ab424079a663682dbea689fce47c81893eeeb5e71a9f1d6bfd8d299071b4ed3
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: doubled-word
     line: 3310
     sha256: bea586f1560b93d166fe0f29faffb48ad928a4b2ff51636b760f12781383d475
     verdict: correct
-  - rule: colon-lead-in
-    line: 3310
-    sha256: 469c9eefc4941b2d85cada9a9a21cd271468a289b50230d626885f2d32c3a02d
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: expletive-construction
     line: 3321
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
@@ -1105,11 +765,6 @@ findings:
     line: 3339
     sha256: 9019bc0a3695e43d4fbd3196d5272690bf1662e056f83758173020d44bc1e4a6
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3378
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 3387
     sha256: a16d1aeb2ffd1b127e443eb0271ee1fee18e286bc2771b86cef44d831d5e889f
@@ -1126,16 +781,6 @@ findings:
     line: 3421
     sha256: bdcfbd13d708def14a52a81b5e9c97219c5ec53930c903fc4c89fe63e9b08032
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3424
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3461
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 3486
     sha256: d067ffff463a134994b9a3ef1fdcb646f9fd79d36fd51aa7a217819997aa800c
@@ -1144,21 +789,6 @@ findings:
     line: 3486
     sha256: dc2c07a449150474616a54368e6798d309f4f14584a049e80b24bca4f8ba94d9
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3497
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3539
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3583
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 3589
     sha256: c66173944c65047915d7f35faefe042c4d616ee333ca2f2ca829ff0eb4a0f50e
@@ -1175,20 +805,10 @@ findings:
     line: 3615
     sha256: abde6587ad2b66935d5a1596dc11946b1d38047601724ab2a53ae84bebd84747
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3646
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 3669
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3676
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-paragraph-length
     line: 3681
     sha256: 5c8c27c186d205e354be47324c4566c27ffa3a8bfad5b560b60d68edc0a79a36
@@ -1217,21 +837,6 @@ findings:
     line: 3736
     sha256: 2caebf1ca900229092b655816faf16ef53fd2ae37173311a9595e1209f844be3
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3767
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 3772
-    sha256: 1c2b00f14274cd09986da4582648fd7be0417ef5c5978d1fb151febff3098183
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
-  - rule: colon-lead-in
-    line: 3801
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 3806
     sha256: a9d71bc9234cb34ee5332055b0681962b9cc1a6fc78b2fbd1b665c02e376aca6
@@ -1240,20 +845,10 @@ findings:
     line: 3810
     sha256: 84e5de6e1fb182d50ef7166ec9a9f2f6d83dd7ea837e364e6de8a8a86cf61d81
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3825
-    sha256: c046552a635deb741f6c9c70d09e6558c33d79b32aff9c9c8c2a9a86baec63f0
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: orthographic-variant
     line: 3829
     sha256: bbeab5e64785129af93f77b745a9f154ca2c4c7c66d8a6646e2eb7c0dc652386
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3833
-    sha256: f34382da0974f387211e1a7b78439245de542b6f07bb38fdbc9255f811c93a76
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: undefined-acronym
     line: 3837
     sha256: af3624eba2897ced12f20217f2fd4968da2fc8b1697734ac39cd3694a108f98c
@@ -1270,11 +865,6 @@ findings:
     line: 3849
     sha256: 3c6a5f457385010f064738d75aa6dcc955ea63d7178c5fe25970be78fde24ffa
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3870
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: unbalanced-bracket
     line: 3887
     sha256: 384f0df917624a39807d4350212723017e57ba12a82c53fbe161de873c33c011
@@ -1287,11 +877,6 @@ findings:
     line: 3911
     sha256: 01bb4ba2743ff5c076c26cf3782bde0576c4bcb58af937cc8785d8be7efff04b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 3924
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: sentence-spacing-consistency
     line: 3926
     sha256: 288bdc871834707c9eec818d8fa27d4f07c1dde2326bd5ca157dc6cc8b5f42c6
@@ -1328,16 +913,6 @@ findings:
     line: 3961
     sha256: 5ec1f7e700f37c3d0b2981d04855fc34b94aaa15457b05ca571817442d228f81
     verdict: correct
-  - rule: colon-lead-in
-    line: 3981
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 4012
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: orthographic-variant
     line: 4017
     sha256: 4e5d66174a9bd5636b0d29862c95f7113e89824f84a44ce1111735b69f8f6d54
@@ -1346,74 +921,30 @@ findings:
     line: 4028
     sha256: a656107e99c71dea1ba101ea816e3886370b68ca9f9ac8e5b2d79c6ffddd70a1
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4058
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 4094
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4151
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-sentence-length
     line: 4160
     sha256: 73db84a4a98fe60cebcd15b42b891b5ea749b80860766ca74ba44f4a245c4dfd
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4185
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 4197
     sha256: 1c59e261ceb7015cd4aa6542cfd1e16cb4aab595186ec4671ed8910f55cb0b11
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 4216
-    sha256: 9ee5fa0de0a8e20da48e007f918009c7f49c64456b172f99d8a1775f5f420483
-    verdict: unjudged
-  - rule: colon-lead-in
-    line: 4224
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: max-sentence-length
     line: 4238
     sha256: 0d130617c58db5f8555ebe7a776c9a1901be5fab2227c77943dc4212015337cf
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4264
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: sentence-spacing-consistency
     line: 4270
     sha256: 96a05856781d74fcd7e88b6b317bb9b06b9e3b06cf7b3379e03e67b7c5cd0867
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4301
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: sentence-spacing-consistency
     line: 4307
     sha256: 100b54d3a4c7522268783474caa04973e4d56883aea52499252dd319236c3f60
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4309
-    sha256: 91a328e2d347549c732341240dee8ebc886dbb66f19eb39bdeaaa6bd2eb5f09c
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
-  - rule: colon-lead-in
-    line: 4314
-    sha256: ec604dc8b847e5bbedf07f997f82bc08bfe6f6e68d5e2e2c762413aa39e63cf4
-    verdict: false-positive
-    note: a noun label on a line of its own in a project report (Releases:, JIRA:) names its list as a heading does; not_flagged names the bold form, and a plain-text report has no bold; given by lab main
   - rule: expletive-construction
     line: 4321
     sha256: 27701f3222a52cfb88af87396297cc8a57fcc1eed33b70b18409c71cc1d7a8f0
@@ -1430,25 +961,10 @@ findings:
     line: 4340
     sha256: cd046f2f1229df84621a2dd642a0f039275889d85dd0cedce866e3b49620cd09
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4351
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 4385
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: orthographic-variant
     line: 4391
     sha256: 08fd44741fac8f69142136b879245f970c7c0ad21062f27ea8a5da40695c7721
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4420
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: undefined-acronym
     line: 4439
     sha256: 1ec2daa988955996db6c2cb52c8e82692f1d6c11b0e3282adca57a3a7a6d266b
@@ -1461,16 +977,6 @@ findings:
     line: 4454
     sha256: ba6ea5f0e4a733a27c4e5e4e20ba503f90fd0d655a3dc5edea69434f8d9119cf
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4475
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 4516
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: name-variant
     line: 4521
     sha256: af880c079161749364eb9a01378e41fa1bef91322fb66fa62012ab72d36925c8
@@ -1531,30 +1037,10 @@ findings:
     line: 4590
     sha256: 99aef94811f08444c7803dc4a4740162682c499a2ec6f93fe511efa62cba8ca8
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4592
-    sha256: 8f836fc96fff6890a00d71f1565845280ed0cf9c90876623c8bbe5a004eee66f
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: undefined-acronym
     line: 4618
     sha256: bad1a33b72b3ea77d74df323cbf92aef664e5daa7e873590cf53f6409dee42b1
     verdict: unjudged
-  - rule: unknown-word
-    line: 4630
-    sha256: 8a2b2989c952833372f6b021386ae83cc9e4e90d75d5a4fc8299e16fef23a4e0
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
-  - rule: unknown-word
-    line: 4637
-    sha256: 3c958b8570e27bd0b740aceb9cda2e4f4759a6c7ae88f08b8f3408504934345d
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
-  - rule: colon-lead-in
-    line: 4681
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 4687
     sha256: b7ad63e2bc8b86e511781242534ed50ecbe594f2cf6e3b91a2fb1b229f60cfd4
@@ -1563,11 +1049,6 @@ findings:
     line: 4694
     sha256: 7421da2e604f8bd1eba21987ff65ba8c15fa2116434bfdc74ae38679d08a05dd
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4716
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 4722
     sha256: bf13d79f61fd1470bfb11cbe0c80a41faf36ce0a8ccb082b6e2f7bf01e0fb422
@@ -1580,25 +1061,10 @@ findings:
     line: 4745
     sha256: a3c0c2418f9c92b4920ac1dba69f285f010f9ce1284854bc55df97f15edfc052
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4760
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: date-format-consistency
     line: 4765
     sha256: 87aae55d126a6701be060a956b1c6bec22eeba4b6ca6ed01bd18dddfb880698c
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4797
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 4825
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: orthographic-variant
     line: 4834
     sha256: ae94aa52142b67562f1abaac86f2d052002351b348b8bd90141399cac6f818a4
@@ -1619,29 +1085,14 @@ findings:
     line: 4848
     sha256: 6fd938dbf67665fac3dd8036ed35f46995cf5838d63b8da1099b27921b669943
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4859
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: expletive-construction
     line: 4884
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4892
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: date-format-consistency
     line: 4898
     sha256: 068aa5721cc1829b5e434c33f57cb242af7bd8d5c35fa4115bf6823dd583476b
     verdict: unjudged
-  - rule: unknown-word
-    line: 4914
-    sha256: 9c31bba3138d7e7242d23dac90edc3807d5dacd6f925096ae10cb53a8424dd99
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: name-variant
     line: 4917
     sha256: 4a9ac66dfb4b186e0460808f8deb572588e79d0abb2b49bea300c46b9d8d6ceb
@@ -1658,20 +1109,10 @@ findings:
     line: 4932
     sha256: a32e3be9ff9236f0f0de0ad3441cde711df36316f566c05f513505ca32c3bf1e
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4937
-    sha256: a52ace420f2175d08b1577a1bea5445e36801229c074ef9ed6c55a73401fd9c2
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: hyphen-as-dash
     line: 4943
     sha256: bf54ffbaa8e0f7747068df16982ae8cf244bb19b29d10656082a6a1191a7bafb
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 4983
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: sentence-spacing-consistency
     line: 4994
     sha256: 4fe61c83fd0c89277550156dc62853aaf7adc4e6468799d93f75f9f4389428d7
@@ -1693,11 +1134,6 @@ findings:
     line: 5003
     sha256: 5326558701f93a55c6bed83a4a98ccebbe42adfd4696576e33cd1819f13858d8
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 5029
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: orthographic-variant
     line: 5040
     sha256: 4423c3b0a42e02d458e8f3814d93421e2775198740bdf0a93a65cf5480b43bfc
@@ -1714,20 +1150,10 @@ findings:
     line: 5058
     sha256: 5a718345483067720365d29196c9cb5b1f1b32d1ec34fb8d2de9d1dd2f7b7d3f
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 5072
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: name-variant
     line: 5077
     sha256: 895c312c6c409dbf533402ed6659bb174a1237be26f0e93b5ba38881d38dd363
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 5085
-    sha256: 05b57ad6da822f9ab612845710fc38c4448e767ba20fea60e134d779cd9b391e
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: hyphen-as-dash
     line: 5086
     sha256: d5bff4de13019ae470ada4c7f7f1e6497af73b86ac00048366e0dade09b43852
@@ -1740,25 +1166,10 @@ findings:
     line: 5100
     sha256: eea4b8cce3a7786512d602151434a704c9f706e6db4d22131674bbf1c21acc8a
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 5126
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
   - rule: unknown-word
     line: 5136
     sha256: 9e305447079c5fc60d57942177ce8afa147a009e7a0c2005473a5402f1671d4e
     verdict: correct
-  - rule: colon-lead-in
-    line: 5157
-    sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
-    verdict: false-positive
-    note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: colon-lead-in
-    line: 5162
-    sha256: 71610545d3e95a9aa5f14f5695ca1e1894444ce0ee90fc3d791e2c532172c1b7
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: date-format-consistency
     line: 5190
     sha256: b8a3a3c74dde07e3483bddd774189ce3d14c78f503c566db221356b17150780d

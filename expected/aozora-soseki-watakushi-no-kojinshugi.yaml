@@ -1,12 +1,6 @@
 id: aozora-soseki-watakushi-no-kojinshugi
 chaff: 0.36.0
 findings:
-  - rule: max-kanji-continuous
-    line: 5
-    text: ――大正三年十一月二十五日学習院輔仁会において述――
-    message: 「大正三年十一月二十五日学習院輔仁会」は漢字が 17 字続いています（8 字まで）
-    verdict: false-positive
-    note: a kanji-numeral date followed by an institution's name, read as one run of kanji
   - rule: adversative-ga-repeat
     line: 8
     text: さきほど岡田さんが紹介かたがたちょっとお話になった通りこの春何か講演をというご注

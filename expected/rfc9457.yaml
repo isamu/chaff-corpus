@@ -2,18 +2,6 @@ id: rfc9457
 chaff: 0.34.0
 findings:
   - rule: undefined-acronym
-    line: 21
-    sha256: b3c6db60a128f4969a82b5e4e4facc4c4e7768e908f24953bfb298f9ed7aed91
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 42
-    sha256: 35ca1f625de4f9dfa9f51631f70498d5fbdbb513b03d9041c11b7e0b3e066c2f
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 48
-    sha256: d977c91928618059006dce17c77fdde9af804d3ab86da28d12f56d0249b95c8d
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 69
     sha256: b21b90cc5f00ccc3d1913fed6e0a32ac3f8c34166e4075094bbfd0300e5b7b28
     verdict: unjudged
@@ -68,26 +56,6 @@ findings:
   - rule: max-sentence-length
     line: 512
     sha256: 6e6c87eca162a94823a296d83ca4eb6c37b106d8053dc0c28c69a26f3988d4b9
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 560
-    sha256: 0f923c1094c1a8a8269fdad1855160019c042127385edd728bd6f97ce9c1f3da
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 561
-    sha256: 04938015f3f43abffb2579d6629a9ff765e32927398bcfeee8fb52e069cd41fa
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 561
-    sha256: 0cb266b9fbb3d135984e20b61703f6e335c524bc8eed522107e698befa021c62
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 606
-    sha256: 0a11c1b1723eca987b14d38797f8e94d5e9b86d4ce07cd590fa5d9c4b2ccf543
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 658
-    sha256: 021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96
     verdict: unjudged
   - rule: undefined-acronym
     line: 761

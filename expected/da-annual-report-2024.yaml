@@ -21,6 +21,11 @@ findings:
     text: ​
     message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 48
+    text: DFFTの推進をはじめとする国際戦略
+    message: 「DFFT」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
   - rule: concrete-evidence-density
     line: 94
     text: ""
@@ -215,6 +220,11 @@ findings:
     line: 140
     text: ​
     message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 141
+    text: DX
+    message: 「DX」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged
   - rule: heading-echo
     line: 147

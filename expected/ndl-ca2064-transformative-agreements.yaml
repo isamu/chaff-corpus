@@ -51,9 +51,3 @@ findings:
     text: (参照 2024-03-20).
     message: 丸括弧を、全角で 64 箇所、半角で 19 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
-  - rule: date-format-consistency
-    line: 116
-    text: 2023年5月20日）. 首相官邸, 39p. https://www.kant
-    message: 日付「2023年5月20日」の書き方が、この文書のほかの日付（「2024-03-20」など 26 箇所）と違います
-    verdict: false-positive
-    note: a date inside the title of a cited document

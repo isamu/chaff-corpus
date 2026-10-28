@@ -6,11 +6,6 @@ findings:
     text: "### SR 26-6: Frequently Asked Questions"
     message: 'The heading "SR 26-6: Frequently Asked Questions Regarding Treatment of Verifiable Digital Credentials Under the Customer Identification Program Rule" runs 17 words (limit 14)'
     verdict: unjudged
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 362 proper nouns per 1000 words (limit 200)
-    verdict: unjudged
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"

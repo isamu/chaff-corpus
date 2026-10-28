@@ -7,12 +7,6 @@ findings:
     message: '"DC" is used without an expansion (5 such acronyms)'
     verdict: false-positive
     note: DC is part of an organisation's proper name (DC Public Space Committee)
-  - rule: undefined-acronym
-    line: 41
-    text: VIP dining room?
-    message: '"VIP" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: VIP, an everyday word, needs no expansion
   - rule: max-paragraph-length
     line: 73
     text: Since the project started, the Board has
@@ -64,18 +58,6 @@ findings:
     text: which developed the first nuclear weapon
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
-  - rule: name-variant
-    line: 163
-    text: "TRIDENT Conference—New Patterns: May 194"
-    message: '"TRIDENT Conference" is written "Trident Conference" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a cited title kept as published (TRIDENT) against the prose form Trident
-  - rule: undefined-acronym
-    line: 171
-    text: GSA Transfers Federal Property to the Fe
-    message: '"GSA" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: an acronym inside the quoted title of a cited press release, whose issuer is spelled out in the same entry
   - rule: undefined-acronym
     line: 175
     text: PBS. Return to text

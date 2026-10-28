@@ -55,9 +55,3 @@ findings:
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: correct
     note: "'Return type void' in sentence case among Title Case headings"
-  - rule: contraction-consistency
-    line: 824
-    text: Contextual typing with a return type of
-    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
-    verdict: false-positive
-    note: "'does **not**' is split to put emphasis on 'not'; a contraction cannot carry it"

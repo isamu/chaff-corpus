@@ -7,16 +7,6 @@ findings:
     message: 見出し「査読は無償であるべきか？」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page's h1 is its own title for the article (number, title, author) and the next heading, the article title again, is h3, so the committed text goes from h1 to h3; the rule exempts only the first heading, not one after a page or site title, the same shape as bousai-wp-r07-* (h1 then h4) and kantei-214/221
-  - rule: heading-numbering-mix
-    line: 7
-    text: "#### 1. はじめに"
-    message: 見出し「1. はじめに」の番号の書き方が、兄弟の見出し（「2.1 報酬を金銭で支払うべきか」など 9 個）と違います
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 13
-    text: "#### 2. 学術雑誌は査読者に450ドルの報酬を支払うべきか"
-    message: 見出し「2. 学術雑誌は査読者に450ドルの報酬を支払うべきか」の番号の書き方が、兄弟の見出し（「2.1 報酬を金銭で支払うべきか」など 9 個）と違います
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 17
     text: 「反対」陣営はオープンアクセス（OA）非営利出版者PLOSのCEOを務めるマディ
@@ -31,11 +21,6 @@ findings:
     line: 43
     text: たり、また査読を依頼してもらおうと編集者が気に入りそうなコメントをする査読者も出
     message: 「たり」が一つだけで、対になる「〜たり」がありません
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 47
-    text: "#### 3. なぜ査読は無償なのか：歴史的経緯"
-    message: 見出し「3. なぜ査読は無償なのか：歴史的経緯」の番号の書き方が、兄弟の見出し（「2.1 報酬を金銭で支払うべきか」など 9 個）と違います
     verdict: unjudged
   - rule: nado-closed-list
     line: 51
@@ -61,11 +46,6 @@ findings:
     line: 65
     text: "#### 4. 査読を有償にするとどうなるか：事例と研究"
     message: 見出し「4. 査読を有償にするとどうなるか：事例と研究」の下に中身がありません
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 65
-    text: "#### 4. 査読を有償にするとどうなるか：事例と研究"
-    message: 見出し「4. 査読を有償にするとどうなるか：事例と研究」の番号の書き方が、兄弟の見出し（「2.1 報酬を金銭で支払うべきか」など 9 個）と違います
     verdict: unjudged
   - rule: double-negative
     line: 69
@@ -116,11 +96,6 @@ findings:
     line: 105
     text: ただし、それが立証されているのは査読レポートの返却期間においてであり、査読参加率
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 107
-    text: "#### 5. 結論：査読は無償であるべきか？"
-    message: 見出し「5. 結論：査読は無償であるべきか？」の番号の書き方が、兄弟の見出し（「2.1 報酬を金銭で支払うべきか」など 9 個）と違います
     verdict: unjudged
   - rule: currency-notation-consistency
     line: 119

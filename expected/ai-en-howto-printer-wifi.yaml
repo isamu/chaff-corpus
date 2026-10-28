@@ -18,45 +18,21 @@ findings:
     message: 28 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
     note: the casual voice the request asked for (seriously, roughly, usually); not padding
+  - rule: ai-generated-composite
+    line: 7
+    text: "## 1. Turn everything off and on again"
+    message: '"section-length-uniformity, colon-lead-in, ai-structure" occur together in this document (3 signals, 3 needed)'
+    verdict: false-positive
+    note: one of its three signals is colon-lead-in on two procedure lead-ins (lines 9, 26, false positives); given by lab main
   - rule: ai-structure
     line: 7
     text: "## 1. Turn everything off and on again"
     message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, list items opening with a bold label"
     verdict: correct
     note: short even sections and bold-label list items; the template how-to
-  - rule: ai-generated-composite
-    line: 7
-    text: "## 1. Turn everything off and on again"
-    message: '"section-length-uniformity, colon-lead-in, ai-structure" occur together in this document (3 signals, 3 needed)'
-    verdict: false-positive
-    note: "one of its three signals is colon-lead-in on two procedure lead-ins (lines 9, 26, false positives); given by lab main"
-  - rule: colon-lead-in
-    line: 9
-    text: "But seriously, do it in this order:"
-    message: 4.7 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "two lead-ins, each before a procedure (do it in this order:, go through the setup again:), in five sections; a how-to's procedure step, not section after section; given by lab main"
-  - rule: bold-emphasis
-    line: 22
-    text: On the printer's screen (or its settings
-    message: "6 bold spans of emphasis: 14.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: "every bold is the name of a setting or button (**Network**, **WPS**, **Add Printer**) or a Windows:/Mac: label, the usual way to mark what to click"
-  - rule: colon-lead-in
-    line: 26
-    text: If it's not connected at all, go through
-    message: 4.7 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "two lead-ins, each before a procedure (do it in this order:, go through the setup again:), in five sections; a how-to's procedure step, not section after section; given by lab main"
   - rule: emoji-density
     line: 37
     text: → Bluetooth & devices → Printers & scann
     message: 16 emoji per 1000 words (limit 8)
     verdict: false-positive
     note: → marks a menu path, not an emoji
-  - rule: heading-numbering-mix
-    line: 44
-    text: "## Still not working?"
-    message: The heading "Still not working?" has no number, while 5 of its siblings do ("1. Turn everything off and on again")
-    verdict: false-positive
-    note: the closing section is not one of the numbered fixes

@@ -1,9 +1,3 @@
 id: aozora-terada-ryomi-sudai
 chaff: 0.36.0
-findings:
-  - rule: teki-overuse
-    line: 12
-    text: しかし「涼しさは暑さとつめたさとが適当なる時間的空間的週期をもって交代する時に生
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: 時間的空間的 is one paired technical term in a physicist's essay; the 的 count is the author's choice
+findings: []

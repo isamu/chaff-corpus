@@ -12,9 +12,3 @@ findings:
     what: '"enjoy the commute-free Friday!" as the chirpy sign-off'
     verdict: missed
     note: mild; the upbeat sign-off of a generated casual email
-  - rule: email-greeting-closing
-    line: 17
-    text: Sam
-    message: The email does not end with a closing
-    verdict: false-positive
-    note: the closing is the last paragraph's "Thanks, ..." just above the name

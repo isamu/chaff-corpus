@@ -6,11 +6,6 @@ findings:
     text: 野菜苗・苗関連事業当連結会計年度の野菜苗・苗関連事業に係る研究開発費は、102,
     message: 「苗関連事業当連結会計年度」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: ６【研究開発活動】当社グループは、野菜苗メーカーとして、最先端の育苗技術の開発及
-    message: この段落は 14 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: 苗の生産性向上、品質向上、付加価値化を最大の研究テーマとし未来に向けて持続可能な

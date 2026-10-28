@@ -206,12 +206,6 @@ findings:
     note: 「助成を実施する」は「助成する」で足りる
   - rule: nominalization
     line: 55
-    text: 措置を実施し、能力開発支援を含めた労働移動の一層の促進を図った。また、高年齢者等
-    message: 「措置を実施する」は「措置する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
-    verdict: false-positive
-    note: 「助成措置を実施し」を「助成措置し」とはできない；「助成措置」は一語の名詞
-  - rule: nominalization
-    line: 55
     text: 支援を行った。あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用
     message: 「支援を行う」は「支援する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
@@ -318,12 +312,6 @@ findings:
     message: この文は 211 文字あります（140 文字まで）
     verdict: correct
     note: 211 字の一文
-  - rule: ngram-repetition
-    line: 77
-    text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
-    message: 「の一部を改正する」が 8 回出てきます（5 回まで）
-    verdict: false-positive
-    note: 「の一部を改正する」は法律の題名の一部で、言い換えられない
   - rule: teki-overuse
     line: 77
     text: 公務部門における高齢者雇用において、国家公務員については、60歳の定年を段階的に
@@ -408,12 +396,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「の」が読点を挟まず三つ続く
-  - rule: max-kanji-continuous
-    line: 119
-    text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい
-    message: 「社会保障審議会企業年金」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 審議会の部会の名前（社会保障審議会企業年金・個人年金部会）
   - rule: max-sentence-length
     line: 119
     text: さらに、「資産所得倍増プラン」（令和4年11月新しい資本主義実現会議決定）におい
