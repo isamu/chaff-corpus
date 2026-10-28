@@ -1,18 +1,6 @@
 id: chrg-119hhrg62934-strategic-forces-posture-fy2026
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 57
-    text: DesJARLAIS, Tennessee, Chairman
-    message: '"DesJARLAIS" here, where the document usually writes "DesJarlais" (1 of 36)'
-    verdict: false-positive
-    note: the roster's capitals form of the chairman's name (DesJARLAIS), the GPO convention for names; not a variant spelling
-  - rule: name-variant
-    line: 151
-    text: Scott DesJarlais
-    message: '"Scott DesJarlais" is written "SCOTT DesJARLAIS" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: the same name in the roster's capitals convention; not a variant
   - rule: unknown-word
     line: 1701
     text: flyout of the B-21. So 145 is what I am

@@ -11,26 +11,6 @@ findings:
     text: 預金保険の対象金融機関は日本国内に本店のある銀行、信用金庫、信金中央金庫、信用組
     message: 「全国信用協同組合連合会」は漢字が 11 字続いています（8 字まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 14
-    text: 1,000万円までとその利息等です。決済用預金（無利息、要求払い、決済サービスを
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。24 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 18
-    text: 1,000万円ずつ預金をしていますが、預金保険で保護される金額はどうなるのでしょ
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。24 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 22
-    text: 1,000万円に合併等に関わった金融機関の数を乗じた金額とその利息等とする特例が
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。24 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 23
-    text: 2,000万円までとその利息等が合併後１年間保護されます。なお、１年以内に複数回
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。24 箇所のうち 5 箇所が違う）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 31
     text: のない外国の銀行の預金口座を開設したり、預金をしたりするには、「外国銀行代理銀行

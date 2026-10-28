@@ -1,12 +1,6 @@
 id: ai-en-press-app-launch
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# GreenLeaf Launches Free App to Help Ho"
-    message: "8 bold spans of emphasis: 27.6 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: "the dateline, run-in headings (Key features, About GreenLeaf, Media Contact) and the feature list labels: the press-release layout, not emphasis"
   - rule: ai-generated-composite
     line: 7
     what: the CEO quote with "an average of 30%", 2,000 testers, 1,500 plants, GreenLeaf Plus at $4.99, founded 2024 are not in the request
@@ -28,9 +22,3 @@ findings:
     message: '"[Name]" was never filled in'
     verdict: correct
     note: template blank left for the user
-  - rule: heading-level-skip
-    line: 30
-    text: "###"
-    message: Heading "" goes from level 1 to level 3 (expected 2)
-    verdict: false-positive
-    note: "### is the end mark of a press release, not a heading"

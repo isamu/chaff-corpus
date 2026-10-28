@@ -221,11 +221,6 @@ findings:
     text: " の略。サブドメイン名及びドメイン名からなる文字列であり、ネットワーク上のコンピ"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。59 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1498
-    text: C&Cサーバ）が使用しているものとして知られているIPアドレス・FQDN（Ful
-    message: 「C&C」が説明なしで使われています（説明のない略語 3 個）
-    verdict: unjudged
   - rule: bracket-nesting
     line: 1508
     text: ただし、規則第7条第3号に定める事態について漏えい等報告の義務を負う主体は、漏え
@@ -446,11 +441,6 @@ findings:
     text: )電磁的記録をCD-ROM等の媒体に保存して、当該媒体を郵送する方法
     message: 括弧を「)」と書いています（この文書はふつう「）」。3201 箇所のうち 21 箇所が違う）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 2968
-    text: CD-ROM等の媒体に保存して、当該媒体を郵送する方法
-    message: 「CD-ROM」が説明なしで使われています（説明のない略語 3 個）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 2969
     text: )電磁的記録を電子メールに添付して送信する方法
@@ -660,11 +650,6 @@ findings:
     line: 3744
     text: なお、具体的に定める事項については、以降に記述する組織的安全管理措置、人的安全管
     message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 3875
-    text: ICカード、ナンバーキー等による入退室管理システムの設置等が考えられる。
-    message: 「IC」が説明なしで使われています（説明のない略語 3 個）
     verdict: unjudged
   - rule: latin-spacing
     line: 3969

@@ -86,11 +86,6 @@ findings:
     text: and/or with Products not covered under t
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 49
-    text: ATP then Contractor will send the Produc
-    message: '"ATP" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
   - rule: vague-deadline
     line: 49
     text: promptly repair or replace such Product
@@ -240,11 +235,6 @@ findings:
     line: 147
     text: FX Programmer Tite FX TESTER Hi-POT CLIP
     message: '"FX" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 147
-    text: JIG InMode2 Pump Burn-in JIG Screen LOGO
-    message: '"JIG" is used without an expansion (36 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 147

@@ -13,9 +13,3 @@ findings:
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: correct
     note: just over the limit
-  - rule: comparative-without-baseline
-    line: 87
-    text: より軽い作業への変更を検討したり、変更が難しい場合は、時間帯を朝夕にずらしたり、
-    message: 「より軽い」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: the baseline is in the same sentence (負荷の大きい作業)

@@ -7,11 +7,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: ngram-repetition
-    line: 31
-    text: guarantee pay for work - you get this if
-    message: '"your contract says" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: numeral-sentence-start
     line: 159
     text: 30 shifts x 9 hours = 270 hours. Multipl

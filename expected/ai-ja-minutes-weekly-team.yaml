@@ -6,9 +6,3 @@ findings:
     what: 「物流の繁忙期を避けたいという点では一致し」がメモにない
     verdict: missed
     note: "catalog B01 (invented detail): a reason and a consensus added to the record"
-  - rule: heading-numbering-mix
-    line: 37
-    text: "## 次回"
-    message: 見出し「次回」だけ番号がありません（兄弟の見出しは「1. 先週の進捗」など 4 個が番号付き）
-    verdict: false-positive
-    note: the next-meeting line closes the numbered agenda and is not one of its items; conventional in minutes

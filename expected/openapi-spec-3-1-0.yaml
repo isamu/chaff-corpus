@@ -91,20 +91,10 @@ findings:
     text: ""
     message: This heading's capitalisation differs from the rest (1 in this document)
     verdict: unjudged
-  - rule: oxford-comma-consistency
-    line: 2176
-    text: Here, `json-pointer` is taken from [RFC6
-    message: This list punctuates differently from the rest (2 in this document)
-    verdict: unjudged
   - rule: duplicate-heading
     line: 2182
     text: "##### Examples"
     message: The heading "Examples" repeats the one on line 2053 under the same parent
-    verdict: unjudged
-  - rule: oxford-comma-consistency
-    line: 2255
-    text: A simple object to allow referencing oth
-    message: This list punctuates differently from the rest (2 in this document)
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 2325

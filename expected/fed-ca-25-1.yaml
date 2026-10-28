@@ -1,12 +1,6 @@
 id: fed-ca-25-1
 chaff: 0.37.0
 findings:
-  - rule: proper-noun-density
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: 307 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead and agency names make the density in a short regulatory letter
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"
@@ -39,9 +33,3 @@ findings:
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: correct
     note: the page really jumps from h3 to h5 for its notes
-  - rule: max-sentence-length
-    line: 34
-    text: "See November 18, 2025 press release: “Fe"
-    message: This sentence runs 21 words (limit 18)
-    verdict: false-positive
-    note: a footnote that is "See" plus a cited press release title and URL; by the rule's not_flagged only the writer's words before a citation count, as in fed-sr-26-3:41

@@ -61,9 +61,3 @@ findings:
     text: ‘Executive Privilege' . . . and handl[e]
     message: The quote mark ‘ here, where the document usually writes ' (1 of 53)
     verdict: correct
-  - rule: unknown-word
-    line: 163
-    text: handl[e] all aspects of any cases within
-    message: '"handl" is not in the dictionary; did you mean "hande"?'
-    verdict: false-positive
-    note: a bracketed alteration in a quotation (handl[e]) is split at the bracket

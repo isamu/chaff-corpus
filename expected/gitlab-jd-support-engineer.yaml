@@ -1,12 +1,6 @@
 id: gitlab-jd-support-engineer
 chaff: 0.34.0
 findings:
-  - rule: unknown-word
-    line: 64
-    text: strace output](https://gitlab.com/gitlab
-    message: '"strace" is not in the dictionary; did you mean "strafe"?'
-    verdict: false-positive
-    note: strace is a Linux command name (in link text), not a misspelling
   - rule: concrete-evidence-density
     line: 75
     text: ""
@@ -37,11 +31,6 @@ findings:
     line: 94
     text: MVC framework (Django, Laravel or others
     message: '"MVC" is used without an expansion (11 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 95
-    text: CD.
-    message: '"CD" is used without an expansion (11 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 95

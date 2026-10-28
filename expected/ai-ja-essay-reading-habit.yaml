@@ -3,6 +3,7 @@ chaff: 0.36.0
 findings:
   - rule: closing-cliche
     line: 23
-    what: 「まずは今夜、スマホを別の部屋に置いてみてほしい」と読者に勧めて締める
-    verdict: missed
-    note: catalog J26 (closing exhortation)
+    text: もし、最近本を読んでいないなと思っている人がいたら、まずは今夜、スマホを別の部屋
+    message: 「てみてほしい」で締めています
+    verdict: correct
+    note: catalog J26 (closing exhortation); found by chaffjs 0.39.0

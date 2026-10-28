@@ -25,12 +25,6 @@ findings:
     message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
     verdict: correct
     note: 「訓練を実施した」は「訓練した」で足りる
-  - rule: max-kanji-continuous
-    line: 11
-    text: 令和6年9月1日の「防災の日」に、首都直下地震発生直後を想定した岸田内閣総理大臣
-    message: 「千島海溝周辺海溝型地震」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: 「日本海溝・千島海溝周辺海溝型地震」は法律（特別措置法）上の地震の名称で、分けられない
   - rule: max-sentence-length
     line: 11
     text: 令和6年9月1日の「防災の日」に、首都直下地震発生直後を想定した岸田内閣総理大臣
@@ -43,24 +37,12 @@ findings:
     message: 「訓練を行う」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
     verdict: correct
     note: 「運営訓練を行い」は「運営訓練をし」で足りる
-  - rule: max-kanji-continuous
-    line: 15
-    text: 令和6年11月に日本海溝・千島海溝周辺海溝型地震を想定した緊急災害対策本部事務局
-    message: 「緊急災害対策本部事務局運営訓練」は漢字が 15 字続いています（10 字まで）
-    verdict: false-positive
-    note: 「緊急災害対策本部事務局運営訓練」は訓練の名称
   - rule: nominalization
     line: 15
     text: 訓練を実施した。
     message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
     verdict: correct
     note: 「訓練を実施した」の名詞化
-  - rule: max-kanji-continuous
-    line: 17
-    text: 地域ブロックごとの訓練では、被災が想定される都道府県と連携し、日本海溝・千島海溝
-    message: 「緊急災害現地対策本部運営訓練」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: 「緊急災害現地対策本部運営訓練」は訓練の名称
   - rule: nominalization
     line: 17
     text: 訓練を実施した。
@@ -73,18 +55,6 @@ findings:
     message: 「訓練を実施する」は「訓練する」で足ります（動詞を名詞にした言い方が 1000 字あたり 4 個、2 個まで）
     verdict: correct
     note: 二つ目の「訓練を実施した」の名詞化
-  - rule: max-kanji-continuous
-    line: 19
-    text: 日本海溝・千島海溝周辺海溝型地震を想定した緊急災害対策本部事務局運営訓練
-    message: 「緊急災害対策本部事務局運営訓練」は漢字が 15 字続いています（10 字まで）
-    verdict: false-positive
-    note: 写真の説明（訓練の名称）
-  - rule: max-kanji-continuous
-    line: 21
-    text: 南海トラフ地震を想定した緊急災害現地対策本部運営訓練（名古屋市）
-    message: 「緊急災害現地対策本部運営訓練」は漢字が 14 字続いています（10 字まで）
-    verdict: false-positive
-    note: 写真の説明（訓練の名称）
   - rule: empty-intensifier
     line: 27
     text: 全ての国民が災害から自らの命を守るためには、災害時に国民一人一人が適切な行動をと

@@ -2,11 +2,10 @@ id: mdn-http-csp-ja
 chaff: 0.36.0
 findings:
   - rule: ngram-repetition
-    line: 43
-    text: ": [ウェブワーカー](/ja/docs/Web/API/Web_Workers"
-    message: 「の有効なソースを」が 16 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a reference page's directive list repeats one formula ('〜の有効なソースを') by design
+    line: 15
+    text: 詳しくは {{domxref("CSPViolationReport")}} を
+    message: 「参照してください」が 11 回出てきます（5 回まで）
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 43
     text: の閲覧コンテキストのための有効なソースを定義します。

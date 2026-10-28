@@ -2,18 +2,6 @@ id: rfc9562-uuid
 chaff: 0.37.0
 findings:
   - rule: undefined-acronym
-    line: 29
-    sha256: ebb25f923d3beaf23df9cacf44c5a51762270728b5f81b693d7e82aa774bc85c
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 51
-    sha256: 35ca1f625de4f9dfa9f51631f70498d5fbdbb513b03d9041c11b7e0b3e066c2f
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 57
-    sha256: d977c91928618059006dce17c77fdde9af804d3ab86da28d12f56d0249b95c8d
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 96
     sha256: 827665ec5e8d3750dc491ef02b8d1c0d208fcad241996c485911d50297d3698e
     verdict: unjudged
@@ -217,14 +205,6 @@ findings:
     line: 1593
     sha256: 4760456bb66aa635c1e62220dc5f26732e120670bd496f6b71cac9986c51344c
     verdict: unjudged
-  - rule: numbering-gap
-    line: 1642
-    sha256: 66dc14b61b07b2be5a25733b0bfe752653aaa8a76a3bcb18643e75f97c3b2961
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 1645
-    sha256: 43b738ddf3f188946ddeb59a43bc5ed1b9ae26c4ac745dd693cd44b1bd5763fc
-    verdict: unjudged
   - rule: article-sound
     line: 1661
     sha256: 103e9c931ae14231ff37d1568cd0253e087629f8045abda4bfbf0c71db0b7e11
@@ -270,20 +250,8 @@ findings:
     sha256: 21f672b67e7c23d6fd48d443732fe2f524e1b3c194300032961438ad40cfee03
     verdict: unjudged
   - rule: undefined-acronym
-    line: 1903
-    sha256: 9dbc75ec926e0ba99f763b41c090fb258deac1a53ea9ad4f74a4dabf69b5e8b0
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1915
     sha256: 0c419ffc0f0a11450e66513401691f524d207510d12e27ddf9d44600e0d586b7
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1922
-    sha256: abde0a5e1dc047b0f6a872981d345ca1862afc162840dfe66a3ada266c9541d1
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1941
-    sha256: ca19fa5c49677e8e89bd0eef045c718cd1ad13c0d6936d83ae6ca1ca3c1aaf13
     verdict: unjudged
   - rule: name-variant
     line: 1943
@@ -296,10 +264,6 @@ findings:
   - rule: name-variant
     line: 1958
     sha256: 1f90b44f84e6da73cc43f0e396954d9efa646effc699b96758c5b0c75d1513be
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1984
-    sha256: 9e40f4c62ef5ebd80d8b19bb8a943046615c1a07b36f0692ed666ec6bd616732
     verdict: unjudged
   - rule: max-sentence-length
     line: 1993
@@ -328,14 +292,6 @@ findings:
   - rule: name-variant
     line: 2057
     sha256: cd6e95351a258986f1324a25b649e5c5a52e1b821e6f441f6f7e9699bba7fd04
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 2061
-    sha256: 0f923c1094c1a8a8269fdad1855160019c042127385edd728bd6f97ce9c1f3da
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 2062
-    sha256: 04938015f3f43abffb2579d6629a9ff765e32927398bcfeee8fb52e069cd41fa
     verdict: unjudged
   - rule: name-variant
     line: 2067

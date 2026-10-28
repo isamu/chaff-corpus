@@ -13,12 +13,6 @@ findings:
     message: この文は 109 文字あります（100 文字まで）
     verdict: correct
     note: 109 字の一文（脅威を並べた体言止め）
-  - rule: unqualified-superlative
-    line: 25
-    text: 自衛隊には、最高の規律が求められると同時に、最高の栄誉が与えられなければなりませ
-    message: 「最高」に比べる相手がありません（そういう言い方が 3 箇所）
-    verdict: false-positive
-    note: 「最高の規律」「最高の栄誉」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない
   - rule: max-sentence-length
     line: 31
     text: 今、安全保障環境が厳しさを増す中、防衛省・自衛隊が果たすべき役割は、先ほど来申し
@@ -31,12 +25,6 @@ findings:
     message: 「達」と書いています（この文書はふつう「たち」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「先輩達」と「たち」が一つの訓示に混ざる
-  - rule: max-kanji-continuous
-    line: 38
-    text: 我が国はイラク復興支援のために自衛隊の部隊を派遣することとし、クリスマスイブの日
-    message: 「小泉純一郎内閣総理大臣臨席」は漢字が 13 字続いています（8 字まで）
-    verdict: false-positive
-    note: 人名と職名（小泉純一郎内閣総理大臣）に「臨席」が付いたもの
   - rule: max-paragraph-length
     line: 38
     text: 防衛庁長官であった平成１５年。我が国はイラク復興支援のために自衛隊の部隊を派遣す
@@ -67,15 +55,3 @@ findings:
     message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
     verdict: false-positive
     note: この文の「は」の主題はどれも 30 字以内に述語がある（来てほしいのは…日本であった、応えるのは…自衛隊しかない）
-  - rule: topic-predicate-distance
-    line: 38
-    text: 我が国はイラク復興支援のために自衛隊の部隊を派遣することとし、クリスマスイブの日
-    message: 「は」で出した主題から述語まで 99 字あります（80 字まで）
-    verdict: false-positive
-    note: 「我が国は」の述語「派遣することとし」は 30 字ほど後にあり、文末の「行われました」は別の主語（編成完結式が）のもの
-  - rule: unqualified-superlative
-    line: 38
-    text: 自分にとって今日は最高のクリスマスだった、長官行ってきます、と。このように言って
-    message: 「最高」に比べる相手がありません（そういう言い方が 3 箇所）
-    verdict: false-positive
-    note: 「自分にとって今日は最高のクリスマスだった」は隊員の言葉の引用で、範囲（自分にとって）もある

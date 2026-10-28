@@ -56,12 +56,6 @@ findings:
     message: '"same identical" says the same thing twice'
     verdict: correct
     note: "'same identical' is redundant"
-  - rule: undefined-acronym
-    line: 93
-    text: BULLER, in the case of the King v. Pasmo
-    message: '"BULLER" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: a judge's surname in capitals (the reporter's small caps), not an acronym
   - rule: max-paragraph-length
     line: 97
     text: We are informed, by the case of Philips
@@ -84,12 +78,6 @@ findings:
     message: '"same identical" says the same thing twice'
     verdict: correct
     note: "'same identical' is redundant"
-  - rule: undefined-acronym
-    line: 103
-    text: KENYON says, that an existing corporatio
-    message: '"KENYON" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: a judge's surname in capitals (the reporter's small caps), not an acronym
   - rule: doubled-punctuation
     line: 125
     text: .. 2 T. R. 346; Porter's Case, 1 Co. 22
@@ -112,29 +100,11 @@ findings:
     text: It was, indeed, supposed at the argument
     message: This paragraph runs 18 sentences (limit 12)
     verdict: correct
-  - rule: undefined-acronym
-    line: 133
-    text: COKE.
-    message: '"COKE" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: a judge's surname in capitals (the reporter's small caps), not an acronym
   - rule: max-paragraph-length
     line: 135
     text: When, then, the argument assumes, that b
     message: This paragraph runs 21 sentences (limit 12)
     verdict: correct
-  - rule: undefined-acronym
-    line: 135
-    text: HOLT down to the present day. Rex v. Bur
-    message: '"HOLT" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: a judge's surname in capitals (the reporter's small caps), not an acronym
-  - rule: undefined-acronym
-    line: 135
-    text: MS., in 2 T. R. 346. Nay, more, private
-    message: '"MS" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: MS. is the standard abbreviation for manuscript in a citation
   - rule: unknown-word
     line: 135
     text: munificient gifts of private donors for

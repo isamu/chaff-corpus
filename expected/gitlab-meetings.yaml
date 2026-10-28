@@ -1,6 +1,10 @@
 id: gitlab-meetings
 chaff: 0.34.0
 findings:
+  - rule: ai-structure
+    line: 10
+    sha256: 9cc1bc2fab608ee1ffb9379b2b1bda647bc13812274407678e6bafb041d22a02
+    verdict: unjudged
   - rule: undefined-acronym
     line: 17
     sha256: 8594d89c6c0680abeadbab6e1b3717621cf1a90eb8fdce2af38b53f776d650a3
@@ -40,10 +44,6 @@ findings:
   - rule: title-case-consistency
     line: 56
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: bold-emphasis
-    line: 70
-    sha256: 049bb532a372622eee05fd5d848bd5570fd1f54024ed7cac06ba8e348506f727
     verdict: unjudged
   - rule: bold-label-list
     line: 70

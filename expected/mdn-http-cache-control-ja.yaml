@@ -7,12 +7,6 @@ findings:
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
     note: three sentences in a row end in 〜います
-  - rule: ngram-repetition
-    line: 87
-    text: ": レスポンスが[新鮮](/ja/docs/Web/HTTP/Guides/Ca"
-    message: 「ことを示します。」が 14 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a reference page's directive definitions share one formula ('〜ことを示します。') by design
   - rule: bracket-width-consistency
     line: 121
     text: (`max-age` に似ています)。しかし、これは共有キャッシュ特有のもので、
@@ -25,6 +19,11 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
     verdict: correct
     note: half-width parentheses in prose that mostly uses full-width ones
+  - rule: ngram-repetition
+    line: 141
+    text: 前方/後方キャッシュ ({{Glossary('bfcache')}}) が使用
+    message: 「ーは再検証を行わ」が 6 回出てきます（5 回まで）
+    verdict: unjudged
   - rule: bracket-width-consistency
     line: 143
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪

@@ -13,8 +13,8 @@ findings:
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 218
-    text: のアドレス(callqの次の命令のアドレス)が入っています。
-    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
+    text: の次の命令のアドレス)が入っています。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: shell-prompt-mix
     line: 251

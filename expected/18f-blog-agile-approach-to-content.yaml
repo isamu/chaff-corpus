@@ -1,12 +1,6 @@
 id: 18f-blog-agile-approach-to-content
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: ---
-    message: "12 bold spans of emphasis: 11.3 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: a human post whose bold is only the lead sentence of each tip in its lists (- **Start with the most important tasks.** …); no emphasis mid-sentence
   - rule: adverb-overuse
     line: 16
     text: recently joined an agile team — congratu
@@ -37,24 +31,6 @@ findings:
     message: 4 of 4 lists have exactly three items (70% allowed)
     verdict: false-positive
     note: each tip list holds three tips; the count is the content, an editor would not ask to change it
-  - rule: unqualified-superlative
-    line: 55
-    text: Pick the most important sections or task
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: "\"the most important tasks\" is advice to prioritise the reader's own tasks; the set is the reader's work"
-  - rule: unqualified-superlative
-    line: 55
-    text: Start with the most important tasks.** D
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: "\"the most important sections or tasks\" is advice to prioritise the reader's own work, as in the bold lead-in"
-  - rule: oxford-comma-consistency
-    line: 57
-    text: If you need help with something, but it’
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: "\"If you need help with something, but it's not a priority right now, add it\" is a clause pair, not a list"
   - rule: unqualified-superlative
     line: 82
     text: We mentioned it before, but it bears rep

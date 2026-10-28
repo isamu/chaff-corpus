@@ -1,16 +1,6 @@
 id: chrg-119shrg60261-fsgg-approps-fy2026
 chaff: 0.36.0
 findings:
-  - rule: dangling-reference
-    line: 439
-    text: Section 713
-    message: '"Section 713" (address 713) is not in this document'
-    verdict: unjudged
-  - rule: unknown-word
-    line: 687
-    text: globalist bureaucrats or partisan
-    message: '"globalist" is not in the dictionary; did you mean "globalise"?'
-    verdict: unjudged
   - rule: orthographic-variant
     line: 807
     text: right-size
@@ -40,11 +30,6 @@ findings:
     line: 5593
     text: American-Economic-Prosperity.pdf.
     message: '"American-Economic-Prosperity" is written "American Economic Prosperity" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 6939
-    text: Section 311 of the
-    message: '"Section 311" (address 311) is not in this document'
     verdict: unjudged
   - rule: name-variant
     line: 7087

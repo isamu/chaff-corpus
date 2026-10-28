@@ -1,26 +1,6 @@
 id: rfc9116-security-txt
 chaff: 0.37.0
 findings:
-  - rule: proper-noun-density
-    line: 5
-    sha256: c6c5247d2bcd7a96335de6943fe1239db3d6f96d103fb6702707088e720f6539
-    verdict: false-positive
-    note: the RFC's header block of authors and affiliations
-  - rule: undefined-acronym
-    line: 33
-    sha256: ad087d737c2c0c88db4c804ef1ab6a3d6961712d69ca0bee12a6f2d3e963dc5d
-    verdict: false-positive
-    note: RFC, the document's own series name
-  - rule: undefined-acronym
-    line: 44
-    sha256: 35ca1f625de4f9dfa9f51631f70498d5fbdbb513b03d9041c11b7e0b3e066c2f
-    verdict: false-positive
-    note: BCP in the copyright boilerplate every RFC carries
-  - rule: undefined-acronym
-    line: 50
-    sha256: d977c91928618059006dce17c77fdde9af804d3ab86da28d12f56d0249b95c8d
-    verdict: false-positive
-    note: BSD License in the copyright boilerplate every RFC carries
   - rule: undefined-acronym
     line: 77
     sha256: 31649a48f9dcdad150d93c2762fb908b31a7b74de82a4395027f85add6ce035c
@@ -41,11 +21,6 @@ findings:
     line: 244
     sha256: 2730183d6b776b400ed491c90b67ecb616fb9b699c2f06c8c41fa74f04bcd7d0
     verdict: unjudged
-  - rule: unknown-word
-    line: 297
-    sha256: 8585dc022909bf9dedf782db856d5c05c9eea92844df06e8a727c7e4e8ce3dd3
-    verdict: false-positive
-    note: '"mailto" is a URI scheme name, quoted as such'
   - rule: max-sentence-length
     line: 303
     sha256: 80a4c29f837a502fa9905f113c86e3772e5d7ef01e989bbbc1c3615242f28f03
@@ -55,11 +30,6 @@ findings:
     sha256: 6b0910841dbc7d9bad700639b15788305895353fc312e4d465c24bf6d52013b0
     verdict: false-positive
     note: an IPv6 address literal in a URL; the brackets are URL syntax
-  - rule: max-sentence-length
-    line: 502
-    sha256: 83f0601f6e4c58f0df7ae99a97a84ca50828e0ffe62d67c24dc2120459f34894
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
   - rule: space-before-punctuation
     line: 502
     sha256: f8dfdafb9230665cfaff9c45ca509dd49698ef965f964580e7165ac587728551
@@ -80,11 +50,6 @@ findings:
     sha256: 72d48290c4dfe2d895e0859d62a011d645f000b0a6f202051fff0cb1ec4657d6
     verdict: correct
     note: the RFC has no Section 3.5.3; the ABNF comment means the Contact field, Section 2.5.3
-  - rule: max-sentence-length
-    line: 546
-    sha256: 81a3c66d7f3dfcf0f1d61e6ffe8b048b8f9eb4ed1467f4c9d8abf37b227f2ff5
-    verdict: false-positive
-    note: an ABNF grammar rule name, code in a plain-text RFC read as prose
   - rule: max-sentence-length
     line: 693
     sha256: 71c95ba352539dd800ba6b1e377d86440d8b881d12f1e33c716378c857cafb60
@@ -110,28 +75,12 @@ findings:
     sha256: 71104ab20d384947f8334d20e735c09c123064a64bc4c857ad3115d66a5dec6d
     verdict: unjudged
   - rule: undefined-acronym
-    line: 979
-    sha256: c86ee32d9e6064ed8ef91b5f86da64be38b3e842ddc600cf11fb7dce7db4ee8e
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1000
-    sha256: 0f923c1094c1a8a8269fdad1855160019c042127385edd728bd6f97ce9c1f3da
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1054
     sha256: 21cefb851644ea6c02673715583ea17d447ad24421900b8300a7b29c328c0d4f
     verdict: unjudged
   - rule: undefined-acronym
-    line: 1056
-    sha256: e8070a8f0f2cc3b41630f2e11aa133c573533b3c8f639a1263f536bc237cfc9a
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1060
     sha256: 2867d7ff833b7f8396ab2ed3e6eebfae9018f3fc57165133040eed9ec366b0dd
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1092
-    sha256: 97c338f3957fb609848b1fe7e279e583585a7b84078ef202339ae32d8c2a134f
     verdict: unjudged
   - rule: undefined-acronym
     line: 1109

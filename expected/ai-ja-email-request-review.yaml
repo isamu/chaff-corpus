@@ -1,12 +1,6 @@
 id: ai-ja-email-request-review
 chaff: 0.36.0
 findings:
-  - rule: email-greeting-closing
-    line: 3
-    text: 中村さん
-    message: 書き出しに挨拶がありません
-    verdict: false-positive
-    note: お疲れさま。 on line 5 is the greeting of a manager's internal email
   - rule: no-mixed-desumasu
     line: 6
     text: 共有フォルダの「A社_提案_v3」です。
@@ -19,9 +13,3 @@ findings:
     message: この文だけ他と文末の調子が違います（本文の中で 2 文）
     verdict: false-positive
     note: same deliberate mix as line 6
-  - rule: email-greeting-closing
-    line: 16
-    text: 鈴木
-    message: 終わりに結びの言葉がありません
-    verdict: false-positive
-    note: よろしく。 on line 15 is the closing

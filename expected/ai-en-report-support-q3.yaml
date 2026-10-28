@@ -1,17 +1,12 @@
 id: ai-en-report-support-q3
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# Q3 Customer Support Report"
-    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bolds are the labels of one list and the lead sentences of the numbered recommendations, not emphasis mid-sentence
   - rule: ai-structure
     line: 3
-    what: "the textbook report outline (Executive Summary ... Recommendations, Conclusion): sections of one or two paragraphs of one size, bold-label lists"
-    verdict: missed
-    note: "found by lab main"
+    text: "## Executive Summary"
+    message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, list items opening with a bold label"
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: adverb-overuse
     line: 5
     text: significantly improved its responsivenes

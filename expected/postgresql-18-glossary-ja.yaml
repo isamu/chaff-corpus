@@ -331,11 +331,6 @@ findings:
     text: の同じ種類の中のそうしたオブジェクト同士は、名前がユニークであることが強制されま
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 641
-    text: より便利なアクセスを提供しています。 一方標準SQLによって管理されているものと
-    message: 「より便利」は、何と比べているかが書かれていません
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 641
     text: のすべてのSQLオブジェクトの構造を記述するテーブルの集まり。 システムカタログ

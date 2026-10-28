@@ -1,11 +1,6 @@
 id: mext-giga-studx-mail-95
 chaff: 0.36.0
 findings:
-  - rule: no-mixed-desumasu
-    line: 6
-    text: デジタル学習基盤を活用した授業改革と校務DXの実践
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 6
     text: DXの実践
@@ -71,12 +66,6 @@ findings:
     text: クラウドを活用し、教師は意図的に、より多くの考えに触れさせることで、子供に新たな
     message: この文は 71 文字あります（70 文字まで）
     verdict: correct
-  - rule: undefined-acronym
-    line: 47
-    text: HP
-    message: 「HP」が説明なしで使われています（説明のない略語 6 個）
-    verdict: false-positive
-    note: HP (ホームページ) is everyday Japanese for any reader, like the words on chaff's common-acronym list
   - rule: undefined-acronym
     line: 54
     text: CBT方式での実施に向けた事前検証・事前接続テストを実施しています！

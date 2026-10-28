@@ -16,15 +16,15 @@ findings:
     text: Legally Authorized to Work in the United
     message: 23 -ly adverbs per 1000 words (limit 15)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 21
-    text: Guidance on Lending to Individuals Not L
-    message: '"Authorized to Work" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 25
     text: This guidance reminds Board supervised b
     message: This sentence runs 34 words (limit 18)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 25
+    text: This guidance reminds Board supervised b
+    message: '"not legally authorized" appears 6 times (limit 5)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 29
@@ -137,7 +137,7 @@ findings:
     text: See "Interagency Guidelines Establishing
     message: This sentence runs 19 words (limit 18)
     verdict: false-positive
-    note: '"See" plus a cited guideline title and CFR part, appendix and sections; by the rule''s not_flagged only the writer''s words before a citation count, as in fed-sr-26-3:41'
+    note: "\"See\" plus a cited guideline title and CFR part, appendix and sections; by the rule's not_flagged only the writer's words before a citation count, as in fed-sr-26-3:41"
   - rule: oxford-comma-consistency
     line: 81
     text: See "Interagency Guidelines Establishing

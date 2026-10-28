@@ -76,35 +76,15 @@ findings:
     text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
     message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 73
-    text: 1,172件のうち462件（39.4%）、患者数では総患者数24,727名のうち
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。41 箇所のうち 12 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 91
-    text: 3,000カ所の小児科の病院または診療所）から報告が求められており、その発生の状
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。41 箇所のうち 12 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 93
     text: ここでは、感染症発生動向調査に基づき調査が実施されている『ノロウイルスが原因の一
     message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 102
-    text: 3,000の小児科医療機関からの報告によるもので、すべての患者数を把握するもので
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。41 箇所のうち 12 箇所が違う）
-    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 102
     text: 資料：報告数は「感染症発生動向調査事業」に基づく全国約3,000の小児科医療機関
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 103
-    text: 2,088人÷定点報告数814,793のような死亡率の計算はできないことに注意）
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: no-mixed-desumasu
     line: 105
@@ -320,16 +300,6 @@ findings:
     line: 257
     text: （この際、ビニール袋に廃棄物が充分に浸る量の次亜塩素酸ナトリウム※（塩素濃度約1
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 257
-    text: 1,000 ppm）や亜塩素酸水（遊離塩素濃度100 ppm（含量 亜塩素酸とし
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。41 箇所のうち 12 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 257
-    text: 2,000 ppm以上））を入れることが望ましい。）
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
   - rule: no-mixed-desumasu
     line: 257

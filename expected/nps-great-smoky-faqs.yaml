@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: undefined-acronym
     line: 5
-    what: NPS, never expanded
-    verdict: missed
-    note: the page writes National Park Service later (290) but never ties the two; the same verdict as nps-joshua-tree-faqs:61; found by pending lab PRs
+    text: NPS
+    message: '"NPS" is used without an expansion (1 such acronym)'
+    verdict: correct
+    note: the page writes National Park Service later (290) but never ties the two; the same verdict as nps-joshua-tree-faqs:61; found by pending lab PRs; found by chaffjs 0.39.0
   - rule: wordy-phrase
     line: 91
     text: The park is open year-round, 24/7, with

@@ -1,11 +1,6 @@
 id: 18f-handbook-projects-in-distress
 chaff: 0.33.0
 findings:
-  - rule: bold-emphasis
-    line: 27
-    text: The **project health tracker** provides
-    message: "22 bold spans of emphasis: 9.2 per 1000 words (limit 6)"
-    verdict: unjudged
   - rule: undefined-acronym
     line: 45
     text: TTS consultants.
@@ -70,12 +65,4 @@ findings:
     line: 287
     text: Because we do not have control over many
     message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 301
-    text: Maintain a good rapport** – ideally, 18F
-    message: |-
-      "Maintain a good rapport   – ideally, 18F and the agency maintain a good
-        relationship so if there is an appropriate project in the future, we can
-        partner with the agency again." opens with a verb; the other items in this list open with a noun phrase (1 of 4)
     verdict: unjudged

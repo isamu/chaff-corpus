@@ -67,12 +67,6 @@ findings:
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: correct
     note: a chain of の an editor would break up
-  - rule: ngram-repetition
-    line: 28
-    text: 以上のような問題意識の下、中長期的な観点から、概ね 2040年以降の社会を見据え
-    message: 「をお願いします。」が 8 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a 諮問 asks for deliberation item by item; 「をお願いします。」 is its form
   - rule: max-sentence-length
     line: 31
     text: その際、デジタル化、脱炭素化等の世界的な潮流に伴う産業構造の変化を見据えた成長分

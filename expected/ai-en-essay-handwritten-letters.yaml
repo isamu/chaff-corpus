@@ -9,9 +9,10 @@ findings:
     note: the -ly adverbs (apparently, obviously, really) carry the essay's spoken voice; not an AI sign
   - rule: contrast-framing
     line: 7
-    what: "\"Not because I think handwriting is morally superior ... It's because I've noticed what I keep\""
-    verdict: missed
-    note: "found by lab main"
+    text: Not because I think handwriting is moral
+    message: '"not because" and other contrast frames: 5% of sentences (limit 4.8%)'
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: max-paragraph-length
     line: 13
     text: My handwriting is bad, by the way. Reall
@@ -26,15 +27,10 @@ findings:
     note: the writer quotes their own note on the page; there is no source to give
   - rule: contrast-framing
     line: 19
-    what: "\"It's not really about time. It's about which twenty minutes I want to keep.\"; \"Not because ... It's because ...\" (7)"
-    verdict: missed
-    note: "the classic \"it's not about X, it's about Y\" frame; not matched; found by lab main"
-  - rule: contrast-framing
-    line: 19
-    text: I don't always. But it takes about twent
-    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
-    verdict: false-positive
-    note: "a concession to the objection just raised (Fair. I don't always. But ...), not a frame knocking down an X nobody said; given by lab main"
+    text: It's not really about time. It's about w
+    message: "\"it's not\" and other contrast frames: 5% of sentences (limit 4.8%)"
+    verdict: correct
+    note: the classic "it's not about X, it's about Y" frame; not matched; found by lab main; found by chaffjs 0.39.0
   - rule: ai-generated-composite
     line: 21
     what: the last paragraph returns to the Lisbon friend and the drawer for a neat callback

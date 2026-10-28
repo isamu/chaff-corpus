@@ -1,12 +1,6 @@
 id: ai-ja-owned-bakery-column
 chaff: 0.36.0
 findings:
-  - rule: section-length-uniformity
-    line: 1
-    text: ""
-    message: 節の長さのばらつきが 28% しかありません（35% 以上ほしい）
-    verdict: false-positive
-    note: 28%, but the sections are of different kinds (a reason, steps, four bread types); a reader does not notice evenness
   - rule: sentence-rhythm
     line: 3
     text: こんにちは、こむぎの木の森です。
@@ -27,6 +21,7 @@ findings:
     note: ぜひ試してみてくださいね closes the column (catalog J26); common in shop blogs too, but stock
   - rule: closing-cliche
     line: 43
-    what: 「気軽に声をかけてください」 as the column's last line
-    verdict: missed
-    note: the stock feel-free send-off in the last paragraph, after the ぜひ試してみてくださいね already judged correct on line 41; found by pending lab PRs
+    text: 保存のことで気になることがあれば、お店のスタッフにも気軽に声をかけてください。
+    message: 「気軽に」で締めています
+    verdict: correct
+    note: the stock feel-free send-off in the last paragraph, after the ぜひ試してみてくださいね already judged correct on line 41; found by pending lab PRs; found by chaffjs 0.39.0

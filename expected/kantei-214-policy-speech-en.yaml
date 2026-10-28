@@ -88,12 +88,6 @@ findings:
     text: Although challenges exist between Japan
     message: This sentence runs 53 words (limit 25)
     verdict: correct
-  - rule: unknown-word
-    line: 53
-    text: amidst the current strategic environment
-    message: '"amidst" is not in the dictionary; did you mean "midst"?'
-    verdict: false-positive
-    note: a real English word (amidst) missing from the dictionary
   - rule: max-sentence-length
     line: 55
     text: At the same time, China is day by day in

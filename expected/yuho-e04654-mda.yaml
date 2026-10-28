@@ -61,20 +61,30 @@ findings:
     text: )重要な会計上の見積り及び当該見積りに用いた仮定当社の財務諸表は、わが国において
     message: 括弧を「)」と書いています（この文書はふつう「）」。85 箇所のうち 9 箇所が違う）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 0円（前期と同額）となりました。②財政状態（流動資産）当期末における流動資産の残
+    message: 半角の「0」と書いています（この文書はふつう全角の「０」。16 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 1日至令和４年10月31日）第64期（自令和４年11月1日至令和５年10月31日
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 1日至令和５年10月31日）金額（千円）割合（％）金額（千円）割合（％）三好カン
+    message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
+    verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 1
+    text: 8,45795.7合計307,81499.6（注）最近２事業年度の主な相手先別の
+    message: 半角の「8」と書いています（この文書はふつう全角の「８」。16 箇所のうち 4 箇所が違う）
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 1
     text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1）財政
     message: この段落は 30 文あります（5 文まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: セグメントの名称第64期（自令和４年11月１日至令和５年10月31日）前年同期比
-    message: この文は 161 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: 相手先第63期（自令和３年11月1日至令和４年10月31日）第64期（自令和４年
-    message: この文は 188 文字あります（140 文字まで）
     verdict: unjudged
   - rule: ngram-repetition
     line: 1

@@ -1,18 +1,6 @@
 id: jpo-oi-model-nda-shinsozai-v2-2
 chaff: 0.36.0
 findings:
-  - rule: dangling-reference
-    line: 6
-    text: 第1条1項（オプション1：秘密情報の範囲：無限定）
-    message: 「第1条」（番地 1）はこの文書にありません
-    verdict: false-positive
-    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
-  - rule: dangling-reference
-    line: 9
-    text: 第1条1項（オプション2：秘密情報の範囲：要秘密指定（口頭開示の事後指定無し））
-    message: 「第1条」（番地 1）はこの文書にありません
-    verdict: false-positive
-    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
   - rule: duplicate-definition
     line: 10
     text: 「秘密情報」とは、本目的のために、書面、口頭、電磁的記録媒体その他開示の方法およ
@@ -31,12 +19,6 @@ findings:
     message: 「開示者」は 7 行目でも定義されています
     verdict: false-positive
     note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
-  - rule: dangling-reference
-    line: 12
-    text: 第1条1項（オプション3：秘密情報の範囲：要秘密指定（口頭開示の事後指定有り））
-    message: 「第1条」（番地 1）はこの文書にありません
-    verdict: false-positive
-    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
   - rule: duplicate-definition
     line: 13
     text: 「秘密情報」とは、本目的のために、書面、口頭、電磁的記録媒体その他開示の方法およ
@@ -55,12 +37,6 @@ findings:
     message: 「開示者」は 7 行目でも定義されています
     verdict: false-positive
     note: モデル契約の選択肢（オプション1〜3）の条文がそれぞれ同じ語を定義する。代替条項で、一つを選ぶ前提
-  - rule: dangling-reference
-    line: 15
-    text: 第1条2項（秘密情報の定義・開示の方法）【オプション1～3共通】
-    message: 「第1条」（番地 1）はこの文書にありません
-    verdict: false-positive
-    note: 見出し「第1条1項（…）」は第1条そのもので、参照ではない
   - rule: duplicate-definition
     line: 16
     text: 以下「書面等」という。）によってその根拠を立証できる場合に限り、以下の情報は秘密

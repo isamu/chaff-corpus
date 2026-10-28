@@ -16,11 +16,6 @@ findings:
     text: の保証の情報ネットワークの構築等
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 44
-    text: "## 大学の質の保証に係る新たなシステムの構築について（答申）"
-    message: 見出し「大学の質の保証に係る新たなシステムの構築について（答申）」は、同じ親の下の 6 行目の見出しと同じです
-    verdict: unjudged
   - rule: empty-intensifier
     line: 48
     text: (1)  社会・経済・文化のグローバル化が進展し，国際的な競争がますます激しくな
@@ -221,26 +216,6 @@ findings:
     text: (8)  短期大学及び高等専門学校の学科の新設・改廃については，大学の学部に相当
     message: この文は 146 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 118
-    text: 大学，大学院，短期大学及び高等専門学校の設置・廃止
-    message: 「大学，大学院，短期大学及び高等専門学校の設置・廃止」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 119
-    text: 新たな種類・分野の学位を授与する学部等の設置や従来の教育の分野を変更する短期大学
-    message: 「新たな種類・分野の学位を授与する学部等の設置や従来の教育の分野を変更する短期大学及び高等専門学校の学科の設置」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 120
-    text: 設置者の変更
-    message: 「設置者の変更」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 121
-    text: 大学全体の収容定員増に係る学則変更（私立大学等の場合）
-    message: 「大学全体の収容定員増に係る学則変更（私立大学等の場合）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（22 項目のうち 4 項目）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 123
     text: (10)  なお，以上のような整理の結果，学部等の設置が認可事項となるか届出事項
@@ -270,11 +245,6 @@ findings:
     line: 142
     text: これらの基準は学生等の多様な活動を可能にするとともに学校法人の資産確保の面で一定
     message: この文は 150 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 142
-    text: これらの基準は学生等の多様な活動を可能にするとともに学校法人の資産確保の面で一定
-    message: 「は」で出した主題から述語まで 140 字あります（80 字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 148

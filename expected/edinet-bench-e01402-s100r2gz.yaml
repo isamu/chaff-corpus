@@ -6,12 +6,6 @@ findings:
     text: " SUNCALL SANKO CORP.を設立1989年６月米国に合弁会社 SA"
     message: 日本語と英字のあいだを、空ける所が 16 箇所、詰める所が 52 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: max-sentence-length
-    line: 5
-    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
-    message: この文は 2165 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: max-ten
     line: 5
     text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
@@ -305,12 +299,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 21
-    text: ・顧客需要への対応に向けた設備投資継続と生産効率向上・大容量ハードディスクドライ
-    message: 「は」で出した主題から述語まで 122 字あります（80 字まで）
-    verdict: false-positive
-    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
-  - rule: topic-predicate-distance
-    line: 21
     text: (3)経営環境　世界経済は、新型コロナウイルス感染症からの回復が一巡する一方で、
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
     verdict: unjudged
@@ -546,11 +534,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 29
-    text: ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野へ
-    message: 「IC」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 29
     text: SDG'sを意識した環境配慮型の竹ならではの特徴を活かした素材・複合材の開発を目
     message: 「SDG」が説明なしで使われています（説明のない略語 14 個）
     verdict: unjudged
@@ -694,11 +677,6 @@ findings:
     text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
     message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 53
-    text: （4）【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
-    message: この文は 175 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 57
     text: (株)議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－
@@ -763,11 +741,6 @@ findings:
     line: 61
     text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
     message: 「株式会社京都市右京区梅津西浦町」は漢字が 15 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 61
-    text: ②【自己株式等】    2023年３月31日現在所有者の氏名又は名称所有者の住所
-    message: この文は 224 文字あります（140 文字まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 69
@@ -889,11 +862,6 @@ findings:
     text: )資産の部  流動資産  現金及び預金7,5107,707受取手形224258売
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 101
-    text: ①【連結貸借対照表】  （単位：百万円） 前連結会計年度(2022年３月31日)
-    message: この文は 1005 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 105
     text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
@@ -968,11 +936,6 @@ findings:
     line: 113
     text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
     message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 113
-    text: ③【連結株主資本等変動計算書】前連結会計年度（自　2021年４月１日　至　202
-    message: この文は 1133 文字あります（140 文字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 117

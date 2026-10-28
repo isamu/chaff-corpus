@@ -16,3 +16,8 @@ findings:
     text: "'s Binding Operational Directive (BOD) 2"
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 9)
     verdict: correct
+  - rule: unqualified-superlative
+    line: 32
+    text: This more aggressive tiering of vulnerab
+    message: '"the most" has nothing to compare against (1 such claim)'
+    verdict: unjudged

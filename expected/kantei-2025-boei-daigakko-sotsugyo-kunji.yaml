@@ -7,18 +7,6 @@ findings:
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: false-positive
     note: 中国・北朝鮮・ロシアの動きを並べた三文で、文末をそろえた並列は演説の意図した形
-  - rule: unqualified-superlative
-    line: 11
-    text: 防衛力の最大の基盤は人であります。諸官一人一人の存在が防衛力の中核であり、諸官一
-    message: 「最大」に比べる相手がありません（そういう言い方が 6 箇所）
-    verdict: false-positive
-    note: 「防衛力の最大の基盤」は比べる範囲（防衛力の基盤）が書かれている
-  - rule: unqualified-superlative
-    line: 12
-    text: 私は、自衛隊、そして自衛隊員には最高の栄誉が与えられるべきと考えております。諸官
-    message: 「最高」に比べる相手がありません（そういう言い方が 6 箇所）
-    verdict: false-positive
-    note: 「最高の栄誉が与えられるべき」は訓示の中のあるべき姿の言明で、比べて確かめる主張ではない
   - rule: max-paragraph-length
     line: 13
     text: 同時に、自衛隊には、最高の規律が求められます。最高の栄誉であり、最高の規律、それ
@@ -31,30 +19,12 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「諸官の諸先輩方の努力のたまもの」で「の」が三つ続く
-  - rule: unqualified-superlative
-    line: 13
-    text: 最高の栄誉であり、最高の規律、それが自衛隊に求められるものであります。国民にとっ
-    message: 「最高」に比べる相手がありません（そういう言い方が 6 箇所）
-    verdict: false-positive
-    note: 「最高の栄誉であり、最高の規律」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない
-  - rule: unqualified-superlative
-    line: 13
-    text: 同時に、自衛隊には、最高の規律が求められます。最高の栄誉であり、最高の規律、それ
-    message: 「最高」に比べる相手がありません（そういう言い方が 6 箇所）
-    verdict: false-positive
-    note: 「最高の規律が求められます」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない
   - rule: clause-chain
     line: 14
     text: その壮行会において、派遣される若い航空自衛官が私の手を握って、総理大臣から訓辞を
     message: 一文に節が 16 つつながっています（5 つまで）
     verdict: correct
     note: 一文に節が 16 つながる
-  - rule: max-kanji-continuous
-    line: 14
-    text: 我が国はイラクの復興支援のため自衛隊の部隊を派遣することとし、その年の１２月２４
-    message: 「小泉純一郎内閣総理大臣臨席」は漢字が 13 字続いています（8 字まで）
-    verdict: false-positive
-    note: 人名と職名（小泉純一郎内閣総理大臣）に「臨席」が付いたもの
   - rule: max-paragraph-length
     line: 14
     text: 私が防衛庁長官であった２００３年、忘れられない出来事がありました。我が国はイラク
@@ -85,30 +55,12 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「イラクの復興支援のため自衛隊の部隊」で「の」が続く
-  - rule: no-mixed-desumasu
-    line: 14
-    text: 厳しい任務であろうとも、誇りを持って真摯にこれを遂行する。このような隊員一人一人
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: 「真摯にこれを遂行する。」は隊員の心構えを常体で言い切った強調で、演説で普通の形
   - rule: topic-predicate-distance
     line: 14
     text: その壮行会において、派遣される若い航空自衛官が私の手を握って、総理大臣から訓辞を
     message: 「は」で出した主題から述語まで 158 字あります（80 字まで）
     verdict: correct
     note: 千字を超える文で主題から述語まで遠い
-  - rule: topic-predicate-distance
-    line: 14
-    text: 我が国はイラクの復興支援のため自衛隊の部隊を派遣することとし、その年の１２月２４
-    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: false-positive
-    note: 「我が国は」の述語「派遣することとし」は 30 字ほど後にあり、文末の「行われました」は別の主語（編成完結式が）のもの
-  - rule: unqualified-superlative
-    line: 14
-    text: その壮行会において、派遣される若い航空自衛官が私の手を握って、総理大臣から訓辞を
-    message: 「最高」に比べる相手がありません（そういう言い方が 6 箇所）
-    verdict: false-positive
-    note: 「俺にとって今日は最高のクリスマスだ」は隊員の言葉の引用で、範囲（俺にとって）もある
   - rule: max-ten
     line: 15
     text: これからの日本が、将来に向けて何をなすのか、そして次の時代に何を残すのか、そのた

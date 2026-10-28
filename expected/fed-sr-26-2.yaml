@@ -1,12 +1,6 @@
 id: fed-sr-26-2
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 294 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns
   - rule: max-sentence-length
     line: 23
     text: "Applicability:  This letter is expected"
@@ -47,12 +41,6 @@ findings:
     text: Reserve Banks are asked to distribute th
     message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 41
-    text: SR letter 21-8, "Interagency Statement o
-    message: This sentence runs 21 words (limit 18)
-    verdict: false-positive
-    note: a footnote citing another letter by number, title and date, not a sentence
   - rule: heading-level-skip
     line: 45
     text: "##### Notes:"

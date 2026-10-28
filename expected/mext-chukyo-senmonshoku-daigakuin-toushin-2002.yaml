@@ -1,11 +1,6 @@
 id: mext-chukyo-senmonshoku-daigakuin-toushin-2002
 chaff: 0.36.0
 findings:
-  - rule: ngram-repetition
-    line: 20
-    text: 高度専門職業人養成に特化した新たな大学院制度の創設の必要性
-    message: 「人養成に特化した」が 7 回出てきます（5 回まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 38
     text: の問題の解決のためには，今まで以上に多様な経験や国際的視野を持ち，高度で専門的な
@@ -50,6 +45,11 @@ findings:
     line: 49
     text: （6）本審議会では，以上のような状況を踏まえ，近年の各般における社会の変化やグロ
     message: 一文に読点が 7 個あります（6 個まで）
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 53
+    text: （8）本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，高度専門
+    message: 「人養成に特化した」が 6 回出てきます（5 回まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 53

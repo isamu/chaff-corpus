@@ -6,12 +6,6 @@ findings:
     text: "### SR 26-3: Guidance Clarifying Fraud-R"
     message: 'The heading "SR 26-3: Guidance Clarifying Fraud-Related Information Sharing Under Section 314(b) of the USA PATRIOT Act" runs 15 words (limit 14)'
     verdict: unjudged
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 256 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead (BOARD OF GOVERNORS / OF THE FEDERAL RESERVE SYSTEM) in capitals is counted as proper nouns
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"

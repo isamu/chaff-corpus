@@ -1,11 +1,6 @@
 id: env-nikko-national-park-story
 chaff: 0.33.0
 findings:
-  - rule: proper-noun-density
-    line: 3
-    text: 昭和9（1934）年、日本でも歴史の古い公園の一つとして誕生した、日光国立公園。
-    message: 1000 字あたり 48 個の固有名詞があります（40 個まで）
-    verdict: unjudged
   - rule: taigen-dome-in-prose
     line: 3
     text: 昭和9（1934）年、日本でも歴史の古い公園の一つとして誕生した、日光国立公園。
@@ -40,9 +35,4 @@ findings:
     line: 45
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。15 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 45
-    text: イタリア大使館別荘記念公園(本邸)
-    message: 「大使館別荘記念公園」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged

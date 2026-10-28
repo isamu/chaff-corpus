@@ -3,25 +3,15 @@ chaff: 0.36.0
 findings:
   - rule: undefined-acronym
     line: 30
-    what: DX in an agenda item, never expanded
-    verdict: missed
-    note: DX is never spelled out; it stays reported by the maintainer's decision (the common-acronym list holds everyday words only); found by pending lab PRs
+    sha256: 2807dd23e3f89ec9df69d57eb4cc7eff9594529961f1e3695a7c8e1d8448c993
+    verdict: correct
+    note: DX is never spelled out; it stays reported by the maintainer's decision (the common-acronym list holds everyday words only); found by pending lab PRs; found by chaffjs 0.39.0
   - rule: topic-predicate-distance
     line: 41
     sha256: 1d2f123d3428040259ae32e5ed6523256896962bab2a95454c8f9afbedb76a94
     verdict: correct
   - rule: undefined-acronym
     line: 41
-    what: the railway companies' abbreviation, never expanded
-    verdict: missed
-    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84; found by pending lab PRs
-  - rule: ngram-repetition
-    line: 62
-    sha256: 2b288515eb7b5a169f0b4e83cd170404c6b40a945efa5f7bf94e46b3b7fe319e
-    verdict: false-positive
-    note: the record's fixed result line, repeated under each agenda item by design
-  - rule: no-mixed-desumasu
-    line: 165
-    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
-    verdict: false-positive
-    note: the page's contact block (department and section on one line) is an address, not a sentence; lab main reports it on this line
+    sha256: 2ba7987f9512c2dfa808cd82c1cac7dd6213825a8f9785482e17af1a5897e2b6
+    verdict: correct
+    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84; found by pending lab PRs; found by chaffjs 0.39.0

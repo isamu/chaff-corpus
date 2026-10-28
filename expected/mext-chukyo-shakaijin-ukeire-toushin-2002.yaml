@@ -7,12 +7,6 @@ findings:
     message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: false-positive
     note: 「柔軟に」 is part of the name of the mechanism the 答申 proposes, in its heading
-  - rule: duplicate-heading
-    line: 27
-    text: "## 大学等における社会人受入れの推進方策について（答申）"
-    message: 見出し「大学等における社会人受入れの推進方策について（答申）」は、同じ親の下の 15 行目の見出しと同じです
-    verdict: false-positive
-    note: the page shows the 答申's title as the page title and again as the document's own heading
   - rule: max-sentence-length
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
@@ -223,11 +217,6 @@ findings:
     text: また，高等専門学校においても，専攻科については大学と同様に単位制を採用しているこ
     message: 接続詞で始まる段落が 3 続いています（2 まで）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 71
-    text: ""
-    message: 「(3) 在学年限及び年間修得単位数」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: unjudged
   - rule: nominalization
     line: 73
     text: 履修を行い学位等の取得を目指す場であることにかんがみれば，長期履修学生が在学でき
@@ -284,11 +273,6 @@ findings:
     line: 78
     text: たり，単位制授業料制度を導入するなど，設置者の判断により適切な方法で徴収すること
     message: 「たり」が一つだけで、対になる「〜たり」がありません
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 78
-    text: 長期履修学生は修業年限を超えて在学することから，その授業料については，通常の修業
-    message: 「は」で出した主題から述語まで 152 字あります（80 字まで）
     verdict: unjudged
   - rule: vague-word-density
     line: 78
@@ -731,11 +715,6 @@ findings:
     text: 研究を行う機会を拡大し，社会の多様な方面で活躍し得る高度の能力と豊かな学識を有す
     message: 「研究を行う」は「研究する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 131
-    text: ""
-    message: 「(1) 分野」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: unjudged
   - rule: nominalization
     line: 133
     text: 教育を行うことができることとされている。
@@ -750,11 +729,6 @@ findings:
     line: 135
     text: これらを踏まえ，通信制博士課程については，各大学院が専攻分野ごとにその学習内容を
     message: 「必要に応じて」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 137
-    text: ""
-    message: 「(2) 教育方法，研究指導」の節に数値もコードもリンクもありません（そういう節が 4/17）
     verdict: unjudged
   - rule: max-sentence-length
     line: 139
@@ -787,11 +761,6 @@ findings:
     line: 141
     text: 交流を行うことは，相互に刺激を与え合い，研究活動にも好ましい影響をもたらし得ると
     message: 「交流を行う」は「交流する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 143
-    text: ""
-    message: 「(3) 教育研究水準の確保，評価制度」の節に数値もコードもリンクもありません（そういう節が 4/17）
     verdict: unjudged
   - rule: nominalization
     line: 145

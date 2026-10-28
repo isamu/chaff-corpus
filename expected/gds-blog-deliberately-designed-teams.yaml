@@ -19,12 +19,6 @@ findings:
     message: Quote marks are written two ways in this document (13 curly, 6 straight)
     verdict: correct
     note: apostrophes written both straight and curly in one post
-  - rule: unqualified-superlative
-    line: 25
-    text: This allows us to compare different type
-    message: '"the best" has nothing to compare against (2 such claims)'
-    verdict: false-positive
-    note: '"the best way to bring capability into the team" chosen among the routes named in the sentence before'
   - rule: contrast-framing
     line: 27
     text: Our aim isn’t just to recruit faster, bu
@@ -53,9 +47,3 @@ findings:
     message: '"not just" and other contrast frames: 3.2 per 1000 words (limit 3)'
     verdict: correct
     note: "\"not just a mechanism ... It's one of\" contrast frame; three in a short post"
-  - rule: unqualified-superlative
-    line: 77
-    text: It’s one of the most important tools for
-    message: '"the most" has nothing to compare against (2 such claims)'
-    verdict: false-positive
-    note: '"one of the most important tools for creating the culture" names its set (tools for creating the culture)'

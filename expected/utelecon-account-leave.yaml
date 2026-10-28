@@ -9,6 +9,10 @@ findings:
     line: 3
     sha256: f86c40d917e61bfaf5b6f4a4650657dba97bdc69ff0cbdda14ca83cc40814bd0
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 3
+    sha256: 8f269597fd5c1c9db7a44da9d871e1ba29fd568d62c8eb0bbd804638c2149cfc
+    verdict: unjudged
   - rule: kutoten-consistency
     line: 22
     sha256: a1013d7409120d6e2bc168f2eb6754ae1a0f21dac1c1f3fe8243cf405878f3de
@@ -24,4 +28,8 @@ findings:
   - rule: topic-predicate-distance
     line: 40
     sha256: 6ce72d0f036b020726aaf2ef2d4b6d0cfd80630aca12493d525fabbaeb49c26c
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 42
+    sha256: c7a80add16c54e33e1209ac8a0d807a501dbd4979e31a4073999814737082021
     verdict: unjudged

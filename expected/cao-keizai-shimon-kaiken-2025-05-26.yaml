@@ -82,12 +82,6 @@ findings:
     text: 最後まで大事なのは「ゆっくり急ぐ」と申し上げたことに尽きておりまして、国益を毀損
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: correct
-  - rule: fullwidth-alnum-consistency
-    line: 77
-    text: 2,500億円の科研費を倍増する大胆な措置を講ずるべき。厳しい状況に置かれている
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。97 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: "the digit leads a thousands-grouped number (2,500億円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: teki-overuse
     line: 90
     text: そして、今を生きるこども・若者が身体的・精神的・社会的にウェルビーイングで生活を
@@ -134,9 +128,3 @@ findings:
     text: この中では、地方歳出について物価の上昇、人件費の増加、金利の上昇など歳出増加圧力
     message: 「この」など、指示語で始まる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 139
-    text: 1,000兆円が達成される。この実現に向け必要な政策の方向性は３つ。
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。97 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: "the digit leads a thousands-grouped number (1,000兆円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"

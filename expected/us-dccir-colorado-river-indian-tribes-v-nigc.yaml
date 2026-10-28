@@ -7,12 +7,6 @@ findings:
     message: This paragraph runs 19 sentences (limit 12)
     verdict: correct
     note: a 19-sentence paragraph of facts and procedural history
-  - rule: undefined-acronym
-    line: 15
-    text: NIGC Final Order). The Commission locate
-    message: '"NIGC" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: the short citation form the opinion defines for the Commission's order, right after its full citation naming the Commission
   - rule: hyphen-as-dash
     line: 19
     text: " - approves (or disapproves) tribal-stat"
@@ -37,12 +31,6 @@ findings:
     message: This paragraph runs 17 sentences (limit 12)
     verdict: correct
     note: a 17-sentence paragraph
-  - rule: oxford-comma-consistency
-    line: 19
-    text: A compact may contain provisions relatin
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a list whose items are quotations each followed by a citation; the comma before 'and' closes the citation, it is not a style choice
   - rule: hyphen-as-dash
     line: 21
     text: ' - many can and will." Id. at 13. In add'

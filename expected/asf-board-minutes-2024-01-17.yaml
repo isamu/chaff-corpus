@@ -240,10 +240,6 @@ findings:
     line: 1124
     sha256: 0254fd7742cf97e43fdc035fb1fd4652f9700f81e1d54d881a977b0f5dbcbe59
     verdict: unjudged
-  - rule: name-variant
-    line: 1154
-    sha256: 400416ee835c8f896bdf81f062c36c9477d4a778bb8b7fe196d9e260bb04ac27
-    verdict: unjudged
   - rule: ngram-repetition
     line: 1209
     sha256: 6c3e9ed1ff84ef3c8cd95ec63555556195fbe7f859a0165731c92386514b7e5f
@@ -445,10 +441,6 @@ findings:
     sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
     verdict: unjudged
   - rule: undefined-acronym
-    line: 1696
-    sha256: dff655c28b08c886e7f575f109a16d423cc9a5098af4be334e0c95a9b343eae2
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 1708
     sha256: 79abff3ee4abf49fc3f4cc875a3ef73b00e06c788870e80b778c17bcf63ca02d
     verdict: unjudged
@@ -530,11 +522,6 @@ findings:
     sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
     verdict: false-positive
     note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: unknown-word
-    line: 1917
-    sha256: 4632b47daa79408c3cfd13653f7b7cf3b13c0cd655bf4a2f8f5d2086eb5ccae8
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: expletive-construction
     line: 1947
     sha256: 74b70152de87acc40ca9f80186c6def19982988b6ee3904cd4675e92bf0e4899
@@ -552,11 +539,6 @@ findings:
     line: 1960
     sha256: 32d0914ab91010d47cdabe2ea3eee63adfb791d1942740d72615a713587632ab
     verdict: unjudged
-  - rule: unknown-word
-    line: 1965
-    sha256: 281031b3735b4bcbcedb2c86b7680f40f8680f1c4206d7a61e75ae87aa66fd10
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: undefined-acronym
     line: 1980
     sha256: fc5e5cd07914b152a03382bfc3b208eb1b4e2a113faacac97ddbb5cdf32f569d
@@ -674,24 +656,20 @@ findings:
     sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
     verdict: false-positive
     note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
-  - rule: undefined-acronym
-    line: 2327
-    sha256: c1d25bb98cec89f15d00adb8b3b8f5b547e4721c698863932cf0c294a2ba1728
-    verdict: unjudged
   - rule: colon-lead-in
     line: 2341
     sha256: 3086095e65d4f5dd921de0c9a7157c2c66ab9aa03e1d390d06c86068838d8e65
+    verdict: false-positive
+    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
+  - rule: colon-lead-in
+    line: 2361
+    sha256: 68783a01415a1d5cd8bb3a98ab77c3b30d209d9a8a8e09d77a76f6d79e3a1bd1
     verdict: false-positive
     note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: orthographic-variant
     line: 2361
     sha256: d8dd376a1773dd528ce464d672bfe61e74e3aa1af4d31dd1ab547ca154630472
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 2361
-    sha256: 68783a01415a1d5cd8bb3a98ab77c3b30d209d9a8a8e09d77a76f6d79e3a1bd1
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: undefined-acronym
     line: 2367
     sha256: 255b7a051813d5a99ec85fec474e18645a2e764b0e41d38cd0770b2c0a48179c
@@ -772,6 +750,11 @@ findings:
     sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
     verdict: false-positive
     note: "the report template's field label, repeated before each project report's list of committee changes; not_flagged: the same label before each entry's list names a field of the entry (the label is four words, past the detector's three-word cap); given by lab main"
+  - rule: colon-lead-in
+    line: 2521
+    sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
+    verdict: false-positive
+    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: expletive-construction
     line: 2521
     sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
@@ -780,11 +763,6 @@ findings:
     line: 2521
     sha256: 376d0b06e2b2216c651bc27c25f3f8697cac3046c7a321b1c2f5dcec66a25860
     verdict: correct
-  - rule: colon-lead-in
-    line: 2521
-    sha256: b42c2dbf143add345c083ce0fe71d310186eb168cd32f3de4d81b195c14731d8
-    verdict: false-positive
-    note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
   - rule: expletive-construction
     line: 2533
     sha256: 10e9d8ff2d1771610562e01bce76ce98ff5f833a0032423dbfbe8a29b6a6dd51
@@ -1088,15 +1066,15 @@ findings:
     sha256: 5ab424079a663682dbea689fce47c81893eeeb5e71a9f1d6bfd8d299071b4ed3
     verdict: false-positive
     note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
-  - rule: doubled-word
-    line: 3310
-    sha256: bea586f1560b93d166fe0f29faffb48ad928a4b2ff51636b760f12781383d475
-    verdict: correct
   - rule: colon-lead-in
     line: 3310
     sha256: 469c9eefc4941b2d85cada9a9a21cd271468a289b50230d626885f2d32c3a02d
     verdict: false-positive
     note: a real lead-in, but one or two per separately written project report in very long minutes; counted only because the template labels raise the density, not section after section; given by lab main
+  - rule: doubled-word
+    line: 3310
+    sha256: bea586f1560b93d166fe0f29faffb48ad928a4b2ff51636b760f12781383d475
+    verdict: correct
   - rule: expletive-construction
     line: 3321
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
@@ -1373,10 +1351,6 @@ findings:
     line: 4197
     sha256: 1c59e261ceb7015cd4aa6542cfd1e16cb4aab595186ec4671ed8910f55cb0b11
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 4216
-    sha256: 9ee5fa0de0a8e20da48e007f918009c7f49c64456b172f99d8a1775f5f420483
-    verdict: unjudged
   - rule: colon-lead-in
     line: 4224
     sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
@@ -1540,16 +1514,6 @@ findings:
     line: 4618
     sha256: bad1a33b72b3ea77d74df323cbf92aef664e5daa7e873590cf53f6409dee42b1
     verdict: unjudged
-  - rule: unknown-word
-    line: 4630
-    sha256: 8a2b2989c952833372f6b021386ae83cc9e4e90d75d5a4fc8299e16fef23a4e0
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
-  - rule: unknown-word
-    line: 4637
-    sha256: 3c958b8570e27bd0b740aceb9cda2e4f4759a6c7ae88f08b8f3408504934345d
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: colon-lead-in
     line: 4681
     sha256: ca2eae7ae220789d56c0cb384b985fcefb86c6549ed9f134462a5b0222d978d4
@@ -1637,11 +1601,6 @@ findings:
     line: 4898
     sha256: 068aa5721cc1829b5e434c33f57cb242af7bd8d5c35fa4115bf6823dd583476b
     verdict: unjudged
-  - rule: unknown-word
-    line: 4914
-    sha256: 9c31bba3138d7e7242d23dac90edc3807d5dacd6f925096ae10cb53a8424dd99
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: name-variant
     line: 4917
     sha256: 4a9ac66dfb4b186e0460808f8deb572588e79d0abb2b49bea300c46b9d8d6ceb

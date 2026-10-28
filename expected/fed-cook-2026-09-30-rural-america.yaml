@@ -196,9 +196,3 @@ findings:
     text: For example, between 2001 and 2021, 53 p
     message: This sentence runs 30 words (limit 25)
     verdict: correct
-  - rule: undefined-acronym
-    line: 77
-    text: SBA, August). An "establishment" is defi
-    message: '"SBA" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: "the publisher's short name after its full name in the same citation (U.S. Small Business Administration … Washington: SBA)"

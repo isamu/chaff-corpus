@@ -61,12 +61,6 @@ findings:
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
     note: '"There are small functions that can be extracted"'
-  - rule: comparative-without-baseline
-    line: 159
-    text: faster. More teams can be brought on to
-    message: '"faster" does not say what it is compared with'
-    verdict: false-positive
-    note: '"move faster" than the undivided application the sentence starts from ("As the application starts dividing")'
   - rule: max-paragraph-length
     line: 173
     text: In the world of software development, we

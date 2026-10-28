@@ -10,16 +10,6 @@ findings:
     sha256: 9c6b7ee5f92932197bdc6e2bac20bada08170f1bdaf194ca49a449e1a4bda534
     verdict: correct
     note: the abbreviation is never expanded and is not on chaff's common-acronym list; that local government staff know it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
-  - rule: no-mixed-desumasu
-    line: 45
-    sha256: ff1e6b2e68c76a155ed582b25cdd8202da8582ddb1fbb57564a21bca0b3acbf4
-    verdict: false-positive
-    note: a set polite greeting inside the mayor's plain-form remarks, not a change of style
-  - rule: undefined-acronym
-    line: 48
-    sha256: 129fe4b3557ab2db688c26990df948997bb0839f9a654405a8ad2bab7abcea0d
-    verdict: false-positive
-    note: this abbreviation is everyday Japanese
   - rule: undefined-acronym
     line: 69
     sha256: e24dc422a86514282232db7ce491fc98433731258a731e2a5e0755e50a401fbd
@@ -30,7 +20,3 @@ findings:
     sha256: 7608132c9acddc45e294c982664eac7632a65aed4241adc890fa9210e76be8d0
     verdict: correct
     note: a facility brand's abbreviation that is not spelled out
-  - rule: no-mixed-desumasu
-    line: 129
-    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
-    verdict: unjudged

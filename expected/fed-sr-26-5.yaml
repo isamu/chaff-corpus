@@ -1,11 +1,6 @@
 id: fed-sr-26-5
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 248 proper nouns per 1000 words (limit 200)
-    verdict: unjudged
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"

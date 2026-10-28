@@ -17,20 +17,10 @@ findings:
     text: 国立情報学研究所情報社会相関研究系／オープンサイエンス基盤研究センター：船守美穂
     message: 「国立情報学研究所情報社会相関研究系」は漢字が 17 字続いています（8 字まで）
     verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 15
-    text: "#### 1. 即時OA政策の動向"
-    message: 見出し「1. 即時OA政策の動向」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 19
     text: 即時OA政策は、欧州の研究助成機関の有志団体であるcOAlition Sが201
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 25
-    text: "#### 2. 即時OAの方法"
-    message: 見出し「2. 即時OAの方法」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
     verdict: unjudged
   - rule: orthographic-variant
     line: 27
@@ -51,11 +41,6 @@ findings:
     line: 33
     text: の研究成果の還元の次に、「国全体の購読料及びオープンアクセス掲載公開料の総額の経
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 35
-    text: "#### 3. グリーンOAを通じた即時OAの問題点と対応策"
-    message: 見出し「3. グリーンOAを通じた即時OAの問題点と対応策」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
     verdict: unjudged
   - rule: empty-section
     line: 39
@@ -111,11 +96,6 @@ findings:
     line: 69
     text: "#### 4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発"
     message: 見出し「4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発」の下に中身がありません
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 69
-    text: "#### 4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発"
-    message: 見出し「4. 出版社の設定するエンバーゴ期間無効化の動きと出版社の反発」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 75
@@ -191,11 +171,6 @@ findings:
     line: 155
     text: "#### 5. 結び"
     message: 見出し「5. 結び」の下に中身がありません
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 155
-    text: "#### 5. 結び"
-    message: 見出し「5. 結び」の番号の書き方が、兄弟の見出し（「3.1 大学における実施体制上の問題点と解決の方向性」など 14 個）と違います
     verdict: unjudged
   - rule: orthographic-variant
     line: 165

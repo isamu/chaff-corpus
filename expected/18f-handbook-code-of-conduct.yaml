@@ -1,12 +1,11 @@
 id: 18f-handbook-code-of-conduct
 chaff: 0.34.0
 findings:
-  - rule: unknown-word
-    line: 98
-    text: neuro(a)typicality, physical appearance,
-    message: '"neuro" is not in the dictionary; did you mean "negro"?'
-    verdict: false-positive
-    note: "'neuro(a)typicality' folds two words into one with a parenthesised letter; the part before the bracket is read as a word"
+  - rule: oxford-comma-consistency
+    line: 42
+    text: Assume competence in your colleagues, cl
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
   - rule: title-case-consistency
     line: 102
     text: ""

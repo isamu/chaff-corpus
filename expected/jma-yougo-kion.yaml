@@ -17,36 +17,6 @@ findings:
     text: )め
     message: 括弧を「)」と書いています（この文書はふつう「）」。96 箇所のうち 5 箇所が違う）
     verdict: correct
-  - rule: fullwidth-alnum-consistency
-    line: 73
-    text: 5,500mの気温。
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 77
-    text: 5,000mまたは6,000mに言い換える。
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 77
-    text: 6,000mに言い換える。
-    message: 半角の「6」と書いています（この文書はふつう全角の「６」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 78
-    text: 3,000、9,000mとする。
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
-  - rule: fullwidth-alnum-consistency
-    line: 78
-    text: 9,000mとする。
-    message: 半角の「9」と書いています（この文書はふつう全角の「９」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
   - rule: hankaku-kana
     line: 78
     text: ､300hPaについてはそれぞれ約1500、3,000、9,000mとする。
@@ -91,12 +61,6 @@ findings:
     message: 「（」を「)」で閉じています（全角と半角が違います）
     verdict: correct
     note: a full-width parenthesis closed by a half-width one
-  - rule: fullwidth-alnum-consistency
-    line: 163
-    text: 5,000mには氷点下40度以下の寒気がある。
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。55 箇所のうち 11 箇所が違う）
-    verdict: false-positive
-    note: "the page follows the official-writing convention: one-digit numbers full-width, longer numbers and decimals half-width"
   - rule: tari-unpaired
     line: 167
     text: たり大気の状態が不安定になる。

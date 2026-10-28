@@ -126,11 +126,6 @@ findings:
     text: 学校設置者等及び民間教育保育等事業者による児童対象性暴力等の防止等のための措置に
     message: この文は 143 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 195
-    text: の防止等のための措置に関する法律（以下「こども性暴力防止法」という。）の施行（令
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 224
     text: 第4条　職員は、自らの行動が市政に対する市民の信用に大きな影響を与えることを深く

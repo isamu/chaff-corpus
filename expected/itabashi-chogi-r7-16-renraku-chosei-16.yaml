@@ -19,11 +19,6 @@ findings:
     line: 59
     sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 69
-    sha256: 0bdd788039520cb492d2ceb0bfaf12e2896e2a9e992d938b72e364174f5a32f5
-    verdict: false-positive
-    note: the record's fixed closing line under each report item
   - rule: max-kanji-continuous
     line: 73
     sha256: 8e970c2935c0a47c48c51f874ad66668ff35a3495f5beeeed4ab5c64dac5c809
@@ -64,8 +59,4 @@ findings:
   - rule: max-kanji-continuous
     line: 194
     sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 206
-    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
     verdict: unjudged

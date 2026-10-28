@@ -1,10 +1,6 @@
 id: jstage-jniph-74-2-157-heat-policy
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 19
-    sha256: 34a7c1ab1a0f779b706c83bf53008c2791620173ffcac3130f834f87cb0d64bb
-    verdict: unjudged
   - rule: latin-spacing
     line: 39
     sha256: 5416dfbdab080a92e6e074ea9b85e31ead4c7d1ea8be6d9e8ed40b1f166abf8c

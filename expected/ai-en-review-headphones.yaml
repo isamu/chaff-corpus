@@ -1,12 +1,6 @@
 id: ai-en-review-headphones
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# Noise-Cancelling Headphones Review: Si"
-    message: "3 bold spans of emphasis: 7.2 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: "**Pros:**, **Cons:** and **Rating: 4 out of 5** are run-in headings, not emphasis"
   - rule: section-length-uniformity
     line: 1
     text: ""
@@ -23,18 +17,6 @@ findings:
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
     verdict: missed
     note: catalog E18 and E14 (bold labels, every list three items)
-  - rule: colon-lead-in
-    line: 7
-    text: Pros:**
-    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
-  - rule: colon-lead-in
-    line: 12
-    text: Cons:**
-    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
   - rule: list-item-form-mix
     line: 15
     text: Call quality is average outdoors

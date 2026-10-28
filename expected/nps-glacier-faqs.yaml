@@ -32,25 +32,14 @@ findings:
     verdict: correct
     note: the answers write "it is" except this one "It's"
   - rule: undefined-acronym
-    line: 40
-    text: GNPCGS to 333111 to sign up!
-    message: '"GNPCGS" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: GNPCGS is the keyword the reader texts to 333111, a code to type as it stands, not a term to spell out; given by pending lab PRs
-  - rule: undefined-acronym
     line: 49
-    what: NPS, never expanded
-    verdict: missed
-    note: the same verdict as nps-joshua-tree-faqs:61 (the page never ties NPS to National Park Service); one unexplained acronym reaches the docs/faq limit of 1; found by pending lab PRs
+    text: NPS designated storage lockers and bear-
+    message: '"NPS" is used without an expansion (1 such acronym)'
+    verdict: correct
+    note: the same verdict as nps-joshua-tree-faqs:61 (the page never ties NPS to National Park Service); one unexplained acronym reaches the docs/faq limit of 1; found by pending lab PRs; found by chaffjs 0.39.0
   - rule: max-paragraph-length
     line: 60
     text: Trail status is unpredictable because tr
     message: This paragraph runs 9 sentences (limit 5)
     verdict: correct
     note: a nine-sentence paragraph on trail status
-  - rule: max-sentence-length
-    line: 80
-    text: "St. Mary to Many Glacier Valley: 20 mile"
-    message: This sentence runs 94 words (limit 40)
-    verdict: false-positive
-    note: "extraction artefact: a list of driving times separated by <br> in the source is read as one 94-word sentence"

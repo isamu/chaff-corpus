@@ -11,11 +11,6 @@ findings:
     sha256: ef347560b12cf8164a57914eeb75d079e2af0d998954da0fcbf26e244d275e7e
     verdict: correct
     note: 「チベットへの陸の旅の一部」で「の」が三つ続く
-  - rule: orthographic-variant
-    line: 38
-    sha256: 50fe31564aaf1aeeabaa3ee97af51176a5f12f9f8287b1c72dbbacc922c0bd64
-    verdict: false-positive
-    note: 「ラオカイ」（地名 Lao Cai の音写）と「虎跳峡」の「峡」は別の語で、表記ゆれではない
   - rule: list-item-form-mix
     line: 42
     sha256: b19c61f9203d30de987ef93dc0a65ad32bfb34bf66ef8eb964aec9a0b5bb27e3

@@ -1,11 +1,6 @@
 id: nih-research-matters-hpv-one-dose
 chaff: 0.33.0
 findings:
-  - rule: proper-noun-density
-    line: 1
-    text: January 13, 2026
-    message: 212 proper nouns per 1000 words (limit 200)
-    verdict: unjudged
   - rule: heading-level-skip
     line: 5
     text: "### At a Glance"

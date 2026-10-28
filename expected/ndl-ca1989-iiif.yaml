@@ -13,12 +13,6 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。223 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「のが IIIF」 with a space, where the article writes IIIF without spaces elsewhere
-  - rule: max-kanji-continuous
-    line: 11
-    text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人
-    message: 「東京大学人文情報学拠点」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of a University of Tokyo centre
   - rule: topic-predicate-distance
     line: 11
     text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人

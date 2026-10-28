@@ -13,12 +13,6 @@ findings:
     message: 節を立てた論文ですが、要旨がありません
     verdict: false-positive
     note: カレントアウェアネス articles carry no abstract; the journal's format, not an omission
-  - rule: heading-numbering-mix
-    line: 7
-    text: "#### 1. はじめに"
-    message: 見出し「1. はじめに」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
-    verdict: false-positive
-    note: sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent
   - rule: topic-predicate-distance
     line: 13
     text: CCライセンスは、クリエイティブ・コモンズが提供している著作権者の意思表示ツール
@@ -36,29 +30,16 @@ findings:
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
     verdict: unjudged
   - rule: ngram-repetition
-    line: 57
-    text: CCライセンスを付与することにより、利用許諾に関する個別のやり取りが基本的に不要
-    message: 「センスを付与する」が 6 回出てきます（5 回まで）
-    verdict: false-positive
-    note: 「CCライセンスを付与する」 is the article's subject and in its title; repetition is expected
-  - rule: heading-numbering-mix
-    line: 61
-    text: "#### 2. CCライセンスを付与する際の主な留意事項"
-    message: 見出し「2. CCライセンスを付与する際の主な留意事項」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
-    verdict: false-positive
-    note: sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent
+    line: 67
+    text: 複数のCCライセンスが付与されている場合、利用者はいずれのCCライセンスが適用さ
+    message: 「することができる」が 6 回出てきます（5 回まで）
+    verdict: unjudged
   - rule: empty-section
     line: 83
     text: "#### 3. CCライセンスを巡る最近の動向"
     message: 見出し「3. CCライセンスを巡る最近の動向」の下に中身がありません
     verdict: false-positive
     note: a section whose subsections sit at the same heading level (3. then 3.1); not empty
-  - rule: heading-numbering-mix
-    line: 83
-    text: "#### 3. CCライセンスを巡る最近の動向"
-    message: 見出し「3. CCライセンスを巡る最近の動向」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
-    verdict: false-positive
-    note: sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent
   - rule: max-ten
     line: 87
     text: こうしたCCライセンスの使われ方について、クリエイティブ・コモンズは、「功績を認
@@ -99,12 +80,6 @@ findings:
     message: 「であると言える」は、もっと短く言えます
     verdict: correct
     note: 「であると言える」 hedges a plain statement
-  - rule: heading-numbering-mix
-    line: 103
-    text: "#### 4. おわりに"
-    message: 見出し「4. おわりに」の番号の書き方が、兄弟の見出し（「1.1 CCライセンスの概要」など 7 個）と違います
-    verdict: false-positive
-    note: sections (1.) and subsections (1.1) share one heading level because the page marks both h4; the numbering itself is consistent
   - rule: teki-overuse
     line: 107
     text: 最新動向の理解に限らず、CCライセンスの理解にあたっては、著作権法の基本的な知識

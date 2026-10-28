@@ -171,12 +171,6 @@ findings:
     text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
     message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 75
-    text: ""
-    message: 「3．食に関する教育指導の連携・調整」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: false-positive
-    note: a qualitative policy section of a 答申; figures are not expected there
   - rule: teki-overuse
     line: 77
     text: その中で，栄養教諭は，栄養に関する専門的な教員として，例えば，食に関する指導に係
@@ -227,12 +221,6 @@ findings:
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。6 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「更に」 where the text writes 「さらに」 elsewhere
-  - rule: concrete-evidence-density
-    line: 96
-    text: ""
-    message: 「（3）食に関する指導と学校給食の管理の一体的な展開」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: false-positive
-    note: a qualitative policy section of a 答申; figures are not expected there
   - rule: tari-unpaired
     line: 98
     text: たり，食に関する指導を通じて児童生徒の食の現状を把握し，不足しがちな栄養素を補う
@@ -290,12 +278,6 @@ findings:
     message: この文は 191 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: concrete-evidence-density
-    line: 131
-    text: ""
-    message: 「5．養成課程」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: false-positive
-    note: a qualitative policy section of a 答申; figures are not expected there
   - rule: max-sentence-length
     line: 134
     text: 一方，現在の管理栄養士，栄養士の養成課程として，大学以外に専門学校等においても，
@@ -308,11 +290,6 @@ findings:
     message: この文は 143 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: topic-predicate-distance
-    line: 141
-    text: その際，栄養教諭は生活習慣病の予防や食物アレルギーへの対応等についての児童生徒に
-    message: 「は」で出した主題から述語まで 125 字あります（80 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 148
     text: 現在，学校栄養職員である者が栄養教諭の免許状を取得する場合には，職務を行いながら
@@ -325,11 +302,6 @@ findings:
     message: この文は 171 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: topic-predicate-distance
-    line: 152
-    text: 他の教諭や養護教諭の免許状を有する学校栄養職員が，栄養教諭の免許状を取得する場合
-    message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 156
     text: 栄養教諭としての資質能力は，その養成・採用・研修の各段階を通じて形成されていくべ
@@ -370,12 +342,6 @@ findings:
     message: 「であるといえる」は、もっと短く言えます
     verdict: correct
     note: 「であるといえる」 hedges a plain statement
-  - rule: concrete-evidence-density
-    line: 184
-    text: ""
-    message: 「3　学校・家庭・地域社会の連携等による総合的取組」の節に数値もコードもリンクもありません（そういう節が 4/17）
-    verdict: false-positive
-    note: a qualitative policy section of a 答申; figures are not expected there
   - rule: empty-intensifier
     line: 186
     text: このような現状を踏まえると，子どもに望ましい食習慣を身に付けさせるには，家庭への
