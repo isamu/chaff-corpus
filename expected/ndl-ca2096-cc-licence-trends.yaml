@@ -27,7 +27,8 @@ findings:
     line: 67
     text: 複数のCCライセンスが付与されている場合、利用者はいずれのCCライセンスが適用さ
     message: 「することができる」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: correct
+    note: 「することができる」 six times in an article; 「できる」 would do
   - rule: empty-section
     line: 83
     text: "#### 3. CCライセンスを巡る最近の動向"

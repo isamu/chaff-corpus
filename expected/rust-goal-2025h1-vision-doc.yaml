@@ -35,7 +35,8 @@ findings:
     line: 57
     text: RFC'd, which meant it did not truly repr
     message: '"RFC" is used without an expansion (1 such acronym)'
-    verdict: unjudged
+    verdict: correct
+    note: RFC (Request for Comments) is never expanded and is not an everyday word
   - rule: contraction-consistency
     line: 61
     text: For each of those, we'll make recommenda

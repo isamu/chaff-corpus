@@ -70,9 +70,11 @@ findings:
     line: 1
     text: NTT東日本及びNTT西日本の代理店・特約店を通じ、ビジネスフォン向けフィルタサ
     message: 「NTT」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: NTT, a company's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: undefined-acronym
     line: 1
     text: SIP／VoIP技術をベースとした製品の開発等を行っている株式会社ageetを当
     message: 「SIP」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: SIP（通信プロトコル）は説明なしで使われている

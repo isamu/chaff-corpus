@@ -23,7 +23,8 @@ findings:
     line: 39
     text: "-   **Find out how best to participate.*"
     message: '"Find out how best to participate" and other bold labels open 11 list items (5 needed)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a human tips list: each bold lead is the advice itself, an imperative sentence the item then explains (18F's house style); no link between items is left unwritten"
   - rule: redundant-expression
     line: 39
     text: Depending on your involvement in a proje

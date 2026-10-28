@@ -10,7 +10,8 @@ findings:
     line: 14
     text: SR 26-8
     message: '"SR" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: SR 26-8 is the letter's number in the Board's series, named in the page's heading (Supervision and Regulation Letters); an identifier like a form number, not prose shorthand
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
@@ -81,7 +82,8 @@ findings:
     line: 47
     text: A U.S. branch or agency of a foreign ban
     message: This list punctuates differently from the rest (2 in this document)
-    verdict: unjudged
+    verdict: false-positive
+    note: 'no list here: the commas set off a parenthetical (received, at its most recent examination, a … rating of "1" or "2"), read as a list without the serial comma'
   - rule: max-sentence-length
     line: 49
     text: "Either: (a) the foreign bank's most rece"
@@ -182,4 +184,5 @@ findings:
     line: 89
     text: '"ROCA" refers to the rating system for U'
     message: This list punctuates differently from the rest (2 in this document)
-    verdict: unjudged
+    verdict: correct
+    note: '"branches, agencies and commercial lending companies" lacks the serial comma the letter uses elsewhere (Board, FDIC, or OCC)'

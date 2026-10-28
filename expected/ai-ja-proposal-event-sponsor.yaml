@@ -17,12 +17,14 @@ findings:
     line: 7
     text: 〇〇市民マラソン」に、協賛金30万円で協賛したい。承認をお願いします。
     message: 「〇〇市」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 11
     text: 〇〇市で毎年5,000人が参加する大会。地元での知名度向上につながる
     message: 「〇〇市」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: test:invented-detail
     line: 18
     what: 採用での効果（14行）と広告宣伝費の残り約120万円が依頼にない

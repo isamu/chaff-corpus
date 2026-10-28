@@ -24,7 +24,8 @@ findings:
   - rule: oxford-comma-consistency
     line: 35
     sha256: 4453746381ea791c6cabe159de2434be523ec3c7e72849a92089009f209ddf6e
-    verdict: unjudged
+    verdict: correct
+    note: '"business owners, street vendors, local officials and members of the public" lacks the serial comma the post uses elsewhere'
   - rule: max-sentence-length
     line: 77
     sha256: 7bf4b0ddea35d9d71c592f15f8bb02f74252573f22904fd688d9c1bc207c21ab
@@ -32,4 +33,5 @@ findings:
   - rule: oxford-comma-consistency
     line: 77
     sha256: 7bf4b0ddea35d9d71c592f15f8bb02f74252573f22904fd688d9c1bc207c21ab
-    verdict: unjudged
+    verdict: false-positive
+    note: "the list without a serial comma is inside a cited book title (… era: invaders, lovers and demons); the post's own list of titles has it"

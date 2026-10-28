@@ -28,7 +28,8 @@ findings:
   - rule: ngram-repetition
     line: 43
     sha256: d184147b1c48eba1e3483e3e7dedd506f9844a4c3a89ca3006c53c8a90be00a3
-    verdict: unjudged
+    verdict: false-positive
+    note: 「〜できるようにした」 is the changelog's closing formula for an added feature, each entry naming a different one; a formula the items carry
   - rule: no-mixed-desumasu
     line: 43
     sha256: d184147b1c48eba1e3483e3e7dedd506f9844a4c3a89ca3006c53c8a90be00a3

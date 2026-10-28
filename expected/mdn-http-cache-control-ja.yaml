@@ -23,7 +23,8 @@ findings:
     line: 141
     text: 前方/後方キャッシュ ({{Glossary('bfcache')}}) が使用
     message: 「ーは再検証を行わ」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: correct
+    note: the same two-sentence note on bfcache is copied under three directives; said once and linked, it would not repeat
   - rule: bracket-width-consistency
     line: 143
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪

@@ -25,7 +25,8 @@ findings:
     line: 103
     text: "TBD: Consider using the standard deviati"
     message: '"TBD: Consider using the standard deviation of threshold" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a TBD left in the published table's threshold cell
   - rule: undefined-acronym
     line: 110
     text: CMS OSPO created the archival-identifier

@@ -43,7 +43,8 @@ findings:
     line: 158
     text: enrollment, but plausibly extend to the
     message: '"enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: sentence-initial-so
     line: 172
     text: So, the user invests on the basis of wha
@@ -53,37 +54,44 @@ findings:
     line: 184
     text: enrollment that the system tends to affi
     message: '"enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 184
     text: enrollment therefore does not discharge
     message: '"enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 192
     text: enroll in.
     message: '"enroll" here, where the document usually spells it "enrol" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 200
     text: enrollment in a developer-curated vision
     message: '"enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 200
     text: Enrollment in a relationship with the as
     message: '"Enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 202
     text: enroll in the system as designed. Develo
     message: '"enroll" here, where the document usually spells it "enrol" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: spelling-consistency
     line: 202
     text: enrollment forward, as opposed to the in
     message: '"enrollment" here, where the document usually spells it "enrolment" (8 of 26)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper spells British (authorise) but writes the US enroll/enrollment; British is enrol/enrolment
   - rule: sentence-initial-so
     line: 204
     text: So, where the protection of vulnerable u

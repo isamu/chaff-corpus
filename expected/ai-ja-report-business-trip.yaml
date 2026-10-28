@@ -22,7 +22,8 @@ findings:
     line: 34
     text: 〇〇 | 10月23日 |
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: date-outside-period
     line: 35
     text: 11月13日 |
@@ -33,9 +34,11 @@ findings:
     line: 35
     text: 〇〇 | 11月13日 |
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 36
     text: 〇〇 | 10月30日 |
     message: 「〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

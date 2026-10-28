@@ -35,12 +35,14 @@ findings:
     line: 29
     text: TEL  03-3222-1061 ※月～金曜日 9:30～17:30
     message: 「TEL」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: TEL as the label of a phone number is an everyday word, like those on the common-acronym list
   - rule: undefined-acronym
     line: 72
     text: ICOで発行された暗号資産を購入したが、未だに上場が実現していません。
     message: 「ICO」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: ICO is expanded on line 18 as ＩＣＯ（Initial Coin Offering）, in full-width letters; chaff does not tie the full-width form to the half-width ICO here
   - rule: requirement-smell
     line: 76
     text: などをしっかり理解した上で、自己責任で取引を行う必要があります。

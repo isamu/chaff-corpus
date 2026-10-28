@@ -11,7 +11,8 @@ findings:
     line: 9
     text: visualize the pathways learners follow a
     message: '"visualize" here, where the document usually spells it "visualise" (5 of 16)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper mixes -ise and -ize spellings (categorises and visualize in one paragraph)
   - rule: max-paragraph-length
     line: 17
     text: Data literacy is increasingly positioned
@@ -22,12 +23,14 @@ findings:
     line: 17
     text: visualization, cognitive science, artifi
     message: '"visualization" here, where the document usually spells it "visualisation" (5 of 16)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper mixes -ise and -ize spellings (visualisation elsewhere)
   - rule: spelling-consistency
     line: 55
     text: categorize, and required discussion to r
     message: '"categorize" here, where the document usually spells it "categorise" (5 of 16)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper mixes -ise and -ize spellings (categorises elsewhere)
   - rule: latin-abbreviation-form
     line: 67
     text: e.g dessert reviews), to refining featur
@@ -50,12 +53,14 @@ findings:
     line: 97
     text: characterizing the distinction between p
     message: '"characterizing" here, where the document usually spells it "characterising" (5 of 16)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper mixes -ise and -ize spellings (characterised two sentences before)
   - rule: spelling-consistency
     line: 97
     text: recognize that our proposed trajectories
     message: '"recognize" here, where the document usually spells it "recognise" (5 of 16)'
-    verdict: unjudged
+    verdict: correct
+    note: the paper mixes -ise and -ize spellings (recognise elsewhere)
   - rule: redundant-expression
     line: 109
     text: Though few in number, these instances we

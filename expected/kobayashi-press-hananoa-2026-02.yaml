@@ -12,7 +12,8 @@ findings:
   - rule: undefined-acronym
     line: 12
     sha256: ca9558e38c840e5b9ce93d67d4e84fa84f9fd4cf02400b47ddc3e7e9cfc08f3b
-    verdict: unjudged
+    verdict: false-positive
+    note: CM (テレビCM) is an everyday word in Japanese, like those on the common-acronym list
   - rule: yori-as-from
     line: 12
     sha256: 00087d8d96e89f9a7091be00a6e04089b46f3a8c1cc5943cd52f6d74b47c9b83
@@ -36,7 +37,8 @@ findings:
   - rule: undefined-acronym
     line: 38
     sha256: 5c8b6fb53b16e8fa3a365890bfa3c687cea37df7574a5a51394bf2a1fa343845
-    verdict: unjudged
+    verdict: correct
+    note: NSC, the name of a comedians' school, is never expanded; organisation names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: bracket-width-consistency
     line: 39
     sha256: a11fd82358cd3a95d943ebddc8ee914cb2d7aa2e360dc2280d20e8c477978718

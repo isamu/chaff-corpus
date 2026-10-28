@@ -20,7 +20,8 @@ findings:
   - rule: ai-tell
     line: 43
     sha256: 425579545be510513f27adb6cb93b771db5be1e1f634d68e7738f978ffa97f2c
-    verdict: unjudged
+    verdict: false-positive
+    note: a daily listing of many papers' abstracts by different authors; the phrases are one per abstract, spread over some 900 lines, so no single text piles them up
   - rule: max-paragraph-length
     line: 43
     sha256: bec603ada66e086c2ccd8a413b6eeb8e8aba83ec6d9513ee3338271b5d4358ce
@@ -36,7 +37,8 @@ findings:
   - rule: ngram-repetition
     line: 57
     sha256: 8f69ee20bdc798f52567208021a617e42bd28f66cac9b0c7b3a2d533e3f119ff
-    verdict: unjudged
+    verdict: correct
+    note: one abstract repeats the phrase eleven times in a paragraph; a short name for the ejected bodies would do
   - rule: space-before-punctuation
     line: 95
     sha256: 81d6591c690c70c74282c1f71aeb3dccb4e0968b87fdbb493a41f0b35be2f92c

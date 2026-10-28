@@ -11,12 +11,14 @@ findings:
     line: 15
     text: 〇〇区〇〇 〇丁目〇番〇号 〇〇ビル5階
     message: 「〇〇区〇〇 〇丁目〇番〇号 〇〇ビル」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 16
     text: 〇〇〇〇-〇〇〇〇（FAX番号は変更ございません）
     message: 「〇〇〇〇-〇〇〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: date-weekday-mismatch
     line: 17
     text: 2026年12月1日（月）
@@ -39,4 +41,5 @@ findings:
     line: 25
     text: 〇〇 〇〇
     message: 「〇〇 〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

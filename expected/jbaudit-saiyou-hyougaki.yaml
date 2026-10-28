@@ -26,11 +26,6 @@ findings:
     text: 就職永河期世代)事務·技術区分第2次選考の実施について(本文)（別ウィンドウで開
     message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
     verdict: correct
-  - rule: orthographic-variant
-    line: 23
-    what: 就職永河期世代 is a typo for 就職氷河期世代, which the page writes elsewhere (lines 3, 35)
-    verdict: missed
-    note: "永 for 氷: one kanji differs from the term the document uses everywhere else"
   - rule: fullwidth-alnum-consistency
     line: 24
     text: 2次選考の実施について(概要)（別ウィンドウで開きます。）
@@ -41,7 +36,3 @@ findings:
     text: 就職永河期世代)事務·技術区分第2次選考の実施について(概要)（別ウィンドウで開
     message: 「就職永河期世代」と書いています（この文書は「就職氷河期世代」を 5 回書いています）
     verdict: correct
-  - rule: orthographic-variant
-    line: 24
-    what: 就職永河期世代 is a typo for 就職氷河期世代 (same as line 17)
-    verdict: missed

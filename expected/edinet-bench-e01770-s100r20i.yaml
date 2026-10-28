@@ -40,7 +40,8 @@ findings:
     line: 13
     text: の兼任等資金援助営業上の取引設備の賃貸借所有割合(％)被所有割合(％)当社役員(
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: the の belong to different header cells of a table the text runs together (役員の兼任等 / 営業上の取引 / 設備の賃貸借)
   - rule: repeated-sentence-ending
     line: 13
     text: ３　京三システム株式会社2022年10月25日に清算を結了いたしました。

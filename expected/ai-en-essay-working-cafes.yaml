@@ -10,7 +10,8 @@ findings:
     line: 18
     text: And honestly? I've ended up knowing the
     message: '"honestly?" flags this sentence as candid'
-    verdict: unjudged
+    verdict: correct
+    note: '"And honestly?": the candour marker generated text adds to sound human'
   - rule: q-fragment-answer
     line: 18
     what: '"And honestly?"'

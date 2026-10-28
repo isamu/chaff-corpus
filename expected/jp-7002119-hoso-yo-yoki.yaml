@@ -4,11 +4,13 @@ findings:
   - rule: orthographic-variant
     line: 10
     sha256: d54e91ec8e31b47eb27b048d906fa7abefd792124ba28be4316503d5187455f9
-    verdict: unjudged
+    verdict: correct
+    note: 「捲りあげ」 beside 「摘み上げ」 and 「捲り上げ」 in the same paragraph
   - rule: orthographic-variant
     line: 12
     sha256: da40cd086bbf0c08cb86bd8d8b42a1b15290ad0914bf8ed21cd6bfec2a88f0dd
-    verdict: unjudged
+    verdict: correct
+    note: 「捲りあげる」 where the sentence before writes 「捲り上げていた」
   - rule: missing-final-period
     line: 16
     sha256: 1ed061f00fb6e08d9569200e9cb23e7de7a1c38b4987bf15645c392bd88f42a9

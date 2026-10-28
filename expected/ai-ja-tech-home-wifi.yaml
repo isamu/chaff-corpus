@@ -28,7 +28,8 @@ findings:
     line: 19
     text: 正直、これがいちばん効きました。
     message: 「正直、」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「正直、」: the candour marker generated text adds to sound human"
   - rule: no-doubled-joshi
     line: 21
     text: のラックの下の段に押し込んでありました。見た目がすっきりするのでそうしていたので

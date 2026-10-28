@@ -11,17 +11,14 @@ findings:
     line: 3
     text: Code, notes, even grocery lists, if I'm
     message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
-    verdict: unjudged
-  - rule: ai-tell
-    line: 3
-    what: "\"if I'm being honest\""
-    verdict: missed
-    note: candidate pattern (honesty marker), under 'make it sound human'
+    verdict: correct
+    note: both inputs judged correct (honesty-marker 3, section-length-uniformity 1)
   - rule: honesty-marker
     line: 3
     text: Code, notes, even grocery lists, if I'm
     message: "\"if I'm being honest\" flags this sentence as candid"
-    verdict: unjudged
+    verdict: correct
+    note: "\"if I'm being honest\": the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it"
   - rule: adverb-overuse
     line: 9
     text: actually remember what I'd called things

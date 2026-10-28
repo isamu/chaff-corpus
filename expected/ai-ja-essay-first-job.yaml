@@ -1,16 +1,12 @@
 id: ai-ja-essay-first-job
 chaff: 0.36.0
 findings:
-  - rule: ai-tell
-    line: 9
-    what: 「正直に言うと」
-    verdict: missed
-    note: candidate pattern (honesty marker 正直)
   - rule: honesty-marker
     line: 9
     text: 正直に言うと、途中で何をどう書けばいいのか、まったくわからなくなっていた。けれど
     message: 「正直に言うと」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「正直に言うと」: the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it"
   - rule: ai-tell
     line: 15
     what: 「それがかえって胸に刺さった」

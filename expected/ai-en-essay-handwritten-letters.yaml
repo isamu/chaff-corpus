@@ -11,7 +11,8 @@ findings:
     line: 7
     text: Not because I think handwriting is moral
     message: '"honesty-marker, contrast-framing" occur together in this document (2 signals, 2 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: both inputs judged correct (honesty-marker 7, contrast-framing 7/19)
   - rule: contrast-framing
     line: 7
     text: Not because I think handwriting is moral
@@ -22,7 +23,8 @@ findings:
     line: 7
     text: That's most of why I still write letters
     message: "\"if I'm honest\" flags this sentence as candid"
-    verdict: unjudged
+    verdict: correct
+    note: "\"if I'm honest\": the candour marker generated text adds to sound human"
   - rule: max-paragraph-length
     line: 13
     text: My handwriting is bad, by the way. Reall

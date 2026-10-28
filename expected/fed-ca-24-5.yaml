@@ -10,7 +10,8 @@ findings:
     line: 12
     text: CA 24-5
     message: '"CA" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: CA 24-5 is the letter's number in the Board's series, named in the page's heading (Consumer Affairs Letters); an identifier like a form number, not prose shorthand
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"
@@ -46,7 +47,8 @@ findings:
     line: 41
     text: SR 24-2 / CA 24-1, “Third-Party Risk Man
     message: '"SR" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: SR 24-2 / CA 24-1 cite other letters by their series numbers; identifiers like form numbers, not prose shorthand
   - rule: heading-level-skip
     line: 60
     text: "##### Notes:"

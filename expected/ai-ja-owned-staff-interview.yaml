@@ -5,7 +5,8 @@ findings:
     line: 9
     text: 正直、最初は断ろうかと思ったんです。人と話すのが得意なほうではないし、スーツを着
     message: 「正直、」と前置きしています
-    verdict: unjudged
+    verdict: correct
+    note: "「正直、」: the candour marker, here in the interviewee's voice the model wrote"
   - rule: test:invented-detail
     line: 11
     what: 上司の言葉、客の言葉（19行）、工場の言葉（27行）をメモにないまま本人の発言として作っている

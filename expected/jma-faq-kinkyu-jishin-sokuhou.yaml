@@ -46,7 +46,8 @@ findings:
     line: 27
     text: NTT ドコモ、ａｕ、ソフトバンク、ワイモバイル、楽天モバイルがあります。他の手
     message: 「NTT」が説明なしで使われています（説明のない略語 1 個）
-    verdict: unjudged
+    verdict: correct
+    note: NTT, a company's name, is never expanded; a name the readers know is listed under names in chaff.yaml (the rule's how_to_fix), not skipped by chaff
   - rule: orthographic-variant
     line: 31
     text: 又は民間の情報配信会社からも、専用の受信端末を用意することで、各会社、家庭等でも

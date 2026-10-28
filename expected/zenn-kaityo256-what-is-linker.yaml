@@ -15,7 +15,8 @@ findings:
     line: 218
     text: の次の命令のアドレス)が入っています。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: correct
+    note: 「callqの次の命令のアドレス」で「の」が三つ続く
   - rule: shell-prompt-mix
     line: 251
     text: "```sh"

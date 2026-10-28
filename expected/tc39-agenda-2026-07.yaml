@@ -40,4 +40,5 @@ findings:
   - rule: undefined-acronym
     line: 178
     sha256: 2e38e3e05532aed826df30c34ec2c51c71451713bbcf5ba9b6a7d3441158afc6
-    verdict: unjudged
+    verdict: correct
+    note: FMA (fused multiply-add) is never expanded and is not an everyday word

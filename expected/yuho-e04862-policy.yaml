@@ -5,12 +5,14 @@ findings:
     line: 1
     text: ②資産戦略の深化レンタル用資産の導入においては市場ニーズを最優先させますが、近年
     message: 「のみならず」など、対比の枠で書いた文が 7.7% あります（6% まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: two additive 〜のみならず／〜にとどまらず in a 26-sentence policy section; neither knocks down an X nobody said, and the share is high only because the text is short
   - rule: contrast-framing
     line: 1
     text: また、単なる物品賃貸にとどまらず、ワンストップで総合的な顧客サービスを行う「ゼネ
     message: 「にとどまらず」など、対比の枠で書いた文が 7.7% あります（6% まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「単なる物品賃貸にとどまらず」 states the business's scope, an additive frame; two such in a short section is not a pile-up
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ICT工法など国内建設需要の内容が変化しつつあることから、現時点のみならず、将来

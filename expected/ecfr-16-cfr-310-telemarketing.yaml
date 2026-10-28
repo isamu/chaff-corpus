@@ -85,4 +85,5 @@ findings:
     line: 571
     text: CFR Sections Affected, which appears in
     message: '"CFR" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: CFR, used throughout in the citation form chaff accepts (12 CFR 1005.20), here inside the name of the List of CFR Sections Affected, the eCFR's own boilerplate; the document is a part of the CFR

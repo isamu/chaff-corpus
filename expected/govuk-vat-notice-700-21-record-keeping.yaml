@@ -35,7 +35,8 @@ findings:
     line: 322
     text: "The following rule has the force of law:"
     message: '"following rule has" appears 13 times (limit 5)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"The following rule has the force of law\" is the notice's fixed label on every force-of-law box, a formula each item carries"
   - rule: max-sentence-length
     line: 326
     text: If this is the case, this mixed supply s

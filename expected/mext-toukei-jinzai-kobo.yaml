@@ -35,7 +35,8 @@ findings:
     line: 14
     text: このような中、統計的手法を駆使して大量のデータを分析・解析するための人材はこれま
     message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: "「人材は」 gets its predicate at 「必要不可欠な存在であり、」; a new topic (その需要は) takes the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: max-sentence-length
     line: 17
     text: これらのことからも、大学等において、データサイエンス、AIの基盤である「統計学」

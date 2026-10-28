@@ -16,7 +16,8 @@ findings:
   - rule: ngram-repetition
     line: 210
     sha256: af5ddea8a2152fde489275e983edb750f446e7442f92a0361fb218bf640c9855
-    verdict: unjudged
+    verdict: correct
+    note: 「必要があります。」 six times in a tutorial's prose; 「〜します」 would do
   - rule: no-doubled-joshi
     line: 212
     sha256: b636a990ba568b6f0b8470d4f8507ab2a0c7282e5c2f85171da00beca2d4e571

@@ -24,7 +24,7 @@ findings:
     text: 海上自衛隊の護衛艦で航空自衛隊の戦闘機を運用することは自衛隊にとって初めての取組
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: false-positive
-    note: 「運用することは」の述語「初めての取組であり」は 30 字ほど後で、後半は別の主語（〜ことも）の節
+    note: "「運用することは」 gets its predicate at 「初めての取組であり、」; a new subject (〜ことも) takes the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: clause-chain
     line: 15
     text: 私はそれなりに安全保障について、防衛についてある程度の勉強はしてまいりましたが、

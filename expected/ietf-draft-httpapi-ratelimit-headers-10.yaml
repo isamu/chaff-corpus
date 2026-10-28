@@ -24,7 +24,8 @@ findings:
   - rule: ngram-repetition
     line: 343
     sha256: 54b01fff15eb580be2659d59e316242e96295222643c71985ded33c7754c222e
-    verdict: unjudged
+    verdict: false-positive
+    note: each parameter's definition opens with the spec's fixed formula (The … parameter value conveys …), a formula every item carries
   - rule: one-sentence-paragraph-run
     line: 347
     sha256: 6b7d15b71bfca004da831cced8caca2d6aede7f9cd338fba9eeac56e1eb89113
@@ -96,7 +97,8 @@ findings:
   - rule: undefined-acronym
     line: 1675
     sha256: 73f7e967bfd6215f7dad51dde716431ee5ccdf0f38c20dcb902bb3143297d0dd
-    verdict: unjudged
+    verdict: false-positive
+    note: UNIX is the operating system's name written in capitals (UNIX timestamp), not an acronym
   - rule: undefined-acronym
     line: 1821
     sha256: bd59c0a3fff050ca6c09f655c9d65bdfecfbcf72edbd1ee985d88977d2466079

@@ -10,12 +10,14 @@ findings:
     line: 5
     text: CFPB employee’s names and imagery to try
     message: '"CFPB" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: CFPB, the publisher's name, is never expanded on the page; organisation names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: undefined-acronym
     line: 17
     text: ET, Monday through Friday.
     message: '"ET" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: ET after a clock time (8 a.m. and 8 p.m. ET) is the everyday US time-zone label, read like a.m.; not an acronym a reader needs spelled out
   - rule: space-before-punctuation
     line: 34
     text: " ."

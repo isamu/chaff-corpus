@@ -352,7 +352,8 @@ findings:
   - rule: orthographic-variant
     line: 488
     sha256: 7e4ebe3ce046b381cb94bcea11f710aab95027d53fdd0d1000b3d2e5496a8ec9
-    verdict: unjudged
+    verdict: false-positive
+    note: the adjective (an overland complex) against the phrase over land (moves over land); not two spellings of one word
   - rule: doubled-word
     line: 492
     sha256: 5d241f3749ca633156961bb5fdc4b1bb998eace2bd927163f985ffb5f9754de4

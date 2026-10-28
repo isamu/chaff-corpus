@@ -65,22 +65,26 @@ findings:
     line: 1
     text: 0円（前期と同額）となりました。②財政状態（流動資産）当期末における流動資産の残
     message: 半角の「0」と書いています（この文書はふつう全角の「０」。16 箇所のうち 4 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "「営業利益は0円」: a single digit the report otherwise writes full-width"
   - rule: fullwidth-alnum-consistency
     line: 1
     text: 1日至令和４年10月31日）第64期（自令和４年11月1日至令和５年10月31日
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: 「11月1日」 in the second table where the first writes 「11月１日」
   - rule: fullwidth-alnum-consistency
     line: 1
     text: 1日至令和５年10月31日）金額（千円）割合（％）金額（千円）割合（％）三好カン
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: 「11月1日」 in the second table where the first writes 「11月１日」
   - rule: fullwidth-alnum-consistency
     line: 1
     text: 8,45795.7合計307,81499.6（注）最近２事業年度の主な相手先別の
     message: 半角の「8」と書いています（この文書はふつう全角の「８」。16 箇所のうち 4 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: 8,457 (thousand yen) run into the next cell (95.7) of a flattened table; a multi-digit figure, which the report writes half-width
   - rule: ngram-repetition
     line: 1
     text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上

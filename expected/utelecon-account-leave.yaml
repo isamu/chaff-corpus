@@ -12,7 +12,8 @@ findings:
   - rule: undefined-acronym
     line: 3
     sha256: 8f269597fd5c1c9db7a44da9d871e1ba29fd568d62c8eb0bbd804638c2149cfc
-    verdict: unjudged
+    verdict: correct
+    note: ECCS, a system's name, is never expanded; product names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: kutoten-consistency
     line: 22
     sha256: a1013d7409120d6e2bc168f2eb6754ae1a0f21dac1c1f3fe8243cf405878f3de
@@ -32,4 +33,5 @@ findings:
   - rule: undefined-acronym
     line: 42
     sha256: c7a80add16c54e33e1209ac8a0d807a501dbd4979e31a4073999814737082021
-    verdict: unjudged
+    verdict: correct
+    note: UTAS, a system's name, is never expanded; product names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
