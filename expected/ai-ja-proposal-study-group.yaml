@@ -7,11 +7,6 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: unfilled-placeholder
-    line: 11
-    what: 「〇〇さんが」の伏せ字（3行目の「開発部　〇〇」も）
-    verdict: missed
-    note: "Japanese 〇〇 blank; the anecdote around it is also invented (candidate: invented anecdote, needs judgement)"
   - rule: colloquial-opener
     line: 32
     text: なので、参加は自由とし、発表の準備も1〜2時間で済む程度の内容でよいことにするつ

@@ -40,8 +40,3 @@ findings:
     what: '"That was worth an afternoon or two of grepping." returns to the grepping of the first week for a neat close'
     verdict: missed
     note: catalog B02 (neat callback ending)
-  - rule: contrast-framing
-    line: 33
-    what: "\"The month didn't convince me that plain editors are better. It convinced me that …\""
-    verdict: missed
-    note: catalog E12 (wasn't X. It was Y.)

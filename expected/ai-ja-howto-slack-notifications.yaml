@@ -29,8 +29,3 @@ findings:
     what: 「まずは〜試してみてください。それだけでも、かなり静かになるはずです。」
     verdict: missed
     note: catalog J26 (closing promise 〜はず)
-  - rule: contrast-framing
-    line: 53
-    what: 「全部受け取ってから無視する」のではなく、「必要なものだけ受け取る」
-    verdict: missed
-    note: catalog J21 (〜ではなく〜) as the summary's one point

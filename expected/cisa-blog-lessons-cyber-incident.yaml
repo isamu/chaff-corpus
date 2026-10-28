@@ -37,7 +37,8 @@ findings:
     line: 66
     text: It is not a matter of “if”, but “when” a
     message: '"it is not" and other contrast frames: 3.9 per 1000 words (limit 3)'
-    verdict: correct
+    verdict: false-positive
+    note: "a contrast frame by itself, but the post's frames are a share of its sentences below the blog limit, so the rule rightly does not report the document (maintainer's decision, 2026-10-28)"
   - rule: contrast-framing
     line: 66
     text: Such transparency unlocks opportunities

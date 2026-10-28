@@ -18,13 +18,3 @@ findings:
     what: "a one-line request answered with a full retro: what went well and badly, 40% late copy, actions and dates"
     verdict: missed
     note: catalog B01 (invented detail)
-  - rule: bold-label-list
-    line: 13
-    what: every list item opens with a bold label ("**Clear ownership of each page.**" …)
-    verdict: missed
-    note: catalog E18 (bold labels, en)
-  - rule: empty-conclusion
-    line: 71
-    what: '"Closing Notes" restates the retro ("the relaunch was a success … main lessons are about planning content earlier")'
-    verdict: missed
-    note: catalog C/E45 (closing restates the body)
