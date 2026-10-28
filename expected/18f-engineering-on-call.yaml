@@ -1,11 +1,46 @@
 id: 18f-engineering-on-call
 chaff: 0.33.0
 findings:
+  - rule: colon-lead-in
+    line: 14
+    what: "\"staffing at least one more engineer ... will better allow:\" hands over a three-item list that is one broken-up sentence (commas, \"and\"); seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
+  - rule: colon-lead-in
+    line: 54
+    what: "\"details that evolve as the system does such as:\" hands over to a list; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
+  - rule: colon-lead-in
+    line: 69
+    what: "\"Questions you should be thinking about from the very first line of code:\" hands over to a list; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
+  - rule: colon-lead-in
+    line: 102
+    what: "\"This includes (but is not limited to):\" hands over a list written as one broken-up sentence; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
+  - rule: colon-lead-in
+    line: 117
+    what: "\"These can include:\" hands over to a list; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
+  - rule: colon-lead-in
+    line: 137
+    what: "\"The guide should be:\" hands over a list written as one broken-up sentence; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
   - rule: excessive-hedging
     line: 156
     text: could possibly occur in production,
     message: This sentence stacks 2 hedges ("could, possibly")
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 159
+    what: "\"These simulations:\" hands over a list that is the rest of the sentence; seven sections of the page open a list this way"
+    verdict: missed
+    note: found by lab main
   - rule: vague-link-text
     line: 167
     text: "[here](https://docs.google.com/presentat"

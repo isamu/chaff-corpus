@@ -31,6 +31,12 @@ findings:
     text: GSA, TTS, and cloud.gov coordinate on no
     message: '"GSA" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 66
+    text: During this process, the team communicat
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: name-variant
     line: 70
     text: GitHub (PII, etc.).
@@ -46,6 +52,12 @@ findings:
     text: NIST SP 800-61](https://nvlpubs.nist.gov
     message: '"NIST" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 85
+    text: Declaring an incident results in further
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: sentence-initial-so
     line: 102
     text: So, we should actually refer to this as
@@ -56,6 +68,12 @@ findings:
     text: US-CERT. That is handled by
     message: '"US-CERT" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 125
+    text: "This sitrep should be:"
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: undefined-acronym
     line: 128
     text: JAB TR reps)][FedRAMP ISSO TRR reps], cc
@@ -66,11 +84,35 @@ findings:
     text: "TR reps)][FedRAMP ISSO TRR reps], cc: fe"
     message: '"TR" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 140
+    text: "We need to answer two questions:"
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: undefined-acronym
     line: 145
     text: DM'ing people in Slack. The response tea
     message: '"DM" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 151
+    text: Once this is done, the IC should update
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
+  - rule: colon-lead-in
+    line: 173
+    text: "This sitrep should be:"
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
+  - rule: colon-lead-in
+    line: 186
+    text: However, a few guidelines to follow duri
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: which-that-consistency
     line: 192
     text: which should be completed before the inc
@@ -91,11 +133,23 @@ findings:
     text: So, the IC should likely hand off duties
     message: 2 sentences open with "So," (1 needed)
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 217
+    text: "To close out an incident, the IC should:"
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: undefined-acronym
     line: 228
     text: GSA-IT, US-CERT, and [FedRAMP ISSO (JAB
     message: '"GSA-IT" is used without an expansion (10 such acronyms)'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 238
+    text: The internal report should also contain
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: hyphen-as-dash
     line: 243
     text: " -- e.g. phishing, password attacks, etc"
@@ -121,16 +175,52 @@ findings:
     text: ie. CryptoLocker) targeting TTS staff
     message: '"ie." has some of its periods but not all'
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 261
+    text: Guidelines for addressing High-sev issue
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: concrete-evidence-density
     line: 267
     text: ""
     message: Section "2 - Medium Severity" has no number, code or link (4 of 17 sections)
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 276
+    text: Guidelines for addressing Medium-sev iss
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: concrete-evidence-density
     line: 282
     text: ""
     message: Section "3 - Low Severity" has no number, code or link (4 of 17 sections)
     verdict: unjudged
+  - rule: colon-lead-in
+    line: 290
+    text: Guidelines for addressing Low-sev issues
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
+  - rule: colon-lead-in
+    line: 300
+    text: Follow this checklist if an event turns
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
+  - rule: colon-lead-in
+    line: 307
+    text: Follow this checklist if you need to han
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
+  - rule: colon-lead-in
+    line: 317
+    text: If a cloud.gov team member or automated
+    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: false-positive
+    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: undefined-acronym
     line: 323
     text: "VPC Flow Logs: from the Amazon AWS conso"
