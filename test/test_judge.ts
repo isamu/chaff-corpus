@@ -100,7 +100,9 @@ const runJudge = (args: readonly string[]): { status: number | null; stdout: str
   return { status: result.status, stdout: result.stdout };
 };
 
-const repoState = (): string => execFileSync("git", ["status", "--porcelain", "--ignored", "--untracked-files=all"], { cwd: ROOT, encoding: "utf8" });
+// node_modules is left out: judge never writes there, and its ignored files outgrow execFileSync's output buffer (ENOBUFS).
+const repoState = (): string =>
+  execFileSync("git", ["status", "--porcelain", "--ignored", "--untracked-files=all", "--", ".", ":(exclude)node_modules"], { cwd: ROOT, encoding: "utf8" });
 
 const metaOf = (id: string): DocumentFiles | undefined => documentFiles().find((file) => file.place.id === id);
 
