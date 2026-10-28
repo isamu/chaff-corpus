@@ -67,12 +67,6 @@ findings:
     message: 「不可欠です」は、中身を言わずに強調だけしています
     verdict: false-positive
     note: 「不可欠です」は何が不可欠か（周囲の大人の適切なサポート）を言っている
-  - rule: topic-predicate-distance
-    line: 107
-    text: こどもの気持ちはしっかり受け止めつつ、被害の内容や状況などの事実関係については、
-    message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
-    verdict: false-positive
-    note: 「気持ちは」の述語「受け止めつつ」はすぐ後にあり、文末の「相談しましょう」は読み手への呼びかけ
   - rule: orthographic-variant
     line: 117
     text: 時に着ていた衣服・下着（洗わずにそのままで）
@@ -115,15 +109,3 @@ findings:
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。43 段落のうち 2 段落）
     verdict: false-positive
     note: 相談できる場面を並べた枠の小見出しで、段落ではない（四つとも「。」なし）
-  - rule: max-kanji-continuous
-    line: 208
-    text: 教育・保育などのこどもに接する場での、こどもへの性暴力を防ぎ、こどもの心と身体を
-    message: 「民間教育保育等事業者」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: 法律の題名（学校設置者等及び民間教育保育等事業者による〜に関する法律）の一部
-  - rule: no-doubled-joshi
-    line: 208
-    text: の防止等のための措置に関する法律）が令和6年（2024年）6月に成立し、令和8年
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: 「の」の連なりは法律の題名（〜の防止等のための措置に関する法律）の中にある

@@ -38,6 +38,7 @@ findings:
     note: rests on section-length-uniformity, judged false-positive on line 1; one real signal (closing-cliche) is below the limit of 2; given by pending lab PRs
   - rule: closing-cliche
     line: 56
-    what: 「新しいiPhone、楽しんでください！」で締める
-    verdict: missed
-    note: catalog D (closing cheer)
+    text: 新しいiPhone、楽しんでください！
+    message: 「楽しんでください」で締めています
+    verdict: correct
+    note: catalog D (closing cheer); found by chaffjs 0.39.0

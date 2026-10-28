@@ -1,16 +1,6 @@
 id: wikivoyage-ja-chugoku-shuto-meguri
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 1
-    sha256: 0de0255aaac40cc00ce52dc7096178b3ce9864d938a6f19698145d93ca7833b0
-    verdict: false-positive
-    note: 歴代の都と王朝を並べる記事で、固有名詞の多さは内容そのもの
-  - rule: orthographic-variant
-    line: 3
-    sha256: 92e313244f65789c6b50f6a07850962d4f96e47b259750b0c0f5cfce09e1323e
-    verdict: false-positive
-    note: 「天子に道有らば」は漢文の書き下しの引用で、地の文の表記ゆれではない
   - rule: stray-space
     line: 3
     sha256: 06cc18f8eb4683a5e2544563ec625ef380a189e5408c0db8752c4ca510e555dc

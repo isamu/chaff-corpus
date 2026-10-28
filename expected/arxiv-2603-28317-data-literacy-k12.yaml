@@ -1,12 +1,6 @@
 id: arxiv-2603-28317-data-literacy-k12
 chaff: 0.36.0
 findings:
-  - rule: heading-level-skip
-    line: 7
-    text: "###### Abstract."
-    message: Heading "Abstract." goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
   - rule: cliche
     line: 9
     text: However, understanding how data-driven s
@@ -19,11 +13,6 @@ findings:
     message: This paragraph runs 10 sentences (limit 9)
     verdict: correct
     note: a ten-sentence paragraph
-  - rule: comparative-without-baseline
-    line: 31
-    text: more directly legible. From an education
-    message: '"more directly legible" does not say what it is compared with'
-    verdict: unjudged
   - rule: latin-abbreviation-form
     line: 67
     text: e.g dessert reviews), to refining featur
@@ -70,12 +59,6 @@ findings:
     message: A space before ","
     verdict: false-positive
     note: the arXiv HTML leaves 'ISBN ,' where the bibliography style's ISBN value is empty; a conversion gap, not the authors' typing
-  - rule: orthographic-variant
-    line: 132
-    text: k12 students in applied artificial intel
-    message: '"k12" here, where the document usually writes "k-12" (1 of 5)'
-    verdict: false-positive
-    note: "'k12' inside a cited work's (lower-cased) title"
   - rule: spelling-consistency
     line: 133
     text: modeling. Science & Education 28 (8), pp
@@ -88,12 +71,6 @@ findings:
     message: '"centered" here, where the document usually spells it "centred" (3 of 13)'
     verdict: false-positive
     note: US spelling inside a cited work's title
-  - rule: unknown-word
-    line: 144
-    text: mythos of model interpretability. Commun
-    message: '"mythos" is not in the dictionary; did you mean "mythoi"?'
-    verdict: false-positive
-    note: "'mythos' is an English word (in a cited title)"
   - rule: unknown-word
     line: 147
     text: "medica 22 (3), pp. 276–282. Cited by: §3"

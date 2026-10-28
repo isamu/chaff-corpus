@@ -67,12 +67,6 @@ findings:
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
     note: a six-sentence paragraph
-  - rule: unknown-word
-    line: 27
-    text: noire for economists and statisticians—c
-    message: '"noire" is not in the dictionary; did you mean "noise"?'
-    verdict: false-positive
-    note: '"bête noire" is a standard French loan phrase'
   - rule: max-paragraph-length
     line: 29
     text: Another challenge that we are dealing wi
@@ -139,12 +133,6 @@ findings:
     message: This sentence runs 33 words (limit 25)
     verdict: correct
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
-  - rule: oxford-comma-consistency
-    line: 35
-    text: Panels today will get into all of this a
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: '"questions and issues and use cases" is a polysyndeton series with no commas, not a list that drops the serial comma'
   - rule: max-sentence-length
     line: 37
     text: On behalf of the FRED team, we are looki

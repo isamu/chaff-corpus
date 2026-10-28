@@ -2,12 +2,6 @@ id: kantei-2025-higashinihon-daishinsai-tsuito-no-ji
 chaff: 0.36.0
 findings:
   - rule: max-kanji-continuous
-    line: 7
-    text: 巨大地震と大津波、そして、東京電力福島第一原子力発電所の事故は、多くの県民の皆様
-    message: 「東京電力福島第一原子力発電所」は漢字が 14 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of the power station, which cannot be split
-  - rule: max-kanji-continuous
     line: 11
     text: 帰還困難区域においても、これまでに、全ての特定復興再生拠点区域の避難指示を解除す
     message: 「特定復興再生拠点区域」は漢字が 10 字続いています（8 字まで）
@@ -19,12 +13,6 @@ findings:
     message: 「原子力災害被災地域」は漢字が 9 字続いています（8 字まで）
     verdict: false-positive
     note: an administrative term (原子力災害被災地域) used as one name
-  - rule: max-kanji-continuous
-    line: 13
-    text: 引き続き、国が前面に立って、復興の前提となる東京電力福島第一原子力発電所の安全か
-    message: 「東京電力福島第一原子力発電所」は漢字が 14 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of the power station, which cannot be split
   - rule: max-sentence-length
     line: 13
     text: 引き続き、国が前面に立って、復興の前提となる東京電力福島第一原子力発電所の安全か

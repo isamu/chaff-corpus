@@ -16,12 +16,6 @@ findings:
     text: 自動運転の社会実装に向けては、様々な課題を同時に、かつ全体的に整合性を取りながら
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
     verdict: correct
-  - rule: undefined-acronym
-    line: 57
-    text: ICカード（Suicaなど）を用いた、）見える化ツールで客観的に実際のフローを把
-    message: 「IC」が説明なしで使われています（説明のない略語 4 個）
-    verdict: false-positive
-    note: 「ICカード」 is an everyday word, not an acronym the reader needs expanded
   - rule: empty-intensifier
     line: 70
     text: ビジネスモデルの確立というのは非常に重要。初期投資を抑え、複合的なベネフィットや
@@ -78,8 +72,3 @@ findings:
     text: 自動運転車の安全性を審査する範囲や具体の審査方法は事業形態毎に明確化する必要があ
     message: 「は」で出した主題から述語まで 156 字あります（80 字まで）
     verdict: correct
-  - rule: heading-numbering-mix
-    line: 186
-    text: "### 総括"
-    message: 見出し「総括」だけ番号がありません（兄弟の見出しは「1. 自動運転等新たなデジタル技術を活用したモビリティサービスの社会実装に向けた施策の方向性」など 2 個が番号付き）
-    verdict: unjudged

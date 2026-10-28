@@ -1,48 +1,12 @@
 id: arxiv-2610-12701-annotator-lived-experience
 chaff: 0.36.0
 findings:
-  - rule: heading-level-skip
-    line: 5
-    text: "###### Abstract"
-    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
-  - rule: unknown-word
-    line: 15
-    text: crowdwork economics sharpen the incentiv
-    message: '"crowdwork" is not in the dictionary; did you mean "crownwork"?'
-    verdict: false-positive
-    note: "'crowdwork' is established in the field's literature"
   - rule: name-variant
     line: 17
     text: ELicitation). Annotators read a scenario
     message: '"ELicitation" is written "Elicitation" elsewhere in the document (case, width or punctuation)'
     verdict: false-positive
     note: "'eXperience ELicitation' capitalises the letters of the acronym it spells out (axle), on purpose"
-  - rule: orthographic-variant
-    line: 17
-    text: ELicitation). Annotators read a scenario
-    message: '"ELicitation" here, where the document usually writes "elicitation" (1 of 51)'
-    verdict: false-positive
-    note: "'eXperience ELicitation' capitalises the letters of the acronym it spells out, on purpose"
-  - rule: orthographic-variant
-    line: 17
-    text: eXperience ELicitation). Annotators read
-    message: '"eXperience" here, where the document usually writes "experience" (1 of 32)'
-    verdict: false-positive
-    note: "'eXperience ELicitation' capitalises the letters of the acronym it spells out, on purpose"
-  - rule: heading-level-skip
-    line: 41
-    text: "#### Preserving label variation."
-    message: Heading "Preserving label variation." goes from level 2 to level 4 (expected 3)
-    verdict: false-positive
-    note: a LaTeX run-in \paragraph heading, rendered as h4 under a section; not a skipped level in the paper
-  - rule: unknown-word
-    line: 65
-    text: propositional content or implication, no
-    message: '"propositional" is not in the dictionary; did you mean "prepositional"?'
-    verdict: false-positive
-    note: "'propositional' is a standard English word"
   - rule: figure-reference-order
     line: 75
     text: Figure 2. The control arm is the same ap
@@ -63,11 +27,6 @@ findings:
     line: 175
     text: Annotators are not converging on uncerta
     message: "\"are not\" is written \"aren't\" elsewhere in the document"
-    verdict: unjudged
-  - rule: heading-level-skip
-    line: 189
-    text: "#### Positionality as a state."
-    message: Heading "Positionality as a state." goes from level 2 to level 4 (expected 3)
     verdict: unjudged
   - rule: max-paragraph-length
     line: 211
@@ -123,20 +82,10 @@ findings:
     message: Table 3 is never referred to in the text
     verdict: correct
     note: Table 3 is never mentioned in the text
-  - rule: heading-level-skip
-    line: 267
-    text: "#### Scenario A — Borders, Safety & Who"
-    message: Heading "Scenario A — Borders, Safety & Who Belongs." goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
   - rule: spelling-consistency
     line: 269
     text: prioritize local safety and resources fi
     message: '"prioritize" here, where the document usually spells it "prioritise" (1 of 8)'
-    verdict: unjudged
-  - rule: heading-level-skip
-    line: 281
-    text: "#### Axis context (prepended every turn)"
-    message: Heading "Axis context (prepended every turn)." goes from level 2 to level 4 (expected 3)
     verdict: unjudged
   - rule: spelling-consistency
     line: 315
@@ -165,11 +114,6 @@ findings:
     message: Table 4 is never referred to in the text
     verdict: correct
     note: Table 4 is never mentioned in the text
-  - rule: heading-level-skip
-    line: 491
-    text: "#### Target attribution."
-    message: Heading "Target attribution." goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
   - rule: contraction-consistency
     line: 493
     text: “No one — I don’t read this as targeting
@@ -181,14 +125,3 @@ findings:
     text: "Figure 7: Projected session time by item"
     message: Figure 7 is never referred to in the text
     verdict: unjudged
-  - rule: heading-level-skip
-    line: 509
-    text: "#### Carryover counts."
-    message: Heading "Carryover counts." goes from level 2 to level 4 (expected 3)
-    verdict: unjudged
-  - rule: unknown-word
-    line: 531
-    text: relativist non-positional, alignment cla
-    message: '"relativist" is not in the dictionary; did you mean "relativise"?'
-    verdict: false-positive
-    note: "'relativist' is a standard English word"

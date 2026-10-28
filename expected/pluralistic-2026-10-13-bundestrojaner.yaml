@@ -73,12 +73,6 @@ findings:
     message: '"digital sovereignty" is defined but never used'
     verdict: false-positive
     note: a sarcastic gloss of what a slogan has come to mean, not a term the essay defines for later use
-  - rule: unknown-word
-    line: 63
-    text: "doxing whole countries:"
-    message: '"doxing" is not in the dictionary; did you mean "doing"?'
-    verdict: false-positive
-    note: '"doxing" is a standard word (in major dictionaries)'
   - rule: contraction-consistency
     line: 67
     text: "The USA is the worst offender here: it i"

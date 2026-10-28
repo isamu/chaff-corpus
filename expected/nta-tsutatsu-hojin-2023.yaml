@@ -27,12 +27,6 @@ findings:
     message: この文だけ他と文末の調子が違います（本文の中で 2 文）
     verdict: false-positive
     note: the page's second text (the agency's explanation of the directive) is written in です/ます; it is compared with the directive's である style
-  - rule: no-mixed-desumasu
-    line: 31
-    text: ※PDFファイルが開けない、印刷できないなどの場合はこちらをご覧ください。
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: a web-page note about PDFs, not part of the letter
   - rule: bracket-width-consistency
     line: 33
     text: (PDFファイル/333KB)

@@ -11,11 +11,6 @@ findings:
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第516号（令和8年3月27日）」は 41 文字あります（40 文字まで）
     verdict: unjudged
   - rule: undefined-acronym
-    line: 7
-    text: HPに掲載しました！
-    message: 「HP」が説明なしで使われています（説明のない略語 3 個）
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 14
     text: STEAM教育支援補助教材を公開
     message: 「STEAM」が説明なしで使われています（説明のない略語 3 個）
@@ -29,11 +24,6 @@ findings:
     line: 18
     text: た
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。13 段落のうち 2 段落）
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 23
-    text: （2）ロースクールへ行こう！！ 2026年度
-    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
     verdict: unjudged
   - rule: max-sentence-length
     line: 32
@@ -59,11 +49,6 @@ findings:
     line: 60
     text: WG及び社会・地理歴史・公民WGにおける審議の状況について解説します。
     message: 「WG」が説明なしで使われています（説明のない略語 3 個）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 80
-    text: 独立行政法人大学改革支援・学位授与機構 大学ポートレート・大学情報基盤センター事
-    message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 111

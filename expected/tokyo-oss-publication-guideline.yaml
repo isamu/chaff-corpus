@@ -36,11 +36,6 @@ findings:
     text: )のオープンソースの定義（The Open Source Definition）
     message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 27
-    text: ※OSSに求められる要素の記載内容は、OSI(Open Source Initi
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 35
     text: (integrity)**

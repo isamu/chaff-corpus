@@ -1,18 +1,6 @@
 id: arxiv-2608-02660-ai-fiduciary
 chaff: 0.36.0
 findings:
-  - rule: heading-level-skip
-    line: 5
-    text: "###### Abstract"
-    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
-  - rule: ngram-repetition
-    line: 7
-    text: Drawing on business ethics and legal sch
-    message: '"extended AI assistant" appears 10 times (limit 5)'
-    verdict: false-positive
-    note: "'extended AI assistant' is the paper's defined term of art, repeated on purpose"
   - rule: number-style-consistency
     line: 42
     text: 4 flags for subsequent work.
@@ -46,12 +34,6 @@ findings:
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
     note: "'an investigative component which requires ...' is restrictive; the paper mostly uses 'that'"
-  - rule: oxford-comma-consistency
-    line: 130
-    text: By “risk” I refer to the exposure of use
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: an asyndetic list between dashes (no 'and' before the last item), so there is no serial-comma choice to compare
   - rule: max-paragraph-length
     line: 150
     text: Moreover, fiduciary conflict-resolution
@@ -67,23 +49,11 @@ findings:
     text: So, where the protection of vulnerable u
     message: 3 sentences open with "So," (1 needed)
     verdict: unjudged
-  - rule: unknown-word
-    line: 204
-    text: paternalist reasons. So, where the prote
-    message: '"paternalist" is not in the dictionary; did you mean "paternalism"?'
-    verdict: false-positive
-    note: "'paternalist' is a standard English adjective"
   - rule: sentence-initial-so
     line: 220
     text: So, the duties demarcate the conditions
     message: 3 sentences open with "So," (1 needed)
     verdict: unjudged
-  - rule: unknown-word
-    line: 240
-    text: agentic conversational AI change how we
-    message: '"agentic" is not in the dictionary; did you mean "argentic"?'
-    verdict: false-positive
-    note: "'agentic' is current technical English (in a cited title)"
   - rule: spelling-consistency
     line: 246
     text: organizations. Business Ethics Quarterly
@@ -96,9 +66,3 @@ findings:
     message: '"a conversational ethics" mixes singular and plural'
     verdict: false-positive
     note: "'a conversational ethics' (ethics as a theory, singular) in a cited title"
-  - rule: dangling-reference
-    line: 279
-    text: "Article 81. External Links: Document Cit"
-    message: '"Article 81" (address 81) is not in this document'
-    verdict: false-positive
-    note: "'Article 81' is a cited journal article number, not an address in this paper"

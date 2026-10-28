@@ -66,10 +66,6 @@ findings:
     sha256: 9f7af50ed0ed6c351797d3f55c6f2c5adb17eb23e6a704d37fce553f5c0d2853
     verdict: unjudged
   - rule: undefined-acronym
-    line: 164
-    sha256: 87197e8fecd1b3a9ff76c114e28eff80c43043b4831dffcb952f1919a31ed172
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 463
     sha256: c040f0ec836927e0d64d5677180385a48cbd647e599852292f84f57e87eadf89
     verdict: unjudged
@@ -101,11 +97,6 @@ findings:
     line: 643
     sha256: b21652979bbcb90e9bf417d0f95ea6a0c048c0ab4aa79444357199d165f8b727
     verdict: unjudged
-  - rule: unknown-word
-    line: 664
-    sha256: 853539a66954e8de9b0892fb749c83e3d54bdef29bc2ca35217801c826ed422a
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a technical term), not a misspelling
   - rule: max-sentence-length
     line: 677
     sha256: ee39f7cce9e86566d7041a1b81fdcc78c5d4a5b9680da29059239aa9eb17c081
@@ -173,10 +164,6 @@ findings:
   - rule: undefined-acronym
     line: 961
     sha256: aca9847437c01bbab960b55b1b7ec3f6ee00430a89e3f2794b0ed66c168110f7
-    verdict: unjudged
-  - rule: name-variant
-    line: 974
-    sha256: d71d3f120abcd340cd60b64dfb980a97064c99d25f1eac451b75615e1a66dd15
     verdict: unjudged
   - rule: undefined-acronym
     line: 980
@@ -270,14 +257,6 @@ findings:
     line: 1195
     sha256: 814f46b53f3e2cf0ba6b0b3ffdf22b5af7ff661da0c2deea5272873b66a42c31
     verdict: unjudged
-  - rule: name-variant
-    line: 1209
-    sha256: 7b0146bb1cb15351ddcf9aef492dda0041fca4ed3f78dbb1b827ceae5cfaa433
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 1252
-    sha256: 022cf7a7323dbab3dd3ae3c6cf7ec1f3ddef6cfc0418d94dc11c325dd120540f
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 1265
     sha256: 991f26ce68a06844e7d36ab06b4f417357f70063d5baef1b4c1666b384763a71
@@ -341,10 +320,6 @@ findings:
   - rule: quote-style-consistency
     line: 1302
     sha256: a3847d0e1782cb7be7ee884c18b78642e4ac5e56bbd48fbc4ac266d6963c1476
-    verdict: unjudged
-  - rule: name-variant
-    line: 1309
-    sha256: d8459c96d052432e62a3644fca9d1029b20e4247fa6c14cf790320a2ac227df9
     verdict: unjudged
   - rule: expletive-construction
     line: 1312
@@ -413,6 +388,10 @@ findings:
   - rule: unbalanced-bracket
     line: 1374
     sha256: c4b2896a2081395e282313d6683f07c81e3339ef8b9d2b5a299ea5b626a0998f
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 1393
+    sha256: 542d3e41259f6b2c24f43dfe712c14b9f9e9f4b216b92f6b524d000c692a4b44
     verdict: unjudged
   - rule: expletive-construction
     line: 1421
@@ -485,10 +464,6 @@ findings:
   - rule: hyphen-as-dash
     line: 1606
     sha256: 885c5b886cd1e025062aa25b6860a04263050b2bb4baf1c5fd4bc553df55bb23
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1606
-    sha256: 66dfbfb96e3ec8307e393d223c8d4000eba4a980f7405c343bed9fac7eae3a7e
     verdict: unjudged
   - rule: unknown-word
     line: 1656
@@ -762,10 +737,6 @@ findings:
     line: 2691
     sha256: 3aae97d84b91add1dbe6aadea8a0487909623240a4d56dcf33c7ce323df3fac2
     verdict: unjudged
-  - rule: unqualified-superlative
-    line: 2726
-    sha256: ac772b8c288179fc48bf27f4ba048347b7720b00a25cda6c30358e314ee48547
-    verdict: unjudged
   - rule: undefined-acronym
     line: 2749
     sha256: 34e1013e88172603f050c1f759d077f9420e45735c2193ac94723b762bd6ff54
@@ -810,11 +781,6 @@ findings:
     line: 3001
     sha256: 74c3918d0d7d022a56b78faf52fdf35de36691841ade5a9a18f87700f156f55f
     verdict: unjudged
-  - rule: unknown-word
-    line: 3022
-    sha256: 705f77db2aecd63d1fe31655ecabcb315defa13dd7f036c29a9229be78547e9e
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a technical term), not a misspelling
   - rule: calendar-name-case
     line: 3042
     sha256: c0a65a3de555191540e0b65a8149c79afa6922b2168a0d6d8996425719ad7ec4
@@ -846,10 +812,6 @@ findings:
   - rule: undefined-acronym
     line: 3153
     sha256: d0ded3ac99d80ac3dae2547d48b333fdd9b37ebc81e7619bd936362af58952aa
-    verdict: unjudged
-  - rule: unknown-word
-    line: 3196
-    sha256: 43597115c38cc60b62471ed053e9fafc52bc40a583577f71bc7bb378354910d7
     verdict: unjudged
   - rule: undefined-acronym
     line: 3197
@@ -902,11 +864,6 @@ findings:
   - rule: unknown-word
     line: 3502
     sha256: b736d08fed20bacfba2b775d2eaaebc7466b6ef704b9d4ba6767fe564c37aa6a
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a technical term), not a misspelling
-  - rule: unknown-word
-    line: 3530
-    sha256: 70d890620eba1377a3726f01c7d65570d58789131ba9fcf6da72cc236bc83f94
     verdict: false-positive
     note: a name (a person's account handle, a product or a technical term), not a misspelling
   - rule: orthographic-variant
@@ -1304,10 +1261,6 @@ findings:
   - rule: sentence-spacing-consistency
     line: 5234
     sha256: ebcfeeae2a1d6337b64b7a9a4020b898d1f31ab6562ec62e0d0a7c40b83cc782
-    verdict: unjudged
-  - rule: unqualified-superlative
-    line: 5234
-    sha256: 91273d498d36840939198a595c15be1749ad54bf693637c602695124e97a2565
     verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 5240

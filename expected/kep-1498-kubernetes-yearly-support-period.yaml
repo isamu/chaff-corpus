@@ -176,11 +176,6 @@ findings:
     text: https://docs.google.com/document/d/1R31U
     message: The URL "https://docs.google.com/document/d/1R31UmXJGsmb4fT3xZc5qQNf5LVOMOiNaQ0Sou7W6U50/…" is written bare (37 worded links in this document)
     verdict: unjudged
-  - rule: unknown-word
-    line: 296
-    text: devel branches, with a stable release on
-    message: '"devel" is not in the dictionary; did you mean "level"?'
-    verdict: unjudged
   - rule: expletive-construction
     line: 313
     text: It is possible that the cadence is slowe

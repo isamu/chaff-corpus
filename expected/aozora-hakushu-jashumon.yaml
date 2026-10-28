@@ -1,9 +1,3 @@
 id: aozora-hakushu-jashumon
 chaff: 0.36.0
-findings:
-  - rule: name-variant
-    line: 1937
-    text: 華咲けり。
-    message: 「華咲」は、ほかの所では同じ読みの「華さき」と書いています
-    verdict: false-positive
-    note: 白華咲けり is the noun 白華 followed by the verb 咲けり, not a spelling of the name 華さき
+findings: []

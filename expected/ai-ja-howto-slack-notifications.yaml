@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: ai-generated-composite
     line: 1
-    what: section-length-uniformity and sentence-rhythm together
-    verdict: missed
-    note: both inputs are judged correct (1, 3); found by pending lab PRs
+    text: ""
+    message: 「section-length-uniformity、sentence-rhythm」が同じ文書にそろっています（2 種、2 種から）
+    verdict: correct
+    note: both inputs are judged correct (1, 3); found by pending lab PRs; found by chaffjs 0.39.0
   - rule: section-length-uniformity
     line: 1
     text: ""
@@ -18,12 +19,6 @@ findings:
     message: 文の長さのばらつきが 28%（30% 以上ほしい）
     verdict: correct
     note: even sentence lengths throughout (catalog J13)
-  - rule: heading-numbering-mix
-    line: 51
-    text: "## まとめ"
-    message: 見出し「まとめ」だけ番号がありません（兄弟の見出しは「1. 通知の対象を「メンションとDMだけ」にする」など 5 個が番号付き）
-    verdict: false-positive
-    note: the summary is not one of the five numbered settings
   - rule: closing-cliche
     line: 53
     what: 「まずは〜試してみてください。それだけでも、かなり静かになるはずです。」

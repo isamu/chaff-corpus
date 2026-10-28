@@ -107,11 +107,6 @@ findings:
     message: This sentence runs 87 words (limit 45)
     verdict: unjudged
   - rule: max-sentence-length
-    line: 205
-    text: A Senate report during deliberations ove
-    message: This sentence runs 52 words (limit 45)
-    verdict: unjudged
-  - rule: max-sentence-length
     line: 211
     text: Similarly situated "means a subcontracto
     message: This sentence runs 140 words (limit 45)

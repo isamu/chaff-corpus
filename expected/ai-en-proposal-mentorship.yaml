@@ -11,18 +11,6 @@ findings:
     what: '"38% of employees who left" and "score 22 points higher" are not in the request'
     verdict: missed
     note: "catalog B01 (invented detail): statistics a plain request did not give"
-  - rule: unqualified-superlative
-    line: 9
-    text: In exit interviews, the most common reas
-    message: '"the most" has nothing to compare against (2 such claims)'
-    verdict: false-positive
-    note: the most common reasons among those given in exit interviews; the comparison set is named
-  - rule: unqualified-superlative
-    line: 23
-    text: A short guide for mentees on how to get
-    message: '"the most" has nothing to compare against (2 such claims)'
-    verdict: false-positive
-    note: get the most out of is an idiom, not a claim
   - rule: empty-conclusion
     line: 62
     what: the Recommendation repeats the Executive Summary and ends "A small investment now could … help build a more connected organization"

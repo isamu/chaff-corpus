@@ -71,3 +71,13 @@ findings:
     text: 迷惑情報フィルタ事業から得られる当社の主たる収益は、通信キャリアが提供するスマー
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: NTT東日本及びNTT西日本の代理店・特約店を通じ、ビジネスフォン向けフィルタサ
+    message: 「NTT」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: SIP／VoIP技術をベースとした製品の開発等を行っている株式会社ageetを当
+    message: 「SIP」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged

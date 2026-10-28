@@ -1,12 +1,6 @@
 id: ai-en-tech-switched-editor
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# I went back to a plain text editor for"
-    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: section-length-uniformity
     line: 1
     text: ""
@@ -29,12 +23,6 @@ findings:
     what: '"- **Renaming across files.**", "- **Type errors.**", "- **Debugging.**"'
     verdict: missed
     note: catalog E18 (bold labels, en); also exactly three
-  - rule: comparative-without-baseline
-    line: 27
-    text: better, and I'm not going to pretend oth
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: better than print statements, named in the same sentence
   - rule: ai-generated-composite
     line: 33
     what: '"That was worth an afternoon or two of grepping." returns to the grepping of the first week for a neat close'

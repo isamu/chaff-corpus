@@ -1,12 +1,6 @@
 id: ai-en-owned-customer-story
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# How a Family Bakery Cut Order Mistakes"
-    message: "3 bold spans of emphasis: 8.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
   - rule: section-length-uniformity
     line: 1
     text: ""

@@ -1,6 +1,14 @@
 id: jp-7002119-hoso-yo-yoki
 chaff: 0.36.0
 findings:
+  - rule: orthographic-variant
+    line: 10
+    sha256: d54e91ec8e31b47eb27b048d906fa7abefd792124ba28be4316503d5187455f9
+    verdict: unjudged
+  - rule: orthographic-variant
+    line: 12
+    sha256: da40cd086bbf0c08cb86bd8d8b42a1b15290ad0914bf8ed21cd6bfec2a88f0dd
+    verdict: unjudged
   - rule: missing-final-period
     line: 16
     sha256: 1ed061f00fb6e08d9569200e9cb23e7de7a1c38b4987bf15645c392bd88f42a9
@@ -48,45 +56,10 @@ findings:
     line: 67
     sha256: debd66dfe681d98fd27d8dd32b5962c720a854c4a6069bd654e54deb9aee7ac8
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 73
-    sha256: 9addccb22c3ae39f16174ace5c09213b02d3e6452b7d360ca4e708c4334edf4b
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: connective-hierarchy
     line: 74
     sha256: 36de2031a28ee7f58ee4804280c57289243d8d3077fbeca017f69f05c845097a
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 81
-    sha256: 60b69eae7165b673445c7621f81ff1becc14068196645a151ec49b3ea0fcf05f
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
-  - rule: kutoten-consistency
-    line: 82
-    sha256: efaa8c2edc069501021a95d0704adbb130c37739f052819dfacaf602a049ad95
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
-  - rule: kutoten-consistency
-    line: 83
-    sha256: 3d0c92154503d731ff9b26b5c141bbb072d7ce7149c3e1e12bcd87be3460073b
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
-  - rule: kutoten-consistency
-    line: 83
-    sha256: 906ef474f79658405a237645f649f3386c55c2b6129b82559af989b6d8c5ce7a
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
-  - rule: kutoten-consistency
-    line: 83
-    sha256: f05c787f25d8ca91ed422adaea4f55b80b07e2c0e132cca70a41b3c910fe5881
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
-  - rule: kutoten-consistency
-    line: 100
-    sha256: 1dcb4d4427db23f951337a9784ffce47881d7fe8bc1a5d0c05e144ec0ce86347
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (１１ｅ，１１ｆ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: bracket-width-consistency
     line: 110
     sha256: 6a74209d593749f77944f61b7043cd18485b3e1c113dc1b5ae3768e50dc5e2db
@@ -97,10 +70,6 @@ findings:
     sha256: b12582dcf530d8ba25a4aaab755fd86a446c78fc59aac254be271aefce0467c1
     verdict: correct
     note: half-width parentheses (内箱本体６) in a gazette that otherwise writes full-width ones
-  - rule: orthographic-variant
-    line: 128
-    sha256: 90db11fcd08d8687926ffff214ac2c861c3a91b1341dbff3d9b662b972dc40b4
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 134
     sha256: 8aaf7a33640219b58c712f11e63513ab9b6cdc7f0512b8f17b2f5af6722edf43

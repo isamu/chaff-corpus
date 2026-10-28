@@ -1,11 +1,6 @@
 id: clef-offer-letter
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: Welcome to Clef, **FIRST_NAME**!
-    message: "6 bold spans of emphasis: 10.3 per 1000 words (limit 6)"
-    verdict: unjudged
   - rule: max-sentence-length
     line: 3
     text: This offer letter will go over the basic

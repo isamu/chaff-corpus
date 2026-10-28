@@ -1,16 +1,11 @@
 id: itabashi-chogi-r7-13-keiei-senryaku-7
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 44
-    sha256: 23b691124bae19da8d3cc35a6c0e9321b2b695a20aaa190750e67a9b00e7fa47
-    verdict: false-positive
-    note: the kana spelling is part of a facility's name; the common noun is spelled the other way
   - rule: undefined-acronym
     line: 45
-    what: a logistics facility's Latin-letter name, never expanded
-    verdict: missed
-    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
+    sha256: 270062c829d7d1f1769a670f1c40385a8a74b57550f8562451f8843ec5c1c6e8
+    verdict: correct
+    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs; found by chaffjs 0.39.0
   - rule: clause-chain
     line: 49
     sha256: a30425646a3e034a0a6304f0255278474b6315658fbf7ef68dcd21e3179506be
@@ -19,16 +14,11 @@ findings:
     line: 52
     sha256: d92de3a27e0ae5cb4d453714782debd281b106d2c93f8701c9855bd5e2b97aee
     verdict: correct
-  - rule: orthographic-variant
-    line: 52
-    sha256: d30ab658c550ac4337a883cc8262857468987ba6624bd4f05a3abc767cb720c4
-    verdict: false-positive
-    note: the kana spelling is part of a facility's name; the common noun is spelled the other way
   - rule: undefined-acronym
     line: 52
-    what: the railway companies' abbreviation, never expanded
-    verdict: missed
-    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84 (an organisation's name, not an everyday word on the common-acronym list); found by pending lab PRs
+    sha256: 337318cb3884dab57e6204f89bd35e7e3226780472d4f5ad68c5b0d27a72dc1c
+    verdict: correct
+    note: the same verdict as itabashi-chogi-r7-16-renraku-chosei-16:84 (an organisation's name, not an everyday word on the common-acronym list); found by pending lab PRs; found by chaffjs 0.39.0
   - rule: orthographic-variant
     line: 66
     sha256: 15bde81bcaafb0905b2c8de18e8b23e11ad81b90da53404eb4a24141f0549ee9
@@ -44,8 +34,3 @@ findings:
     sha256: 144fe8be7335c65dbd1253af682fe67a9e5d37459275e50b8ca75505ca3eda8f
     verdict: correct
     note: two agenda items run together in one 54-character heading
-  - rule: no-mixed-desumasu
-    line: 156
-    sha256: a5dcd1b7fe3dcad2ff0d88cecb07bb9c593c83ac491c0577d5d872bff2325302
-    verdict: false-positive
-    note: the page's contact block (department and section on one line) is an address, not a sentence; lab main reports it on this line

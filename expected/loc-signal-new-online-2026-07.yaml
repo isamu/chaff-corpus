@@ -21,7 +21,15 @@ findings:
     line: 35
     sha256: 48ed130a83d106e35734b8ca3431269bff06cfc34a35e92ac7db05c3da8aee9b
     verdict: unjudged
+  - rule: oxford-comma-consistency
+    line: 35
+    sha256: 4453746381ea791c6cabe159de2434be523ec3c7e72849a92089009f209ddf6e
+    verdict: unjudged
   - rule: max-sentence-length
+    line: 77
+    sha256: 7bf4b0ddea35d9d71c592f15f8bb02f74252573f22904fd688d9c1bc207c21ab
+    verdict: unjudged
+  - rule: oxford-comma-consistency
     line: 77
     sha256: 7bf4b0ddea35d9d71c592f15f8bb02f74252573f22904fd688d9c1bc207c21ab
     verdict: unjudged

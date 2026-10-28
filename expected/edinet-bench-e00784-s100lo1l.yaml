@@ -256,6 +256,11 @@ findings:
     text: ①経済状況の変動に係るリスク当社グループは、クロム製品（自動車部品等のめっき、顔
     message: 「は」で出した主題から述語まで 202 字あります（80 字まで）
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 25
+    text: BCP体制から原材料調達先を複数化することにより、災害発生時の原料調達難のリスク
+    message: 「BCP」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 29
     text: ５【研究開発活動】当連結会計年度における研究開発活動は、電子・電池材料、高機能性
@@ -332,30 +337,15 @@ findings:
     text: 会社名事業所名所在地セグメントの名称設備の内容投資予定金額資金調達方法着手及び完
     message: 「着手完了当社徳山工場山口県周南市機能品電子」は漢字が 21 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 41
-    text: 会社名事業所名所在地セグメントの名称設備の内容投資予定金額資金調達方法着手及び完
-    message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 49
     text: ②【発行済株式】種類事業年度末現在発行数（株）(2021年３月31日)提出日現在
     message: 「登録認可金融商品取引業協会名内容普通株式」は漢字が 20 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 49
-    text: ②【発行済株式】種類事業年度末現在発行数（株）(2021年３月31日)提出日現在
-    message: この文は 151 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 53
     text: (4)【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
     message: 「年月日発行済株式総数増減数」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 53
-    text: (4)【発行済株式総数、資本金等の推移】年月日発行済株式総数増減数（株）発行済株
-    message: この文は 198 文字あります（140 文字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 53
@@ -368,20 +358,10 @@ findings:
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。171 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: a table the dataset ran together (cells without separators) is read as prose
-  - rule: max-sentence-length
-    line: 57
-    text: ①【発行済株式】    2021年３月31日現在区分株式数（株）議決権の数（個）
-    message: この文は 229 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 61
     text: ②【自己株式等】    2021年３月31日現在所有者の氏名又は名称所有者の住所
     message: 「日本化学工業株式会社東京都江東区亀戸九丁目」は漢字が 21 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 61
-    text: ②【自己株式等】    2021年３月31日現在所有者の氏名又は名称所有者の住所
-    message: この文は 159 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 69
@@ -433,25 +413,15 @@ findings:
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2020
     message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 101
-    text: ①【連結貸借対照表】  (単位：百万円) 前連結会計年度(2020年３月31日)
-    message: この文は 1112 文字あります（140 文字まで）
+  - rule: undefined-acronym
+    line: 93
+    text: EY新日本有限責任監査法人により監査を受けております。
+    message: 「EY」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 105
     text: 【連結損益計算書】  (単位：百万円) 前連結会計年度(自　2019年４月１日
     message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 105
-    text: 【連結損益計算書】  (単位：百万円) 前連結会計年度(自　2019年４月１日
-    message: この文は 497 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 109
-    text: 【連結包括利益計算書】  （単位：百万円） 前連結会計年度(自　2019年４月１
-    message: この文は 221 文字あります（140 文字まで）
     verdict: unjudged
   - rule: latin-spacing
     line: 113
@@ -462,11 +432,6 @@ findings:
     line: 113
     text: ③【連結株主資本等変動計算書】前連結会計年度（自　2019年４月１日　至　202
     message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 113
-    text: ③【連結株主資本等変動計算書】前連結会計年度（自　2019年４月１日　至　202
-    message: この文は 928 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 117

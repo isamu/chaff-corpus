@@ -18,12 +18,6 @@ findings:
     verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】当連結会計
-    message: 全角の「４」と書いています（この文書はふつう半角の「4」。94 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: the full-width 「４【…】」 is the fixed section-number form of an annual securities report
-  - rule: fullwidth-alnum-consistency
-    line: 1
     text: ４つの重点課題を掲げ、具体的施策の実行に向けて取り組んでまいりました。その結果、
     message: 全角の「４」と書いています（この文書はふつう半角の「4」。94 箇所のうち 4 箇所が違う）
     verdict: unjudged
@@ -73,12 +67,6 @@ findings:
     message: この段落は 63 文あります（5 文まで）
     verdict: false-positive
     note: the dataset dropped the report's line breaks, so a whole section is one paragraph
-  - rule: max-sentence-length
-    line: 1
-    text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
-    message: この文は 363 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: max-sentence-length
     line: 1
     text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
@@ -137,12 +125,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
-    text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
-    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
-    verdict: false-positive
-    note: "the table run into the sentence does not count (no は in it); the count runs from 当社グループは over real prose, but that topic gets its own predicate in the first clause (〜を営んでおりますが、), and the clauses after it have subjects of their own (重要性が, 記載は), so by the rule's why and not_flagged the count stops there; chaff only knows the copula form of that close (〜ではありませんが、)"
-  - rule: topic-predicate-distance
-    line: 1
     text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
     message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
     verdict: unjudged
@@ -195,4 +177,14 @@ findings:
     line: 1
     text: )は、前連結会計年度末と比較して134百万円増加し、31,211百万円となりまし
     message: 「（」を「)」で閉じています（全角と半角が違います）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: IH炊飯ジャーが苦戦したことにより、前年実績を下回りました。電気ポットは低調でし
+    message: 「IH」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: SHIFT』をスタートしました。『SHIFT』では、ドメイン・シフト「新規領域の
+    message: 「SHIFT」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged

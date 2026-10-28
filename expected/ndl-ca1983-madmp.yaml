@@ -100,12 +100,6 @@ findings:
     message: 「さ」と「れ」は一続きの語句ですが、あいだに空白があります（1065 箇所のうち 2 箇所が空いている）
     verdict: correct
     note: "「策定 さ れ た」: spaces inside the word"
-  - rule: heading-numbering-mix
-    line: 62
-    text: "#### 図　DMP Common Standardのデータモデル"
-    message: 見出し「図　DMP Common Standardのデータモデル」だけ番号がありません（兄弟の見出しは「1. はじめに」など 7 個が番号付き）
-    verdict: false-positive
-    note: a figure caption written as a heading by the page; not a section heading
   - rule: topic-predicate-distance
     line: 64
     text: また、個々の実体の概念や属性は、DataCite（CA1849参照）や、データカ

@@ -7,18 +7,6 @@ findings:
     message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
     verdict: correct
     note: 「社会参加の機会は」から述語「醸成するものである」まで、列挙を挟んで 100 字余り
-  - rule: max-kanji-continuous
-    line: 29
-    text: さらに、高等教育段階の学習機会の多様な発展に寄与するため、短期大学卒業者、高等専
-    message: 「独立行政法人大学改革支援」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 組織の名前（独立行政法人大学改革支援・学位授与機構）
-  - rule: topic-predicate-distance
-    line: 35
-    text: 学校は地域コミュニティの核となることから、児童生徒が地域住民とともに創造的な活動
-    message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
-    verdict: false-positive
-    note: 「学校は」の述語「核となる」はすぐ後にあり、文末の「周知している」は別の主語（国）のもの
   - rule: no-doubled-joshi
     line: 37
     text: の整備のうち学校以外の公共施設との複合化・集約化を伴う改築及び長寿命化改修につい
@@ -98,9 +86,10 @@ findings:
     note: 150 字の一文
   - rule: undefined-acronym
     line: 103
-    what: NHK, never expanded
-    verdict: missed
-    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
+    text: NHK総合及び在京キー5局では約100％を引き続き達成した。
+    message: 「NHK」が説明なしで使われています（説明のない略語 2 個）
+    verdict: correct
+    note: a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs; found by chaffjs 0.39.0
   - rule: max-sentence-length
     line: 109
     text: また、開発途上国からの要請（ニーズ）に見合った技術・知識・経験を持ち、かつ開発途
@@ -109,6 +98,7 @@ findings:
     note: 146 字の一文
   - rule: undefined-acronym
     line: 109
-    what: JICA, never expanded
-    verdict: missed
-    note: the sentence writes 独立行政法人国際協力機構 after JICA but never ties the two (no brackets), and the rule asks for the expansion at first use; JICA stays reported by the maintainer's decision, like mext-shochu-news-506:14; found by pending lab PRs
+    text: JICA海外協力隊員（対象：20歳から69歳まで）として途上国の現場で活躍する、
+    message: 「JICA」が説明なしで使われています（説明のない略語 2 個）
+    verdict: correct
+    note: the sentence writes 独立行政法人国際協力機構 after JICA but never ties the two (no brackets), and the rule asks for the expansion at first use; JICA stays reported by the maintainer's decision, like mext-shochu-news-506:14; found by pending lab PRs; found by chaffjs 0.39.0

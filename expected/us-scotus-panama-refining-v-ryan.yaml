@@ -1,70 +1,16 @@
 id: us-scotus-panama-refining-v-ryan
 chaff: 0.36.0
 findings:
-  - rule: undefined-acronym
-    line: 1
-    text: USCA § 709 note), prohibited 'the transp
-    message: '"USCA" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: USCA (United States Code Annotated) is a standard citation abbreviation in court opinions, never spelled out
   - rule: sentence-spacing-consistency
     line: 7
     text: "  That order was made under section 10(a"
     message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 147)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 9
-    text: IV provided, in substance, that every pr
-    message: '"IV" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: a Roman article number (Article IV of the regulations), not an acronym
-  - rule: undefined-acronym
-    line: 9
-    text: VII provided that all persons embraced w
-    message: '"VII" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: a Roman article number (Article VII of the regulations), not an acronym
-  - rule: dangling-reference
-    line: 13
-    text: section 4 of article III, the subdivisio
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: demonstrative-opener-run
     line: 13
     text: This 'Petroleum Code' (in its original f
     message: 3 sentences in a row open with a word that points back, such as "This" (limit 2)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 17
-    text: section 4 of article III was eliminated.
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 23
-    text: section 4 of article III of the code.
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 27
-    text: section 4 of article III of the Petroleu
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 31
-    text: section 4 of article III of the code; as
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 31
-    text: section 4 of article III of the Petroleu
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: max-paragraph-length
     line: 31
     text: First. The controversy with respect to t
@@ -92,18 +38,6 @@ findings:
     message: '"creterion" is not in the dictionary; did you mean "criterion"?'
     verdict: correct
     note: a typo for criterion
-  - rule: dangling-reference
-    line: 45
-    text: section 9(a) authorizes the President to
-    message: '"section 9(a)" (address 9.a) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 45
-    text: Section 9(b) authorizes the President to
-    message: '"Section 9(b)" (address 9.b) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: empty-intensifier
     line: 45
     text: It is important to note that section 9 (
@@ -114,77 +48,17 @@ findings:
     text: "  It declares that a national emergency"
     message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 147)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 51
-    text: section 1 which limits or controls the a
-    message: '"section 1" (address 1) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: 7 (15 USCA §§ 706, 707) impose limitatio
-    message: '"7" (address 7) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: Section 2 (15 USCA § 702) relates to adm
-    message: '"Section 2" (address 2) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: Section 4 (15 USCA § 704) relates to agr
-    message: '"Section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: Section 5 (15 USCA § 705) refers to the
-    message: '"Section 5" (address 5) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: Section 8 (15 USCA § 708), contains prov
-    message: '"Section 8" (address 8) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 53
-    text: Sections 6 and 7 (15 USCA §§ 706, 707) i
-    message: '"Sections 6" (address 6) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: unbalanced-bracket
     line: 53
     text: (15 USCA § 703(e) authorizes the Preside
     message: '"(" is never closed'
     verdict: correct
     note: the citation's closing parenthesis is missing in the text
-  - rule: dangling-reference
-    line: 59
-    text: § 1. And the Congress is empowered 'To m
-    message: '"§ 1" (address 1) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
-  - rule: dangling-reference
-    line: 59
-    text: § 8, par. 18. The Congress manifestly is
-    message: '"§ 8" (address 8) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: sentence-spacing-consistency
     line: 61
     text: "  These early acts were not the subject"
     message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 147)
     verdict: unjudged
-  - rule: dangling-reference
-    line: 63
-    text: section 4), then, with respect to that n
-    message: '"section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: max-paragraph-length
     line: 65
     text: In Field v. Clark, supra, the Court appl
@@ -205,12 +79,6 @@ findings:
     text: Another notable illustration is that of
     message: This paragraph runs 29 sentences (limit 12)
     verdict: correct
-  - rule: dangling-reference
-    line: 71
-    text: Section 4. In construing this provision,
-    message: '"Section 4" (address 4) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: sentence-spacing-consistency
     line: 71
     text: "  The standard set up was not so indefin"
@@ -221,12 +89,6 @@ findings:
     text: So also, from the beginning of the gover
     message: This paragraph runs 19 sentences (limit 12)
     verdict: correct
-  - rule: dangling-reference
-    line: 75
-    text: § 315 (19 USCA §§ 154-159)), and with th
-    message: '"§ 315" (address 315) is not in this document'
-    verdict: false-positive
-    note: a section of the National Industrial Recovery Act, the Petroleum Code, the Constitution or the U.S. Code cited by the opinion, outside this document (section 9(c) is quoted as 'Sec. 9. * * * (c)', which is not read as that address)
   - rule: max-paragraph-length
     line: 83
     text: We are not dealing with action which, ap

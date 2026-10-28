@@ -37,11 +37,6 @@ findings:
     text: “Payment Activity" tab.
     message: '"“" is never closed'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 158
-    text: EIP page on IRS.gov. For more informatio
-    message: '"EIP" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
   - rule: contraction-consistency
     line: 196
     text: If you received a notice in the mail or

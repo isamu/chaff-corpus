@@ -7,12 +7,6 @@ findings:
     message: 'The heading "SR 25-2: Order Granting an Exemption from the Customer Identification Program Rule Requirement Related to a Bank Obtaining Taxpayer Identification Number Information from the Customer" runs 25 words (limit 14)'
     verdict: correct
     note: the page heading repeats the letter's whole subject, far over the limit
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 258 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead in capitals and agency names make the density in a short regulatory letter
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
@@ -129,12 +123,6 @@ findings:
     note: a long sentence in the letter's notes
   - rule: max-sentence-length
     line: 53
-    text: See FinCEN Permits Banks to Use Alternat
-    message: This sentence runs 49 words (limit 18)
-    verdict: false-positive
-    note: a list of the titles of the other agencies' announcements, joined by semicolons, not a sentence
-  - rule: max-sentence-length
-    line: 53
     text: The Order is applicable to banks, as tha
     message: This sentence runs 28 words (limit 18)
     verdict: correct
@@ -151,12 +139,6 @@ findings:
     message: This sentence runs 42 words (limit 18)
     verdict: correct
     note: a long sentence in the letter's notes
-  - rule: max-sentence-length
-    line: 59
-    text: See, e.g., 12 C.F.R. §§ 5.34(e)(3) and 5
-    message: This sentence runs 64 words (limit 18)
-    verdict: false-positive
-    note: a citation string (See, e.g., ... ; see also ...), not a sentence of prose
   - rule: max-sentence-length
     line: 61
     text: See also SR letter 05-9, “Frequently Ask

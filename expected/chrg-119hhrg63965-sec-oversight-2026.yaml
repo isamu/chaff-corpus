@@ -1,12 +1,6 @@
 id: chrg-119hhrg63965-sec-oversight-2026
 chaff: 0.36.0
 findings:
-  - rule: unknown-word
-    line: 499
-    text: grift and corruption. Chairman
-    message: '"grift" is not in the dictionary; did you mean "graft"?'
-    verdict: false-positive
-    note: '"grift" is a standard word'
   - rule: redundant-expression
     line: 599
     text: each and every month.
@@ -19,12 +13,6 @@ findings:
     message: '"exact same" says the same thing twice'
     verdict: correct
     note: '"the exact same quote" can be "the same quote"'
-  - rule: unknown-word
-    line: 2491
-    text: rightsized with a goal of
-    message: '"rightsized" is not in the dictionary; did you mean "rightsize"?'
-    verdict: false-positive
-    note: '"rightsized" is a standard word'
   - rule: duration-mismatch
     line: 3695
     text: 43 days and 43 nights--

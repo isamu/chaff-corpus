@@ -1,10 +1,6 @@
 id: kokkai-217-sangiin-shohisha-7
 chaff: 0.34.0
 findings:
-  - rule: orthographic-variant
-    line: 3
-    sha256: e9c8e67b25ba8e8ac3033a89d26cd7ce71c54eca53bf5213c362563dccfe4952
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 59
     sha256: 51823155bad35d6befac9c20f68e3c53649bdbef8efb98d07f1bf0ef4a005dd7
@@ -294,10 +290,6 @@ findings:
     sha256: 88a059ed519ebbdc05ddbf256600b8a1664b3c3883ac1d1c36b66952ecfbf495
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 333
-    sha256: cb8a6ccefac0533506773491e81d73c0eb3b172a04c8476c82b128513ba3e309
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 335
     sha256: 2df276fc491646e9bad5a82a0ad0183e85eaa9fbe45a27cb111b056bb2d7bd71
     verdict: unjudged
@@ -568,10 +560,6 @@ findings:
   - rule: redundant-expression
     line: 567
     sha256: 50d5636aa3d779a1738d45869492c3e5f412883be6fea17d68eb3490aab18616
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 575
-    sha256: 460e37d29304ff6fc4bfa4bfb7c04f98ac9256c569b2880013218d4c6b0e3818
     verdict: unjudged
   - rule: clause-chain
     line: 581

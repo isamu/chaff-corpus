@@ -7,12 +7,6 @@ findings:
     message: 1 sentence opens with "So," (1 needed)
     verdict: correct
     note: a sentence opening with "So," in reference prose
-  - rule: name-variant
-    line: 54
-    text: ASCII to binary").
-    message: '"ASCII to binary" is written "binary to ASCII", with the words in another order, elsewhere in the document'
-    verdict: false-positive
-    note: '"ASCII to binary" and "binary to ASCII" are the two inverse functions (atob, btoa), not one name in two orders'
   - rule: title-case-consistency
     line: 61
     text: ""

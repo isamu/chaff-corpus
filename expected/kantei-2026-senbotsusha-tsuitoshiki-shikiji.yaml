@@ -1,9 +1,3 @@
 id: kantei-2026-senbotsusha-tsuitoshiki-shikiji
 chaff: 0.36.0
-findings:
-  - rule: no-mixed-desumasu
-    line: 10
-    text: 戦争の惨禍を、二度と繰り返させない。戦後８１年が経（た）ちますが、歳月がいかに流
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: a vow set in plain form on purpose (二度と繰り返させない。) inside a です/ます address
+findings: []

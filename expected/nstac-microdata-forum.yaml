@@ -21,26 +21,6 @@ findings:
     text: EBPM研修への日本品質管理学会の取り組み -）
     message: 「EBPM」が説明なしで使われています（説明のない略語 3 個）
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 152
-    text: 匿名データを用いた研究
-    message: 「名データを用いた」が 6 回出てきます（5 回まで）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 153
-    text: 統計センター及びサテライト機関の取組み
-    message: 「統計センター及びサテライト機関の取組み」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（7 項目のうち 1 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 160
-    text: 統計センター及びサテライト機関の取組み
-    message: 「統計センター及びサテライト機関の取組み」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 210
-    text: ミクロデータを使いこなす！～KUMAの利用手続きと実証分析の進め方～（2014/
-    message: 「ミクロデータを使いこなす！」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（12 項目のうち 1 項目）
-    verdict: unjudged
   - rule: undefined-acronym
     line: 210
     text: KUMAの利用手続きと実証分析の進め方～（2014/1/9）

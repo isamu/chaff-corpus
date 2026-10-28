@@ -6,10 +6,6 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
     note: DailyMed's own panel title over the label's codes and packager, kept as a heading since the accordion change; not one of the label's headings
-  - rule: proper-noun-density
-    line: 5
-    sha256: b5fb9c8d3e21201cb132bb6f2f805280fd6a5a976caffc249e34f530dbae140d
-    verdict: unjudged
   - rule: undefined-acronym
     line: 5
     sha256: b5fb9c8d3e21201cb132bb6f2f805280fd6a5a976caffc249e34f530dbae140d
@@ -30,21 +26,9 @@ findings:
     line: 64
     sha256: 996db02b1f2d107197c2120dbbc8b62c07c4ffc8ad9d94a197eddd96ce9979c9
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 106
-    sha256: 34f9ef88099d47d4ca25b63d85c085f2777c21d04dede791f6dc214238f53125
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 108
-    sha256: bfaa5886090652a5eea365982c7d70028c72dbf034ba0772ba58ce4c43969561
-    verdict: unjudged
   - rule: comparative-without-baseline
     line: 109
     sha256: d7d5dcc369426e2e5f8dcb89af4308b0daed6e55910d53395ce38bd6dd1a9456
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 109
-    sha256: 438bcbbdd596522071751c5724e0d992fab1ba94f41630f48e5ca45e9ee807a5
     verdict: unjudged
   - rule: missing-space-after-comma
     line: 124

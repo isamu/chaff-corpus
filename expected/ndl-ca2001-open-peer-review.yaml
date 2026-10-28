@@ -7,11 +7,6 @@ findings:
     message: 見出し「オープン査読の動向：背景、範囲、その是非」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page's h1 is its own title for the article (number, title, author) and the next heading, the article title again, is h3, so the committed text goes from h1 to h3; the rule exempts only the first heading, not one after a page or site title, the same shape as bousai-wp-r07-* (h1 then h4) and kantei-214/221
-  - rule: heading-numbering-mix
-    line: 15
-    text: "#### 1. あらためて「査読」とは？"
-    message: 見出し「1. あらためて「査読」とは？」の番号の書き方が、兄弟の見出し（「(1) 査読にかかる時間・コストの増大」など 6 個）と違います
-    verdict: unjudged
   - rule: weasel-word
     line: 23
     text: 世界中で生産される論文数の増大に対し、査読の引き受け手が不足し、一部の査読者に負
@@ -46,11 +41,6 @@ findings:
     line: 41
     text: 査読者の名前や査読レポートの内容は「不透明」なので査読者にとって研究業績にはなら
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 43
-    text: "#### 2. 「オープン査読」の定義・範囲"
-    message: 見出し「2. 「オープン査読」の定義・範囲」の番号の書き方が、兄弟の見出し（「(1) 査読にかかる時間・コストの増大」など 6 個）と違います
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 47
@@ -122,11 +112,6 @@ findings:
     text: なにも公開しない）、 “Review summaries”（査読内容やプロセスの
     message: 「なに」と書いています（この文書はふつう「何」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 81
-    text: "#### 3. オープン査読の現状"
-    message: 見出し「3. オープン査読の現状」の番号の書き方が、兄弟の見出し（「(1) 査読にかかる時間・コストの増大」など 6 個）と違います
-    verdict: unjudged
   - rule: orthographic-variant
     line: 83
     text: もって「オープン査読」である、としている雑誌が多かったと言える。
@@ -136,16 +121,6 @@ findings:
     line: 89
     text: "#### 4. オープン査読の問題と、クローズド査読自体の見直し"
     message: 見出し「4. オープン査読の問題と、クローズド査読自体の見直し」の下に中身がありません
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 89
-    text: "#### 4. オープン査読の問題と、クローズド査読自体の見直し"
-    message: 見出し「4. オープン査読の問題と、クローズド査読自体の見直し」の番号の書き方が、兄弟の見出し（「(1) 査読にかかる時間・コストの増大」など 6 個）と違います
-    verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 97
-    text: よりよい査読レポートを書こうと思う（結果として有効性・信頼性が向上する）ことや、
-    message: 「よりよい」は、何と比べているかが書かれていません
     verdict: unjudged
   - rule: clause-chain
     line: 107

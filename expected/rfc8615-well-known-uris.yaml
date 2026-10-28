@@ -1,26 +1,6 @@
 id: rfc8615-well-known-uris
 chaff: 0.37.0
 findings:
-  - rule: undefined-acronym
-    line: 23
-    sha256: 15f916de34d49d339a2678782ea5953a3b48fcc13caace15e48119d179f33e2b
-    verdict: false-positive
-    note: RFC, the document's own series name
-  - rule: undefined-acronym
-    line: 46
-    sha256: 35ca1f625de4f9dfa9f51631f70498d5fbdbb513b03d9041c11b7e0b3e066c2f
-    verdict: false-positive
-    note: BCP in the copyright boilerplate every RFC carries
-  - rule: undefined-acronym
-    line: 52
-    sha256: d977c91928618059006dce17c77fdde9af804d3ab86da28d12f56d0249b95c8d
-    verdict: false-positive
-    note: BSD License in the copyright boilerplate every RFC carries
-  - rule: undefined-acronym
-    line: 74
-    sha256: 2ada534049735847ec4cb0bac69c710bf8d8b30ef9ddc86e1becfcf177cf9e41
-    verdict: false-positive
-    note: "IANA in the table of contents of a technical spec, an acronym of the field every RFC reader knows; the rule's by_genre note gives technical documents a higher limit for that reason, and keeping this one needs technical/spec normal 2, which brings back many false positives (lab #2109 measured it)"
   - rule: max-sentence-length
     line: 88
     sha256: 257e8d2b8e5cd23f15efc8754f441aa5a70c87f7df0f1749b358a6ee2b1f6699
@@ -46,16 +26,6 @@ findings:
     line: 359
     sha256: cea36003b972265284575791510a5477b367238131369b35bc74c1695d6b6304
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 492
-    sha256: 709e6ea7645e980457eb6cd645d628f4ab5ad78cd7a3a5b1fb4db122233f82c7
-    verdict: false-positive
-    note: STD in a reference entry (STD 66), a series identifier
-  - rule: undefined-acronym
-    line: 531
-    sha256: ed1b3ccf2d2f496fb260fb35f1b15f22593479b0acd64fe57e14553d08fd57ea
-    verdict: false-positive
-    note: "an entry of the RFC's reference list, written in the cited work's words; the rule's not_flagged says a citation's acronyms count towards the limit but are not reported (the reason is the reference entry, not that WHATWG is a name)"
   - rule: name-variant
     line: 543
     sha256: 091a465b07b0a9ce8d5f8d5e245dd38276471dfb0aaa6f31876c1d958f675361

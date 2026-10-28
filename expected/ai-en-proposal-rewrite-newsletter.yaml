@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: ai-structure
     line: 3
-    what: "the textbook proposal outline (Summary, The current situation, What we propose, ...): sections of one or two paragraphs, stock headings, a bold-label list"
-    verdict: missed
-    note: "found by lab main"
+    text: "## Summary"
+    message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, headings in a stock form, list items opening with a bold label"
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: bold-label-list
     line: 25
     what: '"**More timely:**", "**More likely to be read:**", "**Less work:**"'

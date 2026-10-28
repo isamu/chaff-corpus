@@ -17,12 +17,6 @@ findings:
     message: 文の長さのばらつきが 23%（30% 以上ほしい）
     verdict: correct
     note: even sentence lengths throughout (catalog J13)
-  - rule: no-mixed-desumasu
-    line: 13
-    text: たとえば「来月のキャンペーンの予算配分を決める」と書いて送る。これだけで、資料を
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: 「〜と書いて送る。」 is a plain-form example of the action, deliberate in a です/ます post
   - rule: quote-without-source
     line: 13
     text: 来月のキャンペーンの予算配分を決める」と書いて送る。これだけで、資料を見せるだけ

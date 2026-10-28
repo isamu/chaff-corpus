@@ -171,11 +171,6 @@ findings:
     text: 関係行政機関の長に協議しなければならないこと。
     message: 「関係行政機関」を、195 行目の定義より前で使っています
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 107
-    text: の[3]の閣議の決定があったときは，遅滞なく，基本方針を公表しなければならないこ
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 108
     text: "[6]政府は，日本語教育を取り巻く環境の変化を勘案し，並びに日本語教育に関する施"

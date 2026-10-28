@@ -11,12 +11,6 @@ findings:
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23日）」は 41 文字あります（40 文字まで）
     verdict: unjudged
   - rule: undefined-acronym
-    line: 7
-    text: HPに掲載しました！
-    message: 「HP」が説明なしで使われています（説明のない略語 5 個）
-    verdict: false-positive
-    note: HP (ホームページ) is everyday Japanese for any reader, like the words on chaff's common-acronym list
-  - rule: undefined-acronym
     line: 13
     text: STI for SDGs」アワード募集
     message: 「STI」が説明なしで使われています（説明のない略語 5 個）
@@ -99,12 +93,6 @@ findings:
     text: 本研修は、国際理解教育/開発教育の授業実践経験がある小・中・高校、特別支援学校に
     message: 「は」で出した主題から述語まで 119 字あります（80 字まで）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 139
-    text: より良い多文化共生の実現に向けた場づくりやマインドセットについて学び、多文化共生
-    message: 「より良い」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: 「より良い〜の実現」 is a set phrase for an aim; there is no omitted baseline
   - rule: max-sentence-length
     line: 139
     text: 本研修では、多文化共生を意識した学校づくりや、外国につながる児童生徒を受け持った
@@ -190,12 +178,6 @@ findings:
     text: ) まで
     message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 261
-    text: 総合教育政策局 男女共同参画共生社会学習・安全課 環境教育推進係
-    message: 「男女共同参画共生社会学習」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: an office's official name, one fixed compound
   - rule: fullwidth-alnum-consistency
     line: 269
     text: ４つのテーマをアニメーションを使ってわかりやすく解説しています。

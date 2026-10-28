@@ -1,16 +1,6 @@
 id: kokkai-221-sangiin-saigai-fukko-2
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 3
-    sha256: fc755072cbec0a1066f16fc374dbc4bc5b1f0886f2cea38b158dc26d3ab3fa77
-    verdict: false-positive
-    note: the chair's set opening phrase in kana is not the noun it is matched with
-  - rule: orthographic-variant
-    line: 7
-    sha256: a7300f1502264e7323d49b5e8cb7d9e03d6a0c5773daadcc618b572ccbc7420f
-    verdict: false-positive
-    note: the kanji verb here (to turn one's thoughts to) is a different word from the polite auxiliary written in kana
   - rule: topic-predicate-distance
     line: 7
     sha256: 6adfcee682a0e99566bd4306fe7c13f75c0827af22977dacd928eb1edf32483e
@@ -43,8 +33,3 @@ findings:
     line: 305
     sha256: 12de36cf1c1e1d650a530f21ffb5e5ca5bae44b03436576e85bff5ae1b23c7e0
     verdict: correct
-  - rule: orthographic-variant
-    line: 349
-    sha256: 28738378562bcc473f6c4287d486ca0607c0e276b7e4b59cb10a5ed563400681
-    verdict: false-positive
-    note: the kanji forms it counts are a place name; the suffix after a bill is always kana in the minutes

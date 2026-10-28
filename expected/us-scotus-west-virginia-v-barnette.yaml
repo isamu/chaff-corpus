@@ -56,15 +56,3 @@ findings:
     line: 137
     what: '"flagsalute" runs flag-salute together; it is not a word'
     verdict: missed
-  - rule: dangling-reference
-    line: 143
-    text: § 305(g), 50 U.S.C.A.Appendix, § 305(g).
-    message: '"§ 305(g)" (address 305.g) is not in this document'
-    verdict: false-positive
-    note: a section of a statute, code or court report cited by the opinion, outside this document
-  - rule: dangling-reference
-    line: 143
-    text: § 305(g).
-    message: '"§ 305(g)" (address 305.g) is not in this document'
-    verdict: false-positive
-    note: a section of a statute, code or court report cited by the opinion, outside this document

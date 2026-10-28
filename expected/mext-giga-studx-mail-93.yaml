@@ -7,12 +7,16 @@ findings:
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。20 箇所のうち 2 箇所が違う）
     verdict: correct
     note: the issue date 2026/1/14 is in half-width digits while the body writes 令和８年１月１４日
-  - rule: comparative-without-baseline
-    line: 16
-    text: より可能になります。
-    message: 「より可能」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: the baseline (teaching without the shared whiteboard) is the subject of the paragraph
+  - rule: undefined-acronym
+    line: 4
+    text: GIGA StuDX推進チーム）
+    message: 「GIGA」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 5
+    text: DXスクールの事例からギガスタチームの推し実践を紹介します！
+    message: 「DX」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
   - rule: max-sentence-length
     line: 20
     text: また、教師は子供が自分で学びを進めることができるようにと、自分の考えの説明の仕方

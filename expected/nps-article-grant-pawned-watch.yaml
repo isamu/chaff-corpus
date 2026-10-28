@@ -53,12 +53,6 @@ findings:
     message: This sentence runs 44 words (limit 40)
     verdict: false-positive
     note: the sentence is a 1857 receipt quoted verbatim; the article cannot shorten it
-  - rule: oxford-comma-consistency
-    line: 20
-    text: And I hereby fully authorize and empower
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a list inside a receipt quoted verbatim; its punctuation is the receipt's, not the article's
   - rule: max-paragraph-length
     line: 26
     text: Yet another consideration is that gift g

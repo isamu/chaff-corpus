@@ -6,12 +6,11 @@ findings:
     text: "### CA 24-5: Joint Statement on Banks’ A"
     message: 'The heading "CA 24-5: Joint Statement on Banks’ Arrangements with Third Parties to Deliver Bank Deposit Products and Services" runs 17 words (limit 14)'
     verdict: correct
-  - rule: proper-noun-density
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: 452 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead and agency names make the density in a short regulatory letter
+  - rule: undefined-acronym
+    line: 12
+    text: CA 24-5
+    message: '"CA" is used without an expansion (2 such acronyms)'
+    verdict: unjudged
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"
@@ -42,6 +41,11 @@ findings:
     line: 27
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 21 words (limit 18)
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 41
+    text: SR 24-2 / CA 24-1, “Third-Party Risk Man
+    message: '"SR" is used without an expansion (2 such acronyms)'
     verdict: unjudged
   - rule: heading-level-skip
     line: 60

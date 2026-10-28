@@ -83,11 +83,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: セグメントの名称事業部門の名称金額（百万円）前年同期比（％）ホテル宿泊事業宿泊部
-    message: この文は 202 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
     text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
     message: この文は 141 文字あります（140 文字まで）
     verdict: unjudged
@@ -95,11 +90,6 @@ findings:
     line: 1
     text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
     message: 「百万円）となりま」が 13 回出てきます（5 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 1
-    text: の状況の分析】(１)経営成績等の概要①経営成績の状況当事業年度におけるわが国経済
-    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
@@ -125,4 +115,14 @@ findings:
     line: 1
     text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
     message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: FC３店舗）、館外飲食店舗が４店舗であります。②財政状態の状況当事業年度末におけ
+    message: 「FC」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: TSMCの工場建設や広島サミット開催に伴う特需などの影響から、前事業年度と比べ増
+    message: 「TSMC」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged

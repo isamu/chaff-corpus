@@ -63,16 +63,6 @@ findings:
     message: 「ERD」が説明なしで使われています（説明のない略語 19 個）
     verdict: correct
     note: ERD is not expanded anywhere in the standard
-  - rule: no-mixed-desumasu
-    line: 460
-    text: （デフォルト無効）
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: unjudged
-  - rule: no-mixed-desumasu
-    line: 460
-    text: ※PostgreSQL は設定によって円マーク（バックスラッシュ）によるエスケー
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 550
     text: 無い場合でも、事実上、主キーの値を利用して、検索、更新する場合は、リンクが切れて

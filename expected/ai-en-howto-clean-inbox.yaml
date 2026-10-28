@@ -26,21 +26,16 @@ findings:
     note: "sections of one or two paragraphs, stock Step N: headings, three-item lists"
   - rule: colon-lead-in
     line: 7
-    what: "\"Instead:\" hands over to a list; four of the six sections open their list this way"
-    verdict: missed
-    note: "found by lab main"
+    text: "Instead:"
+    message: 9.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: rule-of-three
     line: 9
     text: 1. Search for all emails older than 30 d
     message: 5 of 5 lists have exactly three items (70% allowed)
     verdict: correct
     note: every list in the post has exactly three items
-  - rule: bold-emphasis
-    line: 11
-    text: Move them to an archive folder (in Gmail
-    message: "8 bold spans of emphasis: 18.3 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: button names (**Archive**, **Unsubscribe**), the labels of one folder list and the bolded conditions leading one list; no emphasis mid-sentence
   - rule: list-item-form-mix
     line: 21
     text: Many email apps now show an **Unsubscrib
@@ -49,25 +44,22 @@ findings:
     note: a statement among imperative steps; an editor would make it a note under the list
   - rule: colon-lead-in
     line: 27
-    what: "\"Start with two or three:\" hands over to a list; four of the six sections open their list this way"
-    verdict: missed
-    note: "found by lab main"
+    text: "Start with two or three:"
+    message: 9.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: colon-lead-in
     line: 37
-    what: "\"When you open a new message, decide right away:\" hands over to a list; four of the six sections open their list this way"
-    verdict: missed
-    note: "found by lab main"
-  - rule: heading-numbering-mix
-    line: 49
-    text: "## Keeping it under control"
-    message: 'The heading "Keeping it under control" has no number, while 5 of its siblings do ("Step 1: Declare "inbox bankruptcy" on old messages")'
-    verdict: false-positive
-    note: the closing section is not one of the five steps
+    text: When you open a new message, decide righ
+    message: 9.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: colon-lead-in
     line: 51
-    what: "\"Once a week, take ten minutes to:\" hands over to a list; four of the six sections open their list this way"
-    verdict: missed
-    note: "found by lab main"
+    text: "Once a week, take ten minutes to:"
+    message: 9.2 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.39.0
   - rule: contrast-framing
     line: 57
     what: '"The goal is an inbox that shows you what needs your attention, not one that buries it."'

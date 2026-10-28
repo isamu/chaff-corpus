@@ -31,6 +31,16 @@ findings:
     text: 一般社団法人 日本暗号資産等取引業協会にご相談ください（ただし、当該協会会員会社
     message: 「一般社団法人 日本暗号資産等取引業協会」は、ほかの所では「一般社団法人日本暗号資産等取引業協会」と書いています（字の大小・幅・記号の違い）
     verdict: correct
+  - rule: undefined-acronym
+    line: 29
+    text: TEL  03-3222-1061 ※月～金曜日 9:30～17:30
+    message: 「TEL」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 72
+    text: ICOで発行された暗号資産を購入したが、未だに上場が実現していません。
+    message: 「ICO」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
   - rule: requirement-smell
     line: 76
     text: などをしっかり理解した上で、自己責任で取引を行う必要があります。

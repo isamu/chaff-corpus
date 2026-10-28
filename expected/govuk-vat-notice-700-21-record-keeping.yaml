@@ -31,6 +31,11 @@ findings:
     text: "### Example 2"
     message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 322
+    text: "The following rule has the force of law:"
+    message: '"following rule has" appears 13 times (limit 5)'
+    verdict: unjudged
   - rule: max-sentence-length
     line: 326
     text: If this is the case, this mixed supply s
@@ -46,23 +51,11 @@ findings:
     text: Where the information is received as a s
     message: '"for the purpose of" can be said in fewer words'
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 375
-    text: "### Example 1"
-    message: The heading "Example 1" repeats the one on line 290 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 375
     text: "### Example 1"
     message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 407
-    text: "### Example 1"
-    message: The heading "Example 1" repeats the one on line 290 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 407
     text: "### Example 1"
@@ -93,45 +86,21 @@ findings:
     text: Where supplies are made or received duri
     message: This sentence runs 49 words (limit 40)
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 467
-    text: "### Example 1"
-    message: The heading "Example 1" repeats the one on line 290 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 467
     text: "### Example 1"
     message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 495
-    text: "### Example 1"
-    message: The heading "Example 1" repeats the one on line 290 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 495
     text: "### Example 1"
     message: The heading "Example 1" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 499
-    text: "### Example 2"
-    message: The heading "Example 2" repeats the one on line 294 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 499
     text: "### Example 2"
     message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: duplicate-heading
-    line: 517
-    text: "### Example 1"
-    message: The heading "Example 1" repeats the one on line 290 under the same parent
-    verdict: false-positive
-    note: "'Example 1' restarts in each numbered subsection; the source sets the example headings at the subsection's own level, so the restart reads as a repeat under one parent"
   - rule: heading-numbering-mix
     line: 517
     text: "### Example 1"
@@ -141,11 +110,6 @@ findings:
     line: 544
     text: If your software does not include a Flat
     message: This sentence runs 45 words (limit 40)
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 603
-    text: provide HMRC information and returns fro
-    message: '"using the API platform" appears 22 times (limit 5)'
     verdict: unjudged
   - rule: oxford-comma-consistency
     line: 632

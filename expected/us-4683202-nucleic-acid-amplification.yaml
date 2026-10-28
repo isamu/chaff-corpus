@@ -66,11 +66,6 @@ findings:
     text: 12.5 pmoles of α-P32 -deoxycytidine trip
     message: The sentence opens with the numeral "12.5"
     verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 293
-    text: "### I. Synthesis of Primers"
-    message: The heading "I. Synthesis of Primers" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
-    verdict: unjudged
   - rule: undefined-acronym
     line: 307
     text: HPLC column and a 10% acetonitrile, 1% a
@@ -80,16 +75,6 @@ findings:
     line: 307
     text: quantitation of the derived nucleosides
     message: '"quantitation" is not in the dictionary; did you mean "quantisation"?'
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 309
-    text: "### II. Source of DNA"
-    message: The heading "II. Source of DNA" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 327
-    text: "### III. Polymerase Chain Reaction"
-    message: The heading "III. Polymerase Chain Reaction" is numbered, while 21 of its siblings are not ("BACKGROUND OF THE INVENTION")
     verdict: unjudged
   - rule: undefined-acronym
     line: 349

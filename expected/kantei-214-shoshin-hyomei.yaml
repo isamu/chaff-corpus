@@ -6,12 +6,6 @@ findings:
     text: "#### 演説全文"
     message: 見出し「演説全文」の深さが 1 から 4 へ飛んでいます（2 のはず）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 13
-    text: 政治資金問題に際し、岸田総理は、自由民主党内の派閥解消や政治資金規正法改正などに
-    message: 「政治資金規正法改正」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
   - rule: ngram-repetition
     line: 15
     text: その思いや実績を基に、私は、政治資金問題などにより失った国民の皆様からの信頼を取

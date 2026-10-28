@@ -11,18 +11,6 @@ findings:
     text: The individual had uploaded copies of a
     message: '"for the purpose of" can be said in fewer words'
     verdict: correct
-  - rule: contrast-framing
-    line: 39
-    text: All credentials across all the environme
-    message: '"not just" and other contrast frames: 3.9 per 1000 words (limit 3)'
-    verdict: false-positive
-    note: a factual scope statement (all credentials rotated, not only the exposed ones), not a rhetorical frame
-  - rule: contrast-framing
-    line: 52
-    text: This incident highlighted the effectiven
-    message: '"not only" and other contrast frames: 3.9 per 1000 words (limit 3)'
-    verdict: false-positive
-    note: "'not only X but Y' stating two scopes of a control, not a rhetorical frame"
   - rule: wordy-phrase
     line: 57
     text: CISA users had the ability to upload to
@@ -38,8 +26,3 @@ findings:
     text: It is not a matter of “if”, but “when” a
     message: '"it is not" and other contrast frames: 3.9 per 1000 words (limit 3)'
     verdict: correct
-  - rule: contrast-framing
-    line: 66
-    text: Such transparency unlocks opportunities
-    message: '"not only" and other contrast frames: 3.9 per 1000 words (limit 3)'
-    verdict: unjudged

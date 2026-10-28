@@ -45,12 +45,6 @@ findings:
     text: (来)
     message: 丸括弧を、全角で 44 箇所、半角で 16 箇所書いています。この文書には書き方が二通りあります
     verdict: correct
-  - rule: orthographic-variant
-    line: 519
-    text: 昨日来
-    message: 「昨日」と書いています（この文書はふつう「きのう」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 昨日来 is its own headword, read sakujitsu-rai, not a spelling of きのう
   - rule: hankaku-kana
     line: 611
     text: ･････ 現象の切れ間がおよそ１時間未満。

@@ -18,12 +18,6 @@ findings:
     text: Follow these guidelines to ensure your m
     message: '"Follow these guidelines" appears 7 times (limit 5)'
     verdict: correct
-  - rule: orthographic-variant
-    line: 81
-    text: Realtime Translation (CART) or an Americ
-    message: '"Realtime" here, where the document usually writes "Real-time" (1 of 5)'
-    verdict: false-positive
-    note: Communication Access Realtime Translation (CART) is a proper name spelled Realtime
   - rule: unbalanced-bracket
     line: 81
     text: (commonly referred to as Communication A

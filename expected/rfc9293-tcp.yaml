@@ -3,27 +3,11 @@ chaff: 0.34.0
 findings:
   - rule: undefined-acronym
     line: 6
-    sha256: 867a672364a15d2c5f215cdf0dd66e63b56a112888f930c3c42288935242ad62
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 6
     sha256: a881d1efb68cc60e02c1c12e1bac3ca5bfad65a6c4a8685d4c93572c5f8ffce8
     verdict: unjudged
   - rule: max-paragraph-length
     line: 19
     sha256: edafe5c2139d9c8efd28d20b747a63cb8f79e6214b93418d26d34543bd558627
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 23
-    sha256: cb07fa948ea2800868d29865fc15043bae67b1d131bd51a9a0bf14a6b1be57f0
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 53
-    sha256: 35ca1f625de4f9dfa9f51631f70498d5fbdbb513b03d9041c11b7e0b3e066c2f
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 59
-    sha256: d977c91928618059006dce17c77fdde9af804d3ab86da28d12f56d0249b95c8d
     verdict: unjudged
   - rule: date-format-consistency
     line: 64
