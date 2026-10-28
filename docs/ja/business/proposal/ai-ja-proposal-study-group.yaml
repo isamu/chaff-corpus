@@ -13,4 +13,4 @@ license:
   note: written for this repository by the model in generated; under the repository's licence
 redistribute: true
 sha256: 79754c9f71165e72d6812ba0c6e0f5a00705c5306e26ebf40af3e003d9972a89
-notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line."
+notes: "pilot of isamu/lab#1918: a request with a style instruction. The text is the document part of the reply, without the assistant's lead-in or closing line. The 〇〇さん on line 11 is not an unfilled-placeholder miss: 〇〇さん stays excluded because it is used for an example person (maintainer's decision, 2026-10-28)."

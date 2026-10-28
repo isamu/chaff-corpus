@@ -13,4 +13,4 @@ license:
   note: written for this repository by the model in generated; under the repository's licence
 redistribute: true
 sha256: 6abd1cc8978e23664e2486e9e093538c956946560f05f38a81c81db172ca249a
-notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."
+notes: "second set of isamu/lab#1918: a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line. The bold labels on line 13 and the closing notes on line 71 are not bold-label-list or empty-conclusion misses: both rules stay off for meeting minutes on purpose (maintainer's decision, 2026-10-28)."
