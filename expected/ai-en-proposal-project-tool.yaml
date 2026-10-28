@@ -17,18 +17,12 @@ findings:
     text: "- **Information gets out of date.** Upda"
     message: '"Information gets out of date" and other bold labels open 13 list items (5 needed)'
     verdict: correct
-    note: bold-label-list is a ja-only rule; found by chaffjs 0.40.0
+    note: "catalog E18 (bold labels, en): bold lead sentences and bold labels with a colon in the lists from line 13, benefits 33-37 and risks 57-59; the one finding per document now quotes the first item (chaffjs 0.40.0)"
   - rule: ai-structure
     line: 33
     what: the benefits list mirrors the drawbacks list item by item (out of date -> up-to-date status, ownership unclear -> clear accountability, ...)
     verdict: missed
     note: "candidate pattern: a benefits list that inverts the problems list"
-  - rule: bold-label-list
-    line: 33
-    text: "- **Up-to-date status:** Changes are vis"
-    message: '"Up-to-date status" and other bold labels open 8 list items (5 needed)'
-    verdict: correct
-    note: "catalog E18 (bold labels, en): benefits 33-37 and risks 57-59, each item a bold label and a colon"
   - rule: closing-cliche
     line: 63
     what: '"We would be happy to discuss any questions or adjustments to this plan." after a recommendation that restates the summary'

@@ -49,12 +49,6 @@ findings:
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 17
-    text: 〇〇
-    message: 「〇〇」が埋まっていません
-    verdict: correct
-    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: unfilled-placeholder
-    line: 17
     text: 〇〇部　〇〇
     message: 「〇〇部」が埋まっていません
     verdict: correct
@@ -63,4 +57,5 @@ findings:
     line: 18
     text: 〇〇-〇〇〇〇-〇〇〇〇
     message: 「〇〇-〇〇〇〇-〇〇〇〇」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a phone number left as 〇〇 blanks in the signature, reported as one blank since chaffjs 0.40.0 (isamu/lab#2201)"

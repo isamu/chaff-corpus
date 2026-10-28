@@ -3,18 +3,6 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 5
-    text: 〇日
-    message: 「〇日」が埋まっていません
-    verdict: correct
-    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: unfilled-placeholder
-    line: 5
-    text: 〇日〜〇月〇日
-    message: 「〇日」が埋まっていません
-    verdict: correct
-    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: unfilled-placeholder
-    line: 5
     text: 〇月〇日
     message: 「〇月」が埋まっていません
     verdict: correct

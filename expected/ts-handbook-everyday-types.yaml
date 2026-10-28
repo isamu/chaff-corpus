@@ -86,10 +86,9 @@ findings:
     note: "'you are / is not' where the page mostly writes 'you're / isn't'"
   - rule: contraction-consistency
     line: 700
-    text: Unlike most TypeScript features, this is
-    message: "\"is not\" is written \"isn't\" elsewhere in the document"
-    verdict: correct
-    note: "'you are / is not' where the page mostly writes 'you're / isn't'"
+    what: "'is not' in \"Unlike most TypeScript features, this is not ...\" where the page mostly writes 'isn't'"
+    verdict: missed
+    note: "'you are / is not' where the page mostly writes 'you're / isn't'; no longer reported since isamu/lab#2164 (a stressed or contrasted 'is not'), a loss the maintainer accepted there"
   - rule: contraction-consistency
     line: 705
     text: Though we will not go into depth here.
