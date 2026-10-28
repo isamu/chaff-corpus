@@ -18,12 +18,6 @@ findings:
     verdict: correct
     note: one character over the limit
   - rule: max-kanji-continuous
-    line: 97
-    text: 令和元年（2019年）に発生した台風19号（令和元年東日本台風）では、堤防が決壊
-    message: 「令和元年東日本台風」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official name of a typhoon (令和元年東日本台風)
-  - rule: max-kanji-continuous
     line: 99
     text: 追加された約15,000河川については、令和7年度（2025年度）末までに、洪水
     message: 「洪水浸水想定区域図」は漢字が 9 字続いています（8 字まで）

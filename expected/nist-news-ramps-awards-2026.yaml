@@ -1,9 +1,3 @@
 id: nist-news-ramps-awards-2026
 chaff: 0.34.0
-findings:
-  - rule: undefined-acronym
-    line: 9
-    text: RAMPS projects to align the specific wor
-    message: '"RAMPS" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: the release spells RAMPS out on line 18 (Regional Alliances and Multistakeholder Partnerships … (RAMPS program)); the acronym is expanded in brackets, only with the word program inside them, and line 9 is the summary bullet above it; given by pending lab PRs
+findings: []

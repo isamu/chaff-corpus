@@ -36,12 +36,6 @@ findings:
     text: できるものとし、ユーザーは当該利用に必要な範囲に限り著作者人格権を行使しないもの
     message: 「できる」と書いています（この文書はふつう「出来る」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: requirement-smell
-    line: 139
-    text: 等の著作権は当該ユーザー並びにその他既存の権利者に留保されるものとします。但し管
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
   - rule: orthographic-variant
     line: 146
     text: 事を明示、黙示的に保証しません。

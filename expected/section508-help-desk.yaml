@@ -17,12 +17,6 @@ findings:
     text: Agencies should establish clear routing
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
-  - rule: one-sentence-paragraph-run
-    line: 7
-    text: Providing a centralized point of contact
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: false-positive
-    note: list items (USWDS icon list) that the html conversion writes as paragraphs
   - rule: vague-word-density
     line: 11
     text: Facilitating timely resolution of access

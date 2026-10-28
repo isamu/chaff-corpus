@@ -3,6 +3,11 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
+    text: 〇〇区、代表取締役：〇〇 〇〇、以下「当社」）は、従業員50名以下の中小企業を対
+    message: 「〇〇区」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 3
     text: 〇〇株式会社（本社：東京都〇〇区、代表取締役：〇〇 〇〇、以下「当社」）は、従業
     message: 「〇〇株式会社」が埋まっていません
     verdict: correct
@@ -30,6 +35,16 @@ findings:
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
+    line: 40
+    text: 〇〇区〇〇
+    message: 「〇〇区〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 41
+    text: 〇〇 〇〇
+    message: 「〇〇 〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
     line: 42
     text: 〇月
     message: 「〇月」が埋まっていません
@@ -37,7 +52,17 @@ findings:
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 48
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 48
     text: 〇〇株式会社 広報担当：〇〇
     message: 「〇〇株式会社」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 49
+    text: 〇〇〇〇-〇〇〇〇
+    message: 「〇〇〇〇-〇〇〇〇」が埋まっていません
+    verdict: unjudged

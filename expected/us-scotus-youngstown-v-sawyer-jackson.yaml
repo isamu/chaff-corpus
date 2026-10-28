@@ -36,12 +36,6 @@ findings:
     text: breanch is a representative Congress. Th
     message: '"breanch" is not in the dictionary; did you mean "branch"?'
     verdict: correct
-  - rule: oxford-comma-consistency
-    line: 43
-    text: That authority must be matched against w
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: the list (life, liberty, or property) is inside a quotation of the Fifth Amendment
   - rule: sentence-spacing-consistency
     line: 53
     text: "  I do not think we rightfully may so am"

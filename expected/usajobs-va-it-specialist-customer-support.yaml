@@ -133,11 +133,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 329
-    text: DOCX). We do not accept PDF portfolio fi
-    message: '"DOCX" is used without an expansion (18 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 329
     text: JPG, JPEG, PNG, RTF, TXT, PDF, ODT or Wo
     message: '"JPG" is used without an expansion (18 such acronyms)'
     verdict: unjudged

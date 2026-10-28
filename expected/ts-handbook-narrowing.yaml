@@ -24,12 +24,6 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
-  - rule: comparative-without-baseline
-    line: 584
-    text: better.
-    message: '"better" does not say what it is compared with'
-    verdict: false-positive
-    note: rhetorical; the baseline is the code shown just above
   - rule: hyphen-as-dash
     line: 694
     text: " - that `Circle` and `Square` were reall"

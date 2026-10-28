@@ -2,12 +2,6 @@ id: jpo-oi-model-riyou-ai-v2-2
 chaff: 0.36.0
 findings:
   - rule: undefined-term
-    line: 3
-    text: 本学習済みモデルを用いたサービスに関する条件等を定めるため、次のとおり契約（以下
-    message: 「本学習済みモデル」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 第1条で本共同研究開発契約の定義を引き継ぐと定めており、その契約で定義された語
-  - rule: undefined-term
     line: 91
     text: 本学習モデルに対する追加学習用データセット等を用いた追加学習やアーキテクチャーの
     message: 「本学習モデル」は定義した語の形ですが、この文書のどこにも定義がありません
@@ -45,15 +39,10 @@ findings:
     note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第9条の見出しと比べるのは筋違い
   - rule: undefined-term
     line: 125
-    what: 「本共同開発契約」はどこにも定義がない。前文で定義した名前は「本共同研究開発契約」
-    verdict: missed
-    note: neither chaffjs 0.36.0 nor lab main reports it
-  - rule: requirement-smell
-    line: 146
-    text: 等が法令に違反するものではないこと。
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
+    text: 本共同開発契約第6条（各自の義務）、同第8条（再委託）、同第9条（本契約の変更）
+    message: 「本共同開発契約」は定義した語の形ですが、この文書のどこにも定義がありません
+    verdict: correct
+    note: neither chaffjs 0.36.0 nor lab main reports it; found by chaffjs 0.40.0
   - rule: orthographic-variant
     line: 153
     text: すべて甲が本サービス提供のために利用するサーバ（以下「本サービス用サーバ」という
@@ -78,12 +67,6 @@ findings:
     message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
     verdict: false-positive
     note: 支払の期限は同じ条の第3項（期間の末日から●日以内）にある
-  - rule: undefined-term
-    line: 179
-    text: 本連携システムを通じたAPIリクエスト回数1回あたりの単価●円（外税、以下「AP
-    message: 「本連携システム」は定義した語の形ですが、この文書のどこにも定義がありません
-    verdict: false-positive
-    note: 第1条で本共同研究開発契約の定義を引き継ぐと定めており、その契約で定義された語
   - rule: orthographic-variant
     line: 181
     text: 関わらず、本契約締結日より3年間は、前項の計算式におけるAPI単価を下記計算式の
@@ -102,18 +85,6 @@ findings:
     message: 「為」と書いています（この文書はふつう「ため」と書く語です。11 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「おそれのある為」は「行為」の「行」が抜けた原文の誤り（指摘の理由は表記揺れだが、直すべき箇所は同じ）
-  - rule: requirement-smell
-    line: 218
-    text: 等の権利利益を侵害すること
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
-  - rule: requirement-smell
-    line: 224
-    text: などに過度な負担をかけること
-    message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: orthographic-variant
     line: 233
     text: 責に帰すことができない事由（ただしこれらに限られない）であり、甲は当該事由に起因

@@ -28,9 +28,3 @@ findings:
     text: 皆さんには、防衛分野の知識、経験、判断力を遺憾なく発揮しつつも、常に広い視野を持
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 24
-    text: 国民の皆様の命と平和な暮らしを、断固として守り抜く。そして、日本列島を、強く豊か
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: 演説の中の言い切り（「守り抜く。」「強く豊かに。」）は意図した修辞

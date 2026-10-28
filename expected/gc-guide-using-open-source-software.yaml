@@ -67,11 +67,6 @@ findings:
     message: This sentence runs 41 words (limit 40)
     verdict: unjudged
   - rule: undefined-acronym
-    line: 94
-    text: BSD license
-    message: '"BSD" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 95
     text: ISC License
     message: '"ISC" is used without an expansion (7 such acronyms)'

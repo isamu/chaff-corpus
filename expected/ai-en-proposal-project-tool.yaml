@@ -1,17 +1,12 @@
 id: ai-en-proposal-project-tool
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# Proposal: Moving Project Tracking from"
-    message: "5 bold spans of emphasis: 9.2 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the five bolds are the lead sentences of the drawbacks list (13-17), the bold-label shape with a full stop, not emphasis mid-sentence
   - rule: ai-structure
     line: 3
-    what: the textbook proposal outline (Summary, Current Situation, Proposed Solution, Expected Benefits, Costs, Implementation Plan, Risks and Mitigation, Recommendation) with bold-label lists
-    verdict: missed
-    note: "ai-structure did not count it; found by lab main, on the first heading (line 3)"
+    text: "## Summary"
+    message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, list items opening with a bold label, the textbook proposal or report headings"
+    verdict: correct
+    note: ai-structure did not count it; found by lab main, on the first heading (line 3); found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 11
     what: '"This setup has several drawbacks:" and "All three offer the core features we need:" (21) hand over to lists'
@@ -19,15 +14,10 @@ findings:
     note: colon-lead-in is a ja-only rule; the English form is not counted
   - rule: bold-label-list
     line: 13
-    what: three bold-label lists (drawbacks 13-17, benefits 33-37, risks 57-59), 13 items
-    verdict: missed
-    note: bold-label-list is a ja-only rule
-  - rule: concrete-evidence-density
-    line: 31
-    text: ""
-    message: Section "Expected Benefits" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: "the section is bare, but it is the only one: Risks and Mitigation (55) and Recommendation (61) are judged false-positive, so one section of seven has nothing concrete, below the limit of 3; by the rule's level_meaning one bare section is not reported (pending lab PRs no longer give it), the same reading as ai-en-essay-working-cafes:5"
+    text: "- **Information gets out of date.** Upda"
+    message: '"Information gets out of date" and other bold labels open 13 list items (5 needed)'
+    verdict: correct
+    note: bold-label-list is a ja-only rule; found by chaffjs 0.40.0
   - rule: ai-structure
     line: 33
     what: the benefits list mirrors the drawbacks list item by item (out of date -> up-to-date status, ownership unclear -> clear accountability, ...)
@@ -39,18 +29,6 @@ findings:
     message: '"Up-to-date status" and other bold labels open 8 list items (5 needed)'
     verdict: correct
     note: "catalog E18 (bold labels, en): benefits 33-37 and risks 57-59, each item a bold label and a colon"
-  - rule: concrete-evidence-density
-    line: 55
-    text: ""
-    message: Section "Risks and Mitigation" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: risks and mitigations need no number
-  - rule: concrete-evidence-density
-    line: 61
-    text: ""
-    message: Section "Recommendation" has no number, code or link (3 of 7 sections)
-    verdict: false-positive
-    note: a one-paragraph recommendation; its fault is restating the summary, not a missing number
   - rule: closing-cliche
     line: 63
     what: '"We would be happy to discuss any questions or adjustments to this plan." after a recommendation that restates the summary'

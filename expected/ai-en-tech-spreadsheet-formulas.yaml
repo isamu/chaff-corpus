@@ -1,18 +1,6 @@
 id: ai-en-tech-spreadsheet-formulas
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# Five Spreadsheet Formulas That Will Sa"
-    message: "3 bold spans of emphasis: 7.1 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
-  - rule: heading-numbering-mix
-    line: 69
-    text: "## A few tips before you start"
-    message: 'The heading "A few tips before you start" has no number, while 5 of its siblings do ("1. SUMIF: add up only the rows you care about")'
-    verdict: false-positive
-    note: the tips section is not one of the five numbered formulas
   - rule: bold-label-list
     line: 71
     what: '"- **Lock your ranges when copying formulas.**" and two more'
@@ -20,6 +8,7 @@ findings:
     note: catalog E18 (bold labels, en)
   - rule: closing-cliche
     line: 75
-    what: "\"You don't have to learn all five at once. Pick the one … and go from there.\""
-    verdict: missed
-    note: catalog D (closing encouragement)
+    text: Pick the one that matches a task you do
+    message: Closes with "and go from there"
+    verdict: correct
+    note: catalog D (closing encouragement); found by chaffjs 0.40.0

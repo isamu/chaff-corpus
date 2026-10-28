@@ -6,12 +6,6 @@ findings:
     text: "### CA 23-6:  Second extension of CRA co"
     message: 'The heading "CA 23-6:  Second extension of CRA consideration for community development activities in Puerto Rico and the U.S. Virgin Islands in response to Hurricane Maria" runs 24 words (limit 14)'
     verdict: correct
-  - rule: proper-noun-density
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: 451 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead and agency names make the density in a short regulatory letter
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"
@@ -55,15 +49,3 @@ findings:
     message: Heading "Notes:" goes from level 3 to level 5 (expected 4)
     verdict: correct
     note: the page really jumps from h3 to h5 for its notes
-  - rule: max-sentence-length
-    line: 47
-    text: See the Federal Emergency Management Age
-    message: This sentence runs 27 words (limit 18)
-    verdict: false-positive
-    note: a footnote that is "See" plus the cited FEMA declarations and their URLs; by the rule's not_flagged only the writer's words before a citation count, as in fed-sr-26-3:41
-  - rule: undefined-acronym
-    line: 47
-    text: DR 4339), https://www.fema.gov/disaster/
-    message: '"DR" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: DR is part of FEMA's disaster declaration numbers (DR 4339), an identifier

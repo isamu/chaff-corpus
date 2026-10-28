@@ -31,12 +31,6 @@ findings:
     message: Exhibit A is referred to, but the document has no Exhibit A
     verdict: correct
     note: Exhibit A is not in the filed text
-  - rule: undefined-term
-    line: 27
-    text: Normal Business       Hours or the first
-    message: '"Normal Business" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: "extraction artefact: a run of spaces splits Normal Business Hours, so the defined term is not recognised"
   - rule: unused-definition
     line: 37
     text: '"Normal Business Hours" shall mean betwe'
@@ -48,12 +42,6 @@ findings:
     text: promptly modify the Software or the eGai
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: correct
-  - rule: numbering-gap
-    line: 45
-    text: 6.3 EXCEPT AS PROVIDED IN SECTIONS 6.1-6
-    message: '"6.3" follows "2.1" (expected number 2)'
-    verdict: false-positive
-    note: the numbered paragraphs 3-6 are plain text that chaff does not count, so 6.3 seems to follow 2.1
   - rule: obligation-without-deadline
     line: 55
     text: return to the other party all confidenti

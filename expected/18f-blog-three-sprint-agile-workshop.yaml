@@ -19,12 +19,6 @@ findings:
     message: '"the best" has nothing to compare against (3 such claims)'
     verdict: correct
     note: '"the best way to come to that appreciation is to participate" is a bare claim'
-  - rule: unqualified-superlative
-    line: 40
-    text: It will convince people that evaluating
-    message: '"the best" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: '"achieve the best results overall" is a set phrase'
   - rule: person-consistency
     line: 42
     text: One could even choose goals which are a
@@ -91,18 +85,6 @@ findings:
     message: '"make make" doubles a word; one of the two is left over'
     verdict: correct
     note: '"make make sure" doubles a word, as "a a" on line 149 does; found by chaffjs 0.38.0'
-  - rule: oxford-comma-consistency
-    line: 122
-    text: However, even more important is
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: '"immediately and constantly shown to the customer, who may ..." has no three-item list'
-  - rule: unqualified-superlative
-    line: 141
-    text: The customer is the most important role,
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: "\"the most important role\" of the workshop's two roles, named in the section above"
   - rule: max-sentence-length
     line: 145
     text: An executive who wants to experience agi

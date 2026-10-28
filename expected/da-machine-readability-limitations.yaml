@@ -11,11 +11,6 @@ findings:
     text: Ａ、１等）はエンコーディングによらず `info` レベルの参考報告として検出さ
     message: 全角の「Ａ」と書いています（この文書はふつう半角の「A」。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: comparative-without-baseline
-    line: 42
-    text: より正確に確認する補完チェックを実行します。AI が無効な場合は、決定論的チェッ
-    message: 「より正確」は、何と比べているかが書かれていません
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 42
     text: 決定論的チェック（フォント色・背景色・太字・斜体の複数使用検出）は AI の有無

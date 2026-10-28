@@ -1,24 +1,11 @@
 id: ai-ja-owned-staff-interview
 chaff: 0.36.0
 findings:
-  - rule: section-length-uniformity
-    line: 1
-    text: ""
-    message: 節の長さのばらつきが 29% しかありません（35% 以上ほしい）
-    verdict: false-positive
-    note: an interview in four question sections; even sections are normal for the form
-  - rule: ai-generated-composite
-    line: 7
-    text: ――製造から営業への異動は、ご自身の希望だったんですか？
-    message: 「section-length-uniformity、no-em-dash」が同じ文書にそろっています（2 種、2 種から）
-    verdict: false-positive
-    note: "both inputs are judged false-positive (section-length-uniformity 1: an interview's even question sections; no-em-dash 7: ―― marks the interviewer); the invented-detail miss on line 11 is a different reason; given by pending lab PRs"
-  - rule: no-em-dash
-    line: 7
-    text: ――製造から営業への異動は、ご自身の希望だったんですか？
-    message: 1000 字あたり 12 個のダッシュがあります（3 個まで）
-    verdict: false-positive
-    note: ―― marks the interviewer's question, the standard notation of a Japanese interview article
+  - rule: honesty-marker
+    line: 9
+    text: 正直、最初は断ろうかと思ったんです。人と話すのが得意なほうではないし、スーツを着
+    message: 「正直、」と前置きしています
+    verdict: unjudged
   - rule: test:invented-detail
     line: 11
     what: 上司の言葉、客の言葉（19行）、工場の言葉（27行）をメモにないまま本人の発言として作っている

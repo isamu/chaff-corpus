@@ -1,27 +1,9 @@
 id: chrg-111hhrg55126-intl-affairs-budget-fy2011
 chaff: 0.36.0
 findings:
-  - rule: name-variant
-    line: 85
-    text: McCAUL, Texas
-    message: '"McCAUL" is written "McCaul" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: the committee roster sets surnames in capitals; McCAUL is McCaul in that style
-  - rule: orthographic-variant
-    line: 85
-    text: McCAUL, Texas
-    message: '"McCAUL" here, where the document usually writes "McCaul" (1 of 8)'
-    verdict: false-positive
-    note: the committee roster sets surnames in capitals; McCAUL is McCaul in that style
   - rule: spelling-consistency
     line: 3845
     text: acknowledgement of the facts related to
     message: '"acknowledgement" here, where the document usually spells it "acknowledgment" (1 of 24)'
     verdict: correct
     note: acknowledgement here, acknowledgment elsewhere
-  - rule: unknown-word
-    line: 4287
-    text: bioterrorist threat, to
-    message: '"bioterrorist" is not in the dictionary; did you mean "bioterrorism"?'
-    verdict: false-positive
-    note: bioterrorist is an English word (the bioterrorist threat)

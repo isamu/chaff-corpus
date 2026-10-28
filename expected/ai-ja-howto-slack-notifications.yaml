@@ -18,14 +18,14 @@ findings:
     message: 文の長さのばらつきが 28%（30% 以上ほしい）
     verdict: correct
     note: even sentence lengths throughout (catalog J13)
-  - rule: heading-numbering-mix
-    line: 51
-    text: "## まとめ"
-    message: 見出し「まとめ」だけ番号がありません（兄弟の見出しは「1. 通知の対象を「メンションとDMだけ」にする」など 5 個が番号付き）
-    verdict: false-positive
-    note: the summary is not one of the five numbered settings
+  - rule: ai-generated-composite
+    line: 53
+    text: まずは1の基本設定から試してみてください。それだけでも、かなり静かになるはずです
+    message: 「section-length-uniformity、sentence-rhythm、closing-cliche」が同じ文書にそろっています（3 種、2 種から）
+    verdict: unjudged
   - rule: closing-cliche
     line: 53
-    what: 「まずは〜試してみてください。それだけでも、かなり静かになるはずです。」
-    verdict: missed
-    note: catalog J26 (closing promise 〜はず)
+    text: まずは1の基本設定から試してみてください。それだけでも、かなり静かになるはずです
+    message: 「試してみてください」で締めています
+    verdict: correct
+    note: catalog J26 (closing promise 〜はず); found by chaffjs 0.40.0

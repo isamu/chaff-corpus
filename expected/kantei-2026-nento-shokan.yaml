@@ -21,15 +21,3 @@ findings:
     text: また、ＡＳＥＡＮ関連首脳会議、ＡＺＥＣ首脳会合、日米首脳会談、ＡＰＥＣ首脳会議、
     message: この文は 114 文字あります（100 文字まで）
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 34
-    text: 「希望」を抱いてほしい。今の時代をお預かりしている私達には、「日本列島を、強く豊
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: wishes set in plain form on purpose (信じてほしい。抱いてほしい。) inside a です/ます message
-  - rule: no-mixed-desumasu
-    line: 34
-    text: 彼らに、日本の未来を信じてほしい。「希望」を抱いてほしい。今の時代をお預かりして
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: wishes set in plain form on purpose (信じてほしい。抱いてほしい。) inside a です/ます message

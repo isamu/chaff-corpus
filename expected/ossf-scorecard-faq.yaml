@@ -34,9 +34,10 @@ findings:
     verdict: correct
   - rule: undefined-acronym
     line: 94
-    what: NPM in link text, never expanded
-    verdict: missed
-    note: NPM (the npm package registry) is never explained to the FAQ's reader; a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs
+    text: NPM packages](https://github.blog/2022-0
+    message: '"NPM" is used without an expansion (1 such acronym)'
+    verdict: correct
+    note: NPM (the npm package registry) is never explained to the FAQ's reader; a name never expanded; organisation and product names stay reported by the maintainer's decision (a name the readers know is listed under names in chaff.yaml, the rule's how_to_fix); found by pending lab PRs; found by chaffjs 0.40.0
   - rule: fact-conflict
     line: 119
     text: 4    |

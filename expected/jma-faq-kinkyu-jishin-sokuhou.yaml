@@ -42,6 +42,11 @@ findings:
     text: テレビやラジオ以外の入手方法としては、まず、携帯端末があります。携帯端末への一斉
     message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 27
+    text: NTT ドコモ、ａｕ、ソフトバンク、ワイモバイル、楽天モバイルがあります。他の手
+    message: 「NTT」が説明なしで使われています（説明のない略語 1 個）
+    verdict: unjudged
   - rule: orthographic-variant
     line: 31
     text: 又は民間の情報配信会社からも、専用の受信端末を用意することで、各会社、家庭等でも

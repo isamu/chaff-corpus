@@ -42,12 +42,6 @@ findings:
     message: 「は」で出した主題から述語まで 130 字あります（80 字まで）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 67
-    text: ウェブスタックは階層構造であるため、これらの処理のほとんどはトランスポート層、ネ
-    message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
-    verdict: false-positive
-    note: the wa is inside a tame clause whose own predicate follows at once; the main clause has its own wa-topic
-  - rule: topic-predicate-distance
     line: 69
     text: これらは透過的である場合、すなわち受信したリクエストをいかなる場合も変更せずに転
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
@@ -58,12 +52,6 @@ findings:
     message: 「より低い」は、何と比べているかが書かれていません
     verdict: false-positive
     note: '"a lower layer" than HTTP proxies, named in the sentence before'
-  - rule: list-item-form-mix
-    line: 215
-    text: ステータスメッセージ。ステータスコードの簡単な説明ですが、権威はありません。
-    message: 「ステータスメッセージ。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: the item before has the same shape (a noun, then a sentence), so the list is not mixed as described
   - rule: repeated-sentence-ending
     line: 224
     text: インターフェイスを使用して、クライアントは接続を開いてイベントハンドラーを確立し

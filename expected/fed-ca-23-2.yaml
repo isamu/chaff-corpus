@@ -1,12 +1,6 @@
 id: fed-ca-23-2
 chaff: 0.37.0
 findings:
-  - rule: proper-noun-density
-    line: 5
-    text: BOARD OF GOVERNORS
-    message: 311 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: the letterhead and agency names make the density in a short regulatory letter
   - rule: email-subject-length
     line: 17
     text: "SUBJECT:"

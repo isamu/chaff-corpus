@@ -1,11 +1,6 @@
 id: fr-2026-20426-prehospital-blood-rfi
 chaff: 0.36.0
 findings:
-  - rule: proper-noun-density
-    line: 3
-    text: Docket No. NHTSA-2026-2113]
-    message: 250 proper nouns per 1000 words (limit 200)
-    verdict: unjudged
   - rule: invisible-character
     line: 31
     text: ​privacy. ( printed page 63651) Anyone i
@@ -36,9 +31,3 @@ findings:
     message: '"3." follows "3." (expected number 4)'
     verdict: correct
     note: "the questions are numbered 1, 2, 3, 3, 4: question 3 appears twice"
-  - rule: list-item-form-mix
-    line: 85
-    text: Do you have any additional comments rega
-    message: '"Do you have any additional comments regarding the nationwide implementation of prehospital blood transfusion programs?" opens with a verb; the other items in this list open with a noun phrase (1 of 5)'
-    verdict: false-positive
-    note: every item of the list is a question; 'Do you have ...?' is the same form as 'What ...?'

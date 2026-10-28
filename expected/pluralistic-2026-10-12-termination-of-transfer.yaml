@@ -7,12 +7,6 @@ findings:
     message: This sentence runs 50 words (limit 45)
     verdict: correct
     note: a 50-word sentence
-  - rule: unknown-word
-    line: 11
-    text: synch a song to an advertisement, or the
-    message: '"synch" is not in the dictionary; did you mean "sync"?'
-    verdict: false-positive
-    note: '"synch" is an accepted spelling of sync in licensing usage (synch rights)'
   - rule: numeral-sentence-start
     line: 13
     text: 50 years later, media companies – our bo
@@ -21,14 +15,16 @@ findings:
     note: the sentence opens with the numeral 50, which style guides spell out
   - rule: oxford-comma-consistency
     line: 13
-    what: '"last longer, cover more works and restrict more uses" without the serial comma'
-    verdict: missed
-    note: a real three-item list; the post puts the serial comma in three other lists (a novel, … or the right; Big Tech, Big Media, and creative labor markets; groceries …, braces …, and a roof), so this is the minority; found by pending lab PRs
+    text: For 50 years, governments have expanded
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+    note: a real three-item list; the post puts the serial comma in three other lists (a novel, … or the right; Big Tech, Big Media, and creative labor markets; groceries …, braces …, and a roof), so this is the minority; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: oxford-comma-consistency
     line: 15
-    what: '"five publishers, four studios, three labels, two app companies and a single ebook/audiobook company" without the serial comma'
-    verdict: missed
-    note: a real list, the second of the two without the serial comma against three with it; found by pending lab PRs
+    text: In a world of five publishers, four stud
+    message: This list punctuates differently from the rest (2 in this document)
+    verdict: correct
+    note: a real list, the second of the two without the serial comma against three with it; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: max-sentence-length
     line: 21
     text: From reader feedback, I can tell you tha
@@ -59,12 +55,6 @@ findings:
     message: '"no-brainer" is a cliché'
     verdict: correct
     note: '"no-brainer" is a stock phrase'
-  - rule: max-sentence-length
-    line: 57
-    text: On the Techjess podcast, Garriott marvel
-    message: This sentence runs 54 words (limit 45)
-    verdict: false-positive
-    note: most of the sentence's length is a verbatim spoken quotation the author cannot shorten
   - rule: quote-style-consistency
     line: 57
     text: ’s a really weird United States copyrigh

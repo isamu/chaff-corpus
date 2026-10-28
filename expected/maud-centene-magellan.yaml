@@ -405,12 +405,6 @@ findings:
     text: promptly as reasonably practicable after
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: unjudged
-  - rule: numbering-gap
-    line: 73
-    text: (e)          Any portion of the Payment
-    message: '"(e)" follows "(c)" (expected number 4)'
-    verdict: false-positive
-    note: "extraction artefact: item (d) was run into the end of the previous line, so chaff does not see it"
   - rule: requirement-smell
     line: 73
     text: as needed, the Merger Consideration to b
@@ -470,11 +464,6 @@ findings:
     line: 97
     text: (f)          Company PCUs. As of the Eff
     message: This paragraph runs 12 sentences (limit 8)
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 97
-    text: (f)          Company PCUs. As of the Eff
-    message: '"(f)" follows "(b)" (expected number 3)'
     verdict: unjudged
   - rule: undefined-acronym
     line: 97
@@ -584,11 +573,6 @@ findings:
     text: Affiliate (except for any Company Entity
     message: '"Affiliate" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: numbering-gap
-    line: 161
-    text: (g)          No Company Entity has any l
-    message: '"(g)" follows "(d)" (expected number 5)'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 161
     text: SAP Statements”) or (ii) the Company Sub
@@ -645,11 +629,6 @@ findings:
     text: Section 3.9          Employee Benefit Pl
     message: This paragraph runs 10 sentences (limit 8)
     verdict: unjudged
-  - rule: numbering-gap
-    line: 201
-    text: Section 3.9          Employee Benefit Pl
-    message: '"Section 3.9" follows "Section 3.6" (expected number 7)'
-    verdict: unjudged
   - rule: undefined-term
     line: 201
     text: Internal Revenue Service and most recent
@@ -664,11 +643,6 @@ findings:
     line: 209
     text: COBRA premiums as part of a severance be
     message: '"COBRA" is used without an expansion (16 such acronyms)'
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 217
-    text: Section 3.11        Environmental Matter
-    message: '"Section 3.11" follows "Section 3.9" (expected number 10)'
     verdict: unjudged
   - rule: undefined-term
     line: 219
@@ -704,11 +678,6 @@ findings:
     line: 227
     text: Tax Returns required to be filed (taking
     message: '"Tax Returns" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
-  - rule: numbering-gap
-    line: 235
-    text: (f)          no Company Entity has been
-    message: '"(f)" follows "(a)" (expected number 2)'
     verdict: unjudged
   - rule: undefined-term
     line: 235

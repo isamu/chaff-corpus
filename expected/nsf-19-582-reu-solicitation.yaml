@@ -126,11 +126,6 @@ findings:
     text: If the proposal has an interdisciplinary
     message: This sentence runs 51 words (limit 45)
     verdict: unjudged
-  - rule: list-item-form-mix
-    line: 294
-    text: Does the project include an internationa
-    message: '"Does the project include an international component or an RET component?" opens with a verb; the other items in this list open with a noun phrase (2 of 10)'
-    verdict: unjudged
   - rule: number-style-consistency
     line: 309
     text: ten students per year. Proposals involvi
@@ -300,16 +295,6 @@ findings:
     line: 508
     text: PIs are required to use NSF's electronic
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 567
-    text: "### About The National Science Foundatio"
-    message: The heading "About The National Science Foundation" has no number, while 9 of its siblings do ("I. Introduction")
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 581
-    text: "### Privacy Act And Public Burden Statem"
-    message: The heading "Privacy Act And Public Burden Statements" has no number, while 9 of its siblings do ("I. Introduction")
     verdict: unjudged
   - rule: max-paragraph-length
     line: 583

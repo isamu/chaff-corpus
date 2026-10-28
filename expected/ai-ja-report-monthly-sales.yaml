@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 報告者と顧客名が〇〇のまま（3・22行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.40.0
   - rule: test:invented-detail
     line: 21
     what: 展示会の日程（10月8日〜10日）と株式会社〇〇様の年間保守契約（240万円）が依頼にない
@@ -17,9 +18,3 @@ findings:
     message: 「〇〇様」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
-  - rule: heading-numbering-mix
-    line: 29
-    text: "## 5. 11月の取り組み"
-    message: 見出し「5. 11月の取り組み」だけ番号がありません（兄弟の見出しは「1. 概要」など 4 個が番号付き）
-    verdict: false-positive
-    note: the heading is numbered (5.); the 11月 after the number was read as the number

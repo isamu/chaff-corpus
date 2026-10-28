@@ -1,40 +1,32 @@
 id: ai-en-review-headphones
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# Noise-Cancelling Headphones Review: Si"
-    message: "3 bold spans of emphasis: 7.2 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: "**Pros:**, **Cons:** and **Rating: 4 out of 5** are run-in headings, not emphasis"
   - rule: section-length-uniformity
     line: 1
     text: ""
     message: Section length varies by only 28% (want at least 35%)
     verdict: correct
     note: Short Version, then five feature sections of one size and a Verdict; the template product review
+  - rule: ai-generated-composite
+    line: 3
+    text: After six months of daily use, here's my
+    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
+    verdict: unjudged
   - rule: ai-tell
     line: 3
     what: "\"here's my honest take\""
     verdict: missed
     note: candidate pattern (honesty marker)
+  - rule: honesty-marker
+    line: 3
+    text: After six months of daily use, here's my
+    message: '"my honest take" flags this sentence as candid'
+    verdict: unjudged
   - rule: bold-label-list
     line: 7
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
     verdict: missed
     note: catalog E18 and E14 (bold labels, every list three items)
-  - rule: colon-lead-in
-    line: 7
-    text: Pros:**
-    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
-  - rule: colon-lead-in
-    line: 12
-    text: Cons:**
-    message: 4.8 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "the bold noun labels **Pros:** and **Cons:** name the two lists, not a sentence handing over to one; the only two counted; given by lab main"
   - rule: list-item-form-mix
     line: 15
     text: Call quality is average outdoors

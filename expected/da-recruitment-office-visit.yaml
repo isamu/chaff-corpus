@@ -1,16 +1,6 @@
 id: da-recruitment-office-visit
 chaff: 0.33.0
 findings:
-  - rule: list-item-form-mix
-    line: 16
-    text: 詳細は「4. 訪問予約方法」を必ずご覧ください。
-    message: 「詳細は「4. 訪問予約方法」を必ずご覧ください。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（9 項目のうち 2 項目）
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 28
-    text: ※国家公務員採用一般職試験（高卒者試験）の詳細は、受験案内（人事院ウェブサイト）
-    message: 「※国家公務員採用一般職試験（高卒者試験）の詳細は、受験案内（人事院ウェブサイト） をご覧ください。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（9 項目のうち 2 項目）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 34
     text: )（人事院ウェブサイト） をご覧ください。
@@ -25,11 +15,6 @@ findings:
     line: 63
     text: 予約フォームに必要事項を入力し、エントリーシートを記入・添付のうえご提出ください
     message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: unjudged
-  - rule: list-item-form-mix
-    line: 66
-    text: デジタル庁 エントリーシート（Word／40KB）
-    message: 「デジタル庁 エントリーシート（Word／40KB）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
     verdict: unjudged
   - rule: request-without-deadline
     line: 69

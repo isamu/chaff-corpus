@@ -16,18 +16,11 @@ findings:
     text: Temperatures are most comfortable in the
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
-  - rule: undefined-acronym
+  - rule: oxford-comma-consistency
     line: 35
-    text: RV fill stations are located at Black Ro
-    message: '"RV" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: RV, an everyday word for a park's visitors, needs no expansion
-  - rule: undefined-acronym
-    line: 39
-    text: WIFI can be accessed at the Black Rock V
-    message: '"WIFI" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: WIFI (Wi-Fi) is a trade name, not an acronym with an expansion
+    text: Water jugs can be filled at the West Ent
+    message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
   - rule: heading-level-skip
     line: 51
     text: "#### Where can I purchase a pass?"
@@ -114,9 +107,3 @@ findings:
     text: "are comprised of 15 tribes: Agua Calient"
     message: '"are comprised of" is nonstandard in formal writing; write "comprise"'
     verdict: correct
-  - rule: orthographic-variant
-    line: 253
-    text: Twenty-Nine Palms Band of Mission Indian
-    message: '"Twenty-Nine" here, where the document usually writes "Twentynine" (1 of 5)'
-    verdict: false-positive
-    note: Twenty-Nine Palms Band of Mission Indians is a tribe's official name; the city is Twentynine Palms

@@ -18,12 +18,6 @@ findings:
     message: 一文に読点が 8 個あります（6 個まで）
     verdict: false-positive
     note: 15 個の天気の名前を読点で並べた列挙
-  - rule: orthographic-variant
-    line: 291
-    text: 曇雨天
-    message: 「曇」と書いています（この文書はふつう「曇り」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 見出し語「曇雨天」は一語の用語
   - rule: unbalanced-bracket
     line: 321
     text: ”を用いる。

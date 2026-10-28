@@ -57,15 +57,10 @@ findings:
     note: a GDS staff post; question headings and lists of three are the blog's house form
   - rule: colon-lead-in
     line: 19
-    what: "\"In the weeks that have followed the soft launch:\" hands over to a list; each of the post's four body sections does it"
-    verdict: missed
-    note: "found by lab main"
-  - rule: rule-of-three
-    line: 21
-    text: "- more than 7,800 people have used GOV.U"
-    message: 3 of 4 lists have exactly three items (70% allowed)
-    verdict: false-positive
-    note: lists of three reported facts; the count is the content
+    text: In the weeks that have followed the soft
+    message: 5 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: quote-style-consistency
     line: 25
     text: "'re seeing the same level of performance"
@@ -74,14 +69,16 @@ findings:
     note: straight apostrophe in "we're" where the post mostly uses curly ones
   - rule: colon-lead-in
     line: 31
-    what: "\"... such as:\" hands over to a list; each of the post's four body sections does it"
-    verdict: missed
-    note: "found by lab main"
+    text: During our testing, GOV.UK Chat has prov
+    message: 5 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 43
-    what: "\"people told us they valued:\" hands over to a list; each of the post's four body sections does it"
-    verdict: missed
-    note: "found by lab main"
+    text: In user research sessions, people told u
+    message: 5 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: contraction-consistency
     line: 51
     text: The insights we are gaining are shaping
@@ -90,9 +87,10 @@ findings:
     note: "\"we are gaining\" here, \"we're\" elsewhere in the post"
   - rule: colon-lead-in
     line: 55
-    what: "\"designed with strong safeguards:\" hands over to a list; each of the post's four body sections does it"
-    verdict: missed
-    note: "found by lab main"
+    text: That’s why GOV.UK Chat has been designed
+    message: 5 colon lead-ins to lists per 1000 words (limit 4)
+    verdict: correct
+    note: found by lab main; found by chaffjs 0.40.0
   - rule: hyphen-as-dash
     line: 63
     text: " - GOV.UK Chat lets people know they sho"

@@ -7,9 +7,3 @@ findings:
     message: 「秋篠宮皇嗣同妃両殿下」は漢字が 10 字続いています（8 字まで）
     verdict: false-positive
     note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
-  - rule: max-kanji-continuous
-    line: 13
-    text: 個性的で愛くるしい姿で博覧会を成功に導いた「ミャクミャク」に、心からの感謝を込め
-    message: 「内閣総理大臣感謝状」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split

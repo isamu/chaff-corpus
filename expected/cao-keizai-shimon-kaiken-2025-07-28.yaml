@@ -1,16 +1,6 @@
 id: cao-keizai-shimon-kaiken-2025-07-28
 chaff: 0.36.0
 findings:
-  - rule: fullwidth-alnum-consistency
-    line: 22
-    text: 5,500億ドルの投融資計画で、JBIC（国際協力銀行）など日本の政策金融機関が
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 26
-    text: 5,500億ドル規模の出資、融資、融資保証を提供可能にすることで合意しております
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 32
     text: 私は本年１月の経済演説において、地元鳥取県の若者やシングルマザーの方々からの差し
@@ -32,11 +22,6 @@ findings:
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
-    line: 38
-    text: 1,500円にするにはあとどれくらい必要かということもありますが、そういう水準は
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
     line: 42
     text: 7月21日の記者会見で、「成長への投資を加速し、賃上げを進めていくことがまず基本
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。81 箇所のうち 19 箇所が違う）
@@ -50,11 +35,6 @@ findings:
     line: 48
     text: （答）ご案内のとおり、私は全世代型社会保障構築担当でございますが、数百項目に及ぶ
     message: 一文に読点が 7 個あります（6 個まで）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 71
-    text: 1,500円以上の実現をお願いしたい。
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。81 箇所のうち 19 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 81

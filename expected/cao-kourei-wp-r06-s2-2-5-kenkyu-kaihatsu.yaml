@@ -1,12 +1,6 @@
 id: cao-kourei-wp-r06-s2-2-5-kenkyu-kaihatsu
 chaff: 0.36.0
 findings:
-  - rule: topic-predicate-distance
-    line: 11
-    text: 科学技術の研究開発は、高齢化に伴う課題の解決に大きく寄与するものであることから、
-    message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
-    verdict: false-positive
-    note: 「研究開発は」の述語「寄与するものである」はすぐ後にあり、文末の「図る」は別の主語（国）のもの
   - rule: nominalization
     line: 13
     text: 整備を行う。あわせて、高齢社会の課題を諸外国と共有し、連携して取組を進める。

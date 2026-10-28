@@ -1,6 +1,11 @@
 id: ai-ja-minutes-pta
 chaff: 0.36.0
 findings:
+  - rule: unfilled-placeholder
+    line: 6
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: test:invented-detail
     line: 10
     what: 「天気にも恵まれ」「昨年より3万円ほど多く」と副校長の発言（14行）、選考委員会・駐輪場の件（30・31行）が依頼にない

@@ -1,12 +1,6 @@
 id: osaka-kyoiku-koushi-boshu
 chaff: 0.34.0
 findings:
-  - rule: date-format-consistency
-    line: 3
-    text: 2026年10月7日
-    message: 日付「2026年10月7日」の書き方が、この文書のほかの日付（「令和8年10月25日」など 4 箇所）と違います
-    verdict: false-positive
-    note: the CMS's page-date stamp (西暦) under the title, not the author's dates; the body is consistently 和暦
   - rule: date-without-year
     line: 21
     text: 10月25日を除く）は事前予約なしの当日参加も可能です。大阪市の講師に興味があり
@@ -97,30 +91,10 @@ findings:
     text: または採用までに取得見込みの方
     message: 「または」と書いています（この文書はふつう「又は」と書く語です。13 箇所のうち 3 箇所が違う）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 120
-    text: の防止等のための措置に関する法律）｜こども家庭庁
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 124
     text: ・本業務へ従事するに当たっては、（令和8年12月25日までに施行予定の）学校設置
     message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 124
-    text: の防止等のための措置に関する法律（令和6年法律第69号。以下「こども性暴力防止法
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 158
-    text: 二　教育職員免許法第十条第一項第二号又は第三号に該当することにより免許状がその効
-    message: 「教育職員免許法第十条第一項第二号又」は漢字が 17 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 160
-    text: 三　教育職員免許法第十一条第一項から第三項までの規定により免許状取上げの処分を受
-    message: 「教育職員免許法第十一条第一項」は漢字が 14 字続いています（10 字まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 170

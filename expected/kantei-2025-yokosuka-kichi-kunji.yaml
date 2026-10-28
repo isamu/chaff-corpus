@@ -55,24 +55,6 @@ findings:
     message: この文は 102 文字あります（100 文字まで）
     verdict: correct
     note: 102 字の一文
-  - rule: unqualified-superlative
-    line: 19
-    text: そうであるだけに、最高の栄誉が与えられてしかるべきものであります。そうであれば、
-    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: 「最高の栄誉が与えられてしかるべき」は訓示の中のあるべき姿の言明で、比べて確かめる主張ではない
-  - rule: unqualified-superlative
-    line: 19
-    text: そうであれば、同時に最高の栄誉に対応する最高の規律が求められなければなりません。
-    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: 「最高の栄誉に対応する最高の規律」は自衛隊に求めるあるべき姿の言明で、比べて確かめる主張ではない
-  - rule: unqualified-superlative
-    line: 19
-    text: 自衛隊とは最高の栄誉が与えられなければなりません。国家の独立を守る組織であります
-    message: 「最高」に比べる相手がありません（そういう言い方が 4 箇所）
-    verdict: false-positive
-    note: 「最高の栄誉が与えられなければなりません」はあるべき姿の言明で、比べて確かめる主張ではない
   - rule: repeated-sentence-ending
     line: 20
     text: 国防の最前線に立ち、全身全霊をかけて任務を遂行する諸官の努力が我が国の抑止力であ

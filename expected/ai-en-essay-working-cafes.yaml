@@ -1,49 +1,18 @@
 id: ai-en-essay-working-cafes
 chaff: 0.36.0
 findings:
-  - rule: bold-emphasis
-    line: 1
-    text: "# In defense of working from cafés (sort"
-    message: "4 bold spans of emphasis: 10.7 per 1000 words (limit 6)"
-    verdict: false-positive
-    note: the bold is the lead sentence of each item of one list (the bold-label shape with a full stop, catalog E18), not emphasis scattered mid-sentence through the text
-  - rule: contrast-framing
-    line: 5
-    text: Moving to a café doesn't make me more pr
-    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
-    verdict: false-positive
-    note: "a real doesn't-X-it-Y frame (catalog E12), but the only one: the other two lab main counts (lines 11 and 18) are not frames, so the share is one sentence in forty, and the rule's why and not_flagged say one or two contrasts are not a pile-up and are not reported; given by lab main"
   - rule: bold-label-list
     line: 11
     what: the etiquette rules as "- **Buy something every couple of hours.**" …
     verdict: missed
     note: catalog E18 (bold labels, en)
-  - rule: contrast-framing
-    line: 11
-    text: Not just one coffee for the whole day. A
-    message: '"not just" and other contrast frames: 7.5% of sentences (limit 6%)'
-    verdict: false-positive
-    note: "the etiquette rule's own clarification (one latte all day is the complaint quoted on line 3), not a frame knocking down an X nobody said; given by lab main"
-  - rule: list-item-form-mix
-    line: 12
-    text: No calls.** If I have a call, I go home
-    message: '"No calls." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
-    verdict: false-positive
-    note: a list of house rules; "No calls." is the natural form of a rule
+  - rule: honesty-marker
+    line: 18
+    text: And honestly? I've ended up knowing the
+    message: '"honestly?" flags this sentence as candid'
+    verdict: unjudged
   - rule: q-fragment-answer
     line: 18
     what: '"And honestly?"'
     verdict: missed
     note: candidate pattern (honesty marker), in a casual request; also a question answered by itself (E34)
-  - rule: unknown-word
-    line: 18
-    text: barista knows my order, I know about her
-    message: '"barista" is not in the dictionary; did you mean "arista"?'
-    verdict: false-positive
-    note: barista is an ordinary English word
-  - rule: contrast-framing
-    line: 18
-    text: The barista knows my order, I know about
-    message: "\"don't\" and other contrast frames: 7.5% of sentences (limit 6%)"
-    verdict: false-positive
-    note: "a plain negative in narration (when I didn't come in for two weeks), no contrast at all; given by lab main"

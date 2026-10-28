@@ -1,12 +1,6 @@
 id: fed-sr-26-7
 chaff: 0.34.0
 findings:
-  - rule: proper-noun-density
-    line: 7
-    text: BOARD OF GOVERNORS
-    message: 336 proper nouns per 1000 words (limit 200)
-    verdict: false-positive
-    note: a short regulatory letter whose subject is the agencies themselves; the letterhead and agency names make the density
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
@@ -38,12 +32,6 @@ findings:
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 24 words (limit 18)
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 37
-    text: Joint Statement on Community Banks' Enga
-    message: This sentence runs 19 words (limit 18)
-    verdict: false-positive
-    note: the attachment's title with a parenthetical cross-reference, not a sentence of the letter
   - rule: heading-level-skip
     line: 39
     text: "##### Notes:"

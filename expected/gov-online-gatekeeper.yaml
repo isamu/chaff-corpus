@@ -49,36 +49,12 @@ findings:
     message: 「集中したり、物事を決めたりするのが困難」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（10 項目のうち 1 項目）
     verdict: correct
     note: 文で終わる症状の中に「〜のが困難」の名詞止め
-  - rule: missing-final-period
-    line: 130
-    text: る
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
-    verdict: false-positive
-    note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
-  - rule: missing-final-period
-    line: 143
-    text: る
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
-    verdict: false-positive
-    note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
   - rule: list-item-form-mix
     line: 147
     text: 話せる環境づくり
     message: 「話せる環境づくり」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（4 項目のうち 1 項目）
     verdict: correct
     note: 「〜を伝える」「〜否定しない」の中に「話せる環境づくり」「ねぎらいの言葉を」が混ざる
-  - rule: missing-final-period
-    line: 155
-    text: す
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。33 段落のうち 4 段落）
-    verdict: false-positive
-    note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
-  - rule: missing-final-period
-    line: 165
-    text: る
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。34 段落のうち 5 段落）
-    verdict: false-positive
-    note: 役割の見出しの下の一行の要約（標語）で、ほかの役割の要約と同じ形
   - rule: missing-final-period
     line: 183
     text: す

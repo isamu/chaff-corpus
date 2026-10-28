@@ -13,12 +13,6 @@ findings:
     message: This sentence runs 46 words (limit 40)
     verdict: correct
     note: the sentence is over 40 words as stated
-  - rule: unknown-word
-    line: 38
-    text: mockup or prototype of a sign-up process
-    message: '"mockup" is not in the dictionary; did you mean "cockup"?'
-    verdict: false-positive
-    note: "'mockup' is a common design word, not a misspelling"
   - rule: contraction-consistency
     line: 48
     text: If you do not already have weekly or biw
@@ -37,12 +31,6 @@ findings:
     message: '"end result" says the same thing twice'
     verdict: correct
     note: "'end result' says result twice"
-  - rule: comparative-without-baseline
-    line: 70
-    text: more predictable, and more frequent depl
-    message: '"more predictable" does not say what it is compared with'
-    verdict: false-positive
-    note: the baseline is the manual deployment the sentence replaces (a pipeline 'standardizes deployment')
   - rule: cliche
     line: 76
     text: Last but not least least, use automated
@@ -69,6 +57,7 @@ findings:
     note: eight sentences in one paragraph, as stated
   - rule: unqualified-superlative
     line: 120
-    what: '"It is the best way to win over well-meaning people"'
-    verdict: missed
-    note: a claimed best with nothing to compare against, not a sought best or a set phrase; found by pending lab PRs
+    text: It is the best way to win over well-mean
+    message: '"the best" has nothing to compare against (1 such claim)'
+    verdict: correct
+    note: a claimed best with nothing to compare against, not a sought best or a set phrase; found by pending lab PRs; found by chaffjs 0.40.0

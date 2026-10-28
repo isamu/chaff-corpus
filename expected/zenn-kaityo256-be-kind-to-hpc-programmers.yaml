@@ -1,12 +1,6 @@
 id: zenn-kaityo256-be-kind-to-hpc-programmers
 chaff: 0.36.0
 findings:
-  - rule: no-mixed-desumasu
-    line: 11
-    text: "Q: HPCプログラマの書くコードってなんで古臭いの？"
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: "冒頭の問い（Q: …古臭いの？）は読者の声を口語で引いたもので、本文の調子の混在ではない"
   - rule: orthographic-variant
     line: 191
     text: 様に修正するのは、よほど慣れたプログラマでないと難しいでしょう。そもそもホットス
@@ -25,24 +19,12 @@ findings:
     message: 「おきる」と書いています（この文書はふつう「起きる」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「問題はおきない」だけ平仮名で、ほかは「起きる」と書いている
-  - rule: no-mixed-desumasu
-    line: 347
-    text: しかし、これが数万行もあるコードの一部だったら？性能劣化の原因がranged-b
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: 「…だったら？」は修辞の問いかけで、意図した言い切り
   - rule: max-paragraph-length
     line: 353
     text: 私が京で最も苦労したのは、「全く同じコードがflat-MPIとハイブリッド実行で
     message: この段落は 6 文あります（5 文まで）
     verdict: correct
     note: 六文の段落、述べたとおり
-  - rule: no-mixed-desumasu
-    line: 371
-    text: わかるかっ！！！
-    message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: false-positive
-    note: 「わかるかっ！！！」は感嘆の独立した一言で、意図した口語
   - rule: orthographic-variant
     line: 379
     text: ひどい状態だったように思います。ただし、その時には私はすぐに諦めてFortran

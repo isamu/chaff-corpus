@@ -1,18 +1,6 @@
 id: chrg-119hhrg64107-exim-bank-oversight-2026
 chaff: 0.36.0
 findings:
-  - rule: unknown-word
-    line: 1043
-    text: ahold of me, so you all
-    message: '"ahold" is not in the dictionary; did you mean "acold"?'
-    verdict: false-positive
-    note: '"ahold" is a standard colloquial word (get ahold of)'
-  - rule: name-variant
-    line: 1591
-    text: Texan,
-    message: '"Texan" is one letter away from "Texas", which the document uses more than once'
-    verdict: false-positive
-    note: '"Texan" is the demonym, not a misspelling of Texas'
   - rule: absolute-exception
     line: 1665
     text: Now, I must say, we are not always cheap

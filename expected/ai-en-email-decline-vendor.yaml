@@ -7,14 +7,14 @@ findings:
     message: This sentence runs 24 words (limit 18)
     verdict: correct
     note: 24 words giving the reason; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
-  - rule: test:invented-detail
-    line: 9
-    what: '"if the contract comes up again in 2028" is not in the request'
-    verdict: missed
-    note: catalog B01 (invented detail)
   - rule: max-sentence-length
     line: 9
     text: If our budget changes, or if the contrac
     message: This sentence runs 20 words (limit 18)
     verdict: correct
     note: 20 words, an offer; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
+  - rule: test:invented-detail
+    line: 9
+    what: '"if the contract comes up again in 2028" is not in the request'
+    verdict: missed
+    note: catalog B01 (invented detail)

@@ -1,10 +1,6 @@
 id: jstage-jniph-74-2-157-heat-policy
 chaff: 0.34.0
 findings:
-  - rule: max-kanji-continuous
-    line: 19
-    sha256: 34a7c1ab1a0f779b706c83bf53008c2791620173ffcac3130f834f87cb0d64bb
-    verdict: unjudged
   - rule: latin-spacing
     line: 39
     sha256: 5416dfbdab080a92e6e074ea9b85e31ead4c7d1ea8be6d9e8ed40b1f166abf8c
@@ -16,14 +12,6 @@ findings:
   - rule: latin-spacing
     line: 41
     sha256: b8976672872d3e40ec9f44f2c94401e882628e106903f23cbbed1310daae047c
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 47
-    sha256: 3fb47125ecdcbe13d6d8efca1e372cf3bba6cf9f1959d73172e9b89a913fe7a6
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 47
-    sha256: 5db824ae4dfdf8698d3a53328944e4169d9de0386c650db2a1602003795fff95
     verdict: unjudged
   - rule: latin-spacing
     line: 51
@@ -77,17 +65,9 @@ findings:
     line: 111
     sha256: a0999341f15d66e430338dc0d2ca036bdde73ab2b148567c7055003c6499c977
     verdict: unjudged
-  - rule: date-format-consistency
-    line: 151
-    sha256: 2dc542a82747cb2ad7aece65b34c691715688362acaf714749a12b6c44c1af26
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 171
     sha256: 9a0e68682bc810be44b4347c9e5fd98658d8e0b8eed2922e640ec5536f9ac283
-    verdict: unjudged
-  - rule: date-format-consistency
-    line: 173
-    sha256: 9e69436d9be018cd033fa5b3fd0099ac4817e2429f7832f3890c450d7ca02fa3
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 173

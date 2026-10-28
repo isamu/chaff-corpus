@@ -21,11 +21,6 @@ findings:
     text: ）等に留意しており、今後も、M&amp;Aを推進し、より一層の事業拡大を図ってま
     message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: １【経営方針、経営環境及び対処すべき課題等】文中の将来に関する事項は、本書提出日
-    message: この段落は 36 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: (3)中長期的な会社の経営戦略当社は、社会問題の１つである特殊詐欺の対策に有効な
@@ -70,4 +65,14 @@ findings:
     line: 1
     text: 迷惑情報フィルタ事業から得られる当社の主たる収益は、通信キャリアが提供するスマー
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: NTT東日本及びNTT西日本の代理店・特約店を通じ、ビジネスフォン向けフィルタサ
+    message: 「NTT」が説明なしで使われています（説明のない略語 2 個）
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 1
+    text: SIP／VoIP技術をベースとした製品の開発等を行っている株式会社ageetを当
+    message: 「SIP」が説明なしで使われています（説明のない略語 2 個）
     verdict: unjudged

@@ -1,6 +1,11 @@
 id: ai-ja-proposal-office-plants
 chaff: 0.36.0
 findings:
+  - rule: unfilled-placeholder
+    line: 3
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: test:invented-detail
     line: 12
     what: 「先月の雑談アンケートでも…という声がいくつか出ていました」が依頼にない

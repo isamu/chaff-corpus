@@ -1,16 +1,6 @@
 id: osaka-kodomo-katei-jidou-soudanin
 chaff: 0.34.0
 findings:
-  - rule: date-format-consistency
-    line: 3
-    text: 2026年10月13日
-    message: 日付「2026年10月13日」の書き方が、この文書のほかの日付（「令和9年1月1日」など 3 箇所）と違います
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 33
-    text: ""
-    message: 「業務内容」の節に数値もコードもリンクもありません（そういう節が 3/14）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 37
     text: また、児童虐待防止に関する業務（緊急対応含む）、要保護児童等の調査・評価（アセス
@@ -55,11 +45,6 @@ findings:
     line: 110
     text: の間の報酬額の例示です。今後、給与改定等により変更される場合があります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 122
-    text: ""
-    message: 「服務」の節に数値もコードもリンクもありません（そういう節が 3/14）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 164
@@ -135,9 +120,4 @@ findings:
     line: 205
     text: 郵便等の場合は「家庭児童相談員（会計年度任用職員）任用候補者登録試験採用申込書等
     message: 「任用候補者登録試験採用申込書等在中」は漢字が 17 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 217
-    text: ""
-    message: 「その他」の節に数値もコードもリンクもありません（そういう節が 3/14）
     verdict: unjudged

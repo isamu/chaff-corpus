@@ -2,16 +2,6 @@ id: gutenberg-whitman-leaves-of-grass
 chaff: 0.33.0
 findings:
   - rule: name-variant
-    line: 1492
-    text: Texan ranch,
-    message: '"Texan" is one letter away from "Texas", which the document uses more than once'
-    verdict: unjudged
-  - rule: name-variant
-    line: 3301
-    text: Flakes of breast-muscle, pliant backbone
-    message: '"Flakes" is one letter away from "Flames", which the document uses more than once'
-    verdict: unjudged
-  - rule: name-variant
     line: 4148
     text: Stain every page, stain every song I sin
     message: '"Stain" is one letter away from "Spain", which the document uses more than once'

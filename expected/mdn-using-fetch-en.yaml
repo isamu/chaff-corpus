@@ -1,60 +1,15 @@
 id: mdn-using-fetch-en
 chaff: 0.34.0
 findings:
-  - rule: colon-lead-in
-    line: 46
-    sha256: ea73c8a10e271746b3b7a51eadf016d4823a69842704b277e2c0c02dbfbbbfe1
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
   - rule: contraction-consistency
     line: 71
     sha256: 34dbfb4d2b4ce6fddb4bb7a1bdb9e668a53601654e2e99e5ab6dbc642db6cd20
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 83
-    sha256: eb768a7b45c9f5570040ca21d245842d38efa88dfeefbce20cf0c351fc82e05c
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
   - rule: max-sentence-length
     line: 197
     sha256: 2a98866d7b6dee1555b2c1f971f4585658ec0982cda293bff60b9d2a8dcedc9d
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 207
-    sha256: d111eea7769f66223026d922f85386b4d60f4de38abec18558898771d20b0600
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
-  - rule: colon-lead-in
-    line: 213
-    sha256: 9599c5f26aa43ff6fbcc21b514994da833be58db521995a4cd2ab3a584a13aca
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
-  - rule: colon-lead-in
-    line: 223
-    sha256: f119d69eb89f63ac454b21480405d3c9b130f68ef3399401f9de3b5a6daa2481
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
-  - rule: colon-lead-in
-    line: 365
-    sha256: 709fc78e30bccb0a1c02257988e8de7de13187d1edc9e4164235fef15910a444
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
-  - rule: colon-lead-in
-    line: 372
-    sha256: d39534dbf3c8309542b9020d13c346d87f32df3aa5e87affac82659846adc2a1
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
   - rule: which-that-consistency
     line: 382
     sha256: 17d052d8d178913a771339c95ae11aeb5ab7864114dc9f3a57090b8020c01e26
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 403
-    sha256: a30e2f25f2ce18d2c09793dea6b4ae043c7911e76bf4cc454bb6840b16bf78ff
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'
-  - rule: colon-lead-in
-    line: 540
-    sha256: c6d13d3243fcf431d0e2720866828e263599d3a1719713fbb5e7feb8c5cef4ae
-    verdict: false-positive
-    note: 'API reference documentation: each lead-in hands over a list of values, types or methods ("Real lists (steps, parts) can stay"); documentation, which the rule does not run on in the docs genre; given by lab main'

@@ -1,11 +1,6 @@
 id: soumu-hokuriku-260mhz-kentokai-1
 chaff: 0.34.0
 findings:
-  - rule: proper-noun-density
-    line: 5
-    sha256: 988123b3e90197792ab1679d688249d2edd5d011b85a8c96a44cbb5a66e0ed37
-    verdict: false-positive
-    note: a minutes page that lists its attendees by name; the names make the density
   - rule: bracket-width-consistency
     line: 29
     sha256: f1ba8703f1c13636d36f991a02ebac3cc7f51c73f33e367695844f1b41acf243

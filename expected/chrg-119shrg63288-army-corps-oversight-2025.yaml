@@ -1,12 +1,6 @@
 id: chrg-119shrg63288-army-corps-oversight-2025
 chaff: 0.36.0
 findings:
-  - rule: all-caps-shouting
-    line: 53
-    text: SHELLEY MOORE CAPITO, West Virginia, Cha
-    message: '"SHELLEY MOORE CAPITO" is written in capitals'
-    verdict: false-positive
-    note: the committee roster sets members' names in capitals by GPO convention
   - rule: redundant-expression
     line: 439
     text: funding from blue states to red States,

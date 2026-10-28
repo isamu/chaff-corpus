@@ -18,3 +18,23 @@ findings:
     what: "a one-line request answered with a full retro: what went well and badly, 40% late copy, actions and dates"
     verdict: missed
     note: catalog B01 (invented detail)
+  - rule: unfilled-placeholder
+    line: 36
+    text: "[Name] | Nov 20 |"
+    message: '"[Name]" was never filled in'
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 37
+    text: "[Name] | Nov 20 |"
+    message: '"[Name]" was never filled in'
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 38
+    text: "[Name] | Nov 27 |"
+    message: '"[Name]" was never filled in'
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 39
+    text: "[Name] | Nov 13 |"
+    message: '"[Name]" was never filled in'
+    verdict: unjudged

@@ -108,12 +108,6 @@ findings:
     message: 「不可欠です」は、中身を言わずに強調だけしています
     verdict: false-positive
     note: 「〜のためには、Ｘが不可欠です」 states a necessary condition, not empty emphasis
-  - rule: max-kanji-continuous
-    line: 94
-    text: 二〇二七年国際園芸博覧会は、日本の魅力を世界に届ける絶好の機会です。花や緑、食と
-    message: 「二七年国際園芸博覧会」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
   - rule: max-sentence-length
     line: 99
     text: ＡＸ・ＤＸの恩恵が行き渡る社会を構築するため、政府の司令塔機能を強化することで、

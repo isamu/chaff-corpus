@@ -48,12 +48,6 @@ findings:
     message: 「出来る」と書いています（この文書はふつう「できる」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「出来ない」 once against 「できる」 elsewhere
-  - rule: max-kanji-continuous
-    line: 80
-    text: 方式審査室第三担当
-    message: 「方式審査室第三担当」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the name of a JPO office (方式審査室第三担当)
   - rule: latin-spacing
     line: 118
     text: " 2715"
@@ -65,12 +59,6 @@ findings:
     text: "]"
     message: 括弧を「]」と書いています（この文書はふつう「］」。2 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: date-format-consistency
-    line: 128
-    text: 2025年4月1日]
-    message: 日付「2025年4月1日」の書き方が、この文書のほかの日付（「令和2年12月28日」など 2 箇所）と違います
-    verdict: false-positive
-    note: the site footer's update date is in the Western calendar by the site's convention; the body's dates are 令和
   - rule: unbalanced-bracket
     line: 128
     text: "]"

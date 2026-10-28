@@ -5,10 +5,6 @@ findings:
     line: 7
     sha256: 581290f124b26b899d236735fb92394ea7bc16d927b1bf293aa9526d3e813402
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 66
-    sha256: 08c216eae7d3dcd20a9722001af5822685c0d538a25eb5e5454a774d23c1ba56
-    verdict: unjudged
   - rule: orthographic-variant
     line: 76
     sha256: aa3b4a30e2e75ffe53b58bb5b46b61076f4e1981c1666f51d8d8ebf019c5144e
@@ -16,6 +12,10 @@ findings:
   - rule: topic-predicate-distance
     line: 78
     sha256: aaa8988b1aa215058c7c572d7ee1ce9ace1443f48aacb9cf2466042e6256ce07
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 210
+    sha256: af5ddea8a2152fde489275e983edb750f446e7442f92a0361fb218bf640c9855
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 212
@@ -36,8 +36,4 @@ findings:
   - rule: orthographic-variant
     line: 448
     sha256: fd06375e093fff74fb4a6c8e6f5a5f10b81d7451fcb55a8088afd880cb907361
-    verdict: unjudged
-  - rule: heading-numbering-mix
-    line: 661
-    sha256: 40ac655085a618783aa0867dd1d3238d7dd23b0576ef0baacb6b9385d1e0180a
     verdict: unjudged

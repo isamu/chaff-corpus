@@ -137,11 +137,6 @@ findings:
     text: ｡そのうえで、ユネスコ（UNESCO）と電子情報保存連合（DPC）が組織内でデジ
     message: 半角の片仮名「｡」があります（全角は「。」）
     verdict: unjudged
-  - rule: date-format-consistency
-    line: 114
-    text: 令和2年5月8日公表分から、データソースを従来の厚生労働省が把握した個票を積み上
-    message: 日付「令和2年5月8日」の書き方が、この文書のほかの日付（「2020-05-24」など 22 箇所）と違います
-    verdict: unjudged
   - rule: stray-space
     line: 115
     text: 　国内の発生状況”. 厚生労働省.

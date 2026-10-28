@@ -38,12 +38,6 @@ findings:
     text: '"the World." They allowed contact with o'
     message: The quote mark " here, where the document usually writes “” (4 of 8)
     verdict: correct
-  - rule: oxford-comma-consistency
-    line: 39
-    text: Shakers Compendium of the origin, Histor
-    message: This list punctuates differently from the rest (2 in this document)
-    verdict: false-positive
-    note: the serial comma belongs to a book title quoted in the source list, not to the article's own prose
   - rule: quote-style-consistency
     line: 39
     text: "'s Second Appearing with Biographies of"

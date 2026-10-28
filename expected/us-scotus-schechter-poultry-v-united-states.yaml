@@ -14,8 +14,10 @@ findings:
     note: the citation's closing parenthesis is missing in the text
   - rule: name-variant
     line: 23
-    what: '"National Industrial Recover Act" is one letter away from "National Industrial Recovery Act", the name the opinion uses everywhere else'
-    verdict: missed
+    text: National Industrial Recover Act; that th
+    message: '"National Industrial Recover Act" has one word a letter away from the title "National Industrial Recovery Act", which the document uses more than once'
+    verdict: correct
+    note: '"National Industrial Recover Act" is one letter away from "National Industrial Recovery Act", the name the opinion uses everywhere else; found by chaffjs 0.40.0'
   - rule: unbalanced-bracket
     line: 23
     text: (15 USCA § 703(a)(1, 2); and that the co
@@ -43,12 +45,6 @@ findings:
     message: A space before "."
     verdict: correct
     note: a stray space before the period in 'L.Ed . 446'
-  - rule: comparative-without-baseline
-    line: 37
-    text: more fundamental. It is whether there is
-    message: '"more fundamental" does not say what it is compared with'
-    verdict: false-positive
-    note: the comparison is with the question in the Panama Refining case, named in the sentence before
   - rule: max-paragraph-length
     line: 41
     text: The act does not define 'fair competitio

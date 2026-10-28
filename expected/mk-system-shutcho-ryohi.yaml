@@ -29,8 +29,10 @@ findings:
     verdict: correct
   - rule: kutoten-consistency
     line: 37
-    what: an ASCII comma between Japanese words (自家用自動車,社用車) where the document writes 、
-    verdict: missed
+    text: ",社用車並びにカーシェアを利用した出張を行った際、その運転者に対して日当を支給す"
+    message: 読点を「,」と書いています（この文書はふつう「、」。39 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: an ASCII comma between Japanese words (自家用自動車,社用車) where the document writes 、; found by chaffjs 0.40.0
   - rule: yori-as-from
     line: 65
     text: より施行する。

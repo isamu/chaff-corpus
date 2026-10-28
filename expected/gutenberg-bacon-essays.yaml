@@ -2,18 +2,6 @@ id: gutenberg-bacon-essays
 chaff: 0.36.0
 findings:
   - rule: name-variant
-    line: 1367
-    text: Romano imperio militibus; a speech of gr
-    message: '"Romano" is one letter away from "Romans", which the document uses more than once'
-    verdict: false-positive
-    note: a Latin phrase (Romano imperio) quoted in the essay; an inflected Latin word, not a variant of Romans
-  - rule: name-variant
-    line: 1685
-    text: Constantius, his other son, did little b
-    message: '"Constantius" is one letter away from "Constantinus", which the document uses more than once'
-    verdict: false-positive
-    note: Constantius and Constantinus are two different sons of Constantine, not one name spelled two ways
-  - rule: name-variant
     line: 3343
     text: Turke, soldiers, mariners', and the like
     message: '"Turke" is one letter away from "Turks", which the document uses more than once'

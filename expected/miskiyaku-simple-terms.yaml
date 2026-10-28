@@ -57,12 +57,6 @@ findings:
     text: ならびにその他既存の権利者に留保されるものとします。ただし管理者はこれらについて
     message: 「ならびに」と書いています（この文書はふつう「並びに」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: requirement-smell
-    line: 131
-    text: 等の著作権は利用者ならびにその他既存の権利者に留保されるものとします。ただし管理
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「等」/「など」 closing an enumeration in a contract is the standard drafting device for an open list
   - rule: orthographic-variant
     line: 136
     text: 事も保証しません。

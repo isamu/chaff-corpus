@@ -21,12 +21,6 @@ findings:
     text: "'s mission to protect lives, safeguard p"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
     verdict: correct
-  - rule: colon-lead-in
-    line: 31
-    text: Success stories from local NWS offices i
-    message: 4.3 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "a press release whose lists are the facts themselves (the offices' cases, the product versions by region); three caption lines just over the limit, not prose shrunk to captions; given by lab main"
   - rule: oxford-comma-consistency
     line: 39
     text: '"FIM has been a game changer when briefi'
@@ -48,15 +42,3 @@ findings:
     text: GIS applications available in multiple f
     message: '"GIS" is used without an expansion (3 such acronyms)'
     verdict: correct
-  - rule: colon-lead-in
-    line: 45
-    text: Four versions of FIM are available in ne
-    message: 4.3 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "a press release whose lists are the facts themselves (the offices' cases, the product versions by region); three caption lines just over the limit, not prose shrunk to captions; given by lab main"
-  - rule: colon-lead-in
-    line: 52
-    text: FIM services for Hawaii, Puerto Rico and
-    message: 4.3 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: "a press release whose lists are the facts themselves (the offices' cases, the product versions by region); three caption lines just over the limit, not prose shrunk to captions; given by lab main"

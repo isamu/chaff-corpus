@@ -13,12 +13,6 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。223 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「のが IIIF」 with a space, where the article writes IIIF without spaces elsewhere
-  - rule: max-kanji-continuous
-    line: 11
-    text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人
-    message: 「東京大学人文情報学拠点」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of a University of Tokyo centre
   - rule: topic-predicate-distance
     line: 11
     text: 日本国内でも2016年にはSAT大正蔵図像DBがIIIFを全面採用し、東京大学人
@@ -77,23 +71,11 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: "「世界各地のIIIF対応画像の任意の箇所」: a chain of の"
-  - rule: date-format-consistency
-    line: 41
-    text: 2020年6月3日にリリースされたIIIF Image APIとIIIF Pre
-    message: 日付「2020年6月3日」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
-    verdict: false-positive
-    note: a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes
   - rule: repeated-conjunction
     line: 47
     text: また、非互換の大きな変更もあった。ユーザ側からみて大きなものは、音声や動画を扱う
     message: 接続詞で始まる段落が 3 続いています（2 まで）
     verdict: unjudged
-  - rule: date-format-consistency
-    line: 57
-    text: 2020年11月9日に正式リリースされたMirador 3が、Presentat
-    message: 日付「2020年11月9日」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
-    verdict: false-positive
-    note: a date in running prose written 年月日; the ISO dates it is compared with are access dates in the notes
   - rule: latin-spacing
     line: 61
     text: " コンソーシアムでは、Cookbook of IIIF Recipesというサー"
@@ -106,9 +88,3 @@ findings:
     message: 句点を「．」と書いています（この文書はふつう「。」。94 箇所のうち 1 箇所が違う）
     verdict: correct
     note: a full-width period 「．」 ends one note where every other note uses 「.」
-  - rule: date-format-consistency
-    line: 152
-    text: 2019/11/14版）”. digitalnagasakiのブログ.
-    message: 日付「2019/11/14」の書き方が、この文書のほかの日付（「2020-10-23」など 31 箇所）と違います
-    verdict: false-positive
-    note: a date inside a cited blog post's title

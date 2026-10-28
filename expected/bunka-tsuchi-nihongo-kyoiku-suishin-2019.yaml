@@ -151,11 +151,6 @@ findings:
     text: "[2]国は，海外における日本語教育が持続的かつ適切に行われるよう，独立行政法人国"
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: unjudged
-  - rule: nominalization
-    line: 88
-    text: 施策を実施するため必要な法制上又は財政上の措置その他の措置を講じなければならない
-    message: 「施策を実施する」は「施策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 98
     text: "[1]政府は，日本語教育の推進に関する施策を総合的かつ効果的に推進するための基本"
@@ -170,11 +165,6 @@ findings:
     line: 106
     text: 関係行政機関の長に協議しなければならないこと。
     message: 「関係行政機関」を、195 行目の定義より前で使っています
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 107
-    text: の[3]の閣議の決定があったときは，遅滞なく，基本方針を公表しなければならないこ
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 108
@@ -455,11 +445,6 @@ findings:
     line: 189
     text: 地方公共団体は，3（（2）を除く。）の国の施策を勘案し，その地方公共団体の地域の
     message: この文は 81 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: nominalization
-    line: 189
-    text: 施策を実施するよう努めるものとすること。
-    message: 「施策を実施する」は「施策する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 195

@@ -31,12 +31,6 @@ findings:
     message: 「速やかに」では期限が決まりません。何日以内かを数で書くと、守ったかどうかを決められます
     verdict: correct
     note: 「速やかに」は期限を数で決めていない
-  - rule: requirement-smell
-    line: 83
-    text: 等をなした当事者に帰属するものとする。甲は乙に対し、甲の単独発明の実施をすること
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: missing-final-period
     line: 91
     text: る
@@ -67,24 +61,12 @@ findings:
     message: 「は」で出した主題から述語まで 238 字あります（200 字まで）
     verdict: correct
     note: 「甲および乙は」から述語まで 238 字
-  - rule: requirement-smell
-    line: 105
-    text: 等に係る成果を取り扱うものとする。
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: vague-deadline
     line: 105
     text: 速やかに通知した上で、本条の定めを適用して当該改良、改善等に係る成果を取り扱うも
     message: 「速やかに」では期限が決まりません。何日以内かを数で書くと、守ったかどうかを決められます
     verdict: correct
     note: 「速やかに」は期限を数で決めていない
-  - rule: requirement-smell
-    line: 113
-    text: 等を毀損する態様で乙名称等を使用しないこと
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: use-before-definition
     line: 129
     text: 秘密情報等が含まれていると判断したときまたは甲が本研究に関して特許出願を行うに際

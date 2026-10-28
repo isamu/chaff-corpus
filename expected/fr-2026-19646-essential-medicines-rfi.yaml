@@ -1,12 +1,6 @@
 id: fr-2026-19646-essential-medicines-rfi
 chaff: 0.36.0
 findings:
-  - rule: preamble-length
-    line: 3
-    text: Office of Management and Budget.
-    message: 9 paragraphs before the first heading (limit 2)
-    verdict: false-positive
-    note: "each paragraph sits under its own top-level heading (AGENCY:, ACTION:, SUMMARY:, ...); chaff takes the first # heading as the title and counts the sibling # sections as preamble before the first ## heading"
   - rule: max-sentence-length
     line: 11
     text: The Office of Management and Budget (OMB
@@ -87,9 +81,10 @@ findings:
     note: "'b. Feasibility Feedback—Idle Capacity' is title case like the other section headings; the em-dash compound seems to be read as different"
   - rule: undefined-acronym
     line: 81
-    what: FDA (Food and Drug Administration) is never expanded in the notice
-    verdict: missed
-    note: chaffjs 0.38.0 stops giving it once the help box's CFR and RIN leave the text; lab main gives it
+    text: FDA registration status for each molecul
+    message: '"FDA" is used without an expansion (2 such acronyms)'
+    verdict: correct
+    note: chaffjs 0.38.0 stops giving it once the help box's CFR and RIN leave the text; lab main gives it; found by chaffjs 0.40.0
   - rule: undefined-acronym
     line: 81
     text: NDC.

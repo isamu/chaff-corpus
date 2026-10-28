@@ -1,23 +1,11 @@
 id: usc-5-552-freedom-of-information
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 244
-    text: inter-agency or intra-agency memorandums
-    message: '"inter-agency" here, where the document usually writes "Interagency" (1 of 24)'
-    verdict: false-positive
-    note: "\"inter-agency\" is exemption (b)(5)'s own wording; \"Interagency\" is mostly the name \"Interagency Group\" in a note"
   - rule: nonstandard-word
     line: 444
     text: "be comprised of the following members:"
     message: '"be comprised of" is nonstandard in formal writing; write "comprise"'
     verdict: correct
-  - rule: dangling-reference
-    line: 531
-    text: §401 et seq.) of Title 50, War and Natio
-    message: '"§401" (address 401) is not in this document'
-    verdict: false-positive
-    note: a section of a Public Law in a source credit or amendment note, outside this one-section document
   - rule: use-before-definition
     line: 531
     text: Act is now classified to section 3003 of

@@ -1,12 +1,6 @@
 id: arxiv-2609-05432-companion-ai-ethics
 chaff: 0.36.0
 findings:
-  - rule: heading-level-skip
-    line: 5
-    text: "###### Abstract"
-    message: Heading "Abstract" goes from level 1 to level 6 (expected 2)
-    verdict: false-positive
-    note: arXiv's HTML marks the abstract title as h6; the paper has no skipped level
   - rule: citation-style-mix
     line: 33
     text: Parks and Floyd’s (1996) definition of i
@@ -19,12 +13,6 @@ findings:
     message: This paragraph runs 10 sentences (limit 9)
     verdict: correct
     note: a ten-sentence paragraph
-  - rule: orthographic-variant
-    line: 49
-    text: sEntiment Reasoner), a popular, open-sou
-    message: '"sEntiment" here, where the document usually writes "sentiment" (1 of 24)'
-    verdict: false-positive
-    note: '"sEntiment" is the capitalisation of the tool name VADER (Valence Aware Dictionary and sEntiment Reasoner)'
   - rule: quote-style-consistency
     line: 49
     text: '"LOL"), and slang (e.g., "meh") to emoti'
@@ -55,36 +43,12 @@ findings:
     message: '"in order to" can be said in fewer words'
     verdict: correct
     note: '"In order to analyse" can be "To analyse"'
-  - rule: contraction-consistency
-    line: 71
-    text: In analysing free-form text from a commu
-    message: "\"did not\" is written \"didn't\" elsewhere in the document"
-    verdict: false-positive
-    note: the contracted forms are only in the appendix keyword lists (search terms), not in the prose
   - rule: wordy-phrase
     line: 71
     text: To address this, we combined quantitativ
     message: '"take into consideration" can be said in fewer words'
     verdict: correct
     note: '"taken into consideration" can be "considered"'
-  - rule: heading-level-skip
-    line: 77
-    text: "##### On descriptive versus inferential"
-    message: Heading "On descriptive versus inferential statistics." goes from level 2 to level 5 (expected 3)
-    verdict: false-positive
-    note: a LaTeX run-in \paragraph heading that arXiv's HTML renders as h5
-  - rule: quote-without-source
-    line: 81
-    text: I’m heartbroken because he/she/they are
-    message: '"I’m heartbroken because he/she/they are broken." is given to someone, but no source (a link, a footnote, a reference) is given'
-    verdict: false-positive
-    note: a hypothetical illustration of what a user might say, not a quotation of someone
-  - rule: quote-without-source
-    line: 81
-    text: This doesn’t work", an intimate user say
-    message: '"This doesn’t work" is given to someone, but no source (a link, a footnote, a reference) is given'
-    verdict: false-positive
-    note: a hypothetical illustration of what a user might say, not a quotation of someone
   - rule: empty-intensifier
     line: 111
     text: It is worth noting that corporate respon
@@ -103,45 +67,9 @@ findings:
     message: '"FATE" is expanded as "Fairness, Accountability, Transparency and Explainability" here and as "fairness, accountability, transparency, and explainability" on line 7'
     verdict: correct
     note: FATE is expanded three different ways in the paper (capitals, serial comma, "explainable AI")
-  - rule: contraction-consistency
-    line: 195
-    text: The relationship between intimacy and tr
-    message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: false-positive
-    note: the contracted forms are only in the appendix keyword lists (search terms), not in the prose
-  - rule: heading-level-skip
-    line: 199
-    text: "#### Corpus"
-    message: Heading "Corpus" goes from level 2 to level 4 (expected 3)
-    verdict: false-positive
-    note: a LaTeX run-in \paragraph heading in the appendix that arXiv's HTML renders as h4
-  - rule: one-sentence-paragraph-run
-    line: 235
-    text: "(i) Functional errors (k1=50): error, bu"
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: false-positive
-    note: the appendix lists keyword sets one per paragraph; they are list items, not prose
-  - rule: spelling-consistency
-    line: 264
-    text: behavior is identical to dialogue with a
-    message: '"behavior" here, where the document usually spells it "behaviour" (2 of 22)'
-    verdict: false-positive
-    note: '"behavior" is in the title of a cited article'
   - rule: weasel-word
     line: 288
     text: Phiddian (2025) AI companion apps such a
     message: '"experts say" does not say who'
     verdict: false-positive
     note: '"experts say" is in the headline of a cited news article'
-  - rule: spelling-consistency
-    line: 292
-    text: Center for the Study of Language and Inf
-    message: '"Center" here, where the document usually spells it "centre" (2 of 22)'
-    verdict: false-positive
-    note: "\"Center\" is part of a publisher's name in a reference"
-  - rule: hyphen-as-dash
-    line: 295
-    text: " - a study of human-chatbot relationship"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the hyphen is in the title of a cited article as published

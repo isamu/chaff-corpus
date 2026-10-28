@@ -1,36 +1,18 @@
 id: fr-2026-19252-emf-rf-exposure-rfi
 chaff: 0.36.0
 findings:
-  - rule: preamble-length
-    line: 3
-    text: U.S. Department of Health and Human Serv
-    message: 8 paragraphs before the first heading (limit 2)
-    verdict: false-positive
-    note: "each paragraph sits under its own top-level heading (AGENCY:, ACTION:, SUMMARY:, ...); chaff takes the first # heading as the title and counts the sibling # sections as preamble before the first ## heading"
   - rule: max-sentence-length
     line: 11
     text: Responses will help identify and assess
     message: This sentence runs 52 words (limit 45)
     verdict: correct
     note: a 52-word sentence
-  - rule: undefined-acronym
-    line: 27
-    text: CFR subpart J.
-    message: '"CFR" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: "CFR in a citation of the Code of Federal Regulations by title (21 CFR subpart J), the standard citation form, as 44 USC 3502"
   - rule: max-paragraph-length
     line: 43
     text: This RFI should not be construed as a po
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
     note: a seven-sentence disclaimer paragraph
-  - rule: ngram-repetition
-    line: 51
-    text: We invite individuals, families, caregiv
-    message: '"adverse health effects" appears 15 times (limit 5)'
-    verdict: false-positive
-    note: "'adverse health effects' is the subject of the request, repeated by necessity across its questions"
   - rule: max-sentence-length
     line: 89
     text: How, if at all, should a classification

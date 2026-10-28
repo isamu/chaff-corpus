@@ -36,11 +36,6 @@ findings:
     text: section 20 for provisions about that rig
     message: '"provisions about that" does not appear in section 20 (Right to reject)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 356
-    text: NI 18)) (see Parts I and V of that Order
-    message: '"NI" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: reference-title-mismatch
     line: 576
     text: description).

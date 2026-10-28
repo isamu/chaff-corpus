@@ -31,11 +31,6 @@ findings:
     text: Before the 1964 act, a deduction was all
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 43
-    text: TRA 1986; P.L. 99-514). One of the prima
-    message: '"TRA" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 50
     text: The American Jobs Creation Act of 2004 (
@@ -45,11 +40,6 @@ findings:
     line: 50
     text: The AJCA 2004 sales tax deductibility pr
     message: This sentence runs 97 words (limit 45)
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 50
-    text: AJCA 2004; P.L. 108-357) reinstated dedu
-    message: '"AJCA" is used without an expansion (5 such acronyms)'
     verdict: unjudged
   - rule: max-paragraph-length
     line: 52

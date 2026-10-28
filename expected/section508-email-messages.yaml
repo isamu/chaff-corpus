@@ -101,23 +101,11 @@ findings:
     verdict: correct
     note: a spaced hyphen between a list item's label and its text; the page uses em dashes elsewhere
   - rule: list-item-form-mix
-    line: 49
-    text: Run-on sentences, long paragraphs, and m
-    message: '"Run-on sentences, long paragraphs, and meaningless filler phrases" opens with a verb; the other items in this list open with a noun phrase (1 of 5)'
-    verdict: false-positive
-    note: '"Run-on" is a compound adjective; the item opens with a noun phrase like the others'
-  - rule: list-item-form-mix
     line: 51
     text: Abbreviating the month or using numbers
     message: '"Abbreviating the month or using numbers as in 10/22/2005." is a sentence; the other items in this list are phrases (1 of 3)'
     verdict: correct
     note: the one item that runs on into a second sentence among noun phrases
-  - rule: unknown-word
-    line: 70
-    text: toolbar, click more actions, which is vi
-    message: '"toolbar" is not in the dictionary; did you mean "tollbar"?'
-    verdict: false-positive
-    note: '"toolbar" is an ordinary word'
   - rule: list-item-form-mix
     line: 97
     text: All images must have alt text or be mark
@@ -189,12 +177,6 @@ findings:
     text: As these types of files are accessible,
     message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: correct
-  - rule: undefined-acronym
-    line: 178
-    text: DC® and similar software to add necessar
-    message: '"DC" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: DC is part of the product name Acrobat DC
   - rule: undefined-acronym
     line: 178
     text: OCR program—if the user has OCR software

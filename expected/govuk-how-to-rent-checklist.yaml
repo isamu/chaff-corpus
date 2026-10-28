@@ -75,12 +75,6 @@ findings:
     text: If you have a serious complaint about th
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-  - rule: one-sentence-paragraph-run
-    line: 396
-    text: The government’s ‘How to rent a safe hom
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: false-positive
-    note: a closing 'Also in this series' run of parallel one-line blurbs, one per sibling guide; the repetition is the list's form
   - rule: repeated-sentence-head
     line: 396
     text: The government’s ‘How to rent a safe hom

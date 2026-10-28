@@ -17,11 +17,6 @@ findings:
     text: ’s important to them.
     message: Quote marks are written two ways in this document (7 curly, 15 straight)
     verdict: correct
-  - rule: bold-emphasis
-    line: 69
-    text: When requesting planned time off (i.e. P
-    message: "19 bold spans of emphasis: 8.9 per 1000 words (limit 6)"
-    verdict: unjudged
   - rule: undefined-acronym
     line: 69
     text: PTO, Public Holidays, Volunteer time), *

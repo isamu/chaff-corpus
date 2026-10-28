@@ -66,11 +66,6 @@ findings:
     text: 連結財務諸表を作成するにあたり重要となる会計方針については、『「第５経理の状況１
     message: 「連結財務諸表注記事項連結財務諸表作成」は漢字が 18 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-paragraph-length
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1)経営
-    message: この段落は 49 文あります（5 文まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: ①財政状態及び経営成績の状況当連結会計年度における我が国経済は、新型コロナウイル
@@ -78,18 +73,8 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: ③生産、受注及び販売の実績ａ.生産実績セグメントの名称当連結会計年度(自令和４年
-    message: この文は 149 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
     text: ａ．繰延税金資産の回収可能性繰延税金資産の計上にあたっては、将来の課税所得見込み
     message: この文は 141 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: ｂ.受注状況セグメントの名称当連結会計年度(自令和４年10月21日至令和５年10
-    message: この文は 308 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
@@ -116,11 +101,6 @@ findings:
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受
     message: この文は 215 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: 相手先前連結会計年度(自令和３年10月21日至令和４年10月20日)当連結会計年
-    message: この文は 227 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: ngram-repetition
     line: 1
     text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1)経営
@@ -135,11 +115,6 @@ findings:
     line: 1
     text: の減損損失固定資産の減損の兆候を判定するにあたっては、グルーピングされた資産につ
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 1
-    text: の状況の分析】(1)経営成績等の状況の概要当連結会計年度における当社グループの財
-    message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
     verdict: unjudged
   - rule: padded-intro
     line: 1

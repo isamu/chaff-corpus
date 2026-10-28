@@ -152,12 +152,6 @@ findings:
     message: '"300USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
     verdict: correct
     note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
-  - rule: undefined-acronym
-    line: 217
-    text: AIRBNB platform. Same restrictions in am
-    message: '"AIRBNB" is used without an expansion (15 such acronyms)'
-    verdict: false-positive
-    note: AIRBNB is a brand name written in capitals, not an acronym
   - rule: currency-notation-consistency
     line: 231
     text: 120 USD (or local equivalent currency) p
@@ -227,12 +221,6 @@ findings:
     text: Coworking space is not reimbursable whil
     message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
     verdict: correct
-  - rule: hyphen-as-dash
-    line: 385
-    text: " - Monthly"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
   - rule: orthographic-variant
     line: 386
     text: Coworking Space
@@ -243,12 +231,6 @@ findings:
     text: Coworking Space COGS
     message: '"Coworking" here, where the document usually writes "co-working" (6 of 21)'
     verdict: correct
-  - rule: hyphen-as-dash
-    line: 398
-    text: " - Daily Office Pass"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
   - rule: orthographic-variant
     line: 399
     text: Coworking Space
@@ -301,12 +283,6 @@ findings:
     message: '"125 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
     verdict: correct
     note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
-  - rule: hyphen-as-dash
-    line: 497
-    text: " - internal"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the hyphen separates the parts of a system label (a Navan expense category name), not a dash in a sentence
   - rule: hyphen-as-dash
     line: 506
     text: " - these will be rejected."

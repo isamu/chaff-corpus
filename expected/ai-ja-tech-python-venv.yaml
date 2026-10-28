@@ -49,11 +49,13 @@ findings:
     note: the closing restates the body as three bullets
   - rule: ai-generated-composite
     line: 123
-    what: sentence-rhythm, padded-intro and closing-cliche together
-    verdict: missed
-    note: each input is judged correct; found by pending lab PRs
+    text: 新しいプロジェクトを始めるときは、まず仮想環境を作る習慣をつけておきましょう！
+    message: 「sentence-rhythm、padded-intro、closing-cliche」が同じ文書にそろっています（3 種、2 種から）
+    verdict: correct
+    note: each input is judged correct; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: closing-cliche
     line: 123
-    what: 「〜習慣をつけておきましょう！」（95行目の「ぜひ覚えておきましょう」も）の呼びかけで締める
-    verdict: missed
-    note: "candidate phrase: ぜひ〜しましょう／〜しておきましょう！ as a closing exhortation"
+    text: 新しいプロジェクトを始めるときは、まず仮想環境を作る習慣をつけておきましょう！
+    message: 「ましょう！」で締めています
+    verdict: correct
+    note: "candidate phrase: ぜひ〜しましょう／〜しておきましょう！ as a closing exhortation; found by chaffjs 0.40.0"

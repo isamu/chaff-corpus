@@ -91,11 +91,6 @@ findings:
     text: INSERT, UPDATE, DELETE, or MERGE command
     message: '"INSERT, UPDATE, DELETE" is written in capitals'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 543
-    text: REVOKE.
-    message: '"REVOKE" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
   - rule: excessive-hedging
     line: 589
     text: it is possible that functions invoked wi

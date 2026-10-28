@@ -7,6 +7,16 @@ findings:
     message: 文の長さのばらつきが 35%（36% 以上ほしい）
     verdict: false-positive
     note: short sentences set against long ones on purpose (それ以上の答えはなかった。, でも、祖母の味とは違った。); at 35% a reader does not hear a drone
+  - rule: ai-generated-composite
+    line: 13
+    text: 子どものころの私は、正直それほど好きではなかった。黒くて地味だし、甘いのかしょっ
+    message: 「honesty-marker、sentence-rhythm」が同じ文書にそろっています（2 種、2 種から）
+    verdict: unjudged
+  - rule: honesty-marker
+    line: 13
+    text: 子どものころの私は、正直それほど好きではなかった。黒くて地味だし、甘いのかしょっ
+    message: 「、正直」と前置きしています
+    verdict: unjudged
   - rule: test:moral-ending
     line: 21
     what: 最後の段落が冒頭の「窓の曇りを拭く」に戻って、ほろ苦い救いで閉じる型どおりの結び

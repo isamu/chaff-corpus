@@ -41,12 +41,6 @@ findings:
     message: 「柴山昌彦文部科学大臣記者会見録」は漢字が 15 字続いています（8 字まで）
     verdict: false-positive
     note: the title of a cited MEXT document (記者会見録), which cannot be reworded
-  - rule: date-format-consistency
-    line: 66
-    text: 平成30年12月25日）”. 2018-12-25.
-    message: 日付「平成30年12月25日」の書き方が、この文書のほかの日付（「2019-08-20」など 49 箇所）と違います
-    verdict: false-positive
-    note: a date inside the title of a cited document, not the article's own date style
   - rule: max-kanji-continuous
     line: 76
     text: "北海道大学北キャンパス図書室. “午後の講座 : オープンアクセスとハゲタカジャ"
@@ -71,12 +65,6 @@ findings:
     message: 「。.」と句読点が重なっています
     verdict: false-positive
     note: a cited title that ends with 。 followed by the citation's own separator, as SIST02 keeps it
-  - rule: latin-spacing
-    line: 172
-    text: " LRG編（第9回）粗悪学術誌「ハゲタカ」は、なぜ生まれたのか？その原因と対策に"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。65 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: a space inside a cited serial title, as published
   - rule: bracket-width-consistency
     line: 178
     text: ［受理：2019-08-20］

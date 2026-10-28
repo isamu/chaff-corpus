@@ -23,14 +23,14 @@ findings:
     what: a one-line request answered with a full report of made-up progress, bugs, dates and metrics
     verdict: missed
     note: catalog B01 (invented detail)
-  - rule: rule-of-three
-    line: 15
-    text: "- Finished development of the account se"
-    message: 3 of 4 lists have exactly three items (70% allowed)
-    verdict: false-positive
-    note: "four short lists of a status report, each item a separate fact (12 of 15 bugs, 8 customers); three of four is too small a sample to show padding; given by lab main"
   - rule: unfilled-placeholder
     line: 34
-    what: '"[Name]" in the Owner column (lines 34, 35)'
-    verdict: missed
-    note: the same template blank as [Your Name], not reported
+    text: "[Name] |"
+    message: '"[Name]" was never filled in'
+    verdict: correct
+    note: the same template blank as [Your Name], not reported; found by chaffjs 0.40.0
+  - rule: unfilled-placeholder
+    line: 35
+    text: "[Name] |"
+    message: '"[Name]" was never filled in'
+    verdict: unjudged

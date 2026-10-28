@@ -61,12 +61,6 @@ findings:
     text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
     message: 「は」で出した主題から述語まで 149 字あります（80 字まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 50
-    text: 5,000億円をまた増額したわけですが、これに加えて更に上乗せ給付をしようという
-    message: 半角の「5」と書いています（この文書はふつう全角の「５」。56 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: "the digit leads a thousands-grouped number (5,000億円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: topic-predicate-distance
     line: 53
     text: そういうことのないように、今回は補正予算が成立次第、12月の地方議会にすぐに対処
@@ -82,12 +76,6 @@ findings:
     text: あるいは、申請書をいただいて、それを今度は自治体から、あなたはこういうものを受け
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-  - rule: orthographic-variant
-    line: 61
-    text: もって申請する、そういうことで選べば、これも手紙のやり取りよりは早くなります。
-    message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。9 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「電子でもって」 is the particle-like もって (以て, by means of), not the verb 持つ
   - rule: orthographic-variant
     line: 61
     text: 手続きをしたいというならば紙でおやりになってもいいと思います。あるいは、申請書を
@@ -113,18 +101,6 @@ findings:
     text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 98
-    text: 1,500円では年収換算にすると低いので、2,000円を目指していくべき。人手不
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。56 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: "the digit leads a thousands-grouped number (1,500円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
-  - rule: fullwidth-alnum-consistency
-    line: 98
-    text: 2,000円を目指していくべき。人手不足の影響をマクロ経済モデルでも分析すべき。
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。56 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: "the digit leads a thousands-grouped number (2,000円), a longer number the transcript writes half-width throughout, while its one-digit numbers are full-width; by the rule's why and not_flagged single digits and longer numbers are compared separately, so this one-digit-full-width, longer-half-width convention is consistent (as env-press-2026-10-16-junkan-keizai-yoron:9 and jma-yougo-kion:73)"
   - rule: orthographic-variant
     line: 122
     text: 頂いた。

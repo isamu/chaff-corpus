@@ -3,9 +3,10 @@ chaff: 0.36.0
 findings:
   - rule: unfilled-placeholder
     line: 3
-    what: 氏名と担当が〇〇のまま（3・34〜36行）
-    verdict: missed
-    note: catalog J27
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: catalog J27; found by chaffjs 0.40.0
   - rule: test:invented-detail
     line: 28
     what: 「所感」の評価（大きなチャンス、価格に敏感）と期限 10月23日・11月13日・10月30日がメモにない
@@ -17,9 +18,24 @@ findings:
     message: 「10月23日」が、書いた期間「2026年10月15日（木）〜10月16日（金）」の外です
     verdict: false-positive
     note: a due date in the follow-up table; follow-up dates fall after the trip by nature
+  - rule: unfilled-placeholder
+    line: 34
+    text: 〇〇 | 10月23日 |
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
   - rule: date-outside-period
     line: 35
     text: 11月13日 |
     message: 「11月13日」が、書いた期間「2026年10月15日（木）〜10月16日（金）」の外です
     verdict: false-positive
     note: a due date in the follow-up table, as line 34
+  - rule: unfilled-placeholder
+    line: 35
+    text: 〇〇 | 11月13日 |
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
+  - rule: unfilled-placeholder
+    line: 36
+    text: 〇〇 | 10月30日 |
+    message: 「〇〇」が埋まっていません
+    verdict: unjudged
