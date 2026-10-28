@@ -388,7 +388,8 @@ findings:
   - rule: ngram-repetition
     line: 1393
     sha256: 542d3e41259f6b2c24f43dfe712c14b9f9e9f4b216b92f6b524d000c692a4b44
-    verdict: unjudged
+    verdict: false-positive
+    note: the membership-data block every project report carries (There are currently N committers …), a generated formula, not the writers' phrasing
   - rule: expletive-construction
     line: 1421
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b

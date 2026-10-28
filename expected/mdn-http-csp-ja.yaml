@@ -5,7 +5,8 @@ findings:
     line: 15
     text: 詳しくは {{domxref("CSPViolationReport")}} を
     message: 「参照してください」が 11 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「…を参照してください」 is the reference page's cross-reference formula, each use pointing at a different page or section, so nothing reads as said again (the rule's why)
   - rule: no-doubled-joshi
     line: 43
     text: の閲覧コンテキストのための有効なソースを定義します。

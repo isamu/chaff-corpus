@@ -5,7 +5,8 @@ findings:
     line: 42
     text: Assume competence in your colleagues, cl
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
+    verdict: correct
+    note: '"colleagues, clients and the public" lacks the serial comma the page uses elsewhere (emoji, avatars, and other; meetings, talks, or discussions)'
   - rule: title-case-consistency
     line: 102
     text: ""

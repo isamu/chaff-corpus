@@ -176,9 +176,11 @@ findings:
     line: 1
     text: IH炊飯ジャーが苦戦したことにより、前年実績を下回りました。電気ポットは低調でし
     message: 「IH」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: IH（電磁誘導加熱）は説明なしで使われている
   - rule: undefined-acronym
     line: 1
     text: SHIFT』をスタートしました。『SHIFT』では、ドメイン・シフト「新規領域の
     message: 「SHIFT」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: 『SHIFT』 is the name of the mid-term plan (shift from the text before it), written in capitals, not an acronym

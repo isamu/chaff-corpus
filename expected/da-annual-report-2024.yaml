@@ -25,7 +25,8 @@ findings:
     line: 48
     text: DFFTの推進をはじめとする国際戦略
     message: 「DFFT」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: DFFT is never expanded and is not an everyday word
   - rule: concrete-evidence-density
     line: 94
     text: ""
@@ -225,7 +226,8 @@ findings:
     line: 141
     text: DX
     message: 「DX」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: DX is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: heading-echo
     line: 147
     text: 詳細：デジタル庁の組織づくり

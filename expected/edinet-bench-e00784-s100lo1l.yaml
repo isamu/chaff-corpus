@@ -229,7 +229,8 @@ findings:
     line: 25
     text: BCP体制から原材料調達先を複数化することにより、災害発生時の原料調達難のリスク
     message: 「BCP」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: BCP（事業継続計画）が説明なしで使われている
   - rule: repeated-sentence-ending
     line: 29
     text: ５【研究開発活動】当連結会計年度における研究開発活動は、電子・電池材料、高機能性
@@ -365,7 +366,8 @@ findings:
     line: 93
     text: EY新日本有限責任監査法人により監査を受けております。
     message: 「EY」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: EY, part of the audit firm's name, is never expanded; organisation names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: max-kanji-continuous
     line: 105
     text: 【連結損益計算書】  (単位：百万円) 前連結会計年度(自　2019年４月１日

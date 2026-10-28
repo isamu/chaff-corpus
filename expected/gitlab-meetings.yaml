@@ -4,11 +4,13 @@ findings:
   - rule: ai-structure
     line: 10
     sha256: 9cc1bc2fab608ee1ffb9379b2b1bda647bc13812274407678e6bafb041d22a02
-    verdict: unjudged
+    verdict: false-positive
+    note: a GitLab handbook page; question headings and bold-lead tips are the handbook's house form, not a sign of generation
   - rule: bold-label-list
     line: 16
     sha256: c37111f5f03a21a2541b66f13b297cf1edb84f949ad896eb65d46f054a060da9
-    verdict: unjudged
+    verdict: false-positive
+    note: "a human tips list: each bold lead is the advice itself, an imperative sentence the item explains; the handbook's house style"
   - rule: undefined-acronym
     line: 17
     sha256: 8594d89c6c0680abeadbab6e1b3717621cf1a90eb8fdce2af38b53f776d650a3

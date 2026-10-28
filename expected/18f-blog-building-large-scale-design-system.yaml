@@ -35,7 +35,8 @@ findings:
     line: 105
     text: Inspiring and Empowering
     message: '"empowering, multifaceted" appear together (score 6, limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: '"Empowering" is part of a quoted mood-board name (Inspiring and Empowering) and "multifaceted" is a hundred lines later; two words in a long human post are no pile-up'
   - rule: max-sentence-length
     line: 119
     text: In order to provide the greatest flexibi

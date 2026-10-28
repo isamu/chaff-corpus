@@ -22,19 +22,23 @@ findings:
     line: 36
     text: "[Name] | Nov 20 |"
     message: '"[Name]" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a [Name] owner left blank in the action table
   - rule: unfilled-placeholder
     line: 37
     text: "[Name] | Nov 20 |"
     message: '"[Name]" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a [Name] owner left blank in the action table
   - rule: unfilled-placeholder
     line: 38
     text: "[Name] | Nov 27 |"
     message: '"[Name]" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a [Name] owner left blank in the action table
   - rule: unfilled-placeholder
     line: 39
     text: "[Name] | Nov 13 |"
     message: '"[Name]" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a [Name] owner left blank in the action table

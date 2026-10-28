@@ -77,7 +77,8 @@ findings:
     line: 24
     text: OECDが提唱するキー･コンピテンシーの育成に関する取組や，論理的思考力や表現力
     message: 「OECD」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: OECD, an organisation's name, is never expanded; names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: clause-chain
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
@@ -186,7 +187,8 @@ findings:
     line: 33
     text: これからの学習指導要領等については，必要な教育内容を系統的に示すのみならず，育成
     message: 「育成すべき資質･」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「育成すべき資質・能力」 is the consultation's key term, repeated because it is what the request is about
   - rule: hankaku-kana
     line: 35
     text: ･能力と，各教科等の役割や相互の関係はどのように構造化されるべきか。
@@ -232,7 +234,8 @@ findings:
     line: 36
     text: ICTを活用した指導の現状等を踏まえつつ，今後の「アクティブ・ラーニング」の具体
     message: 「ICT」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: ICT is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: hankaku-kana
     line: 37
     text: ･能力を子供たちに確実に育む観点から，学習評価の在り方についてどのような改善が必

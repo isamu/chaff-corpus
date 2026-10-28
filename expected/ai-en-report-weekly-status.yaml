@@ -33,4 +33,5 @@ findings:
     line: 35
     text: "[Name] |"
     message: '"[Name]" was never filled in'
-    verdict: unjudged
+    verdict: correct
+    note: a [Name] owner left blank in the action table

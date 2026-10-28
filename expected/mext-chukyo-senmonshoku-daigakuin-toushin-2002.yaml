@@ -45,7 +45,8 @@ findings:
     line: 53
     text: （8）本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，高度専門
     message: 「人養成に特化した」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「高度専門職業人養成に特化した」 defines the kind of graduate school the report is about; the page's subject phrase
   - rule: topic-predicate-distance
     line: 53
     text: （8）本審議会は，その結果に基づき，更に総会及び大学分科会で審議を行い，高度専門

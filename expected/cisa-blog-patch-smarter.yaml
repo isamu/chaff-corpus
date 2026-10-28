@@ -20,4 +20,5 @@ findings:
     line: 32
     text: This more aggressive tiering of vulnerab
     message: '"the most" has nothing to compare against (1 such claim)'
-    verdict: unjudged
+    verdict: false-positive
+    note: '"the most critical vulnerabilities" names its set: the vulnerabilities the tiering ranks'

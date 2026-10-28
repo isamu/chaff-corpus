@@ -115,9 +115,11 @@ findings:
     line: 1
     text: FC３店舗）、館外飲食店舗が４店舗であります。②財政状態の状況当事業年度末におけ
     message: 「FC」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: FC（フランチャイズ）は説明なしで使われている
   - rule: undefined-acronym
     line: 1
     text: TSMCの工場建設や広島サミット開催に伴う特需などの影響から、前事業年度と比べ増
     message: 「TSMC」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: TSMC, a company's name, is never expanded; organisation names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)

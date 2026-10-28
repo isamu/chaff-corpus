@@ -34,7 +34,8 @@ findings:
     line: 10
     text: 〇〇市）です。オンラインでのご登壇も可能です。謝礼などの詳細は、改めてご相談させ
     message: 「〇〇市」が埋まっていません
-    verdict: unjudged
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
   - rule: unfilled-placeholder
     line: 14
     text: 〇〇　人事部

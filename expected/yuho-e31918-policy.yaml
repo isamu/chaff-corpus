@@ -10,12 +10,14 @@ findings:
     line: 1
     text: ④ナーセリー支援事業の強化当社は胡蝶蘭農園との業務提携を通じて、農園事業に進出し
     message: 「だけではなく」など、対比の枠で書いた文が 7.1% あります（6% まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「販売するだけではなく、自社として…生産」 adds a fact, it knocks down nothing; two additive frames in a 28-sentence section
   - rule: contrast-framing
     line: 1
     text: 当社がこれまで取り組んでまいりました植物栽培と販売のノウハウを活かしたコンサルテ
     message: 「だけでなく」など、対比の枠で書いた文が 7.1% あります（6% まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: 「国内だけでなく海外展開も」 is additive; two such frames in a short section is not a pile-up
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ３Ｒ活動を中心とした取り組みを進めて参ります。(5)優先的に対処すべき事業上及び

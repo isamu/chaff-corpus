@@ -11,12 +11,14 @@ findings:
     line: 4
     text: GIGA StuDX推進チーム）
     message: 「GIGA」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: GIGA is the name of the programme (GIGAスクール構想), used as a proper name throughout the ministry's magazine
   - rule: undefined-acronym
     line: 5
     text: DXスクールの事例からギガスタチームの推し実践を紹介します！
     message: 「DX」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: correct
+    note: DX is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)
   - rule: max-sentence-length
     line: 20
     text: また、教師は子供が自分で学びを進めることができるようにと、自分の考えの説明の仕方
