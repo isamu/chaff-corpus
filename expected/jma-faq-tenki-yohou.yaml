@@ -70,7 +70,8 @@ findings:
     line: 97
     text: 地球大気は「流体」であり、コップの水の一部をかき回すと、その動きはやがてコップの
     message: 「は」で出した主題から述語まで 147 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: "「地球大気は」 gets its predicate at once (「流体」であり、); new subjects (その動きは, 地球大気も) take the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: topic-predicate-distance
     line: 105
     text: このような観測データの送信は国際的な取り決めにより、世界各国で同時に３時間ごとに

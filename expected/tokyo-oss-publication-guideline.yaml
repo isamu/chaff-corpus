@@ -60,7 +60,8 @@ findings:
     line: 72
     text: なお、都が公開するOSSは、多くの人々にその利益を享受してもらうことのできる、広
     message: 「は」で出した主題から述語まで 225 字あります（200 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: "「OSSは」 gets its predicate at 「ものにするべきであり、」; a new subject (ライセンス形式が) takes the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: unbalanced-bracket
     line: 72
     text: ）

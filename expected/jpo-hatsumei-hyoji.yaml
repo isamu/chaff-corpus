@@ -15,7 +15,8 @@ findings:
     line: 18
     text: すなわち、発明者は特許を受ける権利を発明の完成と同時に有する主体であり、特許を受
     message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
-    verdict: correct
+    verdict: false-positive
+    note: "「発明者は」 gets its predicate at 「主体であり、」; a new topic (これらの規定は) takes the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: topic-predicate-distance
     line: 20
     text: 以上のような解釈及び上記各規定の内容との整合性の観点から、発明者の表示は、自然人
