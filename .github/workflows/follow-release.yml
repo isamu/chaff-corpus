@@ -80,8 +80,9 @@ jobs:
           touch "$RUNNER_TEMP/resolve.md"
           # The same run `check` does, now against the resolved expected files.
           check corpus yarn run-corpus --jobs 4
-          node scripts/follow-release.ts body "$PINNED" "$VERSION" "$RUNNER_TEMP/resolve.md" "${checks[@]}" > "$RUNNER_TEMP/body.md"
-          cat "$RUNNER_TEMP/body.md" >> "$GITHUB_STEP_SUMMARY"
+          node scripts/follow-release.ts body "$PINNED" "$VERSION" "$RUNNER_TEMP/resolve.md" "${checks[@]}" >> "$GITHUB_STEP_SUMMARY"
+          # GitHub refuses a long PR body, so a long resolve list is left to the step summary above.
+          node scripts/follow-release.ts pr-body "$PINNED" "$VERSION" "$RUNNER_TEMP/resolve.md" "${checks[@]}" > "$RUNNER_TEMP/body.md"
 
       - name: commit, push and open the PR
         if: steps.open.outputs.go == 'true'

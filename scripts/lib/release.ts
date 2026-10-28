@@ -66,7 +66,7 @@ export const parseCheck = (text: string): Check | undefined => {
 const checkRow = (check: Check): string => `| ${check.name} | ${check.result === "pass" ? "pass" : "**fail**"} |`;
 
 /** The bump PR's body: what it does, the checks run in the workflow (a PR opened by it starts no other workflow), and the resolve list. */
-export const releasePullRequestBody = (pinned: string, version: string, checks: readonly Check[], resolveSummary: string): string =>
+export const releasePullRequestBody = (pinned: string, version: string, checks: readonly Check[], resolveSection: string): string =>
   [
     "## Summary",
     "",
@@ -74,7 +74,7 @@ export const releasePullRequestBody = (pinned: string, version: string, checks: 
     "",
     "## Items to Confirm / Review",
     "",
-    "- **Regressed** entries below are correct findings this release lost: report them in isamu/lab before merging.",
+    "- **Regressed** entries in the resolve list are correct findings this release lost: report them in isamu/lab before merging.",
     "- Judge the new `unjudged` entries in the diff of `expected/`.",
     "- This PR was opened with the workflow's token, so `check` did not start on it. The checks below ran in the release-follow job on this exact commit. To get the `check` status on the PR, run `check` from the Actions tab (workflow_dispatch on this branch) or push an empty commit (`git commit --allow-empty -m \"chore: run check\"`).",
     "",
@@ -84,6 +84,45 @@ export const releasePullRequestBody = (pinned: string, version: string, checks: 
     "| :-- | :-- |",
     ...checks.map(checkRow),
     "",
-    resolveSummary.trimEnd(),
+    resolveSection.trimEnd(),
     "",
   ].join("\n");
+
+/** GitHub refuses a pull request body longer than this many characters. */
+export const PULL_REQUEST_BODY_LIMIT_CHARACTERS = 65536;
+
+/** Characters as GitHub counts them: code points, so a kanji or an emoji is one. */
+export const characterCount = (text: string): number => [...text].length;
+
+const countLine = (heading: string, items: number): string =>
+  heading.startsWith("## ") ? `${heading}\n` : `- ${heading.replace(/^#+\s*/, "")}: ${String(items)}`;
+
+const itemCountLines = (resolveSummary: string): string[] => {
+  const lines = resolveSummary.split("\n");
+  const headingIndexes = lines.flatMap((line, index) => (line.startsWith("#") ? [index] : []));
+  return headingIndexes.map((start, position) => {
+    const end = headingIndexes[position + 1] ?? lines.length;
+    const items = lines.slice(start + 1, end).filter((line) => line.startsWith("- ")).length;
+    return countLine(lines[start] ?? "", items);
+  });
+};
+
+const pointerLines = (runUrl: string | undefined): string[] => {
+  const run = runUrl === undefined ? "the release-follow run" : `[the release-follow run](${runUrl})`;
+  return [
+    "",
+    `The full list is too long for a pull request body. It is in the step summary of ${run}, and every change it records is in this PR's diff of \`expected/\`.`,
+  ];
+};
+
+/**
+ * The bump PR's body, fitted under GitHub's limit: unchanged when it fits; otherwise the resolve list becomes the count of
+ * each of its sections and a pointer to the run's step summary and to the diff of `expected/`, keeping the summary and the checks.
+ */
+export const fittedReleasePullRequestBody = (pinned: string, version: string, checks: readonly Check[], resolveSummary: string, runUrl: string | undefined): string => {
+  const full = releasePullRequestBody(pinned, version, checks, resolveSummary);
+  if (characterCount(full) <= PULL_REQUEST_BODY_LIMIT_CHARACTERS) return full;
+  const counted = releasePullRequestBody(pinned, version, checks, [...itemCountLines(resolveSummary), ...pointerLines(runUrl)].join("\n"));
+  if (characterCount(counted) <= PULL_REQUEST_BODY_LIMIT_CHARACTERS) return counted;
+  return releasePullRequestBody(pinned, version, checks, pointerLines(runUrl).join("\n"));
+};
