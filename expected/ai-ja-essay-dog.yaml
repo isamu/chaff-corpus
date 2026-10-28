@@ -6,7 +6,7 @@ findings:
     what: 「嫌なのは「濡れること」ではなく、「上から降ってくるもの」らしい」
     verdict: missed
     note: catalog J21 (〜ではなく〜)
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 21
     what: 「今日も外は雨。こはるは、ソファで寝ている。」と雨の話に戻って締める
     verdict: missed

@@ -16,7 +16,7 @@ findings:
     what: 「上司が困っていたのは資料の出来ではなかった」、15行「怒られたというより、静かに諭されたような」
     verdict: missed
     note: catalog J21/E12 (not X but Y), twice in a short essay
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 31
     what: 「あのひとことがなければ…背筋が伸びる言葉だ」と題の「ひとこと」に戻って締める
     verdict: missed

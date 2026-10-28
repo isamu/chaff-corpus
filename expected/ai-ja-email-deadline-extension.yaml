@@ -30,7 +30,7 @@ findings:
     message: この文は 78 文字あります（70 文字まで）
     verdict: correct
     note: 78 characters chaining three clauses (〜ましたが、〜ており、〜状況です); splits cleanly before このままでは. An editor's point, not an AI sign
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 12
     what: 依頼にない「完成している部分を先行して11月14日までにお送りすることも可能です」という申し出を加えている
     verdict: missed

@@ -165,6 +165,11 @@ findings:
 | `missed` | a finding chaff should give and does not (`rule`, `line`, `what`) | that rule on that line appears: reported as found |
 | `unjudged` | nobody has judged it yet | listed as "to judge" |
 
+A miss that only a reader can find (a detail the request never gave, a neat moral at the end) is filed under the
+`chaff test` check that asks about it, `test:<check id>` (the ids of `npx chaffjs test --checks ai-tells --dry-run`, such
+as `test:invented-detail` and `test:moral-ending`), not under a lint rule that cannot see it. Such an entry is always
+`missed`, since the lint run never gives it; the report counts it under its own row.
+
 A finding is the same finding when its rule, line and text are the same. A document is **fully judged** when its file
 has no `unjudged` entry; a new finding there makes CI fail, because someone has to judge it.
 

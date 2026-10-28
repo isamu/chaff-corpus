@@ -7,7 +7,7 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 13
     what: 依頼に無い前回比（商談件数は増えている）、聞き取りの工夫、来場者の声「紙とExcelでの管理に限界を感じている」を作っている
     verdict: missed

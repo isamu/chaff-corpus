@@ -18,7 +18,7 @@ findings:
     what: 番号付きの 概要／背景／提案内容／費用／期待される効果／今後のスケジュール
     verdict: missed
     note: "catalog E44/J proposal outline (F): the stock proposal outline; ai-structure does not run on business"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 12
     what: 約150名・アンケート74%・同業他社の相場・フロア返却で年間約900万円（31行）が依頼にない
     verdict: missed

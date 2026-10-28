@@ -35,7 +35,7 @@ findings:
     message: '"better" does not say what it is compared with'
     verdict: false-positive
     note: better than print statements, named in the same sentence
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 33
     what: '"That was worth an afternoon or two of grepping." returns to the grepping of the first week for a neat close'
     verdict: missed

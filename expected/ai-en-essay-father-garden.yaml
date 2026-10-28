@@ -12,7 +12,7 @@ findings:
     what: "\"I'd like to say it tasted like childhood, but mostly it tasted like a very good tomato. What got me was something else.\""
     verdict: missed
     note: catalog E12 (not X; it was Y), the essay's turn
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 17
     what: '"I wrote the label in capital letters." returns to his labelled can (line 7) for the last line'
     verdict: missed

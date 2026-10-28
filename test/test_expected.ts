@@ -54,6 +54,14 @@ describe("parseExpected", () => {
     });
   });
 
+  it("takes a `test:` entry only as a miss", () => {
+    const missed = { rule: "test:invented-detail", line: 3, what: "a figure the request did not give", verdict: "missed" };
+    assert.ok("value" in parseExpected({ id: "doc", chaff: "0.33.0", findings: [missed] }, "doc"));
+    assert.deepEqual(parseExpected({ id: "doc", chaff: "0.33.0", findings: [{ rule: "test:invented-detail", line: 3, text: "x", verdict: "correct" }] }, "doc"), {
+      problems: ["findings[0]: a `test:` entry is a miss: chaff's lint run never gives it"],
+    });
+  });
+
   it("checks the header", () => {
     assert.deepEqual(parseExpected({ id: "other", findings: {} }, "doc"), {
       problems: ['id must be "doc" (the file name)', "`chaff` (the version judged against) is required", "`findings` must be a list"],

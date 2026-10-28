@@ -1,7 +1,7 @@
 id: ai-ja-press-store-opening
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 5
     what: 「週末には開店前から列ができる日も多く」「もう少し近くに店があれば」という声が依頼にない
     verdict: missed

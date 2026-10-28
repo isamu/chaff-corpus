@@ -7,7 +7,7 @@ findings:
     message: This sentence runs 21 words (limit 18)
     verdict: correct
     note: 21 words of seasonal lead-in (As we head into the holiday season, here's a quick overview); a stock generated opener
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 10
     what: the closure dates beyond Thanksgiving, the reopening day, the expense deadline and the IT on-call number (line 22) are not in the request
     verdict: missed

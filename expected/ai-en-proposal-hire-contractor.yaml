@@ -1,7 +1,7 @@
 id: ai-en-proposal-hire-contractor
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 6
     what: '"Test cases have doubled vs. 2.0." is not in the request'
     verdict: missed

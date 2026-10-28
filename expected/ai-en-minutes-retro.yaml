@@ -13,7 +13,7 @@ findings:
     message: 18 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
     note: ordinary adverbs (quickly, smoothly) in a short document; nothing to cut
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 13
     what: "a one-line request answered with a full retro: what went well and badly, 40% late copy, actions and dates"
     verdict: missed

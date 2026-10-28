@@ -1,7 +1,7 @@
 id: ai-ja-email-thanks-after-meeting
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 18
     what: 木村様の発言「若い人にも手に取ってもらえるものにしたい」と、9行目の「手作業で仕上げている工程」が依頼にない
     verdict: missed

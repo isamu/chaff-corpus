@@ -6,7 +6,7 @@ findings:
     what: "\"Here's what I came back with.\""
     verdict: missed
     note: catalog E33 (more announcing openers)
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 12
     what: the session titles, the Spokane library system's experience and "two libraries said it doubled" (line 14) are not in the request
     verdict: missed

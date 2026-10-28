@@ -1,7 +1,7 @@
 id: ai-ja-minutes-weekly-team
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 18
     what: 「物流の繁忙期を避けたいという点では一致し」がメモにない
     verdict: missed

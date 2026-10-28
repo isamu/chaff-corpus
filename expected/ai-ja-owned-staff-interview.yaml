@@ -19,7 +19,7 @@ findings:
     message: 1000 字あたり 12 個のダッシュがあります（3 個まで）
     verdict: false-positive
     note: ―― marks the interviewer's question, the standard notation of a Japanese interview article
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 11
     what: 上司の言葉、客の言葉（19行）、工場の言葉（27行）をメモにないまま本人の発言として作っている
     verdict: missed

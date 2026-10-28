@@ -1,7 +1,7 @@
 id: ai-en-proposal-shared-calendar
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 9
     what: '"two of the three people presenting" and "only two days before" are not in the request (it said two presenters, and that the demo was almost scheduled)'
     verdict: missed

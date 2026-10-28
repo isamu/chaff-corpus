@@ -24,7 +24,7 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 8
     what: 「ご著書『〇〇』を拝読し、…深く共感いたしました」：依頼にない読書歴を差出人に与えている
     verdict: missed

@@ -6,7 +6,7 @@ findings:
     what: 「正直なところ少し重たく感じていた」
     verdict: missed
     note: "candidate pattern (honesty marker 正直): under 'write naturally', as AI1 found"
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 19
     what: 冒頭の「のんびりしていいでしょう」に戻り、答えを言い換えて締める
     verdict: missed

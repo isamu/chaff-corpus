@@ -19,7 +19,7 @@ findings:
     message: '"nobody" and other sweeping claims: 10 per 1000 words (limit 3)'
     verdict: false-positive
     note: '"an address nobody checks anymore" is a fact about one mailbox, not a sweeping claim'
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 23
     what: an invented loss estimate ("around 40 orders") and weekday ("a normal Tuesday afternoon"; October 21, 2026 is a Wednesday)
     verdict: missed

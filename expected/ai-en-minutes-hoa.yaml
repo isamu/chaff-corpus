@@ -1,7 +1,7 @@
 id: ai-en-minutes-hoa
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 3
     what: "\"About 25 residents\", \"Greg was away\", \"Janet chaired\", the September inspection (line 7), Mark and Linda's tasks (lines 13, 17) are not in the request"
     verdict: missed

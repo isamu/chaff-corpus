@@ -7,7 +7,7 @@ findings:
     message: Paragraph length varies by only 26% (want at least 30%)
     verdict: false-positive
     note: 26%, short paragraphs as a review post is written; not noticeable
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 13
     what: '"a ten-day trip where I forgot the cable", "twenty minutes to work out" and "once, at the beach" (line 29) are not in the request'
     verdict: missed

@@ -31,7 +31,7 @@ findings:
     message: '"9,850" has no unit (the other "Q2" values carry "%")'
     verdict: false-positive
     note: a count of orders; as above
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 19
     what: 52,000 new visitors from the campaign, the customer feedback, and the $210,000 recovery estimate (line 29) are not in the request
     verdict: missed

@@ -18,7 +18,7 @@ findings:
     message: This sentence runs 29 words (limit 18)
     verdict: correct
     note: 29 words telling one situation in order; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 11
     what: "\"Marcus, I know you've got opinions about training schedules\" is not in the request"
     verdict: missed

@@ -161,6 +161,11 @@ findings:
 | `missed` | 出るべきなのに出ない指摘（`rule`、`line`、`what`） | その行にそのルールが出た: 見つかったと報告 |
 | `unjudged` | まだ誰も判定していない | 「to judge」に列挙 |
 
+読んで初めて分かる見逃し（頼まれていない具体、きれいにまとめた教訓の結び）は、それを見られない lint のルールではなく、
+それを問う `chaff test` の問いの下に `test:<問いの id>` で置きます（id は `npx chaffjs test --checks ai-tells --dry-run`
+が挙げるもの。`test:invented-detail`、`test:moral-ending` など）。lint の実行がこれを出すことはないので、いつも
+`missed` で、報告では自分の行に数えます。
+
 ルール・行・位置の本文が同じなら同じ指摘とみなします。`unjudged` が一つもない文書は**全指摘を判定済み**で、そこに新しい
 指摘が出ると CI が失敗します（誰かが判定する必要があるため）。
 

@@ -25,6 +25,12 @@ export type MissedEntry = {
 
 export type ExpectedEntry = JudgedEntry | MissedEntry;
 
+/**
+ * A miss only a reader can find is filed under the `chaff test` check that asks about it (`test:invented-detail`, an id
+ * of `chaff test --checks ai-tells`), not under a lint rule that cannot see it.
+ */
+export const TEST_CHECK_PREFIX = "test:";
+
 export type Expected = {
   readonly id: string;
   /** The chaffjs version the file was first written against. */
@@ -73,6 +79,7 @@ const entryOf = (raw: unknown): ExpectedEntry | string => {
   const line = raw["line"];
   if (!isNonEmptyString(rule)) return "an entry needs `rule`";
   if (!isPositiveInteger(line)) return "an entry needs a positive integer `line`";
+  if (rule.startsWith(TEST_CHECK_PREFIX) && raw["verdict"] !== "missed") return `a \`${TEST_CHECK_PREFIX}\` entry is a miss: chaff's lint run never gives it`;
   return raw["verdict"] === "missed" ? missedEntryOf(raw, rule, line) : judgedEntryOf(raw, rule, line);
 };
 

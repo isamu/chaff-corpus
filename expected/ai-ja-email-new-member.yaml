@@ -1,7 +1,7 @@
 id: ai-ja-email-new-member
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 11
     what: 「席は窓側の、元・山本さんの席です」が依頼にない
     verdict: missed

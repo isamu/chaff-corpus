@@ -30,7 +30,7 @@ findings:
     message: '"No calls." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
     verdict: false-positive
     note: a list of house rules; "No calls." is the natural form of a rule
-  - rule: ai-tell
+  - rule: q-fragment-answer
     line: 18
     what: '"And honestly?"'
     verdict: missed

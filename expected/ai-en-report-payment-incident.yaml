@@ -7,7 +7,7 @@ findings:
     message: "3 bold spans of emphasis: 12 per 1000 words (limit 6)"
     verdict: false-positive
     note: the report header fields (**Report date:**, **Prepared by:**, **Severity:**), not emphasis
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 32
     what: '"a period of high load at the provider between 14:00 and 15:00" and "211 contacted customer support" (line 13) are not in the request'
     verdict: missed
