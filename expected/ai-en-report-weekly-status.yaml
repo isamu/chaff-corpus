@@ -18,7 +18,7 @@ findings:
     message: 'Nothing under the heading "Overall Status: On Track 🟢"'
     verdict: correct
     note: a status stated as a heading with nothing under it; an editor would make it a line of the summary
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 9
     what: a one-line request answered with a full report of made-up progress, bugs, dates and metrics
     verdict: missed

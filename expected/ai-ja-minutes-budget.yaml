@@ -7,7 +7,7 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 28
     what: 製造部長の「約15％向上する見込み」と取締役の実績要求（26行）が依頼にない
     verdict: missed

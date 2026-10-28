@@ -11,7 +11,7 @@ findings:
     what: 「それがかえって胸に刺さった」
     verdict: missed
     note: catalog J22 (刺さる)
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 31
     what: 「あのひとことがなければ…背筋が伸びる言葉だ」と題の「ひとこと」に戻って締める
     verdict: missed

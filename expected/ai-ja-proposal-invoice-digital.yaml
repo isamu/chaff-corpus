@@ -22,7 +22,7 @@ findings:
     what: 「月約90時間」の負担を背景（5行）と課題の1項目めで二度言っている
     verdict: missed
     note: a fact restated in the next section
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 31
     what: 依頼に無い削減見込み「約30時間まで」を根拠なく出している
     verdict: missed

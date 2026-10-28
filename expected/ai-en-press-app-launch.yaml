@@ -7,7 +7,7 @@ findings:
     message: "8 bold spans of emphasis: 27.6 per 1000 words (limit 6)"
     verdict: false-positive
     note: "the dateline, run-in headings (Key features, About GreenLeaf, Media Contact) and the feature list labels: the press-release layout, not emphasis"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 7
     what: the CEO quote with "an average of 30%", 2,000 testers, 1,500 plants, GreenLeaf Plus at $4.99, founded 2024 are not in the request
     verdict: missed

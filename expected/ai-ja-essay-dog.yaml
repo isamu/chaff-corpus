@@ -1,7 +1,7 @@
 id: ai-ja-essay-dog
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 21
     what: 「今日も外は雨。こはるは、ソファで寝ている。」と雨の話に戻って締める
     verdict: missed

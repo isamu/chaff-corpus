@@ -1,7 +1,7 @@
 id: ai-en-press-partnership
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 9
     what: the director's quote "People were coming to us because they had nowhere else to ask…" is not in the request
     verdict: missed

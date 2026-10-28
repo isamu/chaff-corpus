@@ -6,7 +6,7 @@ findings:
     what: 断りの理由の前に「正直かなり迷いました」
     verdict: missed
     note: "candidate pattern (honesty marker 正直): AI1 found it in every 'write naturally' output; here under 'avoid AI phrasing'. Shape: density of 正直 / honestly"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 13
     what: 「何度も打ち合わせにお時間をいただいたのに」が依頼にない
     verdict: missed

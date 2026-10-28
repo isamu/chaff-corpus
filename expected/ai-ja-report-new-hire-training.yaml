@@ -7,7 +7,7 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: catalog J27; found by chaffjs 0.38.0
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 11
     what: アンケートの「12名中10名」、製造部課長の発言、「6月ごろから」（13行）、相談に来た「2名」（19行）が依頼にない
     verdict: missed

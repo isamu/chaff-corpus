@@ -41,7 +41,7 @@ findings:
     message: '"Call quality is average outdoors" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
     verdict: correct
     note: a clause among noun phrases in the cons list
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 19
     what: '"a five-hour flight in June" and "a hot day in August" are experiences the user did not give'
     verdict: missed

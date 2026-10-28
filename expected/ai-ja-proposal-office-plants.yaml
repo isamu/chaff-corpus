@@ -1,7 +1,7 @@
 id: ai-ja-proposal-office-plants
 chaff: 0.36.0
 findings:
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 12
     what: 「先月の雑談アンケートでも…という声がいくつか出ていました」が依頼にない
     verdict: missed

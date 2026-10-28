@@ -18,7 +18,7 @@ findings:
     message: この依頼には、いつまでに・誰がするかが書かれていません
     verdict: false-positive
     note: the deadline is given at the end (申込締切 12月15日, 12月の経営会議で決めたい)
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 18
     what: 採用での効果（14行）と広告宣伝費の残り約120万円が依頼にない
     verdict: missed

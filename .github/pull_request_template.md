@@ -24,7 +24,7 @@ See [Report a case where chaff is wrong](https://github.com/isamu/chaff-corpus/b
 - [ ] **No personal data**: no private person's name, email address or phone number.
 - [ ] `yarn run-corpus --update --only <id>` ran on the final text, so `expected/<id>.yaml` holds what the pinned chaffjs gives.
 - [ ] **Wrong findings** are marked `verdict: false-positive` with a one-line `note`; their `rule`, `line` and `text` are unchanged.
-- [ ] **Missing findings** are entries with `rule` (a name from `npx chaff rules`), `line`, `what` and `verdict: missed`.
+- [ ] **Missing findings** are entries with `rule` (a name from `npx chaff rules`, or `test:<check id>` for a miss only `chaff test` can find), `line`, `what` and `verdict: missed`.
 
 What chaff got wrong, in a sentence or two:
 

@@ -6,7 +6,7 @@ findings:
     what: 氏名と担当が〇〇のまま（3・34〜36行）
     verdict: missed
     note: catalog J27
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 28
     what: 「所感」の評価（大きなチャンス、価格に敏感）と期限 10月23日・11月13日・10月30日がメモにない
     verdict: missed

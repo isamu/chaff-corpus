@@ -7,7 +7,7 @@ findings:
     message: 文の長さのばらつきが 35%（36% 以上ほしい）
     verdict: false-positive
     note: short sentences set against long ones on purpose (それ以上の答えはなかった。, でも、祖母の味とは違った。); at 35% a reader does not hear a drone
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 21
     what: 最後の段落が冒頭の「窓の曇りを拭く」に戻って、ほろ苦い救いで閉じる型どおりの結び
     verdict: missed

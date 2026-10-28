@@ -1,7 +1,7 @@
 id: ai-en-essay-first-marathon
 chaff: 0.36.0
 findings:
-  - rule: ai-tell
+  - rule: q-fragment-answer
     line: 7
     what: '"How different could six more miles be?" answered by "Pretty different, it turns out."'
     verdict: missed
@@ -12,7 +12,7 @@ findings:
     message: '"YOU PAID FOR THIS." is given to someone, but no source (a link, a footnote, a reference) is given'
     verdict: false-positive
     note: the text of a spectator's sign, not a quotation needing a source
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 19
     what: "\"says that's what everyone says on Tuesday\" returns to \"I'm writing this on Tuesday\" (line 3)"
     verdict: missed

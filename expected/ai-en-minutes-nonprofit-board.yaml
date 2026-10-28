@@ -13,7 +13,7 @@ findings:
     message: 238 proper nouns per 1000 words (limit 200)
     verdict: false-positive
     note: minutes name every attendee and mover; dense names are the genre
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 28
     what: the refrigerated truck and new grocery partners, the coordinator's name Michael Brooks (line 32) and A. Martinez's concern are not in the request
     verdict: missed

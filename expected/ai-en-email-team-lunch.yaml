@@ -7,7 +7,7 @@ findings:
     message: This sentence runs 19 words (limit 18)
     verdict: false-positive
     note: "the When: and Where: lines were read as one sentence"
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 8
     what: '"the one with the wood-fired oven, not the one by the station" and the vegetarian and gluten-free options (line 10) are not in the request'
     verdict: missed

@@ -25,7 +25,7 @@ findings:
     message: 「〇月」が埋まっていません
     verdict: correct
     note: Japanese 〇〇 blank, not found; found by chaffjs 0.38.0
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 13
     what: 依頼に無い理由づけと自由記述の声（通勤時間の削減を評価する声、17行目の「他部署の誰に聞けばよいかわからない」）を作っている
     verdict: missed

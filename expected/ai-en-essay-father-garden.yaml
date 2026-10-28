@@ -7,7 +7,7 @@ findings:
     message: Paragraph length varies by only 27% (want at least 30%)
     verdict: false-positive
     note: 27%, but the paragraphs run from one line to six; a reader does not notice evenness
-  - rule: ai-generated-composite
+  - rule: test:moral-ending
     line: 17
     what: '"I wrote the label in capital letters." returns to his labelled can (line 7) for the last line'
     verdict: missed

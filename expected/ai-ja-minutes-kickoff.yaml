@@ -37,7 +37,7 @@ findings:
     message: 「〇〇部」が埋まっていません
     verdict: correct
     note: catalog J27; found by chaffjs 0.38.0
-  - rule: ai-generated-composite
+  - rule: test:invented-detail
     line: 27
     what: 一行の依頼から、導入8年・スケジュール・体制・宿題と期限まで、会議の中身をすべて作っている
     verdict: missed
