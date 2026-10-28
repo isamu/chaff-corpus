@@ -68,8 +68,3 @@ findings:
     what: "\"Once a week, take ten minutes to:\" hands over to a list; four of the six sections open their list this way"
     verdict: missed
     note: "found by lab main"
-  - rule: contrast-framing
-    line: 57
-    what: '"The goal is an inbox that shows you what needs your attention, not one that buries it."'
-    verdict: missed
-    note: catalog E12 (X, not Y) as the closing line
