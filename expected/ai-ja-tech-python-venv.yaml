@@ -49,7 +49,7 @@ findings:
     message: このコードブロックだけ言語名がありません（言語名のあるブロック 10 個）
     verdict: correct
     note: the one block with no language name (.gitignore content); not an AI sign
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 117
     what: 「まとめ」が本文の3点を箇条書きで言い直すだけ
     verdict: missed

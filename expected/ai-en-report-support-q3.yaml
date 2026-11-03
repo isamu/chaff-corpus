@@ -29,7 +29,7 @@ findings:
     what: both lists hold exactly three items (three factors, three recommendations)
     verdict: missed
     note: rule-of-three did not fire on a document whose every list has three items
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 45
     what: the Conclusion restates the Executive Summary (busy quarter, faster responses, the login issue) and adds "highlighted the value of closer coordination"
     verdict: missed

@@ -28,7 +28,7 @@ findings:
     what: どの節も「〜のだと思う。」「〜かもしれない。」「〜と心から思っている。」の総括文で終わる（13・21・27行）
     verdict: missed
     note: "candidate pattern: every section ends in a summary sentence; shape-detectable at paragraph ends"
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 31
     what: 「おわりに」が本文の要約（見える景色や一日の過ごし方が変わった）を繰り返す
     verdict: missed

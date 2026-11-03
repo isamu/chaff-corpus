@@ -11,7 +11,7 @@ findings:
     what: '"38% of employees who left" and "score 22 points higher" are not in the request'
     verdict: missed
     note: "catalog B01 (invented detail): statistics a plain request did not give"
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 62
     what: the Recommendation repeats the Executive Summary and ends "A small investment now could … help build a more connected organization"
     verdict: missed

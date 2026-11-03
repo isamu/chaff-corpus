@@ -28,7 +28,7 @@ findings:
     what: 結果の 3 項目に 1 対 1 で対応する太字の札 3 項目の対策（課題の数に揃えた対策）
     verdict: missed
     note: "candidate pattern: one countermeasure per finding, three bold-labelled items mirroring the three results; bold-label-list needs 5 items"
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 37
     what: 「おわりに」が謝辞と「より働きやすい環境づくりを進めていきます」だけで、何も足していない
     verdict: missed
