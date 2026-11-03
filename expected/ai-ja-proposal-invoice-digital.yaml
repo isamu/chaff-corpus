@@ -58,7 +58,7 @@ findings:
     message: 「〇万円」が埋まっていません
     verdict: correct
     note: "catalog J27: a 〇〇 blank (a name, a sum, a period) left inside a sentence of the body, where the value belongs, not an example"
-  - rule: empty-conclusion
+  - rule: test:empty-conclusion
     line: 60
     what: 「まとめ」が期待される効果の項目を一文に並べ直しただけ
     verdict: missed
