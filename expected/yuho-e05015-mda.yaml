@@ -16,41 +16,6 @@ findings:
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: correct
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 1,098,24940.65982,47035.33国土交通省707,12126
-    message: 半角の「1」と書いています（この文書はふつう全角の「１」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,596,197103.0(注)生産実績の金額は、販売価格で表示しております。
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,596,197103.0不動産賃貸等事業――合計2,596,197103.0
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,596,197103.0不動産賃貸等事業185,073101.5合計2,78
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,714,664111.21,199,885111.0ｃ.販売実績セグメントの
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,714,664111.21,199,885111.0不動産賃貸等事業――――
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 2,781,270102.9(注)主要相手先別の販売実績は、次のとおりであります
-    message: 半角の「2」と書いています（この文書はふつう全角の「２」。115 箇所のうち 27 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
     text: ａ．繰延税金資産の回収可能性繰延税金資産の計上にあたっては、将来の課税所得見込み

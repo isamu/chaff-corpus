@@ -1,10 +1,6 @@
 id: ietf-draft-httpapi-ratelimit-headers-10
 chaff: 0.34.0
 findings:
-  - rule: undefined-acronym
-    line: 129
-    sha256: 2ada534049735847ec4cb0bac69c710bf8d8b30ef9ddc86e1becfcf177cf9e41
-    verdict: unjudged
   - rule: spelling-consistency
     line: 160
     sha256: 70fc80339527d25c5bcf5a1d8915470ec8b25f60caba8702451456d0dd2a6275
@@ -17,15 +13,6 @@ findings:
     line: 243
     sha256: 201accb087bd7aa3cf852bc2b5f1ec645d52bfbf2ce499c7cbaa07c5be8c0f8e
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 303
-    sha256: 57411c3ab1e7a39cc454d0688331cf81b91dac09825ce7588a324f8d54b6564e
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 343
-    sha256: 54b01fff15eb580be2659d59e316242e96295222643c71985ded33c7754c222e
-    verdict: false-positive
-    note: each parameter's definition opens with the spec's fixed formula (The … parameter value conveys …), a formula every item carries
   - rule: one-sentence-paragraph-run
     line: 347
     sha256: 6b7d15b71bfca004da831cced8caca2d6aede7f9cd338fba9eeac56e1eb89113
@@ -66,10 +53,6 @@ findings:
     line: 775
     sha256: 2f55529875c4332543253553e8c280b16cfa80a11ecaf7c3cc77c56f0c27e543
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 1036
-    sha256: 229dcb09aeec641894e81b8df2cfb64d18ac07c501dc15c74a3f3e24a75a575e
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 1152
     sha256: d4f663c3ac3c7d6e951e09c23b84548965e5d581adf2714b0646f0a24c04622b
@@ -93,15 +76,6 @@ findings:
   - rule: max-sentence-length
     line: 1546
     sha256: e0e8ebbe6946044c05977070f3b3e66f9abc9b570d5c731afacfcbeb5662c732
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 1675
-    sha256: 73f7e967bfd6215f7dad51dde716431ee5ccdf0f38c20dcb902bb3143297d0dd
-    verdict: false-positive
-    note: UNIX is the operating system's name written in capitals (UNIX timestamp), not an acronym
-  - rule: undefined-acronym
-    line: 1821
-    sha256: bd59c0a3fff050ca6c09f655c9d65bdfecfbcf72edbd1ee985d88977d2466079
     verdict: unjudged
   - rule: name-variant
     line: 1826

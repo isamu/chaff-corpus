@@ -85,12 +85,6 @@ findings:
     message: '"CMOC" is used without an expansion (11 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 144
-    text: OR, Skip to the topics of interest to yo
-    message: '"OR" is used without an expansion (11 such acronyms)'
-    verdict: false-positive
-    note: "'OR,' opening a line is a capitalised conjunction, not an acronym"
-  - rule: undefined-acronym
     line: 147
     text: SE Role?](https://youtu.be/H4352jlI2MQ?t
     message: '"SE" is used without an expansion (11 such acronyms)'

@@ -1,11 +1,6 @@
 id: gitlab-meetings
 chaff: 0.34.0
 findings:
-  - rule: ai-structure
-    line: 10
-    sha256: 9cc1bc2fab608ee1ffb9379b2b1bda647bc13812274407678e6bafb041d22a02
-    verdict: false-positive
-    note: a GitLab handbook page; question headings and bold-lead tips are the handbook's house form, not a sign of generation
   - rule: bold-label-list
     line: 16
     sha256: c37111f5f03a21a2541b66f13b297cf1edb84f949ad896eb65d46f054a060da9

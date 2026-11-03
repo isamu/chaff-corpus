@@ -18,9 +18,3 @@ findings:
     message: '"add-on" here, where the document usually writes "addon" (1 of 3)'
     verdict: correct
     note: 「add-on」 in prose where the page writes addon(s) elsewhere
-  - rule: contraction-consistency
-    line: 198
-    text: Do not run this on an
-    message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: false-positive
-    note: the full form in a safety warning, for emphasis

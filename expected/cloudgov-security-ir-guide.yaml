@@ -170,34 +170,16 @@ findings:
     text: ie. CryptoLocker) targeting TTS staff
     message: '"ie." has some of its periods but not all'
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 261
-    text: Guidelines for addressing High-sev issue
-    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: concrete-evidence-density
     line: 267
     text: ""
     message: Section "2 - Medium Severity" has no number, code or link (4 of 17 sections)
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 276
-    text: Guidelines for addressing Medium-sev iss
-    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: concrete-evidence-density
     line: 282
     text: ""
     message: Section "3 - Low Severity" has no number, code or link (4 of 17 sections)
     verdict: unjudged
-  - rule: colon-lead-in
-    line: 290
-    text: Guidelines for addressing Low-sev issues
-    message: 5.2 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: false-positive
-    note: 'an incident-response runbook: each lead-in hands over a real list (checklist steps, sitrep recipients, the fields to record, per-severity guidelines), the kind how_to_fix keeps ("Real lists (steps, parts) can stay"); a procedure document, which the rule does not run on in the docs genre; given by lab main'
   - rule: colon-lead-in
     line: 300
     text: Follow this checklist if an event turns

@@ -160,17 +160,6 @@ findings:
     text: 組合の名称　　　サンコール労働組合　　　組合員数 515名組織の状況　　　単一組
     message: この文は 279 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 17
-    text: の男女の賃金の差異（％）（注）１.全労働者うち正規雇用労働者うちパート・有期労働
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: 「労働者の男女の賃金の差異」 is the statutory item name, quoted as the law has it
-  - rule: no-doubled-joshi
-    line: 17
-    text: の男女の賃金の差異①提出会社当事業年度補足説明管理職に占める女性労働者の割合（％
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: stray-space
     line: 17
     text: 　　はないため、記載を省略しております。
@@ -625,11 +614,6 @@ findings:
     line: 41
     text: の設備の新設のセグメント別計画は、次のとおりであります。(1) 重要な設備の新設
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 41
-    text: HDD用サスペンション生産設備5,409-自己資金及び借入金-2024年3月-プ
-    message: 「HDD」が説明なしで使われています（説明のない略語 14 個）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 49

@@ -11,11 +11,6 @@ findings:
     text: NASA’s SpaceX Crew-13 mission to the Int
     message: '"NASA" is used without an expansion (8 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 25
-    text: EDT, Thursday, Oct. 1, from Space Launch
-    message: '"EDT" is used without an expansion (8 such acronyms)'
-    verdict: unjudged
   - rule: oxford-comma-consistency
     line: 57
     text: Julianna Scheiman, director, NASA Scienc
@@ -36,13 +31,14 @@ findings:
     text: VHF radio frequency 146.940 MHz and KSC
     message: '"VHF" is used without an expansion (8 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 101
-    text: ISS National Lab, @SpaceX
-    message: '"ISS" is used without an expansion (8 such acronyms)'
-    verdict: unjudged
   - rule: name-variant
     line: 103
     text: NASAKennedy, ISS, ISS National Lab
     message: '"NASAKennedy" is written "NASA Kennedy" elsewhere in the document (case, width or punctuation)'
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 103
+    text: ISS, ISS National Lab
+    message: '"ISS" is used without an expansion (5 such acronyms)'
+    verdict: correct
+    note: "the release writes International Space Station in full (13, 19, 25, 107) but never ties ISS to it"

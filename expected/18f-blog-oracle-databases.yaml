@@ -1,11 +1,6 @@
 id: 18f-blog-oracle-databases
 chaff: 0.33.0
 findings:
-  - rule: contraction-consistency
-    line: 18
-    text: Reference to any non-federal entity does
-    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 26
     text: "'s first technical tutorial blog post [s"

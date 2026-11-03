@@ -18,12 +18,6 @@ findings:
     message: 28 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
     note: the casual voice the request asked for (seriously, roughly, usually); not padding
-  - rule: ai-generated-composite
-    line: 7
-    text: "## 1. Turn everything off and on again"
-    message: '"section-length-uniformity, colon-lead-in, ai-structure" occur together in this document (3 signals, 3 needed)'
-    verdict: false-positive
-    note: one of its three signals is colon-lead-in on two procedure lead-ins (lines 9, 26, false positives); given by lab main
   - rule: ai-structure
     line: 7
     text: "## 1. Turn everything off and on again"

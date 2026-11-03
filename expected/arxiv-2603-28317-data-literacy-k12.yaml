@@ -89,9 +89,3 @@ findings:
     message: A space before ","
     verdict: false-positive
     note: the arXiv HTML leaves 'ISBN ,' where the bibliography style's ISBN value is empty; a conversion gap, not the authors' typing
-  - rule: unknown-word
-    line: 147
-    text: "medica 22 (3), pp. 276–282. Cited by: §3"
-    message: '"medica" is not in the dictionary; did you mean "medina"?'
-    verdict: false-positive
-    note: "'medica' is part of a Latin journal name (Biochemia medica)"

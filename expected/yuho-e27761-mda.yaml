@@ -56,11 +56,6 @@ findings:
     text: )財務活動の結果使用した資金は、12億95百万円（前事業年度は31億59百万円）
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
     verdict: unjudged
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 3,736116.7その他301112.1報告セグメント計16,513116.2
-    message: 半角の「3」と書いています（この文書はふつう全角の「３」。34 箇所のうち 7 箇所が違う）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: ③資本の財源及び資金の流動性についての分析ａ．資金調達の方針当社は、原則として、

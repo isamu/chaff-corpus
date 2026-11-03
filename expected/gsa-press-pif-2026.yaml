@@ -13,13 +13,6 @@ findings:
     verdict: unjudged
   - rule: undefined-acronym
     line: 32
-    text: TTS Engineering and USAi. The PIF progra
-    message: '"TTS" is used without an expansion (2 such acronyms)'
-    verdict: correct
-    note: the release writes Technology Transformation Services (30, 34) but never ties TTS to it
-  - rule: undefined-acronym
-    line: 36
-    text: USGSA.
-    message: '"USGSA" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: "@USGSA is a social-media handle, not an acronym in prose"
+    what: TTS, used without an expansion
+    verdict: missed
+    note: the release writes Technology Transformation Services (30, 34) but never ties TTS to it; lost when the @USGSA false positive went and TTS was left alone below the rule's minimum count

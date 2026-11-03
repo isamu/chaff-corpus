@@ -17,11 +17,6 @@ findings:
     line: 33
     sha256: 552869818e3acaff3b44798c7d967550350baa9b3f7018ce1452edacfc26f26e
     verdict: unjudged
-  - rule: ai-tell
-    line: 43
-    sha256: 425579545be510513f27adb6cb93b771db5be1e1f634d68e7738f978ffa97f2c
-    verdict: false-positive
-    note: a daily listing of many papers' abstracts by different authors; the phrases are one per abstract, spread over some 900 lines, so no single text piles them up
   - rule: max-paragraph-length
     line: 43
     sha256: bec603ada66e086c2ccd8a413b6eeb8e8aba83ec6d9513ee3338271b5d4358ce

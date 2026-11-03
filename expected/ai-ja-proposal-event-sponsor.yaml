@@ -7,12 +7,6 @@ findings:
     message: 「〇〇」が埋まっていません
     verdict: correct
     note: catalog J27; found by chaffjs 0.40.0
-  - rule: no-mixed-desumasu
-    line: 7
-    text: 承認をお願いします。
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: a memo in plain form with the request line in polite form; the conventional shape of a short 稟議
   - rule: unfilled-placeholder
     line: 7
     text: 〇〇市民マラソン」に、協賛金30万円で協賛したい。承認をお願いします。
