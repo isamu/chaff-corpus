@@ -115,7 +115,8 @@ findings:
     line: 697
     text: The digital link requirement starts from
     message: '"link requirement starts" appears 8 times (limit 5)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "each worked example ends with the notice's formula (The digital link requirement starts from …), one per example"
   - rule: max-sentence-length
     line: 728
     text: The digital link requirement for sales d

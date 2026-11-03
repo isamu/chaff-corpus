@@ -392,7 +392,8 @@ findings:
   - rule: ngram-repetition
     line: 1421
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"There are no issues\" is the line each project report carries when it has none to raise, a formula every item carries, not the writers' phrasing"
   - rule: expletive-construction
     line: 1424
     sha256: 03662a7dfceb39998237a49d66bdd5fc312b864674f5c9a1c87a517b9c0b3c7f

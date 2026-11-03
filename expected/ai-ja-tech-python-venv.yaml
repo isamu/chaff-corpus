@@ -5,7 +5,8 @@ findings:
     line: 1
     text: 【初心者向け】Pythonの仮想環境（venv）の使い方をわかりやすく解説
     message: 「ai-tell、sentence-rhythm、padded-intro、closing-cliche」が同じ文書にそろっています（4 種、2 種から）
-    verdict: unjudged
+    verdict: correct
+    note: each input is judged correct (the title's ai-tell, the rhythm, the padded intro, the closing); the composite now anchors on the first signal's line
   - rule: ai-tell
     line: 1
     text: 【初心者向け】Pythonの仮想環境（venv）の使い方をわかりやすく解説
@@ -53,12 +54,6 @@ findings:
     what: 「まとめ」が本文の3点を箇条書きで言い直すだけ
     verdict: missed
     note: the closing restates the body as three bullets
-  - rule: ai-generated-composite
-    line: 123
-    text: 新しいプロジェクトを始めるときは、まず仮想環境を作る習慣をつけておきましょう！
-    message: 「sentence-rhythm、padded-intro、closing-cliche」が同じ文書にそろっています（3 種、2 種から）
-    verdict: correct
-    note: each input is judged correct; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: closing-cliche
     line: 123
     text: 新しいプロジェクトを始めるときは、まず仮想環境を作る習慣をつけておきましょう！

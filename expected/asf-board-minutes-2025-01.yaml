@@ -48,7 +48,8 @@ findings:
   - rule: ngram-repetition
     line: 140
     sha256: 386a2317d2266fe692265d22a3a06805ee004015b23f2bc73bb0fc401f8354bf
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"No report was submitted\" is the minutes' fixed line for each project that did not report, a formula every item carries"
   - rule: undefined-acronym
     line: 150
     sha256: 5ef5aa2e11cf9c612e0c6d4bb5698c7ea901cb78c31c9fbd77d921d5565981cc

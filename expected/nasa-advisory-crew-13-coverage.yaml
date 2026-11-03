@@ -40,4 +40,5 @@ findings:
     line: 103
     text: ISS, ISS National Lab
     message: '"ISS" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "the release writes International Space Station in full (13, 19, 25, 107) but never ties ISS to it"

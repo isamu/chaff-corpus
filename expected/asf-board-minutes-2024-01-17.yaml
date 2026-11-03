@@ -72,7 +72,8 @@ findings:
   - rule: ngram-repetition
     line: 604
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"software related to\" is the fixed wording of each project's mission line (… the creation and maintenance of software related to …), a formula every item carries"
   - rule: max-sentence-length
     line: 621
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392

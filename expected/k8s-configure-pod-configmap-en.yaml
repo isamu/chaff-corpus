@@ -17,7 +17,8 @@ findings:
     line: 36
     text: You can use either `kubectl create confi
     message: '"to create a ConfigMap" appears 6 times (limit 5)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a task page that repeats its action (create the ConfigMap) in each step"
   - rule: contraction-consistency
     line: 54
     text: When you are creating a ConfigMap based
