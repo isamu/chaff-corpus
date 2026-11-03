@@ -1,12 +1,6 @@
 id: chrg-119hhrg62934-strategic-forces-posture-fy2026
 chaff: 0.36.0
 findings:
-  - rule: unknown-word
-    line: 1701
-    text: flyout of the B-21. So 145 is what I am
-    message: '"flyout" is not in the dictionary; did you mean "flout"?'
-    verdict: false-positive
-    note: "'flyout', the military term for a fleet's planned production"
   - rule: name-variant
     line: 2073
     text: Northern Commad if those

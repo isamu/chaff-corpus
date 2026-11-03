@@ -21,12 +21,6 @@ findings:
     text: This guidance reminds Board supervised b
     message: This sentence runs 34 words (limit 18)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 25
-    text: This guidance reminds Board supervised b
-    message: '"not legally authorized" appears 6 times (limit 5)'
-    verdict: false-positive
-    note: borrowers not legally authorized to work in the US are the guidance's subject; the phrase names that category each time
   - rule: max-sentence-length
     line: 29
     text: As with all lending activities, banking

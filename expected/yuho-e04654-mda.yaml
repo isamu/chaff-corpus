@@ -79,12 +79,6 @@ findings:
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
     verdict: correct
     note: 「11月1日」 in the second table where the first writes 「11月１日」
-  - rule: fullwidth-alnum-consistency
-    line: 1
-    text: 8,45795.7合計307,81499.6（注）最近２事業年度の主な相手先別の
-    message: 半角の「8」と書いています（この文書はふつう全角の「８」。16 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: 8,457 (thousand yen) run into the next cell (95.7) of a flattened table; a multi-digit figure, which the report writes half-width
   - rule: ngram-repetition
     line: 1
     text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上

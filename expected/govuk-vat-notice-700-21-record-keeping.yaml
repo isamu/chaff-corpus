@@ -31,12 +31,6 @@ findings:
     text: "### Example 2"
     message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 322
-    text: "The following rule has the force of law:"
-    message: '"following rule has" appears 13 times (limit 5)'
-    verdict: false-positive
-    note: "\"The following rule has the force of law\" is the notice's fixed label on every force-of-law box, a formula each item carries"
   - rule: max-sentence-length
     line: 326
     text: If this is the case, this mixed supply s
@@ -116,6 +110,11 @@ findings:
     line: 632
     text: XML, CSV import and export, and download
     message: This list punctuates differently from the rest (1 in this document)
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 697
+    text: The digital link requirement starts from
+    message: '"link requirement starts" appears 8 times (limit 5)'
     verdict: unjudged
   - rule: max-sentence-length
     line: 728

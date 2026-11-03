@@ -6,11 +6,6 @@ findings:
     text: "* **build:** make client chunkImportMap"
     message: '"build" and other bold labels open 298 list items (5 needed)'
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 5
-    text: deps:** update all non-major dependencie
-    message: '"deps: update all non-major" appears 129 times (limit 5)'
-    verdict: unjudged
   - rule: sentence-rhythm
     line: 64
     text: See [8.1.0-beta.0 changelog](https://git

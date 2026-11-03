@@ -61,11 +61,6 @@ findings:
     text: section 56 for provisions about that rig
     message: '"provisions about that" does not appear in section 56 (Right to price reduction)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 810
-    text: EEC and Directive 1999/44/EC of the Euro
-    message: '"EEC" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
   - rule: unused-definition
     line: 810
     text: “Consumer Rights Directive” means Direct

@@ -80,15 +80,15 @@ findings:
     note: a spaced hyphen used as a dash
   - rule: contraction-consistency
     line: 700
+    what: "'is not' in \"Unlike most TypeScript features, this is not ...\" where the page mostly writes 'isn't'"
+    verdict: missed
+    note: "'you are / is not' where the page mostly writes 'you're / isn't'; no longer reported since isamu/lab#2164 (a stressed or contrasted 'is not'), a loss the maintainer accepted there"
+  - rule: contraction-consistency
+    line: 700
     text: Because of this, it's a feature which yo
     message: "\"you are\" is written \"you're\" elsewhere in the document"
     verdict: correct
     note: "'you are / is not' where the page mostly writes 'you're / isn't'"
-  - rule: contraction-consistency
-    line: 700
-    what: "'is not' in \"Unlike most TypeScript features, this is not ...\" where the page mostly writes 'isn't'"
-    verdict: missed
-    note: "'you are / is not' where the page mostly writes 'you're / isn't'; no longer reported since isamu/lab#2164 (a stressed or contrasted 'is not'), a loss the maintainer accepted there"
   - rule: contraction-consistency
     line: 705
     text: Though we will not go into depth here.

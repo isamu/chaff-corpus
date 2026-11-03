@@ -69,6 +69,10 @@ findings:
     line: 604
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 604
+    sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
+    verdict: unjudged
   - rule: max-sentence-length
     line: 621
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
@@ -220,10 +224,6 @@ findings:
   - rule: unbalanced-bracket
     line: 1124
     sha256: 0254fd7742cf97e43fdc035fb1fd4652f9700f81e1d54d881a977b0f5dbcbe59
-    verdict: unjudged
-  - rule: ngram-repetition
-    line: 1209
-    sha256: 6c3e9ed1ff84ef3c8cd95ec63555556195fbe7f859a0165731c92386514b7e5f
     verdict: unjudged
   - rule: orthographic-variant
     line: 1230

@@ -37,9 +37,3 @@ findings:
     message: The quote mark ' here, where the document usually writes ’‘ (1 of 17)
     verdict: correct
     note: a straight apostrophe where the post otherwise writes curly ones
-  - rule: contraction-consistency
-    line: 92
-    text: When you select a link to an outside web
-    message: "\"you are\" is written \"you're\" elsewhere in the document"
-    verdict: false-positive
-    note: the footnote is GSA's standard external-link disclaimer, boilerplate rather than the authors' prose

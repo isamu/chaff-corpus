@@ -1,12 +1,6 @@
 id: 18f-blog-fearless-spreadsheet-formulas
 chaff: 0.36.0
 findings:
-  - rule: contraction-consistency
-    line: 19
-    text: Reference to any non-federal entity does
-    message: "\"does not\" is written \"doesn't\" elsewhere in the document"
-    verdict: false-positive
-    note: the GSA non-endorsement disclaimer at the top is standard boilerplate, not the author's prose, which uses contractions
   - rule: unqualified-superlative
     line: 25
     text: If spreadsheet formulas are the most pro

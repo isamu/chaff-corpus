@@ -13,6 +13,11 @@ findings:
     message: "\"do not\" is written \"don't\" elsewhere in the document"
     verdict: correct
     note: the page mixes the full and contracted forms; it uses the contraction elsewhere
+  - rule: ngram-repetition
+    line: 36
+    text: You can use either `kubectl create confi
+    message: '"to create a ConfigMap" appears 6 times (limit 5)'
+    verdict: unjudged
   - rule: contraction-consistency
     line: 54
     text: When you are creating a ConfigMap based
@@ -31,12 +36,6 @@ findings:
     message: "\"does not\" is written \"doesn't\" elsewhere in the document"
     verdict: correct
     note: the page mixes the full and contracted forms; it uses the contraction elsewhere
-  - rule: ngram-repetition
-    line: 84
-    text: Now, download the sample configuration a
-    message: '"create the ConfigMap" appears 7 times (limit 5)'
-    verdict: false-positive
-    note: a task page that repeats its action (create the ConfigMap) in each step
   - rule: max-sentence-length
     line: 750
     text: As a
