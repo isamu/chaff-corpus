@@ -28,7 +28,8 @@ findings:
     line: 8
     text: "- Excellent noise cancelling on trains a"
     message: 2 of 2 lists have exactly three items (70% allowed)
-    verdict: unjudged
+    verdict: correct
+    note: "three pros and three cons, the generated review's triads"
   - rule: list-item-form-mix
     line: 15
     text: Call quality is average outdoors

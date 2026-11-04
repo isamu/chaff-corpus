@@ -35,7 +35,8 @@ findings:
     line: 13
     text: "- プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBで"
     message: 箇条書き 2 個のうち 2 個が 3 項目です（70% まで）
-    verdict: unjudged
+    verdict: correct
+    note: "three problems and a three-bullet summary, the generated article's triads"
   - rule: latin-spacing
     line: 101
     text: " PowerShell では、セキュリティの設定により `Activate.ps"

@@ -11,7 +11,8 @@ findings:
     line: 15
     text: それがかえって胸に刺さった。
     message: 「ai-tell、honesty-marker」が同じ文書にそろっています（2 種、2 種から）
-    verdict: unjudged
+    verdict: correct
+    note: "both inputs judged correct (ai-tell 15, honesty-marker)"
   - rule: ai-tell
     line: 15
     text: それがかえって胸に刺さった。

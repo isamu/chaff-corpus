@@ -5,7 +5,8 @@ findings:
     line: 3
     text: "## Summary"
     message: '"rule-of-three, closing-cliche, ai-structure" occur together in this document (3 signals, 3 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: "all three inputs judged correct (rule-of-three, closing-cliche 33, ai-structure)"
   - rule: ai-structure
     line: 3
     text: "## Summary"
@@ -16,7 +17,8 @@ findings:
     line: 17
     text: "- Three to five short items, each of one"
     message: 2 of 2 lists have exactly three items (70% allowed)
-    verdict: unjudged
+    verdict: correct
+    note: "both lists hold exactly three items (the format, the three benefits), the generated triad"
   - rule: bold-label-list
     line: 25
     what: '"**More timely:**", "**More likely to be read:**", "**Less work:**"'

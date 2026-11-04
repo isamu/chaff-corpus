@@ -23,7 +23,8 @@ findings:
     line: 7
     text: "## 1. Turn everything off and on again"
     message: '"section-length-uniformity, padded-intro" occur together in this document (2 signals, 2 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: "both inputs judged correct (section-length-uniformity, padded-intro 3)"
   - rule: ai-structure
     line: 7
     text: "## 1. Turn everything off and on again"

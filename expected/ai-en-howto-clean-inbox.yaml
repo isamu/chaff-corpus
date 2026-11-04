@@ -7,16 +7,12 @@ findings:
     message: Section length varies by only 17% (want at least 35%)
     verdict: correct
     note: five steps of the same size (17%); the template how-to shape
-  - rule: announcing-opener
-    line: 3
-    what: "\"The good news is that\" (after \"you're not alone\")"
-    verdict: missed
-    note: catalog E33 (The good news is)
   - rule: padded-intro
     line: 3
     text: The good news is that you don't need to
     message: '"the good news is" is an opening that fits any article'
-    verdict: unjudged
+    verdict: correct
+    note: "catalog E33 (The good news is): the stock reassurance opener"
   - rule: ai-generated-composite
     line: 5
     text: '## Step 1: Declare "inbox bankruptcy" on'

@@ -27,7 +27,8 @@ findings:
     line: 35
     text: "- 在宅勤務者の経済的負担を軽減し、働きやすさを高める"
     message: 箇条書き 2 個のうち 2 個が 3 項目です（70% まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the three stock purposes (負担軽減・採用競争力・コスト削減) are the generated triad; the timeline beside it is real data"
   - rule: request-without-deadline
     line: 45
     text: ご検討のほど、よろしくお願いいたします。
