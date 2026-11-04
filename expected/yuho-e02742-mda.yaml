@@ -18,18 +18,8 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
-    text: （親会社株主に帰属する当期純利益）経常利益に特別損益を加えた税金等調整前当期純利
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
     text: ｂ．経営成績当連結会計年度の経営成績は、半導体製造装置向け及び工作機械向けで一部
     message: 「経営成績当連結会計年度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: これは主に税金等調整前当期純利益8,766百万円、仕入債務の増加1,793百万円
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 1

@@ -32,11 +32,6 @@ findings:
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
-  - rule: ngram-repetition
-    line: 111
-    text: Be aware that you may have to leave the
-    message: '"to leave the property" appears 7 times (limit 5)'
-    verdict: unjudged
   - rule: contraction-consistency
     line: 191
     text: It’s worth getting contents insurance to

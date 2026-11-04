@@ -17,9 +17,3 @@ findings:
     message: この文は 161 文字あります（160 文字まで）
     verdict: correct
     note: one character over the limit
-  - rule: max-kanji-continuous
-    line: 99
-    text: 追加された約15,000河川については、令和7年度（2025年度）末までに、洪水
-    message: 「洪水浸水想定区域図」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 洪水浸水想定区域図 is a term of the 水防法; it cannot be reworded

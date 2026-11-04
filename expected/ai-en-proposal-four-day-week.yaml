@@ -9,9 +9,10 @@ findings:
     note: the conversational register the request asked for (honestly, probably, really); not an AI sign
   - rule: cliche
     line: 9
-    what: '"meetings that could probably have been an email"'
-    verdict: missed
-    note: a worn joke; otherwise the proposal reads as human
+    text: Most of the hard thinking happens in a f
+    message: '"could probably have been an email" is a cliché'
+    verdict: correct
+    note: a worn joke; otherwise the proposal reads as human; found by chaffjs 0.42.0
   - rule: honesty-marker
     line: 13
     text: And honestly, other studios are already

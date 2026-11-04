@@ -21,11 +21,6 @@ findings:
     text: ABC buy policy and long lead time compon
     message: '"ABC" is used without an expansion (36 such acronyms)'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 9
-    text: CAD files - Quality requirements - Techn
-    message: '"CAD" is used without an expansion (36 such acronyms)'
-    verdict: unjudged
   - rule: bracket-nesting
     line: 19
     text: 6.5 In the event of termination of this

@@ -21,11 +21,6 @@ findings:
     text: 一般会計　（組織）経済産業本省　（項）クールジャパン推進費　等
     message: 「東日本大震災復興特別会計」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 73
-    text: これら54委託事業の委託契約書等によれば、会社は、委託費の対象となる経費として、
-    message: 「等の業務に従事し」が 8 回出てきます（5 回まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 75
     text: 16部局等は、委託事業の終了後、委託契約書に基づき会社から提出された委託事業の実
@@ -125,11 +120,6 @@ findings:
     line: 121
     text: 会社は、83委託事業等に係る人件費について、延べ1,524人（委託事業延べ816
     message: 「は」で出した主題から述語まで 154 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 123
-    text: しかし、資源エネルギー庁が実施した「災害時に備えた社会的重要インフラへの自衛的な
-    message: 「自家用発電設備等利用促進対策事業」は漢字が 16 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 123

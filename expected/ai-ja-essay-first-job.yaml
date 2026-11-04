@@ -7,11 +7,18 @@ findings:
     message: 「正直に言うと」と前置きしています
     verdict: correct
     note: "「正直に言うと」: the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it"
+  - rule: ai-generated-composite
+    line: 15
+    text: それがかえって胸に刺さった。
+    message: 「ai-tell、honesty-marker」が同じ文書にそろっています（2 種、2 種から）
+    verdict: correct
+    note: "both inputs judged correct (ai-tell 15, honesty-marker)"
   - rule: ai-tell
     line: 15
-    what: 「それがかえって胸に刺さった」
-    verdict: missed
-    note: catalog J22 (刺さる)
+    text: それがかえって胸に刺さった。
+    message: 「刺さる」が揃っています（点 5、4 まで）
+    verdict: correct
+    note: catalog J22 (刺さる); found by chaffjs 0.42.0
   - rule: test:moral-ending
     line: 31
     what: 「あのひとことがなければ…背筋が伸びる言葉だ」と題の「ひとこと」に戻って締める

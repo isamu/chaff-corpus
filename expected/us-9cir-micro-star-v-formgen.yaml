@@ -13,12 +13,6 @@ findings:
     message: This paragraph runs 13 sentences (limit 12)
     verdict: correct
     note: a 13-sentence paragraph (one sentence per line, one paragraph)
-  - rule: undefined-acronym
-    line: 43
-    text: MAP files.
-    message: '"MAP" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: the name of the game's file type (MAP files), not an acronym
   - rule: doubled-punctuation
     line: 66
     text: ..

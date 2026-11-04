@@ -86,11 +86,6 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。56 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「（平成27年度)」 opens full-width and closes half-width
-  - rule: max-kanji-continuous
-    line: 57
-    text: (4) 全国公共図書館協議会編. 2015年度（平成27年度) 公立図書館におけ
-    message: 「全国公共図書館協議会編」は漢字が 11 字続いています（8 字まで）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 57
     text: ) 公立図書館における課題解決支援サービスに関する報告書. 全国公共図書館協議会
@@ -111,26 +106,6 @@ findings:
     line: 74
     text: なおこれらの研究については高島正憲氏（関西学院大学経済学部専任講師）の教示を得た
     message: 「関西学院大学経済学部専任講師」は漢字が 14 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 77
-    text: 例えば、
-    message: 「地方史研究協議会編」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 81
-    text: (9) 福島幸宏. 占領軍のだまし方. 京都府立総合資料館メールマガジン. 20
-    message: 「京都府立総合資料館」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 84
-    text: (10) “日本の図書館”.諸外国の公共図書館に関する調査報告書. シー・ディー
-    message: 「文部科学省委託事業」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 105
-    text: 第67回日本図書館情報学会研究大会シンポジウム記録:「デジタルアーカイブと図書館
-    message: 「日本図書館情報学会研究大会」は漢字が 13 字続いています（8 字まで）
     verdict: unjudged
   - rule: hankaku-kana
     line: 110
@@ -156,9 +131,4 @@ findings:
     line: 123
     text: でも分析が行われている。
     message: 「でも」で始まる文が 1 個あります（1 個から）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 133
-    text: 補記：本稿脱稿後、
-    message: 「東京外国語大学国際日本学研究」は漢字が 14 字続いています（8 字まで）
     verdict: unjudged

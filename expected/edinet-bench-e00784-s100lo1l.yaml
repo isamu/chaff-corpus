@@ -369,19 +369,9 @@ findings:
     verdict: correct
     note: EY, part of the audit firm's name, is never expanded; organisation names stay reported by the maintainer's decision (names in chaff.yaml, the rule's how_to_fix)
   - rule: max-kanji-continuous
-    line: 105
-    text: 【連結損益計算書】  (単位：百万円) 前連結会計年度(自　2019年４月１日
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
     line: 113
     text: ③【連結株主資本等変動計算書】前連結会計年度（自　2019年４月１日　至　202
     message: 「資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 28 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  (単位：百万円) 前連結会計年度(自　20
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 117

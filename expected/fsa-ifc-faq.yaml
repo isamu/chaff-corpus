@@ -16,11 +16,6 @@ findings:
     text: " 登録審査手続及び登録要件（2）各金融商品取引業の登録要件②人的構成要件(iv)"
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。27 箇所のうち 3 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 19
-    text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録
-    message: 「適格機関投資家等特例業務」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
   - rule: ngram-repetition
     line: 19
     text: 日本に拠点を設置する場合は、一般的には、金融商品取引法に関する知識と、日本の登録

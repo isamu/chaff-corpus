@@ -99,12 +99,6 @@ findings:
     message: Table 4 is never referred to in the text
     verdict: correct
     note: Table 4 is never mentioned in the text
-  - rule: contraction-consistency
-    line: 493
-    text: “No one — I don’t read this as targeting
-    message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: false-positive
-    note: a quoted participant response; the quotation keeps the speaker's contraction
   - rule: figure-reference-order
     line: 505
     text: "Figure 7: Projected session time by item"

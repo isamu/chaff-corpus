@@ -31,6 +31,12 @@ findings:
     message: 「プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBではバージョン2.0が必要」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
     verdict: correct
     note: one item ends in a noun, the others in verbs; an editor would align them. Not an AI sign
+  - rule: rule-of-three
+    line: 13
+    text: "- プロジェクトAではライブラリのバージョン1.0が必要なのに、プロジェクトBで"
+    message: 箇条書き 2 個のうち 2 個が 3 項目です（70% まで）
+    verdict: correct
+    note: "three problems and a three-bullet summary, the generated article's triads"
   - rule: latin-spacing
     line: 101
     text: " PowerShell では、セキュリティの設定により `Activate.ps"

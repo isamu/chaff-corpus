@@ -9,15 +9,22 @@ findings:
     note: five fixes of the same size (19%)
   - rule: padded-intro
     line: 3
-    what: '"You hit print. Nothing happens. … Sound familiar?"'
-    verdict: missed
-    note: catalog E47/J24 (reader-address opener), the 'Have you ever' family
+    text: Sound familiar?
+    message: '"sound familiar" is an opening that fits any article'
+    verdict: correct
+    note: catalog E47/J24 (reader-address opener), the 'Have you ever' family; found by chaffjs 0.42.0
   - rule: adverb-overuse
     line: 5
     text: roughly in order of "try this first."
     message: 28 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
     note: the casual voice the request asked for (seriously, roughly, usually); not padding
+  - rule: ai-generated-composite
+    line: 7
+    text: "## 1. Turn everything off and on again"
+    message: '"section-length-uniformity, padded-intro" occur together in this document (2 signals, 2 needed)'
+    verdict: correct
+    note: "both inputs judged correct (section-length-uniformity, padded-intro 3)"
   - rule: ai-structure
     line: 7
     text: "## 1. Turn everything off and on again"

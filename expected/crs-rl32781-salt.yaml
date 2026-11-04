@@ -11,11 +11,6 @@ findings:
     text: Recent Congresses and Administrations ha
     message: This sentence runs 47 words (limit 45)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 31
-    text: Generally, through the SALT deduction, t
-    message: '"and local taxes paid" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 35
     text: The SALT deduction could allow state and

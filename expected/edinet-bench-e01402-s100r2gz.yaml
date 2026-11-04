@@ -815,11 +815,6 @@ findings:
     text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)売上高47,
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 105
-    text: 【連結損益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１日
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 105
     text: 【連結損益計算書】  （単位：百万円） 前連結会計年度(自　2021年４月１日
@@ -874,11 +869,6 @@ findings:
     line: 117
     text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)営業活動によ
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  （単位：百万円） 前連結会計年度(自　20
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 117

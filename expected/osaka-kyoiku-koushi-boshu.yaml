@@ -126,11 +126,6 @@ findings:
     text: 教諭（養護教諭）が産前産後休暇や育児休業を取得する期間に任用する産休補助臨時講師
     message: この文は 142 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 234
-    text: （注）上記の給与額は、教職調整額・地域手当・義務教育等教員特別手当が含まれていま
-    message: 「義務教育等教員特別手当」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 240
     text: ヶ月（日単位）以上の期間を勤務した場合は、一般の退職手当が支給されます。

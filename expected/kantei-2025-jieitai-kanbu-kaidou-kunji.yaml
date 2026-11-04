@@ -49,9 +49,3 @@ findings:
     message: 一文に読点が 10 個あります（6 個まで）
     verdict: correct
     note: 一文に読点 10 個
-  - rule: topic-predicate-distance
-    line: 38
-    text: なぜ自分が行かねばならないのか、イラクの人たちが、道路や学校、給水、そういうこと
-    message: 「は」で出した主題から述語まで 109 字あります（80 字まで）
-    verdict: false-positive
-    note: この文の「は」の主題はどれも 30 字以内に述語がある（来てほしいのは…日本であった、応えるのは…自衛隊しかない）

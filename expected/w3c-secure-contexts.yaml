@@ -9,10 +9,6 @@ findings:
     line: 9
     sha256: 394e8f0639da70ff59381229ce5dc540eed47a16c284384db8ee560273b4edab
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 15
-    sha256: b03df883e3c474cc5d0c260c981aaa3a9ecb765622fdb287b15efca4ed4b8579
-    verdict: unjudged
   - rule: contraction-consistency
     line: 27
     sha256: 942963fd4dd2260019a370f19925884b37a9f68e8c5cabda3dccb18da68ae829

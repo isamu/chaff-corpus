@@ -111,12 +111,6 @@ findings:
     message: 「及び」と書いています（この文書はふつう「および」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「及び」 in a note where the article writes 「および」 elsewhere
-  - rule: max-kanji-continuous
-    line: 90
-    text: (5) 国立研究開発法人科学技術振興機構. 戦略的創造研究推進事業におけるデータ
-    message: 「戦略的創造研究推進事業」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official name of a JST programme in a cited title
   - rule: bracket-width-consistency
     line: 145
     text: )の動向. カレントアウェアネス. 2020, (345), CA1983, p

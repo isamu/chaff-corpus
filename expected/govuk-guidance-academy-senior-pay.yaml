@@ -31,11 +31,6 @@ findings:
     text: The requirements aim to ensure appropria
     message: '"reasonable" and other vague words: 5 per 1000 words (limit 4)'
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 49
-    text: For the purposes of these controls, acad
-    message: '"academy trusts should" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: unqualified-superlative
     line: 59
     text: Where a proposed increase in executive r

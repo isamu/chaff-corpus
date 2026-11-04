@@ -2,12 +2,6 @@ id: kantei-2025-okinawa-zenbotsusha-tsuitoshiki-aisatsu
 chaff: 0.36.0
 findings:
   - rule: max-kanji-continuous
-    line: 5
-    text: 戦後八十年、沖縄全戦没者追悼式が執り行われるに当たり、沖縄戦において、戦場に斃（
-    message: 「沖縄全戦没者追悼式」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official name of the ceremony (沖縄全戦没者追悼式), which cannot be split
-  - rule: max-kanji-continuous
     line: 15
     text: 本年三月、西普天間住宅地区跡地に、高度な医療・研究機能を有する健康医療拠点が誕生
     message: 「西普天間住宅地区跡地」は漢字が 10 字続いています（8 字まで）

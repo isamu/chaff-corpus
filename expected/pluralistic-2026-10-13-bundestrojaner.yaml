@@ -43,12 +43,6 @@ findings:
     message: This sentence runs 69 words (limit 45)
     verdict: correct
     note: a 69-word sentence
-  - rule: contraction-consistency
-    line: 25
-    text: This argument was so indisputable, it's
-    message: "\"cannot\" is written \"can't\" elsewhere in the document"
-    verdict: false-positive
-    note: '"You cannot make..." is a quoted slogan; the quotation keeps its own wording'
   - rule: max-sentence-length
     line: 29
     text: The most spectacular example is unquesti

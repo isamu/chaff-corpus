@@ -1,12 +1,24 @@
 id: ai-en-proposal-rewrite-newsletter
 chaff: 0.36.0
 findings:
+  - rule: ai-generated-composite
+    line: 3
+    text: "## Summary"
+    message: '"rule-of-three, closing-cliche, ai-structure" occur together in this document (3 signals, 3 needed)'
+    verdict: correct
+    note: "all three inputs judged correct (rule-of-three, closing-cliche 33, ai-structure)"
   - rule: ai-structure
     line: 3
     text: "## Summary"
     message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, headings in a stock form, list items opening with a bold label"
     verdict: correct
     note: found by lab main; found by chaffjs 0.40.0
+  - rule: rule-of-three
+    line: 17
+    text: "- Three to five short items, each of one"
+    message: 2 of 2 lists have exactly three items (70% allowed)
+    verdict: correct
+    note: "both lists hold exactly three items (the format, the three benefits), the generated triad"
   - rule: bold-label-list
     line: 25
     what: '"**More timely:**", "**More likely to be read:**", "**Less work:**"'
@@ -14,6 +26,7 @@ findings:
     note: catalog E18 (bold labels, en); the draft had none
   - rule: closing-cliche
     line: 33
-    what: '"We would welcome any feedback on this proposal."'
-    verdict: missed
-    note: catalog E36 (closing offer)
+    text: We would welcome any feedback on this pr
+    message: Closes with "would welcome any feedback"
+    verdict: correct
+    note: catalog E36 (closing offer); found by chaffjs 0.42.0

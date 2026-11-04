@@ -125,11 +125,6 @@ findings:
     text: Please be sure that the promotion docume
     message: "\"Please be sure that the promotion document has \"comment\" access enabled to 'GitLab' to ensure the review and approval process is not delayed.\" opens with a verb; the other items in this list open with a noun phrase (1 of 3)"
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 260
-    text: All three of the business results highli
-    message: '"business results highlighted" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 264
     text: The reason we require feedback providers
@@ -290,6 +285,12 @@ findings:
     text: " ."
     message: A space before "."
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 543
+    text: The People Business Partner at the reque
+    message: '"the Manager should" appears 6 times (limit 5)'
+    verdict: false-positive
+    note: "a process handbook assigns each step to a role (the Manager should ...); repeating the actor keeps each duty exact"
   - rule: hyphen-as-dash
     line: 555
     text: " - Access changed (if required)"
