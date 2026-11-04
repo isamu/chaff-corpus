@@ -6,7 +6,7 @@ findings:
     text: 違反は、[レポート API](/ja/docs/Web/API/Reportin
     message: 「ことができます。」が 10 回出てきます（5 回まで）
     verdict: correct
-    note: "「ことができます。」 ends ten sentences of the page; the plain 「できます」 or another ending would vary it, the repetition the rule is for"
+    note: 「ことができます。」 ends ten sentences of the page; the plain 「できます」 or another ending would vary it, the repetition the rule is for
   - rule: no-doubled-joshi
     line: 43
     text: の閲覧コンテキストのための有効なソースを定義します。

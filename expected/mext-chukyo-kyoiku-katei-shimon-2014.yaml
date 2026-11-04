@@ -31,12 +31,6 @@ findings:
     message: 半角の片仮名「｣」があります（全角は「」」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: max-kanji-continuous
-    line: 19
-    text: 特に学力については，学校教育法第三十条第二項に示された「基礎的な知識及び技能」，
-    message: 「学校教育法第三十条第二項」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: a statute citation (学校教育法第三十条第二項), which cannot be split
   - rule: max-sentence-length
     line: 19
     text: 特に学力については，学校教育法第三十条第二項に示された「基礎的な知識及び技能」，
@@ -183,12 +177,6 @@ findings:
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: ngram-repetition
-    line: 33
-    text: これからの学習指導要領等については，必要な教育内容を系統的に示すのみならず，育成
-    message: 「育成すべき資質･」が 6 回出てきます（5 回まで）
-    verdict: false-positive
-    note: 「育成すべき資質・能力」 is the consultation's key term, repeated because it is what the request is about
   - rule: hankaku-kana
     line: 35
     text: ･能力と，各教科等の役割や相互の関係はどのように構造化されるべきか。

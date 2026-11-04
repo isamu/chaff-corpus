@@ -9,9 +9,10 @@ findings:
     note: a sweeping claim the post never checks, the opener of the pile judged correct on 34 and 53; found by pending lab PRs; found by chaffjs 0.40.0
   - rule: padded-intro
     line: 5
-    what: "\"The good news is that ... In this guide, we'll walk through ...\""
-    verdict: missed
-    note: the stock opening of a generated guide
+    text: The good news is that backing up your ph
+    message: '"the good news is" is an opening that fits any article'
+    verdict: correct
+    note: the stock opening of a generated guide; found by chaffjs 0.42.0
   - rule: unqualified-superlative
     line: 5
     text: In this guide, we'll walk through the be
@@ -90,9 +91,10 @@ findings:
     note: "\"For most people, a great setup looks like this\": the generated post's sweeping recommendation"
   - rule: cliche
     line: 67
-    what: "\"The best backup plan is the one you'll actually stick with\""
-    verdict: missed
-    note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39
+    text: The best backup plan is the one you'll a
+    message: "\"is the one you'll actually stick with\" is a cliché"
+    verdict: correct
+    note: the "best X is the one you'll actually use" aphorism, also in ai-en-tech-password-manager:39; found by chaffjs 0.42.0
   - rule: closing-cliche
     line: 67
     text: Your future self will thank you.

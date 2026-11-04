@@ -457,11 +457,6 @@ findings:
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度(2022
     message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 101
-    text: 【連結損益計算書】           (単位：百万円)          前連
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: doubled-word
     line: 109
     text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高6,2704,62520
@@ -482,11 +477,6 @@ findings:
     line: 109
     text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
     message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 113
-    text: ④【連結キャッシュ・フロー計算書】           (単位：百万円)
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 113

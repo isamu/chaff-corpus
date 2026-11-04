@@ -56,11 +56,6 @@ findings:
     text: There are two types of subcontracting pl
     message: This paragraph runs 7 sentences (limit 5)
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 99
-    text: According to the SBA, PCRs "view many fe
-    message: "\"they're\" is written differently from the rest of the document"
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 99
     text: Contracting officers have a few obligati

@@ -17,12 +17,6 @@ findings:
     text: デジタル庁としては、給付主体に対して公金受取口座の情報を連携することで給付主体の
     message: この文は 163 文字あります（140 文字まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 43
-    text: また、登録等手続きや審査・登録処理に関する情報（申請手続きの方法、申請手続きの年
-    message: 「公的給付等口座登録簿」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official name of a statutory register (公的給付等口座登録簿), a proper noun that cannot be split
   - rule: heading-end-punctuation-mix
     line: 76
     text: "### A7"

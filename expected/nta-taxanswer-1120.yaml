@@ -6,11 +6,6 @@ findings:
     text: その年の1月1日から12月31日までの間に自己または自己と生計を一にする配偶者や
     message: この文は 141 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 37
-    text: 健康の保持増進および疾病の予防への取組として一定の健康診断や予防接種などを行って
-    message: 「特定一般用医薬品等購入費」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 37
     text: 健康の保持増進および疾病の予防への取組として一定の健康診断や予防接種などを行って
@@ -21,20 +16,10 @@ findings:
     text: 補填される部分の金額を除きます。）のうち、12,000円を超える部分の金額（88
     message: 「補填」と書いています（この文書はふつう「補てん」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 39
-    text: なお、セルフメディケーション税制（特定一般用医薬品等購入費を支払った場合の医療費
-    message: 「特定一般用医薬品等購入費」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
   - rule: one-sentence-paragraph-run
     line: 53
     text: 医療費の領収書から「医療費控除の明細書」または「セルフメディケーション税制の明細
     message: 一文だけの段落が 6 個続いています（4 個まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 59
-    text: おって、セルフメディケーション税制の提出書類等については、コード1129「特定一
-    message: 「特定一般用医薬品等購入費」は漢字が 12 字続いています（8 字まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 63
@@ -80,16 +65,6 @@ findings:
     line: 83
     text: ◆動画を見る（「YouTube「国税庁動画チャンネル」」へ）
     message: 括弧が 3 重になっています（2 重まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 119
-    text: 1129 特定一般用医薬品等購入費を支払ったとき（医療費控除の特例）【セルフメデ
-    message: 「特定一般用医薬品等購入費」は漢字が 12 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 121
-    text: 1132 セルフメディケーション税制の対象となる特定一般用医薬品等購入費
-    message: 「特定一般用医薬品等購入費」は漢字が 12 字続いています（8 字まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 122

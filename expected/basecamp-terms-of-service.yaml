@@ -6,12 +6,6 @@ findings:
     text: Because we don’t know every one of our c
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
-  - rule: undefined-acronym
-    line: 14
-    text: HEY, Highrise, Campfire, Backpack, Ta-da
-    message: '"HEY" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: HEY is a product name written in capitals, not an acronym
   - rule: oxford-comma-consistency
     line: 16
     text: We have specific ownership policies for

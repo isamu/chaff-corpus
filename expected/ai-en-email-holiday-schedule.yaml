@@ -17,3 +17,8 @@ findings:
     what: '"feel free to reach out" and "Wishing you all a restful and happy holiday season!"'
     verdict: missed
     note: catalog E35 (stock courtesies) and D (closing cheer)
+  - rule: closing-cliche
+    line: 26
+    text: Wishing you all a restful and happy holi
+    message: Closes with "Wishing"
+    verdict: unjudged

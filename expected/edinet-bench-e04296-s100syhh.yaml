@@ -13,11 +13,6 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 5
-    text: 1963年１月東京証券取引所市場第二部に上場。1967年７月自動車運送取扱事業の
-    message: 「月東京証券取引所市場第二部」は漢字が 13 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
     text: 1981年６月仙台営業所鶴代倉庫開設。1981年11月東北丸八運輸株式会社(宮城
     message: 「月仙台営業所鶴代倉庫開設」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
@@ -35,11 +30,6 @@ findings:
     line: 5
     text: 2003年11月丸八クリエイト株式会社が宅地建物取引業免許取得。2005年２月本
     message: 「宅地建物取引業免許取得」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 5
-    text: 2022年４月東京証券取引所市場第二部からスタンダード市場へ移行。
-    message: 「月東京証券取引所市場第二部」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-paragraph-length
     line: 5
@@ -306,11 +296,6 @@ findings:
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2022
     message: 「は」で出した主題から述語まで 133 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 105
-    text: 【連結損益計算書】           (単位：千円)          前連結
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: doubled-word
     line: 113
     text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高2,527,6002,0
@@ -325,11 +310,6 @@ findings:
     line: 113
     text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年12月１日　至
     message: 「株主資本資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 32 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】           (単位：千円)
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 117

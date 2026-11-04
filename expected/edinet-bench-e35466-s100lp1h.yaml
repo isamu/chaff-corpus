@@ -700,11 +700,6 @@ findings:
     text: 2投資有価証券売却益－1,997特別利益合計－1,999税金等調整前当期純利益3
     message: 半角の「2」と書いています（この文書はふつう全角の「２」。287 箇所のうち 83 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 105
-    text: 【連結損益計算書】  （単位：千円）  前連結会計年度(自　平成31年４月１日
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 109
     text: (自　令和２年４月１日　至　令和３年３月31日)当期純利益217,213285,
@@ -749,11 +744,6 @@ findings:
     line: 117
     text: )営業活動によるキャッシュ・フロー  税金等調整前当期純利益330,891399
     message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 117
-    text: ④【連結キャッシュ・フロー計算書】  （単位：千円）  前連結会計年度(自　平成
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 117

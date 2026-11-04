@@ -12,6 +12,11 @@ findings:
     what: '"The good news is that"'
     verdict: missed
     note: catalog E33 (The good news is)
+  - rule: padded-intro
+    line: 3
+    text: The good news is that you don't need exp
+    message: '"the good news is" is an opening that fits any article'
+    verdict: unjudged
   - rule: ai-generated-composite
     line: 35
     text: Happy brewing!

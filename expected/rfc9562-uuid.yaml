@@ -93,10 +93,6 @@ findings:
     line: 326
     sha256: e9cd3cb6053c6d0739e6380db3598d38073ce6a0b93136122aae0e21e937f211
     verdict: unjudged
-  - rule: contraction-consistency
-    line: 436
-    sha256: c5a21d79750fcbcd431244c17e9ead817855a9482029da5c8287513493d41026
-    verdict: unjudged
   - rule: max-sentence-length
     line: 542
     sha256: 3dcfed79cdc6697334992ba2841b580ba32af6b894f29c66830084d3e33893f9
@@ -272,10 +268,6 @@ findings:
   - rule: acronym-expansion-conflict
     line: 1997
     sha256: 46698b000be3fbf9a78a9ca86b144b9774baa4012e21748352c09aa40546c4e9
-    verdict: unjudged
-  - rule: contraction-consistency
-    line: 2016
-    sha256: 1a3c7c953db6978a3c68875c0bba0bdf67934aa70147171c814d5816aa9e9370
     verdict: unjudged
   - rule: unknown-word
     line: 2017

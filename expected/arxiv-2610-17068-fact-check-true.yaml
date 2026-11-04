@@ -54,12 +54,6 @@ findings:
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: "a stray closing quote after the parenthesised query string: it closes nothing"
-  - rule: ngram-repetition
-    line: 45
-    text: This restriction had a negligible effect
-    message: '"posts Grok judged true" appears 7 times (limit 5)'
-    verdict: false-positive
-    note: "\"posts Grok judged true\" is the paper's measured quantity; repeating it keeps the measure exact"
   - rule: orthographic-variant
     line: 49
     text: crowd-sourced queries and corrections.

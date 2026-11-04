@@ -61,11 +61,6 @@ findings:
     text: RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があること、ま
     message: 「RNA」が説明なしで使われています（説明のない略語 5 個）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 54
-    text: (2)家庭や共同生活施設などヒト同士の接触する機会が多いところでヒトからヒトへ飛
-    message: 「飛沫感染等直接感染」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
   - rule: number-style-consistency
     line: 56
     text: 二枚貝を、生あるいは十分に加熱調理しないで食べた場合

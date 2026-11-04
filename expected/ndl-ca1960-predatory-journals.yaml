@@ -35,18 +35,6 @@ findings:
     text: 同誌は2016年版（2017年6月更新）までJournal Impact Fac
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 65
-    text: 柴山昌彦文部科学大臣による記者会見での言及
-    message: 「柴山昌彦文部科学大臣記者会見録」は漢字が 15 字続いています（8 字まで）
-    verdict: false-positive
-    note: the title of a cited MEXT document (記者会見録), which cannot be reworded
-  - rule: max-kanji-continuous
-    line: 76
-    text: "北海道大学北キャンパス図書室. “午後の講座 : オープンアクセスとハゲタカジャ"
-    message: 「北海道大学学術成果」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of a university repository (北海道大学学術成果コレクション)
   - rule: bracket-width-consistency
     line: 161
     text: (24)で示したJournal Citation ReportsのOncotar

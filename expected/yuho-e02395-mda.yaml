@@ -56,11 +56,6 @@ findings:
     text: ③販売実績当連結会計年度における販売実績は次のとおりであります。製品区分販売高(
     message: 「販売実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: これは主に、税金等調整前当期純利益6,442百万円、減価償却費2,258百万円、
-    message: 「税金等調整前当期純利益」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と

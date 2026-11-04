@@ -92,9 +92,3 @@ findings:
     message: 句点を「．」と書いています（この文書はふつう「。」。95 箇所のうち 1 箇所が違う）
     verdict: correct
     note: a full-width 「．」 in one citation where the others use 「.」
-  - rule: max-kanji-continuous
-    line: 155
-    text: (11)鈴木康平. “メタデータの二次利用条件とクリエイティブ・コモンズ”．「メ
-    message: 「木村麻衣子責任編集」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an editor's name followed by 責任編集, a bibliographic role

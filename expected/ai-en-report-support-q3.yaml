@@ -19,6 +19,11 @@ findings:
     message: '"New triage process" and other bold labels open 6 list items (5 needed)'
     verdict: correct
     note: bold-label-list is a ja-only rule; the same shape in English is not counted; found by chaffjs 0.40.0
+  - rule: rule-of-three
+    line: 23
+    text: "- **New triage process:** Tickets are no"
+    message: 2 of 2 lists have exactly three items (70% allowed)
+    verdict: unjudged
   - rule: test:invented-detail
     line: 23
     what: invented causes for the faster response time (a triage process, an evening shift added in July, saved replies) and an invented customer insight at 29

@@ -1,12 +1,6 @@
 id: crs-r47235-budget-timeline
 chaff: 0.33.0
 findings:
-  - rule: ngram-repetition
-    line: 13
-    text: In years when Congress has adopted a bud
-    message: '"adopted a budget resolution" appears 6 times (limit 5)'
-    verdict: false-positive
-    note: adopting a budget resolution is the event the report times; repeating it keeps the measured event exact (as "posts Grok judged true")
   - rule: max-sentence-length
     line: 19
     text: It has been common in recent practice fo

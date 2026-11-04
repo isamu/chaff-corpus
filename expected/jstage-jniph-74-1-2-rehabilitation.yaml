@@ -77,10 +77,6 @@ findings:
     line: 71
     sha256: 327db0bc1fabce8f0906a9c8d60f22b336f1d63ee241b1da19125a227f4c1e34
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 77
-    sha256: d205610c63fec979738e014c3cf9283f62aa02c4c111f3b688768abbc33404af
-    verdict: unjudged
   - rule: orthographic-variant
     line: 103
     sha256: 45e57bf286416a4d279a990a7eb09f073554be64c8ce13a4a9ba35adb514c03e
@@ -102,16 +98,8 @@ findings:
     sha256: 350e9e1315383bc96ff8e7b4d1a87b596d143fad5278be92230c3f23240a8642
     verdict: unjudged
   - rule: max-kanji-continuous
-    line: 165
-    sha256: c8d686c5666c61745c1a21c2e7d56e140876eb823222a18afea250ad1c59c02c
-    verdict: unjudged
-  - rule: max-kanji-continuous
     line: 169
     sha256: 2e18ab3418ac47a1e9a6994e7eb17b4217e4dc5aaf7cf3e97762ccf246d97c3a
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 205
-    sha256: 2e0f938b3419362f6f44fe3a9e70f666781c10eb0bd46f382494041ad120b394
     verdict: unjudged
   - rule: latin-spacing
     line: 207

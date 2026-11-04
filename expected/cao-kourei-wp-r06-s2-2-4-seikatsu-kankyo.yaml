@@ -301,12 +301,6 @@ findings:
     message: 「PICS」が説明なしで使われています（説明のない略語 4 個）
     verdict: correct
     note: 「高度化PICS」は何の略かが書かれていない
-  - rule: max-kanji-continuous
-    line: 180
-    text: 高齢者等が安心して自動車を運転し外出できるよう、生活道路における交通規制の見直し
-    message: 「高齢運転者等専用駐車区間」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 道路交通法上の制度の名前
   - rule: nominalization
     line: 180
     text: 対策を実施した。
@@ -343,12 +337,6 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「の」が読点を挟まず三つ以上続く
-  - rule: max-kanji-continuous
-    line: 196
-    text: 窓口業務を行う官署が入居する官庁施設について、バリアフリー法に基づく建築物移動等
-    message: 「建築物移動等円滑化誘導基準」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: 法令上の基準の名前
   - rule: nominalization
     line: 208
     text: 運動を実施した。
@@ -649,12 +637,6 @@ findings:
     message: 「調整を行う」は「調整する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「調整を行う」は「調整する」で足りる
-  - rule: max-kanji-continuous
-    line: 295
-    text: また、地域医療介護総合確保基金等を活用し、日常生活圏域で医療・介護等のサービスを
-    message: 「地域医療介護総合確保基金等」は漢字が 13 字続いています（10 字まで）
-    verdict: false-positive
-    note: 基金の名前に「等」が付いたもの
   - rule: nominalization
     line: 295
     text: 支援を行った。

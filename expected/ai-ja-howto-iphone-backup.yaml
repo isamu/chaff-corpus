@@ -25,17 +25,17 @@ findings:
     message: 「「今すぐバックアップ」をクリック」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（5 項目のうち 1 項目）
     verdict: correct
     note: クリック (a noun) among steps ending in verbs
+  - rule: ai-generated-composite
+    line: 37
+    text: 4の暗号化は、地味だけど大事です。これにチェックを入れないと、パスワードやヘルス
+    message: 「ai-tell、section-length-uniformity、closing-cliche」が同じ文書にそろっています（3 種、2 種から）
+    verdict: unjudged
   - rule: ai-tell
     line: 37
-    what: 「地味だけど大事です」
-    verdict: missed
-    note: catalog J22 (地味に family); the casual request produced it
-  - rule: ai-generated-composite
-    line: 56
-    text: 新しいiPhone、楽しんでください！
-    message: 「section-length-uniformity、closing-cliche」が同じ文書にそろっています（2 種、2 種から）
-    verdict: false-positive
-    note: rests on section-length-uniformity, judged false-positive on line 1; one real signal (closing-cliche) is below the limit of 2; given by pending lab PRs
+    text: 4の暗号化は、地味だけど大事です。これにチェックを入れないと、パスワードやヘルス
+    message: 「地味だけど」が揃っています（点 5、4 まで）
+    verdict: correct
+    note: catalog J22 (地味に family); the casual request produced it; found by chaffjs 0.42.0
   - rule: closing-cliche
     line: 56
     text: 新しいiPhone、楽しんでください！
