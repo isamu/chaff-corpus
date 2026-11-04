@@ -33,10 +33,9 @@ findings:
     note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 137
-    text: "The guide should be:"
-    message: 5.4 colon lead-ins to lists per 1000 words (limit 4)
-    verdict: correct
-    note: found by lab main; found by chaffjs 0.40.0
+    what: "\"The guide should be:\", a colon lead-in"
+    verdict: missed
+    note: lost when colon-lead-in stopped counting a lead-in whose own verb states a duty (should); the document is still reported on its other lead-ins
   - rule: excessive-hedging
     line: 156
     text: could possibly occur in production,
