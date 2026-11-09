@@ -12,12 +12,7 @@ findings:
     text: ［申請書入力へ］をクリックしてください。
     message: 括弧「［」の類を、全角で 21 箇所、半角で 27 箇所書いています。この文書には書き方が二通りあります
     verdict: correct
-    note: button names are bracketed both ways on one page, even the same button (［申請者情報を設定］ 54, [申請者情報を設定] 55); the same case as the misses at 54 and 84
-  - rule: bracket-width-consistency
-    line: 54
-    what: "button labels are bracketed both ways on one page: full-width ［申請者情報を設定］ here, half-width [申請者情報を設定] on the next line"
-    verdict: missed
-    note: bracket-width-consistency compares round parentheses only; square brackets are not counted (neither the pinned chaffjs nor lab main reports it)
+    note: button names are bracketed both ways on one page, even the same button (［申請者情報を設定］ 54, [申請者情報を設定] 55; [書類を添付] 84); square brackets are compared since chaffjs 0.43.0, so the misses filed at 54 and 84 are retired
   - rule: bracket-width-consistency
     line: 61
     text: （未設定）の場合や変更する場合には、［連絡先情報を設定］をクリックし、連絡先情報
@@ -30,11 +25,6 @@ findings:
     message: 括弧を「）」と書いています（この文書はふつう「)」。4 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width （未設定） in prose while the page's other parentheses are half-width
-  - rule: bracket-width-consistency
-    line: 84
-    what: half-width [書類を添付] here, full-width ［書類を添付］ for the same button on the next line
-    verdict: missed
-    note: square brackets are not compared (neither the pinned chaffjs nor lab main reports it)
   - rule: unbalanced-bracket
     line: 84
     text: 「電子申請に当たって添付書類の提出が必要又は可能な手続の場合、[書類を添付]ボタ
