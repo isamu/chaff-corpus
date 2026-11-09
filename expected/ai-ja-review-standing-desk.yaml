@@ -30,9 +30,4 @@ findings:
     text: "## 買ったもの"
     message: 構成の 3 項目が、人の記事の 9 割を超えています（3 項目から）。見出しの多さ、節の長さのばらつき、3 つの小見出しに分けた見出し
     verdict: correct
-    note: よかったところ / 気になったところ each split into exactly three subheadings
-  - rule: rule-of-three
-    line: 14
-    what: よかったところ・気になったところがどちらもちょうど 3 項目
-    verdict: missed
-    note: catalog E14/H (every list three items); rule-of-three did not fire
+    note: よかったところ / 気になったところ each split into exactly three subheadings; this is the shape the rule-of-three miss filed at line 14 asked for, so that miss is retired (rule-of-three reads lists, and the one list here has four items)
