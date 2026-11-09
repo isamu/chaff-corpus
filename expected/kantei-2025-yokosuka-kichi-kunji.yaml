@@ -61,9 +61,3 @@ findings:
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
     note: 「〜であります」で終わる文が三つ続く
-  - rule: repeated-sentence-ending
-    line: 25
-    text: いい船でした。「たかつき」というのもいい船でした。「あまつかぜ」というのもいい船
-    message: 「〜でした」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: 「いい船でした」を三度重ねた意図した反復

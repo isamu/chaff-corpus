@@ -82,12 +82,6 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。146 箇所のうち 8 箇所が違う）
     verdict: correct
     note: 「DMP」 set off with spaces in this paragraph only; the article writes DMPの etc. without spaces elsewhere
-  - rule: no-doubled-joshi
-    line: 60
-    text: のための共通データモデルの策定に取り組んだ。同グループは、まずDMPのユースケー
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: "「maDMPsのための共通データモデルの策定」: の separated by a quoted term, reads naturally"
   - rule: stray-space
     line: 60
     text: " た DMP Common Standardのデータモデルの概略を下図に示す。同"
@@ -111,9 +105,3 @@ findings:
     message: 「及び」と書いています（この文書はふつう「および」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「及び」 in a note where the article writes 「および」 elsewhere
-  - rule: bracket-width-consistency
-    line: 145
-    text: )の動向. カレントアウェアネス. 2020, (345), CA1983, p
-    message: 括弧を「)」と書いています（この文書はふつう「）」。49 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the article's own title, (maDMPs) with half-width brackets as in its heading

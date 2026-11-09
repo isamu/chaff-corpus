@@ -2,9 +2,9 @@ id: fomc-minutes-2026-07
 chaff: 0.36.0
 findings:
   - rule: adverb-overuse
-    line: 11
-    text: July 28, 2026, at 10:00 a.m. and continu
-    message: 18 -ly adverbs per 1000 words (limit 15)
+    line: 15
+    text: largely on expectations of higher policy
+    message: 16 -ly adverbs per 1000 words (limit 15)
     verdict: unjudged
   - rule: max-sentence-length
     line: 17

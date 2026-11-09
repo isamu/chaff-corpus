@@ -77,12 +77,6 @@ findings:
     text: " - Challenges for Higher Education, M. E"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: fact-conflict
-    line: 131
-    text: "ISBN , Document Cited by: §1, §5.1."
-    message: '"External Links" is ISBN here, but Document earlier in the same section'
-    verdict: false-positive
-    note: "reference-list metadata ('External Links: ISBN, Document') read as conflicting facts"
   - rule: space-before-punctuation
     line: 131
     text: " , Document Cited by: §1, §5.1."

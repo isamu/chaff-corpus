@@ -151,11 +151,6 @@ findings:
     text: If more than one authorizing official
     message: This sentence runs 47 words (limit 40)
     verdict: unjudged
-  - rule: number-style-consistency
-    line: 483
-    text: two
-    message: '"two" here, where the document usually writes numbers below ten like "6" (1 of 3)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 504
     text: However, if you will be [extending your

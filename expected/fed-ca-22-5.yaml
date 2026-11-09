@@ -1,11 +1,6 @@
 id: fed-ca-22-5
 chaff: 0.36.0
 findings:
-  - rule: adverb-overuse
-    line: 13
-    text: July 8, 2022
-    message: 16 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
   - rule: max-sentence-length
     line: 21
     text: "Applicability: This guidance applies to"

@@ -212,12 +212,6 @@ findings:
     message: '"injurid" is not in the dictionary; did you mean "injured"?'
     verdict: correct
     note: a transcription typo for injuria
-  - rule: unknown-word
-    line: 197
-    text: recompence for services performed for th
-    message: '"recompence" is not in the dictionary; did you mean "recompense"?'
-    verdict: false-positive
-    note: recompence is the period's spelling of recompense (1819), not a typo
   - rule: doubled-punctuation
     line: 201
     text: .. 1 Ves. jr. 243. The principal questio

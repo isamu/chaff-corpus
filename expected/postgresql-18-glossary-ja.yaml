@@ -141,11 +141,6 @@ findings:
     text: の１つの値の内部表現。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 285
-    text: SERVERを参照してください。
-    message: 「SERVER」が説明なしで使われています（説明のない略語 24 個）
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 295
     text: (init fork)もあります。

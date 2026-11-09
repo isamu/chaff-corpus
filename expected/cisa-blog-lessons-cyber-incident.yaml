@@ -1,11 +1,6 @@
 id: cisa-blog-lessons-cyber-incident
 chaff: 0.36.0
 findings:
-  - rule: adverb-overuse
-    line: 7
-    text: July 09, 2026
-    message: 16 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
   - rule: wordy-phrase
     line: 29
     text: The individual had uploaded copies of a

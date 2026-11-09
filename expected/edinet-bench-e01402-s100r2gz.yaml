@@ -740,16 +740,6 @@ findings:
     text: )を公表しておりますが、当社の配当政策は、業績連動型配当の継続実施であり、ROE
     message: 「（」を「)」で閉じています（全角と半角が違います）
     verdict: correct
-  - rule: undefined-acronym
-    line: 77
-    text: GLOBAL GROWTH PLAN2024」（GGP24)を公表しておりますが
-    message: 「GLOBAL」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 77
-    text: GROWTH PLAN2024」（GGP24)を公表しておりますが、当社の配当政
-    message: 「GROWTH」が説明なしで使われています（説明のない略語 14 個）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 93
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度（2022

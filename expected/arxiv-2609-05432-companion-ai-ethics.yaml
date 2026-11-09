@@ -55,21 +55,9 @@ findings:
     message: '"it is worth noting that" emphasises without saying anything'
     verdict: correct
     note: '"It is worth noting that" adds nothing'
-  - rule: weasel-word
-    line: 183
-    text: While our findings are consistent with p
-    message: '"studies show" does not say who'
-    verdict: false-positive
-    note: '"previous studies showing" is followed by the citations [11, 49]'
   - rule: acronym-expansion-conflict
     line: 187
     text: (FATE), developed largely in response to
     message: '"FATE" is expanded as "Fairness, Accountability, Transparency and Explainability" here and as "fairness, accountability, transparency, and explainability" on line 7'
     verdict: correct
     note: FATE is expanded three different ways in the paper (capitals, serial comma, "explainable AI")
-  - rule: weasel-word
-    line: 288
-    text: Phiddian (2025) AI companion apps such a
-    message: '"experts say" does not say who'
-    verdict: false-positive
-    note: '"experts say" is in the headline of a cited news article'

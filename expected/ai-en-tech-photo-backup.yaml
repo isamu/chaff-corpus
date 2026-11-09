@@ -20,11 +20,17 @@ findings:
     verdict: correct
     note: "\"we'll walk through the best ways\": the stock unbacked promise of a generated guide"
   - rule: ai-generated-composite
-    line: 9
-    text: Before diving into specific tools, it he
-    message: '"ai-tell, closing-cliche, colon-lead-in, over-general-claim" occur together in this document (4 signals, 2 needed)'
+    line: 7
+    text: "## The 3-2-1 Rule"
+    message: '"ai-tell, padded-intro, closing-cliche, colon-lead-in, ai-structure, over-general-claim" occur together in this document (6 signals, 2 needed)'
     verdict: correct
-    note: every input judged correct; this is the composite the miss filed at line 67 asked for, now reported at the first signal's line, so that miss is retired
+    note: every input judged correct; the composite once reported at line 9 now anchors on the first heading
+  - rule: ai-structure
+    line: 7
+    text: "## The 3-2-1 Rule"
+    message: "3 structure measures lie past 90% of human articles (3 needed): headings in a stock form, list items opening with a bold label, pros / cons pairs"
+    verdict: correct
+    note: the templated comparison outline (Option sections with bold labels and Pros / Cons) the miss filed at line 17 asked for; found by chaffjs 0.43.0
   - rule: ai-tell
     line: 9
     text: Before diving into specific tools, it he
@@ -37,11 +43,6 @@ findings:
     message: 21 -ly adverbs per 1000 words (limit 15)
     verdict: correct
     note: filler adverbs (simply, automatically, actually) typical of generated how-to prose
-  - rule: ai-structure
-    line: 17
-    what: Option 1/2/3 sections, each a bold-label list followed by bold **Pros:** / **Cons:** lines
-    verdict: missed
-    note: the templated comparison outline; ai-score counted only the bold labels
   - rule: colon-lead-in
     line: 21
     text: "Popular options include:"

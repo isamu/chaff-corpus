@@ -754,12 +754,6 @@ findings:
     text: いったい何々主義という事は私のあまり好まないところで、人間がそう一つ主義に片づけ
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
     verdict: unjudged
-  - rule: doubled-word
-    line: 61
-    text: 国家と云ってあたかも国家に取りつかれたような真似はとうてい我々にできる話でない。
-    message: 「国家国家」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: 国家国家 is a deliberate reduplication (a quoted chant)
   - rule: max-paragraph-length
     line: 61
     text: 個人の幸福の基礎となるべき個人主義は個人の自由がその内容になっているには相違あり
@@ -780,12 +774,6 @@ findings:
     text: 個人の幸福の基礎となるべき個人主義は個人の自由がその内容になっているには相違あり
     message: 「〜です」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
-  - rule: doubled-word
-    line: 62
-    text: 国家と騒ぎ廻る必要はないはずです。火事の起らない先に火事装束をつけて窮屈な思いを
-    message: 「国家国家」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: 国家国家 is a deliberate reduplication (a quoted chant)
   - rule: max-paragraph-length
     line: 62
     text: いったい国家というものが危くなれば誰だって国家の安否を考えないものは一人もない。

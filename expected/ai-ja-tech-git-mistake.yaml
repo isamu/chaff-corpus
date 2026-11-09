@@ -12,9 +12,3 @@ findings:
     what: 「いま思うこと」で新人をのぞきこむ側になった今に戻り、「話せる職場だったのは運がよかった」と教訓で締める
     verdict: missed
     note: catalog B02 (neat callback / moral ending)
-  - rule: excessive-hedging
-    line: 41
-    text: と思われているかもしれませんが、あの日の自分を思い出すと、聞かずにはいられません
-    message: この文は逃げの表現を 2 つ重ねています（「と思われ、かもしれません」）
-    verdict: false-positive
-    note: と思われている is a passive (being thought of as), not a hedge; one hedge only

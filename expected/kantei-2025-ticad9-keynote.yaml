@@ -56,11 +56,6 @@ findings:
     text: そのドローンを実験したのは、どこなのかと。この日本の交通が不便な地域で薬をドロー
     message: 「その」など、指示語で始まる文が 3 文続いています（2 文まで）
     verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 13
-    text: 日本の西に九州という地域があります。その九州に長崎という地域があります。そこに五
-    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 14
     text: このように、アフリカにおきましてはスタートアップを通じた新しいサービス、新しいビ

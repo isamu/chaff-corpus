@@ -69,12 +69,6 @@ findings:
     text: の敗戦時の統計操作の挿話と京都府の「真実数」をなぜ我々は認識し得ているのか。これ
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: doubled-word
-    line: 39
-    text: 時点の「正確さ」には留意しつつも、後生も含めた多様な眼の検証に耐えるために、オル
-    message: 「時点時点」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: 「時点時点」 is a deliberate reduplication (at each point in time), not a doubled word
   - rule: comparative-without-baseline
     line: 47
     text: より深い課題解決支援サービスやオープンデータの提供につながることが期待される。そ

@@ -1,12 +1,6 @@
 id: gov-online-kodomo-seihigai-boshi
 chaff: 0.36.0
 findings:
-  - rule: no-doubled-joshi
-    line: 8
-    text: の被害者のためのワンストップ支援センター（以下「ワンストップ支援センター」といい
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: 「性犯罪・性暴力の被害者のためのワンストップ支援センター」は施設の正式な名前
   - rule: repeated-sentence-ending
     line: 12
     text: 年齢や性別にかかわらず、性暴力の被害を受けることがあります。女性だけではなく、男

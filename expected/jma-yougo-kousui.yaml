@@ -127,18 +127,6 @@ findings:
     text: )の地面の半ば以上を雪が覆う現象。「積雪なし」とは、露場の地面に雪が全くないか、
     message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
-  - rule: unused-definition
-    line: 668
-    text: 「積雪０cm」とは、露場(観測を行う場所)の地面の半ば以上を雪が覆う現象。「積雪
-    message: 「積雪０cm」を定義していますが、本文で使っていません
-    verdict: false-positive
-    note: a glossary defines its terms; they are not meant to be used again
-  - rule: unused-definition
-    line: 668
-    text: 「積雪なし」とは、露場の地面に雪が全くないか、または半ば以上を覆っていない状態。
-    message: 「積雪なし」を定義していますが、本文で使っていません
-    verdict: false-positive
-    note: a glossary defines its terms; they are not meant to be used again
   - rule: bracket-width-consistency
     line: 724
     text: (雪)が繰り返すような現象に対しては「にわか雨(雪)」は用いない。

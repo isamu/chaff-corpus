@@ -21,11 +21,6 @@ findings:
     text: I will then turn to the results of our s
     message: This sentence runs 34 words (limit 25)
     verdict: unjudged
-  - rule: adverb-overuse
-    line: 21
-    text: formerly overheated state. Upside risks
-    message: 17 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 21
     text: When I appeared at this podium one year

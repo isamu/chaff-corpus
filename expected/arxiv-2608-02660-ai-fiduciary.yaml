@@ -1,12 +1,6 @@
 id: arxiv-2608-02660-ai-fiduciary
 chaff: 0.36.0
 findings:
-  - rule: number-style-consistency
-    line: 42
-    text: 4 flags for subsequent work.
-    message: '"4" here, where the document usually writes numbers below ten like "four" (1 of 24)'
-    verdict: false-positive
-    note: "'§4' is a section number, not a count to spell out"
   - rule: citation-reference-mismatch
     line: 60
     text: (Smith 2002; Frankel 2011; Sitkoff 2011;
