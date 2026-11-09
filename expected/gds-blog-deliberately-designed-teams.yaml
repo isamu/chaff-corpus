@@ -2,16 +2,11 @@ id: gds-blog-deliberately-designed-teams
 chaff: 0.36.0
 findings:
   - rule: adverb-overuse
-    line: 3
-    text: July 2026 - People and skills
-    message: 18 -ly adverbs per 1000 words (limit 15)
-    verdict: correct
-    note: many -ly adverbs (deliberately, simultaneously, constructively, regularly ...) in a short post
-  - rule: adverb-overuse
     line: 9
     text: differently. We spend less time talking
     message: 17 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
+    verdict: correct
+    note: many -ly adverbs (deliberately, simultaneously, constructively, regularly ...) in a short post; the finding moved from line 3
   - rule: oxford-comma-consistency
     line: 9
     text: Government spends a lot of time talking

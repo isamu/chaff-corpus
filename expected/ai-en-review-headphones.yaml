@@ -7,12 +7,6 @@ findings:
     message: Section length varies by only 28% (want at least 35%)
     verdict: correct
     note: Short Version, then five feature sections of one size and a Verdict; the template product review
-  - rule: ai-generated-composite
-    line: 3
-    text: After six months of daily use, here's my
-    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
-    verdict: correct
-    note: both inputs judged correct (honesty-marker 3, section-length-uniformity 1)
   - rule: honesty-marker
     line: 3
     text: After six months of daily use, here's my
@@ -23,12 +17,14 @@ findings:
     line: 5
     text: "## The Short Version"
     message: '"honesty-marker, rule-of-three, section-length-uniformity" occur together in this document (3 signals, 2 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: every input judged correct (honesty-marker 3, rule-of-three, section-length-uniformity); the composite once reported at line 3 now anchors on the first heading
   - rule: ai-structure
     line: 5
     text: "## The Short Version"
     message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, pros / cons pairs"
-    verdict: unjudged
+    verdict: correct
+    note: "short sections, even lengths and pros / cons pairs: the generated review's template; found by chaffjs 0.43.0"
   - rule: bold-label-list
     line: 7
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
