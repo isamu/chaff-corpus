@@ -130,9 +130,9 @@ findings:
   - rule: bracket-nesting
     line: 63
     text: FinCEN's special measures rules (e.g. 31
-    message: Brackets nested 4 deep (limit 2)
-    verdict: false-positive
-    note: statute citations with subsection marks (1813(h), 80a-3(a)(1)) inside parenthetical definitions; the legal citation form needs the depth
+    message: Brackets nested 3 deep (limit 2)
+    verdict: correct
+    note: the subsection marks (1010.658(a)(3), 80a-3(a)(1)) are no longer counted; the depth left comes from a doubled parenthesis in the source (("Investment Company Act"), a real slip
   - rule: max-sentence-length
     line: 63
     text: FinCEN's special measures rules (e.g. 31
