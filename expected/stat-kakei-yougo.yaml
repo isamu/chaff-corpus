@@ -16,12 +16,6 @@ findings:
     text: の十のグループのことである。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: unused-definition
-    line: 145
-    text: 「民営借家」とは、居住している世帯がその住宅を借りている場合で、次の「公営借家」
-    message: 「民営借家」を定義していますが、本文で使っていません
-    verdict: false-positive
-    note: a glossary defines terms for other documents; an unused definition is its purpose
   - rule: no-doubled-joshi
     line: 153
     text: の内訳の各項目の対前年実質増減率は、次式により求めている。

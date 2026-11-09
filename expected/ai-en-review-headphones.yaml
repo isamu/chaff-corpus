@@ -19,6 +19,16 @@ findings:
     message: '"my honest take" flags this sentence as candid'
     verdict: correct
     note: '"my honest take": the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it'
+  - rule: ai-generated-composite
+    line: 5
+    text: "## The Short Version"
+    message: '"honesty-marker, rule-of-three, section-length-uniformity" occur together in this document (3 signals, 2 needed)'
+    verdict: unjudged
+  - rule: ai-structure
+    line: 5
+    text: "## The Short Version"
+    message: "3 structure measures lie past 90% of human articles (3 needed): sections of one or two paragraphs, section length variation, pros / cons pairs"
+    verdict: unjudged
   - rule: bold-label-list
     line: 7
     what: '"**Pros:**" / "**Cons:**" lists of exactly three each'
@@ -29,7 +39,7 @@ findings:
     text: "- Excellent noise cancelling on trains a"
     message: 2 of 2 lists have exactly three items (70% allowed)
     verdict: correct
-    note: "three pros and three cons, the generated review's triads"
+    note: three pros and three cons, the generated review's triads
   - rule: list-item-form-mix
     line: 15
     text: Call quality is average outdoors

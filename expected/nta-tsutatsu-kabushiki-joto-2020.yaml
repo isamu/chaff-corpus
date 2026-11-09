@@ -31,9 +31,3 @@ findings:
     text: なお、当該正誤表は、一部改正通達本文のみを訂正したものであり、「租税特別措置法（
     message: この文は 106 文字あります（70 文字まで）
     verdict: correct
-  - rule: no-mixed-desumasu
-    line: 35
-    text: なお、当該正誤表は、一部改正通達本文のみを訂正したものであり、「租税特別措置法（
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: a web-page note about the errata, not part of the letter, is compared with the letter's である style

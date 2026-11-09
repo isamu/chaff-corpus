@@ -20,6 +20,16 @@ findings:
     verdict: correct
     note: "\"we'll walk through the best ways\": the stock unbacked promise of a generated guide"
   - rule: ai-generated-composite
+    line: 7
+    text: "## The 3-2-1 Rule"
+    message: '"ai-tell, padded-intro, closing-cliche, colon-lead-in, ai-structure, over-general-claim" occur together in this document (6 signals, 2 needed)'
+    verdict: unjudged
+  - rule: ai-structure
+    line: 7
+    text: "## The 3-2-1 Rule"
+    message: "3 structure measures lie past 90% of human articles (3 needed): headings in a stock form, list items opening with a bold label, pros / cons pairs"
+    verdict: unjudged
+  - rule: ai-generated-composite
     line: 9
     text: Before diving into specific tools, it he
     message: '"ai-tell, closing-cliche, colon-lead-in, over-general-claim" occur together in this document (4 signals, 2 needed)'

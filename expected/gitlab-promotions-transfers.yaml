@@ -285,12 +285,6 @@ findings:
     text: " ."
     message: A space before "."
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 543
-    text: The People Business Partner at the reque
-    message: '"the Manager should" appears 6 times (limit 5)'
-    verdict: false-positive
-    note: "a process handbook assigns each step to a role (the Manager should ...); repeating the actor keeps each duty exact"
   - rule: hyphen-as-dash
     line: 555
     text: " - Access changed (if required)"

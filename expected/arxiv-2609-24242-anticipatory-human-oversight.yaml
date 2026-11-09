@@ -67,9 +67,3 @@ findings:
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
     note: a restrictive "which" (an architecture which instantiates) where the paper otherwise uses "that"
-  - rule: fact-conflict
-    line: 319
-    text: "2605.27117, Link Cited by: §3.1, footnot"
-    message: '"External Links" is 2605.27117 here, but 2506.01463 earlier in the same section'
-    verdict: false-positive
-    note: two different arXiv identifiers of two different references, not one fact stated twice

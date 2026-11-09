@@ -91,11 +91,6 @@ findings:
     text: 在る絵画，彫刻，工芸品その他の有形の文化的所産である動産等と定義することとしたこ
     message: 「在る」と書いています（この文書はふつう「ある」と書く語です。11 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 52
-    text: の美術品等の公開の促進を図るための措置等
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 56
     text: ただし，当該指定に係る海外の美術品等を公開するため貸与した者の申立てにより強制執
@@ -145,11 +140,6 @@ findings:
     line: 111
     text: 法第3条第2項の申請をしようとする者（以下「申請者」という。）は，次に掲げる事項
     message: この文は 75 文字あります（70 文字まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 114
-    text: の美術品等の所有者の氏名又は名称及び法人にあっては，その代表者の氏名
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 124

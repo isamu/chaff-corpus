@@ -31,12 +31,6 @@ findings:
     message: Exhibit A is referred to, but the document has no Exhibit A
     verdict: correct
     note: Exhibit A is not in the filed text
-  - rule: unused-definition
-    line: 37
-    text: '"Normal Business Hours" shall mean betwe'
-    message: '"Normal Business Hours" is defined but never used'
-    verdict: false-positive
-    note: "extraction artefact: the uses are split by a run of spaces (Normal Business       Hours), so the definition looks unused"
   - rule: vague-deadline
     line: 43
     text: promptly modify the Software or the eGai

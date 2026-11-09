@@ -7,6 +7,11 @@ findings:
     message: 18 -ly adverbs per 1000 words (limit 15)
     verdict: correct
     note: many -ly adverbs (deliberately, simultaneously, constructively, regularly ...) in a short post
+  - rule: adverb-overuse
+    line: 9
+    text: differently. We spend less time talking
+    message: 17 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
   - rule: oxford-comma-consistency
     line: 9
     text: Government spends a lot of time talking

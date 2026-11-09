@@ -33,7 +33,7 @@ findings:
     note: found by lab main; found by chaffjs 0.40.0
   - rule: colon-lead-in
     line: 137
-    what: "\"The guide should be:\", a colon lead-in"
+    what: '"The guide should be:", a colon lead-in'
     verdict: missed
     note: lost when colon-lead-in stopped counting a lead-in whose own verb states a duty (should); the document is still reported on its other lead-ins
   - rule: excessive-hedging

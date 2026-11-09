@@ -6,11 +6,6 @@ findings:
     text: Backend Engineers at GitLab work on our
     message: The first sentence repeats the heading "Backend Engineering Roles at GitLab"
     verdict: unjudged
-  - rule: adverb-overuse
-    line: 21
-    text: largely asynchronous work environment
-    message: 16 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 92
     text: MR Review Time (OMRT)](/handbook/enginee

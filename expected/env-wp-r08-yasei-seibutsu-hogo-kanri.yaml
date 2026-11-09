@@ -1,12 +1,6 @@
 id: env-wp-r08-yasei-seibutsu-hogo-kanri
 chaff: 0.36.0
 findings:
-  - rule: fact-conflict
-    line: 15
-    text: 5年を経過したことなどを踏まえ、2024年から法律の施行状況評価を実施し、202
-    message: 「野生動植物の種」の保存期間が 5年 と書かれていますが、前の所では 29年 です
-    verdict: false-positive
-    note: 「平成29年法律第51号」の「29年」を期間と読んでいる。5年は改正法の施行からの経過年数で、矛盾はない
   - rule: no-doubled-joshi
     line: 15
     text: の種の保存法の在り方の検討を開始しました。

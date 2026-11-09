@@ -23,7 +23,7 @@ findings:
     text: "- 月1回、業者さんが来て水やりと状態チェック"
     message: 箇条書き 2 個のうち 2 個が 3 項目です（70% まで）
     verdict: false-positive
-    note: "one list is the vendor's three services and the other the real placement plan (three places, counted pots); neither is a stock triad"
+    note: one list is the vendor's three services and the other the real placement plan (three places, counted pots); neither is a stock triad
   - rule: list-item-form-mix
     line: 22
     text: 置く場所に合わせて種類を選んでくれる

@@ -5,16 +5,6 @@ findings:
     line: 29
     sha256: cb021a7574d39946d1e56d04ee7c50564c5508e617895a93fd1db3721a469c75
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 45
-    sha256: 57753e3f092936f17c8ceb0b5a52f8d50c77a90e00e3897b765e7c3eac192716
-    verdict: false-positive
-    note: an English name of the board of education's plans, in capitals, not an acronym
-  - rule: undefined-acronym
-    line: 45
-    sha256: eb6def48528cca10b30fc9c76d7167ec6c40321c16f737599b2b3e86bb24c8f8
-    verdict: false-positive
-    note: an English name of the board of education's plans, in capitals, not an acronym
   - rule: max-kanji-continuous
     line: 59
     sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b

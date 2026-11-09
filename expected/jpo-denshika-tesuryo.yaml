@@ -44,21 +44,3 @@ findings:
     text: 電子化手数料の納付期限は、手続書面の提出から30日以内となりますので、電子化手数
     message: 「電子化手数料納付案内」は漢字が 10 字続いています（8 字まで）
     verdict: correct
-  - rule: number-style-consistency
-    line: 121
-    text: 二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額の合計額
-    message: 数え方の数を「二件」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
-  - rule: number-style-consistency
-    line: 121
-    text: 二千四百円に書面一枚につき八百円（二件以上を一の書面でする場合にあっては、一件ご
-    message: 数え方の数を「二千四百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do
-  - rule: number-style-consistency
-    line: 121
-    text: 八百円（二件以上を一の書面でする場合にあっては、一件ごとに一の書面でする場合の額
-    message: 数え方の数を「八百円」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: a quoted cabinet order (手数料令) writes numbers in kanji, as statutes do

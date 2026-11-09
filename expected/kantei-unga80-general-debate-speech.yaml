@@ -71,9 +71,3 @@ findings:
     text: 私は、韓国や中国、東南アジアを始めとするアジアの首脳の皆さんと意見を交わす中にあ
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
     verdict: unjudged
-  - rule: orthographic-variant
-    line: 63
-    text: もって私の演説を閉ずることといたしたいと思います。御清聴ありがとうございました。
-    message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。7 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 「〜をもって」（以て）は機能語で、「持つ」とは別の語

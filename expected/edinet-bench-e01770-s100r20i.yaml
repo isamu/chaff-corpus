@@ -191,16 +191,6 @@ findings:
     text: 今後も当社グループは、企業ビジョン《KYOSAN VISION》の理念を象徴する
     message: 「は」で出した主題から述語まで 101 字あります（80 字まで）
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 21
-    text: KYOSAN VISION》の理念を象徴するコーポレート・スローガン、“Crea
-    message: 「KYOSAN」が説明なしで使われています（説明のない略語 4 個）
-    verdict: unjudged
-  - rule: undefined-acronym
-    line: 21
-    text: VISION》の理念を象徴するコーポレート・スローガン、“Create for
-    message: 「VISION」が説明なしで使われています（説明のない略語 4 個）
-    verdict: unjudged
   - rule: excessive-hedging
     line: 25
     text: 可能性があると考えられる主なリスク要因につきましては、以下のようなものがあります
@@ -456,17 +446,6 @@ findings:
     line: 89
     text: 当社は、金融商品取引法第193条の２第１項の規定に基づき、連結会計年度(2022
     message: 「は」で出した主題から述語まで 131 字あります（80 字まで）
-    verdict: unjudged
-  - rule: doubled-word
-    line: 109
-    text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高6,2704,62520
-    message: 「資本資本」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
-  - rule: doubled-word
-    line: 109
-    text: 資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高6,2704,62529
-    message: 「資本資本」で語が重なっています。どちらかが余分です
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 109

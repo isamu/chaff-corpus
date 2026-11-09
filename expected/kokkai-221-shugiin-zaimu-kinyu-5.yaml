@@ -1,11 +1,6 @@
 id: kokkai-221-shugiin-zaimu-kinyu-5
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 75
-    sha256: 713840b76020120c18529e25cfa05011d20a20e39207dcde21ce9d7f461990d0
-    verdict: false-positive
-    note: the kanji form here means goods; the kana forms are the abstract noun, a different word
   - rule: topic-predicate-distance
     line: 75
     sha256: 627e05dd7869681159e8d11f9c05ab6f96bc521db8d37674a6e876728df0f281

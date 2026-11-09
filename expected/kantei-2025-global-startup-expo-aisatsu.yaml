@@ -7,12 +7,6 @@ findings:
     message: 「見る」と書いています（この文書はふつう「みる」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
     note: 見る (to see) and the auxiliary 〜てみる (to try) are different words, not one word spelled two ways
-  - rule: doubled-word
-    line: 7
-    text: 是非、日本を「幸せな日本」にしてもらいたいと思っています。スタートアップとＡＩ（
-    message: 「是非是非」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: 是非是非 is a spoken emphatic reduplication, transcribed as said
   - rule: max-paragraph-length
     line: 7
     text: それから５５年たって、今回この関西万博が行われ、スタートアップの皆様方がお集まり

@@ -31,12 +31,6 @@ findings:
     message: The quote mark ' here, where the document usually writes ’‘ (3 of 10)
     verdict: correct
     note: a straight apostrophe (You're) where the article otherwise writes curly ones
-  - rule: excessive-hedging
-    line: 67
-    text: Perhaps you like knowing that you may no
-    message: This sentence stacks 2 hedges ("Perhaps, may")
-    verdict: false-positive
-    note: may is the content (a chance of meeting few people), not a second hedge on the claim
   - rule: hyphen-as-dash
     line: 67
     text: " - plants, animals, sounds. Perhaps you"

@@ -24,9 +24,3 @@ findings:
     text: 例えば、これはデータのリストか？順序付きか順序なしか？これは節と関連情報の補足か
     message: 「例えば」と書いています（この文書はふつう「たとえば」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: repeated-sentence-ending
-    line: 48
-    text: 例えば、これはデータのリストか？順序付きか順序なしか？これは節と関連情報の補足か
-    message: 「〜か」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: a run of example questions ending in ka, written as a list inside one sentence

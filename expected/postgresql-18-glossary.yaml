@@ -51,11 +51,6 @@ findings:
     text: CREATE FOREIGN DATA WRAPPER.
     message: '"CREATE FOREIGN DATA WRAPPER" is written in capitals'
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 291
-    text: SERVER.
-    message: '"SERVER" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
   - rule: all-caps-shouting
     line: 297
     text: CREATE FOREIGN TABLE.

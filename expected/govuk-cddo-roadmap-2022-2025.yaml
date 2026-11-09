@@ -122,11 +122,6 @@ findings:
     text: " - A system that unlocks digital transfo"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 182
-    text: All departments will confirm an adoption
-    message: '"All departments will" appears 6 times (limit 5)'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 190
     text: GDX and IDS.

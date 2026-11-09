@@ -62,18 +62,6 @@ findings:
     message: 「【氏名】」が埋まっていません
     verdict: false-positive
     note: 【氏名】 is a form field in a filing example with its value filled in
-  - rule: title-length
-    line: 84
-    text: "### Q3-2：出願した後に、婚姻により発明者等の氏名が変更になりましたが、旧"
-    message: 見出し「Q3-2：出願した後に、婚姻により発明者等の氏名が変更になりましたが、旧氏併記した氏名へ補正することはできますか。」は 55 文字あります（40 文字まで）
-    verdict: false-positive
-    note: an FAQ question used as a heading
-  - rule: title-length
-    line: 88
-    text: "### Q4：書類の氏名欄に旧氏併記の記載を行うために旧氏を証明する書類をあわせ"
-    message: 見出し「Q4：書類の氏名欄に旧氏併記の記載を行うために旧氏を証明する書類をあわせて提出する必要がありますか。」は 50 文字あります（40 文字まで）
-    verdict: false-positive
-    note: an FAQ question used as a heading
   - rule: fullwidth-alnum-consistency
     line: 92
     what: Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same
@@ -83,23 +71,11 @@ findings:
     text: の代表者の氏名の記載も、同様に扱われます。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
-  - rule: title-length
-    line: 117
-    text: "### Q9-2：PCT国際出願にスペースを使用して旧氏を併記した場合、当該出願"
-    message: 見出し「Q9-2：PCT国際出願にスペースを使用して旧氏を併記した場合、当該出願の日本への国内移行の際、国内書面にはどのように記載しますか。」は 63 文字あります（40 文字まで）
-    verdict: false-positive
-    note: an FAQ question used as a heading
   - rule: wordy-phrase
     line: 119
     text: A9-2：国内書面には、戸籍上の氏名又は旧氏を併記した氏名について記載することが
     message: 「することが可能」は、もっと短く言えます
     verdict: correct
-  - rule: title-length
-    line: 123
-    text: "### Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出"
-    message: 見出し「Q10：意匠の国際登録出願（ハーグ出願）、商標の国際登録出願（マドプロ出願）についても旧氏を併記することは可能ですか。」は 58 文字あります（40 文字まで）
-    verdict: false-positive
-    note: an FAQ question used as a heading
   - rule: latin-spacing
     line: 184
     text: " 2715"

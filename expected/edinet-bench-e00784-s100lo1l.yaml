@@ -246,17 +246,6 @@ findings:
     text: ５【研究開発活動】当連結会計年度における研究開発活動は、電子・電池材料、高機能性
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
     verdict: unjudged
-  - rule: doubled-word
-    line: 37
-    text: 賃貸用不動産1,367－97(125,515)－1,464－賃貸物件（大阪府大阪
-    message: 「賃貸賃貸」で語が重なっています。どちらかが余分です
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
-  - rule: doubled-word
-    line: 37
-    text: 賃貸用不動産2,085－502（36,621)22,591－(注)１．帳簿価額の
-    message: 「賃貸賃貸」で語が重なっています。どちらかが余分です
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 37
     text: (2）国内子会社2021年３月31日現在 会社名事業所名（所在地）セグメントの名
