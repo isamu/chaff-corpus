@@ -7,11 +7,11 @@ findings:
     message: '"[Client Name]" was never filled in'
     verdict: correct
     note: a template blank left for the user; the plainest sign the email came from an assistant
-  - rule: cushion-phrase
+  - rule: email-stock-courtesy
     line: 5
     what: '"I hope this message finds you well." as the opener'
     verdict: missed
-    note: catalog E35 (email stock courtesy); the finds-you-well family is said to be in cushion-phrase, which did not fire
+    note: catalog E35 (email stock courtesy); the opener is one of several stacked courtesies (lines 5, 9, 13), which email-stock-courtesy counts; relabelled from cushion-phrase, a word list rather than a rule
   - rule: attachment-not-attached
     line: 9
     text: I understand that invoices can sometimes
