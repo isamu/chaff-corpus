@@ -29,12 +29,14 @@ findings:
     line: 191
     text: " - `x` and `y` - which are both of type"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
+    note: spaced hyphens stand in for a dash around an aside
   - rule: hyphen-as-dash
     line: 191
     text: " - which are both of type `number`."
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
+    note: spaced hyphens stand in for a dash around an aside
   - rule: hyphen-as-dash
     line: 269
     text: " - simply provide a type matching any of"
@@ -75,7 +77,8 @@ findings:
     line: 402
     text: " - it only cares that it has the expecte"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
+    note: a spaced hyphen stands in for a dash
   - rule: contraction-consistency
     line: 408
     text: Almost all features of an `interface` ar

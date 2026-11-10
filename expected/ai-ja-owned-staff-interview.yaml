@@ -22,7 +22,8 @@ findings:
     line: 21
     text: 工場との橋渡しも
     message: 「ai-tell、honesty-marker」が同じ文書にそろっています（2 種、2 種から）
-    verdict: unjudged
+    verdict: correct
+    note: ai-tell (the heading 「工場との橋渡しも」) and honesty-marker stand together in an AI-written interview
   - rule: ai-tell
     line: 21
     text: 工場との橋渡しも
