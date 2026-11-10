@@ -13,30 +13,6 @@ findings:
     message: 「開示等」を、250 行目の定義より前で使っています
     verdict: correct
     note: 「開示等」を第13条の定義（以下「開示等」という）より前の条で使っている
-  - rule: defined-term-form
-    line: 107
-    text: 以下本契約において同じ。）は、乙または第三者が従前から保有していた著作権を除き、
-    message: 「本契約」は 3 行目で定義した語ですが、ここは定義の文の語を足して「以下本契約」と書いています
-    verdict: false-positive
-    note: 「以下本契約において同じ。」は定義語「本契約」をそのまま使う定型句
-  - rule: reference-title-mismatch
-    line: 125
-    text: 再委託）、同第9条（本契約の変更）は、甲による追加学習サービスによる追加学習済み
-    message: 第8条に「再委託」と添えていますが、第8条の見出しは「サービス利用料」です
-    verdict: false-positive
-    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第8条の見出しと比べるのは筋違い
-  - rule: reference-title-mismatch
-    line: 125
-    text: 各自の義務）、同第8条（再委託）、同第9条（本契約の変更）は、甲による追加学習サ
-    message: 第6条に「各自の義務」と添えていますが、第6条の見出しは「対象データの管理」です
-    verdict: false-positive
-    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第6条の見出しと比べるのは筋違い
-  - rule: reference-title-mismatch
-    line: 125
-    text: 本契約の変更）は、甲による追加学習サービスによる追加学習済みモデルの生成に準用す
-    message: 第9条に「本契約の変更」と添えていますが、第9条の見出しは「監査」です
-    verdict: false-positive
-    note: 別の契約（本共同研究開発契約）の条を指しており、この契約の第9条の見出しと比べるのは筋違い
   - rule: undefined-term
     line: 125
     text: 本共同開発契約第6条（各自の義務）、同第8条（再委託）、同第9条（本契約の変更）
@@ -61,24 +37,12 @@ findings:
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。22 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 項番号の「3」の後だけ半角の空白、ほかの項は全角の空白
-  - rule: obligation-without-deadline
-    line: 173
-    text: 支払う。
-    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
-    verdict: false-positive
-    note: 支払の期限は同じ条の第3項（期間の末日から●日以内）にある
   - rule: orthographic-variant
     line: 181
     text: 関わらず、本契約締結日より3年間は、前項の計算式におけるAPI単価を下記計算式の
     message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「前項に関わらず」は「にかかわらず」、ほかは「かかわらず」
-  - rule: obligation-without-deadline
-    line: 197
-    text: 支払う。これにかかる振込手数料は乙が負担するものとする。
-    message: 「支払」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
-    verdict: false-positive
-    note: 支払の期限は前項（第3項）にある。この項は支払方法を定める
   - rule: orthographic-variant
     line: 214
     text: 為をしてはならない。
@@ -97,18 +61,6 @@ findings:
     message: 「関わる」と書いています（この文書はふつう「かかわる」と書く語です。7 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「締結前後に関わらず」は「にかかわらず」
-  - rule: requirement-smell
-    line: 266
-    text: 等を、本契約の遂行のために知る必要のある自己の役員および従業員（以下「役員等」と
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
-  - rule: requirement-smell
-    line: 276
-    text: 等（複製物および改変物を含む。）が記録された媒体、ならびに、未使用の素材、機器お
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 契約の「等」は意図した例示の幅で、要求のあいまいさではない
   - rule: missing-final-period
     line: 305
     text: い

@@ -9,6 +9,11 @@ findings:
     note: 「Each and every」 says one thing twice
   - rule: hyphen-as-dash
     line: 25
+    text: " - and that's pretty common - we can't r"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 25
     text: " - we can't reliably say what results we"
     message: '"-" stands in for a dash'
     verdict: correct

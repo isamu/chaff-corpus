@@ -9,9 +9,10 @@ findings:
     note: "'does not' where the page mostly writes 'doesn't'"
   - rule: hyphen-as-dash
     line: 24
-    what: "a spaced hyphen used as a dash in a list item: `float` - everything is simply `number`"
-    verdict: missed
-    note: the other spaced hyphens on the page are found; this one sits in a list item. Neither chaffjs 0.36.0 nor lab main reports it
+    text: " - everything is simply `number`"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: the other spaced hyphens on the page are found; this one sits in a list item. Neither chaffjs 0.36.0 nor lab main reports it; found by chaffjs 0.44.0
   - rule: max-sentence-length
     line: 41
     text: When a value is of type `any`, you can a
@@ -24,6 +25,16 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 191
+    text: " - `x` and `y` - which are both of type"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
+    line: 191
+    text: " - which are both of type `number`."
+    message: '"-" stands in for a dash'
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 269
     text: " - simply provide a type matching any of"
@@ -60,6 +71,11 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen used as a dash
+  - rule: hyphen-as-dash
+    line: 402
+    text: " - it only cares that it has the expecte"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
   - rule: contraction-consistency
     line: 408
     text: Almost all features of an `interface` ar

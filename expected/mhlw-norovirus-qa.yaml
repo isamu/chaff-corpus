@@ -61,11 +61,6 @@ findings:
     text: RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があること、ま
     message: 「RNA」が説明なしで使われています（説明のない略語 5 個）
     verdict: unjudged
-  - rule: number-style-consistency
-    line: 56
-    text: 二枚貝を、生あるいは十分に加熱調理しないで食べた場合
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 65
     text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
@@ -151,21 +146,6 @@ findings:
     text: 7割では原因食品が特定できていません。ウイルスに感染した食品取扱者を介して食品が
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
-  - rule: number-style-consistency
-    line: 175
-    text: 二枚貝があります。二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: number-style-consistency
-    line: 175
-    text: 二枚貝による食中毒は生や加熱不足のもので発生しており、十分に加熱すれば、食べても
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: number-style-consistency
-    line: 175
-    text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 175
     text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
@@ -175,11 +155,6 @@ findings:
     line: 183
     text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
     message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: number-style-consistency
-    line: 195
-    text: 二枚貝などの食品の場合は、中心部が85℃～90℃で90秒以上の加熱が望まれます。
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 201
@@ -195,11 +170,6 @@ findings:
     line: 201
     text: 国際連合食糧農業機関（FAO)と世界保健機関（WHO)が設立した、食品の国際基準
     message: この文は 190 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: number-style-consistency
-    line: 201
-    text: 二枚貝の加熱調理でウイルスを失活させるには中心部が85～90℃で少なくとも90秒
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 201
@@ -235,11 +205,6 @@ findings:
     line: 217
     text: 調理器具等は洗剤などを使用し十分に洗浄した後、次亜塩素酸ナトリウム※（塩素濃度約
     message: 「は」で出した主題から述語まで 106 字あります（80 字まで）
-    verdict: unjudged
-  - rule: number-style-consistency
-    line: 221
-    text: 二枚貝などを取り扱うときは、専用の調理器具（まな板、包丁等）を使用するか、調理器
-    message: 数え方の数を「二枚」と書いています（この文書はふつう「2種類」の書き方。23 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 221

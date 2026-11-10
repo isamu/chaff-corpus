@@ -1,12 +1,6 @@
 id: kantei-2025-global-startup-expo-aisatsu
 chaff: 0.36.0
 findings:
-  - rule: orthographic-variant
-    line: 6
-    text: 見た、ただの石だった。でも、あそこは本当にわくわくするような夢のような場所でした
-    message: 「見る」と書いています（この文書はふつう「みる」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 見る (to see) and the auxiliary 〜てみる (to try) are different words, not one word spelled two ways
   - rule: max-paragraph-length
     line: 7
     text: それから５５年たって、今回この関西万博が行われ、スタートアップの皆様方がお集まり

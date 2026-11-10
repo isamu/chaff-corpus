@@ -55,12 +55,6 @@ findings:
     message: '"an neuro" takes "a" before that sound'
     verdict: correct
     note: '"an neuro-symbolic" should be "a neuro-symbolic"'
-  - rule: reference-topic-missing
-    line: 241
-    text: Section 3.5 formulate a research agenda
-    message: '"mulate" does not appear in Section 3.5 (Three Architectural Desiderata)'
-    verdict: false-positive
-    note: a sentence fragment ("mulate") cut out of "formulate" is read as a topic word
   - rule: which-that-consistency
     line: 241
     text: which instantiates a reason-based, defea

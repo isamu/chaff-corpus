@@ -13,29 +13,12 @@ findings:
     message: Quote marks are written two ways in this document (70 curly, 104 straight)
     verdict: correct
     note: "quote marks are mixed: curly and straight double quotes across the text"
-  - rule: redundant-expression
-    line: 19
-    text: Despite these concerns, evidence on the
-    message: '"true fact" says the same thing twice'
-    verdict: false-positive
-    note: "\"true fact-check\" is the paper's term (a fact-check whose verdict is true), not a tautology"
-  - rule: redundant-expression
-    line: 21
-    text: Existing studies of true fact-checks hav
-    message: '"true fact" says the same thing twice'
-    verdict: false-positive
-    note: "\"true fact-check\" is the paper's term (a fact-check whose verdict is true), not a tautology"
   - rule: agreement-slip
     line: 23
-    what: '"these flagged post": a plural determiner before a singular noun'
-    verdict: missed
-    note: neither the pinned chaff nor lab main reports it; the adjective between determiner and noun may hide it
-  - rule: unqualified-superlative
-    line: 23
-    text: With this data, we are able to estimate
-    message: '"the most" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: '"the most well-known crowdsourced moderation system" names its set'
+    text: these flagged post as well as whether no
+    message: '"these flagged post" mixes singular and plural'
+    verdict: correct
+    note: neither the pinned chaff nor lab main reports it; the adjective between determiner and noun may hide it; found by chaffjs 0.44.0
   - rule: date-format-consistency
     line: 43
     text: 28 February 2026.33 3 The population fro
@@ -72,18 +55,6 @@ findings:
     message: This paragraph runs 10 sentences (limit 9)
     verdict: correct
     note: a ten-sentence paragraph
-  - rule: percent-sum-mismatch
-    line: 61
-    text: 51.4% to 53.2% and changes no other resu
-    message: The shares add up to 106.6%, not 100%
-    verdict: false-positive
-    note: '"from 51.4% to 53.2%" is a change of one share, not shares of a whole'
-  - rule: unqualified-superlative
-    line: 69
-    text: To see whether doubt, verification, and/
-    message: '"the best" has nothing to compare against (4 such claims)'
-    verdict: false-positive
-    note: '"the best-scoring one" names its set (the topics scored)'
   - rule: max-paragraph-length
     line: 91
     text: Every post in the final sample was quest
@@ -96,24 +67,6 @@ findings:
     message: This paragraph runs 11 sentences (limit 9)
     verdict: correct
     note: an eleven-sentence paragraph
-  - rule: max-paragraph-length
-    line: 190
-    text: You are coding X (Twitter) threads in wh
-    message: This paragraph runs 14 sentences (limit 9)
-    verdict: false-positive
-    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
-  - rule: max-paragraph-length
-    line: 200
-    text: You are a fact-checker. You will be show
-    message: This paragraph runs 15 sentences (limit 9)
-    verdict: false-positive
-    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
-  - rule: max-paragraph-length
-    line: 204
-    text: You are shown a post from X and a Commun
-    message: This paragraph runs 11 sentences (limit 9)
-    verdict: false-positive
-    note: a verbatim LLM prompt printed in the appendix; its sentences are one block by design
   - rule: spelling-consistency
     line: 204
     text: characterise what the displayed note is

@@ -13,9 +13,3 @@ findings:
     message: '"exact same" says the same thing twice'
     verdict: correct
     note: '"the exact same quote" can be "the same quote"'
-  - rule: duration-mismatch
-    line: 3695
-    text: 43 days and 43 nights--
-    message: 43 nights makes 44 days, but 43 days is written
-    verdict: false-positive
-    note: '"43 days and 43 nights" is a spoken idiom (days and nights), not a duration count'

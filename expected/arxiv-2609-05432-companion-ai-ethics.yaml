@@ -19,12 +19,6 @@ findings:
     message: Quote marks are written two ways in this document (73 curly, 52 straight)
     verdict: correct
     note: "quote marks are mixed: curly in most of the text, straight in the methods"
-  - rule: unbalanced-bracket
-    line: 49
-    text: ), acronyms (e.g., "LOL"), and slang (e.
-    message: '")" closes nothing that was opened'
-    verdict: false-positive
-    note: the ")" is part of the emoticon ":-)" quoted inside the parenthesis
   - rule: wordy-phrase
     line: 49
     text: In order to analyse the data we made use

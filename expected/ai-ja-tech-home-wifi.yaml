@@ -30,12 +30,6 @@ findings:
     message: 「正直、」と前置きしています
     verdict: correct
     note: "「正直、」: the candour marker generated text adds to sound human"
-  - rule: no-doubled-joshi
-    line: 21
-    text: のラックの下の段に押し込んでありました。見た目がすっきりするのでそうしていたので
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: 金属のラックの下の段 is a normal noun chain
   - rule: weasel-word
     line: 23
     text: 電子レンジや水槽の近く、壁の角なども電波が弱くなりやすいと言われているので、心当

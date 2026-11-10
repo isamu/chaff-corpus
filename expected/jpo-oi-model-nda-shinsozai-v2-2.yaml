@@ -1,12 +1,6 @@
 id: jpo-oi-model-nda-shinsozai-v2-2
 chaff: 0.36.0
 findings:
-  - rule: obligation-without-deadline
-    line: 67
-    text: 通知する。ただし、正当な理由がある場合には、甲乙協議の上、通知期限を延長すること
-    message: 「通知」義務に期限がありません。いつまでにするかを書くと、守ったかどうかを決められます
-    verdict: false-positive
-    note: 同じ文に期限（締結日から2か月、以下「通知期限」）がある
   - rule: undefined-term
     line: 73
     text: 本違約金額を上回る場合には、その超えた部分についても賠償する。

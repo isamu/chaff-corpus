@@ -13,9 +13,3 @@ findings:
     message: 括弧を「）」と書いています（この文書はふつう「)」。5 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width 例）（する） while the README's other parentheses are half-width
-  - rule: cliche
-    line: 144
-    text: 誰にでも分かるSEのための文章術（6）：読みやすい文章の極意は「修飾語」にあり
-    message: 「極意」は使い古された決まり文句です
-    verdict: false-positive
-    note: 極意 is in the title of a cited article (link text), not the README's own wording
