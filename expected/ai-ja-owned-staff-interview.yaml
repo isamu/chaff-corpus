@@ -18,8 +18,15 @@ findings:
     message: この文だけ他と文末の調子が違います（本文の中で 1 文）
     verdict: false-positive
     note: spoken answers in an interview; one plain-form sentence is natural speech
+  - rule: ai-generated-composite
+    line: 21
+    text: 工場との橋渡しも
+    message: 「ai-tell、honesty-marker」が同じ文書にそろっています（2 種、2 種から）
+    verdict: correct
+    note: ai-tell (the heading 「工場との橋渡しも」) and honesty-marker stand together in an AI-written interview
   - rule: ai-tell
     line: 21
-    what: 見出し「工場との橋渡しも」
-    verdict: missed
-    note: catalog J22 (橋渡し)
+    text: 工場との橋渡しも
+    message: 「橋渡し」が揃っています（点 5、4 まで）
+    verdict: correct
+    note: catalog J22 (橋渡し); found by chaffjs 0.44.0

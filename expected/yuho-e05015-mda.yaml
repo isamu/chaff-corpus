@@ -81,12 +81,6 @@ findings:
     text: の減損損失固定資産の減損の兆候を判定するにあたっては、グルーピングされた資産につ
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: padded-intro
-    line: 1
-    text: こうした中で、当社グループを取り巻く市場環境としては、近年は気候変動の影響もあり
-    message: 「近年」は、どの記事にも当てはまる書き出しです
-    verdict: false-positive
-    note: 「近年は」 sits mid-paragraph and is followed by specifics (climate-driven disasters), not a stock opener
   - rule: repeated-sentence-ending
     line: 1
     text: ②当連結会計年度の財政状態についての分析「(1)経営成績等の状況の概要①財政状態

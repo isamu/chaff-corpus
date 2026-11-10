@@ -19,3 +19,9 @@ findings:
     message: '"honestly," flags this sentence as candid'
     verdict: correct
     note: '"And honestly,": the candour marker generated text adds to sound human'
+  - rule: bold-label-list
+    line: 17
+    text: "- **Same pay, same goals.** This isn't a"
+    message: '"Same pay, same goals" and other bold labels open 3 list items (3 needed)'
+    verdict: correct
+    note: bold lead sentences open item after item (catalog E18)

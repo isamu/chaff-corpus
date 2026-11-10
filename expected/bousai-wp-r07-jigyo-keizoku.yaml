@@ -7,12 +7,6 @@ findings:
     message: 見出し「1－9　事業継続体制の構築」の深さが 1 から 4 へ飛んでいます（2 のはず）
     verdict: correct
     note: ページ自身が h1 から h4 へ飛ぶ
-  - rule: padded-intro
-    line: 9
-    text: その後、近年の災害の激甚化・頻発化や社会情勢の変化などを踏まえて同ガイドラインの
-    message: 「近年」は、どの記事にも当てはまる書き出しです
-    verdict: false-positive
-    note: 「近年」は書き出しではなく、ガイドライン見直しの理由を言う段落の途中の語
   - rule: empty-intensifier
     line: 15
     text: このため、地方公共団体において業務継続計画を策定し、業務継続体制を構築しておくこ

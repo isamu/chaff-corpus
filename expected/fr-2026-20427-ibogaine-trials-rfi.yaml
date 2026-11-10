@@ -19,12 +19,6 @@ findings:
     message: This sentence runs 54 words (limit 45)
     verdict: correct
     note: a 54-word sentence
-  - rule: all-caps-shouting
-    line: 45
-    text: THIS DOCUMENT CONTAINS CONFIDENTIAL INFO
-    message: '"THIS DOCUMENT CONTAINS CONFIDENTIAL INFORMATION" is written in capitals'
-    verdict: false-positive
-    note: a label the notice asks submitters to write in capitals, quoted
   - rule: invisible-character
     line: 45
     text: ​2015-23389.pdf.

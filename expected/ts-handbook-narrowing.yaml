@@ -13,11 +13,21 @@ findings:
     message: "\"it is\" is written \"it's\" elsewhere in the document"
     verdict: unjudged
   - rule: hyphen-as-dash
+    line: 254
+    text: " - it also checks whether it's potential"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: hyphen-as-dash
     line: 352
     text: " - is `string | number`, and assignabili"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 352
+    text: " - the type that `x` started with - is `"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 543
     text: " - which is appropriate since `radius` m"

@@ -271,6 +271,11 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: hyphen-as-dash
+    line: 422
+    text: " - `Expenses -> Home Office Equipment` p"
+    message: '"-" stands in for a dash'
+    verdict: unjudged
   - rule: heading-numbering-mix
     line: 441
     text: "## Approved WFH Equipment List"

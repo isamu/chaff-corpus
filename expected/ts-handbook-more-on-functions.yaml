@@ -13,6 +13,12 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: spaced hyphens used as dashes around 'chosen automatically'
+  - rule: hyphen-as-dash
+    line: 225
+    text: " - `Type` is constrained to `{ length: n"
+    message: '"-" stands in for a dash'
+    verdict: correct
+    note: a spaced hyphen stands in for a dash
   - rule: redundant-expression
     line: 560
     text: Callers can invoke this with either sort

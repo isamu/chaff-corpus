@@ -1,9 +1,3 @@
 id: chrg-119hhrg64107-exim-bank-oversight-2026
 chaff: 0.36.0
-findings:
-  - rule: absolute-exception
-    line: 1665
-    text: Now, I must say, we are not always cheap
-    message: This says "always", but line 1809 makes an exception ("with the exception of") for the same act
-    verdict: false-positive
-    note: '"not always cheaper" (pricing) and the later exception concern different matters'
+findings: []

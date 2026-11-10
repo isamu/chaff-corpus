@@ -1,12 +1,6 @@
 id: egov-account-toroku
 chaff: 0.36.0
 findings:
-  - rule: katakana-density
-    line: 3
-    text: e-Govアカウントの登録手順をご案内します。
-    message: カタカナ語が 1000 字あたり 58 語あります（55 語まで）。多いのは「アカウント、メールアドレス、メール」です
-    verdict: false-positive
-    note: an account-registration manual cannot avoid アカウント and メールアドレス
   - rule: latin-spacing
     line: 4
     text: " が提供するサービスは、以下のアカウントでもログインできます。"

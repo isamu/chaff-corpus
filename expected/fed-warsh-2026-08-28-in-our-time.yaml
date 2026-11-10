@@ -117,12 +117,6 @@ findings:
     note: a long prose sentence for a spoken address (the genre limit is 25 words)
   - rule: expletive-construction
     line: 119
-    text: It's not fashionable these days, but my
-    message: '"It is ..." appears 8 times (limit 3)'
-    verdict: false-positive
-    note: "\"It's not fashionable these days, but\" is a concessive aside, not filler"
-  - rule: expletive-construction
-    line: 119
     text: It's true that financial innovations and
     message: '"It is ..." appears 8 times (limit 3)'
     verdict: correct

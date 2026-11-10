@@ -11,13 +11,3 @@ findings:
     text: )（人事院ウェブサイト） をご覧ください。
     message: 「（」を「)」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: request-without-deadline
-    line: 63
-    text: 予約フォームに必要事項を入力し、エントリーシートを記入・添付のうえご提出ください
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: unjudged
-  - rule: request-without-deadline
-    line: 69
-    text: エントリーシートのファイル名は「【一般職（高卒者）】（氏名）デジタル庁エントリー
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: unjudged

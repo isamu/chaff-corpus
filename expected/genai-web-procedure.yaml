@@ -1,10 +1,6 @@
 id: genai-web-procedure
 chaff: 0.34.0
 findings:
-  - rule: katakana-density
-    line: 5
-    sha256: b7295a2b6b12e49349f7e75d3aed52774a8025f7444170cb7f2bd85e146ad9ab
-    verdict: unjudged
   - rule: latin-spacing
     line: 10
     sha256: bdfd1ac24e8bb3461adf1fe2b5dbf7dfc3816915b90c7cf24d7e542d033054ce
