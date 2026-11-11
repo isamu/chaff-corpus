@@ -33,12 +33,6 @@ findings:
     message: 「旧氏を併記した氏」が 6 回出てきます（5 回まで）
     verdict: false-positive
     note: the page's subject phrase (旧氏を併記した氏名), repeated because it is what the page is about
-  - rule: unfilled-placeholder
-    line: 28
-    text: 【氏名】に旧氏を併記した氏名を記載してください。
-    message: 「【氏名】」が埋まっていません
-    verdict: false-positive
-    note: 【氏名】 is the name of a form field in a filing (【】 is the filing format), not a placeholder
   - rule: bracket-nesting
     line: 34
     text: （当該氏名（名称）変更届の届出と同時に願書等を提出する場合には、なるべく、願書等
@@ -56,16 +50,15 @@ findings:
     message: 「毎」と書いています（この文書はふつう「ごと」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「毎」 once against 「ごと」 elsewhere
-  - rule: unfilled-placeholder
-    line: 77
-    text: 【氏名】　特許（実用）　太郎
-    message: 「【氏名】」が埋まっていません
-    verdict: false-positive
-    note: 【氏名】 is a form field in a filing example with its value filled in
   - rule: fullwidth-alnum-consistency
     line: 92
     what: Q５ (full-width digit) among Q1–Q10 written half-width; the answer A５ on line 94 is the same
     verdict: missed
+  - rule: fullwidth-alnum-consistency
+    line: 94
+    text: ５：住民票の写し、マイナンバーカード、運転免許証のような公的証明書において記載さ
+    message: 全角の「５」と書いています（この文書はふつう半角の「5」。35 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 107
     text: の代表者の氏名の記載も、同様に扱われます。

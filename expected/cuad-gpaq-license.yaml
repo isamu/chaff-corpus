@@ -126,11 +126,6 @@ findings:
     text: ) or (f) any failure of the Village Medi
     message: '")" closes nothing that was opened'
     verdict: unjudged
-  - rule: dangling-reference
-    line: 59
-    text: Section 3.5, nothing in this Agreement s
-    message: '"Section 3.5" (address 3.5) is not in this document'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 59
     text: 2.14 Except for Section 3.5, nothing in

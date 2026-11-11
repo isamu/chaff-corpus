@@ -42,11 +42,6 @@ findings:
     text: つまるところ、元来の学術雑誌は学会等の有志団体によるコミュニケーション媒体であり
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
     verdict: unjudged
-  - rule: empty-section
-    line: 65
-    text: "#### 4. 査読を有償にするとどうなるか：事例と研究"
-    message: 見出し「4. 査読を有償にするとどうなるか：事例と研究」の下に中身がありません
-    verdict: unjudged
   - rule: double-negative
     line: 69
     text: ここまで査読は無償である経緯を述べてきたが、実際には査読者になんらかの報酬を支払

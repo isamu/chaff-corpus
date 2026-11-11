@@ -9,15 +9,15 @@ findings:
     note: a template blank left for the user; the plainest sign the email came from an assistant
   - rule: email-stock-courtesy
     line: 5
-    what: '"I hope this message finds you well." as the opener'
-    verdict: missed
-    note: catalog E35 (email stock courtesy); the opener is one of several stacked courtesies (lines 5, 9, 13), which email-stock-courtesy counts; relabelled from cushion-phrase, a word list rather than a rule
-  - rule: attachment-not-attached
+    text: I hope this message finds you well.
+    message: '"hope this message finds you well" and other stock courtesies in 3 sentences (2 needed)'
+    verdict: correct
+    note: catalog E35 (email stock courtesy); the opener is one of several stacked courtesies (lines 5, 9, 13), which email-stock-courtesy counts; relabelled from cushion-phrase, a word list rather than a rule; found by chaffjs 0.45.0
+  - rule: email-stock-courtesy
     line: 9
-    text: I understand that invoices can sometimes
-    message: An attachment is mentioned, but no attachment line or file name is shown
-    verdict: false-positive
-    note: an email body never shows its attachment; the file is added when sending, which chaff cannot see
+    text: For your convenience, I've attached a co
+    message: '"for your convenience" and other stock courtesies in 3 sentences (2 needed)'
+    verdict: unjudged
   - rule: max-sentence-length
     line: 9
     text: I understand that invoices can sometimes
@@ -30,6 +30,11 @@ findings:
     message: This sentence runs 24 words (limit 18)
     verdict: correct
     note: 24 words, an instruction with two payment methods (the placeholder adds two of them; without it the sentence is still over); over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
+  - rule: email-stock-courtesy
+    line: 13
+    text: If there's an issue with the invoice or
+    message: '"glad to help" and other stock courtesies in 3 sentences (2 needed)'
+    verdict: unjudged
   - rule: max-sentence-length
     line: 13
     text: If there's an issue with the invoice or

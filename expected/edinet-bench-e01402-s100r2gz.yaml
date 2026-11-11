@@ -68,12 +68,6 @@ findings:
     text: 物ピアノ線等の製造・販売を行っております。 ［自動車関連製品］（日本、北米、アジ
     message: 「物」と書いています（この文書はふつう「もの」と書く語です。8 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 9
-    text: ［ＨＤＤ用サスペンション］（日本）　ハードディスク・ドライブ用サスペンションの製
-    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: parallel list entries (one per segment) that end alike by design
   - rule: bracket-width-consistency
     line: 13
     text: )プリンター関連及び通信関連の一部を製造・販売しております。当社より債務の保証を
@@ -98,11 +92,6 @@ findings:
     line: 13
     text: 役員の兼任等…無しサンコール菊池株式会社熊本県菊池市70自動車関連製品の製造及び
     message: 「菊池株式会社熊本県菊池市」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 13
-    text: ４【関係会社の状況】名称住所資本金（百万円）主要な事業の内容（セグメント）議決権
-    message: 「〜おります」で終わる文が 23 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-head
     line: 13
@@ -305,6 +294,21 @@ findings:
     text: エネルギ－）拡大への取り組みを加速させてまいります。 (2) 競争の激化　当社グ
     message: 「エネルギ」と「エネルギー」が混ざっています（この語は 4 回のうち 1 回が「エネルギ」）
     verdict: correct
+  - rule: lookalike-character
+    line: 25
+    text: －プが事業展開している地域で新型コロナウイルス感染症が再拡大する場合には、以下の
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 25
+    text: －プの業績に大きな影響を及ぼす可能性があります。・生産継続に関するリスク　当社グ
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: unjudged
+  - rule: lookalike-character
+    line: 25
+    text: －プは日本・北米・中国・アジアにおいて生産及び販売活動を行っております。新型コロ
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: unjudged
   - rule: max-sentence-length
     line: 25
     text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外

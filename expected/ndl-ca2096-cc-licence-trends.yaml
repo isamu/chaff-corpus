@@ -7,12 +7,6 @@ findings:
     message: 見出し「CCライセンスを付与する際の主な留意事項と最近の動向：「PD BY」と「CCシグナル」」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page's h1 is its own title for the article (number, title, author) and the next heading, the article title again, is h3, so the committed text goes from h1 to h3; the rule exempts only the first heading, not one after a page or site title, the same shape as bousai-wp-r07-* (h1 then h4) and kantei-214/221
-  - rule: abstract-length
-    line: 7
-    text: "#### 1. はじめに"
-    message: 節を立てた論文ですが、要旨がありません
-    verdict: false-positive
-    note: カレントアウェアネス articles carry no abstract; the journal's format, not an omission
   - rule: topic-predicate-distance
     line: 13
     text: CCライセンスは、クリエイティブ・コモンズが提供している著作権者の意思表示ツール
@@ -29,12 +23,6 @@ findings:
     message: 「することができる」が 6 回出てきます（5 回まで）
     verdict: correct
     note: 「することができる」 six times in an article; 「できる」 would do
-  - rule: empty-section
-    line: 83
-    text: "#### 3. CCライセンスを巡る最近の動向"
-    message: 見出し「3. CCライセンスを巡る最近の動向」の下に中身がありません
-    verdict: false-positive
-    note: a section whose subsections sit at the same heading level (3. then 3.1); not empty
   - rule: max-ten
     line: 87
     text: こうしたCCライセンスの使われ方について、クリエイティブ・コモンズは、「功績を認

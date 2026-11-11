@@ -31,12 +31,6 @@ findings:
     message: '"each and every" says the same thing twice'
     verdict: correct
     note: '"each and every"'
-  - rule: rule-of-three
-    line: 39
-    text: "-   **Find out how best to participate.*"
-    message: 4 of 4 lists have exactly three items (70% allowed)
-    verdict: false-positive
-    note: each tip list holds three tips; the count is the content, an editor would not ask to change it
   - rule: unqualified-superlative
     line: 82
     text: We mentioned it before, but it bears rep

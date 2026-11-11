@@ -26,12 +26,6 @@ findings:
     text: "'s rights under the Agreement."
     message: The quote mark ' here, where the document usually writes ’‘ (4 of 53)
     verdict: correct
-  - rule: unfilled-placeholder
-    line: 136
-    text: "[Name of New Employer] **and I will be w"
-    message: '"[Name of New Employer]" was never filled in'
-    verdict: false-positive
-    note: a fill-in label of a blank form the employee completes at signing; the document is a form
   - rule: unrendered-emphasis
     line: 136
     text: "**[Name of New Employer] **and I will be"

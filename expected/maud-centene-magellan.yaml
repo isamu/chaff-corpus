@@ -553,11 +553,6 @@ findings:
     text: (the “Company Recommendation”). Subject
     message: '"Company Recommendation" is defined but never used'
     verdict: correct
-  - rule: use-before-definition
-    line: 129
-    text: Filings and obtaining the Consents conte
-    message: '"Filing" is used here, before it is defined on line 137'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 137
     text: HSR Clearance and the Filings required b

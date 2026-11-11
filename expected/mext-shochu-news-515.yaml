@@ -3,8 +3,15 @@ chaff: 0.36.0
 findings:
   - rule: lookalike-character
     line: 1
-    what: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー
-    verdict: missed
+    text: －ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27日）
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: correct
+    note: the title writes ニュース and メールマガジン with a full-width hyphen-minus (U+FF0D) in place of the long-vowel mark ー; found by chaffjs 0.45.0
+  - rule: lookalike-character
+    line: 1
+    text: －ルマガジン）第515号（令和8年2月27日）
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: unjudged
   - rule: title-length
     line: 1
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第515号（令和8年2月27"

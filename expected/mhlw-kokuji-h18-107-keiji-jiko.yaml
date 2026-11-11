@@ -67,11 +67,6 @@ findings:
     message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
     verdict: unjudged
   - rule: dangling-reference
-    line: 69
-    text: 第四条第一項若しくは第二項の規定に基づき書面による請求を行うことができる保険医療
-    message: 「第四条第一項」（番地 4.1）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
     line: 123
     text: 第1章第2部第1節に規定する急性期一般入院基本料、七対一入院基本料及び十対一入院
     message: 「第1章」（番地 ch1）はこの文書にありません
@@ -176,28 +171,8 @@ findings:
     text: 第三条の四第一項、第三条の五第一項又は第四条第一項若しくは第二項の規定に基づき書
     message: 「第三条の四第一項」（番地 3-4.1）はこの文書にありません
     verdict: unjudged
-  - rule: dangling-reference
-    line: 367
-    text: 第四条第一項若しくは第二項の規定に基づき書面による請求を行うことができる保険薬局
-    message: 「第四条第一項」（番地 4.1）はこの文書にありません
-    verdict: unjudged
   - rule: no-nakaguro-parallel
     line: 381
     text: (平一八厚労告五〇一・平一八厚労告六四七・平一九厚労告三八・平一九厚労告四四・平
     message: この文に中黒が 138 個あります（5 個まで）
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 891
-    text: 第四条までの規定　令和六年四月一日
-    message: 「第四条」（番地 4）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 907
-    text: 第三条及び第五条の規定は、令和六年十月一日から適用する。
-    message: 「第三条」（番地 3）はこの文書にありません
-    verdict: unjudged
-  - rule: dangling-reference
-    line: 907
-    text: 第五条の規定は、令和六年十月一日から適用する。
-    message: 「第五条」（番地 5）はこの文書にありません
     verdict: unjudged

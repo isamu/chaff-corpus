@@ -96,9 +96,3 @@ findings:
     text: So, the duties demarcate the conditions
     message: 3 sentences open with "So," (1 needed)
     verdict: unjudged
-  - rule: agreement-slip
-    line: 267
-    text: a conversational ethics of large languag
-    message: '"a conversational ethics" mixes singular and plural'
-    verdict: false-positive
-    note: "'a conversational ethics' (ethics as a theory, singular) in a cited title"

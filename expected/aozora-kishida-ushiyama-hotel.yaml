@@ -19,9 +19,3 @@ findings:
     message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: correct
     note: two adversative が in one sentence of dialogue
-  - rule: adversative-ga-repeat
-    line: 957
-    text: さつきからも、おつ母さんと話したこツだるが、あんたしやが、そん気になれば、ずつと
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: "the second が follows a noun (あんたしやが): the subject particle in dialect speech, not an adversative"

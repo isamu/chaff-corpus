@@ -6,23 +6,3 @@ findings:
     text: 生きて捕虜の恥を受けるべからず、というが、こういう規定がないと日本人を戦闘にかり
     message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 10
-    text: そして武士道は人性や本能に対する禁止条項である為に非人間的反人性的なものであるが
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 11
-    text: 社会的に忘れた時にすら政治的に担ぎだされてくるのであって、その存立の政治的理由は
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 11
-    text: 私は天皇制に就ても、極めて日本的な（従って或いは独創的な）政治的作品を見るのであ
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 15
-    text: 要するに天皇制というものも武士道と同種のもので、女心は変り易いから「節婦は二夫に
-    message: 一文に「〜的」が 5 個あります（2 個まで）
-    verdict: unjudged

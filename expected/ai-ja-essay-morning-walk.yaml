@@ -20,9 +20,10 @@ findings:
     note: "candidate pattern: an essay with three parallel benefit headings; ai-structure did not count it"
   - rule: heading-echo
     line: 9
-    what: 節の最初の文が見出し「季節の変化に気づくようになった」を言い直している（17行目も）
-    verdict: missed
-    note: each section opens by restating its heading
+    text: いちばん大きく変わったのは、季節の移り変わりに気づくようになったことだ。
+    message: 見出し「季節の変化に気づくようになった」を直後の文がほぼそのまま繰り返しています
+    verdict: correct
+    note: each section opens by restating its heading; found by chaffjs 0.45.0
   - rule: ai-tell
     line: 13
     what: どの節も「〜のだと思う。」「〜かもしれない。」「〜と心から思っている。」の総括文で終わる（13・21・27行）

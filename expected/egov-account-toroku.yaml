@@ -37,21 +37,3 @@ findings:
     message: 「）」に対応する開きがありません
     verdict: correct
     note: the stray ） after 」 in 「.（ピリオド」）
-  - rule: max-kanji-continuous
-    line: 86
-    text: "[e-Gov]2要素認証・追加認証設定解除完了のお知らせ"
-    message: 「追加認証設定解除完了」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official subject line of a notification mail, quoted as sent
-  - rule: max-kanji-continuous
-    line: 92
-    text: "[e-Gov]2要素認証・追加認証設定解除本申請のご案内"
-    message: 「追加認証設定解除本申請」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official subject line of a notification mail, quoted as sent
-  - rule: max-kanji-continuous
-    line: 98
-    text: "[e-Gov]2要素認証・追加認証設定解除完了のお知らせ"
-    message: 「追加認証設定解除完了」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the official subject line of a notification mail, quoted as sent

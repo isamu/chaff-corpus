@@ -24,12 +24,6 @@ findings:
     text: May 19th, which was a busy hour in one o
     message: "\"May 19th\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"
     verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 33
-    text: It was not until 1887 with the enactment
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: an expletive 'It was not until 1887' opener in a historical summary, not a pointer back
   - rule: which-that-consistency
     line: 57
     text: that was sold in each state as measured

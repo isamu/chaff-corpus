@@ -117,11 +117,6 @@ findings:
     text: もって「オープン査読」である、としている雑誌が多かったと言える。
     message: 「もつ」と書いています（この文書はふつう「持つ」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: empty-section
-    line: 89
-    text: "#### 4. オープン査読の問題と、クローズド査読自体の見直し"
-    message: 見出し「4. オープン査読の問題と、クローズド査読自体の見直し」の下に中身がありません
-    verdict: unjudged
   - rule: clause-chain
     line: 107
     text: 当初は、投稿論文に対するコメントを2人の研究者が執筆し、それを同協会の発行する別

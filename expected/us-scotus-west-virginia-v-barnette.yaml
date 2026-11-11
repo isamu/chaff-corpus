@@ -18,12 +18,6 @@ findings:
     message: '"reiment" is not in the dictionary; did you mean "raiment"?'
     verdict: correct
     note: a transcription typo for raiment
-  - rule: demonstrative-opener-run
-    line: 25
-    text: It is also to be noted that the compulso
-    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: expletive 'It is ...' openers (It is also to be noted, It is not clear), not pointers back to something unclear
   - rule: unknown-word
     line: 47
     text: vigilent in calling it to account. The a
