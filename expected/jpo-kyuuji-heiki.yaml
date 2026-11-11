@@ -58,7 +58,7 @@ findings:
     line: 94
     text: ５：住民票の写し、マイナンバーカード、運転免許証のような公的証明書において記載さ
     message: 全角の「５」と書いています（この文書はふつう半角の「5」。35 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 107
     text: の代表者の氏名の記載も、同様に扱われます。

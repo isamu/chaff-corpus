@@ -150,7 +150,7 @@ findings:
     line: 175
     text: １４参照）。
     message: 全角の「１４」と書いています（この文書はふつう半角の「14」。85 箇所のうち 3 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 175
     text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
@@ -165,12 +165,12 @@ findings:
     line: 189
     text: Ｑ15からＱ18のとおりです。
     message: 全角の「Ｑ」と書いています（この文書はふつう半角の「Q」。9 箇所のうち 2 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 189
     text: Ｑ18のとおりです。
     message: 全角の「Ｑ」と書いています（この文書はふつう半角の「Q」。9 箇所のうち 2 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 201
     text: )が設立した、食品の国際基準を作る国際機関であるコーデックス委員会が2012年に
@@ -255,7 +255,7 @@ findings:
     line: 245
     text: ２０～２３の通りです。
     message: 全角の「２０」と書いています（この文書はふつう半角の「20」。85 箇所のうち 3 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 245
     text: ２３の通りです。

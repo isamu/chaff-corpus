@@ -298,17 +298,17 @@ findings:
     line: 25
     text: －プが事業展開している地域で新型コロナウイルス感染症が再拡大する場合には、以下の
     message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
-    verdict: unjudged
+    verdict: correct
   - rule: lookalike-character
     line: 25
     text: －プの業績に大きな影響を及ぼす可能性があります。・生産継続に関するリスク　当社グ
     message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
-    verdict: unjudged
+    verdict: correct
   - rule: lookalike-character
     line: 25
     text: －プは日本・北米・中国・アジアにおいて生産及び販売活動を行っております。新型コロ
     message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 25
     text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
