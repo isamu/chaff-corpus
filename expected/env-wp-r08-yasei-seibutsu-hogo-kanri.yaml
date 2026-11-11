@@ -67,12 +67,6 @@ findings:
     message: 「保存を実施する」は「保存する」で足ります（動詞を名詞にした言い方が 1000 字あたり 3 個、2 個まで）
     verdict: correct
     note: 「〜を実施する／行う」は動詞一語で足りる
-  - rule: max-kanji-continuous
-    line: 57
-    text: なお、2026年3月末時点で27施設を認定希少種保全動植物園等として認定しており
-    message: 「認定希少種保全動植物園等」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 制度上の名称（認定希少種保全動植物園等）
   - rule: max-sentence-length
     line: 61
     text: 鳥獣保護管理法では、都道府県における鳥獣保護管理行政の基本的な事項を「鳥獣の保護

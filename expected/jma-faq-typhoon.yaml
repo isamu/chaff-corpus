@@ -11,6 +11,11 @@ findings:
     text: 2000年１月１日からアジア名を用いることとなりました。台風の名前については、台
     message: 半角の「2000」と書いています（この文書はふつう全角の「２０００」。10 箇所のうち 2 箇所が違う）
     verdict: correct
+  - rule: lookalike-character
+    line: 31
+    text: －ンとサイクロンの違いは何ですか？
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: correct
   - rule: orthographic-variant
     line: 33
     text: および南シナ海に存在する熱帯低気圧のうち、最大風速が約１７m/s以上になったもの

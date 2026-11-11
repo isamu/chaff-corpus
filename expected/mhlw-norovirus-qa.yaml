@@ -146,6 +146,11 @@ findings:
     text: 7割では原因食品が特定できていません。ウイルスに感染した食品取扱者を介して食品が
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。41 箇所のうち 12 箇所が違う）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 175
+    text: １４参照）。
+    message: 全角の「１４」と書いています（この文書はふつう半角の「14」。85 箇所のうち 3 箇所が違う）
+    verdict: correct
   - rule: topic-predicate-distance
     line: 175
     text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
@@ -156,6 +161,16 @@ findings:
     text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
     message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 189
+    text: Ｑ15からＱ18のとおりです。
+    message: 全角の「Ｑ」と書いています（この文書はふつう半角の「Q」。9 箇所のうち 2 箇所が違う）
+    verdict: correct
+  - rule: fullwidth-alnum-consistency
+    line: 189
+    text: Ｑ18のとおりです。
+    message: 全角の「Ｑ」と書いています（この文書はふつう半角の「Q」。9 箇所のうち 2 箇所が違う）
+    verdict: correct
   - rule: bracket-width-consistency
     line: 201
     text: )が設立した、食品の国際基準を作る国際機関であるコーデックス委員会が2012年に
@@ -236,6 +251,11 @@ findings:
     text: 調理施設等の責任者は、外部からの汚染を防ぐために客用とは別に従事者専用のトイレを
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
     verdict: unjudged
+  - rule: fullwidth-alnum-consistency
+    line: 245
+    text: ２０～２３の通りです。
+    message: 全角の「２０」と書いています（この文書はふつう半角の「20」。85 箇所のうち 3 箇所が違う）
+    verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 245
     text: ２３の通りです。

@@ -61,11 +61,6 @@ findings:
     text: 法等の概要及び留意事項は下記のとおりですので，十分に御了知の上，域内市町村教育委
     message: 「は」で出した主題から述語まで 112 字あります（80 字まで）
     verdict: unjudged
-  - rule: attachment-not-attached
-    line: 34
-    text: なお，法，施行期日政令，施行令及び施行規則は別添のとおりであり，これらを含む関係
-    message: 添付に触れていますが、添付の欄やファイル名がありません
-    verdict: unjudged
   - rule: url-run-on
     line: 34
     text: https://www.bunka.go.jp/seisaku/bunka_gy

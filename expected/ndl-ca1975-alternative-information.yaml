@@ -12,12 +12,6 @@ findings:
     text: 東京大学大学院情報学環：福島幸宏（ふくしまゆきひろ）
     message: 「東京大学大学院情報学環」は漢字が 11 字続いています（8 字まで）
     verdict: unjudged
-  - rule: abstract-length
-    line: 7
-    text: "#### はじめに"
-    message: 節を立てた論文ですが、要旨がありません
-    verdict: false-positive
-    note: カレントアウェアネス articles carry no abstract; the journal's format, not an omission
   - rule: orthographic-variant
     line: 9
     text: かかわるだけに、大きな波紋があった。非常に多くの検証や報道がなされたなか、明治初

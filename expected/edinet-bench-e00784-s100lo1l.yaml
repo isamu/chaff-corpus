@@ -46,12 +46,6 @@ findings:
     text: ３【事業の内容】　当社グループは、当社、子会社８社及び関連会社４社で構成され、化
     message: 「行っております。」が 20 回出てきます（5 回まで）
     verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 9
-    text: 化学品事業……　　当社が製造し、当社、子会社JCI USA INC.、捷希艾(上
-    message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
-    verdict: false-positive
-    note: parallel list entries (one per segment) that end alike by design
   - rule: max-sentence-length
     line: 17
     text: (2）提出会社の状況   2021年３月31日現在従業員数（人）平均年齢（歳）平

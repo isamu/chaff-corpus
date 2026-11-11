@@ -27,12 +27,6 @@ findings:
     text: 特許庁への出願等手続は、パソコンを利用して行う電子出願と、書面（紙）による手続の
     message: 「は」で出した主題から述語まで 145 字あります（80 字まで）
     verdict: correct
-  - rule: use-before-definition
-    line: 17
-    text: 登録情報処理機関において電子化することとしており、この電子化のために必要な費用（
-    message: 「登録情報処理機関」を、87 行目の定義より前で使っています
-    verdict: false-positive
-    note: the term's definition is in the statute excerpt appended at the end; the page explains it in its own section first
   - rule: stray-space
     line: 47
     text: 　となります。

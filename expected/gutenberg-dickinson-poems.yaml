@@ -51,9 +51,3 @@ findings:
     message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
     verdict: correct
     note: two spaces after a sentence in the preface
-  - rule: sentence-spacing-consistency
-    line: 2956
-    text: "  Who are you?"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 70)
-    verdict: false-positive
-    note: a mid-line pause inside a verse line ('I'm nobody!  Who are you?'), the eBook's verse layout, not prose sentence spacing

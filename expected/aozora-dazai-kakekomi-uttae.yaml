@@ -1,9 +1,3 @@
 id: aozora-dazai-kakekomi-uttae
 chaff: 0.36.0
-findings:
-  - rule: adversative-ga-repeat
-    line: 6
-    text: あの人は、こんな貧しい百姓女に恋、では無いが、まさか、そんな事は絶対に無いのです
-    message: 一文に逆接の「が」が 2 個あります（1 個まで）
-    verdict: false-positive
-    note: the first が corrects the word just said (恋、では無いが), not an adversative between clauses; a monologue's rhythm
+findings: []

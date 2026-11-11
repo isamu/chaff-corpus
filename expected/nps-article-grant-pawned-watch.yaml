@@ -41,12 +41,6 @@ findings:
     text: Grant did pawn a gold watch and chain to
     message: This paragraph runs 7 sentences (limit 5)
     verdict: correct
-  - rule: date-without-year
-    line: 20
-    text: Jan 23/58. U.S. Grant
-    message: "\"Jan 23\" has no year, and the document's dates run from 1857 to 2023, so the year is unclear"
-    verdict: false-positive
-    note: the year is written after the slash (Jan 23/58 is 23 January 1858), the old short form in a quoted receipt
   - rule: max-paragraph-length
     line: 26
     text: Yet another consideration is that gift g

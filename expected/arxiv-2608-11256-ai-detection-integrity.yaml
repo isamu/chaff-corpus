@@ -1,12 +1,6 @@
 id: arxiv-2608-11256-ai-detection-integrity
 chaff: 0.36.0
 findings:
-  - rule: sentence-spacing-consistency
-    line: 5
-    text: "  Affiliation: University of Notre Dame,"
-    message: 2 spaces after this sentence, where the document usually leaves 1 (18 of 166)
-    verdict: false-positive
-    note: the arXiv HTML conversion joins the fields of a reference-list entry (or the author block) with two spaces; not sentence spacing the authors chose
   - rule: figure-reference-order
     line: 51
     text: Fig. 1).

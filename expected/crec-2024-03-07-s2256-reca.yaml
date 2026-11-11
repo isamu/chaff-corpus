@@ -6,16 +6,6 @@ findings:
     text: "## LEGISLATIVE SESSION"
     message: Nothing under the heading "LEGISLATIVE SESSION"
     verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 145
-    text: It is frayed. It is fractious. It is hur
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 269
-    text: It is a large-scale cattle and sheep ope
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
   - rule: redundant-expression
     line: 441
     text: Yesterday, the President of the United S
@@ -30,11 +20,6 @@ findings:
     line: 483
     text: That is what we are here for today on th
     message: 4 sentences in a row open with a word that points back, such as "That" (limit 2)
-    verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 519
-    text: It is a cause. It is a cause of justice.
-    message: 3 sentences in a row open with a word that points back, such as "It" (limit 2)
     verdict: unjudged
   - rule: empty-section
     line: 555

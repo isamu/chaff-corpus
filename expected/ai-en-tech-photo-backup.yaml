@@ -72,12 +72,6 @@ findings:
     what: 'Section "Option 3: A NAS (Network Attached Storage)" has no number, code or link (4 of 8 sections)'
     verdict: missed
     note: the NAS section gives no capacity, price or product, only "a powerful solution"; generic; still true; chaffjs 0.38.0 turns concrete-evidence-density off for blog by measured precision (off_for blog), so it is not reported
-  - rule: article-sound
-    line: 47
-    text: a NAS is a small device that sits on you
-    message: '"a NAS" takes "an" before that sound'
-    verdict: false-positive
-    note: NAS is said as one syllable ("nas"), so "a NAS" is right
   - rule: colon-lead-in
     line: 53
     text: For most people, a great setup looks lik

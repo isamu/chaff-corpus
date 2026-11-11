@@ -1,15 +1,3 @@
 id: aozora-terada-sainan-zakko
 chaff: 0.36.0
-findings:
-  - rule: teki-overuse
-    line: 21
-    text: こういうふうに考えて来ると、あらゆる災難は一見不可抗的のようであるが実は人為的の
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: false-positive
-    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
-  - rule: teki-overuse
-    line: 29
-    text: 中華民国には地方によってはまれに大地震もあり大洪水もあるようであるが、しかしあの
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: 随筆の文体（作者の長い文・節や文末の連なり）で、直すべき誤りではない
+findings: []

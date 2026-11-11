@@ -7,12 +7,6 @@ findings:
     message: This sentence runs 19 words (limit 18)
     verdict: correct
     note: 19 words; over the limit of 18 that business/email sets, and split as one whole prose sentence, so correct by the rule's text (how easy it reads is not a reason the rule gives)
-  - rule: attachment-not-attached
-    line: 7
-    text: When I opened the box, I noticed that th
-    message: An attachment is mentioned, but no attachment line or file name is shown
-    verdict: false-positive
-    note: the photos are attached when sending; the body cannot show them
   - rule: max-sentence-length
     line: 7
     text: When I opened the box, I noticed that th

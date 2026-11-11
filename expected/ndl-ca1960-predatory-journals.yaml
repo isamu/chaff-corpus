@@ -35,18 +35,6 @@ findings:
     text: 同誌は2016年版（2017年6月更新）までJournal Impact Fac
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 161
-    text: (24)で示したJournal Citation ReportsのOncotar
-    message: 括弧を「(」と書いています（この文書はふつう「（」。47 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: a note number 注(24) written as the article's note markers are, (n) half-width
-  - rule: bracket-width-consistency
-    line: 161
-    text: )で示したJournal Citation ReportsのOncotarget
-    message: 括弧を「)」と書いています（この文書はふつう「）」。47 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: a note number 注(24) written as the article's note markers are, (n) half-width
   - rule: doubled-punctuation
     line: 172
     text: 。. LRG. 2019, （26）, p. 136-147.

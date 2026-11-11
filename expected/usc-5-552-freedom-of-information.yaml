@@ -6,12 +6,6 @@ findings:
     text: "be comprised of the following members:"
     message: '"be comprised of" is nonstandard in formal writing; write "comprise"'
     verdict: correct
-  - rule: use-before-definition
-    line: 531
-    text: Act is now classified to section 3003 of
-    message: '"Act" is used here, before it is defined on line 1185'
-    verdict: false-positive
-    note: '"Act" here is part of the name "National Security Act of 1947", not the term an executive order defines later'
   - rule: doubled-punctuation
     line: 997
     text: ..[sic] The head of an agency appointed

@@ -11,3 +11,8 @@ findings:
     text: 「代物弁済による資産の譲渡」とは、債務者が債権者の承諾を得て、約定されていた弁済
     message: 「代物弁済による資産の譲渡」を定義していますが、本文で使っていません
     verdict: unjudged
+  - rule: lookalike-character
+    line: 73
+    text: －ス期間」という。）中に収受すべきリース料の額の合計額となる。
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: correct

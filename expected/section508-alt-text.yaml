@@ -29,12 +29,6 @@ findings:
     message: '"”" closes nothing that was opened'
     verdict: correct
     note: curly closing quotes on both sides of an HTML attribute value, a real typographic slip
-  - rule: unfilled-placeholder
-    line: 175
-    text: "[insert link name] below the image for a"
-    message: '"[insert link name]" was never filled in'
-    verdict: false-positive
-    note: a template example that tells the reader what to write there, not a leftover
   - rule: contraction-consistency
     line: 212
     text: The text is too short and doesn’t descri

@@ -27,12 +27,6 @@ findings:
     text: The court has bestowed on this argument
     message: This paragraph runs 14 sentences (limit 12)
     verdict: correct
-  - rule: demonstrative-opener-run
-    line: 51
-    text: This is plainly a contract to which the
-    message: 5 sentences in a row open with a word that points back, such as "This" (limit 2)
-    verdict: false-positive
-    note: deliberate anaphora ('It is a contract ... It is a contract ...') in the opinion's argument
   - rule: spelling-consistency
     line: 57
     text: modelling by the authority of the legisl
@@ -121,11 +115,6 @@ findings:
     text: But an eleemosynary, like every other co
     message: This paragraph runs 41 sentences (limit 12)
     verdict: correct
-  - rule: demonstrative-opener-run
-    line: 149
-    text: It further declares, that the trustees,
-    message: 5 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 157
     text: But it is objected, that the charter of

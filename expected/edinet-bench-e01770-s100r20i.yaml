@@ -21,6 +21,11 @@ findings:
     text: パワ－エレクトロニクス事業100―02なし信号保安装置の設計施工・委託加工なしK
     message: 「パワ」と「パワー」が混ざっています（この語は 18 回のうち 1 回が「パワ」）
     verdict: unjudged
+  - rule: lookalike-character
+    line: 13
+    text: －エレクトロニクス事業100―02なし信号保安装置の設計施工・委託加工なしKyo
+    message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
+    verdict: correct
   - rule: max-kanji-continuous
     line: 13
     text: ４ 【関係会社の状況】　名称住所資本金(百万円)主要な事業の内容議決権の所有(被
@@ -514,8 +519,8 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 117
-    text: （６）重要なヘッジ会計の処理(イ)ヘッジ会計の方法金利スワップについては、特例処
-    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    text: (ロ)ヘッジ手段とヘッジ対象ヘッジ手段……金利スワップ取引ヘッジ対象……借入金に
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 117

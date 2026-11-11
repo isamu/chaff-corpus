@@ -53,8 +53,8 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 9
-    text: (1) 物流事業倉庫業務……貨物保管・荷役作業・貸倉庫業務を行っており、保管・荷
-    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    text: 運送業務……東北丸八運輸㈱は貨物自動車運送事業法に基づき営業している運送会社で、
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 13

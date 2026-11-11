@@ -26,12 +26,6 @@ findings:
     text: "  When this suit was brought and when it"
     message: 2 spaces after this sentence, where the document usually leaves 1 (8 of 147)
     verdict: unjudged
-  - rule: demonstrative-opener-run
-    line: 43
-    text: It does not attempt to control the produ
-    message: 4 sentences in a row open with a word that points back, such as "It" (limit 2)
-    verdict: false-positive
-    note: a run of sentences about section 9(c), named in the sentence before; each 'It' is unambiguous
   - rule: unknown-word
     line: 43
     text: creterion to govern the President's cour

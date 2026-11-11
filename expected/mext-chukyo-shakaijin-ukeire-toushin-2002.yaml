@@ -24,18 +24,6 @@ findings:
     message: 「更に」と書いています（この文書はふつう「さらに」と書く語です。12 箇所のうち 4 箇所が違う）
     verdict: correct
     note: 「更に」 where the text mostly writes 「さらに」
-  - rule: use-before-definition
-    line: 32
-    text: 1年制コース及び通信制博士課程の導入について検討する必要があると考えられる。
-    message: 「1年制コース」を、86 行目の定義より前で使っています
-    verdict: false-positive
-    note: the introduction names the proposals that later sections define; a summary before the definition
-  - rule: use-before-definition
-    line: 32
-    text: 専門大学院1年制コース及び通信制博士課程の導入について検討する必要があると考えら
-    message: 「専門大学院」を、85 行目の定義より前で使っています
-    verdict: false-positive
-    note: the introduction names the proposals that later sections define; a summary before the definition
   - rule: vague-word-density
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次
