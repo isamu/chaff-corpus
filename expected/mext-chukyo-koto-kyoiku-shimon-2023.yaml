@@ -7,12 +7,6 @@ findings:
     message: 読点を「，」と書いています（この文書はふつう「、」。171 箇所のうち 1 箇所が違う）
     verdict: correct
     note: one 「，」 in the 諮問's opening where the rest of the text uses 「、」
-  - rule: preamble-length
-    line: 7
-    text: 次に掲げる事項について，別紙理由を添えて諮問します。
-    message: 最初の見出しまでに 27 段落あります（2 段落まで）
-    verdict: false-positive
-    note: a letter-form 諮問 with no sections; the only heading is the page's contact box
   - rule: no-doubled-joshi
     line: 16
     text: の日本社会の仕組みの延長線上では対応できない事態に直面することが想定され、我が国

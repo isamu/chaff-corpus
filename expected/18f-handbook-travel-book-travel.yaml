@@ -6,9 +6,3 @@ findings:
     text: If you have been [set up in
     message: This sentence runs 72 words (limit 40)
     verdict: correct
-  - rule: all-caps-shouting
-    line: 79
-    text: SUBMIT TO APPROVER status.\
-    message: '"SUBMIT TO APPROVER" is written in capitals'
-    verdict: false-positive
-    note: "'SUBMIT TO APPROVER' quotes a status label as the Concur screen shows it, in capitals"

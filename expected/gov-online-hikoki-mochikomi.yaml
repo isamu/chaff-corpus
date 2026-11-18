@@ -13,12 +13,6 @@ findings:
     message: 「スマホなどの電子機器の充電には機内電源を使用（モバイルバッテリーからの充電はしない）」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（6 項目のうち 2 項目）
     verdict: correct
     note: 「〜こと。」の文の項目と「〜を使用（…）」の名詞止めの項目が一つの箇条書きに混ざる
-  - rule: missing-final-period
-    line: 160
-    text: む
-    message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。21 段落のうち 1 段落）
-    verdict: false-positive
-    note: 表のセル（電池の種類の注記）が段落として残ったもの
   - rule: orthographic-variant
     line: 172
     text: 車椅子等に確実に装着され、かつ、電源が切られていること

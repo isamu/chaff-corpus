@@ -44,12 +44,6 @@ findings:
     message: "\"will not\" is written \"won't\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
-  - rule: duration-mismatch
-    line: 217
-    text: 1 April 2021).
-    message: 1 July 2020 plus 5 years ends around 30 June 2025, but the end is given as 1 April 2021
-    verdict: false-positive
-    note: two start dates for two groups (new tenancies from 1 July 2020, existing ones from 1 April 2021) are read as the start and end of the 5-year period
   - rule: max-sentence-length
     line: 268
     text: If you are unsure how to respond or worr
@@ -70,9 +64,3 @@ findings:
     text: If you have a serious complaint about th
     message: This sentence runs 48 words (limit 40)
     verdict: correct
-  - rule: repeated-sentence-head
-    line: 396
-    text: The government’s ‘How to rent a safe hom
-    message: 5 sentences in a row open with "The government’s ‘How" (limit 3)
-    verdict: false-positive
-    note: a closing 'Also in this series' run of parallel one-line blurbs, one per sibling guide; the repetition is the list's form

@@ -1,12 +1,6 @@
 id: nasa-knows-robotics-5-8
 chaff: 0.36.0
 findings:
-  - rule: very-adjective
-    line: 19
-    text: very large objects in space. Spacecraft
-    message: '"very large" and other "very" + adjective: 2.4 per 1000 words (limit 2)'
-    verdict: false-positive
-    note: two plain uses of very in a students' explainer
   - rule: max-paragraph-length
     line: 23
     text: NASA uses robotic arms to move large obj
@@ -25,9 +19,3 @@ findings:
     message: This paragraph runs 10 sentences (limit 5)
     verdict: correct
     note: a ten-sentence paragraph
-  - rule: very-adjective
-    line: 33
-    text: very long time without the need to land.
-    message: '"very long" and other "very" + adjective: 2.4 per 1000 words (limit 2)'
-    verdict: false-positive
-    note: two plain uses of very in a students' explainer

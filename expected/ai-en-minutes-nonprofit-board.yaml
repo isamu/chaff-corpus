@@ -1,12 +1,6 @@
 id: ai-en-minutes-nonprofit-board
 chaff: 0.36.0
 findings:
-  - rule: bold-density
-    line: 3
-    text: Riverside Community Food Bank**
-    message: 7 bold spans in 285 characters (limit 20 per 1000)
-    verdict: false-positive
-    note: bold for the organisation, the field labels and the motions is the usual formatting of board minutes; not an AI sign
   - rule: test:invented-detail
     line: 28
     what: the refrigerated truck and new grocery partners, the coordinator's name Michael Brooks (line 32) and A. Martinez's concern are not in the request

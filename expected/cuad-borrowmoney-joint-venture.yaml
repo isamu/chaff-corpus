@@ -39,12 +39,6 @@ findings:
     text: The Total Contributions. 14. Duties of M
     message: '"The Total Contributions" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: undefined-term
-    line: 33
-    text: Space Includingspecified Description of
-    message: '"Space Includingspecified Description" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: "extraction artefact: table cells merged and spaces lost (Includingspecified)"
   - rule: space-before-punctuation
     line: 37
     text: " , City And State, And Or Private Awarde"

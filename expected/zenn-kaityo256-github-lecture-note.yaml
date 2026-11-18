@@ -31,12 +31,6 @@ findings:
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
     note: 主題から述語まで遠い
-  - rule: clause-chain
-    line: 232
-    text: さて、教科書を読んでいて誤植を見つけた時、著者を調べ、著者の所属を調べ、著者のメ
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: false-positive
-    note: 「著者を調べ、所属を調べ、メールアドレスを調べ」は手順を並べた意図的な列挙で、読みにくい連鎖ではない
   - rule: repeated-conjunction
     line: 234
     text: 一方、GitHubに講義ノートが公開されていれば、明らかな誤植を見つけた時はさく

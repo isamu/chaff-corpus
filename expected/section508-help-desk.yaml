@@ -8,12 +8,6 @@ findings:
     verdict: correct
   - rule: vague-word-density
     line: 1
-    text: Accessibility inquiries often intersect
-    message: '"reasonable" and other vague words: 8 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: '"reasonable accommodation" is a legal term of art, not a vague word'
-  - rule: vague-word-density
-    line: 1
     text: Agencies should establish clear routing
     message: '"appropriate" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct

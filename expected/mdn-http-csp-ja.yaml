@@ -47,18 +47,6 @@ findings:
     text: 信頼型は、入力が変換関数を通過することを保証するものであり、その変換によって入力
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: unjudged
-  - rule: warning-without-action
-    line: 283
-    text: "[!WARNING]"
-    message: この注意書きは危険を述べるだけで、読み手がすることを書いていません
-    verdict: false-positive
-    note: "the warning does say what to do: developers should avoid 'unsafe-eval' (〜を避けるべきです)"
-  - rule: warning-without-action
-    line: 310
-    text: "[!WARNING]"
-    message: この注意書きは危険を述べるだけで、読み手がすることを書いていません
-    verdict: false-positive
-    note: "the warning does say what to do: developers should avoid 'unsafe-inline' (〜を避けるべきです)"
   - rule: topic-predicate-distance
     line: 348
     text: キーワードは、[ノンス](#nonce-ノンス値)または[ハッシュ](#ハッシュ

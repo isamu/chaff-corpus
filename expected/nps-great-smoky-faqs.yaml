@@ -32,9 +32,3 @@ findings:
     text: Wildlife can be spotted anywhere in the
     message: "\"it's\" is written \"it is\" elsewhere in the document"
     verdict: correct
-  - rule: repeated-sentence-head
-    line: 340
-    text: Learn more about volunteering opportunit
-    message: 5 sentences in a row open with "Learn more about" (limit 3)
-    verdict: false-positive
-    note: each 'Learn more about' sentence closes a separate FAQ answer; the answers are counted as one run of prose

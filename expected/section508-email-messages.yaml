@@ -127,16 +127,16 @@ findings:
     message: "\"you're\" is written \"you are\" elsewhere in the document"
     verdict: correct
   - rule: list-item-form-mix
-    line: 132
-    text: Standard sans-serif fonts such as Public
-    message: '"Standard sans-serif fonts such as Public Sans, Segoe UI, Roboto, Verdana, Arial, Tahoma, or Helvetica" is a phrase; the other items in this list are sentences (1 of 3)'
-    verdict: false-positive
-    note: the flagged item is a noun phrase completing "we recommend:" like the list's other items; the odd one is line 136, a phrase followed by a sentence (Full justification should be avoided.), the shape judged correct at line 51, so chaff points at the wrong item (missed at 136)
-  - rule: list-item-form-mix
     line: 136
-    what: '"Paragraph text that is left justified. Full justification should be avoided." runs on into a sentence among four noun phrases'
-    verdict: missed
-    note: the same shape as line 51 (a phrase, then a sentence), judged correct there
+    text: Paragraph text that is left justified. F
+    message: '"Paragraph text that is left justified." is a sentence; the other items in this list are phrases (2 of 6)'
+    verdict: correct
+    note: the same shape as line 51 (a phrase, then a sentence), judged correct there; found by chaffjs 0.46.0
+  - rule: list-item-form-mix
+    line: 137
+    text: Where Heading styles are used, apply the
+    message: '"Where Heading styles are used, apply the proper Heading level for the content structure, such as Heading 1, Heading 2, or Heading 3, and not how the heading looks." is a sentence; the other items in this list are phrases (2 of 6)'
+    verdict: unjudged
   - rule: unbalanced-bracket
     line: 151
     text: ” for the alt text to describe the OIT s

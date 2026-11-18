@@ -376,12 +376,6 @@ findings:
     text: ３ 【設備の新設、除却等の計画】（１）重要な設備の新設等 会社名セグメントの名称
     message: この文は 162 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 41
-    text: ３ 【設備の新設、除却等の計画】（１）重要な設備の新設等 会社名セグメントの名称
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: max-kanji-continuous
     line: 49
     text: ② 【発行済株式】 種類事業年度末現在発行数(株)(2023年３月31日)提出日
@@ -456,11 +450,6 @@ findings:
     line: 109
     text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
     message: 「株主資本資本金資本剰余金利益剰余金自己株式株主資本合計当期首残高」は漢字が 32 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: teki-overuse
-    line: 109
-    text: ③【連結株主資本等変動計算書】  前連結会計年度(自 2021年４月１日　至 2
-    message: 一文に「〜的」が 4 個あります（2 個まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 113

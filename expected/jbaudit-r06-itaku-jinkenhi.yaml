@@ -191,12 +191,6 @@ findings:
     text: その一方で、83委託事業等において、事業の実施状況等を踏まえれば、業務に従事して
     message: この文は 170 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: paragraph-restatement
-    line: 141
-    text: このように、会社において、虚偽の証ひょうが作成されており、これらの証ひょうからは
-    message: 「このように、」で始まるこの段落は、内容語の 50% が前の段落の繰り返しです
-    verdict: false-positive
-    note: a このように summary sentence, then new content (the follow-up request for evidence); summing up before the next step is the report's form
   - rule: max-sentence-length
     line: 143
     text: その結果、実績報告書等の作成に当たり従事したこととされていた延べ1,524人のう

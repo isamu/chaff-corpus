@@ -27,11 +27,6 @@ findings:
     text: 署名の真正性に係る認証（『署名者が公証人の面前で証書に署名をした旨』（目撃認証、
     message: この文は 158 文字あります（140 文字まで）
     verdict: correct
-  - rule: requirement-smell
-    line: 38
-    text: 等の意思確認を確認した上で、申請書等には、その確認が済んでいる旨を記載していただ
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 42
     text: A2．代理人（代理人によらない手続の場合は、手続者本人）による直接の確認又は現地

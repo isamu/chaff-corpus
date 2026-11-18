@@ -1,12 +1,6 @@
 id: cisa-blog-cyber-storm-x-20-years
 chaff: 0.36.0
 findings:
-  - rule: oxford-comma-consistency
-    line: 9
-    text: By Jason Wells, Section Chief for State,
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a fixed official job title (State, Local, Tribal and Territorial), not the writer's list
   - rule: max-sentence-length
     line: 21
     text: Cyber Storm began with 500 participants

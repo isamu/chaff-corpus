@@ -51,18 +51,6 @@ findings:
     text: 当社グループの属するリノベーションマンション業界におきましては、公益財団法人東日
     message: この文は 179 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 1
-    text: 企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部シ
-    message: この文に中黒が 10 個あります（5 個まで）
-    verdict: false-positive
-    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
-  - rule: no-nakaguro-parallel
-    line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: この文に中黒が 21 個あります（5 個まで）
-    verdict: false-positive
-    note: a bulleted list the dataset ran together (one item per line in the report) is read as one sentence
   - rule: repeated-sentence-ending
     line: 1
     text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい

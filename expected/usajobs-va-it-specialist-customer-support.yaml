@@ -51,6 +51,11 @@ findings:
     text: "PD#: IT Specialist (System Analyst/Custo"
     message: '"PD" is used without an expansion (18 such acronyms)'
     verdict: unjudged
+  - rule: list-item-form-mix
+    line: 195
+    text: Complete the initial online assessment a
+    message: '"Complete the initial online assessment and USAHire Assessment, if required." opens with a verb; the other items in this list open with a noun phrase (1 of 4)'
+    verdict: unjudged
   - rule: ngram-repetition
     line: 197
     text: Selected applicants will be required to

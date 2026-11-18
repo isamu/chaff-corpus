@@ -2,24 +2,6 @@ id: us-scotus-wickard-v-filburn
 chaff: 0.36.0
 findings:
   - rule: date-without-year
-    line: 11
-    text: July 1, will exceed a normal year's dome
-    message: "\"July 1\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"
-    verdict: false-positive
-    note: a statutory date that recurs every marketing year; it has no year by nature
-  - rule: date-without-year
-    line: 11
-    text: June 10, the Secretary must, however, co
-    message: "\"June 10\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"
-    verdict: false-positive
-    note: a statutory date that recurs every marketing year; it has no year by nature
-  - rule: date-without-year
-    line: 11
-    text: May 15 prior to the beginning of such ma
-    message: "\"May 15\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"
-    verdict: false-positive
-    note: a statutory date that recurs every marketing year; it has no year by nature
-  - rule: date-without-year
     line: 19
     text: May 19th, which was a busy hour in one o
     message: "\"May 19th\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"

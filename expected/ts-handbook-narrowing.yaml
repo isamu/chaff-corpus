@@ -1,12 +1,6 @@
 id: ts-handbook-narrowing
 chaff: 0.36.0
 findings:
-  - rule: summary-fact-mismatch
-    line: 21
-    text: "2345"
-    message: The summary gives "// @errors" as 2345, but the body gives 2322
-    verdict: false-positive
-    note: a twoslash compiler directive (// @errors) in a code fence compared with an error code in another example
   - rule: contraction-consistency
     line: 254
     text: If you're unfamiliar, checking whether s

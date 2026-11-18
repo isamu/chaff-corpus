@@ -46,12 +46,6 @@ findings:
     text: これらは透過的である場合、すなわち受信したリクエストをいかなる場合も変更せずに転
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 137
-    text: より低い層で動作します。
-    message: 「より低い」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: '"a lower layer" than HTTP proxies, named in the sentence before'
   - rule: repeated-sentence-ending
     line: 224
     text: インターフェイスを使用して、クライアントは接続を開いてイベントハンドラーを確立し

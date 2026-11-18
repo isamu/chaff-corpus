@@ -76,16 +76,6 @@ findings:
     text: disperison model used for treating the t
     message: '"disperison" is not in the dictionary; did you mean "dispersion"?'
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 333
-    text: " - Satellite"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 337
-    text: " - Telephone"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 411
     text: VHF radio link when precipitation occurs

@@ -7,12 +7,6 @@ findings:
     message: '"cancelled" here, where the document usually spells it "canceled" (1 of 42)'
     verdict: correct
     note: '"cancelled" once where the transcript writes "canceled" elsewhere'
-  - rule: hyphen-as-dash
-    line: 1977
-    text: " - Khorasan, as being the"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the hyphen joins the group's name (ISIS-Khorasan), not a dash in a sentence
   - rule: redundant-expression
     line: 2095
     text: Congressman, I refer back to my statemen

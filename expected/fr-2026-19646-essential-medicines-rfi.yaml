@@ -73,12 +73,6 @@ findings:
     message: This sentence runs 48 words (limit 45)
     verdict: correct
     note: a 48-word sentence
-  - rule: title-case-consistency
-    line: 71
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: "'b. Feasibility Feedback—Idle Capacity' is title case like the other section headings; the em-dash compound seems to be read as different"
   - rule: undefined-acronym
     line: 81
     text: FDA registration status for each molecul

@@ -1,11 +1,6 @@
 id: 18f-handbook-travel-faq
 chaff: 0.33.0
 findings:
-  - rule: hyphen-as-dash
-    line: 24
-    text: " - New"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 41
     text: TDY Per Diem Location’.

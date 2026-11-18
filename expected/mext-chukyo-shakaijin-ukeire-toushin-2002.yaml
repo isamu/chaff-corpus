@@ -1,12 +1,6 @@
 id: mext-chukyo-shakaijin-ukeire-toushin-2002
 chaff: 0.36.0
 findings:
-  - rule: vague-word-density
-    line: 21
-    text: 1  学生が個人の事情に応じて柔軟に修業年限を超えて履修し学位等を取得する仕組み
-    message: 「柔軟に」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
-    verdict: false-positive
-    note: 「柔軟に」 is part of the name of the mechanism the 答申 proposes, in its heading
   - rule: max-sentence-length
     line: 32
     text: このうち，大学等における社会人の受入れの推進については，従来より大学審議会の累次

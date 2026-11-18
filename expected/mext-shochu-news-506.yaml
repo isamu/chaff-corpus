@@ -185,5 +185,7 @@ findings:
     verdict: correct
   - rule: stray-space
     line: 293
-    what: a full-width space inside the name of the ministry's review regulations (between 教育 and 映像等審査規程)
-    verdict: missed
+    text: 　映像等審査規程に基づいて映像作品等の審査を行っています。
+    message: 「教育」と「映像」は一語の漢字の複合語ですが、あいだに空白があります（31 箇所のうち 1 箇所が空いている）
+    verdict: correct
+    note: a full-width space inside the name of the ministry's review regulations (between 教育 and 映像等審査規程); found by chaffjs 0.46.0

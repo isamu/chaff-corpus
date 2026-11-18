@@ -25,6 +25,7 @@ findings:
     note: "candidate pattern: a benefits list that inverts the problems list"
   - rule: closing-cliche
     line: 63
-    what: '"We would be happy to discuss any questions or adjustments to this plan." after a recommendation that restates the summary'
-    verdict: missed
-    note: stock closing offer; the paragraph also restates the Summary
+    text: We would be happy to discuss any questio
+    message: Closes with "happy to discuss any"
+    verdict: correct
+    note: stock closing offer; the paragraph also restates the Summary; found by chaffjs 0.46.0

@@ -31,12 +31,6 @@ findings:
     text: すなわち、調整係数を用いて地域間の補正を行った後、調査世帯の属性分布の偏りを、労
     message: この文は 142 文字あります（140 文字まで）
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 177
-    text: より的確に把握することができる。 月々の1世帯当たりの世帯人員、世帯主の年齢階級
-    message: 「より的確」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: the baseline (consumption spending before adjustment) is named at the start of the same sentence
   - rule: max-kanji-continuous
     line: 177
     text: 月々の1世帯当たりの世帯人員、世帯主の年齢階級別消費支出額を基準年の世帯分布で加

@@ -2,12 +2,6 @@ id: arxiv-2608-11256-ai-detection-integrity
 chaff: 0.36.0
 findings:
   - rule: figure-reference-order
-    line: 51
-    text: Fig. 1).
-    message: Fig. 1 is first referred to only after the section it appears in
-    verdict: false-positive
-    note: LaTeX floated Figure 1 into the introduction; the paper refers to it at its first use
-  - rule: figure-reference-order
     line: 53
     text: Table 1 lists retained abstracts per dom
     message: Table 1 is first referred to after Table 2
@@ -124,12 +118,6 @@ findings:
     text: Zhang, S. Li, B. Hauer, N. Shi, and G. K
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: unjudged
-  - rule: broken-link
-    line: 297
-    text: "[A-Za-z0-9][A-Za-z0-9\\-\\+\\./]*"
-    message: '"[A-Za-z0-9][A-Za-z0-9\-\+\./]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: a regular-expression character class '[A-Za-z0-9]' read as a reference-style link
   - rule: hyphen-as-dash
     line: 389
     text: " - the pattern behind proxy false-positi"

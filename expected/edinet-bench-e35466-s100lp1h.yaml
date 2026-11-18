@@ -16,11 +16,6 @@ findings:
     text: )の認証取得平成29年８月広島オフィスを広島市中区に開設平成30年７月BPOセン
     message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
-    line: 5
-    text: ２【沿革】昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立
-    message: 一文に節が 7 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 5
     text: ＪＡＳＤＡＱ（スタンダード）に株式を上場令和２年６月東京開発センターを東京都千代

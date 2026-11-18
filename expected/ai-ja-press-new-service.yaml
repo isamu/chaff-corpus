@@ -13,12 +13,6 @@ findings:
     message: 「〇〇株式会社」が埋まっていません
     verdict: correct
     note: catalog J27; found by chaffjs 0.38.0
-  - rule: yori-as-from
-    line: 3
-    text: より開始いたします。
-    message: 起点の「より」は「から」と書けます
-    verdict: false-positive
-    note: 「〜日より開始いたします」 is the conventional formal wording of a Japanese press release
   - rule: ai-tell
     line: 7
     what: 背景を「働き方の多様化に伴い」で始める

@@ -77,9 +77,3 @@ findings:
     text: " - Challenges for Higher Education, M. E"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: space-before-punctuation
-    line: 131
-    text: " , Document Cited by: §1, §5.1."
-    message: A space before ","
-    verdict: false-positive
-    note: the arXiv HTML leaves 'ISBN ,' where the bibliography style's ISBN value is empty; a conversion gap, not the authors' typing

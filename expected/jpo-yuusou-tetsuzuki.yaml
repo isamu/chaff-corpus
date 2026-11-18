@@ -18,9 +18,3 @@ findings:
     text: また、郵便又は「信書便」以外で送付してしまった場合の他、郵便又は「信書便」で送付
     message: この文は 158 文字あります（140 文字まで）
     verdict: correct
-  - rule: requirement-smell
-    line: 43
-    text: 等は、郵便又は「民間事業者による信書の送達に関する法律」に定められる「信書便」で
-    message: 要求の中の「等」は、ほかに何が含まれるのかを決めていません
-    verdict: false-positive
-    note: 「出願書類等」 names a class of documents in procedure guidance; not an open-ended requirement

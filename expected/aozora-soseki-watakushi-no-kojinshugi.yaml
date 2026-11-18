@@ -272,11 +272,6 @@ findings:
     text: 措いて第一文学とはどういうものだか、これではとうてい解るはずがありません。それな
     message: 「措く」と書いています（この文書はふつう「おく」と書く語です。4 箇所のうち 1 箇所が違う）
     verdict: unjudged
-  - rule: clause-chain
-    line: 27
-    text: 私は始終中腰で隙があったら、自分の本領へ飛び移ろう飛び移ろうとのみ思っていたので
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 27
     text: 私はそんなあやふやな態度で世の中へ出てとうとう教師になったというより教師にされて
@@ -663,12 +658,6 @@ findings:
     text: 俺の好かないやつだから畳んでしまえとか、気に喰わない者だからやっつけてしまえとか
     message: 「俺」と書いています（この文書はふつう「おれ」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: person-consistency
-    line: 57
-    text: 僕は左を向く、君は右を向いても差支ないくらいの自由は、自分でも把持し、他人にも附
-    message: 「僕」と書いています（この文書はふつう「私」。189 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: 僕 is the speaker in an illustrative quoted line, not the lecturer
   - rule: max-sentence-length
     line: 58
     text: だから個人主義、私のここに述べる個人主義というものは、けっして俗人の考えているよ

@@ -35,12 +35,6 @@ findings:
     text: 同誌は2016年版（2017年6月更新）までJournal Impact Fac
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: unjudged
-  - rule: doubled-punctuation
-    line: 172
-    text: 。. LRG. 2019, （26）, p. 136-147.
-    message: 「。.」と句読点が重なっています
-    verdict: false-positive
-    note: a cited title that ends with 。 followed by the citation's own separator, as SIST02 keeps it
   - rule: bracket-width-consistency
     line: 178
     text: ［受理：2019-08-20］

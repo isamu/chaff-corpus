@@ -16,12 +16,6 @@ findings:
     text: 特許庁への出願等手続は、パソコンを利用して行う電子出願と、書面（紙）による手続の
     message: この文は 159 文字あります（140 文字まで）
     verdict: correct
-  - rule: number-style-consistency
-    line: 17
-    text: 二通りの方法がありますが、電子出願で可能な手続を書面で行う場合には、その書面に記
-    message: 数え方の数を「二通り」と書いています（この文書はふつう「2,400円」の書き方。25 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: 「二通り」 is a fixed counting expression, written in kanji whatever the document's figure style
   - rule: topic-predicate-distance
     line: 17
     text: 特許庁への出願等手続は、パソコンを利用して行う電子出願と、書面（紙）による手続の

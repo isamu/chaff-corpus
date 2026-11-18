@@ -1,28 +1,12 @@
 id: arxiv-2610-12701-annotator-lived-experience
 chaff: 0.36.0
 findings:
-  - rule: name-variant
-    line: 17
-    text: ELicitation). Annotators read a scenario
-    message: '"ELicitation" is written "Elicitation" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: "'eXperience ELicitation' capitalises the letters of the acronym it spells out (axle), on purpose"
-  - rule: figure-reference-order
-    line: 75
-    text: Figure 2. The control arm is the same ap
-    message: Figure 2 is first referred to only after the section it appears in
-    verdict: unjudged
   - rule: numeral-sentence-start
     line: 113
     text: 104 annotators were recruited via Prolif
     message: The sentence opens with the numeral "104"
     verdict: correct
     note: the sentence opens with '104'
-  - rule: figure-reference-order
-    line: 173
-    text: Figure 5, left); claims of group members
-    message: Figure 5 is first referred to only after the section it appears in
-    verdict: unjudged
   - rule: contraction-consistency
     line: 175
     text: Annotators are not converging on uncerta
@@ -82,12 +66,6 @@ findings:
     text: Immigrant communities often hold the mos
     message: '"the most" has nothing to compare against (2 such claims)'
     verdict: unjudged
-  - rule: dangling-participle
-    line: 453
-    text: Treating masculinity as a pathology isn’
-    message: '"Treating masculinity as a pathology isn’t progressivism" has no one to attach to; the subject is an empty "it"'
-    verdict: false-positive
-    note: "'Treating ...' is a gerund subject of 'isn't', not a dangling participle"
   - rule: unqualified-superlative
     line: 471
     text: First-generation immigrant women are oft
