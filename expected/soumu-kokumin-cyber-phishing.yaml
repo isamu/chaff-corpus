@@ -5,74 +5,89 @@ findings:
     line: 3
     text: なお、フィッシングはphishingという綴りで、魚釣り（fishing）と洗練
     message: 「といわれている」は、誰が言ったのかを言っていません
-    verdict: unjudged
+    verdict: false-positive
+    note: "a hedge on a disputed word origin, where the hedge is the honest form rather than a hidden source"
   - rule: bracket-width-consistency
     line: 23
     text: (アイ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちま
     message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "half-width brackets where the page writes full-width ones"
   - rule: bracket-width-consistency
     line: 23
     text: ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。
     message: 括弧を「)」と書いています（この文書はふつう「）」。14 箇所のうち 2 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "half-width brackets where the page writes full-width ones"
   - rule: latin-spacing
     line: 23
     text: " にしたりして、閲覧者が見間違えるのを待ちます。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: "spaces set around single example characters (o, I, l, 0) so a reader can tell them apart"
   - rule: latin-spacing
     line: 23
     text: " を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: "spaces set around single example characters (o, I, l, 0) so a reader can tell them apart"
   - rule: latin-spacing
     line: 23
     text: " を数字の 0 にしたり、アルファベットの大文字の(アイ) I を小文字の（エル"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: "spaces set around single example characters (o, I, l, 0) so a reader can tell them apart"
   - rule: latin-spacing
     line: 29
     text: " AppStore）から入手してください。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "spaces around Latin product names, where the page writes Latin words tight against Japanese"
   - rule: latin-spacing
     line: 29
     text: " や AppStore）から入手してください。"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "spaces around Latin product names, where the page writes Latin words tight against Japanese"
   - rule: topic-predicate-distance
     line: 29
     text: 金融機関のID・パスワードなどを入力するWebページにアクセスする場合は、金融機
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the conditional topic 場合は waits through a long list of advice for its predicate"
   - rule: clause-chain
     line: 33
     text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
     message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one"
   - rule: katakana-long-vowel
     line: 33
     text: ブラウザーの上部または下部に表示されている WebサイトのURL のドメイン名が
     message: 「ブラウザー」と「ブラウザ」が混ざっています（この語は 4 回のうち 1 回が「ブラウザー」）
-    verdict: unjudged
+    verdict: correct
+    note: "ブラウザー once where the page writes ブラウザ"
   - rule: latin-spacing
     line: 33
     text: " WebサイトのURL のドメイン名が一致しているかどうかを確認します。ドメイン"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "a space before Latin letters, where the page writes them tight"
   - rule: latin-spacing
     line: 33
     text: " のドメイン名が一致しているかどうかを確認します。ドメイン名は「https://"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "a space after Latin letters, where the page writes them tight"
   - rule: max-sentence-length
     line: 33
     text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
     message: この文は 194 文字あります（160 文字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one"
   - rule: topic-predicate-distance
     line: 33
     text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
     message: 「は」で出した主題から述語まで 186 字あります（80 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one"

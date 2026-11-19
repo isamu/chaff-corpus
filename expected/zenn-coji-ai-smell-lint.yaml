@@ -4,16 +4,20 @@ findings:
   - rule: taigen-dome-in-prose
     line: 79
     sha256: 8ff9a9f65beac857362a7993d74ef850e1c0855d2b55d99ddd863198308a3f43
-    verdict: unjudged
+    verdict: correct
+    note: "prose sentences ending on a noun or a figure recur throughout the article"
   - rule: no-doubled-joshi
     line: 115
     sha256: 0dedbd9f6368754cc9003b438d737fa1a476b612f86d40b93a27af747df2aab5
-    verdict: unjudged
+    verdict: correct
+    note: "three の chained in one noun phrase"
   - rule: orthographic-variant
     line: 156
     sha256: 6fdb0515ee97f7547046f162a6f6385c2104439f058499028f91bbed5cff13eb
-    verdict: unjudged
+    verdict: correct
+    note: "the article writes 綺麗 elsewhere and きれい here"
   - rule: no-doubled-joshi
     line: 193
     sha256: 0673ea393b08a7830406750c4327cc58c79492a0a5b192caa2b6d31f3191cb90
-    verdict: unjudged
+    verdict: correct
+    note: "three の chained in one noun phrase"

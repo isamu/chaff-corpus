@@ -5,24 +5,29 @@ findings:
     line: 4
     text: どんな税金をどうやって納めているのかな？
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a children's page in desu-masu that speaks to the reader in deliberate casual asides (questions, hints)"
   - rule: latin-spacing
     line: 10
     text: " 円のノートを買いました。この場合、こころさんが 払った110円のうち、消費税は"
     message: 日本語と前の数字のあいだを空けています（この文書はふつう詰める。6 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "a space between a figure and 円, where the page writes them together"
   - rule: stray-space
     line: 10
     text: " 払った110円のうち、消費税はいくら含まれているでしょうか？"
     message: 助詞「が」と「払っ」のあいだに空白があります（この文書は文節のあいだをふつう詰めて書く。93 箇所のうち 1 箇所が空いている）
-    verdict: unjudged
+    verdict: correct
+    note: "a stray space inside a phrase"
   - rule: no-mixed-desumasu
     line: 12
     text: ヒント：日本では、商品やサービスの価格に10％の消費税が含まれているよ。
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a hint addressed to children in a deliberate casual voice"
   - rule: no-mixed-desumasu
     line: 26
     text: 所得税や消費税は国税ですが、住民税は地方税なので、納めるところが違うんだよ。
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a trivia aside addressed to children in a deliberate casual voice"

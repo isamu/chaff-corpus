@@ -15,7 +15,8 @@ findings:
     line: 16
     text: 千年単位で見ても類を見ない人口減少、生成ＡＩ等の登場による急激なデジタルの進化、
     message: 本文に体言止めが 7 文あります（4 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a long policy address whose few noun-ending sentences are slogans and enumerated policy headings; the count is not scaled to the length"
   - rule: max-ten
     line: 18
     text: そのために、私は、「ルールを守る」、「日本を守る」、「国民を守る」、「地方を守る
@@ -41,7 +42,8 @@ findings:
     line: 35
     text: 日韓間には難しい問題もありますが、来年に国交正常化六十周年を迎えることも見据え、
     message: 「国交正常化六十周年」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a fixed anniversary designation written with kanji numerals, as the speech writes every number; it cannot be split"
   - rule: max-kanji-continuous
     line: 41
     text: これは、国連安保理決議違反であり、我が国のみならず、地域、国際社会の平和と安全を

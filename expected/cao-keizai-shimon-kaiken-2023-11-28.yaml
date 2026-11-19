@@ -30,7 +30,8 @@ findings:
     line: 29
     text: 経済活動を平時化していくというのは、そういう意味ではこれまでのコロナ禍における本
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the spoken topic never gets a predicate of its own; the sentence breaks off into another construction"
   - rule: max-ten
     line: 31
     text: そして、今回の補正予算と併せて、来年度予算において、一体的に切れ目なく、デフレか
@@ -60,7 +61,8 @@ findings:
     line: 37
     text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
     message: 「は」で出した主題から述語まで 149 字あります（80 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "the topic's predicate closes at ですから; a new topic (私たちは) takes the rest of the sentence"
   - rule: topic-predicate-distance
     line: 53
     text: そういうことのないように、今回は補正予算が成立次第、12月の地方議会にすぐに対処
@@ -85,7 +87,8 @@ findings:
     line: 61
     text: あるいは、申請書をいただいて、それを今度は自治体から、あなたはこういうものを受け
     message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "は on the adverb 今度 (this time) is not a topic waiting for a predicate"
   - rule: clause-chain
     line: 62
     text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
@@ -100,7 +103,8 @@ findings:
     line: 62
     text: そういうようなことを、今、工夫をしているということでございまして、選択しながら、
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the topic こういったものは waits through a long spoken chain for its predicate"
   - rule: orthographic-variant
     line: 122
     text: 頂いた。
