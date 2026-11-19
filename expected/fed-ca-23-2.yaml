@@ -19,9 +19,9 @@ findings:
   - rule: max-sentence-length
     line: 23
     text: The updated Guide is intended to assist
-    message: This sentence runs 54 words (limit 18)
-    verdict: false-positive
-    note: "two sentences counted as one: the period after \"Regulation C\" is read as an initial's"
+    message: This sentence runs 29 words (limit 18)
+    verdict: correct
+    note: "re-judged after chaffjs 0.46.0: the sentence now ends at \"Regulation C.\" and is long on its own"
   - rule: max-sentence-length
     line: 23
     text: This Guide applies to HMDA data that fin
