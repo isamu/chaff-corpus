@@ -5,49 +5,59 @@ findings:
     line: 32
     text: 私は本年１月の経済演説において、地元鳥取県の若者やシングルマザーの方々からの差し
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the topic 私は carries through a long clause chain to the final predicate"
   - rule: max-ten
     line: 35
     text: 加えて、相対的に最低賃金の高い都市部においても、最低賃金近傍で働く人々の暮らしが
     message: 一文に読点が 7 個あります（6 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "seven commas in one sentence chaining two policy points"
   - rule: orthographic-variant
     line: 36
     text: 良い結論が出ることを期待したいと考えております。
     message: 「良い」と書いています（この文書はふつう「よい」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "良い here where the transcript otherwise writes the adjective in kana (よくなった, よりよい)"
   - rule: clause-chain
     line: 38
     text: 今、昨年を上回るとおっしゃられましたけれども、単純平均だと５年で1,500円にす
     message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: unjudged
+    verdict: correct
+    note: "a question chaining six clauses"
   - rule: fullwidth-alnum-consistency
     line: 42
     text: 7月21日の記者会見で、「成長への投資を加速し、賃上げを進めていくことがまず基本
     message: 半角の「7」と書いています（この文書はふつう全角の「７」。81 箇所のうち 19 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "a half-width single-digit month where the transcript writes single digits full-width"
   - rule: clause-chain
     line: 48
     text: （答）ご案内のとおり、私は全世代型社会保障構築担当でございますが、数百項目に及ぶ
     message: 一文に節が 7 つつながっています（5 つまで）
-    verdict: unjudged
+    verdict: correct
+    note: "a spoken answer chaining seven clauses"
   - rule: max-ten
     line: 48
     text: （答）ご案内のとおり、私は全世代型社会保障構築担当でございますが、数百項目に及ぶ
     message: 一文に読点が 7 個あります（6 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "seven commas in one spoken sentence"
   - rule: topic-predicate-distance
     line: 81
     text: 政府は潜在成長力の引上げ、生産性の向上につながるＧＸ・ＤＸなどの官民連携による国
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the topic 政府は waits through a long list for its predicate"
   - rule: teki-overuse
     line: 82
     text: 政府が掲げる１％程度の実質賃金上昇の定着に向け、生産性向上を通じた賃金引上げ原資
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "three 〜的 words in one sentence"
   - rule: topic-predicate-distance
     line: 116
     text: 令和６年度決算は、資料５の１ページ目のとおり、対令和６年度補正予算比で、歳入面で
     message: 「は」で出した主題から述語まで 146 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the topic waits through a long list of figures for its predicate"

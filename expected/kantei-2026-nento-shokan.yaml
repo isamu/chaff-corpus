@@ -15,7 +15,8 @@ findings:
     line: 22
     text: そして、「責任ある積極財政」に基づき、強い経済、強い外交・安全保障の実現について
     message: 接続詞で始まる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "the run spans paragraph breaks: each conjunction opens the next point of a speech that lists achievements"
   - rule: max-sentence-length
     line: 24
     text: また、ＡＳＥＡＮ関連首脳会議、ＡＺＥＣ首脳会合、日米首脳会談、ＡＰＥＣ首脳会議、

@@ -16,4 +16,5 @@ findings:
     line: 16
     text: 世界中の指導者や未来のリーダーに被爆地訪問を呼びかけ、被爆の実相に触れていただく
     message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a run of pledges in a formal address, each ending in the register's customary てまいります"

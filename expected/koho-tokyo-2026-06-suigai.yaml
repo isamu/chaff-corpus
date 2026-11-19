@@ -4,11 +4,13 @@ findings:
   - rule: no-mixed-desumasu
     line: 18
     sha256: 96c780a5d25e437096d42c5cded3c78dd601fed62768137f21c26e57db09b0d3
-    verdict: unjudged
+    verdict: false-positive
+    note: "a contributor's profile blurb written in plain form, a separate block in a desu-masu page as profiles conventionally are"
   - rule: max-kanji-continuous
     line: 37
     sha256: 79609c46ebb31d3f2a355ed23b961fdfa46292ab61d82c04460bf55a948f00a4
-    verdict: unjudged
+    verdict: false-positive
+    note: "the name of a published policy document; the kanji run cannot be split"
   - rule: no-mixed-desumasu
     line: 47
     sha256: dd79d1050c941c9a58772a7a09ccebbc980c83bcf3d50a1ed29aec5faa456c97
@@ -16,12 +18,15 @@ findings:
   - rule: date-without-year
     line: 51
     sha256: cbfa6c1b1d2985205f9ca6f3df1b4ba32708c7227865d880be2eb844abe8e79d
-    verdict: unjudged
+    verdict: false-positive
+    note: "a dated monthly issue; a month and day without a year refers to the issue's own year"
   - rule: bracket-width-consistency
     line: 99
     sha256: 3a80acf769a78a52491c6d6680be88d15919754d0446cdee328e184c43a6b5a5
-    verdict: unjudged
+    verdict: correct
+    note: "half-width brackets in the footer, where the page writes full-width ones"
   - rule: bracket-width-consistency
     line: 99
     sha256: 8b135770df3f9b1cffab4b46112c1926891e572a73e7e958e2462c47e7c19654
-    verdict: unjudged
+    verdict: correct
+    note: "half-width brackets in the footer, where the page writes full-width ones"
