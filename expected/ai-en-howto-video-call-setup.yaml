@@ -2,12 +2,8 @@ id: ai-en-howto-video-call-setup
 chaff: 0.36.0
 findings:
   - rule: bold-label-list
-    line: 9
-    what: paragraphs open with bold sentences ("**Use headphones with a microphone.**", "**Pick the quietest room you can.**" …)
-    verdict: missed
-    note: catalog E18 (bold labels, en), here as bold lead sentences
-  - rule: bold-label-list
     line: 11
     text: "**Pick the quietest room you can.** Room"
     message: '"Pick the quietest room you can" and other bold statements open 4 paragraphs (3 needed)'
-    verdict: unjudged
+    verdict: correct
+    note: "catalog E18 (bold labels, en), here as bold lead sentences; found by chaffjs 0.46.0"

@@ -136,7 +136,8 @@ findings:
     line: 137
     text: Where Heading styles are used, apply the
     message: '"Where Heading styles are used, apply the proper Heading level for the content structure, such as Heading 1, Heading 2, or Heading 3, and not how the heading looks." is a sentence; the other items in this list are phrases (2 of 6)'
-    verdict: unjudged
+    verdict: correct
+    note: "an imperative sentence closing a list of noun phrases after \"we recommend:\""
   - rule: unbalanced-bracket
     line: 151
     text: ” for the alt text to describe the OIT s

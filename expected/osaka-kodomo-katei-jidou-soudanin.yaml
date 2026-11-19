@@ -45,7 +45,8 @@ findings:
     line: 106
     text: " 手当（6月、12月）が支給されます。"
     message: 「勤勉」と「手当」は一語の漢字の複合語ですが、あいだに空白があります（29 箇所のうち 1 箇所が空いている）
-    verdict: unjudged
+    verdict: correct
+    note: "a stray space inside 勤勉手当"
   - rule: no-doubled-joshi
     line: 110
     text: の間の報酬額の例示です。今後、給与改定等により変更される場合があります。
