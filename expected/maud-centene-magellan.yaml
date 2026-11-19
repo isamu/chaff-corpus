@@ -598,12 +598,6 @@ findings:
     text: Health Care Program, (3) each Company En
     message: '"Health Care Program" is written like a defined term, but the document defines it nowhere'
     verdict: unjudged
-  - rule: party-role-name
-    line: 185
-    text: Providers providing material clinical, m
-    message: '"Provider" is not a name this contract gave a party (Parent)'
-    verdict: false-positive
-    note: Providers here are healthcare providers (a common noun), not a party name
   - rule: requirement-smell
     line: 193
     text: and/or approved and comply with applicab

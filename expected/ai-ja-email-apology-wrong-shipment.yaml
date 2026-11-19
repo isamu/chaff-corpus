@@ -1,12 +1,6 @@
 id: ai-ja-email-apology-wrong-shipment
 chaff: 0.36.0
 findings:
-  - rule: email-subject-length
-    line: 1
-    text: 件名：【お詫び】ご注文商品の誤配送について（ご注文番号：A-20481）
-    message: 件名が 33 字あります（30 字まで）
-    verdict: false-positive
-    note: 33 characters including 【お詫び】 and the order number the customer needs to find the order; conventional for a shop's apology
   - rule: test:invented-detail
     line: 13
     what: 原因（出荷時の確認不足）、再発防止（二重確認）、到着予定日、クーポンコード SORRY500 と有効期限、受付時間が依頼にない

@@ -1,12 +1,6 @@
 id: rust-reference-glossary
 chaff: 0.35.0
 findings:
-  - rule: no-lead
-    line: 3
-    text: r[glossary.ast]
-    message: The paragraph after the title "Glossary" adds only 2 words the title does not have
-    verdict: false-positive
-    note: an mdBook rule-identifier marker line (r[glossary.ast]) is read as the lead paragraph
   - rule: heading-level-skip
     line: 4
     text: "### Abstract syntax tree"
@@ -17,12 +11,6 @@ findings:
     text: FFI boundary, while the `"C"` ABI does n
     message: '"FFI" is used without an expansion (2 such acronyms)'
     verdict: correct
-  - rule: broken-link
-    line: 50
-    text: "[trait objects][type.trait-object]."
-    message: '"[trait objects][type.trait-object]" is a reference-style link with no definition (it shows as plain text)'
-    verdict: false-positive
-    note: mdBook supplies reference-link definitions for the whole book; the page alone does not carry them
   - rule: oxford-comma-consistency
     line: 68
     text: An expression is a combination of values

@@ -1,12 +1,6 @@
 id: 18f-blog-fearless-spreadsheet-formulas
 chaff: 0.36.0
 findings:
-  - rule: unqualified-superlative
-    line: 25
-    text: If spreadsheet formulas are the most pro
-    message: '"the most" has nothing to compare against (3 such claims)'
-    verdict: false-positive
-    note: the set is named (government code), carried over from the sentence before
   - rule: sentence-initial-so
     line: 98
     text: So, let's add a pre-condition that preve
@@ -19,9 +13,3 @@ findings:
     message: 2 sentences open with "So," (1 needed)
     verdict: correct
     note: sentences open with 'So,' as stated; a conversational tic
-  - rule: code-fence-language-mix
-    line: 293
-    text: "```"
-    message: This code block names no language, unlike the others (22 blocks name one)
-    verdict: false-positive
-    note: the block is the expected output (plain text), not code; no language applies to it

@@ -7,12 +7,6 @@ findings:
     message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
     note: 「〜あります」で終わる文が三つ続く
-  - rule: orthographic-variant
-    line: 14
-    text: 嫌だと言えない状況であったりしたなら、本当の同意があったことにはなりません。特に
-    message: 「嫌」と書いています（この文書はふつう「イヤ」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: こどもに向けた言葉（「イヤだ」）を片仮名にしたのは意図した書き分けで、本文の「嫌だと言えない」とは役割が違う
   - rule: no-doubled-joshi
     line: 55
     text: の被害の影響の現れかたはケース・バイ・ケースであるため一概には言えませんが、性被
@@ -55,12 +49,6 @@ findings:
     message: 括弧を「)」と書いています（この文書はふつう「）」。62 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「(イコール)」だけ半角の括弧
-  - rule: empty-intensifier
-    line: 99
-    text: 被害に遭ったこどもの心の回復には、周囲の大人の適切なサポートが不可欠です。以下の
-    message: 「不可欠です」は、中身を言わずに強調だけしています
-    verdict: false-positive
-    note: 「不可欠です」は何が不可欠か（周囲の大人の適切なサポート）を言っている
   - rule: orthographic-variant
     line: 117
     text: 時に着ていた衣服・下着（洗わずにそのままで）

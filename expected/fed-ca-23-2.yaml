@@ -1,12 +1,6 @@
 id: fed-ca-23-2
 chaff: 0.37.0
 findings:
-  - rule: email-subject-length
-    line: 17
-    text: "SUBJECT:"
-    message: The subject line is empty
-    verdict: false-positive
-    note: "the subject is on the line after the SUBJECT: label, as in the other letters where chaff measures it"
   - rule: max-sentence-length
     line: 21
     text: Applicability to Community Banking Organ

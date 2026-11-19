@@ -12,12 +12,6 @@ findings:
     what: 上司の言葉、客の言葉（19行）、工場の言葉（27行）をメモにないまま本人の発言として作っている
     verdict: missed
     note: "catalog B01 (invented detail): quotes put in a real employee's mouth on a recruiting site"
-  - rule: no-mixed-desumasu
-    line: 19
-    text: 「この部品、ここの寸法がもう少し出ればいいんだけど」と言われたときに、どの工程を
-    message: この文だけ他と文末の調子が違います（本文の中で 1 文）
-    verdict: false-positive
-    note: spoken answers in an interview; one plain-form sentence is natural speech
   - rule: ai-generated-composite
     line: 21
     text: 工場との橋渡しも

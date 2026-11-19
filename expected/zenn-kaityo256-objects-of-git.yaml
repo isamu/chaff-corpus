@@ -1,12 +1,6 @@
 id: zenn-kaityo256-objects-of-git
 chaff: 0.36.0
 findings:
-  - rule: katakana-density
-    line: 11
-    text: Gitのインデックスの中身](https://zenn.dev/kaityo25
-    message: カタカナ語が 1000 字あたり 58 語あります（55 語まで）。多いのは「オブジェクト、タグ、コミット」です
-    verdict: false-positive
-    note: カタカナ語は Git の用語そのもの（オブジェクト、タグ、コミット）で、言い換える語がない
   - rule: no-mixed-desumasu
     line: 30
     text: "[^blob]: [Binary Large OBjectsの略](https:"

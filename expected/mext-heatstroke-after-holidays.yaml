@@ -1,11 +1,6 @@
 id: mext-heatstroke-after-holidays
 chaff: 0.33.0
 findings:
-  - rule: preamble-length
-    line: 3
-    text: 今年の夏は全国的に気温の高い日が続いており、この先も気温の高い日が続く見込みです
-    message: 最初の見出しまでに 11 段落あります（2 段落まで）
-    verdict: unjudged
   - rule: ngram-repetition
     line: 4
     text: 特に休業日明けの時期は、子供たちが暑さや運動等に体が慣れていない場合があり、熱中

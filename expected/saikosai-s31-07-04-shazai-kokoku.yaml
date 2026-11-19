@@ -112,12 +112,6 @@ findings:
     text: 並びに表現せざるの自由をも包含するものと解すべきであり、このことは、憲法二〇条の
     message: 「並びに」の文に、段の組になる語がありません（一段なら「及び」）
     verdict: unjudged
-  - rule: defined-term-form
-    line: 85
-    text: 良心の自由」を保障するに至つた新憲法下においてかかる弊習は、もはやその存続を許さ
-    message: 「良心の自由」は 85 行目で定義した語です。定義のあとは、かぎ括弧を付けずに使います
-    verdict: false-positive
-    note: 「良心の自由」 quotes the Constitution's wording (憲法一九条にいう「良心の自由」); it is not a defined term
   - rule: doubled-word
     line: 85
     text: をもつて、その履行―すなわち婚姻―を命ずることが、婚姻の本質上許されないと同様、

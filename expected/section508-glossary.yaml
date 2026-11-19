@@ -104,11 +104,6 @@ findings:
     text: They make videos accessible for people w
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: correct
-  - rule: hyphen-as-dash
-    line: 807
-    text: " - Low, and so on."
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 821
     text: These include the Department of Agricult

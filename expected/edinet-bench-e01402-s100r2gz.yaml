@@ -6,18 +6,6 @@ findings:
     text: " SUNCALL SANKO CORP.を設立1989年６月米国に合弁会社 SA"
     message: 日本語と英字のあいだを、空ける所が 16 箇所、詰める所が 52 箇所あります。この文書には書き方が二通りあります
     verdict: correct
-  - rule: max-ten
-    line: 5
-    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
-    message: 一文に読点が 9 個あります（6 個まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
-  - rule: no-nakaguro-parallel
-    line: 5
-    text: ２【沿革】1943年６月現在地に資本金170万円を以って、航空機用エンジンの弁ば
-    message: この文に中黒が 7 個あります（5 個まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: orthographic-variant
     line: 5
     text: および京都証券取引所に株式を上場1967年10月愛知県豊田市に豊田工場を建設し、
@@ -93,12 +81,6 @@ findings:
     text: 役員の兼任等…無しサンコール菊池株式会社熊本県菊池市70自動車関連製品の製造及び
     message: 「菊池株式会社熊本県菊池市」は漢字が 12 字続いています（10 字まで）
     verdict: unjudged
-  - rule: repeated-sentence-head
-    line: 13
-    text: 役員の兼任等…有りSUNCALL CO.,（H.K.）LTD.中国香港特別行政区
-    message: 「役員の兼任等」で始まる文が 5 続いています（3 まで）
-    verdict: false-positive
-    note: a table the dataset ran together (cells without separators) is read as prose
   - rule: bracket-width-consistency
     line: 17
     text: )管理職に占める女性労働者の割合、男性労働者の育児休業取得率及び労働者の男女の賃

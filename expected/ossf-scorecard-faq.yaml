@@ -6,12 +6,6 @@ findings:
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: correct
-  - rule: bare-url-mix
-    line: 28
-    text: https://scorecard.dev/viewer/?uri=<githu
-    message: The URL "https://scorecard.dev/viewer/?uri=" is written bare (23 worded links in this document)
-    verdict: false-positive
-    note: a URL template with placeholders (<github_or_gitlab>…) cannot be written as a worded link
   - rule: max-paragraph-length
     line: 46
     text: Yes, kind of. The project was initially

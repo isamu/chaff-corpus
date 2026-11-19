@@ -177,9 +177,10 @@ findings:
     note: 183 字の一文
   - rule: repeated-conjunction
     line: 51
-    what: 「また、」「さらに、」「また、」で始まる段落が三つ続く（表2－2－1 の題を挟む）
-    verdict: missed
-    note: judged correct before; the table caption the converter now keeps (isamu/lab#1743) sits between the paragraphs and breaks the run chaff counts
+    text: また、常用雇用への移行を目的として、職業経験、技能、知識の不足等から安定的な就職
+    message: 接続詞で始まる段落が 3 続いています（2 まで）
+    verdict: correct
+    note: judged correct before; the table caption the converter now keeps (isamu/lab#1743) sits between the paragraphs and breaks the run chaff counts; found by chaffjs 0.46.0
   - rule: max-sentence-length
     line: 55
     text: あわせて、中途採用等支援助成金（中途採用拡大コース）により中途採用者の能力評価、

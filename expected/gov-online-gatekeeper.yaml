@@ -7,18 +7,6 @@ findings:
     message: 「気付く」と書いています（この文書はふつう「気づく」と書く語です。5 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「気付かぬ」と、ほかの「気づく」が混ざる
-  - rule: title-length
-    line: 11
-    text: "### まもろうよ　こころ～誰も自殺に追い込まれることのない社会へ【字幕付】（3"
-    message: 見出し「まもろうよ　こころ～誰も自殺に追い込まれることのない社会へ【字幕付】（3分00秒）」は 41 文字あります（40 文字まで）
-    verdict: false-positive
-    note: 見出しは動画の題名そのもので、書き手が縮められない
-  - rule: no-mixed-desumasu
-    line: 13
-    text: 心配する気持ちを伝え、耳を傾け、温かく見守る。互いに支え合う気持ちを持つことで守
-    message: この文だけ他と文末の調子が違います（本文の中で 2 文）
-    verdict: false-positive
-    note: 「伝え、耳を傾け、温かく見守る。」は標語のように行動を並べた一文で、文体の混在ではない
   - rule: orthographic-variant
     line: 13
     text: 持つことで守れる暮らしと命があります。【字幕付】

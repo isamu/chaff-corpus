@@ -331,11 +331,6 @@ findings:
     text: " - EMEA, Content Marketing (John Smith),"
     message: '"-" stands in for a dash'
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 645
-    text: " - Ruby). Please reach out to the People"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 645
     text: "[This job aid](https://docs.google.com/d"

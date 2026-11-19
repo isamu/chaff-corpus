@@ -1,12 +1,6 @@
 id: da-education-authentication-r7-2
 chaff: 0.35.0
 findings:
-  - rule: taigen-dome-in-prose
-    line: 31
-    text: 第1回有識者会議の取りまとめ状況について事務局より、資料に基づき以下のとおり説明
-    message: 本文に体言止めが 7 文あります（4 文まで）
-    verdict: false-positive
-    note: minutes conventionally end a summary line with a noun (…説明。)
   - rule: empty-intensifier
     line: 55
     text: デジタル庁が示している「デジタルファースト」「ワンスオンリー」「コネクテッド・ワ

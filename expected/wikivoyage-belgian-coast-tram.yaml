@@ -9,14 +9,6 @@ findings:
     line: 12
     sha256: 1dbde8049b4a655aa7c559c4694b2494f45fccd8916a20ac1e8cfa2b86f9924e
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 14
-    sha256: c27cb2f0c196bd4fbf90d3efb7d1e53be89e9405b9b37f158c8d142a31dfbef6
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 14
-    sha256: e75b50c3a0f62d6ab42b62800f34bbf48ce42791ab805528828c9db266e6e263
-    verdict: unjudged
   - rule: empty-table-cell
     line: 25
     sha256: 21b69ef4e687afe917b766ca452f1a3a8245e4b241d923e859730591ed9fc29c
@@ -48,10 +40,6 @@ findings:
   - rule: hyphen-as-dash
     line: 62
     sha256: 0391bc6df7f74189d1c5a0e8998b3b1667beb530fa0973cd797c67d8a853dd90
-    verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 62
-    sha256: 913a78b7ee200f3f926e8bc81dd43129f464ffdc2a690f66e8c90e2fdb17a797
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 62

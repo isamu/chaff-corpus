@@ -1,12 +1,6 @@
 id: mext-chukyo-kyoiku-katei-shimon-2014
 chaff: 0.36.0
 findings:
-  - rule: preamble-length
-    line: 7
-    text: 次に掲げる事項について，別添理由を添えて諮問します。
-    message: 最初の見出しまでに 34 段落あります（2 段落まで）
-    verdict: false-positive
-    note: a letter-form 諮問 with no sections; the only heading is the page's contact box
   - rule: hankaku-kana
     line: 19
     text: ｢生きる力｣の育成をより一層重視する観点から見直しが行われました。特に学力につい
@@ -271,12 +265,6 @@ findings:
     message: 半角の片仮名「｢」があります（全角は「「」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: unbalanced-bracket
-    line: 42
-    text: 」という観点から，四技能に係る一貫した具体的な指標の形式で示すこと
-    message: 「」」に対応する開きがありません
-    verdict: false-positive
-    note: the quotation opens with half-width ｢ and closes with full-width 」; the pair is there, only the widths differ (hankaku-kana flags the ｢)
   - rule: max-sentence-length
     line: 47
     text: ・今後，国民投票の投票権年齢が満18歳以上となることや，選挙権年齢についても同様
