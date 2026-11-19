@@ -5,9 +5,11 @@ findings:
     line: 758
     text: " ."
     message: A space before "."
-    verdict: unjudged
+    verdict: false-positive
+    note: a spaced ellipsis (. . .) wrapped across a line, not a stray space
   - rule: space-before-punctuation
     line: 2380
     text: " ."
     message: A space before "."
-    verdict: unjudged
+    verdict: false-positive
+    note: a spaced ellipsis (. . .) wrapped across a line, not a stray space

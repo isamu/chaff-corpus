@@ -5,4 +5,5 @@ findings:
     line: 120
     text: ..  Emma Vernon MEN AND WOMEN
     message: 'Punctuation is doubled: ".."'
-    verdict: unjudged
+    verdict: false-positive
+    note: leader dots in the cast list, not doubled punctuation

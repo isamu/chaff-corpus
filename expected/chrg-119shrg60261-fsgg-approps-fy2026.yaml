@@ -5,64 +5,77 @@ findings:
     line: 807
     text: right-size
     message: '"right-size" here, where the document usually writes "rightsize" (1 of 3)'
-    verdict: unjudged
+    verdict: correct
+    note: the minority spelling; the hearing writes rightsize elsewhere
   - rule: spelling-consistency
     line: 815
     text: cancelled wasteful contracts for total c
     message: '"cancelled" here, where the document usually spells it "canceled" (1 of 46)'
-    verdict: unjudged
+    verdict: correct
+    note: the minority spelling in the record
   - rule: name-variant
     line: 1437
     text: SBLCs licenses would be rescinded if the
     message: '"SBLCs" is one letter away from "SBDCs", which the document uses more than once'
-    verdict: unjudged
+    verdict: false-positive
+    note: two different program acronyms (lending companies vs development centers), not variants
   - rule: currency-notation-consistency
     line: 3879
     text: USD1. He created the Tron blockchain, an
     message: '"USD1" here, where the document usually writes this currency like "$600 million" (1 of 95)'
-    verdict: unjudged
+    verdict: false-positive
+    note: the name of a stablecoin, not an amount of money
   - rule: name-variant
     line: 5065
     text: Mullen, who joined our Subcommittee this
     message: '"Mullen" is one letter away from "Mullin", which the document uses more than once'
-    verdict: unjudged
+    verdict: correct
+    note: Senator Mullin's name misspelt in the prepared statement
   - rule: name-variant
     line: 5593
     text: American-Economic-Prosperity.pdf.
     message: '"American-Economic-Prosperity" is written "American Economic Prosperity" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
+    verdict: false-positive
+    note: a fragment of a URL file name broken across lines, not a spelling of the name
   - rule: name-variant
     line: 7087
     text: Risk-Assessment-06-12-2015.pdf; National
     message: '"Risk-Assessment" is written "Risk Assessment" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
+    verdict: false-positive
+    note: a fragment of a URL file name broken across lines, not a spelling of the name
   - rule: date-weekday-mismatch
     line: 7257
     text: June 11, the
     message: June 11, 2021 is a Friday, not a Wednesday
-    verdict: unjudged
+    verdict: false-positive
+    note: the hearing date's year (2025) is given in the document's header; the rule assumed another year
   - rule: invisible-character
     line: 7295
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
+    verdict: correct
+    note: a stray control character from the index extraction, left in the text
   - rule: invisible-character
     line: 7301
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
+    verdict: correct
+    note: a stray control character from the index extraction, left in the text
   - rule: invisible-character
     line: 7303
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
+    verdict: correct
+    note: a stray control character from the index extraction, left in the text
   - rule: invisible-character
     line: 7309
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
+    verdict: correct
+    note: a stray control character from the index extraction, left in the text
   - rule: invisible-character
     line: 7323
     text: "\x01"
     message: 1 control character (U+0001)
-    verdict: unjudged
+    verdict: correct
+    note: a stray control character from the index extraction, left in the text
