@@ -40,7 +40,7 @@ findings:
     line: 156
     text: could possibly occur in production,
     message: This sentence stacks 2 hedges ("could, possibly")
-    verdict: unjudged
+    verdict: correct
   - rule: colon-lead-in
     line: 159
     text: "These simulations:"
@@ -51,9 +51,9 @@ findings:
     line: 167
     text: "[here](https://docs.google.com/presentat"
     message: The link text "here" does not say where it goes
-    verdict: unjudged
+    verdict: correct
   - rule: vague-link-text
     line: 167
     text: "[here](https://drive.google.com/file/d/1"
     message: The link text "here" does not say where it goes
-    verdict: unjudged
+    verdict: correct

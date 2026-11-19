@@ -5,14 +5,14 @@ findings:
     line: 15
     text: " - we know that this approach works well"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 15
     text: Because the Civil Rights Portal backend
     message: This sentence runs 46 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: unknown-word
     line: 41
     text: succcessful upload needs to be confirmed
     message: '"succcessful" is not in the dictionary; did you mean "successful"?'
-    verdict: unjudged
+    verdict: correct

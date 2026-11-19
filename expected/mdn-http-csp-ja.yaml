@@ -11,47 +11,52 @@ findings:
     line: 43
     text: の閲覧コンテキストのための有効なソースを定義します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
   - rule: no-doubled-joshi
     line: 51
     text: のすべてのフェッチディレクティブの[代替](#代替)となります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
   - rule: no-doubled-joshi
     line: 58
     text: のコンテンツの閲覧のための有効なソースを指定します。
     message: 「の」が読点を挟まずに 4 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 62
     text: のマニフェストファイルのための有効なソースを指定します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
   - rule: no-doubled-joshi
     line: 77
     text: のインラインイベントハンドラーのための有効なソースを指定します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
   - rule: no-doubled-joshi
     line: 96
     text: のすべてのフェッチディレクティブの代替となります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
   - rule: bracket-width-consistency
     line: 146
     text: )。
     message: 丸括弧を、全角で 11 箇所、半角で 5 箇所書いています。この文書には書き方が二通りあります
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 272
     text: 信頼型は、入力が変換関数を通過することを保証するものであり、その変換によって入力
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 348
     text: キーワードは、[ノンス](#nonce-ノンス値)または[ハッシュ](#ハッシュ
     message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 361
     text: この式がスクリプトやスタイルを制御するディレクティブに含まれ、そのディレクティブ

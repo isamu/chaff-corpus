@@ -5,7 +5,7 @@ findings:
     line: 20
     text: HTTP は、 {{Glossary("TCP")}} または {{Glossa
     message: 「〜できます」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: ngram-repetition
     line: 27
     text: ほとんどの場合、ユーザーエージェントはウェブブラウザーですが、例えば検索エンジン
@@ -20,7 +20,8 @@ findings:
     line: 47
     text: ウェブページを表示するため、ブラウザーはページを表す HTML 文書を読み込むた
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "different verbs that share only the polite ending します, read as a repeated ending"
   - rule: bracket-width-consistency
     line: 48
     text: )、ページに含まれるサブリソース（通常、画像や動画）に対応する追加のリクエストを
@@ -50,4 +51,5 @@ findings:
     line: 224
     text: インターフェイスを使用して、クライアントは接続を開いてイベントハンドラーを確立し
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "different verbs that share only the polite ending します, read as a repeated ending"

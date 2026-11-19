@@ -5,7 +5,7 @@ findings:
     line: 36
     text: e-mail address. For example, this may be
     message: '"e-mail" here, where the document usually writes "email" (1 of 5)'
-    verdict: unjudged
+    verdict: correct
   - rule: step-statement-mix
     line: 56
     text: You'll see a series of messages noting t
@@ -15,4 +15,4 @@ findings:
     line: 71
     text: the Cloud Foundry documentation](http://
     message: '"the the" doubles a word; one of the two is left over'
-    verdict: unjudged
+    verdict: correct

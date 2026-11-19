@@ -5,12 +5,12 @@ findings:
     line: 254
     text: If you're unfamiliar, checking whether s
     message: "\"it is\" is written \"it's\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 254
     text: " - it also checks whether it's potential"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 352
     text: " - is `string | number`, and assignabili"
@@ -21,7 +21,7 @@ findings:
     line: 352
     text: " - the type that `x` started with - is `"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 543
     text: " - which is appropriate since `radius` m"

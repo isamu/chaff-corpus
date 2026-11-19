@@ -5,9 +5,9 @@ findings:
     line: 55
     text: This API key can be used for initially e
     message: This sentence runs 43 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: agreement-slip
     line: 62
     text: Your can check your current rate limit a
     message: '"Your can" puts a possessive where the subject belongs'
-    verdict: unjudged
+    verdict: correct
