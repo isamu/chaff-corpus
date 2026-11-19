@@ -25,7 +25,7 @@ findings:
     line: 76
     text: JSON-LD](https://json-ld.org/) or [HAL](
     message: '"JSON-LD" is used without an expansion (10 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 86
     text: SAML](http://saml.xml.org/))
@@ -50,7 +50,7 @@ findings:
     line: 106
     text: WGS 84 or other CRS coordinate systems f
     message: '"WGS" is used without an expansion (10 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 152
     text: the abbreviation DOB makes sense or whet
@@ -65,7 +65,8 @@ findings:
     line: 218
     text: RSS](https://en.wikipedia.org/wiki/Atom_
     message: '"RSS" is used without an expansion (10 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "RSS, an everyday web abbreviation, linked in place"
   - rule: oxford-comma-consistency
     line: 232
     text: This will help you meet your requirement

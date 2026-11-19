@@ -11,7 +11,7 @@ findings:
     line: 8
     text: ブラウザーは Cookie を保存したり、新しい Cookie を作成したり、既
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: stray-space
     line: 14
     text: " 使用して、さまざまなリクエストが同じブラウザー/ユーザーから送られたものかどう"
@@ -22,7 +22,7 @@ findings:
     line: 14
     text: 通常、サーバーは HTTP Cookie のコンテンツを 使用して、さまざまなリ
     message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: latin-spacing
     line: 35
     text: は 、より大量のデータを格納することができます。
@@ -99,22 +99,22 @@ findings:
     line: 208
     text: これは、例えば広告技術や分析ツールのプロバイダーなど、他のサイトに埋め込まれたサ
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 227
     text: アプリケーションサーバーは、ユーザーが認証されているか、あるいは CSRF トー
     message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: empty-intensifier
     line: 236
     text: プライバシーは、ウェブサイトを構築する上で非常に重要な考慮事項です。正しく行えば
     message: 「非常に重要」は、中身を言わずに強調だけしています
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 242
     text: ブラウザーのベンダーは、ユーザーがこのような動作を好まないことを知っており、その
     message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 257
     text: これらの規制は、これらの管轄区域（EU とカリフォルニア州、特にカリフォルニア州

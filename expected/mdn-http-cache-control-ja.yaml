@@ -29,27 +29,27 @@ findings:
     line: 143
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 143
     text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
     message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 161
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 161
     text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
     message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 235
     text: 静的なリソースに対する最近のベストプラクティスは、バージョン/ハッシュを URL
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 311
     text: ) キャッシュの実装は `no-cache` に対応していないからです。最近のブ
@@ -60,22 +60,24 @@ findings:
     line: 319
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: bracket-width-consistency
     line: 319
     text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
     message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: broken-link
     line: 361
     text: "[ブラウザーの互換性](#browser_compatibility)を参照）。"
     message: リンク「[ブラウザーの互換性](#browser_compatibility)」が指す「#browser_compatibility」の見出しがこの文書にありません
-    verdict: unjudged
+    verdict: false-positive
+    note: "an anchor the publishing platform (MDN) gives its standard browser-compatibility section, not one derived from the localised heading text"
   - rule: no-doubled-joshi
     line: 403
     text: の番号のついたバージョンのライブラリーを使用し、画像の URL にハッシュを含め
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "の used as a subject marker inside a relative clause (番号のついた) counted toward a chain of possessive の"
   - rule: orthographic-variant
     line: 451
     text: 既に中間サーバーのキャッシュに保存されているレスポンスを、クリアするためのキャッ

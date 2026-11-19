@@ -4,20 +4,20 @@ findings:
   - rule: ngram-repetition
     line: 31
     sha256: 733ca42fe96a92e6459f73ae8987bd7120a17b54aa001693a475c795c50b2454
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 64
     sha256: 7e564320c0df0f83e535d52dd1008ebb536e5dea520649ff4899a8f6e978535f
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 66
     sha256: 4dfd0a0282a08af6382b48273ba5746a561b7543aa7e5ad3eaedf870a479f602
-    verdict: unjudged
+    verdict: correct
   - rule: wordy-phrase
     line: 90
     sha256: faf26a1819d4dd6b49854a6260a26be0eb99008d6874f15107adef09d8a1ad9b
-    verdict: unjudged
+    verdict: correct
   - rule: wordy-phrase
     line: 95
     sha256: ab70f30aeaf0ba577476241d77d346fb28cf0cc23d20cd639d82424b7098855a
-    verdict: unjudged
+    verdict: correct

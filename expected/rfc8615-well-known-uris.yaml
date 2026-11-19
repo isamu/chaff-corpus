@@ -4,15 +4,15 @@ findings:
   - rule: max-sentence-length
     line: 88
     sha256: 257e8d2b8e5cd23f15efc8754f441aa5a70c87f7df0f1749b358a6ee2b1f6699
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 94
     sha256: 327a728cf9618a3aaba5ef30a989da5254bd2f3448518b5916a19e150a2934fb
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 190
     sha256: 2e35b23d90a7bedb6fe02e45c69c16408a866197f9bd213dd083210e0d08adff
-    verdict: unjudged
+    verdict: correct
   - rule: reference-topic-missing
     line: 205
     sha256: 85cd7a4ace510bd00d4cb82eea9b11adee47da2f6ebb2a7276f4ff599bdd5483
@@ -21,15 +21,16 @@ findings:
   - rule: max-sentence-length
     line: 300
     sha256: e510cd7e0ed109617139cca7476b2d7d4654a8e684d53d2db239247dd4dc3588
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 359
     sha256: cea36003b972265284575791510a5477b367238131369b35bc74c1695d6b6304
-    verdict: unjudged
+    verdict: correct
   - rule: name-variant
     line: 543
     sha256: 091a465b07b0a9ce8d5f8d5e245dd38276471dfb0aaa6f31876c1d958f675361
-    verdict: unjudged
+    verdict: false-positive
+    note: "two proper names: the HTTP header field name with its historical one-r spelling and the title of a W3C specification spelled normally"
   - rule: contraction-consistency
     line: 625
     sha256: 115b8e86350f06caa9f3a022dc26181b66db4ca745dc51da9f0a019f8f85703b
@@ -38,7 +39,8 @@ findings:
   - rule: oxford-comma-consistency
     line: 627
     sha256: b99c17c880893831d9def640ec27940f6e7a100ee91736618570428ff7f99d3d
-    verdict: unjudged
+    verdict: false-positive
+    note: "two purpose clauses joined by and after a comma read as a list without a serial comma"
   - rule: contraction-consistency
     line: 632
     sha256: 8467f14c8f018857c342159b1cf111d640e436ee05d3026e11594e74d827ed13
@@ -52,4 +54,5 @@ findings:
   - rule: contraction-consistency
     line: 640
     sha256: 9e1e2a5457998d84c62277aab2dfe9bc96a21e815b667c18729cd981354d4b5e
-    verdict: unjudged
+    verdict: correct
+    note: "the FAQ appendix uses contractions; the body writes them out"

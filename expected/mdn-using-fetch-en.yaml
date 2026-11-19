@@ -4,12 +4,12 @@ findings:
   - rule: contraction-consistency
     line: 71
     sha256: 34dbfb4d2b4ce6fddb4bb7a1bdb9e668a53601654e2e99e5ab6dbc642db6cd20
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 197
     sha256: 2a98866d7b6dee1555b2c1f971f4585658ec0982cda293bff60b9d2a8dcedc9d
-    verdict: unjudged
+    verdict: correct
   - rule: which-that-consistency
     line: 382
     sha256: 17d052d8d178913a771339c95ae11aeb5ab7864114dc9f3a57090b8020c01e26
-    verdict: unjudged
+    verdict: correct

@@ -5,12 +5,12 @@ findings:
     line: 110
     text: You may also specify an optional title.
     message: The first sentence repeats the heading "Specifying title"
-    verdict: unjudged
+    verdict: correct
   - rule: heading-echo
     line: 182
     text: Admonitions can be nested. Use more colo
     message: The first sentence repeats the heading "Nested admonitions"
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 352
     text: It is your responsibility to map each ad
