@@ -5,4 +5,5 @@ findings:
     line: 21
     text: Scientists believe most of the water is
     message: '"scientists believe" does not say who'
-    verdict: unjudged
+    verdict: false-positive
+    note: a learners' news explainer stating the scientific view, after naming past studies

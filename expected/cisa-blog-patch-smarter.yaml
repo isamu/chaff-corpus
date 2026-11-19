@@ -10,7 +10,8 @@ findings:
     line: 13
     text: vastly increasing the pace at which new
     message: 23 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
+    verdict: false-positive
+    note: a short post whose rate is driven by only (not a manner adverb) and a handful of plain -ly words
   - rule: quote-style-consistency
     line: 17
     text: "'s Binding Operational Directive (BOD) 2"
