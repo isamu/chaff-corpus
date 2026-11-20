@@ -5,4 +5,5 @@ findings:
     line: 13
     text: " 1人"
     message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: a space separating a job title from its head count, a field gap in a label-value line rather than spacing inside prose

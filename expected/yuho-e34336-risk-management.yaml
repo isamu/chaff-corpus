@@ -5,14 +5,15 @@ findings:
     line: 1
     text: (3）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出さ
     message: この文は 445 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the first sentence is over the limit on its own, but the count runs past its full stop because the (3） item marker leaves a half-width bracket open
   - rule: repeated-sentence-ending
     line: 1
     text: また、サステナビリティに関連するリスクについては、実務委員会において経営環境や他
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 1
     text: ）リスク管理当社グループでは、グループ経営にかかるリスクの網羅的抽出と抽出された
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
+    verdict: correct
