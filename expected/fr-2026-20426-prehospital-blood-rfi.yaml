@@ -7,12 +7,6 @@ findings:
     message: "1 zero-width character (U+200B): search and copy break the word here"
     verdict: correct
     note: the source puts zero-width spaces inside the URL; copying it gives a broken address
-  - rule: max-sentence-length
-    line: 31
-    text: DOT posts these comments, without editin
-    message: This sentence runs 70 words (limit 45)
-    verdict: false-positive
-    note: "two sentences joined: the full stop after a URL was hidden with the address; the real sentence ends at privacy."
   - rule: undefined-acronym
     line: 31
     text: FDMS), which can be reviewed at https://

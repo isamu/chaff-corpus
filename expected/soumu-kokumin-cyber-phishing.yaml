@@ -55,12 +55,6 @@ findings:
     message: 「は」で出した主題から述語まで 121 字あります（80 字まで）
     verdict: correct
     note: the conditional topic 場合は waits through a long list of advice for its predicate
-  - rule: clause-chain
-    line: 33
-    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
-    message: 一文に節が 6 つつながっています（5 つまで）
-    verdict: false-positive
-    note: a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one
   - rule: katakana-long-vowel
     line: 33
     text: ブラウザーの上部または下部に表示されている WebサイトのURL のドメイン名が
@@ -79,15 +73,3 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
     verdict: correct
     note: a space after Latin letters, where the page writes them tight
-  - rule: max-sentence-length
-    line: 33
-    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
-    message: この文は 194 文字あります（160 文字まで）
-    verdict: false-positive
-    note: a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one
-  - rule: topic-predicate-distance
-    line: 33
-    text: ドメイン名は「https://（ドメイン名）/」もしくは「（鍵マーク）（ドメイン
-    message: 「は」で出した主題から述語まで 186 字あります（80 字まで）
-    verdict: false-positive
-    note: a URL pattern in 「」 (https:// then a placeholder) read as a URL that runs on into the next sentences, so the short sentence is measured as a long one

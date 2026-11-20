@@ -1,11 +1,6 @@
 id: cloudgov-security-ir-guide
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 12
-    text: ""
-    message: Section "Cloud.gov" has no number, code or link (4 of 17 sections)
-    verdict: unjudged
   - rule: quote-style-consistency
     line: 17
     text: ’s Technology Transformation Service por
@@ -115,16 +110,6 @@ findings:
     line: 257
     text: ie. CryptoLocker) targeting TTS staff
     message: '"ie." has some of its periods but not all'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 267
-    text: ""
-    message: Section "2 - Medium Severity" has no number, code or link (4 of 17 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 282
-    text: ""
-    message: Section "3 - Low Severity" has no number, code or link (4 of 17 sections)
     verdict: unjudged
   - rule: undefined-acronym
     line: 323

@@ -1,11 +1,6 @@
 id: usajobs-va-it-specialist-customer-support
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    text: ""
-    message: Section "IT Specialist (System Analyst/Customer Support)" has no number, code or link (7 of 22 sections)
-    verdict: unjudged
   - rule: name-variant
     line: 7
     text: Information & Technology (OIT) End User
@@ -207,11 +202,6 @@ findings:
     line: 442
     text: The Department of Veterans Affairs perfo
     message: This sentence runs 54 words (limit 45)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 446
-    text: ""
-    message: Section "Fair and transparent" has no number, code or link (7 of 22 sections)
     verdict: unjudged
   - rule: max-sentence-length
     line: 486

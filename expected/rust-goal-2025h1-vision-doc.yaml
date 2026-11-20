@@ -6,23 +6,11 @@ findings:
     text: The document will help us focus our ener
     message: '"move the needle" is a cliché'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 25
-    text: ""
-    message: Section "It's time for us to think beyond "adoption"" has no number, code or link (5 of 11 sections)
-    verdict: false-positive
-    note: a motivation section that argues a direction; nothing in it calls for a number or link
   - rule: doubled-word
     line: 35
     text: the little tips and tricks that can get
     message: '"the the" doubles a word; one of the two is left over'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 45
-    text: ""
-    message: Section "Gathering stories from both individuals and groups" has no number, code or link (5 of 11 sections)
-    verdict: false-positive
-    note: a method section that names its means in words (online meetings, PRs, conferences); the rule counts only figures, code and links as concrete
   - rule: max-paragraph-length
     line: 57
     text: After the Status Quo story gathering, th
@@ -54,12 +42,6 @@ findings:
     text: Assuming this vision doc is successful,
     message: '"on a regular basis" can be said in fewer words'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 132
-    text: ""
-    message: Section "Why are you creating a support team? Should it be a working group?" has no number, code or link (5 of 11 sections)
-    verdict: false-positive
-    note: an informal FAQ answer about what to call the team; nothing in it calls for a number or link
   - rule: wordy-phrase
     line: 134
     text: I think this is a time-limited team crea

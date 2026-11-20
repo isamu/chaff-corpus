@@ -17,9 +17,3 @@ findings:
     text: Participants were randomly assigned to r
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-  - rule: max-sentence-length
-    line: 30
-    text: Kreimer AR, Porras C, Liu D, Hildesheim
-    message: This sentence runs 65 words (limit 40)
-    verdict: false-positive
-    note: the author list of a bibliographic reference read as a sentence

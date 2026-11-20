@@ -1,35 +1,15 @@
 id: govuk-style-guide-a-to-z
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 1
-    text: ""
-    message: Section "A to Z" has no number, code or link (5 of 5 sections)
-    verdict: unjudged
   - rule: expletive-construction
     line: 5
     text: There’s a new version of this content in
     message: '"There is ..." appears 6 times (limit 3)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 7
-    text: ""
-    message: Section "About the A to Z" has no number, code or link (5 of 5 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 40
-    text: ""
-    message: Section "How to suggest a change" has no number, code or link (5 of 5 sections)
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 49
     text: " - for example, user insights or researc"
     message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 51
-    text: ""
-    message: Section "What happens next" has no number, code or link (5 of 5 sections)
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 58
@@ -155,11 +135,6 @@ findings:
     line: 281
     text: " - The Public Trustee"
     message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: name-variant
-    line: 285
-    text: Words to avoid
-    message: '"Words" is one letter away from "Lords", which the document uses more than once'
     verdict: unjudged
   - rule: hyphen-as-dash
     line: 334

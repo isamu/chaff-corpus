@@ -69,7 +69,7 @@ findings:
     text: comms approvals before release to the cu
     message: '"comms" is not in the dictionary; did you mean "comes"?'
     verdict: false-positive
-    note: "an informal clipping (comms for communications) common in operations writing, read as a misspelling"
+    note: an informal clipping (comms for communications) common in operations writing, read as a misspelling
   - rule: max-sentence-length
     line: 126
     text: Where Operational Excellence reviews a s
@@ -80,7 +80,7 @@ findings:
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: false-positive
-    note: "the document mixes title-case and sentence-case headings about evenly, and title case is not the minority here"
+    note: the document mixes title-case and sentence-case headings about evenly, and title case is not the minority here
   - rule: undefined-acronym
     line: 141
     text: "SRE Chapter 15 - Postmortem Culture: Lea"
@@ -91,4 +91,4 @@ findings:
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: false-positive
-    note: "the document mixes title-case and sentence-case headings about evenly, and title case is not the minority here"
+    note: the document mixes title-case and sentence-case headings about evenly, and title case is not the minority here

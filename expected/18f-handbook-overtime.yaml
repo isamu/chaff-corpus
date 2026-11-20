@@ -2,12 +2,6 @@ id: 18f-handbook-overtime
 chaff: 0.34.0
 findings:
   - rule: undefined-acronym
-    line: 14
-    text: HR Links]({% page "/tools/hrlinks/#enter
-    message: '"HR" is used without an expansion (5 such acronyms)'
-    verdict: false-positive
-    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
-  - rule: undefined-acronym
     line: 25
     text: FLSA exemption status]({% page "/tools/h
     message: '"FLSA" is used without an expansion (5 such acronyms)'

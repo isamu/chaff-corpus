@@ -41,11 +41,6 @@ findings:
     text: Cases in which, as a result of a work-re
     message: This sentence runs 54 words (limit 50)
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 881
-    text: (The employment–population ratio represe
-    message: This sentence runs 52 words (limit 50)
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 955
     text: "Note: A single establishment generally p"

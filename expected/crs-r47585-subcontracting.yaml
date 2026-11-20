@@ -87,10 +87,11 @@ findings:
     message: '"CRS" is used without an expansion (10 such acronyms)'
     verdict: unjudged
   - rule: one-sentence-paragraph-run
-    line: 151
-    text: 15 U.S.C. §644(g)(1).
-    message: 16 one-sentence paragraphs in a row (limit 4)
-    verdict: unjudged
+    line: 157
+    text: SubNet is available at https://www.sba.g
+    message: 13 one-sentence paragraphs in a row (limit 4)
+    verdict: false-positive
+    note: a footnote list, each note one sentence, read as a run of prose paragraphs
   - rule: max-sentence-length
     line: 177
     text: '"Any contractor receiving a contract wit'
@@ -175,11 +176,6 @@ findings:
     line: 285
     text: According to the SBA's FY2025 Goaling Gu
     message: This sentence runs 71 words (limit 45)
-    verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 287
-    text: GSA, Subcontracting Report by North Amer
-    message: 5 one-sentence paragraphs in a row (limit 4)
     verdict: unjudged
   - rule: max-sentence-length
     line: 297

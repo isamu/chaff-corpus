@@ -5,7 +5,7 @@ findings:
     line: 69
     sha256: b21b90cc5f00ccc3d1913fed6e0a32ac3f8c34166e4075094bbfd0300e5b7b28
     verdict: false-positive
-    note: "the registry body every RFC names without expansion, in the standard section heading of an RFC"
+    note: the registry body every RFC names without expansion, in the standard section heading of an RFC
   - rule: contraction-consistency
     line: 91
     sha256: 3087e2a46c6d7ce74c7706f8b4568833bbcd4a609059b33b954bcd4d7cf97aa6
@@ -26,7 +26,7 @@ findings:
     line: 251
     sha256: 55d2d741978f8510e704a7e581c3a19ab4e05b97d987857aa0232b9c20b81b65
     verdict: false-positive
-    note: "the condition is fixed by the protocol (a relative reference is resolved first), not an unmeasured amount"
+    note: the condition is fixed by the protocol (a relative reference is resolved first), not an unmeasured amount
   - rule: max-sentence-length
     line: 286
     sha256: 9308833439d5b2131a875a505f2526efb556f95b22d95d6cc9792e340b363e52
@@ -43,7 +43,7 @@ findings:
     line: 440
     sha256: 51cfce01c826f44c3e06eb02921ead1b95bc4abd34f640b1ab3d719299419397
     verdict: false-positive
-    note: "the name of a grammar rule (an ABNF core rule) written in capitals, read as an acronym"
+    note: the name of a grammar rule (an ABNF core rule) written in capitals, read as an acronym
   - rule: contraction-consistency
     line: 454
     sha256: 960c133be52f8d7b5fcba0ed122ea5f2136d51813eb079b5c7c4e1d4d03b0153
@@ -64,4 +64,4 @@ findings:
     line: 761
     sha256: 631990d28de950667a3d8166495e3a8b31720f7cb6d3700c90196fb89b4b3892
     verdict: false-positive
-    note: "part of a standard's proper name, which the same line expands with its own acronym"
+    note: part of a standard's proper name, which the same line expands with its own acronym

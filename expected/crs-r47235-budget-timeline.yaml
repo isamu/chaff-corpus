@@ -6,11 +6,6 @@ findings:
     text: It has been common in recent practice fo
     message: This sentence runs 52 words (limit 45)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 19
-    text: CR in late September that provides budge
-    message: '"CR" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
   - rule: max-sentence-length
     line: 29
     text: This report does not cover budgetary mea

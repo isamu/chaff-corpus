@@ -21,6 +21,18 @@ findings:
     text: 私の運営するサーバーは趣味用だから、特定のコミュニティー、ローカル向けだからとい
     message: 「は」で出した主題から述語まで 95 字あります（80 字まで）
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 31
+    text: CC-BY-SA
+    message: 「CC-BY-SA」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: a licence identifier explained in the next sentence (Creative Commons licences, with a link)
+  - rule: undefined-acronym
+    line: 31
+    text: CC-BY、CC-BY-SA
+    message: 「CC-BY」が説明なしで使われています（説明のない略語 2 個）
+    verdict: false-positive
+    note: a licence identifier explained in the next sentence (Creative Commons licences, with a link)
   - rule: orthographic-variant
     line: 57
     text: あげましたが、これでも十分ライセンス条件を考慮したとは言えません。また、状況によ

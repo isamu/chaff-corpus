@@ -53,19 +53,9 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 1
-    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
+    text: 当社グループは、これまで中古マンションを取り巻くお客様のニーズにいち早く着目し、
     message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 1
-    text: 具体的には、ストック収入である賃貸総利益の維持に加え、フロー収入である販売総利益
-    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: (1）経営方針当社グループは、これまで中古マンションを取り巻くお客様のニーズにい
-    message: 「は」で出した主題から述語まで 395 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 1
     text: これは、中古マンションという今あるものに目を向け、眠っていた価値に光を当てること
@@ -84,6 +74,12 @@ findings:
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
     verdict: correct
     note: the topic (は) stands far from its predicate, over the limit
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社グループは、これまで中古マンションを取り巻くお客様のニーズにいち早く着目し、
+    message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当社グループは、様々な課題を抱えた中古マンションの取得・リノベーション・販売活動

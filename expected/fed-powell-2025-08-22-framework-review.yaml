@@ -398,12 +398,6 @@ findings:
     verdict: false-positive
     note: most of the length is a bibliographic citation (authors, title, series) in a footnote
   - rule: max-sentence-length
-    line: 105
-    text: Finance and Economics Discussion Series
-    message: This sentence runs 40 words (limit 25)
-    verdict: false-positive
-    note: most of the length is a bibliographic citation (authors, title, series) in a footnote
-  - rule: max-sentence-length
     line: 115
     text: For additional information, see the repo
     message: This sentence runs 30 words (limit 25)

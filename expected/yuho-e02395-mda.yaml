@@ -26,41 +26,6 @@ findings:
     text: ・地域別製品区分別売上高(単位：百万円)日本海外合計前年同期比(％)アジア北中南
     message: 「地域別製品区分別売上高」は漢字が 11 字続いています（10 字まで）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 1
-    text: (2)財政状態当連結会計年度末の財政状態は、前連結会計年度末と比較して総資産が1
-    message: 「財政状態当連結会計年度末」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ①生産実績当連結会計年度における生産実績は次のとおりであります。製品区分生産高(
-    message: 「生産実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ①調理家電製品調理家電製品の売上高は、58,631百万円（前連結会計年度比0.6
-    message: 「調理家電製品調理家電製品」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ③生活家電製品生活家電製品の売上高は、5,009百万円（前連結会計年度比10.5
-    message: 「生活家電製品生活家電製品」は漢字が 12 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ③繰延税金資産の回収可能性繰延税金資産の回収可能性は、将来減算一時差異が将来の税
-    message: 「回収可能性繰延税金資産」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ③販売実績当連結会計年度における販売実績は次のとおりであります。製品区分販売高(
-    message: 「販売実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
-    message: この文は 157 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: （重要な経営指標に関する分析）中期３ヵ年計画『SHIFT』で掲げた2023年目標
@@ -73,14 +38,10 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】当連結会計
-    message: この文は 168 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: ④固定資産の減損固定資産の減損は、固定資産のうち減損の兆候がある資産又は資産グル
-    message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
+    text: 当連結会計年度における現金及び現金同等物（以下「資金」という。)は、前連結会計年
+    message: この文は 145 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a full-width opening bracket closed by a half-width one leaves the count open past the full stop; the sentence alone is under the limit
   - rule: max-sentence-length
     line: 1
     text: 減損の兆候の把握、減損損失の認識及び測定を行うにあたっては、過年度の実績や事業計
@@ -114,16 +75,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
-    text: (3)キャッシュ・フロー当連結会計年度における現金及び現金同等物（以下「資金」と
-    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: ④固定資産の減損固定資産の減損は、固定資産のうち減損の兆候がある資産又は資産グル
-    message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
     text: このような経営環境の中で、当社グループは2022年11月21日より、暮らしの課題
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: unjudged
@@ -147,6 +98,18 @@ findings:
     text: また、固定資産2,548百万円の増加は主に、建物及び構築物143百万円、工具、器
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 固定資産の減損は、固定資産のうち減損の兆候がある資産又は資産グループについて、当
+    message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当連結会計年度における現金及び現金同等物（以下「資金」という。)は、前連結会計年
+    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
+    verdict: false-positive
+    note: a full-width opening bracket closed by a half-width one shifts the count; the topic gets its predicate within the limit
   - rule: topic-predicate-distance
     line: 1
     text: 流動資産1,315百万円の減少は主に、原材料及び貯蔵品407百万円が増加した一方

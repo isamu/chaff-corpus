@@ -33,11 +33,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: ①財政状態及び経営成績の状況当連結会計年度における我が国経済は、新型コロナウイル
-    message: この文は 187 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
     text: ａ．繰延税金資産の回収可能性繰延税金資産の計上にあたっては、将来の課税所得見込み
     message: この文は 141 文字あります（140 文字まで）
     verdict: unjudged
@@ -63,14 +58,20 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
+    text: 当連結会計年度における我が国経済は、新型コロナウイルス感染症に対する制限緩和によ
+    message: この文は 173 文字あります（140 文字まで）
+    verdict: correct
+  - rule: max-sentence-length
+    line: 1
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受
     message: この文は 215 文字あります（140 文字まで）
     verdict: unjudged
   - rule: ngram-repetition
     line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(1)経営
+    text: 当連結会計年度における当社グループの財政状態、経営成績及びキャッシュ・フロー（以
     message: 「のとおりでありま」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a formulaic lead-in ending (次のとおりであります) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
   - rule: no-doubled-joshi
     line: 1
     text: の予兆把握のための需要が今後も継続することが予想されます。また、国土強靭化計画の
@@ -83,18 +84,8 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 1
-    text: ②当連結会計年度の財政状態についての分析「(1)経営成績等の状況の概要①財政状態
-    message: 「〜願います」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 1
     text: ｂ.受注状況セグメントの名称当連結会計年度(自令和４年10月21日至令和５年10
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: ①財政状態及び経営成績の状況当連結会計年度における我が国経済は、新型コロナウイル
-    message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
@@ -106,6 +97,12 @@ findings:
     text: 実行予算の見積りは、対象となる請負業務ごとに内容や工期が異なるため個別性が強く、
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
     verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当連結会計年度における我が国経済は、新型コロナウイルス感染症に対する制限緩和によ
+    message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) frames a long comment whose predicate belongs to a later subject; the reader waits past the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受

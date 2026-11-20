@@ -71,16 +71,6 @@ findings:
     text: の教員免許状の取り扱いの詳細につきましては文部科学省ホームページや大阪府ホームペ
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 64
-    text: ""
-    message: 「大阪市立学校・幼稚園の講師登録のご案内」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 70
-    text: ""
-    message: 「＜令和8年度学校園の採用情報＞」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 79
     text: または高等学校の免許状をお持ちで小学校の講師として勤務を希望する方も登録可能です
@@ -111,11 +101,6 @@ findings:
     text: および12月29日から1月3日を除く。）
     message: 「および」と書いています（この文書はふつう「及び」と書く語です。8 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 214
-    text: ""
-    message: 「常勤講師（臨時的任用・任期付採用）」の節に数値もコードもリンクもありません（そういう節が 8/26）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 218
     text: 教諭（養護教諭）が産前産後休暇や育児休業を取得する期間に任用する産休補助臨時講師

@@ -11,6 +11,12 @@ findings:
     text: documentation relating to dispatches and
     message: This sentence runs 45 words (limit 40)
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 180
+    text: AN Other LTD57 North Road, London N12 5N
+    message: '"AN" is used without an expansion (2 such acronyms)'
+    verdict: false-positive
+    note: a placeholder company name in a sample address, not an acronym
   - rule: max-sentence-length
     line: 192
     text: £250 or less (including VAT), then you c

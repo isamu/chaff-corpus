@@ -87,12 +87,6 @@ findings:
     note: a sentence ending (…）となりました。) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
   - rule: repeated-sentence-ending
     line: 1
-    text: これは有形固定資産の取得によるものであります。(3）販売の実績当期の販売実績をセ
-    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: the run of endings crosses a run-in item heading ((3) on sales), which starts a new section
-  - rule: repeated-sentence-ending
-    line: 1
     text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上
     message: 「〜なりました」で終わる文が 3 文続いています（2 文まで）
     verdict: correct

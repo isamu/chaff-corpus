@@ -11,7 +11,7 @@ findings:
     text: Yellow Stone.” Lewis and Clark called th
     message: '"Yellow Stone" is written "Yellowstone" elsewhere in the document (case, width or punctuation)'
     verdict: false-positive
-    note: "a historical spelling quoted as such in an account of where the name came from, not a variant of the name"
+    note: a historical spelling quoted as such in an account of where the name came from, not a variant of the name
   - rule: unbalanced-bracket
     line: 13
     text: “Yellowstone.

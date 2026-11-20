@@ -11,11 +11,6 @@ findings:
     text: The Research Experiences for Undergradua
     message: This paragraph runs 6 sentences (limit 5)
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 76
-    text: ""
-    message: Section "Eligibility Information" has no number, code or link (3 of 27 sections)
-    verdict: unjudged
   - rule: expletive-construction
     line: 88
     text: There are no restrictions or limits on t
@@ -41,16 +36,6 @@ findings:
     text: "Full Proposals submitted via FastLane: N"
     message: '"Full Proposals submitted" appears 6 times (limit 5)'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 132
-    text: ""
-    message: Section "Proposal Review Information Criteria" has no number, code or link (3 of 27 sections)
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 138
-    text: ""
-    message: Section "Award Administration Information" has no number, code or link (3 of 27 sections)
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 152
     text: --both disciplinary and interdisciplinar
@@ -65,11 +50,6 @@ findings:
     line: 162
     text: --students who have typically already co
     message: '"--" stands in for a dash'
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 170
-    text: (Although interdisciplinary or multi-dep
-    message: This sentence runs 57 words (limit 45)
     verdict: unjudged
   - rule: max-sentence-length
     line: 174
@@ -235,11 +215,6 @@ findings:
     line: 386
     text: --is generally expected not to exceed $1
     message: '"--" stands in for a dash'
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 400
-    text: To prepare and submit a proposal via Fas
-    message: This sentence runs 48 words (limit 45)
     verdict: unjudged
   - rule: max-paragraph-length
     line: 404

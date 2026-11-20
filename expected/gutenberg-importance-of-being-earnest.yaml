@@ -1,15 +1,3 @@
 id: gutenberg-importance-of-being-earnest
 chaff: 0.33.0
-findings:
-  - rule: space-before-punctuation
-    line: 758
-    text: " ."
-    message: A space before "."
-    verdict: false-positive
-    note: a spaced ellipsis (. . .) wrapped across a line, not a stray space
-  - rule: space-before-punctuation
-    line: 2380
-    text: " ."
-    message: A space before "."
-    verdict: false-positive
-    note: a spaced ellipsis (. . .) wrapped across a line, not a stray space
+findings: []

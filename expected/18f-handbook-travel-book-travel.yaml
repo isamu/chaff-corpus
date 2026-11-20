@@ -6,3 +6,15 @@ findings:
     text: If you have been [set up in
     message: This sentence runs 72 words (limit 40)
     verdict: correct
+  - rule: undefined-acronym
+    line: 31
+    text: GSA
+    message: '"GSA" is used without an expansion (2 such acronyms)'
+    verdict: false-positive
+    note: the agency's name in an internal handbook written for its own staff, an everyday name for that audience
+  - rule: undefined-acronym
+    line: 83
+    text: TTS travel team can likewise
+    message: '"TTS" is used without an expansion (2 such acronyms)'
+    verdict: false-positive
+    note: the name of the reader's own organisation in an internal handbook, an everyday name for that audience

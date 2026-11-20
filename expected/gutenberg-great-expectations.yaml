@@ -8,26 +8,8 @@ findings:
     verdict: false-positive
     note: a common noun (a counterfeiter) one letter from a surname
   - rule: name-variant
-    line: 12972
-    text: Whereupon I made him the extreme reply t
-    message: '"Whereupon" is one letter away from "Thereupon", which the document uses more than once'
-    verdict: false-positive
-    note: an ordinary adverb one letter from another ordinary adverb, neither a name
-  - rule: name-variant
     line: 13025
     text: Blandley to
     message: '"Blandley" is one letter away from "Brandley", which the document uses more than once'
     verdict: correct
     note: the same character is Brandley everywhere else in the novel
-  - rule: name-variant
-    line: 13462
-    text: Look’ee here, Pip. I’m your second fathe
-    message: '"Look’ee" is written "Lookee" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a dialect contraction, not a name; the novel prints it both ways in dialogue
-  - rule: name-variant
-    line: 19286
-    text: Thank’ee dear boy, thank’ee. God bless y
-    message: '"Thank’ee" is written "Thankee" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a dialect contraction, not a name; the novel prints it both ways in dialogue

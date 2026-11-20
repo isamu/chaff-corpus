@@ -58,16 +58,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: ③資本の財源及び資金の流動性についての分析ａ．資金調達の方針当社は、原則として、
-    message: この文は 168 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
-    text: ４【経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析】(１)経営
-    message: この文は 146 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 1
     text: これは、売上高が増加した一方で、原材料価格の高騰により売上原価19億81百万円（
     message: この文は 168 文字あります（140 文字まで）
     verdict: unjudged
@@ -80,11 +70,6 @@ findings:
     line: 1
     text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
     message: 「百万円）となりま」が 13 回出てきます（5 回まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 1
-    text: ③資本の財源及び資金の流動性についての分析ａ．資金調達の方針当社は、原則として、
-    message: 「は」で出した主題から述語まで 132 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
@@ -106,6 +91,12 @@ findings:
     text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
     message: 「は」で出した主題から述語まで 120 字あります（80 字まで）
     verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社は、原則として、飲食部門に係る食材仕入費、店舗運営に係る人件費及び地代家賃等
+    message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: undefined-acronym
     line: 1
     text: FC３店舗）、館外飲食店舗が４店舗であります。②財政状態の状況当事業年度末におけ

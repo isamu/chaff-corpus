@@ -229,12 +229,6 @@ findings:
     message: 半角の片仮名「･」があります（全角は「・」）
     verdict: correct
     note: a half-width ｢ ｣ or ･ in a text that otherwise uses full-width brackets and 中黒
-  - rule: taigen-dome-in-prose
-    line: 37
-    text: ○　育成すべき資質･能力を子供たちに確実に育む観点から，学習評価の在り方について
-    message: 本文に体言止めが 6 文あります（4 文まで）
-    verdict: false-positive
-    note: questions ending in 〜か (〜が必要か。) counted as noun-ending sentences; the text has no 体言止め in its prose
   - rule: hankaku-kana
     line: 39
     text: ･内容の見直しについてであります。中でも特に以下の事項について，御検討をお願いし

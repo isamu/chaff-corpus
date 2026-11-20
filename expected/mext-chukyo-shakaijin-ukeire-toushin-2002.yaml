@@ -162,11 +162,6 @@ findings:
     message: この文は 179 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: no-doubled-joshi
-    line: 59
-    text: の定める単位の修得等の要件を満たして卒業・修了することにより，学位等を取得する正
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 59
     text: 当該学生は，職業等との兼ね合いにより，通常の修業年限在学する学生よりも1年間又は

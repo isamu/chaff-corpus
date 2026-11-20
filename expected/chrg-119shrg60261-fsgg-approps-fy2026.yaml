@@ -13,12 +13,6 @@ findings:
     message: '"cancelled" here, where the document usually spells it "canceled" (1 of 46)'
     verdict: correct
     note: the minority spelling in the record
-  - rule: name-variant
-    line: 1437
-    text: SBLCs licenses would be rescinded if the
-    message: '"SBLCs" is one letter away from "SBDCs", which the document uses more than once'
-    verdict: false-positive
-    note: two different program acronyms (lending companies vs development centers), not variants
   - rule: currency-notation-consistency
     line: 3879
     text: USD1. He created the Tron blockchain, an
@@ -31,18 +25,6 @@ findings:
     message: '"Mullen" is one letter away from "Mullin", which the document uses more than once'
     verdict: correct
     note: Senator Mullin's name misspelt in the prepared statement
-  - rule: name-variant
-    line: 5593
-    text: American-Economic-Prosperity.pdf.
-    message: '"American-Economic-Prosperity" is written "American Economic Prosperity" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a fragment of a URL file name broken across lines, not a spelling of the name
-  - rule: name-variant
-    line: 7087
-    text: Risk-Assessment-06-12-2015.pdf; National
-    message: '"Risk-Assessment" is written "Risk Assessment" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a fragment of a URL file name broken across lines, not a spelling of the name
   - rule: date-weekday-mismatch
     line: 7257
     text: June 11, the

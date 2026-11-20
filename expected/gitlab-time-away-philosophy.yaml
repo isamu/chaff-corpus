@@ -51,12 +51,6 @@ findings:
     text: “subject matter experts” or SME, people
     message: The quote mark “ here, where the document usually writes " (2 of 10)
     verdict: correct
-  - rule: undefined-acronym
-    line: 105
-    text: SME, people with specialized knowledge o
-    message: '"SME" is used without an expansion (7 such acronyms)'
-    verdict: false-positive
-    note: SME follows its expansion in quotes (subject matter experts or SME), a form chaff does not connect
   - rule: oxford-comma-consistency
     line: 149
     text: We will only contact your emergency cont

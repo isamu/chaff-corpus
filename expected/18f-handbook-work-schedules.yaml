@@ -6,12 +6,6 @@ findings:
     text: GSA expects us to be working. This page
     message: '"GSA" is used without an expansion (4 such acronyms)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 10
-    text: HR Specialist](https://docs.google.com/d
-    message: '"HR" is used without an expansion (4 such acronyms)'
-    verdict: false-positive
-    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
   - rule: name-variant
     line: 19
     text: HRLinks and is associated with you. You

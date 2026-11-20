@@ -37,11 +37,12 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 1
-    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
-    message: この文は 157 文字あります（140 文字まで）
+    text: 当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ」という長期ビジョ
+    message: この文は 148 文字あります（140 文字まで）
     verdict: correct
   - rule: topic-predicate-distance
     line: 1
-    text: ６【研究開発活動】当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ
+    text: 当社グループは「成長企業への挑戦、夢をかなえるものづくり企業へ」という長期ビジョ
     message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
     verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit

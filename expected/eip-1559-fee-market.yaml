@@ -46,7 +46,7 @@ findings:
     text: As of `FORK_BLOCK_NUMBER`, a new [EIP-27
     message: 6 one-sentence paragraphs in a row (limit 4)
     verdict: false-positive
-    note: "normative statements of a specification, one rule per paragraph by design, read as a run of choppy one-sentence paragraphs"
+    note: normative statements of a specification, one rule per paragraph by design, read as a run of choppy one-sentence paragraphs
   - rule: sentence-spacing-consistency
     line: 305
     text: "  This is due to the fact that upgrading"

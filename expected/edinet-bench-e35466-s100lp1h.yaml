@@ -28,14 +28,16 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 5
-    text: ２【沿革】昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立
-    message: この文は 1003 文字あります（140 文字まで）
-    verdict: unjudged
+    text: 昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立（資本金3
+    message: この文は 998 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a flattened chronology table (dates and events with no full stops) read as one sentence
   - rule: max-ten
     line: 5
-    text: ２【沿革】昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立
+    text: 昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立（資本金3
     message: 一文に読点が 8 個あります（6 個まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a flattened chronology table (dates and events with no full stops) read as one sentence; its commas belong to separate entries
   - rule: repeated-sentence-ending
     line: 5
     text: ２．プライバシーマーク制度とは、日本産業規格「JIS Q 15001個人情報保護
@@ -128,24 +130,24 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 9
-    text: (2）インフラソリューションサービスインフラソリューションサービスは、特定の業種
-    message: この文は 246 文字あります（140 文字まで）
-    verdict: unjudged
+    text: ERPソリューションサービスは、SAPジャパン株式会社（注)からパッケージの提供
+    message: この文は 219 文字あります（140 文字まで）
+    verdict: correct
   - rule: max-sentence-length
     line: 9
-    text: (3）ERPソリューションサービスERPソリューションサービスは、SAPジャパン
-    message: この文は 366 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 9
-    text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
-    message: この文は 183 文字あります（140 文字まで）
-    verdict: unjudged
+    text: インフラソリューションサービスは、特定の業種に偏ることなく、設計、構築に力を入れ
+    message: この文は 149 文字あります（140 文字まで）
+    verdict: correct
   - rule: max-sentence-length
     line: 9
     text: また、近年BPOセンター（Business Process Outsourcin
     message: この文は 201 文字あります（140 文字まで）
     verdict: unjudged
+  - rule: max-sentence-length
+    line: 9
+    text: 当社グループは、顧客の経営に直結するシステム課題を解決するITシステムソリューシ
+    message: この文は 175 文字あります（140 文字まで）
+    verdict: correct
   - rule: no-doubled-joshi
     line: 9
     text: の利活用のための分析ツールの提案といった経営戦略に直結するソリューションをワンス
@@ -153,9 +155,14 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 9
-    text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
+    text: インフラソリューションサービスは、特定の業種に偏ることなく、設計、構築に力を入れ
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 9
+    text: 当社グループは、顧客の経営に直結するシステム課題を解決するITシステムソリューシ
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 9
     text: 金融業（銀行・保険・証券）、産業・流通業、公共分野、医療分野、教育分野等の幅広い
@@ -163,19 +170,16 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 9
-    text: (2）インフラソリューションサービスインフラソリューションサービスは、特定の業種
-    message: 「は」で出した主題から述語まで 209 字あります（80 字まで）
-    verdict: unjudged
+    text: ERPソリューションサービスは、SAPジャパン株式会社（注)からパッケージの提供
+    message: 「は」で出した主題から述語まで 162 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) is answered only at the first clause predicate, which is itself far past the limit
   - rule: topic-predicate-distance
     line: 9
-    text: (3）ERPソリューションサービスERPソリューションサービスは、SAPジャパン
-    message: 「は」で出した主題から述語まで 331 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 9
-    text: ３【事業の内容】当社グループは、顧客の経営に直結するシステム課題を解決するITシ
+    text: 当社グループは、顧客の経営に直結するシステム課題を解決するITシステムソリューシ
     message: 「は」で出した主題から述語まで 160 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: unbalanced-bracket
     line: 9
     text: ）ERPソリューションサービスERPソリューションサービスは、SAPジャパン株式
@@ -223,14 +227,16 @@ findings:
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 13
-    text: ４【関係会社の状況】名称住所資本金（千円）主要な事業の内容議決権の所有割合又は被
+    text: 名称住所資本金（千円）主要な事業の内容議決権の所有割合又は被所有割合（％）関係内
     message: 「一部委託経営管理運営管理管理業務」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: flattened table cells (several entries of a relationship column) joined into one kanji run
   - rule: max-sentence-length
     line: 13
-    text: ４【関係会社の状況】名称住所資本金（千円）主要な事業の内容議決権の所有割合又は被
-    message: この文は 171 文字あります（140 文字まで）
-    verdict: unjudged
+    text: 名称住所資本金（千円）主要な事業の内容議決権の所有割合又は被所有割合（％）関係内
+    message: この文は 161 文字あります（140 文字まで）
+    verdict: false-positive
+    note: a flattened table (affiliated company row) read as one sentence
   - rule: no-doubled-joshi
     line: 13
     text: の一部委託経営管理運営管理管理業務の一部受託役員の兼任 ３名（注）「主要な事業の
@@ -258,22 +264,17 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 21
-    text: (2）経営戦略等① 当社グループの経営上の強み　当社グループは、独立系であるため
-    message: この文は 224 文字あります（140 文字まで）
-    verdict: unjudged
+    text: 当社グループが属する情報サービス産業は、新型コロナウイルス感染症の拡大の影響によ
+    message: この文は 165 文字あります（140 文字まで）
+    verdict: correct
   - rule: max-sentence-length
     line: 21
-    text: (4）経営環境当社グループが属する情報サービス産業は、新型コロナウイルス感染症の
-    message: この文は 172 文字あります（140 文字まで）
-    verdict: unjudged
+    text: 当社グループは、独立系であるためメーカーの系列、機種・OS等に限定されることなく
+    message: この文は 202 文字あります（140 文字まで）
+    verdict: correct
   - rule: no-doubled-joshi
     line: 21
     text: の事業分野の更なる強化ITサービスの多様化とサービスの低価格化で、ますます競争が
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 21
-    text: の確保当社グループの業容拡大策の柱は動員力の強化であり、優秀な人材確保が今後の重
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: orthographic-variant
@@ -296,41 +297,36 @@ findings:
     text: 従業員個々のプロジェクトマネジメント能力向上のため、当社グループではプロジェクト
     message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
-  - rule: teki-overuse
-    line: 21
-    text: (5）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 21
-    text: (2）経営戦略等① 当社グループの経営上の強み　当社グループは、独立系であるため
-    message: 「は」で出した主題から述語まで 192 字あります（80 字まで）
-    verdict: correct
-    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
-  - rule: topic-predicate-distance
-    line: 21
-    text: (4）経営環境当社グループが属する情報サービス産業は、新型コロナウイルス感染症の
-    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
-    verdict: correct
-    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
-  - rule: topic-predicate-distance
-    line: 21
-    text: (5）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下
-    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: correct
-    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
-  - rule: topic-predicate-distance
-    line: 21
-    text: ② 当社グループの経営上の弱み　当社グループは中堅独立系ITトータルソリューショ
-    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
-    verdict: correct
-    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: topic-predicate-distance
     line: 21
     text: なお、新型コロナウイルス感染症の拡大による当社グループの業績への影響は、令和３年
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
     verdict: correct
     note: the topic (は) stands far from its predicate, over the limit
+  - rule: topic-predicate-distance
+    line: 21
+    text: 当社グループが属する情報サービス産業は、新型コロナウイルス感染症の拡大の影響によ
+    message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
+  - rule: topic-predicate-distance
+    line: 21
+    text: 当社グループは、独立系であるためメーカーの系列、機種・OS等に限定されることなく
+    message: 「は」で出した主題から述語まで 192 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
+  - rule: topic-predicate-distance
+    line: 21
+    text: 当社グループは中堅独立系ITトータルソリューションプロバイダーのため、ネームバリ
+    message: 「は」で出した主題から述語まで 87 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
+  - rule: topic-predicate-distance
+    line: 21
+    text: 当社は、「人間性の追求」の社是の下、更なる事業収益の拡大を図ることにより、持続的
+    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic
   - rule: unbalanced-bracket
     line: 21
     text: ）優先的に対処すべき事業上及び財務上の課題当社は、「人間性の追求」の社是の下、更
@@ -363,14 +359,9 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    text: (2）技術革新によるリスク当社グループが属する情報サービス産業においては、技術革
-    message: この文は 151 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
-    text: (4）システム開発における品質や納期遅延の問題に関するリスクシステム開発において
-    message: この文は 173 文字あります（140 文字まで）
-    verdict: unjudged
+    text: システム開発においては、開発規模の「大型化」と顧客の要求の「高度化」、更にオープ
+    message: この文は 143 文字あります（140 文字まで）
+    verdict: correct
   - rule: max-sentence-length
     line: 25
     text: 当社においては、ISO27001やプライバシーマークの認証取得を行い、各部所担当
@@ -388,9 +379,9 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
-    text: (1）景気変動によるリスク当社グループが提供するシステムソリューションサービスは
+    text: 当社グループが提供するシステムソリューションサービスは、景気の影響を受けやすい傾
     message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 25
     text: 当社グループは、従業員の定着率を向上させることが第一であると考えており、従業員満
@@ -572,9 +563,9 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 41
-    text: ３【設備の新設、除却等の計画】当社グループの設備投資については、景気予測、業界動
+    text: 当社グループの設備投資については、景気予測、業界動向、投資効率等を総合的に勘案し
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 41
     text: ）重要な設備の新設等 会社名事業所名所在地設備の内容投資予定金額資金調達方法着手
@@ -642,9 +633,9 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 77
-    text: ３【配当政策】　当社は、利益配分につきましては、将来の事業展開と経営体質の強化の
+    text: 　当社は、利益配分につきましては、将来の事業展開と経営体質の強化のために必要な内
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 81
     text: ）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭
@@ -790,11 +781,6 @@ findings:
     text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項全ての
     message: この段落は 20 文あります（5 文まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 121
-    text: (5）連結キャッシュ・フロー計算書における資金の範囲連結キャッシュ・フロー計算書
-    message: この文は 144 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
     text: の平均残存勤務期間以内の一定の年数（６年）による定額法により按分した額をそれぞれ
@@ -815,6 +801,16 @@ findings:
     text: 建物　　　　　　　　８年～15年工具、器具及び備品　３年～15年 ロ　無形固定資
     message: 「〜おります」で終わる文が 11 文続いています（2 文まで）
     verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 退職給付に係る負債は、従業員の退職給付に備えるため、当連結会計年度末における退職
+    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    verdict: correct
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 連結キャッシュ・フロー計算書における資金(現金及び現金同等物)は、手許現金、随時
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: correct
   - rule: stray-space
     line: 121
     text: 　たな卸資産商品個別法による原価法（収益性の低下による簿価切り下げ方法）を採用し
@@ -822,7 +818,7 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 121
-    text: (5）連結キャッシュ・フロー計算書における資金の範囲連結キャッシュ・フロー計算書
+    text: 連結キャッシュ・フロー計算書における資金(現金及び現金同等物)は、手許現金、随時
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
     note: the topic (は) stands far from its predicate, over the limit; the heading run into the line does not change the topic

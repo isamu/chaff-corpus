@@ -2,12 +2,6 @@ id: commonpaper-baa
 chaff: 0.34.0
 findings:
   - rule: vague-word-density
-    line: 6
-    text: This includes giving training to <span c
-    message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: as required by a named law or section, a precise cross-reference counted as a vague word
-  - rule: vague-word-density
     line: 7
     text: Provider</span> will implement appropria
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
@@ -49,12 +43,6 @@ findings:
     verdict: correct
   - rule: vague-word-density
     line: 13
-    text: If relevant to the Services, <span class
-    message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: as required by a named law or section, a precise cross-reference counted as a vague word
-  - rule: vague-word-density
-    line: 13
     text: Provider</span> will take reasonable eff
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
     verdict: correct
@@ -70,12 +58,6 @@ findings:
     verdict: correct
     note: notice of a limitation with no time for it
   - rule: vague-word-density
-    line: 16
-    text: Upon request, <span class="keyterms_link
-    message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: as required by a named law or section, a precise cross-reference counted as a vague word
-  - rule: vague-word-density
     line: 17
     text: Company</span> will notify <span class="
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
@@ -86,20 +68,8 @@ findings:
     message: '"in a timely manner" and other vague words: 16 per 1000 words (limit 4)'
     verdict: correct
   - rule: vague-word-density
-    line: 25
-    text: Provider</span> will report to <span cla
-    message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: as required by a named law or section, a precise cross-reference counted as a vague word
-  - rule: vague-word-density
     line: 26
     text: Company</span> agrees that this section
     message: '"periodically" and other vague words: 16 per 1000 words (limit 4)'
     verdict: false-positive
     note: a word of frequency describing how often attacks happen, not part of a duty
-  - rule: vague-word-density
-    line: 28
-    text: Provider</span> will not disclose inform
-    message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: as required by applicable law, the stock carve-out for legally compelled disclosure, counted as a vague word

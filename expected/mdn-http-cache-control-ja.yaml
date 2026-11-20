@@ -72,12 +72,6 @@ findings:
     message: リンク「[ブラウザーの互換性](#browser_compatibility)」が指す「#browser_compatibility」の見出しがこの文書にありません
     verdict: false-positive
     note: an anchor the publishing platform (MDN) gives its standard browser-compatibility section, not one derived from the localised heading text
-  - rule: no-doubled-joshi
-    line: 403
-    text: の番号のついたバージョンのライブラリーを使用し、画像の URL にハッシュを含め
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: の used as a subject marker inside a relative clause (番号のついた) counted toward a chain of possessive の
   - rule: orthographic-variant
     line: 451
     text: 既に中間サーバーのキャッシュに保存されているレスポンスを、クリアするためのキャッ
