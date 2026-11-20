@@ -4,72 +4,82 @@ findings:
   - rule: concrete-evidence-density
     line: 14
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: false-positive
+    note: a situation or solution section of an onboarding guide, descriptive by nature, needs no figures, code or links
   - rule: concrete-evidence-density
     line: 20
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: false-positive
+    note: a situation or solution section of an onboarding guide, descriptive by nature, needs no figures, code or links
   - rule: topic-predicate-distance
     line: 22
     sha256: 5aa350fff441d4a5546d58ce5ef4ee4c7d53955065b107ec93e35c41a4882239
-    verdict: unjudged
+    verdict: false-positive
+    note: a は inside an embedded why-question measured on to the main predicate of the sentence
   - rule: undefined-acronym
     line: 32
     sha256: 1676c51bc653325335f1ee4fea4b52d9b7d1f77b40b6bc64a35c362847c979d2
-    verdict: unjudged
+    verdict: correct
   - rule: concrete-evidence-density
     line: 36
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: false-positive
+    note: a situation or solution section of an onboarding guide, descriptive by nature, needs no figures, code or links
   - rule: bracket-width-consistency
     line: 38
     sha256: c6bae3d38f40ada223432209f2ecfb18258fe0a89eabbdc67486e10fc502b2c2
-    verdict: unjudged
+    verdict: correct
   - rule: range-notation-consistency
     line: 60
     sha256: 39faebbbb552505055d4c8e0253b8b4eae449d417f16d001ea3bab5b09e54ca4
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 60
     sha256: 3a81df812baa356d9054b3843e6ca0ff91a38b13771e4bc7645fd3fed58c08a8
-    verdict: unjudged
+    verdict: false-positive
+    note: a company name taken as an acronym that needs spelling out
   - rule: teki-overuse
     line: 64
     sha256: f144fdc701753f2c43c7a3ac25be4f6bf19cacaa4bfacd57815765af7e8f6f1b
-    verdict: unjudged
+    verdict: correct
   - rule: hiragana-fukushi
     line: 68
     sha256: 9d581fb10b5e26a0e6b113c2daa8d992ae3226d24933057c12dc08679d68c09e
-    verdict: unjudged
+    verdict: correct
   - rule: concrete-evidence-density
     line: 72
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: false-positive
+    note: a situation or solution section of an onboarding guide, descriptive by nature, needs no figures, code or links
   - rule: concrete-evidence-density
     line: 88
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: false-positive
+    note: a situation or solution section of an onboarding guide, descriptive by nature, needs no figures, code or links
   - rule: hiragana-fukushi
     line: 96
     sha256: 05b5bab535d3df4bf4b2eb44a8c04cf94b89dff01a25de17187337312a9e1671
-    verdict: unjudged
+    verdict: correct
   - rule: list-item-form-mix
     line: 122
     sha256: 316bc8647cb1a54b63f8ade35f27f5b45808beb468cd6c549770875173a69d2a
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 123
     sha256: 92d20920454969f8532bde499c35e031eb2a96fb8773d0e99e55b5b857dc0ca4
-    verdict: unjudged
+    verdict: false-positive
+    note: three の across a coordination with や (AのBのCやDのE), not one genitive chain
   - rule: comparative-without-baseline
     line: 128
     sha256: 95f68782dc94455f847415dde6501da5ef255caa88d46f736f1d824ccc2b8aa9
-    verdict: unjudged
+    verdict: false-positive
+    note: the baseline (without the shared notes) is given by the sentence itself
   - rule: latin-spacing
     line: 132
     sha256: 1c7cf2d74ec40d94555434cd75e6855b4179f881c4c612c90a5a6b588e937042
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 132
     sha256: 4b890abb48e4181ed8e484350f15bff3c499c05300faaba6829791fa57ad6bf9
-    verdict: unjudged
+    verdict: false-positive
+    note: a department's proper name, introduced in the same sentence as its design department

@@ -20,12 +20,13 @@ findings:
     line: 1
     text: (5）当社は再開発事業として建設した新館店舗を株式会社アイリスプラザとの間で20
     message: 括弧を「(」と書いています（この文書はふつう「（」。12 箇所のうち 4 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 1
     text: (2）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビ
     message: この文は 141 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: the (2） item marker of a run-in list counted into the sentence; without the marker the sentence is under the limit
   - rule: topic-predicate-distance
     line: 1
     text: (2）当社は国内工場の集約に伴い生じた遊休地の有効活用を検討し、株式会社ユニリビ
@@ -57,9 +58,9 @@ findings:
     line: 1
     text: ）当社は賃貸中の店舗建替に伴い関東三菱自動車販売株式会社（現・東日本三菱自動車販
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 1
     text: ）当社は遊休不動産の有効活用を検討し、ヤマト運輸株式会社との間に1998年６月1
     message: 「(」を「）」で閉じています（全角と半角が違います）
-    verdict: unjudged
+    verdict: correct

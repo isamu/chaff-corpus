@@ -5,9 +5,10 @@ findings:
     line: 7
     text: 今般、デジタル庁が運用するガバメントソリューションサービス（以下、「GSS」とい
     message: 最初の見出しまでに 3 段落あります（2 段落まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: the lead of a press notice (what happened, who is affected, an apology) before the first heading; short and conventional for an incident notice
   - rule: latin-spacing
     line: 72
     text: " を掲載しました"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct

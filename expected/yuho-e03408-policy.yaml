@@ -5,19 +5,20 @@ findings:
     line: 1
     text: EV（電気自動車）の販売や家庭、車とエネルギーをつなぐ新たなサービスの創造に取り
     message: 半角の「EV」と書いています（この文書はふつう全角の「ＥＶ」。4 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
   - rule: max-kanji-continuous
     line: 1
     text: ・2024年の完成を予定する豊橋駅前大通二丁目地区再開発事業のｅｍＣＡＭＰＵＳ（
     message: 「豊橋駅前大通二丁目地区再開発事業」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a proper name of a redevelopment project (place name, block and 地区再開発事業), which cannot be broken up
   - rule: repeated-sentence-ending
     line: 1
     text: 同ビジョンにおいて、社会が大きく変化するなかでもお客さまの暮らしやすさを徹底して
     message: 「〜います」で終わる文が 4 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 1
     text: （ハウジング）・住宅販売部門は、お客さま視点の商品・サービス開発に継続して取り組
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
