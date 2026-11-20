@@ -5,7 +5,8 @@ findings:
     line: 15
     text: largely on expectations of higher policy
     message: 16 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
+    verdict: false-positive
+    note: graded degree adverbs (slightly, modestly, largely, generally) that carry the Committee's calibrated meaning, not padding, and the count is barely over the limit
   - rule: max-sentence-length
     line: 17
     text: Market outreach and written responses to

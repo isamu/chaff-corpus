@@ -14,27 +14,33 @@ findings:
   - rule: bare-url-mix
     line: 28
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: bare-url-mix
     line: 33
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: bare-url-mix
     line: 34
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: bare-url-mix
     line: 35
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: undefined-acronym
     line: 42
     sha256: 6a16bd3920476df30b67d4786e917f621530fcae10ba9ad1fb512332fc52baac
-    verdict: unjudged
+    verdict: correct
+    note: the heading writes Cross Project Council but never ties CPC to it
   - rule: undefined-acronym
     line: 42
     sha256: ec6da7416be9b58b983aa182dd03deee7a0f64e2f8d9feb54f3934983bd902e4
-    verdict: unjudged
+    verdict: correct
+    note: TSC (technical steering committee) is never expanded and is not an everyday word
   - rule: article-sound
     line: 52
     sha256: 2b1498d627076c4aa8b14a59b5a6f988911ce530502e04f1bd278c54af11bea5
@@ -47,7 +53,8 @@ findings:
   - rule: undefined-acronym
     line: 61
     sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
-    verdict: unjudged
+    verdict: false-positive
+    note: part of a conference's name (JS Conf, written JSConf elsewhere), not an acronym to expand
   - rule: orthographic-variant
     line: 62
     sha256: 76ef35c3978b44a76cb8721d0e2affc5bc7b2e222fb9fb24e3e085b2ea0f8082
@@ -55,39 +62,48 @@ findings:
   - rule: undefined-acronym
     line: 67
     sha256: 8d2a7a991d91d5221ad819983486d3c251f990344f3ecb84032388c7a1c36dc7
-    verdict: unjudged
+    verdict: false-positive
+    note: an acronym inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
   - rule: hyphen-as-dash
     line: 70
     sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
-    verdict: unjudged
+    verdict: false-positive
+    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
   - rule: hyphen-as-dash
     line: 80
     sha256: 31723f7bfabd6e380e3c17093ef6b70b03dbe17b41ae717f0f9db2584879b756
-    verdict: unjudged
+    verdict: false-positive
+    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
   - rule: title-case-consistency
     line: 83
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
+    verdict: correct
+    note: a sentence-case heading among Title Case headings
   - rule: hyphen-as-dash
     line: 90
     sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
-    verdict: unjudged
+    verdict: false-positive
+    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
   - rule: request-without-deadline
     line: 95
     sha256: 59a0da40c843206a1ef89f95516cbd86de923d573b312244e4806a08c706170f
-    verdict: unjudged
+    verdict: false-positive
+    note: a standing reminder repeated in every meeting's notes to all members; a deadline does not apply
   - rule: bare-url-mix
     line: 97
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: bare-url-mix
     line: 98
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: bare-url-mix
     line: 99
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269
-    verdict: unjudged
+    verdict: correct
+    note: a bare URL among worded links
   - rule: empty-section
     line: 101
     sha256: b8735d0876cfb0662b63e72050c3f5e0fad762433ddab1a7674976eb9985fc89

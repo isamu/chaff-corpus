@@ -5,7 +5,7 @@ findings:
     line: 104
     text: By unanimous vote, the Committee selecte
     message: This sentence runs 48 words (limit 45)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 108
     text: By unanimous vote, the Committee approve
@@ -20,7 +20,7 @@ findings:
     line: 116
     text: Market-based measures of policy rate exp
     message: This sentence runs 46 words (limit 45)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 116
     text: Respondents to the Open Market Desk Surv
@@ -30,7 +30,7 @@ findings:
     line: 118
     text: The manager turned next to Treasury mark
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 126
     text: Money market contacts attributed the bet
@@ -45,7 +45,7 @@ findings:
     line: 140
     text: Total consumer price inflation—as measur
     message: This paragraph runs 7 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 142
     text: Real private domestic final purchases (P
@@ -60,12 +60,12 @@ findings:
     line: 170
     text: The amount of total short-run funding in
     message: This sentence runs 46 words (limit 45)
-    verdict: unjudged
+    verdict: correct
   - rule: max-paragraph-length
     line: 184
     text: Regarding the outlook for inflation, par
     message: This paragraph runs 8 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 190
     text: In particular, some participants pointed
@@ -75,12 +75,12 @@ findings:
     line: 196
     text: In their discussion of financial stabili
     message: This paragraph runs 7 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-paragraph-length
     line: 198
     text: In their consideration of monetary polic
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 198
     text: They commented that maintaining the curr
@@ -100,7 +100,7 @@ findings:
     line: 202
     text: In discussing risk-management considerat
     message: This sentence runs 48 words (limit 45)
-    verdict: unjudged
+    verdict: correct
   - rule: ngram-repetition
     line: 206
     text: In their discussions of monetary policy
