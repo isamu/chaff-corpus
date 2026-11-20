@@ -45,7 +45,8 @@ findings:
     line: 9
     text: 　当社グループは、当社、子会社８社及び関連会社４社で構成され、化学品及び機能品の
     message: 「行っております。」が 20 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a sentence ending (行っております。) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
   - rule: max-sentence-length
     line: 17
     text: (2）提出会社の状況   2021年３月31日現在従業員数（人）平均年齢（歳）平
@@ -65,7 +66,8 @@ findings:
     line: 17
     text: 当社の労働組合は日本化学工業労働組合と称し、本社及び工場ごとに支部が置かれ、20
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: unbalanced-bracket
     line: 17
     text: ）労働組合の状況　当社の労働組合は日本化学工業労働組合と称し、本社及び工場ごとに
@@ -188,7 +190,8 @@ findings:
     line: 25
     text: 当社グループは、クロム製品（自動車部品等のめっき、顔料等）、シリカ製品（土壌硬化
     message: この文は 212 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: correct
+    note: a list of product groups and examples packed into one sentence, far over the limit
   - rule: orthographic-variant
     line: 25
     text: およびその後の管理の徹底、他企業や大学・研究機関との連携やアウトソーシングなどに
@@ -213,7 +216,8 @@ findings:
     line: 25
     text: 当社グループは、クロム製品（自動車部品等のめっき、顔料等）、シリカ製品（土壌硬化
     message: 「は」で出した主題から述語まで 202 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: undefined-acronym
     line: 25
     text: BCP体制から原材料調達先を複数化することにより、災害発生時の原料調達難のリスク
@@ -229,12 +233,13 @@ findings:
     line: 29
     text: 当連結会計年度における研究開発活動は、電子・電池材料、高機能性無機・有機化学品な
     message: 「〜おります」で終わる文が 11 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 29
     text: 当連結会計年度における研究開発活動は、電子・電池材料、高機能性無機・有機化学品な
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: max-kanji-continuous
     line: 37
     text: (2）国内子会社2021年３月31日現在 会社名事業所名（所在地）セグメントの名
@@ -380,12 +385,12 @@ findings:
     line: 121
     text: ヘッジ手段　金利スワップ、為替予約　ヘッジ対象　借入金の利息、外貨建金銭債務及び
     message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 121
     text: 数理計算上の差異は、各連結会計年度の発生時における従業員の平均残存勤務期間以内の
     message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 121
     text: ）その他連結財務諸表作成のための重要な事項①消費税等の会計処理　消費税等の会計処

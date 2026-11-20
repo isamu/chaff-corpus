@@ -260,7 +260,7 @@ findings:
     line: 25
     text: 当社グループは、常に新しい会計基準等に基づき会計処理を行い決算に反映させておりま
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 25
     text: また、当社の売上の多くは、顧客からの個別案件であり、顧客の設備投資計画や更新時期
@@ -275,7 +275,8 @@ findings:
     line: 25
     text: 当社グループは、常に新しい会計基準等に基づき会計処理を行い決算に反映させておりま
     message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは、情報システム部門の強化やＩＴ環境の整備等に努めておりますが、サイ
@@ -285,12 +286,14 @@ findings:
     line: 25
     text: 当社グループは主力の鉄道信号システムや道路交通システムについて、国内事業の製品納
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) frames a long comment whose predicate belongs to a later subject; the reader waits past the limit
   - rule: topic-predicate-distance
     line: 25
     text: 当社グループは公共性、公益性、安全性に深くかかわる企業として、情報セキュリティ基
     message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: unbalanced-bracket
     line: 25
     text: )のフレームワークをもとに、様々なリスクと機会の把握に努めると共に、「脱炭素社会

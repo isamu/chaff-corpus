@@ -10,7 +10,8 @@ findings:
     line: 52
     text: ICO’s Data Protection Impact Assessment]
     message: '"ICO" is used without an expansion (1 such acronym)'
-    verdict: unjudged
+    verdict: correct
+    note: the initials are used first and spelled out only much later in the page
   - rule: which-that-consistency
     line: 81
     text: which considers the total cost of a tech

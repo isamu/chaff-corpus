@@ -27,7 +27,7 @@ findings:
     line: 1
     text: 当社は、社会問題の１つである特殊詐欺の対策に有効な製品・サービスとして、独自のノ
     message: この文は 167 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 1
     text: のさらなる増加のための施策を行うほか、通信キャリア以外とのアライアンス等により積
@@ -53,12 +53,14 @@ findings:
     line: 1
     text: 当社は、社会問題の１つである特殊詐欺の対策に有効な製品・サービスとして、独自のノ
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当社はこれまで、通信キャリアやIP電話に関する通信事業者、あるいは事務機器等商社
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: topic-predicate-distance
     line: 1
     text: 迷惑情報フィルタ事業から得られる当社の主たる収益は、通信キャリアが提供するスマー

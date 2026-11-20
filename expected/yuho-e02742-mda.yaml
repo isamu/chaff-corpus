@@ -115,7 +115,8 @@ findings:
     line: 1
     text: 当連結会計年度におけるわが国経済は、雇用・所得環境が改善する下で、各種政策の効果
     message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) carries to the final predicate of the sentence, past the limit
   - rule: topic-predicate-distance
     line: 1
     text: 流動負債は47,713百万円で仕入債務が増加したことなどにより、前連結会計年度末

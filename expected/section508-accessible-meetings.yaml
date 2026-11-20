@@ -38,7 +38,8 @@ findings:
     line: 265
     text: NYC Accessible Virtual Meetings Guide |
     message: '"NYC" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: an everyday place name
   - rule: max-sentence-length
     line: 268
     text: "*Disclaimer: Reference in this site to a"
@@ -48,4 +49,5 @@ findings:
     line: 268
     text: GSA. GSA does not guarantee that outside
     message: '"GSA" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: the agency's full name appears earlier in the page without the initials in brackets; chaff does not connect the two

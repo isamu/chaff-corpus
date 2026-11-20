@@ -79,7 +79,8 @@ findings:
     line: 553
     text: ..
     message: 'Punctuation is doubled: ".."'
-    verdict: unjudged
+    verdict: correct
+    note: a doubled full stop after a URL at the end of a sentence
   - rule: spelling-consistency
     line: 605
     text: signalling that cheating was expected.

@@ -5,7 +5,8 @@ findings:
     line: 9
     text: June 16–17, 2026
     message: This sentence runs 50 words (limit 45)
-    verdict: unjudged
+    verdict: false-positive
+    note: a date line with no full stop and no blank line after it is joined to the next sentence, and the two are counted as one
   - rule: max-sentence-length
     line: 14
     text: Optimism around a near-term resolution o

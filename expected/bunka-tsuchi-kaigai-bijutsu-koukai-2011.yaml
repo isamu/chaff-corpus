@@ -65,7 +65,8 @@ findings:
     line: 34
     text: なお，法，施行期日政令，施行令及び施行規則は別添のとおりであり，これらを含む関係
     message: この文は 75 文字あります（70 文字まで）
-    verdict: unjudged
+    verdict: correct
+    note: two statements (where the texts are, where the materials are posted) chained into one sentence; splitting it reads easier
   - rule: url-run-on
     line: 34
     text: https://www.bunka.go.jp/seisaku/bunka_gy

@@ -345,7 +345,7 @@ findings:
     line: 121
     text: ヘッジ手段金利スワップ取引ヘッジ対象為替・金利等の市場価格の変動により時価または
     message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 121
     text: 建物及び構築物　   ７年～59年機械装置及び運搬具 ２年～17年その他

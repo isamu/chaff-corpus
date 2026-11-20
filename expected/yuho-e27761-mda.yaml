@@ -95,7 +95,8 @@ findings:
     line: 1
     text: 当社は、原則として、飲食部門に係る食材仕入費、店舗運営に係る人件費及び地代家賃等
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: undefined-acronym
     line: 1
     text: FC３店舗）、館外飲食店舗が４店舗であります。②財政状態の状況当事業年度末におけ

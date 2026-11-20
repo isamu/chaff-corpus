@@ -25,7 +25,8 @@ findings:
     line: 43
     text: BBS の性質が強いです。
     message: 「BBS」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: an everyday term for the audience (online community administrators)
   - rule: max-sentence-length
     line: 45
     text: 利用規約が存在することによって得られるメリットは、不特定多数の人間に対して一律か
@@ -75,7 +76,8 @@ findings:
     line: 86
     text: OO で OO な方は 18 歳と同等のレベルの分別を有しているので OK です
     message: 「OO」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: a placeholder (fill-in blank written with letters), not an acronym
   - rule: orthographic-variant
     line: 96
     text: 物になるでしょう。

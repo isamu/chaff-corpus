@@ -58,4 +58,5 @@ findings:
     line: 19
     text: If you have any questions, please contac
     message: This sentence runs 26 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: 26 words, a whole prose sentence over the limit of 18 that business/email sets; the phone number and hours add to it, but the rule gives no exception for that

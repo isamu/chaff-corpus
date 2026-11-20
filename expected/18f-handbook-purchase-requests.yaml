@@ -5,9 +5,11 @@ findings:
     line: 30
     text: GSA business cards, which don't reflect
     message: '"GSA" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: the agency's name in an internal handbook written for its own staff, an everyday name for that audience
   - rule: undefined-acronym
     line: 30
     text: TTS or 18F branding.
     message: '"TTS" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: the name of the reader's own organisation in an internal handbook, an everyday name for that audience

@@ -60,7 +60,7 @@ findings:
     line: 1
     text: 当連結会計年度における我が国経済は、新型コロナウイルス感染症に対する制限緩和によ
     message: この文は 173 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 1
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受
@@ -70,7 +70,8 @@ findings:
     line: 1
     text: 当連結会計年度における当社グループの財政状態、経営成績及びキャッシュ・フロー（以
     message: 「のとおりでありま」が 6 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a formulaic lead-in ending (次のとおりであります) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
   - rule: no-doubled-joshi
     line: 1
     text: の予兆把握のための需要が今後も継続することが予想されます。また、国土強靭化計画の
@@ -100,7 +101,8 @@ findings:
     line: 1
     text: 当連結会計年度における我が国経済は、新型コロナウイルス感染症に対する制限緩和によ
     message: 「は」で出した主題から述語まで 153 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: the topic (は) frames a long comment whose predicate belongs to a later subject; the reader waits past the limit
   - rule: topic-predicate-distance
     line: 1
     text: 当連結会計年度の受注高は、防災・減災及び社会資本整備事業などの需要増加を見込み受

@@ -5,7 +5,8 @@ findings:
     line: 11
     text: A joint meeting of the Federal Open Mark
     message: This sentence runs 47 words (limit 45)
-    verdict: unjudged
+    verdict: correct
+    note: a whole prose sentence over the limit that minutes set; formulaic (who met, where, two dates and times), but the rule gives no exception for that
   - rule: max-sentence-length
     line: 104
     text: By unanimous vote, the Committee selecte

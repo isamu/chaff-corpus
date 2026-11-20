@@ -90,7 +90,8 @@ findings:
     line: 157
     text: SubNet is available at https://www.sba.g
     message: 13 one-sentence paragraphs in a row (limit 4)
-    verdict: unjudged
+    verdict: false-positive
+    note: a footnote list, each note one sentence, read as a run of prose paragraphs
   - rule: max-sentence-length
     line: 177
     text: '"Any contractor receiving a contract wit'

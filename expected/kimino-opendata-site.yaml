@@ -5,9 +5,11 @@ findings:
     line: 7
     text: BODIK ODCSで構築しており、オープンソースデータマネジメントシステムであ
     message: 「BODIK」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: a product name used as a name
   - rule: undefined-acronym
     line: 7
     text: ODCSで構築しており、オープンソースデータマネジメントシステムであるCKAN（
     message: 「ODCS」が説明なしで使われています（説明のない略語 2 個）
-    verdict: unjudged
+    verdict: false-positive
+    note: a product name used as a name

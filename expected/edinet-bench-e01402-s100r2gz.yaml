@@ -115,7 +115,8 @@ findings:
     line: 17
     text: 　(1) 連結会社の状況2023年３月31日現在 製品区分の名称セグメントの名称
     message: この文は 234 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a flattened table (headcount by segment) read as one sentence
   - rule: max-sentence-length
     line: 17
     text: (2) 提出会社の状況   2023年３月31日現在従業員（人）平均年齢（歳）平
@@ -345,7 +346,7 @@ findings:
     line: 25
     text: 当社グループの事業活動を行う上で、各国の法令・規制・基準や社会通念が関係しており
     message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 25
     text: 新型コロナウイルス感染から回復が一巡する一方で、今後世界各地、又は当社グル－プが
@@ -565,7 +566,8 @@ findings:
     line: 37
     text: 　当社グループにおける主要な設備は、次のとおりであります。(1) 提出会社202
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: a flattened table and its note items counted as sentences of the run
   - rule: bracket-width-consistency
     line: 41
     text: (1) 重要な設備の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資
@@ -880,7 +882,7 @@ findings:
     line: 121
     text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
     message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
+    verdict: correct
   - rule: no-doubled-joshi
     line: 121
     text: の平均残存勤務期間以内の一定の年数（10年）による定額法により費用処理しておりま
@@ -915,7 +917,7 @@ findings:
     line: 121
     text: ヘッジ手段：　為替予約　ヘッジ対象：　外貨建金銭債権 ③ ヘッジ方針　為替リスク
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 121
     text: 建物及び構築物　　　　15～38年　機械装置及び運搬具　　８～12年 ② 無形固
@@ -925,12 +927,12 @@ findings:
     line: 121
     text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: repeated-sentence-ending
     line: 121
     text: 退職給付債務の算定に当たり、退職給付見込額を当連結会計年度末までの期間に帰属させ
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: correct
   - rule: topic-predicate-distance
     line: 121
     text: (3) 持分法を適用しない非連結子会社及び関連会社　関連会社（沢根スプリング株式
@@ -945,7 +947,8 @@ findings:
     line: 121
     text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
     message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: the topic is answered by the predicate of the first clause; the distance is measured on to the predicate of a later clause with its own topic (については)
   - rule: max-sentence-length
     line: 125
     text: １．連結の範囲に関する事項連結子会社の数　11社連結子会社の名称サンコールエンジ

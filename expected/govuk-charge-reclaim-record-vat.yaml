@@ -33,9 +33,11 @@ findings:
     line: 123
     text: EORI number that starts with GB to expor
     message: '"EORI" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: a customs identifier a trader may not know, never expanded or linked in the guide
   - rule: undefined-acronym
     line: 125
     text: XI.
     message: '"XI" is used without an expansion (2 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: a literal code prefix of an identifier (the number starts with these letters), not an acronym

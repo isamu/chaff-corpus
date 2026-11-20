@@ -29,7 +29,8 @@ findings:
   - rule: requirement-smell
     line: 77
     sha256: 271ee6e5b6c668d1590ad20db55c6169905b69db24d7bc13de856f67bde6171f
-    verdict: unjudged
+    verdict: correct
+    note: an open list in the scope of what the delegate is permitted to do; the earlier finding on this line moved to a different marker
   - rule: requirement-smell
     line: 121
     sha256: 7ef36177b6ffa18f70b0475fdf954891fb74c8547f10320138e932f54975836e
