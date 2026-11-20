@@ -5,7 +5,7 @@ findings:
     line: 7
     sha256: 581290f124b26b899d236735fb92394ea7bc16d927b1bf293aa9526d3e813402
     verdict: false-positive
-    note: "different verbs that share only the polite ending します, in a first/next/last sequence, read as a repeated ending"
+    note: different verbs that share only the polite ending します, in a first/next/last sequence, read as a repeated ending
   - rule: orthographic-variant
     line: 76
     sha256: aa3b4a30e2e75ffe53b58bb5b46b61076f4e1981c1666f51d8d8ebf019c5144e

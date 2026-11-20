@@ -6,40 +6,40 @@ findings:
     text: 昭和9（1934）年、日本でも歴史の古い公園の一つとして誕生した、日光国立公園。
     message: 本文に体言止めが 13 文あります（4 文まで）
     verdict: false-positive
-    note: "a nature-park guide whose noun-ended sentences describe places, the genre's usual catalogue style"
+    note: a nature-park guide whose noun-ended sentences describe places, the genre's usual catalogue style
   - rule: fullwidth-alnum-consistency
     line: 4
     text: １つだ。
     message: 全角の「１」と書いています（この文書はふつう半角の「1」。14 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "a full-width numeral where the page writes half-width ones"
+    note: a full-width numeral where the page writes half-width ones
   - rule: missing-final-period
     line: 7
     text: る
     message: この段落は「。」で終わっていません（この文書の段落はふつう「。」で終わります。20 段落のうち 1 段落）
     verdict: false-positive
-    note: "a link label (view on an external service), not a paragraph of prose"
+    note: a link label (view on an external service), not a paragraph of prose
   - rule: orthographic-variant
     line: 25
     text: 事ができ、山頂からは壮大な景色が広がる。
     message: 「事」と書いています（この文書はふつう「こと」と書く語です。7 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "事 here where the page otherwise writes こと"
+    note: 事 here where the page otherwise writes こと
   - rule: quote-without-source
     line: 41
     text: 夏の日光は外務省のロビーのようだった」と言われるほど、多くの外国人が避暑に訪れた
     message: 「夏の日光は外務省のロビーのようだった」を人の言葉として引いていますが、出典（リンク、脚注、書誌）がありません
     verdict: false-positive
-    note: "a saying reported with と言われる (it is said), not a person's words that need a source"
+    note: a saying reported with と言われる (it is said), not a person's words that need a source
   - rule: bracket-width-consistency
     line: 45
     text: (本邸)
     message: 括弧を「(」と書いています（この文書はふつう「（」。15 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "half-width brackets in a caption, where the page writes full-width ones"
+    note: half-width brackets in a caption, where the page writes full-width ones
   - rule: bracket-width-consistency
     line: 45
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。15 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "half-width brackets in a caption, where the page writes full-width ones"
+    note: half-width brackets in a caption, where the page writes full-width ones

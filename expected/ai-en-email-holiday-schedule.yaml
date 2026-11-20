@@ -14,9 +14,10 @@ findings:
     note: "catalog B01 (invented detail): a plain request filled with dates staff would act on"
   - rule: closing-cliche
     line: 24
-    what: '"feel free to reach out" and "Wishing you all a restful and happy holiday season!"'
-    verdict: missed
-    note: catalog E35 (stock courtesies) and D (closing cheer)
+    text: If you have any questions about the sche
+    message: Closes with "feel free to"
+    verdict: correct
+    note: catalog E35 (stock courtesies) and D (closing cheer); found by chaffjs 0.47.0
   - rule: closing-cliche
     line: 26
     text: Wishing you all a restful and happy holi

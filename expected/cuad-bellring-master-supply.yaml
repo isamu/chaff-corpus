@@ -6,19 +6,19 @@ findings:
     text: Master Purchase Commitment or any other
     message: '"Master Purchase Commitment" is written like a defined term, but the document defines it nowhere'
     verdict: correct
-    note: "a capitalised instrument named throughout and never defined"
+    note: a capitalised instrument named throughout and never defined
   - rule: undefined-term
     line: 21
     text: Commitments shall be subject exclusively
     message: '"Commitments" is written like a defined term, but the document defines it nowhere'
     verdict: false-positive
-    note: "a shortened back-reference to the capitalised term named just before"
+    note: a shortened back-reference to the capitalised term named just before
   - rule: undefined-acronym
     line: 23
     text: USPS, overnight courier, email, and fax
     message: '"USPS" is used without an expansion (9 such acronyms)'
     verdict: false-positive
-    note: "a household acronym of a national postal service"
+    note: a household acronym of a national postal service
   - rule: requirement-smell
     line: 33
     text: and/or term adjustments despite their be
@@ -29,13 +29,13 @@ findings:
     text: ("ASN") with bar-coded pallet labels; In
     message: '"ASN" is defined but never used'
     verdict: correct
-    note: "defined and never used"
+    note: defined and never used
   - rule: requirement-smell
     line: 53
     text: as applicable.
     message: '"as applicable" does not say how much is enough to meet the requirement'
     verdict: correct
-    note: "as applicable leaves open which level applies"
+    note: as applicable leaves open which level applies
   - rule: unused-definition
     line: 53
     text: (the "FDA"), the United States Departmen
@@ -51,31 +51,31 @@ findings:
     text: submit summaries of audit reports to PNC
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct
-    note: "submission on request with no time for it"
+    note: submission on request with no time for it
   - rule: undefined-acronym
     line: 55
     text: AIB International, Silliker, or GMA SAFE
     message: '"AIB" is used without an expansion (9 such acronyms)'
     verdict: false-positive
-    note: "names of food-safety audit organisations and schemes, used as names"
+    note: names of food-safety audit organisations and schemes, used as names
   - rule: undefined-acronym
     line: 55
     text: GMA SAFE. Supplier will submit summaries
     message: '"GMA" is used without an expansion (9 such acronyms)'
     verdict: false-positive
-    note: "names of food-safety audit organisations and schemes, used as names"
+    note: names of food-safety audit organisations and schemes, used as names
   - rule: requirement-smell
     line: 59
     text: and/or test such Ingredients to confirm
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: correct
-    note: "and/or in a duty"
+    note: and/or in a duty
   - rule: max-paragraph-length
     line: 71
     text: in a way that is inconsistent with the S
     message: This paragraph runs 10 sentences (limit 8)
     verdict: correct
-    note: "a long run-on paragraph"
+    note: a long run-on paragraph
   - rule: requirement-smell
     line: 71
     text: as soon as possible. If correction of th
@@ -86,82 +86,82 @@ findings:
     text: submit the business continuity plan to P
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct
-    note: "submission on request with no time for it"
+    note: submission on request with no time for it
   - rule: requirement-smell
     line: 75
     text: and/or modifications to the Ingredients
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: correct
-    note: "and/or in a duty"
+    note: and/or in a duty
   - rule: defined-term-form
     line: 85
     text: supplier information, and information re
     message: '"Supplier" is defined with a capital on line 7, but written in lower case here'
     verdict: false-positive
-    note: "a generic common noun in a list of information categories that happens to match a defined party name"
+    note: a generic common noun in a list of information categories that happens to match a defined party name
   - rule: which-that-consistency
     line: 107
     text: which are the subject of this Agreement,
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
-    note: "a restrictive which in a document that mostly uses that"
+    note: a restrictive which in a document that mostly uses that
   - rule: redundant-expression
     line: 111
     text: Further, each Party understands and ackn
     message: '"future plans" says the same thing twice'
     verdict: correct
-    note: "future plans"
+    note: future plans
   - rule: dangling-reference
     line: 131
     text: Section 7.1, "Third Party" means any ind
     message: '"Section 7.1" (address 7.1) is not in this document'
     verdict: false-positive
-    note: "a subsection numbered inline after its section heading on the same line, not recognised as an address"
+    note: a subsection numbered inline after its section heading on the same line, not recognised as an address
   - rule: numbering-gap
     line: 133
     text: 7.2 Except for a Party's gross negligenc
     message: '"7.2" follows "6.4" (expected number 5)'
     verdict: false-positive
-    note: "a subsection numbered inline after its section heading on the same line, not recognised as an address"
+    note: a subsection numbered inline after its section heading on the same line, not recognised as an address
   - rule: undefined-term
     line: 145
     text: Facility is located or work is to be per
     message: '"Facility" is written like a defined term, but the document defines it nowhere'
     verdict: correct
-    note: "a capitalised place term never defined"
+    note: a capitalised place term never defined
   - rule: undefined-term
     line: 145
     text: Occupational Disease Insurance if Occupa
     message: '"Occupational Disease Insurance" is written like a defined term, but the document defines it nowhere'
     verdict: false-positive
-    note: "the name of an insurance coverage type in a list of required coverages"
+    note: the name of an insurance coverage type in a list of required coverages
   - rule: numbering-gap
     line: 147
     text: 7.6 Supplier shall have Buyer named as a
     message: '"7.6" follows "7.4" (expected number 5)'
     verdict: false-positive
-    note: "a subsection numbered inline after its section heading on the same line, not recognised as an address"
+    note: a subsection numbered inline after its section heading on the same line, not recognised as an address
   - rule: dangling-reference
     line: 163
     text: Section 7.1. 9.1.2 The Liability Cap wil
     message: '"Section 7.1" (address 7.1) is not in this document'
     verdict: false-positive
-    note: "a subsection numbered inline after its section heading on the same line, not recognised as an address"
+    note: a subsection numbered inline after its section heading on the same line, not recognised as an address
   - rule: undefined-term
     line: 173
     text: Minimum Purchase Commitment. PNC will no
     message: '"Minimum Purchase Commitment" is written like a defined term, but the document defines it nowhere'
     verdict: correct
-    note: "a capitalised term used once and never defined, close to but not the same as the commitment named elsewhere"
+    note: a capitalised term used once and never defined, close to but not the same as the commitment named elsewhere
   - rule: which-that-consistency
     line: 189
     text: which will not be unreasonably withheld
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: false-positive
-    note: "a non-restrictive which after consent with its comma missing, read as restrictive"
+    note: a non-restrictive which after consent with its comma missing, read as restrictive
   - rule: defined-term-form
     line: 195
     text: purchase order issued hereunder, the Sup
     message: '"Purchase Order" is defined with a capital on line 19, but written in lower case here'
     verdict: correct
-    note: "the defined term written in lower case"
+    note: the defined term written in lower case

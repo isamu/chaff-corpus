@@ -5,7 +5,7 @@ findings:
     line: 12
     sha256: e47d5b57dc71459d16c4cdd73d1cfbd768a0ab622788e9ad6d7fcfcb0e73ffdb
     verdict: false-positive
-    note: "the の of のような counted as a possessive の in a natural noun phrase"
+    note: the の of のような counted as a possessive の in a natural noun phrase
   - rule: ngram-repetition
     line: 16
     sha256: 07a5702026c4181db3ab28809225f8bf3b442e716ee7c74fc29e63fdca560b7c

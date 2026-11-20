@@ -66,7 +66,7 @@ findings:
     text: RSS](https://en.wikipedia.org/wiki/Atom_
     message: '"RSS" is used without an expansion (10 such acronyms)'
     verdict: false-positive
-    note: "RSS, an everyday web abbreviation, linked in place"
+    note: RSS, an everyday web abbreviation, linked in place
   - rule: oxford-comma-consistency
     line: 232
     text: This will help you meet your requirement

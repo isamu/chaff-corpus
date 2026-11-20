@@ -6,7 +6,7 @@ findings:
     text: Demonstrating our commitment to sustaina
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-    note: "a list without the serial comma where the page mostly uses one"
+    note: a list without the serial comma where the page mostly uses one
   - rule: contraction-consistency
     line: 42
     text: Health and wellbeing** come first – We e
@@ -34,13 +34,13 @@ findings:
     text: MR reviews on your last working day befo
     message: '"MR" is used without an expansion (7 such acronyms)'
     verdict: correct
-    note: "MR (merge request) is never expanded on the page"
+    note: MR (merge request) is never expanded on the page
   - rule: undefined-acronym
     line: 95
     text: CES partner to reschedule or find a repl
     message: '"CES" is used without an expansion (7 such acronyms)'
     verdict: correct
-    note: "CES is never expanded on the page"
+    note: CES is never expanded on the page
   - rule: quote-style-consistency
     line: 105
     text: ” or SME, people with specialized knowle
@@ -56,13 +56,13 @@ findings:
     text: SME, people with specialized knowledge o
     message: '"SME" is used without an expansion (7 such acronyms)'
     verdict: false-positive
-    note: "SME follows its expansion in quotes (subject matter experts or SME), a form chaff does not connect"
+    note: SME follows its expansion in quotes (subject matter experts or SME), a form chaff does not connect
   - rule: oxford-comma-consistency
     line: 149
     text: We will only contact your emergency cont
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-    note: "a list without the serial comma where the page mostly uses one"
+    note: a list without the serial comma where the page mostly uses one
   - rule: undefined-acronym
     line: 154
     text: OOO event will not auto-decline your mee

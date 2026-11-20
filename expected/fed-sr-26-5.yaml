@@ -12,31 +12,31 @@ findings:
     text: "Applicability:  This guidance applies to"
     message: This sentence runs 22 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: adverb-overuse
     line: 25
     text: collectively, the agencies) are issuing
     message: 17 -ly adverbs per 1000 words (limit 15)
     verdict: false-positive
-    note: "potentially fraudulent is the legal term repeated on purpose, and timely is an adjective, not an -ly adverb"
+    note: potentially fraudulent is the legal term repeated on purpose, and timely is an adjective, not an -ly adverb
   - rule: max-sentence-length
     line: 25
     text: The Board of Governors of the Federal Re
     message: This sentence runs 77 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 27
     text: Commenters specifically requested clarif
     message: This sentence runs 45 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 27
     text: This action taken by the agencies reflec
     message: This sentence runs 32 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: vague-word-density
     line: 27
     text: Commenters specifically requested clarif
@@ -48,25 +48,25 @@ findings:
     text: a SAR about potentially fraudulent or ot
     message: '"a SAR" takes "an" before that sound'
     verdict: false-positive
-    note: "SAR is spoken as a word (sar), so 'a SAR' is right, as FinCEN writes it"
+    note: SAR is spoken as a word (sar), so 'a SAR' is right, as FinCEN writes it
   - rule: article-sound
     line: 29
     text: a SAR.
     message: '"a SAR" takes "an" before that sound'
     verdict: false-positive
-    note: "SAR is spoken as a word (sar), so 'a SAR' is right, as FinCEN writes it"
+    note: SAR is spoken as a word (sar), so 'a SAR' is right, as FinCEN writes it
   - rule: max-sentence-length
     line: 29
     text: SAR confidentiality is a statutory and r
     message: This sentence runs 21 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 29
     text: The BSA and its implementing regulations
     message: This sentence runs 69 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: vague-word-density
     line: 29
     text: SAR confidentiality is a statutory and r
@@ -78,7 +78,7 @@ findings:
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 30 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: heading-level-skip
     line: 43
     text: "##### Notes:"

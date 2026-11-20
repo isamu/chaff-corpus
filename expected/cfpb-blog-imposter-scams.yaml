@@ -6,7 +6,7 @@ findings:
     text: This week we confirmed that scammers are
     message: 4 paragraphs before the first heading (limit 2)
     verdict: false-positive
-    note: "a news post that states its point in the first paragraph; the opening is the body, not a delay before it"
+    note: a news post that states its point in the first paragraph; the opening is the body, not a delay before it
   - rule: undefined-acronym
     line: 5
     what: CFPB, used without an expansion
@@ -17,4 +17,4 @@ findings:
     text: " ."
     message: A space before "."
     verdict: correct
-    note: "a stray space before the period where a link was stripped, as extracted"
+    note: a stray space before the period where a link was stripped, as extracted

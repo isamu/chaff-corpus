@@ -6,7 +6,7 @@ findings:
     text: 公共財団法人埼玉県産業振興公社、志木街づくり株式会社の5者連携により、ワンストッ
     message: 「公共」は「公益」の書き誤りです
     verdict: correct
-    note: "公益財団法人 written as 公共財団法人"
+    note: 公益財団法人 written as 公共財団法人
   - rule: max-sentence-length
     line: 13
     text: 創業マインドの掘り起こしや啓発をより推進するため、市、商工会、一般社団法人地域連
@@ -33,7 +33,7 @@ findings:
     text: 第三保証人なしの創業関連保証が、事業開始の6か月前から利用可能
     message: 「第三」は「第三者」の書き誤りです
     verdict: correct
-    note: "第三者保証人 written without 者"
+    note: 第三者保証人 written without 者
   - rule: no-mixed-desumasu
     line: 105
     text: 小規模事業者持続化補助金＜創業型＞

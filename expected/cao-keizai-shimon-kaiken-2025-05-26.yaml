@@ -16,13 +16,13 @@ findings:
     text: （答）今般の協議の内容の詳細については外交上のやり取りなので、つまびらかにするこ
     message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic's predicate (差し控えたい) closes the clause before が; the rest of the sentence is a new clause"
+    note: the topic's predicate (差し控えたい) closes the clause before が; the rest of the sentence is a new clause
   - rule: topic-predicate-distance
     line: 34
     text: ただ、米国の関税措置に関する日米協議の今後の対応についても、具体的な検討状況をつ
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: false-positive
-    note: "the は-phrase's predicate (差し控えます) closes the clause before が; the rest is a new clause"
+    note: the は-phrase's predicate (差し控えます) closes the clause before が; the rest is a new clause
   - rule: fullwidth-alnum-consistency
     line: 37
     text: USスチールの買収計画について、「アメリカによって支配されることになるだろう」と
@@ -48,7 +48,7 @@ findings:
     text: ３回目の今回、ベッセント財務長官はご都合によりお会いできませんでしたが、私自身は
     message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
     verdict: false-positive
-    note: "the first topic's predicate closes before が and a new topic (私自身は) takes the rest; the count runs across the change"
+    note: the first topic's predicate closes before が and a new topic (私自身は) takes the rest; the count runs across the change
   - rule: fullwidth-alnum-consistency
     line: 55
     text: F47を披露していたという一部の報道がありました。まずは電話会談の事実関係と、大
@@ -59,7 +59,7 @@ findings:
     text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: correct
-    note: "a spoken answer chaining six clauses"
+    note: a spoken answer chaining six clauses
   - rule: topic-predicate-distance
     line: 63
     text: いつも基本的に申し上げていること、私のスタンスは変わっていないとご理解いただくの
@@ -70,13 +70,13 @@ findings:
     text: むしろ、期限を切ってそこまでにまとめなければいけなければ、最後は相手が納得しなけ
     message: 一文に節が 7 つつながっています（5 つまで）
     verdict: correct
-    note: "a spoken answer chaining seven clauses"
+    note: a spoken answer chaining seven clauses
   - rule: topic-predicate-distance
     line: 64
     text: むしろ、期限を切ってそこまでにまとめなければいけなければ、最後は相手が納得しなけ
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: false-positive
-    note: "は on the adverb 最後 (in the end) is not a topic waiting for a predicate"
+    note: は on the adverb 最後 (in the end) is not a topic waiting for a predicate
   - rule: topic-predicate-distance
     line: 65
     text: 最後まで大事なのは「ゆっくり急ぐ」と申し上げたことに尽きておりまして、国益を毀損
@@ -87,31 +87,31 @@ findings:
     text: そして、今を生きるこども・若者が身体的・精神的・社会的にウェルビーイングで生活を
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: false-positive
-    note: "the fixed triad physical, mental and social from the definition of well-being"
+    note: the fixed triad physical, mental and social from the definition of well-being
   - rule: teki-overuse
     line: 103
     text: ２ページ目に関して、地方で活躍する人材の育成とそれを支える基盤の整備として郷土に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: false-positive
-    note: "fixed administrative terms (base expenses, competitive research funds) counted as stylistic 〜的"
+    note: fixed administrative terms (base expenses, competitive research funds) counted as stylistic 〜的
   - rule: clause-chain
     line: 109
     text: 社会の変化に応じて必要なサービスが必要な方に提供され、保険料を抑制せず、公平な負
     message: 一文に節が 6 つつながっています（5 つまで）
     verdict: correct
-    note: "one sentence chaining six clauses"
+    note: one sentence chaining six clauses
   - rule: clause-chain
     line: 114
     text: 不確実性というと、目の前に霧があって霧が晴れるまで待っているイメージがあるが、実
     message: 一文に節が 9 つつながっています（5 つまで）
     verdict: correct
-    note: "one spoken sentence chaining nine clauses"
+    note: one spoken sentence chaining nine clauses
   - rule: topic-predicate-distance
     line: 114
     text: 不確実性というと、目の前に霧があって霧が晴れるまで待っているイメージがあるが、実
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: false-positive
-    note: "は in the adverb 実は (actually) is not a topic waiting for a predicate"
+    note: は in the adverb 実は (actually) is not a topic waiting for a predicate
   - rule: redundant-expression
     line: 117
     text: 今現在の政策はネガティブなものではなく、賃金も上がり、世の中の明るい構造も見えて
@@ -133,4 +133,4 @@ findings:
     text: この中では、地方歳出について物価の上昇、人件費の増加、金利の上昇など歳出増加圧力
     message: 「この」など、指示語で始まる文が 3 文続いています（2 文まで）
     verdict: correct
-    note: "three sentences in a row open with この/こうした"
+    note: three sentences in a row open with この/こうした

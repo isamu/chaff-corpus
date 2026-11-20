@@ -41,13 +41,13 @@ findings:
     text: return to the other party all confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct
-    note: "return of confidential information on termination with no time limit"
+    note: return of confidential information on termination with no time limit
   - rule: obligation-without-deadline
     line: 57
     text: pay those damages and costs finally awar
     message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: false-positive
-    note: "an indemnity to pay damages finally awarded by a court, whose timing the judgment sets"
+    note: an indemnity to pay damages finally awarded by a court, whose timing the judgment sets
   - rule: undefined-term
     line: 61
     text: Effective Date for a one (1) year period

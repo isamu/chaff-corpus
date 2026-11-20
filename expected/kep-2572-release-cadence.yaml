@@ -21,13 +21,13 @@ findings:
     text: Going
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-    note: "a list without the serial comma where most lists in the KEP have one"
+    note: a list without the serial comma where most lists in the KEP have one
   - rule: concrete-evidence-density
     line: 131
     text: ""
     message: Section "Changing enhancements graduation" has no number, code or link (3 of 21 sections)
     verdict: false-positive
-    note: "a section that states a policy (graduation is unchanged); a rule needs no number or link to back it"
+    note: a section that states a policy (graduation is unchanged); a rule needs no number or link to back it
   - rule: contraction-consistency
     line: 133
     text: It's
@@ -80,13 +80,13 @@ findings:
     text: ""
     message: Section "Distributors and downstream projects" has no number, code or link (3 of 21 sections)
     verdict: false-positive
-    note: "the section gives a worded example (cloud providers); the rule counts only figures, code and links as concrete"
+    note: the section gives a worded example (cloud providers); the rule counts only figures, code and links as concrete
   - rule: concrete-evidence-density
     line: 303
     text: ""
     message: Section "Contributors" has no number, code or link (3 of 21 sections)
     verdict: false-positive
-    note: "the section names concrete things in words (planning, testing, KubeCon); the rule counts only figures, code and links as concrete"
+    note: the section names concrete things in words (planning, testing, KubeCon); the rule counts only figures, code and links as concrete
   - rule: contraction-consistency
     line: 332
     text: It's the responsibility of SIG Release,
@@ -127,7 +127,7 @@ findings:
     text: SIG Release will draft an experience sur
     message: This list punctuates differently from the rest (2 in this document)
     verdict: correct
-    note: "a list without the serial comma where most lists in the KEP have one"
+    note: a list without the serial comma where most lists in the KEP have one
   - rule: vague-link-text
     line: 441
     text: "[here](https://docs.google.com/document/"

@@ -19,12 +19,6 @@ findings:
     message: "\"if I'm being honest\" flags this sentence as candid"
     verdict: correct
     note: "\"if I'm being honest\": the candour marker; the ai-tell miss filed for it on this line is retired, honesty-marker reports it"
-  - rule: adverb-overuse
-    line: 9
-    text: actually remember what I'd called things
-    message: 17 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: conversational adverbs (actually, probably, noticeably) carry the voice the request asked for
   - rule: bold-label-list
     line: 25
     text: "- **Renaming across files.** Doing it wi"

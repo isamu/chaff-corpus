@@ -5,64 +5,64 @@ findings:
     line: 1
     sha256: 7e18cae74768cbb51438dbe3c24a42842b020da10384c1b218c549b9482bc29c
     verdict: false-positive
-    note: "ordinary adverbs in an encyclopaedia article, with the count raised by the syntax table repeating its sample sentence in every column"
+    note: ordinary adverbs in an encyclopaedia article, with the count raised by the syntax table repeating its sample sentence in every column
   - rule: max-sentence-length
     line: 10
     sha256: fa0f7bac0f3cb92f7d21b18478c2ae04ef8231addfe470e02b62575644d95c4c
     verdict: correct
-    note: "a long sentence with stacked qualifications"
+    note: a long sentence with stacked qualifications
   - rule: orthographic-variant
     line: 10
     sha256: 10cf7ebb2163dd28ff8cd6060a8bb4f8a72c99290ad02cc23af22d249cb6500a
     verdict: correct
-    note: "in-line where the article writes inline elsewhere"
+    note: in-line where the article writes inline elsewhere
   - rule: concrete-evidence-density
     line: 14
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
-    note: "a history section told in words; its citations were stripped in extraction, and the rule counts only figures, code and links"
+    note: a history section told in words; its citations were stripped in extraction, and the rule counts only figures, code and links
   - rule: spelling-consistency
     line: 17
     sha256: f4c595c11e028829fe139519880d823cc216ce5d7d87aa61f84f06bb5d1dbca7
     verdict: correct
-    note: "British -ised spelling beside American -ize and -or spellings"
+    note: British -ised spelling beside American -ize and -or spellings
   - rule: spelling-consistency
     line: 26
     sha256: cb0c6788bcdd2fde4d3ee99b3f6cc5690400b5334396491d15abe1aa58334ed3
     verdict: correct
-    note: "British -ised spelling beside American -ize and -or spellings"
+    note: British -ised spelling beside American -ize and -or spellings
   - rule: concrete-evidence-density
     line: 38
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
-    note: "the section names websites in words (GitHub, Reddit); the rule counts only figures, code and links as concrete"
+    note: the section names websites in words (GitHub, Reddit); the rule counts only figures, code and links as concrete
   - rule: vague-link-text
     line: 74
     sha256: 0bc01f00db6e9975d1fa6f67232435352dce05bbe3ff404d79887a70db5b4814
     verdict: false-positive
-    note: "the link is a sample inside a table showing Markdown syntax, not a link for the reader"
+    note: the link is a sample inside a table showing Markdown syntax, not a link for the reader
   - rule: concrete-evidence-density
     line: 76
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
-    note: "an encyclopaedia section whose citations were stripped in extraction; it names platforms in words"
+    note: an encyclopaedia section whose citations were stripped in extraction; it names platforms in words
   - rule: concrete-evidence-density
     line: 81
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
-    note: "a See also list of article titles, whose links were dropped in extraction"
+    note: a See also list of article titles, whose links were dropped in extraction
   - rule: empty-section
     line: 90
     sha256: 8d6017a4bf1ba2c4deeea6bff31d64adfbc3d205dadd8e1d62b8f60ac30de4e5
     verdict: false-positive
-    note: "the section's content was a reference template that the extraction drops; the source section is not empty"
+    note: the section's content was a reference template that the extraction drops; the source section is not empty
   - rule: empty-section
     line: 92
     sha256: 65b72d86eeeb214ab8ca5fd24cb7cd7773e58084e95b670040df03e21e8c6fa7
     verdict: false-positive
-    note: "the section's content was a reference template that the extraction drops; the source section is not empty"
+    note: the section's content was a reference template that the extraction drops; the source section is not empty
   - rule: empty-section
     line: 94
     sha256: b5ec036c8e3531b9dcba8a3c3d310e6e91ef9e66df138f4ff82b4f40efac81ee
     verdict: false-positive
-    note: "the section's content was a reference template that the extraction drops; the source section is not empty"
+    note: the section's content was a reference template that the extraction drops; the source section is not empty

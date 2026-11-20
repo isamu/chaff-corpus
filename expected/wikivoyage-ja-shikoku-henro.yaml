@@ -5,34 +5,34 @@ findings:
     line: 1
     sha256: 64d4a294742b416e8abc66b5ce4c1da5db99ce2748c9280dfc6a8afd1406d167
     verdict: false-positive
-    note: "the proper name of the pilgrimage; the kanji run cannot be split"
+    note: the proper name of the pilgrimage; the kanji run cannot be split
   - rule: weasel-word
     line: 4
     sha256: 6a4dc42fc9ff0948d79967e2ba2515807dd9e88d9053c3690deff3677846c016
     verdict: false-positive
-    note: "a hedge on legend and tradition about a historical figure, where no single source exists to name"
+    note: a hedge on legend and tradition about a historical figure, where no single source exists to name
   - rule: weasel-word
     line: 4
     sha256: 7f718bdd5ec82da4af973a0e7ecfc9db7cd18526ada0e224e40a08625c81b6f3
     verdict: false-positive
-    note: "a hedge on legend and tradition about a historical figure, where no single source exists to name"
+    note: a hedge on legend and tradition about a historical figure, where no single source exists to name
   - rule: latin-spacing
     line: 6
     sha256: 59e088e9807c61bcbc8b854200c43dd4904e79c4b011499a55a2c04b89ebd3ff
     verdict: correct
-    note: "a space between a figure and 万人, where the page writes them together"
+    note: a space between a figure and 万人, where the page writes them together
   - rule: list-item-form-mix
     line: 16
     sha256: 42ed88f70548074883b19b235b09d6ba3cc0acf5d1d6d937caaedddebf3e2dd9
     verdict: correct
-    note: "one item is a full sentence among glosses that end in nouns"
+    note: one item is a full sentence among glosses that end in nouns
   - rule: orthographic-variant
     line: 28
     sha256: 65db7206a899dbea5c9c66a4d42d4a9779e7088f86639af394f41a13a829470d
     verdict: false-positive
-    note: "the honorific suffix さん (お遍路さん) taken for 山 (mountain) read as さん"
+    note: the honorific suffix さん (お遍路さん) taken for 山 (mountain) read as さん
   - rule: stray-space
     line: 150
     sha256: 30fd7325d93aee16256f867399700ab4a6b5d1e71730c3dfede9b2781fe4d10b
     verdict: correct
-    note: "a stray space inside a phrase"
+    note: a stray space inside a phrase

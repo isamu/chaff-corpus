@@ -14,7 +14,7 @@ findings:
     line: 31
     sha256: 866e77c5b1fb80787000fb5666dbf1cd036f503572f30127452fe3cc6a099d90
     verdict: false-positive
-    note: "a small count spelled out in prose beside timestamps and durations written as figures; standard number style, not an inconsistency"
+    note: a small count spelled out in prose beside timestamps and durations written as figures; standard number style, not an inconsistency
   - rule: unfilled-placeholder
     line: 48
     sha256: 0452b5d647c35e0416d975b254dcb8fc92aed22bf89ddd105ed7362bfe666833

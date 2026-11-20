@@ -11,13 +11,13 @@ findings:
     text: notify the other of its reason for termi
     message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct
-    note: "a duty to give the reason for termination with no time for it"
+    note: a duty to give the reason for termination with no time for it
   - rule: obligation-without-deadline
     line: 38
     text: return or destroy Discloser’s Confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct
-    note: "return or destroy on termination with no time limit"
+    note: return or destroy on termination with no time limit
   - rule: vague-deadline
     line: 58
     text: promptly notifying the Indemnifying Part
@@ -28,16 +28,16 @@ findings:
     text: a SOW, Key Terms, or both.
     message: '"a SOW" takes "an" before that sound'
     verdict: false-positive
-    note: "an acronym often said as a word (SOW as \"sow\"), for which \"a\" is also standard"
+    note: an acronym often said as a word (SOW as "sow"), for which "a" is also standard
   - rule: article-sound
     line: 100
     text: a SOW, including the creation of <span c
     message: '"a SOW" takes "an" before that sound'
     verdict: false-positive
-    note: "an acronym often said as a word (SOW as \"sow\"), for which \"a\" is also standard"
+    note: an acronym often said as a word (SOW as "sow"), for which "a" is also standard
   - rule: article-sound
     line: 101
     text: A SOW may include details about the <spa
     message: '"A SOW" takes "An" before that sound'
     verdict: false-positive
-    note: "an acronym often said as a word (SOW as \"sow\"), for which \"a\" is also standard"
+    note: an acronym often said as a word (SOW as "sow"), for which "a" is also standard

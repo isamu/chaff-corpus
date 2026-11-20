@@ -26,7 +26,7 @@ findings:
     text: Scope Definition – Distinguish Section 5
     message: '"reasonable" and other vague words: 8 per 1000 words (limit 4)'
     verdict: correct
-    note: "re-judged after chaffjs 0.46.0: \"reasonable accommodation\" is no longer counted; the line is reported for \"the appropriate offices\""
+    note: 're-judged after chaffjs 0.46.0: "reasonable accommodation" is no longer counted; the line is reported for "the appropriate offices"'
   - rule: vague-word-density
     line: 99
     text: Documentation and Reporting – Collect su

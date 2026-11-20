@@ -84,7 +84,7 @@ findings:
     text: グランドデザイン答申で示された高等教育が目指すべき姿を前提としつつも、同答申以降
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「〜的」が三つ"
+    note: 一文に「〜的」が三つ
   - rule: undefined-acronym
     line: 31
     text: IRの充実など、学修者本位の教育の実現に向けた積極的な取組が進展しつつあります。
@@ -102,7 +102,7 @@ findings:
     text: 前述のとおり、2040年以降の我が国の大学入学者数は、仮に留学生等の受入れ拡大が
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic (入学者数は) gets its predicate at 予想され、; a new topic (議論は) takes the rest of the sentence"
+    note: the topic (入学者数は) gets its predicate at 予想され、; a new topic (議論は) takes the rest of the sentence
   - rule: max-sentence-length
     line: 36
     text: 特に、各機関の理念や使命、社会のニーズを踏まえた高等教育の実現に向け、既存の学部
@@ -126,19 +126,19 @@ findings:
     text: 国立大学については、世界最高水準の教育研究の先導、知の多様性・イノベーションの源
     message: 「〜います」で終わる文が 4 文続いています（2 文まで）
     verdict: correct
-    note: "the same predicate 〜が期待されています three times in a row; an editor would vary one"
+    note: the same predicate 〜が期待されています three times in a row; an editor would vary one
   - rule: repeated-sentence-ending
     line: 42
     text: 機関別では、短期大学は、地方の進学機会の確保に重要な役割を果たすとともに、教育・
     message: 「〜います」で終わる文が 3 文続いています（2 文まで）
     verdict: false-positive
-    note: "different verbs (担って, 果たして, 輩出をして) that share only the ています ending, read as a repeated ending"
+    note: different verbs (担って, 果たして, 輩出をして) that share only the ています ending, read as a repeated ending
   - rule: teki-overuse
     line: 42
     text: また、高等専門学校は5年一貫の専門的な技術教育による実践的・創造的な技術者養成に
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「〜的」が三つ"
+    note: 一文に「〜的」が三つ
   - rule: no-doubled-joshi
     line: 47
     text: の質の一層の向上を実現するため、各機関内における適切な資源配分や効率化を前提とし
@@ -150,4 +150,4 @@ findings:
     text: OECD諸国平均と比べて家計負担の割合が2倍程度と高い現状にもあります。第一から
     message: 「OECD」が説明なしで使われています（説明のない略語 4 個）
     verdict: correct
-    note: "the abbreviation is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)"
+    note: the abbreviation is never expanded and is not on chaff's common-acronym list; that this audience knows it is the team's to say under names in chaff.yaml (the rule's how_to_fix)

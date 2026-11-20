@@ -1,10 +1,6 @@
 id: python-code-quality-list-2016-03
 chaff: 0.34.0
 findings:
-  - rule: adverb-overuse
-    line: 10
-    sha256: 1cef589aef9e34f1ac43fa5e0377dcab36037f9997370b6f89652a98127f226d
-    verdict: unjudged
   - rule: max-sentence-length
     line: 10
     sha256: 934f587c65aea071b8ff73bd100b8e4a436d244d945b7063a188c4b365e2e61d

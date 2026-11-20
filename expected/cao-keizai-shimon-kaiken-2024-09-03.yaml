@@ -16,7 +16,7 @@ findings:
     text: 私どもは、人口減少・少子高齢化にあっても成長していく、長い人生を皆さんが享受する
     message: 「は」で出した主題から述語まで 117 字あります（80 字まで）
     verdict: correct
-    note: "the topic 私どもは waits through a long chain of clauses for its predicate"
+    note: the topic 私どもは waits through a long chain of clauses for its predicate
   - rule: clause-chain
     line: 23
     text: 今も説明いただきましたけれども、改めて総理が事実上の退陣表明をされてからの開催と
@@ -27,7 +27,7 @@ findings:
     text: マクロ経済運営、この直近の１年間は閣僚としてお支えされた大臣として、改めて岸田政
     message: 「は」で出した主題から述語まで 115 字あります（80 字まで）
     verdict: false-positive
-    note: "the は marks a time phrase inside a modifying clause, whose own predicate follows at once"
+    note: the は marks a time phrase inside a modifying clause, whose own predicate follows at once
   - rule: max-ten
     line: 26
     text: そして、これまでの流れを総括しつつ、やはり今後、更に、引き続き重点強化していかな

@@ -6,10 +6,10 @@ findings:
     text: " のうち、本サイト独自の出典記載例や本ルールの適用を受けないコンテンツ等サイトに"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "the one place with a space between a Latin token and Japanese, in a document that otherwise joins them"
+    note: the one place with a space between a Latin token and Japanese, in a document that otherwise joins them
   - rule: numbering-gap
     line: 27
     text: "### 1.4 本利用ルールが適用されないコンテンツについて"
     message: 「1.1」の次が「1.4」です（2 番目のはず）
     verdict: correct
-    note: "subsection 1.1 is followed by 1.4 in the text as published"
+    note: subsection 1.1 is followed by 1.4 in the text as published

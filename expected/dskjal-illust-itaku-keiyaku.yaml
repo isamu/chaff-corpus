@@ -6,7 +6,7 @@ findings:
     text: 三　差押・仮差押・仮処分・競売・破産・民事再生・会社更生等の申し立てを受けたとき
     message: この文に中黒が 6 個あります（5 個まで）
     verdict: false-positive
-    note: "a fixed list of insolvency and enforcement proceedings joined by nakaguro, the usual form of this clause in Japanese contracts"
+    note: a fixed list of insolvency and enforcement proceedings joined by nakaguro, the usual form of this clause in Japanese contracts
   - rule: orthographic-variant
     line: 30
     text: 支払い停止をなしたとき。
@@ -22,7 +22,7 @@ findings:
     text: 支払後、本契約による本著作物を下記２の目的で利用できる。
     message: 「支払」と書いています（この文書はふつう「支払い」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: false-positive
-    note: "a compound noun with the okurigana dropped, as the document also does in its other compounds of the same word"
+    note: a compound noun with the okurigana dropped, as the document also does in its other compounds of the same word
   - rule: hiragana-fukushi
     line: 70
     text: 甲は、乙が本著作物を利用するにあたり、その利用態様に応じて本著作物のサイズの変更

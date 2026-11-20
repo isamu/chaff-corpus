@@ -6,40 +6,40 @@ findings:
     text: 取り組みを紹介します。
     message: 「取り組み」と書いています（この文書はふつう「取組」と書く語です。10 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "取り組み in a link blurb where the page writes 取組"
+    note: 取り組み in a link blurb where the page writes 取組
   - rule: orthographic-variant
     line: 41
     text: 取り組みについて（デジタル庁公式note） デジタル庁における法令API、法令×
     message: 「取り組み」と書いています（この文書はふつう「取組」と書く語です。10 箇所のうち 3 箇所が違う）
     verdict: false-positive
-    note: "the title of an external article quoted in a link list; the page cannot change it"
+    note: the title of an external article quoted in a link list; the page cannot change it
   - rule: orthographic-variant
     line: 41
     text: 取り組みについて紹介しています。
     message: 「取り組み」と書いています（この文書はふつう「取組」と書く語です。10 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "取り組み in a link blurb where the page writes 取組"
+    note: 取り組み in a link blurb where the page writes 取組
   - rule: latin-spacing
     line: 45
     text: " の機能拡張について、ニーズを調査し、随時、データ・機能をアップデートして提供し"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。28 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "a space between Latin and Japanese where the page mostly writes them together"
+    note: a space between Latin and Japanese where the page mostly writes them together
   - rule: max-sentence-length
     line: 45
     text: 「法令」×「デジタル」の取組として、「法制事務」と呼ばれる行政の業務にかかわる事
     message: この文は 156 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split
   - rule: max-sentence-length
     line: 55
     text: 「法令」×「デジタル」ハッカソン 「法令」×「デジタル」の取組をさらに発展させ、
     message: この文は 145 文字あります（140 文字まで）
     verdict: false-positive
-    note: "a link title run into the blurb sentence after it on one line; the sentence alone is within the limit"
+    note: a link title run into the blurb sentence after it on one line; the sentence alone is within the limit
   - rule: latin-spacing
     line: 65
     text: " の高度化の一環で、法令APIの機能拡張のプロトタイプ（法令APIプロトタイプ）"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。28 箇所のうち 2 箇所が違う）
     verdict: correct
-    note: "a space between Latin and Japanese where the page mostly writes them together"
+    note: a space between Latin and Japanese where the page mostly writes them together

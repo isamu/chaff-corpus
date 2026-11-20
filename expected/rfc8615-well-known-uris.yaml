@@ -40,7 +40,7 @@ findings:
     line: 627
     sha256: b99c17c880893831d9def640ec27940f6e7a100ee91736618570428ff7f99d3d
     verdict: false-positive
-    note: "two purpose clauses joined by and after a comma read as a list without a serial comma"
+    note: two purpose clauses joined by and after a comma read as a list without a serial comma
   - rule: contraction-consistency
     line: 632
     sha256: 8467f14c8f018857c342159b1cf111d640e436ee05d3026e11594e74d827ed13
@@ -55,4 +55,4 @@ findings:
     line: 640
     sha256: 9e1e2a5457998d84c62277aab2dfe9bc96a21e815b667c18729cd981354d4b5e
     verdict: correct
-    note: "the FAQ appendix uses contractions; the body writes them out"
+    note: the FAQ appendix uses contractions; the body writes them out

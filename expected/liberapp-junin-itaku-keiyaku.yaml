@@ -21,7 +21,7 @@ findings:
     line: 24
     sha256: d29f8166314e3b130d9d89975d13c72d86d9482b36acd3ae664be909b73f4f51
     verdict: false-positive
-    note: "the next sentence gives when the notice is made"
+    note: the next sentence gives when the notice is made
   - rule: party-order
     line: 27
     sha256: eb6ff6a9ddc07c2586021540e65f3645328cc3897be0df0d327b47139af9e623
@@ -89,7 +89,7 @@ findings:
     line: 46
     sha256: f7e2ad927b25e4da2b201d45fd0258fe0544bba35aedd6ce12c1a383650b4907
     verdict: correct
-    note: "the kanji spelling of the conjunction, where the document mostly writes it in kana"
+    note: the kanji spelling of the conjunction, where the document mostly writes it in kana
   - rule: stray-space
     line: 46
     sha256: 1ae8f9456d457b0602c9d0a9d564b1f646ee5e83f5afe60bc419b16bad552cce
@@ -102,7 +102,7 @@ findings:
     line: 54
     sha256: 07171b20d8ed4bc016b4c9a35492e1d1932700160575d79c915213795c233e3e
     verdict: false-positive
-    note: "a parenthetical list of examples joined by nakaguro and a separate verb pair, counted as one long run"
+    note: a parenthetical list of examples joined by nakaguro and a separate verb pair, counted as one long run
   - rule: redundant-expression
     line: 55
     sha256: 6d18ad45da8e9c9aa20618a8997a9c979153f61fb9a670f32bcfaa44bcf30750
@@ -112,12 +112,12 @@ findings:
     line: 76
     sha256: 26ef6b320284b45cd47c5c1826006cfd22eb1724e0f730fbdda06600586a84aa
     verdict: false-positive
-    note: "a fixed tax term whose marker names consumption and local consumption tax, not an open list"
+    note: a fixed tax term whose marker names consumption and local consumption tax, not an open list
   - rule: orthographic-variant
     line: 78
     sha256: e54647fbf4c46aa8ab4f6bbbcae7f69b1248bf5dd3b0b7ba83825695629daaee
     verdict: correct
-    note: "the one compound with the okurigana, where the document otherwise drops it"
+    note: the one compound with the okurigana, where the document otherwise drops it
   - rule: obligation-without-deadline
     line: 79
     sha256: a8e9e28f1853576fc52eabe077fb36bf9f82ca754b48c60c5339618cdef3488b
@@ -140,17 +140,17 @@ findings:
     line: 81
     sha256: 41af424275a1191bc0738df6ab824e032ae720719b96d8af9b0c9f245d6ad26c
     verdict: false-positive
-    note: "late-payment interest, due with the late refund it accrues on"
+    note: late-payment interest, due with the late refund it accrues on
   - rule: obligation-without-deadline
     line: 81
     sha256: 8dda9ec783b8d961ba58a3e3c020f14e20177cd8f3c2111dd31e3e1756785983
     verdict: correct
-    note: "a refund with no time limit, while the next sentence speaks of it being late"
+    note: a refund with no time limit, while the next sentence speaks of it being late
   - rule: obligation-without-deadline
     line: 99
     sha256: ddbef4fbc2c51df80aaab63d8124f8d2290eaaf2eb2de15a54150d4a25d0dc21
     verdict: correct
-    note: "handover on termination with no time limit"
+    note: handover on termination with no time limit
   - rule: orthographic-variant
     line: 99
     sha256: 9c8a713ed5465ba08f5f2345723126bef20a79761b03be174513635f548663cc

@@ -6,31 +6,31 @@ findings:
     text: What is a heat wave? A heat wave is a pe
     message: 3 paragraphs before the first heading (limit 2)
     verdict: false-positive
-    note: "a safety information page that opens with its definition and the risks; the opening is the point, not a delay before it"
+    note: a safety information page that opens with its definition and the risks; the opening is the point, not a delay before it
   - rule: hyphen-as-dash
     line: 11
     text: " - from transportation to utilities to c"
     message: '"-" stands in for a dash'
     verdict: correct
-    note: "a spaced hyphen standing in for a dash"
+    note: a spaced hyphen standing in for a dash
   - rule: max-paragraph-length
     line: 11
     text: Extreme heat also impacts our infrastruc
     message: This paragraph runs 6 sentences (limit 5)
     verdict: correct
-    note: "a six-sentence paragraph"
+    note: a six-sentence paragraph
   - rule: heading-level-skip
     line: 15
     text: "### +  How to Stay Safe During Extreme H"
     message: Heading "+  How to Stay Safe During Extreme Heat Events" goes from level 1 to level 3 (expected 2)
     verdict: correct
-    note: "the page jumps from the h1 title to h3 accordion headings, as extracted"
+    note: the page jumps from the h1 title to h3 accordion headings, as extracted
   - rule: heading-level-skip
     line: 17
     text: "###### Outdoor Activities"
     message: Heading "Outdoor Activities" goes from level 3 to level 6 (expected 4)
     verdict: correct
-    note: "the page jumps from h3 to h6 subheadings, as extracted"
+    note: the page jumps from h3 to h6 subheadings, as extracted
   - rule: contraction-consistency
     line: 27
     text: Do not take salt tablets unless specifie
@@ -48,10 +48,10 @@ findings:
     text: "###### Heat Safety in Vehicles"
     message: Heading "Heat Safety in Vehicles" goes from level 3 to level 6 (expected 4)
     verdict: correct
-    note: "the page jumps from h3 to h6 subheadings, as extracted"
+    note: the page jumps from h3 to h6 subheadings, as extracted
   - rule: weasel-word
     line: 53
     text: Even on mild days in the 70s, studies ha
     message: '"studies have shown" does not say who'
     verdict: correct
-    note: "studies have shown, with no study named"
+    note: studies have shown, with no study named

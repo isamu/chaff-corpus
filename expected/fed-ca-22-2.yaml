@@ -6,13 +6,13 @@ findings:
     text: "### CA 22-2: Interagency Statement on Sp"
     message: 'The heading "CA 22-2: Interagency Statement on Special Purpose Credit Programs Under the Equal Credit Opportunity Act and Regulation B" runs 18 words (limit 14)'
     verdict: correct
-    note: "the page heading repeats the letter's whole subject"
+    note: the page heading repeats the letter's whole subject
   - rule: max-sentence-length
     line: 16
     text: "Withdrawn: On August 21, 2026, CA Letter"
     message: This sentence runs 35 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: email-subject-length
     line: 20
     text: "SUBJECT:"
@@ -28,19 +28,19 @@ findings:
     text: Accordingly, creditors may consider the
     message: This sentence runs 22 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 28
     text: On December 7, 2021, HUD released guidan
     message: This sentence runs 29 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: max-sentence-length
     line: 30
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 20 words (limit 18)
     verdict: correct
-    note: "a long sentence in the letter's body"
+    note: a long sentence in the letter's body
   - rule: heading-level-skip
     line: 42
     text: "##### Notes:"

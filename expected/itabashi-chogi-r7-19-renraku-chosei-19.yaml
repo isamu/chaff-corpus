@@ -5,7 +5,7 @@ findings:
     line: 29
     sha256: e4def3d2eb6cad4ed6350fcc9768467cae9cc6a8b4f851160c929b150a288346
     verdict: false-positive
-    note: "an agenda item's title built from a fixed administrative term; the kanji run cannot be split"
+    note: an agenda item's title built from a fixed administrative term; the kanji run cannot be split
   - rule: undefined-acronym
     line: 30
     sha256: 9c6b7ee5f92932197bdc6e2bac20bada08170f1bdaf194ca49a449e1a4bda534

@@ -101,11 +101,6 @@ findings:
     text: )コードであり、登録番号ではありません。
     message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 79
-    text: いわゆるファンドについて、金商法施行以降自己募集を行う際には、当局への登録が必要
-    message: 「金商法施行以降自己募集」は漢字が 11 字続いています（8 字まで）
-    verdict: unjudged
   - rule: tari-unpaired
     line: 100
     text: たり、画面上で利用しているサービスが突然中断されてしまう可能性があります。
