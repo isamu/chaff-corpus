@@ -9,16 +9,20 @@ findings:
   - rule: undefined-acronym
     line: 6
     sha256: 513c07dec1f61fd9cc11f3071216eda53fbd2ca1ba21e12162de6611ef54970a
-    verdict: unjudged
+    verdict: correct
+    note: "SRE is never expanded in the report"
   - rule: undefined-acronym
     line: 8
     sha256: 3e1901c7ffa096b73aef541369b38640fbf5f0158dbdd680b64f139c83febcff
-    verdict: unjudged
+    verdict: correct
+    note: "the datacenter code CODFW is never explained"
   - rule: undefined-acronym
     line: 10
     sha256: 1fc759690dac307ae42a724aaaf67ecf2e3f7cf4e44733ef55b5f512c537fc39
-    verdict: unjudged
+    verdict: correct
+    note: "SWE is never expanded in the report"
   - rule: adverb-overuse
     line: 16
     sha256: c6616784b59e8612af116bf4227da09642b9af68e761afae58978d2c9e2a8492
-    verdict: unjudged
+    verdict: false-positive
+    note: "ordinary -ly adverbs (immediately, directly) in a short incident report; the density comes from the length, not padding"

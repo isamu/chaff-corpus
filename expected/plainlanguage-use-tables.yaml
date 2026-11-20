@@ -5,9 +5,11 @@ findings:
     line: 29
     text: You can shorten and clarify complex mate
     message: 4 paragraphs before the first heading (limit 2)
-    verdict: unjudged
+    verdict: false-positive
+    note: "a short guidance page whose explanation is its opening (title in front matter); only the examples get headings, so the opening is the point, not a delay"
   - rule: empty-table-cell
     line: 70
     text: "| | the percentage in effect on November"
     message: The "and:" column is blank in this row only
-    verdict: unjudged
+    verdict: false-positive
+    note: "the catch-all none-of-the-above row of an if-then table, where the blank second-condition cell plainly does not apply"

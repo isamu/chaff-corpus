@@ -5,7 +5,8 @@ findings:
     line: 23
     text: "Applicability:  This letter is expected"
     message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The Board of Governors of the Federal Re
@@ -15,7 +16,8 @@ findings:
     line: 25
     text: This revised guidance reflects superviso
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 27
     text: Based on supervisory experience and indu
@@ -30,17 +32,20 @@ findings:
     line: 27
     text: The revised guidance highlights sound pr
     message: '"appropriately" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: correct
+    note: "'appropriately vary' leaves the reader with nothing to check"
   - rule: max-sentence-length
     line: 29
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: vague-word-density
     line: 29
     text: Reserve Banks are asked to distribute th
     message: '"appropriate" and other vague words: 6 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: correct
+    note: "'appropriate supervisory staff' names no one"
   - rule: heading-level-skip
     line: 45
     text: "##### Notes:"

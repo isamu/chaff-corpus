@@ -5,12 +5,14 @@ findings:
     line: 3
     text: This offer letter will go over the basic
     message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the offer letter"
   - rule: max-sentence-length
     line: 3
     text: We are excited to extend an official off
     message: This sentence runs 19 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the offer letter"
   - rule: max-sentence-length
     line: 5
     text: In our conversation, you said you wanted
@@ -55,7 +57,8 @@ findings:
     line: 33
     text: This letter is specific to you and it su
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the offer letter"
   - rule: max-sentence-length
     line: 35
     text: And before this takes legal effect, you’
@@ -65,19 +68,23 @@ findings:
     line: 37
     text: The whole Clef team is convinced that yo
     message: This sentence runs 22 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the offer letter"
   - rule: max-sentence-length
     line: 50
     text: I acknowledge that this letter is the co
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the acceptance block"
   - rule: max-sentence-length
     line: 50
     text: I sign this letter voluntarily and not i
     message: This sentence runs 19 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the acceptance block"
   - rule: max-sentence-length
     line: 50
     text: I understand that the terms of this lett
     message: This sentence runs 20 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the acceptance block"

@@ -15,12 +15,14 @@ findings:
     line: 17
     text: In some cases, agencies may even have di
     message: This sentence runs 22 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 17
     text: When agencies procure custom-developed s
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 17
     text: When Federal agencies are unable to iden
@@ -40,7 +42,8 @@ findings:
     line: 18
     text: This policy seeks to address these chall
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 20
     text: This policy also establishes a pilot pro
@@ -50,7 +53,8 @@ findings:
     line: 22
     text: 7</a></sup> Furthermore, vendors partici
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence; the footnote markup before it is counted too, but the sentence alone is over the limit"
   - rule: max-sentence-length
     line: 22
     text: A number of private sector companies hav
@@ -65,22 +69,26 @@ findings:
     line: 22
     text: This collaborative atmosphere can make i
     message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 22
     text: While the benefits of enhanced Federal c
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 24
     text: Several Federal agencies and component o
     message: This sentence runs 20 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the memorandum's body"
   - rule: max-sentence-length
     line: 26
     text: "The White House: “We the People” is a Wh"
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in a list item of the memorandum"
   - rule: max-sentence-length
     line: 28
     text: 18F<sup id="fnr9"><a href="#fn9">9</a></
@@ -90,12 +98,14 @@ findings:
     line: 28
     text: For example, both organizations contribu
     message: This sentence runs 28 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in a list item of the memorandum"
   - rule: max-sentence-length
     line: 28
     text: The eRegulations platform, which origina
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in a list item of the memorandum"
   - rule: max-sentence-length
     line: 30
     text: "The Department of Education: This agency"

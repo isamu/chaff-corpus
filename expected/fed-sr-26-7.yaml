@@ -11,7 +11,8 @@ findings:
     line: 23
     text: "Applicability:  This guidance generally"
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The Board of Governors of the Federal Re
@@ -21,17 +22,20 @@ findings:
     line: 25
     text: The joint statement also highlights that
     message: This sentence runs 20 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The joint statement discusses factors th
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 27
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: heading-level-skip
     line: 39
     text: "##### Notes:"

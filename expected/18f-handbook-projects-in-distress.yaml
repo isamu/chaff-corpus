@@ -5,59 +5,71 @@ findings:
     line: 45
     text: TTS consultants.
     message: '"TTS" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "TTS is never expanded on the page"
   - rule: undefined-acronym
     line: 117
     text: BD
     message: '"BD" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "BD (business development) is never expanded"
   - rule: max-paragraph-length
     line: 127
     text: As soon as you realize, go back as far a
     message: This paragraph runs 8 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
+    note: "an eight-sentence paragraph"
   - rule: undefined-acronym
     line: 161
     text: "PO: Partner PO cannot regularly meet or"
     message: '"PO" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "PO follows its expansion product owner in the parent list item, an expansion by proximity that chaff does not connect"
   - rule: contraction-consistency
     line: 180
     text: "NB:"
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: "can't two lines after cannot in the same item; the page mixes both"
   - rule: undefined-acronym
     line: 180
     text: "NB:"
     message: '"NB" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "NB, the Latin abbreviation nota bene (like i.e.), read as an undefined acronym"
   - rule: contraction-consistency
     line: 183
     text: If we are unable to use their tools, the
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: "can't beside cannot and are unable in the same item; the page mixes both"
   - rule: hyphen-as-dash
     line: 208
     text: " - what must change before a future 18F"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash"
   - rule: orthographic-variant
     line: 222
     text: re-start time.
     message: '"re-start" here, where the document usually writes "restart" (1 of 5)'
-    verdict: unjudged
+    verdict: correct
+    note: "re-start once where the page writes restart"
   - rule: hyphen-as-dash
     line: 240
     text: " - each team member’s opportunity cost t"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
+    note: "a spaced hyphen standing in for a dash"
   - rule: undefined-acronym
     line: 272
     text: COTS software), etc.
     message: '"COTS" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "COTS is never expanded on the page"
   - rule: contraction-consistency
     line: 287
     text: Because we do not have control over many
     message: "\"do not\" is written \"don't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: "do not where the page mostly writes don't"

@@ -5,9 +5,11 @@ findings:
     line: 23
     text: — it’s a distilled representation of an
     message: 10 dashes per 1000 words (limit 8)
-    verdict: unjudged
+    verdict: correct
+    note: "the page uses em dashes heavily"
   - rule: max-paragraph-length
     line: 57
     text: "**What are my core values?** Your voice"
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
+    note: "a six-sentence paragraph"
