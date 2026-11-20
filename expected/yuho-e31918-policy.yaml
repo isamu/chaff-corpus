@@ -40,11 +40,6 @@ findings:
     verdict: correct
   - rule: repeated-sentence-ending
     line: 1
-    text: このような状況下、当社グループは主力のフラワービジネス支援事業を中心に既存事業の
-    message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
-    verdict: correct
-  - rule: repeated-sentence-ending
-    line: 1
     text: したがって、優秀な人材の確保に努めるとともに、人材育成の強化、人材の適正配置を行
     message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
     verdict: correct
@@ -57,11 +52,6 @@ findings:
     line: 1
     text: 当社グループは経営基盤の強化と持続的な成長を続けていくため、以下の内容を重点的に
     message: 「〜まいります」で終わる文が 3 文続いています（2 文まで）
-    verdict: correct
-  - rule: topic-predicate-distance
-    line: 1
-    text: (1)経営方針当社グループは、「弊社を取り巻く全ての『困った』を解決することで社
-    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
   - rule: topic-predicate-distance
     line: 1

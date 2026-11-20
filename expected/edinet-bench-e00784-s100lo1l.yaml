@@ -59,11 +59,6 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 17
-    text: (3）労働組合の状況　当社の労働組合は日本化学工業労働組合と称し、本社及び工場ご
-    message: 「は」で出した主題から述語まで 144 字あります（80 字まで）
-    verdict: correct
-  - rule: topic-predicate-distance
-    line: 17
     text: 当社の労働組合は日本化学工業労働組合と称し、本社及び工場ごとに支部が置かれ、20
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct

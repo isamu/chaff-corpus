@@ -40,11 +40,6 @@ findings:
     verdict: correct
   - rule: topic-predicate-distance
     line: 1
-    text: （３）経営上の目標の達成状況を判断するための客観的な指標等当社グループは、中長期
-    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: correct
-  - rule: topic-predicate-distance
-    line: 1
     text: ③メンテナンスコストの最適化レンタル用資産の価値の維持・向上は建機レンタルビジネ
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: false-positive
