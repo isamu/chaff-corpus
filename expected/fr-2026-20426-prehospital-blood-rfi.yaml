@@ -11,8 +11,8 @@ findings:
     line: 31
     text: DOT posts these comments, without editin
     message: This sentence runs 70 words (limit 45)
-    verdict: correct
-    note: a 70-word sentence in the Privacy Act paragraph
+    verdict: false-positive
+    note: "two sentences joined: the full stop after a URL was hidden with the address; the real sentence ends at privacy."
   - rule: undefined-acronym
     line: 31
     text: FDMS), which can be reviewed at https://

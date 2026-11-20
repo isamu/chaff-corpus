@@ -145,7 +145,7 @@ findings:
     line: 595
     text: singlestranded RNA.
     message: '"singlestranded" is not in the dictionary; did you mean "single-stranded"?'
-    verdict: unjudged
+    verdict: correct
   - rule: orthographic-variant
     line: 621
     text: betaglobin allele was subjected to twent
@@ -180,7 +180,7 @@ findings:
     line: 669
     text: singlecopy gene from one microgram of hu
     message: '"singlecopy" is not in the dictionary; did you mean "single copy"?'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 673
     text: CHO group, R" is --H, x is a number from
