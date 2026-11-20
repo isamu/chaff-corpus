@@ -1,9 +1,3 @@
 id: gutenberg-riders-to-the-sea
 chaff: 0.33.0
-findings:
-  - rule: doubled-punctuation
-    line: 120
-    text: ..  Emma Vernon MEN AND WOMEN
-    message: 'Punctuation is doubled: ".."'
-    verdict: false-positive
-    note: leader dots in the cast list, not doubled punctuation
+findings: []

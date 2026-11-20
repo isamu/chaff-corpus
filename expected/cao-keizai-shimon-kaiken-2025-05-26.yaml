@@ -72,12 +72,6 @@ findings:
     verdict: correct
     note: a spoken answer chaining seven clauses
   - rule: topic-predicate-distance
-    line: 64
-    text: むしろ、期限を切ってそこまでにまとめなければいけなければ、最後は相手が納得しなけ
-    message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
-    verdict: false-positive
-    note: は on the adverb 最後 (in the end) is not a topic waiting for a predicate
-  - rule: topic-predicate-distance
     line: 65
     text: 最後まで大事なのは「ゆっくり急ぐ」と申し上げたことに尽きておりまして、国益を毀損
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）

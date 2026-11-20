@@ -1,6 +1,11 @@
 id: k8s-steering-funding-requests
 chaff: 0.34.0
 findings:
+  - rule: undefined-acronym
+    line: 8
+    text: SIG face-to-face meetings, developer sum
+    message: '"SIG" is used without an expansion (2 such acronyms)'
+    verdict: unjudged
   - rule: title-case-consistency
     line: 12
     text: ""
@@ -12,6 +17,11 @@ findings:
     message: '"appropriate" and other vague words: 9 per 1000 words (limit 4)'
     verdict: false-positive
     note: "a very short document: two ordinary uses of one word exceed a per-1000-words limit; asking the reader to pick the matching template is clear"
+  - rule: undefined-acronym
+    line: 18
+    text: CNCF depending on the request size.
+    message: '"CNCF" is used without an expansion (2 such acronyms)'
+    verdict: unjudged
   - rule: vague-word-density
     line: 22
     text: Please provide links to show the appropr

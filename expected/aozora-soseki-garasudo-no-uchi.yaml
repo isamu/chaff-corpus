@@ -17,18 +17,3 @@ findings:
     text: ――
     message: 括弧が 4 重になっています（2 重まで）
     verdict: unjudged
-  - rule: unbalanced-bracket
-    line: 149
-    text: 「これは社交ではありません。御互に体裁の好い事ばかり云い合っていては、いつまで経
-    message: 「「」が閉じていません
-    verdict: unjudged
-  - rule: unbalanced-bracket
-    line: 150
-    text: 「これは私のあなたに対する注文ですが、その代り私の方でもこの私というものを隠しは
-    message: 「「」が閉じていません
-    verdict: unjudged
-  - rule: unbalanced-bracket
-    line: 151
-    text: 「そういう訳で私はこれからあなたの書いたものを拝見する時に、ずいぶん手ひどい事を
-    message: 「「」が閉じていません
-    verdict: unjudged

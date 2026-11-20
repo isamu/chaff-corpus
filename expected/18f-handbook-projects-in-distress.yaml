@@ -19,24 +19,12 @@ findings:
     message: This paragraph runs 8 sentences (limit 5)
     verdict: correct
     note: an eight-sentence paragraph
-  - rule: undefined-acronym
-    line: 161
-    text: "PO: Partner PO cannot regularly meet or"
-    message: '"PO" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: PO follows its expansion product owner in the parent list item, an expansion by proximity that chaff does not connect
   - rule: contraction-consistency
     line: 180
     text: "NB:"
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
     verdict: correct
     note: can't two lines after cannot in the same item; the page mixes both
-  - rule: undefined-acronym
-    line: 180
-    text: "NB:"
-    message: '"NB" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: NB, the Latin abbreviation nota bene (like i.e.), read as an undefined acronym
   - rule: contraction-consistency
     line: 183
     text: If we are unable to use their tools, the

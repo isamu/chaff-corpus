@@ -25,12 +25,6 @@ findings:
     message: 見出し「【記載要領等】」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
     note: the page really jumps from h1 to h3
-  - rule: broken-link
-    line: 20
-    text: "[Excel:28KB][PDF:47KB]により提出して下さい。（実施要項案の"
-    message: 「[Excel:28KB][PDF:47KB]」は参照の形ですが、名前の定義がありません（字のまま表示されます）
-    verdict: false-positive
-    note: the ministry's file-type labels ([Excel:28KB][PDF:47KB]) kept as plain text from the page's link labels, read as a Markdown reference link
   - rule: no-doubled-joshi
     line: 20
     text: の際の整理等のため、別紙様式によるご意見の提出にご協力をお願いします。）

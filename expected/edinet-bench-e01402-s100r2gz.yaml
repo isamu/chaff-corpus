@@ -113,6 +113,11 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 17
+    text: 　(1) 連結会社の状況2023年３月31日現在 製品区分の名称セグメントの名称
+    message: この文は 234 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 17
     text: (2) 提出会社の状況   2023年３月31日現在従業員（人）平均年齢（歳）平
     message: この文は 197 文字あります（140 文字まで）
     verdict: unjudged
@@ -120,11 +125,6 @@ findings:
     line: 17
     text: ２.「育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関する法律」（平成
     message: この文は 146 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 17
-    text: ５【従業員の状況】　(1) 連結会社の状況2023年３月31日現在 製品区分の名
-    message: この文は 243 文字あります（140 文字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 17
@@ -293,11 +293,6 @@ findings:
     verdict: correct
   - rule: max-sentence-length
     line: 25
-    text: (5) 災害等/感染症によるパンデミックの影響　当社グループは、国内７拠点・海外
-    message: この文は 143 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
     text: 具体的には、　　　・人事関連の各種コンプライアンス違反（ハラスメント、雇用関連、
     message: この文は 269 文字あります（140 文字まで）
     verdict: unjudged
@@ -338,22 +333,17 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
-    text: (6) コンプライアンス等に関するリスク　当社グループの事業活動を行う上で、各国
-    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 25
     text: 対応策として、当社グループは、非常時の初期対応他災害発生の際に適切な対応が取れる
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
-    text: 対応策として契約審査等を通じて、訴訟その他法的手続きの発生を未然に防止するよう努
-    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    text: 当社グループ（委託先の関係者を含みます。）の故意・過失、または悪意を持った第三者
+    message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
-    text: 当社グループ（委託先の関係者を含みます。）の故意・過失、または悪意を持った第三者
+    text: 当社グループの事業活動を行う上で、各国の法令・規制・基準や社会通念が関係しており
     message: 「〜あります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
@@ -573,7 +563,7 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 37
-    text: ２【主要な設備の状況】　当社グループにおける主要な設備は、次のとおりであります。
+    text: 　当社グループにおける主要な設備は、次のとおりであります。(1) 提出会社202
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: bracket-width-consistency
@@ -873,11 +863,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 121
-    text: (5) 重要な収益及び費用の計上基準　　当社グループは、主として自動車分野、電子
-    message: この文は 165 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 121
     text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
     message: この文は 530 文字あります（140 文字まで）
     verdict: unjudged
@@ -890,6 +875,11 @@ findings:
     line: 121
     text: SUNCALL AMERICA INC.SUNCALL CO.,(H.K.) L
     message: この文は 273 文字あります（140 文字まで）
+    verdict: unjudged
+  - rule: max-sentence-length
+    line: 121
+    text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
+    message: この文は 148 文字あります（140 文字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
@@ -918,18 +908,28 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 121
-    text: (6) 重要な外貨建の資産及び負債の本邦通貨への換算基準　外貨建金銭債権債務は、
-    message: 「〜おります」で終わる文が 7 文続いています（2 文まで）
+    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 121
-    text: （連結財務諸表作成のための基本となる重要な事項）１．連結の範囲に関する事項連結子
+    text: ヘッジ手段：　為替予約　ヘッジ対象：　外貨建金銭債権 ③ ヘッジ方針　為替リスク
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 121
     text: 建物及び構築物　　　　15～38年　機械装置及び運搬具　　８～12年 ② 無形固
     message: 「〜おります」で終わる文が 11 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
+  - rule: repeated-sentence-ending
+    line: 121
+    text: 退職給付債務の算定に当たり、退職給付見込額を当連結会計年度末までの期間に帰属させ
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 121
@@ -938,13 +938,13 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 121
-    text: (5) 重要な収益及び費用の計上基準　　当社グループは、主として自動車分野、電子
-    message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
+    text: ４．会計方針に関する事項(1) 重要な資産の評価基準及び評価方法① 有価証券　そ
+    message: 「は」で出した主題から述語まで 233 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 121
-    text: ４．会計方針に関する事項(1) 重要な資産の評価基準及び評価方法① 有価証券　そ
-    message: 「は」で出した主題から述語まで 233 字あります（80 字まで）
+    text: 当社グループは、主として自動車分野、電子情報通信分野における製品等の製造及び販売
+    message: 「は」で出した主題から述語まで 138 字あります（80 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 125

@@ -19,10 +19,9 @@ findings:
     verdict: correct
   - rule: ngram-repetition
     line: 1
-    text: (4)経営戦略等当社グループは経営基盤の強化と持続的な成長を続けていくため、以下
+    text: 当社グループは経営基盤の強化と持続的な成長を続けていくため、以下の内容を重点的に
     message: 「してまいります。」が 6 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a polite sentence ending (してまいります。) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
+    verdict: unjudged
   - rule: no-doubled-joshi
     line: 1
     text: の１件当たりの単価の下落など市場規模が微減の傾向にあり、当社グループの経営環境は
@@ -53,6 +52,11 @@ findings:
     text: 一方で、既に取り組んでおります緑化事業や子会社である日本プリザーブドフラワー協会
     message: 「〜まいります」で終わる文が 4 文続いています（2 文まで）
     verdict: correct
+  - rule: repeated-sentence-ending
+    line: 1
+    text: 当社グループは経営基盤の強化と持続的な成長を続けていくため、以下の内容を重点的に
+    message: 「〜まいります」で終わる文が 3 文続いています（2 文まで）
+    verdict: unjudged
   - rule: topic-predicate-distance
     line: 1
     text: (1)経営方針当社グループは、「弊社を取り巻く全ての『困った』を解決することで社
@@ -60,7 +64,11 @@ findings:
     verdict: correct
   - rule: topic-predicate-distance
     line: 1
-    text: ④ナーセリー支援事業の強化当社は胡蝶蘭農園との業務提携を通じて、農園事業に進出し
+    text: 当社グループは、「弊社を取り巻く全ての『困った』を解決することで社会に貢献します
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic is answered by the predicate of the first clause; the distance is measured on to the predicate of a later clause with its own subject
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社は胡蝶蘭農園との業務提携を通じて、農園事業に進出しておりますが、本事業は、台
+    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
+    verdict: unjudged

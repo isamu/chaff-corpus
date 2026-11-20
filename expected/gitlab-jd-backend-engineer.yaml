@@ -16,11 +16,6 @@ findings:
     text: faster
     message: '"faster" does not say what it is compared with'
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 174
-    text: ""
-    message: Section "Distribution:Build" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 183
     text: RHEL based systems
@@ -35,11 +30,6 @@ findings:
     line: 197
     text: Build and own the infrastructure used fo
     message: '"Build and own the infrastructure used for creating the various installation methods" opens with a verb; the other items in this list open with a noun phrase (1 of 3)'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 200
-    text: ""
-    message: Section "Distribution:Deploy" has no number, code or link (28 of 52 sections)
     verdict: unjudged
   - rule: undefined-acronym
     line: 235
@@ -56,11 +46,6 @@ findings:
     text: Develop security components from proposa
     message: '"end result" says the same thing twice'
     verdict: correct
-  - rule: concrete-evidence-density
-    line: 266
-    text: ""
-    message: Section "Secure" has no number, code or link (28 of 52 sections)
-    verdict: unjudged
   - rule: heading-echo
     line: 268
     text: Focus on security features for GitLab. T
@@ -75,11 +60,6 @@ findings:
     line: 300
     text: PM team to execute on the roadmap.
     message: '"PM" is used without an expansion (13 such acronyms)'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 396
-    text: ""
-    message: Section "Application Performance" has no number, code or link (28 of 52 sections)
     verdict: unjudged
   - rule: undefined-acronym
     line: 426

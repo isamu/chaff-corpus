@@ -1,11 +1,6 @@
 id: gitlab-jd-support-engineer
 chaff: 0.34.0
 findings:
-  - rule: concrete-evidence-density
-    line: 75
-    text: ""
-    message: Section "You've got the personality" has no number, code or link (3 of 18 sections)
-    verdict: unjudged
   - rule: name-variant
     line: 88
     text: ZenDesk and Salesforce.
@@ -17,11 +12,6 @@ findings:
     message: '"ZenDesk" here, where the document usually writes "Zendesk" (1 of 3)'
     verdict: correct
     note: the same ZenDesk/Zendesk variant as name-variant on this line
-  - rule: concrete-evidence-density
-    line: 90
-    text: ""
-    message: Section "You've got the technical acumen" has no number, code or link (3 of 18 sections)
-    verdict: unjudged
   - rule: oxford-comma-consistency
     line: 94
     text: you have excellent Ruby on Rails knowled
@@ -113,11 +103,6 @@ findings:
     line: 187
     text: " - Support Department](/handbook/enginee"
     message: '"-" stands in for a dash'
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 189
-    text: ""
-    message: Section "Senior Support Engineer" has no number, code or link (3 of 18 sections)
     verdict: unjudged
   - rule: title-case-consistency
     line: 241

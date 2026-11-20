@@ -47,12 +47,6 @@ findings:
     message: 「但し」と書いています（この文書はふつう「ただし」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「但し」 once where the page writes 「ただし」
-  - rule: no-doubled-joshi
-    line: 169
-    text: の間のやりとりの全容を見てみましょう。最初のやり取りは*プリフライトリクエスト/
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の of との counted as a possessive の; the phrase reads naturally
   - rule: orthographic-variant
     line: 169
     text: やり取りは*プリフライトリクエスト/レスポンス*です。
@@ -69,12 +63,6 @@ findings:
     text: これは単純な `GET` リクエストなのでプリフライトは行いませんが、ブラウザー
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 300
-    text: の間のやりとりの例です。
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: false-positive
-    note: the の of との counted as a possessive の; the phrase reads naturally
   - rule: topic-predicate-distance
     line: 360
     text: 上記の例では、ページは `foo.example` から読み込まれていますが、レ

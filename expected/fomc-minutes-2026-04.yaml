@@ -2,6 +2,11 @@ id: fomc-minutes-2026-04
 chaff: 0.34.0
 findings:
   - rule: max-sentence-length
+    line: 11
+    text: A joint meeting of the Federal Open Mark
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
     line: 21
     text: In the Desk survey, the median of the mo
     message: This sentence runs 54 words (limit 45)

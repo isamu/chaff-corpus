@@ -29,3 +29,13 @@ findings:
     text: "### 3 Get your business ready to export"
     message: '"3" follows "1" (expected number 2)'
     verdict: unjudged
+  - rule: undefined-acronym
+    line: 123
+    text: EORI number that starts with GB to expor
+    message: '"EORI" is used without an expansion (2 such acronyms)'
+    verdict: unjudged
+  - rule: undefined-acronym
+    line: 125
+    text: XI.
+    message: '"XI" is used without an expansion (2 such acronyms)'
+    verdict: unjudged

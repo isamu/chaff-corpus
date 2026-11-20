@@ -3,12 +3,6 @@ chaff: 0.34.0
 findings:
   - rule: undefined-acronym
     line: 16
-    text: HR Specialist](https://docs.google.com/d
-    message: '"HR" is used without an expansion (6 such acronyms)'
-    verdict: false-positive
-    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
-  - rule: undefined-acronym
-    line: 16
     text: TTS has leave types for the following sc
     message: '"TTS" is used without an expansion (6 such acronyms)'
     verdict: correct

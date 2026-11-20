@@ -2,6 +2,11 @@ id: fomc-minutes-2026-01
 chaff: 0.34.0
 findings:
   - rule: max-sentence-length
+    line: 11
+    text: A joint meeting of the Federal Open Mark
+    message: This sentence runs 47 words (limit 45)
+    verdict: unjudged
+  - rule: max-sentence-length
     line: 104
     text: By unanimous vote, the Committee selecte
     message: This sentence runs 48 words (limit 45)

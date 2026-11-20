@@ -9,10 +9,6 @@ findings:
     line: 24
     sha256: df5f62df498cfd3b39a4a9667b2e9aedfcb3da53659ddc03315724c7d302daf6
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 42
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: emoji-heading
     line: 42
     sha256: a16f6ac539c8b453d3a14f44ab7da881c69443fa2c83e804118fd8b8f723ab6a
@@ -93,10 +89,6 @@ findings:
     line: 207
     sha256: 6996326bf8fc36271aa07fe087fff264ca15e164a7c001e21f8a9e4349affe5f
     verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 211
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
   - rule: emoji-heading
     line: 211
     sha256: 0d7f3a0a31da93d45efd425594fcfa141918e0b591f1a3a082f0d5d3ea97e6f4
@@ -112,10 +104,6 @@ findings:
   - rule: wordy-phrase
     line: 223
     sha256: 6388a1aa1c2ec4caa652de169ff212fdd7a553297812c50d8b773b3658ff769f
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 233
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: expletive-construction
     line: 235
@@ -212,14 +200,6 @@ findings:
   - rule: heading-level-skip
     line: 420
     sha256: 0d308e9b119d5cb455bc4fd80a8481734bd59b87b90e0aae19d8df17401befa8
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 426
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 432
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-sentence-length
     line: 438
@@ -376,10 +356,6 @@ findings:
   - rule: max-paragraph-length
     line: 652
     sha256: f32a40cb586717cfbdead6247bba513ef3d39b75ec34132cebf0f930569e7020
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 665
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: max-paragraph-length
     line: 683

@@ -16,12 +16,6 @@ findings:
     text: GSA implements PPL via [Family and Medic
     message: '"GSA" is used without an expansion (3 such acronyms)'
     verdict: correct
-  - rule: undefined-acronym
-    line: 28
-    text: HR Specialist](https://docs.google.com/d
-    message: '"HR" is used without an expansion (3 such acronyms)'
-    verdict: false-positive
-    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
   - rule: wordy-phrase
     line: 66
     text: Your Workforce Relations HR Specialist c

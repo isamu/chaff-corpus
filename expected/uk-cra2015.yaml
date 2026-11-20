@@ -11,11 +11,6 @@ findings:
     text: goods and digital content).
     message: section 16 is called "goods and digital content" here, but its heading is "Goods not conforming to contract if digital content does not conform"
     verdict: unjudged
-  - rule: name-variant
-    line: 61
-    text: Sales contracts
-    message: '"Sales" is one letter away from "Wales", which the document uses more than once'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 134
     text: SI 2013/3134) (main characteristics of g

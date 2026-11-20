@@ -17,16 +17,11 @@ findings:
     line: 182
     sha256: 7337fa7be8cbfb4de69db917b78e379889ddae489fee616f0b732c10e26596e2
     verdict: false-positive
-    note: "the name of the file the specification defines, repeated because it is the subject of every rule"
+    note: the name of the file the specification defines, repeated because it is the subject of every rule
   - rule: wordy-phrase
     line: 244
     sha256: 2730183d6b776b400ed491c90b67ecb616fb9b699c2f06c8c41fa74f04bcd7d0
     verdict: correct
-  - rule: max-sentence-length
-    line: 303
-    sha256: 80a4c29f837a502fa9905f113c86e3772e5d7ef01e989bbbc1c3615242f28f03
-    verdict: false-positive
-    note: "a sentence ending in etc. is joined to the next sentence; it is under the limit alone"
   - rule: unbalanced-bracket
     line: 488
     sha256: 6b0910841dbc7d9bad700639b15788305895353fc312e4d465c24bf6d52013b0
@@ -76,19 +71,19 @@ findings:
     line: 887
     sha256: 71104ab20d384947f8334d20e735c09c123064a64bc4c857ad3115d66a5dec6d
     verdict: false-positive
-    note: "a list of the fields a registration must contain (noun phrases), not steps; a noun phrase with a relative clause read as a statement"
+    note: a list of the fields a registration must contain (noun phrases), not steps; a noun phrase with a relative clause read as a statement
   - rule: undefined-acronym
     line: 1054
     sha256: 21cefb851644ea6c02673715583ea17d447ad24421900b8300a7b29c328c0d4f
     verdict: false-positive
-    note: "an organisation's name inside the title of a cited work in the references"
+    note: an organisation's name inside the title of a cited work in the references
   - rule: undefined-acronym
     line: 1060
     sha256: 2867d7ff833b7f8396ab2ed3e6eebfae9018f3fc57165133040eed9ec366b0dd
     verdict: false-positive
-    note: "part of a standard's designation (ISO/IEC number) in a reference entry"
+    note: part of a standard's designation (ISO/IEC number) in a reference entry
   - rule: undefined-acronym
     line: 1109
     sha256: c953349d5e23b6fd663e5f9491da8a50296fbbe73fd68b569618506e63623f15
     verdict: false-positive
-    note: "the names of mailing lists in the acknowledgements"
+    note: the names of mailing lists in the acknowledgements

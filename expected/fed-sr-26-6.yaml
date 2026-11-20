@@ -13,12 +13,6 @@ findings:
     message: The subject has 127 characters (up to 70)
     verdict: correct
     note: "the subject on the line after the SUBJECT: label runs 127 characters"
-  - rule: adverb-overuse
-    line: 21
-    text: Frequently Asked Questions Regarding Tre
-    message: 23 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: Frequently in the title Frequently Asked Questions, repeated as the subject and the attachment's name, counted as an -ly adverb
   - rule: max-sentence-length
     line: 23
     text: This guidance applies to all financial i

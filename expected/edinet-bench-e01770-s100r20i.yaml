@@ -223,21 +223,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 25
-    text: （１） 事業環境に関するリスク① 信号システム業界の需要動向等による影響当社グル
-    message: この文は 141 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
-    text: （５） 情報セキュリティに関するリスク当社グループは公共性、公益性、安全性に深く
-    message: この文は 154 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
-    text: （６） その他のリスク当社グループは、常に新しい会計基準等に基づき会計処理を行い
-    message: この文は 144 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
     text: ② 半導体、ＦＰＤ業界の需要動向等による影響　当社グループのパワーエレクトロニク
     message: この文は 161 文字あります（140 文字まで）
     verdict: unjudged
@@ -273,33 +258,8 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
-    text: また、現地従業員のための安全マニュアル等の整備を図っておりますが、当該国・地域の
+    text: 当社グループは、常に新しい会計基準等に基づき会計処理を行い決算に反映させておりま
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 25
-    text: 今後も引き続き事業継続計画の定期的な見直し、改善を図ってまいります。 ② 新型コ
-    message: 「〜まいります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 25
-    text: 当社グループは、情報システム部門の強化やＩＴ環境の整備等に努めておりますが、サイ
-    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 25
-    text: （１） 事業環境に関するリスク① 信号システム業界の需要動向等による影響当社グル
-    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 25
-    text: （５） 情報セキュリティに関するリスク当社グループは公共性、公益性、安全性に深く
-    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 25
-    text: （６） その他のリスク当社グループは、常に新しい会計基準等に基づき会計処理を行い
-    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
@@ -313,8 +273,23 @@ findings:
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 25
+    text: 当社グループは、常に新しい会計基準等に基づき会計処理を行い決算に反映させておりま
+    message: 「は」で出した主題から述語まで 124 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
     text: 当社グループは、情報システム部門の強化やＩＴ環境の整備等に努めておりますが、サイ
     message: 「は」で出した主題から述語まで 128 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは主力の鉄道信号システムや道路交通システムについて、国内事業の製品納
+    message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
+    verdict: unjudged
+  - rule: topic-predicate-distance
+    line: 25
+    text: 当社グループは公共性、公益性、安全性に深くかかわる企業として、情報セキュリティ基
+    message: 「は」で出した主題から述語まで 126 字あります（80 字まで）
     verdict: unjudged
   - rule: unbalanced-bracket
     line: 25

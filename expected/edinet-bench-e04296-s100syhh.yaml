@@ -181,11 +181,6 @@ findings:
     text: (3) 事業用資産（土地、建物等）の時価変動リスク当社グループでは、「固定資産の
     message: この文は 178 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: max-sentence-length
-    line: 25
-    text: (8) 顧客等の情報管理当社グループでは、物流事業を運営する上で、個人情報をはじ
-    message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
   - rule: ngram-repetition
     line: 25
     text: しかしながら、景気の変動や取引先の物流合理化ならびに他業態からの物流業への参画等
@@ -200,11 +195,6 @@ findings:
     line: 25
     text: お客様に満足をいただけるサービスを提供することにより安定的な収益の確保に努めてお
     message: 「お客様」と書いています（この文書はふつう「お客さま」と書く語です。6 箇所のうち 1 箇所が違う）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 25
-    text: ３ 【事業等のリスク】有価証券報告書に記載した事業の状況、経理の状況等に関する事
-    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 25
@@ -338,17 +328,7 @@ findings:
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 121
-    text: の方法①　ヘッジ会計の方法金利スワップ取引のうち、金利スワップの特例処理の対象と
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 121
     text: の減価償却の方法①　有形固定資産次の償却方法を採用しております。建物　　　　 定
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 121
-    text: の計上基準①　貸倒引当金債権の貸倒の損失に備えるため、一般債権については貸倒実績
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: orthographic-variant
@@ -358,12 +338,12 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 121
-    text: (6) 重要なヘッジ会計の方法①　ヘッジ会計の方法金利スワップ取引のうち、金利ス
-    message: 「〜おります」で終わる文が 5 文続いています（2 文まで）
+    text: ３　連結子会社の事業年度に関する事項連結子会社の事業年度の末日は、連結決算日と一
+    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 121
-    text: ３　連結子会社の事業年度に関する事項連結子会社の事業年度の末日は、連結決算日と一
+    text: ヘッジ手段金利スワップ取引ヘッジ対象為替・金利等の市場価格の変動により時価または
     message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
     verdict: unjudged
   - rule: repeated-sentence-ending

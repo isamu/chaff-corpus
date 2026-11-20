@@ -75,6 +75,11 @@ findings:
     message: "\"aren't\" is written \"are not\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
+  - rule: doubled-punctuation
+    line: 553
+    text: ..
+    message: 'Punctuation is doubled: ".."'
+    verdict: unjudged
   - rule: spelling-consistency
     line: 605
     text: signalling that cheating was expected.

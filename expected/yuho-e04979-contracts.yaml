@@ -15,12 +15,6 @@ findings:
     note: a company's proper name
   - rule: max-sentence-length
     line: 1
-    text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
-    message: この文は 176 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a run-in item heading joined to the following sentence (one-line extraction) adds its characters to the count
-  - rule: max-sentence-length
-    line: 1
     text: また、相互に協力してNCPの発展に向けた事業体制を構築し、NCP、当社及びDBJ
     message: この文は 153 文字あります（140 文字まで）
     verdict: correct

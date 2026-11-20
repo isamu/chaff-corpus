@@ -49,3 +49,8 @@ findings:
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: false-positive
     note: the topic is answered by the predicate of the first clause; the distance is measured on to the predicate of a later clause with its own subject
+  - rule: topic-predicate-distance
+    line: 1
+    text: 当社グループは、中長期的な株式価値向上に向け、ＲＯＥ（自己資本利益率）及び自己資
+    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
+    verdict: unjudged

@@ -6,7 +6,7 @@ findings:
     text: IRS customer service representatives can
     message: '"IRS" is used without an expansion (6 such acronyms)'
     verdict: false-positive
-    note: "a household acronym (IRS) on the agency's own pages, owed no expansion"
+    note: a household acronym (IRS) on the agency's own pages, owed no expansion
   - rule: contraction-consistency
     line: 36
     text: If you're a business, or an individual w
@@ -81,7 +81,7 @@ findings:
     text: VOID” box checked at the top, it general
     message: '"VOID" is used without an expansion (6 such acronyms)'
     verdict: false-positive
-    note: "a form's box label written in capitals inside quotation marks, read as an acronym"
+    note: a form's box label written in capitals inside quotation marks, read as an acronym
   - rule: max-paragraph-length
     line: 328
     text: Tax-related identity theft occurs when s
@@ -92,7 +92,7 @@ findings:
     text: SSN. Or, the IRS may send you a letter s
     message: '"SSN" is used without an expansion (6 such acronyms)'
     verdict: false-positive
-    note: "the term is spelled out a sentence earlier in the same paragraph, just without the acronym in parentheses"
+    note: the term is spelled out a sentence earlier in the same paragraph, just without the acronym in parentheses
   - rule: max-sentence-length
     line: 340
     text: If the tax you owe is because of an audi

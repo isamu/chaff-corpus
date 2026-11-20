@@ -1,24 +1,6 @@
 id: cdc-co-poisoning-basics
 chaff: 0.33.0
 findings:
-  - rule: concrete-evidence-density
-    line: 10
-    text: ""
-    message: Section "What it is" has no number, code or link (5 of 9 sections)
-    verdict: false-positive
-    note: a definition section on a health fact page; a definition needs no number or link
-  - rule: concrete-evidence-density
-    line: 16
-    text: ""
-    message: Section "Symptoms" has no number, code or link (5 of 9 sections)
-    verdict: false-positive
-    note: a symptoms section that is a concrete list in words; the rule counts only figures, code and links as concrete
-  - rule: concrete-evidence-density
-    line: 28
-    text: ""
-    message: Section "Reducing risk" has no number, code or link (5 of 9 sections)
-    verdict: false-positive
-    note: the parent section of the risk-reduction subsections, whose own text is a short lead-in; the subsections carry the content
   - rule: hyphen-as-dash
     line: 64
     text: " - gives off CO."

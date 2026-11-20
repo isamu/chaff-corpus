@@ -27,11 +27,6 @@ findings:
     message: 「DFFT」が説明なしで使われています（説明のない略語 2 個）
     verdict: correct
     note: DFFT is never expanded and is not an everyday word
-  - rule: concrete-evidence-density
-    line: 94
-    text: ""
-    message: 「生活者・事業者・職員に​やさしいサービスの提供​」の節に数値もコードもリンクもありません（そういう節が 3/9）
-    verdict: unjudged
   - rule: invisible-character
     line: 94
     text: ​
@@ -106,11 +101,6 @@ findings:
     line: 108
     text: ​
     message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 113
-    text: ""
-    message: 「デジタル基盤の整備による​成長戦略の推進」の節に数値もコードもリンクもありません（そういう節が 3/9）
     verdict: unjudged
   - rule: invisible-character
     line: 113
@@ -191,11 +181,6 @@ findings:
     line: 132
     text: ​成長戦略の推進
     message: ゼロ幅の字（U+200B）が 1 字あります。検索やコピーで語が切れます
-    verdict: unjudged
-  - rule: concrete-evidence-density
-    line: 134
-    text: ""
-    message: 「安全・安心で強靱なデジタル基盤の実現」の節に数値もコードもリンクもありません（そういう節が 3/9）
     verdict: unjudged
   - rule: invisible-character
     line: 136

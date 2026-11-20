@@ -87,11 +87,6 @@ findings:
     text: 一般的には、Annual Reviews社などの、OAでアクセス可能であっても図
     message: 「と言われている」は、誰が言ったのかを言っていません
     verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 75
-    text: の一般の著作物の利用者と同程度の権利しか有さなくなる。このため、論文著者は、自身
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 75
     text: かかわらず、機関リポジトリや個人のウェブサイトにおける論文の公開はおろか、学生や

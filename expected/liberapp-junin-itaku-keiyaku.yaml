@@ -108,11 +108,6 @@ findings:
     sha256: 6d18ad45da8e9c9aa20618a8997a9c979153f61fb9a670f32bcfaa44bcf30750
     verdict: correct
     note: a redundant expression (the noun and verb share the same kanji)
-  - rule: requirement-smell
-    line: 76
-    sha256: 26ef6b320284b45cd47c5c1826006cfd22eb1724e0f730fbdda06600586a84aa
-    verdict: false-positive
-    note: a fixed tax term whose marker names consumption and local consumption tax, not an open list
   - rule: orthographic-variant
     line: 78
     sha256: e54647fbf4c46aa8ab4f6bbbcae7f69b1248bf5dd3b0b7ba83825695629daaee
