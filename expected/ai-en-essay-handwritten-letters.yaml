@@ -1,12 +1,6 @@
 id: ai-en-essay-handwritten-letters
 chaff: 0.36.0
 findings:
-  - rule: adverb-overuse
-    line: 3
-    text: apparently taught everyone in the 1950s.
-    message: 17 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: the -ly adverbs (apparently, obviously, really) carry the essay's spoken voice; not an AI sign
   - rule: ai-generated-composite
     line: 7
     text: Not because I think handwriting is moral

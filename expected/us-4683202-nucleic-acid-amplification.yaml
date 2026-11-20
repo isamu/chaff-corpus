@@ -141,6 +141,11 @@ findings:
     text: singlestranded RNA.
     message: '"singlestranded" here, where the document usually writes "single-stranded" (1 of 14)'
     verdict: unjudged
+  - rule: unknown-word
+    line: 595
+    text: singlestranded RNA.
+    message: '"singlestranded" is not in the dictionary; did you mean "single-stranded"?'
+    verdict: correct
   - rule: orthographic-variant
     line: 621
     text: betaglobin allele was subjected to twent
@@ -171,6 +176,11 @@ findings:
     text: betaglobin locus without resorting to ei
     message: '"betaglobin" here, where the document usually writes "beta-globin" (3 of 9)'
     verdict: unjudged
+  - rule: unknown-word
+    line: 669
+    text: singlecopy gene from one microgram of hu
+    message: '"singlecopy" is not in the dictionary; did you mean "single copy"?'
+    verdict: correct
   - rule: undefined-acronym
     line: 673
     text: CHO group, R" is --H, x is a number from

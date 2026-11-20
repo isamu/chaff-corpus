@@ -96,11 +96,6 @@ findings:
     message: 半角の片仮名「｣」があります（全角は「」」）
     verdict: correct
     note: half-width corner brackets
-  - rule: max-kanji-continuous
-    line: 543
-    text: 大雪注意報基準以上の雪。季節予報および天候情報においては、数日以上にわたる降雪に
-    message: 「大雪注意報基準以上」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 547
     text: の過去の気象データ検索の天気概況については、該当期間に北海道内の気象官署と青森、

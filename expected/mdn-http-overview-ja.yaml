@@ -21,7 +21,7 @@ findings:
     text: ウェブページを表示するため、ブラウザーはページを表す HTML 文書を読み込むた
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
     verdict: false-positive
-    note: "different verbs that share only the polite ending します, read as a repeated ending"
+    note: different verbs that share only the polite ending します, read as a repeated ending
   - rule: bracket-width-consistency
     line: 48
     text: )、ページに含まれるサブリソース（通常、画像や動画）に対応する追加のリクエストを
@@ -52,4 +52,4 @@ findings:
     text: インターフェイスを使用して、クライアントは接続を開いてイベントハンドラーを確立し
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
     verdict: false-positive
-    note: "different verbs that share only the polite ending します, read as a repeated ending"
+    note: different verbs that share only the polite ending します, read as a repeated ending

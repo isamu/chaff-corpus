@@ -6,7 +6,7 @@ findings:
     text: より安全な反復処理の書き方があるため、while文は使う場面が限られています。
     message: 「より安全」は、何と比べているかが書かれていません
     verdict: false-positive
-    note: "the baseline (the while statement) is named in the same sentence"
+    note: the baseline (the while statement) is named in the same sentence
   - rule: fullwidth-alnum-consistency
     line: 330
     text: ３回繰り返されます

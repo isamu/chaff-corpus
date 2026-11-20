@@ -5,34 +5,34 @@ findings:
     line: 16
     sha256: ca4490ecbfea15f112cbcd3405d3344018b320689d660facb9169afbb26d8e1d
     verdict: correct
-    note: "an open list closed by a limiting phrase, so the reader cannot tell what else is covered"
+    note: an open list closed by a limiting phrase, so the reader cannot tell what else is covered
   - rule: unused-definition
     line: 32
     sha256: 198963d227092d38ac78d1013af7f0781b4bdee1753a3f0f74e0d5d9e4469f59
     verdict: correct
-    note: "the term is defined and never used again"
+    note: the term is defined and never used again
   - rule: unbalanced-bracket
     line: 34
     sha256: 26891ca2e501f6b0b547656805680204d684a5ee4bad07d79d2f93cd6f647af8
     verdict: correct
-    note: "the outer parenthesis of the definition is never closed"
+    note: the outer parenthesis of the definition is never closed
   - rule: requirement-smell
     line: 62
     sha256: 5171f10a443624741b1ed35f19ea6869bb4e3540e217c2599422971840614187
     verdict: correct
-    note: "an open list in what the user must keep"
+    note: an open list in what the user must keep
   - rule: requirement-smell
     line: 66
     sha256: b27714d751b1f81b1061b587626c2d55d7ed59b9803fe8ffafcfb578a25aa7f5
     verdict: false-positive
-    note: "the open-list marker sits inside a parenthetical example of a screen, not in what is required"
+    note: the open-list marker sits inside a parenthetical example of a screen, not in what is required
   - rule: requirement-smell
     line: 77
     sha256: 5c040a7844d687cfd31150c4d515f33b79b3ff672a58ed393cf47a088d6dc549
     verdict: false-positive
-    note: "the marker is part of a statutory term naming the date a period runs from, not an open list"
+    note: the marker is part of a statutory term naming the date a period runs from, not an open list
   - rule: requirement-smell
     line: 121
     sha256: 7ef36177b6ffa18f70b0475fdf954891fb74c8547f10320138e932f54975836e
     verdict: correct
-    note: "an open list of incidents the user is liable for"
+    note: an open list of incidents the user is liable for

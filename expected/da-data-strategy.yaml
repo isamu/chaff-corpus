@@ -6,16 +6,16 @@ findings:
     text: 世界各国は、デジタル化の進展やイノベーションの推進によるデータ量の増大、AI能力
     message: 「は」で出した主題から述語まで 105 字あります（80 字まで）
     verdict: correct
-    note: "the topic (は) stands far from its predicate, over the limit"
+    note: the topic (は) stands far from its predicate, over the limit
   - rule: empty-intensifier
     line: 17
     text: デジタル化が進む現代社会において、データは新たな価値創造の源泉であり、その効果的
     message: 「極めて重要」は、中身を言わずに強調だけしています
     verdict: correct
-    note: "an intensifier (極めて重要, 非常に重要) standing in for a reason"
+    note: an intensifier (極めて重要, 非常に重要) standing in for a reason
   - rule: max-sentence-length
     line: 20
     text: そして、「新しい資本主義のグランドデザイン及び実行計画2025年改訂版」、「デジ
     message: この文は 171 文字あります（140 文字まで）
     verdict: correct
-    note: "a sentence over the limit that an editor would split"
+    note: a sentence over the limit that an editor would split

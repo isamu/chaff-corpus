@@ -5,19 +5,19 @@ findings:
     line: 15
     sha256: 4d369779576798fce69462571ee6deca770271ddd4aab74986434bd84650b830
     verdict: correct
-    note: "a noun phrase among imperative responsibilities"
+    note: a noun phrase among imperative responsibilities
   - rule: oxford-comma-consistency
     line: 71
     sha256: d601d9da6f2f0df6464357f4edace8ac7461baa381d7b93e3d219cd03e531578
     verdict: correct
-    note: "the item itself mixes a serial comma and none, against the page's serial-comma lists"
+    note: the item itself mixes a serial comma and none, against the page's serial-comma lists
   - rule: list-item-form-mix
     line: 98
     sha256: 1ec04b9e5dbef7d34831c17782b055b52567f3070bf614c0a6d648f07896b457
     verdict: correct
-    note: "a third-person verb item among noun-phrase requirements"
+    note: a third-person verb item among noun-phrase requirements
   - rule: which-that-consistency
     line: 126
     sha256: b39bb25923d83fc8d3f70842725ed50c47f3867638f0d43c1bea1a83a2acd763
     verdict: correct
-    note: "a which clause without a comma where the page uses that; it wants a comma or that"
+    note: a which clause without a comma where the page uses that; it wants a comma or that

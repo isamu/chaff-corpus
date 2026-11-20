@@ -6,34 +6,34 @@ findings:
     text: ""
     message: Section "How To Recognize Phishing" has no number, code or link (3 of 6 sections)
     verdict: false-positive
-    note: "a consumer-advice section whose signs are given as worded examples and its subsections; the rule counts only figures, code and links as concrete"
+    note: a consumer-advice section whose signs are given as worded examples and its subsections; the rule counts only figures, code and links as concrete
   - rule: no-em-dash
     line: 5
     text: — and they’re often successful.
     message: 14 dashes per 1000 words (limit 8)
     verdict: correct
-    note: "a short page that leans on em dashes"
+    note: a short page that leans on em dashes
   - rule: concrete-evidence-density
     line: 51
     text: ""
     message: Section "What To Do if You Suspect a Phishing Attack" has no number, code or link (3 of 6 sections)
     verdict: false-positive
-    note: "a section of steps to follow; instructions need no number or link"
+    note: a section of steps to follow; instructions need no number or link
   - rule: title-case-consistency
     line: 51
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: false-positive
-    note: "house title case that lowercases the short conjunction if; no other heading has a word that contradicts it"
+    note: house title case that lowercases the short conjunction if; no other heading has a word that contradicts it
   - rule: concrete-evidence-density
     line: 61
     text: ""
     message: Section "What To Do if You Responded to a Phishing Email" has no number, code or link (3 of 6 sections)
     verdict: false-positive
-    note: "the section names a website (IdentityTheft.gov) in plain text, a concrete pointer the rule does not count"
+    note: the section names a website (IdentityTheft.gov) in plain text, a concrete pointer the rule does not count
   - rule: title-case-consistency
     line: 61
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
     verdict: false-positive
-    note: "house title case that lowercases the short conjunction if; no other heading has a word that contradicts it"
+    note: house title case that lowercases the short conjunction if; no other heading has a word that contradicts it

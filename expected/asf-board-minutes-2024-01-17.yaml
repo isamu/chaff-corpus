@@ -1034,6 +1034,10 @@ findings:
     line: 4618
     sha256: bad1a33b72b3ea77d74df323cbf92aef664e5daa7e873590cf53f6409dee42b1
     verdict: unjudged
+  - rule: unknown-word
+    line: 4621
+    sha256: 212473039d2f6e911a9b69e7d80952494c14f12464ad583ea3e578d987027619
+    verdict: correct
   - rule: expletive-construction
     line: 4687
     sha256: b7ad63e2bc8b86e511781242534ed50ecbe594f2cf6e3b91a2fb1b229f60cfd4

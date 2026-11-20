@@ -12,13 +12,13 @@ findings:
     text: の閲覧コンテキストのための有効なソースを定義します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
+    note: の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally
   - rule: no-doubled-joshi
     line: 51
     text: のすべてのフェッチディレクティブの[代替](#代替)となります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
+    note: の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally
   - rule: no-doubled-joshi
     line: 58
     text: のコンテンツの閲覧のための有効なソースを指定します。
@@ -29,19 +29,19 @@ findings:
     text: のマニフェストファイルのための有効なソースを指定します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
+    note: の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally
   - rule: no-doubled-joshi
     line: 77
     text: のインラインイベントハンドラーのための有効なソースを指定します。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
+    note: の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally
   - rule: no-doubled-joshi
     line: 96
     text: のすべてのフェッチディレクティブの代替となります。
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally"
+    note: の of のための or a determiner (他の, すべての) counted toward a chain of possessive の; the phrase reads naturally
   - rule: bracket-width-consistency
     line: 146
     text: )。

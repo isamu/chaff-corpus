@@ -13,7 +13,7 @@ findings:
     line: 49
     sha256: 10afece5b9494e52649dfc74c37f84b025df678e6ab8918ebf8e4ad2f568c460
     verdict: false-positive
-    note: "the bowl (written in kana) and the kanji suffix of a dish name (as in oyakodon) are different words, not spelling variants"
+    note: the bowl (written in kana) and the kanji suffix of a dish name (as in oyakodon) are different words, not spelling variants
   - rule: orthographic-variant
     line: 51
     sha256: f190ea77a10b9e1ded9c2ef9e88eb6c027b36f944edcd3357e97ada13a022794

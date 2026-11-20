@@ -6,13 +6,13 @@ findings:
     text: それをちょっとだけ見てみましょう。以下、Linux(っていうかELF)の話に限定
     message: 「見てみましょう。」が 10 回出てきます（5 回まで）
     verdict: correct
-    note: "the same signpost phrase closes many paragraphs of the article"
+    note: the same signpost phrase closes many paragraphs of the article
   - rule: shell-prompt-mix
     line: 64
     text: "```sh"
     message: このブロックだけ、コマンドへのプロンプト（$）の付け方がほかと違います（ほかの 4 ブロック）
     verdict: false-positive
-    note: "every sh block in the article writes the $ prompt; this one holds commands without output"
+    note: every sh block in the article writes the $ prompt; this one holds commands without output
   - rule: no-doubled-joshi
     line: 218
     text: の次の命令のアドレス)が入っています。
@@ -24,4 +24,4 @@ findings:
     text: "```sh"
     message: このブロックだけ、コマンドへのプロンプト（$）の付け方がほかと違います（ほかの 4 ブロック）
     verdict: false-positive
-    note: "every sh block in the article writes the $ prompt; this one holds a command without output"
+    note: every sh block in the article writes the $ prompt; this one holds a command without output

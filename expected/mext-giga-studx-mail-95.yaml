@@ -51,7 +51,7 @@ findings:
     text: 文部科学省では、デジタル学習基盤を活用し授業改善を推進するリーディングDXスクー
     message: この段落は 10 文あります（5 文まで）
     verdict: correct
-    note: "a block that runs from the programme's introduction into the case description; an editor would split it"
+    note: a block that runs from the programme's introduction into the case description; an editor would split it
   - rule: repeated-sentence-ending
     line: 26
     text: 「自分が思う平和について考えをまとめよう」という学習のめあてで、授業が展開されて
@@ -83,7 +83,7 @@ findings:
     text: MEXCBTを活用したCBT方式で実施します。
     message: 「MEXCBT」が説明なしで使われています（説明のない略語 6 個）
     verdict: correct
-    note: "the system name is never expanded and is not on chaff's common-acronym list; readers who know it are the team's to declare in chaff.yaml"
+    note: the system name is never expanded and is not on chaff's common-acronym list; readers who know it are the team's to declare in chaff.yaml
   - rule: max-sentence-length
     line: 73
     text: 2月20日（金）15時30分より、「私たちの毎日が、GIGAでこう変わった！ ～

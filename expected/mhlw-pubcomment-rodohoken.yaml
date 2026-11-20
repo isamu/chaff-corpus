@@ -6,58 +6,58 @@ findings:
     text: 27年9月
     message: 半角の「27」と書いています（この文書はふつう全角の「２７」。11 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "half-width digits where the notice mostly writes full-width ones"
+    note: half-width digits where the notice mostly writes full-width ones
   - rule: fullwidth-alnum-consistency
     line: 3
     text: 9月
     message: 半角の「9」と書いています（この文書はふつう全角の「９」。6 箇所のうち 1 箇所が違う）
     verdict: correct
-    note: "half-width digits where the notice mostly writes full-width ones"
+    note: half-width digits where the notice mostly writes full-width ones
   - rule: preamble-length
     line: 6
     text: 厚生労働省では、競争の導入による公共サービスの改革に関する法律（平成１８年法律第
     message: 最初の見出しまでに 4 段落あります（2 段落まで）
     verdict: false-positive
-    note: "a public-comment notice's customary lead (basis, invitation, how to send, publication caveat) before its form sections; an editor would keep it"
+    note: a public-comment notice's customary lead (basis, invitation, how to send, publication caveat) before its form sections; an editor would keep it
   - rule: heading-level-skip
     line: 14
     text: "### 【記載要領等】"
     message: 見出し「【記載要領等】」の深さが 1 から 3 へ飛んでいます（2 のはず）
     verdict: correct
-    note: "the page really jumps from h1 to h3"
+    note: the page really jumps from h1 to h3
   - rule: broken-link
     line: 20
     text: "[Excel:28KB][PDF:47KB]により提出して下さい。（実施要項案の"
     message: 「[Excel:28KB][PDF:47KB]」は参照の形ですが、名前の定義がありません（字のまま表示されます）
     verdict: false-positive
-    note: "the ministry's file-type labels ([Excel:28KB][PDF:47KB]) kept as plain text from the page's link labels, read as a Markdown reference link"
+    note: the ministry's file-type labels ([Excel:28KB][PDF:47KB]) kept as plain text from the page's link labels, read as a Markdown reference link
   - rule: no-doubled-joshi
     line: 20
     text: の際の整理等のため、別紙様式によるご意見の提出にご協力をお願いします。）
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: false-positive
-    note: "the の of 〜のため counted toward a chain of possessive の; the phrase reads naturally"
+    note: the の of 〜のため counted toward a chain of possessive の; the phrase reads naturally
   - rule: topic-predicate-distance
     line: 22
     text: 実施要項の決定後は、実施要項に従って入札等を行うこととなりますが、入札参加を検討
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic (決定後は) gets its predicate at 〜となりますが、; a new topic (ご質問は) takes the rest of the sentence"
+    note: the topic (決定後は) gets its predicate at 〜となりますが、; a new topic (ご質問は) takes the rest of the sentence
   - rule: fullwidth-alnum-consistency
     line: 30
     text: 100-8916　東京都千代田区霞が関１－２－２
     message: 半角の「100」と書いています（この文書はふつう全角の「１００」。11 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "half-width digits where the notice mostly writes full-width ones"
+    note: half-width digits where the notice mostly writes full-width ones
   - rule: fullwidth-alnum-consistency
     line: 30
     text: 8916　東京都千代田区霞が関１－２－２
     message: 半角の「8916」と書いています（この文書はふつう全角の「８９１６」。11 箇所のうち 3 箇所が違う）
     verdict: correct
-    note: "half-width digits where the notice mostly writes full-width ones"
+    note: half-width digits where the notice mostly writes full-width ones
   - rule: list-item-form-mix
     line: 33
     text: ※電話によるご意見はお受けできかねますので、あらかじめご了承ください。
     message: 「※電話によるご意見はお受けできかねますので、あらかじめご了承ください。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
     verdict: false-positive
-    note: "a ※ caution set as a bullet after the list of addresses, compared with the address items as if it were one of them"
+    note: a ※ caution set as a bullet after the list of addresses, compared with the address items as if it were one of them

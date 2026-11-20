@@ -6,25 +6,25 @@ findings:
     text: １等）はエンコーディングによらず `info` レベルの参考報告として検出されま
     message: 全角の「１」と書いています（この文書はふつう半角の「1」。10 箇所のうち 1 箇所が違う）
     verdict: false-positive
-    note: "full-width characters quoted as examples of full-width characters, the subject of the sentence"
+    note: full-width characters quoted as examples of full-width characters, the subject of the sentence
   - rule: fullwidth-alnum-consistency
     line: 32
     text: Ａ、１等）はエンコーディングによらず `info` レベルの参考報告として検出さ
     message: 全角の「Ａ」と書いています（この文書はふつう半角の「A」。4 箇所のうち 1 箇所が違う）
     verdict: false-positive
-    note: "full-width characters quoted as examples of full-width characters, the subject of the sentence"
+    note: full-width characters quoted as examples of full-width characters, the subject of the sentence
   - rule: repeated-sentence-ending
     line: 42
     text: 決定論的チェック（フォント色・背景色・太字・斜体の複数使用検出）は AI の有無
     message: 「〜します」で終わる文が 3 文続いています（2 文まで）
     verdict: false-positive
-    note: "different verbs that share only the polite ending します, read as a repeated ending"
+    note: different verbs that share only the polite ending します, read as a repeated ending
   - rule: requirement-smell
     line: 70
     text: なども `region_type` にかかわらず NG となるため、それらを許容
     message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
     verdict: false-positive
-    note: "など in a description of how a check behaves, not in a requirement"
+    note: など in a description of how a check behaves, not in a requirement
   - rule: latin-spacing
     line: 82
     text: AIも見逃す方向（誤検出より見逃しを優先）で設計されています

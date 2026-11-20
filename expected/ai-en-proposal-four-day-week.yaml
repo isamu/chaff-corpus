@@ -3,10 +3,9 @@ chaff: 0.36.0
 findings:
   - rule: adverb-overuse
     line: 9
-    text: probably have been an email. I don't thi
-    message: 22 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: the conversational register the request asked for (honestly, probably, really); not an AI sign
+    text: especially if we're deliberate about how
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: unjudged
   - rule: cliche
     line: 9
     text: Most of the hard thinking happens in a f

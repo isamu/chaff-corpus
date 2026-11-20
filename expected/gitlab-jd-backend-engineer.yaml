@@ -112,6 +112,11 @@ findings:
     text: opensource community with GitLab.
     message: '"opensource" here, where the document usually writes "open-source" (1 of 3)'
     verdict: correct
+  - rule: unknown-word
+    line: 497
+    text: opensource community with GitLab.
+    message: '"opensource" is not in the dictionary; did you mean "open source"?'
+    verdict: correct
   - rule: spelling-consistency
     line: 512
     text: optimising software in large-scale, high

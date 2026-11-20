@@ -17,7 +17,7 @@ findings:
     text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23"
     message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23日）」は 41 文字あります（40 文字まで）
     verdict: false-positive
-    note: "a newsletter's fixed title (series name, issue number, date); the length comes from the issue and date the series always carries"
+    note: a newsletter's fixed title (series name, issue number, date); the length comes from the issue and date the series always carries
   - rule: undefined-acronym
     line: 13
     text: STI for SDGs」アワード募集
@@ -138,7 +138,7 @@ findings:
     text: Green Blue Education Forum (GBEF)  実行委員会
     message: この文は 72 文字あります（70 文字まで）
     verdict: false-positive
-    note: "one plain clause made long by a Latin-letter proper name counted letter by letter"
+    note: one plain clause made long by a Latin-letter proper name counted letter by letter
   - rule: orthographic-variant
     line: 250
     text: 下さい！

@@ -24,7 +24,7 @@ findings:
     text: このように，子どものころからの望ましい食習慣の確立は極めて重要な社会的課題であり
     message: 「は」で出した主題から述語まで 102 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: max-sentence-length
     line: 14
     text: 同諮問に対しては，平成14年9月30日に「子どもの体力向上のための総合的な方策に
@@ -42,7 +42,7 @@ findings:
     text: 特に，成長期にある児童生徒にとって，健全な食生活は健康な心身を育（はぐく）むため
     message: この段落は 6 文あります（5 文まで）
     verdict: correct
-    note: "a paragraph over the limit that an editor would split"
+    note: a paragraph over the limit that an editor would split
   - rule: no-doubled-joshi
     line: 25
     text: の120％以上の体重の者）も増加しており，学校保健統計調査によれば，小学6年生男
@@ -84,7 +84,7 @@ findings:
     text: 食に関する問題は，言うまでもなく家庭が中心となって担うものである。家族一緒の食事
     message: この段落は 6 文あります（5 文まで）
     verdict: correct
-    note: "a paragraph over the limit that an editor would split"
+    note: a paragraph over the limit that an editor would split
   - rule: max-sentence-length
     line: 31
     text: 当審議会としても「『新しい時代を拓（ひら）く心を育てるために』－次世代を育てる心
@@ -96,7 +96,7 @@ findings:
     text: 他方，核家族化の進展，共働きの増加などの社会環境の変化や，外食や調理済み食品の利
     message: 「〜である」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-    note: "三つの文が続けて「である」で終わる; an editor would vary one"
+    note: 三つの文が続けて「である」で終わる; an editor would vary one
   - rule: tari-unpaired
     line: 35
     text: たり，地域の伝統的な料理を提供することを通じ，地域の文化や伝統に対する理解と関心
@@ -108,7 +108,7 @@ findings:
     text: 現在，学校における食に関する指導は，学級担任を中心として，給食の時間において学校
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: correct
-    note: "the same topic carries to the final predicate; the count to the sentence end stands"
+    note: the same topic carries to the final predicate; the count to the sentence end stands
   - rule: max-sentence-length
     line: 36
     text: さらに，保健体育審議会答申「生涯にわたる心身の健康の保持増進のための今後の健康に
@@ -120,7 +120,7 @@ findings:
     text: 以上のように，これまでも学校栄養職員の活用を含め，学校における食に関する指導を進
     message: 「〜である」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
-    note: "三つの文が続けて「である」で終わる; an editor would vary one"
+    note: 三つの文が続けて「である」で終わる; an editor would vary one
   - rule: max-sentence-length
     line: 42
     text: 食に関する指導体制の整備については，これまでも，平成9年9月22日の保健体育審議
@@ -156,13 +156,13 @@ findings:
     text: 食に関する指導は，個別指導以外にも給食の時間や学級活動，教科指導等，学校教育全体
     message: 「は」で出した主題から述語まで 86 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: topic-predicate-distance
     line: 71
     text: 特に給食の時間は，生きた教材である学校給食を最大限に活用した指導を行うことができ
     message: 「は」で出した主題から述語まで 107 字あります（80 字まで）
     verdict: correct
-    note: "the same topic carries to the final predicate; the count to the sentence end stands"
+    note: the same topic carries to the final predicate; the count to the sentence end stands
   - rule: max-sentence-length
     line: 72
     text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
@@ -174,37 +174,37 @@ findings:
     text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
     message: 一文に読点が 10 個あります（6 個まで）
     verdict: correct
-    note: "ten commas in one sentence; an editor would split it"
+    note: ten commas in one sentence; an editor would split it
   - rule: topic-predicate-distance
     line: 72
     text: 特に，食に関する問題は，児童生徒にとっても身近な問題であると同時に，他の様々な問
     message: 「は」で出した主題から述語まで 143 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: teki-overuse
     line: 77
     text: その中で，栄養教諭は，栄養に関する専門的な教員として，例えば，食に関する指導に係
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: correct
-    note: "一文に「〜的」が三つ"
+    note: 一文に「〜的」が三つ
   - rule: topic-predicate-distance
     line: 77
     text: その中で，栄養教諭は，栄養に関する専門的な教員として，例えば，食に関する指導に係
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
-    note: "the same topic carries to the final predicate; the count to the sentence end stands"
+    note: the same topic carries to the final predicate; the count to the sentence end stands
   - rule: topic-predicate-distance
     line: 77
     text: 学校における食に関する指導は，給食の時間をはじめとして，関連教科等に幅広く関わる
     message: 「は」で出した主題から述語まで 89 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: topic-predicate-distance
     line: 78
     text: 同時に，児童生徒の食の大部分は家庭が担っているという実態を踏まえれば，食に関する
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
     verdict: false-positive
-    note: "a topic inside an embedded clause (〜は…担っているという実態) whose predicate follows at once; a new topic takes the main clause"
+    note: a topic inside an embedded clause (〜は…担っているという実態) whose predicate follows at once; a new topic takes the main clause
   - rule: no-doubled-joshi
     line: 83
     text: の主要な職務の柱の一つとして位置付けられるべきである。具体的な職務内容としては，
@@ -246,7 +246,7 @@ findings:
     text: 栄養教諭は，生きた教材である学校給食の管理と，それを活用した食に関する指導を同時
     message: 「は」で出した主題から述語まで 90 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: wordy-phrase
     line: 98
     text: 栄養教諭は，生きた教材である学校給食の管理と，それを活用した食に関する指導を同時
@@ -264,13 +264,13 @@ findings:
     text: 栄養教諭の免許状の種類は，大学院，大学，短期大学等の学校種別，修業年限や修得単位
     message: 「は」で出した主題から述語まで 163 字あります（80 字まで）
     verdict: correct
-    note: "the same topic carries to the final predicate; the count to the sentence end stands"
+    note: the same topic carries to the final predicate; the count to the sentence end stands
   - rule: max-kanji-continuous
     line: 117
     text: 免許状取得のための基礎資格としては，大学における教員養成の基本原則を踏まえ，専修
     message: 「大学院修士課程修了程度」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "a fixed qualification term (大学院修士課程修了) plus 程度 in a bracketed gloss; the kanji run cannot reasonably be split"
+    note: a fixed qualification term (大学院修士課程修了) plus 程度 in a bracketed gloss; the kanji run cannot reasonably be split
   - rule: kutoten-consistency
     line: 122
     text: 、一種免許状を取得するための基礎資格としては，栄養士の免許に加えて管理栄養士免許
@@ -324,7 +324,7 @@ findings:
     text: 栄養教諭としての資質能力は，その養成・採用・研修の各段階を通じて形成されていくべ
     message: 「は」で出した主題から述語まで 82 字あります（80 字まで）
     verdict: false-positive
-    note: "the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence"
+    note: the topic gets its own predicate at 〜であり、; a new subject or frame takes the rest of the sentence
   - rule: max-sentence-length
     line: 162
     text: ただし，学校給食の実施そのものが義務的なものではないこと，現在の学校栄養職員も学
@@ -348,7 +348,7 @@ findings:
     text: なお，栄養教諭制度の創設後も，すべての学校栄養職員が一律に栄養教諭に移行するわけ
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
-    note: "seven commas in one sentence; just over the limit"
+    note: seven commas in one sentence; just over the limit
   - rule: max-sentence-length
     line: 175
     text: 当審議会としては，「今後の地方教育行政の在り方について」（平成10年9月21日答

@@ -92,9 +92,3 @@ findings:
     message: 「自動車損害賠償責任保険契約」は漢字が 13 字続いています（8 字まで）
     verdict: false-positive
     note: an organisation's official name or a statutory term; the kanji run cannot be shortened
-  - rule: max-kanji-continuous
-    line: 175
-    text: ただし、自動車保険契約以外の保険契約にあっては、個人・所定の小規模法人・いわゆる
-    message: 「自動車保険契約以外」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: an organisation's official name or a statutory term; the kanji run cannot be shortened

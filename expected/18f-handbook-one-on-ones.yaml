@@ -6,11 +6,6 @@ findings:
     text: One-to-ones are a foundational managemen
     message: 5 paragraphs before the first heading (limit 2)
     verdict: unjudged
-  - rule: adverb-overuse
-    line: 10
-    text: possibly
-    message: 21 -ly adverbs per 1000 words (limit 15)
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 10
     text: " -- supervisors, facilitators, and possi"
@@ -31,6 +26,11 @@ findings:
     text: There are many ways of holding 1:1s. As
     message: '"There is ..." appears 6 times (limit 3)'
     verdict: unjudged
+  - rule: adverb-overuse
+    line: 38
+    text: Finally, note that 1:1s are a tool, not
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
   - rule: title-case-consistency
     line: 44
     text: ""

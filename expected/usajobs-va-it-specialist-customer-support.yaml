@@ -56,7 +56,7 @@ findings:
     text: Complete the initial online assessment a
     message: '"Complete the initial online assessment and USAHire Assessment, if required." opens with a verb; the other items in this list open with a noun phrase (1 of 4)'
     verdict: correct
-    note: "one imperative among declarative items; the reverse (one statement among imperatives) is judged correct elsewhere"
+    note: one imperative among declarative items; the reverse (one statement among imperatives) is judged correct elsewhere
   - rule: ngram-repetition
     line: 197
     text: Selected applicants will be required to

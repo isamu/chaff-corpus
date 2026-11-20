@@ -42,7 +42,7 @@ findings:
     text: DB 分析作業に支障があるため禁止とする。
     message: 「DB」が説明なしで使われています（説明のない略語 19 個）
     verdict: false-positive
-    note: "DB, an abbreviation used as an everyday word in Japanese technical writing"
+    note: DB, an abbreviation used as an everyday word in Japanese technical writing
   - rule: requirement-smell
     line: 214
     text: 等は最初に出現するカラムとカラムの区切りのカンマ前に改行を入れること。

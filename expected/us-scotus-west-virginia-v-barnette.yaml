@@ -48,5 +48,7 @@ findings:
     verdict: correct
   - rule: unknown-word
     line: 137
-    what: '"flagsalute" runs flag-salute together; it is not a word'
-    verdict: missed
+    text: flagsalute is an allowable portion of a
+    message: '"flagsalute" is not in the dictionary; did you mean "flag salute"?'
+    verdict: correct
+    note: '"flagsalute" runs flag-salute together; it is not a word; found by chaffjs 0.47.0'

@@ -12,7 +12,7 @@ findings:
     text: Open the Kubernetes dashboard. You can d
     message: The first sentence repeats the heading "Open the Dashboard"
     verdict: false-positive
-    note: "an imperative step that restates its procedural heading, the normal shape of a tutorial step"
+    note: an imperative step that restates its procedural heading, the normal shape of a tutorial step
   - rule: orthographic-variant
     line: 80
     text: add-on and opens the proxy in the defaul
