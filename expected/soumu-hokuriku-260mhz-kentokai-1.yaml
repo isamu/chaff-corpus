@@ -4,7 +4,8 @@ findings:
   - rule: bracket-width-consistency
     line: 29
     sha256: f1ba8703f1c13636d36f991a02ebac3cc7f51c73f33e367695844f1b41acf243
-    verdict: unjudged
+    verdict: correct
+    note: "half-width parentheses around a corporate-form abbreviation in a prose line where the prose otherwise uses full-width （）"
   - rule: no-doubled-joshi
     line: 41
     sha256: 7095502b2515c0cee98cf7303961bbde35bca99dc18d808d78b4508e808b02e7

@@ -11,7 +11,8 @@ findings:
     line: 15
     text: 参加チケットの発売はまだ先 [^1]
     message: 「参加チケットの発売はまだ先  ^1」は名詞で終わっています。この箇条書きのほかの項目は文で終わります（3 項目のうち 1 項目）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a casual predicate with the copula dropped (まだ先), read as a statement like the other items"
   - rule: list-item-form-mix
     line: 31
     text: 年度ごとに国際化度のブレあり。完全英語の2013とベストエフォートのそれ以降
