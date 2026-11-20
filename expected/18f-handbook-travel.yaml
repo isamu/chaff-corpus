@@ -5,47 +5,47 @@ findings:
     line: 29
     text: TTS.
     message: '"TTS" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 33
     text: Use of the GSA travel card is mandatory
     message: This sentence runs 46 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 33
     text: GSA travel card is mandatory for all exp
     message: '"GSA" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: vague-link-text
     line: 45
     text: "[here](https://smartpay.gsa.gov/smarttax"
     message: The link text "here" does not say where it goes
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 46
     text: IBA".
     message: '"IBA" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 88
     text: You may use your travel card to get a
     message: This sentence runs 42 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: title-case-consistency
     line: 129
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 133
     text: POV mileage is
     message: '"POV" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 138
     text: For example, it is typically advantageou
     message: This sentence runs 45 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 162
     text: When working from somewhere that isn't y
@@ -62,9 +62,9 @@ findings:
     line: 181
     text: On the other side, when travel expenses
     message: This sentence runs 49 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: sentence-initial-so
     line: 184
     text: So, **future travel may not be
     message: 1 sentence opens with "So," (1 needed)
-    verdict: unjudged
+    verdict: correct

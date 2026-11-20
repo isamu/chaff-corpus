@@ -4,60 +4,64 @@ findings:
   - rule: undefined-acronym
     line: 69
     sha256: b21b90cc5f00ccc3d1913fed6e0a32ac3f8c34166e4075094bbfd0300e5b7b28
-    verdict: unjudged
+    verdict: false-positive
+    note: "the registry body every RFC names without expansion, in the standard section heading of an RFC"
   - rule: contraction-consistency
     line: 91
     sha256: 3087e2a46c6d7ce74c7706f8b4568833bbcd4a609059b33b954bcd4d7cf97aa6
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 95
     sha256: f52352cb73dc7fac31531a7d20dfec1bb4710a16140f2bc3e3c3b86b03c1e2ed
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 120
     sha256: 9fa6e6df32f9d60f60d35e1918d4f4dd3484d68f93f0a89edabdde732931f76c
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 184
     sha256: 87d0b8c640d5c4f0d12f53f103afc68b01d3493d0a94cd890df793e53b09bd98
-    verdict: unjudged
+    verdict: correct
   - rule: requirement-smell
     line: 251
     sha256: 55d2d741978f8510e704a7e581c3a19ab4e05b97d987857aa0232b9c20b81b65
-    verdict: unjudged
+    verdict: false-positive
+    note: "the condition is fixed by the protocol (a relative reference is resolved first), not an unmeasured amount"
   - rule: max-sentence-length
     line: 286
     sha256: 9308833439d5b2131a875a505f2526efb556f95b22d95d6cc9792e340b363e52
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 378
     sha256: aa258cf25671eb1fc512828bb2ba80b6b3d090f12e839fee6e4fc6248f5eaa8b
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 439
     sha256: 8266f138607bb60aec30caaaa4e877c317b72e7a5f6c3f91fd1b13deb94566c4
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 440
     sha256: 51cfce01c826f44c3e06eb02921ead1b95bc4abd34f640b1ab3d719299419397
-    verdict: unjudged
+    verdict: false-positive
+    note: "the name of a grammar rule (an ABNF core rule) written in capitals, read as an acronym"
   - rule: contraction-consistency
     line: 454
     sha256: 960c133be52f8d7b5fcba0ed122ea5f2136d51813eb079b5c7c4e1d4d03b0153
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 462
     sha256: acaddb46916478f9cd141690b32e4b5c7e38f000c779f9068c3dad583086c17b
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 462
     sha256: acaddb46916478f9cd141690b32e4b5c7e38f000c779f9068c3dad583086c17b
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 512
     sha256: 6e6c87eca162a94823a296d83ca4eb6c37b106d8053dc0c28c69a26f3988d4b9
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 761
     sha256: 631990d28de950667a3d8166495e3a8b31720f7cb6d3700c90196fb89b4b3892
-    verdict: unjudged
+    verdict: false-positive
+    note: "part of a standard's proper name, which the same line expands with its own acronym"

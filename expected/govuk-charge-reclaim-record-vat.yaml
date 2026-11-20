@@ -17,7 +17,7 @@ findings:
     line: 22
     text: 3 rates of VAT (standard, reduced and ze
     message: '"3" here, where the document usually writes numbers below ten like "two" (1 of 3)'
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 50
     text: " - you can check if the VAT number is va"
