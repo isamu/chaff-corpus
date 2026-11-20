@@ -10,9 +10,11 @@ findings:
     line: 8
     text: pay <span class="keyterms_link">Provider
     message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "the standard terms give no time to pay the fees anywhere"
   - rule: obligation-without-deadline
     line: 14
     text: return or destroy Discloser’s Confidenti
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "return or destroy on termination with no time limit"

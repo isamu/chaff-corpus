@@ -5,27 +5,32 @@ findings:
     line: 6
     text: This includes giving training to <span c
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "as required by a named law or section, a precise cross-reference counted as a vague word"
   - rule: vague-word-density
     line: 7
     text: Provider</span> will implement appropria
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the regulation own wording of the safeguard duty, which a business associate agreement repeats on purpose"
   - rule: vague-word-density
     line: 7
     text: Provider</span> will maintain appropriat
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the regulation own wording of the safeguard duty, which a business associate agreement repeats on purpose"
   - rule: oxford-comma-consistency
     line: 9
     text: Provider</span> agrees to mitigate, to t
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
+    verdict: false-positive
+    note: "a pair of commas around a parenthetical phrase read as a list"
   - rule: vague-word-density
     line: 9
     text: Provider</span> agrees to mitigate, to t
     message: '"to the extent practicable" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the regulation own wording of the safeguard duty, which a business associate agreement repeats on purpose"
   - rule: quote-style-consistency
     line: 10
     text: ’s obligations under any agreement betwe
@@ -35,7 +40,8 @@ findings:
     line: 10
     text: Provider</span> will conduct appropriate
     message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: correct
+    note: "appropriate due diligence, with no measure of what is enough"
   - rule: quote-style-consistency
     line: 13
     text: ’ rights under HIPAA as related to the S
@@ -45,7 +51,8 @@ findings:
     line: 13
     text: If relevant to the Services, <span class
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "as required by a named law or section, a precise cross-reference counted as a vague word"
   - rule: vague-word-density
     line: 13
     text: Provider</span> will take reasonable eff
@@ -60,12 +67,14 @@ findings:
     line: 16
     text: notify <span class="keyterms_link">Provi
     message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "notice of a limitation with no time for it"
   - rule: vague-word-density
     line: 16
     text: Upon request, <span class="keyterms_link
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "as required by a named law or section, a precise cross-reference counted as a vague word"
   - rule: vague-word-density
     line: 17
     text: Company</span> will notify <span class="
@@ -80,14 +89,17 @@ findings:
     line: 25
     text: Provider</span> will report to <span cla
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "as required by a named law or section, a precise cross-reference counted as a vague word"
   - rule: vague-word-density
     line: 26
     text: Company</span> agrees that this section
     message: '"periodically" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a word of frequency describing how often attacks happen, not part of a duty"
   - rule: vague-word-density
     line: 28
     text: Provider</span> will not disclose inform
     message: '"as required" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "as required by applicable law, the stock carve-out for legally compelled disclosure, counted as a vague word"
