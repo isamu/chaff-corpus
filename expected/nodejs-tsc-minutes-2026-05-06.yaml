@@ -4,52 +4,65 @@ findings:
   - rule: undefined-acronym
     line: 25
     sha256: a16c7fc9dc9f1724d3398dbc80836e00e1cdf7896c025894df8cc5183ae12a21
-    verdict: unjudged
+    verdict: false-positive
+    note: a word in capitals for emphasis (the release is out) read as an acronym
   - rule: undefined-acronym
     line: 25
     sha256: ad3267ec131e132ba764029856609bfbc0b9f6c8278cd89a01ceb632b05dda57
-    verdict: unjudged
+    verdict: correct
+    note: LTS (long-term support) is never expanded; that this audience knows it is the team's to say under names in chaff.yaml
   - rule: undefined-acronym
     line: 27
     sha256: 367a9a3044af7794df01f75eaea2b3d3eff75d55b2dfcfc920ee386012b7bdde
-    verdict: unjudged
+    verdict: correct
+    note: CFP (call for papers) is never expanded and is not an everyday word
   - rule: unknown-word
     line: 27
     sha256: e1f39de0c951e53d2b40dc5dc494e7c5d410808a1e44dda5dfa563845dea7055
-    verdict: unjudged
+    verdict: false-positive
+    note: an informal clipping of a known word (collaborator), the project's usual name for its summit, read as a misspelling
   - rule: undefined-acronym
     line: 40
     sha256: f78b64df382747acb657fc1c7f48e34c6c3919c438b6d7197e99c6da1a363735
-    verdict: unjudged
+    verdict: correct
+    note: EOL (end of life) is never expanded; that this audience knows it is the team's to say under names in chaff.yaml
   - rule: contraction-consistency
     line: 41
     sha256: c42c832b51c1693704711d186183424daf4f8ca4611c964fb4bd9d5bc75219f5
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the notes; the document mostly writes the other form
   - rule: name-variant
     line: 48
     sha256: 5f3e2cff52f18a8ca3d7d21cc5e5d767fae06e98446c9fe08cdf73ac9e87a538
-    verdict: unjudged
+    verdict: correct
+    note: the operating system written in two forms in the same notes
   - rule: unknown-word
     line: 53
     sha256: ea7af48981e73c15d2d980f0e22b122222637404d79c694283058ae8a8be3601
-    verdict: unjudged
+    verdict: correct
+    note: a misspelling
   - rule: doubled-punctuation
     line: 54
     sha256: 5ec1f7e700f37c3d0b2981d04855fc34b94aaa15457b05ca571817442d228f81
-    verdict: unjudged
+    verdict: correct
+    note: two periods, neither a full stop nor an ellipsis
   - rule: unknown-word
     line: 55
     sha256: dbc946fe8918e6081f0dc4699413200f1f907850c0aa71c09f4a21f72526809b
-    verdict: unjudged
+    verdict: correct
+    note: a misspelling
   - rule: undefined-acronym
     line: 75
     sha256: f92293beb46d2f2fbbb96b2ddfa31dff2d16e31d88cb7cfe69933234c0d9fbf7
-    verdict: unjudged
+    verdict: correct
+    note: ABI (application binary interface) is never expanded and is not an everyday word
   - rule: contraction-consistency
     line: 78
     sha256: ba5527f8dd64c9de3a206fa00888db36163ea6201cee9661426a6d7f750c45ef
-    verdict: unjudged
+    verdict: correct
+    note: the minority form of this word in the notes; the document mostly writes the other form
   - rule: empty-section
     line: 92
     sha256: a32c31748c70c6676f40da51f759b3f3247f4f77d76d1c2df9d7f934bf2fb6aa
-    verdict: unjudged
+    verdict: correct
+    note: a template heading left empty
