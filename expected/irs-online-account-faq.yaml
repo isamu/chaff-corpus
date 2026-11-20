@@ -5,7 +5,8 @@ findings:
     line: 11
     text: IRS customer service representatives can
     message: '"IRS" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a household acronym (IRS) on the agency's own pages, owed no expansion"
   - rule: contraction-consistency
     line: 36
     text: If you're a business, or an individual w
@@ -16,27 +17,27 @@ findings:
     line: 45
     text: The Payment Activity tab currently links
     message: "\"aren't\" is written \"are not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 92
     text: If the amount shown is zero, then this i
     message: This sentence runs 51 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 96
     text: You can make a payment toward an amount
     message: This sentence runs 62 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 128
     text: ACH debit from your checking or savings
     message: '"ACH" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: unbalanced-bracket
     line: 132
     text: “Payment Activity" tab.
     message: '"“" is never closed'
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 196
     text: If you received a notice in the mail or
@@ -47,17 +48,17 @@ findings:
     line: 234
     text: If you couldn’t find what you’re looking
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 234
     text: CP number and subject under the “Notices
     message: '"CP" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: wordy-phrase
     line: 264
     text: Your online account will show all inform
     message: '"with the exception of" can be said in fewer words'
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 274
     text: Generally, an amount included in your in
@@ -74,29 +75,31 @@ findings:
     line: 304
     text: If you had coverage from a Healthcare Ex
     message: This sentence runs 47 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 312
     text: VOID” box checked at the top, it general
     message: '"VOID" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a form's box label written in capitals inside quotation marks, read as an acronym"
   - rule: max-paragraph-length
     line: 328
     text: Tax-related identity theft occurs when s
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 328
     text: SSN. Or, the IRS may send you a letter s
     message: '"SSN" is used without an expansion (6 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the term is spelled out a sentence earlier in the same paragraph, just without the acronym in parentheses"
   - rule: max-sentence-length
     line: 340
     text: If the tax you owe is because of an audi
     message: This sentence runs 43 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: wordy-phrase
     line: 394
     text: In order to qualify for assistance from
     message: '"in order to" can be said in fewer words'
-    verdict: unjudged
+    verdict: correct

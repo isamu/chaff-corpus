@@ -10,7 +10,7 @@ findings:
     line: 11
     text: There are four visitor centers. The Josh
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: max-paragraph-length
     line: 15
     text: Temperatures are most comfortable in the
@@ -61,7 +61,7 @@ findings:
     line: 207
     text: Biking is allowed on dirt and paved road
     message: This paragraph runs 6 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: heading-level-skip
     line: 211
     text: "#### Are there any ranger programs going"
@@ -86,7 +86,7 @@ findings:
     line: 235
     text: Antelope ground squirrels, jackrabbits,
     message: This paragraph runs 7 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: heading-level-skip
     line: 251
     text: "#### What Native American tribes are tra"
@@ -96,7 +96,7 @@ findings:
     line: 253
     text: Today, these communities are comprised o
     message: This sentence runs 84 words (limit 40)
-    verdict: unjudged
+    verdict: correct
   - rule: nonstandard-word
     line: 253
     text: "are comprised of 15 tribes: Agua Calient"

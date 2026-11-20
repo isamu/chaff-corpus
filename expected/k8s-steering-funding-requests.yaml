@@ -10,9 +10,10 @@ findings:
     line: 14
     text: Open a funding request issue using the m
     message: '"appropriate" and other vague words: 9 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a very short document: two ordinary uses of one word exceed a per-1000-words limit; asking the reader to pick the matching template is clear"
   - rule: vague-word-density
     line: 22
     text: Please provide links to show the appropr
     message: '"appropriate" and other vague words: 9 per 1000 words (limit 4)'
-    verdict: unjudged
+    verdict: correct

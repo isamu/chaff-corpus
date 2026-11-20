@@ -60,17 +60,17 @@ findings:
     line: 83
     text: AGPL 3.0 or later' refer to version 3 of
     message: '"AGPL" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 83
     text: GPL 3.0 or later', 'LGPL 3.0 or later' a
     message: '"GPL" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 83
     text: LGPL 3.0 or later' and 'AGPL 3.0 or late
     message: '"LGPL" is used without an expansion (9 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 105
     text: You could also just add the licence text

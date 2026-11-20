@@ -5,12 +5,13 @@ findings:
     line: 6
     text: GSA expects us to be working. This page
     message: '"GSA" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 10
     text: HR Specialist](https://docs.google.com/d
     message: '"HR" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
   - rule: name-variant
     line: 19
     text: HRLinks and is associated with you. You
@@ -32,7 +33,7 @@ findings:
     line: 25
     text: TTS works a Monday - Friday schedule, so
     message: '"TTS" is used without an expansion (4 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 35
     text: " - Can be approved for working more than"
@@ -67,7 +68,7 @@ findings:
     line: 45
     text: " - Not available with this schedule"
     message: '"-" stands in for a dash'
-    verdict: unjudged
+    verdict: correct
   - rule: hyphen-as-dash
     line: 47
     text: " - in a 2 week pay period:"
@@ -96,4 +97,4 @@ findings:
     line: 153
     text: ""
     message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: unjudged
+    verdict: correct

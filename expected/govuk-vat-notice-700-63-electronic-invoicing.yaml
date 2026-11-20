@@ -30,12 +30,14 @@ findings:
     line: 289
     text: EANCOM and ODETTE
     message: '"EANCOM" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the name of a standard, used as a proper name in a list of standards, read as an acronym owed an expansion"
   - rule: undefined-acronym
     line: 289
     text: ODETTE
     message: '"ODETTE" is used without an expansion (7 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the name of a standard, used as a proper name in a list of standards, read as an acronym owed an expansion"
   - rule: undefined-acronym
     line: 302
     text: FTP.

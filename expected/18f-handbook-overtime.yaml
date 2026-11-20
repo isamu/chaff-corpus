@@ -5,17 +5,18 @@ findings:
     line: 14
     text: HR Links]({% page "/tools/hrlinks/#enter
     message: '"HR" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "an everyday acronym (HR), here part of a product or job title, owed no expansion"
   - rule: undefined-acronym
     line: 25
     text: FLSA exemption status]({% page "/tools/h
     message: '"FLSA" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 25
     text: GS- level and [FLSA exemption status]({%
     message: '"GS" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 29
     text: OPM’s [Overtime Fact Sheet](https://www.

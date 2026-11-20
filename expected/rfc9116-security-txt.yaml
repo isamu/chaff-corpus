@@ -4,27 +4,29 @@ findings:
   - rule: undefined-acronym
     line: 77
     sha256: 31649a48f9dcdad150d93c2762fb908b31a7b74de82a4395027f85add6ce035c
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 100
     sha256: c2770dc24c240fdc6fa1d2c38f4e1027c78b63055b7836de4a246ff2979167f3
-    verdict: unjudged
+    verdict: correct
   - rule: wordy-phrase
     line: 119
     sha256: 54d25dde94d2c6375f49cefba232ad06de4d50399b53118f4c085195157fe4a0
-    verdict: unjudged
+    verdict: correct
   - rule: ngram-repetition
     line: 182
     sha256: 7337fa7be8cbfb4de69db917b78e379889ddae489fee616f0b732c10e26596e2
-    verdict: unjudged
+    verdict: false-positive
+    note: "the name of the file the specification defines, repeated because it is the subject of every rule"
   - rule: wordy-phrase
     line: 244
     sha256: 2730183d6b776b400ed491c90b67ecb616fb9b699c2f06c8c41fa74f04bcd7d0
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 303
     sha256: 80a4c29f837a502fa9905f113c86e3772e5d7ef01e989bbbc1c3615242f28f03
-    verdict: unjudged
+    verdict: false-positive
+    note: "a sentence ending in etc. is joined to the next sentence; it is under the limit alone"
   - rule: unbalanced-bracket
     line: 488
     sha256: 6b0910841dbc7d9bad700639b15788305895353fc312e4d465c24bf6d52013b0
@@ -53,36 +55,40 @@ findings:
   - rule: max-sentence-length
     line: 693
     sha256: 71c95ba352539dd800ba6b1e377d86440d8b881d12f1e33c716378c857cafb60
-    verdict: unjudged
+    verdict: correct
   - rule: undefined-acronym
     line: 711
     sha256: 7a79d2029c9053d1726ac63988da17d2862d0d2093b8f9d87f1c649402db111e
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 723
     sha256: 8613ec0d7b742b75a792a4366693bb4bceea91d7e7c26884f3b7357e7b8d7f70
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 741
     sha256: de7757d95832f91a8e8a071d3012d6bb8d6cfb7fd1a8aef974c599cf4bcf94f3
-    verdict: unjudged
+    verdict: correct
   - rule: max-sentence-length
     line: 784
     sha256: 6a77effcaae80b672bdd4f4de4ba70af841cfd78d51950c0a2c1bdefadf5b9cb
-    verdict: unjudged
+    verdict: correct
   - rule: step-statement-mix
     line: 887
     sha256: 71104ab20d384947f8334d20e735c09c123064a64bc4c857ad3115d66a5dec6d
-    verdict: unjudged
+    verdict: false-positive
+    note: "a list of the fields a registration must contain (noun phrases), not steps; a noun phrase with a relative clause read as a statement"
   - rule: undefined-acronym
     line: 1054
     sha256: 21cefb851644ea6c02673715583ea17d447ad24421900b8300a7b29c328c0d4f
-    verdict: unjudged
+    verdict: false-positive
+    note: "an organisation's name inside the title of a cited work in the references"
   - rule: undefined-acronym
     line: 1060
     sha256: 2867d7ff833b7f8396ab2ed3e6eebfae9018f3fc57165133040eed9ec366b0dd
-    verdict: unjudged
+    verdict: false-positive
+    note: "part of a standard's designation (ISO/IEC number) in a reference entry"
   - rule: undefined-acronym
     line: 1109
     sha256: c953349d5e23b6fd663e5f9491da8a50296fbbe73fd68b569618506e63623f15
-    verdict: unjudged
+    verdict: false-positive
+    note: "the names of mailing lists in the acknowledgements"

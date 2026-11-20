@@ -25,7 +25,7 @@ findings:
     line: 55
     text: Your landlord can’t insist which option
     message: "\"can't\" is written \"cannot\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
   - rule: contraction-consistency
     line: 93
     text: Check that the tenancy deposit you’re be

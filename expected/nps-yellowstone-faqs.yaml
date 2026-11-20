@@ -5,14 +5,15 @@ findings:
     line: 13
     text: Yellowstone National Park is named after
     message: This paragraph runs 7 sentences (limit 5)
-    verdict: unjudged
+    verdict: correct
   - rule: name-variant
     line: 13
     text: Yellow Stone.” Lewis and Clark called th
     message: '"Yellow Stone" is written "Yellowstone" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a historical spelling quoted as such in an account of where the name came from, not a variant of the name"
   - rule: unbalanced-bracket
     line: 13
     text: “Yellowstone.
     message: '"“" is never closed'
-    verdict: unjudged
+    verdict: correct
