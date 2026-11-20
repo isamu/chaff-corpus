@@ -5,7 +5,8 @@ findings:
     line: 28
     text: 不審なメールには対応せず、社内で確認をお願いします
     message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: unjudged
+    verdict: false-positive
+    note: "a standing instruction in a caution checklist (whenever such a mail arrives); a deadline does not apply"
   - rule: bracket-width-consistency
     line: 46
     text: (代表)

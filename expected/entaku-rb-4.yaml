@@ -5,24 +5,29 @@ findings:
     line: 28
     text: 方がいない？
     message: 「方」と書いています（この文書はふつう「ほう」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: "方 read as かた (a person), a different word from the ほう of comparison the document writes in kana"
   - rule: orthographic-variant
     line: 47
     text: よかった
     message: 「よい」と書いています（この文書はふつう「良い」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: "the regret form 〜ばよかった, conventionally in kana even where the adjective is written 良い"
   - rule: orthographic-variant
     line: 118
     text: 分かる
     message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。5 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "分かる in kanji where the notes mostly write わかる"
   - rule: bracket-width-consistency
     line: 131
     text: )
     message: 括弧を「)」と書いています（この文書はふつう「）」。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "half-width parentheses in prose that mostly uses full-width ones"
   - rule: latin-spacing
     line: 131
     text: " だけど)"
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。10 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: correct
+    note: "a space between Latin and Japanese where the notes mostly write them together"

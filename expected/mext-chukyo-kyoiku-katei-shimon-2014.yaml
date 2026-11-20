@@ -71,7 +71,8 @@ findings:
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
     message: 一文に節が 8 つつながっています（5 つまで）
-    verdict: unjudged
+    verdict: correct
+    note: "eight clauses chained in one sentence; the same sentence is reported by max-ten and topic-predicate-distance"
   - rule: hankaku-kana
     line: 25
     text: ･協働的に探究し，学びの成果等を表現し，更に実践に生かしていけるようにすることが
@@ -94,7 +95,8 @@ findings:
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
     message: 一文に読点が 9 個あります（6 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "nine commas in one sentence; an editor would split it"
   - rule: orthographic-variant
     line: 25
     text: 更に実践に生かしていけるようにすることが重要であるという視点です。
@@ -105,7 +107,8 @@ findings:
     line: 25
     text: これらの取組に共通しているのは，ある事柄に関する知識の伝達だけに偏らず，学ぶこと
     message: 「は」で出した主題から述語まで 178 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the topic (は) stands far from its predicate, over the limit"
   - rule: hankaku-kana
     line: 26
     text: ･協働的に学ぶ学習（いわゆる「アクティブ・ラーニング」）や，そのための指導の方法
@@ -140,7 +143,8 @@ findings:
     line: 26
     text: そのために必要な力を子供たちに育むためには，｢何を教えるか｣という知識の質や量の
     message: 「は」で出した主題から述語まで 94 字あります（80 字まで）
-    verdict: unjudged
+    verdict: correct
+    note: "the same topic (〜ためには) carries past 必要であり、 to the final predicate; the count to the sentence end stands"
   - rule: hankaku-kana
     line: 32
     text: ･内容と学習･指導方法，学習評価の在り方を一体として捉えた，新しい時代にふさわし
@@ -211,7 +215,8 @@ findings:
     line: 36
     text: その際，特に，現行学習指導要領で示されている言語活動や探究的な学習活動，社会との
     message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "一文に「〜的」が三つ"
   - rule: undefined-acronym
     line: 36
     text: ICTを活用した指導の現状等を踏まえつつ，今後の「アクティブ・ラーニング」の具体
@@ -228,7 +233,8 @@ findings:
     line: 37
     text: ○　育成すべき資質･能力を子供たちに確実に育む観点から，学習評価の在り方について
     message: 本文に体言止めが 6 文あります（4 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "questions ending in 〜か (〜が必要か。) counted as noun-ending sentences; the text has no 体言止め in its prose"
   - rule: hankaku-kana
     line: 39
     text: ･内容の見直しについてであります。中でも特に以下の事項について，御検討をお願いし
@@ -311,7 +317,8 @@ findings:
     line: 54
     text: ○　子供の体力等の現状を踏まえつつ，2020年の東京オリンピック競技大会・東京パ
     message: 一文に読点が 7 個あります（6 個まで）
-    verdict: unjudged
+    verdict: correct
+    note: "seven commas in one question; just over the limit"
   - rule: no-doubled-joshi
     line: 56
     text: のある児童生徒のための各教科の改善などについて，どのように考えるべきか。

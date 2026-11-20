@@ -44,7 +44,8 @@ findings:
     line: 28
     text: ■第４回プチ学習会を開催します！
     message: この段落は 8 文あります（5 文まで）
-    verdict: unjudged
+    verdict: correct
+    note: "a mail-magazine block over the limit even without its ■ heading line, which is counted into the paragraph"
   - rule: fullwidth-alnum-consistency
     line: 30
     text: １３日間実施します。
@@ -90,7 +91,8 @@ findings:
     line: 64
     text: ■GIGA StuDX推進チームの独り言
     message: この段落は 8 文あります（5 文まで）
-    verdict: unjudged
+    verdict: correct
+    note: "a column block over the limit even without its ■ heading line, which is counted into the paragraph"
   - rule: max-sentence-length
     line: 65
     text: 年度末に向けて、この１年間積み重ねてきた学びや経験が、
