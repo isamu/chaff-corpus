@@ -5,12 +5,14 @@ findings:
     line: 15
     text: If <span class="keyterms_link">Provider<
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
+    verdict: false-positive
+    note: "an item name that itself contains or, inside a list that does use the serial comma, read as a list without one"
   - rule: obligation-without-deadline
     line: 29
     text: notify Customer of any failure by its Su
     message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "notice of a subprocessor failure with no time for it"
   - rule: invisible-character
     line: 61
     text: ‎18 of the UK Addendum, the parties will
@@ -27,7 +29,8 @@ findings:
     line: 81
     text: notify <span class="keyterms_link">Custo
     message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "notice of a third-party request with no time for it"
   - rule: vague-deadline
     line: 87
     text: as soon as reasonably practicable except
@@ -37,7 +40,8 @@ findings:
     line: 91
     text: return or delete Customer Personal Data
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "return or delete after expiry with no time limit"
   - rule: quote-style-consistency
     line: 125
     text: "'s Implementing Decision 2021/914 of 4 J"
@@ -47,4 +51,5 @@ findings:
     line: 139
     text: which is not subject to adequacy regulat
     message: This restrictive clause opens with "which"; the document mostly uses "that"
-    verdict: unjudged
+    verdict: correct
+    note: "a restrictive which in a document that otherwise uses that"

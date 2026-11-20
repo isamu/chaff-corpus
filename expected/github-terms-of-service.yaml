@@ -5,54 +5,65 @@ findings:
     line: 17
     text: We're happy you're here. Please read thi
     message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: "contractions in the friendly welcome, a deliberate plain-language register beside the formal clauses"
   - rule: use-before-definition
     line: 17
     text: Terms of Service agreement carefully bef
     message: '"Terms of Service" is used here, before it is defined on line 52'
-    verdict: unjudged
+    verdict: false-positive
+    note: "the document own title used in the welcome before the definitions section"
   - rule: quote-style-consistency
     line: 51
     text: ’s authorization to log in to and use th
     message: Quote marks are written two ways in this document (17 curly, 33 straight)
-    verdict: unjudged
+    verdict: correct
+    note: "straight and curly quotes in the same definition"
   - rule: quote-style-consistency
     line: 51
     text: '"Account" represents your legal relation'
     message: Quote marks are written two ways in this document (40 curly, 32 straight)
-    verdict: unjudged
+    verdict: correct
+    note: "straight and curly quotes in the same definition"
   - rule: vague-deadline
     line: 96
     text: promptly notify GitHub by contacting us
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "promptly with no number of days"
   - rule: contraction-consistency
     line: 153
     text: To the extent this agreement is not enfo
     message: "\"is not\" is written \"isn't\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: "the full form in a formal clause flagged because the plain-language summaries use the contraction"
   - rule: defined-term-form
     line: 163
     text: affiliates).
     message: '"Affiliate" is defined with a capital on line 55, but written in lower case here'
-    verdict: unjudged
+    verdict: correct
+    note: "a capitalised defined term written in lower case"
   - rule: bare-url-mix
     line: 211
     text: https://github.com/logos.
     message: The URL "https://github.com/logos" is written bare (60 worded links in this document)
-    verdict: unjudged
+    verdict: correct
+    note: "a bare URL among worded links"
   - rule: contraction-consistency
     line: 284
     text: You promise not to disclose, publish, or
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: correct
+    note: "a contraction inside a formal clause, where the clauses write the full form"
   - rule: contraction-consistency
     line: 325
     text: If you do, we'll treat your information
     message: "\"we'll\" is written \"we will\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: "a contraction in a plain-language Short version summary, a deliberate register beside the formal clauses"
   - rule: contraction-consistency
     line: 402
     text: Short version:** _We want our users to b
     message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: unjudged
+    verdict: false-positive
+    note: "a contraction in a plain-language Short version summary, a deliberate register beside the formal clauses"

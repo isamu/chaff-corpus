@@ -5,12 +5,14 @@ findings:
     line: 9
     text: pay the other party its applicable Fees
     message: '"pay" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a payment whose timing the same sentence hands to a payment schedule"
   - rule: oxford-comma-consistency
     line: 12
     text: Licensor grants to Licensee during the t
     message: This list punctuates differently from the rest (1 in this document)
-    verdict: unjudged
+    verdict: false-positive
+    note: "a run of coordinate adjectives before a noun pair (right and license) read as a list without a serial comma"
   - rule: quote-style-consistency
     line: 14
     text: "'s prior written permission: (a) alter o"
@@ -20,12 +22,14 @@ findings:
     line: 14
     text: promptly cease any use of the Licensor’s
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "promptly with no number of days"
   - rule: obligation-without-deadline
     line: 15
     text: submit samples of its proposed uses of t
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a submission for prior approval, whose time is set by the use it must precede"
   - rule: quote-style-consistency
     line: 28
     text: "'s Brand Elements."
@@ -40,7 +44,8 @@ findings:
     line: 45
     text: promptly notifying the Indemnifying Part
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: "promptly with no number of days"
   - rule: quote-style-consistency
     line: 76
     text: "'s products, services, or related offeri"
