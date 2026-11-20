@@ -5,7 +5,8 @@ findings:
     line: 5
     text: "### SR 26-3: Guidance Clarifying Fraud-R"
     message: 'The heading "SR 26-3: Guidance Clarifying Fraud-Related Information Sharing Under Section 314(b) of the USA PATRIOT Act" runs 15 words (limit 14)'
-    verdict: unjudged
+    verdict: correct
+    note: "the page heading repeats the letter's whole subject"
   - rule: email-subject-length
     line: 19
     text: "SUBJECT:"
@@ -16,7 +17,8 @@ findings:
     line: 23
     text: This guidance applies to all financial i
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: This action taken by FinCEN reflects ind

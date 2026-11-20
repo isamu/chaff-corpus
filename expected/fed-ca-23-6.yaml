@@ -16,12 +16,14 @@ findings:
     line: 19
     text: Second extension of CRA consideration fo
     message: This sentence runs 22 words (limit 18)
-    verdict: unjudged
+    verdict: false-positive
+    note: "the letter's subject line, a title without a closing period, read as a sentence"
   - rule: max-sentence-length
     line: 21
     text: Applicability to Community Banking Organ
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 23
     text: The Board of Governors of the Federal Re
@@ -31,7 +33,8 @@ findings:
     line: 25
     text: The agencies are granting a second 36-mo
     message: This sentence runs 22 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: This extension follows the original peri
@@ -42,7 +45,8 @@ findings:
     line: 27
     text: If supervised financial institutions hav
     message: This sentence runs 24 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: heading-level-skip
     line: 45
     text: "##### Notes:"

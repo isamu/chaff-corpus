@@ -5,59 +5,71 @@ findings:
     line: 13
     text: ""
     message: Section "What users saw" has no number, code or link (4 of 7 sections)
-    verdict: unjudged
+    verdict: false-positive
+    note: "an incident narrative section that describes what users saw in words; nothing in it calls for a number or link"
   - rule: undefined-acronym
     line: 17
     text: MS Excel Spreadsheet.
     message: '"MS" is used without an expansion (3 such acronyms)'
-    verdict: unjudged
+    verdict: false-positive
+    note: "MS in the everyday product name MS Excel, read as an undefined acronym"
   - rule: quote-style-consistency
     line: 21
     text: '". This is an internal domain that GOV.U'
     message: The quote mark " here, where the document usually writes “” (2 of 16)
-    verdict: unjudged
+    verdict: correct
+    note: "straight quotes around the domain where the page writes curly quotes around govuk.digital"
   - rule: quote-style-consistency
     line: 21
     text: '"assets-origin.production.govuk.digital"'
     message: The quote mark " here, where the document usually writes “” (2 of 16)
-    verdict: unjudged
+    verdict: correct
+    note: "straight quotes around the domain where the page writes curly quotes around govuk.digital"
   - rule: concrete-evidence-density
     line: 30
     text: ""
     message: Section "Unsafe site list" has no number, code or link (4 of 7 sections)
-    verdict: unjudged
+    verdict: false-positive
+    note: "a section that explains a mechanism (how browsers use the list) in words; nothing in it calls for a number or link"
   - rule: concrete-evidence-density
     line: 38
     text: ""
     message: Section "Earlier Misconfiguration" has no number, code or link (4 of 7 sections)
-    verdict: unjudged
+    verdict: false-positive
+    note: "an incident narrative section; the events are told in words and need no number or link"
   - rule: title-case-consistency
     line: 38
     text: ""
     message: This heading's capitalisation differs from the rest (2 in this document)
-    verdict: unjudged
+    verdict: correct
+    note: "the only Title Case heading among sentence-case headings"
   - rule: concrete-evidence-density
     line: 58
     text: ""
     message: Section "Next steps" has no number, code or link (4 of 7 sections)
-    verdict: unjudged
+    verdict: false-positive
+    note: "next steps named in words (request headers at the CDN layer, guidance on internal domains); the rule counts only figures, code and links as concrete"
   - rule: quote-style-consistency
     line: 64
     text: "'ve also reviewed our policy and guideli"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
-    verdict: unjudged
+    verdict: correct
+    note: "a straight apostrophe where the page writes curly ones"
   - rule: quote-style-consistency
     line: 64
     text: "'ve now iterated the request headers we"
     message: The quote mark ' here, where the document usually writes ’‘ (2 of 8)
-    verdict: unjudged
+    verdict: correct
+    note: "a straight apostrophe where the page writes curly ones"
   - rule: undefined-acronym
     line: 64
     text: CDN layer, to be stricter in terms of th
     message: '"CDN" is used without an expansion (3 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "CDN is never expanded for the general reader of the post"
   - rule: undefined-acronym
     line: 68
     text: GDS
     message: '"GDS" is used without an expansion (3 such acronyms)'
-    verdict: unjudged
+    verdict: correct
+    note: "GDS, the publisher, is never expanded on the page"

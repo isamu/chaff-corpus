@@ -5,17 +5,20 @@ findings:
     line: 21
     text: Applicability to Community Banking Organ
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 23
     text: The Guide provides helpful background in
     message: This sentence runs 29 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 23
     text: The Task Force on Consumer Compliance of
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 23
     text: The updated Guide is intended to assist
@@ -26,17 +29,20 @@ findings:
     line: 23
     text: This Guide applies to HMDA data that fin
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The 2015 HMDA Rule modified the types of
     message: This sentence runs 35 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The Dodd-Frank Act amended HMDA, transfe
     message: This sentence runs 29 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: This edition of the Guide incorporates t
@@ -57,12 +63,14 @@ findings:
     line: 29
     text: On August 31, 2018, the CFPB issued a 20
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 29
     text: The 2018 Act amended HMDA by adding part
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 31
     text: On October 10, 2019, the CFPB issued a 2
@@ -77,12 +85,14 @@ findings:
     line: 35
     text: As a result, the threshold for reporting
     message: This sentence runs 22 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 35
     text: On December 12, 2022, the CFPB issued a
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 35
     text: On September 23, 2022, the United States
@@ -92,12 +102,14 @@ findings:
     line: 37
     text: If supervised financial institutions hav
     message: This sentence runs 23 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 37
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 25 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: heading-level-skip
     line: 60
     text: "##### Notes:"

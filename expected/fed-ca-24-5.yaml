@@ -16,7 +16,8 @@ findings:
     line: 21
     text: "Applicability: This letter is relevant t"
     message: This sentence runs 19 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 23
     text: On July 25, 2024, the Board of Governors
@@ -26,17 +27,20 @@ findings:
     line: 25
     text: The agencies issued the statement to not
     message: This sentence runs 27 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 25
     text: The statement also highlights examples o
     message: This sentence runs 26 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: max-sentence-length
     line: 27
     text: Reserve Banks are asked to distribute th
     message: This sentence runs 21 words (limit 18)
-    verdict: unjudged
+    verdict: correct
+    note: "a long sentence in the letter's body"
   - rule: heading-level-skip
     line: 60
     text: "##### Notes:"
