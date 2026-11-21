@@ -257,10 +257,6 @@ findings:
     line: 297
     sha256: 991c1607a6d89afeaf3621e6791a891fdb300602c5643289189b2037cf591478
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 299
-    sha256: 0ceaca47ca49947308cb28f2654b967e931592846915d49fa9ca40ad44b65dcc
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 303
     sha256: 205202485a1cde37d3a0ac4d442eb32e7802790f69fd10bd97e60c89684cc94d
@@ -348,10 +344,6 @@ findings:
   - rule: max-ten
     line: 415
     sha256: 70e88b09298c03dd4af3ae88a116f6a09e6e47119eaebe14e0a3e3e6667e159c
-    verdict: unjudged
-  - rule: orthographic-variant
-    line: 423
-    sha256: f0cddb282d7bbe66fe7202622c49e4e0c384f6c99ec7e15548bc12cd25733441
     verdict: unjudged
   - rule: adversative-ga-repeat
     line: 431

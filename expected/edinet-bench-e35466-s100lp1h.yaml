@@ -32,12 +32,6 @@ findings:
     message: この文は 998 文字あります（140 文字まで）
     verdict: false-positive
     note: a flattened chronology table (dates and events with no full stops) read as one sentence
-  - rule: max-ten
-    line: 5
-    text: 昭和56年11月コンピューターマネージメント株式会社を大阪市西区に設立（資本金3
-    message: 一文に読点が 8 個あります（6 個まで）
-    verdict: false-positive
-    note: a flattened chronology table (dates and events with no full stops) read as one sentence; its commas belong to separate entries
   - rule: repeated-sentence-ending
     line: 5
     text: ２．プライバシーマーク制度とは、日本産業規格「JIS Q 15001個人情報保護

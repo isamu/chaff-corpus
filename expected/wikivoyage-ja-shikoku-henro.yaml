@@ -26,11 +26,6 @@ findings:
     sha256: 42ed88f70548074883b19b235b09d6ba3cc0acf5d1d6d937caaedddebf3e2dd9
     verdict: correct
     note: one item is a full sentence among glosses that end in nouns
-  - rule: orthographic-variant
-    line: 28
-    sha256: 65db7206a899dbea5c9c66a4d42d4a9779e7088f86639af394f41a13a829470d
-    verdict: false-positive
-    note: the honorific suffix さん (お遍路さん) taken for 山 (mountain) read as さん
   - rule: stray-space
     line: 150
     sha256: 30fd7325d93aee16256f867399700ab4a6b5d1e71730c3dfede9b2781fe4d10b

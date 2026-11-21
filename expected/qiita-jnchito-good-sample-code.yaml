@@ -41,21 +41,11 @@ findings:
     sha256: 63a9b9dfed446bc15aa25adfb96cb3ec60822ac92c958986bca9b51cb64b23b1
     verdict: false-positive
     note: a hedged opinion whose comparison set (ratios of prose to code) is given in the sentence before
-  - rule: name-variant
-    line: 450
-    sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
-    verdict: false-positive
-    note: a list that shows a wrong spelling (×) beside the right one (○) on purpose
   - rule: orthographic-variant
     line: 450
     sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
     verdict: false-positive
     note: a list that shows a wrong spelling (×) beside the right one (○) on purpose
-  - rule: orthographic-variant
-    line: 451
-    sha256: be51da0bad1f88e334f3c74f694573547446974057108be63ebdce37c2c727e0
-    verdict: false-positive
-    note: the suffix 用 (for) taken as the same word as よう (as if)
   - rule: unqualified-superlative
     line: 661
     sha256: 2af02582e6b55e0aa5d04ba632bcd584e77909ec7e14d32dd00e12b3e786cc9d
@@ -81,8 +71,3 @@ findings:
     sha256: 7db1fc20eb7e22bd75b1509596f429eb002da5ce1e55eae7f23f45938d92c0f4
     verdict: correct
     note: three sentences in a row end in です
-  - rule: orthographic-variant
-    line: 832
-    sha256: f918af3677ed8412cbb63420e3febbb1b679355781b15bc57d53ece71d1ef742
-    verdict: false-positive
-    note: the set phrase よかったら (if you like), conventionally written in kana

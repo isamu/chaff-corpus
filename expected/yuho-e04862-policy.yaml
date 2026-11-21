@@ -6,12 +6,6 @@ findings:
     text: ICT工法など国内建設需要の内容が変化しつつあることから、現時点のみならず、将来
     message: 半角の「ICT」と書いています（この文書はふつう全角の「ＩＣＴ」。4 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 1
-    text: なお、従前から当社で資産効率の重要指標としているＲＯＩ（投下資本回収率）、レンタ
-    message: 「減価償却他調整前営業利益」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: the name of a financial indicator glossing an acronym in brackets, a fixed term
   - rule: no-doubled-joshi
     line: 1
     text: のグループ間の連携体制の強化を進めます。③メンテナンスコストの最適化レンタル用資

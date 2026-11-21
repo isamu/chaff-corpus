@@ -1,18 +1,6 @@
 id: commonpaper-baa
 chaff: 0.34.0
 findings:
-  - rule: vague-word-density
-    line: 7
-    text: Provider</span> will implement appropria
-    message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: the regulation own wording of the safeguard duty, which a business associate agreement repeats on purpose
-  - rule: vague-word-density
-    line: 7
-    text: Provider</span> will maintain appropriat
-    message: '"appropriate" and other vague words: 16 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: the regulation own wording of the safeguard duty, which a business associate agreement repeats on purpose
   - rule: oxford-comma-consistency
     line: 9
     text: Provider</span> agrees to mitigate, to t

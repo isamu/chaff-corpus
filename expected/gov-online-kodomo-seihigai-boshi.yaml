@@ -55,27 +55,3 @@ findings:
     message: 「時」と書いています（この文書はふつう「とき」と書く語です。8 箇所のうち 1 箇所が違う）
     verdict: correct
     note: 「遭った時」と、ほかの「とき」が混ざる
-  - rule: max-kanji-continuous
-    line: 132
-    text: 性犯罪被害相談電話の全国共通番号
-    message: 「性犯罪被害相談電話窓口」は漢字が 11 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「性犯罪被害相談電話」は相談窓口の名前
-  - rule: max-kanji-continuous
-    line: 136
-    text: 性犯罪被害相談電話
-    message: 「性犯罪被害相談電話」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「性犯罪被害相談電話」は相談窓口の名前（番号の見出し）
-  - rule: max-kanji-continuous
-    line: 155
-    text: 児童相談所虐待対応ダイヤル
-    message: 「児童相談所虐待対応」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「児童相談所虐待対応ダイヤル」は窓口の名前
-  - rule: max-kanji-continuous
-    line: 160
-    text: 児童相談所虐待対応ダイヤル
-    message: 「児童相談所虐待対応」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: 「児童相談所虐待対応ダイヤル」は窓口の名前（番号の見出し）

@@ -2,11 +2,6 @@ id: fsa-soudansitu-advice-yokin
 chaff: 0.36.0
 findings:
   - rule: max-kanji-continuous
-    line: 12
-    text: また、「金融庁から免許・許可・登録等を受けている金融事業者検索（金融事業者一括検
-    message: 「金融事業者一括検索機能」は漢字が 11 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
     line: 13
     text: 預金保険の対象金融機関は日本国内に本店のある銀行、信用金庫、信金中央金庫、信用組
     message: 「全国信用協同組合連合会」は漢字が 11 字続いています（8 字まで）

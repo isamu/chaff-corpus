@@ -8,12 +8,6 @@ findings:
     verdict: false-positive
     note: 方 read as かた (a person), a different word from the ほう of comparison the document writes in kana
   - rule: orthographic-variant
-    line: 47
-    text: よかった
-    message: 「よい」と書いています（この文書はふつう「良い」と書く語です。3 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the regret form 〜ばよかった, conventionally in kana even where the adjective is written 良い
-  - rule: orthographic-variant
     line: 118
     text: 分かる
     message: 「分かる」と書いています（この文書はふつう「わかる」と書く語です。5 箇所のうち 1 箇所が違う）

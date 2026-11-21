@@ -90,11 +90,6 @@ findings:
     text: ) 図書館はオープンガバメントに貢献できるか？—行政情報提供と行政支援—”. 慶
     message: 「（」を「)」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 74
-    text: なおこれらの研究については高島正憲氏（関西学院大学経済学部専任講師）の教示を得た
-    message: 「関西学院大学経済学部専任講師」は漢字が 14 字続いています（8 字まで）
-    verdict: unjudged
   - rule: hankaku-kana
     line: 110
     text: ｡そのうえで、ユネスコ（UNESCO）と電子情報保存連合（DPC）が組織内でデジ

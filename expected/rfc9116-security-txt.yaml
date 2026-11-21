@@ -73,16 +73,6 @@ findings:
     verdict: false-positive
     note: a list of the fields a registration must contain (noun phrases), not steps; a noun phrase with a relative clause read as a statement
   - rule: undefined-acronym
-    line: 1054
-    sha256: 21cefb851644ea6c02673715583ea17d447ad24421900b8300a7b29c328c0d4f
-    verdict: false-positive
-    note: an organisation's name inside the title of a cited work in the references
-  - rule: undefined-acronym
-    line: 1060
-    sha256: 2867d7ff833b7f8396ab2ed3e6eebfae9018f3fc57165133040eed9ec366b0dd
-    verdict: false-positive
-    note: part of a standard's designation (ISO/IEC number) in a reference entry
-  - rule: undefined-acronym
     line: 1109
     sha256: c953349d5e23b6fd663e5f9491da8a50296fbbe73fd68b569618506e63623f15
     verdict: false-positive

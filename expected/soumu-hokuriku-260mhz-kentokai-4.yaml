@@ -1,18 +1,3 @@
 id: soumu-hokuriku-260mhz-kentokai-4
 chaff: 0.34.0
-findings:
-  - rule: no-mixed-desumasu
-    line: 46
-    sha256: 0cf610476339b5c9cdf1ec234c0a6e47e3daccada206d72070230ab015c137cf
-    verdict: false-positive
-    note: polite notes to the page's readers (＊ lines under the materials list) beside plain-form minutes; two voices by design
-  - rule: no-mixed-desumasu
-    line: 48
-    sha256: 95d84ea86898a46dc649b96316bc9a65c63bec017ebbbd2c7fe608e0c1dd392e
-    verdict: false-positive
-    note: polite notes to the page's readers (＊ lines under the materials list) beside plain-form minutes; two voices by design
-  - rule: no-mixed-desumasu
-    line: 48
-    sha256: dc714396b75bea7ade302df1f66ff4c78c21d4ab8b90fec018920f9d771c080e
-    verdict: false-positive
-    note: polite notes to the page's readers (＊ lines under the materials list) beside plain-form minutes; two voices by design
+findings: []
