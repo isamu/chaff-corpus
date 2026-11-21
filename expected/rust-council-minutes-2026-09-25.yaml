@@ -41,16 +41,6 @@ findings:
     sha256: 8848e7f9410451aa7a2e7461325d7e2413c6c24f56bde60d6934a58abe451f4e
     verdict: correct
     note: the article before an initialism read letter by letter
-  - rule: expletive-construction
-    line: 147
-    sha256: 93b25ba70524bf0b5ab95f6ca03e9ba14559e89f353329aa3d34b4b5bae20366
-    verdict: false-positive
-    note: a speaker's own phrasing in near-verbatim minutes; the note-taker records it as said, and the count runs over every speaker
-  - rule: expletive-construction
-    line: 147
-    sha256: c0092b1cad1bd7cfea5d3e0ae30b1a8899950cb1a1efd08d69d2fe1dd07584f8
-    verdict: false-positive
-    note: a speaker's own phrasing in near-verbatim minutes; the note-taker records it as said, and the count runs over every speaker
   - rule: max-paragraph-length
     line: 147
     sha256: 227e0a1dbb147b908b9e2354316e2bbc9f1fe102306867c8655afb48f4d226db
@@ -105,11 +95,6 @@ findings:
     sha256: ea2cd633a42795fee0c1bfa335d7b9d219b72ed4cc4ba40f7f7b74537ca6c2a4
     verdict: correct
     note: a double hyphen typed for a dash
-  - rule: expletive-construction
-    line: 175
-    sha256: 2aa52c3b6c1eea941893ec095c47136070d5d38ba98d2c1928facff508cc914d
-    verdict: false-positive
-    note: a speaker's own phrasing in near-verbatim minutes; the note-taker records it as said, and the count runs over every speaker
   - rule: hyphen-as-dash
     line: 175
     sha256: cfad7a852f2efb50d5a77c528a35b3a5c91e0aa5c8829cb51c1b20f1a22fe663
@@ -135,16 +120,6 @@ findings:
     sha256: 7b408acb2234656d86200e8d94ba6a5d18443163aa785d7e7f57bfa59fa638f5
     verdict: correct
     note: LLM (large language model) is never expanded and is not on the common-acronym list
-  - rule: expletive-construction
-    line: 181
-    sha256: 2b5e5f3923f8fbf40222864cd190ba534f8e62358c2bb0918405f9005f44bc61
-    verdict: false-positive
-    note: a speaker's own phrasing in near-verbatim minutes; the note-taker records it as said, and the count runs over every speaker
-  - rule: expletive-construction
-    line: 187
-    sha256: 3aedeb7dbfb290256c769add7c836a2b4332846c23169aaa6ab190a7402d8694
-    verdict: false-positive
-    note: a speaker's own phrasing in near-verbatim minutes; the note-taker records it as said, and the count runs over every speaker
   - rule: max-paragraph-length
     line: 187
     sha256: 3ec86ea15464f2a8c309ce94b308f2ffa8e132402810b33c89f82b830b585284

@@ -61,16 +61,6 @@ findings:
     text: RNAを遺伝子として持っています。ノロウイルスには多くの遺伝子の型があること、ま
     message: 「RNA」が説明なしで使われています（説明のない略語 5 個）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 65
-    text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
-    message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 93
-    text: ここでは、感染症発生動向調査に基づき調査が実施されている『ノロウイルスが原因の一
-    message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
-    verdict: unjudged
   - rule: no-mixed-desumasu
     line: 102
     text: 資料：報告数は「感染症発生動向調査事業」に基づく全国約3,000の小児科医療機関
@@ -80,11 +70,6 @@ findings:
     line: 105
     text: 参考：人口動態統計とは出生、死亡、婚姻等に関する統計であり、死亡については、死亡
     message: この文だけ他と文末の調子が違います（本文の中で 3 文）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 107
-    text: 過去10年の定点当たり報告数の週別推移（感染症発生動向調査（IDWR））
-    message: 「感染症発生動向調査」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 113
@@ -155,11 +140,6 @@ findings:
     line: 175
     text: 二枚貝は大量の海水を取り込み、プランクトンなどのエサを体内に残し、出水管から排水
     message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 183
-    text: 感染経路別ノロウイルス感染集団発生の推移（病原微生物検出情報（IASR））
-    message: 「病原微生物検出情報」は漢字が 9 字続いています（8 字まで）
     verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 189
@@ -335,11 +315,6 @@ findings:
     line: 299
     text: 下さい。
     message: 「下さる」と書いています（この文書はふつう「くださる」と書く語です。12 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 312
-    text: 上間　匡　　先生（国立医薬品食品衛生研究所食品衛生管理部第四室長＊＊＊＊＊）
-    message: 「国立医薬品食品衛生研究所食品衛生管理部第四室長」は漢字が 23 字続いています（8 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 312

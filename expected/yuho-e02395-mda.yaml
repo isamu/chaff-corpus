@@ -38,12 +38,6 @@ findings:
     verdict: unjudged
   - rule: max-sentence-length
     line: 1
-    text: 当連結会計年度における現金及び現金同等物（以下「資金」という。)は、前連結会計年
-    message: この文は 145 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a full-width opening bracket closed by a half-width one leaves the count open past the full stop; the sentence alone is under the limit
-  - rule: max-sentence-length
-    line: 1
     text: 減損の兆候の把握、減損損失の認識及び測定を行うにあたっては、過年度の実績や事業計
     message: この文は 159 文字あります（140 文字まで）
     verdict: unjudged
@@ -104,12 +98,6 @@ findings:
     message: 「は」で出した主題から述語まで 129 字あります（80 字まで）
     verdict: correct
     note: the topic (は) carries to the final predicate of the sentence, past the limit
-  - rule: topic-predicate-distance
-    line: 1
-    text: 当連結会計年度における現金及び現金同等物（以下「資金」という。)は、前連結会計年
-    message: 「は」で出した主題から述語まで 110 字あります（80 字まで）
-    verdict: false-positive
-    note: a full-width opening bracket closed by a half-width one shifts the count; the topic gets its predicate within the limit
   - rule: topic-predicate-distance
     line: 1
     text: 流動資産1,315百万円の減少は主に、原材料及び貯蔵品407百万円が増加した一方

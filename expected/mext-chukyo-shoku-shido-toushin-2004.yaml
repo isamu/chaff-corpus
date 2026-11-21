@@ -265,12 +265,6 @@ findings:
     message: 「は」で出した主題から述語まで 163 字あります（80 字まで）
     verdict: correct
     note: the same topic carries to the final predicate; the count to the sentence end stands
-  - rule: max-kanji-continuous
-    line: 117
-    text: 免許状取得のための基礎資格としては，大学における教員養成の基本原則を踏まえ，専修
-    message: 「大学院修士課程修了程度」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: a fixed qualification term (大学院修士課程修了) plus 程度 in a bracketed gloss; the kanji run cannot reasonably be split
   - rule: kutoten-consistency
     line: 122
     text: 、一種免許状を取得するための基礎資格としては，栄養士の免許に加えて管理栄養士免許

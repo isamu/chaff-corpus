@@ -86,11 +86,6 @@ findings:
     text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
     message: この文は 166 文字あります（100 文字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 12
-    text: この会はいつごろから始まって今日まで続いているのか存じませんが、そのつどあなたが
-    message: 「は」で出した主題から述語まで 159 字あります（80 字まで）
-    verdict: unjudged
   - rule: clause-chain
     line: 13
     text: ――昔しあるお大名が二人目黒辺へ鷹狩に行って、所々方々を馳け廻った末、大変空腹に
@@ -687,11 +682,6 @@ findings:
     line: 59
     text: 私は意見の相違はいかに親しい間柄でもどうする事もできないと思っていましたから、私
     message: この文は 112 文字あります（100 文字まで）
-    verdict: unjudged
-  - rule: no-doubled-joshi
-    line: 59
-    text: の人間の団隊のようにも考えました。しかしそう考えた私はついに一種の淋しさを脱却す
-    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
   - rule: orthographic-variant
     line: 59

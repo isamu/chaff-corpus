@@ -11,18 +11,6 @@ findings:
     text: たり、今後のスケジュールについて、教えていただけますでしょうか。
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 32
-    text: （答）今般の協議の内容の詳細については外交上のやり取りなので、つまびらかにするこ
-    message: 「は」で出した主題から述語まで 96 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's predicate (差し控えたい) closes the clause before が; the rest of the sentence is a new clause
-  - rule: topic-predicate-distance
-    line: 34
-    text: ただ、米国の関税措置に関する日米協議の今後の対応についても、具体的な検討状況をつ
-    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: false-positive
-    note: the は-phrase's predicate (差し控えます) closes the clause before が; the rest is a new clause
   - rule: fullwidth-alnum-consistency
     line: 37
     text: USスチールの買収計画について、「アメリカによって支配されることになるだろう」と
@@ -43,12 +31,6 @@ findings:
     text: SNSで担当交渉者として直接指名のあった人物でありますので、必ず次回はお目にかか
     message: 半角の「SNS」と書いています（この文書はふつう全角の「ＳＮＳ」。23 箇所のうち 7 箇所が違う）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 53
-    text: ３回目の今回、ベッセント財務長官はご都合によりお会いできませんでしたが、私自身は
-    message: 「は」で出した主題から述語まで 88 字あります（80 字まで）
-    verdict: false-positive
-    note: the first topic's predicate closes before が and a new topic (私自身は) takes the rest; the count runs across the change
   - rule: fullwidth-alnum-consistency
     line: 55
     text: F47を披露していたという一部の報道がありました。まずは電話会談の事実関係と、大
