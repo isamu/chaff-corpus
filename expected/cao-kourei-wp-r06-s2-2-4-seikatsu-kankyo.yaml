@@ -34,9 +34,9 @@ findings:
   - rule: max-kanji-continuous
     line: 23
     text: 良質な持家の取得・改善を促進するため、勤労者財産形成住宅貯蓄の普及促進等を図ると
-    message: 「独立行政法人勤労者退職金共済機構等」は漢字が 17 字続いています（10 字まで）
+    message: 「勤労者財産形成住宅貯蓄」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: 法人格と法人の名前に「等」が付いたもの
+    note: "chaff は今「勤労者財産形成住宅貯蓄」を指す。法律で定めた貯蓄制度の名前で、分けられない"
   - rule: nominalization
     line: 23
     text: 融資を行っている。

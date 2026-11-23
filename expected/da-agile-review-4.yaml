@@ -40,6 +40,6 @@ findings:
   - rule: orthographic-variant
     line: 71
     text: 引き継ぐことはない。
-    message: 「引き継ぐ」と書いています（この文書はふつう「引継ぐ」と書く語です。4 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the verb 引き継ぐ beside the noun 引継ぎ; official style gives the noun and the verb different okurigana, so they are not variants
+    message: 「引き継ぐ」と書いています（この文書はふつう「引継ぐ」と書く語です。3 箇所のうち 1 箇所が違う）
+    verdict: correct
+    note: "chaff now compares the verb only with the document's other verbs: 引継ぐ twice on line 79, 引き継ぐ here, so the verb is written two ways"
