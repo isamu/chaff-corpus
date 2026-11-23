@@ -7,12 +7,6 @@ findings:
     message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width parentheses in a page that otherwise uses half-width ones
-  - rule: bracket-width-consistency
-    line: 26
-    text: ）。
-    message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: full-width parentheses in a page that otherwise uses half-width ones
   - rule: doubled-word
     line: 28
     text: のことを想像してみてください。

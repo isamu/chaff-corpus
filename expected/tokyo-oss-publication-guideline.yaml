@@ -6,11 +6,6 @@ findings:
     text: (デジタル・トランスフォーメーション)の推進を梃子として、都政のQOSを向上させ
     message: 括弧を「(」と書いています（この文書はふつう「（」。72 箇所のうち 6 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 15
-    text: )の推進を梃子として、都政のQOSを向上させることで、都民のQOL（クオリティ・
-    message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
-    verdict: correct
   - rule: orthographic-variant
     line: 17
     text: 行くこととしている。（OSSとは、機械ではなく人間にとって解釈や編集がしやすい形

@@ -80,7 +80,8 @@ findings:
     line: 49
     text: return Products covered by the warranty
     message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: false-positive
+    note: "a step the customer takes to claim its own warranty remedy: not returning only forgoes the repair, so no deadline is owed"
   - rule: requirement-smell
     line: 49
     text: and/or with Products not covered under t
@@ -100,7 +101,8 @@ findings:
     line: 59
     text: notify Contractor, from time to time, qu
     message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
-    verdict: unjudged
+    verdict: correct
+    note: shipping instructions given from time to time with no lead time before delivery
   - rule: undefined-acronym
     line: 59
     text: QA/QC certificate). Upon delivery to Cus

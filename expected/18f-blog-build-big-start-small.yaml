@@ -65,7 +65,8 @@ findings:
     line: 156
     text: There can be a separate microservice res
     message: '"There can be ..." is one of 6 sentences that open with "There is" or "It is ... that" (limit 3)'
-    verdict: unjudged
+    verdict: correct
+    note: '"There can be a separate microservice responsible" (a separate microservice can be responsible); six such openers in the post'
   - rule: max-paragraph-length
     line: 173
     text: In the world of software development, we

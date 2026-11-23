@@ -46,8 +46,3 @@ findings:
     text: (必ず連絡がつく情報を記載)
     message: 括弧を「(」と書いています（この文書はふつう「（」。24 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 200
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。24 箇所のうち 2 箇所が違う）
-    verdict: correct

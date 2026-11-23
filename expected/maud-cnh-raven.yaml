@@ -350,7 +350,8 @@ findings:
   - rule: requirement-smell
     line: 1054
     sha256: 5b67dc2ff8e5a3f6c41b50e1e8bdec3a56b310866509785e5b33ad1433e3fac4
-    verdict: unjudged
+    verdict: correct
+    note: an as-promptly-as-possible promise with no measure of when it is met
   - rule: vague-deadline
     line: 1054
     sha256: 6f4f95aa03efb289610226abdaa9e9ffde43c3000808f9095189e7c5aa33ba92

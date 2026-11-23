@@ -56,7 +56,8 @@ findings:
   - rule: expletive-construction
     line: 125
     sha256: 3f33c6f037d0ef27803c36b89ef2b526e8b2a769606d8407fd2ca8165a122cd8
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a future be announcing expenses; the expenses can be the subject
   - rule: undefined-acronym
     line: 137
     sha256: e730459718311a8584901882ab41b67a96f36019ff22c358da390cdb871f9f95
@@ -641,7 +642,8 @@ findings:
   - rule: expletive-construction
     line: 2288
     sha256: 382bd43b7be73826c6d74c16afe37e97bd6395b891f1b62dc361071a0b214325
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting a fall in mail traffic; the traffic can be the subject
   - rule: sentence-spacing-consistency
     line: 2289
     sha256: e4d0ae2c95f8b50e040223f581d68ccd49d02e71464d9f199f3063fa5833709d
@@ -697,7 +699,8 @@ findings:
   - rule: expletive-construction
     line: 2611
     sha256: 7f54cceb230abbe2e8d07cf3a78e0ec2620e593739f70d7406305c88a4641a24
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting low activity; the activity can be the subject
   - rule: date-order
     line: 2634
     sha256: ea0cf68351d56fce4e3821f602403aca14b39348f55b23d870e36f4233c2d91c
@@ -753,7 +756,8 @@ findings:
   - rule: expletive-construction
     line: 2790
     sha256: e8b7046d0a373f28745da72663a8b35aa4305a06986f71eecc0e80a4a0a9bf57
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener on a commit count, where the next bullet states its count directly
   - rule: orthographic-variant
     line: 2831
     sha256: 0f1ecc14f92f7a35b233c79ff3ab20c8aade3a2e6161835529587ec208b13809
@@ -1038,7 +1042,8 @@ findings:
   - rule: expletive-construction
     line: 4583
     sha256: 2dfb775eb85340935631d8d4963f596dadd2a56b7e2ebe9fcd3d169d2186b633
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be; the community can be the subject
   - rule: undefined-acronym
     line: 4592
     sha256: 64b1591cde048d6e8500774b378a29f84660c542cbfe4fb22604b855c7ca4456
@@ -1062,7 +1067,8 @@ findings:
   - rule: expletive-construction
     line: 4672
     sha256: 2511ee18a9341d74fccb12ac78df5b66746266c593dc9fd797e195ebc4ef3e11
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting no activity; can be said directly
   - rule: expletive-construction
     line: 4677
     sha256: f469167fd06749c99872bec76b3b5623ec63f7a8952687cd0fd50e190d97c973
@@ -1354,7 +1360,8 @@ findings:
   - rule: expletive-construction
     line: 5380
     sha256: b341929315d18593542426480681fd81d6a872064e5b04ae6df2870365b382a0
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting no releases; can be said directly
   - rule: number-style-consistency
     line: 5410
     sha256: 8dcc404c04884fecff4237ccd47bb740f020b3e1f53538e296da0b39a2ef1c1d
@@ -1362,7 +1369,8 @@ findings:
   - rule: expletive-construction
     line: 5461
     sha256: 78238e823b91e35409700c2be25fd0b4dd742931ed6c23fa937163291e98c08a
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting low activity; the activity can be the subject
   - rule: sentence-spacing-consistency
     line: 5461
     sha256: 1c5c78960ef42107d82f8a17610530f68ccc81529533153e288c13eee056d71c

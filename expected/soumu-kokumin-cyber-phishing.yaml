@@ -13,12 +13,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width brackets where the page writes full-width ones
-  - rule: bracket-width-consistency
-    line: 23
-    text: ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。14 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: half-width brackets where the page writes full-width ones
   - rule: latin-spacing
     line: 23
     text: " にしたりして、閲覧者が見間違えるのを待ちます。"

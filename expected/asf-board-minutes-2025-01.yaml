@@ -181,7 +181,8 @@ findings:
   - rule: expletive-construction
     line: 1016
     sha256: dc609bb02017a1585bbd1e5f6a37a1391ae98c63dec1436c8339628b3bedaeb6
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting inquiries; can be said directly
   - rule: expletive-construction
     line: 1017
     sha256: 6fb98f5954f0a74896d500bf4d9e47642453277080047c37315e1e8ee8004541
@@ -813,7 +814,8 @@ findings:
   - rule: expletive-construction
     line: 3639
     sha256: 20b30a2ee3c0533ee66ec87f9185268dc0ab9934d067068b03265a64d5a71d33
-    verdict: unjudged
+    verdict: correct
+    note: an empty there-opener with a future be announcing a resolution; the resolution can be the subject
   - rule: name-variant
     line: 3687
     sha256: 384b58475250a0c4e3c3a1aafda47830a99c7708c6929ad04923399de0732119

@@ -92,11 +92,6 @@ findings:
     text: (１ヵ月以内)
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 166
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
   - rule: orthographic-variant
     line: 178
     text: カ月以上の期間ごとに区分する場合は、最初の期間における労働日その他所定の事項を明
@@ -485,11 +480,6 @@ findings:
     text: (わいせつ)な行為を行ったり、猥褻図画の配布掲示など職場の環境を悪くすること。
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 379
-    text: )な行為を行ったり、猥褻図画の配布掲示など職場の環境を悪くすること。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
   - rule: tari-unpaired
     line: 379
     text: たり、猥褻図画の配布掲示など職場の環境を悪くすること。
@@ -516,16 +506,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 411
-    text: )し戒(いまし)める
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 411
-    text: )める
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 413
     text: (けん)　　責(せき)    始末書をとり将来を戒める
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
@@ -534,16 +514,6 @@ findings:
     line: 413
     text: (せき)    始末書をとり将来を戒める
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 413
-    text: )    始末書をとり将来を戒める
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 413
-    text: )　　責(せき)    始末書をとり将来を戒める
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
     verdict: correct
   - rule: orthographic-variant
     line: 414
@@ -559,16 +529,6 @@ findings:
     line: 418
     text: (ゆし)退職(たいしょく)    諭旨に基づき退職願いを提出させるが、これに応じ
     message: 括弧を「(」と書いています（この文書はふつう「（」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 418
-    text: )    諭旨に基づき退職願いを提出させるが、これに応じないときは解雇とする
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 418
-    text: )退職(たいしょく)    諭旨に基づき退職願いを提出させるが、これに応じないと
-    message: 括弧を「)」と書いています（この文書はふつう「）」。291 箇所のうち 16 箇所が違う）
     verdict: correct
   - rule: orthographic-variant
     line: 424

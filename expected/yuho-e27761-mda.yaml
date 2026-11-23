@@ -45,7 +45,8 @@ findings:
     line: 1
     text: これは、主に現金及び預金が24億97百万円（前事業年度末は14億54百万円）に増
     message: 「ものであります。」が 10 回出てきます（5 回まで）
-    verdict: unjudged
+    verdict: correct
+    note: 「ものであります。」が 10 回
   - rule: topic-predicate-distance
     line: 1
     text: これは、主に短期借入金の純減額１億20百万円（前事業年度は20億円）、長期借入金

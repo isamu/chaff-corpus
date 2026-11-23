@@ -7,11 +7,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 31
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 37
     text: (様式1【監査委員監査】・様式2【外部監査人による監査】)
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
@@ -25,11 +20,6 @@ findings:
     line: 133
     text: (1)違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 6 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 133
-    text: )違法又は不当な財務会計上の行為については、各々の行為があった日又は終わった日か
-    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
     line: 137

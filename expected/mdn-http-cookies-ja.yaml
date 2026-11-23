@@ -35,12 +35,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。37 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width parentheses in prose that mostly uses full-width ones
-  - rule: bracket-width-consistency
-    line: 39
-    text: ) を確認するには、Firefox 開発ツールの[ストレージインスペクター](h
-    message: 括弧を「)」と書いています（この文書はふつう「）」。37 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: half-width parentheses in prose that mostly uses full-width ones
   - rule: latin-spacing
     line: 93
     text: Cookieも含めて、再生成して再送信する必要があります。この手法は、サードパー

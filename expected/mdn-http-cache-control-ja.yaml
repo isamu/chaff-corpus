@@ -13,12 +13,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
     verdict: correct
     note: half-width parentheses in prose that mostly uses full-width ones
-  - rule: bracket-width-consistency
-    line: 121
-    text: )。しかし、これは共有キャッシュ特有のもので、共有キャッシュは `s-maxag
-    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
-    verdict: correct
-    note: half-width parentheses in prose that mostly uses full-width ones
   - rule: ngram-repetition
     line: 141
     text: 前方/後方キャッシュ ({{Glossary('bfcache')}}) が使用
@@ -31,19 +25,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 143
-    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
-    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 161
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 161
-    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
-    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
     verdict: correct
   - rule: topic-predicate-distance
     line: 235
@@ -60,11 +44,6 @@ findings:
     line: 319
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 319
-    text: )</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪問した
-    message: 括弧を「)」と書いています（この文書はふつう「）」。59 箇所のうち 9 箇所が違う）
     verdict: correct
   - rule: broken-link
     line: 361

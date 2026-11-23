@@ -13,12 +13,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。4 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width (@マークより前) while the page's other parentheses are full-width
-  - rule: bracket-width-consistency
-    line: 16
-    text: )に利用可能な文字は以下の通りです。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。4 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: half-width (@マークより前) while the page's other parentheses are full-width
   - rule: bracket-nesting
     line: 17
     text: 「半角英数字」、「-（ハイフン）」、「.（ピリオド」）、「_（アンダーバー）」
