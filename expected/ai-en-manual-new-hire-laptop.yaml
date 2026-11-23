@@ -1,12 +1,6 @@
 id: ai-en-manual-new-hire-laptop
 chaff: 0.49.0
 findings:
-  - rule: homophone-slip
-    line: 15
-    text: Sign in with the username and temporary
-    message: '"your welcome" has one homophone typed for another'
-    verdict: false-positive
-    note: "\"your welcome email\" is a possessive and a compound noun, not \"you're welcome\""
   - rule: test:invented-detail
     line: 15
     what: the 14-character password rule, the Fernwood-Staff network (13), myaccount.fernwood.example (24), the Fernwood-Print queue (54) — not in the request
