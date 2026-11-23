@@ -1,0 +1,26 @@
+id: ai-ja-manual-store-closing
+chaff: 0.49.0
+findings:
+  - rule: number-style-consistency
+    line: 14
+    text: 十円玉など）を翌日分に残します。
+    message: 数え方の数を「十円」と書いています（この文書はふつう「2名」の書き方。7 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: 十円玉 is the coin's name, not a count written in kanji
+  - rule: test:invented-detail
+    line: 14
+    what: 釣り銭の内訳（千円札5枚・百円玉30枚・十円玉などで1万円、合わない）、作業時間45分（3行）、油の交換日（月・木、26行）— メモにない
+    verdict: missed
+    note: "catalog B01 (invented detail): 数字と曜日をメモにないまま決め、内訳は合計も合わない"
+  - rule: unrendered-emphasis
+    line: 15
+    text: "**1円でも合わない場合は、もう一度2人で数え直してください。**それでも合わな"
+    message: 「**」が太字にならず、そのまま表示されます
+    verdict: correct
+    note: the closing ** sits after 。 and before a kana, so CommonMark does not close the bold and the stars show
+  - rule: unrendered-emphasis
+    line: 15
+    text: "**それでも合わない場合は、差額を金種表に書き、責任者に連絡します。自分たちで埋"
+    message: 「**」が太字にならず、そのまま表示されます
+    verdict: correct
+    note: the same span seen from its closing **; one slip, reported at both ends

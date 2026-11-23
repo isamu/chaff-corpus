@@ -1,0 +1,16 @@
+id: ai-ja-owned-rental-checklist
+title: 不動産会社コラム：内見のチェックポイント
+language: ja
+genre: blog/owned-media
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: 不動産会社のオウンドメディアに載せる、賃貸物件の内見でチェックすべきポイントの記事を書いてください。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 7778e15a74c919a189f0a2c451b0727c1ec4246a9dc4c715c5b5e4286ad9a83f
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

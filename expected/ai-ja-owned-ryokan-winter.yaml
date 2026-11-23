@@ -1,0 +1,19 @@
+id: ai-ja-owned-ryokan-winter
+chaff: 0.49.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 19% しかありません（35% 以上ほしい）
+    verdict: correct
+    note: four sections of two short paragraphs each; the tidy outline under a casual voice
+  - rule: test:invented-detail
+    line: 19
+    what: 近所の佐々木さんのきのこ、朝7時のおすすめ（13行）、ゴム草履（15行）、まつりが第2土曜で徒歩5分、長靴とカイロの貸し出し（31行）— 依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): 実在しうる近所の人の名前と宿のサービスを作って載せている"
+  - rule: test:moral-ending
+    line: 35
+    what: 「寒い季節ですが、そのぶん温泉のありがたみがいちばんわかる季節でもあります」と冬を裏返す一文で締める
+    verdict: missed
+    note: catalog B02 (neat turn at the close)

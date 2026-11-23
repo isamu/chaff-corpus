@@ -1,0 +1,16 @@
+id: ai-ja-owned-dental-floss
+title: 歯科医院ブログ：フロスと歯間ブラシ
+language: ja
+genre: blog/owned-media
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: 歯科医院のホームページのブログ記事を書いてください。テーマはデンタルフロスと歯間ブラシの使い分け。読者は通院中の患者さんで、40〜60代が中心です。歯科衛生士の中野が書いている体で、1500字くらい。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: decc47fe0bca0ae571b3a71cac15b7660885d65fa8426b6d9dd34f7e8478b645
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a request naming the audience and the length (style: audience-length). The text is the document part of the reply, without the assistant's lead-in or closing line."

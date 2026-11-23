@@ -1,0 +1,43 @@
+id: ai-ja-owned-dental-floss
+chaff: 0.49.0
+findings:
+  - rule: sentence-rhythm
+    line: 3
+    text: こんにちは。さくら歯科クリニック 歯科衛生士の中野です。
+    message: 文の長さのばらつきが 33%（36% 以上ほしい）
+    verdict: correct
+    note: measured sentences of one length from the greeting to the close (catalog J13)
+  - rule: weasel-word
+    line: 5
+    text: 実は、歯ブラシだけで落とせる汚れは、全体の6割ほどといわれています。残りの汚れの
+    message: 「といわれている」は、誰が言ったのかを言っていません
+    verdict: correct
+    note: "6割ほどといわれています: a figure with no one to credit it, which opens the post"
+  - rule: no-doubled-joshi
+    line: 33
+    text: の間のすき間の大きさは、場所によっても違います。前歯はフロス、奥歯は歯間ブラシ、
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "歯の間のすき間の大きさ: three の in a row; 歯間のすき間の大きさ reads better. Minor"
+  - rule: ai-generated-composite
+    line: 35
+    text: ご自分に合うものやサイズがわからない場合は、定期健診のときにお気軽にお声がけくだ
+    message: 「sentence-rhythm、closing-cliche」が同じ文書にそろっています（2 種、2 種から）
+    verdict: correct
+    note: the even rhythm and the stock send-off together read as generated
+  - rule: closing-cliche
+    line: 35
+    text: ご自分に合うものやサイズがわからない場合は、定期健診のときにお気軽にお声がけくだ
+    message: 「気軽に」で締めています
+    verdict: correct
+    note: "お気軽にお声がけください: the stock feel-free send-off before the last paragraph"
+  - rule: closing-cliche
+    line: 37
+    what: 「できるところから、ぜひ始めてみてくださいね。」で締める
+    verdict: missed
+    note: "catalog J26 (closing exhortation): ぜひ〜てみてくださいね in the last line is not reported, while ぜひ試してみてくださいね in ai-ja-owned-bakery-column is"
+  - rule: test:moral-ending
+    line: 37
+    what: 「ほんの1〜2分プラスするだけで、お口の健康は大きく変わります」と教訓でまとめて締める
+    verdict: missed
+    note: catalog B02 (lesson-and-moral close)

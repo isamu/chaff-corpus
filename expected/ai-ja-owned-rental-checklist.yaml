@@ -1,0 +1,55 @@
+id: ai-ja-owned-rental-checklist
+chaff: 0.49.0
+findings:
+  - rule: paragraph-length-variance
+    line: 3
+    text: 新生活に向けて部屋探しを始めると、間取り図や写真だけではわからないことがたくさん
+    message: 段落の長さのばらつきが 22% しかありません（30% 以上ほしい）
+    verdict: correct
+    note: every point is one paragraph of the same size; the mould of a generated listicle
+  - rule: sentence-rhythm
+    line: 3
+    text: 新生活に向けて部屋探しを始めると、間取り図や写真だけではわからないことがたくさん
+    message: 文の長さのばらつきが 30%（36% 以上ほしい）
+    verdict: correct
+    note: sentences of one length from start to end (catalog J13)
+  - rule: vague-word-density
+    line: 3
+    text: せっかく気に入って契約したのに、「住んでみたら思っていたのと違った」ということに
+    message: 「しっかりと」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+    note: しっかりと repeated (lines 3, 31, 63) with 随時; filler that says nothing, and しっかり is a known generated habit
+  - rule: ai-tell
+    line: 19
+    what: 「意外と見落としがちなのが」
+    verdict: missed
+    note: "candidate phrase: 意外と見落としがち, the stock lead-in of a generated tips article"
+  - rule: test:empty-conclusion
+    line: 63
+    what: 「まとめ」が「大切な機会です」「10のポイントを参考に」と本文を言い直すだけ
+    verdict: missed
+    note: an empty closing section
+  - rule: vague-word-density
+    line: 63
+    text: 今回ご紹介した10のポイントを参考に、気になるところはしっかりと確認し、納得のい
+    message: 「しっかりと」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+    note: しっかりと again in the summary; part of the same pile
+  - rule: ai-generated-composite
+    line: 65
+    text: 気になる物件がございましたら、お気軽にお問い合わせください。
+    message: 「sentence-rhythm、closing-cliche」が同じ文書にそろっています（2 種、2 種から）
+    verdict: correct
+    note: the even rhythm and the stock closing together read as generated
+  - rule: closing-cliche
+    line: 65
+    text: 気になる物件がございましたら、お気軽にお問い合わせください。
+    message: 「気軽に」で締めています
+    verdict: correct
+    note: お気軽にお問い合わせください closes the column; common on agents' sites too, but stock
+  - rule: vague-word-density
+    line: 65
+    text: 当社では、内見のご予約を随時受け付けております。気になる物件がございましたら、お
+    message: 「随時」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
+    verdict: correct
+    note: 随時 in the closing pitch; part of the same pile

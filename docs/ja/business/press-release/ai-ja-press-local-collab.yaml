@@ -1,0 +1,27 @@
+id: ai-ja-press-local-collab
+title: プレスリリース：農業高校との共同開発菓子
+language: ja
+genre: business/press-release
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: |-
+    以下の内容でプレスリリースを作ってください。
+
+    ・やまぶき製菓（松本市、代表 山吹達也）
+    ・県立青葉農業高校 食品科学科と共同開発
+    ・「青葉りんごのバターサンド」、高校の果樹園のシナノスイートのジャム
+    ・1個280円、5個入り1,450円（税込）
+    ・12/5（土）発売、直営3店舗＋オンライン、限定3,000個
+    ・2年生12名、4月から7か月、試作20回以上、砂糖を3割減らした
+    ・パッケージは生徒のイラスト
+    ・発売日に本店で生徒の販売会
+    ・売上の一部を学校に寄付
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: a539f3ec6dcbfd5a293ae5db5be76d289de1681c24eb401c3a8ebc0742d2e397
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

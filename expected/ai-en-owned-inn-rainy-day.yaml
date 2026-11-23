@@ -1,0 +1,46 @@
+id: ai-en-owned-inn-rainy-day
+chaff: 0.49.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 19% (want at least 35%)
+    verdict: correct
+    note: one stop per section, each one paragraph of the same size; a tidy outline for a casual post
+  - rule: announcing-opener
+    line: 3
+    what: '"Good news: rainy days are some of our favorite days in town."'
+    verdict: missed
+    note: catalog E33 (The good news is)
+  - rule: honesty-marker
+    line: 3
+    what: "\"Let's be honest: it rains here.\""
+    verdict: missed
+    note: the candour marker opening the post; the second one on line 7 is reported, this one is not
+  - rule: ai-generated-composite
+    line: 7
+    text: Honestly, there are worse ways to spend
+    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
+    verdict: correct
+    note: the honesty marker and the even sections together read as generated
+  - rule: honesty-marker
+    line: 7
+    text: Honestly, there are worse ways to spend
+    message: '"honestly" flags this sentence as candid'
+    verdict: correct
+    note: "\"Honestly,\": the candour marker generated text adds to sound casual; the second in the post after \"Let's be honest\" (line 3)"
+  - rule: test:invented-detail
+    line: 7
+    what: the cardamom buns selling out by ten, the bookshop owner Ruth (11), the lifeboat (15), the Gull & Anchor and its chowder (19), loaner raincoats (23), board games and cider (27) — not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): names and services the inn never gave, published on its site"
+  - rule: cliche
+    line: 15
+    what: '"it punches way above its weight"'
+    verdict: missed
+    note: a worn phrase the cliche list does not hold
+  - rule: test:moral-ending
+    line: 29
+    what: "\"Pack a raincoat, bring a good book, and let Harbor Bay show you its cozy side. We'll keep the fire going.\" returns to the fire (line 27) for the last line"
+    verdict: missed
+    note: catalog B02 (neat callback ending)

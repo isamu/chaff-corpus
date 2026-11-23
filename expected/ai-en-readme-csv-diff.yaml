@@ -1,0 +1,19 @@
+id: ai-en-readme-csv-diff
+chaff: 0.49.0
+findings:
+  - rule: code-fence-language-mix
+    line: 7
+    text: "```"
+    message: This code block names no language, unlike the others (9 blocks name one)
+    verdict: false-positive
+    note: a sample of terminal output, which has no language to name; the code blocks that name one are commands
+  - rule: test:invented-detail
+    line: 21
+    what: '"tested with files of several million rows", --allow-duplicates and the duplicate-key behaviour (128) — the request named only the tool and its purpose'
+    verdict: missed
+    note: "catalog B01 (invented detail): features and a test claim the tool may not have"
+  - rule: unfilled-placeholder
+    line: 113
+    what: "\"https://github.com/your-username/csvdelta.git\": the template's user name left in the clone URL"
+    verdict: missed
+    note: a your-username blank in a URL, left for the user to fill

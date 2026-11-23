@@ -1,0 +1,24 @@
+id: ai-en-faq-coworking
+chaff: 0.49.0
+findings:
+  - rule: bold-label-list
+    line: 9
+    what: '"- **Day Pass** – Access to …" (three items)'
+    verdict: missed
+    note: catalog E18 (bold labels, en)
+  - rule: test:invented-detail
+    line: 9
+    what: every price, hour and rule (three memberships, $25 and $40 room rates, the dog-friendly Friday, 50 lbs package limit) — the request gave none
+    verdict: missed
+    note: "catalog B01 (invented detail): a whole price list and house rules the user never gave, published as fact"
+  - rule: undefined-acronym
+    line: 64
+    text: HDMI and USB-C connections, a whiteboard
+    message: '"HDMI" is used without an expansion (1 such acronym)'
+    verdict: false-positive
+    note: HDMI is the name of a connector everyone knows from the plug; spelling it out would be odd
+  - rule: unfilled-placeholder
+    line: 88
+    what: '"hello@[yourcoworkingspace].com": a template blank inside an email address'
+    verdict: missed
+    note: a bracketed blank glued inside an address is not reported, while a free-standing [Name] is

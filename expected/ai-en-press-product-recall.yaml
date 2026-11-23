@@ -1,0 +1,20 @@
+id: ai-en-press-product-recall
+chaff: 0.49.0
+findings:
+  - rule: heading-level-skip
+    line: 9
+    text: "### Recalled Product"
+    message: Heading "Recalled Product" goes from level 1 to level 3 (expected 2)
+    verdict: correct
+    note: the title is level 1 and the section headings jump to level 3
+  - rule: bold-emphasis
+    line: 11
+    text: The affected cables have the date code *
+    message: "4 bold spans of emphasis: 10.8 per 1000 words (limit 4)"
+    verdict: false-positive
+    note: a recall notice bolds the date codes to check and the instruction to stop using the cable; the emphasis carries the safety action
+  - rule: test:invented-detail
+    line: 32
+    what: cooperation with the CPSC and Health Canada, two reports of port damage (21), the $129 price (17), the President's quote (30), the helpline hours (26) — not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): a regulatory statement and a quote a recall notice would publish as fact"

@@ -1,0 +1,31 @@
+id: ai-ja-readme-pdf-merge
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 10
+    what: しおりの自動作成、ページ範囲指定（53行）、数値順の並べ替え（49行）、--sort・--password — 依頼は「PDFを結合する」だけ
+    verdict: missed
+    note: "catalog B01 (invented detail): ツールにない機能を書いている可能性がある"
+  - rule: latin-spacing
+    line: 11
+    text: " に対応"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: a space before に対応 where the README otherwise writes Japanese and Latin together; a minority of three
+  - rule: latin-spacing
+    line: 15
+    text: " 以上"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: a space before 以上; part of the same minority
+  - rule: unfilled-placeholder
+    line: 26
+    what: 「https://github.com/yourname/pdfmerge-cli.git」の yourname がそのまま
+    verdict: missed
+    note: a yourname blank in a URL, left for the user to fill
+  - rule: latin-spacing
+    line: 86
+    text: " からお願いします。プルリクエストも歓迎します。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 3 箇所が違う）
+    verdict: correct
+    note: a space before から; part of the same minority

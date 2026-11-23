@@ -1,0 +1,20 @@
+id: ai-ja-readme-shift-scheduler
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 5
+    what: 作った経緯（店長がスプレッドシートと格闘）、処理時間「数秒〜数十秒」（63行）、「3枠以上にも一応対応」（90行）— メモにない
+    verdict: missed
+    note: "catalog B01 (invented detail): 経緯と性能と対応範囲をメモにないまま書いている"
+  - rule: list-item-form-mix
+    line: 14
+    text: 結果をExcel（.xlsx）で出力。そのまま印刷して掲示できます
+    message: 「結果をExcel（.xlsx）で出力。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
+    verdict: correct
+    note: one item ends in a sentence (印刷して掲示できます) in a list of noun-ending items
+  - rule: code-fence-language-mix
+    line: 81
+    text: "```"
+    message: このコードブロックだけ言語名がありません（言語名のあるブロック 5 個）
+    verdict: false-positive
+    note: a sample of the tool's output, which has no language to name

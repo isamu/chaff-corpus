@@ -1,0 +1,14 @@
+id: ai-ja-faq-cram-school
+chaff: 0.49.0
+findings:
+  - rule: heading-end-punctuation-mix
+    line: 7
+    text: "## Q2. 対象の学年を教えてください。"
+    message: 見出し「Q2. 対象の学年を教えてください。」だけ「。」で終わっています（ほかの見出しは「Q1. どのような授業形式ですか？」など 8 個が「：」「。」なしで終わる）
+    verdict: correct
+    note: one question heading ends in 。 (教えてください。) where the others end in ？
+  - rule: test:invented-detail
+    line: 23
+    what: 教材費（年間約8,000円）、きょうだいの入塾金無料、自習室の開室時間（37行以降）、面談の月（4月・7月・12月）— メモにない
+    verdict: missed
+    note: "catalog B01 (invented detail): 料金と制度をメモにないまま書き足している"

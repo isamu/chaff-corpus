@@ -1,0 +1,8 @@
+id: ai-en-faq-meal-kit
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 5
+    what: '"Most recipes take 30 to 40 minutes", ice packs that keep food cold "for up to 8 hours" (17), the gel-emptying advice (41) — not in the notes'
+    verdict: missed
+    note: "catalog B01 (invented detail): product claims a customer would rely on"

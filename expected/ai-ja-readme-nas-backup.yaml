@@ -1,0 +1,32 @@
+id: ai-ja-readme-nas-backup
+chaff: 0.49.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: 節の長さのばらつきが 33% しかありません（35% 以上ほしい）
+    verdict: false-positive
+    note: "33%: the sections differ in kind (steps, a restore how-to, two short notes); a reader does not notice evenness"
+  - rule: test:invented-detail
+    line: 19
+    what: NASの管理画面のアドレス（192.168.1.10:5000）、各パス、ログ90日・クラウドのゴミ箱30日、HDDが5年目（65行）— 依頼にない。3行目で書き手が引き継ぐ側なのに、67行目で「前任の情シス担当に聞いて」と書く
+    verdict: missed
+    note: "catalog B01 (invented detail): 後任が頼りにする場所と数字を作り、書き手の立場も食い違っている"
+  - rule: latin-spacing
+    line: 37
+    text: " root で実行するタスクを作ります。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: spaces around root where the README otherwise writes Latin words against Japanese
+  - rule: latin-spacing
+    line: 37
+    text: " で実行するタスクを作ります。"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: the same root, the space after it
+  - rule: no-mixed-desumasu
+    line: 59
+    text: 外付けHDDが見つからない**：誰かが抜いたか、NASが再起動したあとにマウント
+    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
+    verdict: false-positive
+    note: a terse cause note after a bold label (マウントされていない。) in a list of troubles; a handover note writes it so

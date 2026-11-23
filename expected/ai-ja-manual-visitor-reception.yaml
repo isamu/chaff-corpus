@@ -1,0 +1,8 @@
+id: ai-ja-manual-visitor-reception
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 7
+    what: 受付時間と当番の区切り、代引き・着払いは受け取らない（32行）、内線1200（36行）— 依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): 社内の決まりを依頼にないまま作っている"

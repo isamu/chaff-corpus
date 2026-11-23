@@ -1,0 +1,16 @@
+id: ai-ja-faq-rental-space
+title: よくある質問：レンタルスペース
+language: ja
+genre: docs/faq
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: レンタルスペースのサイトのFAQを書いてください。16人まで、平日2,200円／土日祝3,300円（1時間・税込）、2時間から。キャンセルは7日前まで無料。プロジェクター無料、レンジ・ケトル・冷蔵庫あり、コンロなし。鍵はキーボックス、暗証番号は前日にメール。駐車場なし。AIが書いたっぽい文章にならないようにお願いします。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 6669065e04fdef11dce0b8da213f44bbec317ad7e263223b5ed08012e1c2796c
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a request to avoid AI-sounding phrasing (style: avoid-ai). The text is the document part of the reply, without the assistant's lead-in or closing line."

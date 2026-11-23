@@ -1,0 +1,16 @@
+id: ai-ja-press-funding
+title: プレスリリース：シリーズAの資金調達
+language: ja
+genre: business/press-release
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: 介護記録アプリを提供しているスタートアップ「株式会社カルテノート」が、シリーズAで8億円を調達したことを発表するプレスリリースを作成してください。リード投資家はみなと未来キャピタル、代表は森川遼です。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 5ae22617bb3c45956745ff943d571ae3d5ececadb4e0bb72dccfea4b6a3e96e1
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."
