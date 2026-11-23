@@ -41,11 +41,6 @@ findings:
     text: (注)
     message: 括弧を「(」と書いています（この文書はふつう「（」。33 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 37
     text: 外国為替証拠金取引を取扱うには金融商品取引業（旧金融先物取引法上の金融先物取引業
@@ -60,11 +55,6 @@ findings:
     line: 40
     text: (注)　取引所を介する外国為替証拠金取引については、この規制はありません。
     message: 括弧を「(」と書いています（この文書はふつう「（」。33 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 40
-    text: )　取引所を介する外国為替証拠金取引については、この規制はありません。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。33 箇所のうち 5 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 40

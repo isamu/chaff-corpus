@@ -28,32 +28,7 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 1
-    text: )営業活動の結果得られた資金は、35億14百万円（前事業年度は42億29百万円）
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )投資活動の結果使用した資金は、11億76百万円（前事業年度は８億38百万円）と
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )生産、受注及び販売の実績①生産実績当社は生産活動を行っておりませんので、該当事
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
     text: )経営成績等の概要①経営成績の状況当事業年度におけるわが国経済は、新型コロナウイ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )経営者の視点による経営成績等の状況に関する分析・検討内容文中の将来に関する事項
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )財務活動の結果使用した資金は、12億95百万円（前事業年度は31億59百万円）
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
@@ -68,9 +43,10 @@ findings:
     verdict: unjudged
   - rule: ngram-repetition
     line: 1
-    text: 以上の結果、当事業年度における売上高は169億７百万円（前事業年度は145億７百
-    message: 「百万円）となりま」が 13 回出てきます（5 回まで）
-    verdict: unjudged
+    text: これは、主に現金及び預金が24億97百万円（前事業年度末は14億54百万円）に増
+    message: 「ものであります。」が 10 回出てきます（5 回まで）
+    verdict: correct
+    note: 「ものであります。」が 10 回
   - rule: topic-predicate-distance
     line: 1
     text: これは、主に短期借入金の純減額１億20百万円（前事業年度は20億円）、長期借入金

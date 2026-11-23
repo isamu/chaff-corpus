@@ -151,11 +151,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 251
-    text: ) 10:00-15:00
-    message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 252
     text: (月) まで
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
@@ -164,16 +159,6 @@ findings:
     line: 252
     text: (火) ～ 6月30日 (月) まで
     message: 括弧を「(」と書いています（この文書はふつう「（」。91 箇所のうち 6 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 252
-    text: ) ～ 6月30日 (月) まで
-    message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 252
-    text: ) まで
-    message: 括弧を「)」と書いています（この文書はふつう「）」。91 箇所のうち 6 箇所が違う）
     verdict: correct
   - rule: fullwidth-alnum-consistency
     line: 269

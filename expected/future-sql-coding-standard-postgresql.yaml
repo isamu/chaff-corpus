@@ -12,19 +12,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。51 箇所のうち 4 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 41
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。51 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 45
     text: (例 ： オブジェクト名、カラム名 等)
     message: 括弧を「(」と書いています（この文書はふつう「（」。51 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 45
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。51 箇所のうち 4 箇所が違う）
     verdict: correct
   - rule: heading-echo
     line: 69

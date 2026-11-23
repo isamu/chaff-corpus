@@ -7,12 +7,6 @@ findings:
     message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 4 箇所が違う）
     verdict: false-positive
     note: half-width (1) item markers and full-width inline parentheses, two roles each written one way, counted as one mixed set
-  - rule: bracket-width-consistency
-    line: 1
-    text: ）等に留意しており、今後も、M&amp;Aを推進し、より一層の事業拡大を図ってま
-    message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: half-width (1) item markers and full-width inline parentheses, two roles each written one way, counted as one mixed set
   - rule: max-sentence-length
     line: 1
     text: 当社が中長期的な成長を持続し、当社事業の更なる発展・拡大をしていくためには、通信

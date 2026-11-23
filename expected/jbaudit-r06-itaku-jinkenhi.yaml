@@ -36,11 +36,6 @@ findings:
     text: (注)　経済産業省からの支出委任分を含む。
     message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 81
-    text: )　経済産業省からの支出委任分を含む。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 87
     text: 7部局等は、補助事業の終了後、補助金の交付要綱に基づき会社から提出された補助事業
@@ -60,16 +55,6 @@ findings:
     line: 95
     text: (2)のとおり、16部局等から委託を受けて54委託事業を、また、7部局等から国庫
     message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 95
-    text: )のとおり、16部局等から委託を受けて54委託事業を、また、7部局等から国庫補助
-    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 95
-    text: )及び(2)のとおり、16部局等から委託を受けて54委託事業を、また、7部局等か
-    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 95
@@ -230,11 +215,6 @@ findings:
     line: 159
     text: (注)　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際
     message: 括弧を「(」と書いています（この文書はふつう「（」。134 箇所のうち 8 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 159
-    text: )　83委託事業等のうち経済産業省近畿経済産業局の1委託事業については、実際には
-    message: 括弧を「)」と書いています（この文書はふつう「）」。134 箇所のうち 8 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 159

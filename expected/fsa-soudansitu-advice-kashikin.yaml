@@ -91,11 +91,6 @@ findings:
     text: (注) 将来金利の引下げが実施されても、過去の契約に遡って適用されるわけではあり
     message: 括弧を「(」と書いています（この文書はふつう「（」。42 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 172
-    text: ) 将来金利の引下げが実施されても、過去の契約に遡って適用されるわけではありませ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。42 箇所のうち 2 箇所が違う）
-    verdict: correct
   - rule: excessive-hedging
     line: 182
     text: かと思われますが、これは、改正貸金業法の完全施行日となる平成22年6月18日から

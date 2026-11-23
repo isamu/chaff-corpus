@@ -31,13 +31,3 @@ findings:
     text: (2)の応募書類を提出期限までに電子メールにて送付してください。
     message: 括弧を「(」と書いています（この文書はふつう「（」。57 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 87
-    text: )の応募書類を提出期限までに電子メールにて送付してください。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。57 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 87
-    text: )及び(2)の応募書類を提出期限までに電子メールにて送付してください。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。57 箇所のうち 4 箇所が違う）
-    verdict: correct

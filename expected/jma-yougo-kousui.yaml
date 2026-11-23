@@ -45,19 +45,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 303
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 341
     text: (雨)
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 341
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: kutoten-consistency
     line: 427
@@ -78,11 +68,6 @@ findings:
     line: 461
     text: (船体着氷)
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 461
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: hankaku-kana
     line: 479
@@ -118,19 +103,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: bracket-width-consistency
-    line: 668
-    text: )の地面の半ば以上を雪が覆う現象。「積雪なし」とは、露場の地面に雪が全くないか、
-    message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 724
     text: (雪)が繰り返すような現象に対しては「にわか雨(雪)」は用いない。
     message: 括弧を「(」と書いています（この文書はふつう「（」。61 箇所のうち 10 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 724
-    text: )が繰り返すような現象に対しては「にわか雨(雪)」は用いない。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。61 箇所のうち 10 箇所が違う）
     verdict: correct
   - rule: hankaku-kana
     line: 724

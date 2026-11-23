@@ -6,11 +6,6 @@ findings:
     text: (DX)の鍵となるといわれてきました。昨今では、加速度的に進化する生成AIをはじ
     message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 13
-    text: )の鍵となるといわれてきました。昨今では、加速度的に進化する生成AIをはじめとす
-    message: 括弧を「)」と書いています（この文書はふつう「）」。26 箇所のうち 4 箇所が違う）
-    verdict: correct
   - rule: max-paragraph-length
     line: 13
     text: ポストコロナ社会においては、データの利活用が研究のデジタル・トランスフォーメーシ
@@ -71,11 +66,6 @@ findings:
     line: 22
     text: (ⅰ)高度統計人材の中心となる統計学を指導・教育できる研究者である統計学教員を年
     message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 22
-    text: )高度統計人材の中心となる統計学を指導・教育できる研究者である統計学教員を年間2
-    message: 括弧を「)」と書いています（この文書はふつう「）」。26 箇所のうち 4 箇所が違う）
     verdict: correct
   - rule: max-sentence-length
     line: 22

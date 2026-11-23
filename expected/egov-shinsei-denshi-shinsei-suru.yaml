@@ -19,12 +19,6 @@ findings:
     message: 括弧を「（」と書いています（この文書はふつう「(」。4 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width （未設定） in prose while the page's other parentheses are half-width
-  - rule: bracket-width-consistency
-    line: 61
-    text: ）の場合や変更する場合には、［連絡先情報を設定］をクリックし、連絡先情報を入力し
-    message: 括弧を「）」と書いています（この文書はふつう「)」。4 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: full-width （未設定） in prose while the page's other parentheses are half-width
   - rule: unbalanced-bracket
     line: 84
     text: 「電子申請に当たって添付書類の提出が必要又は可能な手続の場合、[書類を添付]ボタ

@@ -11,11 +11,6 @@ findings:
     text: )経営成績等の状況の概要当連結会計年度における当社グループ（当社及び連結子会社）
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )経営者の視点による経営成績等の状況に関する分析・検討内容経営者の視点による当社
-    message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: max-kanji-continuous
     line: 1
     text: ｂ．経営成績当連結会計年度の経営成績は、半導体製造装置向け及び工作機械向けで一部

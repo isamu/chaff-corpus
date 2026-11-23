@@ -6,8 +6,3 @@ findings:
     text: (未確認)
     message: 括弧を「(」と書いています（この文書はふつう「（」。10 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 38
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 2 箇所が違う）
-    verdict: correct

@@ -22,19 +22,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 47
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 57
     text: (日曜日)
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 57
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: dangling-reference
     line: 85
@@ -60,11 +50,6 @@ findings:
     line: 117
     text: (水曜日)までに大阪市健康局総務部総務課までご連絡ください。
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 117
-    text: )までに大阪市健康局総務部総務課までご連絡ください。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: date-without-year
     line: 122
@@ -105,11 +90,6 @@ findings:
     line: 174
     text: (火曜日)
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 174
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 182

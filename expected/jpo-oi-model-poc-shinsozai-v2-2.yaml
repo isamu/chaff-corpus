@@ -44,21 +44,9 @@ findings:
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: bracket-width-consistency
-    line: 157
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
     line: 165
     text: (変更オプション条項2：仲裁)
     message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
-    line: 165
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: orthographic-variant
@@ -74,21 +62,9 @@ findings:
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: bracket-width-consistency
-    line: 184
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
     line: 192
     text: (追加オプション条項：契約内容の変更)
     message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
-    line: 192
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: bracket-width-consistency
@@ -98,21 +74,9 @@ findings:
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: bracket-width-consistency
-    line: 197
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
     line: 200
     text: (追加オプション条項：遅延損害金)
     message: 括弧を「(」と書いています（この文書はふつう「（」。108 箇所のうち 12 箇所が違う）
-    verdict: correct
-    note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
-  - rule: bracket-width-consistency
-    line: 200
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。108 箇所のうち 12 箇所が違う）
     verdict: correct
     note: 追加・変更オプション条項の見出しだけ半角の括弧、ほかの条の見出しと本文は全角
   - rule: undefined-term

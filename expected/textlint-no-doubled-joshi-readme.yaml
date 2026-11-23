@@ -38,12 +38,6 @@ findings:
     verdict: correct
     note: full-width （） in this line while the README mostly uses half-width ()
   - rule: bracket-width-consistency
-    line: 175
-    text: ）が助詞の間にある場合、間隔値は+1されます。
-    message: 括弧を「）」と書いています（この文書はふつう「)」。21 箇所のうち 4 箇所が違う）
-    verdict: correct
-    note: full-width （） in this line while the README mostly uses half-width ()
-  - rule: bracket-width-consistency
     line: 184
     text: （`(`や`)`）が助詞の間にある場合、間隔値は+1されます。
     message: 括弧を「（」と書いています（この文書はふつう「(」。21 箇所のうち 4 箇所が違う）

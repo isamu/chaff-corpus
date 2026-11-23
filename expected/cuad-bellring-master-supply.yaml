@@ -48,6 +48,12 @@ findings:
     verdict: correct
   - rule: obligation-without-deadline
     line: 55
+    text: submit a copy of such plan (and any chan
+    message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: correct
+    note: submission on request with no time for it
+  - rule: obligation-without-deadline
+    line: 55
     text: submit summaries of audit reports to PNC
     message: '"submit" is a duty with no deadline; a time makes it one that can be met or missed'
     verdict: correct

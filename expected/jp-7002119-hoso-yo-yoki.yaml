@@ -67,11 +67,6 @@ findings:
     sha256: 6a74209d593749f77944f61b7043cd18485b3e1c113dc1b5ae3768e50dc5e2db
     verdict: correct
     note: half-width parentheses (内箱本体６) in a gazette that otherwise writes full-width ones
-  - rule: bracket-width-consistency
-    line: 110
-    sha256: b12582dcf530d8ba25a4aaab755fd86a446c78fc59aac254be271aefce0467c1
-    verdict: correct
-    note: half-width parentheses (内箱本体６) in a gazette that otherwise writes full-width ones
   - rule: topic-predicate-distance
     line: 134
     sha256: 8aaf7a33640219b58c712f11e63513ab9b6cdc7f0512b8f17b2f5af6722edf43

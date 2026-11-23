@@ -74,12 +74,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
     verdict: correct
     note: found by lab main, which no longer counts the caption notation ((…)); found by chaffjs 0.38.0
-  - rule: bracket-width-consistency
-    line: 33
-    text: )中「、国立研究開発法人情報通信研究機構」を削る。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。14 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: found by lab main, which no longer counts the caption notation ((…)); found by chaffjs 0.38.0
   - rule: max-sentence-length
     line: 33
     text: 昭和55年４月23日付直資２－181「租税特別措置法第40条第１項後段の規定によ

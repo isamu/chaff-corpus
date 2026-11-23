@@ -25,9 +25,3 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。20 箇所のうち 2 箇所が違う）
     verdict: correct
     note: ここだけ半角の「(％)」、ほかは全角の括弧
-  - rule: bracket-width-consistency
-    line: 45
-    text: )は、表章単位未満の位で四捨五入しているため、内訳の合計が100にならないことも
-    message: 括弧を「)」と書いています（この文書はふつう「）」。20 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: 同じ箇所の閉じ括弧
