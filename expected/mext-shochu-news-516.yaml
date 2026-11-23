@@ -87,16 +87,6 @@ findings:
     text: (月)～4月19日(日)に科学技術週間を実施します！
     message: 括弧を「(」と書いています（この文書はふつう「（」。63 箇所のうち 5 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 172
-    text: )～4月19日(日)に科学技術週間を実施します！
-    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 172
-    text: )に科学技術週間を実施します！
-    message: 括弧を「)」と書いています（この文書はふつう「）」。63 箇所のうち 5 箇所が違う）
-    verdict: unjudged
   - rule: orthographic-variant
     line: 174
     text: あわせて、学習資料「一家に1枚 地球」を制作しました。

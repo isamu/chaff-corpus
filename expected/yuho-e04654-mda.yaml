@@ -79,12 +79,6 @@ findings:
     message: 半角の「1」と書いています（この文書はふつう全角の「１」。16 箇所のうち 4 箇所が違う）
     verdict: correct
     note: 「11月1日」 in the second table where the first writes 「11月１日」
-  - rule: ngram-repetition
-    line: 1
-    text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上
-    message: 「）となりました。」が 6 回出てきます（5 回まで）
-    verdict: false-positive
-    note: a sentence ending (…）となりました。) counted as a repeated phrasing; the ending's monotony is the sentence-ending rule's to report
   - rule: repeated-sentence-ending
     line: 1
     text: 結果としまして、売上高は307,814千円（前期比99.6％）となりました。売上

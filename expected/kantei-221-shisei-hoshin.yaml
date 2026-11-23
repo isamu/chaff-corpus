@@ -122,11 +122,6 @@ findings:
     text: (むしば)んでいく「静かな有事」です。少子化傾向を反転させるための対策を強化しま
     message: 括弧を「(」と書いています（この文書はふつう「（」。45 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 202
-    text: )んでいく「静かな有事」です。少子化傾向を反転させるための対策を強化します。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。45 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 226
     text: の契約時の本人確認義務の範囲を拡大する法案や、架空名義口座を利用した新たな詐欺対

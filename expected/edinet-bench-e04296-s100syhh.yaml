@@ -141,11 +141,6 @@ findings:
     text: の際の借入金利の固定化による金利上昇リスク抑制今後、2022年に策定した新中期経
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: unjudged
-  - rule: no-em-dash
-    line: 21
-    text: ―2026）における具体的な業績目標に関する進捗状況は以下のとおりです。 202
-    message: 1000 字あたり 4 個のダッシュがあります（3 個まで）
-    verdict: unjudged
   - rule: repeated-sentence-ending
     line: 21
     text: このような経済情勢にあって、物流業界におきましては保管残高数量・金額ともに前年同

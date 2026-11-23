@@ -25,10 +25,6 @@ findings:
     line: 17
     sha256: 14d78ee02f8a42a7af7bde3bc57bceff0b9da4c3461a87c88cf1e5c29dd8dc3a
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 17
-    sha256: 2446d1f5ceade46e0f0282eda731e296a35915ba08d99caf17f1bdf32400f30e
-    verdict: unjudged
   - rule: max-sentence-length
     line: 17
     sha256: a685e10d3b7cdfe964d7c168c45fbe6deb0b8feb8420ed8223dd2fe3b979d4bf
@@ -56,10 +52,6 @@ findings:
   - rule: bracket-width-consistency
     line: 44
     sha256: 2883752445e64685f3a3f4aa5eabe8169a6380d9e335abdeb161afce1080ef26
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 44
-    sha256: ba5ec51d07a4ac0e951608704431d59a02b21a4e951acc10505a8dc407c501ee
     verdict: unjudged
   - rule: request-without-deadline
     line: 52

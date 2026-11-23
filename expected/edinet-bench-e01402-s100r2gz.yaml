@@ -384,11 +384,6 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 29
-    text: )ICチップを搭載した磁気式電流センサーをラインナップに加え、電動車・省エネ分野
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 29
     text: "[　]書きしております。 (1) 開発グループ[日本]◎電流センサー　開発を続け"
     message: 括弧「[」の類を、全角で 10 箇所、半角で 8 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
@@ -608,11 +603,6 @@ findings:
     text: (株)議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 57
-    text: )議決権の数（個）内容無議決権株式 －－－議決権制限株式（自己株式等） －－－議
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
   - rule: latin-spacing
     line: 57
     text: " 10株が含まれております。"
@@ -637,21 +627,6 @@ findings:
     line: 61
     text: (株)発行済株式総数に対する所有株式数の割合（％）サンコール株式会社京都市右京区
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 61
-    text: )他人名義所有株式数(株)所有株式数の合計(株)発行済株式総数に対する所有株式数
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 61
-    text: )所有株式数の合計(株)発行済株式総数に対する所有株式数の割合（％）サンコール株
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 61
-    text: )発行済株式総数に対する所有株式数の割合（％）サンコール株式会社京都市右京区梅津
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 61
@@ -744,26 +719,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 101
-    text: )当連結会計年度(2023年３月31日)負債の部  流動負債  支払手形及び買掛
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 101
-    text: )当連結会計年度(2023年３月31日)資産の部  流動資産  現金及び預金7,
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 101
-    text: )負債の部  流動負債  支払手形及び買掛金7,2787,103短期借入金5,3
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 101
-    text: )資産の部  流動資産  現金及び預金7,5107,707受取手形224258売
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 105
     text: (自　2021年４月１日　至　2022年３月31日)当連結会計年度(自　2022
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
@@ -772,16 +727,6 @@ findings:
     line: 105
     text: (自　2022年４月１日　至　2023年３月31日)売上高47,43853,39
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 105
-    text: )売上高47,43853,399売上原価※１ 41,567※１ 47,642売上
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 105
-    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)売上高47,
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 105
@@ -797,16 +742,6 @@ findings:
     line: 109
     text: (自　2022年４月１日　至　2023年３月31日)当期純利益904557その他
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 109
-    text: )当期純利益904557その他の包括利益  その他有価証券評価差額金36△218
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 109
-    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)当期純利益9
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 109
@@ -827,16 +762,6 @@ findings:
     line: 117
     text: (自　2022年４月１日　至　2023年３月31日)営業活動によるキャッシュ・フ
     message: 括弧を「(」と書いています（この文書はふつう「（」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 117
-    text: )営業活動によるキャッシュ・フロー  税金等調整前当期純利益1,431934減価
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 117
-    text: )当連結会計年度(自　2022年４月１日　至　2023年３月31日)営業活動によ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
   - rule: max-sentence-length
     line: 117

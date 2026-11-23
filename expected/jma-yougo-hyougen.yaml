@@ -22,19 +22,9 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。45 箇所のうち 6 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 56
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。45 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 59
     text: (全体を1とする割合)
     message: 括弧を「(」と書いています（この文書はふつう「（」。45 箇所のうち 6 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 59
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。45 箇所のうち 6 箇所が違う）
     verdict: unjudged
   - rule: missing-final-period
     line: 65

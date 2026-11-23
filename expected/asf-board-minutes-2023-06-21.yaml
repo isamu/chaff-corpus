@@ -53,6 +53,10 @@ findings:
     line: 122
     sha256: a37df8e91295ba54465afb90ecce936e13a3a13a013314a7c9fc46db28a4fd9f
     verdict: unjudged
+  - rule: expletive-construction
+    line: 125
+    sha256: 3f33c6f037d0ef27803c36b89ef2b526e8b2a769606d8407fd2ca8165a122cd8
+    verdict: unjudged
   - rule: undefined-acronym
     line: 137
     sha256: e730459718311a8584901882ab41b67a96f36019ff22c358da390cdb871f9f95
@@ -634,6 +638,10 @@ findings:
     line: 2288
     sha256: 6e921d9a39049be04e641a0e9b28d28306af0727a2e4234d1e79348c2bf9ed1e
     verdict: correct
+  - rule: expletive-construction
+    line: 2288
+    sha256: 382bd43b7be73826c6d74c16afe37e97bd6395b891f1b62dc361071a0b214325
+    verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 2289
     sha256: e4d0ae2c95f8b50e040223f581d68ccd49d02e71464d9f199f3063fa5833709d
@@ -686,6 +694,10 @@ findings:
     line: 2575
     sha256: 30cd80a677bbbd666e9a034bf2a38d770709d357ef82538a6611e414f33ba629
     verdict: unjudged
+  - rule: expletive-construction
+    line: 2611
+    sha256: 7f54cceb230abbe2e8d07cf3a78e0ec2620e593739f70d7406305c88a4641a24
+    verdict: unjudged
   - rule: date-order
     line: 2634
     sha256: ea0cf68351d56fce4e3821f602403aca14b39348f55b23d870e36f4233c2d91c
@@ -737,6 +749,10 @@ findings:
   - rule: date-format-consistency
     line: 2778
     sha256: bb59de99a0129fb1aa16009ac5067b67380ae46b72faf08075f3da179bcf9be7
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 2790
+    sha256: e8b7046d0a373f28745da72663a8b35aa4305a06986f71eecc0e80a4a0a9bf57
     verdict: unjudged
   - rule: orthographic-variant
     line: 2831
@@ -1019,6 +1035,10 @@ findings:
     line: 4547
     sha256: 8243c4346b6c88eeb2ceaf58d8e5f7695175aeab07ccf0fad54dae30334e3c3d
     verdict: unjudged
+  - rule: expletive-construction
+    line: 4583
+    sha256: 2dfb775eb85340935631d8d4963f596dadd2a56b7e2ebe9fcd3d169d2186b633
+    verdict: unjudged
   - rule: undefined-acronym
     line: 4592
     sha256: 64b1591cde048d6e8500774b378a29f84660c542cbfe4fb22604b855c7ca4456
@@ -1038,6 +1058,10 @@ findings:
   - rule: undefined-acronym
     line: 4654
     sha256: 76610a265617c7036494198faf1659769cd6dd6e61b8a1a3a72cf7bba2034207
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 4672
+    sha256: 2511ee18a9341d74fccb12ac78df5b66746266c593dc9fd797e195ebc4ef3e11
     verdict: unjudged
   - rule: expletive-construction
     line: 4677
@@ -1327,9 +1351,17 @@ findings:
     line: 5328
     sha256: ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
     verdict: correct
+  - rule: expletive-construction
+    line: 5380
+    sha256: b341929315d18593542426480681fd81d6a872064e5b04ae6df2870365b382a0
+    verdict: unjudged
   - rule: number-style-consistency
     line: 5410
     sha256: 8dcc404c04884fecff4237ccd47bb740f020b3e1f53538e296da0b39a2ef1c1d
+    verdict: unjudged
+  - rule: expletive-construction
+    line: 5461
+    sha256: 78238e823b91e35409700c2be25fd0b4dd742931ed6c23fa937163291e98c08a
     verdict: unjudged
   - rule: sentence-spacing-consistency
     line: 5461

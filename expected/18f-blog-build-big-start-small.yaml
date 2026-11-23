@@ -61,6 +61,11 @@ findings:
     message: '"There is ..." appears 5 times (limit 3)'
     verdict: correct
     note: '"There are small functions that can be extracted"'
+  - rule: expletive-construction
+    line: 156
+    text: There can be a separate microservice res
+    message: '"There can be ..." is one of 6 sentences that open with "There is" or "It is ... that" (limit 3)'
+    verdict: unjudged
   - rule: max-paragraph-length
     line: 173
     text: In the world of software development, we

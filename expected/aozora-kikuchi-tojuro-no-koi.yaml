@@ -6,6 +6,11 @@ findings:
     text: それを今日はぜひにも聴いてもらいたいのじゃ、思い出せば古いことじゃ、そなたが十六
     message: 一文に逆接の「が」が 2 個あります（1 個まで）
     verdict: unjudged
+  - rule: misconversion
+    line: 134
+    text: 始めて見れば聞きしに勝るそなたの美しさじゃ。器量自慢であったこの藤十郎さえ、そな
+    message: 「始めて」は「初めて」の変換の誤りです
+    verdict: unjudged
   - rule: adversative-ga-repeat
     line: 249
     text: 藤様が、蒼い顔して、息を切らせながら、酒宴の席へ帰って来られると、立てつづけに、

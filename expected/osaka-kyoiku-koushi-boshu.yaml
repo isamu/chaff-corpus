@@ -21,11 +21,6 @@ findings:
     text: (仮登録)についてをご覧ください。
     message: 括弧を「(」と書いています（この文書はふつう「（」。183 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 33
-    text: )についてをご覧ください。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。183 箇所のうち 4 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 39
     text: 大阪市教育委員会は、教員免許を取得している方（取得見込みの方を含む）で、学校で講

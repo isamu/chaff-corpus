@@ -286,11 +286,6 @@ findings:
     text: (ひ)護されていた外国人であって政府の方針により国際的動向を踏まえ我が国に受け入
     message: 括弧を「(」と書いています（この文書はふつう「（」。105 箇所のうち 2 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 137
-    text: )護されていた外国人であって政府の方針により国際的動向を踏まえ我が国に受け入れた
-    message: 括弧を「)」と書いています（この文書はふつう「）」。105 箇所のうち 2 箇所が違う）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 137
     text: 国は，難民の認定を受けている外国人及びその家族並びに外国において一時的に庇(ひ)

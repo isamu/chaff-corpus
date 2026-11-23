@@ -458,6 +458,10 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: unjudged
   - rule: expletive-construction
+    line: 926
+    sha256: 68f14f7925a05e2094ad956e00fc400c28fa66f8eddef7e5a0fa1f63d5b1cc80
+    verdict: unjudged
+  - rule: expletive-construction
     line: 951
     sha256: 6bfed7cb4ca0ac3339665a950f8ec40b8af28e4159a2a4157a7a36d2ab8b710a
     verdict: unjudged
