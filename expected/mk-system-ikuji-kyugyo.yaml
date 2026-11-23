@@ -12,11 +12,6 @@ findings:
     text: (申し出の撤回等)
     message: 括弧を「(」と書いています（この文書はふつう「（」。40 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 25
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。40 箇所のうち 4 箇所が違う）
-    verdict: correct
   - rule: orthographic-variant
     line: 25
     text: 申し出の撤回等)
@@ -42,9 +37,4 @@ findings:
     line: 46
     text: (健康保険、厚生年金保険)の被保険者負担分は所定の手続きにより免除される。
     message: 括弧を「(」と書いています（この文書はふつう「（」。40 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 46
-    text: )の被保険者負担分は所定の手続きにより免除される。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。40 箇所のうち 4 箇所が違う）
     verdict: correct

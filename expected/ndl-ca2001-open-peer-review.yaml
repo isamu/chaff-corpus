@@ -32,11 +32,6 @@ findings:
     text: (3)であげた問題点の多くは、査読のさまざまな「不透明さ」に由来する。すなわち、
     message: 括弧を「(」と書いています（この文書はふつう「（」。138 箇所のうち 7 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 41
-    text: )であげた問題点の多くは、査読のさまざまな「不透明さ」に由来する。すなわち、著者
-    message: 括弧を「)」と書いています（この文書はふつう「）」。138 箇所のうち 7 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 41
     text: 査読者の名前や査読レポートの内容は「不透明」なので査読者にとって研究業績にはなら
@@ -51,16 +46,6 @@ findings:
     line: 47
     text: (3)がこれまでのオープン査読の試みに最もよく出てくるとしている。
     message: 括弧を「(」と書いています（この文書はふつう「（」。138 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 47
-    text: )がこれまでのオープン査読の試みに最もよく出てくるとしている。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。138 箇所のうち 7 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 47
-    text: )から(3)がこれまでのオープン査読の試みに最もよく出てくるとしている。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。138 箇所のうち 7 箇所が違う）
     verdict: unjudged
   - rule: missing-final-period
     line: 49

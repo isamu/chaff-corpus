@@ -21,11 +21,6 @@ findings:
     text: (5）優先的に対処すべき事業上及び財務上の課題上記の経営方針・経営戦略等を実現す
     message: 括弧を「(」と書いています（この文書はふつう「（」。32 箇所のうち 4 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
-    text: )経営戦略等当社グループは、新たに中期経営計画「FindtheValue2026
-    message: 括弧を「)」と書いています（この文書はふつう「）」。32 箇所のうち 4 箇所が違う）
-    verdict: unjudged
   - rule: comparative-without-baseline
     line: 1
     text: よりよい価値を創出してまいります。今後も企業成長を通じた社会課題の解決や持続可能

@@ -7,9 +7,3 @@ findings:
     message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 2 箇所が違う）
     verdict: correct
     note: full-width parentheses here, half-width in the rest of the entry
-  - rule: bracket-width-consistency
-    line: 41
-    text: ）。標準化されたインターフェイスに実験的なプロパティやメソッドが追加された場合は
-    message: 括弧を「）」と書いています（この文書はふつう「)」。8 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: full-width parentheses here, half-width in the rest of the entry

@@ -5,6 +5,11 @@ findings:
     line: 62
     sha256: 66842b6df4ae49dd8525f2d33f2c6c5efc944f96a448015342eacbaf84df2599
     verdict: unjudged
+  - rule: cliche
+    line: 73
+    sha256: 555c7b8b3856c5f4e5d6cd2ec93e4fc54678c49fd0d972d02608fab3ee7b37b3
+    verdict: correct
+    note: the needle figure used for the effect of a project, a stock metaphor
   - rule: sentence-spacing-consistency
     line: 73
     sha256: ccf1e4a49ca25e20a0f164f2ef631339b08d32cfc04cde948abc2a618194c6c0
@@ -226,6 +231,11 @@ findings:
     line: 1124
     sha256: 0254fd7742cf97e43fdc035fb1fd4652f9700f81e1d54d881a977b0f5dbcbe59
     verdict: unjudged
+  - rule: expletive-construction
+    line: 1187
+    sha256: 8841df452cc138ec7580bbb553c6a95e1150ebc0a3d3fcb29b700843275f5d99
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting little action; can be said directly
   - rule: orthographic-variant
     line: 1230
     sha256: f42e3e798976eb533ad8050b7ead0f4c049d05e32f5e7f1e502c6b7121799ea2
@@ -354,6 +364,11 @@ findings:
     line: 1627
     sha256: 56208ddf5af5d80e40938c3487b2a58518efad5a891e15a42ba902cccb8a87ae
     verdict: unjudged
+  - rule: expletive-construction
+    line: 1631
+    sha256: 157cb474a1df70374481fe10e6014423c734c97132789c199ba0de1c6c62963b
+    verdict: correct
+    note: an empty there-opener with a perfect be; the ongoing work can be the subject
   - rule: undefined-acronym
     line: 1635
     sha256: 16e3a4dca816decba35fd2b39f50d982af124b11489a100c1c881ba694ca0658
@@ -362,6 +377,11 @@ findings:
     line: 1639
     sha256: 143cae8b20aa3b48c072578746f43e40a9dcdbefb38226a04600f6f089b53717
     verdict: unjudged
+  - rule: expletive-construction
+    line: 1663
+    sha256: b042b078767f363806c16c948a0e92c1214b7bdde18097391e131744c9264818
+    verdict: correct
+    note: an empty there-opener on a count of blog posts; the posts can be the subject
   - rule: name-variant
     line: 1690
     sha256: e324a615a3b2c377c9528a7c62137ead4bccfb5ae2c712e564b0f26cac550c56
@@ -406,6 +426,11 @@ findings:
     line: 1947
     sha256: 74b70152de87acc40ca9f80186c6def19982988b6ee3904cd4675e92bf0e4899
     verdict: unjudged
+  - rule: expletive-construction
+    line: 1952
+    sha256: 1621d47c2f6369b80b87200948a8f97e7b41fad0a16ec720cb32c7eb5c133550
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting no releases; can be said directly
   - rule: date-format-consistency
     line: 1955
     sha256: 4cd7ce363e1df3889fc4b968553b63d39f5609a1daff38adeb5d6eb603f8428d
@@ -655,6 +680,11 @@ findings:
     sha256: 0a0f419fd8a80e48dedbf4f2e9b0d3d47810ae6f7a5b4a260407aa6556afaf3d
     verdict: correct
   - rule: expletive-construction
+    line: 2733
+    sha256: 0b2cac11f8d3bef87c2b40ffc984cfa8d473425e3c49626a5599016e78efb55e
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting low activity; the activity can be the subject
+  - rule: expletive-construction
     line: 2735
     sha256: 9137186150fddf339dd90643dde94465b1d2fb9b7e1e0872563d0db4a95a8faf
     verdict: unjudged
@@ -702,6 +732,11 @@ findings:
     line: 2985
     sha256: 1bfaf75fa9380d5c9ac4fdb814ce84d8b933be92e3d5791544b4ae86fab5a19a
     verdict: unjudged
+  - rule: expletive-construction
+    line: 2989
+    sha256: 287437960c7da31b10119c79f0b9fd7dbe7607c544c6a59b84c453841926ef24
+    verdict: correct
+    note: an empty there-opener with a future be announcing a meetup; the meetup can be the subject
   - rule: undefined-acronym
     line: 3057
     sha256: 2c822d27e2cd4bbc3e6b4e1c7d45835b7e422a2ab0a80c2a88f7847a2d64c344
@@ -762,6 +797,16 @@ findings:
     line: 3387
     sha256: a16d1aeb2ffd1b127e443eb0271ee1fee18e286bc2771b86cef44d831d5e889f
     verdict: unjudged
+  - rule: expletive-construction
+    line: 3394
+    sha256: 1a8f1809499963d79d0d90de2f29ac48baff9ecbb3b5c912b4f44266a254b5d6
+    verdict: correct
+    note: an empty there-opener with a perfect be about a release line; the line can be the subject
+  - rule: expletive-construction
+    line: 3398
+    sha256: 228d2ca44d8644595ec4f55eb8f134222982dd8463c67a70005d2a100cc1234e
+    verdict: correct
+    note: an empty there-opener with a perfect be reporting more user questions; the questions can be the subject
   - rule: orthographic-variant
     line: 3399
     sha256: c8491a17517372b1f9f0689298e73d93e7de821b5679657adcdd72d8086ac88f
@@ -786,6 +831,16 @@ findings:
     line: 3589
     sha256: c66173944c65047915d7f35faefe042c4d616ee333ca2f2ca829ff0eb4a0f50e
     verdict: unjudged
+  - rule: expletive-construction
+    line: 3590
+    sha256: d457573481b91193a4d076c56319923e7cd5dabd858cf9aee184721bd3a29465
+    verdict: correct
+    note: an empty there-opener with a perfect be; the community can be the subject
+  - rule: expletive-construction
+    line: 3595
+    sha256: 9813459e3b68139cad1fe89c9fa70efa85533840b0e91d516a478e29c49de1f2
+    verdict: correct
+    note: an empty there-opener with a perfect be; the new contributors can be the subject
   - rule: contraction-consistency
     line: 3596
     sha256: d2365bdd17fe084284b29d1822aebcb313d77ceb8c0f7ae9d8b2e2bd82fd92e4

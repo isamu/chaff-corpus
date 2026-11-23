@@ -287,6 +287,12 @@ findings:
     text: NINO.
     message: '"NINO" is used without an expansion (32 such acronyms)'
     verdict: unjudged
+  - rule: expletive-construction
+    line: 1821
+    text: "There will be:"
+    message: '"There will be ..." is one of 7 sentences that open with "There is" or "It is ... that" (limit 3)'
+    verdict: false-positive
+    note: a quoted example of model GOV.UK content shown for its numerals, not the guide's own prose
   - rule: one-sentence-paragraph-run
     line: 1838
     text: Use a 0 where there’s no digit before th

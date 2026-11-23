@@ -37,9 +37,3 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。15 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width brackets in a caption, where the page writes full-width ones
-  - rule: bracket-width-consistency
-    line: 45
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。15 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: half-width brackets in a caption, where the page writes full-width ones

@@ -57,29 +57,14 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 179
-    text: )に従う性質。 トランザクションは、コミット前には一時的に制約の一部に違反する可
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 205
     text: (cluster)として参照されます。 データベースクラスタは、initdbプロ
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 205
-    text: )として参照されます。 データベースクラスタは、initdbプログラムを使用して
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 207
     text: (cluster)という用語も使用されることがあります。 （この用語を、SQLコ
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 207
-    text: )という用語も使用されることがあります。 （この用語を、SQLコマンドのCLUS
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 209
@@ -90,16 +75,6 @@ findings:
     line: 209
     text: (cluster owner)、クラスタのオペレーティングシステム所有者、および
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 209
-    text: )、クラスタのPostgreSQL所有者も参照してください。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 209
-    text: )、クラスタのオペレーティングシステム所有者、およびブートストラップスーパーユー
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: undefined-acronym
     line: 223
@@ -115,16 +90,6 @@ findings:
     line: 231
     text: (dirty)となります。 それらはディスクに書き出されたときにきれい(clea
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 231
-    text: )となります。 それらはディスクに書き出されたときにきれい(clean)になりま
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 231
-    text: )になります。 最初はメモリ上にのみ存在したページも書き出されるまでは変更済みで
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
     line: 231
@@ -145,11 +110,6 @@ findings:
     line: 295
     text: (init fork)もあります。
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 295
-    text: )もあります。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 295
@@ -190,11 +150,6 @@ findings:
     line: 457
     text: (parent)であるパーティション化テーブルの一部のデータを持つテーブルを意味
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 457
-    text: )であるパーティション化テーブルの一部のデータを持つテーブルを意味します。 パー
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: undefined-acronym
     line: 473
@@ -251,11 +206,6 @@ findings:
     text: (dirty page)と呼ばれます。
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 605
-    text: )と呼ばれます。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 613
     text: の同じ種類の中のそうしたオブジェクト同士は、名前がユニークであることが強制されま
@@ -306,11 +256,6 @@ findings:
     text: (INSERT、UPDATE、DELETE、TRUNCATE)がリレーションに適
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 687
-    text: )がリレーションに適用されるたびに実行することを定義できる関数。 トリガは、トリ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 697
     text: の複数の列の組み合わせで許可される値を制限して、各値または組み合わせの値がリレー
@@ -340,16 +285,6 @@ findings:
     line: 743
     text: (all-visible)は、ページ内のすべてのタプルがすべてのトランザクション
     message: 括弧を「(」と書いています（この文書はふつう「（」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 743
-    text: )は、ページ内のすべてのタプルがすべてのトランザクションに対して可視であることを
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 743
-    text: )は、ページ内のすべてのタプルが凍結とマークされていることを示します。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。170 箇所のうち 27 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 799

@@ -67,11 +67,6 @@ findings:
     text: (CA1990参照)。S2Oとは、一定の数の機関が購読料を負担すると、当該学術雑
     message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 65
-    text: )。S2Oとは、一定の数の機関が購読料を負担すると、当該学術雑誌のコンテンツがフ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。133 箇所のうち 17 箇所が違う）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 65
     text: 欧州のプランSにおいても、この問題は認識され、中小規模の学術出版に特化して、OA
@@ -121,11 +116,6 @@ findings:
     line: 123
     text: (55)。教員が研究助成の条件と出版社との出版契約の条項との間で板挟みとなり、学
     message: 括弧を「(」と書いています（この文書はふつう「（」。133 箇所のうち 17 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 123
-    text: )。教員が研究助成の条件と出版社との出版契約の条項との間で板挟みとなり、学術出版
-    message: 括弧を「)」と書いています（この文書はふつう「）」。133 箇所のうち 17 箇所が違う）
     verdict: unjudged
   - rule: orthographic-variant
     line: 123

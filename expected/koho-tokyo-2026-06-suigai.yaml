@@ -22,11 +22,6 @@ findings:
     note: a dated monthly issue; a month and day without a year refers to the issue's own year
   - rule: bracket-width-consistency
     line: 99
-    sha256: 3a80acf769a78a52491c6d6680be88d15919754d0446cdee328e184c43a6b5a5
-    verdict: correct
-    note: half-width brackets in the footer, where the page writes full-width ones
-  - rule: bracket-width-consistency
-    line: 99
     sha256: 8b135770df3f9b1cffab4b46112c1926891e572a73e7e958e2462c47e7c19654
     verdict: correct
     note: half-width brackets in the footer, where the page writes full-width ones

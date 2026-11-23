@@ -49,12 +49,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。23 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width parentheses in prose that mostly uses full-width ones
-  - rule: bracket-width-consistency
-    line: 43
-    text: )の分析によると、７月中旬～下旬前半の高温は「地球温暖化がなければ起こりえなかっ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。23 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: 同じ箇所の閉じ括弧
   - rule: url-run-on
     line: 44
     text: https://weatherattributioncenter.jp/anal

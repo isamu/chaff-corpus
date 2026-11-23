@@ -17,11 +17,6 @@ findings:
     text: The study was approved by the authors’ i
     message: This paragraph runs 10 sentences (limit 9)
     verdict: unjudged
-  - rule: cliche
-    line: 221
-    text: Fleisig, S. L. Blodgett, D. Klein, and Z
-    message: '"paradigm shift" is a cliché'
-    verdict: unjudged
   - rule: doubled-punctuation
     line: 227
     text: ".. External Links: Document Cited by: §2"

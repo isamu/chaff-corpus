@@ -94,27 +94,7 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 9
-    text: )、ネットワーク保守、データクレンジング、AMS（Application Man
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 9
     text: )からパッケージの提供を受け、大企業向けSAP S/4HANA、中堅企業向けSA
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 9
-    text: )のBPO業務にも注力しております。 (2）インフラソリューションサービスインフ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 9
-    text: )の受注活動を推進しております。また、顧客の情報システム部門の立ち上げ支援及びセ
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 9
-    text: )連結子会社
     message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
   - rule: latin-spacing
@@ -505,36 +485,6 @@ findings:
     text: (東京都千代田区)事務所設備14,9226,2654821,236255仙台営業
     message: 括弧を「(」と書いています（この文書はふつう「（」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )事務所設備14,9226,2654821,236255仙台営業所(仙台市青葉区
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )事務所設備322031964217（注）１．上記の金額には消費税等は含まれてお
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )事務所設備4,3752,5354,39411,305260東京本社(東京都千代
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )事務所設備4104665593231（注）１．上記の金額には消費税等は含まれて
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )設備の内容帳簿価額（千円）従業員数（人）建物工具、器具及び備品ソフトウエア合計
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
-    text: )設備の内容帳簿価額（千円）従業員数（人）建物工具、器具及び備品ソフトウエア合計
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
   - rule: unbalanced-bracket
     line: 37
     text: ）国内子会社令和３年３月31日現在 会社名事業所名(所在地)設備の内容帳簿価額（
@@ -665,16 +615,6 @@ findings:
     text: (自　平成31年４月１日　至　令和２年３月31日) 当連結会計年度(自　令和２年
     message: 括弧を「(」と書いています（この文書はふつう「（」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 105
-    text: ) 当連結会計年度(自　令和２年４月１日　至　令和３年３月31日)売上高6,14
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 105
-    text: )売上高6,146,9596,233,729売上原価4,806,2514,844
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 105
     text: 2投資有価証券売却益－1,997特別利益合計－1,999税金等調整前当期純利益3
@@ -689,16 +629,6 @@ findings:
     line: 109
     text: (自　平成31年４月１日　至　令和２年３月31日) 当連結会計年度(自　令和２年
     message: 括弧を「(」と書いています（この文書はふつう「（」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 109
-    text: ) 当連結会計年度(自　令和２年４月１日　至　令和３年３月31日)当期純利益21
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 109
-    text: )当期純利益217,213285,490その他の包括利益  その他有価証券評価差
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 113
@@ -715,16 +645,6 @@ findings:
     text: (自　平成31年４月１日　至　令和２年３月31日) 当連結会計年度(自　令和２年
     message: 括弧を「(」と書いています（この文書はふつう「（」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 117
-    text: ) 当連結会計年度(自　令和２年４月１日　至　令和３年３月31日)営業活動による
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 117
-    text: )営業活動によるキャッシュ・フロー  税金等調整前当期純利益330,891399
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 117
     text: ④【連結キャッシュ・フロー計算書】  （単位：千円）  前連結会計年度(自　平成
@@ -739,11 +659,6 @@ findings:
     line: 121
     text: (現金及び現金同等物)は、手許現金、随時引き出し可能な預金及び容易に換金可能であ
     message: 括弧を「(」と書いています（この文書はふつう「（」。338 箇所のうち 39 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 121
-    text: )は、手許現金、随時引き出し可能な預金及び容易に換金可能であり、かつ、価値の変動
-    message: 括弧を「)」と書いています（この文書はふつう「）」。338 箇所のうち 39 箇所が違う）
     verdict: unjudged
   - rule: connective-hierarchy
     line: 121

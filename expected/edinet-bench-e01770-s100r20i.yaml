@@ -316,11 +316,6 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 37
-    text: "]は、臨時従業員数であります。"
-    message: 括弧を「]」と書いています（この文書はふつう「］」。18 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
     text: "]パワーエレクトロニクス事業製造業務1,69852－5333542,638210"
     message: 括弧を「]」と書いています（この文書はふつう「］」。10 箇所のうち 4 箇所が違う）
     verdict: unjudged

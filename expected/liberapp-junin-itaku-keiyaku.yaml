@@ -6,16 +6,8 @@ findings:
     sha256: 693bf2e14094609bbaa060840a801355f4466747147ca28758907457cd57a6a3
     verdict: correct
   - rule: bracket-width-consistency
-    line: 3
-    sha256: ba5ec51d07a4ac0e951608704431d59a02b21a4e951acc10505a8dc407c501ee
-    verdict: correct
-  - rule: bracket-width-consistency
     line: 13
     sha256: 3616d858ac850910fa5fe0ba07640d212fd6ca6bcd5b4ddfbd2ca97566a133de
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 13
-    sha256: 7e25158b215a13afcf8ffa660819c796662df77b91440106e828ba4dcc817411
     verdict: correct
   - rule: obligation-without-deadline
     line: 24
@@ -27,10 +19,6 @@ findings:
     sha256: eb6ff6a9ddc07c2586021540e65f3645328cc3897be0df0d327b47139af9e623
     verdict: correct
     note: the two parties are named in both orders within one sentence
-  - rule: bracket-width-consistency
-    line: 36
-    sha256: 324c124d3ca97180767625309fed1ef75c5e4105344756730c990b06e8246def
-    verdict: correct
   - rule: bracket-width-consistency
     line: 36
     sha256: 505a32013f86c5a49402be43d231a6729e70dad7b737e5c44acb24e0456db31e
@@ -123,10 +111,6 @@ findings:
     sha256: 860d1991e5ba23416c1544249ea13ca97721427a1bc5a2e09d2d76e38df8df97
     verdict: false-positive
     note: "the same sentence sets the time: at the next payment"
-  - rule: bracket-width-consistency
-    line: 81
-    sha256: 65bab457b0aab6f2e24fd675206afcf4e78b1ba0a809bd77a8c44c7eeac77637
-    verdict: correct
   - rule: bracket-width-consistency
     line: 81
     sha256: 6897cf735c1f35377b0e41f409b520c282f1739954fd0f3cec73d530fff6905a

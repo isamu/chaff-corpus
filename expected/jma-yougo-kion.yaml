@@ -12,11 +12,6 @@ findings:
     text: (高)め
     message: 括弧を「(」と書いています（この文書はふつう「（」。96 箇所のうち 5 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 57
-    text: )め
-    message: 括弧を「)」と書いています（この文書はふつう「）」。96 箇所のうち 5 箇所が違う）
-    verdict: correct
   - rule: hankaku-kana
     line: 78
     text: ､300hPaについてはそれぞれ約1500、3,000、9,000mとする。

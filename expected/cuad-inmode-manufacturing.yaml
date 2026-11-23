@@ -76,6 +76,12 @@ findings:
     text: and/or raw materials shall be limited to
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 49
+    text: return Products covered by the warranty
+    message: '"return" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: false-positive
+    note: "a step the customer takes to claim its own warranty remedy: not returning only forgoes the repair, so no deadline is owed"
   - rule: requirement-smell
     line: 49
     text: and/or with Products not covered under t
@@ -91,6 +97,12 @@ findings:
     text: Customer will not pass through to end us
     message: This paragraph runs 18 sentences (limit 8)
     verdict: unjudged
+  - rule: obligation-without-deadline
+    line: 59
+    text: notify Contractor, from time to time, qu
+    message: '"notify" is a duty with no deadline; a time makes it one that can be met or missed'
+    verdict: correct
+    note: shipping instructions given from time to time with no lead time before delivery
   - rule: undefined-acronym
     line: 59
     text: QA/QC certificate). Upon delivery to Cus

@@ -11,11 +11,6 @@ findings:
     text: (以下、本規約)は △△ による皆さんが ○○○○ を利用する上での規約を定める
     message: 括弧を「(」と書いています（この文書はふつう「（」。10 箇所のうち 4 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 8
-    text: )は △△ による皆さんが ○○○○ を利用する上での規約を定めるものです。
-    message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 4 箇所が違う）
-    verdict: correct
   - rule: doubled-word
     line: 8
     text: は △△ による皆さんが ○○○○ を利用する上での規約を定めるものです。
@@ -82,9 +77,4 @@ findings:
     line: 188
     text: (必ず連絡がつく情報を記載)
     message: 括弧を「(」と書いています（この文書はふつう「（」。10 箇所のうち 4 箇所が違う）
-    verdict: correct
-  - rule: bracket-width-consistency
-    line: 188
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。10 箇所のうち 4 箇所が違う）
     verdict: correct

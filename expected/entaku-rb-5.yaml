@@ -11,12 +11,6 @@ findings:
     text: (そういう空気作りがすごい)
     message: 括弧を「(」と書いています（この文書はふつう「（」。6 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 57
-    text: )
-    message: 括弧を「)」と書いています（この文書はふつう「）」。6 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: "the same pair as the ( on this line: one inconsistency reported twice"
   - rule: no-mixed-desumasu
     line: 71
     text: 他の本もあります。

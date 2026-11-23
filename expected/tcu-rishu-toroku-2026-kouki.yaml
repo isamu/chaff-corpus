@@ -57,14 +57,6 @@ findings:
     line: 89
     sha256: 6b9658e32ffcd8024911b0d290890c62f1c436246565184b2842734667e6a4ec
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 89
-    sha256: ab5653bc5f3f75a4ff780059731892f9f18479dc4f9df280684ec6abd1736c73
-    verdict: unjudged
-  - rule: kutoten-consistency
-    line: 89
-    sha256: 867e0ba67e5c10344207ec4125ede656ee399bf6a638d487d308a6e7c42ff9f5
-    verdict: unjudged
   - rule: heading-level-skip
     line: 108
     sha256: 397b7449cf84c51d3a6d7d38934ec3f1cc9f6b42b0f7962ec962a583cd624467
@@ -74,16 +66,8 @@ findings:
     sha256: 701e8fc08364025eac696a7d79c60bc0f4b40d8bd278a941dd3d1427a40b203d
     verdict: unjudged
   - rule: bracket-width-consistency
-    line: 154
-    sha256: e29890c258021aed290b375959bb8eada3bcc734cb953b302447643851da5422
-    verdict: unjudged
-  - rule: bracket-width-consistency
     line: 163
     sha256: 701e8fc08364025eac696a7d79c60bc0f4b40d8bd278a941dd3d1427a40b203d
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 163
-    sha256: e29890c258021aed290b375959bb8eada3bcc734cb953b302447643851da5422
     verdict: unjudged
   - rule: heading-echo
     line: 170

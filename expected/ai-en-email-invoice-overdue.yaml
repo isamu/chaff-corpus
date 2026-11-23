@@ -71,3 +71,9 @@ findings:
     message: '"[Company Name]" was never filled in'
     verdict: correct
     note: template blank left for the user
+  - rule: unfilled-placeholder
+    line: 24
+    text: "[Phone Number]"
+    message: '"[Phone Number]" was never filled in'
+    verdict: correct
+    note: template blank left for the user

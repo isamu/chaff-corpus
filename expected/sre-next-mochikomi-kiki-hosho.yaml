@@ -6,8 +6,3 @@ findings:
     text: （スタッフ・当日スタッフ）を保証の対象とする
     message: 括弧を「（」と書いています（この文書はふつう「(」。4 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: bracket-width-consistency
-    line: 14
-    text: ）を保証の対象とする
-    message: 括弧を「）」と書いています（この文書はふつう「)」。4 箇所のうち 2 箇所が違う）
-    verdict: correct

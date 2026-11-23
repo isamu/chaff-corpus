@@ -43,12 +43,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。62 箇所のうち 2 箇所が違う）
     verdict: correct
     note: 「(イコール)」だけ半角の括弧
-  - rule: bracket-width-consistency
-    line: 93
-    text: )女の子・女性とは限りません。「男性が性被害に遭うはずがない」、「男性なら抵抗で
-    message: 括弧を「)」と書いています（この文書はふつう「）」。62 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: 「(イコール)」だけ半角の括弧
   - rule: orthographic-variant
     line: 117
     text: 時に着ていた衣服・下着（洗わずにそのままで）

@@ -7,12 +7,6 @@ findings:
     message: 括弧を「(」と書いています（この文書はふつう「（」。58 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width parentheses in prose that mostly uses full-width ones
-  - rule: bracket-width-consistency
-    line: 8
-    text: ) にあるリソースをリクエストするとき、オリジン間 HTTP リクエストを実行し
-    message: 括弧を「)」と書いています（この文書はふつう「）」。58 箇所のうち 2 箇所が違う）
-    verdict: correct
-    note: half-width parentheses in prose that mostly uses full-width ones
   - rule: topic-predicate-distance
     line: 12
     text: つまり、これらの API を使用するウェブアプリケーションは、そのアプリケーショ
