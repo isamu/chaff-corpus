@@ -10,9 +10,9 @@ findings:
   - rule: max-kanji-continuous
     line: 1
     text: ５【経営上の重要な契約等】（英国駐車場事業運営会社における共同投資先との株主間契
-    message: 「株式会社日本政策投資銀行」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: a company's proper name
+    message: 「英国駐車場事業運営会社」は漢字が 11 字続いています（10 字まで）
+    verdict: correct
+    note: "chaff now reports 英国駐車場事業運営会社, a descriptive compound, not a name, that splits with の (英国の駐車場事業の運営会社)"
   - rule: max-sentence-length
     line: 1
     text: また、相互に協力してNCPの発展に向けた事業体制を構築し、NCP、当社及びDBJ

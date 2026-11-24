@@ -5,8 +5,8 @@ findings:
     line: 8
     text: SIG face-to-face meetings, developer sum
     message: '"SIG" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: an everyday term for the audience of a community governance page
+    verdict: correct
+    note: "an audience-only acronym never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
   - rule: title-case-consistency
     line: 12
     text: ""
@@ -22,8 +22,8 @@ findings:
     line: 18
     text: CNCF depending on the request size.
     message: '"CNCF" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: the name of the project's host foundation, an everyday name for that audience
+    verdict: correct
+    note: "an organisation's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
   - rule: vague-word-density
     line: 22
     text: Please provide links to show the appropr

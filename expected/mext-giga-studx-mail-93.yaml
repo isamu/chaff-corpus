@@ -11,8 +11,8 @@ findings:
     line: 4
     text: GIGA StuDX推進チーム）
     message: 「GIGA」が説明なしで使われています（説明のない略語 2 個）
-    verdict: false-positive
-    note: GIGA is the name of the programme (GIGAスクール構想), used as a proper name throughout the ministry's magazine
+    verdict: correct
+    note: "a programme's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
   - rule: undefined-acronym
     line: 5
     text: DXスクールの事例からギガスタチームの推し実践を紹介します！
