@@ -1,0 +1,26 @@
+id: ai-en-press-museum-exhibit
+chaff: 0.49.0
+findings:
+  - rule: preamble-length
+    line: 3
+    text: "**DULUTH, Minn., November 24, 2026** — T"
+    message: 4 paragraphs before the first heading (limit 2)
+    verdict: false-positive
+    note: a press release tells the story before its practical headings; that is the genre's shape
+  - rule: test:invented-detail
+    line: 14
+    what: the curator's quote, the crew's descendants speaking at the opening (16), the hands-on signals area (11), the opening hours (24) — not in the notes
+    verdict: missed
+    note: "catalog B01 (invented detail): words put in a named person's mouth and events the museum did not plan"
+  - rule: heading-level-skip
+    line: 18
+    text: "### Opening Day"
+    message: Heading "Opening Day" goes from level 1 to level 3 (expected 2)
+    verdict: correct
+    note: the title is level 1 and the section headings jump to level 3
+  - rule: date-without-year
+    line: 20
+    text: January 16. Admission is free that day.
+    message: "\"January 16\" has no year, and the document's dates run from 2026 to 2027, so the year is unclear"
+    verdict: false-positive
+    note: the opening date is given with its year in the first paragraph; this section repeats the same day

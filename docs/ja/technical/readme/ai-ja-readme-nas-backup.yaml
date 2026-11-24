@@ -1,0 +1,16 @@
+id: ai-ja-readme-nas-backup
+title: README：nas-backup
+language: ja
+genre: technical/readme
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: 事務所のNASのバックアップスクリプトのREADMEを、後任の人向けに書いてください。rsyncで外付けHDD（日付フォルダで30日分）、rcloneでクラウド（最新のみ）、毎晩2時にNASのタスクスケジューラで実行、失敗したらメール。ファイルの戻し方も。自然な文章でお願いします。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 7e76e0bdf309a42eec09e8e937196e73003822911137c51f70d242182040be91
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a request to write naturally (style: natural). The text is the document part of the reply, without the assistant's lead-in or closing line."

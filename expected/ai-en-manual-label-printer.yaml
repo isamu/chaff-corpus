@@ -1,0 +1,20 @@
+id: ai-en-manual-label-printer
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 7
+    what: the printer's colour and brand style ("white Rollo-style"), its place on the table and the USB link, the button-on-top steps (29) — not in the notes
+    verdict: missed
+    note: "catalog B01 (invented detail): physical details staff would look for and not find"
+  - rule: list-item-form-mix
+    line: 31
+    text: The printer will feed one blank label to
+    message: '"The printer will feed one blank label to line itself up." opens with a noun phrase; the other items in this list open with a verb (1 of 5)'
+    verdict: false-positive
+    note: a step that says what the printer does and then gives the order (Throw that label away); usual in a how-to
+  - rule: step-statement-mix
+    line: 31
+    text: The printer will feed one blank label to
+    message: This step is a statement that opens with its subject, unlike the other 4 instructions
+    verdict: false-positive
+    note: the step states what the machine does and then gives the order; a reader is not confused by it

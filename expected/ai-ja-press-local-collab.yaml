@@ -1,0 +1,44 @@
+id: ai-ja-press-local-collab
+chaff: 0.49.0
+findings:
+  - rule: latin-spacing
+    line: 15
+    text: " 1,450円（いずれも税込）"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: a space between 個入り and the price where the release otherwise writes numbers against Japanese; minor
+  - rule: latin-spacing
+    line: 15
+    text: " 280円、5個入り 1,450円（いずれも税込）"
+    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。9 箇所のうち 2 箇所が違う）
+    verdict: correct
+    note: the same line, 1個 280円; part of the same minority
+  - rule: no-doubled-joshi
+    line: 32
+    text: の果樹園の設備の整備に充てるため、同校に寄付します。
+    message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
+    verdict: correct
+    note: "同校の果樹園の設備の整備に: three の in a row; 果樹園設備の整備 reads better"
+  - rule: test:invented-detail
+    line: 36
+    what: 1958年創業、発酵バターのクリーム（12行）— メモにない
+    verdict: missed
+    note: "catalog B01 (invented detail): 会社の沿革と原材料をメモにないまま書いている"
+  - rule: unfilled-placeholder
+    line: 39
+    text: 〇〇町1-2-3
+    message: 「〇〇町」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 45
+    text: 〇〇
+    message: 「〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"
+  - rule: unfilled-placeholder
+    line: 46
+    text: 〇〇-〇〇〇〇
+    message: 「〇〇-〇〇〇〇」が埋まっていません
+    verdict: correct
+    note: "catalog J27: a 〇〇 blank a template leaves for the user, in the address, signature or a field of a business document"

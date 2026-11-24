@@ -1,0 +1,9 @@
+id: ai-en-readme-env-check
+chaff: 0.49.0
+findings:
+  - rule: code-fence-language-mix
+    line: 5
+    text: "```"
+    message: This code block names no language, unlike the others (6 blocks name one)
+    verdict: false-positive
+    note: a sample of terminal output, which has no language to name; the code blocks that name one are commands

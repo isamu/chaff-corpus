@@ -1,0 +1,26 @@
+id: ai-ja-readme-shift-scheduler
+title: README：shift-maker
+language: ja
+genre: technical/readme
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: |-
+    自作ツールのREADMEを書いてください。
+
+    shift-maker
+    ・小さい店向けシフト自動作成
+    ・staff.csv（出られない日・希望日）とdemand.csv（曜日×枠の必要人数）を読む
+    ・OR-Toolsで解いてExcel出力
+    ・週の上限日数、連勤上限、一緒に入れない／必ず一緒、をconfig.yamlで
+    ・満たせない枠はエラーにせず一覧表示
+    ・スキル考慮は未対応、祝日も未対応
+    ・MIT
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: b7e45c8760bc8dcce961d7a23e036998250eb7d83a2a847e6653f9e29968fe2c
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

@@ -1,0 +1,26 @@
+id: ai-ja-manual-store-closing
+title: スーパーの閉店作業マニュアル
+language: ja
+genre: docs/manual
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: |-
+    スーパーの閉店作業マニュアルを作ってください。新人アルバイト向けです。メモ：
+    ・遅番2名で、必ず2人
+    ・20:30閉店案内、揚げ物に値引きシール、21:00自動ドア出口のみ
+    ・レジ締め、金種表、合わなければ数え直し→責任者、自腹で埋めない
+    ・売上金は金庫
+    ・廃棄は登録してから捨てる
+    ・フライヤー電源OFF、油交換は早番（熱い油NG）
+    ・冷凍-18℃以下、冷蔵10℃以下を記録
+    ・警備セット、暗証番号は口頭
+    ・チェックリストに責任者の印
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: e4a6175ebc0b6ed659fd8c518d92363e95896efd64f3863e9c381eb25276dbbe
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

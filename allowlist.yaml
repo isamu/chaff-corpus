@@ -796,3 +796,48 @@
 - id: ai-ja-press-store-opening
   match: "info@example.jp"
   reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-press-funding-round
+  match: "press@tallyroot.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-press-museum-exhibit
+  match: "(555) 730-4418"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-press-museum-exhibit
+  match: "dprice@lakeshoremaritime.example"
+  reason: an address given in the request of an origin ai document, on a reserved example domain
+- id: ai-en-press-product-recall
+  match: "(555) 019-2640"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-press-product-recall
+  match: "media@brightnest.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-faq-community-pool
+  match: "(555) 284-1190"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-faq-community-pool
+  match: "(555) 284-1195"
+  reason: a number the model invented in an origin ai document; 555 numbers are reserved for fiction
+- id: ai-en-faq-meal-kit
+  match: "support@pantrybox.example"
+  reason: an address given in the request of an origin ai document, on a reserved example domain
+- id: ai-en-manual-expense-claims
+  match: "finance@company.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-readme-csv-diff
+  match: "ana@old.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-readme-csv-diff
+  match: "ana@new.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-readme-csv-diff
+  match: "jordan@example.com"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-en-readme-csv-diff
+  match: "sam@example.com"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-ja-press-funding
+  match: "pr@karutenote.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain
+- id: ai-ja-press-local-collab
+  match: "info@yamabuki-seika.example"
+  reason: an address the model invented in an origin ai document, on a reserved example domain

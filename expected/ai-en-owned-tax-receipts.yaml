@@ -1,0 +1,24 @@
+id: ai-en-owned-tax-receipts
+chaff: 0.49.0
+findings:
+  - rule: section-length-uniformity
+    line: 1
+    text: ""
+    message: Section length varies by only 15% (want at least 35%)
+    verdict: correct
+    note: five numbered habits filled to the same size; the template listicle a reader recognises
+  - rule: ai-tell
+    line: 3
+    what: "\"It doesn't have to be that way.\" after the opening problem; the same turn in ai-en-owned-bike-winter"
+    verdict: missed
+    note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem"
+  - rule: ai-tell
+    line: 9
+    what: '"If you only do one thing on this list, make it this one."'
+    verdict: missed
+    note: 'candidate phrase: "If you only do one thing …, make it …"'
+  - rule: closing-cliche
+    line: 45
+    what: "\"We're here to help you spend less time on paperwork and more time running your business.\""
+    verdict: missed
+    note: "catalog D (closing encouragement): the stock \"we're here to help … less time on X, more time on Y\" sign-off"

@@ -1,0 +1,16 @@
+id: ai-en-owned-inn-rainy-day
+title: "Inn blog: a rainy day in Harbor Bay"
+language: en
+genre: blog/owned-media
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: "Write a blog post for our inn's website: what to do on a rainy day in Harbor Bay. Casual and friendly, like we're talking to our guests. Mention the bakery on Front Street, the bookshop, the maritime museum, the chowder place on the pier, and that we light the fire in the lounge every afternoon."
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: d227a456a9d9ad8f660194d4dfb11473a0b6d2895be63a7c5fd8ac4e8396f883
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a request for a casual tone (style: casual). The text is the document part of the reply, without the assistant's lead-in or closing line."

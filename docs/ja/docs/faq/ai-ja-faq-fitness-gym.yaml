@@ -1,0 +1,16 @@
+id: ai-ja-faq-fitness-gym
+title: よくある質問：24時間フィットネスジム
+language: ja
+genre: docs/faq
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: 24時間営業のフィットネスジムのホームページに載せる「よくある質問」ページを作ってください。
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: f7252774451347b569502da5f9095b820a5db492f182b2d897d1d643b08a6d4c
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): a plain request (style: plain). The text is the document part of the reply, without the assistant's lead-in or closing line."

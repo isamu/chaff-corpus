@@ -1,0 +1,20 @@
+id: ai-en-readme-standup-bot
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 5
+    what: the project's history ("our own team of six", "didn't want another paid tool") and the answer-order limitation (90) — not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): a backstory and a known bug the user never gave"
+  - rule: rule-of-three
+    line: 9
+    text: 1. At the configured time (default 9:30,
+    message: 4 of 5 lists have exactly three items (70% allowed)
+    verdict: false-positive
+    note: the three questions and the three-step flow were set by the request; the other lists are not padded to three
+  - rule: unknown-word
+    line: 76
+    text: systemd unit file in `deploy/standup-bot
+    message: '"systemd" is not in the dictionary; did you mean "systems"?'
+    verdict: false-positive
+    note: systemd is the name of the Linux service manager, in a technical README

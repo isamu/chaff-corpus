@@ -1,0 +1,44 @@
+id: ai-ja-manual-attendance
+chaff: 0.49.0
+findings:
+  - rule: nominalization
+    line: 5
+    text: 申請を行う方法について説明するものです。全従業員は本マニュアルに従って、正確な勤
+    message: 「申請を行う」は「申請する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 〜を行う piled up through the manual (申請を行う, 記録を行う, 処理を行う); 〜する is enough. Stiff, though common in human manuals too
+  - rule: nominalization
+    line: 5
+    text: 記録を行ってください。
+    message: 「記録を行う」は「記録する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 記録を行う for 記録する; part of the same pile
+  - rule: nominalization
+    line: 53
+    text: 申請を行ってください。
+    message: 「申請を行う」は「申請する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 申請を行う for 申請する; part of the same pile
+  - rule: nominalization
+    line: 59
+    text: 申請を行ってください。
+    message: 「申請を行う」は「申請する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 申請を行う for 申請する; part of the same pile
+  - rule: nominalization
+    line: 65
+    text: 申請を行い、所属長にその理由を説明してください。
+    message: 「申請を行う」は「申請する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 申請を行い for 申請し; part of the same pile
+  - rule: nominalization
+    line: 69
+    text: 処理を行います。
+    message: 「処理を行う」は「処理する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
+    verdict: correct
+    note: 処理を行います for 処理します; part of the same pile
+  - rule: test:invented-detail
+    line: 74
+    what: 月次確定の期限（翌月3営業日目17:00）、休憩12:00〜13:00（29行）、有給は3営業日前（53行）、5回でロック（13行）、内線2100 — 依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): 社内規程の数字を作って手順として書いている"

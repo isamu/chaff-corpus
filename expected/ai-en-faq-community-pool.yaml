@@ -1,0 +1,8 @@
+id: ai-en-faq-community-pool
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 18
+    what: season pass prices, the swim test and wristband (31), the half-price seniors rate, the $75/$110 shelter fee (47), lap swim and swim lessons — not in the request
+    verdict: missed
+    note: "catalog B01 (invented detail): prices and safety rules a city page would publish as fact"

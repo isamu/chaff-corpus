@@ -1,0 +1,28 @@
+id: ai-en-readme-env-check
+title: "README: envguard"
+language: en
+genre: technical/readme
+origin: ai
+generated:
+  model: claude-opus-5-5
+  date: 2026-11-24
+  prompt: |-
+    Write the README for my npm package from these notes:
+
+    envguard
+    - compares .env with .env.example, fails if keys missing or empty
+    - CLI: npx envguard, exit 1 on problems
+    - also checkEnv() from code, reads process.env
+    - flags: --env, --example, --allow-empty, --extra, --quiet
+    - optional vars via comment `# envguard: optional`
+    - `--env -` for CI (no .env file)
+    - doesn't load env (use dotenv), doesn't validate types
+    - no deps, never prints values
+    - MIT
+license:
+  name: MIT
+  url: https://github.com/isamu/chaff-corpus/blob/main/LICENSE
+  note: written for this repository by the model in generated; under the repository's licence
+redistribute: true
+sha256: 4fb7b8ba9e20900eea83f990325e64c01602769b1951e573721958acf9c3f5ba
+notes: "third set of isamu/lab#1918 (genres with no AI documents yet): bullet-point notes to expand (style: notes). The text is the document part of the reply, without the assistant's lead-in or closing line."

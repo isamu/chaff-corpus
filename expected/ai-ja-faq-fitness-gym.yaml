@@ -1,0 +1,14 @@
+id: ai-ja-faq-fitness-gym
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 31
+    what: 料金表（8,800円ほか）、入会金・事務手数料、体験1,100円（17行）、スタッフ常駐時間、休会550円、駐車場10台 — 依頼に一つもない
+    verdict: missed
+    note: "catalog B01 (invented detail): 料金と規約を丸ごと作って事実として載せている"
+  - rule: heading-end-punctuation-mix
+    line: 37
+    text: "### Q. 支払い方法を教えてください。"
+    message: 見出し「Q. 支払い方法を教えてください。」だけ「。」で終わっています（ほかの見出しは「Q. 入会に必要なものは何ですか？」など 11 個が「：」「。」なしで終わる）
+    verdict: correct
+    note: one question heading ends in 。 (教えてください。) where the others end in ？ or nothing

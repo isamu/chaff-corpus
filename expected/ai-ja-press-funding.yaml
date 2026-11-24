@@ -1,0 +1,30 @@
+id: ai-ja-press-funding
+chaff: 0.49.0
+findings:
+  - rule: test:invented-detail
+    line: 14
+    what: 自社調査の1日70分、導入450事業所と40%削減（16行）、大阪・福岡の拠点（24行）、60名体制（25行）、投資家パートナーの名前とコメント（31行）— 依頼にない
+    verdict: missed
+    note: "catalog B01 (invented detail): 数字と人名とコメントを事実として発表している"
+  - rule: bold-label-list
+    line: 22
+    what: 「1. **音声認識精度の向上**：…」から4項目続く「**札**：説明」
+    verdict: missed
+    note: two-part 「**札**：説明」 items in a numbered list; the generated release shape (cf. the proposal case judged correct)
+  - rule: empty-intensifier
+    line: 33
+    text: 「介護業界のDXは、社会的にも極めて重要なテーマです。カルテノートは、現場の声に
+    message: 「極めて重要」は、中身を言わずに強調だけしています
+    verdict: correct
+    note: 極めて重要 in the investor quote says nothing about why; part of a stock quote (真摯に耳を傾け, 全力で支援)
+  - rule: unfilled-placeholder
+    line: 38
+    what: 「所在地：東京都品川区〇〇」の〇〇が報告されない
+    verdict: missed
+    note: "catalog J27: a 〇〇 blank after a ward name at the end of a field is not reported, while 〇〇町1-2-3 in ai-ja-press-local-collab is"
+  - rule: latin-spacing
+    line: 39
+    text: " 森川 遼"
+    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。6 箇所のうち 1 箇所が違う）
+    verdict: false-positive
+    note: the space separates a title from a name (代表取締役CEO 森川 遼) in a heading, as releases write it
