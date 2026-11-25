@@ -90,7 +90,8 @@ findings:
     line: 17
     text: ）電子情報通信分野  　　ＨＤＤ用サスペンション日本140（ 4）　　プリンター
     message: 括弧を「）」と書いています（この文書はふつう「)」。3 箇所のうち 1 箇所が違う）
-    verdict: unjudged
+    verdict: false-positive
+    note: the full-width bracket around a temporary-staff count in the flattened headcount table is read as an item number of the one-line run and compared with the half-width (1)/(2) labels; the document writes full-width brackets in prose and tables, as the other finding on this line says
   - rule: fullwidth-alnum-consistency
     line: 17
     text: ＨＤＤ用サスペンション140　　プリンター関連3　　通信関連14全社共通174合

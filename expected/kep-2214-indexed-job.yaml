@@ -16,7 +16,8 @@ findings:
   - rule: link-definition-unused
     line: 61
     sha256: 497d29efe23cf60c18ea195b77eebca36dca02e7742a7bed185a207c126d8d36
-    verdict: unjudged
+    verdict: correct
+    note: no reference-style link uses this label; the text links the repository only inline, so the KEP template's definition is left in
   - rule: contraction-consistency
     line: 91
     sha256: 84ba103a8105c3a56aa4491cb76e456dfaeeeda8f0b948ff71bad5d024543797
@@ -100,11 +101,13 @@ findings:
   - rule: link-definition-unused
     line: 685
     sha256: afc8ae8178488ba4c545ed8444f969fbe3a7b4d17d4de314114a98bb0220a8cb
-    verdict: unjudged
+    verdict: correct
+    note: the KEP template's definition is left in, but the question that linked it lost its brackets, so nothing uses it
   - rule: link-definition-unused
     line: 686
     sha256: 329bc7b52c99def3b8cd0f4677a18c5c0d418040cc1603c57e6ebd546b6d30f2
-    verdict: unjudged
+    verdict: correct
+    note: the heading at line 655 names this target as plain text without brackets, so the definition is unused and the link meant there is missing
   - rule: list-marker-mix
     line: 690
     sha256: 7bb67cdf551ca8c32fe6c048a1a1e33efdaa3e8a790158d00515c6843d144463

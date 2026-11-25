@@ -5,7 +5,8 @@ findings:
     line: 1
     text: (単位：百万円)日本海外合計前年同期比(％)アジア北中南米その他計内、中国売上高
     message: 括弧「(」の類を、全角で 37 箇所、半角で 22 箇所書いています。この文書には書き方が二通りあります
-    verdict: unjudged
+    verdict: correct
+    note: "the document really writes brackets two ways: full-width in the results prose, half-width in the tables and the later summary (前期比…%増)"
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ３ヵ年計画『SHIFT』で掲げた2023年目標連結売上高83,500百万円、連結

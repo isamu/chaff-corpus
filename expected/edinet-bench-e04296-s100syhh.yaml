@@ -80,7 +80,8 @@ findings:
     line: 13
     text: 当社より本社及び倉庫の建物等の賃貸を受けております。東北丸八運輸株式会社(連結子
     message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
+    verdict: false-positive
+    note: "a flattened table: the three sentences are the relationship cells of two subsidiaries' rows, counted as one run of prose"
   - rule: max-kanji-continuous
     line: 17
     text: 丸八倉庫労働組合と全日本建設交運一般労働組合とが併存しております。 (4) 管理

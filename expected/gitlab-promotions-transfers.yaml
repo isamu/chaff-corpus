@@ -5,7 +5,8 @@ findings:
     line: 40
     text: "**Job Detail Changes Due to Business Req"
     message: The bold line "Job Detail Changes Due to Business Requirements or Reorganizations" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming a subsection under "### Internal Mobility"
   - rule: contraction-consistency
     line: 42
     text: These types of changes are specified as
@@ -64,7 +65,8 @@ findings:
     line: 133
     text: "**PROMOTION NOMINATION PREPARATION & SUB"
     message: The bold line "PROMOTION NOMINATION PREPARATION & SUBMISSION" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming a phase of the promotion timeline, heading its list
   - rule: hyphen-as-dash
     line: 136
     text: " - All manager promotion nominations mus"
@@ -74,7 +76,8 @@ findings:
     line: 139
     text: "**COMPENSATION/ ACR PLANNING (tentative"
     message: The bold line "COMPENSATION/ ACR PLANNING (tentative schedule)" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming the second phase of the promotion timeline, heading its list
   - rule: undefined-acronym
     line: 141
     text: ACR opens to planners (promotion approva
@@ -104,17 +107,20 @@ findings:
     line: 178
     text: "**Project impact on GitLab / Business Re"
     message: The bold line "Project impact on GitLab / Business Result" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone heading the example result block under "#### Business Results"; the parts below it are further bold labels
   - rule: pseudo-heading
     line: 180
     text: "**Project/accomplishment impact**"
     message: The bold line "Project/accomplishment impact" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming one part of the example result, heading its list
   - rule: pseudo-heading
     line: 184
     text: "**Business result**"
     message: The bold line "Business result" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming one part of the example result, heading its list
   - rule: undefined-acronym
     line: 188
     text: OKR? a key investment theme? etc.).
@@ -124,7 +130,8 @@ findings:
     line: 192
     text: "**Team member’s direct contribution**"
     message: The bold line "Team member’s direct contribution" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming one part of the example result, heading its list
   - rule: undefined-acronym
     line: 194
     text: DRI for the global cross functional team
@@ -199,7 +206,8 @@ findings:
     line: 324
     text: "**Required Documentation**"
     message: The bold line "Required Documentation" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: 'a bold line alone naming a subsection under "### FY25 CTO Organization Promotion Guidance", a sibling of the #### headings after it'
   - rule: undefined-acronym
     line: 342
     text: IC Career Matrix](/handbook/engineering/

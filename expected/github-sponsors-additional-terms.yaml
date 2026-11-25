@@ -415,7 +415,8 @@ findings:
     line: 212
     text: "**Full service agreement**"
     message: The bold line "Full service agreement" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming one of the two agreements under "### 3.8. Stripe Connect", with its own scope line and body
   - rule: defined-term-form
     line: 214
     text: Sponsored Developer Accounts registered
@@ -440,7 +441,8 @@ findings:
     line: 218
     text: "**Recipient service agreement**"
     message: The bold line "Recipient service agreement" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: a bold line alone naming the second agreement under "### 3.8. Stripe Connect", the sibling of line 212
   - rule: defined-term-form
     line: 220
     text: Sponsored Developer Accounts in all othe
