@@ -16,12 +16,14 @@ findings:
     line: 13
     text: "**Structure**"
     message: The bold line "Structure" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: "a bold line alone above its list, heading a subsection under \"## Proposed Program\""
   - rule: pseudo-heading
     line: 20
     text: "**Support for participants**"
     message: The bold line "Support for participants" stands in for a heading
-    verdict: unjudged
+    verdict: correct
+    note: "a bold line alone above its list, heading a subsection under \"## Proposed Program\""
   - rule: test:empty-conclusion
     line: 62
     what: the Recommendation repeats the Executive Summary and ends "A small investment now could … help build a more connected organization"

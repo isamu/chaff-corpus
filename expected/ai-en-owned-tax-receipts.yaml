@@ -16,7 +16,8 @@ findings:
     line: 9
     text: If you only do one thing on this list, m
     message: "2 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform"
-    verdict: unjudged
+    verdict: correct
+    note: the stock "If you only do one thing on this list, make it this one" and the template listicle together read as generated; anchored at the first signal finding
   - rule: ai-tell
     line: 9
     text: If you only do one thing on this list, m

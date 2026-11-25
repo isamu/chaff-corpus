@@ -5,7 +5,8 @@ findings:
     line: 1
     text: "#Objectives and Key Results"
     message: '"#Objectives and Key Results" has no space after "#" and is not a heading'
-    verdict: unjudged
+    verdict: correct
+    note: "the document title, written as a heading without the space; CommonMark renders it as a paragraph"
   - rule: max-sentence-length
     line: 51
     text: "% completion** -- if the goal is to do s"

@@ -11,7 +11,8 @@ findings:
     line: 3
     text: "Let's be honest: it rains here. A lot. O"
     message: "2 signals of generated text occur together in this document (2 needed): An honesty marker, Section lengths are too uniform"
-    verdict: unjudged
+    verdict: correct
+    note: the honesty markers and the even sections together read as generated; anchored at the first signal finding (was line 7)
   - rule: announcing-opener
     line: 3
     what: '"Good news: rainy days are some of our favorite days in town."'
@@ -22,13 +23,7 @@ findings:
     text: "Let's be honest: it rains here. A lot. O"
     message: "\"let's be honest\" flags this sentence as candid"
     verdict: correct
-    note: the candour marker opening the post; the second one on line 7 is reported, this one is not; found by chaffjs 0.51.0
-  - rule: ai-generated-composite
-    line: 7
-    text: Honestly, there are worse ways to spend
-    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
-    verdict: correct
-    note: the honesty marker and the even sections together read as generated
+    note: the candour marker opening the post; the second one is on line 7; found by chaffjs 0.51.0
   - rule: honesty-marker
     line: 7
     text: Honestly, there are worse ways to spend

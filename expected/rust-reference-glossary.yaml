@@ -35,4 +35,5 @@ findings:
     line: 404
     text: "[*namespace*]: names/namespaces.md"
     message: No link uses the definition "*namespace*"
-    verdict: unjudged
+    verdict: correct
+    note: "the glossary links namespace inline as [namespace](#namespace); nothing uses [*namespace*] or [namespace][]"

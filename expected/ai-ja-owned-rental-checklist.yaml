@@ -23,7 +23,8 @@ findings:
     line: 19
     text: 意外と見落としがちなのがコンセントです。テレビ、冷蔵庫、電子レンジ、ベッドの近く
     message: 生成文の特徴が 3 種、同じ文書にそろっています（2 種から）。生成文にありがちな言い回し、文の長さが単調、定型の結び
-    verdict: unjudged
+    verdict: correct
+    note: the stock lead-in, the even rhythm and the stock closing together read as generated; anchored at the first signal finding (was line 65)
   - rule: ai-tell
     line: 19
     text: 意外と見落としがちなのがコンセントです。テレビ、冷蔵庫、電子レンジ、ベッドの近く
@@ -41,12 +42,6 @@ findings:
     message: 「しっかりと」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: correct
     note: しっかりと again in the summary; part of the same pile
-  - rule: ai-generated-composite
-    line: 65
-    text: 気になる物件がございましたら、お気軽にお問い合わせください。
-    message: 「sentence-rhythm、closing-cliche」が同じ文書にそろっています（2 種、2 種から）
-    verdict: correct
-    note: the even rhythm and the stock closing together read as generated
   - rule: closing-cliche
     line: 65
     text: 気になる物件がございましたら、お気軽にお問い合わせください。

@@ -17,12 +17,6 @@ findings:
     what: '"- **A front light** bright enough …" (three items), then the same shape in the tyre, clothing and care lists'
     verdict: missed
     note: catalog E18 (bold labels, en)
-  - rule: ai-generated-composite
-    line: 21
-    text: If you ride on ice regularly, **studded
-    message: '"section-length-uniformity, bold-emphasis" occur together in this document (2 signals, 2 needed)'
-    verdict: correct
-    note: the even sections and the bold scattered through every list together read as generated
   - rule: bold-emphasis
     line: 21
     text: If you ride on ice regularly, **studded
@@ -33,7 +27,8 @@ findings:
     line: 25
     text: If you only make one change to your bike
     message: "3 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform, Bold emphasis scattered through the text"
-    verdict: unjudged
+    verdict: correct
+    note: the stock "If you only make one change …, make it …", the even sections and the bold scattered through every list together read as generated; anchored at the first signal finding (was line 21)
   - rule: ai-tell
     line: 25
     text: If you only make one change to your bike
