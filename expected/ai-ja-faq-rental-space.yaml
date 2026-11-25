@@ -6,9 +6,3 @@ findings:
     what: キャンセル料の率（50%・100%）、予約開始日（6行）、立食24人・机8台、ゴミ処分1袋500円（34行）、宗教勧誘のお断り（50行）、2営業日以内の返信 — 依頼にない
     verdict: missed
     note: "catalog B01 (invented detail): 料金と規約を依頼にないまま決めている"
-  - rule: undefined-acronym
-    line: 28
-    text: HDMIケーブルを用意しています。USB-CやMini DisplayPortの
-    message: 「HDMI」が説明なしで使われています（説明のない略語 1 個）
-    verdict: false-positive
-    note: HDMI is the name of a connector everyone knows from the plug; spelling it out would be odd

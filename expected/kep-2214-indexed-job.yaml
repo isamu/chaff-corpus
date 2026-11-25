@@ -13,6 +13,10 @@ findings:
     line: 49
     sha256: 6cb1d0d161f31553fe912a1e33b8bb6784f783b7c83c4cdc5b79214256840e3a
     verdict: unjudged
+  - rule: link-definition-unused
+    line: 61
+    sha256: 497d29efe23cf60c18ea195b77eebca36dca02e7742a7bed185a207c126d8d36
+    verdict: unjudged
   - rule: contraction-consistency
     line: 91
     sha256: 84ba103a8105c3a56aa4491cb76e456dfaeeeda8f0b948ff71bad5d024543797
@@ -92,6 +96,14 @@ findings:
   - rule: step-statement-mix
     line: 680
     sha256: 5449fe13a1db1040669348ff506d222e8de80a2a6467573feb2b784e85f963f2
+    verdict: unjudged
+  - rule: link-definition-unused
+    line: 685
+    sha256: afc8ae8178488ba4c545ed8444f969fbe3a7b4d17d4de314114a98bb0220a8cb
+    verdict: unjudged
+  - rule: link-definition-unused
+    line: 686
+    sha256: 329bc7b52c99def3b8cd0f4677a18c5c0d418040cc1603c57e6ebd546b6d30f2
     verdict: unjudged
   - rule: list-marker-mix
     line: 690

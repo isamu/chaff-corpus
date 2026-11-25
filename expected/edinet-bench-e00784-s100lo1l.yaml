@@ -52,11 +52,6 @@ findings:
     text: (2）提出会社の状況   2021年３月31日現在従業員数（人）平均年齢（歳）平
     message: この文は 165 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 17
-    text: ３．賃貸事業につきましては、その他及び全社（共通）の従業員が兼務しております。
-    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
   - rule: topic-predicate-distance
     line: 17
     text: 当社の労働組合は日本化学工業労働組合と称し、本社及び工場ごとに支部が置かれ、20
@@ -299,11 +294,6 @@ findings:
     line: 69
     text: （3）【株主総会決議又は取締役会決議に基づかないものの内容】区分株式数（株）価額
     message: この文は 153 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 73
-    text: （4）【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数（株）処分
-    message: 「区分当事業年度当期間株式数」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 73

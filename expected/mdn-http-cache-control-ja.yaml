@@ -45,12 +45,6 @@ findings:
     text: (英語)</sup>いる振る舞いです。なぜなら、履歴ナビゲーションは通常、前回訪
     message: 括弧を「(」と書いています（この文書はふつう「（」。59 箇所のうち 9 箇所が違う）
     verdict: correct
-  - rule: broken-link
-    line: 361
-    text: "[ブラウザーの互換性](#browser_compatibility)を参照）。"
-    message: リンク「[ブラウザーの互換性](#browser_compatibility)」が指す「#browser_compatibility」の見出しがこの文書にありません
-    verdict: false-positive
-    note: an anchor the publishing platform (MDN) gives its standard browser-compatibility section, not one derived from the localised heading text
   - rule: orthographic-variant
     line: 451
     text: 既に中間サーバーのキャッシュに保存されているレスポンスを、クリアするためのキャッ

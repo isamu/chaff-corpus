@@ -256,11 +256,6 @@ findings:
     text: If you are seeking reimbursement for per
     message: This sentence runs 53 words (limit 40)
     verdict: unjudged
-  - rule: hyphen-as-dash
-    line: 799
-    text: " - Miscellaneous** as the expense"
-    message: '"-" stands in for a dash'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 807
     text: HRM](https://insite.gsa.gov/directives-l

@@ -403,11 +403,6 @@ findings:
     text: Use ‘WhatsApp’ with an upper case A. Do
     message: The first sentence repeats the heading "WhatsApp"
     verdict: unjudged
-  - rule: name-variant
-    line: 2857
-    text: Whatsapp’.
-    message: '"Whatsapp" is written "WhatsApp" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
   - rule: hyphen-as-dash
     line: 2880
     text: " - for example, if they were living in a"

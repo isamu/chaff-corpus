@@ -31,9 +31,3 @@ findings:
     message: Nothing under the heading "[Rollcall Vote No. 75 Leg.]"
     verdict: false-positive
     note: a parent heading whose content is under the YEAS/NAYS subheadings that follow
-  - rule: name-variant
-    line: 626
-    text: Whitehouse
-    message: '"Whitehouse" is written "White House" elsewhere in the document (case, width or punctuation)'
-    verdict: false-positive
-    note: a senator's surname, not a spelling of the White House

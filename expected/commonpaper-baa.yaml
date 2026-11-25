@@ -1,12 +1,6 @@
 id: commonpaper-baa
 chaff: 0.34.0
 findings:
-  - rule: oxford-comma-consistency
-    line: 9
-    text: Provider</span> agrees to mitigate, to t
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: a pair of commas around a parenthetical phrase read as a list
   - rule: vague-word-density
     line: 9
     text: Provider</span> agrees to mitigate, to t

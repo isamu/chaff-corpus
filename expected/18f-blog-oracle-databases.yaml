@@ -67,18 +67,6 @@ findings:
     verdict: correct
     note: a straight apostrophe where the post mostly writes curly ones
   - rule: quote-style-consistency
-    line: 67
-    text: "\" (don't use this), and you see a block"
-    message: The quote mark " here, where the document usually writes “” (4 of 9)
-    verdict: false-positive
-    note: the quotes of a password value meant as code; the code span's closing backtick is missing, so it reads as prose
-  - rule: quote-style-consistency
-    line: 67
-    text: "\"my-secure-password\" (don't use this), a"
-    message: The quote mark " here, where the document usually writes “” (4 of 9)
-    verdict: false-positive
-    note: the quotes of a password value meant as code; the code span's closing backtick is missing, so it reads as prose
-  - rule: quote-style-consistency
     line: 81
     text: "'ll start importing data in Part 2 below"
     message: The quote mark ' here, where the document usually writes ’‘ (19 of 103)
@@ -131,12 +119,6 @@ findings:
     message: This block writes its commands with a prompt ($) differently from the other 3 blocks
     verdict: correct
     note: two command blocks show a $ prompt, the docker exec block does not
-  - rule: unknown-word
-    line: 180
-    text: dition <strong>P</strong>luggable <stron
-    message: '"dition" is not in the dictionary; did you mean "didion"?'
-    verdict: false-positive
-    note: a word split by inline <strong> tags (e<strong>X</strong>press <strong>E</strong>dition)
   - rule: unbalanced-bracket
     line: 181
     text: “high-level administrative tasks — see [

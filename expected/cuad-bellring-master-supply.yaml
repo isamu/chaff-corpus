@@ -7,18 +7,12 @@ findings:
     message: '"Master Purchase Commitment" is written like a defined term, but the document defines it nowhere'
     verdict: correct
     note: a capitalised instrument named throughout and never defined
-  - rule: undefined-term
-    line: 21
-    text: Commitments shall be subject exclusively
-    message: '"Commitments" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: a shortened back-reference to the capitalised term named just before
   - rule: undefined-acronym
     line: 23
     text: USPS, overnight courier, email, and fax
     message: '"USPS" is used without an expansion (9 such acronyms)'
     verdict: correct
-    note: "an organisation's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
+    note: an organisation's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml
   - rule: requirement-smell
     line: 33
     text: and/or term adjustments despite their be
@@ -63,13 +57,13 @@ findings:
     text: AIB International, Silliker, or GMA SAFE
     message: '"AIB" is used without an expansion (9 such acronyms)'
     verdict: correct
-    note: "an organisation's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
+    note: an organisation's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml
   - rule: undefined-acronym
     line: 55
     text: GMA SAFE. Supplier will submit summaries
     message: '"GMA" is used without an expansion (9 such acronyms)'
     verdict: correct
-    note: "a scheme's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
+    note: a scheme's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml
   - rule: requirement-smell
     line: 59
     text: and/or test such Ingredients to confirm
@@ -99,12 +93,6 @@ findings:
     message: '"and/or" does not say whether both are meant or either is enough'
     verdict: correct
     note: and/or in a duty
-  - rule: defined-term-form
-    line: 85
-    text: supplier information, and information re
-    message: '"Supplier" is defined with a capital on line 7, but written in lower case here'
-    verdict: false-positive
-    note: a generic common noun in a list of information categories that happens to match a defined party name
   - rule: which-that-consistency
     line: 107
     text: which are the subject of this Agreement,
@@ -135,12 +123,6 @@ findings:
     message: '"Minimum Purchase Commitment" is written like a defined term, but the document defines it nowhere'
     verdict: correct
     note: a capitalised term used once and never defined, close to but not the same as the commitment named elsewhere
-  - rule: which-that-consistency
-    line: 189
-    text: which will not be unreasonably withheld
-    message: This restrictive clause opens with "which"; the document mostly uses "that"
-    verdict: false-positive
-    note: a non-restrictive which after consent with its comma missing, read as restrictive
   - rule: defined-term-form
     line: 195
     text: purchase order issued hereunder, the Sup

@@ -1,9 +1,3 @@
 id: gutenberg-bacon-essays
 chaff: 0.36.0
-findings:
-  - rule: name-variant
-    line: 3343
-    text: Turke, soldiers, mariners', and the like
-    message: '"Turke" is one letter away from "Turks", which the document uses more than once'
-    verdict: false-positive
-    note: the period spelling of a 1625 text, not a variant of a name
+findings: []

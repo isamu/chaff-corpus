@@ -68,6 +68,11 @@ findings:
     text: (参照 2026-01-22).
     message: 丸括弧を、全角で 50 箇所、半角で 16 箇所書いています。この文書には書き方が二通りあります
     verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 127
+    text: （ワ）第5285号）がある。
+    message: 括弧を「（）」と書いています（この文書はふつう「()」。8 箇所のうち 2 箇所が違う）
+    verdict: unjudged
   - rule: stray-space
     line: 133
     text: " のリーガル・コードにも同様の条項がある。"

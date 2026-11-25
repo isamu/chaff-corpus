@@ -7,15 +7,3 @@ findings:
     message: '"our the" doubles a word; one of the two is left over'
     verdict: correct
     note: "a leftover word: our the platform"
-  - rule: request-without-deadline
-    line: 75
-    text: We will schedule brownouts to accommodat
-    message: This request says neither who should do it nor by when
-    verdict: false-positive
-    note: a request inside a dated timeline item, addressed to the customers the page is written for; who and when come from the item
-  - rule: date-format-consistency
-    line: 77
-    text: "June 7, 2025: Cloud.gov will permanently"
-    message: The date "June 7, 2025" is written differently from 2 other dates in the document (such as "2025-01-09")
-    verdict: false-positive
-    note: "ISO stamps in the update log beside month-name dates in the prose timeline: two separate uses, each consistent within itself"

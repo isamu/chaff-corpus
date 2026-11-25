@@ -26,11 +26,6 @@ findings:
     text: よりよい価値を創出してまいります。今後も企業成長を通じた社会課題の解決や持続可能
     message: 「よりよい」は、何と比べているかが書かれていません
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: 企業価値の最大化に向けた目標・ROE12.0％以上・WACC2.0％・営業利益率
-    message: 「公益財団法人東日本不動産流通機構」は漢字が 16 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 1
     text: 企業価値の最大化に向けた戦略＜事業戦略＞・オーナーチェンジ物件への回帰・都市部シ

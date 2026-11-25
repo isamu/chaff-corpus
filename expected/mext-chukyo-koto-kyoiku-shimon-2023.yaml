@@ -30,7 +30,7 @@ findings:
     text: GIGAスクール構想による1人1台端末等のICT 環境の整備の進展や、高等学校で
     message: 「GIGA」が説明なしで使われています（説明のない略語 4 個）
     verdict: correct
-    note: "a programme's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml"
+    note: a programme's name never spelled out; the maintainer's decision of 2026-10-27 keeps such names reported (the common-acronym list holds only words any reader knows), and a team lists them under names in chaff.yaml
   - rule: undefined-acronym
     line: 22
     text: ICT 環境の整備の進展や、高等学校での「総合的な探究の時間」等における問題発見

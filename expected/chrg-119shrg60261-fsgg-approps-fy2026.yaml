@@ -25,12 +25,6 @@ findings:
     message: '"Mullen" is one letter away from "Mullin", which the document uses more than once'
     verdict: correct
     note: Senator Mullin's name misspelt in the prepared statement
-  - rule: date-weekday-mismatch
-    line: 7257
-    text: June 11, the
-    message: June 11, 2021 is a Friday, not a Wednesday
-    verdict: false-positive
-    note: the hearing date's year (2025) is given in the document's header; the rule assumed another year
   - rule: invisible-character
     line: 7295
     text: "\x01"

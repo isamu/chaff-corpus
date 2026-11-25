@@ -78,8 +78,8 @@ findings:
     verdict: unjudged
   - rule: repeated-sentence-ending
     line: 13
-    text: ４ 【関係会社の状況】　名称住所資本金(千円)主要な事業の内容議決権の所有割合(
-    message: 「〜おります」で終わる文が 4 文続いています（2 文まで）
+    text: 当社より本社及び倉庫の建物等の賃貸を受けております。東北丸八運輸株式会社(連結子
+    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 17
@@ -105,11 +105,6 @@ findings:
     line: 17
     text: 行なったことはありません。丸八倉庫労働組合と全日本建設交運一般労働組合とが併存し
     message: 「行なう」と書いています（この文書はふつう「行う」と書く語です。19 箇所のうち 4 箇所が違う）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 17
-    text: ５ 【従業員の状況】(1) 連結会社の状況2023年11月30日現在セグメントの
-    message: 「〜おります」で終わる文が 3 文続いています（2 文まで）
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 21
@@ -206,11 +201,6 @@ findings:
     text: (2) 国内子会社 会社名事業所名(所在地)セグメントの名称設備の内容帳簿価額(
     message: この文は 393 文字あります（140 文字まで）
     verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 37
-    text: ２ 【主要な設備の状況】(1) 提出会社事業所名(所在地)セグメントの名称設備の
-    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
-    verdict: unjudged
   - rule: no-doubled-joshi
     line: 41
     text: の除却等経済的な設備の更新のための除却を除き、重要な設備の除却等の計画はありませ
@@ -240,11 +230,6 @@ findings:
     line: 69
     text: (3) 【株主総会決議又は取締役会決議に基づかないものの内容】区分株式数(株)価
     message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 73
-    text: (4) 【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数(株)処
-    message: 「区分当事業年度当期間株式数」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 73

@@ -1,36 +1,6 @@
 id: nstac-microdata-forum
 chaff: 0.33.0
 findings:
-  - rule: date-format-consistency
-    line: 11
-    text: 令和8年11月19日（木）に「公的統計ミクロデータ利活用フォーラム」を開催します
-    message: 日付「令和8年11月19日」の書き方が、この文書のほかの日付（「2025/11/20」など 34 箇所）と違います
-    verdict: false-positive
-    note: the announcement's own dates in 令和 form, compared with a list of past events that dates each item in slash form; two parts with their own conventions
-  - rule: date-format-consistency
-    line: 16
-    text: 令和8年11月19日（木）10:00～16:30
-    message: 日付「令和8年11月19日」の書き方が、この文書のほかの日付（「2025/11/20」など 34 箇所）と違います
-    verdict: false-positive
-    note: the announcement's own dates in 令和 form, compared with a list of past events that dates each item in slash form; two parts with their own conventions
-  - rule: undefined-acronym
-    line: 89
-    text: CTIミクロ）の合成方法の改善－家計調査、家計消費状況調査及び家計消費単身モニタ
-    message: 「CTI」が説明なしで使われています（説明のない略語 3 個）
-    verdict: false-positive
-    note: an acronym inside a quoted talk or paper title in a list of past events; the page cannot change the title
-  - rule: undefined-acronym
-    line: 147
-    text: EBPM研修への日本品質管理学会の取り組み -）
-    message: 「EBPM」が説明なしで使われています（説明のない略語 3 個）
-    verdict: false-positive
-    note: an acronym inside a quoted talk or paper title in a list of past events; the page cannot change the title
-  - rule: undefined-acronym
-    line: 210
-    text: KUMAの利用手続きと実証分析の進め方～（2014/1/9）
-    message: 「KUMA」が説明なしで使われています（説明のない略語 3 個）
-    verdict: false-positive
-    note: an acronym inside a quoted talk or paper title in a list of past events; the page cannot change the title
   - rule: max-kanji-continuous
     line: 286
     text: 一橋大学による匿名データ提供依頼申出書作成説明会の開催（2010/08/06）

@@ -11,14 +11,9 @@ findings:
     what: every price, hour and rule (three memberships, $25 and $40 room rates, the dog-friendly Friday, 50 lbs package limit) — the request gave none
     verdict: missed
     note: "catalog B01 (invented detail): a whole price list and house rules the user never gave, published as fact"
-  - rule: undefined-acronym
-    line: 64
-    text: HDMI and USB-C connections, a whiteboard
-    message: '"HDMI" is used without an expansion (1 such acronym)'
-    verdict: false-positive
-    note: HDMI is the name of a connector everyone knows from the plug; spelling it out would be odd
   - rule: unfilled-placeholder
     line: 88
-    what: '"hello@[yourcoworkingspace].com": a template blank inside an email address'
-    verdict: missed
-    note: a bracketed blank glued inside an address is not reported, while a free-standing [Name] is
+    text: "[yourcoworkingspace].com or stop by the"
+    message: '"[yourcoworkingspace]" was never filled in'
+    verdict: correct
+    note: a bracketed blank glued inside an address is not reported, while a free-standing [Name] is; found by chaffjs 0.51.0

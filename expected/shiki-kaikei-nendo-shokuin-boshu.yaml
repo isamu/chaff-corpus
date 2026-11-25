@@ -1,9 +1,3 @@
 id: shiki-kaikei-nendo-shokuin-boshu
 chaff: 0.34.0
-findings:
-  - rule: latin-spacing
-    line: 13
-    text: " 1人"
-    message: 日本語と後ろの数字のあいだを空けています（この文書はふつう詰める。13 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: a space separating a job title from its head count, a field gap in a label-value line rather than spacing inside prose
+findings: []

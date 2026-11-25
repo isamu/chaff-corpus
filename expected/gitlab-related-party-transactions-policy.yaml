@@ -12,8 +12,33 @@ findings:
     text: begining of our last fiscal year was, a
     message: '"begining" is a misspelling of "beginning"'
     verdict: correct
+  - rule: pseudo-heading
+    line: 59
+    text: "**Significant Stockholders**"
+    message: The bold line "Significant Stockholders" stands in for a heading
+    verdict: unjudged
   - rule: unused-definition
     line: 61
     text: ("***SEC***") (to the extent such inform
     message: '"SEC" is defined but never used'
     verdict: correct
+  - rule: pseudo-heading
+    line: 65
+    text: "**Advance Approval**"
+    message: The bold line "Advance Approval" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 80
+    text: "**Review of Ongoing Transactions**"
+    message: The bold line "Review of Ongoing Transactions" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 84
+    text: "**Ratification**"
+    message: The bold line "Ratification" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 92
+    text: "**Standing Pre-Approval for Certain Rela"
+    message: The bold line "Standing Pre-Approval for Certain Related Party Transactions" stands in for a heading
+    verdict: unjudged

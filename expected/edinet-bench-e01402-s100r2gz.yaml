@@ -86,6 +86,11 @@ findings:
     text: )管理職に占める女性労働者の割合、男性労働者の育児休業取得率及び労働者の男女の賃
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
+  - rule: bracket-width-consistency
+    line: 17
+    text: ）電子情報通信分野  　　ＨＤＤ用サスペンション日本140（ 4）　　プリンター
+    message: 括弧を「）」と書いています（この文書はふつう「)」。3 箇所のうち 1 箇所が違う）
+    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 17
     text: ＨＤＤ用サスペンション140　　プリンター関連3　　通信関連14全社共通174合
@@ -524,11 +529,6 @@ findings:
     verdict: unjudged
   - rule: bracket-width-consistency
     line: 37
-    text: (1) 提出会社2023年３月31日現在事業所名（所在地）セグメントの名称製品区
-    message: 括弧を「(」と書いています（この文書はふつう「（」。447 箇所のうち 44 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 37
     text: )サンコール菊池株式会社（熊本県菊池市）（注）１日本自動車関連製品40*4591
     message: 括弧を「)」と書いています（この文書はふつう「）」。445 箇所のうち 42 箇所が違う）
     verdict: unjudged
@@ -556,17 +556,6 @@ findings:
     line: 37
     text: (1) 提出会社2023年３月31日現在事業所名（所在地）セグメントの名称製品区
     message: この文は 1125 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: repeated-sentence-ending
-    line: 37
-    text: 　当社グループにおける主要な設備は、次のとおりであります。(1) 提出会社202
-    message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
-    verdict: false-positive
-    note: a flattened table and its note items counted as sentences of the run
-  - rule: bracket-width-consistency
-    line: 41
-    text: (1) 重要な設備の新設会社名所在地セグメントの名称製品区分の名称設備の内容投資
-    message: 括弧を「(」と書いています（この文書はふつう「（」。447 箇所のうち 44 箇所が違う）
     verdict: unjudged
   - rule: max-kanji-continuous
     line: 41
@@ -642,11 +631,6 @@ findings:
     line: 69
     text: (3) 【株主総会決議又は取締役会決議に基づかないものの内容】　会社法第155条
     message: この文は 169 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 73
-    text: (4) 【取得自己株式の処理状況及び保有状況】区分当事業年度当期間株式数（株）処
-    message: 「区分当事業年度当期間株式数」は漢字が 13 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 73

@@ -19,11 +19,17 @@ findings:
     message: 「しっかりと」など、あいまいな語が 1000 字あたり 3 個あります（2 個まで）
     verdict: correct
     note: しっかりと repeated (lines 3, 31, 63) with 随時; filler that says nothing, and しっかり is a known generated habit
+  - rule: ai-generated-composite
+    line: 19
+    text: 意外と見落としがちなのがコンセントです。テレビ、冷蔵庫、電子レンジ、ベッドの近く
+    message: 生成文の特徴が 3 種、同じ文書にそろっています（2 種から）。生成文にありがちな言い回し、文の長さが単調、定型の結び
+    verdict: unjudged
   - rule: ai-tell
     line: 19
-    what: 「意外と見落としがちなのが」
-    verdict: missed
-    note: "candidate phrase: 意外と見落としがち, the stock lead-in of a generated tips article"
+    text: 意外と見落としがちなのがコンセントです。テレビ、冷蔵庫、電子レンジ、ベッドの近く
+    message: 「意外と見落としがち」が揃っています（点 5、4 まで）
+    verdict: correct
+    note: "candidate phrase: 意外と見落としがち, the stock lead-in of a generated tips article; found by chaffjs 0.51.0"
   - rule: test:empty-conclusion
     line: 63
     what: 「まとめ」が「大切な機会です」「10のポイントを参考に」と本文を言い直すだけ

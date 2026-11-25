@@ -82,6 +82,11 @@ findings:
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: pseudo-heading
+    line: 95
+    text: "**Payment method**"
+    message: The bold line "Payment method" stands in for a heading
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 98
     text: " - air, hotel, car or rail (where applic"
@@ -100,12 +105,22 @@ findings:
     message: "\"won't\" is written \"will not\" elsewhere in the document"
     verdict: correct
     note: the minority form of this word in the writer's own prose; the document mostly writes the other form
+  - rule: pseudo-heading
+    line: 169
+    text: "**A. Third Party Liability**"
+    message: The bold line "A. Third Party Liability" stands in for a heading
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 175
     text: " - Collision Damage Waiver**"
     message: '"-" stands in for a dash'
     verdict: correct
     note: a spaced hyphen standing in for a dash
+  - rule: pseudo-heading
+    line: 175
+    text: "**B. Physical Damage - Collision Damage"
+    message: The bold line "B. Physical Damage - Collision Damage Waiver" stands in for a heading
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 183
     text: " - Collision Damage Waiver"
@@ -184,6 +199,16 @@ findings:
     message: '"50 USD" here, where the document usually writes this currency like "$5,000" (11 of 36)'
     verdict: correct
     note: the document writes $5,000, $50 USD and 1,500 USD for the same currency
+  - rule: pseudo-heading
+    line: 315
+    text: "**Field FAQs**"
+    message: The bold line "Field FAQs" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 319
+    text: "**Field Manager FAQs**"
+    message: The bold line "Field Manager FAQs" stands in for a heading
+    verdict: unjudged
   - rule: undefined-acronym
     line: 336
     text: GL Code NON-COGS:** 6080 - Other Travel-
@@ -343,6 +368,31 @@ findings:
     text: ’s bank accounts on Tuesday or Wednesday
     message: The quote mark ’ here, where the document usually writes ' (1 of 61)
     verdict: correct
+  - rule: pseudo-heading
+    line: 705
+    text: "**PEO Locations**"
+    message: The bold line "PEO Locations" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 711
+    text: "**Papaya Italy**"
+    message: The bold line "Papaya Italy" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 715
+    text: "**Expense Submission Process for Busines"
+    message: The bold line "Expense Submission Process for Business Travel" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 726
+    text: "**iiPay**"
+    message: The bold line "iiPay" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 731
+    text: "**CXC Global**"
+    message: The bold line "CXC Global" stands in for a heading
+    verdict: unjudged
   - rule: undefined-acronym
     line: 731
     text: CXC Global**
@@ -365,6 +415,11 @@ findings:
     text: "[here](/handbook/finance/accounts-payabl"
     message: The link text "here" does not say where it goes
     verdict: correct
+  - rule: pseudo-heading
+    line: 751
+    text: "**Navan Purchase Card**"
+    message: The bold line "Navan Purchase Card" stands in for a heading
+    verdict: unjudged
   - rule: currency-notation-consistency
     line: 753
     text: 1,500 USD (or local currency equivalent)

@@ -1,12 +1,6 @@
 id: yuho-e34814-policy
 chaff: 0.34.0
 findings:
-  - rule: bracket-width-consistency
-    line: 1
-    text: （PMI）等に留意しており、今後も、M&amp;Aを推進し、より一層の事業拡大を
-    message: 括弧を「（」と書いています（この文書はふつう「(」。8 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: half-width (1) item markers and full-width inline parentheses, two roles each written one way, counted as one mixed set
   - rule: max-sentence-length
     line: 1
     text: 当社が中長期的な成長を持続し、当社事業の更なる発展・拡大をしていくためには、通信
@@ -40,12 +34,6 @@ findings:
     message: 「は」で出した主題から述語まで 97 字あります（80 字まで）
     verdict: correct
     note: the topic (は) carries to the final predicate of the sentence, past the limit
-  - rule: topic-predicate-distance
-    line: 1
-    text: 迷惑情報フィルタ事業から得られる当社の主たる収益は、通信キャリアが提供するスマー
-    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic is answered by the predicate of the first clause; the distance is measured on to the predicate of a later clause with its own subject
   - rule: undefined-acronym
     line: 1
     text: NTT東日本及びNTT西日本の代理店・特約店を通じ、ビジネスフォン向けフィルタサ

@@ -7,12 +7,6 @@ findings:
     message: Section length varies by only 25% (want at least 35%)
     verdict: correct
     note: six sections each poured into the same mould (a lead sentence and a bulleted list); the tidy outline reads as generated
-  - rule: adverb-overuse
-    line: 3
-    text: surprisingly pleasant. Here's what we re
-    message: 17 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: ordinary adverbs (slightly, regularly, especially) in a how-to; none props up a weak verb
   - rule: ai-tell
     line: 3
     what: "\"It doesn't have to be.\" after the problem in the opening; the same turn opens ai-en-owned-tax-receipts"
@@ -35,31 +29,25 @@ findings:
     message: "4 bold spans of emphasis: 6.8 per 1000 words (limit 4)"
     verdict: correct
     note: bold in every list, here mid-sentence (studded tires); the decoration of a generated how-to
+  - rule: ai-generated-composite
+    line: 25
+    text: If you only make one change to your bike
+    message: "3 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform, Bold emphasis scattered through the text"
+    verdict: unjudged
   - rule: ai-tell
     line: 25
-    what: '"If you only make one change to your bike for winter, make it fenders."; the same frame in ai-en-owned-tax-receipts line 9'
-    verdict: missed
-    note: 'candidate phrase: "If you only do one thing …, make it …"'
+    text: If you only make one change to your bike
+    message: '"if you only make one" appears (score 5, limit 4)'
+    verdict: correct
+    note: 'candidate phrase: "If you only do one thing …, make it …"; found by chaffjs 0.51.0'
   - rule: list-item-form-mix
     line: 34
     text: A thin **hat or headband** that fits und
     message: '"A thin   hat or headband   that fits under your helmet" is a phrase; the other items in this list are sentences (1 of 3)'
     verdict: false-positive
     note: every item in the clothing list is a noun phrase, some with a second sentence; the list is not mixed
-  - rule: list-item-form-mix
-    line: 42
-    text: Dry and lube the chain** at least once a
-    message: '"Dry and lube the chain   at least once a week." opens with a noun phrase; the other items in this list open with a verb (1 of 4)'
-    verdict: false-positive
-    note: '"Dry and lube the chain" opens with the verb dry, read as an adjective'
   - rule: test:invented-detail
     line: 48
     what: "\"we'll fit fenders for free with any tune-up through the end of December\", studded tyres stocked \"from 700c down to kids' sizes\" (21) — not in the request"
     verdict: missed
     note: "catalog B01 (invented detail): an offer the user never made, which commits them"
-  - rule: oxford-comma-consistency
-    line: 50
-    text: And if you have questions about any of t
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: '"about any of this, come in and ask" is a clause and a verb pair, not a list; every real list here has the comma'

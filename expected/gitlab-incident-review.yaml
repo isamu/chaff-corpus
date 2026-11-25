@@ -64,12 +64,6 @@ findings:
     message: '"RED" is used without an expansion (9 such acronyms)'
     verdict: false-positive
     note: RED is a data-classification level written in capitals (a colour label), not an acronym
-  - rule: unknown-word
-    line: 114
-    text: comms approvals before release to the cu
-    message: '"comms" is not in the dictionary; did you mean "comes"?'
-    verdict: false-positive
-    note: an informal clipping (comms for communications) common in operations writing, read as a misspelling
   - rule: max-sentence-length
     line: 126
     text: Where Operational Excellence reviews a s

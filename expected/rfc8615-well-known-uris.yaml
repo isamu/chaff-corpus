@@ -26,11 +26,6 @@ findings:
     line: 359
     sha256: cea36003b972265284575791510a5477b367238131369b35bc74c1695d6b6304
     verdict: correct
-  - rule: name-variant
-    line: 543
-    sha256: 091a465b07b0a9ce8d5f8d5e245dd38276471dfb0aaa6f31876c1d958f675361
-    verdict: false-positive
-    note: "two proper names: the HTTP header field name with its historical one-r spelling and the title of a W3C specification spelled normally"
   - rule: contraction-consistency
     line: 625
     sha256: 115b8e86350f06caa9f3a022dc26181b66db4ca745dc51da9f0a019f8f85703b

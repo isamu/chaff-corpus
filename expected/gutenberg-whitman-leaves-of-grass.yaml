@@ -2,36 +2,6 @@ id: gutenberg-whitman-leaves-of-grass
 chaff: 0.33.0
 findings:
   - rule: name-variant
-    line: 5747
-    text: Arkansaw, the Rio Grande,
-    message: '"Arkansaw" is one letter away from "Arkansas", which the document uses more than once'
-    verdict: false-positive
-    note: the period spelling of the river the poet uses, not a slip
-  - rule: unbalanced-bracket
-    line: 7724
-    text: "[the 18th Year of these States"
-    message: '"[" is never closed'
-    verdict: false-positive
-    note: the poem title's open bracket for its date is how Whitman prints the title
-  - rule: unbalanced-bracket
-    line: 7832
-    text: "[1859-60"
-    message: '"[" is never closed'
-    verdict: false-positive
-    note: the poem title's open bracket for its date is how Whitman prints the title
-  - rule: unbalanced-bracket
-    line: 11029
-    text: "[May 4, 1865"
-    message: '"[" is never closed'
-    verdict: false-positive
-    note: the poem title's open bracket for its date is how Whitman prints the title
-  - rule: name-variant
-    line: 13144
-    text: Paradiso,
-    message: '"Paradiso" is one letter away from "Paradise", which the document uses more than once'
-    verdict: false-positive
-    note: the Italian title of Dante's book, not a spelling of Paradise
-  - rule: name-variant
     line: 17574
     text: New-England’s farms, from fertile Pennsy
     message: '"New-England" is written "New England" elsewhere in the document (case, width or punctuation)'

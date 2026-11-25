@@ -37,11 +37,6 @@ findings:
     text: 商業誌にまで査読制度が普及した経緯は拙稿（CA2001参照）でも紹介したが、制度
     message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 59
-    text: つまるところ、元来の学術雑誌は学会等の有志団体によるコミュニケーション媒体であり
-    message: 「は」で出した主題から述語まで 84 字あります（80 字まで）
-    verdict: unjudged
   - rule: double-negative
     line: 69
     text: ここまで査読は無償である経緯を述べてきたが、実際には査読者になんらかの報酬を支払
@@ -86,11 +81,6 @@ findings:
     line: 101
     text: たり得ることを論証している。
     message: 「たり」が一つだけで、対になる「〜たり」がありません
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 105
-    text: ただし、それが立証されているのは査読レポートの返却期間においてであり、査読参加率
-    message: 「は」で出した主題から述語まで 81 字あります（80 字まで）
     verdict: unjudged
   - rule: currency-notation-consistency
     line: 119

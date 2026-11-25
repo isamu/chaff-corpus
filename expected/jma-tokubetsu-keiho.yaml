@@ -16,32 +16,8 @@ findings:
     text: ５に相当します。
     message: 全角の「５」と書いています（この文書はふつう半角の「5」。12 箇所のうち 2 箇所が違う）
     verdict: correct
-  - rule: request-without-deadline
-    line: 34
-    text: 警戒が必要な範囲からの避難や避難の準備をしてください。
-    message: この依頼には、いつまでに・誰がするかが書かれていません
-    verdict: false-positive
-    note: an instruction to the public in an explanation of warnings; the reader is who, and the moment of the warning is when
   - rule: heading-level-skip
     line: 46
     text: "#### 関連報道発表"
     message: 見出し「関連報道発表」の深さが 2 から 4 へ飛んでいます（3 のはず）
     verdict: correct
-  - rule: fullwidth-alnum-consistency
-    line: 48
-    text: ３０日運用開始広報キャンペーン～
-    message: 全角の「３０」と書いています（この文書はふつう半角の「30」。17 箇所のうち 1 箇所が違う）
-    verdict: false-positive
-    note: the title of another press release, cited as it was published
-  - rule: fullwidth-alnum-consistency
-    line: 48
-    text: ８月３０日運用開始広報キャンペーン～
-    message: 全角の「８」と書いています（この文書はふつう半角の「8」。12 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: the title of another press release, cited as it was published
-  - rule: list-item-form-mix
-    line: 50
-    text: 平成25年8月2日防災講演会『特別警報、命を守るために知って欲しい』を開催します
-    message: 「平成25年8月2日防災講演会『特別警報、命を守るために知って欲しい』を開催します」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（3 項目のうち 1 項目）
-    verdict: false-positive
-    note: a list of cited press-release titles; one title is a sentence as it was published

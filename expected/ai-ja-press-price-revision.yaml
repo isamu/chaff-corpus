@@ -1,12 +1,6 @@
 id: ai-ja-press-price-revision
 chaff: 0.49.0
 findings:
-  - rule: preamble-length
-    line: 9
-    text: 平素は格別のご愛顧を賜り、厚く御礼申し上げます。
-    message: 最初の見出しまでに 4 段落あります（2 段落まで）
-    verdict: false-positive
-    note: a Japanese notice letter puts its greeting, reason and apology before 記; that is the form
   - rule: unfilled-placeholder
     line: 48
     text: 〇〇〇-〇〇〇（受付時間：平日9:00〜17:00）

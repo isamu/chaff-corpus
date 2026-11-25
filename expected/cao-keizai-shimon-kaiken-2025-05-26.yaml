@@ -64,12 +64,6 @@ findings:
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: false-positive
     note: the fixed triad physical, mental and social from the definition of well-being
-  - rule: teki-overuse
-    line: 103
-    text: ２ページ目に関して、地方で活躍する人材の育成とそれを支える基盤の整備として郷土に
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: fixed administrative terms (base expenses, competitive research funds) counted as stylistic 〜的
   - rule: clause-chain
     line: 109
     text: 社会の変化に応じて必要なサービスが必要な方に提供され、保険料を抑制せず、公平な負

@@ -12,12 +12,6 @@ findings:
     text: －ルマガジン）第506号（令和7年5月23日）
     message: 「－」（U+FF0D）はダッシュの字です。カタカナの長音は「ー」と書きます
     verdict: correct
-  - rule: title-length
-    line: 1
-    text: "# 初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23"
-    message: 題「初中教育ニュ－ス（初等中等教育局メ－ルマガジン）第506号（令和7年5月23日）」は 41 文字あります（40 文字まで）
-    verdict: false-positive
-    note: a newsletter's fixed title (series name, issue number, date); the length comes from the issue and date the series always carries
   - rule: undefined-acronym
     line: 13
     text: STI for SDGs」アワード募集

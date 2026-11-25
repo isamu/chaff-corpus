@@ -1,18 +1,6 @@
 id: github-terms-of-service
 chaff: 0.33.0
 findings:
-  - rule: contraction-consistency
-    line: 17
-    text: We're happy you're here. Please read thi
-    message: "\"you're\" is written \"you are\" elsewhere in the document"
-    verdict: false-positive
-    note: contractions in the friendly welcome, a deliberate plain-language register beside the formal clauses
-  - rule: use-before-definition
-    line: 17
-    text: Terms of Service agreement carefully bef
-    message: '"Terms of Service" is used here, before it is defined on line 52'
-    verdict: false-positive
-    note: the document own title used in the welcome before the definitions section
   - rule: quote-style-consistency
     line: 51
     text: ’s authorization to log in to and use th
@@ -55,15 +43,3 @@ findings:
     message: "\"don't\" is written \"do not\" elsewhere in the document"
     verdict: correct
     note: a contraction inside a formal clause, where the clauses write the full form
-  - rule: contraction-consistency
-    line: 325
-    text: If you do, we'll treat your information
-    message: "\"we'll\" is written \"we will\" elsewhere in the document"
-    verdict: false-positive
-    note: a contraction in a plain-language Short version summary, a deliberate register beside the formal clauses
-  - rule: contraction-consistency
-    line: 402
-    text: Short version:** _We want our users to b
-    message: "\"don't\" is written \"do not\" elsewhere in the document"
-    verdict: false-positive
-    note: a contraction in a plain-language Short version summary, a deliberate register beside the formal clauses

@@ -36,7 +36,7 @@ findings:
     text: 良質な持家の取得・改善を促進するため、勤労者財産形成住宅貯蓄の普及促進等を図ると
     message: 「勤労者財産形成住宅貯蓄」は漢字が 11 字続いています（10 字まで）
     verdict: false-positive
-    note: "chaff は今「勤労者財産形成住宅貯蓄」を指す。法律で定めた貯蓄制度の名前で、分けられない"
+    note: chaff は今「勤労者財産形成住宅貯蓄」を指す。法律で定めた貯蓄制度の名前で、分けられない
   - rule: nominalization
     line: 23
     text: 融資を行っている。
@@ -181,12 +181,6 @@ findings:
     message: この文は 263 文字あります（140 文字まで）
     verdict: correct
     note: 263 字の一文
-  - rule: topic-predicate-distance
-    line: 111
-    text: 「誰一人取り残さない」社会の実現を目指す持続可能な開発目標（SDGs）の達成に向
-    message: 「は」で出した主題から述語まで 104 字あります（80 字まで）
-    verdict: false-positive
-    note: "「取組は」 gets its predicate at once (資するものであり、); what follows reports the strategy's own statement. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: max-sentence-length
     line: 117
     text: 令和2年10月には、SDGs達成への取組を積極的に進める事業者等を「見える化」す

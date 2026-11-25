@@ -96,11 +96,6 @@ findings:
     text: そこで，大学が優れた人材の養成と独創的な学術研究の推進といった，言わば「知の創造
     message: 一文に「〜的」が 3 個あります（2 個まで）
     verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 62
-    text: (2)  我が国においても，諸外国と同様，自己点検・評価の充実や大学評価・学位授
-    message: 括弧を「(」と書いています（この文書はふつう「（」。26 箇所のうち 1 箇所が違う）
-    verdict: unjudged
   - rule: max-paragraph-length
     line: 62
     text: この中で多くの国の共通の施策としては，大学評価を挙げることができる。先進主要国は
@@ -290,11 +285,6 @@ findings:
     line: 155
     text: (4)  なお，認証評価機関による評価は，それぞれの評価機関が独自に定める基準に
     message: この文は 148 文字あります（140 文字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 155
-    text: (4)  なお，認証評価機関による評価は，それぞれの評価機関が独自に定める基準に
-    message: 「は」で出した主題から述語まで 127 字あります（80 字まで）
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 159

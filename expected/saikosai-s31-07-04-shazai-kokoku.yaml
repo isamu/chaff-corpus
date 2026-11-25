@@ -46,16 +46,6 @@ findings:
     text: 若しくは信じない自由と説いている。（ヂュギ著憲法論五巻一九二五年版四一五頁）
     message: 「若しくは」の文に、段の組になる語がありません（一段なら「又は」）
     verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 55
-    text: そしてこのフリーダム・オブ・コンシャンス（「信仰の自由」）という辞句はキリスト教
-    message: この文に中黒が 8 個あります（5 個まで）
-    verdict: unjudged
-  - rule: no-nakaguro-parallel
-    line: 55
-    text: 英語のフリーダム・オブ・コンシヤンスは仏語のリベルテ・ド・コンシアンスであつて、
-    message: この文に中黒が 6 個あります（5 個まで）
-    verdict: unjudged
   - rule: clause-chain
     line: 66
     text: それ故、上告人が、本件判決に従つて任意にこのような意思を表示するのであれば問題は
