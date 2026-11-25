@@ -11,6 +11,12 @@ findings:
     text: SIG Architecture and SIG Testing input (
     message: '"SIG" is used without an expansion (4 such acronyms)'
     verdict: correct
+  - rule: link-definition-unused
+    line: 58
+    text: "[kubernetes/kubernetes]: https://git.k8s"
+    message: No link uses the definition "kubernetes/kubernetes"
+    verdict: correct
+    note: 'no [kubernetes/kubernetes] reference anywhere in the text; the KEP template''s definition left in'
   - rule: max-sentence-length
     line: 75
     text: As a result, SIG Release received severa

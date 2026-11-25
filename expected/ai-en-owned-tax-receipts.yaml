@@ -7,11 +7,18 @@ findings:
     message: Section length varies by only 15% (want at least 35%)
     verdict: correct
     note: five numbered habits filled to the same size; the template listicle a reader recognises
+  - rule: ai-generated-composite
+    line: 3
+    text: It doesn't have to be that way. A few si
+    message: "3 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform, Cliched closing"
+    verdict: correct
+    note: the opening pivot, the template listicle and the stock sign-off together read as generated
   - rule: ai-tell
     line: 3
-    what: "\"It doesn't have to be that way.\" after the opening problem; the same turn in ai-en-owned-bike-winter"
-    verdict: missed
-    note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem"
+    text: It doesn't have to be that way. A few si
+    message: "\"if you only do one, it doesn't have to be that way\" appear together (score 10, limit 4)"
+    verdict: correct
+    note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem; found by chaff landing 146 (isamu/lab#2829)"
   - rule: ai-tell
     line: 9
     what: '"If you only do one thing on this list, make it this one."'
