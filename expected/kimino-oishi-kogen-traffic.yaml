@@ -1,12 +1,6 @@
 id: kimino-oishi-kogen-traffic
 chaff: 0.33.0
 findings:
-  - rule: preamble-length
-    line: 5
-    text: 平素は生石高原の観光振興にご理解とご協力をいただき、誠にありがとうございます。
-    message: 最初の見出しまでに 9 段落あります（2 段落まで）
-    verdict: false-positive
-    note: the notice's sections are plain-text headings (a ～…～ line, numbered lines), not Markdown headings, so the whole body is counted as preamble; the lead is three paragraphs
   - rule: stray-space
     line: 25
     text: " 予定よりも大幅に時間がかかる場合がありますので、スケジュールには十分なゆとりを"

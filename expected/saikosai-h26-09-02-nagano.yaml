@@ -6,11 +6,6 @@ findings:
     text: "## 裁判要旨"
     message: 見出し「裁判要旨」の下に中身がありません
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 18
-    text: 弁護人宮田桂子，同大槻展子の上告趣意のうち，裁判員の参加する刑事裁判に関
-    message: 「は」で出した主題から述語まで 333 字あります（200 字まで）
-    verdict: unjudged
   - rule: fullwidth-alnum-consistency
     line: 27
     text: ４月６日大法廷判決・刑集9巻4号663頁，最高裁昭和32年（あ）第22

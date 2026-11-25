@@ -31,3 +31,9 @@ findings:
     text: which does not appear as an argument to
     message: This restrictive clause opens with "which"; the document mostly uses "that"
     verdict: correct
+  - rule: link-definition-unused
+    line: 404
+    text: "[*namespace*]: names/namespaces.md"
+    message: No link uses the definition "*namespace*"
+    verdict: correct
+    note: "the glossary links namespace inline as [namespace](#namespace); nothing uses [*namespace*] or [namespace][]"

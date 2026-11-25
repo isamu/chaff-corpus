@@ -1,12 +1,6 @@
 id: jma-press-hot-2026-07
 chaff: 0.33.0
 findings:
-  - rule: max-kanji-continuous
-    line: 17
-    text: 以下の要因分析および模式図の作成は、異常気象分析検討会委員と協同で実施しました。
-    message: 「異常気象分析検討会委員」は漢字が 11 字続いています（10 字まで）
-    verdict: false-positive
-    note: a committee's official name followed by 委員; the kanji run cannot be split
   - rule: fullwidth-alnum-consistency
     line: 23
     text: 2日時点）となりました。東海では国内初となる5日連続（7月21～25日）の酷暑日

@@ -1,24 +1,6 @@
 id: vite-plugin-legacy-changelog
 chaff: 0.33.0
 findings:
-  - rule: bold-label-list
-    line: 4
-    text: "* **build:** make client chunkImportMap"
-    message: '"build" and other bold labels open 298 list items (5 needed)'
-    verdict: false-positive
-    note: a generated changelog whose entries carry their commit scope as a bold label, the conventional-changelog format
-  - rule: sentence-rhythm
-    line: 64
-    text: See [8.1.0-beta.0 changelog](https://git
-    message: Sentence length varies by only 1% (want 30%)
-    verdict: false-positive
-    note: a changelog of one-line entries and pointers, which has no prose rhythm to measure
-  - rule: bold-density
-    line: 276
-    text: deps:** update all non-major dependencie
-    message: 7 bold spans in 341 characters (limit 20 per 1000)
-    verdict: false-positive
-    note: a generated changelog whose entries carry their commit scope as a bold label, the conventional-changelog format
   - rule: bare-url-mix
     line: 584
     text: https://github.com/vitejs/vite/issues/11
@@ -29,18 +11,6 @@ findings:
     text: udpate vite and plugins to stable ([#112
     message: '"udpate" is not in the dictionary; did you mean "update"?'
     verdict: correct
-  - rule: empty-section
-    line: 683
-    text: "## [2.1.0](https://github.com/vitejs/vit"
-    message: Nothing under the heading "2.1.0 (2022-09-05)"
-    verdict: false-positive
-    note: a changelog release heading with no notable changes, empty by design of the generator
-  - rule: unknown-word
-    line: 705
-    text: systemjs ([#9635](https://github.com/vit
-    message: '"systemjs" is not in the dictionary; did you mean "systems"?'
-    verdict: false-positive
-    note: a package name (SystemJS) written in lower case, read as a misspelled word
   - rule: heading-level-skip
     line: 1114
     text: "### Features"

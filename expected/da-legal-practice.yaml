@@ -9,12 +9,6 @@ findings:
     note: 取り組み in a link blurb where the page writes 取組
   - rule: orthographic-variant
     line: 41
-    text: 取り組みについて（デジタル庁公式note） デジタル庁における法令API、法令×
-    message: 「取り組み」と書いています（この文書はふつう「取組」と書く語です。10 箇所のうち 3 箇所が違う）
-    verdict: false-positive
-    note: the title of an external article quoted in a link list; the page cannot change it
-  - rule: orthographic-variant
-    line: 41
     text: 取り組みについて紹介しています。
     message: 「取り組み」と書いています（この文書はふつう「取組」と書く語です。10 箇所のうち 3 箇所が違う）
     verdict: correct

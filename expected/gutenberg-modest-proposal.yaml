@@ -1,9 +1,3 @@
 id: gutenberg-modest-proposal
 chaff: 0.33.0
-findings:
-  - rule: known-misspelling
-    line: 220
-    text: maintainance of a hundred thousand child
-    message: '"maintainance" is a misspelling of "maintenance"'
-    verdict: false-positive
-    note: the period spelling of a 1729 text, reproduced as printed
+findings: []

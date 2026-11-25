@@ -6,9 +6,3 @@ findings:
     what: the 14-character password rule, the Fernwood-Staff network (13), myaccount.fernwood.example (24), the Fernwood-Print queue (54) — not in the request
     verdict: missed
     note: "catalog B01 (invented detail): names and rules an IT guide states as fact"
-  - rule: hyphen-as-dash
-    line: 46
-    text: " - Fernwood** folder, not on the desktop"
-    message: '"-" stands in for a dash'
-    verdict: false-positive
-    note: the spaced hyphen is part of the folder name ("OneDrive - Fernwood") as the product writes it

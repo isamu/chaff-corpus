@@ -1,11 +1,6 @@
 id: us-scotus-wickard-v-filburn
 chaff: 0.36.0
 findings:
-  - rule: date-without-year
-    line: 19
-    text: May 19th, which was a busy hour in one o
-    message: "\"May 19th\" has no year, and the document's dates run from 1939 to 1941, so the year is unclear"
-    verdict: unjudged
   - rule: which-that-consistency
     line: 57
     text: that was sold in each state as measured

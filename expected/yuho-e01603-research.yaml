@@ -1,18 +1,6 @@
 id: yuho-e01603-research
 chaff: 0.34.0
 findings:
-  - rule: bracket-width-consistency
-    line: 1
-    text: （ＦＳＷ）技術を用い、異なる金属が接合された新しい部材の開発へ展開、今後の拡大が
-    message: 括弧を「（」と書いています（この文書はふつう「(」。10 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: half-width (1) item markers taken as the majority against full-width inline parentheses; two roles, each written one way
-  - rule: bracket-width-consistency
-    line: 1
-    text: （ＩＰ６７）、防錆対応も標準装備して、幅広い用途での使用を可能にした中可搬ロボッ
-    message: 括弧を「（」と書いています（この文書はふつう「(」。10 箇所のうち 4 箇所が違う）
-    verdict: false-positive
-    note: half-width (1) item markers taken as the majority against full-width inline parentheses; two roles, each written one way
   - rule: katakana-long-vowel
     line: 1
     text: ユーザの要望に応えた工作機械の開発を進めてまいります。(2)部品事業ベアリングで

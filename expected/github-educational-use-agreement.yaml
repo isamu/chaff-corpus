@@ -1,12 +1,6 @@
 id: github-educational-use-agreement
 chaff: 0.35.0
 findings:
-  - rule: use-before-definition
-    line: 10
-    text: GitHub Campus Program Partner Schools, a
-    message: '"GitHub" is used here, before it is defined on line 14'
-    verdict: false-positive
-    note: the company name in an editorial note above the parties clause that defines it
   - rule: vague-link-text
     line: 10
     text: "[here](https://education.github.com/scho"

@@ -121,18 +121,8 @@ findings:
     text: GPO, 1987), pp. 47-48.
     message: '"GPO" is used without an expansion (5 such acronyms)'
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 266
-    text: See IRS Publication 600.
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: unjudged
   - rule: undefined-acronym
     line: 268
     text: NBER Working Paper 12307, 2006, https://
     message: '"NBER" is used without an expansion (5 such acronyms)'
-    verdict: unjudged
-  - rule: name-variant
-    line: 270
-    text: SALT' Cap," The New York Times, November
-    message: "\"SALT' Cap\" is written \"SALT Cap\" elsewhere in the document (case, width or punctuation)"
     verdict: unjudged

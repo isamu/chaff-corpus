@@ -7,6 +7,12 @@ findings:
     message: Section length varies by only 19% (want at least 35%)
     verdict: correct
     note: one stop per section, each one paragraph of the same size; a tidy outline for a casual post
+  - rule: ai-generated-composite
+    line: 3
+    text: "Let's be honest: it rains here. A lot. O"
+    message: "2 signals of generated text occur together in this document (2 needed): An honesty marker, Section lengths are too uniform"
+    verdict: correct
+    note: the honesty markers and the even sections together read as generated; anchored at the first signal finding (was line 7)
   - rule: announcing-opener
     line: 3
     what: '"Good news: rainy days are some of our favorite days in town."'
@@ -14,15 +20,10 @@ findings:
     note: catalog E33 (The good news is)
   - rule: honesty-marker
     line: 3
-    what: "\"Let's be honest: it rains here.\""
-    verdict: missed
-    note: the candour marker opening the post; the second one on line 7 is reported, this one is not
-  - rule: ai-generated-composite
-    line: 7
-    text: Honestly, there are worse ways to spend
-    message: '"honesty-marker, section-length-uniformity" occur together in this document (2 signals, 2 needed)'
+    text: "Let's be honest: it rains here. A lot. O"
+    message: "\"let's be honest\" flags this sentence as candid"
     verdict: correct
-    note: the honesty marker and the even sections together read as generated
+    note: the candour marker opening the post; the second one is on line 7; found by chaffjs 0.51.0
   - rule: honesty-marker
     line: 7
     text: Honestly, there are worse ways to spend
@@ -36,9 +37,10 @@ findings:
     note: "catalog B01 (invented detail): names and services the inn never gave, published on its site"
   - rule: cliche
     line: 15
-    what: '"it punches way above its weight"'
-    verdict: missed
-    note: a worn phrase the cliche list does not hold
+    text: It's small, but it punches way above its
+    message: '"above its weight" is a cliché'
+    verdict: correct
+    note: a worn phrase the cliche list does not hold; found by chaffjs 0.51.0
   - rule: test:moral-ending
     line: 29
     what: "\"Pack a raincoat, bring a good book, and let Harbor Bay show you its cozy side. We'll keep the fire going.\" returns to the fire (line 27) for the last line"

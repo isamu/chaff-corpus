@@ -1,11 +1,6 @@
 id: osaka-kyoiku-koushi-boshu
 chaff: 0.34.0
 findings:
-  - rule: date-without-year
-    line: 21
-    text: 10月25日を除く）は事前予約なしの当日参加も可能です。大阪市の講師に興味があり
-    message: 「10月25日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
-    verdict: unjudged
   - rule: orthographic-variant
     line: 21
     text: 下さい。（※ご予約いただいていない場合は、ご案内にお時間をいただく場合があります
@@ -55,11 +50,6 @@ findings:
     line: 54
     text: 今回の改正により、教員免許状を有効期限の定めのないものとし、教員免許更新制にかか
     message: 一文に読点が 8 個あります（6 個まで）
-    verdict: unjudged
-  - rule: date-without-year
-    line: 58
-    text: 7月1日以降の教員免許状の取り扱いの詳細につきましては文部科学省ホームページや大
-    message: 「7月1日」には年がありません。この文書の日付は 2022年から2026年にわたるので、どの年か決まりません
     verdict: unjudged
   - rule: no-doubled-joshi
     line: 58

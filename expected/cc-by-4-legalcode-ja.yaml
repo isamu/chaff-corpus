@@ -43,24 +43,12 @@ findings:
     message: 「下」と書いています（この文書はふつう「もと」と書く語です。9 箇所のうち 2 箇所が違う）
     verdict: correct
     note: the kanji spelling in a document that mostly writes the kana
-  - rule: bracket-width-consistency
-    line: 39
-    text: (b)(1)および(2)において規定される権利は、著作権およびそれに類する権利で
-    message: 丸括弧を、全角で 30 箇所、半角で 22 箇所書いています。この文書には書き方が二通りあります
-    verdict: false-positive
-    note: half-width parentheses in clause labels such as (b)(1), a convention apart from the full-width parentheses of the prose
   - rule: orthographic-variant
     line: 40
     text: 下で、正当な権限なしに回避されてはならないものとされる諸手段をいいます。
     message: 「下」と書いています（この文書はふつう「もと」と書く語です。9 箇所のうち 2 箇所が違う）
     verdict: correct
     note: the kanji spelling in a document that mostly writes the kana
-  - rule: teki-overuse
-    line: 60
-    text: 許諾者は、あなたが、ライセンスされた権利を行使するために必要とされる技術的な改変
-    message: 一文に「〜的」が 4 個あります（2 個まで）
-    verdict: false-positive
-    note: a defined term and a repeated term of art that carry the suffix, counted as a style habit
   - rule: stray-space
     line: 105
     text: " は、ライセンスされた権利が他の著作権およびそれに類する権利を含む場合の本パブリ"
@@ -79,9 +67,3 @@ findings:
     message: 「たり」が一つだけで、対になる「〜たり」がありません
     verdict: correct
     note: a single tari with no pair
-  - rule: no-nakaguro-parallel
-    line: 141
-    text: 本マテリアルがクリエイティブ・コモンズ・パブリック・ライセンスで共有されているこ
-    message: この文に中黒が 8 個あります（5 個まで）
-    verdict: false-positive
-    note: nakaguro between the words of a katakana proper name, not a parallel list

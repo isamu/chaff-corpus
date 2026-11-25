@@ -12,12 +12,6 @@ findings:
     text: その主要な責任を負うのが安全保障理事会であり、国連の設立に主導的な役割を果たした
     message: この文は 105 文字あります（100 文字まで）
     verdict: correct
-  - rule: topic-predicate-distance
-    line: 30
-    text: 最も重要なことは、パレスチナが持続可能な形で存在をし、イスラエルと共存することで
-    message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's predicate closes at 〜であり, and a new topic (我が国は) takes the rest of the sentence
   - rule: max-sentence-length
     line: 32
     text: 我が国が支援して立ち上げたヨルダン川西岸地区のジェリコ農産加工団地では、現在、パ
@@ -48,12 +42,6 @@ findings:
     message: 「〜であります」で終わる文が 3 文続いています（2 文まで）
     verdict: correct
     note: three sentences in a row end in 〜であります
-  - rule: max-kanji-continuous
-    line: 43
-    text: 爆心地の近くにある『原爆犠牲国民学校教師と子どもの碑』、これに刻まれた、歌人・正
-    message: 「原爆犠牲国民学校教師」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: the proper name of a monument, quoted in 『』; the kanji run cannot be split
   - rule: repeated-sentence-ending
     line: 45
     text: 議長、この『核兵器のない世界』に向けた取組に、今正に、真っ向から挑戦しているのが

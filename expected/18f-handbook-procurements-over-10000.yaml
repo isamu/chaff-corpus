@@ -48,12 +48,6 @@ findings:
     text: CLIN
     message: '"CLIN" is used without an expansion (9 such acronyms)'
     verdict: correct
-  - rule: title-case-consistency
-    line: 135
-    text: ""
-    message: This heading's capitalisation differs from the rest (1 in this document)
-    verdict: false-positive
-    note: a heading that is the proper name of a report, capitalised as a name, read as a title-case heading
   - rule: undefined-acronym
     line: 140
     text: CPARS form and route it to you to evalua

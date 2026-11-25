@@ -5,6 +5,10 @@ findings:
     line: 13
     sha256: a8eafaae80f74f81fdc8bb7f7b9703c3ee866be2ffaa25999c7b8eb0ad0bff65
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 79
+    sha256: 1f373850ce5a7ea83601ad532be4460250270641b3a045c944a4487f80b70bdf
+    verdict: unjudged
   - rule: list-item-form-mix
     line: 107
     sha256: dafef66c0a5947537f75176d95629f1338e43dcf5bdfa452acb16dcb80baad49
@@ -13,17 +17,209 @@ findings:
     line: 116
     sha256: ee29fb000959e1e2d22c1c601accb4cde91bd41723d6336f7860f3b603596c0f
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 167
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 172
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 180
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
   - rule: undefined-acronym
     line: 181
     sha256: 38e89d3f30125f60e68208caad1cc18046e37271f348319be8c43a75f842859a
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 187
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 192
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 201
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 210
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 215
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 222
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 230
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 235
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 244
+    sha256: 24dd077fb94ef8d95626288e9400afc2ab31b43df929df2b33c1edc0c96ac032
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 252
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 257
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
     verdict: unjudged
   - rule: undefined-acronym
     line: 260
     sha256: b6800be9e92fe2badcfa149c57a6f25f2649b721acd7066cd089e4d5285a202b
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 265
+    sha256: 24dd077fb94ef8d95626288e9400afc2ab31b43df929df2b33c1edc0c96ac032
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 273
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 278
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 285
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 293
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 298
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 306
+    sha256: 24dd077fb94ef8d95626288e9400afc2ab31b43df929df2b33c1edc0c96ac032
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 314
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 319
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 336
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 344
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 349
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 355
+    sha256: 24dd077fb94ef8d95626288e9400afc2ab31b43df929df2b33c1edc0c96ac032
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 366
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 376
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 385
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 390
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 399
+    sha256: 21b0655c88433f3419e6be3051d87b335ebfbe91d324424af3826eccfbee0fbc
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 404
+    sha256: 24dd077fb94ef8d95626288e9400afc2ab31b43df929df2b33c1edc0c96ac032
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 408
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 420
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 429
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 442
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 447
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 454
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 462
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 467
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
   - rule: undefined-acronym
     line: 470
     sha256: ad8fdbda553fa69ccc9063cf83bf3594f5ad18ad996456ce1eb07e5da813fdc9
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 474
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 487
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 492
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 505
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 513
+    sha256: 696f795d4aac38bd05650e50842e2ecb33c1cccab3947dd450c32c289dec6743
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 518
+    sha256: 0fe6e70930cfb367a15b740ec4872a5d179fdf316a37e1c05cfcd4dcb2428483
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 525
+    sha256: 42deb2dd8c5c6cfa0cc853ee5ee351516bfa50a0a03ec7bb6b334eab9df22091
     verdict: unjudged
   - rule: undefined-acronym
     line: 526
@@ -53,7 +249,19 @@ findings:
     line: 676
     sha256: d62cb9cea9e84306ada04ad27f5b3fee2c914816bd0168e077f56d556475e4f9
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 680
+    sha256: 5f50928e548802b1f20d3052c6b3f883a99e87ff2ea5e63bff43f4eec9641a5d
+    verdict: unjudged
   - rule: list-item-form-mix
     line: 681
     sha256: bfbe22b8512356bccb39846c3ea5a5484d1aeb84c822dc0f06dc7426861bf0ec
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 707
+    sha256: 55f4d928cc1767e036359234a4aeca5bbfe2f903109e5fd2a61bf54ab92d247f
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 713
+    sha256: 31623209fda5d2a65a7b70cd4e01be0f3263cddb2b13070bd7f1367b9e04210b
     verdict: unjudged

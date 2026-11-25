@@ -1,36 +1,12 @@
 id: soumu-kokumin-cyber-phishing
 chaff: 0.33.0
 findings:
-  - rule: weasel-word
-    line: 3
-    text: なお、フィッシングはphishingという綴りで、魚釣り（fishing）と洗練
-    message: 「といわれている」は、誰が言ったのかを言っていません
-    verdict: false-positive
-    note: a hedge on a disputed word origin, where the hedge is the honest form rather than a hidden source
   - rule: bracket-width-consistency
     line: 23
     text: (アイ) I を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちま
     message: 括弧を「(」と書いています（この文書はふつう「（」。14 箇所のうち 2 箇所が違う）
     verdict: correct
     note: half-width brackets where the page writes full-width ones
-  - rule: latin-spacing
-    line: 23
-    text: " にしたりして、閲覧者が見間違えるのを待ちます。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: spaces set around single example characters (o, I, l, 0) so a reader can tell them apart
-  - rule: latin-spacing
-    line: 23
-    text: " を小文字の（エル） l にしたりして、閲覧者が見間違えるのを待ちます。"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: spaces set around single example characters (o, I, l, 0) so a reader can tell them apart
-  - rule: latin-spacing
-    line: 23
-    text: " を数字の 0 にしたり、アルファベットの大文字の(アイ) I を小文字の（エル"
-    message: 日本語と英字のあいだを空けています（この文書はふつう詰める。53 箇所のうち 7 箇所が違う）
-    verdict: false-positive
-    note: spaces set around single example characters (o, I, l, 0) so a reader can tell them apart
   - rule: latin-spacing
     line: 29
     text: " AppStore）から入手してください。"

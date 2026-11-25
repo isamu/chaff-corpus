@@ -42,18 +42,6 @@ findings:
     text: TypScript 5.4 will be the last version i
     message: '"TypScript" is one letter away from "TypeScript", which the document uses more than once'
     verdict: correct
-  - rule: comparative-without-baseline
-    line: 422
-    text: more desirable, but may cause breaks in
-    message: '"more desirable" does not say what it is compared with'
-    verdict: false-positive
-    note: the baseline, the previous behaviour, is shown just before in the example's comment
-  - rule: code-fence-language-mix
-    line: 439
-    text: "```"
-    message: This code block names no language, unlike the others (28 blocks name one)
-    verdict: false-positive
-    note: a block of compiler error output, which has no language to name
   - rule: contraction-consistency
     line: 487
     text: Additionally, there are new restrictions

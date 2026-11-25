@@ -31,11 +31,6 @@ findings:
     text: VHF radio frequency 146.940 MHz and KSC
     message: '"VHF" is used without an expansion (8 such acronyms)'
     verdict: unjudged
-  - rule: name-variant
-    line: 103
-    text: NASAKennedy, ISS, ISS National Lab
-    message: '"NASAKennedy" is written "NASA Kennedy" elsewhere in the document (case, width or punctuation)'
-    verdict: unjudged
   - rule: undefined-acronym
     line: 103
     text: ISS, ISS National Lab

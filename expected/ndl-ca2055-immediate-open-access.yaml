@@ -123,11 +123,6 @@ findings:
     message: 「事」と書いています（この文書はふつう「こと」と書く語です。69 箇所のうち 1 箇所が違う）
     verdict: unjudged
   - rule: topic-predicate-distance
-    line: 143
-    text: なお、KR21は欧州研究図書館協会（LIBER）やSPARC Europeなど5
-    message: 「は」で出した主題から述語まで 100 字あります（80 字まで）
-    verdict: unjudged
-  - rule: topic-predicate-distance
     line: 153
     text: また、グリーンOAを通じた即時OAは、金銭的に恵まれない研究者が研究助成の条件を
     message: 「は」で出した主題から述語まで 103 字あります（80 字まで）

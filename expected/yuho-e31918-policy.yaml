@@ -1,12 +1,6 @@
 id: yuho-e31918-policy
 chaff: 0.34.0
 findings:
-  - rule: bracket-width-consistency
-    line: 1
-    text: （フラワービジネス支援事業）フラワービジネス支援事業においては、引き続き収益の柱
-    message: 丸括弧を、全角で 6 箇所、半角で 10 箇所書いています。この文書には書き方が二通りあります
-    verdict: false-positive
-    note: half-width (1) item markers and full-width inline parentheses, two roles each written one way, counted as one mixed set
   - rule: fullwidth-alnum-consistency
     line: 1
     text: ３Ｒ活動を中心とした取り組みを進めて参ります。(5)優先的に対処すべき事業上及び

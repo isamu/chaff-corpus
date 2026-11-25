@@ -361,11 +361,6 @@ findings:
     text: SOSS Fund or similar pooled funding mech
     message: '"SOSS" is used without an expansion (6 such acronyms)'
     verdict: unjudged
-  - rule: undefined-term
-    line: 188
-    text: "Fund Profile: The allocation will draw f"
-    message: '"Fund Profile" is written like a defined term, but the document defines it nowhere'
-    verdict: unjudged
   - rule: defined-term-form
     line: 190
     text: Sponsored Developer Payments received an
@@ -416,6 +411,11 @@ findings:
     text: "### 3.8. Stripe Connect"
     message: The heading "3.8. Stripe Connect" ends bare, while 32 other headings end with a mark ("1A.1 Stripe as Payment Processor.")
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 212
+    text: "**Full service agreement**"
+    message: The bold line "Full service agreement" stands in for a heading
+    verdict: unjudged
   - rule: defined-term-form
     line: 214
     text: Sponsored Developer Accounts registered
@@ -435,6 +435,11 @@ findings:
     line: 218
     text: Recipient service agreement**
     message: '"Recipient" is not a name this contract gave a party (Stripe)'
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 218
+    text: "**Recipient service agreement**"
+    message: The bold line "Recipient service agreement" stands in for a heading
     verdict: unjudged
   - rule: defined-term-form
     line: 220

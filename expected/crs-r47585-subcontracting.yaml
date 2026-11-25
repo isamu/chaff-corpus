@@ -86,12 +86,6 @@ findings:
     text: CRS Report RS22536, Overview of the Fede
     message: '"CRS" is used without an expansion (10 such acronyms)'
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 157
-    text: SubNet is available at https://www.sba.g
-    message: 13 one-sentence paragraphs in a row (limit 4)
-    verdict: false-positive
-    note: a footnote list, each note one sentence, read as a run of prose paragraphs
   - rule: max-sentence-length
     line: 177
     text: '"Any contractor receiving a contract wit'
@@ -146,11 +140,6 @@ findings:
     line: 239
     text: Per 48 C.F.R. §19.705-2(b), contracting
     message: This sentence runs 77 words (limit 45)
-    verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 247
-    text: 48 C.F.R. §19.705-3 and SBA, "Federal Co
-    message: 6 one-sentence paragraphs in a row (limit 4)
     verdict: unjudged
   - rule: max-sentence-length
     line: 265

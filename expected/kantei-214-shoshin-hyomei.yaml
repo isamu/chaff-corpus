@@ -39,12 +39,6 @@ findings:
     message: 「極めて重要」は、中身を言わずに強調だけしています
     verdict: correct
   - rule: max-kanji-continuous
-    line: 35
-    text: 日韓間には難しい問題もありますが、来年に国交正常化六十周年を迎えることも見据え、
-    message: 「国交正常化六十周年」は漢字が 9 字続いています（8 字まで）
-    verdict: false-positive
-    note: a fixed anniversary designation written with kanji numerals, as the speech writes every number; it cannot be split
-  - rule: max-kanji-continuous
     line: 41
     text: これは、国連安保理決議違反であり、我が国のみならず、地域、国際社会の平和と安全を
     message: 「国連安保理決議違反」は漢字が 9 字続いています（8 字まで）

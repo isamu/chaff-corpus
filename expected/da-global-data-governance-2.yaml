@@ -31,12 +31,6 @@ findings:
     message: 「非常に重要」は、中身を言わずに強調だけしています
     verdict: correct
     note: an intensifier (極めて重要, 非常に重要) standing in for a reason
-  - rule: comparative-without-baseline
-    line: 55
-    text: さらに新たなデータが生じた場合の取り扱いについては、グローバルな競争の公平性にも
-    message: 「さらに新た」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: さらに meaning 'in addition' (data arising further from existing data), not a comparison; the baseline is in the sentence
   - rule: empty-intensifier
     line: 62
     text: アジアとの連携は、現在主流になりつつある欧州的な価値観や方法に依存しないデータガ
@@ -55,12 +49,6 @@ findings:
     message: 「非常に重要」は、中身を言わずに強調だけしています
     verdict: correct
     note: an intensifier (極めて重要, 非常に重要) standing in for a reason
-  - rule: comparative-without-baseline
-    line: 76
-    text: より明確に示していただけるとよい。これまでの、ボトムアップでの課題整理も有意義だ
-    message: 「より明確」は、何と比べているかが書かれていません
-    verdict: false-positive
-    note: a member's request to improve the guideline under discussion; the baseline is that draft
   - rule: topic-predicate-distance
     line: 82
     text: データの標準化や連携について、個社の取組は個別最適に陥りがちであるため、共通化す

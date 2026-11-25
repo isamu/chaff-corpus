@@ -1,9 +1,3 @@
 id: kantei-2025-expo-closing-aisatsu
 chaff: 0.36.0
-findings:
-  - rule: max-kanji-continuous
-    line: 5
-    text: 本日、秋篠宮皇嗣同妃両殿下の御臨席の下、２０２５年日本国際博覧会、大阪・関西万博
-    message: 「秋篠宮皇嗣同妃両殿下」は漢字が 10 字続いています（8 字まで）
-    verdict: false-positive
-    note: an official title, a body's or programme's proper name, or a statutory/document name; the kanji run cannot be split
+findings: []

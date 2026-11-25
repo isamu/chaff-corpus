@@ -142,6 +142,11 @@ findings:
     line: 105
     sha256: aaeaf7a4d716ce3d852eb00fc77f4c5067865a914a5bd0943a6f7c6a07ba3c06
     verdict: correct
+  - rule: heading-marker-no-space
+    line: 117
+    sha256: 4807230058123de51c5b48aca77acfcfab20000cda4f75effe2e2c9a3cc4a180
+    verdict: correct
+    note: the one article heading of eighteen written without the space after "##"; CommonMark renders it as a paragraph
   - rule: orthographic-variant
     line: 131
     sha256: 9935c44b1df971cd421efd51d28770b854f91bf2ea4f6bb854e9d1c93a01790c

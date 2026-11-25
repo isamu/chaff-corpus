@@ -51,31 +51,6 @@ findings:
     text: (水曜日)までに大阪市健康局総務部総務課までご連絡ください。
     message: 括弧を「(」と書いています（この文書はふつう「（」。78 箇所のうち 9 箇所が違う）
     verdict: unjudged
-  - rule: date-without-year
-    line: 122
-    text: 10月1日から11月1日まで
-    message: 「10月1日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 122
-    text: 11月1日まで
-    message: 「11月1日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 127
-    text: 11月12日まで
-    message: 「11月12日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 127
-    text: 11月7日から11月12日まで
-    message: 「11月7日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
-    verdict: unjudged
-  - rule: date-without-year
-    line: 131
-    text: 11月15日
-    message: 「11月15日」には年がありません。この文書の日付は 1991年から2027年にわたるので、どの年か決まりません
-    verdict: unjudged
   - rule: bracket-width-consistency
     line: 166
     text: (木曜日）

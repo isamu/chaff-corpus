@@ -12,9 +12,3 @@ findings:
     message: 「結果をExcel（.xlsx）で出力。」は文で終わっています。この箇条書きのほかの項目は名詞で終わります（6 項目のうち 1 項目）
     verdict: correct
     note: one item ends in a sentence (印刷して掲示できます) in a list of noun-ending items
-  - rule: code-fence-language-mix
-    line: 81
-    text: "```"
-    message: このコードブロックだけ言語名がありません（言語名のあるブロック 5 個）
-    verdict: false-positive
-    note: a sample of the tool's output, which has no language to name

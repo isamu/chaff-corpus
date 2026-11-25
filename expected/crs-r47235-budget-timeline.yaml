@@ -101,11 +101,6 @@ findings:
     text: HHS-Education appropriations bill) and D
     message: '"HHS" is used without an expansion (4 such acronyms)'
     verdict: unjudged
-  - rule: one-sentence-paragraph-run
-    line: 267
-    text: The Senate considered no regular appropr
-    message: 5 one-sentence paragraphs in a row (limit 4)
-    verdict: unjudged
   - rule: max-sentence-length
     line: 279
     text: Full-year CRs have been enacted on four

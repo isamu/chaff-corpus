@@ -1,3 +1,21 @@
 id: clef-salary-and-equity-compensation
 chaff: 0.36.0
-findings: []
+findings:
+  - rule: heading-marker-no-space
+    line: 1
+    text: "#Salary and Equity Compensation"
+    message: '"#Salary and Equity Compensation" has no space after "#" and is not a heading'
+    verdict: correct
+    note: "the document title, written as a heading without the space; CommonMark renders it as a paragraph"
+  - rule: heading-marker-no-space
+    line: 5
+    text: "##Salary"
+    message: '"##Salary" has no space after "##" and is not a heading'
+    verdict: correct
+    note: "a section heading without the space; CommonMark renders it as a paragraph"
+  - rule: heading-marker-no-space
+    line: 40
+    text: "##Equity"
+    message: '"##Equity" has no space after "##" and is not a heading'
+    verdict: correct
+    note: "a section heading without the space; CommonMark renders it as a paragraph"

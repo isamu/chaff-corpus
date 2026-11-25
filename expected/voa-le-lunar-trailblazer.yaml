@@ -1,9 +1,3 @@
 id: voa-le-lunar-trailblazer
 chaff: 0.33.0
-findings:
-  - rule: weasel-word
-    line: 21
-    text: Scientists believe most of the water is
-    message: '"scientists believe" does not say who'
-    verdict: false-positive
-    note: a learners' news explainer stating the scientific view, after naming past studies
+findings: []

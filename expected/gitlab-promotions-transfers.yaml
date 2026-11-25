@@ -1,6 +1,11 @@
 id: gitlab-promotions-transfers
 chaff: 0.34.0
 findings:
+  - rule: pseudo-heading
+    line: 40
+    text: "**Job Detail Changes Due to Business Req"
+    message: The bold line "Job Detail Changes Due to Business Requirements or Reorganizations" stands in for a heading
+    verdict: unjudged
   - rule: contraction-consistency
     line: 42
     text: These types of changes are specified as
@@ -55,10 +60,20 @@ findings:
     text: In order to have insight into upcoming p
     message: '"in order to" can be said in fewer words'
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 133
+    text: "**PROMOTION NOMINATION PREPARATION & SUB"
+    message: The bold line "PROMOTION NOMINATION PREPARATION & SUBMISSION" stands in for a heading
+    verdict: unjudged
   - rule: hyphen-as-dash
     line: 136
     text: " - All manager promotion nominations mus"
     message: '"-" stands in for a dash'
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 139
+    text: "**COMPENSATION/ ACR PLANNING (tentative"
+    message: The bold line "COMPENSATION/ ACR PLANNING (tentative schedule)" stands in for a heading
     verdict: unjudged
   - rule: undefined-acronym
     line: 141
@@ -85,10 +100,30 @@ findings:
     text: As the audience are other GitLab team me
     message: This sentence runs 41 words (limit 40)
     verdict: unjudged
+  - rule: pseudo-heading
+    line: 178
+    text: "**Project impact on GitLab / Business Re"
+    message: The bold line "Project impact on GitLab / Business Result" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 180
+    text: "**Project/accomplishment impact**"
+    message: The bold line "Project/accomplishment impact" stands in for a heading
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 184
+    text: "**Business result**"
+    message: The bold line "Business result" stands in for a heading
+    verdict: unjudged
   - rule: undefined-acronym
     line: 188
     text: OKR? a key investment theme? etc.).
     message: '"OKR" is used without an expansion (27 such acronyms)'
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 192
+    text: "**Team member’s direct contribution**"
+    message: The bold line "Team member’s direct contribution" stands in for a heading
     verdict: unjudged
   - rule: undefined-acronym
     line: 194
@@ -159,6 +194,11 @@ findings:
     line: 318
     text: E-Group approval, and off-cycle promotio
     message: '"E-Group" is written "eGroup" elsewhere in the document (case, width or punctuation)'
+    verdict: unjudged
+  - rule: pseudo-heading
+    line: 324
+    text: "**Required Documentation**"
+    message: The bold line "Required Documentation" stands in for a heading
     verdict: unjudged
   - rule: undefined-acronym
     line: 342

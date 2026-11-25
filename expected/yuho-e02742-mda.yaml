@@ -3,23 +3,8 @@ chaff: 0.34.0
 findings:
   - rule: bracket-width-consistency
     line: 1
-    text: (2)経営者の視点による経営成績等の状況に関する分析・検討内容経営者の視点による
-    message: 括弧を「(」と書いています（この文書はふつう「（」。82 箇所のうち 3 箇所が違う）
-    verdict: unjudged
-  - rule: bracket-width-consistency
-    line: 1
     text: )経営成績等の状況の概要当連結会計年度における当社グループ（当社及び連結子会社）
     message: 括弧を「)」と書いています（この文書はふつう「）」。81 箇所のうち 2 箇所が違う）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: ｂ．経営成績当連結会計年度の経営成績は、半導体製造装置向け及び工作機械向けで一部
-    message: 「経営成績当連結会計年度」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 1
-    text: 販売実績当連結会計年度における販売実績は、次のとおりであります。セグメントの名称
-    message: 「販売実績当連結会計年度」は漢字が 11 字続いています（10 字まで）
     verdict: unjudged
   - rule: max-sentence-length
     line: 1

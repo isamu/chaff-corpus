@@ -13,12 +13,6 @@ findings:
     verdict: correct
     note: "the subject on the line after the SUBJECT: label runs 148 characters"
   - rule: max-sentence-length
-    line: 19
-    text: Second extension of CRA consideration fo
-    message: This sentence runs 22 words (limit 18)
-    verdict: false-positive
-    note: the letter's subject line, a title without a closing period, read as a sentence
-  - rule: max-sentence-length
     line: 21
     text: Applicability to Community Banking Organ
     message: This sentence runs 27 words (limit 18)

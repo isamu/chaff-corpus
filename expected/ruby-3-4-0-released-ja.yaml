@@ -125,3 +125,11 @@ findings:
     line: 296
     sha256: dbdf0fe219c53db393b6cab4459343b602fe93910a85f45ce552824f5e75322e
     verdict: unjudged
+  - rule: link-definition-unused
+    line: 320
+    sha256: 56648dba9d747408aa6960df0551c7ebf6719e6921c4b4334b2ffe6c2ac28fbe
+    verdict: unjudged
+  - rule: link-definition-unused
+    line: 330
+    sha256: d79f3e20e3edbd4e2bb9fb3b260b7825ab34504eb1772da2d2c24dce69039d7b
+    verdict: unjudged

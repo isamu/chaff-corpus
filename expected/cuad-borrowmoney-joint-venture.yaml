@@ -34,12 +34,6 @@ findings:
     text: " , City And State, And Or Private Awarde"
     message: A space before ","
     verdict: correct
-  - rule: undefined-term
-    line: 31
-    text: The Total Contributions. 14. Duties of M
-    message: '"The Total Contributions" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: title-case prose, where nearly every word is capitalised, read as a defined term
   - rule: space-before-punctuation
     line: 37
     text: " , City And State, And Or Private Awarde"

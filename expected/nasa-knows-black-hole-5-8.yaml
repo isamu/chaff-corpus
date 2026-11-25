@@ -1,12 +1,6 @@
 id: nasa-knows-black-hole-5-8
 chaff: 0.36.0
 findings:
-  - rule: weasel-word
-    line: 31
-    text: Scientists believe this type of black ho
-    message: '"scientists believe" does not say who'
-    verdict: false-positive
-    note: a students' explainer stating the scientific view; no particular source is being withheld
   - rule: oxford-comma-consistency
     line: 76
     text: Spacecraft like these help scientists an

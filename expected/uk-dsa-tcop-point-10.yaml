@@ -52,12 +52,6 @@ findings:
     text: using [Open Standards](https://www.gov.u
     message: '"appropriate" and other vague words: 5 per 1000 words (limit 4)'
     verdict: correct
-  - rule: vague-word-density
-    line: 147
-    text: You should only keep data for as long as
-    message: '"as necessary" and other vague words: 5 per 1000 words (limit 4)'
-    verdict: false-positive
-    note: the fixed wording of a data-retention principle (keep only as long as necessary), counted as a vague hedge
   - rule: hyphen-as-dash
     line: 165
     text: " - better use of data](https://www.gov.u"

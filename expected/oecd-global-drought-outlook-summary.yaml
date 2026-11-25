@@ -7,12 +7,6 @@ findings:
     message: Heading "More info" goes from level 1 to level 4 (expected 2)
     verdict: correct
     note: the page jumps from the h1 title to an h4 More info block
-  - rule: adverb-overuse
-    line: 37
-    text: increasingly frequent and severe worldwi
-    message: 16 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: the -ly words are mostly content (globally, annually, negatively), not padding, and the count is barely over the limit
   - rule: max-paragraph-length
     line: 47
     text: New OECD analysis highlights a sharp ris

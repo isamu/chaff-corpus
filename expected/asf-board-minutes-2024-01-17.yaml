@@ -431,10 +431,6 @@ findings:
     sha256: 1621d47c2f6369b80b87200948a8f97e7b41fad0a16ec720cb32c7eb5c133550
     verdict: correct
     note: an empty there-opener with a perfect be reporting no releases; can be said directly
-  - rule: date-format-consistency
-    line: 1955
-    sha256: 4cd7ce363e1df3889fc4b968553b63d39f5609a1daff38adeb5d6eb603f8428d
-    verdict: unjudged
   - rule: expletive-construction
     line: 1960
     sha256: 32d0914ab91010d47cdabe2ea3eee63adfb791d1942740d72615a713587632ab

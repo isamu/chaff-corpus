@@ -12,11 +12,18 @@ findings:
     what: "\"It doesn't have to be that way.\" after the opening problem; the same turn in ai-en-owned-bike-winter"
     verdict: missed
     note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem"
+  - rule: ai-generated-composite
+    line: 9
+    text: If you only do one thing on this list, m
+    message: "2 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform"
+    verdict: correct
+    note: the stock "If you only do one thing on this list, make it this one" and the template listicle together read as generated; anchored at the first signal finding
   - rule: ai-tell
     line: 9
-    what: '"If you only do one thing on this list, make it this one."'
-    verdict: missed
-    note: 'candidate phrase: "If you only do one thing …, make it …"'
+    text: If you only do one thing on this list, m
+    message: '"if you only do one" appears (score 5, limit 4)'
+    verdict: correct
+    note: 'candidate phrase: "If you only do one thing …, make it …"; found by chaffjs 0.51.0'
   - rule: closing-cliche
     line: 45
     what: "\"We're here to help you spend less time on paperwork and more time running your business.\""

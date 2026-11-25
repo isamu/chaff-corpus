@@ -55,12 +55,6 @@ findings:
     message: 「提供を実施する」は「提供する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
     verdict: correct
     note: a verbal noun with 行う/実施する where the verb says the same, in a text dense with them
-  - rule: nominalization
-    line: 16
-    text: 運休を実施する場合や運行再開時には、利用者等が適切な行動を選択できるよう
-    message: 「運休を実施する」は「運休する」で足ります（動詞を名詞にした言い方が 1000 字あたり 5 個、2 個まで）
-    verdict: false-positive
-    note: the object is the compound 計画運休, which takes 実施する; the suggested 運休する drops 計画 and 計画運休する is not idiomatic
   - rule: no-doubled-joshi
     line: 18
     text: の際の振替輸送のあり方 ⇒振替輸送実施の有無については、輸送力等の様々な事情を踏
