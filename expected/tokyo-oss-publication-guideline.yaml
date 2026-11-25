@@ -35,17 +35,20 @@ findings:
     line: 29
     text: "**(1)　再配布の自由**"
     message: 太字の行「(1)　再配布の自由」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 31
     text: "**(2)　ソースコード**"
     message: 太字の行「(2)　ソースコード」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 33
     text: "**(3)　派生ソフトウェアの配布が可能**"
     message: 太字の行「(3)　派生ソフトウェアの配布が可能」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: bracket-width-consistency
     line: 35
     text: (integrity)**
@@ -55,37 +58,44 @@ findings:
     line: 35
     text: "**(4)　作者のソースコードの完全性(integrity)**"
     message: 太字の行「(4)　作者のソースコードの完全性(integrity)」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 37
     text: "**(5)　個人やグループ、使用する分野によってのプログラムの利用用途限定の禁止"
     message: 太字の行「(5)　個人やグループ、使用する分野によってのプログラムの利用用途限定の禁止」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 39
     text: "**(6)　利用分野に対する利用制限の禁止**"
     message: 太字の行「(6)　利用分野に対する利用制限の禁止」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 41
     text: "**(7)　ライセンスの配布**"
     message: 太字の行「(7)　ライセンスの配布」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 43
     text: "**(8)　特定製品でのみ有効なライセンスの禁止**"
     message: 太字の行「(8)　特定製品でのみ有効なライセンスの禁止」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 45
     text: "**(9)　他のソフトウェアを制限するライセンスの禁止**"
     message: 太字の行「(9)　他のソフトウェアを制限するライセンスの禁止」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: pseudo-heading
     line: 47
     text: "**(10)　ライセンスの技術的中立性の保持**"
     message: 太字の行「(10)　ライセンスの技術的中立性の保持」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title (1)-(10) under "### 1 OSSに求められる要素" written as a bold line; with no blank line it also runs into the item's body, a heading fixes both
   - rule: orthographic-variant
     line: 55
     text: よくデジタル化していくうえで、簡易なソフトウェアについては、ローコード・ツールや
@@ -95,7 +105,8 @@ findings:
     line: 65
     text: "**(1)　OSS化の検討**"
     message: 太字の行「(1)　OSS化の検討」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSS公開条件" written as a bold line, running into its body
   - rule: fullwidth-alnum-consistency
     line: 66
     text: １の3に記載されている“社会的効果及びOSSとして公開することの価値の有無”を検
@@ -105,7 +116,8 @@ findings:
     line: 70
     text: "**(2)　OSSにおける権利の記載**"
     message: 太字の行「(2)　OSSにおける権利の記載」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSS公開条件" written as a bold line, running into its body
   - rule: bracket-width-consistency
     line: 72
     text: (「第５　公開時のライセンス」参照）
@@ -120,12 +132,14 @@ findings:
     line: 73
     text: "**(3)　関連資料の公開**"
     message: 太字の行「(3)　関連資料の公開」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSS公開条件" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 76
     text: "**(4)　OSS公開後の評価**"
     message: 太字の行「(4)　OSS公開後の評価」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSS公開条件" written as a bold line, running into its body
   - rule: unbalanced-bracket
     line: 80
     text: ”として公開する場合は、そのOSSは以下のとおり管理する。
@@ -155,12 +169,14 @@ findings:
     line: 165
     text: "**(1) 仕様書に明記すべき事項**"
     message: 太字の行「(1) 仕様書に明記すべき事項」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 3 開発保守業者との契約締結時における留意点" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 175
     text: "**(2) 担当者が注意すべき事項**"
     message: 太字の行「(2) 担当者が注意すべき事項」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 3 開発保守業者との契約締結時における留意点" written as a bold line, running into its body
   - rule: repeated-conjunction
     line: 181
     text: 　ただし、重大なソースコードの誤りや欠陥等が発見され、行政サービスに影響が甚大な
@@ -195,22 +211,26 @@ findings:
     line: 240
     text: "**(1) コピーレフト**"
     message: 太字の行「(1) コピーレフト」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSSの形式" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 243
     text: "**(2) 準コピーレフト**"
     message: 太字の行「(2) 準コピーレフト」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSSの形式" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 246
     text: "**(3) 非コピーレフト**"
     message: 太字の行「(3) 非コピーレフト」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSSの形式" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 250
     text: "**(4) 型式分類表**"
     message: 太字の行「(4) 型式分類表」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 2 OSSの形式" written as a bold line, running into its body
   - rule: fullwidth-alnum-consistency
     line: 251
     text: ３つの型式に分類すると下記の表となる。
@@ -230,12 +250,14 @@ findings:
     line: 275
     text: "**(1) ライセンスの選定**"
     message: 太字の行「(1) ライセンスの選定」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 3 ライセンス" written as a bold line, running into its body
   - rule: pseudo-heading
     line: 280
     text: "**(2) マルチライセンス**"
     message: 太字の行「(2) マルチライセンス」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: correct
+    note: a numbered item title under "### 3 ライセンス" written as a bold line, running into its body
   - rule: fullwidth-alnum-consistency
     line: 282
     text: １つのライセンスでは、OSS化の趣旨や運用の際の実態と適合できない場合には、複数
@@ -275,12 +297,14 @@ findings:
     line: 317
     text: "**(READMEファイルへの記載事項例)**"
     message: 太字の行「(READMEファイルへの記載事項例)」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: false-positive
+    note: a parenthesised caption introducing an example of README text, like the 表 captions; not a section of the guideline
   - rule: pseudo-heading
     line: 318
     text: "**１ コンプライアンス情報**"
     message: 太字の行「１ コンプライアンス情報」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: false-positive
+    note: a section title inside the example README text reproduced in the guideline, not a section of the guideline; a heading would put the example's parts into the guideline's outline (the third such title, line 325, is not reported)
   - rule: undefined-acronym
     line: 319
     text: GDPR等）が含まれる場合は、利用者に責任があるものとし、都は一切の責任を負わな
@@ -295,7 +319,8 @@ findings:
     line: 321
     text: "**2 損害賠償等**"
     message: 太字の行「2 損害賠償等」が見出しの代わりに置かれています
-    verdict: unjudged
+    verdict: false-positive
+    note: a section title inside the example README text reproduced in the guideline, not a section of the guideline; same as line 318
   - rule: no-mixed-desumasu
     line: 325
     text: 3 ご利用にあたってのお願い**

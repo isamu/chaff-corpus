@@ -128,8 +128,10 @@ findings:
   - rule: link-definition-unused
     line: 320
     sha256: 56648dba9d747408aa6960df0551c7ebf6719e6921c4b4334b2ffe6c2ac28fbe
-    verdict: unjudged
+    verdict: correct
+    note: no link in the text uses this issue label; the definition is left over
   - rule: link-definition-unused
     line: 330
     sha256: d79f3e20e3edbd4e2bb9fb3b260b7825ab34504eb1772da2d2c24dce69039d7b
-    verdict: unjudged
+    verdict: correct
+    note: the text links this site inline with another label, so the definition (whose address also lacks a scheme) is unused

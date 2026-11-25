@@ -4,7 +4,8 @@ findings:
   - rule: pseudo-heading
     line: 29
     sha256: ff10e0c1f3ef30d0b244cc62b12a66a03d8fe6f63647393ad513b496f5b5e2d6
-    verdict: unjudged
+    verdict: false-positive
+    note: a bold label over a list of reference links in the middle of a section; the section's prose resumes after the list, so there is no section for a heading to open
   - rule: undefined-acronym
     line: 42
     sha256: 307c79bd0a4e1f403ecabaa7a703017152616b3d78d9abc763631b57cc0369cc
