@@ -12,9 +12,3 @@ findings:
     message: 4 of 5 lists have exactly three items (70% allowed)
     verdict: false-positive
     note: the three questions and the three-step flow were set by the request; the other lists are not padded to three
-  - rule: unknown-word
-    line: 76
-    text: systemd unit file in `deploy/standup-bot
-    message: '"systemd" is not in the dictionary; did you mean "systems"?'
-    verdict: false-positive
-    note: systemd is the name of the Linux service manager, in a technical README

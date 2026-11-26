@@ -1,12 +1,6 @@
 id: nstac-microdata-forum
 chaff: 0.33.0
 findings:
-  - rule: max-kanji-continuous
-    line: 286
-    text: 一橋大学による匿名データ提供依頼申出書作成説明会の開催（2010/08/06）
-    message: 「提供依頼申出書作成説明会」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: a past event's title built from a form's official name (提供依頼申出書); the kanji run cannot be split
   - rule: no-doubled-joshi
     line: 288
     text: の書類の作成の仕方や記入上の注意点について

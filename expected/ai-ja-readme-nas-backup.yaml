@@ -24,9 +24,3 @@ findings:
     message: 日本語と英字のあいだを空けています（この文書はふつう詰める。26 箇所のうち 2 箇所が違う）
     verdict: correct
     note: the same root, the space after it
-  - rule: no-mixed-desumasu
-    line: 59
-    text: 外付けHDDが見つからない**：誰かが抜いたか、NASが再起動したあとにマウント
-    message: この文だけ他と文末の調子が違います（この箇条書きの中で 1 文）
-    verdict: false-positive
-    note: a terse cause note after a bold label (マウントされていない。) in a list of troubles; a handover note writes it so

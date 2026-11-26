@@ -9,10 +9,10 @@ findings:
     note: different verbs that share only the polite ending します, read as a repeated ending
   - rule: requirement-smell
     line: 70
-    text: なども `region_type` にかかわらず NG となるため、それらを許容
+    text: などデータ構造を改める必要があります
     message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
     verdict: false-positive
-    note: など in a description of how a check behaves, not in a requirement
+    note: the second など gives one example (a separate sheet) of how a user may restructure the data, in a description of the check's limits; not a requirement whose scope is left open
   - rule: latin-spacing
     line: 82
     text: AIも見逃す方向（誤検出より見逃しを優先）で設計されています

@@ -8,9 +8,10 @@ findings:
     note: "catalog B01 (invented detail): figures, quotes and a product launch a press release would publish as fact"
   - rule: cliche
     line: 20
-    what: '"The results their customers are seeing speak for themselves." in the investor quote'
-    verdict: missed
-    note: 'candidate phrase: "speak for themselves", the stock close of a generated investor quote'
+    text: '"Tallyroot has found a way to make forec'
+    message: '"speak for themselves" is a cliché'
+    verdict: correct
+    note: 'candidate phrase: "speak for themselves", the stock close of a generated investor quote; found by chaffjs 0.52.0'
   - rule: heading-level-skip
     line: 24
     text: "### About Tallyroot"

@@ -73,11 +73,6 @@ findings:
     text: ）連結会社の状況 2021年３月31日現在セグメントの名称従業員数（人）化学品事
     message: 「(」を「）」で閉じています（全角と半角が違います）
     verdict: unjudged
-  - rule: max-kanji-continuous
-    line: 21
-    text: 2021年３月期実績新規中期経営計画2024年３月期(最終年度)目標売上高（億円
-    message: 「期実績新規中期経営計画」は漢字が 11 字続いています（10 字まで）
-    verdict: unjudged
   - rule: max-sentence-length
     line: 21
     text: (3）経営上の目標の達成状況を判断するための客観的な指標等前中期経営計画は202

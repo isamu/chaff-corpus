@@ -13,12 +13,6 @@ findings:
     message: '"cancelled" here, where the document usually spells it "canceled" (1 of 46)'
     verdict: correct
     note: the minority spelling in the record
-  - rule: currency-notation-consistency
-    line: 3879
-    text: USD1. He created the Tron blockchain, an
-    message: '"USD1" here, where the document usually writes this currency like "$600 million" (1 of 95)'
-    verdict: false-positive
-    note: the name of a stablecoin, not an amount of money
   - rule: name-variant
     line: 5065
     text: Mullen, who joined our Subcommittee this

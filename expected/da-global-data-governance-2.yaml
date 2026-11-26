@@ -49,12 +49,6 @@ findings:
     message: 「非常に重要」は、中身を言わずに強調だけしています
     verdict: correct
     note: an intensifier (極めて重要, 非常に重要) standing in for a reason
-  - rule: topic-predicate-distance
-    line: 82
-    text: データの標準化や連携について、個社の取組は個別最適に陥りがちであるため、共通化す
-    message: 「は」で出した主題から述語まで 92 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic (取組は) gets its predicate in the reason clause (陥りがちであるため、); the rest of the sentence has its own frame
   - rule: empty-intensifier
     line: 84
     text: 人材も非常に重要で、異業種出身者や日本だけでは人材が足りず、世界中から集めてくる

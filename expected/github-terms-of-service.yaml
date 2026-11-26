@@ -19,12 +19,6 @@ findings:
     message: '"promptly" sets no deadline; a number of days makes it one that can be met or missed'
     verdict: correct
     note: promptly with no number of days
-  - rule: contraction-consistency
-    line: 153
-    text: To the extent this agreement is not enfo
-    message: "\"is not\" is written \"isn't\" elsewhere in the document"
-    verdict: false-positive
-    note: the full form in a formal clause flagged because the plain-language summaries use the contraction
   - rule: defined-term-form
     line: 163
     text: affiliates).

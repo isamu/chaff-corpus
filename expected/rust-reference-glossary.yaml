@@ -36,4 +36,4 @@ findings:
     text: "[*namespace*]: names/namespaces.md"
     message: No link uses the definition "*namespace*"
     verdict: correct
-    note: "the glossary links namespace inline as [namespace](#namespace); nothing uses [*namespace*] or [namespace][]"
+    note: the glossary links namespace inline as [namespace](#namespace); nothing uses [*namespace*] or [namespace][]

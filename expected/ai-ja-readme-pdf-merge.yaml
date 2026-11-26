@@ -20,9 +20,10 @@ findings:
     note: a space before 以上; part of the same minority
   - rule: unfilled-placeholder
     line: 26
-    what: 「https://github.com/yourname/pdfmerge-cli.git」の yourname がそのまま
-    verdict: missed
-    note: a yourname blank in a URL, left for the user to fill
+    text: yourname/pdfmerge-cli.git
+    message: 「yourname」が埋まっていません
+    verdict: correct
+    note: a yourname blank in a URL, left for the user to fill; found by chaffjs 0.52.0
   - rule: latin-spacing
     line: 86
     text: " からお願いします。プルリクエストも歓迎します。"

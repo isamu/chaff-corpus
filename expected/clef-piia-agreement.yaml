@@ -21,7 +21,7 @@ findings:
     text: "**EMPLOYEE'S DISCLOSURE**"
     message: The bold line "EMPLOYEE'S DISCLOSURE" stands in for a heading
     verdict: correct
-    note: "the title of Schedule A, a bold line standing alone under the schedule heading"
+    note: the title of Schedule A, a bold line standing alone under the schedule heading
   - rule: quote-style-consistency
     line: 78
     text: "'S DISCLOSURE**"
@@ -32,13 +32,13 @@ findings:
     text: "**TERMINATION CERTIFICATE CONCERNING**"
     message: The bold line "TERMINATION CERTIFICATE CONCERNING" stands in for a heading
     verdict: correct
-    note: "the first line of Schedule B's title, a bold line standing alone"
+    note: the first line of Schedule B's title, a bold line standing alone
   - rule: pseudo-heading
     line: 128
     text: "**COMPANY PROPRIETARY INFORMATION**"
     message: The bold line "COMPANY PROPRIETARY INFORMATION" stands in for a heading
     verdict: correct
-    note: "the second line of the same Schedule B title; a heading split over two bold lines"
+    note: the second line of the same Schedule B title; a heading split over two bold lines
   - rule: quote-style-consistency
     line: 134
     text: "'s rights under the Agreement."

@@ -293,18 +293,6 @@ findings:
     text: )**
     message: 括弧を「)」と書いています（この文書はふつう「）」。72 箇所のうち 6 箇所が違う）
     verdict: correct
-  - rule: pseudo-heading
-    line: 317
-    text: "**(READMEファイルへの記載事項例)**"
-    message: 太字の行「(READMEファイルへの記載事項例)」が見出しの代わりに置かれています
-    verdict: false-positive
-    note: a parenthesised caption introducing an example of README text, like the 表 captions; not a section of the guideline
-  - rule: pseudo-heading
-    line: 318
-    text: "**１ コンプライアンス情報**"
-    message: 太字の行「１ コンプライアンス情報」が見出しの代わりに置かれています
-    verdict: false-positive
-    note: a section title inside the example README text reproduced in the guideline, not a section of the guideline; a heading would put the example's parts into the guideline's outline (the third such title, line 325, is not reported)
   - rule: undefined-acronym
     line: 319
     text: GDPR等）が含まれる場合は、利用者に責任があるものとし、都は一切の責任を負わな
@@ -315,12 +303,6 @@ findings:
     text: 又は利用不可となる可能性がありますので、あらかじめご了承願います。
     message: 「又は」と書いています（この文書はふつう「または」と書く語です。3 箇所のうち 1 箇所が違う）
     verdict: correct
-  - rule: pseudo-heading
-    line: 321
-    text: "**2 損害賠償等**"
-    message: 太字の行「2 損害賠償等」が見出しの代わりに置かれています
-    verdict: false-positive
-    note: a section title inside the example README text reproduced in the guideline, not a section of the guideline; same as line 318
   - rule: no-mixed-desumasu
     line: 325
     text: 3 ご利用にあたってのお願い**

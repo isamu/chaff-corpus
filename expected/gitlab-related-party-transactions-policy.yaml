@@ -17,7 +17,7 @@ findings:
     text: "**Significant Stockholders**"
     message: The bold line "Significant Stockholders" stands in for a heading
     verdict: correct
-    note: "a bold line alone naming the subsection that follows"
+    note: a bold line alone naming the subsection that follows
   - rule: unused-definition
     line: 61
     text: ("***SEC***") (to the extent such inform
@@ -28,22 +28,22 @@ findings:
     text: "**Advance Approval**"
     message: The bold line "Advance Approval" stands in for a heading
     verdict: correct
-    note: "a bold line alone naming a subsection under \"### APPROVAL PROCESS\""
+    note: a bold line alone naming a subsection under "### APPROVAL PROCESS"
   - rule: pseudo-heading
     line: 80
     text: "**Review of Ongoing Transactions**"
     message: The bold line "Review of Ongoing Transactions" stands in for a heading
     verdict: correct
-    note: "a bold line alone naming a subsection under \"### APPROVAL PROCESS\""
+    note: a bold line alone naming a subsection under "### APPROVAL PROCESS"
   - rule: pseudo-heading
     line: 84
     text: "**Ratification**"
     message: The bold line "Ratification" stands in for a heading
     verdict: correct
-    note: "a bold line alone naming a subsection under \"### APPROVAL PROCESS\""
+    note: a bold line alone naming a subsection under "### APPROVAL PROCESS"
   - rule: pseudo-heading
     line: 92
     text: "**Standing Pre-Approval for Certain Rela"
     message: The bold line "Standing Pre-Approval for Certain Related Party Transactions" stands in for a heading
     verdict: correct
-    note: "a bold line alone naming the subsection that follows"
+    note: a bold line alone naming the subsection that follows

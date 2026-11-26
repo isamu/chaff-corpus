@@ -6,7 +6,7 @@ findings:
     text: "## LEGISLATIVE SESSION"
     message: Nothing under the heading "LEGISLATIVE SESSION"
     verdict: correct
-    note: a ## heading followed at once by another ## heading, so empty by structure; the source is flat preformatted text with no heading levels (a rule line follows this heading there), so the conversion is not wrong
+    note: a
   - rule: redundant-expression
     line: 441
     text: Yesterday, the President of the United S
@@ -30,4 +30,4 @@ findings:
     text: "## [Rollcall Vote No. 75 Leg.]"
     message: Nothing under the heading "[Rollcall Vote No. 75 Leg.]"
     verdict: correct
-    note: a ## heading followed at once by the ## YEAS heading, so empty by structure; the source is flat centred lines with no heading levels, so no subheading reading is lost in conversion
+    note: a

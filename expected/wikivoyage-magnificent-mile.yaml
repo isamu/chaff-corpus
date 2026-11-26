@@ -12,8 +12,8 @@ findings:
   - rule: max-sentence-length
     line: 21
     sha256: 473bd54700bff6b431e46a81db40834e47c3acfa6f31800d1b27407e505afe67
-    verdict: false-positive
-    note: a parenthesised sentence ending in .) is joined to the next sentence; neither is over the limit alone
+    verdict: correct
+    note: the parenthesised sentence is joined to the next one, but the next sentence alone (the firehouse behind the pumping station) is 46 words against the limit of 45
   - rule: max-paragraph-length
     line: 23
     sha256: a776324b114eea7bd7b64db87317c56e173c7b1801952249a813c23a7dec4154
