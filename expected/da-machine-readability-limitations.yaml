@@ -11,7 +11,8 @@ findings:
     line: 70
     text: などデータ構造を改める必要があります
     message: 要求の中の「など」は、ほかに何が含まれるのかを決めていません
-    verdict: unjudged
+    verdict: false-positive
+    note: the second など gives one example (a separate sheet) of how a user may restructure the data, in a description of the check's limits; not a requirement whose scope is left open
   - rule: latin-spacing
     line: 82
     text: AIも見逃す方向（誤検出より見逃しを優先）で設計されています
