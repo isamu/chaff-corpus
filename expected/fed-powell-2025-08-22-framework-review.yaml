@@ -394,9 +394,9 @@ findings:
   - rule: max-sentence-length
     line: 103
     text: A 2020 paper by Caldara and others discu
-    message: This sentence runs 75 words (limit 25)
-    verdict: false-positive
-    note: most of the length is a bibliographic citation (authors, title, series) in a footnote
+    message: This sentence runs 38 words (limit 25)
+    verdict: correct
+    note: a long sentence in the speech's notes; only the writer's words before the "; see" citation are counted, like footnotes 1 to 4
   - rule: max-sentence-length
     line: 115
     text: For additional information, see the repo

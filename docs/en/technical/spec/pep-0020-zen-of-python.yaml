@@ -11,5 +11,5 @@ license:
   url: https://web.archive.org/web/20260919013757id_/https://peps.python.org/pep-0020/
   note: Public domain ("This document has been placed in the public domain.", stated in the document); converted to Markdown
 redistribute: true
-sha256: 0445b549bef35b4cc87a56fe9900df524dc1698ce2e33479fe41941658af9e3c
-notes: Imported from isamu/lab text/corpus (manifest id pep-0020-zen-of-python). The source is html; lab's corpus fetch stored it converted (sha256 is of the stored text).
+sha256: 0e28acf3102e9ab7e2ca9c8c2612bc5ae8386d9ff2132354bfb38080b25bc45c
+notes: Imported from isamu/lab text/corpus (manifest id pep-0020-zen-of-python). The source is html; lab's corpus fetch stored it converted (sha256 is of the stored text). The Zen of Python section is a <pre> block in the source; the stored conversion had made each line a paragraph, so it is restored as a fenced code block with the source's lines unchanged, as the Easter Egg block already was.

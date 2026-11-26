@@ -5,8 +5,8 @@ findings:
     line: 20
     text: 二点です。研究発表の目的は自分の研究のオリジナリティを主張することですが、オリジ
     message: 数え方の数を「二点」と書いています（この文書はふつう「10枚」の書き方。10 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: a small count written in kanji (二点, 二枚), the usual way in prose beside larger counts in Arabic figures
+    verdict: correct
+    note: a small count in kanji while the same document writes small counts in figures in prose (目安は「1分1枚」, 1〜3枚, まとめ：1枚), so the mix is real
   - rule: demonstrative-opener-run
     line: 22
     text: その中で、「大きな一歩」を踏み出すのは極めて難しく、多くの場合、その研究発表は「
@@ -65,8 +65,8 @@ findings:
     line: 69
     text: 二枚のスライドにまとめるのではなく「結果A, 考察A」「結果B, 考察B」とまと
     message: 数え方の数を「二枚」と書いています（この文書はふつう「10枚」の書き方。10 箇所のうち 2 箇所が違う）
-    verdict: false-positive
-    note: a small count written in kanji (二点, 二枚), the usual way in prose beside larger counts in Arabic figures
+    verdict: correct
+    note: a small count in kanji while the same document writes small counts in figures in prose (目安は「1分1枚」, 1〜3枚, まとめ：1枚), so the mix is real
   - rule: orthographic-variant
     line: 69
     text: よいでしょう。二つの実験結果A, Bがある時、「結果 A,B」「考察 A,B」の
