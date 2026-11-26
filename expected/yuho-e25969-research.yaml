@@ -20,5 +20,5 @@ findings:
     line: 1
     text: 植物ワクチンは、化学農薬に依存しない効果的な防除対策の実現と環境に配慮した生産及
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic is answered by the predicate of the first clause; the distance is measured on to the predicate of a later clause with its own subject
+    verdict: correct
+    note: the later clause has no subject of its own, so the topic 植物ワクチンは governs 目指してまいります too and the sentence makes the vaccine aim; the distance to that predicate is real

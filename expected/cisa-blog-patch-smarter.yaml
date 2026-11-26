@@ -9,9 +9,9 @@ findings:
   - rule: adverb-overuse
     line: 13
     text: vastly increasing the pace at which new
-    message: 23 -ly adverbs per 1000 words (limit 15)
-    verdict: false-positive
-    note: a short post whose rate is driven by only (not a manner adverb) and a handful of plain -ly words
+    message: 16 -ly adverbs per 1000 words (limit 15)
+    verdict: correct
+    note: only is no longer counted; the rate now comes from real -ly adverbs (vastly, fully twice, possibly, mostly, primarily, quickly) and is over the limit
   - rule: quote-style-consistency
     line: 17
     text: "'s Binding Operational Directive (BOD) 2"
