@@ -14,6 +14,7 @@ findings:
     note: "catalog B01 (invented detail): features and a test claim the tool may not have"
   - rule: unfilled-placeholder
     line: 113
-    what: "\"https://github.com/your-username/csvdelta.git\": the template's user name left in the clone URL"
-    verdict: missed
-    note: a your-username blank in a URL, left for the user to fill
+    text: your-username/csvdelta.git
+    message: '"your-username" was never filled in'
+    verdict: correct
+    note: a your-username blank in a URL, left for the user to fill; found by chaffjs 0.52.0

@@ -7,12 +7,6 @@ findings:
     message: 「ページ」と「を」は一続きの語句ですが、あいだに空白があります（1460 箇所のうち 2 箇所が空いている）
     verdict: correct
     note: a stray space between a noun and its particle
-  - rule: use-before-definition
-    line: 21
-    text: パブリック・ライセンスにおいて特定されるその他の権利が帰属する原作品およびその他
-    message: 「パブリック・ライセンス」を、33 行目の定義より前で使っています
-    verdict: false-positive
-    note: the license own name used in its non-binding preface, before the definitions article
   - rule: heading-end-punctuation-mix
     line: 23
     text: "### ライセンスする方のための留意事項："

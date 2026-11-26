@@ -25,12 +25,6 @@ findings:
     message: この文は 156 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: max-sentence-length
-    line: 55
-    text: 「法令」×「デジタル」ハッカソン 「法令」×「デジタル」の取組をさらに発展させ、
-    message: この文は 145 文字あります（140 文字まで）
-    verdict: false-positive
-    note: a link title run into the blurb sentence after it on one line; the sentence alone is within the limit
   - rule: latin-spacing
     line: 65
     text: " の高度化の一環で、法令APIの機能拡張のプロトタイプ（法令APIプロトタイプ）"

@@ -42,19 +42,19 @@ findings:
     text: "**macOS / Linuxの場合**"
     message: 太字の行「macOS / Linuxの場合」が見出しの代わりに置かれています
     verdict: correct
-    note: "a bold line alone heading the code block for one platform"
+    note: a bold line alone heading the code block for one platform
   - rule: pseudo-heading
     line: 51
     text: "**Windowsの場合（コマンドプロンプト）**"
     message: 太字の行「Windowsの場合（コマンドプロンプト）」が見出しの代わりに置かれています
     verdict: correct
-    note: "a bold line alone heading the code block for one platform"
+    note: a bold line alone heading the code block for one platform
   - rule: pseudo-heading
     line: 57
     text: "**Windowsの場合（PowerShell）**"
     message: 太字の行「Windowsの場合（PowerShell）」が見出しの代わりに置かれています
     verdict: correct
-    note: "a bold line alone heading the code block for one platform"
+    note: a bold line alone heading the code block for one platform
   - rule: latin-spacing
     line: 101
     text: " PowerShell では、セキュリティの設定により `Activate.ps"

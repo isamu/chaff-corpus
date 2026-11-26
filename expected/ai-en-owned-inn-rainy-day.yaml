@@ -24,6 +24,11 @@ findings:
     message: "\"let's be honest\" flags this sentence as candid"
     verdict: correct
     note: the candour marker opening the post; the second one is on line 7; found by chaffjs 0.51.0
+  - rule: padded-intro
+    line: 3
+    text: "Good news: rainy days are some of our fa"
+    message: '"good news:" is an opening that fits any article'
+    verdict: unjudged
   - rule: honesty-marker
     line: 7
     text: Honestly, there are worse ways to spend

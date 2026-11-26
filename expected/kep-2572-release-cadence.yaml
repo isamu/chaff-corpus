@@ -16,7 +16,7 @@ findings:
     text: "[kubernetes/kubernetes]: https://git.k8s"
     message: No link uses the definition "kubernetes/kubernetes"
     verdict: correct
-    note: "no [kubernetes/kubernetes] reference anywhere in the text; the KEP template's definition left in"
+    note: no [kubernetes/kubernetes] reference anywhere in the text; the KEP template's definition left in
   - rule: max-sentence-length
     line: 75
     text: As a result, SIG Release received severa

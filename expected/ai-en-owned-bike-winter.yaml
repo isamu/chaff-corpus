@@ -7,11 +7,17 @@ findings:
     message: Section length varies by only 25% (want at least 35%)
     verdict: correct
     note: six sections each poured into the same mould (a lead sentence and a bulleted list); the tidy outline reads as generated
+  - rule: ai-generated-composite
+    line: 3
+    text: It doesn't have to be. Plenty of our cus
+    message: "3 signals of generated text occur together in this document (2 needed): Phrasing common in generated text, Section lengths are too uniform, Bold emphasis scattered through the text"
+    verdict: unjudged
   - rule: ai-tell
     line: 3
-    what: "\"It doesn't have to be.\" after the problem in the opening; the same turn opens ai-en-owned-tax-receipts"
-    verdict: missed
-    note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem"
+    text: It doesn't have to be. Plenty of our cus
+    message: "\"if you only make one, it doesn't have to be.\" appear together (score 10, limit 4)"
+    verdict: correct
+    note: "candidate phrase: \"It doesn't have to be (that way)\" as the pivot after an opening problem; found by chaffjs 0.52.0"
   - rule: bold-label-list
     line: 9
     what: '"- **A front light** bright enough …" (three items), then the same shape in the tyre, clothing and care lists'
@@ -35,12 +41,6 @@ findings:
     message: '"if you only make one" appears (score 5, limit 4)'
     verdict: correct
     note: 'candidate phrase: "If you only do one thing …, make it …"; found by chaffjs 0.51.0'
-  - rule: list-item-form-mix
-    line: 34
-    text: A thin **hat or headband** that fits und
-    message: '"A thin   hat or headband   that fits under your helmet" is a phrase; the other items in this list are sentences (1 of 3)'
-    verdict: false-positive
-    note: every item in the clothing list is a noun phrase, some with a second sentence; the list is not mixed
   - rule: test:invented-detail
     line: 48
     what: "\"we'll fit fenders for free with any tune-up through the end of December\", studded tyres stocked \"from 700c down to kids' sizes\" (21) — not in the request"

@@ -1,12 +1,6 @@
 id: ai-en-manual-expense-claims
 chaff: 0.49.0
 findings:
-  - rule: oxford-comma-consistency
-    line: 15
-    text: Travel (airfare, train tickets, mileage
-    message: This list punctuates differently from the rest (1 in this document)
-    verdict: false-positive
-    note: '"taxis or rideshares" is one item with two alternatives, not a list closed by "or"; there is no final comma to compare'
   - rule: test:invented-detail
     line: 19
     what: the $100 approval limit, the 30/60-day deadlines (55), the $50 missing-receipt cap (69) and the meal limits (75) — the request gave no policy

@@ -5,11 +5,6 @@ findings:
     line: 13
     sha256: a8eafaae80f74f81fdc8bb7f7b9703c3ee866be2ffaa25999c7b8eb0ad0bff65
     verdict: unjudged
-  - rule: pseudo-heading
-    line: 79
-    sha256: 1f373850ce5a7ea83601ad532be4460250270641b3a045c944a4487f80b70bdf
-    verdict: false-positive
-    note: a bold noun phrase stating who the primary target is, the answer of its section, followed by examples; emphasis, not the title of a section
   - rule: list-item-form-mix
     line: 107
     sha256: dafef66c0a5947537f75176d95629f1338e43dcf5bdfa452acb16dcb80baad49
