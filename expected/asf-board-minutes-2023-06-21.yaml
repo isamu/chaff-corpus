@@ -820,7 +820,8 @@ findings:
   - rule: ngram-repetition
     line: 3185
     sha256: 449151d3bbcd99e4f540e9b1cc1251b4f2f8d95e8cb8cd8450f0ed036b5d2772
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"X has been incubating since <date>\" opens each podling's report, a formula every item carries"
   - rule: undefined-acronym
     line: 3197
     sha256: 9abc9edad153c6ab12759feb8ca3cdeb8ac7d3555a428aadb8e4549318ed4e4a

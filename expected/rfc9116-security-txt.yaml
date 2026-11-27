@@ -20,7 +20,8 @@ findings:
   - rule: ngram-repetition
     line: 248
     sha256: aff9e50403066aa208012f4fda69c4607aa1e86c93e7520cec72c9eadbeec192
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"If this field indicates\" opens the rule for each field the specification defines, a formula every item carries"
   - rule: dangling-reference
     line: 508
     sha256: 72d48290c4dfe2d895e0859d62a011d645f000b0a6f202051fff0cb1ec4657d6

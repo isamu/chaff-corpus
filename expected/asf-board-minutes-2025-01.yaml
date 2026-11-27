@@ -76,7 +76,8 @@ findings:
   - rule: ngram-repetition
     line: 526
     sha256: 60fa4bbee6b5983a6b3282811de27439cecdaf82fc785747eabd49bed2002b9b
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"RESOLVED, that the\" is the fixed wording of each board resolution, a formula every item carries"
   - rule: max-sentence-length
     line: 531
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
