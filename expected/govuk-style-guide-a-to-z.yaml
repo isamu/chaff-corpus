@@ -37,11 +37,6 @@ findings:
     message: '"GP" is used without an expansion (32 such acronyms)'
     verdict: unjudged
   - rule: undefined-acronym
-    line: 87
-    text: HM, when part of an organisation’s name
-    message: '"HM" is used without an expansion (32 such acronyms)'
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 92
     text: MOT
     message: '"MOT" is used without an expansion (32 such acronyms)'

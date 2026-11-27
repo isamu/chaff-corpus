@@ -11,12 +11,6 @@ findings:
     text: documentation relating to dispatches and
     message: This sentence runs 45 words (limit 40)
     verdict: unjudged
-  - rule: undefined-acronym
-    line: 180
-    text: AN Other LTD57 North Road, London N12 5N
-    message: '"AN" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: a placeholder company name in a sample address, not an acronym
   - rule: max-sentence-length
     line: 192
     text: £250 or less (including VAT), then you c
@@ -37,12 +31,6 @@ findings:
     text: "### Example 2"
     message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 310
-    text: If the payment and invoice were received
-    message: '"you can record the" appears 7 times (limit 5)'
-    verdict: false-positive
-    note: "\"you can record the\" is the subject of a notice on record keeping, said once per case it explains"
   - rule: max-sentence-length
     line: 326
     text: If this is the case, this mixed supply s

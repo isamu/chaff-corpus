@@ -58,12 +58,6 @@ findings:
     message: 一文に読点が 7 個あります（6 個まで）
     verdict: correct
   - rule: topic-predicate-distance
-    line: 37
-    text: それは結局のところ、実行に移していく中で効果が現れた時に国民の皆さんには最大限理
-    message: 「は」で出した主題から述語まで 149 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic's predicate closes at ですから; a new topic (私たちは) takes the rest of the sentence
-  - rule: topic-predicate-distance
     line: 53
     text: そういうことのないように、今回は補正予算が成立次第、12月の地方議会にすぐに対処
     message: 「は」で出した主題から述語まで 124 字あります（80 字まで）

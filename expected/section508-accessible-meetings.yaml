@@ -34,12 +34,6 @@ findings:
     text: " - only use one audio connection method"
     message: '"-" stands in for a dash'
     verdict: correct
-  - rule: undefined-acronym
-    line: 265
-    text: NYC Accessible Virtual Meetings Guide |
-    message: '"NYC" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: an everyday place name
   - rule: max-sentence-length
     line: 268
     text: "*Disclaimer: Reference in this site to a"

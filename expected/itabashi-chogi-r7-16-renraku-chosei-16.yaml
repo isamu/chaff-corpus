@@ -1,21 +1,6 @@
 id: itabashi-chogi-r7-16-renraku-chosei-16
 chaff: 0.36.0
 findings:
-  - rule: max-kanji-continuous
-    line: 29
-    sha256: cb021a7574d39946d1e56d04ee7c50564c5508e617895a93fd1db3721a469c75
-    verdict: false-positive
-    note: an agenda item's title built from facility, post or plan names and fixed administrative terms; the kanji run cannot be split
-  - rule: max-kanji-continuous
-    line: 59
-    sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
-    verdict: false-positive
-    note: an agenda item's title built from facility, post or plan names and fixed administrative terms; the kanji run cannot be split
-  - rule: max-kanji-continuous
-    line: 73
-    sha256: 8e970c2935c0a47c48c51f874ad66668ff35a3495f5beeeed4ab5c64dac5c809
-    verdict: false-positive
-    note: an agenda item's title built from facility, post or plan names and fixed administrative terms; the kanji run cannot be split
   - rule: undefined-acronym
     line: 84
     what: JR, the railway companies' name, used without expansion
@@ -45,8 +30,3 @@ findings:
     sha256: 1877db5f15c0135c6ad49d99ebfd20a7b317e1b764ebc28b0c2b476a21cd109a
     verdict: correct
     note: a 192-character sentence listing five plans
-  - rule: max-kanji-continuous
-    line: 194
-    sha256: 0e70c8c4b516337e10598c5431dbb9f25d4988bb512990115ab09021aa22b32b
-    verdict: false-positive
-    note: an agenda item's title built from facility, post or plan names and fixed administrative terms; the kanji run cannot be split

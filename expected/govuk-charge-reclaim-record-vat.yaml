@@ -35,9 +35,3 @@ findings:
     message: '"EORI" is used without an expansion (2 such acronyms)'
     verdict: correct
     note: a customs identifier a trader may not know, never expanded or linked in the guide
-  - rule: undefined-acronym
-    line: 125
-    text: XI.
-    message: '"XI" is used without an expansion (2 such acronyms)'
-    verdict: false-positive
-    note: a literal code prefix of an identifier (the number starts with these letters), not an acronym

@@ -175,12 +175,6 @@ findings:
     message: 「は」で出した主題から述語まで 83 字あります（80 字まで）
     verdict: correct
     note: the same topic carries to the final predicate; the count to the sentence end stands
-  - rule: topic-predicate-distance
-    line: 78
-    text: 同時に，児童生徒の食の大部分は家庭が担っているという実態を踏まえれば，食に関する
-    message: 「は」で出した主題から述語まで 91 字あります（80 字まで）
-    verdict: false-positive
-    note: a topic inside an embedded clause (〜は…担っているという実態) whose predicate follows at once; a new topic takes the main clause
   - rule: no-doubled-joshi
     line: 83
     text: の主要な職務の柱の一つとして位置付けられるべきである。具体的な職務内容としては，

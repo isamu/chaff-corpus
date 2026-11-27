@@ -394,12 +394,6 @@ findings:
     message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
     verdict: correct
     note: the topic (は) stands far from its predicate, over the limit
-  - rule: topic-predicate-distance
-    line: 25
-    text: 従いまして、優秀な技術者やシステムエンジニア、管理者等、必要とする人材を採用、育
-    message: 「は」で出した主題から述語まで 85 字あります（80 字まで）
-    verdict: false-positive
-    note: "「育成することは」 gets its predicate at 「重要であり、」; a new subject (可能性が) takes the rest. reading applied to every 〜であり、 finding of this rule: the topic gets its own predicate at 〜であり、, and when a new subject takes the rest of the sentence the reader is not kept waiting (false-positive); when the same topic carries on to the final predicate, the count to the sentence end stands (correct)"
   - rule: unbalanced-bracket
     line: 25
     text: ）システム開発における品質や納期遅延の問題に関するリスクシステム開発においては、
