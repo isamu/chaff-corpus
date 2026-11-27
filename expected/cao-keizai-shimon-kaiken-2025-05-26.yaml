@@ -58,12 +58,6 @@ findings:
     text: 最後まで大事なのは「ゆっくり急ぐ」と申し上げたことに尽きておりまして、国益を毀損
     message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
     verdict: correct
-  - rule: teki-overuse
-    line: 90
-    text: そして、今を生きるこども・若者が身体的・精神的・社会的にウェルビーイングで生活を
-    message: 一文に「〜的」が 3 個あります（2 個まで）
-    verdict: false-positive
-    note: the fixed triad physical, mental and social from the definition of well-being
   - rule: clause-chain
     line: 109
     text: 社会の変化に応じて必要なサービスが必要な方に提供され、保険料を抑制せず、公平な負

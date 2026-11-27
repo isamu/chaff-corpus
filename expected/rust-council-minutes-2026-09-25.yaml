@@ -51,11 +51,6 @@ findings:
     sha256: 997cf17f738bea2d245bb2b2b83fd7fe0283972f9603fee21529df19f3455324
     verdict: correct
     note: the minutes write Leadership Council in a heading but never tie LC to it
-  - rule: oxford-comma-consistency
-    line: 149
-    sha256: 7412deeadb03e75a942c20071db1a042d193f893cab81ca33c9bbf5b043402b2
-    verdict: false-positive
-    note: the comma after an abbreviation (E.g.,) read as a list comma, so two items joined by and look like a three-item list without a serial comma
   - rule: unknown-word
     line: 149
     sha256: f227606f276bff10363668f7c2e660845e5c3c0e92ab053db642be6aba1383df

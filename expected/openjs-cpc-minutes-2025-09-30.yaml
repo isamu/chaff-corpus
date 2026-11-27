@@ -64,31 +64,11 @@ findings:
     sha256: 8d2a7a991d91d5221ad819983486d3c251f990344f3ecb84032388c7a1c36dc7
     verdict: false-positive
     note: an acronym inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
-  - rule: hyphen-as-dash
-    line: 70
-    sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
-    verdict: false-positive
-    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
-  - rule: hyphen-as-dash
-    line: 80
-    sha256: 31723f7bfabd6e380e3c17093ef6b70b03dbe17b41ae717f0f9db2584879b756
-    verdict: false-positive
-    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
   - rule: title-case-consistency
     line: 83
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: correct
     note: a sentence-case heading among Title Case headings
-  - rule: hyphen-as-dash
-    line: 90
-    sha256: bf97f4cdda0b92bfc818da03ecc3dbc0a9b0eed5bde4d07ee83091a69c793e28
-    verdict: false-positive
-    note: a spaced hyphen inside a GitHub issue title the agenda lists verbatim; the minutes cannot change the title
-  - rule: request-without-deadline
-    line: 95
-    sha256: 59a0da40c843206a1ef89f95516cbd86de923d573b312244e4806a08c706170f
-    verdict: false-positive
-    note: a standing reminder repeated in every meeting's notes to all members; a deadline does not apply
   - rule: bare-url-mix
     line: 97
     sha256: e66c801f06e063d782b1853a67436c0d4be298aca968543781fdd38647f10269

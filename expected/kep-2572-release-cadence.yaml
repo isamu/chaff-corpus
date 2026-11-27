@@ -55,12 +55,16 @@ findings:
     verdict: correct
   - rule: unknown-word
     line: 218
-    what: '"Sechedule" is a misspelling of "Schedule" (also on lines 231 and 258)'
-    verdict: missed
+    text: Sechedule 2021 (Existing 4 Release Caden
+    message: '"Sechedule" is not in the dictionary; did you mean "Schedule"?'
+    verdict: correct
+    note: '"Sechedule" is a misspelling of "Schedule" (also on lines 231 and 258); found by chaffjs 0.53.0'
   - rule: unknown-word
     line: 231
-    what: '"Sechedule" is a misspelling of "Schedule"'
-    verdict: missed
+    text: Sechedule 2022 (Existing 4 Release Caden
+    message: '"Sechedule" is not in the dictionary; did you mean "Schedule"?'
+    verdict: correct
+    note: '"Sechedule" is a misspelling of "Schedule"; found by chaffjs 0.53.0'
   - rule: orthographic-variant
     line: 256
     text: Kubecon Break (Oct 12-15) |
@@ -68,8 +72,10 @@ findings:
     verdict: correct
   - rule: unknown-word
     line: 258
-    what: '"Sechedule" is a misspelling of "Schedule"'
-    verdict: missed
+    text: Sechedule 2022 (Proposed 3 Release Caden
+    message: '"Sechedule" is not in the dictionary; did you mean "Schedule"?'
+    verdict: correct
+    note: '"Sechedule" is a misspelling of "Schedule"; found by chaffjs 0.53.0'
   - rule: hyphen-as-dash
     line: 295
     text: " - only 3 releases per year will relax t"

@@ -13,11 +13,6 @@ findings:
     line: 190
     sha256: 2e35b23d90a7bedb6fe02e45c69c16408a866197f9bd213dd083210e0d08adff
     verdict: correct
-  - rule: reference-topic-missing
-    line: 205
-    sha256: 85cd7a4ace510bd00d4cb82eea9b11adee47da2f6ebb2a7276f4ff599bdd5483
-    verdict: false-positive
-    note: Section 4 is titled Security Considerations; the plain-text RFC's section titles are not Markdown headings
   - rule: max-sentence-length
     line: 300
     sha256: e510cd7e0ed109617139cca7476b2d7d4654a8e684d53d2db239247dd4dc3588
@@ -31,11 +26,6 @@ findings:
     sha256: 115b8e86350f06caa9f3a022dc26181b66db4ca745dc51da9f0a019f8f85703b
     verdict: correct
     note: the FAQ appendix uses contractions; the body writes them out
-  - rule: oxford-comma-consistency
-    line: 627
-    sha256: b99c17c880893831d9def640ec27940f6e7a100ee91736618570428ff7f99d3d
-    verdict: false-positive
-    note: two purpose clauses joined by and after a comma read as a list without a serial comma
   - rule: contraction-consistency
     line: 632
     sha256: 8467f14c8f018857c342159b1cf111d640e436ee05d3026e11594e74d827ed13

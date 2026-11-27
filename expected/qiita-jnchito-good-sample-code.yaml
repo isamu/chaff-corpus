@@ -36,21 +36,6 @@ findings:
     sha256: ae158cedf2ca7b58bfb098d82944093a22a89cbda7ecf2b643720f97def1d649
     verdict: correct
     note: the first sentence repeats the heading almost word for word
-  - rule: unqualified-superlative
-    line: 427
-    sha256: 63a9b9dfed446bc15aa25adfb96cb3ec60822ac92c958986bca9b51cb64b23b1
-    verdict: false-positive
-    note: a hedged opinion whose comparison set (ratios of prose to code) is given in the sentence before
-  - rule: orthographic-variant
-    line: 450
-    sha256: 7d51a1272a7a685c33ddb84a4c8521fb2aeccdb87576d09153887eff85bd89fd
-    verdict: false-positive
-    note: a list that shows a wrong spelling (×) beside the right one (○) on purpose
-  - rule: unqualified-superlative
-    line: 661
-    sha256: 2af02582e6b55e0aa5d04ba632bcd584e77909ec7e14d32dd00e12b3e786cc9d
-    verdict: false-positive
-    note: 最もシンプルな形 in the idiomatic sense of as simple as possible
   - rule: topic-predicate-distance
     line: 667
     sha256: f28f706bbd0ce4b5ab011a360e18ced5b8d4e65207a048d0ee2136e4411993da
@@ -61,11 +46,6 @@ findings:
     sha256: 59ff4fc4909e3e38944e00ad24beb4854db7829033d0cfb8d9e49fb2ab5d94fc
     verdict: correct
     note: 一番最初 doubles the meaning of first
-  - rule: unqualified-superlative
-    line: 671
-    sha256: 59ff4fc4909e3e38944e00ad24beb4854db7829033d0cfb8d9e49fb2ab5d94fc
-    verdict: false-positive
-    note: 最も単純な in the idiomatic sense of the simplest possible
   - rule: repeated-sentence-ending
     line: 787
     sha256: 7db1fc20eb7e22bd75b1509596f429eb002da5ce1e55eae7f23f45938d92c0f4

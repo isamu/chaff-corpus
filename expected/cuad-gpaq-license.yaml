@@ -101,11 +101,6 @@ findings:
     text: 2.7 PFHOF agrees not to grant licenses t
     message: '"2.7" follows "2.4" (expected number 5)'
     verdict: unjudged
-  - rule: use-before-definition
-    line: 39
-    text: License Fee (as defined below) for such
-    message: '"License Fee" is used here, before it is defined on line 89'
-    verdict: unjudged
   - rule: vague-deadline
     line: 39
     text: promptly communicate such offer, includi

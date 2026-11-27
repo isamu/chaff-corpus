@@ -16,11 +16,6 @@ findings:
     sha256: 367a9a3044af7794df01f75eaea2b3d3eff75d55b2dfcfc920ee386012b7bdde
     verdict: correct
     note: CFP (call for papers) is never expanded and is not an everyday word
-  - rule: unknown-word
-    line: 27
-    sha256: e1f39de0c951e53d2b40dc5dc494e7c5d410808a1e44dda5dfa563845dea7055
-    verdict: false-positive
-    note: an informal clipping of a known word (collaborator), the project's usual name for its summit, read as a misspelling
   - rule: undefined-acronym
     line: 40
     sha256: f78b64df382747acb657fc1c7f48e34c6c3919c438b6d7197e99c6da1a363735

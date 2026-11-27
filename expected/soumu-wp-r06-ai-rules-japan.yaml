@@ -5,20 +5,10 @@ findings:
     line: 7
     sha256: 4e6b361b857abe7927c4d49a0f8daca1fab3b1dd23469f2e34299b75d3ccc84d
     verdict: correct
-  - rule: date-format-consistency
-    line: 9
-    sha256: b2004b0a5509792ddf91b527a4a460a62252e54b9e79833fd443f028b80b9c50
-    verdict: false-positive
-    note: body dates in 年月日 counted against the access dates of footnote citations (yyyy/m/d参照), a separate citation convention
   - rule: topic-predicate-distance
     line: 9
     sha256: 9e4f5ef674a69f457aea1fc0948a7ac897f1d93a8de132f1e8a451b7f757a386
     verdict: correct
-  - rule: date-format-consistency
-    line: 11
-    sha256: 05b510b5fa2eb59f3256ac86ba77138ab5b940c6f9288e72457a14d433fffeeb
-    verdict: false-positive
-    note: body dates in 年月日 counted against the access dates of footnote citations (yyyy/m/d参照), a separate citation convention
   - rule: max-sentence-length
     line: 11
     sha256: 51795a3e163777817f89d4819ea167e5bc5fe52b9fbeb69698d87b1b68637036

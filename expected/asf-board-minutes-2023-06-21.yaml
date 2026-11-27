@@ -119,10 +119,6 @@ findings:
     sha256: a0417ba8010e87282999019267c0fce178d0d7a16cc2f294fb15662e0ac9a547
     verdict: unjudged
   - rule: undefined-acronym
-    line: 743
-    sha256: 9828f5726a0b1c6e1f683dc7ea545ae04e78d51a760905724594def595e85d37
-    verdict: unjudged
-  - rule: undefined-acronym
     line: 771
     sha256: 8d7d1e55db045ff49df93930c9ee1a9d31b075cb825b76a77e0855ffdebe2dc9
     verdict: unjudged
@@ -394,11 +390,6 @@ findings:
     line: 1421
     sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 1421
-    sha256: 3f925a2ae82db79a319429e59a9db6fe62dff513ad317afe3f1b9eda48f2444b
-    verdict: false-positive
-    note: "\"There are no issues\" is the line each project report carries when it has none to raise, a formula every item carries, not the writers' phrasing"
   - rule: expletive-construction
     line: 1424
     sha256: 03662a7dfceb39998237a49d66bdd5fc312b864674f5c9a1c87a517b9c0b3c7f
@@ -825,6 +816,10 @@ findings:
   - rule: undefined-acronym
     line: 3153
     sha256: d0ded3ac99d80ac3dae2547d48b333fdd9b37ebc81e7619bd936362af58952aa
+    verdict: unjudged
+  - rule: ngram-repetition
+    line: 3185
+    sha256: 449151d3bbcd99e4f540e9b1cc1251b4f2f8d95e8cb8cd8450f0ed036b5d2772
     verdict: unjudged
   - rule: undefined-acronym
     line: 3197

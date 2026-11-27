@@ -5,11 +5,6 @@ findings:
     line: 5
     sha256: 3a3cbcc55417150caf98ab11e299b0534b9a7eb7c6161ab7aaf7c6177313b7c9
     verdict: correct
-  - rule: all-caps-shouting
-    line: 17
-    sha256: 956a8ea2016f317286aaac4997d51772e74fdc029d6de44229fe73d88c38f2da
-    verdict: false-positive
-    note: the incident template's conventional outage marker in a timeline
   - rule: number-style-consistency
     line: 31
     sha256: 866e77c5b1fb80787000fb5666dbf1cd036f503572f30127452fe3cc6a099d90
