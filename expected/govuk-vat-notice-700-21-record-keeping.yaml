@@ -37,6 +37,12 @@ findings:
     text: "### Example 2"
     message: The heading "Example 2" has no number, while 15 of its siblings do ("7.1 Designatory data")
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 310
+    text: If the payment and invoice were received
+    message: '"you can record the" appears 7 times (limit 5)'
+    verdict: false-positive
+    note: "\"you can record the\" is the subject of a notice on record keeping, said once per case it explains"
   - rule: max-sentence-length
     line: 326
     text: If this is the case, this mixed supply s
@@ -117,12 +123,6 @@ findings:
     text: XML, CSV import and export, and download
     message: This list punctuates differently from the rest (1 in this document)
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 697
-    text: The digital link requirement starts from
-    message: '"link requirement starts" appears 8 times (limit 5)'
-    verdict: false-positive
-    note: each worked example ends with the notice's formula (The digital link requirement starts from …), one per example
   - rule: max-sentence-length
     line: 728
     text: The digital link requirement for sales d

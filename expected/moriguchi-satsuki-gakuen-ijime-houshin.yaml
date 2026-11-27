@@ -16,11 +16,6 @@ findings:
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     verdict: false-positive
     note: a section of a school policy (examples, members, roles, procedures) that describes by nature and needs no figures, code or links
-  - rule: list-item-form-mix
-    line: 20
-    sha256: f6bbd1e95664244337eab01e7ef4b3e8362cf6841d523400b0813f8dad0dac5c
-    verdict: false-positive
-    note: an item ending in a predicate followed by 等, read as a noun ending
   - rule: concrete-evidence-density
     line: 46
     sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

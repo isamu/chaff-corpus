@@ -87,5 +87,7 @@ findings:
     note: NDC (National Drug Code) is never expanded
   - rule: numbering-gap
     line: 93
-    what: the subsections of section 5 run "a.", "b.", then "4.3." where "c." is meant
-    verdict: missed
+    text: "#### 4.3. Feasibility Feedback—New Capac"
+    message: '"4.3" sits inside "5" (its number should start with "5.")'
+    verdict: correct
+    note: the subsections of section 5 run "a.", "b.", then "4.3." where "c." is meant; found by chaffjs 0.53.0

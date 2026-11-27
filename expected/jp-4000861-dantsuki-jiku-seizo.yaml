@@ -13,11 +13,6 @@ findings:
     line: 28
     sha256: e067f7a1e917324a49cdab5daec35049911f7d8f3901b30389f7e0ab58cd76ea
     verdict: unjudged
-  - rule: kutoten-consistency
-    line: 42
-    sha256: 12598611b82f8f3e23838a7ee047e691380843517496f363a3021587a2e3e827
-    verdict: false-positive
-    note: a fullwidth comma (，) between reference signs (ａ，ｂ，ｃ / ３０ａ，３１ａ) is the patent-gazette convention for listing signs, not a sentence comma mixed with 、
   - rule: hiragana-fukushi
     line: 58
     sha256: ca4236575234768f2c4c724b8d8f39586804ded4bae353becc93558da8f0306d

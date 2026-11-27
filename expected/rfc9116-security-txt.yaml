@@ -13,35 +13,15 @@ findings:
     line: 119
     sha256: 54d25dde94d2c6375f49cefba232ad06de4d50399b53118f4c085195157fe4a0
     verdict: correct
-  - rule: ngram-repetition
-    line: 182
-    sha256: 7337fa7be8cbfb4de69db917b78e379889ddae489fee616f0b732c10e26596e2
-    verdict: false-positive
-    note: the name of the file the specification defines, repeated because it is the subject of every rule
   - rule: wordy-phrase
     line: 244
     sha256: 2730183d6b776b400ed491c90b67ecb616fb9b699c2f06c8c41fa74f04bcd7d0
     verdict: correct
-  - rule: unbalanced-bracket
-    line: 488
-    sha256: 6b0910841dbc7d9bad700639b15788305895353fc312e4d465c24bf6d52013b0
+  - rule: ngram-repetition
+    line: 248
+    sha256: aff9e50403066aa208012f4fda69c4607aa1e86c93e7520cec72c9eadbeec192
     verdict: false-positive
-    note: an IPv6 address literal in a URL; the brackets are URL syntax
-  - rule: space-before-punctuation
-    line: 502
-    sha256: f8dfdafb9230665cfaff9c45ca509dd49698ef965f964580e7165ac587728551
-    verdict: false-positive
-    note: the ; that starts an ABNF comment, code in a plain-text RFC
-  - rule: space-before-punctuation
-    line: 503
-    sha256: 0fc9bd3cb268e5e75b9b65ec20fffbfdc9c1be353257871fd55f431cc29af546
-    verdict: false-positive
-    note: the ; that starts an ABNF comment, code in a plain-text RFC
-  - rule: space-before-punctuation
-    line: 504
-    sha256: c56a5462fc27bfa123f88d65b7c027bb9aeb3d047b4d9f536e6e2930fa0f97c8
-    verdict: false-positive
-    note: the ; that starts an ABNF comment, code in a plain-text RFC
+    note: "\"If this field indicates\" opens the rule for each field the specification defines, a formula every item carries"
   - rule: dangling-reference
     line: 508
     sha256: 72d48290c4dfe2d895e0859d62a011d645f000b0a6f202051fff0cb1ec4657d6
@@ -67,11 +47,6 @@ findings:
     line: 784
     sha256: 6a77effcaae80b672bdd4f4de4ba70af841cfd78d51950c0a2c1bdefadf5b9cb
     verdict: correct
-  - rule: step-statement-mix
-    line: 887
-    sha256: 71104ab20d384947f8334d20e735c09c123064a64bc4c857ad3115d66a5dec6d
-    verdict: false-positive
-    note: a list of the fields a registration must contain (noun phrases), not steps; a noun phrase with a relative clause read as a statement
   - rule: undefined-acronym
     line: 1109
     sha256: c953349d5e23b6fd663e5f9491da8a50296fbbe73fd68b569618506e63623f15

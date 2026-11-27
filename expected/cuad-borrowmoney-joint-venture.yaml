@@ -67,12 +67,6 @@ findings:
     message: This paragraph runs 19 sentences (limit 8)
     verdict: correct
     note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
-  - rule: undefined-term
-    line: 61
-    text: Valuation of Interest or as otherwise ma
-    message: '"Valuation of Interest" is written like a defined term, but the document defines it nowhere'
-    verdict: false-positive
-    note: a cross-reference to a section by its heading title read as an undefined term
   - rule: max-paragraph-length
     line: 67
     text: Liquidation 37. On dissolution, the Vent
@@ -91,12 +85,6 @@ findings:
     message: This paragraph runs 18 sentences (limit 8)
     verdict: correct
     note: "extraction artefact: headings and numbered clauses run together on one line, read as one paragraph; chaff is right about the text as extracted"
-  - rule: defined-term-form
-    line: 85
-    text: Capital Contributions" The capital contr
-    message: '"Capital Contribution" is defined on line 31; after that it is used without quotes'
-    verdict: false-positive
-    note: an entry of the definitions section, quoted as a definition, read as a quoted use of a term defined earlier
   - rule: max-paragraph-length
     line: 85
     text: Mediation and Arbitration 55. In the eve

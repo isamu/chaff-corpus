@@ -97,12 +97,6 @@ findings:
     message: この文は 145 文字あります（140 文字まで）
     verdict: correct
     note: a sentence over the limit that an editor would split
-  - rule: topic-predicate-distance
-    line: 34
-    text: 前述のとおり、2040年以降の我が国の大学入学者数は、仮に留学生等の受入れ拡大が
-    message: 「は」で出した主題から述語まで 116 字あります（80 字まで）
-    verdict: false-positive
-    note: the topic (入学者数は) gets its predicate at 予想され、; a new topic (議論は) takes the rest of the sentence
   - rule: max-sentence-length
     line: 36
     text: 特に、各機関の理念や使命、社会のニーズを踏まえた高等教育の実現に向け、既存の学部

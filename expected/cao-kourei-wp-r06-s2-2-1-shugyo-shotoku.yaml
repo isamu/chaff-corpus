@@ -427,9 +427,3 @@ findings:
     message: 「の」が読点を挟まずに 3 回続いています（2 回まで）
     verdict: correct
     note: 「の」が読点を挟まず三つ続く
-  - rule: max-kanji-continuous
-    line: 127
-    text: また、低所得の高齢者世帯が安定した生活を送れるようにするため、各都道府県社会福祉
-    message: 「各都道府県社会福祉協議会」は漢字が 12 字続いています（10 字まで）
-    verdict: false-positive
-    note: 団体の名前（都道府県社会福祉協議会）に「各」が付いたもの

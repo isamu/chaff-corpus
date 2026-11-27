@@ -1157,11 +1157,6 @@ findings:
     line: 4994
     sha256: 4fe61c83fd0c89277550156dc62853aaf7adc4e6468799d93f75f9f4389428d7
     verdict: unjudged
-  - rule: unknown-word
-    line: 4994
-    sha256: e0dda36173086a23444ffc86f7aed52f0af13a05b7f1b103926d890af418d439
-    verdict: false-positive
-    note: a name (a person's account handle, a product or a tool), not a misspelling
   - rule: undefined-acronym
     line: 4998
     sha256: ad5bffd0a68ad22c89e6567060b71028d09ed8bd9a4a9d4846b1853952355bbf

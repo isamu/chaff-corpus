@@ -9,11 +9,6 @@ findings:
     line: 13
     sha256: 3616d858ac850910fa5fe0ba07640d212fd6ca6bcd5b4ddfbd2ca97566a133de
     verdict: correct
-  - rule: obligation-without-deadline
-    line: 24
-    sha256: d29f8166314e3b130d9d89975d13c72d86d9482b36acd3ae664be909b73f4f51
-    verdict: false-positive
-    note: the next sentence gives when the notice is made
   - rule: party-order
     line: 27
     sha256: eb6ff6a9ddc07c2586021540e65f3645328cc3897be0df0d327b47139af9e623
@@ -101,16 +96,6 @@ findings:
     sha256: e54647fbf4c46aa8ab4f6bbbcae7f69b1248bf5dd3b0b7ba83825695629daaee
     verdict: correct
     note: the one compound with the okurigana, where the document otherwise drops it
-  - rule: obligation-without-deadline
-    line: 79
-    sha256: a8e9e28f1853576fc52eabe077fb36bf9f82ca754b48c60c5339618cdef3488b
-    verdict: false-positive
-    note: "the same sentence sets the time: added to the next month invoice"
-  - rule: obligation-without-deadline
-    line: 80
-    sha256: 860d1991e5ba23416c1544249ea13ca97721427a1bc5a2e09d2d76e38df8df97
-    verdict: false-positive
-    note: "the same sentence sets the time: at the next payment"
   - rule: bracket-width-consistency
     line: 81
     sha256: 6897cf735c1f35377b0e41f409b520c282f1739954fd0f3cec73d530fff6905a
