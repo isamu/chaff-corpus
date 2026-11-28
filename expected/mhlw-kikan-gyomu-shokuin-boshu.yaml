@@ -17,8 +17,3 @@ findings:
     line: 64
     sha256: 9db348f29424e2d3cb252b049827cb4188539e0a60f678096ccdc352d22c3091
     verdict: correct
-  - rule: max-kanji-continuous
-    line: 76
-    sha256: c57b76011946299858fc34be5128e3f2eae42e77c3b75dc2523782eeec8a1150
-    verdict: false-positive
-    note: a fixed label the applicant is told to write on the envelope, quoted verbatim in brackets

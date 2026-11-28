@@ -658,11 +658,6 @@ findings:
     text: だから個人主義、私のここに述べる個人主義というものは、けっして俗人の考えているよ
     message: この文は 122 文字あります（100 文字まで）
     verdict: unjudged
-  - rule: topic-predicate-distance
-    line: 58
-    text: だから個人主義、私のここに述べる個人主義というものは、けっして俗人の考えているよ
-    message: 「は」で出した主題から述語まで 93 字あります（80 字まで）
-    verdict: unjudged
   - rule: clause-chain
     line: 59
     text: 出たのはいつごろでしたか、私は担任者であったけれども病気をしたからあるいはその病

@@ -10,8 +10,3 @@ findings:
     line: 125
     sha256: 52d912c16d784b7be0889a47fccf14ca3c9ef431b4cb4b21c85e97a3b948e47e
     verdict: correct
-  - rule: no-doubled-joshi
-    line: 368
-    sha256: 560faa9623523b072b97316f7b4e4567488d01f0bb986f1fca7b4580f5fd0ecc
-    verdict: false-positive
-    note: の repeated inside one noun phrase, which is natural and which no-doubled-joshi normally allows

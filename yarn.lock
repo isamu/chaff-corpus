@@ -15,19 +15,19 @@
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.29.10.tgz#fe9920782f7ee34029165ac6f272984917a1641b"
   integrity sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==
 
-"@chaffjs/lang-en@0.50.0":
-  version "0.50.0"
-  resolved "https://registry.yarnpkg.com/@chaffjs/lang-en/-/lang-en-0.50.0.tgz#588cd997a83bd5b158248a572eb1b83057c5ea99"
-  integrity sha512-4QYFiQ+OszJx539YBn582yPaAG43xJ7gIs0VBmKzrxfbPxbXmmFjwvDpGOgDtKsXBmJsGRB3gA2KgouQrO0XUA==
+"@chaffjs/lang-en@0.51.0":
+  version "0.51.0"
+  resolved "https://registry.yarnpkg.com/@chaffjs/lang-en/-/lang-en-0.51.0.tgz#c2622a7d23309840f4cff0af3df72bd41325f11f"
+  integrity sha512-nNp/3yDQUOA9hGd/gvnu4RwVSX8wFeDQUnSSupVmjrTthFTxTOriMzQGI7yr56eyzG8J9QNHyWIcNH8nSOotgQ==
   dependencies:
     sentence-splitter "^5.0.1"
     wink-pos-tagger "^2.2.2"
     yaml "^2.9.0"
 
-"@chaffjs/lang-ja@0.52.0":
-  version "0.52.0"
-  resolved "https://registry.yarnpkg.com/@chaffjs/lang-ja/-/lang-ja-0.52.0.tgz#a4a03c40eedf6cad584997253c30ab570f49830a"
-  integrity sha512-bse3YLq1oEbdXtlMqzmL/CCIKKeSl+snDg1mdw8Z5TV68gq3nRaM8MogQ6vV7mVJaNpRlFnpgxy7PHovXPrW9w==
+"@chaffjs/lang-ja@0.53.0":
+  version "0.53.0"
+  resolved "https://registry.yarnpkg.com/@chaffjs/lang-ja/-/lang-ja-0.53.0.tgz#758298c8efd6bf42129fc44c46f8ac02194d8c00"
+  integrity sha512-CdyDzbBkGTO9EOlgvCxe19Xd5dcRhuME/RQZLkHnLtadFH3WkIWyKF1TLoMxGlfKLBlQU3ZMJMA6BbdMK8GNMA==
   dependencies:
     "@sglkc/kuromoji" "^1.1.0"
     sentence-splitter "^5.0.1"
@@ -95,14 +95,14 @@ boundary@^2.0.0:
   resolved "https://registry.yarnpkg.com/boundary/-/boundary-2.0.0.tgz#169c8b1f0d44cf2c25938967a328f37e0a4e5efc"
   integrity sha512-rJKn5ooC9u8q13IMCrW0RSp31pxBCHE3y9V/tp3TdWSLf8Em3p6Di4NBpfzbJge9YjjFEsD0RtFEjtvHL5VyEA==
 
-chaffjs@0.53.0:
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/chaffjs/-/chaffjs-0.53.0.tgz#accc324b0a691afeb38b390cec74a10660059ce3"
-  integrity sha512-71rmph3NsMCqsYtKhPF4r2Mpnzed+HXCBphYFKqg6Iz345itkz5+LOhiMgRpViFb7A3DFbeM6Hx42bQqa3tybQ==
+chaffjs@0.54.0:
+  version "0.54.0"
+  resolved "https://registry.yarnpkg.com/chaffjs/-/chaffjs-0.54.0.tgz#338c2464cae1ebbaab1b64ca55711641672fed62"
+  integrity sha512-KLAM2sS6RjQv5BO1+mu5jQzyFJ2gQ7FscxfNLBXXjrGDri032E2dDIwwlssrnJ3mu6gt7/E3JaHnvaj8lCn0cA==
   dependencies:
     "@anthropic-ai/sdk" "^0.125.0"
-    "@chaffjs/lang-en" "0.50.0"
-    "@chaffjs/lang-ja" "0.52.0"
+    "@chaffjs/lang-en" "0.51.0"
+    "@chaffjs/lang-ja" "0.53.0"
     character-entities "^2.0.2"
     ignore "^7.0.5"
     mdast-util-from-markdown "^2.0.3"

@@ -1,11 +1,6 @@
 id: nttcom-onboarding-week1
 chaff: 0.34.0
 findings:
-  - rule: topic-predicate-distance
-    line: 22
-    sha256: 5aa350fff441d4a5546d58ce5ef4ee4c7d53955065b107ec93e35c41a4882239
-    verdict: false-positive
-    note: a は inside an embedded why-question measured on to the main predicate of the sentence
   - rule: undefined-acronym
     line: 32
     sha256: 1676c51bc653325335f1ee4fea4b52d9b7d1f77b40b6bc64a35c362847c979d2

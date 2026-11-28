@@ -74,11 +74,6 @@ findings:
     line: 604
     sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 604
-    sha256: 2bc6c977afe83fd4ea8770e69da751378457b91a6b398feb8a824bd8af004177
-    verdict: false-positive
-    note: "\"software related to\" is the fixed wording of each project's mission line (… the creation and maintenance of software related to …), a formula every item carries"
   - rule: max-sentence-length
     line: 621
     sha256: 55ed0640898c26e71690d2c88690c3c289184b4b90d6b334ffb73a2aadf5a392
@@ -885,6 +880,11 @@ findings:
     line: 3810
     sha256: 84e5de6e1fb182d50ef7166ec9a9f2f6d83dd7ea837e364e6de8a8a86cf61d81
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 3827
+    sha256: 4f4350af55326476f25dbfe6b6444e6da561bc58f2d5d0e475589f61d6e2f921
+    verdict: false-positive
+    note: "\"<Name> is in maintenance mode.\" is one stock status line per subproject, lines that differ only in the leading name"
   - rule: orthographic-variant
     line: 3829
     sha256: bbeab5e64785129af93f77b745a9f154ca2c4c7c66d8a6646e2eb7c0dc652386

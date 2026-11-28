@@ -78,6 +78,11 @@ findings:
     line: 507
     sha256: 6308194c94b8c714a78f2d901adf0121913716b9912d036ecd927e298acc2b90
     verdict: unjudged
+  - rule: ngram-repetition
+    line: 552
+    sha256: bd1179b6b1f6ec038f634b98f95568f95b0613185b943865a06a0b23f92655af
+    verdict: false-positive
+    note: "\"was approved by Unanimous Vote\" is the board's stock outcome line after each resolution, a formula every item carries"
   - rule: max-sentence-length
     line: 569
     sha256: 268dd24054eaab143d00ae52f9fb68e8bce965da87a3b39d4efec928c48192e6
@@ -817,11 +822,6 @@ findings:
     line: 3153
     sha256: d0ded3ac99d80ac3dae2547d48b333fdd9b37ebc81e7619bd936362af58952aa
     verdict: unjudged
-  - rule: ngram-repetition
-    line: 3185
-    sha256: 449151d3bbcd99e4f540e9b1cc1251b4f2f8d95e8cb8cd8450f0ed036b5d2772
-    verdict: false-positive
-    note: "\"X has been incubating since <date>\" opens each podling's report, a formula every item carries"
   - rule: undefined-acronym
     line: 3197
     sha256: 9abc9edad153c6ab12759feb8ca3cdeb8ac7d3555a428aadb8e4549318ed4e4a

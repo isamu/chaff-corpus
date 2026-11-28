@@ -50,11 +50,6 @@ findings:
     sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
     verdict: correct
     note: the conference is spelled two ways in the minutes
-  - rule: undefined-acronym
-    line: 61
-    sha256: 0bd061420f3808985c766e520c40c901ae9eb0de444a4c1ec423abf6b30f834f
-    verdict: false-positive
-    note: part of a conference's name (JS Conf, written JSConf elsewhere), not an acronym to expand
   - rule: orthographic-variant
     line: 62
     sha256: 76ef35c3978b44a76cb8721d0e2affc5bc7b2e222fb9fb24e3e085b2ea0f8082
