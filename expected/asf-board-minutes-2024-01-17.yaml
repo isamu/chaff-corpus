@@ -883,7 +883,8 @@ findings:
   - rule: ngram-repetition
     line: 3827
     sha256: 4f4350af55326476f25dbfe6b6444e6da561bc58f2d5d0e475589f61d6e2f921
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"<Name> is in maintenance mode.\" is one stock status line per subproject, lines that differ only in the leading name"
   - rule: orthographic-variant
     line: 3829
     sha256: bbeab5e64785129af93f77b745a9f154ca2c4c7c66d8a6646e2eb7c0dc652386

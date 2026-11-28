@@ -81,7 +81,8 @@ findings:
   - rule: ngram-repetition
     line: 552
     sha256: bd1179b6b1f6ec038f634b98f95568f95b0613185b943865a06a0b23f92655af
-    verdict: unjudged
+    verdict: false-positive
+    note: "\"was approved by Unanimous Vote\" is the board's stock outcome line after each resolution, a formula every item carries"
   - rule: max-sentence-length
     line: 569
     sha256: 268dd24054eaab143d00ae52f9fb68e8bce965da87a3b39d4efec928c48192e6
